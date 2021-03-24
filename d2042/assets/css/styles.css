@@ -37,3 +37,14 @@ body {
   background-color: #f0f0f0;
 }
 
+.product-small {
+  height: 550px;
+  padding-top: 40px;
+  margin: 0 0 10px 10px;
+  text-align: center;
+}
+
+.product-small.iphone-8 {
+  background-color: #f9f0eb;
+}
+
