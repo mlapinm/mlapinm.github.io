@@ -1,126 +1,21 @@
+
+
+
 $(()=>{
- 
-let tests = [
-  {
-    "number": "1",
-    "type": "ordered",
-    "asks": [
-      "q1",
-      "q1"
-    ],
-    "responses": [
-        "s11",
-        "s12",
-        "s13"
-    ],
-    "variants": [
-      "s12",
-      "s11",
-      "s13"
-  ]
-  },
-  {
-    "number": "1",
-    "type": "input",
-    "asks": [
-      "q1",
-      "q1"
-    ],
-    "responses": [
-        "s11",
-        "s12"
-    ],
-    "variants": [
-        "ff"
-    ]
-  },
-  {
-    "number": "1",
-    "type": "simple",
-    "asks": [
-      "q1",
-      "q1"
-    ],
-    "responses": [
-        "s11",
-        "s12"
-    ],
-    "variants": [
-        "s11",
-        "s12",
-        "s13",
-        "s14"
-    ]
-  },
-  {
-    "number": "2",
-    "type": "drop",
-    "asks": [
-      "q1",
-      "q1"
-    ],
-    "responses": [
-      [
-        "s11",
-        "s21"
-      ],
-      [
-        "s12",
-        "s22"
-      ],
-      [
-        "s13",
-        "s23"
-      ]
-    ],
-    "variants": [
-      [
-        "s12",
-        "s13",
-        "s11"
-      ],
-      [
-        "s21",
-        "s23",
-        "s22"
-      ]
-    ]
-  },
-  {
-    "number": "3",
-    "type": "drop",
-    "asks": [
-      "q1",
-      "q1"
-    ],
-    "responses": [
-      [
-        "s11",
-        "s21"
-      ],
-      [
-        "s12",
-        "s22"
-      ],
-      [
-        "s13",
-        "s23"
-      ]
-    ],
-    "variants": [
-      [
-        "s12",
-        "s13",
-        "s11"
-      ],
-      [
-        "s21",
-        "s23",
-        "s252"
-      ]
-    ]
-  }
-]
+
+  
+  let tests = []
+  let url = "m01.json"
+  $.getJSON(url, function(data) {
+    data.forEach(element => {
+      
+      tests.push(element)
+    });
+  }).then(()=>{
+  
+
+
+
 class RoundSimple{
   
   constructor(test){
@@ -172,7 +67,6 @@ class RoundSimple{
 class RoundInput{
 
   input = null
-  
   constructor(test){
     this.test = test
   }
@@ -452,8 +346,9 @@ function onsubmit(){
   let isTrue = round.testing()
   $(".result").text("Result: " + isTrue)
   // console.log(isTrue) 
-
-
 }
+
+
 // $(".test").text(tests[number].variants)
+})
 })
