@@ -1,0 +1,18 @@
+
+body{
+  height: 100vh;
+}
+
+.test {
+  background-color: lavender;
+}
+
+.card-body{
+  padding: 1px;
+}
+
+.btn{
+  background-color: lightgray;
+  color: gray;
+}
+
