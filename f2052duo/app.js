@@ -71,7 +71,7 @@ function openTest(pNameJson){
 
         round.squareSentence.append(word)
         button.style.color = 'lightgray'
-        log.text(button.innerText)
+        // log.text(button.innerText)
       }
 
 

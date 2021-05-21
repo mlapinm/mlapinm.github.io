@@ -15,7 +15,12 @@ body{
 .btn{
   /* background-color: lightgray; */
   /* color: gray; */
-  padding: 1px;
+  padding: 0px 6px 1px 6px;
+  margin-left: 3px;
+  
+}
+.card-footer{
+  background-color: lightgrey;
 }
 
 
