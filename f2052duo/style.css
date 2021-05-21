@@ -22,5 +22,8 @@ body{
 .card-footer{
   background-color: lightgrey;
 }
+.number{
+  margin-right: 8px;
+}
 
 
