@@ -19,6 +19,11 @@ body{
   margin-left: 3px;
   
 }
+
+.first-word{
+  color: blue;
+}
+
 .card-footer{
   background-color: lightgrey;
 }
