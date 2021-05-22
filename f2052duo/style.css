@@ -4,11 +4,15 @@ body{
 }
 
 .test {
-  background-color: lavender;
+  background-color: gray;
 }
 
 .card-body{
   padding: 1px;
+  background-color: lightgreen;
+}
+
+.footer1{
   background-color: lightgreen;
 }
 
@@ -20,11 +24,15 @@ body{
   
 }
 
+.active1{
+  background-color: lightpink;
+}
+
 .first-word{
   color: blue;
 }
 
-.card-footer{
+.footer2{
   background-color: lightgrey;
 }
 .number{
