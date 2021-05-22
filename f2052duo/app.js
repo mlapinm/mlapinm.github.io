@@ -60,7 +60,7 @@ function openTest(pNameJson){
           const button = document.createElement('a')
           button.innerText = this.wordsIndexes[i][0]
           button.id = 'b' + this.wordsIndexes[i][1]
-          button.classList.add('btn', 'btn-light' , 'btn-lg', 'fs-3')
+          button.classList.add('btn', 'btn-light' , 'btn-lg', 'fs-2')
           button.addEventListener('click', this.onButtonClick)
           this.buttonsDisplay.append(button)
         }
@@ -121,7 +121,7 @@ function openTest(pNameJson){
         let word = document.createElement('a')
         word.innerText = buttonText
         word.id = 'w' + buttonId.substring(1)
-        word.classList.add('btn', 'btn-light' , 'btn-lg', 'fs-3')
+        word.classList.add('btn', 'btn-light' , 'btn-lg', 'fs-2')
         word.addEventListener('click', round.onWordClick)
 
         round.squareSentence.append(word)
