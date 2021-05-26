@@ -1,0 +1,29 @@
+section {
+    background-color: antiquewhite;
+    /* padding: 20px; */
+}
+
+carousel-item {
+    /* margin: 20px; */
+}
+
+col-sm-6{
+    padding-top: 20px;
+}
+
+.carousel-control-prev-icon{
+    background-image: url(left-arrow.svg);
+}
+
+.carousel-control-next-icon{
+    background-image: url(right-arrow.svg);
+}
+
+.carousel-control-prev {
+    left: -45px;
+}
+
+.carousel-control-next {
+    right: -45px;
+}
+
