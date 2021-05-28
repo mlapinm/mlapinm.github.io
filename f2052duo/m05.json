@@ -1,5 +1,297 @@
 [
   {
+    "ru": "Мои водительские права на перчаточном ящике",
+    "en": "My driving licence is in the glove box"
+  },
+  {
+    "ru": "Нет, я не буду ездить по шоссе",
+    "en": "No I wo n't drive on the highway"
+  },
+  {
+    "ru": "На этой дороге есть четыре дорожки",
+    "en": "There are four lanes on this road"
+  },
+  {
+    "ru": "Я не могу найти пересечение",
+    "en": "I can not find the intersection"
+  },
+  {
+    "ru": "Что такое транспортное средство",
+    "en": "What is a vehicle"
+  },
+  {
+    "ru": "Кому нужно разрешение",
+    "en": "Who need a permit"
+  },
+  {
+    "ru": "Этот автомобиль имеет большой шестицилиндровый двигатель под капотом",
+    "en": "This car has a big six-cylinder engine under the hood"
+  },
+  {
+    "ru": "Они пешеходы",
+    "en": "They are pedestrians"
+  },
+  {
+    "ru": "Это закончилось плохо, но это могло и даже хуже",
+    "en": "It ended badly but it could and even worse"
+  },
+  {
+    "ru": "Он не уступает пешеходу",
+    "en": "He is not yielding to the pedestrian"
+  },
+  {
+    "ru": "Вы всегда должны уступать пешеходам",
+    "en": "You always have to yield to pedestrians"
+  },
+  {
+    "ru": "Она взяла на себя обход",
+    "en": "She took a detour"
+  },
+  {
+    "ru": "На этой улице всегда есть пробка на час пик",
+    "en": "There is always a traffic jam at rush hour in this street"
+  },
+  {
+    "ru": "Вам нужно сделать объезд",
+    "en": "You need to take a detour"
+  },
+  {
+    "ru": "Это насос",
+    "en": "This is the pump"
+  },
+  {
+    "ru": "Не ходить туда на час пик",
+    "en": "Do n't to go there at rush hour"
+  },
+  {
+    "ru": "Они используются для зажигания топлива в двигателе",
+    "en": "They are used to ignite the fuel in the engine"
+  },
+  {
+    "ru": "Тогда мы взяли обход через старое шоссе",
+    "en": "Then we took a detour through an old highway"
+  },
+  {
+    "ru": "Это час пик",
+    "en": "This is a rush hour"
+  },
+  {
+    "ru": "Где они держат топливо",
+    "en": "Where do they keep the fuel"
+  },
+  {
+    "ru": "Будьте осторожны, чтобы не сломать ограничение скорости",
+    "en": "Be careful not to break the speed limit"
+  },
+  {
+    "ru": "Это было зажигание",
+    "en": "Was it an ignition"
+  },
+  {
+    "ru": "Мой дедушка был охотником",
+    "en": "My grandfather used to be a hunter"
+  },
+  {
+    "ru": "Я передумал",
+    "en": "I've changed my mind"
+  },
+  {
+    "ru": "Некоторые мысли могут быть очень опасными",
+    "en": "Some thoughts can be very dangerous"
+  },
+  {
+    "ru": "Она может прочитать мои мысли",
+    "en": "She can read my thoughts"
+  },
+  {
+    "ru": "У человека есть пять чувств",
+    "en": "A human has five senses"
+  },
+  {
+    "ru": "Разрешено ли Balck Humor",
+    "en": "Is balck humor allowed"
+  },
+  {
+    "ru": "Держите номер в виду",
+    "en": "Keep the number in mind"
+  },
+  {
+    "ru": "Она сравнила меня с медведем",
+    "en": "She compared me to a bear"
+  },
+  {
+    "ru": "Это не имеет значения",
+    "en": "It does not matter"
+  },
+  {
+    "ru": "Сильное тело делает ум сильным",
+    "en": "A strong body make the mind strong"
+  },
+  {
+    "ru": "Ваше внимание, пожалуйста",
+    "en": "Your attention please"
+  },
+  {
+    "ru": "Это идет против здравого смысла",
+    "en": "This goes against common sense"
+  },
+  {
+    "ru": "Мне не нравится его чувство юмора",
+    "en": "I do not like his sense of humor"
+  },
+  {
+    "ru": "Это очень просто",
+    "en": "It is very simple"
+  },
+  {
+    "ru": "И тогда это будет просто вопрос времени",
+    "en": "And then it will be just a matter of time"
+  },
+  {
+    "ru": "Это вопрос жизни или смерти",
+    "en": "It is a matter of life or death"
+  },
+  {
+    "ru": "Лучше не сравнивать детей друг другу",
+    "en": "It is better not to compare kids to each other"
+  },
+  {
+    "ru": "Разрешено черным юмором",
+    "en": "Is black humor allowed"
+  },
+  {
+    "ru": "Ее веселье не знакомы с ее точками зрения",
+    "en": "Her funs are not familiar with her points of view"
+  },
+  {
+    "ru": "Ее мечта сбудется",
+    "en": "Her dream will come true"
+  },
+  {
+    "ru": "Нет смысла говорить с ним",
+    "en": "There is no point to talking with him"
+  },
+  {
+    "ru": "Его шестой смысл - его интуиция",
+    "en": "His sixth sense is his intuition"
+  },
+  {
+    "ru": "У меня был кошмар с тысячами пауков",
+    "en": "I had a nightmare with the thousand spiders"
+  },
+  {
+    "ru": "Я принял решение",
+    "en": "I made my decision"
+  },
+  {
+    "ru": "Она напомнила мне дважды на этой неделе",
+    "en": "She has reminded me twice this week"
+  },
+  {
+    "ru": "Очевидно, что они богаты",
+    "en": "It is obvious that they rich"
+  },
+  {
+    "ru": "Было очевидно, что она не любила его",
+    "en": "It was obvious that she did not love him"
+  },
+  {
+    "ru": "Я не упомянул ваше имя",
+    "en": "I did n't mention your name"
+  },
+  {
+    "ru": "Давайте вычвеем его от ее зарплаты, чтобы достичь ее урока",
+    "en": "Let's subtract it from her salary to reach  her a lesson"
+  },
+  {
+    "ru": "На мой взгляд, они действительно щедры",
+    "en": "In my opinion they are really generous"
+  },
+  {
+    "ru": "Не вините их за их невежество обвиняют своих родителей",
+    "en": "Do not blame them for their ignorance blame their parents"
+  },
+  {
+    "ru": "На мой взгляд, он хорошо это объяснил",
+    "en": "In my opinion he explained it well"
+  },
+  {
+    "ru": "Не судите книгу по обложке",
+    "en": "Do n't judge a book by it's cover"
+  },
+  {
+    "ru": "Вы только вините и судите",
+    "en": "You only blame and judge"
+  },
+  {
+    "ru": "Что только доказывает, что он не очень умный",
+    "en": "Which only proves that he is not very smart"
+  },
+  {
+    "ru": "Я верю, что докажу это",
+    "en": "I believe I will prove it"
+  },
+  {
+    "ru": "И кто ты, чтобы судить их",
+    "en": "And who are you to judge them"
+  },
+  {
+    "ru": "Ее дом дальше от банка, чем ваш",
+    "en": "Her house is further from the bank than yours"
+  },
+  {
+    "ru": "Кто взял вину",
+    "en": "Who took the blame"
+  },
+  {
+    "ru": "Мой брат объясняет компьютер для нас",
+    "en": "My brother explains the computer for us"
+  },
+  {
+    "ru": "Она доказывает это",
+    "en": "She is proving it"
+  },
+  {
+    "ru": "Доктор объясняет, что он жив",
+    "en": "The doctor explains that he is alive"
+  },
+  {
+    "ru": "Выборы являются серьезными",
+    "en": "The elections are a serious thing"
+  },
+  {
+    "ru": "Каждое общество имеет свои законы",
+    "en": "Each society has it's laws"
+  },
+  {
+    "ru": "Он проявляется в суде",
+    "en": "He shows up in court"
+  },
+  {
+    "ru": "Мэр ест с судьей в нашем ресторане",
+    "en": "The mayor eats with judge in our restaurant"
+  },
+  {
+    "ru": "Свобода не бесплатна",
+    "en": "Freedom is not free"
+  },
+  {
+    "ru": "Теперь мы должны встать и петь гимн",
+    "en": "Now we should stand up and sing the anthem"
+  },
+  {
+    "ru": "Мы живем в обществе не только в экономике",
+    "en": "We live in a society not only just in an economy"
+  },
+  {
+    "ru": "Половина населения живет в бедности",
+    "en": "Half of the population live in poverty"
+  },
+  {
+    "ru": "Она любит его за его богатство",
+    "en": "She loves him for his wealth"
+  },
+  {
     "ru": "Я отвергаю вас",
     "en": "I reject you"
   },
