@@ -87,13 +87,6 @@ $.getJSON('m01.json', function(data) {
     });
     countNotes = notes.length
 
-    notes[0]
-    // let item = {
-    //   "header" : notes[0].header,
-    //   "title" : notes[0].items[0].title,
-    //   "cardText" : notes[0].items[0]["card-text"],
-    //   "link" : ""
-    // };
     let emptyItem = {
       "header" : "",
       "title" : "",
@@ -117,11 +110,15 @@ $.getJSON('m01.json', function(data) {
     })
 
     countItems = items.length
-    
 
 
+   let headerPrev = "" 
    for(let i = 0; i < countItems; i++){
      if ( i % 2 == 0){
+      if(headerPrev != items[i].header) {
+        headerPrev = items[i].header
+        containerShow.append($("<h5>" + headerPrev + "</h5>"))
+      }
       let row = new Row()
       containerShow.append(row.builder())
       row.col1.setHeader(items[i].header + " " + i)
