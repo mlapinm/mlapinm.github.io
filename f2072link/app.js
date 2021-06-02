@@ -117,6 +117,8 @@ $.getJSON('m01.json', function(data) {
     })
 
     countItems = items.length
+    
+
 
    for(let i = 0; i < countItems; i++){
      if ( i % 2 == 0){
