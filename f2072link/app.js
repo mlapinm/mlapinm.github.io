@@ -126,7 +126,7 @@ $.getJSON('m01.json', function(data) {
       .setTitle(items[i].title).setText(items[i].cardText)
       .setLink(items[i].link)
 
-      row.col2.setHeader(items[i+1].header + " " + i)
+      row.col2.setHeader(items[i+1].header + " " + (i+1))
       .setTitle(items[i+1].title).setText(items[i+1].cardText)
       .setLink(items[i+1].link)
 
