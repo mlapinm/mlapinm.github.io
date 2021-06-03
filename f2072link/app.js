@@ -104,7 +104,7 @@ $.getJSON('m01.json', function(data) {
         let item = Object.assign({}, emptyItem)
         item.header = note.header
         item.title = e.title
-        item.cardText = e["card-text"]
+        item.cardText = e["card-text"][0]
         item.link = e.href
         items.push(item)
       })
