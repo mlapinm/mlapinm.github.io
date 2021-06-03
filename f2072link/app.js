@@ -104,7 +104,7 @@ $.getJSON('m01.json', function(data) {
         let item = Object.assign({}, emptyItem)
         item.header = note.header
         item.title = e.title
-        item.cardText = e["card-text"][0]
+        item.cardText = e["card-text"]
         item.link = e.href
         items.push(item)
       })
@@ -118,6 +118,7 @@ $.getJSON('m01.json', function(data) {
 
     function clickText(e){
       $(".modal-title").text(items[e].title)
+      $(".modal-text").empty()
       items[e].cardText.forEach((e) => {
         let line = $("<p></p>")
         line.addClass("line-modal")
@@ -154,11 +155,11 @@ $.getJSON('m01.json', function(data) {
 
 
       row.col1.setHeader(items[i].header + " " + i)
-      .setTitle(items[i].title).setText(items[i].cardText)
+      .setTitle(items[i].title).setText(items[i].cardText[0])
       .setLink(items[i].link)
 
       row.col2.setHeader(items[i+1].header + " " + (i+1))
-      .setTitle(items[i+1].title).setText(items[i+1].cardText)
+      .setTitle(items[i+1].title).setText(items[i+1].cardText[0])
       .setLink(items[i+1].link)
 
     }
