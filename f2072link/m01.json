@@ -4,27 +4,30 @@
    "items": [
     {
 	 "title": "АУДИОЗАПИСЬ РАЗГОВОРА",
-	 "card-text": "АУДИОЗАПИСЬ РАЗГОВОРА НА АНГЛИЙСКОМ С РУССКИМ МАЛЬЧИКОМ ПОЛИГЛОТОМ",
+	 "card-text": [
+	 "АУДИОЗАПИСЬ РАЗГОВОРА НА АНГЛИЙСКОМ С РУССКИМ МАЛЬЧИКОМ ПОЛИГЛОТОМ",
+	 "АУДИОЗАПИСЬ РАЗГОВОРА НА АНГЛИЙСКОМ С РУССКИМ МАЛЬЧИКОМ ПОЛИГЛОТОМ"
+	 ],
 	 "href": "https://www.youtube.com/watch?v=696M3mJ8TaI&list=RDCMUCRGfRS5bu-U4xpMN6HBALVw&index=13"
 	},
     {
 	 "title": "АНГЛИЙСКИЙ ПО МУЛЬТИКАМ",
-	 "card-text": "Teenage Mutant Ninja Turtles 3 pieces",
+	 "card-text": ["Teenage Mutant Ninja Turtles 3 pieces"],
 	 "href": "https://www.youtube.com/watch?v=IOUcX1GyElM&list=PLOheXwuTHHNSUVBSyz0Ix840ibfooNID4"
 	},
     {
 	 "title": "УЧИМ АНГЛИЙСКИЙ ПО ИНТЕРВЬЮ",
-	 "card-text": "Jimmy Fallon Blew a Chance to Date Nicole Kidman",
+	 "card-text": ["Jimmy Fallon Blew a Chance to Date Nicole Kidman"],
 	 "href": "https://www.youtube.com/watch?v=0jtDdQHdb7Y&list=PLOheXwuTHHNRZmRTHL9GVSvJ6hxgxfZdY&index=10"
 	},
     {
 	 "title": "",
-	 "card-text": "",
+	 "card-text": [""],
 	 "href": ""
 	},
     {
 	 "title": "",
-	 "card-text": "",
+	 "card-text": [""],
 	 "href": ""
 	}
    ]
@@ -34,17 +37,17 @@
    "items": [
     {
 	 "title": "Как учить английский по фильмам и сериалам.",
-	 "card-text": "Все о Present Perfect. Уровни владения английским языком. ",
+	 "card-text": ["Все о Present Perfect. Уровни владения английским языком. "],
 	 "href": "https://www.youtube.com/watch?v=r_Cdivzh9DM&list=PLrnDp5beFMOaxlNBndQtelIpxxd_i_Z7d"
 	},
     {
 	 "title": "",
-	 "card-text": "",
+	 "card-text": [""],
 	 "href": ""
 	},
     {
 	 "title": "",
-	 "card-text": "",
+	 "card-text": [""],
 	 "href": ""
 	}
    ]
@@ -54,7 +57,7 @@
    "items": [
     {
 	 "title": "Five Little Monkeys",
-	 "card-text": "Ten in the Bed. Wheels on the Bus. Five Little Ducks. Head, Shoulders, Knees and Toes. Old MacDonald Had a Farm.",
+	 "card-text": ["Ten in the Bed. Wheels on the Bus. Five Little Ducks. Head, Shoulders, Knees and Toes. Old MacDonald Had a Farm."],
 	 "href": "https://www.youtube.com/watch?v=czUUifwhswg&list=PLURXwwh2i_mfefvow04WZfI_q-7LYlA6m"
 	}
    ]

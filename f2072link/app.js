@@ -15,7 +15,7 @@ class Column{
     .addClass("bg-transparent").addClass("border-success")
     this.cardBody1 = $("<div></div>").addClass("card-body")
     this.cardTitle1 = $("<h5></h5>").addClass("card-title")
-    this.cardText1 = $("<p></p>").addClass("card-text")
+    this.cardText1 = $("<div></div>").addClass("card-text")
     this.cardFooter1 = $("<div></div>").addClass("card-footer")
     .addClass("card-footer").addClass("bg-transparent")
     .addClass("border-success").addClass("text-end")
@@ -54,6 +54,11 @@ class Column{
 
   setLink(text){
     this.btn1.attr("href", text)
+    return this
+  }
+
+  setId(idText){
+    this.cardText1.attr("id", idText)
     return this
   }
   
@@ -111,6 +116,17 @@ $.getJSON('m01.json', function(data) {
 
     countItems = items.length
 
+    function clickText(e){
+      $(".modal-title").text(items[e].title)
+      items[e].cardText.forEach((e) => {
+        let line = $("<p></p>")
+        line.addClass("line-modal")
+        line.text(e)
+        $(".modal-text").append(line)
+      })
+
+      $("#exampleModal").modal('show')
+    }
 
    let headerPrev = "" 
    for(let i = 0; i < countItems; i++){
@@ -120,7 +136,23 @@ $.getJSON('m01.json', function(data) {
         containerShow.append($("<h5>" + headerPrev + "</h5>"))
       }
       let row = new Row()
+      let idText1 = "#ct" + i
+      let idText2 = "#ct" + (i+1)
+      row.col1.setId(idText1.substr(1))
+      row.col2.setId(idText2.substr(1))
+
+     
       containerShow.append(row.builder())
+
+      $(idText1).click((e) => {
+        clickText(e.target.id.substr(2))
+      }) 
+
+      $(idText2).click((e) => {
+        clickText(e.target.id.substr(2))
+      })
+
+
       row.col1.setHeader(items[i].header + " " + i)
       .setTitle(items[i].title).setText(items[i].cardText)
       .setLink(items[i].link)
