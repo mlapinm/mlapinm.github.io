@@ -73,11 +73,19 @@ function openTest(pNameJson){
           this.squareAnswer.text(this.test.en)
           isShowAnswer = true
           $('.btn-enable').addClass('active1')
+          this.speak()
         }else{
           this.squareAnswer.text('')
           isShowAnswer = false
           $('.btn-enable').removeClass('active1')
         }
+      }
+
+      speak(){
+        // console.log(this.test.en)
+        const utterance = new SpeechSynthesisUtterance(this.test.en);
+        window.speechSynthesis.speak(utterance);
+            
       }
 
       clear(){
