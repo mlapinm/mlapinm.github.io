@@ -45,7 +45,7 @@ $(() => {
 
         let textRu = notes[numId].ru
      
-        containerFooter.text("" + numId + " " + textRu)
+        log.text("" + numId + " " + textRu)
       })
 
     })
