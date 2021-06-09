@@ -1,6 +1,6 @@
 let log
 let notes = []
-let linkPrev = "/note.html?module="
+let linkPrev = "note.html?module="
 
 class Column{
 
