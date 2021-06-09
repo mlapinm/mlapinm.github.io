@@ -7,7 +7,7 @@ let countItems = 0
 $(() => {
   var url_string = window.location.href; //window.location.href
   var url = new URL(url_string);
-  var nameJson = url.searchParams.get("test");
+  var nameJson = url.searchParams.get("module");
   if(!nameJson){
     nameJson = "m01"
   }
