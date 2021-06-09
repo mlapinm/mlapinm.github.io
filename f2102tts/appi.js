@@ -103,19 +103,12 @@ $.getJSON("m00.json", (data) => {
       .setTitle(notes[i].title).setText(notes[i]["card-text"][0])
       .setLink(linkPrev + notes[i].link)
 
-
       row.col2.setHeader(notes[i].header + " " + (i+1))
       .setTitle(notes[i+1].title).setText(notes[i+1]["card-text"][0])
       .setLink(linkPrev + notes[i+1].link)
 
     }
   }
-
-
-
-
-
-
 
   log.text(countNotes)
 
