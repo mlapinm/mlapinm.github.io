@@ -1,559 +1,198 @@
 [
   {
-    "ru": "Не ходите по траве",
-    "en": "Keep off the grass"
+    "ru": "Итак, давайте посмотрим сначала как реализовать EIGRP",
+    "en": "So let take a look first how to implement eigrp"
   },
   {
-    "ru": "У моего деда была хирургия сердца в прошлом месяце",
-    "en": "My grandfather had a heart surgery last month"
+    "ru": "Целью любых динамических протоколов маршрутизации предназначена для маршрутизаторов для обмена информацией между ними и узнать о пунктах назначения, которые не связаны напрямую эти маршрутизаторы",
+    "en": "the goal for any Dynamic routing protocol is for routers to be able exchange information between them and learn about destinations that are not directly connected those routers"
   },
   {
-    "ru": "Это опасное заболевание",
-    "en": "Is it a dangerous disease"
+    "ru": "Я так как бы сказал, речь идет о открытии каждая сетей",
+    "en": "I so as would say it's about the discovery every networks"
   },
   {
-    "ru": "Десять долларов за три унции сыра",
-    "en": "Ten dollars for three ounces of cheese"
+    "ru": "Много раз люди называют этот маршрут по слухам",
+    "en": "many times people call this routing by rumor"
   },
   {
-    "ru": "Эти специи не используются в русской кухне",
-    "en": "These spices are not used in Russian cuisine"
+    "ru": "Это подумает об этом один роутер, длинные пути, говоря, эй, я подключен к этой сети, позвольте мне рассказать вам о том, что роутер говорит, что, эй, я слышал о своем пути, чтобы добраться сюда, а затем я слышал о другом пути, но это Надеюсь, надежный слух, который мы получаем",
+    "en": "Is this think about it one router a long ways away says hey I'm connected to this network let me tell you about him that router says hey I heard about my way to get here and then I heard about another way to get here but it's hopefully a reliable rumor that we get"
   },
   {
-    "ru": "Не ешь свою картофель фри",
-    "en": "do not eat my french fries"
+    "ru": "Теперь мы также должны иметь что-то, что поддерживает информацию о маршрутизации как актуальные другими словами места назначения, больше не доступны 5 маршрутизаторов",
+    "en": "Now we also you have to have something that maintains the routing information as up-to-date in other words of a destination is no longer available 5 routers away"
   },
   {
-    "ru": "Нам все еще нужно купить клубник и арахис индейки",
-    "en": "we still need to buy a turkey cranberries and peanuts"
+    "ru": "Я ожидаю, что маршрутизатор говорит нам через сообщение с удалением, которое мы больше не можем добраться до этого пункта назначения, чтобы все знали, чтобы найти новый путь, если он станет доступным, чтобы добраться до того же назначения",
+    "en": "I expect that router to tell us through a removal message that we can no longer get to that destination so everyone knows to find A New Path if one becomes available to get to that same destination"
   },
   {
-    "ru": "Продаю тыквы",
-    "en": "I sell pumpkins"
+    "ru": "Теперь то, как узнать, чтобы выбрать лучший путь, потому что в сегодняшнем дню распашны сети, которые вы можете иметь очень тесно, чем полный матч соединений между маршрутизаторами любого из них из любой точки моей сети",
+    "en": "Now is that how to know to choose the best path because in today is routed networks you may have very closely than a full match of connections between routers any of that from any one point of my network"
   },
   {
-    "ru": "Давайте порежь пирог на четные части",
-    "en": "Let's cut the pie into even pieces"
+    "ru": "Я говорю, чтобы иметь возможность два или три или пять путей к одному и тому же пункту назначения",
+    "en": "I mind be able two or three or five paths to the same destination"
   },
   {
-    "ru": "Огурец овощной",
-    "en": "Is cucumber a vegetable"
+    "ru": "Какой из них является лучшим",
+    "en": "which of those is the best one"
   },
   {
-    "ru": "Посмотри свою собаку ест ветчину",
-    "en": "Look your dog is eating ham"
+    "ru": "1:20",
+    "en": "1:20"
   },
   {
-    "ru": "Дорогая не горький",
-    "en": "Honey is not bitter"
+    "ru": "Вид снова идея ездить по автостраде",
+    "en": "kind of again the idea of driving down a freeway"
   },
   {
-    "ru": "Ее запястье сломана",
-    "en": "Her wrist is broken"
+    "ru": "Я много путешествую и так без GPS я буду в беде",
+    "en": "I travel a lot and so without GPS I'd be in trouble"
   },
   {
-    "ru": "Я не могу поверить, что вы нашли это серебряное кольцо",
-    "en": "I ca n't believe you found that silver ring"
+    "ru": "Но я, конечно, в старые времена мог посмотреть на карту и сказать хорошо",
+    "en": "but I certainly in the old days could look at a map and say okay"
   },
   {
-    "ru": "Ее запястье сломана",
-    "en": "Her wrist is broken"
+    "ru": "Я могу добраться отсюда в продуктовый магазин",
+    "en": "I can get from here to the grocery store"
   },
   {
-    "ru": "Никто не взял ваше золотое ожерелье",
-    "en": "Nobody took your gold necklace"
+    "ru": "Я собираюсь взять на себя эту автостраду на 10 миль, чтобы выключить выход, я должен увидеть это по моему праву",
+    "en": "I'm going to take this freeway for 10 miles to turn off the exit I should see it on my right"
   },
   {
-    "ru": "Ее ногти красные",
-    "en": "Her nails are red"
+    "ru": "И что происходит, когда эта автострада 70 закрыта для автокатастрофа или строительства",
+    "en": "and what happens when that freeway 70 is closed to a car crash or construction"
   },
   {
-    "ru": "Тренер говорит мне, что мои мышцы ноги сейчас сильны",
-    "en": "The coach tells me that my leg muscles are strong now"
+    "ru": "Теперь я застрял",
+    "en": "now I'm stuck"
   },
   {
-    "ru": "Некоторые люди привыкли жить с одной почкой",
-    "en": "some people get used to living with one kidney"
+    "ru": "Я не знаю никакого другого способа добраться туда",
+    "en": "I do n't know any other way to get there"
   },
   {
-    "ru": "Является ли печень справа или слева",
-    "en": "Is the liver on the right or on the left side"
+    "ru": "Итак, это еще одна вещь, которую мы видим, будет синоним протоколов",
+    "en": "and so that's another thing that we see would be synonym of protocols"
   },
   {
-    "ru": "Слышанная мышца",
-    "en": "The heard is a muscle"
+    "ru": "Когда они поддерживают всю эту информацию",
+    "en": "as they maintain all that information"
   },
   {
-    "ru": "Это почки",
-    "en": "This is a kidney"
+    "ru": "так что они как местный человек, который говорит",
+    "en": "so they're like the local person that says"
   },
   {
-    "ru": "Это жирные масла",
-    "en": "These are fatty oils"
+    "ru": "О, я только что получил пострадавших от строительства",
+    "en": "oh I just got hit by the construction"
   },
   {
-    "ru": "Мой бывший муж говорил, что у меня не было талии",
-    "en": "My ex-husband used to say that I had no waist"
+    "ru": "Я возьму этот другой выход, возьмите дерево на услугу, нет проблем",
+    "en": "I'll take this other exit take a service tree down there no problem"
   },
   {
-    "ru": "после того, как вы опечатаете",
-    "en": "after you kneeze"
+    "ru": "Поэтому им нужно знать, как найти лучший путь не только один путь",
+    "en": "so they need to know how to find the best path not just a single path"
   },
   {
-    "ru": "Есть много микробов",
-    "en": "there are many germs"
+    "ru": "И быть в состоянии найти, это я просто сказал новый лучший путь, если текущий путь больше не доступен",
+    "en": "and to be able to find is I just said the new best path if the current path is no longer available"
   },
   {
-    "ru": "Ты грязный",
-    "en": "you are dirty"
+    "ru": "Итак, давайте посмотрим на динамические протоколы маршрутизации",
+    "en": "so let's take a look at dynamic routing protocols"
   },
   {
-    "ru": "Hikory Dickory Dock",
-    "en": "Hikory dickory dock"
+    "ru": "и как они ведут себя по-разному",
+    "en": "and how they behave differently"
   },
   {
-    "ru": "Нет, кость не сломана",
-    "en": "no the bone not broken"
+    "ru": "Сначала мы собираемся начать с типа",
+    "en": "first we're going to start with the type"
   },
   {
-    "ru": "Раковина не работает",
-    "en": "the sink is not working"
+    "ru": "Независимо от того, независимо от того, предпробен IGP протокол против EGP или внешнего комплекта с протоколом",
+    "en": "whether it's an igp interrogate with protocol versus an EGP or an exterior kit with protocol"
   },
   {
-    "ru": "я планирую",
-    "en": "i'm planning"
+    "ru": "Мы ориентируемся только на IGPS в нашем курсе",
+    "en": "we're only focusing on igps in our course"
   },
   {
-    "ru": "Я сделаю полки рядом с окном",
-    "en": "I will make shelves next to the window"
+    "ru": "Но позвольте мне сначала немного поговорить о EGP внешних протоколах",
+    "en": "but let me first talk a little bit about the EGP the exterior protocols"
   },
   {
-    "ru": "Потолок должен быть белым и низким",
-    "en": "the ceiling has to be white and low"
+    "ru": "Из одного единственного, которую мы обычно используем, называется BGP протокол Grader Gateway версии 4",
+    "en": "of one the only one that we commonly use is called bgp the border gateway protocol version 4"
   },
   {
-    "ru": "Нет, кость не сломана",
-    "en": "no the bone not broken"
+    "ru": "Целью является, что если вы думаете о том, как Интернет собран вместе с различными поставщиками услуг, которые имеют их клиенты, связанные с их сетями",
+    "en": "the goal is if you think about how the internet is put together with different service providers that have their customers connected to their networks"
   },
   {
-    "ru": "Раковина не работает",
-    "en": "the sink is not working"
+    "ru": "Они хотят рекламировать маршруты своим клиентам, чтобы все остальные люди в мире знали, как добраться до своих клиентов в рамках услуги или оплата",
+    "en": "they want to advertise the routes to their customers so that all other people in the world will know how to get to their customers as part of the service or paying for"
   },
   {
-    "ru": "я планирую",
-    "en": "i'm planning"
+    "ru": "Но если вы думаете об этом",
+    "en": "but if you think about it"
   },
   {
-    "ru": "Я сделаю полки рядом с окном",
-    "en": "I will make shelves next to the window"
+    "ru": "Вы не хотите, чтобы поставщик услуг «A» может сообщить поставщику услуг «B», как маршрутить",
+    "en": "you do n't want to let service provider 'A' be able to tell service provider 'B' how to route"
   },
   {
-    "ru": "Потолок должен быть белым и низким",
-    "en": "the ceiling has to be white and low"
+    "ru": "Мы просто хотим рассказать вам о существовании маршрутов",
+    "en": "we just want to tell you about the existence of the routes"
   },
   {
-    "ru": "Она солгала это десять раз, так как мы приехали сюда",
-    "en": "She's sung it ten times since we got here"
+    "ru": "И вот что делает EGP в этом случае BGP",
+    "en": "and that's what the egps do in this case bgp"
   },
   {
-    "ru": "Она покавилась ни с кем из них",
-    "en": "Has she spoken to any of them yet"
+    "ru": "Это список маршрутов с предложениями о том, как ее маршрутизировать те, которые эти клиенты",
+    "en": "it's a list of routes with suggestions about how to route to those those customers"
   },
   {
-    "ru": "Темнеет",
-    "en": "It's getting dark"
+    "ru": "В IGP протокол внутренних шлюзов",
+    "en": "in the igp the interior gateway protocol"
   },
   {
-    "ru": "Обычно она оделась хорошо, но в этот день она одета плохо",
-    "en": "usually she dressed well but on this day she is dressed poorly"
+    "ru": "Это все о вашей управляемой группе маршрутизаторов",
+    "en": "it's all about your managed group of routers"
   },
   {
-    "ru": "Я работал над моей новой идеей, когда получил свое послание",
-    "en": "I was working on my new idea when I got his message"
+    "ru": "Это означает, что это ваша компания ваше предприятие, которое вы поставщика услуг",
+    "en": "meaning it's your company your enterprise you're the service provider"
   },
   {
-    "ru": "Я люблю свежий белый снег",
-    "en": "I love fresh white snow"
+    "ru": "Они все под общем руководством, и мы часто называем это автономной системой",
+    "en": "they're all under a common management and we often refer to that as an autonomous system"
   },
   {
-    "ru": "Вчера был дождь",
-    "en": "It rained yesterday"
+    "ru": "И что мы делаем, мы отслеживаем все маршруты, которые существуют внутри нашей сети",
+    "en": "and what we're doing is we're keeping track of all of the routes that exist inside of our network"
   },
   {
-    "ru": "Обычно холодно зимой",
-    "en": "It is usually chilly in winter"
+    "ru": "не разделяя эти маршруты для людей снаружи",
+    "en": "without sharing those routes to the people on the outside"
   },
   {
-    "ru": "Это будет облачно и ветрено завтра",
-    "en": "It will be cloudy and windy tomorrow"
+    "ru": "И вот где EIGRP и OSPF приходят в свои внутренние шлюз протоколы",
+    "en": "and that's where eigrp and ospf come in their interior gateway protocols"
   },
   {
-    "ru": "Это снег вчера",
-    "en": "Did it snow yesterday"
+    "ru": "Теперь еще одно отличие - это то, что они рекламируют",
+    "en": "now another difference is what do they advertise"
   },
   {
-    "ru": "Этот монги был очень туманным",
-    "en": "That moning was very foggy"
-  },
-  {
-    "ru": "В этом году у нас была дождливая осень и снежная зима",
-    "en": "That year we had a rainy fall and a snowy winter"
-  },
-  {
-    "ru": "Нет шансов, что он будет есть все это",
-    "en": "There is no chance that he will eat it all"
-  },
-  {
-    "ru": "Есть много способов сделать это",
-    "en": "There are many ways to do it"
-  },
-  {
-    "ru": "Нет причин помочь им",
-    "en": "There is no reason to help them"
-  },
-  {
-    "ru": "В доме было три из нас",
-    "en": "There were three of us in the house"
-  },
-  {
-    "ru": "В этой школе был только один учитель",
-    "en": "There was only one teacher in that school"
-  },
-  {
-    "ru": "В нашем новом доме будет пять номеров",
-    "en": "There will be five rooms in our new house"
-  },
-  {
-    "ru": "Там нет шансов, что она ответит вам",
-    "en": "There is not chance that she will answer you"
-  },
-  {
-    "ru": "Нет шансов, что он будет есть все это",
-    "en": "There is no chance that he will eat it all"
-  },
-  {
-    "ru": "Будет несколько вопросов от родителей, но не много",
-    "en": "There will be several questions from the parents but not many"
-  },
-  {
-    "ru": "Моя мама чувствует себя лучше сегодня",
-    "en": "my mother feels better today"
-  },
-  {
-    "ru": "Мне лучше",
-    "en": "I feel better"
-  },
-  {
-    "ru": "Как он ведет себя",
-    "en": "how did he behave"
-  },
-  {
-    "ru": "он чувствует себя хуже, чем раньше",
-    "en": "he feels worse than before"
-  },
-  {
-    "ru": "Как он ведет себя",
-    "en": "how did he behave"
-  },
-  {
-    "ru": "это выглядит как яйцо",
-    "en": "it looks like an egg"
-  },
-  {
-    "ru": "Почему они так ведут себя так",
-    "en": "why do they behave like that"
-  },
-  {
-    "ru": "Обычно она оделась хорошо, но в той днях она была плохо одета",
-    "en": "usually she dressed well but that days she was dressed badly"
-  },
-  {
-    "ru": "Девятнадцать шестьдесят восьми восьми он стал слишком слаб, чтобы пройти",
-    "en": "by nineteen sixty-eight he had become too weak to walk"
-  },
-  {
-    "ru": "Они развели к тому времени, и я снова мог видеть ее",
-    "en": "they had divorced by that time and i could see her again"
-  },
-  {
-    "ru": "Они проверили сотни ответов, прежде чем они проверили",
-    "en": "they had checked hundreds of answers before they checked yours"
-  },
-  {
-    "ru": "Эти важные сообщения отправляются с ними каждый день",
-    "en": "these important messages are sent by them every day"
-  },
-  {
-    "ru": "Она стала его женой задолжай до того, как он стал моим другом",
-    "en": "she had become his wife long before he became my friend"
-  },
-  {
-    "ru": "Вы собираетесь на поезде или вы арендуете машину",
-    "en": "are you going by train or are you renting a car"
-  },
-  {
-    "ru": "проверять",
-    "en": "checking for"
-  },
-  {
-    "ru": "кто платит свои ежемесячные счета",
-    "en": "who pays their monthly bills"
-  },
-  {
-    "ru": "Мой брат еще не заплатил за книги",
-    "en": "my brother has not paid for the books yet"
-  },
-  {
-    "ru": "Могу ли я поговорить с ней нет, она отправилась в Париж",
-    "en": "can i talk to her no she has gone to Paris"
-  },
-  {
-    "ru": "Она еще не ела",
-    "en": "has she not eaten yet"
-  },
-  {
-    "ru": "Они пели не так хорошо, как могли",
-    "en": "They sang not as well as they could"
-  },
-  {
-    "ru": "Нам нужен проект в ближайшее время, крайний срок вторник",
-    "en": "we need the project soon the deadline is tuesday"
-  },
-  {
-    "ru": "Посмотрите, у них есть ребенок тигр здесь",
-    "en": "look they have a baby tiger here"
-  },
-  {
-    "ru": "Горячих здесь, в июне, но это не влажно",
-    "en": "it's hot here in june but it's not humid"
-  },
-  {
-    "ru": "Каждый магазин в моем городе закрыт",
-    "en": "every store in my town are closed"
-  },
-  {
-    "ru": "Нет способа, чтобы игрок слишком коротким",
-    "en": "no way that player is too short"
-  },
-  {
-    "ru": "Мне не нравится, я люблю только талантливых музыкантов",
-    "en": "I do n't like him I only like talented musicians"
-  },
-  {
-    "ru": "Есть ли парковка в торговом центре",
-    "en": "is there parking at the mall"
-  },
-  {
-    "ru": "Нет причин помочь им",
-    "en": "there is no reason to help them"
-  },
-  {
-    "ru": "Это будет туманно сегодня вечером",
-    "en": "it will be foggy tonight"
-  },
-  {
-    "ru": "Мне не нравится, когда оно облачно и туманно",
-    "en": "i do n't like when it is cloudy and foggy"
-  },
-  {
-    "ru": "Она едва движется",
-    "en": "she barely moves"
-  },
-  {
-    "ru": "Он побрился изменился и пил кофе",
-    "en": "He shaved changed and drank coffee"
-  },
-  {
-    "ru": "Он бросил, когда она позвонила",
-    "en": "He was shaving when she called"
-  },
-  {
-    "ru": "Она проверяла новые сообщения, когда она получила мою",
-    "en": "She was checking for new messages when she got mine"
-  },
-  {
-    "ru": "Вы берете поезд или арендуете машину",
-    "en": "are you taking the train or renting a car"
-  },
-  {
-    "ru": "Некоторые из его ответов не были интересны",
-    "en": "some of his answers were n't interesting"
-  },
-  {
-    "ru": "кто платит свои счета",
-    "en": "who pays their bills"
-  },
-  {
-    "ru": "Разве она еще не ела",
-    "en": "has n't she eaten yet"
-  },
-  {
-    "ru": "Они не пели, а также могли петь",
-    "en": "they did n't sing as well as they could sing"
-  },
-  {
-    "ru": "Он говорил более или менее громко, но я не слышал его",
-    "en": "He spoke more or less loudly but I could n't hear him"
-  },
-  {
-    "ru": "Они были самыми оживленными женщинами в нашей семье",
-    "en": "They were the busiest women in our family"
-  },
-  {
-    "ru": "Это была недавняя книга",
-    "en": "it was a recent book"
-  },
-  {
-    "ru": "Они отдавали всех своих кошек",
-    "en": "They gave away all their cats"
-  },
-  {
-    "ru": "Мы читаем что-то об этом год назад",
-    "en": "we read something about this a year ago"
-  },
-  {
-    "ru": "Она не знала, что сказать",
-    "en": "she did n't know what to say"
-  },
-  {
-    "ru": "Есть ли парковка в торговом центре",
-    "en": "is there parking in the mall"
-  },
-  {
-    "ru": "Нам нужен проект в ближайшее время, крайний срок вторник",
-    "en": "we need a project soon the deadline is Tuesday"
-  },
-  {
-    "ru": "Это дорожное приключение, нам нужно закуски",
-    "en": "This is a road adventure we need snacks"
-  },
-  {
-    "ru": "Они не говорят нет",
-    "en": "they do n't say no"
-  },
-  {
-    "ru": "Она не сказала, что она голодна",
-    "en": "She did n't say she was hungry"
-  },
-  {
-    "ru": "Она едва движется",
-    "en": "She's barely moving"
-  },
-  {
-    "ru": "Мы редко читаем их книги",
-    "en": "we seldom read their books"
-  },
-  {
-    "ru": "по четвергам",
-    "en": "on thursdays"
-  },
-  {
-    "ru": "Она не дает мне мою книгу",
-    "en": "she is not giving me my book"
-  },
-  {
-    "ru": "пожалуйста, скажите мне",
-    "en": "please tell me"
-  },
-  {
-    "ru": "Я должен бежать",
-    "en": "I have to run"
-  },
-  {
-    "ru": "Я редко плаваю",
-    "en": "I rarely swim"
-  },
-  {
-    "ru": "Мы редко читаем их книги",
-    "en": "we rarely read their books"
-  },
-  {
-    "ru": "Они хорошие официантки",
-    "en": "are they good waitresses"
-  },
-  {
-    "ru": "Не волнуйтесь, ваши видеоигры находятся в спальне",
-    "en": "do n't worry your video games are in the bedroom"
-  },
-  {
-    "ru": "Ваш день рождения - первый в марте в моем календаре",
-    "en": "your birthday is the first of March in my calendar"
-  },
-  {
-    "ru": "Она выросла, так как я видел ее",
-    "en": "she's grown up since I've seen her"
-  },
-  {
-    "ru": "Ваша голова больна каждый день или только сегодня",
-    "en": "does your head hurt every day or just today"
-  },
-  {
-    "ru": "Мы увидим его снова",
-    "en": "we'll see him again"
-  },
-  {
-    "ru": "Эта комната чаще используется женщинами",
-    "en": "this room is more often used by women"
-  },
-  {
-    "ru": "Я тебя вижу",
-    "en": "I can see you"
-  },
-  {
-    "ru": "Она летает каждый день",
-    "en": "she flies every day"
-  },
-  {
-    "ru": "три раза два равных шести",
-    "en": "three times two equals six"
-  },
-  {
-    "ru": "Девятнадцать минус тринадцать равна шести",
-    "en": "nineteen minus thirteen equals six"
-  },
-  {
-    "ru": "Это будет вашим номером Эта комната большая 2ВА",
-    "en": "this will be your room this room is big 2wa"
-  },
-  {
-    "ru": "Зеленые платья",
-    "en": "Green dresses"
-  },
-  {
-    "ru": "Эти дети читают 10 книг в неделю",
-    "en": "These children read 10 books a week"
-  },
-  {
-    "ru": "Эти мыши осторожны",
-    "en": "These mice are careful"
-  },
-  {
-    "ru": "холодает",
-    "en": "it's getting cold"
-  },
-  {
-    "ru": "Две маленькие дети",
-    "en": "two small children"
-  },
-  {
-    "ru": "Адам Добро пожаловать в Канаду",
-    "en": "Adam welcome to Canada"
-  },
-  {
-    "ru": "Я был осторожен",
-    "en": "I was careful"
-  },
-  {
-    "ru": "Они хорошо знают нас",
-    "en": "they know us well"
-  },
-  {
-    "ru": "Этот человек верит моей сестре",
-    "en": "this man believes my sister"
-  },
-  {
-    "ru": "Этот молодой человек ничего не дает мне",
-    "en": "this young man does n't give me anything"
+    "ru": "Один из IGPS, который я не упомянул, я надеялся, что мне не пришлось, называется RIP The Protocol Protocol",
+    "en": "one of the igps I did n't mention I was hoping I did n't have to it's called RIP the routing information protocol"
   }
 ]
-
