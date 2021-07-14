@@ -1,4 +1,4 @@
-var jords = [
+var items = [
   {
     "time": [
       4,
