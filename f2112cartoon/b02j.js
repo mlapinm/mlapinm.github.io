@@ -10,18 +10,10 @@ var items = [
   {
     "time": [
       8,
-      10
-    ],
-    "en": "In a far away land there was a beautiful",
-    "ru": "В далекой стране было прекрасное"
-  },
-  {
-    "time": [
-      10,
       15
     ],
-    "en": "wood by which ran a stream and close to the stream was a mill",
-    "ru": "В лесу протекал ручей, а рядом с ручьем стояла мельница"
+    "en": "In a far away land there was a beautiful wood by which ran a stream and close to the stream was a mill",
+    "ru": "В далекой стране был красивый лес, по которому протекал ручей, а рядом с ручьем стояла мельница"
   },
   {
     "time": [
@@ -90,34 +82,18 @@ var items = [
   {
     "time": [
       52,
-      55
-    ],
-    "en": "The miller made his way to where the king was",
-    "ru": "Мельник направился к королю"
-  },
-  {
-    "time": [
-      55,
       58
     ],
-    "en": "Bowing before the king the miller said",
-    "ru": "Поклонившись королю, сказал мельник"
+    "en": "The miller made his way to where the king was Bowing before the king the miller said",
+    "ru": "Мельник пошел туда, где царь склонился перед королем, сказал мельник"
   },
   {
     "time": [
       58,
-      59
-    ],
-    "en": "Your Majesty",
-    "ru": "Ваше Величество"
-  },
-  {
-    "time": [
-      59,
       61
     ],
-    "en": "I am indeed honoured to meet you",
-    "ru": "Для меня действительно большая честь познакомиться с вами"
+    "en": "Your Majesty I am indeed honoured to meet you",
+    "ru": "Ваше Величество, для меня большая честь познакомиться с вами"
   },
   {
     "time": [
@@ -138,66 +114,34 @@ var items = [
   {
     "time": [
       67,
-      68
-    ],
-    "en": "Really",
-    "ru": "Действительно"
-  },
-  {
-    "time": [
-      68,
       72
     ],
-    "en": "What special talent does your daughter have that I would want to meet her",
-    "ru": "Какой особенный талант у вашей дочери, чтобы я хотел с ней познакомиться"
+    "en": "Really What special talent does your daughter have that I would want to meet her",
+    "ru": "Действительно, какой у вашей дочери особый талант, что я хотел бы с ней познакомиться"
   },
   {
     "time": [
       72,
-      74
-    ],
-    "en": "Er oh yes",
-    "ru": "Э-э, да"
-  },
-  {
-    "time": [
-      74,
       80
     ],
-    "en": "Your Majesty my daughter can spin gold from straw",
-    "ru": "Ваше Величество, моя дочь умеет плести золото из соломы"
+    "en": "Er oh yes Your Majesty my daughter can spin gold from straw",
+    "ru": "О да, ваше величество, моя дочь умеет плести золото из соломы"
   },
   {
     "time": [
       80,
-      85
-    ],
-    "en": "Now the king was a very wealthy man but he was also greedy and the thought of making",
-    "ru": "Итак, король был очень богатым человеком, но он также был жадным и помышлял о заработке"
-  },
-  {
-    "time": [
-      85,
       89
     ],
-    "en": "gold from straw obviously tempted him",
-    "ru": "золото из соломы явно искушало его"
+    "en": "Now the king was a very wealthy man but he was also greedy and the thought of making gold from straw obviously tempted him",
+    "ru": "Король был очень богатым человеком, но при этом был жадным, и мысль о том, чтобы делать золото из соломы, явно соблазняла его"
   },
   {
     "time": [
       89,
-      91
-    ],
-    "en": "Really",
-    "ru": "Действительно"
-  },
-  {
-    "time": [
-      91,
       93
     ],
-    "en": "This I have to see",
-    "ru": "Я должен это увидеть"
+    "en": "Really This I have to see",
+    "ru": "На самом деле я должен это увидеть"
   },
   {
     "time": [
@@ -210,34 +154,18 @@ var items = [
   {
     "time": [
       95,
-      99
-    ],
-    "en": "The miller went home to tell his daughter that the king wanted them to present themselves",
-    "ru": "Мельник пошел домой, чтобы сказать своей дочери, что король хочет, чтобы они представились"
-  },
-  {
-    "time": [
-      99,
       109
     ],
-    "en": "to the palace that evening and both of them soon left for the palace",
-    "ru": "во дворец в тот вечер, и они оба вскоре ушли во дворец"
+    "en": "The miller went home to tell his daughter that the king wanted them to present themselves to the palace that evening and both of them soon left for the palace",
+    "ru": "Мельник пошел домой, чтобы сказать своей дочери, что король хочет, чтобы они явились во дворец в этот вечер, и вскоре они оба уехали во дворец"
   },
   {
     "time": [
       109,
-      113
-    ],
-    "en": "Arriving at the palace the miller and his daugter were quickly ushered in to meet the",
-    "ru": "Прибывший во дворец мельник и его дочь были быстро проведены, чтобы встретить"
-  },
-  {
-    "time": [
-      113,
       114
     ],
-    "en": "king",
-    "ru": "король"
+    "en": "Arriving at the palace the miller and his daugter were quickly ushered in to meet the king",
+    "ru": "По прибытии во дворец мельник и его дочь были быстро проведены на встречу с королем"
   },
   {
     "time": [
@@ -258,18 +186,10 @@ var items = [
   {
     "time": [
       126,
-      130
-    ],
-    "en": "So saying the king led the daughter to a room in the palace where there was a spinning",
-    "ru": "Сказав это, царь привел дочь в комнату во дворце, где была прядильная машина"
-  },
-  {
-    "time": [
-      130,
       133
     ],
-    "en": "wheel and a large pile of straw",
-    "ru": "колесо и большая куча соломы"
+    "en": "So saying the king led the daughter to a room in the palace where there was a spinning wheel and a large pile of straw",
+    "ru": "Сказав это, царь привел дочь в комнату во дворце, где было прялка и большая куча соломы"
   },
   {
     "time": [
@@ -290,34 +210,18 @@ var items = [
   {
     "time": [
       142,
-      146
-    ],
-    "en": "The daughter tried to plead with the king that it was just an empty boast that her father",
-    "ru": "Дочь пыталась упросить короля, что это было пустым хвастовством отца"
-  },
-  {
-    "time": [
-      146,
       153
     ],
-    "en": "had made but all in vain as the king did not listen and locked the room and went away",
-    "ru": "сделал, но все напрасно, так как король не послушал, запер комнату и ушел"
+    "en": "The daughter tried to plead with the king that it was just an empty boast that her father had made but all in vain as the king did not listen and locked the room and went away",
+    "ru": "Дочь пыталась умолять короля, что это было пустое хвастовство ее отца, но все было напрасно, поскольку король не слушал, запер комнату и ушел"
   },
   {
     "time": [
       153,
-      154
-    ],
-    "en": "Oh woe my fate",
-    "ru": "О горе моя судьба"
-  },
-  {
-    "time": [
-      154,
       156
     ],
-    "en": "What has my father done",
-    "ru": "Что сделал мой отец"
+    "en": "Oh woe my fate What has my father done",
+    "ru": "О горе моей судьбе Что сделал мой отец"
   },
   {
     "time": [
@@ -410,18 +314,10 @@ var items = [
   {
     "time": [
       192,
-      194
-    ],
-    "en": "Okay lassie",
-    "ru": "Ладно, девочка"
-  },
-  {
-    "time": [
-      194,
       199
     ],
-    "en": "Now stop crying and go sit down and let me work",
-    "ru": "А теперь перестань плакать, сядь и дай мне поработать"
+    "en": "Okay lassie Now stop crying and go sit down and let me work",
+    "ru": "Ладно, девочка, перестань плакать, сядь и дай мне поработать"
   },
   {
     "time": [
@@ -530,18 +426,10 @@ var items = [
   {
     "time": [
       265,
-      270
-    ],
-    "en": "However the king’s greed became even more and he planned to have the miller’s daughter",
-    "ru": "Однако жадность царя усилилась, и он задумал завести дочь мельника"
-  },
-  {
-    "time": [
-      270,
       273
     ],
-    "en": "spin even more gold the next day",
-    "ru": "закрутите еще больше золота на следующий день"
+    "en": "However the king’s greed became even more and he planned to have the miller’s daughter spin even more gold the next day",
+    "ru": "Однако жадность короля стала еще больше, и он планировал, что на следующий день дочь мельника раскрутит еще больше золота"
   },
   {
     "time": [
@@ -562,26 +450,10 @@ var items = [
   {
     "time": [
       281,
-      287
-    ],
-    "en": "The miller’s daughter again sat down in dismay not knowing what to do when the same",
-    "ru": "Дочь мельника снова в ужасе села, не зная, что делать в то же самое"
-  },
-  {
-    "time": [
-      287,
-      289
-    ],
-    "en": "old funny man appeared again",
-    "ru": "Снова появился старый забавный человечек"
-  },
-  {
-    "time": [
-      289,
       291
     ],
-    "en": "Ah ha",
-    "ru": "Ага"
+    "en": "The miller’s daughter again sat down in dismay not knowing what to do when the same old funny man appeared again",
+    "ru": "Дочь мельника снова в ужасе села, не зная, что делать, когда снова появился тот же старый забавный человечек"
   },
   {
     "time": [
@@ -674,18 +546,10 @@ var items = [
   {
     "time": [
       366,
-      371
-    ],
-    "en": "She may be just a miller’s daughter but she is beautiful and can give me all the gold",
-    "ru": "Она может быть просто дочерью мельника, но она красива и может отдать мне все золото"
-  },
-  {
-    "time": [
-      371,
       373
     ],
-    "en": "that I desire",
-    "ru": "что я желаю"
+    "en": "She may be just a miller’s daughter but she is beautiful and can give me all the gold that I desire",
+    "ru": "Она может быть просто дочерью мельника, но она красива и может дать мне все золото, которое я хочу"
   },
   {
     "time": [
@@ -706,18 +570,10 @@ var items = [
   {
     "time": [
       381,
-      386
-    ],
-    "en": "Tonight you will be given even more straw to spin and if you can turn it into gold",
-    "ru": "Сегодня вечером вам дадут еще больше соломы для прядения, и если вы сможете превратить ее в золото"
-  },
-  {
-    "time": [
-      386,
       388
     ],
-    "en": "again you shall be my queen",
-    "ru": "снова ты будешь моей королевой"
+    "en": "Tonight you will be given even more straw to spin and if you can turn it into gold again you shall be my queen",
+    "ru": "Сегодня вечером тебе дадут еще больше соломы для прядения, и если ты снова сможешь превратить ее в золото, ты станешь моей королевой"
   },
   {
     "time": [
@@ -754,18 +610,10 @@ var items = [
   {
     "time": [
       406,
-      411
-    ],
-    "en": "Oh sir I have nothing more to give you but the king has said that if I spin all this",
-    "ru": "О, сэр, мне больше нечего вам дать, но король сказал это, если я все это раскручу"
-  },
-  {
-    "time": [
-      411,
       418
     ],
-    "en": "straw into gold tonight he will make me his queen then I can give you all that you desire",
-    "ru": "солома в золото сегодня вечером он сделает меня своей королевой, и тогда я смогу дать тебе все, что ты пожелаешь"
+    "en": "Oh sir I have nothing more to give you but the king has said that if I spin all this straw into gold tonight he will make me his queen then I can give you all that you desire",
+    "ru": "О сэр, мне больше нечего вам дать, но король сказал, что если я сегодня вечером спрячу всю эту соломинку в золото, он сделает меня своей королевой, тогда я смогу дать вам все, что вы пожелаете"
   },
   {
     "time": [
@@ -778,18 +626,10 @@ var items = [
   {
     "time": [
       423,
-      430
-    ],
-    "en": "I have no desire for any wealth but you must promise me that you will give me your first",
-    "ru": "У меня нет стремления к богатству, но вы должны пообещать мне, что отдадите мне свое первое"
-  },
-  {
-    "time": [
-      430,
       431
     ],
-    "en": "born child",
-    "ru": "родился ребенок"
+    "en": "I have no desire for any wealth but you must promise me that you will give me your first born child",
+    "ru": "У меня нет стремления к богатству, но вы должны пообещать мне, что подарите мне своего первенца"
   },
   {
     "time": [
@@ -890,34 +730,18 @@ var items = [
   {
     "time": [
       508,
-      513
-    ],
-    "en": "The queen was shocked and dismayed on seeing the old man and could not even think of parting",
-    "ru": "Королева была потрясена и встревожена, увидев старика, и не могла даже подумать о расставании"
-  },
-  {
-    "time": [
-      513,
       518
     ],
-    "en": "with her bundle of joy and cried and begged before the old man",
-    "ru": "с ее узелком радости и плакала, и просила перед стариком"
+    "en": "The queen was shocked and dismayed on seeing the old man and could not even think of parting with her bundle of joy and cried and begged before the old man",
+    "ru": "Королева была потрясена и встревожена, увидев старика, и не могла даже подумать о том, чтобы расстаться со своим узлом радости, плакала и умоляла перед стариком"
   },
   {
     "time": [
       518,
-      519
-    ],
-    "en": "Oh sir",
-    "ru": "О, сэр"
-  },
-  {
-    "time": [
-      519,
       523
     ],
-    "en": "Please do not be so cruel do not take away my baby from me",
-    "ru": "Пожалуйста, не будь таким жестоким, не забирай у меня моего ребенка"
+    "en": "Oh sir Please do not be so cruel do not take away my baby from me",
+    "ru": "О сэр, пожалуйста, не будьте такими жестокими, не забирайте у меня моего ребенка"
   },
   {
     "time": [
@@ -978,18 +802,10 @@ var items = [
   {
     "time": [
       553,
-      558
-    ],
-    "en": "The fear of losing her child kept the queen awake all night and she wrote down all the",
-    "ru": "Страх потерять ребенка не давал королеве спать всю ночь, и она записывала все"
-  },
-  {
-    "time": [
-      558,
       560
     ],
-    "en": "strange names that she had ever heard of",
-    "ru": "странные имена, о которых она когда-либо слышала"
+    "en": "The fear of losing her child kept the queen awake all night and she wrote down all the strange names that she had ever heard of",
+    "ru": "Страх потерять ребенка не давал королеве спать всю ночь, и она записала все странные имена, о которых когда-либо слышала"
   },
   {
     "time": [
@@ -1026,34 +842,18 @@ var items = [
   {
     "time": [
       568,
-      573
-    ],
-    "en": "The queen said all the names that she could think of but the old man said that was not",
-    "ru": "Королева произнесла все имена, которые могла придумать, но старик сказал, что это не так"
-  },
-  {
-    "time": [
-      573,
       575
     ],
-    "en": "his name",
-    "ru": "его имя"
+    "en": "The queen said all the names that she could think of but the old man said that was not his name",
+    "ru": "Королева произнесла все имена, которые могла придумать, но старик сказал, что это не его имя"
   },
   {
     "time": [
       575,
-      580
-    ],
-    "en": "You have tried But what my name is a guess you could not",
-    "ru": "Вы пробовали, Но как меня зовут, вы не могли догадаться"
-  },
-  {
-    "time": [
-      580,
       581
     ],
-    "en": "make",
-    "ru": "делать"
+    "en": "You have tried But what my name is a guess you could not make",
+    "ru": "Вы пробовали Но как меня зовут, вы не могли догадаться"
   },
   {
     "time": [
@@ -1074,18 +874,10 @@ var items = [
   {
     "time": [
       589,
-      593
-    ],
-    "en": "I have to somehow guess what the old man’s name is I cannot even think of giving my",
-    "ru": "Я должен каким-то образом угадать, как зовут старика, я даже не могу думать о том, чтобы назвать свое"
-  },
-  {
-    "time": [
-      593,
       594
     ],
-    "en": "baby away",
-    "ru": "ребенок прочь"
+    "en": "I have to somehow guess what the old man’s name is I cannot even think of giving my baby away",
+    "ru": "Я должен как-то угадать, как зовут старика, я даже не могу думать о том, чтобы отдать своего ребенка"
   },
   {
     "time": [
@@ -1098,34 +890,18 @@ var items = [
   {
     "time": [
       597,
-      602
-    ],
-    "en": "The next day the queen dispatched messengers across the kingdom to find out all the possible",
-    "ru": "На следующий день королева разослала гонцов по королевству, чтобы выяснить все возможное"
-  },
-  {
-    "time": [
-      602,
       603
     ],
-    "en": "strange names",
-    "ru": "странные имена"
+    "en": "The next day the queen dispatched messengers across the kingdom to find out all the possible strange names",
+    "ru": "На следующий день королева разослала гонцов по королевству, чтобы узнать все возможные странные имена"
   },
   {
     "time": [
       603,
-      607
-    ],
-    "en": "However when the old man came though she repeated all the names the messengers had",
-    "ru": "Однако когда пришел старик, она повторила все имена посланников"
-  },
-  {
-    "time": [
-      607,
       611
     ],
-    "en": "given her she could not guess the old man’s name",
-    "ru": "учитывая ее, она не могла угадать имя старика"
+    "en": "However when the old man came though she repeated all the names the messengers had given her she could not guess the old man’s name",
+    "ru": "Однако когда пришел старик, хотя она повторила все имена, которые ей дали посыльные, она не смогла угадать имени старика"
   },
   {
     "time": [
@@ -1138,34 +914,18 @@ var items = [
   {
     "time": [
       615,
-      619
-    ],
-    "en": "She once again sent the messengers and told them to visit the most remote corners of the",
-    "ru": "Она еще раз отправила гонцов и велела им посетить самые отдаленные уголки"
-  },
-  {
-    "time": [
-      619,
       623
     ],
-    "en": "kingdom to find any strange names they could",
-    "ru": "королевство, чтобы найти любые странные имена, которые они могли"
+    "en": "She once again sent the messengers and told them to visit the most remote corners of the kingdom to find any strange names they could",
+    "ru": "Она снова отправила посланников и велела им посетить самые отдаленные уголки королевства, чтобы найти любые странные имена, которые они смогут"
   },
   {
     "time": [
       623,
-      628
-    ],
-    "en": "The messengers came back with no new names but one messenger told the queen that he wished",
-    "ru": "Посланники вернулись без новых имен, но один посланник сказал королеве, что он хочет"
-  },
-  {
-    "time": [
-      628,
       630
     ],
-    "en": "to have a word with her",
-    "ru": "поговорить с ней"
+    "en": "The messengers came back with no new names but one messenger told the queen that he wished to have a word with her",
+    "ru": "Посланники вернулись без новых имен, но один посланник сказал королеве, что хочет поговорить с ней"
   },
   {
     "time": [
@@ -1178,18 +938,10 @@ var items = [
   {
     "time": [
       636,
-      641
-    ],
-    "en": "As I was climbing down a hill I entered a forest and among the tall trees was a small",
-    "ru": "Спускаясь с холма, я вошел в лес и среди высоких деревьев оказался маленький."
-  },
-  {
-    "time": [
-      641,
       642
     ],
-    "en": "cottage",
-    "ru": "коттедж"
+    "en": "As I was climbing down a hill I entered a forest and among the tall trees was a small cottage",
+    "ru": "Когда я спускался с холма, я вошел в лес и среди высоких деревьев был небольшой коттедж."
   },
   {
     "time": [
@@ -1274,18 +1026,10 @@ var items = [
   {
     "time": [
       684,
-      689
-    ],
-    "en": "The queen kept on saying names and each time the old man kept shaking his head his smile",
-    "ru": "Королева продолжала называть имена, и каждый раз старик качал головой с улыбкой"
-  },
-  {
-    "time": [
-      689,
       690
     ],
-    "en": "growing wider and wider",
-    "ru": "становится все шире и шире"
+    "en": "The queen kept on saying names and each time the old man kept shaking his head his smile growing wider and wider",
+    "ru": "Королева продолжала называть имена, и каждый раз, когда старик качал головой, его улыбка становилась все шире и шире"
   },
   {
     "time": [
@@ -1322,34 +1066,18 @@ var items = [
   {
     "time": [
       708,
-      713
-    ],
-    "en": "So angry was he that he stamped his right foot with so much force that it sank into",
-    "ru": "Он был так зол, что топнул правой ногой с такой силой, что она вонзилась"
-  },
-  {
-    "time": [
-      713,
       714
     ],
-    "en": "the floor",
-    "ru": "пол"
+    "en": "So angry was he that he stamped his right foot with so much force that it sank into the floor",
+    "ru": "Он был так зол, что ударил правой ногой с такой силой, что она провалилась в пол"
   },
   {
     "time": [
       714,
-      718
-    ],
-    "en": "He forcefully pulled it out with both hands and made his way out amidst the jeering of",
-    "ru": "Он с силой вытащил его обеими руками и вышел под насмешки"
-  },
-  {
-    "time": [
-      718,
       720
     ],
-    "en": "all the courtiers",
-    "ru": "все придворные"
+    "en": "He forcefully pulled it out with both hands and made his way out amidst the jeering of all the courtiers",
+    "ru": "Он с силой вытащил его обеими руками и вышел среди насмешек придворных"
   },
   {
     "time": [
@@ -1370,18 +1098,10 @@ var items = [
   {
     "time": [
       744,
-      748
-    ],
-    "en": "An old lady and an old man lived in a little",
-    "ru": "Немного жили старуха и старик"
-  },
-  {
-    "time": [
-      748,
       749
     ],
-    "en": "house by themselves",
-    "ru": "дом сами по себе"
+    "en": "An old lady and an old man lived in a little house by themselves",
+    "ru": "В домике отдельно жили старушка и старик"
   },
   {
     "time": [
@@ -1410,26 +1130,10 @@ var items = [
   {
     "time": [
       762,
-      766
-    ],
-    "en": "cleaning Well I’m sure you can find some other ways",
-    "ru": "очистка Ну, я уверен, вы можете найти другие способы"
-  },
-  {
-    "time": [
-      766,
-      768
-    ],
-    "en": "to keep yourself occupied",
-    "ru": "чтобы занять себя"
-  },
-  {
-    "time": [
-      768,
       769
     ],
-    "en": "Hmmmm",
-    "ru": "Хмммм"
+    "en": "cleaning Well I’m sure you can find some other ways to keep yourself occupied",
+    "ru": "уборка Ну, я уверен, ты найдешь другие способы чем занять себя"
   },
   {
     "time": [
@@ -1538,18 +1242,10 @@ var items = [
   {
     "time": [
       830,
-      836
-    ],
-    "en": "Let me see nowone little ball to be shaped into a mouth two little chololate chips for",
-    "ru": "Позвольте мне теперь взглянуть на один маленький шарик, который должен превратиться в рот, для двух маленьких кусочков холата"
-  },
-  {
-    "time": [
-      836,
       841
     ],
-    "en": "eyes and these pretty red cherries for buttons",
-    "ru": "глаза и эти симпатичные красные вишенки вместо пуговиц"
+    "en": "Let me see nowone little ball to be shaped into a mouth two little chololate chips for eyes and these pretty red cherries for buttons",
+    "ru": "Позвольте мне теперь взглянуть на один маленький шарик, который должен превратиться в рот, две маленькие кусочки холата вместо глаз и эти красивые красные вишенки вместо пуговиц"
   },
   {
     "time": [
@@ -1578,18 +1274,10 @@ var items = [
   {
     "time": [
       851,
-      857
-    ],
-    "en": "The old lady went and sat on her rocking chair knitting away while waiting for the gingerbread",
-    "ru": "Старушка подошла и села на свое кресло-качалку и вязала, пока ждала имбирный пряник"
-  },
-  {
-    "time": [
-      857,
       868
     ],
-    "en": "man to bake",
-    "ru": "человек запекать"
+    "en": "The old lady went and sat on her rocking chair knitting away while waiting for the gingerbread man to bake",
+    "ru": "Старушка подошла к своему креслу-качалке и вязала, ожидая, когда испечется пряничный человечек"
   },
   {
     "time": [
@@ -1658,18 +1346,10 @@ var items = [
   {
     "time": [
       894,
-      900
-    ],
-    "en": "Before she realized what was happening the gingerbread man ran to the open window jumped",
-    "ru": "Прежде чем она сообразила, что происходит, пряничный человечек подбежал к открытому окну и прыгнул"
-  },
-  {
-    "time": [
-      900,
       912
     ],
-    "en": "out and in a second was running down the garden and out into the street",
-    "ru": "и через секунду побежал по саду на улицу"
+    "en": "Before she realized what was happening the gingerbread man ran to the open window jumped out and in a second was running down the garden and out into the street",
+    "ru": "Прежде чем она сообразила, что происходит, пряничный человечек подбежал к открытому окну, выскочил и через секунду побежал по саду на улицу"
   },
   {
     "time": [
@@ -1834,18 +1514,10 @@ var items = [
   {
     "time": [
       1035,
-      1040
+      1043
     ],
     "en": "You look so tasty I want to eat you",
     "ru": "Ты выглядишь так вкусно, что я хочу тебя съесть"
-  },
-  {
-    "time": [
-      1040,
-      1043
-    ],
-    "en": "He he he",
-    "ru": "Он он он"
   },
   {
     "time": [
@@ -1938,18 +1610,10 @@ var items = [
   {
     "time": [
       1117,
-      1120
+      1121
     ],
     "en": "I am going to catch that fellow and have him for dinner instead of hay",
     "ru": "Я поймаю этого парня и пообедаю вместо сена"
-  },
-  {
-    "time": [
-      1120,
-      1121
-    ],
-    "en": "Oh ho",
-    "ru": "Ой хо"
   },
   {
     "time": [
@@ -2058,18 +1722,10 @@ var items = [
   {
     "time": [
       1177,
-      1182
-    ],
-    "en": "Once again the gingerbread man started running looking back at all those chasing him with",
-    "ru": "И снова пряничный человечек побежал, оглядываясь на всех, кто его преследовал"
-  },
-  {
-    "time": [
-      1182,
       1184
     ],
-    "en": "a big grin on his face",
-    "ru": "широкая ухмылка на его лице"
+    "en": "Once again the gingerbread man started running looking back at all those chasing him with a big grin on his face",
+    "ru": "И снова пряничный человечек с широкой ухмылкой побежал оглядываться на всех, кто его преследовал"
   },
   {
     "time": [
@@ -2114,18 +1770,10 @@ var items = [
   {
     "time": [
       1203,
-      1208
-    ],
-    "en": "No you don’t you want to make a meal of me and that is not going to happen you stinking",
-    "ru": "Нет, ты не хочешь приготовить из меня обед, и этого не случится, ты вонючий"
-  },
-  {
-    "time": [
-      1208,
       1209
     ],
-    "en": "thing",
-    "ru": "вещь"
+    "en": "No you don’t you want to make a meal of me and that is not going to happen you stinking thing",
+    "ru": "Нет, ты не хочешь приготовить из меня еду, и этого не случится, вонючая штука"
   },
   {
     "time": [
@@ -2290,18 +1938,10 @@ var items = [
   {
     "time": [
       1278,
-      1282
-    ],
-    "en": "No way are those slow coaches going to catch up with me so I’ll just look around for",
-    "ru": "Эти медленные тренеры ни за что не догонят меня, так что я просто буду искать"
-  },
-  {
-    "time": [
-      1282,
       1283
     ],
-    "en": "some place to rest",
-    "ru": "какое-нибудь место для отдыха"
+    "en": "No way are those slow coaches going to catch up with me so I’ll just look around for some place to rest",
+    "ru": "Эти медленные тренеры ни за что не догонят меня, так что я просто буду искать где-нибудь отдохнуть"
   },
   {
     "time": [
@@ -2330,18 +1970,10 @@ var items = [
   {
     "time": [
       1291,
-      1297
-    ],
-    "en": "The gingerbread man wanted to go across to the other side but if he fell in the water",
-    "ru": "Пряничный человечек хотел перебраться на другую сторону, но если бы он упал в воду"
-  },
-  {
-    "time": [
-      1297,
       1300
     ],
-    "en": "he would become all soggy",
-    "ru": "он станет совсем мокрым"
+    "en": "The gingerbread man wanted to go across to the other side but if he fell in the water he would become all soggy",
+    "ru": "Пряничный человечек хотел перейти на другую сторону, но если он упадет в воду, то станет совсем мокрым"
   },
   {
     "time": [
@@ -2538,18 +2170,10 @@ var items = [
   {
     "time": [
       1401,
-      1406
+      1407
     ],
     "en": "After a while the fox started moving its neck and told him",
     "ru": "Через некоторое время лисица начала двигать шеей и рассказала ему"
-  },
-  {
-    "time": [
-      1406,
-      1407
-    ],
-    "en": "Oooh",
-    "ru": "Ооо"
   },
   {
     "time": [
@@ -2570,18 +2194,10 @@ var items = [
   {
     "time": [
       1411,
-      1416
-    ],
-    "en": "The gingerbread thought he was very smart but he couldn’t guess what was going on",
-    "ru": "Пряник подумал, что он очень умен, но не мог догадаться, что происходит"
-  },
-  {
-    "time": [
-      1416,
       1419
     ],
-    "en": "in the cunning fox’s mind",
-    "ru": "в уме хитрой лисы"
+    "en": "The gingerbread thought he was very smart but he couldn’t guess what was going on in the cunning fox’s mind",
+    "ru": "Пряник подумал, что он очень умен, но он не мог догадаться, что творится в голове хитрого лиса"
   },
   {
     "time": [
@@ -2618,18 +2234,10 @@ var items = [
   {
     "time": [
       1428,
-      1434
-    ],
-    "en": "As soon as the gingerbread man sat on it’s snout the fox quickly tossed him up and",
-    "ru": "Как только пряничный человечек сел ему на морду, лис быстро подбросил его и"
-  },
-  {
-    "time": [
-      1434,
       1436
     ],
-    "en": "caught him in his mouth as he fell",
-    "ru": "поймал его в рот, когда он упал"
+    "en": "As soon as the gingerbread man sat on it’s snout the fox quickly tossed him up and caught him in his mouth as he fell",
+    "ru": "Как только пряничный человечек сел на морду, лиса быстро подбросила его и схватила ртом, когда он упал"
   },
   {
     "time": [
