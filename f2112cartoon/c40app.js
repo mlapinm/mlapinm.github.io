@@ -3,6 +3,7 @@ $(() => {
     $('.log3').text(333)
 
     var audio = $('.audio')[0]
+    let timerId = null
 
     function playPart(begin, end){
         if(timerId){
@@ -10,14 +11,14 @@ $(() => {
         }
         audio.currentTime = begin
         audio.play()
-        let timerId = setInterval(() => {
+        timerId = setInterval(() => {
           $('.log3').text(Math.floor(audio.currentTime))
          if ( audio.currentTime > end){
             audio.pause()
             audio.currentTime = end
             clearTimeout(timerId)
         }
-        }, 1000)
+        }, 100)
       }
 
       var count = 0
