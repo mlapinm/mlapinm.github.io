@@ -5,7 +5,9 @@ $(() => {
     var audio = $('.audio')[0]
 
     function playPart(begin, end){
-        clearTimeout(timerId)
+        if(timerId){
+            clearTimeout(timerId)
+        }
         audio.currentTime = begin
         audio.play()
         let timerId = setInterval(() => {
