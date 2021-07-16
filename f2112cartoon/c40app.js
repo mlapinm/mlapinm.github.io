@@ -5,6 +5,7 @@ $(() => {
     var audio = $('.audio')[0]
 
     function playPart(begin, end){
+        clearTimeout(timerId)
         audio.currentTime = begin
         audio.play()
         let timerId = setInterval(() => {
@@ -53,7 +54,7 @@ $(() => {
     })
 
     $('.btn_next').click(() => {
-        
+
         if(current < count - 1){
             current += 1
          }else{
