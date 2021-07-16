@@ -1,0 +1,25 @@
+
+body {
+    font-size: 1.8em;
+}
+
+audio{
+    /* visibility: hidden; */
+    display: none;
+}
+
+.container1 {
+    color: blue;
+    background-color: burlywood;
+    height: 40vh;
+    border: solid 1px;
+}
+
+.container2 {
+    color: blue;
+    background-color: aqua;
+    height: 40vh;
+    border: solid 1px;
+}
+
+
