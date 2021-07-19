@@ -1,2266 +1,970 @@
 var items = [
   {
     "time": [
-      4,
-      8
+      18,
+      22
     ],
-    "en": "RUMPELSTILTSKIN",
-    "ru": "Румпельстильцкин"
+    "en": "Tia aren�t you going to your friend�s party",
+    "ru": "���, �� �� ������� �� ��������� � �����"
   },
   {
     "time": [
-      8,
-      15
+      22,
+      25
     ],
-    "en": "In a far away land there was a beautiful wood by which ran a stream and close to the stream was a mill",
-    "ru": "В далекой стране был красивый лес, по которому протекал ручей, а рядом с ручьем стояла мельница"
+    "en": "No Tofu",
+    "ru": "��� ����"
   },
   {
     "time": [
-      15,
-      19
+      25,
+      34
     ],
-    "en": "The owner of the mill lived nearby with his beautiful and clever daughter",
-    "ru": "Рядом жил хозяин мельницы со своей красивой и умной дочерью"
+    "en": "Mummy has asked me to stay home with you tonight because she and Papa will be returning home late",
+    "ru": "���� ��������� ���� �������� � ����� ������� �������, ������ ��� ��� � ����� �������� ����� ������"
   },
   {
     "time": [
-      19,
-      23
+      34,
+      36
     ],
-    "en": "Oh daughter I am so tired of leading a poor man’s life",
-    "ru": "О, дочка, я так устала вести жизнь бедняка"
+    "en": "Oh no",
+    "ru": "� ���"
   },
   {
     "time": [
-      23,
-      27
-    ],
-    "en": "I wish we could also be rich and have every comfort in the world",
-    "ru": "Я хотел бы, чтобы мы также могли быть богатыми и иметь все удобства в мире"
-  },
-  {
-    "time": [
-      27,
-      35
-    ],
-    "en": "Just then the king of the country came passing by on a hunting trip",
-    "ru": "В этот момент мимо проходил король страны на охоте"
-  },
-  {
-    "time": [
-      35,
-      38
-    ],
-    "en": "The King has come to our woods I can’t believe it",
-    "ru": "Король пришел в наш лес, я не могу поверить в это"
-  },
-  {
-    "time": [
-      38,
-      40
-    ],
-    "en": "I have to try and meet him",
-    "ru": "Я должен попытаться встретиться с ним"
-  },
-  {
-    "time": [
-      40,
+      36,
       41
     ],
-    "en": "Yes",
-    "ru": "Да"
+    "en": "I am sorry Tia Because of me you can�t go to your party",
+    "ru": "������, ���. ��-�� ���� �� �� ������ ����� �� ���������"
   },
   {
     "time": [
       41,
-      52
+      43
     ],
-    "en": "This is a fine opportunity for me to impress the king",
-    "ru": "Для меня это прекрасная возможность произвести впечатление на короля"
+    "en": "Its okay Tofu",
+    "ru": "��� ���������, ����"
   },
   {
     "time": [
-      52,
-      58
+      43,
+      49
     ],
-    "en": "The miller made his way to where the king was Bowing before the king the miller said",
-    "ru": "Мельник пошел туда, где царь склонился перед королем, сказал мельник"
+    "en": "Sometime we have to sacrifice things for the ones we love",
+    "ru": "������ ��� ���������� ���������� ������ ���� ���, ���� �� �����"
   },
   {
     "time": [
-      58,
-      61
+      49,
+      51
     ],
-    "en": "Your Majesty I am indeed honoured to meet you",
-    "ru": "Ваше Величество, для меня большая честь познакомиться с вами"
+    "en": "Just like the Little Mermaid",
+    "ru": "����� ��� ���������"
   },
   {
     "time": [
-      61,
-      63
+      51,
+      54
     ],
-    "en": "Won’t you please come this way",
-    "ru": "Пожалуйста, иди сюда"
+    "en": "Little Mermaid",
+    "ru": "���������"
   },
   {
     "time": [
-      63,
-      67
+      54,
+      56
     ],
-    "en": "I would like you to meet my beautiful and talented daughter",
-    "ru": "Хочу познакомить вас с моей красивой и талантливой дочкой"
+    "en": "Is it a story",
+    "ru": "��� �������"
   },
   {
     "time": [
-      67,
-      72
+      56,
+      73
     ],
-    "en": "Really What special talent does your daughter have that I would want to meet her",
-    "ru": "Действительно, какой у вашей дочери особый талант, что я хотел бы с ней познакомиться"
+    "en": "Tell me Tia Please",
+    "ru": "����� ���, ���, ����������"
   },
   {
     "time": [
-      72,
-      80
+      73,
+      81
     ],
-    "en": "Er oh yes Your Majesty my daughter can spin gold from straw",
-    "ru": "О да, ваше величество, моя дочь умеет плести золото из соломы"
+    "en": "Once upon a time there was a sea kingdom at the bottom of the sea",
+    "ru": "�����-�� �� ��� ���� ���� ������� �������"
   },
   {
     "time": [
-      80,
-      89
+      81,
+      92
     ],
-    "en": "Now the king was a very wealthy man but he was also greedy and the thought of making gold from straw obviously tempted him",
-    "ru": "Король был очень богатым человеком, но при этом был жадным, и мысль о том, чтобы делать золото из соломы, явно соблазняла его"
+    "en": "The King of the Seas had six beautiful daughters who were mermaids",
+    "ru": "� ������ ����� ���� ����� ���������� �������-�������"
   },
   {
     "time": [
-      89,
-      93
-    ],
-    "en": "Really This I have to see",
-    "ru": "На самом деле я должен это увидеть"
-  },
-  {
-    "time": [
-      93,
+      92,
       95
     ],
-    "en": "Bring your daughter to the palace this evening",
-    "ru": "Сегодня вечером приведите свою дочь во дворец"
+    "en": "They were all very beautiful",
+    "ru": "��� ��� ���� ����� �������"
   },
   {
     "time": [
       95,
-      109
+      104
     ],
-    "en": "The miller went home to tell his daughter that the king wanted them to present themselves to the palace that evening and both of them soon left for the palace",
-    "ru": "Мельник пошел домой, чтобы сказать своей дочери, что король хочет, чтобы они явились во дворец в этот вечер, и вскоре они оба уехали во дворец"
+    "en": "But the youngest of them was the prettiest of them all",
+    "ru": "�� ����� ������� �� ��� ��� ����� �������� �� ����"
   },
   {
     "time": [
-      109,
-      114
+      104,
+      117
     ],
-    "en": "Arriving at the palace the miller and his daugter were quickly ushered in to meet the king",
-    "ru": "По прибытии во дворец мельник и его дочь были быстро проведены на встречу с королем"
+    "en": "She had a gentle face big round eyes and a voice sweeter than anyone else�s in the world",
+    "ru": "� ��� ���� ������ ����, ������� ������� ����� � ����� ����� �������, ��� � ����-���� �� �����"
   },
   {
     "time": [
-      114,
-      119
+      117,
+      127
     ],
-    "en": "The king was pleased to meet the miller and his daughter and said",
-    "ru": "Король был рад встрече с мельником и его дочерью и сказал"
+    "en": "When the little mermaid turned 15 years old her grandmother called her to her room",
+    "ru": "����� ��������� ����������� 15 ���, ������� ������� �� � ���� �������"
   },
   {
     "time": [
-      119,
-      126
+      127,
+      131
     ],
-    "en": "Hmm your daughter is indeed beautiful and now we will see how she spins straw into gold",
-    "ru": "Хм, ваша дочь действительно красива, и теперь мы посмотрим, как она прядет солому в золото"
+    "en": "Come my darling",
+    "ru": "�����, ��� �������"
   },
   {
     "time": [
-      126,
-      133
+      131,
+      137
     ],
-    "en": "So saying the king led the daughter to a room in the palace where there was a spinning wheel and a large pile of straw",
-    "ru": "Сказав это, царь привел дочь в комнату во дворце, где было прялка и большая куча соломы"
+    "en": "Today you have turned 15",
+    "ru": "������� ���� ����������� 15 ���"
   },
   {
     "time": [
-      133,
-      136
+      137,
+      143
     ],
-    "en": "Now set to work and show us your talent",
-    "ru": "А теперь приступайте к работе и покажите нам свой талант"
+    "en": "And from now onwards you can go to the world above",
+    "ru": "� � ����� ������� �� ������ ����������� � ��� �������"
   },
   {
     "time": [
-      136,
-      142
+      143,
+      149
     ],
-    "en": "All this straw must be spun into gold by morning if you love your life",
-    "ru": "Всю эту соломинку нужно к утру превратить в золото, если вы любите свою жизнь"
+    "en": "Just remember the people above are very different from us",
+    "ru": "������ �������, ��� ����������� ���� ���� ����� ���������� �� ���"
   },
   {
     "time": [
-      142,
-      153
+      149,
+      158
     ],
-    "en": "The daughter tried to plead with the king that it was just an empty boast that her father had made but all in vain as the king did not listen and locked the room and went away",
-    "ru": "Дочь пыталась умолять короля, что это было пустое хвастовство ее отца, но все было напрасно, поскольку король не слушал, запер комнату и ушел"
+    "en": "They do not have a beautiful fishtail like us instead they have two legs",
+    "ru": "� ��� ��� ��������� ������� ������, ��� � ���, ������ ����� � ��� ��� ����"
   },
   {
     "time": [
-      153,
-      156
+      158,
+      160
     ],
-    "en": "Oh woe my fate What has my father done",
-    "ru": "О горе моей судьбе Что сделал мой отец"
+    "en": "Thank you Grandmother",
+    "ru": "�������, �������"
   },
   {
     "time": [
-      156,
-      159
+      160,
+      164
     ],
-    "en": "How am I going to do this impossible task",
-    "ru": "Как я собираюсь выполнить эту невыполнимую задачу"
+    "en": "I have waited for this day for so long",
+    "ru": "� ��� ����� ���� ����� ���"
   },
   {
     "time": [
-      159,
-      163
-    ],
-    "en": "Just them a funny looking old man hobbled into the room",
-    "ru": "Просто им в комнату проковылял забавный старик"
-  },
-  {
-    "time": [
-      163,
-      168
-    ],
-    "en": "Now my pretty lass why do you weep so",
-    "ru": "Теперь моя милая девушка, почему ты так плачешь"
-  },
-  {
-    "time": [
-      168,
-      169
-    ],
-    "en": "Oh sir",
-    "ru": "О, сэр"
-  },
-  {
-    "time": [
-      169,
-      173
-    ],
-    "en": "I must spin all this straw into gold by morning or the king will kill me",
-    "ru": "Я должен к утру превратить всю эту соломинку в золото, иначе король убьет меня"
-  },
-  {
-    "time": [
-      173,
-      176
-    ],
-    "en": "I just don’t know what to do",
-    "ru": "Я просто не знаю, что мне делать"
-  },
-  {
-    "time": [
-      176,
-      177
-    ],
-    "en": "Hmm",
-    "ru": "Хм"
-  },
-  {
-    "time": [
-      177,
-      183
-    ],
-    "en": "If I spin this straw into gold what will you give me",
-    "ru": "Если я превращу эту соломинку в золото, что вы мне дадите"
-  },
-  {
-    "time": [
-      183,
-      185
-    ],
-    "en": "Can you really help me sir",
-    "ru": "Вы действительно можете мне помочь, сэр"
-  },
-  {
-    "time": [
-      185,
+      164,
       187
     ],
-    "en": "Oh I will be so grateful",
-    "ru": "О, я буду так благодарен"
+    "en": "When I return I will tell you about everything I see above",
+    "ru": "����� �������, � �������� ��� ����, ��� ���� ����"
   },
   {
     "time": [
       187,
-      192
+      194
     ],
-    "en": "Let me see here I will give you my necklace",
-    "ru": "Дай посмотреть, я подарю тебе свое ожерелье"
+    "en": "That night the little mermaid went to the surface of the water",
+    "ru": "� �� ���� ��������� ��������� �� ����������� ����"
   },
   {
     "time": [
-      192,
-      199
+      194,
+      203
     ],
-    "en": "Okay lassie Now stop crying and go sit down and let me work",
-    "ru": "Ладно, девочка, перестань плакать, сядь и дай мне поработать"
+    "en": "The sight of the stars and the cool breeze that touched her face took her breath away",
+    "ru": "��� ����� � ���������� �������, ����������� �� ����, ��������� ���"
   },
   {
     "time": [
-      199,
-      202
+      203,
+      215
     ],
-    "en": "The funny old man sat himself at the spinning wheel",
-    "ru": "Забавный старик сел за прялку"
+    "en": "She was just getting used to the feeling when she saw a big ship cross in front of her",
+    "ru": "��� ������ ��� �������� � ��������, ����� ��� ������� ����� ����� ������� �������"
   },
   {
     "time": [
-      202,
-      207
+      215,
+      230
     ],
-    "en": "Whirr whirr spinning wheel Do as you are told",
-    "ru": "Whirr whirr прялка Делай, как тебе говорят"
+    "en": "Aboard it were many men and they were celebrating the birthday of the young Prince who had just turned 16",
+    "ru": "�� ��� ����� ���� ����� ������, � ��� ����������� ���� �������� ����� ������, �������� ������ ����������� 16 ���"
   },
   {
     "time": [
-      207,
-      229
+      230,
+      239
     ],
-    "en": "All the straw in this room Spin into fine gold",
-    "ru": "Вся солома в этой комнате превращается в чистое золото"
+    "en": "The little mermaid was mesmerized with the handsome looks of the prince",
+    "ru": "��������� ���� ��������� �������� ���������� ������"
   },
   {
     "time": [
-      229,
-      232
+      239,
+      249
     ],
-    "en": "What an amazing sight it was",
-    "ru": "Какое это было потрясающее зрелище"
+    "en": "She couldn�t take her eyes off him as the ship sailed past her",
+    "ru": "��� �� ����� �������� ���� �� ����, ����� ������� ��������� ���� ���"
   },
   {
     "time": [
-      232,
-      238
+      249,
+      259
     ],
-    "en": "As the miller’s daughter watched in surprise the pile of straw was soon turned into gold",
-    "ru": "Дочь мельника с удивлением наблюдала, как груда соломы вскоре превратилась в золото"
+    "en": "She was so lost in him that she did not notice the storm build up in the sky and the sea begin to rage",
+    "ru": "��� ���� ��� �������� � ���, ��� �� ��������, ��� � ���� ����������� �����, � ���� ������ ��������"
   },
   {
     "time": [
-      238,
-      241
-    ],
-    "en": "The old man got up and turned to leave",
-    "ru": "Старик встал и повернулся, чтобы уйти"
-  },
-  {
-    "time": [
-      241,
-      243
-    ],
-    "en": "oh I don’t know how to thank you sir",
-    "ru": "о, я не знаю, как вас благодарить, сэр"
-  },
-  {
-    "time": [
-      243,
-      246
-    ],
-    "en": "I don’t know what I would have done without your help",
-    "ru": "Не знаю, что бы я делал без вашей помощи"
-  },
-  {
-    "time": [
-      246,
-      252
-    ],
-    "en": "Here is my necklace",
-    "ru": "Вот мое ожерелье"
-  },
-  {
-    "time": [
-      252,
-      256
-    ],
-    "en": "At daybreak the king came into the room and lo and behold",
-    "ru": "На рассвете царь вошел в комнату и вот"
-  },
-  {
-    "time": [
-      256,
-      260
-    ],
-    "en": "The sight that met his eyes made them glitter and shine",
-    "ru": "Зрелище, которое встретилось ему в глаза, заставило их сверкать и сиять"
-  },
-  {
-    "time": [
-      260,
-      263
-    ],
-    "en": "I can’t believe what I am seeing",
-    "ru": "Я не могу поверить в то, что вижу"
-  },
-  {
-    "time": [
-      263,
+      259,
       265
     ],
-    "en": "Now I know you are truly talented",
-    "ru": "Теперь я знаю, что вы действительно талантливы"
+    "en": "The ship had only sailed a little further when the storm shook it up",
+    "ru": "������� ������ ������� ������, ����� ����� ������ ���"
   },
   {
     "time": [
       265,
-      273
+      276
     ],
-    "en": "However the king’s greed became even more and he planned to have the miller’s daughter spin even more gold the next day",
-    "ru": "Однако жадность короля стала еще больше, и он планировал, что на следующий день дочь мельника раскрутит еще больше золота"
+    "en": "The sailors tried to steer it to safety but many men including the Prince fell into the sea",
+    "ru": "������ �������� ������ ��� � ���������� �����, �� ������ ����, ������� ������, ����� � ����"
   },
   {
     "time": [
-      273,
-      278
+      276,
+      284
     ],
-    "en": "Tonight my dear you will again spin all the straw in the room to gold before sunrise",
-    "ru": "Сегодня вечером, моя дорогая, ты снова закрутишь всю солому в комнате в золото перед восходом солнца"
+    "en": "The little mermaid rushed to him and saved him from drowning",
+    "ru": "��������� ��������� � ���� � ������ �� ���������"
   },
   {
     "time": [
-      278,
-      281
+      284,
+      288
     ],
-    "en": "I am sure you can do it once more",
-    "ru": "Я уверен, что ты сможешь сделать это еще раз"
+    "en": "She took him ashore",
+    "ru": "��� ������ ��� �� �����"
   },
   {
     "time": [
-      281,
-      291
+      288,
+      293
     ],
-    "en": "The miller’s daughter again sat down in dismay not knowing what to do when the same old funny man appeared again",
-    "ru": "Дочь мельника снова в ужасе села, не зная, что делать, когда снова появился тот же старый забавный человечек"
+    "en": "Don�t worry You are safe Open your eyes",
+    "ru": "�� ��������, �� � ������������. ������ �����"
   },
   {
     "time": [
-      291,
-      296
-    ],
-    "en": "So you have to spin more gold tonight I see",
-    "ru": "Так что, как я вижу, вам нужно раскрутить больше золота сегодня вечером"
-  },
-  {
-    "time": [
-      296,
-      298
-    ],
-    "en": "Oh sir please help me again",
-    "ru": "О, сэр, пожалуйста, помогите мне еще раз"
-  },
-  {
-    "time": [
-      298,
-      301
-    ],
-    "en": "And what will I get in return",
-    "ru": "И что я получу взамен"
-  },
-  {
-    "time": [
-      301,
-      304
-    ],
-    "en": "Sir I have only this ring left",
-    "ru": "Сэр, у меня осталось только это кольцо"
-  },
-  {
-    "time": [
-      304,
-      307
-    ],
-    "en": "I will gladly give it to you if you help me",
-    "ru": "Я с радостью отдам его вам, если вы мне поможете"
-  },
-  {
-    "time": [
-      307,
-      313
-    ],
-    "en": "Alright I shall help you again in return for the ring",
-    "ru": "Хорошо, я снова помогу тебе в обмен на кольцо"
-  },
-  {
-    "time": [
-      313,
+      293,
       316
     ],
-    "en": "And so the old man sat down again at the spinning wheel",
-    "ru": "И вот старик снова сел за прялку"
+    "en": "But the Prince lay unconscious The mermaid decided to get help",
+    "ru": "�� ����� ����� ��� ��������. ������� ������ ������� �� ������"
   },
   {
     "time": [
       316,
-      321
+      325
     ],
-    "en": "Whirr whirr spinning wheel Do as you are told",
-    "ru": "Whirr whirr прялка Делай, как тебе говорят"
+    "en": "When she couldn�t get any she came back to where the Prince was",
+    "ru": "����� ��� �� ������ ������ �������, ��� ��������� ����, ��� ��� �����"
   },
   {
     "time": [
-      321,
-      348
+      325,
+      329
     ],
-    "en": "All the straw in this room Spin into fine gold",
-    "ru": "Вся солома в этой комнате превращается в чистое золото."
+    "en": "She saw him surrounded by many people",
+    "ru": "��� ������� ��� � ��������� ��������� �����"
   },
   {
     "time": [
-      348,
-      361
+      329,
+      337
     ],
-    "en": "Once again all the straw turned into gold and the old man picked up the ring and left",
-    "ru": "Снова вся солома превратилась в золото, старик взял кольцо и ушел"
+    "en": "A beautiful Princess was kneeling by him as others worked to awaken him",
+    "ru": "���������� ��������� ������ ����� � ��� �� �������, ���� ������ �������� ��� ���������"
   },
   {
     "time": [
-      361,
-      366
+      337,
+      346
     ],
-    "en": "The next morning when the king entered the room and saw the gold he thought to himself",
-    "ru": "На следующее утро, когда король вошел в комнату и увидел золото, он подумал про себя"
+    "en": "The Prince opened his eyes and the little mermaid was relived that her Prince will be saved now",
+    "ru": "����� ������ �����, � ��������� ����� �������������, ��� �� ����� ����� ������"
   },
   {
     "time": [
-      366,
-      373
+      346,
+      350
     ],
-    "en": "She may be just a miller’s daughter but she is beautiful and can give me all the gold that I desire",
-    "ru": "Она может быть просто дочерью мельника, но она красива и может дать мне все золото, которое я хочу"
+    "en": "You save my life thank you",
+    "ru": "�� ���� ��� �����, �������"
   },
   {
     "time": [
-      373,
-      377
+      350,
+      353
     ],
-    "en": "The king walked up to the miller’s daughter held her hands and told her",
-    "ru": "Король подошел к дочери мельника, взял ее за руки и сказал ей"
+    "en": "The Prince knew nothing about the little mermaid",
+    "ru": "����� ������ �� ���� � ���������"
   },
   {
     "time": [
-      377,
-      381
+      353,
+      359
     ],
-    "en": "My dear I am very impressed with your beauty and talent",
-    "ru": "Дорогой, я очень впечатлен твоей красотой и талантом"
+    "en": "He didn�t even know that it was she who had actually saved his life",
+    "ru": "�� ���� �� ����, ��� ��� ��� �� ����� ���� ������ ��� �����"
   },
   {
     "time": [
-      381,
-      388
+      359,
+      362
     ],
-    "en": "Tonight you will be given even more straw to spin and if you can turn it into gold again you shall be my queen",
-    "ru": "Сегодня вечером тебе дадут еще больше соломы для прядения, и если ты снова сможешь превратить ее в золото, ты станешь моей королевой"
+    "en": "This broke the mermaid�s heart",
+    "ru": "��� ������� ������ �������"
   },
   {
     "time": [
-      388,
-      394
+      362,
+      372
     ],
-    "en": "So once again that night the miller’s daughter was locked in a room filled with straw",
-    "ru": "В ту ночь дочь мельника снова оказалась заперта в комнате, наполненной соломой"
+    "en": "She went back to her father�s home",
+    "ru": "��� ��������� � ��� ������ ����"
   },
   {
     "time": [
-      394,
-      399
+      372,
+      380
     ],
-    "en": "Soon the old man came visiting again",
-    "ru": "Вскоре к нам снова пришел старик"
+    "en": "She told her sisters and grandmother what had happened",
+    "ru": "��� ���������� ������� � ������� � �����������"
   },
   {
     "time": [
-      399,
-      402
+      380,
+      382
     ],
-    "en": "Another roomful of straw to spin",
-    "ru": "Еще одна комната, полная соломы для прядения"
+    "en": "Forget him child",
+    "ru": "������ ���, ����"
   },
   {
     "time": [
-      402,
-      406
+      382,
+      395
     ],
-    "en": "So what are you going to give me today to spin this into gold",
-    "ru": "Итак, что вы дадите мне сегодня, чтобы превратить это в золото"
+    "en": "Humans and we are very different To be with him forever you will have to get him to love you more than anything else he loves in the world",
+    "ru": "���� � �� ����� ������. ����� ���� � ��� �����, ��� ����� ��������� ��� �������� ��� ������ ����� �� �����, ��� �� �����"
   },
   {
     "time": [
-      406,
-      418
+      395,
+      398
     ],
-    "en": "Oh sir I have nothing more to give you but the king has said that if I spin all this straw into gold tonight he will make me his queen then I can give you all that you desire",
-    "ru": "О сэр, мне больше нечего вам дать, но король сказал, что если я сегодня вечером спрячу всю эту соломинку в золото, он сделает меня своей королевой, тогда я смогу дать вам все, что вы пожелаете"
+    "en": "Even more than his own parents",
+    "ru": "���� ������, ��� ��� ����������� ��������"
   },
   {
     "time": [
-      418,
+      398,
+      401
+    ],
+    "en": "How will that ever happen",
+    "ru": "��� ��� ������ ��������"
+  },
+  {
+    "time": [
+      401,
+      404
+    ],
+    "en": "Think about it",
+    "ru": "������� �� ����"
+  },
+  {
+    "time": [
+      404,
+      409
+    ],
+    "en": "But the little mermaid could not forget the handsome Prince",
+    "ru": "�� ��������� �� ����� ������ ��������� ������"
+  },
+  {
+    "time": [
+      409,
+      417
+    ],
+    "en": "Every night she visited the spot where she had laid him after saving his life",
+    "ru": "������ ���� ��� �������� �� �����, ��� �������� ��� ����� �������� ��� �����"
+  },
+  {
+    "time": [
+      417,
       423
     ],
-    "en": "The old man kept thinking for some time and finally told the miller’s daughter",
-    "ru": "Старик долго думал и наконец рассказал дочери мельника"
+    "en": "One day she decided to visit the witch in her father�s kingdom",
+    "ru": "������� ��� ������ ��������� ������ � ����������� ������ ����"
   },
   {
     "time": [
       423,
-      431
+      439
     ],
-    "en": "I have no desire for any wealth but you must promise me that you will give me your first born child",
-    "ru": "У меня нет стремления к богатству, но вы должны пообещать мне, что подарите мне своего первенца"
+    "en": "Maybe she knew a way that the mermaid could be with the Prince",
+    "ru": "����� ����, ��� �����, ��� ������� ����� ���� � �������"
   },
   {
     "time": [
-      431,
-      436
+      439,
+      442
     ],
-    "en": "The miller’s daughter looked at the old man in amazement but she was so desperate",
-    "ru": "Дочь мельника смотрела на старика с удивлением, но она была в таком отчаянии"
+    "en": "Yes there is a way",
+    "ru": "��, ���� ������"
   },
   {
     "time": [
-      436,
-      441
+      442,
+      447
     ],
-    "en": "and didn’t know what else to do so she made the promise to the old man",
-    "ru": "и не знала, что еще делать, поэтому дала обещание старику"
+    "en": "I can send you to the land above the sea",
+    "ru": "� ���� ��������� ���� �� ���� ��� �����"
   },
   {
     "time": [
-      441,
-      444
+      447,
+      453
     ],
-    "en": "He again sat at the spinning wheel",
-    "ru": "Он снова сел за прялку"
+    "en": "You will lose your fishtail and have legs",
+    "ru": "�� ��������� ���� ����� ����� � � ��� ����� ����"
   },
   {
     "time": [
-      444,
-      448
+      453,
+      467
     ],
-    "en": "Whirr whirr spinning wheel Do as you are told",
-    "ru": "Whirr whirr прялка Делай, как тебе говорят"
+    "en": "If by the second sunset you can get the Prince to love you more than he loves his parents then you can be with him forever",
+    "ru": "���� �� ������� ������ �� ������� ��������� ������ �������� ��� ������, ��� �� ����� ����� ���������, ����� �� ������� ���� � ��� ��������"
   },
   {
     "time": [
-      448,
-      472
+      467,
+      476
     ],
-    "en": "All the straw in this room Spin into fine gold",
-    "ru": "Вся солома в этой комнате превращается в чистое золото"
+    "en": "Otherwise you will die and become foam in the sea",
+    "ru": "����� �� ������ � ������� ����� � ����"
   },
   {
     "time": [
-      472,
-      477
+      476,
+      480
     ],
-    "en": "Next morning the king entered the room and his eyes shone when he saw all the gold",
-    "ru": "На следующее утро король вошел в комнату, и его глаза засияли, когда он увидел все золото"
+    "en": "But in return you must give me your voice",
+    "ru": "�� ������ �� ������ ���� ��� ���� �����"
   },
   {
     "time": [
-      477,
-      482
-    ],
-    "en": "My dear as I said I will now marry you and make you my queen",
-    "ru": "Моя дорогая, как я уже сказал, я выйду за тебя замуж и сделаю тебя своей королевой"
-  },
-  {
-    "time": [
-      482,
+      480,
       486
     ],
-    "en": "Let there be rejoicing in the kingdom to welcome the new queen",
-    "ru": "Да будет радость в королевстве приветствовать новую королеву"
+    "en": "But without my voice how will I make the Prince fall in love with me",
+    "ru": "�� ��� ������, ��� ��� ��������� ������ �������� ����"
   },
   {
     "time": [
       486,
-      492
+      491
     ],
-    "en": "The king and queen lived happily for many years and were blessed with a baby boy",
-    "ru": "Король и королева жили счастливо много лет и были благословлены мальчиком"
+    "en": "You still have your pretty face and eyes",
+    "ru": "� ���� ��� ��� �������� ���� � �����"
   },
   {
     "time": [
-      492,
-      496
+      491,
+      498
     ],
-    "en": "However by now the queen had forgotten her promise to the funny old man who had helped",
-    "ru": "Однако к настоящему времени королева забыла свое обещание, данное смешному старику, который помог"
+    "en": "You will also be the most beautiful dancer any one has ever seen",
+    "ru": "�� ����� ������� ����� �������� �����������, ������� �����-���� ������"
   },
   {
     "time": [
-      496,
-      502
+      498,
+      500
     ],
-    "en": "her until he came to visit her one day when she was playing with her precious child",
-    "ru": "до тех пор, пока он не пришел навестить ее однажды, когда она играла со своим драгоценным ребенком"
+    "en": "Now go",
+    "ru": "������ ���"
   },
   {
     "time": [
-      502,
-      508
+      500,
+      507
     ],
-    "en": "I hope you remember me and the promise you made to me oh queen",
-    "ru": "Я надеюсь, ты помнишь меня и обещание, которое ты мне дал, о королева"
+    "en": "In a flash the mermaid found herself on the land",
+    "ru": "� ��������� ��� ������� ��������� �� ����"
   },
   {
     "time": [
-      508,
-      518
+      507,
+      512
     ],
-    "en": "The queen was shocked and dismayed on seeing the old man and could not even think of parting with her bundle of joy and cried and begged before the old man",
-    "ru": "Королева была потрясена и встревожена, увидев старика, и не могла даже подумать о том, чтобы расстаться со своим узлом радости, плакала и умоляла перед стариком"
+    "en": "Her fishtail turned into human legs",
+    "ru": "�� ����� ����� ����������� � ������������ ����"
   },
   {
     "time": [
-      518,
-      523
+      512,
+      527
     ],
-    "en": "Oh sir Please do not be so cruel do not take away my baby from me",
-    "ru": "О сэр, пожалуйста, не будьте такими жестокими, не забирайте у меня моего ребенка"
+    "en": "It caused her pain but she could not even scream because the witch had taken her voice away",
+    "ru": "��� ��������� �� ����, �� ��� �� ����� ���� �������, ������ ��� ������ ������ � ��� �����."
   },
   {
     "time": [
-      523,
-      528
+      527,
+      533
     ],
-    "en": "I will give you anything you want gold precious stones land",
-    "ru": "Я дам вам все, что угодно, золото, драгоценные камни, землю"
+    "en": "Somehow the mermaid made her way to the Prince�s castle",
+    "ru": "�����-�� ������� ������� ��������� �� ����� ������"
   },
   {
     "time": [
-      528,
-      531
-    ],
-    "en": "I have no use for these things",
-    "ru": "Мне эти вещи не нужны"
-  },
-  {
-    "time": [
-      531,
-      534
-    ],
-    "en": "I beg you sir please take pity on me",
-    "ru": "Прошу вас, сэр, пожалейте меня"
-  },
-  {
-    "time": [
-      534,
+      533,
       537
     ],
-    "en": "My baby is so small",
-    "ru": "Мой ребенок такой маленький"
+    "en": "There was a big celebration going on there",
+    "ru": "��� ��� ������� ��������"
   },
   {
     "time": [
       537,
-      541
+      548
     ],
-    "en": "The queen’s tears finally moved the old man and he said to her",
-    "ru": "Слезы королевы, наконец, тронули старика, и он сказал ей"
+    "en": "But the guards would not let the mermaid enter because they didn�t know who she was and she couldn�t answer them when they asked her about it",
+    "ru": "�� ��������� �� ��������� ������� �����, ������ ��� ��� �� �����, ��� ��� �����, � ��� �� ����� �� ��������, ����� ��� �������� �� �� ����"
   },
   {
     "time": [
-      541,
-      543
+      548,
+      554
     ],
-    "en": "Oh well well",
-    "ru": "Ну ладно"
+    "en": "So she was not allowed to enter",
+    "ru": "������� �� �� ��������� �����"
   },
   {
     "time": [
-      543,
-      553
+      554,
+      562
     ],
-    "en": "I give you three days and if in these three days you guess my name you can keep your baby",
-    "ru": "Я даю вам три дня, и если в эти три дня вы угадаете мое имя, вы сможете оставить себе ребенка"
+    "en": "Somewhere in the castle music started playing",
+    "ru": "���-�� � ����� �������� ������"
   },
   {
     "time": [
-      553,
-      560
+      562,
+      579
     ],
-    "en": "The fear of losing her child kept the queen awake all night and she wrote down all the strange names that she had ever heard of",
-    "ru": "Страх потерять ребенка не давал королеве спать всю ночь, и она записала все странные имена, о которых когда-либо слышала"
+    "en": "Remembering what the witch had said about dancing little mermaid started dancing",
+    "ru": "��������, ��� ������ �������� � ������, ��������� ������ ���������"
   },
   {
     "time": [
-      560,
-      564
+      579,
+      584
     ],
-    "en": "The next day the old man came and asked her his name",
-    "ru": "На следующий день пришел старик и спросил ее, как его зовут"
+    "en": "Oh I have never seen anyone dance so beautifully",
+    "ru": "�, � ������� �� �����, ����� ���-������ ��� ������� ��������"
   },
   {
     "time": [
-      564,
-      566
+      584,
+      595
     ],
-    "en": "Is your name Benjamin",
-    "ru": "Ваше имя Бенджамин"
+    "en": "Maybe she has come to dance for the Royal family in the celebrations",
+    "ru": "�����, ��� ������ ��������� ��� ����������� ����� �� ����������"
   },
   {
     "time": [
-      566,
-      567
+      595,
+      604
     ],
-    "en": "Timothy",
-    "ru": "Тимоти"
+    "en": "Oh She is a dancer let me take her to the court",
+    "ru": "�, ��� ����������, ������� ��� ������� �� � ���"
   },
   {
     "time": [
-      567,
-      568
+      604,
+      617
     ],
-    "en": "Jeremy",
-    "ru": "Джереми"
+    "en": "Once the mermaid reached the royal court she saw that the celebration was for the wedding of the Prince",
+    "ru": "��������� ������������ �����, ������� �������, ��� ��� ������������ ������� ������"
   },
   {
     "time": [
-      568,
-      575
+      617,
+      621
     ],
-    "en": "The queen said all the names that she could think of but the old man said that was not his name",
-    "ru": "Королева произнесла все имена, которые могла придумать, но старик сказал, что это не его имя"
+    "en": "Little mermaid was heart broken",
+    "ru": "� ��������� ���� ������� ������"
   },
   {
     "time": [
-      575,
-      581
-    ],
-    "en": "You have tried But what my name is a guess you could not make",
-    "ru": "Вы пробовали Но как меня зовут, вы не могли догадаться"
-  },
-  {
-    "time": [
-      581,
-      586
-    ],
-    "en": "You have two days more then your baby I will take",
-    "ru": "У тебя на два дня больше, чем я возьму твоего ребенка"
-  },
-  {
-    "time": [
-      586,
-      589
-    ],
-    "en": "So saying the old man went away",
-    "ru": "Сказав так, старик ушел"
-  },
-  {
-    "time": [
-      589,
-      594
-    ],
-    "en": "I have to somehow guess what the old man’s name is I cannot even think of giving my baby away",
-    "ru": "Я должен как-то угадать, как зовут старика, я даже не могу думать о том, чтобы отдать своего ребенка"
-  },
-  {
-    "time": [
-      594,
-      597
-    ],
-    "en": "Oh what shall I do",
-    "ru": "О, что мне делать"
-  },
-  {
-    "time": [
-      597,
-      603
-    ],
-    "en": "The next day the queen dispatched messengers across the kingdom to find out all the possible strange names",
-    "ru": "На следующий день королева разослала гонцов по королевству, чтобы узнать все возможные странные имена"
-  },
-  {
-    "time": [
-      603,
-      611
-    ],
-    "en": "However when the old man came though she repeated all the names the messengers had given her she could not guess the old man’s name",
-    "ru": "Однако когда пришел старик, хотя она повторила все имена, которые ей дали посыльные, она не смогла угадать имени старика"
-  },
-  {
-    "time": [
-      611,
-      615
-    ],
-    "en": "She was now extremely worried and desperate",
-    "ru": "Теперь она была чрезвычайно обеспокоена и отчаялась"
-  },
-  {
-    "time": [
-      615,
-      623
-    ],
-    "en": "She once again sent the messengers and told them to visit the most remote corners of the kingdom to find any strange names they could",
-    "ru": "Она снова отправила посланников и велела им посетить самые отдаленные уголки королевства, чтобы найти любые странные имена, которые они смогут"
-  },
-  {
-    "time": [
-      623,
+      621,
       630
     ],
-    "en": "The messengers came back with no new names but one messenger told the queen that he wished to have a word with her",
-    "ru": "Посланники вернулись без новых имен, но один посланник сказал королеве, что хочет поговорить с ней"
+    "en": "She thought the only way of meeting the Prince now would be to dance and draw his attention towards her",
+    "ru": "��� ������, ��� ������������ ������ ��������� ������ ������ - ��� ����������� � �������� ��� �������� � ����"
   },
   {
     "time": [
       630,
-      636
+      659
     ],
-    "en": "Your majesty I could not find any new names but I saw a strange sight today",
-    "ru": "Ваше Величество, я не смог найти новых имен, но сегодня я увидел странное зрелище"
+    "en": "And so she performed a beautiful dance for the Royal family",
+    "ru": "� ��� ��� ��������� ���������� ����� ��� ����������� �����"
   },
   {
     "time": [
-      636,
-      642
-    ],
-    "en": "As I was climbing down a hill I entered a forest and among the tall trees was a small cottage",
-    "ru": "Когда я спускался с холма, я вошел в лес и среди высоких деревьев был небольшой коттедж."
-  },
-  {
-    "time": [
-      642,
-      647
-    ],
-    "en": "There was a fire burning outside and a strange figure dancing around it and singing",
-    "ru": "Снаружи горел огонь, и странная фигура танцевала вокруг него и пела"
-  },
-  {
-    "time": [
-      647,
-      653
-    ],
-    "en": "Today I brew tomorrow I bake And after that the child I'll take",
-    "ru": "Сегодня завариваю, завтра пеку А потом ребенка возьму"
-  },
-  {
-    "time": [
-      653,
-      657
-    ],
-    "en": "Never can the queen guess That Rumpelstiltskin is my name\"",
-    "ru": "Королева никогда не сможет догадаться, что меня зовут Румпельштильцхен »"
-  },
-  {
-    "time": [
-      657,
-      663
-    ],
-    "en": "The queen was overjoyed and rewarded the messesger with gold and precious jewels",
-    "ru": "Королева обрадовалась и наградила посыльного золотом и драгоценными камнями"
-  },
-  {
-    "time": [
-      663,
+      659,
       667
     ],
-    "en": "Ah now I’ll see how he will take my baby the funny old man",
-    "ru": "А теперь я посмотрю, как он возьмет моего малыша, забавного старичка"
+    "en": "When the Prince saw her he came up to her",
+    "ru": "������ ��, ����� ������� � ���"
   },
   {
     "time": [
       667,
       672
     ],
-    "en": "The next day all the courtiers gathered around the queen where she sat on her throne and",
-    "ru": "На следующий день все придворные собрались вокруг королевы, где она села на свой трон и"
+    "en": "Hello young lady I have seen you in my dreams",
+    "ru": "������������, ���� ����, � ����� ��� �� ���"
   },
   {
     "time": [
       672,
-      677
+      675
     ],
-    "en": "the nurse stood beside her with the baby in her arms when the old man arrived",
-    "ru": "медсестра стояла рядом с ней с младенцем на руках, когда подошел старик"
+    "en": "Who are you",
+    "ru": "��� ��"
   },
   {
     "time": [
-      677,
-      681
+      675,
+      682
     ],
-    "en": "Oh sir I have been thinking and thinking of what your name could be",
-    "ru": "О, сэр, я все думал и думал о том, как вас зовут"
+    "en": "In his heart the Prince hoped that she would be the one who had saved him from drowning",
+    "ru": "� ������� ���� ����� ��������, ��� ������ ��� ������ ��� �� ���������"
   },
   {
     "time": [
-      681,
-      683
+      682,
+      687
     ],
-    "en": "Is it Tom",
-    "ru": "Это Том"
+    "en": "He longed to hear the voice that had saved him when he was dying",
+    "ru": "��� �������� �������� �����, ������� ���� ���, ����� �� ������"
   },
   {
     "time": [
-      683,
-      684
+      687,
+      694
     ],
-    "en": "Is it Jemmy",
-    "ru": "Это Джемми"
+    "en": "But no sound came out when the little mermaid tried to reply",
+    "ru": "�� ����� ��������� ���������� ��������, �� ��������� �� �����"
   },
   {
     "time": [
-      684,
-      690
-    ],
-    "en": "The queen kept on saying names and each time the old man kept shaking his head his smile growing wider and wider",
-    "ru": "Королева продолжала называть имена, и каждый раз, когда старик качал головой, его улыбка становилась все шире и шире"
-  },
-  {
-    "time": [
-      690,
-      693
-    ],
-    "en": "I can’t think of any more names",
-    "ru": "Я не могу вспомнить больше имен"
-  },
-  {
-    "time": [
-      693,
-      697
-    ],
-    "en": "Wait a minute could your name be Rumpelstiltskin",
-    "ru": "Погодите, может вас зовут Румпельштильцхен"
-  },
-  {
-    "time": [
-      697,
+      694,
       700
     ],
-    "en": "The old man was outraged on hearing this",
-    "ru": "Услышав это, старик возмутился"
+    "en": "Forgive me I think I am confused between you and someone else",
+    "ru": "�������� ����, � �����, � ���������� ����� ���� � ���-�� ���"
   },
   {
     "time": [
       700,
-      708
+      706
     ],
-    "en": "You could not have guessed my name some witch has told you some witch has told you",
-    "ru": "Вы не могли догадаться, как меня зовут какая-то ведьма, которую вам сказала какая-то ведьма"
+    "en": "But please do join us",
+    "ru": "��, ����������, ��������������� � ���"
   },
   {
     "time": [
-      708,
-      714
+      706,
+      712
     ],
-    "en": "So angry was he that he stamped his right foot with so much force that it sank into the floor",
-    "ru": "Он был так зол, что ударил правой ногой с такой силой, что она провалилась в пол"
+    "en": "The Prince led her to the ship on which the wedding was going to take place",
+    "ru": "����� ������ �� � �������, �� ������� ������ ���� ���������� �������"
   },
   {
     "time": [
-      714,
-      720
+      712,
+      719
     ],
-    "en": "He forcefully pulled it out with both hands and made his way out amidst the jeering of all the courtiers",
-    "ru": "Он с силой вытащил его обеими руками и вышел среди насмешек придворных"
+    "en": "Many people spoke to her but she could not answer anyone",
+    "ru": "� ��� ������������� ������, �� ��� ������ �� ����� ��������"
   },
   {
     "time": [
-      720,
-      731
+      719,
+      727
     ],
-    "en": "The queen was finally relieved and lived happily ever after with the king and her baby",
-    "ru": "Королева наконец испытала облегчение и с тех пор жила долго и счастливо с королем и ее младенцем"
+    "en": "The Princess was especially kind to her and took special care of her",
+    "ru": "������� ���� � ��� �������� ����� � �������� ���������� � ���"
   },
   {
     "time": [
-      731,
-      744
+      727,
+      734
     ],
-    "en": "THE GINGERBREAD MAN",
-    "ru": "КОЛОБОК"
+    "en": "I know you saved the Prince that day",
+    "ru": "� ����, ��� �� ���� ������ � ��� ����"
   },
   {
     "time": [
-      744,
-      749
+      734,
+      742
     ],
-    "en": "An old lady and an old man lived in a little house by themselves",
-    "ru": "В домике отдельно жили старушка и старик"
+    "en": "Thank you because of you I have found the love of my life",
+    "ru": "�������, ��������� ���� � ����� ������ ���� ����� �����"
   },
   {
     "time": [
-      749,
-      755
+      742,
+      746
     ],
-    "en": "They had no children and they felt very lonely and sad at times",
-    "ru": "У них не было детей, и временами они чувствовали себя очень одинокими и грустными"
+    "en": "Please always stay with us",
+    "ru": "����������, ������ ����������� � ����"
   },
   {
     "time": [
-      755,
-      758
+      746,
+      754
     ],
-    "en": "It gets to be so boring with just the two of us",
-    "ru": "Нам вдвоем становится так скучно"
+    "en": "The little mermaid saw that the Princess and the Prince loved each other and were very happy together",
+    "ru": "��������� �������, ��� ��������� � ����� ����� ���� ����� � ����� ��������� ������"
   },
   {
     "time": [
-      758,
-      762
+      754,
+      764
     ],
-    "en": "You are always out in the garden and I have nothing to do after I finish my cooking and",
-    "ru": "Ты всегда в саду, и мне нечего делать после того, как я закончу готовить и"
+    "en": "She decided not to pursue the Prince anymore he belonged to another woman",
+    "ru": "��� ������ ������ �� ������������ ������, �� ����������� ������ �������"
   },
   {
     "time": [
-      762,
-      769
-    ],
-    "en": "cleaning Well I’m sure you can find some other ways to keep yourself occupied",
-    "ru": "уборка Ну, я уверен, ты найдешь другие способы чем занять себя"
-  },
-  {
-    "time": [
-      769,
-      772
-    ],
-    "en": "I think I will bake something today",
-    "ru": "Думаю, сегодня что-нибудь испечу"
-  },
-  {
-    "time": [
-      772,
-      774
-    ],
-    "en": "I haven’t done that in a long time",
-    "ru": "Я давно этого не делал"
-  },
-  {
-    "time": [
-      774,
-      777
-    ],
-    "en": "That’s a good idea go ahead and do that",
-    "ru": "Это хорошая идея, давай и сделай это"
-  },
-  {
-    "time": [
-      777,
-      780
-    ],
-    "en": "Make something interesting for dinner tonight",
-    "ru": "Приготовьте сегодня что-нибудь интересное на ужин"
-  },
-  {
-    "time": [
-      780,
+      764,
       784
     ],
-    "en": "Now I have to head out to the garden again as there are still some more weeds to be pulled out",
-    "ru": "Теперь мне снова нужно идти в сад, так как мне еще нужно вырвать еще несколько сорняков"
+    "en": "Although her heart ached to let him go she happily attended the wedding and all the celebrations that went on throughout the next day",
+    "ru": "���� �� ������ ������, ����� ��� ��������� ���, ��� � �������� �������� ������� � ��� ���������, ������� ��������� � ������� ���������� ���"
   },
   {
     "time": [
       784,
-      788
+      790
     ],
-    "en": "The old lady decided she would make some gingerbread",
-    "ru": "Старушка решила приготовить имбирных пряников"
+    "en": "Soon it was evening",
+    "ru": "����� �������� �����"
   },
   {
     "time": [
-      788,
-      793
+      790,
+      795
     ],
-    "en": "She got out all the ingredients she needed and kneaded the dough for the gingerbread",
-    "ru": "Она достала все необходимые ингредиенты и замесила тесто для имбирных пряников"
+    "en": "The second sunset was about to happen",
+    "ru": "���-��� ������ ��� ��������� ������ �����"
   },
   {
     "time": [
-      793,
-      799
-    ],
-    "en": "(softly humming to herself) Suddenly she had an idea",
-    "ru": "(тихо напевая себе под нос) Вдруг у нее возникла идея"
-  },
-  {
-    "time": [
-      799,
-      801
-    ],
-    "en": "Let me do something fun",
-    "ru": "Дай мне заняться чем-нибудь веселым"
-  },
-  {
-    "time": [
-      801,
-      805
-    ],
-    "en": "I will make the gingerbread in the shape of a man",
-    "ru": "Я сделаю имбирный пряник в виде человечка"
-  },
-  {
-    "time": [
-      805,
+      795,
       808
     ],
-    "en": "A gingerbread man",
-    "ru": "Пряничный человечек"
+    "en": "The little mermaid knew she would die and become foam on the sea",
+    "ru": "��������� �����, ��� ��� ����� � ����������� � ������� ����"
   },
   {
     "time": [
       808,
-      824
+      816
     ],
-    "en": "My husband will be very amused I’m sure",
-    "ru": "Я уверена, мой муж будет очень доволен"
+    "en": "As she stood there looking at the Prince and his Princess  heard some voices behind her",
+    "ru": "����� ��� ������ � �������� �� ������, ��� ��������� �������� ������ ���� �����-�� ������"
   },
   {
     "time": [
-      824,
-      830
+      816,
+      819
     ],
-    "en": "So the old lady rolled out the dough and cut it out in the shape of a man",
-    "ru": "Итак, старушка раскатала тесто и вырезала из него фигуру человека"
+    "en": "She turned around to see",
+    "ru": "��� ����������, ����� ����������"
   },
   {
     "time": [
-      830,
-      841
+      819,
+      823
     ],
-    "en": "Let me see nowone little ball to be shaped into a mouth two little chololate chips for eyes and these pretty red cherries for buttons",
-    "ru": "Позвольте мне теперь взглянуть на один маленький шарик, который должен превратиться в рот, две маленькие кусочки холата вместо глаз и эти красивые красные вишенки вместо пуговиц"
+    "en": "Her sisters were there in the water",
+    "ru": "�� ������ ���� ��� � ����"
   },
   {
     "time": [
-      841,
-      845
+      823,
+      832
     ],
-    "en": "Ah That’s one handsome gingerbread man",
-    "ru": "А, это красивый пряничный человечек"
+    "en": "But all of them had very short hair now instead of the long flowing locks they used to have earlier",
+    "ru": "�� � ���� ������ ���� ����� �������� ������ ������ ������� ����������� ������, ������� ���� ������"
   },
   {
     "time": [
-      845,
+      832,
+      837
+    ],
+    "en": "Sisters What are you doing here",
+    "ru": "������ ��� �� ����� �������"
+  },
+  {
+    "time": [
+      837,
+      842
+    ],
+    "en": "We have come to save you",
+    "ru": "�� ������ ������ ���"
+  },
+  {
+    "time": [
+      842,
       848
     ],
-    "en": "I’m sure he’ll taste as good as he looks",
-    "ru": "Я уверен, что он будет на вкус так же хорош, как выглядит"
+    "en": "We went to the witch In exchange of our hair she gave us this knife",
+    "ru": "�� ����� � ������. ������ ����� ����� ��� ���� ��� ���� ���"
   },
   {
     "time": [
       848,
-      851
+      858
     ],
-    "en": "Now into the oven",
-    "ru": "Теперь в духовку"
+    "en": "If you stab the Prince through his heart before sunset you can be saved",
+    "ru": "���� �� �������� ������ ���� � ������ �� ������, �� ������� ��������"
   },
   {
     "time": [
-      851,
-      868
+      858,
+      866
     ],
-    "en": "The old lady went and sat on her rocking chair knitting away while waiting for the gingerbread man to bake",
-    "ru": "Старушка подошла к своему креслу-качалке и вязала, ожидая, когда испечется пряничный человечек"
+    "en": "Handing the knife to the youngest sister all the other sisters vanished under the water once again",
+    "ru": "������� ��� ������� ������, ��� ��������� ������ ����� ������� ��� �����"
   },
   {
     "time": [
-      868,
-      870
+      866,
+      878
     ],
-    "en": "Mmmmmm",
-    "ru": "Мммммм"
+    "en": "The little mermaid stood there holding the knife to her heart she looked at the newlyweds once again She knew what she had to do",
+    "ru": "��������� ������ ���, ��������� ��� � ������. ��� ����� ���������� �� �����������. ��� �����, ��� �� ����� ������"
   },
   {
     "time": [
-      870,
-      874
+      878,
+      885
     ],
-    "en": "I am starting to get the lovely smell of gingerbread",
-    "ru": "Я начинаю чувствовать приятный запах имбирных пряников"
+    "en": "As the sun set she tossed the knife into the sea",
+    "ru": "����� ������ ����, ��� ������� ��� � ����"
   },
   {
     "time": [
-      874,
-      877
+      885,
+      888
     ],
-    "en": "Must be done by now let me go and check",
-    "ru": "К настоящему времени должно быть сделано, позволь мне пойти и проверить"
+    "en": "Goodbye my love",
+    "ru": "������ ��� ������"
   },
   {
     "time": [
-      877,
-      884
+      888,
+      906
     ],
-    "en": "The old lady put on her oven gloves and went to open the oven door",
-    "ru": "Старушка надела перчатки и пошла открывать дверцу духовки"
+    "en": "And so for the happiness of her beloved Prince the little mermaid sacrificed her own life and joined the sea as foam",
+    "ru": "��� ��������� ������������ ����������� ������ � �������������� � ����, ��� ����, ��� ������� �������� ������"
   },
   {
     "time": [
-      884,
-      890
+      906,
+      910
     ],
-    "en": "But as she did the gingerbread man got up from the baking tray and jumped out of the",
-    "ru": "Но как только она это сделала, пряничный человечек встал с противня и выпрыгнул из него"
+    "en": "Tia That is such a beautiful story",
+    "ru": "��� ��� ����� �������� �������"
   },
   {
     "time": [
-      890,
-      892
+      910,
+      917
     ],
-    "en": "oven",
-    "ru": "печь"
+    "en": "It shows how much the little mermaid loved the Prince",
+    "ru": "��� ����������, ��������� ��������� ������ ������"
   },
   {
     "time": [
-      892,
-      893
+      917,
+      922
     ],
-    "en": "Good heavens",
-    "ru": "Боже мой"
+    "en": "Thank you for not going to the party and staying with me",
+    "ru": "�������, ��� �� ����� �� ��������� � �������� �� ����"
   },
   {
     "time": [
-      893,
-      894
+      922,
+      925
     ],
-    "en": "What was that",
-    "ru": "Что это было"
+    "en": "That�s because I love you my little brother",
+    "ru": "��� ������, ��� � ����� ����, ��� ������� ����"
   },
   {
     "time": [
-      894,
-      912
+      925,
+      925
     ],
-    "en": "Before she realized what was happening the gingerbread man ran to the open window jumped out and in a second was running down the garden and out into the street",
-    "ru": "Прежде чем она сообразила, что происходит, пряничный человечек подбежал к открытому окну, выскочил и через секунду побежал по саду на улицу"
-  },
-  {
-    "time": [
-      912,
-      916
-    ],
-    "en": "Hey Hey Where do you think you are going",
-    "ru": "Эй, эй, как ты думаешь, ты собираешься"
-  },
-  {
-    "time": [
-      916,
-      918
-    ],
-    "en": "Come right back here",
-    "ru": "Вернись сюда"
-  },
-  {
-    "time": [
-      918,
-      929
-    ],
-    "en": "We are supposed to be having you for dinner",
-    "ru": "Мы должны пригласить вас на ужин"
-  },
-  {
-    "time": [
-      929,
-      934
-    ],
-    "en": "Oh no no I am not your dinner for you can’t lay your hands on me",
-    "ru": "О нет, нет, я не твой обед, потому что ты не можешь наложить на меня руки"
-  },
-  {
-    "time": [
-      934,
-      937
-    ],
-    "en": "Run run as fast as you can",
-    "ru": "Беги, беги как можно быстрее"
-  },
-  {
-    "time": [
-      937,
-      971
-    ],
-    "en": "You can’t catch me I’m the gingerbread man",
-    "ru": "Ты не поймаешь меня, я пряничный человечек"
-  },
-  {
-    "time": [
-      971,
-      976
-    ],
-    "en": "The old lady’s husband looked in surprise at his wife running after a gingerbread man",
-    "ru": "Муж старушки с удивлением посмотрел на свою жену, бегущую за пряничным человечком"
-  },
-  {
-    "time": [
-      976,
-      977
-    ],
-    "en": "What’s happening",
-    "ru": "Что происходит"
-  },
-  {
-    "time": [
-      977,
-      981
-    ],
-    "en": "Stop staring and run and catch that rogue",
-    "ru": "Перестань пялиться, беги и поймай этого негодяя"
-  },
-  {
-    "time": [
-      981,
-      983
-    ],
-    "en": "I had baked him for our dinner",
-    "ru": "Я испекла его к нашему обеду"
-  },
-  {
-    "time": [
-      983,
-      986
-    ],
-    "en": "But how did he run out",
-    "ru": "Но как он выбежал"
-  },
-  {
-    "time": [
-      986,
-      988
-    ],
-    "en": "I will tell you all that later",
-    "ru": "Обо всем этом я расскажу позже"
-  },
-  {
-    "time": [
-      988,
-      991
-    ],
-    "en": "Quick catch him before he vanishes",
-    "ru": "Быстро поймай его, пока он не исчез"
-  },
-  {
-    "time": [
-      991,
-      996
-    ],
-    "en": "The old man starts running after the gingerbread man shouting at him to stop",
-    "ru": "Старик бежит за пряничным человечком, кричит ему, чтобы тот остановился"
-  },
-  {
-    "time": [
-      996,
-      1000
-    ],
-    "en": "The old lady cannot catch me and neither can you",
-    "ru": "Старушка не может поймать меня, и ты тоже"
-  },
-  {
-    "time": [
-      1000,
-      1002
-    ],
-    "en": "Run run as fast as you can",
-    "ru": "Беги, беги как можно быстрее"
-  },
-  {
-    "time": [
-      1002,
-      1023
-    ],
-    "en": "You can’t catch me I’m the gingerbread man",
-    "ru": "Ты не поймаешь меня, я пряничный человечек."
-  },
-  {
-    "time": [
-      1023,
-      1028
-    ],
-    "en": "Down the road ran the gingerbread man with the old man and lady running behind him",
-    "ru": "По дороге побежал пряничный человечек, а за ним бежали старик и дама"
-  },
-  {
-    "time": [
-      1028,
-      1034
-    ],
-    "en": "A cow sitting beside the road saw the gingerbread man and said",
-    "ru": "Корова, сидящая у дороги, увидела пряничного человечка и сказала"
-  },
-  {
-    "time": [
-      1034,
-      1035
-    ],
-    "en": "Moo moo",
-    "ru": "Му-мычание"
-  },
-  {
-    "time": [
-      1035,
-      1043
-    ],
-    "en": "You look so tasty I want to eat you",
-    "ru": "Ты выглядишь так вкусно, что я хочу тебя съесть"
-  },
-  {
-    "time": [
-      1043,
-      1046
-    ],
-    "en": "The old lady and old man cannot catch me",
-    "ru": "Старушка и старик не могут меня поймать"
-  },
-  {
-    "time": [
-      1046,
-      1048
-    ],
-    "en": "See if you can catch me you fat thing",
-    "ru": "Посмотри, сможешь ли ты поймать меня, толстая тварь"
-  },
-  {
-    "time": [
-      1048,
-      1049
-    ],
-    "en": "Fat thing",
-    "ru": "Толстая штука"
-  },
-  {
-    "time": [
-      1049,
-      1053
-    ],
-    "en": "You cheeky fellow just you wait till I catch you",
-    "ru": "Ты дерзкий парень, подожди, пока я тебя поймаю"
-  },
-  {
-    "time": [
-      1053,
-      1079
-    ],
-    "en": "The cow started running after the gingerbread man along with the old man and the old lady",
-    "ru": "Корова побежала за пряничным человечком вместе со стариком и старушкой"
-  },
-  {
-    "time": [
-      1079,
-      1099
-    ],
-    "en": "Run run as fast as you can You can’t catch me I’m the gingerbread man",
-    "ru": "Беги, беги так быстро, как можешь. Ты не поймаешь меня, я пряничный человечек"
-  },
-  {
-    "time": [
-      1099,
-      1105
-    ],
-    "en": "Along the road they ran with all the passersby looking at them in surprise",
-    "ru": "Они бежали по дороге, и все прохожие с удивлением смотрели на них"
-  },
-  {
-    "time": [
-      1105,
-      1111
-    ],
-    "en": "A little way ahead a horse that was trotting along the road stopped to see what was happening",
-    "ru": "Немного впереди бежавшая по дороге лошадь остановилась посмотреть, что происходит"
-  },
-  {
-    "time": [
-      1111,
-      1114
-    ],
-    "en": "That sure looks like a tasty meal",
-    "ru": "Это действительно похоже на вкусную еду"
-  },
-  {
-    "time": [
-      1114,
-      1115
-    ],
-    "en": "Neigh neigh",
-    "ru": "Ржать"
-  },
-  {
-    "time": [
-      1115,
-      1117
-    ],
-    "en": "Everyone out of my way",
-    "ru": "Всем с дороги"
-  },
-  {
-    "time": [
-      1117,
-      1121
-    ],
-    "en": "I am going to catch that fellow and have him for dinner instead of hay",
-    "ru": "Я поймаю этого парня и пообедаю вместо сена"
-  },
-  {
-    "time": [
-      1121,
-      1125
-    ],
-    "en": "So now you also want to eat me",
-    "ru": "Так что теперь ты тоже хочешь меня съесть"
-  },
-  {
-    "time": [
-      1125,
-      1130
-    ],
-    "en": "Come on you can also try but you will have to start galloping instead of trotting",
-    "ru": "Давай, ты тоже можешь попробовать, но тебе придется начать галопом, а не рысью"
-  },
-  {
-    "time": [
-      1130,
-      1132
-    ],
-    "en": "He he",
-    "ru": "Он он"
-  },
-  {
-    "time": [
-      1132,
-      1136
-    ],
-    "en": "Believe me you will be having your hay only for dinner after all",
-    "ru": "Поверьте, сено у вас все-таки будет только на обед"
-  },
-  {
-    "time": [
-      1136,
-      1152
-    ],
-    "en": "He he he he he",
-    "ru": "Он, он, он, он, он"
-  },
-  {
-    "time": [
-      1152,
-      1157
-    ],
-    "en": "So the horse also joined the old lady old man and the cow to try and",
-    "ru": "Итак, лошадь также присоединилась к пожилой женщине и корове, чтобы попытаться"
-  },
-  {
-    "time": [
-      1157,
-      1160
-    ],
-    "en": "catch the gingerbread man",
-    "ru": "поймать пряничного человечка"
-  },
-  {
-    "time": [
-      1160,
-      1165
-    ],
-    "en": "The gingerbread man was having a lot of fun seeing all of them trying to catch him",
-    "ru": "Пряничный человечек очень повеселился, наблюдая, как все они пытаются его поймать"
-  },
-  {
-    "time": [
-      1165,
-      1167
-    ],
-    "en": "A little way ahead he stood by the roadside",
-    "ru": "Чуть впереди он остановился на обочине дороги"
-  },
-  {
-    "time": [
-      1167,
-      1169
-    ],
-    "en": "Don’t you think you should give up",
-    "ru": "Ты не думаешь, что тебе следует сдаваться"
-  },
-  {
-    "time": [
-      1169,
-      1171
-    ],
-    "en": "Let me tell you again",
-    "ru": "Позвольте мне сказать вам еще раз"
-  },
-  {
-    "time": [
-      1171,
-      1174
-    ],
-    "en": "Run run as fast as you can",
-    "ru": "Беги, беги как можно быстрее"
-  },
-  {
-    "time": [
-      1174,
-      1177
-    ],
-    "en": "You can’t catch me I’m the gingerbread man",
-    "ru": "Ты не поймаешь меня, я пряничный человечек"
-  },
-  {
-    "time": [
-      1177,
-      1184
-    ],
-    "en": "Once again the gingerbread man started running looking back at all those chasing him with a big grin on his face",
-    "ru": "И снова пряничный человечек с широкой ухмылкой побежал оглядываться на всех, кто его преследовал"
-  },
-  {
-    "time": [
-      1184,
-      1189
-    ],
-    "en": "A little way ahead was a big fat pig walking along with its piglets",
-    "ru": "Немного впереди шла большая толстая свинья со своими поросятами"
-  },
-  {
-    "time": [
-      1189,
-      1193
-    ],
-    "en": "When it saw the gingerbread man it said",
-    "ru": "Когда он увидел пряничного человечка, он сказал"
-  },
-  {
-    "time": [
-      1193,
-      1194
-    ],
-    "en": "Oink Oink",
-    "ru": "Хрю хрю"
-  },
-  {
-    "time": [
-      1194,
-      1198
-    ],
-    "en": "That guy sure smells good should be a good treat for my little piggies",
-    "ru": "Этот парень, безусловно, хорошо пахнет, должен быть хорошим угощением для моих поросят"
-  },
-  {
-    "time": [
-      1198,
-      1203
-    ],
-    "en": "Oink oink wait wait I want to have a word with you",
-    "ru": "Хрю хрю, подожди, подожди, я хочу поговорить с тобой"
-  },
-  {
-    "time": [
-      1203,
-      1209
-    ],
-    "en": "No you don’t you want to make a meal of me and that is not going to happen you stinking thing",
-    "ru": "Нет, ты не хочешь приготовить из меня еду, и этого не случится, вонючая штука"
-  },
-  {
-    "time": [
-      1209,
-      1210
-    ],
-    "en": "What",
-    "ru": "Какие"
-  },
-  {
-    "time": [
-      1210,
-      1213
-    ],
-    "en": "How dare you you rude fellow",
-    "ru": "Как ты посмел грубый парень"
-  },
-  {
-    "time": [
-      1213,
-      1214
-    ],
-    "en": "I will show you",
-    "ru": "Я покажу тебе"
-  },
-  {
-    "time": [
-      1214,
-      1217
-    ],
-    "en": "Come on piggies let’s catch him and eat him",
-    "ru": "Давай, поросята, давай поймаем его и съедим"
-  },
-  {
-    "time": [
-      1217,
-      1225
-    ],
-    "en": "Oink oink oink oink",
-    "ru": "Хрю хрю хрю хрю"
-  },
-  {
-    "time": [
-      1225,
-      1231
-    ],
-    "en": "And so the pig and piglets also joined the rest to try and catch the gingerbread man",
-    "ru": "И свинья и поросята тоже присоединились к остальным, чтобы попытаться поймать пряничного человечка"
-  },
-  {
-    "time": [
-      1231,
-      1237
-    ],
-    "en": "Up ahead there was a farm and near the fence was a big brown hen",
-    "ru": "Впереди была ферма, а у забора была большая коричневая курица"
-  },
-  {
-    "time": [
-      1237,
-      1241
-    ],
-    "en": "When she saw the gingerbread man she said",
-    "ru": "Она сказала, когда увидела пряничного человечка"
-  },
-  {
-    "time": [
-      1241,
-      1243
-    ],
-    "en": "You look so yummy",
-    "ru": "Ты выглядишь так вкусно"
-  },
-  {
-    "time": [
-      1243,
-      1246
-    ],
-    "en": "May I have a nibble",
-    "ru": "Могу я откусить"
-  },
-  {
-    "time": [
-      1246,
-      1248
-    ],
-    "en": "May I have a nibble(imitating)",
-    "ru": "Могу я откусить (имитация)"
-  },
-  {
-    "time": [
-      1248,
-      1251
-    ],
-    "en": "No you may not but you can always try",
-    "ru": "Нет, нельзя, но всегда можно попробовать"
-  },
-  {
-    "time": [
-      1251,
-      1254
-    ],
-    "en": "Come join the merry procession",
-    "ru": "Присоединяйтесь к веселой процессии"
-  },
-  {
-    "time": [
-      1254,
-      1256
-    ],
-    "en": "He he he he he",
-    "ru": "Он, он, он, он, он"
-  },
-  {
-    "time": [
-      1256,
-      1258
-    ],
-    "en": "Run run as fast as you can",
-    "ru": "Беги, беги как можно быстрее"
-  },
-  {
-    "time": [
-      1258,
-      1261
-    ],
-    "en": "You can’t catch me I’m the gingerbread man",
-    "ru": "Ты не поймаешь меня, я пряничный человечек"
-  },
-  {
-    "time": [
-      1261,
-      1263
-    ],
-    "en": "Oh what a sight it was",
-    "ru": "О, какое это было зрелище"
-  },
-  {
-    "time": [
-      1263,
-      1269
-    ],
-    "en": "There was the old man and old lady trundling along the cow and the pig waddling along",
-    "ru": "Там были старик и старушка, прогуливающиеся по корове, и свинья"
-  },
-  {
-    "time": [
-      1269,
-      1275
-    ],
-    "en": "the horse galloping along and the hen running and flapping her wings with a loud sound",
-    "ru": "лошадь скачет, а курица бежит и громко хлопает крыльями"
-  },
-  {
-    "time": [
-      1275,
-      1278
-    ],
-    "en": "I think I’ve had enough fun",
-    "ru": "Думаю, я достаточно повеселился"
-  },
-  {
-    "time": [
-      1278,
-      1283
-    ],
-    "en": "No way are those slow coaches going to catch up with me so I’ll just look around for some place to rest",
-    "ru": "Эти медленные тренеры ни за что не догонят меня, так что я просто буду искать где-нибудь отдохнуть"
-  },
-  {
-    "time": [
-      1283,
-      1284
-    ],
-    "en": "Phew",
-    "ru": "Уф"
-  },
-  {
-    "time": [
-      1284,
-      1287
-    ],
-    "en": "All that running has really tired me out",
-    "ru": "Весь этот бег меня действительно утомил"
-  },
-  {
-    "time": [
-      1287,
-      1291
-    ],
-    "en": "A little farther away there was a river flowing gently",
-    "ru": "Чуть дальше тихо текла река"
-  },
-  {
-    "time": [
-      1291,
-      1300
-    ],
-    "en": "The gingerbread man wanted to go across to the other side but if he fell in the water he would become all soggy",
-    "ru": "Пряничный человечек хотел перейти на другую сторону, но если он упадет в воду, то станет совсем мокрым"
-  },
-  {
-    "time": [
-      1300,
-      1304
-    ],
-    "en": "As he was thinking of what to do he heard a voice",
-    "ru": "Пока он думал о том, что делать, он услышал голос"
-  },
-  {
-    "time": [
-      1304,
-      1306
-    ],
-    "en": "Want me to take you across",
-    "ru": "Хочешь, чтобы я провел тебя"
-  },
-  {
-    "time": [
-      1306,
-      1311
-    ],
-    "en": "The gingerbread man looked around and saw a fox sitting against a rock",
-    "ru": "Пряничный человечек огляделся и увидел лису, сидящую на скале"
-  },
-  {
-    "time": [
-      1311,
-      1313
-    ],
-    "en": "You think I’m a fool",
-    "ru": "Вы думаете, что я дурак"
-  },
-  {
-    "time": [
-      1313,
-      1316
-    ],
-    "en": "You also want to eat me like the rest of them",
-    "ru": "Ты тоже хочешь съесть меня, как и всех остальных"
-  },
-  {
-    "time": [
-      1316,
-      1317
-    ],
-    "en": "Eat you",
-    "ru": "Съесть тебя"
-  },
-  {
-    "time": [
-      1317,
-      1319
-    ],
-    "en": "A measly looking fellow like you",
-    "ru": "Такой жалкий парень, как ты"
-  },
-  {
-    "time": [
-      1319,
-      1325
-    ],
-    "en": "You are not even enough as a starter forget a whole meal",
-    "ru": "Вам не хватит даже на закуску, чтобы забыть о целой трапезе"
-  },
-  {
-    "time": [
-      1325,
-      1330
-    ],
-    "en": "The fox was a very very wily fellow",
-    "ru": "Лисица была очень хитрым парнем"
-  },
-  {
-    "time": [
-      1330,
-      1335
-    ],
-    "en": "He knew the gingerbread man could run very fast and he was too lazy to run after him",
-    "ru": "Он знал, что пряничный человечек может очень быстро бегать, и ему было лень бежать за ним"
-  },
-  {
-    "time": [
-      1335,
-      1339
-    ],
-    "en": "Then why would you want to be so good to me",
-    "ru": "Тогда почему ты хочешь быть со мной так добр"
-  },
-  {
-    "time": [
-      1339,
-      1341
-    ],
-    "en": "I am not being good to you",
-    "ru": "Я плохо к тебе отношусь"
-  },
-  {
-    "time": [
-      1341,
-      1344
-    ],
-    "en": "I was going to cross the river anyway so I thought you could hop on to my back and",
-    "ru": "Я все равно собирался перейти реку, поэтому подумал, что ты можешь запрыгнуть мне на спину и .."
-  },
-  {
-    "time": [
-      1344,
-      1349
-    ],
-    "en": "I would take you across",
-    "ru": "Я бы перевел тебя"
-  },
-  {
-    "time": [
-      1349,
-      1352
-    ],
-    "en": "Decide fast I don’t have the whole day",
-    "ru": "Решай быстро, у меня нет целого дня"
-  },
-  {
-    "time": [
-      1352,
-      1354
-    ],
-    "en": "Okay",
-    "ru": "Хорошо"
-  },
-  {
-    "time": [
-      1354,
-      1356
-    ],
-    "en": "What would you want in exchange",
-    "ru": "Что бы вы хотели взамен"
-  },
-  {
-    "time": [
-      1356,
-      1359
-    ],
-    "en": "I’ll tell you that when we cross over",
-    "ru": "Я скажу вам это, когда мы перейдем"
-  },
-  {
-    "time": [
-      1359,
-      1373
-    ],
-    "en": "Come on on my back",
-    "ru": "Давай на мою спину"
-  },
-  {
-    "time": [
-      1373,
-      1377
-    ],
-    "en": "When they were half way across the fox told the gingerbread man",
-    "ru": "Когда они были на полпути, лиса сказала пряничному человечку"
-  },
-  {
-    "time": [
-      1377,
-      1379
-    ],
-    "en": "I’m feeling a bit uncomfortable",
-    "ru": "Мне немного не по себе."
-  },
-  {
-    "time": [
-      1379,
-      1382
-    ],
-    "en": "I think it would be better if you perch yourself on my neck",
-    "ru": "Думаю, будет лучше, если ты устроишься мне на шее"
-  },
-  {
-    "time": [
-      1382,
-      1386
-    ],
-    "en": "The gingerbread man crawled on to the fox’s neck",
-    "ru": "Пряничный человечек заполз лисе на шею"
-  },
-  {
-    "time": [
-      1386,
-      1401
-    ],
-    "en": "Ah that’s better",
-    "ru": "А, так лучше"
-  },
-  {
-    "time": [
-      1401,
-      1407
-    ],
-    "en": "After a while the fox started moving its neck and told him",
-    "ru": "Через некоторое время лисица начала двигать шеей и рассказала ему"
-  },
-  {
-    "time": [
-      1407,
-      1409
-    ],
-    "en": "My neck has started paining",
-    "ru": "У меня заболела шея"
-  },
-  {
-    "time": [
-      1409,
-      1411
-    ],
-    "en": "I think it would be better if you sit on my snout",
-    "ru": "Думаю, будет лучше, если ты сядешь мне на морду"
-  },
-  {
-    "time": [
-      1411,
-      1419
-    ],
-    "en": "The gingerbread thought he was very smart but he couldn’t guess what was going on in the cunning fox’s mind",
-    "ru": "Пряник подумал, что он очень умен, но он не мог догадаться, что творится в голове хитрого лиса"
-  },
-  {
-    "time": [
-      1419,
-      1423
-    ],
-    "en": "As before it did what the fox told him to",
-    "ru": "Как и прежде, он сделал то, что ему велела лиса"
-  },
-  {
-    "time": [
-      1423,
-      1424
-    ],
-    "en": "There",
-    "ru": "Там"
-  },
-  {
-    "time": [
-      1424,
-      1425
-    ],
-    "en": "Are you okay now",
-    "ru": "Теперь ты в порядке"
-  },
-  {
-    "time": [
-      1425,
-      1428
-    ],
-    "en": "This was the chance the fox had been waiting for",
-    "ru": "Это был шанс, которого ждала лиса"
-  },
-  {
-    "time": [
-      1428,
-      1436
-    ],
-    "en": "As soon as the gingerbread man sat on it’s snout the fox quickly tossed him up and caught him in his mouth as he fell",
-    "ru": "Как только пряничный человечек сел на морду, лиса быстро подбросила его и схватила ртом, когда он упал"
-  },
-  {
-    "time": [
-      1436,
-      1440
-    ],
-    "en": "And there ended the tale of the gingerbread man",
-    "ru": "Вот и закончилась сказка о пряничном человечке"
-  },
-  {
-    "time": [
-      1440,
-      1443
-    ],
-    "en": "Belch Ha Ha Ha",
-    "ru": "Белч Ха Ха Ха"
-  },
-  {
-    "time": [
-      1443,
-      1444
-    ],
-    "en": "Ha",
-    "ru": "Ха."
+    "en": "New Fairy Tales | Kids Hut | Tia And Tofu",
+    "ru": "����� ������ | ������� ������ | ��� � ����."
   }
 ]

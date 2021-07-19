@@ -1,1034 +1,578 @@
 var items = [
   {
     "time": [
-      13,
-      17
+      15,
+      21
     ],
-    "en": "Did you have a good birthday Tofu",
-    "ru": "РЈ С‚РµР±СЏ Р±С‹Р» С…РѕСЂРѕС€РёР№ РґРµРЅСЊ СЂРѕР¶РґРµРЅРёСЏ, РўРѕС„Сѓ"
+    "en": "Hey Tofu do you want to come with me",
+    "ru": "Привет, Тофу, ты хочешь пойти со мной"
   },
   {
     "time": [
-      17,
-      20
+      21,
+      32
     ],
-    "en": "Yes very much",
-    "ru": "Р”Р° РѕС‡РµРЅСЊ"
+    "en": "I just saw my piggy bank has enough money to buy new books and toys for the children at the orphanage",
+    "ru": "Я только что увидела, что в моей копилке достаточно денег, чтобы покупать новые книги и игрушки для воспитанников детского дома"
   },
   {
     "time": [
-      20,
-      24
+      32,
+      35
     ],
-    "en": "And look at all the lovely gifts you got",
-    "ru": "Р РїРѕСЃРјРѕС‚СЂРёС‚Рµ, РєР°РєРёРµ РїСЂРµРєСЂР°СЃРЅС‹Рµ РїРѕРґР°СЂРєРё РІС‹ РїРѕР»СѓС‡РёР»Рё"
+    "en": "You can help me buy and distribute the goodies",
+    "ru": "Вы можете помочь мне покупать и распространять вкусности"
   },
   {
     "time": [
-      24,
-      26
-    ],
-    "en": "Yes",
-    "ru": "Р”Р°"
-  },
-  {
-    "time": [
-      26,
-      29
-    ],
-    "en": "Why Whats wrong",
-    "ru": "РџРѕС‡РµРјСѓ? Р§С‚Рѕ-С‚Рѕ РЅРµ С‚Р°Рє"
-  },
-  {
-    "time": [
-      29,
-      38
-    ],
-    "en": "Nothing is wrong but I just thought grandmom could have got me a better gift than the single rose flower",
-    "ru": "Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ, РЅРѕ СЏ РїСЂРѕСЃС‚Рѕ РїРѕРґСѓРјР°Р», С‡С‚Рѕ Р±Р°Р±СѓС€РєР° РјРѕРіР»Р° Р±С‹ СЃРґРµР»Р°С‚СЊ РјРЅРµ Р»СѓС‡С€РёР№ РїРѕРґР°СЂРѕРє, С‡РµРј РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№ С†РІРµС‚РѕРє СЂРѕР·С‹"
-  },
-  {
-    "time": [
-      38,
+      35,
       41
     ],
-    "en": "Tofu ThatвЂ™s not a nice thing to say",
-    "ru": "РўРѕС„Сѓ Р­С‚Рѕ РЅРµС…РѕСЂРѕС€РёРµ СЃР»РѕРІР°"
+    "en": "You are going to give away all your savings to other children",
+    "ru": "Вы собираетесь отдать все свои сбережения другим детям"
   },
   {
     "time": [
       41,
+      45
+    ],
+    "en": "How can you do that",
+    "ru": "Как ты можешь это сделать"
+  },
+  {
+    "time": [
+      45,
       49
     ],
-    "en": "You didnвЂ™t notice her love for you that made her fly all the way across the country to be with you today",
-    "ru": "Р’С‹ РЅРµ Р·Р°РјРµС‚РёР»Рё РµРµ Р»СЋР±РІРё Рє РІР°Рј, РєРѕС‚РѕСЂР°СЏ Р·Р°СЃС‚Р°РІРёР»Р° РµРµ РїРµСЂРµР»РµС‚РµС‚СЊ С‡РµСЂРµР· РІСЃСЋ СЃС‚СЂР°РЅСѓ, С‡С‚РѕР±С‹ Р±С‹С‚СЊ СЃ РІР°РјРё СЃРµРіРѕРґРЅСЏ"
+    "en": "Don’t you want to buy something for yourself",
+    "ru": "Разве ты не хочешь покупать что-то для себя"
   },
   {
     "time": [
       49,
-      50
-    ],
-    "en": "Love",
-    "ru": "Р›СЋР±РѕРІСЊ"
-  },
-  {
-    "time": [
-      50,
       53
     ],
-    "en": "But thatвЂ™s not a gift",
-    "ru": "РќРѕ СЌС‚Рѕ РЅРµ РїРѕРґР°СЂРѕРє"
+    "en": "Tofu we can’t always think of ourselves",
+    "ru": "Тофу, мы не всегда можем думать о себе"
   },
   {
     "time": [
       53,
-      73
+      62
     ],
-    "en": "Maybe youвЂ™ll think differently once you hear the story of the Snow Queen",
-    "ru": "РњРѕР¶РµС‚ Р±С‹С‚СЊ, РІС‹ РїРѕРґСѓРјР°РµС‚Рµ РїРѕ-РґСЂСѓРіРѕРјСѓ, РєРѕРіРґР° СѓСЃР»С‹С€РёС‚Рµ РёСЃС‚РѕСЂРёСЋ Рѕ РЎРЅРµР¶РЅРѕР№ РєРѕСЂРѕР»РµРІРµ"
+    "en": "Sometimes we have to help those who do not have the same means as us",
+    "ru": "Иногда нам приходится помогать тем, у кого нет таких же средств, как у нас"
   },
   {
     "time": [
-      73,
-      80
+      62,
+      77
     ],
-    "en": "Once upon a time in a small village lived two neighbours who were best friends too",
-    "ru": "Р”Р°РІРЅС‹Рј-РґР°РІРЅРѕ РІ РЅРµР±РѕР»СЊС€РѕР№ РґРµСЂРµРІРЅРµ Р¶РёР»Рё РґРІРѕРµ СЃРѕСЃРµРґРµР№, РєРѕС‚РѕСЂС‹Рµ С‚РѕР¶Рµ Р±С‹Р»Рё Р»СѓС‡С€РёРјРё РґСЂСѓР·СЊСЏРјРё"
+    "en": "Let me tell you a story of kindness",
+    "ru": "Позвольте мне рассказать вам историю доброты"
   },
   {
     "time": [
-      80,
-      86
+      77,
+      82
     ],
-    "en": "Their names were Gerda and Kay",
-    "ru": "РС… Р·РІР°Р»Рё Р“РµСЂРґР° Рё РљРµР№"
+    "en": "This is the story from a long long time ago in Nottingham",
+    "ru": "Это история давних времен из Ноттингема"
   },
   {
     "time": [
-      86,
+      82,
       89
     ],
-    "en": "They loved each other a lot",
-    "ru": "РћРЅРё РѕС‡РµРЅСЊ Р»СЋР±РёР»Рё РґСЂСѓРі РґСЂСѓРіР°"
+    "en": "England when King Richard ruled the country",
+    "ru": "Англия, когда страной правил король Ричард"
   },
   {
     "time": [
       89,
-      92
+      100
     ],
-    "en": "As a symbol of their friendship and love",
-    "ru": "РљР°Рє СЃРёРјРІРѕР» РёС… РґСЂСѓР¶Р±С‹ Рё Р»СЋР±РІРё"
+    "en": "His younger brother Prince John was a wicked Prince who took care of the State while the King was away for wars",
+    "ru": "Его младший брат принц Джон был злым принцем, который заботился о государстве, пока король отсутствовал на войне"
   },
   {
     "time": [
-      92,
-      102
+      100,
+      112
     ],
-    "en": "one day they both planted a rose plant each in their front yards",
-    "ru": "РћРґРЅР°Р¶РґС‹ РѕРЅРё РѕР±Р° РїРѕСЃР°РґРёР»Рё РїРѕ СЂРѕР·Рµ РєР°Р¶РґС‹Р№ РІРѕ РґРІРѕСЂРµ СЃРІРѕРµРіРѕ РґРѕРјР°"
+    "en": "Prince John was unkind to common people of Nottingham and had no consideration for the poor",
+    "ru": "Принц Джон был недоброжелателен к простым жителям Ноттингема и не заботился о бедных"
   },
   {
     "time": [
-      102,
-      113
+      112,
+      126
     ],
-    "en": "Every morning they would get together and water their plants and take care of them",
-    "ru": "РљР°Р¶РґРѕРµ СѓС‚СЂРѕ РѕРЅРё СЃРѕР±РёСЂР°Р»РёСЃСЊ РІРјРµСЃС‚Рµ, РїРѕР»РёРІР°Р»Рё СЂР°СЃС‚РµРЅРёСЏ Рё СѓС…Р°Р¶РёРІР°Р»Рё Р·Р° РЅРёРјРё"
+    "en": "Under his charge the rich became richer while the poor became poorer",
+    "ru": "Под его руководством богатые стали еще богаче, а бедные - еще беднее"
   },
   {
     "time": [
-      113,
-      118
+      126,
+      132
     ],
-    "en": "When winters came Gerda invited Kay",
-    "ru": "РљРѕРіРґР° РЅР°СЃС‚СѓРїРёР»Р° Р·РёРјР°, Р“РµСЂРґР° РїСЂРёРіР»Р°СЃРёР»Р° РљР°СЏ"
+    "en": "The poor had no savior to save them other than Robin Hood",
+    "ru": "У бедняков не было другого спасителя, кроме Робин Гуда"
   },
   {
     "time": [
-      118,
-      121
+      132,
+      140
     ],
-    "en": "Why donвЂ™t you come over in the afternoon",
-    "ru": "РџРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РЅРµ РїСЂРёРµС…Р°С‚СЊ РґРЅРµРј"
+    "en": "Or the Hooded thief as he was properly known",
+    "ru": "Или вор в капюшоне, как он был правильно известен"
   },
   {
     "time": [
-      121,
-      127
+      140,
+      171
     ],
-    "en": "My grandma has promised to make us a cup of hot chocolate and tell us a story",
-    "ru": "РњРѕСЏ Р±Р°Р±СѓС€РєР° РѕР±РµС‰Р°Р»Р° РїСЂРёРіРѕС‚РѕРІРёС‚СЊ РЅР°Рј С‡Р°С€РєСѓ РіРѕСЂСЏС‡РµРіРѕ С€РѕРєРѕР»Р°РґР° Рё СЂР°СЃСЃРєР°Р·Р°С‚СЊ РёСЃС‚РѕСЂРёСЋ"
+    "en": "Robin Hood had a trusted companion called Little John",
+    "ru": "У Робин Гуда был верный спутник по имени Маленький Джон"
   },
   {
     "time": [
-      127,
-      138
+      171,
+      200
     ],
-    "en": "Okay Gerda I will come over after finishing my chores",
-    "ru": "РҐРѕСЂРѕС€Рѕ, Р“РµСЂРґР°, СЏ РїСЂРёРґСѓ РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє Р·Р°РєРѕРЅС‡Сѓ СЂР°Р±РѕС‚Сѓ РїРѕ РґРѕРјСѓ"
+    "en": "Robin Hood would rob the rich merchants and the Prince’s caravans that carried the huge taxes collected from the poor as they crossed the Sherwood Forest which was the home of Robin on the way to the Prince’s treasury",
+    "ru": "Робин Гуд грабил богатых торговцев и караваны принца, которые несли огромные налоги, собранные с бедных, когда они пересекали Шервудский лес, который был домом Робина на пути к сокровищнице принца"
   },
   {
     "time": [
-      138,
-      143
+      200,
+      205
     ],
-    "en": "As promised Kay went to GerdaвЂ™s home in the afternoon",
-    "ru": "РљР°Рє Рё РѕР±РµС‰Р°Р», РљРµР№ РІРѕ РІС‚РѕСЂРѕР№ РїРѕР»РѕРІРёРЅРµ РґРЅСЏ РїРѕС€РµР» РґРѕРјРѕР№ Рє Р“РµСЂРґРµ"
+    "en": "And he would distribute the loot amongst the poor",
+    "ru": "И он раздавал награбленное среди бедных"
   },
   {
     "time": [
-      143,
-      147
-    ],
-    "en": "Tell us the story of The Snow Queen grandmamma",
-    "ru": "Р Р°СЃСЃРєР°Р¶РёС‚Рµ РЅР°Рј РёСЃС‚РѕСЂРёСЋ Р±Р°Р±СѓС€РєРё РЎРЅРµР¶РЅРѕР№ РљРѕСЂРѕР»РµРІС‹"
-  },
-  {
-    "time": [
-      147,
-      154
-    ],
-    "en": "Bah There is no Snow Queen Do you still believe in such stories",
-    "ru": "Р‘Р°. РЎРЅРµР¶РЅРѕР№ РєРѕСЂРѕР»РµРІС‹ РЅРµ Р±С‹РІР°РµС‚. Р’С‹ РґРѕ СЃРёС… РїРѕСЂ РІРµСЂРёС‚Рµ РІ С‚Р°РєРёРµ РёСЃС‚РѕСЂРёРё"
-  },
-  {
-    "time": [
-      154,
-      165
-    ],
-    "en": "Little did Kay know that the Snow Queen did exist",
-    "ru": "РљРµР№ РЅРµ Р·РЅР°Р», С‡С‚Рѕ РЎРЅРµР¶РЅР°СЏ РєРѕСЂРѕР»РµРІР° РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃСѓС‰РµСЃС‚РІСѓРµС‚"
-  },
-  {
-    "time": [
-      165,
-      172
-    ],
-    "en": "And she had a magic mirror with which she could look at anybody",
-    "ru": "Р Сѓ РЅРµРµ Р±С‹Р»Рѕ РІРѕР»С€РµР±РЅРѕРµ Р·РµСЂРєР°Р»Рѕ, РєРѕС‚РѕСЂС‹Рј РѕРЅР° РјРѕРіР»Р° СЃРјРѕС‚СЂРµС‚СЊ РЅР° РєРѕРіРѕ СѓРіРѕРґРЅРѕ"
-  },
-  {
-    "time": [
-      172,
-      174
-    ],
-    "en": "and right at that moment",
-    "ru": "Рё РїСЂСЏРјРѕ РІ СЌС‚РѕС‚ РјРѕРјРµРЅС‚"
-  },
-  {
-    "time": [
-      174,
-      181
-    ],
-    "en": "she was looking into GerdaвЂ™s living room where they sat",
-    "ru": "РѕРЅР° СЃРјРѕС‚СЂРµР»Р° РІ РіРѕСЃС‚РёРЅСѓСЋ Р“РµСЂРґС‹, РіРґРµ РѕРЅРё СЃРёРґРµР»Рё"
-  },
-  {
-    "time": [
-      181,
-      187
-    ],
-    "en": "DoesnвЂ™t believe in me does he",
-    "ru": "РћРЅ РЅРµ РІРµСЂРёС‚ РІ РјРµРЅСЏ"
-  },
-  {
-    "time": [
-      187,
-      192
-    ],
-    "en": "I will send him my ice arrows that will turn him cold",
-    "ru": "РЇ РїСЂРёС€Р»СЋ РµРјСѓ СЃРІРѕРё Р»РµРґСЏРЅС‹Рµ СЃС‚СЂРµР»С‹, РєРѕС‚РѕСЂС‹Рµ СЃРґРµР»Р°СЋС‚ РµРіРѕ С…РѕР»РѕРґРЅС‹Рј"
-  },
-  {
-    "time": [
-      192,
-      198
-    ],
-    "en": "all the love will be gone from his eyes and his heart will freeze over",
-    "ru": "РІСЃСЏ Р»СЋР±РѕРІСЊ СѓР№РґРµС‚ РёР· РµРіРѕ РіР»Р°Р·, Рё РµРіРѕ СЃРµСЂРґС†Рµ Р·Р°РјРµСЂР·РЅРµС‚"
-  },
-  {
-    "time": [
-      198,
+      205,
       208
     ],
-    "en": "And the Snow Queen sent her Ice arrows towards Kay",
-    "ru": "Р РЎРЅРµР¶РЅР°СЏ РљРѕСЂРѕР»РµРІР° РїРѕСЃР»Р°Р»Р° СЃРІРѕРё Р›РµРґСЏРЅС‹Рµ СЃС‚СЂРµР»С‹ РІ СЃС‚РѕСЂРѕРЅСѓ РљРµСЏ"
+    "en": "His generosity earned him the name",
+    "ru": "Его щедрость принесла ему имя"
   },
   {
     "time": [
       208,
-      216
+      214
     ],
-    "en": "As soon as they entered GerdaвЂ™s home they went straight for KayвЂ™s eyes and heart",
-    "ru": "РљР°Рє С‚РѕР»СЊРєРѕ РѕРЅРё РІРѕС€Р»Рё РІ РґРѕРј Р“РµСЂРґС‹, РѕРЅРё РЅР°РїСЂР°РІРёР»РёСЃСЊ РїСЂСЏРјРѕ Рє РіР»Р°Р·Р°Рј Рё СЃРµСЂРґС†Сѓ РљР°СЏ"
+    "en": "‘Prince of Thieves’ amongst the common people",
+    "ru": "«Принц воров» среди простых людей"
   },
   {
     "time": [
-      216,
-      222
+      214,
+      227
     ],
-    "en": "Ouch My eyes WhatвЂ™s happening they hurt",
-    "ru": "РћР№ РњРѕРё РіР»Р°Р·Р° Р§С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚, РѕРЅРё Р±РѕР»СЏС‚"
+    "en": "And also many rewards that were announced by the Sheriff for his capture",
+    "ru": "А также множество наград, которые были объявлены шерифом за его поимку"
   },
   {
     "time": [
-      222,
-      224
+      227,
+      236
     ],
-    "en": "What is wrong Kay",
-    "ru": "Р§С‚Рѕ РЅРµ С‚Р°Рє, РљРµР№"
+    "en": "But this did not stop Robin from doing his good deeds",
+    "ru": "Но это не помешало Робину творить добрые дела"
   },
   {
     "time": [
-      224,
-      229
+      236,
+      247
     ],
-    "en": "Ouch My heart It hurts too",
-    "ru": "РћР№, РњРѕРµ СЃРµСЂРґС†Рµ С‚РѕР¶Рµ Р±РѕР»РёС‚"
+    "en": "One day when Robin Hood and his friends had robbed the Prince’s caravan again the Prince called the Sheriff of Nottingham to the palace",
+    "ru": "Однажды, когда Робин Гуд и его друзья снова ограбили караван принца, принц вызвал во дворец шерифа Ноттингема"
   },
   {
     "time": [
-      229,
-      232
+      247,
+      252
     ],
-    "en": "Kay WhatвЂ™s wrong Are you okay",
-    "ru": "РљРµР№ Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ? РўС‹ РІ РїРѕСЂСЏРґРєРµ"
+    "en": "This is the last time Robin Hood has humiliated my men and me",
+    "ru": "Это последний раз, когда Робин Гуд унижал меня и моих людей"
   },
   {
     "time": [
-      232,
-      237
+      252,
+      254
     ],
-    "en": "Suddenly KayвЂ™s whole behavior changed towards Gerda",
-    "ru": "Р’РЅРµР·Р°РїРЅРѕ РІСЃРµ РїРѕРІРµРґРµРЅРёРµ РљР°СЏ РїРѕ РѕС‚РЅРѕС€РµРЅРёСЋ Рє Р“РµСЂРґРµ РёР·РјРµРЅРёР»РѕСЃСЊ"
+    "en": "Sheriff",
+    "ru": "Шериф"
   },
   {
     "time": [
-      237,
-      242
+      254,
+      259
     ],
-    "en": "Oh stop being such a whimp Gerda Nothing is wrong",
-    "ru": "РђС…, С…РІР°С‚РёС‚ Р±С‹С‚СЊ С‚Р°РєРѕР№ РєР°РїСЂРёР·РЅРѕР№, Р“РµСЂРґР°. Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ"
+    "en": "What are your troops doing Why haven’t they caught that thief as yet",
+    "ru": "Что делают ваши войска. Почему они еще не поймали вора"
   },
   {
     "time": [
-      242,
-      243
+      259,
+      262
     ],
-    "en": "Get away from me",
-    "ru": "РћС‚РѕР№РґРё РѕС‚ РјРµРЅСЏ"
+    "en": "We are doing everything Your Highness",
+    "ru": "Мы все делаем, Ваше Высочество"
   },
   {
     "time": [
-      243,
-      257
+      262,
+      266
     ],
-    "en": "Saying so he shoved Gerda aside and went home",
-    "ru": "РЎРєР°Р·Р°РІ СЌС‚Рѕ, РѕРЅ РѕС‚С‚РѕР»РєРЅСѓР» Р“РµСЂРґСѓ Рё РїРѕС€РµР» РґРѕРјРѕР№"
+    "en": "I assure you we will have him soon",
+    "ru": "Уверяю вас, он скоро будет у нас"
   },
   {
     "time": [
-      257,
-      264
+      266,
+      282
     ],
-    "en": "Over the next few days he would give cold mean looks to Gerda",
-    "ru": "Р’ С‚РµС‡РµРЅРёРµ СЃР»РµРґСѓСЋС‰РёС… РЅРµСЃРєРѕР»СЊРєРёС… РґРЅРµР№ РѕРЅ С…РѕР»РѕРґРЅРѕ Рё Р·Р»РѕР±РЅРѕ СЃРјРѕС‚СЂРµР» РЅР° Р“РµСЂРґСѓ"
+    "en": "You should Otherwise someone else will be punished",
+    "ru": "Вы должны. В противном случае кто-то другой будет наказан"
   },
   {
     "time": [
-      264,
-      271
+      282,
+      285
     ],
-    "en": "and would never talk to her nicely",
-    "ru": "Рё РЅРёРєРѕРіРґР° Р±С‹ РЅРµ РїРѕРіРѕРІРѕСЂРёР» СЃ РЅРµР№ С…РѕСЂРѕС€Рѕ"
+    "en": "The Sheriff made a new plan with his men",
+    "ru": "Шериф разработал новый план со своими людьми"
   },
   {
     "time": [
-      271,
-      277
+      285,
+      291
     ],
-    "en": "He wouldnвЂ™t even come to tend to the roses that they had planted",
-    "ru": "РћРЅ РґР°Р¶Рµ РЅРµ РїСЂРёС…РѕРґРёР», С‡С‚РѕР±С‹ СѓС…Р°Р¶РёРІР°С‚СЊ Р·Р° СЂРѕР·Р°РјРё, РєРѕС‚РѕСЂС‹Рµ РѕРЅРё РїРѕСЃР°РґРёР»Рё"
+    "en": "He decided to announce an archery competition to be held in Nottingham",
+    "ru": "Он решил объявить соревнование по стрельбе из лука, которое состоится в Ноттингеме"
   },
   {
     "time": [
-      277,
-      281
+      291,
+      304
     ],
-    "en": "One morning when Gerda was watering the plants",
-    "ru": "РћРґРЅР°Р¶РґС‹ СѓС‚СЂРѕРј, РєРѕРіРґР° Р“РµСЂРґР° РїРѕР»РёРІР°Р»Р° СЂР°СЃС‚РµРЅРёСЏ"
+    "en": "And the winner would be announced as the best archer in Nottingham and also win a kiss from the Maiden Marian",
+    "ru": "И победитель будет объявлен лучшим лучником в Ноттингеме, а также получит поцелуй от Девы Мариан"
   },
   {
     "time": [
-      281,
-      284
+      304,
+      310
     ],
-    "en": "she saw Kay get into a carriage",
-    "ru": "РѕРЅР° РІРёРґРµР»Р°, РєР°Рє РљРµР№ СЃР°РґРёС‚СЃСЏ РІ РєР°СЂРµС‚Сѓ"
+    "en": "One day Robin Hood’s friend Tuck came to visit him",
+    "ru": "Однажды друг Робин Гуда Так приехал навестить его"
   },
   {
     "time": [
-      284,
-      288
-    ],
-    "en": "with a lady who was wearing a white grown",
-    "ru": "СЃ РґР°РјРѕР№, РєРѕС‚РѕСЂР°СЏ Р±С‹Р»Р° РѕРґРµС‚Р° РІ Р±РµР»РѕРµ РІР·СЂРѕСЃР»РѕРµ"
-  },
-  {
-    "time": [
-      288,
-      295
-    ],
-    "en": "She had skin like diamonds and her hair was silver white",
-    "ru": "РЈ РЅРµРµ Р±С‹Р»Р° РєРѕР¶Р° РєР°Рє Р±СЂРёР»Р»РёР°РЅС‚, Р° РІРѕР»РѕСЃС‹ СЃРµСЂРµР±СЂРёСЃС‚Рѕ-Р±РµР»С‹Рµ"
-  },
-  {
-    "time": [
-      295,
-      302
-    ],
-    "en": "Gerda immediately knew that it was the Snow Queen",
-    "ru": "Р“РµСЂРґР° СЃСЂР°Р·Сѓ РїРѕРЅСЏР»Р°, С‡С‚Рѕ СЌС‚Рѕ РЎРЅРµР¶РЅР°СЏ РєРѕСЂРѕР»РµРІР°"
-  },
-  {
-    "time": [
-      302,
-      309
-    ],
-    "en": "She decided to follow her but the carriage just vanished into thin air",
-    "ru": "РћРЅР° СЂРµС€РёР»Р° РїРѕСЃР»РµРґРѕРІР°С‚СЊ Р·Р° РЅРµР№, РЅРѕ РєР°СЂРµС‚Р° СЂР°СЃС‚РІРѕСЂРёР»Р°СЃСЊ РІ РІРѕР·РґСѓС…Рµ"
-  },
-  {
-    "time": [
-      309,
-      314
-    ],
-    "en": "So she went to her grandmamma",
-    "ru": "Р РѕРЅР° РїРѕС€Р»Р° Рє Р±Р°Р±СѓС€РєРµ"
-  },
-  {
-    "time": [
-      314,
+      310,
       320
     ],
-    "en": "Here take this hand mirror and follow what it tells you",
-    "ru": "Р’РѕС‚ РІРѕР·СЊРјРё СЌС‚Рѕ СЂСѓС‡РЅРѕРµ Р·РµСЂРєР°Р»Рѕ Рё СЃР»РµРґСѓР№ С‚РѕРјСѓ, С‡С‚Рѕ РѕРЅРѕ С‚РµР±Рµ РіРѕРІРѕСЂРёС‚"
+    "en": "Have you heard of the archery competition that the Sheriff has announced for tomorrow",
+    "ru": "Вы слышали о соревнованиях по стрельбе из лука, которые шериф объявил на завтра"
   },
   {
     "time": [
       320,
-      323
+      327
     ],
-    "en": "The mirror only tells you the truth",
-    "ru": "Р—РµСЂРєР°Р»Рѕ РіРѕРІРѕСЂРёС‚ РІР°Рј С‚РѕР»СЊРєРѕ РїСЂР°РІРґСѓ"
+    "en": "Yes we have Friar And the  and I think Robin shouldn’t go to it",
+    "ru": "Да, у нас есть Friar And the, и я думаю, что Робин не должен идти на это"
   },
   {
     "time": [
-      323,
-      328
+      327,
+      329
     ],
-    "en": "Gerda took the mirror from her grandma and looked into it",
-    "ru": "Р“РµСЂРґР° РІР·СЏР»Р° Сѓ Р±Р°Р±СѓС€РєРё Р·РµСЂРєР°Р»Рѕ Рё РїРѕСЃРјРѕС‚СЂРµР»Р° РІ РЅРµРіРѕ"
+    "en": "It is a trap laid by the Sheriff",
+    "ru": "Это ловушка, расставленная шерифом"
   },
   {
     "time": [
-      328,
-      334
+      329,
+      335
     ],
-    "en": "The mirror told her to find the flower garden",
-    "ru": "Р—РµСЂРєР°Р»Рѕ СЃРєР°Р·Р°Р»Рѕ РµР№ РЅР°Р№С‚Рё С†РІРµС‚РЅРёРє"
+    "en": "All of England knows that Robin Hood is the best archer by far",
+    "ru": "Вся Англия знает, что Робин Гуд - безусловно лучший лучник"
   },
   {
     "time": [
-      334,
-      344
+      335,
+      339
     ],
-    "en": "So Gerda went looking for it",
-    "ru": "Р“РµСЂРґР° РїРѕС€Р»Р° РµРіРѕ РёСЃРєР°С‚СЊ"
+    "en": "Robin doesn’t need to go and prove anything there",
+    "ru": "Робину не нужно там что-то доказывать"
   },
   {
     "time": [
-      344,
-      348
+      339,
+      343
     ],
-    "en": "Meanwhile once the Snow Queen reached the palace",
-    "ru": "РўРµРј РІСЂРµРјРµРЅРµРј РѕРґРЅР°Р¶РґС‹ РЎРЅРµР¶РЅР°СЏ РљРѕСЂРѕР»РµРІР° РґРѕР±СЂР°Р»Р°СЃСЊ РґРѕ РґРІРѕСЂС†Р°"
+    "en": "You worry too much Little John Lighten up",
+    "ru": "Ты слишком много беспокоишься, Маленький Джон, Расслабься"
   },
   {
     "time": [
-      348,
-      352
+      343,
+      347
     ],
-    "en": "she told Kay to make it his home from now on",
-    "ru": "РѕРЅР° СЃРєР°Р·Р°Р»Р° РљРµСЋ, С‡С‚РѕР±С‹ СЃ СЌС‚РѕРіРѕ РјРѕРјРµРЅС‚Р° РѕРЅ СЃС‚Р°Р» РµРіРѕ РґРѕРјРѕРј"
+    "en": "We will go and have some fun tomorrow",
+    "ru": "Пойдем завтра повеселимся"
   },
   {
     "time": [
-      352,
-      359
+      347,
+      356
     ],
-    "en": "This is your home now You will never leave here",
-    "ru": "РўРµРїРµСЂСЊ СЌС‚Рѕ С‚РІРѕР№ РґРѕРј. РўС‹ РЅРёРєРѕРіРґР° РЅРµ СѓР№РґРµС€СЊ РѕС‚СЃСЋРґР°"
+    "en": "And to ensure that no one recognizes us we’ll wear disguises",
+    "ru": "А чтобы нас никто не узнал, мы будем маскироваться"
   },
   {
     "time": [
-      359,
-      365
+      356,
+      369
     ],
-    "en": "And once your heart freezes over you will be mine forever",
-    "ru": "Р РєР°Рє С‚РѕР»СЊРєРѕ С‚РІРѕРµ СЃРµСЂРґС†Рµ Р·Р°РјРµСЂР·РЅРµС‚, вЂ‹вЂ‹С‚С‹ РЅР°РІСЃРµРіРґР° Р±СѓРґРµС€СЊ РјРѕРёРј"
+    "en": "And so the next day Robin Hood and his friends wore disguises and went to the competition",
+    "ru": "И вот на следующий день Робин Гуд и его друзья переоделись и отправились на соревнования"
   },
   {
     "time": [
-      365,
-      378
-    ],
-    "en": "Back in the village Gerda found the flower garden and entered it",
-    "ru": "Р’РµСЂРЅСѓРІС€РёСЃСЊ РІ РґРµСЂРµРІРЅСЋ, Р“РµСЂРґР° РЅР°С€Р»Р° С†РІРµС‚РЅРёРє Рё РІРѕС€Р»Р° РІ РЅРµРіРѕ"
-  },
-  {
-    "time": [
-      378,
+      369,
       384
     ],
-    "en": "The garden was full of the most beautiful flowers Gerda had ever seen",
-    "ru": "Р’ СЃР°РґСѓ СЂРѕСЃР»Рё СЃР°РјС‹Рµ РєСЂР°СЃРёРІС‹Рµ С†РІРµС‚С‹, РєРѕС‚РѕСЂС‹Рµ Р“РµСЂРґР° РєРѕРіРґР°-Р»РёР±Рѕ РІРёРґРµР»Р°"
+    "en": "Just as Robin Hood had predicted no one was able to recognize him",
+    "ru": "Как и предсказывал Робин Гуд, никто не смог его узнать"
   },
   {
     "time": [
       384,
-      388
+      389
     ],
-    "en": "She fell in love with them immediately",
-    "ru": "РћРЅР° СЃСЂР°Р·Сѓ РІР»СЋР±РёР»Р°СЃСЊ РІ РЅРёС…"
+    "en": "Soon it was Robin Hood’s turn to shoot the arrows",
+    "ru": "Вскоре настала очередь Робин Гуда стрелять стрелами"
   },
   {
     "time": [
-      388,
-      391
+      389,
+      394
     ],
-    "en": "But there was no smell of the flowers",
-    "ru": "РќРѕ Р·Р°РїР°С…Р° С†РІРµС‚РѕРІ РЅРµ Р±С‹Р»Рѕ"
+    "en": "He took the first shot at the board and hit bull’s eye",
+    "ru": "Он первым выстрелил в доску и попал в яблочко"
   },
   {
     "time": [
-      391,
-      399
+      394,
+      398
     ],
-    "en": "Surprised Gerda bent down and touched one of the flowers to understand if they were real",
-    "ru": "РЈРґРёРІР»РµРЅРЅР°СЏ Р“РµСЂРґР° РЅР°РєР»РѕРЅРёР»Р°СЃСЊ Рё РґРѕС‚СЂРѕРЅСѓР»Р°СЃСЊ РґРѕ РѕРґРЅРѕРіРѕ РёР· С†РІРµС‚РѕРІ, С‡С‚РѕР±С‹ РїРѕРЅСЏС‚СЊ, РЅР°СЃС‚РѕСЏС‰РёРµ Р»Рё РѕРЅРё"
+    "en": "The crowd cheered for this unknown archer",
+    "ru": "Толпа приветствовала этого неизвестного лучника"
   },
   {
     "time": [
-      399,
-      405
+      398,
+      410
     ],
-    "en": "As soon as she touched one flower the fragrances of all the flowers returned",
-    "ru": "РљР°Рє С‚РѕР»СЊРєРѕ РѕРЅР° РєРѕСЃРЅСѓР»Р°СЃСЊ РѕРґРЅРѕРіРѕ С†РІРµС‚РєР°, Р°СЂРѕРјР°С‚С‹ РІСЃРµС… С†РІРµС‚РѕРІ РІРµСЂРЅСѓР»РёСЃСЊ"
+    "en": "Then he took another arrow and shot it again this one too hit bull’s eye The crowd cheered louder",
+    "ru": "Затем он взял еще одну стрелу и снова выстрелил. Эта тоже попала в яблочко. Толпа закричала громче"
   },
   {
     "time": [
-      405,
-      411
+      410,
+      413
     ],
-    "en": "and the Flower Lady appeared in front of her",
-    "ru": "Рё РїРµСЂРµРґ РЅРµР№ РїРѕСЏРІРёР»Р°СЃСЊ Р¦РІРµС‚РѕС‡РЅР°СЏ Р›РµРґРё"
+    "en": "The cheering caught the Sheriff’s attention",
+    "ru": "Аплодисменты привлекли внимание шерифа"
   },
   {
     "time": [
-      411,
+      413,
       417
     ],
-    "en": "Thank you You have returned the fragrance of my flowers",
-    "ru": "РЎРїР°СЃРёР±Рѕ, С‡С‚Рѕ РІРµСЂРЅСѓР»Рё Р°СЂРѕРјР°С‚ РјРѕРёС… С†РІРµС‚РѕРІ"
+    "en": "And he turned to see what the matter was",
+    "ru": "И он повернулся посмотреть, в чем дело"
   },
   {
     "time": [
       417,
-      419
+      425
     ],
-    "en": "Who are you",
-    "ru": "РљС‚Рѕ С‚С‹"
+    "en": "By now Robin had drawn his third arrow and took a shot",
+    "ru": "К этому времени Робин вытащил свою третью стрелу и выстрелил"
   },
   {
     "time": [
-      419,
-      424
+      425,
+      431
     ],
-    "en": "I am the owner of this garden I am the Flower Lady",
-    "ru": "РЇ С…РѕР·СЏР№РєР° СЌС‚РѕРіРѕ СЃР°РґР°. РЇ Р¦РІРµС‚РѕС‡РЅР°СЏ Р›РµРґРё"
+    "en": "It too hit the Bull’s eye",
+    "ru": "Это тоже бросилось в глаза Быку"
   },
   {
     "time": [
-      424,
-      426
+      431,
+      439
     ],
-    "en": "Can you help me",
-    "ru": "Р’С‹ РјРѕР¶РµС‚Рµ РїРѕРјРѕС‡СЊ РјРЅРµ"
+    "en": "When the forth arrow also did the same the Sheriff realized something",
+    "ru": "Когда четвертая стрелка сделала то же самое, шериф кое-что понял"
   },
   {
     "time": [
-      426,
-      430
-    ],
-    "en": "Have you seen my friend Kay pass through here",
-    "ru": "Р’С‹ РІРёРґРµР»Рё, РєР°Рє Р·РґРµСЃСЊ РїСЂРѕС…РѕРґРёР» РјРѕР№ РґСЂСѓРі РљРµР№"
-  },
-  {
-    "time": [
-      430,
-      433
-    ],
-    "en": "He has been taken by the Snow Queen",
-    "ru": "Р•РіРѕ Р·Р°Р±СЂР°Р»Р° РЎРЅРµР¶РЅР°СЏ РєРѕСЂРѕР»РµРІР°"
-  },
-  {
-    "time": [
-      433,
-      435
-    ],
-    "en": "Oh no The Snow Queen",
-    "ru": "Рћ РЅРµС‚, РЎРЅРµР¶РЅР°СЏ РєРѕСЂРѕР»РµРІР°"
-  },
-  {
-    "time": [
-      435,
+      439,
       441
     ],
-    "en": "she is one who had taken away the fragrance of my flowers",
-    "ru": "СЌС‚Рѕ С‚Р°, РєС‚Рѕ Р·Р°Р±СЂР°Р» Р°СЂРѕРјР°С‚ РјРѕРёС… С†РІРµС‚РѕРІ"
+    "en": "That is no stranger",
+    "ru": "Это не новость"
   },
   {
     "time": [
       441,
-      444
-    ],
-    "en": "I did not see Kay cross from here",
-    "ru": "РЇ РЅРµ РІРёРґРµР», С‡С‚РѕР±С‹ РљРµР№ РїРµСЂРµСЃРµРєР°Р»СЃСЏ РѕС‚СЃСЋРґР°"
-  },
-  {
-    "time": [
-      444,
       448
     ],
-    "en": "but you should try the river outside the village",
-    "ru": "РЅРѕ РІС‹ РґРѕР»Р¶РЅС‹ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ СЂРµРєСѓ Р·Р° РґРµСЂРµРІРЅРµР№"
+    "en": "That is Robin Hood no one can shoot four arrows in a row like that",
+    "ru": "То есть Робин Гуд, никто так не может стрелять четырьмя стрелами подряд"
   },
   {
     "time": [
       448,
-      464
+      457
     ],
-    "en": "Gerda thanked the Flower Lady and went to the river",
-    "ru": "Р“РµСЂРґР° РїРѕР±Р»Р°РіРѕРґР°СЂРёР»Р° Р¦РІРµС‚РѕС‡РЅРёС†Сѓ Рё РїРѕС€Р»Р° Рє СЂРµРєРµ."
+    "en": "Grab him men",
+    "ru": "Хватайте его, мужчины"
   },
   {
     "time": [
-      464,
-      467
+      457,
+      468
     ],
-    "en": "There she saw a boat waiting for her",
-    "ru": "РўР°Рј РѕРЅР° СѓРІРёРґРµР»Р° Р»РѕРґРєСѓ, РѕР¶РёРґР°СЋС‰СѓСЋ РµРµ"
+    "en": "The whole crowd broke into a frenzy as the Sheriff’s men arrested Robin Hood",
+    "ru": "Вся толпа пришла в ярость, когда люди шерифа арестовали Робин Гуда"
   },
   {
     "time": [
-      467,
-      487
+      468,
+      474
     ],
-    "en": "She climbed into the boat and it took her to the pirate ship",
-    "ru": "РћРЅР° Р·Р°Р±СЂР°Р»Р°СЃСЊ РІ Р»РѕРґРєСѓ, Рё РѕРЅР° РїРµСЂРµРЅРµСЃР»Р° РµРµ РЅР° РїРёСЂР°С‚СЃРєРёР№ РєРѕСЂР°Р±Р»СЊ"
+    "en": "Off with his head",
+    "ru": "Отрубить ему голову"
   },
   {
     "time": [
-      487,
-      493
+      474,
+      488
     ],
-    "en": "Aboard the ship Gerda saw many pirates including a girl pirate",
-    "ru": "РќР° Р±РѕСЂС‚Сѓ РєРѕСЂР°Р±Р»СЏ Р“РµСЂРґР° РІРёРґРµР»Р° РјРЅРѕРіРѕ РїРёСЂР°С‚РѕРІ, РІ С‚РѕРј С‡РёСЃР»Рµ РґРµРІСѓС€РєСѓ-РїРёСЂР°С‚РєСѓ"
+    "en": "But Little John moved like a lightening flash and grabbed the Prince and put a knife to his throat",
+    "ru": "Но Маленький Джон двинулся, как вспышка молнии, схватил принца и приставил нож к его горлу"
   },
   {
     "time": [
-      493,
-      499
+      488,
+      490
     ],
-    "en": "Hello Can you help me I am looking for my friend Kay",
-    "ru": "Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ, РІС‹ РјРѕР¶РµС‚Рµ РјРЅРµ РїРѕРјРѕС‡СЊ? РЇ РёС‰Сѓ СЃРІРѕРµРіРѕ РґСЂСѓРіР° РљРµСЏ"
+    "en": "Release him immediately",
+    "ru": "Немедленно отпустите его"
   },
   {
     "time": [
-      499,
-      501
+      490,
+      498
     ],
-    "en": "The Snow Queen has taken him",
-    "ru": "РЎРЅРµР¶РЅР°СЏ РєРѕСЂРѕР»РµРІР° Р·Р°Р±СЂР°Р»Р° РµРіРѕ"
+    "en": "The Sheriff’s men had no choice except to let go of Robin Hood",
+    "ru": "У людей шерифа не было другого выбора, кроме как отпустить Робин Гуда"
   },
   {
     "time": [
-      501,
-      503
+      498,
+      504
     ],
-    "en": "I donвЂ™t know any Kay",
-    "ru": "РЇ РЅРµ Р·РЅР°СЋ РЅРё РѕРґРЅРѕРіРѕ РљРµСЏ"
+    "en": "The Prince of Thieves and his friends hollered and made their way out of the archery field",
+    "ru": "Принц Воров и его друзья закричали и покинули поле для стрельбы из лука."
   },
   {
     "time": [
-      503,
-      513
+      504,
+      528
     ],
-    "en": "And even if I did I wouldnвЂ™t tell you because once aboard the Pirate Ship you canвЂ™t go anywhere You have to be here",
-    "ru": "Р РґР°Р¶Рµ РµСЃР»Рё Р±С‹ СЏ СЃРєР°Р·Р°Р», СЏ Р±С‹ РЅРµ СЃРєР°Р·Р°Р» РІР°Рј, РїРѕС‚РѕРјСѓ С‡С‚Рѕ, РѕРєР°Р·Р°РІС€РёСЃСЊ РЅР° Р±РѕСЂС‚Сѓ РїРёСЂР°С‚СЃРєРѕРіРѕ РєРѕСЂР°Р±Р»СЏ, РІС‹ РЅРµ СЃРјРѕР¶РµС‚Рµ РЅРёРєСѓРґР° РїРѕР№С‚Рё. Р’С‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ Р·РґРµСЃСЊ"
+    "en": "but not before Robin Hood climbed the audience tower and stole a kiss from the Maiden Marian",
+    "ru": "но не раньше, чем Робин Гуд взобрался на башню для аудиенций и украл поцелуй у Девы Мариан"
   },
   {
     "time": [
-      513,
-      517
-    ],
-    "en": "No Please You have to let me go",
-    "ru": "РќРµС‚, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РѕС‚РїСѓСЃС‚Рё РјРµРЅСЏ"
-  },
-  {
-    "time": [
-      517,
-      520
-    ],
-    "en": "Kay is my friend I have to save him",
-    "ru": "РљРµР№ - РјРѕР№ РґСЂСѓРі, СЏ РґРѕР»Р¶РµРЅ СЃРїР°СЃС‚Рё РµРіРѕ"
-  },
-  {
-    "time": [
-      520,
-      525
-    ],
-    "en": "Friend you say Eh WellI have never had a friend",
-    "ru": "Р”СЂСѓРі С‚С‹ РіРѕРІРѕСЂРёС€СЊ Р­С… РќСѓ, Сѓ РјРµРЅСЏ РЅРёРєРѕРіРґР° РЅРµ Р±С‹Р»Рѕ РґСЂСѓРіР°"
-  },
-  {
-    "time": [
-      525,
+      528,
       530
     ],
-    "en": "Okay I will help you if you promise to be my friend",
-    "ru": "РҐРѕСЂРѕС€Рѕ, СЏ РїРѕРјРѕРіСѓ С‚РµР±Рµ, РµСЃР»Рё С‚С‹ РїРѕРѕР±РµС‰Р°РµС€СЊ Р±С‹С‚СЊ РјРѕРёРј РґСЂСѓРіРѕРј"
+    "en": "Back at the Sherwood Forrest",
+    "ru": "Вернувшись в Шервудский Форрест"
   },
   {
     "time": [
       530,
-      533
-    ],
-    "en": "Yes of course I would love to be your friend",
-    "ru": "Р”Р°, РєРѕРЅРµС‡РЅРѕ, СЏ С…РѕС‚РµР» Р±С‹ Р±С‹С‚СЊ С‚РІРѕРёРј РґСЂСѓРіРѕРј"
-  },
-  {
-    "time": [
-      533,
       535
     ],
-    "en": "Okay then",
-    "ru": "РўРѕРіРґР° Р»Р°РґРЅРѕ"
+    "en": "Robin Hood and his friends got together and celebrated",
+    "ru": "Робин Гуд и его друзья собрались вместе и отпраздновали"
   },
   {
     "time": [
       535,
-      537
+      542
     ],
-    "en": "take my reindeer",
-    "ru": "РІРѕР·СЊРјРё РјРѕРµРіРѕ РѕР»РµРЅСЏ"
+    "en": "You were right Robin Hood today was a lot of fun The Sheriff had this coming",
+    "ru": "Вы были правы. Робин Гуд сегодня был очень веселым. Шериф ждал этого"
   },
   {
     "time": [
-      537,
-      540
+      542,
+      547
     ],
-    "en": "He is the fastest reindeer in the world",
-    "ru": "РћРЅ СЃР°РјС‹Р№ Р±С‹СЃС‚СЂС‹Р№ СЃРµРІРµСЂРЅС‹Р№ РѕР»РµРЅСЊ РІ РјРёСЂРµ"
+    "en": "I am sure you surprised Maiden Marian too",
+    "ru": "Я уверен, что вы тоже удивили Maiden Marian"
   },
   {
     "time": [
-      540,
-      544
+      547,
+      560
     ],
-    "en": "and she knows where the Snow QueenвЂ™s palace is",
-    "ru": "Рё РѕРЅР° Р·РЅР°РµС‚, РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ РґРІРѕСЂРµС† РЎРЅРµР¶РЅРѕР№ РљРѕСЂРѕР»РµРІС‹"
+    "en": "Well not as surprised as the Prince is going to be when he finds out that we stole 4 bags of gold from his treasury during the Sheriff’s archery competition",
+    "ru": "Ну, не так удивлен, как будет принц, когда узнает, что мы украли 4 мешка с золотом из его сокровищницы во время соревнований по стрельбе из лука, устроенных шерифом"
   },
   {
     "time": [
-      544,
-      550
+      560,
+      563
     ],
-    "en": "Gerda thanked the Pirate Girl and climbed on the back of the reindeer",
-    "ru": "Р“РµСЂРґР° РїРѕР±Р»Р°РіРѕРґР°СЂРёР»Р° РґРµРІСѓС€РєСѓ-РїРёСЂР°С‚Р° Рё РІР·РѕР±СЂР°Р»Р°СЃСЊ РЅР° СЃРїРёРЅСѓ РѕР»РµРЅСЏ"
+    "en": "Everybody laughed heartily",
+    "ru": "Все от души засмеялись"
   },
   {
     "time": [
-      550,
-      562
-    ],
-    "en": "Just as the Pirate Girl had promised the reindeer had Gerda outside the Snow QueenвЂ™s palace in no time",
-    "ru": "РљР°Рє Рё РѕР±РµС‰Р°Р»Р° Р”РµРІСѓС€РєР°-РџРёСЂР°С‚, РѕР»РµРЅСЊ РІ РјРіРЅРѕРІРµРЅРёРµ РѕРєР° РІС‹РІРµР» Р“РµСЂРґСѓ РёР· РґРІРѕСЂС†Р° РЎРЅРµР¶РЅРѕР№ РљРѕСЂРѕР»РµРІС‹"
-  },
-  {
-    "time": [
-      562,
+      563,
       572
     ],
-    "en": "Gerda got off the reindeer and went inside the palace",
-    "ru": "Р“РµСЂРґР° СЃР»РµР·Р»Р° СЃ РѕР»РµРЅРµР№ Рё РІРѕС€Р»Р° РІРѕ РґРІРѕСЂРµС†"
+    "en": "Wow Tia This is such an inspirational story about being selfless and helping the helpless",
+    "ru": "Ух ты, Тиа. Это такая вдохновляющая история о самоотверженности и помощи беспомощным"
   },
   {
     "time": [
       572,
-      586
+      576
     ],
-    "en": "Kay Kay Are you in here",
-    "ru": "РљРµР№ РљРµР№ Р’С‹ Р·РґРµСЃСЊ"
+    "en": "I am going to change my ways from now onwards",
+    "ru": "С этого момента я собираюсь изменить свой образ жизни"
   },
   {
     "time": [
-      586,
-      593
+      576,
+      581
     ],
-    "en": "What are you doing here",
-    "ru": "Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ"
-  },
-  {
-    "time": [
-      593,
-      599
-    ],
-    "en": "I am here to take my friend back with me",
-    "ru": "РЇ Р·РґРµСЃСЊ, С‡С‚РѕР±С‹ Р·Р°Р±СЂР°С‚СЊ СЃ СЃРѕР±РѕР№ РґСЂСѓРіР°"
-  },
-  {
-    "time": [
-      599,
-      602
-    ],
-    "en": "Your friend doesnвЂ™t exist anymore",
-    "ru": "РўРІРѕРµРіРѕ РґСЂСѓРіР° Р±РѕР»СЊС€Рµ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚"
-  },
-  {
-    "time": [
-      602,
-      605
-    ],
-    "en": "Look at him standing there in the corner",
-    "ru": "РџРѕСЃРјРѕС‚СЂРёС‚Рµ РЅР° РЅРµРіРѕ, СЃС‚РѕСЏС‰РµРіРѕ РІ СѓРіР»Сѓ"
-  },
-  {
-    "time": [
-      605,
-      613
-    ],
-    "en": "Just in a few minute his heart will freeze over and then he will be mine forever",
-    "ru": "Р‘СѓРєРІР°Р»СЊРЅРѕ С‡РµСЂРµР· РЅРµСЃРєРѕР»СЊРєРѕ РјРёРЅСѓС‚ РµРіРѕ СЃРµСЂРґС†Рµ Р·Р°РјРµСЂР·РЅРµС‚, вЂ‹вЂ‹Рё С‚РѕРіРґР° РѕРЅ Р±СѓРґРµС‚ РјРѕРёРј РЅР°РІСЃРµРіРґР°"
-  },
-  {
-    "time": [
-      613,
-      617
-    ],
-    "en": "Gerda turned to see where the Snow Queen had pointed",
-    "ru": "Р“РµСЂРґР° РїРѕРІРµСЂРЅСѓР»Р°СЃСЊ, С‡С‚РѕР±С‹ СѓРІРёРґРµС‚СЊ, РєСѓРґР° СѓРєР°Р·Р°Р»Р° РЎРЅРµР¶РЅР°СЏ РєРѕСЂРѕР»РµРІР°"
-  },
-  {
-    "time": [
-      617,
-      631
-    ],
-    "en": "In the corner stood Kay His lips were blue and eyes were steely cold",
-    "ru": "Р’ СѓРіР»Сѓ СЃС‚РѕСЏР» РљРµР№. Р•РіРѕ РіСѓР±С‹ Р±С‹Р»Рё РіРѕР»СѓР±С‹РјРё, Р° РіР»Р°Р·Р° СЃС‚Р°Р»СЊРЅС‹РјРё С…РѕР»РѕРґРЅС‹РјРё"
-  },
-  {
-    "time": [
-      631,
-      633
-    ],
-    "en": "Gerda rushed to him",
-    "ru": "Р“РµСЂРґР° Р±СЂРѕСЃРёР»Р°СЃСЊ Рє РЅРµРјСѓ"
-  },
-  {
-    "time": [
-      633,
-      636
-    ],
-    "en": "Kay ItвЂ™s me Your friend",
-    "ru": "РљРµР№. Р­С‚Рѕ СЏ, С‚РІРѕР№ РґСЂСѓРі"
-  },
-  {
-    "time": [
-      636,
-      647
-    ],
-    "en": "When Kay didnвЂ™t reply she reached out for his hand His old friendвЂ™s touch returned the colour in KayвЂ™s eyes",
-    "ru": "РљРѕРіРґР° РљРµР№ РЅРµ РѕС‚РІРµС‚РёР», РѕРЅР° РІР·СЏР»Р° РµРіРѕ Р·Р° СЂСѓРєСѓ РџСЂРёРєРѕСЃРЅРѕРІРµРЅРёРµ РµРіРѕ СЃС‚Р°СЂРѕРіРѕ РґСЂСѓРіР° РІРµСЂРЅСѓР»Рѕ С†РІРµС‚ РІ РіР»Р°Р·Р°С… РљРµСЏ"
-  },
-  {
-    "time": [
-      647,
-      652
-    ],
-    "en": "Encouraged by this change Gerda pushed on",
-    "ru": "РћР±РѕРґСЂРµРЅРЅР°СЏ СЌС‚РёРј РёР·РјРµРЅРµРЅРёРµРј, Р“РµСЂРґР° РґРІРёРЅСѓР»Р°СЃСЊ РґР°Р»СЊС€Рµ"
-  },
-  {
-    "time": [
-      652,
-      656
-    ],
-    "en": "Remember all the times we had fun at home",
-    "ru": "Р’СЃРїРѕРјРЅРё РІСЃРµ РІСЂРµРјРµРЅР°, РєРѕРіРґР° РјС‹ РІРµСЃРµР»РёР»РёСЃСЊ РґРѕРјР°"
-  },
-  {
-    "time": [
-      656,
-      659
-    ],
-    "en": "And our roses that we have in the front yard",
-    "ru": "Р РЅР°С€Рё СЂРѕР·С‹, РєРѕС‚РѕСЂС‹Рµ Сѓ РЅР°СЃ РІРѕ РґРІРѕСЂРµ"
-  },
-  {
-    "time": [
-      659,
-      664
-    ],
-    "en": "There is no point in all this His heart will freeze soon",
-    "ru": "Р’Рѕ РІСЃРµРј СЌС‚РѕРј РЅРµС‚ СЃРјС‹СЃР»Р°. Р•РіРѕ СЃРµСЂРґС†Рµ СЃРєРѕСЂРѕ Р·Р°РјРµСЂР·РЅРµС‚"
-  },
-  {
-    "time": [
-      664,
-      671
-    ],
-    "en": "Hearing this Gerda broke down and started crying",
-    "ru": "РЈСЃР»С‹С€Р°РІ СЌС‚Рѕ, Р“РµСЂРґР° РЅРµ РІС‹РґРµСЂР¶Р°Р»Р° Рё Р·Р°РїР»Р°РєР°Р»Р°"
-  },
-  {
-    "time": [
-      671,
-      679
-    ],
-    "en": "As she was crying her tears rolled down from her eyes and onto the hand of Kay",
-    "ru": "РљРѕРіРґР° РѕРЅР° РїР»Р°РєР°Р»Р°, СЃР»РµР·С‹ РєР°С‚РёР»РёСЃСЊ СЃ РµРµ РіР»Р°Р· РЅР° СЂСѓРєСѓ РљРµР№"
-  },
-  {
-    "time": [
-      679,
-      684
-    ],
-    "en": "As soon as that happened Kay looked up at Gerda and smiled",
-    "ru": "РљР°Рє С‚РѕР»СЊРєРѕ СЌС‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ, РљРµР№ РІР·РіР»СЏРЅСѓР» РЅР° Р“РµСЂРґСѓ Рё СѓР»С‹Р±РЅСѓР»СЃСЏ"
-  },
-  {
-    "time": [
-      684,
-      690
-    ],
-    "en": "Gerda My friend You came for me",
-    "ru": "Р“РµСЂРґР°. Р”СЂСѓРі РјРѕР№. РўС‹ РїСЂРёС€РµР» Р·Р° РјРЅРѕР№"
-  },
-  {
-    "time": [
-      690,
-      696
-    ],
-    "en": "This is impossible Nothing can ever turn my curse over",
-    "ru": "Р­С‚Рѕ РЅРµРІРѕР·РјРѕР¶РЅРѕ. РќРёС‡С‚Рѕ РЅРµ РјРѕР¶РµС‚ РёР·Р±Р°РІРёС‚СЊ РјРµРЅСЏ РѕС‚ РїСЂРѕРєР»СЏС‚РёСЏ"
-  },
-  {
-    "time": [
-      696,
-      700
-    ],
-    "en": "She tried to pull Gerda away from Kay",
-    "ru": "РћРЅР° РїРѕРїС‹С‚Р°Р»Р°СЃСЊ РѕС‚С‚Р°С‰РёС‚СЊ Р“РµСЂРґСѓ РѕС‚ РљР°СЏ"
-  },
-  {
-    "time": [
-      700,
-      705
-    ],
-    "en": "and thatвЂ™s when GrandmaвЂ™s mirror fell out of GerdaвЂ™s pocket",
-    "ru": "Р С‚СѓС‚ Р±Р°Р±СѓС€РєРёРЅРѕРµ Р·РµСЂРєР°Р»Рѕ РІС‹РїР°Р»Рѕ РёР· РєР°СЂРјР°РЅР° Р“РµСЂРґС‹"
-  },
-  {
-    "time": [
-      705,
-      710
-    ],
-    "en": "When the Queen looked into it it spoke to her",
-    "ru": "РљРѕРіРґР° РљРѕСЂРѕР»РµРІР° Р·Р°РіР»СЏРЅСѓР»Р° РІ РЅРµРіРѕ, РѕРЅ Р·Р°РіРѕРІРѕСЂРёР» СЃ РЅРµР№"
-  },
-  {
-    "time": [
-      710,
-      715
-    ],
-    "en": "Snow Queen you have been mistaken",
-    "ru": "РЎРЅРµР¶РЅР°СЏ РєРѕСЂРѕР»РµРІР°, РІС‹ РѕС€РёР±Р»РёСЃСЊ"
-  },
-  {
-    "time": [
-      715,
-      724
-    ],
-    "en": "There is one power stronger than your curse and it is the power of love",
-    "ru": "Р•СЃС‚СЊ РѕРґРЅР° СЃРёР»Р°, РєРѕС‚РѕСЂР°СЏ СЃРёР»СЊРЅРµРµ РІР°С€РµРіРѕ РїСЂРѕРєР»СЏС‚РёСЏ, Рё СЌС‚Рѕ СЃРёР»Р° Р»СЋР±РІРё"
-  },
-  {
-    "time": [
-      724,
-      728
-    ],
-    "en": "Hearing this truth the Snow Queen started crying",
-    "ru": "РЈСЃР»С‹С€Р°РІ СЌС‚Сѓ РїСЂР°РІРґСѓ, РЎРЅРµР¶РЅР°СЏ РєРѕСЂРѕР»РµРІР° Р·Р°РїР»Р°РєР°Р»Р°"
-  },
-  {
-    "time": [
-      728,
-      736
-    ],
-    "en": "and soon dissolved in a pool of her own tears",
-    "ru": "Рё РІСЃРєРѕСЂРµ СЂР°СЃС‚РІРѕСЂРёР»Р°СЃСЊ РІ Р»СѓР¶Рµ СЃРѕР±СЃС‚РІРµРЅРЅС‹С… СЃР»РµР·"
-  },
-  {
-    "time": [
-      736,
-      741
-    ],
-    "en": "Oh now I feel so terrible Tia",
-    "ru": "Рћ, С‚РµРїРµСЂСЊ СЏ С‡СѓРІСЃС‚РІСѓСЋ СЃРµР±СЏ С‚Р°РєРѕР№ СѓР¶Р°СЃРЅРѕР№, РўРёР°"
-  },
-  {
-    "time": [
-      741,
-      744
-    ],
-    "en": "I think I have not been fair to Grandmom",
-    "ru": "Р”СѓРјР°СЋ, СЏ Р±С‹Р» РЅРµСЃРїСЂР°РІРµРґР»РёРІ Рє Р±Р°Р±СѓС€РєРµ"
-  },
-  {
-    "time": [
-      744,
-      748
-    ],
-    "en": "Well you still have time to make things better Tofu",
-    "ru": "Р§С‚Рѕ Р¶, Сѓ С‚РµР±СЏ РµС‰Рµ РµСЃС‚СЊ РІСЂРµРјСЏ, С‡С‚РѕР±С‹ РёСЃРїСЂР°РІРёС‚СЊ СЃРёС‚СѓР°С†РёСЋ, РўРѕС„Сѓ"
-  },
-  {
-    "time": [
-      748,
-      749
-    ],
-    "en": "Yeah",
-    "ru": "РђРіР°"
-  },
-  {
-    "time": [
-      749,
-      755
-    ],
-    "en": "You are right Tia I will go to her and apologise right away",
-    "ru": "РўС‹ РїСЂР°РІР°, РўРёР°, СЏ СЃСЂР°Р·Сѓ РїРѕР№РґСѓ Рє РЅРµР№ Рё РёР·РІРёРЅСЋСЃСЊ."
+    "en": "I am so proud of you Tofu that is such a great decision",
+    "ru": "Я так горжусь тобой, Тофу, это отличное решение."
   }
 ]
