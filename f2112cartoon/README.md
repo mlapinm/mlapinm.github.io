@@ -7,6 +7,48 @@ b02j
 \r\n\d\d\:\d\d\r\n[a-z]
 
 ========
+1
+c04.mp3
+Mulan 
+https://www.youtube.com/watch?v=mK3s9ddrUOI&list=PLhuEelKSHsFmhwsGedBRaQlx4FTPnnU0M&index=13
+
+2
+c05.mp3
+HEIDI 
+https://www.youtube.com/watch?v=tp0wnIs0TSs&list=PLhuEelKSHsFmhwsGedBRaQlx4FTPnnU0M&index=16
+
+3
+c06.mp3
+ALADDIN
+ALADDIN AND THE MAGIC LAMP
+https://www.youtube.com/watch?v=u7ZHUii5b50&list=PLhuEelKSHsFmhwsGedBRaQlx4FTPnnU0M&index=19
+
+
+4
+c07.mp3
+APRIL
+APRIL FOOLS DAY
+https://www.youtube.com/watch?v=QE7HUkHdkW8&list=PLhuEelKSHsFmhwsGedBRaQlx4FTPnnU0M&index=22
+
+
+5
+c08.mp3
+EASTER
+THE EASTER STORY
+https://www.youtube.com/watch?v=yZqwjiG7i4k&list=PLhuEelKSHsFmhwsGedBRaQlx4FTPnnU0M&index=25
+
+
+6
+c09.mp3
+Princess
+The Twelve Dancing Princess
+https://www.youtube.com/watch?v=3YiZB3z-T8o&list=PLhuEelKSHsFmhwsGedBRaQlx4FTPnnU0M&index=27
+
+
+
+
+
+-----
 A CINDERELLA 
 https://www.youtube.com/watch?v=nCTGStrLLzc
 
