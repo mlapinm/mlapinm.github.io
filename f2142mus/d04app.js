@@ -6,21 +6,37 @@ $(() => {
     let pause = true
     let current = 0
 
-    function play(){
+    startTimer()
+
+    function startTimer(){
         if(timerId){
              clearTimeout(timerId)
         }
-        // audio.currentTime = current
         timerId = setInterval(() => {
-            // $('.log3').text(Math.floor(audio.currentTime))
-
+            current = audio.currentTime
+            let t1 = ' play'
+            if(audio.paused){
+                pause = true
+                t1 = ' pause'
+            }else{
+                pause = false
+            }
+            $('.log1').text( ' '
+            + timeToMinut(current)+ '  ' + Math.floor(current) + t1)
         }, 500)
+    }
+
+    function timeToMinut(time){
+        let t2 = Math.floor(time/60) + ':' 
+        + Math.floor(time%60)
+        return t2
+
     }
 
     function appendText(text){
         $('#id_text').append(' ' + text)
     }
-    play()
+
 
     $('.btn_play').click(() => {
         pause = pause ? false : true
@@ -28,15 +44,34 @@ $(() => {
             audio.play()
         }else{
             current = audio.currentTime 
-            $('.log1').text('' + current)
-            let t = Math.floor(current)
-            let t2 = Math.floor(t/60) + ':' 
-            + Math.floor(t%60)
-            $('.log2').text('' + t2)
-            appendText(current + ' ' + t2)
+            $('.log2').text('' + current)
+            $('.log2').text('' + timeToMinut(current))
+            appendText(timeToMinut(current) + ' ' + current)
             audio.pause()
 
         }
     })
+
+    $('.btn_back').click(() => {
+        $('.log3').text('btn_back')
+        audio.currentTime -=1 
+        current = audio.currentTime
+    })
+
+    $('.btn_toward').click(() => {
+        $('.log3').text('btn_toward')
+        audio.currentTime +=1 
+        current = audio.currentTime
+    })
+
+    audio.addEventListener('play', function(ev){
+        pause = false
+    });
+        
+    audio.addEventListener('pause', function(ev){
+        pause = true
+    });
+        
+
 
 })
