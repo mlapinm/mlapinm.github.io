@@ -2,10 +2,10 @@
 
 
 ```
+https://mlapinm.github.io/f2142mus/d04captch.html
 
-3:26 206.012392
-
-
+ 0:27 27.357165
+0:36 36.221491
 
 
 audio.addEventListener('play', function(ev){
