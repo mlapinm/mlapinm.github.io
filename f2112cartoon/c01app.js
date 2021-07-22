@@ -19,7 +19,7 @@ $(() => {
             clearTimeout(timerId)
         }
         }, 100)
-      }
+    }
 
       var count = 0
       var current = 0
