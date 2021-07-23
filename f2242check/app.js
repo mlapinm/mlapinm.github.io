@@ -32,13 +32,12 @@ $(() => {
                     $('#' + checkedId).removeClass('checked')
                 }
                 let id = e.target.id
-                $('#' + id).addClass('checked')
-
+                $('#' + checkedId).addClass('checked')
+                
                 checkedId = id
 
 
             })
-           
         }
     }
 
