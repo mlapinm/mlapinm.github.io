@@ -1,4 +1,12 @@
 
+body {
+    font-size: 1.2em;
+}
+
+.log1 {
+    font-size: 1.6em;
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;

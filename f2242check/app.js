@@ -18,11 +18,12 @@ $(() => {
             const topic =$("<span></span>")
             topic.attr("class", "topic")
 
-            item.append(level)
-            item.append(topic)
+            // item.append(level)
+            // item.append(topic)
 
+            item.text(items[i]['level'] + ' ' + items[i]['topic'][0])
             level.text(items[i]['level'] + ' ')
-            topic.text(items[i]['topic'])
+            topic.text(items[i]['topic'][0])
 
 
             grid.append(item)
@@ -33,6 +34,9 @@ $(() => {
                 }
                 let id = e.target.id
                 $('#' + id).addClass('checked')
+
+                let text = $("#" + id).text()
+                $('.log1').text(text)
 
                 checkedId = id
 
