@@ -6,8 +6,12 @@
 
 }
 
-.topic {
+.item {
   background-color: aqua;
 
   width: 48%;
+}
+
+.checked {
+    background-color: lightgreen;
 }
