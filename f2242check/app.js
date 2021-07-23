@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(() => {
 
     const grid = $('.grid')
@@ -44,3 +45,5 @@ $(() => {
 
     $('.log1').text(count)
 })
+=======
+>>>>>>> parent of 4ab1df8 (3)
