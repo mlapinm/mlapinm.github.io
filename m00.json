@@ -196,13 +196,19 @@
 	 "card-text": [""],
 	 "link": "https://mlapinm.github.io/f2142mus/d12pl.html"
 	},
-    {
-	 "header": "play",
-	 "title": "play2",
-	 "card-text": [""],
-	 "link": "https://mlapinm.github.io/f2142mus/d04captch.html"
-	},
-    {
+	{
+		"header": "play",
+		"title": "play2",
+		"card-text": ["playlist"],
+		"link": "https://mlapinm.github.io/f2162mus/"
+	 },
+	 {
+		"header": "play",
+		"title": "play2",
+		"card-text": ["make titles"],
+		"link": "https://mlapinm.github.io/f2142mus/d04captch.html"
+	 },
+			{
 	 "header": "",
 	 "title": "",
 	 "card-text": [""],
