@@ -2,183 +2,411 @@ var objs = [
   {
     "time": [
       0.0,
-      8.340151
+      10.1345
     ],
     "en": [
-	"What is love",
-	"Baby don't hurt me",
-	"Don't hurt me no more"
-	],
-    "ru": [""]
-  },
-  {
-    "time": [
-      8.340151,
-      23.717497
-    ],
-    "en": [
-	"Baby don't hurt me",
-	"Don't hurt me no more"
-	],
-    "ru": [""]
-  },
-  {
-    "time": [
-      23.717497,
-      40.801038
-    ],
-    "en": [
-	"What is love"
+	""
 	],
     "ru": [
-	"33"
+	""
 	]
   },
   {
     "time": [
-      40.801038,
-      44.845138
+      10.1345,
+      15.064855
     ],
     "en": [
-	"Oh I don't know",
-	"why you're not fair"
+	"Oh it seemed forever stopped today"
 	],
-    "ru": [""]
+    "ru": [
+	"О, показалось, что вечность остановилась"
+	]
   },
   {
     "time": [
-      44.845138,
-      48.508263
+      15.064855,
+      19.878607
     ],
     "en": [
-	"I give you my love",
-	"but you don't care"
+	"All the lonely hearts in London",
+	"Caught a plane and flew away"
 	],
-    "ru": [""]
+    "ru": [
+	"Все одинокие сердца в Лондоне",
+	"Cели на самолет и улетели,"
+	]
   },
   {
     "time": [
-      48.508263,
-      54.5246
+      19.878607,
+      24.43927
     ],
     "en": [
-	"So what is right",
-	"and what is wrong",
-	"gimme a sign"
+	"And all the best women are married",
+	"All the handsome men are gay"
 	],
-    "ru": [""]
+    "ru": [
+	"А все лучшие женщины замужем,",
+	"Все красивые мужчины — геи"
+	]
   },
   {
     "time": [
-      54.5246,
-      102.83012
+      24.43927,
+      31.918073
     ],
     "en": [
-	"What is love",
-	"Baby don't hurt me",
-	"What is love",
-	"Baby don't hurt me",
-	"Don't hurt me no more"
+	"You feel deprived",
+	"Yeah are you questioning your size?"
 	],
-    "ru": [""]
+    "ru": [
+	"Ты чувствуешь себя обделенным.",
+	"Да, ты задаешься вопросом по поводу своего размера?"
+	]
   },
   {
     "time": [
-      102.83012,
-      107.020381
+      31.918073,
+      37.187974
     ],
     "en": [
-	"Oh I don't know",
-	"what can I do"
+	"Is there a tumour in your humour,",
+	"Are there bags under your eyes?"
 	],
-    "ru": [""]
+    "ru": [
+	"Отсутствует ли у тебя чувство юмора?",
+	"Есть ли у тебя мешки под глазами?"
+	]
   },
   {
     "time": [
-      107.020381,
-      109.649978
+      37.187974,
+      42.022357
     ],
     "en": [
-	"what else can I say",
-	"it's up to you"
+	"Do you leave dents where you sit?",
+	"Are you getting on a bit?"
 	],
-    "ru": [""]
+    "ru": [
+	"Вдавливается ли место там, где ты сидишь?",
+	"Стареешь ли ты понемногу?"
+	]
   },
   {
     "time": [
-      109.649978,
-      117.341774
+      42.022357,
+      46.4521
     ],
     "en": [
-	"I know we're one",
-	"just me and you",
-	"I can't go on"
+	"Will you survive?",
+	"You must survive"
 	],
-    "ru": [""]
+    "ru": [
+	"Выживешь ли ты?",
+	"Ты должен выжить"
+	]
   },
   {
     "time": [
-      117.341774,
-      187.561679
+      46.4521,
+      56.096325
     ],
     "en": [
-	"What is love",
-	"Baby don't hurt me"
+	"When there's no love in town",
+	"This new century keeps bringing you down"
 	],
-    "ru": [""]
+    "ru": [
+	"Когда в городе нет любви,",
+	"Это новое столетие подавляет тебя"
+	]
   },
   {
     "time": [
-      187.561679,
-      191.9
+      56.096325,
+      66.196286
     ],
     "en": [
-	"I want no other no other love"
+	"All the places you have been",
+	"Trying to find a love supreme"
 	],
-    "ru": [""]
+    "ru": [
+	"Все эти места, которые ты посетил,",
+	"Пытаясь найти величайшую любовь"
+	]
   },
   {
     "time": [
-      191.9,
-      197.620265
+      66.196286,
+      72.479424
     ],
     "en": [
-	"This is our life our time",
-	"When we are together"
+	"A love supreme"
 	],
-    "ru": [""]
+    "ru": [
+	"Величайшую любовь"
+	]
   },
   {
     "time": [
-      197.620265,
-      201.278467
+      72.479424,
+      76.809876
     ],
     "en": [
-	"I need you forever",
-	"Is it love"
+	"Oh what are you really looking for?"
 	],
-    "ru": [""]
+    "ru": [
+	"О, кого ты на самом деле ищешь?"
+	]
   },
   {
     "time": [
-      201.278467,
-      209.418616
+      76.809876,
+      82.016669
     ],
     "en": [
-	"What is love",
-	"Baby don't hurt me",
-	"Don't hurt me no more"
+	"Another partner in your life",
+	"To abuse and to adore?"
 	],
-    "ru": [""]
+    "ru": [
+	"Еще одного партнера в своей жизни,",
+	"Чтобы оскорблять и обожать?"
+	]
   },
   {
     "time": [
-      209.418616,
-      234.232208
+      82.016669,
+      88.960746
     ],
     "en": [
-	"what is love?!..."
+	"Is it lovey dovey stuff?",
+	"Do you need a bit of rough?",
+	"Get on your knees!"
 	],
-    "ru": [""]
+    "ru": [
+	"Любовные отношения голубков?",
+	"Тебе нужно немного грубости?",
+	"А ну на колени!"
+	]
+  },
+  {
+    "time": [
+      88.960746,
+      94.0897
+    ],
+    "en": [
+	"Yeah turn down the love songs that you hear"
+	],
+    "ru": [
+	"Да, выключи песни о любви, которые ты слышишь,"
+	]
+  },
+  {
+    "time": [
+      94.0897,
+      99.636108
+    ],
+    "en": [
+	"Cause you can't avoid the sentiment",
+	"That echoes in your ear"
+	],
+    "ru": [
+	"Потому что ты не можешь избегать того чувства,",
+	"Которое отдается эхом в твоих ушах."
+	]
+  },
+  {
+    "time": [
+      99.636108,
+      104.536166
+    ],
+    "en": [
+	"Saying love will stop the pain",
+	"Saying love will kill the fear"
+	],
+    "ru": [
+	"Говоря, что любовь остановит боль,",
+	"Говоря, что любовь уничтожит страх,"
+	]
+  },
+  {
+    "time": [
+      104.536166,
+      108.584977
+    ],
+    "en": [
+	"Do you believe",
+	"You must believe"
+	],
+    "ru": [
+	"Ты веришь в это?",
+	"Ты должен верить"
+	]
+  },
+  {
+    "time": [
+      108.584977,
+      118.504499
+    ],
+    "en": [
+	"When there's no love in town",
+	"This new century keeps bringing you down"
+	],
+    "ru": [
+	"Когда в городе нет любви,",
+	"Это новое столетие подавляет тебя"
+	]
+  },
+  {
+    "time": [
+      118.504499,
+      128.033065
+    ],
+    "en": [
+	"All the places you have been",
+	"Trying to find a love supreme"
+	],
+    "ru": [
+	"Все эти места, которые ты посетил,",
+	"Пытаясь найти величайшую любовь"
+	]
+  },
+  {
+    "time": [
+      128.033065,
+      153.99147
+    ],
+    "en": [
+	"A love supreme"
+	],
+    "ru": [
+	"Величайшую любовь"
+	]
+  },
+  {
+    "time": [
+      153.99147,
+      160.117278
+    ],
+    "en": [
+	"I spy with my little eye",
+	"Something beginning with (ah)",
+	"Got my back up"
+	],
+    "ru": [
+	"Я вижу кое-что,",
+	"что начинается на (букву) .. (ах)",
+	"Она рассердила меня,"
+	]
+  },
+  {
+    "time": [
+      160.117278,
+      165.015552
+    ],
+    "en": [
+	"And now she's screaming",
+	"So I've got to turn the track up",
+	"Sit back and watch the royalties stack up"
+	],
+    "ru": [
+	"А теперь сама кричит.",
+	"Так что мне пришлось увеличить громкость",
+	"Сажусь и смотрю, как капает гонорар"
+	]
+  },
+  {
+    "time": [
+      165.015552,
+      171.170813
+    ],
+    "en": [
+	"I know this girl she likes to switch teams",
+	"And I'm a fiend but I'm living for a love supreme"
+	],
+    "ru": [
+	"Я знаю эту девушку, ей нравится менять команды",
+	"А я изверг, но живу ради величайшей любви"
+	]
+  },
+  {
+    "time": [
+      171.170813,
+      180.689348
+    ],
+    "en": [
+	"When there's no love in town",
+	"This new century keeps bringing you down"
+	],
+    "ru": [
+	"Когда в городе нет любви,",
+	"Это новое столетие подавляет тебя"
+	]
+  },
+  {
+    "time": [
+      180.689348,
+      191.084104
+    ],
+    "en": [
+	"All the places you have been",
+	"Trying to find a love supreme"
+	],
+    "ru": [
+	"Все эти места, которые ты посетил,",
+	"Пытаясь найти величайшую любовь"
+	]
+  },
+  {
+    "time": [
+      191.084104,
+      193.328235
+    ],
+    "en": [
+	"A love supreme"
+	],
+    "ru": [
+	"Величайшую любовь"
+	]
+  },
+  {
+    "time": [
+      193.328235,
+      200.705297
+    ],
+    "en": [
+	"Come and live a love supreme",
+	"Don't let it get you down",
+	"Everybody lives for love"
+	],
+    "ru": [
+	"Приходи и живи величайшей любовью",
+	"Не позволяй ей нанести тебе удар",
+	"Все живут ради любви"
+	]
+  },
+  {
+    "time": [
+      200.705297,
+      205.648444
+    ],
+    "en": [
+	""
+	],
+    "ru": [
+	""
+	]
+  },
+  {
+    "time": [
+      196.75108,
+      205.648444
+    ],
+    "en": [
+	""
+	],
+    "ru": [
+	""
+	]
   }
 ]
