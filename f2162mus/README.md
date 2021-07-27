@@ -10,7 +10,15 @@ Elvis Presley Can't help in love
 
 
 
+Osborne,Micucci,Enya,Brown,blue hair
+One of Us
+Joan Osborne
 
+Kate Micucci
+Happy song
+
+Enya
+Only time
 
 
 Croce Jim 
