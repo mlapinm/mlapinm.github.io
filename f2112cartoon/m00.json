@@ -62,7 +62,7 @@
     {
 	 "header": "cartoon",
 	 "title": "Thumbelina",
-	 "card-text": ["Thumbelina and Tom Thumb"],
+	 "card-text": ["<p><a href='https://www.youtube.com/watch?v=vM4RgZ0yeic'>Thumbelina and Tom Thumb</a></p>"],
 	 "link": "c10cartoon.html"
 	},
     {
@@ -79,18 +79,78 @@
 	},
     {
 	 "header": "cartoon",
+	 "title": "Thumbelina",
+	 "card-text": ["<p><a href='https://www.youtube.com/watch?v=pdJRQvXk9mo'>Thumbelina. Goldilocks and the Three Bears</a></p>"],
+	 "link": "c12cartoon.html"
+	},
+    {
+	 "header": "cartoon",
+	 "title": "Gingerbread",
+	 "card-text": ["<p><a href='https://www.youtube.com/watch?v=9xbJ0KFBWnQ'>The Gingerbread Man. Pied Piper Of Hamelin</a></p>"],
+	 "link": "c13cartoon.html"
+	},
+    {
+	 "header": "cartoon",
+	 "title": "Clothes",
+	 "card-text": ["<p><a href='https://www.youtube.com/watch?v=UalAFC_UHEI'>The Emperors New Clothes</a></p>"],
+	 "link": "c14cartoon.html"
+	},
+    {
+	 "header": "cartoon",
+	 "title": "Frog",
+	 "card-text": ["<p><a href='https://www.youtube.com/watch?v=5zAS9mPuqvw'>The Frog Prince. Sleeping Beauty</a></p>"],
+	 "link": "c15cartoon.html"
+	},
+    {
+	 "header": "cartoon",
+	 "title": "Rapunzel",
+	 "card-text": ["<p><a href='https://www.youtube.com/watch?v=webirSr1Oeg'>Rapunzel. Goldilocks and the Three Bears</a></p>"],
+	 "link": "c16cartoon.html"
+	},
+    {
+	 "header": "cartoon",
+	 "title": "Gingerbread",
+	 "card-text": ["<p><a href='https://www.youtube.com/watch?v=b03rVld6Onw'>The Gingerbread Man</a></p>"],
+	 "link": "c17cartoon.html"
+	},
+    {
+	 "header": "cartoon",
+	 "title": "Beauty",
+	 "card-text": ["<p><a href='https://www.youtube.com/watch?v=Q0r4uyjWa6E'>Sleeping Beauty Full Movie</a></p>"],
+	 "link": "c18cartoon.html"
+	},
+    {
+	 "header": "cartoon",
+	 "title": "Goldilocks",
+	 "card-text": ["<p><a href='https://www.youtube.com/watch?v=phaAcnLaDKk'>Goldilocks and the Three Bears Story</a></p>"],
+	 "link": "c19cartoon.html"
+	},
+    {
+	 "header": "",
 	 "title": "",
 	 "card-text": [""],
 	 "link": ""
 	},
     {
-	 "header": "cartoon",
+	 "header": "",
 	 "title": "",
 	 "card-text": [""],
 	 "link": ""
 	},
     {
-	 "header": "cartoon",
+	 "header": "",
+	 "title": "",
+	 "card-text": [""],
+	 "link": ""
+	},
+    {
+	 "header": "",
+	 "title": "",
+	 "card-text": [""],
+	 "link": ""
+	},
+    {
+	 "header": "",
 	 "title": "",
 	 "card-text": [""],
 	 "link": ""
