@@ -46,7 +46,7 @@ class Column{
   }
 
   setText(text){
-    this.cardText1.text(text)
+    this.cardText1.html(text)
     return this
   }
 

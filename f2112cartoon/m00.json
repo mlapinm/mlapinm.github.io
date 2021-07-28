@@ -68,14 +68,14 @@
     {
 	 "header": "cartoon",
 	 "title": "Lion",
-	 "card-text": ['<p>Best Story Collection For Kids</p><p><a href="https://www.youtube.com/watch?v=PYIxuCrT0uE">youtube</a></p>'],
+	 "card-text": ["<p><a href='https://www.youtube.com/watch?v=PYIxuCrT0uE'>Best Story Collection For Kids</a></p>"],
 	 "link": "c11cartoon.html"
 	},
     {
 	 "header": "cartoon",
-	 "title": "",
-	 "card-text": [""],
-	 "link": ""
+	 "title": "Thumbelina",
+	 "card-text": ["<p><a href='https://www.youtube.com/watch?v=pdJRQvXk9mo'>Thumbelina. Goldilocks and the Three Bears</a></p>"],
+	 "link": "c11cartoon.html"
 	},
     {
 	 "header": "cartoon",
