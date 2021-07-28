@@ -68,7 +68,7 @@
     {
 	 "header": "cartoon",
 	 "title": "Lion",
-	 "card-text": ["<p>Best Story Collection For Kids</p><p><a href="https://www.youtube.com/watch?v=PYIxuCrT0uE">youtube</a></p>"],
+	 "card-text": ['<p>Best Story Collection For Kids</p><p><a href="https://www.youtube.com/watch?v=PYIxuCrT0uE">youtube</a></p>'],
 	 "link": "c11cartoon.html"
 	},
     {
