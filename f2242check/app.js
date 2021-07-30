@@ -15,10 +15,10 @@ $(() => {
     let idNum = 0
     if(match){
         idNum = match[1]
-        $('.log2').text(idNum)
+        // $('.log2').text(idNum)
     }
     $('#cel' + idNum).addClass('checked')
-    $('.log2').text('#cel' + idNum)
+    // $('.log2').text('#cel' + idNum)
     checkedId = "cel" + idNum
 
     text = $("#cel" + idNum).text()
