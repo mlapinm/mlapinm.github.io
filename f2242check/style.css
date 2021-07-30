@@ -23,3 +23,11 @@ body {
 .checked {
     background-color: lightgreen;
 }
+
+.main-footer{
+    position:-webkit-sticky; 
+    position:sticky; 
+    bottom:0; 
+    border-color:red;
+    background:#aaa;
+}

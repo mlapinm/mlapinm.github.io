@@ -4,8 +4,26 @@ $(() => {
     const count = items.length
     let checkedId = null
 
+   
 
     createBoard()
+
+    let text = document.cookie
+    let re = /.*cel(\d+)/y
+    let match = re.exec(text)
+
+    let idNum = 0
+    if(match){
+        idNum = match[1]
+        $('.log2').text(idNum)
+    }
+    $('#cel' + idNum).addClass('checked')
+    $('.log2').text('#cel' + idNum)
+    checkedId = "cel" + idNum
+
+    text = $("#cel" + idNum).text()
+    $('.log1').text(idNum + ' ' + text)
+
 
 
     function createBoard(){
@@ -28,18 +46,37 @@ $(() => {
 
             grid.append(item)
 
+
+
+
+
             item.click((e) => {
+                // $.cookie('cookie_name', 'cookie_value')
+                // document.cookie('test', 'test value', 2);
+
+                // document.cookie = 'cel10; expires=Mon, 05 Jul 1982 16:37:55 GMT;'
+
                 if(checkedId){
                     $('#' + checkedId).removeClass('checked')
                 }
                 let id = e.target.id
+                // document.cookie = id
+                $('.log2').text(id)
                 $('#' + id).addClass('checked')
 
+                let idNum = 0
+                re = /cel(\d+)/y
+                let match = re.exec(id)
+                if(match){
+                    idNum = match[1]
+                }
+            
                 let text = $("#" + id).text()
-                $('.log1').text(text)
+                $('.log1').text(idNum + ' ' + text)
 
                 checkedId = id
 
+                document.cookie = 'key1='+ id + "cel;"
 
             })
            
@@ -47,5 +84,5 @@ $(() => {
     }
 
 
-    $('.log1').text(count)
+    // $('.log1').text(count)
 })
