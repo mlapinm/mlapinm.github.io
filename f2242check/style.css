@@ -18,6 +18,11 @@ body {
 .container1{
     text-align: center;
 }
+img{
+    margin: auto;
+    display:block;
+    width:60%;
+    }
 .item {
     text-align: center;
   background-color: aqua;
