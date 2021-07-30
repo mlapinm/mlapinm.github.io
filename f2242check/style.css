@@ -6,6 +6,7 @@ body {
 
 .log1 {
     font-size: 1.6em;
+    padding-left: 2em;
 }
 
 .grid {
@@ -18,15 +19,17 @@ body {
 .item {
     text-align: center;
   background-color: aqua;
-
+  background: linear-gradient(to top, aqua 0%, #b5dde8 100%);
   width: 48%;
 }
 
 .checked {
     background-color: lightgreen;
-    border: 1px solid #fff;
-    border-radius: 25px;
+    background: linear-gradient(to top, lightgreen 0%, lightgreen 100%);
+    border: 1px solid #000;
+    border-radius: 10px;
 }
+
 .main-header{position:-webkit-sticky; 
     position:sticky; 
     top:0;
