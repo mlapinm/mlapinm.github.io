@@ -61,7 +61,7 @@ $(() => {
                 }
                 let id = e.target.id
                 // document.cookie = id
-                $('.log2').text(id)
+                // $('.log2').text(id)
                 $('#' + id).addClass('checked')
 
                 let idNum = 0
