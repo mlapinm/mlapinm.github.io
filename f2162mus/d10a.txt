@@ -1,0 +1,262 @@
+
+
+1.13 
+("Let It Snow! Let It Snow! Let it Snow!")
+7.33
+Oh the weather outside is frightful
+But the fire is so delightful
+14.1
+And since we've no place to go
+Let it snow, let it snow, let it snow
+21.33
+Man, it doesn't show signs of stoppin'
+And I've brought me some corn for poppin'
+28.6
+The lights are turned way down low
+Let it snow, let it snow
+35.63
+When we finally kiss goodnight
+How I'll hate going out in the storm
+42.63
+But if you really hold me tight
+All the way home 
+I'll be warm
+49.57
+And the fire is slowly dying
+And, my dear, we're still goodbye-ing
+56.67
+But as long as you love me so
+Let it snow, let it snow, and snow
+60.23
+78.37
+When we finally kiss goodnight
+How I'll hate going out in the storm
+85.33
+But if you really grab me tight
+All the way home
+I'll be warm
+92.3
+Oh, the fire is slowly dying
+And, my dear, we're still goodbye-ing
+99.33
+But as long as you love me so
+Let it snow, let it snow, let it snow
+108.27 
+108.27
+
+
+----
+
+1
+00:00:01,133 --> 00:00:05,233
+("Let It Snow! Let It
+Snow! Let it Snow!")
+
+2
+00:00:07,333 --> 00:00:10,533 align:start size:84% position:16%
+d Oh the weather
+outside is frightful d
+d But the fire is
+so delightful d
+
+4
+00:00:14,100 --> 00:00:17,566
+d And since we've
+no place to go d
+d Let it snow, let it
+snow, let it snow d
+
+6
+00:00:21,333 --> 00:00:25,033 align:start size:84% position:16%
+d Man, it doesn't show
+signs of stoppin' d
+d And I've brought me
+some corn for poppin' d
+
+8
+00:00:28,600 --> 00:00:32,033 align:start size:84% position:16%
+d The lights are
+turned way down low d
+d Let it snow, let it snow
+
+10
+00:00:35,633 --> 00:00:39,266
+d When we finally
+kiss goodnight d
+d How I'll hate going
+out in the storm d
+
+12
+00:00:42,633 --> 00:00:46,466 align:start size:84% position:16%
+d But if you really
+hold me tight d
+d All the way home
+I'll be warm d
+
+14
+00:00:49,566 --> 00:00:53,233
+d And the fire is slowly dying
+d And, my dear, we're
+still goodbye-ing d
+
+16
+00:00:56,666 --> 00:01:00,200
+d But as long as
+you love me so d
+d Let it snow, let
+it snow, and snow d
+
+17
+00:01:00,233 --> 00:01:18,366
+
+18
+00:01:18,366 --> 00:01:21,566
+d When we finally
+kiss goodnight d
+d How I'll hate going
+out in the storm d
+
+20
+00:01:25,333 --> 00:01:29,100 align:start size:84% position:16%
+d But if you really
+grab me tight d
+d All the way home
+I'll be warm d
+
+22
+00:01:32,300 --> 00:01:35,533
+d Oh, the fire is slowly dying
+d And, my dear, we're
+still goodbye-ing d
+
+24
+00:01:39,333 --> 00:01:42,566
+d But as long as
+you love me so d
+d Let it snow, let it
+snow, let it snow d
+
+00:01:48,266
+---
+
+1
+00:00:01,133 --> 00:00:05,233
+("Let It Snow! Let It
+Snow! Let it Snow!")
+
+2
+00:00:07,333 --> 00:00:10,533 align:start size:84% position:16%
+d Oh the weather
+outside is frightful d
+
+3
+00:00:10,566 --> 00:00:14,066
+d But the fire is
+so delightful d
+
+4
+00:00:14,100 --> 00:00:17,566
+d And since we've
+no place to go d
+
+5
+00:00:17,600 --> 00:00:21,300
+d Let it snow, let it
+snow, let it snow d
+
+6
+00:00:21,333 --> 00:00:25,033 align:start size:84% position:16%
+d Man, it doesn't show
+signs of stoppin' d
+
+7
+00:00:25,066 --> 00:00:28,566
+d And I've brought me
+some corn for poppin' d
+
+8
+00:00:28,600 --> 00:00:32,033 align:start size:84% position:16%
+d The lights are
+turned way down low d
+
+9
+00:00:32,066 --> 00:00:35,600 size:88% position:44%
+d Let it snow, let it snow
+
+10
+00:00:35,633 --> 00:00:39,266
+d When we finally
+kiss goodnight d
+
+11
+00:00:39,300 --> 00:00:42,600
+d How I'll hate going
+out in the storm d
+
+12
+00:00:42,633 --> 00:00:46,466 align:start size:84% position:16%
+d But if you really
+hold me tight d
+
+13
+00:00:46,500 --> 00:00:49,533 align:start size:81% position:19%
+d All the way home
+I'll be warm d
+
+14
+00:00:49,566 --> 00:00:53,233
+d And the fire is slowly dying
+
+15
+00:00:53,266 --> 00:00:56,633
+d And, my dear, we're
+still goodbye-ing d
+
+16
+00:00:56,666 --> 00:01:00,200
+d But as long as
+you love me so d
+
+17
+00:01:00,233 --> 00:01:04,433
+d Let it snow, let
+it snow, and snow d
+
+18
+00:01:18,366 --> 00:01:21,566
+d When we finally
+kiss goodnight d
+
+19
+00:01:21,600 --> 00:01:25,300
+d How I'll hate going
+out in the storm d
+
+20
+00:01:25,333 --> 00:01:29,100 align:start size:84% position:16%
+d But if you really
+grab me tight d
+
+21
+00:01:29,133 --> 00:01:32,266 align:start size:81% position:19%
+d All the way home
+I'll be warm d
+
+22
+00:01:32,300 --> 00:01:35,533
+d Oh, the fire is slowly dying
+
+23
+00:01:35,566 --> 00:01:39,300
+d And, my dear, we're
+still goodbye-ing d
+
+24
+00:01:39,333 --> 00:01:42,566
+d But as long as
+you love me so d
+
+25
+00:01:42,600 --> 00:01:48,266
+d Let it snow, let it
+snow, let it snow d

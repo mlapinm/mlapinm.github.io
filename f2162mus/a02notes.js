@@ -101,13 +101,83 @@ var notes = [
    },
    {
     "header": "song",
-    "title": "",
+    "title": "Martin",
     "card-text": [
-      "",
+      '<a href="https://www.youtube.com/watch?v=Rnil5LyK_B0">Dean Martin - Let It Snow</a>',
       "",
       ""
     ],
-    "link": "d0pl.html"
+    "link": "d10pl.html"
+   },
+   {
+    "header": "song",
+    "title": "Rey",
+    "card-text": [
+      '<a href="https://www.youtube.com/watch?v=5HMBniu9Evg">Lana Del Rey - Summertime</a>',
+      "",
+      ""
+    ],
+    "link": "d11pl.html"
+   },
+   {
+    "header": "song",
+    "title": "Abba",
+    "card-text": [
+      '<a href="https://www.youtube.com/watch?v=dQsjAbZDx-4">Abba - Fernando</a>',
+      "",
+      ""
+    ],
+    "link": "d12pl.html"
+   },
+   {
+    "header": "song",
+    "title": "Abba",
+    "card-text": [
+      '<a href="https://www.youtube.com/watch?v=92cwKCU8Z5c">Abba - The Winner Takes It All</a>',
+      "",
+      ""
+    ],
+    "link": "d13pl.html"
+   },
+   {
+    "header": "song",
+    "title": "Elvis",
+    "card-text": [
+      '<a href="https://www.youtube.com/watch?v=qwlrUUyxg9c">Elvis Presley - Love Me Tender</a>',
+      "",
+      ""
+    ],
+    "link": "d14pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      '',
+      "",
+      ""
+    ],
+    "link": "d15pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      '',
+      "",
+      ""
+    ],
+    "link": "d16pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      '',
+      "",
+      ""
+    ],
+    "link": "d1pl.html"
    },
    {
     "header": "song",
@@ -117,7 +187,7 @@ var notes = [
       "",
       ""
     ],
-    "link": "d0pl.html"
+    "link": "d1pl.html"
    },
    {
     "header": "song",
@@ -127,7 +197,7 @@ var notes = [
       "",
       ""
     ],
-    "link": "d0pl.html"
+    "link": "d1pl.html"
    },
    {
     "header": "song",
@@ -137,7 +207,7 @@ var notes = [
       "",
       ""
     ],
-    "link": "d0pl.html"
+    "link": "d1pl.html"
    },
    {
     "header": "song",
@@ -147,33 +217,6 @@ var notes = [
       "",
       ""
     ],
-    "link": "d0pl.html"
+    "link": "d1pl.html"
    },
-   {
-    "header": "song",
-    "title": "",
-    "card-text": [
-      "",
-      "",
-      ""
-    ],
-    "link": "d0pl.html"
-   },
-   {
-    "header": "song",
-    "title": "",
-    "card-text": [
-      "",
-      "",
-      ""
-    ],
-    "link": "d0pl.html"
-   },
-     {
-    "header": "song",
-    "title": "",
-    "card-text": [""],
-    "link": ""
-   }
- 
 ]
