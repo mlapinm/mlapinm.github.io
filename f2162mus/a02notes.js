@@ -71,13 +71,33 @@ var notes = [
    },
    {
     "header": "song",
-    "title": "",
+    "title": "Abela",
     "card-text": [
-      "",
+      '<a href="https://www.youtube.com/watch?v=mc_QQIPQ2e8">One of us</a>',
+      "Owlyn Abela",
+      ""
+    ],
+    "link": "d07pl.html"
+   },
+   {
+    "header": "song",
+    "title": "Micucci",
+    "card-text": [
+      '<a href="https://www.youtube.com/watch?v=ooyqk_sZguk">Kate Micucci - The Happy Song</a>',
       "",
       ""
     ],
-    "link": ""
+    "link": "d08pl.html"
+   },
+   {
+    "header": "song",
+    "title": "Enya",
+    "card-text": [
+      '<a href="https://www.youtube.com/watch?v=7wfYIMyS_dI">Enya - Only Time</a>',
+      "",
+      ""
+    ],
+    "link": "d09pl.html"
    },
    {
     "header": "song",
@@ -87,7 +107,7 @@ var notes = [
       "",
       ""
     ],
-    "link": ""
+    "link": "d0pl.html"
    },
    {
     "header": "song",
@@ -97,7 +117,57 @@ var notes = [
       "",
       ""
     ],
-    "link": ""
+    "link": "d0pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "d0pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "d0pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "d0pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "d0pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "d0pl.html"
    },
      {
     "header": "song",
