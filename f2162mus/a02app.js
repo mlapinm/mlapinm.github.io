@@ -46,7 +46,7 @@ class Column{
   }
 
   setText(text){
-    this.cardText1.text(text)
+    this.cardText1.html(text)
     return this
   }
 
@@ -94,14 +94,32 @@ $(() => {
 
   for(let i = 0; i < countNotes; i++){
     if( i % 2 ==0){
+
+      let text1 = ''
+      let max = notes[i]["card-text"].length
+      for (let j = 0; j < max; j++){
+        text1 += '<p> '
+        text1 += notes[i]["card-text"][j]
+        += '</p>'
+      }
+      let text2 = ''
+      max = notes[i+1]["card-text"].length
+      for (let j = 0; j < max; j++){
+        text2 += '<p> '
+        text2 += notes[i+1]["card-text"][j]
+        += '</p>'
+      }
+
+
+
       let row = new Row()
       containerShow.append(row.builder())
       row.col1.setHeader(notes[i].header + " " + i)
-      .setTitle(notes[i].title).setText(notes[i]["card-text"][0])
+      .setTitle(notes[i].title).setText(text1)
       .setLink(linkPrev + notes[i].link)
 
       row.col2.setHeader(notes[i].header + " " + (i+1))
-      .setTitle(notes[i+1].title).setText(notes[i+1]["card-text"][0])
+      .setTitle(notes[i+1].title).setText(text2)
       .setLink(linkPrev + notes[i+1].link)
 
     }

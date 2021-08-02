@@ -44,7 +44,7 @@ var notes = [
     "title": "Bottle",
     "card-text": [
       "Jim Croce - Time In A Bottle",
-      "",
+      '<a href="https://www.youtube.com/watch?v=AnWWj6xOleY">Jim Croce -Time In A Bottle</a>',
       ""
     ],
     "link": "d04pl.html"
@@ -61,13 +61,13 @@ var notes = [
    },
    {
     "header": "song",
-    "title": "",
+    "title": "Enya",
     "card-text": [
-      "",
+      '<a href="https://www.youtube.com/watch?v=Wkk0puI6NfA">Enya - Wild Child</a>',
       "",
       ""
     ],
-    "link": ""
+    "link": "d06pl.html"
    },
    {
     "header": "song",

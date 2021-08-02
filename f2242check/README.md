@@ -1,269 +1,30 @@
 
 
 ```
+d06
+https://www.youtube.com/watch?v=Wkk0puI6NfA
+Enya - Wild Child (video)
+<a href="https://www.youtube.com/watch?v=Wkk0puI6NfA">Enya - Wild Child</a>
 
 
+https://www.youtube.com/watch?v=Rnil5LyK_B0
+Dean Martin - Let It Snow! Let It Snow! Let It Snow!
 
-Основы
 
-Я — из...
+https://www.youtube.com/watch?v=5HMBniu9Evg
+Lana Del Rey - Summertime (The Gershwin Version - Official Video)
 
-Знакомство
 
-Моя семья
 
-Места
+Abba - Fernando
+https://www.youtube.com/watch?v=dQsjAbZDx-4&list=RD92cwKCU8Z5c&index=17
 
-Вечеринка
+https://www.youtube.com/watch?v=92cwKCU8Z5c
+Abba - The Winner Takes It All (Official Video)
 
-Увлечения
 
-Ресторан
-
-Питомцы
-
-1
-
-Еда
-
-Романтика
-
-В пути
-
-Привычки
-
-Покупки
-
-Расписания
-
-Поездки
-
-Отель
-
-Город
-
-Универ
-
-Свидание
-
-Офис
-
-Рынок
-
-Праздник
-
-Переезд
-
-У доктора
-
-Пикник
-
-Мой город
-
-Отпуск
-
-Покупки 2
-
-Спорт
-
-Офис 2
-
-Зоопарк
-
-Музыка
-
-Погода
-
-На машине
-
-2
-
-Основы 2
-
-Одежда 2
-
-Моя семья2
-
-Связи 2
-
-to be=быть
-
-Фразы 2
-
-Животные 2
-
-Еда 3
-
-Мн. искл 2
-
-Мн.число 2
-
-THE 2
-
-НЕ быть 2
-
-Посчитаем
-
-Наст.вр. 2
-
-Ощущения 2
-
-Кем быть 2
-
-Наст.вр. 3
-
-Глаголы 2
-
-Наст.дл. 2
-
-Наст.пр. 2
-
-Прит.формы
-
-3
-
-Семья 4
-
-Вопросы 2
-
-Предлоги 2
-
-Наст.буд.2
-
-Going to 2
-
-Будущее 2
-
-Союзы 2
-
-Длит.вр.2
-
-Срав.ст.2
-
-Наречия 2
-
-Прош.вр.2
-
-Past 2
-
-Непр.гл.2
-
-Past 3
-
-Сравнение2
-
-Email 2
-
-Past: C+S
-
-Пр. сов. 2
-
-Пасс.залог
-
-Селфи 2
-
-Возвр.гл.2
-
-There is 2
-
-Погода 2
-
-Наст.сов.2
-
-Наст.сов.3
-
-Наст.сов.4
-
-Деньги 2
-
-Герундий 2
-
-Деньги 3
-
-Would 2
-
-4
-
-Причастия2
-
-Опред. 2
-
-Числа 2
-
-Предлоги 3
-
-Nouns 2
-
-Verbs 2
-
-Качества 2
-
-Картинки 2
-
-Словарь 2
-
-Люди 2
-
-Продукты 2
-
-Цвета 3
-
-Одежда 3
-
-Дом 2
-
-Тело 2
-
-Продукты 3
-
-Растения 2
-
-Ребёнок 2
-
-Здоровье 2
-
-Mammals 2
-
-Животные 3
-
-Словарь 3
-
-Герундий 3
-
-Герундий 4
-
-Предметы 2
-
-Люди 3
-
-Качества 3
-
-Здания 2
-
-География2
-
-Глаголы 3
-
-Вождение 2
-
-Мышление 2
-
-Политика 2
-
-Общение 2
-
-Цель 2
-
-О DUOLINGO
-SCHOOLS
-ПРИЛОЖЕНИЯ
-СПРАВКА
-ПРАВИЛА
-ВАКАНСИИ
-INVESTORS
-УСЛОВИЯ
-КОНФИДЕНЦИАЛЬНОСТЬ
-
+Elvis Presley "Love Me Tender" (October 28, 1956) on The Ed Sullivan Show
+https://www.youtube.com/watch?v=qwlrUUyxg9c
 
 
 
@@ -277,7 +38,7 @@ https://codepen.io/elad2412/pen/MZZVjw
 
 
 
-
+```
 
 
 
