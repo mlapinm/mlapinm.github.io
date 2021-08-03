@@ -26,15 +26,28 @@ $(() => {
         displayMenu()
     })
 
-    function addMainContent(name){
-        let text = '44 '
-        $(elms).each((i, v) => {
-            text += v.name
+    function addMainContent(names){
+        $('.main_content').empty();
+        names.forEach((name, i) => {
+            $(elms).each((i, v) => {
+                // text += v.name
+                let item = $("<div></div>")
+                if(name == v.name){
+                    item.text(v.name)
+                    $('.main_content').append(item)
+                }
+            })
+    
+
         })
 
 
+
+
+
+
         
-        $('.main_content').text('33 ' + name + ' 33 ' + text)
+        // $('.main_content').text('33 ' + name + ' 33 ' + text)
 
     }
 
@@ -59,7 +72,9 @@ $(() => {
                 if(checkedItems.length == 0){
                     $('.span_all').addClass('checked')
                 }
+                addMainContent(checkedItems)
             })
+            
         }
         $('.span_all').click((e) => {
             if($(e.target).hasClass('checked')){
@@ -73,6 +88,7 @@ $(() => {
                 $(e.target).addClass('checked')
             }
             $(".menu_header").text(checkedItems)
+            addMainContent(checkedItems)
         })
     }
 
@@ -80,7 +96,7 @@ $(() => {
     display_menu = false
     displayMenu()
     createMenu()
-    addMainContent('name1')
+    // addMainContent(['name1', 'name2'])
 
 
 
