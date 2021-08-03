@@ -33,7 +33,7 @@ $(() => {
                 // text += v.name
                 let item = $("<div></div>")
                 if(name == v.name){
-                    item.text(v.name)
+                    item.text(v.name + ' ' + v.tags.join(' '))
                     $('.main_content').append(item)
                 }
             })
@@ -58,6 +58,7 @@ $(() => {
             let item = $("<span></span>")
             item.text(items[i])
             $('.menu_content').append(item)
+            $('.menu_content').append(' ')
             item.click((e) => {
                 if($(e.target).hasClass('checked')){
                     $(e.target).removeClass('checked')
@@ -68,7 +69,7 @@ $(() => {
                     checkedItems.push(e.target.outerText)
                     $('.span_all').removeClass('checked')
                 }
-                $(".menu_header").text(checkedItems)
+                $(".menu_header").text(checkedItems.join(' '))
                 if(checkedItems.length == 0){
                     $('.span_all').addClass('checked')
                 }
@@ -87,7 +88,7 @@ $(() => {
                 })
                 $(e.target).addClass('checked')
             }
-            $(".menu_header").text(checkedItems)
+            $(".menu_header").text(checkedItems.join(' '))
             addMainContent(checkedItems)
         })
     }
@@ -96,9 +97,6 @@ $(() => {
     display_menu = false
     displayMenu()
     createMenu()
-    // addMainContent(['name1', 'name2'])
-
-
 
 
 
