@@ -5,7 +5,7 @@ let spls = [
 	  "box" : "a36"
   },
   {
-	  "quanity" : 1,
+	  "quanity" : 3,
 	  "name" : "name2",
 	  "box" : "a36"
   }
