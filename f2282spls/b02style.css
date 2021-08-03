@@ -1,0 +1,26 @@
+.menu_button {
+    position: absolute;
+    height: 1.6em;
+    width: 1.6em;
+    border-radius: 100%;
+    background-color: antiquewhite;
+    opacity: 0.8;
+    right: 1em;
+}
+
+.menu{
+    display: none;
+}
+
+
+.menu_content span{
+    /* background-color: aqua; */
+    border-radius: 0.6em;
+    border: 1px solid greenyellow;
+    padding: 0 4px 0 4px;
+}
+
+
+.checked {
+    background-color: greenyellow;
+}
