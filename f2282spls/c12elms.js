@@ -1,96 +1,282 @@
 let elms = [
   {
-	  "name" : "name1",
+	  "name" : "DC-10EWA",
 	  "tags" : [
 	  "VH",
+	  "led",
+	  "dip"
+	  ],
+	  "description" : [
+	  "led-line-10",
+	  "dip20"
+	  ],
+	  "image" : [
+	  "img0020.png",
 	  ""
 	  ],
 	  "links" : [
-	  "",
+	  "https://www.kingbrightusa.com/images/catalog/SPEC/DC10YWA.pdf",
+	  "https://roboshop.spb.ru/display/led-line-5",
+	  ""
+	  ],
+	  "price" : [
 	  "",
 	  ""
 	  ]
   },
   {
-	  "name" : "name2",
+	  "name" : "MC34063AP1",
 	  "tags" : [
-	  "controller",
+	  "da",
+	  "dip",
+	  "dc",
+	  "pwm"
+	  ],
+	  "description" : [
+	  "dip8",
+	  "3.0 V to 40 V",
+	  "1.5 A"
+	  ],
+	  "image" : [
+	  "",
 	  ""
 	  ],
 	  "links" : [
+	  "https://static.chipdip.ru/lib/204/DOC000204640.pdf",
 	  "",
+	  ""
+	  ],
+	  "price" : [
 	  "",
 	  ""
 	  ]
   },
   {
-	  "name" : "name3",
+	  "name" : "LM117",
 	  "tags" : [
-	  "VH",
+	  "dc",
+	  "da",
+	  ""
+	  ],
+	  "description" : [
+	  "1.25 V to 37 V",
+	  "1.5 A",
+	  "to-220",
+	  "pin3"
+	  ],
+	  "image" : [
+	  "https://static.chipdip.ru/lib/547/DOC005547826.jpg",
 	  ""
 	  ],
 	  "links" : [
+	  "https://static.chipdip.ru/lib/086/DOC003086981.pdf",
 	  "",
+	  ""
+	  ],
+	  "price" : [
 	  "",
 	  ""
 	  ]
   },
   {
-	  "name" : "name4",
+	  "name" : "LD1117",
 	  "tags" : [
-	  "VH",
+	  "da",
+	  "dc",
+	  "",
+	  ""
+	  ],
+	  "description" : [
+	  "1.25 V to 15 V",
+	  "0.8 A",
+	  "SOT-223",
+	  "pin4"
+	  ],
+	  "image" : [
+	  "",
 	  ""
 	  ],
 	  "links" : [
+	  "https://www.chipdip.ru/catalog/popular/ld1117",
 	  "",
+	  ""
+	  ],
+	  "price" : [
 	  "",
 	  ""
 	  ]
   },
   {
-	  "name" : "name5",
+	  "name" : "name",
 	  "tags" : [
-	  "VH",
+	  "",
+	  "",
+	  ""
+	  ],
+	  "description" : [
+	  "",
+	  ""
+	  ],
+	  "image" : [
+	  "",
 	  ""
 	  ],
 	  "links" : [
 	  "",
+	  "",
+	  ""
+	  ],
+	  "price" : [
 	  "",
 	  ""
 	  ]
   },
   {
-	  "name" : "name6",
+	  "name" : "name",
 	  "tags" : [
-	  "VH",
+	  "",
+	  "",
+	  ""
+	  ],
+	  "description" : [
+	  "",
+	  ""
+	  ],
+	  "image" : [
+	  "",
 	  ""
 	  ],
 	  "links" : [
 	  "",
+	  "",
+	  ""
+	  ],
+	  "price" : [
 	  "",
 	  ""
 	  ]
   },
   {
-	  "name" : "name7",
+	  "name" : "name",
 	  "tags" : [
-	  "VH",
+	  "",
+	  "",
+	  ""
+	  ],
+	  "description" : [
+	  "",
+	  ""
+	  ],
+	  "image" : [
+	  "",
 	  ""
 	  ],
 	  "links" : [
 	  "",
+	  "",
+	  ""
+	  ],
+	  "price" : [
 	  "",
 	  ""
 	  ]
   },
   {
-	  "name" : "name8",
+	  "name" : "name",
 	  "tags" : [
-	  "VH",
+	  "",
+	  "",
+	  ""
+	  ],
+	  "description" : [
+	  "",
+	  ""
+	  ],
+	  "image" : [
+	  "",
 	  ""
 	  ],
 	  "links" : [
 	  "",
+	  "",
+	  ""
+	  ],
+	  "price" : [
+	  "",
+	  ""
+	  ]
+  },
+  {
+	  "name" : "name",
+	  "tags" : [
+	  "",
+	  "",
+	  ""
+	  ],
+	  "description" : [
+	  "",
+	  ""
+	  ],
+	  "image" : [
+	  "",
+	  ""
+	  ],
+	  "links" : [
+	  "",
+	  "",
+	  ""
+	  ],
+	  "price" : [
+	  "",
+	  ""
+	  ]
+  },
+  {
+	  "name" : "name",
+	  "tags" : [
+	  "",
+	  "",
+	  ""
+	  ],
+	  "description" : [
+	  "",
+	  ""
+	  ],
+	  "image" : [
+	  "",
+	  ""
+	  ],
+	  "links" : [
+	  "",
+	  "",
+	  ""
+	  ],
+	  "price" : [
+	  "",
+	  ""
+	  ]
+  },
+  {
+	  "name" : "name",
+	  "tags" : [
+	  "",
+	  "",
+	  ""
+	  ],
+	  "description" : [
+	  "",
+	  ""
+	  ],
+	  "image" : [
+	  "",
+	  ""
+	  ],
+	  "links" : [
+	  "",
+	  "",
+	  ""
+	  ],
+	  "price" : [
 	  "",
 	  ""
 	  ]

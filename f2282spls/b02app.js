@@ -5,8 +5,12 @@ $(() => {
     let checkedItems = []
 
     function getItems(){
-        spls.forEach((v,i) => {
-            items.push(v.name)     
+        elms.forEach((v,i) => {
+            v.tags.forEach((v2, i2) => {
+                if(items.indexOf(v2) < 0 && v2.length>0){
+                    items.push(v2)     
+                }
+            })
         })
     }
 
@@ -26,29 +30,55 @@ $(() => {
         displayMenu()
     })
 
-    function addMainContent(names){
-        $('.main_content').empty();
-        names.forEach((name, i) => {
+    function addMainContent(tags){
+        let supplies = []
+        let text = ''
+        tags.forEach((tag, i) => {  //
             $(elms).each((i, v) => {
-                // text += v.name
-                let item = $("<div></div>")
-                if(name == v.name){
-                    item.text(v.name + ' ' + v.tags.join(' '))
-                    $('.main_content').append(item)
+                if(v.tags.indexOf(tag)>=0){
+                    if(supplies.indexOf(v.name)<0){
+                        supplies.push(v.name)
+                    }
                 }
             })
-    
-
         })
+        if(tags.length == 0){
 
-
-
-
-
-
-        
-        // $('.main_content').text('33 ' + name + ' 33 ' + text)
-
+            $(spls).each((i, v) => {
+                supplies.push(v.name)
+            })
+        }    
+        $('.main_content').empty();
+        let spl = null
+        let elm = null
+        supplies.forEach((v,i) => {
+            spl = null
+            elm = null
+            let item = $("<div></div>")
+            item.addClass('bordered')
+            $(spls).each((is, vs) => {
+                if(v == vs.name){
+                    spl = vs
+                }
+            })
+            $(elms).each((ie, ve) => {
+                if(v == ve.name){
+                    elm = ve
+                }
+            })
+            text = ''
+            if(spl){
+                text += spl.quanity + ' '
+                text += spl.box + ' '
+                text += spl.name + ' '
+            }
+            if(elm){
+                // text += elm.name + ' '
+                text += elm.description + ' '
+            }
+            item.text(text)
+            $('.main_content').append(item)
+        })
     }
 
 
@@ -97,6 +127,7 @@ $(() => {
     display_menu = false
     displayMenu()
     createMenu()
+    addMainContent([])
 
 
 

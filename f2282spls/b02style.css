@@ -9,12 +9,16 @@ body{
     width: 1.6em;
     border-radius: 100%;
     background-color: antiquewhite;
-    opacity: 0.8;
+    opacity: 0.6;
     right: 1em;
 }
 
 .menu{
     display: none;
+}
+
+.bordered{
+    border: 1px dotted;
 }
 
 
