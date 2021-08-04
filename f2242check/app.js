@@ -22,7 +22,8 @@ $(() => {
     checkedId = "cel" + idNum
 
     text = $("#cel" + idNum).text()
-    $('.log1').text(idNum + ' ' + text)
+    $('.log1').text(idNum)
+    $('.log2').text(text)
 
 
 
@@ -71,9 +72,10 @@ $(() => {
                     idNum = match[1]
                 }
             
-                let text = $("#" + id).text()
-                $('.log1').text(idNum + ' ' + text)
-
+                text = $("#cel" + idNum).text()
+                $('.log1').text(idNum)
+                $('.log2').text(text)
+            
                 checkedId = id
 
                 document.cookie = 'key1='+ id + "cel;"

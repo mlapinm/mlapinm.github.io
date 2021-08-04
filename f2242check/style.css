@@ -5,7 +5,12 @@ body {
 }
 
 .log1 {
-    font-size: 1.2em;
+    font-size: 1em;
+    padding-left: 0.8em;
+}
+
+.log2 {
+    font-size: 2em;
     padding-left: 0.8em;
 }
 
@@ -38,12 +43,14 @@ img{
 }
 
 .main-header{position:-webkit-sticky; 
+    text-align: center;
     position:sticky; 
     top:0;
     background:#aaa;
 }
 
 .main-footer{
+    text-align: center;
     position:-webkit-sticky; 
     position:sticky; 
     bottom:0; 
@@ -52,9 +59,9 @@ img{
 }
 
 .stroke {
-    color: lightgreen;
-    font: 1.6em Arial, sans-serif;
-        text-shadow: black 1px 1px 0, black -1px -1px 0, 
-                 black -1px 1px 0, black 1px -1px 0;
+    color: black;
+    font: 5em Arial, sans-serif;
+        text-shadow: lightgreen 2px 2px 0, lightgreen -1px -1px 0, 
+        lightgreen -1px 1px 0, lightgreen 1px -1px 0;
 
    }
