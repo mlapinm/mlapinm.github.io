@@ -47,6 +47,7 @@ img{
     position:sticky; 
     top:0;
     background:#aaa;
+    opacity: 0.5;
 }
 
 .main-footer{
@@ -60,7 +61,7 @@ img{
 
 .stroke {
     color: black;
-    font: 5em Arial, sans-serif;
+    font: 6em Arial, sans-serif;
         text-shadow: lightgreen 2px 2px 0, lightgreen -1px -1px 0, 
         lightgreen -1px 1px 0, lightgreen 1px -1px 0;
 
