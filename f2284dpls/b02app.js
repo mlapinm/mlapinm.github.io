@@ -74,7 +74,6 @@ $(() => {
             }
             if(elm){
                 // text += elm.name + ' '
-                text += elm.tags + ' '
                 text += elm.description + ' '
             }
             item.text(text)

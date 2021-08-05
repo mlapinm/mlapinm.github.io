@@ -1,0 +1,40 @@
+body{
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu_button {
+    position: absolute;
+    height: 1.6em;
+    width: 1.6em;
+    border-radius: 100%;
+    background-color: antiquewhite;
+    opacity: 0.6;
+    right: 1em;
+}
+
+.menu{
+    display: none;
+}
+
+.bordered{
+    border: 1px dotted;
+}
+
+
+
+.menu_content span{
+    /* background-color: aqua; */
+    border-radius: 0.6em;
+    border: 1px solid greenyellow;
+    padding: 0 4px 0 4px;
+}
+
+
+.checked {
+    background-color: greenyellow;
+}
+
+.main_content::nth-child(n+2){
+   background-color: aqua;
+}
