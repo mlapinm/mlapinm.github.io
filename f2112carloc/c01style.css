@@ -8,9 +8,14 @@ audio{
     display: none;
 }
 .menu_button {
+    text-align: center;
+    padding-top: 0.4em;
+    font-family: Arial;
+    color: burlywood;
+
     position: absolute;
     height: 1.6em;
-    width: 1.6em;
+    width: 1.9em;
     border-radius: 100%;
     background-color: antiquewhite;
     opacity: 0.4;

@@ -141,10 +141,12 @@ $(() => {
             butText = "Play"
             pause = false
             $('.menu_button').css('background-color','antiquewhite')
+            $('.menu_button').text('>')
         }else{
             butText = "Pause"
             pause = true
             $('.menu_button').css('background-color','aqua')
+            $('.menu_button').text('||')
         }
         $('.btn_pause').text(butText)
         // $('.log5').text(33)
