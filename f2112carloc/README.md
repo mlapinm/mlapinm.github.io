@@ -2,6 +2,13 @@
 
 ```
 
+
+https://learn.javascript.ru/bubbling-and-capturing
+
+stopPropagation()
+
+https://qna.habr.com/q/229700
+
 "<p><a href=''></a></p>"
 c10
 "<p><a href='https://www.youtube.com/watch?v=vM4RgZ0yeic'>Thumbelina and Tom Thumb</a></p>"

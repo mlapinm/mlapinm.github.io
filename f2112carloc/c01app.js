@@ -134,9 +134,21 @@ $(() => {
         mNext()
     })
 
-    $('.menu_button').click(()=>(
-        $('.log5').text(33)
-    ))
+    $('.menu_button').click((e)=>{
+        e.stopPropagation()
+        let butText = $('.btn_pause').text()
+        if (butText == "Pause"){
+            butText = "Play"
+            pause = false
+            $('.menu_button').css('background-color','antiquewhite')
+        }else{
+            butText = "Pause"
+            pause = true
+            $('.menu_button').css('background-color','aqua')
+        }
+        $('.btn_pause').text(butText)
+        // $('.log5').text(33)
+    })
 
 })
 
