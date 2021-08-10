@@ -7,6 +7,17 @@ audio{
     /* visibility: hidden; */
     display: none;
 }
+.menu_button {
+    position: absolute;
+    height: 1.6em;
+    width: 1.6em;
+    border-radius: 100%;
+    background-color: antiquewhite;
+    opacity: 0.4;
+    right: 1em;
+    bottom: 1em;
+    /* z-index: 5; */
+}
 
 .container{
     position: relative;
@@ -24,17 +35,17 @@ audio{
     float: left;
     width: 50%;
     height: 100%;
-    /* background-color: blanchedalmond; */
+
 }
 .panel2{
     float: left;
     width: 50%;
     height: 100%;
-    /* background-color: blanchedalmond; */
+
 }
 
 .container1 {
-    position: static;
+    position: relative;
     left: 0px;
     top: 0px;
     color: blue;
