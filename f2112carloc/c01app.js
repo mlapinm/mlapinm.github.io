@@ -60,8 +60,7 @@ $(() => {
     show()    
 
 
-
-    $('.btn_prev').click(() => {
+    function mPrev(){
         if(current > 0){
             current -= 1
          }else{
@@ -71,25 +70,9 @@ $(() => {
         show()              
         playPart(items[current]['time'][0], items[current]['time'][1])
         $('.log3').text(1)
-    })
-    
-    $('.btn_repeat').click(() => {
+    }
 
-        // show()
-      
-        playPart(items[current]['time'][0], items[current]['time'][1])
-        $('.log4').text(items[current]['time'][0])
-        $('.log3').text(2)
-    })
-
-    $('.container1').click(() => {
-        playPart(items[current]['time'][0], items[current]['time'][1])
-        $('.log4').text(items[current]['time'][0])
-        $('.log3').text(2)
-    })
-
-    $('.btn_next').click(() => {
-
+    function mNext(){
         if(current < count - 1){
             current += 1
          }else{
@@ -101,6 +84,32 @@ $(() => {
          playPart(items[current]['time'][0], items[current]['time'][1])
         //  $('.log4').text(" " + current + " " +items[current]['time'][0])
          $('.log3').text(3)
+    }
+
+    $('.btn_prev').click(() => {
+        mPrev()
+    })
+    
+    function mRepeat(){
+        playPart(items[current]['time'][0], items[current]['time'][1])
+        $('.log4').text(items[current]['time'][0])
+        $('.log3').text(2)
+    }
+
+    $('.btn_repeat').click(() => {
+
+        // show()
+        mRepeat()
+      
+    })
+
+    $('.container1').click(() => {
+        mRepeat()
+    })
+
+    $('.btn_next').click(() => {
+        mNext()
+
     })
 
     $('.btn_pause').click(() => {
@@ -114,6 +123,13 @@ $(() => {
         }
         $('.btn_pause').text(butText)
 
+    })
+
+    $('.panel1').click(()=>{
+        mPrev()
+    })
+    $('.panel2').click(()=>{
+        mNext()
     })
 
 })
