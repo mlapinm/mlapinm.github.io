@@ -279,12 +279,6 @@
 	 "link": ""
 	},
     {
-	 "header": "",
-	 "title": "",
-	 "card-text": [""],
-	 "link": ""
-	},
-    {
 	 "header": "supplies",
 	 "title": "supplies",
 	 "card-text": ["sclad"],
@@ -318,6 +312,12 @@
 	 "title": "topics",
 	 "card-text": [""],
 	 "link": "https://mlapinm.github.io/f2242check/"
+	},
+    {
+	 "header": "topics2",
+	 "title": "topics2",
+	 "card-text": ["with content"],
+	 "link": "https://mlapinm.github.io/f2252check/"
 	},
     {
 	 "header": "codpenio",
