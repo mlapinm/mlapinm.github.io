@@ -12,8 +12,9 @@ $(() => {
     pause = true
 
     function show(){
-        $('.log1').text(''+ count + ' ' + items[current]['en'])
+        $('.log1').text(items[current]['en'])
         $('.log2').text(items[current]['ru'])
+        $('.log4').text(current)
     }
 
     function getCurrent(curTime){
@@ -73,7 +74,7 @@ $(() => {
     }
 
     function mNext(){
-        if(current < count - 1){
+        if(current < count - 2){
             current += 1
          }else{
             current = 0
@@ -92,8 +93,8 @@ $(() => {
     
     function mRepeat(){
         playPart(items[current]['time'][0], items[current]['time'][1])
-        $('.log4').text(items[current]['time'][0])
-        $('.log3').text(2)
+        // $('.log4').text(items[current]['time'][0])
+        // $('.log3').text(2)
     }
 
     $('.btn_repeat').click(() => {
@@ -112,30 +113,7 @@ $(() => {
 
     })
 
-    $('.btn_pause').click(() => {
-        let butText = $('.btn_pause').text()
-        if (butText == "Pause"){
-            butText = "Play"
-            pause = false
-            $('.menu_button').css('background-color','antiquewhite')
-        }else{
-            butText = "Pause"
-            pause = true
-            $('.menu_button').css('background-color','aqua')
-        }
-        $('.btn_pause').text(butText)
-
-    })
-
-    $('.panel1').click(()=>{
-        mPrev()
-    })
-    $('.panel2').click(()=>{
-        mNext()
-    })
-
-    $('.menu_button').click((e)=>{
-        e.stopPropagation()
+    function mPause(){
         let butText = $('.btn_pause').text()
         if (butText == "Pause"){
             butText = "Play"
@@ -149,7 +127,35 @@ $(() => {
             $('.menu_button').text('||')
         }
         $('.btn_pause').text(butText)
-        // $('.log5').text(33)
+    }
+
+    $('.btn_pause').click(() => {
+        mPause()
+
+    })
+
+    $('.panel1').click(()=>{
+        mPrev()
+    })
+    $('.panel2').click(()=>{
+        mNext()
+    })
+    $('.panel1').mousedown(() => {
+        $('.panel1').css('background-color','beige')
+    })
+    $('.panel1').mouseup(() => {
+        $('.panel1').css('background-color','')
+    })
+    $('.panel2').mousedown(() => {
+        $('.panel2').css('background-color','beige')
+    })
+    $('.panel2').mouseup(() => {
+        $('.panel2').css('background-color','')
+    })
+
+    $('.menu_button').click((e)=>{
+        e.stopPropagation()
+        mPause()
     })
 
 })

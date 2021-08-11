@@ -1,12 +1,18 @@
 
+
+
 body {
     font-size: 1.8em;
+    font-family: sans-serif;
+    line-height: 0.9;
+
 }
 
 audio{
     /* visibility: hidden; */
     display: none;
 }
+
 .menu_button {
     text-align: center;
     padding-top: 0.4em;
@@ -41,11 +47,16 @@ audio{
     width: 50%;
     height: 100%;
 
+    opacity: 0.4;
+    border-radius: 10%;
+
 }
 .panel2{
     float: left;
     width: 50%;
     height: 100%;
+    opacity: 0.4;
+    border-radius: 10%;
 
 }
 
