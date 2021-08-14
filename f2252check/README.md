@@ -5,7 +5,7 @@
 
 
 
-Как на самом деле работает position: sticky в CSS
+РљР°Рє РЅР° СЃР°РјРѕРј РґРµР»Рµ СЂР°Р±РѕС‚Р°РµС‚ position: sticky РІ CSS
 https://medium.com/web-standards/sticky-bc7ff7088693
 
 https://codepen.io/elad2412/pen/QYLEdK
