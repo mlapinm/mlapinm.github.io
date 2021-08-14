@@ -21,6 +21,88 @@ var items = [
 	"level" : "1",
 	"topic" : [
 	"моя семья"
+	],
+	len:[0,0],
+	"en":[
+"Yes I am also a student.",
+
+"My dad is not a professor ",
+
+"Yes my sister is a professor ",
+
+"Sveta is not my mom",
+
+"Ben is not a student",
+
+"No my dad is not from America ",
+
+"My sister is from Russia",
+
+"This is Maria my mom ",
+
+"My dad Tom Hanks is famous",
+
+"This is Michael Jordan he's famous ",
+
+"My mom is from Kazakhstan and My dad is from Russia",
+
+"No I'm not a professor ",
+
+"Yes I am also a student ",
+
+"No Maksim is not a student",
+
+"My dad is from Belarus and my mom is from America",
+
+"My brother is not a student",
+
+"My mom is from Kazakhstan ",
+
+"My sister is a student.",
+
+"",
+
+	""
+	],
+	"ru":[
+"Да я тоже студент",
+
+" мой папа не профессор",
+
+" Да моя сестра профессора",
+
+" Света не моя мама",
+
+"Бен не студент",
+
+" Нет мой папа не из Америки",
+
+" моя сестра из России",
+
+" это Мария Моя мама",
+
+" мой папа Том Хэнкс знаменитый",
+
+" Это Майкл Джордан он известный",
+
+" Моя мама из Казахстана а мой папа из России",
+
+" Нет я не профессор",
+
+" Да я тоже студент",
+
+" нет Максим не студент",
+
+" Мой папа из Белоруссии А мама из Америки",
+
+" мой брат не студент",
+
+" Моя мама из Казахстана",
+
+" моя сестра студентка",
+
+"",
+	""
 	]
 },
 {
