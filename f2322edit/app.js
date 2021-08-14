@@ -57,9 +57,9 @@ $(() => {
     let l1 = []
     for(let i = 0; i<count;i++){
       if(i%2 == 0){
-        l0.push('<p>'+l[i]+'</p>')
+        l0.push('<p>"'+l[i]+'",</p>')
       }else{
-        l1.push('<p>'+l[i]+'</p>')
+        l1.push('<p>"'+l[i]+'",</p>')
       }
     }
     let text0 = l0.join('\n')

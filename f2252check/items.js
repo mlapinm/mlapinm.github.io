@@ -682,11 +682,219 @@ var items = [
 	],
 	len:[0,0],
 	"en":[
-	""
+"All my parents earned they spent on us the children",
+
+"Who pays their monthly bills ",
+
+"my salary has not increased for nine years ",
+
+"We were saving money to take a mortgage. ",
+
+"Last year the number of jobs in Canada increased again",
+
+"we were paid weekly in cash ",
+
+"it will cost you two hundred thousand dollars ",
+
+"She spent my monthly salary in one week",
+
+"A salary is the money you earn ",
+
+"His monthly salary is fifty thousand rubles",
+
+"We have to spend only at least two hundred dollars only on books",
+
+"Money has no smell",
+
+"",
+
+"I spend more than her",
+
+"I feed my little one every three to four hours",
+
+"I spent my annual salary to buy this house",
+
+"We are saving money to buy a house",
+
+"She will earn a lot if she becomes an accountant",
+
+"Those cashiers count cash too slowly",
+
+"He doesn't count money",
+
+"One day I will earn enough to not work any longer",
+
+"are you paid weekly or monthly",
+
+"We bought some fresh fruit yesterday",
+
+"I paid so much for this phone and it does not work",
+
+"",
+
+"this year I will earn more than I earned last year",
+
+"His son spends too much money",
+
+"She spends all she earns on movies",
+
+"I received my salary in dollars",
+
+"Money won't make him happy",
+
+"How much does it cost to buy a house here",
+
+"that year I earned more money than I have ever earned before",
+
+"In five years I will earn twice as much as I earn today",
+
+"We are saving money to buy a house",
+
+"We must save white bears",
+
+"My income increases",
+
+"This tax will be decreased next year",
+
+"Did she take a mortgage",
+
+"One of my relatives is a tax accountant",
+
+"A Pound or two will be enough",
+
+"Accountants usually earn more than cashiers",
+
+"He doesn't count money",
+
+"She has a well paid job",
+
+"They work a lot but earn very little ",
+
+"We were bought our own house when I was forteen",
+
+"The book costs fifteen dollars",
+
+"He buys old books and pays good money for them",
+
+"I gave you a dollar give me 20 cents back",
+
+"We cannot spend two thousand dollars on a toy.",
+
+"I gave you a dollar. Give me twenty cents back.",
+
+"We receive our salary once a month.",
+
+"",
+
+"",	""
 	],
 	"ru":[
-	"",
-	"",
+"всё что мои родители зарабатывали они тратили на нас детей",
+
+"Кто оплачивает их ежемесячные счета",
+
+"моя зарплата не повышалась уже девять лет",
+
+"Мы копили деньги чтобы взять ипотеку",
+
+"В Прошлом году число рабочих мест в Канаде увеличилось снова. ",
+
+"нам платили еженедельно наличными",
+
+"Это будет стоить вам двести тысяч долларов",
+
+"Она потратила мою месячную зарплату за одну неделю",
+
+"Зарплата это те деньги которые ты зарабатываешь",
+
+"Его месячная зарплата составляет пятьдесят тысяч рублей",
+
+"Мы должны потратить как минимум двести долларов только на книги",
+
+"Деньги не пахнут",
+
+"",
+
+"Я трачу больше её",
+
+"Я кормлю моего малыша каждые три четыре часа",
+
+"Я потратил свою годовую зарплату чтобы купить этот дом",
+
+"Мы копим деньги на покупку дома",
+
+"Она будет зарабатывать много если она станет бухгалтером",
+
+"Те кассиры считают наличные слишком медленно ",
+
+"он не считает деньги",
+
+"Однажды я заработаю достаточно чтобы больше не работать",
+
+"Вам платят еженедельно или ежемесячно",
+
+"Мы купили несколько свежих фруктов вчера ",
+
+"Я заплатил так много за этот телефон а он не работает",
+
+"",
+
+"в этом году я заработаю больше чем в прошлом году",
+
+"Его сын тратит слишком много денег вы ",
+
+"она тратит все свои деньги на фильмы",
+
+"Я получаю зарплату в долларах",
+
+"Деньги не сделают его счастливым",
+
+"Сколько стоит купить дом здесь",
+
+"В этом году я заработал больше чем когда-либо раньше",
+
+"Через пять лет я буду зарабатывать в два раза больше чем Я зарабатываю сегодня",
+
+"Мы копим деньги чтобы купить дом",
+
+"Мы должны спасти белых медведей",
+
+"Мой доход увеличивается",
+
+"Этот налог будет уменьшен в следующем году",
+
+"Она взяла ипотеку",
+
+"Один из моих родственников налоговый бухгалтер",
+
+" фунта или двух будет достаточно",
+
+"Бухгалтеры обычно зарабатывают больше чем кассиры",
+
+"Он не считает денег",
+
+"У неё хорошо оплачиваемая работа",
+
+"Они работают много но зарабатывали очень мало",
+
+"Мы купили наш собственный дом Когда мне было четырнадцать",
+
+"Книга стоит пятнадцать долларов",
+
+"Он покупает старые книги и платит хорошие деньги за них",
+
+"Я дал тебе доллара дай мне двадцать центов обратно",
+
+"Мы не можем потратить 2000 долларов на игрушку ",
+
+"Я дала тебе доллар. Дай мне двадцать центов назад.",
+
+"Мы получаем нашу зарплату раз в месяц",
+
+"",
+
+"",
+
 	""
 	]
 },
