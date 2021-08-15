@@ -987,11 +987,121 @@ var items = [
 	],
 	len:[0,0],
 	"en":[
+"our hobbies",
+
+"No, swimming is not prohibited here.",
+
+"No smoking is not allowed here ",
+
+"Please, avoid talking loudly!",
+
+"Playing for money was prohibited last year.",
+
+"Smoking is prohibited in all our trains.",
+
+"You should avoid asking too many questions ",
+
+"Yes, walking is allowed, and running too.",
+
+"For me it means being able to think for yourself.",
+
+"to live a long and healthy life avoid smoking",
+
+"I like being able to earn my own money.",
+
+"no smoking is not allowed here",
+
+"",
+
+"Being healthy is worth any money.",
+
+"This book is worth reading.",
+
+"The movie was worth watching.",
+
+"We are tired of waiting.",
+
+"Lately, she has been sending me hundreds of messages a day.",
+
+"She has been spending all her money on horses lately.",
+
+"She has been waiting since nine. Will you find time for her today?",
+
+"This week, he has been spending all his time with me.",
+
+"Is his new book worth reading",
+
+"Since last May, he has been donating only five dollars a month.",
+
+"He has been talking more and more about it lately.",
+
+"For me it means being able to think for yourself.",
+
+"our hobbies",
+
+"Is swimming allowed there",
+
+"",
+
 	""
 	],
 	"ru":[
-	"",
-	"",
+"Наши увлечения.",
+
+"Нет, купание не запрещено здесь.",
+
+"Нет, курение не разрешено здесь.",
+
+"Пожалуйста, избегайте разговаривать громко!",
+
+"Играть на деньги было запрещено в прошлом году.",
+
+"Курение запрещено во всех наших поездах",
+
+"Тебе следует избегать задавать слишком много вопросов.",
+
+"Да ходьба разрешена и бег тоже",
+
+"Для меня это означает быть способным думать за себя.",
+
+"Чтобы прожить долгую и здоровую жизнь, избегайте курения!",
+
+"Мне нравится быть в состоянии зарабатывать свои собственные деньги.",
+
+"Нет, курение не разрешено здесь.",
+
+"",
+
+"Быть здоровым стоит любых денег ",
+
+"Эта книга стоит прочтения",
+
+"Фильм стоил просмотра ",
+
+"Мы устали от ожидания ",
+
+"В последнее время она шлёт мне сотни сообщений в день ",
+
+"В последнее время она тратит все свои деньги на лошадей ",
+
+"Она ждёт с девяти. Вы найдёте время для неё сегодня?",
+
+"На этой неделе он проводит всё своё время со мной.",
+
+"Его новая книга стоит прочтения?",
+
+"С прошлого мая он жертвует лишь пять долларов в месяц.",
+
+"Он говорит всё больше и больше об этом в последнее время.",
+
+"Для меня это означает быть способным думать за себя.",
+
+"Наши увлечения.",
+
+"Купание разрешено там?",
+
+"",
+
 	""
 	]
 },
@@ -1002,11 +1112,261 @@ var items = [
 	],
 	len:[0,0],
 	"en":[
+"The bank is not open on Saturday.",
+
+"She has a bank account",
+
+"It cost them a lot of money.",
+
+"She has a bank account.",
+
+"they buy any currency ",
+
+"What is your current annual income?",
+
+"",
+
+"the dress cost us five dollars",
+
+"It cost him his life.",
+
+"The current exchange rate is less than two cents for one ruble.",
+
+"Это стоило им многих денег.",
+
+"How many new bank accounts did they open last year?",
+
+"the dress cost us five dollars",
+
+"What was the current exchange rate that day",
+
+"It cost him his life.",
+
+"How many new bank accounts did they open last year?",
+
+"He sold his car for five thousand dollars.",
+
+"I am in debt to you",
+
+"They used our credit card and spent all the money.",
+
+"She left us only debts.",
+
+"All twelve houses will be sold to one buyer.",
+
+"I want to pay with my credit card.",
+
+"They are sellers of old clothes.",
+
+"Last year, we sold fourteen houses to thirteen buyers.",
+
+"The toy was sold yesterday for five dollars and fifty four cents.",
+
+"There is nothing better than a fresh orange.",
+
+"The expenses are crazy.",
+
+"All the other rooms are too expensive.",
+
+"This dress is not for sale.",
+
+"The sale starts now.",
+
+"She likes the other house more.",
+
+"We sold nothing yesterday, we must sell something today.",
+
+"I did not want to work in sales.",
+
+"Lately, he has been spending all his free time with his sons.",
+
+"We do not sell our cats, we give them away for free.",
+
+"This phone is expensive and that other one is cheap.",
+
+"They sell rubles, dollars, and other currencies.",
+
+"",
+
+"I need two coins.",
+
+"What is the price of this house?",
+
+"What is the budget for the project?",
+
+"Is it a coin from Asia?",
+
+"I will donate all my money",
+
+"He is going to donate fifteen percent of the profit.",
+
+"That is sixty percent of our budget.",
+
+"Your budget will be decreased next year.",
+
+"We cannot give away all our profit.",
+
+"Our annual profit has increased by eighty percent in the last ten years.",
+
+"I donate two percent of my salary every month.",
+
+"Our budget has been increased, now we can spend more.",
+
+"You should ask for a better price",
+
+"She has a bank account.",
+
+"It cost them a lot of money.",
+
+"",
+
+"I am here to pay a debt.",
+
+"My brother is a seller of fruit.",
+
+"I am not going to sell anything to this buyer.",
+
+"We are sellers.",
+
+"I ate nothing between lunch and dinner.",
+
+"He is a seller.",
+
+"She visits other countries.",
+
+"he sells nothing there",
+
+"",
+
 	""
 	],
 	"ru":[
-	"",
-	"",
+"Банк не открыт в субботу",
+
+"У неё есть банковский счёт.",
+
+"это стоило им много денег",
+
+"У неё есть банковский счёт ",
+
+"Они покупают любую валюту.",
+
+"Какой ваш текущий годовой доход",
+
+"",
+
+"Платье стоило нам пять долларов.",
+
+"это стоило ему жизни ",
+
+"Текущий обменный курс - меньше двух центов за один рубль.",
+
+" it Cost them a lot of money",
+
+"Сколько новых банковских счетов они открыли в прошлом году?",
+
+"Платье стоило нам пять долларов.",
+
+"Каков был текущий обменный курс в тот день?",
+
+"Это стоило ему жизни.",
+
+"Сколько новых банковских счетов они открыли в прошлом году?",
+
+"Он продал машину за пять тысяч долларов",
+
+"Я у тебя в долгу.",
+
+"Они использовали нашу кредитную карту и потратили все деньги.",
+
+"она оставила нам только долги",
+
+"Все двенадцать домов будут проданы одному покупателю.",
+
+"Я хочу расплатиться моей кредитной картой.",
+
+"Они продавцы старой одежды ",
+
+"В прошлом году Мы продали четырнадцать домов тринадцати покупателям",
+
+"Игрушка была продана вчера за пять долларов и пятьдесят четыре цента.",
+
+"Нет ничего лучше, чем свежий апельсин.",
+
+"расходы сумасшедшие",
+
+"Все остальные комнаты - слишком дорогие.",
+
+"Это платье не для продажи.",
+
+"Распродажа начинается сейчас",
+
+"Ей больше нравится другой дом.",
+
+"Мы не продали ничего вчера, мы обязаны продать что-нибудь сегодня.",
+
+"Я не хотела работать в продажах.",
+
+"В последнее время он проводит всё своё свободное время со своими сыновьями.",
+
+"Мы не продаем наших кошек мы отдаем их бесплатно ",
+
+"Этот телефон - дорогой, а тот другой - дешёвый.",
+
+"Они продают рубли, доллары и другие валюты.",
+
+"",
+
+"Мне нужны две монеты.",
+
+"Какова цена этого дома ",
+
+"Какой бюджет для проекта ",
+
+"Это монета из азии",
+
+"Я пожертвую все свои деньги.",
+
+"Он собирается пожертвовать пятнадцать процентов от прибыли.",
+
+"Это - шестьдесят процентов от нашего бюджета.",
+
+"Ваш бюджет будет уменьшен в следующем году.",
+
+"Мы не можем отдать всю нашу прибыль ",
+
+"Наша годовая прибыль увеличилась на восемьдесят процентов за последние десять лет.",
+
+"Я жертвую два процента от своей зарплаты каждый месяц.",
+
+"Наш бюджет был увеличен, теперь мы можем тратить больше.",
+
+"Тебе следует попросить получше цену.",
+
+"У неё есть банковский счёт.",
+
+"Это стоило им многих денег.",
+
+"",
+
+"Я здесь, чтобы выплатить долг.",
+
+"Мой брат продавец фруктов ",
+
+"Я не собираюсь продавать что-либо этому покупателю.",
+
+"Мы продавцы.",
+
+" Я ничего не ем между обедом и ужином",
+
+"Он продавец.",
+
+"Она посещает другие страны.",
+
+"Он не продаёт ничего там.",
+
+"",
+
 	""
 	]
 },
