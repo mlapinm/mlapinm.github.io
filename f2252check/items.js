@@ -1374,12 +1374,181 @@ var items = [
 	"level" : "4",
 	"topic" : [
 	"Would 2"
+	],
+	len:[0,0],
+	"en":[
+"I hoped that she would married my brother ",
+
+"When I earn enough money I will buy new house ",
+
+"Would you like to go there with me ",
+
+"That would decrease all the prices at once.",
+
+"We will watch it together when your sister comes home.",
+
+"They thought that I would allow them to take my money.",
+
+"It would mean that she loves him.",
+
+"She didn't expect that I would come.",
+
+"I did not think that she would allow them to live together.",
+
+"When you see her next time, do not wait too long, say something!",
+
+"If we had more money, we would increase our savings.",
+
+"You mean a lot to me.",
+
+"My parents hoped that we would become friends.",
+
+"That would decrease his chances.",
+
+"If I could, I would decrease the price for you, but I can't.",
+
+"I did not expect that he would help.",
+
+"If she came, it would mean a lot to me.",
+
+"I hoped that they would allow me.",
+
+"I would increase his salary if he worked better.",
+
+"We did not expect that the toy would be so expensive.",
+
+"I would like to ask him two questions.",
+
+"My nephew will not wait if you do not come on time.",
+
+"If you wait here, he will come and call you.",
+
+"I will come as soon as your mother allows me.",
+
+"She ran ahead and stopped to wait for me.",
+
+"I think I would prefer that.",
+
+"I will tell him to call you when he comes home.",
+
+"If the teacher allows us, we will all go home.",
+
+"She will not come unless he asks her.",
+
+"I never hoped that she would say yes ",
+
+"When she becomes my wife I will love her even more.",
+
+"I would not like to be his friend.",
+
+"When I earn enough money, I will buy a new house.",
+
+"That would mean that they loved each other.",
+
+"They hoped that I would give them money.",
+
+"If salaries increased, prices would increase too.",
+
+"I would like to ask him two questions.",
+
+"",
+
+	"",
+	""
+	],
+	"ru":[
+"Я надеялась, что она выйдет замуж за моего брата.",
+
+"Когда я заработаю достаточно денег, я куплю новый дом.",
+
+"Ты бы хотела пойти туда со мной?",
+
+"Это бы понизило все цены одновременно.",
+
+"Мы посмотрим его вместе, когда твоя сестра придёт домой.",
+
+"Они думали, что я позволю им взять мои деньги.",
+
+"Это бы означало, что она любит его.",
+
+"Она не ожидала, что я приду.",
+
+"Я не думал, что она позволит им жить вместе.",
+
+"Когда ты увидишься с ней в следующий раз, не жди слишком долго, скажи что-нибудь!",
+
+"Если бы у нас было больше денег, мы бы увеличили наши сбережения.",
+
+"Ты для меня многое значишь.",
+
+"Мои родители надеялись, что мы станем друзьями.",
+
+"Это бы понизило его шансы.",
+
+"Если бы я мог, я бы понизил цену для вас, но я не могу.",
+
+"Я не ожидал что он поможет ",
+
+"Если бы она пришла, это бы значило многое для меня.",
+
+"Я надеялась, что они позволят мне.",
+
+"Я бы повысил его зарплату, если бы он работал лучше.",
+
+"Мы не ожидали, что игрушка будет такой дорогой.",
+
+"Я бы хотел задать ему два вопроса.",
+
+"Мой племянник не будет ждать, если ты не придёшь вовремя.",
+
+"Если вы подождёте здесь, то он придёт и позовёт вас.",
+
+"Я приду, как только твоя мать разрешит мне.",
+
+"Она убежала вперёд и остановилась, чтобы подождать меня.",
+
+"Я думаю, я предпочёл бы это.",
+
+"Я скажу ему позвонить тебе, когда он придёт домой.",
+
+"Если учитель разрешит нам, мы все пойдём домой.",
+
+"Она не придёт, если только он не попросит её.",
+
+"Я никогда не надеялся, что она скажет да.",
+
+"Когда она станет моей женой, я буду любить её даже больше.",
+
+"Мне бы не хотелось быть его другом.",
+
+"Когда я заработаю достаточно денег я куплю новый дом ",
+
+"Это бы означало, что они любили друг друга.",
+
+"Они надеялись, что я дам им денег.",
+
+"Если бы зарплаты увеличились, цены бы увеличились тоже.",
+
+"Я бы хотел задать ему два вопроса.",
+
+"",
+	"",
+	""
 	]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Причастия2"
+	],
+	len:[0,0],
+	"en":[
+	"",
+	""
+	],
+	"ru":[
+	"",
+	""
 	]
 },
 {
@@ -1392,18 +1561,45 @@ var items = [
 	"level" : "5",
 	"topic" : [
 	"Числа 2"
+	],
+	len:[0,0],
+	"en":[
+	"",
+	""
+	],
+	"ru":[
+	"",
+	""
 	]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Предлоги 3"
+	],
+	len:[0,0],
+	"en":[
+	"",
+	""
+	],
+	"ru":[
+	"",
+	""
 	]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Nouns 2"
+	],
+	len:[0,0],
+	"en":[
+	"",
+	""
+	],
+	"ru":[
+	"",
+	""
 	]
 },
 {
