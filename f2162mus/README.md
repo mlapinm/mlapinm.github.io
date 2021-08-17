@@ -1,4 +1,43 @@
 
+d15
+Hello, Dolly! — Louis Armstrong
+
+
+d16
+No time to die
+Billie Eilish
+
+d17
+Hello
+Lionel Richie
+
+d18
+Chiquitita
+Abba
+
+d19
+The Phantom of the Opera
+Webber A.
+
+
+d20
+Zombie
+Cranberries
+
+d21
+The show must go on
+Queen
+
+
+d22
+Stairway To Heaven
+Led Zeppelin
+
+d23
+And I Love Her
+Beatles
+
+---
 d06
 https://www.youtube.com/watch?v=Wkk0puI6NfA
 Enya - Wild Child (video)
@@ -89,5 +128,5 @@ Time in a Bottle
 
 https://www.y2mate.com/ru/youtube-mp3/vGJTaP6anOU
 
-
+D:\mailCloud\prjother\089hosts\jnotebook\html\d2062duo
 

@@ -1,6 +1,11 @@
 
 
 
+
+https://www.ocenaudio.com/en/startpage
+https://www.ocenaudio.com/start_download/ocenaudio64.exe
+C:\Program Files\ocenaudio
+https://audiomaster.su/top-luchshih-programm-dlya-narezki-muzyki.php
 ```
 
 

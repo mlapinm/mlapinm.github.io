@@ -34,7 +34,10 @@ $(() => {
     }
 
     function appendText(text){
-        $('#id_text').append(' ' + text)
+        let txt = $('#id_text')[0].value
+
+        // $('#id_text').append(' ' + text)
+        $('#id_text')[0].value = txt + ' ' + text
     }
 
 
