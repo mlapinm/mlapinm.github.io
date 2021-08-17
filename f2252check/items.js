@@ -3,19 +3,190 @@ var items = [
 	"level" : "1",
 	"topic" : [
 	"основы"
-	]
+],
+len:[0,0],
+"en":[
+	"tea",
+
+	"Goodbye",
+	
+	"butter",
+	
+	"hello duo",
+	
+	"",
+""
+],
+"ru":[
+	"Чай",
+
+	"До свидания",
+	
+	"Масло",
+	
+	"Привет дуо",
+	
+	"",
+""
+]
 },
 {
 	"level" : "1",
 	"topic" : [
 	"0 я - из..."
-	]
+],
+len:[0,0],
+"en":[
+	"from America",
+
+	"from Russia",
+	
+	"I'm from Russia",
+	
+	"Yes I'm from America",
+	
+	"hello I'm from America",
+	
+	"from Mexico",
+	
+	"No I'm not from Mexico",
+	
+	"I'm also from Mexico",
+	
+	"No I'm not from France",
+	
+	"not from Mexico",
+	
+	"not from France",
+	
+	"I'm also from France",
+	
+	"Where are you from",
+	
+	"America is not small",
+	
+	"Russia is beautiful",
+	
+	"yes Russia is also beautiful",
+	
+	"America is beautiful",
+	
+	"no Russia is not small",
+	
+	"America is also beautiful",
+	
+	"no America is not small",
+	
+	"I'm also from Mexico",
+	
+	"No I'm not from France",
+	
+	"",
+""
+],
+"ru":[
+	"из Америки",
+
+	"из России",
+	
+	"Я из России",
+	
+	"Да Я из ",
+	
+	"Привет я из Америки",
+	
+	"Из Мексики",
+	
+	"Не Из Мексики",
+	
+	"Я тоже из Мексики",
+	
+	"Нет я не из Франции",
+	
+	"Не Из Мексики",
+	
+	"не из Франции",
+	
+	"Я тоже из Франции",
+	
+	"Откуда ты",
+	
+	"Америка не маленькая",
+	
+	"Россия красивая",
+	
+	"Да Россия тоже красивая",
+	
+	"Америка красивая",
+	
+	"нет Россия не маленькая",
+	
+	"Америка тоже красивая",
+	
+	"нет Америка не маленькая",
+	
+	"Я тоже из Мексики",
+	
+	"Нет я не из Франции",
+	
+	"",
+""
+]
 },
 {
 	"level" : "1",
 	"topic" : [
 	"0 знакомство"
-	]
+],
+len:[0,0],
+"en":[
+	"well",
+
+	"well and you",
+	
+	"how are you Sofia",
+	
+	"great and you",
+	
+	"Great",
+	
+	"how are you Maksim",
+	
+	"How are you",
+	
+	"And how are you",
+	
+	"good and you",
+	
+	"Greatand you",
+	
+	"",
+""
+],
+"ru":[
+	"Хорошо ",
+
+	"Хорошо а у вас",
+	
+	"Как у вас дела София",
+	
+	"Отлично а у вас",
+	
+	"Отлично ",
+	
+	"Как у вас дела Максим",
+	
+	"Как у вас дела",
+	
+	"А у вас",
+	
+	"Хорошо а у вас",
+	
+	"Отлично а у вас",
+	
+	"",
+""
+]
 },
 {
 	"level" : "1",
@@ -109,25 +280,73 @@ var items = [
 	"level" : "1",
 	"topic" : [
 	"места"
-	]
+],
+len:[0,0],
+"en":[
+	"I work in Russia but Sveta works in America",
+
+	"My family is in Moscow",
+	
+	"My mom works in Moscow",
+	
+	"",
+""
+],
+"ru":[
+	"Я работаю в России а Света работает в Америке",
+
+	"Моя семья в Москве",
+	
+	"Моя мама работает в Москве",
+	
+	"",
+""
+]
 },
 {
 	"level" : "1",
 	"topic" : [
 	"вечеринка"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "1",
 	"topic" : [
 	"увлечения"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "1",
 	"topic" : [
 	"ресторан"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "1",
@@ -1543,11 +1762,87 @@ var items = [
 	],
 	len:[0,0],
 	"en":[
-	"",
+		"Decreased prices helped us to buy a house.",
+
+		"A decreased debt is still a debt.",
+		
+		"People building houses are important ",
+		
+		"These houses built of wood are older.",
+		
+		"These are houses built by our fathers ",
+		
+		"Asking for help, do not forget that no one has to help you.",
+		
+		"We found an increased number of blue birds there.",
+		
+		"The pricing are still decreasing but at a decreasing rate ",
+		
+		"We see an increasing number of people who can speak English ",
+		
+		"All phones made last year are already sold.",
+		
+		"He tried to forget her but it did not work.",
+		
+		"How is she going to spend her increased salary?",
+		
+		"she sees only increasing prices and decreasing salaries ",
+		
+		"built in eighteen ninety-six, our school is still the biggest.",
+		
+		"Soup made with love is always better ",
+		
+		"A decreasing number of parents spend enough time with their children.",
+		
+		"Singing quietly she made us tea",
+		
+		"Making big money don't forget about other people ",
+		
+		"They worked a lot, building houses and schools for all of us.",
+		
+			"",
 	""
 	],
 	"ru":[
-	"",
+		"Уменьшившиеся цены помогли нам купить дом.",
+
+		"Уменьшенный долг всё равно долг",
+		
+		"Люди, строящие дома, важны.Эти дома построенные из ",
+		
+		"эти дома построенные из дерева старше",
+		
+		"Это - дома, построенные нашими отцами.",
+		
+		"Прося о помощи, не забывайте, что никто не обязан помогать вам.",
+		
+		"Мы нашли там возросшее число синих птиц.",
+		
+		"Цены всё ещё падают, но с убывающей скоростью.",
+		
+		"Мы видим увеличивающееся число людей, которые могут говорить по-английски.",
+		
+		"Все телефоны, изготовленные в прошлом году, - уже проданы.",
+		
+		"Он попытался забыть её Но это не сработало ",
+		
+		"Как она собирается потратить свою выросшую зарплату?",
+		
+		"Она видит только увеличивающиеся цены и уменьшающиеся зарплаты.",
+		
+		"Построенная в тысяча восемьсот девяносто шестом, наша школа является всё ещё самой большой.",
+		
+		"Суп, приготовленный с любовью, - всегда лучше.",
+		
+		"Убывающее число родителей проводят достаточно времени со своими детьми.",
+		
+		"Тихо напевая она приготовила чай",
+		
+		"Делая большие деньги, не забывай о других людях.",
+		
+		"Они много работали, строя дома и школы для всех нас.",
+		
+			"",
 	""
 	]
 },
@@ -1555,7 +1850,96 @@ var items = [
 	"level" : "5",
 	"topic" : [
 	"Опред. 2"
-	]
+],
+len:[0,0],
+"en":[
+	"My parents respect such people.",
+
+	"The waiter works in another bar.",
+	
+	"One of my sons is an actor, another one is an accountant.",
+	
+	"She has the same name.",
+	
+	"They sell neither chicken meat nor chicken eggs.",
+	
+	"Our daughter has always wanted such a dog.",
+	
+	"Why are you such a fan of that actor",
+	
+	"Neither my wife nor my parents believe me.",
+	
+	"Though they knew his address, they told us nothing.",
+	
+	"My ex has already found another woman.",
+	
+	"Her ex-husband never believed in himself.",
+	
+	"Though I wanted to help, I did not know what to do.",
+	
+	"His ex-wife barely speaks Russian.",
+	
+	"though we live in the same house we never talk to each other ",
+	
+	"My shirt isn't the same as yours ",
+	
+	"He was neither strong nor weak",
+	
+	"He will neither write to them, nor talk to them.",
+	
+	"When we were children we went to the same School ",
+	
+	"My mother works in the same town ",
+	
+	"Her ex-boyfriend still calls her once or twice a week.",
+	
+	"",
+""
+],
+"ru":[
+	"Мои родители уважаю таких людей",
+
+	"Этот официант работает в другом баре.",
+	
+	"Один из моих сыновей актёр другой бухгалтер",
+	
+	"У неё такое же имя ",
+	
+	"Они не продают ни куриного мяса ни куриных яиц ",
+	
+	"Наша дочь всегда хотела такую собаку ",
+	
+	"Почему ты такой фанат того актёра?",
+	
+	"Ни моя жена ни мои родители не верят мне ",
+	
+	"Хотя они знали его адрес, они не сказали нам ничего.",
+	
+	"Мой бывший уже нашел другую женщину ",
+	
+	"Её бывший муж никогда не верил в себя.",
+	
+	"Хотя я хотел помочь Я не знал что делать ",
+	
+	"Его бывшая жена еле-еле говорит по-русски.",
+	
+	"Хотя мы живём в одном доме, мы никогда не разговариваем друг с другом.",
+	
+	"Моя рубашка не такая же, как твоя.",
+	
+	"Он не был ни сильным ни слабым",
+	
+	"Он не будет ни писать им, ни говорить с ними.",
+	
+	"Когда мы были детьми, мы ходили в одну и ту же школу.",
+	
+	"Моя мать работает в том же городе.",
+	
+	"Её бывший парень всё ещё звонит ей раз или два в неделю.",
+	
+	"",
+""
+]
 },
 {
 	"level" : "5",
@@ -1564,11 +1948,311 @@ var items = [
 	],
 	len:[0,0],
 	"en":[
-	"",
+		"What is the name of your fourth child?",
+
+		"I am on the first floor.",
+		
+		"My second umbrella is black.",
+		
+		"May is it fifth month of the year ",
+		
+		"June is the sixth month of the year.",
+		
+		"Friday is the fifth day of the week.",
+		
+		"Monday is the first day of the week.",
+		
+		"The third apple is red.",
+		
+		"He lives in the sixth house.",
+		
+		"Saturday is the sixth day of the week.",
+		
+		"Thursday is the fourth day of the week ",
+		
+		"She is his second wife.",
+		
+		"There is only one third of the bottle left ",
+		
+		"Sunday is the seventh and last day of the week.",
+		
+		"February is the second month of the year.",
+		
+		"He sold several dozen apples last week.",
+		
+		"October is the tenth month of the year.",
+		
+		"Now it is a quarter to nine.",
+		
+		"September is the ninth month of the year.",
+		
+		"I was their ninth child. ",
+		
+		"August is the eighth month of the year.",
+		
+		"A quarter of the meat was sold in the morning.",
+		
+		"She was born on September twentieth",
+		
+		"Two dozen phones were sold on June first.",
+		
+		"She came ninth and I came tenth",
+		
+		"I will be free on July twentieth.",
+		
+		"It will be his twentieth book.",
+		
+		"He was born in Winter on February twenty eighth",
+		
+		"I was born on August twenty-eighth in the evening.",
+		
+		"years decades centuries",
+		
+		"He left a few minutes ago.",
+		
+		"Billions of messages are sent weekly.",
+		
+		"Last month, they sold twenty percent fewer books.",
+		
+		"Last week, he sold fewer horses than me.",
+		
+		"They spent a billion dollars last year",
+		
+		"But it means that we will spend two-thirds of our budget.",
+		
+		"Two-thirds is more than a half.",
+		
+		"She spent a year and a half to write that book.",
+		
+		"It will cost us billions of rubles.",
+		
+		"The only stayed in Brazil for a few days",
+		
+		"in the second decade of our century",
+		
+		"He has earned a half billion since nineteen ninety ",
+		
+		"She gave two-thirds of the money to me and one-third to my brother.",
+		
+		"She has too few friends, she needs to find more.",
+		
+		"There are fewer men than women in my family.",
+		
+		"Try not to sleep until tomorrow.",
+		
+		"This message is for both of you.",
+		
+		"Do you know both girls?",
+		
+		"The house was divided into six rooms.",
+		
+		"Both toys were made by my uncle.",
+		
+		"Subtract any odd number from any even number ",
+		
+		"Yesterday, we multiplied and divided only odd numbers.",
+		
+		"I won't tell him about it until he asks ",
+		
+		"Until now the ocean has always been blue.",
+		
+		"I work until five today.",
+		
+		"She could not read or write add and subtract",
+		
+		"multiply your answer by any even number",
+		
+		"yes I know them both",
+		
+		"He subtracted sixteen from eighty nine.",
+		
+		"He is my third son.",
+		
+		"We can't take the third mortgage.",
+		
+		"Tuesday is the second day of the week",
+		
+		"His seventh email was not written in Russian.",
+		
+		"Saturday is the sixth day of the week.",
+		
+		"Today is July fourth",
+		
+		"Today is April sixth",
+		
+		"I'm not going to work on September fifth",
+		
+		"I give them every tenth ruble that I earn.",
+		
+		"only two decades ago thousands of people lived there",
+		
+		"One century is one hundred years.",
+		
+		"He will be too busy until October fifth.",
+		
+		"First divide it by ten and then multiply by seven.",
+		
+		"I was born on October seventh.",
+		
+		"The first month of the year is January",
+		
+		"Half of them did not even answer.",
+		
+			"",
 	""
 	],
 	"ru":[
-	"",
+		"Как зовут твоего четвертого ребёнка",
+
+		"Я на первом этаже",
+		
+		"Мой второй зонт чёрный ",
+		
+		"Май - пятый месяц года.",
+		
+		"Июнь - шестой месяц года.",
+		
+		"Пятница пятый день недели ",
+		
+		"Понедельник - первый день недели.",
+		
+		"Третье яблоко красное",
+		
+		"Он живёт в шестом доме.",
+		
+		"Суббота шестой день недели ",
+		
+		"Четверг - четвёртый день недели.",
+		
+		"Она его вторая жена ",
+		
+		"Осталась лишь треть бутылки.",
+		
+		"Воскресенье - седьмой и последний день недели.",
+		
+		"Февраль - второй месяц года.",
+		
+		"Он продал несколько дюжин яблок на прошлой неделе",
+		
+		"Октябрь десятый месяц года",
+		
+		"Сейчас без четверти девять",
+		
+		"Сентябрь девятый месяц года ",
+		
+		"Я был их девятым ребёнком",
+		
+		"Август - восьмой месяц года.",
+		
+		"Четверть мяса была продана утром",
+		
+		"Она родилась двадцатого сентября.",
+		
+		"Две дюжины телефонов были проданы первого июня.",
+		
+		"Она пришла девятой, а я пришёл десятым.",
+		
+		"Я буду свободен двадцатого июля.",
+		
+		"Это будет его двадцатая книга.",
+		
+		"Он родился зимой, двадцать восьмого февраля.",
+		
+		"Я родился двадцать восьмого августа вечером",
+		
+		"годы, десятилетия, века",
+		
+		"Он ушёл несколько минут назад",
+		
+		"миллиарды Сообщений Отправляются еженедельно",
+		
+		"В прошлом месяце они Продали на двадцать процентов меньше книг",
+		
+		"На прошлой неделе Он продал меньше лошадей чем я",
+		
+		"Они потратили миллиард рублей в прошлом году",
+		
+		"Но это значит, что мы потратим две трети нашего бюджета.",
+		
+		"Две трети - больше, чем половина.",
+		
+		"Она потратила полтора года, чтобы написать ту книгу.",
+		
+		"Это будет стоить нам миллиарды рублей.",
+		
+		"Мы остались в Бразилии всего лишь на несколько дней.",
+		
+		"во втором десятилетии нашего века",
+		
+		"Он заработал полмиллиарда с тысяча девятьсот девяностого.",
+		
+		"Она дала две трети денег мне и одну треть моему брату.",
+		
+		"У неё слишком мало друзей, ей нужно найти больше.",
+		
+		"В моей семье меньше мужчин, чем женщин.",
+		
+		"Попытайся не спать До завтра ",
+		
+		"Это сообщение для вас обоих ",
+		
+		"Ты знаешь обеих девочек ",
+		
+		"Дом был разделён на шесть комнат",
+		
+		"Обе игрушки были сделаны моим дядей",
+		
+		"Вычти любое нечётное число из любого чётного числа.",
+		
+		"Вчера мы перемножали и делили только нечётные числа.",
+		
+		"Я не скажу ему об этом, пока он не спросит.",
+		
+		"До сих пор океан всегда был синим.",
+		
+		"Я работаю до пяти сегодня ",
+		
+		"Она не умела читать и писать, складывать и вычитать.",
+		
+		"Умножьте ваш ответ на любое чётное число.",
+		
+		"Да, я знаю их обеих.",
+		
+		"Он вычел шестнадцать из восьмидесяти девяти.",
+		
+		"Он Мой третий сын",
+		
+		"Мы не можем взять третью ипотеку.",
+		
+		"Вторник - второй день недели.",
+		
+		"Его седьмой имейл не был написан на русском.",
+		
+		"Лола - их пятая дочь.",
+		
+		"Сегодня четвертое июля",
+		
+		"Сегодня - шестое апреля.",
+		
+		"Я не собираюсь работать пятого сентября",
+		
+		"Я отдаю им каждый десятый рубль, который я зарабатываю.",
+		
+		"Лишь два десятилетия назад тысячи людей жили там.",
+		
+		"Один век - это сто лет.",
+		
+		"Он будет слишком занят до пятого октября.",
+		
+		"Сперва раздели его на десять, а затем умножь на семь.",
+		
+		"Я родилась седьмого октября.",
+		
+		"Первый месяц года - январь.",
+		
+		"Половина из них даже не ответили ",
+		
+			"",
 	""
 	]
 },
@@ -1606,37 +2290,91 @@ var items = [
 	"level" : "5",
 	"topic" : [
 	"Verbs 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Качества 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Картинки 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Словарь 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Люди 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Продукты 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",

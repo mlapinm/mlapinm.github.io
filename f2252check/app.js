@@ -11,26 +11,15 @@ $(() => {
 
     createBoard()
 
-    let text = document.cookie
-    let re = /.*cel(\d+)/y
-    let match = re.exec(text)
 
-    let idNum = 0
-    if(match){
-        idNum = match[1]
-    }
-
-    $('.log1').text(idNum)
-    $('.log2').text(text)
-
-    showContent(78)
+    showContent(0)
 
 
     function showContent(num){
         let item = items[num]
         let topic = $('<p></p>')
         topic.addClass("header")
-        topic.text(item.topic)
+        topic.text(num + ' ' + item.level + ' ' + item.topic)
         $(".content").append(topic)
 
 
@@ -50,11 +39,58 @@ $(() => {
         })
 
 
-        // $(".content").text(items[num].en)
-        // $(".content").text(items[num].ru)
+    }
+
+
+
+    // cookieSave(2)
+    // cookieClear()
+    // cookieRead()
+
+    function cookieSave(name){
+        document.cookie = 'key1=' + name + ';'
+    }
+
+    function cookieRead(){
+        let mCookie = '0'
+        let text = document.cookie
+        let re = /key1=(\d+)/
+        let match = re.exec(text)
+        if( match){
+            mCookie = match[1]
+        }
+        return mCookie
+    }
+
+    function cookieClear(){
+        document.cookie = 'key1=333;' + 'expires=Mon, 05 Jul 1982 16:37:55 GMT;'
+    }
+
+    function mFullItem(mItem){
+        let full = false
+        // let l = mItem.en
+        let keys = Object.keys(mItem)
+        if(keys.includes('en')){
+            let ens = mItem.en
+            if( ens.length > 2 ){
+                let len = 0
+                len += ens[0].trim().length
+                len += ens[1].trim().length
+                len += ens[2].trim().length
+                if (len > 5){
+                    full = true
+                }
+            }
+        }
+
+        return full
     }
 
     function createBoard(){
+        let cookieNum = cookieRead()
+        console.log(cookieNum)
+        $('.log1').text(cookieNum)
+
         for( let i = 0; i < count; i++){
             const item = $("<div></div>")
             item.attr("id", "cel" + i)
@@ -71,14 +107,21 @@ $(() => {
             topics.push(topic)
 
 
-            // item.text(items[i]['level'] + ' ' + items[i]['topic'][0])
             level.text(items[i]['level'] + ' ')
+            if (mFullItem(items[i])){
+                level.addClass('rounded')
+            }
             topic.text(items[i]['topic'][0])
             item.append(level)
             item.append(topic)
 
 
             grid.append(item)
+            if( i == cookieNum){
+                $('.log2').text(topics[cookieNum].text())
+                topics[cookieNum].addClass('checked')
+                checkedTopic = cookieNum
+            }
 
             topic.click((e) => {
                 let num = $(e.target).attr('data')
@@ -89,29 +132,22 @@ $(() => {
 
                 $('.log1').text(num)
                 $('.log2').text(topics[checkedTopic].text())
+                cookieSave(num)
             })
 
             level.click((e) => {
                 let num = $(e.target).attr('data')
-                levels[checkedLevel].removeClass('checked')
+                levels[checkedLevel].removeClass('checked-level')
 
-                levels[Math.floor(num)].addClass('checked')
+                levels[Math.floor(num)].addClass('checked-level')
                 checkedLevel = num
 
                 $('.content').html('')
                 showContent(num)
 
-
             })
-
-
-
-
-
-           
         }
-    }
+}
 
 
-    // $('.log1').text(count)
 })

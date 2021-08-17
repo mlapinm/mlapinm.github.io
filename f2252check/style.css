@@ -52,8 +52,11 @@ img{
     padding-left: 0.7em;
     padding-right: 0.5em;
     border-radius: 1em;
+    /* border: 1px solid; */
+}
+
+.rounded{
     border: 1px solid;
-    /* background-color: #aaa; */
 }
 
 .topic {
@@ -71,6 +74,13 @@ img{
     border: 1px solid #000;
     border-radius: 1em;
 }
+
+.checked-level {
+    background-color:coral;
+    background: linear-gradient(to top, coral 0%, coral 100%);
+    border-radius: 1em;
+}
+
 
 .main-header{position:-webkit-sticky; 
     text-align: center;

@@ -1,7 +1,10 @@
 
 
 ```
-
+17.08.21
+- mFullItem
+- level round 
+- + cookie
 
 
 
