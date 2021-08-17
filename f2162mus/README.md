@@ -8,21 +8,17 @@ No time to die
 Billie Eilish
 
 d17
-Hello
-Lionel Richie
+Hello Lionel Richie
 
 d18
-Chiquitita
-Abba
+Chiquitita Abba
 
 d19
-The Phantom of the Opera
-Webber A.
+The Phantom of the Opera Webber A.
 
 
 d20
-Zombie
-Cranberries
+Zombie Cranberries
 
 d21
 The show must go on

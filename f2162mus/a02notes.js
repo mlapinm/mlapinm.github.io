@@ -154,7 +154,7 @@ var notes = [
     "title": "",
     "card-text": [
       '',
-      "",
+      "Hello, Dolly! — Louis Armstrong",
       ""
     ],
     "link": "d15pl.html"
@@ -164,7 +164,7 @@ var notes = [
     "title": "",
     "card-text": [
       '',
-      "",
+      "No time to die Billie Eilish",
       ""
     ],
     "link": "d16pl.html"
@@ -174,40 +174,40 @@ var notes = [
     "title": "",
     "card-text": [
       '',
-      "",
+      "Hello Lionel Richie",
       ""
     ],
-    "link": "d1pl.html"
+    "link": "d17pl.html"
    },
    {
     "header": "song",
     "title": "",
     "card-text": [
       "",
-      "",
+      "Chiquitita Abba",
       ""
     ],
-    "link": "d1pl.html"
+    "link": "d18pl.html"
    },
    {
     "header": "song",
     "title": "",
     "card-text": [
       "",
-      "",
+      "The Phantom of the Opera Webber A.",
       ""
     ],
-    "link": "d1pl.html"
+    "link": "d19pl.html"
    },
    {
     "header": "song",
     "title": "",
     "card-text": [
       "",
-      "",
+      "Zombie Cranberries",
       ""
     ],
-    "link": "d1pl.html"
+    "link": "d20pl.html"
    },
    {
     "header": "song",
