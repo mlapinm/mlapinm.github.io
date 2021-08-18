@@ -191,7 +191,7 @@ var notes = [
    },
    {
     "header": "song",
-    "title": "",
+    "title": "Phantom",
     "card-text": [
       "",
       "The Phantom of the Opera Webber A.",
@@ -201,7 +201,7 @@ var notes = [
    },
    {
     "header": "song",
-    "title": "",
+    "title": "Cranberries",
     "card-text": [
       "",
       "Zombie Cranberries",
@@ -211,12 +211,122 @@ var notes = [
    },
    {
     "header": "song",
-    "title": "",
+    "title": "Queen",
     "card-text": [
-      "",
+      '<a href="https://en.lyrsense.com/queen/the_show_must_go_on">The show must go on Queen</a>',
       "",
       ""
     ],
-    "link": "d1pl.html"
+    "link": "d21pl.html"
+   },
+   {
+    "header": "song",
+    "title": "Zeppelin",
+    "card-text": [
+      '<a href="https://en.lyrsense.com/led_zeppelin/starway_to_heaven">Stairway To Heaven Led Zeppelin</a>',
+      "",
+      ""
+    ],
+    "link": "d22pl.html"
+   },
+   {
+    "header": "song",
+    "title": "Beatles",
+    "card-text": [
+      '<a href="https://en.lyrsense.com/beatles/and_i_love_her">And I Love Her Beatles</a>',
+      "",
+      ""
+    ],
+    "link": "d23pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      '',
+      "",
+      ""
+    ],
+    "link": "d2pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      '',
+      "",
+      ""
+    ],
+    "link": "d2pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      '',
+      "",
+      ""
+    ],
+    "link": "d2pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      '',
+      "",
+      ""
+    ],
+    "link": "d2pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      '',
+      "",
+      ""
+    ],
+    "link": "d2pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      '',
+      "",
+      ""
+    ],
+    "link": "d2pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      '',
+      "",
+      ""
+    ],
+    "link": "d2pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      '',
+      "",
+      ""
+    ],
+    "link": "d2pl.html"
+   },
+   {
+    "header": "song",
+    "title": "",
+    "card-text": [
+      '',
+      "",
+      ""
+    ],
+    "link": "d2pl.html"
    },
 ]

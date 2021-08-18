@@ -27,7 +27,9 @@ $(() => {
     }
 
     function timeToMinut(time){
-        let t2 = Math.floor(time/60) + ':' 
+        let t2 = 0 
+		//time = Math.float(time)
+		t2 = Math.floor(time/60) + ':' 
         + Math.floor(time%60)
         return t2
 

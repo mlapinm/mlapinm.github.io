@@ -21,17 +21,18 @@ d20
 Zombie Cranberries
 
 d21
-The show must go on
-Queen
-
-
+The show must go on Queen
+https://en.lyrsense.com/queen/the_show_must_go_on
+<a href="https://en.lyrsense.com/queen/the_show_must_go_on">The show must go on Queen</a>
 d22
-Stairway To Heaven
-Led Zeppelin
+Stairway To Heaven Led Zeppelin
+https://en.lyrsense.com/led_zeppelin/starway_to_heaven
+<a href="https://en.lyrsense.com/led_zeppelin/starway_to_heaven">Stairway To Heaven Led Zeppelin</a>
 
 d23
-And I Love Her
-Beatles
+And I Love Her Beatles
+https://en.lyrsense.com/beatles/and_i_love_her
+<a href="https://en.lyrsense.com/beatles/and_i_love_her">And I Love Her Beatles</a>
 
 ---
 d06
