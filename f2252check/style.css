@@ -41,7 +41,7 @@ img{
     display:flex;
     /* text-align: center; */
   background-color: aqua;
-  background: linear-gradient(to top, aqua 0%, #b5dde8 100%);
+  background: linear-gradient(to top right, aqua 0%, #b5dde8 100%);
   width: 48%;
   
 }
@@ -63,7 +63,7 @@ img{
     width:70%;
     text-align: center;
     background-color: aqua;
-    background: linear-gradient(to top, aqua 0%, #b5dde8 100%);
+    background: linear-gradient(to top right, aqua 0%, #b5dde8 100%);
       /* background-color: #b5dde8; */
     /* width: 100%; */
 }
