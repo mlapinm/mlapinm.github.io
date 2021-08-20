@@ -19,7 +19,8 @@ $(() => {
         let item = items[num]
         let topic = $('<p></p>')
         topic.addClass("header")
-        topic.text(num + ' ' + item.level + ' ' + item.topic)
+        topic.text(num + ' ' + item.level + ' ' + item.topic +
+        ' (' + item.en.length + ')')
         $(".content").append(topic)
 
 
