@@ -11,7 +11,7 @@ d17
 Hello Lionel Richie
 
 d18
-Chiquitita Abba
+Abba - Dancing Queen
 
 d19
 The Phantom of the Opera Webber A.
