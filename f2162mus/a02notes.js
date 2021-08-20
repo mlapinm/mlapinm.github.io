@@ -241,13 +241,13 @@ var notes = [
    },
    {
     "header": "song",
-    "title": "",
+    "title": "ABBA",
     "card-text": [
-      '',
+      '<a href="https://en.lyrsense.com/abba/chiquitita">Chiquitita ABBA</a>',
       "",
       ""
     ],
-    "link": "d2pl.html"
+    "link": "d24pl.html"
    },
    {
     "header": "song",

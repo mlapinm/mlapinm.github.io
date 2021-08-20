@@ -36,7 +36,7 @@ https://en.lyrsense.com/beatles/and_i_love_her
 
 d24
 https://en.lyrsense.com/abba/chiquitita
-<a href=""></a>
+<a href="https://en.lyrsense.com/abba/chiquitita">Chiquitita ABBA</a>
 Chiquitita ABBA
 <a href=""></a>
 <a href=""></a>
