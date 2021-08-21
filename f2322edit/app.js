@@ -11,8 +11,10 @@ $(() => {
   let count = lines.length
   if (count%2>0){
     let item = lines(lines[count-1])
-    lines.push(item)
+    lines.push('item')
   }
+  // lines.push('|--')
+  // lines.push('--|')
   count = lines.length
 
 
@@ -35,40 +37,96 @@ $(() => {
   }
 
   function setTable(text){
-    let l = text.split('\n')
+    let l = []
+    let leq = []
+    getLists(text, l, leq)
     count = l.length
     table.empty()
     for(let i=0;i<count/2;i++){
       let tr = $("<tr></tr>")
       let td0 = $("<td></td>")
       let td1 = $("<td></td>")
-      td0.text(l[2*i])
-      td1.text(l[2*i+1])
+      let s0 = l[2*i].trim()
+      let s1 = l[2*i+1].trim()
+      if(!/^[a-zA-Z]/.test(s0)){
+        td0.addClass("blue")
+      }
+      if(!/^[a-zA-Z]/.test(s1)){
+        td1.addClass("blue")
+      }
+      if(leq[2*i]>1){
+        td0.addClass("repeat")
+      }
+      if(leq[2*i+1]>1){
+        td1.addClass("repeat")
+      }
+      td0.text(s0)
+      td1.text(s1)
       tr.append(td0)
       tr.append(td1)
       table.append(tr)
       }
   }
 
-  function setLists(text){
-    let l = text.split('\n')
-    count = l.length
+  function getLists(text, l, leq){
+    let l1 = text.split('\n')
+    let count = l1.length
+    if(count%2){
+      l1.push('')
+      count += 1
+    }
     let l0 = []
-    let l1 = []
+    for(let e of l1 ){
+      let e1 = e.replace(/\s+/g, ' ').trim()
+      l0.push(e1)
+    }
+
+    for(let s of l0){
+      let count1 = l0.filter((e) => {
+      let e1 = e.toLowerCase()
+      let s1 = s.toLowerCase()
+      let re = /[.?!]/
+      e1 = e1.replace(re, '') 
+      s1 = s1.replace(re, '') 
+
+        return e1 == s1
+      }).length
+      // console.log(count1)
+      l.push(s)
+      leq.push(count1)
+    }    
+
+  }
+
+  function setLists(text){
+    let l = []
+    let leq = []
+    getLists(text, l, leq)
+
+
+    count = l.length
+    list0.empty()
+    list1.empty()
     for(let i = 0; i<count;i++){
+      let p = $("<span></span>")
+      let br = $("<br></br>")
+      let s = l[i].trim()
+      if(!/^[a-zA-Z]/.test(s)){
+        p.addClass("blue")
+      }
+      if(leq[i]>1){
+        p.addClass("repeat")
+      }
+      s = '"' + s + '",'
+      p.text(s)
       if(i%2 == 0){
-        l0.push('<p>"'+l[i]+'",</p>')
+        list0.append(p)
+        list0.append(br)
       }else{
-        l1.push('<p>"'+l[i]+'",</p>')
+        list1.append(p)
+        list1.append(br)
       }
     }
-    let text0 = l0.join('\n')
-    let text1 = l1.join('\n')
-
-
-    list0.html(text0)
-    list1.html(text1)
-
   }
 
   function setEdit(text){
