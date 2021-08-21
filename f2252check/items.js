@@ -463,37 +463,127 @@ len:[0,0],
 	"level" : "1",
 	"topic" : [
 	"питомцы"
-	]
+],
+len:[0,0],
+"en":[
+"Oh, my old cat plays a lot!",
+"No Sharik is not friendly",
+"of course my cat sleeps a lot",
+"do you have four dogs",
+"Yes, my snake sleeps a lot.",
+"I love my four dogs so much",
+"Aw, Sharik is really cute.",
+"Yes I have three snakes",
+"I have three cats and a dog",
+"Yes, I have three dogs and two cats.",
+"Your bird is so cute, Sofia!",
+"Do you have three cats",
+"He's a good dog",
+"Aw Murka likes jazz",
+"Oh your bird sleeps a lot.",
+"Yes Sharik is a good dog",
+"Aw this cat is so cute",
+"Aw Your dog is so friendly",
+"",
+""
+],
+"ru":[
+"Ох, моя старая кошка играет много!",
+"Нет, Шарик не дружелюбный!",
+"Конечно, моя кошка спит много.",
+"У тебя есть четыре собаки?",
+"Да, моя змея спит много.",
+"Я люблю моих четырех собак так сильно!",
+"Ой, Шарик очень славный.",
+"Да, у меня есть три змеи.",
+"У меня есть три кошки и собака.",
+"Да, у меня есть три собаки и две кошки.",
+"Твоя птица такая славная, София!",
+"У тебя есть три кошки?",
+"Он — хорошая собака.",
+"Ой, Мурка любит джаз!",
+"Ох, ваша птица спит много!",
+"Да, Шарик – хорошая собака!",
+"Ой, эта кошка такая славная!",
+"Ой, твоя собака такая дружелюбная!",
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"еда"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"романтика"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"в пути"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"привычки"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"покупки"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
@@ -505,7 +595,16 @@ len:[0,0],
 	"level" : "2",
 	"topic" : [
 	"поездки"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
