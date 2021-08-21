@@ -85,7 +85,7 @@ $(() => {
       let count1 = l0.filter((e) => {
       let e1 = e.toLowerCase()
       let s1 = s.toLowerCase()
-      let re = /[.?!]/
+      let re = /[.?!,:;]/
       e1 = e1.replace(re, '') 
       s1 = s1.replace(re, '') 
 
