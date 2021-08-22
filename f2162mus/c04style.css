@@ -1,0 +1,115 @@
+
+
+body{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    line-height: 0.9;
+}
+
+p {
+    margin: 0px;
+}
+
+audio{
+    display: none;
+}
+
+.div-line1 {
+    height: 10vh;
+    overflow: auto;
+    font-size: 1.3rem;
+    background: radial-gradient(at center, #10f1e6, #FEFFFF);
+}
+
+
+.div-line2 {
+    height: 10vh;
+    font-size: 1.4rem;
+    overflow: auto;
+    background: radial-gradient(at center, #10f1e6, #FEFFFF);
+}
+
+.div-line3 {
+    height: 20vh;
+    overflow: auto;
+}
+
+.div-line3 .line0{
+    background-color: lightgreen;
+}
+
+.div-line6 .line0{
+    background-color: aqua;
+}
+
+.line0 {
+    padding-left: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    height:  92%;
+    align-content: space-around;
+    /* border: 2px solid yellowgreen; */
+    border-radius: 10px;
+}
+
+
+
+.div-line3 div {
+    /* width: 100%; */
+}
+
+.div-line4 {
+    height: 10vh;
+    font-size: 1.3rem;
+    background: radial-gradient(at center, #10f1e6, #FEFFFF);
+    overflow: auto;
+}
+
+.div-line5 {
+    height: 10vh;
+    font-size: 1.3rem;
+    background: radial-gradient(at center, #10f1e6, #FEFFFF);
+    overflow: auto;
+}
+
+.div-line6 {
+    height: 15vh;
+    font-size: 1.4rem;
+    overflow: auto;
+}
+
+
+
+.line3{
+}
+
+.line6{
+}
+
+.buttons {
+    display: flex;
+
+    
+}
+
+.log3 {
+    width: 15rem;
+    text-align: center;
+    margin: auto;
+}
+
+.log4 {
+    width: 12rem;
+    text-align: center;
+    background-color: gainsboro;
+    border-radius: 50%;
+}
+
+.button {
+    width: 100%;
+    height: 2em;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    border-color: aqua;
+    margin-left: 4px;
+}
