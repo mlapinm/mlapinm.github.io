@@ -67,7 +67,7 @@ $(() => {
         // div.css("align-content"," space-around")
         for(let e of l){
             let p = $('<div></div>')
-            
+            p.css("width", "100%")
             p.append(e)
             div.append(p)
         }
