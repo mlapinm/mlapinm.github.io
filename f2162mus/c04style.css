@@ -46,7 +46,7 @@ audio{
     padding-left: 0.3rem;
     display: flex;
     flex-wrap: wrap;
-    height:  92%;
+    height:  100%;
     align-content: space-around;
     /* border: 2px solid yellowgreen; */
     border-radius: 10px;
@@ -87,7 +87,10 @@ audio{
 }
 
 .buttons {
+    margin-top: 0.1rem;
     display: flex;
+    background: radial-gradient(at center, #FEFFFF, #10f1e6);
+    border-radius: 0.4rem;
 
     
 }
