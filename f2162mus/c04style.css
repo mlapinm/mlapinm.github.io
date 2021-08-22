@@ -117,3 +117,7 @@ audio{
     border-color: aqua;
     margin-left: 4px;
 }
+
+.btn_pause {
+    background-color: #FEFFFF;
+}
