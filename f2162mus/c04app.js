@@ -9,6 +9,7 @@ $(() => {
     let pause = false
     pause = true 
     let currentTime = 0
+    let endTime = 0
     let current = 0
     let currentPrev = 0
     var audio = $('.audio')[0]
@@ -22,8 +23,9 @@ $(() => {
         }
         audio.currentTime = begin
         audio.play()
+        endTime = end
         timerId = setInterval(() => {
-            if ( audio.currentTime > end && pause){
+            if ( audio.currentTime > endTime && pause){
                 audio.pause()
                 audio.currentTime = end
                 clearTimeout(timerId)
@@ -164,6 +166,7 @@ $(() => {
         }else{
             butText = "Pause"
             pause = true
+            endTime = 0
         }
         $('.btn_pause').text(butText)
     }
