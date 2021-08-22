@@ -4795,6 +4795,226 @@ len:[0,0],
 ],
 len:[0,0],
 "en":[
+"What is that spoon for?",
+"Two cups of coffee, please.",
+"It is a good price for three ounces.",
+"One pound equals sixteen ounces.",
+"The small bottle is four ounces and the big bottle is eight.",
+"Add three tablespoons of sugar",
+"One cup equals sixteen tablespoons",
+"One gallon equals one hundred twenty eight ounces.",
+"The cups are on that shelf.",
+"He plays, and wins another cup.",
+"I can give him only half a gallon of water.",
+"I added fried carrots.",
+"My sister's husband never eats onion.",
+"I am selling carrots.",
+"wash these onions please",
+"I love my mother's potato soup.",
+"Do you use much oil",
+"There is nothing better than a fresh carrot.",
+"I can't eat this meat without pepper.",
+"I fried this meat without oil.",
+"They fried the potatoes in the same oil.",
+"Will you add any pepper",
+"The bananas are tasty.",
+"Is the meat tasty",
+"Fry the garlic for three minutes.",
+"This apple is sweeter.",
+"It has an apple taste.",
+"Potatoes with onion are very tasty.",
+"Let's add more onion.",
+"They easily turn sour.",
+"Is the taste good",
+"John usually adds some fresh garlic to his soup.",
+"And apples add a sweet aftertaste.",
+"The taste will be better if she adds two teaspoons of sugar.",
+"My dog never eats nuts.",
+"This is a nut.",
+"The cherries are too sour.",
+"When I came into the room, you were making the salad.",
+"watermelons are tasty",
+"He eats five cups of berries and fruit every day.",
+"This cherry is dark red.",
+"Why is this cat eating the berries?",
+"If you bring a melon, we will eat it together.",
+"Tom ate all the watermelons!",
+"Let's cut a melon for our salad!",
+"If you want the red berry, take it.",
+"Is watermelon a fruit",
+"I like Russian cuisine.",
+"He is eating a cookie.",
+"She cooked me fish.",
+"Do not eat this red mushroom!",
+"I mix the two colors.",
+"Santa Claus eats the cookies.",
+"Do you want to bake or to fry these vegetables?",
+"Do you prefer Russian or English cuisine?",
+"They prefer not to mix red and yellow fruit together.",
+"Mary went to the kitchen to fry some mushrooms",
+"Put the berries on the table in the kitchen.",
+"I cooked rice.",
+"Did they bake meat with nuts yesterday?",
+"He uses the spoon",
+"Who drinks from this cup",
+"Are they going to fry potatoes this evening?",
+"Carrots can be orange, red, yellow and even White",
+"We will need two large potatoes and three or four small onions",
+"They use too much garlic",
+"He likes watermelons more than melons.",
+"Here are the berries for the fruit salad",
+"There is nothing better than watermelons.",
+"cooks cook",
+"The boy eats the cookie.",
+"I am a cook",
+"Where is the kitchen",
+"I prefer to cook in the kitchen",
+"I will mix the nuts with the mushrooms",
+"I did not find any garlic here",
+"I eat nuts.",
+"These cherries are too sour, they will not give sweet juice.",
+"Do not eat these white cherries!",
+"My grandmother loves to bake.",
+"A kitchen is a room where people cook",
+"",
+""
+],
+"ru":[
+"Для чего та ложка",
+"Две чашки кофе, пожалуйста.",
+"Это хорошая цена за три унции",
+"Один фунт равен шестнадцати унциям",
+"Маленькая бутылка четыре унции а большая бутылка восемь",
+"Добавьте три столовых ложки сахара.",
+"Одна чашка равна шестнадцати столовым ложкам.",
+"Один галлон равняется ста двадцати восьми унциям.",
+"Чашки на той полке.",
+"Он играет и выигрывает ещё один кубок.",
+"Я могу дать ему только полгаллона воды",
+"Я добавила жареную морковь.",
+"Муж моей сестры никогда не ест лук",
+"Я продаю морковь",
+"Помой эти луковицы, пожалуйста.",
+"Я обожаю картофельный суп моей матери.",
+"Ты используешь много масла?",
+"Нет ничего лучше свежей морковки.",
+"Я не могу есть это мясо без перца",
+"Я пожарила это мясо без масла.",
+"Они обжарили картофель в том же масле.",
+"Ты добавишь перец?",
+"Бананы вкусные",
+"Мясо вкусное?",
+"Обжаривайте чеснок в течение трёх минут.",
+"Это яблоко слаще",
+"Оно имеет яблочный вкус.",
+"Картофель с луком очень вкусный",
+"Давай добавим больше лука.",
+"Они легко прокисают",
+"Этот вкус хороший?",
+"Джон обычно добавляет немного свежего чеснока в свой суп",
+"А яблоки добавляют сладкое послевкусие.",
+"Вкус будет лучше, если она добавит две чайные ложки сахара.",
+"Моя собака никогда не ест орехи",
+"Это орех",
+"Эти вишни - слишком кислые.",
+"Когда я вошёл в комнату, ты делала салат.",
+"Арбузы - вкусные.",
+"Он съедает пять чашек ягод и фруктов каждый день.",
+"Эта вишня темно-красная",
+"Почему этот кот ест ягоды?",
+"Если ты принесешь дыню мы поедим её вместе",
+"Том съел все эти арбузы",
+"Давай порежем дыню для нашего салата!",
+"Если ты хочешь эту красную ягоду, возьми её.",
+"Является ли арбуз фруктом?",
+"Мне нравится русская кухня",
+"Он ест печеньку",
+"Она приготовила мне рыбу",
+"Не ешь этот красный гриб!",
+"Я перемешиваю два цвета.",
+"Санта Клаус ест печеньки.",
+"Ты хочешь испечь или пожарить эти овощи?",
+"Вы предпочитаете русскую или английскую кухню?",
+"Они предпочитают не смешивать красные и жёлтые фрукты вместе.",
+"Мэри пошла на кухню пожарить немного грибов.",
+"Положи ягоды на стол в кухне",
+"Я готовил рис.",
+"Они запекали мясо с орехами вчера?",
+"Он пользуется этой ложкой.",
+"Кто пьёт из этой чашки?",
+"Они собираются жарить картошку этим вечером",
+"Морковки могут быть оранжевые, красные, жёлтые и даже белые.",
+"Нам понадобятся две крупные картофелины и три или четыре мелкие луковицы.",
+"Они используют слишком много чеснока.",
+"Ему нравятся арбузы больше, чем дыни.",
+"Вот ягоды для фруктового салата.",
+"Нет ничего лучше арбузов",
+"Повара готовят.",
+"Мальчик ест печеньку",
+"Я повар.",
+"Где находится кухня?",
+"Я предпочитаю готовить в кухне.",
+"Я смешаю орехи с грибами.",
+"Я не нашёл чеснока тут.",
+"Я ем орехи.",
+"Эти вишни - слишком кислые, они не дадут сладкого сока.",
+"Не ешь эти белые вишни",
+"Моя бабушка обожает печь.",
+"Кухня комната где люди готовят",
+"",
+""
+]
+},
+{
+	"level" : "5",
+	"topic" : [
+	"Цвета 3"
+],
+len:[0,0],
+"en":[
+"We found a gray card.",
+"my sister has a golden dress",
+"That pineapple is green.",
+"shades of gray",
+"Can I take your light green coat?",
+"This shirt is violet",
+"These are three golden oranges.",
+"This is the golden cup.",
+"Cut some green onions, please.",
+"I like her Violet dress",
+"There are a lot of names for the different shades of violet.",
+"The keys are Grey",
+"dark gray",
+"Our bags were green.",
+"",
+""
+],
+"ru":[
+"Мы нашли серую карточку",
+"У моей сестры есть золотое платье.",
+"Тот ананас зелёный",
+"Оттенки серого",
+"Могу я взять твоё светло-зелёное пальто?",
+"Эта рубашка фиолетовая.",
+"Это три золотых апельсина.",
+"Это золотой кубок.",
+"Нарежь немного зелёного лука, пожалуйста.",
+"Мне нравится её фиолетовое платье.",
+"Есть много названий для разных оттенков фиолетового",
+"Ключи серые",
+"Темно-серый",
+"Наши сумки были зелёные.",
+"",
+""
+]
+},
+{
+	"level" : "5",
+	"topic" : [
+	"Одежда 3"
+],
+len:[0,0],
+"en":[
 "",
 ""
 ],
@@ -4806,74 +5026,152 @@ len:[0,0],
 {
 	"level" : "5",
 	"topic" : [
-	"Цвета 3"
-	]
-},
-{
-	"level" : "5",
-	"topic" : [
-	"Одежда 3"
-	]
-},
-{
-	"level" : "5",
-	"topic" : [
 	"Дом 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Тело 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Продукты 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Растения 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Ребёнок 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Здоровье 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Mammals 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Животные 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Словарь 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Герундий 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
