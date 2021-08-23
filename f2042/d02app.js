@@ -10,7 +10,11 @@ class RoundSimple{
   show(){
     for (var name in this.test.asks){
       var text = this.test.asks[name]
-      $("<p>"+ text +"</p>").appendTo(".container1")
+      let ask = $("<p>"+ text +"</p>")
+      ask.appendTo(".container1")
+      ask.addClass("ask")
+      ask.appendTo(".container1")
+      ask.addClass("ask")
     }
     for (var name in this.test.variants){
       var text = this.test.variants[name]
@@ -19,6 +23,7 @@ class RoundSimple{
       const div11 = $("<div>"+ text +"</div>")
       div11.addClass("request")
       div11.addClass("rounded")
+      div11.addClass("simple-request")
       div11.appendTo(div1)
 
       div1.appendTo(".container1")
@@ -59,7 +64,9 @@ class RoundInput{
   show(){
     for (var name in this.test.asks){
       var text = this.test.asks[name]
-      $("<p>"+ text +"</p>").appendTo(".container1")
+      let ask = $("<p>"+ text +"</p>")
+      ask.appendTo(".container1")
+      ask.addClass("ask")
     }
 
   this.input = $("<input type='text' size='40'>")  
@@ -93,7 +100,9 @@ class RoundOrdered{
 
     for (var name in this.test.asks){
       var text = this.test.asks[name]
-      $("<p>"+ text +"</p>").appendTo(".container1")
+      let ask = $("<p>"+ text +"</p>")
+      ask.appendTo(".container1")
+      ask.addClass("ask")
     }
   
     for (var o in this.test.variants[1]){
@@ -175,7 +184,9 @@ class RoundDrop{
 
     for (var name in this.test.asks){
       var text = this.test.asks[name]
-      $("<p>"+ text +"</p>").appendTo(".container1")
+      let ask = $("<p>"+ text +"</p>")
+      ask.appendTo(".container1")
+      ask.addClass("ask")
     }
   
     for (var o in this.test.variants[1]){

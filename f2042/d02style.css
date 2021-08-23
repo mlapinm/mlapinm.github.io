@@ -1,4 +1,9 @@
 
+body{
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  line-height: 0.9;
+}
 
 p{
   margin:2px;
@@ -16,11 +21,12 @@ h4{
 }
 
 .container1{
-  height:200px;
+  height:40vh;
+  text-align: center;
 }
 
 .request{
-  width: 80%;
+  width: 90%;
 }
 
 .request_drop{
@@ -43,4 +49,27 @@ h4{
 }
 .red{
   background-color: pink;
+}
+
+.ask{
+  border: 1px solid;
+  padding: 0.3rem;
+  text-align: left;
+  background-color: aqua;
+  border-radius: 0.4rem;
+}
+
+.button {
+  font-size: large;
+  width: 8rem;
+  border-radius: 1rem;
+}
+
+.simple-request {
+  /* background-color:papayawhip; */
+  border-radius: 0.4rem;
+  padding: 0.2rem 1rem;
+  border: 2px solid;
+  margin: 3px;
+  border-color: greenyellow;
 }
