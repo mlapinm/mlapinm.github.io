@@ -138,6 +138,10 @@ $(() => {
 
             level.click((e) => {
                 let num = $(e.target).attr('data')
+                num = Math.floor(num)
+                if(!mFullItem(items[num])){
+                    return
+                }
                 levels[checkedLevel].removeClass('checked-level')
 
                 levels[Math.floor(num)].addClass('checked-level')

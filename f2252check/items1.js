@@ -310,10 +310,48 @@ len:[0,0],
 ],
 len:[0,0],
 "en":[
+"Hi how are you",
+"Bye mom and dad",
+"Oh interesting",
+"Are you a doctor",
+"This wine is from Russia",
+"Bye Anna",
+"This song is great!",
+"Good night",
+"Is he a professor or a student",
+"Good night Anna and Ben",
+"Is he a teacher",
+"Excuse me are you a doctor",
+"This is interesting.",
+"Are you a doctor Ben",
+"This beer is great thanks",
+"Yes, this song is fun.",
+"this song is not famous",
+"This beer is also great",
+"Good night and thanks",
 "",
 ""
 ],
 "ru":[
+"Привет, как ты?",
+"Пока, мама и папа!",
+"Ох, интересно!",
+"Вы доктор?",
+"Это вино из России.",
+"Пока, Анна!",
+"Эта песня отличная!",
+"Спокойной ночи!",
+"Он профессор или студент?",
+"Спокойной ночи, Анна и Бен!",
+"Он учитель?",
+"Извини, ты доктор?",
+"Это интересно.",
+"Ты доктор, Бен?",
+"Это пиво отличное, спасибо!",
+"Да, эта песня весёлая.",
+"Эта песня не известная.",
+"Это пиво тоже отличное.",
+"Спокойной ночи, и спасибо!",
 "",
 ""
 ]
@@ -325,10 +363,45 @@ len:[0,0],
 ],
 len:[0,0],
 "en":[
-"",
+"I like jazz but my husband likes hip hop",
+"My wife likes to swim.",
+"My favorite hobby is music",
+"I really like hockey",
+"I like hip hop but my husband likes jazz",
+"Oh my husband likes to cook",
+"Chess is cool.",
+"My daughter likes to swim.",
+"Oh, my hobby is really interesting.",
+"I really like to swim",
+"My daughter likes to sing.",
+"Do you like to cook?",
+"Do you like to sing?",
+"I like to cook and you",
+"I like jazz but my wife likes rock",
+"Oh hockey is really cool",
+"My friend likes cool music",
+"I like chess, but my favorite hobby is music.","",
 ""
 ],
 "ru":[
+"Я люблю джаз, но мой муж любит хип-хоп.",
+"Моя жена любит плавать.",
+"Мое любимое увлечение – музыка.",
+"Я очень люблю хоккей.",
+"Я люблю хип-хоп, но мой муж любит джаз.",
+"Ох, мой муж любит готовить.",
+"Шахматы классные.",
+"Моя дочь любит плавать.",
+"Ох, мое увлечение очень интересное.",
+"Я очень люблю плавать.",
+"Моя дочь любит петь.",
+"Ты любишь готовить?",
+"Ты любишь петь?",
+"Я люблю готовить, а ты?",
+"Я люблю джаз, но моя жена любит рок.",
+"Ох, хоккей очень классный!",
+"Мой друг любит классную музыку.",
+"Я люблю шахматы, но мое любимое увлечение – музыка.",
 "",
 ""
 ]
@@ -337,6 +410,110 @@ len:[0,0],
 	"level" : "1",
 	"topic" : [
 	"ресторан"
+],
+len:[0,0],
+"en":[
+"A Restaurant in Moscow",
+"I would like two pizzas and one soda, please.",
+"Excuse me I would like a cupcake to go",
+"I love this restaurant",
+"cheers Maksim",
+"Hello, I'm your server, Anna.",
+"cheers mom and dad",
+"Welcome are you together",
+"cheers sofia",
+"I would like a cupcake",
+"is our server from Russia",
+"Excuse me, are you our server?",
+"Here's your check",
+"I love this restaurant",
+"Your two pizzas",
+"I would like two pizzas and one soda, please.",
+"enjoy your meal Sveta",
+"Here's your pizza enjoy your meal",
+"enjoy your meal Ben",
+"",
+""
+],
+"ru":[
+"ресторан в Москве",
+"Я бы хотел две пиццы и одну газировку, пожалуйста.",
+"Извините, я бы хотела пирожное с собой.",
+"Я люблю этот ресторан.",
+"За ваше здоровье, Максим!",
+"Здравствуйте, я ваша официантка, Анна.",
+"За ваше здоровье, мама и папа!",
+"Добро пожаловать, вы вместе?",
+"За ваше здоровье, София!",
+"Я бы хотел пирожное.",
+"Наш официант из России?",
+"Извините вы наш официант",
+"Здравствуйте, вы вместе?",
+"Я люблю этот ресторан.",
+"ваши две пиццы",
+"Я бы хотел две пиццы и одну газировку, пожалуйста.",
+"Приятного аппетита, Света!",
+"Ваша пицца Приятного аппетита,!",
+"Приятного аппетита, Бен!",
+"",
+""
+]
+},
+{
+	"level" : "1",
+	"topic" : [
+	"питомцы"
+],
+len:[0,0],
+"en":[
+"Oh, my old cat plays a lot!",
+"No Sharik is not friendly",
+"of course my cat sleeps a lot",
+"do you have four dogs",
+"Yes, my snake sleeps a lot.",
+"I love my four dogs so much",
+"Aw, Sharik is really cute.",
+"Yes I have three snakes",
+"I have three cats and a dog",
+"Yes, I have three dogs and two cats.",
+"Your bird is so cute, Sofia!",
+"Do you have three cats",
+"He's a good dog",
+"Aw Murka likes jazz",
+"Oh your bird sleeps a lot.",
+"Yes Sharik is a good dog",
+"Aw this cat is so cute",
+"Aw Your dog is so friendly",
+"",
+""
+],
+"ru":[
+"Ох, моя старая кошка играет много!",
+"Нет, Шарик не дружелюбный!",
+"Конечно, моя кошка спит много.",
+"У тебя есть четыре собаки?",
+"Да, моя змея спит много.",
+"Я люблю моих четырех собак так сильно!",
+"Ой, Шарик очень славный.",
+"Да, у меня есть три змеи.",
+"У меня есть три кошки и собака.",
+"Да, у меня есть три собаки и две кошки.",
+"Твоя птица такая славная, София!",
+"У тебя есть три кошки?",
+"Он — хорошая собака.",
+"Ой, Мурка любит джаз!",
+"Ох, ваша птица спит много!",
+"Да, Шарик – хорошая собака!",
+"Ой, эта кошка такая славная!",
+"Ой, твоя собака такая дружелюбная!",
+"",
+""
+]
+},
+{
+	"level" : "2",
+	"topic" : [
+	"еда"
 ],
 len:[0,0],
 "en":[
@@ -349,418 +526,1009 @@ len:[0,0],
 ]
 },
 {
-	"level" : "1",
-	"topic" : [
-	"питомцы"
-	]
-},
-{
-	"level" : "2",
-	"topic" : [
-	"еда"
-	]
-},
-{
 	"level" : "2",
 	"topic" : [
 	"романтика"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"в пути"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"привычки"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"покупки"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"0 расписания"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"поездки"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"отель"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"город"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"универ"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"свидание"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"офис"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"рынок"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"праздник"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"переезд"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"у доктора"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"пикник"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"мой город"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"отпуск"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"покупки 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"спорт"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"офис 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"зоопарк"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"музыка"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"погода"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"на машине"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"основы 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Одежда 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"моя семья2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"связи 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"to be=быть"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"фразы 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Животные 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"еда 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Мн. искл 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Мн. число 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"THE 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Не быть 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Посчитаем"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Наст.вр.2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Ощущения 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Кем быть 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Наст.вр. 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Глаголы 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Наст.дл. 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Наст.пр. 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Прит. формы"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Семья 4"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Вопросы 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Предлоги 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Наст.буд.2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Going to 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Будущее 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Союзы 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Длит.вр.2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "8",
 	"topic" : [
 	"8888888"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "8",
 	"topic" : [
 	"8888888"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Срав.ст.2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Наречия 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Прош.вр.2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Past 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Непр.гл.2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Past 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Сравнение2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Email 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Past: C+S"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Пр. сов. 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Пасс.залог"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
@@ -2263,10 +3031,446 @@ len:[0,0],
 	],
 	len:[0,0],
 	"en":[
+"I am behind you.",
+
+"They kept running around me.",
+
+"turn around",
+
+"Do not look back! She is right behind you.",
+
+" she kept her hands under the running water",
+
+"She was looking at me.",
+
+"he kept something small under his hand ",
+
+"Are you looking for good company?",
+
+"My friends are looking for me.",
+
+"look right at the blue toy",
+
+"Who is behind you?",
+
+"Look around you! Do you see any friends?",
+
+"Check under the train maybe they are there ",
+
+"The dogs slowly walked around me.",
+
+"Is he speaking Italian right now?",
+
+"His hands were behind his back.",
+
+"My door is always open.",
+
+"This window is a little strange.",
+
+"I will find out who did it.",
+
+"She looked out the window but saw nothing interesting.",
+
+"He took out his phone and called someone.",
+
+"Next time, come in through the door.",
+
+"He always leave the window open when he sleeps",
+
+"He turned his head toward me.",
+
+"The bananas were cut into halves.",
+
+"She first looked toward the door, then toward the window.",
+
+"I heard some voices through the door.",
+
+"They all looked toward me.",
+
+"nothing could cut it through",
+
+"We got into a traffic jam.",
+
+"Her brother went into the water.",
+
+"Hands up!",
+
+"I stood up",
+
+"The price is up to you.",
+
+"I was walking along the street.",
+
+"The horses will be running along the river.",
+
+"The boyfriend and girlfriend walked along the beach.",
+
+"The movie theater is on this street.",
+
+"a walk along the beach",
+
+"he stood behind his father and did not say anything",
+
+"The cat looked up, right at the bird.",
+
+"He walked across the street and turned home.",
+
+"She got up earlier today to come on time",
+
+"She stood near me but did not Help",
+
+"The dogs kept moving across the street.",
+
+"our lunches",
+
+"I will help you with your homework after dinner.",
+
+"Many animals sleep during winter.",
+
+"He stayed two days without food.",
+
+"They called me after a few days.",
+
+"He runs without shoes ",
+
+"I try to live without her.",
+
+"They never talk during meals.",
+
+"After all, tomorrow is another day!",
+
+"The food is especially popular during the summer ",
+
+"They never talk during meals.",
+
+"She should drink water with every meal.",
+
+"I run for half an hour after every meal.",
+
+"I never eat anything between meals ",
+
+"She told me this morning, during breakfast.",
+
+"According to this book, horses and birds are relatives.",
+
+"Take off your shoes ",
+
+"They told us to take off our clothes.",
+
+"We all voted against him, including his brother.",
+
+"We will play against their team next time.",
+
+"They are either with us or against us.",
+
+"I am taking off my hat.",
+
+"According to the schedule the train arrives at a quarter to nine",
+
+"We all voted according to the rules.",
+
+"His books are currently popular among students.",
+
+"We all like to spend time among our friends.",
+
+"I voted according to what I believed at that time.",
+
+"She knew all the Rules including The least important",
+
+"Among all our rules, this one is the most important.",
+
+"Turn around ",
+
+"I heard something outside, right under the windows.",
+
+"His name is written right on the book.",
+
+"My room is not bright, the window is too small.",
+
+"His brown eyes looked through me.",
+
+"My door is always open",
+
+"Look into my eyes ",
+
+"At first we walked toward home.",
+
+"The actor walks on the beach.",
+
+"She turned away from him and ran across the street.",
+
+"a walk along the beach",
+
+"I walk along the river every morning.",
+
+"The price is up to you.",
+
+"We will come back the day after tomorrow.",
+
+"Usually, I work three to four hours before lunch and only two hours after",
+
+" I'm not going to work all day without lunch",
+
+"we will read after dinner before they go to sleep",
+
+"Among those letters, I found one from my sister.",
+
+"This book is popular among the students.",
+
+"turn off the water please",
+
+"He is behind you!",
+
+"I'm looking for my friends",
+
+"This is a little house with open doors.",
+
+"The house was divided into four rooms ",
+
+"She should put her money into a bank account.",
+
+"We swam across that river several times.",
+
+"My sister will be looking after them while I am working.",
+
+"She drinks coffee without sugar.",
+
+"That is the price without taxes.",
+
+"We do not sell this medicine without a prescription.",
+
+"Take off your coat!",
+
+"I am against this project.",
+
+"I can't take my eyes off you.",
+
+"He's popular among the girls",
+
+"He takes off his clothes and goes to sleep.",
+
 	"",
 	""
 	],
 	"ru":[
+"Я за тобой",
+
+"Они продолжали Бегать вокруг меня ",
+
+"Обернись вокруг!",
+
+"Не смотри назад она прямо позади тебя",
+
+"Она держала свои руки под бегущей водой.",
+
+"Она смотрела на меня.",
+
+"Он держал что-то маленькое под своей рукой.",
+
+" Вы ищете хорошую компанию",
+
+"Мои друзья ищут меня.",
+
+"Смотри прямо на синюю игрушку!",
+
+"Кто за вами?",
+
+"Посмотри вокруг себя ты видишь каких-нибудь друзей",
+
+"Проверь под поездом! Может быть, они - там.",
+
+"Собаки медленно обошли вокруг меня.",
+
+"Он говорит по-итальянски прямо сейчас ",
+
+"Его руки были за его спиной.",
+
+"Моя дверь всегда открыта ",
+
+"Это окно немного странное",
+
+"Я выясню кто это сделал",
+
+"Она выглянула в окно, но не увидела ничего интересного.",
+
+"Он вынул свой телефон и позвонил кому-то.",
+
+"В следующий раз входи через дверь.",
+
+"Он всегда оставляет это окно открытым, когда он спит.",
+
+"Он повернул свою голову в мою сторону.",
+
+"Бананы были нарезаны на половинки.",
+
+"Она сперва посмотрела в сторону двери, затем в сторону окна.",
+
+"Я слышала какие-то голоса сквозь дверь.",
+
+"Они все посмотрели в мою сторону ",
+
+"Ничто не могло прорезать его насквозь.",
+
+"Мы попали в пробку.",
+
+"Её брат вошёл в воду.",
+
+"Руки вверх ",
+
+"Я встал.",
+
+"Цена на твоё усмотрение",
+
+"Я шёл вдоль улицы.",
+
+"Лошади будут бежать вдоль реки.",
+
+"Парень и девушка гуляли вдоль пляжа.",
+
+"Кинотеатры находится на этой улице ",
+
+"прогулка вдоль пляжа",
+
+"Он стоял позади своего отца и не говорил ничего.",
+
+"Кошка посмотрела вверх прямо на птицу",
+
+"Он прошёл улицу и повернул домой.",
+
+"Она встала пораньше сегодня, чтобы прийти вовремя.",
+
+"Она стояла рядом со мной но не помогла",
+
+"Собаки продолжили двигаться на другую сторону улицы.",
+
+"Наши обеды.",
+
+"Я помогу тебе с твоим домашним заданием после ужина.",
+
+"Многие животные спят зимой",
+
+"Он оставался два дня без еды.",
+
+"Они позвонили мне спустя несколько дней.",
+
+"Он бегает без обуви.",
+
+"Я пытаюсь жить без неё.",
+
+"Они никогда не разговаривают во время еды",
+
+"В конце концов завтра Новый день ",
+
+"Эта еда особенно популярна в течение лета.",
+
+"Они никогда не разговаривают во время приёмов пищи.",
+
+"Ей следует пить воду с каждым приемом пищи ",
+
+"Я бегаю по полчаса после каждого приема пищи ",
+
+"Я никогда не ем ничего между приёмами пищи.",
+
+"Она сказала мне сегодня утром, во время завтрака.",
+
+"Согласно этой книге лошади и птицы являются родственниками",
+
+"Снимите вашу обувь!",
+
+"Они сказали Нам снять нашу одежду ",
+
+"Мы все проголосовали против него включая его брата",
+
+"Мы сыграем против их команды в следующий раз",
+
+"Они либо с нами либо против нас",
+
+"Я снимаю свою шапку.",
+
+"Согласно расписанию, поезд прибывает без четверти девять.",
+
+"Мы все проголосовали согласно правилам",
+
+"Его книги в настоящее время популярны среди студентов.",
+
+"Мы все любим проводить время среди своих друзей",
+
+"Я голосовал согласно тому, во что я верил в то время.",
+
+"Она знала все правила, включая наименее важные.",
+
+"Среди всех наших правил это является наиболее важным.",
+
+"Обернись вокруг!",
+
+"Я услышал что-то снаружи, прямо под окнами.",
+
+"Его имя написано прямо на книге.",
+
+"Моя комната не светлая, окно слишком маленькое.",
+
+"Его карие глаза смотрели сквозь меня.",
+
+"Моя дверь всегда открыта.",
+
+"Посмотри мне в глаза!",
+
+"Сперва мы пошли в сторону дома.",
+
+"Актер гулял по пляжу",
+
+"Она отвернулась от него и побежала через улицу.",
+
+"прогулка вдоль пляжа",
+
+"Я хожу вдоль реки каждое утро.",
+
+"Цена - на твоё усмотрение.",
+
+"Мы вернемся послезавтра",
+
+"Обычно я работаю три-четыре часа до обеда и только два часа после.",
+
+"Я не собираюсь работать весь день без обеда ",
+
+"Мы почитаем после ужина, до того как они пойдут спать.",
+
+"Среди тех писем я нашла одно от своей сестры.",
+
+"Эта книга популярна среди студентов.",
+
+"Выключи воду, пожалуйста!",
+
+"он за тобой",
+
+"Я ищу моих друзей",
+
+"Это маленький дом с открытыми дверьми.",
+
+"Дом был разделён на четыре комнаты.",
+
+"Ей следует положить свои деньги на банковский счёт.",
+
+"Мы переплыли ту реку несколько раз.",
+
+"Моя сестра будет присматривать за ними, пока я работаю.",
+
+"Она пьёт кофе без сахара.",
+
+"Это - цена без налогов.",
+
+"Мы не продаем это лекарство без рецепта",
+
+"Сними свой плащ!",
+
+"Я против этого проекта.",
+
+"Я не могу отвести глаз от тебя.",
+
+"он Популярен среди девочек",
+
+"Он снимает свою одежду и идёт спать.",
+
 	"",
 	""
 	]
@@ -2278,10 +3482,358 @@ len:[0,0],
 	],
 	len:[0,0],
 	"en":[
+"It is a long process. It will take about seven weeks.",
+
+"our company built two new Offices last year ",
+
+"there will be ten students in each group",
+
+"A team is not just a group of people.",
+
+"I need to find some information about that company ",
+
+"He thinks that the results will be very bad.",
+
+"As a result we will not be able to buy a house this year",
+
+"I need to find some information about that company.",
+
+"We took the same process and only changed red to blue.",
+
+"When I came to the school, I saw a group of children.",
+
+"he had one little problem though he had no money",
+
+"The problem was in that business process itself.",
+
+"He was my student.",
+
+"In fact, they were right. She did not help us.",
+
+"Is he a student?",
+
+"Their bank system is much better.",
+
+"Do you watch news programs?",
+
+"Long story short, we found many problems in their system.",
+
+"I often read about interesting music facts ",
+
+"This is a news program ",
+
+"Why not use some other program?",
+
+"People love to tell stories about themselves, their friends and relatives.",
+
+"She knows all our group and system processes well.",
+
+"I give you my word.",
+
+"I believe her words.",
+
+"I do not feel like a part of the team.",
+
+"She works in the head office of our company.",
+
+"Some people believed him, others did not.",
+
+"His words are special ",
+
+"Let's see what the others are doing.",
+
+"This is the most interesting part of the movie ",
+
+"All things must be in their places.",
+
+"Ask the others what they think about it.",
+
+"I like the restaurants in this part of the city.",
+
+"Our work week starts on Sunday.",
+
+"Not everything in life is black and white",
+
+"Reading and writing are the most important parts of our program ",
+
+"She wrote a few works about animals.",
+
+"Name the three things that you love the most",
+
+"The exit is to the right.",
+
+"They changed the world",
+
+"Always look on the bright side of life.",
+
+"They voted against the new law.",
+
+"How many countries are there in the world ",
+
+"The library is on the right.",
+
+"You can write on either side.",
+
+"I saw him on the other side of the street.",
+
+"How many countries took part in World War I?",
+
+"My parents married during World War II.",
+
+"Well you should look on the bright side ",
+
+"It is even more important to respect our laws during wartime.",
+
+"She told me about her work with animal rights groups.",
+
+"There were many people at the concert last night.",
+
+"She knows his face.",
+
+"I don't see his face",
+
+"He has a weak body.",
+
+"Nobody loves me.",
+
+"I see myself in the mirror at night.",
+
+"Yes, my health is very important to me.",
+
+"How is your grandfather's health?",
+
+"The three most important things for me are health, family and money.",
+
+"One side of his face was blue and the other one was red.",
+
+"We spent all night in the car.",
+
+"Somebody told her that she would become an actress.",
+
+"Nobody wants to wait for hours.",
+
+"Money can't buy health or love.",
+
+"They changed their business processes and increased their profit as a result.",
+
+"Long story short, she turned out to be his wife.",
+
+"I cannot talk I'm at work ",
+
+"I like to play with words",
+
+"A cow's stomach has four parts.",
+
+"What is this thing",
+
+"He kept his word.",
+
+"Check the other side of the car",
+
+"We are against the war.",
+
+"There were five windows on each side of the house.",
+
+"they changed the world",
+
+"Good night, see you tomorrow.",
+
+"he has a weak body",
+
+"You should relax your body.",
+
+"The students can change their program after the second year.",
+
+"He answered: I will tell you one thing.",
+
+"not a word more",
+
+"she turns to the right",
+
+"Where were you last night",
+
+"Good night see you tomorrow",
+
+"Where were they on Saturday night?",
+
 	"",
 	""
 	],
 	"ru":[
+"Это - долгий процесс. Он займёт около семи недель.",
+
+"Наша компания построила два новых офиса в прошлом году.",
+
+"В каждой группе будет десять студентов.",
+
+"Команда - это не просто группа людей.",
+
+"Мне нужно найти какую-нибудь информацию об этой компании.",
+
+"он думает что Результаты будут очень плохие",
+
+"В результате, мы не сможем купить дом в этом году.",
+
+"Мне нужно найти какую-нибудь информацию об этой компании.",
+
+"Мы взяли тот же процесс и только заменили красный на синий.",
+
+"Когда я пришёл в школу я увидел группу детей",
+
+"У него была одна маленькая проблема тем не менее. У него не было денег.",
+
+"Проблема была в самом этом бизнес-процессе.",
+
+"Он был моим студентом.",
+
+"На самом деле они были правы она не помогла нам ",
+
+"Он студент",
+
+"их Банковская система намного лучше",
+
+"Ты смотришь новости ",
+
+"Короче, мы нашли много проблем в их системе.",
+
+"Я часто читаю об интересных музыкальных фактах.",
+
+"Это - новостная программа.",
+
+"Почему бы не использовать какую-нибудь другую программу?",
+
+"Люди обожают рассказывать истории про себя, своих друзей и родственников.",
+
+"Она знает все наши групповые и системные процессы хорошо.",
+
+"Я даю тебе моё слово",
+
+"Я верю её словам",
+
+"Я не чувствую себя частью команды ",
+
+"Она Работает в головном офисе нашей компании ",
+
+"Некоторые люди поверили ему, другие - нет.",
+
+"Его слова особенны.",
+
+"Давай посмотрим, чем занимаются остальные.",
+
+"Это самая интересная часть фильма.",
+
+"Все вещи должны быть на своих местах ",
+
+"Спроси остальных, что они думают об этом.",
+
+"Мне нравятся рестораны в этой части города ",
+
+"Наша рабочая неделя начинается в воскресенье ",
+
+"Не всё в жизни чёрное и белое.",
+
+"Чтение и письмо являются наиболее важными частями нашей программы.",
+
+"Она написала несколько работ о животных.",
+
+"Назови три вещи, которые ты любишь больше всего.",
+
+"Выход справа.",
+
+"Они изменили мир.",
+
+"Всегда смотри на светлую сторону жизни ",
+
+"Они проголосовали против нового закона ",
+
+"Сколько стран есть в мире?",
+
+"Библиотека справа ",
+
+"Ты можешь писать На любой стороне ",
+
+"Я видел его на другой стороне улицы.",
+
+"Сколько стран приняло участие в Первой мировой войне?",
+
+"Мои родители поженились во время Второй мировой войны ",
+
+"Ну, тебе стоит посмотреть на светлую сторону.",
+
+"Ещё более важно уважать наши законы в военное время.",
+
+"Она рассказала мне о своей работе с группами по правам животных.",
+
+"Было много людей на этом концерте прошлой ночью.",
+
+"Она знает его лицо",
+
+"Я не вижу его лицо.",
+
+"У него слабое тело",
+
+"Никто не любит меня ",
+
+"Я вижу себя в зеркале ночью",
+
+"Да, моё здоровье очень важно для меня.",
+
+"Как здоровье твоего дедушки?",
+
+"Три наиболее важные вещи для меня - здоровье, семья и деньги.",
+
+"Одна сторона его лица была синей, а другая - красной.",
+
+"Мы провели всю ночь в машине.",
+
+"Кто-то сказал ей, что она станет актрисой.",
+
+"Никто не хочет ждать часами.",
+
+"Деньги не могут купить здоровье или любовь.",
+
+"Они изменили свои бизнес-процессы и увеличили свою прибыль в результате.",
+
+"Короче она оказалась его женой ",
+
+"Я не могу говорить Я на работе",
+
+"Мне нравится играть со словами.",
+
+"У желудка коровы четыре части.",
+
+"Что это за вещь?",
+
+"Он сдержал своё слово.",
+
+"Проверь другую сторону машины.",
+
+"Мы - против этой войны.",
+
+"На каждой стороне дома было пять окон.",
+
+"Они изменили мир",
+
+"Спокойной ночи Увидимся завтра",
+
+"У него слабое тело.",
+
+"Вам следует расслабить своё тело.",
+
+"Студенты могут изменить свою программу после второго курса.",
+
+"Он ответил: Я скажу тебе одну вещь.",
+
+"ни слова больше",
+
+"Она поворачивает направо.",
+
+"Где ты был прошлой ночью?",
+
+"Спокойной ночи, увидимся завтра.",
+
+"Где они были в субботу ночью?",
+
 	"",
 	""
 	]
@@ -2293,10 +3845,514 @@ len:[0,0],
 ],
 len:[0,0],
 "en":[
+"I always keep ten thousand dollars for a rainy day.",
+
+"We must keep waiting.",
+
+"Let me help you.",
+
+"I will write my address if you bring me a pen.",
+
+"Bring them here, I want to talk to them.",
+
+"Keep trying",
+
+"Let him sleep. He has a fever.",
+
+"My mother does not let me sing loudly.",
+
+"I brought a book.",
+
+"I brought you a red flower on the first day of May.",
+
+"Do you keep dogs",
+
+"He is trying to bring those heavy oranges.",
+
+"Let him read this message.",
+
+"They brought us bananas.",
+
+"Life has just begun.",
+
+"Has he already begun?",
+
+"We are ready to begin.",
+
+"We used to watch movies every week. We don't do that any more.",
+
+"It began raining when I was still at home.",
+
+"what is happening",
+
+"I used to work every day but now I do not work.",
+
+"What is happening in the university?",
+
+"It will not happen if she works quickly.",
+
+"Tom began to work for him last year.",
+
+"Life has just begun.",
+
+"He used to be very strong. Now he is weak.",
+
+"My friend began talking.",
+
+"She is beginning to sing.",
+
+"We are ready to begin.",
+
+"He showed me his office.",
+
+"Tom sat near us.",
+
+"My parents always sit together.",
+
+"The girl puts the dress on.",
+
+"He just sat at home and did nothing.",
+
+"He has never shown me this room.",
+
+"he has never shown me this letter.",
+
+"She puts on her clothes",
+
+"Yesterday I touched a bird.",
+
+"The girl is touching the flowers.",
+
+"He showed me his car.",
+
+"The book seemed interesting to me.",
+
+"That shows how much we know about ourselves",
+
+"The woman is putting on a hat.",
+
+"Her aunt seemed old though she was only thirty.",
+
+"He just sat at home and did nothing.",
+
+"Can you see where your aunt is sitting?",
+
+"You will get used to it soon.",
+
+"She held her hands behind her back.",
+
+"He is standing between you and me.",
+
+"He is holding his daughter.",
+
+"They held hands.",
+
+"He never understands what we say.",
+
+"I thought that he understood me.",
+
+"Nothing is holding us together",
+
+"Get used to it, Tom.",
+
+"I do not get used to new people easily.",
+
+"Yes, I understood you.",
+
+"This time try to stand for longer than you stood last time.",
+
+"Nevertheless, she somehow understood me.",
+
+"Why do they always stand?",
+
+"He held two dollars in his hand.",
+
+"What is she learning?",
+
+"She has grown up since I saw her last time ",
+
+"Please, continue reading!",
+
+"As I Grew Older I began to understand my parents better",
+
+"Where did she learn English ",
+
+"It continues today.",
+
+"He has won twice in the last three years.",
+
+"I am trying to learn English.",
+
+"Yes, they won in two thousand two.",
+
+"He won nine thousand dollars.",
+
+"His parents grew rice",
+
+"We eat only homegrown tomatoes.",
+
+"The Cold and snowy weather continued",
+
+"I grew up in Russia.",
+
+"We are losing money.",
+
+"The boy gives the girl an apple",
+
+"I lost my voice yesterday.",
+
+"He gives me his hat.",
+
+"She gives him her book.",
+
+"Then he offered me more money.",
+
+"He followed kind people",
+
+"What are they offering us?",
+
+"Has she already given you her answer?",
+
+"Follow me!",
+
+"Tell me more about the job you offer.",
+
+"Then she loses again.",
+
+"Our team lost.",
+
+"He lost his wife only a few months ago.",
+
+"The people follow the leader ",
+
+"Do you keep dogs",
+
+"What happened with you yesterday",
+
+"Tell me when to begin ",
+
+"Let me show you your future.",
+
+"It seems she has many friends",
+
+"you are touching me",
+
+"I touched this cat",
+
+"She can't get used to being a married woman.",
+
+"Now I understand my parents.",
+
+"the mother holds her child",
+
+"Hold my hand.",
+
+"Please, continue",
+
+"In seven years his debt grew to seventeen thousand dollars.",
+
+"Our team won the game.",
+
+"We are following the black car.",
+
+"They offered us their help.",
+
+"I lost my passport",
+
+"They are offering her a job",
+
+"Could you bring her a pen",
+
+"What is happening?",
+
+"I did not remember what happened ",
+
+"The book begins with a question.",
+
+"Has he already begun?",
+
+"The boy was touching the cat.",
+
+"I do not want to sit near that man.",
+
+"After dinner our grandfather always sits here.",
+
+"The little girl showed me a book about a pink elephant.",
+
+"Did you understand me?",
+
+"Could you hold the door, please?",
+
+"She understood well what she had to do.",
+
+"This time try to This time try to for longer than you stood last time. for longer than you stood last time.",
+
+"We continue to learn more about ourselves",
+
+"She gives a wallet.",
+
+"It is good that you followed the rules.",
+
+"I would like to lose a few pounds.",
+
+"Then she loses again.",
+
 "",
 ""
 ],
 "ru":[
+"Я всегда держу десять тысяч долларов на черный день",
+
+"Мы обязаны продолжать ждать.",
+
+"Позволь мне помочь тебе.",
+
+"Я напишу свой адрес, если ты принесёшь мне ручку.",
+
+"Приведите их сюда, я хочу поговорить с ними.",
+
+"Продолжай пробовать.",
+
+"Пусть он спит. У него температура.",
+
+"Моя мать не позволяет мне петь громко",
+
+"я принес книгу",
+
+"Я принёс тебе красный цветок в первый день мая.",
+
+"Ты держишь собак?",
+
+"Он пытается принести те тяжёлые апельсины.",
+
+"Дай прочитать ему это сообщение.",
+
+"Они принесли нам бананы.",
+
+"Жизнь только началась.",
+
+"Он уже начал",
+
+"Мы готовы начать.",
+
+"Мы имели обыкновение смотреть фильмы каждую неделю. Мы не делаем этого больше.",
+
+"Дождь начался когда я ещё была дома.",
+
+"Что происходит",
+
+"Я имел обыкновение работать каждый день, но теперь я не работаю.",
+
+"Что происходит в университете",
+
+"Это не случится, если она будет работать быстро.",
+
+"Том начал работать на него в прошлом году.",
+
+"Жизнь только началась",
+
+"Он раньше был очень сильным. Теперь он - слабый.",
+
+"Мой друг начал говорить.",
+
+"Она начинает петь",
+
+"Мы готовы начать.",
+
+"Он показал мне свой офис.",
+
+"Том сел рядом с нами.",
+
+"Мои родители всегда сидят вместе.",
+
+"Девочка надевает платье",
+
+"Он просто сидел дома и ничего не делал.",
+
+"Он никогда не показывал мне эту комнату",
+
+"Она никогда не показывала мне то письмо",
+
+"Она надевает свою одежду.",
+
+"Вчера я трогал птицу.",
+
+"Девочка трогает цветы",
+
+"Он показал мне свою машину",
+
+"Книга показалась мне интересной.",
+
+"Это показывает, как много мы о себе знаем.",
+
+"Женщина надевает шляпу.",
+
+"Ее тетя выглядит старой хотя ей только тридцать",
+
+"Он просто сидел дома и ничего не делал.",
+
+"Ты видишь где сидит твоя тётя?",
+
+"Ты скоро к этому привыкнешь ",
+
+"Она держала свои руки за своей спиной",
+
+"Он стоит между тобой и мной.",
+
+"Он держит свою дочь.",
+
+"Они держались за руки.",
+
+"Он никогда не понимает что мы говорим.",
+
+"Я думал он понял меня",
+
+"Ничто не держит нас вместе.",
+
+"привыкай к этому Том",
+
+"Я не привыкаю к новым людям легко.",
+
+"Да, я понял вас.",
+
+"В этот раз попытайся стоять дольше, чем ты стоял в прошлый раз.",
+
+"Тем не менее, она как-то поняла меня.",
+
+"Почему они всегда стоят",
+
+"Он держал два доллара в своей руке",
+
+"что Она учит ",
+
+"Она повзрослела с тех пор, как я её видел в прошлый раз.",
+
+"Пожалуйста продолжай читать ",
+
+"Став старше, я начал понимать своих родителей лучше.",
+
+"Где она учила английский?",
+
+"Это продолжается сегодня ",
+
+"Он победил дважды за последние три года.",
+
+"Я пытаюсь учить английский",
+
+"Да, они выиграли в две тысячи втором.",
+
+"Он выиграл девять тысяч долларов",
+
+"Его родители выращивали рис.",
+
+"Мы едим только домашние томаты",
+
+"Холодная и снежная погода продолжалась.",
+
+"Я вырос в России",
+
+"Мы теряем деньги",
+
+"Мальчик дает девочке яблоко",
+
+"Я потерял свой голос вчера",
+
+"Он даёт мне свою шляпу.",
+
+"Она даёт ему свою книгу.",
+
+"Тогда он предложил мне больше денег.",
+
+"Он следовал за добрыми людьми.",
+
+"Что они предлагают нам",
+
+"Она уже дала тебе свой ответ?",
+
+"Следуйте за мной ",
+
+"Расскажите мне больше о должности, которую вы предлагаете.",
+
+"Потом она проигрывает опять.",
+
+"Наша команда проиграла",
+
+"Он потерял свою жену лишь несколько месяцев назад.",
+
+"Люди следуют за лидером.",
+
+"Ты держишь собак?",
+
+"Что случилось с тобой вчера ",
+
+"Скажи мне, когда начинать.",
+
+"Позволь мне показать тебе твоё будущее.",
+
+"Кажется, у неё много друзей.",
+
+"Ты касаешься меня.",
+
+"Я трогала эту кошку.",
+
+"Она не может привыкнуть быть замужней женщиной.",
+
+"Теперь я понимаю своих родителей.",
+
+"Мать держит своего ребенка.",
+
+"Держи мою руку.",
+
+"Пожалуйста, продолжайте!",
+
+"За семь лет его долг вырос до семнадцати тысяч долларов.",
+
+"Наша команда выиграла эту игру.",
+
+"Мы следуем за чёрной машиной.",
+
+"Они предложили нам свою помощь ",
+
+"Я потерял свой паспорт.",
+
+"Они предлагают ей работу.",
+
+"Мог бы ты принести ей ручку?",
+
+"Что происходит?",
+
+"Я не помнил, что произошло.",
+
+"Книга начинается с вопроса.",
+
+"Он уже начал?",
+
+"Мальчик трогал кошку",
+
+"Я не хочу сидеть рядом с тем мужчиной.",
+
+"После ужина наша бабушка всегда сидит здесь",
+
+"Маленькая девочка показала мне книгу про розового слона.",
+
+"Вы поняли меня?",
+
+"Не могли бы вы подержать дверь, пожалуйста?",
+
+"Она понимала хорошо, что она должна была делать.",
+
+"В этот раз попытайся стоять дольше, чем ты стоял в прошлый раз.",
+
+"Мы продолжаем узнавать больше о себе",
+
+"Она даёт бумажник.",
+
+"Это хорошо, что ты следовал правилам.",
+
+"Я бы хотела похудеть на несколько фунтов.",
+
+"Потом она проигрывает опять.",
+
 "",
 ""
 ]
@@ -2308,10 +4364,425 @@ len:[0,0],
 ],
 len:[0,0],
 "en":[
+"The bird was flying very low.",
+
+"Prices are higher here than in your city.",
+
+"It is the highest tax in the country.",
+
+"These houses are high.",
+
+"Our house is higher than yours.",
+
+"Are prices lower in France?",
+
+"Her salary was even lower than mine",
+
+"My price is the lowest.",
+
+"The salaries of these teachers are low.",
+
+"It is the country with the lowest income tax.",
+
+"Who offered the highest price?",
+
+"The birds were flying too high.",
+
+"People with the lowest income need our help.",
+
+"You won't find a country with lower taxes.",
+
+"My house is very high",
+
+"Prices there are at least ten times high",
+
+"He has a large dog.",
+
+"Russia is the largest country in the world.",
+
+"He lives in that large house.",
+
+"Large families are happy.",
+
+"This river is the largest.",
+
+"He began to work early.",
+
+"The earliest tax systems were not very good.",
+
+"Is their office larger than ours?",
+
+"My latest book is selling very well.",
+
+"It is the earliest of his works.",
+
+"These birds leave this place in late winter or early spring.",
+
+"we will be there at ten at the latest",
+
+"Is their office larger than ours?",
+
+"Yes, her company is the largest in this country.",
+
+"You came too early",
+
+"Turn left!",
+
+"It is very far.",
+
+"I can write from right to left.",
+
+"Yes, I am sure.",
+
+"Their house is far from my shop.",
+
+"It is my left hand.",
+
+"My answers are wrong.",
+
+"Do they sell used books ",
+
+"I am not used to such cold.",
+
+"This is also wrong.",
+
+"I bought a used car.",
+
+"She's far from sure ",
+
+"There is nothing wrong with it.",
+
+"He wanted to be sure that they were not following me.",
+
+"Make sure this is the right address",
+
+"Sit down please!",
+
+"We both looked down.",
+
+"What else?",
+
+"Let's move forward.",
+
+"Instead of moving back, we must move forward.",
+
+"Is she happy? - Not quite.",
+
+"He finally allowed this",
+
+"She was looking back instead of looking forward.",
+
+"I asked her to speak quietly, instead, she spoke quite loudly.",
+
+"We will finally meet next week.",
+
+"Who else wants some tea?",
+
+"I do not quite understand.",
+
+"I need more men, who else wants to go with me?",
+
+"Nothing else helps",
+
+"Of course I will help them.",
+
+"she is alone",
+
+"Of course, he is wrong.",
+
+"We work in different groups.",
+
+"She is almost sixty.",
+
+"They are two different people.",
+
+"he wants to be alone ",
+
+"Of course, she has a lot of cows.",
+
+"This, however, is not important.",
+
+"You drive the car however much you want.",
+
+"They were following different streets.",
+
+"He comes here almost every day.",
+
+"However it is too expensive ",
+
+"He was not used to being home alone.",
+
+"The climate in the mountains is different.",
+
+"However, I can't say that to his face.",
+
+"We are almost like Brothers ",
+
+"The mountain is high.",
+
+"Germany has one of the highest income taxes in the world.",
+
+"His current salary is too low",
+
+"My brother asked for a higher salary.",
+
+"The room is large enough.",
+
+"I work for a large company.",
+
+"His earliest movies are the most interesting.",
+
+"The larger the house, the higher its price will be.",
+
+"We should buy a new car, and the larger the better.",
+
+"This is my left eye.",
+
+"What is wrong with him?",
+
+"Italy is far from Brazil.",
+
+"Are you sure these tomatoes are fresh?",
+
+"What is wrong with that?",
+
+"Yes, we do this quite often.",
+
+"I am happy that we finally understand each other.",
+
+"We are not alone ",
+
+"Is this a different jacket ",
+
+"Leave him alone, he is just a kid.",
+
+"House prices in the city are very high.",
+
+"Prices there are at least ten times higher.",
+
+"Am I right or wrong?",
+
+"I was not sure.",
+
+"Make sure you tell him ",
+
+"I quickly ran down.",
+
+"You can add half a bottle of some fruit juice instead.",
+
+"We use three different systems.",
+
 "",
 ""
 ],
 "ru":[
+"Птица летала очень низко",
+
+"Цены выше здесь, чем в твоём городе.",
+
+"Это самый высокий налог в стране",
+
+"эти дома высокие",
+
+"Наш дом выше, чем ваш.",
+
+"Во Франции цены ниже",
+
+"Её зарплата была даже ниже, чем моя.",
+
+"Моя цена самая низкая.",
+
+"Зарплаты этих учителей низкие",
+
+"Это страна с самым низким подоходным налогом.",
+
+"Кто предложил самую высокую цену?",
+
+"Птицы летели слишком высоко.",
+
+"Люди с самым низким доходом нуждаются в нашей помощи.",
+
+"Ты не найдёшь страны с более низкими налогами.",
+
+"Мой дом очень высокий.",
+
+"Цены там как минимум в десять раз выше",
+
+"У него крупная собака.",
+
+"Россия самая большая страна в мире",
+
+"Он живёт в том большом доме",
+
+"большие семьи счастливы",
+
+"Эта река самая большая.",
+
+"Он начал работать рано",
+
+"Самые ранние налоговые системы не были очень хорошими.",
+
+"Их офис больше нашего ",
+
+"Моя последняя книга продаётся очень хорошо.",
+
+"Это - самая ранняя из его работ.",
+
+" Эти птицы покидают это место поздней зимой или ранней весной.",
+
+"Мы будем там в десять самое позднее.",
+
+"Их офис больше, чем наш?",
+
+"Да, её компания самая большая в этой стране.",
+
+"Ты пришла слишком рано.",
+
+"Поверни налево",
+
+"Это очень далеко",
+
+"Я умею писать справа налево",
+
+"Да я уверен",
+
+"Их дом находится далеко от моего магазина.",
+
+"Это моя левая рука",
+
+"Мои ответы - неверные.",
+
+"Они продают подержанные книги?",
+
+"Я не привык к такому холоду",
+
+"Это тоже неверно.",
+
+"Я купил подержанную машину.",
+
+"Она далеко не уверена.",
+
+"В этом нет ничего плохого.",
+
+"Он хотел быть уверенным, что они не следуют за мной.",
+
+"Убедитесь, что это правильный адрес.",
+
+"Садитесь пожалуйста",
+
+"Мы оба посмотрели вниз",
+
+"Что ещё ",
+
+"Давайте двигаться дальше.",
+
+"Вместо того чтобы двигаться назад, мы должны двигаться вперёд.",
+
+"Она счастлива? - Не вполне.",
+
+"Он, наконец, позволил это.",
+
+"Она смотрела назад вместо того чтобы смотреть вперёд ",
+
+"Я попросила её говорить тихо, вместо этого она говорила довольно громко.",
+
+"Мы наконец-то встретимся на следующей неделе.",
+
+"Кто ещё хочет немного чаю?",
+
+"Я не вполне понимаю.",
+
+"Мне нужно больше людей, кто ещё хочет пойти со мной?",
+
+"Ничто другое не помогает.",
+
+"Конечно я помогу им",
+
+"Она одна.",
+
+"Конечно он не прав ",
+
+"Мы работаем в разных группах.",
+
+"Ей почти шестьдесят .",
+
+"Они два разных человека ",
+
+"Он хочет быть один.",
+
+"Конечно, у неё есть много коров.",
+
+"Это тем не менее неважно ",
+
+"Ты водишь эту машину, сколько хочешь.",
+
+" Они следовали разными улицами.",
+
+"Он приходит сюда почти каждый день.",
+
+"Тем не менее это слишком дорого.",
+
+"Он не привык находиться дома один ",
+
+"Климат в горах другой.",
+
+"Однако я не могу сказать это ему в лицо ",
+
+"Мы - почти как братья.",
+
+" Гора высокая",
+
+" В Германии один из самых высоких подоходных налогов в мире.",
+
+"Его текущая зарплата - слишком низкая.",
+
+"Мой брат попросил более высокую зарплату.",
+
+"Эта комната достаточно большая.",
+
+"Я работаю на крупную компанию.",
+
+"Его самые ранние фильмы самые интересные.",
+
+"Чем больше дом, тем выше будет его цена.",
+
+"Нам стоит купить новую машину, и чем больше, тем лучше.",
+
+"Это мой левый глаз.",
+
+"Что с ним не так?",
+
+"Италия находится далеко от Бразилии.",
+
+"Вы Уверены что эти томаты свежие ",
+
+"Что в том неправильно?",
+
+"Да мы делаем Это довольно часто",
+
+"Я счастлив, что мы наконец-то понимаем друг друга.",
+
+"Мы не одиноки ",
+
+"Это другая куртка?",
+
+"Оставь его в покое, он всего лишь ребёнок.",
+
+"Цены на дома в этом городе очень высокие.",
+
+" Цены там по меньшей мере в десять раз выше.",
+
+"Я прав или неправ?",
+
+"Я не был уверен ",
+
+"Обязательно расскажите ему.",
+
+"Я быстро сбежал вниз.",
+
+"Ты можешь добавить полбутылки какого-нибудь фруктового сока вместо этого.",
+
+"Мы используем три разные системы",
 "",
 ""
 ]
@@ -2323,10 +4794,224 @@ len:[0,0],
 ],
 len:[0,0],
 "en":[
+"This is a big flag.",
+"It is my crab!",
+"I like roses",
+"This rose is for you.",
+"The horse is eating roses",
+"My friend eats pineapples.",
+"Coffee is a beverage.",
+"What is the depth of the river?",
+"Is this a pineapple or a banana",
+"I am making a basket for my mother.",
+"It is not your crab!",
+"They live in the depths of the ocean.",
+"They sell beverages.",
+"This is my lemon!",
+"I need a battery.",
+"The candle is white.",
+"I am not in danger.",
+"she is in danger",
+"Is it a lemon?",
+"This puts your health in danger.",
+"We are smiling because we are happy.",
+"These are candles.",
+"He told me a sad story",
+"He is sad and happy at the same time.",
+"You need a sponge and water.",
+"Talk with him if you are sad.",
+"We need fire.",
+"We need wood for the fire.",
+"He eats with a fork.",
+"Every country has its own history.",
+"He has many history books.",
+"I like him, but not his circle of friends.",
+"Who wants a fork?",
+"Horses are farm animals.",
+"My brother uses this bicycle.",
+"We went through fire and water.",
+"These are bicycles.",
+"The child is eating with a fork.",
+"The number is the same for every circle.",
+"She is reading a newspaper.",
+"more than love",
+"I am in love!",
+"The sausage is hot.",
+"He is my first love.",
+"She is in love with my brother.",
+"I need an English newspaper.",
+"My scissors are yellow.",
+"My dog loves sausages.",
+"They did not give me the receipt.",
+"My scissors are in my coat.",
+"we eat sausage in November",
+"My mother has this receipt.",
+"My scissors are on my desk.",
+"I am a man of science.",
+"I need a toothbrush.",
+"I showed her the watch.",
+"He gave me a watch.",
+"This is my toothbrush.",
+"Science is important.",
+"This hot sauce is from Mexico.",
+"My suitcase is there.",
+"The shop is on the corner of the street.",
+"The suitcases are ready.",
+"the watch on the desk is mine",
+"The house on the corner is ours.",
+"This is a sausage and this is a sauce.",
+"I would like sausages with hot sauce.",
+"The envelopes are red.",
+"Open the envelope.",
+"The actress wants another pillow.",
+"I sleep without a pillow.",
+"The fridge doesn't work",
+"The water is in the fridge.",
+"This is the last match",
+"Our team won the match yesterday.",
+"Do you like pears",
+"The kite is red and white.",
+"I think we should buy some white or blue balloons for the party.",
+"I love my new kite!",
+"He bought some red balloons.",
+"He has a flag.",
+"This is the depth of the river.",
+"the depth is important",
+"he puts the fruit in the basket",
+"Some people drink tea with lemon.",
+"Where is the sponge",
+"The woman has a fork.",
+"They found my bicycle",
+"They like the farm.",
+"This is a big farm.",
+"He is a history teacher.",
+"Even she has a bicycle",
+"My sister receives the newspaper on Sunday.",
+"He works at that newspaper",
+"Are the red scissors yours?",
+"Is this your toothbrush?",
+"I like the watch in that color.",
+"love is no science",
+"Put the tomatoes into the basket.",
+"This is the circle of life",
+"It is a popular newspaper",
+"In a corner",
+"The tourist has a blue suitcase.",
+"He wants a watch just like yours",
+"medicine is no a science",
+"That is a pear not an Apple",
+"Where is the envelope",
 "",
 ""
 ],
 "ru":[
+"Это большой флаг",
+"это мой краб",
+"Мне нравятся розы.",
+"Эта роза для тебя",
+"Лошадь ест розы.",
+"Мой друг ест ананасы",
+"Кофе - это напиток.",
+"Какова глубина реки",
+"Это ананас или банан?",
+"Я делаю корзину для моей мамы.",
+"Это не твой краб",
+"Они живут в глубинах океана.",
+"Они продают напитки.",
+"Это мой лимон",
+"Мне нужен аккумулятор.",
+"Свеча белая.",
+"Я не в опасности",
+"Она в опасности.",
+"Это лимон",
+"Это ставит ваше здоровье в опасность.",
+"Мы улыбаемся потому что мы счастливы.",
+"Это свечи",
+"Он рассказал мне печальную историю.",
+"Он грустный и счастливый одновременно.",
+"Тебе нужна Губка и вода",
+"Поговори с ним, если ты грустна.",
+"Нам нужен огонь.",
+"Нам нужна древесина для костра.",
+"Он ест вилкой.",
+"Каждая страна имеет свою собственную историю",
+"У него есть много книг по истории.",
+"Мне нравится он, но не его круг друзей.",
+"Кто хочет вилку?",
+"Лошади это сельскохозяйственные животные.",
+"Мой брат пользуется этим велосипедом.",
+"Мы шли сквозь огонь и воду.",
+"Это велосипеды.",
+"Ребенок ест вилкой.",
+"Число одинаково для каждого круга.",
+"Она читает газету",
+"Больше, чем любовь",
+"Я влюблена!",
+"Колбаса горячая",
+"Он моя первая любовь",
+"Она влюблена в моего брата.",
+"Мне нужна английская газета",
+"Мои ножницы жёлтые.",
+"Моя собака обожает сосиски.",
+"Они не дали мне чек",
+"Мои ножницы находятся в моём плаще.",
+"Мы едим колбасу в ноябре.",
+"У моей матери есть этот чек.",
+"Мои ножницы находятся на моём письменном столе.",
+"Я человек науки",
+"Мне нужна зубная щётка",
+"Я показал ей часы",
+"Он дал мне часы",
+"Это моя зубная щётка.",
+"наука важна",
+"этот острый соус из Мексики",
+"Мой чемодан там.",
+"Магазин находится на углу улицы.",
+"Чемоданы готовы.",
+"Эти часы на этом письменном столе мои.",
+"Дом на углу - наш.",
+"Это сосиска, а это соус.",
+"Я бы хотела сосиски с острым соусом.",
+"Конверты красные",
+"Открой конверт",
+"Актриса хочет другую подушку",
+"Я сплю без подушки",
+"Холодильник не работает.",
+"Вода в холодильнике",
+"Это последний матч.",
+"Наша команда выиграла матч вчера",
+"Тебе нравятся груши?",
+"Воздушный змей красный и белый.",
+"Я думаю, нам стоит купить несколько белых или синих шариков для вечеринки.",
+"Я обожаю своего нового воздушного змея!",
+"Он купил несколько красных шариков",
+"У него есть флаг",
+"Это глубина реки",
+"Глубина важна.",
+"Он кладёт фрукты в корзину.",
+"Некоторые люди пьют чай с лимоном.",
+"Где губка?",
+"У женщины есть вилка.",
+"Они нашли мой велосипед.",
+"Им нравится ферма",
+"Это большая ферма.",
+"Он учитель истории.",
+"Даже у неё есть велосипед.",
+"Моя сестра получает газету в воскресенье.",
+"Он работает в той газете.",
+"Эти красные ножницы твои?",
+"Это твоя зубная щетка",
+"Мне нравятся часы того цвета.",
+"Любовь - это не наука.",
+"Сложи томаты в корзину.",
+"Это круговорот жизни.",
+"Это - популярная газета.",
+"в углу",
+"У этого туриста есть синий чемодан.",
+"Он хочет часы прямо как у тебя.",
+"Медицина - это никакая не наука.",
+"Это груша, не яблоко.",
+"Где конверт",
 "",
 ""
 ]
@@ -2338,10 +5023,130 @@ len:[0,0],
 ],
 len:[0,0],
 "en":[
+"I am a famous actor.",
+"He caught a cold.",
+"There are many types of dogs.",
+"There are many types of books.",
+"Why is he famous?",
+"She is not easy to catch.",
+"You are breaking the law",
+"These papers are more important.",
+"You should catch the ball",
+"Why did she go there without telling me?",
+"Paper is not always made from wood.",
+"Did she tell you why she broke up with him?",
+"Don't tell me what to do, don't tell me what to say!",
+"I fell into the water.",
+"Is your pillow soft?",
+"Everyone loves jumping up and down!",
+"The farmer is washing the horses.",
+"How often do you wash your car?",
+"Do not jump, you might fall.",
+"Isn't it time to wash the windows",
+"It is the hind leg of the dog.",
+"Will you buy chicken legs",
+"We could take a bus.",
+"She took my favorite toy and broke it.",
+"Do me a favor, leave me alone!",
+"He did not wash his clothes yesterday.",
+"I would not take that money.",
+"We started at six.",
+"The party started yesterday.",
+"He is telling the truth.",
+"What are the differences?",
+"I don't like this actress, her voice is too loud.",
+"She was not listening.",
+"I listened to the song twice",
+"I think that he knows the truth.",
+"Otherwise we will be alone.",
+"Whose voice is the loudest?",
+"Otherwise they won't see any difference.",
+"It started to rain.",
+"She wants him to tell her the truth",
+"It was easier than I thought.",
+"She did it with ease.",
+"I saw a famous actress",
+"My sister is famous",
+"I will make you a paper toy",
+"My leg hurts.",
+"Jumping from here would be too dangerous.",
+"You are washing your hands",
+"A fork fell off the table.",
+"Listen to me!",
+"They started eating.",
+"Does she know the difference between odd and even numbers?",
+"There is no difference between men and women.",
+"The dollar is a type of currency.",
+"This flower is a type of rose.",
+"I left some papers here in the morning, where are they?",
+"We need you to take off your shirt.",
+"She sings too quietly. Can she sing louder?",
+"Listen to this violin",
+"Unless she thinks otherwise.",
 "",
 ""
 ],
 "ru":[
+"Я знаменитый артист",
+"Он подхватил простуду.",
+"есть много пород собак",
+"Есть много видов книг.",
+"Почему он знаменит",
+"её нелегко поймать",
+"Ты нарушаешь закон.",
+"Эти бумаги важнее.",
+"Тебе следует ловить мяч.",
+"Почему она пошла туда не сказав мне",
+"Бумага не всегда изготавливается из древесины.",
+"Она сказала тебе, почему она разошлась с ним?",
+"Не говори мне, что делать, не говори мне, что говорить!",
+"Я упал в воду",
+"Твоя подушка мягкая",
+"Каждый любит прыгать вверх-вниз",
+"Фермер моет лошадей",
+"Как часто ты моешь свою машину?",
+"Не прыгай ты можешь упасть",
+"Не пора ли мыть окна?",
+"Это задняя нога собаки",
+"Ты купишь куриные ножки?",
+"Мы могли бы поехать на автобусе.",
+"Она взяла мою любимую игрушку и сломала её.",
+"Сделай мне одолжение, оставь меня в покое!",
+"Он не постирал свою одежду вчера.",
+"Я бы не брал те деньги.",
+"Мы начали в шесть",
+"Вечеринка началась вчера.",
+"Он говорит правду",
+"В чём отличия?",
+"Мне не нравится эта актриса, её голос слишком громкий.",
+"Она не слушала",
+"Я послушал песню дважды.",
+"Я думаю что он знает правду",
+"Иначе мы будем одиноки.",
+"Чей голос является самым громким?",
+"Иначе они не увидят никакой разницы.",
+"Начался дождь",
+"Она хочет, чтобы он сказал ей правду.",
+"Это было проще, чем я думал.",
+"Она делала это с лёгкостью.",
+"Я видел знаменитую актрису.",
+"Моя сестра - знаменита.",
+"Я сделаю тебе бумажную игрушку.",
+"Моя нога болит",
+"Прыгать отсюда было бы слишком опасно.",
+"Ты моешь свои руки.",
+"Со стола упала вилка.",
+"Слушай меня",
+"Они начали есть",
+"Она знает разницу между нечётными и чётными числами?",
+"Нет никакой разницы между мужчинами и женщинами.",
+"Доллар - это тип валюты.",
+"Этот цветок разновидность розы",
+"Я оставил кое-какие бумаги здесь утром, где они?",
+"Нам нужно, чтобы ты снял свою рубашку.",
+"Она поёт слишком тихо. Может она петь громче?",
+"Послушай эту скрипку!",
+"Если только она не думает иначе.",
 "",
 ""
 ]
@@ -2353,10 +5158,190 @@ len:[0,0],
 ],
 len:[0,0],
 "en":[
+"You are my guest.",
+"I saw those teenagers last week.",
+"He is not an adult, he is sixteen years old.",
+"He is our most important guest.",
+"My colleague is Italian.",
+"My colleague is going to write a book.",
+"He is My work colleague",
+"They will sleep in the guest bedroom.",
+"Do your colleagues help you",
+"I can't respect him until he behaves like an adult.",
+"Some teenagers respect neither themselves nor others.",
+"adults want teenagers to respect them.",
+"She writes for children and for adults",
+"Nobody will help you.",
+"I am sure that somebody will come tomorrow.",
+"Nobody knows the answer.",
+"Nobody answered my question.",
+"She will love somebody one day too",
+"We liked that hotel.",
+"Children should respect adults and adults should respect children too.",
+"Can you ask anybody?",
+"I liked that lemon.",
+"Does everybody understand me?",
+"One of our neighbors liked singing late at night.",
+"We are Germans.",
+"She speaks French.",
+"They are a couple.",
+"My neighbor is German.",
+"He is speaking French.",
+"does that American woman speak Spanish",
+"Once we met a Spanish couple with two kids there.",
+"my grandmother is a citizen of the USA",
+"Thousands of elderly citizens voted against him.",
+"Did you watch that German movie yesterday",
+"He sends money to his elderly parents.",
+"Who is the author of the work?",
+"He is a professional writer.",
+"My husband is a scientist.",
+"Who is the author of this book?",
+"We work with other scientists.",
+"My sister is a professional writer.",
+"This is an interesting author.",
+"I am your coach.",
+"We will work with a team of American scientists.",
+"Many scientists speak English.",
+"Artists work with different colors.",
+"She is an artist like her mother",
+"This German writer's books are very funny.",
+"Who is the coach of the team?",
+"My guests are coming tomorrow.",
+"Some of my colleagues are married, some are not.",
+"nobody works",
+"Somebody will love you too.",
+"Is anybody with you?",
+"Everybody speaks well of her.",
+"Hello, is there anybody there?",
+"Everybody is there",
+"Ask anybody",
+"She is kind to everybody.",
+"Everybody knows them",
+"nobody listened to me.",
+"I liked you.",
+"My kids are French citizens.",
+"Do you think they are a good couple?",
+"she is Spanish",
+"They were a typical American couple.",
+"I speak French",
+"I am an American citizen",
+"Are your parents American citizens",
+"I respect elderly people",
+"He is from Germany he's German",
+"That team has a good coach",
+"My uncle is the author of the book.",
+"He is a great scientist.",
+"She has been a swimming coach since January.",
+"Are you an artist",
+"This coach gave me advice",
+"Where are the guests?",
+"Your guests were here four days ago.",
+"Anybody else?",
+"Is anybody tired",
+"Adults liked when we played quietly in our room",
+"did Anybody talk to you",
+"We are French.",
+"My neighbor is going to learn Spanish.",
+"I am a man and a citizen.",
+"He is the author of this book.",
+"She is a famous artist.",
+"While scientists write a lot they are not at all writers.",
+"Are you the author of that book?",
 "",
 ""
 ],
 "ru":[
+"Ты мой гость",
+"Я видела тех подростков на прошлой неделе.",
+"Он - не взрослый, ему шестнадцать лет.",
+"Он наш самый важный гость.",
+"Моя коллега - итальянка.",
+"Мой коллега собирается написать книгу",
+"Он мой коллега по работе.",
+"Они будут спать в гостевой спальне.",
+"Твои коллеги помогают тебе?",
+"Я не могу уважать его, пока он не ведёт себя, как взрослый.",
+"Некоторые подростки не уважают ни самих себя, ни других.",
+"Взрослые хотят, чтобы подростки уважали их.",
+"Она пишет О детях и взрослых",
+"Никто не поможет тебе",
+"Я уверена, что кто-нибудь придёт завтра.",
+"Никто не знает этого ответа.",
+"Никто не ответил на мой вопрос.",
+"Она полюбит кого-нибудь однажды тоже.",
+"Нам понравилась та гостиница.",
+"Детям следует уважать взрослых, и взрослым следует уважать детей тоже.",
+"Вы можете спросить кого-нибудь?",
+"Мне нравился тот лимон.",
+"Все понимают меня?",
+"Одной из наших соседок нравилось петь поздно ночью.",
+"мы немцы",
+"Она говорит по-французски",
+"Они - пара.",
+"Моя соседка немка",
+"Он разговаривает на французском.",
+"Та американка говорит по-испански?",
+"Однажды мы встретили испанскую пару с двумя детьми там.",
+"Моя бабушка - гражданка США.",
+"Тысячи пожилых граждан проголосовали против него",
+"Ты посмотрел тот немецкий фильм вчера?",
+"Он посылает деньги своим пожилым родителям.",
+"Кто автор этой работы?",
+"Он профессиональный писатель.",
+"Мой муж ученый",
+"Кто автор этой книги",
+"Мы работаем с другими учеными",
+"Моя сестра профессиональный писатель",
+"Это интересный автор",
+"Я ваш тренер",
+"Мы будем работать с командой американских учёных",
+"Многие учёные говорят по-английски.",
+"художники работают с разными цветами",
+"Она художник, как и её мать.",
+"Книги этого немецкого писателя очень смешные.",
+"Кто тренер этой команды?",
+"Мои гости приезжают завтра.",
+"Некоторые мои коллеги женаты, некоторые - нет.",
+"Никто не работает.",
+"Кто-нибудь полюбит вас тоже.",
+"С тобой есть кто-нибудь?",
+"Все говорят о ней хорошо.",
+"Привет, есть кто-нибудь там?",
+"Все там",
+"Спроси кого угодно.",
+"Она добра ко всем.",
+"Все знают их.",
+"Никто меня не слушал.",
+"Ты нравилась мне.",
+"Мои дети - французские граждане.",
+"Ты думаешь они Хорошая пара",
+"Она испанка.",
+"Они были типичной американской парой.",
+"Я говорю по-французски.",
+"Я американский гражданин.",
+"Являются ли ваши родители американскими гражданами?",
+"Я уважаю старших.",
+"Он из Германии он немец",
+"У той команды хороший тренер.",
+"Мой дядя - автор книги.",
+"Он великийучёный",
+"Она была тренером по плаванию с января.",
+"Вы художник?",
+"Этот тренер дал мне совет.",
+"Где гости",
+"Твои гости были здесь четыре дня назад.",
+"кто-нибудь ещё",
+"Кто-нибудь устал?",
+"Взрослым нравилось, когда мы играли тихо в своей комнате.",
+"Кто-нибудь говорил с тобой?",
+"Мы французы.",
+"Мой сосед собирается учить испанский.",
+"Я - человек и гражданин.",
+"Он автор этой книги",
+"Она знаменитый художник.",
+"Хотя учёные пишут много, они - совсем не писатели.",
+"Вы автор той книги?",
 "",
 ""
 ]
@@ -2365,6 +5350,226 @@ len:[0,0],
 	"level" : "5",
 	"topic" : [
 	"Продукты 2"
+],
+len:[0,0],
+"en":[
+"What is that spoon for?",
+"Two cups of coffee, please.",
+"It is a good price for three ounces.",
+"One pound equals sixteen ounces.",
+"The small bottle is four ounces and the big bottle is eight.",
+"Add three tablespoons of sugar",
+"One cup equals sixteen tablespoons",
+"One gallon equals one hundred twenty eight ounces.",
+"The cups are on that shelf.",
+"He plays, and wins another cup.",
+"I can give him only half a gallon of water.",
+"I added fried carrots.",
+"My sister's husband never eats onion.",
+"I am selling carrots.",
+"wash these onions please",
+"I love my mother's potato soup.",
+"Do you use much oil",
+"There is nothing better than a fresh carrot.",
+"I can't eat this meat without pepper.",
+"I fried this meat without oil.",
+"They fried the potatoes in the same oil.",
+"Will you add any pepper",
+"The bananas are tasty.",
+"Is the meat tasty",
+"Fry the garlic for three minutes.",
+"This apple is sweeter.",
+"It has an apple taste.",
+"Potatoes with onion are very tasty.",
+"Let's add more onion.",
+"They easily turn sour.",
+"Is the taste good",
+"John usually adds some fresh garlic to his soup.",
+"And apples add a sweet aftertaste.",
+"The taste will be better if she adds two teaspoons of sugar.",
+"My dog never eats nuts.",
+"This is a nut.",
+"The cherries are too sour.",
+"When I came into the room, you were making the salad.",
+"watermelons are tasty",
+"He eats five cups of berries and fruit every day.",
+"This cherry is dark red.",
+"Why is this cat eating the berries?",
+"If you bring a melon, we will eat it together.",
+"Tom ate all the watermelons!",
+"Let's cut a melon for our salad!",
+"If you want the red berry, take it.",
+"Is watermelon a fruit",
+"I like Russian cuisine.",
+"He is eating a cookie.",
+"She cooked me fish.",
+"Do not eat this red mushroom!",
+"I mix the two colors.",
+"Santa Claus eats the cookies.",
+"Do you want to bake or to fry these vegetables?",
+"Do you prefer Russian or English cuisine?",
+"They prefer not to mix red and yellow fruit together.",
+"Mary went to the kitchen to fry some mushrooms",
+"Put the berries on the table in the kitchen.",
+"I cooked rice.",
+"Did they bake meat with nuts yesterday?",
+"He uses the spoon",
+"Who drinks from this cup",
+"Are they going to fry potatoes this evening?",
+"Carrots can be orange, red, yellow and even White",
+"We will need two large potatoes and three or four small onions",
+"They use too much garlic",
+"He likes watermelons more than melons.",
+"Here are the berries for the fruit salad",
+"There is nothing better than watermelons.",
+"cooks cook",
+"The boy eats the cookie.",
+"I am a cook",
+"Where is the kitchen",
+"I prefer to cook in the kitchen",
+"I will mix the nuts with the mushrooms",
+"I did not find any garlic here",
+"I eat nuts.",
+"These cherries are too sour, they will not give sweet juice.",
+"Do not eat these white cherries!",
+"My grandmother loves to bake.",
+"A kitchen is a room where people cook",
+"",
+""
+],
+"ru":[
+"Для чего та ложка",
+"Две чашки кофе, пожалуйста.",
+"Это хорошая цена за три унции",
+"Один фунт равен шестнадцати унциям",
+"Маленькая бутылка четыре унции а большая бутылка восемь",
+"Добавьте три столовых ложки сахара.",
+"Одна чашка равна шестнадцати столовым ложкам.",
+"Один галлон равняется ста двадцати восьми унциям.",
+"Чашки на той полке.",
+"Он играет и выигрывает ещё один кубок.",
+"Я могу дать ему только полгаллона воды",
+"Я добавила жареную морковь.",
+"Муж моей сестры никогда не ест лук",
+"Я продаю морковь",
+"Помой эти луковицы, пожалуйста.",
+"Я обожаю картофельный суп моей матери.",
+"Ты используешь много масла?",
+"Нет ничего лучше свежей морковки.",
+"Я не могу есть это мясо без перца",
+"Я пожарила это мясо без масла.",
+"Они обжарили картофель в том же масле.",
+"Ты добавишь перец?",
+"Бананы вкусные",
+"Мясо вкусное?",
+"Обжаривайте чеснок в течение трёх минут.",
+"Это яблоко слаще",
+"Оно имеет яблочный вкус.",
+"Картофель с луком очень вкусный",
+"Давай добавим больше лука.",
+"Они легко прокисают",
+"Этот вкус хороший?",
+"Джон обычно добавляет немного свежего чеснока в свой суп",
+"А яблоки добавляют сладкое послевкусие.",
+"Вкус будет лучше, если она добавит две чайные ложки сахара.",
+"Моя собака никогда не ест орехи",
+"Это орех",
+"Эти вишни - слишком кислые.",
+"Когда я вошёл в комнату, ты делала салат.",
+"Арбузы - вкусные.",
+"Он съедает пять чашек ягод и фруктов каждый день.",
+"Эта вишня темно-красная",
+"Почему этот кот ест ягоды?",
+"Если ты принесешь дыню мы поедим её вместе",
+"Том съел все эти арбузы",
+"Давай порежем дыню для нашего салата!",
+"Если ты хочешь эту красную ягоду, возьми её.",
+"Является ли арбуз фруктом?",
+"Мне нравится русская кухня",
+"Он ест печеньку",
+"Она приготовила мне рыбу",
+"Не ешь этот красный гриб!",
+"Я перемешиваю два цвета.",
+"Санта Клаус ест печеньки.",
+"Ты хочешь испечь или пожарить эти овощи?",
+"Вы предпочитаете русскую или английскую кухню?",
+"Они предпочитают не смешивать красные и жёлтые фрукты вместе.",
+"Мэри пошла на кухню пожарить немного грибов.",
+"Положи ягоды на стол в кухне",
+"Я готовил рис.",
+"Они запекали мясо с орехами вчера?",
+"Он пользуется этой ложкой.",
+"Кто пьёт из этой чашки?",
+"Они собираются жарить картошку этим вечером",
+"Морковки могут быть оранжевые, красные, жёлтые и даже белые.",
+"Нам понадобятся две крупные картофелины и три или четыре мелкие луковицы.",
+"Они используют слишком много чеснока.",
+"Ему нравятся арбузы больше, чем дыни.",
+"Вот ягоды для фруктового салата.",
+"Нет ничего лучше арбузов",
+"Повара готовят.",
+"Мальчик ест печеньку",
+"Я повар.",
+"Где находится кухня?",
+"Я предпочитаю готовить в кухне.",
+"Я смешаю орехи с грибами.",
+"Я не нашёл чеснока тут.",
+"Я ем орехи.",
+"Эти вишни - слишком кислые, они не дадут сладкого сока.",
+"Не ешь эти белые вишни",
+"Моя бабушка обожает печь.",
+"Кухня комната где люди готовят",
+"",
+""
+]
+},
+{
+	"level" : "5",
+	"topic" : [
+	"Цвета 3"
+],
+len:[0,0],
+"en":[
+"We found a gray card.",
+"my sister has a golden dress",
+"That pineapple is green.",
+"shades of gray",
+"Can I take your light green coat?",
+"This shirt is violet",
+"These are three golden oranges.",
+"This is the golden cup.",
+"Cut some green onions, please.",
+"I like her Violet dress",
+"There are a lot of names for the different shades of violet.",
+"The keys are Grey",
+"dark gray",
+"Our bags were green.",
+"",
+""
+],
+"ru":[
+"Мы нашли серую карточку",
+"У моей сестры есть золотое платье.",
+"Тот ананас зелёный",
+"Оттенки серого",
+"Могу я взять твоё светло-зелёное пальто?",
+"Эта рубашка фиолетовая.",
+"Это три золотых апельсина.",
+"Это золотой кубок.",
+"Нарежь немного зелёного лука, пожалуйста.",
+"Мне нравится её фиолетовое платье.",
+"Есть много названий для разных оттенков фиолетового",
+"Ключи серые",
+"Темно-серый",
+"Наши сумки были зелёные.",
+"",
+""
+]
+},
+{
+	"level" : "5",
+	"topic" : [
+	"Одежда 3"
 ],
 len:[0,0],
 "en":[
@@ -2379,146 +5584,332 @@ len:[0,0],
 {
 	"level" : "5",
 	"topic" : [
-	"Цвета 3"
-	]
-},
-{
-	"level" : "5",
-	"topic" : [
-	"Одежда 3"
-	]
-},
-{
-	"level" : "5",
-	"topic" : [
 	"Дом 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Тело 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Продукты 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Растения 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Ребёнок 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Здоровье 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Mammals 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Животные 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Словарь 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Герундий 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Герундий 4"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Предметы 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Люди 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Качества 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Здания 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"География2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Глаголы 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Вождение 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Мышление 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Политика 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Общение 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "",
 	"topic" : [
 	""
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 }
 ]
  

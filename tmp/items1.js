@@ -310,10 +310,48 @@ len:[0,0],
 ],
 len:[0,0],
 "en":[
+"Hi how are you",
+"Bye mom and dad",
+"Oh interesting",
+"Are you a doctor",
+"This wine is from Russia",
+"Bye Anna",
+"This song is great!",
+"Good night",
+"Is he a professor or a student",
+"Good night Anna and Ben",
+"Is he a teacher",
+"Excuse me are you a doctor",
+"This is interesting.",
+"Are you a doctor Ben",
+"This beer is great thanks",
+"Yes, this song is fun.",
+"this song is not famous",
+"This beer is also great",
+"Good night and thanks",
 "",
 ""
 ],
 "ru":[
+"Привет, как ты?",
+"Пока, мама и папа!",
+"Ох, интересно!",
+"Вы доктор?",
+"Это вино из России.",
+"Пока, Анна!",
+"Эта песня отличная!",
+"Спокойной ночи!",
+"Он профессор или студент?",
+"Спокойной ночи, Анна и Бен!",
+"Он учитель?",
+"Извини, ты доктор?",
+"Это интересно.",
+"Ты доктор, Бен?",
+"Это пиво отличное, спасибо!",
+"Да, эта песня весёлая.",
+"Эта песня не известная.",
+"Это пиво тоже отличное.",
+"Спокойной ночи, и спасибо!",
 "",
 ""
 ]
@@ -325,10 +363,45 @@ len:[0,0],
 ],
 len:[0,0],
 "en":[
-"",
+"I like jazz but my husband likes hip hop",
+"My wife likes to swim.",
+"My favorite hobby is music",
+"I really like hockey",
+"I like hip hop but my husband likes jazz",
+"Oh my husband likes to cook",
+"Chess is cool.",
+"My daughter likes to swim.",
+"Oh, my hobby is really interesting.",
+"I really like to swim",
+"My daughter likes to sing.",
+"Do you like to cook?",
+"Do you like to sing?",
+"I like to cook and you",
+"I like jazz but my wife likes rock",
+"Oh hockey is really cool",
+"My friend likes cool music",
+"I like chess, but my favorite hobby is music.","",
 ""
 ],
 "ru":[
+"Я люблю джаз, но мой муж любит хип-хоп.",
+"Моя жена любит плавать.",
+"Мое любимое увлечение – музыка.",
+"Я очень люблю хоккей.",
+"Я люблю хип-хоп, но мой муж любит джаз.",
+"Ох, мой муж любит готовить.",
+"Шахматы классные.",
+"Моя дочь любит плавать.",
+"Ох, мое увлечение очень интересное.",
+"Я очень люблю плавать.",
+"Моя дочь любит петь.",
+"Ты любишь готовить?",
+"Ты любишь петь?",
+"Я люблю готовить, а ты?",
+"Я люблю джаз, но моя жена любит рок.",
+"Ох, хоккей очень классный!",
+"Мой друг любит классную музыку.",
+"Я люблю шахматы, но мое любимое увлечение – музыка.",
 "",
 ""
 ]
@@ -337,6 +410,110 @@ len:[0,0],
 	"level" : "1",
 	"topic" : [
 	"ресторан"
+],
+len:[0,0],
+"en":[
+"A Restaurant in Moscow",
+"I would like two pizzas and one soda, please.",
+"Excuse me I would like a cupcake to go",
+"I love this restaurant",
+"cheers Maksim",
+"Hello, I'm your server, Anna.",
+"cheers mom and dad",
+"Welcome are you together",
+"cheers sofia",
+"I would like a cupcake",
+"is our server from Russia",
+"Excuse me, are you our server?",
+"Here's your check",
+"I love this restaurant",
+"Your two pizzas",
+"I would like two pizzas and one soda, please.",
+"enjoy your meal Sveta",
+"Here's your pizza enjoy your meal",
+"enjoy your meal Ben",
+"",
+""
+],
+"ru":[
+"ресторан в Москве",
+"Я бы хотел две пиццы и одну газировку, пожалуйста.",
+"Извините, я бы хотела пирожное с собой.",
+"Я люблю этот ресторан.",
+"За ваше здоровье, Максим!",
+"Здравствуйте, я ваша официантка, Анна.",
+"За ваше здоровье, мама и папа!",
+"Добро пожаловать, вы вместе?",
+"За ваше здоровье, София!",
+"Я бы хотел пирожное.",
+"Наш официант из России?",
+"Извините вы наш официант",
+"Здравствуйте, вы вместе?",
+"Я люблю этот ресторан.",
+"ваши две пиццы",
+"Я бы хотел две пиццы и одну газировку, пожалуйста.",
+"Приятного аппетита, Света!",
+"Ваша пицца Приятного аппетита,!",
+"Приятного аппетита, Бен!",
+"",
+""
+]
+},
+{
+	"level" : "1",
+	"topic" : [
+	"питомцы"
+],
+len:[0,0],
+"en":[
+"Oh, my old cat plays a lot!",
+"No Sharik is not friendly",
+"of course my cat sleeps a lot",
+"do you have four dogs",
+"Yes, my snake sleeps a lot.",
+"I love my four dogs so much",
+"Aw, Sharik is really cute.",
+"Yes I have three snakes",
+"I have three cats and a dog",
+"Yes, I have three dogs and two cats.",
+"Your bird is so cute, Sofia!",
+"Do you have three cats",
+"He's a good dog",
+"Aw Murka likes jazz",
+"Oh your bird sleeps a lot.",
+"Yes Sharik is a good dog",
+"Aw this cat is so cute",
+"Aw Your dog is so friendly",
+"",
+""
+],
+"ru":[
+"Ох, моя старая кошка играет много!",
+"Нет, Шарик не дружелюбный!",
+"Конечно, моя кошка спит много.",
+"У тебя есть четыре собаки?",
+"Да, моя змея спит много.",
+"Я люблю моих четырех собак так сильно!",
+"Ой, Шарик очень славный.",
+"Да, у меня есть три змеи.",
+"У меня есть три кошки и собака.",
+"Да, у меня есть три собаки и две кошки.",
+"Твоя птица такая славная, София!",
+"У тебя есть три кошки?",
+"Он — хорошая собака.",
+"Ой, Мурка любит джаз!",
+"Ох, ваша птица спит много!",
+"Да, Шарик – хорошая собака!",
+"Ой, эта кошка такая славная!",
+"Ой, твоя собака такая дружелюбная!",
+"",
+""
+]
+},
+{
+	"level" : "2",
+	"topic" : [
+	"еда"
 ],
 len:[0,0],
 "en":[
@@ -349,418 +526,1009 @@ len:[0,0],
 ]
 },
 {
-	"level" : "1",
-	"topic" : [
-	"питомцы"
-	]
-},
-{
-	"level" : "2",
-	"topic" : [
-	"еда"
-	]
-},
-{
 	"level" : "2",
 	"topic" : [
 	"романтика"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"в пути"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"привычки"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"покупки"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"0 расписания"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"поездки"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"отель"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"город"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"универ"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"свидание"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"офис"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"рынок"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"праздник"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"переезд"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"у доктора"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"пикник"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"мой город"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"отпуск"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"покупки 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"спорт"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"офис 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"зоопарк"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"музыка"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"погода"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "2",
 	"topic" : [
 	"на машине"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"основы 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Одежда 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"моя семья2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"связи 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"to be=быть"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"фразы 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Животные 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"еда 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Мн. искл 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Мн. число 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"THE 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Не быть 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Посчитаем"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Наст.вр.2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Ощущения 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Кем быть 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Наст.вр. 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Глаголы 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Наст.дл. 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Наст.пр. 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "3",
 	"topic" : [
 	"Прит. формы"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Семья 4"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Вопросы 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Предлоги 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Наст.буд.2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Going to 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Будущее 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Союзы 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Длит.вр.2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "8",
 	"topic" : [
 	"8888888"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "8",
 	"topic" : [
 	"8888888"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Срав.ст.2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Наречия 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Прош.вр.2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Past 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Непр.гл.2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Past 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Сравнение2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Email 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Past: C+S"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Пр. сов. 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
 	"topic" : [
 	"Пасс.залог"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "4",
@@ -4026,10 +4794,224 @@ len:[0,0],
 ],
 len:[0,0],
 "en":[
+"This is a big flag.",
+"It is my crab!",
+"I like roses",
+"This rose is for you.",
+"The horse is eating roses",
+"My friend eats pineapples.",
+"Coffee is a beverage.",
+"What is the depth of the river?",
+"Is this a pineapple or a banana",
+"I am making a basket for my mother.",
+"It is not your crab!",
+"They live in the depths of the ocean.",
+"They sell beverages.",
+"This is my lemon!",
+"I need a battery.",
+"The candle is white.",
+"I am not in danger.",
+"she is in danger",
+"Is it a lemon?",
+"This puts your health in danger.",
+"We are smiling because we are happy.",
+"These are candles.",
+"He told me a sad story",
+"He is sad and happy at the same time.",
+"You need a sponge and water.",
+"Talk with him if you are sad.",
+"We need fire.",
+"We need wood for the fire.",
+"He eats with a fork.",
+"Every country has its own history.",
+"He has many history books.",
+"I like him, but not his circle of friends.",
+"Who wants a fork?",
+"Horses are farm animals.",
+"My brother uses this bicycle.",
+"We went through fire and water.",
+"These are bicycles.",
+"The child is eating with a fork.",
+"The number is the same for every circle.",
+"She is reading a newspaper.",
+"more than love",
+"I am in love!",
+"The sausage is hot.",
+"He is my first love.",
+"She is in love with my brother.",
+"I need an English newspaper.",
+"My scissors are yellow.",
+"My dog loves sausages.",
+"They did not give me the receipt.",
+"My scissors are in my coat.",
+"we eat sausage in November",
+"My mother has this receipt.",
+"My scissors are on my desk.",
+"I am a man of science.",
+"I need a toothbrush.",
+"I showed her the watch.",
+"He gave me a watch.",
+"This is my toothbrush.",
+"Science is important.",
+"This hot sauce is from Mexico.",
+"My suitcase is there.",
+"The shop is on the corner of the street.",
+"The suitcases are ready.",
+"the watch on the desk is mine",
+"The house on the corner is ours.",
+"This is a sausage and this is a sauce.",
+"I would like sausages with hot sauce.",
+"The envelopes are red.",
+"Open the envelope.",
+"The actress wants another pillow.",
+"I sleep without a pillow.",
+"The fridge doesn't work",
+"The water is in the fridge.",
+"This is the last match",
+"Our team won the match yesterday.",
+"Do you like pears",
+"The kite is red and white.",
+"I think we should buy some white or blue balloons for the party.",
+"I love my new kite!",
+"He bought some red balloons.",
+"He has a flag.",
+"This is the depth of the river.",
+"the depth is important",
+"he puts the fruit in the basket",
+"Some people drink tea with lemon.",
+"Where is the sponge",
+"The woman has a fork.",
+"They found my bicycle",
+"They like the farm.",
+"This is a big farm.",
+"He is a history teacher.",
+"Even she has a bicycle",
+"My sister receives the newspaper on Sunday.",
+"He works at that newspaper",
+"Are the red scissors yours?",
+"Is this your toothbrush?",
+"I like the watch in that color.",
+"love is no science",
+"Put the tomatoes into the basket.",
+"This is the circle of life",
+"It is a popular newspaper",
+"In a corner",
+"The tourist has a blue suitcase.",
+"He wants a watch just like yours",
+"medicine is no a science",
+"That is a pear not an Apple",
+"Where is the envelope",
 "",
 ""
 ],
 "ru":[
+"Это большой флаг",
+"это мой краб",
+"Мне нравятся розы.",
+"Эта роза для тебя",
+"Лошадь ест розы.",
+"Мой друг ест ананасы",
+"Кофе - это напиток.",
+"Какова глубина реки",
+"Это ананас или банан?",
+"Я делаю корзину для моей мамы.",
+"Это не твой краб",
+"Они живут в глубинах океана.",
+"Они продают напитки.",
+"Это мой лимон",
+"Мне нужен аккумулятор.",
+"Свеча белая.",
+"Я не в опасности",
+"Она в опасности.",
+"Это лимон",
+"Это ставит ваше здоровье в опасность.",
+"Мы улыбаемся потому что мы счастливы.",
+"Это свечи",
+"Он рассказал мне печальную историю.",
+"Он грустный и счастливый одновременно.",
+"Тебе нужна Губка и вода",
+"Поговори с ним, если ты грустна.",
+"Нам нужен огонь.",
+"Нам нужна древесина для костра.",
+"Он ест вилкой.",
+"Каждая страна имеет свою собственную историю",
+"У него есть много книг по истории.",
+"Мне нравится он, но не его круг друзей.",
+"Кто хочет вилку?",
+"Лошади это сельскохозяйственные животные.",
+"Мой брат пользуется этим велосипедом.",
+"Мы шли сквозь огонь и воду.",
+"Это велосипеды.",
+"Ребенок ест вилкой.",
+"Число одинаково для каждого круга.",
+"Она читает газету",
+"Больше, чем любовь",
+"Я влюблена!",
+"Колбаса горячая",
+"Он моя первая любовь",
+"Она влюблена в моего брата.",
+"Мне нужна английская газета",
+"Мои ножницы жёлтые.",
+"Моя собака обожает сосиски.",
+"Они не дали мне чек",
+"Мои ножницы находятся в моём плаще.",
+"Мы едим колбасу в ноябре.",
+"У моей матери есть этот чек.",
+"Мои ножницы находятся на моём письменном столе.",
+"Я человек науки",
+"Мне нужна зубная щётка",
+"Я показал ей часы",
+"Он дал мне часы",
+"Это моя зубная щётка.",
+"наука важна",
+"этот острый соус из Мексики",
+"Мой чемодан там.",
+"Магазин находится на углу улицы.",
+"Чемоданы готовы.",
+"Эти часы на этом письменном столе мои.",
+"Дом на углу - наш.",
+"Это сосиска, а это соус.",
+"Я бы хотела сосиски с острым соусом.",
+"Конверты красные",
+"Открой конверт",
+"Актриса хочет другую подушку",
+"Я сплю без подушки",
+"Холодильник не работает.",
+"Вода в холодильнике",
+"Это последний матч.",
+"Наша команда выиграла матч вчера",
+"Тебе нравятся груши?",
+"Воздушный змей красный и белый.",
+"Я думаю, нам стоит купить несколько белых или синих шариков для вечеринки.",
+"Я обожаю своего нового воздушного змея!",
+"Он купил несколько красных шариков",
+"У него есть флаг",
+"Это глубина реки",
+"Глубина важна.",
+"Он кладёт фрукты в корзину.",
+"Некоторые люди пьют чай с лимоном.",
+"Где губка?",
+"У женщины есть вилка.",
+"Они нашли мой велосипед.",
+"Им нравится ферма",
+"Это большая ферма.",
+"Он учитель истории.",
+"Даже у неё есть велосипед.",
+"Моя сестра получает газету в воскресенье.",
+"Он работает в той газете.",
+"Эти красные ножницы твои?",
+"Это твоя зубная щетка",
+"Мне нравятся часы того цвета.",
+"Любовь - это не наука.",
+"Сложи томаты в корзину.",
+"Это круговорот жизни.",
+"Это - популярная газета.",
+"в углу",
+"У этого туриста есть синий чемодан.",
+"Он хочет часы прямо как у тебя.",
+"Медицина - это никакая не наука.",
+"Это груша, не яблоко.",
+"Где конверт",
 "",
 ""
 ]
@@ -4041,10 +5023,130 @@ len:[0,0],
 ],
 len:[0,0],
 "en":[
+"I am a famous actor.",
+"He caught a cold.",
+"There are many types of dogs.",
+"There are many types of books.",
+"Why is he famous?",
+"She is not easy to catch.",
+"You are breaking the law",
+"These papers are more important.",
+"You should catch the ball",
+"Why did she go there without telling me?",
+"Paper is not always made from wood.",
+"Did she tell you why she broke up with him?",
+"Don't tell me what to do, don't tell me what to say!",
+"I fell into the water.",
+"Is your pillow soft?",
+"Everyone loves jumping up and down!",
+"The farmer is washing the horses.",
+"How often do you wash your car?",
+"Do not jump, you might fall.",
+"Isn't it time to wash the windows",
+"It is the hind leg of the dog.",
+"Will you buy chicken legs",
+"We could take a bus.",
+"She took my favorite toy and broke it.",
+"Do me a favor, leave me alone!",
+"He did not wash his clothes yesterday.",
+"I would not take that money.",
+"We started at six.",
+"The party started yesterday.",
+"He is telling the truth.",
+"What are the differences?",
+"I don't like this actress, her voice is too loud.",
+"She was not listening.",
+"I listened to the song twice",
+"I think that he knows the truth.",
+"Otherwise we will be alone.",
+"Whose voice is the loudest?",
+"Otherwise they won't see any difference.",
+"It started to rain.",
+"She wants him to tell her the truth",
+"It was easier than I thought.",
+"She did it with ease.",
+"I saw a famous actress",
+"My sister is famous",
+"I will make you a paper toy",
+"My leg hurts.",
+"Jumping from here would be too dangerous.",
+"You are washing your hands",
+"A fork fell off the table.",
+"Listen to me!",
+"They started eating.",
+"Does she know the difference between odd and even numbers?",
+"There is no difference between men and women.",
+"The dollar is a type of currency.",
+"This flower is a type of rose.",
+"I left some papers here in the morning, where are they?",
+"We need you to take off your shirt.",
+"She sings too quietly. Can she sing louder?",
+"Listen to this violin",
+"Unless she thinks otherwise.",
 "",
 ""
 ],
 "ru":[
+"Я знаменитый артист",
+"Он подхватил простуду.",
+"есть много пород собак",
+"Есть много видов книг.",
+"Почему он знаменит",
+"её нелегко поймать",
+"Ты нарушаешь закон.",
+"Эти бумаги важнее.",
+"Тебе следует ловить мяч.",
+"Почему она пошла туда не сказав мне",
+"Бумага не всегда изготавливается из древесины.",
+"Она сказала тебе, почему она разошлась с ним?",
+"Не говори мне, что делать, не говори мне, что говорить!",
+"Я упал в воду",
+"Твоя подушка мягкая",
+"Каждый любит прыгать вверх-вниз",
+"Фермер моет лошадей",
+"Как часто ты моешь свою машину?",
+"Не прыгай ты можешь упасть",
+"Не пора ли мыть окна?",
+"Это задняя нога собаки",
+"Ты купишь куриные ножки?",
+"Мы могли бы поехать на автобусе.",
+"Она взяла мою любимую игрушку и сломала её.",
+"Сделай мне одолжение, оставь меня в покое!",
+"Он не постирал свою одежду вчера.",
+"Я бы не брал те деньги.",
+"Мы начали в шесть",
+"Вечеринка началась вчера.",
+"Он говорит правду",
+"В чём отличия?",
+"Мне не нравится эта актриса, её голос слишком громкий.",
+"Она не слушала",
+"Я послушал песню дважды.",
+"Я думаю что он знает правду",
+"Иначе мы будем одиноки.",
+"Чей голос является самым громким?",
+"Иначе они не увидят никакой разницы.",
+"Начался дождь",
+"Она хочет, чтобы он сказал ей правду.",
+"Это было проще, чем я думал.",
+"Она делала это с лёгкостью.",
+"Я видел знаменитую актрису.",
+"Моя сестра - знаменита.",
+"Я сделаю тебе бумажную игрушку.",
+"Моя нога болит",
+"Прыгать отсюда было бы слишком опасно.",
+"Ты моешь свои руки.",
+"Со стола упала вилка.",
+"Слушай меня",
+"Они начали есть",
+"Она знает разницу между нечётными и чётными числами?",
+"Нет никакой разницы между мужчинами и женщинами.",
+"Доллар - это тип валюты.",
+"Этот цветок разновидность розы",
+"Я оставил кое-какие бумаги здесь утром, где они?",
+"Нам нужно, чтобы ты снял свою рубашку.",
+"Она поёт слишком тихо. Может она петь громче?",
+"Послушай эту скрипку!",
+"Если только она не думает иначе.",
 "",
 ""
 ]
@@ -4056,10 +5158,190 @@ len:[0,0],
 ],
 len:[0,0],
 "en":[
+"You are my guest.",
+"I saw those teenagers last week.",
+"He is not an adult, he is sixteen years old.",
+"He is our most important guest.",
+"My colleague is Italian.",
+"My colleague is going to write a book.",
+"He is My work colleague",
+"They will sleep in the guest bedroom.",
+"Do your colleagues help you",
+"I can't respect him until he behaves like an adult.",
+"Some teenagers respect neither themselves nor others.",
+"adults want teenagers to respect them.",
+"She writes for children and for adults",
+"Nobody will help you.",
+"I am sure that somebody will come tomorrow.",
+"Nobody knows the answer.",
+"Nobody answered my question.",
+"She will love somebody one day too",
+"We liked that hotel.",
+"Children should respect adults and adults should respect children too.",
+"Can you ask anybody?",
+"I liked that lemon.",
+"Does everybody understand me?",
+"One of our neighbors liked singing late at night.",
+"We are Germans.",
+"She speaks French.",
+"They are a couple.",
+"My neighbor is German.",
+"He is speaking French.",
+"does that American woman speak Spanish",
+"Once we met a Spanish couple with two kids there.",
+"my grandmother is a citizen of the USA",
+"Thousands of elderly citizens voted against him.",
+"Did you watch that German movie yesterday",
+"He sends money to his elderly parents.",
+"Who is the author of the work?",
+"He is a professional writer.",
+"My husband is a scientist.",
+"Who is the author of this book?",
+"We work with other scientists.",
+"My sister is a professional writer.",
+"This is an interesting author.",
+"I am your coach.",
+"We will work with a team of American scientists.",
+"Many scientists speak English.",
+"Artists work with different colors.",
+"She is an artist like her mother",
+"This German writer's books are very funny.",
+"Who is the coach of the team?",
+"My guests are coming tomorrow.",
+"Some of my colleagues are married, some are not.",
+"nobody works",
+"Somebody will love you too.",
+"Is anybody with you?",
+"Everybody speaks well of her.",
+"Hello, is there anybody there?",
+"Everybody is there",
+"Ask anybody",
+"She is kind to everybody.",
+"Everybody knows them",
+"nobody listened to me.",
+"I liked you.",
+"My kids are French citizens.",
+"Do you think they are a good couple?",
+"she is Spanish",
+"They were a typical American couple.",
+"I speak French",
+"I am an American citizen",
+"Are your parents American citizens",
+"I respect elderly people",
+"He is from Germany he's German",
+"That team has a good coach",
+"My uncle is the author of the book.",
+"He is a great scientist.",
+"She has been a swimming coach since January.",
+"Are you an artist",
+"This coach gave me advice",
+"Where are the guests?",
+"Your guests were here four days ago.",
+"Anybody else?",
+"Is anybody tired",
+"Adults liked when we played quietly in our room",
+"did Anybody talk to you",
+"We are French.",
+"My neighbor is going to learn Spanish.",
+"I am a man and a citizen.",
+"He is the author of this book.",
+"She is a famous artist.",
+"While scientists write a lot they are not at all writers.",
+"Are you the author of that book?",
 "",
 ""
 ],
 "ru":[
+"Ты мой гость",
+"Я видела тех подростков на прошлой неделе.",
+"Он - не взрослый, ему шестнадцать лет.",
+"Он наш самый важный гость.",
+"Моя коллега - итальянка.",
+"Мой коллега собирается написать книгу",
+"Он мой коллега по работе.",
+"Они будут спать в гостевой спальне.",
+"Твои коллеги помогают тебе?",
+"Я не могу уважать его, пока он не ведёт себя, как взрослый.",
+"Некоторые подростки не уважают ни самих себя, ни других.",
+"Взрослые хотят, чтобы подростки уважали их.",
+"Она пишет О детях и взрослых",
+"Никто не поможет тебе",
+"Я уверена, что кто-нибудь придёт завтра.",
+"Никто не знает этого ответа.",
+"Никто не ответил на мой вопрос.",
+"Она полюбит кого-нибудь однажды тоже.",
+"Нам понравилась та гостиница.",
+"Детям следует уважать взрослых, и взрослым следует уважать детей тоже.",
+"Вы можете спросить кого-нибудь?",
+"Мне нравился тот лимон.",
+"Все понимают меня?",
+"Одной из наших соседок нравилось петь поздно ночью.",
+"мы немцы",
+"Она говорит по-французски",
+"Они - пара.",
+"Моя соседка немка",
+"Он разговаривает на французском.",
+"Та американка говорит по-испански?",
+"Однажды мы встретили испанскую пару с двумя детьми там.",
+"Моя бабушка - гражданка США.",
+"Тысячи пожилых граждан проголосовали против него",
+"Ты посмотрел тот немецкий фильм вчера?",
+"Он посылает деньги своим пожилым родителям.",
+"Кто автор этой работы?",
+"Он профессиональный писатель.",
+"Мой муж ученый",
+"Кто автор этой книги",
+"Мы работаем с другими учеными",
+"Моя сестра профессиональный писатель",
+"Это интересный автор",
+"Я ваш тренер",
+"Мы будем работать с командой американских учёных",
+"Многие учёные говорят по-английски.",
+"художники работают с разными цветами",
+"Она художник, как и её мать.",
+"Книги этого немецкого писателя очень смешные.",
+"Кто тренер этой команды?",
+"Мои гости приезжают завтра.",
+"Некоторые мои коллеги женаты, некоторые - нет.",
+"Никто не работает.",
+"Кто-нибудь полюбит вас тоже.",
+"С тобой есть кто-нибудь?",
+"Все говорят о ней хорошо.",
+"Привет, есть кто-нибудь там?",
+"Все там",
+"Спроси кого угодно.",
+"Она добра ко всем.",
+"Все знают их.",
+"Никто меня не слушал.",
+"Ты нравилась мне.",
+"Мои дети - французские граждане.",
+"Ты думаешь они Хорошая пара",
+"Она испанка.",
+"Они были типичной американской парой.",
+"Я говорю по-французски.",
+"Я американский гражданин.",
+"Являются ли ваши родители американскими гражданами?",
+"Я уважаю старших.",
+"Он из Германии он немец",
+"У той команды хороший тренер.",
+"Мой дядя - автор книги.",
+"Он великийучёный",
+"Она была тренером по плаванию с января.",
+"Вы художник?",
+"Этот тренер дал мне совет.",
+"Где гости",
+"Твои гости были здесь четыре дня назад.",
+"кто-нибудь ещё",
+"Кто-нибудь устал?",
+"Взрослым нравилось, когда мы играли тихо в своей комнате.",
+"Кто-нибудь говорил с тобой?",
+"Мы французы.",
+"Мой сосед собирается учить испанский.",
+"Я - человек и гражданин.",
+"Он автор этой книги",
+"Она знаменитый художник.",
+"Хотя учёные пишут много, они - совсем не писатели.",
+"Вы автор той книги?",
 "",
 ""
 ]
@@ -4068,6 +5350,226 @@ len:[0,0],
 	"level" : "5",
 	"topic" : [
 	"Продукты 2"
+],
+len:[0,0],
+"en":[
+"What is that spoon for?",
+"Two cups of coffee, please.",
+"It is a good price for three ounces.",
+"One pound equals sixteen ounces.",
+"The small bottle is four ounces and the big bottle is eight.",
+"Add three tablespoons of sugar",
+"One cup equals sixteen tablespoons",
+"One gallon equals one hundred twenty eight ounces.",
+"The cups are on that shelf.",
+"He plays, and wins another cup.",
+"I can give him only half a gallon of water.",
+"I added fried carrots.",
+"My sister's husband never eats onion.",
+"I am selling carrots.",
+"wash these onions please",
+"I love my mother's potato soup.",
+"Do you use much oil",
+"There is nothing better than a fresh carrot.",
+"I can't eat this meat without pepper.",
+"I fried this meat without oil.",
+"They fried the potatoes in the same oil.",
+"Will you add any pepper",
+"The bananas are tasty.",
+"Is the meat tasty",
+"Fry the garlic for three minutes.",
+"This apple is sweeter.",
+"It has an apple taste.",
+"Potatoes with onion are very tasty.",
+"Let's add more onion.",
+"They easily turn sour.",
+"Is the taste good",
+"John usually adds some fresh garlic to his soup.",
+"And apples add a sweet aftertaste.",
+"The taste will be better if she adds two teaspoons of sugar.",
+"My dog never eats nuts.",
+"This is a nut.",
+"The cherries are too sour.",
+"When I came into the room, you were making the salad.",
+"watermelons are tasty",
+"He eats five cups of berries and fruit every day.",
+"This cherry is dark red.",
+"Why is this cat eating the berries?",
+"If you bring a melon, we will eat it together.",
+"Tom ate all the watermelons!",
+"Let's cut a melon for our salad!",
+"If you want the red berry, take it.",
+"Is watermelon a fruit",
+"I like Russian cuisine.",
+"He is eating a cookie.",
+"She cooked me fish.",
+"Do not eat this red mushroom!",
+"I mix the two colors.",
+"Santa Claus eats the cookies.",
+"Do you want to bake or to fry these vegetables?",
+"Do you prefer Russian or English cuisine?",
+"They prefer not to mix red and yellow fruit together.",
+"Mary went to the kitchen to fry some mushrooms",
+"Put the berries on the table in the kitchen.",
+"I cooked rice.",
+"Did they bake meat with nuts yesterday?",
+"He uses the spoon",
+"Who drinks from this cup",
+"Are they going to fry potatoes this evening?",
+"Carrots can be orange, red, yellow and even White",
+"We will need two large potatoes and three or four small onions",
+"They use too much garlic",
+"He likes watermelons more than melons.",
+"Here are the berries for the fruit salad",
+"There is nothing better than watermelons.",
+"cooks cook",
+"The boy eats the cookie.",
+"I am a cook",
+"Where is the kitchen",
+"I prefer to cook in the kitchen",
+"I will mix the nuts with the mushrooms",
+"I did not find any garlic here",
+"I eat nuts.",
+"These cherries are too sour, they will not give sweet juice.",
+"Do not eat these white cherries!",
+"My grandmother loves to bake.",
+"A kitchen is a room where people cook",
+"",
+""
+],
+"ru":[
+"Для чего та ложка",
+"Две чашки кофе, пожалуйста.",
+"Это хорошая цена за три унции",
+"Один фунт равен шестнадцати унциям",
+"Маленькая бутылка четыре унции а большая бутылка восемь",
+"Добавьте три столовых ложки сахара.",
+"Одна чашка равна шестнадцати столовым ложкам.",
+"Один галлон равняется ста двадцати восьми унциям.",
+"Чашки на той полке.",
+"Он играет и выигрывает ещё один кубок.",
+"Я могу дать ему только полгаллона воды",
+"Я добавила жареную морковь.",
+"Муж моей сестры никогда не ест лук",
+"Я продаю морковь",
+"Помой эти луковицы, пожалуйста.",
+"Я обожаю картофельный суп моей матери.",
+"Ты используешь много масла?",
+"Нет ничего лучше свежей морковки.",
+"Я не могу есть это мясо без перца",
+"Я пожарила это мясо без масла.",
+"Они обжарили картофель в том же масле.",
+"Ты добавишь перец?",
+"Бананы вкусные",
+"Мясо вкусное?",
+"Обжаривайте чеснок в течение трёх минут.",
+"Это яблоко слаще",
+"Оно имеет яблочный вкус.",
+"Картофель с луком очень вкусный",
+"Давай добавим больше лука.",
+"Они легко прокисают",
+"Этот вкус хороший?",
+"Джон обычно добавляет немного свежего чеснока в свой суп",
+"А яблоки добавляют сладкое послевкусие.",
+"Вкус будет лучше, если она добавит две чайные ложки сахара.",
+"Моя собака никогда не ест орехи",
+"Это орех",
+"Эти вишни - слишком кислые.",
+"Когда я вошёл в комнату, ты делала салат.",
+"Арбузы - вкусные.",
+"Он съедает пять чашек ягод и фруктов каждый день.",
+"Эта вишня темно-красная",
+"Почему этот кот ест ягоды?",
+"Если ты принесешь дыню мы поедим её вместе",
+"Том съел все эти арбузы",
+"Давай порежем дыню для нашего салата!",
+"Если ты хочешь эту красную ягоду, возьми её.",
+"Является ли арбуз фруктом?",
+"Мне нравится русская кухня",
+"Он ест печеньку",
+"Она приготовила мне рыбу",
+"Не ешь этот красный гриб!",
+"Я перемешиваю два цвета.",
+"Санта Клаус ест печеньки.",
+"Ты хочешь испечь или пожарить эти овощи?",
+"Вы предпочитаете русскую или английскую кухню?",
+"Они предпочитают не смешивать красные и жёлтые фрукты вместе.",
+"Мэри пошла на кухню пожарить немного грибов.",
+"Положи ягоды на стол в кухне",
+"Я готовил рис.",
+"Они запекали мясо с орехами вчера?",
+"Он пользуется этой ложкой.",
+"Кто пьёт из этой чашки?",
+"Они собираются жарить картошку этим вечером",
+"Морковки могут быть оранжевые, красные, жёлтые и даже белые.",
+"Нам понадобятся две крупные картофелины и три или четыре мелкие луковицы.",
+"Они используют слишком много чеснока.",
+"Ему нравятся арбузы больше, чем дыни.",
+"Вот ягоды для фруктового салата.",
+"Нет ничего лучше арбузов",
+"Повара готовят.",
+"Мальчик ест печеньку",
+"Я повар.",
+"Где находится кухня?",
+"Я предпочитаю готовить в кухне.",
+"Я смешаю орехи с грибами.",
+"Я не нашёл чеснока тут.",
+"Я ем орехи.",
+"Эти вишни - слишком кислые, они не дадут сладкого сока.",
+"Не ешь эти белые вишни",
+"Моя бабушка обожает печь.",
+"Кухня комната где люди готовят",
+"",
+""
+]
+},
+{
+	"level" : "5",
+	"topic" : [
+	"Цвета 3"
+],
+len:[0,0],
+"en":[
+"We found a gray card.",
+"my sister has a golden dress",
+"That pineapple is green.",
+"shades of gray",
+"Can I take your light green coat?",
+"This shirt is violet",
+"These are three golden oranges.",
+"This is the golden cup.",
+"Cut some green onions, please.",
+"I like her Violet dress",
+"There are a lot of names for the different shades of violet.",
+"The keys are Grey",
+"dark gray",
+"Our bags were green.",
+"",
+""
+],
+"ru":[
+"Мы нашли серую карточку",
+"У моей сестры есть золотое платье.",
+"Тот ананас зелёный",
+"Оттенки серого",
+"Могу я взять твоё светло-зелёное пальто?",
+"Эта рубашка фиолетовая.",
+"Это три золотых апельсина.",
+"Это золотой кубок.",
+"Нарежь немного зелёного лука, пожалуйста.",
+"Мне нравится её фиолетовое платье.",
+"Есть много названий для разных оттенков фиолетового",
+"Ключи серые",
+"Темно-серый",
+"Наши сумки были зелёные.",
+"",
+""
+]
+},
+{
+	"level" : "5",
+	"topic" : [
+	"Одежда 3"
 ],
 len:[0,0],
 "en":[
@@ -4082,146 +5584,332 @@ len:[0,0],
 {
 	"level" : "5",
 	"topic" : [
-	"Цвета 3"
-	]
-},
-{
-	"level" : "5",
-	"topic" : [
-	"Одежда 3"
-	]
-},
-{
-	"level" : "5",
-	"topic" : [
 	"Дом 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Тело 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Продукты 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Растения 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Ребёнок 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Здоровье 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Mammals 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Животные 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Словарь 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Герундий 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Герундий 4"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Предметы 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Люди 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Качества 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Здания 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"География2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Глаголы 3"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Вождение 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Мышление 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Политика 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "5",
 	"topic" : [
 	"Общение 2"
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 },
 {
 	"level" : "",
 	"topic" : [
 	""
-	]
+],
+len:[0,0],
+"en":[
+"",
+""
+],
+"ru":[
+"",
+""
+]
 }
 ]
  
