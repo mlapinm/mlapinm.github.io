@@ -1,6 +1,8 @@
 let round = null 
-let number = 0
-  
+let number = 1
+number = 0
+// number = 8
+
 class RoundSimple{
   
   constructor(test){
@@ -8,13 +10,17 @@ class RoundSimple{
   }
   
   show(){
+    $('.req1').empty()
+    $('.req2').empty()
+    $(".answer").removeClass('false')
+
     for (var name in this.test.asks){
       var text = this.test.asks[name]
       let ask = $("<p>"+ text +"</p>")
-      ask.appendTo(".container1")
+      ask.appendTo(".req1")
       ask.addClass("ask")
-      ask.appendTo(".container1")
-      ask.addClass("ask")
+      // ask.appendTo(".req1")
+      // ask.addClass("ask")
     }
     for (var name in this.test.variants){
       var text = this.test.variants[name]
@@ -26,7 +32,7 @@ class RoundSimple{
       div11.addClass("simple-request")
       div11.appendTo(div1)
 
-      div1.appendTo(".container1")
+      div1.appendTo(".req2")
       div11.click((e)=>{
         if($(e.target).hasClass("selected")){
           $(e.target).removeClass("selected")
@@ -62,15 +68,19 @@ class RoundInput{
   }
   
   show(){
+    $('.req1').empty()
+    $('.req2').empty()
+    $(".answer").removeClass('false')
     for (var name in this.test.asks){
       var text = this.test.asks[name]
       let ask = $("<p>"+ text +"</p>")
-      ask.appendTo(".container1")
+      ask.appendTo(".req1")
       ask.addClass("ask")
     }
 
-  this.input = $("<input type='text' size='40'>")  
-  this.input.appendTo(".container1")
+  this.input = $("<input type='text' size='40'>")
+  this.input.addClass('round-input-request')  
+  this.input.appendTo(".req2")
 
   }
   testing(){
@@ -96,12 +106,15 @@ class RoundOrdered{
   }
   
   show(){
+    $('.req1').empty()
+    $('.req2').empty()
+    $(".answer").removeClass('false')
     $(".test").text(this.test.variants[0])
 
     for (var name in this.test.asks){
       var text = this.test.asks[name]
       let ask = $("<p>"+ text +"</p>")
-      ask.appendTo(".container1")
+      ask.appendTo(".req1")
       ask.addClass("ask")
     }
   
@@ -180,12 +193,15 @@ class RoundDrop{
   }
   
   show(){
+    $('.req1').empty()
+    $('.req2').empty()
+    $(".answer").removeClass('false')
     $(".test").text(this.test.variants[0])
 
     for (var name in this.test.asks){
       var text = this.test.asks[name]
       let ask = $("<p>"+ text +"</p>")
-      ask.appendTo(".container1")
+      ask.appendTo(".req1")
       ask.addClass("ask")
     }
   
@@ -205,10 +221,11 @@ class RoundDrop{
       var text = this.test.variants[0][name]
       this.asks.push(text)
       const div1 = $("<div></div>")
+      div1.addClass('round-drop-request')
 
       const div11 = $("<div>"+ text +"</div>")
       div11.addClass("request_drop")
-      div11.addClass("rounded")
+      // div11.addClass("rounded")
       div11.appendTo(div1)
 
 
@@ -216,14 +233,14 @@ class RoundDrop{
 
       const div12 = $("<div>_</div>")
       div12.addClass("proper")
-      div12.addClass("rounded")
+      // div12.addClass("rounded")
       div12.appendTo(div1)
       this.propers.push(div12)
 
       const divEmpty = $("<div style='clear:both'></div>")
       divEmpty.appendTo(div1)
 
-      div1.appendTo(".container1")
+      div1.appendTo(".req2")
       div11.click((e)=>{
         if($(e.target).hasClass("selected")){
           $(e.target).removeClass("selected")
@@ -297,10 +314,10 @@ if(tests[number].type == 'simple'){
 }
 
 round.show()  
-$(".container1").addClass("rounded")
+// $(".container1").addClass("rounded")
 
 $(".next").click(()=>{
-  $(".container1").children().remove()
+  // $(".container1").children().remove()
 
   if(number<numberMax){
     number+=1
@@ -321,7 +338,7 @@ $(".next").click(()=>{
 })
 
 $(".previouse").click(()=>{
-  $(".container1").children().remove()
+  // $(".container1").children().remove()
 
   if(number > 0){
     number-=1
@@ -346,13 +363,19 @@ round.show()
 function onsubmit(){
   let isTrue = round.testing()
   $(".result").text("Result: " + isTrue)
+  if(isTrue){
+    $(".answer").removeClass('false')
+  }
+  else {
+    $(".answer").addClass('false')
+  }
   // console.log(isTrue) 
 }  
 
 $(".submit").click(()=>{
-  // onsubmit()
-  let isTrue = round.testing()
-  $(".result").text("Result: " + isTrue)
+  onsubmit()
+  // let isTrue = round.testing()
+  // $(".result").text("Result: " + isTrue)
 
 })  
 
