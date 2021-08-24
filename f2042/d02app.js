@@ -1,7 +1,7 @@
 let round = null 
 let number = 1
 number = 0
-// number = 8
+number = 8
 
 class RoundSimple{
   
@@ -109,7 +109,7 @@ class RoundOrdered{
     $('.req1').empty()
     $('.req2').empty()
     $(".answer").removeClass('false')
-    $(".test").text(this.test.variants[0])
+    // $(".test").text(this.test.variants[0])
 
     for (var name in this.test.asks){
       var text = this.test.asks[name]
@@ -196,7 +196,7 @@ class RoundDrop{
     $('.req1').empty()
     $('.req2').empty()
     $(".answer").removeClass('false')
-    $(".test").text(this.test.variants[0])
+    // $(".test").text(this.test.variants[0])
 
     for (var name in this.test.asks){
       var text = this.test.asks[name]
@@ -231,7 +231,8 @@ class RoundDrop{
 
       this.selects[k].appendTo(div1)
 
-      const div12 = $("<div>_</div>")
+      const div12 = $("<div></div>")
+      div12.addClass('vx')
       div12.addClass("proper")
       // div12.addClass("rounded")
       div12.appendTo(div1)

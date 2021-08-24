@@ -115,7 +115,24 @@ h4{
   width: 80%;
 }
 
+.vx {
+  margin-left: 0.4rem;
+  padding: 0.15rem;
+  border-radius: 0.4rem;
+}
+
+.result {
+  margin: auto;
+  text-align: left;
+  width: 8rem;
+  /* border: 1px solid; */
+  padding-top: 1rem;
+  height: 2rem;
+}
+
 .answer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   background-color: aquamarine;
   border-radius: 0.8rem;

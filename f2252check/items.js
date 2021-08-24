@@ -517,10 +517,26 @@ len:[0,0],
 ],
 len:[0,0],
 "en":[
+"I eat spicy food and drink beer.",
+"I want two hamburgers of and a cup coffee",
+"I like American hamburgers",
+"I would like an egg and a bagel, please.",
+"Yes my friend eats hamburgers",
+"I also want an egg and a bagel for breakfast.",
+"I rarely eat spice food",
+"No thank you I rarely drink white wine",
 "",
 ""
 ],
 "ru":[
+"Я ем острую еду и пью пиво",
+"Я хочу два гамбургера и чашку кофе.",
+"Я люблю американские гамбургеры.",
+"Я хотел бы яйцо и бублик пожалуйста",
+"Да, мой друг ест гамбургеры.",
+"Я тоже хотел бы яйцо и бублик пожалуйста",
+"Я редко ем острую еду",
+"Нет спасибо я редко пью белое вино",
 "",
 ""
 ]
