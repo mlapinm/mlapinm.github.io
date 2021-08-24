@@ -2,6 +2,7 @@ let round = null
 let number = 1
 number = 0
 number = 8
+number = 9
 
 class RoundSimple{
   
@@ -12,6 +13,7 @@ class RoundSimple{
   show(){
     $('.req1').empty()
     $('.req2').empty()
+    $(".answer").removeClass('ok')
     $(".answer").removeClass('false')
 
     for (var name in this.test.asks){
@@ -70,6 +72,7 @@ class RoundInput{
   show(){
     $('.req1').empty()
     $('.req2').empty()
+    $(".answer").removeClass('ok')
     $(".answer").removeClass('false')
     for (var name in this.test.asks){
       var text = this.test.asks[name]
@@ -108,6 +111,7 @@ class RoundOrdered{
   show(){
     $('.req1').empty()
     $('.req2').empty()
+    $(".answer").removeClass('ok')
     $(".answer").removeClass('false')
     // $(".test").text(this.test.variants[0])
 
@@ -195,6 +199,7 @@ class RoundDrop{
   show(){
     $('.req1').empty()
     $('.req2').empty()
+    $(".answer").removeClass('ok')
     $(".answer").removeClass('false')
     // $(".test").text(this.test.variants[0])
 
@@ -277,9 +282,11 @@ class RoundDrop{
 
       if(res){
         this.propers[i].text('v')
+        this.propers[i].addClass("ok")
         this.propers[i].removeClass("red")
       }else{
         this.propers[i].text('x')
+        this.propers[i].removeClass("ok")
         this.propers[i].addClass("red")
       }
     }
@@ -366,8 +373,10 @@ function onsubmit(){
   $(".result").text("Result: " + isTrue)
   if(isTrue){
     $(".answer").removeClass('false')
+    $(".answer").addClass('ok')
   }
   else {
+    $(".answer").removeClass('ok')
     $(".answer").addClass('false')
   }
   // console.log(isTrue) 
