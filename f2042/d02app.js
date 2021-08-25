@@ -1,8 +1,8 @@
 let round = null 
 let number = 1
 number = 0
-number = 8
-number = 9
+// number = 8
+// number = 9
 
 class RoundSimple{
   

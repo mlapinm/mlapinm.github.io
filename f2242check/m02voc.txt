@@ -1,0 +1,1539 @@
+
+your	Determiner	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+than	Conjunction	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+for	Preposition	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+she	Pronoun	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+a	Determiner	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+this	Pronoun	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+red	Adjective	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+not	Adverb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+white	Adjective	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+bigger	Adjective	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+the	Determiner	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+my	Determiner	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+cold	Adjective	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+no	Determiner	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+left	Adjective	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+in	Preposition	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+those	Determiner	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+her	Determiner	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+and	Conjunction	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+right	Adjective	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+are	Verb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+out	Adverb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+just	Adverb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+with	Preposition	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+is	Verb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+working	Verb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+this	Determiner	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+to		РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+bathroom	Noun	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+want	Verb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+often	Adverb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+pink	Adjective	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+where	Conjunction	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+blue	Adjective	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+yellow	Adjective	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+on	Preposition	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+i	Pronoun	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+expensive	Adjective	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+bought	Verb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+his	Determiner	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+too	Adverb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+take	Verb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+golden	Adjective	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+small	Adjective	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+he	Pronoun	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+of	Preposition	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+with		РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+cat	Noun	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+sleeping	Verb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+be	Verb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+sister	Noun	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+under	Preposition	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+own	Adjective	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+these	Determiner	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+please	Adverb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+goes	Verb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+low	Adjective	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+old	Adjective	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+has to		РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+to	Preposition	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+next	Adjective	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+sleeps	Verb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+much	Adverb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+that	Pronoun	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+go	Verb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+dining	Verb	РўРѕР»СЊРєРѕ С‡С‚Рѕ	
+who	Pronoun	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+behind	Preposition	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+hear	Verb	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+wait	Verb	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+through	Preposition	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+strong	Adjective	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+why	Adverb	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+we	Pronoun	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+two	Numeral	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+building	Verb	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+one	Numeral	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+girl	Noun	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+breakfast	Noun	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+eat	Verb	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+brought	Verb	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+ground	Noun	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+opened	Verb	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+front	Noun	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+good	Adjective	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+our	Determiner	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+that	Determiner	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+went	Verb	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+day	Noun	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+somebody	Noun	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+their	Determiner	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+there	Adverb	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+high	Adjective	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+between	Preposition	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+it	Pronoun	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+touch	Verb	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+cannot	Adverb	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+walls	Noun	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+this		1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+girls	Noun	1 С‡Р°СЃ РЅР°Р·Р°Рґ	
+you	Pronoun	2 С‡Р°СЃР° РЅР°Р·Р°Рґ	
+big	Adjective	2 С‡Р°СЃР° РЅР°Р·Р°Рґ	
+open	Verb	2 С‡Р°СЃР° РЅР°Р·Р°Рґ	
+very	Adverb	2 С‡Р°СЃР° РЅР°Р·Р°Рґ	
+can	Verb	2 С‡Р°СЃР° РЅР°Р·Р°Рґ	
+careful	Adjective	2 С‡Р°СЃР° РЅР°Р·Р°Рґ	
+bird	Noun	2 С‡Р°СЃР° РЅР°Р·Р°Рґ	
+enough	Determiner	2 С‡Р°СЃР° РЅР°Р·Р°Рґ	
+need	Verb	2 С‡Р°СЃР° РЅР°Р·Р°Рґ	
+took	Verb	2 С‡Р°СЃР° РЅР°Р·Р°Рґ	
+fifteen	Numeral	9 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+ago	Adverb	9 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+lived	Verb	9 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+new	Adjective	9 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+easily	Adverb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+shirts	Noun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+what	Conjunction	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+naked	Adjective	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+at	Preposition	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+let	Verb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+here	Adverb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+me	Pronoun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+like	Verb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+into	Preposition	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+needs	Verb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+was	Verb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+linen	Noun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+skirt	Noun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+but	Conjunction	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+dress	Noun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+do	Verb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+never	Adverb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+first	Determiner	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+underwear	Noun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+faux	Adjective	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+when	Adverb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+if	Conjunction	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+as	Adverb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+hats	Noun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+happy	Adjective	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+brown	Adjective	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+or	Conjunction	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+where	Adverb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+daughter	Noun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+natural	Adjective	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+so	Adverb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+am	Verb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+coat	Noun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+jackets	Noun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+going	Verb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+because	Conjunction	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+us	Pronoun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+important	Adjective	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+does	Verb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+clothes	Noun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+dog	Noun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+long	Adjective	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+different	Adjective	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+friend	Noun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+short	Adjective	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+what	Pronoun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+shirt	Noun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+same	Adjective	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+usually	Adverb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+mine	Pronoun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+better	Adjective	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+black	Adjective	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+last	Determiner	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+more	Determiner	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+when		10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+that	Conjunction	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+wife	Noun	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+on		10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+looks	Verb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+remember	Verb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+each	Determiner	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+twenty	Numeral	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+ten	Numeral	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+can't	Adverb	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+four	Numeral	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+without	Preposition	10 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+jacket	Noun	19 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+give	Verb	19 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+lost	Verb	19 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+about	Preposition	19 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+saw	Verb	19 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+man	Noun	19 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+orange	Adjective	19 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+gave	Verb	19 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+violet	Adjective	19 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+would	Verb	19 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+wallet	Noun	20 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+an	Determiner	20 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+felt	Verb	20 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+up	Preposition	20 С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ	
+sure	Adjective	РІС‡РµСЂР°	
+these	Pronoun	РІС‡РµСЂР°	
+wanted	Verb	РІС‡РµСЂР°	
+dark	Adjective	РІС‡РµСЂР°	
+three	Numeral	РІС‡РµСЂР°	
+gray	Adjective	РІС‡РµСЂР°	
+found	Verb	РІС‡РµСЂР°	
+green	Adjective	РІС‡РµСЂР°	
+of		РІС‡РµСЂР°	
+keys	Noun	РІС‡РµСЂР°	
+cut	Verb	РІС‡РµСЂР°	
+some	Determiner	РІС‡РµСЂР°	
+shades	Noun	РІС‡РµСЂР°	
+they	Pronoun	РІС‡РµСЂР°	
+people	Noun	РІС‡РµСЂР°	
+eats	Verb	РІС‡РµСЂР°	
+yesterday	Adverb	РІС‡РµСЂР°	
+english	Adjective	РІС‡РµСЂР°	
+table	Noun	РІС‡РµСЂР°	
+russian	Adjective	РІС‡РµСЂР°	
+meat	Noun	РІС‡РµСЂР°	
+boy	Noun	РІС‡РµСЂР°	
+together	Adverb	РІС‡РµСЂР°	
+sour	Adjective	РІС‡РµСЂР°	
+came	Verb	РІС‡РµСЂР°	
+juice	Noun	РІС‡РµСЂР°	
+when	Conjunction	РІС‡РµСЂР°	
+let's		РІС‡РµСЂР°	
+tasty	Adjective	РІС‡РµСЂР°	
+sweet	Adjective	РІС‡РµСЂР°	
+likes	Verb	РІС‡РµСЂР°	
+bananas	Noun	РІС‡РµСЂР°	
+apple	Noun	РІС‡РµСЂР°	
+tea	Noun	РІС‡РµСЂР°	
+sugar	Noun	РІС‡РµСЂР°	
+after	Preposition	РІС‡РµСЂР°	
+any	Determiner	РІС‡РµСЂР°	
+added	Verb	РІС‡РµСЂР°	
+large	Adjective	РІС‡РµСЂР°	
+there is		РІС‡РµСЂР°	
+nothing	Pronoun	РІС‡РµСЂР°	
+husband	Noun	РІС‡РµСЂР°	
+him	Pronoun	РІС‡РµСЂР°	
+only	Adverb	РІС‡РµСЂР°	
+another	Determiner	РІС‡РµСЂР°	
+coffee	Noun	РІС‡РµСЂР°	
+sixteen	Numeral	РІС‡РµСЂР°	
+from	Preposition	РІС‡РµСЂР°	
+eight	Numeral	РІС‡РµСЂР°	
+water	Noun	РІС‡РµСЂР°	
+plays	Verb	РІС‡РµСЂР°	
+equals	Verb	РІС‡РµСЂР°	
+five	Numeral	РІС‡РµСЂР°	
+every	Determiner	РІС‡РµСЂР°	
+even	Adverb	РІС‡РµСЂР°	
+shelf	Noun	РІС‡РµСЂР°	
+rice	Noun	РІС‡РµСЂР°	
+all	Pronoun	РІС‡РµСЂР°	
+ate	Verb	РІС‡РµСЂР°	
+work	Verb	РІС‡РµСЂР°	
+mother	Noun	РІС‡РµСЂР°	
+while	Conjunction	РІС‡РµСЂР°	
+funny	Adjective	РІС‡РµСЂР°	
+like	Preposition	РІС‡РµСЂР°	
+spanish	Adjective	РІС‡РµСЂР°	
+against	Preposition	РІС‡РµСЂР°	
+voted	Verb	РІС‡РµСЂР°	
+speak	Verb	РІС‡РµСЂР°	
+elderly	Adjective	РІС‡РµСЂР°	
+once	Adverb	РІС‡РµСЂР°	
+woman	Noun	РІС‡РµСЂР°	
+french	Adjective	РІС‡РµСЂР°	
+everybody	Pronoun	РІС‡РµСЂР°	
+tired	Adjective	РІС‡РµСЂР°	
+answered	Verb	РІС‡РµСЂР°	
+works	Verb	РІС‡РµСЂР°	
+liked	Verb	РІС‡РµСЂР°	
+tomorrow	Adverb	РІС‡РµСЂР°	
+nobody	Pronoun	РІС‡РµСЂР°	
+anybody	Pronoun	РІС‡РµСЂР°	
+well	Adverb	РІС‡РµСЂР°	
+her	Pronoun	РІС‡РµСЂР°	
+else	Adverb	РІС‡РµСЂР°	
+played	Verb	РІС‡РµСЂР°	
+too		РІС‡РµСЂР°	
+kind	Adjective	РІС‡РµСЂР°	
+help	Verb	РІС‡РµСЂР°	
+children	Noun	РІС‡РµСЂР°	
+themselves	Pronoun	РІС‡РµСЂР°	
+neither	Adverb	РІС‡РµСЂР°	
+most	Adverb	РІС‡РµСЂР°	
+nor	Conjunction	РІС‡РµСЂР°	
+others	Pronoun	РІС‡РµСЂР°	
+them	Pronoun	РІС‡РµСЂР°	
+interesting	Adjective	РІС‡РµСЂР°	
+professional	Adjective	РІС‡РµСЂР°	
+many	Determiner	РІС‡РµСЂР°	
+january	Noun	РІС‡РµСЂР°	
+swimming	Verb	РІС‡РµСЂР°	
+since	Preposition	РІС‡РµСЂР°	
+hello	Interjection	РІС‡РµСЂР°	
+should	Verb	РІС‡РµСЂР°	
+singing	Verb	РІС‡РµСЂР°	
+late	Adjective	РІС‡РµСЂР°	
+married	Adjective	РІС‡РµСЂР°	
+scientist	Noun	РІС‡РµСЂР°	
+other	Determiner	РІС‡РµСЂР°	
+snake	Noun	РІС‡РµСЂР°	
+yes	Adverb	РІС‡РµСЂР°	
+menu	Noun	РІС‡РµСЂР°	
+dad	Noun	РІС‡РµСЂР°	
+mom	Noun	РІС‡РµСЂР°	
+restaurant	Noun	РІС‡РµСЂР°	
+germans	Noun	РІС‡РµСЂР°	
+favorite	Adjective	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+music	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+hobby	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+behaves	Verb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+until	Conjunction	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+teacher	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+thanks	Interjection	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+good night		2 РґРЅСЏ РЅР°Р·Р°Рґ	
+hi	Interjection	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+doctor	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+song	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+alone	Adjective	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+sings	Verb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+unless	Conjunction	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+six	Numeral	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+actress	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+eating	Verb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+whose	Pronoun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+otherwise	Adverb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+off	Preposition	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+dangerous	Adjective	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+do	Verb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+might	Verb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+left	Verb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+dogs	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+thought	Verb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+say	Verb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+dollar	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+party	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+women	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+men	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+even	Adjective	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+odd	Adjective	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+down	Adverb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+hurts	Verb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+horses	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+why	Conjunction	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+always	Adverb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+wood	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+could	Verb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+actor	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+won	Verb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+love	Verb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+ready	Adjective	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+ours	Pronoun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+yours	Pronoun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+medicine	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+and	Conjunction	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+scissors	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+brother	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+loves	Verb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+sunday	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+life	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+its	Determiner	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+country	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+friends	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+history	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+drink	Verb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+told	Verb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+tomatoes	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+live	Verb	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+child	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+horse	Noun	2 РґРЅСЏ РЅР°Р·Р°Рґ	
+health	Noun	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+banana	Noun	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+cows	Noun	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+however	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+sixty	Numeral	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+almost	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+wrong	Adjective	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+of course		3 РґРЅСЏ РЅР°Р·Р°Рґ	
+move	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+instead	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+loudly	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+back	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+both	Determiner	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+helps	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+finally	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+forward	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+quickly	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+allowed	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+ran	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+each other		3 РґРЅСЏ РЅР°Р·Р°Рґ	
+spoke	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+quite	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+far	Adjective	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+used	Adjective	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+tell	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+such	Determiner	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+office	Noun	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+largest	Adjective	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+latest	Adjective	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+early	Adjective	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+earliest	Adjective	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+larger	Adjective	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+company	Noun	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+movies	Noun	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+began	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+lower	Adjective	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+higher	Adjective	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+flying	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+lowest	Adjective	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+highest	Adjective	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+least	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+moving	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+must	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+being	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+home	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+lives	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+help	Noun	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+hat	Noun	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+again	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+gives	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+already	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+few	Determiner	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+then	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+dollars	Noun	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+grew	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+ourselves	Pronoun	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+thousand	Numeral	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+today	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+nine	Numeral	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+weather	Noun	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+seven	Numeral	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+seventeen	Numeral	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+less	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+longer	Adjective	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+get used to		3 РґРЅСЏ РЅР°Р·Р°Рґ	
+held	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+stood	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+understood	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+see	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+though	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+thirty	Numeral	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+dinner	Noun	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+near	Preposition	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+sat	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+how	Adverb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+talking	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+raining	Verb	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+used to		3 РґРЅСЏ РЅР°Р·Р°Рґ	
+weak	Adjective	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+still	Adjective	3 РґРЅСЏ РЅР°Р·Р°Рґ	
+heavy	Adjective	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+read	Verb	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+keep	Verb	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+waiting	Verb	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+game	Noun	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+soon	Adverb	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+future	Adjective	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+university	Noun	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+older	Adjective	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+saturday	Noun	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+spent	Verb	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+family	Noun	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+relax	Verb	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+during	Preposition	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+either	Adverb	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+countries	Noun	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+changed	Verb	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+married	Verb	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+library	Noun	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+kept	Verb	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+wrote	Verb	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+feel	Verb	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+believe	Verb	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+right	Adverb	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+change	Verb	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+business	Noun	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+able	Adjective	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+information	Noun	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+itself	Pronoun	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+bad	Adjective	4 РґРЅСЏ РЅР°Р·Р°Рґ	
+play	Verb	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+starts	Verb	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+myself	Pronoun	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+work	Noun	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+believed	Verb	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+knew	Verb	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+among	Preposition	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+according	Preposition	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+arrives	Verb	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+including	Preposition	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+anything	Pronoun	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+lunch	Noun	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+girlfriend	Noun	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+several	Determiner	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+along	Preposition	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+anything	Adverb	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+away	Adverb	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+swam	Verb	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+boyfriend	Noun	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+walked	Verb	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+across	Preposition	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+father	Noun	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+toward	Preposition	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+phone	Noun	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+strange	Adjective	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+heard	Verb	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+little	Adjective	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+rooms	Noun	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+outside	Adverb	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+around	Adverb	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+something	Pronoun	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+slowly	Adverb	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+food	Noun	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+before	Preposition	5 РґРЅРµР№ РЅР°Р·Р°Рґ	
+written	Verb	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+may	Verb	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+earlier	Adverb	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+got	Verb	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+traffic	Noun	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+fifth	Determiner	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+by		6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+eighty	Numeral	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+by	Preposition	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+busy	Adjective	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+sent	Verb	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+sold	Verb	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+two-thirds		6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+fewer	Determiner	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+second	Noun	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+means	Verb	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+answer	Verb	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+ninth	Determiner	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+tenth	Determiner	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+february	Noun	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+born	Adjective	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+twentieth	Determiner	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+eighth	Determiner	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+third	Numeral	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+fourth	Determiner	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+friday	Noun	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+monday	Noun	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+thursday	Noun	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+seventh	Determiner	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+sixth	Determiner	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+been	Verb	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+ninety	Numeral	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+nineteen	Numeral	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+april	Noun	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+son	Noun	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+tuesday	Noun	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+ex	Adjective	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+respect	Verb	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+himself	Pronoun	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+barely	Adverb	6 РґРЅРµР№ РЅР°Р·Р°Рґ	
+fathers	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+increased	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+decreased	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+helped	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+increasing	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+decreasing	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+going to		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+worked	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+forget	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+biggest	Adjective	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+eighteen	Numeral	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+answering	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+allows	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+allow	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+mean	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+loved	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+if		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+increase	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+expect	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+hoped	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+decrease	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+marry	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+cats	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+spending	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+lately	Adverb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+twelve	Numeral	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+thirteen	Numeral	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+fifty	Numeral	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+fruit	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+fourteen	Numeral	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+cost	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+eleven	Numeral	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+healthy	Adjective	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+worth	Adjective	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+donating	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+smoking	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+prohibited	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+yourself	Pronoun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+playing	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+flies	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+swims	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+to school		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+fly	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+plus	Preposition	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+minus	Preposition	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+zero	Numeral	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+cash	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+paid	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+those were		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+mice	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+that was		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+it was		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+hungry	Adjective	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+boxes	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+had	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+were	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+ever	Adverb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+have to		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+actresses	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+know	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+tomato	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+will be		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+juices	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+pigs	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+actors	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+mothers	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+wild	Adjective	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+skirts	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+boys	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+fish	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+couldn't		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+fresh	Adjective	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+toy	Adjective	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+cow	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+sees	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+mouse	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+pig	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+wednesday	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+rained	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+chair	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+ok	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+how are you		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+welcome to		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+good morning		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+see you		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+i'm fine		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+good evening		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+eaten	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+yet	Adverb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+young	Adjective	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+remembers	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+believes	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+trusts	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+respects	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+trust	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+yes	Interjection	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+blouse	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+knows	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+kissed	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+best	Adverb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+driving	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+stopping	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+buying	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+paying	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+later	Adverb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+feeding	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+furniture	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+parties	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+boring	Adjective	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+parking	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+foggy	Adjective	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+tonight	Adverb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+chilly	Adjective	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+universities	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+libraries	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+still	Adverb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+windy	Adverb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+lucky	Adjective	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+box	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+march	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+how much		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+local	Adjective	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+chairs	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+whom		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+there are		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+there was		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+there were		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+there will be		1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+egg	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+key	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+dresses	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+tall	Adjective	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+spicy	Adjective	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+cleans	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+partner	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+dances	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+cooks	Verb	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+reasons	Noun	1 РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ	
+drank	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+fell in love		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+feels	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+shave	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+shaving	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+worse	Adjective	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+shaved	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+dressed	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+map	Noun	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+lawyer	Noun	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+smile	Noun	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+undressed	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+badly	Adverb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+hugged	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+shaves	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+which	Conjunction	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+meetings	Noun	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+slept	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+does	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+sang	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+years old		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+alive	Adjective	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+respect	Noun	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+we'll		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+herself	Pronoun	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+yourselves	Pronoun	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+proud	Adjective	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+forty	Numeral	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+built	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+made	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+scheduled	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+given	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+checked	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+reading	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+divorced	Adjective	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+flew	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+became	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+cooking	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+interrupted	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+checking	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+received	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+younger	Adjective	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+arrived	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+needed	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+trusted	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+dance	Noun	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+on time		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+arrive	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+moves	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+seldom	Adverb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+meet	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+were going to		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+shortest	Adjective	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+which	Determiner	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+stronger	Adjective	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+smallest	Adjective	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+worst	Adjective	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+weakest	Adjective	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+newest	Adjective	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+happiest	Adjective	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+happier	Adjective	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+living	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+opening	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+exactly	Adverb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+they'll		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+will she		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+will it		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+she'll		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+i'll		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+opens	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+leaving	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+put	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+how many		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+helping	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+whom		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+hers	Pronoun	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+theirs	Pronoun	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+do they		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+does not		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+do you		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+do not		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+does he		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+does she		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+giving	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+crying	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+isn't she		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+aren't you		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+isn't he		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+aren't they		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+drawing	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+dancing	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+honey	Noun	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+talented	Adjective	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+is he		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+are they		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+are we		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+is she		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+am i		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+hears	Verb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+eggs	Noun	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+blouses	Noun	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+carefully	Adverb	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+ice	Noun	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+had to		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+bed	Noun	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+seventy	Numeral	2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+nice to meet you		2 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+engineer	Noun	3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+beds	Noun	3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+did it		3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+shorter	Adjective	3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+oldest	Adjective	3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+longest	Adjective	3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+will we		3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+will you		3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+will he		3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+will they		3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+where will		3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+you'll		3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+he'll		3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+will i		3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+newer	Adjective	3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+weaker	Adjective	3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+smaller	Adjective	3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+strongest	Adjective	3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+youngest	Adjective	3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+aren't we		3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+is it		3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+are you		3 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+relatives	Noun	4 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+brother's		4 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+john's		4 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+mother's		4 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+man's		4 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+crawling	Verb	4 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+pregnant	Adjective	4 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+swaddle	Verb	4 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+innocent	Adjective	4 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+earth	Noun	4 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+north	Noun	4 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+blood	Noun	4 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+sorry	Adjective	4 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+afraid	Adjective	4 РЅРµРґРµР»Рё РЅР°Р·Р°Рґ	
+forrest	Proper noun	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+it's		1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+waiters	Noun	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+waitresses	Noun	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+am not		1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+is not		1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+was not		1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+ideas	Noun	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+you are welcome		1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+west	Noun	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+south	Noun	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+didn't she		1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+didn't you		1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+did she		1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+wife's		1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+son's		1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+bathe	Verb	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+teething	Verb	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+sensitive	Adjective	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+painful	Adjective	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+chew	Verb	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+bitter	Adjective	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+french fries		1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+fireworks	Noun	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+national	Adjective	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+civil	Adjective	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+wet	Adjective	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+dear	Adjective	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+round	Adjective	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+narrow	Adjective	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+musical	Adjective	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+forever	Adverb	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+familiar	Adjective	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+pressure	Noun	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+froze	Verb	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+fed	Verb	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+teams	Noun	1 РјРµСЃСЏС† РЅР°Р·Р°Рґ	
+poverty	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+whoever	Pronoun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+frozen	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+envelopes	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+did they		2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+didn't it		2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+did i		2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+east	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+further	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+islands	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+poor	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+shallow	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+suspects	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+instrument	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+glass	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+snail	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+cause	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+crow's		2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+get rid of		2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+give up		2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+deaf	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+nausea	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+medical	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+blind	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+maternity leave		2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+solid	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pieces	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+wrists	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+arm	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+brushes	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+wrinkles	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+ironed	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+watermelon	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+melons	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+berry	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+my name is		2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+writer's		2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+artist	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+paper	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+caught	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+suitcase	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+batteries	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+candle	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+depths	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+word	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+parts	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+goal	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+congratulate	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+sincere	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+step	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+rewarded	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+efforts	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+steps	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+achieving	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+decorating	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+decorated	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+disappoint	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+disappointed	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+joking	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+embassy	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+crisis	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+weapon	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+strike	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bribe	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bribes	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+power	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+threat	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+crime	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+army	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+crimes	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+anthem	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+progressing	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+economy	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+wealth	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+population	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+society	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+freedom	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+elections	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+court	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+mayor	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+election	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+opinion	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+memories	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+reminders	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+reminder	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+ignore	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+ignored	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+mention	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+intuition	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+nightmare	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+dream	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+point	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+mind	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+sense	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+attention	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+senses	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+detour	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+ignition	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+gas	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+ignite	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+fuel	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+fuel	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+limit	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+speed	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+rush	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pedestrians	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pedestrian	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+signal	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+signals	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+yielding	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+yield	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+fasten	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+clutch	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pedal	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+press	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+gears	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pressed	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+fastened	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+reverse	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+cylinder	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hood	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+trunk	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+replacements	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+lanes	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+truck	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+lane	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+intersection	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+vehicle	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+dug	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+digging	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+blinked	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+blinks	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+blows	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+stretched	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+stretch	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+blow	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+stepped	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+squeezed	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+licking	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+chewing	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+licked	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+climbed	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+dropped	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+repeated	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pretend	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+shake	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+shook	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+belonged	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+stole	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+airplane	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+moss	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+direction	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+surface	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+swamp	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+volcano	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+swamps	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+wind	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+planet	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+sun	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+sky	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+space	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+moon	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+sea	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+streams	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+waves	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+island	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+church	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+stones	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+stone	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+tower	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+castle	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+castles	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+village	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+station	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bridge	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hospitals	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+architects	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+buildings	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hospital	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+building	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+architect	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pool	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+road	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+generous	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+funnier	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+strangest	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+purest	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+thicker	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+kinder	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hard	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hunter	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+suspect	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+members	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+soldier	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+locals	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+soldiers	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+queen	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+enemies	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+queens	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+king's		2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+enemy	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+gifted	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+boat	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hook	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hooks	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bubbles	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+backpack	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+sets	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+rope	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+machine	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+knives	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+instruments	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+knife	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+clock	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+page	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pages	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+chain	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+glasses	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+star	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+handle	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+picture	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+traps	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pictures	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+soap	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+deny	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+recall	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+denies	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+risked	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+recommended	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+risks	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+avoid	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+mistake	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+male	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+purpose	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+manually	Adverb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+unfair	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+age	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+entrance	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+punish	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+punished	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+drew	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+dove	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+gulls	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+sparrow	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+parrots	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+crows	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+ravens	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+gull	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+parrot	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+swans	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+octopus	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+snails	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+snakes	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+worms	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+frog	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+frogs	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+mosquito	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+mosquitoes	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+eagle's		2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+beak	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+goose	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+harry	Proper noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+feather	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+geese	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+eagle	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+mane	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+herd	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+claw	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+mammals	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hare	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hares	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+claws	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+raccoons	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+beavers	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+raccoon	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+moles	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+rats	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+squirrels	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+rabbits	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hamster	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+squirrel	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hoof	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+goat's		2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+goat	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+deer	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hooves	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bull's		2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+horns	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+foxes	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+kills	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+tails	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+predators	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+wound	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+scratched	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bruise	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bruises	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pills	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+swallowed	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+scratch	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+swallow	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pill	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+surgeon	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+nurse	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+effect	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+surgeons	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+lice	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+prescribe	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+cough	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+services	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+disease	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+vaccination	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+height	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+insurance	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pain	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+allergy	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+gain	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+rattle	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+rattles	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+weight	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+twins	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pacifier	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+calmed	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+teeth	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pee	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+poops	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+breasts	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+diaper	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+contractions	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+midwives	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+birth	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+midwife	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+sandy	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+forest	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+dried	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+plant	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+weeds	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+watering	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+lawn	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+seed	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+soil	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+blooming	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bloom	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+branches	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+trees	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+grass	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+leaves	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bushes	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+tree	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+spices	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pumpkins	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+cranberry	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pumpkin	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+cranberries	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+piece	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+freeze	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+freezes	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+ham	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+cabbage	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+cucumber	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+cucumbers	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+wrist	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+tattoo	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pierce	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pierced	Verb	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+necklace	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+fatty	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+brain	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+liver	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+kidney	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+fat	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+waist	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+arms	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+foot	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+feet	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hairy	Adjective	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+elbows	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+tongue	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+jaw	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+jaws	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+necks	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+mouth	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+fingers	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+chin	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+neck	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+ear	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+eyebrows	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+ears	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+lips	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+nose	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+wrinkles	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+eyebrow	Noun	2 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+heart	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+lungs	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+breathing	Verb	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+breathe	Verb	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+skin	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+back	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+lung	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+chest	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bell	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+lamp	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+sofa	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+armchair	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+square	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+brick	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+wall	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+area	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bricks	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+roof	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+porch	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+fence	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+yard	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+garden	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+wrinkled	Adjective	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+iron	Verb	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+subtracted	Verb	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+thousand	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+didn't they		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+mittens	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+scarf	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+fur	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+length	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+size	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+sleeves	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+silk	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+suit	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+slippers	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+heel	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+lace	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+laces	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+kitchen	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+berries	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+cherry	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+cherries	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+melon	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+watermelons	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+p.m.		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+wasn't		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hours	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+train	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+cups	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+cup	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+spoon	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+ounces	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+spoons	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+gallon	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+artists	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+scientists	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+coach	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+citizens	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+german	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+couple	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+citizen	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+differences	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+loudest	Adjective	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+difference	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hind	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+papers	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+catch	Verb	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pear	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pears	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+kite	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+balloons	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+match	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+toothbrush	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+science	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+corner	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+suitcases	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+watch	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+fork	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+circle	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bicycle	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+fire	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+farm	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bicycles	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+sponge	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+battery	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+flag	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+roses	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+basket	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+rose	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+depth	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+windows	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+body	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+face	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+night	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+law	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+rights	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+right	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+side	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+world	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+war	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+laws	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+things	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+works	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+thing	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+part	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+words	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+program	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+stories	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+story	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+system	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+programs	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+results	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+group	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+problem	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+result	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hands	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hand	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+multiplied	Verb	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+divided	Verb	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+multiply	Verb	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+subtract	Verb	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+decade	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+century	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+decades	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+centuries	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+dozen	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+price	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+budget	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+donate	Verb	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+sales	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+sale	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+debt	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+debts	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+buyers	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bank	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+mortgage	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+annual	Adjective	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+incomes	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+decreases	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+tax	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+accountant	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+accountants	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+money	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+rubles	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hasn't		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+haven't		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+we've		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+i've		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+they've		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+thrice	Adverb	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+snowy	Adjective	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+rainy	Adjective	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+way	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+reason	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+ways	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+behave	Verb	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+schools	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+school	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+was going to		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+calls	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+call	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+address	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+number	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+schedule	Verb	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+text	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+busiest	Adjective	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+did he		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+didn't i		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+didn't we		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+did you		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+didn't he		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+didn't		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+did not		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+june	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+september	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+december	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+november	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+may	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+august	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+october	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+july	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+o'clock		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+fall	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+minutes	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pens	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+pen	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+letter	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+uncle	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+aunt	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+grandmother	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+spouses	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+grandfather	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+vera's		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+anna's		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+father's		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+eyes	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+husband's		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+don't		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+victor	Proper noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+lola	Proper noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+i'm		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+farmer	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+judge	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+dancers	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+journalist	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+journalists	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+dancer	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+waitress	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+waiter	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+morning	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+times	Preposition	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+divided by		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+question	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+answer	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+some of		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+questions	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+answers	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+are not		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+aren't		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+weren't		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+were not		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+idea	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+thank you		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hour	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+mountain	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+deserts	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+trains	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+spring	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+umbrella	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+beach	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+look at		3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+feed	Verb	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+baby	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+zoo	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+leaders	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+leader	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+time	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+emails	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+ball	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+team	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+elevators	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+elevator	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+exit	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bus	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+shoe	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+year	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+winter	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+summer	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+parents	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+town	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+place	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+flowers	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+evening	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+prescription	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+head	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+floor	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+mirror	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+window	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+view	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+doll	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+color	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bottle	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+job	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+park	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+city	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+hotel	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+magazine	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+flight	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+airport	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+passport	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+bag	Noun	3 РјРµСЃСЏС†Р° РЅР°Р·Р°Рґ	
+car	Noun
