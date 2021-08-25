@@ -1,0 +1,33 @@
+* {
+    font-size: 1.35rem;
+    font-family: sans-serif;
+}
+
+
+.container1 {
+    display: none;
+    height: 40vh;
+    background-color: aqua;
+    overflow: auto;
+}
+
+.container2 {
+    height: 40vh;
+    background-color: aqua;
+    border: 1px solid;
+    overflow: auto;
+}
+
+
+.buttons {
+    display: flex;
+}
+
+.button {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.num {
+    width: 4rem;
+}

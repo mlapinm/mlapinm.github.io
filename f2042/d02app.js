@@ -2,7 +2,7 @@ let round = null
 let number = 1
 number = 0
 // number = 8
-// number = 9
+// number = 5
 
 class RoundSimple{
   
@@ -90,7 +90,7 @@ class RoundInput{
     let appropriate = true
     let text = this.input.val()
     appropriate = this.test.responses.find((e, i) => {
-      return e == text
+      return e.toLowerCase() == text.toLowerCase()
     })? true : false
 
     return appropriate
