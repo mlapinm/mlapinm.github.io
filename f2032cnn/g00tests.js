@@ -42,7 +42,8 @@ let tests = [
 	  ""
 	],
     "responses": [
-      ""
+      "0",
+	  "1"
     ],
     "variants": [
       "interface GigabitEthernetO/O/1 channel-group 10 mode on",
@@ -66,7 +67,7 @@ let tests = [
 	  ""
 	],
     "responses": [
-      "The router begins sending traffic without an explicit matching entry in the routing table to GigabitEthernetO/1."
+      "0"
     ],
     "variants": [
       "The router begins sending traffic without an explicit matching entry in the routing table to GigabitEthernetO/1.",

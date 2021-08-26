@@ -1,26 +1,32 @@
 * {
     font-size: 1.35rem;
     font-family: sans-serif;
+    /* margin: 0px; */
 }
 
 
 .container1 {
-    display: none;
-    height: 40vh;
+    /* display: none; */
+    /* height: 40vh; */
     background-color: aqua;
     overflow: auto;
 }
 
 .container2 {
-    height: 40vh;
+    /* height: 40vh; */
     background-color: aqua;
-    border: 1px solid;
+    /* border: 1px solid; */
     overflow: auto;
+}
+
+.bordered {
+    border: 1px solid;
 }
 
 
 .buttons {
-    display: flex;
+    /* display: flex; */
+    display: none;
 }
 
 .button {
