@@ -1,126 +1,106 @@
 $(() => {
   let log1 = $('.log1')
   let log2 = $('.log2')
-  let edit0 = $('.edit0')
-  let edit1 = $('.edit1')
-  let table = $('.table')
-  let list0 = $('.div_list0')
-  let list1 = $('.div_list1')
-  let lines0 = items[1].en
-  let lines1 = items[2].en
-  let editText = ''
-  
-  let count0 = lines0.length
-  let count1 = lines1.length
+  let edit0 = $('.text')
+  let back = $('.back')
+  let space = $('.space')
+  let quote = $('.quote')
+  let rid = $('.rid')
+  let prevText = ''
+
 
   function create(){
-    let textList0 = items[1].en
-    let text0 = textList0.join('\n')
-    let textList1 = items[2].en
-    let text1 = textList1.join('\n')
-    setEdit0(text0)
-    setEdit1(text1)
-    setTable([text0, text1])
-    setLists([text0, text1])
-
-
-    edit0.on('input selectionchange propertychange', function() {
-      setTable(getEdit())
-      setLists(getEdit())
-    })
-   
-    edit1.on('input selectionchange propertychange', function() {
-        setTable(getEdit())
-        setLists(getEdit())
-      })
-  
+    let textList = items[3].en
+    let text = textList.join('\n')
+    edit0[0].value = text
   }
 
-  function setTable(texts){
-    let l0 = texts[0].split('\n')
-    count0 = l0.length
-    let l1 = texts[1].split('\n')
-    count1 = l1.length
-    let count = count0 >= count1 ? count0 : count1
-    console.log(count)
-    table.empty()
-    for(let i=0;i<count;i++){
-      let tr = $("<tr></tr>")
-      let td0 = $("<td></td>")
-      let td1 = $("<td></td>")
-      if(i < count0){
-        td0.text(l0[i])
-      }
-      if(i < count1){
-        td1.text(l1[i])
-      }
-      tr.append(td0)
-      tr.append(td1)
-      table.append(tr)
-      }
-  }
-
-  function setLists(texts){
-    let l0 = texts[0].split('\n')
-    count0 = l0.length
-    let l1 = texts[1].split('\n')
-    count1 = l1.length
-    count = count0 > count1 ? count0 : count1
-    let l = []
-    for(let i = 0; i < count; i++){
-        if(i < count0){
-            l.push('<p>"'+l0[i]+'",</p>')
-          }else{
-            l.push('<p>"' + '",</p>')
-          }
-          if(i < count1){
-            l.push('<p>"'+l1[i]+'",</p>')
-          }else{
-            l.push('<p>"' + '",</p>')
-          }
+  function saveText(){
+    if(prevText == ''){
+      prevText = edit0[0].value
     }
+  }
 
-    let l12 = []
-    for(let i = 0; i < count; i++){
-        if(i < count0){
-            l12.push('<p>"'+l0[i]+'",</p>')
-          }else{
-            l12.push('<p>"' + '",</p>')
-          }
+
+  function oneSpace(text){
+    let text2 = text
+    let textList = text.split(' ')
+    let textList2 = []
+    for(let e of textList){
+      let e2 = e.trim()
+      if(e2 != ''){
+        textList2.push(e2)
+      }
     }
-    for(let i = 0; i < count; i++){
-        if(i < count1){
-            l12.push('<p>"'+l1[i]+'",</p>')
-          }else{
-            l12.push('<p>"' + '",</p>')
-          }
+    text2 = textList2.join(' ')
+    return text2
+  }
+
+  function onBack(){
+    saveText()
+    if(prevText != ''){
+      edit0[0].value = prevText
     }
-
-
-    let text00 = l.join('\n')
-    let text01 = l12.join('\n')
-
-
-    list0.html(text00)
-    list1.html(text01)
-
   }
 
-  function setEdit0(text){
-    $(".edit0")[0].value = text
+  function onSpace(){
+    let text = edit0[0].value
+    let textList = text.split('\n')
+    let textList2 = []
+    for(let e of textList){
+      let e2 = ' ' + e
+      textList2.push(e2)
+    }
+    let text2 = textList2.join('\n')
+    edit0[0].value = text2
   }
 
-  function setEdit1(text){
-    $(".edit1")[0].value = text
+
+  function onQuote(){
+    let text = edit0[0].value
+    let textList = text.split('\n')
+    let textList2 = []
+    for(let e of textList){
+      let e2 = '"' + e + '",'
+      textList2.push(e2)
+    }
+    let text2 = textList2.join('\n')
+    edit0[0].value = text2
   }
 
-  function getEdit(text){
-    return [$(".edit0")[0].value, $(".edit1")[0].value] 
+  function onRid(){
+    let text = edit0[0].value
+    let textList = text.split('\n')
+    let textList2 = []
+    for(let e of textList){
+      let e2 = oneSpace(e)
+      if(e2 != ""){
+        textList2.push(e2)
+      }
+    }
+    let text2 = textList2.join('\n')
+    edit0[0].value = text2
   }
 
+  back.click(() => {
+    onBack()
+  })
+
+  space.click(() => {
+    onSpace()
+  })
+
+  quote.click(() => {
+    onQuote()
+  })
+
+  rid.click(() => {
+    onRid()
+  })
 
   create()
-
-
+  // onSpace()
+  // onQuote()
+  // onRid()
 
 })

@@ -3,27 +3,27 @@
   font-family: sans-serif;
 }
 
-p{
+p {
   margin: 0;
-
 }
 
 .log1 {
     /* background-color: aliceblue; */
 }
 
-.div_edit{
+.buttons {
   display: flex;
-  height: 35vh;
 }
 
-.div_edit div {
-  float: left;
+.button {
   width: 100%;
-  height: 100%;
 }
 
-.text {
+.div_edit{
+  height: 70vh;
+}
+
+.edit0 {
   width: 100%;
   height: 100%;
   line-height: 1;
@@ -33,18 +33,4 @@ p{
   
 }
 
-.div_table{
-  margin-top: 0.2em;
-  height: 50vh;
-  overflow: auto;
-}
-
-.table{
-  width: 100%;
-  height: 100%;
-}
-
-.table td{
-  border-bottom: 1px dotted;
-}
 
