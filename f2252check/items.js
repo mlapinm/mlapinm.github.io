@@ -688,14 +688,36 @@ len:[0,0],
 {
 	"level" : "2",
 	"topic" : [
-	"0 расписания"
+	"расписания"
 ],
 len:[0,0],
 "en":[
+"See you later!",
+"See you tomorrow, Maria!",
+"I need a ride.",
+"I have a car, do you need a ride?",
+"See you later, Maksim!",
+"I am busy tomorrow, see you Wednesday.",
+"Of course I need a ride.",
+"The game is tomorrow",
+"Bye see you later",
+"Yes I have a car",
+"There is a bus stop nearby, but I have a car.",
 "",
 ""
 ],
 "ru":[
+"Увидимся позже!",
+"Увидимся завтра Мария",
+"Меня нужно подвезти",
+"У меня есть машина, тебя нужно подвезти?",
+"Увидимся позже Максим",
+"Я занята завтра, увидимся в среду.",
+"Конечно меня нужно подвезти",
+"Матч – завтра!",
+"Пока, увидимся позже!",
+"Да, у меня есть машина.",
+"Есть автобусная остановка поблизости, но у меня есть машина.",
 "",
 ""
 ]
