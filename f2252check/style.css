@@ -36,6 +36,11 @@ img{
     }
 
 
+.quantity {
+    text-align: end;
+}
+
+
 
 .item {
     display:flex;

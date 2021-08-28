@@ -6,6 +6,7 @@ $(() => {
     let checkedTopic = 0
     let topics = []
     let levels = []
+    let quantity = $('.quantity')
 
    
 
@@ -91,7 +92,7 @@ $(() => {
         let cookieNum = cookieRead()
         console.log(cookieNum)
         $('.log1').text(cookieNum)
-
+        let vQuantity = 0
         for( let i = 0; i < count; i++){
             const item = $("<div></div>")
             item.attr("id", "cel" + i)
@@ -111,6 +112,7 @@ $(() => {
             level.text(items[i]['level'] + ' ')
             if (mFullItem(items[i])){
                 level.addClass('rounded')
+                vQuantity += 1
             }
             topic.text(items[i]['topic'][0])
             item.append(level)
@@ -152,6 +154,7 @@ $(() => {
 
             })
         }
+        quantity.text(vQuantity)
 }
 
 
