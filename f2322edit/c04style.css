@@ -11,6 +11,18 @@ p {
     /* background-color: aliceblue; */
 }
 
+.inputs {
+  display: flex;
+}
+
+.input {
+  width: 100%;
+}
+
+.ok {
+  width: 10%;
+}
+
 .buttons {
   display: flex;
 }

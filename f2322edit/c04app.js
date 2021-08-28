@@ -40,6 +40,7 @@ $(() => {
     saveText()
     if(prevText != ''){
       edit0[0].value = prevText
+      $('.back').text('back')
     }
   }
 
