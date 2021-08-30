@@ -1,4 +1,4 @@
-let tests = [
+[
   {
     "number": "1",
     "type": "",
