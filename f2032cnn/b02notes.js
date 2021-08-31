@@ -17,6 +17,6 @@ var notes = [
       "",
       ""
     ],
-    "link": "g01test.html"
+    "link": "g00test.html"
    }
 ]
