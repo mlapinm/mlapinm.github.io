@@ -281,14 +281,14 @@ let tests = [
     ],
     "img": [],
     "sentence": [
-      "В. 255.255.224.0",
-      "С. 255.255.240.0"
+      "В. 255.255.224.0"
     ],
     "responses": [
       ""
     ],
     "variants": [
-      "255.255.192.0"
+      "255.255.192.0",
+      "255.255.240.0"
     ]
   },
   {
@@ -316,16 +316,28 @@ let tests = [
       "Which of the following are transport layer protocols? (Choose two.)"
     ],
     "img": [],
-    "sentence": [
-      "following is required? (Choose two.)"
-    ],
+    "sentence": [],
     "responses": [
       ""
     ],
     "variants": [
       "ICMP",
       "TCP",
-      "UDP",
+      "UDP"
+    ]
+  },
+  {
+    "number": "18",
+    "type": "",
+    "asks": [
+      "In order to generate an RSA key for SSH on a switch, which of the following is required? (Choose two.)"
+    ],
+    "img": [],
+    "sentence": [],
+    "responses": [
+      ""
+    ],
+    "variants": [
       "Configuring VTY access.",
       "Configuring a hostname.",
       "Creating a user with a password.",
@@ -1021,9 +1033,7 @@ let tests = [
     "asks": [
       "Refer to the exhibit. How many broadcast domains are present in the network?"
     ],
-    "img": [
-      "img55"
-	],
+    "img": [],
     "sentence": [
       "В.\tTwo broadcast domains"
     ],
@@ -1213,9 +1223,7 @@ let tests = [
     "asks": [
       "Refer to the exhibit. The network administrator wants VLAN 55 traffic to be untagged between Sw1 and Sw2, while all other VLANs remain tagged. Which command should be entered to perfom this task?"
     ],
-    "img": [
-      "img65"
-	],
+    "img": [],
     "sentence": [
       "Workstation!",
       "В.\tswitchport trunk allowed vlan 55"
