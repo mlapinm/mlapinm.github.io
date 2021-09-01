@@ -109,20 +109,21 @@ C. A default route
 D. A network static route	
 16: Which of the following are mandatory actions that must be performed in order for SSH to operate normally on a Cisco switch? (Choose two.)	
 
-P.
-Q.
+PDE.
+Q86.
 A. IP routing must be enabled.
 B. Telnet must be disabled.
 C. A console password must be configured.
 D. The switch must be running a k9 (crypto) IOS image.
 E. The ip domain-name command must be configured.
-: What wireless standard introduced in 2013 permits a maximum speed of 6.93 Gbps?
-P.
-Q.
+17: What wireless standard introduced in 2013 permits a maximum speed of 6.93 Gbps?
+PC.
+Q256.
 A. 802.11 ax 
 B. 802.11g
 C. 802.11ac
-: What form of flow control is used with TCP?
+D. 802.11n
+18: What form of flow control is used with TCP?
 P.
 Q.
 A. None 
