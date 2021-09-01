@@ -124,102 +124,111 @@ B. 802.11g
 C. 802.11ac
 D. 802.11n
 18: What form of flow control is used with TCP?
-P.
-Q.
+PC.
+Q219.
 A. None 
 B. Random
 C. Windowing
-: In order to generate an RSA key for SSH on a switch, which of the following is required? (Choose two.)
+D. Explicit buffering
+19: In order to generate an RSA key for SSH on a switch, which of the following is required? (Choose two.)
 Explanation: There are four steps required to enable SSH support on a Cisco IOS router:
 1)	Configure the hostname command.
 2)	Configure the DNS domain.
 3)	Generate the SSH key to be used.
 4)	Enable SSH transport support for the virtual type terminal (vtys). In order to generate an RSA key, only point 1) and 2) are required
-P.
-Q.
+PB.
+Q6.
 A. Configuring VTY access.
 B. Configuring a hostname.
 C. Creating a user with a password.
 D. Configuring the version of SSH.
 E. Assigning a DNS domain name.
-: Which of the following is not a valid error typically seen in show interface output?
-P.
-Q.
+20: Which of the following is not a valid error typically seen in show interface output?
+PD.
+Q197.
 A.	Babble
 B.	Late collision
 C.	Ignored
-Refer to the exhibit. Which type of route does R1 use to reach host 10.10.14.10/32?
-10.10.13.10/26
-Rlfsh ip ro
+D. Trickle
+
+21: Refer to the exhibit. Which type of route does R1 use to reach host 10.10.14.10/32?
+
+r1#sh ip ro
 Gateway of last resort is 10.10.10.18 to network 0.0.0.0
-10.0.0.0/8 ie variably ¦ubnattad, 4 subnets, 3 masks C	10.10.10.0/30 is directly connected, PastEthernetO/1
+10.0.0.0/8 ie variably ¦ubnattad, 4 subnets, 3 masks 
+C	10.10.10.0/30 is directly connected, PastEthernetO/1
 O	10.10.14.0/25 [110/6576] via 10.10.10.1, 06:58:21, FastEthernetO/1
 C	10.10.10.16/30 is direotly oonnootod, FastEthornotO/24
 O	10.10.14.144/28 [110/110] via 10.10.10.1, 06:58:21, FastEthernetO/1
 B* 0.0.0.0/0 [20/0] via 10.10.10 18, 01:17:58
-P.
-Q.
+PB.
+Q151.
 A. default route
 B. network route
 C. host route
 D. floating static route
-What feature does DAI rely on? 
-P.
-Q.
+22: What feature does DAI rely on? 
+PB.
+Q428.
 A. ACLs
 B. DHCP snooping
 C. QoS DiffServ 
 D. NBAR
 E. OSPF
-: Which of the following is true regarding spine-and-leaf architecture?
+23: Which of the following is true regarding spine-and-leaf architecture?
 Explanation: With Leaf-Spine configurations, all devices are exactly the same number of segments away and contain a predictable and consistent amount of delay or latency for traveling information. This is possible because of the new topology design that has only two layers, the Leaf layer and Spine layer.
-P.
-Q.
+PD.
+Q4.
 A. Higher bandwidth can be obtained for each link between leaf switches.
 B. It facilitates STP troubleshooting because STP blocked ports can be predicted easily.
 C. By design, traveling information has variable latency between endpoint devices.
 D. Each device in the topology is separated by the same number of hops.
-: Which statement about CDP is correct?
-P.
-Q.
+24: Which statement about CDP is correct?
+PD.
+Q212.
 A. CDP is disabled by default.
 B. CDP relies on TCP
 C. CDP is disabled on all serial interfaces by default.
-: What counter is incremented when the number of frames transmitted is greater than 1518 bytes in size?
-P.
-Q.
+D. CDP is a Layer 2 protocol.
+25: What counter is incremented when the number of frames transmitted is greater than 1518 bytes in size?
+PA.
+Q198.
 A. Babble 
 B. Late collision 
 C. Runt
-: Which mode allows to configure EtherChannel between two switches without using a negotiation protocol?
-P.
-Q.
+D. Ignored
+26: Which mode allows to configure EtherChannel between two switches without using a negotiation protocol?
+PA.
+Q87.
 A. on
 B. auto
 C. active
-: Which IPv6 address block forwards packets to a multicast address rather than a unicast address?
+D. desirable
+27: Which IPv6 address block forwards packets to a multicast address rather than a unicast address?
 Explanation: 2000::/3 Global Unicast fc00::/7 Unique Local Unicast fe80::/10 Link-Scoped Unicast ff00::/8 Multicast
-P.
-Q.
+PD.
+Q81.
 A.	2000::/3
 B.	FC00::/7
 C.	FE80::/10
 D. FF00::/8
-: Which of the following is not an HTTP method used with REST APIs?
-P.
-Q.
+28: Which of the following is not an HTTP method used with REST APIs?
+PC.
+Q430.
 A. PUT 
 B. POST
 C. SEND
 D. GET
 E. DELETE
-: What is a role of an SNMP agent?
-P.
-Q.
+29: What is a role of an SNMP agent?
+PA.
+Q27.
 A. It responds to requests from the NMS, providing it with information about MIB variables.
 B. It handles user authentication between network devices and a RADIUS or TACACS+ server.
 C. It collects information about disastrous system events from remote network nodes.
-Refer to the exhibit. Based on the LACP neighbor status, in which mode is the SW1 port channel configured?
+D. It supervises routing between Layer 3 devices in a network.
+
+30: Refer to the exhibit. Based on the LACP neighbor status, in which mode is the SW1 port channel configured?
 SWii show lacp neighbor
 Flags:	S - Device is sending Slow LACPDUs
 F - Device is sending Fast LACPDUs A - Device is in Active mode P - Device is in Passive mode
@@ -229,140 +238,150 @@ Partner's inforiration:
 Port	Flags	Priority	Dev ID	Age	key	Key	Kusber	State
 Etl/0	SP	32768	aabb.cc40.4000	6s	0x0	0x23	0x101	0x3C
 Etl/1	SP	32768	aabb.cc50.4000	6s	0x0	0x23	0x101	0x3C
-P.
-Q.
+PC.
+Q69.
 A. auto
 B. active
 C. passive
 D. mode on
-: What attack method locks out a system or even encrypts it and then offers to unlock it in exchange	for	money?
-P.
-Q.
+31: What attack method locks out a system or even encrypts it and then offers to unlock it in exchange	for	money?
+PD.
+Q372.
 A.	Worm
 B.	Man-in-the-middle
 C.	Phishing
-: Which IPv6 address block forwards packets to a multicast address rather than a unicast address?
+D. Ransomware
+
+32: Which IPv6 address block forwards packets to a multicast address rather than a unicast address?
 Explanation: 2000::/3 Global Unicast fc00::/7 Unique Local Unicast fe80::/10 Link-Scoped Unicast ff00::/8 Multicast
-P.
-Q.
+PD.
+Q81.
 A.	2000::/3
 B.	FC00::/7
 C.	FE80::/10
 D. FF00::/8
-: Which of the following is not an HTTP method used with REST APIs?
-P.
-Q.
+33: Which of the following is not an HTTP method used with REST APIs?
+PC.
+Q430.
 A. PUT 
 B. POST
 C. SEND
 D. GET
 E. DELETE
-: What is the main difference between AAA authentication and authorization?
-P.
-Q.
-A.	Authentication identifies and verifies users who are
-® attempting to access the system, while authorization controls the tasks that the users can perform.
+34: What is the main difference between AAA authentication and authorization?
+PA.
+Q117.
+A.	Authentication identifies and verifies users who are attempting to access the system, while authorization controls the tasks that the users can perform.
 B.	Authentication controls the system processes that users O are allowed to access, while authorization logs the activities
 that the users initiate.
 C.	Authentication verifies usernames and passwords, while O authorization handles the communication between the
 authentication agent and the user database.
 D.	Authentication identifies users who are attempting to O access the system, while authorization validates the users
 passwords.
-: Which RF band is used with 802.1 lac?
-P.
-Q.
+35: Which RF band is used with 802.11 ac?
+PB.
+Q420.
 A. 2.4 GHz
 B. 5 GHz
 C. Both 2.4 GHz and 5 GHz
-: Which type of cable should used to connect a computer to a switch for management of the switch?
-P.
-Q.
+D. 7 GHz
+36: Which type of cable should used to connect a computer to a switch for management of the switch?
+PC.
+Q521.
 A. Straight-through cable 
 B. Crossover cable
 C. Rolled cable
-: Networking and cloud technologies usually use which type of the following APIs?
-P.
-Q.
+D. Shielded cable
+37: Networking and cloud technologies usually use which type of the following APIs?
+PB.
+Q63.
 A. SOAP
 B. REST 
 C. JSON-RPC
-: Which statement is true about collision domains?
-P.
-Q.
+D. XML-RPC
+38: Which statement is true about collision domains?
+PA.
+Q454.
 A. All devices in the collision domain can witness have a frame u collision.
 B. All devices in the collision domain can receive layer 2 broadcast messages.
 C. All devices in the collision domain can receive layer 3 broadcast messages.
 D. All devices in the collision domain are set to 100 Mbps full-duplex.
-: What is an alternative to using local authentication on a Cisco router?
-P.
-Q.
+39: What is an alternative to using local authentication on a Cisco router?
+PA.
+Q378.
 A. Centralized AAA
 B. A remote Telnet database
 C. SNMP for authentication
-: A Router has learned route 192.168.07.0/24 via IS-IS, RIP, OSPF, and Internal EIGRP. Which routing protocol is installed in the routing table?
+D. FTP for authentication
+40: A Router has learned route 192.168.07.0/24 via IS-IS, RIP, OSPF, and Internal EIGRP. Which routing protocol is installed in the routing table?
 Explanation: Internal EIGRP because it has the lowest administrative distance
-P.
-Q.
+PB.
+Q105.
 A. IS-IS
 B. Internal EIGRP
 C. RIP
 D. OSPF
-: Which sub-protocol inside of the PPP suite is responsible for authentication?
-P.
-Q.
+41: Which sub-protocol inside of the PPP suite is responsible for authentication?
+PC.
+Q500.
 A. MPLS 
 B. NCP
 C. LCP
-: What does eq indicate in an ACL?
-P.
-Q.
+D. ACP
+42: What does eq indicate in an ACL?
+PA.
+Q389.
 A. You are matching a port or ports.
 B. You are using a standard ACL in place of an extended ACL.
 C. You are only using one ACE in the ACL.
-: Which mechanism is used by Cisco DNA Center to collect data from the network?
-P.
-Q.
+43: Which mechanism is used by Cisco DNA Center to collect data from the network?
+PD.
+Q72.
 A. Devices send data periodically to the controller using the call-home protocol
 B. Devices exchange data with the controller after establishing an IPsec tunnel
 C. The Cisco CLI Analyzer tool collects data from all licensed network devices and streams it to the controller
 D. Network devices use a variety of services like syslog, SNMP, u and streaming telemetry to send data to the controller
-: What command disables CDP globally on a device?
-P.
-Q.
+44: What command disables CDP globally on a device?
+PA.
+Q209.
 A. no cdp run
 B. no cdp enable
 C. cdp disable
-: What command can be used to view the VLANs and interface assignments on a switch?
-P.
-Q.
+D. cdp stop
+45: What command can be used to view the VLANs and interface assignments on a switch?
+PA.
+Q278.
 A. show vlan brief
 B. show vlan status
 C. show vlan summary
-: What is the size of the source address field in an IPv6 header?
-P.
-Q.
+D. show vlan database
+46: What is the size of the source address field in an IPv6 header?
+PD.
+Q319.
 A.	6 bytes
 B.	8 bytes
 C.	12 bytes
-: What is the unreachable AD?
+D. 16 bytes
+47: What is the unreachable AD?
 P.
 Q.
 A. 0
 B. 100
 C. 200
-: What is the name of the database that stores address information in a Cisco switch?	
+D. 255
+48: What is the name of the database that stores address information in a Cisco switch?	
 P.
 Q.
 A. MAC address table
 B. Routing table
 C. Interface table
-: VMware Workstation is an example of what type of hypervisor technology?
+49: VMware Workstation is an example of what type of hypervisor technology?
 P.
 Q.
 A. Type 2
 B. Type 1
 C. Bare metal
-: What command allows to see locally used OSPF routes?
+50: What command allows to see locally used OSPF routes?
 P.
 Q.
 A. show ip ospf database local
@@ -370,34 +389,34 @@ B. show ospf all
 C. show ip route ospf
 Examine the following command:
 ip nat inside source list 1 interface faO/O overload
-: What is the inside global address for translation?
+51: What is the inside global address for translation?
 P.
 Q.
 A. The IP address on interface faO/O
 B. The virtual address on interface faO/O 
 C. The address in access list 1
 D. The address in the NAT pool named interface
-: Which of the following statements does not represent the logical management of a firewall?
+52: Which of the following statements does not represent the logical management of a firewall?
 P.
 Q.
 A. All physical access to the firewall should be tightly u controlled.
 B. All firewall policies should be documented.
 C. Firewall logs should be regularly monitored.
 D. Firewalls should allow traffic by default and deny traffic explicitly.
-: In Cisco's three-tier architecture, the links between the distribution layer switches indicate what kind of topology?
+53: In Cisco's three-tier architecture, the links between the distribution layer switches indicate what kind of topology?
 P.
 Q.
 A. Full mesh topology
 B. Partial mesh topology
 C. Star topology
-: When configuring a floating static route, what must be done in order to ensure that the backup route is used in case the primary route fails?
+54: When configuring a floating static route, what must be done in order to ensure that the backup route is used in case the primary route fails?
 P.
 Q.
 A. The floating static route must have a higher administrative u distance than the primary route so it is used as a backup
 B. The floating static route must have a lower administrative distance than the primary route so it is used as a backup
 C. The administrative distance must be higher on the primary route so that the backup route becomes secondary.
 D. The default-information originate command must be configured for the route to be installed into the routing table
-: What does it mean when the destination address in an Ethernet frame is set FFFF.FFFF.FFFF?
+55: What does it mean when the destination address in an Ethernet frame is set FFFF.FFFF.FFFF?
 P.
 Q.
 A. The frame is a multicast frame.
@@ -409,7 +428,7 @@ Q.
 A. show 802dot1d
 B. show topology spanning-tree
 C. show redundancy
-: A company charges its network technician to backup its 30 network router configurations globally. Using the Cisco IOS MIB, what is the protocol that allows the technician to do the job?
+56: A company charges its network technician to backup its 30 network router configurations globally. Using the Cisco IOS MIB, what is the protocol that allows the technician to do the job?
 P.
 Q.
 A. SNMP
@@ -417,19 +436,19 @@ B. SMTP
 C. CDP 
 D. ARP
 E. STP
-: Which is a direct benefit of a full mesh topology?
+57: Which is a direct benefit of a full mesh topology?
 P.
 Q.
 A. Increased bandwidth
 B. Increased redundancy
 C. Decreased switch count
-: What is the administrative distance of Internal EIGRP routes?
+58: What is the administrative distance of Internal EIGRP routes?
 P.
 Q.
 A. 5 
 B. 20
 C. 90
-: For which two reasons does a network administrator configure a floating static route? (Choose two.)
+59: For which two reasons does a network administrator configure a floating static route? (Choose two.)
 Explanation: Floating Static Routes Floating static routes are static routes
 that have an administrative distance greater than the administrative distance of another static route or dynamic routes. They are very useful when providing a backup to a primary link.	
 P.
@@ -440,7 +459,7 @@ C. to automatically route traffic on a secondary path when the primary path goes
 D. to support load balancing via static routing
 E. to control the return path of traffic that is sent from the router
 Refer to the exhibit. A network administrator needs to add a subnet for a new floor that will add 20 users to the network.
-: Which IPv4 network and subnet mask combination does he need to assign in order to minimize wasting addresses?
+60: Which IPv4 network and subnet mask combination does he need to assign in order to minimize wasting addresses?
 
 20 Hosts	10.20.225 0/28	10.20.225 16/28	10 20 225.64/26
 P.
@@ -450,26 +469,26 @@ B. 10.20.225.48	255.255.255.224
 C. 10.20.225.32	255.255.255.240
 D. 10.20.225.32 255.255.255.224
 	
-: What happens to a frame with destination MAC address ffff.ffff.ffff?	
+61: What happens to a frame with destination MAC address ffff.ffff.ffff?	
 P.
 Q.
 A. The frame is dropped.
 B. The frame is forwarded out the giO/O port only.
 C. The frame is buffered.
 D. The frame is flooded out all ports except for the port on which the frame entered the switch.
-: Which physical appliance can a Cisco Firepower device replace, in addition to a legacy firewall?
+62: Which physical appliance can a Cisco Firepower device replace, in addition to a legacy firewall?
 P.
 Q.
 A. Router 
 B. L2 switch
 C. IPS
-: How many more bits are used in an IPv6 address than in an IPv4 address?
+63: How many more bits are used in an IPv6 address than in an IPv4 address?
 P.
 Q.
 A. 96
 B. 128
 C. 48
-: Two switches are connected and using Cisco Dynamic Trunking Protocol CDTP. Switchl is set to Dynamic Desirable and Switch2 is set to Dynamic Auto. What is the effect of this configuration?
+64: Two switches are connected and using Cisco Dynamic Trunking Protocol CDTP. Switchl is set to Dynamic Desirable and Switch2 is set to Dynamic Auto. What is the effect of this configuration?
 Explanation: Dynamic Auto Makes the Ethernet port willing to convert the link to a trunk link. The port becomes a trunk port if the neighboring port is set to trunk or dynamic desirable mode. This is the default mode for some switchports.
 P.
 Q.
