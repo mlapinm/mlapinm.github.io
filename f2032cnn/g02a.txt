@@ -200,43 +200,50 @@ B. REST
 C. JSON-RPC 
 D. XML-RPC
 26:The cloud offers the ability to dynamically resize resources based on demand. What is the term for this ability?
-P.
-Q.
+PA.
+Q193.
 A.	Elasticity
 B.	Cloud-bursting
 C.	Scalability
+D. Immutability
+
 27:What type of record is used in DNS for a mail server? 
-P.
-Q.
+PB.
+Q353.
 A. SOA
 B. MX
 C. NS
+D. CNAME
+
 28:Refer to the exhibit. What is the effect of this configuration?
-ip arp inspection vlan 5-10 interface fastethernet 0/1 switchport mode access switchport access vlan 5
-P.
-Q.
+ip arp inspection vlan 5-10 
+interface fastethernet 0/1 
+switchport mode access 
+switchport access vlan 5
+PA.
+Q157.
 A. The switch discards all ingress ARP traffic with invalid u MAC-to-IP address bindings.
 B. All ARP packets are dropped by the switch.
 C. Egress traffic is passed only if the destination is a DHCP server.
 D. All ingress and egress traffic is dropped because the interface is untrusted.
 29:Which statement regarding LLDP is false in relation to Cisco devices? 
-P.
-Q.
+PB.
+Q208.
 A. LLDP is not enabled by default on IOS devices.
 B. LLDP is a Cisco proprietary technology.
 C. LLDP and CDP are compatible.
 D. After being enabled globally, LLDP must be enabled on specific interfaces.
 30:What protocol an port number does SNMP use? (Choose two.)
-P.
-Q.
+PBC.
+Q218.
 A. TCP
 B. UDP
 C. 161
 D. 514
 	
 31:What are the two encoding methods supported by REST APIs? (Choose two.)	I
-P.
-Q.
+PAB.
+Q19.
 A. JSON
 B. XML
 C. EBCDIC
@@ -244,15 +251,15 @@ D. SGML
 E. YAML
 32:Which technology eliminates the major concerns about straight-through versus crossover cables?
 Explanation: A medium dependent interface (MDI) describes the interface (both physical and electrical/optical) in a computer network from a physical layer implementation to the physical medium used to carry the transmission. Ethernet over twisted pair also defines a medium dependent interface crossover (MDI-X) interface. Auto MDI-X ports on newer network interfaces detect if the connection would require a crossover, and automatically chooses the MDI or MDI-X configuration to properly match the other end of the link.
-P.
-Q.
+PC.
+Q194.
 A. STP
 B. RSTP
 C. Auto MDI-X
 D. FabricPath
 33:Which statement identifies the functionality of virtual machines?
-P.
-Q.
+PB.
+Q59.
 A. Virtualized servers provide the best performance when they O are physically connected to a switch that is isolated from the hypervisor.
 B. The hypervisor can virtualize physical components u including CPU, memory, and storage.
 C.	The hypervisor can only support one virtual machine and one software switch at once.
@@ -265,8 +272,8 @@ Explanation: Enabling OSPFv2 on an Interface SUMMARY STEPS:
 4.	ip ospf process-id area area-id [secondaries none]
 5.	end
 6.	show ip ospf interface [type -number]
-P.
-Q.
+PCE.
+Q40.
 A. IPv6 address
 B. IPv4 or IPv6 address
 C. OSPF process ID
@@ -274,23 +281,23 @@ D. OSPF MD5 authentication key
 E. OSPF area
 F. OSPF stub flag
 35:What versions of SNMP use a simple plaintext password? (Choose two.)
-P.
-Q.
+PBC.
+Q162.
 A. Version 1
 B. Version 2
 C. Version 2c
 D. Version 3
 E. Version 4
 36:Which of the following is true regarding IP address 127.0.0.1 ? 
-P.
-Q.
+PC.
+Q234.
 A. This is a multicast address.
 B. This is a Class A unicast address.
 C. This is a loopback address.
 D. This is an invalid IP address.
 37:What command is used to create the public/private key pair for SSH? 
-P.
-Q.
+PD.
+Q380.
 A. crypto key ssh create
 B. crypto key generate ssh
 C. crypto key ssh
