@@ -153,9 +153,11 @@ D. Trickle
 
 21: Refer to the exhibit. Which type of route does R1 use to reach host 10.10.14.10/32?
 
+img0121
+
 r1#sh ip ro
 Gateway of last resort is 10.10.10.18 to network 0.0.0.0
-10.0.0.0/8 ie variably ¦ubnattad, 4 subnets, 3 masks 
+10.0.0.0/8 ie variably Â¦ubnattad, 4 subnets, 3 masks 
 C	10.10.10.0/30 is directly connected, PastEthernetO/1
 O	10.10.14.0/25 [110/6576] via 10.10.10.1, 06:58:21, FastEthernetO/1
 C	10.10.10.16/30 is direotly oonnootod, FastEthornotO/24
@@ -363,135 +365,157 @@ B.	8 bytes
 C.	12 bytes
 D. 16 bytes
 47: What is the unreachable AD?
-P.
-Q.
+PD.
+Q319.
 A. 0
 B. 100
 C. 200
 D. 255
 48: What is the name of the database that stores address information in a Cisco switch?	
-P.
-Q.
+PA.
+Q271.
 A. MAC address table
 B. Routing table
 C. Interface table
+D. Buffer table
+
 49: VMware Workstation is an example of what type of hypervisor technology?
-P.
-Q.
+PA.
+Q257.
 A. Type 2
 B. Type 1
 C. Bare metal
+D. Container
+
 50: What command allows to see locally used OSPF routes?
-P.
-Q.
+PC.
+Q442.
 A. show ip ospf database local
 B. show ospf all
 C. show ip route ospf
-Examine the following command:
-ip nat inside source list 1 interface faO/O overload
+D. show ospf routes local
+
+
 51: What is the inside global address for translation?
-P.
-Q.
+Examine the following command: ip nat inside source list 1 interface faO/O overload
+
+PA.
+Q343.
 A. The IP address on interface faO/O
 B. The virtual address on interface faO/O 
 C. The address in access list 1
 D. The address in the NAT pool named interface
 52: Which of the following statements does not represent the logical management of a firewall?
-P.
-Q.
+PA.
+Q467.
 A. All physical access to the firewall should be tightly u controlled.
 B. All firewall policies should be documented.
 C. Firewall logs should be regularly monitored.
 D. Firewalls should allow traffic by default and deny traffic explicitly.
 53: In Cisco's three-tier architecture, the links between the distribution layer switches indicate what kind of topology?
-P.
-Q.
+PB.
+Q496.
 A. Full mesh topology
 B. Partial mesh topology
 C. Star topology
+D. Ring topology
+
 54: When configuring a floating static route, what must be done in order to ensure that the backup route is used in case the primary route fails?
-P.
-Q.
+PA.
+Q186.
 A. The floating static route must have a higher administrative u distance than the primary route so it is used as a backup
 B. The floating static route must have a lower administrative distance than the primary route so it is used as a backup
 C. The administrative distance must be higher on the primary route so that the backup route becomes secondary.
 D. The default-information originate command must be configured for the route to be installed into the routing table
 55: What does it mean when the destination address in an Ethernet frame is set FFFF.FFFF.FFFF?
-P.
-Q.
+PD.
+Q230.
 A. The frame is a multicast frame.
 B. The frame is a unicast frame.
 C. The frame should be dropped.
-What command outputs the current Spanning Tree Protocol parameters on a Cisco switch?
-P.
-Q.
+D. The frame is a broadcast frame.
+
+56:What command outputs the current Spanning Tree Protocol parameters on a Cisco switch?
+PD.
+Q295.
 A. show 802dot1d
 B. show topology spanning-tree
 C. show redundancy
-56: A company charges its network technician to backup its 30 network router configurations globally. Using the Cisco IOS MIB, what is the protocol that allows the technician to do the job?
-P.
-Q.
+D. show spanning-tree
+
+57: A company charges its network technician to backup its 30 network router configurations globally. Using the Cisco IOS MIB, what is the protocol that allows the technician to do the job?
+PA.
+Q16.
 A. SNMP
 B. SMTP
 C. CDP 
 D. ARP
 E. STP
-57: Which is a direct benefit of a full mesh topology?
-P.
-Q.
+58: Which is a direct benefit of a full mesh topology?
+PB.
+Q482.
 A. Increased bandwidth
 B. Increased redundancy
 C. Decreased switch count
-58: What is the administrative distance of Internal EIGRP routes?
-P.
-Q.
+D. Increased complexity
+
+59: What is the administrative distance of Internal EIGRP routes?
+PC.
+Q318.
 A. 5 
 B. 20
 C. 90
-59: For which two reasons does a network administrator configure a floating static route? (Choose two.)
+D. 100
+
+60: For which two reasons does a network administrator configure a floating static route? (Choose two.)
 Explanation: Floating Static Routes Floating static routes are static routes
 that have an administrative distance greater than the administrative distance of another static route or dynamic routes. They are very useful when providing a backup to a primary link.	
-P.
-Q.
+PBC.
+Q112.
 A. to route traffic differently based on the source IP of the packet
 B. to enable fallback static routing when the dynamic routing protocol fails
 C. to automatically route traffic on a secondary path when the primary path goes down
 D. to support load balancing via static routing
 E. to control the return path of traffic that is sent from the router
 Refer to the exhibit. A network administrator needs to add a subnet for a new floor that will add 20 users to the network.
-60: Which IPv4 network and subnet mask combination does he need to assign in order to minimize wasting addresses?
+61: Which IPv4 network and subnet mask combination does he need to assign in order to minimize wasting addresses?
 
-20 Hosts	10.20.225 0/28	10.20.225 16/28	10 20 225.64/26
-P.
-Q.
+img0161
+
+PD.
+Q124.
 A. 10.20.225.48	255.255.255.240
 B. 10.20.225.48	255.255.255.224
 C. 10.20.225.32	255.255.255.240
 D. 10.20.225.32 255.255.255.224
 	
-61: What happens to a frame with destination MAC address ffff.ffff.ffff?	
-P.
-Q.
+62: What happens to a frame with destination MAC address ffff.ffff.ffff?	
+PD.
+Q265.
 A. The frame is dropped.
 B. The frame is forwarded out the giO/O port only.
 C. The frame is buffered.
 D. The frame is flooded out all ports except for the port on which the frame entered the switch.
-62: Which physical appliance can a Cisco Firepower device replace, in addition to a legacy firewall?
-P.
-Q.
+63: Which physical appliance can a Cisco Firepower device replace, in addition to a legacy firewall?
+PC.
+Q174.
 A. Router 
 B. L2 switch
 C. IPS
-63: How many more bits are used in an IPv6 address than in an IPv4 address?
-P.
-Q.
+D. Content caching system
+
+64: How many more bits are used in an IPv6 address than in an IPv4 address?
+PA.
+Q247.
 A. 96
 B. 128
 C. 48
-64: Two switches are connected and using Cisco Dynamic Trunking Protocol CDTP. Switchl is set to Dynamic Desirable and Switch2 is set to Dynamic Auto. What is the effect of this configuration?
+D. 64
+
+65: Two switches are connected and using Cisco Dynamic Trunking Protocol CDTP. Switchl is set to Dynamic Desirable and Switch2 is set to Dynamic Auto. What is the effect of this configuration?
 Explanation: Dynamic Auto Makes the Ethernet port willing to convert the link to a trunk link. The port becomes a trunk port if the neighboring port is set to trunk or dynamic desirable mode. This is the default mode for some switchports.
-P.
-Q.
+PD.
+Q90.
 A. The link is in an error disabled state.
 B. The link becomes an access port. 
 C. The link is in a down state.

@@ -1,0 +1,508 @@
+1:Refer to the exhibit. A router received five routes from different routing information sources. Which two routes does it install in its routing table? (Choose two)
+IBGP route 10.0.0.0/30 
+RIP route 10.0.0.0/30 
+OSPF route 10 0.0.0/16 
+OSPF route 10 0.0.0/30 
+EIGRP route 10.0.0.1/32
+PCD.
+Q153.
+A. OSPF route 10.0.0.0/30
+B. IBGP route 10.0.0.0/30
+C. OSPF route 10.0.0.0/16
+D. EIGRP route 10.0.0.1/32
+E. RIP route 10.0.0.0/30
+2:What command can be used to verify that a static route is in the routing table?
+PB.
+Q321.
+A. show static
+B. show ip route
+C. show routing table static
+D. show admin routes
+	
+3:Which sub-protocol inside of the PPP suite facilitates multilink connections?	
+PC.
+Q503.
+A. MPLS
+B. NCP
+C. LCP
+D. ACP
+4:What is the default VLAN in Cisco networking?
+PD.
+Q290.
+A. VLAN 10
+B. VLAN 0
+C. VLAN 4092
+D. VLAN 1
+5:Which of the following MAC addresses is as a VRRP virtual address?
+Explanation: The virtual router MAC address associated with a virtual router is an IEEE 802 MAC Address in the following format:
+00-00-5E-00-01-{VRID} (in hex in internet standard bit-order).
+The first three octets are derived from the IANA's OUI. The next two octets (00-01) indicate the address block assigned to the VRRP protocol. {VRID} is the VRRP Virtual Router Identifier. This mapping provides for up to 255 VRRP routers on a network.
+PA.
+Q60.
+A.	00-00-5E-00-01-0a
+B.	00-05-00-11-00-75
+C.	00-00-0C-07-AC-11
+D. 00-08-E5-70-AB-01
+6:Which mechanism is used by Cisco DNA Center to collect data from the network?
+PD.
+Q72.
+A. Devices send data periodically to the controller using the call-home protocol
+B. Devices exchange data with the controller after establishing an IPsec tunnel
+C. The Cisco CLI Analyzer tool collects data from all licensed network devices and streams it to the controller
+D. Network devices use a variety of services like syslog, SNMP, u and streaming telemetry to send data to the controller
+7:If a router cannot find a better match, what might the router use to route traffic?
+PD.
+Q315.
+A.	255.255.255.255/0
+B.	127.0.0.1/32
+C.	0.0.0.0/32
+D. 0.0.0.0/0
+
+8:An organization purchased a VM on a public cloud and plan to create a VPN tunnel to the cloud provider. The organization's IP network is 172.20.0.0/12, and the provider has assigned an IP address in the 10.10.0.0/8 network. What virtual network function (VNF) will the organization need from the provider to communicate with the VM?
+PC.
+Q518.
+A. Virtual switch
+B. Virtual firewall
+C. Virtual router
+D. Another IP scheme at the provider
+9:Which of the following ciphers provides the strongest encryption for WPA2-PSK?
+PC.
+Q21.
+A. WEP
+B. RC4
+C. AES
+D. TKIP
+
+10:What is the term used with Ansible for the text file that lists the nodes that Ansible can	manage?
+PD.
+Q416.
+A.	Runbook
+B.	Playbook
+C.	Recipe
+D. Inventory
+
+11:Which statement about OSPFv2 is true?
+PC.
+Q326.
+A. The dead timers do not need to match between neighbors.
+B. The hello timers do not need to match between neighbors.
+C. The area ID must match between neighbors.
+D. The network command must be used.
+
+12:When Auto MDI-X is used on a Cisco switch, what type of cable is used to connect a Layer 2 switch's port to a laptop?
+PD.
+Q201.
+A.	Crossover
+B.	Rollover
+C.	Console
+D. Straight-through
+
+13:What is a role of an SNMP agent?
+PA.
+Q27.
+A. It responds to requests from the NMS, providing it with ^ information about MIB variables.
+B.	It handles user authentication between network devices and a RADIUS or TACACS+ server.
+C.	It collects information about disastrous system events from remote network nodes.
+D. It supervises routing between Layer 3 devices in a network.
+
+14:Which statement about CDP is correct?
+PD.
+Q212.
+A. CDP is disabled by default.
+B. CDP relies on TCP.
+C. CDP is disabled on all serial interfaces by default.
+D. CDP is a Layer 2 protocol.
+
+15:EIGRP uses the IPv4 address 224.0.0.10 in its operation. What type of address is this?
+Explanation: IPv4 multicast addresses range is from 224.0.0.0 to 239.255.255.255
+PC.
+Q229.
+A. Unicast
+B. Broadcast
+C. Multicast
+D. Anycast
+
+16:What is the default state when DHCP snooping port is enabled? 
+PB.
+Q397.
+A.	Trusted
+B.	Untrusted
+C.	Permitted
+D. Disabled
+17:What is the protocol used for the transport of user data in a site-to-site VPN architecture?
+Explanation: A site-to-site VPN could use either internet protocol security protocol (IPSec) or generic routing encapsulation (GRE). GRE provides the framework for how to package the passenger protocol for transport over the internet protocol (IP).
+PB.
+Q31.
+A. TCP
+B. IPsec
+C. IKEv1
+D. IKEv2
+18:What is the last usable host address on a subnet where a host has been given the address 172.16.6.1 255.255.254.0?
+PD.
+Q228.
+A.	172.16.6.255
+B.	172.16.5.1
+C.	172.16.6.128
+D. 172.16.6.254
+19:How many more bits are used in an IPv6 address than in an IPv4 address?
+PA.
+Q247.
+A. 96
+B. 128
+C. 48
+D. 64
+20:What is the first step of the Spanning Tree Protocol convergence process?
+Explanation: Steps to STP convergence:
+1.	Elect the root bridge
+2.	Find the best path to the root bridge.
+3.	Block anything left over.
+PC.
+Q293.
+A. Block nondesignated ports.
+B. Calculate designated ports.
+C. Elect a root bridge.
+D. Calculate root ports.
+21:Which task do core layer switches perform in the three-tier design model? 
+PC.
+Q492.
+A. Connect to other switches for redundancy
+B. Connect to users
+C. Connect campuses
+D. Connect to the Internet
+22:What is the inside global address for translation?
+Examine the following command:
+ip nat inside source list 1 interface faO/O overload
+PA.
+Q343.
+A. The IP address on interface faO/O
+B. The virtual address on interface faO/O 
+C. The address in access list 1
+D. The address in the NAT pool named interface
+23:What command under the vty lines allows the checking of a local password?
+PC.
+Q375.
+A. check-password
+B. enable
+C. login local
+D. test
+24:What is the role of a cloud services catalog?
+PB.
+Q513.
+A. It defines the capabilities for the cloud.
+B. It defines the available VMs for creation in the cloud.
+C. It defines the available VMs running in the cloud.
+D. test
+25:Networking and cloud technologies usually use which type of the following APIs?
+PB.
+Q63.
+A. SOAP 
+B. REST 
+C. JSON-RPC 
+D. XML-RPC
+26:The cloud offers the ability to dynamically resize resources based on demand. What is the term for this ability?
+P.
+Q.
+A.	Elasticity
+B.	Cloud-bursting
+C.	Scalability
+27:What type of record is used in DNS for a mail server? 
+P.
+Q.
+A. SOA
+B. MX
+C. NS
+28:Refer to the exhibit. What is the effect of this configuration?
+ip arp inspection vlan 5-10 interface fastethernet 0/1 switchport mode access switchport access vlan 5
+P.
+Q.
+A. The switch discards all ingress ARP traffic with invalid u MAC-to-IP address bindings.
+B. All ARP packets are dropped by the switch.
+C. Egress traffic is passed only if the destination is a DHCP server.
+D. All ingress and egress traffic is dropped because the interface is untrusted.
+29:Which statement regarding LLDP is false in relation to Cisco devices? 
+P.
+Q.
+A. LLDP is not enabled by default on IOS devices.
+B. LLDP is a Cisco proprietary technology.
+C. LLDP and CDP are compatible.
+D. After being enabled globally, LLDP must be enabled on specific interfaces.
+30:What protocol an port number does SNMP use? (Choose two.)
+P.
+Q.
+A. TCP
+B. UDP
+C. 161
+D. 514
+	
+31:What are the two encoding methods supported by REST APIs? (Choose two.)	I
+P.
+Q.
+A. JSON
+B. XML
+C. EBCDIC
+D. SGML
+E. YAML
+32:Which technology eliminates the major concerns about straight-through versus crossover cables?
+Explanation: A medium dependent interface (MDI) describes the interface (both physical and electrical/optical) in a computer network from a physical layer implementation to the physical medium used to carry the transmission. Ethernet over twisted pair also defines a medium dependent interface crossover (MDI-X) interface. Auto MDI-X ports on newer network interfaces detect if the connection would require a crossover, and automatically chooses the MDI or MDI-X configuration to properly match the other end of the link.
+P.
+Q.
+A. STP
+B. RSTP
+C. Auto MDI-X
+D. FabricPath
+33:Which statement identifies the functionality of virtual machines?
+P.
+Q.
+A. Virtualized servers provide the best performance when they O are physically connected to a switch that is isolated from the hypervisor.
+B. The hypervisor can virtualize physical components u including CPU, memory, and storage.
+C.	The hypervisor can only support one virtual machine and one software switch at once.
+D.	The hypervisor communication on Layer 3 does not require any additional resources.
+34:Which two parameters are mandatory in order to enable OSPFv2 on an active interface? (Choose two.)
+Explanation: Enabling OSPFv2 on an Interface SUMMARY STEPS:
+1.	enable
+2.	configure terminal
+3.	interface type number
+4.	ip ospf process-id area area-id [secondaries none]
+5.	end
+6.	show ip ospf interface [type -number]
+P.
+Q.
+A. IPv6 address
+B. IPv4 or IPv6 address
+C. OSPF process ID
+D. OSPF MD5 authentication key
+E. OSPF area
+F. OSPF stub flag
+35:What versions of SNMP use a simple plaintext password? (Choose two.)
+P.
+Q.
+A. Version 1
+B. Version 2
+C. Version 2c
+D. Version 3
+E. Version 4
+36:Which of the following is true regarding IP address 127.0.0.1 ? 
+P.
+Q.
+A. This is a multicast address.
+B. This is a Class A unicast address.
+C. This is a loopback address.
+D. This is an invalid IP address.
+37:What command is used to create the public/private key pair for SSH? 
+P.
+Q.
+A. crypto key ssh create
+B. crypto key generate ssh
+C. crypto key ssh
+D. crypto key generate rsa
+38:What is the subnet mask if you begin with the default Class A mask and then "borrow" 4 bits for subnetting?
+P.
+Q.
+A.	255.255.128.0
+B.	255.255.240.0
+C.	255.240.0.0
+D.	255.255.255.240
+	
+39:Which is a false statement about firewalls?	
+P.
+Q.
+A. They can protect a network from external attacks.
+B. They are commonly deployed to protect a network from internal attacks.
+C. They can provide stateful packet inspection.
+D. They can control application traffic.
+40:The two-tier	design model contains which layer switches?
+P.
+Q.
+A.	Core, distribution, and access
+B.	Core and distribution
+C.	Distribution and access
+D. Internet, core, distribution, and access
+41:What device is responsible for each DNS domain? 
+P.
+Q.
+A. Master DNS
+B. Authoritative name server
+C. Zone file server
+D. DNS client
+42:A new Layer 2 switch in its default configuration has just been powered up. In addition to a console connection, there are two Windows hosts and an IP phone (using PoE) connected to its Ethernet ports. Which of the following are true? (Choose two.)
+P.
+Q.
+A. If either Windows host has successfully completed an ARP v' resolution, the switch will have learned the MAC addresses of both Windows hosts.
+B. The switch would see the two Windows hosts directly connected devices from CDP
+C. The switch would not know if the IP phone is a Cisco IP □ phone or a third-party IP phone until a call is initiated from the phone.
+D. The switch can be configured with an IPv4 address on interface VLAN 1.
+	
+43:What are the advantages of implementing VLANs? (Choose three.)	
+P.
+Q.
+A. A higher level of network security can be achieved by segregating sensitive data traffic from other network traffic.
+B. They allow multiple physical groups to share the same network infrastructure. This optimizes the use of bandwidth.
+C. They allow multiple logical groups to share the same network infrastructure. This optimizes the use of bandwidth.
+D. They increase the number of broadcast domains, which reduces their size. This allows to mitigate broadcast storms
+E. They decrease the number of broadcast domains, which increases their size. This allows to mitigate broadcast storms
+F. VLANs allow the configuration of new logical groups, because all VLANs belong to the same broadcast domain.
+G. 802.1 Q trunks allow port-based VLANs to increase switch-port use efficiency.
+44:Refer to the exhibit. How does the router manage traffic to 192.168.12.16?
+w		1
+	EIGRP: 192.168.2.0/24 RIP: 192 168 2 0/27 OSPF: 192.168.2.0/28	
+P.
+Q.
+A. It load-balances traffic between all three routes.
+B. It chooses the EIGRP route because it has the lowest administrative distance.
+C. It chooses the OSPF route because it has the longest prefix inclusive of the destination address.
+D. It selects the RIP route because it has the longest prefix inclusive of the destination address.
+45:What version of STP on a Cisco device implements classic IEEE 802.1 D?
+P.
+Q.
+A. MST
+B. PVST+ 
+C. TRILL 
+D. RPVST+
+46:Which statement identifies the functionality of virtual machines?
+P.
+Q.
+A. Virtualized servers provide the best performance when they O are physically connected to a switch that is isolated from the hypervisor.
+B. The hypervisor can virtualize physical components u including CPU, memory, and storage.
+C.	The hypervisor can only support one virtual machine and one software switch at once.
+D.	The hypervisor communication on Layer 3 does not require any additional resources.
+47:What aspect of the routing table is impacted by the command ip route 0.0.0.0 0.0.0.0?
+P.
+Q.
+A. Network mask 
+B. Metric
+C. Administrative distance
+D. Gateway of last resort
+48:What protocol does Ansible use in order to connect to managed nodes for configuration purposes?
+Explanation: Managed nodes are the network devices (and/or servers) you manage with Ansible, via ssh. They are also sometimes called "hosts-. Ansible is not installed on managed nodes.
+P.
+Q.
+A. IPSec 
+B. HTTP 
+C. HTTPS
+D. SSH
+E. SFTP
+49:Which statement is true about the collapsed core design concept? 
+P.
+Q.
+A. It is best suited for large-scale networks.
+B. It allows for better bandwidth.
+C. It is best suited for small enterprises.
+D. It bottlenecks bandwidth.
+50:Which statement correctly describes how TCP and UDP provide reliability for packets delivery?
+Explanation:
+https://www.privateinternetaccess.com/blog/tcp-vs-udp-understanding-the
+-difference/
+P.
+Q.
+A. TCP is a best effort protocol; It does not guarantee delivery or error checking to make sure that data is not corrupted. UDP uses message acknowledgement mecanism and retransmits the lost packets.
+B. TCP uses flow control to avoid inundating a receiver by sending too many packets at once. UDP sends packets to the receiver in a continuous stream without checking for sequencing.
+C. TCP uses windowing to deliver packets reliably. UDP establishes a three-way handshake in order to provide reliable message transfer between hosts.
+D. TCP is a connectionless protocol that does not provide reliable data delivery. UDP is a connection-oriented protocol that uses sequencing to provide reliable delivery.
+51:Which is not a major menu option in Cisco DNA Center?
+P.
+Q.
+A. Compliance
+B. Policy
+C. Design
+52:Refer to the exhibit. A network administrator configures four switches for local authentication using passwords that are stored as a cryptographic hash. The four switches must also support SSH access for administrators to manage the network infrastructure. Which switch is configured correctly to meet these requirements?
+SWI(config-line) #line vty 0 15 SWI(config-line) #no login local SWt(config-line) #password cisco
+SW2(config) #username admin! password abc!23 SW2(config-line) #line vty 0 15 SW2(config-line) #login local
+SW3(config) #username admin! secret abc!23 SW3(config-line) #line vty 0 15 SW3(config-line) #login local
+SW4(config) #username admin! secret abc!23 SW4(config-line) #line console 0 SW4(config-line) #login local
+P.
+Q.
+A. SW1
+B. SW2
+C. SW3
+D. SW4
+53:What command allows a port to more quickly transition from blocking to forwarding?
+Explanation: PortFast causes a switch or trunk port to enter the spanning tree forwarding state immediately, bypassing the listening and learning states.
+P.
+Q.
+A. spanning-tree portfast
+B. spanning-tree convergefast
+C. spanning-tree rstp
+D. spanning-tree port-fast enable
+54:What layer of the OSI model corresponds to the transport layer of the TCP/ IP model?
+P.
+Q.
+A. Network
+B. Transport
+C. Session
+55:What protocol and port number does RIP use? (Choose two.)
+P.
+Q.
+A. TCP
+B. UDP
+C. 514
+56:What is the default MTU of the Data and Pad field of the Ethernet frame? 
+P.
+Q.
+A.	1200
+B.	900
+C.	1500
+57:What parameters of a static route can be included as part of the ip route command to indicate where traffic should be sent? (Choose two.)
+P.
+Q.
+A. Next hop IP address
+B. RE ID
+C. Destination MAC address
+58:What software runs on a physical server and makes virtual machines a reality?
+P.
+Q.
+A. Firewall 
+B. Web server
+C. Hypervisor
+59:Which network type in OSPF features the use of a DR and a BDR? 
+P.
+Q.
+A.	Point-to-point
+B.	Broadcast
+C.	Point-to-multipoint
+60:Which WAN topology is usually the most expensive and difficult to maintain?
+P.
+Q.
+A.	Hub-and-spoke
+B.	Full-mesh
+C.	Point-to-point
+61:Speed is most important in which layer of a 2-tier architecture? 
+P.
+Q.
+A. The access layer
+B. The workstation layer
+C. The backbone layer
+62:Which is a valid reason to implement a wireless LAN controller?
+P.
+Q.
+A. Centralized authentication
+B. The use of autonomous WAPs
+C. Multiple SSIDs
+63:Which is a direct benefit of a full mesh topology? 
+P.
+Q.
+A. Increased bandwidth
+B. Increased redundancy
+C. Decreased switch count
+64:Refer to the exhibit. What is the next router (or hop) to be used for a packet destined for 172.16.1.23?
+172.16.0.0/16	via	10.10.10.1
+0.0.0.0/0 via	192.	168.1.1
+172.16.1.0/24	via	10.2C.20.2
+172.IS.2.0/24	via	10.3C.30.3
+P.
+Q.
+A.	10.30.30.3
+B.	192.168.1.1
+C.	10.10.10.1
+D. 10.20.20.2
+65:Refer to the exhibit. If OSPF is running on this network, how does Routerl handle traffic from Site A to 10.10.12.128/25 at Site B?
+Router!#show ip route Gateway of last resort is not set
+10 0 00/8 is variably subnetted. 4 subnets. 2 masks C	10 10 10 8/30 is directly connected. FastEthemetO/2
+C	10101012/30 is directly connected. FastEthernet0/1
+O	10.10 12 0/25 [110/11) via 10 10 10 9 00 00 02. FastEthemetO/2
+[110/11| via 10 10 10 13 00 00 02. FastEthernet0/1 C	10 10 10 4/30 is directly connected. FastEthemetO/2
+P.
+Q.
+A. It sends packets out of interface Fa0/1 only.
+B. It cannot send packets to 10.10.12.128/25.
+C. It load-balances traffic out of Fa0/1 and FaO/2.
+D. It sends packets out of interface FaO/2 only.
