@@ -1,9 +1,9 @@
 1:Refer to the exhibit. A router received five routes from different routing information sources. Which two routes does it install in its routing table? (Choose two)
-IBGP route 10.0.0.0/30 
-RIP route 10.0.0.0/30 
-OSPF route 10 0.0.0/16 
-OSPF route 10 0.0.0/30 
-EIGRP route 10.0.0.1/32
+L.IBGP route 10.0.0.0/30 
+L.RIP route 10.0.0.0/30 
+L.OSPF route 10 0.0.0/16 
+L.OSPF route 10 0.0.0/30 
+L.EIGRP route 10.0.0.1/32
 PCD.
 Q153.
 A. OSPF route 10.0.0.0/30
@@ -216,10 +216,10 @@ C. NS
 D. CNAME
 
 28:Refer to the exhibit. What is the effect of this configuration?
-ip arp inspection vlan 5-10 
-interface fastethernet 0/1 
-switchport mode access 
-switchport access vlan 5
+L.ip arp inspection vlan 5-10 
+L.interface fastethernet 0/1 
+L.switchport mode access 
+L.switchport access vlan 5
 PA.
 Q157.
 A. The switch discards all ingress ARP traffic with invalid u MAC-to-IP address bindings.
@@ -350,9 +350,9 @@ E. They decrease the number of broadcast domains, which increases their size. Th
 F. VLANs allow the configuration of new logical groups, because all VLANs belong to the same broadcast domain.
 G. 802.1 Q trunks allow port-based VLANs to increase switch-port use efficiency.
 44:Refer to the exhibit. How does the router manage traffic to 192.168.12.16?
-EIGRP: 192.168.2.0/24 
-RIP: 192 168 2 0/27 
-OSPF: 192.168.2.0/28	
+L.EIGRP: 192.168.2.0/24 
+L.RIP: 192 168 2 0/27 
+L.OSPF: 192.168.2.0/28	
 PC.
 Q148.
 A. It load-balances traffic between all three routes.
@@ -415,10 +415,18 @@ C. Design
 D. Provision
 
 52:Refer to the exhibit. A network administrator configures four switches for local authentication using passwords that are stored as a cryptographic hash. The four switches must also support SSH access for administrators to manage the network infrastructure. Which switch is configured correctly to meet these requirements?
-SW1(config-line) #line vty 0 15 SW1(config-line) #no login local SW1(config-line) #password cisco
-SW2(config) #username admin! password abc!23 SW2(config-line) #line vty 0 15 SW2(config-line) #login local
-SW3(config) #username admin! secret abc!23 SW3(config-line) #line vty 0 15 SW3(config-line) #login local
-SW4(config) #username admin! secret abc!23 SW4(config-line) #line console 0 SW4(config-line) #login local
+L.SW1(config-line) #line vty 0 15 
+L.SW1(config-line) #no login local 
+L.SW1(config-line) #password cisco
+L.SW2(config) #username admin! password abc!23 
+L.SW2(config-line) #line vty 0 15 
+L.SW2(config-line) #login local
+L.SW3(config) #username admin! secret abc!23 
+L.SW3(config-line) #line vty 0 15 
+L.SW3(config-line) #login local
+L.SW4(config) #username admin! secret abc!23 
+L.SW4(config-line) #line console 0 
+L.SW4(config-line) #login local
 PC.
 Q140.
 A. SW1
@@ -510,10 +518,10 @@ C. Decreased switch count
 D. Increased complexity
 
 64:Refer to the exhibit. What is the next router (or hop) to be used for a packet destined for 172.16.1.23?
-172.16.0.0/16	via	10.10.10.1
-0.0.0.0/0 via	192.	168.1.1
-172.16.1.0/24	via	10.2C.20.2
-172.IS.2.0/24	via	10.3C.30.3
+L.172.16.0.0/16	via	10.10.10.1
+L.0.0.0.0/0 via	192.	168.1.1
+L.172.16.1.0/24	via	10.2C.20.2
+L.172.IS.2.0/24	via	10.3C.30.3
 PD.
 Q307.
 A.	10.30.30.3
@@ -522,11 +530,11 @@ C.	10.10.10.1
 D. 10.20.20.2
 65:Refer to the exhibit. If OSPF is running on this network, how does Routerl handle traffic from Site A to 10.10.12.128/25 at Site B?
 
-Router!#show ip route Gateway of last resort is not set
-10 0 00/8 is variably subnetted. 4 subnets. 2 masks C	10 10 10 8/30 is directly connected. FastEthemetO/2
-C	10101012/30 is directly connected. FastEthernet0/1
-O	10.10 12 0/25 [110/11) via 10 10 10 9 00 00 02. FastEthemetO/2
-[110/11| via 10 10 10 13 00 00 02. FastEthernet0/1 C	10 10 10 4/30 is directly connected. FastEthemetO/2
+L.Router!#show ip route Gateway of last resort is not set
+L.10 0 00/8 is variably subnetted. 4 subnets. 2 masks C	10 10 10 8/30 is directly connected. FastEthemetO/2
+L.C	10101012/30 is directly connected. FastEthernet0/1
+L.O	10.10 12 0/25 [110/11) via 10 10 10 9 00 00 02. FastEthemetO/2
+L.[110/11| via 10 10 10 13 00 00 02. FastEthernet0/1 C	10 10 10 4/30 is directly connected. FastEthemetO/2
 PB.
 Q138.
 A. It sends packets out of interface Fa0/1 only.
