@@ -303,45 +303,45 @@ B. crypto key generate ssh
 C. crypto key ssh
 D. crypto key generate rsa
 38:What is the subnet mask if you begin with the default Class A mask and then "borrow" 4 bits for subnetting?
-P.
-Q.
+PC.
+Q235.
 A.	255.255.128.0
 B.	255.255.240.0
 C.	255.240.0.0
 D.	255.255.255.240
 	
 39:Which is a false statement about firewalls?	
-P.
-Q.
+PB.
+Q466.
 A. They can protect a network from external attacks.
 B. They are commonly deployed to protect a network from internal attacks.
 C. They can provide stateful packet inspection.
 D. They can control application traffic.
 40:The two-tier	design model contains which layer switches?
-P.
-Q.
+PC.
+Q487.
 A.	Core, distribution, and access
 B.	Core and distribution
 C.	Distribution and access
 D. Internet, core, distribution, and access
 41:What device is responsible for each DNS domain? 
-P.
-Q.
+PB.
+Q348.
 A. Master DNS
 B. Authoritative name server
 C. Zone file server
 D. DNS client
 42:A new Layer 2 switch in its default configuration has just been powered up. In addition to a console connection, there are two Windows hosts and an IP phone (using PoE) connected to its Ethernet ports. Which of the following are true? (Choose two.)
-P.
-Q.
+PAD.
+Q451.
 A. If either Windows host has successfully completed an ARP v' resolution, the switch will have learned the MAC addresses of both Windows hosts.
 B. The switch would see the two Windows hosts directly connected devices from CDP
 C. The switch would not know if the IP phone is a Cisco IP □ phone or a third-party IP phone until a call is initiated from the phone.
 D. The switch can be configured with an IPv4 address on interface VLAN 1.
 	
 43:What are the advantages of implementing VLANs? (Choose three.)	
-P.
-Q.
+PACD.
+Q11.
 A. A higher level of network security can be achieved by segregating sensitive data traffic from other network traffic.
 B. They allow multiple physical groups to share the same network infrastructure. This optimizes the use of bandwidth.
 C. They allow multiple logical groups to share the same network infrastructure. This optimizes the use of bandwidth.
@@ -350,47 +350,48 @@ E. They decrease the number of broadcast domains, which increases their size. Th
 F. VLANs allow the configuration of new logical groups, because all VLANs belong to the same broadcast domain.
 G. 802.1 Q trunks allow port-based VLANs to increase switch-port use efficiency.
 44:Refer to the exhibit. How does the router manage traffic to 192.168.12.16?
-w		1
-	EIGRP: 192.168.2.0/24 RIP: 192 168 2 0/27 OSPF: 192.168.2.0/28	
-P.
-Q.
+EIGRP: 192.168.2.0/24 
+RIP: 192 168 2 0/27 
+OSPF: 192.168.2.0/28	
+PC.
+Q148.
 A. It load-balances traffic between all three routes.
 B. It chooses the EIGRP route because it has the lowest administrative distance.
 C. It chooses the OSPF route because it has the longest prefix inclusive of the destination address.
 D. It selects the RIP route because it has the longest prefix inclusive of the destination address.
 45:What version of STP on a Cisco device implements classic IEEE 802.1 D?
-P.
-Q.
+PB.
+Q297.
 A. MST
 B. PVST+ 
 C. TRILL 
 D. RPVST+
 46:Which statement identifies the functionality of virtual machines?
-P.
-Q.
+PB.
+Q53.
 A. Virtualized servers provide the best performance when they O are physically connected to a switch that is isolated from the hypervisor.
 B. The hypervisor can virtualize physical components u including CPU, memory, and storage.
 C.	The hypervisor can only support one virtual machine and one software switch at once.
 D.	The hypervisor communication on Layer 3 does not require any additional resources.
 47:What aspect of the routing table is impacted by the command ip route 0.0.0.0 0.0.0.0?
-P.
-Q.
+PD.
+Q310.
 A. Network mask 
 B. Metric
 C. Administrative distance
 D. Gateway of last resort
 48:What protocol does Ansible use in order to connect to managed nodes for configuration purposes?
 Explanation: Managed nodes are the network devices (and/or servers) you manage with Ansible, via ssh. They are also sometimes called "hosts-. Ansible is not installed on managed nodes.
-P.
-Q.
+PD.
+Q66.
 A. IPSec 
 B. HTTP 
 C. HTTPS
 D. SSH
 E. SFTP
 49:Which statement is true about the collapsed core design concept? 
-P.
-Q.
+PC.
+Q489.
 A. It is best suited for large-scale networks.
 B. It allows for better bandwidth.
 C. It is best suited for small enterprises.
@@ -399,116 +400,135 @@ D. It bottlenecks bandwidth.
 Explanation:
 https://www.privateinternetaccess.com/blog/tcp-vs-udp-understanding-the
 -difference/
-P.
-Q.
+PB.
+Q44.
 A. TCP is a best effort protocol; It does not guarantee delivery or error checking to make sure that data is not corrupted. UDP uses message acknowledgement mecanism and retransmits the lost packets.
 B. TCP uses flow control to avoid inundating a receiver by sending too many packets at once. UDP sends packets to the receiver in a continuous stream without checking for sequencing.
 C. TCP uses windowing to deliver packets reliably. UDP establishes a three-way handshake in order to provide reliable message transfer between hosts.
 D. TCP is a connectionless protocol that does not provide reliable data delivery. UDP is a connection-oriented protocol that uses sequencing to provide reliable delivery.
 51:Which is not a major menu option in Cisco DNA Center?
-P.
-Q.
+PA.
+Q433.
 A. Compliance
 B. Policy
 C. Design
+D. Provision
+
 52:Refer to the exhibit. A network administrator configures four switches for local authentication using passwords that are stored as a cryptographic hash. The four switches must also support SSH access for administrators to manage the network infrastructure. Which switch is configured correctly to meet these requirements?
-SWI(config-line) #line vty 0 15 SWI(config-line) #no login local SWt(config-line) #password cisco
+SW1(config-line) #line vty 0 15 SW1(config-line) #no login local SW1(config-line) #password cisco
 SW2(config) #username admin! password abc!23 SW2(config-line) #line vty 0 15 SW2(config-line) #login local
 SW3(config) #username admin! secret abc!23 SW3(config-line) #line vty 0 15 SW3(config-line) #login local
 SW4(config) #username admin! secret abc!23 SW4(config-line) #line console 0 SW4(config-line) #login local
-P.
-Q.
+PC.
+Q140.
 A. SW1
 B. SW2
 C. SW3
 D. SW4
 53:What command allows a port to more quickly transition from blocking to forwarding?
 Explanation: PortFast causes a switch or trunk port to enter the spanning tree forwarding state immediately, bypassing the listening and learning states.
-P.
-Q.
+PA.
+Q299.
 A. spanning-tree portfast
 B. spanning-tree convergefast
 C. spanning-tree rstp
 D. spanning-tree port-fast enable
 54:What layer of the OSI model corresponds to the transport layer of the TCP/ IP model?
-P.
-Q.
+PB.
+Q215.
 A. Network
 B. Transport
 C. Session
+D. Presentation
+
 55:What protocol and port number does RIP use? (Choose two.)
-P.
-Q.
+PBD.
+Q217.
 A. TCP
 B. UDP
 C. 514
+D. 520
+
 56:What is the default MTU of the Data and Pad field of the Ethernet frame? 
-P.
-Q.
+PC.
+Q269.
 A.	1200
 B.	900
 C.	1500
+D. 1600
 57:What parameters of a static route can be included as part of the ip route command to indicate where traffic should be sent? (Choose two.)
-P.
-Q.
+PAD.
+Q320.
 A. Next hop IP address
 B. RE ID
 C. Destination MAC address
+D. Outgoing interface
 58:What software runs on a physical server and makes virtual machines a reality?
-P.
-Q.
+PC.
+Q259.
 A. Firewall 
 B. Web server
 C. Hypervisor
+D. Container
+
 59:Which network type in OSPF features the use of a DR and a BDR? 
-P.
-Q.
+PB.
+Q332.
 A.	Point-to-point
 B.	Broadcast
 C.	Point-to-multipoint
+D. Point-to-multipoint non-broadcast
+
 60:Which WAN topology is usually the most expensive and difficult to maintain?
-P.
-Q.
+PB.
+Q192.
 A.	Hub-and-spoke
 B.	Full-mesh
 C.	Point-to-point
+D. Single-homed
+
 61:Speed is most important in which layer of a 2-tier architecture? 
-P.
-Q.
+PC.
+Q190.
 A. The access layer
 B. The workstation layer
 C. The backbone layer
+D. The distribution layer
+
 62:Which is a valid reason to implement a wireless LAN controller?
-P.
-Q.
+PA.
+Q477.
 A. Centralized authentication
 B. The use of autonomous WAPs
 C. Multiple SSIDs
 63:Which is a direct benefit of a full mesh topology? 
-P.
-Q.
+PB.
+Q482.
 A. Increased bandwidth
 B. Increased redundancy
 C. Decreased switch count
+D. Increased complexity
+
 64:Refer to the exhibit. What is the next router (or hop) to be used for a packet destined for 172.16.1.23?
 172.16.0.0/16	via	10.10.10.1
 0.0.0.0/0 via	192.	168.1.1
 172.16.1.0/24	via	10.2C.20.2
 172.IS.2.0/24	via	10.3C.30.3
-P.
-Q.
+PD.
+Q307.
 A.	10.30.30.3
 B.	192.168.1.1
 C.	10.10.10.1
 D. 10.20.20.2
 65:Refer to the exhibit. If OSPF is running on this network, how does Routerl handle traffic from Site A to 10.10.12.128/25 at Site B?
+
 Router!#show ip route Gateway of last resort is not set
 10 0 00/8 is variably subnetted. 4 subnets. 2 masks C	10 10 10 8/30 is directly connected. FastEthemetO/2
 C	10101012/30 is directly connected. FastEthernet0/1
 O	10.10 12 0/25 [110/11) via 10 10 10 9 00 00 02. FastEthemetO/2
 [110/11| via 10 10 10 13 00 00 02. FastEthernet0/1 C	10 10 10 4/30 is directly connected. FastEthemetO/2
-P.
-Q.
+PB.
+Q138.
 A. It sends packets out of interface Fa0/1 only.
 B. It cannot send packets to 10.10.12.128/25.
 C. It load-balances traffic out of Fa0/1 and FaO/2.
