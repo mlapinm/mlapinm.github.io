@@ -136,64 +136,54 @@ len:[0,0],
 {
 	"level" : "1",
 	"topic" : [
-	"знакомство"
+	"0 знакомство"
 ],
 len:[0,0],
 "en":[
-"well",
-"well and you",
-"how are you Sofia",
-"Great",
-"how are you Maksim",
-"How are you",
-"And how are you",
-"good and you",
-"Great and you",
-"My name is Ben.",
-"Welcome Maksim",
-"Of course, Ben.",
-"My name is Anna.",
-"Yes Of course",
-"Excuse me",
-"Of course",
-"OK, goodbye!",
-"Nice to meet you, Maksim.",
-"Nice to meet you",
-"OK, have a good day!",
-"Goodbye, have a good evening!",
-"Nice to meet you, goodbye!",
-"have a good day!",
-"have a good evening Anna",
-"have a good evening Ben",
+	"well",
+
+	"well and you",
+	
+	"how are you Sofia",
+	
+	"great and you",
+	
+	"Great",
+	
+	"how are you Maksim",
+	
+	"How are you",
+	
+	"And how are you",
+	
+	"good and you",
+	
+	"Greatand you",
+	
 	"",
 ""
 ],
 "ru":[
-"Хорошо",
-"Хорошо а у вас",
-"Как у вас дела София",
-"Отлично",
-"Как у вас дела Максим",
-"Как у вас дела",
-"А у вас",
-"Хорошо а у вас",
-"Отлично а у вас",
-"Моё имя – Бен.",
-"Добро пожаловать, Максим!",
-"Конечно Бен",
-"Моё имя – Анна.",
-"Да, конечно.",
-"Извините.",
-"Конечно",
-"Ладно до свидания",
-"Приятно познакомиться, Максим.",
-"Приятно познакомиться.",
-"Ладно, хорошего дня!",
-"До свидания Хорошего вечера",
-"Приятно познакомиться до свидания",
-"Хорошего дня!",
-"Хорошего вечера, Анна.",
-"Хорошего вечера, Бен.",
+	"Хорошо ",
+
+	"Хорошо а у вас",
+	
+	"Как у вас дела София",
+	
+	"Отлично а у вас",
+	
+	"Отлично ",
+	
+	"Как у вас дела Максим",
+	
+	"Как у вас дела",
+	
+	"А у вас",
+	
+	"Хорошо а у вас",
+	
+	"Отлично а у вас",
+	
 	"",
 ""
 ]
