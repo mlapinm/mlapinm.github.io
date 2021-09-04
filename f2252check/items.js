@@ -8993,16 +8993,38 @@ len:[0,0],
 ]
 },
 {
-	"level" : "",
+	"level" : "5",
 	"topic" : [
-	""
+	"Цель 2"
 ],
 len:[0,0],
 "en":[
+"Praise yourself, you deserve it!",
+"Take the next step toward your goal and you will be rewarded.",
+"All your efforts were worth it, my sincere congratulations!",
+"Our hard work has been rewarded with your success",
+"Your success is the best praise for our efforts.",
+"These are just first successful steps, you will achieve more!",
+"Let me congratulate you on achieving your goal!",
+"What is your next step",
+"Yes you deserve this praise",
+"thank you for your efforts we are so happy for you",
+"This success is the result of your efforts.",
 "",
 ""
 ],
 "ru":[
+"Похвалите себя, вы заслуживаете этого!",
+"Сделай следующий шаг к своей цели и ты будешь вознаграждён.",
+"Все твои усилия стоили того, мои искренние поздравления!",
+"Наш тяжёлый труд был вознаграждён вашим успехом.",
+"Ваш успех - лучшая похвала нашим усилиям.",
+"Это лишь первые успешные шаги, вы достигнете большего!",
+"Позволь мне поздравить тебя с достижением твоей цели!",
+"Какой твой следующий шаг?",
+"Да, ты заслуживаешь этой похвалы!",
+"Спасибо за ваши усилия, мы так счастливы за вас!",
+"Этот успех является результатом ваших усилий.",
 "",
 ""
 ]
