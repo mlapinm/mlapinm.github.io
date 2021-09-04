@@ -6,14 +6,14 @@ $(() => {
     let k = 0
     for(let e of tests){
         if(k == 0){
-            k += 1
-            continue    
+            // k += 1
+            // continue    
         }
 
         let ask = $('<div></div>')
         let span1 = $('<span></span>')
         let span2 = $('<span></span>')
-        span1.text('' + k + ': ')
+        span1.text('' + (k+1) + ': ')
         span2.text(e.asks[0])
         ask.addClass('ask')
 

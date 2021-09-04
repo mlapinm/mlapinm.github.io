@@ -113,7 +113,7 @@ D. show trunk all
 
 A. 255.255.192.0
 Â. 255.255.224.0
-Ñ. 255.255.240.0
+C. 255.255.240.0
 
 16: What is the name for the router that is responsible for assigning traffic to routers in GLBP?
 
@@ -126,7 +126,8 @@ C. AVG
 A. ICMP
 B. TCP
 C. UDP
-following is required? (Choose two.)	
+
+18: In order to generate an RSA key for SSH on a switch, which of the following is required? (Choose two.)
 
 A. Configuring VTY access.
 B. Configuring a hostname.
