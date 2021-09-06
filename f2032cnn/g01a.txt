@@ -35,9 +35,9 @@ C. Security configuration mode
 D. Global configuration mode
 6:Refer to the exhibit. How does the router manage traffic to 192.168.12.16?
 		
-EIGRP: 192.168.2.0/24 
-RIP: 192 168 2 0/27 
-OSPF: 192.168.2.0/28	
+L.EIGRP: 192.168.2.0/24 
+L.RIP: 192 168 2 0/27 
+L.OSPF: 192.168.2.0/28	
 PC.
 Q148.
 A. It load-balances traffic between all three routes.
@@ -155,14 +155,14 @@ D. Trickle
 
 img0121
 
-r1#sh ip ro
-Gateway of last resort is 10.10.10.18 to network 0.0.0.0
-10.0.0.0/8 ie variably ¦ubnattad, 4 subnets, 3 masks 
-C	10.10.10.0/30 is directly connected, PastEthernetO/1
-O	10.10.14.0/25 [110/6576] via 10.10.10.1, 06:58:21, FastEthernetO/1
-C	10.10.10.16/30 is direotly oonnootod, FastEthornotO/24
-O	10.10.14.144/28 [110/110] via 10.10.10.1, 06:58:21, FastEthernetO/1
-B* 0.0.0.0/0 [20/0] via 10.10.10 18, 01:17:58
+L.r1#sh ip ro
+L.Gateway of last resort is 10.10.10.18 to network 0.0.0.0
+L.10.0.0.0/8 ie variably ¦ubnattad, 4 subnets, 3 masks 
+L.C	10.10.10.0/30 is directly connected, PastEthernetO/1
+L.O	10.10.14.0/25 [110/6576] via 10.10.10.1, 06:58:21, FastEthernetO/1
+L.C	10.10.10.16/30 is direotly oonnootod, FastEthornotO/24
+L.O	10.10.14.144/28 [110/110] via 10.10.10.1, 06:58:21, FastEthernetO/1
+L.B* 0.0.0.0/0 [20/0] via 10.10.10 18, 01:17:58
 PB.
 Q151.
 A. default route
@@ -231,15 +231,17 @@ C. It collects information about disastrous system events from remote network no
 D. It supervises routing between Layer 3 devices in a network.
 
 30: Refer to the exhibit. Based on the LACP neighbor status, in which mode is the SW1 port channel configured?
-SWii show lacp neighbor
-Flags:	S - Device is sending Slow LACPDUs
-F - Device is sending Fast LACPDUs A - Device is in Active mode P - Device is in Passive mode
-Channel group 31 neighbors
-Partner's inforiration:
-		LaCP port			Adnin Oper		Port	Port
-Port	Flags	Priority	Dev ID	Age	key	Key	Kusber	State
-Etl/0	SP	32768	aabb.cc40.4000	6s	0x0	0x23	0x101	0x3C
-Etl/1	SP	32768	aabb.cc50.4000	6s	0x0	0x23	0x101	0x3C
+L.SW1# show lacp neighbor
+L.Flags:	S - Device is sending Slow LACPDUs
+L.F - Device is sending Fast LACPDUs 
+L.A - Device is in Active mode 
+L.P - Device is in Passive mode
+L.Channel group 31 neighbors
+L.Partner's inforiration:
+L.		LaCP port			Adnin Oper		Port	Port
+L.Port	Flags	Priority	Dev ID	Age	key	Key	Kusber	State
+L.Etl/0	SP	32768	aabb.cc40.4000	6s	0x0	0x23	0x101	0x3C
+L.Etl/1	SP	32768	aabb.cc50.4000	6s	0x0	0x23	0x101	0x3C
 PC.
 Q69.
 A. auto

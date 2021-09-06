@@ -1,7 +1,7 @@
 * {
-    font-size: 1.35rem;
-    font-family: sans-serif;
-    /* margin: 0px; */
+    /* font-size: 1.35rem; */
+    /* font-family: sans-serif; */
+    margin: 0px;
 }
 
 
@@ -13,10 +13,30 @@
 }
 
 .container2 {
+    font-family: sans-serif;
     /* height: 40vh; */
     background-color: aqua;
     /* border: 1px solid; */
     overflow: auto;
+}
+
+.image{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.sentences {
+    border: 1px solid;
+    border-radius: 0.2rem;
+    /* background-color: aquamarine; */
+}
+
+.listing {
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+    margin: auto;
+    /* background-color: beige; */
 }
 
 .bordered {
@@ -36,4 +56,21 @@
 
 .num {
     width: 4rem;
+}
+
+.main-footer{
+    color: black;
+    font: 1.3em Arial, sans-serif;
+        text-shadow: lightgreen 1px 1px 0, lightgreen -1px -1px 0, 
+        lightgreen -1px 1px 0, lightgreen 1px -1px 0;
+
+
+    /* text-align: center; */
+    position:-webkit-sticky; 
+    position:sticky; 
+    bottom:0; 
+    border-color:red;
+    background:#aaa;
+    padding: 1rem;
+    opacity: 0.8;
 }
