@@ -117,7 +117,6 @@ $(() => {
         }else{
             $('.main-footer').addClass('small')
         }
-
     })
 
 
