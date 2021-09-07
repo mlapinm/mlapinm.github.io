@@ -62,7 +62,7 @@ $(() => {
                 if(e.responses.length != 1){
                     checkBox = $('<input>', {type: "checkbox", name: "name_"+k})
                 }
-                checkBox.addClass('class'+k)
+                checkBox.addClass('class_'+k+'_'+kv)
                 let variant = $('<div></div>')
                 variant.addClass('variant')
                 let span1 = $('<span></span>')
@@ -73,6 +73,24 @@ $(() => {
                 variant.append(span1)
                 variant.append(span2)
                 variants.append(variant)
+
+                checkBox.click((e) => {
+                    let name = $(e.target).attr('class')
+
+                    let re = /class\_(\d\d?)_(\d)/
+                    let match = re.exec(name)
+                    let num = 0
+                    let numvar = 0
+                    if(match){
+                        num = Math.floor(match[1])
+                        numvar = Math.floor(match[2])
+                    }
+
+                    log1.text(num + ' ' + numvar)
+                })
+
+
+
                 kv += 1
             }
         }
