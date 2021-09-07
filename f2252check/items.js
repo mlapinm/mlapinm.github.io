@@ -2482,46 +2482,48 @@ len:[0,0],
 ]
 },
 {
-	"level" : "8",
-	"topic" : [
-	"8888888"
-],
-len:[0,0],
-"en":[
-"",
-""
-],
-"ru":[
-"",
-""
-]
-},
-{
-	"level" : "8",
-	"topic" : [
-	"8888888"
-],
-len:[0,0],
-"en":[
-"",
-""
-],
-"ru":[
-"",
-""
-]
-},
-{
 	"level" : "4",
 	"topic" : [
 	"Срав.ст.2"
 ],
 len:[0,0],
 "en":[
+"It is the newest book.",
+"Victor is the strongest of three",
+"Hе is younger and stronger than you",
+"Do you want the smallest one?",
+"Mу father is the strongest",
+"I am the youngest child",
+"Tomorrow is the longest day of the year",
+"She is not the youngest in her family",
+"This train is the longest",
+"Victor is the strongest of the three.",
+"Horses are much stronger than people.",
+"Is her pencil newer than mine?",
+"Those horses are the weakest",
+"Hе is much weaker than you.",
+"Mу mother is the weakest of women",
+"Which toy is the smallest",
 "",
 ""
 ],
 "ru":[
+"Это новейшая книга",
+"Виктор - самый сильный из трёх.",
+"Он моложе и сильнее тебя.",
+"Ты хочешь самый маленький?",
+"Мой отец самый сильный.",
+"Я - младший ребёнок.",
+"Завтра - самый длинный день года.",
+"Она не младшая в своей семье.",
+"Этот поезд - самый длинный.",
+"Виктор - самый сильный из трёх.",
+"Лошади гораздо сильнее людей.",
+"Её карандаш новее моего?",
+"Те лошади - самые слабые.",
+"Он гораздо слабее тебя.",
+"Моя мать - самая слабая из женщин.",
+"Которая игрушка - самая маленькая?",
 "",
 ""
 ]
