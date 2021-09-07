@@ -111,13 +111,12 @@ $(() => {
     }
 
     $('.main-footer').click((e) => {
-        
 
-        log1.text(444)
-
-
-
-
+        if($('.main-footer').hasClass('small')){
+            $('.main-footer').removeClass('small')
+        }else{
+            $('.main-footer').addClass('small')
+        }
 
     })
 

@@ -75,3 +75,7 @@
     padding: 0.4rem;
     opacity: 0.8;
 }
+
+.small {
+    height: 1rem;
+}
