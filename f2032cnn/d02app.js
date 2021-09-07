@@ -86,7 +86,21 @@ $(() => {
                         numvar = Math.floor(match[2])
                     }
 
-                    log1.text(num + ' ' + numvar)
+                    let res = 0
+                    let resSimv = tests[num].responses
+                    let resNum = []
+                    let a0  = 'A'.charCodeAt(0)
+                    let a1 = 0
+                    for(let v of resSimv){
+                        a1 = v.charCodeAt(0) - a0
+                        resNum.push(a1)
+                    }
+
+
+                    log1.text(num + ' ' 
+                    + numvar + ' ' 
+                    + resSimv + ' ' 
+                    + resNum)
                 })
 
 
