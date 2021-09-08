@@ -1,6 +1,8 @@
 * {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     /* font-family: sans-serif; */
+        line-height: 0.9;
+
     margin: 0px;
 }
 
@@ -60,10 +62,12 @@
 
 .main-footer{
     /* height: 1rem; */
-    color: black;
-    font: 1.3em Arial, sans-serif;
-        text-shadow: white 1px 1px 0, white -1px -1px 0, 
-        white -1px 1px 0, white 1px -1px 0;
+    color: blue;
+    /* line-height: 0.5; */
+
+    font: 1.0em Arial, sans-serif;
+    text-shadow: lawngreen 1px 1px 0, lawngreen -1px -1px 0, 
+    lawngreen -1px 1px 0, lawngreen 1px -1px 0;
 
 
     /* text-align: center; */
@@ -71,7 +75,7 @@
     position:sticky; 
     bottom:0; 
     border-color:red;
-    background:#aaa;
+    background:#ddd;
     padding: 0.4rem;
     opacity: 0.8;
 }
