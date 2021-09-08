@@ -77,7 +77,8 @@
     border-color:red;
     background:#ddd;
     padding: 0.4rem;
-    opacity: 0.8;
+    opacity: 0.94;
+    overflow: auto;
 }
 
 .small {
