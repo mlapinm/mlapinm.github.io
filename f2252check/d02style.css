@@ -4,3 +4,55 @@
     line-height: 0.9;
     margin: 0px;
 }
+
+.box1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+}
+
+.alpfa {
+    /* float: left; */
+    width: 1.7rem;
+    height: 1.3rem;
+    margin: 0.1rem;
+    padding-top: 0.3rem;
+    text-align: center;
+    /* padding: 0.2rem; */
+    background-color: aqua;
+    border: 1px solid burlywood;
+    border-radius: 1rem;
+}
+
+.couple {
+    border: 2px solid burlywood;
+    border-radius: 0.8rem;
+    margin-top: 0.1rem;
+    margin-right: 0.2rem;
+    padding-left: 0.2rem;
+}
+
+.ru {
+    color: darkblue;
+    margin-left: 0.3rem;
+    margin-right: 0.2rem;
+
+}
+
+.en {
+    padding: auto;
+}
+
+.num {
+    padding-left: 0.4rem;
+    padding-right: 0.6rem;
+}
+
+.selected {
+    background-color: chartreuse;
+}
