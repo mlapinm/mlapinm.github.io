@@ -20,6 +20,11 @@ function getCaps(a, caps){
     for(let c of parts){
         caps.push(c)
     }
+    if(a == '*'){
+        for(let c of couples){
+            caps.push(c)
+        }
+    }
 }
 
 function createAbc(){
