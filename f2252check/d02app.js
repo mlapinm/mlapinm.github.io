@@ -17,8 +17,6 @@ function getAbc(abc){
 
 function getCaps(a, caps){
     let parts = couples.filter(e => e[0][0] == a.toLowerCase())
-    console.log(parts.length)
-    console.log(couples.length)
     for(let c of parts){
         caps.push(c)
     }
@@ -48,7 +46,6 @@ function createAbc(){
 
 
             let cap = e.target.innerText
-            console.log(cap)
             let caps = []
             getCaps(cap, caps)
 
