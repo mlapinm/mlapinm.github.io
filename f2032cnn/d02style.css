@@ -1,5 +1,5 @@
 * {
-    font-size: 1.3rem;
+    font-size: 1.0rem;
     /* font-family: sans-serif; */
         line-height: 0.9;
 
@@ -66,8 +66,8 @@
     /* line-height: 0.5; */
 
     font: 1.0em Arial, sans-serif;
-    text-shadow: lawngreen 1px 1px 0, lawngreen -1px -1px 0, 
-    lawngreen -1px 1px 0, lawngreen 1px -1px 0;
+    /* text-shadow: lawngreen 1px 1px 0, lawngreen -1px -1px 0, 
+    lawngreen -1px 1px 0, lawngreen 1px -1px 0; */
 
 
     /* text-align: center; */

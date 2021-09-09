@@ -1,303 +1,346 @@
-﻿
-1: Which two command sequences need to be entered on a switch in order to establish a Layer 3 EtherChannel with an open-standard protocol? (Choose two.)
-A.	interface GigabitEthernetO/O/1 channel-group 10 mode on
-B.	interface port-channel 10 no switchport
-ip address 172.20.0.1 255.255.255.0
-C.	interface GigabitEthernet0/0/1 channel-group 10 mode auto
-D.	interface GigabitEthernet0/0/1 channel-group 10 mode active
-E.	interface port-channel 10 □ switchport
-switchport mode trunk
-
-2: Refer to the exhibit. A network administrator configures a static default route on the router with the ip route 0.0.0.0 0.0.0.0 10.11.0.1 120 command. What is the expected effect of this command on the router?
-Ф A. The router begins sending traffic without an explicit matching entry in the routing table to GigabitEthernetO/1.
-n B. The router instantly replaces the existing OSPF route in the routing table with the newly configured static route.
-n C. The router starts load-balancing traffic between the two default routes.
-n D. The router ignores the new static route until the existing OSPF default route is removed.
-0*E2 0.0.0.0/0 [110/lJ via 10.10.0.1, 00:00:01, GigabitEthernetO/O 10.0.0.0/8 is variably subnetted, 2 subnets, 2 masks C	10.0.0.0/24 is directly connected, GigabitEthernet0/0
-L	10.0.0.2/32 is directly connected, GigabitEthernet0/0
-C	10.11.0.0/24 is directly connected, GigabitEthernetO/l
-L	10.11.0.2/32 is directly connected, GigabitEthernetO/l
-3: Which of the following is not an item for which you configure profiles when first setting up a WLC?		
-	О A. Site	
-	О в. RF	
-	О C. Node	
-	О D. WLAN	
-4: When Auto MDI-X is used on a Cisco switch, what type of cable is used to connect a Layer 2 switch's port to a laptop?
-®	A.	Crossover
-О	В.	Rollover
-О	C.	Console
-О D. Straight-through
-5: You see the syslog message *Nov 16 00:13:23.003: %SYS-6-CLOCKUPDATE: System clock has been updated from 13:20:35 EDT Sun Feb 28 2021 to 18:53:13 EST Thu Jun 15 2022, configured from console by console. What facility produced the message?	
-®	A. %SY S-6-C LOCKUP DATE
-о	B. CLOCKUPDATE
-о	C. %SYS
-о	D. 6
-6: Why would Multiprotocol Label Switching (MPLS) be used as a connectivity option?	
-®	A. To support multicast packets.
-о	B. To support both IPv4 and IPv6 packets.
-о	C. When a high amount of bandwidth is needed.
-о	D. When encryption is required.
-7: What attack method locks out a system or even encrypts it and then offers to unlock it in exchange for money?	
-®	A. Worm
-о	В. Man-in-the-middle
-о	C. Phishing
-о	D. Ransomware
-8: Refer to the exhibit. What is the cause of the shown configuration error message?
-А.	192.168.10.143 belongs to a private IP address range.
-B.	The router does not support the /28 mask.
-C.	192.168.10.143 is the network IP address.
-D.	192.168.10.143 is the broadcast IP address.
-Routerl(config)#interface GigabitEthernet 1/0/1 Routerl(conf ig-if)#ip address 192.168.10.143 255.255.255.240 Bad mask /28 for address 192.168.10.143
-9: Which of the following is true regarding spine-and-leaf architecture?
-^ A. Higher bandwidth can be obtained for each link between leaf switches.
-n B. It facilitates STP troubleshooting because STP blocked ports can be predicted easily.
-n C. By design, traveling information has variable latency between endpoint devices.
-О
-D. Each device in the topology is separated by the same number of hops.
-10: An email user has clicked a link in an email apparently sent by his company's security team. The webpage that opens appears to be safe but the link could have contained malicious code. Which type of attack is this?
-® A. Physical access control
-О	В. Social engineering attack
-О	C. Brute force attack
-О	D. User awareness
-О E. Phishing
-11: A technician needs to configure switch Sw2 so that it can be accessed
-remotely from the management workstation connected to Switch Swl. Which set of commands is required to accomplish this task?	
-®	A. Sw2(config)# interface FastEthernet 0/1 Sw2(config-if)# ip address 192.168.8.252 255.255.255.0 Sw2(config-if)# no shutdown
-о	B. Sw2(config)# interface vlan 1 Sw2(config-if)# ip address 192.168.8.252 255.255.255.0 Sw2(config-if)# ip default-gateway 192.168.8.254 255.255.255.0 Sw2(config-if)# no shutdown
-о	C. Sw2(config)# ip default-gateway 192.168.8.254 Sw2(config)# interface vlan 1 Sw2(config-if)# ip address 192.168.8.252 255.255.255.0 Sw2(config-if)# no shutdown
-о	D. Sw2(config)# ip default-network 192.168.8.254 Sw2(config)# interface vlan 1 Sw2(config-if)# ip address 192.168.8.252 255.255.255.0 Sw2(config-if)# no shutdown
-о	E. Sw2(config)# ip route 192.168.8.254 255.255.255.0 Sw2(config)# interface FastEthernet 0/1 Sw2(config-if)# ip address 192.168.8.252 255.255.255.0 Sw2(config-if)# no shutdown
-® A. crypto key generate rsa
-О В. ssh key rsa generate
-О C. get ssh key rsa
-О D. ip ssh generate key rsa
-13: Refer to the exhibit, which type of device must be connected to interface FastEthernet 0/1, if the network environment is operating normally?
-A.	PC
-В.	router
-С.	DHCP client
-D.	access point
-ip arp inspection vlan 2-10 interface fastethernet 0/1
-ip arp inspection trust
-® A. show vlans trunk О	В. show interface trunk
-О C. show trunk interface
-15: If a subnet mask has a length of 19 bits, what is the subnet mask in dotted-decimal notation?
-® A. 255.255.192.0
-О	В. 255.255.224.0
-О	С. 255.255.240.0
-16: What is the name for the router that is responsible for assigning traffic to routers in GLBP?
-® A. AVF
-О В. AVR
-О C. AVG
-17: Which of the following are transport layer protocols? (Choose two.)
-□	A. ICMP
-□	B. TCP
-□	C. UDP
-following is required? (Choose two.)	
-Q	A. Configuring VTY access.
-□	B. Configuring a hostname.
-□	C. Creating a user with a password.
-□	D. Configuring the version of SSH.
-□	E. Assigning a DNS domain name.
-19: What layer of the OSI model corresponds to the transport layer of the TCP/IP model?
-®	A. Network
-О	В. Transport
-О	C. Session
-22: Which specification for connectivity is currently used in data centers for lower cost and simplicity?
-®	A. lOGBase-T
-О	В. 40GBase-T
-О	C. 10GBase-CX
-® A. Simplified layer 3 configuration
-О В. Does not require routing protocols
-О C. Does not require authentication protocols
-® A. crypto key ssh create
-О В. crypto key generate ssh
-О C. crypto key ssh
-® A. Centralized authentication
-О В. The use of autonomous WAPs
-О C. Multiple SSIDs
-25: Which is a valid reason to implement a wireless LAN controller?
-® A. Centralized authentication
-О В. The use of autonomous WAPs
-О C. Multiple SSIDs
-26: What command identifies the inside NAT interface?
-® A. nat inside
-О В. nat ip inside
-О C. inside
-27: What improvement does SNMP version 3 offer over SNMP v2c?
-® A. Monitoring with no overhead
-О В. Increased security
-О C. A reduction in server calls
-28: A network administrator issues a successful ping to www.company.com. What has been verified?
-о	A. WINS
-о	В. DNS
-о	C. NTP
-29: According to best practices, what is the proper placement of a firewall?
-О A. Only between the internal network and the Internet О В. At key security boundaries
-О C. IntheDMZ
-30: When using DHCP combined with the SLAAC feature in IPv6, what form of DHCP is most likely being used?
-О	A. Stateful
-О	В. Stateless
-О	C. Headless
-31: How does EIGRP, by default, calculate the metric of a route when adding it to the routing table?
-n A. It uses the bandwidth and delay values of the path to calculate the route metric.
-n B. It sets a default metric of 10 for all routes that are learned by the router.
-n C. It uses a reference bandwidth and the actual bandwidth of the connected link to calculate the route metric.
-О
-D. It counts the number of hops between the receiving and destination routers and uses that value as the metric.
-о	A. no cdp run
-о	B. no cdp enable
-о	C. cdp disable
-33: Where is the full mesh topology commonly seen in the three-tier design
-model?	
-о	A. Core layer
-о	B. Distribution layer
-о	C. Access layer
-34: What does a Cisco IP phone do when it receives untagged data traffic from an attached PC?
-О	A. It tags the traffic with the native VLAN.
-О	В. It tags the traffic with the default VLAN.
-О C. It drops the traffic.
-О A. logging 10.10.10.7 О В. logging trap level 2 10.10.10.7 О C. logging host 10.10.10.7
-36: Refer to the exhibit. Which type of route does R1 use to reach host 10.10.14.10/32?
-110.10.10.16/30]
-.1
-Internet
-Firewall
-а
-R1#sh ip ro
-Gateway of last resort is 10.10.10.18 to network 0.0.0.0
-10.0.0.0/8 is variably subnetted, 4 subnets, 3 masks C	10.10.10.0/30 is directly connected, FastEthernetO/1
-О	10.10.14.0/25 (110/6576J via 10.10.10.1, 06:58:21, FastEthernetO/1
-C	10.10.10.16/30 is dirootly connected, FastEthornotO/24
-О	10.10.14.144/28 [110/110] via 10.10.10.1, 06:58:21, FastEthernetO/1
-B* 0.0.0.0/0 [20/OJ via 10.10.10.18, 01:17:58
-О A. default route
-О В. network route
-О С. host route
-О D. floating static route
-37: What does a JSON object consist of?	
-о	A. Arrays
-о	В. Subobjects
-о	C. If, Then statements
-38: What counter is incremented when the number of frames transmitted is greater than 1518 bytes in size?
-О A. Babble О В. Late collision О C. Runt
-39: Refer to the exhibit, which would be the effect of replacing the hub with a switch?
-A.	The number of collision domains would increase.
-B.	The number of collision domains would decrease.
-C.	The number of broadcast domains would increase.
-D.	The number of broadcast domains would decrease.
-О A. A measure of the proximity to the reference clock О В. A measure of a clockXs accuracy
-О C. A measure of the number of total NTP clients
-® A. A measure of the proximity to the reference clock
-О В. A measure of a clockXs accuracy
-О C. A measure of the number of total NTP clients
-41: What command assigns voice VLAN 20 on a switch access port? О A. switchport voice vlan 20
-О В. switchport access vlan 20 voice
-О C. switchport vlan 20 voice
-42: Which type of device will detect but not prevent unauthorized access?
-О	A. Firewall
-О	В. IPS
-О	C. IDS
-43: What command shoud be entered in order to configure a Cisco router so that severity levels 5 through 0 log messages are stored in a buffer?
-О	A. logging buffered 5
-О	В. logging level 5 buffer
-О	C. logging 5 buffered
-44: Refer to the exhibit. Which statement is false?
-о
-A. Telnet users will be required to provide a password for Telnet access.
-~ B. Telnet users will be required to provide the password ChEeEs&WiZ for access to privileged mode.
-C. The account password of the admin privilege-level user is not very secure.
-О D. New plaintext passwords will not be encrypted.
-no service password-encryption !
-enable secret rt3KKSMZPs
-username adminOl privilege 15 secret Ciscol23 !
-line vty 0 4 password CdffLs&WvZ login
-transport input telnet
-45: When analyzing the frames sent and received over a Gigabit Ethernet connection, a network technician sees many frames that are approximately 9000 bytes in size. What are these frames called?
-О	A. Error frames
-О	В. Pico frames
-О C. Runts
-О D. Jumbo frames
-46: What is a basic security measure used in some wireless networks?
-О A. Network cloaking О	В. RF cloaking
-О	C. SSID broadcasting
-47: What two new port roles were introduced with Rapid PVST+? (Choose two.)
-□	A.	Alternate
-□	B.	Designated
-□	C.	Root
-48: Which layer in the three-tier model is where collision domains should be created?
-О A. Core layer О	В. Distribution layer
-О	C. Access layer
-49: What technology permits high-availability configurations with physical ports on Cisco wireless LAN controllers?
-О A. VTP О В. STP О C. LAG
-50: A router R1 learns the same route from two different neighbors R2 and R3. R2 is an OSPF neighbor, and R3 is an EIGRP neighbor. What is the administrative distance of the route that will be added to R1 's routing table?
-О A. 20 О В. 90 О С. ПО
-О D. 115
-51: What command sets the maximum number of MAC addresses permitted to 4?	
-о	A. set port-security max mac-address 4
-о	B. switchport port-security maximum 4
-о	C. switchport port-security maximum mac-address 4
-52: What level of logging is appropriate for an event where an immediate action is required?
-®	A. Emergency
-о	B. Critical
-о	C. Error
-53: What security protocol does not encrypt the entire body of a packet?
-® A. RADIUS О В. TACACS+ O C. VTP
-54: A new Layer 2 switch in its default configuration has just been powered up. In addition to a console connection, there are two Windows hosts and an IP phone (using PoE) connected to its Ethernet ports. Which of the following are true? (Choose two.)
-A.	If either Windows host has successfully completed an ARP □ resolution, the switch will have learned the MAC addresses of both Windows hosts.
-п B. The switch would see the two Windows hosts directly connected devices from CDP.
-C. The switch would not know if the IP phone is a Cisco IP □ phone or a third-party IP phone until a call is initiated from the phone.
-. D. The switch can be configured with an IPv4 address on interface VLAN 1.
-55: Refer to the exhibit. How many broadcast domains are present in the network?
-A. One broadcast domain
-В.	Two broadcast domains
-C.	Three broadcast domains
-D.	Seven broadcast domains
-О A. Centralized AAA О	В. A remote Telnet database
-О C. SNMP for authentication
-57: What field can a standard ACL filter on?
-О	A. Protocol
-О	В. Port
-О	C. Destination	IP
-58: What is the term used with Ansible for the text file that lists the nodes that Ansible can manage?	
-о	A.Runbook
-о	В. Playbook
-о	C. Recipe
-О	A. 5
-О	В. 20
-О	С. 90
-60: What traditional 802.1 D STP port state does not exist in 802.1 w RSTP?
-О	A. Discarding
-О	В. Listening
-О	C. Learning
-61: What is the default MTU of the Data and Pad field of the Ethernet frame?
-О	A. 1200
-О	В. 900
-О	С. 1500
-62: Which network topology design has a centralized switch connecting all of the devices?
-о	A. Star
-о	В. Full mesh
-о	C. Partial mesh
-63: For which two reasons does a network administrator configure a floating static route? (Choose two.)
-n A. to route traffic differently based on the source IP of the packet
-п B. to enable fallback static routing when the dynamic routing protocol fails
-п C. to automatically route traffic on a secondary path when the primary path goes down
-□ D. to support load balancing via static routing
-□
-E. to control the return path of traffic that is sent from the router
-64: What software runs on a physical server and makes virtual machines a reality?
-® A. Firewall
-О В. Web server
-О C. Hypervisor
-65: Refer to the exhibit. The network administrator wants VLAN 55 traffic to be untagged between Sw1 and Sw2, while all other VLANs remain tagged. Which command should be entered to perfom this task?
-Workstation!
-A.	switchport access vlan 55
-В.	switchport trunk allowed vlan 55
-C.	switchport private-vlan association host 55
-D.	switchport trunk native vlan 55
-Correct answers:
-Wrong answers: Unanswered questions: Elapsed time:
-Average time /question
-47
-2
-00:08:22
-00m07s
+﻿	
+Which specification for connectivity is currently used in data centers for lower cost and simplicity?	
+o	A. lOGBase-T
+o	B. 40GBase-T
+®	C. 10GBase-CX
+o	D. lOOGBase-TX
+What is the protocol used for the transport of user data in a site-to-site VPN architecture?
+Explanation: A site-to-site VPN could use either internet protocol security protocol (IPSec) or generic routing encapsulation (GRE). GRE provides the framework for how to package the passenger protocol for transport over the internet protocol (IP).
+O A. TCP
+® B. IPsec
+O C. IKEvI
+O D. IKEv2
+What command configures an interface to trunk? O	A. switchport trunk
+O	B. switchport trunk dot1 q
+®	C. switchport mode trunk
+O	D. switchport trunk enable
+What method is used with WPA2 in personal mode?
+O A. SAE O B. 3DES O C. MD5
+	
+When enabling port security for a switch port, what is the default violation mode?	
+o	A. Restrict
+®	B. Shutdown
+o	C. Protect
+o	D. Passive
+Refer to the exhibit. Router R1 is running three different routing protocols. Based on which characteristic does it forward the packets destined for IP 172.17.32.1?
+■
+R1# show ip route
+D	172.17.32.0/27	[90/2888597172] via 20.1.1.1
+O	172.17.32.0/19	[110/292094] via 20.1.1.10
+R	172.17.32.0/24	[120/2] via 20.1.1.3
+O	A. metric
+O	B. administrative distance
+O C. cost
+® D. longest prefix
+What approach to QoS involves marking and classifying traffic?
+O A. IntServ
+®	B. DiffServ
+O	C. BE
+What happens if you issue the command no service password-encryption? O A. Encrypted passwords are reversed.
+® B. The device no longer encrypts future passwords.
+O C. The device removes all encrypted passwords.
+	
+The cloud offers the ability to dynamically resize resources based on demand. What is the term for this ability?	
+®	A. Elasticity
+o	B. Cloud-bursting
+o	C. Scalability
+o	D. Immutability
+Which of the following is valid a Spanning Tree Protocol (STP) port state?
+Explanation: The ports on a switch with enabled Spanning Tree Protocol (STP) are in one of the following five port states: Blocking, Listening, Learning, Forwarding, Disabled.
+O	A.	Dispatching
+O	B.	Transmitting
+O	C.	Sending
+® D. Forwarding
+O	E. Delivering
+O	F. Transferring
+An organization purchased a VM on a public cloud and plan to create a VPN tunnel to the cloud provider. The organization's IP network is 172.20.0.0/12, and the provider has assigned an IP address in the 10.10.0.0/8 network. What virtual network function (VNF) will the organization need from the provider to communicate with the VM?
+O A. Virtual switch
+O B. Virtual firewall
+® C. Virtual router
+O D. Another IP scheme at the provider
+When analyzing the frames sent and received over a Gigabit Ethernet connection, a network technician sees many frames that are approximately 9000 bytes in size. What are these frames called?
+Explanation: In computer networking, jumbo frames are Ethernet frames with more than 1500 bytes of payload, the limit set by the IEEE 802.3 standard. Conventionally, jumbo frames can carry up to 9000 bytes of payload, but variations exist and some care must be taken using the term. Many Gigabit Ethernet switches and Gigabit Ethernet network interface cards can support jumbo frames. Some Fast Ethernet switches and Fast Ethernet network interface cards can also support jumbo frames.
+O A. Error frames
+O B. Pico frames
+O C. Runts
+® D. Jumbo frames
+Speed is most important in which layer of a 2-tier architecture? O	A. The access layer
+O	B. The workstation layer
+®	C. The backbone layer
+Which topology does the collapsed core layer switch use in a two-tier design model?
+®	A.	Star topology
+O	B.	Full mesh topology
+O	C.	Partial mesh topology
+O	D.	Hybrid topology
+Refer to the exhibit, what does the line LCP closed mean?
+RouterA#show interface s0/3/0 Serial0/0 is up, line protocol is down Hardware is PowerQuicc serial internet address is 10.0.1.1/24 MTU 1500 bytes. BW 1544 Kbit. DLY 20000 usee, reliability 233/255. txload 1/255, rxload 1/255 encapsulation ppp, loopback not set Keepalive set (10 sec) lcp closed closed: ipcp, cdpcp
+O A. The LCP process has completed.
+O B. The router does not have an IP address configured.
+O C. The serial line is disconnected.
+® D. The LCP process has not completed.
+In HSRR what is the term for routers that are not forwarding traffic for the LAN but are waiting to see if they are needed?
+O	A. Distinct routers
+O	B. Backup routers
+®	C. Standby routers
+O	D. Secondary routers
+When troubleshooting an IPv6 network, an engineer notices that two devices have identical IPv6 addresses. Assuming that the network is correctly configured, why might this occur?
+Explanation: An IPv6 anycast address is an address that is assigned to a set of interfaces that typically belong to different nodes. Anycast addresses are syntactically indistinguishable from unicast addresses, because anycast addresses are allocated from the unicast address space.
+n A. The devices are using broadcasts for routing protocol traffic.
+® B. The devices are using anycast.
+n C. The devices are using matching link-local addresses for the purpose of SLAAC.
+O D. The devices are using unique local addresses.
+What is the name of the database that stores address information in a Cisco switch?	
+®	A. MAC address table
+o	B. Routing table
+o	C. Interface table
+o	D. Buffer table
+Under which configuration mode is the command ip dhcp snooping used to enable DHCP snooping?
+O A. Interface configuration mode O B. Line configuration mode O C. Security configuration mode
+® D. Global configuration mode
+Refer to the exhibit. What is the password that a network administrator must use in order to enter the enable mode?
+		
+	Atlantatconf t Cnter configuration commands, one per line. End with CNTL/Z. Atlanta(config)Vaaa new-model Atlanta(config)taaa authentication login default local Atlanta(config)ffline vty 0 4 Atlanta(config-line)flogin authentication default Atlanta(config-line)lexit Atlanta(config)tusername admin password adminl23 Atlanta(config)tusername admin privilege 15 Atlanta(config)tenable password ciscol23 Atlanta(config)tenable secret testl23 Atlanta(config)tend	
+O A. admin123
+O B. cisco123
+O C. default
+® D. test! 23
+What is the default behavior of a Layer 2 switch when a frame with an unknown destination MAC address is received?
+Explanation: When the switch receives a frame dedicated for a particular destination but that destination does not have an entry in the MAC Address Table, the switch has no choice but to flood the frame. The goal of this flood is that the device using the MAC address in the destination of the frame will receive the flood and respond to the message. If that device responds, then the switch can learn their MAC address and map it to the port into which the message arrives.
+O A. The frame is dropped.
+B. The switch floods packets to all ports except the receiving port in the given VLAN.
+n C. The switch uses DHCP in order to learn the destination MAC address.
+n D. The switch uses ARP in order to learn the destination MAC address.
+Amazon Web Services (AWS) and Microsoft Azure are examples of what?	
+®	A. Public cloud providers
+o	B. Private cloud providers
+o	C. Hybrid cloud providers
+o	D. Dynamic cloud providers
+Which statement is true about the collapsed core design concept? O A. It is best suited for large-scale networks.
+O B. It allows for better bandwidth.
+® C. It is best suited for small enterprises.
+O D. It bottlenecks bandwidth.
+What command outputs the multicast addresses that an interface has joined in IPv6?
+O	A.	show ipv6 interface	brief
+®	B.	show ipv6 interface
+O	C.	show ipv6 interface	multicast
+O	D.	show multicast ipv6
+Refer to the exhibit. What is the next router (or hop) to be used for a packet destined for 172.16.1.23?
+172.16.0.0/16	via	10.10.10.1
+0.0.0.0/0 via	192.	,168.1.1
+172.16.1.0/24	via	10.2C.20.2
+172.16.2.0/24	via	10.30.30.3
+O	A. 10.30.30.3
+O	B. 192.168.1.1
+O C. 10.10.10.1
+® D. 10.20.20.2
+Which type of cable should used to connect a computer to a switch for management of the switch?
+O A. Straight-through cable O B. Crossover cable
+® C. Rolled cable O D. Shielded cable
+What does it mean when the destination address in an Ethernet frame is set FFFF.FFFF.FFFF?
+O A. The frame is a multicast frame.
+O B. The frame is a unicast frame.
+O C. The frame should be dropped.
+® D. The frame is a broadcast frame.
+What command configures a default gateway in a DHCP server pool? O	A.	ip default-gateway
+O	B.	ip default-router
+O	C.	ip domain-server
+What command disables CDP globally on a device?
+® A. no cdp run
+O B. no cdp enable O C. cdp disable
+An email user has clicked a link in an email apparently sent by his company's security team. The webpage that opens appears to be safe but the link could have contained malicious code. Which type of attack is this?
+O	A.	Physical access control
+O	B.	Social engineering attack
+O	C.	Brute force attack
+O D. User awareness
+® E. Phishing
+What language is instrumental for both Puppet and Chef?
+® A. Ruby
+O	B. C#
+O	C. Java
+What is true about banner messages on Cisco routers? (Choose two.)
+n A. You must always use a # symbol to indicate the end of the banner.
+B. Various types of banner messages appear at different times or for different conditions.
+v' C. You can use ASCII art in them.
+What command allows to send log messages to a device at 10.10.10.7? O A. logging 10.10.10.7
+O B. logging trap level 2 10.10.10.7
+® C. logging host 10.10.10.7 O D. logging host send 7 host 10.10.10.7
+Which of the following are mandatory actions that must be performed in order for SSH to operate normally on a Cisco switch? (Choose two.)
+□	A. IP routing must be enabled.
+□	B. Telnet must be disabled.
+□	C. A console password must be configured.
+>/ D. The switch must be running a k9 (crypto) IOS image.
+>/ E. The ip domain-name command must be configured.
+Refer to the exhibit. A network administrator configures four switches for local authentication using passwords that are stored as a cryptographic hash. The four switches must also support SSH access for administrators to manage the network infrastructure. Which switch is configured correctly to meet these requirements?
+SWI(config-line) #line vty 0 15 SWI(config-line) #no login local SWI(config-line) #password cisco
+SW2(config) #username admin 1 password abc123 SW2(config-line) #line vty 0 15 SW2(config-line) #login local
+SW3(config) #username admin 1 secret abc123 SW3(config-line) #line vty 0 15 SW3(config-line) #login local
+SW4(config) #username admin 1 secret abc123 SW4(config-line) #line console 0 SW4(config-line) #login local
+O A. SW1
+O B. SW2
+® C. SW3
+O D. SW4
+If you are running WPA3 in enterprise mode, what is the required version of AES?
+O	A. AES-32
+O	B. AES-64
+O	C. AES-128
+®	D. AES-192
+Which type of address is the public IP address of a NAT device?
+Explanation: Inside global address — A legitimate IP address assigned by the NIC or service provider that represents one or more inside local IP addresses to the outside world.
+O	A. outside global
+O	B. outside local
+®	C. inside global
+o	D. inside local
+o	E. outside public
+o	F. inside public
+How does EIGRP, by default, calculate the metric of a route when adding it to the routing table?
+Explanation: EIGRP uses multiple factors to calculate the metric for a path. Metric calculation uses bandwidth and delay by default but can include interface load and reliability, too.
+®	A. It uses the bandwidth and delay values of the path to calculate the route metric.
+o	B. It sets a default metric of 10 for all routes that are learned by the router.
+o	C. It uses a reference bandwidth and the actual bandwidth of the connected link to calculate the route metric.
+o	D. It counts the number of hops between the receiving and destination routers and uses that value as the metric.
+Which two statements correctly describe the functioning of Weighted Random Early Detection protocol? (Choose two.)
+Explanation: Weighted random early detection (WRED) is a queueing discipline for a network scheduler suited for congestion avoidance. It is an extension to random early detection (RED) where a single queue may have several different sets of queue thresholds. Each threshold set is associated to a particular traffic class.
+□	A. It can identify different flows with a high level of granularity.
+□	B. It supports protocol discovery.
+□	C. It guarantees the delivery of high-priority packets.
+D. It can avoid congestion by preventing the queue from filling up.
+E. packets with the lower-priority are dropped before those with the higher-priority packets.
+What improvement does SNMP version 3 offer over SNMP v2c?
+O A. Monitoring with no overhead
+®	B. Increased security
+O	C. A reduction in server calls
+O	D. ICMP IP SLA
+Refer to the exhibit. Which statement is true?
+O A. There are one collision domain and one broadcast domain.
+O B. There are two collision domains and one broadcast domain.
+C. There are three collision domains and two broadcast domains.
+n D. There are seven collision domains and two broadcast domains.
+What character is us as separator between keys and values in JSON?
+Explanation: In JSON, data structures take on these forms:
+An object is an unordered set of name/value pairs. An object begins with "{" left brace and ends with"}" right brace. Each name is followed by ”:M colon and the name/value pairs are separated by 7 comma.
+®	A.:
+o	B. =
+o	C.|
+o	D.,
+Which cloud connectivity method allows for seamless transition between public clouds?
+O A. MPLS VPN O B. Internet VPN
+® C. Intercloud exchange O D. Private WAN
+Refer to the exhibit. The network administrator wants VLAN 55 traffic to be untagged between Swl and Sw2, while all other VLANs remain tagged. Which command should be entered to perfom this task?
+O A. switchport access vlan 55 O B. switchport trunk allowed vlan 55 O C. switchport private-vlan association host 55
+® D. switchport trunk native vlan 55
+A 48-port Cisco switch has been configured with seven different VLANs. How many broadcast domains exist on the switch?
+O A. 0
+O B. 1
+®	C. 7
+O	D. 48
+What marking is done at Layer 3?
+® A. Type of service
+O	B. Class of service
+O	C. Experimental bits
+O	D. BECN
+For which reason are access points often referred to as dual band?
+O A. Because they can service LAN and WAN clients
+® B. Because they support multiple frequency bands
+n C. Because they are capable of operating in secure and non-secure modes
+n D. Because they can operate in both lightweight and autonomous modes
+Where does a northbound API exist in an SDN network?
+®	A. Between the controller and the network management applications
+o	B. Between the controller and the network devices being managed
+o	C. Between the controller and the public cloud
+o	D. Between the controller and the access layer
+Which term describes what it is called when more than one wireless access point (WAP) cover the same SSID?
+O A. Broadcast domain O B. Basic service set
+® C. Extended server set O D. Wireless mesh
+Which two statements correctly describe the functioning of HSRP? (Choose two.)
+A.	The two routers designate one router as the active router and the other as the standby router.
+B.	The two routers share the same interface IP address, and default gateway traffic is load-balanced between them.
+n C. The two routers synchronize configurations to provide u consistent packet forwarding.
+D. Each router has a different IP address, both routers act as □ the default gateway on the LAN, and traffic is load-balanced between them.
+E. The two routers share a virtual IP address that is used as the default gateway for devices on the LAN.
+What is the purpose of static NAT?
+o	A. To ensure that the destination IP address remains unchanged during translation
+®	B. To translate a single specific inside address to a single specific outside address
+o	C. To ensure that multiple inside addresses can translate to a single outside address
+o	D. To pull inside addresses for translation from a pool of addresses
+LLQ is a form of what type of tool in QoS?
+®	A.	Congestion management
+O	B.	Policing
+O	C.	Shaping
+What is a service-level agreement (SLA) for network connectivity?
+A. It is an agreement of bandwidth between the ISP and the customer.
+B.	It is a quality of service agreement between the ISP and the customer.
+C.	It is an agreement of uptime between the ISP and the customer.
+What version of STP on a Cisco device implements classic IEEE 802.1 D?
+O A. MST ® B. PVST+ O C. TRILL O D. RPVST+
+What is the administrative distance of Internal EIGRP routes?
+O	A. 5
+O	B. 20
+®	C. 90
+O D. 100
+What are two options for recovering from an errordisabled port due to port security? (Choose two.)
+□	A. Port Security Auto Recovery
+*	B. errdisable recovery
+v'	C. Manual recovery
+□	D. port security disable
+Which commands can be used to verify an IPv6 interface address? (Choose two.)
+✓	A. show ipv6 interface brief
+□	B. show interface ipv6 details
+✓	C. show ipv6 interface
+□	D. show interface ipv6 info
+Which statement identifies the functionality of virtual machines?
+A. Virtualized servers provide the best performance when they O are physically connected to a switch that is isolated from the hypervisor.
+n B The hypervisor can virtualize physical components u including CPU, memory, and storage.
+n C. The hypervisor can only support one virtual machine and one software switch at once.
+n D. The hypervisor communication on Layer 3 does not require any additional resources.
+How does OSPF select a route when It learns multiple paths to a network?
+Explanation: OSPF uses following formula to calculate the cost:
+Cost = Reference bandwidth / Interface bandwidth in bps.
+Reference bandwidth was defined as arbitrary value in OSPF documentation (RFC 2338). Vendors need to use their own reference bandwidth. Cisco uses 100Mbps (108) bandwidth as reference bandwidth.
+A. It selects the route with the lowest metric, calculated by multiplying active K value by 256.
+o	B. It selects the route with the lowest bandwidth, calculated by adding the metric from the source router to the destination, for each existing interface.
+®	C. It selects the route with the lowest cost, calculated by dividing a reference bandwidth of 100 Mbps by the actual bandwidth of the existing interface.
+o	D. It selects the route with the lowest hops count between the source and the destination routers.
+In order to be managed by Cisco Wireless LAN Controllers, access points need to be configured in which mode?
+O	A. Mobility express
+O	B. Bridge
+O	C. Autonomous
+®	D. Lightweight
+Which network type in OSPF features the use of a DR and a BDR? O	A. Point-to-point
+®	B. Broadcast
+O	C. Point-to-multipoint
+O	D. Point-to-multipoint non-broadcast
+	
+A network administrator issues a successful ping to www.company.com. What has been verified?	
+o	A. WINS
+®	B. DNS
+o	C. NTP
+o	D. DHCP
+Refer to the exhibit. What can be concluded about the interface or node?
+SwitchlJfsh int fastEthernet 0/1
+FastEthernete/1 is down, line protocol is down (disabled)
+Hardware is Lance, address is 000a.6cf3.1502 (bia 000a.f36c.1502) [output cut]
+956 packets input, 193351 bytes, 0 no buffer
+Received 956 broadcasts, 0 runts, 0 giants, 0 throttles
+0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+0 watchdog, 0 multicast, 0 pause input
+0 input packets with dribble condition detected
+2357 packets output, 263570 bytes, 0 underruns
+0 output errors, 0 collisions, 10 interface resets
+0 babbles, 457 late collision, 0 deferred
+0 lost carrier, 0 no carrier
+0 output buffer failures, 0 output buffers swapped out
+O A. The interface is shut down.
+O B. The interface is negotiated at half-duplex.
+® C. There is a duplex mismatch on the interface.
+O D. The cabling is shorted on the interface.
+Which is a false statement about firewalls?
+O A. They can protect a network from external attacks.
+0 B. They are commonly deployed to protect a network from u internal attacks.
+O C. They can provide stateful packet inspection.
+O D. They can control application traffic.
+	
+What command allows to confirm the IP address and mask assigned to an interface?	
+o	A. show interfaces terse
+o	B. show addresses
+o	C. show ip interface brief
+®	D. show ip interface

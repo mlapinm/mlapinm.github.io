@@ -13,7 +13,7 @@ var notes = [
     "header": "example",
     "title": "",
     "card-text": [
-      "001",
+      "What interface-level command ensures that an interface will process incoming LLDP frames?",
       "",
       ""
     ],
@@ -23,7 +23,7 @@ var notes = [
     "header": "example",
     "title": "",
     "card-text": [
-      "002",
+      "Refer to the exhibit. A router received five routes from different routing information sources. Which two routes does it install in its routing table?",
       "",
       ""
     ],
