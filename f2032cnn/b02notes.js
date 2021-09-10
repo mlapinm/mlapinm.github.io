@@ -3,7 +3,7 @@ var notes = [
     "header": "example",
     "title": "",
     "card-text": [
-      "000",
+      "Which specification for connectivity is currently used in data centers for lower cost and simplicity?",
       "",
       ""
     ],
@@ -33,10 +33,20 @@ var notes = [
     "header": "example",
     "title": "",
     "card-text": [
-      "001",
+      "What interface-level command ensures that an interface will process incoming LLDP frames?",
       "",
       ""
     ],
     "link": "g01test.html"
+   },
+   {
+    "header": "example",
+    "title": "",
+    "card-text": [
+      "Refer to Exhibit. Which action do the switches take on the trunk link?",
+      "",
+      ""
+    ],
+    "link": "g04test.html"
    }
 ]
