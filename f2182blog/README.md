@@ -1,3 +1,15 @@
+
+
+
+
+
+D:\mailCloud\prjother\089hosts\jnotebook\html\d2062duo
+b2142mus.ipynb
+b2142a.txt
+b2142b.txt
+
+=======================
+
 0501
 I hit the plus sign and zoom in
 0502
