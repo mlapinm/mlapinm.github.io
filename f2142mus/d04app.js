@@ -76,6 +76,8 @@ $(() => {
     audio.addEventListener('pause', function(ev){
         pause = true
         appendText(timeToMinut(current) + ' ' + current)
+        navigator.clipboard.writeText(current)
+
     });
         
 
