@@ -1,497 +1,514 @@
-
-
-
-
-Cisco CCENT/CCNA Interconnecting Cisco Networking Devices Part 1 (ICND1) Training | John Academy
-https://www.youtube.com/watch?v=HQPKVJWNZTI&list=PL-KkY0d-iFkw0SoCl4s1G4Q06G72m6Cv-&index=191
-
-
-
-====================
-
-hi there my name is Ken Mayer and I'm
-going to be your instructor for this
-course over the last thirty plus years I
-have worked in a variety of different
-fields in the world of IT of course that
-does include the routing the switching
-in the security world both for small
-enterprises large enterprises fortune
-100 companies and over the last 15 years
-have had the opportunity as a consultant
-or as a contractor to be able to work
-with most of the larger service
-providers around the world now I'm
-hoping that I'll be able to take all of
-that experience both in the real world
-and in the instructional capability and
-be able to give you the information you
-need to be successful at working with
-Cisco's routers and switches so let's
-first talk about exploring the functions
-of networking that means of course to
-understand the basics about our
-communications when we talk about a
-network what we're talking about is a
-way for different endpoints to be able
-to communicate with each other when I
-talk about an endpoint I'm talking about
-a device like a laptop like a computer
-sitting on your desk that is not going
-to take and receive transmissions and
-then send those transmissions out to a
-different device right it's the
-beginning of a conversation or it's the
-end of a conversation we call that the
-endpoint now that endpoint can be
-anywhere it could be at a home office a
-small office it could be a user whose
-mobile in today's world it could be part
-of what we call BYOD bring your own
-device your smart phones your tablet's
-all are designed as endpoints now what
-we need is to find a way to be able to
-help facilitate that communications from
-one endpoint to another whether it's at
-a branch office a headquarter or main
-office and so that's what we call a
-network a network is a the ability for
-these endpoints to be able to talk to
-each other by the way some of the other
-endpoints that I haven't mentioned are
-obviously things like your servers your
-file servers your print servers your
-email servers we just call them a server
-because they are designed to share
-resources from multiple endpoints or I
-guess we'll all just call workstations
-so what we're going to do is find a way
-to be able to make that
-Communications go back and forth whether
-it's from the use of radio frequencies
-like a wireless network whether it's the
-use of copper cables sending electrons
-or fiber cables sending photons or light
-down that wire we're gonna look at the
-ways in which we can make that
-connection to help facilitate the
-communications to get the message from
-the source to its destination so in
-reality as I said before we're looking
-at the variety of endpoints that we want
-to have communications work with and
-endpoints don't mean again that it's the
-end of the communication it means they
-could start or end the communication but
-that they're not helping facilitate the
-communications between each other in
-other words if my computer wanted to
-have this user send a print document
-they would send it through a network
-device that would look at the address
-that it wants to be communicated and
-width and then help facilitate that
-communication to the device so that if
-the print job could work so that's where
-we're looking at the interconnection
-right here from the switch layer on up
-and we'll break this down a little bit
-to talk about these different layers but
-typically we talk about this as the
-access layer because that the access
-layer what we're doing is we're making
-sure that we are able to access the
-endpoints and then of course the larger
-our network grows the more that we need
-to have the ability to do what we call
-scaling of communications we may start
-using routers now I'll explain all about
-the reason why you would use a router
-over a switch as we get into the
-discussion of broadcast domains and so
-many other things but we often call that
-the distribution layer and we again use
-it to help facilitate the communications
-from one place to another a router can
-help us within a local office a router
-can help us in being able to get out to
-the world of the Internet as well so as
-long as these symbols make sense to you
-and we'll keep showing these as parts of
-our diagrams then I think you'll do OK
-at being able to understand or hopefully
-interpret the information that I'm
-trying to share with you
-again as we're trying to interpret these
-diagrams it's important to remember that
-whenever you see a PC a server or some
-other end point that it's generally
-going to have an Ethernet connection
-remember the straight lines where
-Ethernet cables connecting to us a
-network device most often we're
-connecting to a switch at the local
-level again the switch with the square
-with the arrows moving out and as we're
-looking at these diagrams you're seeing
-the port numbers and the type of ports
-that they are that the devices are
-connecting to for example F a generally
-stands for fast ethernet and when we get
-into the speeds of Ethernet you'll see
-that that's generally speed that we
-always measure in megabits or actually
-in bits per second but generally
-megabits per second and fast ethernet is
-designed to be 100 megabits per second
-so this is port 0 5.07 port 0 11 now we
-have another indicator here for a
-different type of interface which is one
-we would call a gigabit gigabit is again
-a factor of 10 times faster than fast
-ethernet and so gigabit would generally
-be listed as one gigabit per second
-again we're talking about the types of
-interfaces that were connecting to and
-that's what it's showing us in the
-diagram now when we look at moving
-through layer 3 we haven't got to the
-OSI model yet but layer 3 deals with IP
-addresses so far everything over here
-can deal with a layer 2 address that we
-call a MAC address and I promise we're
-going to get in more discussions about
-that but at layer 3 we do need an IP
-address so generally speaking you're
-going to see the network address the
-network address will generally end with
-a 0 but we have to still talk about the
-subnet mask or variable length subnet
-masking soon and then specifically we
-have the host address that dot 1 means
-that it would actually replace that 0
-and that would be the specific address
-of that port that is connecting on the
-switch a dot 2 to replace that 0
-the address on the router and again that
-is a gigabit connection and the ports
-again are designed to just show you
-which port numbers they are basically
-the port number is the last indicator
-the first indicator
-generally is for a multi chassis or
-multi designed chassis having multiple
-switches in one box another and we'll
-talk more about that in other words if I
-had a very large switch I may have
-several of these line cards and each
-line card could have multiple ports and
-so the first number is telling me which
-line cards starting with one going or
-zero going through one two and three and
-that would be that first zero that
-you're seeing here and then on that line
-card which port number we're talking
-about starting with port zero port one
-etc and then some communications that we
-use may use some other medium besides
-Ethernet and so this is an example of a
-serial interface serial is still about
-communicating traffic it's just using a
-different protocol and a different type
-of cable for a variety of different
-reasons to be able to make the
-communications now when we are designing
-a network you really want to make sure
-that you understand how user
-applications can affect your designs for
-example we have a group of things we may
-call a batch application batch
-applications are generally applications
-that might require a lot of bandwidth
-bandwidth or speed is about how much
-information I can send down a cable at
-any one time
-and even though they require a lot of
-bandwidth they don't necessarily worry
-about how long it takes for the data to
-transfer as long as the data does
-transfer in other words I could start
-some of these applications like a file
-transfer FTP the File Transfer Protocol
-or TFTP the trivial File Transfer
-Protocol or maybe it's a database doing
-an inventory update but I'm sending a
-large amount of information and it may
-be okay if some of that transfer is
-interrupted by other traffic coming
-through because it's not important that
-it gets there in a
-continuously same speed type of fashion
-now these generally have no direct human
-interaction we start the programs they
-start sending out their information and
-then they finish and report to us when
-they're done now there may be some
-interactive applications where the time
-it takes to get that information could
-be important
-it could be somebody hitting a webpage
-trying to get information from our
-database about what items we have in
-inventory so in that case we have that
-human to machine interaction somebody
-clicked on that request we're expecting
-to see the results come back and we
-don't want to wait a lot of time to be
-able to do that where we actually worry
-about how long it takes for other people
-waiting for the response and response
-time although important not quite so
-critical that it can't have a couple of
-delays in their real-time applications
-like voice over IP or video streaming we
-do care about because if we're making a
-phone call over our network and we have
-a lot of delay it'll suddenly sound like
-we're on a CB radio instead of actually
-on a phone or if there's a problem with
-the transfer of video and we're starting
-to see delays and skips making the video
-experience very bad or having a problem
-with the video and the voice coming
-together at the right time making your
-video look like a badly dubbed movie
-then that causes a lot of problems that
-is usually a human to human interaction
-doing voice or video phone calls and so
-it's very important that we don't have
-any delays and so all of these are
-considerations you have to come through
+  
+  
+  
+Inkscape Lesson 1 - Interface and Basic Drawing 
+ 
+ 
+ 
+31 
+Cisco CCENT/CCNA Interconnecting Cisco Networking Devices Part 1 (ICND1) Training | John Academy 
+https://www.youtube.com/watch?v=HQPKVJWNZTI&list=PL-KkY0d-iFkw0SoCl4s1G4Q06G72m6Cv-&index=191 
+ 
+192
+Cisco CCNP Implementing Cisco IP Switched Networks (Switch) v2.0 Training | John Academy
+https://www.youtube.com/watch?v=r4MT0OlKDwY&list=PL-KkY0d-iFkw0SoCl4s1G4Q06G72m6Cv-&index=192 
+ 
+ 
+==================== 
+7.725266 
+hi there my name is Ken Mayer and I'm going to be your instructor for this course 
+12.605372
+over the last thirty plus years I have worked in a variety of different fields in the world of IT 
+17.390206
+of course that does include the routing the switching in the security world both for small enterprises large enterprises fortune 100 companies 
+25.254877
+and over the last 15 years have had the opportunity as a consultant 
+29.733738
+or as a contractor to be able to work with most of the larger service providers around the world 
+33.515313
+now I'm hoping that I'll be able to take all of that experience both in the real world 
+and in the instructional capability 
+40.015012
+and be able to give you the information you need to be successful at working with Cisco's routers and switches 
+45.837998
+so let's first talk about exploring the functions of networking 
+51.65428
+that means of course to understand the basics about our communications 
+55.754434
+when we talk about a network what we're talking about is a way for different endpoints to be able to communicate with each other 
+63.009497
+when I talk about an endpoint I'm talking about a device like a laptop like a computer sitting on your desk 
+69.307788
+that is not going to take and receive transmissions and then send those transmissions out to a different device 
+76.242047
+right it's the beginning of a conversation or it's the end of a conversation we call that the endpoint 
+81.739262
+now that endpoint can be anywhere it could be at a home office a 
+small office it could be a user whose 
+mobile in today's world it could be part of what we call BYOD bring your own device your smart phones your tablet's all are designed as endpoints 
+95.918333
+now what we need is to find a way to be able to help facilitate that communications from one endpoint to another 
+103.00822
+whether it's at a branch office a headquarter or main office 
+106.164308
+and so that's what we call a network 
+108.199228
+a network is a the ability for these endpoints to be able to talk to each other 
+113.347489
+by the way some of the other endpoints that I haven't mentioned are obviously things like your servers
+118.355641
+your file servers your print servers your email servers 
+121.503982
+we just call them a server because they are designed to share resources from multiple endpoints 
+127.616411
+or I guess we'll all just call workstations 
+130.556991
+so what we're going to do is find a way to be able to make that Communications go back and forth 
+136.01063
+whether it's from the use of radio frequencies like a wireless network 
+141.156341
+whether it's the use of copper cables sending electrons or fiber cables sending photons or light down that wire 
+148.742168
+we're gonna look at the ways in which we can make that connection to help facilitate the communications to get the message from the source to its destination 
+157.633904
+so in reality as I said before we're looking at the variety of endpoints that we want to have communications work with 
+166.682217
+and endpoints don't mean again that it's the end of the communication it means they could start or end the communication 
+173.363709
+but that they're not helping facilitate the communications between each other 
+177.676544
+in other words if my computer wanted to have this user send a print document 
+182.987189
+they would send it through a network device 
+186.020603
+that would look at the address that it wants to be communicated and width 
+186.020603
+and then help facilitate that communication to the device 
+194.133852
+so that if the print job could work 
+196.039576
+so that's where we're looking at the interconnection right here from the switch layer on up 
+201.874134
+and we'll break this down a little bit to talk about these different layers 
+205.409239
+but typically we talk about this as the access layer because that the access layer what we're doing is we're making sure 
+212.768024
+that we are able to access the endpoints 
+216.71003
+and then of course the larger our network grows the more that we need to have the ability to do what we call scaling of communications 
+224.573266
+we may start using routers 
+226.433002
+now I'll explain all about the reason why you would use a router 
+over a switch 
+231.216297
+as we get into the discussion of broadcast domains and so many other things 
+235.206713
+but we often call that the distribution layer 
+238.2557
+and we again use it to help facilitate the communications from one place to another 
+244.227396
+a router can help us within a local office a router can help us in being able to get out to the world of the Internet as well 
+252.361885
+so as long as these symbols make sense to you 
+255.473728
+and we'll keep showing these as parts of our diagrams 
+258.712506
+then I think you'll do OK 
+at being able to understand or hopefully interpret the information that I'm trying to share with you 
+264.558109
+again as we're trying to interpret these diagrams 
+270.349595
+it's important to remember that whenever you see a PC a server or some other end point 
+274.978909
+that it's generally going to have an Ethernet connection remember the straight lines where Ethernet cables connecting to us a network device 
+284.264008
+most often we're connecting to a switch 
+286.933581
+at the local level again the switch with the square with the arrows moving out 
+291.494788
+and as we're looking at these diagrams you're seeing the port numbers 
+296.547737
+and the type of ports that they are that the devices are connecting to 
+301.735258
+for example F a generally stands for fast ethernet 
+307.346578
+and when we get into the speeds of Ethernet you'll see that that's generally speed that we always measure in megabits or actually in bits per second 
+315.676938
+but generally megabits per second 
+317.434752
+and fast ethernet is designed to be 100 megabits per second 
+322.741183
+so this is port 0 5.07 port 0 11 now we have another indicator here for a different type of interface 
+331.377926
+which is one we would call a gigabit 
+333.492537
+gigabit is again a factor of 10 times faster than fast ethernet 
+338.990579
+and so gigabit would generally be listed as one gigabit per second 
+345.265833
+again we're talking about the types of interfaces that were connecting to and that's what it's showing us in the diagram 
+353.55571
+now when we look at moving through layer 3 
+357.715849
+we haven't got to the OSI model yet but layer 3 deals with IP addresses 
+362.189052
+so far everything over here can deal with a layer 2 address 
+365.552799
+that we call a MAC address 
+367.520275
+and I promise we're going to get in more discussions about that 
+370.240201
+but at layer 3 we do need an IP address so generally speaking you're going to see the network address 
+376.417859
+the 
+network address will generally end with a 0 
+380.769758
+but we have to still talk about the subnet mask 
+383.108169
+or variable length subnet masking soon 
+385.534367
+and then specifically we have the host address 
+388.398971
+that dot 1 means that it would actually replace that 0 
+391.707015
+and that would be the specific address of that port that is connecting on the 
+switch 
+398.145023
+a dot 2 to replace that 0 the address on the router 
+403.59449
+and again that is a gigabit connection 
+405.474872
+and the ports again are designed to just show you which port numbers they are 
+410.515563
+basically the port number is the last indicator 
+413.951043
+the first indicator generally is for a multi chassis or multi designed chassis having multiple switches in one box 
+423.287958
+another and we'll talk more about that in other words if I had a very large switch I may have several of these line cards 
+431.485017
+and each line card could have multiple ports 
+433.268934
+and so the first number is telling me which line cards starting with one going or zero going through one two and three 
+441.226165
+and that would be that first zero that you're seeing here 
+444.195838
+and then on that line card which port number we're talking about starting with port zero port one etc 
+450.615769
+and then some communications that we use may use some other medium besides Ethernet 
+456.923577
+and so this is an example of a serial interface  
+460.714438
+serial is still about communicating traffic 
+it's just using a different protocol 
+and a different type of cable for a variety of different reasons to be able to make the communications 
+471.610359
+now when we are designing a network 
+475.307749
+you really want to make sure that you understand how user applications can affect your designs 
+481.309785
+for 
+example we have a group of things we may call a batch application 
+486.06466
+batch applications are generally applications that might require a lot of bandwidth 
+491.268171
+bandwidth or speed is about how much information I can send down a cable at any one time 
+498.130783
+and even though they require a lot of bandwidth 
+501.223692
+they don't necessarily worry about how long it takes for the data to transfer 
+505.715486
+as long as the data does transfer 
+508.197742
+in other words I could start some of these applications like a file transfer FTP 
+513.700636
+the File Transfer Protocol or TFTP the trivial File Transfer Protocol or maybe it's a database doing an inventory update 
+522.026288
+but I'm sending a large amount of information 
+524.532855
+and it may 
+be okay if some of that transfer is interrupted by other traffic coming through because it's not important 
+532.246116
+that it gets there in a continuously same speed type of fashion 
+538.022096
+now these generally have no direct human interaction 
+540.795535
+we start the programs they start sending out their information and then they finish and report to us when they're done 
+547.584194
+now there may be some interactive applications where the time it takes to get that information could be important
+554.426518 
+it could be somebody hitting a webpage 
+557.508233
+trying to get information from our database about what items we have in inventory 
+561.742873
+so in that case we have that human to machine interaction 
+565.776383
+somebody clicked on that request 
+567.578706
+we're expecting to see the results come back 
+569.550267
+and we don't want to wait a lot of time to be able to do that 
+572.07857
+where we actually worry about how long it takes for other people waiting for the response 
+577.861818
+and response time although important not quite so critical that it can't have a couple of delays in their 
+583.948544
+real-time applications like voice over IP or video streaming 
+588.116254
+we do care about
+589.47992
+because if we're making a phone call over our network 
+592.528746
+and we have a lot of delay it'll suddenly sound like we're on a CB radio 
+596.23208
+instead of actually on a phone 
+598.168472
+or if there's a problem with the transfer of video and we're starting to see delays 
+601.784849
+and skips making the video experience very bad 
+604.710843
+or having a problem with the video and the voice coming together at the right time making your video look like a badly dubbed movie 
+612.226557
+then that causes a lot of problems 
+614.666882
+that 
+is usually a human to human interaction doing voice or video phone calls 
+619.991249
+and so it's very important that we don't have any delays 
+622.624206
+and so all of these are considerations you have to come through 
+626.558926
 when making the design of your network
-so we're going to talk about the
-characteristics of a network the next
-couple of our slides are going to talk
-about the logical and physical topology
-but basically the topology is how do we
-connect one PC to another PC or to a
-printer or something else and that means
-there has to be some sort of a wire some
-sort of a device that can help make what
-we call a forwarding decision because
-there may be more than one destination
-and we need to make sure we get our
-traffic to the right destination so that
-we'll look at that topology information
-in just a little bit this by the way is
-my drawing of a switch I just didn't put
-all the extra arrows I guess I could
-therefore you there we go so one of the
-things we do look at a network is speed
-speed is sometimes called bandwidth it's
-about how much data can I send over this
-physical cable there's also the use of
-cost cost is also important because
-we'll talk about a variety of speeds but
-the faster you want the speed of not
-only the traffic going over the cable
-but the speed in which the device that
-you use a switch or router can help you
-in forwarding traffic can also become
-more expensive
-generally speaking we also look at the
-cost of how many devices can we connect
-with this switch or router security is
-always going to be an issue security is
-about making sure there's not some
-hacker out here that might be a part of
-your network that's trying to make a
-connection and steal communications or
-break into other people's devices or
-even change the way in which your
-traffic moves across your network so we
-are going to talk about some of those
-issues as well security not only for the
-people who are trying to happily use the
-network but also security about the
-device itself that their inter
-connecting through availability is our
-discussion of what we sometimes call the
-mean time between failure so what's the
-odds of a cable breaking what would that
-do to us what if the entire switch or
-router failed how would that affect
-communications do we have a plan for
-having alternate paths scalability is
-when we decide to increase the size of
-our network scalability would be the
-discussion of should I add another
-switch so I can add a few more endpoint
-devices into my network and what would
-that do to the bandwidth utilization or
-the amount of traffic that exists on
-there as well as reliability reliability
-still comes back to kind of like
-availability letting us get a good
-understanding of can we suffer a single
-point of failure in other words if one
-cable went down again would we have as
-good of a network the other part of
-reliability is what happens when I start
-introducing voice-over-ip somebody
-having a telephone which by the way I
-draw my telephones like the old dial
-telephones with a headset on the top and
-how would that affect my communications
-in my network if I don't have either the
-availability or the reliability of being
-able to avoid congestion one of our
-earliest topologies was what we call the
-bus topology each of these little spots
-actually represent an end point
-basically a computer laptop or something
-like that and what a bus topology was
-known for was that if any message was
-sent by a computer it was just a
-physical cable kind of like if you've
-ever plugged a power strip into a wall
-instead of having one electrical outlet
-then you have six electrical outlets
-everybody gets to share that energy
-being sent through and so a bus would
-basically send your message out to
-everyone so everybody got to hear it if
-you go back long enough in time we often
-call that a party line or if you have
-more than one actual landline in your
-house if you actually have phones that
-are landlines not cellular then that was
-generally a bus topology as well
-everybody got to hear your conversations
-so think of it as a bus line then right
-we came in there it was like a bus route
-you hit all of the stops the star
-topology was a way of connecting
-multiple devices and I'm not quite so
-sure I like this little circle being in
-the middle because generally we had it
-like a switch even a hub in the older
-days that were in the center of this but
-all the devices would connect to ports
-in this in this switch and so you coming
-gave you the impression that everything
-radiated out from the central part kind
-of where the star topology came from
-depending on the actual device if it was
-a switch and we'll talk about these
-differences if a communication went in
-that device would only send it out to
-the recipient and not repeat that
-information for everybody that's on
-there a mesh topology is where I am not
-connected to any one central device but
-whether we have basically let's say
-maybe a switch or
-that has more than one connection to be
-able to send traffic so that if any one
-interface goes down then I still have
-another way of being able to send my
-traffic now the Internet is it a great
-example of a mesh topology
-all of the service providers talk to
-each other the service providers have
-their customers you and I and they
-facilitate the ability for you and I to
-talk to customers in their network or to
-send our traffic to another service
-provider so we can talk to their
-customers and so when we look at service
-providers we often think of them as
-little clouds and so again we have all
-of these little clouds talking to each
-other now I'm not going to try to
-promote any one service provider but you
-know who you use for your own internet
-at home they are a service provider and
-the idea of the mesh is that we make
-sure there's not just one way to get
-from where we are to where we want to go
-it gives us a little bit of fault
-tolerance
-so those are the three primary there is
-another one that often is talked about
-it's called a hybrid a hybrid is
-sometimes a combination of connecting
-maybe a bus to a star so you have both
-types of topologies set up for you one
-of the most important parts about
-topologies is what I just talked about
-was a physical topology how the actual
-cables were laid out a logical topology
-talks about the paths the signals used
-to travel from one point of a network to
-another and so I want to kind of talk a
-little bit about that and go back in a
-bit of time for example a switch is
-designed to be a star topology
-physically and logically but before we
-use switches we used a device called a
-hub and for many of you who are new to
-this industry a hub and a switch might
-look very similar to you in that it's a
-a single box with multiple ports and our
-goal was to connect our pcs to each of
-these ports now physically this hub
-would look like a star write it all
-radiates out from a center device but
-actually inside the way in which they
-were electrically connected was a
-so that if any transmission went into
-the switch or hub excuse me let me put
-hub here just so I keep remembering it
-would exit every single port in that
-device so logically it operated like a
-bus physically it looked like a star so
-what we are interested in is both the
-physical layout physical topology and
-the logical how the paths are used for
-the signals that are being sent in and
-how they are forwarded and how they
-travel basically from one point of the
-network to another well the goal of this
-lesson was to talk about how a network
-is basically a connection of different
-devices that are designed to communicate
-with each other what we called endpoints
-there were four major categories of the
-physical components in a computer
-network those were the endpoints that I
-called the computers the way in which
-they were interconnected with the
-physical cables the switches and the
-routers now of course we can get into
-detail about any of the ways in which
-switches and routers work specifically
-but we're just looking at the diagrams
-we talked about the icons that are going
-to be used to represent these different
-components of the network and we also
-talked about some of the types of
-applications we want to be able to plan
-for whether they are a batch
-applications interactive or real-time
-like voice over IP or video we looked at
-the way in which we describe networks
-both physically and logically as far as
-the way in which they are designed
-that's what we call the topology now
-within that of course we also needed to
-talk about some of the other ideas
-between speed cost security availability
-scalability and reliability now remember
-a physical topology is the way in which
-the wiring is laid out a logical
-topology was about the paths that the
-traffic took
-[Music]
-
+628.084853 
+so we're going to talk about the characteristics of a network 
+632.477485
+the next couple of our slides are going to talk about the logical and physical topology 
+637.502841
+but basically the topology is how do we connect one PC to another PC 
+644.183992
+or to a printer or something else 
+646.707137
+and that means there has to be some sort of a wire 
+649.449351
+some sort of a device that can help make what we call a forwarding decision 
+653.41888
+because there may be more than one destination 
+656.146506
+and we need to make sure we get our traffic to the right destination 
+659.452757
+so that we'll look at that topology information in just a little bit 
+662.851705
+this by the way is my drawing of a switch 
+665.79307
+I just didn't put all the extra arrows I guess I could therefore you 
+668.795623
+there we go 
+669.494333
+so one of the things we do look at a network is speed
+672.495455 
+speed is sometimes called bandwidth 
+675.70529
+it's about how much data can I send over this physical cable 
+680.175899
+there's also the use of cost cost is also important because we'll talk about a variety of speeds 
+686.999988
+but the faster you want the speed of not only the traffic going over the cable 
+691.433297
+but the speed in which the device that you use a switch or router can help you in forwarding traffic can also become more expensive generally speaking 
+702.41592
+we also look at the cost of how many devices can we connect with this switch or router 
+708.064626
+security is always going to be an issue security is about making sure there's not some hacker out here 
+714.694059
+that might be a part of your network 
+717.066923
+that's trying to make a connection and steal communications or break into other people's devices 
+723.390306
+or even change the way in which your traffic moves across your network 
+727.480297
+so we are going to talk about some of those issues as well 
+730.173697
+security not only for the people who are trying to happily use the network 
+734.643332
+but also security about the device itself that their inter connecting through 
+739.436847
+availability is our discussion of what we sometimes call the mean time between failure so 
+748.900101
+what's the odds of a cable breaking what would that do to us 
+752.680337
+what if the entire switch or router failed how would that affect communications 
+757.123138
+do we have a plan for having alternate paths 
+760.228779
+scalability is when we decide to increase the size of our network 
+763.998492
+scalability would be the discussion of should I add another switch 
+768.901292
+so I can add a few more endpoint devices into my network 
+774.303423
+and what would that do to the bandwidth utilization or the amount of traffic that exists on there 
+781.722613
+as well as reliability reliability still comes back to kind of like availability 
+787.908415
+letting us get a good understanding of can we suffer a single point of failure in other words if one cable went down again would we have as good of a network 
+799.57874
+the other part of reliability is what happens when I start introducing voice-over-ip 
+804.321852
+somebody having a telephone which by the way I draw my telephones like the old dial telephones with a headset on the top 
+810.252954
+and how would that affect my communications in my network if I don't have either the availability or the reliability of being able to avoid congestion 
+822.252208
+one of our 
+earliest topologies was what we call the bus topology 
+827.761553
+each of these little spots actually represent an end point basically a computer laptop or something like that 
+834.27675
+and what a bus topology was known for was that if any message was sent by a computer 
+839.391019
+it was just a physical cable 
+841.846667
+kind of like if you've ever plugged a power strip into a wall 
+846.070984
+instead of having one electrical outlet then you have six electrical outlets everybody gets to share 
+851.026525
+that energy being sent through and so a bus would basically send your message out to everyone so everybody got to hear it 
+859.827579
+if 
+you go back long enough in time we often call that a party line 
+864.060522
+or if you have more than one actual landline in your house if you actually have phones that are landlines not cellular 
+870.658008
+then that was generally a bus topology as well everybody got to hear your conversations 
+875.391362
+so think of it as a bus line then right we came in there it was like a bus route you hit all of the stops 
+882.392307
+the star topology was a way of connecting multiple devices 
+888.007457
+and I'm not quite so sure I like this little circle being in the middle 
+890.942829
+because generally we had it like a switch even a hub in the older days 
+895.58287
+that were in the center of this 
+897.328566
+but all the devices would connect to ports in this in this switch 
+901.583852
+and so you coming gave you the impression that everything radiated out from the central part kind of where the star topology came from 
+910.988746
+depending on the actual device if it was a switch and we'll talk about these differences 
+917.349217
+if a communication went in that device would only send it out to the recipient 
+922.132072
+and not repeat that information for everybody that's on there 
+925.570769
+a mesh topology is where I am not connected to any one central device 
+931.853862
+but whether we have basically let's say maybe a switch or a router
+936.442518
+that has more than one connection to be able to send traffic so that if any one interface goes down then I still have another way of being able to send my traffic 
+946.208038
+now the Internet is it a great example of a mesh topology 
+949.815344
+all of the service providers talk to each other 
+953.309702
+the service providers have their customers you and I and they facilitate the ability for you and I to talk to customers in their network 
+960.935449
+or to send our traffic to another service provider 
+963.213824
+so we can talk to their customers 
+966.36563
+and so when we look at service providers we often think of them as little clouds 
+970.582635
+and so again we have all of these little clouds talking to each other 
+976.507476
+now I'm not going to try to promote any one service provider 
+979.135329
+but you know who you use for your own internet at home they are a service provider 
+983.232285
+and the idea of the mesh is that we make sure there's not just one way to get from where we are to where we want to go 
+989.209641
+it gives us a little bit of fault tolerance 
+991.572541
+so those are the three primary there is another one that often is talked about it's called a hybrid 
+997.341128
+a hybrid is sometimes a combination of connecting maybe a bus to a star 
+1004.972642
+so you have both types of topologies set up for you 
+1007.805013
+one 
+of the most important parts about topologies is what I just talked about was a physical topology 
+1015.794269
+how the actual cables were laid out 
+1017.906087
+a logical topology talks about the paths the signals used to travel from one point of a network to another 
+1025.165518
+and so I want to kind of talk a little bit about that 
+1028.486904
+and go back in a bit of time 
+1030.047624
+for example a switch is designed to be a star topology physically and logically 
+1036.232576
+but before we use switches we used a device called a hub 
+1039.462762
+and for many of you who are new to this industry a hub and a switch might look very similar to you 
+1046.425296
+in that it's a a single box with multiple ports 
+1050.080617
+and our goal was to connect our pcs to each of these ports 
+1055.142846
+now physically this hub would look like a star 
+1060.087529
+write it all radiates out from a center device 
+1062.903342
+but 
+actually inside the way in which they were electrically connected was a hub
+1070.193972
+so that if any transmission went into the switch or hub excuse me 
+1075.043343
+let me put hub here just so I keep remembering 
+1077.407814
+it would exit every single port in that device 
+1080.837154
+so logically it operated like a bus 
+1084.402001
+physically it looked like a star 
+1087.322797
+so what we are interested in is both the physical layout physical topology and the logical 
+1094.012808
+how the paths are used for the signals that are being sent in 
+1099.467416
+and how they are forwarded and how they travel basically from one point of the network to another 
+1104.805983
+well the goal of this lesson was to talk about how a network is basically a connection of different devices 
+1112.948856
+that are designed to communicate with each other what we called endpoints 
+1116.658499
+there were four major categories of the physical components in a computer network 
+1121.839669
+those were the endpoints that I called the computers the way in which they were interconnected with the physical cables the switches and the routers 
+1129.520674
+now of course we can get into detail about any of the ways in which switches and routers work specifically 
+1135.393763
+but we're just looking at the diagrams 
+1137.352866
+we talked about the icons that are going to be used to represent these different components of the network 
+1141.230314
+and we also talked about some of the types of applications 
+1144.379439
+we want to be able to plan for whether 
+1146.664665
+they are a batch applications interactive or real-time like voice over IP or video 
+1153.054314
+we looked at the way in which we describe networks both physically and logically 
+1157.919157
+as far as the way in which they are designed 
+1160.666963
+that's what we call the topology 
+1162.508323
+now within that of course 
+we also needed to talk about some of the other ideas between speed cost security availability scalability and reliability 
+1171.431511
+now remember a physical topology is the way in which the wiring is laid out 
+1176.725883
+a logical topology was about the paths that the traffic took 
+[Music] 
+1184.742261 
