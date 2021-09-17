@@ -23,11 +23,11 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "Cisco CCENT/CCNA Interconnecting Cisco Networking Devices Part 1 (ICND1) Training",
       "",
       ""
     ],
-    "link": "d01pl.html"
+    "link": "d11pl.html"
    },
   {
     "header": "",

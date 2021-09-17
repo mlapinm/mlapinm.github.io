@@ -1,0 +1,829 @@
+ 
+192
+Cisco CCNP Implementing Cisco IP Switched Networks (Switch) v2.0 Training | John Academy
+https://www.youtube.com/watch?v=r4MT0OlKDwY&list=PL-KkY0d-iFkw0SoCl4s1G4Q06G72m6Cv-&index=192 
+ 
+ 
+==================== 
+
+ 
+ 
+ 
+ 
+[Music] 
+7.940219  
+hello there my name is Ken Mayer I'm 
+going to be your instructor for this 
+course  
+12.018005 
+I want to talk a little bit about 
+my history and experience with a lot of 
+different routing and switching 
+companies  
+16.418201 
+has really kind of been over 
+two decades  
+19.57855 
+plus you know before this 
+whole world of Cisco came along I was 
+doing some other things in the high tech 
+industry  
+26.295136 
+but I've had the opportunity to 
+watch and grow with companies like Cisco 
+30.11834 
+other companies competitors that I won't 
+mention here as well  
+32.808515 
+which has caused me 
+to be able to have this skill that I 
+need to be able to work with  
+37.684968 
+either an 
+enterprise whether it's small medium or 
+large  
+41.752311 
+and also in the last row probably 
+10 years I've had the opportunity to 
+work with a lot of Internet service 
+providers  
+48.050208 
+cellular phone providers and 
+to be able to fortunately travel around 
+the world  
+52.471159 
+to be able to facilitate not 
+only training  
+54.696583 
+but also while in the 
+world of consulting  
+57.558944 
+so when it comes to 
+Cisco of course I work with routing and 
+switching  
+61.50723 
+I do work with security  
+62.628452 
+voice 
+over IP service provider routing as well 
+67.002591 
+and probably some other things that I 
+can't even remember  
+70.20633 
+and I do many of 
+those things with other organizations 
+73.058512 
+now one of the things that's really 
+great is that a lot of the different 
+types of protocols  
+78.163192 
+that we're going to 
+talk about are a lot of open standards 
+which means that once you understand 
+those quite thoroughly  
+85.320695 
+you can work with 
+almost any provider  
+88.081162 
+it's just a matter 
+of learning the command line  
+89.837204 
+so let's 
+hope that I can do both of that for you 
+during this course is that you'll be 
+familiar comfortable with the command 
+lines  
+95.758688 
+and they'll you have a good 
+understanding of the protocols  
+98.608362 
+and the 
+processes so you understand what it is 
+that you're looking for  
+102.501595 
+and that's kind 
+of my goals to make sure that you are 
+going to be better at not only working 
+with Cisco's equipment  
+109.120127 
+but again having 
+a better understanding of why we 
+implement some of the different types of 
+configurations that we do  
+115.834165 
+now in this 
+module we're going to talk about network 
+design 
+119.811045
+and what we're gonna do is we're 
+going to kind of look at the theory some 
+hierarchical models 
+123.700087
+some ideas that help 
+you not just you know put a bunch of 
+switches into the closet 
+wire everything together and call it 
+good 
+130.844139
+we want to talk about the reasons 
+why we make different choices 
+133.564705
+and how those choices can help you in 
+improving network communications to be 
+able to help you with the scalability or 
+future growth 
+141.752924
+and we're going to take a 
+look at some of the operations that 
+switches go through in how they can 
+forward packets or frames based on 
+whether or not we're going to be using 
+IP addresses to make decisions 
+152.774984
+or where 
+they're going to be using MAC addresses 
+154.719921 
+so yes our conversation is going to be 
+centric to Ethernet networks 
+158.937006
+we're not 
+going to talk about any other type of 
+layer 2 encapsulation model 
+163.042664
+so that's 
+our focus and that's what we're going to 
+discuss and show you 
+166.385208
+give you some 
+demonstrations about some of the command 
+lines 
+169.985114
+that we use to be able to if 
+anything just verify that switching is 
+working the way we intended it to 
+174.796973
+so 
+we're going to introduce and discuss 
+this whole thing called the cisco 
+hierarchical model 
+181.974835
+it's a model that's 
+been around for a while although over 
+time it has you know changed a bit to 
+address other issues some of which like 
+security but I'll talk about that 
+191.636217
+but 
+when we look at the hierarchical model 
+194.160895
+what we're gonna do is we're gonna 
+discuss the problems that we have with 
+what we call a flat network 
+198.850694
+now a flat 
+network just simply means that all of 
+your endpoints the printers your 
+wireless access points your laptops your 
+B y ou D to bring your own devices 
+computers desktop servers 
+212.395025
+they're all on 
+the same subnet basically 
+215.427039
+what we would 
+normally call the same broadcast domain 
+218.009411
+and the problem that we have is that you 
+mean you can certainly add more to it 
+222.555947
+but as you add more and more devices 
+into this flat network that you'll see 
+226.498307
+that you really don't have the 
+scalability you want 
+229.573298
+because of this 
+thing called a broadcast storm 
+231.292226
+and I'll 
+try to diagram that make sure we all 
+understand that 
+234.617182
+and then that's where 
+we're going to move to the Cisco 
+hierarchical network 
+237.471068
+well we'll talk about things like the 
+access layer the distribution layer and 
+the core layer 
+243.363127
+so you have a good 
+understanding about the benefits that we 
+have even if you don't think future 
+growth is in the future 
+250.411525
+but does that 
+sound us um what we've done it anyway 
+let's hope that it is for your company 
+for your organization we always want to 
+be able to think about growth 
+257.843342
+but we 
+also want to think about application 
+support 
+260.487761
+if you decide one day to start 
+to converge your traffic 
+264.322092
+and move from 
+just data to voice over IP 
+or maybe the video 
+268.426486
+you know we're gonna 
+see some big problems when it comes to a 
+flat network 
+272.27465
+and we're gonna see how we 
+can address those with the Cisco 
+hierarchical network 
+276.872286
+so I'm gonna build 
+a flat network first 
+280.622418
+and whenever you 
+see me put these little squares in 
+because I'm not going to take the time 
+to put the little arrows in between each 
+one 
+286.367668
+that's going to be representing a 
+switch 
+288.865211
+in this case a layer two switch by 
+layer two I mean it's going to make all 
+of its forwarding decisions based on an 
+Ethernet MAC address 
+297.917324
+the thing we call 
+that burnin address and let me make some 
+connections between these make sure we 
+have some redundancy so we can cause 
+loops without spanning tree and you can 
+imagine with all of these switches 
+whether you want to think that I'm 
+drawing multiple floors or you know just 
+where they are in the rack whatever the 
+case here is is that each one of these I 
+mean at the low end right we have 
+switches that are going to be 24 ports 
+maybe 48 ports and again I'm talking 
+about the low end of the product line 
+and if you think about all these 
+endpoints that are connected to it they 
+are at least not sharing the bandwidth 
+these aren't hubs so they all get their 
+own you know gigabit ethernet speed 
+maybe it's 10 gigs between the switches 
+you know we're trying to accommodate for 
+aggregation but once any one of these 
+computers connected here sends a 
+broadcast that broadcast by rule is 
+going to be flooded to every switch in 
+the network which means all these up 
+links that you have are going to be 
+basically used up on their bandwidth 
+from each of the broadcast traffic that 
+is sent and and you start multiplying 
+that number of broadcasts being flooded 
+amongst all of the different computers 
+and all of the different computers or 
+endpoints that are going to start or 
+initiate these broadcasts what we end up 
+with here is having what we call a 
+broadcast storm now a broadcast storm 
+just simply means that once a broadcast 
+is sent everybody within this area is 
+going to be hearing that broadcast 
+whether it was meant for them or not and 
+so not only is it using these what we 
+would call trunk links between the 
+switches but it's also going to be 
+eating up connectivity and 
+mutations for all the other end points 
+now technically it's not just broadcast 
+traffic that is going to be sent all 
+over the place we have to flood what's 
+called bum traffic where the B stands 
+for broadcast traffic the one I just 
+mentioned but there's another type of 
+traffic that switches half to flood it's 
+called the unknown unicast that's when 
+the destination MAC address doesn't 
+exist in the switches kam table so it 
+has to send a flood out to try to help 
+find that destination machine and then 
+of course there's multicast so that's 
+the B um I just like calling it bum 
+traffic it sounds fun all right 
+so maybe in your network design and this 
+by the way it would be the example of a 
+flat network design because we're all in 
+the same broadcast domain so when we 
+look at this you might say well right 
+now it's controllable maybe the you know 
+you've decided through your own network 
+analysis that this bum traffic isn't 
+causing you that much of a problem but 
+then I have to ask the question what 
+happens if you need to expand your 
+network that you need to expand and add 
+more ports for the computers the 
+endpoints to connect in to what's going 
+to happen when we add that other switch 
+how much more broadcast traffic are we 
+going to require in other words it's 
+very difficult to grow your network when 
+you have a flat network so then comes 
+the hierarchical design and in the 
+hierarchical design I had mentioned 
+three layers I'm going to talk about 
+each one a little bit more detail as we 
+go but one of the ideas was and this is 
+how we originally looked at things is 
+that you know when we had this flood or 
+this broadcast storm coming in one of 
+the implementations we started using was 
+some sort of layer 3 device so if I 
+could replace this thing at the top well 
+let's say a router a router would create 
+different broadcast domains in other 
+words routers were not allowed to 
+propagate a broadcast from one segment 
+to another everything going through the 
+router with the exception of multicast 
+of course had to be a unicast address so 
+that we could control that propagation 
+but then we would have to redesign these 
+connections that we have you know 
+take away this little connection here 
+you know so that we're not circumventing 
+the router by any means we also used 
+VLANs to help control broadcast traffic 
+but if you think about it 
+VLAN where I might choose let me again 
+or get rid of some of these other little 
+lines let's connect these two when we 
+had VLANs it was pretty much the same as 
+having a router what I mean by that is 
+that we might have created a smaller 
+broadcast domain and maybe it was 
+another VLAN here for another broadcast 
+domain but we still had to have a layer 
+3 device to be able to get from one VLAN 
+to the other in other words it was no 
+longer flat once you started 
+implementing those types of solutions 
+and and those solutions are very 
+important because it also facilitated 
+the eventual growth of your network so 
+when we start looking than at the 
+hierarchical model and like I said I'll 
+talk a little bit more about this we're 
+going to talk about having what we call 
+the access layer and at the access layer 
+depending on how you put it together not 
+all the switches are connected to each 
+other in the access layer but the access 
+layer gets its name because that is the 
+first point of access for most endpoint 
+devices so that means that in this 
+access layer that I'll put down here 
+that I can have my printers my laptops 
+my smart phones or other smart devices 
+all making their first point of entry 
+into this network let's see how good my 
+vizio of a printer is there and and so 
+if the traffic was local all things were 
+good they could talk to each other off 
+those local switches that they are all 
+connected to but the idea was whether I 
+use VLANs or not was to limit that 
+broadcast traffic I didn't want the 
+broadcast traffic to still the flood and 
+so often what we would do is we would 
+move and we often call these a 
+distribution switch some people might 
+call them a multi-layer switch 
+multi-layer right that means that they 
+can make forwarding decisions that layer 
+to MAC addresses and they can make 
+decisions on forwarding at layer 3 with 
+IP addresses 
+creating what we call an ether channel 
+which is later on in our course between 
+those and so we would send our traffic 
+up here instead of trying to connect him 
+down at the bottom whether we use VLANs 
+or not that you know as another design 
+issue but the idea here now is that to 
+get from let's say one part of the 
+access layer to another part of the 
+access layer we would go through the 
+distribution layer and then be able to 
+avoid having those large broadcast 
+domains and it would be easier to start 
+adding new switches for the access layer 
+because all I would have to do by adding 
+a new switch is just make sure that it 
+can get to the distribution layer when 
+we still use VLANs absolutely 
+VLANs not only created broadcast domains 
+but they also helped us with a lot of 
+security types of problems now in some 
+cases in our distribution layer 
+especially if we had long distances or 
+different buildings in our campus and we 
+might not connect these distribution 
+layers together we would also have this 
+other layer called the core layer the 
+core layer would have of course a higher 
+performing multi-layer switch it could 
+use a router but I'll give you that 
+example here in just a second but the 
+idea now is that the core layer was 
+designed to move traffic at a very high 
+speed why would I use another 
+multi-layer switch a more powerful one 
+than a router it just kind of depends 
+because outside of the core layer if I 
+have to leave to go into the let's say 
+the world of the internet then and in 
+doing so I'm going through a service 
+provider if I'm not leaving through what 
+we call Metro Ethernet and maybe taking 
+some other ran type of technology a 
+router does good at translating from 
+Ethernet to that other layer to 
+encapsulation to get you out to the 
+world wide web and so that's where I 
+might generally see a router because 
+we're actually translating from Ethernet 
+to some other type of interface or 
+communications so those are the three 
+layers of the hierarchical design and as 
+I said I'll talk about each one a little 
+more detail as we go into 
+all of those but I hope what you're 
+seeing here is the ability for your 
+network to grow and to be able to what 
+we call scaling out Without Really 
+flooding the whole world with that bum 
+traffic we want to be able to control it 
+give us better service and you know 
+there's just so many other really cool 
+things we can do here it's very 
+important for us but that is what they 
+call a hierarchical design all right so 
+let's talk about each of those in a 
+little bit more detail so let's look at 
+that access layer that access layer as I 
+said we're generally talking about 
+switches but that's not the only way 
+into the access layer to have a switch 
+you might also have a wireless access 
+point those by the way our antennas on 
+the side and that access point generally 
+is going to a switch in the access layer 
+all right so let's talk about that 
+access layer as I said it's the entry 
+point of any endpoint device by endpoint 
+what I mean is that the traffic going to 
+that device is not going to be relayed 
+I'm a switch that's a transit type of 
+device traffic coming in we're expecting 
+it to be forwarded to some other 
+location eventually to get to another 
+endpoint so that's what I mean by the 
+endpoints so we could again like I said 
+we could have computers hooked up we'll 
+get our printers hooked up you know in 
+today's day and age we might have 
+telephones right the voice over IP 
+phones hooked into our access layer 
+let's let's put a wireless person over 
+here right making that connection 
+to the access point so what we see at 
+this access layer and remember that's 
+going off eventually into the 
+distribution layer what we see here is 
+that we might have a convergence of 
+different types of traffic as I just got 
+through saying I get a voice over IP 
+voice traffic regular data traffic maybe 
+some sort of video if that hopefully 
+looks like a camera on a tripod it could 
+be a video voice over IP phone but it's 
+a variety of different types of traffic 
+so that's where we start seeing the 
+convergence now from the time that Cisco 
+first started talking about this 
+hierarchical model they didn't mention 
+this as another option which is 
+introducing security at this layer it 
+used to be it was just the distribution 
+layer 
+where we talked about security but as we 
+know in today's world we need to have 
+security you know at every layer we can 
+we talk about when hackers are trying to 
+break into the network and remember I'm 
+talking about the OSI model when I talk 
+about layers so at layer 2 that was the 
+data link layer and that is a type of 
+encapsulation a way of encoding your 
+data into the way it's going to be 
+transmitted as a bunch of ones and zeros 
+and then above that was the IP at layer 
+3 called the network layer and yes I 
+know if you're in a this switch course 
+you're more than familiar with all of 
+these layers but the reason I'm taking 
+the time to talk about it here is that 
+in the earlier days we didn't really see 
+security introduced at this layer and 
+the idea was is that a hacker could 
+break in and take your network over at 
+layer 2 that means they generally owned 
+all of the layers that were above it and 
+so you know when it comes to security 
+this becomes a new place to introduce 
+that security so I got to be careful I 
+don't turn this into a security class 
+anyway one of the very common types of 
+security that we're seeing now is this 
+port based authentication 802 dot 1x now 
+remember this is an I Triple E 
+specification and everything that starts 
+with 802 dot 1 is really the category 
+for switching I don't want you to 
+confuse this with 802 11 which is all 
+about this wireless access point here 
+but we can use a tor 2.1 x there as well 
+anyway port based security just meant 
+that if somebody walked into your office 
+and decided to plug their laptop into 
+your network that and hoping that your 
+dhcp server would give them the IP 
+address and Gateway information that 
+they could start moving through your 
+network and 802 double NX basically says 
+no you have to authenticate you have to 
+be able to provide me with a username 
+password combination you or the machine 
+that you plugged in either one of them 
+has to be able to authenticate and prove 
+that you have the access privileges to 
+get there and in some cases we can even 
+now create secure 
+with what we call the VLAN access 
+control list and that's pretty cool 
+because we can control traffic per VLAN 
+if we wanted to and later on you're 
+gonna hear us talk about private VLANs 
+which can add another layer of security 
+but so that's kind of like I said new 
+within well I say new because I've been 
+working with Cisco pretty much since the 
+company was founded in some way or 
+another and that was never a discussion 
+that we would had before and also be at 
+the access layer obviously we support 
+multicast I mean if you think about it 
+if I'm gonna send out a video stream 
+that video stream is starting at the 
+access layer and with multicast very 
+important that we don't treat it like a 
+broadcast you know there's only a few 
+computers that are in the access layer 
+that want the multicast stream it'd be 
+nice if our switches can also help make 
+sure that that's the case so that's what 
+multicast is all about so coming from 
+the access layer that I just described 
+is all of this traffic from multiple 
+switches and as I said we probably would 
+be using what we call a multi-layer 
+switch okay so a multi-layer switch by 
+its design is actually much faster than 
+a lot of your routers and remember I 
+said the purpose I might choose routers 
+for is to do some layer 2 translation 
+going from Ethernet to whatever else you 
+might be using in the old days 
+technology like hdl-c PPP oh hopefully 
+never frame relay again but anyway it 
+acts as a traffic aggregation we do kind 
+of hope that at the access layer we can 
+keep as much traffic local as we can but 
+you see there was this old you know in 
+the old days we had what were they 
+called the 80/20 rule at the access 
+layer that 80% of the traffic stayed 
+local and 20% had to be routed or 
+forwarded to some of the location but 
+with today's cloud services private or 
+public cloud with the advent of server 
+farms with going to the internet that's 
+changed now most everything is the 20/80 
+rule 
+which is 20% of your traffic stays local 
+80% is going out maybe even more so 
+that's why we say the first thing that 
+they have there is traffic aggregation 
+because what we have is a lot of streams 
+of data coming in to a central point you 
+know maybe we have other distribution 
+components which would be great so they 
+can connect to other access layers and 
+that's where we'll eventually get to the 
+core layer and so our decisions here are 
+usually what we called routing the 
+reason I called it forwarding is when we 
+get into kind of the model and how it's 
+all put together you get kind of a 
+better picture of why I like the idea of 
+layer 3 forwarding routings is simply 
+meant looking at the IP address assuming 
+that you're using an IP network and then 
+making a routing decision about the 
+outbound interface but all this traffic 
+is coming in being aggregated from all 
+these other parts of your access layer 
+so here in the distribution layer I'm 
+just going to type D is T so I don't 
+have to spell the whole word is where we 
+aggregate it we make the routing 
+decisions and the idea is is that you 
+know our traffic can come in one 
+interface from one part of the access 
+layer after we look at the IP address 
+then it can go out to whatever the 
+destination part of that traffic is 
+what's local and that part of the access 
+layer another part of our design is 
+redundancy because if I did connect it 
+the way you see here we could have a 
+problem with one of those multi-layer 
+switches going down and from now on I'm 
+going to try to call it a distribution 
+switch instead of a multi-layer switch 
+so what we might see then is in our 
+design at the access layer is having 
+perhaps redundant connections as you see 
+here so I always have a different method 
+or way to get out or as we move on to 
+some other topics later in our course 
+we'll talk about some of these things I 
+call the first hop redundancy protocol 
+which is another set of protocols when 
+we get to that try to get rid of that 
+single point of failure in any event 
+what we're trying to do here is have the 
+redundancy in the design so that as I 
+said we don't lose you know big chunks 
+of our 
+network but where I told you what was 
+new with the access layer where we 
+started at adding in the some idea of 
+security this is where security we used 
+to tell people was the first place that 
+security was introduced in fact it was 
+about the only place that we try to 
+introduce security and that's because at 
+layer 3 we could create an access 
+control list and to be able to utilize 
+that access control list as a packet 
+filter firewall for that matter we might 
+have even had firewalls in there that 
+were stateful and did a little bit more 
+for us but it was still a way of 
+controlling the traffic to make sure 
+maybe the traffic from our end users 
+might not have access to the part of 
+maybe human resources networks and so we 
+could control that through the 
+distribution layer of course I also told 
+you we're adding phones and by the way 
+if you don't recognize this symbol there 
+was a day that phones had this little 
+handset you picked up and a little dial 
+so you could dial the numbers and that's 
+about the best phone I know how to draw 
+so that's what those little things are 
+the little curve is the handset but one 
+of the things we have a problem with is 
+I said hey we do traffic aggregation 
+that means there might be a competition 
+for the services of the distribution 
+layer to forward packets because it's 
+dealing with a lot of packets and so we 
+also introduced QoS quality of service 
+so we could give preference to traffic 
+whose really if it had latency latency 
+meaning it takes a while for the packets 
+to move it could really damage that 
+service in a phone call we just hate 
+having things sound like they're 
+breaking up we don't like to miss 
+packets or drop packets we don't want to 
+make it sound like somebody's talking 
+through a blender so we also introduced 
+QoS and there as well and of course we 
+could also filter other types of 
+services you know from a lot of the 
+needs of you know somebody else trying 
+to do a service that probably isn't part 
+of what we asked for so and that 
+filtering I'd probably put more with the 
+firewalls there at the distribution 
+layer but that's what we're looking at 
+then of course depending on your design 
+as I said if what I just drew let's say 
+was building a on your 
+campus and I need to get to building B 
+then I would probably go through as I 
+said the core layer and the core layer 
+as you're about to see is I got a 
+different designation a different type 
+of of what it's trying to accomplish for 
+us so at the core layer and I know 
+you're probably getting tired of seeing 
+me write access overly spell it right 
+distribution and as I just got through 
+saying I might need to get from building 
+a over here to building B I mean this is 
+one example this could all be in the 
+same building it's just I'm trying to 
+conceptually give you an idea of what's 
+happening here and so what happens is 
+we'll send our traffic from one part of 
+our network or campus building into the 
+core and we'll still going to be using a 
+multi-layer switch we'll call it a 
+course switch and here all we're really 
+worried about is high speed when I say 
+high speed that generally means that 
+were not involved in enforcing security 
+policies at the core layer if you think 
+about it when you start adding your 
+devices to inspect every packet to make 
+sure it's approved you're going to be 
+slowing down that throughput of traffic 
+security services does that and it 
+should do that because it's you know 
+very a lot more complex it's not just 
+looking at a routing table and saying oh 
+that's where it goes there's more to it 
+takes a little more processing power so 
+we want the core to be high-speed and if 
+you think about it you had to pass a 
+security check at the distribution layer 
+to even be able to get your traffic up 
+to the core layer and so it's built for 
+high speed but again it could be an 
+aggregation port for all of that traffic 
+coming from the distribution or the 
+different distribution layers and we 
+also should have redundancy just like we 
+did at the distribution layer to avoid a 
+single point of failure now there's a 
+lot of different things we can do to cut 
+do what's called fast convergence fast 
+convergence that simply means if one of 
+my connections goes down and I still 
+want to be able to afford my traffic I 
+have to find the next best route to get 
+there 
+and and depending on some of the things 
+we'll talk about when we get into the 
+routing protocols we'll see what we can 
+do to do that fast convergence that 
+means I don't want to wait 40 seconds 
+which might happen with some routing 
+protocols for you to find the next best 
+route because 40 seconds is gonna end a 
+phone call it's going to break sessions 
+it's just not good I want to get this if 
+I could I'd love to get my convergence 
+to less than one second if that's at all 
+possible so at worst I might miss a 
+packet or two 
+and of course by adding a core layer I 
+can move on to maybe a building see and 
+have even that future growth 
+availability so the core layer is all 
+about speed and that's kind of our goal 
+in this hierarchical model 
+[Music] 
+
+
