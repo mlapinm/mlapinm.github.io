@@ -47,7 +47,7 @@ var notes = [
       "",
       ""
     ],
-    "link": "j001.html"
+    "link": "j001pl.html"
    },
   {
     "header": "CCNA",
