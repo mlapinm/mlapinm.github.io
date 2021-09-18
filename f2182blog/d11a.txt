@@ -12,7 +12,8 @@ https://www.youtube.com/watch?v=HQPKVJWNZTI&list=PL-KkY0d-iFkw0SoCl4s1G4Q06G72m6
 192
 Cisco CCNP Implementing Cisco IP Switched Networks (Switch) v2.0 Training | John Academy
 https://www.youtube.com/watch?v=r4MT0OlKDwY&list=PL-KkY0d-iFkw0SoCl4s1G4Q06G72m6Cv-&index=192 
- 
+
+<a href='https://www.youtube.com/watch?v=r4MT0OlKDwY&list=PL-KkY0d-iFkw0SoCl4s1G4Q06G72m6Cv-&index=192'>Cisco CCNP Implementing Cisco IP Switched Networks (Switch) v2.0 Training | John Academy</a> 
  
 https://www.youtube.com/watch?v=xp0wrzc565I&list=PLZ8U4onHDwUOJ_GARJJ8B-Wf9kpogBKlW
 Cisco CCNA: Interconnecting Cisco Networking Devices Part 1 Training
