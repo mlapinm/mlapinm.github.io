@@ -7,9 +7,6 @@ https://www.youtube.com/watch?v=r4MT0OlKDwY&list=PL-KkY0d-iFkw0SoCl4s1G4Q06G72m6
 ==================== 
 
  
- 
- 
- 
 [Music] 
 7.940219  
 hello there my name is Ken Mayer I'm 
@@ -268,562 +265,1179 @@ the thing we call
 that burnin address and let me make some 
 connections between these make sure we 
 have some redundancy so we can cause 
-loops without spanning tree and you can 
+loops without spanning tree 
+306.456019
+and you can 
 imagine with all of these switches 
+310.039081
 whether you want to think that I'm 
-drawing multiple floors or you know just 
-where they are in the rack whatever the 
-case here is is that each one of these I 
+drawing multiple floors 
+312.467808
+or you know just 
+where they are in the rack whatever 
+315.817947
+the 
+case here is is 
+that each one of these 
+318.703426
+I 
 mean at the low end right we have 
 switches that are going to be 24 ports 
-maybe 48 ports and again I'm talking 
+maybe 48 ports 
+324.464315
+and again I'm talking 
 about the low end of the product line 
+326.891627
 and if you think about all these 
-endpoints that are connected to it they 
+endpoints that are connected to 
+330.304247
+it they 
 are at least not sharing the bandwidth 
-these aren't hubs so they all get their 
+these aren't hubs 
+334.434427
+so they all get their 
 own you know gigabit ethernet speed 
+338.736601
 maybe it's 10 gigs between the switches 
 you know we're trying to accommodate for 
-aggregation but once any one of these 
+aggregation 
+344.454294
+but once any one of these 
 computers connected here sends a 
-broadcast that broadcast by rule is 
+broadcast 
+348.605183
+that broadcast by rule is 
 going to be flooded to every switch in 
-the network which means all these up 
+the network 
+354.872273
+which means all these up 
 links that you have are going to be 
 basically used up on their bandwidth 
 from each of the broadcast traffic that 
-is sent and and you start multiplying 
+is sent 
+365.159302
+and and you start multiplying 
 that number of broadcasts being flooded 
 amongst all of the different computers 
 and all of the different computers or 
 endpoints that are going to start or 
-initiate these broadcasts what we end up 
+initiate these broadcasts 
+376.685143
+what we end up 
 with here is having what we call a 
-broadcast storm now a broadcast storm 
+broadcast storm 
+380.323388
+now a broadcast storm 
 just simply means that once a broadcast 
 is sent everybody within this area is 
 going to be hearing that broadcast 
-whether it was meant for them or not and 
+388.437257
+whether it was meant for them or not 
+390.549739
+and 
 so not only is it using these what we 
 would call trunk links between the 
-switches but it's also going to be 
+switches 
+396.117725
+but it's also going to be 
 eating up connectivity and 
 mutations for all the other end points 
+402.971153
 now technically it's not just broadcast 
-traffic that is going to be sent all 
-over the place we have to flood what's 
-called bum traffic where the B stands 
+traffic 
+406.982065
+that is going to be sent all 
+over the place 
+409.316275
+we have to flood what's 
+called bum traffic 
+411.936459
+where the B stands 
 for broadcast traffic the one I just 
-mentioned but there's another type of 
-traffic that switches half to flood it's 
-called the unknown unicast that's when 
+mentioned 
+416.33104
+but there's another type of 
+traffic that switches half to flood 
+419.51063
+it's 
+called the unknown unicast
+421.32457 
+that's when 
 the destination MAC address doesn't 
-exist in the switches kam table so it 
+exist in the switches kam table 
+427.950574
+so it 
 has to send a flood out to try to help 
-find that destination machine and then 
-of course there's multicast so that's 
+find that destination machine 
+432.774751
+and then 
+of course there's multicast 
+435.05802
+so that's 
 the B um I just like calling it bum 
-traffic it sounds fun all right 
+traffic it sounds fun 
+438.695769
+all right 
 so maybe in your network design and this 
-by the way it would be the example of a 
-flat network design because we're all in 
-the same broadcast domain so when we 
-look at this you might say well right 
-now it's controllable maybe the you know 
+by the way 
+442.778375
+it would be the example of a 
+flat network design 
+446.201741
+because we're all in 
+the same broadcast domain 
+449.111501
+so when we 
+look at this 
+450.687116
+you might say well right 
+now it's controllable 
+452.820564
+maybe the you know 
 you've decided through your own network 
 analysis that this bum traffic isn't 
-causing you that much of a problem but 
-then I have to ask the question what 
+causing you that much of a problem 
+460.508899
+but 
+then I have to ask the question 
+462.309874
+what 
 happens if you need to expand your 
-network that you need to expand and add 
+network 
+465.809366
+that you need to expand and add 
 more ports for the computers the 
-endpoints to connect in to what's going 
+endpoints to connect in to 
+471.453983
+what's going 
 to happen when we add that other switch 
+474.746531
 how much more broadcast traffic are we 
-going to require in other words it's 
+going to require 
+477.282403
+in other words it's 
 very difficult to grow your network when 
-you have a flat network so then comes 
-the hierarchical design and in the 
+you have a flat network 
+483.242152
+so then comes 
+the hierarchical design 
+486.404892
+and in the 
 hierarchical design I had mentioned 
-three layers I'm going to talk about 
+three layers 
+489.769852
+I'm going to talk about 
 each one a little bit more detail as we 
-go but one of the ideas was and this is 
+go 
+492.233068
+but one of the ideas was 
+493.980983
+and this is 
 how we originally looked at things is 
+496.268244
 that you know when we had this flood or 
-this broadcast storm coming in one of 
+this broadcast storm 
+501.003597
+coming in one of 
 the implementations we started using was 
-some sort of layer 3 device so if I 
-could replace this thing at the top well 
-let's say a router a router would create 
-different broadcast domains in other 
+some sort of layer 3 device 
+508.474662
+so if I 
+could replace this thing at the top 
+510.527983
+well 
+let's say a router 
+511.650935
+a router would create 
+different broadcast domains 
+515.291144
+in other 
 words routers were not allowed to 
 propagate a broadcast from one segment 
-to another everything going through the 
+to another 
+520.894746
+everything going through the 
 router with the exception of multicast 
-of course had to be a unicast address so 
+of course had to be a unicast address 
+527.94682
+so 
 that we could control that propagation 
-but then we would have to redesign these 
-connections that we have you know 
+but then we would have 
+to redesign these 
+connections that we have 
+533.700863
+you know 
 take away this little connection here 
+537.273343
 you know so that we're not circumventing 
-the router by any means we also used 
+the router by any means 
+540.498324
+we also used 
 VLANs to help control broadcast traffic 
+545.104252
 but if you think about it 
+546.55462
 VLAN where I might choose let me again 
 or get rid of some of these other little 
-lines let's connect these two when we 
-had VLANs it was pretty much the same as 
+lines 
+550.86971
+let's connect these too 
+552.788939
+when we 
+had VLANs 
+554.333152
+it was pretty much the same 
+555.608189
+as 
 having a router what I mean by that is 
 that we might have created a smaller 
-broadcast domain and maybe it was 
+broadcast domain 
+561.054021
+and maybe it was 
 another VLAN here for another broadcast 
-domain but we still had to have a layer 
+domain 
+565.416248
+but we still had to have a layer 
 3 device to be able to get from one VLAN 
-to the other in other words it was no 
-longer flat once you started 
+to the other 
+570.279522
+in other words 
+it was no 
+longer flat 
+572.270917
+once you started 
 implementing those types of solutions 
+574.923946
 and and those solutions are very 
 important because it also facilitated 
-the eventual growth of your network so 
+the eventual growth of your network 
+582.497981
+so 
 when we start looking than at the 
-hierarchical model and like I said I'll 
-talk a little bit more about this we're 
+hierarchical model 
+587.210785
+and like I said I'll 
+talk a little bit more about this 
+589.669446
+we're 
 going to talk about having what we call 
-the access layer and at the access layer 
+the access layer 
+594.354239
+and at the access layer 
 depending on how you put it together not 
 all the switches are connected to each 
-other in the access layer but the access 
-layer gets its name because that is the 
+other in the access layer 
+601.836507
+but the access 
+layer gets its name 
+604.34482 
+because 
+that is the 
 first point of access for most endpoint 
-devices so that means that in this 
+devices 
+609.7681
+so that means that in this 
 access layer that I'll put down here 
+613.525016
 that I can have my printers my laptops 
 my smart phones or other smart devices 
+622.08744
 all making their first point of entry 
-into this network let's see how good my 
-vizio of a printer is there and and so 
-if the traffic was local all things were 
-good they could talk to each other off 
-those local switches that they are all 
-connected to but the idea was whether I 
+into this network 
+626.550366
+let's see how good my 
+vizio of a printer is there 
+629.49299
+and and so 
+if the traffic was local 
+632.599793
+all things were 
+good 
+634.979833
+they could talk to each other off 
+those local switches 
+638.351432
+that they are all 
+connected to 
+639.724383
+but the idea was whether I 
 use VLANs or not was to limit that 
-broadcast traffic I didn't want the 
-broadcast traffic to still the flood and 
+broadcast traffic 
+646.158493
+I didn't want the 
+broadcast traffic to still the flood 
+649.474499
+and 
 so often what we would do is we would 
-move and we often call these a 
-distribution switch some people might 
+move 
+651.184553
+and we often call these a 
+distribution switch 
+654.452239
+some people might 
 call them a multi-layer switch 
+657.742654
 multi-layer right that means that they 
 can make forwarding decisions that layer 
-to MAC addresses and they can make 
+two MAC addresses 
+662.670422
+and they can make 
 decisions on forwarding at layer 3 with 
 IP addresses 
+667.730359
 creating what we call an ether channel 
+670.158156
 which is later on in our course between 
-those and so we would send our traffic 
+those 
+673.489562
+and so we would send our traffic 
 up here instead of trying to connect him 
-down at the bottom whether we use VLANs 
+down at the bottom 
+679.588723
+whether we use VLANs 
 or not that you know as another design 
-issue but the idea here now is that to 
+issue 
+683.810064
+but the idea here now is that to 
 get from let's say one part of the 
 access layer to another part of the 
-access layer we would go through the 
-distribution layer and then be able to 
+access layer 
+691.443305
+we would go through the 
+distribution layer 
+693.992924
+and then be able to 
 avoid having those large broadcast 
-domains and it would be easier to start 
+domains 
+700.816679
+and it would be easier to start 
 adding new switches for the access layer 
+704.875807
 because all I would have to do by adding 
 a new switch is just make sure that it 
-can get to the distribution layer when 
-we still use VLANs absolutely 
+can get to the distribution layer 
+710.83574
+when 
+we still use VLANs 
+712.549869
+absolutely 
 VLANs not only created broadcast domains 
+716.088994
 but they also helped us with a lot of 
-security types of problems now in some 
+security types of problems 
+721.022543
+now in some 
 cases in our distribution layer 
+725.386613
 especially if we had long distances or 
-different buildings in our campus and we 
+different buildings in our campus 
+730.307741
+and we 
 might not connect these distribution 
-layers together we would also have this 
-other layer called the core layer the 
+layers together 
+733.351991
+we would also have this 
+other layer called the core layer 
+736.693516
+the 
 core layer would have of course a higher 
-performing multi-layer switch it could 
+performing multi-layer switch 
+741.696647
+it could 
 use a router but I'll give you that 
-example here in just a second but the 
+example here in just a second 
+746.022147
+but the 
 idea now is that the core layer was 
 designed to move traffic at a very high 
-speed why would I use another 
+speed 
+751.701464
+why would I use another 
 multi-layer switch a more powerful one 
-than a router it just kind of depends 
-because outside of the core layer if I 
+than a router 
+757.474739
+it just kind of depends 
+because outside of the core layer 
+760.641009
+if I 
 have to leave to go into the let's say 
-the world of the internet then and in 
+the world of the internet 
+764.55874
+then and in 
 doing so I'm going through a service 
-provider if I'm not leaving through what 
-we call Metro Ethernet and maybe taking 
-some other ran type of technology a 
+provider 
+770.338848
+if I'm not leaving through what 
+we call Metro Ethernet 
+773.964729
+and maybe taking 
+some other ran type of technology 
+777.325722
+a 
 router does good at translating from 
 Ethernet to that other layer to 
-encapsulation to get you out to the 
-world wide web and so that's where I 
-might generally see a router because 
+encapsulation 
+782.289911
+to get you out to the 
+world wide web 
+783.857794
+and so that's where I 
+might generally see a router 
+785.944792
+because 
 we're actually translating from Ethernet 
 to some other type of interface or 
-communications so those are the three 
-layers of the hierarchical design and as 
+communications 
+792.821837
+so those are the three 
+layers of the hierarchical design 
+797.574889
+and as 
 I said I'll talk about each one a little 
 more detail as we go into 
-all of those but I hope what you're 
+all of those 
+803.486266
+but I hope what you're 
 seeing here is the ability for your 
-network to grow and to be able to what 
+network to grow 
+807.094846
+and to be able to what 
 we call scaling out Without Really 
 flooding the whole world with that bum 
-traffic we want to be able to control it 
-give us better service and you know 
+traffic 
+813.852883
+we want to be able to control it 
+give us better service 
+817.864976
+and you know 
 there's just so many other really cool 
 things we can do here it's very 
-important for us but that is what they 
-call a hierarchical design all right so 
+important for us 
+822.57585
+but that is what they 
+call a hierarchical design 
+824.814483
+all right so 
 let's talk about each of those in a 
-little bit more detail so let's look at 
-that access layer that access layer as I 
-said we're generally talking about 
-switches but that's not the only way 
+little bit more detail 
+828.959045
+so let's look at 
+that access layer 
+828.959045
+that access layer as I 
+said 
+834.420777
+we're generally talking about 
+switches 
+836.660952
+but that's not the only way 
 into the access layer to have a switch 
+840.242631
 you might also have a wireless access 
-point those by the way our antennas on 
-the side and that access point generally 
+point 
+844.33023
+those by the way our antennas on 
+the side 
+845.780931
+and that access point generally 
 is going to a switch in the access layer 
+851.195864
 all right so let's talk about that 
+852.632884
 access layer as I said it's the entry 
-point of any endpoint device by endpoint 
+point of any endpoint device 
+857.193449
+by endpoint 
 what I mean is that the traffic going to 
 that device is not going to be relayed 
+862.882769
 I'm a switch that's a transit type of 
-device traffic coming in we're expecting 
+device 
+866.190618
+traffic coming in we're expecting 
 it to be forwarded to some other 
-location eventually to get to another 
-endpoint so that's what I mean by the 
-endpoints so we could again like I said 
+location 
+870.060716
+eventually to get to another 
+endpoint 
+872.501439
+so that's what I mean by the 
+endpoints 
+874.117344
+so we could again like I said 
 we could have computers hooked up we'll 
 get our printers hooked up you know in 
 today's day and age we might have 
 telephones right the voice over IP 
 phones hooked into our access layer 
+886.383462
 let's let's put a wireless person over 
-here right making that connection 
-to the access point so what we see at 
-this access layer and remember that's 
+here right 
+888.560866
+making that connection 
+to the access point 
+890.732971
+so what we see at 
+this access layer 
+894.598479
+and remember that's 
 going off eventually into the 
-distribution layer what we see here is 
+distribution layer 
+898.145209
+what we see here is 
 that we might have a convergence of 
-different types of traffic as I just got 
-through saying I get a voice over IP 
-voice traffic regular data traffic maybe 
-some sort of video if that hopefully 
-looks like a camera on a tripod it could 
-be a video voice over IP phone but it's 
+different types of traffic 
+902.984478
+as I just got 
+through saying 
+904.156275
+I get a voice over IP 
+voice traffic 
+906.051129
+regular data traffic maybe 
+some sort of video 
+910.742977
+if that hopefully 
+looks like a camera on a tripod 
+913.543808
+it could 
+be a video voice over IP phone 
+915.625002
+but it's 
 a variety of different types of traffic 
+918.279546
 so that's where we start seeing the 
-convergence now from the time that Cisco 
+convergence 
+920.721827
+now from the time that Cisco 
 first started talking about this 
-hierarchical model they didn't mention 
+hierarchical model 
+926.964069
+they didn't mention 
 this as another option which is 
-introducing security at this layer it 
+introducing security at this layer 
+933.322644
+it 
 used to be it was just the distribution 
 layer 
-where we talked about security but as we 
+935.669605
+where we talked about security 
+937.774311
+but as we 
 know in today's world we need to have 
-security you know at every layer we can 
+security 
+941.09434
+you know at every layer we can 
+943.462304
 we talk about when hackers are trying to 
-break into the network and remember I'm 
-talking about the OSI model when I talk 
-about layers so at layer 2 that was the 
-data link layer and that is a type of 
-encapsulation a way of encoding your 
+break into the network 
+947.600647
+and remember I'm 
+talking about the OSI model 
+949.651785
+when I talk 
+about layers 
+951.592022
+so at layer 2 that was the 
+data link layer 
+954.836907
+and that is a type of 
+encapsulation 
+958.877498
+a way of encoding your 
 data into the way it's going to be 
 transmitted as a bunch of ones and zeros 
+964.484958
 and then above that was the IP at layer 
-3 called the network layer and yes I 
+3 called the network layer 
+969.206472
+and yes I 
 know if you're in a this switch course 
+973.179371
 you're more than familiar with all of 
-these layers but the reason I'm taking 
-the time to talk about it here is that 
-in the earlier days we didn't really see 
-security introduced at this layer and 
+these layers 
+976.441023
+but the reason I'm taking 
+the time to talk about it here 
+979.193922
+is that 
+in the earlier days 
+981.48083
+we didn't really see 
+security introduced at this layer 
+984.37209
+and 
 the idea was is that a hacker could 
 break in and take your network over at 
-layer 2 that means they generally owned 
-all of the layers that were above it and 
+layer 2 
+989.370773
+that means they generally owned 
+all of the layers that were above it 
+993.105741
+and 
 so you know when it comes to security 
 this becomes a new place to introduce 
-that security so I got to be careful I 
+that security 
+999.270451
+so I got to be careful I 
 don't turn this into a security class 
+1002.399032
 anyway one of the very common types of 
-security that we're seeing now is this 
-port based authentication 802 dot 1x now 
+security that we're seeing now 
+1006.891523
+is this 
+port based authentication 802 dot 1x 
+1010.311533
+now 
 remember this is an I Triple E 
-specification and everything that starts 
+specification 
+1013.921686
+and everything that starts 
 with 802 dot 1 is really the category 
-for switching I don't want you to 
-confuse this with 802 11 which is all 
+for switching 
+1020.953324
+I don't want you to 
+confuse this with 802 11 
+1023.834768
+which is all 
 about this wireless access point here 
-but we can use a tor 2.1 x there as well 
+1027.144796
+but we can use a tor 2.1 x there 
+1030.383882
+as well 
 anyway port based security just meant 
 that if somebody walked into your office 
+1037.782293
 and decided to plug their laptop into 
-your network that and hoping that your 
-dhcp server would give them the IP 
-address and Gateway information that 
+your network 
+1040.617613
+that and hoping that your 
+dhcp server 
+1042.786135
+would give them the IP 
+address and Gateway information 
+1046.672315
+that 
 they could start moving through your 
-network and 802 double NX basically says 
-no you have to authenticate you have to 
+network 
+1048.806407
+and 802 double NX basically says 
+no 
+1052.045122
+you have to authenticate 
+1053.048351
+you have to 
 be able to provide me with a username 
 password combination you or the machine 
 that you plugged in either one of them 
-has to be able to authenticate and prove 
+1060.252681
+has to be able to authenticate 
+1062.051251
+and prove 
 that you have the access privileges to 
-get there and in some cases we can even 
+get there 
+1065.994466
+and in some cases we can even 
 now create secure 
 with what we call the VLAN access 
-control list and that's pretty cool 
+control list 
+1073.038528
+and that's pretty cool 
 because we can control traffic per VLAN 
-if we wanted to and later on you're 
+if we wanted to 
+1078.346811
+and later on you're 
 gonna hear us talk about private VLANs 
 which can add another layer of security 
+1084.585516
 but so that's kind of like I said new 
-within well I say new because I've been 
+within 
+1087.679814
+well I say new because I've been 
 working with Cisco pretty much since the 
 company was founded in some way or 
-another and that was never a discussion 
-that we would had before and also be at 
+another 
+1094.005142
+and that was never a discussion 
+that we would had before 
+1097.498447
+and also be at 
 the access layer obviously we support 
-multicast I mean if you think about it 
+multicast 
+1102.680959
+I mean if you think about it 
 if I'm gonna send out a video stream 
+1105.235408
 that video stream is starting at the 
-access layer and with multicast very 
+access layer 
+1109.133824
+and with multicast very 
 important that we don't treat it like a 
-broadcast you know there's only a few 
+broadcast 
+1113.991712
+you know there's only a few 
 computers that are in the access layer 
-that want the multicast stream it'd be 
+1117.978937
+that want the multicast stream 
+1119.564807
+it'd be 
 nice if our switches can also help make 
-sure that that's the case so that's what 
-multicast is all about so coming from 
-the access layer that I just described 
+sure that that's the case 
+1123.414331
+so that's what 
+multicast is all about 
+1126.28501
+so coming from 
+the access layer 
+1130.340532
+that I just described 
 is all of this traffic from multiple 
-switches and as I said we probably would 
+switches 
+1135.754604
+and as I said we probably would 
 be using what we call a multi-layer 
-switch okay so a multi-layer switch by 
+switch 
+1142.008289
+okay so a multi-layer switch by 
 its design is actually much faster than 
-a lot of your routers and remember I 
+a lot of your routers 
+1148.054865
+and remember I 
 said the purpose I might choose routers 
 for is to do some layer 2 translation 
 going from Ethernet to whatever else you 
 might be using in the old days 
-technology like hdl-c PPP oh hopefully 
-never frame relay again but anyway it 
-acts as a traffic aggregation we do kind 
-of hope that at the access layer we can 
-keep as much traffic local as we can but 
+technology like hdl-c PPP 
+1162.200718
+oh hopefully 
+never frame relay again 
+1164.730383
+but anyway it 
+acts as a traffic aggregation 
+1168.633823
+we do kind 
+of hope that at the access layer 
+1171.057607
+we can 
+keep as much traffic local 
+1173.550777
+as we can but 
 you see there was this old you know in 
-the old days we had what were they 
+the old days 
+1178.925371
+we had what were they 
 called the 80/20 rule at the access 
-layer that 80% of the traffic stayed 
-local and 20% had to be routed or 
-forwarded to some of the location but 
+layer 
+1182.12557
+that 80% of the traffic stayed 
+local 
+1184.852495
+and 20% had to be routed or 
+forwarded to some of the location 
+1189.985081
+but 
 with today's cloud services private or 
 public cloud with the advent of server 
-farms with going to the internet that's 
+farms with going to the internet 
+1199.58771
+that's 
 changed now most everything is the 20/80 
 rule 
 which is 20% of your traffic stays local 
-80% is going out maybe even more so 
+80% is going out maybe even more 
+1209.236013
+so 
 that's why we say the first thing that 
-they have there is traffic aggregation 
+they have 
+1211.347593
+there is traffic aggregation 
 because what we have is a lot of streams 
-of data coming in to a central point you 
+of data coming in to a central point 
+1218.034345
+you 
 know maybe we have other distribution 
-components which would be great so they 
-can connect to other access layers and 
+components 
+1221.501168
+which would be great so they 
+can connect to other access layers 
+1225.060424
+and 
 that's where we'll eventually get to the 
-core layer and so our decisions here are 
-usually what we called routing the 
+core layer 
+1227.767232
+and so our decisions here are 
+usually what we called routing 
+1233.351413
+the 
 reason I called it forwarding is when we 
-get into kind of the model and how it's 
-all put together you get kind of a 
+get into kind of the model 
+1237.443383
+and how it's 
+all put together 
+1238.725376
+you get kind of a 
 better picture of why I like the idea of 
-layer 3 forwarding routings is simply 
-meant looking at the IP address assuming 
-that you're using an IP network and then 
+layer 3 forwarding 
+1243.015355
+routings is simply 
+meant looking at the IP address 
+1246.239791
+assuming 
+that you're using an IP network 
+1248.981506
+and then 
 making a routing decision about the 
-outbound interface but all this traffic 
+outbound interface 
+1252.786188
+but all this traffic 
 is coming in being aggregated from all 
 these other parts of your access layer 
+1258.839618
 so here in the distribution layer I'm 
 just going to type D is T so I don't 
-have to spell the whole word is where we 
+have to spell the whole word 
+1264.756774
+is where we 
 aggregate it we make the routing 
-decisions and the idea is is that you 
-know our traffic can come in one 
+decisions 
+1269.014171
+and the idea is is that you 
+know our traffic can come in 
+1272.434349
+one 
 interface from one part of the access 
-layer after we look at the IP address 
+layer 
+1275.585204
+after we look at the IP address 
+1277.687667
 then it can go out to whatever the 
 destination part of that traffic is 
 what's local and that part of the access 
-layer another part of our design is 
-redundancy because if I did connect it 
-the way you see here we could have a 
+layer 
+1284.729831
+another part of our design is 
+redundancy 
+1288.167922
+because if I did connect it 
+the way you see here 
+1290.290835
+we could have a 
 problem with one of those multi-layer 
-switches going down and from now on I'm 
+switches going down 
+1297.175696
+and from now on I'm 
 going to try to call it a distribution 
-switch instead of a multi-layer switch 
+switch 
+1299.920897
+instead of a multi-layer switch 
+1301.983704
 so what we might see then is in our 
-design at the access layer is having 
-perhaps redundant connections as you see 
-here so I always have a different method 
-or way to get out or as we move on to 
+design at the access layer 
+1306.623425
+is having 
+perhaps redundant connections 
+1309.659437
+as you see 
+here 
+1310.553132
+so I always have a different method 
+or way to get out 
+1314.276862
+or as we move on to 
 some other topics later in our course 
 we'll talk about some of these things I 
 call the first hop redundancy protocol 
+1321.919585
 which is another set of protocols when 
 we get to that try to get rid of that 
-single point of failure in any event 
+single point of failure 
+1328.020876
+in any event 
 what we're trying to do here is have the 
-redundancy in the design so that as I 
-said we don't lose you know big chunks 
+redundancy in the design 
+1333.218692
+so that as I 
+said we don't lose 
+1335.386153
+you know big chunks 
 of our 
-network but where I told you what was 
+network 
+1337.556792
+but where I told you what was 
 new with the access layer where we 
 started at adding in the some idea of 
-security this is where security we used 
+security 
+1344.70554
+this is where security we used 
 to tell people was the first place that 
-security was introduced in fact it was 
+security was introduced 
+1349.738713
+in fact it was 
 about the only place that we try to 
-introduce security and that's because at 
+introduce security 
+1352.195829
+and that's because at 
 layer 3 we could create an access 
-control list and to be able to utilize 
+control list 
+1356.058609
+and to be able to utilize 
 that access control list as a packet 
-filter firewall for that matter we might 
+filter firewall 
+1360.709347
+for that matter we might 
 have even had firewalls in there that 
 were stateful and did a little bit more 
-for us but it was still a way of 
-controlling the traffic to make sure 
+for us 
+1367.678939
+but it was still a way of 
+controlling the traffic 
+1370.330618
+to make sure 
 maybe the traffic from our end users 
 might not have access to the part of 
-maybe human resources networks and so we 
+maybe human resources networks 
+1380.514761
+and so we 
 could control that through the 
-distribution layer of course I also told 
-you we're adding phones and by the way 
-if you don't recognize this symbol there 
+distribution layer 
+1383.765999
+of course I also told 
+you we're adding phones 
+1386.312881
+and by the way 
+if you don't recognize this symbol 
+1389.207984
+there 
 was a day that phones had this little 
-handset you picked up and a little dial 
-so you could dial the numbers and that's 
+handset you picked up 
+1392.402127
+and a little dial 
+so you could dial the numbers 
+1395.195571
+and that's 
 about the best phone I know how to draw 
+1397.445371
 so that's what those little things are 
-the little curve is the handset but one 
+the little curve is the handset 
+1400.876142
+but one 
 of the things we have a problem with is 
-I said hey we do traffic aggregation 
+I said hey 
+1403.418549
+we do traffic aggregation 
+1406.236914
 that means there might be a competition 
 for the services of the distribution 
-layer to forward packets because it's 
-dealing with a lot of packets and so we 
+layer to forward packets 
+1411.491634
+because it's 
+dealing with a lot of packets 
+1414.145124
+and so we 
 also introduced QoS quality of service 
+1418.157235
 so we could give preference to traffic 
-whose really if it had latency latency 
+whose really if it had latency 
+1423.642588
+latency 
 meaning it takes a while for the packets 
 to move it could really damage that 
-service in a phone call we just hate 
+service in a phone call 
+1429.187138
+we just hate 
 having things sound like they're 
-breaking up we don't like to miss 
-packets or drop packets we don't want to 
+breaking up 
+1432.311337
+we don't like to miss 
+packets or drop packets 
+1435.008774
+we don't want to 
 make it sound like somebody's talking 
-through a blender so we also introduced 
-QoS and there as well and of course we 
+through a blender 
+1439.176614
+so we also introduced 
+QoS and there as well 
+1443.501691
+and of course we 
 could also filter other types of 
-services you know from a lot of the 
+services 
+1447.101326
+you know from a lot of the 
 needs of you know somebody else trying 
 to do a service that probably isn't part 
-of what we asked for so and that 
+of what we asked for 
+1455.930187
+so and that 
 filtering I'd probably put more with the 
-firewalls there at the distribution 
-layer but that's what we're looking at 
+firewalls 
+1460.209234
+there at the distribution 
+layer 
+1462.898121
+but that's what we're looking at 
 then of course depending on your design 
+1465.703467
 as I said if what I just drew let's say 
 was building a on your 
-campus and I need to get to building B 
+campus 
+1471.715648
+and I need to get to building B 
+1474.077155
 then I would probably go through as I 
-said the core layer and the core layer 
+said the core layer 
+1477.359916
+and the core layer 
 as you're about to see is I got a 
 different designation a different type 
 of of what it's trying to accomplish for 
-us so at the core layer and I know 
+us 
+1484.922936
+so at the core layer and I know 
 you're probably getting tired of seeing 
 me write access overly spell it right 
-distribution and as I just got through 
-saying I might need to get from building 
-a over here to building B I mean this is 
-one example this could all be in the 
-same building it's just I'm trying to 
+distribution 
+1494.557049
+and as I just got through 
+saying 
+1497.034863
+I might need to get from building 
+a over here to building B 
+1502.127781
+I mean this is 
+one example this 
+1503.176236
+could all be in the 
+same building 
+1504.293865
+it's just I'm trying to 
 conceptually give you an idea of what's 
-happening here and so what happens is 
+happening here 
+1508.207103
+and so what happens is 
 we'll send our traffic from one part of 
 our network or campus building into the 
-core and we'll still going to be using a 
-multi-layer switch we'll call it a 
-course switch and here all we're really 
-worried about is high speed when I say 
+core 
+1515.811082
+and we'll still going to be using a 
+multi-layer switch 
+we'll call it a 
+course switch 
+1522.397784
+and here all we're really 
+worried about is high speed 
+1526.553167
+when I say 
 high speed that generally means that 
 were not involved in enforcing security 
-policies at the core layer if you think 
+policies at the core layer 
+1534.465673
+if you think 
 about it when you start adding your 
 devices to inspect every packet to make 
-sure it's approved you're going to be 
+sure it's approved 
+1541.18142
+you're going to be 
 slowing down that throughput of traffic 
-security services does that and it 
-should do that because it's you know 
-very a lot more complex it's not just 
-looking at a routing table and saying oh 
-that's where it goes there's more to it 
+security services does that 
+1546.202057
+and it 
+should do that 
+1547.64376
+because it's you know 
+very a lot more complex 
+1550.011417
+it's not just 
+looking at a routing table 
+1552.202932
+and saying oh 
+that's where it goes 
+there's more to it 
 takes a little more processing power so 
-we want the core to be high-speed and if 
+we want the core to be high-speed 
+1558.430365
+and if 
 you think about it you had to pass a 
 security check at the distribution layer 
 to even be able to get your traffic up 
-to the core layer and so it's built for 
-high speed but again it could be an 
+to the core layer 
+1567.059244
+and so it's built for 
+high speed 
+1570.432053
+but again it could be an 
 aggregation port for all of that traffic 
 coming from the distribution or the 
-different distribution layers and we 
-also should have redundancy just like we 
+different distribution layers 
+1577.931403
+and we 
+also should have redundancy 
+1580.348517
+just like we 
 did at the distribution layer to avoid a 
-single point of failure now there's a 
+single point of failure 
+1585.37161
+now there's a 
 lot of different things we can do to cut 
-do what's called fast convergence fast 
+do what's called fast convergence 
+1589.873715
+fast 
 convergence that simply means if one of 
-my connections goes down and I still 
-want to be able to afford my traffic I 
+my connections goes down 
+1594.760083
+and I still 
+want to be able to afford my traffic 
+1597.436244
+I 
 have to find the next best route to get 
 there 
+1600.431966
 and and depending on some of the things 
 we'll talk about when we get into the 
-routing protocols we'll see what we can 
-do to do that fast convergence that 
-means I don't want to wait 40 seconds 
+routing protocols 
+1604.597241
+we'll see what we can 
+do 
+1607.628133
+to do that fast convergence that 
+means 
+1609.632503
+I don't want to wait 40 seconds 
+1611.802014
 which might happen with some routing 
-protocols for you to find the next best 
-route because 40 seconds is gonna end a 
-phone call it's going to break sessions 
-it's just not good I want to get this if 
+protocols 
+1614.675375
+for you to find the next best 
+route 
+1616.061162
+because 40 seconds is gonna end a 
+phone call 
+1619.724349
+it's going to break sessions 
+1621.673811
+it's just not good I want to get this 
+1623.26744
+if 
 I could I'd love to get my convergence 
-to less than one second if that's at all 
-possible so at worst I might miss a 
+to less than one second 
+1627.459527
+if that's at all 
+possible 
+1628.850991
+so at worst I might miss a 
 packet or two 
+1631.248656
 and of course by adding a core layer I 
-can move on to maybe a building see and 
+can move on to maybe a building see 
+1637.386699
+and 
 have even that future growth 
-availability so the core layer is all 
-about speed and that's kind of our goal 
+availability 
+1641.476204
+so the core layer is all 
+about speed 
+1644.338275
+and that's kind of our goal 
 in this hierarchical model 
+1647.680859
 [Music] 
-
-
+1650.157694
