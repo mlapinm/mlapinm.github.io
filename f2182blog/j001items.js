@@ -1,2922 +1,4090 @@
 var objs = [
   {
     "time": [
-      7.725266,
-      12.605372
+      0.549261,
+      5.899924
     ],
     "en": [
-      "hi there my name is Ken Mayer and I'm going to be your instructor for this course"
+      "Welcome to my complete CCNA, Cisco Certified Network Associate course."
     ],
     "ru": [
-      "привет меня зовут Кен Майер и я буду вашим инструктором на этом курсе"
+      "Добро пожаловать на мой полный курс CCNA, сертифицированный сетевой специалист Cisco."
     ]
   },
   {
     "time": [
-      12.605372,
-      17.390206
+      5.899924,
+      8.97093
     ],
     "en": [
-      "over the last thirty plus years I have worked in a variety of different fields in the world of IT"
+      "This is Jeremy’s IT Lab."
     ],
     "ru": [
-      "за последние тридцать с лишним лет я работал в самых разных сферах в мире информационных технологий."
+      "Это ИТ-лаборатория Джереми."
     ]
   },
   {
     "time": [
-      17.390206,
-      25.254877
+      8.97093,
+      12.495407
     ],
     "en": [
-      "of course that does include the routing the switching in the security world both for small enterprises large enterprises fortune 100 companies"
+      "Since this is the first video, allow me to introduce the course."
     ],
     "ru": [
-      "конечно, это включает в себя маршрутизацию переключения в мире безопасности как для малых предприятий, так и для крупных предприятий состояние 100 компаний"
+      "Поскольку это первое видео, позвольте мне представить курс."
     ]
   },
   {
     "time": [
-      25.254877,
-      29.733738
+      12.495407,
+      17.495152
     ],
     "en": [
-      "and over the last 15 years have had the opportunity as a consultant"
+      "This course aims to be a complete course for the CCNA,"
     ],
     "ru": [
-      "и за последние 15 лет имели возможность в качестве консультанта"
+      "Этот курс призван стать полным курсом для CCNA,"
     ]
   },
   {
     "time": [
-      29.733738,
-      33.515313
+      17.495152,
+      21.927437
     ],
     "en": [
-      "or as a contractor to be able to work with most of the larger service providers around the world"
+      "including everything you need to pass the exam, all 100% free."
     ],
     "ru": [
-      "или в качестве подрядчика, чтобы иметь возможность работать с большинством крупных поставщиков услуг по всему миру."
+      "включая все необходимое для сдачи экзамена, все на 100% бесплатно."
     ]
   },
   {
     "time": [
-      33.515313,
-      40.015012
+      21.927437,
+      29.172025
     ],
     "en": [
-      "now I'm hoping that I'll be able to take all of that experience both in the real world",
-      "and in the instructional capability"
+      "There will be lecture videos covering every topic on Cisco’s official exam topics list,"
     ],
     "ru": [
-      "теперь я надеюсь, что смогу перенести весь этот опыт как в реальном мире",
-      "и в обучающих возможностях"
+      "Будут представлены видеоролики с лекциями по каждой теме из официального списка тем экзаменов Cisco."
     ]
   },
   {
     "time": [
-      40.015012,
-      45.837998
+      29.172025,
+      33.327001
     ],
     "en": [
-      "and be able to give you the information you need to be successful at working with Cisco's routers and switches"
+      "practice quizzes covering the material in each lecture,"
     ],
     "ru": [
-      "и быть в состоянии предоставить вам информацию, необходимую для успешной работы с маршрутизаторами и коммутаторами Cisco."
+      "практические тесты, охватывающие материал каждой лекции,"
     ]
   },
   {
     "time": [
-      45.837998,
-      51.65428
+      33.327001,
+      36.397186
     ],
     "en": [
-      "so let's first talk about exploring the functions of networking"
+      "flashcards to help you review and remember what you learned,"
     ],
     "ru": [
-      "Итак, давайте сначала поговорим об изучении функций сети"
+      "карточки, которые помогут вам повторить и запомнить то, что вы узнали,"
     ]
   },
   {
     "time": [
-      51.65428,
-      55.754434
+      36.397186,
+      41.641816
     ],
     "en": [
-      "that means of course to understand the basics about our communications"
+      "practice labs using Cisco’s network simulation software Packet Tracer,"
     ],
     "ru": [
-      "это означает, конечно, понимать основы наших коммуникаций"
+      "практические занятия с использованием программного обеспечения Cisco для моделирования сетей Packet Tracer,"
     ]
   },
   {
     "time": [
-      55.754434,
-      63.009497
+      41.641816,
+      46.107725
     ],
     "en": [
-      "when we talk about a network what we're talking about is a way for different endpoints to be able to communicate with each other"
+      "and at the end multiple practice exams to get you ready for the real thing."
     ],
     "ru": [
-      "когда мы говорим о сети, мы говорим о способе, которым разные конечные точки могут общаться друг с другом"
+      "и в конце несколько практических экзаменов, чтобы вы были готовы к настоящему."
     ]
   },
   {
     "time": [
-      63.009497,
-      69.307788
+      46.107725,
+      51.573099
     ],
     "en": [
-      "when I talk about an endpoint I'm talking about a device like a laptop like a computer sitting on your desk"
+      "Although this course will be based on Cisco’s official exam topics list,"
     ],
     "ru": [
-      "когда я говорю о конечной точке, я говорю об устройстве, таком как ноутбук, например, компьютер, сидящий на вашем столе"
+      "Хотя этот курс будет основан на официальном списке тем экзаменов Cisco,"
     ]
   },
   {
     "time": [
-      69.307788,
-      76.242047
+      51.573099,
+      61.41736
     ],
     "en": [
-      "that is not going to take and receive transmissions and then send those transmissions out to a different device"
+      "I also want to give you extra information to improve your",
+      "understanding of networks in general. 56.378563",
+      "That additional context should also help you understand the exam topics."
     ],
     "ru": [
-      "который не будет принимать и принимать передачи, а затем отправлять эти передачи на другое устройство"
+      "Я также хочу предоставить вам дополнительную информацию, чтобы улучшить ваше",
+      "понимание сетей в целом. 56,378563",
+      "Этот дополнительный контекст также должен помочь вам понять темы экзамена."
     ]
   },
   {
     "time": [
-      76.242047,
-      81.739262
+      61.41736,
+      68.187542
     ],
     "en": [
-      "right it's the beginning of a conversation or it's the end of a conversation we call that the endpoint"
+      "Because this is the first video in the series, I want to talk about who this course is for."
     ],
     "ru": [
-      "правильно, это начало разговора или это конец разговора, который мы называем конечной точкой"
+      "Поскольку это первое видео в серии, я хочу поговорить о том, для кого этот курс."
     ]
   },
   {
     "time": [
-      81.739262,
-      95.918333
+      68.187542,
+      75.46595
     ],
     "en": [
-      "now that endpoint can be anywhere it could be at a home office a",
-      "small office it could be a user whose",
-      "mobile in today's world it could be part of what we call BYOD bring your own device your smart phones your tablet's all are designed as endpoints"
+      "This course is for anyone who wants to pass the CCNA 200-301 exam."
     ],
     "ru": [
-      "теперь эта конечная точка может быть где угодно, это может быть домашний офис или",
-      "небольшой офис это может быть пользователь, чей",
-      "мобильный в современном мире это может быть частью того, что мы называем BYOD принесите свое собственное устройство ваши смартфоны все ваши планшеты разработаны как конечные точки"
+      "Этот курс предназначен для всех, кто хочет сдать экзамен CCNA 200-301."
     ]
   },
   {
     "time": [
-      95.918333,
-      103.00822
+      75.46595,
+      84.865248
     ],
     "en": [
-      "now what we need is to find a way to be able to help facilitate that communications from one endpoint to another"
+      "At the time of recording this video, this is a new exam that isn’t released yet, but will be coming on February 24th, 2020."
     ],
     "ru": [
-      "Теперь нам нужно найти способ облегчить эту связь от одной конечной точки к другой."
+      "На момент записи этого видео это новый экзамен, который еще не выпущен, но будет назначен 24 февраля 2020 года."
     ]
   },
   {
     "time": [
-      103.00822,
-      106.164308
+      84.865248,
+      94.93983
     ],
     "en": [
-      "whether it's at a branch office a headquarter or main office"
+      "Although a lot of the information will overlap with the old CCNA, the course will be based on the exam topics for the 200-301 exam"
     ],
     "ru": [
-      "будь то в филиале, в головном офисе или в главном офисе"
+      "Хотя большая часть информации будет совпадать со старым CCNA, курс будет основан на темах экзамена для экзамена 200-301."
     ]
   },
   {
     "time": [
-      106.164308,
-      108.199228
+      94.93983,
+      100.160551
     ],
     "en": [
-      "and so that's what we call a network"
+      "This course is for anyone who wants to learn about computer networking."
     ],
     "ru": [
-      "и это то, что мы называем сетью"
+      "Этот курс предназначен для всех, кто хочет узнать о компьютерных сетях."
     ]
   },
   {
     "time": [
-      108.199228,
-      113.347489
+      100.160551,
+      112.605286
     ],
     "en": [
-      "a network is a the ability for these endpoints to be able to talk to each other"
+      "You don’t necessarily have to take the CCNA 200-301 exam, this course will cover lots of valuable information regarding computer networking even if you’re not aiming for the CCNA."
     ],
     "ru": [
-      "сеть - это способность этих конечных точек разговаривать друг с другом."
+      "Вам не обязательно сдавать экзамен CCNA 200-301, этот курс будет охватывать много ценной информации о компьютерных сетях, даже если вы не стремитесь к CCNA."
     ]
   },
   {
     "time": [
-      113.347489,
-      118.355641
+      112.605286,
+      119.436739
     ],
     "en": [
-      "by the way some of the other endpoints that I haven't mentioned are obviously things like your servers"
+      "The only requirement for this course is that you have a basic familiarity with computers."
     ],
     "ru": [
-      "кстати, некоторые из других конечных точек, о которых я не упомянул, очевидно, такие как ваши серверы"
+      "Единственное требование для прохождения этого курса - у вас есть базовые навыки работы с компьютерами."
     ]
   },
   {
     "time": [
-      118.355641,
-      121.503982
+      119.436739,
+      124.612852
     ],
     "en": [
-      "your file servers your print servers your email servers"
+      "I will cover all of the foundational networking knowledge at the beginning of the course,"
     ],
     "ru": [
-      "ваши файловые серверы ваши серверы печати ваши почтовые серверы"
+      "Я расскажу обо всех основах сетевых знаний в начале курса,"
     ]
   },
   {
     "time": [
-      121.503982,
-      127.616411
+      124.612852,
+      131.550312
     ],
     "en": [
-      "we just call them a server because they are designed to share resources from multiple endpoints"
+      "so you don’t need any prior knowledge of networking, and you also don’t need to know programming or anything like that to start this course."
     ],
     "ru": [
-      "мы просто называем их сервером, потому что они предназначены для совместного использования ресурсов с нескольких конечных точек."
+      "поэтому вам не нужны никакие предварительные знания в области сетевых технологий, а также не нужно знать программирование или что-то в этом роде, чтобы начать этот курс."
     ]
   },
   {
     "time": [
-      127.616411,
-      130.556991
+      131.550312,
+      140.436813
     ],
     "en": [
-      "or I guess we'll all just call workstations"
+      "With no further ado, let’s get started! 136.245846",
+      "Our first lesson will cover network devices."
     ],
     "ru": [
-      "или я думаю, мы все просто назовем рабочие станции"
+      "Без лишних слов, приступим! 136.245846",
+      "Наш первый урок будет посвящен сетевым устройствам."
     ]
   },
   {
     "time": [
-      130.556991,
-      136.01063
+      140.436813,
+      145.233898
     ],
     "en": [
-      "so what we're going to do is find a way to be able to make that Communications go back and forth"
+      "This knowledge will be the foundation which we will build upon during the rest of this course."
     ],
     "ru": [
-      "Итак, что мы собираемся сделать, так это найти способ заставить Коммуникации двигаться вперед и назад"
+      "Эти знания станут фундаментом, на котором мы будем строить дальнейшую часть этого курса."
     ]
   },
   {
     "time": [
-      136.01063,
-      141.156341
+      145.233898,
+      153.552098
     ],
     "en": [
-      "whether it's from the use of radio frequencies like a wireless network"
+      "Take a look at this sample network here. 148.119109",
+      "Do you know what each of these symbols represents, and their function in a network?"
     ],
     "ru": [
-      "будь то использование радиочастот, например, в беспроводной сети"
+      "Взгляните на этот образец сети здесь. 148.119109",
+      "Знаете ли вы, что представляет каждый из этих символов и их функцию в сети?"
     ]
   },
   {
     "time": [
-      141.156341,
-      148.742168
+      153.552098,
+      158.142643
     ],
     "en": [
-      "whether it's the use of copper cables sending electrons or fiber cables sending photons or light down that wire"
+      "At the end of this lesson, you’ll know these and more,"
     ],
     "ru": [
-      "будь то использование медных кабелей, отправляющих электроны, или волоконных кабелей, отправляющих фотоны или свет по этому проводу"
+      "В конце этого урока вы узнаете об этом и многом другом,"
     ]
   },
   {
     "time": [
-      148.742168,
-      157.633904
+      158.142643,
+      160.281065
     ],
     "en": [
-      "we're gonna look at the ways in which we can make that connection to help facilitate the communications to get the message from the source to its destination"
+      "and how they work together to make a network."
     ],
     "ru": [
-      "мы рассмотрим способы, которыми мы можем установить это соединение, чтобы облегчить коммуникацию, чтобы доставить сообщение от источника к месту назначения."
+      "и как они работают вместе, чтобы создать сеть."
     ]
   },
   {
     "time": [
-      157.633904,
-      166.682217
+      160.281065,
+      163.57054
     ],
     "en": [
-      "so in reality as I said before we're looking at the variety of endpoints that we want to have communications work with"
+      "We won’t go into too many details in this lesson."
     ],
     "ru": [
-      "так что на самом деле, как я сказал ранее, мы смотрим на множество конечных точек, с которыми мы хотим, чтобы связь работала"
+      "В этом уроке мы не будем вдаваться в подробности."
     ]
   },
   {
     "time": [
-      166.682217,
-      173.363709
+      163.57054,
+      167.71658
     ],
     "en": [
-      "and endpoints don't mean again that it's the end of the communication it means they could start or end the communication"
+      "There’s plenty of time to dig deeper in future lessons,"
     ],
     "ru": [
-      "и конечные точки снова не означают, что это конец коммуникации, это означает, что они могут начать или закончить коммуникацию"
+      "В будущих уроках у вас будет достаточно времени, чтобы копнуть глубже,"
     ]
   },
   {
     "time": [
-      173.363709,
-      177.676544
+      167.71658,
+      174.004601
     ],
     "en": [
-      "but that they're not helping facilitate the communications between each other"
+      "but these first few videos are meant to give you the foundational knowledge which we will build upon in future lessons."
     ],
     "ru": [
-      "но они не помогают облегчить общение друг с другом"
+      "но эти первые несколько видео предназначены для того, чтобы дать вам фундаментальные знания, которые мы будем использовать в будущих уроках."
     ]
   },
   {
     "time": [
-      177.676544,
-      182.987189
+      174.004601,
+      177.612344
     ],
     "en": [
-      "in other words if my computer wanted to have this user send a print document"
+      "So, what is a network?"
     ],
     "ru": [
-      "другими словами, если мой компьютер хотел, чтобы этот пользователь отправил документ для печати"
+      "Итак, что такое сеть?"
     ]
   },
   {
     "time": [
-      182.987189,
-      186.020603
+      177.612344,
+      179.896771
     ],
     "en": [
-      "they would send it through a network device"
+      "Let’s ask our friends at Wikipedia."
     ],
     "ru": [
-      "они отправят его через сетевое устройство"
+      "Спросим наших друзей в Википедии."
     ]
   },
   {
     "time": [
-      186.020603,
-      186.020603
+      179.896771,
+      187.706578
     ],
     "en": [
-      "that would look at the address that it wants to be communicated and width"
+      ""
     ],
     "ru": [
-      "который будет смотреть на адрес, который он хочет передать, и ширину"
+      ""
     ]
   },
   {
     "time": [
-      186.020603,
-      194.133852
+      179.896771,
+      187.706578
     ],
     "en": [
-      "and then help facilitate that communication to the device"
+      ""
     ],
     "ru": [
-      "а затем помочь облегчить эту связь с устройством"
+      ""
     ]
   },
   {
     "time": [
-      194.133852,
-      196.039576
+      187.706578,
+      193.645986
     ],
     "en": [
-      "so that if the print job could work"
+      "Well, if you didn’t understand before, you probably still don’t after reading just that."
     ],
     "ru": [
-      "так что, если задание печати могло работать"
+      "Что ж, если вы не понимали раньше, вы, вероятно, все еще не понимаете после того, как прочитали это."
     ]
   },
   {
     "time": [
-      196.039576,
-      201.874134
+      193.645986,
+      195.35549
     ],
     "en": [
-      "so that's where we're looking at the interconnection right here from the switch layer on up"
+      "Let’s look further."
     ],
     "ru": [
-      "вот где мы смотрим на взаимосвязь прямо здесь, от уровня переключателя и выше"
+      "Посмотрим дальше."
     ]
   },
   {
     "time": [
-      201.874134,
-      205.409239
+      195.35549,
+      201.084357
     ],
     "en": [
-      "and we'll break this down a little bit to talk about these different layers"
+      "The definition states that a network allows nodes to share resources."
     ],
     "ru": [
-      "и мы немного разберем это, чтобы поговорить об этих разных слоях"
+      "В определении говорится, что сеть позволяет узлам совместно использовать ресурсы."
     ]
   },
   {
     "time": [
-      205.409239,
-      212.768024
+      201.084357,
+      203.069761
     ],
     "en": [
-      "but typically we talk about this as the access layer because that the access layer what we're doing is we're making sure"
+      "What is a node?"
     ],
     "ru": [
-      "но обычно мы говорим об этом как об уровне доступа, потому что на уровне доступа мы делаем так, чтобы"
+      "Что такое узел?"
     ]
   },
   {
     "time": [
-      212.768024,
-      216.71003
+      203.069761,
+      209.830509
     ],
     "en": [
-      "that we are able to access the endpoints"
+      "I’ll introduce some types of network nodes here, some of which appeared in the sample network on the previous slide."
     ],
     "ru": [
-      "что мы можем получить доступ к конечным точкам"
+      "Здесь я расскажу о некоторых типах сетевых узлов, некоторые из которых присутствовали в примере сети на предыдущем слайде."
     ]
   },
   {
     "time": [
-      216.71003,
-      224.573266
+      209.830509,
+      213.150157
     ],
     "en": [
-      "and then of course the larger our network grows the more that we need to have the ability to do what we call scaling of communications"
+      "This is a router."
     ],
     "ru": [
-      "и затем, конечно, чем больше растет наша сеть, тем больше нам нужно иметь возможность делать то, что мы называем масштабированием коммуникаций."
+      "Это роутер."
     ]
   },
   {
     "time": [
-      224.573266,
-      226.433002
+      213.150157,
+      218.285602
     ],
     "en": [
-      "we may start using routers"
+      "You’ve probably heard the word before and have a general idea of what a router is."
     ],
     "ru": [
-      "мы можем начать использовать роутеры"
+      "Вы, наверное, слышали это слово раньше и имеете общее представление о том, что такое роутер."
     ]
   },
   {
     "time": [
-      226.433002,
-      231.216297
+      218.285602,
+      221.008848
     ],
     "en": [
-      "now I'll explain all about the reason why you would use a router",
-      "over a switch"
+      "But I’ll explain a router’s function in this lesson."
     ],
     "ru": [
-      "Теперь я объясню, почему вы бы использовали роутер",
-      "через выключатель"
+      "Но на этом уроке я объясню функции маршрутизатора."
     ]
   },
   {
     "time": [
-      231.216297,
-      235.206713
+      221.008848,
+      225.130171
     ],
     "en": [
-      "as we get into the discussion of broadcast domains and so many other things"
+      "Next, this is a switch."
     ],
     "ru": [
-      "поскольку мы переходим к обсуждению широковещательных доменов и многому другому"
+      "Далее это переключатель."
     ]
   },
   {
     "time": [
-      235.206713,
-      238.2557
+      225.130171,
+      229.181407
     ],
     "en": [
-      "but we often call that the distribution layer"
+      "Maybe you’re familiar with what a switch is, maybe not."
     ],
     "ru": [
-      "но мы часто называем это распределительным слоем"
+      "Может быть, вы знакомы с тем, что такое переключатель, а может, и нет."
     ]
   },
   {
     "time": [
-      238.2557,
-      244.227396
+      229.181407,
+      234.223953
     ],
     "en": [
-      "and we again use it to help facilitate the communications from one place to another"
+      "It serves a different function than a router, but is also similar in many ways."
     ],
     "ru": [
-      "и мы снова используем его, чтобы облегчить общение из одного места в другое."
+      "Он выполняет другую функцию, чем маршрутизатор, но во многом похож."
     ]
   },
   {
     "time": [
-      244.227396,
-      252.361885
+      234.223953,
+      238.232172
     ],
     "en": [
-      "a router can help us within a local office a router can help us in being able to get out to the world of the Internet as well"
+      "This next one is a firewall."
     ],
     "ru": [
-      "маршрутизатор может помочь нам в локальном офисе; маршрутизатор также может помочь нам выйти в мир Интернета."
+      "Следующий - брандмауэр."
     ]
   },
   {
     "time": [
-      252.361885,
-      255.473728
+      238.232172,
+      244.407903
     ],
     "en": [
-      "so as long as these symbols make sense to you"
+      "You’re probably familiar with firewalls, and you most likely have a firewall installed on your computer."
     ],
     "ru": [
-      "до тех пор, пока эти символы имеют для вас смысл"
+      "Вы, вероятно, знакомы с брандмауэрами, и, скорее всего, на вашем компьютере установлен брандмауэр."
     ]
   },
   {
     "time": [
-      255.473728,
-      258.712506
+      244.407903,
+      255.695524
     ],
     "en": [
-      "and we'll keep showing these as parts of our diagrams"
+      "That’s a software firewall, but large networks usually have a hardware firewall, a separate network appliance, which helps protect the network."
     ],
     "ru": [
-      "и мы продолжим показывать их как части наших диаграмм"
+      "Это программный брандмауэр, но в больших сетях обычно есть аппаратный брандмауэр, отдельное сетевое устройство, которое помогает защитить сеть."
     ]
   },
   {
     "time": [
-      258.712506,
-      264.558109
+      255.695524,
+      258.222941
     ],
     "en": [
-      "then I think you'll do OK",
-      "at being able to understand or hopefully interpret the information that I'm trying to share with you"
+      "This next symbol represents a server."
     ],
     "ru": [
-      "тогда я думаю, ты справишься",
-      "в способности понять или, надеюсь, интерпретировать информацию, которой я пытаюсь поделиться с вами"
+      "Следующий символ представляет сервер."
     ]
   },
   {
     "time": [
-      264.558109,
-      270.349595
+      258.222941,
+      262.856831
     ],
     "en": [
-      "again as we're trying to interpret these diagrams"
+      "If you know computers, you surely have heard of servers before."
     ],
     "ru": [
-      "снова, когда мы пытаемся интерпретировать эти диаграммы"
+      "Если вы знакомы с компьютерами, то наверняка слышали о серверах раньше."
     ]
   },
   {
     "time": [
-      270.349595,
-      274.978909
+      262.856831,
+      264.814673
     ],
     "en": [
-      "it's important to remember that whenever you see a PC a server or some other end point"
+      "What exactly do they do?"
     ],
     "ru": [
-      "важно помнить, что всякий раз, когда вы видите ПК, сервер или другую конечную точку"
+      "Что именно они делают?"
     ]
   },
   {
     "time": [
-      274.978909,
-      284.264008
+      264.814673,
+      270.389262
     ],
     "en": [
-      "that it's generally going to have an Ethernet connection remember the straight lines where Ethernet cables connecting to us a network device"
+      "Well, if you’re watching this video, you’re getting it from a server on the Internet."
     ],
     "ru": [
-      "что он, как правило, будет иметь соединение Ethernet, помните прямые линии, где кабели Ethernet соединяют нас с сетевым устройством"
+      "Что ж, если вы смотрите это видео, вы получаете его с сервера в Интернете."
     ]
   },
   {
     "time": [
-      284.264008,
-      286.933581
+      270.389262,
+      274.736738
     ],
     "en": [
-      "most often we're connecting to a switch"
+      "The last symbol in this slide is a client."
     ],
     "ru": [
-      "чаще всего мы подключаемся к коммутатору"
+      "Последний символ на этом слайде - клиент."
     ]
   },
   {
     "time": [
-      286.933581,
-      291.494788
+      274.736738,
+      282.146585
     ],
     "en": [
-      "at the local level again the switch with the square with the arrows moving out"
+      "You’re using a client to watch this video, whether it’s a smart phone, a laptop, a desktop PC, or whatever."
     ],
     "ru": [
-      "на местном уровне снова выключатель с квадратом со стрелками, выходящими наружу"
+      "Вы используете клиент для просмотра этого видео, будь то смартфон, ноутбук, настольный компьютер или что-то еще."
     ]
   },
   {
     "time": [
-      291.494788,
-      296.547737
+      282.146585,
+      285.010934
     ],
     "en": [
-      "and as we're looking at these diagrams you're seeing the port numbers"
+      "What exactly is a client?"
     ],
     "ru": [
-      "и пока мы смотрим на эти диаграммы, вы видите номера портов"
+      "Что такое клиент?"
     ]
   },
   {
     "time": [
-      296.547737,
-      301.735258
+      285.010934,
+      286.872277
     ],
     "en": [
-      "and the type of ports that they are that the devices are connecting to"
+      "Let’s get into it."
     ],
     "ru": [
-      "и тип портов, к которым подключаются устройства."
+      "Давай займемся этим."
     ]
   },
   {
     "time": [
-      301.735258,
-      307.346578
+      286.872277,
+      294.577449
     ],
     "en": [
-      "for example F a generally stands for fast ethernet"
+      "Over the next few slides let’s build a sample network and look at the functions of each of these network nodes in the network."
     ],
     "ru": [
-      "например F a обычно означает быстрый Ethernet."
+      "На следующих нескольких слайдах давайте построим образец сети и рассмотрим функции каждого из этих сетевых узлов в сети."
     ]
   },
   {
     "time": [
-      307.346578,
-      315.676938
+      294.577449,
+      304.49143
     ],
     "en": [
-      "and when we get into the speeds of Ethernet you'll see that that's generally speed that we always measure in megabits or actually in bits per second"
+      "You might also hear clients, as well as the previous node type, servers, referred to as end hosts or endpoints"
     ],
     "ru": [
-      "и когда мы перейдем к скорости Ethernet, вы увидите, что это обычно скорость, которую мы всегда измеряем в мегабитах или фактически в битах в секунду."
+      "Вы также можете услышать клиентов, а также предыдущий тип узла, серверы, называемые конечными хостами или конечными точками."
     ]
   },
   {
     "time": [
-      315.676938,
-      317.434752
+      304.49143,
+      309.214384
     ],
     "en": [
-      "but generally megabits per second"
+      "Okay, so we looked at some types of network nodes,"
     ],
     "ru": [
-      "но обычно мегабит в секунду"
+      "Итак, мы рассмотрели некоторые типы сетевых узлов,"
     ]
   },
   {
     "time": [
-      317.434752,
-      322.741183
+      309.214384,
+      314.133924
     ],
     "en": [
-      "and fast ethernet is designed to be 100 megabits per second"
+      "but we didn’t really examine exactly what each type of node does in a network."
     ],
     "ru": [
-      "а быстрый Ethernet рассчитан на 100 мегабит в секунду"
+      "но на самом деле мы не изучали, что именно каждый тип узла делает в сети."
     ]
   },
   {
     "time": [
-      322.741183,
-      331.377926
+      314.133924,
+      318.314105
     ],
     "en": [
-      "so this is port 0 5.07 port 0 11 now we have another indicator here for a different type of interface"
+      "Let’s build a network and examine each node’s role."
     ],
     "ru": [
-      "так что это порт 0 5.07 порт 0 11 теперь у нас есть еще один индикатор для другого типа интерфейса"
+      "Давайте построим сеть и исследуем роль каждого узла."
     ]
   },
   {
     "time": [
-      331.377926,
-      333.492537
+      318.314105,
+      322.110697
     ],
     "en": [
-      "which is one we would call a gigabit"
+      "So, here we have two PCs."
     ],
     "ru": [
-      "который мы бы назвали гигабитным"
+      "Итак, у нас есть два ПК."
     ]
   },
   {
     "time": [
-      333.492537,
-      338.990579
+      322.110697,
+      330.878499
     ],
     "en": [
-      "gigabit is again a factor of 10 times faster than fast ethernet"
+      "PC1 on the left, and PC2 on the right. 327.282299",
+      "As is, this isn’t a network."
     ],
     "ru": [
-      "гигабит снова в 10 раз быстрее, чем быстрый Ethernet"
+      "ПК1 слева и ПК2 справа. 327,282299",
+      "Как есть, это не сеть."
     ]
   },
   {
     "time": [
-      338.990579,
-      345.265833
+      330.878499,
+      334.433432
     ],
     "en": [
-      "and so gigabit would generally be listed as one gigabit per second"
+      "However, if I connect them together with a cable…"
     ],
     "ru": [
-      "и поэтому гигабит обычно указывается как один гигабит в секунду"
+      "Однако, если я соединю их кабелем…"
     ]
   },
   {
     "time": [
-      345.265833,
-      353.55571
+      334.433432,
+      336.820819
     ],
     "en": [
-      "again we're talking about the types of interfaces that were connecting to and that's what it's showing us in the diagram"
+      "We now have a network."
     ],
     "ru": [
-      "снова мы говорим о типах интерфейсов, к которым подключались, и это то, что показано на диаграмме."
+      "Теперь у нас есть сеть."
     ]
   },
   {
     "time": [
-      353.55571,
-      357.715849
+      336.820819,
+      341.496767
     ],
     "en": [
-      "now when we look at moving through layer 3"
+      "That’s right, two PCs connected together actually makes a network!"
     ],
     "ru": [
-      "теперь, когда мы смотрим на перемещение через слой 3"
+      "Правильно, два компьютера, соединенные вместе, на самом деле составляют сеть!"
     ]
   },
   {
     "time": [
-      357.715849,
-      362.189052
+      341.496767,
+      347.706105
     ],
     "en": [
-      "we haven't got to the OSI model yet but layer 3 deals with IP addresses"
+      "Now, it’s a very simple network, but if we take a look at that Wikipedia definition once more…"
     ],
     "ru": [
-      "мы еще не дошли до модели OSI, но уровень 3 имеет дело с IP-адресами"
+      "Это очень простая сеть, но если мы еще раз взглянем на определение из Википедии ..."
     ]
   },
   {
     "time": [
-      362.189052,
-      365.552799
+      347.706105,
+      354.43809
     ],
     "en": [
-      "so far everything over here can deal with a layer 2 address"
+      ""
     ],
     "ru": [
-      "пока все здесь может иметь дело с адресом уровня 2"
+      ""
     ]
   },
   {
     "time": [
-      365.552799,
-      367.520275
+      347.706105,
+      354.43809
     ],
     "en": [
-      "that we call a MAC address"
+      ""
     ],
     "ru": [
-      "что мы называем MAC-адресом"
+      ""
     ]
   },
   {
     "time": [
-      367.520275,
-      370.240201
+      354.43809,
+      359.664632
     ],
     "en": [
-      "and I promise we're going to get in more discussions about that"
+      "Now that these two nodes are connected, they can share resources..."
     ],
     "ru": [
-      "и я обещаю, что мы продолжим обсуждение этого"
+      "Теперь, когда эти два узла подключены, они могут совместно использовать ресурсы ..."
     ]
   },
   {
     "time": [
-      370.240201,
-      376.417859
+      359.664632,
+      362.815501
     ],
     "en": [
-      "but at layer 3 we do need an IP address so generally speaking you're going to see the network address"
+      "And essentially have a conversation with each other."
     ],
     "ru": [
-      "но на уровне 3 нам нужен IP-адрес, поэтому, вообще говоря, вы увидите сетевой адрес."
+      "И, по сути, поговорите друг с другом."
     ]
   },
   {
     "time": [
-      376.417859,
-      380.769758
+      362.815501,
+      368.073674
     ],
     "en": [
-      "the",
-      "network address will generally end with a 0"
+      "Now, I’m representing clients with this symbol."
     ],
     "ru": [
-      "в",
-      "сетевой адрес обычно заканчивается на 0"
+      "Теперь я представляю клиентов этим символом."
     ]
   },
   {
     "time": [
-      380.769758,
-      383.108169
+      368.073674,
+      371.901306
     ],
     "en": [
-      "but we have to still talk about the subnet mask"
+      "But there are all kinds of devices which can be network clients."
     ],
     "ru": [
-      "но мы все же должны поговорить о маске подсети"
+      "Но есть все виды устройств, которые могут быть сетевыми клиентами."
     ]
   },
   {
     "time": [
-      383.108169,
-      385.534367
+      371.901306,
+      378.035243
     ],
     "en": [
-      "or variable length subnet masking soon"
+      "For example, a laptop or Desktop PC running Microsoft Windows."
     ],
     "ru": [
-      "или маскирование подсети переменной длины в ближайшее время"
+      "Например, ноутбук или настольный компьютер под управлением Microsoft Windows."
     ]
   },
   {
     "time": [
-      385.534367,
-      388.398971
+      378.035243,
+      382.029957
     ],
     "en": [
-      "and then specifically we have the host address"
+      "Or how about an iMAC running macOS."
     ],
     "ru": [
-      "а затем конкретно у нас есть адрес хоста"
+      "Или как насчет iMAC под управлением macOS."
     ]
   },
   {
     "time": [
-      388.398971,
-      391.707015
+      382.029957,
+      385.47789
     ],
     "en": [
-      "that dot 1 means that it would actually replace that 0"
+      "Or even an apple iphone running iOS."
     ],
     "ru": [
-      "эта точка 1 означает, что она фактически заменит 0"
+      "Или даже яблочный iphone под управлением iOS."
     ]
   },
   {
     "time": [
-      391.707015,
-      398.145023
+      385.47789,
+      390.170193
     ],
     "en": [
-      "and that would be the specific address of that port that is connecting on the",
-      "switch"
+      "These are just a few examples of devices which can be network clients."
     ],
     "ru": [
-      "и это будет конкретный адрес того порта, который подключается к",
-      "выключатель"
+      "Это всего лишь несколько примеров устройств, которые могут быть сетевыми клиентами."
     ]
   },
   {
     "time": [
-      398.145023,
-      403.59449
+      390.170193,
+      394.594822
     ],
     "en": [
-      "a dot 2 to replace that 0 the address on the router"
+      "So, let’s give a simple definition of a client."
     ],
     "ru": [
-      "точка 2, чтобы заменить этот 0 адрес на маршрутизаторе"
+      "Итак, дадим простое определение клиента."
     ]
   },
   {
     "time": [
-      403.59449,
-      405.474872
+      394.594822,
+      400.795164
     ],
     "en": [
-      "and again that is a gigabit connection"
+      "A client is a device that accesses a service made available by a server."
     ],
     "ru": [
-      "и снова это гигабитное соединение"
+      "Клиент - это устройство, которое обращается к сервису, предоставляемому сервером."
     ]
   },
   {
     "time": [
-      405.474872,
-      410.515563
+      400.795164,
+      409.413728
     ],
     "en": [
-      "and the ports again are designed to just show you which port numbers they are"
+      "Okay, since server is part of the definition of a client, to understand one, you have to understand the other."
     ],
     "ru": [
-      "и порты снова предназначены для того, чтобы просто показать вам, какие номера портов они"
+      "Хорошо, поскольку сервер является частью определения клиента, чтобы понять одно, вы должны понять другое."
     ]
   },
   {
     "time": [
-      410.515563,
-      413.951043
+      409.413728,
+      412.180105
     ],
     "en": [
-      "basically the port number is the last indicator"
+      "So, what’s a server?"
     ],
     "ru": [
-      "в основном номер порта - последний индикатор"
+      "Итак, что такое сервер?"
     ]
   },
   {
     "time": [
-      413.951043,
-      423.287958
+      412.180105,
+      413.742433
     ],
     "en": [
-      "the first indicator generally is for a multi chassis or multi designed chassis having multiple switches in one box"
+      "Let’s take a look."
     ],
     "ru": [
-      "первый индикатор, как правило, предназначен для нескольких шасси или шасси с несколькими переключателями в одном корпусе."
+      "Давайте взглянем."
     ]
   },
   {
     "time": [
-      423.287958,
-      431.485017
+      413.742433,
+      417.851204
     ],
     "en": [
-      "another and we'll talk more about that in other words if I had a very large switch I may have several of these line cards"
+      "I used this symbol to represent a server."
     ],
     "ru": [
-      "другой, и мы поговорим об этом подробнее, другими словами, если бы у меня был очень большой коммутатор, у меня могло бы быть несколько таких линейных карт"
+      "Я использовал этот символ для обозначения сервера."
     ]
   },
   {
     "time": [
-      431.485017,
-      433.268934
+      417.851204,
+      426.356709
     ],
     "en": [
-      "and each line card could have multiple ports"
+      "When you think of the word server, you may thing of something like this IBM server, or this DELL server."
     ],
     "ru": [
-      "и каждая линейная карта может иметь несколько портов"
+      "Когда вы думаете о слове «сервер», вы можете представить себе что-то вроде этого сервера IBM или этого сервера DELL."
     ]
   },
   {
     "time": [
-      433.268934,
-      441.226165
+      426.356709,
+      437.229628
     ],
     "en": [
-      "and so the first number is telling me which line cards starting with one going or zero going through one two and three"
+      "And indeed, these are powerful",
+      "servers, and you’ll see rows and rows of servers like these in data centers. 433.332645",
+      "However, not all servers look like this."
     ],
     "ru": [
-      "и поэтому первое число говорит мне, какие линейные карты, начиная с одного идущего или с нуля, проходят через один, два и три."
+      "И действительно, это мощные",
+      "серверов, и вы увидите ряды таких серверов в центрах обработки данных. 433,332645",
+      "Однако не все серверы выглядят так."
     ]
   },
   {
     "time": [
-      441.226165,
-      444.195838
+      437.229628,
+      443.163326
     ],
     "en": [
-      "and that would be that first zero that you're seeing here"
+      "In fact, any of the clients we looked at in the previous slide can be servers too!"
     ],
     "ru": [
-      "и это будет тот первый ноль, который вы видите здесь"
+      "Фактически, любой из клиентов, которые мы рассмотрели на предыдущем слайде, тоже может быть серверами!"
     ]
   },
   {
     "time": [
-      444.195838,
-      450.615769
+      443.163326,
+      445.717808
     ],
     "en": [
-      "and then on that line card which port number we're talking about starting with port zero port one etc"
+      "How is that possible?"
     ],
     "ru": [
-      "а затем на этой линейной карте номер порта, о котором мы говорим, начиная с порта ноль, порт один и т. д."
+      "Как такое возможно?"
     ]
   },
   {
     "time": [
-      450.615769,
-      456.923577
+      445.717808,
+      449.116908
     ],
     "en": [
-      "and then some communications that we use may use some other medium besides Ethernet"
+      "Well, let’s look at the definition of a client again,"
     ],
     "ru": [
-      "а затем для некоторых коммуникаций, которые мы используем, может использоваться другой носитель, помимо Ethernet."
+      "Что ж, давайте еще раз посмотрим на определение клиента,"
     ]
   },
   {
     "time": [
-      456.923577,
-      460.714438
+      449.116908,
+      452.027412
     ],
     "en": [
-      "and so this is an example of a serial interface"
+      "and then compare it to the definition of a server."
     ],
     "ru": [
-      "и так это пример последовательного интерфейса"
+      "а затем сравните его с определением сервера."
     ]
   },
   {
     "time": [
-      460.714438,
-      471.610359
+      452.027412,
+      463.815359
     ],
     "en": [
-      "serial is still about communicating traffic",
-      "it's just using a different protocol",
-      "and a different type of cable for a variety of different reasons to be able to make the communications"
+      "The definition we used for a client was ‘a client is a device that accesses a service made available by a server.’"
     ],
     "ru": [
-      "сериал все еще о передаче трафика",
-      "он просто использует другой протокол",
-      "и кабель другого типа по разным причинам для обеспечения связи"
+      "Определение, которое мы использовали для клиента, было «клиент - это устройство, которое обращается к сервису, предоставляемому сервером»."
     ]
   },
   {
     "time": [
-      471.610359,
-      475.307749
+      463.815359,
+      469.358838
     ],
     "en": [
-      "now when we are designing a network"
+      "So, we can basically reverse that definition to know what a server is."
     ],
     "ru": [
-      "сейчас, когда мы проектируем сеть"
+      "Итак, мы можем полностью изменить это определение, чтобы узнать, что такое сервер."
     ]
   },
   {
     "time": [
-      475.307749,
-      481.309785
+      469.358838,
+      474.946009
     ],
     "en": [
-      "you really want to make sure that you understand how user applications can affect your designs"
+      ""
     ],
     "ru": [
-      "вы действительно хотите убедиться, что понимаете, как пользовательские приложения могут повлиять на ваш дизайн."
+      ""
     ]
   },
   {
     "time": [
-      481.309785,
-      486.06466
+      469.358838,
+      474.946009
     ],
     "en": [
-      "for",
-      "example we have a group of things we may call a batch application"
+      ""
     ],
     "ru": [
-      "для",
-      "Например, у нас есть группа вещей, которую мы можем назвать пакетным приложением"
+      ""
     ]
   },
   {
     "time": [
-      486.06466,
-      491.268171
+      474.946009,
+      481.106501
     ],
     "en": [
-      "batch applications are generally applications that might require a lot of bandwidth"
+      "So, let’s look at the simple network of two PCs connected with a cable that we saw before."
     ],
     "ru": [
-      "пакетные приложения - это обычно приложения, которым может потребоваться большая пропускная способность"
+      "Итак, давайте посмотрим на простую сеть из двух компьютеров, соединенных кабелем, которую мы видели ранее."
     ]
   },
   {
     "time": [
-      491.268171,
-      498.130783
+      481.106501,
+      484.119728
     ],
     "en": [
-      "bandwidth or speed is about how much information I can send down a cable at any one time"
+      "Remember this network?"
     ],
     "ru": [
-      "пропускная способность или скорость - это то, сколько информации я могу отправить по кабелю за один раз"
+      "Помните эту сеть?"
     ]
   },
   {
     "time": [
-      498.130783,
-      501.223692
+      484.119728,
+      491.180928
     ],
     "en": [
-      "and even though they require a lot of bandwidth"
+      "Watch this little exchange between the two PCs and think which of them is the server and which is the client."
     ],
     "ru": [
-      "и хотя они требуют большой пропускной способности"
+      "Посмотрите этот небольшой обмен между двумя компьютерами и подумайте, какой из них является сервером, а какой - клиентом."
     ]
   },
   {
     "time": [
-      501.223692,
-      505.715486
+      491.180928,
+      502.770917
     ],
     "en": [
-      "they don't necessarily worry about how long it takes for the data to transfer"
+      "PC1 asks PC2 for the file ‘image.jpg’ PC2 responds and sends the requested image file."
     ],
     "ru": [
-      "они не обязательно беспокоятся о том, сколько времени требуется для передачи данных"
+      "ПК1 запрашивает у ПК2 файл «image.jpg». ПК2 отвечает и отправляет запрошенный файл изображения."
     ]
   },
   {
     "time": [
-      505.715486,
-      508.197742
+      502.770917,
+      506.898928
     ],
     "en": [
-      "as long as the data does transfer"
+      "So, which is the client and which is the server?"
     ],
     "ru": [
-      "пока данные передаются"
+      "Итак, кто является клиентом, а какой сервером?"
     ]
   },
   {
     "time": [
-      508.197742,
-      513.700636
+      506.898928,
+      513.209574
     ],
     "en": [
-      "in other words I could start some of these applications like a file transfer FTP"
+      "Well, PC1 is the one requesting the service, requesting for the image to be sent."
     ],
     "ru": [
-      "другими словами, я мог бы запустить некоторые из этих приложений, например FTP для передачи файлов."
+      "Что ж, ПК1 - это тот, кто запрашивает услугу, запрашивая отправку изображения."
     ]
   },
   {
     "time": [
-      513.700636,
-      522.026288
+      513.209574,
+      518.338896
     ],
     "en": [
-      "the File Transfer Protocol or TFTP the trivial File Transfer Protocol or maybe it's a database doing an inventory update"
+      "And PC2 is the one providing the service, the one sending the image."
     ],
     "ru": [
-      "протокол передачи файлов или TFTP, простой протокол передачи файлов, или, может быть, база данных выполняет обновление инвентаризации."
+      "И ПК2 - это тот, кто предоставляет услугу, тот, кто отправляет изображение."
     ]
   },
   {
     "time": [
-      522.026288,
-      524.532855
+      518.338896,
+      524.512125
     ],
     "en": [
-      "but I'm sending a large amount of information"
+      "So that makes PC1 the client, and PC2 the server."
     ],
     "ru": [
-      "но я отправляю большой объем информации"
+      "Таким образом, ПК1 становится клиентом, а ПК2 - сервером."
     ]
   },
   {
     "time": [
-      524.532855,
-      532.246116
+      524.512125,
+      529.517459
     ],
     "en": [
-      "and it may",
-      "be okay if some of that transfer is interrupted by other traffic coming through because it's not important"
+      "Let’s look at another example of a client-server relationship."
     ],
     "ru": [
-      "и это может",
-      "все в порядке, если часть этой передачи прерывается другим проходящим трафиком, потому что это не важно"
+      "Давайте посмотрим на другой пример взаимоотношений клиент-сервер."
     ]
   },
   {
     "time": [
-      532.246116,
-      538.022096
+      529.517459,
+      535.986978
     ],
     "en": [
-      "that it gets there in a continuously same speed type of fashion"
+      "On the left is your computer, or perhaps your smartphone, whatever you’re using to watch this video."
     ],
     "ru": [
-      "что он попадает туда с постоянной скоростью"
+      "Слева находится ваш компьютер или, возможно, ваш смартфон, что бы вы ни использовали для просмотра этого видео."
     ]
   },
   {
     "time": [
-      538.022096,
-      540.795535
+      535.986978,
+      540.413115
     ],
     "en": [
-      "now these generally have no direct human interaction"
+      "On the right is a YouTube server which contains this video."
     ],
     "ru": [
-      "теперь они вообще не имеют прямого человеческого взаимодействия"
+      "Справа находится сервер YouTube, на котором находится это видео."
     ]
   },
   {
     "time": [
-      540.795535,
-      547.584194
+      540.413115,
+      544.322714
     ],
     "en": [
-      "we start the programs they start sending out their information and then they finish and report to us when they're done"
+      "What do you think the blue cloud in the middle represents?"
     ],
     "ru": [
-      "мы запускаем программы, они начинают рассылать свою информацию, а затем они заканчивают и сообщают нам, когда они закончили"
+      "Как вы думаете, что представляет собой синее облако в центре?"
     ]
   },
   {
     "time": [
-      547.584194,
-      554.426518
+      544.322714,
+      547.69339
     ],
     "en": [
-      "now there may be some interactive applications where the time it takes to get that information could be important"
+      "The answer is, The Internet."
     ],
     "ru": [
-      "теперь могут быть некоторые интерактивные приложения, в которых время, необходимое для получения этой информации, может быть важным."
+      "Ответ - Интернет."
     ]
   },
   {
     "time": [
-      554.426518,
-      557.508233
+      547.69339,
+      552.885079
     ],
     "en": [
-      "it could be somebody hitting a webpage"
+      "In network diagrams, a cloud is often used to represent the Internet,"
     ],
     "ru": [
-      "это может быть кто-то попал на веб-страницу"
+      "В сетевых диаграммах облако часто используется для представления Интернета,"
     ]
   },
   {
     "time": [
-      557.508233,
-      561.742873
+      552.885079,
+      557.325717
     ],
     "en": [
-      "trying to get information from our database about what items we have in inventory"
+      "or in any situation where the details of that part of the network aren’t necessary."
     ],
     "ru": [
-      "пытаемся получить информацию из нашей базы данных о том, какие предметы у нас есть в инвентаре"
+      "или в любой ситуации, когда детали этой части сети не нужны."
     ]
   },
   {
     "time": [
-      561.742873,
-      565.776383
+      557.325717,
+      569.37213
     ],
     "en": [
-      "so in that case we have that human to machine interaction"
+      "The Internet is a very complex network, and for the sake of this diagram all we need to know is that data from your computer passes through the Internet to reach the YouTube server."
     ],
     "ru": [
-      "так что в этом случае у нас есть взаимодействие человека с машиной"
+      "Интернет - очень сложная сеть, и для этой диаграммы все, что нам нужно знать, - это то, что данные с вашего компьютера проходят через Интернет, чтобы достичь сервера YouTube."
     ]
   },
   {
     "time": [
-      565.776383,
-      567.578706
+      569.37213,
+      573.899841
     ],
     "en": [
-      "somebody clicked on that request"
+      "The exact details of the Internet aren’t important for this diagram,"
     ],
     "ru": [
-      "кто-то щелкнул по этому запросу"
+      "Точные данные об Интернете не важны для этой диаграммы,"
     ]
   },
   {
     "time": [
-      567.578706,
-      569.550267
+      573.899841,
+      577.182007
     ],
     "en": [
-      "we're expecting to see the results come back"
+      "so we can simply use this cloud to represent the Internet."
     ],
     "ru": [
-      "мы ожидаем увидеть результаты снова"
+      "поэтому мы можем просто использовать это облако для представления Интернета."
     ]
   },
   {
     "time": [
-      569.550267,
-      572.07857
+      577.182007,
+      584.407894
     ],
     "en": [
-      "and we don't want to wait a lot of time to be able to do that"
+      "So, your computer sends a request to the YouTube server for this youtube page, including the video."
     ],
     "ru": [
-      "и мы не хотим ждать много времени, чтобы сделать это"
+      "Итак, ваш компьютер отправляет запрос на сервер YouTube для этой страницы YouTube, включая видео."
     ]
   },
   {
     "time": [
-      572.07857,
-      577.861818
+      584.407894,
+      591.339153
     ],
     "en": [
-      "where we actually worry about how long it takes for other people waiting for the response"
+      "And youtube’s server sends the data, passing through the Internet, back to your PC."
     ],
     "ru": [
-      "где мы на самом деле беспокоимся о том, сколько времени потребуется другим людям, ожидающим ответа"
+      "А сервер YouTube отправляет данные через Интернет обратно на ваш компьютер."
     ]
   },
   {
     "time": [
-      577.861818,
-      583.948544
+      591.339153,
+      595.252934
     ],
     "en": [
-      "and response time although important not quite so critical that it can't have a couple of delays in their"
+      "However, YouTube doesn’t send the data all at once."
     ],
     "ru": [
-      "и время отклика, хотя и важно, но не настолько критично, чтобы у него не могло быть пары задержек в их"
+      "Однако YouTube не отправляет данные сразу."
     ]
   },
   {
     "time": [
-      583.948544,
-      588.116254
+      595.252934,
+      600.261712
     ],
     "en": [
-      "real-time applications like voice over IP or video streaming"
+      "It sends you a stream of data until you’ve watched the whole video."
     ],
     "ru": [
-      "приложения реального времени, такие как передача голоса по IP или потоковое видео"
+      "Он отправляет вам поток данных, пока вы не посмотрите все видео."
     ]
   },
   {
     "time": [
-      588.116254,
-      589.47992
+      600.261712,
+      606.969188
     ],
     "en": [
-      "we do care about"
+      "For one more example, let’s say your want to get a video from your friend."
     ],
     "ru": [
-      "мы действительно заботимся о"
+      "Еще один пример. Допустим, вы хотите получить видео от друга."
     ]
   },
   {
     "time": [
-      589.47992,
-      592.528746
+      606.969188,
+      611.245468
     ],
     "en": [
-      "because if we're making a phone call over our network"
+      "You both have iphones, so you ask him to send you the video by airdrop."
     ],
     "ru": [
-      "потому что если мы звоним по нашей сети"
+      "У вас обоих есть айфоны, поэтому вы просите его отправить вам видео по воздуху."
     ]
   },
   {
     "time": [
-      592.528746,
-      596.23208
+      611.245468,
+      615.606527
     ],
     "en": [
-      "and we have a lot of delay it'll suddenly sound like we're on a CB radio"
+      "Your phone requests the video."
     ],
     "ru": [
-      "и у нас большая задержка, это внезапно будет звучать так, как будто мы на радио CB"
+      "Ваш телефон запрашивает видео."
     ]
   },
   {
     "time": [
-      596.23208,
-      598.168472
+      615.606527,
+      618.987186
     ],
     "en": [
-      "instead of actually on a phone"
+      "And his phone responds, sending the video."
     ],
     "ru": [
-      "вместо того, чтобы на самом деле по телефону"
+      "И его телефон отвечает, отправляя видео."
     ]
   },
   {
     "time": [
-      598.168472,
-      601.784849
+      618.987186,
+      623.970831
     ],
     "en": [
-      "or if there's a problem with the transfer of video and we're starting to see delays"
+      "You probably know it by know, but which phone is the client and which is the server?"
     ],
     "ru": [
-      "или если возникла проблема с передачей видео, и мы начинаем видеть задержки"
+      "Вы, наверное, знаете, но какой телефон является клиентом, а какой - сервером?"
     ]
   },
   {
     "time": [
-      601.784849,
-      604.710843
+      623.970831,
+      628.888043
     ],
     "en": [
-      "and skips making the video experience very bad"
+      "As you probably guessed, your phone on the left is the client."
     ],
     "ru": [
-      "и пропускает, что ухудшает качество видео"
+      "Как вы, наверное, догадались, ваш телефон слева - это клиент."
     ]
   },
   {
     "time": [
-      604.710843,
-      612.226557
+      628.888043,
+      632.354859
     ],
     "en": [
-      "or having a problem with the video and the voice coming together at the right time making your video look like a badly dubbed movie"
+      "And your friend’s phone on the right is the server."
     ],
     "ru": [
-      "или возникла проблема с воспроизведением видео и голоса в нужное время, из-за чего ваше видео выглядело как плохо дублированный фильм"
+      "А телефон вашего друга справа - это сервер."
     ]
   },
   {
     "time": [
-      612.226557,
-      614.666882
+      632.354859,
+      635.990257
     ],
     "en": [
-      "then that causes a lot of problems"
+      "To review once more."
     ],
     "ru": [
-      "тогда это вызывает много проблем"
+      "Чтобы повторить еще раз."
     ]
   },
   {
     "time": [
-      614.666882,
-      619.991249
+      635.990257,
+      640.263129
     ],
     "en": [
-      "that",
-      "is usually a human to human interaction doing voice or video phone calls"
+      "A client is a device that accesses a service made available by a server."
     ],
     "ru": [
-      "что",
-      "обычно человек общается с человеком, совершает голосовые или видеозвонки"
+      "Клиент - это устройство, которое обращается к сервису, предоставляемому сервером."
     ]
   },
   {
     "time": [
-      619.991249,
-      622.624206
+      640.263129,
+      646.105946
     ],
     "en": [
-      "and so it's very important that we don't have any delays"
+      "And, a server is a device that provide functions or services for clients."
     ],
     "ru": [
-      "и поэтому очень важно, чтобы у нас не было задержек"
+      "А сервер - это устройство, которое предоставляет клиентам функции или услуги."
     ]
   },
   {
     "time": [
-      622.624206,
-      626.558926
+      646.105946,
+      654.935258
     ],
     "en": [
-      "and so all of these are considerations you have to come through"
+      "Also, keep in mind the same device can be a client in some situations, and a server is other situations."
     ],
     "ru": [
-      "и поэтому все это соображения, которые вы должны пройти"
+      "Также имейте в виду, что одно и то же устройство может быть клиентом в одних ситуациях, а сервер - в других."
     ]
   },
   {
     "time": [
-      626.558926,
-      628.084853
+      654.935258,
+      661.309736
     ],
     "en": [
-      "when making the design of your network"
+      "Okay, hopefully you have a better idea of what a client is and what a server is."
     ],
     "ru": [
-      "при проектировании вашей сети"
+      "Хорошо, надеюсь, вы лучше понимаете, что такое клиент и что такое сервер."
     ]
   },
   {
     "time": [
-      628.084853,
-      632.477485
+      661.309736,
+      668.999157
     ],
     "en": [
-      "so we're going to talk about the characteristics of a network"
+      "Now let’s build out the network further, and show the next part of the connection between end hosts and the Internet."
     ],
     "ru": [
-      "Итак, мы собираемся поговорить о характеристиках сети"
+      "Теперь давайте построим сеть дальше и покажем следующую часть соединения между конечными хостами и Интернетом."
     ]
   },
   {
     "time": [
-      632.477485,
-      637.502841
+      668.999157,
+      673.478909
     ],
     "en": [
-      "the next couple of our slides are going to talk about the logical and physical topology"
+      "Let’s say this is a network for an Enterprise,"
     ],
     "ru": [
-      "следующая пара наших слайдов будет говорить о логической и физической топологии."
+      "Допустим, это сеть для предприятия,"
     ]
   },
   {
     "time": [
-      637.502841,
-      644.183992
+      673.478909,
+      678.091359
     ],
     "en": [
-      "but basically the topology is how do we connect one PC to another PC"
+      "and this Enterprise has a branch in New York, and a branch in Tokyo."
     ],
     "ru": [
-      "но в основном топология заключается в том, как мы подключим один ПК к другому ПК"
+      "и это предприятие имеет филиал в Нью-Йорке и филиал в Токио."
     ]
   },
   {
     "time": [
-      644.183992,
-      646.707137
+      678.091359,
+      683.687049
     ],
     "en": [
-      "or to a printer or something else"
+      "Of course, a real Enterprise branch will have more than just a couple PCs or a couple servers,"
     ],
     "ru": [
-      "или к принтеру или к чему-то другому"
+      "Конечно, в настоящем корпоративном филиале будет больше, чем пара ПК или пара серверов,"
     ]
   },
   {
     "time": [
-      646.707137,
-      649.449351
+      683.687049,
+      694.105767
     ],
     "en": [
-      "and that means there has to be some sort of a wire"
+      "but I also couldn’t",
+      "fit an entire network on this one slide! 687.564604",
+      "Typically you don’t connect end hosts like PCs or servers directly to each other."
     ],
     "ru": [
-      "а значит должен быть какой-то провод"
+      "но я тоже не мог",
+      "поместите всю сеть на одном слайде! 687,564604",
+      "Обычно вы не подключаете конечные хосты, такие как ПК или серверы, напрямую друг к другу."
     ]
   },
   {
     "time": [
-      649.449351,
-      653.41888
+      694.105767,
+      698.789556
     ],
     "en": [
-      "some sort of a device that can help make what we call a forwarding decision"
+      "You aggregate the connections to a device called a switch."
     ],
     "ru": [
-      "какое-то устройство, которое может помочь принять то, что мы называем решением о переадресации"
+      "Вы объединяете подключения к устройству, называемому коммутатором."
     ]
   },
   {
     "time": [
-      653.41888,
-      656.146506
+      698.789556,
+      703.640369
     ],
     "en": [
-      "because there may be more than one destination"
+      "As you can see, the two PCs are connected to SW1,"
     ],
     "ru": [
-      "потому что может быть более одного пункта назначения"
+      "Как видите, два ПК подключены к SW1,"
     ]
   },
   {
     "time": [
-      656.146506,
-      659.452757
+      703.640369,
+      706.81105
     ],
     "en": [
-      "and we need to make sure we get our traffic to the right destination"
+      "and the two servers are connected to SW2."
     ],
     "ru": [
-      "и нам нужно убедиться, что мы направляем наш трафик в нужное место"
+      "и два сервера подключены к SW2."
     ]
   },
   {
     "time": [
-      659.452757,
-      662.851705
+      706.81105,
+      712.625682
     ],
     "en": [
-      "so that we'll look at that topology information in just a little bit"
+      "Switches have lots of interfaces for you to connect end hosts to."
     ],
     "ru": [
-      "так что мы немного рассмотрим эту информацию о топологии"
+      "Коммутаторы имеют множество интерфейсов для подключения конечных хостов."
     ]
   },
   {
     "time": [
-      662.851705,
-      665.79307
+      712.625682,
+      716.438507
     ],
     "en": [
-      "this by the way is my drawing of a switch"
+      "Look at this Cisco Catalyst switch."
     ],
     "ru": [
-      "это, кстати, мой рисунок переключателя"
+      "Посмотрите на этот коммутатор Cisco Catalyst."
     ]
   },
   {
     "time": [
-      665.79307,
-      668.795623
+      716.438507,
+      723.044025
     ],
     "en": [
-      "I just didn't put all the extra arrows I guess I could therefore you"
+      "As you can see, lots of interfaces, or ports, to plug your PCs or servers into."
     ],
     "ru": [
-      "Я просто не положил все лишние стрелы, я думаю, что мог бы, поэтому ты"
+      "Как видите, множество интерфейсов или портов для подключения ваших ПК или серверов."
     ]
   },
   {
     "time": [
-      668.795623,
-      669.494333
+      723.044025,
+      729.237329
     ],
     "en": [
-      "there we go"
+      "Switches are used to forward traffic within a LAN, a local area network."
     ],
     "ru": [
-      "вот и мы"
+      "Коммутаторы используются для пересылки трафика внутри LAN, локальной сети."
     ]
   },
   {
     "time": [
-      669.494333,
-      672.495455
+      729.237329,
+      736.533775
     ],
     "en": [
-      "so one of the things we do look at a network is speed"
+      "PC1 and PC2, as well as other devices plugged into SW1,"
     ],
     "ru": [
-      "поэтому одна из вещей, которые мы делаем в сети, - это скорость"
+      "ПК1 и ПК2, а также другие устройства, подключенные к SW1,"
     ]
   },
   {
     "time": [
-      672.495455,
-      675.70529
+      736.533775,
+      739.486973
     ],
     "en": [
-      "speed is sometimes called bandwidth"
+      "such as a network printer, or another PC,"
     ],
     "ru": [
-      "скорость иногда называют пропускной способностью"
+      "например, сетевой принтер или другой компьютер,"
     ]
   },
   {
     "time": [
-      675.70529,
-      680.175899
+      739.486973,
+      742.874504
     ],
     "en": [
-      "it's about how much data can I send over this physical cable"
+      "all reside on the same local area network."
     ],
     "ru": [
-      "это о том, сколько данных я могу отправить по этому физическому кабелю"
+      "все находятся в одной локальной сети."
     ]
   },
   {
     "time": [
-      680.175899,
-      686.999988
+      742.874504,
+      748.41524
     ],
     "en": [
-      "there's also the use of cost cost is also important because we'll talk about a variety of speeds"
+      "The same goes for any devices connected to SW2 in the Tokyo Branch."
     ],
     "ru": [
-      "здесь также важно использование стоимости, потому что мы поговорим о различных скоростях"
+      "То же самое касается любых устройств, подключенных к SW2 в Токийском филиале."
     ]
   },
   {
     "time": [
-      686.999988,
-      691.433297
+      748.41524,
+      755.044959
     ],
     "en": [
-      "but the faster you want the speed of not only the traffic going over the cable"
+      "So, we have one LAN on the left, and one LAN on the right."
     ],
     "ru": [
-      "но чем быстрее вы хотите, скорость не только трафика, идущего по кабелю"
+      "Итак, у нас есть одна LAN слева и одна LAN справа."
     ]
   },
   {
     "time": [
-      691.433297,
-      702.41592
+      755.044959,
+      762.347438
     ],
     "en": [
-      "but the speed in which the device that you use a switch or router can help you in forwarding traffic can also become more expensive generally speaking"
+      "The hosts within each LAN can send data to each other, for example PC1 to PC2."
     ],
     "ru": [
-      "но скорость, с которой устройство, на котором вы используете коммутатор или маршрутизатор, может помочь вам в пересылке трафика, также может стать дороже, вообще говоря."
+      "Хосты в каждой локальной сети могут отправлять данные друг другу, например, с ПК1 на ПК2."
     ]
   },
   {
     "time": [
-      702.41592,
-      708.064626
+      762.347438,
+      768.015639
     ],
     "en": [
-      "we also look at the cost of how many devices can we connect with this switch or router"
+      "However, these switches cannot connect directly to the Internet."
     ],
     "ru": [
-      "мы также смотрим на стоимость того, сколько устройств мы можем подключить к этому коммутатору или маршрутизатору."
+      "Однако эти коммутаторы не могут напрямую подключаться к Интернету."
     ]
   },
   {
     "time": [
-      708.064626,
-      714.694059
+      768.015639,
+      772.324045
     ],
     "en": [
-      "security is always going to be an issue security is about making sure there's not some hacker out here"
+      "And send data between the two LANs."
     ],
     "ru": [
-      "безопасность всегда будет проблемой безопасность - это убедиться, что здесь нет хакера"
+      "И отправляйте данные между двумя локальными сетями."
     ]
   },
   {
     "time": [
-      714.694059,
-      717.066923
+      772.324045,
+      777.071868
     ],
     "en": [
-      "that might be a part of your network"
+      "So let’s talk more about switches."
     ],
     "ru": [
-      "это может быть частью вашей сети"
+      "Итак, поговорим подробнее о переключателях."
     ]
   },
   {
     "time": [
-      717.066923,
-      723.390306
+      777.071868,
+      782.082555
     ],
     "en": [
-      "that's trying to make a connection and steal communications or break into other people's devices"
+      "Here on the left is the same Cisco switch from the last slide."
     ],
     "ru": [
-      "пытается установить соединение и украсть сообщения или взломать устройства других людей"
+      "Здесь слева тот же коммутатор Cisco из последнего слайда."
     ]
   },
   {
     "time": [
-      723.390306,
-      727.480297
+      782.082555,
+      785.673191
     ],
     "en": [
-      "or even change the way in which your traffic moves across your network"
+      "It’s a Catalyst 9200 model switch."
     ],
     "ru": [
-      "или даже изменить способ, которым ваш трафик перемещается по вашей сети"
+      "Это коммутатор модели Catalyst 9200."
     ]
   },
   {
     "time": [
-      727.480297,
-      730.173697
+      785.673191,
+      789.805248
     ],
     "en": [
-      "so we are going to talk about some of those issues as well"
+      "On the right is a Catalyst 3650 model switch."
     ],
     "ru": [
-      "так что мы поговорим и о некоторых из этих проблем"
+      "Справа - коммутатор модели Catalyst 3650."
     ]
   },
   {
     "time": [
-      730.173697,
-      734.643332
+      789.805248,
+      795.086548
     ],
     "en": [
-      "security not only for the people who are trying to happily use the network"
+      "Catalyst switches are Cisco’s enterprise-grade switches,"
     ],
     "ru": [
-      "безопасность не только для людей, которые пытаются с удовольствием пользоваться сетью"
+      "Коммутаторы Catalyst - это коммутаторы корпоративного уровня Cisco,"
     ]
   },
   {
     "time": [
-      734.643332,
-      739.436847
+      795.086548,
+      797.83013
     ],
     "en": [
-      "but also security about the device itself that their inter connecting through"
+      "used by many enterprises to connect their LANs."
     ],
     "ru": [
-      "но также безопасность самого устройства, что их соединение через"
+      "используется многими предприятиями для подключения своих локальных сетей."
     ]
   },
   {
     "time": [
-      739.436847,
-      748.900101
+      797.83013,
+      802.031492
     ],
     "en": [
-      "availability is our discussion of what we sometimes call the mean time between failure so"
+      "Now let’s review some characteristics of switches."
     ],
     "ru": [
-      "доступность - это наше обсуждение того, что мы иногда называем средней наработкой на отказ, поэтому"
+      "Теперь рассмотрим некоторые характеристики переключателей."
     ]
   },
   {
     "time": [
-      748.900101,
-      752.680337
+      802.031492,
+      812.045876
     ],
     "en": [
-      "what's the odds of a cable breaking what would that do to us"
+      "Switches have many network interfaces or ports for end hosts, such as PCs, to connect to, usually 24 or more."
     ],
     "ru": [
-      "какова вероятность того, что кабель порвется, что это сделает с нами"
+      "Коммутаторы имеют множество сетевых интерфейсов или портов для подключения конечных хостов, таких как ПК, обычно 24 или более."
     ]
   },
   {
     "time": [
-      752.680337,
-      757.123138
+      812.045876,
+      819.062123
     ],
     "en": [
-      "what if the entire switch or router failed how would that affect communications"
+      "Switches provide connectivity to hosts within the same LAN, meaning Local Area Network."
     ],
     "ru": [
-      "что, если откажется весь коммутатор или маршрутизатор, как это повлияет на связь"
+      "Коммутаторы обеспечивают подключение к хостам в одной локальной сети, то есть в локальной сети."
     ]
   },
   {
     "time": [
-      757.123138,
-      760.228779
+      819.062123,
+      827.53807
     ],
     "en": [
-      "do we have a plan for having alternate paths"
+      "We’ll cover the details of LANs later, but for now just know it means end hosts within the same area,"
     ],
     "ru": [
-      "есть ли у нас план альтернативных путей"
+      "Мы рассмотрим детали локальных сетей позже, а пока просто знайте, что это означает, что конечные хосты находятся в одной и той же области,"
     ]
   },
   {
     "time": [
-      760.228779,
-      763.998492
+      827.53807,
+      830.717455
     ],
     "en": [
-      "scalability is when we decide to increase the size of our network"
+      "like a bunch of computers on one floor of an office,"
     ],
     "ru": [
-      "масштабируемость - это когда мы решаем увеличить размер нашей сети"
+      "как кучка компьютеров на одном этаже офиса,"
     ]
   },
   {
     "time": [
-      763.998492,
-      768.901292
+      830.717455,
+      834.866644
     ],
     "en": [
-      "scalability would be the discussion of should I add another switch"
+      "or perhaps an entire small office, or your home network."
     ],
     "ru": [
-      "масштабируемость будет обсуждаться, если я добавлю еще один переключатель"
+      "или, возможно, весь небольшой офис или ваша домашняя сеть."
     ]
   },
   {
     "time": [
-      768.901292,
-      774.303423
+      834.866644,
+      842.65211
     ],
     "en": [
-      "so I can add a few more endpoint devices into my network"
+      "Finally, switches do not provide connectivity between LANs or over the Internet."
     ],
     "ru": [
-      "так что я могу добавить еще несколько оконечных устройств в свою сеть"
+      "Наконец, коммутаторы не обеспечивают связь между локальными сетями или через Интернет."
     ]
   },
   {
     "time": [
-      774.303423,
-      781.722613
+      842.65211,
+      846.493452
     ],
     "en": [
-      "and what would that do to the bandwidth utilization or the amount of traffic that exists on there"
+      "To do so, we need another kind of network device."
     ],
     "ru": [
-      "и как это повлияет на использование полосы пропускания или объем трафика, который там существует"
+      "Для этого нам понадобится другое сетевое устройство."
     ]
   },
   {
     "time": [
-      781.722613,
-      787.908415
+      846.493452,
+      850.999024
     ],
     "en": [
-      "as well as reliability reliability still comes back to kind of like availability"
+      "That device is a router."
     ],
     "ru": [
-      "а также надежность надежность по-прежнему возвращается к своего рода доступности"
+      "Это устройство - маршрутизатор."
     ]
   },
   {
     "time": [
-      787.908415,
-      799.57874
+      850.999024,
+      854.643997
     ],
     "en": [
-      "letting us get a good understanding of can we suffer a single point of failure in other words if one cable went down again would we have as good of a network"
+      "We can connect the switches to routers like this,"
     ],
     "ru": [
-      "позволяя нам получить хорошее представление о том, можем ли мы столкнуться с единственной точкой отказа, другими словами, если бы один кабель снова вышел из строя, была бы у нас такая же хорошая сеть"
+      "Мы можем подключить коммутаторы к роутерам вот так,"
     ]
   },
   {
     "time": [
-      799.57874,
-      804.321852
+      854.643997,
+      857.430949
     ],
     "en": [
-      "the other part of reliability is what happens when I start introducing voice-over-ip"
+      "and then connect the routers to the Internet."
     ],
     "ru": [
-      "другая часть надежности - это то, что происходит, когда я начинаю внедрять передачу голоса по IP."
+      "а затем подключите маршрутизаторы к Интернету."
     ]
   },
   {
     "time": [
-      804.321852,
-      810.252954
+      857.430949,
+      864.462517
     ],
     "en": [
-      "somebody having a telephone which by the way I draw my telephones like the old dial telephones with a headset on the top"
+      "When end hosts in the New York Branch LAN want to communicate with end hosts in the Tokyo Branch LAN,"
     ],
     "ru": [
-      "у кого-то есть телефон, который, кстати, я рисую свои телефоны, как старые телефонные аппараты с набором номера с гарнитурой наверху"
+      "Когда конечные узлы в локальной сети филиала Нью-Йорка хотят установить связь с конечными узлами в локальной сети филиала Токио,"
     ]
   },
   {
     "time": [
-      810.252954,
-      822.252208
+      864.462517,
+      872.926584
     ],
     "en": [
-      "and how would that affect my communications in my network if I don't have either the availability or the reliability of being able to avoid congestion"
+      "they will send the data to their router, R1, which will then forward it to the Tokyo Branch LAN via the Internet."
     ],
     "ru": [
-      "и как это повлияет на мои коммуникации в моей сети, если у меня нет ни доступности, ни надежности, чтобы избежать перегрузки"
+      "они будут отправлять данные на свой маршрутизатор R1, который затем пересылает их в локальную сеть Токийского филиала через Интернет."
     ]
   },
   {
     "time": [
-      822.252208,
-      827.761553
+      872.926584,
+      880.658397
     ],
     "en": [
-      "one of our",
-      "earliest topologies was what we call the bus topology"
+      "For example, if PC1 in the New York Branch wants a file on SRV1 in the Tokyo Branch,"
     ],
     "ru": [
-      "один из наших",
-      "самые ранние топологии были то, что мы называем топологией шины"
+      "Например, если ПК1 в филиале в Нью-Йорке хочет получить файл на SRV1 в филиале в Токио,"
     ]
   },
   {
     "time": [
-      827.761553,
-      834.27675
+      880.658397,
+      885.53329
     ],
     "en": [
-      "each of these little spots actually represent an end point basically a computer laptop or something like that"
+      "it will send the request to R1 via SW1,"
     ],
     "ru": [
-      "каждое из этих маленьких пятен на самом деле представляет собой конечную точку, в основном компьютер, ноутбук или что-то в этом роде"
+      "он отправит запрос на R1 через SW1,"
     ]
   },
   {
     "time": [
-      834.27675,
-      839.391019
+      885.53329,
+      888.793617
     ],
     "en": [
-      "and what a bus topology was known for was that if any message was sent by a computer"
+      "which will forward it over the Internet to R2,"
     ],
     "ru": [
-      "топология шины была известна тем, что если какое-либо сообщение было отправлено компьютером"
+      "который будет пересылать его через Интернет на R2,"
     ]
   },
   {
     "time": [
-      839.391019,
-      841.846667
+      888.793617,
+      893.116161
     ],
     "en": [
-      "it was just a physical cable"
+      "which will then send it to SRV1 via SW2."
     ],
     "ru": [
-      "это был просто физический кабель"
+      "который затем отправит его в SRV1 через SW2."
     ]
   },
   {
     "time": [
-      841.846667,
-      846.070984
+      893.116161,
+      898.383417
     ],
     "en": [
-      "kind of like if you've ever plugged a power strip into a wall"
+      "The reply will then follow the reverse path back to PC1."
     ],
     "ru": [
-      "вроде как если бы вы когда-нибудь вставляли удлинитель в стену"
+      "Затем ответ будет отправлен обратно на ПК1."
     ]
   },
   {
     "time": [
-      846.070984,
-      851.026525
+      898.383417,
+      903.124906
     ],
     "en": [
-      "instead of having one electrical outlet then you have six electrical outlets everybody gets to share"
+      "So, let’s talk about some of the characteristics of routers."
     ],
     "ru": [
-      "вместо одной электрической розетки у вас есть шесть электрических розеток, которыми каждый может пользоваться"
+      "Итак, поговорим о некоторых характеристиках роутеров."
     ]
   },
   {
     "time": [
-      851.026525,
-      859.827579
+      903.124906,
+      912.026961
     ],
     "en": [
-      "that energy being sent through and so a bus would basically send your message out to everyone so everybody got to hear it"
+      "These are a few examples of Cisco routers you might find in use in an enterprise network."
     ],
     "ru": [
-      "эта энергия передается, и поэтому автобус в основном отправит ваше сообщение всем, чтобы все его услышали"
+      "Это несколько примеров маршрутизаторов Cisco, которые вы можете найти в корпоративной сети."
     ]
   },
   {
     "time": [
-      859.827579,
-      864.060522
+      912.026961,
+      918.765974
     ],
     "en": [
-      "if",
-      "you go back long enough in time we often call that a party line"
+      "The ISR 1000 and ISR 4000 have their network interfaces on the back,"
     ],
     "ru": [
-      "если",
-      "вы возвращаетесь достаточно долго во времени, мы часто называем это партийной линией"
+      "Сетевые интерфейсы ISR 1000 и ISR 4000 расположены сзади,"
     ]
   },
   {
     "time": [
-      864.060522,
-      870.658008
+      918.765974,
+      925.914413
     ],
     "en": [
-      "or if you have more than one actual landline in your house if you actually have phones that are landlines not cellular"
+      "but if you look at the ISR 900 you can probably notice a difference between a router and a switch."
     ],
     "ru": [
-      "или если у вас в доме несколько стационарных телефонов, если у вас есть телефоны, которые являются стационарными, а не сотовыми"
+      "но если вы посмотрите на ISR 900, вы, вероятно, заметите разницу между маршрутизатором и коммутатором."
     ]
   },
   {
     "time": [
-      870.658008,
-      875.391362
+      925.914413,
+      929.531015
     ],
     "en": [
-      "then that was generally a bus topology as well everybody got to hear your conversations"
+      "Let’s bring up one of the switches we looked at before."
     ],
     "ru": [
-      "тогда это вообще была топология шины, и все должны были слышать ваши разговоры"
+      "Давайте поднимем один из переключателей, на которые мы смотрели раньше."
     ]
   },
   {
     "time": [
-      875.391362,
-      882.392307
+      929.531015,
+      934.434622
     ],
     "en": [
-      "so think of it as a bus line then right we came in there it was like a bus route you hit all of the stops"
+      "Compared to this Catalyst 9200 series switch,"
     ],
     "ru": [
-      "так что подумайте об этом как об автобусной линии, тогда как раз мы вошли туда, это было похоже на автобусный маршрут, вы проезжаете все остановки"
+      "По сравнению с этим коммутатором серии Catalyst 9200,"
     ]
   },
   {
     "time": [
-      882.392307,
-      888.007457
+      934.434622,
+      939.278898
     ],
     "en": [
-      "the star topology was a way of connecting multiple devices"
+      "the ISR 900 router has relatively few network interfaces."
     ],
     "ru": [
-      "звездная топология была способом соединения нескольких устройств"
+      "Маршрутизатор ISR 900 имеет относительно немного сетевых интерфейсов."
     ]
   },
   {
     "time": [
-      888.007457,
-      890.942829
+      939.278898,
+      943.60104
     ],
     "en": [
-      "and I'm not quite so sure I like this little circle being in the middle"
+      "That’s one characteristic of routers compared to switches."
     ],
     "ru": [
-      "и я не совсем уверен, что мне нравится этот маленький кружок посередине"
+      "Это одна из характеристик маршрутизаторов по сравнению с коммутаторами."
     ]
   },
   {
     "time": [
-      890.942829,
-      895.58287
+      943.60104,
+      947.961969
     ],
     "en": [
-      "because generally we had it like a switch even a hub in the older days"
+      "Routers have fewer network interfaces than switches."
     ],
     "ru": [
-      "потому что обычно у нас это было как коммутатор, даже концентратор в прежние времена"
+      "Маршрутизаторы имеют меньше сетевых интерфейсов, чем коммутаторы."
     ]
   },
   {
     "time": [
-      895.58287,
-      897.328566
+      947.961969,
+      953.954608
     ],
     "en": [
-      "that were in the center of this"
+      "Also, remember that switches are used to forward data within a LAN."
     ],
     "ru": [
-      "что были в центре этого"
+      "Также помните, что переключатели используются для пересылки данных в локальной сети."
     ]
   },
   {
     "time": [
-      897.328566,
-      901.583852
+      953.954608,
+      956.362195
     ],
     "en": [
-      "but all the devices would connect to ports in this in this switch"
+      "Routers do the opposite."
     ],
     "ru": [
-      "но все устройства будут подключаться к портам в этом коммутаторе"
+      "Маршрутизаторы делают наоборот."
     ]
   },
   {
     "time": [
-      901.583852,
-      910.988746
+      956.362195,
+      960.366754
     ],
     "en": [
-      "and so you coming gave you the impression that everything radiated out from the central part kind of where the star topology came from"
+      "Routers are used to provide connectivity BETWEEN LANs."
     ],
     "ru": [
-      "и поэтому, когда вы пришли, у вас создалось впечатление, что все исходит из центральной части, откуда взялась топология звезды."
+      "Маршрутизаторы используются для обеспечения связи МЕЖДУ ЛВС."
     ]
   },
   {
     "time": [
-      910.988746,
-      917.349217
+      960.366754,
+      966.46017
     ],
     "en": [
-      "depending on the actual device if it was a switch and we'll talk about these differences"
+      "And, because of that, Routers are therefore used to send data over the Internet."
     ],
     "ru": [
-      "в зависимости от фактического устройства, если это был коммутатор, и мы поговорим об этих различиях"
+      "Поэтому маршрутизаторы используются для отправки данных через Интернет."
     ]
   },
   {
     "time": [
-      917.349217,
-      922.132072
+      966.46017,
+      973.859117
     ],
     "en": [
-      "if a communication went in that device would only send it out to the recipient"
+      "Here’s our network once again, but this time there’s a difference."
     ],
     "ru": [
-      "если сообщение было отправлено на этом устройстве, оно будет отправлено только получателю"
+      "Вот и наша сеть снова, но на этот раз есть разница."
     ]
   },
   {
     "time": [
-      922.132072,
-      925.570769
+      973.859117,
+      984.369638
     ],
     "en": [
-      "and not repeat that information for everybody that's on there"
+      "There is an attacker somewhere in the Internet, with an arsenal of many ways he could attack our networks to steal information or otherwise damage our Enterprise."
     ],
     "ru": [
-      "и не повторяйте эту информацию для всех, кто там"
+      "Где-то в Интернете есть злоумышленник, у которого есть множество способов атаковать наши сети, чтобы украсть информацию или иным образом нанести ущерб нашему предприятию."
     ]
   },
   {
     "time": [
-      925.570769,
-      931.853862
+      984.369638,
+      989.208192
     ],
     "en": [
-      "a mesh topology is where I am not connected to any one central device"
+      "Although routers can also provide some basic security features,"
     ],
     "ru": [
-      "сетчатая топология - это то, где я не подключен ни к одному центральному устройству"
+      "Хотя маршрутизаторы также могут предоставлять некоторые базовые функции безопасности,"
     ]
   },
   {
     "time": [
-      931.853862,
-      936.442518
+      989.208192,
+      994.400265
     ],
     "en": [
-      "but whether we have basically let's say maybe a switch or a router"
+      "what we should really be using to protect our networks is… A firewall."
     ],
     "ru": [
-      "но есть ли у нас в основном, скажем, коммутатор или маршрутизатор"
+      "то, что мы действительно должны использовать для защиты наших сетей, - это ... брандмауэр."
     ]
   },
   {
     "time": [
-      936.442518,
-      946.208038
+      994.400265,
+      1002.952705
     ],
     "en": [
-      "that has more than one connection to be able to send traffic so that if any one interface goes down then I still have another way of being able to send my traffic"
+      "Firewalls are specialty network security devices that control network traffic entering and exiting your network."
     ],
     "ru": [
-      "у которого есть более одного соединения, чтобы иметь возможность отправлять трафик, так что, если какой-либо интерфейс выйдет из строя, у меня все еще есть другой способ отправки моего трафика"
+      "Брандмауэры - это специальные устройства сетевой безопасности, которые контролируют входящий и исходящий сетевой трафик из вашей сети."
     ]
   },
   {
     "time": [
-      946.208038,
-      949.815344
+      1002.952705,
+      1011.86287
     ],
     "en": [
-      "now the Internet is it a great example of a mesh topology"
+      "Firewalls can be placed ‘outside’ of your router, like FW1, or ‘inside’ of your network, like FW2."
     ],
     "ru": [
-      "теперь Интернет - отличный пример топологии сетки"
+      "Брандмауэры могут быть размещены «вне» вашего маршрутизатора, например FW1, или «внутри» вашей сети, например, FW2."
     ]
   },
   {
     "time": [
-      949.815344,
-      953.309702
+      1011.86287,
+      1020.359884
     ],
     "en": [
-      "all of the service providers talk to each other"
+      "What’s important is that they protect the end hosts inside, like the PCs and Servers in this network."
     ],
     "ru": [
-      "все поставщики услуг разговаривают друг с другом"
+      "Важно то, что они защищают конечные хосты внутри, такие как ПК и серверы в этой сети."
     ]
   },
   {
     "time": [
-      953.309702,
-      960.935449
+      1020.359884,
+      1028.669231
     ],
     "en": [
-      "the service providers have their customers you and I and they facilitate the ability for you and I to talk to customers in their network"
+      "Firewalls must be configured with security rules to determine which network traffic should be allowed and which should be denied."
     ],
     "ru": [
-      "у поставщиков услуг есть клиенты, вы и я, и они облегчают вам и мне возможность разговаривать с клиентами в их сети"
+      "Брандмауэры должны быть настроены с правилами безопасности, чтобы определить, какой сетевой трафик следует разрешить, а какой - запретить."
     ]
   },
   {
     "time": [
-      960.935449,
-      963.213824
+      1028.669231,
+      1036.995455
     ],
     "en": [
-      "or to send our traffic to another service provider"
+      "If you configure the rules properly, if PC1 in the New York Branch tries to access SRV1 in Tokyo,"
     ],
     "ru": [
-      "или отправить наш трафик другому поставщику услуг"
+      "Если вы правильно настроили правила, если ПК1 в филиале в Нью-Йорке пытается получить доступ к SRV1 в Токио,"
     ]
   },
   {
     "time": [
-      963.213824,
-      966.36563
+      1036.995455,
+      1040.628934
     ],
     "en": [
-      "so we can talk to their customers"
+      "the firewalls should permit the traffic through."
     ],
     "ru": [
-      "чтобы мы могли поговорить с их клиентами"
+      "межсетевые экраны должны пропускать трафик."
     ]
   },
   {
     "time": [
-      966.36563,
-      970.582635
+      1040.628934,
+      1046.553635
     ],
     "en": [
-      "and so when we look at service providers we often think of them as little clouds"
+      "The return traffic from SRV 1 to PC1 should be allowed as well."
     ],
     "ru": [
-      "и поэтому, когда мы смотрим на поставщиков услуг, мы часто думаем о них как о маленьких облаках."
+      "Обратный трафик от SRV 1 к ПК1 также должен быть разрешен."
     ]
   },
   {
     "time": [
-      970.582635,
-      976.507476
+      1046.553635,
+      1054.401229
     ],
     "en": [
-      "and so again we have all of these little clouds talking to each other"
+      "However, if the attacker tries to access anything inside of our networks, the firewall should block it."
     ],
     "ru": [
-      "И снова у нас все эти маленькие облака разговаривают друг с другом"
+      "Однако, если злоумышленник пытается получить доступ к чему-либо внутри наших сетей, брандмауэр должен заблокировать это."
     ]
   },
   {
     "time": [
-      976.507476,
-      979.135329
+      1054.401229,
+      1059.449572
     ],
     "en": [
-      "now I'm not going to try to promote any one service provider"
+      "So let’s look at a couple of Cisco’s firewalls."
     ],
     "ru": [
-      "сейчас я не собираюсь продвигать какого-то одного поставщика услуг"
+      "Итак, давайте взглянем на пару межсетевых экранов Cisco."
     ]
   },
   {
     "time": [
-      979.135329,
-      983.232285
+      1059.449572,
+      1064.001405
     ],
     "en": [
-      "but you know who you use for your own internet at home they are a service provider"
+      "At the top here are two examples of Cisco firewalls."
     ],
     "ru": [
-      "но вы знаете, кого вы используете для собственного интернета дома, они - поставщик услуг"
+      "Вверху показаны два примера межсетевых экранов Cisco."
     ]
   },
   {
     "time": [
-      983.232285,
-      989.209641
+      1064.001405,
+      1069.491982
     ],
     "en": [
-      "and the idea of the mesh is that we make sure there's not just one way to get from where we are to where we want to go"
+      "On the left is an ASA5500-X series firewall."
     ],
     "ru": [
-      "а идея сетки заключается в том, что мы следим за тем, чтобы не было единственного способа добраться из того места, где мы сейчас, туда, где мы хотим идти."
+      "Слева - межсетевой экран серии ASA5500-X."
     ]
   },
   {
     "time": [
-      989.209641,
-      991.572541
+      1069.491982,
+      1075.907059
     ],
     "en": [
-      "it gives us a little bit of fault tolerance"
+      "The ASA, or adaptive security appliance, is Cisco’s classic firewall."
     ],
     "ru": [
-      "это дает нам немного отказоустойчивости"
+      "ASA, или устройство адаптивной безопасности, является классическим межсетевым экраном Cisco."
     ]
   },
   {
     "time": [
-      991.572541,
-      997.341128
+      1075.907059,
+      1091.172186
     ],
     "en": [
-      "so those are the three primary there is another one that often is talked about it's called a hybrid"
+      "Although the ASA is their classic firewall, modern",
+      "ASAs include modern features of so-called ‘next generation firewalls’, 1085.57209",
+      "including things like IPS or intrusion prevention system."
     ],
     "ru": [
-      "Итак, это три основных, есть еще один, о котором часто говорят, он называется гибридным"
+      "Хотя ASA является их классическим межсетевым экраном, современные",
+      "ASA включают современные функции так называемых «межсетевых экранов нового поколения», 1085.57209",
+      "включая такие вещи, как IPS или система предотвращения вторжений."
     ]
   },
   {
     "time": [
-      997.341128,
-      1004.972642
+      1091.172186,
+      1095.796422
     ],
     "en": [
-      "a hybrid is sometimes a combination of connecting maybe a bus to a star"
+      "You’ll hear a lot more about that in the security section of this course."
     ],
     "ru": [
-      "Гибрид иногда представляет собой комбинацию соединения, может быть, автобуса со звездой"
+      "Вы услышите об этом гораздо больше в разделе, посвященном безопасности этого курса."
     ]
   },
   {
     "time": [
-      1004.972642,
-      1007.805013
+      1095.796422,
+      1100.869909
     ],
     "en": [
-      "so you have both types of topologies set up for you"
+      "On the right is a Firepower 2100 series firewall."
     ],
     "ru": [
-      "так что у вас есть оба типа топологий, настроенных для вас"
+      "Справа - межсетевой экран Firepower серии 2100."
     ]
   },
   {
     "time": [
-      1007.805013,
-      1015.794269
+      1100.869909,
+      1104.366158
     ],
     "en": [
-      "one",
-      "of the most important parts about topologies is what I just talked about was a physical topology"
+      "This is a next-generation firewall as well."
     ],
     "ru": [
-      "один",
-      "из наиболее важных частей топологий - это то, о чем я только что говорил, это физическая топология."
+      "Это тоже межсетевой экран нового поколения."
     ]
   },
   {
     "time": [
-      1015.794269,
-      1017.906087
+      1104.366158,
+      1108.770638
     ],
     "en": [
-      "how the actual cables were laid out"
+      "Okay, let’s review some characteristics of firewalls."
     ],
     "ru": [
-      "как были проложены фактические кабели"
+      "Хорошо, давайте рассмотрим некоторые характеристики брандмауэров."
     ]
   },
   {
     "time": [
-      1017.906087,
-      1025.165518
+      1108.770638,
+      1115.573345
     ],
     "en": [
-      "a logical topology talks about the paths the signals used to travel from one point of a network to another"
+      "Firewalls monitor and control network traffic based on configured rules."
     ],
     "ru": [
-      "логическая топология говорит о путях, по которым сигналы передаются из одной точки сети в другую."
+      "Брандмауэры отслеживают и контролируют сетевой трафик на основе настроенных правил."
     ]
   },
   {
     "time": [
-      1025.165518,
-      1028.486904
+      1115.573345,
+      1121.860298
     ],
     "en": [
-      "and so I want to kind of talk a little bit about that"
+      "You explicitly configure which network traffic should be allowed in to your network, and which should not."
     ],
     "ru": [
-      "и поэтому я хочу немного поговорить об этом"
+      "Вы явно настраиваете, какой сетевой трафик должен быть разрешен для вашей сети, а какой нет."
     ]
   },
   {
     "time": [
-      1028.486904,
-      1030.047624
+      1121.860298,
+      1127.749188
     ],
     "en": [
-      "and go back in a bit of time"
+      "Firewalls can be placed ‘inside’ the network or ‘outside’ the network."
     ],
     "ru": [
-      "и вернуться через некоторое время"
+      "Брандмауэры могут быть размещены «внутри» сети или «вне» сети."
     ]
   },
   {
     "time": [
-      1030.047624,
-      1036.232576
+      1127.749188,
+      1131.900401
     ],
     "en": [
-      "for example a switch is designed to be a star topology physically and logically"
+      "Meaning, the firewall can filter traffic before it reaches the router,"
     ],
     "ru": [
-      "например, коммутатор физически и логически спроектирован как звездообразная топология"
+      "Это означает, что брандмауэр может фильтровать трафик до того, как он достигнет маршрутизатора,"
     ]
   },
   {
     "time": [
-      1036.232576,
-      1039.462762
+      1131.900401,
+      1134.773768
     ],
     "en": [
-      "but before we use switches we used a device called a hub"
+      "or after it has passed through the router."
     ],
     "ru": [
-      "но прежде чем использовать переключатели, мы использовали устройство, называемое концентратором"
+      "или после того, как он прошел через маршрутизатор."
     ]
   },
   {
     "time": [
-      1039.462762,
-      1046.425296
+      1134.773768,
+      1140.691058
     ],
     "en": [
-      "and for many of you who are new to this industry a hub and a switch might look very similar to you"
+      "In some cases, you might have a firewall inside and outside the network!"
     ],
     "ru": [
-      "и для многих из вас, кто плохо знаком с этой отраслью, концентратор и коммутатор могут выглядеть очень похожими на вас."
+      "В некоторых случаях у вас может быть брандмауэр внутри и вне сети!"
     ]
   },
   {
     "time": [
-      1046.425296,
-      1050.080617
+      1140.691058,
+      1149.615475
     ],
     "en": [
-      "in that it's a a single box with multiple ports"
+      "Firewalls are known as ‘next-generation firewalls’ when they include more modern and advanced filtering capabilties."
     ],
     "ru": [
-      "в том, что это одна коробка с несколькими портами"
+      "Межсетевые экраны известны как \"межсетевые экраны следующего поколения\", когда они включают в себя более современные и продвинутые возможности фильтрации."
     ]
   },
   {
     "time": [
-      1050.080617,
-      1055.142846
+      1149.615475,
+      1155.064523
     ],
     "en": [
-      "and our goal was to connect our pcs to each of these ports"
+      "Both of these Cisco firewalls are considered ‘next-generation firewalls’."
     ],
     "ru": [
-      "и нашей целью было подключить наши компьютеры к каждому из этих портов."
+      "Оба этих межсетевых экрана Cisco считаются «межсетевыми экранами нового поколения»."
     ]
   },
   {
     "time": [
-      1055.142846,
-      1060.087529
+      1155.064523,
+      1159.556522
     ],
     "en": [
-      "now physically this hub would look like a star"
+      "Now, I have one more thing to look at regarding firewalls."
     ],
     "ru": [
-      "теперь физически этот хаб будет выглядеть как звезда"
+      "Теперь мне нужно обратить внимание на брандмауэры."
     ]
   },
   {
     "time": [
-      1060.087529,
-      1062.903342
+      1159.556522,
+      1163.00394
     ],
     "en": [
-      "write it all radiates out from a center device"
+      "What about the firewall on your computer?"
     ],
     "ru": [
-      "напиши, все исходит из центрального устройства"
+      "Что насчет брандмауэра на вашем компьютере?"
     ]
   },
   {
     "time": [
-      1062.903342,
-      1070.193972
+      1163.00394,
+      1165.320698
     ],
     "en": [
-      "but",
-      "actually inside the way in which they were electrically connected was a hub"
+      "Let’s take a brief look."
     ],
     "ru": [
-      "но",
-      "на самом деле внутри способа, которым они были электрически связаны, был концентратор"
+      "Давайте кратко рассмотрим."
     ]
   },
   {
     "time": [
-      1070.193972,
-      1075.043343
+      1165.320698,
+      1171.091575
     ],
     "en": [
-      "so that if any transmission went into the switch or hub excuse me"
+      "The two firewalls we looked at in the previous slide are network firewalls."
     ],
     "ru": [
-      "так что, если какая-либо передача вошла в коммутатор или концентратор, извините меня"
+      "Два межсетевых экрана, которые мы рассмотрели на предыдущем слайде, являются сетевыми межсетевыми экранами."
     ]
   },
   {
     "time": [
-      1075.043343,
-      1077.407814
+      1171.091575,
+      1176.891448
     ],
     "en": [
-      "let me put hub here just so I keep remembering"
+      "Network firewalls are hardware devices that filter traffic between networks."
     ],
     "ru": [
-      "позвольте мне поставить здесь концентратор, чтобы я продолжал вспоминать"
+      "Сетевые брандмауэры - это аппаратные устройства, которые фильтруют трафик между сетями."
     ]
   },
   {
     "time": [
-      1077.407814,
-      1080.837154
+      1176.891448,
+      1181.203828
     ],
     "en": [
-      "it would exit every single port in that device"
+      "These are the kind of firewall we will focus on in this course,"
     ],
     "ru": [
-      "он выйдет из каждого порта в этом устройстве"
+      "Это тот вид брандмауэра, на котором мы сосредоточимся в этом курсе,"
     ]
   },
   {
     "time": [
-      1080.837154,
-      1084.402001
+      1181.203828,
+      1183.075054
     ],
     "en": [
-      "so logically it operated like a bus"
+      "as it is a networking course."
     ],
     "ru": [
-      "так логично он работал как автобус"
+      "поскольку это сетевой курс."
     ]
   },
   {
     "time": [
-      1084.402001,
-      1087.322797
+      1183.075054,
+      1187.371661
     ],
     "en": [
-      "physically it looked like a star"
+      "However, there are also Host-based firewalls."
     ],
     "ru": [
-      "физически это выглядело как звезда"
+      "Однако существуют также брандмауэры на основе хоста."
     ]
   },
   {
     "time": [
-      1087.322797,
-      1094.012808
+      1187.371661,
+      1195.9338
     ],
     "en": [
-      "so what we are interested in is both the physical layout physical topology and the logical"
+      "Host-based firewalls are software applications that filter traffic entering and exiting a host machine, like a PC."
     ],
     "ru": [
-      "так что нас интересует как физическая топология физической схемы, так и логическая"
+      "Межсетевые экраны на основе хоста - это программные приложения, которые фильтруют входящий и исходящий трафик с хост-машины, например, с ПК."
     ]
   },
   {
     "time": [
-      1094.012808,
-      1099.467416
+      1195.9338,
+      1202.169978
     ],
     "en": [
-      "how the paths are used for the signals that are being sent in"
+      "Your PC almost certainly has a software firewall installed, as it should."
     ],
     "ru": [
-      "как пути используются для сигналов, которые отправляются в"
+      "На вашем ПК почти наверняка установлен программный брандмауэр, как и должно быть."
     ]
   },
   {
     "time": [
-      1099.467416,
-      1104.805983
+      1202.169978,
+      1210.191727
     ],
     "en": [
-      "and how they are forwarded and how they travel basically from one point of the network to another"
+      "Even in a network with a hardware firewall, each PC should include a software firewall as an extra line of defense."
     ],
     "ru": [
-      "и как они пересылаются и как в основном перемещаются из одной точки сети в другую."
+      "Даже в сети с аппаратным брандмауэром каждый компьютер должен иметь программный брандмауэр в качестве дополнительной линии защиты."
     ]
   },
   {
     "time": [
-      1104.805983,
-      1112.948856
+      1210.191727,
+      1215.563038
     ],
     "en": [
-      "well the goal of this lesson was to talk about how a network is basically a connection of different devices"
+      "Okay, now we’re back to our definition of a network."
     ],
     "ru": [
-      "ну, цель этого урока состояла в том, чтобы поговорить о том, как сеть в основном представляет собой соединение различных устройств."
+      "Хорошо, теперь мы вернулись к нашему определению сети."
     ]
   },
   {
     "time": [
-      1112.948856,
-      1116.658499
+      1215.563038,
+      1219.5818
     ],
     "en": [
-      "that are designed to communicate with each other what we called endpoints"
+      "Do you understand more about each of these types of network nodes?"
     ],
     "ru": [
-      "которые предназначены для связи друг с другом, что мы называем конечными точками"
+      "Вы понимаете больше о каждом из этих типов сетевых узлов?"
     ]
   },
   {
     "time": [
-      1116.658499,
-      1121.839669
+      1219.5818,
+      1223.796714
     ],
     "en": [
-      "there were four major categories of the physical components in a computer network"
+      "Keep in mind, there are other kinds of network devices,"
     ],
     "ru": [
-      "В компьютерной сети было четыре основных категории физических компонентов"
+      "Имейте в виду, что существуют и другие типы сетевых устройств,"
     ]
   },
   {
     "time": [
-      1121.839669,
-      1129.520674
+      1223.796714,
+      1226.132738
     ],
     "en": [
-      "those were the endpoints that I called the computers the way in which they were interconnected with the physical cables the switches and the routers"
+      "and we’ll cover some of those later in this course."
     ],
     "ru": [
-      "это были конечные точки, которые я назвал компьютерами так, как они были связаны с физическими кабелями, коммутаторами и маршрутизаторами."
+      "и мы рассмотрим некоторые из них позже в этом курсе."
     ]
   },
   {
     "time": [
-      1129.520674,
-      1135.393763
+      1226.132738,
+      1230.348846
     ],
     "en": [
-      "now of course we can get into detail about any of the ways in which switches and routers work specifically"
+      "Stay tuned for this lecture’s supplementary materials"
     ],
     "ru": [
-      "теперь, конечно, мы можем подробно рассказать о любом из способов, которыми конкретно работают коммутаторы и маршрутизаторы."
+      "Следите за дополнительными материалами к этой лекции"
     ]
   },
   {
     "time": [
-      1135.393763,
-      1137.352866
+      1230.348846,
+      1233.090668
     ],
     "en": [
-      "but we're just looking at the diagrams"
+      "which will help you review and test your knowledge."
     ],
     "ru": [
-      "но мы просто смотрим на диаграммы"
+      "который поможет вам просмотреть и проверить свои знания."
     ]
   },
   {
     "time": [
-      1137.352866,
-      1141.230314
+      1233.090668,
+      1239.64725
     ],
     "en": [
-      "we talked about the icons that are going to be used to represent these different components of the network"
+      "In the next lecture we will look at the next two sentences of this Wikipedia definition of a computer network,"
     ],
     "ru": [
-      "мы говорили об иконках, которые будут использоваться для представления этих различных компонентов сети."
+      "В следующей лекции мы рассмотрим следующие два предложения этого определения компьютерной сети из Википедии:"
     ]
   },
   {
     "time": [
-      1141.230314,
-      1144.379439
+      1239.64725,
+      1244.511941
     ],
     "en": [
-      "and we also talked about some of the types of applications"
+      "focusing on the various kinds of connections between these network devices."
     ],
     "ru": [
-      "а также мы поговорили о некоторых типах приложений"
+      "уделяя особое внимание различным типам соединений между этими сетевыми устройствами."
     ]
   },
   {
     "time": [
-      1144.379439,
-      1146.664665
+      1244.511941,
+      1255.869231
     ],
     "en": [
-      "we want to be able to plan for whether"
+      "For this lecture, and all other lectures, there will be supplementary materials to help you practice and improve your understanding."
     ],
     "ru": [
-      "мы хотим иметь возможность планировать,"
+      "Для этой и всех других лекций будут дополнительные материалы, которые помогут вам попрактиковаться и улучшить свое понимание."
     ]
   },
   {
     "time": [
-      1146.664665,
-      1153.054314
+      1255.869231,
+      1263.043958
     ],
     "en": [
-      "they are a batch applications interactive or real-time like voice over IP or video"
+      "There will be three primary resources: End-of-video quizzes after each video."
     ],
     "ru": [
-      "они представляют собой пакетные приложения, интерактивные или работающие в режиме реального времени, такие как передача голоса по IP или видео."
+      "Будет три основных ресурса: Викторины в конце видео после каждого видео."
     ]
   },
   {
     "time": [
-      1153.054314,
-      1157.919157
+      1263.043958,
+      1266.861436
     ],
     "en": [
-      "we looked at the way in which we describe networks both physically and logically"
+      "This video’s quiz will be coming up right after this slide."
     ],
     "ru": [
-      "мы рассмотрели способ, которым мы описываем сети как физически, так и логически"
+      "Тест этого видео появится сразу после этого слайда."
     ]
   },
   {
     "time": [
-      1157.919157,
-      1160.666963
+      1266.861436,
+      1272.769913
     ],
     "en": [
-      "as far as the way in which they are designed"
+      "There will also be pre-made flashcards to review the lecture’s material,"
     ],
     "ru": [
-      "насколько они разработаны"
+      "Также будут готовые карточки для ознакомления с материалом лекции."
     ]
   },
   {
     "time": [
-      1160.666963,
-      1162.508323
+      1272.769913,
+      1275.759273
     ],
     "en": [
-      "that's what we call the topology"
+      "using the flashcard software ‘Anki’."
     ],
     "ru": [
-      "это то, что мы называем топологией"
+      "с помощью программного обеспечения для карточек Anki."
     ]
   },
   {
     "time": [
-      1162.508323,
-      1171.431511
+      1275.759273,
+      1280.229755
     ],
     "en": [
-      "now within that of course",
-      "we also needed to talk about some of the other ideas between speed cost security availability scalability and reliability"
+      "These flashcards will be included in the description of each video."
     ],
     "ru": [
-      "теперь в пределах этого, конечно",
-      "нам также нужно было поговорить о некоторых других идеях между скоростью, стоимостью, безопасностью, масштабируемостью и надежностью."
+      "Эти карточки будут включены в описание каждого видео."
     ]
   },
   {
     "time": [
-      1171.431511,
-      1176.725883
+      1280.229755,
+      1288.265735
     ],
     "en": [
-      "now remember a physical topology is the way in which the wiring is laid out"
+      "Since this is the first video, however, I will make a separate video explaining how to download and use the Anki software."
     ],
     "ru": [
-      "теперь помните, что физическая топология - это способ прокладки проводов"
+      "Однако, поскольку это первое видео, я сделаю отдельное видео, объясняющее, как загрузить и использовать программное обеспечение Anki."
     ]
   },
   {
     "time": [
-      1176.725883,
-      1184.742261
+      1288.265735,
+      1295.91971
     ],
     "en": [
-      "a logical topology was about the paths that the traffic took"
+      "If you already know how to use Anki, feel free to download this video’s flashcards in the description and get started."
     ],
     "ru": [
-      "логическая топология была о путях, по которым проходил трафик"
+      "Если вы уже знаете, как использовать Anki, не стесняйтесь загружать карточки из этого видео в описании и приступать к работе."
     ]
   },
   {
     "time": [
-      1176.725883,
-      1184.742261
+      1295.91971,
+      1300.48622
     ],
     "en": [
-      "a logical topology was about the paths that the traffic took"
+      "Otherwise, wait for the next video and I’ll show you how."
     ],
     "ru": [
-      "логическая топология была о путях, по которым проходил трафик"
+      "В противном случае дождитесь следующего видео, и я покажу вам, как это сделать."
     ]
   },
   {
     "time": [
-      1184.742261,
-      1184.742261
+      1300.48622,
+      1308.03862
+    ],
+    "en": [
+      "Just one recommendation: As I will upload a separate flashcard deck for each video,"
+    ],
+    "ru": [
+      "Только одна рекомендация: так как я загружу отдельную колоду карточек для каждого видео,"
+    ]
+  },
+  {
+    "time": [
+      1308.03862,
+      1313.568205
+    ],
+    "en": [
+      "instead of having many separate decks, 1310.386106",
+      "I recommend you create one CCNA deck"
+    ],
+    "ru": [
+      "вместо множества отдельных колод 1310.386106",
+      "Я рекомендую вам создать одну колоду CCNA"
+    ]
+  },
+  {
+    "time": [
+      1313.568205,
+      1317.018753
+    ],
+    "en": [
+      "and then transfer the new cards to that central deck."
+    ],
+    "ru": [
+      "а затем перенесите новые карты в эту центральную колоду."
+    ]
+  },
+  {
+    "time": [
+      1317.018753,
+      1326.262221
+    ],
+    "en": [
+      "Finally, there will be a practice lab using Cisco’s network simulation software ‘Packet Tracer’ for each and every video."
+    ],
+    "ru": [
+      "Наконец, будет проведена практическая лаборатория с использованием программного обеспечения Cisco для моделирования сети «Packet Tracer» для каждого видео."
+    ]
+  },
+  {
+    "time": [
+      1326.262221,
+      1330.046235
+    ],
+    "en": [
+      "I will release separate videos for these practice labs,"
+    ],
+    "ru": [
+      "Я выпущу отдельные видео для этих практических занятий,"
+    ]
+  },
+  {
+    "time": [
+      1330.046235,
+      1336.921687
+    ],
+    "en": [
+      "and will include the packet tracer file in the descriptions of those videos so you can download them, and complete them yourself."
+    ],
+    "ru": [
+      "и будет включать файл трассировки пакетов в описания этих видеороликов, чтобы вы могли их загрузить и заполнить самостоятельно."
+    ]
+  },
+  {
+    "time": [
+      1336.921687,
+      1344.320399
+    ],
+    "en": [
+      "The packet practice lab for this video will be a demonstration of how to download packet tracer and get started with it."
+    ],
+    "ru": [
+      "Практическая работа с пакетами для этого видео будет демонстрацией того, как загрузить пакетный трассировщик и начать работу с ним."
+    ]
+  },
+  {
+    "time": [
+      1344.320399,
+      1348.250523
+    ],
+    "en": [
+      "Now, let’s go on to this video’s quiz."
+    ],
+    "ru": [
+      "А теперь давайте перейдем к викторине по этому видео."
+    ]
+  },
+  {
+    "time": [
+      1348.250523,
+      1351.619177
+    ],
+    "en": [
+      "Select the best answer from the available choices."
+    ],
+    "ru": [
+      "Выберите лучший ответ из доступных вариантов."
+    ]
+  },
+  {
+    "time": [
+      1351.619177,
+      1359.846831
+    ],
+    "en": [
+      "In some cases there are multiple answers that could possibly be correct, but there will always be one best choice."
+    ],
+    "ru": [
+      "В некоторых случаях есть несколько ответов, которые могут быть правильными, но всегда будет один лучший выбор."
+    ]
+  },
+  {
+    "time": [
+      1359.846831,
+      1363.858894
+    ],
+    "en": [
+      "Cisco exams tend to have lots of questions like that,"
+    ],
+    "ru": [
+      "Экзамены Cisco, как правило, содержат много таких вопросов,"
+    ]
+  },
+  {
+    "time": [
+      1363.858894,
+      1367.222153
+    ],
+    "en": [
+      "so hopefully some of these will be able to test you in a similar manner."
+    ],
+    "ru": [
+      "так что надеюсь, что некоторые из них смогут протестировать вас аналогичным образом."
+    ]
+  },
+  {
+    "time": [
+      1367.222153,
+      1371.991343
+    ],
+    "en": [
+      "This first video’s quiz questions, however, shouldn’t be too difficult."
+    ],
+    "ru": [
+      "Однако вопросы викторины в этом первом видео не должны быть слишком сложными."
+    ]
+  },
+  {
+    "time": [
+      1371.991343,
+      1381.219477
+    ],
+    "en": [
+      "Your company wants to purchase some network hardware to which they can connect the 30 PCs in your department."
+    ],
+    "ru": [
+      "Ваша компания хочет приобрести сетевое оборудование, к которому они могут подключить 30 компьютеров в вашем отделе."
+    ]
+  },
+  {
+    "time": [
+      1381.219477,
+      1384.121492
+    ],
+    "en": [
+      "Which type of network device is appropriate?"
+    ],
+    "ru": [
+      "Какой тип сетевого устройства подходит?"
+    ]
+  },
+  {
+    "time": [
+      1384.121492,
+      1394.175379
+    ],
+    "en": [
+      "A, a router. B, a firewall. C, a switch. Or D, a server."
+    ],
+    "ru": [
+      "А, роутер. Б, межсетевой экран. C, переключатель. Или D, сервер."
+    ]
+  },
+  {
+    "time": [
+      1394.175379,
+      1397.443198
+    ],
+    "en": [
+      "Pause the video to think about your answer."
+    ],
+    "ru": [
+      "Поставьте видео на паузу, чтобы подумать над своим ответом."
+    ]
+  },
+  {
+    "time": [
+      1397.443198,
+      1405.753995
+    ],
+    "en": [
+      "The answer is C, a switch."
+    ],
+    "ru": [
+      "Ответ - C, переключатель."
+    ]
+  },
+  {
+    "time": [
+      1405.753995,
+      1410.933387
+    ],
+    "en": [
+      "Let’s analyze each of the incorrect answers first, then the correct answer."
+    ],
+    "ru": [
+      "Давайте сначала проанализируем каждый из неправильных ответов, а затем - правильный."
+    ]
+  },
+  {
+    "time": [
+      1410.933387,
+      1419.987267
+    ],
+    "en": [
+      "A router, like this Cisco ISR 900 series router, is designed for forwarding traffic between networks,"
+    ],
+    "ru": [
+      "Маршрутизатор, такой как этот маршрутизатор серии Cisco ISR 900, предназначен для пересылки трафика между сетями,"
+    ]
+  },
+  {
+    "time": [
+      1419.987267,
+      1423.298125
+    ],
+    "en": [
+      "not for connecting lots of end hosts like PCs to."
+    ],
+    "ru": [
+      "не для подключения большого количества конечных хостов, например ПК."
+    ]
+  },
+  {
+    "time": [
+      1423.298125,
+      1429.513683
+    ],
+    "en": [
+      "Also, a router will not typically have 30 network interfaces to connect hosts to."
+    ],
+    "ru": [
+      "Кроме того, маршрутизатор обычно не имеет 30 сетевых интерфейсов для подключения хостов."
+    ]
+  },
+  {
+    "time": [
+      1429.513683,
+      1432.987473
+    ],
+    "en": [
+      "So, A, a router, is incorrect."
+    ],
+    "ru": [
+      "Итак, A, роутер, неверен."
+    ]
+  },
+  {
+    "time": [
+      1432.987473,
+      1444.486429
+    ],
+    "en": [
+      "A firewall, like this Cisco ASA 5500-X series firewall, is designed to filter traffic as it enters and exits the local network."
+    ],
+    "ru": [
+      "Межсетевой экран, подобный межсетевому экрану серии Cisco ASA 5500-X, предназначен для фильтрации трафика при входе и выходе из локальной сети."
+    ]
+  },
+  {
+    "time": [
+      1444.486429,
+      1447.901149
+    ],
+    "en": [
+      "It is not designed to connect directly to end hosts,"
+    ],
+    "ru": [
+      "Он не предназначен для прямого подключения к конечным хостам,"
+    ]
+  },
+  {
+    "time": [
+      1447.901149,
+      1451.646913
+    ],
+    "en": [
+      "and typically will not have enough network interfaces for 30 hosts."
+    ],
+    "ru": [
+      "и обычно не хватает сетевых интерфейсов для 30 хостов."
+    ]
+  },
+  {
+    "time": [
+      1451.646913,
+      1455.863915
+    ],
+    "en": [
+      "So, B, a firewall, is incorrect."
+    ],
+    "ru": [
+      "Итак, B, брандмауэр, неверен."
+    ]
+  },
+  {
+    "time": [
+      1455.863915,
+      1460.594598
+    ],
+    "en": [
+      "A server is an end host itself,"
+    ],
+    "ru": [
+      "Сервер - это сам конечный хост,"
+    ]
+  },
+  {
+    "time": [
+      1460.594598,
+      1464.274579
+    ],
+    "en": [
+      "not a networking device to which you will connect other end hosts."
+    ],
+    "ru": [
+      "не сетевое устройство, к которому вы будете подключать другие конечные хосты."
+    ]
+  },
+  {
+    "time": [
+      1464.274579,
+      1467.947532
+    ],
+    "en": [
+      "So, D, a server, is incorrect."
+    ],
+    "ru": [
+      "Итак, D, сервер, неверен."
+    ]
+  },
+  {
+    "time": [
+      1467.947532,
+      1478.863936
+    ],
+    "en": [
+      "A switch, like this Cisco Catalyst 9200 series switch, is designed to connect many end hosts in the same LAN together."
+    ],
+    "ru": [
+      "Коммутатор, такой как этот коммутатор серии Cisco Catalyst 9200, предназначен для соединения множества конечных хостов в одной локальной сети."
+    ]
+  },
+  {
+    "time": [
+      1478.863936,
+      1482.692456
+    ],
+    "en": [
+      "They include many network interfaces to connect hosts to."
+    ],
+    "ru": [
+      "Они включают в себя множество сетевых интерфейсов для подключения хостов."
+    ]
+  },
+  {
+    "time": [
+      1482.692456,
+      1486.688558
+    ],
+    "en": [
+      "So, C, a switch, is the correct answer."
+    ],
+    "ru": [
+      "Итак, C, переключатель, - правильный ответ."
+    ]
+  },
+  {
+    "time": [
+      1486.688558,
+      1489.431401
+    ],
+    "en": [
+      "Okay let’s go on to the next question."
+    ],
+    "ru": [
+      "Хорошо, перейдем к следующему вопросу."
+    ]
+  },
+  {
+    "time": [
+      1489.431401,
+      1496.864283
+    ],
+    "en": [
+      "You received a video file from your friend’s Apple iPhone using AirDrop."
+    ],
+    "ru": [
+      "Вы получили видеофайл с Apple iPhone вашего друга с помощью AirDrop."
+    ]
+  },
+  {
+    "time": [
+      1496.864283,
+      1500.61134
+    ],
+    "en": [
+      "What was his iPhone functioning as in that transaction?"
+    ],
+    "ru": [
+      "Как его iPhone работал в той транзакции?"
+    ]
+  },
+  {
+    "time": [
+      1500.61134,
+      1509.291457
+    ],
+    "en": [
+      "A, a server. B, a client. Or C, a local area network."
+    ],
+    "ru": [
+      "А, сервер. Б, клиент. Или C, локальная сеть."
+    ]
+  },
+  {
+    "time": [
+      1509.291457,
+      1512.922419
+    ],
+    "en": [
+      "Pause the video to think about your answer."
+    ],
+    "ru": [
+      "Поставьте видео на паузу, чтобы подумать над своим ответом."
+    ]
+  },
+  {
+    "time": [
+      1512.922419,
+      1519.801227
+    ],
+    "en": [
+      "The answer is A, a server."
+    ],
+    "ru": [
+      "Ответ - А, сервер."
+    ]
+  },
+  {
+    "time": [
+      1519.801227,
+      1523.21716
+    ],
+    "en": [
+      "Lets’ check the answers."
+    ],
+    "ru": [
+      "Давайте проверим ответы."
+    ]
+  },
+  {
+    "time": [
+      1523.21716,
+      1527.247023
+    ],
+    "en": [
+      "In this case your iPhone, not your friend’s iPhone."
+    ],
+    "ru": [
+      "В этом случае ваш iPhone, а не iPhone вашего друга."
+    ]
+  },
+  {
+    "time": [
+      1527.247023,
+      1534.436786
+    ],
+    "en": [
+      "A client accesses a service, it does not provide a service."
+    ],
+    "ru": [
+      "Клиент обращается к услуге, но не предоставляет услугу."
+    ]
+  },
+  {
+    "time": [
+      1534.436786,
+      1537.956915
+    ],
+    "en": [
+      "So, B, a client, is incorrect."
+    ],
+    "ru": [
+      "Итак, B, клиент, не прав."
+    ]
+  },
+  {
+    "time": [
+      1537.956915,
+      1546.396875
+    ],
+    "en": [
+      "An end host like an iPhone does not function as a local area network (LAN) by itself."
+    ],
+    "ru": [
+      "Конечный хост, такой как iPhone, сам по себе не функционирует как локальная сеть (LAN)."
+    ]
+  },
+  {
+    "time": [
+      1546.396875,
+      1549.686252
+    ],
+    "en": [
+      "It can, however, be a part of a local area network."
+    ],
+    "ru": [
+      "Однако он может быть частью локальной сети."
+    ]
+  },
+  {
+    "time": [
+      1549.686252,
+      1554.396164
+    ],
+    "en": [
+      "So, C, a local area network, is incorrect."
+    ],
+    "ru": [
+      "Итак, C, локальная сеть, неверна."
+    ]
+  },
+  {
+    "time": [
+      1554.396164,
+      1560.596789
+    ],
+    "en": [
+      "A server is a device that provides functions or services for clients."
+    ],
+    "ru": [
+      "Сервер - это устройство, которое предоставляет клиентам функции или услуги."
+    ]
+  },
+  {
+    "time": [
+      1560.596789,
+      1565.631501
+    ],
+    "en": [
+      "In this case, your friend’s phone provided the file to your iPhone."
+    ],
+    "ru": [
+      "В этом случае телефон вашего друга предоставил файл вашему iPhone."
+    ]
+  },
+  {
+    "time": [
+      1565.631501,
+      1569.33916
+    ],
+    "en": [
+      "So, A, a server, is the correct answer."
+    ],
+    "ru": [
+      "Итак, A - сервер - правильный ответ."
+    ]
+  },
+  {
+    "time": [
+      1569.33916,
+      1572.086321
+    ],
+    "en": [
+      "Let’s go to the next question."
+    ],
+    "ru": [
+      "Перейдем к следующему вопросу."
+    ]
+  },
+  {
+    "time": [
+      1572.086321,
+      1578.649763
+    ],
+    "en": [
+      "What is your computer or smartphone functioning as while you watch this video?"
+    ],
+    "ru": [
+      "Как работает ваш компьютер или смартфон, пока вы смотрите это видео?"
+    ]
+  },
+  {
+    "time": [
+      1578.649763,
+      1586.213693
+    ],
+    "en": [
+      "A, a server. B, an end host. Or C, a client."
+    ],
+    "ru": [
+      "А, сервер. Б, конечный хозяин. Или C, клиент."
+    ]
+  },
+  {
+    "time": [
+      1586.213693,
+      1589.925121
+    ],
+    "en": [
+      "Pause the video to think about your answer."
+    ],
+    "ru": [
+      "Поставьте видео на паузу, чтобы подумать над своим ответом."
+    ]
+  },
+  {
+    "time": [
+      1589.925121,
+      1596.602429
+    ],
+    "en": [
+      "The answer is C, a client."
+    ],
+    "ru": [
+      "Ответ - C, клиент."
+    ]
+  },
+  {
+    "time": [
+      1596.602429,
+      1598.615561
+    ],
+    "en": [
+      "Let’s check the answers."
+    ],
+    "ru": [
+      "Давай проверим ответы."
+    ]
+  },
+  {
+    "time": [
+      1598.615561,
+      1606.549009
+    ],
+    "en": [
+      "Your device is receiving a service, not providing one, so it is not functioning as a server."
+    ],
+    "ru": [
+      "Ваше устройство получает услугу, а не предоставляет ее, поэтому не работает как сервер."
+    ]
+  },
+  {
+    "time": [
+      1606.549009,
+      1609.891578
+    ],
+    "en": [
+      "Therefore A, a server, is incorrect."
+    ],
+    "ru": [
+      "Следовательно, сервер A неверен."
+    ]
+  },
+  {
+    "time": [
+      1609.891578,
+      1616.445374
+    ],
+    "en": [
+      "Although your device is an end host, that does not describe its function."
+    ],
+    "ru": [
+      "Хотя ваше устройство является конечным хостом, это не описывает его функции."
+    ]
+  },
+  {
+    "time": [
+      1616.445374,
+      1620.799173
+    ],
+    "en": [
+      "Both servers and clients are end hosts in a network."
+    ],
+    "ru": [
+      "И серверы, и клиенты являются конечными хостами в сети."
+    ]
+  },
+  {
+    "time": [
+      1620.799173,
+      1624.480649
+    ],
+    "en": [
+      "So, B, an end host, is incorrect."
+    ],
+    "ru": [
+      "Итак, конечный хост B неверен."
+    ]
+  },
+  {
+    "time": [
+      1624.480649,
+      1629.789287
+    ],
+    "en": [
+      "Your device is receiving a service from YouTube’s servers."
+    ],
+    "ru": [
+      "Ваше устройство получает услугу с серверов YouTube."
+    ]
+  },
+  {
+    "time": [
+      1629.789287,
+      1633.145436
+    ],
+    "en": [
+      "Therefore, it is functioning as a client."
+    ],
+    "ru": [
+      "Следовательно, он функционирует как клиент."
+    ]
+  },
+  {
+    "time": [
+      1633.145436,
+      1636.263727
+    ],
+    "en": [
+      "So, C, a client, is the correct answer."
+    ],
+    "ru": [
+      "Итак, C, клиент, - правильный ответ."
+    ]
+  },
+  {
+    "time": [
+      1636.263727,
+      1638.154822
+    ],
+    "en": [
+      "Let’s go to the next question."
+    ],
+    "ru": [
+      "Перейдем к следующему вопросу."
+    ]
+  },
+  {
+    "time": [
+      1638.154822,
+      1645.64202
+    ],
+    "en": [
+      "Your company wants to purchase some network hardware to connect its separate networks together."
+    ],
+    "ru": [
+      "Ваша компания хочет приобрести сетевое оборудование, чтобы соединить отдельные сети вместе."
+    ]
+  },
+  {
+    "time": [
+      1645.64202,
+      1649.009506
+    ],
+    "en": [
+      "What kind of network device is appropriate?"
+    ],
+    "ru": [
+      "Какое сетевое устройство подходит?"
+    ]
+  },
+  {
+    "time": [
+      1649.009506,
+      1659.613586
+    ],
+    "en": [
+      "A, a firewall. B, a host. C, a LAN. Or D, a router."
+    ],
+    "ru": [
+      "А, межсетевой экран. Б, хозяин. C, локальная сеть. Или D, роутер."
+    ]
+  },
+  {
+    "time": [
+      1659.613586,
+      1663.172257
+    ],
+    "en": [
+      "Pause the video to think about your answer."
+    ],
+    "ru": [
+      "Поставьте видео на паузу, чтобы подумать над своим ответом."
+    ]
+  },
+  {
+    "time": [
+      1663.172257,
+      1669.504758
+    ],
+    "en": [
+      "The answer is D, a router."
+    ],
+    "ru": [
+      "Ответ - D, роутер."
+    ]
+  },
+  {
+    "time": [
+      1669.504758,
+      1670.622068
+    ],
+    "en": [
+      "Let's check."
+    ],
+    "ru": [
+      "Давайте проверим."
+    ]
+  },
+  {
+    "time": [
+      1670.622068,
+      1675.864806
+    ],
+    "en": [
+      "Although a firewall can connect multiple networks together,"
+    ],
+    "ru": [
+      "Хотя брандмауэр может соединять несколько сетей вместе,"
+    ]
+  },
+  {
+    "time": [
+      1675.864806,
+      1681.243419
+    ],
+    "en": [
+      "its real purpose is to monitor and control traffic as it enters and exits the network."
+    ],
+    "ru": [
+      "его реальная цель - отслеживать и контролировать трафик, входящий в сеть и выходящий из нее."
+    ]
+  },
+  {
+    "time": [
+      1681.243419,
+      1685.034815
+    ],
+    "en": [
+      "So, A, a firewall, is not the best answer."
+    ],
+    "ru": [
+      "Итак, A, брандмауэр - не лучший ответ."
+    ]
+  },
+  {
+    "time": [
+      1685.034815,
+      1690.835572
+    ],
+    "en": [
+      "The term ‘host’ can refer to any type of network node."
+    ],
+    "ru": [
+      "Термин «хост» может относиться к любому типу сетевого узла."
+    ]
+  },
+  {
+    "time": [
+      1690.835572,
+      1694.019074
+    ],
+    "en": [
+      "So B, a host, is incorrect."
+    ],
+    "ru": [
+      "Итак, B, хост, неверен."
+    ]
+  },
+  {
+    "time": [
+      1694.019074,
+      1698.896368
+    ],
+    "en": [
+      "LAN stands for Local Area Network."
+    ],
+    "ru": [
+      "LAN означает локальную сеть."
+    ]
+  },
+  {
+    "time": [
+      1698.896368,
+      1701.622408
+    ],
+    "en": [
+      "A LAN is not a network device itself."
+    ],
+    "ru": [
+      "Локальная сеть сама по себе не является сетевым устройством."
+    ]
+  },
+  {
+    "time": [
+      1701.622408,
+      1704.932616
+    ],
+    "en": [
+      "So, C, a LAN, is incorrect."
+    ],
+    "ru": [
+      "Итак, C, LAN, неверен."
+    ]
+  },
+  {
+    "time": [
+      1704.932616,
+      1711.912618
+    ],
+    "en": [
+      "A router is a device that is designed to connect and forward network traffic between multiple networks."
+    ],
+    "ru": [
+      "Маршрутизатор - это устройство, предназначенное для подключения и пересылки сетевого трафика между несколькими сетями."
+    ]
+  },
+  {
+    "time": [
+      1711.912618,
+      1716.66589
+    ],
+    "en": [
+      "So, D, a router, is the correct answer."
+    ],
+    "ru": [
+      "Итак, D, маршрутизатор, - правильный ответ."
+    ]
+  },
+  {
+    "time": [
+      1716.66589,
+      1720.021627
+    ],
+    "en": [
+      "Let’s go to the final quiz question for this video."
+    ],
+    "ru": [
+      "Перейдем к последнему вопросу викторины для этого видео."
+    ]
+  },
+  {
+    "time": [
+      1720.021627,
+      1726.295656
+    ],
+    "en": [
+      "Your company wants to upgrade its old network firewall that has been in use for several years"
+    ],
+    "ru": [
+      "Ваша компания хочет обновить свой старый сетевой брандмауэр, который используется в течение нескольких лет."
+    ]
+  },
+  {
+    "time": [
+      1726.295656,
+      1729.553168
+    ],
+    "en": [
+      "to one that provides more advanced functions."
+    ],
+    "ru": [
+      "на тот, который предоставляет более продвинутые функции."
+    ]
+  },
+  {
+    "time": [
+      1729.553168,
+      1732.88488
+    ],
+    "en": [
+      "What kind of firewall should they purchase?"
+    ],
+    "ru": [
+      "Какой брандмауэр им следует приобрести?"
+    ]
+  },
+  {
+    "time": [
+      1732.88488,
+      1748.26403
+    ],
+    "en": [
+      "A, a host-based firewall. B, a next-level firewall. C, a next-generation firewall. Or D, a top-layer firewall."
+    ],
+    "ru": [
+      "A, межсетевой экран на основе хоста. B, межсетевой экран следующего уровня. C, межсетевой экран нового поколения. Или D, межсетевой экран верхнего уровня."
+    ]
+  },
+  {
+    "time": [
+      1748.26403,
+      1751.947974
+    ],
+    "en": [
+      "Pause the video to think about your answer."
+    ],
+    "ru": [
+      "Поставьте видео на паузу, чтобы подумать над своим ответом."
+    ]
+  },
+  {
+    "time": [
+      1751.947974,
+      1759.056822
+    ],
+    "en": [
+      "The answer is C, a next-generation firewall."
+    ],
+    "ru": [
+      "Ответ - C, межсетевой экран нового поколения."
+    ]
+  },
+  {
+    "time": [
+      1759.056822,
+      1761.083773
+    ],
+    "en": [
+      "Let’s check each answer."
+    ],
+    "ru": [
+      "Давайте проверим каждый ответ."
+    ]
+  },
+  {
+    "time": [
+      1761.083773,
+      1770.006001
+    ],
+    "en": [
+      "A host-based firewall is a piece of software that runs on an end host, 1767.563961",
+      "like the firewall on your computer."
+    ],
+    "ru": [
+      "Брандмауэр на основе хоста - это часть программного обеспечения, которое работает на конечном хосте, 1767.563961",
+      "как брандмауэр на вашем компьютере."
+    ]
+  },
+  {
+    "time": [
+      1770.006001,
+      1772.455672
+    ],
+    "en": [
+      "It is not a network firewall."
+    ],
+    "ru": [
+      "Это не сетевой брандмауэр."
+    ]
+  },
+  {
+    "time": [
+      1772.455672,
+      1776.660307
+    ],
+    "en": [
+      "So A, a host-based firewall, is incorrect."
+    ],
+    "ru": [
+      "Итак, брандмауэр на основе хоста неверен."
+    ]
+  },
+  {
+    "time": [
+      1776.660307,
+      1784.449591
+    ],
+    "en": [
+      "Next-level and Top-layer are not actual types of firewalls, so B and D are incorrect."
+    ],
+    "ru": [
+      "Следующий уровень и верхний уровень не являются настоящими типами межсетевых экранов, поэтому B и D неверны."
+    ]
+  },
+  {
+    "time": [
+      1784.449591,
+      1793.793805
+    ],
+    "en": [
+      "A next-generation firewall combines traditional firewall features with more advanced filtering functionalities."
+    ],
+    "ru": [
+      "Межсетевой экран нового поколения сочетает в себе традиционные функции межсетевого экрана с более продвинутыми функциями фильтрации."
+    ]
+  },
+  {
+    "time": [
+      1793.793805,
+      1798.16669
+    ],
+    "en": [
+      "So C, a next-generation firewall, is correct."
+    ],
+    "ru": [
+      "Итак, C, межсетевой экран следующего поколения, правильный."
+    ]
+  },
+  {
+    "time": [
+      1798.16669,
+      1804.539256
+    ],
+    "en": [
+      "Thank you for watching! That’s all for this video."
+    ],
+    "ru": [
+      "Спасибо за просмотр! Вот и все для этого видео."
+    ]
+  },
+  {
+    "time": [
+      1804.539256,
+      1814.777728
+    ],
+    "en": [
+      "If you want to show your support, please subscribe to the channel, like the video, leave a comment, and share the video with anyone else studying for the CCNA."
+    ],
+    "ru": [
+      "Если вы хотите выразить свою поддержку, подпишитесь на канал, поставьте лайк видео, оставьте комментарий и поделитесь видео с кем-либо, кто изучает CCNA."
+    ]
+  },
+  {
+    "time": [
+      1814.777728,
+      1821.241038
+    ],
+    "en": [
+      "I also accept donations via cryptocurrency or Patreon via the links in the description."
+    ],
+    "ru": [
+      "Я также принимаю пожертвования через криптовалюту или Patreon по ссылкам в описании."
+    ]
+  },
+  {
+    "time": [
+      1821.241038,
+      1823.330991
+    ],
+    "en": [
+      "That’s all for now."
+    ],
+    "ru": [
+      "На этом пока все."
+    ]
+  },
+  {
+    "time": [
+      1823.330991,
+      1823.330991
     ],
     "en": [
       ""
