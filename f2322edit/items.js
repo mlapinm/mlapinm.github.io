@@ -33,6 +33,7 @@ let items = [
   },
   {
     "en" : [
+"aaaa bbbb ",
 "12.018005 ",
 "I want to talk a little bit about ",
 "my history and experience with a lot of ",
@@ -42,7 +43,7 @@ let items = [
 "has really kind of been over ",
 "two decades  ",
 "19.57855 ",
-"",
+"aaaa bbbb ",
       ""
     ]
   },

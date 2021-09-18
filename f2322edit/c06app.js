@@ -60,11 +60,29 @@ $(() => {
     let text = edit0[0].value
     let textList = text.split('\n')
     let textList2 = []
+    let max = textList.length
+
+    let k = 0
+    let line = []
+
     for(let e of textList){
-      let e2 = oneSpace(e)
-      if(e2 != ""){
-        textList2.push(e2)
+
+      let match = e.match(/\d+\.\d+/)
+      if(match || k == max - 1){
+
+        if(line.length > 0){
+          textList2.push(line.join(' '))
+          line = []
+        }
+        textList2.push(e.trim())
+        k += 1
+        continue
       }
+      
+      line = line.concat(e.split(' '))
+      line = line.filter(a => a.trim().length > 0)
+
+      k += 1
     }
     let text2 = textList2.join('\n')
     edit0[0].value = text2
@@ -83,8 +101,6 @@ $(() => {
   })
 
   create()
-  // onSpace()
-  // onQuote()
-  // onRid()
-
+  onSpace()
+  // onOne()
 })
