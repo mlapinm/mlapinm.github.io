@@ -1,0 +1,146 @@
+0.0
+Welcome to Jeremy’s IT Lab.
+2.995719
+This is a free, complete course for the CCNA 200-301.
+7.710098
+In this video I will show you how to download and get started with Cisco’s network simulation
+software, packet tracer.
+14.876124
+Packet tracer is a great tool to get hands on experience in Cisco’s command-line interface
+to configure routers and switches.
+24.29316
+This video, however, will just be a basic exercise to get you familiar with the software,
+30.731758
+since we haven’t learned any actual configurations yet in the course.
+34.259706
+Let’s get started.
+35.75638
+This is webpage is part of Cisco’s networking academy.
+40.328426
+To download packet tracer, you have to enroll in their introduction to packet tracer course,
+46.345906
+although you dont actually have to do the course.
+49.277103
+I’ve never checked it out, but maybe give it a look if you have the time.
+53.987096
+You’ll need a networking academy account to download as well as log in to packet tracer
+to use it.
+60.192099
+Don’t worry, it’s all free.
+62.675005
+So click enroll to download packet tracer and go through the steps.
+67.054058
+Then, click the link in the description of this video to download the packet tracer file
+for this video, and open the file.
+76.045366
+You’re greeted with a lonely Internet cloud, and some instructions.
+81.751752
+Since this is the first lab and I’m guessing some of you have never touched packet tracer,
+86.635857
+the task for this lab is simply to recreate the network diagram displayed at 16 minutes
+and 40 seconds into the Day 1 video.
+94.231192
+Let’s take a look at that.
+96.403021
+So, there is one network on the left side, and one on the right, 
+102.641875
+both connected to the Internet,
+as well as an attacker somewhere else on the Internet.
+107.114279
+This is a pretty simple topology so I’ve got it memorized, feel free to switch between
+windows to confirm which devices go where as you make the diagram.
+117.68647
+First, I’ll place the routers.
+120.561076
+In packet, tracer, you can choose network devices and end devices, or end hosts, in
+the bottom left.
+128.550511
+Under network devices, then routers, select the 2911 router.
+135.831612
+Drag to place one here for the New York LAN, and one here for the Tokyo LAN.
+142.109795
+Next, I’ll place the firewalls.
+144.819057
+Again, under network devices, this time go to security, select the 5500 firewall, then
+drag to place them.
+155.026965
+New york’s firewall is outside of the router, and Tokyo’s is inside.
+160.029379
+Next, let’s place the switches.
+163.857255
+Under network devices, select switches, choose the 2960 switch, and place one in each LAN.
+172.540226
+Okay, now we can place the end hosts, our PCs and servers.
+177.634445
+Select end devices this time, 
+181.992717
+and here under end devices are the end hosts we need.
+185.372784
+Place two PCs in the New York LAN...and then two servers in the Tokyo LAN...
+193.58936
+now finally,
+we can place the attacker.
+197.85478
+We’re told in the lab instructions to use a laptop as the attacker in the diagram.
+202.590101
+Down here between PC and server is laptop, so select it and place it here.
+208.993123
+Now let’s fix these names on the diagram to match the ones in the video.
+215.481259
+Double click on the device names, and then you can enter a different name.
+220.735408
+Pc1’s here already, so PC2...SW1...R1...FW1...Attacker...R2...FW2...SW2...SRV1...and finally SRV2.
+249.059005
+There we go.
+250.456082
+Now, that’s not part of the lab instructions, but its good to know how to change the host
+names on the diagram.
+255.893877
+Okay, now there’s only one problem.
+259.562539
+None of these devices are connected together!
+262.035842
+We haven’t studied about different connection and cable types yet in the course, 
+267.132759
+so for
+this video let’s use a convenient feature of packet tracer.
+271.257824
+Click this lightning bolt for connections, and then the lightning bolt again here.
+278.144245
+If you look closely at the bottom it says ‘automatically choose connetion type’.
+283.205091
+So I’ll use this and quickly connect all of the devices.
+286.879963
+Pc1 to SW1...PC2 to SW1 SW1...SW1 to R1...R1 to FW1..FW1 to the Internet.
+302.126178
+
+Attacker to the Internet.
+304.100647
+R2 to the Internet….R2 to FW2...FW2 to SW2..SRV1 to SW2..and finally SRV2 to SW2.
+319.340891
+Okay, that’s all there is to this week’s lab.
+323.605916
+Soon enough we’ll get into actual configurations and make this network, work!
+328.888841
+Of course, feel free to look into Cisco’s introduction to packet tracer course, 
+334.241989
+and
+play around with packet tracer yourself when you have time.
+337.876558
+Thank you for watching.
+340.731739
+That's all for this video.
+342.469401
+If you want to show your support, please subscribe to the channel, like the video, leave a comment,
+and share the video with anyone else studying for the CCNA.
+351.567595
+I accept donations via cryptocurrency or Patreon, via the links in the description.
+357.371192
+I'm also a Brave verified publisher, and accept BAT, or Basic Attention Token, tips via the
+Brave browser.
+365.273322
+Click the link in the description to check out Brave, a fast and sleek browser that pays
+you to surf the Internet.
+371.954765
+That's all for now.
+373.545055
