@@ -1,0 +1,152 @@
+0.0
+Welcome to Jeremy’s IT Lab.
+3.216179
+This is a free, complete course for the CCNA 200-301.
+9.187778
+In this video I will show you how to use the flashcards that are included in the description
+of every video.
+15.3529
+We will be using the software ‘Anki’.
+19.071419
+Anki is an SRS, meaning spaced repetition software.
+24.265763
+An SRS uses an algorithm to determine when you should review each flashcard.
+30.883021
+The more times you answer correctly, the wider the interval between reviews gets, 
+37.370781
+so it
+puts the information in your long-term memory, without wasting time reviewing every single
+flashcard every day.
+43.926833
+Basically, it lets you choose what you want to remember, and if you design the flashcards
+well 
+50.221872
+and do your reviews every day, you should be able to remember almost all of it.
+54.86346
+Flashcards have been extremely helpful in my studies.
+59.116103
+On my channel, I already have a video showing how I make flashcards, and I’ll include
+a link in the description to that video.
+67.588111
+Although I’ll be providing pre-made flashcards for this course, 
+71.603449
+I also recommend you create
+your own too if there is something else you want to remember, 
+76.372421
+or edit the cards I made to suit
+your own style.
+78.994961
+Anyway lets get started.
+81.164858
+This here is the homepage for Anki, the software we’ll be using.
+86.600486
+Click download, and select your operating system.
+90.892592
+Once you’ve downloaded and installed Anki, you will see this screen.
+95.370476
+As you can see, there is one default deck here already.
+100.218955
+I recommend clicking create deck down here, and making a CCNA deck.
+106.425151
+I will be releasing a separate deck of flashcards for each video, 
+111.325317
+and rather than having tons
+of separate decks, 
+114.438206
+I recommend you transfer the new cards to this central CCNA deck, 
+118.744488
+and
+then delete the new, empty deck.
+121.645789
+I’ll show you how to do that in a second.
+124.252341
+So, back to the browser now.
+127.728302
+This here is the first video in my CCNA course, 
+131.455251
+and down here you can see the link to the
+Anki flashcards for the video.
+136.195754
+Download it from google drive, and then go back to Anki.
+142.085428
+In the top left, click file, then import.
+148.574365
+Okay, now we have two decks, our central CCNA deck, and the cards we just downloaded.
+157.373874
+We want to transfer all of the new cards to our central CCNA deck.
+162.403188
+So, click on browse up here, then click on the 01networkdevices deck.
+171.995144
+Click edit up here, then select all.
+176.2637
+Then click cards, change deck.
+180.013871
+From here select the CCNA deck, and click move cards.
+185.070429
+Now exit, and you can see the cards have been moved to the CCNA deck.
+190.47664
+From here we can click on the gear icon, and delete the empty deck.
+195.694619
+Okay, now we’re ready to start studying.
+199.523841
+Click on the deck name, and then study now.
+203.979191
+Here is our first flashcard.
+206.85354
+Think about the answer, and then click show answer.
+211.488428
+If you answered correctly, click on good, and then the card will be shown again within
+10 minutes.
+218.939494
+If you didn’t answer correctly, click again and the card will be shown again within 1
+minute.
+226.210353
+You can also click easy, and the card’s review interval will jump ahead to four days.
+232.840156
+I’ll click good.
+234.163886
+And then you just continue that process until you’ve reviewed all 20 cards.
+239.999211
+I’ll just click through here...now, for new cards, you review them twice in the first
+day.
+249.620904
+The first time, if you answer correctly, the card is shown again within 10 minutes.
+255.330026
+If you answer correctly the second time, the interval increases to 1 day.
+260.518396
+If you answer correctly again the next day, it will increase to 2 or 3 days later, 
+266.283931
+and then
+5 or so days later, etc.
+269.501397
+If you answer incorrectly, however, the interval resets.
+273.649499
+If there are any cards you don’t think you need anymore, 
+278.238553
+you can delete them by clicking
+more in the bottom right, and then delete note.
+283.530243
+I don’t recommend deleting many cards, though.
+287.262699
+If you want to edit a card, click on browse, and it will display the current card.
+293.243215
+You can edit it here.
+295.145014
+Finally, if you want to add new cards, just click on add.
+300.535038
+I do recommend creating your own flashcards, too.
+304.035542
+For example, if you are supplementing this video course with a book, 
+308.461087
+you can create flashcards
+for what you learn from the book.
+311.612025
+Do all of your scheduled reviews each day, and it will greatly help you remember what
+you’ve studied.
+317.966734
+I really think they will help set this course apart in terms of helping you learn the material
+and pass your exam.
+325.522059
+If you have any questions about Anki, leave a comment down below.
+330.406754
+334.969183
