@@ -33,6 +33,21 @@ let items = [
   },
   {
     "en" : [
+"12.018005 ",
+"I want to talk a little bit about ",
+"my history and experience with a lot of ",
+"different routing and switching ",
+"companies  ",
+"16.418201 ",
+"has really kind of been over ",
+"two decades  ",
+"19.57855 ",
+"",
+      ""
+    ]
+  },
+  {
+    "en" : [
       "",
       "",
       ""
