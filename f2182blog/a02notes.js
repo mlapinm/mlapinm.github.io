@@ -50,24 +50,24 @@ var notes = [
     "link": "j001pl.html"
    },
   {
-    "header": "",
+    "header": "CCNA",
     "title": "",
     "card-text": [
-      "",
-      "",
+      "card",
+      "j002",
       ""
     ],
-    "link": "d01pl.html"
+    "link": "j002pl.html"
    },
   {
-    "header": "",
+    "header": "CCNA",
     "title": "",
     "card-text": [
-      "",
-      "",
+      "packettracer",
+      "j003",
       ""
     ],
-    "link": "d01pl.html"
+    "link": "j003pl.html"
    },
   {
     "header": "",
