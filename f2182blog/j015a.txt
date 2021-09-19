@@ -1,0 +1,210 @@
+1.310
+Welcome to Jeremy’s IT Lab.
+3.870
+This is a free, complete course for the CCNA 200-301.
+8.540
+If you like these videos, please subscribe to follow along with the series.
+12.559
+Also, please like and leave a comment, and share the video to help spread this free series of videos.
+19.060
+Thanks for your help. Let’s get started.
+22.390
+In this lab we’ll configure IP addresses on a Cisco router.
+27.060
+This is like the demo topology I used in Day 8’s main video, I just changed the IP addresses.
+33.520
+We still have one class A network, 15.0.0.0/8, one class B network, 182.98.0.0/16, and one
+45.611
+class C network, 201.191.20.0/24. Let’s get started.
+53.890
+The first step is to configure R1’s hostname.
+56.580
+I haven’t done any configurations yet on R1, so it still has the default hostname of ‘router’.
+63.490
+Let’s go on to the CLI of R1.
+68.229
+Now I’ll use enable to enter privileged exec mode.
+71.479
+Then, to configure the hostname, we have to be in global config mode, so ‘conf t’.
+78.280
+Now let’s set the hostname. Hostname R1.
+82.240
+Okay, you can see the prompt changes to display the new hostname.
+86.509
+That’s all for step 1.
+89.679
+Step 2 is to use a ‘show’ command to view a list of R1’s interfaces, their IP addresses, status, etc.
+97.710
+Do you remember what command that is?
+99.530
+It’s a very helpful command which you’ll use a lot as you configure Cisco routers.
+104.109
+It’s show ip interface brief.
+108.200
+But as you can see, the command doesn’t work. Why is that?
+112.270
+Well, its because ‘show’ commands are normally done from privileged exec mode.
+117.649
+However, let me use the ‘up’ arrow to return to the previous command, then I’ll
+123.240
+use the shortcut ‘control A’, so hold the control key and press A, and then cursor returns
+129.869
+to the beginning of the line.
+131.780
+Then, type ‘do’ in front of the command, and now it lets me enter the command from global config mode.
+139.860
+Now you can see a list of interfaces, their IP addresses, which are unset at
+144.439
+the moment, and their statuses.
+146.850
+Remember, the ‘status’ column indicates the Layer 1 status.
+152.100
+Currently their status is administratively down, because Cisco router interfaces have
+157.069
+the ‘shutdown’ command applied to them by default.
+160.830
+The protocol column indicates the layer 2 status of the interface.
+165.510
+Because layer 1 is shutdown, layer 2 cant operate, so they are all down.
+171.099
+We will configure gigabitethernet0/0, 0/1, and 0/2 in this lab, so they should all become UP, UP afterwards.
+180.790
+Step 3 is to configure the appropriate IP addresses on R1’s interfaces, and enable them.
+187.579
+We are also instructed to configure appropriate interface descriptions.
+191.640
+Let’s start on the gigabitethernet0/0 interface.
+196.830
+Just for this first interface, I’ll type out the whole command. Interface gigabitethernet 0/0.
+203.960
+There we go, as you can see the prompt has changed to show that I’m in interface configuration mode.
+212.200
+Let’s configure the IP address.
+215.060
+Once again, I’ll use the full commands for this first interface.
+218.610
+Ip address 15.255.255.254, now what’s the appropriate subnet mask for a /8 prefix length? It’s 255.0.0.0.
+233.510
+Now let’s configure a description.
+235.609
+I’ll indicate that this interface is connected to switch 1.
+240.370
+description, I'll put two hashtags, to SW1, and then again, hashtags.
+247.340
+You can use different descriptions if you want, this is just how I do descriptions.
+251.950
+Finally, let’s enable the interface. No shutdown.
+257.070
+Immediately, I get two messages indicating that the interface has come up.
+263.139
+Before checking on the status of the interface, I’ll configure the other two interfaces.
+269.560
+To switch to configuring another interface, I don’t have to exit back to global config mode first.
+276.090
+I can just type ‘interface g0/1’, and now I’m in interface config mode for gigabitethernet 0/1.
+283.400
+Let’s set the IP address. IP address 182.98.255.254.
+293.850
+The subnet mask for a /16 prefix length is 255.255.0.0. And the description.
+301.990
+Description ## to SW2 ##. Let’s enable it. No shut.
+309.760
+Okay, now let’s go to the last interface. Int g0/2.
+319.300
+Ip address 201.191.20.254, and the subnet mask for a /24 prefix length is 255.255.255.0. Next, the description.
+331.680
+Description ## to SW3 ##. Finally, let’s enable it. No shut.
+340.259
+Okay, since we’re done with the configurations I’ll use the command ‘end’ to go back
+345.040
+to privileged exec mode.
+346.630
+Alternatively, I could have used the ‘exit’ command twice.
+351.479
+Once to return to global config mode, and then a second time to return to privileged exec mode.
+357.900
+Now let’s check on the status of the interfaces.
+360.810
+Show ip interface brief.
+363.740
+Now you can see the IP addresses we configured, the method lists ‘manual’ instead of unset,
+370.520
+and the layer 1 and layer 2 statuses of the interfaces are up and up.
+375.169
+Now, step 5 says to view the running config to confirm the changes, and then save the config. Show running-config.
+385.039
+Here are the interfaces.
+387.190
+You can see the descriptions, and ip addresses we configured.
+391.770
+Notice the default duplex auto and speed auto commands.
+395.770
+Also, if you look at the vlan1 interface, you can see the shutdown command, which as
+401.490
+I said is applied by default to cisco router interfaces.
+404.780
+Okay, let’s save the config.
+407.750
+I mentioned in a previous video that there are a few ways to save the config. Copy running-config startup-config. Write memory. Or, just write.
+418.080
+I like to use the shortcut version of write, W R. There we go.
+425.289
+Step 6 is to configure the IP addresses of PC1, PC2, and PC3.
+430.540
+I’ll go on PC1 first. To configure the IP address, click config up here.
+438.300
+First, notice that I pre-configured the gateway here.
+441.449
+I’ll talk about what the purpose of the gateway is when we talk more about routing,
+445.889
+but notice that its R1’s IP address.
+449.400
+Now, to configure the PC's IP address, click on fastethernet0 here, that is PC1’s network interface card.
+458.389
+And then here you can configure the IP address. 15.0.0.1.
+463.790
+And look at the subnet mask.
+465.909
+It automatically fills in 255.0.0.0, since this is a class A address.
+472.319
+Okay, now we can exit out of here.
+474.740
+Let’s do the same on PC2. Click on PC2. Click config. Click on fastethernet0.
+484.319
+The IP address is 182.98.0.1, and once again it automatically fills in the subnet mask,
+492.810
+this time 255.255.0.0 because this is a class B address.
+499.770
+Now let’s go on PC3. Click on PC3. Click config. Fastethernet0.
+507.060
+IP address of 201.191.20.1.
+513.289
+And this time the subnet mask is 255.255.255.0, for this class C address.
+520.349
+Okay, finally let’s go back to PC1 and try to ping. Click desktop, then command prompt.
+529.900
+Now I’ll try to ping PC2. Ping 182.98.0.1.
+543.160
+Okay, looks like PC1 can reach PC2. How about PC3? Ping 201.191.20.1.
+558.300
+Great, PC1 can ping PC3 as well.
+563.120
+So, in this lab we looked at how to configure IP addresses on router interfaces, how to
+568.540
+configure interface descriptions, and how to enable interfaces with the ‘no shutdown’ command.
+575.180
+We also configured IP addresses on PCs in packet tracer and confirmed reachability with ping.
+581.450
+That’s all for this lab.
+584.200
+Thank you for watching.
+585.790
+Please subscribe to the channel, like the video, leave a comment, and share the video
+589.690
+with anyone else studying for the CCNA.
+593.029
+If you want to leave a tip, check the links in the description.
+596.240
+I'm also a Brave verified publisher and accept BAT, or Basic Attention Token, tips via the Brave browser.
+603.120
+That's all for now.

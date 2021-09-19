@@ -1,0 +1,690 @@
+1.270
+Welcome to Jeremy’s IT Lab.
+3.649
+This is a free, complete course for the CCNA.
+6.890
+If you like these videos, please subscribe to follow along with the series.
+10.990
+Also, please like and leave a comment, and share the video to help spread this free series of videos.
+16.960
+Thanks for your help.
+18.220
+Also, remember to download and use the Anki flashcards with the link in the description,
+23.660
+which will help you very much in remembering what you have learned. Let’s get started.
+28.910
+In this video, we’re going to take a look at the Internet Protocol version 4, known as IPv4 header.
+36.100
+This is used at Layer 3, to help send data between devices on separate networks, even
+41.930
+on other sides of the world over the Internet.
+44.970
+This is known as routing.
+46.550
+Originally, I planned this video to be a general introduction to routing, but in the end I
+52.390
+decided to split it up into separate parts.
+55.560
+Let’s take a look at what we’ll cover in this video.
+59.290
+We’ll cover the IPv4 packet structure, or more accurately, the IPv4 header which is
+66.289
+used to encapsulate a TCP or UDP segment.
+70.200
+Specifically, we will cover the fields of the IPv4 header.
+74.680
+We already looked in detail at two fields of the header, the source and destination
+79.110
+IP address fields, but there are quite a few more fields to look at.
+83.999
+And that’s all for this video!
+86.179
+As I said, I originally planned to make this a long, introduction to routing video.
+90.719
+However, I don’t want to make these videos too long, already the shortest videos are
+95.079
+at least 30 minutes which is quite long I think.
+97.929
+So, I decided to split up routing into more videos.
+102.499
+This prevents the videos from getting too long, but also lets me go more in depth on each topic.
+107.689
+So, this video will focus exclusively on the fields in the IPv4 header, and then future
+113.249
+videos will will get more practical, with hands-on configuration in the CLI.
+117.719
+Since we’re going to look at the IPv4 header, let’s review its position in a complete frame.
+124.420
+So, the upper layers of the OSI model prepare some data to be sent to another device.
+130.810
+It is encapsulated in a layer 4 header, typically using the TCP or UDP protocols, which we’ll
+137.310
+talk about in a future lesson.
+139.900
+This combination of data plus layer 4 header is called a segment.
+144.410
+The segment is encapsulated with a Layer 3 header, usually using the internet protocol, IP.
+151.690
+This combination of data, layer 4 header, and layer 3 header, is called a packet.
+157.000
+Then, the layer 2 header and trailer are added, and this is called a frame.
+163.080
+These units are called protocol data units, or PDUs.
+166.940
+For example, the layer 3 PDU is a packet, and the layer 2 PDU is a frame.
+173.490
+For this lesson, we’ll focus on this Layer 3 header, as it contains the information that
+178.100
+is needed to route this packet to its destination.
+181.730
+Note that, since we’ll be focusing on Layer 3 here, I’ll usually be using the term ‘packet’,
+187.390
+talking about ‘routing packets’, rather than frames.
+190.700
+So, thanks to Wikipedia for this chart of the IPv4 header structure.
+196.720
+As you can see, it’s a bit more complicated than the Ethernet header.
+200.710
+To be honest, I doubt that it will be necessary for you to memorize the exact structure of
+204.750
+the header, the size of each field, etc, for the CCNA test,
+209.300
+but I can’t make any guarantees, I didn’t make the test.
+212.680
+What I recommend is just getting to know the purpose of each field of the header, which we’ll cover now.
+219.010
+By the way, if you’re wondering how to read this chart, it’s read left to right, top
+223.041
+to bottom, so this is the first bit of the header, and this is the last bit of the header.
+229.690
+So, let’s quickly go through each field of the header so you’re familiar with its purpose.
+236.380
+First up is the ‘Version’ field of the header.
+238.910
+It’s length is 4 bits, half of one octet.
+242.760
+It’s purpose is straight forward.
+245.480
+It identifies the version of IP used.
+248.400
+Now, there are only two versions of IP in use, IPv4, which is simply identified with
+254.670
+a value of 4 in this field, or 0 1 0 0 in binary.
+260.249
+The other version is Ipv6, which is identified with a value of 6, or 0 1 1 0 in binary.
+269.059
+Now you may wonder what happened to IPv5?
+271.389
+Well there was an experimental protocol called Internet Stream Protocol which uses an Internet
+278.490
+Protocol value of 5, but it was never publically used.
+282.689
+So, you could say that’s the lost IPv5.
+285.490
+Now, we’re focusing on the IPv4 header, so this field of the header will always have
+290.900
+a value of 4.
+293.159
+The IPv6 header has a different structure than the IPv4 header, so if the value of this
+298.400
+field is 6 the rest of the header will have a different structure.
+303.939
+Next up is the Internet Header Length, or IHL, field.
+308.090
+It’s also 4 bits in length, half of one octet.
+312.550
+The final field of the IPv4 header (Options) is variable in length, so this field is necessary
+319.289
+to indicate the total length of the header.
+321.460
+Here’s an important part to remember: This field specifies the length of the header IN 4-BYTE INCREMENTS.
+329.919
+For example, if the value in this field is 5, 5 times 4-bytes is 20, so that means that
+336.629
+length of the header is 20 bytes.
+340.580
+The minimum value in this field is 5, which as I just said is equal to 20 bytes.
+346.310
+That’s the length of the IP packet WITHOUT any IP options at the end, so an empty options field.
+354.259
+The maximum value is 15, which is the maximum value of 4 bits, As you can see here, the
+360.559
+values of the 4 bits are 1, 2, 4, and 8, adding them up results in 15.
+366.389
+So, 15 x 4 bytes is equal to 60 bytes.
+371.740
+That means the maximum length of the IP options field is 40 bytes.
+376.240
+So, an IPv4 header with no options field is 20 bytes in length, and that’s the minimum length
+383.009
+of an IPv4 header.
+384.639
+And, an IPv4 with a maximum length options field, 40 bytes, has a length of 60 bytes,
+391.919
+and that’s the maximum length of an IPv4 header.
+395.080
+Okay, that’s the IHL field of the IPv4 header.
+400.550
+Next is the DSCP field.
+402.930
+DSCP stand for differentiated services code point, and the field’s length is 6 bits.
+411.749
+This field is used for QoS, quality of service.
+415.779
+Basic QoS is a topic on the CCNA so I will make a dedicated video about it later.
+422.650
+Essentially, it is used to prioritize delay-sensitive data, such as streaming voice and video.
+430.379
+If you’re loading a web page and the Internet is a little slow, it’s not a big deal.
+435.020
+However, if you’re having a skype call and there’s terrible delay, or the audio and
+439.770
+video keep freezing, it can totally ruin the experience.
+444.080
+This field is used to identify which traffic should receive priority treatment.
+450.050
+Next up is the ECN field, which stands for explicit congestion notification and has a
+456.030
+length of 2 bits.
+458.449
+It provides end-to-end notification of network congestion WITHOUT DROPPING PACKETS.
+464.159
+Normally in a network, if the network is super busy, if there is congestion, this is signalled by dropping packets.
+472.119
+The ECN field provides a way to signal a congested network without dropping packets.
+477.710
+However, this is an optional field that requires both endpoints, as well as the underlying
+483.439
+network infrastructure, to support it.
+487.680
+Next up is the Total Length field, and its length is 16 bits, or 2 octets, 2 bytes.
+495.229
+It indicates the total length of the packet, including the IPv4 header and the encapsulated
+501.009
+Layer 4 segment, which includes both the layer 4 header and the data.
+506.819
+This is different than the IHL field, which indicates only the length of the IPv4 header itself.
+513.810
+This field indicates the length in bytes, NOT IN 4-BYTE INCREMENTS LIKE THE IHL HEADER.
+520.140
+So, a value of 20 in this field simply means 20 bytes.
+526.060
+The minimum value in this field is 20, meaning 20 bytes, which is equal a minimum-sized IPv4
+532.220
+header with no encapsulated data.
+535.680
+The maximum value is 65,535, which is the maximum value of 16 binary bits, all set to 1.
+545.770
+Let me just show you that calculation.
+548.060
+Here are 16 bits, two octets, all set to 1.
+553.910
+The first bit is equal to 1, then 2, then 4...8...16...32...64...128.
+566.080
+This is as far as we went when looking at a single octet in an IPv4 address.
+571.300
+If you extend beyond 8 bits, the value keeps doubling.
+575.680
+Next is 256...512...1024...2048...4096...8192...16,384...and then the 16th bit is 32,768.
+594.740
+Add those all up, and you get 65535, the maximum length of an IPv4 packet.
+603.830
+Next up is the Identification field, which is also 16 bits in length.
+609.310
+If a packet is fragmented due to being too large, this field is used to identify which
+614.930
+packet the fragment belongs to, so it can be reassembled again to make the original packet.
+622.000
+All fragments of the same packet will have their own IPv4 header with the same value in this
+627.510
+field., so they can be reassembled later.
+631.150
+Packets are fragmented if larger than the MTU, which stands for Maximum Transmission Unit.
+638.710
+The MTU is usually 1500 bytes.
+643.240
+Remember the maximum size of an Ethernet frame?
+645.660
+I mentioned that the maximum payload size of an Ethernet frame is 1500 bytes, so these are related.
+654.810
+And one last point, fragments are reassembled by the receiving host.
+661.170
+Next is the Flags field, which is 3 bits in length.
+664.530
+It is used to control and identify fragments.
+669.170
+There are 3 bits, and they function like this.
+672.610
+The first bit, bit 0, is reserved and always set to 0.
+678.400
+Bit 1 is the don’t fragment bit, or DF bit.
+682.620
+If it is set to 1, it means that the packet should not be fragmented.
+687.610
+Bit 2 is the more fragments, or MF bit.
+691.360
+It is set to 1 if there are more fragments in the packet, and then set to 0 for the last fragment.
+697.850
+Also, if the packet is a whole, unfragmented packet, the MF bit is set to 0, since there are no fragments.
+707.870
+Next we have one more field related to packet fragmentation, that is the fragment offset
+713.030
+field, which is 13 bits in length.
+717.060
+This field is used to indicate the position of the fragment within the original, unfragmented IP packet.
+724.180
+This allows fragmented packets to be reassembled even if the fragments arrive out of order,
+729.930
+since this field lets the receiver know the original order of the fragments.
+735.420
+Next up is the Time to Live Field, which is 8 bits in length.
+740.040
+A router will drop a packet with a TTL of 0.
+744.620
+So, this field is used to prevent infinite loops.
+748.950
+If a poor routing configuration causes a packet to be continually sent around in a loop, never
+754.190
+reaching its intended destination, if enough traffic like that accumulates, it could causes
+759.670
+network congestion, and eventually failure.
+763.540
+This feature prevents that by happening, causing looped traffic to be dropped when the TTL reaches 0.
+770.980
+This field was originally designed to indicate the packet’s maximum lifetime in seconds,
+776.720
+in practice, however, this actually indicates a ‘hop count’.
+781.310
+Each time the packet arrives at a router on the way to its destination, the router decreases
+786.340
+the TTL by 1, until the packet reaches its destination, or the TTL reaches 0 and the packet is dropped.
+794.870
+The current recommended default TTL is 64.
+799.480
+Next up is the Protocol field, which is also 8 bits in length.
+804.820
+It indicates the protocol of the encapsulated Layer 4 PDU.
+809.650
+Typically, this will be one of the following: TCP, which is indicated by a value of 6, or
+816.950
+UDP, which is indicated by a value of 17.
+820.650
+I haven’t talked about TCP and UDP yet, but that I will make a dedicated video about them later.
+828.290
+For now, try to remember their protocol numbers of 6 for TCP and 17 for UDP.
+835.720
+You might also see a value of 1, which is used for ICMP, the protocol ping uses.
+842.600
+Another one to remember is 89, which is OSPF, which stands for Open Shortest Path First.
+849.860
+OSPF is a dynamic routing protocol which allows routers to learn routes to destinations from
+855.700
+their neighbors, without us having to manually configure the routes.
+859.860
+We will cover OSPF in depth in this course, so for now just try to remember the protocol number of 89.
+867.390
+If you’re curious, you can check a list of protocol numbers at this page on wikipedia.
+873.120
+Don’t worry about memorizing any others, but try to remember these four.
+878.760
+The included flashcards are extremely useful for remembering little facts like these.
+884.750
+Next is the header checksum field, which is 16 bits in length.
+889.930
+It is a calculated checksum used to check for errors in the Ipv4 header.
+896.540
+When a router receives a packet, it calculates the checksum of the header and compares it
+901.320
+to the one in this field of the header.
+904.430
+If the newly calculated checksum and the checksum in the IPv4 header do not match, it means
+910.300
+that an error has occurred in transmission, so the router drops the packet.
+915.870
+Note that this is only used to check for errors in the IPv4 header, not in the encapsulated data.
+922.010
+IP relies on the encapsulated protocol to do that.
+926.550
+Both UDP and TCP, the two Layer 4 protocols most likely to be encapsulated, have checksum
+933.070
+fields to check for errors in the encapsulated data.
+936.890
+Okay, next up are the Source and Destination IP Address fields, which I covered in detail already.
+944.810
+As you already know, they are 32 bits in length each, as that is the length of an IPv4 address.
+952.230
+The source IP address field indicates the IPv4 address of the sender of the packet.
+958.890
+The destination IP address field indicates the IPv4 address of the intended receiver of the packet.
+966.180
+Finally, the options field, which is optional and can be 0 bits in length if not used, or
+974.190
+up to 320 bits, 40 bytes, in length.
+978.920
+This field is rarely used, however if the IHL, Internet header length, field is greater
+984.860
+than 5, is means that options are present.
+989.260
+Here is a chart from Wikipedia showing the structure of the Options field, you can check
+993.970
+it out or read more online if you’re interested, but for the purposes of CCNA studies I don’t
+1000.180
+think you need to worry about it.
+1002.710
+Okay, now we’ve covered all of the fields of the IPv4 header.
+1007.330
+It’s a bit more complicated than the simple Ethernet header and trailer we already learned
+1011.900
+about, but hopefully you understand the purpose of each field now.
+1016.820
+For the purpose of the CCNA, I think the information presented in this video is sufficient, but
+1022.581
+of course feel free to read more, a simple Google search will give you many good resources.
+1028.550
+Also don’t forget to use the Anki flashcards to help you remember everything.
+1034.459
+Now let’s go in depth and analyze a packet capture from Wireshark.
+1039.339
+I showed you Wireshark before, and its an extremely useful tool both for learning, and
+1044.640
+also in the real world to troubleshoot problems.
+1047.270
+This isn’t a wireshark course, but I will show you wireshark at various points in this
+1053.070
+course, and if you have a lab with real Cisco equipment, or a virtual lab using GNS3, I
+1059.770
+highly recommend you use Wireshark to examine network traffic like this, it will really
+1064.070
+help you in your studies.
+1066.460
+But in either case, I will show you Wireshark packet captures in this course, so don’t
+1071.610
+worry if you aren’t able to use it yourself.
+1073.920
+So, I sent a ping between two routers, notice under the INFO column it says echo (ping) request.
+1083.190
+I have selected the frame here, meaning the entire frame and you can see down here that
+1088.980
+the entire frame is highlighted.
+1091.500
+These digits are a hexadecimal representation of the frame.
+1096.640
+Now I highlighted the Ethernet header, and down at the bottom you can see only the Ethernet
+1101.490
+header section of the frame is highlighted.
+1104.980
+Then I highlight the IP header, and at the bottom only the IP header section of the frame is highlighted.
+1112.610
+Then I highlight the packet’s payload, which is Internet Control Message Protocol, or ICMP,
+1118.780
+the protocol used by ping, and you can see the payload highlighted at the bottom.
+1124.310
+In this video we’re focusing on the IPv4 header, so let’s expand the Internet Protocol Version 4 information.
+1132.710
+Okay, so I’ve expanded the IPv4 header section and zoomed up a bit, and here you can see
+1139.160
+all of the fields we looked at in this video, except Options.
+1143.880
+As I said, options are rarely used, and they aren’t in this packet.
+1148.850
+First up, the Version field, and V you can see the binary bits 0100 on the left, and it shows
+1155.490
+you that means version 4.
+1158.780
+Next is the header length which is the IHL field.
+1162.340
+It has a binary value of 0101, which equals 5.
+1168.280
+Remember, this field indicates the length in units of 4 bytes, so this value of 5 means
+1174.740
+a header length of 20 bytes.
+1177.980
+That is the minimum header length, and it is the length of an IPv4 header with no options field.
+1185.680
+Next up is the differentiated services field, and as you can see Wireshark categorizes both
+1191.440
+the DSCP, differentiated services codepoint, and ECN, explicit congestion notification,
+1199.630
+fields under this section.
+1202.600
+Both are set to 0, as they are not being used.
+1206.920
+Next up is the total length.
+1209.590
+This represent the total length of the IP packet in bytes, including both the header
+1214.929
+and the ICMP data it encapsulates.
+1217.770
+So, this 100 means that the total length is 100 bytes.
+1223.740
+Next is the identification field.
+1226.730
+This packet has an identification field of 5.
+1229.760
+It’s not fragmented, but if it were fragmented, the other fragments belonging to this packet
+1236.210
+would also have a value of 5 here.
+1239.910
+Next up is the flags field.
+1242.790
+Notice that Wireshark also includes the fragment offset field under this section.
+1248.220
+The reserved bit is always 0.
+1250.620
+That’s what ‘not set’ means by the way.
+1253.970
+I sometimes say ‘set to 0’ or ‘set to 1’, but another way of saying it is ‘not
+1260.450
+set’, which means 0, or ‘set’, which means 1.
+1264.540
+The don’t fragment bit isn’t set, so this packet can be fragmented, if necessary.
+1272.420
+The more fragments bit also isn’t set, which is expected as the packet isn’t fragmented.
+1278.550
+The fragment offset field is also 0, which is also expected in a packet that isn’t fragmented.
+1285.590
+Next is the Time to Live field, which is set to 255, the maximum.
+1290.800
+Remember, the time to live field is 8 bits in length, and 255 is the maximum 8-bit value.
+1299.150
+The protocol is ICMP, because I used ping.
+1303.750
+Notice the protocol value of 1 which indicates this.
+1307.920
+You can see the header checksum here.
+1310.980
+Remember it’s a 16-bit value.
+1314.320
+0X indicates hexadecimal, and then each hexadecimal digit is equal to 4 bits, so 4 times 4 is 16, 16 bits.
+1323.440
+Here’s the source IP address, and finally the destination IP address.
+1331.620
+The standard PING command on a Cisco router will send 100-byte pings, which is why the
+1336.980
+ping I showed you wasn’t fragmented.
+1339.420
+But, I pinged once more, using this command ping 192.168.1.2 SIZE 10000, which will send
+1349.590
+10,000 byte pings, much larger than the 1500 bytes MTU.
+1355.080
+So, this will cause fragmentation.
+1359.100
+As you can see here, there are a bunch of IP fragments.
+1363.350
+They all say ‘reassembled in #13’. What is #13?
+1368.580
+Well, it’s this ICMP echo request right here.
+1372.230
+Now, let’s take a look at some of the IPv4 header fields in these fragments.
+1378.180
+Okay, so these are the details of just the first two fragments.
+1383.370
+First off, notice the total length of 1500 bytes, so this 10,000 byte ping was divided
+1390.060
+up into 1500 byte fragments, which is equal to the MTU size.
+1395.679
+Then, notice the identification field of 1.
+1400.059
+This is different than the last packet I showed you, but notice that the value is the same
+1404.120
+for these two fragments.
+1407.070
+Then take a look at the flags.
+1410.030
+Each of them has the more fragments bit set, because neither of these is the last fragment in the packet.
+1417.250
+Also, notice that each of them has a different fragment offset value, however, and that the first
+1421.470
+fragment has an offset of 0.
+1425.000
+Just one more thing, this time I sent a ping and set the don’t fragment bit by adding
+1430.580
+the ‘df-bit’ option to the ping command.
+1433.840
+As you can see here, now the don’t fragment bit is set.
+1437.070
+Because I didn’t set the size, the default ping size of 100 bytes was used, so it was
+1443.070
+no problem that these packets weren’t allowed to be fragmented.
+1446.670
+However, if I send pings that are larger than the MTU, AND set the DF-bit, you can see the pings fail.
+1454.870
+They were too large to be sent unfragmented, but also not allowed to be fragmented.
+1461.920
+Before moving on to today’s quiz let’s review what we studied.
+1466.390
+We looked at the structure of an IPv4 packet, more specifically the fields of the IPv4 header. That’s it.
+1474.260
+It doesn’t look like a lot when you list it like this, but I’m sure you agree that
+1477.960
+was a lot of information.
+1480.300
+In the next video we’ll get more practical and hands-on, getting into the CLI to see
+1485.090
+how to configure routes.
+1487.100
+Okay let’s move on to today’s quiz.
+1491.260
+In addition to the quiz, make sure to download and use the Anki flashcards to help you remember
+1495.890
+all of the details you learned in this video.
+1498.520
+Let’s get started with question 1.
+1502.460
+What is the fixed binary value of the first field of an IPv4 header? A, 0010. B, 0110. C, 0001. D, 0100.
+1520.429
+Pause the video to think about your answer.
+1527.309
+The answer is D, 0100.
+1531.250
+The first field of the IPv4 header is the version field.
+1535.429
+Because the question is about an IPv4, or Internet Protocol VERSION 4 header, the version
+1541.371
+field is always set to 4, or 0100 in binary.
+1546.059
+let’s go to question 2.
+1549.990
+Which field will cause the packet to be dropped if it has a value of 0? A, TTL. B, DSCP. C, IHL. D, ECN.
+1565.730
+Pause the video to think about your answer.
+1572.260
+The answer is A, TTL.
+1575.010
+TTL stands for Time To Live.
+1578.230
+It is reduced by 1 at each router the packet passes through.
+1582.640
+If it reaches 0, the packet is dropped.
+1585.520
+Let's go to question 3.
+1589.950
+How are errors in an IPv4 packet’s encapsulated data detected?
+1594.570
+A, the IPv4 header checksum field checks for errors.
+1599.990
+B, the encapsulated protocol, for example TCP or UDP, checks for errors.
+1607.050
+C, Errors in the encapsulated data cannot be detected.
+1612.220
+Pause the video to think about your answer.
+1619.570
+The answer is B, the encapsulated protocol checks for errors.
+1624.710
+The IPv4 Header Checksum field only checks for errors in the IPv4 header itself.
+1630.440
+However, Layer 4 protocols like TCP or UDP can use their checksum to check for errors
+1636.740
+in the encapsulated data.
+1638.530
+Let’s go to question 4.
+1642.760
+Which field of an Ipv4 header is variable in length? A, options. B, header checksum. C, total length. D, IHL.
+1657.429
+Pause the video to think about your answer.
+1664.020
+The answer is A, Options.
+1667.160
+The Options field can vary in length from 0 bits to 320 bits.
+1672.320
+The other fields are fixed-length.
+1675.669
+Although the Total Length and IHL fields are used to represent the variable length of the
+1680.380
+IPv4 header and packet, the fields themselves are fixed in length.
+1685.429
+Let’s go to question 5.
+1690.140
+Which bit will be set to 1 on all IPv4 packet fragments except the last fragment?
+1696.840
+A, fragment offset bit.
+1700.360
+B, more fragments bit.
+1703.620
+C, dont fragment bit.
+1706.770
+D, packet fragment bit.
+1710.410
+Pause the video to think about your answer.
+1717.429
+The answer is B, more fragments bits.
+1721.070
+The More Fragments bit, part of the Flags field of the IPv4 header, is used to indicate
+1727.040
+that the current fragment is not the last fragment of a fragmented packet.
+1732.010
+It is set to 1 on all fragments except the last, which will set it to 0.
+1737.640
+A, fragment offset, is a 13-bit field in the header, not a single bit.
+1743.000
+C, Don’t fragment bit, is used to prevent a packet from being fragmented.
+1749.150
+And D, packet fragment bit, is not a real bit in the IPv4 header.
+1754.850
+Okay, that’s all for the quiz.
+1758.760
+Remember to use the supplementary materials to help you remember what you’ve studied.
+1763.950
+There will be Anki flashcards to help you review what you’ve studied.
+1767.670
+For a video like this, I think the flashcards are particularly important, so remember to
+1772.470
+download and use them.
+1775.290
+There will be a packet tracer lab for routing, but not after this video.
+1779.210
+Wait until after day 11’s video to get some hands-on practice configuring routing on a Cisco router.
+1786.350
+Good luck with your studies.
+1789.510
+Thank you for watching.
+1790.570
+Please subscribe to the channel, like the video, leave a comment, and share the video
+1795.000
+with anyone else studying for the CCNA.
+1798.330
+If you want to leave a tip, check the links in the description.
+1801.210
+I'm also a Brave verified publisher and accept BAT, or Basic Attention Token, tips via the Brave browser.
+1808.429
+That's all for now.

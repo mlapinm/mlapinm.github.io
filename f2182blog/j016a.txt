@@ -1,0 +1,780 @@
+1.280
+Welcome to Jeremy’s IT Lab.
+3.580
+This is a free, complete course for the CCNA.
+6.990
+If you like these videos, please subscribe to follow along with the series.
+11.080
+Also, please like and leave a comment, and share the video to help spread this free series of videos.
+16.980
+Thanks for your help.
+19.340
+Also, remember to download and use the Anki flashcards with the link in the description,
+24.000
+which will help you very much in remembering what you've learned. Let’s get started.
+29.630
+In this video we’ll take a break from IP addresses and take a look at switch interfaces.
+35.800
+When we configured IP addresses, I talked about router interfaces a little bit.
+40.999
+For example, we used the ‘show ip interface brief’ command to check the Layer 1 and
+46.530
+Layer 2 status of the interfaces.
+49.480
+I also talked about how router interfaces are disabled with the ‘shutdown’ command by default.
+55.699
+This time we’ll take a look at switch interfaces and see how they are different from router
+59.579
+interfaces, and also how they are the same.
+63.010
+Specifically, we’re going to talk about configuring Layer 1 characteristics of these
+67.969
+interfaces, such as speed and duplex.
+72.530
+So let me introduce what we’ll cover in this video.
+75.270
+I’ll talk about interface speed and duplex.
+79.640
+Speed refers to the data rate in bits per second, such as 10, 100, or 1000 megabits per second.
+88.000
+Duplex is something I mentioned briefly in a previous video, basically it refers to whether
+92.840
+a device is able to both send AND receive data at the same time.
+97.000
+I’ll talk about speed and duplex autonegotiation, which allows two devices to negotiate speed
+103.610
+and duplex settings without us having to manually configure them.
+107.799
+I’ll talk about interface status.
+110.090
+I already talked about this in the previous video on configuring router interfaces, but
+115.369
+I’ll expand upon the topic.
+117.350
+Finally, I’ll talk about interface counters and errors.
+122.270
+Cisco devices keep various counters regarding the traffic that passes through them, such
+126.659
+as how many errors have occurred, etc.
+128.920
+I’ll show you how to find and analyze these statistics, and what kinds of errors there are.
+136.209
+Also let me review one point about switches that I mentioned in the very first video in this series.
+142.370
+Up top is a photo of a Cisco ASR 1000-X router, and under it is a Cisco Catalyst 9200 switch.
+151.020
+What’s the big difference that stands out here?
+154.569
+How about the number of interfaces?
+157.150
+The router has 8 SFP interfaces for fiber-optic cables, and then a few RJ45 interfaces for
+164.260
+the console port and such.
+166.739
+The switch, on the other hand, has 4 SFP interfaces, plus FORTY EIGHT RJ45 interfaces.
+174.330
+This is because switches are used to connect end hosts to.
+178.129
+This catalyst switch might have 48 PCs connected to the RJ45 ports, and then connect to a router
+184.689
+with the SFP fiber optic ports.
+189.120
+Next let me introduce the network topology I’ll use for this video.
+193.870
+This is a single LAN, 192.168.1.0/24, with one router, R1, two switches, SW1 and SW2,
+204.040
+and four PCs, PC1, 2, 3, and 4.
+208.099
+In a real network with two switches there would be many more end hosts, but just for
+212.799
+this demonstration I’ve attached just these four PCs.
+216.860
+SW1 is the device we’re going to focus on today, configuring its network interfaces,
+222.129
+including F0/1, F0/2, F0/3, and F0/4 which are connected, as well as the remaining interfaces
+229.510
+which are not connected at the moment.
+231.280
+Let’s go right into the CLI of SW1.
+236.040
+First I use ‘enable’ to enter privileged exec mode.
+239.140
+After entering privileged exec mode, I entered the ‘show ip interface brief’, using shortcuts.
+246.849
+As you can see, the four interfaces which are connected to devices, fastethernet 0/1,
+252.079
+0/2, 0/3, and 0/4 have a status column, which is the Layer 1 status, and a protocol column,
+259.690
+which is the Layer 2 status, of UP and UP.
+263.590
+We usually call this up/up.
+266.780
+Keep in mind I haven’t done any configuration on SW1 yet except set the hostname.
+271.860
+So already we can see a difference between Cisco routers and switches. What is that?
+277.360
+Well, I mentioned briefly in the Day 8 video,
+281.050
+router interfaces are in an administratively disabled state by default, meaning they have
+286.200
+the ‘shutdown’ command applied.
+289.090
+Switch interfaces, however, are different.
+291.680
+They don’t have the shutdown command applied, so if you connect them to another device they’ll
+296.730
+usually be in the up/up state with no configuration required.
+300.750
+Now, the IP address is unassigned, and it will remain that way because these are layer
+306.300
+2 switchports, they don't need an IP address.
+310.620
+The concept of multilayer switching, where you actually DO assign IP addresses to switches,
+316.340
+will be for a future lesson.
+318.780
+For this lesson, don’t worry about the IP address column.
+322.690
+Now take a look at the other interfaces, keep in mind I’m ignoring the ‘VLAN1’ virtual
+328.389
+interface, that will be a topic for another video.
+331.800
+These other interfaces aren’t connected to any other devices, so their status is down/down.
+338.550
+Keep in mind, down and down is different than administratively down and down.
+344.150
+Here’s the show ip interface brief command on a router, notice administratively down
+349.889
+and down, this is because of the ‘shutdown’ command’.
+353.740
+‘DOWN/DOWN’ doesn’t mean the interfaces are shutdown, it means they aren’t connected to another device.
+360.030
+So, to summarize, router interfaces have the shutdown command applied by default, so they
+366.390
+will be in the administratively down/down state by default.
+371.610
+Switch interfaces do not have the shutdown command applied by default, so they will either
+375.850
+be in the up/up state, if they are connected to another device, or the down/down state, if not connected.
+384.449
+Now let’s look at another useful command to check on switch interfaces.
+387.690
+That is ‘show interfaces status’.
+391.460
+Let’s look at each field of the output.
+394.830
+First, the port field simply lists each interface.
+399.139
+Next, you might be wondering what this ‘name’ field is.
+402.590
+Well, its the description of the interface.
+405.120
+I’m not sure why they called it ‘name’ and not ‘description’, but we’ll configure
+409.341
+descriptions on these interfaces and you’ll see that it appears here.
+414.380
+Next is the status field.
+416.850
+As you can see this is different than the status field of show ip interface brief.
+421.880
+The four connected interfaces show a status of ‘connected, and the unconnected interfaces
+427.349
+show a status of ‘notconnect’.
+430.120
+There are other possible statuses, we’ll cover them as they come up in the course.
+435.610
+Next is the VLAN field.
+438.259
+VLANs will get their own video, basically they can be used to divide LANs into smaller LANs.
+444.669
+As you can see, the default VLAN is 1.
+448.070
+The only one that does not show a VLAN of 1 is F0/2, which shows trunk.
+453.099
+I won’t explain trunks now, they’ll be covered in the VLAN video.
+458.639
+Just take note of the fact that the interface connected to the other switch, SW2, is a trunk interface.
+466.330
+Next is the duplex field, which as I mentioned before indicates whether the device is capable
+471.590
+of both sending and receiving data at the same time, which is known as full-duplex,
+477.410
+or if its not, which is called half-duplex.
+481.300
+Duplex is auto by default on Cisco switches, meaning it will negotiate with the neighboring
+486.610
+device and use full-duplex if possible.
+490.970
+Notice that all of the unconnected interfaces have a duplex of auto, and the connected interfaces
+496.770
+have a duplex of ‘a dash full’ Well, the ‘a’ stands for auto, and it means that
+502.979
+it automatically negotiated a duplex of auto with the neighboring device.
+508.830
+Next is the speed field, which is also auto by default.
+513.080
+These are fastethernet interfaces, so they are capable of speeds up to 100 megabits per second.
+519.030
+However, they are also capable of operating at 10 megabits per second.
+524.450
+Auto means they are able to negotiate with the device they are connected to and use the
+529.030
+fastest speed both devices are capable of.
+532.820
+This time, we see ‘a DASH 100’, meaning a speed of 100 megabits per second was auto-negotiated
+538.810
+with the neighboring device.
+540.520
+I’ll talk in more detail about auto negotiation soon.
+544.900
+Okay, finally is the Type field.
+548.140
+These are all RJ45 interfaces for copper UTP cables, but if they were small form-factor
+554.630
+pluggable, or SFP, modules, you’d see that here instead.
+559.570
+In this case, we see 10/100BASE-TX, the 10/100 of course referring to the speeds at which
+567.010
+these interfaces can operate.
+571.120
+Autonegotiation works well so usually you’ll leave it be, but lets go and manually configure
+576.210
+the speed and duplex of an interface, F0/1 which is connected to R1.
+582.850
+As you can see, I enter interface config mode, and then use the command speed.
+588.010
+I use the context-sensitive help to display the next option, and I can choose between
+593.900
+10 or 100 megabits per second, or auto.
+597.540
+So, I set the speed to 100, since R1’s interface is a fastethernet interface also.
+603.880
+Then, I use the command ‘duplex’ to set the duplex of the interface.
+609.150
+As the context-sensitive help shows, I can choose between auto, which is the default, or full and half.
+617.350
+Both SW1 and R1 support full duplex, so I choose that.
+621.580
+Finally, I configure a description on the interface, indicating that it is connected to R1.
+628.250
+Okay, so when I use the ‘show interfaces status’ command once again, you can see
+634.730
+both the configured description and the configured speed and duplex.
+640.200
+Notice the duplex is full, rather than a dash full, and the speed is 100, rather than a
+646.850
+dash 100, because they are not being autonegotiated any more.
+651.700
+Once again, normally you will keep autonegotiation on, but if perhaps there is some problem and
+658.440
+its not working, you should know how to manually configure the speed and duplex of an interface.
+663.800
+Now, let me quickly do some configurations for the other connected interfaces off-camera…
+668.050
+Okay, so I just configured descriptions on F0/2, 0/3, and 0/4.
+674.730
+Now, how about the unused interfaces?
+678.850
+Although the fact that switch interfaces are enabled by default is convenient, as you can
+683.260
+just plug a device in and use it straight away, it can be a security concern.
+688.820
+Really, you should disable the interfaces.
+692.330
+Fortunately, instead of having to configure each of the 8 interfaces one by one, there
+698.001
+is a way to configure all 8 interfaces at once.
+701.820
+Here’s the command that can save you a lot of time.
+705.830
+From global config mode, type ‘interface range’, and then enter the range like this, f0/5 to 12.
+716.320
+This time, instead of interface config mode, I am brought to interface range config mode,
+722.370
+and I enter a description, and then shut down the interfaces.
+725.980
+All at once, I get messages saying the interfaces have changed to administratively down.
+732.270
+Now, before we check show interfaces status once more, let me show you a cool thing about this command.
+739.950
+The interfaces in the range don’t all have to be consecutive.
+744.160
+For example, if I later want to enter fastethernet 0/5, 6, 9, 10, 11, and 12, but leave 7 and
+752.810
+8 shutdown, I can do this: interface range f0/5 to 6, COMMA, f0/9 to 12.
+763.130
+Then if I issue ‘no shutdown’, you can see only those interfaces and enabled.
+768.840
+F0/7 and 8 remain down.
+772.210
+Okay, so I shutdown interfaces f0/5,6,9,10,11, and 12 again, and here’s the output of show interfaces status again.
+782.910
+Now you can see the description of each interface, and the status is disabled.
+787.990
+Once again, this status is different than the status shown in ‘show ip interface brief’,
+793.000
+which will now be ‘administratively down’, although really they mean the same thing.
+799.500
+Before talking about autonegotiation, I want to explain full and half duplex.
+804.480
+I have briefly mentioned it a few times, but haven’t explained it in depth yet.
+810.620
+Half duplex means that the device cannot send and receive data at the same time.
+815.940
+If it is receiving a frame, it must wait before sending a frame.
+820.930
+Full duplex means that the device CAN send and receive data at the same time.
+825.130
+It does not have to wait.
+827.380
+Clearly, full duplex is the preferred way to go.
+831.450
+In modern networks that use switches, all devices can use full duplex on their interfaces.
+837.420
+So, you may be wondering where is half-duplex used?
+841.080
+Well, in modern day networks, almost nowhere.
+845.940
+But to understand half-duplex let me introduce you to an old type of network device which
+851.370
+was around before the network switch.
+854.620
+The hub is much simpler than a switch, in fact it is simply a repeater.
+860.410
+Any frame it receives, it floods like a switch does with a broadcast or unknown unicast frame.
+866.920
+For example, if PC1 wants to send a frame to PC2, it will send the frame out of its network interface,
+874.520
+and after the hub receives it, it will repeat the frame out of its other interfaces, to PC2 and PC3.
+881.480
+PC3 will recognize that the destination MAC Address is not its own and ignore the frame,
+887.800
+and PC2 will receive it normally.
+890.400
+Now, what if two PCs try to send frames at the same time?
+895.470
+In this case, PC1 is trying to send a frame to PC2, and PC3 is trying to send a frame to PC1.
+903.320
+They both send the frames out of their network interfaces,
+907.390
+and this is where a problem occurs.
+910.100
+The hub won’t send one first and then send the other after, it simply tries to flood
+914.830
+both at the same time, and this will result in a collision on the interface, and PC2 won’t
+921.250
+receive either frame intact.
+924.060
+All devices connected to a hub are part of what’s called a collision domain.
+928.870
+The frames they send could collide with frames any of the other devices connected to the hub send.
+935.020
+To deal with collisions in a half-duplex situation like this, Ethernet devices use a mechanism called ‘CSMA/CD’.
+942.100
+Let’s check it out.
+945.260
+CSMA/CD stands for ‘carrier sense multiple access with collision detection’.
+952.220
+It describes how devices avoid collisions in a half-duplex situation, and how they react
+957.500
+if collisions do occur.
+959.660
+It works like this.
+961.880
+Before sending frames, devices listen to the collision domain until they detect that other
+967.120
+devices are not sending frames.
+968.930
+If a collision does occur, which can still happen because of bad timing and such, the
+975.060
+device sends a jamming signal to inform the other devices that a collision happened.
+980.770
+Each device then waits a random period of time before sending frames agan.
+985.710
+The process then repeats, with each device listening to check if other devices are sending
+990.260
+frames before sending their own frames.
+993.280
+Now, that process works, and it was how networks operated for a long time.
+998.860
+But switches are more sophisticated than hubs.
+1002.180
+Hubs are simple repeaters which operate at layer 1, repeating whatever signals they receive.
+1008.440
+Switches operate at layer 2, using layer 2 addressing, MAC addresses, to send frames to specific hosts.
+1015.810
+They also won’t try to send two frames to the same host at once.
+1019.350
+So, this network which was one collision domain when connected to a hub, is now 1, 2, 3 collision domains.
+1028.440
+Because of the improved functionality of switches over hubs, these devices can now operate in
+1033.370
+full duplex, meaning they don’t have to worry about whether or not other devices are
+1038.300
+sending data at the same time, they can send data freely.
+1043.069
+Although problems like collisions still do occur, they are rare and usually are a sign
+1048.110
+of a problem, like a misconfiguration, rather than a regular occurrence like in a half-duplex network.
+1055.410
+So let’s review half and full duplex once more.
+1058.330
+In half duplex, the device cannot send and receive data at the same time.
+1063.870
+If it is receiving a frame, it must wait before sending a frame.
+1068.360
+Devices attached to a hub must operate in half duplex.
+1072.490
+In modern networks, you’re probably not going to use a hub, but it’s a possibility.
+1077.790
+In full duplex, the device can send and receive data at the same time, it does not have to wait.
+1084.620
+Devices attached to a switch can operate in full duplex.
+1088.230
+Okay, now that you know what duplex is let’s talk about speed and duplex autonegotiation
+1094.000
+on interfaces, and this applies to both routers and switches by the way.
+1099.880
+Interfaces that can run at different speeds, for example 10/100 or 10/100/1000, have default
+1107.290
+settings of speed auto and duplex auto.
+1111.750
+Interfaces advertise their capabilities to their neighbors, and they negotiate the best
+1116.020
+speed and duplex settings they are both capable of.
+1118.600
+So, let’s look at an example.
+1121.520
+Here’s a small network, a switch with three PCs connected.
+1126.910
+Connected to G0/1 is a PC with a regular ethernet interface.
+1132.020
+Connected to G0/2 is a PC with a fastethernet interface. and connected to G0/3 is a PC with
+1139.650
+a gigabit ethernet interface.
+1142.490
+As you probably know by now, an Ethernet interface can run at 10 megabits per second,
+1147.430
+a fastethernet interface can run at 10 or 100 megabits per second, and a gigabit ethernet
+1152.990
+interface can run at 10, 100, or 1000 gigabits per second.
+1158.650
+So, G0/1 and the PC will negotiate to a speed of 10 megabits per second, and full duplex.
+1165.420
+G0/2 and the PC will negotiate to a speed of 100 and full duplex.
+1171.420
+And g0/3 and the PC will negotiate to speed 1000 and full duplex.
+1177.420
+The PCs are all able to use the max speed of their network interfaces, and the switch
+1182.040
+adjusts the speeds of its interfaces to match.
+1185.590
+In a network like this with all PCs and switches, there’s no reason to use half-duplex, so
+1190.760
+they all negotiate to use full-duplex.
+1192.980
+Now, let’s talk about another situation.
+1197.240
+What if autonegotiation is disabled on the device connected to the switch?
+1201.170
+So, the switch is trying to autonegotiate, but the other devices don't respond.
+1206.650
+Well, this is how the switch will respond.
+1209.720
+For the speed, the switch will try to sense the speed that the other device is operating at.
+1215.180
+If it fails to sense the speed, it will use the slowest supported speed, for example 10
+1221.060
+Mbps on a 10/100/1000 interface.
+1224.840
+Now, as for duplex, if it ends up using a speed of 10 or 100 mbps, the switch will use half duplex.
+1233.790
+If the speed is 1000 mbps or greater, it will use full duplex.
+1239.060
+So let’s see how this works.
+1241.260
+In this case, only the switch is using autonegotiation, and the three PCs have manual, fixed speed and duplex settings.
+1249.060
+We’ll also assume that the switch successfully detects the speed that the PCs are using.
+1254.730
+The Green PC has a speed of 10 Mbps, so the switch detects that and sets its speed to the same.
+1262.860
+Because its speed is 10 Mbps, it sets its speed to half duplex.
+1268.230
+Now, how about G0/2, connected to the Red PC?
+1273.130
+It senses that the PC is using a speed of 1000 mbps, so it uses the same.
+1279.110
+Because the speed is 1000 Mbps, it uses full duplex.
+1284.300
+Now how about G0/3, connected to the blue PC?
+1288.900
+It senses the speed of 100 mbps, but then what about the duplex?
+1294.500
+The PC is using full duplex, but without autonegotiation the switch cant sense that.
+1300.380
+So, because the speed is 100 Mbps, the switch uses half duplex.
+1306.400
+This results in a duplex mismatch, which will cause collisions to occur, resulting in poor network performance.
+1312.980
+So, really you should be using autonegotiation on all devices in the network.
+1319.610
+Now let’s take a look at some of the errors that can show up on interfaces that otherwise
+1323.430
+seem to be working.
+1325.680
+The switch will take count of some of these things and you can view them with the ‘show interfaces’ command.
+1331.610
+We took a quick look at this command when we were configuring router interfaces, so
+1335.860
+these things aren’t specific for switch interfaces.
+1339.580
+This time, let’s focus on some of these statistics at the bottom.
+1344.200
+There are lots of different kinds of counters shown here and you don’t have to know all
+1347.370
+of them at this point, so let’s just focus on some.
+1351.680
+First up, not errors, but you can see the total number of packets received on the interface,
+1357.300
+and the total number of bytes in those packets.
+1360.770
+Next up is runts.
+1362.480
+These are frames that are smaller than the minimum Ethernet frame size of 64 bytes.
+1368.160
+Beside the runts counter is the giants counter, which counts received frames which are larger
+1373.330
+than the ethernet maximum frame size of 1518 bytes.
+1379.260
+Next up, CRC, which counts frames which failed their CRC check.
+1384.700
+If you remember, the CRC is the cyclic redundancy check done via the FCS, or frame check sequence,
+1392.020
+in the trailer of an ethernet frame.
+1394.320
+It’s used to detect errors, and if an error is detected this counter goes up.
+1401.260
+Next is frame, which counts frames that have an incorrect or illegal format.
+1407.260
+Input errors is a total of various counters, including the four I just mentioned.
+1412.180
+Finally, output errors counts frames the switch tried to send, but failed due to an error.
+1419.600
+Keep in mind, I’m showing you all of these counters on a switch, but they are the same on a router.
+1426.630
+Before moving on to today’s quiz, let’s review what we covered.
+1430.690
+We talked about interface speed and duplex.
+1433.200
+I explained the concepts of full and half duplex.
+1437.570
+Full duplex is preferred, and in most modern networks all devices will be able to operate
+1442.380
+in full duplex, so they can send data freely without waiting for other devices to stop sending.
+1449.430
+We talked about speed and duplex autonegotiation, which allows devices to find the appropriate
+1454.760
+speed and duplex settings without manual configuration.
+1458.890
+We looked a bit at interfaces status using the ‘show interface status’ command, such
+1463.990
+as the statuses connected, notconnect, and disabled.
+1468.200
+We’ll look more at this throughout the course.
+1471.430
+Finally, we looked at some interface counters and errors such as runts, which are frames
+1477.030
+that don’t meet the minimum size requirements, and giants, which exceed the maximum frame size requirements.
+1484.370
+Okay, let’s get started on the quiz.
+1487.770
+Remember, there will also be flashcards which you can download from the link in the description
+1491.920
+to help you remember what you learned in this video.
+1494.510
+Let’s go to question 1.
+1498.140
+There is a duplex mismatch between SW1’s F0/1 interface and SW2’s F0/1 interface, which are connected. Autonegotiation is disabled.
+1508.550
+What will be the result? A, improved performance.
+1513.200
+B, collisions will occur.
+1515.720
+Or C, SW1 will sense SW2’s duplex setting and adjust to match.
+1521.630
+Pause the video to think about your answer.
+1527.120
+The answer is B, collisions will occur.
+1530.370
+The half duplex side is unable to send and receive data at the same time.
+1534.690
+However, the full duplex side is unaware of this, and will send data even if the half
+1539.490
+duplex side isn’t ready to receive it, causing collisions.
+1543.090
+So, B is correct.
+1545.870
+It definitely won’t result in improved performance, in fact performance will probably be much
+1550.770
+worse, so A is incorrect.
+1552.670
+SW1 won’t be able to sense SW2’s duplex setting without autonegotiation enabled, so
+1558.481
+C is incorrect too.
+1560.360
+Let’s go to question 2.
+1563.800
+What is used on half-duplex interfaces to detect and avoid collisions?
+1568.830
+A, CSMA/CD, B, CSMA/CA.
+1575.070
+C, Autonegotiation, or D, Duplex Auto.
+1581.150
+Pause the video to think about your answer.
+1587.540
+The answer is a, CSMA/CD.
+1590.710
+CSMA CD stands for carrier sense multiple access with collision detection.
+1597.610
+It describes how devices using half-duplex listen for activity on a network segment,
+1603.130
+and then send data only when other devices aren't sending.
+1607.370
+It also describes how a device will react when a collision does occur.
+1611.600
+So A, CSMA/CD is correct.
+1614.400
+B, CSMA/CA, is a similar concept that we’ll cover later in the course that stands for
+1621.809
+carrier sense multiple access with collision avoidance.
+1625.360
+C, autonegotiation, and D, duplex auto, are unrelated to how a half-duplex interface detects and avoids collisions.
+1634.559
+Let’s go to question 3.
+1638.700
+Which command shows various counters of errors detected on an interface? A, show interfaces.
+1645.670
+B, show ip interface brief.
+1649.440
+C, show interfaces status.
+1652.990
+Or D, show interfaces errors.
+1656.050
+Pause the video to think about your answer.
+1662.150
+The answer is A, show interfaces.
+1664.640
+Let’s check the output of each command.
+1668.870
+As you can see, show ip interface brief doesn’t display any counters of errors detected on the interface.
+1675.430
+It’s a useful command for checking the IP addresses of interfaces, checking if they’re shutdown, etc.
+1682.800
+Show interfaces status also doesn’t show any error counters.
+1686.990
+It gives some basic information about interfaces such as description, status, duplex and speed.
+1694.170
+show interfaces errors isn’t a real command, so an error message appears when I try to enter it.
+1701.170
+Show interfaces displays counters of errors detected on the interface.
+1705.740
+In this case I used ‘show interface f0/1.
+1709.920
+Because so much information is given for each interface, you probably won’t use this command
+1715.190
+to view all interfaces at once, but rather specify an individual interface to check.
+1721.230
+The counters are at the bottom of the output.
+1724.190
+So A, show interfaces, is correct.
+1727.250
+Let’s go to question 4.
+1731.450
+Which are examples of errors that might occur on a network interface?
+1735.520
+A, runts, giants, broadcasts.
+1739.560
+B, shorts, longs, oversizes.
+1743.590
+C, packets, bytes, inputs, outputs.
+1748.630
+D, runts, giants, CRC.
+1752.670
+Pause the video to think about your answer.
+1759.080
+The answer is D, runts, giants, CRC.
+1763.730
+The names in B and C are not real errors that can occur on an interface.
+1769.390
+In option A, runts and giants are possible errors, but broadcasts are not errors, they
+1775.540
+are part of normal network operations.
+1778.679
+So D, runts, giants, CRC, is the correct answer.
+1783.830
+Remember, Runts are frames that are too small, Giants are frames that are too big, and CRC
+1792.080
+counts the frames that failed their CRC check, which is done in the frame check sequence
+1797.620
+in the trailer of the ethernet frame.
+1799.740
+Let’s go to question 5.
+1803.070
+SW1 is trying to autonegotiate interface speed settings with SW2.
+1809.800
+However, autonegotiation is disabled on SW2’s interface.
+1813.100
+SW2’s interface is configured with a speed of 100 Mbps and full duplex.
+1821.010
+What speed and duplex settings will SW1 use?
+1824.800
+A, speed 100 megabits per second, duplex full.
+1830.090
+B, speed 100 megabits per second, duplex half.
+1835.150
+C, speed 10 megabits per second, duplex full.
+1840.100
+Or D, Speed 10 megabits per second, duplex half.
+1844.880
+Pause the video to think about your answer.
+1850.740
+The answer is B, speed 100 megabits per second, duplex half.
+1856.050
+If the remote device has autonegotiation disabled, but it's enabled on the local device, the local
+1861.610
+device will attempt to sense the speed the remote device is using, so SW1 will be able
+1867.340
+to correctly set its interface speed to 100 megabits per second to match SW2’s.
+1872.800
+However, it can't sense the duplex mode of SW2’s interface, so the rule is if the speed
+1879.461
+is 10 or 100 megabits per second, half duplex will be used, otherwise full duplex will be used.
+1887.380
+In this case, half duplex will be used, which will result in a duplex mismatch between the
+1892.679
+two devices, and probably poor performance on the link between them due to collisions.
+1898.700
+Okay, that’s all for the quiz.
+1901.940
+Remember to make use of the supplemental materials for this video, I’ve made a set of flash
+1907.410
+cards to be used with the flashcard software Anki to help you remember what you learned in the video.
+1914.770
+Also, there will also be a packet tracer practice lab to give you hands-on practice configuring Cisco devices.
+1920.560
+That will be the next video.
+1921.990
+Good luck with your studies.
+1926.450
+Thank you for watching.
+1928.010
+Please subscribe to the channel, like the video, leave a comment, and share the video
+1931.930
+with anyone else studying for the CCNA.
+1935.260
+If you want to leave a tip, check the links in the description.
+1937.880
+I'm also a Brave verified publisher and accept BAT, or Basic Attention Token, tips via the Brave browser.
+1945.370
+That's all for now.

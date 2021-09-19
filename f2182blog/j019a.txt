@@ -1,0 +1,844 @@
+1.329
+Welcome to Jeremy’s IT Lab.
+3.639
+This is a free, complete course for the CCNA.
+6.870
+If you like these videos, please subscribe to follow along with the series.
+10.900
+Also, please like and leave a comment, and share the video to help spread this free series of videos.
+16.710
+Thanks for your help.
+18.760
+Also, remember to download and use the Anki flashcards with the link in the description,
+23.570
+which will help you very much in remembering what you have learned. Let’s get started.
+28.220
+So, Day 10’s video was quite technical, looking at the details of an IP version 4
+33.940
+header which is used to encapsulate a Layer 4 segment, and then is encapsulated within an Ethernet frame.
+41.380
+In this video we’ll get a little bit more practical, and begin to see how routers forward traffic between different networks.
+48.290
+Remember, that’s the role of a router.
+51.580
+Switches forward traffic WITHIN a LAN.
+54.470
+Routers forward traffic BETWEEN LANs.
+56.699
+So, let’s take a look at what we’ll cover in this video.
+60.699
+We’ll cover the IP routing process.
+64.229
+Starting from the end host that wants to send a packet to an end host in another network,
+68.650
+I’ll give you an overview of the routing process, specifically as it applies to IP, the Internet Protocol.
+75.490
+We’ll examine the routing table on a Cisco router.
+79.830
+Routers keep a routing table, which stores a list of known destinations, and how to get there.
+85.740
+It’s important to be very familiar with the routing table, as you’ll be using the
+89.950
+'show ip route' command a lot as a network engineer.
+93.670
+Also, we’ll look at how to configure static routes, which are routes you manually configure on a router.
+100.730
+Here’s the network topology we’ll be using in this video.
+104.640
+Let me give you a quick run-through of the topology.
+108.570
+There are two LANs I’ve illustrated here.
+111.520
+This one, connected to R1, is the 192.168.1.0/24 network.
+117.460
+PC1 has an IP address of 192.168.1.1, and R1 has an IP address of 192.168.1.254 on its G0/2 interface.
+130.920
+There is also this LAN, connected to R4, the 192.168.4.0/24 network.
+137.340
+PC4 has an IP address of 192.168.1.4, and R4 has an IP address of 192.168.1.254 on its G0/2 interface.
+151.230
+Those are the LANs, but these four routers represent not a LAN, but rather a WAN, which
+157.340
+stands for Wide Area Network.
+160.280
+These routers could be kilometers apart, connected by single mode fiber.
+165.080
+Basically, the definition of a WAN is a network that spreads over a large area.
+170.900
+Let’s look at the IP addresses.
+174.400
+Between R1 and R2 is the 192.16.12.0/24 network, between R2 and R4 is the 192.168.24.0/24 network,
+187.600
+between R1 and R3 is the 192.168.13.0/24 network, and between R3 and R4 is the 192.168.34.0/24 network.
+200.960
+I numbered the networks like this to make it easy to understand for this demonstration,
+205.040
+but you’re probably not going to find networks numbered like this in the real world.
+209.879
+But when you’re doing labs, its helpful to make the IP addresses simple to understand.
+214.750
+So, PC1 wants to send this packet to PC4.
+220.530
+Notice that the source IP address is 192.168.1.1, PC1’s IP address, and the destination IP
+228.239
+address is 192.168.4.1, PC4’s IP address.
+234.310
+What does PC1 do from here?
+236.650
+First, it asks itself this question, Is the destination IP address in the same network?
+243.769
+Well, PC1’s IP address is 192.168.1.1/24.
+248.290
+/24 means that the first 3 octets are the network portion so 192.168.1 is the network
+257.519
+portion of the address. How about PC4?
+261.870
+Its address is 192.168.4.1/24, so 192.168.4 is the network portion.
+269.990
+So, the answer is NO, these two end hosts are in different networks.
+275.400
+Because of this, PC1 can’t forward the packet directly to PC4.
+279.520
+So, because the destination is in a different network, a different LAN, routing logic tells
+285.719
+PC1 to send the packet to the ‘default gateway’.
+289.620
+The default gateway is the device to which the host, in this case PC1, will forward data
+294.839
+that is destined for another network.
+297.889
+What do you think PC1’s default gateway is?
+300.870
+The answer is R1.
+304.009
+Routers are the devices used to connect separate networks, for example R1 connects the 192.168.1.0/24,
+311.740
+192.168.12.0/24, and 192.168.13.0/24 networks.
+320.960
+So, to reach other networks, an end host will send the packet to its network’s router,
+325.789
+the default gateway, which is R1 in this case.
+329.979
+Now R1 has the packet, and its R1’s responsibility to forward it to the next device.
+336.599
+After receiving the packet, R1 will compare the packet’s destination IP address to the routing table.
+343.180
+As I said in the introduction to this video, each router keeps a routing table, which stores
+347.919
+a list of destinations, and how to reach the destination.
+351.539
+Assuming R1 already has an entry in its routing table for the 192.168.4.0/24 network, the entry
+359.740
+will look something like this….
+363.370
+First is the destination, which is the 192.168.4.0/24 network.
+370.009
+Next is the ‘next hop’, the next destination in the path to the 192.168.4.0/24 network,
+377.629
+the final destination, and also the interface out of which R1 will send the packet.
+384.449
+In this case, R1 could reach the network either by sending it to R2 or R3, but let’s say
+390.690
+we configured it to send it via R2, as you can tell by both the next-hop address
+396.180
+of 192.168.12.2, and the exit interface on R1, g0/0.
+403.029
+We’ll take a look at configuring routes, as well as take a look at a real routing table
+407.840
+on a Cisco router, in a few minutes.
+410.419
+So, R1 will forward the packet to the next router on the route to the destination, which is R2.
+418.089
+So, now R2 has the packet, and it’s R2’s responsibility to forward the packet to the next device.
+425.740
+It will follow the same process as R1, It will compare the packet’s destination IP
+431.060
+address to the routing table and then, assuming it already has an entry in its routing table
+435.889
+for the destination, It might look something like this.
+440.410
+The destination is 192.168.4.0/24, the next hop address is 192.168.24.4, R4’s IP address,
+452.099
+and the exit interface is g0/1, which is connected to R4.
+457.539
+After looking up the route in the routing table, R2 forwards the packet to R4.
+463.460
+Now R4 has the packet, and it is R4’s responsibility to forward the packet to the next device.
+469.749
+It will follow the same process as both R1 and R2, it will compare the packet’s destination
+475.010
+IP address to the routing table.
+477.729
+In R4’s case, the entry in the table will look something like this.
+483.029
+192.168.4.0/24 is directly connected, G0/2.
+488.270
+That’s because R4 has an IP address of 192.168.4.254/24 configured on its G0/2 interface, so it knows
+498.479
+the 192.168.4.0/24 network is directly connected to that interface.
+505.500
+It forwards the packet out of that interface, and SW4 passes it on to PC4, the final destination.
+512.580
+Now, this has been a very simple overview of how this process works.
+517.330
+Notice that I didn’t mention MAC addresses, or Layer 2 at all.
+521.580
+This is just a Layer 3 overview of this process.
+524.020
+I will make a dedicated video called ‘Life of a Packet’, in which I follow this same
+529.570
+process, but go in depth about not just Layer 3, but also Layer 2.
+535.330
+You may have noticed that, during this whole process, the source and destination IP addresses have not changed.
+541.910
+That is not the case for the MAC addresses, so you’ll see that the process is a little
+545.940
+more complex than I showed you here.
+548.710
+But this basic overview should be enough for you to understand the rest of this video.
+552.450
+Let’s finally go on to the CLI of a Cisco router.
+556.030
+So, we’re on the CLI of PC1.
+560.910
+Actually, this isn’t a PC.
+564.010
+Rather than taking the time to set up a virtual PC in GNS3, I just used a Cisco router and
+570.070
+changed the icon to a PC.
+572.190
+So, we can use this to learn about the Cisco CLI, too.
+577.210
+So I used the command ‘show ip route’ from privileged exec mode, and it displays the routing table.
+584.650
+Down here under the codes at the top two routes are displayed.
+589.250
+This may seem like three routes, but this line at the top, 192.168.1.0/24 is variably
+596.780
+subnetted, 2 subnets, 2 masks, isn’t a route.
+601.520
+This lists the classful address, and what class is 192.168.1.0/24?
+609.020
+It’s a class C address. Underneath are the two routes that fit within that class.
+615.260
+If you don’t understand this all yet, just wait.
+617.490
+We will talk about subnetting, classful, and classless networks a few videos later.
+624.460
+For now, just realize that this top line isn’t a route.
+627.740
+Okay, so we’ve got two routes, and these two letters on the left, C and L, display
+634.371
+the type of route.
+635.500
+What do they mean?
+637.330
+Well, let’s look them up in the list up top.
+640.890
+L stands for Local, and C stands for connected. What’s the difference?
+646.550
+Well, let’s look at this Connected route first.
+649.680
+It’s a route to 192.168.1.0/24.
+655.490
+The IP address configured on PC1’s interface is 192.168.1.1/24, so 192.168.1.0/24 the network
+666.940
+address, the address with a host portion of all 0s. /24 means that the first three octets
+673.410
+are the network portion, and the last octet is the host portion.
+678.090
+Set the host portion to 0, and that’s the network address.
+682.620
+There are probably lots of other hosts on this network, maybe with addresses like 192.168.1.2/24, 192.168.1.3/24, 192.168.1.4/24. etc.
+698.930
+All of them are part of the 192.168.1.0/24 network, because the network portion of their
+705.040
+address is the same.
+706.820
+So, PC1 knows it can reach any host on the 192.168.1.0/24 network via its network
+714.340
+interface, which is gigabitethernet0/0 on this Cisco router which I’m using to simulate a PC.
+722.000
+Next up is the local route.
+724.120
+Look at this one, 192.168.1.1, which is the exact address on PC1’s interface, but this
+731.060
+time with a /32 mask.
+733.920
+We haven’t seen a /32 mask before.
+736.710
+/32 would mean that all four octets are the network portion, and there is no host portion.
+742.910
+Well, that is correct.
+744.990
+You could say this is a route to the 192.168.1.1/32 network, and there is only one address in the network, 192.168.1.1.
+756.280
+This is how you identify a single, specific address, by using a /32 mask.
+763.120
+so, to recap, the connected route indicates the network to which the interface is attached,
+769.310
+and the local route indicates the actual address configured on the interface, with a /32 mask.
+775.600
+So, that means that you already know how to configure two types of routes on a Cisco router.
+781.710
+If you configure an IP address on an interface and enable the interface, the connected and
+787.060
+local routes of that interface are added.
+790.440
+However, this PC doesn’t have a route to the intended destination, 192.168.4.1.
+798.060
+Actually, that’s not a problem.
+800.840
+An end host like a PC doesn’t need to know the route to every destination.
+806.330
+All it needs is a default gateway to which it can send any traffic destined for a location
+811.160
+outside of the local network.
+814.070
+On a Cisco router, the default gateway is known as the ‘gateway of last resort’,
+819.550
+and as it says here, it is not set yet.
+822.230
+So, let’s configure the default gateway on our PC, which as I said before is actually a Cisco router.
+829.980
+To configure the default gateway, also known as the gateway of last resort, on a Cisco
+834.920
+router, you have to configure what’s called a ‘default route’.
+839.410
+A default route is a route that matches ALL possible destinations.
+844.260
+However, it is used only if a more specific route match isn’t found in the routing table.
+851.000
+When a router looks up a route to a destination in its routing table, it looks for the most
+855.800
+specific match, and chooses that route.
+859.600
+The default route is the LEAST SPECIFIC possible route.
+863.500
+What does that mean?
+864.970
+Well, it uses an IP address of 0.0.0.0, and a mask of 0.0.0.0.
+872.410
+So, To set the default route or gateway of last resort, configure a route to 0.0.0.0/0.
+882.270
+Think about what that means.
+884.520
+The /0 means that there is no ‘network portion’ of the address, no fixed part of the address that can’t change.
+893.220
+So that means 0.0.0.0/0 covers the range of address from 0.0.0.0 through 255.255.255.255,
+905.390
+which is ALL possible addresses.
+909.370
+Let me give a little explanation that might help you understand this.
+913.360
+Here is the 192.168.1.0/24 network, like the destination of that connected route in the
+920.250
+routing table we just looked at.
+922.529
+/24 means that the mask is 255.255.255.0.
+929.100
+This mask means that these first three octets are fixed, they can’t change.
+934.589
+However, this part, which isn’t covered by the mask, is not fixed.
+939.420
+It could be 192.168.1.1, 192.168.1.2, 192.168.1.3, etc.
+949.120
+So, 192.168.1.0/24 matches all addresses from 192.168.1.0 through 192.168.1.255.
+963.560
+So, how about 192.168.1.1/32, the destination of that local route we saw in the routing table?
+971.630
+/32 means a mask of 255.255.255.255.
+978.000
+ALL bits in ALL octets of the address are covered by the mask.
+982.580
+What does that mean?
+984.290
+All bits are FIXED, they can’t change.
+986.950
+So, that means that 192.168.1.1/32 matches ONLY a single address, 192.168.1.1.
+997.240
+That’s why the /32 mask is used to specify the exact address configured on the interface
+1003.000
+in the local route.
+1004.920
+Now, for the opposite of that very specific /32 address, how about 0.0.0.0/0?
+1012.270
+/0 means a mask of 0.0.0.0, which means that none of the bits in any of these octets are
+1020.240
+covered by the mask, they are all not fixed.
+1024.839
+That means that 0.0.0.0/0 matches 0.0.0.0 through 255.255.255.255, which is ALL possible addresses.
+1037.209
+I think you can see why I called this the ‘least specific’ route.
+1041.949
+It doesn’t specify a single address, it includes ALL possible addresses.
+1047.829
+So, let’s get to actually configuring this default route.
+1052.380
+To do so, we have to learn how to configure a ‘static route’.
+1056.580
+Basically, a static route is a route you manually configure yourself.
+1061.820
+This is different than the connected and local routes we saw before, which are automatically
+1066.200
+added to the routing table when we configure an IP address on an interface and enable it.
+1071.990
+Here’s the command to configure a static route.
+1075.570
+It’s IP ROUTE, followed by the destination address, the mask for the destination address,
+1082.850
+and then the next-hop IP address.
+1086.009
+So here, I used the configure terminal command to enter global config mode, and then used
+1091.360
+the IP route command to configure PC1’s default route to R1.
+1096.750
+Here is the destination address, here is the mask, and here is the next hop IP address, which is R1’s
+1104.720
+So, from global config mode I used DO SHOW IP ROUTE to check the routing table once more,
+1112.450
+and first off, you can see it says ‘gateway of last resort is 192.168.1.254 to network 0.0.0.0.
+1122.899
+The default route also appears down here with the other routes.
+1126.919
+Notice that the code on the left is different.
+1129.679
+We have an S and an asterisk.
+1132.370
+Let’s look up top again to see what these mean.
+1135.820
+S means static, which as I just explained before is a route we manually configure on
+1140.999
+the device, rather than one automatically added like the local and connected routes in the table.
+1147.500
+The asterisk means it is a ‘candidate default’ route.
+1151.980
+The fact that we can see it is added as the gateway of last resort means it isn’t just
+1156.180
+a candidate, it was selected as the default route, but its still labeled as a candidate default route.
+1162.540
+Okay, so looking back at our topology, since PC1 now has a default gateway configured,
+1169.850
+known as a gateway of last resort on a Cisco router, it sends the packet to the default
+1174.539
+gateway as I showed before.
+1177.200
+Just a reminder, PC1 isn’t actually a PC, it’s a Cisco router.
+1182.870
+Since I’m just using it to ping, I didn’t bother setting up a virtual PC, it’s easier
+1187.559
+to just use a router to ping.
+1189.620
+So, since R1 has the packet now, let’s take a look at its routing table to see what it
+1195.059
+will do with the packet.
+1198.070
+So I used SHOW IP ROUTE on R1, and there’s the routing table.
+1203.580
+Because R1 is connected to three networks, 192.168.1.0/24, 192.168.12.0/24, and 192.168.13.0/24,
+1216.450
+it has connected routes for each of those networks, as well as the local routes for
+1220.179
+the IP addresses configured on its interfaces.
+1222.730
+However, there’s a problem.
+1225.409
+The packet’s destination is 192.168.4.1, in the 192.168.4.0/24 network, but its not
+1234.409
+in the routing table.
+1236.700
+If this were a switch receiving a frame with an unknown destination MAC address, what would it do?
+1242.649
+It would flood the frame out of all of its interfaces.
+1246.299
+How about in this case, what will a router do when it receives a packet with an unknown destination IP address?
+1252.499
+Well, it won’t flood it.
+1254.989
+It will simply drop the packet.
+1257.400
+Let me review that point.
+1259.490
+Switches flood frames with unknown destinations, meaning destinations not in the MAC address table.
+1265.779
+Routers, however, drop packets with unknown destination IP addresses.
+1270.580
+So, unless we configure a route on R1, this ping will not succeed.
+1275.419
+So, let’s configure a static route on R1 aimed for the 192.168.4.0/24 network.
+1284.710
+This time I’ll show you a slight variation of the command.
+1287.919
+ip route, followed by the destination IP address, the mask, and the exit interface. What’s different? Its this.
+1298.590
+Last time we configured the next hop address.
+1300.789
+This time, instead of specifying an IP address as the next hop, we just specify the exit
+1306.570
+interface, the interface out of which R1 should send the packet.
+1311.710
+If we do it on R1, it will look like this.
+1314.860
+ip route, followed by 192.168.4.0, the destination IP address, then 255.255.255.0, the mask,
+1326.100
+finally gigabitethernet0/0, the exit interface.
+1330.639
+Okay, so after configuring the route I used ‘do show ip route’ on R1 to view the routing table.
+1338.269
+Here’s the route we configured.
+1340.580
+You may notice an interesting difference here.
+1343.419
+Because we configured an exit interface instead of a next-hop IP address, it says 192.168.4.0/24
+1351.570
+is directly connected to the gigabitethernet 0/0 interface.
+1356.100
+The code still says S for static though.
+1359.160
+You can use either way to configure, later in the course I’ll show you some cases where
+1363.270
+you will want to use one way instead of the other, but for now you can just use either
+1367.529
+the next-hop IP address or the exit interface.
+1372.150
+Notice how this static route isn’t added as the gateway of last resort, because it
+1376.169
+is for a specific network, not for 0.0.0.0/0 which matches all networks.
+1383.690
+Okay, now R1 has a route in its routing table for the destination.
+1389.269
+The destination of this packet is 192.168.4.1, which is included in the 192.168.4.0/24 network.
+1399.020
+We don’t need a route to the exact destination.
+1402.389
+Because 192.168.4.1 is included in the 192.168.4.0/24 range, it’s fine, it matches.
+1410.559
+So, R1 forwards the packet to R2.
+1415.549
+You can probably guess that there will be a problem here, though...R2 also doesn’t
+1420.330
+have a route that matches 192.168.4.1.
+1423.730
+So, I went ahead and configured a route on R2, ip route 192.168.4.0 255.255.255.0, and
+1435.559
+this time specified the next-hop IP address of 192.168.24.4, which is R4’s IP address.
+1444.179
+You can see the route here.
+1445.809
+Let’s focus on this part at the end, via 192.168.24.4.
+1454.020
+So, R2 receives the packet with the destination 192.168.4.1 and looks up the most specific
+1460.809
+match in its routing table.
+1463.080
+It finds this entry for 192.168.4.0/24, and it says via 192.168.24.4.
+1472.800
+What does R2 do next?
+1474.920
+Well, it then looks up the most specific match for 192.168.24.4.
+1480.960
+That is this route here, which is a directly connected route on gigabitethernet0/1, so
+1486.889
+it will forward the packet out of that interface.
+1489.690
+So, R2 sends the packet to R4. What happens next?
+1495.909
+We haven’t configured any static routes on R4, will that be a problem?
+1499.789
+Let’s check the routing table on R4.
+1502.539
+Here’s R4’s routing table.
+1506.190
+Because R4’s G0/2 interface has an IP address of 192.168.4.254 configured, the 192.168.4.0/24
+1516.669
+network has automatically been added to its routing table as a connected route.
+1521.080
+So, R4 sends the packet out of its G0/2 interface, and SW4 forwards it to PC4.
+1529.120
+Let’s actually try that ping form PC1 to PC4 and see if it works now!
+1534.909
+So, I use the command ping 192.168.4.1 on PC1 to send a ping to PC4.
+1542.889
+However, as you can see, the ping fails, success rate is 0 percent, 0 out of 5.
+1550.710
+PC1 has a default gateway, all of the routers along the way know how to reach PC4, so what’s the problem?
+1558.460
+The problem is one-way reachability.
+1561.490
+What does that mean?
+1562.830
+Well, the packet from PC1 was able to reach PC4.
+1567.240
+R1, R2, and R4 all have routes to the 192.168.4.0/24 network.
+1575.100
+However, to send a reply back PC4 sends packets with a source address of 192.168.4.1 and a
+1582.980
+destination address of 192.168.1.1.
+1586.680
+Can you see the problem?
+1588.920
+R4 and R2 have no route to reach the 192.168.1.0/24 network.
+1594.830
+R1 can reach it of course, since its a connected network, but let’s take a quick look at
+1599.789
+the routing table of R2 and R4 again.
+1603.190
+Here’s R4’s routing table….no route to 192.168.1.0/24.
+1610.690
+And here’s R2’s routing table..also no route to 192.168.1.0/24.
+1617.759
+Not to mention, I also haven’t configured the default gateway on PC4.
+1621.450
+I’ll quickly run through the configurations.
+1624.989
+Okay, so I configured the default route on PC4 like I did on PC1.
+1630.509
+Same as for PC1, I’m just using another Cisco router instead of an actual PC.
+1635.989
+You can see the static route I configured, and it has been selected as the gateway of
+1640.049
+last resort, the default gateway.
+1642.429
+Here’s R4’s routing table.
+1645.779
+You can see the static route I configured to the 192.168.1.0/24 network, and the next-hop
+1651.880
+IP address is R2’s address.
+1655.600
+And finally R2’s routing table.
+1657.679
+Here’s the static route I configured to the 192.168.1.0/24 network, with a next-hop
+1663.920
+IP address of 192.168.12.1, R1’s IP address.
+1669.620
+Okay, let’s try that ping once more.
+1671.840
+We should have two-way reachability now.
+1675.250
+Okay, now that we have configured static routes in both directions, you can see that the ping succeeds.
+1682.499
+Before reviewing and moving on to the quiz, let me clarify one point I mentioned before.
+1688.029
+Earlier I mentioned that, when a router looks up a destination IP address in its routing
+1693.029
+table, it looks for the most specific matching route.
+1697.279
+What does that mean?
+1698.450
+Well, most specific means the longest prefix length.
+1702.869
+For example, /32 is more specific than /24.
+1707.109
+/24 is more specific than /16.
+1710.659
+/16 is more specific than /8.
+1714.200
+And /8 is more specific than /0.
+1718.200
+Here I’ve added one more link to our topology between R1 and R4.
+1722.010
+It’s the 192.168.14.0/24 network, with R1’s address being 192.168.14.1 and R4’s 192.168.14.4.
+1735.600
+I also configured some extra routes, lets check the route table.
+1739.789
+So, here’s R1’s routing table now.
+1743.119
+You can pause the video to take a look if you want.
+1745.619
+Let’s say I issue the command ‘ping 192.168.4.1’ on R1.
+1753.129
+Before thinking about which is the MOST SPECIFIC matching route, how many routes actually match
+1758.289
+192.168.4.1? pause the video and find how many matching routes there are.
+1766.100
+Okay. Well, here’s one.
+1768.960
+192.168.4.1/32 is an exact match, so actually I can tell you right away that this not only matches,
+1776.620
+it is also the most specific match. 192.168.4.0/24 also matches.
+1783.429
+Although the last octet is different, .0 and .1, because that octet isn’t covered by
+1789.710
+the mask, it doesn’t matter if it changes, it still matches 192.168.4.1.
+1795.039
+Now, there is one more match, did you find it?
+1799.539
+It’s this one, 192.0.0.0/8.
+1804.769
+We haven’t yet seen a class C address like this with a /8 mask, but it follows the same logic.
+1810.779
+/8 means that only the first octet is covered by the mask.
+1815.309
+The other three octets can vary, and they will still match.
+1819.890
+So, 192.168.4.1 does match 192.0.0.0/8.
+1825.159
+However, as I said, 192.168.4.1 is the most specific route, since it has the longest prefix
+1833.480
+length, /32, so in this case the router will choose that route. Here’s another example. Ping 192.168.4.254.
+1844.759
+This time, there are just two matches, 192.168.4.0/24 and 192.0.0.0/8.
+1853.640
+Which route will the router choose? It will choose
+1856.680
+192.168.4.0/24, because it has the longer prefix length.
+1862.950
+Okay, once again that was a lot of material to cover.
+1866.649
+If there’s anything you don’t understand, try watching those parts of the video again,
+1871.729
+or feel free to ask questions in the comments.
+1874.970
+If your question is something I will answer soon in another video, I may just tell you
+1879.039
+to wait, but I try to respond to every comment!
+1882.389
+Anyway, before moving on to the quiz, lets review what we covered in this video.
+1886.830
+We covered the IP routing process, showing how routers look up destination IP addresses
+1892.809
+in their routing tables to find the next hop in the route to the destination.
+1898.039
+speaking of routing tables, I also introduced the routing table on Cisco routers.
+1902.850
+There’s still more to talk about regarding the routing table, but don’t worry there
+1907.129
+will be plenty more videos about routing coming up!
+1910.769
+We also looked at configuring static routes, using this command.
+1914.440
+IP ROUTE, followed by the destination IP address, the mask, and then either the next-hop address
+1921.269
+or the exit interface.
+1923.009
+Okay, let’s move on to today’s quiz.
+1927.009
+In addition to the quiz, remember to check out the flashcards with the link in the description,
+1931.929
+they will help you remember what you’ve learned in this video.
+1934.169
+Let’s get started with question 1.
+1938.109
+The IP address configured on a router interface will appear in the routing table as what kind of route? A, static. B, connected. C, local. Or D, internal.
+1951.629
+Pause the video to think about your answer.
+1957.419
+The answer is C, Local.
+1960.259
+As you can see here, Local addresses use a /32 mask, which specifies the exact address
+1965.980
+configured on the interface.
+1968.649
+Connected addresses represent the network that the local address is part of.
+1973.110
+Static addresses are manually configured addresses, unlike connected and local addresses which
+1978.070
+are automatically added when you configure an IP address on an interface and enable it.
+1983.679
+Internal is not a type of route you can find in the routing table.
+1986.989
+Let’s go to question 2.
+1989.690
+Which command configures a default route on a Cisco router?
+1994.710
+Pause the video to examine each option and determine the correct answer.
+2003.990
+The answer is A, IP ROUTE 0.0.0.0 0.0.0.0 10.1.1.254.
+2014.109
+Default routes are configured as static routes with this syntax: IP ROUTE, followed by the
+2019.259
+destination IP address, the mask, and then the next-hop IP or exit interface.
+2027.230
+Specifying a destination address of 0.0.0.0 with a mask of 0.0.0.0 matches all routes,
+2034.609
+thus making it a default route that the device uses only if a packet’s destination address
+2039.559
+doesn’t match anything else in the routing table.
+2042.789
+You can’t specify a prefix length with a / in this command, you have to write out the
+2046.999
+mask in dotted decimal format.
+2049.030
+Let’s go to question 3.
+2052.990
+Which is an accurate statement about the behavior of routers and switches?
+2057.419
+A, Routers flood packets with an unknown destination IP address, switches flood frames with an
+2063.840
+unknown destination MAC address.
+2066.679
+B, Routers drop packets with an unknown destination IP address, switches drop frames with an unknown destination MAC address.
+2076.000
+C, Routers drop packets with an unknown destination IP address, switches flood frames with an
+2082.650
+unknown destination MAC address.
+2084.620
+Pause the video to think about your answer.
+2091.610
+The answer is C, Routers drop packets with an unknown destination IP address, but switches
+2097.260
+flood frames with an unknown destination MAC address.
+2100.660
+However, you can configure a gateway of last resort on a router, which tells the route
+2105.880
+where to forward packets that don’t match any other address in the routing table.
+2109.920
+Let’s go to question 4.
+2113.940
+Which two types of addresses are automatically added to the routing table when you configure
+2118.060
+an IP address on an interface and enable it?
+2121.240
+A, connected and static.
+2124.310
+B, local and static.
+2127.360
+C, default and local.
+2130.020
+D, connected and local.
+2133.180
+Pause the video to think about your answer.
+2139.480
+The answer is D, connected and local.
+2142.870
+As I mentioned in the explanation for question 1, a local route is the actual IP address
+2148.180
+configured on the interface, and a connected route is the network the interface is a member of.
+2154.090
+Let’s go to question 5.
+2157.070
+Which interface will be used to forward a packet with a destination IP address of 10.1.1.1?
+2163.920
+Pause the video to take a look at R1’s routing table and find the correct answer.
+2171.780
+Okay, the correct answer is gigabitethernet0/3.
+2177.360
+The most specific match for the destination 10.1.1.1 is this route, 10.1.1.0/24 via 192.168.14.4.
+2189.240
+If you then look up the most specific match for 192.168.14.4, you’ll find this route
+2195.410
+to 192.168.14.0/24, which specifies that the packet will be forwarded out of the gigabitethernet0/3 interface.
+2204.690
+Okay, that’s all for the quiz.
+2209.040
+Remember to use the supplementary materials to help you remember what you’ve studied.
+2213.550
+There will be Anki flashcards to help you review what you’ve studied.
+2217.310
+There will also be a packet tracer practice lab so you can get some hands-on practice
+2220.910
+configuring static routes on Cisco routers.
+2223.720
+Good luck with your studies.
+2226.140
+Thank you for watching.
+2229.910
+Please subscribe to the channel, like the video, leave a comment, and share the video
+2233.820
+with anyone else studying for the CCNA.
+2237.160
+If you want to leave a tip, check the links in the description.
+2239.990
+I'm also a Brave verified publisher and accept BAT, or Basic Attention Token, tips via the Brave browser.
+2247.250
+That's all for now.

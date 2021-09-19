@@ -1,0 +1,774 @@
+0.890
+Welcome to Jeremy’s IT Lab.
+3.219
+This is a complete course for the CCNA, including everything you need to pass the exam, all 100% free.
+10.760
+Make sure you stay tuned till the end of the video for the quiz to test your knowledge
+14.660
+of the material in this video.
+16.910
+Also, remember to download and use the Anki flashcards with the link in the description,
+22.289
+which will help you very much in your studies. Let’s get started.
+27.150
+This is the sixth lesson in the series.
+30.119
+In this lesson we will continue with the same topic as in Day 5, Ethernet LAN switching,
+35.870
+but we will go a little deeper to make sure there aren’t any holes in your knowledge.
+40.649
+Once again, we’re talking about sending traffic within a LAN, like between
+44.850
+these three PCs in this small network here.
+48.230
+The topic of how these PCs could send traffic out beyond the router to other networks is
+52.750
+for a future lesson, let’s start locally first, with LAN switching.
+58.460
+Before I get started, I want to speak a little bit more on Ethernet frames which we talked
+62.660
+about in the last video.
+65.220
+The preamble + SFD is usually not considered part of the Ethernet header, although it is
+71.710
+sent with every Ethernet frame.
+74.030
+So, the Ethernet header consists of these three field, destination, source, and type.
+80.659
+Therefore, the size of the Ethernet header + trailer is 18 bytes, if you don’t include
+85.911
+the preamble + SFD
+88.500
+Now, there is also a minimum size for an Ethernet frame.
+92.090
+The minimum size is 64 bytes, including the encapsulated payload, the packet.
+98.840
+64 bytes minus the 18 bytes of the header equals 46 bytes.
+104.159
+Therefore, the minimum payload size is 46 bytes.
+108.719
+Now, what if we send a payload packet that is less than 46 bytes?
+114.180
+If the payload is less than 46 bytes, padding bytes are added, and these bytes are all 0s by the way.
+121.440
+For example, if you send a 34-byte packet, 12 bytes of padding will be added.
+126.860
+Okay, that’s all I wanted to add.
+130.580
+Remember that the Preamble and SFD might not be included as part of the Ethernet header,
+135.170
+depending on how you define it, but they are included with every Ethernet frame.
+140.080
+Also, remember the minimum size of the frame, 64 bytes, and that doesnt include the preamble
+145.819
+and SFD, by the way.
+148.459
+That means that the minimum payload is 46 bytes, and padding will be added if the payload
+153.580
+is less than that.
+155.510
+Now let’s get started with the main topics for today’s video.
+159.090
+So, here’s the same small network we saw in the previous video.
+164.410
+There are a couple changes, however.
+166.070
+First, I changed the interfaces from Fastethernet to gigabit ethernet, hence the G0/0, G0/1,
+174.080
+and G0/2 for each switch.
+176.380
+Secondly, look at the mac addresses.
+179.720
+In the previous video I used AAAA.AA00.0001, for PC1, or .0002 for PC2, etc.
+191.739
+This time let’s use some more realistic MAC addresses.
+195.910
+Notice once again that the OUI, the first half of the MAC address that identifies the
+200.310
+maker of the device, is the same for each PC, 0C2F.B0, so that means that the PCs were
+208.650
+all made by the same company.
+211.500
+Of course, the second half of each device’s MAC address is unique, since that represents the device itself.
+218.680
+When I refer to these MAC addresses I’ll just use the last 4 digits, to keep things simple.
+224.569
+For example, I’ll just say PC1’s MAC address is 9D00, or PC2’s MAC address is 6200.
+233.209
+Now, let’s add one more thing to this network topology.
+237.069
+Let’s add some IP addresses.
+239.750
+We won’t actually talk about the details of IP addresses in this video, but we’ll
+245.010
+need IP addresses to explain something else in this video.
+248.189
+So, this number here, 192.168.1.0/24, represents this whole network here.
+257.230
+Then .1 represents PC1’s IP address.
+262.140
+This is just the short version, PC1’s real IP address is 192.168.1.1.
+269.220
+PC2’s IP address is 192.168.1.2, PC3’s IP address is 192.168.1.3, and PC4’s IP address is 192.168.1.4.
+284.920
+Now, in the last video I only really showed you part of the picture of how these PCs can
+289.230
+communicate within this network.
+292.380
+When a device sends some data to another device, it doesn’t just include a source and destination MAC address.
+299.640
+Encapsulated within that frame is an Internet Protocol, known as IP, packet, and that IP
+304.880
+packet includes a source and destination IP address.
+309.340
+For example, if PC1 wants to send data to PC3, the source IP will be 192.168.1.1 and
+318.550
+the destination IP will be 192.168.1.3.
+323.960
+The source MAC will be 0C2F.B011.9D00, however PC1 doesn’t actually know PC3’s MAC address.
+335.850
+When you send data to another computer, you enter the IP address, not the MAC address.
+341.270
+So, the user entered the IP address 192.168.1.3 as the destination, but PC1 has to discover
+349.520
+PC3’s MAC address by itself.
+352.000
+Remember, these switches are Layer 2 devices, they don’t operate at Layer 3, so they need
+357.930
+to use MAC addresses, not IP addresses.
+361.330
+So, PC1 wants to send this Ethernet frame to PC3, but first it has to learn PC3’s MAC address.
+369.710
+To do so, it uses something called ARP, the Address Resolution Protocol.
+376.060
+Let’s take a look at ARP.
+379.750
+ARP stands for Address Resolution Protocol.
+383.500
+It is used to discover the Layer 2 address, meaning the MAC address, of a known Layer
+388.820
+3 address, meaning the IP address.
+392.780
+For example, in our example here PC1 knows PC3’s Layer 3 address, 192.168.1.3, but it doesn’t
+401.900
+know the Layer 2 address, its MAC address, yet.
+405.790
+The ARP process consists of two messages: The ARP request, sent by the device that wants
+412.030
+to know the MAC Address of the other device.
+414.900
+And the ARP reply, which is sent to inform the requesting device of the MAC address.
+421.810
+In our example, PC1 would send the ARP request, and PC3 would send the ARP reply.
+429.000
+The ARP request is sent as a broadcast ethernet frame.
+433.810
+Broadcast means it is sent to all hosts on the network.
+437.640
+Because the Layer 2 address of the destination host is unknown, it broadcasts the request
+442.970
+and waits for a reply from the correct device.
+446.630
+The ARP reply is unicast.
+449.300
+We learned about unicast frames in the last video.
+451.820
+A unicast frame is sent to only one host, in this case its the host that sent the ARP request.
+458.880
+Let’s take a look at how this works on our network.
+462.970
+Here at the bottom is the original frame that PC1 wants to send to PC3.
+468.170
+But first, It has to send this frame.
+471.090
+This is an ARP request frame.
+473.810
+The source and destination IP addresses, as well as the source MAC address, are the same.
+479.090
+However, look at the destination MAC address.
+482.860
+FFFF.FFFF.FFFF is the broadcast MAC Address.
+491.050
+This is the destination MAC address used when a device wants to send ethernet frames to
+495.470
+all other devices on the local network.
+498.540
+So, PC1 has prepared the Arp request to be sent.
+503.690
+It sends the frame out of its network interface, and it is received by SW1.
+509.000
+SW1 then adds PC1’s MAC address to its MAC address table.
+514.690
+When a MAC address is learned in this way, what is it called?
+518.190
+It’s called a dynamic mac address, which we learned in the last video.
+523.169
+So, since the destination MAC address is all Fs, SW1 broadcasts the frame out of all of its
+530.630
+interfaces, except the one it was received on.
+534.630
+This is very much like what a switch does with an unknown unicast frame, which we also learned about last video.
+541.940
+It sends the frame out of G0/1 and G0/2, but not G0/0 because it received the frame on that interface.
+550.390
+PC2 receives it, but it ignores the frame.
+554.040
+That’s because the destination IP address doesn’t match PC2’s IP address, so it
+559.590
+knows that the ARP request is meant for a different PC, so it just ignores the request.
+566.100
+Of course, then SW2 learns PC1’s MAC Address and adds it to the MAC address table, associating
+572.640
+it with the G0/2 interface since that’s the interface the frame was received on.
+578.500
+Since the destination MAC address is the broadcast MAC address, SW2 also sends the frame out
+583.740
+of all interfaces, except the one the frame was received on.
+587.890
+So, that means it sends the frame out of G0/0 and G0/1.
+593.130
+PC4 ignores the frame, because the destination IP address doesn’t match its own.
+599.680
+However, PC3 recognizes that the destination IP addresses does match its own IP address,
+606.560
+so it doesn’t ignore the ARP request.
+609.650
+What it does is send the other ARP message I mentioned briefly, the ARP Reply.
+616.310
+Here you can see the ARP reply packet.
+619.240
+The source IP is PC3’s IP, and the destination is PC1’s IP.
+624.050
+The Source MAC is PC3’s MAC address, and the destination is PC1’s.
+631.950
+Although the ARP Request message was a broadcast message, because PC1’s MAC address was used
+637.130
+as the source MAC address of the ARP request message, PC3 now knows PC1’s MAC address
+643.710
+so it can send the ARP reply directly to PC1, without having to broadcast the frame.
+649.530
+PC3 sends the frame out of its network interface, and it is received by SW2.
+655.940
+SW2 learns PC3’s MAC Address and enters it into the MAC address table, associating
+662.690
+it with the G0/0 interface.
+666.010
+Since this is a unicast frame, and SW2 already has an entry for the destination MAC address
+671.280
+in its MAC address table, what kind of frame is this, and what does SW2 do with it?
+676.830
+It’s a known unicast frame, and SW2 will simply forward it out of the interface in
+682.650
+the MAC address table, it will not flood it like an unknown unicast frame or a broadcast frame.
+689.570
+Because SW2 learned PC1’s MAC address on the G0/2 interface, it will send the frame
+694.990
+out of that interface toward SW1.
+698.100
+SW1 receives the frame, and since it has already learned PC1’s MAC address on the G0/0 interface,
+705.640
+it simply forwards the frame out of the interface, and PC1 finally receives the ARP reply.
+711.630
+PC1 will then use that information to add an entry for PC3 to its ARP table, which is
+718.029
+used to store these IP address to MAC address associations.
+721.710
+Let’s take a look at an ARP table.
+725.960
+This is a screenshot of part of the ARP table from my PC.
+730.400
+I use Windows on my PC, but you can use the arp -a command to view the ARP table, whether
+736.920
+you run Windows, macOS, or Linux on your computer.
+742.110
+The Internet address column displays IP addresses.
+745.910
+The Physical address column displays the MAC addresses that correspond to the IP addresses.
+752.060
+If the type column displays static, it means that it is a default entry, it wasn’t actually
+757.380
+learned by sending an ARP request.
+760.020
+However, if the type column displays dynamic, that means that the entry was learned by sending
+765.470
+an ARP request and receiving an ARP reply.
+769.270
+You can see one entry like that here, with an IP address of 192.168.0.1 and its MAC address next to it.
+777.600
+That’s the address of my home router, by the way.
+780.870
+My PC used ARP to learn the MAC address of the router.
+785.840
+Now let’s take a deeper look at the MAC address table that is kept on these switches,
+790.110
+and some additional information.
+792.010
+I recreated the same topology in the network emulator software GNS3.
+797.890
+GNS3 is similar to packet tracer in that it allows you to create networks and practice
+803.810
+configurations on Cisco devices, but its also different in some key ways.
+810.110
+Packet tracer is a network simulator, it’s a piece of software designed to simulate the
+814.430
+operation of a real network.
+816.670
+GNS3, however, runs actual Cisco IOS software, so these are real Cisco switches running virtually.
+825.220
+However, GNS3 requires you to purchase your own copies of Cisco IOS, so although GNS3
+832.650
+itself is free, using Cisco IOS with GNS3 is not.
+837.650
+That’s why I choose to use packet tracer for the lab videos in this series, its totally
+843.150
+free, and it lets you practice just about everything you need for the CCNA.
+847.730
+I also want to show you GNS3 sometimes in these videos, however, since you’ll probably
+853.150
+want to use it later as you progress in your networking studies.
+856.800
+Don’t worry about using GNS3 for now though, unless you really want to try it out.
+862.760
+You can get it at gns3.com.
+867.000
+So, here’s our topology, and notice this magnifying glass here.
+872.110
+This is a cool feature of GNS3, it integrates with another piece of software called wireshark,
+878.260
+and we’ll use it to analyze exactly what traffic passes between PC1 and SW1.
+883.260
+I’m going to send a ping from PC1 to PC3.
+888.470
+The process is the same, but let me just run down one more time what happens.
+893.630
+Just like our example before, PC1 doesn’t know the destination MAC address, so has to
+899.040
+send an ARP request.
+901.670
+The ARP request is sent to all other hosts on the network.
+905.220
+PC3 responds to the Arp request, since it’s IP address matches the destination IP address
+911.750
+in the ARP request.
+913.840
+PC1 then learns the MAC Address of PC3, adds it to its ARP table, and uses that information
+920.870
+to add the destination MAC Address to the ping it wants to send.
+924.940
+Now, before I move on, you may have heard of ping before, but let me explain how it works.
+932.630
+Ping is something you’re going to be using a lot.
+935.260
+It's a network utility that is used to test reachability, for example, to test if two
+940.520
+computers can reach each other.
+943.550
+It measures the round-trip time, for example the time from PC1 to PC3, then back to PC1.
+951.610
+Much like ARP, ping uses two messages: ICMP Echo request, and ICMP echo reply.
+960.360
+Again, this is similar to an ARP request and ARP reply.
+964.830
+However, the PC won’t broadcast the ICMP echo request, it is sent to a specific host.
+971.610
+So, it has to know the MAC address of the destination host, which is why ARP must be used first.
+979.130
+The command to use ping is ping, followed by the IP address you want to ping to, for example,
+985.640
+192.168.1.3 for PC3 in our network.
+990.370
+Let’s take a look at the ping process.
+994.100
+So I’m on PC1 here.
+996.930
+Note that this is actually the Cisco IOS CLI.
+1000.310
+I’m using Cisco routers to simulate PCs, since its easier than setting up virtual PCs
+1006.160
+to ping in GNS3.
+1009.110
+I use the command ping 192.168.1.3, to send an IMCP echo request to PC3.
+1018.030
+Take a look at this message here.
+1020.270
+Sending 5, 100-byte ICMP echos to 192.168.1.3.
+1027.620
+By default, a ping in Cisco IOS sends 5 ICMP echo requests, and then you should get 5 ICMP
+1034.860
+echo replies back, and the default size of each ping is 100 bytes.
+1040.550
+The period indicates a failed ping, and the exclamation points indicate a successful ping.
+1048.630
+As it says here, success rate is 80 percent, 4 out of 5.
+1053.840
+It also shows the round trip time, giving the minimum, average, and maximum time of
+1059.120
+the 4 successful pings.
+1061.210
+Now, why did that first ping fail?
+1063.960
+Well, that’s because of ARP.
+1066.330
+PC1 didn’t know the destination MAC address, so it had to use ARP, and in that time the first ping failed.
+1075.020
+After PC1 learned PC3’s MAC address, however, the pings succeeded.
+1079.590
+Let’s take a quick look at the arp table here.
+1083.630
+The command for windows, macos, and linux was arp -a.
+1088.330
+However, in Cisco IOS its show arp, from privileged exec mode.
+1094.630
+Here’s the ARP table.
+1097.520
+Notice there is an entry for 192.168.1.1, which is PC1 itself, and then below it 192.168.1.3, which is PC3.
+1110.200
+This is a screenshot from Wireshark, which I mentioned earlier.
+1115.170
+Wireshark allows you to perform what are called ‘packet captures’, to analyze the contents of network traffic.
+1122.380
+Notice the Protocol column.
+1124.020
+ARP, followed by ICMP, which is ping.
+1128.600
+Here’s the first ARP packet.
+1131.620
+The source MAC is 0c2f b011 9d00, which is PC1’s MAC.
+1139.940
+The destination is broadcast, which is all Fs.
+1144.270
+Look at the info on the end.
+1146.610
+Who has 192.168.1.3? tell 192.168.1.1.
+1153.810
+This describes what purpose of ARP is.
+1156.910
+The ARP request is asking which MAC address has an IP address of 192.168.1.3, and to send
+1164.700
+the reply to itself, 192.168.1.1.
+1169.790
+Next is the ARP reply.
+1171.910
+The source address is 0c2f b06a 3900, PC3’s MAC, and the destination is PC1’s MAC.
+1183.770
+Look at the info section again here.
+1187.040
+192.168.1.3 is at 0c2f b06a 3900, it’s telling PC1 its MAC address.
+1198.370
+After that there are 4 ICMP echo requests, and 4 ICMP echo replies.
+1204.540
+Note that the ICMP echo requests have a source IP of PC1 and destination of PC3, and the
+1211.900
+ICMP echo replies have a source of PC3 and destination of PC1.
+1217.559
+I’ll use wireshark at various points throughout this course, but I think you can see how useful
+1223.250
+it can be in analyzing networks.
+1225.679
+Okay, hopefully you understand this process a little better now.
+1230.470
+Basically, if device A wants to send traffic to device B. which is on the same network,
+1236.520
+device A first has to use ARP to learn device B’s MAC address, and then it can send traffic
+1242.410
+to device B. Now, let’s finally take a look at the MAC address table on a Cisco switch. Here it is.
+1250.670
+This is the command to view it, show mac SPACE address HYPHEN table.
+1256.730
+Old versions of Cisco IOS use show mac hyphen address hyphen table, but newer versions got
+1264.370
+rid of the first hyphen, and now its this, show mac space address hyphen table.
+1271.800
+Now let’s look at each section of the MAC address table, before I only showed the MAC address and interface.
+1278.770
+First is the VLAN.
+1280.480
+VLAN means VIRTUAL local area network.
+1284.150
+We’ll learn about those later, but as is displayed here the default is 1.
+1291.100
+Next is the MAC address column, you can see PC1 up top and PC3 on the bottom, Next is the type.
+1300.070
+Remember what I said about dynamic mac addresses?
+1303.240
+Well it is displayed in the MAC address table as well.
+1306.870
+Both of these MAC addresses were learned dynamically, I did not manually configure them on the switch.
+1312.440
+Finally, ports, which is another word for interface.
+1317.310
+So, you can see that this matches the small MAC address table I put here in this diagram earlier.
+1323.840
+Here’s the entry for PC1, and here’s the entry to PC2.
+1329.860
+Now, I mentioned in the previous video that these dynamic MAC addresses are removed from
+1335.530
+the MAC address table after 5 minutes.
+1338.990
+This is known as aging.
+1341.430
+If the switch doesn’t get any traffic from that MAC address for 5 minutes, it will remove
+1346.000
+the entry from the MAC address table.
+1348.480
+However, you can also manually remove MAC addresses from the table.
+1353.630
+Here I used the show mac address table command and you can see the entries for PC1 and PC3.
+1361.170
+Then I used the command clear mac address-table dynamic.
+1365.710
+As you can see, all of the dynamic MAC address have been cleared.
+1370.290
+Remember this command clear mac address-table dynamic.
+1375.260
+Now, if you don’t want to clear all of the mac addresses from the table, you can add
+1380.049
+some additional options to the command.
+1383.270
+Once again, I used show mac address-table, and you can see both entries, for PC1 and PC3.
+1389.850
+This time I used a different command, clear mac address-table dynamic address, followed
+1395.179
+by PC1’s MAC address.
+1398.230
+Then if I use show mac address-table again, only PC3’s MAC address can be seen.
+1403.830
+Here’s the command once more.
+1406.670
+Clear mac address-table dynamic address, then the mac address.
+1411.940
+Finally, one more option to clear the MAC address table.
+1415.850
+Again, show mac address-table shows both PC1 and PC3’s MAC addresses.
+1422.580
+This time I use the command clear mac address-table dynamic interface gi0/0.
+1430.890
+This clears all mac address table entries for a specific interface.
+1435.680
+As you can see, once again PC1’s mac address is removed, because it is connected to the G0/0 interface.
+1443.070
+Here’s the command again.
+1445.730
+Clear mac address-table dynamic interface, and then the interface.
+1451.650
+Before we move on to the quiz, I want to show you a little more in wireshark, regarding
+1456.240
+what I said in the beginning of this video about the Ethernet frame.
+1460.980
+In this packet capture I sent a 36-byte ping with the command ‘ping 192.168.1.3 SIZE 36’.
+1470.590
+First, notice the TYPE field down here.
+1474.970
+As I mentioned in the last video, IPv4’s ethernet type is 0x0800.
+1482.340
+The 0x just means that its using hexadecimal, so really its 0800.
+1488.900
+Next, look at the padding here.
+1492.429
+Remember, the minimum payload size for an ethernet frame is 46 bytes, and I sent 36
+1499.940
+byte pings, so there should be 10 bytes of padding.
+1504.490
+These zeroes are hexadecimal zeroes.
+1507.809
+Each hexadecimal digit is 4 bits, so 2 digits equals 8 bits, or 1 byte.
+1515.600
+If you count the zeroes, there are 20 zeroes, so that means 10 bytes of padding.
+1522.690
+If I zoom out a bit you can also see the padding down here.
+1527.030
+These ten pairs of zeroes are the 10 bytes of padding added to the 36-byte pings to make
+1532.380
+them meet the 46-byte payload minimum size.
+1535.890
+One last thing in wireshark.
+1538.800
+This time looking at ARP.
+1540.780
+Remember, the IPv4 ethernet type is 0800, and the IPv6 ethernet type is 86DD.
+1550.490
+As you can see here, the ARP ethernet type of 0806.
+1556.500
+This indicates that an ARP packet is inside of this ethernet frame.
+1560.390
+Okay, so we covered a lot of important stuff in this video.
+1565.740
+We talked about some more details of the ethernet frame, including the minimum size of the ethernet
+1570.981
+payload, which is 46 bytes.
+1574.679
+We talked about ARP, the address resolution protocol.
+1578.710
+It is used to learn the MAC address of a device, for which you already know the IP address.
+1584.330
+It uses two messages, an ARP request, which is broadcast to all devices on the local network,
+1591.100
+and an ARP reply, which is sent to the device which sent the request.
+1596.480
+We also looked at the ARP table on a windows device and a Cisco IOS device.
+1602.440
+We talked about ping, which is used to test reachability in a network.
+1607.260
+It also uses two messages, ICMP echo request and ICMP echo reply.
+1614.250
+Finally, we looked at the MAC address table on a Cisco switch, including how to clear
+1619.430
+it in a few ways.
+1621.400
+Let’s move on to the quiz for today’s video. Here’s question 1.
+1628.120
+You send a 36-byte ping to another computer and perform a packet capture to analyze the network traffic.
+1635.380
+You notice a long series of bytes of 00000000 at the end of the Ethernet payload.
+1643.929
+How can you explain these zeroes?
+1646.450
+A, pings are a series of zeroes.
+1650.360
+B, they are padding bytes.
+1654.110
+Or C, they are the Ethernet FCS.
+1658.140
+Pause the video to think about your answer.
+1664.040
+the answer is B, they are padding bytes.
+1667.880
+The ping you sent was 36 bytes, but the minimum Ethernet payload size is 46 bytes, so a series
+1674.970
+of padding bytes must be added to meet the minimum payload size.
+1678.620
+Let’s go to question 2.
+1683.160
+Which of these messages is sent to all hosts on the local network? A, ARP Requeset. B, arp reply.
+1693.190
+C, icmp echo request.
+1696.830
+Or D, ICMP echo reply.
+1700.420
+Pause the video to think about your answer.
+1706.559
+the answer is a, ARP request. Let’s check.
+1711.539
+The ARP reply message is a unicast message sent to the host that sent the ARP request.
+1717.090
+So b, ARP reply, is incorrect.
+1721.210
+The ICMP echo request is a unicast message used to test the reachability of another specific host.
+1728.590
+The ICMP echo reply is a unicast reply to the request.
+1733.070
+So C, ICMP echo request, and D, ICMP echo reply, the two messages used in PING, are incorrect.
+1742.470
+The ARP request message is used to learn the Layer 2 address of a host.
+1747.330
+Because the Layer 2 address is not yet known, the message has to be broadcast to all hosts
+1752.370
+on the local network.
+1754.309
+So A, ARP request, is the correct answer.
+1757.440
+Let’s go to question 3.
+1761.520
+Which fields are present in the output of the show mac address-table command on a Cisco switch?
+1767.380
+A, mac address, and ports.
+1770.770
+B, VLAN, mac address, and ports.
+1775.320
+C, VLAN, MAC address, type, and ports.
+1780.830
+D, Internet address, physical address, and type.
+1786.200
+Pause the video to think about your answer.
+1792.890
+The answer is C, VLAN, MAC address, type, and ports.
+1797.600
+Let’s take a look.
+1799.570
+Here’s a screenshot of the MAC address table on a Cisco switch.
+1804.950
+Notice the four fields, VLAN, MAC address, type, and ports.
+1810.480
+So C is the correct answer.
+1813.919
+By the way, answer D, Internet address, physical address, and type, is the output shown from
+1819.929
+the arp -a command on my windows PC.
+1824.150
+This is part of the ARP table on my PC, not the MAC address table on a Cisco switch.
+1829.250
+Let’s go to question 4
+1833.140
+Which types of frames does a switch send out of all interfaces, except the one the frame was received on?
+1839.580
+A, broadcast and unknown unicast.
+1843.520
+B, broadcast and known unicast.
+1847.660
+C, known unicast and unknown unicast.
+1852.280
+Or D, broadcast, unknown unicast, and known unicast.
+1857.660
+Pause the video to think about your answer.
+1863.750
+the answer is A, broadcast and unknown unicast. Let’s check.
+1869.160
+Known unicast frames are sent to a single host.
+1873.620
+Because the switch already has an entry for the destination in its MAC address table,
+1877.990
+there is no need to flood the frame out all interfaces.
+1881.560
+So B, C, and D are incorrect because they include known unicast.
+1888.740
+Broadcast frames have a destination address of FFFF.FFFF.FFFF and are sent to all hosts
+1897.600
+on the local network.
+1900.220
+Unknown unicast frames are destined for a single host, however the switch doesn’t
+1904.480
+have an entry for the destination in its MAC address table so it must flood the frame.
+1910.100
+So A, broadcast and unknown unicast, is the correct answer.
+1914.799
+Lets’ go to the last question for today’s video.
+1920.059
+Which command is used on a Cisco switch to clear all dynamic MAC addresses on a specific
+1925.260
+interface from the MAC address table?
+1928.540
+A, clear mac address HYPHEN table interface, interface-id.
+1935.320
+B, clear mac HYPHEN address HYPHEN table dynamic interface, interface-id.
+1944.240
+C, clear mac HYPHEN address table dynamic interface, interface-id.
+1951.960
+or D, clear mac address HYPHEN table dynamic interface, interface ID.
+1959.620
+Pause the video to think about your answer.
+1965.460
+the answer is D, clear mac address HYPHEN table dynamic interface interface-id.
+1973.120
+Make sure to spend time doing practice labs in packet tracer to help you remember the commands!
+1978.059
+That’s all for the quiz.
+1981.000
+Once again, there will be supplementary materials to help you study.
+1985.159
+As always, there will be Anki flash cards to help you remember what you learned.
+1990.100
+There will also be a packet tracer practice lab to give you some hands-on experience with Cisco devices.
+1995.550
+Good luck with your studies.
+1998.039
+Thank you for watching.
+2001.070
+Please subscribe to the channel, like the video, leave a comment, and share the video
+2005.500
+with anyone else studying for the CCNA.
+2008.830
+If you want to leave a tip, check the links in the description.
+2011.710
+I'm also a Brave verified publisher and accept BAT, or Basic Attention Token, tips via the Brave browser.
+2018.929
+That's all for now.

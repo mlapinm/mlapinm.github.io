@@ -1,0 +1,270 @@
+1.199
+Welcome to Jeremy’s IT Lab.
+3.570
+This is a free, complete course for the CCNA 200-301.
+8.790
+If you like these videos, please subscribe to follow along with the series.
+13.150
+Also, please like and leave a comment, and share the video to help spread this free series of videos.
+19.760
+Thanks for your help.
+22.090
+In this lab we’ll configure interfaces on a router and two switches.
+27.020
+This is a single LAN, 172.16.0.0/16, connected to R1’s G0/0 interface.
+36.370
+In the real world, R1 would then connect to other LANs or perhaps the Internet, but we’ll
+41.660
+just configure this small LAN for now. Let’s get started.
+45.930
+So, there are six main steps in this lab. 1, configure hostnames.
+51.720
+2, configure IP addresses.
+54.960
+3, configure speed and duplex.
+57.860
+4, configure interface descriptions.
+61.130
+5, disable unused interfaces.
+64.330
+And 6, save the configurations.
+67.310
+Instead of going through each step one by one, I’ll go through the steps one device
+71.609
+at a time, but you can do it in any order you like.
+75.210
+So, let’s go on R1 first. The first step is to configure the hostname.
+82.899
+As you can see, it currently has the default hostname of ‘router’ as indicated by the prompt here.
+88.369
+Let’s change it to R1.
+91.240
+Use ‘enable’ to enter privileged exec mode, then ‘configure terminal’ to enter global config mode.
+98.700
+From here simply type hostname R1, and you can see the prompt has changed to indicate the new hostname.
+106.990
+Now let’s configure the IP address on its G0/0 interface.
+111.560
+Type ‘interface g0/0’ to enter interface config mode for the interface.
+117.409
+Actually, before doing the configuration, let’s confirm the current status of the interface.
+123.799
+Do show ip interface brief.
+126.490
+Remember, ‘do’ let’s me use the show command even though I’m not in privileged exec mode.
+133.620
+Here’s the gigabitethernet0/0 interface, the IP address is unassigned, so the method
+139.349
+is unset, and the status is administratively down because that’s the default setting for router interfaces.
+147.239
+Let’s configure it and then check again after.
+150.510
+So, let’s configure the IP address.
+154.100
+IP ADDRESS 172.16.255.254, and because the prefix length is /16, the subnet mask will be 255.255.0.0.
+168.540
+Okay, now because this interface is connected to another networking device, SW1, I’ll
+173.640
+manually configure the speed and duplex.
+177.049
+SPEED 1000, meaning 1000 megabits per second because this is a gigabitethernet interface. Then, duplex full.
+187.020
+Devices attached to switches can use full duplex, there’s no reason to use half-duplex
+191.709
+like a device attached to a hub.
+194.800
+Next let’s configure a description.
+197.300
+I’ll indicate that this device (interface) is connected to SW1.
+201.530
+So, description ## to SW1 ##. Now, the last step is to disable interfaces which are not connected to other devices.
+211.970
+Because router interfaces are shutdown by default, we don’t have to do that, however
+217.049
+we do have to do the opposite for this interface which is connected to another device, so no shutdown.
+223.689
+There we go, now the interface is enabled and let’s check out the status.
+229.770
+Do show ip interface brief.
+232.620
+Okay, you can see the IP address we configured, the method is manual, the status is up, but
+239.930
+the protocol is down.
+242.459
+Although on a real Cisco device I think this should be UP/UP, on packet tracer its down
+248.650
+because I manually configured the speed and duplex on this interface without doing so
+253.409
+on SW1’s interface, but we’ll fix that soon.
+256.660
+That’s a downside of using a simulator like packet tracer, sometimes things don’t behave
+262.290
+like they should on a real device.
+265.470
+Before moving on to SW1, I’ll configure descriptions on R1’s other interfaces to
+270.530
+indicate that they are not in use.
+272.690
+I’ll use the interface range command.
+276.830
+Interface range g0/1 – 2.
+281.139
+DESCRIPTION ## not in use ##. Okay, let’s check our config. Do show run.
+287.850
+Here’s the running config of the device, and here are the configurations of the interface,
+293.810
+including speed, duplex, ip addresses, and descriptions.
+297.860
+Okay, since I’m done configuring, I’ll use END to return to privileged exec mode.
+304.390
+Now let’s save the running configuration.
+307.140
+There are three Cisco devices in this lab, I’ll use a different method to save the
+311.270
+configuration on each device to show you each one.
+315.000
+Here on R1, I’ll use copy running-config startup-config, and hit enter to confirm.
+322.670
+Now let’s check if it was saved to the startup-config.
+326.000
+Show startup-config….here are the interfaces, and you can see the configuration changes we made.
+333.650
+Okay, that’s all for R1.
+337.280
+Before moving on to SW1, I’ll make the only configuration change we need to make on the
+341.750
+PCs, configuring their IP addresses.
+344.860
+Let’s go on PC1….Click on config.
+350.560
+And notice I pre-configured the gateway, which is R1’s address, because its the router for the network.
+356.690
+Now, click on Fastethernet0, which is PC1’s network interface.
+361.910
+PC1’s IP address is 172.16.0.1.
+368.030
+I hit TAB, and it automatically fills in the appropriate subnet mask 255.255.0.0.
+375.520
+Okay, now I can exit out.
+379.120
+Next is PC2. Click config. Fastethernet0.
+384.820
+IP address 172.16.0.2, hit tab and it fills in the subnet mask. Next is PC3...config. Fastethernet0.
+397.760
+IP address of 172.16.0.3, hit tab to fill in the subnet mask, and exit. Finally, PC4….config. Fastethernet0.
+410.300
+IP address of 172.16.0.4, hit tab to fill in the subnet mask, and exit.
+418.710
+Okay, now let’s configure SW1….enable. Conf t. First, the hostname. Hostname SW1.
+431.690
+Now let’s check out the interfaces.
+434.290
+Do show interfaces status.
+437.400
+This is a command that works on switches, but not routers, by the way.
+442.000
+As you can see, all default settings. No descriptions.
+446.680
+The statuses are connected or not connect, not DISABLED because these are switch interfaces,
+452.680
+they are not shutdown by default.
+455.100
+The speed and duplex are auto and auto as well.
+458.920
+Okay, let’s configure the G0/1 interface. Interface g0/1. Speed 1000. DUPLEX full.
+468.770
+It’s connected to R1, so DESCRIPTION ## to R1 ##. Thats it! Now G0/2. Interface G0/2. Speed 1000. DUPLEX full.
+483.750
+It’s connected to SW2, so DESCRIPTION ## to SW2 ##. Now, as for fastethernet0/1 and 0/2,
+493.890
+they are connected to end hosts so according to the lab instructions I don’t need to
+498.110
+configure the speed and duplex.
+500.000
+So, I’ll just configure descriptions.
+504.190
+Interface range f0/1 – 2.
+508.150
+DESCRIPTION ## to end hosts ##. Now, as for the rest of the interfaces, I’ll configure
+514.300
+descriptions and shut them down.
+517.080
+There are 22 unused fastethernet interfaces, so interface range f0/3 – 24.
+526.580
+DESCRIPTION ## not in use ##. shutdown.
+531.360
+Okay, let’s configure the configurations.
+533.920
+Do show interface status.
+536.390
+Okay, you can see the interfaces we disabled.
+539.940
+Again, because I configured the duplex manually on G0/2 it's down at the moment, but will come up when we configure SW2.
+549.320
+Notice the speed and duplex we manually configured.
+552.650
+This is also a problem with packet tracer.
+554.820
+It says a-1000 and a-full, meaning it autonegotiated the speed of 1000 and duplex of full, which
+564.110
+is incorrect because we manually configured it.
+567.680
+On a real Cisco device, this will say simply 1000 and full, without the A. Anyway, I’ll
+575.580
+type END to return to privileged exec mode.
+579.010
+Now let’s save the configuration.
+581.420
+This time, I’ll use WRITE MEMORY.
+583.590
+Okay, let’s check the startup-config. Show startup-config.
+589.080
+Okay, you can see the changes we made to the interfaces here.
+593.520
+Let’s go on to the last device, SW2….enable. Conf t. hostname SW2.
+603.080
+Let’s check the interfaces.
+605.860
+Do show interfaces status.
+608.700
+As you can see, all the defaults again.
+611.990
+Now the configurations we will make are the same as for SW1, except SW2 has only one active gigabitethernet interface, G0/1.
+620.520
+So, I’ll run through the configurations. Interface g0/1. Speed 1000. duplex full.
+631.130
+DESCRIPTION ## to SW1 ##. interface range f0/1 – 2.
+637.830
+description ## to end hosts ##. Now, let’s shut down the other interfaces all at once.
+644.240
+Interface range g0/2, f0/3 – 24.
+650.140
+description ## not in use ##. shutdown. Now let’s check.
+655.300
+Do show interfaces status.
+658.340
+Once again, notice the speed of a-1000 and duplex of a-full.
+663.930
+On a real Cisco device, this will be 1000 and full, without the A, because these settings
+669.160
+were manually configured, not autonegotiated.
+672.020
+Finally, let’s save the configurations. END.
+677.510
+This time, I’ll just use ‘WRITE’ to save the configuration. Now let’s check. Show startup-config.
+685.940
+Looks like our configuration changes were applied.
+688.630
+That’s all for this lab.
+692.240
+Thank you for watching.
+693.810
+Please subscribe to the channel, like the video, leave a comment, and share the video
+697.730
+with anyone else studying for the CCNA.
+701.070
+If you want to leave a tip, check the links in the description.
+703.920
+I'm also a Brave verified publisher and accept BAT, or Basic Attention Token, tips via the Brave browser.
+711.220
+That's all for now.

@@ -1,0 +1,228 @@
+1.530
+Welcome to Jeremy’s IT Lab.
+3.840
+This is a free, complete course for the CCNA 200-301.
+8.840
+If you like these videos, please subscribe to follow along with the series.
+12.880
+Also, please like and leave a comment, and share the video to help spread this free series of videos.
+18.820
+Thanks for your help. Let’s get started.
+22.560
+In this lab you’ll practice and develop your understanding of some of the concepts
+26.130
+learned in the day 5 and day 6 videos on Ethernet LAN Switching.
+31.800
+As you can see, the network topology we will use in this lab is like the example network
+36.460
+I used in those previous lecture videos, with two switches, each with 2 PCs connected to them.
+43.289
+Let’s get started and go through the steps.
+47.390
+First off, there is a note saying that both switches have an empty MAC address table,
+52.199
+and all PCs have an empty ARP table.
+55.359
+Keep that in mind as you try to answer step 1, which asks us, if PC1 pings to PC3, what
+62.350
+messages will be sent over the network, and which devices will receive them?
+66.700
+So, if PC1 wants to send a ping to PC3, it has to know PC3’s MAC address.
+74.229
+We can type ping 192.168.1.3 on PC1 to send a ping, but until PC1 knows PC3’s MAC address,
+84.079
+it can't send the ping.
+86.240
+That means PC1 will have to send an ARP request.
+89.030
+So, that’s the first message.
+91.789
+Now, which devices will receive the ARP request?
+95.040
+Well, the ARP request is a broadcast message, so ALL devices on the local network will receive
+100.390
+it, except for PC1 of course, which sends the message.
+104.750
+PC2 and PC4 will ignore the message, but then PC3 will send an ARP reply, which is the second message.
+113.159
+Unlike the ARP request, which is a broadcast message, the ARP reply is a unicast message,
+119.409
+so the message will be sent through SW2 and SW1, and then be received by PC1 only, no
+125.601
+copies of the message will be sent to PC2 or PC4.
+129.429
+Then, PC1 will be able to add PC3’s MAC Address to its ARP table, and use that information
+136.180
+as the destination address of its ping.
+139.040
+So, the third message that will be sent is an ICMP echo request, from PC1.
+145.480
+This is a unicast message that will be received by PC3 only.
+150.000
+Then, PC3 will send an ICMP echo reply, which is also a unicast message that will be received
+156.890
+by PC1 only, after passing through SW2 and SW1 of course.
+162.320
+So, that’s it, those are the messages that will be sent over the network if PC1 pings PC3.
+168.030
+Now, there won’t be just one ping, PC1 will send multiple pings, 4 by default from a windows PC.
+176.940
+Step 2 asks us to send the ping and use Packet tracer’s ‘simulation mode’ to verify our answer.
+183.470
+First, let me click on simulation mode here in the bottom right.
+187.930
+Then, to send a ping from a PC in packet tracer, click on the PC, click on desktop, and click on command prompt.
+197.760
+Now just type in the command.
+199.500
+PC3’s IP address is 192.168.1.3, so the command is ping 192.168.1.3.
+209.000
+Immediately, you can see that both an ICMP message, the ping, and an ARP message appear.
+216.900
+I’ll click on the ICMP message, and then click on Layer 2.
+222.530
+Look at the info here.
+224.510
+The next-hop address is a unicast.
+227.870
+The ARP process looks it up in the ARP table, but the next-hop IP address is not in the ARP table.
+235.579
+The ARP process tries to send an ARP request for that IP address and buffers this packet.
+241.840
+Buffers means it holds the packet, so it can send it later.
+246.170
+Now let’s click on the ARP message, and look here at the information.
+250.590
+This time I’ll click on ‘Outbound PDU details’, which shows us detailed information
+255.360
+about the frame. Do you recognize these fields?
+259.640
+Preamble, SFD, destination address, source address, type, data, which is the encapsulated
+268.630
+packet, and then FCS.
+271.690
+If you watched my last two videos, you should recognize all of these fields of the Ethernet header and trailer.
+278.400
+Notice in particular the TYPE field of 0806, which indicates ARP, and the destination MAC
+286.009
+address of all F’s, which is the broadcast address.
+289.889
+Okay, now I’ll exit from here and click through the process...the ARP reaches SW1,
+297.229
+is broadcast to PC2 and SW2, and then broadcast to PC3 and PC4.
+304.900
+Only PC3 replies, this time with a unicast message which arrives at SW2, then SW1, and then PC1.
+313.070
+PC1 can then, finally, send its ICMP echo request, which is unicast and goes to SW1,
+320.840
+SW2, and then PC3.
+323.760
+PC3 then sends the ICMP echo reply back through SW2, SW1, and then arriving at PC1.
+332.400
+I’ll just press this play button, and you can see the rest of the pings being sent between PC1 and PC3.
+341.900
+There should be 4 in total, as these Packet Tracer PCs operate like windows PCs.
+348.389
+Cisco devices, however, send 5 pings by default.
+351.930
+Now, Step 3 tells us to generate network traffic and allow the switches to learn all MAC address of the PCs on the network.
+360.960
+Remember, switches dynamically learn and enter MAC addresses into their MAC address table
+366.690
+by looking at the source address field of frames they receive.
+370.230
+So, since we just pinged between PC1 and PC3, both switches should know their MAC addresses,
+377.210
+but just in case I’ll switch back to realtime mode...and send one more ping from PC1 to PC3,
+383.640
+because sometimes Packet Tracer has problems with simulation mode.
+388.789
+Okay, next let’s send a ping from PC2 to PC4 so that the switches can learn their MAC addresses.
+396.300
+I’ll go on PC2, and now I’ll ping PC4. Ping 192.168.1.4.
+408.360
+Step 4 asks us to use show commands on the switches to identify the MAC address of each PC.
+415.030
+Because the interface each PC is connected to is displayed on the network diagram, if
+419.851
+we look for that interface in the MAC address table we will be able to identify the MAC
+424.540
+address of each PC.
+425.759
+I’ll go on SW1.
+429.360
+We have to be in privileged exec mode to view the MAC address table.
+433.060
+So, use the command enable, or just 'en'.
+438.539
+The command to view the mac address table is show mac SPACE address HYPHEN table.
+444.110
+Make sure you don’t mix up the space and hyphen.
+448.699
+Okay, first of all let’s find PC1, which is attached to the fastethernet 0/1 interface.
+455.199
+Here it is, and you can see the MAC address here.
+460.069
+Note that the MAC address in your lab maybe different, I’m not sure if packet tracer
+463.879
+keeps the MAC addresses consistent if you load the labs up on another computer. How about PC2?
+470.930
+Well, its connected to Fastethernet0/2, so here is PC2’s MAC address.
+477.759
+Now, as for PC3 and PC4, we have a problem.
+482.349
+SW1 only knows that it can reach these two MAC addresses via gigabit ethernet 0/1.
+488.569
+Just by looking at this MAC table, we don’t know which address belongs to PC3 and which belongs to PC4.
+495.000
+So, let’s go on to SW2. Once again, I’ll enter privileged exec mode, enable.
+504.669
+Now let’s view the MAC address table. Show mac address-table.
+509.389
+PC3 is connected to fastethernet 0/1, so this must be its MAC address, and PC4 is connected
+518.160
+to fastethernet 0/2, so this must be its MAC Address.
+523.420
+We have successfully used the show mac address table command to identify the MAC address of each PC.
+530.480
+Now let’s do step 5, which is to clear the dynamic MAC addresses from the mac address table of each switch.
+536.690
+Since I’m already on SW2, I’ll start here.
+541.190
+The command is clear mac address-table dynamic, but before I hit enter, I want to show you something.
+548.370
+I’ll use the question mark, which is also known as 'context-sensitive help'.
+554.270
+As you can see, it doesn’t display any additional options here.
+558.080
+If you remember from the day 6 lecture video when I did the demonstration in GNS3 I could clear
+564.031
+specific MAC addresses by specifying the address or interface.
+569.340
+Packet tracer, however, does not support this option, you have to clear all MAC addresses.
+575.060
+So I enter the command, then I’ll use the up arrow on the keyboard to go back to the
+580.270
+show mac address-table command, enter it once more, and you can see the mac address-table is now empty.
+586.640
+I’ll do the same on SW1.
+591.310
+Clear mac address-table dynamic.
+594.220
+Press the up arrow twice to go back to the show mac address-table command, hit enter,
+600.200
+and there we go, the address table is now empty.
+603.370
+We have successfully completed this lab.
+606.940
+Thank you for watching.
+608.940
+Please subscribe to the channel, like the video, leave a comment,
+612.800
+and share the video with anyone else studying for the CCNA.
+615.920
+If you want to leave tip, check the links in the description.
+619.460
+I'm also a Brave verified publisher, and accept BAT, or Basic Attention Token,
+624.100
+tips via the Brave browser. That's all for now.
