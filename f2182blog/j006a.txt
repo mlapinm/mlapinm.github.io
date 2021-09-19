@@ -1,0 +1,792 @@
+0.0
+Welcome to my complete CCNA, Cisco Certified Network Associate course.
+5.891087
+This is Jeremy’s IT Lab.
+8.210651
+This course aims to be a complete course for the CCNA, including everything you need to pass the exam, all 100% free.
+17.273745
+Stay tuned till the end of the video for the quiz to test your knowledge of the material in this video.
+23.143269
+Also, remember to download and use the Anki flashcards with the link in the description.
+28.632009
+Let’s get started.
+30.430474
+This third lesson is about two networking models.
+34.904531
+The first is the OSI Model, and the second is the TCP/IP suite.
+42.013785
+Note that the TCP/IP suite is a networking model, too,
+46.952923
+but it’s usually referred to as the TCP/IP suite, or just TCP/IP.
+51.671869
+Unless you’re familiar with networking, you probably haven’t heard of the OSI model.
+58.392249
+However, you probably have heard of TCP/IP, or at least the second part of that name, IP, the Internet Protocol,
+66.646118
+for example you’ve probably heard of an IP address before.
+69.496566
+So, what is a networking model?
+73.663709
+Well, networking models categorize and provide a structure for networking protocols and standards.
+80.6646
+Do you remember what a networking protocol is?
+83.949991
+I talked a bit about Ethernet, and various standards for copper and fiber-optic cables in the Day 2 video.
+91.665797
+That’s an example of a protocol.
+93.508084
+A networking protocol is a set of rules defining how network devices and software should work,
+100.309544
+including how they should work together.
+102.536079
+By the way, protocols refer to logical rules about how devices should communicate, not physical standards.
+109.519622
+So, you could visualize it like this.
+113.394843
+This is a networking model, and it categorizes and provides a structure for various networking protocols like these.
+120.367373
+The different colors represent different categories of protocols and standards.
+125.358728
+These protocols and standards could define something like the structure and usage of IP addresses, or maybe physical details like electrical voltage used on copper cables when transmitting data.
+137.69387
+Let’s talk about the OSI model first,
+140.332397
+and then we’ll look at the TCP/IP suite after.
+143.924456
+So, what if there were no standard networking models and protocols?
+149.012565
+Here’s a few Dell PCs and a few iMacs.
+154.254918
+If Dell and Apple each made their own networking model, each with their own set of networking protocols,
+160.829856
+these Dells would be able to communicate with each other,
+164.446014
+and these iMacs would be able to communicate with each other,
+167.497563
+but because the Dells and iMacs would speak a different language than each other,
+171.413033
+with a different set of rules about how to communicate,
+174.544244
+the Dells wouldn’t be able to communicate with the imacs.
+177.328449
+This is obviously a problem in modern networks, such as the Internet,
+182.170668
+where we expect devices from various makers in various countries to be able to communicate with each other.
+188.239103
+The OSI model is one attempt at standardizing network communications.
+192.863807
+Although it isn’t actually in use today,
+196.618928
+it has had a big impact on how network engineers think about networking,
+199.769406
+and we still refer to it today.
+202.041075
+OSI stands for ‘open systems interconnection’ model.
+207.788404
+Open, means that it is an open standard,
+211.41468
+not a proprietary model developed and used by an individual company.
+214.963722
+It is a conceptual model that categorizes and standardizes the different functions in a network.
+221.492664
+It was created by the international organization for standardization, the ISO, in the late 1970s and early 1980s.
+230.331221
+Network functions are divided into 7 layers.
+234.478659
+For example, look at the bottom Layer, layer 1.
+238.178262
+It is the physical layer.
+240.267977
+The standards for cables and interfaces we learned about in the Day 2 video
+244.509937
+all fit into the physical layer of the OSI model,
+247.768962
+but there are 6 more layers on top of that to make the network operate properly.
+253.130121
+Let’s examine each layer one by one, starting at Layer 7, the application layer.
+259.096082
+The application layer is the layer that is closest to the end user.
+264.857148
+The application layer interacts with software applications that have some communication component,
+271.167367
+such as your web browser, whether that’s Brave, Firefox, Chrome, or whatever.
+275.673554
+For example HTTP and HTTPS are Layer 7 protocols.
+281.981466
+Notice https before cisco. com,
+286.621696
+indicating that https is being used to get this website and view it in the browser.
+292.289946
+Keep in mind that Layer 7 doesn’t include the application itself,
+296.65293
+like Chrome or Firefox, but rather the protocols that interact with the application, like HTTP or HTTPs.
+304.831921
+A couple functions of Layer 7 are: identifying communication partners and synchronizing communication.
+313.759217
+Let me explain how it does this.
+316.448988
+Here I have two OSI model stacks,
+320.613954
+representing two computers that will communicate with eachother.
+323.857865
+The software application, maybe a web browser, interacts with Layer 7, the application layer,
+330.200659
+and wants to send some data to the system on the right.
+333.456373
+This data is processed through the OSI stack,
+337.385993
+each layer adding something to the original data.
+340.423208
+This is called ‘ENCAPSULATION’, because the original data is encapsulated inside this additional information which is added on.
+349.211982
+By the time it reaches the physical layer, it is electrical signals on a wire, and is sent to the neighboring system.
+356.920796
+Then, the neighboring system performs the opposite process, the additions of each layer are stripped off until the data reaches the application layer of the neighboring system.
+367.739577
+This process is called ‘de-encapsulation’,
+371.463682
+as the additional information is removed as the data is processed up the stack.
+376.22687
+Both the encapsulation and de-encapsulation processes are examples of ‘Adjacent-layer interaction’,
+383.793592
+interaction between the different layers of the OSI model.
+386.650643
+However, the communication between the application layers of the two different systems, is called same-layer interaction.
+394.301916
+This same-layer interaction between application Layers is what allows the application layer to perform its functions of identifying communication partners, synchronizing communications, etc.
+406.529278
+Layer 6 of the OSI is the presentation layer.
+411.758803
+Data in the application is in an ‘application format’, a format that applications understand.
+418.920638
+It needs to be translated to a different format to be sent over the network.
+423.158249
+the presentation layer’s job is to translate between application and network formats.
+428.82591
+One example of a function of the presentation layer is encryption of data as it is sent,
+434.77632
+so that only the intended recipient can read it,
+437.183822
+and of course decryption as it is received.
+440.556855
+The presentation layer also translates between different application-layer formats,
+445.761551
+to ensure that the data is in a format the receiving host can understand.
+449.870117
+To summarize, the presentation layer translates data to the appropriate format.
+455.096307
+That’s all you really need to know about the presentation layer.
+458.730004
+Layer 5 of the OSI model is the session layer.
+463.391275
+The session layer controls dialogues, also known as sessions, between communicating hosts.
+469.769525
+It establishes, manages, and terminates connections between the local application (for example your web browser)
+476.759748
+and the remote application, for example, YouTube.
+480.232957
+YouTube’s servers are being used by countless people at every moment,
+484.909203
+and there has to be a way to manage all of these sessions.
+487.856197
+That’s the purpose of the session layer of the OSI model.
+491.14752
+So, we’ve looked at the top 3 layers of the OSI model.
+496.382581
+From Top to bottom, application, presentation, and session.
+501.862093
+It’s important to know what the functions of these layers are,
+506.016326
+but actually network engineers don’t really work with these layers of the OSI model.
+510.920719
+That is the job of application developers.
+514.043222
+Application developers work with the top layers of the OSI model to connect their applications over networks.
+521.107693
+Let’s return to this diagram.
+524.942375
+Remember what I said about encapsulation?
+527.172206
+Well, data prepared at the top 3 layers is then sent over to the bottom 4 layers,
+533.884501
+which actually do the work of sending it over the network.
+536.907379
+After the top 3 layers hand data over to the bottom 4 layers,
+542.067816
+The next step before sending data is that Layer 4,
+545.945846
+the transport layer, adds a header in front of the data, like this.
+549.731835
+So, let’s look into the Transport layer a little bit.
+553.690564
+Layer 4 of the OSI model is the transport layer.
+558.682636
+It segments and reassembles data for communications between end hosts.
+564.237927
+To reword that, it breaks large pieces of data into smaller segments which can be easily sent over the network and are less likely to cause transmission problems if errors occur.
+576.022372
+For example, if data wasn’t segmented and you were trying to watch a video,
+581.798862
+if an error occurred that prevented the video from reaching your computer,
+586.100514
+you wouldn’t be able to watch the video at all.
+588.431931
+However, if the data is segmented into many small units,
+592.898696
+and only one fails to reach the destination,
+595.932927
+that’s not a big problem.
+597.084232
+The video might skip for a second,
+599.730835
+but then will continue on just fine.
+601.928803
+Also, the Transport layer provides host-to-host communication,
+606.896792
+also known as end-to-end communication.
+610.006452
+This also provides process-to-process communications for applications.
+614.492678
+Now let’s review.
+617.760266
+Data is prepared by the top 3 layers.
+621.067813
+a Layer 4 header is added on.
+624.077412
+Note that at this point in the process, this unit of data plus Layer 4 header is called a segment.
+631.504842
+Remember, if the data being sent is large enough,
+635.795076
+it will actually be segmented into smaller parts,
+638.007011
+and a Layer 4 header will be added on to each segment.
+641.910759
+Next, that segment is passed on to Layer 3.
+645.75048
+And another header is added on to the end, like this.
+649.213537
+Layer 3 of the OSI model is the Network Layer.
+654.169223
+The network layer provides connectivity between end hosts on different networks,
+659.420908
+for example outside of the local area network, or LAN,
+663.102207
+which we mentioned briefly in the Day 1 video.
+665.943294
+Layer 3 provides logical addressing, in the form of IP addresses, something you’ve probably heard of before.
+674.016342
+Layer 3 also provides path selection between source and destination.
+679.858147
+Often there are many possible paths which data can take to reach its destination,
+685.56455
+especially over a huge network like the Internet.
+688.163547
+Layer 3 provides the means of selecting the best path.
+693.159016
+Routers operate at Layer 3.
+695.753721
+Remember in Day 1’s video I said that routers are used when end hosts need to reach a destination outside of their LAN?
+703.077148
+That’s because routers are Layer 3 devices.
+706.02994
+Let’s review the encapsulation process again.
+710.409882
+Data is prepared by the upper layers,
+713.66807
+the transport layer adds a layer 4 header, and this combination of data plus layer 4 header is called a segment.
+721.628973
+next the network layer adds a layer 3 header, including information like the source and destination IP address, to the segment.
+730.260123
+This combination of data, layer 4 header, and layer 3 header, is called a packet.
+737.898421
+Next, the packet is further encapsulated at Layer 2,
+742.109435
+this time with both a Layer 2 header AND a Layer 2 trailer.
+746.83914
+Layer 2 of the OSI model is the Data Link Layer.
+751.653858
+The data link layer provides node-to-node connectivity and data transfer.
+757.105726
+For example, direct connections between a PC and a switch, or a switch and a router, or a router and a router.
+765.859375
+because Layer 2 is adjacent to Layer 1, the physical layer, it also defines how data is formatted for transmission over a physical medium, like copper UTP cables.
+777.024277
+Layer 2 also detects, and possibly corrects, errors that occur on the physical layer.
+783.877072
+Like layer 3, layer 2 also uses an addressing system, 789.416241
+however it is separate and different from layer 3 addressing.
+793.305959
+Finally, switches operate at Layer 2.
+797.548657
+Switches look at the destination Layer 2 address to determine where to send the data,
+803.288101
+Let’s look at the encapsulation process once more.
+807.797307
+Data is prepared by the application layer.
+810.950096
+A layer 4 header is added to the data to make a segment.
+815.575676
+A Layer 3 header is added to the segment to make a packet.
+819.949364
+Remember, the IP address is included in this Layer 3 header.
+824.373801
+Then, a layer 2 header and layer 2 trailer are added to the packet.
+829.928848
+At this point, the combination of data, layer 4 header, layer 3 header, layer 2 header and layer 2 trailer is called a frame.
+840.679247
+Now, the data is not further encapsulated at Layer 1.
+845.101284
+This frame is then sent over the connection, whether it’s electrical signals over a wire or wireless signals in the case of wifi, to the neighboring system.
+855.751843
+Let’s look at layer 1 of the OSI model a bit before moving on.
+860.077559
+Layer 1 of the OSI model is the physical layer.
+864.349199
+The physical layer defines physical characteristics of the medium used to transfer data between devices.
+871.442464
+For example, voltage levels, maximum transmission distances, like the maximum cable lengths mentioned in Day 2’s video, physical connectors, cable specifications, etc.
+884.903775
+Digital bits are converted into electrical signals, for wired connections, or radio signals, for wireless connections, like Wi-Fi.
+894.727022
+as I mentioned before, all of the information in Day 2’s video, such as cables and pin layouts, is related to the physical layer of the OSI model.
+904.975917
+Okay, now we’ve got a complete frame,
+909.724888
+and that frame will be sent from the local device over this cable,
+913.006065
+let’s say its an ethernet cable.
+914.921034
+Once it reaches the remote device, the reverse process of encapsulation, de-encapsualtion, takes place.
+923.581047
+the data link layer translates the raw physical data into a complete frame once again.
+929.440983
+Then the layer 2 header and trailer are removed, leaving the Layer 3 packet.
+935.140714
+The layer 3 header is removed, leaving the Layer 4 segment.
+940.035346
+Finally, the layer 4 header is removed and we are left with the original data prepared by the upper layers of the original device.
+948.983125
+That’s the process of de-encapsulation.
+951.428689
+Before moving on, I want to review some terms.
+955.815555
+So, when an application wants to send data to another system,
+961.380866
+it interacts with the application layer of the OSI stack and the data is prepared to be sent.
+967.142811
+When the layer 4 header is added at the transport layer,
+970.750638
+what is this combination of data plus Layer 4 header called?
+974.479911
+It’s called a Segment.
+977.443889
+Then, the Layer 3 header is added on at the Network layer, 981.710615
+remember that includes the IP address.
+984.174307
+What’s this now called?
+985.867831
+It’s called a packet.
+988.456639
+Finally, a Layer 2 header and trailer are added at the Data Link layer.
+993.279718
+What’s this complete unit called?
+996.230787
+It’s called a frame.
+998.057846
+Now, there is one new term that is used to refer to all of these.
+1002.864585
+These are all called Protocol Data Units, or PDUs.
+1007.149517
+For example, segment is the term for a Layer 4 PDU,
+1012.327432
+Packet is the term for a Layer 3 PDU, etc.
+1015.316946
+By the way, at Layer 1, the physical layer,
+1019.9335
+the name for the PDU is bit,
+1022.085009
+referring to the bits being transferred on the wire.
+1025.100968
+So, that’s a lot of information.
+1028.743282
+If you need help remembering the order of the OSI model layers, the flashcards included in the description should be a big help,
+1036.320507
+but here are a couple acronyms too.
+1039.153156
+I don’t use acronyms to remember things myself, but many people like them,
+1044.180187
+so here are a few examples to help you remember.
+1047.04345
+The first one goes from layer 7 to layer 1,
+1050.922278
+ALL PEOPLE SEEM TO NEED DATA PROCESSING.
+1055.895456
+Here’s another one, from Layer 1 to Layer 7 this time.
+1060.113784
+PLEASE DO NOT TEACH STUDENTS POINTLESS ACRONYMS.
+1066.076113
+If you know any other good ones post them in the comment section!
+1070.803287
+Now let’s move on from the OSI model, to the TCP/IP suite.
+1077.150196
+Like the OSI model, it is a conceptual model and set of communications protocols,
+1083.369313
+and in TCP/IPs case it is used in the Internet and other networks.
+1088.414615
+It is known as TCP/IP because those are two of the foundational protocols in the suite.
+1094.602101
+It was developed by the United States Department of Defense through DARPA,
+1099.840965
+which is the Defense Advanced Research Projects Agency.
+1103.219918
+It has a similar structure to the OSI model, but with fewer layers.
+1108.223063
+And, it is the model actually in use in modern networks, NOT OSI.
+1114.301119
+Note, however, that the OSI model still influences how network engineers think and talk about networks today, which is why it's important to learn.
+1123.947393
+Now let’s compare the two.
+1126.942795
+On the left is the OSI model you’re familiar with by now, 1130.689415
+and on the right is the TCP/IP Suite’s networking model.
+1135.06291
+The Application, Presentation, and Session layers of the OSI model are essentially equivalent to the Application Layer of the TCP/IP model.
+1145.296047
+Combining them into one actually represents how network engineers tend to think about networks,
+1151.615025
+since we don’t work much with anything above the Transport Layer,
+1155.364078
+however, when TALKING about networks, we use the OSI numbering.
+1160.388598
+For example, if you say ‘there is a Layer 4 problem in the network’,
+1164.542439
+network engineers will think of OSI’s Layer 4, the transport layer,
+1169.934961
+not TCP/IP’s Layer 4, the Application Layer.
+1173.495192
+Moving on, the OSI model and the TCP/IP model both share the transport layer.
+1179.957563
+The network layer of the OSI model maps to the Internet layer of the TCP/IP model.
+1186.825996
+Finally, the data link and Physical layers of the OSI model are equivalent to the Link layer of the TPC/IP model.
+1196.028944
+Once again, though, if people say, for example, there is a Layer 2 problem in the network,
+1201.928194
+they are referring to the OSI Model’s Layer 2, the Data Link Layer,
+1206.806713
+not TCP/IP’s layer 2, the Internet layer.
+1210.330181
+Keep that in mind.
+1212.476453
+Although TCP/IP is the model actually in use in modern day networks,
+1217.985911
+we still talk about networks using the OSI model language.
+1221.499822
+Now, you might hear different names used for these layers.
+1226.133834
+This is a chart off of Wikipedia showing different naming systems used.
+1231.234085
+Don’t worry about memorizing all of these,
+1234.967708
+but just keep in mind you might here different names than the ones I taught you.
+1239.096397
+For example, the Link layer might be called the network interface, or network access layer.
+1245.952496
+I actually like this 5 layer model, because it combines the top 3 layers that we, network engineers, don’t really think about into one,
+1254.910677
+but it keeps the data link and physical layers separate,
+1258.771487
+and I think its good to think of them as two separate layers.
+1262.511278
+Before finishing up this lesson and moving on to the quiz,
+1266.005044
+I want to show you this excellent diagram which I found on Wikipedia.
+1270.05311
+It demonstrates the process of a host, Host A, sending data to Host B, with two routers in between.
+1277.649672
+Here you see the four devices, Host A, connected to a router, connected to another router, connected to Host B.
+1287.18286
+Here is the TCP/IP stack on each device.
+1292.053245
+Note that, for forwarding data from host to host,
+1296.559378
+these routers don’t need to be aware of the higher layers,
+1299.60203
+so only the Internet and Link layers are present here.
+1302.943546
+So, let’s walk through the process.
+1306.006335
+An application on Host A wants to communicate with an application on Host B.
+1311.994274
+Let’s say it’s a Skype conversation,
+1315.372101
+so Host A is sending a little bit of video and audio data to Host B.
+1320.039923
+Skype interacts with the application Layer,
+1323.844095 and the data is encapsulated via the
+Transport, Internet, and Link Layers.
+1329.392453
+Then, it is forwarded over to the Router,
+1333.135054
+probably via Ethernet UTP copper cabling.
+1336.026202
+Remember, Routers are Layer 3 devices,
+1339.819894
+so they want to know the Layer 3 IP address to know where to forward the data next.
+1344.897998
+So, de-encapsulation occurs at the Link layer,
+1349.023
+and then at the Internet layer the router looks at the destination IP address to know where to send the packet.
+1355.69874
+Then, the packet is once again encapsulated to make a Frame.
+1360.537077
+From here it is sent to another router, perhaps over long-distance fiber cabling.
+1366.289212
+At the Link Layer of this second router, de-encapsulation occurs again,
+1371.618064
+and this router also checks the destination IP address.
+1375.218108
+Once it knows where to send the packet,
+1378.305712
+it is once again encapsulated,
+1380.719614
+and sent over some medium, Ethernet cabling in this case, to Host B.
+1385.107373
+Now de-encapsulation takes place once more.
+1389.380479
+Here at the link layer it is a frame.
+1392.396854
+The header and trailer are removed, and it becomes a packet.
+1397.171776
+The header is removed, and it becomes a segment.
+1401.337862
+Finally, the transport layer header is removed, and the application layer on Host B receives the data and interacts with the application on Host B.
+1411.634434
+So, this has achieved process-to-process communication, between Skype on Host A and Skype on Host B.
+1419.463691
+Of course, this process will happen many many times in both directions during the duration of a skype call.
+1426.310029
+As I mentioned before, this is known as same-layer interaction.
+1431.985274
+Also, I mentioned the transport layer providers host-to-host communications before.
+1438.234424
+This diagram indicates that as well.
+1440.656163
+This Transport layer segment was never changed during this whole process,
+1446.194675
+it is as if it's direct communication between the two hosts.
+1450.087085
+Finally, remember that, because the TCP/IP protocols are all industry standard protocols used by all makers,
+1459.072835
+it doesn’t matter what kind of PCs or router you’re using.
+1462.195567
+An Apple iMac can communicate with a Cisco router, which can communicate with a Juniper router, which can communicate with a Dell PC.
+1471.957623
+That’s the importance of having industry standards.
+1475.190629
+Okay, that was another lesson with a lot of information.
+1480.41953
+Once again, there will be supplementary materials to help you remember everything.
+1485.838174
+There will, of course, be an end-of-video quiz, coming up from the next slide.
+1490.769031
+There will also be pre-made flash cards to help you memorize what you need to remember,
+1495.570299
+check the link in the description.
+1497.242878
+Finally, for this video I will again include a Packet Tracer practice lab,
+1502.535588
+which will use an interesting feature of packet tracer called ‘simulation mode’ to analyze network traffic.
+1508.695222
+Now let’s go to the quiz.
+1510.577458
+HTTP data sent from a YouTube web server is displayed via your web browser.
+1518.631
+This is an example of what?
+1520.86638
+A, adjacent-layer interaction.
+1524.551738
+B, same-layer interaction.
+1527.740088
+C, encapsulation.
+1531.079787
+Or D, de-encapsulation.
+1534.076382
+Pause the video to think about your answer...
+1538.138407
+the answer is B, same-layer interaction.
+1545.437509
+Let’s check the options.
+1547.62281
+Adjacent-layer interaction refers to interaction between different layers of the OSI model.
+1554.329754
+In this case, both YouTube’s web server and your web browser are operating at Layer 7 using HTTP.
+1562.640121
+So A, adjacent-layer interaction, is incorrect.
+1567.319123
+Although encapsulation and de-encapsulation of data surely happened many times as the data was sent from YouTube’s web server to your web browser,
+1576.866452
+they are not descriptions of the interaction between YouTube and your browser.
+1580.8732
+So c, encapsulation, and d, de-encapsulation, are incorrect.
+1586.799466
+Same-layer interaction refers to interaction between the same layer on different hosts,
+1593.976929
+in this case the application layer of YouTube’s web server and the browser on your PC.
+1599.084313
+The concept of same-layer interaction allows you to ‘ignore’ the other layers involved
+1605.106639
+and focus on interactions between a single layer on different devices.
+1609.615585
+So b, same-layer interaction, is the correct answer.
+1613.755706
+let’s go to question 2.
+1615.515498
+HTTP data has been encapsulated with three separate headers and one trailer.
+1622.732672
+What is the appropriate name for this PDU?
+1625.449526
+A, packet.
+1628.420497
+B, segment.
+1630.825891
+C, frame.
+1633.32757
+Or D, data.
+1635.773962
+Pause the video to think about your answer...
+1638.582354
+The answer is C, Frame.
+1645.031334
+Let’s check.
+1646.808508
+Packet refers to the OSI Layer 3 PDU.
+1651.761876
+It would have two headers (the Layer 4 header, and the Layer 3 header) and no trailer.
+1658.092796
+So a, packet, is incorrect.
+1661.097869
+Segment refers to the OSI Layer 4 PDU.
+1665.61893
+It would have one header (the Layer 4 header), and no trailer.
+1670.335324
+So b, segment, is incorrect.
+1673.505533
+Data refers to the upper-layer data before being encapsulated.
+1679.177694
+It would have no headers or trailer.
+1681.583148
+So d, data, is incorrect.
+1685.160053
+Frame refers to the OSI Layer 2 PDU.
+1689.378102
+It has three headers (Layer 4, Layer 3, and Layer 2 headers) and one trailer (the Layer 2 trailer).
+1697.380498
+So c, frame, is the correct answer.
+1701.182188
+Let’s go to question 3.
+1703.190039
+Which layers of the OSI model are most relevant to the role of a network engineer?
+1710.232683
+A, transport, network, data link, and physical.
+1715.485533
+B, transport, network, and data link.
+1720.025773
+C, network only, or D, applicaton, presentation, and session.
+1727.481794
+Pause the video to think about your answer...
+1730.062857
+the answer is A, transport, network, data-link, and physical.
+1739.935763
+Let’s check.
+1740.860007
+Although these layers are very relevant to the duties of a network engineer, the physical layer is missing.
+1747.937707
+So b, transport, network, and data link, is incorrect.
+1753.161665
+Although the Network layer is very relevant to network engineers of course , it is not the only one.
+1759.684237
+So c, network only, is incorrect.
+1763.110122
+These layers of the OSI model are not generally relevant to the role of a network engineer.
+1769.977562
+They are relevant to application developers.
+1773.278278
+So D, application, presentation, and session, is incorrect.
+1777.999937
+These four lower layers of the OSI models are all very relevant to the role of a network engineer.
+1786.170888
+So a, transport, network, data link, and physical, is the correct answer.
+1792.729815
+Lets go to the next question.
+1795.163932
+The Link layer of the TCP/IP Model is equivalent to what layer, or layers, of the OSI Model?
+1803.902824
+A, transport and network.
+1807.21133
+B, network and data link.
+1810.258541
+C, data link.
+1816.068186
+Or D, data link and physical.
+1819.00967
+Pause the video to think about your answer...
+1818.735807
+the correct answer is D, data link and physical.
+1826.190794
+Let’s check.
+1827.619981
+The OSI Transport layer is equivalent to the TCP/IP Transport layer,
+1833.690044
+and the OSI Network layer is equivalent to the TCP/IP Internet layer.
+1838.259235
+So a, transport and network layers, is incorrect.
+1842.650433
+The OSI Network layer is equivalent to the TCP/IP Internet layer.
+1849.167841
+The OSI Data Link layer is equivalent to part of the TCP/IP Link layer, but it is not totally equivalent.
+1857.087853
+So b, network and data link layers, and c, data link layer, are incorrect.
+1863.269242
+The combined functions of the OSI Data Link and Physical layers are equivalent to the TCP/IP Link layer.
+1871.29635
+So d, data link and physical layers, is the correct answer.
+1876.263994
+Let’s go to the last quiz question for this video.
+1879.756819
+Which layer of the OSI model provides host-to-host communications?
+1884.54002
+A, application, b, network, c, transport, or d, data link.
+1893.246146
+Pause the video to think about your answer...
+1896.804753
+the answer is c, transport.
+1902.637167
+Let’s check.
+1903.782528
+The Application layer provides process-to-process communications, not host-to-host.
+1910.416785
+So a, application layer, is incorrect.
+1914.328322
+The Network and Data Link layers do not provide end-to-end, host-to-host communications.
+1921.426748
+So b, network, and d, data link, are incorrect.
+1926.32661
+The Transport layer provides host-to-host communications, as shown in this diagram.
+1932.73919
+So c, Transport, is the correct answer.
+1936.926916
+Thank you for watching.
+1940.253916
+That's all for this video.
+1941.837299
+If you want to show your support, please subscribe to the channel, like the video, leave a comment, and share the video with anyone else studying for the CCNA.
+1950.678917
+I accept donations via cryptocurrency or Patreon via the links in the description.
+1956.90177
+I'm also a Brave verified publisher and accept BAT, or Basic Attention Token, tips via the Brave browser.
+1964.476875
+Click the link in the description to check out Brave, a fast and sleek browser that pays you to surf the Internet.
+1970.938518
+That's all for now.
+1972.550752
