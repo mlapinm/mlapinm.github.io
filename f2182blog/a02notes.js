@@ -70,13 +70,143 @@ var notes = [
     "link": "j003pl.html"
    },
   {
-    "header": "",
+    "header": "CCNA",
     "title": "",
     "card-text": [
-      "",
+      "j004",
       "",
       ""
     ],
-    "link": "d01pl.html"
+    "link": "j004pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j005",
+      "",
+      ""
+    ],
+    "link": "j005pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j006",
+      "",
+      ""
+    ],
+    "link": "j006pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j007",
+      "",
+      ""
+    ],
+    "link": "j007pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j008",
+      "",
+      ""
+    ],
+    "link": "j008pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j009",
+      "",
+      ""
+    ],
+    "link": "j009pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j010",
+      "",
+      ""
+    ],
+    "link": "j010pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j00",
+      "",
+      ""
+    ],
+    "link": "j00pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j00",
+      "",
+      ""
+    ],
+    "link": "j00pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j00",
+      "",
+      ""
+    ],
+    "link": "j00pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j00",
+      "",
+      ""
+    ],
+    "link": "j00pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j00",
+      "",
+      ""
+    ],
+    "link": "j00pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j00",
+      "",
+      ""
+    ],
+    "link": "j00pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j00",
+      "",
+      ""
+    ],
+    "link": "j00pl.html"
    }
 ]
