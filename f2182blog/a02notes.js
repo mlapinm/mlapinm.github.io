@@ -143,61 +143,111 @@ var notes = [
     "header": "CCNA",
     "title": "",
     "card-text": [
-      "j00",
+      "j011",
       "",
       ""
     ],
-    "link": "j00pl.html"
+    "link": "j011pl.html"
    },
   {
     "header": "CCNA",
     "title": "",
     "card-text": [
-      "j00",
+      "j012",
       "",
       ""
     ],
-    "link": "j00pl.html"
+    "link": "j012pl.html"
    },
   {
     "header": "CCNA",
     "title": "",
     "card-text": [
-      "j00",
+      "j013",
       "",
       ""
     ],
-    "link": "j00pl.html"
+    "link": "j013pl.html"
    },
   {
     "header": "CCNA",
     "title": "",
     "card-text": [
-      "j00",
+      "j014",
       "",
       ""
     ],
-    "link": "j00pl.html"
+    "link": "j014pl.html"
    },
   {
     "header": "CCNA",
     "title": "",
     "card-text": [
-      "j00",
+      "j015",
       "",
       ""
     ],
-    "link": "j00pl.html"
+    "link": "j015pl.html"
    },
   {
     "header": "CCNA",
     "title": "",
     "card-text": [
-      "j00",
+      "j016",
       "",
       ""
     ],
-    "link": "j00pl.html"
+    "link": "j016pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j017",
+      "",
+      ""
+    ],
+    "link": "j017pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j018",
+      "",
+      ""
+    ],
+    "link": "j018pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j019",
+      "",
+      ""
+    ],
+    "link": "j019pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j020",
+      "",
+      ""
+    ],
+    "link": "j020pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j01",
+      "",
+      ""
+    ],
+    "link": "j01pl.html"
    },
   {
     "header": "CCNA",
