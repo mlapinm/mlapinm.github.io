@@ -1,0 +1,801 @@
+0.0
+Welcome to my complete CCNA, Cisco Certified Network Associate course.
+5.808614
+This is Jeremy’s IT Lab.
+8.469599
+This course aims to be a complete course for the CCNA, including everything you need to pass the exam, all 100% free.
+17.213387
+Stay tuned till the end of the video for the quiz to test your knowledge of the material in this video.
+22.949696
+Also, remember to download and use the Anki flashcards with the link in the description.
+28.517701
+Let’s get started.
+30.690094
+This second lesson is about interfaces and cables.
+34.668769
+In the last video we talked about some different kinds of devices you will find in networks.
+39.697373
+This lesson will focus on how we connect them, specifically how we connect them with cables.
+46.348123
+Wireless connections are also a topic we’ll cover, but that’s for later in the course.
+51.215276
+Take a look at this photo.
+54.528859
+This is the front of a switch.
+57.006555
+Notice the 24 interfaces, also known as ports.
+61.373383
+Remember, as we learned in the last lecture, one characteristic of switches is that they tend to have lots of interfaces to connect end hosts like PCs and servers to.
+71.65631
+Now let’s look at that those words above the interfaces.
+74.793839
+I’ll zoom in.
+76.51252
+10/100/100Base-T ports (1 – 24) – Ports are Auto-MDIX.
+86.575037
+Unless you’ve already studied this stuff, you probably have no idea what that means.
+91.511354
+Don’t worry, by the end of this video you’ll understand all of this and more.
+96.915025
+Now let’s focus on the interfaces themselves.
+101.051182
+I’ll zoom in again.
+102.790027
+Do you recognize this shape?
+105.403719
+If your computer is connected to a wired network, it’s surely using a port like this to connect to the network.
+112.093975
+These are called RJ-45 ports.
+115.566599
+RJ stands for Registered Jack, by the way.
+119.627976
+Let’s look at the RJ-45 connector at the end of a cable, I’m sure you’ve seen one before.
+126.041488
+These are all cables with RJ-45 connectors.
+130.278674
+As you can see there are some variations in design and color, but all of these connectors would fit into the ports we saw in the previous slide.
+138.826723
+The RJ-45 connector is used on the end of a copper Ethernet cable.
+145.146341
+There are Ethernet cables which do not use copper wiring as well, but we’ll get to that later.
+151.097361
+First of all though, what is Ethernet?
+154.84027
+Ethernet is a collection of network protocols and standards, rather than just a single protocol.
+162.101191
+So really Ethernet isn’t one single thing, making it difficult to define exactly what it is.
+168.962263
+For the purpose of this lesson, we will focus on types of cabling as defined by Ethernet standards.
+176.072453
+As said above there are many standards included in Ethernet, but the focus of this lesson is interfaces and cables, so that’s what we’ll focus on.
+186.307266
+However, we will learn other aspects of Ethernet in future lessons.
+191.025193
+Now, before we learn about Ethernet cable standards,
+195.181414
+I want to give a brief explanation of why we need network protocols and standards.
+199.811316
+If two people are talking to each other, and one only speaks English, and the other only speaks Japanese,
+207.337071
+there’s not going to be a much, or any, communication between them.
+211.75609
+What they need is some agreed upon system of communicating, like a common language between them.
+218.176812
+Network protocols serve that purpose for network devices.
+222.528363
+That’s why standards like Ethernet exist.
+225.52637
+Since we’re talking about interfaces and cables in this video, here’s a more relevant example.
+233.067688
+If you’re trying to connect to, for example, a network switch,
+237.591115
+but the maker of the cable and the maker of the switch haven’t agreed upon the size and shape of the connector and port,
+244.563736
+you won’t be able to connect them.
+246.535773
+That’s why there are industry standards that all vendors follow, both in terms of physical standards like connectors and cables like these, as well as logical standards, like IP, the internet protocol.
+259.464676
+Now, connections between devices in a network operate at a set speed.
+266.11362
+These speeds are measured in bits per second.
+269.661013
+What is a bit?
+271.287648
+Well it’s a value represented by either a 0 or a 1.
+277.0813
+This binary code is how computers work.
+280.209188
+YouTube, this video, your operating system, all of it just a series of 0s and 1s which your computer interprets.
+289.771715
+When communicating across a copper network cable, a variation in the electrical signal is interpreted by the receiving device as a 0 or a 1.
+300.162645
+So, that’s a bit, what’s a byte?
+304.473737
+Here we have a series of 8 bits.
+308.577261
+8 bits is equal to 1 byte.
+312.68484
+Now, speed is measured in bits per second.
+317.315458
+Imagine a byte, 8 bits, of data being sent along a wire.
+322.734298
+It reaches the neighboring device one bit at a time like this.
+327.243088
+It doesn’t operate one byte at a time like this.
+330.809341
+So, remember, speed is measured in bits per second,
+336.790824
+for example kilobits per second, megabits per second, gigabits per second, and not bytes per second.
+344.777421
+Data on a hard drive for example is measured in bytes, however,
+349.418001
+so remember a Gigabyte is actually 8 times larger than a gigabit.
+354.23983
+So let’s review some of these measurements.
+358.055519
+1 kilobit is equal to 1,000 bits.
+362.922418
+Add three zeroes to that And you get 1 megabit, which is 1 million bits.
+368.619887
+Add another three zeroes, And you get one gigabit, or 1 billion bits.
+374.647336
+Add another three zeroes to that and you get one terabit, 1 trillion bits.
+381.190616
+You’re not going to see larger units than this when it comes to network speed, and really you’re not going to see terabits either.
+389.734482
+Speeds are always increasing, however, so terabits-per-second speeds may be commonplace soon enough!
+395.005783
+Now, there are further units, here’s a snapshot from wikipedia.
+399.768218
+Beyond terabits there are petabits, exabits, zettabits, yottabits, and more.
+407.03194
+Don’t worry about memorizing all of these though, you’re not going to see network speeds like these anytime soon!
+413.003242
+Okay, finally lets talk about some Ethernet standards.
+417.709531
+These are all defined in the IEEE 802. 3 standard.
+423.176438
+The IEEE is the institute of electrical and electronics engineers.
+429.167282
+You’ll notice all of these Ethernet standards begin with IEEE 802. 3.
+435.716724
+Let’s take a look.
+436.972244
+So, here’s a table of some IEEE standards for copper Ethernet cables.
+443.462703
+We’ll also take a look at fiber optic cables later in this lesson, but I decided to split them up.
+450.582554
+We have one for each of the common network cable speeds, 10 megabits per second, 100 megabits per second, 1 gigabit per second, and 10 gigabits per second.
+462.595293
+The next column lists the common names.
+466.398029
+These are the names we usually use when talking about different networks interfaces, cables, and their speeds, for example in a work environment.
+474.7461
+The next column lists the official IEEE standard in which they are defined.
+480.702845
+You would probably never use these names when talking with other network engineers about a cable, but you should be familiar with them.
+488.122463
+This next column lists informal standard names given to each standard.
+494.520426
+10 base-T, 100base-T, 1000base-T, and 10gbase-t.
+501.58363
+The numbers obviously refer to their speeds.
+505.442596
+How about base and T?
+507.673944
+Well, base refers to baseband signalling.
+511.793862
+That’s totally out of the scope of the CCNA, but just so you know the meaning.
+516.068096
+T refers to twisted pair cabling, and we’ll talk about that very soon!.
+521.304137
+Finally, the maximum cable length.
+525.673685
+Notice that all of them are 100 meters, that’s the maximum length for twisted pair cables as defined in Ethernet, for performance and technical reasons.
+535.381517
+So, that’s a lot of information, but I recommend you memorize these standards.
+540.593579
+It may seem difficult, but with the flashcards in the description, it’s actually quite easy!
+546.10575
+So, don’t forget to download and use the flashcards in the description, and also make your own if you want.
+552.01388
+Okay, now let’s continue and look in more detail at the physical cables themselves.
+556.777073
+The copper cables used in Ethernet standards are UTP cables.
+562.908527
+UTP stands for Unshielded Twisted Pair.
+568.041549
+Unshielded means that the wires have no metallic shield, which can make them vulnerable to eletrical interference.
+575.387849
+The Twisted pair part is easy to understand from this photo, as you can see there are four pairs of cables twisted together.
+583.491209
+The twist actually helps protect against eletromagnetic interference, or EMI.
+589.801892
+So, there are four pairs of wires twisted together, that makes eight wires in total.
+595.280107
+Let’s take a look at one of those RJ-45 connectors we saw earlier
+599.889623
+If you count the number of pins here, you’ll find that there are 8 pins, 604.672989
+perfect for the number of wires we saw in the last photo.
+607.776971
+However, not all of the Ethernet standards we saw before actually use all 8 wires.
+613.898582
+10BASE-T and 100BASE-T, also known as Ethernet and Fast-Ethernet cables, use 2 pairs, or 4 wires.
+622.87414
+1000BASE-T and 10GBASE-T, however, use all 4 fours, or 8 wires.
+629.792268
+Let’s focus on the first two for now, 10BASE-T and 100BASE-T.
+636.428112
+So, let’s say we’re connecting a PC to a switch with a FastEthernet connection.
+642.356621
+These numbers represent the pins on the RJ-45 on the PCs network interface card and the switch’s interface.
+650.562936
+There are 8, but we will only use 4, or 2 pairs, since this is a fastethernet, or 100base-t, connection.
+659.328986
+The first pair is at pin positions 1 and 2,
+664.162833
+and will connect to pins at positions 1 and 2 on the switch’s network interface.
+669.743079
+Although in this diagram the wires look straight, remember that in a UTP cable the pairs are twisted together,
+677.328844
+so in a real cable these two wires would actually be twisted together like in the photo we saw.
+682.930177
+The PC will use pins 1 and 2 to transmit data to the switch, which we can write as Tx.
+690.940919
+Because the PC is transmitting data on pins 1 and 2, the switch cannot transmit on those pins, it has to receive data which we can write as Rx, on pins 1 and 2.
+704.841826
+There’s an important point to remember here.
+707.8437
+The network interface card on a PC or server transmits data on pins 1 and 2,
+713.710748
+and the interfaces on a switch receive data on pins 1 and 2.
+718.244926
+Now, the next pair that is used in a 10BASE-T or 100-BASE-T cable is not 3 and 4.
+725.769082
+It’s 3 and 6.
+727.319559
+And, of course, the function of each pin is opposite of the pair on pins 1 and 2.
+732.605887
+On the switch, Pins 3 and 6 are used to transmit Data, and on the PC Pins 3 and 6 and used to receive data.
+742.038064
+This allows what’s called Full-Duplex transmission.
+746.615893
+Full-Duplex transmission means that both devices and send data at the same time,
+753.867441
+and no problems like collisions will occur because they use separate wires to transmit and receive data.
+759.480803
+Just like that, both devices send data at the same time and there are no problems.
+766.486629
+Let’s change the device on the left from a PC to a router.
+771.03013
+Just as a PC usually connects to a switch, a switch usually connects to a router.
+777.493437
+Once again, it’s a fastethernet, or 100BASE-T connection, so two pairs are used, 1 and 2, and 3 and 6.
+785.99667
+Now, which pairs on which side are used to transmit, and which are used to receive?
+791.850836
+Well, we know how a switch functions from the last slide.
+795.561433
+Pins 1 and 2 receive data, and pins 3 and 6 transmit data.
+801.165916
+How about a router?
+803.492432
+Well, the network interfaces on a router transmit and receive data on the same pairs that a PC’s network interface card does.
+811.389242
+A router transmits data on pins 1 and 2 And receives data on Pins 3 and 6.
+818.330458
+Again, Ethernet uses full-duplex transmission So the two devices can send data at the same time with no issues.
+826.947233
+So remember this, Routers transmit data on pins 1 and 2, and receive data on pins 3 and 6.
+835.300331
+This is the same as a PC.
+837.86243
+Once again, switches are the opposite, they receive data on pins 1 and 2 and transmit data on pins 3 and 6.
+847.23494
+When connecting a PC to a switch, or a Router to a switch, this works fine.
+853.759357
+Because they transmit and receive on opposite pin pairs, a regular cable like this works well.
+860.832799
+This kind of cable, by the way, is called a straight-through cable.
+865.419731
+Remember, a copper Ethernet cable has two RJ-45 connectors, one on each end.
+872.060987
+This kind of a cable is called a ‘straight through’ cable because pin 1 on one end connects straight through to pin 1 on the other end.
+881.484683
+Pin 2 connects to Pin 2, Pin 3 connects to Pin 3, etc.
+886.808355
+Now, in networks we don’t always connect PC to switch, switch to router.
+892.599384
+What if we want to connect a router to another router?
+895.805792
+Or maybe a switch to another switch?
+897.971062
+Or maybe connect two PCs together?
+900.989343
+Now I’ve replaced the switch on the right with another router.
+905.676524
+What will happen if the router on the left sends data to the router on the right?
+910.801585
+Well, it’s simply not going to work.
+914.409532
+The right router isn’t prepared to receive data on pins 1 and 2 of its interface,
+919.295481
+so communication between the two routers just doesn’t happen.
+922.867401
+So, how can we successfully connect two routers together?
+927.287352
+Or perhaps two switches, or two PCs.
+930.177903
+The same thing applies to connecting a PC directly to a router, also, because they both transmit data on pins 1 and 2, and receive data on pins 3 and 6.
+940.575124
+Let’s take a look.
+941.909971
+I’ve replaced the two routers with two switches, just to demonstrate that the same thing applies.
+949.042408
+If the switch on the left tries to transmit some data to the switch on the right it doesn’t work.
+955.383065
+The answer to this problem is a different type of cable.
+959.784826
+A straight-through cable connects pin 1 to pin 1, pin 2 to pin 2, pin 3, to pin 3, etc.
+967.610751
+But there’s another type of cable, called a crossover cable.
+972.323747
+In a crossover cable, a pin on one end of the cable doesn’t connect straight to the same pin on the other end.
+979.55435
+Essentially, the pairs are reversed on each end.
+982.890822
+So, pin 1 on one side connects to Pin 3 on the other side.
+988.11111
+And pin 2 on one side connects to Pin 6 on the other side.
+992.577627
+As you can see, the two pairs, 1 and 2, and 3 and 6, are reversed.
+998.879023
+Then, pair 3 on the left side will connect to Pin 1 on the right side.
+1004.118783
+And pin 6 on the left side will connect to pin 2 on the right side.
+1008.854336
+The wires are ‘crossed over’ each other, hence the name ‘crossover cable’.
+1013.833333
+The transmit pins on one side are connected to the receive pins on the other side,
+1019.451572
+so now the two devices can send data to each other with no problems.
+1023.594821
+Here’s another example.
+1027.651816
+Again, the network interface card on a PC and the network interfaces on a router both transmit data on pins 1 and 2 and receive data on pins 3 and 6,
+1037.734307
+however if you connect them together with a crossover cable, they will be able to exchange data with no issues.
+1044.896826
+Here’s a chart reviewing different device types and the pins they use to transmit and receive data
+1052.682406
+Routers transmit data on Pins 1 and 2, and receive data on pins 3 and 6.
+1058.985214
+Firewalls are the same as routers, they transmit data on Pins 1 and 2 and receive data on pins 3 and 6.
+1068.2544
+PCs also transmit data on Pins 1 and 2, and receive data on pins 3 and 6.
+1074.912197
+Switches are the only different one of the group.
+1079.117694
+Switches transmit data on pins 3 and 6, and receive data on pins 1 and 2.
+1085.312882
+Try to remember these.
+1087.314283
+The flashcards included in the description will help with this, so I recommend that you use them!
+1092.633263
+While all of that is important information to know, and can cause issues in networks even in the modern day,
+1100.587877
+the truth is that most modern networking devices have evolved beyond having to worry about straight-through or crossover cables.
+1108.132164
+That’s because newer networking devices include a feature called Auto MDI-X.
+1114.861616
+Previously, if two switches were connected with a straight-through cable like this, they would be unable to communicate.
+1122.297893
+However, Auto MDI-X allows devices to automatically detect which pins their neighbor is transmitting data on,
+1130.795067
+and then adjust which pins they use to transmit and receive data.
+1134.328933
+They can then exchange data normally.
+1137.990164
+So, unless you’re working with network equipment that is quite old,
+1142.454949
+you don’t really have to worry about straight-through and crossover cables.
+1146.054576
+But this is good information to be aware of, and it’s also good to learn about the concept of auto MDI-X,
+1153.070599
+both for the exam and for real world networking.
+1155.633223
+So, we’ve talked a lot about 10BASE-T and 100BASE-T,
+1161.174488
+but what about the higher speed copper ethernet cables?
+1164.213948
+Remember, I said before that for gigabit ethernet and 10 gigabit ethernet, all 8 wires are used.
+1171.350173
+The last two pairs are 4 and 5, and 7 and 8.
+1177.71513
+Again, there will be flashcards to help you remember these details.
+1181.329486
+It may seem like a lot to memorize, but if you use the flashcards properly its amazing how easy it is to remember all of these things.
+1189.27113
+Now, here’s another big difference between 1000baseT and 10GBASE-T, and 10base-t and 100-base-t.
+1198.916016
+In addition to using all four pairs of wires, in 1000base-T and 10Gbase-T, each pair is bidirectional,
+1207.600195
+meaning each pair isn’t dedicated specifically to transmitting data or receiving data.
+1213.159316
+This is part of the reason that they can operate at much faster speeds.
+1217.553055
+Okay, we’ve covered a lot about connections using copper UTP cables.
+1223.427872
+But there is a newer technology that is superior in many ways.
+1227.449043
+For example, copper UTP wiring can be used for up to 100 meters.
+1232.852413
+that’s usually plenty within a LAN, but how about for larger networks?
+1237.365489
+Look at this Cisco switch here.
+1240.412293
+Here it has 24 ports for RJ45 connectors.
+1244.541104
+These are the ports you would connect a copper UTP cable to.
+1249.03348
+But what about these four interfaces?
+1251.865208
+Take a look at this Cisco router also.
+1255.271157
+It only has four RJ45 ports.
+1258.497274
+The rest of them look like those other four ports on the switch.
+1262.70123
+In these interface you insert one of these
+1267.345449
+It’s called an SFP transceiver.
+1269.886583
+SFP means small form-factor pluggable.
+1273.767004
+So you insert one of these into the device,
+1277.434831
+but still things aren’t complete.
+1279.705821
+What kind of cable connects to one of these?
+1282.663645
+You connect one of these cables.
+1285.38017
+This is a fiber optic cable.
+1287.881604
+Rather than an electrical signal over copper wiring,
+1291.853994
+these cables send light over glass fibers.
+1295.161313
+Notice that there are two connectors on each end.
+1298.602801
+That’s because you need one connector to transmit data, and one to receive data, on each end.
+1304.181239
+The copper UTP cables used separate wire pairs within the cable to transmit and receive data.
+1311.426319
+The fiber-optic cables instead use separate cables to transmit and receive, like this.
+1317.338583
+Of course, ‘transmit’ on the left connects to ‘receive’ on the right, and ‘transmit’ on the right connects to ‘receive’ on the left.
+1326.69035
+Now let’s examine the structure of the cable itself.
+1330.423759
+There are four numbered parts in this diagram, from the center to the outer layer.
+1335.476289
+Number 1 is the fiberglass core itself.
+1339.502485
+Light is transmitted down this core to transmit data from one device to another.
+1345.286906
+Number 2 is cladding that reflects light,
+1349.330217
+Number 3 is a protective buffer, which protects the fiberglass from breaking
+1355.409217
+and number 4 is the outer jacket of the cable.
+1359.675121
+Now there are a couple main types of fiber-optic cables.
+1363.009894
+single-mode fiber, and multimode fiber.
+1366.848015
+Let’s check out their characteristics and differences.
+1370.724314
+These are two examples of multimode fiber cables.
+1375.268435
+The center represents the fiberglass core,
+1379.067644
+and the blue represents the reflective cladding that reflects light down the cable.
+1383.207872
+In multimode fiber cable, the core, the actual glass fiber, is wider than single mode fiber.
+1391.154467
+This wider core allows multiple angles, known as modes, of lightwaves to enter the fiber glass core,
+1399.063135
+as you can see in these two diagrams.
+1401.166615
+Notice the red and black lines representing light waves travelling down the fiberglass
+core, 1406.87275
+reflecting off the cladding at different angles.
+1409.701394
+Multimode fiber allows longer cables than UTP, which are limited to 100 meters,
+1416.712703
+but still shorter than single-mode fiber, which we will look at next.
+1420.310233
+Multimode fiber cables are cheaper than single-mode fiber,
+1424.986932
+and this is because they use cheaper transmitters, which are often LED-based.
+1429.906371
+This is an example of a single-mode fiber cable.
+1434.299899
+Again, the center represents the fiberglass core,
+1437.88847
+and the blue represents the reflective cadding.
+1440.882413
+The core diameter of a single-mode fiber cable is narrower than a multimode fiber,
+1446.242165
+meaning the glass fiber is thinner.
+1448.444062
+You can notice this in the diagram here, compared to the multimode fiber diagrams.
+1453.700589
+Light enters at a single angle, known as a mode, from a laser-based transmitter.
+1459.711599
+Notice in the diagram that the light wave travels straight down the core of the cable.
+1464.930457
+Single-mode fiber allows longer cable lengths than both UTP and multimode fiber cables.
+1471.678992
+And single-mode fiber cables are more expensive than multimode fiber cables due to the more expensive laser-based transmitters used.
+1479.376837
+Okay, now let’s look at some standards for fiber-optic cables like we did with UTP cables.
+1485.358766
+Here’s another chart like the one we looked at for copper UTP cable standards,
+1491.082683
+this time for fiber-optic cables.
+1493.358408
+First up is a standard for 1 gigabit ethernet over fiber, known as 1000BASE-LX.
+1501.22133
+It is defined in the IEEE 802. 3zed, or zee, standard.
+1506.087595
+This standard can be used over single-mode or multimode fiber cables, 1510.835005
+and you can see the difference in the maximum cable lengths,
+1514.038096
+550 meters for multimode fiber, and 5 kilometers, or 5000 meters, for single mode fiber.
+1520.831932
+Next up is 10GBASE-SR, defined in the 802.3ae standard,
+1528.422456
+which operates at 10 gigabits per second.
+1530.651711
+It uses multimode fiber and can support cable lengths up to 400 meters.
+1536.342691
+Next is 10GBASE-LR, also defined in the 802.3ae standard,
+1543.598431
+again operating at 10 gigabits per second.
+1546.030155
+10GBASE-LR, however, uses single-mode fiber, and cables lengths can be up to 10 kilometers.
+1553.898403
+Finally 10GBASE-ER, also part of the 802.3ae standard, and operating at 10 gigabits per
+second.
+1562.889069
+It supports cable lengths even longer than 10GBASE-LR, with distances up to 30 kilometers possible over a standard connection.
+1571.203844
+This is just a sample of fiber-optic standards, there are plenty more.
+1577.075218
+I will include flashcards to help you remember these standards, but to be honest I doubt you’ll be asked questions about specific details about the standards on the exam, but I don’t know for sure.
+1587.911539
+However, with the flashcards it’s quite easy to remember little facts like these, so I recommend not deleting those flashcards, but that’s your choice of course.
+1597.204346
+Finally, let’s review by comparing UTP cabling and Fiber-optic cabling, starting with UTP.
+1603.269466
+Copper UTP cables are cheaper than fiber-optic cables.
+1608.889803
+Maximum cables distances for UTP cables are shorter, about 100 meters maximum.
+1615.892837
+UTP cables can be vulnerable to electromagnetic interface, or EMI, 1621.907238
+although the twist in the cable pairs helps to protect against this.
+1625.034907
+The RJ45 ports to which UTP cables connect are cheaper than the SFPs used for Fiber-optic connections
+1633.282891
+Also, UTP cables emit, or leak, a faint signal outside of the cable, 1640.196155
+which could possibly be detected and used to copy data, posing a possible security risk.
+1644.921771
+Now let’s look at fiber-optic cables.
+1648.018348
+Fiber-optic cables are more expensive than UTP cables
+1652.271247
+They support longer distances than UTP cables.
+1655.799843
+Their SFP ports are more expensive than RJ45 ports,
+1660.698679
+and single-mode fiber ports are more expensive than multimode.
+1664.5181
+They do not emit any signal outisde of the cable,
+1668.369367
+so there is no security risk there.
+1670.324435
+Okay, so we covered a lot of information, but I want to remind you of the supplementary materials for the video that will help you remember what you learned.
+1681.037031
+Like in the last video, there will be an end-of-video quiz starting from the next slide.
+1687.445442
+Also, I have made a deck of flashcards to help you review the information covered in this video,
+1693.627336
+check the link in the description to download them.
+1696.184215
+And there will also be a practice lab using Packet Tracer,
+1700.912951
+which will be released as a separate video.
+1703.126392
+Okay, let’s get started with the quiz.
+1705.836664
+Quiz question 1.
+1708.798853
+You connect two old routers together with a UTP cable,
+1712.846453
+however data is not successfully sent and received between them.
+1716.600061
+What could be the problem?
+1719.503605
+A, they are connected with a straight-through cable.
+1722.994469
+B, they are connected with a crossover cable.
+1726.92765
+or C, they are operating in auto MDI-x mode.
+1731.930566
+Pause the video to think about your answer.
+1735.449836
+The answer is A, they are connected with a straight-through cable.
+1742.316022
+let’s check each of the possible answers.
+1745.591236
+A crossover cable is not the issue.
+1749.311633
+In fact, a crossover cable would likely fix the issue.
+1752.527839
+Because both routers transmit data on pins 1 and 2, a crossover cable is necessary to properly connect the transmit pins on one side to the receive pins (3 and 6) on the other side.
+1765.06218
+Modern devices with Auto MDI-X enabled don’t have this issue, but it is possible that the old routers do not have Auto MDI-X.
+1773.7878
+So, b, they are connected with a crossover cable, is incorrect.
+1778.42047
+Auto MDI-X allows devices to detect which pins and wires their neighbors are using to transmit and receive data,
+1786.075713
+and adjust their own operations to match.
+1788.799953
+Actually, Auto MDI-X would likely fix this issue,
+1793.032126
+but since the routers are old they might not have the Auto MDI-X function.
+1797.921085
+So, c, They are operating in Auto MDI-X mode, is incorrect.
+1803.038497
+On old devices without Auto MDI-X, a straight-through cable cannot be used to connect devices of the same type.
+1810.872574
+A crossover cable is necessary.
+1813.316993
+So a, they are connected with a straight-through cable, is the best answer.
+1818.177058
+Quiz question 2.
+1821.529326
+Your company wants to connect switches in two separate buildings that are about 150 meters apart.
+1828.236322
+They want to keep costs down, if possible.
+1831.568155
+What kind of cable should they use?
+1833.787182
+A, UTP. B, Single-mode fiber, or C, multimode fiber.
+1842.363014
+Pause the video to think about your answer.
+1845.56317
+The answer is C, multimode fiber.
+1852.532756
+Let’s check.
+1854.116788
+Although UTP would keep the costs down, it does not support distances over 100 meters.
+1860.574868
+So A, UTP, is incorrect.
+1864.019885
+Although single-mode fiber supports distances much longer than 150 meters, 1870.071855
+it is more expensive than multimode fiber.
+1873.350407
+So b, single-mode fiber, is not the best answer.
+1877.383541
+Multimode fiber supports distances over 150 meters and is less expensive than single-mode fiber.
+1885.958353
+So C, multimode fiber, is the best answer.
+1888.988714
+Let’s go on to question 3.
+1891.626251
+Your company wants to connect two offices that are about 3 kilometers apart.
+1897.048516
+They want to keep costs down if possible.
+1900.008581
+Which kind of cable should they use?
+1902.685128
+A, UTP, B, single-mode fiber, or C, multimode fiber.
+1911.527004
+Pause the video to think about your answer.
+1916.684361
+The answer is b, single-mode fiber.
+1921.6202
+Let’s check the answers.
+1923.76969
+Although UTP keeps costs down, it does not support distances of 3 kilometers.
+1929.83698
+So A, UTP, is incorrect.
+1933.305177
+Although multimode fiber is cheaper than single-mode fiber, it also does not support distances of 3 kilometers.
+1940.364079
+So c, multimode fiber, is incorrect.
+1944.23003
+Many single-mode fiber standards support cable lengths much longer than 3 kilometers.
+1950.175206
+Although single-mode fiber is more expensive than the other options, it is necessary in this case.
+1957.43531
+So B, multi-mode fiber, is the best answer.
+1960.663351
+A switch has the following indication over its network interfaces: What would happen if you connect it to an identical switch with a straight-through cable?
+1972.460395
+A, they would operate normally.
+1975.506955
+B, they would operate at a reduced speed.
+1979.911809
+or C, they would be unable to communicate.
+1983.79415
+Pause the video to think about your answer.
+1987.189564
+The answer is a, they would operate normally.
+1994.131133
+Let’s check.
+1995.781291
+They would not operate at a reduced speed.
+1998.99011
+The ports are Auto MDI-X enabled.
+2001.75389
+However, even if they didn’t have Auto MDI-X, they wouldn’t operate at a reduced speed.
+2007.734104
+They simply wouldn’t operate.
+2010.162212
+So b, they would operate at a reduced speed, is incorrect.
+2014.688631
+Because the ports are Auto MDI-X enabled, they would be able to communicate, even though they are connected with a straight-through cable.
+2023.280321
+So c, they would be unable to communicate, is incorrect.
+2027.528978
+Because the ports are Auto MDI-X enabled, they would operate normally, regardless of whether they are connected with a straight-through or a crossover cable.
+2038.114255
+So a, they would operate normally, is the correct answer.
+2042.053761
+Let’s go to the final quiz question for this video.
+2046.540939
+Your company needs to connect many end hosts to a switch which is in a wiring cabinet on the same office floor as the hosts.
+2054.678353
+What kind of cable should they use?
+2057.263631
+a, UTP. b, single-mode fiber, or C, multimode fiber.
+2065.962909
+Pause the video to think about your answer.
+2069.168937
+The answer is a, UTP.
+2075.188079
+Let’s check the answers.
+2076.685279
+Most hosts do not have the capability to connect to a switch via fiber cabling,
+2082.61855
+and most switches do not have enough SFP interfaces to support many hosts.
+2087.89333
+So b, single-mode fiber, and c, multimode fiber, are inorrect.
+2093.206373
+UTP cables are the standard for wired connections to switches.
+2097.944341
+Switches typically have many RJ45 ports for end hosts to connect to,
+2103.506647
+and end hosts will have an RJ45 port on their network interface card to connect a UTP cable to.
+2110.239443
+So a, UTP, is the correct answer.
+2113.918639
+Thank you for watching.
+2117.898636
+That's all for this video.
+2119.482947
+If you want to show your support, please subscribe to the channel, like the video, leave a comment, and share the video with anyone else studying for the CCNA.
+2128.468419
+I accept donations via cryptocurrency or Patreon via the links in the description.
+2134.387201
+I'm also a Brave verified publisher and accept BAT, or Basic Attention Token, tips via the Brave browser.
+2142.28061
+Click the link in the description to check out Brave, a fast and sleek browser that pays you to surf the Internet.
+2148.746745
+That's all for now.
+2150.211791
