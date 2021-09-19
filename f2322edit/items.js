@@ -49,7 +49,18 @@ let items = [
   },
   {
     "en" : [
-      "",
+"165",
+"00:12:17,330 --> 00:12:23,320",
+"This cr means that there are no further options,",
+"the only option is to press enter to enter",
+"",
+"166",
+"00:12:23,320 --> 00:12:24,460",
+"the command.",
+"",
+"167",
+"00:12:24,460 --> 00:12:27,600",
+"I pressed enter, and now the password is set.",
       "",
       ""
     ]
