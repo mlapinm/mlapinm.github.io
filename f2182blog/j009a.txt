@@ -1,0 +1,266 @@
+1.589
+Welcome to Jeremy’s IT Lab.
+4.259
+This is a free, complete course for the CCNA 200-301.
+9.450
+If you like these videos, please subscribe to follow along with the series.
+13.530
+Also, please like and leave a comment, and share the video to help spread this free series of videos.
+20.160
+Thanks for your help. Let’s get started.
+23.890
+In this lab we’ll finally get hands on in the Cisco IOS CLI, the command line interface.
+31.250
+If you’ve already watched the Day 4 lecture video, you should be able to complete these
+35.500
+tasks on your own.
+37.300
+Even if you can, I recommend watching this video after to check and get any additional explanations.
+43.630
+So, we’ve got a small network here with a few PCs, and switch, and a router.
+50.400
+Our tasks involve some basic configurations on the router and switch.
+54.020
+For this video, I will only configure the router.
+57.310
+However, I recommend that you go through the steps on both devices.
+61.730
+Repetition is essential to get used to all of the commands you need to know, so remember
+65.469
+to configure both devices!
+68.829
+Step 1 is to set the appropriate hostnames for each device, R1 and SW1.
+73.459
+We didn’t cover the command in the main video, but to do so you use the ‘hostname’
+79.849
+command in global configuration mode.
+82.920
+Click on the device, and then select CLI to access the command line interface from which
+88.159
+we will configure each device.
+90.320
+Now, in the lecture video I explained about how to connect to the console port of a device.
+96.029
+In packet tracer, you can actually do that, connect a PC to the console port of the device,
+101.490
+and then use the PC to do the configurations.
+104.880
+However, simply clicking on the device itself is much more convenient, so that’s what
+109.850
+we’ll be doing for these labs.
+112.279
+Just keep in mind that in real life, you can’t configure the device directly on the device
+115.920
+itself, you have to connect to it with a computer.
+120.979
+The current hostname for each device is displayed here.
+124.909
+As you can see, by default the hostname is router.
+128.789
+To change the hostname, we must enter 'Global configuration' mode.
+133.240
+However to get there, we must first enter 'Privileged exec' mode.
+137.120
+This is achieved by using the 'enable' command.
+140.780
+To demonstrate a shortcut, I will use the 'exit' command to return to the previous exec mode.
+147.329
+Notice that you can enter privileged exec mode by simply typing 'en'.
+151.780
+You can also type 'en' and then use tab to auto-complete it to 'enable', but this isn't necessary.
+157.670
+'en' alone is fine.
+160.260
+'e', however, is too short, and we are told this is an ambiguous command.
+166.810
+This is because there are other potential commands that begin with 'e', which we can
+170.709
+see by tying 'e' and then a question mark.
+174.420
+As you can see, there are two potential commands; enable, and exit.
+178.330
+So, if you just enter 'e', the router doesn't know which command you mean.
+183.030
+However, 'enable' is the only command beginning with 'en', so 'en' is all the router needs
+189.079
+to know which command you mean.
+192.109
+Now that we are in privileged exec mode, we can use the 'configure terminal' command to
+196.739
+get to 'global configuration' mode.
+199.880
+If you want to use shortcuts again as we did with enable and 'en', the shortest version
+204.379
+of the 'configure terminal' command is 'conf t'.
+209.110
+From here we can set the hostname of the router.
+212.020
+This is done with the hostname command.
+214.969
+I will enter 'hostname R1'.
+218.719
+As you can see, the hostname has changed from 'router' to 'R1'.
+223.379
+Change the hostname of SW1 as well, and that’s all for step 1.
+229.370
+Step 2 is to set the unencrypted enable password on each router to CCNA.
+235.639
+The 'enable password' is used to enter privileged exec mode, which is also called enable mode.
+242.349
+Previously we had no password set, so we were able to enter privileged exec mode without any password.
+249.180
+Now we are going to protect privileged exec mode so that only administrators can access it.
+255.700
+The command is simple, and it is done in 'global configuration' mode, which we are already in.
+261.530
+Type 'enable password CCNA'. That's it.
+266.280
+Now let's test it out, which is step 3.
+269.600
+From here I will use the exit command twice, once to bring me back to privileged exec mode
+274.590
+and then once again to bring me back to user exec mode.
+278.450
+Now I will use the enable command again, however this time I am asked for a password.
+284.590
+The characters do not appear as I type, however if I type the password 'CCNA' correctly and
+290.349
+press enter I am brought to privileged exec mode.
+293.880
+Now let's see what happens if I fail to enter the correct password.
+297.500
+I enter the wrong password once, twice, and then three times before being rejected for having 'bad secrets'.
+307.020
+Now I will try again with the correct password, and I'm in.
+310.850
+Step 3 is now complete.
+313.990
+Step 4 is simply to view the password in the running configuration.
+318.590
+The running configuration is the current active configuration of the router, whether or not you have actually saved it.
+325.200
+If you turn off the router without saving the running configuration you will lose any changes.
+330.550
+If you want to keep your changes you have to save them to the startup configuration.
+335.670
+To view the running configuration, use the show running-config command from privileged
+340.479
+exec mode, which we are already in.
+343.400
+You can abbreviate it too, for example sh run.
+348.740
+Enter the command, and you can see the password right here, with the exact command we used
+353.050
+before, 'enable password CCNA'.
+357.300
+As you can see it is not encrypted, it is written in clear text right.
+360.810
+Let’s solve that in step 5.
+363.669
+So step 4 is now complete.
+367.130
+Step 5 is to enable password encryption on the devices.
+371.349
+We can protect passwords by encrypting them to render them unreadable.
+375.840
+This is done from global configuration mode with the command 'service password-encryption'. Conf t. service password-encryption.
+384.639
+Okay, that’s all for step 5.
+388.199
+Step 6 is to once again view the running config.
+392.770
+I will use the same command as before, and now lets check the password.
+397.440
+However the command doesn't work.
+399.690
+That is because we are currently in global configuration mode, and show running-config
+403.870
+must be entered from privileged exec mode.
+406.340
+Now, I could type exit to drop back to privileged exec mode and then enter the command.
+412.150
+But there is one more way, which I demonstrated in the lecture video.
+416.110
+If I type 'do' in front of the command, I can enter it from global configuration mode. 'do show running-config'. There we go.
+426.490
+Let's look at the password.
+428.199
+You can see here 'enable password', followed by a 7 and then a string of other numbers.
+434.970
+The password has successfully been encrypted.
+438.020
+Although we didn't type this 7 when we entered the command, it refers to the type of encryption used.
+444.289
+There are other types as well.
+446.599
+The string of numbers that follow are the password 'CCNA', encrypted to be unreadable
+451.270
+so that anyone looking over our shoulder can't read the password.
+455.970
+Keep in mind that the encryption used in the 'service password-encryption' isn't very secure
+460.470
+and can be cracked, but this at least renders the password safe from someone simply glancing over your shoulder.
+466.480
+Step 6 is now complete.
+470.620
+Step 7 is to configure a more secure, encrypted enable password of ‘Cisco’.
+476.090
+That can be done with the ‘enable secret’ command.
+479.340
+The enable secret uses MD5 encryption, which is more secure than what you get with the service password-encryption command.
+487.460
+Since we’re already in global configuration mode, let’s enter the command. Enable secret Cisco.
+494.910
+Now let’s go on to Step 8, which is to exit back to user EXEC mode and try to login. Exit. Exit.
+502.639
+Okay, now let’s try to get back to privileged EXEC mode. Enable.
+507.569
+Let’s try our original password of ‘CCNA’….it doesn’t work anymore.
+513.890
+How about our newly configured enable secret? Cisco...okay, that works.
+520.190
+As you can see, if both an enable secret and enable password are configured, only the enable
+525.610
+secret can be used.
+527.560
+The enable password becomes invalid.
+531.310
+Step 9 is to once again view the passwords in the running configuration. Show running-config. There they are.
+539.560
+Once again, the enable password with service password-encryption enabled uses type 7 encryption,
+544.860
+indicated by this 7 here.
+547.510
+The enable secret uses type 5 encryption, which is MD5 encryption.
+553.680
+Step 10 is to save the running configuration to the startup configuration.
+558.310
+There are three ways to do this.
+560.780
+One is write...another is write memory...and the third is copy running-config startup-config.
+569.670
+Let’s check if its saved. Show startup-config.
+576.520
+There's the config, and you can see the passwords we configured here.
+581.260
+If I scroll through you can see lots of other default settings for the device here.
+587.500
+Step 10 is now complete.
+591.560
+Thank you for watching.
+592.820
+That's all for this video.
+594.500
+If you want to show your support, please subscribe to the channel, like the video, leave a comment,
+600.060
+and share the video with anyone else studying for the CCNA.
+603.450
+I accept donations via cryptocurrency or Patreon via the links in the description.
+609.770
+I'm also a Brave verified publisher and accept BAT, or Basic Attention Token, tips via the Brave browser.
+617.580
+Click the link in the description to check out Brave, a fast and sleek browser that pays
+621.650
+you to surf the Internet.
+623.840
+That's all for now.

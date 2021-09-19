@@ -1,149 +1,116 @@
-
-
+1.050
 Welcome to Jeremy’s IT Lab.
-
+3.550
 This is a free, complete course for the CCNA 200-301.
-
+8.580
 If you like these videos, please subscribe to follow along with the series.
-
-Also, please like and leave a comment, and share the video to help spread this free series
-of videos.
-
-Thanks for your help.
-
-Let’s get started.
-
-In this lab you will use what you learned in Day 2’s lecture video to connect these
-network devices together.
-
+12.450
+Also, please like and leave a comment, and share the video to help spread this free series of videos.
+18.980
+Thanks for your help. Let’s get started.
+22.720
+In this lab you will use what you learned in Day 2’s lecture video to connect these network devices together.
+29.439
 You can select various types of connections from the bottom left here.
-
+33.040
 We’ll be using copper straight-through, copper cross-over, and fiber connections.
-
+40.740
 Note that packet tracer doesn’t differentiate between single-mode and multimode fiber, but
+46.219
 try to think about which type would be appropriate when you use a fiber connection.
-
+50.950
 So, I’ll start here in the bottom left.
-
+54.370
 First, the connection between SW3 and PC1.
-
+59.940
 For the purpose of this lab, we’re assuming that Auto MDI-X is disabled or not supported
-on the devices, so we have to think about whether to use a straight-through or cross-over
-copper cable.
-
+65.300
+on the devices, so we have to think about whether to use a straight-through or cross-over copper cable.
+72.640
 PCs transmit data on pins 1 and 2, and receive data on pins 3 and 6.
-
-Switches are the opposite, they transmit data on pins 3 and 6 and receive data on pins 1
-and 2.
-
-So, we can use a straight-through cable to connect all of these PCs, as well as SRV1,
-to the switches.
-
+79.970
+Switches are the opposite, they transmit data on pins 3 and 6 and receive data on pins 1 and 2.
+87.750
+So, we can use a straight-through cable to connect all of these PCs, as well as SRV1, to the switches.
+95.930
 Select straight-through cable here, and connect the PCs to their appropriate switch.
-
-PC1 to SW3.
-.
-connect the fastethernet0 interface on the PC, which is the PC’s network interface
+101.690
+PC1 to SW3..connect the fastethernet0 interface on the PC, which is the PC’s network interface
+109.570
 card, to any of the fastethernet interfaces on the switch.
-
-Next is PC2 to SW4.
-.
-.
-PC3 to SW7.
-.
-.
-and SRV1 to SW8.
-
+113.970
+Next is PC2 to SW4...PC3 to SW7...and SRV1 to SW8.
+126.560
 Now we’ve got a bunch of switches to connect together.
-
+130.080
 Devices of the same type require crossover cables, or else the transmit pins will be
+134.590
 connected to the transmit pins, and the receive pins will be connected to the receive pins,
+140.450
 which will not allow data to be sent successfully between the devices.
-
-So, let’s connect these switches, SW3 to SW1.
-.
-.
-SW1 to SW2.
-.
-.
-SW4 to SW2.
-.
-.
-SW7 to SW5.
-.
-.
-
-SW5 to SW6.
-.
-.
-and last SW8 to SW6.
-
+143.700
+So, let’s connect these switches, SW3 to SW1...SW1 to SW2...SW4 to SW2...SW7 to SW5...
+159.970
+SW5 to SW6...and last SW8 to SW6.
+171.240
 Next let’s connect these switches to the routers.
-
+174.590
 Routers are like PCs, they transmit on pins 1 and 2 and receive on pins 3 and 6.
-
+182.090
 So let’s connect them to the switches with straight-through cables.
-
-SW1 to R2.
-.
-.
-SW2 to R2.
-.
-.
-SW5 to R4.
-.
-.
-and SW6 to R4.
-
+185.990
+SW1 to R2...SW2 to R2...SW5 to R4...and SW6 to R4.
+200.400
 Now it’s time to connect the routers.
-
+204.830
 Since they are the same device type, we need to use crossover cables if we use copper cabling.
-
+211.120
 Take care to look at the distances here.
-
+214.430
 Since R1 and R2 are just 50 meters apart, we can use copper cabling, which permits distances
+221.400
 up to 100 meters.
-
-So I’ll connect R2 to R1 with a crossover cable.
- R1 and R3 are 3 kilometers apart,
+223.849
+So I’ll connect R2 to R1 with a crossover cable. R1 and R3 are 3 kilometers apart,
+233.790
 so clearly we will have to use a fiber-optic connection here.
-
-Although packet tracer doesnt differentiate between single-mode and multimode, which is
-appropriate here?
+238.280
+Although packet tracer doesnt differentiate between single-mode and multimode, which is appropriate here?
+243.960
 Well, mutli mode fiber allows distances up to 550 meters, which is more than UTP, but
+251.069
 not enough for this connection.
-
+254.180
 Single-mode allows much longer distances, 30 kilometers, 40 kilometers, even more, so
+259.980
 in this case we would use single-mode fiber.
-
+263.099
 Let’s connect them, note that this symbol here is used for fiber optic connections in
+269.150
 packet tracer, notice the two spaces, for both the transmit and receive cables.
-
+275.370
 Finally, R3 and R4 are separated by 250 meters.
-
+281.029
 That’s too long for a UTP cable, but also not so long that we need single-mode fiber.
-
+287.189
 A multimode fiber cable would be sufficient.
-
-Let’s connect them together.
-.
-.
-Okay, the devices are now all connected.
-
+290.150
+Let’s connect them together...Okay, the devices are now all connected.
+296.289
 That’s all for this lab.
-
+300.460
 Thank you for watching.
-
+301.650
 That's all for this video.
-
+303.400
 If you want to show your support, please subscribe to the channel, like the video, leave a comment,
+308.879
 and share the video with anyone else studying for the CCNA.
-
+312.439
 I accept donations via cryptocurrency or Patreon via the links in the description.
-
-I'm also a Brave verified publisher and accept BAT, or Basic Attention Token, tips via the
-Brave browser.
-
+318.680
+I'm also a Brave verified publisher and accept BAT, or Basic Attention Token, tips via the Brave browser.
+326.419
 Click the link in the description to check out Brave, a fast and sleek browser that pays
+330.559
 you to surf the Internet.
-

@@ -1,0 +1,846 @@
+1.310
+Welcome to Jeremy’s IT Lab.
+3.989
+This is a complete course for the CCNA, including everything you need to pass the exam, all 100% free.
+11.799
+Make sure you stay tuned till the end of the video for the quiz to test your knowledge
+15.080
+of the material in this video.
+17.230
+Also, remember to download and use the Anki flashcards with the link in the description,
+22.849
+which will help you very much in your studies. Let’s get started.
+27.960
+This is the fifth lesson, and now we’re going to get more into the details of how
+31.849
+data travels through a network.
+34.600
+This time we’ll focus on Ethernet LAN switching.
+37.790
+So, if we look at this simple network consisting of a few PCs, a switch, and a router, connected
+43.730
+to the Internet, today we’ll be looking at how data moves around between the switches
+48.550
+and the end hosts connected to them, and to their router.
+53.080
+How data is sent from the router to other networks will be a topic for another video,
+57.490
+but let’s start small. First let’s review.
+62.370
+This is a slide from Day 3’s video of describing the physical layer of the OSI model.
+69.060
+The physical layer defines physical characteristics of the medium used to transfer data between devices.
+75.729
+For example, voltage levels, maximum transmission distances (like Ethernet UTP cables’ 100
+83.250
+meter limit), physical connectors, cable specifications, etc.
+88.979
+Digital bits are converted into electrical (for wired connections) or radio (for wireless connections) signals.
+97.119
+All of the information in Day 2’s video (cables, pin layouts, etc.) is related to the Physical Layer.
+104.079
+So, we’ve covered a good amount about the physical layer, learning about copper UTP
+109.299
+cables, fiber-optic cables, RJ45 connectors, etc.
+114.780
+Let’s also review this slide about Layer 2, the data link layer, from Day 3’s video.
+121.639
+Layer 2 provides node-to-node connectivity and data transfer, for example PC to switch, or
+128.459
+switch to router, or router to router, etc.
+132.410
+It defines how data is formatted for transmission over a physical medium (for example, copper UTP cables).
+140.480
+IT detects and possibly corrects Physical Layer errors.
+145.260
+It uses Layer 2 addressing, which is separate from Layer 3 addressing.
+150.459
+Remember, IP addresses are Layer 3 addresses, not Layer 2.
+156.569
+Switches operate at Layer 2.
+158.189
+So, in this video we’ll be talking about Ethernet LAN switching, and Ethernet involves
+163.079
+Layer 1 and Layer 2 of the OSI model.
+167.540
+Since we’ve already covered the Layer 1 Ethernet standards like UTP cables, this video
+172.380
+will be about Layer 2.
+174.440
+Then, as we continue with this series, we’ll move up the layers of the OSI model, until
+180.010
+you get a complete image of how data is sent and received over networks.
+184.140
+Now, let’s talk about what a LAN, or Local Area Network is.
+190.709
+There are different ways of defining a LAN, and your understanding of a LAN will become
+195.110
+more complete as you learn more and more about networking.
+198.280
+But basically, it’s a network contained within a relatively small area, like an office floor,
+204.740
+or your home network.
+207.280
+Routers are used to connect separate LANs.
+209.709
+Looking at this diagram, how many LANs do you think there are?
+214.469
+Well, by the definition I’m using, this green network, consisting of three PCs, one
+220.990
+switch, and the router interface they are connected to, is one VLAN.
+226.459
+This red network is also one LAN.
+229.730
+Although there are two switches, it is all one LAN.
+233.430
+Switches do not separate LANs, but adding more switches can be used to expand an existing LAN.
+240.239
+So these red devices are part of one large LAN.
+243.530
+Now, what do you think about the blue devices?
+246.749
+There’s the same devices as in the red network, but instead of the switches being connected
+252.120
+to each other, they are connected to different router interfaces.
+255.690
+So, that means that they are two separate LANs. one for this switch, it’s end hosts,
+261.989
+and their router interface, and one for this switch, it’s end hosts, and the router interface they connect to.
+268.810
+So, in this lesson we’ll look at how traffic is sent and received within LANs like these,
+274.910
+for example this PC in LAN 2 to another PC in LAN 2.
+280.710
+But, we’ll leave the topic of sending data between LANs for a later video.
+286.650
+Here’s one more bit of review.
+290.250
+This shows the encapsulation process as data is prepared to be sent over a network.
+295.870
+At the top, the data prepared by the upper layers of the OSI model is simply called data.
+302.180
+A layer 4 header is added, and this combination of data and layer 4 header is called a segment.
+309.090
+A layer 3 header is added to the segment, and it is now called a packet.
+313.520
+Finally, a Layer 2 header and trailer are added to the packet, and it becomes a frame.
+321.270
+Once again, these different stages of preparing data to be forwarded are called ‘protocol
+325.460
+data units, or PDUs. For example, the Layer 2 PDU is a frame.
+331.940
+Today we’re going to focus on how switches receive and forward frames, specifically Ethernet
+337.710
+frames, since it’s the Layer 2 protocol used in virtually every LAN in existence today.
+343.220
+Let’s take a look at the actual contents of this Ethernet header and trailer.
+347.849
+So, here’s an Ethernet frame, encapsulating the packet with a header and trailer.
+354.760
+Note that I put the header on the left and the trailer on the right, opposite of the previous slide.
+359.560
+Let’s look at the header.
+361.050
+Don’t worry, I’ll cover these in more detail, but here’s a quick rundown.
+366.280
+There are five fields in the header.
+368.810
+First, the preamble and SFD, which means start frame delimiter.
+375.260
+These are used for synchronization and to allow the receiving device to be prepared
+380.780
+to receive the rest of the data in the frame.
+384.560
+Next is the destination, the Layer 2 address to which the frame is being sent.
+390.000
+Next, there is the source, the Layer 2 address of the device which sent the frame.
+396.650
+The final field in the Ethernet header is the type.
+400.720
+It indicates the Layer 3 protocol used in the encapsulated Packet, which is almost always
+406.389
+Internet Protocol, or IP, version 4, or IP version 6.
+412.289
+However, sometimes this is a length field, indicating the length of the encapsulated
+417.539
+data, depending on the version of Ethernet.
+420.580
+Now, the Ethernet trailer has only one field.
+424.490
+That’s the FCS, which stands for frame check sequence.
+430.080
+It’s used by the receiving device to detect any errors that might have occurred in transmission.
+435.960
+Okay, now let’s take a look at these fields in more detail, starting with the preamble
+441.430
+and start frame delimiter.
+444.790
+Here are the first two fields, the Preamble and SFD, which I like to think of as a set.
+451.110
+Let’s look at the preamble first.
+453.830
+It’s 7 bytes long.
+456.599
+How many bits is that?
+458.710
+If you remember, there are 8 bits in 1 byte, so, 7 times 8 is equal to... 56 bits.
+466.350
+It’s a series of alternating 1s and 0s.
+470.199
+Like this 10101010, which is one byte, seven times.
+478.939
+The purpose of this is that it allows devices to synchronize their receiver clocks, to make
+484.020
+sure they’re ready to receive the rest of the frame and the data inside.
+487.669
+Okay, that’s the preamble, now the SFD.
+492.560
+SFD stands for ‘start frame delimiter’.
+496.630
+It’s length is 1 byte, or 8 bits.
+500.520
+It’s bit pattern is 10101011, similar to each byte of the preamble but the last bit
+508.669
+is a 1, not a 0.
+511.830
+It indicates the end of the preamble and the beginning of the rest of the frame.
+517.700
+Now let’s look at the next two fields, the destination and source fields.
+523.490
+They indicate the devices sending and receiving the frame, like when you send an email both
+528.860
+the destination and source email addresses are included in the email, or when you send
+534.370
+a letter in the mail, although that’s getting less and less common these days.
+539.440
+The addresses used in Ethernet are the destination and source ‘MAC addresses’.
+545.230
+MAC stands for media access control.
+549.310
+The MAC address is a 6-byte, or 48-bit, address of the physical device.
+556.140
+This is separate from a logical address like an IP address, the MAC address is actually
+561.280
+assigned to the device when it is made.
+563.940
+I’ll talk more about MAC addresses in a few slides, but let’s move on to the remaining
+569.070
+fields of the Ethernet frame.
+572.339
+The last field of the Ethernet header is the Type or Length field.
+578.510
+It is 2-bytes, or 16-bits, in length.
+582.200
+It can be used to represent either the type of the encapsulated packet, or the length
+587.010
+of the encapsulated packet.
+589.530
+What do I mean by that?
+590.770
+Well, if the value in the field is 1500 or less, that means it is indicating the LENGTH of the encapsulated packet in bytes.
+601.990
+For example, if the value in this field is 1,400, it means that the encapsulated packet
+607.860
+is 1,400 bytes in length.
+610.330
+However, a value of 1,536 or greater in this field indicates the TYPE of the encapsulated
+618.430
+packet, which is usually internet protocol version 4 or version 6, and then the length
+625.160
+is determined via other methods.
+628.459
+For example, a value of 0x0800, which is written in hexadecimal, and is equal to 2048 in decimal.
+637.850
+The 0x in front of 0800 is used to indicate hexadecimal, by the way.
+644.450
+I’ll talk more about hexadecimal in a few slides when I talk in detail about MAC addresses.
+650.930
+2048 is greater than 1536, of course, and its used to identify that the encapsulated
+658.050
+packet is an IPv4 packet.
+662.620
+0x86DD, which is equal to 34525 in decimal, is used to indicate that the encapsulated
+670.970
+packet is an IPv6 packet.
+674.970
+Okay, so those are all of the fields in an Ethernet header.
+679.000
+Try to remember the lengths of each field...
+683.050
+The preamble is 7 bytes long, the start frame delimiter is 1 byte, the destination is 6
+691.410
+bytes, as is the source, as both are MAC addresses, and the Type, or length, field is 2 bytes.
+700.040
+Now let’s take a brief look at the only field of the Ethernet trailer, the FCS, or frame check sequence.
+708.610
+The only field of the Ethernet trailer is the FCS, which as I mentioned stands for frame check sequence.
+716.600
+It is 4 bytes, or 32-bits in length.
+720.140
+It’s purpose is to detect corrupted data by running a ‘CRC’ algorithm over the received data.
+728.190
+CRC means cyclic redundancy check.
+733.149
+Cyclic refers to something called ‘cyclic codes', ‘redundancy’ refers to the fact
+738.110
+that these 4 bytes at the end of the message enlarge the message without adding any new
+743.339
+information, so they are redundant, and check refers to the fact that is CHECKS, or verifies,
+749.500
+the data for errors.
+750.680
+Don’t worry about the details of CRC too much, just be aware of the term,
+757.180
+and remember that the Ethernet frame’s Frame Check Sequence is a Cyclic Redundancy Check.
+763.980
+If you remember that, you should be good for the CCNA.
+768.110
+Feel free to read around on Wikipedia if you’re curious to learn more about Cyclic Redundancy Checks.
+773.620
+Okay, now we know all of the fields of an Ethernet frame, both the header and the trailer.
+780.870
+Try to recall the length of each field again….
+784.450
+The Preamble is 7 bytes….
+788.050
+The Start-frame delimiter is 1 byte….
+791.850
+The destination is 6 bytes... the source is 6 bytes also... the type, or length, field
+800.329
+is 2 bytes...How about the trailer, what’s the length of the frame check sequence?
+807.450
+It is 4 bytes.
+810.019
+This brings the total size, including header and trailer, to 26 bytes.
+815.100
+So, there’s an overview of each field of an Ethernet frame.
+819.769
+However, the fields I really want to focus on in this video are the source and destination MAC address fields.
+827.449
+I mentioned a little bit about MAC addresses, but let’s dig a little deeper.
+833.019
+So let’s spend a few slides looking into MAC addresses.
+837.130
+As I mentioned before, a MAC address is a 6-byte, or 48-bit, physical address assigned
+843.110
+to the device when it is made.
+845.850
+This is different than an IP address, which you assign in the CLI when you configure the device.
+852.420
+You might also hear the term ‘burned in address', or BIA, to refer to a MAC address.
+859.950
+This is because the address is ‘burned-in’ to the device as it is made.
+865.250
+The MAC address is globally unique, no two devices in the world should have the same MAC address.
+871.620
+Although, there are MAC addresses known as ‘locally-unique’ MAC address, which don’t
+876.540
+have to be globally unique throughout the world, however in almost all cases MAC addresses are globally unique.
+884.540
+The first 3 bytes of the MAC address are the OUI, which stands for organizationally unique
+890.540
+identifier, and it's assigned to the company making the device.
+895.870
+So Cisco, for example, will have various OUIs which only Cisco can use, and other makers will
+903.009
+have their own OUIs which only they can use.
+906.890
+The last 3 bytes, the second half of the address, are unique to the device itself.
+913.779
+MAC addresses are written as a series of 12 hexadecimal characters.
+919.250
+For those of you who aren’t sure what hexadecimal is, let’s check it out a little bit.
+925.310
+Before explaining hexadecimal, I want to make sure we all understand how the decimal system works.
+931.290
+I don’t mean to insult anyone’s intelligence, I’m sure you all know how to count, but
+936.530
+let’s just review the system so we can compare it to hexadecimal.
+941.240
+The decimal system uses 10 possible digits, 0,1,2,3,4,5,6,7,8, and 9.
+950.730
+So, you start with 0, then 1,2,3,4,5,6,7,8, and 9.
+960.009
+This number 9 here represents 9 1s, or 9 times 1.
+966.019
+Then where do you go from here?
+968.230
+You have to add another digit, adding a 10s column.
+973.310
+You probably look at this number and just think ‘10’, but really it means 1 value
+978.130
+of 10, and 0 values of 1.
+982.440
+Then 11, is one 1, and 1 1.
+986.910
+Then you increase the ones column to get 12, 13, 14, 15, 16, 17, 18, and 19.
+995.940
+Then you can’t increase the ones column anymore, so you add 1 to the 10s column to
+1001.019
+get 20, which is 2 tens, and 0 ones.
+1006.420
+Then 21, 22, etc. all the way to 99.
+1012.829
+Now both the 10s column and the 1s column are maxed out.
+1017.220
+To represent higher numbers, you have to add another column, the 100s column.
+1022.360
+100 hundred means 1 value of 100, 0 values of 10, and 0 values of 1.
+1031.300
+Then you follow the same process, to get 101, 102, etc all the way to 999.
+1038.820
+Then once again, you have to add another column, to make 1000.
+1041.560
+So, that’s how the decimal system works.
+1044.310
+Let’s look at hexadecimal.
+1046.820
+While decimal uses 10 possible digits, hexadecimal uses 16 possible digits.
+1054.930
+The first 10 are the same as the decimal system, 0,1,2,3,4,5,6,7,8, and 9.
+1062.480
+The other 6 are borrowed from the alphabet, A, B, C, D, E, and F. Although these are the
+1071.700
+same characters as in the alphabet, they represent numbers here.
+1076.110
+So, hexadecimal A is equivalent to 10 in decimal, B is 11, C is 12, D is 13, E is 14, and F is 15.
+1089.860
+Here’s a chart showing some decimal numbers, in black, and their hexadecimal equivalents, in red.
+1097.550
+We already saw the hexadecimal numbers up to F, which is equal to decimal 15.
+1104.150
+Notice how the numbers are written after F.
+1107.660
+This hexadecimal number looks like 10, but it isn’t 10.
+1112.410
+The second column in hexadecimal represents 16, so this is 1 sixteen, and 0 1s.
+1119.920
+So, it’s equivalent to decimal 16.
+1124.080
+This number looks like 11, but really it’s 1 16 and 1 1, so it’s equivalent to decimal 17.
+1134.260
+hexadecimal 1 2 is decimal 18, hexadecimal 1 3 is decimal 19, hexadecimal 1 4 is decimal
+1143.040
+20, hexadecimal 1 5 is decimal 21, hexadecimal 1 6 is decimal 22.
+1154.020
+hexadecimal 1 7 is decimal 23, etc.
+1159.180
+Hexadecimal then proceeds 1 8, 1 9, 1 A, 1 B, 1 C, etc.
+1166.950
+The purpose of all of this is just to give you an introduction to hexadecimal.
+1171.720
+When we cover internet protocol version 6 in a later lesson, we’ll go more in depth.
+1177.600
+For now, if you have a general understanding of what hexadecimal is, that’s good enough. Let’s move on.
+1185.260
+So here’s a simple network, just three PCs connected to a switch.
+1190.480
+Notice the interface names for the switch, F0/1, F0/2, and F0/3.
+1197.120
+F means fastethernet, so these are 100 megabit per second interfaces.
+1202.130
+I’ve also written the MAC address for each PC.
+1205.760
+You’re probably not going to see any MAC addresses like these, I’ve just simplified
+1210.500
+them for this demonstration.
+1213.350
+Notice each MAC address is a series of 12 hexadecimal digits, separated by periods.
+1220.310
+You may also see periods after every other digit, so for example PC1’s MAC address
+1225.410
+would be AA dot AA dot AA dot 00 dot 00 dot 01. But I tend to write them after every fourth character.
+1237.460
+The OUI, or organizationally unique identifier, which is the first half of the MAC address,
+1244.440
+is AAAAAA for each device, so we know that these PCs are all from the same maker.
+1252.020
+The second half of the MAC address of each device, however, is different for each PC,
+1256.910
+as the second half identifies the device itself.
+1259.830
+Now, let’s say PC1 wants to send some data to PC2.
+1266.270
+Due to lack of space I’ve just written an abbreviated form of the destination and source MAC addresses here.
+1273.030
+By the way, this kind of frame is called a ‘unicast frame’, a frame destined for
+1278.250
+a single target, PC2 in this case.
+1282.200
+There are other kinds of frames, like broadcast frames, which we’ll learn as we go along.
+1287.380
+But for now, remember this term, unicast.
+1291.610
+PC1 sends the frame through it’s network interface card, which is connected to SW1,
+1297.600
+and SW1 receives the frame.
+1300.950
+After SW1 receives the frame, it looks at the source MAC address field of the frame
+1305.940
+and then uses that information to LEARN where PC1 is.
+1309.660
+As you can see here, it adds the MAC address AAAA.AA00.0001 to it’s MAC Address table,
+1320.290
+and it associates that MAC address with its F0/1 interface.
+1325.270
+This is known as a ‘dynamically learned’ MAC address, or just ‘dynamic MAC address’,
+1331.160
+because it wasn’t manually configured on the switch, the switch learned it itself.
+1337.410
+Every switch will keep a MAC address table like this, and they fill the MAC address table
+1341.860
+dynamically by looking at the source MAC address of frames it receives.
+1347.410
+Since SW1 received a frame from source MAC Address AAAA.AA00.0001 on it’s F0/1 interface,
+1357.850
+it knows that I can reach that MAC address on that interface, and adds it to the MAC address table.
+1364.620
+This is a very important concept, so I’ll probably repeat it multiple times.
+1370.270
+This is how switches dynamically learn where each device on the network is, by looking
+1375.250
+at the source MAC address of the frame.
+1377.890
+Now, there is one problem.
+1380.880
+The destination of the frame is AAAA.AA00.0002, but SW1 doesn’t know where that is.
+1391.210
+This, by the way, is called an ‘unknown unicast’ frame, a frame for which the switch
+1397.760
+doesn’t have an entry in its MAC Address table.
+1402.250
+Because the switch doesn’t know how to reach the destination, it has only one option.
+1407.590
+That is to FLOOD the frame.
+1410.730
+Flood means to forward the frame out of ALL of its interfaces, except the one it received the packet on.
+1416.430
+So, that would look like this.
+1419.120
+SW1 copies the frame and sends it out its F0/2 and F0/3 interfaces.
+1426.590
+It doesn’t send it out of its F0/1 interface, because that’s the interface it received the frame on.
+1432.710
+So, what happens next?
+1435.150
+Well, PC3 ignores the packet, because the destination MAC address doesn’t match its
+1440.530
+own MAC address, it simply drops the packet.
+1443.770
+PC2, however, receives the packet, and then processes it normally, up the OSI stack.
+1451.490
+However, unless PC2 sends a reply of some sort, it stops there.
+1456.430
+SW1 never receives a packet from PC2, so it can’t learn PC2’s MAC address and use
+1462.530
+it to populate the MAC address table.
+1464.680
+So, let’s say PC1 sends another frame to PC2.
+1470.420
+Once again, it is received by SW1,
+1473.600
+and it already knows PC1’s MAC address, so it doesn’t have to add it to the MAC address table again.
+1478.900
+However, it still doesn’t know where PC2 is, so it once again floods the frame.
+1485.710
+PC3 drops the frame, and PC2 receives it and processes it normally.
+1492.050
+Now, let’s say PC2 then wants to send some data to PC1, maybe a reply to what PC1 sent to PC2.
+1501.920
+Notice the destination and source addresses of the frame are reversed.
+1506.780
+PC2 sends the frame out of its network interface, and SW1 receives it.
+1512.760
+SW1 looks at the source MAC address of the frame, and then adds it to its MAC address
+1518.540
+table, associating it with the F0/2 interface.
+1523.740
+This time, however, it doesn’t flood the frame.
+1526.960
+This is known as a KNOWN UNICAST frame, because the destination is already in its MAC address table.
+1535.180
+Whereas UNKNOWN unicast frames are flooded, known unicast frames are simply forwarded
+1541.290
+to the destination, like this.
+1544.760
+And PC1 then processes the frame up the OSI stack, through the de-encapsulation process
+1550.710
+which we learned about in day 3’s video.
+1554.620
+One more point about these dynamic MAC addresses.
+1558.130
+On Cisco switches, these MAC addresses are removed from the MAC address table after 5 minutes of inactivity.
+1565.240
+So, if PC1 didn’t send any traffic for over 5 minutes, SW1 would remove the MAC address
+1573.450
+to clean out the MAC address table.
+1576.240
+Of course, if PC1 sent traffic again, SW1 would dynamically learn its MAC address again.
+1582.390
+Let’s look at another example, this time with two switches.
+1588.230
+Notice the MAC address table of each switch.
+1590.640
+Currently they are empty, so once again we will see the process of MAC address learning and flooding.
+1597.320
+So, PC1 wants to send some information to PC3.
+1602.780
+The source MAC address of the packet is aaaa.aa00.0001, and the destination is aaaa.aa00.0003.
+1617.340
+So, PC1 sends the frame out of its network interface and it arrives at SW1.
+1623.500
+SW1 learns PC1’s MAC address from the source address field of the frame, and associates
+1629.880
+it with the interface on which it was received, F0/1.
+1633.830
+I’ll just say once more, I’m only writing a short version of the MAC address due to
+1638.700
+the lack of space here, really the frame and the MAC address table would include the whole
+1643.380
+MAC address, of course.
+1646.410
+Once again, a MAC address learned in this way is called a ‘dynamically learned MAC
+1650.500
+address, or more often, a ‘dynamic’ mac address.
+1654.300
+Now, SW1 has learned that PC1 can be reached via it’s F0/1 interface, but it still doesn’t
+1661.170
+know where PC3 is.
+1664.020
+Do you remember the name for this kind of frame?
+1666.280
+It’s called an ‘unknown unicast frame’.
+1670.230
+And what does a switch do with an unknown unicast frame?
+1674.420
+It floods it out all of its ports, except the one it was received on.
+1679.900
+In this case it will flood the frame out of F0/2 and F0/3, but not F0/1, because it received
+1686.990
+the frame on F0/1.
+1688.990
+PC2 drops the frame because the destination MAC Address doesn’t match its own MAC address.
+1695.400
+Now, what will SW2 do?
+1698.290
+Well, the exact same rules apply.
+1702.110
+Just like SW1 did, it uses the source MAC address field of the frame to dynamically
+1707.610
+learn PC1’s MAC address and the interface it can use to reach PC1.
+1713.720
+Note that, unlike on SW1, PC1 isn’t actually directly connected to the interface SW2 enters in its
+1720.660
+own MAC address table.
+1722.750
+However, this is the interface which SW2 will use to reach PC1.
+1728.060
+That’s the meaning of the interface in the MAC address table, it doesn’t mean the device
+1733.040
+is directly connected to this interface.
+1735.580
+Now, SW2 received a unicast frame, that is a frame destined for a single device, but
+1742.720
+it doesn’t know how to reach that device, because its not in its MAC address table.
+1748.230
+One last time, what is this kind of frame called?
+1751.440
+It’s an unknown unicast frame.
+1754.800
+And what does the switch do with it?
+1757.000
+It floods it out all interfaces, except the one it was received on.
+1761.670
+So, which interfaces will it send the frame out of?
+1765.550
+Well, it received the frame on F0/3, so it won’t be flooded out of that interface,
+1772.270
+but it will be sent out of all other interfaces, F0/1 and F0/2 in this case.
+1778.740
+PC4 drops the frame because the destination MAC address doesn’t match its own.
+1785.160
+PC3, however, receives the frame, as the destination MAC address matches its own MAC address.
+1791.960
+Let’s say that PC3 is going to send a reply back to PC1.
+1798.440
+Notice the destination and source MAC address fields of the frame are reversed.
+1803.210
+PC3 sends the frame out of its network interface, and it is received by SW2.
+1809.350
+SW2 learns PC3’s MAC address, and enters the MAC address and the corresponding interface
+1816.440
+in its MAC address table.
+1819.330
+Just so we’re clear, the switch uses the SOURCE MAC ADDRESS field to fill its MAC address
+1824.580
+table because, if it receives a frame from that source on the interface, it knows that
+1829.990
+it can reach that MAC address via that interface. So, lets continue.
+1835.330
+SW2 already has an entry for the destination MAC Address, aaaa.aa00.0001, in its MAC address
+1845.350
+table, so there is no need to flood the frame.
+1848.670
+Instead, it is forwarded normally out of the corresponding interface in the MAC address
+1853.290
+table, which is F0/3.
+1856.790
+The frame is received by SW1, which adds an entry for PC3’s MAC address in its MAC address
+1862.220
+table, with the interface F0/3, since that’s where it received the frame.
+1867.830
+Finally, since SW1 already has an entry for the destination MAC address in its own MAC address
+1873.110
+table, SW1 forwards the frame out of the corresponding interface, and it reaches its destination, PC1.
+1881.350
+Okay, so that was a lot of information.
+1884.140
+I was actually planning to cover the Ethernet LAN switching topics in a single video, but
+1889.270
+I’ve decided to split it up into two videos.
+1891.870
+So, let’s move on to the quiz for today’s video, here’s question 1.
+1897.909
+Which field of an Ethernet frame provides receiver clock synchronization? A, preamble. B, SFD. C, Type. Or D, FCS.
+1912.460
+Pause the video to think about your answer.
+1918.900
+the answer is A, preamble. Lets’ check.
+1923.470
+The SFD, or Start Frame Delimiter, signifies the end of the Preamble, it is not used to
+1929.740
+provide receiver clock synchronization.
+1932.410
+So B, SFD, is incorrect.
+1936.550
+The Type field indicates the type of packet encapsulated within the frame.
+1941.010
+So c, Type, is incorrect.
+1944.490
+The FCS, or Frame Check Sequence, is used to detect errors that occurred during transmission.
+1951.270
+So d, FCS, is incorrect.
+1955.260
+The preamble is a series of 1s and 0s (or 7 bytes of 10101010) which allows the receiving device
+1964.050
+to synchronize its receive clock.
+1966.460
+So A, Preamble, is the correct answer.
+1968.940
+Let’s go to question 2.
+1972.490
+How long is the physical address of a network device? A, 32 bytes. B, 32 bits. C, 48 bytes.
+1985.190
+Or D, 48 bits.
+1988.180
+Pause the video to think about your answer.
+1994.520
+the answer is D, 48 bits.
+1997.490
+Remember, a byte is equal to 8 bits, so 48 bytes is equal to 384 bits.
+2004.040
+The MAC address, which is an address assigned to the physical device, is 48 bits, not bytes, long.
+2014.090
+By the way, an IP address, which we will learn about soon, is 32 bits in length.
+2019.430
+Let’s go to question 3.
+2023.220
+What is the OUI of this MAC address? E8BA.7011.2874. A, E8Ba. B, E8BA.70. C, 7011. Or D, E8BA.7011.
+2050.300
+Pause the video to think about your answer.
+2056.000
+the answer is B, E8BA.70.
+2061.250
+The OUI (Organizationally Unique Identifier) is the first half (or 24 bits) of a MAC address.
+2069.940
+It is a unique value assigned to the maker of the device.
+2074.120
+The first half of this MAC address is E8BA.70, so B is the correct answer.
+2080.750
+Let’s go to question 4.
+2085.380
+Which field of an Ethernet frame does a switch use to populate its MAC address table? A, preamble. B, length.
+2095.540
+C, Source MAC Address.
+2098.690
+Or D, destination MAC address.
+2102.260
+Pause the video to think about your answer.
+2108.800
+the answer is C, Source MAC address. Lets’ check.
+2114.530
+The preamble is a series of 1s and 0s (7 bytes of 10101010) which allows the receiving device
+2122.690
+to synchronize its receive clock.
+2125.230
+It is not used to populate the MAC address table.
+2128.040
+So A, preamble, is incorrect.
+2131.610
+The Length field indicates the length of the encapsulated packet.
+2135.660
+It is not used to populate the MAC address table.
+2138.460
+So b, length, is incorrect.
+2142.790
+Although this field does specify a MAC address, it does not help the switch populate its MAC address table.
+2149.230
+So d, destination MAC address, is incorrect.
+2154.400
+A switch uses the Source MAC Address field to populate its MAC address table.
+2159.280
+It associates the source MAC address with the interface on which the frame was received.
+2164.990
+This allows the switch to learn how to reach other devices on the network.
+2168.990
+So C, source MAC Address, is the correct answer.
+2172.170
+Let’s go to question 5.
+2176.120
+What kind of frame does a switch flood out of all interfaces except the one it was received on? A, unknown unicast. B, known unicast. Or C, allcast.
+2191.050
+Pause the video to think about your answer.
+2196.610
+the answer is A, unknown unicast. Let’s check.
+2201.250
+A known unicast frame is a frame for which the destination MAC address is already in
+2206.970
+the switch’s MAC address table.
+2209.880
+Since it already knows how to reach the destination, there is no need to flood the frame.
+2215.080
+So b, known unicast, is incorrect.
+2219.240
+Allcast is not a type of Ethernet frame.
+2221.710
+So c, allcast, is incorrect.
+2225.480
+An unknown unicast frame is a frame destined for a single host, however the switch doesn’t
+2231.110
+know how to reach the destination so it floods the frame out of all interfaces except the
+2236.610
+one it was received on.
+2238.850
+So A, unknown unicast, is the correct answer.
+2244.380
+As usual, there are additional supplementary materials to help you understand and remember what you studied.
+2251.670
+There is a pre-made deck of Anki flashcards to help you review, check the link in the description.
+2258.160
+There will be a packet tracer lab, but I’ll leave that for after Part 2 of Ethernet LAN
+2263.010
+switching, so there won’t be a practice lab for this video specifically.
+2268.370
+Good luck with your studies!
+2270.070
+Thank you for watching.
+2272.740
+Please subscribe to the channel, like the video, leave a comment, and share the video
+2277.320
+with anyone else studying for the CCNA.
+2280.660
+If you want to leave a tip, check the links in the description.
+2283.420
+I'm also a Brave verified publisher and accept BAT, or Basic Attention Token, tips via the Brave browser.
+2290.760
+That's all for now.

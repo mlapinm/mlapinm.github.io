@@ -65,7 +65,7 @@ $(() => {
     textList.push('aaaaaaaaaaa')
     let textList2 = []
     let max = textList.length
-    log1.text(max)
+    // log1.text(max)
 
     let k = 0
     let line = []
@@ -93,7 +93,7 @@ $(() => {
           let sec = match[3] + '.' + match[4]
           let s = parseFloat(sec)
           sum = m * 60 + s
-          textList2.push(sum)
+          textList2.push(sum.toFixed(3))
   
           }
 
@@ -125,6 +125,9 @@ $(() => {
   })
 
   one.click(() => {
+  })
+
+  editIn.change(()=>{
     onOne()
   })
 
