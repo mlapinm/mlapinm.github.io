@@ -1,0 +1,2419 @@
+1
+00:00:02,580 --> 00:00:04,850
+Welcome to Jeremy’s IT Lab.
+
+2
+00:00:04,850 --> 00:00:08,160
+This is a free, complete course for the CCNA.
+
+3
+00:00:08,160 --> 00:00:12,090
+If you like these videos, please subscribe
+to follow along with the series.
+
+4
+00:00:12,090 --> 00:00:17,300
+Also, please like and leave a comment, and
+share the video to help spread this free series
+
+5
+00:00:17,300 --> 00:00:18,360
+of videos.
+
+6
+00:00:18,360 --> 00:00:20,400
+Thanks for your help.
+
+7
+00:00:20,400 --> 00:00:26,920
+In this video we will move on to another important
+topic for the CCNA, and a topic that is very important
+
+8
+00:00:26,920 --> 00:00:29,380
+for network engineers understand.
+
+9
+00:00:29,380 --> 00:00:32,780
+That is STP, Spanning Tree Protocol.
+
+10
+00:00:32,780 --> 00:00:40,260
+The CCNA Exam Topics list mentions Rapid spanning
+tree, an updated and superior version of STP.
+
+11
+00:00:40,260 --> 00:00:46,940
+However, to understand rapid STP, I think
+its important to understand classic STP first.
+
+12
+00:00:47,120 --> 00:00:53,860
+So, first we will talk about STP, which will
+probably be over two separate days since there is a lot to cover,
+
+13
+00:00:53,870 --> 00:00:57,800
+and then in a future video I will teach you about rapid
+STP.
+
+14
+00:00:57,800 --> 00:01:01,150
+Let’s take a look at what we’ll cover
+in this video.
+
+15
+00:01:01,150 --> 00:01:06,900
+First, I’ll talk about redundancy in networks,
+and why it's so important.
+
+16
+00:01:06,900 --> 00:01:10,830
+Then I will introduce STP, Spanning Tree Protocol.
+
+17
+00:01:10,830 --> 00:01:15,670
+I will introduce its purpose, the problem
+it solves, etc.
+
+18
+00:01:15,670 --> 00:01:18,950
+Also, remember to watch until the end of today’s
+quiz.
+
+19
+00:01:18,950 --> 00:01:24,000
+I will once again feature a bonus question
+from Boson ExSim for CCNA, Boson’s set of
+
+20
+00:01:24,000 --> 00:01:27,960
+practice exams for the CCNA.
+
+21
+00:01:27,960 --> 00:01:32,200
+If you’re looking for a set of practice
+exams to get ready for the real thing, Boson
+
+22
+00:01:32,200 --> 00:01:34,240
+is without a doubt the best there is.
+
+23
+00:01:34,240 --> 00:01:40,870
+I used ExSim for my CCNA and CCNP, so I feel
+very confident about recommending them to
+
+24
+00:01:40,870 --> 00:01:42,120
+you.
+
+25
+00:01:42,120 --> 00:01:48,310
+If you want to grab a copy of Boson ExSim,
+please follow the link in the video description.
+
+26
+00:01:48,310 --> 00:01:49,760
+Okay let’s get started.
+
+27
+00:01:49,760 --> 00:01:54,310
+First, just a few points about redundancy
+in networks.
+
+28
+00:01:54,310 --> 00:01:57,280
+Redundancy is an essential part of network
+design.
+
+29
+00:01:57,280 --> 00:02:01,300
+A network that is not redundant is simply
+not acceptable.
+
+30
+00:02:01,300 --> 00:02:08,690
+Modern networks are expected to run 24 hours
+a day, 7 days a week, 365 days a year.
+
+31
+00:02:08,690 --> 00:02:12,870
+Even a short downtime can be disastrous for
+a business.
+
+32
+00:02:12,870 --> 00:02:18,540
+Imagine if Amazon’s network went down for
+an hour, that would certainly be bad for business.
+
+33
+00:02:18,540 --> 00:02:23,030
+If one network component fails, you must ensure
+that other components take over with little
+
+34
+00:02:23,030 --> 00:02:24,670
+or no downtime.
+
+35
+00:02:24,670 --> 00:02:30,020
+Finally, as much as possible, you must implement
+redundancy at every possible point in the
+
+36
+00:02:30,020 --> 00:02:32,140
+network.
+
+37
+00:02:32,140 --> 00:02:36,980
+As network engineers, we are responsible for
+business-critical infrastructure, so we have
+
+38
+00:02:36,980 --> 00:02:42,860
+to make sure that that infrastructure is resilient
+to failures as much as possible.
+
+39
+00:02:42,860 --> 00:02:46,080
+First off, here is a poorly designed network.
+
+40
+00:02:46,080 --> 00:02:49,860
+There are many points of failure here which
+could cut off connectivity.
+
+41
+00:02:49,860 --> 00:02:54,940
+For example if this connection is cut
+due to a hardware failure, this entire network
+
+42
+00:02:54,940 --> 00:02:57,580
+loses connectivity to the Internet.
+
+43
+00:02:57,580 --> 00:03:03,160
+Or, if this connection is cut off due to a
+hardware failure, these hosts lose connectivity
+
+44
+00:03:03,160 --> 00:03:06,030
+within the LAN, and out to the Internet.
+
+45
+00:03:06,030 --> 00:03:11,680
+Okay, those are just two examples, let’s
+look at a better network design.
+
+46
+00:03:11,680 --> 00:03:14,599
+This network here is a much better design.
+
+47
+00:03:14,599 --> 00:03:20,040
+If this PC wants to reach the Internet, it
+might use this path in a normal situation.
+
+48
+00:03:20,040 --> 00:03:26,620
+However, even if this router has a hardware
+failure and goes down completely, the PC can
+
+49
+00:03:26,620 --> 00:03:31,430
+reach the Internet via this or another alternate
+path.
+
+50
+00:03:31,430 --> 00:03:37,319
+Perhaps traffic to this other PC in the LAN
+usually follows this path to the destination.
+
+51
+00:03:37,319 --> 00:03:39,130
+What if this switch fails?
+
+52
+00:03:39,130 --> 00:03:43,520
+That’s not a problem, because this alternate
+path is available.
+
+53
+00:03:43,520 --> 00:03:48,599
+So, I think you can see the benefit of designing
+redundant networks.
+
+54
+00:03:48,599 --> 00:03:52,830
+However, you may be asking, what if this switch
+fails?
+
+55
+00:03:52,830 --> 00:03:58,489
+Well, if that is the case, all hosts connected
+to this switch would lose connectivity.
+
+56
+00:03:58,489 --> 00:04:04,660
+Unfortunately, Most PCs only have a single
+network interface card (NIC), so they can
+
+57
+00:04:04,660 --> 00:04:07,260
+only be plugged into a single switch.
+
+58
+00:04:07,260 --> 00:04:12,239
+However, important servers typically have
+multiple NICs, so they can be plugged into
+
+59
+00:04:12,239 --> 00:04:16,590
+multiple switches for redundancy.
+
+60
+00:04:16,590 --> 00:04:20,370
+We will cover many protocols that are used
+to enable network redundancy throughout this
+
+61
+00:04:20,370 --> 00:04:23,759
+course, and spanning tree is one of them.
+
+62
+00:04:23,759 --> 00:04:29,259
+Spanning tree is a Layer 2 protocol by the
+way, it enables redundant layer 2 networks,
+
+63
+00:04:29,259 --> 00:04:33,270
+so within the LAN here, not routing out to
+the Internet and between networks at Layer
+
+64
+00:04:33,270 --> 00:04:34,270
+3.
+
+65
+00:04:34,270 --> 00:04:40,039
+I just showed you the benefits of a redundant
+LAN, having multiple paths between these switches
+
+66
+00:04:40,039 --> 00:04:43,249
+provides alternate paths if one connection
+fails.
+
+67
+00:04:43,249 --> 00:04:47,889
+However, without spanning tree, there is a
+MAJOR problem here which can destroy your
+
+68
+00:04:47,889 --> 00:04:48,889
+network.
+
+69
+00:04:48,889 --> 00:04:52,740
+So, where is the problem?
+
+70
+00:04:52,740 --> 00:04:55,779
+Let me introduce the concept of ‘broadcast
+storms’.
+
+71
+00:04:55,779 --> 00:04:59,940
+I’ll use a simplified network topology to
+demonstrate the issue.
+
+72
+00:04:59,940 --> 00:05:08,710
+PC1 is 10.0.0.1, PC2 is 10.0.0.2, and PC3
+is 10.0.0.3.
+
+73
+00:05:08,710 --> 00:05:13,189
+You already know what a switch does with a
+broadcast frame or an unknown unicast frame.
+
+74
+00:05:13,189 --> 00:05:18,430
+Let’s say, for example, PC1 wants to send some traffic
+to PC2.
+
+75
+00:05:18,430 --> 00:05:21,370
+To do that, it needs to know PC2’s MAC address.
+
+76
+00:05:21,370 --> 00:05:28,090
+So, let’s say PC1 sends an ARP request frame,
+which is a broadcast frame, it uses the broadcast
+
+77
+00:05:28,090 --> 00:05:32,820
+MAC address of all F's as its Layer2
+address.
+
+78
+00:05:32,820 --> 00:05:37,150
+When SW1 receives the frame, what will it
+do?  As I said,
+
+79
+00:05:37,150 --> 00:05:41,360
+you already know what a switch does with broadcast
+and unknown unicast frames.
+
+80
+00:05:41,360 --> 00:05:45,599
+It will flood it out of all interfaces, except
+the one it was received on.
+
+81
+00:05:45,599 --> 00:05:50,330
+So, SW2 and SW3 both receive a copy of the
+frame.
+
+82
+00:05:50,330 --> 00:05:54,839
+They then do the same thing, they flood it
+out all interfaces except the one it
+
+83
+00:05:54,839 --> 00:05:56,339
+was received on.
+
+84
+00:05:56,339 --> 00:06:01,939
+So, PC2 receives the ARP request and will
+reply with a unicast ARP reply.
+
+85
+00:06:01,939 --> 00:06:03,979
+All good?
+
+86
+00:06:03,979 --> 00:06:06,490
+Actually no, NOT all good.
+
+87
+00:06:06,490 --> 00:06:11,569
+Although PC2 received the ARP request and
+sent its reply, these broadcast frames still
+
+88
+00:06:11,569 --> 00:06:13,309
+remain on the network.
+
+89
+00:06:13,309 --> 00:06:17,159
+I’ve cleaned up the arrows so you can see
+this easier.
+
+90
+00:06:17,159 --> 00:06:22,999
+As I just said, PC2 received the ARP request
+and sent the reply, but what about these broadcast
+
+91
+00:06:22,999 --> 00:06:24,580
+frames in the network?
+
+92
+00:06:24,580 --> 00:06:29,580
+The switches will continue flooding them . So,
+what will happen after this?
+
+93
+00:06:29,580 --> 00:06:34,430
+SW1 just received two broadcast frames, on
+two different interfaces.
+
+94
+00:06:34,430 --> 00:06:37,250
+It will once again flood them.
+
+95
+00:06:37,250 --> 00:06:38,839
+Let me clean that up again.
+
+96
+00:06:38,839 --> 00:06:44,599
+SW2 and SW3 both just received broadcast frames,
+what will they do?
+
+97
+00:06:44,599 --> 00:06:45,770
+They will flood them.
+
+98
+00:06:45,770 --> 00:06:47,809
+So, I think you get the point.
+
+99
+00:06:47,809 --> 00:06:50,050
+This will continue FOREVER.
+
+100
+00:06:50,050 --> 00:06:55,099
+Do you remember the TTL, or time to live,
+field of the IP header?
+
+101
+00:06:55,099 --> 00:06:58,740
+It is used to prevent infinite loops at Layer
+3.
+
+102
+00:06:58,740 --> 00:07:02,389
+But the Ethernet header doesn’t have a TTL
+field.
+
+103
+00:07:02,389 --> 00:07:06,429
+These broadcast frames will loop around the
+network indefinitely.
+
+104
+00:07:06,429 --> 00:07:11,360
+If enough of these looped broadcasts accumulate
+in the network, the network will be too congested
+
+105
+00:07:11,360 --> 00:07:14,559
+for legitimate traffic to use the network.
+
+106
+00:07:14,559 --> 00:07:17,279
+This is called a broadcast storm.
+
+107
+00:07:17,279 --> 00:07:22,939
+Eventually your network will look like this,
+so full of looping broadcast frames that no
+
+108
+00:07:22,939 --> 00:07:26,159
+regular traffic can pass through your network.
+
+109
+00:07:26,159 --> 00:07:31,009
+The red arrows represent the clock-wise loop
+between the three switches, and the purple
+
+110
+00:07:31,009 --> 00:07:34,050
+arrows the counter-clockwise loop.
+
+111
+00:07:34,050 --> 00:07:38,449
+However, network congestion isn’t the only
+problem.
+
+112
+00:07:38,449 --> 00:07:43,139
+Each time a frame arrives on a switchport,
+the switch uses the source MAC address field
+
+113
+00:07:43,139 --> 00:07:47,389
+to ‘learn’ the MAC address and update
+its MAC address table.
+
+114
+00:07:47,389 --> 00:07:52,240
+When the frames with the same source MAC address
+repeatedly arrive on different interfaces,
+
+115
+00:07:52,240 --> 00:07:56,449
+the switch is continuously updating the interface
+in its MAC address table.
+
+116
+00:07:56,449 --> 00:07:59,219
+This is known as MAC Address Flapping.
+
+117
+00:07:59,219 --> 00:08:05,699
+So, how can we design a network with redundant
+paths that doesn’t result in Layer 2 loops?
+
+118
+00:08:05,699 --> 00:08:10,610
+Well, Spanning Tree Protocol is one answer
+to this problem.
+
+119
+00:08:10,610 --> 00:08:16,999
+So let’s take a look at Spanning Tree protocol
+What we now call ‘classic spanning tree protocol’
+
+120
+00:08:16,999 --> 00:08:22,620
+is an industry standard protocol, IEEE 802.1D.
+
+121
+00:08:22,620 --> 00:08:27,449
+This is the type of STP we will focus on in
+today’s video, we will focus on the newer
+
+122
+00:08:27,449 --> 00:08:30,490
+Rapid STP later.
+
+123
+00:08:30,490 --> 00:08:35,470
+Because it is so important to prevent Layer
+2 loops, switches from ALL vendors run STP
+
+124
+00:08:35,470 --> 00:08:36,470
+by default.
+
+125
+00:08:36,470 --> 00:08:40,610
+So, you won’t only find STP on Cisco switches.
+
+126
+00:08:40,610 --> 00:08:47,520
+STP prevents Layer 2 loops by placing redundant
+ports in a blocking state, essentially disabling
+
+127
+00:08:47,520 --> 00:08:49,600
+the interface.
+
+128
+00:08:49,600 --> 00:08:55,280
+These interfaces act as backups that can enter
+a forwarding state if an active interface,
+
+129
+00:08:55,280 --> 00:08:59,620
+meaning an interface that is currently forwarding,
+fails.
+
+130
+00:08:59,620 --> 00:09:02,140
+Interfaces in a forwarding state behave normally.
+
+131
+00:09:02,140 --> 00:09:04,530
+They send and receive all normal traffic.
+
+132
+00:09:04,530 --> 00:09:12,320
+However, Interfaces in a blocking state only
+send or receive STP messages (called BPDUs,
+
+133
+00:09:12,320 --> 00:09:17,180
+or Bridge Protocol Data Units), and some other
+specific traffic.
+
+134
+00:09:17,180 --> 00:09:21,020
+Before going more in depth , let me talk about
+that word ‘bridge’.
+
+135
+00:09:21,020 --> 00:09:26,370
+I told you about Ethernet hubs in a previous
+video.
+
+136
+00:09:26,370 --> 00:09:31,130
+Hubs were used before switches were invented,
+and instead of learning MAC addresses to forward
+
+137
+00:09:31,130 --> 00:09:35,850
+frames to the correct destination, they simply
+flooded frames out of all interfaces.
+
+138
+00:09:35,850 --> 00:09:42,330
+But actually, before switches, there was another
+kind of device called a bridge.
+
+139
+00:09:42,330 --> 00:09:47,260
+You don’t need to know about bridges for
+the CCNA, they are an old technology, but
+
+140
+00:09:47,260 --> 00:09:50,950
+they’re like a transitional stage between
+the hub and the switch.
+
+141
+00:09:50,950 --> 00:09:55,820
+However, the reason I’m telling you about
+bridges is that Spanning Tree Protocol still
+
+142
+00:09:55,820 --> 00:09:57,750
+uses the term ‘bridge’.
+
+143
+00:09:57,750 --> 00:10:02,590
+However, when we use the term ‘bridge’,
+we really mean ‘switch’.
+
+144
+00:10:02,590 --> 00:10:05,000
+Bridges are not used in modern networks.
+
+145
+00:10:05,000 --> 00:10:10,640
+So, in this lecture, and really any time I
+talk about STP, you’ll hear me use the term
+
+146
+00:10:10,640 --> 00:10:13,870
+‘bridge’, but really it means switch.
+
+147
+00:10:13,870 --> 00:10:21,220
+So, if we look at this topology again, perhaps
+these interfaces are in a forwarding state,
+
+148
+00:10:21,220 --> 00:10:26,030
+while this one interface on SW3 is in a blocking
+state, effectively disabling the connection
+
+149
+00:10:26,030 --> 00:10:29,150
+between SW2 and SW3.
+
+150
+00:10:29,150 --> 00:10:34,810
+So effectively its like that link doesn’t
+exist, and this is our topology.
+
+151
+00:10:34,810 --> 00:10:40,720
+If PC1 sends that same ARP request broadcast
+frame, it will be flooded like this, no more
+
+152
+00:10:40,720 --> 00:10:41,820
+loops.
+
+153
+00:10:41,820 --> 00:10:47,400
+However, if at some point another interface
+fails, perhaps this one...
+
+154
+00:10:47,400 --> 00:10:51,820
+The switches will automatically adjust the
+topology, and the broadcast frame would be
+
+155
+00:10:51,820 --> 00:10:54,390
+flooded like this, again no loops.
+
+156
+00:10:54,390 --> 00:10:58,800
+So, that is just a basic outline of the purpose
+of Spanning Tree Protocol.
+
+157
+00:10:58,800 --> 00:11:04,030
+Now let’s go a little deeper into how spanning tree protocol works.
+
+158
+00:11:04,030 --> 00:11:09,740
+By selecting which ports are forwarding and
+which ports are blocking, STP creates a single
+
+159
+00:11:09,740 --> 00:11:13,480
+path to and from each point in the network.
+
+160
+00:11:13,480 --> 00:11:16,070
+This prevents Layer 2 loops.
+
+161
+00:11:16,070 --> 00:11:20,750
+There is a set process that STP uses to determine
+which ports should be forwarding and which
+
+162
+00:11:20,750 --> 00:11:22,580
+should be blocking.
+
+163
+00:11:22,580 --> 00:11:25,670
+That process is what we will cover next.
+
+164
+00:11:25,670 --> 00:11:33,040
+STP-enabled switches send Hello BPDUs out
+of all interfaces, the default timer is 2
+
+165
+00:11:33,040 --> 00:11:39,810
+seconds, so the switch will send a Hello BPDU
+out of every interface, once every 2 seconds.
+
+166
+00:11:39,810 --> 00:11:45,300
+If a switch receives a Hello BPDU on an interface,
+it knows that interface is connected to another
+
+167
+00:11:45,300 --> 00:11:52,940
+switch, because routers, PCs, etc. do not use STP,
+so they do not send Hello BPDUs.
+
+168
+00:11:52,940 --> 00:11:59,680
+So, back to our topology here, these switches
+will send BPDUs out of each interface, like
+
+169
+00:11:59,680 --> 00:12:06,070
+this . They use these BPDUs to advertise themselves
+to other switches, and to learn about other
+
+170
+00:12:06,070 --> 00:12:07,370
+switches.
+
+171
+00:12:07,370 --> 00:12:11,930
+Now, what exactly are these BPDUs used for?
+
+172
+00:12:11,930 --> 00:12:18,570
+First of all, switches use one field in the
+STP BPDU, the Bridge ID field, to elect a
+
+173
+00:12:18,570 --> 00:12:21,400
+root bridge for the network.
+
+174
+00:12:21,400 --> 00:12:25,040
+The switch with the lowest Bridge ID becomes
+the root bridge.
+
+175
+00:12:25,040 --> 00:12:29,560
+I’ll talk about the bridge ID in the next
+slide.
+
+176
+00:12:29,560 --> 00:12:34,090
+ALL ports on the root bridge are put in a
+forwarding state, and other switches in the
+
+177
+00:12:34,090 --> 00:12:37,510
+topology must have a path to reach the root
+bridge.
+
+178
+00:12:37,510 --> 00:12:43,550
+So, as I mentioned previously STP puts ports in either a blocking or forwarding
+
+179
+00:12:43,550 --> 00:12:47,980
+state, to avoid Layer 2 loops in the network.
+
+180
+00:12:47,980 --> 00:12:53,130
+However, as I just said, on the root bridge, all ports are
+forwarding, and all other switches must have
+
+181
+00:12:53,130 --> 00:12:55,890
+a path to reach the root bridge.
+
+182
+00:12:55,890 --> 00:13:02,620
+Traditionally, the bridge ID field of the
+spanning tree BPDU looked like this.
+
+183
+00:13:02,620 --> 00:13:07,550
+There is a bridge priority field, which is
+16 bits in length, and then there is the MAC
+
+184
+00:13:07,550 --> 00:13:12,690
+address of the switch, which as you already
+know is 48 bits in length.
+
+185
+00:13:12,690 --> 00:13:18,950
+The default bridge priority is 32768 on all
+switches, so by default the MAC address is
+
+186
+00:13:18,950 --> 00:13:21,730
+used as the tie-breaker.
+
+187
+00:13:21,730 --> 00:13:27,000
+As I said before, the switch with the lowest
+bridge ID becomes the root bridge, so therefore
+
+188
+00:13:27,000 --> 00:13:33,210
+by default the switch with the lowest MAC
+address becomes the root bridge.
+
+189
+00:13:33,210 --> 00:13:37,750
+So here’s that topology once again, and I’ve
+written the priority and MAC address for each
+
+190
+00:13:37,750 --> 00:13:40,450
+switch.
+
+191
+00:13:40,450 --> 00:13:45,920
+As you know MAC addresses are 12 hexadecimal
+digits, but I’ve shortened them to three.
+
+192
+00:13:45,920 --> 00:13:51,430
+I’ve also added port lights for the interfaces,
+to show if they are forwarding or blocking.
+
+193
+00:13:51,430 --> 00:13:57,900
+The G0/2 interface on each switch is connected
+to a PC, so because it isn’t receiving any
+
+194
+00:13:57,900 --> 00:14:03,960
+BPDUs, it knows it is safe to go into forwarding
+mode, there is no risk of creating a Layer 2 loop,
+
+195
+00:14:03,960 --> 00:14:06,520
+so these port lights are all green.
+
+196
+00:14:06,720 --> 00:14:13,420
+Now, all three switches have the default priority
+of 32768, so in order to know which one will
+
+197
+00:14:13,420 --> 00:14:16,970
+be the root bridge we will have to compare
+the MAC addresses.
+
+198
+00:14:16,970 --> 00:14:20,730
+Remember, the LOWEST bridge ID wins.
+
+199
+00:14:20,730 --> 00:14:23,540
+Which of these MAC addresses is the lowest?
+
+200
+00:14:23,540 --> 00:14:32,480
+Well, hexadecimal A is equal to 10, B is equal
+to 11, and C is equal to 12, so SW1 has the
+
+201
+00:14:32,480 --> 00:14:34,050
+lowest MAC address.
+
+202
+00:14:34,050 --> 00:14:38,529
+Therefore, SW1 will become the root bridge
+of this network.
+
+203
+00:14:38,529 --> 00:14:43,310
+All ports on the root bridge become designated
+ports, in a forwarding state.
+
+204
+00:14:43,310 --> 00:14:46,860
+So, that is the traditional bridge ID.
+
+205
+00:14:46,860 --> 00:14:51,670
+However, the bridge ID was actually updated
+to look like this.
+
+206
+00:14:51,670 --> 00:14:57,240
+In reality, the bridge priority has been updated
+to be made of two parts, the bridge priority
+
+207
+00:14:57,240 --> 00:15:02,740
+which is 4 bits, and the ‘extended system
+ID’, which is just the VLAN ID, which is
+
+208
+00:15:02,740 --> 00:15:08,060
+12 bits, because as you know a VLAN number
+is 12 bits in length.
+
+209
+00:15:08,060 --> 00:15:10,900
+Why include a VLAN ID in the bridge priority?
+
+210
+00:15:10,900 --> 00:15:18,300
+Well, Cisco switches use a version of STP
+called PVST, which stands for Per-VLAN Spanning
+
+211
+00:15:18,300 --> 00:15:19,470
+Tree.
+
+212
+00:15:19,470 --> 00:15:26,270
+PVST runs a separate STP ‘instance’ in
+each VLAN, so in each VLAN different interfaces
+
+213
+00:15:26,270 --> 00:15:27,950
+can be forwarding or blocking.
+
+214
+00:15:27,950 --> 00:15:35,060
+One interface could be forwarding in VLAN1,
+but blocking in VLAN2, for example.
+
+215
+00:15:35,060 --> 00:15:40,279
+By adding the VLAN ID into the bridge priority,
+the switch will have a different bridge ID
+
+216
+00:15:40,279 --> 00:15:41,910
+in each VLAN.
+
+217
+00:15:41,910 --> 00:15:45,990
+Here’s a deeper look at the bridge priority
+field.
+
+218
+00:15:45,990 --> 00:15:50,110
+You may have wondered why 32768 is the default
+bridge priority.
+
+219
+00:15:50,110 --> 00:15:56,180
+Well, it’s because this total field is 16 bits
+in length, and the most significant bit is
+
+220
+00:15:56,180 --> 00:15:57,860
+set to 1 by default.
+
+221
+00:15:57,860 --> 00:16:01,950
+Therefore, the default bridge priority WAS
+32768.
+
+222
+00:16:01,950 --> 00:16:08,011
+However, with the addition of the extended-system
+ID, adding the VLAN ID number to the bridge
+
+223
+00:16:08,011 --> 00:16:10,100
+priority, that changed.
+
+224
+00:16:10,100 --> 00:16:18,520
+So, the default VLAN ID is 1, therefore the
+bridge priority in total actually ISN’T 32768, it’s
+
+225
+00:16:18,700 --> 00:16:20,880
+32769.
+
+226
+00:16:20,880 --> 00:16:26,320
+In the default VLAN of 1, the default bridge
+priority is actually 32769, which is
+
+227
+00:16:26,340 --> 00:16:28,660
+32768 + 1.
+
+228
+00:16:28,840 --> 00:16:34,520
+Now, here’s a question, If you want to increase
+the switch’s bridge priority without changing
+
+229
+00:16:34,520 --> 00:16:40,220
+VLAN numbers, what is the minimum unit of
+increase/decrease?
+
+230
+00:16:40,220 --> 00:16:43,810
+Let me explain what I mean in the next slide.
+
+231
+00:16:43,810 --> 00:16:49,800
+The bridge priority + extended system ID is
+a single field of the bridge ID, however the
+
+232
+00:16:49,800 --> 00:16:55,710
+extended system ID is set and cannot be changed because it is determined by the VLAN ID.
+
+233
+00:16:55,710 --> 00:17:01,100
+Therefore, you can only change the total bridge
+priority (that is, the bridge priority + extended
+
+234
+00:17:01,100 --> 00:17:09,819
+system ID) in units of 4096, the value of
+the least significant bit of the bridge priority portion.
+
+235
+00:17:09,819 --> 00:17:10,909
+Let me demonstrate.
+
+236
+00:17:10,909 --> 00:17:14,619
+Currently, the bridge priority here is 32769.
+
+237
+00:17:14,619 --> 00:17:19,959
+Let’s reduce it to make this switch the
+root bridge.
+
+238
+00:17:19,959 --> 00:17:31,610
+If I want to reduce it just a little, I can
+reduce it to 28673, which is 16384 plus 8192
+
+239
+00:17:31,610 --> 00:17:34,220
+plus 4096 plus 1.
+
+240
+00:17:34,220 --> 00:17:40,590
+I could reduce it more, of course, but the
+point is this: the STP bridge priority can
+
+241
+00:17:40,590 --> 00:17:44,999
+only be changed in units of 4096.
+
+242
+00:17:44,999 --> 00:17:50,440
+So, the valid values you can configure are listed
+here, starting from 0 and increasing in units
+
+243
+00:17:50,440 --> 00:17:53,210
+of 4096.
+
+244
+00:17:53,210 --> 00:18:00,529
+The extended system ID will then be added
+to this number to make the total bridge priority value.
+
+245
+00:18:00,529 --> 00:18:02,509
+So let’s look at this topology again.
+
+246
+00:18:02,509 --> 00:18:08,790
+We’ll just be looking at the STP topology
+for a single VLAN, VLAN1, so the priority
+
+247
+00:18:08,790 --> 00:18:12,840
+for each switch is 32769.
+
+248
+00:18:12,840 --> 00:18:19,870
+But if there are multiple VLANs, say VLAN1,
+VLAN2, and VLAN3 in this network, the priority
+
+249
+00:18:19,870 --> 00:18:28,399
+would be 32770 for VLAN2, and 32771 for VLAN3, etc.
+
+250
+00:18:28,399 --> 00:18:33,720
+We could also change the bridge priority on
+the switches for a specific VLAN, so for example
+
+251
+00:18:33,720 --> 00:18:41,049
+SW1 is the root bridge in VLAN1, SW2 could be the
+root bridge in VLAN2, and SW3 could be the root
+
+252
+00:18:41,049 --> 00:18:44,200
+bridge in VLAN3.
+
+253
+00:18:44,300 --> 00:18:50,080
+I’ll talk about how you can do that in the next video,
+I just want to let you know some of the possibilities.
+
+254
+00:18:50,090 --> 00:18:55,330
+So, here in VLAN1, SW1 is the root bridge.
+
+255
+00:18:55,330 --> 00:18:59,850
+All interfaces on the root bridge are designated
+ports, and designated ports are in
+
+256
+00:18:59,850 --> 00:19:02,710
+a forwarding state.
+
+257
+00:19:02,710 --> 00:19:06,080
+Designated port is one of the port roles in
+spanning tree.
+
+258
+00:19:06,080 --> 00:19:07,700
+There are a couple other port roles.
+
+259
+00:19:07,700 --> 00:19:11,140
+I will introduce those in a minute.
+
+260
+00:19:11,140 --> 00:19:13,710
+Okay just a few more points about the root
+bridge.
+
+261
+00:19:13,710 --> 00:19:17,990
+When a switch is powered on, it assumes it
+is the root bridge.
+
+262
+00:19:17,990 --> 00:19:23,999
+It will only give up its position if it receives
+a ‘superior’ BPDU, and superior means
+
+263
+00:19:23,999 --> 00:19:28,440
+a BPDU from a switch with a lower bridge ID.
+
+264
+00:19:28,440 --> 00:19:33,980
+Once the topology has converged and all switches
+agree on the root bridge, only the root bridge
+
+265
+00:19:33,980 --> 00:19:36,049
+sends BPDUs.
+
+266
+00:19:36,049 --> 00:19:40,519
+The reason all switches send BPDUs at first
+is because they all think they are the root
+
+267
+00:19:40,519 --> 00:19:42,369
+bridge.
+
+268
+00:19:42,369 --> 00:19:47,990
+Other switches in the network will forward BPDUs from the root bridge, but they will not generate their own
+
+269
+00:19:47,990 --> 00:19:51,679
+original BPDUs.
+
+270
+00:19:51,679 --> 00:19:56,990
+Before moving on, let’s see if you understand
+by doing a few practice questions.
+
+271
+00:19:56,990 --> 00:20:02,120
+In this network of 4 switches, which will
+become the root bridge?
+
+272
+00:20:02,120 --> 00:20:08,740
+Pause the video now to think about the answer.
+
+273
+00:20:08,820 --> 00:20:11,460
+Okay, did you find the root bridge?
+
+274
+00:20:11,470 --> 00:20:14,590
+The answer is SW3.
+
+275
+00:20:14,590 --> 00:20:23,039
+Both SW1 and SW3 have the same priority, 12289,
+but SW3’s MAC address is lower.
+
+276
+00:20:23,039 --> 00:20:33,450
+The first half, 014A 38 is the same, but the
+next digit is F for SW1, but 2 for SW3, so
+
+277
+00:20:33,450 --> 00:20:34,980
+SW3’s MAC address is lower.
+
+278
+00:20:34,980 --> 00:20:40,200
+Let’s do another practice question.
+
+279
+00:20:40,200 --> 00:20:41,200
+Okay here it is.
+
+280
+00:20:41,200 --> 00:20:44,490
+Which switch will become the root bridge in
+this case?
+
+281
+00:20:44,490 --> 00:20:50,880
+Pause the video to think about your answer.
+
+282
+00:20:51,000 --> 00:20:53,480
+Okay, the answer is SW4.
+
+283
+00:20:53,480 --> 00:20:57,580
+It has the lowest priority of the 4 switches,
+4097.
+
+284
+00:20:57,800 --> 00:21:01,300
+Okay, now let’s move on.
+
+285
+00:21:01,309 --> 00:21:08,070
+So far we have covered the first step of spanning-tree’s
+process of creating loop-free Layer 2 LANs.
+
+286
+00:21:08,070 --> 00:21:13,059
+Step 1: the switch with the lowest bridge
+ID is elected as the root bridge.
+
+287
+00:21:13,059 --> 00:21:17,539
+All ports on the root bridge are designated
+ports, so they are in a forwarding state.
+
+288
+00:21:17,539 --> 00:21:22,269
+It’s important that this is the first step
+that spanning tree takes, because the rest
+
+289
+00:21:22,269 --> 00:21:25,980
+of the steps depend on knowing which switch
+is the root bridge.
+
+290
+00:21:25,980 --> 00:21:30,039
+Now let’s go on to step 2.
+
+291
+00:21:30,039 --> 00:21:34,820
+All other switches will select ONE of its
+ports to be its ‘root port’.
+
+292
+00:21:34,820 --> 00:21:39,730
+So, that means there is one root port on each
+switch in the network, EXCEPT on the root
+
+293
+00:21:39,730 --> 00:21:41,440
+bridge.
+
+294
+00:21:41,440 --> 00:21:46,399
+The interface with the lowest root cost will
+be the root port.
+
+295
+00:21:46,399 --> 00:21:49,450
+Root ports are also in a forwarding state.
+
+296
+00:21:49,450 --> 00:21:53,999
+Now let’s talk about what that ‘root cost’
+is.
+
+297
+00:21:53,999 --> 00:21:57,039
+Each interface has an associated spanning
+tree ‘cost’.
+
+298
+00:21:57,039 --> 00:22:03,960
+A regular Ethernet interface, with a speed
+of 10 megabits per second, has a cost of 100.
+
+299
+00:22:03,960 --> 00:22:09,989
+Fastethernet, 100 megabits per second, has
+a cost of 19.
+
+300
+00:22:09,989 --> 00:22:15,269
+Gigabit ethernet has a cost of 4, and 10 gigabit
+ethernet has a cost of 2.
+
+301
+00:22:15,269 --> 00:22:18,509
+Make sure you remember these path costs for
+the exam.
+
+302
+00:22:18,509 --> 00:22:22,379
+Of course, there will be flashcards in the
+deck for this video, so use those to help
+
+303
+00:22:22,379 --> 00:22:23,799
+you remember.
+
+304
+00:22:23,799 --> 00:22:29,870
+So, these are gigabit ethernet ports,
+so they all have a cost of 4.
+
+305
+00:22:29,870 --> 00:22:36,429
+The root cost is the total cost of the outgoing
+interfaces along the path to the root bridge.
+
+306
+00:22:36,429 --> 00:22:43,019
+SW1 is the root bridge, so it has a cost of
+0 on all interfaces.
+
+307
+00:22:43,019 --> 00:22:47,600
+They are gigabit ethernet interfaces, but
+you don’t count the cost of the receiving
+
+308
+00:22:47,600 --> 00:22:50,770
+interface, just the sending, the outgoing interface.
+
+309
+00:22:50,770 --> 00:22:57,830
+So, SW1 advertises its root cost of 0 in its
+BPDUs.
+
+310
+00:22:57,830 --> 00:23:04,350
+SW2 will receive the BPDU and add the cost
+of its outgoing interface, G0/1, which is
+
+311
+00:23:04,350 --> 00:23:08,809
+4, when it floods those BPDUs out of its interfaces.
+
+312
+00:23:08,809 --> 00:23:11,080
+SW3 will do the same.
+
+313
+00:23:11,080 --> 00:23:16,230
+So, which port do you think SW2 will choose
+as its root port?
+
+314
+00:23:16,230 --> 00:23:17,940
+Here is its logic.
+
+315
+00:23:17,940 --> 00:23:24,249
+It was advertised a cost of 0 on its G0/1
+interface, however the cost of its interface
+
+316
+00:23:24,249 --> 00:23:29,759
+is 4, therefore the total root cost via G0/1
+is 4.
+
+317
+00:23:29,759 --> 00:23:34,499
+It was advertised a cost of 4 on G0/0, from
+SW3.
+
+318
+00:23:34,499 --> 00:23:39,690
+However its interface also has a cost of 4,
+so the total root cost via G0/0 is 8.
+
+319
+00:23:39,690 --> 00:23:45,059
+So, it will select G0/1 as the root port.
+
+320
+00:23:45,059 --> 00:23:48,799
+SW3’s logic follows the same process.
+
+321
+00:23:48,799 --> 00:23:58,049
+It has a total cost of 4 via G0/0, and a total
+cost of 8 via G0/1, so it will select G0/0
+
+322
+00:23:58,049 --> 00:24:00,559
+as its root port.
+
+323
+00:24:00,559 --> 00:24:06,070
+In this case, the ports directly across from
+each root port are the root bridge, so they
+
+324
+00:24:06,070 --> 00:24:08,220
+are already designated ports.
+
+325
+00:24:08,220 --> 00:24:14,749
+However, keep in mind that the port connected
+to another switch’s root port MUST be designated.
+
+326
+00:24:14,749 --> 00:24:19,159
+Because the root port is the switch’s path
+to the root bridge, another switch must not
+
+327
+00:24:19,159 --> 00:24:20,379
+block it.
+
+328
+00:24:20,379 --> 00:24:25,249
+Okay, so I’ve updated our spanning-tree
+summary here.
+
+329
+00:24:25,249 --> 00:24:29,110
+First, one switch is elected as the root bridge.
+
+330
+00:24:29,110 --> 00:24:32,350
+All ports on the root bridge are designated
+ports.
+
+331
+00:24:32,350 --> 00:24:36,769
+There is only one step in selecting the root
+bridge, that is the switch with the lowest
+
+332
+00:24:36,769 --> 00:24:38,129
+bridge ID.
+
+333
+00:24:38,129 --> 00:24:43,950
+Next, each remaining switch will select ONE
+of its interfaces to be its root port, which
+
+334
+00:24:43,950 --> 00:24:47,020
+is also in a forwarding state.
+
+335
+00:24:47,020 --> 00:24:52,660
+Ports across from, ports connected to, the root port are always designated ports.
+
+336
+00:24:52,669 --> 00:24:57,639
+The first criteria for root port selection
+is the port with the lowest root cost.
+
+337
+00:24:57,639 --> 00:25:02,539
+However, what if a switch has multiple ports
+with the same root cost?
+
+338
+00:25:02,539 --> 00:25:08,119
+In that case, the interface connected to the
+neighbor with the lowest bridge ID will be
+
+339
+00:25:08,119 --> 00:25:09,890
+selected as the root port.
+
+340
+00:25:09,890 --> 00:25:11,850
+Let’s see an example.
+
+341
+00:25:11,850 --> 00:25:15,820
+Okay, let’s practice that with a
+quiz, actually.
+
+342
+00:25:15,820 --> 00:25:18,999
+First, which switch will become the root bridge?
+
+343
+00:25:18,999 --> 00:25:27,049
+Pause the video to think about the answer.
+
+344
+00:25:27,049 --> 00:25:31,399
+Okay, the answer is SW2, because it has the lowest
+priority.
+
+345
+00:25:31,399 --> 00:25:34,470
+So, SW2’s ports are all designated.
+
+346
+00:25:34,470 --> 00:25:38,020
+Now, which ports will become root ports?
+
+347
+00:25:38,020 --> 00:25:42,769
+All interfaces are gigabit ethernet, so all
+have a cost of 4.
+
+348
+00:25:42,769 --> 00:25:48,059
+Remember, if there is a tie in root cost,
+the switch will select the interface connected
+
+349
+00:25:48,059 --> 00:25:50,669
+to the neighbor with the lowest bridge ID.
+
+350
+00:25:50,669 --> 00:25:56,070
+So, pause the video here to think about your
+answer, which ports will be selected as root
+
+351
+00:25:56,070 --> 00:26:04,250
+ports, one on each switch.
+
+352
+00:26:04,250 --> 00:26:13,130
+Okay, on SW1 and SW4, the answer is obvious, SW1’s
+G0/0 and SW4’s G0/1 have a cost of 4, so
+
+353
+00:26:13,130 --> 00:26:14,799
+they are selected.
+
+354
+00:26:14,799 --> 00:26:16,529
+How about SW3?
+
+355
+00:26:16,529 --> 00:26:22,110
+Via G0/0 it has a cost of 8, 4 plus 4.
+
+356
+00:26:22,110 --> 00:26:26,249
+Via G0/1 it has the same, a cost of 8, 4 plus
+4.
+
+357
+00:26:26,249 --> 00:26:34,210
+So, we have to use the tiebreaker, which neighbor
+switch has the lowest bridge ID, SW1 or SW4?
+
+358
+00:26:34,210 --> 00:26:39,830
+It’s SW1, the priorities are the same, but
+SW1’s MAC address is lower.
+
+359
+00:26:39,830 --> 00:26:47,960
+So, G0/0 is selected as the root port, and
+SW1’s G0/1 becomes designated.
+
+360
+00:26:47,960 --> 00:26:51,120
+So, this is the process so far.
+
+361
+00:26:51,120 --> 00:26:56,880
+HOWEVER, there is ONE more tiebreaker that
+might be needed to select the root port.
+
+362
+00:26:56,880 --> 00:27:01,650
+What if two switches have two connections
+between them, so both the root cost and the
+
+363
+00:27:01,650 --> 00:27:04,809
+neighbor bridge ID are the same?
+
+364
+00:27:04,809 --> 00:27:09,909
+Then we get to the final tie-breaker, the
+interface connected to the interface on the
+
+365
+00:27:09,909 --> 00:27:14,409
+neighbor switch with the lowest port ID will
+become the root port.
+
+366
+00:27:14,409 --> 00:27:17,860
+Okay, let me briefly explain port ID.
+
+367
+00:27:17,860 --> 00:27:23,869
+So, here is the output of the command SHOW
+SPANNING-TREE, we’ll talk about it more
+
+368
+00:27:23,869 --> 00:27:27,210
+in a future video when we look at spanning
+tree configuration.
+
+369
+00:27:27,210 --> 00:27:33,029
+I just want to show you this section, this
+lists the spanning tree port ID of each interface
+
+370
+00:27:33,029 --> 00:27:35,019
+on the switch.
+
+371
+00:27:35,019 --> 00:27:38,779
+Notice the column title is Prio dot number.
+
+372
+00:27:38,779 --> 00:27:46,179
+So, each port has a default priority of 128,
+and then a unique port number, 1 for G0/0,
+
+373
+00:27:46,179 --> 00:27:50,009
+2 for G0/1, etc on this switch.
+
+374
+00:27:50,009 --> 00:27:56,299
+So, the STP port ID equals the port priority
+plus the port number.
+
+375
+00:27:56,299 --> 00:28:00,970
+Similar to the bridge ID, where the MAC address
+is used as a tiebreaker if the priorities
+
+376
+00:28:00,970 --> 00:28:06,029
+tie, in this case the port number is used
+as a tiebreaker if the priorities tie.
+
+377
+00:28:06,029 --> 00:28:10,899
+I won’t explain the port ID in more depth
+than this, usually you don’t need to worry
+
+378
+00:28:10,899 --> 00:28:14,919
+about it or change it, so you can just look
+at the port number.
+
+379
+00:28:14,919 --> 00:28:22,090
+For example, G0/0 is lower than G1/0, or G0/3
+is lower than G1/2.
+
+380
+00:28:22,090 --> 00:28:26,129
+So, one more quiz to practice that.
+
+381
+00:28:26,129 --> 00:28:30,259
+Now there are two connections between SW1
+and SW3.
+
+382
+00:28:30,259 --> 00:28:34,200
+Which port will SW3 select as the root port?
+
+383
+00:28:34,200 --> 00:28:41,899
+Pause the video to think about your answer.
+
+384
+00:28:41,899 --> 00:28:48,340
+The answer is G0/2, because it is connected
+to a lower port ID on the neighbor switch,
+
+385
+00:28:48,340 --> 00:28:49,480
+SW1.
+
+386
+00:28:49,480 --> 00:28:51,440
+This is an important point.
+
+387
+00:28:51,440 --> 00:28:56,351
+The NEIGHBOR switch’s port ID is used to
+break the tie, not the local switch’s port
+
+388
+00:28:56,351 --> 00:28:57,351
+ID.
+
+389
+00:28:57,351 --> 00:29:04,110
+That’s why G0/2 was selected over G0/0,
+because G0/0 is connected to a higher port
+
+390
+00:29:04,110 --> 00:29:05,419
+ID on SW1.
+
+391
+00:29:05,419 --> 00:29:12,340
+So, SW1’s G0/1 interface is a designated
+port, because it is connected to SW3’s root
+
+392
+00:29:12,340 --> 00:29:13,419
+port.
+
+393
+00:29:13,419 --> 00:29:16,460
+Okay, so this is our process so far.
+
+394
+00:29:16,460 --> 00:29:18,529
+But, it’s not complete.
+
+395
+00:29:18,529 --> 00:29:23,009
+We still haven’t blocked any ports, and
+we need to block some ports to prevent Layer
+
+396
+00:29:23,009 --> 00:29:24,460
+2 loops.
+
+397
+00:29:24,460 --> 00:29:28,759
+So, let’s return to our previous topology.
+
+398
+00:29:28,759 --> 00:29:33,659
+All that’s left is this connection between
+SW2 and SW3.
+
+399
+00:29:33,659 --> 00:29:39,470
+So far, all of our ports are in a forwarding
+state, both root ports and designated ports
+
+400
+00:29:39,470 --> 00:29:41,390
+are always in a forwarding state.
+
+401
+00:29:41,390 --> 00:29:45,590
+So, to prevent loops do we block both of these
+ports?
+
+402
+00:29:45,590 --> 00:29:49,789
+SW2’s G0/0 and SW3’s G0/1?
+
+403
+00:29:49,789 --> 00:29:55,950
+Actually no, here’s an important rule to
+remember: every collision domain has a single
+
+404
+00:29:55,950 --> 00:29:58,480
+spanning tree designated port.
+
+405
+00:29:58,480 --> 00:30:04,899
+Remember, unlike old Ethernet hubs, which
+we don’t use anymore, when we use switches,
+
+406
+00:30:04,899 --> 00:30:08,059
+each link is a separate collision domain.
+
+407
+00:30:08,059 --> 00:30:15,220
+This collision domain between SW1 and SW2
+has one designated port, SW1’s G0/0.
+
+408
+00:30:15,220 --> 00:30:20,730
+This connection between SW1 and SW3 has one,
+SW1’s G0/1.
+
+409
+00:30:20,730 --> 00:30:25,190
+And the connections with the PCs are all designated
+ports in the forwarding state, because the
+
+410
+00:30:25,190 --> 00:30:28,009
+PCs don’t participate in spanning tree.
+
+411
+00:30:28,009 --> 00:30:34,149
+So, we need one designated port on the connection
+between SW2 and SW3.
+
+412
+00:30:34,149 --> 00:30:38,999
+How do we determine which port will be designated,
+in a forwarding state?
+
+413
+00:30:38,999 --> 00:30:43,200
+The switch with the lowest root cost will
+make its port designated.
+
+414
+00:30:43,200 --> 00:30:51,109
+However, in this case both switches have the
+same root cost, 4 for SW2 via its G0/1 interface
+
+415
+00:30:51,109 --> 00:30:54,809
+and 4 for SW3 via its G0/0 interface.
+
+416
+00:30:54,809 --> 00:30:59,070
+So, for the tie-breaker we compare the bridge
+ID.
+
+417
+00:30:59,070 --> 00:31:06,080
+SW2 has the lower bridge ID, so its G0/0 interface
+will be designated.
+
+418
+00:31:06,080 --> 00:31:11,570
+Finally, the other switch will make its port
+non-designated, which means it is in a blocking
+
+419
+00:31:11,570 --> 00:31:13,039
+state.
+
+420
+00:31:13,039 --> 00:31:19,970
+So SW3’s G0/1 is non-designated, it blocks
+the port to prevent Layer 2 loops.
+
+421
+00:31:19,970 --> 00:31:24,279
+So, here is the process for selecting the
+different port roles and states in spanning
+
+422
+00:31:24,279 --> 00:31:25,989
+tree.
+
+423
+00:31:25,989 --> 00:31:30,479
+One switch is selected as the root bridge,
+the switch with the lowest bridge ID.
+
+424
+00:31:30,479 --> 00:31:36,919
+Then, each remaining switch selects ONE of
+its interfaces to be a root port.
+
+425
+00:31:36,919 --> 00:31:42,049
+The interface with the lowest root cost is
+selected, if that’s a tie the interface
+
+426
+00:31:42,049 --> 00:31:46,210
+connecting to a neighboring switch with the
+lowest bridge ID is selected, if that’s
+
+427
+00:31:46,210 --> 00:31:53,379
+a tie also, the interface connected to the
+lowest port ID on the NEIGHBOR switch is selected.
+
+428
+00:31:53,379 --> 00:31:58,639
+Then finally, each remaining collision domain
+will select ONE interface to be a designated
+
+429
+00:31:58,639 --> 00:32:02,999
+port, and the other port will be non-designated.
+
+430
+00:32:02,999 --> 00:32:06,799
+The interface on the switch with the lowest
+root cost will be designated, if that’s
+
+431
+00:32:06,799 --> 00:32:12,409
+a tie the interface on the switch with the
+lowest bridge ID will be designated, and then
+
+432
+00:32:12,409 --> 00:32:18,509
+the other interface will be a non-designated
+port, in a blocking state.
+
+433
+00:32:18,509 --> 00:32:22,609
+There are still many important things left
+to explain regarding spanning-tree, I will
+
+434
+00:32:22,609 --> 00:32:27,070
+cover those in part 2, before moving on to
+another type of spanning tree, called rapid
+
+435
+00:32:27,070 --> 00:32:29,200
+spanning tree.
+
+436
+00:32:29,200 --> 00:32:33,259
+We already did a few quiz questions throughout
+the video, but let’s do a few more practice
+
+437
+00:32:33,259 --> 00:32:36,639
+questions to make sure you know the whole
+process.
+
+438
+00:32:36,639 --> 00:32:42,440
+If you get stuck, if you don't know the answer, go back to the previous
+slide to remind yourself of the process, and
+
+439
+00:32:42,440 --> 00:32:45,539
+try to figure out the answers yourself.
+
+440
+00:32:45,539 --> 00:32:50,859
+I will also feature one question from Boson
+ExSim after the quiz, however today will be
+
+441
+00:32:50,859 --> 00:32:52,869
+a little different.
+
+442
+00:32:52,869 --> 00:32:56,879
+Because there are still some important points
+to cover about spanning tree, we actually
+
+443
+00:32:56,879 --> 00:33:00,639
+aren’t ready to answer the spanning tree
+questions on Boson ExSim.
+
+444
+00:33:00,639 --> 00:33:06,059
+So, I will show you one question from Boson
+ExSim, and in the next video we will see the
+
+445
+00:33:06,059 --> 00:33:07,629
+answer.
+
+446
+00:33:07,629 --> 00:33:11,489
+Of course, if you have already studied spanning
+tree and already know the answer, please write
+
+447
+00:33:11,489 --> 00:33:12,759
+it in the comment section.
+
+448
+00:33:12,759 --> 00:33:18,419
+Okay, let’s do a couple more practice questions
+first.
+
+449
+00:33:18,419 --> 00:33:20,269
+Here is a network topology.
+
+450
+00:33:20,269 --> 00:33:25,580
+Identify the root bridge, and the role of
+each interface on each switch in the network,
+
+451
+00:33:25,580 --> 00:33:31,289
+so which interfaces are root ports, which
+are designated ports, and which are non-designated
+
+452
+00:33:31,289 --> 00:33:32,379
+ports.
+
+453
+00:33:32,380 --> 00:33:39,920
+Pause the video to think about your answer.
+
+454
+00:33:40,000 --> 00:33:42,580
+Okay, I hope you found the answer.
+
+455
+00:33:42,590 --> 00:33:50,559
+So, the root bridge is SW3, because the priority
+is a tie and it has the lowest MAC address.
+
+456
+00:33:50,559 --> 00:33:56,029
+These are the root ports, SW2 selected its
+G0/2 interface because it is connected to
+
+457
+00:33:56,029 --> 00:34:00,379
+the lower-number interface on SW1, G0/0.
+
+458
+00:34:00,379 --> 00:34:02,730
+And these are the remaining connections.
+
+459
+00:34:02,730 --> 00:34:09,530
+In each case the interface on SW2 is non-designated,
+because it has a higher root cost.
+
+460
+00:34:09,530 --> 00:34:13,550
+Always remember to check that there is one
+designated port for each connection, each
+
+461
+00:34:13,550 --> 00:34:14,560
+collision domain.
+
+462
+00:34:14,560 --> 00:34:19,160
+Okay, let’s do one more quiz.
+
+463
+00:34:19,160 --> 00:34:22,020
+Do the same thing, but with this network topology.
+
+464
+00:34:22,020 --> 00:34:27,720
+Look carefully, some of these interfaces are
+fast ethernet interfaces, they have a spanning
+
+465
+00:34:27,720 --> 00:34:31,340
+tree cost of 19, not 4.
+
+466
+00:34:31,340 --> 00:34:38,100
+Pause the video to think about your answer.
+
+467
+00:34:38,100 --> 00:34:40,020
+Okay, hopefully you solved it.
+
+468
+00:34:40,030 --> 00:34:44,780
+SW4 is the root bridge because it has the
+lowest priority.
+
+469
+00:34:44,780 --> 00:34:46,350
+these are the root ports.
+
+470
+00:34:46,350 --> 00:34:53,010
+SW1 uses its G0/1 interface as the root port,
+because it’s other two interfaces are fastethernet,
+
+471
+00:34:53,010 --> 00:34:55,550
+with a much higher spanning tree cost.
+
+472
+00:34:55,550 --> 00:35:00,080
+Finally, the remaining designated and non-designated
+ports.
+
+473
+00:35:00,080 --> 00:35:08,440
+SW1’s F1/0 and F2/0 are non-designated because
+SW2 has a lower root cost, and SW2’s G0/1
+
+474
+00:35:08,440 --> 00:35:14,980
+is non-designated because SW4 IS the root
+bridge, so its G0/1 interface must be designated.
+
+475
+00:35:14,980 --> 00:35:20,770
+Okay, that’s all for the quiz, let’s take
+a look at Boson ExSim.
+
+476
+00:35:20,770 --> 00:35:26,460
+Okay for today's Boson ExSim practice question
+we're talking about PortFast, which is an
+
+477
+00:35:26,460 --> 00:35:30,280
+optional feature of spanning tree which I
+haven't talked about in today's video.
+
+478
+00:35:30,280 --> 00:35:34,760
+So, I won't give the answer in this video,
+I'll just read the question and then I'll
+
+479
+00:35:34,760 --> 00:35:38,260
+give you the answer in the next lecture video,
+day 21.
+
+480
+00:35:38,260 --> 00:35:42,380
+Now, if you think you know the answer, if
+you've already studied spanning tree please
+
+481
+00:35:42,380 --> 00:35:45,560
+feel free to let me know your answer in the
+comments.
+
+482
+00:35:45,560 --> 00:35:50,530
+Or if you want to do some independent research
+of your own, perhaps type into Google 'spanning
+
+483
+00:35:50,530 --> 00:35:54,970
+tree portfast' and do some reading, and then
+figure out the answer, again please let me
+
+484
+00:35:54,970 --> 00:35:57,440
+know your answer in the comment section.
+
+485
+00:35:57,440 --> 00:35:59,880
+So here is the question.
+
+486
+00:35:59,880 --> 00:36:04,540
+You want to decrease the amount of time that
+it takes for switchports on Switch A to begin
+
+487
+00:36:04,540 --> 00:36:06,090
+forwarding.
+
+488
+00:36:06,090 --> 00:36:12,290
+Portfast is not configured on any of the switchports
+on Switch A. You issue the 'spanning-tree
+
+489
+00:36:12,290 --> 00:36:16,060
+portfast default' command from global configuration
+mode.
+
+490
+00:36:16,060 --> 00:36:18,980
+Which of the ports on Switch A will use portfast?
+
+491
+00:36:18,980 --> 00:36:20,890
+Select the best answer.
+
+492
+00:36:20,890 --> 00:36:25,750
+So A says 'No ports, because portfast cannot
+be enabled globally.'
+
+493
+00:36:25,750 --> 00:36:34,070
+B says 'All ports', C says 'All access ports',
+and D 'All trunk ports'.
+
+494
+00:36:34,070 --> 00:36:37,330
+Okay so as I said, this time we won't check
+the answer.
+
+495
+00:36:37,330 --> 00:36:41,060
+Please wait for the next video to see the
+answer for this question.
+
+496
+00:36:41,060 --> 00:36:44,860
+Of course, if you think you know the answer,
+let me know in the comment section.
+
+497
+00:36:44,860 --> 00:36:48,840
+If you want to get your own copy of ExSim,
+and I highly recommend you do before you take
+
+498
+00:36:48,840 --> 00:36:52,870
+the real thing, please follow my link in the
+video description.
+
+499
+00:36:52,870 --> 00:36:58,400
+These are by far the best practice exams out
+there for the CCNA.
+
+500
+00:36:58,400 --> 00:37:01,560
+There will be supplementary materials for
+this video.
+
+501
+00:37:01,560 --> 00:37:05,310
+There will be a review flashcard deck to use
+with the software ‘Anki’.
+
+502
+00:37:05,310 --> 00:37:09,130
+Download the deck from the link in the description.
+
+503
+00:37:09,130 --> 00:37:12,260
+There will also be a packet tracer practice
+lab.
+
+504
+00:37:12,260 --> 00:37:16,580
+Please be sure to watch the practice lab,
+it will give you some more practice for this
+
+505
+00:37:16,580 --> 00:37:22,840
+process of figuring out a spanning tree topology,
+but also I will introduce some valuable CLI
+
+506
+00:37:22,840 --> 00:37:27,560
+commands which I didn’t have the time to
+show in this video.
+
+507
+00:37:27,560 --> 00:37:32,980
+Before finishing today’s video I want to
+thank my JCNP-level channel members.
+
+508
+00:37:32,980 --> 00:37:41,100
+Thank you to Joyce, Marek, Samil, Velvijaykum,
+C Mohd, Johan, Mark, Aleksa, Miguel, Yousif,
+
+509
+00:37:41,100 --> 00:37:48,970
+Boson Software, the creators of ExSim, Sidi,
+Magrathea, Devin, Charlsetta, Lito, Yonatan,
+
+510
+00:37:48,970 --> 00:37:51,580
+Mike, Aleksandr, and Vance.
+
+511
+00:37:51,580 --> 00:37:57,020
+Sorry if I pronounced your name incorrectly,
+but thank you so much for your support.
+
+512
+00:37:57,020 --> 00:38:01,850
+One of you is displaying as Channel failed
+to load, if this is you please let me know
+
+513
+00:38:01,850 --> 00:38:04,810
+and I’ll see if YouTube can fix it.
+
+514
+00:38:04,810 --> 00:38:10,410
+This is the list of JCNP-level members at
+the time of recording by the way, May 10th, if you signed
+
+515
+00:38:10,410 --> 00:38:14,340
+up recently and your name isn’t on here
+don’t worry, you’ll definitely be in the
+
+516
+00:38:14,340 --> 00:38:17,640
+next video.
+
+517
+00:38:17,640 --> 00:38:19,220
+Thank you for watching.
+
+518
+00:38:19,220 --> 00:38:23,120
+Please subscribe to the channel, like the
+video, leave a comment, and share the video
+
+519
+00:38:23,120 --> 00:38:26,470
+with anyone else studying for the CCNA.
+
+520
+00:38:26,470 --> 00:38:29,350
+If you want to leave a tip, check the links
+in the description.
+
+521
+00:38:29,350 --> 00:38:35,020
+I'm also a Brave verified publisher and accept
+BAT, or Basic Attention Token, tips via the
+
+522
+00:38:35,020 --> 00:38:36,560
+Brave browser.
+
+523
+00:38:36,560 --> 00:38:37,500
+That's all for now.

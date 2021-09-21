@@ -1,0 +1,466 @@
+1
+00:00:00,539 --> 00:00:06,580
+Welcome to Jeremy’s IT Lab. This is a free,
+complete course for the CCNA. If you like
+
+2
+00:00:06,580 --> 00:00:11,500
+these videos, please subscribe to follow along
+with the series. Also, please like and leave
+
+3
+00:00:11,500 --> 00:00:16,059
+a comment, and share the video to help spread
+this free series of videos. Thanks for your
+
+4
+00:00:16,059 --> 00:00:17,560
+help.
+
+5
+00:00:17,560 --> 00:00:21,320
+This video, as you have probably noticed,
+will be a bit different than my other lab
+
+6
+00:00:21,320 --> 00:00:26,950
+videos in the course. We didn’t actually
+cover any configurations in the lecture video,
+
+7
+00:00:26,950 --> 00:00:32,000
+so there won’t be a packet tracer practice
+lab file for you to practice with. Instead,
+
+8
+00:00:32,000 --> 00:00:37,520
+I will just give you a quick demo in EVE-NG,
+a network simulator, of one kind of network
+
+9
+00:00:37,520 --> 00:00:42,970
+attack that I mentioned in the lecture video.
+Then, in the next lecture video we will see
+
+10
+00:00:42,970 --> 00:00:47,730
+how to configure a Cisco switch to prevent
+this kind of attack.
+
+11
+00:00:47,730 --> 00:00:55,000
+The attack I will show you is the DHCP exhaustion
+attack, also called DHCP starvation attack.
+
+12
+00:00:55,000 --> 00:01:01,140
+In this attack, the attacker sends countless
+DHCP Discover messages, and then any DHCP
+
+13
+00:01:01,140 --> 00:01:07,320
+servers on the network will send Offer messages.
+After the server sends the DHCP offer, the
+
+14
+00:01:07,320 --> 00:01:12,580
+IP address it offers is reserved while it
+waits for a response from the client. So,
+
+15
+00:01:12,580 --> 00:01:17,540
+by sending tons of Discover messages, the
+attacker uses up all of the IP addresses in
+
+16
+00:01:17,540 --> 00:01:23,811
+the DHCP pool, and other hosts on the network
+will not be able to get an IP address. To
+
+17
+00:01:23,811 --> 00:01:28,340
+demonstrate that I will connect PC1 to the
+network, and we’ll see if it can get an
+
+18
+00:01:28,340 --> 00:01:32,180
+address via DHCP.
+
+19
+00:01:32,180 --> 00:01:38,580
+In this network, R1 is the DHCP server. The
+attacker is this PC here, running a Linux
+
+20
+00:01:38,580 --> 00:01:44,490
+distribution called Kali Linux. Kali Linux
+is popular in the world of cyber security,
+
+21
+00:01:44,490 --> 00:01:49,700
+penetration testing, and such. It comes with
+various pre-installed tools for digital forensics
+
+22
+00:01:49,700 --> 00:01:55,960
+and penetration testing, and we will be using
+one called Yersinia for the DHCP exhaustion
+
+23
+00:01:55,960 --> 00:01:58,010
+attack.
+
+24
+00:01:58,010 --> 00:02:06,720
+First let’s open the CLI of R1 to take a
+look at the DHCP settings. ENABLE. SHOW RUN
+
+25
+00:02:06,720 --> 00:02:17,819
+| SECTION DHCP. Okay, so here’s the DHCP
+pool. 192.168.1.0/24, and it will tell hosts
+
+26
+00:02:17,819 --> 00:02:27,340
+to use R1’s own IP address, 192.168.1.1,
+as the default gateway. The DNS server is
+
+27
+00:02:27,340 --> 00:02:33,840
+8.8.8.8, Google’s DNS server. This IP ADDRESS
+DHCP at the bottom isn’t actually part of
+
+28
+00:02:33,840 --> 00:02:40,069
+the DHCP pool, it’s from R1’s G0/1 interface
+settings, but it was included in the output
+
+29
+00:02:40,069 --> 00:02:49,420
+of SHOW RUN | SECTION DHCP,. Now let’s use
+some other show commands. SHOW IP DHCP POOL.
+
+30
+00:02:49,420 --> 00:02:56,069
+As you can see, in POOL1 there are 254 available
+addresses. I didn’t configure any excluded
+
+31
+00:02:56,069 --> 00:03:03,540
+addresses. Note that R1 won’t assign it’s
+own IP address, 192.168.1.1, to another host,
+
+32
+00:03:03,540 --> 00:03:09,180
+so really there are 253 available addresses
+that can be assigned. However, currently there
+
+33
+00:03:09,180 --> 00:03:16,779
+are 0 leased addresses. And if I use the command
+SHOW IP DHCP BINDING, we can see that there
+
+34
+00:03:16,779 --> 00:03:18,709
+are currently no entries.
+
+35
+00:03:18,709 --> 00:03:25,620
+So, let’s go into the Kali Linux box. I
+already have the terminal open, so let’s
+
+36
+00:03:25,620 --> 00:03:35,519
+open Yersinia. The command is YERSINIA hyphen
+G. So, this opens the GUI, graphical user
+
+37
+00:03:35,519 --> 00:03:42,300
+interface, of Yersinia. To launch our attack
+I’ll click on ‘launch attack’. Then
+
+38
+00:03:42,300 --> 00:03:50,269
+select DHCP, and there are a few DHCP attacks
+we can do. In this case I want to select ‘sending
+
+39
+00:03:50,269 --> 00:03:57,859
+DISCOVER packet’. As the check mark indicates
+here, this will cause a DoS, Denial of Service.
+
+40
+00:03:57,859 --> 00:04:04,290
+Then I simply click OK, and the attack has
+started. On the right you can see each DHCP
+
+41
+00:04:04,290 --> 00:04:09,879
+DISCOVER message being sent, and here on the
+left you can see the DHCP packet count rapidly
+
+42
+00:04:09,879 --> 00:04:15,459
+rising. Unless I tell the attacker to stop,
+it will continue sending these DISCOVER messages.
+
+43
+00:04:15,459 --> 00:04:20,560
+So, let’s see what’s happening on R1.
+
+44
+00:04:20,560 --> 00:04:29,750
+First let’s check the pool again. SHOW IP
+DHCP POOL. Okay, of the 254 total addresses
+
+45
+00:04:29,750 --> 00:04:36,010
+253 are being leased, and as I said one is
+used by R1 itself so that means the entire
+
+46
+00:04:36,010 --> 00:04:44,970
+pool is being used. Let’s check the binding
+table. SHOW IP DHCP BINDING. Okay, I’m just
+
+47
+00:04:44,970 --> 00:04:51,360
+going to keep pressing the space bar as R1
+goes through the DHCP binding table. You’ll
+
+48
+00:04:51,360 --> 00:05:01,470
+see that every address, from 192.168.1.2 to
+192.168.1.254, is currently taken. Also notice
+
+49
+00:05:01,470 --> 00:05:06,690
+that each of these IP addresses has a unique
+MAC address. That’s because the attacker
+
+50
+00:05:06,690 --> 00:05:11,820
+is spoofing the source MAC address used for
+each DISCOVER message, so R1 thinks that each
+
+51
+00:05:11,820 --> 00:05:15,560
+of the messages is coming from a different
+host.
+
+52
+00:05:15,560 --> 00:05:23,830
+Okay, let’s see if PC1 is able to get an
+IP address. Before connecting it to the network,
+
+53
+00:05:23,830 --> 00:05:30,690
+I’ll check some settings on PC1. Here in
+the command prompt let’s check IPCONFIG
+
+54
+00:05:30,690 --> 00:05:38,050
+/ALL. Okay, here under the Ethernet adapter
+we can see media disconnected, because it’s
+
+55
+00:05:38,050 --> 00:05:44,840
+currently not connected to the network. And
+we can see DHCP Enabled, Yes. So, once we
+
+56
+00:05:44,840 --> 00:05:52,070
+connect PC1 to SW1, it should try to get an
+IP address via DHCP. Let’s see if it works.
+
+57
+00:05:52,070 --> 00:06:01,260
+So, I’ll click here on PC1 and connect it
+to SW1. PC1’s interface is e0 and SW1’s
+
+58
+00:06:01,260 --> 00:06:07,550
+is G0/1. So I’ll just click on save.
+
+59
+00:06:07,550 --> 00:06:17,610
+Now let’s check on PC1 again. From the commad
+prompt, IPCONFIG /ALL. Okay, under the Ethernet
+
+60
+00:06:17,610 --> 00:06:24,690
+adapter we can once again see DHCP Enabled,
+Yes, It has a link-local IPv6 address, automatically
+
+61
+00:06:24,690 --> 00:06:33,550
+generated. And below that we see an IPv4 address.
+So, did DHCP work? Actually, no it didn’t.
+
+62
+00:06:33,550 --> 00:06:40,660
+As it says here, this is an autoconfigured
+IPv4 address, PC1 generated it automatically.
+
+63
+00:06:40,660 --> 00:06:53,120
+It has the prefix 169.254/16, the subnet mask
+is 255.255.0.0. 169.254.0.0/16 is the IPv4
+
+64
+00:06:53,120 --> 00:06:59,470
+link-local address range, so it functions
+like the IPv6 link-local address above. So,
+
+65
+00:06:59,470 --> 00:07:06,090
+PC1 auto-generated IPv4 and IPv6 link-local
+addresses, but it wasn’t able to get a regular
+
+66
+00:07:06,090 --> 00:07:13,040
+IPv4 address from the DHCP server, R1. So,
+PC1 won’t be able to communicate with any
+
+67
+00:07:13,040 --> 00:07:22,581
+other devices on the network. If I try to
+ping R1 for example, PING 192.168.1.1, as
+
+68
+00:07:22,581 --> 00:07:30,750
+you can see it doesn’t work. What if I try
+to renew the IP address? IPCONFIG /RENEW.
+
+69
+00:07:30,750 --> 00:07:38,639
+So, PC1 will once again try to get an IPv4
+address via DHCP, but once again it won’t
+
+70
+00:07:38,639 --> 00:07:44,590
+work. We could wait here for a while, so I’ll
+just use control C to stop it.
+
+71
+00:07:44,590 --> 00:07:52,490
+Next, I’ll delete the connection from the
+attacker to SW1 by right clicking here and
+
+72
+00:07:52,490 --> 00:08:00,930
+selecting delete. Next I’ll go on to R1
+and clear the DHCP bindings. I taught you
+
+73
+00:08:00,930 --> 00:08:10,620
+this command in the DHCP video, the command
+is CLEAR IP DHCP BINDING, followed by an asterisk.
+
+74
+00:08:10,620 --> 00:08:21,460
+Okay, now I’ll go back on PC1 and try to
+get an IP address once more. IPCONFIG /RENEW.
+
+75
+00:08:21,460 --> 00:08:27,800
+This time, R1 should have an available IP
+address for PC1 now that the attack has stopped,
+
+76
+00:08:27,800 --> 00:08:35,639
+and indeed PC1 was able to get an IP address.
+So let’s test if it can use the Internet.
+
+77
+00:08:35,639 --> 00:08:47,279
+I’ll open firefox and go to google.com.
+Okay, PC1 is now able to access the Internet.
+
+78
+00:08:47,279 --> 00:08:54,269
+So, in this video we took a look at one kind
+of network attack, the DHCP exhaustion attack.
+
+79
+00:08:54,269 --> 00:08:58,410
+Although there is no packet tracer lab file
+for you to practice with this time, I hope
+
+80
+00:08:58,410 --> 00:09:03,459
+it was at least interesting to see. In the
+next video we’ll look at a Cisco switch
+
+81
+00:09:03,459 --> 00:09:08,160
+feature called port security, which can be
+used to prevent this kind of attack, as well
+
+82
+00:09:08,160 --> 00:09:13,860
+as others. Okay, that’s all for this lab.
+
+83
+00:09:13,860 --> 00:09:19,930
+Before finishing today’s video I want to
+thank my JCNP-level channel members. To join,
+
+84
+00:09:19,930 --> 00:09:24,759
+please click the ‘Join’ button under the
+video. Thank you to C Mohd, Scott, Martin,
+
+85
+00:09:24,759 --> 00:09:29,259
+Khoa, Justin, Christopher, Tebogo, Anand,
+Pavel, Abraham, Serge, Njoku, Viktor, Roger,
+
+86
+00:09:29,259 --> 00:09:33,760
+Raj, Kenneth, Seamus, Brandon, Marcel, Kone,
+Donald, Gustavo, Prakaash, Nasir, Erlison,
+
+87
+00:09:33,760 --> 00:09:38,680
+Marko, Daming, Ed, John, Funnydart, Velvijaykum,
+Mark, Yousif, Boson Software, Devin, Yonatan,
+
+88
+00:09:38,680 --> 00:09:48,879
+and Vance. Sorry if I pronounced your name
+incorrectly, but thank you so much for your
+
+89
+00:09:48,879 --> 00:09:55,800
+support. This is the list of JCNP-level members
+at the time of recording by the way, May 13th
+
+90
+00:09:55,800 --> 00:10:00,851
+2021. If you signed up recently and your name
+isn’t on here don’t worry, you’ll be
+
+91
+00:10:00,851 --> 00:10:02,600
+in future videos.
+
+92
+00:10:02,600 --> 00:10:08,790
+Thank you for watching. Please subscribe to
+the channel, like the video, leave a comment,
+
+93
+00:10:08,790 --> 00:10:13,870
+and share the video with anyone else studying
+for the CCNA. If you want to leave a tip,
+
+94
+00:10:13,870 --> 00:10:19,389
+check the links in the description. I'm also
+a Brave verified publisher and accept BAT,
+
+95
+00:10:19,389 --> 00:10:23,399
+or Basic Attention Token, tips via the Brave
+browser. That's all for now.
