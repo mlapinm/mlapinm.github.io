@@ -243,11 +243,201 @@ var notes = [
     "header": "CCNA",
     "title": "",
     "card-text": [
-      "j01",
+      "j021",
       "",
       ""
     ],
-    "link": "j01pl.html"
+    "link": "j021pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j022",
+      "",
+      ""
+    ],
+    "link": "j022pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j023",
+      "",
+      ""
+    ],
+    "link": "j023pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j024",
+      "",
+      ""
+    ],
+    "link": "j024pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j025",
+      "",
+      ""
+    ],
+    "link": "j025pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j026",
+      "",
+      ""
+    ],
+    "link": "j026pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j027",
+      "",
+      ""
+    ],
+    "link": "j027pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j028",
+      "",
+      ""
+    ],
+    "link": "j028pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j029",
+      "",
+      ""
+    ],
+    "link": "j029pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j030",
+      "",
+      ""
+    ],
+    "link": "j030pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j031",
+      "",
+      ""
+    ],
+    "link": "j031pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j032",
+      "",
+      ""
+    ],
+    "link": "j032pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j033",
+      "",
+      ""
+    ],
+    "link": "j033pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j034",
+      "",
+      ""
+    ],
+    "link": "j034pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j035",
+      "",
+      ""
+    ],
+    "link": "j035pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j036",
+      "",
+      ""
+    ],
+    "link": "j036pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j037",
+      "",
+      ""
+    ],
+    "link": "j037pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j038",
+      "",
+      ""
+    ],
+    "link": "j038pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j039",
+      "",
+      ""
+    ],
+    "link": "j039pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j04",
+      "",
+      ""
+    ],
+    "link": "j04pl.html"
    },
   {
     "header": "CCNA",
