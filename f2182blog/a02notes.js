@@ -433,6 +433,226 @@ var notes = [
     "header": "CCNA",
     "title": "",
     "card-text": [
+      "j040",
+      "",
+      ""
+    ],
+    "link": "j040pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j041",
+      "",
+      ""
+    ],
+    "link": "j041pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j042",
+      "",
+      ""
+    ],
+    "link": "j042pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j043",
+      "",
+      ""
+    ],
+    "link": "j043pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j044",
+      "",
+      ""
+    ],
+    "link": "j044pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j045",
+      "",
+      ""
+    ],
+    "link": "j045pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j046",
+      "",
+      ""
+    ],
+    "link": "j046pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j047",
+      "",
+      ""
+    ],
+    "link": "j047pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j048",
+      "",
+      ""
+    ],
+    "link": "j048pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j049",
+      "",
+      ""
+    ],
+    "link": "j049pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j05",
+      "",
+      ""
+    ],
+    "link": "j05pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j05",
+      "",
+      ""
+    ],
+    "link": "j05pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j05",
+      "",
+      ""
+    ],
+    "link": "j05pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j05",
+      "",
+      ""
+    ],
+    "link": "j05pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j05",
+      "",
+      ""
+    ],
+    "link": "j05pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j05",
+      "",
+      ""
+    ],
+    "link": "j05pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j05",
+      "",
+      ""
+    ],
+    "link": "j05pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j05",
+      "",
+      ""
+    ],
+    "link": "j05pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j05",
+      "",
+      ""
+    ],
+    "link": "j05pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j05",
+      "",
+      ""
+    ],
+    "link": "j05pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j05",
+      "",
+      ""
+    ],
+    "link": "j05pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "j05",
+      "",
+      ""
+    ],
+    "link": "j05pl.html"
+   },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
       "j04",
       "",
       ""
