@@ -1,1 +1,425 @@
-aabbаабб
+welcome to this free CCNA packet tracer
+practice lab 
+5.510029
+you can download the lab
+file from the link in the description 
+9.114439
+in
+this lab like the previous one we will
+be working with two routers r1 and r2
+16.887107
+this time we will configure both an
+enable password and an enable secret and
+contrast the two 
+24.713424
+again I will only work
+with one of the routers in this video
+for the sake of time 
+30.910102
+but I recommend
+that you perform the configurations on
+both of the routers for practice 
+35.799987
+even
+though it's not necessary for this lab
+38.084682
+also some of the steps here are things
+we've already done in the previous lab
+44.175245
+this is on purpose 
+46.075025
+I don't know about
+you but for me doing something just once
+isn't sufficient for me to feel
+confident that I can remember it 
+53.080736
+see if
+you can complete the lab yourself first
+57.118296
+and then continue watching this video if
+you have any trouble or watch it
+afterwards to check your solution
+63.254319
+step one is to connect the two routers
+by their Gigabit Ethernet 0 0 interfaces
+73.870997
+to do this click on the connections in
+the bottom left corner 
+78.039791
+select the cable
+and attach it to the gig 0 0 interface
+on r1 and then on r2 
+85.498783
+that's all there is
+to step 1 
+88.081214
+step 2 is to set the hostname
+of each router according to the network
+diagram 
+96.757249
+that is to r1 and r2 
+99.349985
+let's click
+on our one and select CLI to access the
+command-line interface 
+104.960144
+again we can see
+that the routers hostname is currently
+router 
+109.00315
+to set the hostname we have to be
+in global configuration mode 
+114.124844
+currently
+we are in exec mode 
+116.841509
+as indicated by the
+greater than sign next to the current
+router name 
+121.29031
+alt ipn or an able to enter
+privileged exec mode 
+126.732595
+this is indicated
+by the pound sign or hash tag whatever
+you want to call it next to the host
+name 
+133.594869
+from here I'll type compte or
+configure terminal to reach global
+configuration mode 
+140.845422
+from here I'll use
+the host name r1 command to change the
+host name to r1 
+147.324613
+you can see immediately
+that the host name has changed to r1
+151.745561
+step 2 is now complete
+154.373796
+step three is to set the enable password
+to Cisco 
+161.972024
+this is the same step as in the
+previous lab 
+164.776344
+since we are already in
+global configuration mode 
+168.174473
+I just have to
+enter an able password Cisco to set the
+enable password 
+173.718627
+that's step three
+175.70937
+step four is new to this lab now 
+183.144987
+we must
+set the enable secret to CCNA 
+187.017516
+what is an
+enable secret 
+189.709976
+well you may recall that
+the enable password is not encrypted by
+default 
+194.661524
+that means it is stored in clear
+text in the configuration 
+198.858348
+to confirm
+this I'll use the do show run command
+202.373922
+remember that that do allows us to use
+commands in global configuration mode
+207.519519
+that we would normally have to be in
+privileged exec mode to use 
+210.931248
+as you can
+see the enable password is right there
+in clear text 
+215.469001
+enable password Cisco not
+very secure 
+219.331723
+the enable secret is a more
+secure password because it is encrypted
+by default 
+224.997642
+use the enable secret command
+to create it 
+229.270424
+enable secret CCNA 
+231.943415
+step 4
+is now complete
+234.461481
+Step five asks us to return to exec mode
+240.695522
+and try to enter privileged exec mode
+once again 
+243.772826
+I'll type exit twice to
+return to exec mode 
+248.182503
+now I'll use the
+enable command to enter privileged exec
+mode 
+252.636177
+and I am asked for a password 
+254.982523
+which
+one should I enter 
+257.067089
+let's try the enable
+password of Cisco 
+260.376841
+again the characters
+are not shown as I type
+264.322007
+I tried Cisco three times and it doesn't
+seem to work 
+271.082343
+let's use the enable
+command again and this time try the
+enable secret 
+CCNA 
+278.984926
+as you can see the
+enable secret works 
+282.324785
+this is important to
+remember 
+284.42278
+if you create both an enable
+password and an enable secret 
+289.269375
+although
+both will be stored in the running
+config 
+292.850575
+only the enable secret can be
+used to enter privileged exec mode 297.518544
+the
+enable password is effectively useless
+300.351229
+that's step 5
+302.458449
+step 6 asks us to view the running
+configuration 
+308.391684
+we're already in
+privileged exec mode 
+311.602004
+so I'll just type
+the show running config command 
+314.621621
+as you
+can see the enable password is still in
+plain text 
+318.702385
+enable password Cisco 
+320.946094
+however
+our enable secret of ccna has been
+encrypted 
+325.689186
+it now says enable secret five
+followed by an unintelligible string of
+characters 
+331.850682
+the five indicates the type
+of encryption 
+335.685431
+don't worry about that for
+now 
+337.735784
+just notice that the enable secret
+has been encrypted without using the
+service password encryption command that
+we used in the previous lab 
+346.321022
+that's step
+six
+348.699647
+step seven asks us to enable password
+encryption 
+357.243784
+if you remember this is done
+in global configuration mode 
+361.530169
+so I'll
+type conf t get their 
+364.190258
+next service
+password encryption 
+367.300459
+that's it
+369.038546
+now let's check the running config 
+371.118877
+do
+show run 
+372.848643
+now both passwords are
+encrypted 
+375.118001
+notice however that the enable
+secret has not changed 
+379.213029
+because it is
+already encrypted by default 
+381.990927
+also notice
+that the enable secret uses type five
+encryption 
+386.712587
+and that the enable password
+uses type seven encryption 
+390.288956
+you can tell
+just by looking at the strings that
+follow that the encryption algorithms
+are different 
+396.325782
+that's step seven
+398.651033
+step eight of this lab asks us to save
+the configuration of the routers
+405.546017
+something we didn't do in the previous
+lab 
+407.568926
+basically what we want to do is copy
+the current running configuration to
+what is called the startup configuration
+415.521154
+first let's compare the two 
+418.194104
+I'll exit to
+privileged exec mode and type show run
+422.103355
+this is the current running
+configuration 
+424.919231
+you can scroll down one
+line at a time with the enter key or
+blocks at a time with the spacebar
+431.585528
+notice that the enable password and
+enable secret we created are here 
+437.676567
+now
+let's type show startup config 
+441.875875
+it says
+startup config is not present 
+445.417804
+this is
+because this is a new router 
+447.692901
+and we
+haven't saved anything on it 
+449.721087
+now there
+are two ways to save the current
+configuration
+454.174775
+the first one is copy running-config
+startup config 
+459.694103
+or copy run start for a
+shorter version if you prefer 
+463.153016
+it's
+self-explanatory but this command copies
+the running config to the startup config
+469.308725
+I'll enter the command and press ENTER
+to confirm 
+473.45887
+now if we use the show
+startup config command 
+477.903188
+it is identical
+to the current running config 
+480.925312
+now there
+is another even simpler way to do the
+same thing 
+485.789167
+that is with the write to
+command 
+487.996812
+that's it you can even shorten
+it to just WR 
+492.978607
+copy running-config
+startup config and write both do the
+same thing 
+498.731602
+so use whichever you prefer
+500.443004
+now the final step is to reload the
+router 
+504.723301
+I will do this with the reload
+command
+507.280191
+and there we go 
+512.969688
+now you can see that the
+hostname is still r1 
+516.822981
+this proves that we
+successfully saved our changes 520.965983
+I'll use
+the enable command to enter privileged
+exec mode 
+524.536626
+and as you can see I'm asked
+for a password 
+527.372019
+this also proves that we
+successfully saved our changes to the
+configuration 
+530.84509
+I enter the enable secret
+of CCNA and now I'm in privileged exec
+mode 
+536.374761
+finally I'll type show startup
+config just to confirm 
+541.075903
+as you can see
+our changes are still there 
+543.617492
+step 8
+and this lab are now complete 546.751275
+thank you
+for watching I hope this lab and video
+have been helpful for you 
+554.280742
+please
+subscribe for future labs like this
+557.120203
+which will be released weekly 
+559.154288
+if you
+have requests for any specific labs let
+me know in the comments section 
+564.24762
+if you
+want to support my channel I accept
+Bitcoin donations via the address in the
+description 
+571.071954
+I am also a brave verified
+publisher and accept a bat or basic
+attention token donations in the brave
+browser
+578.955912
+578.955912
+578.955912
