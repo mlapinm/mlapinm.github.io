@@ -1,1 +1,339 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab 
+3.15314
+you can download the lab
+
+file from the link in the description 
+7.162907
+in
+
+this lab we will be working with one
+
+router r1 and one PC PC one 
+14.12432
+we will use
+
+PC one to connect to the console port of
+
+r1 
+18.869851
+and perform configurations from there
+21.118842
+we will also set up a password to
+
+protect connections from the console
+
+port of r1 
+27.184047
+try to complete the lab on
+
+your own first 
+30.53352
+and continue watching
+
+this video if you have trouble 
+33.774879
+or watch
+
+it afterwards to check your solution
+36.419122
+step one is to connect PC ones rs-232
+
+port to our ones console port 
+
+45.152569
+click on
+
+connections in the bottom left corner of
+
+the screen 
+49.17052
+this is the console cable as
+
+indicated at the bottom of the screen
+54.561567
+connect it to the rs-232 port of PC one
+59.95001
+and then to the console port of r1
+62.507949
+that's step one
+64.385472
+step two is to use the console
+
+connection to configure the hostname of
+
+r1 from pc1 
+74.499574
+to do so click on PC one
+
+click on desktop select terminal and
+
+then select ok to accept the default
+
+configurations 
+84.321932
+we're now connected to r1
+
+via PC one and can perform
+
+configurations as usual 
+90.848294
+now we have to
+
+change the hostname
+
+of the router to r1 as we've done before
+
+in previous labs 
+97.999229
+unable to enter
+
+privileged exec mode 
+101.20266
+conf t enter
+
+global configuration mode 
+104.726566
+hostname r1
+106.476107
+that's it for step two
+108.726232
+step three is to set the enable secret
+
+of r1 to Cisco 
+116.328196
+if you remember the
+
+enable secret is a password that
+
+protects privileged exec mode 
+120.926073
+and is
+
+encrypted by default 
+123.2163
+it's configured
+
+from global configuration mode 
+126.6641
+which we
+
+are already in 
+128.360855
+enable secret Cisco 
+130.72325
+step
+
+three is now complete
+132.805721
+step four is to set the console password
+
+of r1 to CCNA 
+140.763358
+we also have to ensure
+
+that it is required to connect to r1 via
+
+the console port 
+145.884646
+to do so we have to
+
+enter line configuration mode for the
+
+console port 
+150.675043
+that is done with the
+
+command line console 0 from global
+
+configuration mode 
+156.148803
+the zero refers to
+
+the number of the port 
+159.949766
+and since there
+
+is only one console port there is only
+
+line console 0 
+164.986256
+there is no line console
+
+1 2 3 4 etc 
+168.665267
+from here we set the
+
+password to CCNA with a very simple
+
+command 
+174.000063
+password CCNA 
+176.104199
+now let's try out
+
+our password 
+178.683994
+I'll use the end command to
+
+return to privileged exec mode 
+182.966503
+and then
+
+exit to quit the connection 
+185.89367
+but I'm not
+
+asked for a password 
+188.895884
+if I type enable I
+
+have to use the password Cisco to access
+
+privileged exec mode 
+195.023131
+but why wasn't I
+
+asked to use the password CCNA to
+
+connect to the console port again 
+201.141207
+this
+
+is because we missed one other command
+
+in line configuration mode 
+205.858417
+let's return
+
+there once more 
+208.248564
+conf t
+
+line con zero 
+211.022927
+now we have to use the
+
+command login to tell the router that
+
+the password must be used to connect to
+
+the console 
+219.504948
+let's try again and exit 
+223.498016
+and
+
+there we go 
+224.464199
+now we are asked for the
+
+console password of CCNA 
+227.866802
+now finally
+
+let's check the running configuration
+
+for the password and see if it's
+
+encrypted 
+233.469493
+enable password cisco show run
+238.662364
+the line section is at the bottom of the
+
+running config 
+241.440084
+so i'll tap the spacebar
+
+a few times to scroll down
+245.280339
+there 
+
+it is line con zero 
+
+password CCNA
+250.591846
+as you can see it is not encrypted
+252.54017
+that's all for step four 
+254.651493
+Step five is to
+
+enable password encryption to protect
+
+this console password 
+262.69548
+compte to enter
+
+global configuration mode 
+265.66923
+then the same
+
+command as before 
+267.735935
+service password
+
+encryption 
+270.058735
+let's drop back to privileged
+
+exec mode 
+273.006438
+and then use show run to
+
+confirm 
+275.203606
+scroll down to the bottom and
+
+you can see the password is now
+
+encrypted 
+280.508029
+finally let's save the
+
+configuration 
+283.336426
+let's use the copy
+
+running-config startup config command
+288.055578
+shorten to copy run start 
+290.352434
+that's all for
+
+this lab 
+292.819539
+thank you for watching I hope
+
+this lab and video have been helpful for
+
+you 
+299.131444
+please subscribe for future labs
+
+like this which will be released weekly
+303.715134
+if you have requests for any specific
+
+labs let me know in the comment section
+308.742031
+if you want to support my channel I
+
+accept Bitcoin donations via the address
+
+in the description 
+315.017553
+I am also a brave
+
+verified publisher and accept bat or
+
+basic attention token donations in the
+
+brave browser
+323.729292
+323.729292
+323.729292
+
