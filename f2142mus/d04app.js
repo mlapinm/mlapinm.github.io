@@ -57,11 +57,35 @@ $(() => {
         }
     })
 
+    $('.btn_big_play').click(() => {
+        pause = pause ? false : true
+        if( !pause){
+            audio.play()
+        }else{
+            current = audio.currentTime 
+            $('.log2').text('' + current)
+            $('.log2').text('' + timeToMinut(current))
+            appendText(timeToMinut(current) + ' ' + current)
+            audio.pause()
+
+        }
+    })
+
+
+
     $('.btn_back').click(() => {
         $('.log3').text('btn_back')
         audio.currentTime -=1 
         current = audio.currentTime
     })
+
+    $('.btn_big_stop').click(() => {
+        $('.log3').text('btn_back')
+        audio.currentTime -=1 
+        current = audio.currentTime
+    })
+
+    
 
     $('.btn_toward').click(() => {
         $('.log3').text('btn_toward')
