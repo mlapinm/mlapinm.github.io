@@ -1,1 +1,317 @@
-aabbаабб
+0.0
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description in
+
+this lab we will be working with one
+
+router r1 2 switches switch 1 and switch
+
+2 and 4 pcs pc-1 pc2 pc 3 and PC 4 we
+
+will configure these pcs to be in two
+
+separate VLANs and then configure
+
+routing between them through the method
+
+known as router on a stick the host
+
+names of the router and switches the IP
+
+addresses of the pcs and their default
+
+gateways have been pre-configured try to
+
+complete the lab yourself first and then
+
+continue watching if you have trouble or
+
+watch it after to check your solution
+
+step one is to ping between the PCs
+
+things between PC one and PC through
+
+should succeed because they are in the
+
+same subnet likewise pings between PC 2
+
+and pc 4 should succeed because they are
+
+also in the same subnet other pings
+
+should fail let's ping from pc1 first
+
+let's ping PC to ping 1000 130 the ping
+
+fails next let's ping PC 3 ping 1000 3
+
+the ping works as expected
+
+finally let's ping PC for ping 1000 131
+
+the ping fails by the way I'm using the
+
+up arrow to access previous commands and
+
+just edit the last few numbers next
+
+let's try to ping from PC to first PC 1
+
+ping 1000 to the ping fails next PC 3
+
+ping 1000 3
+
+the pin fails finally pc4 ping 1000 dot
+
+131 the ping works that's step one step
+
+two is to assign pc1 & pc2 VLAN 13 & pc2
+
+and pc 4 to VLAN 24 let's configure
+
+switch 1 first enable compte interface
+
+f01 switch port mode access switch port
+
+access VLAN 13 that's for a pc 1 next
+
+for pc 2 interface f0 to switch port
+
+mode access switch port access VLAN 24
+
+next let's configure switch to enable
+
+compte interface f01 switch port mode
+
+access switch port access VLAN 13 that's
+
+pc 3 next let's configure the interface
+
+connected to pc 4 interface f0 to switch
+
+ports mode access switch port access
+
+VLAN 20 for step two is now complete
+
+step three is to create a trunk link
+
+between switch 1 and switch to remember
+
+we need to configure a trunk link to
+
+allow the connection between switch 1
+
+and switch two to carry traffic from
+
+multiple VLANs in this case the
+
+interfaces are assigned to the native
+
+VLAN VLAN 1 however our pcs are assigned
+
+to either VLAN 13 or VLAN 24 therefore
+
+no traffic from these pcs will be able
+
+to pass between the switches even in the
+
+same VLAN I'll just do one ping to prove
+
+this from pc1 to pc2 are in the same
+
+VLAN ping 1000 3 as you can see the ping
+
+which succeeded previously now fails
+
+let's create a trunk now I'll configure
+
+switch 1 first interface g0 to switch
+
+port mode trunk that's it
+
+on this switch model we don't have to
+
+configure the encapsulation type next
+
+let's configure switch to interface g0 1
+
+switch port mode trunk that's step 3
+
+step four is to configure inter VLAN
+
+routing by creating sub interfaces on r1
+
+currently because we created a trunk
+
+between switch 1 and switch 2 pcs in the
+
+same VLAN can ping each other again I'll
+
+ping once more from pc1 to pc2 show this
+
+ping 1000 3 as you can see there are
+
+once again no problems
+
+however pings to a different VLAN should
+
+not work let's just ping from pc1 to pc2
+
+check King 1000 131 as you can see the
+
+ping fails now one way of configuring
+
+inter VLAN routing the one we will be
+
+using in this lab is called router on a
+
+stick as you can see there is only one
+
+connection between r1 and switch one
+
+however we will configure two sub
+
+interfaces using the single connection
+
+and each sub interface will have a
+
+separate IP address which serves as the
+
+default gateway for the pcs in each VLAN
+
+note that I have already configured the
+
+pcs with their default gateways so let's
+
+configure r1 enable comte first I will
+
+turn on the Gigabit Ethernet 0 0
+
+interface which is shut down by default
+
+interface G 0 0 no shutdown next let's
+
+configure the sub interface for VLAN 13
+
+first type interface G 0 0 as normal
+
+then dot 13 as you can see we are in sub
+
+interface configuration mode I'll set
+
+the IP address to 1001 so IP address
+
+1001 with the subnet mask of
+
+255.255.255.0
+
+is equivalent to
+
+25 but the command doesn't work we have
+
+to configure this sub interface as part
+
+of a VLAN first that is done with this
+
+command encapsulation dot1q 13 now we
+
+can configure the IP address IP address
+
+1000 1 255.255.255.192 face for VLAN 24
+
+interface g0 0.24 we will use an IP
+
+address of 1000 1 2 9 and a subnet mask
+
+of 255.255.255.0 - we have to configure
+
+the encapsulation encapsulation dot1q 24
+
+IP address 1000 dot 1 to 9 255 dot 255
+
+dot 255 dot 1 to 8 the configuration of
+
+r1 is now complete however there is one
+
+more final step remember that switch
+
+ones interfaces are access ports in the
+
+native VLAN VLAN 1 by default that
+
+includes Gigabit Ethernet 0 1 which is
+
+connected to r1 so it can't send traffic
+
+from VLAN 13 or VLAN 24 to r1 let's make
+
+it a trunk interface g0 1 switch port
+
+mode trunk ok
+
+step 4 is complete
+
+finally let's test this small Network
+
+all pcs should be able to ping each
+
+other even though they're in separate
+
+VLANs
+
+as in the beginning of the lab helping
+
+each other PC from pc1 and from PC to to
+
+check let's go to PC one first
+
+first I'll paint PC to ping 1000 130 it
+
+works
+
+next I'll ping pc3 ping 1000 3 it works
+
+as well and finally PC for ping 1000 won
+
+3-1 it works ok next let's ping from PC
+
+to first up in PC 1 ping 1000 2 and it
+
+works next PC 3 ping 1000 3 it works as
+
+well and finally PC for ping 1000 131 it
+
+works too
+
+we have successfully configured inter
+
+VLAN routing
+
+thank you for watching I hope this lab
+
+and video have been helpful for you
+
+please subscribe for future labs like
+
+this which will be released weekly if
+
+you have requests for any specific labs
+
+let me know in the comment section if
+
+you want to support my channel I accept
+
+Bitcoin donations via the address in the
+
+description I am also a brave verified
+
+publisher and accept bat or basic
+
+attention token donations in the brave
+
+browser
+
