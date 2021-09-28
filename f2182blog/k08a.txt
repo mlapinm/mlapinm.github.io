@@ -1,19 +1,27 @@
-
+0.0
 welcome to this free CCNA packet tracer
 
-practice lab you can download the lab
+practice lab 
+4.69823
+you can download the lab
 
-file from the link in the description in
+file from the link in the description 
+8.036378
+in
 
 this lab we will be working with the
 
 same network topology as in the previous
 
-lab lab number seven in which we
+lab lab number seven 
+15.772173
+in which we
 
 configured inter VLAN routing with the
 
-router on a stick method this time
+router on a stick method 
+19.897418
+this time
 
 however the configurations are all
 
