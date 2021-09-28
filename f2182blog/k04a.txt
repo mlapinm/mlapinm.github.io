@@ -221,175 +221,281 @@ I should see our two
 there
 
 it is
-
+207.684985
 r1 is connected to our - through the
 
-serial zero interface let's run the
+serial zero interface 
+211.641346
+let's run the
 
-command on our to type end to return to
+command on our two 
+215.513918
+type end to return to
 
-privileged exec mode show CDP neighbors
+privileged exec mode 
+219.417508
+show CDP neighbors
+222.974449
+r2 is also connected to r1 through the
 
-- is also connected to r1 through the
-
-serial zero interface and switch -
+serial zero interface 
+233.130465
+and switch two
 
 through the Fast Ethernet zero interface
-
-finally let's move on to switch to
-
-enable show CDP neighbors as you can see
+236.115336
+finally let's move on to switch two
+240.601434
+enable show CDP neighbors 
+246.1742
+as you can see
 
 switch 2 is connected to R 2 through the
 
-Fast Ethernet 0-1 interface step 1 is
+Fast Ethernet 0-1 interface 
+252.643814
+step 1 is
 
 now complete
-
+255.471895
 step2 asks us to identify which end of
 
 the serial connection is DCE
-
-and which end is DTE in serial
+265.096818
+and which end is DTE 
+267.39343
+in serial
 
 connections one side is DCE
 
-or data communications equipment and one
+or data communications equipment 
+272.575616
+and one
 
 side is DTE or data terminal equipment
-
+276.184652
 the most important difference between
 
 the two is that the DCE device supplies
 
 the clock signal that paces the
 
-communications which will adjust in the
+communications 
+283.744393
+which will adjust in the
 
-next step to identify which is which
+next step 
+286.779967
+to identify which is which
 
-let's go to r1 first we'll use the
+let's go to r1 first 
+291.616351
+we'll use the
 
-command show controllers serial zero if
+command show controllers serial zero 
+295.956611
+if
 
-we just type show controllers we would
+we just type show controllers 
+298.823908
+we would
 
 be overwhelmed with information about
 
-every interface on the router so make
+every interface on the router 
+303.236244
+so make
 
-sure to specify serial zero can you find
+sure to specify serial zero 
+306.247824
+can you find
 
-what we're looking for there it is and
+what we're looking for 
+309.63548
+there it is 
+311.101373
+and
 
 this side is the DCE
-
+313.443728
 you can also see the clock rate
 
-mentioned earlier well now I know which
+mentioned earlier 
+316.710507
+well now I know which
 
-side is DC e that means R 2 should be
+side is DC e 
+320.685413
+that means R 2 should be
 
 DTE but let's check anyway
+325.399466
+let's hop onto r2 
+328.061367
+show controllers
 
-let's hop onto our to show controllers
-
-serial zero as expected R 2 is DTE step
+serial zero 
+331.053586
+as expected R 2 is DTE 
+334.817174
+step
 
 two is now complete
-
+336.833121
 for step three we have to set the clock
 
 rate on the DCE end to 64 kilobits per
 
-second so let's go back to our one we
+second 
+345.587313
+so let's go back to r1 
+348.632922
+we
 
 have to configure the serial zero
 
-interface so compte then interface
+interface 
+352.524099
+so conf t then interface
 
-serial zero now we are in interface
+serial zero 
+356.709099
+now we are in interface
 
-configuration mode the clock rate is set
+configuration mode 
+359.782783
+the clock rate is set
 
-with the clock rate command let's use
+with the clock rate command 
+364.041079
+let's use
 
 the question mark to see what options we
 
-have as you can see here these options
+have 
+367.792055
+as you can see here these options
 
-are listed in bits per second our task
+are listed in bits per second 
+372.757799
+our task
 
 is to set the speed to 64 kilobits per
 
-second which is 64,000 bits per second
+second 
+377.548125
+which is 64,000 bits per second
+380.617687
+so let's do that 
+382.182228
+that's all for step
 
-so let's do that that's all for step
+three 
+384.452651
+we don't have to do anything on
 
-three we don't have to do anything on
-
-the DTE side step four tells us to set
+the DTE side 
+387.003249
+step four tells us to set
 
 the IP addresses of the serial
 
-interfaces of r1 and r2 to 192.168.1 /
+interfaces of r1 and r2 to 192.168.0.1 /
 
-24 and 192.168 to
+24 and 192.168.0.2 /24
+404.778665
+interface configuration mode on r1 
+409.050174
+so
 
-interface configuration mode on r1 so
-
-let's configure r1 IP address
+let's configure r1 
+410.87602
+IP address
 
 192.168.1.1 at him this is something you
 
 should know if not don't worry about it
+426.513926
+it's 255.255.255.0 
+430.565633
+there we go 
+432.043959
+now let's
 
-it's 255.255.255.0 there we go now let's
+do the same on r2 
+434.811706
+conf t interface
 
-do the same on r2 conf t interface
-
-serial zero IP address 192.168.0.0
-
+serial zero 
+439.66486
+IP address 192.168.0.2
+444.158026
 that's all for step four
-
+449.659766
 finally Step five asks us to test
 
-connectivity between the routers since
+connectivity between the routers 
+456.591307
+since
 
-we're already on our - let's do it from
+we're already on r2 
+458.750807
+let's do it from
 
-here type end to return to privileged
+here 
+460.183246
+type end to return to privileged
 
-exec mode the IP address of our one
+exec mode 
+463.268323
+the IP address of our one
 
 serial zero interface is 192.168.0.1 so
+470.39099
+ping 192.168.0.1 
+474.510172
+as you can see we have
 
-ping 192.168.0.1 as you can see we have
+connectivity between the routers 
+478.626241
+that's
 
-connectivity between the routers that's
-
-all for this lab thank you for watching
-
+all for this lab 
+480.434685
+thank you for watching
+484.845029
 I hope this lab and video have been
 
-helpful for you please subscribe for
+helpful for you 
+487.940151
+please subscribe for
 
 future labs like this which will be
 
-released weekly if you have requests for
+released weekly 
+492.652226
+if you have requests for
 
 any specific labs let me know in the
 
-comment section if you want to support
+comment section 
+497.972229
+if you want to support
 
 my channel I accept Bitcoin donations
 
-via the address in the description I am
+via the address in the description 
+503.863801
+I am
 
-also a brave verified publisher and
+also a brave verified publisher 
+507.406431
+and
 
 accept bat or basic attention token
 
 donations in the brave browser
-
+512.793647
+512.793647
+512.793647
 
