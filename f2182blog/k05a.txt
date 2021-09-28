@@ -1,1 +1,452 @@
-aabbаабб
+0.0
+welcome to this free CCNA packet tracer
+
+practice lab 
+5.668263
+you can download the lab
+
+file from the link in the description 
+7.530295
+in
+
+this lab we will be working with two
+
+switches switch 1 and switch 2 and 4 pcs
+
+pc-1 pc2 pc 3 and PC 4 
+19.955083
+we will assign
+
+these computers to VLANs 
+23.576648
+VLANs or
+
+virtual lands are used to isolate
+
+computers at layer 2 
+29.89855
+if you look at the
+
+network diagram you will notice that
+
+these 4 computers are in the same layer
+
+3 network 
+36.698614
+that 1.0.0.0 / 24 network 
+41.113068
+we will
+
+use VLANs to separate them into two
+
+groups of two 
+46.203877
+try to complete the lab
+
+yourself first 
+49.452383
+and then continue
+
+watching this video if you have trouble
+
+or watch it afterwards to check your
+
+solution 
+54.960541
+step one is to ping between the
+
+computers to check connectivity 
+61.258982
+let's do
+
+this on pc one 
+63.50488
+I'll ping PC to first 
+68.315315
+pin
+
+1.0.0.2 to the pin works 
+73.348651
+next PC 3 
+75.237043
+ping
+
+10.0.0.3 the ping works again 
+79.868242
+next PC four
+81.92165
+ping 10.0.0.4 
+84.805856
+all of our pings worked as
+
+expected 
+87.948724
+that's all for step 1
+90.151799
+step two is to assign pc1 & pc2 vlan1
+98.563526
+and PC to and PC four to VLAN two 
+102.02136
+this is
+
+done by configuring the switch
+
+interfaces they are connected too 
+107.466508
+let's
+
+do this on switch one first 
+109.825902
+so we'll be
+
+assigning pc-1 to VLAN 1 and PC 2 to VLAN 2
+115.507132
+enable conf t 
+120.950041
+PC one is connected to
+
+Fast Ethernet 0 2 so interface f0 2 
+127.79925
+now
+
+I will enter the command switch port
+
+mode access 
+133.489507
+switch ports connected to
+
+end hosts like a PC should be configured
+
+as access ports 
+139.613778
+switch ports are in
+
+access mode by default but I like to
+
+explicitly configure this 
+146.09588
+next we will
+
+assign it to VLAN 1 
+149.843853
+switch port access
+
+VLAN 1 
+153.592921
+next is PC 2 which is connected
+
+to Fast Ethernet 0 3 
+
+interface f0 3
+162.657601
+switch port mode access 
+165.73751
+switch port
+
+access VLAN 2 
+168.177257
+as you can see the switch
+
+creates VLAN 2 for us 
+171.559603
+because we hadn't
+
+created it before 
+173.887035
+let's check the
+
+running config to confirm our
+
+configuration 
+178.713979
+do show run on 
+182.634992
+both
+
+interfaces you can see the switch port
+
+mode access command 
+187.162208
+and on Fast Ethernet
+
+0 3 you can see it is assigned to VLAN
+
+two 
+192.903867
+but why don't we see our switch port
+
+access via an one command on Fast
+
+Ethernet 0 2 
+198.76762
+this is because of what's
+
+called the native VLAN 
+202.708909
+in normal VLANs
+
+the switch tags the packet from that
+
+VLAN to identify it as belonging to that
+
+VLAN 
+210.761517
+the native VLAN however doesn't
+
+need to be tagged 
+215.037345
+and any packets that
+
+are untagged are assumed to belong to
+
+that VLAN 
+219.555577
+and VLAN 1 is the default
+
+native VLAN on Cisco switches
+224.905294
+because of this by default all
+
+interfaces belong to VLAN one 
+230.697352
+if you try
+
+to explicitly configure an interface as
+
+VLAN one 
+235.06166
+it won't even show up in the
+
+configuration as you can see here
+238.956898
+note that the native VLAN can be changed
+
+and for security purposes it often is
+245.163209
+but for this lab we will keep it as is
+248.080379
+next let's hop over to switch two 
+251.615847
+enable
+
+conf T interface
+
+f02 
+257.82405
+let's do the exact same thing as
+
+with pc1 & pc2 
+261.626809
+switch port mode access
+264.183612
+switch port access VLAN one 
+267.462302
+interface
+
+f03
+270.913277
+switch port mode access switch port
+
+access VLAN two 
+275.750091
+there we go
+
+let's check the running config on switch
+
+two as well 
+280.273484
+do show run 
+282.954998
+again we see the
+
+same thing as on switch one 
+286.709803
+step two is
+
+now complete
+288.803406
+step three is to attempt to ping between
+
+PC one and PC3 and PC two and PC four 
+299.253312
+so
+
+we're going to attempt to ping between
+
+computers in the same VLAN 
+303.43147
+let's hop on
+
+PC one first 
+306.477165
+ping 10.0.0.3 the pings
+
+are successful 
+313.821203
+next let's hop on PC2
+316.617918
+ping 10.0.0.4 
+321.868637
+our pings fail 
+327.358279
+why is
+
+that 
+328.606538
+pc1 & pc2 same VLAN 
+331.557225
+and their pings
+
+worked 
+333.244937
+PC 2 and PC 4 are in the same
+
+VLAN as well 
+337.168459
+so why can't we ping
+
+between them 
+340.232972
+remember what I said about
+
+the native VLAN 
+343.245626
+the fastethernet 0/1
+
+interfaces of switch 1 and switch 2 are
+
+assigned to the native VLAN 
+349.989904
+which is
+
+VLAN 1 by default 
+352.547552
+so only traffic from
+
+VLAN 1 can pass through them 
+356.139634
+we'll fix
+
+that in step 4
+358.481089
+step four is to configure the interfaces
+
+connecting switch 1 and switch two as
+
+trunk interfaces 
+369.364215
+in order to allow
+
+traffic from multiple VLANs to pass
+
+between the two switches
+374.500603
+we must configure their fastethernet 0/1
+
+interfaces as trunk interfaces 
+379.464989
+let's do
+
+that on switch one first 
+382.512166
+interface f01
+388.177883
+switch port mode trunk 
+390.308118
+next switch two
+393.017568
+interface f01 switch port mode trunk
+400.091967
+that's it for step 4
+402.685414
+Step five is to once again ping between
+
+the computers 
+408.675267
+if we correctly configured
+
+everything we should be able to ping
+
+between PC one and PC3 and between PC two
+
+and PC four 
+418.142776
+but the other pings should
+
+fail 
+420.085872
+let's start from PC one again
+423.099286
+first let's ping PC two 
+426.223408
+as expected the
+
+pings failed 
+433.229358
+next PC three which should
+
+succeed 
+436.847325
+as expected the ping succeeded
+442.422032
+finally PC four 
+446.282995
+again the pings failed
+450.903521
+let's ping from PC2 as well 
+454.171055
+ping PC
+
+one 
+458.516593
+the pings failed 
+461.397392
+PC three the pings
+
+failed 
+468.484928
+finally PC4 the ping succeeded
+473.227537
+as you can see we have successfully
+
+isolated the computers between VLANs
+478.25822
+even though they're on the same layer 3
+
+Network 
+481.223136
+that's all for this lab
+483.214602
+thank you for watching I hope this lab
+
+and video have been helpful for you
+491.074798
+please subscribe for future labs like
+
+this which will be released weekly 
+495.89011
+if
+
+you have requests for any specific labs
+
+let me know in the comment section 
+501.069858
+if
+
+you want to support my channel I accept
+
+Bitcoin donations via the address in the
+
+description 
+507.576312
+I am also a brave verified
+
+publisher and accept bat or basic
+
+attention token donations in the brave
+
+browser
+515.88
+515.88
+515.88
+
