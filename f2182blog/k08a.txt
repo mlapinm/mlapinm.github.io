@@ -1,1 +1,260 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description in
+
+this lab we will be working with the
+
+same network topology as in the previous
+
+lab lab number seven in which we
+
+configured inter VLAN routing with the
+
+router on a stick method this time
+
+however the configurations are all
+
+completed the task this time is to
+
+troubleshoot a configuration error and
+
+fix it troubleshooting is an important
+
+skill to have for your CCENT and CCNA
+
+exams and also of course in real-world
+
+situations because problems will
+
+inevitably come up try to complete this
+
+lab on your own first
+
+then continue watching this video if you
+
+have trouble or watch it after to check
+
+your solution remember the exact method
+
+you use to troubleshoot doesn't have to
+
+match mine as long as the end result is
+
+that you solve the problem so this is
+
+our scenario we have 4 pcs with pc1 &
+
+pc2 being in VLAN 13 and pc 2 and pc for
+
+being in VLAN 24 someone has configured
+
+inter VLAN routing to allow these pcs to
+
+communicate with each other but
+
+evidently there is some problem
+
+preventing them from doing so
+
+in a troubleshooting scenario like this
+
+we should first confirm the problem if I
+
+send pings from pc1 I shouldn't be able
+
+to ping PC to in PC for the scenario
+
+doesn't mention that computers in the
+
+same VLAN can't communicate so pc1 & pc2
+
+should be able to ping each other
+
+likewise PC 2 shouldn't be able to ping
+
+PC 1 or PC 3 but should be able to ping
+
+pc 4 let's test I'll use PC 1 first
+
+first ping PC to ping 1000 130 doesn't
+
+work next ping pc3 ping 1000 3 the ping
+
+works next PC for ping 1000 131 doesn't
+
+work ok let's try from PC to as well
+
+paying PC 1 first ping 1000 2 doesn't
+
+work next PC 3 ping 1003 doesn't work
+
+finally PC for paying 1000 131 it works
+
+so we have confirmed the problem
+
+computers in the same VLAN can
+
+communicate but our inter VLAN routing
+
+isn't working
+
+because we are using r1 to route between
+
+subnets providing our inter VLAN routing
+
+it's probably a good idea to look around
+
+the link between switch 1 and r1
+
+first let's check on switch 1 enable
+
+let's check if the gig 0 1 interface is
+
+down show IP interface brief nope as you
+
+can see it is up and up perhaps the gig
+
+0 1 interface isn't configured as a
+
+trunk now we could use show run to check
+
+but for exam purposes as well as real
+
+world purposes it's important to know
+
+other commands to let's use the show
+
+interfaces trunk command as you can see
+
+both of our trunks are working and
+
+allowing all the VLANs that we are using
+
+let's head over to r1 and check things
+
+out
+
+enable show IP interface brief looks
+
+like the interface is up and the IP
+
+addresses are configured as 1000 dot one
+
+for VLAN 13 and 1000 dot 1 to 9 for VLAN
+
+24 these IP addresses should be
+
+configured on the PCs as their default
+
+gateway let's quickly check each PC to
+
+make sure on PC one ipconfig /all looks
+
+good
+
+next on PC to ipconfig /all looks good
+
+as well
+
+PC 3 ipconfig /all looks good
+
+finally on PC 4 ipconfig /all no
+
+problems here now let's go back to our
+
+one perhaps there is a different miss
+
+configuration on the sub interfaces
+
+remember we had to configure the VLAN
+
+before the IP address on these sub
+
+interfaces in the previous lab let's
+
+check again show run is always an option
+
+but let's do this show interface g0 0.13
+
+VLAN ID 13 that's correct
+
+next show interface g0 0.24 VLAN ID 14
+
+looks like we found the problem there is
+
+no VLAN 14 on the network this is
+
+supposed to be VLAN 24 let's go fix that
+
+comte interface g0 0.24 encapsulation
+
+dot1q 24 ok that should solve the
+
+problem a configuration error like this
+
+could very well be a simple typo always
+
+be sure to
+
+your configurations carefully in your
+
+exams and in real-world situations
+
+have to check that our network actually
+
+works with inter VLAN routing now
+
+properly configured all four pcs should
+
+be able to ping each other let's hop on
+
+PC one again
+
+first let's ping PC to ping 1000 130 the
+
+ping works then pc 3 ping 1000 dot 3 it
+
+works again next PC for paying 1000 131
+
+the ping works
+
+looks like our problem is solved just to
+
+be sure I'll send some pings from PC to
+
+as well paint 1000 dot - it works ping
+
+1000 dot 3 it works
+
+ping 1000 won 3-1 it works as well we
+
+have successfully fixed the network
+
+thank you for watching I hope this lab
+
+and video have been helpful for you
+
+please subscribe for future labs like
+
+this which will be released weekly if
+
+you have requests for any specific labs
+
+let me know in the comment section if
+
+you want to support my channel I accept
+
+Bitcoin donations via the address in the
+
+description I am also a brave verified
+
+publisher and accept bat or basic
+
+attention token donations in the brave
+
+browser
+
+
