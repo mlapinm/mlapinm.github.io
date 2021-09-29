@@ -1,146 +1,310 @@
-
+0.0
 welcome to this free CCNA packet tracer
+practice lab 
+4.381351
+you can download the lab
+file from the link in the description
+7.711086
+this lab will largely be a review of
+VLANs 
+12.269324
+but with a couple commands we
+didn't cover before 
+15.095584
+which you should be
+familiar with for the test 
+16.829985
+as always try
+to complete the lab on your own first
+21.22814
+then continue watching this video if you
+have trouble 
+24.114711
+or watch it after to check
+your solution 
+26.588038
+note that just for the
+purpose of this video I have
+pre-configured switch 2 to save time
+31.925287
+this is not the case in the lab file you
+can download below 
+36.104123
+although in this lab
+the configurations for each switch
+happen to be the same 
+40.779842
+it's good to
+practice them twice 
+42.983762
+step one is to set
+the host names of the switches 
+48.614783
+for most
+of these labs I've been pre configuring
+the host names but let's quickly review
+the command 
+54.7167
+I'll hop on switch one and
+enable conf t host name switch 1 
+62.909658
+again
+for this video I already configured
+switch 2 
+67.026076
+step 1 is now complete
+69.473172
+step two is to create two VLANs on the
+switches and configure their names 
+76.630643
+you
+may remember from previous labs that
+when you assign a switch interface to a
+VLAN that doesn't exist 
+83.698647
+the switch
+automatically creates the VLAN for you
 
-practice lab you can download the lab
+86.303929
+however you can also manually create
+VLANs and there are situations where
+you'll have to do that 
+92.654156
+the command you
+use to create a VLAN is also used to
+enter VLAN configuration mode 
+98.840377
+which is
+required to configure the name of a VLAN
+101.967943
+first let's use the do show VLAN command
+105.420704
+remember that do is used to allow us to
+perform commands in global configuration
+interface configuration or other modes
+which we would normally have to be in
+privileged exec mode to use 
+116.459729
+if you're in
+privileged exec mode don't include that
+do 
+120.713308
+as you can see this gives us a lot of
+information about the VLANs 
+125.787031
+however for
+our purposes now let's instead use the
+do show VLAN brief command 
+131.488062
+this gives a
+nice summary of which VLANs we have 
+136.532116
+and
+which interfaces of the switch are
+assigned to which VLAN 
+140.750763
+note which VLANs
+are present by default 
+143.960696
+VLAN 1 twitch all
+ports or interfaces are assigned by
+default 
+149.302416
+also VLANs 1003 1005 which
+are used for FDDI and token ring 2
+things you definitely don't need to
+worry about for your CCNA 
+159.831127
+now the
+command to create VLAN 13 is VLAN 13 
+165.662284
+as
+you can see this puts us into VLAN
+configuration mode 
+169.699744
+also I'll use the
+show VLAN brief command 
+174.180124
+and you can see
+that the VLAN has been created 
+177.182903
+also note
+that the default VLAN name is VLAN
+followed by the four-digit VLAN number
+in this case 0 0 1 3 
+188.072563
+now let's change
+the name to management with the command
+named management 
+194.76125
+ok now let's use the
+same commands for VLAN 24 VLAN 24 
+202.262893
+name engineering
+205.206792
+and now let's show VLAN briefed again
+and check 
+210.496928
+we have successfully created
+VLAN 13 and VLAN 24 with the names
+management and engineering 
+218.29557
+when you're
+doing the lab performed the same
+configurations on switch 2 and that's
+step 2
+223.456275
+step three is to place pc1 & pc2 into
+VLAN 13 & pc2 and pc 4 into VLAN 24 
+232.873363
 
-file from the link in the description in
+since we're just doing switch 1 for this
+video I'll put PC 1 into VLAN 13 and PC
+2 into VLAN 24 
+240.064026
+first PC 1 which is
+connected to a Fast Ethernet 02
+244.729052
+interface f02 switch port access VLAN
+13 
+251.693157
+in the previous labs I also use the
+command switch port mode access 
+256.398697
+but you
+may remember that I said this isn't
+necessary because the interfaces are in
+access mode by default 
+261.898656
+just to prove
+this I won't use the command for this
+video 
+265.745851
+next for PC 2 interface f03
+switch port access VLAN 24 
+274.094956
+do show VLAN
+briefed 
+276.682162
+as you can see Fast Ethernet 0 2
+which pc 1 is connected to is in VLAN 13
+and Fast Ethernet 0 3 which pc 2 is
+connected to is in VLAN 24 
+288.094455
+that's all
+for step 3
+289.57954
+step four is to configure a trunk link
+between switch 1 and switch 2 
+297.004933
+they are
+connected by their fastethernet 0/1
+interfaces 
+301.206311
+so interface f01 switch port
+mode trunk 
+306.938347
+that's it
+let's confirm 
+309.703064
+and you can use this
+command show interfaces trunk to check
+which interfaces are in trunking mode
+317.879553
+you can see f01 is now trunking 
+321.611565
+the
+encapsulation is 802.1 q which is
+the only option on this switch 
+327.13959
+and the
+native VLAN is 1 which is the default
+330.106283
+you can also see that all VLANs are
+allowed on the trunk which is default as
+well
+335.802469
+however vlans 1 13 and 24 are the
+only ones that are allowed and active in
+management domain 
+344.724188
+VLAN 1 because it is
+the native VLAN 
+348.460931
+and the default VLAN to
+which all interfaces are assigned 
+351.83423
+the 2
+VLANs we created vlan's 13 and 24
+also appear 
+356.961493
+let me do the command again
+to refresh 
+361.008062
+show interfaces trunk 
+363.774063
+as you
+can see VLANs 1 13 and 24 also appear
+under VLANs in spanning tree forwarding
+state and not pruned 
+374.43307
+spanning tree and
+pruning our topics for another time
+377.996017
+Step five is to save the configuration 
+382.979918
+I
+haven't included this as a step in every
+lab but don't forget about it 
+387.660156
+this time
+let's use the write to command 
+390.381626
+there we
+go
+finally let's ping between pcs to check
+connectivity 
+396.918705
+because I already set up
+switch 2 PC 1 should be able to ping
+PC 3 and PC 2 should be able to ping PC
+4 
+404.470974
+so let's go on PC 1 ping 192.168.0.3 
+413.021272
+ok
+it works and now on PC 2 
+423.227583
+ping 192.168.0.4 
+427.773859
 
-this lab we will review the creation of
-
-a local user database on the router and
-
-introduced the banner function this will
-
-be a fairly short lab but try to
-
-complete it on your own first and then
-
-continue watching this video if you have
-
-trouble or watch it after to check your
-
-solution step one is to use PC one to
-
-connect to r1 via the console port
-
-they're already connected by a cable so
-
-let's click on PC one desktop terminal
-
-and press ok to accept the default
-
-configurations step two is to create two
-
-users on our one last time we created
-
-user accounts with passwords this time
-
-we will use secrets same as with the
-
-enable password and an able secret
-
-passwords are not encrypted but secrets
-
-are encrypted by default an able conf t
-
-username CCNA secret Cisco with a
-
-capital C remember that user name isn't
-
-case sensitive but the password or
-
-secret is next user username CCNP secret
-
-Cisco I'll quickly type do show run to
-
-check that their encrypted as you can
-
-see they are encrypted by default step 3
-
-is to set the console port to use the
-
-local database to authenticate users
-
-line console 0 login local that's it
-
-step four is to set a message of the day
-
-banner of welcome to packet racer and a
-
-login banner of authorized users only
-
-banners are messages that display before
-
-or after users log in in this case the
-
-message of the day banner will be
-
-displayed above the login banner and
-
-both will be displayed before our user
-
-logs in so exit to make the banner of
-
-the day we use this command banner motd
-
-then I'll use the question mark to show
-
-the next option as you can see we need
-
-to enter a delimited character to
-
-indicate the start and end of the
-
-message if you type the message directly
-
-it will think that the first character
-
-is the delimiting character and it will
-
-be excluded from the message itself you
-
-can use whatever you want but I'll use
-
-an asterisk asterisk
-
-welcome to packet tracer asterisk okay
-
-now the same process for the log in
-
-banner banner login asterisk authorized
-
-users only asterisk now we've set up the
-
-two banners finally let's log out and
-
-see if our messages work and logout
-
-there we go
-
-before we log in you can see our message
-
-of the day and then our log in banner
-
+it works as well 
+434.519253
+that's all for this lab
+436.140664
 thank you for watching I hope this lab
-
 and video have been helpful for you
-
+443.057552
 please subscribe for future labs like
-
-this which will be released weekly if
-
+this 
+445.688557
+which will be released weekly 
+448.068989
+if
 you have requests for any specific labs
-
-let me know in the comment section if
-
+let me know in the comment section 
+452.680094
+if
 you want to support my channel I accept
-
-Bitcoin and aetherium donations via the
-
-addresses in the description I am also a
-
-brave verified publisher and accept bat
-
+Bitcoin and etherion donations via the
+addresses in the description 
+459.953831
+I am also a
+brave verified publisher 
+463.232987
+and accept bat
 or basic attention token donations in
-
 the brave browser
+468.275869
+468.275869
+468.275869
