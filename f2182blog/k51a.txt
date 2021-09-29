@@ -1,1 +1,280 @@
-aabbаабб
+
+welcome to this free CCNA packet racer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description also please subscribe to the
+
+channel for more labs like this in this
+
+lab we will troubleshoot the topology we
+
+configured in the previous lab several
+
+miss configurations are preventing our
+
+ether channels from operating as
+
+intended
+
+let's troubleshoot the errors and fix
+
+them first let's take a look at switch 1
+
+enable show ether channel summary so we
+
+have port channel 1 configured and it's
+
+layer 2 however it is down as this D
+
+indicates the eye next to the interfaces
+
+indicates standalone meaning they aren't
+
+properly paired with interfaces on
+
+switch 2 to make the ether channel
+
+however you should be able to spot the
+
+problem here the ether channel between
+
+switch 1 and switch 2 is supposed to be
+
+using pagp not LACP that could be why
+
+switch 1 and switch 2 aren't
+
+successfully forming either channel
+
+let's change that conf t interface range
+
+f 0 1 through 4 no channel group 1 also
+
+just to be safe I'll delete the port
+
+channel interface as well no interface
+
+po1 okay let's reconfigure that
+
+interface range F 0 1 through 4 channel
+
+Group 1 mode desirable do show ether
+
+channel summary ok our port channel is
+
+working however F 0 1 is down let's see
+
+what's up on switch to enable show ether
+
+channel summary F 0 4 which is connected
+
+to switch ones F 0 1 is down as well
+
+remember in the previous video I said
+
+port speed duplex etc had to match for
+
+the ether channel to work
+
+when one interface isn't properly
+
+joining the port channel one of those
+
+things could be the problem
+
+show interface f0 for full duplex 10
+
+megabits per second
+
+let's check other interfaces show
+
+interface f03 full duplex a hundred
+
+megabits per second show interface f0 to
+
+again 100 megabits per second show
+
+interface F 0 1 100 megabits per second
+
+let's also quickly check switch once F 0
+
+1 interface do show interface F 0 1
+
+again 100 megabits per second there's a
+
+problem the other interfaces are all
+
+using a speed of 100 megabits per second
+
+let's adjust f0 for is speed to the same
+
+compte interface f0 for speed 100 do
+
+show ether channel summary there we go
+
+all interfaces now have the PFLAG beside
+
+them meaning import channel however
+
+notice port channel 1 the ether channel
+
+with switch 3 is down gig 0 1 and gig 0
+
+2 don't show up here I'll add them
+
+quickly interface range G 0 1 2 2
+
+channel Group 1 mode on do show ether
+
+channel summary looks like it's up now
+
+let's check on switch 3 enable show
+
+ether channel summary look at poor
+
+channel 1 it has the flags s and u s
+
+means layer 2 that's not correct it's
+
+supposed to be layer 3 it's showing you
+
+4 in use here but on switch to its at
+
+layer 3 down show IP interface g0 1 show
+
+IP interface g0 to notice both
+
+interfaces state
+
+internet protocol processing disabled
+
+that means the interface is our layer to
+
+not layer three and thus the port
+
+channel is layer two as well
+
+show run indeed the gig zero one and
+
+gigs zero two interfaces do not have
+
+that no switch port command configured
+
+let's configure it
+
+coffee tea interface range G zero one
+
+two two
+
+no switch port notice the command is
+
+rejected switch three is already
+
+configured for a layer two ether channel
+
+let's undo that configuration and then
+
+redo it no channel Group one no
+
+interface po1 interface range G zero one
+
+two two no switch port channel Group one
+
+mode on all so let's give it an IP
+
+address interface po1 IP address 2300 to
+
+255.255.255.0 do show ether channel
+
+summary looks good here it's layer three
+
+now let's check once more on switch to
+
+do show ether channel summary ok it
+
+looks good here let's do one last check
+
+do ping 2300 to okay it looks good we
+
+can ping switch threes end of the ether
+
+channel now let's go back to switch 3
+
+notice the port channel with switch for
+
+is down all of the interfaces have the
+
+standalone flag let's take a look at the
+
+configuration do show run channel group
+
+2 mode passive ok now let's look at
+
+switch for enable show ether channel
+
+summary same thing here show run
+
+okay here's our problem both switches
+
+are in LACP passive mode passive mode
+
+and passive mode won't form an ether
+
+channel at least one side has to be
+
+active
+
+let's make switch for active and see if
+
+that solves the problem compte interface
+
+range F 0 1 through 4 channel Group 1
+
+mode active do show ether channel
+
+summary there we go the port channel is
+
+up and all interfaces have the import
+
+channel flag let's confirm on switch 3
+
+as well do show ether channel summary
+
+okay looks good we have fixed all of the
+
+problems with our ether channels that's
+
+all for this lab thank you for watching
+
+I hope this lab and video have been
+
+helpful for you please subscribe for
+
+future labs like this which will be
+
+released weekly if you have requests for
+
+any specific labs let me know in the
+
+comments section if you want to support
+
+my channel I accept Bitcoin and etherium
+
+donations via the addresses in the
+
+description I am also a brave verified
+
+publisher and accept bat or basic
+
+attention token donations in the brave
+
+browser

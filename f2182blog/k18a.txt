@@ -1,1 +1,276 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description in
+
+this lab we will take another look at
+
+the port security function of Cisco
+
+switches specifically we will learn
+
+about the sticky MAC address function
+
+the sticky MAC address function of port
+
+security saved secure MAC addresses into
+
+the switch configuration when they are
+
+dynamically learned on a switch port
+
+with port security enabled try to
+
+complete this lab yourself first then
+
+continue watching this video if you have
+
+trouble or watch it after to check your
+
+solution there are a few more steps in
+
+this lab than in my previous labs but
+
+these are all pretty short steps step
+
+one is to enable port security on the
+
+switch ports connected to end hosts
+
+let's go on switch one first enable
+
+count T interface F 0 2 remember we have
+
+to set the interface as an access port
+
+first so switch port mode access switch
+
+port port security that's all for switch
+
+1 now let's do the same on switch to
+
+enable con 40 interface F 0 to switch
+
+port mode access switch port port
+
+security now let's go straight into step
+
+2 which is to ping from pc1 to pc2 to
+
+generate traffic between them remember
+
+that no traffic is passing between these
+
+pcs by default so the switches won't
+
+learn the MAC addresses of the PCs until
+
+we send some traffic between them I'll
+
+ping from PC one paying 192.168.1.2 elv
+
+there we go step 3 is to view the secure
+
+MAC addresses on switch 1 I'll go back
+
+to switch 1 and now I'll use the command
+
+show port security address as in the
+
+previous lab
+
+as you can see there is a dynamically
+
+learned secure MAC address on the Fast
+
+Ethernet 0 2 interface which must be PC
+
+ones step four says to check the
+
+configuration of switch ones Fast
+
+Ethernet 0 to interface in the running
+
+configuration show running config here
+
+it is as you can see there are only the
+
+two commands we entered before switch
+
+port mode access and switch port port
+
+security remember this as we will
+
+contrast it with sticky mag address
+
+configuration later step 5 is to save
+
+the running config and reload the switch
+
+I'll use write to save then reload ok
+
+now the switch is reloading step 6 is to
+
+view the secure MAC addresses on switch
+
+1 again do you think PC ones MAC address
+
+will still be saved as a secure MAC
+
+address we saved the running
+
+configuration but PC ones MAC address
+
+wasn't anywhere in the running
+
+configuration so let's check the port
+
+security address table again enable show
+
+port security address as you can see PC
+
+ones MAC address is no longer present
+
+dynamically learned secure MAC addresses
+
+will not be retained when you restart
+
+the switch even if you save the running
+
+configuration because the address isn't
+
+actually entered into the runner
+
+configuration when it is dynamically
+
+learned step 7 is to enable the sticky
+
+secure MAC address feature on switch
+
+ones
+
+f02 interface con 40 interface f0 to now
+
+this feature is enabled with this
+
+command switch port port security MAC
+
+address sticky that's it
+
+now let's ping between the PCs again to
+
+generate traffic
+
+on PC one ping 192.168.1.1 that's all
+
+for step 7 step 8 is to view the secure
+
+MAC addresses of switch 1 then the
+
+running config so on switch 1 show port
+
+security address there is PC ones MAC
+
+address again this time it is listed as
+
+a secure sticky address what's the
+
+difference well let's check the running
+
+configuration show run as you can see in
+
+addition to the three commands we
+
+manually configured on the interface
+
+there is a fourth one which we didn't
+
+configure switch port port security MAC
+
+address sticky followed by PC ones MAC
+
+address this is because we enabled the
+
+sticky feature when this feature is
+
+enabled the switch saves dynamically
+
+learned secure MAC addresses to the
+
+running configuration of the switch step
+
+nine is to save the running
+
+configuration and reload again let's do
+
+that right reload
+
+step 10 is to view the secure MAC
+
+addresses on switch one once again this
+
+time do you expect to see PC ones MAC
+
+address in the table PC ones MAC address
+
+was saved to the running configuration
+
+of switch 1 and we saved the running
+
+configuration before reloading so it
+
+should be in the table even after
+
+restarting let's check enable show port
+
+security address as expected PC ones MAC
+
+address is still saved as a secure MAC
+
+address on the f02 interface so to
+
+review without the sticky feature
+
+enabled dynamically learned secure MAC
+
+addresses are not retained when the
+
+switch is reloaded the sticky MAC
+
+address learning feature however
+
+automatically saves these addresses to
+
+the running configuration and thus will
+
+be retained upon reload if the runner
+
+configuration is saved that's all for
+
+this lab
+
+thank you for watching I hope this lab
+
+and video have been helpful for you
+
+please subscribe for future labs like
+
+this which will be released weekly if
+
+you have requests for any specific labs
+
+let me know in the comment section if
+
+you want to support my channel I accept
+
+Bitcoin and aetherium donations via the
+
+addresses in the description I am also a
+
+brave verified publisher and accept bat
+
+or basic attention token donations in
+
+the brave browser

@@ -1,1 +1,374 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description also please subscribe to the
+
+channel for more labs like this and
+
+share these videos with anyone else
+
+studying for the CCNA in this lab we
+
+will configure H SRP the hot standby
+
+router protocol H SRP is an example of
+
+an F H R P a first hop redundancy
+
+protocol H SRP is a cisco proprietary
+
+protocol by the way so it operates only
+
+on cisco equipment vrrp virtual router
+
+redundancy protocol is a vendor neutral
+
+standard similar to HSR P redundancy is
+
+important in a network because failures
+
+can occur and redundancy can prevent
+
+service outages if a failure occurs
+
+somewhere in the network in this network
+
+for example we will configure pcs in
+
+VLAN 10 to use R 1 as their default
+
+gateway but in the event that our one
+
+fails pcs will automatically transition
+
+to using R 2 which is functioning as the
+
+standby router as their default gateway
+
+now this means that one router will be
+
+inactive until the other fails which is
+
+a waste of bandwidth however we can
+
+achieve load balancing by assigning
+
+different default gateways for different
+
+VLANs in this network well as I said
+
+before VLAN 10 will use R 1 as the
+
+active router and R 2 as the standby we
+
+will configure VLAN 20 to use R 2 as the
+
+active router and R 1 as the standby
+
+let's get started let's start with our
+
+ones configuration enable
+
+call T H SRP is configured at the
+
+interface level let's start with G 0 1
+
+interface G 0 1 H SRP is configured with
+
+the command
+
+standby followed by a group number I'll
+
+use 10 since this will be the default
+
+gateway for VLAN 10 then type IP
+
+followed by the virtual IP address this
+
+is an IP address which isn't necessarily
+
+assigned to a physical interface on
+
+either router but the PCs have been
+
+configured to use it as their default
+
+gateway so when the PCs send an ARP
+
+request for the virtual IP whichever
+
+router is the active router will reply
+
+with its own MAC address so pcs will
+
+send traffic to that router our our
+
+instructions say to use 10.10 10.1 as
+
+the default gateway for VLAN 10 so 10
+
+dot N Da 10.1 now we want to ensure that
+
+our 1 will be the active router so let's
+
+increase the priority first what's the
+
+default priority you can check with this
+
+command do show standby so it's priority
+
+100 which is the default let's increase
+
+the priority for a standby group 10
+
+standby 10 priority and let's increase
+
+it to 110 another part of our
+
+instructions is to use HS RP version 2
+
+which offers some minor improvements
+
+over a version 1 standby version 2 as
+
+you may have noticed standby version 2
+
+doesn't include the group number it
+
+applies to all standby groups on the
+
+interface ok finally let's enable
+
+preemption well what is preemption if r1
+
+fails
+
+r2 will become the active router for
+
+VLAN 10 if preemption is disabled even
+
+if r1 recovers it won't become the
+
+active router again if preemption is
+
+enabled however hour 1 will become
+
+active again when it recovers here's the
+
+command standby 10 preempt ok that's all
+
+for our ones G 0 1 interface instead of
+
+finishing the configuration on r1 let
+
+to Artoo's VLAN 10 configuration and
+
+then test it enable Conti r2 will use
+
+the GZ ur to interface so interface g0 -
+
+all we have to do for r2 is standby
+
+version 2 and standby 10 IP 10 10 10 1
+
+that's it we don't need to configure
+
+preemption here we only need to
+
+configure it on the active router we
+
+also don't need to change the priority
+
+since we already made our ones higher
+
+okay let's go on pc-12 test first I'll
+
+see if I can ping the virtual IP of 10
+
+10 10 1 ping 10 10 10 1 ok it works now
+
+let's try to ping the external server at
+
+1500 one ping 1500 1 ok it works too
+
+now let's confirm the path being taken
+
+traceroute 1500 1 as you can see
+
+traceroute shows our ones IP address not
+
+the virtual IP address so you can use it
+
+to confirm the path let's go do a reload
+
+on our one and see if r2 takes over and
+
+reload
+
+okay let's go on r2 and check if it took
+
+over for r1 do show standby as you can
+
+see our two is now active let's quickly
+
+try that traceroute from pc1 again
+
+traceroute 1500 1 now you can see it
+
+goes via r2 at 10 10 10 3 now r1 is in
+
+the process of booting up however when
+
+it finishes it should take over again as
+
+the active router since we configure
+
+preemption I'll just wait for another 10
+
+seconds or so and then go check
+
+okay hopefully that's enough time let's
+
+go on our one in check an able show
+
+standby there are one is the active
+
+router once again let's trace route one
+
+last time from pc1 trace route 1500 1
+
+now it's going via our one again not our
+
+two
+
+so the configuration for VLAN 10 is
+
+complete now let's configure the
+
+opposite set up for VLAN 20 r2 should be
+
+the active router with our one as backup
+
+or standby I'll configure the active r2
+
+first interface g0 one
+
+standby version to standby 20 I P 10 20
+
+21
+
+standby 20 preempt just to make things
+
+different
+
+I won't increase the priority on the
+
+active let's decrease the priority on
+
+the standby instead so that's all for
+
+our two let's go to our one coffee tea
+
+interface g0 to standby version to
+
+standby 20 I P 10 20 21
+
+standby 20 priority 90 okay that's all
+
+give them some time to talk with each
+
+other and figure things out but soon r2
+
+should become the active and r1 the
+
+stand by for VLAN 20 let's try a ping
+
+from PC three first I'll try to ping the
+
+virtual router to make sure ping 10 20
+
+21 okay we can reach it now let's try to
+
+ping out to the external server ping
+
+1500 1
+
+okay it's reachable so now let's check
+
+the path it's taking traceroute 1501 as
+
+you can see it's going via r2 at 10.20
+
+22 let's test the failover again I'll
+
+reload our to end reload okay let's give
+
+our one a few seconds to take its role
+
+as active for VLAN 20 ok let's try let's
+
+hop back on PC 3 and traceroute again
+
+traceroute 1500 1 great the failover
+
+worked and the ping is now going via r1
+
+at 10.20 23 this time let's wait another
+
+10 seconds or so for r2 to come back
+
+online and take over once again as the
+
+active router
+
+okay hopefully that's enough time let's
+
+give that traceroute one more try here
+
+on PC three traceroute 1500 one alright
+
+now it's back to using R 2 as the
+
+gateway in this lab we configured HS RP
+
+and also showed how you can configure
+
+load balancing by configuring different
+
+active routers for different VLANs
+
+that's all for this lab thank you for
+
+watching I hope this lab and video have
+
+been helpful for you please subscribe
+
+for future labs like this which will be
+
+released weekly if you have requests for
+
+any specific labs let me know in the
+
+comments section if you want to support
+
+my channel I accept Bitcoin and
+
+aetherium donations via the addresses in
+
+the description I am also a brave
+
+verified publisher and accept bat or
+
+basic attention token donations in the
+
+brave browser

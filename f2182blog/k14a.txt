@@ -1,1 +1,250 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description in
+
+this lab we will look a bit more at CDP
+
+cisco discovery protocol this should be
+
+a fairly short lab looking at one more
+
+CDP command which we didn't cover in the
+
+last lab we will use CDP to identify
+
+more detailed information about
+
+neighboring devices beyond that
+
+displayed in the show CDP neighbors
+
+command step one is to use CDP to
+
+identify which interfaces are used to
+
+connect the routers and switches we've
+
+done this in previous labs so this
+
+should be no problem let's go on switch
+
+one first enable show CDP neighbors as
+
+you can see switch 1 is connected to r1
+
+via the gigabit ethernet zero one
+
+interface and it's also connected to our
+
+ones gigabit ethernet zero one interface
+
+next let's go to r1 enable show CDP
+
+neighbors r1 is connected to switch 1
+
+via the gigabit ethernet zero one
+
+interface as we just saw it's also
+
+connected to r2 via the gigabit ethernet
+
+0 0 interface connected to our two's
+
+Gigabit Ethernet 0 0 interface next
+
+let's go on to our to enable show CDP
+
+neighbors as we just saw it's connected
+
+to r1 via the gigabit ethernet 0 0
+
+interface and it's connected to switch
+
+to via the gigabit ethernet 0 1
+
+interface connected to switch 2 is
+
+Gigabit Ethernet 0 1 interface next
+
+let's go on switch to to confirm enable
+
+shows CDP neighbors as you can see it is
+
+indeed connected to r2 via the gigabit
+
+ethernet 0 1 interface that's all for
+
+step 1
+
+step2 actually doesn't require any new
+
+commands I just want to point out
+
+something I didn't identify in the
+
+previous lab let's look back at switch 1
+
+in the results of the show CDP neighbors
+
+command there is a platform column what
+
+does that identify it's the hardware
+
+model of the neighboring device in this
+
+case r1 is a C 1900 series router let's
+
+go on r1 to identify switch 1 and R 2 so
+
+R 2 is a C 2900 series router and switch
+
+1 is a 2960 series switch finally let's
+
+go on r2 to identify the model of its
+
+neighbor switch 2 as you can see it is a
+
+3560 model switch and if you remember
+
+the icon used to represent it here in
+
+packet tracer means it is a multi-layer
+
+switch multi-layer switches will be a
+
+topic for later labs
+
+finally step three requires a new
+
+command which we didn't cover in
+
+previous labs actually there are two
+
+options we have to identify the iOS
+
+version of the neighboring devices note
+
+that you can do this on the device
+
+itself with the show version command
+
+however for practice let's use CDP to
+
+find this information let's go on switch
+
+one now one option is the command show
+
+CDP neighbors detail clearly this gives
+
+more information than the standard show
+
+CDP neighbors command in this case
+
+switch one has only one neighbor but if
+
+a device has many neighbors this command
+
+gives information for every neighbor
+
+which can be overwhelming if you want to
+
+view detailed information about just one
+
+device use this command show CDP entry
+
+followed by the name of the neighboring
+
+device in this case r1 this displays the
+
+same information just for the specified
+
+device now you can find the iOS version
+
+of r1 here it's 15.1 for M for now let's
+
+go on r1 show CDP entry switch one
+
+switch run is running version 12.25 FX
+
+let's also check our ones other neighbor
+
+R to show CDP entry r2 r2 is running
+
+15.1 for M for same as r1 finally let's
+
+go on r2 to find the version of switch
+
+to show CDP entry switch to switch to is
+
+running version 12 point to one
+
+now as a bonus I'd like to also
+
+demonstrate the show version command I
+
+briefly mentioned before this gives a
+
+lot of information about the device but
+
+for now let's just confirm the iOS
+
+versions we learned about via CDP on
+
+switch 1 first show version as you can
+
+see there's a lot of info here I
+
+recommend looking through it to
+
+familiarize yourself with what's here
+
+but let's just check the iOS version as
+
+I said switch 1 is running 12 point to
+
+25 FX which is the same as we saw from
+
+CDP on our one next let's go to our one
+
+show version our one is running version
+
+15 point 1 4 & 4
+
+same as we saw from CDP again next are
+
+to show version our 2 is running version
+
+15 point 1 for M for same as our 1
+
+finally switch to show version it's
+
+running version 12 point to one that's
+
+all for this lab
+
+thank you for watching I hope this lab
+
+and video have been helpful for you
+
+please subscribe for future labs like
+
+this which will be released weekly if
+
+you have requests for any specific labs
+
+let me know in the comment section if
+
+you want to support my channel I accept
+
+Bitcoin and etherion donations via the
+
+addresses in the description I am also a
+
+brave verified publisher and accept bat
+
+or basic attention token donations in
+
+the brave browser

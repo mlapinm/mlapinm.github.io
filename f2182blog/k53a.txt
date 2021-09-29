@@ -1,1 +1,200 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description also please subscribe to the
+
+channel for more labs like this in this
+
+lab we will troubleshoot inter VLAN
+
+routing in these 2 small networks which
+
+we just configured in the previous lab I
+
+have made one miss configuration on each
+
+networking device see if you can find
+
+and fix the errors first let's test the
+
+network of PC one switch 1 and PC 2 I'll
+
+try a ping from PC 1 in VLAN 10 to PC 2
+
+in VLAN 20 ping 1002 10
+
+it fails let's investigate on switch one
+
+enable show IP interface brief looks
+
+like the VLAN 10 and VLAN 20 interfaces
+
+have the correct IP addresses configured
+
+show VLAN brief here's our problem
+
+the fastethernet 0/1 interface to which
+
+pc one is connected has been placed in
+
+v-line 11 not VLAN 10
+
+let's put f01 into the correct VLAN and
+
+see if that solves our issue coffee/tea
+
+interface f01 switch port access VLAN 10
+
+I'll delete VLAN 11 also since we're not
+
+using it exit no VLAN 11 do show VLAN
+
+brief ok
+
+our VLAN configuration looks good let's
+
+try that ping from pc1 again ping 1002
+
+10 this time the ping is successful so
+
+we have fixed the issue on this network
+
+now let's test the issue on the next
+
+network I'll try to ping from PC 3 in
+
+VLAN 30 to pc 4 in VLAN 40 ping 1004 10
+
+the ping is not successful so let's find
+
+the issues there should be one issue on
+
+our two and one issue on switch to
+
+according to the lab instructions I'll
+
+investigate on our two first enable
+
+there could be a few problems here like
+
+incorrect IP addresses or encapsulation
+
+dot1q configurations on the sub
+
+interfaces I'll use show running config
+
+this time so run our interface Gigabit
+
+Ethernet 0 0 is not shutdown and 2 sub
+
+interfaces are configured they are
+
+assigned to the proper VLANs 30 and 40
+
+however look at the IP address on the
+
+dot 30 sub-interface the VLAN 30 subnet
+
+is 10030 / 24 so we should fix that
+
+Koff t interface g0 0.30 IP address 1003
+
+1 255 255 255 0 do show IP interface
+
+brief ok now it has the correct IP
+
+address so we fixed the issue on r2
+
+let's go to switch to next enable so the
+
+correct configuration on switch 2 should
+
+be f01 connected to pc 3 in VLAN 30 and
+
+f0 to connected to pc 4 in VLAN 40 and
+
+g0 one connected to r2 should be a trunk
+
+let's check show VLAN brief fast
+
+ethernet 0 1 & 0 2 are in the correct
+
+VLANs show interfaces trunk however
+
+nothing appears with the show interfaces
+
+trunk command show run
+
+there's our problem Gigabit Ethernet 0 1
+
+is configured as an access port actually
+
+in the previous show VLAN brief command
+
+you could see it in VLAN 1 that means it
+
+won't pass data from either VLAN 30 or
+
+VLAN 40
+
+let's properly configure it as a trunk
+
+compte interface g0 1 switch port mode
+
+trunk do show interfaces trunk ok now we
+
+can see the gig 0 1 interface is a trunk
+
+and let's check that VLAN configuration
+
+once more do show VLAN brief it is also
+
+no longer listed in VLAN 1 so our inter
+
+VLAN routing in this network should be
+
+properly configured let's try that ping
+
+again once more from PC 3 to PC for ping
+
+1004 10
+
+okay this time the ping works
+
+we have successfully fixed the problems
+
+that's all for this lab thank you for
+
+watching I hope this lab and video have
+
+been helpful for you please subscribe
+
+for future labs like this which will be
+
+released weekly if you have requests for
+
+any specific labs let me know in the
+
+comments section if you want to support
+
+my channel I accept the Bitcoin and
+
+aetherium donations via the addresses in
+
+the description I am also a great
+
+verified publisher and accept bat or
+
+basic attention token donations in the
+
+brave browser

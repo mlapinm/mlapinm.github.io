@@ -1,1 +1,422 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description this lab xx of these free
+
+labs I've created for YouTube will serve
+
+as a review of several of the topics
+
+we've covered in the previous 19 I plan
+
+to do these at various points in this
+
+series although you could just go back
+
+and redo previous labs to serve as
+
+review my regular configuration labs
+
+tend to focus on just one technology at
+
+a time such as VLANs or port security I
+
+think that labs like this one involving
+
+multiple technologies are also
+
+beneficial in this lab we will configure
+
+host names the enable secret VLANs
+
+trunks port security and inter VLAN
+
+routing with router on a stick try to
+
+complete the lab yourself first then
+
+continue watching this video if you have
+
+trouble or watch it after to check your
+
+solution step one is to configure host
+
+names for each of the networking devices
+
+are one switch one and switch to this is
+
+done with a single command host name
+
+let's go on our one first an able compte
+
+host named r1 next switch one enable
+
+compte host name switch one finally
+
+switch to enable coffee/tea host name
+
+switch two that's it for step one
+
+step two is to configure an enable
+
+secret of CCNA for each networking
+
+device this is another fairly simple
+
+step
+
+remember the enable secret is an
+
+encrypted password that protects
+
+privileged exec mode of the router
+
+requiring a password to use the enable
+
+command we could also configure an
+
+enable password and then encrypt it with
+
+the service password encryption command
+
+however the encryption of the enable
+
+secret is more secure so you'll always
+
+want to use that instead
+
+let's do switch to first since we're
+
+here enable secret CCNA remember
+
+passwords are case sensitive so make
+
+sure CCNA is all capitals now let's use
+
+the same command on switch 1 enable
+
+secret CCNA and finally r1 enable secret
+
+CCNA that's all for step 2
+
+step three is to configure the switch
+
+ports to which pcs are connected as
+
+access ports in specific VLANs pc1 & pc2
+
+VLAN 13 & pc2 and pc 4 in VLAN 24 let's
+
+start on switch one PC one is connected
+
+to f0 two so interface f0 to switch port
+
+mode access now that we've explicitly
+
+configured it as an access port let's
+
+put it in VLAN 13 switch port access
+
+VLAN 13 now let's configure f03
+
+which pc 2 is connected to to be in VLAN
+
+24 interface f03 switch port mode access
+
+switch port access VLAN 24 that's it for
+
+switch 1 next let's hop on switch to
+
+interface f0 to switch port mode access
+
+PC 3 is connected to this interface so
+
+switch port access VLAN 13 now f03
+
+which pc 4 is connected to interface f03
+
+switch port mode access switch port
+
+access VLAN 24 that's all for step 3
+
+step four is to configure a trunk
+
+between switch 1 and switch to remember
+
+switch ports by default function as
+
+access ports in VLAN 1 pcs 1 2 3 & 4 are
+
+in VLAN 13 and 24 so even pcs in the
+
+same VLAN won't be able to communicate
+
+with each other across these two
+
+switches currently the two switches will
+
+only carry traffic in VLAN 1 between
+
+them let's configure this trunk to
+
+change that now which interfaces do they
+
+use to connect to each other let's use
+
+one CDP command to find out on switch to
+
+first since we're already here do show
+
+CDP neighbors as it shows here switch 2
+
+is connected to switch 1 using the F 0 1
+
+interface it also shows that switch 2 is
+
+connected to switch ones F 0 1 interface
+
+here so we don't need to use this
+
+command on switch 1 let's configure the
+
+trunk down interface F 0 1 switch port
+
+mode trunk that's it on this switch
+
+model we don't have to configure the
+
+encapsulation type of dot1q if we did we
+
+would use the command switch port trunk
+
+encapsulation dot1q now let's go to
+
+switch 1 to do the same interface F 0 1
+
+switch part mode trunk let's use a show
+
+command to confirm do show interface
+
+trunk as you can see
+
+f 0 1 is indeed trunking now pc 1 should
+
+be able to pin PC 3 but not pc 2 and pc
+
+4 likewise pc 2 should be able to pin pc
+
+4 but not pc 1 in pc 3 let's try on pc 1
+
+first ping 1001 12 the ping to pc -
+
+doesn't work now - pc 3 ping 1000 13
+
+it works let's confirm on PC to ping
+
+1000 11 the ping to PC 1 doesn't work
+
+now let's ping PC for which should work
+
+ping 1001 14 it works our trunk has been
+
+successfully configured
+
+now Step five is to configure port
+
+security on the switch ports connected
+
+to PCs we need to enable sticky MAC
+
+address learning and change the default
+
+violation action of shutdown to restrict
+
+let's go on switch one will be using the
+
+same commands for each interface so
+
+let's be more efficient by configuring
+
+an interface range instead of doing each
+
+one separately interface range f0 2 to 3
+
+now we're in interface range
+
+configuration mode both interfaces are
+
+already explicitly configured as access
+
+ports so we don't have to do that this
+
+time switch port port security
+
+now port security is enabled let's
+
+configure sticky MAC address learning
+
+switch port port security MAC address
+
+sticky finally let's change the
+
+violation action to restrict which
+
+blocks offending traffic but does not
+
+shut down the port that is done with
+
+this command switch port port security
+
+violation restrict now let's do the same
+
+on switch to again I'll configure an
+
+interface range interface range F 0 2 to
+
+3 switch port port security switch port
+
+port security MAC address sticky switch
+
+port port security violation restrict
+
+there we go step 5 is now complete
+
+step six is to configure inter VLAN
+
+routing with the router on a stick
+
+method router on a stick
+
+involves configuring sub interfaces on a
+
+router one for each VLAN required we'll
+
+do that on our ones g00 interface which
+
+is connected to switch ones g0 one
+
+interface we also must configure switch
+
+ones g0 one interface as a trunk so
+
+let's do that first interface g0 one
+
+switch port mode trunk okay that's all
+
+we need to do on switch one let's go to
+
+r1 now interface G zero zero now router
+
+interfaces are shutdown by default as
+
+you may have noticed from the red port
+
+lights on the link between r1 and switch
+
+1 so first I'll type no shutdown to
+
+enable it you could also do this at the
+
+end of the configuration now let's
+
+create the sub interface for VLAN
+
+thirteen interface g0 0.13 note that the
+
+sub interface name doesn't actually have
+
+to match the v/line number but it's good
+
+practice to do so to avoid confusion now
+
+first we have to set the encapsulation
+
+and VLAN encapsulation dot1q thirteen
+
+okay now let's set the IP address
+
+according to our instructions and the
+
+default gateway addresses i've pre
+
+configured on the pcs in this lab let's
+
+set it to IP address 1001 255.255.255.0
+
+okay that's it now let's configure the
+
+sub interface for VLAN 24 interface g0
+
+0.24 encapsulation dot1q 24 IP address
+
+1001 one 255.255.255.0 our inter VLAN
+
+routing is now complete
+
+finally let's ping between pcs to make
+
+sure everything works we should now have
+
+full connectivity between all pcs to
+
+check I'll ping from PC 1 and then from
+
+PC 2 on PC 1 let's ping PC 2 first ping
+
+1001 12 it works next PC 3 ping 1000 13
+
+it works
+
+finally PC for ping 1001 dot 14 it works
+
+as well now let's do the same on PC to
+
+first stop in PC 1 ping 1000 11 it works
+
+PC 3-pin 1000 13 it works too
+
+finally I'll ping PC for ping 1001 14 it
+
+works as well
+
+we have full connectivity between all
+
+computers that's all for this lab
+
+thank you for watching I hope this lab
+
+and video have been helpful for you
+
+please subscribe for future labs like
+
+this which will be released weekly if
+
+you have requests for any specific labs
+
+let me know in the comment section if
+
+you want to support my channel please
+
+consider contributing to my patreon
+
+patreon comm / Jeremy's IT lab I accept
+
+Bitcoin and aetherium donations via the
+
+addresses in the description I am also a
+
+brave verified publisher and accept bat
+
+or basic attention token donations in
+
+the brave browser

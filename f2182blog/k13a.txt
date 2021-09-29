@@ -1,1 +1,332 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description in
+
+this lab we will take a basic look at
+
+CDP cisco discovery protocol CDP is a
+
+cisco proprietary protocol it is used to
+
+share information about other directly
+
+connected cisco equipment such as the
+
+operating system version and the
+
+interfaces by which they are connected
+
+there is also a vendor-neutral protocol
+
+called lldp or link layer discovery
+
+protocol which I will talk about in
+
+another video try to complete the lab
+
+yourself first then continue watching
+
+this video if you have trouble or watch
+
+it after to check your solution step 1
+
+is to use CDP to identify which
+
+interfaces are used to connect the
+
+routers and switches CDP can only
+
+display directly connected neighbors so
+
+switch one should have one neighbor r1
+
+r1 should have two neighbors switch 1
+
+and r2 r2 should have two neighbors r1
+
+and switch two and switch two should
+
+have one neighbor r2 let's check on
+
+switch 1 first enable now let's use the
+
+command show CDP neighbors as you can
+
+see switch 1 has one neighbor r1 it is
+
+connected to the fastethernet 0/1
+
+interface remember local interface means
+
+the interface on this device switch 1
+
+under capability there is an R and if
+
+you check the capability codes list up
+
+here you can see that that means router
+
+also check the pork ID this is the
+
+interface of the remote device in this
+
+case r1 so now you know switch 1 is
+
+connected to r1 by its fastethernet 0/1
+
+interface and it's connected to our ones
+
+fastethernet 0/0 interface let's hop on
+
+r1 now
+
+enable show CDP neighbors are one has
+
+two neighbors switch 1 and r2
+
+it's connected to switch 1 via the
+
+fastethernet 0/0 interface which we
+
+already learned from switch 1 it's
+
+connected to r2 by its serial to zero
+
+interface and it's connected to our
+
+two's serial to zero interface as well
+
+let's do the same on art to enable show
+
+CDP neighbors as we already saw in our
+
+one the two routers are connected by
+
+their serial to zero interfaces also r2
+
+is connected by its fastethernet 0/0
+
+interface to switch twos fastethernet
+
+0/1 interface finally let's go on switch
+
+to enable show CDP neighbors as we
+
+already saw switch to is connected via
+
+its fastethernet 0/1 interface to our
+
+two's fastethernet 0/0 interface that's
+
+all for step one
+
+step two is to determine which side of
+
+the connection between r1 and r2 is DCE
+
+and which is DTE I mentioned in a
+
+previous lab that serial connections
+
+have a DC e or data communications
+
+equipment side and a DTE or data
+
+terminal equipment side remember that
+
+the important difference is that the DCE
+
+side has to provide the clock rate of
+
+the connection we don't use CDP for this
+
+it's just a bit of review let's go on r1
+
+show controllers s20 remember that the
+
+routers are connected by their serial to
+
+zero interfaces as you can see our one
+
+is in fact the DCE side of the
+
+connection now let's set the clock rate
+
+to 64 kilobits per second compte
+
+interface s20 clock rate 64,000 that's
+
+it step 3 asks us what the default CDP
+
+send and hold timers are and to confirm
+
+it with a show command you may have
+
+learned these timers in your studies but
+
+let's check on a device to make sure
+
+I'll type end to go back to privileged
+
+exec mode here on r1 now let's use the
+
+command show CDP interface this gives us
+
+information about all interfaces their
+
+status whether CDP is activated on them
+
+or not and their send and hold times all
+
+of these interfaces have the default
+
+setting and as you can see that is a
+
+sent time of 60 seconds and the whole
+
+time of 180 seconds so CDP
+
+advertisements will be sent out of each
+
+interface that is up once every 60
+
+seconds also if r1 doesn't receive an
+
+advertisement on a particular interface
+
+within 180 seconds it will assume that
+
+whatever neighbor that was there no
+
+longer is that's all for step 3
+
+step four says to disable CDP globally
+
+on r1 and attempt to view CDP neighbors
+
+so let's go into global configuration
+
+mode conf the command to enable CDP is
+
+CDP run although it's enabled by default
+
+we want to disable it and that is done
+
+with no CDP run now let's check CDP
+
+neighbors do show CDP neighbor we get a
+
+message indicating that CDP is not
+
+enabled our one won't send any
+
+advertisements and will ignore any it
+
+receives step 5 is to enable CDP
+
+globally again on r1 and immediately
+
+view the CDP neighbours CDP run do show
+
+CDP neighbors we re enabled CDP but no
+
+neighbors appear why is that well
+
+because the CDP sent time is 60 seconds
+
+by default it can take a bit for our
+
+neighbors to appear again if we were to
+
+wait a minute and enter the command
+
+again they would appear
+
+step six is to disable CDP on the switch
+
+interfaces connected to pcs because CDP
+
+sends information about the device for
+
+security purposes it is a good idea to
+
+disable it where it isn't needed 2 pcs
+
+are connected to each switch so let's go
+
+on switch one first compte now we don't
+
+want to disable CDP globally so we won't
+
+use no CDP run we want to only disable
+
+it on Fast Ethernet 0 3 and 0 4 we have
+
+to use interface configuration mode for
+
+this since we'll be using the same
+
+command on each interface let's
+
+configure both at the same time you can
+
+do this by configuring an interface
+
+range you can enter interface range
+
+configuration mode for Fast Ethernet 0 3
+
+and 0 4 with this command interface
+
+range f03 space - space for as you can
+
+see we are now in interface range
+
+configuration mode this is very
+
+convenient when you are doing the same
+
+configurations on multiple interfaces
+
+now CDP and naval is used to enable CDP
+
+on an interface but it is enabled by
+
+default to disable you once again use no
+
+in front of the command no CDP enable ok
+
+that's it now let's go to switch to and
+
+do the same thing comte interface range
+
+of 0 3 to 4 no CDP enable that's all for
+
+this lab
+
+thank you for watching I hope this lab
+
+and video have been helpful for you
+
+please subscribe for future labs like
+
+this which will be released weekly if
+
+you have requests for any specific labs
+
+let me know in the comment section if
+
+you want to support my channel I accept
+
+Bitcoin and etherion donations via the
+
+addresses in the description I am also a
+
+brave verified publisher and accept bat
+
+or basic attention token donations in
+
+the brave browser

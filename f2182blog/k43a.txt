@@ -1,1 +1,312 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description also please subscribe to the
+
+channel for more labs like this
+
+we're coming to the end of the icnd1
+
+labs in this lab we will configure a
+
+variety of things which we learned
+
+before and then in the next lab will
+
+troubleshoot some problems with the same
+
+network topology we will configure rip
+
+syslog NAT DHCP and SSH let's get
+
+started the first step is to configure
+
+rip on r1 r2 and r3 let's start on r1
+
+enable compte router rip
+
+we're instructed to use rip version 2
+
+and disable auto summary so version 2 no
+
+auto now lets advertise our ones
+
+connected networks network 192.168.1.0
+
+network 12.30 exit okay let's go to our
+
+to enable coffee/tea router rip version
+
+2 no Auto network 192.168.20.10 exit
+
+finally let's go on r3 enable coffee/tea
+
+router rip version 2 no Auto network
+
+3000 Network 12.30
+
+exit ok that's all for the rip
+
+configuration it may take some time for
+
+all routes to show up in the database
+
+but you can confirm with do show IP rip
+
+database step 2 is to configure r1 r2
+
+and r3 to send syslog messages to server
+
+1
+
+all we need is one command on each
+
+router to do this since I'm already on
+
+r3 let's start here
+
+logging 3000 dot 100 that's it logging
+
+host 3000 100 would also have the same
+
+effect next are two logging 3000 100
+
+okay and finally r1 logging 3000 100
+
+that's all for step two the next step is
+
+to configure Pat port address
+
+translation on r1 and r2 the network's
+
+192.168.1.0 slash 24 and 192.168.0 slash
+
+24 are private networks and they cannot
+
+be routed over the Internet
+
+like in our previous NAT labs i've
+
+pre-configured ACLs on r1 r2 and r3 to
+
+prevent them from being routed
+
+so let's translate their addresses to
+
+the address on r1 and r2 s gigabit 0 1
+
+interfaces let's start here on r1 first
+
+I'll configure the inside and outside
+
+NAT interfaces interface G 0 0 IP NAT
+
+inside interface G 0 1 IP NAT outside
+
+next let's create the ACL to identify
+
+which traffic to translate I'll make an
+
+ACL permitting the one and two dot one
+
+six eight dot one dot o slash 24 network
+
+exit access list one permit 192.168.1.0
+
+oh-o-oh dot 255 ok finally let's make
+
+the NAT statement itself IP net inside
+
+source list one interface g0 one
+
+overload that's it now let's do the same
+
+thing on r2 interface G 0 0 IP net
+
+inside interface G 0 1 IP net outside
+
+exit access list 1 permit 192.168 200
+
+250 5 IP NAT inside source list one
+
+interface G 0 1 overload that's all for
+
+our pad configuration however our pcs
+
+still don't have IP addresses so next is
+
+connects tis to configure our one as a
+
+DHCP server with two dhcp pools since
+
+we're in global configuration mode i'll
+
+configure the excluded address ranges
+
+first remember excluded ranges aren't
+
+configured in DHCP configuration mode
+
+but rather in global configuration mode
+
+IP dhcp excluded address 192.168.1.1
+
+192.168.1 10 and for the second pool
+
+IP dhcp excluded address 192.168.1.1 6 8
+
+to 10 ok now let's create and configure
+
+the first pool IP dhcp pool one pool
+
+network 192.168.1.0 255.255.255.0
+
+default router
+
+192.168.1.1 dns server
+
+3000 dot 100 exit ok and now let's
+
+create the second pool IP dhcp pool to
+
+pool network 192.168.20.10 default
+
+router 192.168.1 dns server
+
+3000 100 exit let's check if pc one can
+
+get an IP address
+
+IP config slash release IP config slash
+
+renew there we go now how about PC for
+
+IP config slash release IP config slash
+
+renew it doesn't work now that's because
+
+r1 isn't connected to the 192.168.0
+
+slash 24 network so their DHCP discovery
+
+messages don't reach our one
+
+so let's configure r2 as a DHCP relay
+
+agent so it will relay DHCP messages
+
+between them interface g00 IP helper
+
+address followed by our ones address one
+
+two three one exit now let's try again
+
+on PC for IP config slash renew there we
+
+go
+
+DHCP is now working next we must
+
+configure SSH access on the vty lines of
+
+router one really you should do this on
+
+all of these routers and switches but
+
+let's keep it to just r1 for this lab so
+
+there are a few requirements to
+
+configure SSH one is a hostname which is
+
+already pre-configured r1 but if it
+
+wasn't you could configure it with this
+
+command hostname r1 next is a domain
+
+name let's go with cisco comm IP domain
+
+name cisco calm also we need a user
+
+account on this device username cisco
+
+password CCNA next you must generate an
+
+RSA key with 1024 bit modulus crypto key
+
+generate RSA then enter the modulus size
+
+here of 1024
+
+okay now let's configure the vty lines
+
+line vty 0 15 first let's enable local
+
+authentication login local next let's
+
+enable ssh transport input ssh exit also
+
+I forgot to configure ssh version 2 so
+
+let's do that here from global
+
+configuration mode IP ssh version 2
+
+that's it now let's try to ssh to r1
+
+from pc1 ssh - l cisco which is the
+
+username 192.168.1.1 now enter the
+
+password for our account cisco which is
+
+CCNA there we go we're in exit so in
+
+this lab we did some configurations of
+
+various technologies we learned
+
+throughout these labs now I will take
+
+this completed lab break some of the
+
+configurations and will troubleshoot it
+
+in the next and final lab of the icnd1
+
+series that's all for this lab thank you
+
+for watching I hope this lab and video
+
+have been helpful for you please
+
+subscribe for future labs like this
+
+which will be released weekly if you
+
+have requests for any specific labs let
+
+me know in the comment section if you
+
+want to support my channel I accept a
+
+Bitcoin and aetherium donations via the
+
+addresses in the description I am also a
+
+brave verified publisher and accept bat
+
+or basic attention token donations in
+
+the brave browser

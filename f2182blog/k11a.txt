@@ -1,1 +1,146 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description in
+
+this lab we will review the creation of
+
+a local user database on the router and
+
+introduced the banner function this will
+
+be a fairly short lab but try to
+
+complete it on your own first and then
+
+continue watching this video if you have
+
+trouble or watch it after to check your
+
+solution step one is to use PC one to
+
+connect to r1 via the console port
+
+they're already connected by a cable so
+
+let's click on PC one desktop terminal
+
+and press ok to accept the default
+
+configurations step two is to create two
+
+users on our one last time we created
+
+user accounts with passwords this time
+
+we will use secrets same as with the
+
+enable password and an able secret
+
+passwords are not encrypted but secrets
+
+are encrypted by default an able conf t
+
+username CCNA secret Cisco with a
+
+capital C remember that user name isn't
+
+case sensitive but the password or
+
+secret is next user username CCNP secret
+
+Cisco I'll quickly type do show run to
+
+check that their encrypted as you can
+
+see they are encrypted by default step 3
+
+is to set the console port to use the
+
+local database to authenticate users
+
+line console 0 login local that's it
+
+step four is to set a message of the day
+
+banner of welcome to packet racer and a
+
+login banner of authorized users only
+
+banners are messages that display before
+
+or after users log in in this case the
+
+message of the day banner will be
+
+displayed above the login banner and
+
+both will be displayed before our user
+
+logs in so exit to make the banner of
+
+the day we use this command banner motd
+
+then I'll use the question mark to show
+
+the next option as you can see we need
+
+to enter a delimited character to
+
+indicate the start and end of the
+
+message if you type the message directly
+
+it will think that the first character
+
+is the delimiting character and it will
+
+be excluded from the message itself you
+
+can use whatever you want but I'll use
+
+an asterisk asterisk
+
+welcome to packet tracer asterisk okay
+
+now the same process for the log in
+
+banner banner login asterisk authorized
+
+users only asterisk now we've set up the
+
+two banners finally let's log out and
+
+see if our messages work and logout
+
+there we go
+
+before we log in you can see our message
+
+of the day and then our log in banner
+
+thank you for watching I hope this lab
+
+and video have been helpful for you
+
+please subscribe for future labs like
+
+this which will be released weekly if
+
+you have requests for any specific labs
+
+let me know in the comment section if
+
+you want to support my channel I accept
+
+Bitcoin and aetherium donations via the
+
+addresses in the description I am also a
+
+brave verified publisher and accept bat
+
+or basic attention token donations in
+
+the brave browser

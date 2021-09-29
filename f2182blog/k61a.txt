@@ -1,1 +1,322 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description also please subscribe to the
+
+channel for more labs like this in this
+
+lab we will take a look at the
+
+point-to-point protocol PPP PPP
+
+is a layer 2 protocol often used over
+
+serial LAN or wide area network
+
+connections on a Cisco router the
+
+default layer 2 encapsulation on a
+
+serial connection is Cisco hdl-c however
+
+PPP provides superior security through
+
+authentication functionality so in this
+
+lab we will configure PPP with two
+
+different authentication methods on the
+
+connection between r1 and SPR one
+
+meaning service provider router 1 we
+
+will configure PPP with PAP the password
+
+authentication protocol which uses a
+
+static password to authenticate the
+
+connection on the connection between r2
+
+and SPR 2 we will configure PPP with
+
+chap the challenge handshake
+
+authentication protocol which uses a
+
+dynamic randomly generated string
+
+providing greater security than a static
+
+never changing password let's get
+
+started let's start with r1 enable first
+
+let's check what the encapsulation on
+
+s00 is show interfaces s0 0 there it is
+
+encapsulation hdl-c
+
+also notice that the interface is in the
+
+up-down State this is because there is
+
+an encapsulation mismatch I've already
+
+configured the service provider routers
+
+and SPR ones s00 interface is already
+
+configured with PPP encapsulation
+
+let's try to ping SPR 1 ping 100 0.1
+
+doesn't work let's enable PPP on our one
+
+coffee tea interface s 0 0 encapsulation
+
+PPP do show IP interface brief now the
+
+interface is still up down because we
+
+haven't configured authentication yet on
+
+our one but it's already configured on
+
+SPR one I've already configured a
+
+username of Cisco and a password of CCNA
+
+on SP r1 so we have to configure our one
+
+to send that username and password to SP
+
+r1 to authenticate likewise SP r 1 is
+
+currently trying to authenticate with
+
+the username of packet and a password of
+
+tracer so we have to configure that
+
+username and password on r1 I'll do that
+
+first exit username packet password
+
+tracer now let's go back to the
+
+interface interface s0 0 ok next let's
+
+enable authentication PPP authentication
+
+PAP now let's configure it to send the
+
+username of Cisco and password of CCNA
+
+to SPR 1 PPP PAP sent - username Cisco
+
+password CCNA now it can take a little
+
+time for the interface to come up so
+
+I'll reset it to speed things up
+
+shutdown no shutdown and I'll wait a few
+
+seconds just in case okay let's check do
+
+show IP interface brief great now the
+
+interface is up up let's see if we can
+
+ping SPR one do ping 100 0 1
+
+okay now it works
+
+so to summarize PPP with pap first you
+
+must configure a username and password
+
+on your router which the router on the
+
+other end will use to authenticate then
+
+you must configure the encapsulation of
+
+PPP on the interface with the command
+
+encapsulation PPP then you enable PAP
+
+authentication with PPP authentication
+
+PAP then you configure your router to
+
+send a username and password to the
+
+other router with a PPP PAP sent to
+
+username password command of course the
+
+road around the other end must have that
+
+username and password configured on it
+
+in this lab I pre-configured the
+
+username of Cisco and password of CCNA
+
+on SPR 1 next let's configure PPP with
+
+chap authentication on our - once again
+
+chap is more secure than PAP because it
+
+uses dynamic randomly generated strings
+
+for each authentication rather than a
+
+static password however you still have
+
+to configure a username and password on
+
+the router which is then used to
+
+generate the string so let's go on our
+
+to enable show interfaces s0 0 just like
+
+on r1 before the default encapsulation
+
+is hdl-c and the interface is in an
+
+up-down state because the SPR 2 router
+
+has already been configured to use PPP
+
+with chap let's see if we can ping SPR
+
+to ping 200 oh you won
+
+as expected it doesn't work
+
+conf T now let's create the user name
+
+and password required for a chap the
+
+instructions say to use a password of
+
+CCNA but what username should we use the
+
+answer is that we must use the other
+
+routers host name in this case that is
+
+SPR two so username SPR two password
+
+CCNA this password has to match between
+
+the two routers so I've already
+
+configured username our two passwords
+
+CCNA on the service provider side for
+
+the CCNA routing and switching you don't
+
+have to worry about the service provider
+
+end that's for the service provider
+
+track of certifications now let's
+
+configure the interface interface s0 0
+
+let's set it down while we do the
+
+configurations and then bring it back up
+
+when we're done
+
+shutdown set the encapsulation dat PPP
+
+like on our 1 encapsulation PPP now we
+
+only have one more command PPP
+
+authentication chap that's it let's
+
+enable the interface no shutdown ok and
+
+now let's check the status of the
+
+interface do show IP interface brief
+
+the interface is up up now let's try to
+
+ping the service provider do ping 200
+
+0.1 okay it works now I've already
+
+configured static default routes to the
+
+service provider as you would often do
+
+in a real enterprise network so let's
+
+see if we can ping r1 on the other side
+
+do ping 100 oh oh - and it works as well
+
+so to review PPP with chap you must
+
+configure a user on the router with a
+
+username that is the other routers
+
+hostname in this case SP r2 and the
+
+password must be the same on both
+
+routers then enable PPP on the interface
+
+with the encapsulation PPP command and
+
+enable chap authentication with PPP
+
+authentication chap that's all for this
+
+lab thank you for watching I hope this
+
+lab and video have been helpful for you
+
+please subscribe for future labs like
+
+this which will be released weekly if
+
+you have requests for any specific labs
+
+let me know in the comment section if
+
+you want to support my channel I accept
+
+Bitcoin and aetherium donations via the
+
+addresses in the description I am also a
+
+brave verified publisher and accept bat
+
+or basic attention token donations in
+
+the brave browser

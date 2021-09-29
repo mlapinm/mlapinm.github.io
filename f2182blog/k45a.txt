@@ -1,1 +1,250 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description also please subscribe to the
+
+channel for more labs like this this lab
+
+is really a review of material we have
+
+practiced in the icnd1 labs VLANs trunks
+
+and DTP however these topics are in the
+
+icnd2 exam topics as well so let's
+
+review them one more time the first step
+
+is to disable negotiation of trunk ports
+
+and manually configure the mode of each
+
+switch port in use DTP can dynamically
+
+determine whether a switch port should
+
+be a trunk or an access port for example
+
+if you connect a switch port to a port
+
+on another switch that is a trunk the
+
+switch port will become a trunk as well
+
+let's check on switch 1 and switch 2 I
+
+haven't done any configuration yet so
+
+DTP is enabled on both and there should
+
+be an access mode at the moment I'll go
+
+on switch 1 enable show interface g0 to
+
+switchboard see it's in dynamic auto
+
+mode by default meaning if it's
+
+connected to a trunk or a port in
+
+dynamic desireable mode it will become a
+
+trunk port as well however really these
+
+configuration should all be done
+
+manually
+
+for security reasons also Saudi TP is
+
+something you should always disable just
+
+to show you the commands however compte
+
+interface g0 to switch port mode dynamic
+
+and let's check the options auto is as I
+
+said before it will become a trunk port
+
+if connected to a dynamic desirable port
+
+and desirable mode actively tries to
+
+form trunk ports with both auto and
+
+other desirable mode ports let's do the
+
+smart thing and disable DTP then
+
+manually set the mode of each switch
+
+port
+
+so switchport no negotiate that disables
+
+DTP switchport mode trunk
+
+okay now let's configure switch ones
+
+other ports g1 should be a trunk as it
+
+leads to r1 for inter VLAN routing and F
+
+0 1 and F 0 2 should be access ports
+
+interface G 0 1 switch port mode trunk
+
+switch port no negotiate interface range
+
+F 0 1 2 - switch port mode access switch
+
+port no negotiate ok let's go to switch
+
+to now enable look at this message we
+
+got on switch to blocking Gigabit
+
+Ethernet 0 1 inconsistent port type
+
+switch ones G 0 2 interface is a trunk
+
+however because DTP is disabled it's not
+
+sending packets to switch to so that
+
+switch twos dynamic G user 1 interface
+
+can become a trunk as well therefore
+
+well switch ones G 0 2 interface is a
+
+trunk switch to SG 0 1 interface remains
+
+an access port so there is an
+
+inconsistent port type let's make this a
+
+trunk to compte interface G 0 1 switch
+
+port mode trunk switch port no negotiate
+
+okay next interface range F 0 1 - 2
+
+switch port mode access switch port no
+
+negotiate okay that's all for step 1
+
+step 2 is to assign the pcs to the
+
+correct VLANs pc1 & pc2 P&V line 13 and
+
+PC 2 and PC for should be in VLAN 24 I'm
+
+on switched to now so let's assign PC 3
+
+and PC for to the correct VLANs
+
+interface F 0 1 switch port access VLAN
+
+13 interface F 0 to switch port access
+
+VLAN 24 now let's go back to switch 1
+
+interface f01 switch port access VLAN 13
+
+interface f02 switch for access VLAN 24
+
+okay we have assigned the PCs to the
+
+correct VLANs r1 has already been
+
+configured for inter VLAN routing let's
+
+just check the configuration enable
+
+shall run the gig 0/0 interface itself
+
+has no IP address but I've configured
+
+two sub interfaces one for each VLAN the
+
+encapsulation dot1q command sets the
+
+VLAN of the sub interface thirteen and
+
+fourteen and then we set the IP address
+
+for the sub interface make sure these
+
+addresses are set as the default
+
+gateways for the pcs I already configure
+
+the pcs so everything should work fine
+
+now let's try some pings from pc1 to
+
+make sure we have connectivity let's
+
+ping PC three first which is in the same
+
+VLAN but connected to a different switch
+
+pink 1300 13 it works okay and now let's
+
+ping PC 2 which is in a different VLAN
+
+but connected to the same switch ping
+
+2400 12 it works so our inter VLAN
+
+routing is working let's try to ping PC
+
+4 as well in a different VLAN and
+
+connected to a different switch ping
+
+2400 14
+
+it works too in this lab we took a brief
+
+look at DTP disabled it and configured
+
+VLANs and switch port mode that's all
+
+for this lab thank you for watching I
+
+hope this lab and video have been
+
+helpful for you please subscribe for
+
+future labs like this which will be
+
+released weekly if you have requests for
+
+any specific labs let me know in the
+
+comments section if you want to support
+
+my channel I accept Bitcoin and
+
+aetherium donations via the addresses in
+
+the description I am also a brave
+
+verified publisher and accept bat or
+
+basic attention token donations in the
+
+brave browser

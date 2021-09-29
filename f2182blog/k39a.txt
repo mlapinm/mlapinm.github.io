@@ -1,1 +1,222 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description this is the third and last
+
+of our labs focusing on nat network
+
+address translation this lab will focus
+
+on Pat port address translation static
+
+NAT is sometimes referred to as
+
+one-to-one and dynamic NAT is sometimes
+
+referred to as many to many by that
+
+logic
+
+Pat is many to one many addresses are
+
+translated to a single IP address but
+
+the router keeps track of the layer for
+
+port number used so it can identify each
+
+of the inside hosts for example when we
+
+configure Pat in this network we can
+
+then ping from pc-1 pc2 and pc 3 to
+
+server 1 at the same time all of them
+
+will use the same address that of our
+
+ones as 0 3 0 interface 1.2.3 1 however
+
+each of them will use a different port
+
+number so our one can forward the return
+
+traffic from server 1 back to the
+
+correct PC we are using the same
+
+topology as in the previous net labs if
+
+we try to ping server one from PC one it
+
+should fail once again let's try ping
+
+1.1.1 100
+
+the pink fails once again this is
+
+because PC one has an IP address in a
+
+private IP range these addresses are not
+
+routable on the Internet
+
+to simulate the Internet I have
+
+configured ACLs on r1 and r2 to prevent
+
+private IP addresses from being routed
+
+on the serial link between them so let's
+
+configure Pat on r1 to translate the IP
+
+addresses of pc-1 pc2 and pc 3 to the IP
+
+address of our ones s0 3-0 interface
+
+I'll go on r1 enable compte again I'll
+
+set the inside and outside NAT
+
+interfaces interface g00 IP NAT inside
+
+interface s 0 3 0 IP NAT outside exit
+
+now to configure a dynamic NAT we had to
+
+configure an ACL and an app pool before
+
+we configure the NAT statement itself
+
+for Pat we just create an ACL to
+
+identify the inside address range to
+
+translate and then we create a NAT
+
+statement to translate them to the
+
+outside interface let's make the ACL
+
+remember this ACL is used to identify
+
+traffic not to allow or block traffic
+
+traffic permitted by the ACL will be
+
+translated traffic denied by the ACL
+
+won't be translated but won't be blocked
+
+let's make an ACL to permit traffic from
+
+the 192.168.1.0 / 24 network access list
+
+1 permit 192.168.1 oh oh oh oh 255
+
+that's it
+
+now we just have to make the NAT
+
+statement the first half is identical to
+
+dynamic NAT IP NAT inside source list 1
+
+which identifies ACL 1 next however we
+
+type interface followed by the outside
+
+interface s 0 3 0 in this case
+
+finally remember to add overload at the
+
+end this is what allows the router to
+
+translate multiple hosts to the same IP
+
+address and keep track of the layer for
+
+port number to identify each host so our
+
+command is IP NAT inside source list one
+
+interface s zero three zero overload our
+
+PAP configuration is complete now let's
+
+test and then check the translations on
+
+our one out paying server one from each
+
+of the PCs KC one first ping 1.1 1.1
+
+hundred next PC to ping 1.1 1.1 hundred
+
+finally pc 3 ping 1.1 1.1 hundred ok now
+
+let's go on r1 and check the
+
+translations exit show IP NAT
+
+translations as you can see our inside
+
+local addresses look the same as in the
+
+previous lab but the inside global
+
+addresses are all the same as I said
+
+before however r1 keeps track of these
+
+layer 4 port numbers so it knows which
+
+PC to send the return traffic from
+
+server 1 2 now do you remember the
+
+command to use if you want to clear
+
+these translations clear IP NAT
+
+translation asterisk show IP NAT
+
+translations the translation table is
+
+empty
+
+ok that's all for this lab
+
+thank you for watching I hope this lab
+
+and video have been helpful for you
+
+please subscribe for future labs like
+
+this which will be released weekly if
+
+you have requests for any specific labs
+
+let me know in the comment section if
+
+you want to support my channel I accept
+
+Bitcoin and aetherium donations via the
+
+addresses in the description I am also a
+
+brave verified publisher and accept bass
+
+or basic attention token donations in
+
+the brave browser

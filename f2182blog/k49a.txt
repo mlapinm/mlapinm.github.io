@@ -1,1 +1,204 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description also please subscribe to the
+
+channel for more labs like this this lab
+
+will be a little different than other
+
+labs there will be no configurations
+
+although we will use show commands later
+
+to confirm our answers using the
+
+information on the lab topology here we
+
+must answer these questions in this
+
+topology of 4 switches we must identify
+
+the root bridge and then which ports are
+
+route ports designated ports and
+
+alternate or blocked ports across all
+
+these switches this should test your
+
+knowledge of STP and how STP elections
+
+actually work there could very well be
+
+questions similar to this on the test as
+
+well so make sure you can solve problems
+
+like this let's get started which switch
+
+is the root bridge the switch with the
+
+lowest bridge ID will become the root
+
+bridge remember the bridge ID consists
+
+of the priority and the MAC address of
+
+the switch so the switch with the lowest
+
+priority will become the root or if
+
+there is a tie the switch with the
+
+lowest MAC address well all four
+
+switches have the same priority of 3 to
+
+769 so let's compare the MAC addresses
+
+by looking at the first four characters
+
+of each mac we can rule out - switch -
+
+and switch 4 neither of them has the
+
+lowest MAC address switch 1 and switch
+
+two have the same first 4 characters but
+
+if you look at the next 4 you can tell
+
+that switch 1 has the lowest Mac so let
+
+me type in the answer which switch is
+
+the root bridge switch 1 now on the root
+
+bridge all ports are designated ports so
+
+I'll type those in as well
+
+designated ports switch 1 F 0 1 F 2 0 2
+
+okay now let's continue
+
+each of the other three switches will
+
+set their interface with the lowest cost
+
+to the root as a report on switch to
+
+that's obviously f02 and on switch three
+
+that's F 0 1 let me write those down now
+
+on switch for which port is it well F 0
+
+1 is a fast ethernet interface so the
+
+spanning tree cost will be 19 to switch
+
+to plus 19 to switch 1 so 38 G 0 1 is a
+
+Gigabit Ethernet interface so the cost
+
+will be 4 to switch 3 plus 19 to switch
+
+1 so 23 therefore G 0 1 will be the
+
+route port on switch for now the
+
+interface across from a root port has to
+
+be designated so a switch 3 SG 0 on
+
+interface will be designated also now
+
+the question is which port is blocked
+
+switch to sf0 one interface or switch 4
+
+Zepp 0 one interface to determine this
+
+we first compare the route cost the
+
+total cost to the root bridge switch 2
+
+has a lower cost to the root bridge so
+
+it's f0 one interface will be designated
+
+and switch 4 is f0 one interface will be
+
+blocked
+
+ok let's check our answers with some
+
+show commands I'll go on switch one
+
+first enable show spanning tree this
+
+bridge is the root and F 0 1 and F 0 2
+
+are indeed designated ports next let's
+
+go on switch to enable show spanning
+
+tree F 0 1 is designated and F 0 2 is
+
+the root port great now let's check on
+
+switch 3 enable show spanning tree F 0 1
+
+is the report and G 0 1 is designated
+
+finally let's check on switch for enable
+
+show spanning tree F 0 1 is alternate
+
+meaning it is blocked and G 0 1 is the
+
+root port ok our answers are correct
+
+this has been a fairly short lab but
+
+hopefully you're able to improve your
+
+understanding of spanning tree protocol
+
+that's all for this lab thank you for
+
+watching I hope this lab and video have
+
+been helpful for you please subscribe
+
+for future labs like this which will be
+
+released weekly if you have requests for
+
+any specific labs let me know in the
+
+comment section if you want to support
+
+my channel I accept Bitcoin and
+
+aetherium donations via the addresses in
+
+the description I am also a brave
+
+verified publisher and accept bat or
+
+basic attention token donations in the
+
+brave browser

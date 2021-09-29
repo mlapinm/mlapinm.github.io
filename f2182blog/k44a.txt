@@ -1,1 +1,322 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description also please subscribe to the
+
+channel for more labs like this in this
+
+lab the final lab of my icnd1 series we
+
+will troubleshoot some miss
+
+configurations in this topology this is
+
+the same topology from the previous
+
+configuration lab but I've purposefully
+
+made some miss configurations I highly
+
+recommend you go through this lab
+
+yourself to find and fix the errors on
+
+your own and just use this video to
+
+check your solution let's get started
+
+the first problem is that R 2 and R 3
+
+aren't receiving a rip route to
+
+192.168.1.0 / 24 from R 1 first let's
+
+confirm the problem on our to enable
+
+show IP rip database we have a route to
+
+our threes inside Network 30000 / 24 but
+
+not 2 192.168.1.1 T 4 let's check on our
+
+3 to enable show IP rip database
+
+there's our two's 192.168 - 0 / 24
+
+network but not 192.168.1.0 / 24 ok so R
+
+2 and R 3 are exchanging routes with
+
+each other so there are probably no
+
+issues with R 2 and R 3 let's take a
+
+look at R 1 enable show IP rip database
+
+this is interesting
+
+R 1 is receiving routes from R 2 and R 3
+
+but not advertising a route to
+
+192.168.1.0 / 24 to them there is one
+
+very likely cause show IP protocols this
+
+command is useful for getting
+
+information about routing protocols such
+
+as rip
+
+running on the router and here is our
+
+issue passive interfaces Gigabit
+
+Ethernet 0-1 a passive interface we'll
+
+listen for advertisements but will not
+
+advertise any reps let's fix that
+
+comte router rip no passive interface G
+
+0 1 2 make a passive interface you just
+
+use the passive interface command under
+
+router rip configuration mode and of
+
+course to remove it just use no in front
+
+of the command exit so as long as there
+
+are no other problems here r2 and r3
+
+should have a route to 192.168.1.0 slash
+
+24 now I'll check on our to show IP rip
+
+database there it is
+
+and on r3 show IP rip database ok
+
+problem one is solved the next issue is
+
+that hosts in the 192.168.0 slash 24
+
+network aren't receiving IP addresses
+
+via DHCP let's confirm I'll go on PC for
+
+IP config it has an IP address in the
+
+169.254 range an automatic private IP
+
+address let's try our release and renew
+
+IP config slash release IP config slash
+
+renew it doesn't work pc v & p c6
+
+probably have addresses in the same
+
+169.254 range
+
+let's check pc v IP config yep as
+
+expected and pc 6 IP config again an
+
+automatic private IP address so what
+
+could be the problem because the DHCP
+
+server is not directly connected to
+
+192.168.0 / 24 network there could be a
+
+problem with the DHCP relay agent R -
+
+let's check their show IP interface G 0
+
+0 helper address is not set there's our
+
+problem let's fix that call for t
+
+interface G 0 0 IP helper address 1.2.3
+
+one exit let's see if we can ping the
+
+helper address do ping one two three one
+
+okay we can reach it
+
+so DHCP should work now let's try on PC
+
+for IP config slash release ipconfig
+
+slash renew okay it works let's go to
+
+the next problem Pat doesn't work on r1
+
+first let's check the problem I'll ping
+
+from pc1 to server 1 and then check the
+
+translations on r1 ping 3000 dot 100 ok
+
+we reached server 1 now let's go on r1
+
+and check the translations do show IP
+
+nat translations nothing appears so
+
+let's find the problem do show IP nat
+
+statistics our inside and outside
+
+interfaces are correct so that's not a
+
+problem do show run pipe include net IP
+
+nat inside source list 2 interface g0 1
+
+overload let's check this access list to
+
+do show access lists there's our problem
+
+there is no access list to it's access
+
+list 1
+
+let's fix the net statement I'll copy it
+
+and paste it here and use know to cancel
+
+it out now I'll rewrite it to use X as
+
+this one instead of X's list - IP NAT
+
+inside source list one interface g0 one
+
+overload okay now let's try again I'll
+
+ping from pc1 ping 3000 100 and check
+
+again on r1 do show IP NAT translations
+
+there we go
+
+r1 is now translating PC ones address
+
+the next issue is that hosts in the
+
+192.168.1.0 / 24 network aren't
+
+receiving a DNS server via DHCP let's
+
+check the issue on PC one ipconfig /all
+
+indeed there is no DNS server here now
+
+the most likely issue is with the DHCP
+
+pool on r1 so let's check do show run
+
+indeed there is no DNS server configured
+
+in the DHCP pool I'll fix that IP dhcp
+
+pool 1 pool
+
+DNS server 3000 100 exit ok let's go to
+
+pc 1 IP config slash release ipconfig
+
+slash renew ok the DNS server appears
+
+let's try to ping the hostname to server
+
+1 ping server 1
+
+there we go DNS is functioning properly
+
+the final issue is that r1 cannot be
+
+connected to via SSH I'll try again from
+
+pc1 the username is Cisco and password
+
+CCNA same as the previous lab SSH - el
+
+cisco 192.168.1.1 indeed it doesn't work
+
+let's investigate on r1 do show run pipe
+
+begin line look at the vty line
+
+configurations can you spot the misc
+
+configuration transport input telnet is
+
+set this restricts vty line access to
+
+telnet so ssh doesn't work let's fix
+
+that line vty 0 15 transport input ssh
+
+ok let's try one more time from pc1 ssh
+
+- el cisco 192.168.1.1 there we go
+
+password of CCNA and we're in in this
+
+lab we did some troubleshooting of
+
+various problems involving technologies
+
+we configured in previous labs this was
+
+the final lab of my icnd1 series I hope
+
+these labs have helped you practice your
+
+skills and prepare for the exam I will
+
+now be getting to work on the icnd2 labs
+
+that's all for this lab thank you for
+
+watching I hope this lab and video have
+
+been helpful for you please subscribe
+
+for future labs like this which will be
+
+released weekly if you have requests for
+
+any specific labs let me know in the
+
+comments section if you want to support
+
+my channel I accept a Bitcoin and
+
+aetherium donations via the addresses in
+
+the description I am also a brave
+
+verified publisher and accept a bat or
+
+basic attention token donations in the
+
+brave browser

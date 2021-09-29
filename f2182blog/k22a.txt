@@ -1,1 +1,274 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description this will be a short lab
+
+focused on using telnet to connect to
+
+Cisco devices in a previous lab we
+
+configured the console port and use that
+
+to connect to a router via PC in this
+
+lab we will use telnet which allows us
+
+to configure a Cisco device by
+
+connecting via a regular Ethernet port
+
+note that although telnet is something
+
+you should be familiar with it is not
+
+something you will likely end up using
+
+due to a lack of security this is
+
+because telnet sends all data in
+
+plaintext if anyone intercepts that data
+
+they can read it including usernames and
+
+passwords and other sensitive data
+
+instead of telnet you will want to use
+
+SSH which we will cover in another lab
+
+but with that said telnet is still
+
+something you should know
+
+so let's practice some of the basics in
+
+this lab as always try to complete the
+
+lab yourself first then continue
+
+watching this video if you have trouble
+
+or watch it after to check your solution
+
+if you haven't learned the commands
+
+required to do these tasks yet in your
+
+studies feel free to just watch the
+
+video to learn them
+
+step one is to configure the IP
+
+addresses on switch 1 and R 1 we will
+
+then use these addresses to connect to
+
+the devices later in the lab let's go on
+
+switch 1 first enable compte we will
+
+configure the IP address on the VLAN 1
+
+interface because a regular switch
+
+interface cannot be configured with an
+
+IP address we have to configure that IP
+
+address we use to manage the device on a
+
+VLAN interface rather than on a physical
+
+interface so interface VLAN 1 IP address
+
+192.168.1.1 5 5 dot 255 dot 255 0 also
+
+I'll use no shutdown to activate it now
+
+let's configure r1 enable COFF T
+
+interface G 0 0 IP address 192.168.1.1
+
+255.255.255.0 remember router interfaces
+
+are administratively down by default so
+
+no shutdown okay that's all for step 1
+
+step 2 is to configure a single user on
+
+each device since we're on our one let's
+
+do that first
+
+exit username cisco password CCNA note
+
+again that passwords are case sensitive
+
+and in this case CCNA is in all capitals
+
+now let's do the same on switch one exit
+
+username cisco password CCNA
+
+step three is to configure the vty lines
+
+on switch 1 and R 1 vqi stands for
+
+virtual teletype and when you create a
+
+telnet connection to a Cisco device you
+
+will be connecting to one of these vty
+
+lines there are typically 16 numbered 0
+
+through 15 although in the running
+
+configuration they will typically be
+
+displayed as 0 through 4 then 5 through
+
+15 let's check on switch 1 do show run
+
+scroll down to the bottom there we go
+
+line vty 0 4 meaning line 0 through 4
+
+then line vty 5 15 meaning alliance 5
+
+through 15 although it is displayed like
+
+this in the configuration we can simply
+
+use the command line vty 0 15 to connect
+
+to all lines from 0 through 15 there we
+
+go now we have two things to configure
+
+here according to the lab instructions
+
+first require the use of the local user
+
+database to connect to the vty lines
+
+this is the same command we used when
+
+configuring the console line in a
+
+previous lab login local since we only
+
+have one user in the local database we
+
+will have to use the username cisco and
+
+password CCNA when we try to tell that
+
+to this device later the next
+
+requirement is to allow only telnet
+
+connections to the vty lines this is
+
+done with this command transport input
+
+now I'll use the question mark to see
+
+what options there are all none SSH and
+
+telnet
+
+as I mentioned in the beginning of the
+
+video typically you'll be using SSH but
+
+let's set it to telnet for this lab ok
+
+now let's do the same configuration on
+
+our one line vty 0 15 login local
+
+transport input telnet
+
+okay now let's type do show run look at
+
+the bottom here there it is our
+
+configurations have been applied to all
+
+vty lines step four is to attempt to
+
+telnet to each device from pc1 on a
+
+simulator like packet tracer you simply
+
+click on the icons of each device to
+
+configure them in real situations
+
+however you have to connect to the
+
+devices from a computer via the console
+
+port as we did in a previous lab or by
+
+telnet or SSH as we're going to try now
+
+I'll go on PC one let's try switch one
+
+telnet 192.168.1.2 we're asked for the
+
+username which is Cisco and our password
+
+CCNA in all caps there we go now we have
+
+access to the command line of switch one
+
+I'll type exit and now let's try our one
+
+telnet 192.168.1.1 cisco CCNA there we
+
+go now we have access to the command
+
+line of r1 that's all for this lab
+
+thank you for watching I hope this lab
+
+and video have been helpful for you
+
+please subscribe for future labs like
+
+this which will be released weekly if
+
+you have requests for any specific labs
+
+let me know in the comment section if
+
+you want to support my channel please
+
+consider contributing to my patreon
+
+patreon comm slash Jeremy's IT lab I
+
+accept Bitcoin and aetherium donations
+
+via the addresses in the description I
+
+am also a brave verified publisher and
+
+accept bat or basic attention token
+
+donations in the brave browser

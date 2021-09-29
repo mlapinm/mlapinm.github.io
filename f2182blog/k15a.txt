@@ -1,1 +1,308 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description in
+
+this lab we will use the system
+
+configuration dialog to do some basic
+
+setup of a router r1 and a switch switch
+
+one the system configuration dialog is a
+
+basic setup wizard that allows you to
+
+perform basic setup of things like the
+
+hostname and interface IP addresses of a
+
+device although you typically will be
+
+doing these things with the commands
+
+themselves you should familiarize
+
+yourself with the system configuration
+
+dialog as well try to complete the lab
+
+yourself first then continue watching
+
+this video if you have trouble or watch
+
+it after to check your solution
+
+our goal is to do some basic
+
+configurations on these two devices with
+
+the system configuration dialog let's go
+
+on our one first if this is the first
+
+time entering the CLI you will be asked
+
+whether you want to enter the system
+
+configuration dialog however I have
+
+already previously answered no to this
+
+that's no problem I'll type in able to
+
+enter privileged exec mode then use the
+
+command setup and then answer yes to
+
+enter the configuration dialog next we
+
+are asked if you want to enter basic
+
+management setup which as stated here
+
+only configures enough connectivity for
+
+management of the system let's go
+
+through the extended setup this time
+
+although we will only be configuring one
+
+interface so let's type no now we are
+
+asked if you want to see the current
+
+interface summary the answer in brackets
+
+is the default answer so I could just
+
+hit enter to continue or type in no to
+
+skip it I could of course type in yes to
+
+I just don't have to I'll hit enter to
+
+view the summary as you can see there
+
+are three Gigabit Ethernet interfaces as
+
+well as a VLAN one interface on our one
+
+now we are asked for the hostname
+
+currently it is router and that is also
+
+the default answer let's change the
+
+hostname to r1 now we are asked for the
+
+enable secret as you may remember and as
+
+is written here the enable secret is
+
+used to enter privileged exec mode and
+
+is automatically encrypted according to
+
+the instructions for this lab let's use
+
+an enable secret of Cisco with a capital
+
+C which is important because these
+
+passwords are case sensitive
+
+next the enable password CCNA in all
+
+caps then the virtual terminal password
+
+we look at accessing the router over a
+
+network interface in another lab for now
+
+let's just set a password of CCENT in
+
+all caps then we are asked if we want to
+
+configure
+
+SNMP network management I'll hit enter
+
+to accept the default of no SNMP will be
+
+for later labs then again as I don't
+
+want to configure the VLAN one interface
+
+at this time
+
+now the Gigabit Ethernet 0 0 interface
+
+is the one used to connect to switch 1
+
+so let's configure it type yes and hit
+
+enter the IP address is 192.168.1.1 and
+
+now we'll accept the default subnet mask
+
+of 255.255.255.0 by hitting Enter
+
+I don't want to configure that gig 0 1
+
+interface or that gig 0 2 interface now
+
+we're at the final option we can cancel
+
+this config with 0 redo it with 1 or
+
+save the config with 2 let's accept the
+
+default answer of 2 by hitting Enter
+
+that's it now let's use show startup
+
+config to confirm here's our hostname of
+
+our one our encrypted enable secret and
+
+our unencrypted enabled password the IP
+
+address of gig 0 and the password on the
+
+vty line which is the virtual terminal
+
+mentioned before our ones configuration
+
+is complete
+
+next let's go through the setup dialog
+
+for switch 1 and Nabal setup yes to
+
+enter the configuration dialog know as
+
+we don't want to enter basic management
+
+setup let's just hit enter to view the
+
+interface summary as you can see there
+
+are a lot of interfaces which is
+
+expected switches require more
+
+interfaces than routers as they're going
+
+to be connecting lots of end hosts to
+
+them let's change the hostname to switch
+
+1 and now the same passwords as on our 1
+
+Cisco with a capital C for the enable
+
+secret CCNA in all caps for the enable
+
+password and C sent in all caps for the
+
+virtual terminal password enter to
+
+accept the default of no as we don't
+
+want to configure SNMP at this time now
+
+type yes and hit enter to configure the
+
+VLAN 1 interface we're going to give the
+
+VLAN 1 interface an IP address
+
+note that physical switch interfaces or
+
+switch ports cannot be given an IP
+
+address however you can give an IP
+
+address to one VLAN interface which can
+
+then be used to connect to the switch
+
+for management purposes something we'll
+
+do in a later lab we're going to
+
+configure the VLAN 1 interface here as
+
+we're going to need the IP address to
+
+receive the response from our one when
+
+we ping it in the next step the IP
+
+address will be 192.168.1.2 hit enter to
+
+accept the default subnet mask of
+
+255.255.255.0
+
+now keep hitting Enter to skip
+
+configuration of these interfaces we
+
+won't be configuring them for now
+
+type know as we won't be configuring
+
+this as a cluster command switch which
+
+is beyond the scope of this lab now hit
+
+enter one more time to save the
+
+configuration let's type show startup
+
+config again to check there's the
+
+hostname of switch one hour enable
+
+secret and password our IP address on
+
+VLAN 1 and our password on the vty lines
+
+by the way for those wondering vty
+
+stands for virtual teletype ok now
+
+finally let's ping from switch 1 to our
+
+one ping 192.168.1.1 the ping succeeds
+
+that's all for this lab
+
+thank you for watching I hope this lab
+
+and video have been helpful for you
+
+please subscribe for future labs like
+
+this which will be released weekly if
+
+you have requests for any specific labs
+
+let me know in the comment section if
+
+you want to support my channel I accept
+
+Bitcoin and etherion donations via the
+
+addresses in the description I am also a
+
+brave verified publisher and accept bat
+
+or basic attention token donations in
+
+the brave browser

@@ -1,1 +1,364 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description this lab will be the last of
+
+our labs focused on static routing in
+
+this lab we will configure a backup
+
+static route known as a floating static
+
+route on our one all routers are
+
+pre-configured with the routing protocol
+
+our IP pronounced trip we haven't done
+
+any labs on routing protocols yet but
+
+rip configuration will be coming soon we
+
+will configure our one with a floating
+
+static route so that in the event that
+
+it's s30 interface fails it will use the
+
+s20 interface instead to reach the 1000
+
+slash 24 network try to complete the lab
+
+yourself first then continue watching if
+
+you have trouble or watch the video
+
+after to check your solution so as it
+
+says in the lab the routing protocol rip
+
+is configured everywhere except between
+
+r1 and r3 meaning it's not activated for
+
+the s20 interfaces of r1 and r3 however
+
+our goal is to configure what's called a
+
+floating static route which will cause
+
+r1 to send traffic destined to the 10000
+
+slash 24 network using its s20 interface
+
+when it's read via r3 goes down we
+
+actually only need one command to
+
+complete this lab but let me explain
+
+some things first if you have already
+
+learned these things in your studies
+
+this can just be a review let me go on
+
+r1
+
+enable show IP route there are two
+
+connected routes the 192.168 12 zero and
+
+one and two dot one six eight dot 13.0
+
+networks r1 has also learned two routes
+
+from rip as indicated by the are here
+
+one is the 192.168.1 III o network which
+
+are two advertised look right next to
+
+the address there are two numbers here
+
+in square brackets 120
+
+/ one what do these numbers mean first
+
+the one this is known as the metric the
+
+metric depends on the routing protocols
+
+such as AI g RP OSPF or rip-rip uses hop
+
+count to calculate the metric the metric
+
+of one here indicates one hop as we can
+
+rich reach it by a single router hop
+
+over to r2 to which it is a directly
+
+connected network now look at the entry
+
+for the 10000 network its metric is 2
+
+that is because there are 2 router hops
+
+to reach it first to r2 then to r3 to
+
+which it is a directly connected network
+
+lower the metric the more desirable the
+
+route but there is one factor of higher
+
+priority than the metric that is the
+
+administrative distance which is the
+
+number to the left of the metric in both
+
+cases it is 120 because that is the
+
+default metric of a route learned from
+
+rip because the administrative distance
+
+is higher priority than the metric if a
+
+router learns multiple possible routes
+
+to a destination it first compares the
+
+administrative distances and chooses the
+
+lowest distance route to put in the
+
+routing table only if the administrative
+
+distances are the same does it compare
+
+the metrics now I said rip has an
+
+administrative distance of 120 how about
+
+if we create a normal static route
+
+let's try compte let's create a static
+
+route to the 1000 network IP route 10000
+
+255.255.255.0 192.168 - next table to r3
+
+do show IP route
+
+well now the route to 10000 learned via
+
+rip isn't displayed in the routing table
+
+it has been replaced with our static
+
+route because it has a lower
+
+administrative distance the default
+
+administrative distance of a static
+
+route is 1
+
+as you can see here so have we completed
+
+the lab no our instructions are to
+
+configure what's called a floating
+
+static rift that is a static route which
+
+is only entered into the routing table
+
+when the regular route is not available
+
+such as when an interface goes down how
+
+can we do that
+
+well when configuring a static route we
+
+can also specify the administrative
+
+distance for that route if we specify an
+
+administrative distance higher than that
+
+of the RIP route the static route will
+
+not appear in the routing table and thus
+
+not be used unless we stop receiving the
+
+RIP route from our to do to an interface
+
+failure or something
+
+so let's undo our static route by
+
+putting no in front of the command now
+
+let's use the command at gain and here
+
+I'll use the context-sensitive help
+
+question mark and you can see we can set
+
+the distance of the route the
+
+administrative distance of RIP is 120 so
+
+let's just set it to one higher 121 okay
+
+now let's check the routing table again
+
+do show IP route this time the static
+
+route is not displayed
+
+let's use the traceroute command to
+
+ensure that it is still taking the path
+
+through r2 to r3 we haven't used the
+
+traceroute command yet in these labs but
+
+it's very useful it's like the ping
+
+command but it sends a reply back from
+
+each router on the way to its
+
+destination so you can trace the path it
+
+takes through the network
+
+I'll trace to PC one do trace route 1000
+
+11 as you can see it is indeed going to
+
+r2 before going to r3 and then ending up
+
+at PC one now let's simulate an
+
+interphase error I'll turn off the s30
+
+interface which is connected to our two
+
+interface s30 shutdown okay now do show
+
+IP route our rip routes are gone however
+
+immediately the floating static route
+
+which we configured takes the place of
+
+the previous route to 10000 let's try a
+
+trace route from router 1 to PC 1 again
+
+do trace route 1000 11 this time it goes
+
+straight to r3 and then ends up at PC 11
+
+I'm sorry PC 1 our floating static route
+
+is functioning exactly as intended now
+
+let's turn on this interface again no
+
+shutdown
+
+what do you think will happen it can
+
+take a bit of time but hopefully as I'm
+
+talking the process will finish
+
+currently art 2 is regularly sending rip
+
+advertisements of its route to 1000 to
+
+r1 now that our ones s30 interface is up
+
+again when r1 receives one of those
+
+advertisements on the interface it will
+
+replace the floating static route in the
+
+routing table with the route learned by
+
+rip because the administrative distance
+
+of RIP is 120 and the floating static
+
+route we configured has an ad of 121
+
+okay let's check do show IP route
+
+as you can see the floating static route
+
+is gone and now the RIP route is back in
+
+the routing table
+
+I hope this lab helped you understand a
+
+little about administrative distance and
+
+floating static routes soon we will do
+
+more labs focusing on routing protocols
+
+like ew grpe and OSPF and also rip which
+
+we saw a little in this lab that's all
+
+for the lab thank you for watching I
+
+hope this lab and video have been
+
+helpful for you please subscribe for
+
+future labs like this which will be
+
+released weekly if you have requests for
+
+any specific labs let me know in the
+
+comment section if you want to support
+
+my channel please consider contributing
+
+to my patreon patreon comm slash
+
+Jeremy's IT lab I accept Bitcoin and
+
+etherium donations via the addresses in
+
+the description I am also a brave
+
+verified publisher and accept bat or
+
+basic attention token donations in the
+
+brave browser

@@ -1,1 +1,244 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description also please subscribe to the
+
+channel for more labs like this in this
+
+lab we will troubleshoot a multi area
+
+OSPF network in which neighbor
+
+relationships aren't properly forming
+
+and roads that should be advertised are
+
+not let's get started first let's go on
+
+our one enable show IP ospf neighbor
+
+our one has become OSPF neighbors with
+
+our two but not our four show IP
+
+protocols
+
+looks like our ones interfaces are in
+
+the proper areas as you can see they're
+
+both in area one
+
+however you may notice one problem here
+
+on our one our one isn't advertising
+
+it's loopback of 1.1.11 if I go on our -
+
+it won't appear in the routing table
+
+enable show IP route indeed it's
+
+receiving the 10.14 0 but not 1.1 1.1
+
+from our one let's fix that on our one
+
+coffee tea router OSPF one network 1.1.1
+
+100 200 area 1 also the loopback should
+
+be a passive interface passive interface
+
+l0 ok now let's check again on our to
+
+show IP route
+
+there it is so we fix our problem on our
+
+one let's go on our four and see what's
+
+the issue
+
+enable show IP ospf neighbors indeed our
+
+four has no OSPF neighbors show IP
+
+protocols can you spot the problem our
+
+4s g00 interface is a passive interface
+
+this means it won't form neighbor
+
+relationships on that interface it will
+
+still advertise the network on that
+
+interface although in this case it has
+
+no neighbors to advertise it to let's
+
+fix that conf T router OSPF one no
+
+passive interface G zero zero now r1 and
+
+r4 should be trying to form an OSPF
+
+neighbor relationship I'll wait a few
+
+seconds
+
+okay now let's confirm with a show
+
+command do show IP ospf neighbor
+
+there it is r1 and r4 are OSPF neighbors
+
+next let's check out our to show IP ospf
+
+neighbors it's formed a relationship
+
+with r1 but not r3 show IP protocols I
+
+don't see any problems here 10.12 da da
+
+o is in area 1 and 10.20 300 and the
+
+loopback interface are in area 0 show IP
+
+interface brief here's our issue it's
+
+not an OSPF configuration issue the f20
+
+interface itself is administratively
+
+down show run there you can see it has
+
+the shutdown command configured compte
+
+interface f2 0 no shutdown ok now let's
+
+see if it's forming a OSPF neighbor ship
+
+with r3 do show IP ospf neighbor that's
+
+odd
+
+r2 still isn't forming an OSPF
+
+relationship with r3
+
+well we fix the issue here on r2 so
+
+let's go on r3 enable show IP ospf
+
+neighbor so r3 has 1 OSPF neighbor r5
+
+show IP protocols can you spot the issue
+
+on r3
+
+it's 10.20 300 network should be in area
+
+0 not area 2 coughed T router OSPF one
+
+network 10.23 oh-oh-oh-oh-oh 255 area 0
+
+ok now let's wait a few seconds
+
+okay and now let's check and see if it's
+
+forming a SPF neighbor ship with our to
+
+do show IP ospf neighbor okay there it
+
+is r2 and r3 are now OSPF neighbors
+
+finally let's see what's wrong on r5 an
+
+able show IP ospf neighbor so r5 has
+
+successfully become OSPF neighbors with
+
+r3 however in the lab instructions it
+
+says that the ropes r5 is receiving
+
+aren't being properly summarized show IP
+
+route indeed r5 should be receiving a
+
+10000 / 8 summary but it's receiving
+
+individual network routes instead so
+
+there's probably another issue on r3
+
+let's go back let's see how or if r3 is
+
+summarizing do show run area to range
+
+10000 to 5500 there's the problem it's
+
+an easy mistake to make because you want
+
+to advertise the summary to area 2 you
+
+might want to use the area to range
+
+command however the correct answer is
+
+area 0 range I'll copy this command and
+
+then paste it here and cancel it with no
+
+now let's put in the correct command
+
+area 0 range
+
+10000 255 0 0 0 remember the area range
+
+command uses a regular mask not a
+
+wildcard mask ok let's go back to our 5
+
+and see if it's receiving the summary
+
+read show IP route okay there it is we
+
+have successfully fixed the problems
+
+that's all for this lab
+
+thank you for watching I hope this lab
+
+and video have been helpful for you
+
+please subscribe for future labs like
+
+this which will be released weekly if
+
+you have requests for any specific labs
+
+let me know in the comment section if
+
+you want to support my channel I accept
+
+Bitcoin and etherium donations via the
+
+addresses in the description I am also a
+
+brave verified publisher and accept bat
+
+or basic attention token donations in
+
+the brave browser

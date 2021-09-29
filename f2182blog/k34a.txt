@@ -1,1 +1,212 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description in
+
+this lab we will look at lldp link layer
+
+discovery protocol this protocol is very
+
+similar to a CDP Cisco discovery
+
+protocol which we covered in a couple
+
+previous labs CDP however is a cisco
+
+proprietary protocol meaning it only
+
+works with cisco devices lldp is an open
+
+standard protocol and can be used on
+
+both cisco devices and devices from
+
+other vendors the first step is to
+
+disable CDP and enable lldp on each
+
+networking device these four devices are
+
+Cisco devices so CDP is enabled by
+
+default for this lab let's disable CDP
+
+and enable lldp on switch one first
+
+enable coffee tea no CDP run lldp run
+
+exit that's it pretty simple now our one
+
+an able coffee tea no CDP run lldp run
+
+exit next are to enable coffee tea no
+
+CDP run lldp run exit finally switch to
+
+enable coffee tea no CDP run lldp run
+
+exit okay so we have disabled CDP and
+
+enabled lldp on each networking device
+
+let's go back to switch one the next
+
+step is to use a show command to find
+
+the default timer values for lldp we can
+
+do that with this command show lldp the
+
+status is active which is what we want
+
+and below are the timers the
+
+advertisement timer is 30 seconds old
+
+timer is 120 seconds and interface
+
+re-initialization delay is 2 seconds
+
+these are the default timers you might
+
+want to remember these for the test
+
+especially the advertisement and hold
+
+timers next is to use lldp to identify
+
+which interfaces are used to connect the
+
+networking devices let's use this
+
+command on switch 1 first show lldp
+
+neighbors switch 1 has one neighbor r1
+
+the local interface meaning the
+
+interface here on switch one is Gigabit
+
+Ethernet 1 0 1 and the port ID meaning
+
+the interface on our one is Gigabit
+
+Ethernet 0 0 let's use the same command
+
+on r1 show lldp neighbors are ones gig 0
+
+0 interface is connected to switch ones
+
+gig 1 0 1 interface which we saw before
+
+are ones gig 0 1 interface is connected
+
+to our twos gig 0 0 interface ok let's
+
+go on our to now show lldp neighbors as
+
+we saw on r1 r2 s gig 0 0 interface is
+
+connected to our ones gig 0 1 interface
+
+also r2 s gig 0 1 interface is connected
+
+to switch to s gig 0 1 interface let's
+
+hop on switch to to confirm show lldp
+
+neighbors there we go
+
+switch to s gig 0 on interface is
+
+connected to our two's gig 0 1 interface
+
+the next task is to use lldp to identify
+
+the iOS version of each neighboring
+
+device let's start here on switch to to
+
+view this information about a
+
+neighboring device use this command show
+
+lldp neighbors
+
+you can see the iOS information for r2
+
+here see 2900 software running version
+
+15 point 1 4 m4 now let's go on our to
+
+show lldp neighbors detail first we can
+
+see switch 2 is running see 3560
+
+software version 12 point to
+
+a c1 also the neighboring r1 is running
+
+see 2900 software version 15 point 1 4
+
+and 4
+
+finally let's go on r1 to find the
+
+version of switch 1 show lldp neighbors
+
+detail switch 1 is running catalyst
+
+layer 3 switch software version 16 point
+
+3 point 2 the final step is to prevent
+
+switch to sf0 one interface which is
+
+connected to a pc one from sending or
+
+receiving lldp updates let's go on
+
+switch to compte interface f01 to
+
+disable lldp reception use this command
+
+no lldp receive ok now to turn off lldp
+
+transmission no lldp transmitted whereas
+
+CDP uses one command CDP enable for both
+
+reception and transmission ll dps is two
+
+separate commands lldp receive and lldp
+
+transmit that's all for this lab thank
+
+you for watching I hope this lab and
+
+video have been helpful for you please
+
+subscribe for future labs like this
+
+which will be released weekly if you
+
+have requests for any specific labs let
+
+me know in the comment section if you
+
+want to support my channel
+
+I accept Bitcoin and aetherium donations
+
+via the addresses
+
+in the description I am also a brave
+
+verified publisher and accept bat or
+
+basic attention token donations in the
+
+brave browser

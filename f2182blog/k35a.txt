@@ -1,1 +1,256 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description in
+
+this lab we will configure DHCP dynamic
+
+host configuration protocol DHCP
+
+dynamically provides IP addresses as
+
+well as information like default gateway
+
+and DNS server addresses to hosts so
+
+that each host doesn't have to be
+
+manually configured in this lab we will
+
+configure r1 as a DHCP server which will
+
+provide this information to the other
+
+devices on the network we will also
+
+configure r2 as a DHCP client on one
+
+interface and as a DHCP relay agent on
+
+another interface let's get started
+
+first I want to show that our pcs don't
+
+have IP addresses let's go on PC one IP
+
+config it has an address in the 169.254
+
+range this is an automatic private IP
+
+address or apipa pc one is configured to
+
+get its address via DHCP but there is no
+
+DHCP server configured yet so this
+
+address was automatically generated
+
+let's get in a real usable IP address
+
+the first step is to configure our DHCP
+
+server r1 an able compte let's create
+
+the first DHCP pool IP dhcp pool 10 pool
+
+now we've created the pool and entered
+
+DHCP configuration mode now let's
+
+specify the range of addresses we will
+
+be handing out to hosts 10000 / 24 in
+
+this case network 10000 255.255.255.0
+
+next the default gateway default router
+
+1000won next the DNS server DNS server
+
+1000 one note that I haven't actually
+
+configured a DNS server in this lab I
+
+just wanted to show that command finally
+
+a range of excluded addresses these are
+
+Abbas's that our DHCP server won't
+
+distribute to hosts addresses that we
+
+want to keep reserved this is actually
+
+not configured in DHCP mode its
+
+configured in global configuration mode
+
+so exit IP dhcp excluded address now we
+
+enter the first address in the range
+
+1000 won then the last address in the
+
+range 1000 10 that will exclude all
+
+addresses from 1000 1 to 1000 10 from
+
+being distributed by the DHCP server now
+
+let's configure the next DHCP pool IP
+
+dhcp pool 20 pool network 20000
+
+255.255.255.0 default router 2000 one
+
+DNS server 2000 one exit now let's
+
+configure an excluded address range
+
+again IP dhcp excluded address 2000 1
+
+2000 10 ok now one more DHCP pool to
+
+configure IP dhcp pool 12 pool network
+
+192.168.1.0 255.255.255.0 exit ok our
+
+DHCP server is now configured now hosts
+
+in the 10000 / 24 network should have an
+
+IP address I'll go on PC one
+
+IP config slash release ipconfig slash
+
+renew this will make PC 1 refresh its IP
+
+configuration as you can see PC 1 now
+
+has an IP address and a default gateway
+
+and DNS server as we configured on our
+
+DHCP server r1 now let's go to step 2
+
+art to SG 0 0 interface has no IP
+
+address configured typically we would
+
+manually configure an IP address but I
+
+want to show you how to use DHCP to get
+
+an IP address for r2 we configured a
+
+pool on our one with the 192.168 12/24
+
+range and r2 will get an address from
+
+that network let's go on our to enable
+
+coffee/tea interface g 0 0 to make it
+
+use DHCP to get an IP address use this
+
+command IP address DHCP that's it
+
+now let's enable the interface no shut
+
+there we go
+
+we get a message stating that r2 was
+
+assigned a DHCP address exit step 2 is
+
+now complete step 3 is to configure our
+
+to SG 0 1 interface as a DHCP relay
+
+agent so that hosts on the 2000 0 / 24
+
+network can get IP addresses
+
+although r1 is configured to give
+
+addresses to the 2000 / 24 Network
+
+because the hosts aren't connected to
+
+the same network as r1 we need to
+
+configure a DHCP relay agent the rule is
+
+to configure the relay agent on the
+
+layer 3 interface closest to the hosts
+
+in this case r2 sg0 one interface first
+
+let's check that that pcs don't have
+
+addresses in the 2000 0/24 range yet
+
+I'll go on PC 3
+
+IP config once again the IP addresses in
+
+the 169.254 range an automatic private
+
+IP address let's go configure the relay
+
+agent on our two interface G 0 1 to
+
+configure the relay agent we just have
+
+to use one command IP helper address
+
+followed by the address of the DHCP
+
+server which is R 1 so 192.168.1 that's
+
+it now let's go back to pc 3 IP config
+
+slash release IP config slash renew and
+
+there we go
+
+pc 3 now has an IP address in the 2000
+
+slash 24 range as well as a default
+
+gateway and dns server since our DHCP
+
+relay agent relayed the DHCP messages
+
+between the PC and the DHCP server
+
+that's all for this lab thank you for
+
+watching
+
+I hope this lab and video have been
+
+helpful for you please subscribe for
+
+future labs like this which will be
+
+released weekly if you have requests for
+
+any specific labs
+
+let me know in the comment section if
+
+you want to support my channel I accept
+
+Bitcoin and a theorem donations via the
+
+addresses in the description I am also a
+
+brave verified publisher and accept bat
+
+or basic attention token donations in
+
+the brave browser

@@ -1,1 +1,250 @@
-aabbаабб
+
+welcome to this free gns3 lab for the
+
+CCNA once again because packet tracer
+
+doesn't support all of the features
+
+necessary for CCNA studies I have chosen
+
+to do this lab in gns3 rather than just
+
+skip the topic you can download the lab
+
+file from the link in the description
+
+however you will also need the Cisco IOS
+
+image to use for these routers I will
+
+include the name of the iOS image I used
+
+in the description however I cannot
+
+legally distribute the file itself if
+
+you like these labs please consider
+
+supporting me if you have my patreon or
+
+the cryptocurrency options in the
+
+description also please subscribe to the
+
+channel for more labs like this and
+
+share these videos with anyone else
+
+studying for the CCNA in this short lab
+
+we will look at IP SLA SLA stands for
+
+service level agreement what is an SLA
+
+it's an agreement between a service
+
+provider and a client for example a
+
+guarantee of latency or internet speed
+
+you can configure various IP SLA
+
+operations in Cisco IOS however for the
+
+CCNA you just have to be familiar with
+
+the ICMP echo operation aka ping the
+
+ICMP echo operation sends pings at
+
+regular intervals and keeps a count of
+
+how many succeed and how many fail let's
+
+get started let's hop on our one I will
+
+configure the ICMP echo operation to
+
+send pings to our two coughed II use the
+
+following command IP SLA followed by the
+
+operation number you can configure
+
+multiple IP SLA operations on the same
+
+device so a number is necessary to
+
+identify them I'll use one and then
+
+there are no more options now I'm in IP
+
+SLA configuration mode
+
+let's check the options as you can see
+
+there are various kinds of operations
+
+that we can use let's configure an ICM
+
+a cooperation and then enter the
+
+destination address of 1200 - okay now
+
+I'm brought into IPS la Echo
+
+configuration mode again there are
+
+plenty of options here but let's just
+
+specify the frequency which is how often
+
+the pings will be sent to our - the
+
+instructions say to use a frequency of
+
+five so frequency five that's it now we
+
+have to schedule the operation that is
+
+done in global configuration mode exit
+
+once again the command starts with IP
+
+SLA this time followed by schedule and
+
+the operation number one next let's
+
+specify the start time we could
+
+configure it to start after ten minutes
+
+for example or start at a specific time
+
+like 12 o'clock for example but let's
+
+schedule it to start now next let's
+
+specify the life which is how long we
+
+want the operation to continue the
+
+instructions say to schedule it to
+
+continue until manually stopped so let's
+
+use the forever option r1 will continue
+
+sending pings forever until we remove
+
+that configuration okay that's all there
+
+is to the configuration there are two
+
+main parts configuring the operation and
+
+scheduling the operation let's confirm
+
+our configuration exit show IP SLA
+
+configuration there is entry number one
+
+it's type is ICMP echo and there's the
+
+target of 1200 - also a frequency of
+
+five start time already passed since we
+
+configure its start time now and also
+
+life forever now let's check the IP SLA
+
+statistics to see how many things were
+
+successful show IP SLA status
+
+dicks there's the number of successes
+
+and if I wait for a few seconds and then
+
+enter the command again the number
+
+should increase show IP SLA statistics
+
+there you can see that the number has
+
+increased because pings are being sent
+
+every five seconds
+
+also notice the latest RTT appear that's
+
+the latest round-trip time which is how
+
+long the ping took to go to r2 and come
+
+back
+
+now let's shut down our twos g00
+
+interface and then the number of
+
+failures should start increasing compte
+
+interface g00 shutdown now let's go back
+
+on our one i'll wait 10 seconds or so to
+
+let a few pings be sent
+
+okay let's check show IP SLA statistics
+
+as you can see the number of failures
+
+has started increasing and the latest
+
+RTT indicates no connection busy or time
+
+out let's enable our 2's g00 interface
+
+now no shutdown okay now all wait 10
+
+seconds or so again to let a few more
+
+pings be sent from r1 to r2
+
+okay now let's check the IP SLA
+
+statistics once more on our one the
+
+number of successes should have
+
+increased and we should see a normal
+
+latest RTT value show IP SLA statistics
+
+there we go the pings are working again
+
+that's all for this lab thank you for
+
+watching I hope this lab and video have
+
+been helpful for you there are only a
+
+few more labs left in my CCNA series but
+
+please subscribe to catch my next
+
+project if you want to support my
+
+channel I accept cryptocurrency
+
+donations via the addresses in the
+
+description I am also a brave verified
+
+publisher and accept bat or basic
+
+attention token donations in the brave
+
+browser

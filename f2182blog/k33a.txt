@@ -1,1 +1,198 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description in this lab we will once
+
+again configure NTP Network Time
+
+Protocol unlike last lab however we will
+
+also configure authentication to ensure
+
+that our routers r2 and r3 only sing to
+
+a trusted time source r1
+
+first we will once again configure the
+
+time zone and time on r1 unable I'll set
+
+the time to 9:00 p.m. jst again like the
+
+previous lab remember the clock set
+
+command we are going to use sets the
+
+timing UTC my time zone is nine hours
+
+ahead of UTC so I have to set the time
+
+to nine hours behind what I actually
+
+want the time to be clock set 12 o'clock
+
+August 22nd 2019 now let's set the time
+
+zone
+
+comte clock time zone is t9 now let's
+
+configure NTP first I'll configure it as
+
+an NTP server with a default stratum
+
+level which is 8 NTP master now let's
+
+set up NTP authentication the first
+
+command is NTP authenticate now we have
+
+to set up two keys one for r2 and one
+
+for r3 we could actually use a single
+
+key for both routers but the
+
+instructions say to use two to make a
+
+key we use this command NTP
+
+authentication key followed by the key
+
+number one md5 then the key string Cisco
+
+1 now let's create key number two as
+
+well NTP authentication key to md5
+
+go to we're not done yet however let's
+
+configure these as trusted keys ntp
+
+trusted key 1 ntp trusted key - ok we
+
+have completed the configuration on r1
+
+now let's set up our to enable compte
+
+clock time zones AST 9 remember ntp
+
+doesn't sync the time zone so we still
+
+have to configure which time zone we
+
+want to display the time in now let's
+
+setup NTP authentication and then set r1
+
+as the server NTP authenticate NTP
+
+authentication key 1 md5 Cisco 1 NTP
+
+trusted key 1 now to set R 1 as the
+
+server we have to add something to the
+
+command we used in the previous lab NTP
+
+server 192.168 12.1 key 1 we add key
+
+followed by the key number to the end of
+
+the command as I mentioned in the
+
+previous lab NTP can take some time to
+
+synchronize I'm going to configure r3
+
+first before we check on r2
+
+then I'll cut the video and wait for
+
+everything to synchronize enable compte
+
+clock time zone jst 9 NTP authenticate
+
+NTP authentication to md5 Cisco to NTP
+
+trusted key to NTP server 192.168.1 key
+
+to now that the configuration is
+
+complete I'll cut the video and wait for
+
+the time to synchronize
+
+okay we're back let's check if
+
+everything is good on our to show clock
+
+detail time sources NTP looks good show
+
+NTP associations we are synched to our
+
+one 192.168.1.1 its reference clock is a
+
+loopback address on our one one two 7.1
+
+- 7.1.1 and it's stratum level is eight
+
+note the asterisk and the tilled on the
+
+Left the tilde indicates that this
+
+association has been configured and the
+
+asterisk essentially means that we're
+
+synced to the pier now let's check on
+
+our three show clock detail again time
+
+sources NTP show NTP associations our
+
+server is r1 at 192.168.1 and again
+
+notice the asterisk and tilled on the
+
+Left we have successfully synchronized
+
+the time with NTP that's all for this
+
+lab thank you for watching I hope this
+
+lab and video have been helpful for you
+
+please subscribe for future labs like
+
+this which will be released weekly if
+
+you have requests for any specific labs
+
+let me know in the comment section if
+
+you want to support my channel please
+
+consider contributing to my patreon
+
+patreon comm slash Jeremy's IT lab I
+
+accept Bitcoin and aetherium donations
+
+via the addresses in the description I
+
+am also a brave verified publisher and
+
+accept bat or basic attention token
+
+donations in the brave browser

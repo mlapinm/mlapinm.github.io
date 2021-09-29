@@ -1,1 +1,188 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description also please subscribe to the
+
+channel for more labs like this and
+
+share these videos with anyone else
+
+studying for the CCNA in this lab we
+
+will troubleshoot the GRE tunnel
+
+configuration from the previous lab the
+
+GRE tunnel should be working with E I gr
+
+P over it so pc1 & pc2 can reach each
+
+other there are two misconfigurations on
+
+each router let's get started I'll go on
+
+r1 first enable show IP interface brief
+
+the tunnel interface is up down so it's
+
+not working notice the error message
+
+we're getting temporarily disabled due
+
+to recursive routing this is a common
+
+problem in tunnel configuration show
+
+interface tunnel 0 tunnel source of
+
+serial zero zero zero is okay but look
+
+at the destination the destination has
+
+to be the address of the physical
+
+interface which is at the other end of
+
+the tunnel not the tunnels address
+
+itself that's what's causing the
+
+recursive routing error message call T
+
+interface tunnel zero tunnel destination
+
+200 oh oh - okay that should end the
+
+error messages let's check the AIG RP
+
+configuration here to do show IP
+
+protocols routing for networks 1001 0/24
+
+and 100 0 0 / 30 there's a problem
+
+we want to activate a idrp on the G zero
+
+zero interface which we are and the
+
+tunnel interface 100 euro / 30 which is
+
+the s zero zero zero interface isn't the
+
+tunnel interface it's the tunnel source
+
+let's change that router ew g RP 100 no
+
+network 100 oh oh oh oh oh three network
+
+192.168.1.0 oh oh oh three end ok we've
+
+solved two problems here on our one
+
+however there are still problems on our
+
+two so our tunnel won't be working yet
+
+let's go on our to enable I'll quickly
+
+check the EIG RP configuration here on
+
+our to show IP protocols
+
+EW GFP is activated for 1002 0/24 which
+
+is G 0 0 and 192.168.1.0 / 30 which is
+
+the tunnel interface so the AI g RP
+
+configuration looks good let's check the
+
+tunnel show interface Tunnel zero the
+
+tunnel destination is correct but the
+
+source isn't the tunnel source is the
+
+inside interface Gigabit Ethernet 0 0
+
+but it should be the interface connected
+
+to the service provider serial 0 0 0
+
+Koff t interface tunnel 0 tunnel source
+
+s 0 0 0 do show IP interface brief the
+
+tunnel still isn't up let's check one
+
+other important thing do show IP route
+
+there is no route allowing us to reach
+
+the tunnel destination of 100 oh oh -
+
+remember the tunnel destination address
+
+must be reachable let's configure a
+
+static default route pointing to the
+
+service provider exit IP route oh oh oh
+
+oh oh oh oh oh 201 do show IP interface
+
+brief okay looks like it's up now let's
+
+try to ping the other end do ping
+
+192.168.1.1 okay it's working now
+
+now are we getting the EIG our peer out
+
+to our ones internal network do show IP
+
+route there it is 1001 Oh finally let's
+
+try a ping from PC to 2 PC one ting 1001
+
+dot 100
+
+okay our ping worked we have solved the
+
+issues and fixed the GRE tunnel that's
+
+all for this lab thank you for watching
+
+I hope this lab and video have been
+
+helpful for you please subscribe for
+
+future labs like this which will be
+
+released weekly if you have requests for
+
+any specific labs let me know in the
+
+comment section if you want to support
+
+my channel I accept Bitcoin and
+
+aetherium donations via the addresses in
+
+the description I am also a brave
+
+verified publisher and accept bat or
+
+basic attention token donations in the
+
+brave browser

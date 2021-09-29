@@ -1,1 +1,302 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description this lab uses the same
+
+topology as the previous lab number 20
+
+whereas lab 20 had you configured
+
+various technologies this lab requires
+
+you to troubleshoot several
+
+configuration errors to restore
+
+connectivity between pcs 1 2 3 & 4
+
+troubleshooting is a valuable skill and
+
+also good practice for the exam as you
+
+will most likely encounter some sort of
+
+troubleshooting lab in your exam in this
+
+video I won't go through the exact
+
+troubleshooting method I would use to
+
+fix the topology there is somewhat of an
+
+art to troubleshooting and you can go
+
+about it in many ways instead I will
+
+just show you the configuration errors
+
+one by one however it is important to
+
+have some sort of system to troubleshoot
+
+try to complete the lab yourself first
+
+then continue watching this video if you
+
+can't find and fix all of the
+
+configuration errors or watch it after
+
+to check your solution first let's try
+
+to ping from pc1 and see if it can reach
+
+the other pcs paint no.1 dot 12 can't
+
+reach PC 2 ping 1000 13 can't reach PC 3
+
+and paint no.1 14 can't reach PC 4 so PC
+
+1 can't reach any of the other pcs there
+
+are multiple miss configurations in this
+
+lab and they all contribute to that but
+
+let's look at one of them I'll go on
+
+switch one password out of CCNA enable
+
+if you use the command shell port
+
+security
+
+notice that the security violation count
+
+is not zero this is because our pings
+
+have been triggering port security
+
+violations
+
+so run look here under f02 sticky MAC
+
+address learning is supposed to be
+
+configured but instead a secure MAC
+
+address of áááá áááá áááá is configured
+
+let's fix that con 14 interface f0 - no
+
+switch port port security MAC address
+
+eh-eh-eh-eh eh-eh-eh-eh eh-eh-eh-eh ok
+
+that remove the configuration now lets
+
+enable sticky mac learning switch port
+
+port security MAC address sticky ok now
+
+let's try to ping from pc1 again just a
+
+PC to ping 1001 dot 12 it doesn't work
+
+but let's go back to switch 1 again do
+
+show port security notice that the
+
+security violation counter hasn't
+
+increased so PC one isn't triggering
+
+anymore port security violations but
+
+there are still problems elsewhere
+
+next let's check our inter VLAN routing
+
+since PC one can't pin PC to let's go on
+
+our one password of CCNA enable show run
+
+look at the two sub interfaces of G zero
+
+zero there is one miss configuration on
+
+each on the g0 0.13 sub-interface the IP
+
+address is incorrect it should be 10.1
+
+which is the default gateway set on the
+
+pcs in VLAN 13 not 10.2 also the v/line
+
+of the g0 0.24 sub interface is
+
+incorrect it should be 24 not - lets fix
+
+those errors con 40 interface G 0 0 13
+
+IP address 1001 255.255.255.0 note that
+
+you don't have to remove the previous IP
+
+address first this overrides it next
+
+interface G 0 0 24 encapsulation dot1q
+
+24 ok that should fix it now PC one
+
+should be able to paint PC 2 there are
+
+still problems on switch 2 which will
+
+prevent it from reaching PC 3 and PC for
+
+however because pc1 & pc2 are connected
+
+to the same switch and we fixed the
+
+inter VLAN routing they should be able
+
+to reach each other I'll go on PC one to
+
+try paying 1000 1.12 there we go just to
+
+confirm
+
+let's try pc3 to ping 1000 13 doesn't
+
+work
+
+now let's go on switch to password of
+
+CCNA enable let's check if the trunk
+
+between switch 1 and switch 2 is working
+
+show interfaces trunk nothing appears
+
+that's a problem we could use show run
+
+to check but let's try another command
+
+just to get familiar with the various
+
+show commands available show interfaces
+
+f01 switch port take a look at all the
+
+info here and familiarize yourself with
+
+it for this lab what we want to look at
+
+is here the administrative and
+
+operational mode is static access
+
+meaning it has be configured as an
+
+access port not a trunk let's fix that
+
+conf T interface f01 switch port mode
+
+trunk okay that solves that however one
+
+more problem remains on switch to do
+
+show VLAN brief look here f03 is in VLAN
+
+24 as it should be however the f02
+
+interface is in VLAN 23 which is not
+
+correct it should be in VLAN 13 let's
+
+fix that interface f0 to switch port
+
+access VLAN 13 okay that's all the
+
+misconfigurations
+
+that should restore full connectivity
+
+between the four pcs it can take some
+
+time for a spanning tree to reconverge
+
+so things might not work immediately if
+
+you haven't studied spanning 4 yet don't
+
+worry about it yet but after changes the
+
+configuration like we just did it can
+
+take some time for the switches to
+
+communicate the changes to each other
+
+and for those changes to take effect
+
+across the network hopefully enough time
+
+has passed so let's go on pc-12 tests
+
+I'll ping PC 2 first although we already
+
+tested before and it worked
+
+ping 1001 12
+
+the ping works again next let's ping pc3
+
+which didn't work previously because of
+
+the misconfigurations on switch to ping
+
+1000 13 now the ping works and finally
+
+I'll ping PC for pin 1001 14 it works as
+
+well this lab is now complete
+
+thank you for watching I hope this lab
+
+and video have been helpful for you
+
+please subscribe for future labs like
+
+this which will be released weekly if
+
+you have requests for any specific labs
+
+let me know in the comment section if
+
+you want to support my channel please
+
+consider contributing to my patreon
+
+patreon comm / Jeremy's IT lab I accept
+
+Bitcoin and aetherium donations via the
+
+addresses in the description I am also a
+
+brave verified publisher and accept bat
+
+or basic attention token donations in
+
+the brave browser

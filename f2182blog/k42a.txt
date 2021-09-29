@@ -1,1 +1,280 @@
-aabbаабб
+
+welcome to this free CCNA packet tracer
+
+practice lab you can download the lab
+
+file from the link in the description if
+
+you like these labs please consider
+
+supporting me via my patreon or the
+
+cryptocurrency options in the
+
+description also please subscribe to the
+
+channel for more labs like this in this
+
+lab we will practice some basic ipv6
+
+configurations including ipv6 address
+
+configuration slack or stateless address
+
+auto-configuration and ipv6 static
+
+revving let's get right into it
+
+the first step is to enable ipv6 on the
+
+routers and configure some ipv6
+
+addresses I'll go on r1 first enable
+
+compte ipv6 is not enabled by default to
+
+enable it use this command ipv6 unicast
+
+routing now let's configure the
+
+addresses according to the network
+
+diagram interface g00 ipv6 address 2001
+
+DB 8 1 2 3 1 2 3 double colon 1/64 also
+
+let's enable the interface no chef
+
+interface G 0 1 IP v6 address 2001 DB 8
+
+1 1 double colon 1/64 no chef makes it
+
+okay let's check do show ipv6 interface
+
+brief there are the addresses we
+
+configured but what are these other
+
+addresses there link local addresses and
+
+they are automatically generated on ipv6
+
+interfaces these addresses are never
+
+routed they only work on the local link
+
+link local addresses are in the fe80
+
+slash 10 range ok that's it for our one
+
+next let's go on our to enable compte on
+
+our 2 we will only configure the g0 one
+
+in
+
+face for now as in the next step we will
+
+use slack to configure the address for
+
+the g00 interface interface G 0 1 IP p6
+
+address 2001 DB 8 2 2 double colon 1/64
+
+no shutdown ok let's go on r3 and do the
+
+same in abel compte interface g 0 1 IP
+
+v6 address 2001 DB 8 3 3 double colon
+
+1/64 no shutdown ok now in step 2 we
+
+will use slack stateless address
+
+auto-configuration to automatically
+
+generate ipv6 addresses for r2 and r3 SG
+
+0 0 interfaces how does slack work to
+
+put it briefly ipv6 uses NDP or neighbor
+
+discovery protocol and as part of NDP r1
+
+is currently sending RA or router
+
+advertisement messages on its G 0 0
+
+interface when we configure slack r2 and
+
+r3 will receive these messages and use
+
+them to learn the network prefix which
+
+is 2001 DB 8 1 2 3 1 2 3 / 64 in this
+
+case they will take that prefix and use
+
+a modified version of their own MAC
+
+address to generate the rest of the IP
+
+address hopefully you've learned this in
+
+your studies if you're not familiar with
+
+it now make sure you are for the test
+
+anyway the configuration is simple we
+
+are on our 3 already so let's do it here
+
+first interface G 0 0 no shutdown
+
+ipv6 address Auto config exit next I'll
+
+go on r2 interface G 0 0 no shutdown
+
+ipv6 address Auto config exit these
+
+routers won't generate their addresses
+
+immediately so I'll pause the video as
+
+we wait for the router advertisements
+
+from R 1 to reach them
+
+okay I'm on r2 and as you can see from
+
+the output of the show ipv6 interface
+
+brief command r2 has generated an ipv6
+
+address for its g0z interface and on r3
+
+you can see the same next let's
+
+configure some ipv6 static Reds on each
+
+router will have to configure two static
+
+routes one for each of the other routers
+
+internal networks now to configure an
+
+next hop address of r2 and r3 we will
+
+have to use their slack addresses which
+
+are not easy to remember so to do so
+
+I'll be copy and pasting their addresses
+
+first let me copy our twos g00 address
+
+okay now I'll create the first route on
+
+r1 to our two's internal network ipv6
+
+route 2001 DB 8 2 2 double colon slash
+
+64 now let me paste in our two's address
+
+there we go now since I already have our
+
+two SG 0 0 address copied I'm going to
+
+configure the same route on our three
+
+ipv6 route 2001 DB 8 2 2 double colon
+
+slash 64 and paste our two's address in
+
+there we go
+
+now I'll copy our fries jeez user
+
+interface address and make a route to
+
+its internal network on r1 and r2 there
+
+we go
+
+now I'll go on our one IP v6 route 2001
+
+DV 8 3 3 double colon slash 64 and paste
+
+in the address
+
+there we go next on our to high six
+
+route 2001 DB 8 3 3 double colon slash
+
+64 and once again paste in the address
+
+okay
+
+now let's configure routes to our ones
+
+internal network on r2 and r3 since i'm
+
+on r2 already let's start here
+
+ipv6 route 2001 DB 8 1 1 double colon
+
+slash 64 2001 DB 8 1 2 3 1 2 3 double
+
+colon 1 ok now on our three ipv6 route
+
+2001 deviate 1 1 double colon slash 64
+
+2001 DB 8 1 2 3 1 2 3 double colon 1 ok
+
+all of our routes are now configured for
+
+this video I won't ping from each router
+
+but let's just try out some things from
+
+r3 to test first I'll ping PC ones
+
+address exit ping 2001 DB 8 1 1 double
+
+colon 64 ok the ping works and now I'll
+
+ping PC to ping 2001 DB 8 2 2 double
+
+colon 64 again the ping works in this
+
+lab we configured manual ipv6 addresses
+
+slack addressing and ipv6 static ribs
+
+that's all for this lab thank you for
+
+watching I hope this lab and video have
+
+been helpful for you please subscribe
+
+for future labs like this which will be
+
+released weekly if you have requests for
+
+any specific labs let me know in the
+
+comments section if you want to support
+
+my channel I accept a Bitcoin and
+
+aetherium donations via the addresses in
+
+the description I am also a brave
+
+verified
+
+publisher and accept bat or basic
+
+attention token donations in the brave
+
+browser
