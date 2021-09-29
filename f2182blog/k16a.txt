@@ -1,254 +1,256 @@
-
+0.0
 welcome to this free CCNA packet tracer
 
-practice lab you can download the lab
+practice lab 5.480994you can download the lab
 
-file from the link in the description in
+file from the link in the description 8.454609in
 
 this lab we will configure loopback
 
 interfaces on two routers r1 and r2
-
+16.736868
 loopback interfaces are logical
 
-interfaces meaning that they are not
+interfaces 21.021283meaning that they are not
 
 interfaces that physically exist on the
 
-router they can be used for testing
+router 25.486237they can be used for testing
 
-purposes among others another important
+purposes among others 29.353279another important
 
 characteristic is that a loopback
 
 interface never goes down unlike a
 
 physical interface which can fail
-
+37.153608
 loopback interfaces are something we'll
 
-be using a lot in future labs so I want
+be using a lot in future labs 42.241351so I want
 
 to use this simple lab to introduce them
-
+45.566424
 try to complete the lab on your own
 
-first then continue watching this video
+first 48.590203then continue watching this video
 
 if you have trouble or watch it after to
 
 check your solution
-
+54.434513
 step one is to set the IP addresses of
 
 the interfaces connecting the two
 
-routers and to enable them let's hop on
+routers and to enable them 65.914952let's hop on
 
-our one first enable compte both routers
+r1 first 68.821056enable conf t both routers
 
 are connected using their gig 0 0
 
-interfaces so interface gig 0 0 now
+interfaces 78.500477so interface gig 0 0 82.320225now
 
-let's set the IP address IP address
+let's set the IP address 85.547967IP address
 
-192.168.1.1 with the subnet mask of
+192.168.1.1 89.825134with the subnet mask of
 
-255.255.255.0 ok now we have to enable
+255.255.255.0 95.188923ok now we have to enable
 
-the interface no shutdown there we go
+the interface 98.369577no shutdown 100.217359there we go
 
-our one is done now let's go to our to
+our one is done 102.460883now let's go to r2
+104.368105
+enable conf t interface g00 IP address
 
-enable compte interface g00 IP address
+192.168.1.1 255.255.255.0 120.277656no shut ok let's
 
-192.168.1.1 55.2 55.0 no shut ok let's
+ping to check 125.013648do ping 192.168.1.1 the
 
-ping to check do ping 192.168.1.1 the
+ping works 134.011035step 2 is to create a
 
-ping works step 2 is to create a
+loopback interface on each router 1.1.1.1
 
-loopback interface on each router 1.1.11
+ & 2.2.2.2 145.198528they should
 
-on our 1 & 2 - 2 - on our 2 they should
+each use a / 32 subnet mask 149.524752which is
 
-each use a / 32 subnet mask which is
+equivalent to 255 255 255 255 155.119661ok
 
-equivalent to 255 dot 255 255 255 ok
-
-let's go on our one to create a loopback
+let's go on r1 to create a loopback
 
 interface just enter interface
 
 configuration mode for the loopback
 
-interface interface loopback 0 note that
+interface 165.474578interface loopback 0 168.678192note that
 
-you can shorten it to interface l 0 so
+you can shorten it to interface l0 172.568854so
 
 we have now created the loopback
 
-interface the loopback interface is up
+interface 175.992272the loopback interface is up
 
 by default and will never go down
-
+180.488595
 however you can still issue the shutdown
 
 command to administrative lead issei
 
-belit now let's set the IP address IP
+belit 185.366319now let's set the IP address 188.799318IP
 
 address 1.1 1.1
 
-255 255 255 255 ok now let's go on our
+255 255 255 255 196.28518ok now let's go on r2 
+198.790761interface l0 IP address 2 2 2 2 255
 
-to interface l0 IP address 2 2 2 2 255
-
-255 255 255 we have successfully created
+255 255 255 210.886671we have successfully created
 
 a loopback interface on each device
-
+215.366654
 step three is to ping both the local
 
 loopback interface and the loopback
 
 interface of the remote device from each
 
-router the router should be able to ping
+router 225.88773the router should be able to ping
 
 its own loopback interface with no
 
-issues by default however it has no way
+issues by default 231.290868however it has no way
 
 of knowing about the loopback interface
 
-of the remote router by default the
+of the remote router by default 236.363551the
 
 routers can pin each other's physical
 
 interfaces because they are part of a
 
 connected network which they share
-
+243.846666
 however the loopback interfaces are on
 
-separate networks because we haven't
+separate networks 247.661056because we haven't
 
 done any labs for IP ropes yet I
 
 pre-configured static routes on each
 
-router beforehand this isn't a topic for
+router beforehand 254.864724this isn't a topic for
 
 this lab but let me show you the IP
 
-route table let me hop on r1 and show IP
+route table 260.733203let me hop on r1 263.337018and show IP
 
-route you see here the C indicating
+route 267.95312you see here the C indicating
 
-connected of the 192.168.1.0 Network and
+connected of the 192.168.1.0 Network 276.116495and
 
 the l indicating local of the
 
 192.168.1.1 address configured on the
 
-gig 0/0 interface above that is an S
+gig 0/0 interface 283.292259above that is an S
 
-indicating static this is the route I
+indicating static 287.648635this is the route I
 
 pre-configured to the loopback of r2
-
+291.874642
 also at the top is the loopback here on
 
-r1 now let's try the pings which both
+r1 296.107289now let's try the pings which both
 
-should be successful first the local
+should be successful 300.727298first the local
 
-loopback ping 1.1.11
+loopback 303.94082ping 1.1.1.1
 
-it works now our twos ping - - - - it
+it works 310.722019now our twos ping 2.2.2.2 315.089141it
 
-works as well now let's do the same on
+works as well 317.140025now let's do the same on
 
-our two end
+r2 320.332206end
 
-ping - two - - it works ping 1.1.11 it
+ping 2.2.2.2 it works 328.234023ping 1.1.1.1 it
 
 works as well
-
+335.025811
 step four is to remove the loopback
 
-interfaces this is just to point out a
+interfaces 342.98689this is just to point out a
 
 difference between physical interfaces
 
-and loopback interfaces you can't delete
+and loopback interfaces 348.310591you can't delete
 
 a physical interface using the command
 
-line let's confirm that first on our two
+line 352.686503let's confirm that 354.160709first on our two
 
-conf T no interface G zero zero we get
+conf T no interface G zero zero 361.269642we get
 
 the message
 
 removal of physical interfaces is not
 
-permitted now let's do the same thing ad
+permitted 366.150851now let's do the same thing ad
 
 no in front of the interface command for
 
-loopback zero first however let's use
+loopback zero 372.220037first however let's use
 
 the do show IP interface brief command
-
+377.316643
 there is gig zero zero which we were
 
 unable to delete before and loopback
 
-zero now let's try to delete it no
+zero 384.724192now let's try to delete it 386.868471no
 
-interface l0 do show IP interface brief
-
+interface l0 390.283007do show IP interface brief
+393.495554
 as you can see we are able to delete
 
 loopback interfaces and loop X zero is
 
-no longer listed here let's do the same
+no longer listed here 400.971342let's do the same
 
-on r1 show IP interface brief there's
+on r1 403.806206show IP interface brief there's
 
-loopback zero compte no interface l0 do
+loopback zero 409.602943conf t no interface l0 414.459122do
 
-show IP interface brief we have
+show IP interface brief 417.7599we have
 
 successfully removed the loopback
 
-interface of each router that's all for
+interface of each router 422.086975that's all for
 
 this lab
-
+423.704346
 thank you for watching I hope this lab
 
 and video have been helpful for you
-
+429.782899
 please subscribe for future labs like
 
-this which will be released weekly if
+this which will be released weekly 434.794398if
 
 you have requests for any specific labs
 
-let me know in the comment section if
+let me know in the comment section 439.477337if
 
 you want to support my channel I accept
 
 Bitcoin and etherion donations via the
 
-addresses in the description I am also a
+addresses in the description 446.706857I am also a
 
 brave verified publisher and accept bat
 
 or basic attention token donations in
 
 the brave browser
+454.982362
+454.982362
+454.982362
