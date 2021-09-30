@@ -1,244 +1,123 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon or the
-
 cryptocurrency options in the
-
 description also please subscribe to the
-
 channel for more labs like this in this
-
 lab we are going to do some important
-
 device management tasks including
-
 password recovery configuration backup
-
 and operating system upgrading first we
-
 are locked out of our one someone else
-
 configured an enable password and forgot
-
 it so we can't enter privileged exec
-
 mode and thus can't enter global
-
 configuration mode to change the
-
 password so how can we solve this we
-
 have to use the rom monitor command line
-
 AKA rahman to enter rahman reset the
-
 router and then press control break
-
 before it finishes booting to do that in
-
 packet tracer click on r1 and under the
-
 physical tab here flick the power switch
-
 off and on then switch to the CLI and
-
 press control break there we are we're
-
 now in ROM on the next step in password
-
 recovery is to change the configuration
-
 register to make r1 startup and ignore
-
 the startup configuration in NVRAM and
-
 startup with a default configuration
-
 then we will enter privileged exec mode
-
 without needing a password copy the
-
 startup config to the running config to
-
 make it active and then change the
-
 password and save the configuration
-
 again so to change the configuration
-
 register from rahman use this command
-
 conf reg and to make it ignore the
-
 contents of nvram type 0 x2 1 for 2 then
-
 type reset to reset the router
-
 there we go Arwen has now booted
-
 ignoring this startup-config enable see
-
 no password was needed now that we are
-
 safely in privileged exec mode I will
-
 copy the start config to the running
-
 config copy start run as you can see the
-
 host name has changed to r1 as the
-
 startup config is now the running config
-
 let's change the password to CCNA compte
-
 enable secret CCNA I'll also enable the
-
 g00 interface interface g00 no shut now
-
 it's important to restore the
-
 configuration register to its default so
-
 it doesn't always ignore the startup
-
 config when booting up exit from ramen
-
 we used the contract command but from
-
 the regular CLI use config register and
-
 the default setting is 0 X - 1 0 - exit
-
 now let's save the configuration right
-
 step 2 is to backup our ones startup
-
 configuration to our server TFTP 1 first
-
 I'll ping it to make sure it's reachable
-
 ping 192.168.1.1 hundred ok looks good
-
 - copy the configuration to a TFTP
-
 server use this command copy startup
-
 config TFTP now it asks us the IP
-
 address 192.168.1.1 hundred and the file
-
 name let's accept the default there we
-
 go
-
 I'll go on TFTP one to check if it's
-
 there click on the server and packet
-
 tracer click services and then click
-
 TFTP there it is our one config we have
-
 successfully backed up our one startup
-
 configuration
-
 the final step is to upgrade our ones
-
 iOS image to a newer version which is on
-
 our T of TP server first let's check the
-
 iOS version on our one show version here
-
 it says the version C 2900 software
-
 version fifteen point one four and four
-
 and down here is the image file now
-
 let's find the new image on TFTP one
-
 here it is the C 2900 image and it's
-
 version fifteen point five three indeed
-
 a newer version I'll copy the name with
-
 ctrl C now let's go back to our one I
-
 want to copy the file from the TFTP
-
 server to flash storage
-
 so copy TFTP flash enter the IP address
-
 192.168.1.1 hundred and then paste the
-
 file name
-
 great we've copied the image from TFTP
-
 to flash let's check show flash now
-
 there are two iOS images in flash let's
-
 delete the old one I'll copy the file
-
 name here then delete it with this
-
 command delete flash : and then paste
-
 the file name okay show flash now we
-
 only have one iOS image on flash let's
-
 reload the router so it uses the new iOS
-
 version reload
-
 okay r1 has booted up an Abel okay now
-
 let's check to the iOS version show
-
 version there we go we're using the new
-
 iOS version and here's the new image
-
 file okay in this lab we performed
-
 password recovery configuration backup
-
 and an iOS upgrade that's all for this
-
 lab thank you for watching I hope this
-
 lab and video have been helpful for you
-
 please subscribe for future labs like
-
 this which will be released weekly if
-
 you have requests for any specific labs
-
 let me know in the comment section if
-
 you want to support my channel I accept
-
 Bitcoin and aetherium donations via the
-
 addresses in the description I am also a
-
 brave verified publisher and accept bat
-
 or basic attention token donations in
-
 the brave browser

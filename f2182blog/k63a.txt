@@ -1,320 +1,161 @@
-
+0.0
 welcome to this free gns3 practice lab
-
 for the CCNA that's right in this video
-
 as well as the next one I will be using
-
 gns3 not packet tracer as much as I love
-
 packet tracer even today it doesn't
-
 support everything that is on the CCNA
-
 exam topics so for this video on
-
 multi-link PPP and the next video on
-
 pppoe I had to choose between skipping
-
 the topics or using gns3 instead I will
-
 still put the lab file in the
-
 description which you can use to load up
-
 the topology these routers are cisco c
-
 7200 routers however I can't legally
-
 include the iOS image files so you'll
-
 have to get those yourself I'll put the
-
 name of the iOS image I used in the
-
 description if you want to know how to
-
 get gns3 working do a quick search on
-
 google there are plenty of people who
-
 can teach you how to get gns3 up and
-
 running now if you just can't get gns3
-
 working make sure you watch the video
-
 and learn the commands as these topics
-
 are on the exam topics list let's get
-
 started in this lab we will configure
-
 multi-link PPP or ml PPP much like ether
-
 channel which we configured a few labs
-
 ago ml PPP groups multiple physical
-
 interfaces together to operate as one
-
 logical interface this provides multiple
-
 benefits you get the redundancy of
-
 having multiple links so if one link
-
 fails the others can keep forwarding
-
 traffic however you also get the
-
 increased bandwidth of having multiple
-
 links forwarding at the same time so in
-
 this lab we will configure multi-link
-
 PPP with PAP authentication between r1
-
 and SPR 1 and chap authentication
-
 between r2 and SPR - I'll go on r1 first
-
 compte
-
 now SP r1 is currently configured for ml
-
 PPP with pap authentication and is
-
 trying to authenticate with the username
-
 packet and password tracer so let's
-
 configure that user account on our one
-
 username packet password tracer okay now
-
 to configure ml PPP let's first create
-
 the logical interface which is called
-
 multi link interface
-
 multi-link one okay there are a few
-
 commands we need to put here the first
-
 is PPP multi link that is followed by
-
 PPP multi-link group one we will put
-
 that command on the physical interfaces
-
 two later to tell them to join this
-
 multi link group keep in mind this multi
-
 link group number and the multi link
-
 interface number have to be the same as
-
 on the neighboring router next let's
-
 activate PAP authentication PPP
-
 authentication tap the network diagram
-
 says to send a username of Cisco and
-
 password of CCNA PPP PAP sent username
-
 cisco password CCNA finally we have to
-
 configure the IP address here not on the
-
 physical interfaces IP address 100 0 to
-
 255 255 dot 255 dot 255 in interface
-
 multi-link 1 the order is different but
-
 there's everything I configured IP
-
 address PAP authentication and PPP
-
 multi-link configuration ok now let's
-
 configure the two physical interfaces to
-
 join this multi link group interface s1
-
 zero there are just three commands I
-
 need here we have to set the
-
 encapsulation on the physical interfaces
-
 to PPP so encapsulation PPP next tell it
-
 had joined the multi link group we
-
 created PPP multi-link group one finally
-
 make sure the physical interfaces aren't
-
 shutdown no shutdown okay now I'll do
-
 the same on s1 one interface s1 1
-
 encapsulation PPP PPP multi-link group 1
-
 no shutdown end ok let's do some show
-
 commands to verify first a general PPP
-
 show command show PPP all notice our two
-
 physical interfaces as well as the multi
-
 link interface all with the same peer
-
 address of 101 which is the address of
-
 SPR 1 also the peer name of packet which
-
 SPR 1 is using to authenticate next show
-
 PPP multi-link there's the remote user
-
 name of packet again and our local user
-
 name of cisco dan here you can see our
-
 two member links serial 1 0 and 1 1 ok
-
 let's try a ping to see if it works
-
 ping 100 0 1 there we go
-
 ok let's move on to our to the
-
 multi-link configuration will be the
-
 same just with chap authentication
-
 instead of PAP coffee tea first I'll
-
 create the user account that SP r2 will
-
 use to authenticate remember the
-
 username should be the same as the
-
 remote routers hostname so username SPR
-
 2 and then the password should be the
-
 same on both route
-
 in this case password CCNA interface
-
 multi-link 1 PPP multi-link PPP
-
 multi-link group 1 PPP authentication
-
 chap
-
 and finally the IP address IP address
-
 200 0 to 255 255 dot 255 dot 255 in
-
 there's the IP address followed by chap
-
 authentication and our multi-link
-
 configuration looks good next we just
-
 have to prepare the physical interfaces
-
 interface s10 encapsulation PPP PPP
-
 multi-link group 1 no shutdown interface
-
 s1 1 encapsulation PPP PPP multi-link
-
 group 1 no shutdown and ok let's confirm
-
 show PPP all again our physical
-
 interfaces as well as the multi link
-
 interface all have the same peer address
-
 200 0 0 1 and that peers name is spr to
-
 show PPP multi-link the remote user name
-
 of SPR 2 again our local user name of r2
-
 and down here the two member links
-
 serial 1 0 and 1 1 let's try to ping SPR
-
 to ping 201 ok no problems here
-
 now let's configure static default
-
 routes on our routers so that they can
-
 reach each other via the service
-
 provider network here on r2 first compte
-
 IP route
-
 oh-oh-oh-oh-oh-oh-oh-oh-oh and the next
-
 hop is 201 do show IP route
-
 there's our default route 200 g o / o
-
 next let's configure it on our one
-
 coughed e IP route
-
 oh-oh-oh-oh-oh-oh-oh-oh-oh the next hop
-
 is 101 do show IP rent there's the
-
 default route let's try a ping to r2
-
 from r1 do ping 200 go to great looks
-
 like our multi-link PPP configuration is
-
 working that's all for this lab thank
-
 you for watching I hope this lab and
-
 video have been helpful for you please
-
 subscribe for future labs like this
-
 which will be released weekly if you
-
 have requests for any specific labs let
-
 me know in the comment section if you
-
 want to support my channel I accept
-
 Bitcoin and etherium donations via the
-
 addresses in the description I am also a
-
 brave verified publisher and accept bat
-
 or basic attention token donations in
-
 the brave browser

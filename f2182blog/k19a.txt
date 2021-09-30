@@ -1,133 +1,99 @@
 0.0
-welcome to this free CCNA packet tracer
-
-practice lab 4.650826you can download the lab
-
-file from the link in the description 8.083105if
-
-you like these labs please consider
-
-supporting me via my patreon or the
-
-cryptocurrency options in the
-
-description 16.302715in this lab we will take
-
-another look at port security 21.878361although
-
-we will certainly revisit it again 25.311654this
-
-lab will be the final one in this
-
-introductory series 28.752842in the previous lab
-
-we configured sticky MAC address
-
-learning 33.602904however this time we will
-
-manually configure the MAC addresses of
-
-pc1 & pc2 as secure MAC addresses on
-
-switch 1 and switch 2 respectively 44.957764step
-
-one is to ping from pc1 to pc2 2
-
-generate traffic 52.74062let's go on pc one 54.819091ping
-
-192.168.1.12 60.786883there we go 62.431795step two is
-
-to view the MAC address table of switch
-
-one 67.360461switch one should have dynamically
-
-learned the MAC address of PC one on f0
-
-2 73.229033and the MAC addresses of switch 2 and
-
-PC 2 on f0 1 77.807698let's check on switch 1
+welcome to this free CCNA packet tracer practice lab
+4.650826
+you can download the lab file from the link in the description
+8.083105
+if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description
+16.302715
+in this lab we will take another look at port security
+21.878361
+although we will certainly revisit it again
+25.311654
+this lab will be the final one in this introductory series
+28.752842
+in the previous lab we configured sticky MAC address learning
+33.602904
+however this time we will manually configure the MAC addresses of pc1 & pc2 as secure MAC addresses on switch 1 and switch 2 respectively
+44.957764
+step one is to ping from pc1 to pc2 2 generate traffic
+52.74062
+let's go on pc one
+54.819091
+ping 192.168.1.12
+60.786883
+there we go
+62.431795
+step two is to view the MAC address table of switch one
+67.360461
+switch one should have dynamically learned the MAC address of PC one on f0 2
+73.229033
+and the MAC addresses of switch 2 and PC 2 on f0 1
+77.807698
+let's check on switch 1
 80.037421
-enable show MAC address table 84.784435as
-
-expected there are two MAC addresses on
-
-F 0 1 and 1 MAC address on F 0 2 91.764687we
-
-don't know which of the two addresses on
-
-F 0 1 is switch 2 and which is PC 2 98.982553but
-
-that doesn't matter in this lab 101.054749we just
-
-want to know the MAC address of PC 1
+enable show MAC address table
+84.784435
+as expected there are two MAC addresses on F 0 1 and 1 MAC address on F 0 2
+91.764687
+we don't know which of the two addresses on F 0 1 is switch 2 and which is PC 2
+98.982553
+but that doesn't matter in this lab
+101.054749
+we just want to know the MAC address of PC 1
 103.784198
 which is this
 105.141063
-step three is to enable port security on
-
-switch ones
-
-f02 interface 114.395773and manually configure PC
-
-ones MAC address as a secure MAC address
+step three is to enable port security on switch ones f02 interface
+114.395773
+and manually configure PC ones MAC address as a secure MAC address
 118.494656
-first let me copy the MAC address of PC
-
-one 122.972171there we go now let's configure the
-
-f02 interface 127.844823 conf t interface f0 2
+first let me copy the MAC address of PC one
+122.972171
+there we go now let's configure the f02 interface
+127.844823
+conf t interface f0 2
 132.50079
-remember we have to configure it as an
-
-access port first 136.651881so switch port mode
-
-access switch port port security 142.164891okay
-
-we've done that before 144.377964now to manually
-
-configure a secure MAC address we use
-
-this command 148.910675switch port port security
-
-MAC address followed by the MAC address
-
-we want to configure 154.948723which I will paste
-
-right here 156.839176there we go
+remember we have to configure it as an access port first
+136.651881
+so switch port mode access switch port port security
+142.164891
+okay we've done that before
+144.377964
+now to manually configure a secure MAC address we use this command
+148.910675
+switch port port security MAC address followed by the MAC address we want to configure
+154.948723
+which I will paste right here
+156.839176
+there we go
 159.017969
-next we must repeat the process on
-
-switch 2 for PC 2 167.008284now the MAC address of
-
-PC 2 should already be in the MAC
-
-address table of switch 2 173.387574the default
-
-aging time of a MAC address in the MAC
-
-address table is 5 minutes 178.937737meaning if
-
-nothing is heard from that address on
-
-the interface for 5 minutes 183.124117it is
-
-cleared from the table 185.321977each time a
-
-packet from that address is received the
-
-timer resets to 5 minutes 191.016553however let's
-
-ping from PC to 2 PC one just in case
+next we must repeat the process on switch 2 for PC 2
+167.008284
+now the MAC address of PC 2 should already be in the MAC address table of switch 2
+173.387574
+the default aging time of a MAC address in the MAC address table is 5 minutes
+178.937737
+meaning if nothing is heard from that address on the interface for 5 minutes
+183.124117
+it is cleared from the table
+185.321977
+each time a packet from that address is received the timer resets to 5 minutes
+191.016553
+however let's ping from PC to 2 PC one just in case
 195.189264
-ping 192.168.1.12 201.171544there we go 203.253126now under
-
-switch 2 207.177134enable show MAC address table
+ping 192.168.1.12
+201.171544
+there we go
+203.253126
+now under switch 2
+207.177134
+enable show MAC address table
 211.6531
-again there are two addresses on the f01
-
-interface 215.851521those of switch 1 and pc 1
-
-and 1 on the f02 interface 220.282994that of pc 2
+again there are two addresses on the f01 interface
+215.851521
+those of switch 1 and pc 1 and 1 on the f02 interface
+220.282994
+that of pc 2
 221.952112
 which is the one we're interested in now
 224.31131
@@ -135,227 +101,161 @@ so I'll copy that
 225.822703
 ok now let's configure the interface
 230.61247
-conf t interface f0 2 switch port mode
-
-access switch port port security switch
-
-port port security MAC address and now
-
-I'll paste in PC 2 MAC address 246.147486there
-
-we go 248.245714now let's do a quick ping from pc1
-
-to pc2 to test 253.136939which is step 5
+conf t interface f0 2 switch port mode access switch port port security switch port port security MAC address and now I'll paste in PC 2 MAC address
+246.147486
+there we go
+248.245714
+now let's do a quick ping from pc1 to pc2 to test
+253.136939
+which is step 5
 254.564681
-if we configure the correct addresses
-
-there should be no problems 258.781179ping
-
-192.168.1.12 it works
+if we configure the correct addresses there should be no problems
+258.781179
+ping 192.168.1.12 it works
 266.092088
-now on step 6 we're going to try to
-
-trigger a port security violation 273.631862let's
-
-remove the cables first 275.772892which we can do
-
-with this tool in packet tracer 278.772661there we
-
-go now I'll connect PC one to switch to
-
-by clicking on the cable down here 288.779013there
-
-we go and now I'll connect PC two to
-
-switch one 295.660237there we go
+now on step 6 we're going to try to trigger a port security violation
+273.631862
+let's remove the cables first
+275.772892
+which we can do with this tool in packet tracer
+278.772661
+there we go now I'll connect PC one to switch to by clicking on the cable down here
+288.779013
+there we go and now I'll connect PC two to switch one
+295.660237
+there we go
 298.935887
 step seven is to ping from pc1 to pc2
 305.211508
-what do you expect will be the result of
-
-this ping 309.193178we manually configured the MAC
-
-address of PC 1 as a secure MAC address
-
-on switch ones f02 interface 316.887278and
-
-manually configured the MAC address of
-
-PC 2 as a secure MAC address on switch
-
-twos f02 interface 324.741179remember the default
-
-number of secure MAC addresses on the
-
-port security enabled interface is 1 331.986455so
-
-if we attempt a ping from pc1 to pc2 now
+what do you expect will be the result of this ping
+309.193178
+we manually configured the MAC address of PC 1 as a secure MAC address on switch ones f02 interface
+316.887278
+and manually configured the MAC address of PC 2 as a secure MAC address on switch twos f02 interface
+324.741179
+remember the default number of secure MAC addresses on the port security enabled interface is 1
+331.986455
+so if we attempt a ping from pc1 to pc2 now
 336.556598
-a port security violation should be
-
-triggered when the packet with a
-
-different MAC address is received on the
-
-port security enabled interface 344.728699what
-
-exactly will happen 347.688827if you remember from
-
-a previous lab the default action in the
-
-event of a port security violation is
-
-shut down 354.409897meaning that the switch port
-
-will enter an error disabled state
+a port security violation should be triggered when the packet with a different MAC address is received on the port security enabled interface
+344.728699
+what exactly will happen
+347.688827
+if you remember from a previous lab the default action in the event of a port security violation is shut down
+354.409897
+meaning that the switch port will enter an error disabled state
 357.610322
-effectively shutting it down 359.437648let's try
-
-that ping on PC 1 362.869803ping 192.168.1 12 as
-
-you can see the ping fails 371.172863also if you
-
-check the port lights on packet tracer
+effectively shutting it down
+359.437648
+let's try that ping on PC 1
+362.869803
+ping 192.168.1 12 as you can see the ping fails
+371.172863
+also if you check the port lights on packet tracer
 375.184603
-you'll notice that the port light on the
-
-f02 interface of switch 2 has gone red
+you'll notice that the port light on the f02 interface of switch 2 has gone red
 379.838564
-this means it is shut down 382.730312however why
-
-hasn't the f02 interface of switch 1
-
-been shut down 387.893378this is because the
-
-packet was stopped right at the f02
-
-interface of switch 2 393.558707so it never
-
-reached PC 2 and thus PC to never sent a
-
-reply to the ping 398.862798which would have
-
-triggered a port security violation on
-
-switch 1 403.250929step 8 is to reconnect the
-
-cables 409.919094so I'll remove these cables first
+this means it is shut down
+382.730312
+however why hasn't the f02 interface of switch 1 been shut down
+387.893378
+this is because the packet was stopped right at the f02 interface of switch 2
+393.558707
+so it never reached PC 2 and thus PC to never sent a reply to the ping
+398.862798
+which would have triggered a port security violation on switch 1
+403.250929
+step 8 is to reconnect the cables
+409.919094
+so I'll remove these cables first
 412.955113
-there we go now let's connect them as
-
-they were originally 419.582863pc 1  switch 1
+there we go now let's connect them as they were originally
+419.582863
+pc 1 switch 1
 423.604938
-there we go and now pc 2 to switch 2
-
-there we go
+there we go and now pc 2 to switch 2 there we go
 432.569194
-you
-
-now let's ping from pc1 to pc2 438.091024do you
-
-expect a ping too work 440.965717PC one is once
-
-again connected to switch ones
-
-f02 interface 445.840699and its MAC address is
-
-configured on the interface as a secure
-
-address 450.097201so it should be fine
+you now let's ping from pc1 to pc2
+438.091024
+do you expect a ping too work
+440.965717
+PC one is once again connected to switch ones f02 interface
+445.840699
+and its MAC address is configured on the interface as a secure address
+450.097201
+so it should be fine
 451.627587
-likewise for PC 2 it is now connected
-
-again to switch twos f02 interface 458.201929and
-
-its MAC address is configured as a
-
-secure address on switch twos
-
-f02 interface 463.778108let's try that ping on PC
-
-one 467.340186ping 192.168.1.12 471.428797it doesn't work
+likewise for PC 2 it is now connected again to switch twos f02 interface
+458.201929
+and its MAC address is configured as a secure address on switch twos f02 interface
+463.778108
+let's try that ping on PC one
+467.340186
+ping 192.168.1.12
+471.428797
+it doesn't work
 475.192785
-why is that even though we connected the
-
-cables back the way they are supposed to
-
-be 480.662842well switch twos f02 interface is
-
-still down 485.807246it doesn't automatically
-
-recover and become enabled again 489.79431it can
-
-be configured to automatically recover
-
-from a port security error 495.116752but that will
-
-be a topic for another lab 497.525238for now let's
-
-do it manually 500.416335I'll go on switch 2 502.974416and
-
-first let's check the status of the
-
-interface 507.676155show interface f02
+why is that even though we connected the cables back the way they are supposed to be
+480.662842
+well switch twos f02 interface is still down
+485.807246
+it doesn't automatically recover and become enabled again
+489.79431
+it can be configured to automatically recover from a port security error
+495.116752
+but that will be a topic for another lab
+497.525238
+for now let's do it manually
+500.416335
+I'll go on switch 2
+502.974416
+and first let's check the status of the interface
+507.676155
+show interface f02
 511.397494
-as you can see here the interface is
-
-down 515.878198and it's in an error disabled State
+as you can see here the interface is down
+515.878198
+and it's in an error disabled State
 518.548093
-how do we manually fix this 522.052855it's simple
+how do we manually fix this
+522.052855
+it's simple
 523.681029
-shutdown no shutdown 527.97717this will reset the
-
-interface and it will no longer be in an
-
-error disabled State 534.473503that's how you
-
-manually recover an error disabled
-
-interface with the command shutdown
-
-followed by no shutdown
+shutdown no shutdown
+527.97717
+this will reset the interface and it will no longer be in an error disabled State
+534.473503
+that's how you manually recover an error disabled interface with the command shutdown followed by no shutdown
 541.765898
-finally let's do one last ping from pc1
-
-to pc2 551.429449just to make sure that everything
-
-is working right again 553.996027after we did that
-
-little experiment with port security
-
-violations 557.377987I'll go on PC one one more
-
-time 561.15042ping 192.168.1.12 566.333083it works
+finally let's do one last ping from pc1 to pc2
+551.429449
+just to make sure that everything is working right again
+553.996027
+after we did that little experiment with port security violations
+557.377987
+I'll go on PC one one more time
+561.15042
+ping 192.168.1.12
+566.333083
+it works
 569.403244
-that's all for this lab 571.030848thank you for
-
-watching I hope this lab and video have
-
-been helpful for you 576.920964please subscribe
-
-for future labs like this 580.158092which will be
-
-released weekly 581.897222if you have requests for
-
-any specific labs let me know in the
-
-comment section 586.600419if you want to support
-
-my channel please consider contributing
-
-to my patreon 591.854253patreon comm slash
-
-Jeremy's IT lab 595.367045I accept Bitcoin and
-
-aetherium donations via the addresses in
-
-the description 600.988519I am also a brave
-
-verified publisher and accept bat or
-
-basic attention token donations in the
-
-brave browser
+that's all for this lab
+571.030848
+thank you for watching I hope this lab and video have been helpful for you
+576.920964
+please subscribe for future labs like this
+580.158092
+which will be released weekly
+581.897222
+if you have requests for any specific labs let me know in the comment section
+586.600419
+if you want to support my channel please consider contributing to my patreon
+591.854253
+patreon comm slash Jeremy's IT lab
+595.367045
+I accept Bitcoin and aetherium donations via the addresses in the description
+600.988519
+I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
 609.742551
 609.742551
 609.742551

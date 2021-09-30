@@ -1,236 +1,119 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon or the
-
 cryptocurrency options in the
-
 description also please subscribe to the
-
 channel for more labs like this in this
-
 lab we will troubleshoot PPP the
-
 point-to-point protocol
-
 I took the topology from the last lab
-
 and added two more pairs of routers so
-
 r1 and r3 are authenticated using pap
-
 and r2 and r4 are authenticating using
-
 chap however there is one miss
-
 configuration on each of them which is
-
 preventing PPP from working let's go one
-
 by one and find the issues let's start
-
 on r1 enable show interfaces s0 0 so the
-
 correct encapsulation PPP is used
-
 however the interface is up-down now r1
-
 should have a username packet and a
-
 password tracer configured which SP r1
-
 will use to authenticate
-
 let's check show run there it is so no
-
 problems there now is r1 sending the
-
 correct username Cisco and password CCNA
-
 - SPR one looks like it isn't the PPP
-
 PAP sent username password command isn't
-
 configured let's go fix that compte
-
 interface s0 0
-
 shutdown PPP PAP sent a username cisco
-
 password CCNA no shutdown do show IP
-
 interface brief ok the interface is up
-
 up let's try to ping SP r1 do ping 100
-
 Oh Oh 1
-
 okay looks like it works now so we've
-
 solved the problem on our one now let's
-
 check out our three which is also
-
 configured to use PPP with PAP enable
-
 show interfaces s0 0 again
-
 correct encapsulation but the interface
-
 is up down our three should have a user
-
 named CCNA and a password CCENT
-
 configure which SP our three will use to
-
 authenticate let's check for that show
-
 run there it is
-
 is it sending the username Cisco and
-
 password CCNP to SP r3 to authenticate
-
 yes it is so what's the issue it's the
-
 line right above here PPP authentication
-
 chap r3 is supposed to be using PAP not
-
 chap authentication coffee tea interface
-
 s0 0
-
 shut down no PPP authentication chap PPP
-
 authentication PAP no shutdown do show
-
 IP interface brief ok the interface is
-
 up up let's try a ping to SPR 3 do ping
-
 1 3000 won great it works next let's go
-
 to our to enable show interfaces s0 0
-
 same situation correct encapsulation PPP
-
 but the interface isn't up r2 is
-
 configured to use chap authentication so
-
 it should have a user account configure
-
 with the username SP r2 which is the
-
 host of the router sorry the host name
-
 of the router at the other end and a
-
 password of CCNA which must be identical
-
 to the password configured on SPR to
-
 show run
-
 username r2 password CCNA there's the
-
 problem it's configured with its own
-
 host name but it should be SPR to s host
-
 name coffee tea no user name are two
-
 passwords CCNA username SPR two password
-
 CCNA now I'll go reset the interface
-
 interface s00
-
 shutdown no shutdown do show IP
-
 interface brief okay it's up up now
-
 let's try a ping do ping 200 0.1 okay
-
 looks like r2 is working now finally
-
 let's go to r4 enable show interfaces s0
-
 0
-
 encapsulation PPP is correct but the
-
 interface is down like r2 r4 ship using
-
 chap authentication so it should have a
-
 username s PR for password CCIE
-
 configured s PR for being the host name
-
 of the other router it's connected to
-
 show run ok that looks correct
-
 let's check the interface configuration
-
 ok we're missing something here the PPP
-
 authentication chap statement is missing
-
 coffee tea interface s 0 0 shutdown PPP
-
 authentication chap no shutdown do show
-
 IP interface brief ok it's up up now do
-
 ping 1 4000 dot 1
-
 okay it's working
-
 I've pre-configured default routes to
-
 the service provider on each router so
-
 if I try to ping r2 r3 or r1 from our 4
-
 it should work now let's try first I'll
-
 ping r1 do ping 100 oh oh - ok it works
-
 how about r3 do ping 1 3000 - it works
-
 as well and let's try our to do ping 200
-
 go - it works as well that's all for
-
 this lab thank you for watching I hope
-
 this lab and video have been helpful for
-
 you please subscribe for future labs
-
 like this which will be released weekly
-
 if you have requests for any specific
-
 labs let me know in the comment section
-
 if you want to support my channel I
-
 accept Bitcoin and etherium donations
-
 via the addresses in the description I
-
 am also a brave verified publisher and
-
 accept bat or basic attention token
-
 donations in the brave browser

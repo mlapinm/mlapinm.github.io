@@ -1,464 +1,233 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon or the
-
 cryptocurrency options in the
-
 description also please subscribe to the
-
 channel for more labs like this in this
-
 lab we will configure ether channel
-
 ether channel is used to aggregates
-
 which interfaces to operate as a single
-
 logical interface what is the advantage
-
 of that well in the previous couple labs
-
 we looked at spanning tree protocol as
-
 you can tell by the port lights in
-
 packet tracer only one link is active
-
 between each switch we have four fast
-
 ethernet links connecting to switch 1
-
 and switch 2 for example but only one
-
 link is actually forwarding information
-
 those other links still provide
-
 redundancy in case the f01 interface
-
 fails for example but it would be better
-
 if we could make use of them let's get
-
 started the first part is to analyze
-
 this topology from a spanning tree
-
 perspective now you can tell all of this
-
 by looking at the port lights and packet
-
 tracer but let's use some show commands
-
 to confirm which switch is the root
-
 bridge well all of switched ones port
-
 lights are on so there's our answer
-
 let's go on switch one to confirm enable
-
 show spanning tree ok this bridge is the
-
 root so all of the interfaces here are
-
 designated they're forwarding now how do
-
 these other switches choose their route
-
 ports whichever path they select the
-
 route cost is the same and the
-
 neighboring switches bridge ID is the
-
 same so the next career the next
-
 criteria and this is very important is
-
 the neighbors port ID the port ID
-
 consists of a port priority which is 128
-
 by default and the port number the
-
 lowest port ID wins and is selected as
-
 the root port keep in mind this is the
-
 neighbors
-
 I D not the local switches port ID that
-
 is why in this topology between switch 1
-
 and switch 2 and between switch three
-
 and switch 4 I connected F 0 1 to F 0
-
 for f 0 2 to F 0 3 etc instead of F 0 1
-
 to F 0 1 F 0 2 to F 0 2 to demonstrate
-
 this from switch tunes perspective
-
 switch ones F 0 1 has the lowest port ID
-
 so it chooses its interface connected to
-
 switch ones F 0 1 interface which is its
-
 own F 0 4 interface as the root port the
-
 same goes for switch 4 which also
-
 selected its F 0 4 interface switch 3
-
 chose its G 0 1 interface which is
-
 connected to switch to is G 0 1
-
 interface also because switch to SG 0 1
-
 interface has a lower port ID then
-
 switch to SG 0 2 interface so the
-
 interfaces across from the reports are
-
 designated now on the remaining links
-
 how did the switches choose which side
-
 would block and which side would
-
 designate their ports that is the route
-
 cost switch 2 is closer to switch 1 than
-
 switch 3 so it's side of the link is
-
 designated and switch 3 side is non
-
 designated blocking and switch 3 is
-
 closer to switch 1 then switch 4 is so
-
 switch 3 side is designated and switched
-
 4 side is non designated or blocking ok
-
 so that was just another review of
-
 spanning tree selection process it also
-
 shows the reason we use ether channel we
-
 want to take advantage of these
-
 redundant links and have them all
-
 available for use rather than waiting
-
 for the active link to fail
-
 so our first task is to configure a
-
 layer 2 ether channel between switch 1
-
 and switch to using a Cisco proprietary
-
 protocol that protocol is port
-
 aggregation protocol pagp let's go on
-
 switch 1 and configure it
-
 coffee tea interface range F 0 1 2 4
-
 before I enter the commands I should
-
 mention some requirements of ether
-
 channel regardless of whether using pagp
-
 or another method in all ports involved
-
 must have the same configuration that is
-
 the same duplex full or half the same
-
 speed the same native and allowed VLANs
-
 in the same switch port mode access or
-
 trunk both of these switches have the
-
 same configuration by default so that
-
 won't be a problem here but keep that in
-
 mind for the next troubleshooting lab so
-
 regardless of the ether channel protocol
-
 the command begins the same channel -
-
 group followed by the group number this
-
 is necessary in case you have multiple
-
 ether channels on the same switch note
-
 that this number doesn't have to match
-
 the switch on the other end of the ether
-
 Cannell let's go with one then mode and
-
 this is where we determine the protocol
-
 used pagp has two options desirable or
-
 Auto much like DTP dynamic trunking
-
 protocol desirable will actively form an
-
 ether channel if the switch on the other
-
 end is using desirable or Auto mode Auto
-
 however will only form an ether channel
-
 if the other end is desirable let's go
-
 with desirable okay that's it do show
-
 ether channel summary there is po1 port
-
 channel one our new logical interface
-
 notice the SD next to it s indicates a
-
 layer two ether Channel and D means it
-
 is down that's because we haven't
-
 configured switch to yet here are the
-
 ports included in it F 0 1 2 F 0 4 and
-
 let's configure it as a trunk as for the
-
 instructions interface port channel 1
-
 switch port mode trunk ok let's do the
-
 same configuration on switch 2's end and
-
 then check if the ether channel is
-
 working enable conf T interface range F
-
 0 1 - 4 I'm just going to shut down
-
 these interfaces while I work on the
-
 ether
-
 shut down I'll use a different channel
-
 group number to show it will work even
-
 if it doesn't match with switch one
-
 channel group 2 mode and this time let's
-
 go with Auto
-
 although desirable would work as well
-
 now let's make it a trunk interface po2
-
 is pork channel 2 note on this switch
-
 model both is l and dot1q encapsulations
-
 are supported so we have to configure
-
 the encapsulation first before making a
-
 trunk switch port trunk encapsulation
-
 dot1q switch port mode trunk
-
 ok let's activate the interfaces
-
 interface range F 0 1 2 4 no chef now
-
 let's check if the ether channel is up
-
 do show ether channel summary it's
-
 probably a good idea to get familiar
-
 with the meanings of these flag codes in
-
 the output of this command but that's
-
 just thinking in terms of possible test
-
 questions although in a real scenario
-
 you can just see them right here in the
-
 output there it is s meaning layer 2 and
-
 you meaning in use our next task is to
-
 configure a layer 3 ether channel
-
 between switch 2 and switch 3 you will
-
 use layer 2 ether channels more than
-
 layer 3 but you should know how to make
-
 one let's start here on switch to exit
-
 first enable IP routing on the switch to
-
 give it layer 3 capabilities IP routing
-
 now let's make the ether channel
-
 interface range G 0 1 2 to use the no
-
 switch port command first before making
-
 the ether channel this will make the
-
 interface layer 3 then let's make a
-
 static ether channel channel Group 1
-
 mode on is the command for a static
-
 ether Channel next let's assign an IP
-
 address to the interface interface po1
-
 IP address 2300 1 255.255.255.0 ok let's
-
 configure a switch 3 side
-
 enable coffee/tea IP routing interface
-
 range G 0 1 2 2 no switch port channel
-
 Group 1 mode on interface po1 IP address
-
 23:02 255.255.255.0 do show ether
-
 channel summary notice that a layer 3
-
 ether channel is indicated by r and
-
 again there is that you for in use let's
-
 try to ping across the ether channel to
-
 switch to do ping
-
 23:01 and it works
-
 now we have one more ether channel to
-
 configure this time we use an I Triple E
-
 standard protocol that is link
-
 aggregation control protocol LACP let's
-
 start here on switch 3 interface range F
-
 0 1 2 4 channel group 2 mode and let's
-
 check our options Elysee pees equivalent
-
 of PA gps desirable is active and le
-
 psyches equivalent of PA gps auto is
-
 passive let's go with active interface
-
 po2 again on this switch model we have
-
 to configure the encapsulation switch
-
 port trunk encapsulation dot1q switch
-
 port mode trunk
-
 ok now let's configure the other end on
-
 switch for enable coffee tea interface
-
 range F 0 1 2 4 let's set it down for
-
 now while we work shut channel Group 1
-
 mode active since switch 3 side is
-
 active passive would work as well by the
-
 way interface po1 switch port mode trunk
-
 interface range F 0 1 2 4 no shutdown
-
 okay let's check if all is good do show
-
 ether channel summary we have a layer
-
 two ether channel and it is in use so we
-
 created three ether channels one layer
-
 two ether channel using pagp one static
-
 layer three ether channel and one layer
-
 two ether channel using LACP that's all
-
 for this lab
-
 thank you for watching I hope this lab
-
 and video have been helpful for you
-
 please subscribe for future labs like
-
 this which will be released weekly if
-
 you have requests for any specific labs
-
 let me know in the comments section if
-
 you want to support my channel I accept
-
 Bitcoin and aetherium donations via the
-
 addresses in the description I am also a
-
 brave verified publisher and accept bat
-
 or basic attention token donations in
-
 the brave browser

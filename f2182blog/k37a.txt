@@ -1,214 +1,108 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon or the
-
 cryptocurrency options in the
-
 description this lab will be the first
-
 in a series of three labs on mat network
-
 address translation this first lab will
-
 cover static NAT static NAT creates a
-
 one-to-one relationship between an
-
 inside address typically an IP address
-
 in a private address range such as
-
 192.168.1.0
-
 and an outside address typically a
-
 public IP address on the Internet
-
 I won't explain in detail how NAT works
-
 hopefully you've already studied it this
-
 lab will give you some basic practice in
-
 configuring static NAT let's look at
-
 step 1
-
 ripp has been pre-configured so that any
-
 device on this network should be able to
-
 reach any other device let's try a ping
-
 from pc-12 server one ping one dot one
-
 dot one dot one hundred it doesn't work
-
 why could this be I wrote a hint here
-
 stating that the serial connection
-
 between r1 and r2 is using ACLs to
-
 simulate the Internet
-
 what exactly does that mean well PC ones
-
 address is 192.168.1.1 this is a private
-
 IP address these private IP addresses
-
 cannot be routed over the internet so
-
 when PC one attempts to ping server one
-
 the source IP is 192.168.1.1 and the
-
 destination is one one one one hundred
-
 one dot one dot one dot one hundred is a
-
 public IP address so it can be routed
-
 over the Internet however when server
-
 one sends a reply the addresses are
-
 swapped the source addresses 1.1.1 100
-
 and the destination addresses 192.168.1
-
 11 because 192.168.1.1 is in the
-
 IP address range it cannot be routed
-
 over the Internet and is dropped so our
-
 goal is to configure static NAT on r1 to
-
 translate the private IP addresses of
-
 pc-1 pc2 and pc3 to public IP addresses
-
 if we do that PC one will send a ping to
-
 server one and once again the source
-
 address will be 192.168.1 elleven and
-
 the destination 1.1.1 100 however when
-
 the packet reaches our one our one will
-
 translate the source address to whatever
-
 we specify 1 2 3 11 in this case when
-
 server 1 sends its reply the source
-
 address will be once again 1 1 1 100 and
-
 the destination 1 2 3 11 when the reply
-
 reaches r1 r1 will translate the
-
 destination address from Wanda 2 3 11
-
 back to PC ones address of 192.168.1 11
-
 so let's get to the configuration on r1
-
 enable coffee tea first we have to
-
 specify our ones interfaces as inside or
-
 outside nap interfaces the inside
-
 interface faces our inside private
-
 network so G 0 0 in this case interface
-
 G 0 0 IP NAT inside the outside
-
 interface will be s 0 3 0 our interface
-
 facing the internet interface as a 0 3 0
-
 IP NAT outside exit now let's configure
-
 the translations themselves static NAT
-
 is configured with the following command
-
 IP NAT inside source
-
 static followed by the inside private
-
 address then the outside public address
-
 so for PC 1 are inside addresses
-
 192.168.1 11 and our outside addresses 1
-
 2 3 11 okay that's it for a PC
-
 now let's do the same command for PC -
-
 just changing the addresses IP nat
-
 inside source static 192.168.1 12 1 2 3
-
 12 finally for pc 3 IP nat inside source
-
 static 192.168.1.1 2.3 13 ok our nat
-
 configuration is now complete let's go
-
 on the PCs and try to ping server 1
-
 again from pc1 first ping 1.1.1 100 the
-
 ping works this time
-
 so our NAT configuration has been
-
 successful just to make sure I'll ping
-
 from PC - and PC 3 as well PC 2 first
-
 ping 1.1.1 100 again the ping works
-
 finally let's ping from PC 3 ping 1.1.1
-
 100 PC 3 works as well that's all for
-
 this lab thank you for watching I hope
-
 this lab and video have been helpful for
-
 you please subscribe for future labs
-
 like this which will be released weekly
-
 if you have requests for any specific
-
 labs let me know in the comment section
-
 if you want to support my channel I
-
 accept a Bitcoin and aetherium donations
-
 via the addresses in the description I
-
 am also a brave verified publisher and
-
 accept bat or basic attention token
-
 donations in the brave browser

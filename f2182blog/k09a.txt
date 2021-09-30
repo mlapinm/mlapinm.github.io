@@ -1,245 +1,121 @@
 0.0
-welcome to this free CCNA packet tracer
-
-practice lab 
+welcome to this free CCNA packet tracer practice lab
 3.930529
-you can download the lab
-
-file from the link in the description 
+you can download the lab file from the link in the description
 7.107867
-in
-
-this lab we will once again be
-
-troubleshooting the network topology
-
-from lab number seven 
+in this lab we will once again be troubleshooting the network topology from lab number seven
 13.489289
-in the previous
-
-lab number eight there was a single miss
-
-configuration on r1 
+in the previous lab number eight there was a single miss configuration on r1
 19.232841
-in this lab however
-
-there is one miss configuration per
-
-networking device 
+in this lab however there is one miss configuration per networking device
 24.733561
-meaning one on r1 one
-
-on switch one and one on switch two 
+meaning one on r1 one on switch one and one on switch two
 30.157865
-try
-
-to find and fix these errors on your own
-
-first
+try to find and fix these errors on your own first
 34.221019
-then continue watching this video if you
-
-have trouble 
+then continue watching this video if you have trouble
 37.071551
-or watch it after to check
-
-your solution ]
+or watch it after to check your solution ]
 39.381775
-in the last video I showed
-
-an example of how I would go about
-
-troubleshooting a problem 
+in the last video I showed an example of how I would go about troubleshooting a problem
 45.680372
-in this video
-
-however I will just directly show the
-
-Miss configurations and fix them 
+in this video however I will just directly show the Miss configurations and fix them
 50.408821
-so once
-
-again try to troubleshoot on your own
-
-first
+so once again try to troubleshoot on your own first
 53.385461
-so PC one can't ping the other pcs in
-
-the network 
+so PC one can't ping the other pcs in the network
 61.169093
-let's just check quickly on
-
-PC one 
+let's just check quickly on PC one
 64.021453
-ping PC two ping 10.0.0.1 30
-
-doesn't work 
+ping PC two ping 10.0.0.1 30 doesn't work
 73.384277
-ping pc3 ping 10.0.0.3 
-
-doesn't work 
+ping pc3 ping 10.0.0.3 doesn't work
 81.364369
-ping PC 4 ping 10.0.0.1 31
-
-doesn't work 
+ping PC 4 ping 10.0.0.1 31 doesn't work
 89.32908
-okay so let's fix the
-
-problem on our one first 
+okay so let's fix the problem on our one first
 92.809351
-enable show IP
-
-interface brief 
+enable show IP interface brief
 99.665301
-look at the IP address
-
-of the dot thirteen sub-interface 10.0.0.13  
-sub interface
+look at the IP address of the dot thirteen sub-interface 10.0.0.13 sub interface
 104.182689
-10.0.0.11 
-now let's check the default
-
-gateway of the pcs in VLAN 13 
+10.0.0.11 now let's check the default gateway of the pcs in VLAN 13
 112.53986
-pc1 & pc3
-
-pc1 is 10.0.0.1 and PC 3 10.0.0.1
+pc1 & pc3 pc1 is 10.0.0.1 and PC 3 10.0.0.1
 126.62258
-so this is a miss configuration 
+so this is a miss configuration
 130.465533
-let's
-
-fix it 
+let's fix it
 132.02014
-back to our one conf t interface
-
-g0 0.13 IP address 10.0.0.1
-
-255.255.255.192
+back to our one conf t interface g0 0.13 IP address 10.0.0.1 255.255.255.192
 147.404786
-next let's check switch 1 
+next let's check switch 1
 157.555092
-enable show
-
-VLAN brief 
+enable show VLAN brief
 162.1008
 can you see the problem here
 165.768194
-fastethernet 0/1 is in VLAN 12 
+fastethernet 0/1 is in VLAN 12
 169.022741
-it's
-
-supposed to be in VLAN 13 
+it's supposed to be in VLAN 13
 171.86684
-let's change
-
-that 
+let's change that
 173.466428
-conf t
-
-interface f01 switch port access VLAN 13
+conf t interface f01 switch port access VLAN 13
 183.106891
-ok switch 1 is now fixed 
+ok switch 1 is now fixed
 186.058684
-finally let's
-
-go to switch 2 
+finally let's go to switch 2
 189.743329
-enable show interfaces
-
-trunk 
+enable show interfaces trunk
 195.77054
-nothing appears 
+nothing appears
 198.483492
-the link between
-
-switch 1 and switch two should be a
-
-trunk 
+the link between switch 1 and switch two should be a trunk
 202.021254
-so that it can carry traffic from
-
-multiple VLANs 
+so that it can carry traffic from multiple VLANs
 205.10974
 so we have to fix this
 206.840154
-conf T interface g0 1 switch port mode
-
-trunk 
+conf T interface g0 1 switch port mode trunk
 213.551051
 ok that should fix the problem
 217.064455
-so let's test out our solution 
+so let's test out our solution
 223.922331
-the
-
-scenario stated that there was one miss
-
-configuration on each device 
+the scenario stated that there was one miss configuration on each device
 228.466277
-and we
-
-fixed each one 
+and we fixed each one
 229.908992
-so PC one should now be
-
-able to reach the other pcs 
+so PC one should now be able to reach the other pcs
 234.250036
-so let's go
-
-to PC 1 and pin PC 2 
+so let's go to PC 1 and pin PC 2
 238.857104
-ping 10.0.0.1 30 
+ping 10.0.0.1 30
 242.141826
-the
-
-pin works next let's ping PC 3 
-
-pin 10.0.0.3 okay it works
+the pin works next let's ping PC 3 pin 10.0.0.3 okay it works
 260.294008
-finally PC 4 ping 10.0.0.1 31 it works as
-
-well 
+finally PC 4 ping 10.0.0.1 31 it works as well
 272.821308
-we have successfully fixed the
-
-network
+we have successfully fixed the network
 275.373626
-thank you for watching 
+thank you for watching
 280.519754
-I hope this lab
-
-and video have been helpful for you
+I hope this lab and video have been helpful for you
 283.254971
-please subscribe for future labs like
-
-this 
+please subscribe for future labs like this
 286.370618
-which will be released weekly 
+which will be released weekly
 287.929196
-if
-
-you have requests for any specific labs
+if you have requests for any specific labs
 291.436038
-let me know in the comment section 
+let me know in the comment section
 293.258864
-if
-
-you want to support my channel I accept
-
-Bitcoin donations via the address in the
-
-description 
+if you want to support my channel I accept Bitcoin donations via the address in the description
 299.122762
-I am also a brave verified
-
-publisher 
+I am also a brave verified publisher
 302.667237
-and accept bat or basic
-
-attention token donations in the brave
-
-browser
+and accept bat or basic attention token donations in the brave browser
 307.888986
 307.888986
 307.888986

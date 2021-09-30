@@ -1,248 +1,125 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon or the
-
 cryptocurrency options in the
-
 description also please subscribe to the
-
 channel for more labs like this and
-
 share these videos with anyone else
-
 studying for the CCNA in this lab we
-
 will troubleshoot some problems with ACL
-
 configurations this is the same topology
-
 as the previous lab with the same ACLs
-
 except I have made three miss
-
 configurations there are four ACLs one
-
 is correct and the other three have
-
 mistakes let's get started so the first
-
 ACL should prevent pc4 from accessing
-
 the 10440 / 24 network let's see if pc4
-
 can ping server one which is in the
-
 10.40 network ping 10.4 for 100
-
 looks like pc4 is able to reach server
-
 one so there must be a miss
-
 configuration I applied the ACL on r2 so
-
 let's check there enable show access
-
 lists okay
-
 there's the issue the order of
-
 statements in the ACL is wrong because
-
 the permit any statement is first all
-
 traffic is allowed I have to put the
-
 deny host before the permit any so 10.22
-
 12 will be denied and then all other
-
 traffic will be allowed I'll remove the
-
 ACL and then redo it coughed II know
-
 access list one access list one deny
-
 host 10 to 212 access list one permit
-
 any ok let's try that ping again from PC
-
 for pink tent 4.4.1 hundred ok now we
-
 get the destination host unreachable
-
 message that's good can other hosts
-
 reach server one
-
 I'll try from PC three content for 4.1
-
 hundred
-
 okay it's working now let's move on to
-
 the next ACL pc5 shouldn't be able to
-
 access the 2001 db8 22 22 / 64 network
-
 let's try to ping from PC 5 to server to
-
 ping 2001 DB 8 22 22 double colon 100 ok
-
 the ping works
-
 so there's another miss configuration
-
 here I applied the ACL on our one
-
 so let's investigate enable show access
-
 lists here's the access list it looks
-
 good
-
 denying from PC 5 to the correct subnet
-
 maybe it isn't applied correctly show
-
 ipv6 interface g0 to outgoing access
-
 list g0 - in there's the problem the ACL
-
 should be inbound not outbound or
-
 outgoing because traffic from PC 5 to
-
 the 2001 DB 8 2222 subnet will be
-
 entering the g0 to interface not exiting
-
 the return traffic coming back from
-
 server to has the source and destination
-
 IP addresses reversed so the ACL lets
-
 them by let's reapply the ACL inbound
-
 compte interface g0 - no ipv6 traffic
-
 filter g0 - in out ipv6 traffic filter
-
 g0 - in in ok let's try that ping again
-
 paying 2001 DB 8 20 - 20 to 100 ok now
-
 we get the destination host unreachable
-
 message from r1
-
 let's test the next ACL pc3 shouldn't be
-
 able to communicate with PC one let's
-
 try a ping from pc 3 2 pc 1 ping 10 1 1
-
 11 destination host unreachable looks
-
 good now pc 4 should be able to reach pc
-
 1 let's test it out ping 10.11 11 ok the
-
 ping is successful
-
 so this ACL seems to be functioning
-
 properly now our final ACL should allow
-
 pc 6 to telnet to r2 but not other ipv6
-
 hosts like PC 5 let's try to tell net
-
 from PC 6 telnet 2001 DB 8 12 12 double
-
 colon - looks good I'll enter the
-
 password of CCNA okay we're in exit so
-
 that seems fine but pc v shouldn't be
-
 able to tell met to our - let's try to
-
 tell net from PC 5 telnet 2001 DB 8 12
-
 12 double colon - okay here's the
-
 problem PC 5 is also able to tell net to
-
 r2 let's investigate on our to do show
-
 access lists
-
 permit TCP host with the IP address of
-
 PC 6ne equals telnet that looks good
-
 so let's check how the ACL is applied do
-
 show run okay there's the issue the ACL
-
 is applied to the console line not the
-
 vty lines which are used for telnet
-
 let's remove and then reapply it let me
-
 copy the command first and then let's
-
 remove it line console 0 I'll paste it
-
 here and then cancel it with no okay now
-
 let's reapply it line vty 0 15 and now
-
 I'll paste it here once more ok let's
-
 test again
-
 I'll tell net from PC 5 telnet 2001 DB 8
-
 12 12 - good it doesn't work this time
-
 but can PC 6 still telnet let's try
-
 telnet 2001 DB 8 12 12 - hazard CCNA ok
-
 all of our ACLs are working now that's
-
 all for this lab thank you for watching
-
 I hope this lab and video have been
-
 helpful for you please subscribe for
-
 future labs like this which will be
-
 released weekly if you have requests for
-
 any specific labs let me know in the
-
 comment section if you want to support
-
 my channel I accept Bitcoin and
-
 aetherium donations via the addresses in
-
 the description I am also a brave
-
 verified publisher and accept bat or
-
 basic attention token donations in the
-
 brave browser

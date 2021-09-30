@@ -1,244 +1,123 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon or the
-
 cryptocurrency options in the
-
 description also please subscribe to the
-
 channel for more labs like this and
-
 share these videos with anyone else
-
 studying for the CCNA in this lab we
-
 will configure span which stands for
-
 switched port analyzer span copies the
-
 traffic from a particular interface and
-
 sends it to another interface which
-
 typically leads to a monitoring server
-
 to monitor and analyze the traffic
-
 passing through the monitored interface
-
 packet tracer doesn't include an actual
-
 monitoring server but will use a cool
-
 feature of packet tracer the simulation
-
 mode to verify that our configurations
-
 are working let's get started okay the
-
 first step is to simply ping from PC 2
-
 to PC 1 this is just to make sure PC 2
-
 completes the ARP process you may have
-
 noticed in these labs that the first
-
 ping often fails that is because of the
-
 art process not finishing before the
-
 ping times out so let's do that ping
-
 ping 1001 10
-
 okay as you can see the first ping fails
-
 but then after pc2 learns the MAC
-
 address of its default gateway the
-
 following pings succeed now let's switch
-
 to simulation mode which is here in the
-
 bottom right this useful feature lets us
-
 trace the path of traffic and analyze it
-
 at different points in its path okay now
-
 let's ping again ping 1001 10 here you
-
 can see the ICMP packet at PC 2 then I
-
 click Next and it is sent to switch to
-
 then R 2 R 1 switch 1 and arrives at PC
-
 1 PC 1 then sends the reply back to
-
 switch 1 R 1 R 2 switch 2 and then it
-
 arrives at the destination PC 2 if I
-
 keep clicking here you can see other
-
 traffic being sent including spanning
-
 tree B PDUs from the switches EA GRP
-
 hello packets between the routers and
-
 the other pings sent from PC to does PC
-
 1 ok let's return to real-time mode so
-
 we confirm that the pings traveled from
-
 PC to in a straight path to PC 1 no ICMP
-
 packets were sent to server 1 now let's
-
 configure switch 1 to monitor the input
-
 and output traffic on its G 0 1
-
 interface and send it to a server 1 I'll
-
 hop on switch 1 now enable conf T span
-
 is configured right here at global
-
 configuration mode with the monitor
-
 command then type session and give it a
-
 number I'll sell you one next we specify
-
 the source or destination the order
-
 doesn't matter let's do this source now
-
 there are multiple types of span but for
-
 the CCNA you just have to do local span
-
 which means from one interface on the
-
 switch to another so the source will be
-
 interface g0 one
-
 then finally I will specify both to
-
 monitor both incoming and outgoing
-
 traffic on the interface you could
-
 instead specify Rx for ingress or
-
 incoming traffic or TX for egress or
-
 outgoing traffic okay next let's specify
-
 the destination interface which will be
-
 g0 - because it's connected to server 1
-
 monitor session one destination
-
 interface g0 - okay that's all there is
-
 to configuring local span it's really
-
 quite simple
-
 now let's switch to simulation mode once
-
 more and ping from PC - to PC one and
-
 will confirm that copies of the traffic
-
 are being sent to server one ping 1001
-
 1000 goes to switch 2 R 2 R 1 switch 1
-
 and now as you can see it's sent to both
-
 PC 1 and server one because switch 1
-
 copied the ICMP packet that came in
-
 honest g0 on interface and sent it to
-
 server 1 as well
-
 notice the red X on server 1 that's
-
 because server 1 discarded the packet in
-
 a real situation where server 1 is an
-
 actual monitoring server this would not
-
 happen
-
 ok next PC 1 sends the reply to switch 1
-
 and then the reply is forwarded to r1
-
 and once again it is also sent to server
-
 one this time switch one copied the ICMP
-
 packet being sent out of the g0 one
-
 interface because we configured the both
-
 statement when we configured span both
-
 packets received on and transmitted from
-
 the interface will be copied and sent to
-
 server 1 in this lab we configured span
-
 to monitor traffic on a switch interface
-
 the configuration is quite simple so
-
 please try it out and learn it for your
-
 exam that's all for this lab
-
 thank you for watching I hope this lab
-
 and video have been helpful for you
-
 please subscribe for future labs like
-
 this which will be released weekly if
-
 you have requests for any specific labs
-
 let me know in the comment section if
-
 you want to support my channel I accept
-
 cryptocurrency donations via the
-
 addresses in the description I am also a
-
 brave verified publisher and accept bat
-
 or basic attention token donations in
-
 the brave browser

@@ -1,514 +1,258 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon or the
-
 cryptocurrency options in the
-
 description also please subscribe to the
-
 channel for more labs like this in this
-
 lab we will configure the enhanced
-
 interior gateway routing protocol e IG
-
 RP e IG RP is as the name suggests an
-
 enhanced version of Cisco's interior
-
 gateway routing protocol IG RP although
-
 EIGRP used to be a cisco proprietary
-
 routing protocol meaning was available
-
 only on cisco routers it has been moved
-
 to an open standard however in a
-
 multi-vendor environment you're almost
-
 certainly going to see OSPF used over a
-
 EIGRP let's get started the first step
-
 is to configure loopback address on each
-
 router these addresses will later become
-
 the EIG RP router IDs used for each
-
 router the eigrp router ID functions the
-
 same way as the OSPF router ID manual
-
 configuration takes priority if the
-
 router ID is not manually configured the
-
 highest IP address on a loopback
-
 interface is used if there is no
-
 loopback interface the highest IP
-
 address on a regular interface is used
-
 we've configured loopback to plenty of
-
 times so let's go through this quickly
-
 I'll start on r1 enable coffee/tea
-
 interface l0 IP address 1.1.11
-
 255.255.255.0 v ok next are to enable
-
 call T interface l0 IP address - 2 - 2
-
 255.255.255.0 5 ok next r3 enable compte
-
 interface l0
-
 IP address 3.33 255.255.255.0 5 next is
-
 r4 enable coffee tea interface l0 IP
-
 address 4.4.4 255.255.255.0 5 ok finally
-
 let's go on our five enable coffee tea
-
 interface l0 IP address v dot v dot v
-
 dot v 255.255.255.0 v okay that's all
-
 for step one now let's actually
-
 configure a EIGRP on each router the
-
 configuration is similar to OSPF
-
 configuration let's go back to our one
-
 to enter a EIGRP configuration mode use
-
 this command router EA GRP followed by
-
 the autonomous system or a s number in
-
 this case we'll use 100 well in OSPF the
-
 process ID used in the router OSPF
-
 command was only locally significant and
-
 could be different on each router in the
-
 network the EIG our pas number has to be
-
 the same on each router in the network
-
 if the a s number is different routers
-
 will not become e IG RP neighbors keep
-
 that in mind and definitely look out for
-
 a s mismatches in any troubleshooting
-
 problems on the test ok so from here we
-
 use the network command just like OSPF
-
 however VI GRP doesn't have the concept
-
 of areas so we just need the IP address
-
 and network mask
-
 now the eigrp network command works the
-
 same as the OSPF network command in that
-
 it doesn't actually specify the networks
-
 you are going to advertise it is used
-
 only to identify which interfaces to
-
 activate a eigrp on and then those
-
 interfaces will advertise their
-
 configured networks another feature of
-
 the eigrp network command is that it
-
 defaults to classful network boundaries
-
 if you don't enter a mask so for example
-
 our ones G 0 0 and F 1 0 interfaces both
-
 fall within the class a 10.08 range so
-
 I'll just type Network 1000 and now
-
 EIGRP will be activated on both
-
 interfaces next I'll just enable it on
-
 the loopback network 1.1.11
-
 and this time let's enter the exact
-
 wildcard mask
-
 oh-oh-oh-oh now let's make the loopback
-
 passive since we don't want to waste
-
 resources sending advertisements on an
-
 interface that isn't connected to any
-
 other router this is exactly the same as
-
 in OSPF passive interface l 0 finally we
-
 should disable auto summary Auto summary
-
 can be on or off by default
-
 I assume depending on either the OS
-
 version or router model in packet tracer
-
 and on these routers however it is
-
 enabled by default
-
 you should always turn it off any
-
 summarization should be done manually
-
 and only where intended no Auto summary
-
 that's it ok let's continue on to r2
-
 I'll go through these steps quickly for
-
 the other routers router EAG RP 100
-
 again make sure that a s number is
-
 consistent throughout the network
-
 network 10000 network to 2 to 200 200
-
 passive interface l 0 no Auto summary ok
-
 next let's go on R 3
-
 router EAG RP 100 Network 10000 network
-
 3 3 3 3 0 0 passive interface l 0 no
-
 auto summary next r4 router EAG RP 100
-
 Network 10000 network 4.4.4 dot 400 dead
-
 Oh
-
 passive interface L 0 no Auto summary
-
 okay finally let's go to our 5 router
-
 EAG RP 100 Network 10000 network v dot v
-
 dot v dot v oh oh oh oh passive
-
 interface l 0 no auto summary okay
-
 that's all let's go on our one and see
-
 what routes it is learned do show IP
-
 route the d beside these routes
-
 indicates that they were learned via a
-
 EIGRP notice the administrative distance
-
 of 90 as opposed to OSPF s 110 this
-
 means if two routes are learned to a
-
 destination 1 via EIGRP and one via OSPF
-
 the eigrp route will be preferred also
-
 notice these huge metric numbers OSPF
-
 metric numbers were quite small and
-
 simple to understand
-
 however aig our P's metric numbers can
-
 get quite large this is a small network
-
 in our ones path to R 5 has a metric of
-
 150 6672 this is the path via our 4
-
 because it has one gigabit ethernet link
-
 well the Rev via r2 is all Fast Ethernet
-
 however our next task is to configure
-
 our one to perform unequal cost load
-
 balancing when sending traffic to our
-
 five
-
 Oh SPF can only do equal cost load
-
 balancing but II IG RP can do unequal
-
 cost load balancing however it can't be
-
 configured to do unequal cost load
-
 balancing over just any path it has to
-
 meet a certain requirement let's look
-
 further do show IP e IG RP topology this
-
 command shows the successor routes
-
 meaning the best routes to each
-
 destination as well as the feasible
-
 successor routes meaning routes that
-
 weren't picked as the successor but meet
-
 that certain requirement and will also
-
 serve as backups in the case the
-
 successor route goes down if you don't
-
 understand the EIG RP concepts of
-
 successor and feasible successor as well
-
 as feasible distance and reported or
-
 advertised distance make sure you learn
-
 them in whatever video course or book
-
 you are using they can be a little
-
 difficult to understand at first and I'm
-
 not going to explain them here
-
 so in this a I gr p topology table these
-
 numbers on the Left indicate the
-
 feasible distance to a destination and
-
 the numbers on the right indicate the
-
 reported distance remember in order for
-
 a route to be a feasible successor it's
-
 reported distance must be lower than the
-
 successors feasible distance routes
-
 which don't meet this criteria will not
-
 show up in this table however do show IP
-
 eigrp topology all links will display
-
 them in this network however there
-
 aren't any such routes
-
 okay so our one has a successor route to
-
 our five via 10.14 o4 which is our four
-
 with a metric of 150 6672 it also has a
-
 feasible successor route via 10.12
-
 o2 which is r2 with a metric of one
-
 hundred fifty eight thousand nine
-
 hundred seventy six to enable r1 to load
-
 balance over these use the
-
 variance command then we enter a
-
 multiplier for example variance to will
-
 allow r1 to load balance over feasible
-
 successor routes that have up to double
-
 the feasible distance of the successor
-
 rep or triple the distance if we used
-
 variance three the difference between
-
 these two metrics is fairly small so in
-
 this case we can just use variance to
-
 that's it
-
 do show IP route now you can see both
-
 paths are in the routing table both for
-
 the v dot v dot v dot v loopback address
-
 and the 10.35 0 network let me just
-
 emphasize one point e IG RP will never
-
 load balance over paths which aren't
-
 feasible successors you can set the
-
 maximum variance 128 but if the other
-
 pads aren't feasible successors ew g RP
-
 won't load balance over them this is an
-
 important feature to prevent routing
-
 loops okay our last task is to configure
-
 r3 to advertise a 1000 / 8 summary
-
 network to r5 manual summarization is
-
 actually not in the exam topics for
-
 icnd2 however i included it in my oh s
-
 PF labs and will hear in my ear g RP
-
 labs simply for the reason that it is
-
 often included in other CCNA learning
-
 materials
-
 Cisco's exam topics don't necessarily
-
 list everything that is on the exam so
-
 summarization may actually be something
-
 you should know for the exam and in
-
 either case it's just a single command
-
 so let's try it out on r3 to configure a
-
 summary route in AI GRP we configure it
-
 at the interface level unlike in OSPF
-
 where we configure that oh s PF
-
 configuration mode in this case we'll
-
 configure it on the g00 interface the
-
 one facing our v interface g 0 0
-
 this is the command IP summary address
-
 eh ERP followed by the a s number 100
-
 then the network address 10000 followed
-
 by the mask much like with OSPF
-
 summarization ew GRP summarization uses
-
 a normal network mask not a wildcard
-
 mask
-
 unlike the network command which does
-
 use a wildcard mask so in this case 255
-
 0 0 0
-
 ok that's all there is to it let's check
-
 it out on our 5 do show IP route there
-
 it is our 5 has now learned at 1000 / 8
-
 summary address instead of all of those
-
 separate networks in this slob we did a
-
 basic AIG RP configuration with unequal
-
 cost load balancing and some manual
-
 summarization that's all for this lab
-
 thank you for watching I hope this lab
-
 and video have been helpful for you
-
 please subscribe for future labs like
-
 this which will be released weekly if
-
 you have requests for any specific labs
-
 let me know in the comment section if
-
 you want to support my channel I accept
-
 Bitcoin and aetherium donations via the
-
 addresses in the description I am also a
-
 brave verified publisher and accept bat
-
 or basic attention token donations in
-
 the brave browser

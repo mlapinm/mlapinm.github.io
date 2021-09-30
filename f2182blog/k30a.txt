@@ -1,234 +1,118 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon or the
-
 cryptocurrency options in the
-
 description in this lab the second of
-
 our labs focusing on ACLs we will
-
 configure extended ACLs unlike standard
-
 ACLs which only filter traffic based on
-
 the source IP address extended ACLs can
-
 filter on things like protocol source IP
-
 address and destination IP address our
-
 task is to configure and apply a single
-
 extended ACL to allow only pc-12 access
-
 server one and only hosts on the 192.168
-
 204 network to access server two first
-
 where should I apply the ACL the general
-
 rule is to apply extended ACLs as close
-
 as possible to the source as opposed to
-
 standard ACLs which should be applied as
-
 close as possible to the destination I
-
 want to achieve this in a single ACL so
-
 I'll apply it to our ones s20 interface
-
 so let's go on our one an able CAUTI to
-
 create an extended ACL you begin with
-
 the same command as for standard ACLs
-
 access lists now I'll use
-
 context-sensitive help I mentioned this
-
 in the previous video but remember that
-
 1 to 99 is the range for standard ACLs
-
 and 100 to 199 is the range for extended
-
 ACLs I'll go with 100 context-sensitive
-
 help again I'll choose permit to allow
-
 pc-12 access server 1 afterward I'll
-
 create another statement to deny all
-
 other traffic to server 1 let's do
-
 contact sensitive help again now you can
-
 see that this is different than for
-
 standard ACLs here are a bunch of
-
 protocols which you can use to filter
-
 traffic
-
 the general catch-all is IP so let's go
-
 with that let's check the options again
-
 now I'll choose host since we're
-
 filtering from one host 192.168.1 11
-
 next I'll enter host again and set the
-
 destination 192.168 3 dot 100 contact
-
 sensitive help again you can see there
-
 are other options but we'll end the
-
 command here ok so that's our first
-
 entry in the ACL now let's create
-
 another one to deny all other traffic to
-
 server 1 access list 100 deny IP any
-
 host 192.168.1 hundred this denies
-
 traffic from any host to server 1 and
-
 will apply to any traffic except PC 1
-
 now let's satisfy the second requirement
-
 we have to allow only hosts on the
-
 192.168 2's flash 24 network to access
-
 server 2 first let's create another
-
 permit statement access list 100 permit
-
 IP 192.168.20.10 168 3 dot 101 this
-
 command permits any hosts in the
-
 192.168.0 slash 24 network to access the
-
 host 192.168.1 o one which is server 2
-
 now lets deny all other traffic to
-
 server to access list 100 deny IP any
-
 host 192.168.0.1 o1 ok we have fulfilled
-
 both requirements now let's create one
-
 more statement to allow any other
-
 traffic remember at the end of any ACL
-
 there is an implicit deny any our
-
 requirements didn't state to deny all
-
 other traffic so let's override that
-
 implicit deny any access list 100 permit
-
 IP any any that's it finally let's apply
-
 the ACL to r1
-
 s20 interface interface s20 IP access
-
 group 100 out
-
 now this ACL will apply to all outbound
-
 traffic on our ones s20 interface let's
-
 test it out from each PC I'll ping each
-
 server first PC one it should be able to
-
 access server one but not server two
-
 ping 192.168.1 hundred it works next
-
 ping 192.168 3 dot 101 it doesn't work
-
 ok functioning as intended so far now PC
-
 2 it shouldn't be able to access server
-
 1 or server to pay 192.168.1 hundred
-
 doesn't work ping 192.168.1 o 1 doesn't
-
 work again now let's go on PC 3 it
-
 shouldn't be able to ping server 1 but
-
 it should be able to ping the server to
-
 pay 192.168.1 hundred doesn't work
-
 paying 192.168.1 o 1
-
 it works as expected finally PC four
-
 which should be the same as PC three
-
 came one ninety two dot one sixty eight
-
 dot three dot one hundred doesn't work
-
 ping 192.168.1 oh one it works
-
 so our ACL is functioning as intended
-
 that's all for this lab thank you for
-
 watching I hope this lab and video have
-
 been helpful for you please subscribe
-
 for future labs like this which will be
-
 released weekly if you have requests for
-
 any specific labs let me know in the
-
 comment section if you want to support
-
 my channel please consider contributing
-
 to my patreon patreon comm slash
-
 Jeremy's IT lab I accept Bitcoin and
-
 etherium donations via the addresses in
-
 the description I am also a brave
-
 verified publisher and accept bat or
-
 basic attention token donations in the
-
 brave browser

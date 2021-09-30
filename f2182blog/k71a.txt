@@ -1,304 +1,153 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon or the
-
 cryptocurrency options in the
-
 description also please subscribe to the
-
 channel for more labs like this and
-
 share these videos with anyone else
-
 studying for the CCNA in this lab we
-
 will configure ACLs named ACLs and
-
 numbered ACLs standard ACLs and extended
-
 ACLs as well as ipv4 ACLs and ipv6 ACLs
-
 mixing them all together let's get
-
 started
-
 so we have to configure and apply a
-
 total of four ACLs to filter traffic
-
 according to these instructions the
-
 details of how you configure and where
-
 you apply the ACLs doesn't have to
-
 exactly match what I do in this video as
-
 long as the results are the same it's
-
 okay the first ACL we must configure
-
 should prevent pc4 from accessing the
-
 10440 / 24 network the general rule is
-
 to apply standard ACLs close to the
-
 destination so I'll apply it to r2 SG 0
-
 0 interface let's go on our to enable
-
 golf tee let's create a deny statement
-
 blocking PC for access list I'll make it
-
 number 1 deny host and PC for is 10 2 to
-
 12 okay that's all for that statement
-
 now we are told to block other traffic
-
 to 10 dot 4 dot 4 dot 0 / 24 so we
-
 should let it through accessed list 1
-
 permit any that's it now let's apply it
-
 to the interface interface g0 0 IP
-
 Access Group 1 out I used out because I
-
 want to prevent PC force traffic from
-
 exiting out this interface to the 10 dot
-
 4 dot 4 dot 0 / 24 subnet let's test it
-
 I'll try a ping from PC for two server
-
 one ping 10.4 for 100 and we get the
-
 destination host unreachable message
-
 from 10 12 12 2 which is our to perfect
-
 just to make sure let's try a ping from
-
 PC 3 which should go through ping 4.4.1
-
 hundred
-
 great it works our first ACL is complete
-
 okay let's do the second one configure
-
 an ipv6 ACL to prevent pc5 from
-
 accessing the 2001 DB 822 22 / 64
-
 network so this will be an ipv6 ACL and
-
 ipv6 only supports named ACLs although
-
 ipv4 supports both numbered and named
-
 ACLs I'll apply it to our ones g02
-
 interface let's go on our one enable
-
 compte since it's an ipv6 ACL start the
-
 command with ipv6 access list then the
-
 name I'll say g0 to underscore in to
-
 give it a meaningful name now we're in
-
 ipv6 ACL configuration mode and can
-
 configure each statement so we want to
-
 deny PC 5 and then permit other traffic
-
 deny ipv6 host followed by PC 5s address
-
 2001 DB 8 3 3 double colon 11 then the
-
 destination subnet 2001 DB 8 22 22 / 64
-
 okay that's our deny statement now let's
-
 allow all other ipv6 traffic through
-
 permit ipv6 any-any ok finally let's
-
 apply it interface G 0 to ipv6 traffic
-
 filter G 0 2 in now you might want to
-
 apply this with ipv6 access group since
-
 ipv4 uses IP access group but for ipv6
-
 use ipv6 traffic filter okay let's test
-
 I'll ping from PC 5 to server 2
-
 ping 2001 db8 22 22 double : 101
-
 reachable message from our one looks
-
 good now just to be sure let's try on PC
-
 6 which should work ping 2001 DB 8 22 22
-
 double : 100 great it works as expected
-
 next is to prevent pc3 from reaching PC
-
 1 it should be an extended named ACL and
-
 let's put it on our ones G 0 1 interface
-
 exit IP access list extended this time
-
 I'll name it G 0 1 underscore in let's
-
 make the deny statement deny IP host
-
 10.2 2.11 host 10.11 11 now let's permit
-
 other traffic since we weren't told to
-
 block anything else permit IP any-any
-
 now let's apply it interface G 0 1 this
-
 is an ipv4 ACL so IP access group 1
-
 underscore in in okay let's try it out
-
 I'll ping from pc 3 to pc 1 ping 10.11
-
 11 and we get the destination host
-
 unreachable message how about from PC
-
 for King 10.1 111
-
 okay it works as expected
-
 finally we want to allow PC six to
-
 telnet to r2 but to not allow others to
-
 do so
-
 so we could apply this in multiple areas
-
 but how about applying it directly to
-
 our two's vty lines let's go on our to
-
 exit first I'll make the ACL ipv6 access
-
 list telnet to give it an appropriate
-
 name
-
 so let's permit PC 6 to telnet permit
-
 TCP because telnet uses TCP host 2000 1
-
 DB 8 3 3 double colon 12 I'll set the
-
 destination to any since I wanted to
-
 apply to whichever of our tooth
-
 interfaces they telnet to then finally
-
 EQ telnet to specify the port number of
-
 23 which telnet uses ok that's all we
-
 have to configure because there is an
-
 implicit deny any at the end of the ACL
-
 so we don't need to configure another
-
 statement let's apply it to the vty
-
 lines line vty 0 15 to apply an ipv4 ACL
-
 to an interface use access group for
-
 ipv6 traffic filter now to apply either
-
 to vty lines you use XS class so ipv6
-
 access class telnet in ok let's test it
-
 out I'll try to tell NIT - R - s G 0 0 0
-
 interface from PC 6
-
 telnet 2001 db8 12:12 double : - looks
-
 good enter the password CCNA in lower
-
 case and there we go
-
 exit okay let's confirm that PC five
-
 can't tell net to r2 telnet 2001 DB
-
 eight twelve twelve double colon - great
-
 looks like we successfully configured
-
 and applied the ACL in this lab we
-
 configured multiple types of ACLs ipv6
-
 ACLs as well as standard and extended
-
 ipv4 ACLs using numbered and named
-
 methods this was mostly review from what
-
 we did in the icnd1 labs but hopefully
-
 it was good practice that's all for this
-
 lab thank you for watching I hope this
-
 lab and video have been helpful for you
-
 please subscribe for future labs like
-
 this which will be released weekly if
-
 you have requests for any specific labs
-
 let me know in the comments section if
-
 you want to support my channel
-
 I accept Bitcoin and etherium donations
-
 via the addresses in the description I
-
 am also a brave verified publisher and
-
 accept bat or basic attention token
-
 donations in the brave browser

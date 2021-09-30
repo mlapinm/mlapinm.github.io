@@ -1,262 +1,132 @@
-
+0.0
 welcome to this free gns3 practice lab
-
 for the CCNA once again for this video I
-
 will be using gns3 not packet tracer
-
 packet tracer is great but there are
-
 many things which it doesn't support
-
 such as multi-link PPP from the previous
-
 lab and pppoe which we will configure in
-
 this lab you can download the gns3 file
-
 from the link in the description I will
-
 also include the name of the iOS image
-
 file I used however I cannot legally
-
 give you the file itself if you need
-
 help getting gns3 setup please look
-
 around on google or youtube david bumble
-
 for example has many videos on gns3
-
 setup in this lab we will configure
-
 pppoe which stands for point-to-point
-
 protocol over Ethernet the original PPP
-
 which we have been configuring so far
-
 was used on serial interfaces pppoe
-
 however allows us to encapsulate PPP
-
 into Ethernet frames the service
-
 provider routers have been
-
 pre-configured so let's configure the to
-
 client routers r1 and r2 to use pppoe
-
 for their connections to the service
-
 provider let's get started I'll
-
 configure r1 first compte we are
-
 instructed to configure pppoe with
-
 two-way PAP authentication SP r1 is
-
 already configured and is using a host
-
 name of packet and a password of tracer
-
 to authenticate so let's configure that
-
 user account on r1 user name packet
-
 password tracer okay now to configure
-
 pppoe we need to configure a dialer
-
 interface first interface dialer one
-
 this is a logical interface which we
-
 will later bind to the physical
-
 interface g00 first we have to lower the
-
 MTU
-
 the maximum transmission unit from 1500
-
 to 1492 this is because pppoe adds
-
 another 8 byte header so MTU 1492
-
 then set the encapsulation encapsulation
-
 PPP next the IP address the client r1
-
 will negotiate its IP address with SP r1
-
 with this command IP address negotiated
-
 next let's enable PAP authentication PPP
-
 authentication PAP then send the
-
 username and password as indicated in
-
 the topology diagram PPP PAP sent
-
 username Cisco password CCNA now the
-
 last step is to assign this to dialer
-
 pool 1 which we will use later to link
-
 it to the physical interface dialer pool
-
 1 is the command let's check do show run
-
 interface dialer 1
-
 there's the configuration MTU 1492 IP
-
 address negotiated encapsulation PPP
-
 dialer pool 1 and our PAP authentication
-
 ok that's all for the dialer interface
-
 now let's link it to G 0 0 interface G 0
-
 0 there's just one command we need here
-
 pppoe client dial pool number 1 ok let's
-
 enable the interface no shutdown end
-
 let's check the IP address the interface
-
 received from the service provider show
-
 IP interface brief it's 102 on the
-
 dialer interface but what's this virtual
-
 access 1 entered
-
 well it was automatically created
-
 basically the dialer interface provides
-
 layer 3 information and the virtual
-
 access interface provides layer 2
-
 information don't worry too much about
-
 the details about how it works as long
-
 as you can configure it you should be
-
 okay let's try to ping the service
-
 provider ping 100 0.1 okay looks good
-
 next let's configure our - the only
-
 difference will be chap authentication
-
 instead of path golf tee
-
 I'll make the user account remember the
-
 username must be the host name of the
-
 other router SP r2 and the password must
-
 be the same for both routers CCNA in
-
 this case so user name SPR - password
-
 CCNA next let's configure the dialer
-
 interface interface dialer 1 MTU 1492
-
 encapsulation PPP IP address negotiated
-
 PPP authentication chap okay and finally
-
 dialer pool 1
-
 now let's link it to the physical
-
 interface interface g00 pppoe client
-
 dial pool number 1 no shutdown end ok so
-
 let's see what IP address the dialer
-
 interface got from SPR to show IP
-
 interface brief 202 this time and again
-
 notice the virtual access 1 interface
-
 was created as well here's one more
-
 thing show interface dialer one notice
-
 here it says bound to and then indicates
-
 the virtual access 1 interface ok let's
-
 try a ping
-
 ping 200 oh you won great it works now
-
 like in the previous lab I'll make
-
 static default routes pointing to the
-
 service provider and then try to ping
-
 from r1 to r2 call 40 IP route
-
 oh-oh-oh-oh-oh-oh 200 200 oh oh one do
-
 show IP route there it is next on r1
-
 coughed e IP route
-
 oh-oh-oh-oh-oh-oh-oh-oh-oh 101 do show
-
 IP route there's the default route okay
-
 let's try that ping to our to do ping
-
 202 it works
-
 our pppoe configuration was successful
-
 that's all for this lab thank you for
-
 watching I hope this lab and video have
-
 been helpful for you please subscribe
-
 for future labs like this which will be
-
 released weekly if you have requests for
-
 any specific labs let me know in the
-
 comment section if you want to support
-
 my channel I accept Bitcoin and etherium
-
 donations via the addresses in the
-
 description I am also a brave verified
-
 publisher and accept bat or basic
-
 attention token donations in the brave
-
 browser

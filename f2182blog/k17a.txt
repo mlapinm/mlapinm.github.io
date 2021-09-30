@@ -1,399 +1,265 @@
 0.0
-welcome to this free CCNA packet tracer
-
-practice lab 4.699289you can download the lab
-
-file from the link in the description 8.152395in
-
-this lab we will take a look at port
-
-security 14.009599port security is a security
-
-function which can be configured on
-
-switch interfaces and controls which MAC
-
-addresses are allowed on which
-
-interfaces 23.040544MAC addresses are 48 bit
-
-addresses which are tied to the physical
-
-device such as a network interface card
-
-on a computer 32.017483port security allows us to
-
-ensure that only the intended devices
-
-are allowed to communicate over a given
-
-switchboard 39.973917we will do a few labs to
-
-practice port security 44.447202in this first lab
-
-let's look at and configure some basic
-
-functions of port security on two
-
-switches switch 1 and switch 2 53.28906which
-
-each have one pc connected to them 56.580272try
-
-to complete the lab yourself first then
-
-continue watching this video if you have
-
-trouble or watch it after to check your
-
-solution
+welcome to this free CCNA packet tracer practice lab
+4.699289
+you can download the lab file from the link in the description
+8.152395
+in this lab we will take a look at port security
+14.009599
+port security is a security function which can be configured on switch interfaces and controls which MAC addresses are allowed on which interfaces
+23.040544
+MAC addresses are 48 bit addresses which are tied to the physical device such as a network interface card on a computer
+32.017483
+port security allows us to ensure that only the intended devices are allowed to communicate over a given switchboard
+39.973917
+we will do a few labs to practice port security
+44.447202
+in this first lab let's look at and configure some basic functions of port security on two switches switch 1 and switch 2
+53.28906
+which each have one pc connected to them
+56.580272
+try to complete the lab yourself first then continue watching this video if you have trouble or watch it after to check your solution
 65.655241
-step1 tells us to find the MAC address
-
-of switch 2 by using the CLI of switch
-
-one and the reverse 75.967893so let's go on
-
-switch one first 78.431218enable use the command
-
-show MAC address - table 84.380305to display the
-
-list of known MAC addresses on the
-
-switch 87.886113switch one knows one
-
-MAC address 91.045349it's type is dynamic meaning
-
-that we didn't manually configure this
-
-MAC address 96.694927it was learned by receiving
-
-a packet on the port displayed here
-
-fastethernet 0/1 101.493692that's the MAC address
-
-of switch 2 104.168739now let's go on switch 2
+step1 tells us to find the MAC address of switch 2 by using the CLI of switch one and the reverse
+75.967893
+so let's go on switch one first
+78.431218
+enable use the command show MAC address - table
+84.380305
+to display the list of known MAC addresses on the switch
+87.886113
+switch one knows one MAC address
+91.045349
+it's type is dynamic meaning that we didn't manually configure this MAC address
+96.694927
+it was learned by receiving a packet on the port displayed here fastethernet 0/1
+101.493692
+that's the MAC address of switch 2
+104.168739
+now let's go on switch 2
 106.370292
-enable show MAC address table 111.772827this here
-
-is the MAC address of switch 1 115.436638learned
-
-dynamically on the fastethernet 0/1 port
+enable show MAC address table
+111.772827
+this here is the MAC address of switch 1
+115.436638
+learned dynamically on the fastethernet 0/1 port
 119.407023
-step 2 asks us why the MAC addresses of
-
-pc1 & pc2 124.908151don't appear in the MAC
-
-address table even though switch 1 and
-
-switch to appear in each other's tables
+step 2 asks us why the MAC addresses of pc1 & pc2
+124.908151
+don't appear in the MAC address table even though switch 1 and switch to appear in each other's tables
 129.945294
-if you have studied spanning tree
-
-protocol already 134.28383you know that switches
-
-send each other BPD use bridge protocol
-
-data units at regular intervals 140.832676the
-
-switches learned each other's MAC
-
-addresses via these bpdu packets 145.726325however
-
-no traffic has passed from the PCs to
-
-the switches yet 150.575194so they are unaware of
-
-the PCs MAC addresses at this point
+if you have studied spanning tree protocol already
+134.28383
+you know that switches send each other BPD use bridge protocol data units at regular intervals
+140.832676
+the switches learned each other's MAC addresses via these bpdu packets
+145.726325
+however no traffic has passed from the PCs to the switches yet
+150.575194
+so they are unaware of the PCs MAC addresses at this point
 157.617874
-step3 tells us to ping between the PCs
-
-and then check the MAC address tables of
-
-the switches 163.540997if we ping between the PCs
-
-switch one should have one dynamically
-
-learned MAC address on his Fast Ethernet
-
-0 2 port that of PC 1 173.224295and to
-
-dynamically learned MAC addresses on his
-
-fastethernet 0/1 port 177.64034those of switch 2
-
-and PC 2 180.232471likewise switch 2 should have
-
-one dynamically learned MAC address on
-
-his Fast Ethernet 0 to port that of PC 2
-
-and to dynamically learned MAC addresses
-
-on its fastethernet 0/1 port 192.59796those of
-
-switch one and pc 1 so I'll go on PC 1
+step3 tells us to ping between the PCs and then check the MAC address tables of the switches
+163.540997
+if we ping between the PCs switch one should have one dynamically learned MAC address on his Fast Ethernet 0 2 port that of PC 1
+173.224295
+and to dynamically learned MAC addresses on his fastethernet 0/1 port
+177.64034
+those of switch 2 and PC 2
+180.232471
+likewise switch 2 should have one dynamically learned MAC address on his Fast Ethernet 0 to port that of PC 2 and to dynamically learned MAC addresses on its fastethernet 0/1 port
+192.59796
+those of switch one and pc 1 so I'll go on PC 1
 195.063391
-and ping PC 2 198.70861ping 192.168.1.12
+and ping PC 2
+198.70861
+ping 192.168.1.12
 206.507604
-there we go 208.4092now let's go on switch 1
+there we go
+208.4092
+now let's go on switch 1
 210.962676
-show MAC address table 215.263024here is the MAC
-
-address of switch 2 we saw before 218.586529this
-
-other mac address on fastethernet 0/1
-
-must be PC twos 224.579024and the MAC address on
-
-Fast Ethernet 0 2 must be PC ones 228.828553let's
-
-check on switch 2 also 232.508461show MAC address
-
-table 237.095771here switch ones MAC address 240.169557this
-
-one is also on Fast Ethernet 0 1 242.472752so it
-
-must be PC ones 244.94482and this MAC address
-
-went on Fast Ethernet 0 2 must be PC
-
-twos
+show MAC address table
+215.263024
+here is the MAC address of switch 2 we saw before
+218.586529
+this other mac address on fastethernet 0/1 must be PC twos
+224.579024
+and the MAC address on Fast Ethernet 0 2 must be PC ones
+228.828553
+let's check on switch 2 also
+232.508461
+show MAC address table
+237.095771
+here switch ones MAC address
+240.169557
+this one is also on Fast Ethernet 0 1
+242.472752
+so it must be PC ones
+244.94482
+and this MAC address went on Fast Ethernet 0 2 must be PC twos
 250.006647
-step four is to enable port security on
-
-the switch interfaces connected to PCs
+step four is to enable port security on the switch interfaces connected to PCs
 257.555683
-so fastethernet 0 2 of each switch 260.565966in
-
-this lab we will configure the switches
-
-so that switch 1 only accepts traffic
-
-from PC 1 on its Fast Ethernet 0 2
-
-interface 269.669942and switch 2 only accepts
-
-traffic from PC 2 on its Fast Ethernet 0
-
-2 interface 274.372972first you must enable it at
-
-the interface level 279.143081let's go on switch 1
-
-again 281.146321 conf t  interface f02 286.681028you can
-
-enable port security with the command
-
-switch port port security 292.514561but command
-
-rejected Fast Ethernet 0 2 is a dynamic
-
-port 298.154059what does this mean 300.076423well one rule
-
-of port security is that it can't be
-
-enabled on a trunk port
+so fastethernet 0 2 of each switch
+260.565966
+in this lab we will configure the switches so that switch 1 only accepts traffic from PC 1 on its Fast Ethernet 0 2 interface
+269.669942
+and switch 2 only accepts traffic from PC 2 on its Fast Ethernet 0 2 interface
+274.372972
+first you must enable it at the interface level
+279.143081
+let's go on switch 1 again
+281.146321
+conf t interface f02
+286.681028
+you can enable port security with the command switch port port security
+292.514561
+but command rejected Fast Ethernet 0 2 is a dynamic port
+298.154059
+what does this mean
+300.076423
+well one rule of port security is that it can't be enabled on a trunk port
 304.979246
 it can only be enabled on an access port
 307.715738
-although this switch port is currently
-
-functioning as an access port 312.249528it's
-
-actually in dynamic mode 314.07877meaning that if
-
-it were to be connected to a switch port
-
-configured as a trunk 318.593697it would start
-
-functioning as a trunk 320.614636the switch board
-
-has to be explicitly configured as an
-
-access port if you want to enable port
-
-security on it 327.059255so switch port mode
-
-access 330.479739switch port port security 333.329003that's
-
-it 334.967179let's go on switch to now 337.153457
-conf t
-
-interface f02 342.877647switch port mode access
+although this switch port is currently functioning as an access port
+312.249528
+it's actually in dynamic mode
+314.07877
+meaning that if it were to be connected to a switch port configured as a trunk
+318.593697
+it would start functioning as a trunk
+320.614636
+the switch board has to be explicitly configured as an access port if you want to enable port security on it
+327.059255
+so switch port mode access
+330.479739
+switch port port security
+333.329003
+that's it
+334.967179
+let's go on switch to now
+337.153457
+conf t interface f02
+342.877647
+switch port mode access
 345.410618
-switch port port security 348.367851that's all you
-
-have to do to initially configure port
-
-security
+switch port port security
+348.367851
+that's all you have to do to initially configure port security
 352.069008
-Step five first asks us how many MAC
-
-addresses are allowed on a port security
-
-interface by default
+Step five first asks us how many MAC addresses are allowed on a port security interface by default
 360.922013
-well let's use a show command to find
-
-out 364.090269since we're already on switch to
-
-let's start here 367.590037do show port security
+well let's use a show command to find out
+364.090269
+since we're already on switch to let's start here
+367.590037
+do show port security
 371.052023
 look here next to fast ethernet zero 2
 374.375812
 the max secure address count is 1
 377.251818
-remember that for the test 379.574617
-that is the
-
-default number of MAC addresses allowed
-
-on the switchboard 383.859935because this is the
-
-default we don't technically have to
-
-configure this 389.278041however it's often a good
-
-idea to configure important settings
-
-like this just to be sure 394.529272and for our
-
-purposes it's good to go through the
-
-motions to practice 398.200707so use this command
+remember that for the test
+379.574617
+that is the default number of MAC addresses allowed on the switchboard
+383.859935
+because this is the default we don't technically have to configure this
+389.278041
+however it's often a good idea to configure important settings like this just to be sure
+394.529272
+and for our purposes it's good to go through the motions to practice
+398.200707
+so use this command
 400.627074
 switch port port security maximum one
 404.61179
-now let's do it on switch 1 2 407.692691switch
-
-port port security maximum 1 413.597907that's all
-
-for step 5
+now let's do it on switch 1 2
+407.692691
+switch port port security maximum 1
+413.597907
+that's all for step 5
 415.554281
-step six asks us another question 420.566403what
-
-is the default action in the event of a
-
-port security violation 425.403929of course when
-
-we configure port security there has to
-
-be some action that the switch takes in
-
-the event that the rules we configured
-
-are violated 433.673372there are three
-
-possibilities
+step six asks us another question
+420.566403
+what is the default action in the event of a port security violation
+425.403929
+of course when we configure port security there has to be some action that the switch takes in the event that the rules we configured are violated
+433.673372
+there are three possibilities
 436.351025
-the first is protect 
+the first is protect
 438.567464
-which drops traffic
-
-from any MAC addresses which are not
-
-allowed on the port 443.268101that's it it doesn't
-
-shut down the interface or display any
-
-messages 448.258578it doesn't even increase the
-
-violation counter that the switch keeps
+which drops traffic from any MAC addresses which are not allowed on the port
+443.268101
+that's it it doesn't shut down the interface or display any messages
+448.258578
+it doesn't even increase the violation counter that the switch keeps
 452.163884
-the second option is restrict 455.362967which
-
-again drops all traffic from MAC
-
-addresses which aren't allowed 459.479384it also
-
-displays a message on the switch and
-
-increases the violation counter on the
-
-switch 463.852395the third one is shut down 468.093768which
-
-puts the switchboard into an error
-
-disabled state effectively shutting down
-
-the interface as well as increasing the
-
-violation counter 475.972885make sure you know the
-
-differences between these three for the
-
-test 480.200904now as for which one is the default
-
-we can use the same command as before 485.355473do
-
-show port security 488.480845here at the end under
-
-security action it says shutdown 493.830381so
-
-there's our answer 496.035242the default port
-
-security violation action is shut down
+the second option is restrict
+455.362967
+which again drops all traffic from MAC addresses which aren't allowed
+459.479384
+it also displays a message on the switch and increases the violation counter on the switch
+463.852395
+the third one is shut down
+468.093768
+which puts the switchboard into an error disabled state effectively shutting down the interface as well as increasing the violation counter
+475.972885
+make sure you know the differences between these three for the test
+480.200904
+now as for which one is the default we can use the same command as before
+485.355473
+do show port security
+488.480845
+here at the end under security action it says shutdown
+493.830381
+so there's our answer
+496.035242
+the default port security violation action is shut down
 499.762644
 another thing to remember for the test
 502.717647
-again even though this is default let's
-
-go through the command to configure it
+again even though this is default let's go through the command to configure it
 507.384602
-switch port port security violation 511.645665now
-
-I'll use the question mark to show you
-
-the options 514.422873here are the three options I
-
-mentioned earlier protect restrict
-
-shutdown 519.33388let's go with the default of
-
-shutdown 522.377044now on switch 2 525.418085switch port
-
-port security violation shutdown
+switch port port security violation
+511.645665
+now I'll use the question mark to show you the options
+514.422873
+here are the three options I mentioned earlier protect restrict shutdown
+519.33388
+let's go with the default of shutdown
+522.377044
+now on switch 2
+525.418085
+switch port port security violation shutdown
 530.725256
-the steps are all complete 535.754121but I want to
-
-show one more thing 537.849143let me ping from pc1
-
-to pc2 again 540.805393ping 192.168.1.12 545.294897now I'll
-
-go on switch 1 548.308731and show port security
-
-address 553.169438as you can see this command
-
-shows the MAC address of PC 1 558.08966which
-
-switch one has dynamically added as a
-
-secure MAC address on Fast Ethernet 0 2
+the steps are all complete
+535.754121
+but I want to show one more thing
+537.849143
+let me ping from pc1 to pc2 again
+540.805393
+ping 192.168.1.12
+545.294897
+now I'll go on switch 1
+548.308731
+and show port security address
+553.169438
+as you can see this command shows the MAC address of PC 1
+558.08966
+which switch one has dynamically added as a secure MAC address on Fast Ethernet 0 2
 563.979211
-that's all for this lab 566.561802thank you for
-
-watching I hope this lab and video have
-
-been helpful for you 572.326026please subscribe
-
-for future labs like this which will be
-
-released weekly 577.17055if you have requests for
-
-any specific labs let me know in the
-
-comment section 581.893449if you want to support
-
-my channel I accept Bitcoin and etherion
-
-donations via the addresses in the
-
-description 588.9288I am also a brave verified
-
-publisher and accept bat or basic
-
-attention token donations in the brave
-
-browser
+that's all for this lab
+566.561802
+thank you for watching I hope this lab and video have been helpful for you
+572.326026
+please subscribe for future labs like this which will be released weekly
+577.17055
+if you have requests for any specific labs let me know in the comment section
+581.893449
+if you want to support my channel I accept Bitcoin and etherion donations via the addresses in the description
+588.9288
+I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
 597.311715
 597.311715
 597.311715

@@ -1,223 +1,95 @@
 0.0
-welcome to this free CCNA packet tracer
-
-practice lab 
+welcome to this free CCNA packet tracer practice lab
 4.785616
-you can download the lab
-
-file from the link in the description 
+you can download the lab file from the link in the description
 8.262735
-in
-
-this lab we will review the creation of
-
-a local user database on the router 
+in this lab we will review the creation of a local user database on the router
 13.799046
-and
-
-introduced the banner function 
+and introduced the banner function
 16.305568
-this will
-
-be a fairly short lab but try to
-
-complete it on your own first 
+this will be a fairly short lab but try to complete it on your own first
 20.578399
-and then
-
-continue watching this video if you have
-
-trouble or watch it after to check your
-
-solution 
+and then continue watching this video if you have trouble or watch it after to check your solution
 25.807395
-step one is to use PC one to
-
-connect to r1 via the console port
+step one is to use PC one to connect to r1 via the console port
 33.388313
-they're already connected by a cable 
+they're already connected by a cable
 35.850812
-so
-
-let's click on PC one desktop terminal
-
-and press ok to accept the default
-
-configurations 
+so let's click on PC one desktop terminal and press ok to accept the default configurations
 45.349398
-step two is to create two
-
-users on r1 
+step two is to create two users on r1
 49.941079
-last time we created
-
-user accounts with passwords 
+last time we created user accounts with passwords
 53.36842
-this time
-
-we will use secrets 
+this time we will use secrets
 55.760241
-same as with the
-
-enable password and enable secret
+same as with the enable password and enable secret
 59.7377
-passwords are not encrypted but secrets
-
-are encrypted by default 
+passwords are not encrypted but secrets are encrypted by default
 63.44439
-enable conf t
-
-username CCNA secret Cisco with a
-
-capital C 
+enable conf t username CCNA secret Cisco with a capital C
 73.883946
-remember that user name isn't
-
-case sensitive but the password or
-
-secret is 
+remember that user name isn't case sensitive but the password or secret is
 79.015255
-next user username CCNP secret
-
-Cisco 
+next user username CCNP secret Cisco
 85.373474
-I'll quickly type do show run to
-
-check that their encrypted 
+I'll quickly type do show run to check that their encrypted
 90.523496
-as you can
-
-see they are encrypted by default 
+as you can see they are encrypted by default
 95.760803
-step 3
-
-is to set the console port to use the
-
-local database to authenticate users
+step 3 is to set the console port to use the local database to authenticate users
 102.234008
-line console 0 login local 
+line console 0 login local
 107.375732
 that's it
 108.498419
-step 4 is to set a message of the day
-
-banner of welcome to packet racer 
+step 4 is to set a message of the day banner of welcome to packet racer
 117.90453
-and a
-
-login banner of authorized users only
+and a login banner of authorized users only
 121.129215
-banners are messages that display before
-
-or after users log in 
+banners are messages that display before or after users log in
 126.5625
-in this case the
-
-message of the day banner will be
-
-displayed above the login banner 
+in this case the message of the day banner will be displayed above the login banner
 130.78868
-and
-
-both will be displayed before our user
-
-logs in 
+and both will be displayed before our user logs in
 133.959567
-so exit to make the banner of
-
-the day we use this command 
+so exit to make the banner of the day we use this command
 140.799292
-banner motd
-
-then I'll use the question mark to show
-
-the next option 
+banner motd then I'll use the question mark to show the next option
 146.400326
-as you can see we need
-
-to enter a delimited character to
-
-indicate the start and end of the
-
-message 
+as you can see we need to enter a delimited character to indicate the start and end of the message
 155.173746
-if you type the message directly
-
-it will think that the first character
-
-is the delimiting character 
+if you type the message directly it will think that the first character is the delimiting character
 161.638417
-and it will
-
-be excluded from the message itself 
+and it will be excluded from the message itself
 164.300974
-you
-
-can use whatever you want but I'll use
-
-an asterisk 
+you can use whatever you want but I'll use an asterisk
 167.71324
-asterisk
-
-welcome to packet tracer asterisk 
+asterisk welcome to packet tracer asterisk
 171.674127
-okay
-
-now the same process for the log in
-
-banner 
+okay now the same process for the log in banner
 176.862234
-banner login asterisk authorized
-
-users only asterisk 
+banner login asterisk authorized users only asterisk
 185.731055
-now we've set up the
-
-two banners 
+now we've set up the two banners
 188.190605
-finally let's log out and
-
-see if our messages work 
+finally let's log out and see if our messages work
 192.963624
-and logout
-
-there we go
+and logout there we go
 199.083479
-before we log in you can see our message
-
-of the day and then our log in banner
+before we log in you can see our message of the day and then our log in banner
 203.762561
-thank you for watching I hope this lab
-
-and video have been helpful for you
+thank you for watching I hope this lab and video have been helpful for you
 210.085158
-please subscribe for future labs like
-
-this 
+please subscribe for future labs like this
 213.339962
-which will be released weekly 
+which will be released weekly
 215.212534
-if
-
-you have requests for any specific labs
-
-let me know in the comment section 
+if you have requests for any specific labs let me know in the comment section
 219.725183
-if
-
-you want to support my channel I accept
-
-Bitcoin and aetherium donations via the
-
-addresses in the description 
+if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description
 226.868826
-I am also a
-
-brave verified publisher and accept bat
-
-or basic attention token donations in
-
-the brave browser
+I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
 235.635523
 235.635523
 235.635523

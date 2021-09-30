@@ -1,244 +1,123 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon or the
-
 cryptocurrency options in the
-
 description also please subscribe to the
-
 channel for more labs like this and
-
 share these videos with anyone else
-
 studying for the CCNA in this lab we
-
 will configure a GRE tunnel gr e stands
-
 for a generic routing encapsulation r1
-
 and r2 are not directly connected
-
 however we can use GRE to create a
-
 virtual tunnel between them which will
-
 enable them to behave as if they are
-
 directly connected and their tunnel
-
 interfaces will have IP addresses from
-
 the same network 192.168.1.0 / 30 we
-
 will then configure a IG RP on these
-
 interfaces so they can learn about each
-
 other's internal networks the
-
 configuration is quite simple so let's
-
 get started I'll start on r1 first
-
 enable conf t we have to make a tunnel
-
 interface on the router this isn't a
-
 physical interface on the device but a
-
 logical interface to which we will
-
 assign an IP address you can type
-
 interface tunnel 0 or the fast and easy
-
 way as interface t0 let's assign an IP
-
 address to it IP address 192.168.1.1 255
-
 dot 255 dot 255 dot 255 @ UNASUR s--
-
 which interface do you think will be the
-
 source in this case it's the s 0 0 0
-
 interface because that's the interface
-
 we will actually be using to reach r2
-
 via the service provider network so
-
 tunnel source s 0 0 0
-
 next to the tunnel destination tunnel
-
 destination now what IP address do you
-
 think is correct here
-
 it's the IP address on r2 s s0 0 0
-
 interface the one facing the service
-
 provider so 200 oh oh - that's all there
-
 is to it now let's go on our to enable
-
 compte interface tunnel 0 IP address
-
 192.168.1.1 fifty five to fifty five to
-
 five to the source and destination will
-
 be the opposite of our ones
-
 configuration the source will be R to s
-
 s 0 0 0 interface and the destination R
-
 1 s s 0 0 0 interface tunnel source s 0
-
 0 0 tunnel destination 100 odo - ok
-
 that's all there is to configuring the
-
 tunnel
-
 however I've missed one very important
-
 thing do show IP route Artoo's tunnel
-
 destination is 100 oh oh - but it has no
-
 idea how to get there if I try to ping
-
 our one side of the tunnel it will fail
-
 do ping 192.168.1.1 no response let's
-
 configure a static default route via SPR
-
 to exit IP route
-
 oh-oh-oh-oh-oh-oh-oh-oh-oh 201 now we
-
 have to do the same on our one exit IP
-
 route
-
 oh-oh-oh-oh-oh-oh-oh-oh-oh
-
 101 keep in mind it doesn't have to be a
-
 default route the important thing is
-
 that the routers can reach the IP
-
 addresses configured as the tunnel
-
 destination okay now r1 and r2 can reach
-
 each other let's try to ping our two
-
 side of the tunnel from here on r1 do
-
 ping 192.168.1.2 okay it works this time
-
 let's check the interface do show IP
-
 interface brief our tunnel interface is
-
 up and up do show interface tunnel zero
-
 there's the tunnel source and
-
 destination we configured and you can
-
 see the tunnel protocol is gr e being
-
 transported over IP
-
 ok now let's configure AI GRP over the
-
 tunnel router ERP and I'll use an a s
-
 number of 100 so I want to advertise the
-
 inside network so Network 1000 100 200
-
 255 I used the exact wildcard mask but
-
 remember it's not always needed for EIG
-
 RP just network 10000 would have
-
 activated AI GRP on the G 0 0 interface
-
 as well
-
 okay now let's activate di GRP on the
-
 tunnel network 192.168.1.0 again I'll
-
 use the exact wildcard mask
-
 0:03 ok let's do the same on our two
-
 rotary IG RP 100 Network 1002
-
 oh-oh-oh-oh 255 network 192.168.1.0 oh
-
 oh oh 3 immediately we get a message
-
 saying we have a new AI GRP adjacency Oh
-
 where the tunnel interface and the
-
 neighbor address is our ones tunnel
-
 address 192.168.1.1 do show IP route
-
 look are two learned our ones 1001 0/24
-
 network let's try a ping from PC to 2 PC
-
 one ping 1001 100
-
 okay it works our GRE tunnel is up and
-
 working and we successfully configured a
-
 IG RP over the tunnel to share the
-
 inside networks that's all for this lab
-
 thank you for watching I hope this lab
-
 and video have been helpful for you
-
 please subscribe for future labs like
-
 this which will be released weekly if
-
 you have requests for any specific labs
-
 let me know in the comment section if
-
 you want to support my channel I accept
-
 Bitcoin and aetherium donations via the
-
 addresses in the description I am also a
-
 brave verified publisher and accept bat
-
 or basic attention token donations in
-
 the brave browser

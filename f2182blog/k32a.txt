@@ -1,318 +1,160 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon or the
-
 cryptocurrency options in the
-
 description in this lab we will
-
 configure the system clock including the
-
 timezone as well as Network Time
-
 Protocol or NTP on three routers this
-
 lab will only cover the absolute basics
-
 of NTP configuration and in the
-
 following lab we will configure NTP
-
 authentication NTP is used to
-
 synchronize time across devices it's
-
 very important to have synchronized time
-
 for a variety of reasons for example to
-
 help identify when a particular problem
-
 occurred when looking through logs on a
-
 device in this lab we will manually
-
 configure the time on r1 and then use it
-
 as an NTP server for r2 to sync it's
-
 time - we will then configure r3 to sync
-
 it's time to r2 and our network devices
-
 will have synchronized time first let's
-
 set the clock on r1 enable show clock
-
 this command is used to display the time
-
 of the device this is the default time
-
 but where is it getting this time
-
 here's another useful command show clock
-
 detail now we can see the time source
-
 which is the hardware calendar Cisco
-
 devices have a hardware calendar built
-
 into them and as you can see it is being
-
 used by default let's change that first
-
 let's set the time zone which is UTC by
-
 default this is done from global
-
 configuration mode compte clock time
-
 zone now let's check the next option we
-
 have to enter the name of the time zone
-
 I'm in Japan
-
 so I'll set it to jst now let's check
-
 the next option hours offset from UTC in
-
 my case jst is 9 hours ahead
-
 of UTC so 9 the next option is minutes
-
 offset from UTC which is zero in my case
-
 so I'll just leave them in it's option
-
 edit do show clock now as you can see
-
 the time has changed and the time zone
-
 has changed now let's set the time
-
 itself
-
 to do this we have to go back to
-
 privileged exec mode exit we can set the
-
 time with this command clock set now one
-
 important thing to remember is this the
-
 clock set command sets the time in UTC
-
 the time zone command we set before only
-
 affects how the time is displayed for
-
 example in my case jst is nine hours
-
 ahead of UTC so if I want to set the
-
 time to 9:00 p.m. jst I have to set the
-
 time as 12:00 p.m.
-
 as 12:00 p.m. UTC is 9:00 p.m.
-
 jst for this video I'll do that set the
-
 clock to 9:00 p.m. jst I won't set the
-
 clock to the current time of my computer
-
 since I record the audio and video at
-
 separate times after clock set we have
-
 to enter the time in the format shown
-
 here twelve o'clock is what I have to
-
 enter to set it to 9:00 p.m. jst the
-
 next option is the month and date and we
-
 can enter them in either order
-
 aughh 21 for August 21st the date I am
-
 recording this video
-
 next is the year 2019 and that's it
-
 show clock detail as you can see I
-
 configure 12:00 p.m.
-
 it's showing 9:00 p.m. or 21 in the
-
 24-hour format and the time source is
-
 now user configuration next let's
-
 configure our one as an NTP server which
-
 our two will sync it's time to call 50
-
 NTP
-
 now let's check the options here's one
-
 interesting quirk to set this router as
-
 an NTP server you don't use the NTP
-
 server command but rather the option
-
 above that NTP master NTP server will be
-
 used on r2 to identify our one as an NTP
-
 server to sink it's time to ok so NTP
-
 master and the next option is what's
-
 called the stratum level indicating how
-
 authoritative the time on this server is
-
 the lower the number the more
-
 authoritative we are instructed however
-
 to use the default which will be 8 to
-
 use the default just enter the command
-
 as is without adding the stratum level
-
 at the end next let's configure our to
-
 to sink it's time to r1 using NTP enable
-
 show clock as you can see our twos time
-
 is the default and is set to UTC first
-
 I'll set the time zone to my local time
-
 zone jst again note that NTP does not
-
 sync the time zone it will sync the time
-
 in UTC and then it's up to you to
-
 configure which time zone that time is
-
 displayed in on your device compte clock
-
 time zone is t9 ok now let's configure
-
 NTP NTP server remember I said I'd use
-
 this command on r2 to identify our one
-
 as an NTP server to sync our twos time
-
 to now we have to set the IP address of
-
 the NTP server let's use our ones
-
 address 192.168.1.1 exit now normally
-
 I'd use show commands immediately to
-
 check the configuration however NTP can
-
 take a very long time to synchronize for
-
 example show clock detail this still
-
 shows the time source as Hardware
-
 calendar because NTP hasn't finished
-
 syncing yet
-
 in fact I'm gonna cut this video here
-
 and wait for NTP to sink welcome back
-
 artoo has now synced its clock to our
-
 one show clock detail as you can see the
-
 time source is now ntp show ntp
-
 associations 192.168 12.1 is the address
-
 of r1 which we set as our ntp server the
-
 reference clock of 1 to 7.1 to 7.1.1 is
-
 our ones reference clock if you remember
-
 when studying about IP addresses the 1
-
 to 7 range is for loopback addresses so
-
 this is a loopback address on r1 okay
-
 now let's configure r3 to sink it's time
-
 to are to enable coffee tea I'll set the
-
 time zone again first clock time zone is
-
 t9 now I'll configure r3 to sync to our
-
 to NTP server 192.168 23.2 exit now once
-
 again I'll cut the video here to give
-
 NTP time to synchronize ok our 3 is now
-
 synced to our to show ntp associations
-
 here is the address of r2 and it's
-
 reference clock is our ones address of
-
 192.168.0.0 this lab and video have been
-
 helpful for you please subscribe for
-
 future labs like this which will be
-
 released weekly if you have requests for
-
 any specific labs let me know in the
-
 comments section if you want to support
-
 my channel please consider contributing
-
 to my patreon patreon comm slots
-
 Jeremy's IT lab I accept Bitcoin and
-
 aetherium donations via the addresses in
-
 the description
-
 I am also a brave verified publisher and
-
 accept bat or basic attention token
-
 donations in the brave browser

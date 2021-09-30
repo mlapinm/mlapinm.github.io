@@ -1,218 +1,110 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon where the
-
 cryptocurrency options in the
-
 description in this lab we will
-
 configure rip version 2 on a network to
-
 allow full connectivity this is similar
-
 network to the static routing part to
-
 lab in that lab we had to configure full
-
 connectivity with static routes this lab
-
 will demonstrate how much simpler it is
-
 to do so with the routing protocol I
-
 have increased the font size of the CLI
-
 in the network diagram due to some
-
 comments let me know if the size is good
-
 or if it's still difficult to see in the
-
 video so currently the devices have all
-
 been pre-configured with IP addresses
-
 but none of the PC should be able to pin
-
 each other because no routing has been
-
 configured let's configure rip version 2
-
 on each of these routers on r1 first
-
 enable compte router rip first I'll
-
 enable a version 2 version 2 it's not
-
 necessary for this lab but I'll also
-
 disable auto summary which is a good
-
 habit no auto our one is connected to 3
-
 networks 1000 1200 and 1300 let's enable
-
 rip on each of those interfaces net
-
 10000 net
-
 1200 net 1300 now we also have to
-
 disable routing updates on interfaces
-
 connected to switches g02 in this case
-
 we will still advertise the network on
-
 the g0 to interface 10000 to other
-
 routers but because there is no router
-
 in this direction it's not necessary to
-
 send updates out of this interface and
-
 for security purposes it can be a good
-
 idea to stop these updates we can do
-
 that with this command passive interface
-
 g0 to
-
 okay that's it let's go on to our to
-
 enable compte router rip version 2 no
-
 oto r2 is connected to three networks
-
 2000 1200 and 2400 so let's configure
-
 rip on each of those interfaces net
-
 20000 net 12000 net 2400 now let's
-
 disable routing updates on g0 to passive
-
 interface g0 - that's all for our tea
-
 now let's move on to our 3 enable compte
-
 router rip version 2 no auto net 30000
-
 net 1300 net 3400 dato passive interface
-
 g0 - finally once more on our 4 enable
-
 compte router rip version 2 no auto net
-
 40000 net 2400 net 34000 passive
-
 interface g0 - ok now let's wait a bit
-
 for the routers to send all the routing
-
 updates to each other and learn the
-
 network this process is called
-
 convergence while we're waiting let's
-
 check out some stuff on our 4 and show
-
 IP protocols this is a very handy show
-
 command for checking information about
-
 whatever routing protocol you are using
-
 routing protocol is
-
 rip as we configured here you can see
-
 the default timers rip remember these
-
 especially for the test update timer of
-
 30 seconds invalid and hold-down timers
-
 of 180 seconds and flush timer of 240
-
 seconds
-
 consult your study materials for
-
 detailed explanations of each you can
-
 also see information like which
-
 interfaces updates are being sent out on
-
 notice that the Gigabit Ethernet 0 2
-
 interface isn't here although we can see
-
 it is advertising the network down here
-
 this is because we made it a passive
-
 interface which is indicated here we can
-
 also see which neighboring routers we
-
 are getting updates from and when we got
-
 the last update anyway let's go on PC
-
 one now and see if we can ping each
-
 other PC ping 2000 10 that's PC 2
-
 it works next let's ping pc3 ping 3000
-
 10 it works too finally PC for ping 4000
-
 10
-
 it works as well we have successfully
-
 configured ripp to allow full
-
 connectivity throughout the network
-
 that's all for this lab thank you for
-
 watching I hope this lab and video have
-
 been helpful for you please subscribe
-
 for future labs like this which will be
-
 released weekly if you have requests for
-
 any specific labs let me know in the
-
 comment section if you want to support
-
 my channel please consider contributing
-
 to my patreon patreon comm / Jeremy's IT
-
 lab I accept Bitcoin and aetherium
-
 donations via the addresses in the
-
 description I am also a brave verified
-
 publisher and accept bat or basic
-
 attention token donations in the brave
-
 browser

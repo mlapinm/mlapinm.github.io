@@ -1,232 +1,117 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon or the
-
 cryptocurrency options in the
-
 description in this lab we will take a
-
 look at the routing information protocol
-
 known as rip rip is a dynamic routing
-
 protocol as opposed to the static
-
 routing we configured in the previous
-
 few labs in dynamic routing protocols
-
 routers share information with each
-
 other to determine the best paths to
-
 destinations in the network rip is a
-
 very simple but limited routing protocol
-
 you probably won't find it in use in a
-
 real life networking scenario you'll
-
 rather find a EIGRP or OSPF however rip
-
 is nice and simple and good for learning
-
 the basics of routing protocols and for
-
 setting up quick labs you should also be
-
 familiar with it for the test in this
-
 lab we will do some basic rip
-
 configurations on two routers r1 and r2
-
 try to complete the lab yourself first
-
 then continue watching this video if you
-
 have trouble or watch it after to check
-
 your solution
-
 step one is to configure rip on r1 and
-
 r2 without enabling version two so we'll
-
 keep that rip version one I'll go on r1
-
 first enable compte we configure rip
-
 with this command router rip now our one
-
 is only connected to one network
-
 192.168.1.0 so let's activate rip on
-
 that interface we can do that with the
-
 network command network 192.168.1.0 now
-
 let's go on our to enable compte router
-
 rip network 192.168.1.0 now we can
-
 activate rip on our two's two other
-
 interfaces with just one command that is
-
 network 10000 this will activate rip on
-
 all interfaces with an IP address
-
 falling within the 10000 / 8 class a
-
 network the 10.10 network connected to F
-
 0 0 and the 10.20 network connected to F
-
 1 0 both fall within this larger class a
-
 network and thus rip will be activated
-
 on them note that when you use the
-
 network command you are telling the
-
 router which network to advertise your
-
 tongue the router which interfaces to
-
 activate rip on and then it will
-
 advertise those networks to neighbors or
-
 that would be the case however rip
-
 version 1 is by its nature a classful
-
 routing protocol let's see what that
-
 means let's go back on our one do show
-
 IP route as you can see our one has
-
 learned not the 1001 0/24 and 10.20 / 24
-
 networks but rather the 10000 / 8
-
 network from r2 this is because rip
-
 version 1 automatically summarizes
-
 network
-
 to their classful network if you don't
-
 know about class-a EBC and such networks
-
 I won't go into a full explanation here
-
 but you will learn about them in your
-
 studies that was step 2 now let's go to
-
 step 3 and enable rip version 2 and
-
 disable that Auto summarization since
-
 we're on our one let's do it here first
-
 version 2 that enables rip version 2 no
-
 Auto summary that disables Auto summary
-
 now let's go on our two version 2 no
-
 Auto summary ok now our two will start
-
 advertising it's 10:01 0/24 and 10.2
-
 0/24 networks to our one instead of
-
 summarizing them to the class a network
-
 1000 - o / 8 summarization is often a
-
 good thing in networks and actually in
-
 this little network here it makes sense
-
 however it can also cause a lot of
-
 problems and if you're going to be
-
 summarizing in networks you'll want to
-
 do it manually that's a topic for
-
 another time though let's go check on
-
 our one do you show IP route well we
-
 still see that 1000 dot o / 8 network
-
 don't worry about that it will be
-
 cleared out of the route table in time
-
 since it has stopped receiving updates
-
 for it
-
 from our - but now we can also see the
-
 1001 0/24 and 1002 0/24 networks so
-
 there's the big difference between rip
-
 version 1 and rip version 2 rip version
-
 1 always automatically summarizes
-
 networks whereas in version 2 you can
-
 and should disable auto summarization
-
 that's all for this lab thank you for
-
 watching I hope this lab and video have
-
 been helpful for you please subscribe
-
 for future labs like this which will be
-
 released weekly if you have requests for
-
 any specific labs let me know in the
-
 comment section
-
 if you want to support my channel please
-
 consider contributing to my patreon
-
 patreon comm slash Jeremy's IT lab I
-
 accept Bitcoin and aetherium donations
-
 via the addresses in the description I
-
 am also a brave verified publisher and
-
 accept bat or basic attention token
-
 donations in the brave browser

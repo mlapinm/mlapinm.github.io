@@ -1,208 +1,105 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon or the
-
 cryptocurrency options in the
-
 description this lab will be one last
-
 lab focusing exclusively on ACLs this
-
 time we will configure named standard
-
 ACLs as opposed to the numbered ACLs we
-
 configured in previous labs also
-
 remember that standard ACLs filter based
-
 only on source address as opposed to
-
 extended ACLs which use other parameters
-
 such as destination address as well our
-
 first requirement is that hosts in the
-
 192.168.1.0 / 24 and 192.168.0.0 a CL
-
 zon are ones F 0 0 and F 1 0 interfaces
-
 first let's create the ACL preventing
-
 hosts in the 192.168 2's last 24 network
-
 from communicating with the 192.168.1.0
-
 / 24 network on our one an able cough T
-
 number ACLs are configured with the
-
 command access list but named ACLs are
-
 configured with this command IP access
-
 list now let's check the options we'll
-
 go with standard for this lab let's
-
 check the game now notice you can also
-
 create a numbered ACL with this command
-
 however let's give it a name to two one
-
 meaning from the 192.168.20.10 at work
-
 to the 192.168.1.2 last 24 network now
-
 let's check the options there are none
-
 so clearly this is different from our
-
 previous ACL configuration let's hit
-
 enter to see what happens as you can see
-
 we have created a sorry we have entered
-
 a separate configuration mode from here
-
 we will configure the contents of this
-
 a CL let's check what options there are
-
 let's create a deny statement first deny
-
 192.168 200 200 255 now let's check the
-
 options there are none because this is a
-
 standard ACL so we only configure the
-
 source IP that we are filtering now
-
 let's create one more entry to allow all
-
 other traffic because there is still
-
 that implicit deny any at the end of the
-
 ACL permit any exit okay that's it
-
 before applying that ACL let's create
-
 the second ACL to prevent traffic from
-
 the 192.168.1.0 slash 24 network from
-
 reaching the 1 & 2 - 1 6 8 - 0 / 24
-
 network IP access list standard 1 - to
-
 deny 192.168.1.0 oh oh oh 255 permit any
-
 ok we have created both ACLs necessary
-
 for the first requirement now let's
-
 apply them exit first let's go on f00
-
 interface f00 on this interface we will
-
 block traffic from 192.168.0
-
 the interface so IP access group 2 - 1
-
 out now let's apply the other ACL to f10
-
 interface f10 IP access group 1 - 2 out
-
 now let's test this configuration I'll
-
 try to ping from pc1 to pc2 192.168 2000
-
 work we get a message saying destination
-
 host unreachable and to pc for pig
-
 192.168 to same thing just to make sure
-
 I'll do some pings from PC
-
 three as well ping 192.168.1 11 doesn't
-
 work and ping 192.168.1.2 elv okay so
-
 looks like our configuration worked now
-
 let's go to the next requirement hosts
-
 in the 192.168.20.10 160 8.3 o / 24
-
 network remember the general rule that
-
 standard ACLs should be applied as close
-
 as possible to the destination in this
-
 case the destination is 192.168.0 / 24
-
 so let's configure the ACL on our to
-
 enable conf t IP access list standard 2
-
 to 3 deny 192.168 200 200 255 permit any
-
 exit now let's apply it outbound on our
-
 to s f00 interface interface f00 IP
-
 access group 2 to 3 out finally let's
-
 test I'll try to ping from PC 3 to
-
 server 1 and server to ping 192.168.1
-
 hundred destination host unreachable
-
 ping 192.168.1 o1 destination host
-
 unreachable
-
 we have successfully completed this lab
-
 thank you for watching I hope this lab
-
 and video have been helpful for you
-
 please subscribe for future labs like
-
 this which we be released weekly if you
-
 have requests for any specific labs let
-
 me know in the comment section if you
-
 want to support my channel please
-
 consider contributing to my patreon
-
 patreon comm / Jeremy's IT lab I accept
-
 Bitcoin and aetherium donations via the
-
 addresses in the description
-
 I am also a brave verified publisher and
-
 accept bat or basic attention token
-
 donations in the brave browser

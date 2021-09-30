@@ -1,304 +1,153 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon or the
-
 cryptocurrency options in the
-
 description also please subscribe to the
-
 channel for more labs like this in this
-
 lab we will expand upon what we did in
-
 the previous lab I have added an
-
 additional router change the IP
-
 addresses and we will configure multi
-
 area OSPF the middle area is area 0 also
-
 known as the backbone all other areas
-
 must be attached to the backbone area
-
 and traffic from one area to another
-
 must pass through the backbone 2 of our
-
 routers our area border routers or ABR's
-
 because they have interfaces in multiple
-
 areas r2 has interfaces in area 0 and
-
 area 1 and our 3 has interfaces in area
-
 0 and area 2 let's get started I'll
-
 configure these routers in order from 1
-
 to 5 make sure you configure the
-
 interfaces in the proper areas also we
-
 should configure the loopback interfaces
-
 as passive interfaces and configure the
-
 reference bandwidth so that a 100
-
 gigabit interface would have a cost of 1
-
 let's go on our one an able coffee tea
-
 router OSPF 1 remember the OSPF process
-
 ID doesn't have to match between routers
-
 in the last lab I purposefully
-
 configured a different process ID on
-
 each router in this lab however I'll do
-
 the typical thing and just use a process
-
 ID of one for each router ok now our
-
 ones interfaces are all in a single area
-
 so I'll use our shortcut from last time
-
 Network oh-oh-oh-oh 255 255 dot 255 255
-
 area 1 now OSPF is activated on all
-
 interfaces with an IP address let's make
-
 the loopback passive passive interface
-
 l0 finally the reference bandwidth Auto
-
 cost reference bandwidth now what should
-
 the value B we should configure it to be
-
 equivalent to 100 gigabits per second
-
 that's 100,000 megabits per second so
-
 configure the reference bandwidth as
-
 100,000 okay that's all for r1 now I'll
-
 go through the rest of these devices
-
 fairly quickly again make sure to
-
 configure the correct interfaces in the
-
 correct areas for routers 2 & 3 the loop
-
 backs could be in either area but the
-
 instructions say to put them in area 0
-
 let's go on our to an able Conti router
-
 OSPF one network 10.12 oh oh oh oh oh
-
 255 area one I configure the same slash
-
 24 mask as on the interface but remember
-
 that a slash 16 would work as well a
-
 slash 8 would not work however because
-
 10000 / 8 includes f2 0 also which has
-
 to be in a different area okay let's
-
 continue Network 10.23 oh-oh-oh-oh-oh
-
 255 area 0 network 2 2 to 200 200 area 0
-
 passive interface l0 auto cost reference
-
 bandwidth 100000 okay next is r3 enable
-
 compte router OSPF one network 10.23
-
 oh-oh-oh-oh-oh 255 area 0 network 10.35
-
 oo ooo 255 area to network three three
-
 three three zero zero zero area zero
-
 passive interface l0
-
 auto cost reference bandwidth 100,000
-
 okay next is our four enable conf T
-
 Network oh oh oh oh 255.255.255.0 v
-
 aerial 1 passive interface l 0 auto cost
-
 reference bandwidth 100,000 okay last
-
 router our 5 enable coughed T router
-
 OSPF one our five is only part of area 2
-
 so let's use this shortcut again network
-
 oh-oh-oh-oh 255 dot 255 dot 255 dot 255
-
 area 2 passive interface L 0 auto cost
-
 reference bandwidth 100000 that's all
-
 for step 1 now step 2 is to configure
-
 route summarization on the ABR's
-
 here on our 5 let me show you the route
-
 table do show IP route we have all of
-
 these routes 10.12 0 10.14 0 10.20 300
-
 but our 5 only has one path to them so
-
 our three could instead advertise a
-
 single 10.0 / 8 route to our 5 and it
-
 would help clean up our 5s routing table
-
 this isn't a very large network but in
-
 very large networks this is very
-
 beneficial let's configure that on our 3
-
 we want to summarize these routes are 3
-
 is receiving an area 0 so we begin the
-
 command with area 0 not with area 1 the
-
 area to which we will advertise the
-
 summary ok next to the keyword range
-
 then the address 10000 followed by the
-
 mask 255 0 keep in mind that this is not
-
 a wildcard mask that's easy to mix up
-
 since the network command uses a
-
 wildcard mask
-
 so if we go and check on r5 instead of
-
 having learned routes to 10.23 0/24
-
 10.12 0/24 and 10.14 0/24 it should have
-
 a single 10000 / 8th route learned via
-
 OSPF however the loop backs don't fit in
-
 the summary so they will be unchanged
-
 okay let's go check our 5s route table
-
 do show IP route there we go our 5 has
-
 learned a single route to all of the
-
 routes that fit within the 10000 / 8
-
 range of course it still has its
-
 directly connected network of 10.35 0/24
-
 here now let's configure the same thing
-
 on r2 r1 and r4 don't need to learn
-
 about that 10.23 0/24
-
 and 10.35 0.0 /horizontalscale the
-
 routing tables of r1 and r4 we shouldn't
-
 see routes to 10.20 300 / 24 and 10.35
-
 0/24 but rather a summary 10000 / 8
-
 address keep in mind it can take a few
-
 seconds for the network to converge and
-
 this changed to show in the routing
-
 table but let's check on our for do show
-
 IP route there we go there's that 1000 /
-
 8 summary in this lab we looked at multi
-
 area
-
 OSPF we could have more areas area 3
-
 area for area 5 etc but remember that
-
 all areas must
-
 connect to the backbone area area zero
-
 we also used summarization to reduce the
-
 size of our routing table which is
-
 highly recommended in large networks
-
 that's all for this lab thank you for
-
 watching I hope this lab and video have
-
 been helpful for you please subscribe
-
 for future labs like this which will be
-
 released weekly if you have requests for
-
 any specific labs let me know in the
-
 comment section if you want to support
-
 my channel I accept Bitcoin and
-
 aetherium donations via the addresses in
-
 the description I am also a brave
-
 verified publisher and accept bat or
-
 basic attention token donations in the
-
 brave browser

@@ -1,304 +1,153 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon or the
-
 cryptocurrency options in the
-
 description also please subscribe to the
-
 channel for more labs like this in this
-
 lab we will take a look at some aspects
-
 of syslog you have surely seen syslog
-
 messages as you configure routers and
-
 switches some syslog messages inform you
-
 of things like interfaces being enabled
-
 and disabled others indicate major
-
 problems with the device which can
-
 render it unfunctional you can configure
-
 these messages to be displayed in real
-
 time on the CLI and also to be stored in
-
 RAM or in a server for later reference
-
 there are 8 levels of severity from
-
 level 0
-
 aka emergency to level 7 aka debug make
-
 sure you learn all eight severity levels
-
 for your exam okay let's get started
-
 step 1 is to connect to our ones console
-
 port using PC 2 to do so in packet
-
 tracer click on PC 2 click desktop then
-
 terminal and accept these defaults ok
-
 now we are in the CLI for our one let's
-
 shut down and then enable the g00
-
 interface and then check the syslog
-
 messages enable call 40 interface g00
-
 shutdown yeah we got a couple messages
-
 already
-
 now let's enable it no shutdown so what
-
 is the severity level of these messages
-
 that is indicated by the number 5 here
-
 level 5 is aka informational meaning
-
 these aren't critical messages which
-
 require urgent attention now we are
-
 instructed to enable date and time
-
 stamps for these messages without time
-
 stamps these logging messages aren't
-
 very helpful when you look back at them
-
 at a later time exit to enable these
-
 date and time stamps use this command
-
 service timestamps log date time m/sec
-
 four milliseconds
-
 now let's shut down and enable the
-
 interface again interface g00 shutdown
-
 no shutdown we've got the same messages
-
 but now there are date and time stamps
-
 at the beginning the three zero one
-
 indicates March first by the way as I
-
 haven't configured the date on our one
-
 okay step two is to configure an enable
-
 secret of CCNA and then configure the
-
 vty lines for telnet exit enable secret
-
 CCNA now let's configure the vty lines
-
 line vty 0 15 password CCENT login
-
 transport input telnet next let's telnet
-
 from pc1 to our ones g00 interface
-
 telnet 192.168.1.1 the vty line password
-
 is CCENT okay we're in r1 an able
-
 password of CCNA compte now let's try to
-
 generate some syslog messages here by
-
 enabling an unused interface note that
-
 since I'm connecting to r1 via the g00
-
 interface if I shut down that interface
-
 the tongue at connection would of course
-
 cut off so let's use g0 one interface g0
-
 one no shutdown and no message appears
-
 if you go back to our console connection
-
 on PC 2 however a syslog message
-
 appeared that's because by default
-
 syslog messages are not displayed over
-
 the vty lines let's change that type end
-
 to go back to a privileged exec mode
-
 then use this command terminal monitor
-
 that should enable syslog messages to
-
 the vty lines
-
 conf T interphase G 0 1 now let's shut
-
 it down shut down there we go now the
-
 message is displayed over telnet as well
-
 as over the console connection exit the
-
 next step is to configure synchronous
-
 logging on the console and vty lines now
-
 what exactly is synchronous logging well
-
 it's a little difficult to recreate on
-
 packet tracer but without it enabled if
-
 you are typing something into the CLI
-
 and a syslog message appears the syslog
-
 message appears right in the middle of
-
 what you're typing and it becomes very
-
 difficult to read your commands if we
-
 enable synchronous logging if a syslog
-
 message appears in the middle of you
-
 typing a command iOS will then rewrite
-
 the command on a new line below the
-
 syslog message so you can read it
-
 clearly before finishing and entering
-
 the command just make sure you know this
-
 command for the test so to enable it
-
 let's go first to the console line line
-
 con 0 then we just use a single command
-
 logging synchronous that's it now let's
-
 do it on the vty lines also line vty 0
-
 15 logging synchronous exit that's it
-
 the next step is to enable logging to
-
 the buffer this stores logging messages
-
 in RAM for you to view later if I enter
-
 do show logging you can see buffer
-
 logging is disabled let's enable it with
-
 this command logging buffered do show
-
 logging now as you can see down here the
-
 default size of this buffer is 4096
-
 bytes let's double the size to 8000 192
-
 bytes logging buffered 8 1 9 to do show
-
 logging there we go
-
 finally let's configure our one to send
-
 syslog messages to our server server one
-
 this is a really good idea as the
-
 logging messages in the buffer disappear
-
 if you shut down the device and you also
-
 don't want to take up a bunch of RAM
-
 space with logging messages so an
-
 external syslog server is valuable to
-
 configure this we can either enter
-
 logging followed by the IP address of
-
 the server or logging host followed by
-
 the IP 192.168.1.1 hundred there we go
-
 do show logging there it is logging to
-
 192.168.1.1 hundred let's shut and no
-
 shut an interface and then check on
-
 server one interface g0 one shut no show
-
 now to check messages on a syslog server
-
 on packet tracer click the server click
-
 services then click syslog here on the
-
 left in this lab we took a look at some
-
 aspects of syslog that's all for this
-
 lab thank you for watching I hope this
-
 lab and video have been helpful for you
-
 please subscribe for future labs like
-
 this which will be released weekly if
-
 you have requests for any specific labs
-
 let me know in the comment section if
-
 you want to support my channel I accept
-
 Bitcoin and aetherium donations via the
-
 addresses in the description I am also a
-
 brave verified publisher and accept bat
-
 or basic attention token donations in
-
 the brave browser

@@ -1,316 +1,159 @@
-
+0.0
 welcome to this free CCNA packet tracer
-
 practice lab you can download the lab
-
 file from the link in the description if
-
 you like these labs please consider
-
 supporting me via my patreon or the
-
 cryptocurrency options in the
-
 description this lab will be similar to
-
 the previous lab in which we use telnet
-
 to connect to a switch and router in
-
 this lab however we will use the more
-
 secure option SSH which stands for
-
 secure shell ssh is more secure because
-
 it encrypts packets between the devices
-
 so that even if the packets are
-
 intercepted by an attacker they can't be
-
 read there are a few extra steps
-
 involved in configuring SSH but it's not
-
 so complicated the four requirements are
-
 first you must use the hostname command
-
 to configure the hostname of the device
-
 to reinforce this I haven't
-
 pre-configured the host names of the
-
 devices for this lab second you must
-
 configure the DNS domain name using the
-
 IP domain name command third you must
-
 generate the SSH key to be used to
-
 encrypt the packets and fourth SSH must
-
 be enabled on the vqi lines we will go
-
 through these steps and a couple others
-
 in this lab try to complete the lab
-
 yourself first then continue watching
-
 this video if you have trouble or watch
-
 it after to check your solution if you
-
 haven't learned the commands necessary
-
 to complete the tasks yet in your
-
 studies feel free to watch this video to
-
 learn them
-
 step one is to configure the host names
-
 of switch 1 and r1 this is a requirement
-
 for SSH so let's do that now on switch 1
-
 first enable comte hostname switch 1 now
-
 on r1 enable compte hostname r1 there we
-
 go step 2 is to configure that IP
-
 addresses indicated this is the same as
-
 in the previous lab I'll start on our 1
-
 first since we're already here interface
-
 g00 IP address 192.168.1.1 255.255.255.0
-
 no shutdown because the interface is
-
 disabled by default now let's configure
-
 a switch ones VLAN 1 interface interface
-
 VLAN 1 IP address 192.168.1.1 4 5.0 no
-
 shutdown that's all for step 2 step 3 is
-
 to configure a single user account on
-
 each device which we will use to login
-
 to the device when we SSH from pc1 on
-
 switch 1 first exit username Cisco
-
 password CCNA I've said it many times
-
 before but remember passwords are case
-
 sensitive now on our one exit username
-
 cisco password CCNA that's all for step
-
 3 step 4 is to configure a dns domain
-
 name on each device this is an another
-
 required step for configuring SSH and we
-
 will use a domain name of cisco.com for
-
 this lab this only requires one command
-
 here on our 1 first IP domain name
-
 cisco.com
-
 that's it now on switch one IP domain
-
 name Cisco calm that's all for step four
-
 Step five is to generate the keys used
-
 to encrypt the packets this is done with
-
 this command crypto key generate RSA now
-
 we are asked for the modulus size the
-
 length of the keys used for the
-
 encryption and decryption process
-
 we're instructed to use 1024 there we go
-
 now let's do the same on our one crypto
-
 key generate RSA 1024 that's all for
-
 step 5
-
 step six is now to configure the vty
-
 lines there are a few requirements and
-
 let's configure them one by one on our
-
 one first line vty 0 15 again meaning
-
 line 0 through 15 login local that's the
-
 same command used last time meaning we
-
 will have to use the user account we
-
 created previously to log into the vty
-
 lines when we connect transport input
-
 last time we use telnet now we'll enter
-
 SSH
-
 this will allow only SSH not telnet to
-
 be used to connect to the vty lines the
-
 third requirement for this lab is to
-
 terminate connections after five minutes
-
 of inactivity this is an important
-
 security measure it is done with this
-
 command exact timeout now I'll use the
-
 question mark any time you have to input
-
 some amount of time check the unit of
-
 time used for the commands you don't
-
 want to enter 5 for 5 minutes if it ends
-
 up being 5 seconds in this case we can
-
 see it is entered in minutes so I'll
-
 just enter 5 always remember that for
-
 commands involving time now I'll quickly
-
 hop on switch 1 and enter the same
-
 commands line vty 0 15 login local
-
 transport input ssh exec timeout 5
-
 that's all for step 6
-
 step seven is to enable SSH version 2
-
 version 2 improves on weaknesses of
-
 version 1 if you want to learn more
-
 about this sort of thing I recommend
-
 pursuing Cisco's security certification
-
 path where you will learn all about this
-
 sort of thing for now just remember that
-
 you should use SSH version 2 whenever
-
 possible you can enable it with this
-
 command exit IP SSH version 2 that's it
-
 now we'll do it on our one exit IP SSH
-
 version 2 that's it
-
 finally let's see if we can connect to
-
 the command line of each device from pc1
-
 by using SSH first let's see if telnet
-
 works
-
 I'll try to tell net to switch one
-
 telnet 192.168.1.2 as you can see it
-
 doesn't work this is because of that
-
 transport input SSH command we used
-
 before now let's try SSH that is done
-
 with this command SSH - L Cisco Cisco
-
 being the username we are connecting
-
 with which we configured on switch 1 and
-
 R 1 followed by the IP address
-
 192.168.1.1 tur the password of CCNA in
-
 all caps and there we go we're on switch
-
 1 now I'll type exit and try r1 SSH - L
-
 Cisco 192.168.1.1 password of CCNA and
-
 now we're on our one take note of the
-
 difference between the command used to
-
 tell net and the command used to SSH
-
 onto the switches and routers these are
-
 the standard commands used on windows
-
 anyway that's all for this lab
-
 thank you for watching I hope this lab
-
 and video have been helpful for you
-
 please subscribe for future labs like
-
 this which will be released weekly if
-
 you have requests for any specific labs
-
 let me know in the comment section if
-
 you want to support my channel please
-
 consider contributing to my patreon
-
 patreon comm / Jeremy's IT lab I accept
-
 Bitcoin and aetherium donations via the
-
 addresses in the description I am also a
-
 brave verified publisher and accept bat
-
 or basic attention token donations in
-
 the brave browser
