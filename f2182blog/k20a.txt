@@ -1,9 +1,9 @@
-
+0.0
 welcome to this free CCNA packet tracer
 
-practice lab you can download the lab
+practice lab 4.66535you can download the lab
 
-file from the link in the description if
+file from the link in the description 7.766149if
 
 you like these labs please consider
 
@@ -11,295 +11,304 @@ supporting me via my patreon or the
 
 cryptocurrency options in the
 
-description this lab xx of these free
+description 15.390226this lab xx of these free
 
 labs I've created for YouTube will serve
 
 as a review of several of the topics
 
-we've covered in the previous 19 I plan
+we've covered in the previous 19 24.832042I plan
 
 to do these at various points in this
 
-series although you could just go back
+series 29.30156although you could just go back
 
 and redo previous labs to serve as
 
-review my regular configuration labs
+review 34.699568my regular configuration labs
 
 tend to focus on just one technology at
 
-a time such as VLANs or port security I
+a time such as VLANs or port security 41.114527I
 
 think that labs like this one involving
 
 multiple technologies are also
 
-beneficial in this lab we will configure
+beneficial 46.998558in this lab we will configure
 
 host names the enable secret VLANs
 
 trunks port security and inter VLAN
 
-routing with router on a stick try to
+routing with router on a stick 58.427102try to
 
-complete the lab yourself first then
+complete the lab yourself first 61.309243then
 
 continue watching this video if you have
 
 trouble or watch it after to check your
 
-solution step one is to configure host
+solution 66.58394step one is to configure host
 
 names for each of the networking devices
+72.395519
+r one switch one and switch 2 75.877368this is
 
-are one switch one and switch to this is
+done with a single command 78.577624host name
+79.792302
+let's go on r one first 82.288748 enable conf t
 
-done with a single command host name
+host named r1 88.501488next switch one 90.893059enable
 
-let's go on our one first an able compte
+conf t host name switch one 95.925156finally
 
-host named r1 next switch one enable
+switch 2 98.266837 enable conf t host name
 
-compte host name switch one finally
-
-switch to enable coffee/tea host name
-
-switch two that's it for step one
-
+switch two 103.825952that's it for step one
+105.738412
 step two is to configure an enable
 
 secret of CCNA for each networking
 
-device this is another fairly simple
+device 114.616132this is another fairly simple
 
 step
-
+117.335663
 remember the enable secret is an
 
 encrypted password that protects
 
 privileged exec mode of the router
-
+123.827327
 requiring a password to use the enable
 
-command we could also configure an
+command 127.138543we could also configure an
 
 enable password and then encrypt it with
 
 the service password encryption command
-
+133.571733
 however the encryption of the enable
 
-secret is more secure so you'll always
+secret is more secure 137.574847so you'll always
 
 want to use that instead
-
+139.85111
 let's do switch to first since we're
 
-here enable secret CCNA remember
+here 143.213483enable secret CCNA 146.374858remember
 
 passwords are case sensitive so make
 
-sure CCNA is all capitals now let's use
+sure CCNA is all capitals 151.322811now let's use
 
-the same command on switch 1 enable
+the same command on switch 1 155.070335enable
 
-secret CCNA and finally r1 enable secret
+secret CCNA 158.386667and finally r1 enable secret
 
-CCNA that's all for step 2
-
+CCNA 164.91777that's all for step 2
+166.783774
 step three is to configure the switch
 
 ports to which pcs are connected as
 
-access ports in specific VLANs pc1 & pc2
+access ports in specific VLANs 176.492922pc1 & pc2
 
-VLAN 13 & pc2 and pc 4 in VLAN 24 let's
+VLAN 13 & pc2 and pc 4 in VLAN 24 183.09766let's
 
-start on switch one PC one is connected
+start on switch one 185.59947PC one is connected
 
-to f0 two so interface f0 to switch port
+to f0 two so interface f0 2 192.630888switch port
 
-mode access now that we've explicitly
+mode access 194.660238now that we've explicitly
 
 configured it as an access port let's
 
-put it in VLAN 13 switch port access
+put it in VLAN 13 200.195033switch port access
 
-VLAN 13 now let's configure f03
+VLAN 13 203.144313now let's configure f03
 
 which pc 2 is connected to to be in VLAN
 
-24 interface f03 switch port mode access
+24 209.133615interface f03 switch port mode access
 
-switch port access VLAN 24 that's it for
+switch port access VLAN 24 217.094483that's it for
 
-switch 1 next let's hop on switch to
-
-interface f0 to switch port mode access
-
+switch 1 next let's hop on switch 2
+221.777834
+interface f0 2 switch port mode access
+226.813212
 PC 3 is connected to this interface so
 
-switch port access VLAN 13 now f03
+switch port access VLAN 13 233.221732now f03
 
-which pc 4 is connected to interface f03
+which pc 4 is connected too 237.514995interface f03
 
 switch port mode access switch port
 
-access VLAN 24 that's all for step 3
-
+access VLAN 24 245.245238that's all for step 3
+249.159886
 step four is to configure a trunk
 
-between switch 1 and switch to remember
+between switch 1 and switch 2 255.774305remember
 
 switch ports by default function as
 
-access ports in VLAN 1 pcs 1 2 3 & 4 are
+access ports in VLAN 1 261.376121pcs 1 2 3 & 4 are
 
-in VLAN 13 and 24 so even pcs in the
+in VLAN 13 and 24 266.862756so even pcs in the
 
 same VLAN won't be able to communicate
 
 with each other across these two
 
-switches currently the two switches will
+switches 272.730842currently the two switches will
 
 only carry traffic in VLAN 1 between
 
-them let's configure this trunk to
+them 278.482151let's configure this trunk to
 
-change that now which interfaces do they
+change that 281.711431now which interfaces do they
 
-use to connect to each other let's use
+use to connect to each other 285.945086let's use
 
-one CDP command to find out on switch to
+one CDP command to find out 288.663991on switch 2
 
-first since we're already here do show
+first since we're already here 293.136909do show
 
-CDP neighbors as it shows here switch 2
+CDP neighbors 296.663197as it shows here switch 2
 
 is connected to switch 1 using the F 0 1
 
-interface it also shows that switch 2 is
+interface 303.017659it also shows that switch 2 is
 
 connected to switch ones F 0 1 interface
 
-here so we don't need to use this
+here 308.819796so we don't need to use this
 
-command on switch 1 let's configure the
+command on switch 1 311.882595let's configure the
 
-trunk down interface F 0 1 switch port
+trunk down 314.822903interface F 0 1 switch port
 
-mode trunk that's it on this switch
+mode trunk 319.690695that's it on this switch
 
 model we don't have to configure the
 
-encapsulation type of dot1q if we did we
+encapsulation type of dot1q 325.867183if we did we
 
 would use the command switch port trunk
 
-encapsulation dot1q now let's go to
+encapsulation dot1q 333.830376now let's go to
 
-switch 1 to do the same interface F 0 1
+switch 1 to do the same 337.062025interface F 0 1
 
-switch part mode trunk let's use a show
+switch part mode trunk 342.986842let's use a show
 
-command to confirm do show interface
+command to confirm 346.40453do show interface
 
-trunk as you can see
+trunk 349.945845as you can see
 
-f 0 1 is indeed trunking now pc 1 should
+f 0 1 is indeed trunking 353.730241now pc 1 should
 
-be able to pin PC 3 but not pc 2 and pc
+be able to pin PC 3 357.648823but not pc 2 and pc
 
-4 likewise pc 2 should be able to pin pc
+4 360.276045likewise pc 2 should be able to pin pc
 
-4 but not pc 1 in pc 3 let's try on pc 1
+4 but not pc 1 in pc 3 366.742355let's try on pc 1
 
-first ping 1001 12 the ping to pc -
+first 369.523253ping 10.0.1.12 the ping to pc 2
 
-doesn't work now - pc 3 ping 1000 13
+doesn't work 376.173696now to pc 3 ping 10.0.0.13
+381.429038
+it works 384.025984let's confirm on PC 2 387.321826ping
 
-it works let's confirm on PC to ping
-
-1000 11 the ping to PC 1 doesn't work
-
-now let's ping PC for which should work
-
-ping 1001 14 it works our trunk has been
+10.0.0.11 390.756389the ping to PC 1 doesn't work
+395.144521
+now let's ping PC 4 which should work
+397.975496
+ping 10.0.1.14 it works 405.461493our trunk has been
 
 successfully configured
-
+408.034864
 now Step five is to configure port
 
 security on the switch ports connected
 
-to PCs we need to enable sticky MAC
+to PCs 416.515786we need to enable sticky MAC
 
 address learning and change the default
 
 violation action of shutdown to restrict
+423.845611
+let's go on switch one 426.832016will be using the
 
-let's go on switch one will be using the
-
-same commands for each interface so
+same commands for each interface 429.683164so
 
 let's be more efficient by configuring
 
 an interface range instead of doing each
 
-one separately interface range f0 2 to 3
-
+one separately 436.031805interface range f0 2 to 3
+440.827983
 now we're in interface range
 
-configuration mode both interfaces are
+configuration mode 444.336898both interfaces are
 
 already explicitly configured as access
 
-ports so we don't have to do that this
+ports 448.962244so we don't have to do that this
 
-time switch port port security
-
-now port security is enabled let's
+time 450.67712switch port port security
+453.907902
+now port security is enabled 456.35315let's
 
 configure sticky MAC address learning
-
+458.88629
 switch port port security MAC address
 
-sticky finally let's change the
+sticky 462.401569finally let's change the
 
-violation action to restrict which
+violation action to restrict 466.524584which
 
 blocks offending traffic but does not
 
-shut down the port that is done with
+shut down the port 470.065533that is done with
 
-this command switch port port security
+this command 472.388084switch port port security
 
-violation restrict now let's do the same
+violation restrict 477.385688now let's do the same
 
-on switch to again I'll configure an
+on switch 2 480.128705again I'll configure an
 
-interface range interface range F 0 2 to
+interface range 483.593192interface range F 0 2 to
 
-3 switch port port security switch port
+3 488.191279switch port port security switch port
 
-port security MAC address sticky switch
+port security MAC address sticky 494.642262switch
 
 port port security violation restrict
-
+498.383218
 there we go step 5 is now complete
-
+502.305852
 step six is to configure inter VLAN
 
 routing with the router on a stick
 
-method router on a stick
+method 510.707798router on a stick
 
 involves configuring sub interfaces on a
 
-router one for each VLAN required we'll
+router 
+
+
+
+
+
+
+515.274418
+
+one for each VLAN required we'll
 
 do that on our ones g00 interface which
 
@@ -351,7 +360,7 @@ default gateway addresses i've pre
 
 configured on the pcs in this lab let's
 
-set it to IP address 1001 255.255.255.0
+set it to IP address 10.0.1. 255.255.255.0
 
 okay that's it now let's configure the
 
@@ -359,7 +368,7 @@ sub interface for VLAN 24 interface g0
 
 0.24 encapsulation dot1q 24 IP address
 
-1001 one 255.255.255.0 our inter VLAN
+10.0.1. 255.255.255.0 our inter VLAN
 
 routing is now complete
 
@@ -373,19 +382,19 @@ check I'll ping from PC 1 and then from
 
 PC 2 on PC 1 let's ping PC 2 first ping
 
-1001 12 it works next PC 3 ping 1000 13
+10.0.1.12 it works next PC 3 ping 10.0.1.13
 
 it works
 
-finally PC for ping 1001 dot 14 it works
+finally PC for ping 10.0.1.14 it works
 
 as well now let's do the same on PC to
 
-first stop in PC 1 ping 1000 11 it works
+first stop in PC 1 ping 10.0.1.11 it works
 
-PC 3-pin 1000 13 it works too
+PC 3-pin 10.0.1.13 it works too
 
-finally I'll ping PC for ping 1001 14 it
+finally I'll ping PC for ping 10.0.1.14 it
 
 works as well
 
