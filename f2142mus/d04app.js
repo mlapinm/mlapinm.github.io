@@ -1,5 +1,8 @@
 $(() => {
-    $('.log3').text(333)
+  $('.log3').text()
+  // let num = 33.33
+  // $('.log3').text(num.toFixed(6))
+    
     
     var audio = $('.audio')[0]
     let timerId = null
@@ -372,7 +375,7 @@ $(() => {
             current = audio.currentTime 
             $('.log2').text('' + current)
             $('.log2').text('' + timeToMinut(current))
-            appendText(timeToMinut(current) + ' ' + current)
+            appendText(timeToMinut(current) + ' ' + current.toFixed(6))
             audio.pause()
 
         }
@@ -420,7 +423,8 @@ $(() => {
         
     audio.addEventListener('pause', function(ev){
         pause = true
-        appendText(timeToMinut(current) + ' ' + current)
+        current = current.toFixed(6)
+        // appendText(timeToMinut(current) + ' ' + current)
         navigator.clipboard.writeText(current + ' ')
 
     });
