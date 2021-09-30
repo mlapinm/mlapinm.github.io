@@ -1,9 +1,9 @@
-
+0.0
 welcome to this free CCNA packet tracer
 
-practice lab you can download the lab
+practice lab 4.303783 you can download the lab
 
-file from the link in the description if
+file from the link in the description 7.763039 if
 
 you like these labs please consider
 
@@ -11,63 +11,63 @@ supporting me via my patreon or the
 
 cryptocurrency options in the
 
-description this lab uses the same
+description 15.320696 this lab uses the same
 
 topology as the previous lab number 20
-
+21.30342 
 whereas lab 20 had you configured
 
-various technologies this lab requires
+various technologies 25.130751 this lab requires
 
 you to troubleshoot several
 
 configuration errors to restore
 
 connectivity between pcs 1 2 3 & 4
+33.293928 
+troubleshooting is a valuable skill 36.438605 and
 
-troubleshooting is a valuable skill and
-
-also good practice for the exam as you
+also good practice for the exam 38.591553 as you
 
 will most likely encounter some sort of
 
-troubleshooting lab in your exam in this
+troubleshooting lab in your exam 43.003835 in this
 
 video I won't go through the exact
 
 troubleshooting method I would use to
 
-fix the topology there is somewhat of an
+fix the topology 49.089114 there is somewhat of an
 
-art to troubleshooting and you can go
+art to troubleshooting 52.404091 and you can go
 
-about it in many ways instead I will
+about it in many ways 54.563013 instead I will
 
 just show you the configuration errors
 
-one by one however it is important to
+one by one 58.39374 however it is important to
 
 have some sort of system to troubleshoot
-
+62.271893 
 try to complete the lab yourself first
 
 then continue watching this video if you
 
 can't find and fix all of the
 
-configuration errors or watch it after
+configuration errors 70.135207 or watch it after
 
-to check your solution first let's try
+to check your solution 72.519729 first let's try
 
 to ping from pc1 and see if it can reach
 
-the other pcs paint no.1 dot 12 can't
+the other pcs 79.778649 ping no.1 dot 12 can't
 
-reach PC 2 ping 1000 13 can't reach PC 3
+reach PC 2 ping 10.0.0.13 can't reach PC 3
+95.666926 
+and ping 10.0.1.14 98.885968 can't reach PC 4 103.211489 so PC
 
-and paint no.1 14 can't reach PC 4 so PC
-
-1 can't reach any of the other pcs there
+1 can't reach any of the other pcs 106.108577 there
 
 are multiple miss configurations in this
 
@@ -95,7 +95,7 @@ address learning is supposed to be
 
 configured but instead a secure MAC
 
-address of áááá áááá áááá is configured
+address of 10.0.1. is configured
 
 let's fix that con 14 interface f0 - no
 
@@ -111,7 +111,7 @@ port security MAC address sticky ok now
 
 let's try to ping from pc1 again just a
 
-PC to ping 1001 dot 12 it doesn't work
+PC to ping 10.0.1.12 it doesn't work
 
 but let's go back to switch 1 again do
 
@@ -149,7 +149,7 @@ incorrect it should be 24 not - lets fix
 
 those errors con 40 interface G 0 0 13
 
-IP address 1001 255.255.255.0 note that
+IP address 10.0.0.1 255.255.255.0 note that
 
 you don't have to remove the previous IP
 
@@ -173,11 +173,11 @@ inter VLAN routing they should be able
 
 to reach each other I'll go on PC one to
 
-try paying 1000 1.12 there we go just to
+try paying 10.0.1.12 there we go just to
 
 confirm
 
-let's try pc3 to ping 1000 13 doesn't
+let's try pc3 to ping 10.0.0.13 doesn't
 
 work
 
@@ -259,7 +259,7 @@ I'll ping PC 2 first although we already
 
 tested before and it worked
 
-ping 1001 12
+ping 10.0.1.12
 
 the ping works again next let's ping pc3
 
@@ -267,9 +267,9 @@ which didn't work previously because of
 
 the misconfigurations on switch to ping
 
-1000 13 now the ping works and finally
+10.0.0.13 now the ping works and finally
 
-I'll ping PC for pin 1001 14 it works as
+I'll ping PC for pin 10.0.1.14 it works as
 
 well this lab is now complete
 

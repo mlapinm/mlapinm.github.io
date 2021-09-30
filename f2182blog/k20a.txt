@@ -308,124 +308,127 @@ router
 
 515.274418
 
-one for each VLAN required we'll
+one for each VLAN required 517.056921 we'll
 
-do that on our ones g00 interface which
+do that on our ones g00 interface 520.959551 which
 
-is connected to switch ones g0 one
+is connected to switch ones g0 1
 
-interface we also must configure switch
+interface 523.955523 we also must configure switch
 
-ones g0 one interface as a trunk so
+ones g0 1 interface as a trunk 529.756868 so
 
-let's do that first interface g0 one
+let's do that first 531.382001 interface g0 1
+535.008668 
+switch port mode trunk 538.153583 okay that's all
 
-switch port mode trunk okay that's all
+we need to do on switch 1 540.681438 let's go to
 
-we need to do on switch one let's go to
+r1 now 542.922051 interface G 0 0 546.454184 now router
 
-r1 now interface G zero zero now router
-
-interfaces are shutdown by default as
+interfaces are shutdown by default 550.275507 as
 
 you may have noticed from the red port
 
 lights on the link between r1 and switch
 
-1 so first I'll type no shutdown to
+1 555.050479 so first I'll type no shutdown to
 
-enable it you could also do this at the
+enable it 559.859419 you could also do this at the
 
-end of the configuration now let's
+end of the configuration 563.114831 now let's
 
 create the sub interface for VLAN
 
-thirteen interface g0 0.13 note that the
+13 567.447238 interface g0 0.13 571.898897 note that the
 
 sub interface name doesn't actually have
 
-to match the v/line number but it's good
+to match the v/line number 576.481943 but it's good
 
-practice to do so to avoid confusion now
+practice to do so to avoid confusion 579.603296 now
 
 first we have to set the encapsulation
 
-and VLAN encapsulation dot1q thirteen
-
+and VLAN 584.093013 encapsulation dot1q thirteen
+587.652181 
 okay now let's set the IP address
-
+591.259115 
 according to our instructions and the
 
 default gateway addresses i've pre
 
-configured on the pcs in this lab let's
+configured on the pcs in this lab 596.994763 let's
 
-set it to IP address 10.0.1. 255.255.255.0
+set it too 599.431725 IP address 10.0.0.1 255.255.255.0
+606.467312 
+okay that's it 608.581805 now let's configure the
 
-okay that's it now let's configure the
-
-sub interface for VLAN 24 interface g0
+sub interface for VLAN 24 611.486613 interface g0
 
 0.24 encapsulation dot1q 24 IP address
 
-10.0.1. 255.255.255.0 our inter VLAN
+10.0.1.1 255.255.255.0 627.486923 our inter VLAN
 
 routing is now complete
-
+630.613541 
 finally let's ping between pcs to make
 
-sure everything works we should now have
+sure everything works 639.94416 we should now have
 
-full connectivity between all pcs to
+full connectivity between all pcs 643.825538 to
 
 check I'll ping from PC 1 and then from
 
-PC 2 on PC 1 let's ping PC 2 first ping
+PC 2 649.343095 on PC 1 let's ping PC 2 first ping
 
-10.0.1.12 it works next PC 3 ping 10.0.1.13
+10.0.1.12 657.233868 it works 659.893286 next PC 3 ping 10.0.0.13
 
 it works
+669.143173 
+finally PC 4 ping 10.0.1.14 it works
 
-finally PC for ping 10.0.1.14 it works
-
-as well now let's do the same on PC to
-
-first stop in PC 1 ping 10.0.1.11 it works
-
-PC 3-pin 10.0.1.13 it works too
-
-finally I'll ping PC for ping 10.0.1.14 it
+as well 679.859202 now let's do the same on PC 2
+682.68006 
+first stop in PC 1 ping 10.0.0.11 it works
+692.846181 
+PC 3-pin 10.0.0.13 it works too
+702.284269 
+finally I'll ping PC 4 ping 10.0.1.14 it
 
 works as well
-
+711.355959 
 we have full connectivity between all
 
-computers that's all for this lab
-
-thank you for watching I hope this lab
+computers 714.33063 that's all for this lab
+716.267636 
+thank you for watching 720.512622 I hope this lab
 
 and video have been helpful for you
-
+723.173537 
 please subscribe for future labs like
 
-this which will be released weekly if
+this 726.420785 which will be released weekly 728.173667 if
 
 you have requests for any specific labs
 
-let me know in the comment section if
+let me know in the comment section 732.883367 if
 
-you want to support my channel please
+you want to support my channel 735.727581 please
 
 consider contributing to my patreon
-
-patreon comm / Jeremy's IT lab I accept
+738.322142 
+patreon comm / Jeremy's IT lab 741.658832 I accept
 
 Bitcoin and aetherium donations via the
 
-addresses in the description I am also a
+addresses in the description 747.271234 I am also a
 
-brave verified publisher and accept bat
+brave verified publisher 751.149801 and accept bat
 
 or basic attention token donations in
 
 the brave browser
+755.935802 
+755.935802 
+755.935802 
