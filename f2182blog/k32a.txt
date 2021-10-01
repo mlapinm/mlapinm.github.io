@@ -1,160 +1,161 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.473874 you can download the lab
+file from the link in the description 7.539894 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description in this lab we will
+description 15.000561 in this lab we will
 configure the system clock including the
 timezone as well as Network Time
-Protocol or NTP on three routers this
+Protocol or NTP on three routers 24.988374 this
 lab will only cover the absolute basics
-of NTP configuration and in the
+of NTP configuration 29.681228 and in the
 following lab we will configure NTP
-authentication NTP is used to
-synchronize time across devices it's
+authentication 33.809019 NTP is used to
+synchronize time across devices 39.045290 it's
 very important to have synchronized time
-for a variety of reasons for example to
+for a variety of reasons 43.953040 for example to
 help identify when a particular problem
-occurred when looking through logs on a
-device in this lab we will manually
+occurred 47.912956 when looking through logs on a
+device 49.954414 in this lab we will manually
 configure the time on r1 and then use it
 as an NTP server for r2 to sync it's
-time - we will then configure r3 to sync
-it's time to r2 and our network devices
-will have synchronized time first let's
-set the clock on r1 enable show clock
-this command is used to display the time
-of the device this is the default time
+time too 59.288685  we will then configure r3 to sync
+it's time to r2 63.329622 and our network devices
+will have synchronized time 66.256497 first let's
+set the clock on r1 70.553872 enable show clock
+75.236413 this command is used to display the time
+of the device 78.455538 this is the default time
 but where is it getting this time
-here's another useful command show clock
-detail now we can see the time source
-which is the hardware calendar Cisco
+82.401705 here's another useful command show clock
+detail 87.483621 now we can see the time source
+90.180350 which is the hardware calendar 91.872308 Cisco
 devices have a hardware calendar built
-into them and as you can see it is being
-used by default let's change that first
-let's set the time zone which is UTC by
-default this is done from global
-configuration mode compte clock time
-zone now let's check the next option we
+into them 96.115558 and as you can see it is being
+used by default 98.841329 let's change that 100.965829 first
+let's set the time zone 103.830308 which is UTC by
+default 105.929287 this is done from global
+configuration mode 109.637370 conf t clock time
+zone 114.218015 now let's check the next option 116.613015 we
 have to enter the name of the time zone
-I'm in Japan
-so I'll set it to jst now let's check
-the next option hours offset from UTC in
+119.885285 I'm in Japan
+so I'll set it to jst 124.364139 now let's check
+the next option 126.793285 hours offset from UTC 130.045910 in
 my case jst is 9 hours ahead
-of UTC so 9 the next option is minutes
-offset from UTC which is zero in my case
+of UTC 135.039889 so 9 the next option is minutes
+offset from UTC 140.376014 which is zero in my case
 so I'll just leave them in it's option
-edit do show clock now as you can see
+edit 144.915618 do show clock 147.428305 now as you can see
 the time has changed and the time zone
-has changed now let's set the time
+has changed 152.042784 now let's set the time
 itself
-to do this we have to go back to
-privileged exec mode exit we can set the
-time with this command clock set now one
+154.373034 to do this we have to go back to
+privileged exec mode 158.758096 exit we can set the
+time with this command 162.654137 clock set now one
 important thing to remember is this the
 clock set command sets the time in UTC
-the time zone command we set before only
-affects how the time is displayed for
+172.938699 the time zone command we set before only
+affects how the time is displayed 177.947094 for
 example in my case jst is nine hours
-ahead of UTC so if I want to set the
+ahead of UTC 183.397802 so if I want to set the
 time to 9:00 p.m. jst I have to set the
 time as 12:00 p.m.
-as 12:00 p.m. UTC is 9:00 p.m.
-jst for this video I'll do that set the
-clock to 9:00 p.m. jst I won't set the
+191.347510 as 12:00 p.m. UTC is 9:00 p.m.
+jst 195.839094 for this video I'll do that set the
+clock to 9:00 p.m. jst 201.241906 I won't set the
 clock to the current time of my computer
 since I record the audio and video at
-separate times after clock set we have
+separate times 207.456990 after clock set we have
 to enter the time in the format shown
-here twelve o'clock is what I have to
-enter to set it to 9:00 p.m. jst the
+here 213.399156 twelve o'clock is what I have to
+enter to set it to 9:00 p.m. jst 220.050718 the
 next option is the month and date and we
 can enter them in either order
-aughh 21 for August 21st the date I am
+226.442489 aughh 21 for August 21st 230.583509 the date I am
 recording this video
-next is the year 2019 and that's it
-show clock detail as you can see I
+232.397884 next is the year 2019 and that's it
+show clock detail 242.373050 as you can see I
 configure 12:00 p.m.
 it's showing 9:00 p.m. or 21 in the
-24-hour format and the time source is
-now user configuration next let's
+24-hour format 251.542446 and the time source is
+now user configuration 254.425217 next let's
 configure our one as an NTP server which
-our two will sync it's time to call 50
+our two will sync it's time to 262.280634 conf t
 NTP
-now let's check the options here's one
-interesting quirk to set this router as
+now let's check the options 268.865945 here's one
+interesting quirk 271.401820 to set this router as
 an NTP server you don't use the NTP
-server command but rather the option
-above that NTP master NTP server will be
+server command 277.102007 but rather the option
+above that NTP master 281.281632  NTP server will be
 used on r2 to identify our one as an NTP
-server to sink it's time to ok so NTP
+server to sink it's time to 287.805173 ok so NTP
 master and the next option is what's
 called the stratum level indicating how
 authoritative the time on this server is
-the lower the number the more
-authoritative we are instructed however
-to use the default which will be 8 to
+298.671381 the lower the number the more
+authoritative 301.889151 we are instructed however
+to use the default which will be 8 306.572505 to
 use the default just enter the command
-as is without adding the stratum level
-at the end next let's configure our to
-to sink it's time to r1 using NTP enable
-show clock as you can see our twos time
-is the default and is set to UTC first
+as is 310.370505 without adding the stratum level
+at the end 312.632005 next let's configure our to
+to sink it's time to r1 using NTP 319.236817 enable
+show clock 324.468734 as you can see our twos time
+is the default and is set to UTC 329.871380 first
 I'll set the time zone to my local time
-zone jst again note that NTP does not
-sync the time zone it will sync the time
-in UTC and then it's up to you to
+zone jst again 334.378567 note that NTP does not
+sync the time zone 338.453921 it will sync the time
+in UTC 340.558067 and then it's up to you to
 configure which time zone that time is
-displayed in on your device compte clock
-time zone is t9 ok now let's configure
-NTP NTP server remember I said I'd use
+displayed in on your device 345.424087 conf t clock
+time zone is jst9 353.107357 ok now let's configure
+NTP 356.747377 NTP server remember I said I'd use
 this command on r2 to identify our one
 as an NTP server to sync our twos time
-to now we have to set the IP address of
-the NTP server let's use our ones
-address 192.168.1.1 exit now normally
+too 366.198711 now we have to set the IP address of
+the NTP server 371.072523 let's use our ones
+address 192.168.12.1 377.378856 exit now normally
 I'd use show commands immediately to
-check the configuration however NTP can
-take a very long time to synchronize for
-example show clock detail this still
+check the configuration 383.568710 however NTP can
+take a very long time to synchronize 388.407585 for
+example show clock detail 392.249460 this still
 shows the time source as Hardware
 calendar because NTP hasn't finished
 syncing yet
-in fact I'm gonna cut this video here
-and wait for NTP to sink welcome back
+398.671980 in fact I'm gonna cut this video here
+and wait for NTP to sink 403.242105 welcome back
 artoo has now synced its clock to our
-one show clock detail as you can see the
-time source is now ntp show ntp
-associations 192.168 12.1 is the address
-of r1 which we set as our ntp server the
-reference clock of 1 to 7.1 to 7.1.1 is
-our ones reference clock if you remember
-when studying about IP addresses the 1
-to 7 range is for loopback addresses so
-this is a loopback address on r1 okay
+one 409.443063 show clock detail as you can see the
+time source is now ntp 416.161959 show ntp
+associations 192.168.12.1 is the address
+of r1 which we set as our ntp server 426.290125 the
+reference clock of 127.127.1.1 is
+our ones reference clock 432.479205 if you remember
+when studying about IP addresses the 127 range is for loopback addresses 439.052829 so
+this is a loopback address on r1 441.747349 okay
 now let's configure r3 to sink it's time
-to are to enable coffee tea I'll set the
-time zone again first clock time zone is
-t9 now I'll configure r3 to sync to our
-to NTP server 192.168 23.2 exit now once
+to r2 448.254224 enable conf t I'll set the
+time zone again first 455.496953 clock time zone is
+jst9 460.416203 now I'll configure r3 to sync to r2 465.207119 NTP server 192.168.23.2 exit now once
 again I'll cut the video here to give
-NTP time to synchronize ok our 3 is now
-synced to our to show ntp associations
-here is the address of r2 and it's
+NTP time to synchronize 478.311347 ok our 3 is now
+synced to r2 483.840451 show ntp associations
+486.164076 here is the address of r2 and it's
 reference clock is our ones address of
-192.168.0.0 this lab and video have been
-helpful for you please subscribe for
-future labs like this which will be
-released weekly if you have requests for
+192.168.12.0 494.362742 this lab 500.700220 and video have been
+helpful for you 507.188928 please subscribe for
+future labs like this 510.191324 which will be
+released weekly 511.968740 if you have requests for
 any specific labs let me know in the
-comments section if you want to support
+comments section 516.829220 if you want to support
 my channel please consider contributing
 to my patreon patreon comm slots
-Jeremy's IT lab I accept Bitcoin and
+Jeremy's IT lab 525.164449 I accept Bitcoin and
 aetherium donations via the addresses in
 the description
-I am also a brave verified publisher and
+530.643386 I am also a brave verified publisher and
 accept bat or basic attention token
 donations in the brave browser
+539.223449 
+539.223449 
+539.223449 

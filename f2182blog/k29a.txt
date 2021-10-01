@@ -1,182 +1,182 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.049645 you can download the lab
+file from the link in the description 7.606561 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description this slab will be the first
+description 15.157956 this slab will be the first
 in a series of labs about access control
-lists or ACLs it's very important to be
-familiar with ACLs for the exam so make
-sure you're comfortable with them this
-first lab will be fairly simple we will
+lists or ACLs 22.596414 it's very important to be
+familiar with ACLs for the exam 26.898205 so make
+sure you're comfortable with them 28.856725 this
+first lab will be fairly simple 32.205704 we will
 configure numbered standard access lists
-ACLs can be numbered or named and
-standard or extended we will configure
+36.360934 ACLs can be numbered or named 39.587829 and
+standard or extended 41.830745 we will configure
 other types in future labs but for now
 let's focus on the simplest type the
-numbered standard ACL a standard ACL can
-be numbered from 1 to 99 make sure you
-remember that little fact for the exam 1
+numbered standard ACL 49.148432 a standard ACL can
+be numbered from 1 to 99 53.621244 make sure you
+remember that little fact for the exam 56.601348 1
 to 99 is for standard ACLs a standard
-ACL controls traffic based only on the
-source address on the other hand an
+ACL 59.545493 controls traffic based only on the
+source address 64.835597 on the other hand an
 extended ACL can control traffic based
-on the source and destination address as
+on the source and destination address 71.481138 as
 well as other things which we will look
-at in future labs in this lab we have to
+at in future labs 74.917013 in this lab we have to
 configure these standard ACLs to achieve
-2 requirements only the 192.168.1.0 / 24
+2 requirements 80.647242 only the 192.168.1.0 / 24
 network should be able to access server
-1 and PC 4 should not be able to
+1 87.535971 and PC 4 should not be able to
 communicate with the 192.168.1.0 24
-network to achieve the first requirement
-let's go on our - now you may wonder why
+network 93.810241 to achieve the first requirement
+let's go on r2 now you may wonder why
 configure r2 as opposed to r1
-well standard ACLs should be configured
+104.021115 well standard ACLs should be configured
 as close to the destination as possible
-if we configure it closer to the source
-for example on r1 we may inadvertently
+109.986365 if we configure it closer to the source
+for example on r1 114.386323 we may inadvertently
 block traffic that we don't want to
-block since the standard ACL only looks
-at the source address in this case the
+block 118.449177 since the standard ACL only looks
+at the source address 121.559468 in this case the
 destination is server 1 so we will
-configure the ACL on our to enable
-compte
+configure the ACL on r2 129.228884 enable
+conf t
 to configure the numbered ACL use the
-command access list now also the options
-with the context-sensitive help as you
+command access list 138.598009 now also the options
+with the context-sensitive help 142.240675 as you
 can see 1 to 99 is the range for a
 standard ACL you can also see the range
-for extended ACLs 100 to 199 I'll use
-the number 1 now let's check the next
-option we can deny permit or add a
-remark remarks are useful when on a
+for extended ACLs 100 to 199 151.874862 I'll use
+the number 1 154.198528 now let's check the next
+option 156.771923 we can deny permit or add a
+remark 160.516715 remarks are useful when on a
 large network you have large amounts of
-ACLs so you can identify what each ACL
+ACLs 166.378881 so you can identify what each ACL
 is for when looking at the configuration
 later
-I won't configure one now however we
+171.473048 I won't configure one now  however 174.757901 we
 want to allow only the 192.168.1.0 / 24
-network to access the server I'll use a
+network to access the server 181.264588 I'll use a
 permit statement first to allow the
-192.168.1.0 / 24 Network now let's check
-the options again I can input an IP
-address I can tell it to permit any
+192.168.1.0 / 24 Network 187.460025 now let's check
+the options again 192.130212 I can input an IP
+address 194.824587 I can tell it to permit any
 source or I can specify a single host
-let's put in an IP address 192.168.1.1 X
-top ssin wildcard bits ACLs use a
-wildcard mask as opposed to a standard
-subnet mask I'm not going to explain
+200.194795 let's put in an IP address 192.168.1.0 205.160420 X
+ wildcard bits 209.681002 ACLs use a
+wildcard mask 212.418293 as opposed to a standard
+subnet mask 214.614834 I'm not going to explain
 exactly how these work here but a
 wildcard mask is an inverse subnet mask
-so if a bit is 1 or 0 in a subnet mask
+220.960375 so if a bit is 1 or 0 in a subnet mask
 its equivalent bit in a wildcard mask
-would be 0 or 1 respectively if you have
+would be 0 or 1 respectively 229.264604 if you have
 no idea what that means I recommend
 reading up on wildcard masks to get
-familiar with them anyway the subnet
+familiar with them 234.922020 anyway the subnet
 mask for a / 24 Network is 255.255.255.0
-so the wild-card mask is 0 0 255 ok
-that's it we have created the ACL which
-permits the 192.168.1.0 / 24 network now
+243.566708 so the wild-card mask is 0 0.0.255 ok
+248.034708 that's it we have created the ACL which
+permits the 192.168.1.0 / 24 network 256.580187 now
 do we have to create another statement
 in this ACL to deny everything else
-actually we don't at the end of every
+262.868062 actually we don't at the end of every
 ACL there is an employee
-deny all statement meaning everything
+deny all statement 269.939103 meaning everything
 that doesn't apply to a previous entry
-in the ACL will be denied do show access
+in the ACL will be denied 275.768061 do show access
 lists as you can see that deny all
-doesn't actually appear in the ACL but
+doesn't actually appear in the ACL 283.892311 but
 when we tried to ping later it will work
-as intended so we have created the ACL
-is that all we have to do no we have to
-apply it to an interface following the
+as intended 287.746477 so we have created the ACL
+is that all we have to do 293.733977 no we have to
+apply it to an interface 297.045810 following the
 rule of applying a standard ACL as close
-to the destination as possible let's
+to the destination as possible 302.922122 let's
 apply it to the f00 interface interface
-f00 you can apply an ACL to an interface
-with this command IP access group now
+f00 308.399913 you can apply an ACL to an interface
+with this command 312.621621 IP access group 315.234912 now
 I'll type 1 the number of the ACL we
-created now let's check the options in
+created 319.167974 now let's check the options 321.322974 in
 or out which do you think is appropriate
-the answer is out because we aren't
+325.173161 the answer is out 327.403513 because we aren't
 filtering traffic coming in from this
-interface we are filtering traffic going
+interface 331.290013 we are filtering traffic going
 out from this interface towards server 1
-ok we have made and applied our ACL
-let's test this ACL first before moving
-on I'll go on PC one PC one should be
-able to reach the server ping 192.168
-3.1 hundred
-as expected the ping works now let's try
-from the 192.168.0 pc 3 pc 3 should not
-be able to reach the server again even
+335.479513 ok we have made and applied our ACL
+340.315012 let's test this ACL first before moving
+on 343.417074 I'll go on PC one PC 345.581532 one should be
+able to reach the server 348.774115 ping 192.168.3.100
+353.387030 as expected the ping works 361.298675 now let's try
+from the 192.168.2.0 network  pc 3 367.209507 pc 3 should not
+be able to reach the server 370.971944 again even
 though we didn't configure the ACL
-explicitly to deny any traffic it will
+explicitly to deny any traffic 376.746360 it will
 by default deny any traffic that doesn't
 match the entry permitting the
-192.168.1.0 / 24 network ping 192.168.1
-hundred immediately we get a response
+192.168.1.0 / 24 network 384.545401 ping 192.168.3.100 immediately we get a response
 from r2 saying the host is unreachable
-now let's satisfy the second requirement
-PC 4 should not be able to communicate
-with 192.168.1.0 / 24 network let's go
-on r1 this time enable coffee/tea access
-list 1 now this time let's create a
-denies statement let's check the next
-options since we are just denying one
-host let's select that and type in the
-address 192.168.1.1 at the end of an ACL
-so this ACL will deny PC 4 and if the
-traffic comes from anywhere else it will
-deny it also that's not what we want
-let's create a statement to permit
-everything else access list 1 permit any
-do show access lists so ACLs are read
-from top to bottom if traffic comes from
-192.168 2.14 it will be denied and this
-permit any won't apply if traffic comes
-from anywhere else however it won't be
+393.802546 now let's satisfy the second requirement
+400.522254 PC 4 should not be able to communicate
+with 192.168.1.0 / 24 network 407.007483 let's go
+on r1 this time 410.114128 enable conf t access
+list 1 416.137961 now this time let's create a
+denies statement 420.304169 let's check the next
+options 423.286669 since we are just denying one
+host let's select that427.937064  and type in the
+address 192.168.1.14 at the end of an ACL
+441.996978 so this ACL will deny PC 4 445.301478 and if the
+traffic comes from anywhere else 447.540894 it will
+deny it also 449.825227 that's not what we want
+451.410643 let's create a statement to permit
+everything else 454.069997 access list 1 permit any
+457.295747 do show access lists 459.949537 so ACLs are read
+from top to bottom 463.469787 if traffic comes from
+192.168.2.14 467.435099 it will be denied and this
+permit any won't apply 471.086078 if traffic comes
+from anywhere else however 473.868244 it won't be
 denied and then our permit any statement
-will allow it through the implicit deny
-any still exists but nothing will get
-that far because this permit any will
+will allow it through 478.377785 the implicit deny
+any still exists 481.635846 but nothing will get
+that far 483.634221 because this permit any will
 catch everything that the first
 statement doesn't
-now let's apply the ACL f00 is closest
-to the destination so interface f00 IP
-access group one out before we test this
+487.290866 now let's apply the ACL 491.895096 f00 is closest
+to the destination so interface f00 497.411679 IP
+access group one out 500.313929 before we test this
 what do you think would happen if we
 applied the ACL inbound on f10 as
-opposed to outbound on f00 it would
+opposed to outbound on f00 509.707241 it would
 prevent pc 4 from reaching anywhere
 outside of its own subnet here because
 of any traffic sourced from pc 4 enters
 our ones f10 interface it will be
-dropped ok let's test i'll go on pc 3
-again first and I'll ping pc 1 ping
-192.168.1.1 ok it works as expected
+dropped 520.573491 ok let's test 522.825199 i'll go on pc 3
+again first and I'll ping pc 1 527.037636 ping
+192.168.1.12 ok it works as expected
 now let's try from pc 4 which shouldn't
-be able to reach pc 1 paying 192.168.1
-11 again we get a message from r1 saying
+be able to reach pc 1 539.696906 ping 192.168.1.11 545.278406 again we get a message from r1 saying
 that the host is unreachable
-we have successfully used numbered
+550.859822 we have successfully used numbered
 standard ACLs to achieve the
-requirements that's all for this lab
-thank you for watching I hope this lab
+requirements 555.409322 that's all for this lab
+557.197988 thank you for watching I hope this lab
 and video have been helpful for you
-please subscribe for future labs like
-this which will be released weekly if
+564.874654 please subscribe for future labs like
+this which will be released weekly 569.619508 if
 you have requests for any specific labs
-let me know in the comment section if
+let me know in the comment section 574.235570 if
 you want to support my channel please
 consider contributing to my patreon
-patreon comm slash Jeremy's IT lab I
+patreon comm slash Jeremy's IT lab 582.938090 I
 accept Bitcoin and aetherium donations
-via the addresses in the description I
+via the addresses in the description 588.522173 I
 am also a brave verified publisher and
 accept bat or basic attention token
 donations in the brave browser
+598.485985 
+598.485985 
+598.485985 

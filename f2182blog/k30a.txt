@@ -1,118 +1,119 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.689582 you can download the lab
+file from the link in the description 8.325894 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description in this lab the second of
-our labs focusing on ACLs we will
-configure extended ACLs unlike standard
+description 15.861477 in this lab the second of
+our labs focusing on ACLs 21.882310 we will
+configure extended ACLs 24.374830 unlike standard
 ACLs which only filter traffic based on
-the source IP address extended ACLs can
+the source IP address 30.772476 extended ACLs can
 filter on things like protocol source IP
-address and destination IP address our
+address and destination IP address 37.710059 our
 task is to configure and apply a single
-extended ACL to allow only pc-12 access
-server one and only hosts on the 192.168
-204 network to access server two first
-where should I apply the ACL the general
+extended ACL to allow only pc-1 to access
+server one 46.553412 and only hosts on the 192.168.2.0/24 network to access server 2 53.778785 first
+where should I apply the ACL 58.118764 the general
 rule is to apply extended ACLs as close
-as possible to the source as opposed to
+as possible to the source 63.526451 as opposed to
 standard ACLs which should be applied as
-close as possible to the destination I
-want to achieve this in a single ACL so
+close as possible to the destination 69.399367 I
+want to achieve this in a single ACL 73.437450 so
 I'll apply it to our ones s20 interface
-so let's go on our one an able CAUTI to
+77.095595 so let's go on r 1 79.984011 enable conf t
 create an extended ACL you begin with
 the same command as for standard ACLs
-access lists now I'll use
-context-sensitive help I mentioned this
+access lists 91.544280 now I'll use
+context-sensitive help 94.396571 I mentioned this
 in the previous video but remember that
 1 to 99 is the range for standard ACLs
 and 100 to 199 is the range for extended
-ACLs I'll go with 100 context-sensitive
-help again I'll choose permit to allow
-pc-12 access server 1 afterward I'll
+ACLs 105.659634 I'll go with 100 107.825050 context-sensitive
+help again 110.470987 I'll choose permit to allow
+pc-1 to access server 1 114.790070 afterward I'll
 create another statement to deny all
-other traffic to server 1 let's do
-contact sensitive help again now you can
+other traffic to server 1 120.111632 let's do
+contact sensitive help again 123.214965 now you can
 see that this is different than for
-standard ACLs here are a bunch of
+standard ACLs 127.356277 here are a bunch of
 protocols which you can use to filter
 traffic
-the general catch-all is IP so let's go
-with that let's check the options again
-now I'll choose host since we're
-filtering from one host 192.168.1 11
-next I'll enter host again and set the
-destination 192.168 3 dot 100 contact
-sensitive help again you can see there
+131.524089 the general catch-all is IP so let's go
+with that 136.400318 let's check the options again
+138.720026 now I'll choose host since we're
+filtering from one host 142.653026 192.168.1.11
+146.121213 next I'll enter host again and set the
+destination 192.168.3.100 153.531504 contact
+sensitive help again 156.466524 you can see there
 are other options but we'll end the
-command here ok so that's our first
-entry in the ACL now let's create
+command here 160.407753 ok so that's our first
+entry in the ACL 164.919836 now let's create
 another one to deny all other traffic to
-server 1 access list 100 deny IP any
-host 192.168.1 hundred this denies
-traffic from any host to server 1 and
+server 1 169.340690 access list 100 deny IP any
+host 192.168.3.100 177.652148 this denies
+traffic from any host to server 1 181.332314 and
 will apply to any traffic except PC 1
-now let's satisfy the second requirement
-we have to allow only hosts on the
-192.168 2's flash 24 network to access
-server 2 first let's create another
-permit statement access list 100 permit
-IP 192.168.20.10 168 3 dot 101 this
+184.353418 now let's satisfy the second requirement
+188.212876 we have to allow only hosts on the
+192.168.2.0/24 network to access
+server 2 196.282854 first let's create another
+permit statement 199.562666 access list 100 permit
+IP 192.168.2.0 0.0.0.255 192.168.3.101 213.977892 this
 command permits any hosts in the
-192.168.0 slash 24 network to access the
-host 192.168.1 o one which is server 2
-now lets deny all other traffic to
-server to access list 100 deny IP any
-host 192.168.0.1 o1 ok we have fulfilled
-both requirements now let's create one
+192.168.20.0 slash 24 network 219.460954 to access the
+host 192.168.1.1 223.595972 which is server 2
+224.974722 now lets deny all other traffic to
+server 2 228.762950 access list 100 deny IP any
+host 192.168.3.101 ok we have fulfilled
+both requirements 239.328490 now let's create one
 more statement to allow any other
-traffic remember at the end of any ACL
-there is an implicit deny any our
+traffic 244.155823 remember at the end of any ACL
+there is an implicit deny any 249.447510 our
 requirements didn't state to deny all
 other traffic so let's override that
-implicit deny any access list 100 permit
-IP any any that's it finally let's apply
+implicit deny any 254.906218 access list 100 permit
+IP any any 260.118384 that's it finally let's apply
 the ACL to r1
-s20 interface interface s20 IP access
+s20 interface 267.178238 interface s20 269.915717 IP access
 group 100 out
-now this ACL will apply to all outbound
-traffic on our ones s20 interface let's
-test it out from each PC I'll ping each
-server first PC one it should be able to
+273.356550 now this ACL will apply to all outbound
+traffic on our ones s20 interface 278.810717 let's
+test it out 280.957196 from each PC I'll ping each
+server 284.022529 first PC one it should be able to
 access server one but not server two
-ping 192.168.1 hundred it works next
-ping 192.168 3 dot 101 it doesn't work
-ok functioning as intended so far now PC
+289.719341 ping 192.168.3.100 294.758195  it works next
+ping 192.168.3.101 305.572278 it doesn't work
+307.401965 ok functioning as intended so far 310.460006 now PC
 2 it shouldn't be able to access server
-1 or server to pay 192.168.1 hundred
-doesn't work ping 192.168.1 o 1 doesn't
-work again now let's go on PC 3 it
+1 or server 2 315.839047  ping 192.168.3.100
+doesn't work 320.735859 ping 192.168.3.101 doesn't
+work again 325.383942 now let's go on PC 3 328.206337 it
 shouldn't be able to ping server 1 but
-it should be able to ping the server to
-pay 192.168.1 hundred doesn't work
-paying 192.168.1 o 1
-it works as expected finally PC four
+it should be able to ping the server 2
+332.753212 ping 192.168.3.100 doesn't work
+338.526044 ping 192.168.c
+it works as expected 349.784709 finally PC four
 which should be the same as PC three
-came one ninety two dot one sixty eight
-dot three dot one hundred doesn't work
-ping 192.168.1 oh one it works
-so our ACL is functioning as intended
-that's all for this lab thank you for
+354.948584 came 192.168.3.100 doesn't work
+vping 192.168.3.101 it works
+367.409040 so our ACL is functioning as intended
+369.934727 that's all for this lab 371.478352 thank you for
 watching I hope this lab and video have
-been helpful for you please subscribe
+been helpful for you 379.593185 please subscribe
 for future labs like this which will be
-released weekly if you have requests for
+released weekly 384.975560 if you have requests for
 any specific labs let me know in the
-comment section if you want to support
+comment section 389.425351 if you want to support
 my channel please consider contributing
 to my patreon patreon comm slash
-Jeremy's IT lab I accept Bitcoin and
+Jeremy's IT lab 398.079435 I accept Bitcoin and
 etherium donations via the addresses in
-the description I am also a brave
+the description 403.599872 I am also a brave
 verified publisher and accept bat or
 basic attention token donations in the
 brave browser
+412.539101 
+412.539101 
+412.539101 

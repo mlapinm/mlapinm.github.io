@@ -1,110 +1,111 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.075696 you can download the lab
+file from the link in the description 7.502437 if
 you like these labs please consider
 supporting me via my patreon where the
 cryptocurrency options in the
-description in this lab we will
+description 14.756163 in this lab we will
 configure rip version 2 on a network to
-allow full connectivity this is similar
-network to the static routing part to
-lab in that lab we had to configure full
-connectivity with static routes this lab
+allow full connectivity 22.278097 this is similar
+network to the static routing part 2
+lab 26.671865 in that lab we had to configure full
+connectivity with static routes 31.454445 this lab
 will demonstrate how much simpler it is
-to do so with the routing protocol I
+to do so with the routing protocol 36.045342 I
 have increased the font size of the CLI
 in the network diagram due to some
-comments let me know if the size is good
+comments 41.469296 let me know if the size is good
 or if it's still difficult to see in the
-video so currently the devices have all
+video 44.842341 so currently the devices have all
 been pre-configured with IP addresses
-but none of the PC should be able to pin
+51.016682 but none of the PC should be able to pin
 each other because no routing has been
-configured let's configure rip version 2
-on each of these routers on r1 first
-enable compte router rip first I'll
-enable a version 2 version 2 it's not
+configured 56.245834 let's configure rip version 2
+on each of these routers 60.190859 on r1 first
+62.527533 enable conf t router rip 68.559086 first I'll
+enable a version 2 72.255245 version 2 it's not
 necessary for this lab but I'll also
-disable auto summary which is a good
-habit no auto our one is connected to 3
-networks 1000 1200 and 1300 let's enable
-rip on each of those interfaces net
-10000 net
-1200 net 1300 now we also have to
+disable auto summary 77.919249 which is a good
+habit 79.433937 no auto 81.167271 r1 is connected to 3
+networks 10.0.0.0 12.0.0.0 and 13.0.0.0 90.441407 let's enable
+rip on each of those interfaces 93.035830 net
+10.0.0.0 net
+12.0.0.0 net 13.0.0.0 102.805630 now we also have to
 disable routing updates on interfaces
-connected to switches g02 in this case
-we will still advertise the network on
-the g0 to interface 10000 to other
-routers but because there is no router
+connected to switches 108.534522 g02 in this case
+110.945545 we will still advertise the network on
+the g0 to interface 10.0.0.0 to other
+routers 117.550208 but because there is no router
 in this direction it's not necessary to
-send updates out of this interface and
+send updates out of this interface 123.211369 and
 for security purposes it can be a good
-idea to stop these updates we can do
-that with this command passive interface
-g0 to
-okay that's it let's go on to our to
-enable compte router rip version 2 no
-oto r2 is connected to three networks
-2000 1200 and 2400 so let's configure
-rip on each of those interfaces net
-20000 net 12000 net 2400 now let's
-disable routing updates on g0 to passive
-interface g0 - that's all for our tea
-now let's move on to our 3 enable compte
-router rip version 2 no auto net 30000
-net 1300 net 3400 dato passive interface
-g0 - finally once more on our 4 enable
-compte router rip version 2 no auto net
-40000 net 2400 net 34000 passive
-interface g0 - ok now let's wait a bit
+idea to stop these updates 127.444661 we can do
+that with this command 129.568268 passive interface
+g0 2
+133.040996 okay that's it 135.174496 let's go on to r2
+138.081334 enable conf t router rip 144.921116 version 2 no
+outo r2 is connected to three networks
+151.289706 20.0.0.0 12.0.0.0 and 24.0.0.0 158.100229 so let's configure
+rip on each of those interfaces 161.747604 net
+20.0.0.0 net 12.0.0.0 net 24.0.0.0 171.763249 now let's
+disable routing updates on g0 2 175.937103 passive
+interface g0 2 179.209978 that's all for r2
+181.410290 now let's move on to r 3 enable conf t
+router rip version 2 no auto 196.769456 net 30.0.0.0
+net 13.0.0.0 net 34.0.0.0 auto passive interface
+g0 2 211.463226 finally once more on r 4 215.602226 enable
+conf t router rip version 2 no auto net
+40.0.0.0 net 24.0.0.0 net 34.0.0.0 237.771392 passive
+interface g0 2 ok 243.248121 now let's wait a bit
 for the routers to send all the routing
 updates to each other and learn the
-network this process is called
-convergence while we're waiting let's
-check out some stuff on our 4 and show
-IP protocols this is a very handy show
+network 247.257433 this process is called
+convergence 250.323516 while we're waiting let's
+check out some stuff on r 4 254.282599 and show
+IP protocols 258.790724 this is a very handy show
 command for checking information about
 whatever routing protocol you are using
-routing protocol is
+264.575453 routing protocol is
 rip as we configured here you can see
-the default timers rip remember these
+the default timers rip 272.373786 remember these
 especially for the test update timer of
 30 seconds invalid and hold-down timers
 of 180 seconds and flush timer of 240
-seconds
+seconds 284.642265 
 consult your study materials for
-detailed explanations of each you can
+detailed explanations of each 289.762473 you can
 also see information like which
 interfaces updates are being sent out on
-notice that the Gigabit Ethernet 0 2
-interface isn't here although we can see
+295.368014 notice that the Gigabit Ethernet 0 2
+interface isn't here 299.918639 although we can see
 it is advertising the network down here
-this is because we made it a passive
-interface which is indicated here we can
+303.643680 this is because we made it a passive
+interface 306.991200 which is indicated here 308.982804 we can
 also see which neighboring routers we
 are getting updates from and when we got
-the last update anyway let's go on PC
+the last update 315.229220 anyway let's go on PC
 one now and see if we can ping each
-other PC ping 2000 10 that's PC 2
-it works next let's ping pc3 ping 3000
-10 it works too finally PC for ping 4000
-10
-it works as well we have successfully
+other PC 322.467865 ping 20.0.0.10 that's PC 2
+330.580093 it works 338.360863 next let's ping pc3 341.091154 ping 30.0.0.10 it works too 352.012425 finally PC for ping 40.0.0.10
+it works as well 365.739925 we have successfully
 configured ripp to allow full
 connectivity throughout the network
-that's all for this lab thank you for
+370.454550 that's all for this lab 372.492529 thank you for
 watching I hope this lab and video have
-been helpful for you please subscribe
+been helpful for you 379.634445 please subscribe
 for future labs like this which will be
-released weekly if you have requests for
+released weekly 384.692653 if you have requests for
 any specific labs let me know in the
-comment section if you want to support
+comment section 389.284715 if you want to support
 my channel please consider contributing
 to my patreon patreon comm / Jeremy's IT
-lab I accept Bitcoin and aetherium
+lab 398.083903 I accept Bitcoin and aetherium
 donations via the addresses in the
-description I am also a brave verified
+description 403.701423 I am also a brave verified
 publisher and accept bat or basic
 attention token donations in the brave
 browser
+412.469257 
+412.469257 
+412.469257 
