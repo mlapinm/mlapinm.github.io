@@ -1,43 +1,43 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.298184 you can download the lab
+file from the link in the description 7.604396 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description in this lab we will take a
+description 15.305666 in this lab we will take a
 look at the routing information protocol
-known as rip rip is a dynamic routing
+known as rip 22.083035 rip is a dynamic routing
 protocol as opposed to the static
 routing we configured in the previous
-few labs in dynamic routing protocols
+few labs 28.675555 in dynamic routing protocols
 routers share information with each
 other to determine the best paths to
-destinations in the network rip is a
+destinations in the network 37.257468 rip is a
 very simple but limited routing protocol
-you probably won't find it in use in a
-real life networking scenario you'll
-rather find a EIGRP or OSPF however rip
+41.306790 you probably won't find it in use in a
+real life networking scenario 45.834710 you'll
+rather find a EIGRP or OSPF 49.389079 however rip
 is nice and simple and good for learning
-the basics of routing protocols and for
-setting up quick labs you should also be
-familiar with it for the test in this
+the basics of routing protocols 55.362969 and for
+setting up quick labs 57.285565 you should also be
+familiar with it for the test 60.628357 in this
 lab we will do some basic rip
 configurations on two routers r1 and r2
-try to complete the lab yourself first
+66.986836 try to complete the lab yourself first
 then continue watching this video if you
-have trouble or watch it after to check
+have trouble 72.758840 or watch it after to check
 your solution
-step one is to configure rip on r1 and
-r2 without enabling version two so we'll
-keep that rip version one I'll go on r1
-first enable compte we configure rip
-with this command router rip now our one
+75.147343 step one is to configure rip on r1 and
+r2 without enabling version two 83.104037 so we'll
+keep that rip version one 85.482525 I'll go on r1
+first 88.020809 enable conf t we configure rip
+with this command 95.413080 router rip 96.936878 now our one
 is only connected to one network
-192.168.1.0 so let's activate rip on
-that interface we can do that with the
-network command network 192.168.1.0 now
-let's go on our to enable compte router
+100.774801 192.168.1.0 so let's activate rip on
+that interface 105.433844 we can do that with the
+network command 108.067482 network 192.168.1.0 112.377320 now
+let's go on r2 114.907305 enable conf t router
 rip network 192.168.1.0 now we can
 activate rip on our two's two other
 interfaces with just one command that is

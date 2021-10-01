@@ -129,59 +129,62 @@ takes through the network
 367.614195 
 
 
-I'll trace to PC one do trace route 10.0.0.0
-11 as you can see it is indeed going to
+I'll trace to PC 1 369.821616 do trace route 10.0.0.11
+376.294140  as you can see it is indeed going to
 r2 before going to r3 and then ending up
-at PC one now let's simulate an
-interphase error I'll turn off the s30
-interface which is connected to our two
-interface s30 shutdown okay now do show
-IP route our rip routes are gone however
+at PC 1 384.639598 now let's simulate an
+interphase error 387.694668 I'll turn off the s30
+interface which is connected to r 2
+interface s30 shutdown 395.826337 okay now do show
+IP route 399.425154 our rip routes are gone 402.890784 however
 immediately the floating static route
 which we configured takes the place of
-the previous route to 10.0.0.0 let's try a
+the previous route to 10.0.0.0 409.825921 let's try a
 trace route from router 1 to PC 1 again
-do trace route 10.0.0.0 11 this time it goes
+415.463376 do trace route 10.0.0.11 420.704484 this time it goes
 straight to r3 and then ends up at PC 11
-I'm sorry PC 1 our floating static route
-is functioning exactly as intended now
-let's turn on this interface again no
+426.963798 I'm sorry PC 1 428.950173 our floating static route
+is functioning exactly as intended 432.295903 now
+let's turn on this interface again 435.177007 no
 shutdown
-what do you think will happen it can
+436.625389 what do you think will happen 439.158759 it can
 take a bit of time but hopefully as I'm
 talking the process will finish
-currently art 2 is regularly sending rip
+444.098598 currently art 2 is regularly sending rip
 advertisements of its route to 10.0.0.0 to
-r1 now that our ones s30 interface is up
-again when r1 receives one of those
-advertisements on the interface it will
+r1 451.907932 now that our ones s30 interface is up
+again 456.078674 when r1 receives one of those
+advertisements on the interface 459.849758 it will
 replace the floating static route in the
 routing table with the route learned by
-rip because the administrative distance
+rip 464.853939 because the administrative distance
 of RIP is 120 and the floating static
-route we configured has an ad of 121
-okay let's check do show IP route
-as you can see the floating static route
-is gone and now the RIP route is back in
+route we configured has an id of 121
+473.556057 okay let's check 476.234733 do show IP route
+478.514026 as you can see the floating static route
+is gone 483.098141 and now the RIP route is back in
 the routing table
-I hope this lab helped you understand a
+485.684773 I hope this lab helped you understand a
 little about administrative distance and
-floating static routes soon we will do
+floating static routes 491.855033 soon we will do
 more labs focusing on routing protocols
-like ew grpe and OSPF and also rip which
-we saw a little in this lab that's all
-for the lab thank you for watching I
+like egrp and OSPF and also rip 498.162812 which
+we saw a little in this lab 500.048814 that's all
+for the lab 501.789651 thank you for watching I
 hope this lab and video have been
-helpful for you please subscribe for
-future labs like this which will be
-released weekly if you have requests for
+helpful for you 507.700122 please subscribe for
+future labs like this 510.870462 which will be
+released weekly 512.669134 if you have requests for
 any specific labs let me know in the
-comment section if you want to support
+comment section 517.312649 if you want to support
 my channel please consider contributing
 to my patreon patreon comm slash
-Jeremy's IT lab I accept Bitcoin and
+Jeremy's IT lab 526.069445 I accept Bitcoin and
 etherium donations via the addresses in
-the description I am also a brave
-verified publisher and accept bat or
+the description 531.822736 I am also a brave
+verified publisher 535.563137 and accept bat or
 basic attention token donations in the
 brave browser
+540.482156 
+540.482156 
+540.482156 
