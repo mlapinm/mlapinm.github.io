@@ -1,159 +1,162 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.441302 you can download the lab
+file from the link in the description 8.104074 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description this lab will be similar to
+description 15.675164 this lab will be similar to
 the previous lab in which we use telnet
-to connect to a switch and router in
+to connect to a switch and router 23.075096 in
 this lab however we will use the more
-secure option SSH which stands for
-secure shell ssh is more secure because
+secure option SSH 28.612822 which stands for
+secure shell 30.163418 ssh is more secure because
 it encrypts packets between the devices
-so that even if the packets are
-intercepted by an attacker they can't be
-read there are a few extra steps
-involved in configuring SSH but it's not
-so complicated the four requirements are
+36.386534 so that even if the packets are
+intercepted by an attacker 39.764439 they can't be
+read 41.295479 there are a few extra steps
+involved in configuring SSH 46.394102 but it's not
+so complicated 47.994835 the four requirements are
 first you must use the hostname command
 to configure the hostname of the device
-to reinforce this I haven't
+56.005866 to reinforce this I haven't
 pre-configured the host names of the
-devices for this lab second you must
+devices for this lab 61.302971 second you must
 configure the DNS domain name using the
-IP domain name command third you must
+IP domain name command 68.618413 third you must
 generate the SSH key to be used to
-encrypt the packets and fourth SSH must
-be enabled on the vqi lines we will go
+encrypt the packets 74.281381 and fourth SSH must
+be enabled on the vti lines 78.639071 we will go
 through these steps and a couple others
-in this lab try to complete the lab
-yourself first then continue watching
+in this lab 82.963312 try to complete the lab
+yourself first 85.533388 then continue watching
 this video if you have trouble or watch
-it after to check your solution if you
+it after to check your solution 90.999633 if you
 haven't learned the commands necessary
 to complete the tasks yet in your
-studies feel free to watch this video to
+studies 95.915768 feel free to watch this video to
 learn them
-step one is to configure the host names
-of switch 1 and r1 this is a requirement
-for SSH so let's do that now on switch 1
-first enable comte hostname switch 1 now
-on r1 enable compte hostname r1 there we
-go step 2 is to configure that IP
-addresses indicated this is the same as
-in the previous lab I'll start on our 1
-first since we're already here interface
+98.534667 step one is to configure the host names
+of switch 1 and r1 104.746805 this is a requirement
+for SSH 107.723137 so let's do that now 109.163438 on switch 1
+first 111.544977 enable conf t hostname switch 1 118.657285 now
+on r1 enable conf t hostname r1 126.500177 there we
+go 128.742280 step 2 is to configure that IP
+addresses indicated 132.743981 this is the same as
+in the previous lab 135.022253 I'll start on our 1
+first since we're already here 138.588561 interface
 g00 IP address 192.168.1.1 255.255.255.0
-no shutdown because the interface is
-disabled by default now let's configure
-a switch ones VLAN 1 interface interface
-VLAN 1 IP address 192.168.1.1 4 5.0 no
-shutdown that's all for step 2 step 3 is
+148.089224 no shutdown because the interface is
+disabled by default 151.809330 now let's configure
+a switch ones VLAN 1 interface 156.700461 interface
+VLAN 1 IP address 192.168.1.2 4 255.255.255.0 no
+shutdown 170.083868 that's all for step 2 172.361119 step 3 is
 to configure a single user account on
-each device which we will use to login
-to the device when we SSH from pc1 on
+each device 179.394619 which we will use to login
+to the device when we SSH from pc1 184.023534 on
 switch 1 first exit username Cisco
-password CCNA I've said it many times
+password CCNA 191.085652 I've said it many times
 before but remember passwords are case
-sensitive now on our one exit username
-cisco password CCNA that's all for step
-3 step 4 is to configure a dns domain
-name on each device this is an another
-required step for configuring SSH and we
+sensitive 197.032271 now on r1 exit username
+cisco password CCNA 205.571587 that's all for step
+3 207.979048 step 4 is to configure a dns domain
+name on each device 214.415336 this is an another
+required step for configuring SSH 218.927526 and we
 will use a domain name of cisco.com for
-this lab this only requires one command
-here on our 1 first IP domain name
+this lab 223.433688 this only requires one command
+226.972464 here on r1 first 228.893685 IP domain name
 cisco.com
-that's it now on switch one IP domain
-name Cisco calm that's all for step four
-Step five is to generate the keys used
-to encrypt the packets this is done with
-this command crypto key generate RSA now
+233.483987 that's it 235.299358 now on switch 1 236.949232 IP domain
+name Cisco com 242.516940 that's all for step four
+244.682831 Step five is to generate the keys used
+to encrypt the packets 251.153486 this is done with
+this command 253.464683 crypto key generate RSA 258.412043 now
 we are asked for the modulus size the
 length of the keys used for the
 encryption and decryption process
-we're instructed to use 1024 there we go
-now let's do the same on our one crypto
-key generate RSA 1024 that's all for
+265.057786 we're instructed to use 1024 268.949657 there we go
+270.606586 now let's do the same on r 1 273.744951 crypto
+key generate RSA 1024 280.920911 that's all for
 step 5
-step six is now to configure the vty
-lines there are a few requirements and
-let's configure them one by one on our
-one first line vty 0 15 again meaning
-line 0 through 15 login local that's the
+282.502767 step six is now to configure the vty
+lines 289.890528 there are a few requirements and
+let's configure them one by one 293.351254 on our
+one first line vty 0 15 299.151696 again meaning
+line 0 through 15 login local 304.405024 that's the
 same command used last time meaning we
 will have to use the user account we
 created previously to log into the vty
-lines when we connect transport input
+lines when we connect 312.556345 transport input
 last time we use telnet now we'll enter
 SSH
-this will allow only SSH not telnet to
-be used to connect to the vty lines the
+318.689429 this will allow only SSH not telnet to
+be used to connect to the vty lines 324.870002 the
 third requirement for this lab is to
 terminate connections after five minutes
-of inactivity this is an important
-security measure it is done with this
-command exact timeout now I'll use the
-question mark any time you have to input
-some amount of time check the unit of
-time used for the commands you don't
+of inactivity 331.415334 this is an important
+security measure 334.028971 it is done with this
+command 336.392802 exact timeout now I'll use the
+question mark 340.683516 any time you have to input
+some amount of time 344.480616 check the unit of
+time used for the commands 347.272614 you don't
 want to enter 5 for 5 minutes if it ends
-up being 5 seconds in this case we can
+up being 5 seconds 352.190214 in this case we can
 see it is entered in minutes so I'll
-just enter 5 always remember that for
-commands involving time now I'll quickly
+just enter 5 357.693095 always remember that for
+commands involving time 361.803121 now I'll quickly
 hop on switch 1 and enter the same
-commands line vty 0 15 login local
+commands 367.150300 line vty 0 15 login local
 transport input ssh exec timeout 5
-that's all for step 6
-step seven is to enable SSH version 2
-version 2 improves on weaknesses of
-version 1 if you want to learn more
+381.010363 that's all for step 6
+382.959121 step seven is to enable SSH version 2
+389.594967 version 2 improves on weaknesses of
+version 1 392.804064 if you want to learn more
 about this sort of thing I recommend
 pursuing Cisco's security certification
-path where you will learn all about this
-sort of thing for now just remember that
+path 398.464446 where you will learn all about this
+sort of thing 401.634984 for now just remember that
 you should use SSH version 2 whenever
-possible you can enable it with this
-command exit IP SSH version 2 that's it
-now we'll do it on our one exit IP SSH
+possible 406.571666 you can enable it with this
+command 409.758915 exit IP SSH version 2 that's it
+415.322600 now we'll do it on r 1 418.088832 exit IP SSH
 version 2 that's it
-finally let's see if we can connect to
+426.321447 finally let's see if we can connect to
 the command line of each device from pc1
-by using SSH first let's see if telnet
+by using SSH 434.154856 first let's see if telnet
 works
-I'll try to tell net to switch one
-telnet 192.168.1.2 as you can see it
-doesn't work this is because of that
+439.610212 I'll try to tell net to switch one
+442.144376 telnet 192.168.1.2 as you can see it
+doesn't work 451.170359 this is because of that
 transport input SSH command we used
-before now let's try SSH that is done
-with this command SSH - L Cisco Cisco
+before 455.250715 now let's try SSH 458.953644 that is done
+with this command 460.723278 SSH - L Cisco Cisco
 being the username we are connecting
 with which we configured on switch 1 and
-R 1 followed by the IP address
-192.168.1.1 tur the password of CCNA in
-all caps and there we go we're on switch
-1 now I'll type exit and try r1 SSH - L
-Cisco 192.168.1.1 password of CCNA and
-now we're on our one take note of the
+R 1 470.570994 followed by the IP address
+192.168.1.2 the password of CCNA in
+all caps and there we go 481.394587 we're on switch
+1 482.655763 now I'll type exit and try r1 485.975417 SSH - L
+Cisco 192.168.1.1 password of CCNA 496.152611 and
+now we're on our one 498.529575 take note of the
 difference between the command used to
 tell net and the command used to SSH
-onto the switches and routers these are
+onto the switches and routers 506.222144 these are
 the standard commands used on windows
-anyway that's all for this lab
-thank you for watching I hope this lab
+509.253113 anyway that's all for this lab
+512.245117 thank you for watching I hope this lab
 and video have been helpful for you
-please subscribe for future labs like
-this which will be released weekly if
+518.530305 please subscribe for future labs like
+this 521.875335 which will be released weekly 523.605893 if
 you have requests for any specific labs
-let me know in the comment section if
+let me know in the comment section 528.297440 if
 you want to support my channel please
 consider contributing to my patreon
-patreon comm / Jeremy's IT lab I accept
+patreon comm / Jeremy's IT lab 536.984263 I accept
 Bitcoin and aetherium donations via the
-addresses in the description I am also a
+addresses in the description 542.730163 I am also a
 brave verified publisher and accept bat
 or basic attention token donations in
 the brave browser
+551.557429 
+551.557429 
+551.557429 

@@ -1,202 +1,205 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.640471 you can download the lab
+file from the link in the description 8.035683 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description in this lab we are going to
+description 15.795921 in this lab we are going to
 configure static routing to allow pc1 &
 pc2 to communicate with each other
-static routing as opposed to dynamic
+24.299320 static routing as opposed to dynamic
 routing involves manually configuring
 routes to networks that you want to
-reach as a network grows it quickly
+reach 32.266722 as a network grows it quickly
 becomes unfeasible to manually configure
 both primary and backup routes to each
-destination network however for small
+destination network 40.845451 however for small
 networks like this example here it is no
-problem even in large networks you will
+problem 45.373223 even in large networks you will
 often want to use static routes in
 combination with dynamic routing
 protocols like ERG RP and OSPF which we
-will practice in future labs try to
+will practice in future labs 57.061157 try to
 complete the lab yourself first then
 continue watching if you have trouble or
-watch the video after to check your
-solution if you haven't learned the
+63.041728 watch the video after to check your
+solution 66.034348 if you haven't learned the
 required commands to complete this lab
 yet in your studies feel free to watch
-this video to learn them note that no
+this video to learn them 73.526449 note that no
 static routes have been pre-configured
-in this lab I have only configured the
+in this lab 77.619929 I have only configured the
 default gateways of pc1 & pc2 being the
 g0 one interfaces of their respective
-routers step one is to configure the G
+routers 85.588898 step one is to configure the G
 zero zero and G zero one interfaces of
 r1 and r2 according to the network
-diagram and enable the interfaces there
+diagram 96.370854 and enable the interfaces 98.209211 there
 are three subnets in this network
-192.168.1.0 / 24 which includes pc 1
+101.539471 192.168.1.0 / 24 which includes pc 1
 switch 1 and r ones g0 one interface
-also 1000 / 24 which includes the G 0 0
-interfaces of r1 and r2 also
-192.168.20.10
-Artoo's G 0 1 interface let's configure
+110.416806 also 10.0.0.0 / 24 which includes the G 0 0
+interfaces of r1 and r2 118.965802 also
+192.168.20.10 /24
+Artoo's G 0 1 interface 128.401893 let's configure
 r1 first
-enable coffee tea interface g00 IP
-address 1001 255.255.255.0 no shut down
-okay so that's our ones g00 interface
-which is connected to our two now let's
-do the G zero one interface interface G
-zero 1 IP address 192.168.1.1
-255.255.255.0 no shutdown now let's
-configure our twos interfaces enable con
-40 interface G 0 0 IP address 1000 to
-255.255.255.0 no shutdown interface G 0
-1 IP address 192.168.1.1 5 5 0 no
-shutdown that's all for step 1
-step two is to ping from pc1 to our ones
-g0 one interface then progressively ping
+131.538455 enable conf t interface g00 IP
+address 10.0.0.1 255.255.255.0 no shut down
+146.847428 okay so that's our ones g00 interface
+which is connected to our two 153.069223 now let's
+do the G zero one interface interface 155.503941 G
+0 1 IP address 192.168.1.1
+255.255.255.0 no shutdown 166.127653 now let's
+configure r 2s interfaces 169.327316 enable conf t interface G 0 0 IP address 10.0.0.2
+255.255.255.0 no shutdown 185.217701 interface G 0
+1 IP address 192.168.2.1 255.255.255.0 no
+shutdown 195.590304 that's all for step 1
+197.425261 step two is to ping from pc1 to our ones
+g0 one interface 205.245964 then progressively ping
 toward PC two and see which pings
-succeed and which fail let's try that
-first our ones g0 one interface ping
+succeed and which fail 210.543976 let's try that
+212.740343 first our ones g0 one interface ping
 192.168.1.1 it works
-next our ones G 0 0 interface ping 1001
+225.498901 next our ones G 0 0 interface ping 10.0.0.1
 it works too
-now let's try our two SG 0 0 interface
-ping 1000 2
-this pink fails I won't bother pinging
+234.948164 now let's try our two SG 0 0 interface
+238.565099 ping 10.0.0.2
+this pink fails 249.429052 I won't bother pinging
 beyond here those things will fail as
-well why is that well for a pin to
+well 253.634072 why is that 255.310926 well for a pin to
 succeed
-you need to weigh connectivity PC one
+you need to weigh connectivity 260.216557 PC one
 needs to be able to reach the
 destination and the destination needs to
 know how to reach PC one to send the
-reply to the ping the first two pings we
+reply to the ping 268.570853 the first two pings we
 send to satisfy both requirements thus
-they worked PC one and our ones G zero
+they worked 273.837192 PC one and our ones G zero
 one interface are part of the same
-network thus they can reach each other
-PC one isn't part of the same network as
-our ones G zero zero interface but it
+network 278.557256 thus they can reach each other
+280.518528 PC one isn't part of the same network as
+our ones G zero zero interface 285.995634 but it
 sends the packet to its default gateway
-which I pre-configured as our ones G
-zero one interface then our one of
+288.992486 which I pre-configured as our ones G
+zero one interface 292.380386 then our one of
 course knows the destination because
-it's one of its other interfaces it can
+it's one of its other interfaces 297.901111 it can
 then send the ping back to PC one which
 is again directly connected to the same
 network as its G zero one interface
-that's why the first two pings worked
-now why did the third ping fail let's
-think about the path the ping takes PC
+305.289800 that's why the first two pings worked
+307.694434 now why did the third ping fail 311.203748 let's
+think about the path the ping takes 314.082751 PC
 one sends the ping to its default
-gateway our ones G zero one interface
-the destination is 1000 to which our one
+317.867565 gateway our ones G zero one interface
+320.041834 the destination is 10.0.0.2 which our one
 knows the way to because it's part of
 the same network as its G zero zero
-interface the 1000 / 24 network so it
+interface 329.147195 the 10.0.0.0 / 24 network 332.456081 so it
 sends the ping out of its G zero zero
-interface toward our two now the ping
+interface toward our two 338.267975 now the ping
 reaches our two however our two doesn't
 know how to send the reply back to PC
-one hour two has no route back to the
-192.168.1.0 / 24 network because we
-haven't configured any reps yet and it's
-not a directly connected network so
-that's why the ping fails I'll go on are
-too quickly to check exit show IP ripped
-as you can see the 192.168.1.0 network
+one 346.056864 r2 has no route back to the
+192.168.1.0 / 24 network 353.544302 because we
+haven't configured any reps yet and 356.315147 it's
+not a directly connected network 358.594721 so
+that's why the ping fails 361.124319 I'll go on are
+too quickly to check 363.560034 exit show IP ripped
+369.233707 as you can see the 192.168.1.0 network
 is not present
-now let's move on to step three
-basically we are going to do the same
-thing but from PC to can you guess which
-pings will work let's check on PC to
-first ping 192.168.1 r2 is g0 one
-interface it works next ping 1000 - R -
+378.103293 now let's move on to step three
+383.077619 basically we are going to do the same
+thing but from PC 2 387.028697 can you guess which
+pings will work 389.889384 let's check on PC 2
+392.051580 first ping 192.168.2.1 397.086695 r2 is g0 one
+interface 398.900305 it works next ping 10.0.0.2 R 2
 s G zero zero interface it works also
-now
-ping 1000 won are ones G zero zero
-interface it fails this is for the same
-reason as before PC - sends the ping to
+409.837997 now
+ping 10.0.0.1 414.112686 r1s G zero zero
+interface 416.257940 it fails this is for the same
+reason as before 425.587432 PC 2 sends the ping to
 r2 which then sends it to r1 but r1
-doesn't have a route back to PC - subnet
-in its routing table so the ping ends
+doesn't have a route back to PC 2 subnet
+in its routing table 435.410698 so the ping ends
 there
-step four is to configure static routes
+437.320954 step four is to configure static routes
 on r1 and r2 to allow PC one to reach PC
 two and vice versa
-we should also make sure we configure
+448.602044 we should also make sure we configure
 the route to the subnets meaning
-192.168.1.0 / 24 and 192.168 2.0 to the
-other PC meaning 192.168.1.1 / 32 and
-192.168 - 12 / 32 in this very small
+192.168.1.0 / 24 and 192.168 2.0 /24 to the
+other PC meaning 192.168.1.11 / 32 and
+192.168 1 12 / 32 471.901731 in this very small
 Network we only have to create one
-static route on each router on r1 we
-need a route to 192.168.20.10 / 24 okay
-let's do that on r1 first exit now we
+static route on each router 477.122616 on r1 we
+need a route to 192.168.2.0 / 24 485.109118 okay
+
+let's do that on r1 first 494.723567 exit now we
 create a static route with the command
-IP route now I'll use the question mark
+IP route 502.753170 now I'll use the question mark
 to show what comes next
-first is the destination prefix in this
-case it's 192.168 200 micro gain
-destination prefix mask it's slash 24 so
-that equals 255 255 255 0 question mark
-one more time now we have a list of
-options but really there are just two
-the option at the top of the list
+505.851118 first is the destination prefix in this
+case it's 192.168.2.0 513.266181 ? again
+514.474509 destination prefix mask 517.282627 it's slash 24 so
+that equals 255 255 255 0 523.444446 question mark
+one more time 525.809463 now we have a list of
+options 528.250252 but really there are just two
+530.304308 the option at the top of the list
 forwarding routers address means the
-next hop address in the route make sure
+next hop address in the route 537.583194 make sure
 this is an address the router knows how
-to get to if the router can't reach the
+to get to 541.201691 if the router can't reach the
 next hop address it obviously can't
-reach the destination if we choose this
+reach the destination 546.028631 if we choose this
 option the next hop address will be r2
-SG 0 0 interface 1000 to the other
+SG 0 0 interface 10.0.0.2 554.102057 the other
 options are to specify an interface
-meaning the exit interface we will send
+558.927235 meaning the exit interface we will send
 the packets out of on the way to the
-destination if we choose this option we
+destination 563.012428 if we choose this option we
 will use gigabit gigabit ethernet 0 0
-let's go with the first option of the
+568.909460 let's go with the first option of the
 next hop IP address
-1000 - okay
-that's it now let's check the routing
-table do show IP route here with an S
+573.111302 10.0.0.2 okay
+that's it 577.881884 now let's check the routing
+table 581.172356 do show IP route 583.795675 here with an S
 indicating static we see our route to
-the 192.168.0
-to the next hop address since we're
+the 192.168.2.0 / 24 network
+592.324551 to the next hop address 596.493612 since we're
 looking at the table anyway
-notice these other routes have C or L
-next to them C refers to a connected
-network in this case that 10000 / 24
-network and 192.168.1.2 for network l
+600.118678 notice these other routes have C or L
+next to them 603.647085 C refers to a connected
+network 607.686280 in this case that 10.0.0.0 / 24
+network 612.527726 and 192.168.1.0 24 network 615.861231 l
 refers to a local address on the router
-itself 1000 won and 192.168.1.1 the IP
+itself 621.010114 10.0.0.1 and 192.168.1.1 the IP
 addresses of the G 0 0 and G 0 1
-interfaces ok now let's configure the
-route on our two high ropes 192.168.1.0
-255.255.255.0 and now let's configure
+interfaces 629.740014 ok now let's configure the
+route on r2 635.268797 ip routes 192.168.1.0
+255.255.255.0 646.231031 and now let's configure
 the exit interface instead of the next
-hop address just to try it out G 0 0 ok
+hop address just to try it 651.358922 out G 0 0 653.534294 ok
 now we should be able to ping from pc1
-to pc2 let's go on pc 1 and try it out
-ping 192.168.20.10
-there we go the ping worked that's all
-for this lab thank you for watching I
+to pc2 659.401708 let's go on pc 1 and try it 662.699544 out
+ping 192.168.2.11
+668.691237 there we go 685.062991 the ping worked that's all
+for this lab 688.070218 thank you for watching 691.486549 I
 hope this lab and video have been
-helpful for you please subscribe for
+helpful for you 694.536703 please subscribe for
 future labs like this which will be
-released weekly if you have requests for
+released weekly 699.444099 if you have requests for
 any specific labs let me know in the
-comment section if you want to support
+comment section 704.289797 if you want to support
 my channel please consider contributing
 to my patreon patreon comm / Jeremy's IT
-lab I accept Bitcoin and aetherium
+lab 713.079543 I accept Bitcoin and aetherium
 donations via the addresses in the
-description I am also a brave verified
+description 718.563012 I am also a brave verified
 publisher and accept bat or basic
 attention token donations in the brave
 browser
+727.254291 
+727.254291 
+727.254291 
