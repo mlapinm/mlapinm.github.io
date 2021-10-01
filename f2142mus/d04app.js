@@ -345,6 +345,7 @@ $(() => {
             }else{
                 pause = false
             }
+            $('.log3').text('' + current)
             $('.log1').text( ' '
             + timeToMinut(current)+ '  ' + Math.floor(current) + t1)
         }, 500)
