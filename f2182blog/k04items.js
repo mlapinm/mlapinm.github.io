@@ -1,152 +1,92 @@
 let objs = [
   {
     "time": [
-      1.0,
-      4.0
+      0.0,
+      5.832196
     ],
     "en": [
-      "welcome to this free CCNA packet tracer"
+      "welcome to this free CCNA packet tracer practice lab"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный трассировщик пакетов CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
     ]
   },
   {
     "time": [
-      4.0,
-      7.0
+      5.832196,
+      9.461726
     ],
     "en": [
-      "practice lab you can download the lab"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "Практическая лаборатория вы можете скачать лабораторию"
+      "скачать лабораторный файл можно по ссылке в описании"
     ]
   },
   {
     "time": [
-      7.0,
-      9.0
+      9.461726,
+      18.220798
     ],
     "en": [
-      "file from the link in the description in"
+      "in this lab we will be working with two routers r1 and r2 and two switches switch 1 and switch 2"
     ],
     "ru": [
-      "файл по ссылке в описании в"
+      "В этой лабораторной работе мы будем работать с двумя маршрутизаторами r1 и r2 и двумя коммутаторами, коммутатором 1 и коммутатором 2."
     ]
   },
   {
     "time": [
-      9.0,
-      12.0
+      18.220798,
+      23.053658
     ],
     "en": [
-      "this lab we will be working with two"
+      "we will configure and test a serial connection between the two routers"
     ],
     "ru": [
-      "в этой лаборатории мы будем работать с двумя"
+      "мы настроим и протестируем последовательное соединение между двумя маршрутизаторами"
     ]
   },
   {
     "time": [
-      12.0,
-      16.0
+      23.053658,
+      28.479349
     ],
     "en": [
-      "routers r1 and r2 and two switches"
+      "note that I have already configured the host names of each of the devices beforehand"
     ],
     "ru": [
-      "маршрутизаторы r1 и r2 и два коммутатора"
+      "обратите внимание, что я уже заранее настроил имена хостов для каждого из устройств"
     ]
   },
   {
     "time": [
-      16.0,
-      20.0
+      28.479349,
+      30.995791
     ],
     "en": [
-      "switch 1 and switch 2 we will configure"
+      "try to complete the lab yourself first"
     ],
     "ru": [
-      "переключатель 1 и переключатель 2 мы настроим"
+      "сначала попробуйте пройти лабораторию самостоятельно"
     ]
   },
   {
     "time": [
-      20.0,
-      22.0
+      30.995791,
+      34.099378
     ],
     "en": [
-      "and test a serial connection between the"
+      "then continue watching this video if you have trouble"
     ],
     "ru": [
-      "и проверьте последовательное соединение между"
+      "тогда продолжайте смотреть это видео, если у вас возникнут проблемы"
     ]
   },
   {
     "time": [
-      22.0,
-      24.0
-    ],
-    "en": [
-      "two routers note that I have already"
-    ],
-    "ru": [
-      "два роутера обратите внимание, что я уже"
-    ]
-  },
-  {
-    "time": [
-      24.0,
-      26.0
-    ],
-    "en": [
-      "configured the host names of each of the"
-    ],
-    "ru": [
-      "настроил имена хостов каждого из"
-    ]
-  },
-  {
-    "time": [
-      26.0,
-      30.0
-    ],
-    "en": [
-      "devices beforehand try to complete the"
-    ],
-    "ru": [
-      "устройства заранее постарайтесь завершить"
-    ]
-  },
-  {
-    "time": [
-      30.0,
-      32.0
-    ],
-    "en": [
-      "lab yourself first then continue"
-    ],
-    "ru": [
-      "сначала пробуй себя, а потом продолжай"
-    ]
-  },
-  {
-    "time": [
-      32.0,
-      33.0
-    ],
-    "en": [
-      "watching this video if you have trouble"
-    ],
-    "ru": [
-      "посмотрите это видео, если у вас возникнут проблемы"
-    ]
-  },
-  {
-    "time": [
-      33.0,
-      38.0
+      34.099378,
+      37.066538
     ],
     "en": [
       "or watch after to check your solution"
@@ -157,392 +97,284 @@ let objs = [
   },
   {
     "time": [
-      38.0,
-      42.0
+      37.066538,
+      45.431644
     ],
     "en": [
-      "step one asks us to use CVP to discover"
+      "step one asks us to use CVP to discover which interfaces are used to connect the routers and switches"
     ],
     "ru": [
-      "на первом шаге нас просят использовать CVP для обнаружения"
+      "на первом шаге нас просят использовать CVP, чтобы узнать, какие интерфейсы используются для подключения маршрутизаторов и коммутаторов."
     ]
   },
   {
     "time": [
-      42.0,
-      44.0
+      45.431644,
+      53.234291
     ],
     "en": [
-      "which interfaces are used to connect the"
+      "if you have the option always show port labels and logical workspace in the Preferences menu of packet tracer enabled"
     ],
     "ru": [
-      "какие интерфейсы используются для подключения"
+      "если у вас есть опция всегда показывать метки портов и логическую рабочую область в меню Preferences при включенном отслеживании пакетов"
     ]
   },
   {
     "time": [
-      44.0,
-      47.0
+      53.234291,
+      55.786652
     ],
     "en": [
-      "routers and switches if you have the"
+      "the labels will appear next to the devices"
     ],
     "ru": [
-      "маршрутизаторы и коммутаторы, если у вас есть"
+      "метки появятся рядом с устройствами"
     ]
   },
   {
     "time": [
-      47.0,
-      49.0
+      55.786652,
+      57.795282
     ],
     "en": [
-      "option always show port labels and"
+      "but I have this option turned off"
     ],
     "ru": [
-      "опция всегда показывать метки портов и"
+      "но у меня эта опция отключена"
     ]
   },
   {
     "time": [
-      49.0,
-      51.0
+      57.795282,
+      65.096571
     ],
     "en": [
-      "logical workspace in the Preferences"
+      "we will use CDP or Cisco discovery protocol to identify the interfaces"
     ],
     "ru": [
-      "логическая рабочая область в настройках"
+      "мы будем использовать протокол обнаружения CDP или Cisco для идентификации интерфейсов"
     ]
   },
   {
     "time": [
-      51.0,
-      54.0
+      65.096571,
+      68.209152
     ],
     "en": [
-      "menu of packet tracer enabled the labels"
+      "CDP is a very useful tool"
     ],
     "ru": [
-      "в меню пакетного трассировщика включены метки"
+      "CDP - очень полезный инструмент"
     ]
   },
   {
     "time": [
-      54.0,
-      56.0
+      68.209152,
+      71.969467
     ],
     "en": [
-      "will appear next to the devices but I"
+      "and I will create a lab dedicated to using CDP in the future"
     ],
     "ru": [
-      "появится рядом с устройствами, но я"
+      "и я создам лабораторию, посвященную использованию CDP в будущем"
     ]
   },
   {
     "time": [
-      56.0,
-      59.0
+      71.969467,
+      75.173503
     ],
     "en": [
-      "have this option turned off we will use"
+      "but for this lab all we need to know is one command"
     ],
     "ru": [
-      "отключите эту опцию, мы будем использовать"
+      "но для этой лаборатории все, что нам нужно знать, это одна команда"
     ]
   },
   {
     "time": [
-      59.0,
-      63.0
+      75.173503,
+      78.333514
     ],
     "en": [
-      "CDP or Cisco discovery protocol to"
+      "that is show CDP neighbors"
     ],
     "ru": [
-      "CDP или протокол обнаружения Cisco для"
+      "это показать соседей CDP"
     ]
   },
   {
     "time": [
-      63.0,
-      67.0
+      78.333514,
+      81.059055
     ],
     "en": [
-      "identify the interfaces CDP is a very"
+      "let's give it a try on switch one first"
     ],
     "ru": [
-      "определить интерфейсы CDP очень"
+      "давай сначала попробуем переключиться"
     ]
   },
   {
     "time": [
-      67.0,
-      69.0
+      81.059055,
+      85.571686
     ],
     "en": [
-      "useful tool and I will create a lab"
+      "I'll type in able to enter privileged exec mode"
     ],
     "ru": [
-      "полезный инструмент и я создам лабораторию"
+      "Я введу возможность войти в привилегированный режим exec"
     ]
   },
   {
     "time": [
-      69.0,
-      72.0
+      85.571686,
+      88.506662
     ],
     "en": [
-      "dedicated to using CDP in the future but"
+      "this is where we use the command"
     ],
     "ru": [
-      "посвящен использованию CDP в будущем, но"
+      "здесь мы используем команду"
     ]
   },
   {
     "time": [
-      72.0,
-      74.0
+      88.506662,
+      90.417569
     ],
     "en": [
-      "for this lab all we need to know is one"
+      "show CDP neighbors"
     ],
     "ru": [
-      "для этой лаборатории все, что нам нужно знать, это один"
+      "показать соседей CDP"
     ]
   },
   {
     "time": [
-      74.0,
-      79.0
+      90.417569,
+      95.005788
     ],
     "en": [
-      "command that is show CDP neighbors let's"
+      "as you can see switch 1 is connected to r1"
     ],
     "ru": [
-      "команда, которая показывает соседей CDP, давайте"
+      "как вы можете видеть, переключатель 1 подключен к r1"
     ]
   },
   {
     "time": [
-      79.0,
-      82.0
+      95.005788,
+      100.969255
     ],
     "en": [
-      "give it a try on switch one first I'll"
+      "and the local interface meaning the interface on this device is fastethernet 0/1"
     ],
     "ru": [
-      "сначала попробуй переключиться, я"
+      "а локальный интерфейс означает, что интерфейс на этом устройстве - fastethernet 0/1"
     ]
   },
   {
     "time": [
-      82.0,
-      84.0
+      100.969255,
+      103.046601
     ],
     "en": [
-      "type in able to enter privileged exec"
+      "let's go to r1"
     ],
     "ru": [
-      "введите возможность войти в привилегированный exec"
+      "пойдем в r1"
     ]
   },
   {
     "time": [
-      84.0,
-      88.0
+      103.046601,
+      107.714236
     ],
     "en": [
-      "mode this is where we use the command"
+      "enable show CDP neighbors"
     ],
     "ru": [
-      "режим здесь мы используем команду"
+      "включить показывать соседей CDP"
     ]
   },
   {
     "time": [
-      88.0,
-      93.0
+      107.714236,
+      113.346247
     ],
     "en": [
-      "show CDP neighbors as you can see switch"
+      "our one is connected to switch 1 on the Fast Ethernet 0 interface"
     ],
     "ru": [
-      "показать соседей CDP, как вы видите переключатель"
+      "наш подключен к коммутатору 1 на интерфейсе Fast Ethernet 0"
     ]
   },
   {
     "time": [
-      93.0,
-      95.0
+      113.346247,
+      115.672844
     ],
     "en": [
-      ""
+      "but something's missing"
     ],
     "ru": [
-      ""
+      "но чего-то не хватает"
     ]
   },
   {
     "time": [
-      93.0,
-      95.0
+      115.672844,
+      120.699267
     ],
     "en": [
-      ""
+      "where's our - well because I have linked lights enabled on packet tracer"
     ],
     "ru": [
-      ""
+      "где наш - ну, потому что я подключил огни на трассировщике пакетов"
     ]
   },
   {
     "time": [
-      95.0,
-      98.0
+      120.699267,
+      123.420657
     ],
     "en": [
-      "interface meaning the interface on this"
+      "you might have noticed something is wrong"
     ],
     "ru": [
-      "интерфейс, означающий интерфейс на этом"
+      "Вы могли заметить, что что-то не так"
     ]
   },
   {
     "time": [
-      98.0,
-      102.0
+      123.420657,
+      125.766684
     ],
     "en": [
-      "device is fastethernet 0/1 let's go to"
+      "let's troubleshoot a little bit"
     ],
     "ru": [
-      "устройство - fastethernet 0/1, перейдем к"
+      "давайте немного устраним неполадки"
     ]
   },
   {
     "time": [
-      102.0,
-      109.0
+      125.766684,
+      132.031954
     ],
     "en": [
-      "r1 enable show CDP neighbors our one is"
+      "think of potential causes first at layer 1 or the physical layer of the OSI model"
     ],
     "ru": [
-      "r1 включить показать соседей CDP, наш один"
+      "сначала подумайте о потенциальных причинах на уровне 1 или на физическом уровне модели OSI"
     ]
   },
   {
     "time": [
-      109.0,
-      111.0
-    ],
-    "en": [
-      "connected to switch 1 on the Fast"
-    ],
-    "ru": [
-      "подключен к переключателю 1 на Fast"
-    ]
-  },
-  {
-    "time": [
-      111.0,
-      114.0
-    ],
-    "en": [
-      "Ethernet 0 interface but something's"
-    ],
-    "ru": [
-      "Интерфейс Ethernet 0, но что-то"
-    ]
-  },
-  {
-    "time": [
-      114.0,
-      119.0
-    ],
-    "en": [
-      "missing where's our - well because I"
-    ],
-    "ru": [
-      "не хватает где наш - ну потому что я"
-    ]
-  },
-  {
-    "time": [
-      119.0,
-      120.0
-    ],
-    "en": [
-      "have linked lights enabled on packet"
-    ],
-    "ru": [
-      "включили связанные огни на пакете"
-    ]
-  },
-  {
-    "time": [
-      120.0,
-      122.0
-    ],
-    "en": [
-      "tracer you might have noticed something"
-    ],
-    "ru": [
-      "трассировщик вы могли что-то заметить"
-    ]
-  },
-  {
-    "time": [
-      122.0,
-      125.0
-    ],
-    "en": [
-      "is wrong let's troubleshoot a little bit"
-    ],
-    "ru": [
-      "не так давайте устраним неполадки немного"
-    ]
-  },
-  {
-    "time": [
-      125.0,
-      128.0
-    ],
-    "en": [
-      "think of potential causes first at layer"
-    ],
-    "ru": [
-      "сначала подумайте о потенциальных причинах"
-    ]
-  },
-  {
-    "time": [
-      128.0,
-      131.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      128.0,
-      131.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      131.0,
-      134.0
+      132.031954,
+      134.467056
     ],
     "en": [
       "is the cable plugged in"
@@ -553,155 +385,143 @@ let objs = [
   },
   {
     "time": [
-      134.0,
-      137.0
+      134.467056,
+      135.60099
     ],
     "en": [
-      "yes it is as you can see here in packet"
+      "yes it is"
     ],
     "ru": [
-      "да, это так, как вы можете видеть здесь, в пакете"
+      "Да, это так"
     ]
   },
   {
     "time": [
-      137.0,
-      139.0
+      135.60099,
+      137.451453
     ],
     "en": [
-      "tracer are the interfaces turned on"
+      "as you can see here in packet tracer"
     ],
     "ru": [
-      "tracer включены ли интерфейсы"
+      "как вы можете видеть здесь, в пакетном трассировщике"
     ]
   },
   {
     "time": [
-      139.0,
-      144.0
+      137.451453,
+      139.987576
     ],
     "en": [
-      "let's check I'll use the show IP"
+      "are the interfaces turned on"
     ],
     "ru": [
-      "давайте проверим, я буду использовать IP шоу"
+      "включены ли интерфейсы"
     ]
   },
   {
     "time": [
-      144.0,
-      148.0
+      139.987576,
+      141.026169
     ],
     "en": [
-      "interface brief command to check well we"
+      "let's check"
     ],
     "ru": [
-      "краткая команда интерфейса, чтобы хорошо проверить, мы"
+      "Давайте проверим"
     ]
   },
   {
     "time": [
-      148.0,
-      150.0
+      141.026169,
+      146.669395
     ],
     "en": [
-      "were going to use CDP to discover which"
+      "I'll use the show IP interface brief command to check"
     ],
     "ru": [
-      "собирались использовать CDP, чтобы узнать, какие"
+      "Я воспользуюсь краткой командой show IP interface, чтобы проверить"
     ]
   },
   {
     "time": [
-      150.0,
-      152.0
+      146.669395,
+      153.622681
     ],
     "en": [
-      "interface r1 is connected to are to"
+      "well we were going to use CDP to discover which interface r1 is connected to are two through"
     ],
     "ru": [
-      "интерфейс r1 подключен к"
+      "ну, мы собирались использовать CDP, чтобы узнать, к какому интерфейсу подключен r1, через два"
     ]
   },
   {
     "time": [
-      152.0,
-      155.0
+      153.622681,
+      159.08914
     ],
     "en": [
-      "through but as we can see there is only"
+      "but as we can see there is only one serial interface serial zero"
     ],
     "ru": [
-      "через, но, как мы видим, есть только"
+      "но, как мы видим, есть только один последовательный интерфейс serial zero"
     ]
   },
   {
     "time": [
-      155.0,
-      158.0
+      159.08914,
+      162.101767
     ],
     "en": [
-      "one serial interface serial zero and"
+      "and it's administrative lead down"
     ],
     "ru": [
-      "один последовательный интерфейс, серийный ноль и"
+      "и это административное ведение вниз"
     ]
   },
   {
     "time": [
-      158.0,
-      162.0
+      162.101767,
+      164.56889
     ],
     "en": [
-      "it's administrative lead áown that means"
+      "that means if we do a show run command"
     ],
     "ru": [
-      "это административное руководство, что означает"
+      "это означает, что если мы выполним команду show run"
     ]
   },
   {
     "time": [
-      162.0,
-      165.0
+      164.56889,
+      166.199811
     ],
     "en": [
-      "if we do a show run command which I will"
+      "which I will do now"
     ],
     "ru": [
-      "если мы выполним команду show run, которую я"
+      "что я сделаю сейчас"
     ]
   },
   {
     "time": [
-      165.0,
-      167.0
+      166.199811,
+      169.015846
     ],
     "en": [
-      "do now we should see the shutdown"
+      "we should see the shutdown command on the serial interface"
     ],
     "ru": [
-      "теперь мы должны увидеть выключение"
+      "мы должны увидеть команду выключения на последовательном интерфейсе"
     ]
   },
   {
     "time": [
-      167.0,
-      169.0
+      169.015846,
+      171.716357
     ],
     "en": [
-      "command on the serial interface"
-    ],
-    "ru": [
-      "команда на последовательном интерфейсе"
-    ]
-  },
-  {
-    "time": [
-      169.0,
-      172.0
-    ],
-    "en": [
-      "I didn't configure this this is by"
+      "I didn't configure this"
     ],
     "ru": [
       "Я не настраивал это"
@@ -709,920 +529,788 @@ let objs = [
   },
   {
     "time": [
-      172.0,
-      177.0
+      171.716357,
+      172.605723
     ],
     "en": [
-      "default let's fix that conf"
+      "this is by default"
     ],
     "ru": [
-      "по умолчанию давайте исправим этот конф"
+      "это по умолчанию"
     ]
   },
   {
     "time": [
-      177.0,
-      182.0
+      172.605723,
+      174.007918
     ],
     "en": [
-      "no shutdown let's check on our to also"
+      "let's fix that"
     ],
     "ru": [
-      "нет выключения, давайте также проверим"
+      "давай исправим это"
     ]
   },
   {
     "time": [
-      182.0,
-      187.0
+      174.007918,
+      179.757747
     ],
     "en": [
-      "enable show IP interface brief again it"
+      "conf no shutdown"
     ],
     "ru": [
-      "снова включить краткое отображение IP-интерфейса"
+      "conf без выключения"
     ]
   },
   {
     "time": [
-      187.0,
-      192.0
+      179.757747,
+      182.39393
     ],
     "en": [
-      "is shutdown conf T interface serial zero"
+      "let's check on our to also"
     ],
     "ru": [
-      "is shutdown conf T интерфейс серийный ноль"
+      "давайте также проверим"
     ]
   },
   {
     "time": [
-      192.0,
-      195.0
+      182.39393,
+      186.24296
     ],
     "en": [
-      "no shutdown okay"
+      "enable show IP interface brief"
     ],
     "ru": [
-      "без выключения, хорошо"
+      "включить краткое отображение IP-интерфейса"
     ]
   },
   {
     "time": [
-      195.0,
-      199.0
+      186.24296,
+      188.130114
     ],
     "en": [
-      "now let's return to r1 this can take"
+      "again it is shutdown"
     ],
     "ru": [
-      "теперь давайте вернемся к r1, это может занять"
+      "опять выключение"
     ]
   },
   {
     "time": [
-      199.0,
-      202.0
+      188.130114,
+      193.791351
     ],
     "en": [
-      "some time but if I enter show CDP"
+      "conf T interface serial zero no shutdown"
     ],
     "ru": [
-      "какое-то время, но если я войду, покажу CDP"
+      "conf T interface serial zero no shutdown"
     ]
   },
   {
     "time": [
-      202.0,
-      207.0
+      193.791351,
+      195.666509
     ],
     "en": [
-      "neighbors again I should see our - there"
+      "okay"
     ],
     "ru": [
-      "соседи снова я должен увидеть наших - там"
+      "Ладно"
     ]
   },
   {
     "time": [
-      207.0,
-      207.0
+      195.666509,
+      197.353092
     ],
     "en": [
-      "it is"
+      "now let's return to r1"
     ],
     "ru": [
-      "это"
+      "теперь вернемся к r1"
     ]
   },
   {
     "time": [
-      207.0,
-      210.0
+      197.353092,
+      203.218257
     ],
     "en": [
-      "r1 is connected to our - through the"
+      "this can take some time but if I enter show CDP neighbors again"
     ],
     "ru": [
-      "r1 подключен к нашему - через"
+      "это может занять некоторое время, но если я снова войду, покажу соседей по CDP"
     ]
   },
   {
     "time": [
-      210.0,
-      213.0
+      203.218257,
+      205.116741
     ],
     "en": [
-      "serial zero interface let's run the"
+      "I should see our two"
     ],
     "ru": [
-      "последовательный нулевой интерфейс давайте запустим"
+      "Я должен увидеть наших двоих"
     ]
   },
   {
     "time": [
-      213.0,
-      218.0
+      205.116741,
+      207.684985
     ],
     "en": [
-      "command on our to type end to return to"
+      "there it is"
     ],
     "ru": [
-      "команда на нашем, чтобы ввести конец, чтобы вернуться к"
+      "вот оно"
     ]
   },
   {
     "time": [
-      218.0,
-      228.0
+      207.684985,
+      211.641346
     ],
     "en": [
-      "privileged exec mode show CDP neighbors"
+      "r1 is connected to our - through the serial zero interface"
     ],
     "ru": [
-      "привилегированный режим exec показать соседей CDP"
+      "r1 подключен к нашему - через последовательный нулевой интерфейс"
     ]
   },
   {
     "time": [
-      228.0,
-      231.0
+      211.641346,
+      215.513918
     ],
     "en": [
-      ""
+      "let's run the command on our two"
     ],
     "ru": [
-      ""
+      "давайте запустим команду на наших двух"
     ]
   },
   {
     "time": [
-      228.0,
-      231.0
+      215.513918,
+      219.417508
     ],
     "en": [
-      ""
+      "type end to return to privileged exec mode"
     ],
     "ru": [
-      ""
+      "введите end, чтобы вернуться в привилегированный режим exec"
     ]
   },
   {
     "time": [
-      231.0,
-      233.0
+      219.417508,
+      222.974449
     ],
     "en": [
-      "serial zero interface and switch -"
+      "show CDP neighbors"
     ],
     "ru": [
-      "последовательный нулевой интерфейс и переключатель -"
+      "показать соседей CDP"
     ]
   },
   {
     "time": [
-      233.0,
-      236.0
+      222.974449,
+      233.130465
     ],
     "en": [
-      "through the Fast Ethernet zero interface"
+      "r2 is also connected to r1 through the serial zero interface"
     ],
     "ru": [
-      "через нулевой интерфейс Fast Ethernet"
+      "r2 также подключен к r1 через последовательный интерфейс нуля."
     ]
   },
   {
     "time": [
-      236.0,
-      242.0
+      233.130465,
+      236.115336
     ],
     "en": [
-      "finally let's move on to switch to"
+      "and switch two through the Fast Ethernet zero interface"
     ],
     "ru": [
-      "наконец, перейдем к переключению на"
+      "и переключить два через нулевой интерфейс Fast Ethernet"
     ]
   },
   {
     "time": [
-      242.0,
-      247.0
+      236.115336,
+      240.601434
     ],
     "en": [
-      "enable show CDP neighbors as you can see"
+      "finally let's move on to switch two"
     ],
     "ru": [
-      "включить показывать соседей CDP, как вы можете видеть"
+      "наконец, давайте перейдем к переключению двух"
     ]
   },
   {
     "time": [
-      247.0,
-      250.0
+      240.601434,
+      246.1742
     ],
     "en": [
-      "switch 2 is connected to R 2 through the"
+      "enable show CDP neighbors"
     ],
     "ru": [
-      "переключатель 2 подключен к R 2 через"
+      "включить показывать соседей CDP"
     ]
   },
   {
     "time": [
-      250.0,
-      254.0
+      246.1742,
+      252.643814
     ],
     "en": [
-      "Fast Ethernet 0-1 interface step 1 is"
+      "as you can see switch 2 is connected to R 2 through the Fast Ethernet 0-1 interface"
     ],
     "ru": [
-      "Шаг 1 интерфейса Fast Ethernet 0-1:"
+      "как вы можете видеть, коммутатор 2 подключен к R 2 через интерфейс Fast Ethernet 0-1."
     ]
   },
   {
     "time": [
-      254.0,
-      259.0
+      252.643814,
+      255.471895
     ],
     "en": [
-      "now complete"
+      "step 1 is now complete"
     ],
     "ru": [
-      "теперь завершено"
+      "шаг 1 теперь завершен"
     ]
   },
   {
     "time": [
-      259.0,
-      262.0
+      255.471895,
+      265.096818
     ],
     "en": [
-      "step2 asks us to identify which end of"
+      "step2 asks us to identify which end of the serial connection is DCE"
     ],
     "ru": [
-      "step2 просит нас определить, какой конец"
+      "step2 просит нас определить, какой конец последовательного соединения является DCE"
     ]
   },
   {
     "time": [
-      262.0,
-      264.0
+      265.096818,
+      267.39343
     ],
     "en": [
-      "the serial connection is DCE"
+      "and which end is DTE"
     ],
     "ru": [
-      "последовательное соединение - DCE"
+      "а конец - DTE"
     ]
   },
   {
     "time": [
-      264.0,
-      268.0
+      267.39343,
+      272.575616
     ],
     "en": [
-      "and which end is DTE in serial"
+      "in serial connections one side is DCE or data communications equipment"
     ],
     "ru": [
-      "и какой конец - DTE в последовательном"
+      "в последовательных соединениях одна сторона - DCE или оборудование передачи данных"
     ]
   },
   {
     "time": [
-      268.0,
-      270.0
+      272.575616,
+      276.184652
     ],
     "en": [
-      "connections one side is DCE"
+      "and one side is DTE or data terminal equipment"
     ],
     "ru": [
-      "подключения с одной стороны - DCE"
+      "и одна сторона - DTE или оконечное оборудование данных"
     ]
   },
   {
     "time": [
-      270.0,
-      272.0
+      276.184652,
+      283.744393
     ],
     "en": [
-      "or data communications equipment and one"
+      "the most important difference between the two is that the DCE device supplies the clock signal that paces the communications"
     ],
     "ru": [
-      "или оборудование для передачи данных и один"
+      "наиболее важное различие между ними заключается в том, что устройство DCE подает тактовый сигнал, который ускоряет обмен данными."
     ]
   },
   {
     "time": [
-      272.0,
-      276.0
+      283.744393,
+      286.779967
     ],
     "en": [
-      "side is DTE or data terminal equipment"
+      "which will adjust in the next step"
     ],
     "ru": [
-      "сторона - DTE или оконечное оборудование данных"
+      "который будет настроен на следующем шаге"
     ]
   },
   {
     "time": [
-      276.0,
-      278.0
+      286.779967,
+      291.616351
     ],
     "en": [
-      "the most important difference between"
+      "to identify which is which let's go to r1 first"
     ],
     "ru": [
-      "самое важное различие между"
+      "чтобы определить, что есть что, сначала перейдем к r1"
     ]
   },
   {
     "time": [
-      278.0,
-      281.0
+      291.616351,
+      295.956611
     ],
     "en": [
-      "the two is that the DCE device supplies"
+      "we'll use the command show controllers serial zero"
     ],
     "ru": [
-      "два - то, что устройство DCE поставляет"
+      "мы будем использовать команду show controllers serial zero"
     ]
   },
   {
     "time": [
-      281.0,
-      283.0
+      295.956611,
+      298.823908
     ],
     "en": [
-      "the clock signal that paces the"
+      "if we just type show controllers"
     ],
     "ru": [
-      "тактовый сигнал, который шагает по"
+      "если мы просто наберем show controllers"
     ]
   },
   {
     "time": [
-      283.0,
-      285.0
+      298.823908,
+      303.236244
     ],
     "en": [
-      "communications which will adjust in the"
+      "we would be overwhelmed with information about every interface on the router"
     ],
     "ru": [
-      "коммуникации, которые будут корректироваться в"
+      "мы были бы перегружены информацией о каждом интерфейсе на маршрутизаторе"
     ]
   },
   {
     "time": [
-      285.0,
-      288.0
+      303.236244,
+      306.247824
     ],
     "en": [
-      "next step to identify which is which"
+      "so make sure to specify serial zero"
     ],
     "ru": [
-      "следующий шаг, чтобы определить, что есть что"
+      "поэтому не забудьте указать серийный ноль"
     ]
   },
   {
     "time": [
-      288.0,
-      292.0
+      306.247824,
+      309.63548
     ],
     "en": [
-      "let's go to r1 first we'll use the"
+      "can you find what we're looking for"
     ],
     "ru": [
-      "давайте сначала перейдем к r1, мы будем использовать"
+      "Вы можете найти то, что мы ищем"
     ]
   },
   {
     "time": [
-      292.0,
-      296.0
+      309.63548,
+      311.101373
     ],
     "en": [
-      "command show controllers serial zero if"
+      "there it is"
     ],
     "ru": [
-      "команда show controllers serial zero if"
+      "вот оно"
     ]
   },
   {
     "time": [
-      296.0,
-      299.0
+      311.101373,
+      313.443728
     ],
     "en": [
-      "we just type show controllers we would"
+      "and this side is the DCE"
     ],
     "ru": [
-      "мы просто набираем контроллеры шоу, которые мы бы"
+      "а эта сторона - АКД"
     ]
   },
   {
     "time": [
-      299.0,
-      300.0
+      313.443728,
+      316.710507
     ],
     "en": [
-      "be overwhelmed with information about"
+      "you can also see the clock rate mentioned earlier"
     ],
     "ru": [
-      "быть заваленным информацией о"
+      "вы также можете увидеть тактовую частоту, упомянутую ранее"
     ]
   },
   {
     "time": [
-      300.0,
-      303.0
+      316.710507,
+      320.685413
     ],
     "en": [
-      "every interface on the router so make"
+      "well now I know which side is DC e"
     ],
     "ru": [
-      "каждый интерфейс на маршрутизаторе, так что сделайте"
+      "ну теперь я знаю, с какой стороны DC e"
     ]
   },
   {
     "time": [
-      303.0,
-      307.0
+      320.685413,
+      325.399466
     ],
     "en": [
-      "sure to specify serial zero can you find"
+      "that means R 2 should be DTE but let's check anyway"
     ],
     "ru": [
-      "обязательно укажите серийный ноль, можете ли вы найти"
+      "это означает, что R 2 должен быть DTE, но давайте все равно проверим"
     ]
   },
   {
     "time": [
-      307.0,
-      310.0
+      325.399466,
+      328.061367
     ],
     "en": [
-      "what we're looking for there it is and"
+      "let's hop onto r2"
     ],
     "ru": [
-      "то, что мы ищем, вот оно и"
+      "давай сядем на r2"
     ]
   },
   {
     "time": [
-      310.0,
-      312.0
+      328.061367,
+      331.053586
     ],
     "en": [
-      "this side is the DCE"
+      "show controllers serial zero"
     ],
     "ru": [
-      "эта сторона - DCE"
+      "показать серийный ноль контроллеров"
     ]
   },
   {
     "time": [
-      312.0,
-      315.0
+      331.053586,
+      334.817174
     ],
     "en": [
-      "you can also see the clock rate"
+      "as expected R 2 is DTE"
     ],
     "ru": [
-      "вы также можете увидеть тактовую частоту"
+      "как и ожидалось, R 2 - это DTE"
     ]
   },
   {
     "time": [
-      315.0,
-      318.0
+      334.817174,
+      336.833121
     ],
     "en": [
-      "mentioned earlier well now I know which"
+      "step two is now complete"
     ],
     "ru": [
-      "уже упоминалось ранее, теперь я знаю, что"
+      "шаг два теперь завершен"
     ]
   },
   {
     "time": [
-      318.0,
-      322.0
+      336.833121,
+      345.587313
     ],
     "en": [
-      "side is DC e that means R 2 should be"
+      "for step three we have to set the clock rate on the DCE end to 64 kilobits per second"
     ],
     "ru": [
-      "сторона - DC e, что означает, что R 2 должен быть"
+      "для третьего шага мы должны установить тактовую частоту на конце DCE на 64 килобита в секунду"
     ]
   },
   {
     "time": [
-      322.0,
-      325.0
+      345.587313,
+      348.632922
     ],
     "en": [
-      "DTE but let's check anyway"
+      "so let's go back to r1"
     ],
     "ru": [
-      "DTE, но давайте все равно проверим"
+      "так что вернемся к r1"
     ]
   },
   {
     "time": [
-      325.0,
-      329.0
+      348.632922,
+      352.524099
     ],
     "en": [
-      "let's hop onto our to show controllers"
+      "we have to configure the serial zero interface"
     ],
     "ru": [
-      "Давайте перейдем к нам, чтобы показать контроллеры"
+      "нам нужно настроить последовательный нулевой интерфейс"
     ]
   },
   {
     "time": [
-      329.0,
-      335.0
+      352.524099,
+      356.709099
     ],
     "en": [
-      "serial zero as expected R 2 is DTE step"
+      "so conf t then interface serial zero"
     ],
     "ru": [
-      "серийный ноль, как и ожидалось, R 2 - шаг DTE"
+      "так что конф т тогда интерфейс серийный ноль"
     ]
   },
   {
     "time": [
-      335.0,
-      338.0
+      356.709099,
+      359.782783
     ],
     "en": [
-      "two is now complete"
+      "now we are in interface configuration mode"
     ],
     "ru": [
-      "два теперь завершены"
+      "сейчас мы находимся в режиме настройки интерфейса"
     ]
   },
   {
     "time": [
-      338.0,
-      341.0
+      359.782783,
+      364.041079
     ],
     "en": [
-      "for step three we have to set the clock"
+      "the clock rate is set with the clock rate command"
     ],
     "ru": [
-      "для третьего шага мы должны установить часы"
+      "тактовая частота устанавливается командой clock rate"
     ]
   },
   {
     "time": [
-      341.0,
-      344.0
+      364.041079,
+      367.792055
     ],
     "en": [
-      "rate on the DCE end to 64 kilobits per"
+      "let's use the question mark to see what options we have"
     ],
     "ru": [
-      "скорость на конце DCE до 64 килобит на"
+      "давайте воспользуемся вопросительным знаком, чтобы посмотреть, какие у нас есть варианты"
     ]
   },
   {
     "time": [
-      344.0,
-      349.0
+      367.792055,
+      372.757799
     ],
     "en": [
-      "second so let's go back to our one we"
+      "as you can see here these options are listed in bits per second"
     ],
     "ru": [
-      "во-вторых, так что давайте вернемся к нашему"
+      "как вы можете видеть здесь, эти параметры указаны в битах в секунду"
     ]
   },
   {
     "time": [
-      349.0,
-      350.0
+      372.757799,
+      377.548125
     ],
     "en": [
-      "have to configure the serial zero"
+      "our task is to set the speed to 64 kilobits per second"
     ],
     "ru": [
-      "необходимо настроить серийный ноль"
+      "наша задача установить скорость 64 килобит в секунду"
     ]
   },
   {
     "time": [
-      350.0,
-      355.0
+      377.548125,
+      380.617687
     ],
     "en": [
-      "interface so compte then interface"
+      "which is 64,000 bits per second"
     ],
     "ru": [
-      "интерфейс, так что комп, затем интерфейс"
+      "что составляет 64000 бит в секунду"
     ]
   },
   {
     "time": [
-      355.0,
-      358.0
+      380.617687,
+      382.182228
     ],
     "en": [
-      "serial zero now we are in interface"
+      "so let's do that"
     ],
     "ru": [
-      "серийный ноль, теперь мы находимся в интерфейсе"
+      "так давай сделаем это"
     ]
   },
   {
     "time": [
-      358.0,
-      362.0
+      382.182228,
+      384.452651
     ],
     "en": [
-      "configuration mode the clock rate is set"
+      "that's all for step three"
     ],
     "ru": [
-      "режим конфигурации устанавливается тактовая частота"
+      "это все для третьего шага"
     ]
   },
   {
     "time": [
-      362.0,
-      365.0
+      384.452651,
+      387.003249
     ],
     "en": [
-      "with the clock rate command let's use"
+      "we don't have to do anything on the DTE side"
     ],
     "ru": [
-      "с командой тактовой частоты давайте использовать"
+      "нам не нужно ничего делать на стороне DTE"
     ]
   },
   {
     "time": [
-      365.0,
-      366.0
+      387.003249,
+      404.778665
     ],
     "en": [
-      "the question mark to see what options we"
+      "step four tells us to set the IP addresses of the serial interfaces of r1 and r2 to 192.168.0.1 / 24 and 192.168.0.2 /24"
     ],
     "ru": [
-      "знак вопроса, чтобы увидеть, какие варианты мы"
+      "четвертый шаг говорит нам установить IP-адреса последовательных интерфейсов r1 и r2 на 192.168.0.1 / 24 и 192.168.0.2 / 24"
     ]
   },
   {
     "time": [
-      366.0,
-      370.0
+      404.778665,
+      409.050174
     ],
     "en": [
-      "have as you can see here these options"
+      "interface configuration mode on r1"
     ],
     "ru": [
-      "как вы можете видеть здесь эти параметры"
+      "режим настройки интерфейса на r1"
     ]
   },
   {
     "time": [
-      370.0,
-      373.0
+      409.050174,
+      410.87602
     ],
     "en": [
-      "are listed in bits per second our task"
+      "so let's configure r1"
     ],
     "ru": [
-      "указаны в битах в секунду наша задача"
+      "так что давайте настроим r1"
     ]
   },
   {
     "time": [
-      373.0,
-      376.0
+      410.87602,
+      426.513926
     ],
     "en": [
-      "is to set the speed to 64 kilobits per"
+      "IP address 192.168.1.1 at him this is something you should know if not don't worry about it"
     ],
     "ru": [
-      "установить скорость 64 килобит на"
+      "IP-адрес 192.168.1.1 у него это то, что вы должны знать, если не беспокойтесь об этом"
     ]
   },
   {
     "time": [
-      376.0,
-      380.0
+      426.513926,
+      430.565633
     ],
     "en": [
-      "second which is 64,000 bits per second"
+      "it's 255.255.255.0"
     ],
     "ru": [
-      "секунда, что составляет 64000 бит в секунду"
+      "это 255.255.255.0"
     ]
   },
   {
     "time": [
-      380.0,
-      383.0
+      430.565633,
+      432.043959
     ],
     "en": [
-      "so let's do that that's all for step"
+      "there we go"
     ],
     "ru": [
-      "так что давайте сделаем это, это все для шага"
+      "вот и мы"
     ]
   },
   {
     "time": [
-      383.0,
-      385.0
+      432.043959,
+      434.811706
     ],
     "en": [
-      "three we don't have to do anything on"
+      "now let's do the same on r2"
     ],
     "ru": [
-      "три, нам не нужно ничего делать"
+      "теперь сделаем то же самое на r2"
     ]
   },
   {
     "time": [
-      385.0,
-      389.0
+      434.811706,
+      439.66486
     ],
     "en": [
-      "the DTE side step four tells us to set"
+      "conf t interface serial zero"
     ],
     "ru": [
-      "четвертый побочный шаг DTE говорит нам установить"
+      "conf t интерфейс серийный ноль"
     ]
   },
   {
     "time": [
-      389.0,
-      391.0
+      439.66486,
+      444.158026
     ],
     "en": [
-      "the IP addresses of the serial"
+      "IP address 192.168.0.2"
     ],
     "ru": [
-      "IP-адреса серийного"
+      "IP-адрес 192.168.0.2"
     ]
   },
   {
     "time": [
-      391.0,
-      398.0
-    ],
-    "en": [
-      "interfaces of r1 and r2 to 192.168.1 /"
-    ],
-    "ru": [
-      "интерфейсы r1 и r2 к 192.168.1 /"
-    ]
-  },
-  {
-    "time": [
-      398.0,
-      405.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      398.0,
-      405.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      405.0,
-      409.0
-    ],
-    "en": [
-      "interface configuration mode on r1 so"
-    ],
-    "ru": [
-      "режим настройки интерфейса на r1, поэтому"
-    ]
-  },
-  {
-    "time": [
-      409.0,
-      412.0
-    ],
-    "en": [
-      "let's configure r1 IP address"
-    ],
-    "ru": [
-      "давайте настроим IP-адрес r1"
-    ]
-  },
-  {
-    "time": [
-      412.0,
-      423.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      412.0,
-      423.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      423.0,
-      426.0
-    ],
-    "en": [
-      "should know if not don't worry about it"
-    ],
-    "ru": [
-      "должен знать, если не беспокойтесь об этом"
-    ]
-  },
-  {
-    "time": [
-      426.0,
-      432.0
-    ],
-    "en": [
-      "it's 255.255.255.0 there we go now let's"
-    ],
-    "ru": [
-      "это 255.255.255.0 поехали"
-    ]
-  },
-  {
-    "time": [
-      432.0,
-      438.0
-    ],
-    "en": [
-      "do the same on r2 conf t interface"
-    ],
-    "ru": [
-      "сделайте то же самое на интерфейсе r2 conf t"
-    ]
-  },
-  {
-    "time": [
-      438.0,
-      447.0
-    ],
-    "en": [
-      "serial zero IP address 192.168.0.0"
-    ],
-    "ru": [
-      "серийный нулевой IP-адрес 192.168.0.0"
-    ]
-  },
-  {
-    "time": [
-      447.0,
-      451.0
+      444.158026,
+      449.659766
     ],
     "en": [
       "that's all for step four"
@@ -1633,242 +1321,218 @@ let objs = [
   },
   {
     "time": [
-      451.0,
-      454.0
+      449.659766,
+      456.591307
     ],
     "en": [
-      "finally Step five asks us to test"
+      "finally Step five asks us to test connectivity between the routers"
     ],
     "ru": [
-      "наконец Шаг пятый просит нас протестировать"
+      "наконец, на пятом шаге нас просят проверить возможность подключения между маршрутизаторами."
     ]
   },
   {
     "time": [
-      454.0,
-      457.0
+      456.591307,
+      458.750807
     ],
     "en": [
-      "connectivity between the routers since"
+      "since we're already on r2"
     ],
     "ru": [
-      "связь между маршрутизаторами, так как"
+      "так как мы уже на r2"
     ]
   },
   {
     "time": [
-      457.0,
-      459.0
+      458.750807,
+      460.183246
     ],
     "en": [
-      "we're already on our - let's do it from"
+      "let's do it from here"
     ],
     "ru": [
-      "мы уже на нашем - давайте сделаем это с"
+      "давай сделаем это отсюда"
     ]
   },
   {
     "time": [
-      459.0,
-      462.0
+      460.183246,
+      463.268323
     ],
     "en": [
-      "here type end to return to privileged"
+      "type end to return to privileged exec mode"
     ],
     "ru": [
-      "здесь введите конец, чтобы вернуться к привилегированному"
+      "введите end, чтобы вернуться в привилегированный режим exec"
     ]
   },
   {
     "time": [
-      462.0,
-      465.0
+      463.268323,
+      470.39099
     ],
     "en": [
-      "exec mode the IP address of our one"
+      "the IP address of our one serial zero interface is 192.168.0.1 so"
     ],
     "ru": [
-      "exec mode IP адрес нашего"
+      "IP-адрес нашего одного последовательного нулевого интерфейса - 192.168.0.1, поэтому"
     ]
   },
   {
     "time": [
-      465.0,
-      470.0
+      470.39099,
+      474.510172
     ],
     "en": [
-      "serial zero interface is 192.168.0.1 so"
+      "ping 192.168.0.1"
     ],
     "ru": [
-      "последовательный нулевой интерфейс - 192.168.0.1, поэтому"
+      "пинг 192.168.0.1"
     ]
   },
   {
     "time": [
-      470.0,
-      476.0
+      474.510172,
+      478.626241
     ],
     "en": [
-      "ping 192.168.0.1 as you can see we have"
+      "as you can see we have connectivity between the routers"
     ],
     "ru": [
-      "ping 192.168.0.1, как видите, у нас есть"
+      "как вы можете видеть, у нас есть связь между маршрутизаторами"
     ]
   },
   {
     "time": [
-      476.0,
-      478.0
+      478.626241,
+      480.434685
     ],
     "en": [
-      "connectivity between the routers that's"
+      "that's all for this lab"
     ],
     "ru": [
-      "связь между маршрутизаторами,"
+      "это все для этой лаборатории"
     ]
   },
   {
     "time": [
-      478.0,
-      484.0
+      480.434685,
+      484.845029
     ],
     "en": [
-      "all for this lab thank you for watching"
+      "thank you for watching"
     ],
     "ru": [
-      "всем для этой лаборатории спасибо за просмотр"
+      "Спасибо за просмотр"
     ]
   },
   {
     "time": [
-      484.0,
-      486.0
+      484.845029,
+      487.940151
     ],
     "en": [
-      "I hope this lab and video have been"
+      "I hope this lab and video have been helpful for you"
     ],
     "ru": [
-      "Я надеюсь, что эта лабораторная работа и видео были"
+      "Надеюсь, эта лабораторная работа и видео были для вас полезны"
     ]
   },
   {
     "time": [
-      486.0,
-      489.0
+      487.940151,
+      492.652226
     ],
     "en": [
-      "helpful for you please subscribe for"
+      "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "полезно для вас, пожалуйста, подпишитесь на"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {
     "time": [
-      489.0,
-      491.0
+      492.652226,
+      497.972229
     ],
     "en": [
-      "future labs like this which will be"
+      "if you have requests for any specific labs let me know in the comment section"
     ],
     "ru": [
-      "будущие лаборатории, подобные этой, которые будут"
+      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
     ]
   },
   {
     "time": [
-      491.0,
-      494.0
+      497.972229,
+      503.863801
     ],
     "en": [
-      "released weekly if you have requests for"
+      "if you want to support my channel I accept Bitcoin donations via the address in the description"
     ],
     "ru": [
-      "выпускается еженедельно, если у вас есть запросы на"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах по адресу в описании"
     ]
   },
   {
     "time": [
-      494.0,
-      496.0
+      503.863801,
+      507.406431
     ],
     "en": [
-      "any specific labs let me know in the"
+      "I am also a brave verified publisher"
     ],
     "ru": [
-      "любые конкретные лаборатории дайте мне знать в"
+      "Я также храбрый проверенный издатель"
     ]
   },
   {
     "time": [
-      496.0,
-      499.0
+      507.406431,
+      512.793647
     ],
     "en": [
-      "comment section if you want to support"
+      "and accept bat or basic attention token donations in the brave browser"
     ],
     "ru": [
-      "раздел комментариев, если вы хотите поддержать"
+      "и принимайте пожертвования летучих мышей или токенов основного внимания в смелом браузере"
     ]
   },
   {
     "time": [
-      499.0,
-      501.0
+      512.793647,
+      512.793647
     ],
     "en": [
-      "my channel I accept Bitcoin donations"
+      ""
     ],
     "ru": [
-      "мой канал я принимаю пожертвования биткойнами"
+      ""
     ]
   },
   {
     "time": [
-      501.0,
-      504.0
+      512.793647,
+      512.793647
     ],
     "en": [
-      "via the address in the description I am"
+      ""
     ],
     "ru": [
-      "по адресу в описании я"
+      ""
     ]
   },
   {
     "time": [
-      504.0,
-      506.0
+      512.793647,
+      512.793647
     ],
     "en": [
-      "also a brave verified publisher and"
+      ""
     ],
     "ru": [
-      "также храбрый проверенный издатель и"
-    ]
-  },
-  {
-    "time": [
-      506.0,
-      510.0
-    ],
-    "en": [
-      "accept bat or basic attention token"
-    ],
-    "ru": [
-      "принять летучую мышь или жетон основного внимания"
-    ]
-  },
-  {
-    "time": [
-      510.0,
-      510.0
-    ],
-    "en": [
-      "donations in the brave browser"
-    ],
-    "ru": [
-      "пожертвования в смелом браузере"
+      ""
     ]
   }
 ]

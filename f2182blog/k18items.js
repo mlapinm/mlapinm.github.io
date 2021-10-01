@@ -2,307 +2,1075 @@ let objs = [
   {
     "time": [
       0.0,
-      3.0
+      4.345563
     ],
     "en": [
-      "welcome to this free CCNA packet tracer"
+      "welcome to this free CCNA packet tracer practice lab"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный трассировщик пакетов CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
     ]
   },
   {
     "time": [
-      3.0,
-      5.0
+      4.345563,
+      7.628451
     ],
     "en": [
-      "practice lab you can download the lab"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "Практическая лаборатория вы можете скачать лабораторию"
+      "скачать лабораторный файл можно по ссылке в описании"
     ]
   },
   {
     "time": [
-      5.0,
-      8.0
+      7.628451,
+      13.375586
     ],
     "en": [
-      "file from the link in the description in"
+      "in this lab we will take another look at the port security function of Cisco switches"
     ],
     "ru": [
-      "файл по ссылке в описании в"
+      "в этой лабораторной работе мы еще раз рассмотрим функцию безопасности портов коммутаторов Cisco."
     ]
   },
   {
     "time": [
-      8.0,
-      10.0
+      13.375586,
+      18.143208
     ],
     "en": [
-      "this lab we will take another look at"
+      "specifically we will learn about the sticky MAC address function"
     ],
     "ru": [
-      "эту лабораторию мы еще раз взглянем на"
+      "в частности, мы узнаем о функции закрепления MAC-адреса"
     ]
   },
   {
     "time": [
-      10.0,
-      12.0
+      18.143208,
+      24.561384
     ],
     "en": [
-      "the port security function of Cisco"
+      "the sticky MAC address function of port security saved secure MAC addresses into the switch configuration"
     ],
     "ru": [
-      "функция безопасности порта Cisco"
+      "функция липкого MAC-адреса безопасности порта сохраняет безопасные MAC-адреса в конфигурации коммутатора"
     ]
   },
   {
     "time": [
-      12.0,
-      15.0
+      24.561384,
+      28.865184
     ],
     "en": [
-      "switches specifically we will learn"
+      "when they are dynamically learned on a switch port with port security enabled"
     ],
     "ru": [
-      "переключатели конкретно мы узнаем"
+      "когда они динамически изучаются на порту коммутатора с включенной защитой порта"
     ]
   },
   {
     "time": [
-      15.0,
-      17.0
+      28.865184,
+      32.105499
     ],
     "en": [
-      "about the sticky MAC address function"
+      "try to complete this lab yourself first"
     ],
     "ru": [
-      "о функции закрепления MAC-адресов"
+      "сначала попробуйте пройти эту лабораторию самостоятельно"
     ]
   },
   {
     "time": [
-      17.0,
-      20.0
+      32.105499,
+      37.100898
     ],
     "en": [
-      "the sticky MAC address function of port"
+      "then continue watching this video if you have trouble or watch it after to check your solution"
     ],
     "ru": [
-      "функция закрепления MAC-адреса порта"
+      "затем продолжайте смотреть это видео, если у вас возникнут проблемы, или просмотрите его позже, чтобы проверить свое решение."
     ]
   },
   {
     "time": [
-      20.0,
-      23.0
+      37.100898,
+      41.728882
     ],
     "en": [
-      "security saved secure MAC addresses into"
+      "there are a few more steps in this lab than in my previous labs"
     ],
     "ru": [
-      "безопасность сохраняла безопасные MAC-адреса в"
+      "в этой лабораторной работе на несколько шагов больше, чем в моих предыдущих."
     ]
   },
   {
     "time": [
-      23.0,
-      24.0
+      41.728882,
+      43.440883
     ],
     "en": [
-      "the switch configuration when they are"
+      "but these are all pretty short steps"
     ],
     "ru": [
-      "конфигурация переключателя, когда они"
+      "но это все довольно короткие шаги"
     ]
   },
   {
     "time": [
-      24.0,
-      26.0
+      43.440883,
+      49.305773
     ],
     "en": [
-      "dynamically learned on a switch port"
+      "step one is to enable port security on the switch ports connected to end hosts"
     ],
     "ru": [
-      "динамически запоминается на порту коммутатора"
+      "Шаг первый - включить безопасность портов на портах коммутатора, подключенных к конечным хостам."
     ]
   },
   {
     "time": [
-      26.0,
-      29.0
+      49.305773,
+      52.136987
     ],
     "en": [
-      "with port security enabled try to"
+      "let's go on switch one first"
     ],
     "ru": [
-      "с включенной защитой порта попробуйте"
+      "давай сначала переключимся"
     ]
   },
   {
     "time": [
-      29.0,
-      32.0
+      52.136987,
+      59.324556
     ],
     "en": [
-      "complete this lab yourself first then"
+      "enable counf T interface F 0 2"
     ],
     "ru": [
-      "сначала завершите эту лабораторию, затем"
+      "включить интерфейс Counf T F 0 2"
     ]
   },
   {
     "time": [
-      32.0,
-      33.0
+      59.324556,
+      63.868451
     ],
     "en": [
-      "continue watching this video if you have"
+      "remember we have to set the interface as an access port first"
     ],
     "ru": [
-      "продолжайте смотреть это видео, если у вас есть"
+      "помните, что мы должны сначала установить интерфейс как порт доступа"
     ]
   },
   {
     "time": [
-      33.0,
-      36.0
+      63.868451,
+      67.024898
     ],
     "en": [
-      "trouble or watch it after to check your"
+      "so switch port mode access"
     ],
     "ru": [
-      "проблемы или посмотрите это позже, чтобы проверить свой"
+      "так что переключить режим порта доступа"
     ]
   },
   {
     "time": [
-      36.0,
-      39.0
+      67.024898,
+      69.564311
     ],
     "en": [
-      "solution there are a few more steps in"
+      "switch port port security"
     ],
     "ru": [
-      "решение есть еще несколько шагов в"
+      "безопасность порта порта коммутатора"
     ]
   },
   {
     "time": [
-      39.0,
-      41.0
+      69.564311,
+      73.686722
     ],
     "en": [
-      "this lab than in my previous labs but"
+      "that's all for switch 1 now let's do the same on switch 2"
     ],
     "ru": [
-      "эта лаборатория, чем в моих предыдущих, но"
+      "это все для переключателя 1, теперь давайте сделаем то же самое для переключателя 2"
     ]
   },
   {
     "time": [
-      41.0,
-      44.0
+      73.686722,
+      82.548547
     ],
     "en": [
-      "these are all pretty short steps step"
+      "enable conf t interface F 0 2 switch port mode access"
     ],
     "ru": [
-      "это все довольно короткие шаги шаг"
+      "enable conf t interface F 0 2 переключатель режима порта доступа"
     ]
   },
   {
     "time": [
-      44.0,
-      46.0
+      82.548547,
+      84.993764
     ],
     "en": [
-      "one is to enable port security on the"
+      "switch port port security"
     ],
     "ru": [
-      "один - включить безопасность порта на"
+      "безопасность порта порта коммутатора"
     ]
   },
   {
     "time": [
-      46.0,
-      49.0
+      84.993764,
+      88.467634
     ],
     "en": [
-      "switch ports connected to end hosts"
+      "now let's go straight into step 2"
     ],
     "ru": [
-      "порты коммутатора, подключенные к конечным хостам"
+      "А теперь перейдем к шагу 2"
     ]
   },
   {
     "time": [
-      49.0,
-      54.0
+      88.467634,
+      91.469396
     ],
     "en": [
-      "let's go on switch one first enable"
+      "which is to ping from pc1 to pc2"
     ],
     "ru": [
-      "давай сначала включим, сначала включим"
+      "который должен пинговать с ПК1 на ПК2"
     ]
   },
   {
     "time": [
-      54.0,
-      60.0
+      91.469396,
+      93.620753
     ],
     "en": [
-      "count T interface F 0 2 remember we have"
+      "to generate traffic between them"
     ],
     "ru": [
-      "count T interface F 0 2 помните, что у нас есть"
+      "для генерации трафика между ними"
     ]
   },
   {
     "time": [
-      60.0,
-      62.0
+      93.620753,
+      98.490261
     ],
     "en": [
-      "to set the interface as an access port"
+      "remember that no traffic is passing between these pcs by default"
     ],
     "ru": [
-      "установить интерфейс как порт доступа"
+      "помните, что по умолчанию между этими компьютерами нет трафика"
     ]
   },
   {
     "time": [
-      62.0,
-      67.0
+      98.490261,
+      101.751385
     ],
     "en": [
-      "first so switch port mode access switch"
+      "so the switches won't learn the MAC addresses of the PCs"
     ],
     "ru": [
-      "сначала так переключатель режима порта переключателя доступа"
+      "поэтому коммутаторы не узнают MAC-адреса ПК"
     ]
   },
   {
     "time": [
-      67.0,
-      70.0
+      101.751385,
+      103.983482
     ],
     "en": [
-      "port port security that's all for switch"
+      "until we send some traffic between them"
     ],
     "ru": [
-      "безопасность порта все для коммутатора"
+      "пока мы не отправим трафик между ними"
     ]
   },
   {
     "time": [
-      70.0,
-      75.0
+      103.983482,
+      106.340348
+    ],
+    "en": [
+      "I'll ping from PC one"
+    ],
+    "ru": [
+      "Я пингую с ПК один"
+    ]
+  },
+  {
+    "time": [
+      106.340348,
+      114.831355
+    ],
+    "en": [
+      "ping 192.168.1.12 there we go"
+    ],
+    "ru": [
+      "пинг 192.168.1.12 поехали"
+    ]
+  },
+  {
+    "time": [
+      114.831355,
+      120.817022
+    ],
+    "en": [
+      "step 3 is to view the secure MAC addresses on switch 1"
+    ],
+    "ru": [
+      "Шаг 3 - просмотреть безопасные MAC-адреса на коммутаторе 1"
+    ]
+  },
+  {
+    "time": [
+      120.817022,
+      123.037859
+    ],
+    "en": [
+      "I'll go back to switch 1"
+    ],
+    "ru": [
+      "Я вернусь к переключателю 1"
+    ]
+  },
+  {
+    "time": [
+      123.037859,
+      130.401318
+    ],
+    "en": [
+      "and now I'll use the command show port security address"
+    ],
+    "ru": [
+      "а теперь я воспользуюсь командой show port security address"
+    ]
+  },
+  {
+    "time": [
+      130.401318,
+      131.868589
+    ],
+    "en": [
+      "as in the previous lab"
+    ],
+    "ru": [
+      "как в предыдущей лаборатории"
+    ]
+  },
+  {
+    "time": [
+      131.868589,
+      138.927039
+    ],
+    "en": [
+      "as you can see there is a dynamically learned secure MAC address on the Fast Ethernet 0 2 interface"
+    ],
+    "ru": [
+      "как вы можете видеть, на интерфейсе Fast Ethernet 0 2 есть динамически полученный безопасный MAC-адрес."
+    ]
+  },
+  {
+    "time": [
+      138.927039,
+      141.475942
+    ],
+    "en": [
+      "which must be PC ones"
+    ],
+    "ru": [
+      "которые должны быть ПК"
+    ]
+  },
+  {
+    "time": [
+      141.475942,
+      150.981838
+    ],
+    "en": [
+      "step four says to check the configuration of switch ones Fast Ethernet 0 to interface in the running configuration"
+    ],
+    "ru": [
+      "на четвертом шаге говорится, что нужно проверить конфигурацию коммутаторов Fast Ethernet 0 для подключения в текущей конфигурации"
+    ]
+  },
+  {
+    "time": [
+      150.981838,
+      154.028618
+    ],
+    "en": [
+      "show running config"
+    ],
+    "ru": [
+      "показать текущую конфигурацию"
+    ]
+  },
+  {
+    "time": [
+      154.028618,
+      160.911008
+    ],
+    "en": [
+      "here it is as you can see there are only the two commands we entered before"
+    ],
+    "ru": [
+      "здесь, как вы можете видеть, есть только две команды, которые мы ввели ранее"
+    ]
+  },
+  {
+    "time": [
+      160.911008,
+      164.928422
+    ],
+    "en": [
+      "switch port mode access and switch port port security"
+    ],
+    "ru": [
+      "доступ в режим порта коммутатора и безопасность порта порта коммутатора"
+    ]
+  },
+  {
+    "time": [
+      164.928422,
+      170.861465
+    ],
+    "en": [
+      "remember this as we will contrast it with sticky mag address configuration later"
+    ],
+    "ru": [
+      "помните об этом, так как позже мы будем сравнивать его с конфигурацией липкого адреса."
+    ]
+  },
+  {
+    "time": [
+      170.861465,
+      175.782073
+    ],
+    "en": [
+      "step 5 is to save the running config and reload the switch"
+    ],
+    "ru": [
+      "Шаг 5 - сохранить текущую конфигурацию и перезагрузить коммутатор."
+    ]
+  },
+  {
+    "time": [
+      175.782073,
+      180.11067
+    ],
+    "en": [
+      "I'll use write to save then reload"
+    ],
+    "ru": [
+      "Я воспользуюсь записью, чтобы сохранить, а затем перезагрузить"
+    ]
+  },
+  {
+    "time": [
+      180.11067,
+      184.704112
+    ],
+    "en": [
+      "ok now the switch is reloading"
+    ],
+    "ru": [
+      "хорошо, теперь переключатель перезагружается"
+    ]
+  },
+  {
+    "time": [
+      184.704112,
+      195.112728
+    ],
+    "en": [
+      "step 6 is to view the secure MAC addresses on switch 1 again"
+    ],
+    "ru": [
+      "Шаг 6 - снова просмотреть безопасные MAC-адреса на коммутаторе 1"
+    ]
+  },
+  {
+    "time": [
+      195.112728,
+      200.722924
+    ],
+    "en": [
+      "do you think PC ones MAC address will still be saved as a secure MAC address"
+    ],
+    "ru": [
+      "Как вы думаете, MAC-адрес ПК по-прежнему будет сохранен как безопасный MAC-адрес"
+    ]
+  },
+  {
+    "time": [
+      200.722924,
+      208.361641
+    ],
+    "en": [
+      "we saved the running configuration but PC ones MAC address wasn't anywhere in the running configuration"
+    ],
+    "ru": [
+      "мы сохранили текущую конфигурацию, но MAC-адрес ПК отсутствовал в текущей конфигурации"
+    ]
+  },
+  {
+    "time": [
+      208.361641,
+      213.068455
+    ],
+    "en": [
+      "so let's check the port security address table again"
+    ],
+    "ru": [
+      "так что давайте еще раз проверим таблицу адресов безопасности портов"
+    ]
+  },
+  {
+    "time": [
+      213.068455,
+      217.6333
+    ],
+    "en": [
+      "enable show port security address"
+    ],
+    "ru": [
+      "включить показывать адрес безопасности порта"
+    ]
+  },
+  {
+    "time": [
+      217.6333,
+      222.268412
+    ],
+    "en": [
+      "as you can see PC ones MAC address is no longer present"
+    ],
+    "ru": [
+      "как вы можете видеть, MAC-адрес ПК больше не присутствует"
+    ]
+  },
+  {
+    "time": [
+      222.268412,
+      227.983235
+    ],
+    "en": [
+      "dynamically learned secure MAC addresses will not be retained when you restart the switch"
+    ],
+    "ru": [
+      "динамически изученные безопасные MAC-адреса не будут сохранены при перезапуске коммутатора"
+    ]
+  },
+  {
+    "time": [
+      227.983235,
+      235.363753
+    ],
+    "en": [
+      "even if you save the running configuration because the address isn't actually entered into the runner configuration when it is dynamically learned"
+    ],
+    "ru": [
+      "даже если вы сохраните текущую конфигурацию, потому что адрес фактически не вводится в конфигурацию бегуна, когда он динамически запоминается"
+    ]
+  },
+  {
+    "time": [
+      235.363753,
+      244.266878
+    ],
+    "en": [
+      "step 7 is to enable the sticky secure MAC address feature on switch ones f02 interface"
+    ],
+    "ru": [
+      "Шаг 7 - включить функцию закрепления безопасного MAC-адреса на интерфейсе f02 коммутатора."
+    ]
+  },
+  {
+    "time": [
+      244.266878,
+      249.13973
+    ],
+    "en": [
+      "conf t interface f0 2"
+    ],
+    "ru": [
+      "conf t interface f0 2"
+    ]
+  },
+  {
+    "time": [
+      249.13973,
+      252.65166
+    ],
+    "en": [
+      "now this feature is enabled with this command"
+    ],
+    "ru": [
+      "теперь эта функция включена с помощью этой команды"
+    ]
+  },
+  {
+    "time": [
+      252.65166,
+      258.736498
+    ],
+    "en": [
+      "switch port port security MAC address sticky"
+    ],
+    "ru": [
+      "порт коммутатора безопасность порта MAC-адрес залипание"
+    ]
+  },
+  {
+    "time": [
+      258.736498,
+      260.519249
+    ],
+    "en": [
+      "that's it"
+    ],
+    "ru": [
+      "это оно"
+    ]
+  },
+  {
+    "time": [
+      260.519249,
+      264.368246
+    ],
+    "en": [
+      "now let's ping between the PCs again to generate traffic"
+    ],
+    "ru": [
+      "теперь давайте снова пингуем между ПК, чтобы генерировать трафик"
+    ]
+  },
+  {
+    "time": [
+      264.368246,
+      271.617883
+    ],
+    "en": [
+      "on PC one ping 192.168.1.11"
+    ],
+    "ru": [
+      "на ПК один пинг 192.168.1.11"
+    ]
+  },
+  {
+    "time": [
+      271.617883,
+      274.760441
+    ],
+    "en": [
+      "that's all for step 7"
+    ],
+    "ru": [
+      "это все для шага 7"
+    ]
+  },
+  {
+    "time": [
+      274.760441,
+      281.388544
+    ],
+    "en": [
+      "step 8 is to view the secure MAC addresses of switch 1"
+    ],
+    "ru": [
+      "Шаг 8 - просмотреть безопасные MAC-адреса коммутатора 1"
+    ]
+  },
+  {
+    "time": [
+      281.388544,
+      283.143796
+    ],
+    "en": [
+      "then the running config"
+    ],
+    "ru": [
+      "затем текущая конфигурация"
+    ]
+  },
+  {
+    "time": [
+      283.143796,
+      288.849657
+    ],
+    "en": [
+      "so on switch 1 show port security address"
+    ],
+    "ru": [
+      "поэтому на коммутаторе 1 отображается адрес безопасности порта"
+    ]
+  },
+  {
+    "time": [
+      288.849657,
+      291.802717
+    ],
+    "en": [
+      "there is PC ones MAC address again"
+    ],
+    "ru": [
+      "снова есть MAC-адрес ПК"
+    ]
+  },
+  {
+    "time": [
+      291.802717,
+      295.151737
+    ],
+    "en": [
+      "this time it is listed as a secure sticky address"
+    ],
+    "ru": [
+      "на этот раз он указан как безопасный липкий адрес"
+    ]
+  },
+  {
+    "time": [
+      295.151737,
+      300.03205
+    ],
+    "en": [
+      "what's the difference well let's check the running configuration"
+    ],
+    "ru": [
+      "какая разница ну давайте проверим работающую конфигурацию"
+    ]
+  },
+  {
+    "time": [
+      300.03205,
+      309.1951
+    ],
+    "en": [
+      "show run as you can see in addition to the three commands we manually configured on the interface"
+    ],
+    "ru": [
+      "show run, как вы можете видеть, в дополнение к трем командам, которые мы вручную настроили в интерфейсе"
+    ]
+  },
+  {
+    "time": [
+      309.1951,
+      311.926622
+    ],
+    "en": [
+      "there is a fourth one which we didn't configure"
+    ],
+    "ru": [
+      "есть четвертый, который мы не настраивали"
+    ]
+  },
+  {
+    "time": [
+      311.926622,
+      316.075433
+    ],
+    "en": [
+      "switch port port security MAC address sticky"
+    ],
+    "ru": [
+      "порт коммутатора безопасность порта MAC-адрес залипание"
+    ]
+  },
+  {
+    "time": [
+      316.075433,
+      318.387568
+    ],
+    "en": [
+      "followed by PC ones MAC address"
+    ],
+    "ru": [
+      "затем MAC-адрес ПК"
+    ]
+  },
+  {
+    "time": [
+      318.387568,
+      322.326921
+    ],
+    "en": [
+      "this is because we enabled the sticky feature"
+    ],
+    "ru": [
+      "это потому, что мы включили липкую функцию"
+    ]
+  },
+  {
+    "time": [
+      322.326921,
+      329.909723
+    ],
+    "en": [
+      "when this feature is enabled the switch saves dynamically learned secure MAC addresses to the running configuration of the switch"
+    ],
+    "ru": [
+      "когда эта функция включена, коммутатор сохраняет динамически полученные безопасные MAC-адреса в текущую конфигурацию коммутатора."
+    ]
+  },
+  {
+    "time": [
+      329.909723,
+      335.938255
+    ],
+    "en": [
+      "step nine is to save the running configuration and reload again"
+    ],
+    "ru": [
+      "Шаг девятый - сохранить текущую конфигурацию и перезагрузить снова"
+    ]
+  },
+  {
+    "time": [
+      335.938255,
+      337.229666
+    ],
+    "en": [
+      "let's do that"
+    ],
+    "ru": [
+      "Давайте сделаем это"
+    ]
+  },
+  {
+    "time": [
+      337.229666,
+      340.319308
+    ],
+    "en": [
+      "write reload"
+    ],
+    "ru": [
+      "написать перезагрузить"
+    ]
+  },
+  {
+    "time": [
+      340.319308,
+      351.921145
+    ],
+    "en": [
+      "step 10 is to view the secure MAC addresses on switch one once again"
+    ],
+    "ru": [
+      "Шаг 10 - еще раз просмотреть безопасные MAC-адреса на первом коммутаторе."
+    ]
+  },
+  {
+    "time": [
+      351.921145,
+      357.277171
+    ],
+    "en": [
+      "this time do you expect to see PC ones MAC address in the table"
+    ],
+    "ru": [
+      "на этот раз вы ожидаете увидеть MAC-адрес компьютеров в таблице"
+    ]
+  },
+  {
+    "time": [
+      357.277171,
+      361.95219
+    ],
+    "en": [
+      "PC ones MAC address was saved to the running configuration of switch 1"
+    ],
+    "ru": [
+      "MAC-адрес ПК был сохранен в текущей конфигурации коммутатора 1."
+    ]
+  },
+  {
+    "time": [
+      361.95219,
+      365.295647
+    ],
+    "en": [
+      "and we saved the running configuration before reloading"
+    ],
+    "ru": [
+      "и мы сохранили текущую конфигурацию перед перезагрузкой"
+    ]
+  },
+  {
+    "time": [
+      365.295647,
+      368.594705
+    ],
+    "en": [
+      "so it should be in the table even after restarting"
+    ],
+    "ru": [
+      "поэтому он должен быть в таблице даже после перезапуска"
+    ]
+  },
+  {
+    "time": [
+      368.594705,
+      371.021187
+    ],
+    "en": [
+      "let's check"
+    ],
+    "ru": [
+      "Давайте проверим"
+    ]
+  },
+  {
+    "time": [
+      371.021187,
+      376.133495
+    ],
+    "en": [
+      "enable show port security address"
+    ],
+    "ru": [
+      "включить показывать адрес безопасности порта"
+    ]
+  },
+  {
+    "time": [
+      376.133495,
+      384.595637
+    ],
+    "en": [
+      "as expected PC ones MAC address is still saved as a secure MAC address on the f02 interface"
+    ],
+    "ru": [
+      "как и ожидалось, MAC-адрес ПК по-прежнему сохраняется как безопасный MAC-адрес на интерфейсе f02"
+    ]
+  },
+  {
+    "time": [
+      384.595637,
+      393.555175
+    ],
+    "en": [
+      "so to review without the sticky feature enabled dynamically learned secure MAC addresses are not retained when the switch is reloaded"
+    ],
+    "ru": [
+      "поэтому для просмотра без включения функции закрепления динамически изученные безопасные MAC-адреса не сохраняются при перезагрузке коммутатора"
+    ]
+  },
+  {
+    "time": [
+      393.555175,
+      400.4179
+    ],
+    "en": [
+      "the sticky MAC address learning feature however automatically saves these addresses to the running configuration"
+    ],
+    "ru": [
+      "функция запоминания MAC-адресов автоматически сохраняет эти адреса в текущей конфигурации."
+    ]
+  },
+  {
+    "time": [
+      400.4179,
+      404.812631
+    ],
+    "en": [
+      "and thus will be retained upon reload if the runner configuration is saved"
+    ],
+    "ru": [
+      "и, таким образом, будет сохранен при перезагрузке, если сохранена конфигурация бегуна"
+    ]
+  },
+  {
+    "time": [
+      404.812631,
+      407.109874
+    ],
+    "en": [
+      "that's all for this lab"
+    ],
+    "ru": [
+      "это все для этой лаборатории"
+    ]
+  },
+  {
+    "time": [
+      407.109874,
+      413.389137
+    ],
+    "en": [
+      "thank you for watching I hope this lab and video have been helpful for you"
+    ],
+    "ru": [
+      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были для вас полезны."
+    ]
+  },
+  {
+    "time": [
+      413.389137,
+      418.530425
+    ],
+    "en": [
+      "please subscribe for future labs like this which will be released weekly"
+    ],
+    "ru": [
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
+    ]
+  },
+  {
+    "time": [
+      418.530425,
+      423.437822
+    ],
+    "en": [
+      "if you have requests for any specific labs let me know in the comment section"
+    ],
+    "ru": [
+      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
+    ]
+  },
+  {
+    "time": [
+      423.437822,
+      430.413187
+    ],
+    "en": [
+      "if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description"
+    ],
+    "ru": [
+      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфириумом по адресам в описании"
+    ]
+  },
+  {
+    "time": [
+      430.413187,
+      438.763736
+    ],
+    "en": [
+      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
+    ],
+    "ru": [
+      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
+    ]
+  },
+  {
+    "time": [
+      438.763736,
+      438.763736
     ],
     "en": [
       ""
@@ -313,8 +1081,8 @@ let objs = [
   },
   {
     "time": [
-      70.0,
-      75.0
+      438.763736,
+      438.763736
     ],
     "en": [
       ""
@@ -325,1370 +1093,14 @@ let objs = [
   },
   {
     "time": [
-      75.0,
-      80.0
-    ],
-    "en": [
-      "enable con 40 interface F 0 to switch"
-    ],
-    "ru": [
-      "включить con 40 interface F 0 для переключения"
-    ]
-  },
-  {
-    "time": [
-      80.0,
-      83.0
-    ],
-    "en": [
-      "port mode access switch port port"
-    ],
-    "ru": [
-      "порт коммутатора доступа в режиме порта порт"
-    ]
-  },
-  {
-    "time": [
-      83.0,
-      87.0
-    ],
-    "en": [
-      "security now let's go straight into step"
-    ],
-    "ru": [
-      "безопасность теперь давайте перейдем к делу"
-    ]
-  },
-  {
-    "time": [
-      87.0,
-      91.0
+      438.763736,
+      438.763736
     ],
     "en": [
       ""
     ],
     "ru": [
       ""
-    ]
-  },
-  {
-    "time": [
-      87.0,
-      91.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      91.0,
-      94.0
-    ],
-    "en": [
-      "generate traffic between them remember"
-    ],
-    "ru": [
-      "генерировать трафик между ними помните"
-    ]
-  },
-  {
-    "time": [
-      94.0,
-      96.0
-    ],
-    "en": [
-      "that no traffic is passing between these"
-    ],
-    "ru": [
-      "что между этими"
-    ]
-  },
-  {
-    "time": [
-      96.0,
-      99.0
-    ],
-    "en": [
-      "pcs by default so the switches won't"
-    ],
-    "ru": [
-      "ПК по умолчанию, поэтому переключатели не"
-    ]
-  },
-  {
-    "time": [
-      99.0,
-      102.0
-    ],
-    "en": [
-      "learn the MAC addresses of the PCs until"
-    ],
-    "ru": [
-      "узнать MAC-адреса компьютеров, пока"
-    ]
-  },
-  {
-    "time": [
-      102.0,
-      104.0
-    ],
-    "en": [
-      "we send some traffic between them I'll"
-    ],
-    "ru": [
-      "мы отправим трафик между ними, я"
-    ]
-  },
-  {
-    "time": [
-      104.0,
-      112.0
-    ],
-    "en": [
-      "ping from PC one paying 192.168.1.2 elv"
-    ],
-    "ru": [
-      "пинг с ПК один платит 192.168.1.2 elv"
-    ]
-  },
-  {
-    "time": [
-      112.0,
-      118.0
-    ],
-    "en": [
-      "there we go step 3 is to view the secure"
-    ],
-    "ru": [
-      "Итак, шаг 3 - просмотр защищенного"
-    ]
-  },
-  {
-    "time": [
-      118.0,
-      121.0
-    ],
-    "en": [
-      "MAC addresses on switch 1 I'll go back"
-    ],
-    "ru": [
-      "MAC-адреса на коммутаторе 1, я вернусь"
-    ]
-  },
-  {
-    "time": [
-      121.0,
-      127.0
-    ],
-    "en": [
-      "to switch 1 and now I'll use the command"
-    ],
-    "ru": [
-      "чтобы переключить 1, и теперь я воспользуюсь командой"
-    ]
-  },
-  {
-    "time": [
-      127.0,
-      130.0
-    ],
-    "en": [
-      "show port security address as in the"
-    ],
-    "ru": [
-      "показать адрес безопасности порта, как в"
-    ]
-  },
-  {
-    "time": [
-      130.0,
-      132.0
-    ],
-    "en": [
-      "previous lab"
-    ],
-    "ru": [
-      "предыдущая лаборатория"
-    ]
-  },
-  {
-    "time": [
-      132.0,
-      134.0
-    ],
-    "en": [
-      "as you can see there is a dynamically"
-    ],
-    "ru": [
-      "как видите, динамически"
-    ]
-  },
-  {
-    "time": [
-      134.0,
-      137.0
-    ],
-    "en": [
-      "learned secure MAC address on the Fast"
-    ],
-    "ru": [
-      "узнал безопасный MAC-адрес на Fast"
-    ]
-  },
-  {
-    "time": [
-      137.0,
-      140.0
-    ],
-    "en": [
-      "Ethernet 0 2 interface which must be PC"
-    ],
-    "ru": [
-      "Интерфейс Ethernet 0 2, который должен быть ПК"
-    ]
-  },
-  {
-    "time": [
-      140.0,
-      145.0
-    ],
-    "en": [
-      "ones step four says to check the"
-    ],
-    "ru": [
-      "один шаг четвертый говорит, чтобы проверить"
-    ]
-  },
-  {
-    "time": [
-      145.0,
-      147.0
-    ],
-    "en": [
-      "configuration of switch ones Fast"
-    ],
-    "ru": [
-      "настройка коммутаторов Быстро"
-    ]
-  },
-  {
-    "time": [
-      147.0,
-      149.0
-    ],
-    "en": [
-      "Ethernet 0 to interface in the running"
-    ],
-    "ru": [
-      "Ethernet 0 для интерфейса в работающем"
-    ]
-  },
-  {
-    "time": [
-      149.0,
-      155.0
-    ],
-    "en": [
-      "configuration show running config here"
-    ],
-    "ru": [
-      "конфигурация показывает текущую конфигурацию здесь"
-    ]
-  },
-  {
-    "time": [
-      155.0,
-      158.0
-    ],
-    "en": [
-      "it is as you can see there are only the"
-    ],
-    "ru": [
-      "как видите, есть только"
-    ]
-  },
-  {
-    "time": [
-      158.0,
-      161.0
-    ],
-    "en": [
-      "two commands we entered before switch"
-    ],
-    "ru": [
-      "две команды, которые мы ввели перед переключением"
-    ]
-  },
-  {
-    "time": [
-      161.0,
-      163.0
-    ],
-    "en": [
-      "port mode access and switch port port"
-    ],
-    "ru": [
-      "доступ в режиме порта и порт порта коммутатора"
-    ]
-  },
-  {
-    "time": [
-      163.0,
-      166.0
-    ],
-    "en": [
-      "security remember this as we will"
-    ],
-    "ru": [
-      "безопасность помните об этом, как и мы"
-    ]
-  },
-  {
-    "time": [
-      166.0,
-      169.0
-    ],
-    "en": [
-      "contrast it with sticky mag address"
-    ],
-    "ru": [
-      "Сравните это с липким адресом в журнале"
-    ]
-  },
-  {
-    "time": [
-      169.0,
-      173.0
-    ],
-    "en": [
-      "configuration later step 5 is to save"
-    ],
-    "ru": [
-      "конфигурация на последнем шаге 5 - сохранить"
-    ]
-  },
-  {
-    "time": [
-      173.0,
-      175.0
-    ],
-    "en": [
-      "the running config and reload the switch"
-    ],
-    "ru": [
-      "текущую конфигурацию и перезагрузите коммутатор"
-    ]
-  },
-  {
-    "time": [
-      175.0,
-      182.0
-    ],
-    "en": [
-      "I'll use write to save then reload ok"
-    ],
-    "ru": [
-      "Я воспользуюсь записью, чтобы сохранить, а затем перезагрузить, хорошо"
-    ]
-  },
-  {
-    "time": [
-      182.0,
-      191.0
-    ],
-    "en": [
-      "now the switch is reloading step 6 is to"
-    ],
-    "ru": [
-      "теперь переключатель перезагружается, шаг 6 -"
-    ]
-  },
-  {
-    "time": [
-      191.0,
-      193.0
-    ],
-    "en": [
-      "view the secure MAC addresses on switch"
-    ],
-    "ru": [
-      "просматривать безопасные MAC-адреса на коммутаторе"
-    ]
-  },
-  {
-    "time": [
-      193.0,
-      197.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      193.0,
-      197.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      197.0,
-      199.0
-    ],
-    "en": [
-      "will still be saved as a secure MAC"
-    ],
-    "ru": [
-      "все равно будет сохранен как безопасный MAC"
-    ]
-  },
-  {
-    "time": [
-      199.0,
-      202.0
-    ],
-    "en": [
-      "address we saved the running"
-    ],
-    "ru": [
-      "адрес мы сохранили текущий"
-    ]
-  },
-  {
-    "time": [
-      202.0,
-      205.0
-    ],
-    "en": [
-      "configuration but PC ones MAC address"
-    ],
-    "ru": [
-      "конфигурация, но MAC-адрес ПК"
-    ]
-  },
-  {
-    "time": [
-      205.0,
-      207.0
-    ],
-    "en": [
-      "wasn't anywhere in the running"
-    ],
-    "ru": [
-      "нигде не было в бегах"
-    ]
-  },
-  {
-    "time": [
-      207.0,
-      211.0
-    ],
-    "en": [
-      "configuration so let's check the port"
-    ],
-    "ru": [
-      "конфигурация, давайте проверим порт"
-    ]
-  },
-  {
-    "time": [
-      211.0,
-      215.0
-    ],
-    "en": [
-      "security address table again enable show"
-    ],
-    "ru": [
-      "таблица адресов безопасности снова включить шоу"
-    ]
-  },
-  {
-    "time": [
-      215.0,
-      219.0
-    ],
-    "en": [
-      "port security address as you can see PC"
-    ],
-    "ru": [
-      "адрес безопасности порта, как вы видите на ПК"
-    ]
-  },
-  {
-    "time": [
-      219.0,
-      222.0
-    ],
-    "en": [
-      "ones MAC address is no longer present"
-    ],
-    "ru": [
-      "тот MAC-адрес больше не присутствует"
-    ]
-  },
-  {
-    "time": [
-      222.0,
-      224.0
-    ],
-    "en": [
-      "dynamically learned secure MAC addresses"
-    ],
-    "ru": [
-      "динамически изученные безопасные MAC-адреса"
-    ]
-  },
-  {
-    "time": [
-      224.0,
-      226.0
-    ],
-    "en": [
-      "will not be retained when you restart"
-    ],
-    "ru": [
-      "не будет сохранен при перезапуске"
-    ]
-  },
-  {
-    "time": [
-      226.0,
-      229.0
-    ],
-    "en": [
-      "the switch even if you save the running"
-    ],
-    "ru": [
-      "переключатель, даже если вы сохраните бег"
-    ]
-  },
-  {
-    "time": [
-      229.0,
-      231.0
-    ],
-    "en": [
-      "configuration because the address isn't"
-    ],
-    "ru": [
-      "конфигурация, потому что адрес не"
-    ]
-  },
-  {
-    "time": [
-      231.0,
-      232.0
-    ],
-    "en": [
-      "actually entered into the runner"
-    ],
-    "ru": [
-      "фактически вошел в бегун"
-    ]
-  },
-  {
-    "time": [
-      232.0,
-      234.0
-    ],
-    "en": [
-      "configuration when it is dynamically"
-    ],
-    "ru": [
-      "конфигурация, когда она динамически"
-    ]
-  },
-  {
-    "time": [
-      234.0,
-      239.0
-    ],
-    "en": [
-      "learned step 7 is to enable the sticky"
-    ],
-    "ru": [
-      "выученный шаг 7 - включить липкий"
-    ]
-  },
-  {
-    "time": [
-      239.0,
-      241.0
-    ],
-    "en": [
-      "secure MAC address feature on switch"
-    ],
-    "ru": [
-      "функция безопасного MAC-адреса на коммутаторе"
-    ]
-  },
-  {
-    "time": [
-      241.0,
-      242.0
-    ],
-    "en": [
-      "ones"
-    ],
-    "ru": [
-      "те"
-    ]
-  },
-  {
-    "time": [
-      242.0,
-      249.0
-    ],
-    "en": [
-      "f02 interface con 40 interface f0 to now"
-    ],
-    "ru": [
-      "f02 interface con 40 interface f0 to now"
-    ]
-  },
-  {
-    "time": [
-      249.0,
-      251.0
-    ],
-    "en": [
-      "this feature is enabled with this"
-    ],
-    "ru": [
-      "эта функция включена с этим"
-    ]
-  },
-  {
-    "time": [
-      251.0,
-      256.0
-    ],
-    "en": [
-      "command switch port port security MAC"
-    ],
-    "ru": [
-      "команда коммутатора порт порт безопасность MAC"
-    ]
-  },
-  {
-    "time": [
-      256.0,
-      260.0
-    ],
-    "en": [
-      "address sticky that's it"
-    ],
-    "ru": [
-      "адрес липкий, вот и все"
-    ]
-  },
-  {
-    "time": [
-      260.0,
-      262.0
-    ],
-    "en": [
-      "now let's ping between the PCs again to"
-    ],
-    "ru": [
-      "теперь давайте снова пингуем между ПК, чтобы"
-    ]
-  },
-  {
-    "time": [
-      262.0,
-      264.0
-    ],
-    "en": [
-      "generate traffic"
-    ],
-    "ru": [
-      "генерировать трафик"
-    ]
-  },
-  {
-    "time": [
-      264.0,
-      272.0
-    ],
-    "en": [
-      "on PC one ping 192.168.1.1 that's all"
-    ],
-    "ru": [
-      "на ПК один пинг 192.168.1.1 вот и все"
-    ]
-  },
-  {
-    "time": [
-      272.0,
-      279.0
-    ],
-    "en": [
-      "for step 7 step 8 is to view the secure"
-    ],
-    "ru": [
-      "для шага 7 шаг 8 - просмотреть безопасный"
-    ]
-  },
-  {
-    "time": [
-      279.0,
-      281.0
-    ],
-    "en": [
-      "MAC addresses of switch 1 then the"
-    ],
-    "ru": [
-      "MAC-адреса коммутатора 1, затем"
-    ]
-  },
-  {
-    "time": [
-      281.0,
-      287.0
-    ],
-    "en": [
-      "running config so on switch 1 show port"
-    ],
-    "ru": [
-      "запущенная конфигурация, поэтому на коммутаторе 1 отображается порт"
-    ]
-  },
-  {
-    "time": [
-      287.0,
-      290.0
-    ],
-    "en": [
-      "security address there is PC ones MAC"
-    ],
-    "ru": [
-      "адрес безопасности есть ПК MAC"
-    ]
-  },
-  {
-    "time": [
-      290.0,
-      293.0
-    ],
-    "en": [
-      "address again this time it is listed as"
-    ],
-    "ru": [
-      "адрес снова, на этот раз он указан как"
-    ]
-  },
-  {
-    "time": [
-      293.0,
-      296.0
-    ],
-    "en": [
-      "a secure sticky address what's the"
-    ],
-    "ru": [
-      "безопасный липкий адрес, что за"
-    ]
-  },
-  {
-    "time": [
-      296.0,
-      298.0
-    ],
-    "en": [
-      "difference well let's check the running"
-    ],
-    "ru": [
-      "разница ну давайте проверим ход"
-    ]
-  },
-  {
-    "time": [
-      298.0,
-      304.0
-    ],
-    "en": [
-      "configuration show run as you can see in"
-    ],
-    "ru": [
-      "Конфигурация шоу запускается, как вы можете видеть в"
-    ]
-  },
-  {
-    "time": [
-      304.0,
-      306.0
-    ],
-    "en": [
-      "addition to the three commands we"
-    ],
-    "ru": [
-      "в дополнение к трем командам мы"
-    ]
-  },
-  {
-    "time": [
-      306.0,
-      308.0
-    ],
-    "en": [
-      "manually configured on the interface"
-    ],
-    "ru": [
-      "настраивается вручную на интерфейсе"
-    ]
-  },
-  {
-    "time": [
-      308.0,
-      310.0
-    ],
-    "en": [
-      "there is a fourth one which we didn't"
-    ],
-    "ru": [
-      "есть четвертый, которого мы не сделали"
-    ]
-  },
-  {
-    "time": [
-      310.0,
-      314.0
-    ],
-    "en": [
-      "configure switch port port security MAC"
-    ],
-    "ru": [
-      "настроить MAC-адрес безопасности порта порта коммутатора"
-    ]
-  },
-  {
-    "time": [
-      314.0,
-      317.0
-    ],
-    "en": [
-      "address sticky followed by PC ones MAC"
-    ],
-    "ru": [
-      "прикрепленный адрес, за которым следуют MAC-адреса ПК"
-    ]
-  },
-  {
-    "time": [
-      317.0,
-      320.0
-    ],
-    "en": [
-      "address this is because we enabled the"
-    ],
-    "ru": [
-      "адрес, потому что мы включили"
-    ]
-  },
-  {
-    "time": [
-      320.0,
-      323.0
-    ],
-    "en": [
-      "sticky feature when this feature is"
-    ],
-    "ru": [
-      "липкая функция, когда эта функция"
-    ]
-  },
-  {
-    "time": [
-      323.0,
-      325.0
-    ],
-    "en": [
-      "enabled the switch saves dynamically"
-    ],
-    "ru": [
-      "включен переключатель сохраняет динамически"
-    ]
-  },
-  {
-    "time": [
-      325.0,
-      327.0
-    ],
-    "en": [
-      "learned secure MAC addresses to the"
-    ],
-    "ru": [
-      "узнал безопасные MAC-адреса для"
-    ]
-  },
-  {
-    "time": [
-      327.0,
-      331.0
-    ],
-    "en": [
-      "running configuration of the switch step"
-    ],
-    "ru": [
-      "рабочая конфигурация ступени переключателя"
-    ]
-  },
-  {
-    "time": [
-      331.0,
-      333.0
-    ],
-    "en": [
-      "nine is to save the running"
-    ],
-    "ru": [
-      "девять - это спасти бег"
-    ]
-  },
-  {
-    "time": [
-      333.0,
-      336.0
-    ],
-    "en": [
-      "configuration and reload again let's do"
-    ],
-    "ru": [
-      "конфигурация и перезагрузка снова давайте сделаем"
-    ]
-  },
-  {
-    "time": [
-      336.0,
-      346.0
-    ],
-    "en": [
-      "that right reload"
-    ],
-    "ru": [
-      "Правильная перезагрузка"
-    ]
-  },
-  {
-    "time": [
-      346.0,
-      349.0
-    ],
-    "en": [
-      "step 10 is to view the secure MAC"
-    ],
-    "ru": [
-      "Шаг 10 - просмотреть защищенный MAC"
-    ]
-  },
-  {
-    "time": [
-      349.0,
-      352.0
-    ],
-    "en": [
-      "addresses on switch one once again this"
-    ],
-    "ru": [
-      "адреса на первом переключателе еще раз это"
-    ]
-  },
-  {
-    "time": [
-      352.0,
-      355.0
-    ],
-    "en": [
-      "time do you expect to see PC ones MAC"
-    ],
-    "ru": [
-      "вы ожидаете увидеть ПК MAC"
-    ]
-  },
-  {
-    "time": [
-      355.0,
-      359.0
-    ],
-    "en": [
-      "address in the table PC ones MAC address"
-    ],
-    "ru": [
-      "адрес в таблице ПК свои MAC-адрес"
-    ]
-  },
-  {
-    "time": [
-      359.0,
-      360.0
-    ],
-    "en": [
-      "was saved to the running configuration"
-    ],
-    "ru": [
-      "был сохранен в текущей конфигурации"
-    ]
-  },
-  {
-    "time": [
-      360.0,
-      363.0
-    ],
-    "en": [
-      "of switch 1 and we saved the running"
-    ],
-    "ru": [
-      "переключателя 1, и мы сохранили"
-    ]
-  },
-  {
-    "time": [
-      363.0,
-      365.0
-    ],
-    "en": [
-      "configuration before reloading so it"
-    ],
-    "ru": [
-      "конфигурации перед перезагрузкой, чтобы"
-    ]
-  },
-  {
-    "time": [
-      365.0,
-      367.0
-    ],
-    "en": [
-      "should be in the table even after"
-    ],
-    "ru": [
-      "должен быть в таблице даже после"
-    ]
-  },
-  {
-    "time": [
-      367.0,
-      374.0
-    ],
-    "en": [
-      "restarting let's check enable show port"
-    ],
-    "ru": [
-      "перезапуск, давайте проверим, включить показ порта"
-    ]
-  },
-  {
-    "time": [
-      374.0,
-      379.0
-    ],
-    "en": [
-      "security address as expected PC ones MAC"
-    ],
-    "ru": [
-      "адрес безопасности, как и ожидалось, ПК MAC"
-    ]
-  },
-  {
-    "time": [
-      379.0,
-      381.0
-    ],
-    "en": [
-      "address is still saved as a secure MAC"
-    ],
-    "ru": [
-      "адрес по-прежнему сохраняется как безопасный MAC"
-    ]
-  },
-  {
-    "time": [
-      381.0,
-      385.0
-    ],
-    "en": [
-      "address on the f02 interface so to"
-    ],
-    "ru": [
-      "адрес на интерфейсе f02, чтобы"
-    ]
-  },
-  {
-    "time": [
-      385.0,
-      387.0
-    ],
-    "en": [
-      "review without the sticky feature"
-    ],
-    "ru": [
-      "обзор без липкой функции"
-    ]
-  },
-  {
-    "time": [
-      387.0,
-      390.0
-    ],
-    "en": [
-      "enabled dynamically learned secure MAC"
-    ],
-    "ru": [
-      "включен динамически изученный безопасный MAC"
-    ]
-  },
-  {
-    "time": [
-      390.0,
-      392.0
-    ],
-    "en": [
-      "addresses are not retained when the"
-    ],
-    "ru": [
-      "адреса не сохраняются, когда"
-    ]
-  },
-  {
-    "time": [
-      392.0,
-      394.0
-    ],
-    "en": [
-      "switch is reloaded the sticky MAC"
-    ],
-    "ru": [
-      "переключатель перезагружается липкий MAC"
-    ]
-  },
-  {
-    "time": [
-      394.0,
-      396.0
-    ],
-    "en": [
-      "address learning feature however"
-    ],
-    "ru": [
-      "адресная функция обучения, однако"
-    ]
-  },
-  {
-    "time": [
-      396.0,
-      398.0
-    ],
-    "en": [
-      "automatically saves these addresses to"
-    ],
-    "ru": [
-      "автоматически сохраняет эти адреса в"
-    ]
-  },
-  {
-    "time": [
-      398.0,
-      401.0
-    ],
-    "en": [
-      "the running configuration and thus will"
-    ],
-    "ru": [
-      "текущая конфигурация и, таким образом, будет"
-    ]
-  },
-  {
-    "time": [
-      401.0,
-      403.0
-    ],
-    "en": [
-      "be retained upon reload if the runner"
-    ],
-    "ru": [
-      "сохраняться при перезагрузке, если бегун"
-    ]
-  },
-  {
-    "time": [
-      403.0,
-      406.0
-    ],
-    "en": [
-      "configuration is saved that's all for"
-    ],
-    "ru": [
-      "конфигурация сохранена вот и все для"
-    ]
-  },
-  {
-    "time": [
-      406.0,
-      408.0
-    ],
-    "en": [
-      "this lab"
-    ],
-    "ru": [
-      "эта лаборатория"
-    ]
-  },
-  {
-    "time": [
-      408.0,
-      411.0
-    ],
-    "en": [
-      "thank you for watching I hope this lab"
-    ],
-    "ru": [
-      "спасибо за просмотр, надеюсь, эта лаборатория"
-    ]
-  },
-  {
-    "time": [
-      411.0,
-      413.0
-    ],
-    "en": [
-      "and video have been helpful for you"
-    ],
-    "ru": [
-      "и видео были для вас полезны"
-    ]
-  },
-  {
-    "time": [
-      413.0,
-      415.0
-    ],
-    "en": [
-      "please subscribe for future labs like"
-    ],
-    "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, такие как"
-    ]
-  },
-  {
-    "time": [
-      415.0,
-      418.0
-    ],
-    "en": [
-      "this which will be released weekly if"
-    ],
-    "ru": [
-      "это будет выпускаться еженедельно, если"
-    ]
-  },
-  {
-    "time": [
-      418.0,
-      420.0
-    ],
-    "en": [
-      "you have requests for any specific labs"
-    ],
-    "ru": [
-      "у вас есть запросы по каким-либо конкретным лабораториям"
-    ]
-  },
-  {
-    "time": [
-      420.0,
-      423.0
-    ],
-    "en": [
-      "let me know in the comment section if"
-    ],
-    "ru": [
-      "дайте мне знать в разделе комментариев, если"
-    ]
-  },
-  {
-    "time": [
-      423.0,
-      426.0
-    ],
-    "en": [
-      "you want to support my channel I accept"
-    ],
-    "ru": [
-      "вы хотите поддержать мой канал я принимаю"
-    ]
-  },
-  {
-    "time": [
-      426.0,
-      428.0
-    ],
-    "en": [
-      "Bitcoin and aetherium donations via the"
-    ],
-    "ru": [
-      "Пожертвования биткойнов и эфириума через"
-    ]
-  },
-  {
-    "time": [
-      428.0,
-      431.0
-    ],
-    "en": [
-      "addresses in the description I am also a"
-    ],
-    "ru": [
-      "адреса в описании я тоже"
-    ]
-  },
-  {
-    "time": [
-      431.0,
-      434.0
-    ],
-    "en": [
-      "brave verified publisher and accept bat"
-    ],
-    "ru": [
-      "храбрый проверенный издатель и прими летучую мышь"
-    ]
-  },
-  {
-    "time": [
-      434.0,
-      437.0
-    ],
-    "en": [
-      "or basic attention token donations in"
-    ],
-    "ru": [
-      "или основные пожертвования токенов внимания в"
-    ]
-  },
-  {
-    "time": [
-      437.0,
-      437.0
-    ],
-    "en": [
-      "the brave browser"
-    ],
-    "ru": [
-      "смелый браузер"
     ]
   }
 ]

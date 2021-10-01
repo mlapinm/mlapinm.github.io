@@ -2,877 +2,1105 @@ let objs = [
   {
     "time": [
       0.0,
-      3.0
+      4.381351
     ],
     "en": [
-      "welcome to this free CCNA packet tracer"
+      "welcome to this free CCNA packet tracer practice lab"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный трассировщик пакетов CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
     ]
   },
   {
     "time": [
-      3.0,
-      6.0
+      4.381351,
+      7.711086
     ],
     "en": [
-      "practice lab you can download the lab"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "Практическая лаборатория вы можете скачать лабораторию"
+      "скачать лабораторный файл можно по ссылке в описании"
     ]
   },
   {
     "time": [
-      6.0,
-      8.0
+      7.711086,
+      12.269324
     ],
     "en": [
-      "file from the link in the description in"
+      "this lab will largely be a review of VLANs"
     ],
     "ru": [
-      "файл по ссылке в описании в"
+      "эта лабораторная работа будет в основном обзором сетей VLAN."
     ]
   },
   {
     "time": [
-      8.0,
-      11.0
+      12.269324,
+      15.095584
     ],
     "en": [
-      "this lab we will review the creation of"
+      "but with a couple commands we didn't cover before"
     ],
     "ru": [
-      "в этой лабораторной работе мы рассмотрим создание"
+      "но с парой команд, которые мы не рассматривали раньше"
     ]
   },
   {
     "time": [
-      11.0,
-      13.0
+      15.095584,
+      16.829985
     ],
     "en": [
-      "a local user database on the router and"
+      "which you should be familiar with for the test"
     ],
     "ru": [
-      "локальная база данных пользователей на маршрутизаторе и"
+      "с которым вы должны быть знакомы для теста"
     ]
   },
   {
     "time": [
-      13.0,
-      17.0
+      16.829985,
+      21.22814
     ],
     "en": [
-      "introduced the banner function this will"
+      "as always try to complete the lab on your own first"
     ],
     "ru": [
-      "представил функцию баннера, это будет"
+      "как всегда, попробуйте сначала пройти лабораторию самостоятельно"
     ]
   },
   {
     "time": [
-      17.0,
-      18.0
+      21.22814,
+      24.114711
     ],
     "en": [
-      "be a fairly short lab but try to"
+      "then continue watching this video if you have trouble"
     ],
     "ru": [
-      "быть довольно короткой лабораторией, но постарайтесь"
+      "тогда продолжайте смотреть это видео, если у вас возникнут проблемы"
     ]
   },
   {
     "time": [
-      18.0,
-      20.0
+      24.114711,
+      26.588038
     ],
     "en": [
-      "complete it on your own first and then"
+      "or watch it after to check your solution"
     ],
     "ru": [
-      "завершите это сначала самостоятельно, а затем"
+      "или просмотрите его позже, чтобы проверить свое решение"
     ]
   },
   {
     "time": [
-      20.0,
-      22.0
+      26.588038,
+      31.925287
     ],
     "en": [
-      "continue watching this video if you have"
+      "note that just for the purpose of this video I have pre-configured switch 2 to save time"
     ],
     "ru": [
-      "продолжайте смотреть это видео, если у вас есть"
+      "обратите внимание, что специально для этого видео я предварительно настроил переключатель 2, чтобы сэкономить время"
     ]
   },
   {
     "time": [
-      22.0,
-      24.0
+      31.925287,
+      36.104123
     ],
     "en": [
-      "trouble or watch it after to check your"
+      "this is not the case in the lab file you can download below"
     ],
     "ru": [
-      "проблемы или посмотрите это позже, чтобы проверить свой"
+      "это не так в лабораторном файле, который вы можете скачать ниже"
     ]
   },
   {
     "time": [
-      24.0,
-      30.0
+      36.104123,
+      40.779842
     ],
     "en": [
-      "solution step one is to use PC one to"
+      "although in this lab the configurations for each switch happen to be the same"
     ],
     "ru": [
-      "Первый шаг решения - использовать ПК один для"
+      "хотя в этой лабораторной работе конфигурации для каждого переключателя совпадают"
     ]
   },
   {
     "time": [
-      30.0,
-      33.0
+      40.779842,
+      42.983762
     ],
     "en": [
-      "connect to r1 via the console port"
+      "it's good to practice them twice"
     ],
     "ru": [
-      "подключиться к r1 через консольный порт"
+      "хорошо практиковать их дважды"
     ]
   },
   {
     "time": [
-      33.0,
-      35.0
+      42.983762,
+      48.614783
     ],
     "en": [
-      "they're already connected by a cable so"
+      "step one is to set the host names of the switches"
     ],
     "ru": [
-      "они уже подключены кабелем, поэтому"
+      "Шаг первый - установить имена хостов коммутаторов"
     ]
   },
   {
     "time": [
-      35.0,
-      40.0
+      48.614783,
+      54.7167
     ],
     "en": [
-      "let's click on PC one desktop terminal"
+      "for most of these labs I've been pre configuring the host names but let's quickly review the command"
     ],
     "ru": [
-      "давайте нажмем на ПК один настольный терминал"
+      "для большинства этих лабораторных работ я предварительно настраивал имена хостов, но давайте быстро рассмотрим команду"
     ]
   },
   {
     "time": [
-      40.0,
-      44.0
+      54.7167,
+      62.909658
     ],
     "en": [
-      "and press ok to accept the default"
+      "I'll hop on switch one and enable conf t host name switch 1"
     ],
     "ru": [
-      "и нажмите ОК, чтобы принять значение по умолчанию"
+      "Я перейду на первый переключатель и включу переключатель имени хоста conf t 1."
     ]
   },
   {
     "time": [
-      44.0,
-      48.0
+      62.909658,
+      67.026076
     ],
     "en": [
-      "configurations step two is to create two"
+      "again for this video I already configured switch 2"
     ],
     "ru": [
-      "второй шаг конфигурации - создание двух"
+      "опять же для этого видео я уже настроил переключатель 2"
     ]
   },
   {
     "time": [
-      48.0,
-      51.0
+      67.026076,
+      69.473172
     ],
     "en": [
-      "users on our one last time we created"
+      "step 1 is now complete"
     ],
     "ru": [
-      "пользователей в последний раз, когда мы создали"
+      "шаг 1 теперь завершен"
     ]
   },
   {
     "time": [
-      51.0,
-      54.0
+      69.473172,
+      76.630643
     ],
     "en": [
-      "user accounts with passwords this time"
+      "step two is to create two VLANs on the switches and configure their names"
     ],
     "ru": [
-      "учетные записи пользователей с паролями на этот раз"
+      "Шаг второй - создать две сети VLAN на коммутаторах и настроить их имена."
     ]
   },
   {
     "time": [
-      54.0,
-      56.0
+      76.630643,
+      83.698647
     ],
     "en": [
-      "we will use secrets same as with the"
+      "you may remember from previous labs that when you assign a switch interface to a VLAN that doesn't exist"
     ],
     "ru": [
-      "мы будем использовать секреты так же, как и с"
+      "вы, возможно, помните из предыдущих лабораторных работ, что когда вы назначаете интерфейс коммутатора для VLAN, которая не существует"
     ]
   },
   {
     "time": [
-      56.0,
-      59.0
+      83.698647,
+      86.303929
     ],
     "en": [
-      "enable password and an able secret"
+      "the switch automatically creates the VLAN for you"
     ],
     "ru": [
-      "включить пароль и способный секрет"
+      "коммутатор автоматически создает для вас VLAN"
     ]
   },
   {
     "time": [
-      59.0,
-      62.0
+      86.303929,
+      92.654156
     ],
     "en": [
-      "passwords are not encrypted but secrets"
+      "however you can also manually create VLANs and there are situations where you'll have to do that"
     ],
     "ru": [
-      "пароли не зашифрованы, но секреты"
+      "однако вы также можете вручную создавать сети VLAN, и есть ситуации, когда вам придется это сделать"
     ]
   },
   {
     "time": [
-      62.0,
-      67.0
+      92.654156,
+      98.840377
     ],
     "en": [
-      "are encrypted by default an able conf t"
+      "the command you use to create a VLAN is also used to enter VLAN configuration mode"
     ],
     "ru": [
-      "по умолчанию зашифрованы"
+      "команда, которую вы используете для создания VLAN, также используется для входа в режим конфигурации VLAN"
     ]
   },
   {
     "time": [
-      67.0,
-      72.0
+      98.840377,
+      101.967943
     ],
     "en": [
-      "username CCNA secret Cisco with a"
+      "which is required to configure the name of a VLAN"
     ],
     "ru": [
-      "имя пользователя CCNA секрет Cisco с"
+      "что требуется для настройки имени VLAN"
     ]
   },
   {
     "time": [
-      72.0,
-      75.0
+      101.967943,
+      105.420704
     ],
     "en": [
-      "capital C remember that user name isn't"
+      "first let's use the do show VLAN command"
     ],
     "ru": [
-      "заглавная C помните, что имя пользователя не"
+      "сначала воспользуемся командой do show VLAN"
     ]
   },
   {
     "time": [
-      75.0,
-      77.0
+      105.420704,
+      116.459729
     ],
     "en": [
-      "case sensitive but the password or"
+      "remember that do is used to allow us to perform commands in global configuration interface configuration or other modes which we would normally have to be in privileged exec mode to use"
     ],
     "ru": [
-      "чувствителен к регистру, но пароль или"
+      "помните, что do используется, чтобы позволить нам выполнять команды в конфигурации интерфейса глобальной конфигурации или в других режимах, которые мы обычно должны находиться в привилегированном режиме exec, чтобы использовать"
     ]
   },
   {
     "time": [
-      77.0,
-      83.0
+      116.459729,
+      120.713308
     ],
     "en": [
-      "secret is next user username CCNP secret"
+      "if you're in privileged exec mode don't include that do"
     ],
     "ru": [
-      "секрет - это имя пользователя следующего пользователя Секрет CCNP"
+      "если вы находитесь в привилегированном режиме exec, не включайте это"
     ]
   },
   {
     "time": [
-      83.0,
-      88.0
+      120.713308,
+      125.787031
     ],
     "en": [
-      "Cisco I'll quickly type do show run to"
+      "as you can see this gives us a lot of information about the VLANs"
     ],
     "ru": [
-      "Cisco, я быстро напечатаю, покажи, беги к"
+      "как видите, это дает нам много информации о VLAN"
     ]
   },
   {
     "time": [
-      88.0,
-      93.0
+      125.787031,
+      131.488062
     ],
     "en": [
-      "check that their encrypted as you can"
+      "however for our purposes now let's instead use the do show VLAN brief command"
     ],
     "ru": [
-      "убедитесь, что они зашифрованы, как вы можете"
+      "однако для наших целей теперь давайте вместо этого будем использовать команду do show VLAN Short"
     ]
   },
   {
     "time": [
-      93.0,
-      97.0
+      131.488062,
+      136.532116
     ],
     "en": [
-      "see they are encrypted by default step 3"
+      "this gives a nice summary of which VLANs we have"
     ],
     "ru": [
-      "увидеть, что они зашифрованы по умолчанию, шаг 3"
+      "это дает хорошее представление о том, какие VLAN у нас есть"
     ]
   },
   {
     "time": [
-      97.0,
-      99.0
+      136.532116,
+      140.750763
     ],
     "en": [
-      "is to set the console port to use the"
+      "and which interfaces of the switch are assigned to which VLAN"
     ],
     "ru": [
-      "- настроить консольный порт для использования"
+      "и какие интерфейсы коммутатора назначены какой VLAN"
     ]
   },
   {
     "time": [
-      99.0,
-      102.0
+      140.750763,
+      143.960696
     ],
     "en": [
-      "local database to authenticate users"
+      "note which VLANs are present by default"
     ],
     "ru": [
-      "локальная база данных для аутентификации пользователей"
+      "обратите внимание, какие сети VLAN присутствуют по умолчанию"
     ]
   },
   {
     "time": [
-      102.0,
-      112.0
+      143.960696,
+      149.302416
     ],
     "en": [
-      "line console 0 login local that's it"
+      "VLAN 1 twitch all ports or interfaces are assigned by default"
     ],
     "ru": [
-      "строка консоли 0 логин локальный вот и все"
+      "VLAN 1 дергается, все порты или интерфейсы назначены по умолчанию"
     ]
   },
   {
     "time": [
-      112.0,
-      115.0
+      149.302416,
+      159.831127
     ],
     "en": [
-      "step four is to set a message of the day"
+      "also VLANs 1003 1005 which are used for FDDI and token ring 2 things you definitely don't need to worry about for your CCNA"
     ],
     "ru": [
-      "Шаг четвертый - установить сообщение дня"
+      "также VLAN 1003 1005, которые используются для FDDI и Token Ring 2 вещи, о которых вам определенно не нужно беспокоиться для вашего CCNA"
     ]
   },
   {
     "time": [
-      115.0,
-      118.0
+      159.831127,
+      165.662284
     ],
     "en": [
-      "banner of welcome to packet racer and a"
+      "now the command to create VLAN 13 is VLAN 13"
     ],
     "ru": [
-      "баннер с приветствием к пакетному гонщику и"
+      "теперь команда для создания VLAN 13 - это VLAN 13"
     ]
   },
   {
     "time": [
-      118.0,
-      121.0
+      165.662284,
+      169.699744
     ],
     "en": [
-      "login banner of authorized users only"
+      "as you can see this puts us into VLAN configuration mode"
     ],
     "ru": [
-      "баннер входа только авторизованных пользователей"
+      "как видите, это переводит нас в режим конфигурации VLAN"
     ]
   },
   {
     "time": [
-      121.0,
-      124.0
+      169.699744,
+      174.180124
     ],
     "en": [
-      "banners are messages that display before"
+      "also I'll use the show VLAN brief command"
     ],
     "ru": [
-      "баннеры - это сообщения, которые отображаются перед"
+      "также я буду использовать короткую команду show VLAN"
     ]
   },
   {
     "time": [
-      124.0,
-      127.0
+      174.180124,
+      177.182903
     ],
     "en": [
-      "or after users log in in this case the"
+      "and you can see that the VLAN has been created"
     ],
     "ru": [
-      "или после входа в систему в этом случае"
+      "и вы можете видеть, что VLAN была создана"
     ]
   },
   {
     "time": [
-      127.0,
-      129.0
+      177.182903,
+      188.072563
     ],
     "en": [
-      "message of the day banner will be"
+      "also note that the default VLAN name is VLAN followed by the four-digit VLAN number in this case 0 0 1 3"
     ],
     "ru": [
-      "сообщение дня баннер будет"
+      "также обратите внимание, что имя VLAN по умолчанию - VLAN, за которым следует четырехзначный номер VLAN в этом случае 0 0 1 3"
     ]
   },
   {
     "time": [
-      129.0,
-      130.0
+      188.072563,
+      194.76125
     ],
     "en": [
-      "displayed above the login banner and"
+      "now let's change the name to management with the command named management"
     ],
     "ru": [
-      "отображается над баннером входа и"
+      "теперь давайте изменим имя на management с помощью команды с именем management"
     ]
   },
   {
     "time": [
-      130.0,
-      133.0
+      194.76125,
+      202.262893
     ],
     "en": [
-      "both will be displayed before our user"
+      "ok now let's use the same commands for VLAN 24 VLAN 24"
     ],
     "ru": [
-      "оба будут отображаться перед нашим пользователем"
+      "хорошо, теперь давайте использовать те же команды для VLAN 24 VLAN 24"
     ]
   },
   {
     "time": [
-      133.0,
-      138.0
+      202.262893,
+      205.206792
     ],
     "en": [
-      "logs in so exit to make the banner of"
+      "name engineering"
     ],
     "ru": [
-      "входит в систему, поэтому выйдите, чтобы сделать баннер"
+      "название инженерное дело"
     ]
   },
   {
     "time": [
-      138.0,
-      142.0
+      205.206792,
+      210.496928
     ],
     "en": [
-      "the day we use this command banner motd"
+      "and now let's show VLAN briefed again and check"
     ],
     "ru": [
-      "день, когда мы используем эту команду, баннер motd"
+      "а теперь давайте снова покажем проинформированный о VLAN и проверим"
     ]
   },
   {
     "time": [
-      142.0,
-      145.0
+      210.496928,
+      218.29557
     ],
     "en": [
-      "then I'll use the question mark to show"
+      "we have successfully created VLAN 13 and VLAN 24 with the names management and engineering"
     ],
     "ru": [
-      "тогда я использую вопросительный знак, чтобы показать"
+      "мы успешно создали VLAN 13 и VLAN 24 с управлением именами и проектированием"
     ]
   },
   {
     "time": [
-      145.0,
-      150.0
+      218.29557,
+      223.456275
     ],
     "en": [
-      "the next option as you can see we need"
+      "when you're doing the lab performed the same configurations on switch 2 and that's step 2"
     ],
     "ru": [
-      "следующий вариант, как видите, нам нужен"
+      "когда вы выполняете лабораторную работу, выполняете те же конфигурации на переключателе 2, и это шаг 2"
     ]
   },
   {
     "time": [
-      150.0,
-      152.0
+      223.456275,
+      232.873363
     ],
     "en": [
-      "to enter a delimited character to"
+      "step three is to place pc1 & pc2 into VLAN 13 & pc2 and pc 4 into VLAN 24"
     ],
     "ru": [
-      "ввести символ с разделителями в"
+      "Шаг третий - поместить ПК1 и ПК2 в VLAN 13 и ПК2, а ПК 4 - в VLAN 24."
     ]
   },
   {
     "time": [
-      152.0,
-      153.0
+      232.873363,
+      240.064026
     ],
     "en": [
-      "indicate the start and end of the"
+      "since we're just doing switch 1 for this video I'll put PC 1 into VLAN 13 and PC 2 into VLAN 24"
     ],
     "ru": [
-      "указать начало и конец"
+      "поскольку мы просто делаем переключатель 1 для этого видео, я помещу ПК 1 в VLAN 13, а ПК 2 в VLAN 24."
     ]
   },
   {
     "time": [
-      153.0,
-      157.0
+      240.064026,
+      244.729052
     ],
     "en": [
-      "message if you type the message directly"
+      "first PC 1 which is connected to a Fast Ethernet 02"
     ],
     "ru": [
-      "сообщение, если вы вводите сообщение напрямую"
+      "первый ПК 1, подключенный к Fast Ethernet 02"
     ]
   },
   {
     "time": [
-      157.0,
-      159.0
+      244.729052,
+      251.693157
     ],
     "en": [
-      "it will think that the first character"
+      "interface f02 switch port access VLAN 13"
     ],
     "ru": [
-      "он будет думать, что первый персонаж"
+      "интерфейс f02 коммутатор порт доступа VLAN 13"
     ]
   },
   {
     "time": [
-      159.0,
-      162.0
+      251.693157,
+      256.398697
     ],
     "en": [
-      "is the delimiting character and it will"
+      "in the previous labs I also use the command switch port mode access"
     ],
     "ru": [
-      "является ограничивающим символом, и он будет"
+      "в предыдущих лабораторных работах я также использовал доступ в режиме порта командного переключателя"
     ]
   },
   {
     "time": [
-      162.0,
-      165.0
+      256.398697,
+      261.898656
     ],
     "en": [
-      "be excluded from the message itself you"
+      "but you may remember that I said this isn't necessary because the interfaces are in access mode by default"
     ],
     "ru": [
-      "быть исключенным из самого сообщения вы"
+      "но вы можете помнить, что я сказал, что в этом нет необходимости, потому что интерфейсы по умолчанию находятся в режиме доступа"
     ]
   },
   {
     "time": [
-      165.0,
-      166.0
+      261.898656,
+      265.745851
     ],
     "en": [
-      "can use whatever you want but I'll use"
+      "just to prove this I won't use the command for this video"
     ],
     "ru": [
-      "можете использовать все, что хотите, но я буду использовать"
+      "просто чтобы доказать это, я не буду использовать команду для этого видео"
     ]
   },
   {
     "time": [
-      166.0,
-      168.0
+      265.745851,
+      274.094956
     ],
     "en": [
-      "an asterisk asterisk"
+      "next for PC 2 interface f03 switch port access VLAN 24"
     ],
     "ru": [
-      "звездочка звездочка"
+      "далее для интерфейса ПК 2 f03 коммутатор порт доступа VLAN 24"
     ]
   },
   {
     "time": [
-      168.0,
-      173.0
+      274.094956,
+      276.682162
     ],
     "en": [
-      "welcome to packet tracer asterisk okay"
+      "do show VLAN briefed"
     ],
     "ru": [
-      "добро пожаловать в пакетный трассировщик звездочка хорошо"
+      "показать проинформированный о VLAN"
     ]
   },
   {
     "time": [
-      173.0,
-      175.0
+      276.682162,
+      288.094455
     ],
     "en": [
-      "now the same process for the log in"
+      "as you can see Fast Ethernet 0 2 which pc 1 is connected to is in VLAN 13 and Fast Ethernet 0 3 which pc 2 is connected to is in VLAN 24"
     ],
     "ru": [
-      "теперь тот же процесс для входа в систему"
+      "как вы можете видеть, Fast Ethernet 0 2, к которому подключен компьютер 1, находится в VLAN 13, а Fast Ethernet 0 3, к которому подключен компьютер 2, находится в VLAN 24"
     ]
   },
   {
     "time": [
-      175.0,
-      182.0
+      288.094455,
+      289.57954
     ],
     "en": [
-      "banner banner login asterisk authorized"
+      "that's all for step 3"
     ],
     "ru": [
-      "баннер баннер авторизация звездочка авторизация"
+      "это все для шага 3"
     ]
   },
   {
     "time": [
-      182.0,
-      187.0
+      289.57954,
+      297.004933
     ],
     "en": [
-      "users only asterisk now we've set up the"
+      "step four is to configure a trunk link between switch 1 and switch 2"
     ],
     "ru": [
-      "только для пользователей звездочка теперь мы настроили"
+      "Шаг четвертый - настроить магистральный канал между коммутатором 1 и коммутатором 2."
     ]
   },
   {
     "time": [
-      187.0,
-      191.0
+      297.004933,
+      301.206311
     ],
     "en": [
-      "two banners finally let's log out and"
+      "they are connected by their fastethernet 0/1 interfaces"
     ],
     "ru": [
-      "два баннера, наконец, давайте выйдем из системы и"
+      "они связаны своими интерфейсами fastethernet 0/1"
     ]
   },
   {
     "time": [
-      191.0,
-      197.0
+      301.206311,
+      306.938347
     ],
     "en": [
-      "see if our messages work and logout"
+      "so interface f01 switch port mode trunk"
     ],
     "ru": [
-      "посмотрите, работают ли наши сообщения и выйдите из системы"
+      "так интерфейс f01 переключатель режима порта магистраль"
     ]
   },
   {
     "time": [
-      197.0,
-      198.0
+      306.938347,
+      309.703064
     ],
     "en": [
-      "there we go"
+      "that's it let's confirm"
     ],
     "ru": [
-      "вот и мы"
+      "вот и давайте подтвердим"
     ]
   },
   {
     "time": [
-      198.0,
-      200.0
+      309.703064,
+      317.879553
     ],
     "en": [
-      "before we log in you can see our message"
+      "and you can use this command show interfaces trunk to check which interfaces are in trunking mode"
     ],
     "ru": [
-      "прежде чем мы войдем в систему, вы можете увидеть наше сообщение"
+      "и вы можете использовать эту команду show interfaces trunk, чтобы проверить, какие интерфейсы находятся в режиме транкинга."
     ]
   },
   {
     "time": [
-      200.0,
-      206.0
+      317.879553,
+      321.611565
     ],
     "en": [
-      "of the day and then our log in banner"
+      "you can see f01 is now trunking"
     ],
     "ru": [
-      "дня, а затем наш баннер входа в систему"
+      "вы можете видеть, что f01 теперь транкинговый"
     ]
   },
   {
     "time": [
-      206.0,
-      208.0
+      321.611565,
+      327.13959
     ],
     "en": [
-      "thank you for watching I hope this lab"
+      "the encapsulation is 802.1 q which is the only option on this switch"
     ],
     "ru": [
-      "спасибо за просмотр, надеюсь, эта лаборатория"
+      "инкапсуляция - 802.1 q, которая является единственной опцией на этом коммутаторе."
     ]
   },
   {
     "time": [
-      208.0,
-      209.0
+      327.13959,
+      330.106283
     ],
     "en": [
-      "and video have been helpful for you"
+      "and the native VLAN is 1 which is the default"
     ],
     "ru": [
-      "и видео были для вас полезны"
+      "а собственная VLAN - 1, что по умолчанию"
     ]
   },
   {
     "time": [
-      209.0,
-      212.0
+      330.106283,
+      335.802469
     ],
     "en": [
-      "please subscribe for future labs like"
+      "you can also see that all VLANs are allowed on the trunk which is default as well"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, такие как"
+      "вы также можете видеть, что все VLAN разрешены на транке, что также по умолчанию"
     ]
   },
   {
     "time": [
-      212.0,
-      215.0
+      335.802469,
+      344.724188
     ],
     "en": [
-      "this which will be released weekly if"
+      "however vlans 1 13 and 24 are the only ones that are allowed and active in management domain"
     ],
     "ru": [
-      "это будет выпускаться еженедельно, если"
+      "однако vlans 1, 13 и 24 - единственные разрешенные и активные в домене управления."
     ]
   },
   {
     "time": [
-      215.0,
-      217.0
+      344.724188,
+      348.460931
     ],
     "en": [
-      "you have requests for any specific labs"
+      "VLAN 1 because it is the native VLAN"
     ],
     "ru": [
-      "у вас есть запросы по каким-либо конкретным лабораториям"
+      "VLAN 1, потому что это собственная VLAN"
     ]
   },
   {
     "time": [
-      217.0,
-      219.0
+      348.460931,
+      351.83423
     ],
     "en": [
-      "let me know in the comment section if"
+      "and the default VLAN to which all interfaces are assigned"
     ],
     "ru": [
-      "дайте мне знать в разделе комментариев, если"
+      "и VLAN по умолчанию, которой назначены все интерфейсы"
     ]
   },
   {
     "time": [
-      219.0,
-      222.0
+      351.83423,
+      356.961493
     ],
     "en": [
-      "you want to support my channel I accept"
+      "the 2 VLANs we created vlan's 13 and 24 also appear"
     ],
     "ru": [
-      "вы хотите поддержать мой канал я принимаю"
+      "2 VLAN, которые мы создали, vlan 13 и 24 также появляются"
     ]
   },
   {
     "time": [
-      222.0,
-      225.0
+      356.961493,
+      361.008062
     ],
     "en": [
-      "Bitcoin and aetherium donations via the"
+      "let me do the command again to refresh"
     ],
     "ru": [
-      "Пожертвования биткойнов и эфириума через"
+      "позвольте мне повторить команду, чтобы обновить"
     ]
   },
   {
     "time": [
-      225.0,
-      228.0
+      361.008062,
+      363.774063
     ],
     "en": [
-      "addresses in the description I am also a"
+      "show interfaces trunk"
     ],
     "ru": [
-      "адреса в описании я тоже"
+      "показать магистраль интерфейсов"
     ]
   },
   {
     "time": [
-      228.0,
-      231.0
+      363.774063,
+      374.43307
     ],
     "en": [
-      "brave verified publisher and accept bat"
+      "as you can see VLANs 1 13 and 24 also appear under VLANs in spanning tree forwarding state and not pruned"
     ],
     "ru": [
-      "храбрый проверенный издатель и прими летучую мышь"
+      "как вы можете видеть, VLAN 1, 13 и 24 также отображаются в VLAN в состоянии пересылки связующего дерева и не сокращены"
     ]
   },
   {
     "time": [
-      231.0,
-      234.0
+      374.43307,
+      377.996017
     ],
     "en": [
-      "or basic attention token donations in"
+      "spanning tree and pruning our topics for another time"
     ],
     "ru": [
-      "или основные пожертвования токенов внимания в"
+      "остовное дерево и обрезка наших тем на другой раз"
     ]
   },
   {
     "time": [
-      234.0,
-      234.0
+      377.996017,
+      382.979918
     ],
     "en": [
-      "the brave browser"
+      "Step five is to save the configuration"
     ],
     "ru": [
-      "смелый браузер"
+      "Шаг пятый - сохранить конфигурацию"
+    ]
+  },
+  {
+    "time": [
+      382.979918,
+      387.660156
+    ],
+    "en": [
+      "I haven't included this as a step in every lab but don't forget about it"
+    ],
+    "ru": [
+      "Я не включал это в каждую лабораторную работу, но не забывайте об этом"
+    ]
+  },
+  {
+    "time": [
+      387.660156,
+      390.381626
+    ],
+    "en": [
+      "this time let's use the write to command"
+    ],
+    "ru": [
+      "на этот раз воспользуемся командой записи в"
+    ]
+  },
+  {
+    "time": [
+      390.381626,
+      396.918705
+    ],
+    "en": [
+      "there we go finally let's ping between pcs to check connectivity"
+    ],
+    "ru": [
+      "вот и мы, наконец, давайте пингуем между ПК, чтобы проверить подключение"
+    ]
+  },
+  {
+    "time": [
+      396.918705,
+      404.470974
+    ],
+    "en": [
+      "because I already set up switch 2 PC 1 should be able to ping PC 3 and PC 2 should be able to ping PC 4"
+    ],
+    "ru": [
+      "потому что я уже установил переключатель 2, ПК 1 должен иметь возможность пинговать ПК 3, а ПК 2 должен иметь возможность пинговать ПК 4"
+    ]
+  },
+  {
+    "time": [
+      404.470974,
+      413.021272
+    ],
+    "en": [
+      "so let's go on PC 1 ping 192.168.0.3"
+    ],
+    "ru": [
+      "так что пойдем на ПК 1 пинг 192.168.0.3"
+    ]
+  },
+  {
+    "time": [
+      413.021272,
+      423.227583
+    ],
+    "en": [
+      "ok it works and now on PC 2"
+    ],
+    "ru": [
+      "нормально работает и теперь на ПК 2"
+    ]
+  },
+  {
+    "time": [
+      423.227583,
+      427.773859
+    ],
+    "en": [
+      "ping 192.168.0.4"
+    ],
+    "ru": [
+      "пинг 192.168.0.4"
+    ]
+  },
+  {
+    "time": [
+      427.773859,
+      434.519253
+    ],
+    "en": [
+      "it works as well"
+    ],
+    "ru": [
+      "это тоже работает"
+    ]
+  },
+  {
+    "time": [
+      434.519253,
+      436.140664
+    ],
+    "en": [
+      "that's all for this lab"
+    ],
+    "ru": [
+      "это все для этой лаборатории"
+    ]
+  },
+  {
+    "time": [
+      436.140664,
+      443.057552
+    ],
+    "en": [
+      "thank you for watching I hope this lab and video have been helpful for you"
+    ],
+    "ru": [
+      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были для вас полезны."
+    ]
+  },
+  {
+    "time": [
+      443.057552,
+      445.688557
+    ],
+    "en": [
+      "please subscribe for future labs like this"
+    ],
+    "ru": [
+      "пожалуйста, подпишитесь на будущие подобные лаборатории"
+    ]
+  },
+  {
+    "time": [
+      445.688557,
+      448.068989
+    ],
+    "en": [
+      "which will be released weekly"
+    ],
+    "ru": [
+      "который будет выходить еженедельно"
+    ]
+  },
+  {
+    "time": [
+      448.068989,
+      452.680094
+    ],
+    "en": [
+      "if you have requests for any specific labs let me know in the comment section"
+    ],
+    "ru": [
+      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
+    ]
+  },
+  {
+    "time": [
+      452.680094,
+      459.953831
+    ],
+    "en": [
+      "if you want to support my channel I accept Bitcoin and etherion donations via the addresses in the description"
+    ],
+    "ru": [
+      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфиром по адресам в описании"
+    ]
+  },
+  {
+    "time": [
+      459.953831,
+      463.232987
+    ],
+    "en": [
+      "I am also a brave verified publisher"
+    ],
+    "ru": [
+      "Я также храбрый проверенный издатель"
+    ]
+  },
+  {
+    "time": [
+      463.232987,
+      468.275869
+    ],
+    "en": [
+      "and accept bat or basic attention token donations in the brave browser"
+    ],
+    "ru": [
+      "и принимайте пожертвования летучих мышей или токенов основного внимания в смелом браузере"
+    ]
+  },
+  {
+    "time": [
+      468.275869,
+      468.275869
+    ],
+    "en": [
+      ""
+    ],
+    "ru": [
+      ""
+    ]
+  },
+  {
+    "time": [
+      468.275869,
+      468.275869
+    ],
+    "en": [
+      ""
+    ],
+    "ru": [
+      ""
+    ]
+  },
+  {
+    "time": [
+      468.275869,
+      468.275869
+    ],
+    "en": [
+      ""
+    ],
+    "ru": [
+      ""
     ]
   }
 ]

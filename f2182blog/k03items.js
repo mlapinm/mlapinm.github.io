@@ -2,223 +2,151 @@ let objs = [
   {
     "time": [
       0.0,
-      2.0
+      3.15314
     ],
     "en": [
-      "welcome to this free CCNA packet tracer"
+      "welcome to this free CCNA packet tracer practice lab"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный трассировщик пакетов CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
     ]
   },
   {
     "time": [
-      2.0,
-      4.0
+      3.15314,
+      7.162907
     ],
     "en": [
-      "practice lab you can download the lab"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "Практическая лаборатория вы можете скачать лабораторию"
+      "скачать лабораторный файл можно по ссылке в описании"
     ]
   },
   {
     "time": [
-      4.0,
-      7.0
+      7.162907,
+      14.12432
     ],
     "en": [
-      "file from the link in the description in"
+      "in this lab we will be working with one router r1 and one PC PC one"
     ],
     "ru": [
-      "файл по ссылке в описании в"
+      "В этой лабораторной работе мы будем работать с одним маршрутизатором r1 и одним ПК ПК одним"
     ]
   },
   {
     "time": [
-      7.0,
-      10.0
+      14.12432,
+      18.869851
     ],
     "en": [
-      "this lab we will be working with one"
+      "we will use PC one to connect to the console port of r1"
     ],
     "ru": [
-      "с этой лабораторией мы будем работать с одним"
+      "мы будем использовать ПК один для подключения к консольному порту r1"
     ]
   },
   {
     "time": [
-      10.0,
-      15.0
+      18.869851,
+      21.118842
     ],
     "en": [
-      "router r1 and one PC PC one we will use"
+      "and perform configurations from there"
     ],
     "ru": [
-      "маршрутизатор r1 и один ПК ПК, который мы будем использовать"
+      "и выполнить настройки оттуда"
     ]
   },
   {
     "time": [
-      15.0,
-      18.0
+      21.118842,
+      27.184047
     ],
     "en": [
-      "PC one to connect to the console port of"
+      "we will also set up a password to protect connections from the console port of r1"
     ],
     "ru": [
-      "ПК один для подключения к консольному порту"
+      "мы также установим пароль для защиты соединений от консольного порта r1"
     ]
   },
   {
     "time": [
-      18.0,
-      21.0
+      27.184047,
+      30.53352
     ],
     "en": [
-      "r1 and perform configurations from there"
+      "try to complete the lab on your own first"
     ],
     "ru": [
-      "r1 и выполните настройки оттуда"
+      "попробуйте сначала пройти лабораторию самостоятельно"
     ]
   },
   {
     "time": [
-      21.0,
-      24.0
+      30.53352,
+      33.774879
     ],
     "en": [
-      "we will also set up a password to"
+      "and continue watching this video if you have trouble"
     ],
     "ru": [
-      "мы также установим пароль для"
+      "и продолжайте смотреть это видео, если у вас возникнут проблемы"
     ]
   },
   {
     "time": [
-      24.0,
-      25.0
+      33.774879,
+      36.419122
     ],
     "en": [
-      "protect connections from the console"
+      "or watch it afterwards to check your solution"
     ],
     "ru": [
-      "защитить соединения от консоли"
+      "или посмотрите его потом, чтобы проверить свое решение"
     ]
   },
   {
     "time": [
-      25.0,
-      29.0
+      36.419122,
+      45.152569
     ],
     "en": [
-      "port of r1 try to complete the lab on"
+      "step one is to connect PC ones rs-232 port to our ones console port"
     ],
     "ru": [
-      "порт r1 попробуйте завершить лабораторную работу на"
+      "Шаг первый - подключить один порт RS-232 ПК к нашему консольному порту"
     ]
   },
   {
     "time": [
-      29.0,
-      31.0
+      45.152569,
+      49.17052
     ],
     "en": [
-      "your own first and continue watching"
+      "click on connections in the bottom left corner of the screen"
     ],
     "ru": [
-      "в первую очередь и продолжай смотреть"
+      "нажмите на соединения в нижнем левом углу экрана"
     ]
   },
   {
     "time": [
-      31.0,
-      34.0
+      49.17052,
+      54.561567
     ],
     "en": [
-      "this video if you have trouble or watch"
+      "this is the console cable as indicated at the bottom of the screen"
     ],
     "ru": [
-      "это видео, если у вас возникли проблемы, или посмотрите"
+      "это консольный кабель, как показано в нижней части экрана"
     ]
   },
   {
     "time": [
-      34.0,
-      38.0
-    ],
-    "en": [
-      "it afterwards to check your solution"
-    ],
-    "ru": [
-      "это потом, чтобы проверить ваше решение"
-    ]
-  },
-  {
-    "time": [
-      38.0,
-      42.0
-    ],
-    "en": [
-      "step one is to connect PC ones rs-232"
-    ],
-    "ru": [
-      "Шаг первый - подключить ПК RS-232"
-    ]
-  },
-  {
-    "time": [
-      42.0,
-      46.0
-    ],
-    "en": [
-      "port to our ones console port click on"
-    ],
-    "ru": [
-      "порт на наш консольный порт нажимаем на"
-    ]
-  },
-  {
-    "time": [
-      46.0,
-      48.0
-    ],
-    "en": [
-      "connections in the bottom left corner of"
-    ],
-    "ru": [
-      "соединения в нижнем левом углу"
-    ]
-  },
-  {
-    "time": [
-      48.0,
-      51.0
-    ],
-    "en": [
-      "the screen this is the console cable as"
-    ],
-    "ru": [
-      "экран это консольный кабель как"
-    ]
-  },
-  {
-    "time": [
-      51.0,
-      55.0
-    ],
-    "en": [
-      "indicated at the bottom of the screen"
-    ],
-    "ru": [
-      "указывается внизу экрана"
-    ]
-  },
-  {
-    "time": [
-      55.0,
-      59.0
+      54.561567,
+      59.95001
     ],
     "en": [
       "connect it to the rs-232 port of PC one"
@@ -229,8 +157,8 @@ let objs = [
   },
   {
     "time": [
-      59.0,
-      62.0
+      59.95001,
+      62.507949
     ],
     "en": [
       "and then to the console port of r1"
@@ -241,8 +169,8 @@ let objs = [
   },
   {
     "time": [
-      62.0,
-      67.0
+      62.507949,
+      64.385472
     ],
     "en": [
       "that's step one"
@@ -253,164 +181,92 @@ let objs = [
   },
   {
     "time": [
-      67.0,
-      70.0
+      64.385472,
+      74.499574
     ],
     "en": [
-      "step two is to use the console"
+      "step two is to use the console connection to configure the hostname of r1 from pc1"
     ],
     "ru": [
-      "Шаг второй - использовать консоль"
+      "Шаг второй - использовать консольное соединение для настройки имени хоста r1 с pc1"
     ]
   },
   {
     "time": [
-      70.0,
-      72.0
+      74.499574,
+      84.321932
     ],
     "en": [
-      "connection to configure the hostname of"
+      "to do so click on PC one click on desktop select terminal and then select ok to accept the default configurations"
     ],
     "ru": [
-      "соединение для настройки имени хоста"
+      "для этого щелкните ПК одним щелчком мыши на рабочем столе выберите терминал, а затем выберите ОК, чтобы принять конфигурации по умолчанию"
     ]
   },
   {
     "time": [
-      72.0,
-      76.0
+      84.321932,
+      90.848294
     ],
     "en": [
-      "r1 from pc1 to do so click on PC one"
+      "we're now connected to r1 via PC one and can perform configurations as usual"
     ],
     "ru": [
-      "r1 с pc1 для этого щелкните на ПК один"
+      "Теперь мы подключены к r1 через ПК и можем выполнять настройки как обычно"
     ]
   },
   {
     "time": [
-      76.0,
-      80.0
+      90.848294,
+      97.999229
     ],
     "en": [
-      "click on desktop select terminal and"
+      "now we have to change the hostname of the router to r1 as we've done before in previous labs"
     ],
     "ru": [
-      "нажмите на рабочий стол, выберите терминал и"
+      "теперь нам нужно изменить имя хоста маршрутизатора на r1, как мы делали раньше в предыдущих лабораторных работах."
     ]
   },
   {
     "time": [
-      80.0,
-      83.0
+      97.999229,
+      101.20266
     ],
     "en": [
-      "then select ok to accept the default"
+      "unable to enter privileged exec mode"
     ],
     "ru": [
-      "затем выберите ОК, чтобы принять значение по умолчанию"
+      "невозможно войти в привилегированный режим exec"
     ]
   },
   {
     "time": [
-      83.0,
-      86.0
+      101.20266,
+      104.726566
     ],
     "en": [
-      "configurations we're now connected to r1"
+      "conf t enter global configuration mode"
     ],
     "ru": [
-      "конфигурации, которые мы теперь подключены к r1"
+      "conf t войти в режим глобальной конфигурации"
     ]
   },
   {
     "time": [
-      86.0,
-      88.0
+      104.726566,
+      106.476107
     ],
     "en": [
-      "via PC one and can perform"
+      "hostname r1"
     ],
     "ru": [
-      "через ПК один и может выполнять"
+      "имя хоста r1"
     ]
   },
   {
     "time": [
-      88.0,
-      92.0
-    ],
-    "en": [
-      "configurations as usual now we have to"
-    ],
-    "ru": [
-      "конфигурации, как обычно, теперь мы должны"
-    ]
-  },
-  {
-    "time": [
-      92.0,
-      93.0
-    ],
-    "en": [
-      "change the hostname"
-    ],
-    "ru": [
-      "изменить имя хоста"
-    ]
-  },
-  {
-    "time": [
-      93.0,
-      96.0
-    ],
-    "en": [
-      "of the router to r1 as we've done before"
-    ],
-    "ru": [
-      "маршрутизатора на r1, как мы делали раньше"
-    ]
-  },
-  {
-    "time": [
-      96.0,
-      99.0
-    ],
-    "en": [
-      "in previous labs unable to enter"
-    ],
-    "ru": [
-      "в предыдущих лабораториях невозможно войти"
-    ]
-  },
-  {
-    "time": [
-      99.0,
-      102.0
-    ],
-    "en": [
-      "privileged exec mode compte to enter"
-    ],
-    "ru": [
-      "привилегированный режим exec compte для входа"
-    ]
-  },
-  {
-    "time": [
-      102.0,
-      106.0
-    ],
-    "en": [
-      "global configuration mode hostname r1"
-    ],
-    "ru": [
-      "имя хоста режима глобальной конфигурации r1"
-    ]
-  },
-  {
-    "time": [
-      106.0,
-      111.0
+      106.476107,
+      108.726232
     ],
     "en": [
       "that's it for step two"
@@ -421,560 +277,404 @@ let objs = [
   },
   {
     "time": [
-      111.0,
-      114.0
+      108.726232,
+      116.328196
     ],
     "en": [
-      "step three is to set the enable secret"
+      "step three is to set the enable secret of r1 to Cisco"
     ],
     "ru": [
-      "Шаг третий - установить секретный ключ"
+      "Шаг третий - установить для Cisco секретный ключ включения r1."
     ]
   },
   {
     "time": [
-      114.0,
-      117.0
+      116.328196,
+      120.926073
     ],
     "en": [
-      "of r1 to Cisco if you remember the"
+      "if you remember the enable secret is a password that protects privileged exec mode"
     ],
     "ru": [
-      "r1 в Cisco, если вы помните"
+      "если вы помните, что секрет включения - это пароль, который защищает привилегированный режим exec"
     ]
   },
   {
     "time": [
-      117.0,
-      119.0
+      120.926073,
+      123.2163
     ],
     "en": [
-      "enable secret is a password that"
+      "and is encrypted by default"
     ],
     "ru": [
-      "enable secret - это пароль, который"
+      "и по умолчанию зашифрован"
     ]
   },
   {
     "time": [
-      119.0,
-      121.0
+      123.2163,
+      126.6641
     ],
     "en": [
-      "protects privileged exec mode and is"
+      "it's configured from global configuration mode"
     ],
     "ru": [
-      "защищает привилегированный режим exec и"
+      "он настроен из режима глобальной конфигурации"
     ]
   },
   {
     "time": [
-      121.0,
-      124.0
+      126.6641,
+      128.360855
     ],
     "en": [
-      "encrypted by default it's configured"
+      "which we are already in"
     ],
     "ru": [
-      "зашифрованный по умолчанию он настроен"
+      "в котором мы уже находимся"
     ]
   },
   {
     "time": [
-      124.0,
-      127.0
+      128.360855,
+      130.72325
     ],
     "en": [
-      "from global configuration mode which we"
+      "enable secret Cisco"
     ],
     "ru": [
-      "из режима глобальной конфигурации, который мы"
+      "включить секрет Cisco"
     ]
   },
   {
     "time": [
-      127.0,
-      131.0
+      130.72325,
+      132.805721
     ],
     "en": [
-      "are already in enable secret Cisco step"
+      "step three is now complete"
     ],
     "ru": [
-      "уже в активном секретном шаге Cisco"
+      "шаг третий теперь завершен"
     ]
   },
   {
     "time": [
-      131.0,
-      135.0
+      132.805721,
+      140.763358
     ],
     "en": [
-      "three is now complete"
+      "step four is to set the console password of r1 to CCNA"
     ],
     "ru": [
-      "три теперь завершены"
+      "Шаг четвертый - установить пароль консоли r1 на CCNA"
     ]
   },
   {
     "time": [
-      135.0,
-      138.0
+      140.763358,
+      145.884646
     ],
     "en": [
-      "step four is to set the console password"
+      "we also have to ensure that it is required to connect to r1 via the console port"
     ],
     "ru": [
-      "Шаг четвертый - установить пароль консоли"
+      "мы также должны убедиться, что требуется подключение к r1 через консольный порт"
     ]
   },
   {
     "time": [
-      138.0,
-      142.0
+      145.884646,
+      150.675043
     ],
     "en": [
-      "of r1 to CCNA we also have to ensure"
+      "to do so we have to enter line configuration mode for the console port"
     ],
     "ru": [
-      "r1 в CCNA мы также должны обеспечить"
+      "для этого мы должны войти в режим конфигурации линии для консольного порта"
     ]
   },
   {
     "time": [
-      142.0,
-      144.0
+      150.675043,
+      156.148803
     ],
     "en": [
-      "that it is required to connect to r1 via"
+      "that is done with the command line console 0 from global configuration mode"
     ],
     "ru": [
-      "что необходимо подключиться к r1 через"
+      "это делается с помощью консоли 0 командной строки из режима глобальной конфигурации"
     ]
   },
   {
     "time": [
-      144.0,
-      147.0
+      156.148803,
+      159.949766
     ],
     "en": [
-      "the console port to do so we have to"
+      "the zero refers to the number of the port"
     ],
     "ru": [
-      "консольный порт для этого мы должны"
+      "ноль относится к номеру порта"
     ]
   },
   {
     "time": [
-      147.0,
-      150.0
+      159.949766,
+      164.986256
     ],
     "en": [
-      "enter line configuration mode for the"
+      "and since there is only one console port there is only line console 0"
     ],
     "ru": [
-      "войдите в режим конфигурации линии для"
+      "и поскольку есть только один консольный порт, есть только строка console 0"
     ]
   },
   {
     "time": [
-      150.0,
-      152.0
+      164.986256,
+      168.665267
     ],
     "en": [
-      "console port that is done with the"
+      "there is no line console 1 2 3 4 etc"
     ],
     "ru": [
-      "консольный порт, который выполняется с помощью"
+      "нет линии консоли 1 2 3 4 и т. д."
     ]
   },
   {
     "time": [
-      152.0,
-      155.0
+      168.665267,
+      174.000063
     ],
     "en": [
-      "command line console 0 from global"
+      "from here we set the password to CCNA with a very simple command"
     ],
     "ru": [
-      "консоль командной строки 0 из глобального"
+      "отсюда мы устанавливаем пароль на CCNA с помощью очень простой команды"
     ]
   },
   {
     "time": [
-      155.0,
-      158.0
+      174.000063,
+      176.104199
     ],
     "en": [
-      "configuration mode the zero refers to"
+      "password CCNA"
     ],
     "ru": [
-      "режим конфигурации ноль относится к"
+      "пароль CCNA"
     ]
   },
   {
     "time": [
-      158.0,
-      160.0
+      176.104199,
+      178.683994
     ],
     "en": [
-      "the number of the port and since there"
+      "now let's try out our password"
     ],
     "ru": [
-      "номер порта и поскольку там"
+      "теперь давайте попробуем наш пароль"
     ]
   },
   {
     "time": [
-      160.0,
-      162.0
+      178.683994,
+      182.966503
     ],
     "en": [
-      "is only one console port there is only"
+      "I'll use the end command to return to privileged exec mode"
     ],
     "ru": [
-      "только один консольный порт есть только"
+      "Я воспользуюсь командой end, чтобы вернуться в привилегированный режим exec"
     ]
   },
   {
     "time": [
-      162.0,
-      166.0
+      182.966503,
+      185.89367
     ],
     "en": [
-      "line console 0 there is no line console"
+      "and then exit to quit the connection"
     ],
     "ru": [
-      "строка консоли 0 нет строки консоли"
+      "а затем выйти, чтобы завершить соединение"
     ]
   },
   {
     "time": [
-      166.0,
-      170.0
+      185.89367,
+      188.895884
     ],
     "en": [
-      ""
+      "but I'm not asked for a password"
     ],
     "ru": [
-      ""
+      "но у меня не спрашивают пароль"
     ]
   },
   {
     "time": [
-      166.0,
-      170.0
+      188.895884,
+      195.023131
     ],
     "en": [
-      ""
+      "if I type enable I have to use the password Cisco to access privileged exec mode"
     ],
     "ru": [
-      ""
+      "если я наберу \"включить\", мне нужно будет использовать пароль Cisco для доступа к привилегированному режиму выполнения."
     ]
   },
   {
     "time": [
-      170.0,
-      173.0
+      195.023131,
+      201.141207
     ],
     "en": [
-      "password to CCNA with a very simple"
+      "but why wasn't I asked to use the password CCNA to connect to the console port again"
     ],
     "ru": [
-      "пароль к CCNA с очень простым"
+      "но почему меня не попросили использовать пароль CCNA для повторного подключения к консольному порту"
     ]
   },
   {
     "time": [
-      173.0,
-      177.0
+      201.141207,
+      205.858417
     ],
     "en": [
-      "command password CCNA now let's try out"
+      "this is because we missed one other command in line configuration mode"
     ],
     "ru": [
-      "команда пароль CCNA теперь давайте попробуем"
+      "это потому, что мы пропустили еще одну команду в режиме конфигурации строки"
     ]
   },
   {
     "time": [
-      177.0,
-      181.0
+      205.858417,
+      208.248564
     ],
     "en": [
-      "our password I'll use the end command to"
+      "let's return there once more"
     ],
     "ru": [
-      "наш пароль, я воспользуюсь командой конца, чтобы"
+      "давай вернемся туда еще раз"
     ]
   },
   {
     "time": [
-      181.0,
-      183.0
+      208.248564,
+      211.022927
     ],
     "en": [
-      "return to privileged exec mode and then"
+      "conf t line con zero"
     ],
     "ru": [
-      "вернуться в привилегированный режим exec, а затем"
+      "conf t line con zero"
     ]
   },
   {
     "time": [
-      183.0,
-      187.0
+      211.022927,
+      219.504948
     ],
     "en": [
-      "exit to quit the connection but I'm not"
+      "now we have to use the command login to tell the router that the password must be used to connect to the console"
     ],
     "ru": [
-      "выйти, чтобы разорвать соединение, но я не"
+      "теперь мы должны использовать команду login, чтобы сообщить маршрутизатору, что пароль должен использоваться для подключения к консоли"
     ]
   },
   {
     "time": [
-      187.0,
-      191.0
+      219.504948,
+      223.498016
     ],
     "en": [
-      "asked for a password if I type enable I"
+      "let's try again and exit"
     ],
     "ru": [
-      "спросил пароль, если я наберу \"включить\" я"
+      "давай попробуем еще раз и выйдем"
     ]
   },
   {
     "time": [
-      191.0,
-      193.0
+      223.498016,
+      224.464199
     ],
     "en": [
-      "have to use the password Cisco to access"
+      "and there we go"
     ],
     "ru": [
-      "необходимо использовать пароль Cisco для доступа"
+      "и вот мы идем"
     ]
   },
   {
     "time": [
-      193.0,
-      196.0
+      224.464199,
+      227.866802
     ],
     "en": [
-      "privileged exec mode but why wasn't I"
+      "now we are asked for the console password of CCNA"
     ],
     "ru": [
-      "привилегированный режим exec, но почему я не"
+      "теперь нас спрашивают пароль консоли CCNA"
     ]
   },
   {
     "time": [
-      196.0,
-      199.0
+      227.866802,
+      233.469493
     ],
     "en": [
-      "asked to use the password CCNA to"
+      "now finally let's check the running configuration for the password and see if it's encrypted"
     ],
     "ru": [
-      "попросили использовать пароль CCNA для"
+      "теперь, наконец, давайте проверим текущую конфигурацию для пароля и посмотрим, зашифрован ли он"
     ]
   },
   {
     "time": [
-      199.0,
-      202.0
+      233.469493,
+      238.662364
     ],
     "en": [
-      "connect to the console port again this"
+      "enable password cisco show run"
     ],
     "ru": [
-      "снова подключитесь к консольному порту это"
+      "включить пароль cisco show run"
     ]
   },
   {
     "time": [
-      202.0,
-      204.0
+      238.662364,
+      241.440084
     ],
     "en": [
-      "is because we missed one other command"
+      "the line section is at the bottom of the running config"
     ],
     "ru": [
-      "потому что мы пропустили еще одну команду"
+      "секция строки находится внизу работающей конфигурации"
     ]
   },
   {
     "time": [
-      204.0,
-      206.0
+      241.440084,
+      245.280339
     ],
     "en": [
-      "in line configuration mode let's return"
+      "so i'll tap the spacebar a few times to scroll down"
     ],
     "ru": [
-      "в режиме строчной конфигурации вернемся"
+      "поэтому я несколько раз коснусь пробела, чтобы прокрутить вниз"
     ]
   },
   {
     "time": [
-      206.0,
-      208.0
-    ],
-    "en": [
-      "there once more conf"
-    ],
-    "ru": [
-      "вот еще раз конф"
-    ]
-  },
-  {
-    "time": [
-      208.0,
-      213.0
-    ],
-    "en": [
-      "line con zero now we have to use the"
-    ],
-    "ru": [
-      "line con zero теперь мы должны использовать"
-    ]
-  },
-  {
-    "time": [
-      213.0,
-      216.0
-    ],
-    "en": [
-      "command login to tell the router that"
-    ],
-    "ru": [
-      "команда входа в систему, чтобы сообщить маршрутизатору, что"
-    ]
-  },
-  {
-    "time": [
-      216.0,
-      218.0
-    ],
-    "en": [
-      "the password must be used to connect to"
-    ],
-    "ru": [
-      "пароль должен использоваться для подключения к"
-    ]
-  },
-  {
-    "time": [
-      218.0,
-      223.0
-    ],
-    "en": [
-      "the console let's try again and exit and"
-    ],
-    "ru": [
-      "консоль давайте попробуем еще раз и выйдем и"
-    ]
-  },
-  {
-    "time": [
-      223.0,
-      225.0
-    ],
-    "en": [
-      "there we go now we are asked for the"
-    ],
-    "ru": [
-      "вот и мы, теперь нас просят"
-    ]
-  },
-  {
-    "time": [
-      225.0,
-      229.0
-    ],
-    "en": [
-      "console password of CCNA now finally"
-    ],
-    "ru": [
-      "консольный пароль CCNA теперь наконец"
-    ]
-  },
-  {
-    "time": [
-      229.0,
-      231.0
-    ],
-    "en": [
-      "let's check the running configuration"
-    ],
-    "ru": [
-      "давайте проверим работающую конфигурацию"
-    ]
-  },
-  {
-    "time": [
-      231.0,
-      232.0
-    ],
-    "en": [
-      "for the password and see if it's"
-    ],
-    "ru": [
-      "для пароля и посмотрите, если он"
-    ]
-  },
-  {
-    "time": [
-      232.0,
-      238.0
-    ],
-    "en": [
-      "encrypted enable password cisco show run"
-    ],
-    "ru": [
-      "зашифрованный пароль включения cisco show run"
-    ]
-  },
-  {
-    "time": [
-      238.0,
-      240.0
-    ],
-    "en": [
-      "the line section is at the bottom of the"
-    ],
-    "ru": [
-      "раздел строки находится в нижней части"
-    ]
-  },
-  {
-    "time": [
-      240.0,
-      243.0
-    ],
-    "en": [
-      "running config so i'll tap the spacebar"
-    ],
-    "ru": [
-      "запущена конфигурация, поэтому я нажимаю пробел"
-    ]
-  },
-  {
-    "time": [
-      243.0,
-      245.0
-    ],
-    "en": [
-      "a few times to scroll"
-    ],
-    "ru": [
-      "несколько раз пролистать"
-    ]
-  },
-  {
-    "time": [
-      245.0,
-      249.0
+      245.280339,
+      250.591846
     ],
     "en": [
       "there it is line con zero password CCNA"
@@ -985,8 +685,8 @@ let objs = [
   },
   {
     "time": [
-      249.0,
-      252.0
+      250.591846,
+      252.54017
     ],
     "en": [
       "as you can see it is not encrypted"
@@ -997,302 +697,242 @@ let objs = [
   },
   {
     "time": [
-      252.0,
-      258.0
+      252.54017,
+      254.651493
     ],
     "en": [
-      "that's all for step four Step five is to"
+      "that's all for step four"
     ],
     "ru": [
-      "это все, что нужно сделать для четвертого шага."
+      "это все для четвертого шага"
     ]
   },
   {
     "time": [
-      258.0,
-      260.0
+      254.651493,
+      262.69548
     ],
     "en": [
-      "enable password encryption to protect"
+      "Step five is to enable password encryption to protect this console password"
     ],
     "ru": [
-      "включить шифрование пароля для защиты"
+      "Шаг пятый - включить шифрование пароля для защиты этого пароля консоли."
     ]
   },
   {
     "time": [
-      260.0,
-      264.0
+      262.69548,
+      265.66923
     ],
     "en": [
-      "this console password compte to enter"
+      "compte to enter global configuration mode"
     ],
     "ru": [
-      "этот пароль консоли compte для входа"
+      "compte для входа в режим глобальной конфигурации"
     ]
   },
   {
     "time": [
-      264.0,
-      266.0
+      265.66923,
+      267.735935
     ],
     "en": [
-      "global configuration mode then the same"
+      "then the same command as before"
     ],
     "ru": [
-      "режим глобальной конфигурации то же"
+      "затем та же команда, что и раньше"
     ]
   },
   {
     "time": [
-      266.0,
-      269.0
+      267.735935,
+      270.058735
     ],
     "en": [
-      "command as before service password"
+      "service password encryption"
     ],
     "ru": [
-      "команда, как и раньше, служебный пароль"
+      "шифрование сервисного пароля"
     ]
   },
   {
     "time": [
-      269.0,
-      272.0
+      270.058735,
+      273.006438
     ],
     "en": [
-      "encryption let's drop back to privileged"
+      "let's drop back to privileged exec mode"
     ],
     "ru": [
-      "шифрование, вернемся к привилегированному"
+      "вернемся в привилегированный режим exec"
     ]
   },
   {
     "time": [
-      272.0,
-      274.0
+      273.006438,
+      275.203606
     ],
     "en": [
-      "exec mode and then use show run to"
+      "and then use show run to confirm"
     ],
     "ru": [
-      "режим exec, а затем используйте show run, чтобы"
+      "а затем используйте show run, чтобы подтвердить"
     ]
   },
   {
     "time": [
-      274.0,
-      277.0
+      275.203606,
+      280.508029
     ],
     "en": [
-      "confirm scroll down to the bottom and"
+      "scroll down to the bottom and you can see the password is now encrypted"
     ],
     "ru": [
-      "подтвердить прокрутите вниз и"
+      "прокрутите вниз, и вы увидите, что пароль теперь зашифрован"
     ]
   },
   {
     "time": [
-      277.0,
-      279.0
+      280.508029,
+      283.336426
     ],
     "en": [
-      "you can see the password is now"
+      "finally let's save the configuration"
     ],
     "ru": [
-      "вы можете видеть, что пароль теперь"
+      "наконец, давайте сохраним конфигурацию"
     ]
   },
   {
     "time": [
-      279.0,
-      282.0
+      283.336426,
+      288.055578
     ],
     "en": [
-      "encrypted finally let's save the"
+      "let's use the copy running-config startup config command"
     ],
     "ru": [
-      "зашифрованный, наконец, давайте сохраним"
+      "давайте воспользуемся командой copy running-config startup config"
     ]
   },
   {
     "time": [
-      282.0,
-      285.0
+      288.055578,
+      290.352434
     ],
     "en": [
-      "configuration let's use the copy"
+      "shorten to copy run start"
     ],
     "ru": [
-      "конфигурация давайте использовать копию"
+      "сократить, чтобы скопировать запуск запуска"
     ]
   },
   {
     "time": [
-      285.0,
-      287.0
+      290.352434,
+      292.819539
     ],
     "en": [
-      "running-config startup config command"
+      "that's all for this lab"
     ],
     "ru": [
-      "running-config команда конфигурации запуска"
+      "это все для этой лаборатории"
     ]
   },
   {
     "time": [
-      287.0,
-      292.0
+      292.819539,
+      299.131444
     ],
     "en": [
-      "shorten to copy run start that's all for"
+      "thank you for watching I hope this lab and video have been helpful for you"
     ],
     "ru": [
-      "сократить, чтобы скопировать запуск запуска, это все для"
+      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были для вас полезны."
     ]
   },
   {
     "time": [
-      292.0,
-      296.0
+      299.131444,
+      303.715134
     ],
     "en": [
-      "this lab thank you for watching I hope"
+      "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "эта лаборатория спасибо за просмотр надеюсь"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {
     "time": [
-      296.0,
-      298.0
+      303.715134,
+      308.742031
     ],
     "en": [
-      "this lab and video have been helpful for"
+      "if you have requests for any specific labs let me know in the comment section"
     ],
     "ru": [
-      "эта лабораторная работа и видео были полезны для"
+      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
     ]
   },
   {
     "time": [
-      298.0,
-      301.0
+      308.742031,
+      315.017553
     ],
     "en": [
-      "you please subscribe for future labs"
+      "if you want to support my channel I accept Bitcoin donations via the address in the description"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лабораторные работы"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах по адресу в описании"
     ]
   },
   {
     "time": [
-      301.0,
-      303.0
+      315.017553,
+      323.729292
     ],
     "en": [
-      "like this which will be released weekly"
+      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
     ],
     "ru": [
-      "как это, которое будет выходить еженедельно"
+      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
     ]
   },
   {
     "time": [
-      303.0,
-      306.0
+      323.729292,
+      323.729292
     ],
     "en": [
-      "if you have requests for any specific"
+      ""
     ],
     "ru": [
-      "если у вас есть запросы на какие-либо конкретные"
+      ""
     ]
   },
   {
     "time": [
-      306.0,
-      308.0
+      323.729292,
+      323.729292
     ],
     "en": [
-      "labs let me know in the comment section"
+      ""
     ],
     "ru": [
-      "лаборатории дайте мне знать в разделе комментариев"
+      ""
     ]
   },
   {
     "time": [
-      308.0,
-      311.0
+      323.729292,
+      323.729292
     ],
     "en": [
-      "if you want to support my channel I"
+      ""
     ],
     "ru": [
-      "если вы хотите поддержать мой канал я"
-    ]
-  },
-  {
-    "time": [
-      311.0,
-      313.0
-    ],
-    "en": [
-      "accept Bitcoin donations via the address"
-    ],
-    "ru": [
-      "принимать пожертвования биткойнами через адрес"
-    ]
-  },
-  {
-    "time": [
-      313.0,
-      316.0
-    ],
-    "en": [
-      "in the description I am also a brave"
-    ],
-    "ru": [
-      "в описании я тоже храбрый"
-    ]
-  },
-  {
-    "time": [
-      316.0,
-      319.0
-    ],
-    "en": [
-      "verified publisher and accept bat or"
-    ],
-    "ru": [
-      "проверенный издатель и принять bat или"
-    ]
-  },
-  {
-    "time": [
-      319.0,
-      322.0
-    ],
-    "en": [
-      "basic attention token donations in the"
-    ],
-    "ru": [
-      "основные пожертвования токенов внимания в"
-    ]
-  },
-  {
-    "time": [
-      322.0,
-      322.0
-    ],
-    "en": [
-      "brave browser"
-    ],
-    "ru": [
-      "смелый браузер"
+      ""
     ]
   }
 ]

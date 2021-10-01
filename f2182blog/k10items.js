@@ -2,415 +2,283 @@ let objs = [
   {
     "time": [
       0.0,
-      3.0
+      5.167103
     ],
     "en": [
-      "welcome to this free CCNA packet tracer"
+      "welcome to this free CCNA packet tracer practice lab"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный трассировщик пакетов CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
     ]
   },
   {
     "time": [
-      3.0,
-      6.0
+      5.167103,
+      8.581871
     ],
     "en": [
-      "practice lab you can download the lab"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "Практическая лаборатория вы можете скачать лабораторию"
+      "скачать лабораторный файл можно по ссылке в описании"
     ]
   },
   {
     "time": [
-      6.0,
-      8.0
+      8.581871,
+      17.262797
     ],
     "en": [
-      "file from the link in the description"
+      "in this short lab we will connect to r1 via the console port and configure usernames and passwords"
     ],
     "ru": [
-      "файл по ссылке в описании"
+      "в этой короткой лабораторной работе мы подключимся к r1 через консольный порт и настроим имена пользователей и пароли."
     ]
   },
   {
     "time": [
-      8.0,
-      12.0
+      17.262797,
+      21.816759
     ],
     "en": [
-      "in this short lab we will connect to r1"
+      "particularly it's important to know whether usernames and passwords are case sensitive"
     ],
     "ru": [
-      "в этой короткой лабораторной работе мы подключимся к r1"
+      "особенно важно знать, чувствительны ли имена пользователей и пароли к регистру"
     ]
   },
   {
     "time": [
-      12.0,
-      14.0
+      21.816759,
+      24.578764
     ],
     "en": [
-      "via the console port and configure"
+      "so we'll experiment with that in this lab"
     ],
     "ru": [
-      "через консольный порт и настроить"
+      "так что мы поэкспериментируем с этим в этой лаборатории"
     ]
   },
   {
     "time": [
-      14.0,
-      18.0
+      24.578764,
+      30.351296
     ],
     "en": [
-      "usernames and passwords particularly"
+      "try to complete the lab on your own first then continue watching this video if you have trouble"
     ],
     "ru": [
-      "имена пользователей и пароли в частности"
+      "попробуйте сначала пройти лабораторную работу самостоятельно, а затем продолжайте смотреть это видео, если у вас возникнут проблемы"
     ]
   },
   {
     "time": [
-      18.0,
-      20.0
+      30.351296,
+      32.655499
     ],
     "en": [
-      "it's important to know whether usernames"
+      "or watch it after to check your solution"
     ],
     "ru": [
-      "важно знать,"
+      "или просмотрите его позже, чтобы проверить свое решение"
     ]
   },
   {
     "time": [
-      20.0,
-      21.0
+      32.655499,
+      41.670304
     ],
     "en": [
-      "and passwords are case sensitive so"
+      "step one is to use PC one to access r1 via the console port"
     ],
     "ru": [
-      "и пароли чувствительны к регистру, поэтому"
+      "Шаг первый - использовать ПК один для доступа к r1 через консольный порт"
     ]
   },
   {
     "time": [
-      21.0,
-      24.0
+      41.670304,
+      47.644722
     ],
     "en": [
-      "we'll experiment with that in this lab"
+      "PC one is already connected to our ones console port so let's click on PC one"
     ],
     "ru": [
-      "мы поэкспериментируем с этим в этой лаборатории"
+      "Первый ПК уже подключен к нашему консольному порту, поэтому давайте щелкнем по ПК."
     ]
   },
   {
     "time": [
-      24.0,
-      27.0
+      47.644722,
+      50.723998
     ],
     "en": [
-      "try to complete the lab on your own"
+      "then click desktop and terminal"
     ],
     "ru": [
-      "попробуйте пройти лабораторию самостоятельно"
+      "затем щелкните рабочий стол и терминал"
     ]
   },
   {
     "time": [
-      27.0,
-      28.0
+      50.723998,
+      54.948878
     ],
     "en": [
-      "first then continue watching this video"
+      "accept the default configurations here and now we're on our one"
     ],
     "ru": [
-      "сначала продолжайте смотреть это видео"
+      "примите конфигурации по умолчанию здесь, и теперь мы находимся на нашем"
     ]
   },
   {
     "time": [
-      28.0,
-      31.0
+      54.948878,
+      59.587607
     ],
     "en": [
-      "if you have trouble or watch it after to"
+      "next is to create two users on our one"
     ],
     "ru": [
-      "если у вас возникнут проблемы или посмотрите это после"
+      "далее нужно создать двух пользователей на нашем"
     ]
   },
   {
     "time": [
-      31.0,
-      35.0
+      59.587607,
+      70.20123
     ],
     "en": [
-      "check your solution"
+      "CCNA in lowercase letters with the password Cisco in lowercase letters and CCNP in lowercase with the password Cisco in uppercase"
     ],
     "ru": [
-      "проверьте свое решение"
+      "CCNA строчными буквами с паролем Cisco строчными буквами и CCNP строчными буквами с паролем Cisco прописными"
     ]
   },
   {
     "time": [
-      35.0,
-      39.0
+      70.20123,
+      73.305574
     ],
     "en": [
-      "step one is to use PC one to access r1"
+      "so let's go to global config mode"
     ],
     "ru": [
-      "Шаг первый - использовать ПК один для доступа к r1"
+      "так что давайте перейдем в режим глобальной конфигурации"
     ]
   },
   {
     "time": [
-      39.0,
-      43.0
+      73.305574,
+      76.73268
     ],
     "en": [
-      "via the console port PC one is already"
+      "enable conf t"
     ],
     "ru": [
-      "через консольный порт ПК уже"
+      "включить конф т"
     ]
   },
   {
     "time": [
-      43.0,
-      45.0
+      76.73268,
+      83.459327
     ],
     "en": [
-      "connected to our ones console port so"
+      "you can create users with this command username CCNA password Cisco"
     ],
     "ru": [
-      "подключен к нашему консольному порту, так что"
+      "вы можете создавать пользователей с помощью этой команды имя пользователя CCNA пароль Cisco"
     ]
   },
   {
     "time": [
-      45.0,
-      48.0
+      83.459327,
+      84.968655
     ],
     "en": [
-      "let's click on PC one then click desktop"
+      "that's it"
     ],
     "ru": [
-      "нажмите на ПК, затем нажмите на рабочий стол"
+      "это оно"
     ]
   },
   {
     "time": [
-      48.0,
-      51.0
+      84.968655,
+      87.754053
     ],
     "en": [
-      "and terminal accept the default"
+      "now let's create the second user"
     ],
     "ru": [
-      "и терминал принимает значение по умолчанию"
+      "теперь давайте создадим второго пользователя"
     ]
   },
   {
     "time": [
-      51.0,
-      53.0
+      87.754053,
+      91.783489
     ],
     "en": [
-      "configurations here and now we're on our"
+      "username CCNP password Cisco"
     ],
     "ru": [
-      "конфигурации здесь, и теперь мы находимся на нашем"
+      "имя пользователя CCNP пароль Cisco"
     ]
   },
   {
     "time": [
-      53.0,
-      58.0
+      91.783489,
+      94.656661
     ],
     "en": [
-      "one next is to create two users on our"
+      "with Cisco being an uppercase this time"
     ],
     "ru": [
-      "один следующий - создать двух пользователей на нашем"
+      "на этот раз Cisco в верхнем регистре"
     ]
   },
   {
     "time": [
-      58.0,
-      62.0
+      94.656661,
+      99.023858
     ],
     "en": [
-      "one CCNA in lowercase letters with the"
+      "now if we log out of the router and then access it again"
     ],
     "ru": [
-      "один CCNA строчными буквами с"
+      "теперь, если мы выйдем из роутера, а затем снова получим к нему доступ"
     ]
   },
   {
     "time": [
-      62.0,
-      65.0
+      99.023858,
+      102.202123
     ],
     "en": [
-      "password Cisco in lowercase letters and"
+      "we still won't be asked to use a username and password"
     ],
     "ru": [
-      "пароль Cisco строчными буквами и"
+      "нас по-прежнему не попросят использовать имя пользователя и пароль"
     ]
   },
   {
     "time": [
-      65.0,
-      68.0
+      102.202123,
+      105.847023
     ],
     "en": [
-      "CCNP in lowercase with the password"
+      "we have to tell the console port to require a username and password"
     ],
     "ru": [
-      "CCNP в нижнем регистре с паролем"
+      "мы должны указать консольному порту, чтобы он запрашивал имя пользователя и пароль"
     ]
   },
   {
     "time": [
-      68.0,
-      72.0
-    ],
-    "en": [
-      "Cisco in uppercase so let's go to global"
-    ],
-    "ru": [
-      "Cisco в верхнем регистре, так что давайте перейдем к глобальному"
-    ]
-  },
-  {
-    "time": [
-      72.0,
-      77.0
-    ],
-    "en": [
-      "config mode and able compte you can"
-    ],
-    "ru": [
-      "режим конфигурации и способный компьютер вы можете"
-    ]
-  },
-  {
-    "time": [
-      77.0,
-      80.0
-    ],
-    "en": [
-      "create users with this command username"
-    ],
-    "ru": [
-      "создать пользователей с этим именем пользователя команды"
-    ]
-  },
-  {
-    "time": [
-      80.0,
-      85.0
-    ],
-    "en": [
-      "CCNA password Cisco that's it now let's"
-    ],
-    "ru": [
-      "Пароль CCNA Cisco вот и все давайте"
-    ]
-  },
-  {
-    "time": [
-      85.0,
-      89.0
-    ],
-    "en": [
-      "create the second user username CCNP"
-    ],
-    "ru": [
-      "создать второе имя пользователя CCNP"
-    ]
-  },
-  {
-    "time": [
-      89.0,
-      92.0
-    ],
-    "en": [
-      "password Cisco with Cisco being an"
-    ],
-    "ru": [
-      "пароль Cisco с Cisco, являющимся"
-    ]
-  },
-  {
-    "time": [
-      92.0,
-      96.0
-    ],
-    "en": [
-      "uppercase this time now if we log out of"
-    ],
-    "ru": [
-      "на этот раз в верхнем регистре, если мы выйдем из"
-    ]
-  },
-  {
-    "time": [
-      96.0,
-      99.0
-    ],
-    "en": [
-      "the router and then access it again we"
-    ],
-    "ru": [
-      "маршрутизатор, а затем снова обращаемся к нему, мы"
-    ]
-  },
-  {
-    "time": [
-      99.0,
-      100.0
-    ],
-    "en": [
-      "still won't be asked to use a username"
-    ],
-    "ru": [
-      "по-прежнему не будет предложено использовать имя пользователя"
-    ]
-  },
-  {
-    "time": [
-      100.0,
-      103.0
-    ],
-    "en": [
-      "and password we have to tell the console"
-    ],
-    "ru": [
-      "и пароль мы должны сообщить консоли"
-    ]
-  },
-  {
-    "time": [
-      103.0,
-      105.0
-    ],
-    "en": [
-      "port to require a username and password"
-    ],
-    "ru": [
-      "порт для запроса имени пользователя и пароля"
-    ]
-  },
-  {
-    "time": [
-      105.0,
-      107.0
+      105.847023,
+      107.666403
     ],
     "en": [
       "so let's do that"
@@ -421,224 +289,152 @@ let objs = [
   },
   {
     "time": [
-      107.0,
-      112.0
+      107.666403,
+      111.195749
     ],
     "en": [
-      "line console 0 if you remember when we"
+      "line console 0"
     ],
     "ru": [
-      "line console 0, если вы помните, когда мы"
+      "линия консоли 0"
     ]
   },
   {
     "time": [
-      112.0,
-      113.0
+      111.195749,
+      115.099835
     ],
     "en": [
-      "configured the line password on the"
+      "if you remember when we configured the line password on the console"
     ],
     "ru": [
-      "настроил пароль линии на"
+      "если вы помните, когда мы настраивали пароль линии на консоли"
     ]
   },
   {
     "time": [
-      113.0,
-      117.0
+      115.099835,
+      119.456999
     ],
     "en": [
-      "console we use the command login to make"
+      "we use the command login to make it required to access the console port"
     ],
     "ru": [
-      "console мы используем команду login, чтобы сделать"
+      "мы используем команду login, чтобы она требовалась для доступа к консольному порту"
     ]
   },
   {
     "time": [
-      117.0,
-      119.0
+      119.456999,
+      125.718569
     ],
     "en": [
-      "it required to access the console port"
+      "this time however we want to instruct the router to use the local user database instead"
     ],
     "ru": [
-      "требуется доступ к консольному порту"
+      "на этот раз, однако, мы хотим проинструктировать маршрутизатор использовать вместо этого локальную базу данных пользователей."
     ]
   },
   {
     "time": [
-      119.0,
-      122.0
+      125.718569,
+      128.192131
     ],
     "en": [
-      "this time however we want to instruct"
+      "that is done with this command"
     ],
     "ru": [
-      "на этот раз, однако, мы хотим проинструктировать"
+      "это делается с помощью этой команды"
     ]
   },
   {
     "time": [
-      122.0,
-      123.0
+      128.192131,
+      130.333457
     ],
     "en": [
-      "the router to use the local user"
+      "login local"
     ],
     "ru": [
-      "маршрутизатор для использования локального пользователя"
+      "войти в систему"
     ]
   },
   {
     "time": [
-      123.0,
-      127.0
+      130.333457,
+      132.823914
     ],
     "en": [
-      "database instead that is done with this"
+      "so that's step 2 and step 3"
     ],
     "ru": [
-      "база данных вместо этого, что делается с этим"
+      "так что это шаг 2 и шаг 3"
     ]
   },
   {
     "time": [
-      127.0,
-      131.0
+      132.823914,
+      139.543822
     ],
     "en": [
-      "command login local so that's step 2 and"
+      "step 4 is to log out of the router and log in again with each account"
     ],
     "ru": [
-      "локальный логин команды, так что шаг 2 и"
+      "Шаг 4 - выйти из маршрутизатора и снова войти в систему с каждой учетной записью."
     ]
   },
   {
     "time": [
-      131.0,
-      134.0
+      139.543822,
+      144.113047
     ],
     "en": [
-      "step 3"
+      "we're going to test whether or not the usernames and passwords are case sensitive"
     ],
     "ru": [
-      "шаг 3"
+      "мы собираемся проверить, чувствительны ли имена пользователей и пароли к регистру"
     ]
   },
   {
     "time": [
-      134.0,
-      136.0
+      144.113047,
+      149.430148
     ],
     "en": [
-      "step four is to log out of the router"
+      "so I'll type end to return to privileged exec mode and then log out"
     ],
     "ru": [
-      "Шаг четвертый - выйти из роутера"
+      "поэтому я наберу end, чтобы вернуться в привилегированный режим exec, а затем выйду из системы"
     ]
   },
   {
     "time": [
-      136.0,
-      140.0
+      149.430148,
+      156.124534
     ],
     "en": [
-      "and log in again with each account we're"
+      "let's try the CCNA a user with the password cisco in lower case as we configured"
     ],
     "ru": [
-      "и войдите снова с каждой учетной записью, которую мы"
+      "давайте попробуем CCNA пользователя с паролем cisco в нижнем регистре, как мы настроили"
     ]
   },
   {
     "time": [
-      140.0,
-      141.0
+      156.124534,
+      160.144318
     ],
     "en": [
-      "going to test whether or not the"
+      "it works let's log out again"
     ],
     "ru": [
-      "собираюсь проверить, действительно ли"
+      "это работает давай снова выйдем из системы"
     ]
   },
   {
     "time": [
-      141.0,
-      142.0
-    ],
-    "en": [
-      "usernames and passwords are case"
-    ],
-    "ru": [
-      "логины и пароли регистр"
-    ]
-  },
-  {
-    "time": [
-      142.0,
-      146.0
-    ],
-    "en": [
-      "sensitive so I'll type end to return to"
-    ],
-    "ru": [
-      "чувствительный, поэтому я напечатаю конец, чтобы вернуться к"
-    ]
-  },
-  {
-    "time": [
-      146.0,
-      149.0
-    ],
-    "en": [
-      "privileged exec mode and then log out"
-    ],
-    "ru": [
-      "привилегированный режим exec, а затем выйти из системы"
-    ]
-  },
-  {
-    "time": [
-      149.0,
-      152.0
-    ],
-    "en": [
-      "let's try the CCNA a user with the"
-    ],
-    "ru": [
-      "давайте попробуем CCNA пользователя с"
-    ]
-  },
-  {
-    "time": [
-      152.0,
-      154.0
-    ],
-    "en": [
-      "password cisco in lower case as we"
-    ],
-    "ru": [
-      "пароль cisco в нижнем регистре, как мы"
-    ]
-  },
-  {
-    "time": [
-      154.0,
-      159.0
-    ],
-    "en": [
-      "configured it works let's log out again"
-    ],
-    "ru": [
-      "настроено работает, давайте снова выйдем из системы"
-    ]
-  },
-  {
-    "time": [
-      159.0,
-      162.0
+      160.144318,
+      163.104745
     ],
     "en": [
       "now I'll try the username in all caps"
@@ -649,590 +445,482 @@ let objs = [
   },
   {
     "time": [
-      162.0,
-      166.0
+      163.104745,
+      165.47374
     ],
     "en": [
-      "with the password in lower case again as"
+      "with the password in lower case again"
     ],
     "ru": [
-      "с паролем в нижнем регистре снова как"
+      "снова с паролем в нижнем регистре"
     ]
   },
   {
     "time": [
-      166.0,
-      169.0
+      165.47374,
+      169.219869
     ],
     "en": [
-      "you can see it lets us log in so the"
+      "as you can see it lets us log in"
     ],
     "ru": [
-      "вы можете видеть, что это позволяет нам войти в систему, чтобы"
+      "как видите, это позволяет нам войти в систему"
     ]
   },
   {
     "time": [
-      169.0,
-      173.0
+      169.219869,
+      172.185697
     ],
     "en": [
-      "username is not case-sensitive now let's"
+      "so the username is not case-sensitive"
     ],
     "ru": [
-      "имя пользователя теперь не чувствительно к регистру, давайте"
+      "поэтому имя пользователя не чувствительно к регистру"
     ]
   },
   {
     "time": [
-      173.0,
-      176.0
+      172.185697,
+      174.951694
     ],
     "en": [
-      "check the password I'll use the CCNA"
+      "now let's check the password"
     ],
     "ru": [
-      "проверьте пароль, я воспользуюсь CCNA"
+      "теперь давайте проверим пароль"
     ]
   },
   {
     "time": [
-      176.0,
-      178.0
+      174.951694,
+      178.127445
     ],
     "en": [
-      "username again doesn't matter if you"
+      "I'll use the CCNA username again"
     ],
     "ru": [
-      "имя пользователя снова не имеет значения, если вы"
+      "Я снова буду использовать имя пользователя CCNA"
     ]
   },
   {
     "time": [
-      178.0,
-      181.0
+      178.127445,
+      181.083492
     ],
     "en": [
-      "type in a lowercase or uppercase but"
+      "doesn't matter if you type in a lowercase or uppercase"
     ],
     "ru": [
-      "введите строчные или прописные буквы, но"
+      "не имеет значения, в нижнем или верхнем регистре вы набираете"
     ]
   },
   {
     "time": [
-      181.0,
-      183.0
+      181.083492,
+      184.278747
     ],
     "en": [
-      "this time I'll type the password in all"
+      "but this time I'll type the password in all caps"
     ],
     "ru": [
-      "на этот раз я наберу пароль во всех"
+      "но на этот раз я наберу пароль заглавными буквами"
     ]
   },
   {
     "time": [
-      183.0,
-      185.0
+      184.278747,
+      187.165127
     ],
     "en": [
-      "caps although you can't see the"
+      "although you can't see the characters as I type"
     ],
     "ru": [
-      "шапки, хотя вы не видите"
+      "хотя вы не можете видеть символы, когда я печатаю"
     ]
   },
   {
     "time": [
-      185.0,
-      189.0
+      187.165127,
+      188.846703
     ],
     "en": [
-      "characters as I type it fails I'll try"
+      "it fails"
     ],
     "ru": [
-      "символы по мере того, как я печатаю это не удается, я попробую"
+      "это не удается"
     ]
   },
   {
     "time": [
-      189.0,
-      193.0
+      188.846703,
+      190.869382
     ],
     "en": [
-      "again in case I hit a wrong key doesn't"
+      "I'll try again in case I hit a wrong key"
     ],
     "ru": [
-      "еще раз, если я нажму не ту клавишу, не"
+      "Я попробую еще раз, если нажму не ту клавишу"
     ]
   },
   {
     "time": [
-      193.0,
-      197.0
+      190.869382,
+      194.460195
     ],
     "en": [
-      "work so the password is case-sensitive"
+      "doesn't work"
     ],
     "ru": [
-      "работать, поэтому пароль чувствителен к регистру"
+      "не работает"
     ]
   },
   {
     "time": [
-      197.0,
-      200.0
+      194.460195,
+      197.604527
     ],
     "en": [
-      "let's quickly try again with the CCNP"
+      "so the password is case-sensitive"
     ],
     "ru": [
-      "давайте быстро попробуем еще раз с CCNP"
+      "поэтому пароль чувствителен к регистру"
     ]
   },
   {
     "time": [
-      200.0,
-      203.0
+      197.604527,
+      202.24125
     ],
     "en": [
-      "username again to confirm I'll type the"
+      "let's quickly try again with the CCNP username again to confirm"
     ],
     "ru": [
-      "имя пользователя еще раз, чтобы подтвердить, я наберу"
+      "давайте быстро попробуем еще раз с именем пользователя CCNP еще раз, чтобы подтвердить"
     ]
   },
   {
     "time": [
-      203.0,
-      205.0
+      202.24125,
+      210.253867
     ],
     "en": [
-      "username alternating upper and lower"
+      "I'll type the username alternating upper and lower case just to prove the point and I'll type the correct password which is all uppercase"
     ],
     "ru": [
-      "имя пользователя чередуется верхним и нижним"
+      "Я введу имя пользователя, чередуя верхний и нижний регистр, просто чтобы доказать свою точку зрения, и я введу правильный пароль, который все в верхнем регистре"
     ]
   },
   {
     "time": [
-      205.0,
-      207.0
+      210.253867,
+      212.890302
     ],
     "en": [
-      "case just to prove the point and I'll"
+      "it works"
     ],
     "ru": [
-      "случай, чтобы доказать свою точку зрения, и я"
+      "оно работает"
     ]
   },
   {
     "time": [
-      207.0,
-      209.0
+      212.890302,
+      214.259465
     ],
     "en": [
-      "type the correct password which is all"
+      "log out again"
     ],
     "ru": [
-      "введите правильный пароль, и все"
+      "выйти снова"
     ]
   },
   {
     "time": [
-      209.0,
-      212.0
+      214.259465,
+      216.625441
     ],
     "en": [
-      "uppercase it works"
+      "this time I'll type the password in lowercase"
     ],
     "ru": [
-      "прописные буквы работают"
+      "на этот раз я наберу пароль в нижнем регистре"
     ]
   },
   {
     "time": [
-      212.0,
-      215.0
+      216.625441,
+      222.287961
     ],
     "en": [
-      "log out again this time I'll type the"
+      "doesn't work so to summarize usernames are not case sensitive"
     ],
     "ru": [
-      "выйдите снова, на этот раз я наберу"
+      "не работает, поэтому для суммирования имен пользователей регистр не учитывается"
     ]
   },
   {
     "time": [
-      215.0,
-      218.0
+      222.287961,
+      225.178669
     ],
     "en": [
-      "password in lowercase doesn't work"
+      "but passwords are case sensitive"
     ],
     "ru": [
-      "пароль в нижнем регистре не работает"
+      "но пароли чувствительны к регистру"
     ]
   },
   {
     "time": [
-      218.0,
-      221.0
+      225.178669,
+      233.075487
     ],
     "en": [
-      "so to summarize usernames are not case"
+      "next I'll do one more demonstration even though this isn't part of the lab"
     ],
     "ru": [
-      "так что суммировать имена пользователей не случай"
+      "Далее я проведу еще одну демонстрацию, хотя это не часть лаборатории"
     ]
   },
   {
     "time": [
-      221.0,
-      223.0
+      233.075487,
+      234.81109
     ],
     "en": [
-      "sensitive but passwords are case"
+      "let me login again"
     ],
     "ru": [
-      "чувствительный, но пароли регистр"
+      "позволь мне войти снова"
     ]
   },
   {
     "time": [
-      223.0,
-      228.0
+      234.81109,
+      238.387859
     ],
     "en": [
-      "sensitive"
+      "then enable show run"
     ],
     "ru": [
-      "чувствительный"
+      "затем включите шоу-запуск"
     ]
   },
   {
     "time": [
-      228.0,
-      231.0
+      238.387859,
+      240.992207
     ],
     "en": [
-      "next I'll do one more demonstration even"
+      "look at the usernames and passwords here"
     ],
     "ru": [
-      "далее я сделаю еще одну демонстрацию даже"
+      "посмотрите имена пользователей и пароли здесь"
     ]
   },
   {
     "time": [
-      231.0,
-      233.0
+      240.992207,
+      245.315422
     ],
     "en": [
-      "though this isn't part of the lab let me"
+      "we're going to add a new user named CCNA with all capitals"
     ],
     "ru": [
-      "хотя это не часть лаборатории, позвольте мне"
+      "мы собираемся добавить нового пользователя с именем CCNA со всеми заглавными буквами"
     ]
   },
   {
     "time": [
-      233.0,
-      238.0
+      245.315422,
+      248.912454
     ],
     "en": [
-      "login again then enable show run look at"
+      "if we are correct about user names not being case sensitive"
     ],
     "ru": [
-      "войдите снова, затем включите шоу, посмотрите, посмотрите"
+      "если мы правы в том, что имена пользователей не чувствительны к регистру"
     ]
   },
   {
     "time": [
-      238.0,
-      241.0
+      248.912454,
+      253.136537
     ],
     "en": [
-      "the usernames and passwords here we're"
+      "it should replace the current user rather than actually creating a new user"
     ],
     "ru": [
-      "имена пользователей и пароли здесь мы"
+      "он должен заменить текущего пользователя, а не создавать нового пользователя"
     ]
   },
   {
     "time": [
-      241.0,
-      244.0
+      253.136537,
+      259.516593
     ],
     "en": [
-      "going to add a new user named CCNA with"
+      "conf t user named CCNA password router"
     ],
     "ru": [
-      "собираюсь добавить нового пользователя с именем CCNA с"
+      "conf t пользователь с именем CCNA пароль маршрутизатор"
     ]
   },
   {
     "time": [
-      244.0,
-      246.0
+      259.516593,
+      265.766983
     ],
     "en": [
-      "all capitals if we are correct about"
+      "do show run as you can see it didn't actually create a new user"
     ],
     "ru": [
-      "все столицы, если мы правы"
+      "показывать запуск, поскольку вы можете видеть, что на самом деле он не создавал нового пользователя"
     ]
   },
   {
     "time": [
-      246.0,
-      249.0
+      265.766983,
+      268.576796
     ],
     "en": [
-      "user names not being case sensitive it"
+      "it still displays the user name in the lower case"
     ],
     "ru": [
-      "имена пользователей не чувствительны к регистру"
+      "он по-прежнему отображает имя пользователя в нижнем регистре"
     ]
   },
   {
     "time": [
-      249.0,
-      251.0
+      268.576796,
+      270.204111
     ],
     "en": [
-      "should replace the current user rather"
+      "even though I typed in an upper case"
     ],
     "ru": [
-      "следует заменить текущего пользователя, а"
+      "хотя я набирал в верхнем регистре"
     ]
   },
   {
     "time": [
-      251.0,
-      254.0
+      270.204111,
+      273.428537
     ],
     "en": [
-      "than actually creating a new user compte"
+      "but the password is now router instead of Cisco"
     ],
     "ru": [
-      "чем на самом деле создание нового пользователя compte"
+      "но пароль теперь роутер вместо Cisco"
     ]
   },
   {
     "time": [
-      254.0,
-      260.0
+      273.428537,
+      281.112416
     ],
     "en": [
-      "user named CCNA password router do show"
+      "thank you for watching I hope this lab and video have been helpful for you"
     ],
     "ru": [
-      "пользователь с именем CCNA пароль маршрутизатора показывает"
+      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были для вас полезны."
     ]
   },
   {
     "time": [
-      260.0,
-      264.0
+      281.112416,
+      285.802063
     ],
     "en": [
-      "run as you can see it didn't actually"
+      "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "бежать, как видите, на самом деле не"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {
     "time": [
-      264.0,
-      266.0
+      285.802063,
+      290.979391
     ],
     "en": [
-      "create a new user it still displays the"
+      "if you have requests for any specific labs let me know in the comment section"
     ],
     "ru": [
-      "создать нового пользователя, он по-прежнему отображает"
+      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
     ]
   },
   {
     "time": [
-      266.0,
-      268.0
+      290.979391,
+      296.860053
     ],
     "en": [
-      "user name in the lower case even though"
+      "if you want to support my channel I accept Bitcoin donations via the address in the description"
     ],
     "ru": [
-      "имя пользователя в нижнем регистре, хотя"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах по адресу в описании"
     ]
   },
   {
     "time": [
-      268.0,
-      270.0
+      296.860053,
+      300.166829
     ],
     "en": [
-      "I typed in an upper case but the"
+      "I am also a brave verified publisher"
     ],
     "ru": [
-      "Я набрал прописными буквами, но"
+      "Я также храбрый проверенный издатель"
     ]
   },
   {
     "time": [
-      270.0,
-      275.0
+      300.166829,
+      305.667053
     ],
     "en": [
-      "password is now router instead of Cisco"
+      "and accept bat or basic attention token donations in the brave browser"
     ],
     "ru": [
-      "пароль теперь роутер вместо Cisco"
+      "и принимайте пожертвования летучих мышей или токенов основного внимания в смелом браузере"
     ]
   },
   {
     "time": [
-      275.0,
-      278.0
+      305.667053,
+      305.667053
     ],
     "en": [
-      "thank you for watching I hope this lab"
+      ""
     ],
     "ru": [
-      "спасибо за просмотр, надеюсь, эта лаборатория"
+      ""
     ]
   },
   {
     "time": [
-      278.0,
-      280.0
+      305.667053,
+      305.667053
     ],
     "en": [
-      "and video have been helpful for you"
+      ""
     ],
     "ru": [
-      "и видео были для вас полезны"
+      ""
     ]
   },
   {
     "time": [
-      280.0,
-      283.0
+      305.667053,
+      305.667053
     ],
     "en": [
-      "please subscribe for future labs like"
+      ""
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, такие как"
-    ]
-  },
-  {
-    "time": [
-      283.0,
-      286.0
-    ],
-    "en": [
-      "this which will be released weekly if"
-    ],
-    "ru": [
-      "это будет выпускаться еженедельно, если"
-    ]
-  },
-  {
-    "time": [
-      286.0,
-      288.0
-    ],
-    "en": [
-      "you have requests for any specific labs"
-    ],
-    "ru": [
-      "у вас есть запросы по каким-либо конкретным лабораториям"
-    ]
-  },
-  {
-    "time": [
-      288.0,
-      290.0
-    ],
-    "en": [
-      "let me know in the comment section if"
-    ],
-    "ru": [
-      "дайте мне знать в разделе комментариев, если"
-    ]
-  },
-  {
-    "time": [
-      290.0,
-      293.0
-    ],
-    "en": [
-      "you want to support my channel I accept"
-    ],
-    "ru": [
-      "вы хотите поддержать мой канал я принимаю"
-    ]
-  },
-  {
-    "time": [
-      293.0,
-      295.0
-    ],
-    "en": [
-      "Bitcoin donations via the address in the"
-    ],
-    "ru": [
-      "Пожертвования биткойнов через адрес в"
-    ]
-  },
-  {
-    "time": [
-      295.0,
-      299.0
-    ],
-    "en": [
-      "description I am also a brave verified"
-    ],
-    "ru": [
-      "описание я тоже храбрый проверил"
-    ]
-  },
-  {
-    "time": [
-      299.0,
-      302.0
-    ],
-    "en": [
-      "publisher and accept bat or basic"
-    ],
-    "ru": [
-      "издатель и принять летучую мышь или базовый"
-    ]
-  },
-  {
-    "time": [
-      302.0,
-      304.0
-    ],
-    "en": [
-      "attention token donations in the brave"
-    ],
-    "ru": [
-      "пожертвования токенов внимания в храбрых"
-    ]
-  },
-  {
-    "time": [
-      304.0,
-      304.0
-    ],
-    "en": [
-      "browser"
-    ],
-    "ru": [
-      "браузер"
+      ""
     ]
   }
 ]

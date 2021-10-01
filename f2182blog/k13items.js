@@ -2,679 +2,955 @@ let objs = [
   {
     "time": [
       0.0,
-      3.0
+      4.58995
     ],
     "en": [
-      "welcome to this free CCNA packet tracer"
+      "welcome to this free CCNA packet tracer practice lab"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный трассировщик пакетов CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
     ]
   },
   {
     "time": [
-      3.0,
-      5.0
+      4.58995,
+      7.585084
     ],
     "en": [
-      "practice lab you can download the lab"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "Практическая лаборатория вы можете скачать лабораторию"
+      "скачать лабораторный файл можно по ссылке в описании"
     ]
   },
   {
     "time": [
-      5.0,
-      8.0
+      7.585084,
+      14.533292
     ],
     "en": [
-      "file from the link in the description in"
+      "in this lab we will take a basic look at CDP cisco discovery protocol"
     ],
     "ru": [
-      "файл по ссылке в описании в"
+      "В этой лабораторной работе мы кратко рассмотрим протокол обнаружения CDP cisco."
     ]
   },
   {
     "time": [
-      8.0,
-      11.0
+      14.533292,
+      18.473101
     ],
     "en": [
-      "this lab we will take a basic look at"
+      "CDP is a cisco proprietary protocol"
     ],
     "ru": [
-      "в этой лаборатории мы кратко рассмотрим"
+      "CDP - проприетарный протокол cisco"
     ]
   },
   {
     "time": [
-      11.0,
-      16.0
+      18.473101,
+      28.24391
     ],
     "en": [
-      "CDP cisco discovery protocol CDP is a"
+      "it is used to share information about other directly connected cisco equipment such as the operating system version and the interfaces by which they are connected"
     ],
     "ru": [
-      "CDP Протокол обнаружения Cisco CDP - это"
+      "он используется для обмена информацией о другом напрямую подключенном оборудовании cisco, например о версии операционной системы и интерфейсах, с помощью которых они подключены."
     ]
   },
   {
     "time": [
-      16.0,
-      19.0
+      28.24391,
+      35.034259
     ],
     "en": [
-      "cisco proprietary protocol it is used to"
+      "there is also a vendor-neutral protocol called lldp or link layer discovery protocol"
     ],
     "ru": [
-      "проприетарный протокол cisco, который используется для"
+      "существует также независимый от производителя протокол, называемый lldp или протокол обнаружения канального уровня."
     ]
   },
   {
     "time": [
-      19.0,
-      21.0
+      35.034259,
+      37.721952
     ],
     "en": [
-      "share information about other directly"
+      "which I will talk about in another video"
     ],
     "ru": [
-      "делиться информацией о других напрямую"
+      "о котором я расскажу в другом видео"
     ]
   },
   {
     "time": [
-      21.0,
-      23.0
+      37.721952,
+      45.806908
     ],
     "en": [
-      "connected cisco equipment such as the"
+      "try to complete the lab yourself first then continue watching this video if you have trouble or watch it after to check your solution"
     ],
     "ru": [
-      "подключенное оборудование cisco, такое как"
+      "попробуйте сначала выполнить лабораторную работу самостоятельно, а затем продолжайте смотреть это видео, если у вас возникнут проблемы, или просмотрите его после, чтобы проверить свое решение."
     ]
   },
   {
     "time": [
-      23.0,
-      25.0
+      45.806908,
+      54.209562
     ],
     "en": [
-      "operating system version and the"
+      "step 1 is to use CDP to identify which interfaces are used to connect the routers and switches"
     ],
     "ru": [
-      "версия операционной системы и"
+      "Шаг 1 - использовать CDP, чтобы определить, какие интерфейсы используются для подключения маршрутизаторов и коммутаторов."
     ]
   },
   {
     "time": [
-      25.0,
-      27.0
+      54.209562,
+      60.939856
     ],
     "en": [
-      "interfaces by which they are connected"
+      "CDP can only display directly connected neighbors so switch one should have one neighbor r1"
     ],
     "ru": [
-      "интерфейсы, которыми они связаны"
+      "CDP может отображать только напрямую подключенных соседей, поэтому переключение должно иметь одного соседа r1"
     ]
   },
   {
     "time": [
-      27.0,
-      30.0
+      60.939856,
+      65.231943
     ],
     "en": [
-      "there is also a vendor-neutral protocol"
+      "r1 should have two neighbors switch 1 and r2"
     ],
     "ru": [
-      "есть также протокол, не зависящий от производителя"
+      "r1 должен иметь двух соседей switch 1 и r2"
     ]
   },
   {
     "time": [
-      30.0,
-      34.0
+      65.231943,
+      69.394916
     ],
     "en": [
-      "called lldp or link layer discovery"
+      "r2 should have two neighbors r1 and switch two"
     ],
     "ru": [
-      "называется lldp или обнаружением канального уровня"
+      "r2 должен иметь двух соседей r1 и переключать два"
     ]
   },
   {
     "time": [
-      34.0,
-      36.0
+      69.394916,
+      72.662789
     ],
     "en": [
-      "protocol which I will talk about in"
+      "and switch two should have one neighbor r2"
     ],
     "ru": [
-      "протокол, о котором я расскажу в"
+      "и у второго коммутатора должен быть один сосед r2"
     ]
   },
   {
     "time": [
-      36.0,
-      39.0
+      72.662789,
+      75.808923
     ],
     "en": [
-      "another video try to complete the lab"
+      "let's check on switch 1 first"
     ],
     "ru": [
-      "еще одно видео попробуйте пройти лабораторию"
+      "давайте сначала проверим переключатель 1"
     ]
   },
   {
     "time": [
-      39.0,
-      41.0
+      75.808923,
+      83.824937
     ],
     "en": [
-      "yourself first then continue watching"
+      "enable now let's use the command show CDP neighbors"
     ],
     "ru": [
-      "сначала себя, а потом продолжай смотреть"
+      "включить, теперь воспользуемся командой show CDP Neighbours"
     ]
   },
   {
     "time": [
-      41.0,
-      43.0
+      83.824937,
+      88.542371
     ],
     "en": [
-      "this video if you have trouble or watch"
+      "as you can see switch 1 has one neighbor r1"
     ],
     "ru": [
-      "это видео, если у вас возникли проблемы, или посмотрите"
+      "как вы можете видеть, у коммутатора 1 есть один сосед r1"
     ]
   },
   {
     "time": [
-      43.0,
-      49.0
+      88.542371,
+      92.451745
     ],
     "en": [
-      "it after to check your solution step 1"
+      "it is connected to the fastethernet 0/1 interface"
     ],
     "ru": [
-      "это после, чтобы проверить свое решение, шаг 1"
+      "он подключен к интерфейсу fastethernet 0/1"
     ]
   },
   {
     "time": [
-      49.0,
-      51.0
+      92.451745,
+      99.005865
     ],
     "en": [
-      "is to use CDP to identify which"
+      "remember local interface means the interface on this device switch 1"
     ],
     "ru": [
-      "заключается в использовании CDP для определения"
+      "помните, что локальный интерфейс означает интерфейс на этом переключателе устройства 1"
     ]
   },
   {
     "time": [
-      51.0,
-      52.0
+      99.005865,
+      105.441897
     ],
     "en": [
-      "interfaces are used to connect the"
+      "under capability there is an R and if you check the capability codes list up here"
     ],
     "ru": [
-      "интерфейсы используются для подключения"
+      "под возможностями есть R, и если вы проверите список кодов возможностей здесь"
     ]
   },
   {
     "time": [
-      52.0,
-      55.0
+      105.441897,
+      107.75254
     ],
     "en": [
-      "routers and switches CDP can only"
+      "you can see that that means router"
     ],
     "ru": [
-      "маршрутизаторы и коммутаторы CDP могут только"
+      "вы можете видеть, что это означает маршрутизатор"
     ]
   },
   {
     "time": [
-      55.0,
-      58.0
+      107.75254,
+      111.449542
     ],
     "en": [
-      "display directly connected neighbors so"
+      "also check the port ID"
     ],
     "ru": [
-      "отображать напрямую подключенных соседей, чтобы"
+      "также проверьте идентификатор порта"
     ]
   },
   {
     "time": [
-      58.0,
-      60.0
+      111.449542,
+      116.046399
     ],
     "en": [
-      "switch one should have one neighbor r1"
+      "this is the interface of the remote device in this case r1"
     ],
     "ru": [
-      "переключатель должен иметь одного соседа r1"
+      "это интерфейс удаленного устройства в данном случае r1"
     ]
   },
   {
     "time": [
-      60.0,
-      63.0
+      116.046399,
+      123.046494
     ],
     "en": [
-      "r1 should have two neighbors switch 1"
+      "so now you know switch 1 is connected to r1 by its fastethernet 0/1 interface"
     ],
     "ru": [
-      "r1 должен иметь двух соседей switch 1"
+      "Итак, теперь вы знаете, что коммутатор 1 подключен к r1 через интерфейс fastethernet 0/1"
     ]
   },
   {
     "time": [
-      63.0,
-      67.0
+      123.046494,
+      126.749828
     ],
     "en": [
-      "and r2 r2 should have two neighbors r1"
+      "and it's connected to our ones fastethernet 0/0 interface"
     ],
     "ru": [
-      "и r2 r2 должно иметь двух соседей r1"
+      "и он подключен к нашему интерфейсу fastethernet 0/0"
     ]
   },
   {
     "time": [
-      67.0,
-      70.0
+      126.749828,
+      131.6662
     ],
     "en": [
-      "and switch two and switch two should"
+      "let's hop on r1 now"
     ],
     "ru": [
-      "и переключить два и переключить два должны"
+      "давай сядем на r1 сейчас"
     ]
   },
   {
     "time": [
-      70.0,
-      74.0
+      131.6662,
+      143.569504
     ],
     "en": [
-      "have one neighbor r2 let's check on"
+      "enable show CDP neighbors are one has two neighbors switch 1 and r2"
     ],
     "ru": [
-      "есть один сосед r2 давайте проверим"
+      "включить показать соседей CDP, если у одного есть два соседа switch 1 и r2"
     ]
   },
   {
     "time": [
-      74.0,
-      80.0
+      143.569504,
+      149.813736
     ],
     "en": [
-      "switch 1 first enable now let's use the"
+      "it's connected to switch 1 via the fastethernet 0/0 interface which we already learned from switch 1"
     ],
     "ru": [
-      "переключатель 1 сначала включить, теперь давайте воспользуемся"
+      "он подключен к коммутатору 1 через интерфейс fastethernet 0/0, который мы уже узнали от коммутатора 1"
     ]
   },
   {
     "time": [
-      80.0,
-      85.0
+      149.813736,
+      154.883615
     ],
     "en": [
-      "command show CDP neighbors as you can"
+      "it's connected to r2 by its serial to zero interface"
     ],
     "ru": [
-      "команда покажет соседей CDP, как вы можете"
+      "он подключен к r2 через его последовательный к нулевому интерфейсу"
     ]
   },
   {
     "time": [
-      85.0,
-      89.0
+      154.883615,
+      159.030221
     ],
     "en": [
-      "see switch 1 has one neighbor r1 it is"
+      "and it's connected to our two's serial to zero interface as well"
     ],
     "ru": [
-      "см., что у коммутатора 1 есть один сосед r1, это"
+      "и он также подключен к последовательному интерфейсу на ноль наших двоих."
     ]
   },
   {
     "time": [
-      89.0,
-      91.0
+      159.030221,
+      161.775451
     ],
     "en": [
-      "connected to the fastethernet 0/1"
+      "let's do the same on r2"
     ],
     "ru": [
-      "подключен к fastethernet 0/1"
+      "давай сделаем то же самое на r2"
     ]
   },
   {
     "time": [
-      91.0,
-      95.0
+      161.775451,
+      168.08063
     ],
     "en": [
-      "interface remember local interface means"
+      "enable show CDP neighbors"
     ],
     "ru": [
-      "интерфейс запомнить средства локального интерфейса"
+      "включить показывать соседей CDP"
     ]
   },
   {
     "time": [
-      95.0,
-      98.0
+      168.08063,
+      175.883445
     ],
     "en": [
-      "the interface on this device switch 1"
+      "as we already saw in r1 the two routers are connected by their serial to zero interfaces"
     ],
     "ru": [
-      "интерфейс на этом переключателе устройства 1"
+      "как мы уже видели в r1, два маршрутизатора соединены своими последовательными и нулевыми интерфейсами."
     ]
   },
   {
     "time": [
-      98.0,
-      102.0
+      175.883445,
+      182.424757
     ],
     "en": [
-      "under capability there is an R and if"
+      "also r2 is connected by its fastethernet 0/0 interface 2 switch twos fastethernet 0/1 interface"
     ],
     "ru": [
-      "под возможностями стоит R, а если"
+      "также r2 подключен через его интерфейс fastethernet 0/0 2 коммутатора два интерфейса fastethernet 0/1"
     ]
   },
   {
     "time": [
-      102.0,
-      104.0
+      182.424757,
+      186.428288
     ],
     "en": [
-      "you check the capability codes list up"
+      "finally let's go on switch 2"
     ],
     "ru": [
-      "вы проверяете список кодов возможностей"
+      "наконец-то перейдем к переключателю 2"
     ]
   },
   {
     "time": [
-      104.0,
-      107.0
+      186.428288,
+      192.782344
     ],
     "en": [
-      "here you can see that that means router"
+      "enable show CDP neighbors"
     ],
     "ru": [
-      "здесь вы можете видеть, что это означает маршрутизатор"
+      "включить показывать соседей CDP"
     ]
   },
   {
     "time": [
-      107.0,
-      111.0
+      192.782344,
+      201.604715
     ],
     "en": [
-      "also check the pork ID this is the"
+      "as we already saw switch to is connected via its fastethernet 0/1 interface to our two's fastethernet 0/0 interface"
     ],
     "ru": [
-      "также проверьте идентификатор свинины, это"
+      "как мы уже видели, коммутатор подключен через интерфейс fastethernet 0/1 к интерфейсу fastethernet 0/0 наших двух"
     ]
   },
   {
     "time": [
-      111.0,
-      114.0
+      201.604715,
+      203.366253
     ],
     "en": [
-      "interface of the remote device in this"
+      "that's all for step one"
     ],
     "ru": [
-      "интерфейс удаленного устройства в этом"
+      "это все для первого шага"
     ]
   },
   {
     "time": [
-      114.0,
-      119.0
+      203.366253,
+      214.941147
     ],
     "en": [
-      "case r1 so now you know switch 1 is"
+      "step two is to determine which side of the connection between r1 and r2 is DCE and which is DTE"
     ],
     "ru": [
-      "case r1, так что теперь вы знаете, что переключатель 1"
+      "второй шаг - определить, какая сторона соединения между r1 и r2 является DCE, а какая - DTE."
     ]
   },
   {
     "time": [
-      119.0,
-      121.0
+      214.941147,
+      224.943752
     ],
     "en": [
-      "connected to r1 by its fastethernet 0/1"
+      "I mentioned in a previous lab that serial connections have a DC e or data communications equipment side and a DTE or data terminal equipment side"
     ],
     "ru": [
-      "подключен к r1 через его fastethernet 0/1"
+      "В предыдущей лабораторной работе я упоминал, что последовательные соединения имеют сторону DC e или оборудования передачи данных и сторону DTE или оконечного оборудования данных."
     ]
   },
   {
     "time": [
-      121.0,
-      124.0
+      224.943752,
+      232.519096
     ],
     "en": [
-      "interface and it's connected to our ones"
+      "remember that the important difference is that the DCE side has to provide the clock rate of the connection"
     ],
     "ru": [
-      "интерфейс и он связан с нашими"
+      "помните, что важное отличие состоит в том, что сторона DCE должна обеспечивать тактовую частоту соединения."
     ]
   },
   {
     "time": [
-      124.0,
-      130.0
+      232.519096,
+      236.197083
     ],
     "en": [
-      "fastethernet 0/0 interface let's hop on"
+      "we don't use CDP for this it's just a bit of review"
     ],
     "ru": [
-      "Интерфейс fastethernet 0/0, давайте перейдем"
+      "мы не используем CDP для этого, это всего лишь небольшой обзор"
     ]
   },
   {
     "time": [
-      130.0,
-      133.0
+      236.197083,
+      238.430008
     ],
     "en": [
-      "r1 now"
+      "let's go on r1"
     ],
     "ru": [
-      "r1 сейчас"
+      "пойдем на r1"
     ]
   },
   {
     "time": [
-      133.0,
-      140.0
+      238.430008,
+      243.828895
     ],
     "en": [
-      "enable show CDP neighbors are one has"
+      "show controllers s20"
     ],
     "ru": [
-      "включить показать соседей CDP, есть ли у одного"
+      "показать контроллеры s20"
     ]
   },
   {
     "time": [
-      140.0,
-      143.0
+      243.828895,
+      248.212418
     ],
     "en": [
-      "two neighbors switch 1 and r2"
+      "remember that the routers are connected by their serial to zero interfaces"
     ],
     "ru": [
-      "два соседа переключаются 1 и r2"
+      "помните, что маршрутизаторы подключены через свои последовательные к нулевым интерфейсам"
     ]
   },
   {
     "time": [
-      143.0,
-      145.0
+      248.212418,
+      253.824031
     ],
     "en": [
-      "it's connected to switch 1 via the"
+      "as you can see our one is in fact the DCE side of the connection"
     ],
     "ru": [
-      "он подключен к переключателю 1 через"
+      "как видите, наш на самом деле является стороной DCE соединения"
     ]
   },
   {
     "time": [
-      145.0,
-      147.0
+      253.824031,
+      257.775156
     ],
     "en": [
-      "fastethernet 0/0 interface which we"
+      "now let's set the clock rate to 64 kilobits per second"
     ],
     "ru": [
-      "fastethernet 0/0 интерфейс, который мы"
+      "теперь давайте установим тактовую частоту на 64 килобита в секунду"
     ]
   },
   {
     "time": [
-      147.0,
-      150.0
+      257.775156,
+      267.36257
     ],
     "en": [
-      "already learned from switch 1 it's"
+      "conf t interface s20 clock rate 64,000"
     ],
     "ru": [
-      "уже узнал от переключателя 1, это"
+      "conf t interface s20 тактовая частота 64000"
     ]
   },
   {
     "time": [
-      150.0,
-      153.0
+      267.36257,
+      269.153449
     ],
     "en": [
-      "connected to r2 by its serial to zero"
+      "that's it"
     ],
     "ru": [
-      "подключен к r2 по серийнику на ноль"
+      "это оно"
     ]
   },
   {
     "time": [
-      153.0,
-      155.0
+      269.153449,
+      277.03029
     ],
     "en": [
-      "interface and it's connected to our"
+      "step 3 asks us what the default CDP send and hold timers are and to confirm it with a show command"
     ],
     "ru": [
-      "интерфейс и он подключен к нашему"
+      "Шаг 3 спрашивает нас, какие таймеры отправки и удержания CDP по умолчанию, и подтвердить это с помощью команды show"
     ]
   },
   {
     "time": [
-      155.0,
-      158.0
+      277.03029,
+      280.293589
     ],
     "en": [
-      "two's serial to zero interface as well"
+      "you may have learned these timers in your studies"
     ],
     "ru": [
-      "двух последовательный интерфейс к нулю, а также"
+      "возможно, вы узнали об этих таймерах во время учебы"
     ]
   },
   {
     "time": [
-      158.0,
-      166.0
+      280.293589,
+      282.535432
     ],
     "en": [
-      "let's do the same on art to enable show"
+      "but let's check on a device to make sure"
     ],
     "ru": [
-      "давайте сделаем то же самое с искусством, чтобы включить показ"
+      "но давайте проверим устройство, чтобы убедиться"
     ]
   },
   {
     "time": [
-      166.0,
-      171.0
+      282.535432,
+      287.54017
     ],
     "en": [
-      "CDP neighbors as we already saw in our"
+      "I'll type end to go back to privileged exec mode here on r1"
     ],
     "ru": [
-      "Соседи CDP, как мы уже видели в нашем"
+      "Я наберу end, чтобы вернуться в привилегированный режим exec здесь, на r1"
     ]
   },
   {
     "time": [
-      171.0,
-      172.0
+      287.54017,
+      291.558112
     ],
     "en": [
-      "one the two routers are connected by"
+      "now let's use the command show CDP interface"
     ],
     "ru": [
-      "один два маршрутизатора соединены"
+      "теперь воспользуемся командой show CDP interface"
     ]
   },
   {
     "time": [
-      172.0,
-      176.0
+      291.558112,
+      295.397115
     ],
     "en": [
-      "their serial to zero interfaces also r2"
+      "this gives us information about all interfaces"
     ],
     "ru": [
-      "их последовательные к нулю интерфейсы также r2"
+      "это дает нам информацию обо всех интерфейсах"
     ]
   },
   {
     "time": [
-      176.0,
-      178.0
+      295.397115,
+      301.859193
     ],
     "en": [
-      "is connected by its fastethernet 0/0"
+      "their status whether CDP is activated on them or not and their send and hold times"
     ],
     "ru": [
-      "подключен через его fastethernet 0/0"
+      "их статус, независимо от того, активирован ли для них CDP, и время их отправки и удержания"
     ]
   },
   {
     "time": [
-      178.0,
-      181.0
+      301.859193,
+      305.539419
     ],
     "en": [
-      "interface to switch twos fastethernet"
+      "all of these interfaces have the default setting"
     ],
     "ru": [
-      "интерфейс для переключения двух fastethernet"
+      "все эти интерфейсы имеют настройку по умолчанию"
     ]
   },
   {
     "time": [
-      181.0,
-      185.0
+      305.539419,
+      311.408525
+    ],
+    "en": [
+      "and as you can see that is a sent time of 60 seconds and the whole time of 180 seconds"
+    ],
+    "ru": [
+      "и, как вы можете видеть, время отправки составляет 60 секунд, а все время - 180 секунд."
+    ]
+  },
+  {
+    "time": [
+      311.408525,
+      318.901308
+    ],
+    "en": [
+      "so CDP advertisements will be sent out of each interface that is up once every 60 seconds"
+    ],
+    "ru": [
+      "поэтому рекламные объявления CDP будут отправляться из каждого интерфейса, который запускается каждые 60 секунд"
+    ]
+  },
+  {
+    "time": [
+      318.901308,
+      325.490652
+    ],
+    "en": [
+      "also if r1 doesn't receive an advertisement on a particular interface within 180 seconds"
+    ],
+    "ru": [
+      "также, если r1 не получает рекламу на определенном интерфейсе в течение 180 секунд"
+    ]
+  },
+  {
+    "time": [
+      325.490652,
+      330.01255
+    ],
+    "en": [
+      "it will assume that whatever neighbor that was there no longer is"
+    ],
+    "ru": [
+      "он будет предполагать, что того соседа, который был там, больше нет"
+    ]
+  },
+  {
+    "time": [
+      330.01255,
+      331.705954
+    ],
+    "en": [
+      "that's all for step 3"
+    ],
+    "ru": [
+      "это все для шага 3"
+    ]
+  },
+  {
+    "time": [
+      331.705954,
+      340.353734
+    ],
+    "en": [
+      "step four says to disable CDP globally on r1 and attempt to view CDP neighbors"
+    ],
+    "ru": [
+      "четвертый шаг говорит о глобальном отключении CDP на r1 и попытке просмотра соседей CDP"
+    ]
+  },
+  {
+    "time": [
+      340.353734,
+      343.170126
+    ],
+    "en": [
+      "so let's go into global configuration mode"
+    ],
+    "ru": [
+      "так что давайте перейдем в режим глобальной конфигурации"
+    ]
+  },
+  {
+    "time": [
+      343.170126,
+      350.87197
+    ],
+    "en": [
+      "conf t command to enable CDP is CDP run although it's enabled by default"
+    ],
+    "ru": [
+      "conf t, чтобы включить CDP, работает CDP, хотя по умолчанию она включена."
+    ]
+  },
+  {
+    "time": [
+      350.87197,
+      353.280684
+    ],
+    "en": [
+      "we want to disable it"
+    ],
+    "ru": [
+      "мы хотим отключить это"
+    ]
+  },
+  {
+    "time": [
+      353.280684,
+      356.091106
+    ],
+    "en": [
+      "and that is done with no CDP run"
+    ],
+    "ru": [
+      "и это делается без запуска CDP"
+    ]
+  },
+  {
+    "time": [
+      356.091106,
+      359.484814
+    ],
+    "en": [
+      "now let's check CDP neighbors"
+    ],
+    "ru": [
+      "теперь проверим соседей по CDP"
+    ]
+  },
+  {
+    "time": [
+      359.484814,
+      362.032107
+    ],
+    "en": [
+      "do show CDP neighbor"
+    ],
+    "ru": [
+      "показать соседа CDP"
+    ]
+  },
+  {
+    "time": [
+      362.032107,
+      366.081287
+    ],
+    "en": [
+      "we get a message indicating that CDP is not enabled"
+    ],
+    "ru": [
+      "мы получаем сообщение о том, что CDP не включен"
+    ]
+  },
+  {
+    "time": [
+      366.081287,
+      371.095981
+    ],
+    "en": [
+      "our one won't send any advertisements and will ignore any it receives"
+    ],
+    "ru": [
+      "наш не будет отправлять рекламу и проигнорирует все, что получает"
+    ]
+  },
+  {
+    "time": [
+      371.095981,
+      379.799855
+    ],
+    "en": [
+      "step 5 is to enable CDP globally again on r1 and immediately view the CDP neighbours"
+    ],
+    "ru": [
+      "Шаг 5 - снова включить CDP глобально на r1 и немедленно просмотреть соседей CDP"
+    ]
+  },
+  {
+    "time": [
+      379.799855,
+      386.232826
+    ],
+    "en": [
+      "CDP run do show CDP neighbors"
+    ],
+    "ru": [
+      "Запуск CDP показывает соседей CDP"
+    ]
+  },
+  {
+    "time": [
+      386.232826,
+      390.411636
+    ],
+    "en": [
+      "we re enabled CDP but no neighbors appear"
+    ],
+    "ru": [
+      "мы включили CDP, но соседи не появляются"
+    ]
+  },
+  {
+    "time": [
+      390.411636,
+      392.544525
+    ],
+    "en": [
+      "why is that"
+    ],
+    "ru": [
+      "это почему"
+    ]
+  },
+  {
+    "time": [
+      392.544525,
+      396.745334
+    ],
+    "en": [
+      "well because the CDP sent time is 60 seconds by default"
+    ],
+    "ru": [
+      "хорошо, потому что время отправки CDP по умолчанию составляет 60 секунд"
+    ]
+  },
+  {
+    "time": [
+      396.745334,
+      400.125802
+    ],
+    "en": [
+      "it can take a bit for our neighbors to appear again"
+    ],
+    "ru": [
+      "может потребоваться время, чтобы наши соседи снова появились"
+    ]
+  },
+  {
+    "time": [
+      400.125802,
+      404.241241
+    ],
+    "en": [
+      "if we were to wait a minute and enter the command again they would appear"
+    ],
+    "ru": [
+      "если мы подождем минуту и ​​снова введем команду, они появятся"
+    ]
+  },
+  {
+    "time": [
+      404.241241,
+      413.451594
+    ],
+    "en": [
+      "step six is to disable CDP on the switch interfaces connected to pcs"
+    ],
+    "ru": [
+      "Шаг шестой - отключить CDP на интерфейсах коммутатора, подключенных к ПК."
+    ]
+  },
+  {
+    "time": [
+      413.451594,
+      422.390284
+    ],
+    "en": [
+      "because CDP sends information about the device for security purposes it is a good idea to disable it where it isn't needed"
+    ],
+    "ru": [
+      "поскольку CDP отправляет информацию об устройстве в целях безопасности, рекомендуется отключить его там, где это не нужно."
+    ]
+  },
+  {
+    "time": [
+      422.390284,
+      426.042409
     ],
     "en": [
       ""
@@ -685,8 +961,8 @@ let objs = [
   },
   {
     "time": [
-      181.0,
-      185.0
+      422.390284,
+      426.042409
     ],
     "en": [
       ""
@@ -697,1310 +973,338 @@ let objs = [
   },
   {
     "time": [
-      185.0,
-      193.0
+      426.042409,
+      428.434766
     ],
     "en": [
-      "to enable show CDP neighbors as we"
+      "so let's go on switch one first"
     ],
     "ru": [
-      "чтобы включить показ соседей CDP, как мы"
+      "так что давайте сначала переключим один"
     ]
   },
   {
     "time": [
-      193.0,
-      195.0
+      428.434766,
+      439.431376
     ],
     "en": [
-      "already saw switch to is connected via"
+      "conf t now we don't want to disable CDP globally so we won't use no CDP run"
     ],
     "ru": [
-      "уже видел переключатель к подключен через"
+      "conf t теперь мы не хотим отключать CDP глобально, поэтому мы не будем использовать CDP run"
     ]
   },
   {
     "time": [
-      195.0,
-      198.0
+      439.431376,
+      445.173976
     ],
     "en": [
-      "its fastethernet 0/1 interface to our"
+      "we want to only disable it on Fast Ethernet 0 3 and 0 4"
     ],
     "ru": [
-      "его интерфейс fastethernet 0/1 с нашим"
+      "мы хотим отключить его только в Fast Ethernet 0 3 и 0 4"
     ]
   },
   {
     "time": [
-      198.0,
-      201.0
+      445.173976,
+      447.63276
     ],
     "en": [
-      "two's fastethernet 0/0 interface that's"
+      "we have to use interface configuration mode for this"
     ],
     "ru": [
-      "два интерфейса fastethernet 0/0, который"
+      "мы должны использовать для этого режим настройки интерфейса"
     ]
   },
   {
     "time": [
-      201.0,
-      206.0
+      447.63276,
+      451.93034
     ],
     "en": [
-      "all for step one"
+      "since we'll be using the same command on each interface"
     ],
     "ru": [
-      "все для первого шага"
+      "поскольку мы будем использовать одну и ту же команду на каждом интерфейсе"
     ]
   },
   {
     "time": [
-      206.0,
-      209.0
+      451.93034,
+      454.426694
     ],
     "en": [
-      "step two is to determine which side of"
+      "let's configure both at the same time"
     ],
     "ru": [
-      "Шаг второй - определить, с какой стороны"
+      "давайте настроим оба одновременно"
     ]
   },
   {
     "time": [
-      209.0,
-      212.0
+      454.426694,
+      458.419224
     ],
     "en": [
-      "the connection between r1 and r2 is DCE"
+      "you can do this by configuring an interface range"
     ],
     "ru": [
-      "связь между r1 и r2 - DCE"
+      "вы можете сделать это, настроив диапазон интерфейса"
     ]
   },
   {
     "time": [
-      212.0,
-      216.0
+      458.419224,
+      465.688898
     ],
     "en": [
-      "and which is DTE I mentioned in a"
+      "you can enter interface range configuration mode for Fast Ethernet 0 3 and 0 4 with this command"
     ],
     "ru": [
-      "и это DTE, о котором я упоминал в"
+      "вы можете войти в режим настройки диапазона интерфейсов для Fast Ethernet 0 3 и 0 4 с помощью этой команды"
     ]
   },
   {
     "time": [
-      216.0,
-      218.0
+      465.688898,
+      472.114888
     ],
     "en": [
-      "previous lab that serial connections"
+      "interface range f03 space - space for"
     ],
     "ru": [
-      "предыдущая лаборатория, что последовательные соединения"
+      "диапазон интерфейса f03 пробел - место для"
     ]
   },
   {
     "time": [
-      218.0,
-      220.0
+      472.114888,
+      476.659967
     ],
     "en": [
-      "have a DC e or data communications"
+      "as you can see we are now in interface range configuration mode"
     ],
     "ru": [
-      "иметь DC e или передачу данных"
+      "как вы можете видеть, мы сейчас находимся в режиме настройки диапазона интерфейсов"
     ]
   },
   {
     "time": [
-      220.0,
-      223.0
+      476.659967,
+      481.83431
     ],
     "en": [
-      "equipment side and a DTE or data"
+      "this is very convenient when you are doing the same configurations on multiple interfaces"
     ],
     "ru": [
-      "сторона оборудования и DTE или данные"
+      "это очень удобно, когда вы выполняете одни и те же конфигурации на нескольких интерфейсах."
     ]
   },
   {
     "time": [
-      223.0,
-      226.0
+      481.83431,
+      487.877268
     ],
     "en": [
-      "terminal equipment side remember that"
+      "now CDP and naval is used to enable CDP on an interface"
     ],
     "ru": [
-      "сторона оконечного оборудования помните, что"
+      "теперь CDP и naval используются для включения CDP на интерфейсе"
     ]
   },
   {
     "time": [
-      226.0,
-      229.0
+      487.877268,
+      489.854752
     ],
     "en": [
-      "the important difference is that the DCE"
+      "but it is enabled by default"
     ],
     "ru": [
-      "важное отличие состоит в том, что DCE"
+      "но он включен по умолчанию"
     ]
   },
   {
     "time": [
-      229.0,
-      231.0
+      489.854752,
+      494.424118
     ],
     "en": [
-      "side has to provide the clock rate of"
+      "to disable you once again use no in front of the command"
     ],
     "ru": [
-      "сторона должна обеспечивать тактовую частоту"
+      "чтобы отключить вас еще раз, используйте no перед командой"
     ]
   },
   {
     "time": [
-      231.0,
-      234.0
+      494.424118,
+      497.088948
     ],
     "en": [
-      "the connection we don't use CDP for this"
+      "no CDP enable"
     ],
     "ru": [
-      "соединение, мы не используем CDP для этого"
+      "нет включения CDP"
     ]
   },
   {
     "time": [
-      234.0,
-      240.0
+      497.088948,
+      498.506033
     ],
     "en": [
-      "it's just a bit of review let's go on r1"
+      "ok that's it"
     ],
     "ru": [
-      "это всего лишь небольшой обзор, давайте перейдем к r1"
+      "хорошо, вот и все"
     ]
   },
   {
     "time": [
-      240.0,
-      244.0
+      498.506033,
+      502.003118
     ],
     "en": [
-      "show controllers s20 remember that the"
+      "now let's go to switch to and do the same thing"
     ],
     "ru": [
-      "показать контроллеры s20 помните, что"
+      "теперь давайте переключимся и сделаем то же самое"
     ]
   },
   {
     "time": [
-      244.0,
-      246.0
+      502.003118,
+      510.394603
     ],
     "en": [
-      "routers are connected by their serial to"
+      "conf t interface range of 0 3 to 4"
     ],
     "ru": [
-      "маршрутизаторы подключены по их последовательному к"
+      "conf t диапазон интерфейса от 0 3 до 4"
     ]
   },
   {
     "time": [
-      246.0,
-      251.0
+      510.394603,
+      512.751444
     ],
     "en": [
-      "zero interfaces as you can see our one"
+      "no CDP enable"
     ],
     "ru": [
-      "ноль интерфейсов, как видите наш"
+      "нет включения CDP"
     ]
   },
   {
     "time": [
-      251.0,
-      252.0
+      512.751444,
+      515.499307
     ],
     "en": [
-      "is in fact the DCE side of the"
+      "that's all for this lab"
     ],
     "ru": [
-      "фактически является стороной DCE"
+      "это все для этой лаборатории"
     ]
   },
   {
     "time": [
-      252.0,
-      255.0
+      515.499307,
+      522.557729
     ],
     "en": [
-      "connection now let's set the clock rate"
+      "thank you for watching I hope this lab and video have been helpful for you"
     ],
     "ru": [
-      "соединение теперь давайте установим тактовую частоту"
+      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были для вас полезны."
     ]
   },
   {
     "time": [
-      255.0,
-      260.0
+      522.557729,
+      527.538178
     ],
     "en": [
-      "to 64 kilobits per second compte"
+      "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "до 64 килобит в секунду компте"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {
     "time": [
-      260.0,
-      268.0
+      527.538178,
+      532.031063
     ],
     "en": [
-      "interface s20 clock rate 64,000 that's"
+      "if you have requests for any specific labs let me know in the comment section"
     ],
     "ru": [
-      "интерфейс s20 тактовая частота 64000 это"
+      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
     ]
   },
   {
     "time": [
-      268.0,
-      272.0
+      532.031063,
+      539.291065
     ],
     "en": [
-      "it step 3 asks us what the default CDP"
+      "if you want to support my channel I accept Bitcoin and etherion donations via the addresses in the description"
     ],
     "ru": [
-      "на шаге 3 мы спрашиваем, какой CDP по умолчанию"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфиром по адресам в описании"
     ]
   },
   {
     "time": [
-      272.0,
-      275.0
+      539.291065,
+      547.727704
     ],
     "en": [
-      "send and hold timers are and to confirm"
+      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
     ],
     "ru": [
-      "таймеры отправки и удержания есть и для подтверждения"
+      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
     ]
   },
   {
     "time": [
-      275.0,
-      278.0
+      547.727704,
+      547.727704
     ],
     "en": [
-      "it with a show command you may have"
+      ""
     ],
     "ru": [
-      "это с помощью команды show, которую вы можете иметь"
+      ""
     ]
   },
   {
     "time": [
-      278.0,
-      280.0
+      547.727704,
+      547.727704
     ],
     "en": [
-      "learned these timers in your studies but"
+      ""
     ],
     "ru": [
-      "выучили эти таймеры в своих исследованиях, но"
+      ""
     ]
   },
   {
     "time": [
-      280.0,
-      282.0
+      547.727704,
+      547.727704
     ],
     "en": [
-      "let's check on a device to make sure"
+      ""
     ],
     "ru": [
-      "давайте проверим устройство, чтобы убедиться"
-    ]
-  },
-  {
-    "time": [
-      282.0,
-      285.0
-    ],
-    "en": [
-      "I'll type end to go back to privileged"
-    ],
-    "ru": [
-      "Я наберу конец, чтобы вернуться к привилегированным"
-    ]
-  },
-  {
-    "time": [
-      285.0,
-      288.0
-    ],
-    "en": [
-      "exec mode here on r1 now let's use the"
-    ],
-    "ru": [
-      "режим exec здесь, на r1, теперь давайте воспользуемся"
-    ]
-  },
-  {
-    "time": [
-      288.0,
-      293.0
-    ],
-    "en": [
-      "command show CDP interface this gives us"
-    ],
-    "ru": [
-      "команда show CDP interface это дает нам"
-    ]
-  },
-  {
-    "time": [
-      293.0,
-      295.0
-    ],
-    "en": [
-      "information about all interfaces their"
-    ],
-    "ru": [
-      "информация обо всех интерфейсах их"
-    ]
-  },
-  {
-    "time": [
-      295.0,
-      298.0
-    ],
-    "en": [
-      "status whether CDP is activated on them"
-    ],
-    "ru": [
-      "статус, активирован ли на них CDP"
-    ]
-  },
-  {
-    "time": [
-      298.0,
-      302.0
-    ],
-    "en": [
-      "or not and their send and hold times all"
-    ],
-    "ru": [
-      "или нет, и их время отправки и удержания все"
-    ]
-  },
-  {
-    "time": [
-      302.0,
-      304.0
-    ],
-    "en": [
-      "of these interfaces have the default"
-    ],
-    "ru": [
-      "из этих интерфейсов по умолчанию"
-    ]
-  },
-  {
-    "time": [
-      304.0,
-      306.0
-    ],
-    "en": [
-      "setting and as you can see that is a"
-    ],
-    "ru": [
-      "настройки, и, как видите, это"
-    ]
-  },
-  {
-    "time": [
-      306.0,
-      309.0
-    ],
-    "en": [
-      "sent time of 60 seconds and the whole"
-    ],
-    "ru": [
-      "отправлено время 60 секунд и все"
-    ]
-  },
-  {
-    "time": [
-      309.0,
-      313.0
-    ],
-    "en": [
-      "time of 180 seconds so CDP"
-    ],
-    "ru": [
-      "время 180 секунд, поэтому CDP"
-    ]
-  },
-  {
-    "time": [
-      313.0,
-      315.0
-    ],
-    "en": [
-      "advertisements will be sent out of each"
-    ],
-    "ru": [
-      "рекламные объявления будут отправляться из каждого"
-    ]
-  },
-  {
-    "time": [
-      315.0,
-      317.0
-    ],
-    "en": [
-      "interface that is up once every 60"
-    ],
-    "ru": [
-      "интерфейс, который запускается каждые 60"
-    ]
-  },
-  {
-    "time": [
-      317.0,
-      321.0
-    ],
-    "en": [
-      "seconds also if r1 doesn't receive an"
-    ],
-    "ru": [
-      "секунд также, если r1 не получает"
-    ]
-  },
-  {
-    "time": [
-      321.0,
-      323.0
-    ],
-    "en": [
-      "advertisement on a particular interface"
-    ],
-    "ru": [
-      "реклама на определенном интерфейсе"
-    ]
-  },
-  {
-    "time": [
-      323.0,
-      326.0
-    ],
-    "en": [
-      "within 180 seconds it will assume that"
-    ],
-    "ru": [
-      "в течение 180 секунд он предположит, что"
-    ]
-  },
-  {
-    "time": [
-      326.0,
-      328.0
-    ],
-    "en": [
-      "whatever neighbor that was there no"
-    ],
-    "ru": [
-      "какого бы соседа там не было"
-    ]
-  },
-  {
-    "time": [
-      328.0,
-      333.0
-    ],
-    "en": [
-      "longer is that's all for step 3"
-    ],
-    "ru": [
-      "длиннее это все для шага 3"
-    ]
-  },
-  {
-    "time": [
-      333.0,
-      337.0
-    ],
-    "en": [
-      "step four says to disable CDP globally"
-    ],
-    "ru": [
-      "четвертый шаг говорит о глобальном отключении CDP"
-    ]
-  },
-  {
-    "time": [
-      337.0,
-      340.0
-    ],
-    "en": [
-      "on r1 and attempt to view CDP neighbors"
-    ],
-    "ru": [
-      "на r1 и попытаться просмотреть соседей CDP"
-    ]
-  },
-  {
-    "time": [
-      340.0,
-      342.0
-    ],
-    "en": [
-      "so let's go into global configuration"
-    ],
-    "ru": [
-      "так что давайте перейдем к глобальной конфигурации"
-    ]
-  },
-  {
-    "time": [
-      342.0,
-      347.0
-    ],
-    "en": [
-      "mode conf the command to enable CDP is"
-    ],
-    "ru": [
-      "mode conf команда для включения CDP:"
-    ]
-  },
-  {
-    "time": [
-      347.0,
-      350.0
-    ],
-    "en": [
-      "CDP run although it's enabled by default"
-    ],
-    "ru": [
-      "CDP работает, хотя по умолчанию включен"
-    ]
-  },
-  {
-    "time": [
-      350.0,
-      353.0
-    ],
-    "en": [
-      "we want to disable it and that is done"
-    ],
-    "ru": [
-      "мы хотим отключить его, и это сделано"
-    ]
-  },
-  {
-    "time": [
-      353.0,
-      358.0
-    ],
-    "en": [
-      "with no CDP run now let's check CDP"
-    ],
-    "ru": [
-      "без запуска CDP теперь давайте проверим CDP"
-    ]
-  },
-  {
-    "time": [
-      358.0,
-      362.0
-    ],
-    "en": [
-      "neighbors do show CDP neighbor we get a"
-    ],
-    "ru": [
-      "соседи показывают соседу CDP, мы получаем"
-    ]
-  },
-  {
-    "time": [
-      362.0,
-      364.0
-    ],
-    "en": [
-      "message indicating that CDP is not"
-    ],
-    "ru": [
-      "сообщение, указывающее, что CDP не"
-    ]
-  },
-  {
-    "time": [
-      364.0,
-      367.0
-    ],
-    "en": [
-      "enabled our one won't send any"
-    ],
-    "ru": [
-      "включен наш не будет отправлять"
-    ]
-  },
-  {
-    "time": [
-      367.0,
-      370.0
-    ],
-    "en": [
-      "advertisements and will ignore any it"
-    ],
-    "ru": [
-      "рекламные объявления и проигнорируем их"
-    ]
-  },
-  {
-    "time": [
-      370.0,
-      374.0
-    ],
-    "en": [
-      "receives step 5 is to enable CDP"
-    ],
-    "ru": [
-      "получает шаг 5, чтобы включить CDP"
-    ]
-  },
-  {
-    "time": [
-      374.0,
-      377.0
-    ],
-    "en": [
-      "globally again on r1 and immediately"
-    ],
-    "ru": [
-      "глобально снова на r1 и сразу"
-    ]
-  },
-  {
-    "time": [
-      377.0,
-      384.0
-    ],
-    "en": [
-      "view the CDP neighbours CDP run do show"
-    ],
-    "ru": [
-      "просмотреть соседей CDP CDP запустить показать"
-    ]
-  },
-  {
-    "time": [
-      384.0,
-      388.0
-    ],
-    "en": [
-      "CDP neighbors we re enabled CDP but no"
-    ],
-    "ru": [
-      "Соседи CDP, мы включили CDP, но нет"
-    ]
-  },
-  {
-    "time": [
-      388.0,
-      392.0
-    ],
-    "en": [
-      "neighbors appear why is that well"
-    ],
-    "ru": [
-      "появляются соседи, почему это хорошо"
-    ]
-  },
-  {
-    "time": [
-      392.0,
-      395.0
-    ],
-    "en": [
-      "because the CDP sent time is 60 seconds"
-    ],
-    "ru": [
-      "потому что время отправки CDP составляет 60 секунд"
-    ]
-  },
-  {
-    "time": [
-      395.0,
-      398.0
-    ],
-    "en": [
-      "by default it can take a bit for our"
-    ],
-    "ru": [
-      "по умолчанию это может занять немного времени для наших"
-    ]
-  },
-  {
-    "time": [
-      398.0,
-      401.0
-    ],
-    "en": [
-      "neighbors to appear again if we were to"
-    ],
-    "ru": [
-      "соседи появятся снова, если мы"
-    ]
-  },
-  {
-    "time": [
-      401.0,
-      402.0
-    ],
-    "en": [
-      "wait a minute and enter the command"
-    ],
-    "ru": [
-      "подождите минуту и ​​введите команду"
-    ]
-  },
-  {
-    "time": [
-      402.0,
-      407.0
-    ],
-    "en": [
-      "again they would appear"
-    ],
-    "ru": [
-      "снова они появятся"
-    ]
-  },
-  {
-    "time": [
-      407.0,
-      410.0
-    ],
-    "en": [
-      "step six is to disable CDP on the switch"
-    ],
-    "ru": [
-      "Шаг шестой - отключить CDP на коммутаторе"
-    ]
-  },
-  {
-    "time": [
-      410.0,
-      415.0
-    ],
-    "en": [
-      "interfaces connected to pcs because CDP"
-    ],
-    "ru": [
-      "интерфейсы, подключенные к ПК, потому что CDP"
-    ]
-  },
-  {
-    "time": [
-      415.0,
-      418.0
-    ],
-    "en": [
-      "sends information about the device for"
-    ],
-    "ru": [
-      "отправляет информацию об устройстве для"
-    ]
-  },
-  {
-    "time": [
-      418.0,
-      420.0
-    ],
-    "en": [
-      "security purposes it is a good idea to"
-    ],
-    "ru": [
-      "в целях безопасности рекомендуется"
-    ]
-  },
-  {
-    "time": [
-      420.0,
-      423.0
-    ],
-    "en": [
-      "disable it where it isn't needed 2 pcs"
-    ],
-    "ru": [
-      "отключить там, где он не нужен 2 шт."
-    ]
-  },
-  {
-    "time": [
-      423.0,
-      426.0
-    ],
-    "en": [
-      "are connected to each switch so let's go"
-    ],
-    "ru": [
-      "подключены к каждому переключателю, так что поехали"
-    ]
-  },
-  {
-    "time": [
-      426.0,
-      434.0
-    ],
-    "en": [
-      "on switch one first compte now we don't"
-    ],
-    "ru": [
-      "на переключении один первый комп, теперь мы не"
-    ]
-  },
-  {
-    "time": [
-      434.0,
-      437.0
-    ],
-    "en": [
-      "want to disable CDP globally so we won't"
-    ],
-    "ru": [
-      "хотите отключить CDP глобально, чтобы мы не"
-    ]
-  },
-  {
-    "time": [
-      437.0,
-      441.0
-    ],
-    "en": [
-      "use no CDP run we want to only disable"
-    ],
-    "ru": [
-      "не использовать CDP, мы хотим только отключить"
-    ]
-  },
-  {
-    "time": [
-      441.0,
-      445.0
-    ],
-    "en": [
-      "it on Fast Ethernet 0 3 and 0 4 we have"
-    ],
-    "ru": [
-      "это на Fast Ethernet 0 3 и 0 4 мы имеем"
-    ]
-  },
-  {
-    "time": [
-      445.0,
-      447.0
-    ],
-    "en": [
-      "to use interface configuration mode for"
-    ],
-    "ru": [
-      "использовать режим настройки интерфейса для"
-    ]
-  },
-  {
-    "time": [
-      447.0,
-      450.0
-    ],
-    "en": [
-      "this since we'll be using the same"
-    ],
-    "ru": [
-      "это, поскольку мы будем использовать тот же"
-    ]
-  },
-  {
-    "time": [
-      450.0,
-      452.0
-    ],
-    "en": [
-      "command on each interface let's"
-    ],
-    "ru": [
-      "команда на каждом интерфейсе давайте"
-    ]
-  },
-  {
-    "time": [
-      452.0,
-      455.0
-    ],
-    "en": [
-      "configure both at the same time you can"
-    ],
-    "ru": [
-      "настроить оба одновременно, вы можете"
-    ]
-  },
-  {
-    "time": [
-      455.0,
-      457.0
-    ],
-    "en": [
-      "do this by configuring an interface"
-    ],
-    "ru": [
-      "сделайте это, настроив интерфейс"
-    ]
-  },
-  {
-    "time": [
-      457.0,
-      460.0
-    ],
-    "en": [
-      "range you can enter interface range"
-    ],
-    "ru": [
-      "диапазон вы можете ввести диапазон интерфейса"
-    ]
-  },
-  {
-    "time": [
-      460.0,
-      462.0
-    ],
-    "en": [
-      "configuration mode for Fast Ethernet 0 3"
-    ],
-    "ru": [
-      "режим конфигурации для Fast Ethernet 0 3"
-    ]
-  },
-  {
-    "time": [
-      462.0,
-      466.0
-    ],
-    "en": [
-      "and 0 4 with this command interface"
-    ],
-    "ru": [
-      "и 0 4 с этим командным интерфейсом"
-    ]
-  },
-  {
-    "time": [
-      466.0,
-      473.0
-    ],
-    "en": [
-      "range f03 space - space for as you can"
-    ],
-    "ru": [
-      "диапазон f03 пробел - место как можно"
-    ]
-  },
-  {
-    "time": [
-      473.0,
-      475.0
-    ],
-    "en": [
-      "see we are now in interface range"
-    ],
-    "ru": [
-      "Видите, мы сейчас находимся в диапазоне интерфейса"
-    ]
-  },
-  {
-    "time": [
-      475.0,
-      477.0
-    ],
-    "en": [
-      "configuration mode this is very"
-    ],
-    "ru": [
-      "режим конфигурации это очень"
-    ]
-  },
-  {
-    "time": [
-      477.0,
-      479.0
-    ],
-    "en": [
-      "convenient when you are doing the same"
-    ],
-    "ru": [
-      "удобно, когда ты делаешь то же самое"
-    ]
-  },
-  {
-    "time": [
-      479.0,
-      480.0
-    ],
-    "en": [
-      "configurations on multiple interfaces"
-    ],
-    "ru": [
-      "конфигурации на нескольких интерфейсах"
-    ]
-  },
-  {
-    "time": [
-      480.0,
-      486.0
-    ],
-    "en": [
-      "now CDP and naval is used to enable CDP"
-    ],
-    "ru": [
-      "теперь CDP и naval используются для включения CDP"
-    ]
-  },
-  {
-    "time": [
-      486.0,
-      488.0
-    ],
-    "en": [
-      "on an interface but it is enabled by"
-    ],
-    "ru": [
-      "на интерфейсе, но он включен"
-    ]
-  },
-  {
-    "time": [
-      488.0,
-      492.0
-    ],
-    "en": [
-      "default to disable you once again use no"
-    ],
-    "ru": [
-      "по умолчанию отключить вы еще раз использовать нет"
-    ]
-  },
-  {
-    "time": [
-      492.0,
-      497.0
-    ],
-    "en": [
-      "in front of the command no CDP enable ok"
-    ],
-    "ru": [
-      "перед командой no CDP enable ok"
-    ]
-  },
-  {
-    "time": [
-      497.0,
-      500.0
-    ],
-    "en": [
-      "that's it now let's go to switch to and"
-    ],
-    "ru": [
-      "вот и все, теперь давайте переключимся на и"
-    ]
-  },
-  {
-    "time": [
-      500.0,
-      506.0
-    ],
-    "en": [
-      "do the same thing comte interface range"
-    ],
-    "ru": [
-      "сделать то же самое comte interface range"
-    ]
-  },
-  {
-    "time": [
-      506.0,
-      514.0
-    ],
-    "en": [
-      "of 0 3 to 4 no CDP enable that's all for"
-    ],
-    "ru": [
-      "от 0 3 до 4 нет включения CDP, это все для"
-    ]
-  },
-  {
-    "time": [
-      514.0,
-      517.0
-    ],
-    "en": [
-      "this lab"
-    ],
-    "ru": [
-      "эта лаборатория"
-    ]
-  },
-  {
-    "time": [
-      517.0,
-      520.0
-    ],
-    "en": [
-      "thank you for watching I hope this lab"
-    ],
-    "ru": [
-      "спасибо за просмотр, надеюсь, эта лаборатория"
-    ]
-  },
-  {
-    "time": [
-      520.0,
-      521.0
-    ],
-    "en": [
-      "and video have been helpful for you"
-    ],
-    "ru": [
-      "и видео были для вас полезны"
-    ]
-  },
-  {
-    "time": [
-      521.0,
-      524.0
-    ],
-    "en": [
-      "please subscribe for future labs like"
-    ],
-    "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, такие как"
-    ]
-  },
-  {
-    "time": [
-      524.0,
-      527.0
-    ],
-    "en": [
-      "this which will be released weekly if"
-    ],
-    "ru": [
-      "это будет выпускаться еженедельно, если"
-    ]
-  },
-  {
-    "time": [
-      527.0,
-      529.0
-    ],
-    "en": [
-      "you have requests for any specific labs"
-    ],
-    "ru": [
-      "у вас есть запросы по каким-либо конкретным лабораториям"
-    ]
-  },
-  {
-    "time": [
-      529.0,
-      531.0
-    ],
-    "en": [
-      "let me know in the comment section if"
-    ],
-    "ru": [
-      "дайте мне знать в разделе комментариев, если"
-    ]
-  },
-  {
-    "time": [
-      531.0,
-      534.0
-    ],
-    "en": [
-      "you want to support my channel I accept"
-    ],
-    "ru": [
-      "вы хотите поддержать мой канал я принимаю"
-    ]
-  },
-  {
-    "time": [
-      534.0,
-      537.0
-    ],
-    "en": [
-      "Bitcoin and etherion donations via the"
-    ],
-    "ru": [
-      "Пожертвования биткойнов и эфирионов через"
-    ]
-  },
-  {
-    "time": [
-      537.0,
-      540.0
-    ],
-    "en": [
-      "addresses in the description I am also a"
-    ],
-    "ru": [
-      "адреса в описании я тоже"
-    ]
-  },
-  {
-    "time": [
-      540.0,
-      543.0
-    ],
-    "en": [
-      "brave verified publisher and accept bat"
-    ],
-    "ru": [
-      "храбрый проверенный издатель и прими летучую мышь"
-    ]
-  },
-  {
-    "time": [
-      543.0,
-      546.0
-    ],
-    "en": [
-      "or basic attention token donations in"
-    ],
-    "ru": [
-      "или основные пожертвования токенов внимания в"
-    ]
-  },
-  {
-    "time": [
-      546.0,
-      546.0
-    ],
-    "en": [
-      "the brave browser"
-    ],
-    "ru": [
-      "смелый браузер"
+      ""
     ]
   }
 ]

@@ -2,1531 +2,139 @@ let objs = [
   {
     "time": [
       0.0,
-      3.0
+      4.650826
     ],
     "en": [
-      "welcome to this free CCNA packet tracer"
+      "welcome to this free CCNA packet tracer practice lab"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный трассировщик пакетов CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
     ]
   },
   {
     "time": [
-      3.0,
-      6.0
+      4.650826,
+      8.083105
     ],
     "en": [
-      "practice lab you can download the lab"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "Практическая лаборатория вы можете скачать лабораторию"
+      "скачать лабораторный файл можно по ссылке в описании"
     ]
   },
   {
     "time": [
-      6.0,
-      8.0
+      8.083105,
+      16.302715
     ],
     "en": [
-      "file from the link in the description if"
+      "if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description"
     ],
     "ru": [
-      "файл по ссылке в описании, если"
+      "если вам нравятся эти лаборатории, пожалуйста, подумайте о поддержке меня через мой патреон или варианты криптовалюты в описании"
     ]
   },
   {
     "time": [
-      8.0,
-      11.0
+      16.302715,
+      21.878361
     ],
     "en": [
-      "you like these labs please consider"
+      "in this lab we will take another look at port security"
     ],
     "ru": [
-      "Вам нравятся эти лаборатории, пожалуйста, примите во внимание"
+      "в этой лабораторной работе мы еще раз рассмотрим безопасность портов."
     ]
   },
   {
     "time": [
-      11.0,
-      14.0
+      21.878361,
+      25.311654
     ],
     "en": [
-      "supporting me via my patreon or the"
+      "although we will certainly revisit it again"
     ],
     "ru": [
-      "поддерживая меня через моего патреона или"
+      "хотя мы обязательно вернемся к нему снова"
     ]
   },
   {
     "time": [
-      14.0,
-      15.0
+      25.311654,
+      28.752842
     ],
     "en": [
-      "cryptocurrency options in the"
+      "this lab will be the final one in this introductory series"
     ],
     "ru": [
-      "варианты криптовалюты в"
+      "эта лабораторная работа будет последней в этой вводной серии"
     ]
   },
   {
     "time": [
-      15.0,
-      19.0
+      28.752842,
+      33.602904
     ],
     "en": [
-      "description in this lab we will take"
+      "in the previous lab we configured sticky MAC address learning"
     ],
     "ru": [
-      "описание в этой лаборатории мы возьмем"
+      "в предыдущей лабораторной работе мы настроили изучение закрепленных MAC-адресов."
     ]
   },
   {
     "time": [
-      19.0,
-      23.0
+      33.602904,
+      44.957764
     ],
     "en": [
-      "another look at port security although"
+      "however this time we will manually configure the MAC addresses of pc1 & pc2 as secure MAC addresses on switch 1 and switch 2 respectively"
     ],
     "ru": [
-      "еще один взгляд на безопасность порта, хотя"
+      "однако на этот раз мы вручную настроим MAC-адреса pc1 и pc2 как безопасные MAC-адреса на коммутаторе 1 и коммутаторе 2 соответственно."
     ]
   },
   {
     "time": [
-      23.0,
-      25.0
+      44.957764,
+      52.74062
     ],
     "en": [
-      "we will certainly revisit it again this"
+      "step one is to ping from pc1 to pc2 2 generate traffic"
     ],
     "ru": [
-      "мы обязательно вернемся к этому еще раз"
+      "Шаг первый - пинговать с ПК1 на ПК2 2 генерировать трафик"
     ]
   },
   {
     "time": [
-      25.0,
-      27.0
+      52.74062,
+      54.819091
     ],
     "en": [
-      "lab will be the final one in this"
+      "let's go on pc one"
     ],
     "ru": [
-      "лаборатория будет последней в этом"
+      "пойдем на компьютер один"
     ]
   },
   {
     "time": [
-      27.0,
-      30.0
+      54.819091,
+      60.786883
     ],
     "en": [
-      "introductory series in the previous lab"
+      "ping 192.168.1.12"
     ],
     "ru": [
-      "вводная серия в предыдущей лабораторной работе"
+      "пинг 192.168.1.12"
     ]
   },
   {
     "time": [
-      30.0,
-      32.0
-    ],
-    "en": [
-      "we configured sticky MAC address"
-    ],
-    "ru": [
-      "мы настроили липкий MAC-адрес"
-    ]
-  },
-  {
-    "time": [
-      32.0,
-      35.0
-    ],
-    "en": [
-      "learning however this time we will"
-    ],
-    "ru": [
-      "учимся, однако на этот раз мы будем"
-    ]
-  },
-  {
-    "time": [
-      35.0,
-      37.0
-    ],
-    "en": [
-      "manually configure the MAC addresses of"
-    ],
-    "ru": [
-      "вручную настроить MAC-адреса"
-    ]
-  },
-  {
-    "time": [
-      37.0,
-      41.0
-    ],
-    "en": [
-      "pc1 & pc2 as secure MAC addresses on"
-    ],
-    "ru": [
-      "pc1 и pc2 в качестве безопасных MAC-адресов на"
-    ]
-  },
-  {
-    "time": [
-      41.0,
-      48.0
-    ],
-    "en": [
-      "switch 1 and switch 2 respectively step"
-    ],
-    "ru": [
-      "переключатель 1 и переключатель 2 соответственно шаг"
-    ]
-  },
-  {
-    "time": [
-      48.0,
-      51.0
-    ],
-    "en": [
-      "one is to ping from pc1 to pc2 to"
-    ],
-    "ru": [
-      "один - пинговать с ПК1 на ПК2 на"
-    ]
-  },
-  {
-    "time": [
-      51.0,
-      58.0
-    ],
-    "en": [
-      "generate traffic let's go on pc one ping"
-    ],
-    "ru": [
-      "генерировать трафик пойдем на пк один пинг"
-    ]
-  },
-  {
-    "time": [
-      58.0,
-      64.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      58.0,
-      64.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      64.0,
-      66.0
-    ],
-    "en": [
-      "to view the MAC address table of switch"
-    ],
-    "ru": [
-      "для просмотра таблицы MAC-адресов коммутатора"
-    ]
-  },
-  {
-    "time": [
-      66.0,
-      69.0
-    ],
-    "en": [
-      "one switch one should have dynamically"
-    ],
-    "ru": [
-      "один переключатель нужно иметь динамически"
-    ]
-  },
-  {
-    "time": [
-      69.0,
-      72.0
-    ],
-    "en": [
-      "learned the MAC address of PC one on f0"
-    ],
-    "ru": [
-      "узнал MAC-адрес ПК один на f0"
-    ]
-  },
-  {
-    "time": [
-      72.0,
-      75.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      72.0,
-      75.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      75.0,
-      80.0
-    ],
-    "en": [
-      "PC 2 on f0 one let's check on switch 1"
-    ],
-    "ru": [
-      "ПК 2 на f0 один проверим на переключателе 1"
-    ]
-  },
-  {
-    "time": [
-      80.0,
-      85.0
-    ],
-    "en": [
-      "enable show MAC address table as"
-    ],
-    "ru": [
-      "включить показывать таблицу MAC-адресов как"
-    ]
-  },
-  {
-    "time": [
-      85.0,
-      87.0
-    ],
-    "en": [
-      "expected there are two MAC addresses on"
-    ],
-    "ru": [
-      "ожидается, что есть два MAC-адреса на"
-    ]
-  },
-  {
-    "time": [
-      87.0,
-      92.0
-    ],
-    "en": [
-      "F 0 1 and 1 MAC address on F 0 2 we"
-    ],
-    "ru": [
-      "F 0 1 и 1 MAC-адрес на F 0 2 мы"
-    ]
-  },
-  {
-    "time": [
-      92.0,
-      94.0
-    ],
-    "en": [
-      "don't know which of the two addresses on"
-    ],
-    "ru": [
-      "не знаю, какой из двух адресов на"
-    ]
-  },
-  {
-    "time": [
-      94.0,
-      99.0
-    ],
-    "en": [
-      "F 0 1 is switch 2 and which is PC 2 but"
-    ],
-    "ru": [
-      "F 0 1 - это переключатель 2, а это ПК 2, но"
-    ]
-  },
-  {
-    "time": [
-      99.0,
-      101.0
-    ],
-    "en": [
-      "that doesn't matter in this lab we just"
-    ],
-    "ru": [
-      "это не имеет значения, в этой лаборатории мы просто"
-    ]
-  },
-  {
-    "time": [
-      101.0,
-      103.0
-    ],
-    "en": [
-      "want to know the MAC address of PC 1"
-    ],
-    "ru": [
-      "хотите узнать MAC-адрес ПК 1"
-    ]
-  },
-  {
-    "time": [
-      103.0,
-      108.0
-    ],
-    "en": [
-      "which is this"
-    ],
-    "ru": [
-      "что это"
-    ]
-  },
-  {
-    "time": [
-      108.0,
-      111.0
-    ],
-    "en": [
-      "step three is to enable port security on"
-    ],
-    "ru": [
-      "Шаг третий - включить безопасность порта на"
-    ]
-  },
-  {
-    "time": [
-      111.0,
-      112.0
-    ],
-    "en": [
-      "switch ones"
-    ],
-    "ru": [
-      "поменять местами"
-    ]
-  },
-  {
-    "time": [
-      112.0,
-      115.0
-    ],
-    "en": [
-      "f02 interface and manually configure PC"
-    ],
-    "ru": [
-      "f02 и вручную настроить ПК"
-    ]
-  },
-  {
-    "time": [
-      115.0,
-      118.0
-    ],
-    "en": [
-      "ones MAC address as a secure MAC address"
-    ],
-    "ru": [
-      "один MAC-адрес как безопасный MAC-адрес"
-    ]
-  },
-  {
-    "time": [
-      118.0,
-      122.0
-    ],
-    "en": [
-      "first let me copy the MAC address of PC"
-    ],
-    "ru": [
-      "сначала позвольте мне скопировать MAC-адрес ПК"
-    ]
-  },
-  {
-    "time": [
-      122.0,
-      126.0
-    ],
-    "en": [
-      "one there we go now let's configure the"
-    ],
-    "ru": [
-      "один, мы идем, теперь давайте настроим"
-    ]
-  },
-  {
-    "time": [
-      126.0,
-      132.0
-    ],
-    "en": [
-      "f02 interface comte interface f0 to"
-    ],
-    "ru": [
-      "f02 интерфейс comte интерфейс f0 к"
-    ]
-  },
-  {
-    "time": [
-      132.0,
-      135.0
-    ],
-    "en": [
-      "remember we have to configure it as an"
-    ],
-    "ru": [
-      "помните, что мы должны настроить его как"
-    ]
-  },
-  {
-    "time": [
-      135.0,
-      137.0
-    ],
-    "en": [
-      "access port first so switch port mode"
-    ],
-    "ru": [
-      "сначала получить доступ к порту, чтобы переключить режим порта"
-    ]
-  },
-  {
-    "time": [
-      137.0,
-      142.0
-    ],
-    "en": [
-      "access switch port port security okay"
-    ],
-    "ru": [
-      "доступ к порту коммутатора порт безопасность в порядке"
-    ]
-  },
-  {
-    "time": [
-      142.0,
-      145.0
-    ],
-    "en": [
-      "we've done that before now to manually"
-    ],
-    "ru": [
-      "мы делали это раньше, чтобы вручную"
-    ]
-  },
-  {
-    "time": [
-      145.0,
-      147.0
-    ],
-    "en": [
-      "configure a secure MAC address we use"
-    ],
-    "ru": [
-      "настроить безопасный MAC-адрес, который мы используем"
-    ]
-  },
-  {
-    "time": [
-      147.0,
-      150.0
-    ],
-    "en": [
-      "this command switch port port security"
-    ],
-    "ru": [
-      "эта команда коммутатора порт порт безопасности"
-    ]
-  },
-  {
-    "time": [
-      150.0,
-      153.0
-    ],
-    "en": [
-      "MAC address followed by the MAC address"
-    ],
-    "ru": [
-      "MAC-адрес, за которым следует MAC-адрес"
-    ]
-  },
-  {
-    "time": [
-      153.0,
-      155.0
-    ],
-    "en": [
-      "we want to configure which I will paste"
-    ],
-    "ru": [
-      "мы хотим настроить, что я буду вставлять"
-    ]
-  },
-  {
-    "time": [
-      155.0,
-      161.0
-    ],
-    "en": [
-      "right here there we go"
-    ],
-    "ru": [
-      "прямо здесь мы идем"
-    ]
-  },
-  {
-    "time": [
-      161.0,
-      164.0
-    ],
-    "en": [
-      "next we must repeat the process on"
-    ],
-    "ru": [
-      "Затем мы должны повторить процесс на"
-    ]
-  },
-  {
-    "time": [
-      164.0,
-      168.0
-    ],
-    "en": [
-      "switch 2 for PC 2 now the MAC address of"
-    ],
-    "ru": [
-      "переключатель 2 для ПК 2 теперь MAC-адрес"
-    ]
-  },
-  {
-    "time": [
-      168.0,
-      171.0
-    ],
-    "en": [
-      "PC 2 should already be in the MAC"
-    ],
-    "ru": [
-      "ПК 2 уже должен быть в MAC"
-    ]
-  },
-  {
-    "time": [
-      171.0,
-      174.0
-    ],
-    "en": [
-      "address table of switch to the default"
-    ],
-    "ru": [
-      "адресная таблица переключения на значение по умолчанию"
-    ]
-  },
-  {
-    "time": [
-      174.0,
-      176.0
-    ],
-    "en": [
-      "aging time of a MAC address in the MAC"
-    ],
-    "ru": [
-      "время старения MAC-адреса в MAC"
-    ]
-  },
-  {
-    "time": [
-      176.0,
-      179.0
-    ],
-    "en": [
-      "address table is 5 minutes meaning if"
-    ],
-    "ru": [
-      "адресная таблица составляет 5 минут, что означает, что если"
-    ]
-  },
-  {
-    "time": [
-      179.0,
-      181.0
-    ],
-    "en": [
-      "nothing is heard from that address on"
-    ],
-    "ru": [
-      "ничего не слышно с этого адреса на"
-    ]
-  },
-  {
-    "time": [
-      181.0,
-      183.0
-    ],
-    "en": [
-      "the interface for 5 minutes it is"
-    ],
-    "ru": [
-      "интерфейс на 5 минут это"
-    ]
-  },
-  {
-    "time": [
-      183.0,
-      186.0
-    ],
-    "en": [
-      "cleared from the table each time a"
-    ],
-    "ru": [
-      "удаляется из таблицы каждый раз, когда"
-    ]
-  },
-  {
-    "time": [
-      186.0,
-      188.0
-    ],
-    "en": [
-      "packet from that address is received the"
-    ],
-    "ru": [
-      "пакет с этого адреса получен"
-    ]
-  },
-  {
-    "time": [
-      188.0,
-      192.0
-    ],
-    "en": [
-      "timer resets to 5 minutes however let's"
-    ],
-    "ru": [
-      "таймер сбрасывается до 5 минут, но давайте"
-    ]
-  },
-  {
-    "time": [
-      192.0,
-      196.0
-    ],
-    "en": [
-      "ping from PC to 2 PC one just in case"
-    ],
-    "ru": [
-      "пинг с ПК на 2 ПК один на всякий случай"
-    ]
-  },
-  {
-    "time": [
-      196.0,
-      204.0
-    ],
-    "en": [
-      "ping 192.168.1.1 there we go now under"
-    ],
-    "ru": [
-      "ping 192.168.1.1 там мы идем теперь под"
-    ]
-  },
-  {
-    "time": [
-      204.0,
-      211.0
-    ],
-    "en": [
-      "switch to enable show MAC address table"
-    ],
-    "ru": [
-      "переключатель, чтобы включить отображение таблицы MAC-адресов"
-    ]
-  },
-  {
-    "time": [
-      211.0,
-      214.0
-    ],
-    "en": [
-      "again there are two addresses on the f01"
-    ],
-    "ru": [
-      "снова есть два адреса на f01"
-    ]
-  },
-  {
-    "time": [
-      214.0,
-      217.0
-    ],
-    "en": [
-      "interface those of switch one and pc 1"
-    ],
-    "ru": [
-      "интерфейсы переключателя 1 и ПК 1"
-    ]
-  },
-  {
-    "time": [
-      217.0,
-      221.0
-    ],
-    "en": [
-      "and 1 on the f02 interface that of pc 2"
-    ],
-    "ru": [
-      "и 1 на интерфейсе f02, что на ПК 2"
-    ]
-  },
-  {
-    "time": [
-      221.0,
-      223.0
-    ],
-    "en": [
-      "which is the one we're interested in now"
-    ],
-    "ru": [
-      "который нас сейчас интересует"
-    ]
-  },
-  {
-    "time": [
-      223.0,
-      226.0
-    ],
-    "en": [
-      "so I'll copy that"
-    ],
-    "ru": [
-      "так что я скопирую это"
-    ]
-  },
-  {
-    "time": [
-      226.0,
-      230.0
-    ],
-    "en": [
-      "ok now let's configure the interface"
-    ],
-    "ru": [
-      "хорошо, теперь давайте настроим интерфейс"
-    ]
-  },
-  {
-    "time": [
-      230.0,
-      236.0
-    ],
-    "en": [
-      "coffee interface f0 to switch port mode"
-    ],
-    "ru": [
-      "кофе интерфейс f0 для переключения режима порта"
-    ]
-  },
-  {
-    "time": [
-      236.0,
-      241.0
-    ],
-    "en": [
-      "access switch port port security switch"
-    ],
-    "ru": [
-      "коммутатор доступа порт порт переключатель безопасности"
-    ]
-  },
-  {
-    "time": [
-      241.0,
-      243.0
-    ],
-    "en": [
-      "port port security MAC address and now"
-    ],
-    "ru": [
-      "порт MAC-адрес безопасности порта и сейчас"
-    ]
-  },
-  {
-    "time": [
-      243.0,
-      247.0
-    ],
-    "en": [
-      "I'll paste in PC twos MAC address there"
-    ],
-    "ru": [
-      "Я вставлю туда два MAC-адреса ПК"
-    ]
-  },
-  {
-    "time": [
-      247.0,
-      251.0
-    ],
-    "en": [
-      "we go now let's do a quick ping from pc1"
-    ],
-    "ru": [
-      "мы идем, давайте сделаем быстрый пинг с pc1"
-    ]
-  },
-  {
-    "time": [
-      251.0,
-      254.0
-    ],
-    "en": [
-      "to pc2 to test which is step 5"
-    ],
-    "ru": [
-      "на pc2 для проверки, что является шагом 5"
-    ]
-  },
-  {
-    "time": [
-      254.0,
-      257.0
-    ],
-    "en": [
-      "if we configure the correct addresses"
-    ],
-    "ru": [
-      "если мы настроим правильные адреса"
-    ]
-  },
-  {
-    "time": [
-      257.0,
-      262.0
-    ],
-    "en": [
-      "there should be no problems ping"
-    ],
-    "ru": [
-      "пинговать проблем быть не должно"
-    ]
-  },
-  {
-    "time": [
-      262.0,
-      267.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      262.0,
-      267.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      267.0,
-      270.0
-    ],
-    "en": [
-      "now on step 6 we're going to try to"
-    ],
-    "ru": [
-      "теперь на шаге 6 мы попробуем"
-    ]
-  },
-  {
-    "time": [
-      270.0,
-      273.0
-    ],
-    "en": [
-      "trigger a port security violation let's"
-    ],
-    "ru": [
-      "вызвать нарушение безопасности порта давайте"
-    ]
-  },
-  {
-    "time": [
-      273.0,
-      276.0
-    ],
-    "en": [
-      "remove the cables first which we can do"
-    ],
-    "ru": [
-      "сначала удалите кабели, что мы можем сделать"
-    ]
-  },
-  {
-    "time": [
-      276.0,
-      281.0
-    ],
-    "en": [
-      "with this tool in packet tracer there we"
-    ],
-    "ru": [
-      "с помощью этого инструмента в пакетном трассировщике мы"
-    ]
-  },
-  {
-    "time": [
-      281.0,
-      285.0
-    ],
-    "en": [
-      "go now I'll connect PC one to switch to"
-    ],
-    "ru": [
-      "иди сейчас я подключу ПК один, чтобы переключиться на"
-    ]
-  },
-  {
-    "time": [
-      285.0,
-      291.0
-    ],
-    "en": [
-      "by clicking on the cable down here there"
-    ],
-    "ru": [
-      "щелкнув по кабелю здесь, там"
-    ]
-  },
-  {
-    "time": [
-      291.0,
-      294.0
-    ],
-    "en": [
-      "we go and now I'll connect PC two to"
-    ],
-    "ru": [
-      "мы идем и теперь я подключу два ПК к"
-    ]
-  },
-  {
-    "time": [
-      294.0,
-      301.0
-    ],
-    "en": [
-      "switch one there we go"
-    ],
-    "ru": [
-      "переключи один, мы идем"
-    ]
-  },
-  {
-    "time": [
-      301.0,
-      305.0
-    ],
-    "en": [
-      "step seven is to pin from pc1 to pc2"
-    ],
-    "ru": [
-      "Шаг седьмой - подключить от pc1 к pc2"
-    ]
-  },
-  {
-    "time": [
-      305.0,
-      308.0
-    ],
-    "en": [
-      "what do you expect will be the result of"
-    ],
-    "ru": [
-      "как вы ожидаете, будет результатом"
-    ]
-  },
-  {
-    "time": [
-      308.0,
-      311.0
-    ],
-    "en": [
-      "this ping we manually configured the MAC"
-    ],
-    "ru": [
-      "этот пинг мы вручную настроили MAC"
-    ]
-  },
-  {
-    "time": [
-      311.0,
-      314.0
-    ],
-    "en": [
-      "address of PC 1 as a secure MAC address"
-    ],
-    "ru": [
-      "адрес ПК 1 как безопасный MAC-адрес"
-    ]
-  },
-  {
-    "time": [
-      314.0,
-      317.0
-    ],
-    "en": [
-      "on switch ones f02 interface and"
-    ],
-    "ru": [
-      "на переключателях интерфейса f02 и"
-    ]
-  },
-  {
-    "time": [
-      317.0,
-      319.0
-    ],
-    "en": [
-      "manually configured the MAC address of"
-    ],
-    "ru": [
-      "вручную настроил MAC-адрес"
-    ]
-  },
-  {
-    "time": [
-      319.0,
-      322.0
-    ],
-    "en": [
-      "PC 2 as a secure MAC address on switch"
-    ],
-    "ru": [
-      "ПК 2 в качестве безопасного MAC-адреса на коммутаторе"
-    ]
-  },
-  {
-    "time": [
-      322.0,
-      327.0
-    ],
-    "en": [
-      "twos f02 interface remember the default"
-    ],
-    "ru": [
-      "twos f02 интерфейс запомнить значение по умолчанию"
-    ]
-  },
-  {
-    "time": [
-      327.0,
-      329.0
-    ],
-    "en": [
-      "number of secure MAC addresses on the"
-    ],
-    "ru": [
-      "количество безопасных MAC-адресов на"
-    ]
-  },
-  {
-    "time": [
-      329.0,
-      332.0
-    ],
-    "en": [
-      "port security enabled interface is 1 so"
-    ],
-    "ru": [
-      "Интерфейс с включенной защитой порта равен 1, поэтому"
-    ]
-  },
-  {
-    "time": [
-      332.0,
-      336.0
-    ],
-    "en": [
-      "if we attempt a ping from pc1 to pc2 now"
-    ],
-    "ru": [
-      "если мы сейчас попытаемся пинговать с pc1 на pc2"
-    ]
-  },
-  {
-    "time": [
-      336.0,
-      338.0
-    ],
-    "en": [
-      "a port security violation should be"
-    ],
-    "ru": [
-      "нарушение безопасности порта должно быть"
-    ]
-  },
-  {
-    "time": [
-      338.0,
-      340.0
-    ],
-    "en": [
-      "triggered when the packet with a"
-    ],
-    "ru": [
-      "срабатывает, когда пакет с"
-    ]
-  },
-  {
-    "time": [
-      340.0,
-      342.0
-    ],
-    "en": [
-      "different MAC address is received on the"
-    ],
-    "ru": [
-      "другой MAC-адрес получен на"
-    ]
-  },
-  {
-    "time": [
-      342.0,
-      346.0
-    ],
-    "en": [
-      "port security enabled interface what"
-    ],
-    "ru": [
-      "интерфейс с включенной безопасностью портов что"
-    ]
-  },
-  {
-    "time": [
-      346.0,
-      349.0
-    ],
-    "en": [
-      "exactly will happen if you remember from"
-    ],
-    "ru": [
-      "точно произойдет, если вы помните из"
-    ]
-  },
-  {
-    "time": [
-      349.0,
-      351.0
-    ],
-    "en": [
-      "a previous lab the default action in the"
-    ],
-    "ru": [
-      "предыдущая лабораторная работа по умолчанию в"
-    ]
-  },
-  {
-    "time": [
-      351.0,
-      353.0
-    ],
-    "en": [
-      "event of a port security violation is"
-    ],
-    "ru": [
-      "событие нарушения безопасности порта"
-    ]
-  },
-  {
-    "time": [
-      353.0,
-      355.0
-    ],
-    "en": [
-      "shut down meaning that the switch port"
-    ],
-    "ru": [
-      "выключение означает, что порт коммутатора"
-    ]
-  },
-  {
-    "time": [
-      355.0,
-      357.0
-    ],
-    "en": [
-      "will enter an error disabled state"
-    ],
-    "ru": [
-      "войдет в состояние отключения из-за ошибки"
-    ]
-  },
-  {
-    "time": [
-      357.0,
-      361.0
-    ],
-    "en": [
-      "effectively shutting it down let's try"
-    ],
-    "ru": [
-      "эффективно выключить его давайте попробуем"
-    ]
-  },
-  {
-    "time": [
-      361.0,
-      368.0
-    ],
-    "en": [
-      "that ping on PC 1 ping 192.168.1 12 as"
-    ],
-    "ru": [
-      "что пинг на ПК 1 пинг 192.168.1 12 как"
-    ]
-  },
-  {
-    "time": [
-      368.0,
-      372.0
-    ],
-    "en": [
-      "you can see the ping fails also if you"
-    ],
-    "ru": [
-      "вы также можете увидеть, что пинг не работает, если вы"
-    ]
-  },
-  {
-    "time": [
-      372.0,
-      374.0
-    ],
-    "en": [
-      "check the port lights on packet tracer"
-    ],
-    "ru": [
-      "проверьте индикаторы портов на пакетном трассировщике"
-    ]
-  },
-  {
-    "time": [
-      374.0,
-      377.0
-    ],
-    "en": [
-      "you'll notice that the port light on the"
-    ],
-    "ru": [
-      "вы заметите, что индикатор порта на"
-    ]
-  },
-  {
-    "time": [
-      377.0,
-      380.0
-    ],
-    "en": [
-      "f02 interface of switch 2 has gone red"
-    ],
-    "ru": [
-      "f02 интерфейс переключателя 2 стал красным"
-    ]
-  },
-  {
-    "time": [
-      380.0,
-      384.0
-    ],
-    "en": [
-      "this means it is shut down however why"
-    ],
-    "ru": [
-      "это означает, что он выключен, но почему"
-    ]
-  },
-  {
-    "time": [
-      384.0,
-      386.0
-    ],
-    "en": [
-      "hasn't the f02 interface of switch 1"
-    ],
-    "ru": [
-      "не имеет интерфейса f02 переключателя 1"
-    ]
-  },
-  {
-    "time": [
-      386.0,
-      389.0
-    ],
-    "en": [
-      "been shut down this is because the"
-    ],
-    "ru": [
-      "был закрыт, потому что"
-    ]
-  },
-  {
-    "time": [
-      389.0,
-      391.0
-    ],
-    "en": [
-      "packet was stopped right at the f02"
-    ],
-    "ru": [
-      "пакет был остановлен прямо на f02"
-    ]
-  },
-  {
-    "time": [
-      391.0,
-      394.0
-    ],
-    "en": [
-      "interface of switch 2 so it never"
-    ],
-    "ru": [
-      "интерфейс переключателя 2, поэтому он никогда не"
-    ]
-  },
-  {
-    "time": [
-      394.0,
-      397.0
-    ],
-    "en": [
-      "reached PC 2 and thus PC to never sent a"
-    ],
-    "ru": [
-      "достиг ПК 2 и, следовательно, ПК никогда не отправлял"
-    ]
-  },
-  {
-    "time": [
-      397.0,
-      399.0
-    ],
-    "en": [
-      "reply to the ping which would have"
-    ],
-    "ru": [
-      "ответить на пинг, который"
-    ]
-  },
-  {
-    "time": [
-      399.0,
-      401.0
-    ],
-    "en": [
-      "triggered a port security violation on"
-    ],
-    "ru": [
-      "вызвало нарушение безопасности порта на"
-    ]
-  },
-  {
-    "time": [
-      401.0,
-      408.0
-    ],
-    "en": [
-      "switch 1 step 8 is to reconnect the"
-    ],
-    "ru": [
-      "Переключатель 1 шаг 8 предназначен для повторного подключения"
-    ]
-  },
-  {
-    "time": [
-      408.0,
-      414.0
-    ],
-    "en": [
-      "cables so I'll remove these cables first"
-    ],
-    "ru": [
-      "кабели, поэтому я сначала сниму эти кабели"
-    ]
-  },
-  {
-    "time": [
-      414.0,
-      417.0
-    ],
-    "en": [
-      "there we go now let's connect them as"
-    ],
-    "ru": [
-      "поехали, теперь давайте соединим их как"
-    ]
-  },
-  {
-    "time": [
-      417.0,
-      423.0
-    ],
-    "en": [
-      "they were originally pc 1 2 switch 1"
-    ],
-    "ru": [
-      "они изначально были ПК 1 2 переключатель 1"
-    ]
-  },
-  {
-    "time": [
-      423.0,
-      429.0
-    ],
-    "en": [
-      "there we go and now pc 2 to switch 2"
-    ],
-    "ru": [
-      "вот и мы, и теперь компьютер 2 для переключения 2"
-    ]
-  },
-  {
-    "time": [
-      429.0,
-      431.0
+      60.786883,
+      62.431795
     ],
     "en": [
       "there we go"
@@ -1537,650 +145,1442 @@ let objs = [
   },
   {
     "time": [
-      431.0,
-      434.0
+      62.431795,
+      67.360461
     ],
     "en": [
-      "you"
+      "step two is to view the MAC address table of switch one"
     ],
     "ru": [
-      "ты"
+      "Шаг второй - просмотреть таблицу MAC-адресов первого коммутатора."
     ]
   },
   {
     "time": [
-      434.0,
-      439.0
+      67.360461,
+      73.229033
     ],
     "en": [
-      "now let's ping from pc1 to pc2 do you"
+      "switch one should have dynamically learned the MAC address of PC one on f0 2"
     ],
     "ru": [
-      "теперь давай пинг с ПК1 на ПК2 ты?"
+      "коммутатор должен был динамически узнать MAC-адрес ПК один на f0 2"
     ]
   },
   {
     "time": [
-      439.0,
-      442.0
+      73.229033,
+      77.807698
     ],
     "en": [
-      "expect a pin to work PC one is once"
+      "and the MAC addresses of switch 2 and PC 2 on f0 1"
     ],
     "ru": [
-      "Ожидайте, что пин-код будет работать на ПК, один раз"
+      "и MAC-адреса коммутатора 2 и ПК 2 на f0 1"
     ]
   },
   {
     "time": [
-      442.0,
-      444.0
+      77.807698,
+      80.037421
     ],
     "en": [
-      "again connected to switch ones"
+      "let's check on switch 1"
     ],
     "ru": [
-      "снова подключил к переключателям"
+      "давай проверим на переключателе 1"
     ]
   },
   {
     "time": [
-      444.0,
-      447.0
+      80.037421,
+      84.784435
     ],
     "en": [
-      "f02 interface and its MAC address is"
+      "enable show MAC address table"
     ],
     "ru": [
-      "f02 и его MAC-адрес"
+      "включить показывать таблицу MAC-адресов"
     ]
   },
   {
     "time": [
-      447.0,
-      449.0
+      84.784435,
+      91.764687
     ],
     "en": [
-      "configured on the interface as a secure"
+      "as expected there are two MAC addresses on F 0 1 and 1 MAC address on F 0 2"
     ],
     "ru": [
-      "настроен на интерфейсе как безопасный"
+      "как и ожидалось, есть два MAC-адреса на F 0 1 и 1 MAC-адрес на F 0 2"
     ]
   },
   {
     "time": [
-      449.0,
-      452.0
+      91.764687,
+      98.982553
     ],
     "en": [
-      "address so it should be fine"
+      "we don't know which of the two addresses on F 0 1 is switch 2 and which is PC 2"
     ],
     "ru": [
-      "адрес, так что все должно быть в порядке"
+      "мы не знаем, какой из двух адресов на F 0 1 является переключателем 2, а какой - ПК 2"
     ]
   },
   {
     "time": [
-      452.0,
-      455.0
+      98.982553,
+      101.054749
     ],
     "en": [
-      "likewise for PC 2 it is now connected"
+      "but that doesn't matter in this lab"
     ],
     "ru": [
-      "аналогично для ПК 2 он теперь подключен"
+      "но это не имеет значения в этой лаборатории"
     ]
   },
   {
     "time": [
-      455.0,
-      458.0
+      101.054749,
+      103.784198
     ],
     "en": [
-      "again to switch twos f02 interface and"
+      "we just want to know the MAC address of PC 1"
     ],
     "ru": [
-      "снова переключить интерфейс twos f02 и"
+      "мы просто хотим знать MAC-адрес ПК 1"
     ]
   },
   {
     "time": [
-      458.0,
-      460.0
+      103.784198,
+      105.141063
     ],
     "en": [
-      "its MAC address is configured as a"
+      "which is this"
     ],
     "ru": [
-      "его MAC-адрес настроен как"
+      "что это"
     ]
   },
   {
     "time": [
-      460.0,
-      462.0
+      105.141063,
+      114.395773
     ],
     "en": [
-      "secure address on switch twos"
+      "step three is to enable port security on switch ones f02 interface"
     ],
     "ru": [
-      "безопасный адрес на коммутаторе два"
+      "Шаг третий - включить безопасность портов на интерфейсе f02 коммутатора"
     ]
   },
   {
     "time": [
-      462.0,
-      466.0
+      114.395773,
+      118.494656
     ],
     "en": [
-      "f02 interface let's try that ping on PC"
+      "and manually configure PC ones MAC address as a secure MAC address"
     ],
     "ru": [
-      "f02 interface давайте попробуем этот пинг на ПК"
+      "и вручную настроить MAC-адрес ПК как безопасный MAC-адрес"
     ]
   },
   {
     "time": [
-      466.0,
-      475.0
+      118.494656,
+      122.972171
     ],
     "en": [
-      "one ping 192.168.1.2 12 it doesn't work"
+      "first let me copy the MAC address of PC one"
     ],
     "ru": [
-      "один пинг 192.168.1.2 12 не работает"
+      "сначала позвольте мне скопировать MAC-адрес ПК один"
     ]
   },
   {
     "time": [
-      475.0,
-      477.0
+      122.972171,
+      127.844823
     ],
     "en": [
-      "why is that even though we connected the"
+      "there we go now let's configure the f02 interface"
     ],
     "ru": [
-      "почему, хотя мы подключили"
+      "поехали, теперь давайте настроим интерфейс f02"
     ]
   },
   {
     "time": [
-      477.0,
-      479.0
+      127.844823,
+      132.50079
     ],
     "en": [
-      "cables back the way they are supposed to"
+      "conf t interface f0 2"
     ],
     "ru": [
-      "кабели обратно так, как они должны"
+      "conf t interface f0 2"
     ]
   },
   {
     "time": [
-      479.0,
-      484.0
+      132.50079,
+      136.651881
     ],
     "en": [
-      "be well switch twos f02 interface is"
+      "remember we have to configure it as an access port first"
     ],
     "ru": [
-      "be well switch twos интерфейс f02 есть"
+      "помните, что мы должны сначала настроить его как порт доступа"
     ]
   },
   {
     "time": [
-      484.0,
-      487.0
+      136.651881,
+      142.164891
     ],
     "en": [
-      "still down it doesn't automatically"
+      "so switch port mode access switch port port security"
     ],
     "ru": [
-      "все еще вниз это не происходит автоматически"
+      "поэтому переключатель режима порта доступа переключатель порта безопасности порта"
     ]
   },
   {
     "time": [
-      487.0,
-      491.0
+      142.164891,
+      144.377964
     ],
     "en": [
-      "recover and become enabled again it can"
+      "okay we've done that before"
     ],
     "ru": [
-      "восстановиться и снова стать включенным, он может"
+      "хорошо, мы делали это раньше"
     ]
   },
   {
     "time": [
-      491.0,
-      492.0
+      144.377964,
+      148.910675
     ],
     "en": [
-      "be configured to automatically recover"
+      "now to manually configure a secure MAC address we use this command"
     ],
     "ru": [
-      "быть настроенным на автоматическое восстановление"
+      "теперь, чтобы вручную настроить безопасный MAC-адрес, мы используем эту команду"
     ]
   },
   {
     "time": [
-      492.0,
-      495.0
+      148.910675,
+      154.948723
     ],
     "en": [
-      "from a port security error but that will"
+      "switch port port security MAC address followed by the MAC address we want to configure"
     ],
     "ru": [
-      "из-за ошибки безопасности порта, но это"
+      "безопасность порта порта коммутатора MAC-адрес, за которым следует MAC-адрес, который мы хотим настроить"
     ]
   },
   {
     "time": [
-      495.0,
-      499.0
+      154.948723,
+      156.839176
     ],
     "en": [
-      "be a topic for another lab for now let's"
+      "which I will paste right here"
     ],
     "ru": [
-      "быть темой для другой лаборатории, а пока давайте"
+      "который я вставлю прямо здесь"
     ]
   },
   {
     "time": [
-      499.0,
-      503.0
+      156.839176,
+      159.017969
     ],
     "en": [
-      "do it manually I'll go on switch to and"
+      "there we go"
     ],
     "ru": [
-      "сделай это вручную я перейду на и"
+      "вот и мы"
     ]
   },
   {
     "time": [
-      503.0,
-      506.0
+      159.017969,
+      167.008284
     ],
     "en": [
-      "first let's check the status of the"
+      "next we must repeat the process on switch 2 for PC 2"
     ],
     "ru": [
-      "сначала давайте проверим статус"
+      "Затем мы должны повторить процесс на переключателе 2 для ПК 2"
     ]
   },
   {
     "time": [
-      506.0,
-      510.0
+      167.008284,
+      173.387574
     ],
     "en": [
-      "interface show interface f02"
+      "now the MAC address of PC 2 should already be in the MAC address table of switch 2"
     ],
     "ru": [
-      "интерфейс показать интерфейс f02"
+      "теперь MAC-адрес ПК 2 уже должен быть в таблице MAC-адресов коммутатора 2"
     ]
   },
   {
     "time": [
-      510.0,
-      514.0
+      173.387574,
+      178.937737
     ],
     "en": [
-      "as you can see here the interface is"
+      "the default aging time of a MAC address in the MAC address table is 5 minutes"
     ],
     "ru": [
-      "как вы можете видеть здесь, интерфейс"
+      "время устаревания MAC-адреса в таблице MAC-адресов по умолчанию составляет 5 минут."
     ]
   },
   {
     "time": [
-      514.0,
-      519.0
+      178.937737,
+      183.124117
     ],
     "en": [
-      "down and it's in an error disabled State"
+      "meaning if nothing is heard from that address on the interface for 5 minutes"
     ],
     "ru": [
-      "вниз, и он находится в состоянии отключения из-за ошибки"
+      "означает, что с этого адреса на интерфейсе ничего не слышно в течение 5 минут"
     ]
   },
   {
     "time": [
-      519.0,
-      523.0
+      183.124117,
+      185.321977
     ],
     "en": [
-      "how do we manually fix this it's simple"
+      "it is cleared from the table"
     ],
     "ru": [
-      "как мы вручную исправить это просто"
+      "это очищено от таблицы"
     ]
   },
   {
     "time": [
-      523.0,
-      530.0
+      185.321977,
+      191.016553
     ],
     "en": [
-      "shutdown no shutdown this will reset the"
+      "each time a packet from that address is received the timer resets to 5 minutes"
     ],
     "ru": [
-      "выключение без выключения это сбросит"
+      "каждый раз при получении пакета с этого адреса таймер сбрасывается до 5 минут."
     ]
   },
   {
     "time": [
-      530.0,
-      532.0
+      191.016553,
+      195.189264
     ],
     "en": [
-      "interface and it will no longer be in an"
+      "however let's ping from PC to 2 PC one just in case"
     ],
     "ru": [
-      "интерфейс, и его больше не будет в"
+      "однако давайте пингуем с ПК на 2 ПК один на всякий случай"
     ]
   },
   {
     "time": [
-      532.0,
-      536.0
+      195.189264,
+      201.171544
     ],
     "en": [
-      "error disabled State that's how you"
+      "ping 192.168.1.12"
     ],
     "ru": [
-      "ошибка отключена состояние вот как вы"
+      "пинг 192.168.1.12"
     ]
   },
   {
     "time": [
-      536.0,
-      537.0
+      201.171544,
+      203.253126
     ],
     "en": [
-      "manually recover an error disabled"
+      "there we go"
     ],
     "ru": [
-      "вручную восстановить ошибку отключено"
+      "вот и мы"
     ]
   },
   {
     "time": [
-      537.0,
-      539.0
+      203.253126,
+      207.177134
     ],
     "en": [
-      "interface with the command shutdown"
+      "now under switch 2"
     ],
     "ru": [
-      "интерфейс с командой shutdown"
+      "теперь под переключателем 2"
     ]
   },
   {
     "time": [
-      539.0,
-      546.0
+      207.177134,
+      211.6531
     ],
     "en": [
-      "followed by no shutdown"
+      "enable show MAC address table"
     ],
     "ru": [
-      "с последующим отключением"
+      "включить показывать таблицу MAC-адресов"
     ]
   },
   {
     "time": [
-      546.0,
-      550.0
+      211.6531,
+      215.851521
     ],
     "en": [
-      "finally let's do one last ping from pc1"
+      "again there are two addresses on the f01 interface"
     ],
     "ru": [
-      "наконец, давайте сделаем последний пинг от pc1"
+      "снова есть два адреса на интерфейсе f01"
     ]
   },
   {
     "time": [
-      550.0,
-      552.0
+      215.851521,
+      220.282994
     ],
     "en": [
-      "to pc2 just to make sure that everything"
+      "those of switch 1 and pc 1 and 1 on the f02 interface"
     ],
     "ru": [
-      "на pc2 просто чтобы убедиться, что все"
+      "переключателя 1 и ПК 1 и 1 на интерфейсе f02"
     ]
   },
   {
     "time": [
-      552.0,
-      554.0
+      220.282994,
+      221.952112
     ],
     "en": [
-      "is working right again after we did that"
+      "that of pc 2"
     ],
     "ru": [
-      "снова работает сразу после того, как мы это сделали"
+      "что ПК 2"
     ]
   },
   {
     "time": [
-      554.0,
-      556.0
+      221.952112,
+      224.31131
     ],
     "en": [
-      "little experiment with port security"
+      "which is the one we're interested in now"
     ],
     "ru": [
-      "небольшой эксперимент с безопасностью портов"
+      "который нас сейчас интересует"
     ]
   },
   {
     "time": [
-      556.0,
-      560.0
+      224.31131,
+      225.822703
     ],
     "en": [
-      "violations I'll go on PC one one more"
+      "so I'll copy that"
     ],
     "ru": [
-      "нарушения пойду на ПК еще одно"
+      "так что я скопирую это"
     ]
   },
   {
     "time": [
-      560.0,
-      568.0
+      225.822703,
+      230.61247
     ],
     "en": [
-      "time ping 192.168.1 twelve it works"
+      "ok now let's configure the interface"
     ],
     "ru": [
-      "время пинг 192.168.1 двенадцать он работает"
+      "хорошо, теперь давайте настроим интерфейс"
     ]
   },
   {
     "time": [
-      568.0,
-      573.0
+      230.61247,
+      246.147486
     ],
     "en": [
-      "that's all for this lab thank you for"
+      "conf t interface f0 2 switch port mode access switch port port security switch port port security MAC address and now I'll paste in PC 2 MAC address"
     ],
     "ru": [
-      "это все для этой лаборатории, спасибо за"
+      "conf t interface f0 2 Switch Port Mode Access Switch Port Port security switch port port security MAC address and now I paste in PC 2 MAC address"
     ]
   },
   {
     "time": [
-      573.0,
-      575.0
+      246.147486,
+      248.245714
     ],
     "en": [
-      "watching I hope this lab and video have"
+      "there we go"
     ],
     "ru": [
-      "смотрю, надеюсь, эта лаборатория и видео"
+      "вот и мы"
     ]
   },
   {
     "time": [
-      575.0,
-      578.0
+      248.245714,
+      253.136939
     ],
     "en": [
-      "been helpful for you please subscribe"
+      "now let's do a quick ping from pc1 to pc2 to test"
     ],
     "ru": [
-      "был полезным для вас, пожалуйста, подпишитесь"
+      "теперь давайте сделаем быстрый пинг с pc1 на pc2, чтобы проверить"
     ]
   },
   {
     "time": [
-      578.0,
-      580.0
+      253.136939,
+      254.564681
     ],
     "en": [
-      "for future labs like this which will be"
+      "which is step 5"
     ],
     "ru": [
-      "для будущих лабораторий, подобных этой, которые будут"
+      "что шаг 5"
     ]
   },
   {
     "time": [
-      580.0,
-      583.0
+      254.564681,
+      258.781179
     ],
     "en": [
-      "released weekly if you have requests for"
+      "if we configure the correct addresses there should be no problems"
     ],
     "ru": [
-      "выпускается еженедельно, если у вас есть запросы на"
+      "если настроим правильные адреса, проблем быть не должно"
     ]
   },
   {
     "time": [
-      583.0,
-      585.0
+      258.781179,
+      266.092088
     ],
     "en": [
-      "any specific labs let me know in the"
+      "ping 192.168.1.12 it works"
     ],
     "ru": [
-      "любые конкретные лаборатории дайте мне знать в"
+      "пинг 192.168.1.12 работает"
     ]
   },
   {
     "time": [
-      585.0,
-      588.0
+      266.092088,
+      273.631862
     ],
     "en": [
-      "comment section if you want to support"
+      "now on step 6 we're going to try to trigger a port security violation"
     ],
     "ru": [
-      "раздел комментариев, если вы хотите поддержать"
+      "теперь на шаге 6 мы попытаемся вызвать нарушение безопасности порта"
     ]
   },
   {
     "time": [
-      588.0,
-      590.0
+      273.631862,
+      275.772892
     ],
     "en": [
-      "my channel please consider contributing"
+      "let's remove the cables first"
     ],
     "ru": [
-      "мой канал, пожалуйста, рассмотрите возможность участия"
+      "давайте сначала удалим кабели"
     ]
   },
   {
     "time": [
-      590.0,
-      593.0
+      275.772892,
+      278.772661
     ],
     "en": [
-      "to my patreon patreon comm slash"
+      "which we can do with this tool in packet tracer"
     ],
     "ru": [
-      "на мой patreon patreon comm слэш"
+      "что мы можем сделать с помощью этого инструмента в пакетном трассировщике"
     ]
   },
   {
     "time": [
-      593.0,
-      597.0
+      278.772661,
+      288.779013
     ],
     "en": [
-      "Jeremy's IT lab I accept Bitcoin and"
+      "there we go now I'll connect PC one to switch to by clicking on the cable down here"
     ],
     "ru": [
-      "ИТ-лаборатория Джереми Я принимаю биткойны и"
+      "Итак, теперь я подключу компьютер, чтобы переключиться на него, нажав на кабель здесь"
     ]
   },
   {
     "time": [
-      597.0,
-      599.0
+      288.779013,
+      295.660237
     ],
     "en": [
-      "aetherium donations via the addresses in"
+      "there we go and now I'll connect PC two to switch one"
     ],
     "ru": [
-      "пожертвования эфириума через адреса в"
+      "вот и мы, и теперь я подключу два компьютера, чтобы переключить один"
     ]
   },
   {
     "time": [
-      599.0,
-      603.0
+      295.660237,
+      298.935887
     ],
     "en": [
-      "the description I am also a brave"
+      "there we go"
     ],
     "ru": [
-      "по описанию я тоже храбрый"
+      "вот и мы"
     ]
   },
   {
     "time": [
-      603.0,
-      605.0
+      298.935887,
+      305.211508
     ],
     "en": [
-      "verified publisher and accept bat or"
+      "step seven is to ping from pc1 to pc2"
     ],
     "ru": [
-      "проверенный издатель и принять bat или"
+      "Шаг седьмой - пинг с ПК1 на ПК2"
     ]
   },
   {
     "time": [
-      605.0,
-      608.0
+      305.211508,
+      309.193178
     ],
     "en": [
-      "basic attention token donations in the"
+      "what do you expect will be the result of this ping"
     ],
     "ru": [
-      "основные пожертвования токенов внимания в"
+      "как вы ожидаете, будет результатом этого пинга"
     ]
   },
   {
     "time": [
-      608.0,
-      608.0
+      309.193178,
+      316.887278
     ],
     "en": [
-      "brave browser"
+      "we manually configured the MAC address of PC 1 as a secure MAC address on switch ones f02 interface"
     ],
     "ru": [
-      "смелый браузер"
+      "мы вручную настроили MAC-адрес ПК 1 как безопасный MAC-адрес на интерфейсе f02 коммутатора"
+    ]
+  },
+  {
+    "time": [
+      316.887278,
+      324.741179
+    ],
+    "en": [
+      "and manually configured the MAC address of PC 2 as a secure MAC address on switch twos f02 interface"
+    ],
+    "ru": [
+      "и вручную настроил MAC-адрес ПК 2 в качестве безопасного MAC-адреса на интерфейсе коммутатора 2 f02."
+    ]
+  },
+  {
+    "time": [
+      324.741179,
+      331.986455
+    ],
+    "en": [
+      "remember the default number of secure MAC addresses on the port security enabled interface is 1"
+    ],
+    "ru": [
+      "помните, что по умолчанию количество безопасных MAC-адресов на интерфейсе с включенной защитой порта равно 1"
+    ]
+  },
+  {
+    "time": [
+      331.986455,
+      336.556598
+    ],
+    "en": [
+      "so if we attempt a ping from pc1 to pc2 now"
+    ],
+    "ru": [
+      "поэтому, если мы сейчас попытаемся пинговать с pc1 на pc2"
+    ]
+  },
+  {
+    "time": [
+      336.556598,
+      344.728699
+    ],
+    "en": [
+      "a port security violation should be triggered when the packet with a different MAC address is received on the port security enabled interface"
+    ],
+    "ru": [
+      "нарушение безопасности порта должно срабатывать, когда пакет с другим MAC-адресом получен на интерфейсе с включенной защитой порта"
+    ]
+  },
+  {
+    "time": [
+      344.728699,
+      347.688827
+    ],
+    "en": [
+      "what exactly will happen"
+    ],
+    "ru": [
+      "что именно произойдет"
+    ]
+  },
+  {
+    "time": [
+      347.688827,
+      354.409897
+    ],
+    "en": [
+      "if you remember from a previous lab the default action in the event of a port security violation is shut down"
+    ],
+    "ru": [
+      "если вы помните из предыдущей лабораторной работы, действие по умолчанию в случае нарушения безопасности порта - отключение"
+    ]
+  },
+  {
+    "time": [
+      354.409897,
+      357.610322
+    ],
+    "en": [
+      "meaning that the switch port will enter an error disabled state"
+    ],
+    "ru": [
+      "это означает, что порт коммутатора войдет в состояние отключения из-за ошибки"
+    ]
+  },
+  {
+    "time": [
+      357.610322,
+      359.437648
+    ],
+    "en": [
+      "effectively shutting it down"
+    ],
+    "ru": [
+      "эффективно выключить его"
+    ]
+  },
+  {
+    "time": [
+      359.437648,
+      362.869803
+    ],
+    "en": [
+      "let's try that ping on PC 1"
+    ],
+    "ru": [
+      "давайте попробуем этот пинг на ПК 1"
+    ]
+  },
+  {
+    "time": [
+      362.869803,
+      371.172863
+    ],
+    "en": [
+      "ping 192.168.1 12 as you can see the ping fails"
+    ],
+    "ru": [
+      "ping 192.168.1 12, как видите, ping не работает"
+    ]
+  },
+  {
+    "time": [
+      371.172863,
+      375.184603
+    ],
+    "en": [
+      "also if you check the port lights on packet tracer"
+    ],
+    "ru": [
+      "также, если вы проверите индикаторы портов на трассировщике пакетов"
+    ]
+  },
+  {
+    "time": [
+      375.184603,
+      379.838564
+    ],
+    "en": [
+      "you'll notice that the port light on the f02 interface of switch 2 has gone red"
+    ],
+    "ru": [
+      "вы заметите, что индикатор порта на интерфейсе f02 коммутатора 2 стал красным"
+    ]
+  },
+  {
+    "time": [
+      379.838564,
+      382.730312
+    ],
+    "en": [
+      "this means it is shut down"
+    ],
+    "ru": [
+      "это означает, что он выключен"
+    ]
+  },
+  {
+    "time": [
+      382.730312,
+      387.893378
+    ],
+    "en": [
+      "however why hasn't the f02 interface of switch 1 been shut down"
+    ],
+    "ru": [
+      "однако почему не был отключен интерфейс f02 переключателя 1"
+    ]
+  },
+  {
+    "time": [
+      387.893378,
+      393.558707
+    ],
+    "en": [
+      "this is because the packet was stopped right at the f02 interface of switch 2"
+    ],
+    "ru": [
+      "это потому, что пакет был остановлен прямо на интерфейсе f02 коммутатора 2"
+    ]
+  },
+  {
+    "time": [
+      393.558707,
+      398.862798
+    ],
+    "en": [
+      "so it never reached PC 2 and thus PC to never sent a reply to the ping"
+    ],
+    "ru": [
+      "поэтому он никогда не достигал ПК 2 и, следовательно, ПК никогда не отправлял ответ на пинг"
+    ]
+  },
+  {
+    "time": [
+      398.862798,
+      403.250929
+    ],
+    "en": [
+      "which would have triggered a port security violation on switch 1"
+    ],
+    "ru": [
+      "что вызвало бы нарушение безопасности порта на коммутаторе 1"
+    ]
+  },
+  {
+    "time": [
+      403.250929,
+      409.919094
+    ],
+    "en": [
+      "step 8 is to reconnect the cables"
+    ],
+    "ru": [
+      "Шаг 8 - переподключить кабели"
+    ]
+  },
+  {
+    "time": [
+      409.919094,
+      412.955113
+    ],
+    "en": [
+      "so I'll remove these cables first"
+    ],
+    "ru": [
+      "так что я сначала сниму эти кабели"
+    ]
+  },
+  {
+    "time": [
+      412.955113,
+      419.582863
+    ],
+    "en": [
+      "there we go now let's connect them as they were originally"
+    ],
+    "ru": [
+      "поехали, теперь давайте соединим их, как они были изначально"
+    ]
+  },
+  {
+    "time": [
+      419.582863,
+      423.604938
+    ],
+    "en": [
+      "pc 1 switch 1"
+    ],
+    "ru": [
+      "шт 1 переключатель 1"
+    ]
+  },
+  {
+    "time": [
+      423.604938,
+      432.569194
+    ],
+    "en": [
+      "there we go and now pc 2 to switch 2 there we go"
+    ],
+    "ru": [
+      "вот и мы, и теперь компьютер 2 для переключения 2, мы идем"
+    ]
+  },
+  {
+    "time": [
+      432.569194,
+      438.091024
+    ],
+    "en": [
+      "you now let's ping from pc1 to pc2"
+    ],
+    "ru": [
+      "Теперь давайте пингуем с ПК1 на ПК2"
+    ]
+  },
+  {
+    "time": [
+      438.091024,
+      440.965717
+    ],
+    "en": [
+      "do you expect a ping too work"
+    ],
+    "ru": [
+      "Вы ожидаете, что пинг тоже сработает?"
+    ]
+  },
+  {
+    "time": [
+      440.965717,
+      445.840699
+    ],
+    "en": [
+      "PC one is once again connected to switch ones f02 interface"
+    ],
+    "ru": [
+      "ПК один снова подключен к коммутатору интерфейс f02"
+    ]
+  },
+  {
+    "time": [
+      445.840699,
+      450.097201
+    ],
+    "en": [
+      "and its MAC address is configured on the interface as a secure address"
+    ],
+    "ru": [
+      "и его MAC-адрес настроен на интерфейсе как безопасный адрес"
+    ]
+  },
+  {
+    "time": [
+      450.097201,
+      451.627587
+    ],
+    "en": [
+      "so it should be fine"
+    ],
+    "ru": [
+      "так что все должно быть в порядке"
+    ]
+  },
+  {
+    "time": [
+      451.627587,
+      458.201929
+    ],
+    "en": [
+      "likewise for PC 2 it is now connected again to switch twos f02 interface"
+    ],
+    "ru": [
+      "аналогично для ПК 2 он теперь снова подключен для переключения интерфейса twos f02"
+    ]
+  },
+  {
+    "time": [
+      458.201929,
+      463.778108
+    ],
+    "en": [
+      "and its MAC address is configured as a secure address on switch twos f02 interface"
+    ],
+    "ru": [
+      "и его MAC-адрес настроен как безопасный адрес на интерфейсе коммутатора 2 f02."
+    ]
+  },
+  {
+    "time": [
+      463.778108,
+      467.340186
+    ],
+    "en": [
+      "let's try that ping on PC one"
+    ],
+    "ru": [
+      "давай попробуем этот пинг на ПК"
+    ]
+  },
+  {
+    "time": [
+      467.340186,
+      471.428797
+    ],
+    "en": [
+      "ping 192.168.1.12"
+    ],
+    "ru": [
+      "пинг 192.168.1.12"
+    ]
+  },
+  {
+    "time": [
+      471.428797,
+      475.192785
+    ],
+    "en": [
+      "it doesn't work"
+    ],
+    "ru": [
+      "это не работает"
+    ]
+  },
+  {
+    "time": [
+      475.192785,
+      480.662842
+    ],
+    "en": [
+      "why is that even though we connected the cables back the way they are supposed to be"
+    ],
+    "ru": [
+      "почему, несмотря на то, что мы подключили кабели так, как они должны быть"
+    ]
+  },
+  {
+    "time": [
+      480.662842,
+      485.807246
+    ],
+    "en": [
+      "well switch twos f02 interface is still down"
+    ],
+    "ru": [
+      "ну switch twos интерфейс f02 все еще не работает"
+    ]
+  },
+  {
+    "time": [
+      485.807246,
+      489.79431
+    ],
+    "en": [
+      "it doesn't automatically recover and become enabled again"
+    ],
+    "ru": [
+      "он не восстанавливается автоматически и не включается снова"
+    ]
+  },
+  {
+    "time": [
+      489.79431,
+      495.116752
+    ],
+    "en": [
+      "it can be configured to automatically recover from a port security error"
+    ],
+    "ru": [
+      "его можно настроить для автоматического восстановления после ошибки безопасности порта"
+    ]
+  },
+  {
+    "time": [
+      495.116752,
+      497.525238
+    ],
+    "en": [
+      "but that will be a topic for another lab"
+    ],
+    "ru": [
+      "но это будет тема для другой лаборатории"
+    ]
+  },
+  {
+    "time": [
+      497.525238,
+      500.416335
+    ],
+    "en": [
+      "for now let's do it manually"
+    ],
+    "ru": [
+      "а пока сделаем это вручную"
+    ]
+  },
+  {
+    "time": [
+      500.416335,
+      502.974416
+    ],
+    "en": [
+      "I'll go on switch 2"
+    ],
+    "ru": [
+      "Я пойду на выключатель 2"
+    ]
+  },
+  {
+    "time": [
+      502.974416,
+      507.676155
+    ],
+    "en": [
+      "and first let's check the status of the interface"
+    ],
+    "ru": [
+      "и сначала проверим статус интерфейса"
+    ]
+  },
+  {
+    "time": [
+      507.676155,
+      511.397494
+    ],
+    "en": [
+      "show interface f02"
+    ],
+    "ru": [
+      "показать интерфейс f02"
+    ]
+  },
+  {
+    "time": [
+      511.397494,
+      515.878198
+    ],
+    "en": [
+      "as you can see here the interface is down"
+    ],
+    "ru": [
+      "как вы можете видеть здесь, интерфейс не работает"
+    ]
+  },
+  {
+    "time": [
+      515.878198,
+      518.548093
+    ],
+    "en": [
+      "and it's in an error disabled State"
+    ],
+    "ru": [
+      "и он находится в состоянии отключения из-за ошибки"
+    ]
+  },
+  {
+    "time": [
+      518.548093,
+      522.052855
+    ],
+    "en": [
+      "how do we manually fix this"
+    ],
+    "ru": [
+      "как мы вручную исправить это"
+    ]
+  },
+  {
+    "time": [
+      522.052855,
+      523.681029
+    ],
+    "en": [
+      "it's simple"
+    ],
+    "ru": [
+      "это просто"
+    ]
+  },
+  {
+    "time": [
+      523.681029,
+      527.97717
+    ],
+    "en": [
+      "shutdown no shutdown"
+    ],
+    "ru": [
+      "выключение нет выключения"
+    ]
+  },
+  {
+    "time": [
+      527.97717,
+      534.473503
+    ],
+    "en": [
+      "this will reset the interface and it will no longer be in an error disabled State"
+    ],
+    "ru": [
+      "это сбросит интерфейс, и он больше не будет в состоянии отключения из-за ошибки"
+    ]
+  },
+  {
+    "time": [
+      534.473503,
+      541.765898
+    ],
+    "en": [
+      "that's how you manually recover an error disabled interface with the command shutdown followed by no shutdown"
+    ],
+    "ru": [
+      "вот как вы вручную восстанавливаете интерфейс с отключенной ошибкой с помощью команды shutdown, а затем no shutdown"
+    ]
+  },
+  {
+    "time": [
+      541.765898,
+      551.429449
+    ],
+    "en": [
+      "finally let's do one last ping from pc1 to pc2"
+    ],
+    "ru": [
+      "наконец, давайте сделаем последний пинг с pc1 на pc2"
+    ]
+  },
+  {
+    "time": [
+      551.429449,
+      553.996027
+    ],
+    "en": [
+      "just to make sure that everything is working right again"
+    ],
+    "ru": [
+      "просто чтобы убедиться, что все снова работает правильно"
+    ]
+  },
+  {
+    "time": [
+      553.996027,
+      557.377987
+    ],
+    "en": [
+      "after we did that little experiment with port security violations"
+    ],
+    "ru": [
+      "после того, как мы провели этот небольшой эксперимент с нарушениями безопасности портов"
+    ]
+  },
+  {
+    "time": [
+      557.377987,
+      561.15042
+    ],
+    "en": [
+      "I'll go on PC one one more time"
+    ],
+    "ru": [
+      "Я пойду на ПК еще раз"
+    ]
+  },
+  {
+    "time": [
+      561.15042,
+      566.333083
+    ],
+    "en": [
+      "ping 192.168.1.12"
+    ],
+    "ru": [
+      "пинг 192.168.1.12"
+    ]
+  },
+  {
+    "time": [
+      566.333083,
+      569.403244
+    ],
+    "en": [
+      "it works"
+    ],
+    "ru": [
+      "оно работает"
+    ]
+  },
+  {
+    "time": [
+      569.403244,
+      571.030848
+    ],
+    "en": [
+      "that's all for this lab"
+    ],
+    "ru": [
+      "это все для этой лаборатории"
+    ]
+  },
+  {
+    "time": [
+      571.030848,
+      576.920964
+    ],
+    "en": [
+      "thank you for watching I hope this lab and video have been helpful for you"
+    ],
+    "ru": [
+      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были для вас полезны."
+    ]
+  },
+  {
+    "time": [
+      576.920964,
+      580.158092
+    ],
+    "en": [
+      "please subscribe for future labs like this"
+    ],
+    "ru": [
+      "пожалуйста, подпишитесь на будущие подобные лаборатории"
+    ]
+  },
+  {
+    "time": [
+      580.158092,
+      581.897222
+    ],
+    "en": [
+      "which will be released weekly"
+    ],
+    "ru": [
+      "который будет выходить еженедельно"
+    ]
+  },
+  {
+    "time": [
+      581.897222,
+      586.600419
+    ],
+    "en": [
+      "if you have requests for any specific labs let me know in the comment section"
+    ],
+    "ru": [
+      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
+    ]
+  },
+  {
+    "time": [
+      586.600419,
+      591.854253
+    ],
+    "en": [
+      "if you want to support my channel please consider contributing to my patreon"
+    ],
+    "ru": [
+      "если вы хотите поддержать мой канал, пожалуйста, подумайте о том, чтобы внести свой вклад в мой patreon"
+    ]
+  },
+  {
+    "time": [
+      591.854253,
+      595.367045
+    ],
+    "en": [
+      "patreon comm slash Jeremy's IT lab"
+    ],
+    "ru": [
+      "patreon comm слэш ИТ-лаборатория Джереми"
+    ]
+  },
+  {
+    "time": [
+      595.367045,
+      600.988519
+    ],
+    "en": [
+      "I accept Bitcoin and aetherium donations via the addresses in the description"
+    ],
+    "ru": [
+      "Я принимаю пожертвования биткойнами и эфириумом по адресам в описании"
+    ]
+  },
+  {
+    "time": [
+      600.988519,
+      609.742551
+    ],
+    "en": [
+      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
+    ],
+    "ru": [
+      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
+    ]
+  },
+  {
+    "time": [
+      609.742551,
+      609.742551
+    ],
+    "en": [
+      ""
+    ],
+    "ru": [
+      ""
+    ]
+  },
+  {
+    "time": [
+      609.742551,
+      609.742551
+    ],
+    "en": [
+      ""
+    ],
+    "ru": [
+      ""
+    ]
+  },
+  {
+    "time": [
+      609.742551,
+      609.742551
+    ],
+    "en": [
+      ""
+    ],
+    "ru": [
+      ""
     ]
   }
 ]

@@ -2,1195 +2,727 @@ let objs = [
   {
     "time": [
       0.0,
-      3.0
+      4.699289
     ],
     "en": [
-      "welcome to this free CCNA packet tracer"
+      "welcome to this free CCNA packet tracer practice lab"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный трассировщик пакетов CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
     ]
   },
   {
     "time": [
-      3.0,
-      6.0
+      4.699289,
+      8.152395
     ],
     "en": [
-      "practice lab you can download the lab"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "Практическая лаборатория вы можете скачать лабораторию"
+      "скачать лабораторный файл можно по ссылке в описании"
     ]
   },
   {
     "time": [
-      6.0,
-      9.0
+      8.152395,
+      14.009599
     ],
     "en": [
-      "file from the link in the description in"
+      "in this lab we will take a look at port security"
     ],
     "ru": [
-      "файл по ссылке в описании в"
+      "в этой лабораторной работе мы рассмотрим безопасность портов."
     ]
   },
   {
     "time": [
-      9.0,
-      12.0
+      14.009599,
+      23.040544
     ],
     "en": [
-      "this lab we will take a look at port"
+      "port security is a security function which can be configured on switch interfaces and controls which MAC addresses are allowed on which interfaces"
     ],
     "ru": [
-      "в этой лаборатории мы рассмотрим порт"
+      "безопасность портов - это функция безопасности, которая может быть настроена на интерфейсах коммутатора и контролирует, какие MAC-адреса разрешены на каких интерфейсах."
     ]
   },
   {
     "time": [
-      12.0,
-      15.0
+      23.040544,
+      32.017483
     ],
     "en": [
-      "security port security is a security"
+      "MAC addresses are 48 bit addresses which are tied to the physical device such as a network interface card on a computer"
     ],
     "ru": [
-      "безопасность порт безопасность - это безопасность"
+      "MAC-адреса - это 48-битные адреса, привязанные к физическому устройству, например сетевой карте на компьютере."
     ]
   },
   {
     "time": [
-      15.0,
-      16.0
+      32.017483,
+      39.973917
     ],
     "en": [
-      "function which can be configured on"
+      "port security allows us to ensure that only the intended devices are allowed to communicate over a given switchboard"
     ],
     "ru": [
-      "функция, которая может быть настроена на"
+      "безопасность портов позволяет нам гарантировать, что только предполагаемым устройствам разрешено связываться через данный коммутатор"
     ]
   },
   {
     "time": [
-      16.0,
-      20.0
+      39.973917,
+      44.447202
     ],
     "en": [
-      "switch interfaces and controls which MAC"
+      "we will do a few labs to practice port security"
     ],
     "ru": [
-      "переключать интерфейсы и контролировать, какой MAC"
+      "мы проведем несколько лабораторных работ, чтобы попрактиковаться в безопасности портов"
     ]
   },
   {
     "time": [
-      20.0,
-      21.0
+      44.447202,
+      53.28906
     ],
     "en": [
-      "addresses are allowed on which"
+      "in this first lab let's look at and configure some basic functions of port security on two switches switch 1 and switch 2"
     ],
     "ru": [
-      "разрешены адреса, на которых"
+      "В этой первой лабораторной работе давайте рассмотрим и настроим некоторые основные функции безопасности портов на двух коммутаторах, коммутаторе 1 и коммутаторе 2."
     ]
   },
   {
     "time": [
-      21.0,
-      25.0
+      53.28906,
+      56.580272
     ],
     "en": [
-      "interfaces MAC addresses are 48 bit"
+      "which each have one pc connected to them"
     ],
     "ru": [
-      "MAC-адреса интерфейсов 48 бит"
+      "к каждому из которых подключен один компьютер"
     ]
   },
   {
     "time": [
-      25.0,
-      28.0
+      56.580272,
+      65.655241
     ],
     "en": [
-      "addresses which are tied to the physical"
+      "try to complete the lab yourself first then continue watching this video if you have trouble or watch it after to check your solution"
     ],
     "ru": [
-      "адреса, привязанные к физическим"
+      "попробуйте сначала выполнить лабораторную работу самостоятельно, а затем продолжайте смотреть это видео, если у вас возникнут проблемы, или просмотрите его после, чтобы проверить свое решение."
     ]
   },
   {
     "time": [
-      28.0,
-      30.0
+      65.655241,
+      75.967893
     ],
     "en": [
-      "device such as a network interface card"
+      "step1 tells us to find the MAC address of switch 2 by using the CLI of switch one and the reverse"
     ],
     "ru": [
-      "устройство, такое как сетевая карта"
+      "step1 говорит нам найти MAC-адрес коммутатора 2 с помощью интерфейса командной строки первого коммутатора и наоборот."
     ]
   },
   {
     "time": [
-      30.0,
-      35.0
+      75.967893,
+      78.431218
     ],
     "en": [
-      "on a computer port security allows us to"
+      "so let's go on switch one first"
     ],
     "ru": [
-      "безопасность порта компьютера позволяет нам"
+      "так что давайте сначала переключим один"
     ]
   },
   {
     "time": [
-      35.0,
-      36.0
+      78.431218,
+      84.380305
     ],
     "en": [
-      "ensure that only the intended devices"
+      "enable use the command show MAC address - table"
     ],
     "ru": [
-      "убедитесь, что только предполагаемые устройства"
+      "включить используйте команду show MAC address - table"
     ]
   },
   {
     "time": [
-      36.0,
-      38.0
+      84.380305,
+      87.886113
     ],
     "en": [
-      "are allowed to communicate over a given"
+      "to display the list of known MAC addresses on the switch"
     ],
     "ru": [
-      "разрешено общаться по заданному"
+      "для отображения списка известных MAC-адресов на коммутаторе"
     ]
   },
   {
     "time": [
-      38.0,
-      42.0
+      87.886113,
+      91.045349
     ],
     "en": [
-      "switchboard we will do a few labs to"
+      "switch one knows one MAC address"
     ],
     "ru": [
-      "коммутатор, мы проведем несколько лабораторных работ, чтобы"
+      "коммутатор знает один MAC-адрес"
     ]
   },
   {
     "time": [
-      42.0,
-      45.0
+      91.045349,
+      96.694927
     ],
     "en": [
-      "practice port security in this first lab"
+      "it's type is dynamic meaning that we didn't manually configure this MAC address"
     ],
     "ru": [
-      "Практикуйте безопасность порта в этой первой лаборатории"
+      "его тип - динамический, что означает, что мы не настраивали этот MAC-адрес вручную."
     ]
   },
   {
     "time": [
-      45.0,
-      48.0
+      96.694927,
+      101.493692
     ],
     "en": [
-      "let's look at and configure some basic"
+      "it was learned by receiving a packet on the port displayed here fastethernet 0/1"
     ],
     "ru": [
-      "давайте посмотрим и настроим некоторые основные"
+      "это было изучено путем получения пакета на порт, отображаемый здесь fastethernet 0/1"
     ]
   },
   {
     "time": [
-      48.0,
-      49.0
+      101.493692,
+      104.168739
     ],
     "en": [
-      "functions of port security on two"
+      "that's the MAC address of switch 2"
     ],
     "ru": [
-      "функции безопасности порта на два"
+      "это MAC-адрес коммутатора 2"
     ]
   },
   {
     "time": [
-      49.0,
-      54.0
+      104.168739,
+      106.370292
     ],
     "en": [
-      "switches switch 1 and switch 2 which"
+      "now let's go on switch 2"
     ],
     "ru": [
-      "переключатели переключатель 1 и переключатель 2, которые"
+      "теперь давайте перейдем к переключателю 2"
     ]
   },
   {
     "time": [
-      54.0,
-      57.0
+      106.370292,
+      111.772827
     ],
     "en": [
-      "each have one pc connected to them try"
+      "enable show MAC address table"
     ],
     "ru": [
-      "у каждого есть один компьютер, подключенный к ним, попробуйте"
+      "включить показывать таблицу MAC-адресов"
     ]
   },
   {
     "time": [
-      57.0,
-      60.0
+      111.772827,
+      115.436638
     ],
     "en": [
-      "to complete the lab yourself first then"
+      "this here is the MAC address of switch 1"
     ],
     "ru": [
-      "сначала самостоятельно завершить лабораторию, а затем"
+      "вот MAC-адрес коммутатора 1"
     ]
   },
   {
     "time": [
-      60.0,
-      61.0
+      115.436638,
+      119.407023
     ],
     "en": [
-      "continue watching this video if you have"
+      "learned dynamically on the fastethernet 0/1 port"
     ],
     "ru": [
-      "продолжайте смотреть это видео, если у вас есть"
+      "динамически обучается на порту fastethernet 0/1"
     ]
   },
   {
     "time": [
-      61.0,
-      64.0
+      119.407023,
+      124.908151
     ],
     "en": [
-      "trouble or watch it after to check your"
+      "step 2 asks us why the MAC addresses of pc1 & pc2"
     ],
     "ru": [
-      "проблемы или посмотрите это позже, чтобы проверить свой"
+      "шаг 2 спрашивает нас, почему MAC-адреса pc1 и pc2"
     ]
   },
   {
     "time": [
-      64.0,
-      68.0
+      124.908151,
+      129.945294
     ],
     "en": [
-      "solution"
+      "don't appear in the MAC address table even though switch 1 and switch to appear in each other's tables"
     ],
     "ru": [
-      "решение"
+      "не отображаются в таблице MAC-адресов, даже если переключатель 1 и переключатель отображаются в таблицах друг друга"
     ]
   },
   {
     "time": [
-      68.0,
-      70.0
+      129.945294,
+      134.28383
     ],
     "en": [
-      "step1 tells us to find the MAC address"
+      "if you have studied spanning tree protocol already"
     ],
     "ru": [
-      "step1 говорит нам найти MAC-адрес"
+      "если вы уже изучили протокол связующего дерева"
     ]
   },
   {
     "time": [
-      70.0,
-      73.0
+      134.28383,
+      140.832676
     ],
     "en": [
-      "of switch to by using the CLI of switch"
+      "you know that switches send each other BPD use bridge protocol data units at regular intervals"
     ],
     "ru": [
-      "переключиться на с помощью интерфейса командной строки переключателя"
+      "вы знаете, что коммутаторы отправляют друг другу BPD, используют блоки данных протокола моста через равные промежутки времени"
     ]
   },
   {
     "time": [
-      73.0,
-      76.0
+      140.832676,
+      145.726325
     ],
     "en": [
-      "one and the reverse so let's go on"
+      "the switches learned each other's MAC addresses via these bpdu packets"
     ],
     "ru": [
-      "один и наоборот, так что давайте продолжим"
+      "коммутаторы узнали MAC-адреса друг друга через эти пакеты bpdu"
     ]
   },
   {
     "time": [
-      76.0,
-      81.0
+      145.726325,
+      150.575194
     ],
     "en": [
-      "switch one first enable use the command"
+      "however no traffic has passed from the PCs to the switches yet"
     ],
     "ru": [
-      "сначала переключитесь, включите, используйте команду"
+      "однако трафик от ПК к коммутаторам еще не прошел"
     ]
   },
   {
     "time": [
-      81.0,
-      85.0
+      150.575194,
+      157.617874
     ],
     "en": [
-      "show MAC address - table to display the"
+      "so they are unaware of the PCs MAC addresses at this point"
     ],
     "ru": [
-      "показать MAC-адрес - таблица для отображения"
+      "поэтому они не знают MAC-адреса ПК на данный момент"
     ]
   },
   {
     "time": [
-      85.0,
-      86.0
+      157.617874,
+      163.540997
     ],
     "en": [
-      "list of known MAC addresses on the"
+      "step3 tells us to ping between the PCs and then check the MAC address tables of the switches"
     ],
     "ru": [
-      "список известных MAC-адресов на"
+      "Шаг 3 говорит нам выполнить эхо-запрос между ПК, а затем проверить таблицы MAC-адресов коммутаторов."
     ]
   },
   {
     "time": [
-      86.0,
-      89.0
+      163.540997,
+      173.224295
     ],
     "en": [
-      "switch switch one knows one"
+      "if we ping between the PCs switch one should have one dynamically learned MAC address on his Fast Ethernet 0 2 port that of PC 1"
     ],
     "ru": [
-      "переключатель переключатель один знает один"
+      "если мы пингуем между коммутаторами ПК, у него должен быть один динамически изученный MAC-адрес на его Fast Ethernet 0 2 порт, что и на ПК 1"
     ]
   },
   {
     "time": [
-      89.0,
-      93.0
+      173.224295,
+      177.64034
     ],
     "en": [
-      "MAC address it's type is dynamic meaning"
+      "and to dynamically learned MAC addresses on his fastethernet 0/1 port"
     ],
     "ru": [
-      "MAC-адрес его тип имеет динамическое значение"
+      "и к динамически изученным MAC-адресам на его порту fastethernet 0/1"
     ]
   },
   {
     "time": [
-      93.0,
-      95.0
+      177.64034,
+      180.232471
     ],
     "en": [
-      "that we didn't manually configure this"
+      "those of switch 2 and PC 2"
     ],
     "ru": [
-      "что мы не настраивали это вручную"
+      "переключателя 2 и ПК 2"
     ]
   },
   {
     "time": [
-      95.0,
-      97.0
+      180.232471,
+      192.59796
     ],
     "en": [
-      "MAC address it was learned by receiving"
+      "likewise switch 2 should have one dynamically learned MAC address on his Fast Ethernet 0 to port that of PC 2 and to dynamically learned MAC addresses on its fastethernet 0/1 port"
     ],
     "ru": [
-      "MAC-адрес был получен при получении"
+      "аналогично коммутатор 2 должен иметь один динамически изученный MAC-адрес на его Fast Ethernet 0 для порта ПК 2 и для динамически изученных MAC-адресов на его порту fastethernet 0/1."
     ]
   },
   {
     "time": [
-      97.0,
-      99.0
+      192.59796,
+      195.063391
     ],
     "en": [
-      "a packet on the port displayed here"
+      "those of switch one and pc 1 so I'll go on PC 1"
     ],
     "ru": [
-      "пакет на порт, отображаемый здесь"
+      "те, что у первого переключателя и ПК 1, так что я пойду на ПК 1"
     ]
   },
   {
     "time": [
-      99.0,
-      102.0
+      195.063391,
+      198.70861
     ],
     "en": [
-      "fastethernet 0/1 that's the MAC address"
+      "and ping PC 2"
     ],
     "ru": [
-      "fastethernet 0/1, это MAC-адрес"
+      "и пинг ПК 2"
     ]
   },
   {
     "time": [
-      102.0,
-      107.0
+      198.70861,
+      206.507604
     ],
     "en": [
-      "of switch - now let's go on switch to"
+      "ping 192.168.1.12"
     ],
     "ru": [
-      "переключателя - теперь перейдем к переключению"
+      "пинг 192.168.1.12"
     ]
   },
   {
     "time": [
-      107.0,
-      113.0
+      206.507604,
+      208.4092
     ],
     "en": [
-      "enable show MAC address table this here"
+      "there we go"
     ],
     "ru": [
-      "включить показать таблицу MAC-адресов здесь"
+      "вот и мы"
     ]
   },
   {
     "time": [
-      113.0,
-      115.0
+      208.4092,
+      210.962676
     ],
     "en": [
-      "is the MAC address of switch 1 learned"
+      "now let's go on switch 1"
     ],
     "ru": [
-      "запрограммирован MAC-адрес коммутатора 1"
+      "теперь давайте перейдем к переключателю 1"
     ]
   },
   {
     "time": [
-      115.0,
-      119.0
+      210.962676,
+      215.263024
     ],
     "en": [
-      "dynamically on the fastethernet 0/1 port"
+      "show MAC address table"
     ],
     "ru": [
-      "динамически на порту fastethernet 0/1"
+      "показать таблицу MAC-адресов"
     ]
   },
   {
     "time": [
-      119.0,
-      122.0
+      215.263024,
+      218.586529
     ],
     "en": [
-      "step 2 asks us why the MAC addresses of"
+      "here is the MAC address of switch 2 we saw before"
     ],
     "ru": [
-      "шаг 2 спрашивает нас, почему MAC-адреса"
+      "вот MAC-адрес коммутатора 2, который мы видели раньше"
     ]
   },
   {
     "time": [
-      122.0,
-      125.0
+      218.586529,
+      224.579024
     ],
     "en": [
-      "pc1 & pc2 don't appear in the MAC"
+      "this other mac address on fastethernet 0/1 must be PC twos"
     ],
     "ru": [
-      "pc1 и pc2 не отображаются в MAC"
+      "этот другой MAC-адрес в fastethernet 0/1 должен быть двойным ПК"
     ]
   },
   {
     "time": [
-      125.0,
-      127.0
+      224.579024,
+      228.828553
     ],
     "en": [
-      "address table even though switch 1 and"
+      "and the MAC address on Fast Ethernet 0 2 must be PC ones"
     ],
     "ru": [
-      "таблица адресов, даже если переключатель 1 и"
+      "а MAC-адрес в Fast Ethernet 0 2 должен быть компьютерным"
     ]
   },
   {
     "time": [
-      127.0,
-      130.0
+      228.828553,
+      232.508461
     ],
     "en": [
-      "switch to appear in each other's tables"
+      "let's check on switch 2 also"
     ],
     "ru": [
-      "переключаться, чтобы появляться в таблицах друг друга"
+      "давайте также проверим переключатель 2"
     ]
   },
   {
     "time": [
-      130.0,
-      132.0
+      232.508461,
+      237.095771
     ],
     "en": [
-      "if you have studied spanning tree"
+      "show MAC address table"
     ],
     "ru": [
-      "если вы изучили остовное дерево"
+      "показать таблицу MAC-адресов"
     ]
   },
   {
     "time": [
-      132.0,
-      134.0
+      237.095771,
+      240.169557
     ],
     "en": [
-      "protocol already you know that switches"
+      "here switch ones MAC address"
     ],
     "ru": [
-      "протокол уже вы знаете, что переключает"
+      "здесь переключите один MAC-адрес"
     ]
   },
   {
     "time": [
-      134.0,
-      137.0
+      240.169557,
+      242.472752
     ],
     "en": [
-      "send each other BPD use bridge protocol"
+      "this one is also on Fast Ethernet 0 1"
     ],
     "ru": [
-      "отправлять друг другу BPD использовать протокол моста"
+      "этот также находится в Fast Ethernet 0 1"
     ]
   },
   {
     "time": [
-      137.0,
-      141.0
+      242.472752,
+      244.94482
     ],
     "en": [
-      "data units at regular intervals the"
+      "so it must be PC ones"
     ],
     "ru": [
-      "блоки данных через равные промежутки времени"
+      "так что это должны быть ПК"
     ]
   },
   {
     "time": [
-      141.0,
-      142.0
+      244.94482,
+      250.006647
     ],
     "en": [
-      "switches learned each other's MAC"
+      "and this MAC address went on Fast Ethernet 0 2 must be PC twos"
     ],
     "ru": [
-      "коммутаторы узнали MAC-адреса друг друга"
+      "и этот MAC-адрес перешел в Fast Ethernet 0 2 должны быть двойными ПК"
     ]
   },
   {
     "time": [
-      142.0,
-      146.0
+      250.006647,
+      257.555683
     ],
     "en": [
-      "addresses via these bpdu packets however"
+      "step four is to enable port security on the switch interfaces connected to PCs"
     ],
     "ru": [
-      "адреса через эти пакеты bpdu, однако"
+      "Шаг четвертый - включить безопасность портов на интерфейсах коммутатора, подключенных к ПК."
     ]
   },
   {
     "time": [
-      146.0,
-      149.0
+      257.555683,
+      260.565966
     ],
     "en": [
-      "no traffic has passed from the PCs to"
+      "so fastethernet 0 2 of each switch"
     ],
     "ru": [
-      "трафик с ПК на"
+      "так fastethernet 0 2 каждого коммутатора"
     ]
   },
   {
     "time": [
-      149.0,
-      151.0
+      260.565966,
+      269.669942
     ],
     "en": [
-      "the switches yet so they are unaware of"
+      "in this lab we will configure the switches so that switch 1 only accepts traffic from PC 1 on its Fast Ethernet 0 2 interface"
     ],
     "ru": [
-      "переключатели еще не знают"
+      "В этой лабораторной работе мы настроим коммутаторы так, чтобы коммутатор 1 принимал трафик только от ПК 1 на своем интерфейсе Fast Ethernet 0 2."
     ]
   },
   {
     "time": [
-      151.0,
-      156.0
+      269.669942,
+      274.372972
     ],
     "en": [
-      "the PCs MAC addresses at this point"
+      "and switch 2 only accepts traffic from PC 2 on its Fast Ethernet 0 2 interface"
     ],
     "ru": [
-      "MAC-адреса ПК на этом этапе"
+      "и коммутатор 2 принимает трафик только от ПК 2 на своем интерфейсе Fast Ethernet 0 2."
     ]
   },
   {
     "time": [
-      156.0,
-      160.0
+      274.372972,
+      279.143081
     ],
     "en": [
-      "step3 tells us to ping between the PCs"
+      "first you must enable it at the interface level"
     ],
     "ru": [
-      "step3 говорит нам пинговать между ПК"
+      "сначала вы должны включить его на уровне интерфейса"
     ]
   },
   {
     "time": [
-      160.0,
-      162.0
+      279.143081,
+      281.146321
     ],
     "en": [
-      "and then check the MAC address tables of"
+      "let's go on switch 1 again"
     ],
     "ru": [
-      "а затем проверьте таблицы MAC-адресов"
+      "давай снова включим выключатель 1"
     ]
   },
   {
     "time": [
-      162.0,
-      165.0
+      281.146321,
+      286.681028
     ],
     "en": [
-      "the switches if we ping between the PCs"
+      "conf t interface f02"
     ],
     "ru": [
-      "переключатели, если мы пингуем между ПК"
+      "conf t interface f02"
     ]
   },
   {
     "time": [
-      165.0,
-      168.0
+      286.681028,
+      292.514561
     ],
     "en": [
-      "switch one should have one dynamically"
+      "you can enable port security with the command switch port port security"
     ],
     "ru": [
-      "переключать нужно иметь один динамически"
+      "вы можете включить безопасность порта с помощью команды switch port port security"
     ]
   },
   {
     "time": [
-      168.0,
-      170.0
+      292.514561,
+      298.154059
     ],
     "en": [
-      "learned MAC address on his Fast Ethernet"
+      "but command rejected Fast Ethernet 0 2 is a dynamic port"
     ],
     "ru": [
-      "узнал MAC-адрес на его Fast Ethernet"
+      "но команда отклонена Fast Ethernet 0 2 - динамический порт"
     ]
   },
   {
     "time": [
-      170.0,
-      173.0
+      298.154059,
+      300.076423
     ],
     "en": [
-      ""
+      "what does this mean"
     ],
     "ru": [
-      ""
+      "Что это значит"
     ]
   },
   {
     "time": [
-      170.0,
-      173.0
+      300.076423,
+      304.979246
     ],
     "en": [
-      ""
+      "well one rule of port security is that it can't be enabled on a trunk port"
     ],
     "ru": [
-      ""
+      "хорошо, одно правило безопасности порта заключается в том, что его нельзя включить на магистральном порту"
     ]
   },
   {
     "time": [
-      173.0,
-      175.0
-    ],
-    "en": [
-      "dynamically learned MAC addresses on his"
-    ],
-    "ru": [
-      "динамически изученные MAC-адреса на его"
-    ]
-  },
-  {
-    "time": [
-      175.0,
-      178.0
-    ],
-    "en": [
-      "fastethernet 0/1 port those of switch 2"
-    ],
-    "ru": [
-      "порт fastethernet 0/1 - порт коммутатора 2"
-    ]
-  },
-  {
-    "time": [
-      178.0,
-      183.0
-    ],
-    "en": [
-      "and PC 2 likewise switch 2 should have"
-    ],
-    "ru": [
-      "и ПК 2 аналогично переключатель 2 должен иметь"
-    ]
-  },
-  {
-    "time": [
-      183.0,
-      185.0
-    ],
-    "en": [
-      "one dynamically learned MAC address on"
-    ],
-    "ru": [
-      "один динамически узнаваемый MAC-адрес на"
-    ]
-  },
-  {
-    "time": [
-      185.0,
-      187.0
-    ],
-    "en": [
-      "his Fast Ethernet 0 to port that of PC 2"
-    ],
-    "ru": [
-      "его Fast Ethernet 0 для порта ПК 2"
-    ]
-  },
-  {
-    "time": [
-      187.0,
-      190.0
-    ],
-    "en": [
-      "and to dynamically learned MAC addresses"
-    ],
-    "ru": [
-      "и на динамически изученные MAC-адреса"
-    ]
-  },
-  {
-    "time": [
-      190.0,
-      193.0
-    ],
-    "en": [
-      "on its fastethernet 0/1 port those of"
-    ],
-    "ru": [
-      "на его порту fastethernet 0/1 те из"
-    ]
-  },
-  {
-    "time": [
-      193.0,
-      196.0
-    ],
-    "en": [
-      "switch one and pc 1 so I'll go on PC 1"
-    ],
-    "ru": [
-      "переключить один и ПК 1, чтобы я пошел на ПК 1"
-    ]
-  },
-  {
-    "time": [
-      196.0,
-      206.0
-    ],
-    "en": [
-      "and ping PC to ping 192.168.1.2 elv"
-    ],
-    "ru": [
-      "и ping PC для ping 192.168.1.2 elv"
-    ]
-  },
-  {
-    "time": [
-      206.0,
-      211.0
-    ],
-    "en": [
-      "there we go now let's go on switch 1"
-    ],
-    "ru": [
-      "Ну вот, теперь давайте перейдем к переключателю 1"
-    ]
-  },
-  {
-    "time": [
-      211.0,
-      216.0
-    ],
-    "en": [
-      "show MAC address table here is the MAC"
-    ],
-    "ru": [
-      "показать таблицу MAC-адресов вот MAC"
-    ]
-  },
-  {
-    "time": [
-      216.0,
-      220.0
-    ],
-    "en": [
-      "address of switch 2 we saw before this"
-    ],
-    "ru": [
-      "адрес коммутатора 2, который мы видели до этого"
-    ]
-  },
-  {
-    "time": [
-      220.0,
-      222.0
-    ],
-    "en": [
-      "other mac address on fastethernet 0/1"
-    ],
-    "ru": [
-      "другой MAC-адрес в fastethernet 0/1"
-    ]
-  },
-  {
-    "time": [
-      222.0,
-      225.0
-    ],
-    "en": [
-      "must be PC twos and the MAC address on"
-    ],
-    "ru": [
-      "должны быть два компьютера и MAC-адрес на"
-    ]
-  },
-  {
-    "time": [
-      225.0,
-      230.0
-    ],
-    "en": [
-      "Fast Ethernet 0 2 must be PC ones let's"
-    ],
-    "ru": [
-      "Fast Ethernet 0 2 должен быть ПК, давайте"
-    ]
-  },
-  {
-    "time": [
-      230.0,
-      236.0
-    ],
-    "en": [
-      "check on switch to also show MAC address"
-    ],
-    "ru": [
-      "установите переключатель, чтобы также показать MAC-адрес"
-    ]
-  },
-  {
-    "time": [
-      236.0,
-      240.0
-    ],
-    "en": [
-      "table here switch ones MAC address this"
-    ],
-    "ru": [
-      "таблица здесь переключить один MAC-адрес это"
-    ]
-  },
-  {
-    "time": [
-      240.0,
-      243.0
-    ],
-    "en": [
-      "one is also on Fast Ethernet 0 1 so it"
-    ],
-    "ru": [
-      "один также находится в Fast Ethernet 0 1, поэтому он"
-    ]
-  },
-  {
-    "time": [
-      243.0,
-      246.0
-    ],
-    "en": [
-      "must be PC ones and this MAC address"
-    ],
-    "ru": [
-      "должны быть ПК и этот MAC-адрес"
-    ]
-  },
-  {
-    "time": [
-      246.0,
-      248.0
-    ],
-    "en": [
-      "went on Fast Ethernet 0 2 must be PC"
-    ],
-    "ru": [
-      "перешел на Fast Ethernet 0 2 должен быть ПК"
-    ]
-  },
-  {
-    "time": [
-      248.0,
-      251.0
-    ],
-    "en": [
-      "twos"
-    ],
-    "ru": [
-      "двое"
-    ]
-  },
-  {
-    "time": [
-      251.0,
-      254.0
-    ],
-    "en": [
-      "step four is to enable port security on"
-    ],
-    "ru": [
-      "Шаг четвертый - включить безопасность порта на"
-    ]
-  },
-  {
-    "time": [
-      254.0,
-      256.0
-    ],
-    "en": [
-      "the switch interfaces connected to PCs"
-    ],
-    "ru": [
-      "интерфейсы коммутатора, подключенные к ПК"
-    ]
-  },
-  {
-    "time": [
-      256.0,
-      262.0
-    ],
-    "en": [
-      "so fastethernet 0 2 of each switch in"
-    ],
-    "ru": [
-      "так fastethernet 0 2 каждого коммутатора в"
-    ]
-  },
-  {
-    "time": [
-      262.0,
-      263.0
-    ],
-    "en": [
-      "this lab we will configure the switches"
-    ],
-    "ru": [
-      "в этой лабораторной работе мы настроим переключатели"
-    ]
-  },
-  {
-    "time": [
-      263.0,
-      265.0
-    ],
-    "en": [
-      "so that switch 1 only accepts traffic"
-    ],
-    "ru": [
-      "так что коммутатор 1 принимает только трафик"
-    ]
-  },
-  {
-    "time": [
-      265.0,
-      268.0
-    ],
-    "en": [
-      "from PC 1 on its Fast Ethernet 0 2"
-    ],
-    "ru": [
-      "с ПК 1 на его Fast Ethernet 0 2"
-    ]
-  },
-  {
-    "time": [
-      268.0,
-      270.0
-    ],
-    "en": [
-      "interface and switch 2 only accepts"
-    ],
-    "ru": [
-      "интерфейс и переключатель 2 принимает только"
-    ]
-  },
-  {
-    "time": [
-      270.0,
-      273.0
-    ],
-    "en": [
-      "traffic from PC 2 on its Fast Ethernet 0"
-    ],
-    "ru": [
-      "трафик от ПК 2 по его Fast Ethernet 0"
-    ]
-  },
-  {
-    "time": [
-      273.0,
-      277.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      273.0,
-      277.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      277.0,
-      280.0
-    ],
-    "en": [
-      "the interface level let's go on switch 1"
-    ],
-    "ru": [
-      "уровень интерфейса давайте перейдем к переключателю 1"
-    ]
-  },
-  {
-    "time": [
-      280.0,
-      287.0
-    ],
-    "en": [
-      "again count 50 interface f02 you can"
-    ],
-    "ru": [
-      "снова посчитать 50 интерфейс f02 можно"
-    ]
-  },
-  {
-    "time": [
-      287.0,
-      289.0
-    ],
-    "en": [
-      "enable port security with the command"
-    ],
-    "ru": [
-      "включить безопасность порта с помощью команды"
-    ]
-  },
-  {
-    "time": [
-      289.0,
-      294.0
-    ],
-    "en": [
-      "switch port port security but command"
-    ],
-    "ru": [
-      "безопасность порта порта коммутатора, но команда"
-    ]
-  },
-  {
-    "time": [
-      294.0,
-      297.0
-    ],
-    "en": [
-      "rejected Fast Ethernet 0 2 is a dynamic"
-    ],
-    "ru": [
-      "отклонено Fast Ethernet 0 2 является динамическим"
-    ]
-  },
-  {
-    "time": [
-      297.0,
-      300.0
-    ],
-    "en": [
-      "port what does this mean well one rule"
-    ],
-    "ru": [
-      "порт что это значит хорошо одно правило"
-    ]
-  },
-  {
-    "time": [
-      300.0,
-      302.0
-    ],
-    "en": [
-      "of port security is that it can't be"
-    ],
-    "ru": [
-      "безопасности порта в том, что этого не может быть"
-    ]
-  },
-  {
-    "time": [
-      302.0,
-      304.0
-    ],
-    "en": [
-      "enabled on a trunk port"
-    ],
-    "ru": [
-      "включен на магистральном порту"
-    ]
-  },
-  {
-    "time": [
-      304.0,
-      307.0
+      304.979246,
+      307.715738
     ],
     "en": [
       "it can only be enabled on an access port"
@@ -1201,272 +733,224 @@ let objs = [
   },
   {
     "time": [
-      307.0,
-      310.0
+      307.715738,
+      312.249528
     ],
     "en": [
-      "although this switch port is currently"
+      "although this switch port is currently functioning as an access port"
     ],
     "ru": [
-      "хотя этот порт коммутатора в настоящее время"
+      "хотя этот порт коммутатора в настоящее время функционирует как порт доступа"
     ]
   },
   {
     "time": [
-      310.0,
-      312.0
+      312.249528,
+      314.07877
     ],
     "en": [
-      "functioning as an access port it's"
+      "it's actually in dynamic mode"
     ],
     "ru": [
-      "функционирует как порт доступа, это"
+      "это на самом деле в динамическом режиме"
     ]
   },
   {
     "time": [
-      312.0,
-      314.0
+      314.07877,
+      318.593697
     ],
     "en": [
-      "actually in dynamic mode meaning that if"
+      "meaning that if it were to be connected to a switch port configured as a trunk"
     ],
     "ru": [
-      "фактически в динамическом режиме, что означает, что если"
+      "это означает, что если бы он был подключен к порту коммутатора, настроенному как магистраль"
     ]
   },
   {
     "time": [
-      314.0,
-      316.0
+      318.593697,
+      320.614636
     ],
     "en": [
-      "it were to be connected to a switch port"
+      "it would start functioning as a trunk"
     ],
     "ru": [
-      "он должен был быть подключен к порту коммутатора"
+      "он начал бы функционировать как ствол"
     ]
   },
   {
     "time": [
-      316.0,
-      318.0
+      320.614636,
+      327.059255
     ],
     "en": [
-      "configured as a trunk it would start"
+      "the switch board has to be explicitly configured as an access port if you want to enable port security on it"
     ],
     "ru": [
-      "настроен как транк, он запустится"
+      "плата коммутатора должна быть явно настроена как порт доступа, если вы хотите включить на ней безопасность порта."
     ]
   },
   {
     "time": [
-      318.0,
-      321.0
+      327.059255,
+      330.479739
     ],
     "en": [
-      "functioning as a trunk the switch board"
+      "so switch port mode access"
     ],
     "ru": [
-      "функционирует как магистраль распределительный щит"
+      "так что переключить режим порта доступа"
     ]
   },
   {
     "time": [
-      321.0,
-      323.0
+      330.479739,
+      333.329003
     ],
     "en": [
-      "has to be explicitly configured as an"
+      "switch port port security"
     ],
     "ru": [
-      "должен быть явно настроен как"
+      "безопасность порта порта коммутатора"
     ]
   },
   {
     "time": [
-      323.0,
-      325.0
+      333.329003,
+      334.967179
     ],
     "en": [
-      "access port if you want to enable port"
+      "that's it"
     ],
     "ru": [
-      "доступ к порту, если вы хотите включить порт"
+      "это оно"
     ]
   },
   {
     "time": [
-      325.0,
-      329.0
+      334.967179,
+      337.153457
     ],
     "en": [
-      "security on it so switch port mode"
+      "let's go on switch to now"
     ],
     "ru": [
-      "безопасность на нем, поэтому переключите режим порта"
+      "давай перейдем к сейчас"
     ]
   },
   {
     "time": [
-      329.0,
-      333.0
+      337.153457,
+      342.877647
     ],
     "en": [
-      "access switch port port security that's"
+      "conf t interface f02"
     ],
     "ru": [
-      "доступ к коммутатору порта безопасности порта, который"
+      "conf t interface f02"
     ]
   },
   {
     "time": [
-      333.0,
-      340.0
+      342.877647,
+      345.410618
     ],
     "en": [
-      "it let's go on switch to now compte"
+      "switch port mode access"
     ],
     "ru": [
-      "это давайте перейдем к сейчас compte"
+      "переключатель режима порта доступа"
     ]
   },
   {
     "time": [
-      340.0,
-      345.0
+      345.410618,
+      348.367851
     ],
     "en": [
-      "interface f02 switch port mode access"
+      "switch port port security"
     ],
     "ru": [
-      "интерфейс f02 переключатель режима порта доступа"
+      "безопасность порта порта коммутатора"
     ]
   },
   {
     "time": [
-      345.0,
-      349.0
+      348.367851,
+      352.069008
     ],
     "en": [
-      "switch port port security that's all you"
+      "that's all you have to do to initially configure port security"
     ],
     "ru": [
-      "коммутатор порт безопасность порта это все, что вам нужно"
+      "это все, что вам нужно сделать для первоначальной настройки безопасности порта"
     ]
   },
   {
     "time": [
-      349.0,
-      351.0
+      352.069008,
+      360.922013
     ],
     "en": [
-      "have to do to initially configure port"
+      "Step five first asks us how many MAC addresses are allowed on a port security interface by default"
     ],
     "ru": [
-      "необходимо сделать для первоначальной настройки порта"
+      "На пятом шаге нас сначала спрашивают, сколько MAC-адресов разрешено в интерфейсе безопасности порта по умолчанию."
     ]
   },
   {
     "time": [
-      351.0,
-      353.0
+      360.922013,
+      364.090269
     ],
     "en": [
-      "security"
+      "well let's use a show command to find out"
     ],
     "ru": [
-      "безопасность"
+      "ну давайте воспользуемся командой show, чтобы узнать"
     ]
   },
   {
     "time": [
-      353.0,
-      356.0
+      364.090269,
+      367.590037
     ],
     "en": [
-      "Step five first asks us how many MAC"
+      "since we're already on switch to let's start here"
     ],
     "ru": [
-      "На пятом шаге нас сначала спрашивают, сколько MAC"
+      "так как мы уже на переходе, давайте начнем здесь"
     ]
   },
   {
     "time": [
-      356.0,
-      358.0
+      367.590037,
+      371.052023
     ],
     "en": [
-      "addresses are allowed on a port security"
+      "do show port security"
     ],
     "ru": [
-      "адреса разрешены в безопасности порта"
+      "показывать безопасность порта"
     ]
   },
   {
     "time": [
-      358.0,
-      360.0
+      371.052023,
+      374.375812
     ],
     "en": [
-      "interface by default"
+      "look here next to fast ethernet zero 2"
     ],
     "ru": [
-      "интерфейс по умолчанию"
+      "посмотрите здесь рядом с Fast Ethernet Zero 2"
     ]
   },
   {
     "time": [
-      360.0,
-      363.0
-    ],
-    "en": [
-      "well let's use a show command to find"
-    ],
-    "ru": [
-      "ну давайте воспользуемся командой show, чтобы найти"
-    ]
-  },
-  {
-    "time": [
-      363.0,
-      366.0
-    ],
-    "en": [
-      "out since we're already on switch to"
-    ],
-    "ru": [
-      "из-за того, что мы уже находимся на переключении на"
-    ]
-  },
-  {
-    "time": [
-      366.0,
-      370.0
-    ],
-    "en": [
-      "let's start here do show port security"
-    ],
-    "ru": [
-      "давайте начнем здесь, покажем безопасность порта"
-    ]
-  },
-  {
-    "time": [
-      370.0,
-      374.0
-    ],
-    "en": [
-      "look here next to fast ethernet zero to"
-    ],
-    "ru": [
-      "посмотрите здесь, рядом с Fast Ethernet от нуля до"
-    ]
-  },
-  {
-    "time": [
-      374.0,
-      377.0
+      374.375812,
+      377.251818
     ],
     "en": [
       "the max secure address count is 1"
@@ -1477,116 +961,80 @@ let objs = [
   },
   {
     "time": [
-      377.0,
-      380.0
+      377.251818,
+      379.574617
     ],
     "en": [
-      "remember that for the test that is the"
+      "remember that for the test"
     ],
     "ru": [
-      "помните, что для теста это"
+      "запомни это для теста"
     ]
   },
   {
     "time": [
-      380.0,
-      382.0
+      379.574617,
+      383.859935
     ],
     "en": [
-      "default number of MAC addresses allowed"
+      "that is the default number of MAC addresses allowed on the switchboard"
     ],
     "ru": [
-      "количество разрешенных MAC-адресов по умолчанию"
+      "это количество MAC-адресов по умолчанию, разрешенных на коммутаторе"
     ]
   },
   {
     "time": [
-      382.0,
-      385.0
+      383.859935,
+      389.278041
     ],
     "en": [
-      "on the switchboard because this is the"
+      "because this is the default we don't technically have to configure this"
     ],
     "ru": [
-      "на распределительном щите, потому что это"
+      "потому что это значение по умолчанию, нам технически не нужно настраивать это"
     ]
   },
   {
     "time": [
-      385.0,
-      387.0
+      389.278041,
+      394.529272
     ],
     "en": [
-      "default we don't technically have to"
+      "however it's often a good idea to configure important settings like this just to be sure"
     ],
     "ru": [
-      "по умолчанию мы технически не обязаны"
+      "однако часто бывает полезно настроить такие важные параметры, чтобы быть уверенным"
     ]
   },
   {
     "time": [
-      387.0,
-      390.0
+      394.529272,
+      398.200707
     ],
     "en": [
-      "configure this however it's often a good"
+      "and for our purposes it's good to go through the motions to practice"
     ],
     "ru": [
-      "настройте это, но часто это хорошо"
+      "и для наших целей хорошо пройти через движения, чтобы попрактиковаться"
     ]
   },
   {
     "time": [
-      390.0,
-      392.0
+      398.200707,
+      400.627074
     ],
     "en": [
-      "idea to configure important settings"
+      "so use this command"
     ],
     "ru": [
-      "идея настроить важные параметры"
+      "так что используйте эту команду"
     ]
   },
   {
     "time": [
-      392.0,
-      394.0
-    ],
-    "en": [
-      "like this just to be sure and for our"
-    ],
-    "ru": [
-      "как это на всякий случай и для наших"
-    ]
-  },
-  {
-    "time": [
-      394.0,
-      396.0
-    ],
-    "en": [
-      "purposes it's good to go through the"
-    ],
-    "ru": [
-      "целей хорошо пройти через"
-    ]
-  },
-  {
-    "time": [
-      396.0,
-      399.0
-    ],
-    "en": [
-      "motions to practice so use this command"
-    ],
-    "ru": [
-      "движения для практики, поэтому используйте эту команду"
-    ]
-  },
-  {
-    "time": [
-      399.0,
-      404.0
+      400.627074,
+      404.61179
     ],
     "en": [
       "switch port port security maximum one"
@@ -1597,416 +1045,272 @@ let objs = [
   },
   {
     "time": [
-      404.0,
-      409.0
+      404.61179,
+      407.692691
     ],
     "en": [
-      "now let's do it on switch 1 to switch"
+      "now let's do it on switch 1 2"
     ],
     "ru": [
-      "теперь давайте сделаем это на переключателе 1, чтобы переключить"
+      "теперь давайте сделаем это на переключателе 1 2"
     ]
   },
   {
     "time": [
-      409.0,
-      414.0
+      407.692691,
+      413.597907
     ],
     "en": [
-      "port port security maximum 1 that's all"
+      "switch port port security maximum 1"
     ],
     "ru": [
-      "порт безопасность порта максимум 1 вот и все"
+      "порт коммутатора безопасность порта максимум 1"
     ]
   },
   {
     "time": [
-      414.0,
-      417.0
+      413.597907,
+      415.554281
     ],
     "en": [
-      "for step 5"
+      "that's all for step 5"
     ],
     "ru": [
-      "для шага 5"
+      "это все для шага 5"
     ]
   },
   {
     "time": [
-      417.0,
-      421.0
+      415.554281,
+      420.566403
     ],
     "en": [
-      "step six asks us another question what"
+      "step six asks us another question"
     ],
     "ru": [
-      "Шаг шестой задает нам еще один вопрос, что"
+      "Шаг шестой задает нам еще один вопрос"
     ]
   },
   {
     "time": [
-      421.0,
-      422.0
+      420.566403,
+      425.403929
     ],
     "en": [
-      "is the default action in the event of a"
+      "what is the default action in the event of a port security violation"
     ],
     "ru": [
-      "является действием по умолчанию в случае"
+      "каково действие по умолчанию в случае нарушения безопасности порта"
     ]
   },
   {
     "time": [
-      422.0,
-      426.0
+      425.403929,
+      433.673372
     ],
     "en": [
-      "port security violation of course when"
+      "of course when we configure port security there has to be some action that the switch takes in the event that the rules we configured are violated"
     ],
     "ru": [
-      "нарушение безопасности порта, конечно, когда"
+      "конечно, когда мы настраиваем безопасность порта, коммутатор должен выполнять какие-то действия в случае нарушения настроенных нами правил."
     ]
   },
   {
     "time": [
-      426.0,
-      428.0
+      433.673372,
+      436.351025
     ],
     "en": [
-      "we configure port security there has to"
+      "there are three possibilities"
     ],
     "ru": [
-      "мы настраиваем безопасность порта там должен"
+      "есть три возможности"
     ]
   },
   {
     "time": [
-      428.0,
-      430.0
+      436.351025,
+      438.567464
     ],
     "en": [
-      "be some action that the switch takes in"
+      "the first is protect"
     ],
     "ru": [
-      "быть каким-то действием, которое выполняет переключатель"
+      "первая защита"
     ]
   },
   {
     "time": [
-      430.0,
-      432.0
+      438.567464,
+      443.268101
     ],
     "en": [
-      "the event that the rules we configured"
+      "which drops traffic from any MAC addresses which are not allowed on the port"
     ],
     "ru": [
-      "событие, которое мы настроили правила"
+      "который сбрасывает трафик с любых MAC-адресов, которые не разрешены на порту"
     ]
   },
   {
     "time": [
-      432.0,
-      434.0
+      443.268101,
+      448.258578
     ],
     "en": [
-      "are violated there are three"
+      "that's it it doesn't shut down the interface or display any messages"
     ],
     "ru": [
-      "нарушены есть три"
+      "вот и все, он не закрывает интерфейс и не отображает никаких сообщений"
     ]
   },
   {
     "time": [
-      434.0,
-      435.0
+      448.258578,
+      452.163884
     ],
     "en": [
-      "possibilities"
+      "it doesn't even increase the violation counter that the switch keeps"
     ],
     "ru": [
-      "возможности"
+      "он даже не увеличивает счетчик нарушений, который поддерживает переключатель"
     ]
   },
   {
     "time": [
-      435.0,
-      439.0
+      452.163884,
+      455.362967
     ],
     "en": [
-      "the first is protect which drops traffic"
+      "the second option is restrict"
     ],
     "ru": [
-      "первый - защита, которая сбрасывает трафик"
+      "второй вариант - ограничить"
     ]
   },
   {
     "time": [
-      439.0,
-      441.0
+      455.362967,
+      459.479384
     ],
     "en": [
-      "from any MAC addresses which are not"
+      "which again drops all traffic from MAC addresses which aren't allowed"
     ],
     "ru": [
-      "с любых MAC-адресов, которые не"
+      "который снова отбрасывает весь трафик с MAC-адресов, которые не разрешены"
     ]
   },
   {
     "time": [
-      441.0,
-      445.0
+      459.479384,
+      463.852395
     ],
     "en": [
-      "allowed on the port that's it it doesn't"
+      "it also displays a message on the switch and increases the violation counter on the switch"
     ],
     "ru": [
-      "разрешено на порте, это не так"
+      "он также отображает сообщение на переключателе и увеличивает счетчик нарушений на переключателе"
     ]
   },
   {
     "time": [
-      445.0,
-      447.0
+      463.852395,
+      468.093768
     ],
     "en": [
-      "shut down the interface or display any"
+      "the third one is shut down"
     ],
     "ru": [
-      "выключить интерфейс или отобразить любой"
+      "третий выключен"
     ]
   },
   {
     "time": [
-      447.0,
-      449.0
+      468.093768,
+      475.972885
     ],
     "en": [
-      "messages it doesn't even increase the"
+      "which puts the switchboard into an error disabled state effectively shutting down the interface as well as increasing the violation counter"
     ],
     "ru": [
-      "сообщения это даже не увеличивает"
+      "который переводит коммутатор в состояние отключения из-за ошибки, эффективно закрывая интерфейс, а также увеличивая счетчик нарушений."
     ]
   },
   {
     "time": [
-      449.0,
-      452.0
+      475.972885,
+      480.200904
     ],
     "en": [
-      "violation counter that the switch keeps"
+      "make sure you know the differences between these three for the test"
     ],
     "ru": [
-      "счетчик нарушений, который держит переключатель"
+      "убедитесь, что вы знаете разницу между этими тремя для теста"
     ]
   },
   {
     "time": [
-      452.0,
-      455.0
+      480.200904,
+      485.355473
     ],
     "en": [
-      "the second option is restrict which"
+      "now as for which one is the default we can use the same command as before"
     ],
     "ru": [
-      "второй вариант - ограничение, которое"
+      "Теперь, что касается того, какой из них используется по умолчанию, мы можем использовать ту же команду, что и раньше"
     ]
   },
   {
     "time": [
-      455.0,
-      457.0
+      485.355473,
+      488.480845
     ],
     "en": [
-      "again drops all traffic from MAC"
+      "do show port security"
     ],
     "ru": [
-      "снова сбрасывает весь трафик с MAC"
+      "показывать безопасность порта"
     ]
   },
   {
     "time": [
-      457.0,
-      460.0
+      488.480845,
+      493.830381
     ],
     "en": [
-      "addresses which aren't allowed it also"
+      "here at the end under security action it says shutdown"
     ],
     "ru": [
-      "адреса, которые не разрешены"
+      "здесь, в конце, под действием безопасности говорится, что выключение"
     ]
   },
   {
     "time": [
-      460.0,
-      461.0
+      493.830381,
+      496.035242
     ],
     "en": [
-      "displays a message on the switch and"
+      "so there's our answer"
     ],
     "ru": [
-      "отображает сообщение на переключателе и"
+      "так вот наш ответ"
     ]
   },
   {
     "time": [
-      461.0,
-      463.0
+      496.035242,
+      499.762644
     ],
     "en": [
-      "increases the violation counter on the"
+      "the default port security violation action is shut down"
     ],
     "ru": [
-      "увеличивает счетчик нарушений на"
+      "действие нарушения безопасности порта по умолчанию отключено"
     ]
   },
   {
     "time": [
-      463.0,
-      468.0
-    ],
-    "en": [
-      "switch the third one is shut down which"
-    ],
-    "ru": [
-      "выключить третий выключен, который"
-    ]
-  },
-  {
-    "time": [
-      468.0,
-      469.0
-    ],
-    "en": [
-      "puts the switchboard into an error"
-    ],
-    "ru": [
-      "переводит коммутатор в состояние ошибки"
-    ]
-  },
-  {
-    "time": [
-      469.0,
-      472.0
-    ],
-    "en": [
-      "disabled state effectively shutting down"
-    ],
-    "ru": [
-      "отключенное состояние, эффективное отключение"
-    ]
-  },
-  {
-    "time": [
-      472.0,
-      474.0
-    ],
-    "en": [
-      "the interface as well as increasing the"
-    ],
-    "ru": [
-      "интерфейс, а также увеличение"
-    ]
-  },
-  {
-    "time": [
-      474.0,
-      477.0
-    ],
-    "en": [
-      "violation counter make sure you know the"
-    ],
-    "ru": [
-      "счетчик нарушений убедитесь, что вы знаете"
-    ]
-  },
-  {
-    "time": [
-      477.0,
-      479.0
-    ],
-    "en": [
-      "differences between these three for the"
-    ],
-    "ru": [
-      "различия между этими тремя для"
-    ]
-  },
-  {
-    "time": [
-      479.0,
-      482.0
-    ],
-    "en": [
-      "test now as for which one is the default"
-    ],
-    "ru": [
-      "проверьте сейчас, какой из них используется по умолчанию"
-    ]
-  },
-  {
-    "time": [
-      482.0,
-      486.0
-    ],
-    "en": [
-      "we can use the same command as before do"
-    ],
-    "ru": [
-      "мы можем использовать ту же команду, что и раньше do"
-    ]
-  },
-  {
-    "time": [
-      486.0,
-      491.0
-    ],
-    "en": [
-      "show port security here at the end under"
-    ],
-    "ru": [
-      "показать безопасность порта здесь, в конце под"
-    ]
-  },
-  {
-    "time": [
-      491.0,
-      494.0
-    ],
-    "en": [
-      "security action it says shutdown so"
-    ],
-    "ru": [
-      "Действие безопасности говорит о выключении, так что"
-    ]
-  },
-  {
-    "time": [
-      494.0,
-      496.0
-    ],
-    "en": [
-      "there's our answer the default port"
-    ],
-    "ru": [
-      "вот наш ответ порт по умолчанию"
-    ]
-  },
-  {
-    "time": [
-      496.0,
-      499.0
-    ],
-    "en": [
-      "security violation action is shut down"
-    ],
-    "ru": [
-      "действие нарушения безопасности отключено"
-    ]
-  },
-  {
-    "time": [
-      499.0,
-      502.0
+      499.762644,
+      502.717647
     ],
     "en": [
       "another thing to remember for the test"
@@ -2017,362 +1321,290 @@ let objs = [
   },
   {
     "time": [
-      502.0,
-      505.0
+      502.717647,
+      507.384602
     ],
     "en": [
-      "again even though this is default let's"
+      "again even though this is default let's go through the command to configure it"
     ],
     "ru": [
-      "снова, хотя это по умолчанию, давайте"
+      "снова, хотя это по умолчанию, давайте рассмотрим команду, чтобы настроить его"
     ]
   },
   {
     "time": [
-      505.0,
-      507.0
+      507.384602,
+      511.645665
     ],
     "en": [
-      "go through the command to configure it"
+      "switch port port security violation"
     ],
     "ru": [
-      "пройдите команду, чтобы настроить его"
+      "нарушение безопасности порта порта коммутатора"
     ]
   },
   {
     "time": [
-      507.0,
-      511.0
+      511.645665,
+      514.422873
     ],
     "en": [
-      "switch port port security violation now"
+      "now I'll use the question mark to show you the options"
     ],
     "ru": [
-      "нарушение безопасности порта порта коммутатора сейчас"
+      "теперь я использую вопросительный знак, чтобы показать вам варианты"
     ]
   },
   {
     "time": [
-      511.0,
-      513.0
+      514.422873,
+      519.33388
     ],
     "en": [
-      "I'll use the question mark to show you"
+      "here are the three options I mentioned earlier protect restrict shutdown"
     ],
     "ru": [
-      "Я использую вопросительный знак, чтобы показать вам"
+      "вот три варианта, о которых я упоминал ранее, защита ограничить выключение"
     ]
   },
   {
     "time": [
-      513.0,
-      516.0
+      519.33388,
+      522.377044
     ],
     "en": [
-      "the options here are the three options I"
+      "let's go with the default of shutdown"
     ],
     "ru": [
-      "варианты здесь три варианта I"
+      "пойдем с выключением по умолчанию"
     ]
   },
   {
     "time": [
-      516.0,
-      518.0
+      522.377044,
+      525.418085
     ],
     "en": [
-      "mentioned earlier protect restrict"
+      "now on switch 2"
     ],
     "ru": [
-      "упоминалось ранее защитить ограничение"
+      "сейчас на переключателе 2"
     ]
   },
   {
     "time": [
-      518.0,
-      521.0
+      525.418085,
+      530.725256
     ],
     "en": [
-      "shutdown let's go with the default of"
+      "switch port port security violation shutdown"
     ],
     "ru": [
-      "выключение по умолчанию"
+      "выключение нарушения безопасности порта порта коммутатора"
     ]
   },
   {
     "time": [
-      521.0,
-      527.0
+      530.725256,
+      535.754121
     ],
     "en": [
-      "shutdown now on switch to switch port"
+      "the steps are all complete"
     ],
     "ru": [
-      "выключение сейчас при переключении на порт переключения"
+      "все шаги завершены"
     ]
   },
   {
     "time": [
-      527.0,
-      533.0
+      535.754121,
+      537.849143
     ],
     "en": [
-      "port security violation shutdown"
+      "but I want to show one more thing"
     ],
     "ru": [
-      "отключение нарушения безопасности порта"
+      "но я хочу показать еще одну вещь"
     ]
   },
   {
     "time": [
-      533.0,
-      536.0
+      537.849143,
+      540.805393
     ],
     "en": [
-      "the steps are all complete but I want to"
+      "let me ping from pc1 to pc2 again"
     ],
     "ru": [
-      "все шаги выполнены, но я хочу"
+      "позвольте мне снова пинговать с ПК1 на ПК2"
     ]
   },
   {
     "time": [
-      536.0,
-      539.0
+      540.805393,
+      545.294897
     ],
     "en": [
-      "show one more thing let me ping from pc1"
+      "ping 192.168.1.12"
     ],
     "ru": [
-      "покажи еще одну вещь, позволь мне пинговать с ПК1"
+      "пинг 192.168.1.12"
     ]
   },
   {
     "time": [
-      539.0,
-      546.0
+      545.294897,
+      548.308731
     ],
     "en": [
-      "to pc2 again ping 192.168.1 12 now I'll"
+      "now I'll go on switch 1"
     ],
     "ru": [
-      "к pc2 снова пинг 192.168.1 12 сейчас я"
+      "сейчас я пойду на выключатель 1"
     ]
   },
   {
     "time": [
-      546.0,
-      551.0
+      548.308731,
+      553.169438
     ],
     "en": [
-      "go on switch 1 and show port security"
+      "and show port security address"
     ],
     "ru": [
-      "перейти на коммутатор 1 и показать безопасность порта"
+      "и показать адрес безопасности порта"
     ]
   },
   {
     "time": [
-      551.0,
-      555.0
+      553.169438,
+      558.08966
     ],
     "en": [
-      "address as you can see this command"
+      "as you can see this command shows the MAC address of PC 1"
     ],
     "ru": [
-      "адрес, как вы можете видеть эту команду"
+      "как вы можете видеть, эта команда показывает MAC-адрес ПК 1"
     ]
   },
   {
     "time": [
-      555.0,
-      558.0
+      558.08966,
+      563.979211
     ],
     "en": [
-      "shows the MAC address of PC 1 which"
+      "which switch one has dynamically added as a secure MAC address on Fast Ethernet 0 2"
     ],
     "ru": [
-      "показывает MAC-адрес ПК 1, который"
+      "какой коммутатор динамически добавлен в качестве безопасного MAC-адреса в Fast Ethernet 0 2"
     ]
   },
   {
     "time": [
-      558.0,
-      560.0
+      563.979211,
+      566.561802
     ],
     "en": [
-      "switch one has dynamically added as a"
+      "that's all for this lab"
     ],
     "ru": [
-      "переключатель один динамически добавлен как"
+      "это все для этой лаборатории"
     ]
   },
   {
     "time": [
-      560.0,
-      564.0
+      566.561802,
+      572.326026
     ],
     "en": [
-      "secure MAC address on Fast Ethernet 0 -"
+      "thank you for watching I hope this lab and video have been helpful for you"
     ],
     "ru": [
-      "безопасный MAC-адрес в Fast Ethernet 0 -"
+      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были для вас полезны."
     ]
   },
   {
     "time": [
-      564.0,
-      568.0
+      572.326026,
+      577.17055
     ],
     "en": [
-      "that's all for this lab thank you for"
+      "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "это все для этой лаборатории, спасибо за"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {
     "time": [
-      568.0,
-      570.0
+      577.17055,
+      581.893449
     ],
     "en": [
-      "watching I hope this lab and video have"
+      "if you have requests for any specific labs let me know in the comment section"
     ],
     "ru": [
-      "смотрю, надеюсь, эта лаборатория и видео"
+      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
     ]
   },
   {
     "time": [
-      570.0,
-      573.0
+      581.893449,
+      588.9288
     ],
     "en": [
-      "been helpful for you please subscribe"
+      "if you want to support my channel I accept Bitcoin and etherion donations via the addresses in the description"
     ],
     "ru": [
-      "был полезным для вас, пожалуйста, подпишитесь"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфиром по адресам в описании"
     ]
   },
   {
     "time": [
-      573.0,
-      575.0
+      588.9288,
+      597.311715
     ],
     "en": [
-      "for future labs like this which will be"
+      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
     ],
     "ru": [
-      "для будущих лабораторий, подобных этой, которые будут"
+      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
     ]
   },
   {
     "time": [
-      575.0,
-      578.0
+      597.311715,
+      597.311715
     ],
     "en": [
-      "released weekly if you have requests for"
+      ""
     ],
     "ru": [
-      "выпускается еженедельно, если у вас есть запросы на"
+      ""
     ]
   },
   {
     "time": [
-      578.0,
-      580.0
+      597.311715,
+      597.311715
     ],
     "en": [
-      "any specific labs let me know in the"
+      ""
     ],
     "ru": [
-      "любые конкретные лаборатории дайте мне знать в"
+      ""
     ]
   },
   {
     "time": [
-      580.0,
-      583.0
+      597.311715,
+      597.311715
     ],
     "en": [
-      "comment section if you want to support"
+      ""
     ],
     "ru": [
-      "раздел комментариев, если вы хотите поддержать"
-    ]
-  },
-  {
-    "time": [
-      583.0,
-      586.0
-    ],
-    "en": [
-      "my channel I accept Bitcoin and etherion"
-    ],
-    "ru": [
-      "мой канал я принимаю биткойны и эфирион"
-    ]
-  },
-  {
-    "time": [
-      586.0,
-      588.0
-    ],
-    "en": [
-      "donations via the addresses in the"
-    ],
-    "ru": [
-      "пожертвования через адреса в"
-    ]
-  },
-  {
-    "time": [
-      588.0,
-      591.0
-    ],
-    "en": [
-      "description I am also a brave verified"
-    ],
-    "ru": [
-      "описание я тоже храбрый проверил"
-    ]
-  },
-  {
-    "time": [
-      591.0,
-      594.0
-    ],
-    "en": [
-      "publisher and accept bat or basic"
-    ],
-    "ru": [
-      "издатель и принять летучую мышь или базовый"
-    ]
-  },
-  {
-    "time": [
-      594.0,
-      596.0
-    ],
-    "en": [
-      "attention token donations in the brave"
-    ],
-    "ru": [
-      "пожертвования токенов внимания в храбрых"
-    ]
-  },
-  {
-    "time": [
-      596.0,
-      596.0
-    ],
-    "en": [
-      "browser"
-    ],
-    "ru": [
-      "браузер"
+      ""
     ]
   }
 ]

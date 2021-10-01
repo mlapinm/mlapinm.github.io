@@ -2,211 +2,91 @@ let objs = [
   {
     "time": [
       0.0,
-      3.0
+      4.509258
     ],
     "en": [
-      "welcome to this free CCNA packet tracer"
+      "welcome to this free CCNA packet tracer practice lab"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный трассировщик пакетов CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
     ]
   },
   {
     "time": [
-      3.0,
-      6.0
+      4.509258,
+      8.351053
     ],
     "en": [
-      "practice lab you can download the lab"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "Практическая лаборатория вы можете скачать лабораторию"
+      "скачать лабораторный файл можно по ссылке в описании"
     ]
   },
   {
     "time": [
-      6.0,
-      9.0
+      8.351053,
+      13.042434
     ],
     "en": [
-      "file from the link in the description in"
+      "in this lab we will be working with one router"
     ],
     "ru": [
-      "файл по ссылке в описании в"
+      "в этой лабораторной работе мы будем работать с одним роутером"
     ]
   },
   {
     "time": [
-      9.0,
-      12.0
+      13.042434,
+      22.593988
     ],
     "en": [
-      "this lab we will be working with one"
+      "r1 2 switches switch 1 and switch 2 and 4 pcs pc-1 pc2 pc 3 and PC 4"
     ],
     "ru": [
-      "с этой лабораторией мы будем работать с одним"
+      "r1 2 переключателя переключатель 1 и переключатель 2 и 4 шт. pc-1 pc2 pc 3 и ПК 4"
     ]
   },
   {
     "time": [
-      12.0,
-      16.0
+      22.593988,
+      32.753148
     ],
     "en": [
-      "router r1 2 switches switch 1 and switch"
+      "we will configure these pcs to be in two separate VLANs and then configure routing between them through the method known as router on a stick"
     ],
     "ru": [
-      "маршрутизатор r1 2 переключает переключатель 1 и переключатель"
+      "мы настроим эти компьютеры, чтобы они находились в двух отдельных VLAN, а затем настроим маршрутизацию между ними с помощью метода, известного как маршрутизатор на флешке."
     ]
   },
   {
     "time": [
-      16.0,
-      24.0
+      32.753148,
+      41.521482
     ],
     "en": [
-      ""
+      "the host names of the router and switches the IP addresses of the pcs and their default gateways have been pre-configured"
     ],
     "ru": [
-      ""
+      "имена хостов маршрутизатора и коммутаторов IP-адреса компьютеров и их шлюзов по умолчанию были предварительно настроены"
     ]
   },
   {
     "time": [
-      16.0,
-      24.0
+      41.521482,
+      49.971164
     ],
     "en": [
-      ""
+      "try to complete the lab yourself first and then continue watching if you have trouble or watch it after to check your solution"
     ],
     "ru": [
-      ""
+      "попробуйте сначала пройти лабораторную работу самостоятельно, а затем продолжайте наблюдение, если у вас возникнут проблемы, или просмотрите ее после, чтобы проверить свое решение"
     ]
   },
   {
     "time": [
-      24.0,
-      25.0
-    ],
-    "en": [
-      "will configure these pcs to be in two"
-    ],
-    "ru": [
-      "настроит эти компьютеры на два"
-    ]
-  },
-  {
-    "time": [
-      25.0,
-      28.0
-    ],
-    "en": [
-      "separate VLANs and then configure"
-    ],
-    "ru": [
-      "отдельные VLAN, а затем настроить"
-    ]
-  },
-  {
-    "time": [
-      28.0,
-      30.0
-    ],
-    "en": [
-      "routing between them through the method"
-    ],
-    "ru": [
-      "маршрутизация между ними через метод"
-    ]
-  },
-  {
-    "time": [
-      30.0,
-      33.0
-    ],
-    "en": [
-      "known as router on a stick the host"
-    ],
-    "ru": [
-      "известный как маршрутизатор на флешке хост"
-    ]
-  },
-  {
-    "time": [
-      33.0,
-      36.0
-    ],
-    "en": [
-      "names of the router and switches the IP"
-    ],
-    "ru": [
-      "имена роутера и переключает IP"
-    ]
-  },
-  {
-    "time": [
-      36.0,
-      38.0
-    ],
-    "en": [
-      "addresses of the pcs and their default"
-    ],
-    "ru": [
-      "адреса компьютеров и их значения по умолчанию"
-    ]
-  },
-  {
-    "time": [
-      38.0,
-      42.0
-    ],
-    "en": [
-      "gateways have been pre-configured try to"
-    ],
-    "ru": [
-      "шлюзы были предварительно настроены, попробуйте"
-    ]
-  },
-  {
-    "time": [
-      42.0,
-      44.0
-    ],
-    "en": [
-      "complete the lab yourself first and then"
-    ],
-    "ru": [
-      "сначала завершите лабораторию самостоятельно, а затем"
-    ]
-  },
-  {
-    "time": [
-      44.0,
-      47.0
-    ],
-    "en": [
-      "continue watching if you have trouble or"
-    ],
-    "ru": [
-      "продолжайте смотреть, если у вас возникнут проблемы или"
-    ]
-  },
-  {
-    "time": [
-      47.0,
-      52.0
-    ],
-    "en": [
-      "watch it after to check your solution"
-    ],
-    "ru": [
-      "посмотрите это потом, чтобы проверить свое решение"
-    ]
-  },
-  {
-    "time": [
-      52.0,
-      56.0
+      49.971164,
+      57.043515
     ],
     "en": [
       "step one is to ping between the PCs"
@@ -217,212 +97,80 @@ let objs = [
   },
   {
     "time": [
-      56.0,
-      59.0
+      57.043515,
+      63.001338
     ],
     "en": [
-      "things between PC one and PC through"
+      "pings between PC one and PC through should succeed because they are in the same subnet"
     ],
     "ru": [
-      "вещи между ПК один и ПК через"
+      "эхо-запросы между ПК 1 и ПК должны быть успешными, потому что они находятся в одной подсети"
     ]
   },
   {
     "time": [
-      59.0,
-      61.0
+      63.001338,
+      67.912724
     ],
     "en": [
-      "should succeed because they are in the"
+      "likewise pings between PC 2 and pc 4 should succeed"
     ],
     "ru": [
-      "должны добиться успеха, потому что они в"
+      "аналогично пинги между ПК 2 и ПК 4 должны быть успешными"
     ]
   },
   {
     "time": [
-      61.0,
-      65.0
+      67.912724,
+      70.160032
     ],
     "en": [
-      "same subnet likewise pings between PC 2"
+      "because they are also in the same subnet"
     ],
     "ru": [
-      "одна и та же подсеть также пингует между ПК 2"
+      "потому что они также находятся в одной подсети"
     ]
   },
   {
     "time": [
-      65.0,
-      68.0
+      70.160032,
+      72.903063
     ],
     "en": [
-      "and pc 4 should succeed because they are"
+      "other pings should fail"
     ],
     "ru": [
-      "и ПК 4 должен преуспеть, потому что они"
+      "другие пинги должны завершиться ошибкой"
     ]
   },
   {
     "time": [
-      68.0,
-      71.0
+      72.903063,
+      75.260223
     ],
     "en": [
-      "also in the same subnet other pings"
+      "let's ping from pc1 first"
     ],
     "ru": [
-      "также в той же подсети другие пинги"
+      "давайте сначала пингуем с pc1"
     ]
   },
   {
     "time": [
-      71.0,
-      76.0
+      75.260223,
+      79.72058
     ],
     "en": [
-      "should fail let's ping from pc1 first"
+      "let's ping PC to ping"
     ],
     "ru": [
-      "должен потерпеть неудачу, давайте сначала пингуем с pc1"
+      "давайте пингуем компьютер, чтобы пинговать"
     ]
   },
   {
     "time": [
-      76.0,
-      85.0
-    ],
-    "en": [
-      "let's ping PC to ping 1000 130 the ping"
-    ],
-    "ru": [
-      "давайте пинг ПК, чтобы пинговать 1000 130 пинг"
-    ]
-  },
-  {
-    "time": [
-      85.0,
-      93.0
-    ],
-    "en": [
-      "fails next let's ping PC 3 ping 1000 3"
-    ],
-    "ru": [
-      "не удалось далее пинговать ПК 3 пинг 1000 3"
-    ]
-  },
-  {
-    "time": [
-      93.0,
-      96.0
-    ],
-    "en": [
-      "the ping works as expected"
-    ],
-    "ru": [
-      "пинг работает как положено"
-    ]
-  },
-  {
-    "time": [
-      96.0,
-      106.0
-    ],
-    "en": [
-      "finally let's ping PC for ping 1000 131"
-    ],
-    "ru": [
-      "наконец-то давайте пингуем компьютер на пинг 1000 131"
-    ]
-  },
-  {
-    "time": [
-      106.0,
-      109.0
-    ],
-    "en": [
-      "the ping fails by the way I'm using the"
-    ],
-    "ru": [
-      "пинг не работает, потому что я использую"
-    ]
-  },
-  {
-    "time": [
-      109.0,
-      112.0
-    ],
-    "en": [
-      "up arrow to access previous commands and"
-    ],
-    "ru": [
-      "стрелка вверх для доступа к предыдущим командам и"
-    ]
-  },
-  {
-    "time": [
-      112.0,
-      115.0
-    ],
-    "en": [
-      "just edit the last few numbers next"
-    ],
-    "ru": [
-      "просто отредактируйте несколько последних чисел рядом"
-    ]
-  },
-  {
-    "time": [
-      115.0,
-      121.0
-    ],
-    "en": [
-      "let's try to ping from PC to first PC 1"
-    ],
-    "ru": [
-      "давайте попробуем пинговать с ПК на первый ПК 1"
-    ]
-  },
-  {
-    "time": [
-      121.0,
-      129.0
-    ],
-    "en": [
-      "ping 1000 to the ping fails next PC 3"
-    ],
-    "ru": [
-      "ping 1000 до ping не работает на следующем ПК 3"
-    ]
-  },
-  {
-    "time": [
-      129.0,
-      134.0
-    ],
-    "en": [
-      "ping 1000 3"
-    ],
-    "ru": [
-      "пинг 1000 3"
-    ]
-  },
-  {
-    "time": [
-      134.0,
-      140.0
-    ],
-    "en": [
-      "the pin fails finally pc4 ping 1000 dot"
-    ],
-    "ru": [
-      "штифт наконец не работает pc4 ping 1000 точек"
-    ]
-  },
-  {
-    "time": [
-      140.0,
-      150.0
+      79.72058,
+      86.919684
     ],
     "en": [
       ""
@@ -433,8 +181,8 @@ let objs = [
   },
   {
     "time": [
-      140.0,
-      150.0
+      79.72058,
+      86.919684
     ],
     "en": [
       ""
@@ -445,1172 +193,1064 @@ let objs = [
   },
   {
     "time": [
-      150.0,
-      154.0
+      86.919684,
+      90.130648
     ],
     "en": [
-      "two is to assign pc1 & pc2 VLAN 13 & pc2"
+      "next let's ping PC 3"
     ],
     "ru": [
-      "два - назначить pc1 и pc2 VLAN 13 и pc2"
+      "следующий давайте пинг PC 3"
     ]
   },
   {
     "time": [
-      154.0,
-      159.0
+      90.130648,
+      96.826109
     ],
     "en": [
-      "and pc 4 to VLAN 24 let's configure"
+      "ping 10.0.0.3 the ping works as expected"
     ],
     "ru": [
-      "и pc 4 в VLAN 24 настроим"
+      "ping 10.0.0.3 ping работает должным образом"
     ]
   },
   {
     "time": [
-      159.0,
-      166.0
+      96.826109,
+      99.983198
     ],
     "en": [
-      "switch 1 first enable compte interface"
+      "finally let's ping PC 4"
     ],
     "ru": [
-      "переключатель 1 сначала включить интерфейс compte"
+      "наконец-то пингуем ПК 4"
     ]
   },
   {
     "time": [
-      166.0,
-      173.0
+      99.983198,
+      106.461147
     ],
     "en": [
-      "f01 switch port mode access switch port"
+      "ping 10.0.0.1/31"
     ],
     "ru": [
-      "f01 порт коммутатора режим порта коммутатора доступа"
+      "пинг 10.0.0.1/31"
     ]
   },
   {
     "time": [
-      173.0,
-      180.0
+      106.461147,
+      109.07504
     ],
     "en": [
-      "access VLAN 13 that's for a pc 1 next"
+      "the ping fails"
     ],
     "ru": [
-      "доступ к VLAN 13 для ПК 1 далее"
+      "пинг не работает"
     ]
   },
   {
     "time": [
-      180.0,
-      186.0
+      109.07504,
+      114.150345
     ],
     "en": [
-      "for pc 2 interface f0 to switch port"
+      "by the way I'm using the up arrow to access previous commands and just edit the last few numbers"
     ],
     "ru": [
-      "для ПК 2 интерфейс f0 для переключения порта"
+      "кстати, я использую стрелку вверх для доступа к предыдущим командам и просто редактирую последние несколько чисел"
     ]
   },
   {
     "time": [
-      186.0,
-      193.0
+      114.150345,
+      117.863708
     ],
     "en": [
-      "mode access switch port access VLAN 24"
+      "next let's try to ping from PC 2"
     ],
     "ru": [
-      "режим коммутатора доступа порт доступа VLAN 24"
+      "Далее попробуем пинговать с ПК 2"
     ]
   },
   {
     "time": [
-      193.0,
-      200.0
+      117.863708,
+      124.750111
     ],
     "en": [
-      "next let's configure switch to enable"
+      "first PC 1 ping 10.0.0.2"
     ],
     "ru": [
-      "затем давайте настроим переключатель, чтобы включить"
+      "первый ПК 1 пинг 10.0.0.2"
     ]
   },
   {
     "time": [
-      200.0,
-      205.0
+      124.750111,
+      128.147073
     ],
     "en": [
-      "compte interface f01 switch port mode"
+      "the ping fails"
     ],
     "ru": [
-      "compte interface f01 режим порта коммутатора"
+      "пинг не работает"
     ]
   },
   {
     "time": [
-      205.0,
-      212.0
+      128.147073,
+      130.360077
     ],
     "en": [
-      "access switch port access VLAN 13 that's"
+      "next PC 3"
     ],
     "ru": [
-      "доступ к порту коммутатора доступа к VLAN 13, который"
+      "следующий ПК 3"
     ]
   },
   {
     "time": [
-      212.0,
-      214.0
+      130.360077,
+      133.102953
     ],
     "en": [
-      "pc 3 next let's configure the interface"
+      "ping 10.0.0.3"
     ],
     "ru": [
-      "pc 3 дальше давайте настроим интерфейс"
+      "пинг 10.0.0.3"
     ]
   },
   {
     "time": [
-      214.0,
-      222.0
+      133.102953,
+      137.272419
     ],
     "en": [
-      "connected to pc 4 interface f0 to switch"
+      "the ping fails"
     ],
     "ru": [
-      "подключен к ПК 4 интерфейс f0 для переключения"
+      "пинг не работает"
     ]
   },
   {
     "time": [
-      222.0,
-      226.0
+      137.272419,
+      143.627194
     ],
     "en": [
-      "ports mode access switch port access"
+      "finally pc4 ping 10.0.0.1/31"
     ],
     "ru": [
-      "переключение режима портов доступ к портам"
+      "наконец pc4 ping 10.0.0.1/31"
     ]
   },
   {
     "time": [
-      226.0,
-      233.0
+      143.627194,
+      145.138305
     ],
     "en": [
-      "VLAN 20 for step two is now complete"
+      "the ping works"
     ],
     "ru": [
-      "VLAN 20 для второго шага завершена."
+      "пинг работает"
     ]
   },
   {
     "time": [
-      233.0,
-      235.0
+      145.138305,
+      146.819868
     ],
     "en": [
-      "step three is to create a trunk link"
+      "that's step one"
     ],
     "ru": [
-      "Шаг третий - создать магистраль"
+      "это первый шаг"
     ]
   },
   {
     "time": [
-      235.0,
-      239.0
+      146.819868,
+      158.030154
     ],
     "en": [
-      "between switch 1 and switch to remember"
+      "step two is to assign pc1 & pc2 VLAN 13 & pc2 and pc 4 to VLAN 24"
     ],
     "ru": [
-      "между переключателем 1 и переключателем запоминать"
+      "Шаг второй - назначить pc1 и pc2 VLAN 13 и pc2 и pc 4 для VLAN 24"
     ]
   },
   {
     "time": [
-      239.0,
-      241.0
+      158.030154,
+      161.133806
     ],
     "en": [
-      "we need to configure a trunk link to"
+      "let's configure switch 1 first"
     ],
     "ru": [
-      "нам нужно настроить магистраль для"
+      "давайте сначала настроим переключатель 1"
     ]
   },
   {
     "time": [
-      241.0,
-      243.0
+      161.133806,
+      176.534073
     ],
     "en": [
-      "allow the connection between switch 1"
+      "enable conf t interface f01 switch port mode access switch port access VLAN 13"
     ],
     "ru": [
-      "разрешить соединение между переключателем 1"
+      "enable conf t interface f01 коммутатор режим порта доступ коммутатор порт доступ VLAN 13"
     ]
   },
   {
     "time": [
-      243.0,
-      245.0
+      176.534073,
+      179.17163
     ],
     "en": [
-      "and switch two to carry traffic from"
+      "that's for a pc 1"
     ],
     "ru": [
-      "и переключитесь на два, чтобы передавать трафик из"
+      "это для ПК 1"
     ]
   },
   {
     "time": [
-      245.0,
-      249.0
+      179.17163,
+      182.239367
     ],
     "en": [
-      "multiple VLANs in this case the"
+      "next for pc 2"
     ],
     "ru": [
-      "несколько VLAN в этом случае"
+      "следующий для ПК 2"
     ]
   },
   {
     "time": [
-      249.0,
-      250.0
+      182.239367,
+      186.011654
     ],
     "en": [
-      "interfaces are assigned to the native"
+      "interface f0 2"
     ],
     "ru": [
-      "интерфейсы присваиваются родным"
+      "интерфейс f0 2"
     ]
   },
   {
     "time": [
-      250.0,
-      254.0
+      186.011654,
+      188.769901
     ],
     "en": [
-      "VLAN VLAN 1 however our pcs are assigned"
+      "switch port mode access"
     ],
     "ru": [
-      "VLAN VLAN 1, однако наши компьютеры назначены"
+      "переключатель режима порта доступа"
     ]
   },
   {
     "time": [
-      254.0,
-      258.0
+      188.769901,
+      194.066938
     ],
     "en": [
-      "to either VLAN 13 or VLAN 24 therefore"
+      "switch port access VLAN 24"
     ],
     "ru": [
-      "либо к VLAN 13, либо к VLAN 24, поэтому"
+      "порт коммутатора доступа VLAN 24"
     ]
   },
   {
     "time": [
-      258.0,
-      260.0
+      194.066938,
+      197.082672
     ],
     "en": [
-      "no traffic from these pcs will be able"
+      "next let's configure switch 2"
     ],
     "ru": [
-      "трафик с этих компьютеров не будет"
+      "Далее давайте настроим переключатель 2"
     ]
   },
   {
     "time": [
-      260.0,
-      263.0
+      197.082672,
+      207.20813
     ],
     "en": [
-      "to pass between the switches even in the"
+      "enable conf t interface f01 switch port mode access"
     ],
     "ru": [
-      "переходить между переключателями даже в"
+      "enable conf t interface f01 переключатель режима порта доступа"
     ]
   },
   {
     "time": [
-      263.0,
-      266.0
+      207.20813,
+      210.879959
     ],
     "en": [
-      "same VLAN I'll just do one ping to prove"
+      "switch port access VLAN 13"
     ],
     "ru": [
-      "тот же VLAN, я просто сделаю один пинг, чтобы доказать"
+      "порт коммутатора доступа VLAN 13"
     ]
   },
   {
     "time": [
-      266.0,
-      270.0
+      210.879959,
+      217.265785
     ],
     "en": [
-      "this from pc1 to pc2 are in the same"
+      "that's pc 3 next let's configure the interface connected to pc 4"
     ],
     "ru": [
-      "это от pc1 до pc2 в том же самом"
+      "это ПК 3, далее давайте настроим интерфейс, подключенный к ПК 4"
     ]
   },
   {
     "time": [
-      270.0,
-      279.0
+      217.265785,
+      221.431042
     ],
     "en": [
-      "VLAN ping 1000 3 as you can see the ping"
+      "interface f02"
     ],
     "ru": [
-      "VLAN ping 1000 3, как вы можете видеть, ping"
+      "интерфейс f02"
     ]
   },
   {
     "time": [
-      279.0,
-      282.0
+      221.431042,
+      228.64635
     ],
     "en": [
-      "which succeeded previously now fails"
+      "switch ports mode access switch port access VLAN 24"
     ],
     "ru": [
-      "что раньше удавалось, теперь терпит неудачу"
+      "режим портов коммутатора доступ к портам коммутатора VLAN 24"
     ]
   },
   {
     "time": [
-      282.0,
-      286.0
+      228.64635,
+      231.2011
     ],
     "en": [
-      "let's create a trunk now I'll configure"
+      "step two is now complete"
     ],
     "ru": [
-      "давайте создадим ствол сейчас настрою"
+      "шаг два теперь завершен"
     ]
   },
   {
     "time": [
-      286.0,
-      294.0
+      231.2011,
+      238.058483
     ],
     "en": [
-      "switch 1 first interface g0 to switch"
+      "step three is to create a trunk link between switch 1 and switch 2"
     ],
     "ru": [
-      "переключить 1 первый интерфейс g0 для переключения"
+      "Шаг третий - создать магистральный канал между коммутатором 1 и коммутатором 2."
     ]
   },
   {
     "time": [
-      294.0,
-      298.0
+      238.058483,
+      247.461664
     ],
     "en": [
-      "port mode trunk that's it"
+      "remember we need to configure a trunk link to allow the connection between switch 1 and switch two to carry traffic from multiple VLANs"
     ],
     "ru": [
-      "магистральный режим порта вот и все"
+      "помните, что нам нужно настроить магистральный канал, чтобы соединение между коммутатором 1 и коммутатором 2 могло передавать трафик из нескольких VLAN."
     ]
   },
   {
     "time": [
-      298.0,
-      300.0
+      247.461664,
+      257.708238
     ],
     "en": [
-      "on this switch model we don't have to"
+      "in this case the interfaces are assigned to the native VLAN VLAN 1 however our pcs are assigned to either VLAN 13 or VLAN 24"
     ],
     "ru": [
-      "на этой модели переключателя нам не нужно"
+      "в этом случае интерфейсы назначаются собственному VLAN VLAN 1, однако наши компьютеры назначаются либо VLAN 13, либо VLAN 24."
     ]
   },
   {
     "time": [
-      300.0,
-      303.0
+      257.708238,
+      262.79738
     ],
     "en": [
-      "configure the encapsulation type next"
+      "therefore no traffic from these pcs will be able to pass between the switches"
     ],
     "ru": [
-      "затем настроить тип инкапсуляции"
+      "следовательно, трафик от этих компьютеров не сможет проходить между коммутаторами."
     ]
   },
   {
     "time": [
-      303.0,
-      310.0
+      262.79738,
+      264.510651
     ],
     "en": [
-      "let's configure switch to interface g0 1"
+      "even in the same VLAN"
     ],
     "ru": [
-      "настроим переключение на интерфейс g0 1"
+      "даже в той же VLAN"
     ]
   },
   {
     "time": [
-      310.0,
-      319.0
+      264.510651,
+      267.526349
     ],
     "en": [
-      "switch port mode trunk that's step 3"
+      "I'll just do one ping to prove this"
     ],
     "ru": [
-      "коммутатор в режиме порта, это шаг 3"
+      "Я просто сделаю один пинг, чтобы доказать это"
     ]
   },
   {
     "time": [
-      319.0,
-      322.0
+      267.526349,
+      271.48651
     ],
     "en": [
-      "step four is to configure inter VLAN"
+      "from pc1 to pc3 are in the same VLAN"
     ],
     "ru": [
-      "Шаг четвертый - настроить меж VLAN"
+      "от pc1 до pc3 находятся в одной VLAN"
     ]
   },
   {
     "time": [
-      322.0,
-      326.0
+      271.48651,
+      276.379656
     ],
     "en": [
-      "routing by creating sub interfaces on r1"
+      "ping 10.0.0.3"
     ],
     "ru": [
-      "маршрутизация путем создания субинтерфейсов на r1"
+      "пинг 10.0.0.3"
     ]
   },
   {
     "time": [
-      326.0,
-      329.0
+      276.379656,
+      282.738281
     ],
     "en": [
-      "currently because we created a trunk"
+      "as you can see the ping which succeeded previously now fails"
     ],
     "ru": [
-      "в настоящее время, потому что мы создали ствол"
+      "как вы можете видеть, пинг, который выполнялся ранее, теперь не работает"
     ]
   },
   {
     "time": [
-      329.0,
-      332.0
+      282.738281,
+      285.579752
     ],
     "en": [
-      "between switch 1 and switch 2 pcs in the"
+      "let's create a trunk now"
     ],
     "ru": [
-      "между переключателем 1 и переключателем 2 шт. в"
+      "давайте сейчас создадим ствол"
     ]
   },
   {
     "time": [
-      332.0,
-      335.0
+      285.579752,
+      288.884624
     ],
     "en": [
-      "same VLAN can ping each other again I'll"
+      "I'll configure switch 1 first"
     ],
     "ru": [
-      "один и тот же VLAN может снова пинговать друг друга."
+      "Сначала я настрою переключатель 1"
     ]
   },
   {
     "time": [
-      335.0,
-      340.0
+      288.884624,
+      296.529786
     ],
     "en": [
-      "ping once more from pc1 to pc2 show this"
+      "interface g0 2 switch port mode trunk"
     ],
     "ru": [
-      "пинг еще раз с pc1 на pc2 покажите это"
+      "интерфейс g0 2 режим порта коммутатора магистраль"
     ]
   },
   {
     "time": [
-      340.0,
-      347.0
+      296.529786,
+      302.62073
     ],
     "en": [
-      "ping 1000 3 as you can see there are"
+      "that's it on this switch model we don't have to configure the encapsulation type"
     ],
     "ru": [
-      "ping 1000 3, как видите, есть"
+      "вот именно на этой модели коммутатора нам не нужно настраивать тип инкапсуляции"
     ]
   },
   {
     "time": [
-      347.0,
-      349.0
+      302.62073,
+      313.624853
     ],
     "en": [
-      "once again no problems"
+      "next let's configure switch 2 interface g0 1 switch port mode trunk"
     ],
     "ru": [
-      "еще раз без проблем"
+      "Далее давайте настроим интерфейс коммутатора 2 g0 1 режим порта коммутатора магистраль"
     ]
   },
   {
     "time": [
-      349.0,
-      352.0
+      313.624853,
+      316.140479
     ],
     "en": [
-      "however pings to a different VLAN should"
+      "that's step 3"
     ],
     "ru": [
-      "однако эхо-запросы к другой VLAN должны"
+      "это шаг 3"
     ]
   },
   {
     "time": [
-      352.0,
-      355.0
+      316.140479,
+      326.375406
     ],
     "en": [
-      "not work let's just ping from pc1 to pc2"
+      "step four is to configure inter VLAN routing by creating sub interfaces on r1"
     ],
     "ru": [
-      "не работает давайте просто пинг с pc1 на pc2"
+      "Шаг четвертый - настроить маршрутизацию между VLAN, создав субинтерфейсы на r1."
     ]
   },
   {
     "time": [
-      355.0,
-      364.0
+      326.375406,
+      335.03793
     ],
     "en": [
-      "check King 1000 131 as you can see the"
+      "currently because we created a trunk between switch 1 and switch 2 pcs in the same VLAN can ping each other again"
     ],
     "ru": [
-      "проверьте King 1000 131, как вы можете видеть"
+      "в настоящее время, поскольку мы создали магистраль между коммутатором 1 и коммутатором 2, компьютеры в одной VLAN могут снова пинговать друг друга"
     ]
   },
   {
     "time": [
-      364.0,
-      368.0
+      335.03793,
+      340.045953
     ],
     "en": [
-      "ping fails now one way of configuring"
+      "I'll ping once more from pc1 to pc3 show this"
     ],
     "ru": [
-      "ping не работает один из способов настройки"
+      "Я пингую еще раз с pc1 на pc3 покажу это"
     ]
   },
   {
     "time": [
-      368.0,
-      370.0
+      340.045953,
+      348.765183
     ],
     "en": [
-      "inter VLAN routing the one we will be"
+      "ping 10.0.0.3 as you can see there are once again no problems"
     ],
     "ru": [
-      "маршрутизация между VLAN, которую мы будем"
+      "ping 10.0.0.3 как видите, опять нет проблем"
     ]
   },
   {
     "time": [
-      370.0,
-      373.0
+      348.765183,
+      353.572102
     ],
     "en": [
-      "using in this lab is called router on a"
+      "however pings to a different VLAN should not work"
     ],
     "ru": [
-      "использование в этой лабораторной работе называется маршрутизатором на"
+      "однако эхо-запросы к другой VLAN не должны работать"
     ]
   },
   {
     "time": [
-      373.0,
-      376.0
+      353.572102,
+      357.670394
     ],
     "en": [
-      "stick as you can see there is only one"
+      "let's just ping from pc1 to pc2 check"
     ],
     "ru": [
-      "палка, как видите, есть только один"
+      "давайте просто пинг с pc1 на pc2 проверим"
     ]
   },
   {
     "time": [
-      376.0,
-      380.0
+      357.670394,
+      362.196778
     ],
     "en": [
-      "connection between r1 and switch one"
+      "ping 10.0.0.1/31"
     ],
     "ru": [
-      "соединение между r1 и переключателем"
+      "пинг 10.0.0.1/31"
     ]
   },
   {
     "time": [
-      380.0,
-      383.0
+      362.196778,
+      365.632799
     ],
     "en": [
-      "however we will configure two sub"
+      "as you can see the ping fails"
     ],
     "ru": [
-      "однако мы настроим два под"
+      "как видите, пинг не работает"
     ]
   },
   {
     "time": [
-      383.0,
-      385.0
+      365.632799,
+      374.333866
     ],
     "en": [
-      "interfaces using the single connection"
+      "now one way of configuring inter VLAN routing the one we will be using in this lab is called router on a stick"
     ],
     "ru": [
-      "интерфейсы, использующие одно соединение"
+      "Теперь один из способов настройки маршрутизации между VLAN, который мы будем использовать в этой лабораторной работе, называется маршрутизатором на флешке."
     ]
   },
   {
     "time": [
-      385.0,
-      387.0
+      374.333866,
+      379.682595
     ],
     "en": [
-      "and each sub interface will have a"
+      "as you can see there is only one connection between r1 and switch one"
     ],
     "ru": [
-      "и каждый подчиненный интерфейс будет иметь"
+      "как вы можете видеть, есть только одно соединение между r1 и переключателем"
     ]
   },
   {
     "time": [
-      387.0,
-      390.0
+      379.682595,
+      385.984428
     ],
     "en": [
-      "separate IP address which serves as the"
+      "however we will configure two sub interfaces using the single connection"
     ],
     "ru": [
-      "отдельный IP-адрес, который служит"
+      "однако мы настроим два субинтерфейса, используя одно соединение"
     ]
   },
   {
     "time": [
-      390.0,
-      393.0
+      385.984428,
+      393.111519
     ],
     "en": [
-      "default gateway for the pcs in each VLAN"
+      "and each sub interface will have a separate IP address which serves as the default gateway for the pcs in each VLAN"
     ],
     "ru": [
-      "шлюз по умолчанию для ПК в каждой VLAN"
+      "и каждый подчиненный интерфейс будет иметь отдельный IP-адрес, который служит шлюзом по умолчанию для компьютеров в каждой VLAN."
     ]
   },
   {
     "time": [
-      393.0,
-      396.0
+      393.111519,
+      398.728099
     ],
     "en": [
-      "note that I have already configured the"
+      "note that I have already configured the pcs with their default gateways"
     ],
     "ru": [
-      "обратите внимание, что я уже настроил"
+      "обратите внимание, что я уже настроил компьютеры со шлюзами по умолчанию"
     ]
   },
   {
     "time": [
-      396.0,
-      400.0
+      398.728099,
+      402.407727
     ],
     "en": [
-      "pcs with their default gateways so let's"
+      "so let's configure r1"
     ],
     "ru": [
-      "ПК со шлюзами по умолчанию, так что давайте"
+      "так что давайте настроим r1"
     ]
   },
   {
     "time": [
-      400.0,
-      408.0
+      402.407727,
+      413.222441
     ],
     "en": [
-      "configure r1 enable comte first I will"
+      "enable conf t first I will turn on the Gigabit Ethernet 0 0 interface which is shut down by default"
     ],
     "ru": [
-      "сначала настройте r1, включите comte, я"
+      "сначала включить конф. Я включу интерфейс Gigabit Ethernet 0 0, который по умолчанию отключен"
     ]
   },
   {
     "time": [
-      408.0,
-      410.0
+      413.222441,
+      418.267846
     ],
     "en": [
-      "turn on the Gigabit Ethernet 0 0"
+      "interface G 0 0 no shutdown"
     ],
     "ru": [
-      "включить Gigabit Ethernet 0 0"
+      "интерфейс G 0 0 без отключения"
     ]
   },
   {
     "time": [
-      410.0,
-      413.0
+      418.267846,
+      423.511916
     ],
     "en": [
-      "interface which is shut down by default"
+      "next let's configure the sub interface for VLAN 13"
     ],
     "ru": [
-      "интерфейс, который по умолчанию отключен"
+      "Далее давайте настроим субинтерфейс для VLAN 13"
     ]
   },
   {
     "time": [
-      413.0,
-      420.0
+      423.511916,
+      430.484622
     ],
     "en": [
-      "interface G 0 0 no shutdown next let's"
+      "first type interface G 0 0 as normal then dot 13"
     ],
     "ru": [
-      "интерфейс G 0 0 без выключения далее давайте"
+      "первый тип интерфейса G 0 0 как обычно, затем точка 13"
     ]
   },
   {
     "time": [
-      420.0,
-      423.0
+      430.484622,
+      435.28377
     ],
     "en": [
-      "configure the sub interface for VLAN 13"
+      "as you can see we are in sub interface configuration mode"
     ],
     "ru": [
-      "настроить подчиненный интерфейс для VLAN 13"
+      "как вы можете видеть, мы находимся в режиме настройки субинтерфейса"
     ]
   },
   {
     "time": [
-      423.0,
-      427.0
+      435.28377,
+      449.810928
     ],
     "en": [
-      "first type interface G 0 0 as normal"
+      "I'll set the IP address to 10.0.0.1 so IP address 10.0.0.1 with the subnet mask of 255.255.255.0"
     ],
     "ru": [
-      "интерфейс первого типа G 0 0 как обычно"
+      "Я установлю IP-адрес 10.0.0.1, поэтому IP-адрес 10.0.0.1 с маской подсети 255.255.255.0"
     ]
   },
   {
     "time": [
-      427.0,
-      433.0
+      449.810928,
+      452.832315
     ],
     "en": [
-      "then dot 13 as you can see we are in sub"
+      "is equivalent to 25"
     ],
     "ru": [
-      "затем точка 13, как вы можете видеть, мы находимся в подгруппе"
+      "эквивалентно 25"
     ]
   },
   {
     "time": [
-      433.0,
-      436.0
+      452.832315,
+      456.456199
     ],
     "en": [
-      "interface configuration mode I'll set"
+      "but the command doesn't work"
     ],
     "ru": [
-      "режим настройки интерфейса я установлю"
+      "но команда не работает"
     ]
   },
   {
     "time": [
-      436.0,
-      442.0
+      456.456199,
+      460.340272
     ],
     "en": [
-      "the IP address to 1001 so IP address"
+      "we have to configure this sub interface as part of a VLAN first"
     ],
     "ru": [
-      "IP-адрес на 1001, поэтому IP-адрес"
+      "мы должны сначала настроить этот субинтерфейс как часть VLAN"
     ]
   },
   {
     "time": [
-      442.0,
-      445.0
+      460.340272,
+      463.117576
     ],
     "en": [
-      ""
+      "that is done with this command"
     ],
     "ru": [
-      ""
+      "это делается с помощью этой команды"
     ]
   },
   {
     "time": [
-      442.0,
-      445.0
+      463.117576,
+      469.165352
     ],
     "en": [
-      ""
+      "encapsulation dot1q 13"
     ],
     "ru": [
-      ""
+      "инкапсуляция dot1q 13"
     ]
   },
   {
     "time": [
-      445.0,
-      449.0
+      469.165352,
+      471.799204
     ],
     "en": [
-      ""
+      "now we can configure the IP address"
     ],
     "ru": [
-      ""
+      "теперь мы можем настроить IP-адрес"
     ]
   },
   {
     "time": [
-      445.0,
-      449.0
+      471.799204,
+      480.267422
     ],
     "en": [
-      ""
+      "IP address 10.0.0.1 255.255.255.192"
     ],
     "ru": [
-      ""
+      "IP-адрес 10.0.0.1 255.255.255.192"
     ]
   },
   {
     "time": [
-      449.0,
-      451.0
+      480.267422,
+      486.258454
     ],
     "en": [
-      "is equivalent to"
+      "face for VLAN 24"
     ],
     "ru": [
-      "эквивалентно"
+      "лицо для VLAN 24"
     ]
   },
   {
     "time": [
-      451.0,
-      456.0
+      486.258454,
+      494.599839
     ],
     "en": [
-      ""
+      "interface g0 0.24"
     ],
     "ru": [
-      ""
+      "интерфейс g0 0,24"
     ]
   },
   {
     "time": [
-      451.0,
-      456.0
+      494.599839,
+      498.877398
     ],
     "en": [
-      ""
+      "we will use an IP address of 10.0.0.1 29"
     ],
     "ru": [
-      ""
+      "мы будем использовать IP-адрес 10.0.0.1 29"
     ]
   },
   {
     "time": [
-      456.0,
-      459.0
+      498.877398,
+      503.411231
     ],
     "en": [
-      "to configure this sub interface as part"
+      "and a subnet mask of 255.255.255.128"
     ],
     "ru": [
-      "чтобы настроить этот вспомогательный интерфейс как часть"
+      "и маска подсети 255.255.255.128"
     ]
   },
   {
     "time": [
-      459.0,
-      462.0
+      503.411231,
+      507.227555
     ],
     "en": [
-      "of a VLAN first that is done with this"
+      "we have to configure the encapsulation"
     ],
     "ru": [
-      "VLAN сначала, что делается с этим"
+      "нам нужно настроить инкапсуляцию"
     ]
   },
   {
     "time": [
-      462.0,
-      469.0
+      507.227555,
+      512.509834
     ],
     "en": [
-      "command encapsulation dot1q 13 now we"
+      "encapsulation dot1q 24"
     ],
     "ru": [
-      "инкапсуляция команд dot1q 13 теперь мы"
+      "инкапсуляция dot1q 24"
     ]
   },
   {
     "time": [
-      469.0,
-      474.0
+      512.509834,
+      522.780599
     ],
     "en": [
-      "can configure the IP address IP address"
+      "IP address 10.0.0.1 29 255.255.255.128"
     ],
     "ru": [
-      "можно настроить IP-адрес IP-адрес"
+      "IP-адрес 10.0.0.1 29 255.255.255.128"
     ]
   },
   {
     "time": [
-      474.0,
-      488.0
+      522.780599,
+      527.796498
     ],
     "en": [
-      ""
+      "the configuration of r1 is now complete"
     ],
     "ru": [
-      ""
+      "настройка r1 теперь завершена"
     ]
   },
   {
     "time": [
-      474.0,
-      488.0
+      527.796498,
+      530.922684
     ],
     "en": [
-      ""
+      "however there is one more final step"
     ],
     "ru": [
-      ""
+      "однако есть еще один заключительный шаг"
     ]
   },
   {
     "time": [
-      488.0,
-      495.0
+      530.922684,
+      536.347466
     ],
     "en": [
-      "interface g0 0.24 we will use an IP"
+      "remember that switch ones interfaces are access ports in the native VLAN"
     ],
     "ru": [
-      "interface g0 0.24 мы будем использовать IP"
+      "помните, что интерфейсы коммутатора - это порты доступа в собственной VLAN"
     ]
   },
   {
     "time": [
-      495.0,
-      499.0
+      536.347466,
+      538.259539
     ],
     "en": [
-      "address of 1000 1 2 9 and a subnet mask"
+      "VLAN 1 by default"
     ],
     "ru": [
-      "адрес 1000 1 2 9 и маска подсети"
+      "VLAN 1 по умолчанию"
     ]
   },
   {
     "time": [
-      499.0,
-      505.0
+      538.259539,
+      543.457625
     ],
     "en": [
-      "of 255.255.255.0 - we have to configure"
+      "that includes Gigabit Ethernet 0 1 which is connected to r1"
     ],
     "ru": [
-      "из 255.255.255.0 - надо настроить"
+      "который включает Gigabit Ethernet 0 1, который подключен к r1"
     ]
   },
   {
     "time": [
-      505.0,
-      513.0
+      543.457625,
+      548.415816
     ],
     "en": [
-      "the encapsulation encapsulation dot1q 24"
+      "so it can't send traffic from VLAN 13 or VLAN 24 to r1"
     ],
     "ru": [
-      "инкапсуляция инкапсуляция dot1q 24"
+      "поэтому он не может отправлять трафик из VLAN 13 или VLAN 24 на r1"
     ]
   },
   {
     "time": [
-      513.0,
-      520.0
+      548.415816,
+      550.522343
     ],
     "en": [
-      "IP address 1000 dot 1 to 9 255 dot 255"
+      "let's make it a trunk"
     ],
     "ru": [
-      "IP-адрес 1000 точек от 1 до 9 255 точек 255"
+      "давай сделаем это багажником"
     ]
   },
   {
     "time": [
-      520.0,
-      525.0
+      550.522343,
+      556.777736
     ],
     "en": [
-      "dot 255 dot 1 to 8 the configuration of"
+      "interface g0 1 switch port mode trunk"
     ],
     "ru": [
-      "точка 255 точки с 1 по 8 конфигурация"
+      "интерфейс g0 1 переключатель режима порта магистраль"
     ]
   },
   {
     "time": [
-      525.0,
-      529.0
+      556.777736,
+      560.126419
     ],
     "en": [
-      "r1 is now complete however there is one"
+      "ok step 4 is complete"
     ],
     "ru": [
-      "r1 теперь завершен, но есть один"
+      "хорошо, шаг 4 завершен"
     ]
   },
   {
     "time": [
-      529.0,
-      532.0
-    ],
-    "en": [
-      "more final step remember that switch"
-    ],
-    "ru": [
-      "более последний шаг запомните этот переключатель"
-    ]
-  },
-  {
-    "time": [
-      532.0,
-      535.0
-    ],
-    "en": [
-      "ones interfaces are access ports in the"
-    ],
-    "ru": [
-      "одни интерфейсы являются портами доступа в"
-    ]
-  },
-  {
-    "time": [
-      535.0,
-      538.0
-    ],
-    "en": [
-      "native VLAN VLAN 1 by default that"
-    ],
-    "ru": [
-      "собственный VLAN VLAN 1 по умолчанию,"
-    ]
-  },
-  {
-    "time": [
-      538.0,
-      541.0
-    ],
-    "en": [
-      "includes Gigabit Ethernet 0 1 which is"
-    ],
-    "ru": [
-      "включает Gigabit Ethernet 0 1, который"
-    ]
-  },
-  {
-    "time": [
-      541.0,
-      544.0
-    ],
-    "en": [
-      "connected to r1 so it can't send traffic"
-    ],
-    "ru": [
-      "подключен к r1, поэтому он не может отправлять трафик"
-    ]
-  },
-  {
-    "time": [
-      544.0,
-      549.0
-    ],
-    "en": [
-      "from VLAN 13 or VLAN 24 to r1 let's make"
-    ],
-    "ru": [
-      "из VLAN 13 или VLAN 24 на r1 сделаем"
-    ]
-  },
-  {
-    "time": [
-      549.0,
-      555.0
-    ],
-    "en": [
-      "it a trunk interface g0 1 switch port"
-    ],
-    "ru": [
-      "это магистральный интерфейс g0 1 порт коммутатора"
-    ]
-  },
-  {
-    "time": [
-      555.0,
-      558.0
-    ],
-    "en": [
-      "mode trunk ok"
-    ],
-    "ru": [
-      "режим ствола ок"
-    ]
-  },
-  {
-    "time": [
-      558.0,
-      563.0
-    ],
-    "en": [
-      "step 4 is complete"
-    ],
-    "ru": [
-      "шаг 4 завершен"
-    ]
-  },
-  {
-    "time": [
-      563.0,
-      565.0
+      560.126419,
+      566.536333
     ],
     "en": [
       "finally let's test this small Network"
@@ -1621,128 +1261,224 @@ let objs = [
   },
   {
     "time": [
-      565.0,
-      568.0
+      566.536333,
+      571.898954
     ],
     "en": [
-      "all pcs should be able to ping each"
+      "all pcs should be able to ping each other even though they're in separate VLANs"
     ],
     "ru": [
-      "все компьютеры должны иметь возможность пинговать каждый"
+      "все компьютеры должны иметь возможность пинговать друг друга, даже если они находятся в разных VLAN"
     ]
   },
   {
     "time": [
-      568.0,
-      570.0
+      571.898954,
+      579.751511
     ],
     "en": [
-      "other even though they're in separate"
+      "as in the beginning of the lab helping each other PC from pc1 and from PC 2 to check"
     ],
     "ru": [
-      "другое, даже если они в разных"
+      "как в начале лаборатории, помогая друг другу ПК с ПК 1 и ПК 2 проверять"
     ]
   },
   {
     "time": [
-      570.0,
-      571.0
+      579.751511,
+      583.873164
     ],
     "en": [
-      "VLANs"
+      "let's go to PC one first"
     ],
     "ru": [
-      "VLAN"
+      "давай сначала займемся ПК"
     ]
   },
   {
     "time": [
-      571.0,
-      575.0
+      583.873164,
+      593.694333
     ],
     "en": [
-      "as in the beginning of the lab helping"
+      "first I'll ping PC 2 ping ping 10.0.0.1/30 it works"
     ],
     "ru": [
-      "как в начале помощи лаборатории"
+      "сначала пингую комп 2 пинг пинг 10.0.0.1/30 работает"
     ]
   },
   {
     "time": [
-      575.0,
-      579.0
+      593.694333,
+      602.076676
     ],
     "en": [
-      "each other PC from pc1 and from PC to to"
+      "next I'll ping pc3 ping 10.0.0.3 it works as well"
     ],
     "ru": [
-      "друг другу ПК с ПК1 и с ПК на"
+      "далее я пингую pc3 ping 10.0.0.3 он тоже работает"
     ]
   },
   {
     "time": [
-      579.0,
-      583.0
+      602.076676,
+      607.099794
     ],
     "en": [
-      "check let's go to PC one first"
+      "and finally PC for ping 10.0.0.1/31"
     ],
     "ru": [
-      "проверьте, давайте сначала займемся ПК"
+      "и наконец ПК для пинга 10.0.0.1/31"
     ]
   },
   {
     "time": [
-      583.0,
-      592.0
+      607.099794,
+      610.946435
     ],
     "en": [
-      "first I'll paint PC to ping 1000 130 it"
+      "it works ok"
     ],
     "ru": [
-      "сначала распишу комп на пинг 1000 130 это"
+      "это работает нормально"
     ]
   },
   {
     "time": [
-      592.0,
-      593.0
+      610.946435,
+      615.842169
     ],
     "en": [
-      "works"
+      "next let's ping from PC2 first up in PC 1"
     ],
     "ru": [
-      "работает"
+      "затем давайте пингуем с ПК2 сначала на ПК 1"
     ]
   },
   {
     "time": [
-      593.0,
-      600.0
+      615.842169,
+      620.836759
     ],
     "en": [
-      "next I'll ping pc3 ping 1000 3 it works"
+      "ping 10.0.0.2 and it works"
     ],
     "ru": [
-      "дальше пингую pc3 ping 1000 3 работает"
+      "пинг 10.0.0.2 и он работает"
     ]
   },
   {
     "time": [
-      600.0,
-      605.0
+      620.836759,
+      627.019187
     ],
     "en": [
-      "as well and finally PC for ping 1000 won"
+      "next PC 3 ping 10.0.0.3 it works as well"
     ],
     "ru": [
-      "ну и наконец ПК за пинг 1000 вон"
+      "следующий ПК 3 пинг 10.0.0.3 тоже работает"
     ]
   },
   {
     "time": [
-      605.0,
-      612.0
+      627.019187,
+      633.81698
+    ],
+    "en": [
+      "and finally PC 4 ping 10.0.0.1/31 it works too"
+    ],
+    "ru": [
+      "и наконец ПК 4 пинг 10.0.0.1/31 тоже работает"
+    ]
+  },
+  {
+    "time": [
+      633.81698,
+      637.332415
+    ],
+    "en": [
+      "we have successfully configured inter VLAN routing"
+    ],
+    "ru": [
+      "мы успешно настроили маршрутизацию между VLAN"
+    ]
+  },
+  {
+    "time": [
+      637.332415,
+      642.732354
+    ],
+    "en": [
+      "thank you for watching"
+    ],
+    "ru": [
+      "Спасибо за просмотр"
+    ]
+  },
+  {
+    "time": [
+      642.732354,
+      645.348526
+    ],
+    "en": [
+      "I hope this lab and video have been helpful for you"
+    ],
+    "ru": [
+      "Надеюсь, эта лабораторная работа и видео были для вас полезны"
+    ]
+  },
+  {
+    "time": [
+      645.348526,
+      650.576839
+    ],
+    "en": [
+      "please subscribe for future labs like this which will be released weekly"
+    ],
+    "ru": [
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
+    ]
+  },
+  {
+    "time": [
+      650.576839,
+      655.726031
+    ],
+    "en": [
+      "if you have requests for any specific labs let me know in the comment section"
+    ],
+    "ru": [
+      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
+    ]
+  },
+  {
+    "time": [
+      655.726031,
+      661.757487
+    ],
+    "en": [
+      "if you want to support my channel I accept Bitcoin donations via the address in the description"
+    ],
+    "ru": [
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах по адресу в описании"
+    ]
+  },
+  {
+    "time": [
+      661.757487,
+      670.890135
+    ],
+    "en": [
+      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
+    ],
+    "ru": [
+      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
+    ]
+  },
+  {
+    "time": [
+      670.890135,
+      670.890135
     ],
     "en": [
       ""
@@ -1753,8 +1489,8 @@ let objs = [
   },
   {
     "time": [
-      605.0,
-      612.0
+      670.890135,
+      670.890135
     ],
     "en": [
       ""
@@ -1765,218 +1501,14 @@ let objs = [
   },
   {
     "time": [
-      612.0,
-      619.0
+      670.890135,
+      670.890135
     ],
     "en": [
-      "to first up in PC 1 ping 1000 2 and it"
+      ""
     ],
     "ru": [
-      "первым зайти на ПК 1 пинг 1000 2 и он"
-    ]
-  },
-  {
-    "time": [
-      619.0,
-      626.0
-    ],
-    "en": [
-      "works next PC 3 ping 1000 3 it works as"
-    ],
-    "ru": [
-      "работает следующий ПК 3 ping 1000 3 работает как"
-    ]
-  },
-  {
-    "time": [
-      626.0,
-      632.0
-    ],
-    "en": [
-      "well and finally PC for ping 1000 131 it"
-    ],
-    "ru": [
-      "ну и напоследок комп для пинга 1000 131 это"
-    ]
-  },
-  {
-    "time": [
-      632.0,
-      633.0
-    ],
-    "en": [
-      "works too"
-    ],
-    "ru": [
-      "тоже работает"
-    ]
-  },
-  {
-    "time": [
-      633.0,
-      635.0
-    ],
-    "en": [
-      "we have successfully configured inter"
-    ],
-    "ru": [
-      "мы успешно настроили интер"
-    ]
-  },
-  {
-    "time": [
-      635.0,
-      640.0
-    ],
-    "en": [
-      "VLAN routing"
-    ],
-    "ru": [
-      "Маршрутизация VLAN"
-    ]
-  },
-  {
-    "time": [
-      640.0,
-      643.0
-    ],
-    "en": [
-      "thank you for watching I hope this lab"
-    ],
-    "ru": [
-      "спасибо за просмотр, надеюсь, эта лаборатория"
-    ]
-  },
-  {
-    "time": [
-      643.0,
-      645.0
-    ],
-    "en": [
-      "and video have been helpful for you"
-    ],
-    "ru": [
-      "и видео были для вас полезны"
-    ]
-  },
-  {
-    "time": [
-      645.0,
-      648.0
-    ],
-    "en": [
-      "please subscribe for future labs like"
-    ],
-    "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, такие как"
-    ]
-  },
-  {
-    "time": [
-      648.0,
-      650.0
-    ],
-    "en": [
-      "this which will be released weekly if"
-    ],
-    "ru": [
-      "это будет выпускаться еженедельно, если"
-    ]
-  },
-  {
-    "time": [
-      650.0,
-      653.0
-    ],
-    "en": [
-      "you have requests for any specific labs"
-    ],
-    "ru": [
-      "у вас есть запросы по каким-либо конкретным лабораториям"
-    ]
-  },
-  {
-    "time": [
-      653.0,
-      655.0
-    ],
-    "en": [
-      "let me know in the comment section if"
-    ],
-    "ru": [
-      "дайте мне знать в разделе комментариев, если"
-    ]
-  },
-  {
-    "time": [
-      655.0,
-      658.0
-    ],
-    "en": [
-      "you want to support my channel I accept"
-    ],
-    "ru": [
-      "вы хотите поддержать мой канал я принимаю"
-    ]
-  },
-  {
-    "time": [
-      658.0,
-      660.0
-    ],
-    "en": [
-      "Bitcoin donations via the address in the"
-    ],
-    "ru": [
-      "Пожертвования биткойнов через адрес в"
-    ]
-  },
-  {
-    "time": [
-      660.0,
-      664.0
-    ],
-    "en": [
-      "description I am also a brave verified"
-    ],
-    "ru": [
-      "описание я тоже храбрый проверил"
-    ]
-  },
-  {
-    "time": [
-      664.0,
-      667.0
-    ],
-    "en": [
-      "publisher and accept bat or basic"
-    ],
-    "ru": [
-      "издатель и принять летучую мышь или базовый"
-    ]
-  },
-  {
-    "time": [
-      667.0,
-      669.0
-    ],
-    "en": [
-      "attention token donations in the brave"
-    ],
-    "ru": [
-      "пожертвования токенов внимания в храбрых"
-    ]
-  },
-  {
-    "time": [
-      669.0,
-      669.0
-    ],
-    "en": [
-      "browser"
-    ],
-    "ru": [
-      "браузер"
+      ""
     ]
   }
 ]

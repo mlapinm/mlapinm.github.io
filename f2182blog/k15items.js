@@ -2,559 +2,247 @@ let objs = [
   {
     "time": [
       0.0,
-      3.0
+      4.547079
     ],
     "en": [
-      "welcome to this free CCNA packet tracer"
+      "welcome to this free CCNA packet tracer practice lab"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный трассировщик пакетов CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
     ]
   },
   {
     "time": [
-      3.0,
-      5.0
+      4.547079,
+      7.964095
     ],
     "en": [
-      "practice lab you can download the lab"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "Практическая лаборатория вы можете скачать лабораторию"
+      "скачать лабораторный файл можно по ссылке в описании"
     ]
   },
   {
     "time": [
-      5.0,
-      8.0
+      7.964095,
+      17.951206
     ],
     "en": [
-      "file from the link in the description in"
+      "in this lab we will use the system configuration dialog to do some basic setup of a router r1 and a switch switch one"
     ],
     "ru": [
-      "файл по ссылке в описании в"
+      "В этой лабораторной работе мы будем использовать диалоговое окно конфигурации системы, чтобы выполнить базовую настройку маршрутизатора r1 и коммутатора switch one."
     ]
   },
   {
     "time": [
-      8.0,
-      11.0
+      17.951206,
+      29.593011
     ],
     "en": [
-      "this lab we will use the system"
+      "the system configuration dialog is a basic setup wizard that allows you to perform basic setup of things like the hostname and interface IP addresses of a device"
     ],
     "ru": [
-      "в этой лаборатории мы будем использовать систему"
+      "диалоговое окно конфигурации системы представляет собой мастер базовой настройки, который позволяет выполнять базовую настройку таких вещей, как имя хоста и IP-адреса интерфейса устройства."
     ]
   },
   {
     "time": [
-      11.0,
-      13.0
+      29.593011,
+      38.656193
     ],
     "en": [
-      "configuration dialog to do some basic"
+      "although you typically will be doing these things with the commands themselves you should familiarize yourself with the system configuration dialog as well"
     ],
     "ru": [
-      "диалоговое окно конфигурации, чтобы сделать некоторые основные"
+      "хотя вы обычно будете делать это с самими командами, вам также следует ознакомиться с диалоговым окном конфигурации системы."
     ]
   },
   {
     "time": [
-      13.0,
-      17.0
+      38.656193,
+      47.0438
     ],
     "en": [
-      "setup of a router r1 and a switch switch"
+      "try to complete the lab yourself first then continue watching this video if you have trouble or watch it after to check your solution"
     ],
     "ru": [
-      "настройка роутера r1 и переключателя свитча"
+      "попробуйте сначала выполнить лабораторную работу самостоятельно, а затем продолжайте смотреть это видео, если у вас возникнут проблемы, или просмотрите его после, чтобы проверить свое решение."
     ]
   },
   {
     "time": [
-      17.0,
-      21.0
+      47.0438,
+      55.4966
     ],
     "en": [
-      "one the system configuration dialog is a"
+      "our goal is to do some basic configurations on these two devices with the system configuration dialog"
     ],
     "ru": [
-      "один из диалоговых окон конфигурации системы"
+      "наша цель - выполнить некоторые базовые настройки на этих двух устройствах с помощью диалогового окна конфигурации системы."
     ]
   },
   {
     "time": [
-      21.0,
-      23.0
+      55.4966,
+      57.682979
     ],
     "en": [
-      "basic setup wizard that allows you to"
+      "let's go on r1 first"
     ],
     "ru": [
-      "мастер базовой настройки, который позволяет"
+      "давай сначала пойдем на r1"
     ]
   },
   {
     "time": [
-      23.0,
-      25.0
+      57.682979,
+      65.576508
     ],
     "en": [
-      "perform basic setup of things like the"
+      "if this is the first time entering the CLI you will be asked whether you want to enter the system configuration dialog"
     ],
     "ru": [
-      "выполнить базовую настройку таких вещей, как"
+      "если это первый вход в интерфейс командной строки, вас спросят, хотите ли вы войти в диалоговое окно конфигурации системы."
     ]
   },
   {
     "time": [
-      25.0,
-      28.0
+      65.576508,
+      69.674217
     ],
     "en": [
-      "hostname and interface IP addresses of a"
+      "however I have already previously answered no to this"
     ],
     "ru": [
-      "имя хоста и IP-адреса интерфейса"
+      "однако я уже ранее ответил отрицательно на это"
     ]
   },
   {
     "time": [
-      28.0,
-      31.0
+      69.674217,
+      74.077797
     ],
     "en": [
-      "device although you typically will be"
+      "that's no problem I'll type in able to enter privileged exec mode"
     ],
     "ru": [
-      "устройство, хотя вы обычно будете"
+      "это не проблема, я ввожу возможность войти в привилегированный режим exec"
     ]
   },
   {
     "time": [
-      31.0,
-      33.0
+      74.077797,
+      79.850683
     ],
     "en": [
-      "doing these things with the commands"
+      "then use the command setup and then answer yes to enter the configuration dialog"
     ],
     "ru": [
-      "делать это с помощью команд"
+      "затем используйте команду setup, а затем ответьте да, чтобы войти в диалоговое окно конфигурации"
     ]
   },
   {
     "time": [
-      33.0,
-      34.0
+      79.850683,
+      90.429979
     ],
     "en": [
-      "themselves you should familiarize"
+      "next we are asked if you want to enter basic management setup which as stated here only configures enough connectivity for management of the system"
     ],
     "ru": [
-      "сами вы должны ознакомиться"
+      "Затем нас спрашивают, хотите ли вы войти в базовую настройку управления, которая, как указано здесь, настраивает только достаточное количество подключений для управления системой."
     ]
   },
   {
     "time": [
-      34.0,
-      36.0
+      90.429979,
+      95.9823
     ],
     "en": [
-      "yourself with the system configuration"
+      "let's go through the extended setup this time although we will only be configuring one interface"
     ],
     "ru": [
-      "сами с конфигурацией системы"
+      "Давайте на этот раз рассмотрим расширенную настройку, хотя мы будем настраивать только один интерфейс"
     ]
   },
   {
     "time": [
-      36.0,
-      40.0
+      95.9823,
+      97.685636
     ],
     "en": [
-      "dialog as well try to complete the lab"
+      "so let's type no"
     ],
     "ru": [
-      "диалог, а также попробуйте пройти лабораторную работу"
+      "так что давай набираем нет"
     ]
   },
   {
     "time": [
-      40.0,
-      42.0
+      97.685636,
+      103.045464
     ],
     "en": [
-      "yourself first then continue watching"
+      "now we are asked if you want to see the current interface summary"
     ],
     "ru": [
-      "сначала себя, а потом продолжай смотреть"
+      "теперь нас спрашивают, хотите ли вы увидеть текущую сводку интерфейса"
     ]
   },
   {
     "time": [
-      42.0,
-      44.0
+      103.045464,
+      110.465146
     ],
     "en": [
-      "this video if you have trouble or watch"
+      "the answer in brackets is the default answer so I could just hit enter to continue or type in no to skip it"
     ],
     "ru": [
-      "это видео, если у вас возникли проблемы, или посмотрите"
+      "ответ в скобках является ответом по умолчанию, поэтому я могу просто нажать Enter, чтобы продолжить, или введите нет, чтобы пропустить его"
     ]
   },
   {
     "time": [
-      44.0,
-      48.0
+      110.465146,
+      114.309246
     ],
     "en": [
-      "it after to check your solution"
+      "I could of course type in yes to I just don't have to"
     ],
     "ru": [
-      "это после, чтобы проверить ваше решение"
+      "Я мог бы, конечно, ввести да, чтобы мне просто не нужно было"
     ]
   },
   {
     "time": [
-      48.0,
-      51.0
+      114.309246,
+      117.366835
     ],
     "en": [
-      "our goal is to do some basic"
+      "I'll hit enter to view the summary"
     ],
     "ru": [
-      "наша цель - сделать некоторые основные"
+      "Я нажму \"Ввод\", чтобы просмотреть сводку"
     ]
   },
   {
     "time": [
-      51.0,
-      53.0
+      117.366835,
+      124.883897
     ],
     "en": [
-      "configurations on these two devices with"
+      "as you can see there are three Gigabit Ethernet interfaces as well as a VLAN one interface on r1"
     ],
     "ru": [
-      "конфигурации на этих двух устройствах с"
+      "как вы можете видеть, есть три интерфейса Gigabit Ethernet, а также один интерфейс VLAN на r1"
     ]
   },
   {
     "time": [
-      53.0,
-      55.0
-    ],
-    "en": [
-      "the system configuration dialog let's go"
-    ],
-    "ru": [
-      "диалог конфигурации системы поехали"
-    ]
-  },
-  {
-    "time": [
-      55.0,
-      60.0
-    ],
-    "en": [
-      "on our one first if this is the first"
-    ],
-    "ru": [
-      "на нашем первом, если это первый"
-    ]
-  },
-  {
-    "time": [
-      60.0,
-      62.0
-    ],
-    "en": [
-      "time entering the CLI you will be asked"
-    ],
-    "ru": [
-      "время входа в интерфейс командной строки вас спросят"
-    ]
-  },
-  {
-    "time": [
-      62.0,
-      63.0
-    ],
-    "en": [
-      "whether you want to enter the system"
-    ],
-    "ru": [
-      "хотите ли вы войти в систему"
-    ]
-  },
-  {
-    "time": [
-      63.0,
-      67.0
-    ],
-    "en": [
-      "configuration dialog however I have"
-    ],
-    "ru": [
-      "диалоговое окно конфигурации, однако у меня есть"
-    ]
-  },
-  {
-    "time": [
-      67.0,
-      68.0
-    ],
-    "en": [
-      "already previously answered no to this"
-    ],
-    "ru": [
-      "уже ранее ответили нет на это"
-    ]
-  },
-  {
-    "time": [
-      68.0,
-      72.0
-    ],
-    "en": [
-      "that's no problem I'll type in able to"
-    ],
-    "ru": [
-      "это не проблема, я напечатаю в состоянии"
-    ]
-  },
-  {
-    "time": [
-      72.0,
-      74.0
-    ],
-    "en": [
-      "enter privileged exec mode then use the"
-    ],
-    "ru": [
-      "войдите в привилегированный режим exec, затем используйте"
-    ]
-  },
-  {
-    "time": [
-      74.0,
-      78.0
-    ],
-    "en": [
-      "command setup and then answer yes to"
-    ],
-    "ru": [
-      "настройку команды, а затем ответьте да на"
-    ]
-  },
-  {
-    "time": [
-      78.0,
-      81.0
-    ],
-    "en": [
-      "enter the configuration dialog next we"
-    ],
-    "ru": [
-      "войдите в диалоговое окно конфигурации, затем мы"
-    ]
-  },
-  {
-    "time": [
-      81.0,
-      83.0
-    ],
-    "en": [
-      "are asked if you want to enter basic"
-    ],
-    "ru": [
-      "спрашивают, хотите ли вы войти в базовый"
-    ]
-  },
-  {
-    "time": [
-      83.0,
-      86.0
-    ],
-    "en": [
-      "management setup which as stated here"
-    ],
-    "ru": [
-      "настройка управления, которая, как указано здесь"
-    ]
-  },
-  {
-    "time": [
-      86.0,
-      88.0
-    ],
-    "en": [
-      "only configures enough connectivity for"
-    ],
-    "ru": [
-      "настраивает достаточно подключения только для"
-    ]
-  },
-  {
-    "time": [
-      88.0,
-      91.0
-    ],
-    "en": [
-      "management of the system let's go"
-    ],
-    "ru": [
-      "управление системой пойдем"
-    ]
-  },
-  {
-    "time": [
-      91.0,
-      92.0
-    ],
-    "en": [
-      "through the extended setup this time"
-    ],
-    "ru": [
-      "через расширенную настройку на этот раз"
-    ]
-  },
-  {
-    "time": [
-      92.0,
-      94.0
-    ],
-    "en": [
-      "although we will only be configuring one"
-    ],
-    "ru": [
-      "хотя мы будем настраивать только один"
-    ]
-  },
-  {
-    "time": [
-      94.0,
-      100.0
-    ],
-    "en": [
-      "interface so let's type no now we are"
-    ],
-    "ru": [
-      "интерфейс, так что давайте набираем нет, теперь мы"
-    ]
-  },
-  {
-    "time": [
-      100.0,
-      101.0
-    ],
-    "en": [
-      "asked if you want to see the current"
-    ],
-    "ru": [
-      "спросили, хотите ли вы увидеть текущий"
-    ]
-  },
-  {
-    "time": [
-      101.0,
-      104.0
-    ],
-    "en": [
-      "interface summary the answer in brackets"
-    ],
-    "ru": [
-      "резюме интерфейса ответ в скобках"
-    ]
-  },
-  {
-    "time": [
-      104.0,
-      106.0
-    ],
-    "en": [
-      "is the default answer so I could just"
-    ],
-    "ru": [
-      "это ответ по умолчанию, поэтому я мог просто"
-    ]
-  },
-  {
-    "time": [
-      106.0,
-      109.0
-    ],
-    "en": [
-      "hit enter to continue or type in no to"
-    ],
-    "ru": [
-      "нажмите Enter, чтобы продолжить, или введите нет, чтобы"
-    ]
-  },
-  {
-    "time": [
-      109.0,
-      112.0
-    ],
-    "en": [
-      "skip it I could of course type in yes to"
-    ],
-    "ru": [
-      "пропустить, я, конечно, могу ввести да, чтобы"
-    ]
-  },
-  {
-    "time": [
-      112.0,
-      115.0
-    ],
-    "en": [
-      "I just don't have to I'll hit enter to"
-    ],
-    "ru": [
-      "Мне просто не нужно, я нажму \"Войти\""
-    ]
-  },
-  {
-    "time": [
-      115.0,
-      119.0
-    ],
-    "en": [
-      "view the summary as you can see there"
-    ],
-    "ru": [
-      "просмотреть сводку, как вы можете видеть там"
-    ]
-  },
-  {
-    "time": [
-      119.0,
-      121.0
-    ],
-    "en": [
-      "are three Gigabit Ethernet interfaces as"
-    ],
-    "ru": [
-      "три интерфейса Gigabit Ethernet как"
-    ]
-  },
-  {
-    "time": [
-      121.0,
-      125.0
-    ],
-    "en": [
-      "well as a VLAN one interface on our one"
-    ],
-    "ru": [
-      "а так же интерфейс VLAN один на нашем"
-    ]
-  },
-  {
-    "time": [
-      125.0,
-      127.0
+      124.883897,
+      127.958476
     ],
     "en": [
       "now we are asked for the hostname"
@@ -565,1160 +253,752 @@ let objs = [
   },
   {
     "time": [
-      127.0,
-      130.0
+      127.958476,
+      132.232732
     ],
     "en": [
-      "currently it is router and that is also"
+      "currently it is router and that is also the default answer"
     ],
     "ru": [
-      "в настоящее время это роутер, и это тоже"
+      "в настоящее время это маршрутизатор, и это также ответ по умолчанию"
     ]
   },
   {
     "time": [
-      130.0,
-      133.0
+      132.232732,
+      135.763431
     ],
     "en": [
-      "the default answer let's change the"
+      "let's change the hostname to r1"
     ],
     "ru": [
-      "ответ по умолчанию, давайте изменим"
+      "давайте изменим имя хоста на r1"
     ]
   },
   {
     "time": [
-      133.0,
-      139.0
+      135.763431,
+      146.568767
     ],
     "en": [
-      "hostname to r1 now we are asked for the"
+      "now we are asked for the enable secret as you may remember and as is written here the enable secret is used to enter privileged exec mode"
     ],
     "ru": [
-      "имя хоста на r1, теперь нас просят указать"
+      "теперь у нас спрашивают секрет включения, как вы, возможно, помните, и, как здесь написано, секрет включения используется для входа в привилегированный режим exec"
     ]
   },
   {
     "time": [
-      139.0,
-      142.0
+      146.568767,
+      148.600481
     ],
     "en": [
-      "enable secret as you may remember and as"
+      "and is automatically encrypted"
     ],
     "ru": [
-      "включить секрет, как вы помните и как"
+      "и автоматически зашифровывается"
     ]
   },
   {
     "time": [
-      142.0,
-      144.0
+      148.600481,
+      152.192444
     ],
     "en": [
-      "is written here the enable secret is"
+      "according to the instructions for this lab"
     ],
     "ru": [
-      "здесь написано, что секрет включения"
+      "согласно инструкциям для этой лаборатории"
     ]
   },
   {
     "time": [
-      144.0,
-      146.0
+      152.192444,
+      156.07317
     ],
     "en": [
-      "used to enter privileged exec mode and"
+      "let's use an enable secret of Cisco with a capital C"
     ],
     "ru": [
-      "используется для входа в привилегированный режим exec и"
+      "давайте использовать секрет включения Cisco с большой буквы"
     ]
   },
   {
     "time": [
-      146.0,
-      150.0
+      156.07317,
+      159.088584
     ],
     "en": [
-      "is automatically encrypted according to"
+      "which is important because these passwords are case sensitive"
     ],
     "ru": [
-      "автоматически шифруется в соответствии с"
+      "что важно, потому что эти пароли чувствительны к регистру"
     ]
   },
   {
     "time": [
-      150.0,
-      152.0
+      159.088584,
+      163.326876
     ],
     "en": [
-      "the instructions for this lab let's use"
+      "next the enable password"
     ],
     "ru": [
-      "инструкции для этой лаборатории давайте использовать"
+      "затем включить пароль"
     ]
   },
   {
     "time": [
-      152.0,
-      155.0
+      163.326876,
+      165.917872
     ],
     "en": [
-      "an enable secret of Cisco with a capital"
+      "CCNA in all caps"
     ],
     "ru": [
-      "активный секрет Cisco с большой буквы"
+      "CCNA заглавными буквами"
     ]
   },
   {
     "time": [
-      155.0,
-      157.0
+      165.917872,
+      169.669834
     ],
     "en": [
-      "C which is important because these"
+      "then the virtual terminal password"
     ],
     "ru": [
-      "C, что важно, потому что эти"
+      "затем пароль виртуального терминала"
     ]
   },
   {
     "time": [
-      157.0,
-      159.0
+      169.669834,
+      178.281989
     ],
     "en": [
-      "passwords are case sensitive"
+      "we look at accessing the router over a network interface in another lab for now let's just set a password of CCENT in all caps"
     ],
     "ru": [
-      "пароли чувствительны к регистру"
+      "мы рассмотрим доступ к маршрутизатору через сетевой интерфейс в другой лаборатории, а пока давайте просто установим пароль CCENT заглавными буквами"
     ]
   },
   {
     "time": [
-      159.0,
-      165.0
+      178.281989,
+      184.343249
     ],
     "en": [
-      "next the enable password CCNA in all"
+      "then we are asked if we want to configure SNMP network management"
     ],
     "ru": [
-      "затем включить пароль CCNA во всех"
+      "затем нас спрашивают, хотим ли мы настроить управление сетью SNMP"
     ]
   },
   {
     "time": [
-      165.0,
-      168.0
+      184.343249,
+      187.244598
     ],
     "en": [
-      "caps then the virtual terminal password"
+      "I'll hit enter to accept the default of no"
     ],
     "ru": [
-      "заглавные буквы, затем пароль виртуального терминала"
+      "Я нажму \"Enter\", чтобы принять значение по умолчанию - нет."
     ]
   },
   {
     "time": [
-      168.0,
-      171.0
+      187.244598,
+      189.702281
     ],
     "en": [
-      "we look at accessing the router over a"
+      "SNMP will be for later labs"
     ],
     "ru": [
-      "мы смотрим на доступ к маршрутизатору через"
+      "SNMP будет использоваться в следующих лабораторных работах"
     ]
   },
   {
     "time": [
-      171.0,
-      174.0
+      189.702281,
+      195.325401
     ],
     "en": [
-      "network interface in another lab for now"
+      "then again as I don't want to configure the VLAN one interface at this time"
     ],
     "ru": [
-      "сетевой интерфейс пока в другой лаборатории"
+      "опять же, поскольку я не хочу настраивать интерфейс VLAN one в это время"
     ]
   },
   {
     "time": [
-      174.0,
-      176.0
+      195.325401,
+      203.042621
     ],
     "en": [
-      "let's just set a password of CCENT in"
+      "now the Gigabit Ethernet 0 0 interface is the one used to connect to switch 1 so let's configure it"
     ],
     "ru": [
-      "давайте просто установим пароль CCENT в"
+      "теперь интерфейс Gigabit Ethernet 0 0 используется для подключения к коммутатору 1, поэтому давайте настроим его"
     ]
   },
   {
     "time": [
-      176.0,
-      181.0
+      203.042621,
+      205.829633
     ],
     "en": [
-      "all caps then we are asked if we want to"
+      "type yes and hit enter"
     ],
     "ru": [
-      "все заглавными буквами, тогда нас спрашивают, хотим ли мы"
+      "введите да и нажмите ввод"
     ]
   },
   {
     "time": [
-      181.0,
-      182.0
+      205.829633,
+      210.696433
     ],
     "en": [
-      "configure"
+      "the IP address is 192.168.1.1"
     ],
     "ru": [
-      "настроить"
+      "IP-адрес 192.168.1.1"
     ]
   },
   {
     "time": [
-      182.0,
-      184.0
+      210.696433,
+      218.030646
     ],
     "en": [
-      "SNMP network management I'll hit enter"
+      "and now we'll accept the default subnet mask of 255.255.255.0 by hitting Enter"
     ],
     "ru": [
-      "Управление сетью по протоколу SNMP. Я нажму \"Enter\""
+      "и теперь мы примем маску подсети по умолчанию 255.255.255.0, нажав Enter"
     ]
   },
   {
     "time": [
-      184.0,
-      187.0
+      218.030646,
+      224.736546
     ],
     "en": [
-      "to accept the default of no SNMP will be"
+      "I don't want to configure that gig 0 1 interface or that gig 0 2 interface"
     ],
     "ru": [
-      "принять значение по умолчанию без SNMP будет"
+      "Я не хочу настраивать этот интерфейс 0 1 или интерфейс 0 2"
     ]
   },
   {
     "time": [
-      187.0,
-      191.0
+      224.736546,
+      228.297716
     ],
     "en": [
-      "for later labs then again as I don't"
+      "now we're at the final option"
     ],
     "ru": [
-      "для более поздних лабораторий то снова, поскольку я не"
+      "теперь мы на последнем варианте"
     ]
   },
   {
     "time": [
-      191.0,
-      193.0
+      228.297716,
+      235.216611
     ],
     "en": [
-      "want to configure the VLAN one interface"
+      "we can cancel this config with 0 redo it with 1 or save the config with 2"
     ],
     "ru": [
-      "хотите настроить интерфейс VLAN one"
+      "мы можем отменить эту конфигурацию с помощью 0, повторить ее с помощью 1 или сохранить конфигурацию с помощью 2"
     ]
   },
   {
     "time": [
-      193.0,
-      195.0
+      235.216611,
+      238.790694
     ],
     "en": [
-      "at this time"
+      "let's accept the default answer of 2 by hitting Enter"
     ],
     "ru": [
-      "на данный момент"
+      "примите ответ по умолчанию - 2, нажав Enter"
     ]
   },
   {
     "time": [
-      195.0,
-      198.0
+      238.790694,
+      240.231867
     ],
     "en": [
-      "now the Gigabit Ethernet 0 0 interface"
+      "that's it"
     ],
     "ru": [
-      "теперь интерфейс Gigabit Ethernet 0 0"
+      "это оно"
     ]
   },
   {
     "time": [
-      198.0,
-      201.0
+      240.231867,
+      244.263425
     ],
     "en": [
-      "is the one used to connect to switch 1"
+      "now let's use show startup config to confirm"
     ],
     "ru": [
-      "тот, который используется для подключения к переключателю 1"
+      "теперь давайте используем show startup config, чтобы подтвердить"
     ]
   },
   {
     "time": [
-      201.0,
-      204.0
+      244.263425,
+      247.718703
     ],
     "en": [
-      "so let's configure it type yes and hit"
+      "here's our hostname of our one"
     ],
     "ru": [
-      "так что давайте настроим его, введите да и нажмите"
+      "вот наше имя хоста нашего единственного"
     ]
   },
   {
     "time": [
-      204.0,
-      211.0
+      247.718703,
+      253.089857
     ],
     "en": [
-      "enter the IP address is 192.168.1.1 and"
+      "our encrypted enable secret and our unencrypted enabled password"
     ],
     "ru": [
-      "введите IP-адрес 192.168.1.1 и"
+      "наш зашифрованный ключ включения и наш незашифрованный пароль включения"
     ]
   },
   {
     "time": [
-      211.0,
-      213.0
+      253.089857,
+      258.947676
     ],
     "en": [
-      "now we'll accept the default subnet mask"
+      "the IP address of gig 0"
     ],
     "ru": [
-      "теперь примем маску подсети по умолчанию"
+      "IP-адрес гига 0"
     ]
   },
   {
     "time": [
-      213.0,
-      217.0
+      258.947676,
+      264.83408
     ],
     "en": [
-      "of 255.255.255.0 by hitting Enter"
+      "and the password on the vty line which is the virtual terminal mentioned before"
     ],
     "ru": [
-      "из 255.255.255.0, нажав Enter"
+      "и пароль в строке vty, которая является виртуальным терминалом, упомянутым ранее"
     ]
   },
   {
     "time": [
-      217.0,
-      220.0
+      264.83408,
+      267.795849
     ],
     "en": [
-      "I don't want to configure that gig 0 1"
+      "our ones configuration is complete"
     ],
     "ru": [
-      "Я не хочу настраивать этот концерт 0 1"
+      "наша конфигурация завершена"
     ]
   },
   {
     "time": [
-      220.0,
-      226.0
+      267.795849,
+      274.942063
     ],
     "en": [
-      "interface or that gig 0 2 interface now"
+      "next let's go through the setup dialog for switch 1"
     ],
     "ru": [
-      "интерфейс или тот интерфейс 0 2 сейчас"
+      "Далее пройдемся по диалогу настройки переключателя 1"
     ]
   },
   {
     "time": [
-      226.0,
-      229.0
+      274.942063,
+      283.626909
     ],
     "en": [
-      "we're at the final option we can cancel"
+      "enable setup yes to enter the configuration dialog"
     ],
     "ru": [
-      "мы на последнем этапе, мы можем отменить"
+      "включить настройку да, чтобы войти в диалоговое окно конфигурации"
     ]
   },
   {
     "time": [
-      229.0,
-      232.0
+      283.626909,
+      288.481873
     ],
     "en": [
-      "this config with 0 redo it with 1 or"
+      "know as we don't want to enter basic management setup"
     ],
     "ru": [
-      "этот конфиг с 0 повторить его с 1 или"
+      "известно, что мы не хотим вводить базовую настройку управления"
     ]
   },
   {
     "time": [
-      232.0,
-      236.0
+      288.481873,
+      292.068849
     ],
     "en": [
-      "save the config with 2 let's accept the"
+      "let's just hit enter to view the interface summary"
     ],
     "ru": [
-      "сохраните конфигурацию с помощью 2, давайте примем"
+      "просто нажмите Enter, чтобы просмотреть сводку интерфейса"
     ]
   },
   {
     "time": [
-      236.0,
-      238.0
+      292.068849,
+      303.518577
     ],
     "en": [
-      "default answer of 2 by hitting Enter"
+      "as you can see there are a lot of interfaces which is expected switches require more interfaces than routers as they're going to be connecting lots of end hosts to them"
     ],
     "ru": [
-      "ответ по умолчанию - 2, нажав Enter"
+      "как вы можете видеть, существует множество интерфейсов, и ожидается, что коммутаторам потребуется больше интерфейсов, чем маршрутизаторам, поскольку они будут подключать к ним множество конечных хостов."
     ]
   },
   {
     "time": [
-      238.0,
-      241.0
+      303.518577,
+      307.155561
     ],
     "en": [
-      "that's it now let's use show startup"
+      "let's change the hostname to switch 1"
     ],
     "ru": [
-      "вот и все, теперь давайте использовать запуск шоу"
+      "давайте изменим имя хоста на переключатель 1"
     ]
   },
   {
     "time": [
-      241.0,
-      246.0
+      307.155561,
+      310.770105
     ],
     "en": [
-      "config to confirm here's our hostname of"
+      "and now the same passwords as on r1"
     ],
     "ru": [
-      "config, чтобы подтвердить вот наше имя хоста"
+      "и теперь те же пароли, что и на r1"
     ]
   },
   {
     "time": [
-      246.0,
-      250.0
+      310.770105,
+      314.950968
     ],
     "en": [
-      "our one our encrypted enable secret and"
+      "Cisco with a capital C for the enable secret"
     ],
     "ru": [
-      "наш зашифрованный секрет включения и"
+      "Cisco с заглавной C для секрета включения"
     ]
   },
   {
     "time": [
-      250.0,
-      255.0
+      314.950968,
+      320.037908
     ],
     "en": [
-      "our unencrypted enabled password the IP"
+      "CCNA in all caps for the enable password"
     ],
     "ru": [
-      "наш незашифрованный активированный пароль IP"
+      "CCNA заглавными буквами для пароля включения"
     ]
   },
   {
     "time": [
-      255.0,
-      261.0
+      320.037908,
+      323.940784
     ],
     "en": [
-      "address of gig 0 and the password on the"
+      "and C sent in all caps for the virtual terminal password"
     ],
     "ru": [
-      "адрес гига 0 и пароль на"
+      "и C отправил все заглавные буквы для пароля виртуального терминала"
     ]
   },
   {
     "time": [
-      261.0,
-      263.0
+      323.940784,
+      331.686529
     ],
     "en": [
-      "vty line which is the virtual terminal"
+      "enter to accept the default of no as we don't want to configure SNMP at this time"
     ],
     "ru": [
-      "vty линия, которая является виртуальным терминалом"
+      "введите, чтобы принять значение по умолчанию нет, поскольку мы не хотим настраивать SNMP в настоящее время"
     ]
   },
   {
     "time": [
-      263.0,
-      266.0
+      331.686529,
+      336.90723
     ],
     "en": [
-      "mentioned before our ones configuration"
+      "now type yes and hit enter to configure the VLAN 1 interface"
     ],
     "ru": [
-      "упомянутые перед нашей конфигурацией"
+      "теперь введите yes и нажмите Enter, чтобы настроить интерфейс VLAN 1."
     ]
   },
   {
     "time": [
-      266.0,
-      270.0
+      336.90723,
+      341.658118
     ],
     "en": [
-      "is complete"
+      "we're going to give the VLAN 1 interface an IP address"
     ],
     "ru": [
-      "завершено"
+      "мы собираемся дать интерфейсу VLAN 1 IP-адрес"
     ]
   },
   {
     "time": [
-      270.0,
-      273.0
+      341.658118,
+      347.528874
     ],
     "en": [
-      "next let's go through the setup dialog"
+      "note that physical switch interfaces or switch ports cannot be given an IP address"
     ],
     "ru": [
-      "Далее пройдемся по диалогу настройки"
+      "обратите внимание, что физическим интерфейсам коммутатора или портам коммутатора нельзя присвоить IP-адрес."
     ]
   },
   {
     "time": [
-      273.0,
-      281.0
+      347.528874,
+      352.426624
     ],
     "en": [
-      "for switch 1 and Nabal setup yes to"
+      "however you can give an IP address to one VLAN interface"
     ],
     "ru": [
-      "для переключателя 1 и настройки Nabal да для"
+      "однако вы можете дать IP-адрес одному интерфейсу VLAN."
     ]
   },
   {
     "time": [
-      281.0,
-      285.0
+      352.426624,
+      357.287996
     ],
     "en": [
-      "enter the configuration dialog know as"
+      "which can then be used to connect to the switch for management purposes something we'll do in a later lab"
     ],
     "ru": [
-      "войдите в диалоговое окно конфигурации, известное как"
+      "который затем можно использовать для подключения к коммутатору в целях управления, что мы сделаем в следующей лабораторной работе."
     ]
   },
   {
     "time": [
-      285.0,
-      287.0
+      357.287996,
+      361.086722
     ],
     "en": [
-      "we don't want to enter basic management"
+      "we're going to configure the VLAN 1 interface here"
     ],
     "ru": [
-      "мы не хотим вводить базовый менеджмент"
+      "мы собираемся настроить интерфейс VLAN 1 здесь"
     ]
   },
   {
     "time": [
-      287.0,
-      290.0
+      361.086722,
+      366.686264
     ],
     "en": [
-      "setup let's just hit enter to view the"
+      "as we're going to need the IP address to receive the response from our one when we ping it in the next step"
     ],
     "ru": [
-      "настройки, просто нажмите клавишу ВВОД, чтобы просмотреть"
+      "поскольку нам понадобится IP-адрес, чтобы получить ответ от нашего, когда мы пингуем его на следующем шаге"
     ]
   },
   {
     "time": [
-      290.0,
-      294.0
+      366.686264,
+      372.56858
     ],
     "en": [
-      "interface summary as you can see there"
+      "the IP address will be 192.168.1.2"
     ],
     "ru": [
-      "резюме интерфейса, как вы можете видеть там"
+      "IP-адрес будет 192.168.1.2"
     ]
   },
   {
     "time": [
-      294.0,
-      296.0
+      372.56858,
+      379.429832
     ],
     "en": [
-      "are a lot of interfaces which is"
+      "hit enter to accept the default subnet mask of 255.255.255.0"
     ],
     "ru": [
-      "много интерфейсов, которые"
+      "нажмите Enter, чтобы принять маску подсети по умолчанию 255.255.255.0"
     ]
   },
   {
     "time": [
-      296.0,
-      298.0
+      379.429832,
+      384.325061
     ],
     "en": [
-      "expected switches require more"
+      "now keep hitting Enter to skip configuration of these interfaces"
     ],
     "ru": [
-      "ожидаемые переключатели требуют большего"
+      "теперь продолжайте нажимать Enter, чтобы пропустить настройку этих интерфейсов"
     ]
   },
   {
     "time": [
-      298.0,
-      300.0
+      384.325061,
+      386.409478
     ],
     "en": [
-      "interfaces than routers as they're going"
+      "we won't be configuring them for now"
     ],
     "ru": [
-      "интерфейсы, чем маршрутизаторы, когда они собираются"
+      "мы пока не будем их настраивать"
     ]
   },
   {
     "time": [
-      300.0,
-      302.0
+      386.409478,
+      397.432928
     ],
     "en": [
-      "to be connecting lots of end hosts to"
+      "type know as we won't be configuring this as a cluster command switch which is beyond the scope of this lab"
     ],
     "ru": [
-      "подключать множество конечных хостов к"
+      "type know, поскольку мы не будем настраивать это как переключатель команд кластера, что выходит за рамки этой лабораторной работы."
     ]
   },
   {
     "time": [
-      302.0,
-      306.0
+      397.432928,
+      401.21944
     ],
     "en": [
-      "them let's change the hostname to switch"
+      "now hit enter one more time to save the configuration"
     ],
     "ru": [
-      "их давайте изменим имя хоста, чтобы переключить"
+      "теперь нажмите Enter еще раз, чтобы сохранить конфигурацию"
     ]
   },
   {
     "time": [
-      306.0,
-      311.0
+      401.21944,
+      405.290424
     ],
     "en": [
-      ""
+      "let's type show startup config again to check"
     ],
     "ru": [
-      ""
+      "давайте снова введем show startup config, чтобы проверить"
     ]
   },
   {
     "time": [
-      306.0,
-      311.0
+      405.290424,
+      408.424046
     ],
     "en": [
-      ""
+      "there's the hostname of switch one"
     ],
     "ru": [
-      ""
+      "там имя хоста первого переключателя"
     ]
   },
   {
     "time": [
-      311.0,
-      313.0
+      408.424046,
+      412.480064
     ],
     "en": [
-      "Cisco with a capital C for the enable"
+      "hour enable secret and password"
     ],
     "ru": [
-      "Cisco с заглавной C для включения"
+      "час включить секрет и пароль"
     ]
   },
   {
     "time": [
-      313.0,
-      318.0
+      412.480064,
+      417.703653
     ],
     "en": [
-      "secret CCNA in all caps for the enable"
+      "our IP address on VLAN 1"
     ],
     "ru": [
-      "секрет CCNA заглавными буквами для включения"
+      "наш IP-адрес в VLAN 1"
     ]
   },
   {
     "time": [
-      318.0,
-      322.0
+      417.703653,
+      421.658959
     ],
     "en": [
-      "password and C sent in all caps for the"
+      "and our password on the vty lines"
     ],
     "ru": [
-      "пароль и C отправлены заглавными буквами для"
+      "и наш пароль в строках VTY"
     ]
   },
   {
     "time": [
-      322.0,
-      326.0
+      421.658959,
+      427.609998
     ],
     "en": [
-      "virtual terminal password enter to"
+      "by the way for those wondering vty stands for virtual teletype"
     ],
     "ru": [
-      "пароль виртуального терминала введите в"
+      "кстати для тех, кому интересно, vty означает виртуальный телетайп."
     ]
   },
   {
     "time": [
-      326.0,
-      328.0
+      427.609998,
+      431.309725
     ],
     "en": [
-      "accept the default of no as we don't"
+      "ok now finally let's ping from switch 1 to r1"
     ],
     "ru": [
-      "принимаем значение по умолчанию \"нет\", поскольку мы этого не делаем"
+      "Хорошо, теперь, наконец, давайте пингуем с переключателя 1 на r1"
     ]
   },
   {
     "time": [
-      328.0,
-      332.0
+      431.309725,
+      439.360195
     ],
     "en": [
-      "want to configure SNMP at this time now"
+      "ping 192.168.1.1 the ping succeeds"
     ],
     "ru": [
-      "хотите настроить SNMP прямо сейчас"
+      "пинг 192.168.1.1 пинг успешно"
     ]
   },
   {
     "time": [
-      332.0,
-      335.0
-    ],
-    "en": [
-      "type yes and hit enter to configure the"
-    ],
-    "ru": [
-      "введите да и нажмите Enter, чтобы настроить"
-    ]
-  },
-  {
-    "time": [
-      335.0,
-      339.0
-    ],
-    "en": [
-      "VLAN 1 interface we're going to give the"
-    ],
-    "ru": [
-      "Интерфейс VLAN 1 мы дадим"
-    ]
-  },
-  {
-    "time": [
-      339.0,
-      341.0
-    ],
-    "en": [
-      "VLAN 1 interface an IP address"
-    ],
-    "ru": [
-      "Интерфейс VLAN 1 IP-адрес"
-    ]
-  },
-  {
-    "time": [
-      341.0,
-      344.0
-    ],
-    "en": [
-      "note that physical switch interfaces or"
-    ],
-    "ru": [
-      "обратите внимание, что физические интерфейсы коммутатора или"
-    ]
-  },
-  {
-    "time": [
-      344.0,
-      346.0
-    ],
-    "en": [
-      "switch ports cannot be given an IP"
-    ],
-    "ru": [
-      "портам коммутатора нельзя присвоить IP"
-    ]
-  },
-  {
-    "time": [
-      346.0,
-      350.0
-    ],
-    "en": [
-      "address however you can give an IP"
-    ],
-    "ru": [
-      "адрес, но вы можете указать IP"
-    ]
-  },
-  {
-    "time": [
-      350.0,
-      352.0
-    ],
-    "en": [
-      "address to one VLAN interface which can"
-    ],
-    "ru": [
-      "обращаться к одному интерфейсу VLAN, который может"
-    ]
-  },
-  {
-    "time": [
-      352.0,
-      353.0
-    ],
-    "en": [
-      "then be used to connect to the switch"
-    ],
-    "ru": [
-      "затем использоваться для подключения к коммутатору"
-    ]
-  },
-  {
-    "time": [
-      353.0,
-      355.0
-    ],
-    "en": [
-      "for management purposes something we'll"
-    ],
-    "ru": [
-      "для целей управления что-то мы"
-    ]
-  },
-  {
-    "time": [
-      355.0,
-      358.0
-    ],
-    "en": [
-      "do in a later lab we're going to"
-    ],
-    "ru": [
-      "сделать в более поздней лаборатории мы собираемся"
-    ]
-  },
-  {
-    "time": [
-      358.0,
-      360.0
-    ],
-    "en": [
-      "configure the VLAN 1 interface here as"
-    ],
-    "ru": [
-      "настройте здесь интерфейс VLAN 1 как"
-    ]
-  },
-  {
-    "time": [
-      360.0,
-      362.0
-    ],
-    "en": [
-      "we're going to need the IP address to"
-    ],
-    "ru": [
-      "нам понадобится IP-адрес для"
-    ]
-  },
-  {
-    "time": [
-      362.0,
-      364.0
-    ],
-    "en": [
-      "receive the response from our one when"
-    ],
-    "ru": [
-      "получить ответ от нашего, когда"
-    ]
-  },
-  {
-    "time": [
-      364.0,
-      368.0
-    ],
-    "en": [
-      "we ping it in the next step the IP"
-    ],
-    "ru": [
-      "мы пингуем его на следующем шаге IP"
-    ]
-  },
-  {
-    "time": [
-      368.0,
-      374.0
-    ],
-    "en": [
-      "address will be 192.168.1.2 hit enter to"
-    ],
-    "ru": [
-      "адрес будет 192.168.1.2 нажмите Enter, чтобы"
-    ]
-  },
-  {
-    "time": [
-      374.0,
-      376.0
-    ],
-    "en": [
-      "accept the default subnet mask of"
-    ],
-    "ru": [
-      "принять маску подсети по умолчанию"
-    ]
-  },
-  {
-    "time": [
-      376.0,
-      379.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      376.0,
-      379.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      379.0,
-      382.0
-    ],
-    "en": [
-      "now keep hitting Enter to skip"
-    ],
-    "ru": [
-      "теперь продолжайте нажимать Enter, чтобы пропустить"
-    ]
-  },
-  {
-    "time": [
-      382.0,
-      384.0
-    ],
-    "en": [
-      "configuration of these interfaces we"
-    ],
-    "ru": [
-      "конфигурацию этих интерфейсов мы"
-    ]
-  },
-  {
-    "time": [
-      384.0,
-      389.0
-    ],
-    "en": [
-      "won't be configuring them for now"
-    ],
-    "ru": [
-      "пока не буду их настраивать"
-    ]
-  },
-  {
-    "time": [
-      389.0,
-      393.0
-    ],
-    "en": [
-      "type know as we won't be configuring"
-    ],
-    "ru": [
-      "напишите, так как мы не будем настраивать"
-    ]
-  },
-  {
-    "time": [
-      393.0,
-      395.0
-    ],
-    "en": [
-      "this as a cluster command switch which"
-    ],
-    "ru": [
-      "это как переключатель команды кластера, который"
-    ]
-  },
-  {
-    "time": [
-      395.0,
-      398.0
-    ],
-    "en": [
-      "is beyond the scope of this lab now hit"
-    ],
-    "ru": [
-      "выходит за рамки этой лаборатории, теперь хит"
-    ]
-  },
-  {
-    "time": [
-      398.0,
-      400.0
-    ],
-    "en": [
-      "enter one more time to save the"
-    ],
-    "ru": [
-      "введите еще раз, чтобы сохранить"
-    ]
-  },
-  {
-    "time": [
-      400.0,
-      403.0
-    ],
-    "en": [
-      "configuration let's type show startup"
-    ],
-    "ru": [
-      "конфигурация введите шоу запуска"
-    ]
-  },
-  {
-    "time": [
-      403.0,
-      406.0
-    ],
-    "en": [
-      "config again to check there's the"
-    ],
-    "ru": [
-      "config еще раз, чтобы проверить, есть ли"
-    ]
-  },
-  {
-    "time": [
-      406.0,
-      409.0
-    ],
-    "en": [
-      "hostname of switch one hour enable"
-    ],
-    "ru": [
-      "имя хоста коммутатора один час включить"
-    ]
-  },
-  {
-    "time": [
-      409.0,
-      416.0
-    ],
-    "en": [
-      "secret and password our IP address on"
-    ],
-    "ru": [
-      "секрет и пароль наш IP-адрес на"
-    ]
-  },
-  {
-    "time": [
-      416.0,
-      422.0
-    ],
-    "en": [
-      "VLAN 1 and our password on the vty lines"
-    ],
-    "ru": [
-      "VLAN 1 и наш пароль на линиях VTY"
-    ]
-  },
-  {
-    "time": [
-      422.0,
-      424.0
-    ],
-    "en": [
-      "by the way for those wondering vty"
-    ],
-    "ru": [
-      "кстати для интересующихся vty"
-    ]
-  },
-  {
-    "time": [
-      424.0,
-      428.0
-    ],
-    "en": [
-      "stands for virtual teletype ok now"
-    ],
-    "ru": [
-      "означает виртуальный телетайп"
-    ]
-  },
-  {
-    "time": [
-      428.0,
-      430.0
-    ],
-    "en": [
-      "finally let's ping from switch 1 to our"
-    ],
-    "ru": [
-      "наконец, давайте пингуем с переключателя 1 на наш"
-    ]
-  },
-  {
-    "time": [
-      430.0,
-      438.0
-    ],
-    "en": [
-      "one ping 192.168.1.1 the ping succeeds"
-    ],
-    "ru": [
-      "один пинг 192.168.1.1 пинг успешен"
-    ]
-  },
-  {
-    "time": [
-      438.0,
-      444.0
+      439.360195,
+      442.567737
     ],
     "en": [
       "that's all for this lab"
@@ -1729,146 +1009,98 @@ let objs = [
   },
   {
     "time": [
-      444.0,
-      446.0
+      442.567737,
+      449.187119
     ],
     "en": [
-      "thank you for watching I hope this lab"
+      "thank you for watching I hope this lab and video have been helpful for you"
     ],
     "ru": [
-      "спасибо за просмотр, надеюсь, эта лаборатория"
+      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были для вас полезны."
     ]
   },
   {
     "time": [
-      446.0,
-      448.0
+      449.187119,
+      454.215723
     ],
     "en": [
-      "and video have been helpful for you"
+      "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "и видео были для вас полезны"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {
     "time": [
-      448.0,
-      451.0
+      454.215723,
+      458.842251
     ],
     "en": [
-      "please subscribe for future labs like"
+      "if you have requests for any specific labs let me know in the comment section"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, такие как"
+      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
     ]
   },
   {
     "time": [
-      451.0,
-      454.0
+      458.842251,
+      466.027581
     ],
     "en": [
-      "this which will be released weekly if"
+      "if you want to support my channel I accept Bitcoin and etherion donations via the addresses in the description"
     ],
     "ru": [
-      "это будет выпускаться еженедельно, если"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфиром по адресам в описании"
     ]
   },
   {
     "time": [
-      454.0,
-      456.0
+      466.027581,
+      474.482443
     ],
     "en": [
-      "you have requests for any specific labs"
+      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
     ],
     "ru": [
-      "у вас есть запросы по каким-либо конкретным лабораториям"
+      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
     ]
   },
   {
     "time": [
-      456.0,
-      458.0
+      474.482443,
+      474.482443
     ],
     "en": [
-      "let me know in the comment section if"
+      ""
     ],
     "ru": [
-      "дайте мне знать в разделе комментариев, если"
+      ""
     ]
   },
   {
     "time": [
-      458.0,
-      461.0
+      474.482443,
+      474.482443
     ],
     "en": [
-      "you want to support my channel I accept"
+      ""
     ],
     "ru": [
-      "вы хотите поддержать мой канал я принимаю"
+      ""
     ]
   },
   {
     "time": [
-      461.0,
-      464.0
+      474.482443,
+      474.482443
     ],
     "en": [
-      "Bitcoin and etherion donations via the"
+      ""
     ],
     "ru": [
-      "Пожертвования биткойнов и эфирионов через"
-    ]
-  },
-  {
-    "time": [
-      464.0,
-      467.0
-    ],
-    "en": [
-      "addresses in the description I am also a"
-    ],
-    "ru": [
-      "адреса в описании я тоже"
-    ]
-  },
-  {
-    "time": [
-      467.0,
-      470.0
-    ],
-    "en": [
-      "brave verified publisher and accept bat"
-    ],
-    "ru": [
-      "храбрый проверенный издатель и прими летучую мышь"
-    ]
-  },
-  {
-    "time": [
-      470.0,
-      472.0
-    ],
-    "en": [
-      "or basic attention token donations in"
-    ],
-    "ru": [
-      "или основные пожертвования токенов внимания в"
-    ]
-  },
-  {
-    "time": [
-      472.0,
-      472.0
-    ],
-    "en": [
-      "the brave browser"
-    ],
-    "ru": [
-      "смелый браузер"
+      ""
     ]
   }
 ]

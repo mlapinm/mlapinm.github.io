@@ -2,319 +2,1063 @@ let objs = [
   {
     "time": [
       0.0,
-      3.0
+      4.646375
     ],
     "en": [
-      "welcome to this free CCNA packet tracer"
+      "welcome to this free CCNA packet tracer practice lab"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный трассировщик пакетов CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
     ]
   },
   {
     "time": [
-      3.0,
-      5.0
+      4.646375,
+      8.063229
     ],
     "en": [
-      "practice lab you can download the lab"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "Практическая лаборатория вы можете скачать лабораторию"
+      "скачать лабораторный файл можно по ссылке в описании"
     ]
   },
   {
     "time": [
-      5.0,
-      8.0
+      8.063229,
+      14.235583
     ],
     "en": [
-      "file from the link in the description in"
+      "in this lab we will look a bit more at CDP cisco discovery protocol"
     ],
     "ru": [
-      "файл по ссылке в описании в"
+      "в этой лабораторной работе мы подробнее рассмотрим протокол обнаружения CDP cisco."
     ]
   },
   {
     "time": [
-      8.0,
-      11.0
+      14.235583,
+      20.598249
     ],
     "en": [
-      "this lab we will look a bit more at CDP"
+      "this should be a fairly short lab looking at one more CDP command which we didn't cover in the last lab"
     ],
     "ru": [
-      "В этой лабораторной работе мы подробнее рассмотрим CDP"
+      "это должна быть довольно короткая лабораторная работа, посвященная еще одной команде CDP, которую мы не рассмотрели в последней лабораторной работе."
     ]
   },
   {
     "time": [
-      11.0,
-      15.0
+      20.598249,
+      29.741582
     ],
     "en": [
-      "cisco discovery protocol this should be"
+      "we will use CDP to identify more detailed information about neighboring devices beyond that displayed in the show CDP neighbors command"
     ],
     "ru": [
-      "протокол обнаружения cisco это должно быть"
+      "мы будем использовать CDP для определения более подробной информации о соседних устройствах, помимо той, которая отображается в команде show CDP neighbors."
     ]
   },
   {
     "time": [
-      15.0,
-      17.0
+      29.741582,
+      38.560644
     ],
     "en": [
-      "a fairly short lab looking at one more"
+      "step one is to use CDP to identify which interfaces are used to connect the routers and switches"
     ],
     "ru": [
-      "довольно короткая лаборатория, изучающая еще одну"
+      "Шаг первый - использовать CDP, чтобы определить, какие интерфейсы используются для подключения маршрутизаторов и коммутаторов."
     ]
   },
   {
     "time": [
-      17.0,
-      19.0
+      38.560644,
+      42.684478
     ],
     "en": [
-      "CDP command which we didn't cover in the"
+      "we've done this in previous labs so this should be no problem"
     ],
     "ru": [
-      "CDP, которую мы не рассмотрели в"
+      "мы делали это в предыдущих лабораторных работах, так что это не должно быть проблемой"
     ]
   },
   {
     "time": [
-      19.0,
-      23.0
+      42.684478,
+      45.119582
     ],
     "en": [
-      "last lab we will use CDP to identify"
+      "let's go on switch one first"
     ],
     "ru": [
-      "в последней лаборатории мы будем использовать CDP для определения"
+      "давай сначала переключимся"
     ]
   },
   {
     "time": [
-      23.0,
-      25.0
+      45.119582,
+      51.100394
     ],
     "en": [
-      "more detailed information about"
+      "enable show CDP neighbors"
     ],
     "ru": [
-      "более подробная информация о"
+      "включить показывать соседей CDP"
     ]
   },
   {
     "time": [
-      25.0,
-      27.0
+      51.100394,
+      57.684914
     ],
     "en": [
-      "neighboring devices beyond that"
+      "as you can see switch 1 is connected to r1 via the gigabit ethernet zero one interface"
     ],
     "ru": [
-      "соседние устройства помимо этого"
+      "как вы можете видеть, коммутатор 1 подключен к r1 через интерфейс Gigabit Ethernet zero one"
     ]
   },
   {
     "time": [
-      27.0,
-      29.0
+      57.684914,
+      61.944247
     ],
     "en": [
-      "displayed in the show CDP neighbors"
+      "and it's also connected to our ones gigabit ethernet zero one interface"
     ],
     "ru": [
-      "отображается в шоу CDP Neighbours"
+      "и он также подключен к нашему интерфейсу gigabit ethernet zero one"
     ]
   },
   {
     "time": [
-      29.0,
-      34.0
+      61.944247,
+      64.678059
     ],
     "en": [
-      "command step one is to use CDP to"
+      "next let's go to r1"
     ],
     "ru": [
-      "первый шаг команды - использовать CDP для"
+      "дальше пойдем к r1"
     ]
   },
   {
     "time": [
-      34.0,
-      36.0
+      64.678059,
+      70.755205
     ],
     "en": [
-      "identify which interfaces are used to"
+      "enable show CDP neighbors"
     ],
     "ru": [
-      "определить, какие интерфейсы используются для"
+      "включить показывать соседей CDP"
     ]
   },
   {
     "time": [
-      36.0,
-      39.0
+      70.755205,
+      77.650601
     ],
     "en": [
-      "connect the routers and switches we've"
+      "r1 is connected to switch 1 via the gigabit ethernet zero one interface as we just saw"
     ],
     "ru": [
-      "подключите маршрутизаторы и коммутаторы, которые мы"
+      "r1 подключен к коммутатору 1 через интерфейс gigabit ethernet zero one, как мы только что видели."
     ]
   },
   {
     "time": [
-      39.0,
-      41.0
+      77.650601,
+      82.501143
     ],
     "en": [
-      "done this in previous labs so this"
+      "it's also connected to r2 via the gigabit ethernet 0 0 interface"
     ],
     "ru": [
-      "сделал это в предыдущих лабораторных работах, так что это"
+      "он также подключен к r2 через интерфейс Gigabit Ethernet 0 0"
     ]
   },
   {
     "time": [
-      41.0,
-      43.0
+      82.501143,
+      86.281143
     ],
     "en": [
-      "should be no problem let's go on switch"
+      "connected to our two's Gigabit Ethernet 0 0 interface"
     ],
     "ru": [
-      "не должно быть проблем, давай переключимся"
+      "подключен к нашим двум Gigabit Ethernet 0 0 интерфейсу"
     ]
   },
   {
     "time": [
-      43.0,
-      51.0
+      86.281143,
+      91.343372
     ],
     "en": [
-      "one first enable show CDP neighbors as"
+      "next let's go on to r2"
     ],
     "ru": [
-      "сначала включите показывать соседей CDP как"
+      "Далее перейдем к r2"
     ]
   },
   {
     "time": [
-      51.0,
-      54.0
+      91.343372,
+      97.008726
     ],
     "en": [
-      "you can see switch 1 is connected to r1"
+      "enable show CDP neighbors"
     ],
     "ru": [
-      "вы можете видеть, что переключатель 1 подключен к r1"
+      "включить показывать соседей CDP"
     ]
   },
   {
     "time": [
-      54.0,
-      56.0
+      97.008726,
+      103.660372
     ],
     "en": [
-      "via the gigabit ethernet zero one"
+      "as we just saw it's connected to r1 via the gigabit ethernet 0 0 interface"
     ],
     "ru": [
-      "через гигабитный Ethernet ноль один"
+      "как мы только что видели, он подключен к r1 через интерфейс Gigabit Ethernet 0 0"
     ]
   },
   {
     "time": [
-      56.0,
-      59.0
+      103.660372,
+      108.54483
     ],
     "en": [
-      "interface and it's also connected to our"
+      "and it's connected to switch to via the gigabit ethernet 0 1 interface"
     ],
     "ru": [
-      "интерфейс и он также подключен к нашему"
+      "и он подключен для переключения через интерфейс Gigabit Ethernet 0 1"
     ]
   },
   {
     "time": [
-      59.0,
-      61.0
+      108.54483,
+      111.692913
     ],
     "en": [
-      "ones gigabit ethernet zero one interface"
+      "connected to switch 2 is Gigabit Ethernet 0 1 interface"
     ],
     "ru": [
-      "один гигабитный интерфейс Ethernet ноль один"
+      "к коммутатору 2 подключен интерфейс Gigabit Ethernet 0 1"
     ]
   },
   {
     "time": [
-      61.0,
-      69.0
+      111.692913,
+      115.349017
     ],
     "en": [
-      "next let's go to r1 enable show CDP"
+      "next let's go on switch to to confirm"
     ],
     "ru": [
-      "затем перейдем к r1, включим показ CDP"
+      "Далее перейдем к переключению на, чтобы подтвердить"
     ]
   },
   {
     "time": [
-      69.0,
-      73.0
+      115.349017,
+      120.85335
     ],
     "en": [
-      "neighbors r1 is connected to switch 1"
+      "enable shows CDP neighbors"
     ],
     "ru": [
-      "соседи r1 подключены к коммутатору 1"
+      "enable показывает соседей CDP"
     ]
   },
   {
     "time": [
-      73.0,
-      75.0
+      120.85335,
+      126.926309
     ],
     "en": [
-      "via the gigabit ethernet zero one"
+      "as you can see it is indeed connected to r2 via the gigabit ethernet 0 1 interface"
     ],
     "ru": [
-      "через гигабитный Ethernet ноль один"
+      "как вы можете видеть, он действительно подключен к r2 через интерфейс Gigabit Ethernet 0 1"
     ]
   },
   {
     "time": [
-      75.0,
-      78.0
+      126.926309,
+      128.851184
     ],
     "en": [
-      "interface as we just saw it's also"
+      "that's all for step 1"
     ],
     "ru": [
-      "интерфейс, как мы только что видели, также"
+      "это все для шага 1"
     ]
   },
   {
     "time": [
-      78.0,
-      80.0
+      128.851184,
+      136.282642
     ],
     "en": [
-      "connected to r2 via the gigabit ethernet"
+      "step2 actually doesn't require any new commands"
     ],
     "ru": [
-      "подключен к r2 через гигабитный Ethernet"
+      "step2 на самом деле не требует никаких новых команд"
     ]
   },
   {
     "time": [
-      80.0,
-      83.0
+      136.282642,
+      139.994475
+    ],
+    "en": [
+      "I just want to point out something I didn't identify in the previous lab"
+    ],
+    "ru": [
+      "Я просто хочу указать на то, что не обнаружил в предыдущей лабораторной работе."
+    ]
+  },
+  {
+    "time": [
+      139.994475,
+      142.690684
+    ],
+    "en": [
+      "let's look back at switch 1"
+    ],
+    "ru": [
+      "давай оглянемся на переключатель 1"
+    ]
+  },
+  {
+    "time": [
+      142.690684,
+      148.530975
+    ],
+    "en": [
+      "in the results of the show CDP neighbors command there is a platform column"
+    ],
+    "ru": [
+      "в результатах команды show CDP neighbors есть столбец платформы"
+    ]
+  },
+  {
+    "time": [
+      148.530975,
+      150.313704
+    ],
+    "en": [
+      "what does that identify"
+    ],
+    "ru": [
+      "что это идентифицирует"
+    ]
+  },
+  {
+    "time": [
+      150.313704,
+      153.312266
+    ],
+    "en": [
+      "it's the hardware model of the neighboring device"
+    ],
+    "ru": [
+      "это аппаратная модель соседнего устройства"
+    ]
+  },
+  {
+    "time": [
+      153.312266,
+      157.84012
+    ],
+    "en": [
+      "in this case r1 is a C 1900 series router"
+    ],
+    "ru": [
+      "в данном случае r1 - это маршрутизатор серии C 1900"
+    ]
+  },
+  {
+    "time": [
+      157.84012,
+      161.850078
+    ],
+    "en": [
+      "let's go on r1 to identify switch 1 and R 2"
+    ],
+    "ru": [
+      "давайте перейдем к r1, чтобы идентифицировать переключатель 1 и R 2"
+    ]
+  },
+  {
+    "time": [
+      161.850078,
+      170.821766
+    ],
+    "en": [
+      "so R 2 is a C 2900 series router and switch 1 is a 2960 series switch"
+    ],
+    "ru": [
+      "Итак, R 2 - это маршрутизатор серии C 2900, а коммутатор 1 - это коммутатор серии 2960."
+    ]
+  },
+  {
+    "time": [
+      170.821766,
+      176.007682
+    ],
+    "en": [
+      "finally let's go on r2 to identify the model of its neighbor switch 2"
+    ],
+    "ru": [
+      "наконец, давайте перейдем к r2, чтобы определить модель его соседнего коммутатора 2"
+    ]
+  },
+  {
+    "time": [
+      176.007682,
+      181.728766
+    ],
+    "en": [
+      "as you can see it is a 3560 model switch"
+    ],
+    "ru": [
+      "как видите, это переключатель модели 3560"
+    ]
+  },
+  {
+    "time": [
+      181.728766,
+      186.01037
+    ],
+    "en": [
+      "and if you remember the icon used to represent it here in packet tracer"
+    ],
+    "ru": [
+      "и если вы помните значок, используемый для его представления здесь, в пакетном трассировщике"
+    ]
+  },
+  {
+    "time": [
+      186.01037,
+      188.261536
+    ],
+    "en": [
+      "means it is a multi-layer switch"
+    ],
+    "ru": [
+      "означает, что это многослойный переключатель"
+    ]
+  },
+  {
+    "time": [
+      188.261536,
+      192.056973
+    ],
+    "en": [
+      "multi-layer switches will be a topic for later labs"
+    ],
+    "ru": [
+      "многоуровневые переключатели будут темой для следующих лабораторных работ"
+    ]
+  },
+  {
+    "time": [
+      192.056973,
+      200.92891
+    ],
+    "en": [
+      "finally step three requires a new command which we didn't cover in previous labs"
+    ],
+    "ru": [
+      "наконец, третий шаг требует новой команды, которую мы не рассматривали в предыдущих лабораторных работах."
+    ]
+  },
+  {
+    "time": [
+      200.92891,
+      203.79493
+    ],
+    "en": [
+      "actually there are two options"
+    ],
+    "ru": [
+      "на самом деле есть два варианта"
+    ]
+  },
+  {
+    "time": [
+      203.79493,
+      207.882451
+    ],
+    "en": [
+      "we have to identify the iOS version of the neighboring devices"
+    ],
+    "ru": [
+      "мы должны определить версию iOS соседних устройств"
+    ]
+  },
+  {
+    "time": [
+      207.882451,
+      212.791222
+    ],
+    "en": [
+      "note that you can do this on the device itself with the show version command"
+    ],
+    "ru": [
+      "обратите внимание, что вы можете сделать это на самом устройстве с помощью команды show version"
+    ]
+  },
+  {
+    "time": [
+      212.791222,
+      216.867118
+    ],
+    "en": [
+      "however for practice let's use CDP to find this information"
+    ],
+    "ru": [
+      "однако для практики давайте воспользуемся CDP, чтобы найти эту информацию."
+    ]
+  },
+  {
+    "time": [
+      216.867118,
+      219.819263
+    ],
+    "en": [
+      "let's go on switch one"
+    ],
+    "ru": [
+      "давай перейдем на первый переключатель"
+    ]
+  },
+  {
+    "time": [
+      219.819263,
+      225.603326
+    ],
+    "en": [
+      "now one option is the command show CDP neighbors detail"
+    ],
+    "ru": [
+      "теперь один из вариантов - команда показать детали соседей CDP"
+    ]
+  },
+  {
+    "time": [
+      225.603326,
+      232.267367
+    ],
+    "en": [
+      "clearly this gives more information than the standard show CDP neighbors command"
+    ],
+    "ru": [
+      "очевидно, что это дает больше информации, чем стандартная команда show CDP neighbors."
+    ]
+  },
+  {
+    "time": [
+      232.267367,
+      236.278201
+    ],
+    "en": [
+      "in this case switch one has only one neighbor"
+    ],
+    "ru": [
+      "в этом случае коммутатор имеет только одного соседа"
+    ]
+  },
+  {
+    "time": [
+      236.278201,
+      242.405326
+    ],
+    "en": [
+      "but if a device has many neighbors this command gives information for every neighbor which can be overwhelming"
+    ],
+    "ru": [
+      "но если у устройства много соседей, эта команда дает информацию для каждого соседа, которая может быть подавляющей."
+    ]
+  },
+  {
+    "time": [
+      242.405326,
+      248.334909
+    ],
+    "en": [
+      "if you want to view detailed information about just one device use this command"
+    ],
+    "ru": [
+      "если вы хотите просмотреть подробную информацию только об одном устройстве, используйте эту команду"
+    ]
+  },
+  {
+    "time": [
+      248.334909,
+      255.409721
+    ],
+    "en": [
+      "show CDP entry followed by the name of the neighboring device in this case r1"
+    ],
+    "ru": [
+      "показать запись CDP, за которой следует имя соседнего устройства, в данном случае r1"
+    ]
+  },
+  {
+    "time": [
+      255.409721,
+      260.730721
+    ],
+    "en": [
+      "this displays the same information just for the specified device"
+    ],
+    "ru": [
+      "это отображает ту же информацию только для указанного устройства"
+    ]
+  },
+  {
+    "time": [
+      260.730721,
+      264.63595
+    ],
+    "en": [
+      "now you can find the iOS version of r1 here"
+    ],
+    "ru": [
+      "теперь вы можете найти версию r1 для iOS здесь"
+    ]
+  },
+  {
+    "time": [
+      264.63595,
+      268.465637
+    ],
+    "en": [
+      "it's 15.144"
+    ],
+    "ru": [
+      "это 15.144"
+    ]
+  },
+  {
+    "time": [
+      268.465637,
+      270.726053
+    ],
+    "en": [
+      "now let's go on r1"
+    ],
+    "ru": [
+      "теперь пойдем на r1"
+    ]
+  },
+  {
+    "time": [
+      270.726053,
+      276.067282
+    ],
+    "en": [
+      "show CDP entry switch one switch"
+    ],
+    "ru": [
+      "показать переключатель входа CDP один переключатель"
+    ]
+  },
+  {
+    "time": [
+      276.067282,
+      281.411011
+    ],
+    "en": [
+      "run is running version 12.25 FX"
+    ],
+    "ru": [
+      "run работает под управлением версии 12.25 FX"
+    ]
+  },
+  {
+    "time": [
+      281.411011,
+      285.396302
+    ],
+    "en": [
+      "let's also check our ones other neighbor R 2"
+    ],
+    "ru": [
+      "давайте также проверим нашего другого соседа R 2"
+    ]
+  },
+  {
+    "time": [
+      285.396302,
+      288.540552
+    ],
+    "en": [
+      "show CDP entry r2"
+    ],
+    "ru": [
+      "показать запись CDP r2"
+    ]
+  },
+  {
+    "time": [
+      288.540552,
+      292.942072
+    ],
+    "en": [
+      "r2 is running 15.144"
+    ],
+    "ru": [
+      "r2 работает 15.144"
+    ]
+  },
+  {
+    "time": [
+      292.942072,
+      294.324613
+    ],
+    "en": [
+      "same as r1"
+    ],
+    "ru": [
+      "то же, что и r1"
+    ]
+  },
+  {
+    "time": [
+      294.324613,
+      298.287175
+    ],
+    "en": [
+      "finally let's go on r2 to find the version of switch 2"
+    ],
+    "ru": [
+      "наконец, давайте перейдем к r2, чтобы найти версию переключателя 2"
+    ]
+  },
+  {
+    "time": [
+      298.287175,
+      302.833612
+    ],
+    "en": [
+      "show CDP entry switch 2"
+    ],
+    "ru": [
+      "показать переключатель входа CDP 2"
+    ]
+  },
+  {
+    "time": [
+      302.833612,
+      308.484591
+    ],
+    "en": [
+      "switch 2 is running version 12.21"
+    ],
+    "ru": [
+      "коммутатор 2 работает под управлением версии 12.21"
+    ]
+  },
+  {
+    "time": [
+      308.484591,
+      317.53407
+    ],
+    "en": [
+      "now as a bonus I'd like to also demonstrate the show version command I briefly mentioned before"
+    ],
+    "ru": [
+      "теперь в качестве бонуса я хотел бы также продемонстрировать команду show version, о которой я кратко упоминал ранее."
+    ]
+  },
+  {
+    "time": [
+      317.53407,
+      320.81534
+    ],
+    "en": [
+      "this gives a lot of information about the device"
+    ],
+    "ru": [
+      "это дает много информации об устройстве"
+    ]
+  },
+  {
+    "time": [
+      320.81534,
+      325.26659
+    ],
+    "en": [
+      "but for now let's just confirm the iOS versions we learned about via CDP"
+    ],
+    "ru": [
+      "а пока давайте просто подтвердим версии iOS, о которых мы узнали через CDP."
+    ]
+  },
+  {
+    "time": [
+      325.26659,
+      327.321277
+    ],
+    "en": [
+      "on switch 1 first"
+    ],
+    "ru": [
+      "сначала на переключателе 1"
+    ]
+  },
+  {
+    "time": [
+      327.321277,
+      334.167547
+    ],
+    "en": [
+      "show version as you can see there's a lot of info here"
+    ],
+    "ru": [
+      "показать версию, как видите, здесь много информации"
+    ]
+  },
+  {
+    "time": [
+      334.167547,
+      337.788777
+    ],
+    "en": [
+      "I recommend looking through it to familiarize yourself with what's here"
+    ],
+    "ru": [
+      "Рекомендую просмотреть, чтобы ознакомиться с тем, что здесь"
+    ]
+  },
+  {
+    "time": [
+      337.788777,
+      341.11611
+    ],
+    "en": [
+      "but let's just check the iOS version as I said"
+    ],
+    "ru": [
+      "но давайте просто проверим версию iOS, как я сказал"
+    ]
+  },
+  {
+    "time": [
+      341.11611,
+      345.686777
+    ],
+    "en": [
+      "switch 1 is running 12 point to 25 FX"
+    ],
+    "ru": [
+      "переключатель 1 работает от 12 точек до 25 FX"
+    ]
+  },
+  {
+    "time": [
+      345.686777,
+      348.673402
+    ],
+    "en": [
+      "which is the same as we saw from CDP on our one"
+    ],
+    "ru": [
+      "это то же самое, что мы видели в CDP на нашем"
+    ]
+  },
+  {
+    "time": [
+      348.673402,
+      351.712339
+    ],
+    "en": [
+      "next let's go to our one"
+    ],
+    "ru": [
+      "дальше пойдем к нашему"
+    ]
+  },
+  {
+    "time": [
+      351.712339,
+      359.099568
+    ],
+    "en": [
+      "show version our one is running version 15 point 1 4 & 4"
+    ],
+    "ru": [
+      "показать версию, у нас работает версия 15, пункт 1, 4 и 4"
+    ]
+  },
+  {
+    "time": [
+      359.099568,
+      361.590172
+    ],
+    "en": [
+      "same as we saw from CDP again"
+    ],
+    "ru": [
+      "то же, что мы снова видели из CDP"
+    ]
+  },
+  {
+    "time": [
+      361.590172,
+      364.925277
+    ],
+    "en": [
+      "next are 2"
+    ],
+    "ru": [
+      "следующие 2"
+    ]
+  },
+  {
+    "time": [
+      364.925277,
+      367.469527
+    ],
+    "en": [
+      "show version"
+    ],
+    "ru": [
+      "показать версию"
+    ]
+  },
+  {
+    "time": [
+      367.469527,
+      373.459777
+    ],
+    "en": [
+      "r2 is running version 15 point 1 for M for same as our 1"
+    ],
+    "ru": [
+      "r2 работает с версией 15, пункт 1 для M, как и наш 1"
+    ]
+  },
+  {
+    "time": [
+      373.459777,
+      376.648235
+    ],
+    "en": [
+      "finally switch 2"
+    ],
+    "ru": [
+      "наконец переключатель 2"
+    ]
+  },
+  {
+    "time": [
+      376.648235,
+      379.929068
+    ],
+    "en": [
+      "show version"
+    ],
+    "ru": [
+      "показать версию"
+    ]
+  },
+  {
+    "time": [
+      379.929068,
+      383.768526
+    ],
+    "en": [
+      "it's running version 12 point to one"
+    ],
+    "ru": [
+      "это работает версия 12 указывает на один"
+    ]
+  },
+  {
+    "time": [
+      383.768526,
+      385.834171
+    ],
+    "en": [
+      "that's all for this lab"
+    ],
+    "ru": [
+      "это все для этой лаборатории"
+    ]
+  },
+  {
+    "time": [
+      385.834171,
+      391.803817
+    ],
+    "en": [
+      "thank you for watching I hope this lab and video have been helpful for you"
+    ],
+    "ru": [
+      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были для вас полезны."
+    ]
+  },
+  {
+    "time": [
+      391.803817,
+      396.695316
+    ],
+    "en": [
+      "please subscribe for future labs like this which will be released weekly"
+    ],
+    "ru": [
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
+    ]
+  },
+  {
+    "time": [
+      396.695316,
+      401.323108
+    ],
+    "en": [
+      "if you have requests for any specific labs let me know in the comment section"
+    ],
+    "ru": [
+      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
+    ]
+  },
+  {
+    "time": [
+      401.323108,
+      408.496795
+    ],
+    "en": [
+      "if you want to support my channel I accept Bitcoin and etherion donations via the addresses in the description"
+    ],
+    "ru": [
+      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфиром по адресам в описании"
+    ]
+  },
+  {
+    "time": [
+      408.496795,
+      416.886295
+    ],
+    "en": [
+      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
+    ],
+    "ru": [
+      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
+    ]
+  },
+  {
+    "time": [
+      416.886295,
+      416.886295
     ],
     "en": [
       ""
@@ -325,8 +1069,8 @@ let objs = [
   },
   {
     "time": [
-      80.0,
-      83.0
+      416.886295,
+      416.886295
     ],
     "en": [
       ""
@@ -337,1250 +1081,14 @@ let objs = [
   },
   {
     "time": [
-      83.0,
-      88.0
-    ],
-    "en": [
-      "Gigabit Ethernet 0 0 interface next"
-    ],
-    "ru": [
-      "Интерфейс Gigabit Ethernet 0 0 следующий"
-    ]
-  },
-  {
-    "time": [
-      88.0,
-      95.0
-    ],
-    "en": [
-      "let's go on to our to enable show CDP"
-    ],
-    "ru": [
-      "перейдем к нашему, чтобы включить шоу CDP"
-    ]
-  },
-  {
-    "time": [
-      95.0,
-      99.0
-    ],
-    "en": [
-      "neighbors as we just saw it's connected"
-    ],
-    "ru": [
-      "соседи, как мы только что видели, это связано"
-    ]
-  },
-  {
-    "time": [
-      99.0,
-      102.0
-    ],
-    "en": [
-      "to r1 via the gigabit ethernet 0 0"
-    ],
-    "ru": [
-      "к r1 через гигабитный Ethernet 0 0"
-    ]
-  },
-  {
-    "time": [
-      102.0,
-      105.0
-    ],
-    "en": [
-      "interface and it's connected to switch"
-    ],
-    "ru": [
-      "интерфейс и он подключен к коммутатору"
-    ]
-  },
-  {
-    "time": [
-      105.0,
-      107.0
-    ],
-    "en": [
-      "to via the gigabit ethernet 0 1"
-    ],
-    "ru": [
-      "через гигабитный Ethernet 0 1"
-    ]
-  },
-  {
-    "time": [
-      107.0,
-      109.0
-    ],
-    "en": [
-      "interface connected to switch 2 is"
-    ],
-    "ru": [
-      "интерфейс, подключенный к переключателю 2,"
-    ]
-  },
-  {
-    "time": [
-      109.0,
-      113.0
-    ],
-    "en": [
-      "Gigabit Ethernet 0 1 interface next"
-    ],
-    "ru": [
-      "Интерфейс Gigabit Ethernet 0 1 следующий"
-    ]
-  },
-  {
-    "time": [
-      113.0,
-      118.0
-    ],
-    "en": [
-      "let's go on switch to to confirm enable"
-    ],
-    "ru": [
-      "Давайте перейдем к переключению, чтобы подтвердить включение"
-    ]
-  },
-  {
-    "time": [
-      118.0,
-      122.0
-    ],
-    "en": [
-      "shows CDP neighbors as you can see it is"
-    ],
-    "ru": [
-      "показывает соседей CDP, как вы видите"
-    ]
-  },
-  {
-    "time": [
-      122.0,
-      124.0
-    ],
-    "en": [
-      "indeed connected to r2 via the gigabit"
-    ],
-    "ru": [
-      "действительно подключен к r2 через гигабит"
-    ]
-  },
-  {
-    "time": [
-      124.0,
-      127.0
-    ],
-    "en": [
-      "ethernet 0 1 interface that's all for"
-    ],
-    "ru": [
-      "Ethernet 0 1 интерфейс, все для"
-    ]
-  },
-  {
-    "time": [
-      127.0,
-      132.0
-    ],
-    "en": [
-      "step 1"
-    ],
-    "ru": [
-      "шаг 1"
-    ]
-  },
-  {
-    "time": [
-      132.0,
-      135.0
-    ],
-    "en": [
-      "step2 actually doesn't require any new"
-    ],
-    "ru": [
-      "step2 на самом деле не требует никаких новых"
-    ]
-  },
-  {
-    "time": [
-      135.0,
-      137.0
-    ],
-    "en": [
-      "commands I just want to point out"
-    ],
-    "ru": [
-      "команды, которые я просто хочу указать"
-    ]
-  },
-  {
-    "time": [
-      137.0,
-      138.0
-    ],
-    "en": [
-      "something I didn't identify in the"
-    ],
-    "ru": [
-      "то, что я не обнаружил в"
-    ]
-  },
-  {
-    "time": [
-      138.0,
-      141.0
-    ],
-    "en": [
-      "previous lab let's look back at switch 1"
-    ],
-    "ru": [
-      "предыдущая лабораторная работа давайте вернемся к переключателю 1"
-    ]
-  },
-  {
-    "time": [
-      141.0,
-      145.0
-    ],
-    "en": [
-      "in the results of the show CDP neighbors"
-    ],
-    "ru": [
-      "по результатам выставки CDP Neighbours"
-    ]
-  },
-  {
-    "time": [
-      145.0,
-      148.0
-    ],
-    "en": [
-      "command there is a platform column what"
-    ],
-    "ru": [
-      "команда есть столбец платформы что"
-    ]
-  },
-  {
-    "time": [
-      148.0,
-      151.0
-    ],
-    "en": [
-      "does that identify it's the hardware"
-    ],
-    "ru": [
-      "это определяет, что это оборудование"
-    ]
-  },
-  {
-    "time": [
-      151.0,
-      154.0
-    ],
-    "en": [
-      "model of the neighboring device in this"
-    ],
-    "ru": [
-      "модель соседнего устройства в этом"
-    ]
-  },
-  {
-    "time": [
-      154.0,
-      158.0
-    ],
-    "en": [
-      "case r1 is a C 1900 series router let's"
-    ],
-    "ru": [
-      "case r1 - это маршрутизатор серии C 1900, давайте"
-    ]
-  },
-  {
-    "time": [
-      158.0,
-      164.0
-    ],
-    "en": [
-      "go on r1 to identify switch 1 and R 2 so"
-    ],
-    "ru": [
-      "перейдите на r1, чтобы идентифицировать переключатель 1 и R 2, поэтому"
-    ]
-  },
-  {
-    "time": [
-      164.0,
-      167.0
-    ],
-    "en": [
-      "R 2 is a C 2900 series router and switch"
-    ],
-    "ru": [
-      "R 2 - это маршрутизатор и коммутатор серии C 2900."
-    ]
-  },
-  {
-    "time": [
-      167.0,
-      172.0
+      416.886295,
+      416.886295
     ],
     "en": [
       ""
     ],
     "ru": [
       ""
-    ]
-  },
-  {
-    "time": [
-      167.0,
-      172.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      172.0,
-      174.0
-    ],
-    "en": [
-      "go on r2 to identify the model of its"
-    ],
-    "ru": [
-      "перейдите на r2, чтобы определить модель своего"
-    ]
-  },
-  {
-    "time": [
-      174.0,
-      179.0
-    ],
-    "en": [
-      "neighbor switch 2 as you can see it is a"
-    ],
-    "ru": [
-      "соседний переключатель 2, как вы можете видеть, это"
-    ]
-  },
-  {
-    "time": [
-      179.0,
-      182.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      179.0,
-      182.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      182.0,
-      184.0
-    ],
-    "en": [
-      "the icon used to represent it here in"
-    ],
-    "ru": [
-      "значок, используемый для его представления здесь, в"
-    ]
-  },
-  {
-    "time": [
-      184.0,
-      187.0
-    ],
-    "en": [
-      "packet tracer means it is a multi-layer"
-    ],
-    "ru": [
-      "пакетный трассировщик означает, что это многоуровневый"
-    ]
-  },
-  {
-    "time": [
-      187.0,
-      190.0
-    ],
-    "en": [
-      "switch multi-layer switches will be a"
-    ],
-    "ru": [
-      "Переключатель многоуровневых переключателей будет"
-    ]
-  },
-  {
-    "time": [
-      190.0,
-      195.0
-    ],
-    "en": [
-      "topic for later labs"
-    ],
-    "ru": [
-      "тема для последующих лабораторных работ"
-    ]
-  },
-  {
-    "time": [
-      195.0,
-      198.0
-    ],
-    "en": [
-      "finally step three requires a new"
-    ],
-    "ru": [
-      "наконец, третий шаг требует нового"
-    ]
-  },
-  {
-    "time": [
-      198.0,
-      199.0
-    ],
-    "en": [
-      "command which we didn't cover in"
-    ],
-    "ru": [
-      "команда, которую мы не охватили"
-    ]
-  },
-  {
-    "time": [
-      199.0,
-      202.0
-    ],
-    "en": [
-      "previous labs actually there are two"
-    ],
-    "ru": [
-      "предыдущие лаборатории на самом деле есть два"
-    ]
-  },
-  {
-    "time": [
-      202.0,
-      205.0
-    ],
-    "en": [
-      "options we have to identify the iOS"
-    ],
-    "ru": [
-      "варианты, которые у нас есть для идентификации iOS"
-    ]
-  },
-  {
-    "time": [
-      205.0,
-      208.0
-    ],
-    "en": [
-      "version of the neighboring devices note"
-    ],
-    "ru": [
-      "версия соседних устройств примечание"
-    ]
-  },
-  {
-    "time": [
-      208.0,
-      209.0
-    ],
-    "en": [
-      "that you can do this on the device"
-    ],
-    "ru": [
-      "что вы можете сделать это на устройстве"
-    ]
-  },
-  {
-    "time": [
-      209.0,
-      212.0
-    ],
-    "en": [
-      "itself with the show version command"
-    ],
-    "ru": [
-      "сам с помощью команды show version"
-    ]
-  },
-  {
-    "time": [
-      212.0,
-      215.0
-    ],
-    "en": [
-      "however for practice let's use CDP to"
-    ],
-    "ru": [
-      "однако для практики давайте воспользуемся CDP для"
-    ]
-  },
-  {
-    "time": [
-      215.0,
-      218.0
-    ],
-    "en": [
-      "find this information let's go on switch"
-    ],
-    "ru": [
-      "найди эту информацию, давай переключимся"
-    ]
-  },
-  {
-    "time": [
-      218.0,
-      223.0
-    ],
-    "en": [
-      "one now one option is the command show"
-    ],
-    "ru": [
-      "один теперь один вариант - это команда show"
-    ]
-  },
-  {
-    "time": [
-      223.0,
-      228.0
-    ],
-    "en": [
-      "CDP neighbors detail clearly this gives"
-    ],
-    "ru": [
-      "Соседи CDP четко детализируют, что дает"
-    ]
-  },
-  {
-    "time": [
-      228.0,
-      230.0
-    ],
-    "en": [
-      "more information than the standard show"
-    ],
-    "ru": [
-      "больше информации, чем в стандартном шоу"
-    ]
-  },
-  {
-    "time": [
-      230.0,
-      233.0
-    ],
-    "en": [
-      "CDP neighbors command in this case"
-    ],
-    "ru": [
-      "Команда CDP соседи в этом случае"
-    ]
-  },
-  {
-    "time": [
-      233.0,
-      236.0
-    ],
-    "en": [
-      "switch one has only one neighbor but if"
-    ],
-    "ru": [
-      "у одного переключателя есть только один сосед, но если"
-    ]
-  },
-  {
-    "time": [
-      236.0,
-      238.0
-    ],
-    "en": [
-      "a device has many neighbors this command"
-    ],
-    "ru": [
-      "у устройства много соседей эта команда"
-    ]
-  },
-  {
-    "time": [
-      238.0,
-      240.0
-    ],
-    "en": [
-      "gives information for every neighbor"
-    ],
-    "ru": [
-      "дает информацию для каждого соседа"
-    ]
-  },
-  {
-    "time": [
-      240.0,
-      243.0
-    ],
-    "en": [
-      "which can be overwhelming if you want to"
-    ],
-    "ru": [
-      "что может быть ошеломляющим, если вы хотите"
-    ]
-  },
-  {
-    "time": [
-      243.0,
-      245.0
-    ],
-    "en": [
-      "view detailed information about just one"
-    ],
-    "ru": [
-      "просмотреть подробную информацию только об одном"
-    ]
-  },
-  {
-    "time": [
-      245.0,
-      250.0
-    ],
-    "en": [
-      "device use this command show CDP entry"
-    ],
-    "ru": [
-      "устройство используйте эту команду показать запись CDP"
-    ]
-  },
-  {
-    "time": [
-      250.0,
-      252.0
-    ],
-    "en": [
-      "followed by the name of the neighboring"
-    ],
-    "ru": [
-      "за которым следует название соседнего"
-    ]
-  },
-  {
-    "time": [
-      252.0,
-      257.0
-    ],
-    "en": [
-      "device in this case r1 this displays the"
-    ],
-    "ru": [
-      "устройство в этом случае r1 отображает"
-    ]
-  },
-  {
-    "time": [
-      257.0,
-      259.0
-    ],
-    "en": [
-      "same information just for the specified"
-    ],
-    "ru": [
-      "та же информация только для указанного"
-    ]
-  },
-  {
-    "time": [
-      259.0,
-      262.0
-    ],
-    "en": [
-      "device now you can find the iOS version"
-    ],
-    "ru": [
-      "устройство теперь вы можете найти версию iOS"
-    ]
-  },
-  {
-    "time": [
-      262.0,
-      269.0
-    ],
-    "en": [
-      "of r1 here it's 15.1 for M for now let's"
-    ],
-    "ru": [
-      "of r1 здесь 15,1 для M, а пока давайте"
-    ]
-  },
-  {
-    "time": [
-      269.0,
-      275.0
-    ],
-    "en": [
-      "go on r1 show CDP entry switch one"
-    ],
-    "ru": [
-      "перейти на r1 показать переключатель входа CDP один"
-    ]
-  },
-  {
-    "time": [
-      275.0,
-      281.0
-    ],
-    "en": [
-      "switch run is running version 12.25 FX"
-    ],
-    "ru": [
-      "Коммутатор работает под управлением версии 12.25 FX"
-    ]
-  },
-  {
-    "time": [
-      281.0,
-      283.0
-    ],
-    "en": [
-      "let's also check our ones other neighbor"
-    ],
-    "ru": [
-      "давайте также проверим другого нашего соседа"
-    ]
-  },
-  {
-    "time": [
-      283.0,
-      290.0
-    ],
-    "en": [
-      "R to show CDP entry r2 r2 is running"
-    ],
-    "ru": [
-      "R, чтобы показать запись CDP r2 r2 запущена"
-    ]
-  },
-  {
-    "time": [
-      290.0,
-      295.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      290.0,
-      295.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      295.0,
-      297.0
-    ],
-    "en": [
-      "go on r2 to find the version of switch"
-    ],
-    "ru": [
-      "перейдите на r2, чтобы найти версию коммутатора"
-    ]
-  },
-  {
-    "time": [
-      297.0,
-      304.0
-    ],
-    "en": [
-      "to show CDP entry switch to switch to is"
-    ],
-    "ru": [
-      "чтобы показать переключатель входа CDP, на который нужно переключиться,"
-    ]
-  },
-  {
-    "time": [
-      304.0,
-      311.0
-    ],
-    "en": [
-      "running version 12 point to one"
-    ],
-    "ru": [
-      "запущенная версия 12 указывает на один"
-    ]
-  },
-  {
-    "time": [
-      311.0,
-      313.0
-    ],
-    "en": [
-      "now as a bonus I'd like to also"
-    ],
-    "ru": [
-      "теперь в качестве бонуса я бы тоже хотел"
-    ]
-  },
-  {
-    "time": [
-      313.0,
-      315.0
-    ],
-    "en": [
-      "demonstrate the show version command I"
-    ],
-    "ru": [
-      "продемонстрировать команду show version I"
-    ]
-  },
-  {
-    "time": [
-      315.0,
-      318.0
-    ],
-    "en": [
-      "briefly mentioned before this gives a"
-    ],
-    "ru": [
-      "кратко упомянутый ранее, это дает"
-    ]
-  },
-  {
-    "time": [
-      318.0,
-      320.0
-    ],
-    "en": [
-      "lot of information about the device but"
-    ],
-    "ru": [
-      "много информации об устройстве, но"
-    ]
-  },
-  {
-    "time": [
-      320.0,
-      322.0
-    ],
-    "en": [
-      "for now let's just confirm the iOS"
-    ],
-    "ru": [
-      "а пока давайте просто подтвердим iOS"
-    ]
-  },
-  {
-    "time": [
-      322.0,
-      325.0
-    ],
-    "en": [
-      "versions we learned about via CDP on"
-    ],
-    "ru": [
-      "версии, о которых мы узнали через CDP на"
-    ]
-  },
-  {
-    "time": [
-      325.0,
-      331.0
-    ],
-    "en": [
-      "switch 1 first show version as you can"
-    ],
-    "ru": [
-      "переключить 1 первую версию показа, как вы можете"
-    ]
-  },
-  {
-    "time": [
-      331.0,
-      333.0
-    ],
-    "en": [
-      "see there's a lot of info here I"
-    ],
-    "ru": [
-      "видишь, здесь много информации я"
-    ]
-  },
-  {
-    "time": [
-      333.0,
-      335.0
-    ],
-    "en": [
-      "recommend looking through it to"
-    ],
-    "ru": [
-      "рекомендую просмотреть это"
-    ]
-  },
-  {
-    "time": [
-      335.0,
-      337.0
-    ],
-    "en": [
-      "familiarize yourself with what's here"
-    ],
-    "ru": [
-      "ознакомьтесь с тем, что здесь"
-    ]
-  },
-  {
-    "time": [
-      337.0,
-      340.0
-    ],
-    "en": [
-      "but let's just check the iOS version as"
-    ],
-    "ru": [
-      "но давайте просто проверим версию iOS как"
-    ]
-  },
-  {
-    "time": [
-      340.0,
-      343.0
-    ],
-    "en": [
-      "I said switch 1 is running 12 point to"
-    ],
-    "ru": [
-      "Я сказал, что переключатель 1 работает с 12 точками до"
-    ]
-  },
-  {
-    "time": [
-      343.0,
-      346.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      343.0,
-      346.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      346.0,
-      352.0
-    ],
-    "en": [
-      "CDP on our one next let's go to our one"
-    ],
-    "ru": [
-      "CDP на нашем следующем, давайте перейдем к нашему"
-    ]
-  },
-  {
-    "time": [
-      352.0,
-      356.0
-    ],
-    "en": [
-      "show version our one is running version"
-    ],
-    "ru": [
-      "показать версию наша текущая версия"
-    ]
-  },
-  {
-    "time": [
-      356.0,
-      358.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      356.0,
-      358.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      358.0,
-      363.0
-    ],
-    "en": [
-      "same as we saw from CDP again next are"
-    ],
-    "ru": [
-      "то же, что мы видели из CDP, снова следующие:"
-    ]
-  },
-  {
-    "time": [
-      363.0,
-      369.0
-    ],
-    "en": [
-      "to show version our 2 is running version"
-    ],
-    "ru": [
-      "чтобы показать версию, наша 2 работает версия"
-    ]
-  },
-  {
-    "time": [
-      369.0,
-      373.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      369.0,
-      373.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      373.0,
-      380.0
-    ],
-    "en": [
-      "finally switch to show version it's"
-    ],
-    "ru": [
-      "наконец-то переключитесь, чтобы показать версию, это"
-    ]
-  },
-  {
-    "time": [
-      380.0,
-      384.0
-    ],
-    "en": [
-      "running version 12 point to one that's"
-    ],
-    "ru": [
-      "запущенная версия 12 указывает на ту, которая"
-    ]
-  },
-  {
-    "time": [
-      384.0,
-      386.0
-    ],
-    "en": [
-      "all for this lab"
-    ],
-    "ru": [
-      "все для этой лаборатории"
-    ]
-  },
-  {
-    "time": [
-      386.0,
-      389.0
-    ],
-    "en": [
-      "thank you for watching I hope this lab"
-    ],
-    "ru": [
-      "спасибо за просмотр, надеюсь, эта лаборатория"
-    ]
-  },
-  {
-    "time": [
-      389.0,
-      390.0
-    ],
-    "en": [
-      "and video have been helpful for you"
-    ],
-    "ru": [
-      "и видео были для вас полезны"
-    ]
-  },
-  {
-    "time": [
-      390.0,
-      393.0
-    ],
-    "en": [
-      "please subscribe for future labs like"
-    ],
-    "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, такие как"
-    ]
-  },
-  {
-    "time": [
-      393.0,
-      396.0
-    ],
-    "en": [
-      "this which will be released weekly if"
-    ],
-    "ru": [
-      "это будет выпускаться еженедельно, если"
-    ]
-  },
-  {
-    "time": [
-      396.0,
-      398.0
-    ],
-    "en": [
-      "you have requests for any specific labs"
-    ],
-    "ru": [
-      "у вас есть запросы по каким-либо конкретным лабораториям"
-    ]
-  },
-  {
-    "time": [
-      398.0,
-      401.0
-    ],
-    "en": [
-      "let me know in the comment section if"
-    ],
-    "ru": [
-      "дайте мне знать в разделе комментариев, если"
-    ]
-  },
-  {
-    "time": [
-      401.0,
-      403.0
-    ],
-    "en": [
-      "you want to support my channel I accept"
-    ],
-    "ru": [
-      "вы хотите поддержать мой канал я принимаю"
-    ]
-  },
-  {
-    "time": [
-      403.0,
-      406.0
-    ],
-    "en": [
-      "Bitcoin and etherion donations via the"
-    ],
-    "ru": [
-      "Пожертвования биткойнов и эфирионов через"
-    ]
-  },
-  {
-    "time": [
-      406.0,
-      409.0
-    ],
-    "en": [
-      "addresses in the description I am also a"
-    ],
-    "ru": [
-      "адреса в описании я тоже"
-    ]
-  },
-  {
-    "time": [
-      409.0,
-      412.0
-    ],
-    "en": [
-      "brave verified publisher and accept bat"
-    ],
-    "ru": [
-      "храбрый проверенный издатель и прими летучую мышь"
-    ]
-  },
-  {
-    "time": [
-      412.0,
-      415.0
-    ],
-    "en": [
-      "or basic attention token donations in"
-    ],
-    "ru": [
-      "или основные пожертвования токенов внимания в"
-    ]
-  },
-  {
-    "time": [
-      415.0,
-      415.0
-    ],
-    "en": [
-      "the brave browser"
-    ],
-    "ru": [
-      "смелый браузер"
     ]
   }
 ]

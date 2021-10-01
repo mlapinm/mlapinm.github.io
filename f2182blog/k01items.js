@@ -2,1159 +2,715 @@ let objs = [
   {
     "time": [
       0.0,
-      3.0
+      5.71078
     ],
     "en": [
-      "welcome to this free Cisco CCNA packet"
+      "welcome to this free Cisco CCNA packet tracer practice lab"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный пакет Cisco CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию Cisco CCNA Packet Tracer"
     ]
   },
   {
     "time": [
-      3.0,
-      6.0
+      5.71078,
+      8.984527
     ],
     "en": [
-      "tracer practice lab you can download the"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "практическую лабораторию с трассировщиком вы можете скачать"
+      "скачать лабораторный файл можно по ссылке в описании"
     ]
   },
   {
     "time": [
-      6.0,
-      8.0
+      8.984527,
+      13.143932
     ],
     "en": [
-      "lab file from the link in the"
+      "see if you can complete the lab yourself first"
     ],
     "ru": [
-      "lab по ссылке в"
+      "сначала посмотри, сможешь ли ты пройти лабораторию самостоятельно"
     ]
   },
   {
     "time": [
-      8.0,
-      11.0
+      13.143932,
+      15.98083
     ],
     "en": [
-      "description see if you can complete the"
+      "and then continue watching this video if you have any trouble"
     ],
     "ru": [
-      "описание посмотрим, сможете ли вы заполнить"
+      "а затем продолжайте смотреть это видео, если у вас возникнут проблемы"
     ]
   },
   {
     "time": [
-      11.0,
-      13.0
+      15.98083,
+      18.800988
     ],
     "en": [
-      "lab yourself first and then continue"
+      "or watch it afterwards to check your solution"
     ],
     "ru": [
-      "сначала пробуй себя, а потом продолжай"
+      "или посмотрите его потом, чтобы проверить свое решение"
     ]
   },
   {
     "time": [
-      13.0,
-      15.0
+      18.800988,
+      26.869218
     ],
     "en": [
-      "watching this video if you have any"
+      "in this lab we will be working with two routers r1 and r2"
     ],
     "ru": [
-      "просмотр этого видео, если у вас есть"
+      "в этой лабораторной работе мы будем работать с двумя маршрутизаторами r1 и r2."
     ]
   },
   {
     "time": [
-      15.0,
-      18.0
+      26.869218,
+      38.439468
     ],
     "en": [
-      "trouble or watch it afterwards to check"
+      "we will configure basic security on the routers by using the enable password which is used to enter privileged exec mode also known as enable mode"
     ],
     "ru": [
-      "проблемы или посмотрите это потом, чтобы проверить"
+      "мы настроим базовую безопасность на маршрутизаторах, используя пароль включения, который используется для входа в привилегированный режим выполнения, также известный как режим включения"
     ]
   },
   {
     "time": [
-      18.0,
-      23.0
+      38.439468,
+      43.2369
     ],
     "en": [
-      "your solution in this lab we will be"
+      "I will only work with one of the routers in this video for the sake of time"
     ],
     "ru": [
-      "ваше решение в этой лаборатории мы будем"
+      "Я буду работать только с одним из маршрутизаторов в этом видео, чтобы сэкономить время."
     ]
   },
   {
     "time": [
-      23.0,
-      28.0
+      43.2369,
+      49.425341
     ],
     "en": [
-      "working with two routers r1 and r2 we"
+      "but I highly recommend that you perform the configurations on both of the routers for practice"
     ],
     "ru": [
-      "работая с двумя роутерами r1 и r2, мы"
+      "но я настоятельно рекомендую вам выполнить настройку на обоих маршрутизаторах для практики."
     ]
   },
   {
     "time": [
-      28.0,
-      30.0
+      49.425341,
+      54.978542
     ],
     "en": [
-      "will configure basic security on the"
+      "repetition is essential to become familiar with the command-line interface or CLI"
     ],
     "ru": [
-      "настроит базовую безопасность на"
+      "повторение необходимо для знакомства с интерфейсом командной строки или CLI"
     ]
   },
   {
     "time": [
-      30.0,
-      33.0
+      54.978542,
+      66.483025
     ],
     "en": [
-      "routers by using the enable password"
+      "step one is to connect the two routers by their Gigabit Ethernet 0 0 interfaces"
     ],
     "ru": [
-      "маршрутизаторы с помощью пароля включения"
+      "Шаг первый - соединить два маршрутизатора через их интерфейсы Gigabit Ethernet 0 0."
     ]
   },
   {
     "time": [
-      33.0,
-      35.0
+      66.483025,
+      71.349879
     ],
     "en": [
-      "which is used to enter privileged exec"
+      "I will refer to these as the gig 0 0 interfaces"
     ],
     "ru": [
-      "который используется для входа в привилегированный exec"
+      "Я буду называть их интерфейсами gig 0 0."
     ]
   },
   {
     "time": [
-      35.0,
-      39.0
+      71.349879,
+      74.748849
     ],
     "en": [
-      "mode also known as enable mode I will"
+      "click on connections in the bottom left"
     ],
     "ru": [
-      "режим, также известный как режим включения, я буду"
+      "нажмите на соединения в левом нижнем углу"
     ]
   },
   {
     "time": [
-      39.0,
-      41.0
+      74.748849,
+      82.948591
     ],
     "en": [
-      "only work with one of the routers in"
+      "and select the cable connected to the gig 0 0 interface on r1 and then r2"
     ],
     "ru": [
-      "работать только с одним из роутеров в"
+      "и выбираем кабель, подключенный к интерфейсу gig 0 0 на r1, а затем на r2"
     ]
   },
   {
     "time": [
-      41.0,
-      44.0
+      82.948591,
+      86.914912
     ],
     "en": [
-      "this video for the sake of time but I"
+      "there we have it step one is complete"
     ],
     "ru": [
-      "это видео ради времени, но я"
+      "вот и все, шаг первый завершен"
     ]
   },
   {
     "time": [
-      44.0,
-      45.0
+      86.914912,
+      96.296489
     ],
     "en": [
-      "highly recommend that you perform the"
+      "step two is to set the host names according to the network diagram"
     ],
     "ru": [
-      "настоятельно рекомендую вам выполнить"
+      "Шаг второй - установить имена хостов в соответствии с сетевой диаграммой"
     ]
   },
   {
     "time": [
-      45.0,
-      47.0
+      96.296489,
+      98.657359
     ],
     "en": [
-      "configurations on both of the routers"
+      "that is to r1 and r2"
     ],
     "ru": [
-      "конфигурации на обоих маршрутизаторах"
+      "то есть к r1 и r2"
     ]
   },
   {
     "time": [
-      47.0,
-      51.0
+      98.657359,
+      106.811349
     ],
     "en": [
-      "for practice repetition is essential to"
+      "click on each router and then select CLI to access the command-line interface from which we will configure each router"
     ],
     "ru": [
-      "для практики повторение необходимо"
+      "щелкните каждый маршрутизатор, а затем выберите CLI, чтобы получить доступ к интерфейсу командной строки, из которого мы будем настраивать каждый маршрутизатор"
     ]
   },
   {
     "time": [
-      51.0,
-      52.0
+      106.811349,
+      111.044964
     ],
     "en": [
-      "become familiar with the command-line"
+      "the current host name for each router is displayed here"
     ],
     "ru": [
-      "познакомиться с командной строкой"
+      "здесь отображается текущее имя хоста для каждого маршрутизатора"
     ]
   },
   {
     "time": [
-      52.0,
-      60.0
+      111.044964,
+      115.359068
     ],
     "en": [
-      "interface or CLI"
+      "as you can see each router is currently named router"
     ],
     "ru": [
-      "интерфейс или CLI"
+      "как вы можете видеть, каждый маршрутизатор в настоящее время называется маршрутизатором"
     ]
   },
   {
     "time": [
-      60.0,
-      62.0
+      115.359068,
+      121.062605
     ],
     "en": [
-      "step one is to connect the two routers"
+      "to change the host name of a router we must enter global configuration mode"
     ],
     "ru": [
-      "Шаг первый - подключить два маршрутизатора"
+      "чтобы изменить имя хоста маршрутизатора, мы должны войти в режим глобальной конфигурации"
     ]
   },
   {
     "time": [
-      62.0,
-      66.0
+      121.062605,
+      125.812091
     ],
     "en": [
-      "by their Gigabit Ethernet 0 0 interfaces"
+      "however to get there we must first enter privileged exec mode"
     ],
     "ru": [
-      "через их интерфейсы Gigabit Ethernet 0 0"
+      "однако, чтобы попасть туда, мы должны сначала войти в привилегированный режим exec"
     ]
   },
   {
     "time": [
-      66.0,
-      69.0
+      125.812091,
+      129.560357
     ],
     "en": [
-      "I will refer to these as the gig 0 0"
+      "this is achieved by using the enable command"
     ],
     "ru": [
-      "Я буду называть их концертом 0 0"
+      "это достигается с помощью команды enable"
     ]
   },
   {
     "time": [
-      69.0,
-      73.0
+      129.560357,
+      136.567287
     ],
     "en": [
-      "interfaces click on connections in the"
+      "to demonstrate a shortcut I will use the exit command to return to the previous exec mode"
     ],
     "ru": [
-      "интерфейсы нажмите на соединения в"
+      "чтобы продемонстрировать ярлык, я воспользуюсь командой exit, чтобы вернуться в предыдущий режим выполнения."
     ]
   },
   {
     "time": [
-      73.0,
-      77.0
+      136.567287,
+      142.528383
     ],
     "en": [
-      "bottom left and select the cable"
+      "notice that you can enter privileged exec mode by simply typing en"
     ],
     "ru": [
-      "внизу слева и выберите кабель"
+      "обратите внимание, что вы можете войти в привилегированный режим exec, просто набрав en"
     ]
   },
   {
     "time": [
-      77.0,
-      80.0
+      142.528383,
+      148.283737
     ],
     "en": [
-      "connected to the gig 0 0 interface on r1"
+      "you can also type en and then use tab to autocomplete it to enable"
     ],
     "ru": [
-      "подключил к интерфейсу гиг 0 0 на r1"
+      "вы также можете ввести en, а затем использовать вкладку для автозаполнения, чтобы включить"
     ]
   },
   {
     "time": [
-      80.0,
-      84.0
+      148.283737,
+      152.286667
     ],
     "en": [
-      "and then r2 there we have it"
+      "but this isn't necessary en alone is fine"
     ],
     "ru": [
-      "а затем r2 вот и все"
+      "но это не обязательно"
     ]
   },
   {
     "time": [
-      84.0,
-      91.0
+      152.286667,
+      155.843063
     ],
     "en": [
-      "step one is complete"
+      "e however is too short"
     ],
     "ru": [
-      "первый шаг завершен"
+      "е, однако, слишком короткое"
     ]
   },
   {
     "time": [
-      91.0,
-      94.0
+      155.843063,
+      158.807745
     ],
     "en": [
-      "step two is to set the host names"
+      "and we are told this is an ambiguous command"
     ],
     "ru": [
-      "Шаг второй - установить имена хостов"
+      "и нам говорят, что это неоднозначная команда"
     ]
   },
   {
     "time": [
-      94.0,
-      96.0
+      158.807745,
+      163.438917
     ],
     "en": [
-      "according to the network diagram that is"
+      "this is because there are other potential commands that begin with E"
     ],
     "ru": [
-      "согласно сетевой схеме, то есть"
+      "это потому, что есть другие потенциальные команды, которые начинаются с E"
     ]
   },
   {
     "time": [
-      96.0,
-      100.0
+      163.438917,
+      167.41218
     ],
     "en": [
-      "to r1 and r2 click on each router and"
+      "which we can see by typing E and then a question mark"
     ],
     "ru": [
-      "к r1 и r2 щелкните на каждом маршрутизаторе и"
+      "что мы можем увидеть, набрав E, а затем вопросительный знак"
     ]
   },
   {
     "time": [
-      100.0,
-      102.0
+      167.41218,
+      173.20304
     ],
     "en": [
-      "then select CLI to access the"
+      "as you can see there are two potential commands enable and exit"
     ],
     "ru": [
-      "затем выберите CLI, чтобы получить доступ к"
+      "как вы можете видеть, есть две возможные команды: включить и выйти"
     ]
   },
   {
     "time": [
-      102.0,
-      104.0
+      173.20304,
+      178.511168
     ],
     "en": [
-      "command-line interface from which we"
+      "so if you just enter E the router doesn't know which command you mean"
     ],
     "ru": [
-      "интерфейс командной строки, из которого мы"
+      "поэтому, если вы просто введете E, маршрутизатор не знает, какую команду вы имеете в виду"
     ]
   },
   {
     "time": [
-      104.0,
-      108.0
+      178.511168,
+      183.078884
     ],
     "en": [
-      "will configure each router the current"
+      "however enable is the only command beginning with en"
     ],
     "ru": [
-      "настроит каждый роутер на текущий"
+      "однако enable - единственная команда, начинающаяся с en"
     ]
   },
   {
     "time": [
-      108.0,
-      110.0
+      183.078884,
+      187.293586
     ],
     "en": [
-      "host name for each router is displayed"
+      "so en is all the router needs to know which command you mean"
     ],
     "ru": [
-      "отображается имя хоста для каждого маршрутизатора"
+      "так что все, что маршрутизатор должен знать, какую команду вы имеете в виду"
     ]
   },
   {
     "time": [
-      110.0,
-      113.0
+      187.293586,
+      191.265524
     ],
     "en": [
-      "here as you can see each router is"
+      "now that we are in privileged exec mode"
     ],
     "ru": [
-      "здесь, как вы можете видеть, каждый маршрутизатор"
+      "теперь, когда мы находимся в привилегированном режиме exec"
     ]
   },
   {
     "time": [
-      113.0,
-      116.0
+      191.265524,
+      196.490612
     ],
     "en": [
-      "currently named router to change the"
+      "we can use the configure terminal command to get to global configuration mode"
     ],
     "ru": [
-      "в настоящее время названный маршрутизатор, чтобы изменить"
+      "мы можем использовать команду configure terminal, чтобы перейти в режим глобальной конфигурации"
     ]
   },
   {
     "time": [
-      116.0,
-      119.0
+      196.490612,
+      206.589185
     ],
     "en": [
-      "host name of a router we must enter"
+      "if you want to use shortcuts again as we did with enable and en the shortest version of the configure terminal command is conf t"
     ],
     "ru": [
-      "имя хоста маршрутизатора, которое мы должны ввести"
+      "если вы хотите снова использовать ярлыки, как мы делали с enable и en, самая короткая версия команды configure terminal - conf t"
     ]
   },
   {
     "time": [
-      119.0,
-      122.0
+      206.589185,
+      209.466962
     ],
     "en": [
-      "global configuration mode however to get"
+      "from here we can set the hostname of the router"
     ],
     "ru": [
-      "режим глобальной конфигурации, однако, чтобы получить"
+      "отсюда мы можем установить имя хоста маршрутизатора"
     ]
   },
   {
     "time": [
-      122.0,
-      124.0
+      209.466962,
+      212.633743
     ],
     "en": [
-      "there we must first enter privileged"
+      "this is done with the hostname command"
     ],
     "ru": [
-      "там мы должны сначала войти в привилегированный"
+      "это делается с помощью команды hostname"
     ]
   },
   {
     "time": [
-      124.0,
-      128.0
+      212.633743,
+      215.421597
     ],
     "en": [
-      "exec mode this is achieved by using the"
+      "I will enter hostname r1"
     ],
     "ru": [
-      "В режиме exec это достигается с помощью"
+      "Я введу имя хоста r1"
     ]
   },
   {
     "time": [
-      128.0,
-      132.0
+      215.421597,
+      220.214119
     ],
     "en": [
-      "enable command to demonstrate a shortcut"
+      "as you can see the hostname has changed from router to r1"
     ],
     "ru": [
-      "включить команду, чтобы продемонстрировать ярлык"
+      "как вы можете видеть, имя хоста изменилось с маршрутизатора на r1"
     ]
   },
   {
     "time": [
-      132.0,
-      135.0
+      220.214119,
+      223.111688
     ],
     "en": [
-      "I will use the exit command to return to"
+      "change the hostname on r2 as well"
     ],
     "ru": [
-      "Я воспользуюсь командой выхода, чтобы вернуться в"
+      "также измените имя хоста на r2"
     ]
   },
   {
     "time": [
-      135.0,
-      138.0
+      223.111688,
+      225.434294
     ],
     "en": [
-      "the previous exec mode notice that you"
+      "and step two is complete"
     ],
     "ru": [
-      "предыдущий режим exec обратите внимание, что вы"
+      "и шаг два завершен"
     ]
   },
   {
     "time": [
-      138.0,
-      140.0
+      225.434294,
+      235.417132
     ],
     "en": [
-      "can enter privileged exec mode by simply"
+      "step three is to set the enable password on each router to Cisco"
     ],
     "ru": [
-      "может войти в привилегированный режим exec просто"
+      "Шаг третий - установить пароль включения на каждом маршрутизаторе на Cisco"
     ]
   },
   {
     "time": [
-      140.0,
-      145.0
+      235.417132,
+      243.525971
     ],
     "en": [
-      "typing en you can also type en and then"
+      "the enable password is used to enter privileged exec mode which as I mentioned before is also called enable mode"
     ],
     "ru": [
-      "набрав en, вы также можете ввести en, а затем"
+      "пароль включения используется для входа в привилегированный режим exec, который, как я уже упоминал ранее, также называется режимом включения"
     ]
   },
   {
     "time": [
-      145.0,
-      148.0
+      243.525971,
+      246.567062
     ],
     "en": [
-      "use tab to autocomplete it to enable but"
+      "previously we had no password set"
     ],
     "ru": [
-      "используйте вкладку для автозаполнения, чтобы включить, но"
+      "раньше у нас не было пароля"
     ]
   },
   {
     "time": [
-      148.0,
-      149.0
+      246.567062,
+      251.091763
     ],
     "en": [
-      "this isn't necessary"
+      "so we were able to enter privileged exec mode without any password"
     ],
     "ru": [
-      "это не обязательно"
+      "поэтому мы смогли войти в привилегированный режим exec без пароля"
     ]
   },
   {
     "time": [
-      149.0,
-      155.0
+      251.091763,
+      257.828257
     ],
     "en": [
-      "en alone is fine II however is too short"
+      "now we are going to protect privileged exec mode so that only administrators can access it"
     ],
     "ru": [
-      "en в одиночку нормально II но слишком коротко"
+      "теперь мы собираемся защитить привилегированный режим exec, чтобы только администраторы могли получить к нему доступ"
     ]
   },
   {
     "time": [
-      155.0,
-      157.0
+      257.828257,
+      264.527286
     ],
     "en": [
-      "and we are told this is an ambiguous"
+      "the command is simple and it is done in global configuration mode which we are already in"
     ],
     "ru": [
-      "и нам говорят, что это двусмысленный"
+      "команда проста и выполняется в режиме глобальной конфигурации, в котором мы уже находимся"
     ]
   },
   {
     "time": [
-      157.0,
-      161.0
+      264.527286,
+      268.193335
     ],
     "en": [
-      "command this is because there are other"
+      "type an able password Cisco"
     ],
     "ru": [
-      "команда это потому что есть другие"
+      "введите подходящий пароль Cisco"
     ]
   },
   {
     "time": [
-      161.0,
-      163.0
+      268.193335,
+      269.79656
     ],
     "en": [
-      "potential commands that begin with E"
+      "that's it"
     ],
     "ru": [
-      "потенциальные команды, начинающиеся с E"
+      "это оно"
     ]
   },
   {
     "time": [
-      163.0,
-      166.0
+      269.79656,
+      274.161426
     ],
     "en": [
-      "which we can see by typing E and then a"
+      "now let's test it out"
     ],
     "ru": [
-      "что мы можем увидеть, набрав E, а затем"
+      "теперь давайте проверим это"
     ]
   },
   {
     "time": [
-      166.0,
-      169.0
+      274.161426,
+      275.126163
     ],
     "en": [
-      "question mark as you can see there are"
+      "from here I will use the exit command twice"
     ],
     "ru": [
-      "вопросительный знак, как вы видите, есть"
+      "отсюда я дважды использую команду выхода"
     ]
   },
   {
     "time": [
-      169.0,
-      172.0
+      275.126163,
+      281.464435
     ],
     "en": [
-      "two potential commands an able and exit"
+      "once to bring you back to privileged exec mode and then once again to bring you back to exact mode"
     ],
     "ru": [
-      "две потенциальные команды могут и выйти"
+      "один раз, чтобы вернуть вас в привилегированный режим exec, а затем еще раз, чтобы вернуть вас в точный режим"
     ]
   },
   {
     "time": [
-      172.0,
-      176.0
+      281.464435,
+      286.123771
     ],
     "en": [
-      "so if you just enter E the router"
+      "now I will use the enable command again"
     ],
     "ru": [
-      "поэтому, если вы просто введете E, маршрутизатор"
+      "теперь я снова воспользуюсь командой enable"
     ]
   },
   {
     "time": [
-      176.0,
-      178.0
+      286.123771,
+      289.254222
     ],
     "en": [
-      "doesn't know which command you mean"
+      "however this time I am asked for a password"
     ],
     "ru": [
-      "не знает, какую команду вы имеете в виду"
+      "однако на этот раз меня просят ввести пароль"
     ]
   },
   {
     "time": [
-      178.0,
-      181.0
+      289.254222,
+      292.598876
     ],
     "en": [
-      "however enable is the only command"
+      "the characters do not appear as I type"
     ],
     "ru": [
-      "однако включить - единственная команда"
+      "символы не появляются, когда я печатаю"
     ]
   },
   {
     "time": [
-      181.0,
-      185.0
+      292.598876,
+      296.832131
     ],
     "en": [
-      "beginning with en so en is all the"
+      "however if I type the password Cisco correctly and press Enter"
     ],
     "ru": [
-      "начиная с en так en это все"
+      "однако, если я введу пароль Cisco правильно и нажму Enter"
     ]
   },
   {
     "time": [
-      185.0,
-      186.0
-    ],
-    "en": [
-      "router needs to know which command you"
-    ],
-    "ru": [
-      "маршрутизатор должен знать, какую команду вы"
-    ]
-  },
-  {
-    "time": [
-      186.0,
-      190.0
-    ],
-    "en": [
-      "mean now that we are in privileged exec"
-    ],
-    "ru": [
-      "означает теперь, что мы находимся в привилегированном exec"
-    ]
-  },
-  {
-    "time": [
-      190.0,
-      192.0
-    ],
-    "en": [
-      "mode we can use the configure terminal"
-    ],
-    "ru": [
-      "режим мы можем использовать терминал настройки"
-    ]
-  },
-  {
-    "time": [
-      192.0,
-      195.0
-    ],
-    "en": [
-      "command to get to global configuration"
-    ],
-    "ru": [
-      "команда для перехода к глобальной конфигурации"
-    ]
-  },
-  {
-    "time": [
-      195.0,
-      198.0
-    ],
-    "en": [
-      "mode if you want to use shortcuts again"
-    ],
-    "ru": [
-      "режим, если вы хотите снова использовать ярлыки"
-    ]
-  },
-  {
-    "time": [
-      198.0,
-      201.0
-    ],
-    "en": [
-      "as we did with enable and en the"
-    ],
-    "ru": [
-      "как мы сделали с enable и en"
-    ]
-  },
-  {
-    "time": [
-      201.0,
-      203.0
-    ],
-    "en": [
-      "shortest version of the configure"
-    ],
-    "ru": [
-      "самая короткая версия конфигурации"
-    ]
-  },
-  {
-    "time": [
-      203.0,
-      207.0
-    ],
-    "en": [
-      "terminal command is coffee tea from here"
-    ],
-    "ru": [
-      "команда терминала - это кофе, чай отсюда"
-    ]
-  },
-  {
-    "time": [
-      207.0,
-      209.0
-    ],
-    "en": [
-      "we can set the hostname of the router"
-    ],
-    "ru": [
-      "мы можем установить имя хоста маршрутизатора"
-    ]
-  },
-  {
-    "time": [
-      209.0,
-      212.0
-    ],
-    "en": [
-      "this is done with the hostname command I"
-    ],
-    "ru": [
-      "это делается с помощью команды имени хоста I"
-    ]
-  },
-  {
-    "time": [
-      212.0,
-      216.0
-    ],
-    "en": [
-      "will enter hostname r1 as you can see"
-    ],
-    "ru": [
-      "введите имя хоста r1, как вы можете видеть"
-    ]
-  },
-  {
-    "time": [
-      216.0,
-      219.0
-    ],
-    "en": [
-      "the hostname has changed from router to"
-    ],
-    "ru": [
-      "имя хоста изменилось с маршрутизатора на"
-    ]
-  },
-  {
-    "time": [
-      219.0,
-      223.0
-    ],
-    "en": [
-      "r1 change the hostname on r2 as well and"
-    ],
-    "ru": [
-      "r1 также изменит имя хоста на r2 и"
-    ]
-  },
-  {
-    "time": [
-      223.0,
-      229.0
-    ],
-    "en": [
-      "step two is complete"
-    ],
-    "ru": [
-      "шаг два завершен"
-    ]
-  },
-  {
-    "time": [
-      229.0,
-      232.0
-    ],
-    "en": [
-      "step three is to set the enable password"
-    ],
-    "ru": [
-      "Шаг третий - установить пароль включения"
-    ]
-  },
-  {
-    "time": [
-      232.0,
-      236.0
-    ],
-    "en": [
-      "on each router to Cisco the enable"
-    ],
-    "ru": [
-      "на каждом маршрутизаторе в Cisco включить"
-    ]
-  },
-  {
-    "time": [
-      236.0,
-      238.0
-    ],
-    "en": [
-      "password is used to enter privileged"
-    ],
-    "ru": [
-      "пароль используется для входа в привилегированный"
-    ]
-  },
-  {
-    "time": [
-      238.0,
-      241.0
-    ],
-    "en": [
-      "exec mode which as I mentioned before is"
-    ],
-    "ru": [
-      "режим exec, который, как я упоминал ранее,"
-    ]
-  },
-  {
-    "time": [
-      241.0,
-      245.0
-    ],
-    "en": [
-      "also called enable mode previously we"
-    ],
-    "ru": [
-      "также назывался режимом включения, ранее мы"
-    ]
-  },
-  {
-    "time": [
-      245.0,
-      247.0
-    ],
-    "en": [
-      "had no password set so we were able to"
-    ],
-    "ru": [
-      "не был установлен пароль, поэтому мы могли"
-    ]
-  },
-  {
-    "time": [
-      247.0,
-      249.0
-    ],
-    "en": [
-      "enter privileged exec mode without any"
-    ],
-    "ru": [
-      "войти в привилегированный режим exec без каких-либо"
-    ]
-  },
-  {
-    "time": [
-      249.0,
-      253.0
-    ],
-    "en": [
-      "password now we are going to protect"
-    ],
-    "ru": [
-      "пароль теперь мы собираемся защитить"
-    ]
-  },
-  {
-    "time": [
-      253.0,
-      255.0
-    ],
-    "en": [
-      "privileged exec mode so that only"
-    ],
-    "ru": [
-      "привилегированный режим exec, чтобы только"
-    ]
-  },
-  {
-    "time": [
-      255.0,
-      259.0
-    ],
-    "en": [
-      "administrators can access it the command"
-    ],
-    "ru": [
-      "администраторы могут получить к нему доступ командой"
-    ]
-  },
-  {
-    "time": [
-      259.0,
-      261.0
-    ],
-    "en": [
-      "is simple and it is done in global"
-    ],
-    "ru": [
-      "прост и делается в глобальном"
-    ]
-  },
-  {
-    "time": [
-      261.0,
-      263.0
-    ],
-    "en": [
-      "configuration mode which we are already"
-    ],
-    "ru": [
-      "режим конфигурации, который у нас уже есть"
-    ]
-  },
-  {
-    "time": [
-      263.0,
-      269.0
-    ],
-    "en": [
-      "in type an able password Cisco that's it"
-    ],
-    "ru": [
-      "в типе способный пароль Cisco вот и все"
-    ]
-  },
-  {
-    "time": [
-      269.0,
-      273.0
-    ],
-    "en": [
-      "now let's test it out from here I will"
-    ],
-    "ru": [
-      "теперь давайте проверим это отсюда я буду"
-    ]
-  },
-  {
-    "time": [
-      273.0,
-      276.0
-    ],
-    "en": [
-      "use the exit command twice once to bring"
-    ],
-    "ru": [
-      "дважды используйте команду выхода, чтобы вывести"
-    ]
-  },
-  {
-    "time": [
-      276.0,
-      278.0
-    ],
-    "en": [
-      "you back to privileged exec mode and"
-    ],
-    "ru": [
-      "вы вернетесь в привилегированный режим exec и"
-    ]
-  },
-  {
-    "time": [
-      278.0,
-      280.0
-    ],
-    "en": [
-      "then once again to bring you back to"
-    ],
-    "ru": [
-      "затем еще раз, чтобы вернуть вас к"
-    ]
-  },
-  {
-    "time": [
-      280.0,
-      285.0
-    ],
-    "en": [
-      "exact mode now I will use the enable"
-    ],
-    "ru": [
-      "точный режим теперь я буду использовать включить"
-    ]
-  },
-  {
-    "time": [
-      285.0,
-      288.0
-    ],
-    "en": [
-      "command again however this time I am"
-    ],
-    "ru": [
-      "команда снова, но на этот раз я"
-    ]
-  },
-  {
-    "time": [
-      288.0,
-      291.0
-    ],
-    "en": [
-      "asked for a password the characters do"
-    ],
-    "ru": [
-      "попросил пароль, который делают персонажи"
-    ]
-  },
-  {
-    "time": [
-      291.0,
-      294.0
-    ],
-    "en": [
-      "not appear as I type however if I type"
-    ],
-    "ru": [
-      "не отображаются, когда я печатаю, однако, если я печатаю"
-    ]
-  },
-  {
-    "time": [
-      294.0,
-      296.0
-    ],
-    "en": [
-      "the password Cisco correctly and press"
-    ],
-    "ru": [
-      "пароль Cisco правильно и нажмите"
-    ]
-  },
-  {
-    "time": [
-      296.0,
-      296.0
-    ],
-    "en": [
-      "Enter"
-    ],
-    "ru": [
-      "Входить"
-    ]
-  },
-  {
-    "time": [
-      296.0,
-      300.0
+      296.832131,
+      299.327753
     ],
     "en": [
       "I am brought to privileged exec mode now"
@@ -1165,1298 +721,830 @@ let objs = [
   },
   {
     "time": [
-      300.0,
-      302.0
+      299.327753,
+      303.558942
     ],
     "en": [
-      "let's see what happens if I fail to"
+      "let's see what happens if I fail to enter the correct password"
     ],
     "ru": [
-      "посмотрим, что будет, если я не смогу"
+      "посмотрим, что будет, если я не введу правильный пароль"
     ]
   },
   {
     "time": [
-      302.0,
-      305.0
+      303.558942,
+      312.301938
     ],
     "en": [
-      "enter the correct password I entered the"
+      "I entered the wrong password once twice and then three times before being rejected for having bad secrets"
     ],
     "ru": [
-      "введите правильный пароль я ввел"
+      "Я ввел неправильный пароль один раз два раза, а затем три раза, прежде чем меня отклонили из-за наличия плохих секретов."
     ]
   },
   {
     "time": [
-      305.0,
-      308.0
+      312.301938,
+      317.70121
     ],
     "en": [
-      "wrong password once twice and then three"
+      "now I will try again with the correct password and I'm in"
     ],
     "ru": [
-      "неправильный пароль один раз, два раза, а затем три"
+      "сейчас я попробую еще раз с правильным паролем, и я в"
     ]
   },
   {
     "time": [
-      308.0,
-      311.0
+      317.70121,
+      319.576191
     ],
     "en": [
-      "times before being rejected for having"
+      "step 3 is now complete"
     ],
     "ru": [
-      "раз, прежде чем быть отвергнутым за то, что"
+      "шаг 3 теперь завершен"
     ]
   },
   {
     "time": [
-      311.0,
-      314.0
+      319.576191,
+      328.413973
     ],
     "en": [
-      "bad secrets now I will try again with"
+      "step four is simply to view the password in the running configuration"
     ],
     "ru": [
-      "плохие секреты сейчас я попробую еще раз с"
+      "четвертый шаг - просто просмотреть пароль в текущей конфигурации"
     ]
   },
   {
     "time": [
-      314.0,
-      318.0
+      328.413973,
+      332.295558
     ],
     "en": [
-      "the correct password and I'm in step 3"
+      "the running configuration is the current configuration of the router"
     ],
     "ru": [
-      "правильный пароль, и я на шаге 3"
+      "текущая конфигурация - это текущая конфигурация роутера"
     ]
   },
   {
     "time": [
-      318.0,
-      323.0
+      332.295558,
+      334.796099
     ],
     "en": [
-      "is now complete"
+      "whether or not you have actually saved it"
     ],
     "ru": [
-      "теперь завершено"
+      "действительно ли вы его сохранили"
     ]
   },
   {
     "time": [
-      323.0,
-      326.0
+      334.796099,
+      340.58297
     ],
     "en": [
-      "step four is simply to view the password"
+      "if you turn off the router without saving the running configuration you will lose any changes"
     ],
     "ru": [
-      "шаг четвертый - просто просмотреть пароль"
+      "если вы выключите роутер без сохранения текущей конфигурации, вы потеряете все изменения"
     ]
   },
   {
     "time": [
-      326.0,
-      329.0
+      340.58297,
+      346.860406
     ],
     "en": [
-      "in the running configuration the running"
+      "if you want to keep your changes you will save them to what's called the startup configuration"
     ],
     "ru": [
-      "в рабочей конфигурации ходовая"
+      "если вы хотите сохранить свои изменения, вы сохраните их в так называемой стартовой конфигурации"
     ]
   },
   {
     "time": [
-      329.0,
-      330.0
+      346.860406,
+      348.807184
     ],
     "en": [
-      "configuration is the current"
+      "that will be for another lab"
     ],
     "ru": [
-      "конфигурация текущая"
+      "это будет для другой лаборатории"
     ]
   },
   {
     "time": [
-      330.0,
-      333.0
+      348.807184,
+      355.919352
     ],
     "en": [
-      "configuration of the router whether or"
+      "to view the running configuration use the show running config command from privileged exec mode"
     ],
     "ru": [
-      "конфигурация роутера независимо от того,"
+      "для просмотра текущей конфигурации используйте команду show running config из привилегированного режима exec"
     ]
   },
   {
     "time": [
-      333.0,
-      335.0
+      355.919352,
+      357.87534
     ],
     "en": [
-      "not you have actually saved it if you"
+      "which we are already in"
     ],
     "ru": [
-      "не вы действительно сохранили его, если вы"
+      "в котором мы уже находимся"
     ]
   },
   {
     "time": [
-      335.0,
-      337.0
+      357.87534,
+      362.475673
     ],
     "en": [
-      "turn off the router without saving the"
+      "you can abbreviate it to for example SH run"
     ],
     "ru": [
-      "выключить роутер без сохранения"
+      "вы можете сократить его, например, до SH run"
     ]
   },
   {
     "time": [
-      337.0,
-      339.0
+      362.475673,
+      372.238832
     ],
     "en": [
-      "running configuration you will lose any"
+      "enter the command and you can see the password right here with the exact command we used before enable password Cisco"
     ],
     "ru": [
-      "текущая конфигурация вы потеряете все"
+      "введите команду, и вы увидите пароль прямо здесь с той же командой, которую мы использовали перед включением пароля Cisco"
     ]
   },
   {
     "time": [
-      339.0,
-      342.0
+      372.238832,
+      377.189393
     ],
     "en": [
-      "changes if you want to keep your changes"
+      "step 4 asks if the password is encrypted"
     ],
     "ru": [
-      "изменения, если вы хотите сохранить свои изменения"
+      "шаг 4 спрашивает, зашифрован ли пароль"
     ]
   },
   {
     "time": [
-      342.0,
-      345.0
+      377.189393,
+      383.755187
     ],
     "en": [
-      "you will save them to what's called the"
+      "meaning translated into an unreadable code to protect it from being discovered by people who should not know the password"
     ],
     "ru": [
-      "вы сохраните их в так называемом"
+      "смысл переведен в нечитаемый код, чтобы защитить его от обнаружения людьми, которые не должны знать пароль"
     ]
   },
   {
     "time": [
-      345.0,
-      348.0
+      383.755187,
+      391.657839
     ],
     "en": [
-      "startup configuration that will be for"
+      "as you can see it is not encrypted it is written in clear text right here Cisco so the answer is no"
     ],
     "ru": [
-      "конфигурация запуска, которая будет для"
+      "как вы можете видеть, он не зашифрован, он написан открытым текстом прямо здесь Cisco, поэтому ответ - нет"
     ]
   },
   {
     "time": [
-      348.0,
-      350.0
+      391.657839,
+      394.587015
     ],
     "en": [
-      "another lab to view the running"
+      "step 4 is now complete"
     ],
     "ru": [
-      "другая лаборатория для просмотра бега"
+      "шаг 4 теперь завершен"
     ]
   },
   {
     "time": [
-      350.0,
-      353.0
+      394.587015,
+      400.922847
     ],
     "en": [
-      "configuration use the show running"
+      "step 5 is to enable password encryption on the router"
     ],
     "ru": [
-      "конфигурация использовать шоу работает"
+      "Шаг 5 - включить шифрование пароля на роутере"
     ]
   },
   {
     "time": [
-      353.0,
-      355.0
+      400.922847,
+      405.607194
     ],
     "en": [
-      "config command from privileged exec mode"
+      "we can protect passwords by encrypting them to render them unreadable"
     ],
     "ru": [
-      "команда config из привилегированного режима exec"
+      "мы можем защитить пароли, зашифровав их, чтобы сделать их нечитаемыми"
     ]
   },
   {
     "time": [
-      355.0,
-      359.0
+      405.607194,
+      412.512471
     ],
     "en": [
-      "which we are already in you can"
+      "this is done from global configuration mode with the command service password - encryption"
     ],
     "ru": [
-      "в котором мы уже находимся, вы можете"
+      "это делается из режима глобальной конфигурации с паролем службы команд - шифрование"
     ]
   },
   {
     "time": [
-      359.0,
-      363.0
+      412.512471,
+      417.102114
     ],
     "en": [
-      "abbreviate it to for example SH run"
+      "I will enter the command and now step 5 is complete"
     ],
     "ru": [
-      "сократите его, например, до SH run"
+      "Я введу команду, и теперь шаг 5 завершен"
     ]
   },
   {
     "time": [
-      363.0,
-      366.0
+      417.102114,
+      425.920834
     ],
     "en": [
-      "enter the command and you can see the"
+      "step six is to once again view the running-config"
     ],
     "ru": [
-      "введите команду, и вы увидите"
+      "Шаг шестой - еще раз просмотреть рабочую конфигурацию"
     ]
   },
   {
     "time": [
-      366.0,
-      368.0
+      425.920834,
+      429.500638
     ],
     "en": [
-      "password right here with the exact"
+      "I will use the same command as before"
     ],
     "ru": [
-      "пароль прямо здесь с точным"
+      "Я буду использовать ту же команду, что и раньше"
     ]
   },
   {
     "time": [
-      368.0,
-      371.0
+      429.500638,
+      431.38758
     ],
     "en": [
-      "command we used before enable password"
+      "and now let's check the password"
     ],
     "ru": [
-      "команда, которую мы использовали до включения пароля"
+      "а теперь давайте проверим пароль"
     ]
   },
   {
     "time": [
-      371.0,
-      376.0
+      431.38758,
+      433.878926
     ],
     "en": [
-      "Cisco step 4 asks if the password is"
+      "however the command doesn't work"
     ],
     "ru": [
-      "Шаг 4 Cisco спрашивает, установлен ли пароль"
+      "однако команда не работает"
     ]
   },
   {
     "time": [
-      376.0,
-      376.0
+      433.878926,
+      441.360164
     ],
     "en": [
-      "encrypted"
+      "that is because we are currently in global configuration mode and show running config must be entered from privileged exec mode"
     ],
     "ru": [
-      "зашифрованный"
+      "это потому, что мы в настоящее время находимся в режиме глобальной конфигурации, и показать текущую конфигурацию необходимо ввести из привилегированного режима exec"
     ]
   },
   {
     "time": [
-      376.0,
-      379.0
+      441.360164,
+      447.17541
     ],
     "en": [
-      "meaning translated into an unreadable"
+      "now I could type exit to drop back to privileged exec mode and then enter the command"
     ],
     "ru": [
-      "смысл переведен в нечитаемый"
+      "теперь я мог ввести exit, чтобы вернуться в привилегированный режим exec, а затем ввести команду"
     ]
   },
   {
     "time": [
-      379.0,
-      381.0
+      447.17541,
+      449.309423
     ],
     "en": [
-      "code to protect it from being discovered"
+      "but there is one more way"
     ],
     "ru": [
-      "код для защиты от обнаружения"
+      "но есть еще один способ"
     ]
   },
   {
     "time": [
-      381.0,
-      383.0
+      449.309423,
+      452.021168
     ],
     "en": [
-      "by people who should not know the"
+      "if I type do in front of the command"
     ],
     "ru": [
-      "людьми, которым не следует знать"
+      "если я наберу do перед командой"
     ]
   },
   {
     "time": [
-      383.0,
-      386.0
+      452.021168,
+      454.476454
     ],
     "en": [
-      "password as you can see it is not"
+      "I can enter it from global configuration mode"
     ],
     "ru": [
-      "пароль, как видите, это не так"
+      "Я могу войти в него из режима глобальной конфигурации"
     ]
   },
   {
     "time": [
-      386.0,
-      388.0
+      454.476454,
+      457.298876
     ],
     "en": [
-      "encrypted it is written in clear text"
+      "do show running config"
     ],
     "ru": [
-      "зашифровано написано открытым текстом"
+      "показать текущую конфигурацию"
     ]
   },
   {
     "time": [
-      388.0,
-      391.0
+      457.298876,
+      458.342046
     ],
     "en": [
-      "right here Cisco so the answer is no"
+      "there we go"
     ],
     "ru": [
-      "вот здесь Cisco, поэтому ответ - нет"
+      "вот и мы"
     ]
   },
   {
     "time": [
-      391.0,
-      398.0
+      458.342046,
+      459.982219
     ],
     "en": [
-      "step 4 is now complete step 5 is to"
+      "let's look at the password"
     ],
     "ru": [
-      "шаг 4 завершен, шаг 5 -"
+      "давайте посмотрим на пароль"
     ]
   },
   {
     "time": [
-      398.0,
-      401.0
+      459.982219,
+      465.91831
     ],
     "en": [
-      "enable password encryption on the router"
+      "you can see here an able password followed by a seven and then a string of other numbers"
     ],
     "ru": [
-      "включить шифрование пароля на роутере"
+      "вы можете увидеть здесь действующий пароль, за которым следует семерка, а затем строка других цифр"
     ]
   },
   {
     "time": [
-      401.0,
-      403.0
+      465.91831,
+      468.939648
     ],
     "en": [
-      "we can protect passwords by encrypting"
+      "the password has successfully been encrypted"
     ],
     "ru": [
-      "мы можем защитить пароли с помощью шифрования"
+      "пароль был успешно зашифрован"
     ]
   },
   {
     "time": [
-      403.0,
-      407.0
+      468.939648,
+      472.989782
     ],
     "en": [
-      "them to render them unreadable this is"
+      "although we didn't type this 7 when we entered the command"
     ],
     "ru": [
-      "их, чтобы сделать их нечитаемыми, это"
+      "хотя мы не набирали эту 7, когда вводили команду"
     ]
   },
   {
     "time": [
-      407.0,
-      409.0
+      472.989782,
+      475.6533
     ],
     "en": [
-      "done from global configuration mode with"
+      "it refers to the type of encryption used"
     ],
     "ru": [
-      "выполняется из режима глобальной конфигурации с помощью"
+      "это относится к типу используемого шифрования"
     ]
   },
   {
     "time": [
-      409.0,
-      411.0
+      475.6533,
+      479.90062
     ],
     "en": [
-      "the command service password -"
+      "there are other types as well but that's not something to worry about now"
     ],
     "ru": [
-      "служебный пароль команды -"
+      "есть и другие типы, но сейчас не о чем беспокоиться"
     ]
   },
   {
     "time": [
-      411.0,
-      415.0
+      479.90062,
+      487.49386
     ],
     "en": [
-      "encryption I will enter the command and"
+      "the string of numbers that follow are the passwords Cisco encrypted to be unreadable"
     ],
     "ru": [
-      "шифрование я введу команду и"
+      "следующая строка цифр - это пароли, зашифрованные Cisco, чтобы их нельзя было прочесть."
     ]
   },
   {
     "time": [
-      415.0,
-      422.0
+      487.49386,
+      490.509759
     ],
     "en": [
-      "now step 5 is complete"
+      "so that anyone looking over our shoulder can't read the password"
     ],
     "ru": [
-      "теперь шаг 5 завершен"
+      "чтобы кто-либо, оглядываясь через плечо, не мог прочитать пароль"
     ]
   },
   {
     "time": [
-      422.0,
-      425.0
+      490.509759,
+      497.642039
     ],
     "en": [
-      "step six is to once again view the"
+      "keep in mind that the encryption used in the service password encryption command isn't very secure"
     ],
     "ru": [
-      "Шаг шестой - еще раз просмотреть"
+      "имейте в виду, что шифрование, используемое в команде шифрования пароля службы, не очень безопасно"
     ]
   },
   {
     "time": [
-      425.0,
-      427.0
+      497.642039,
+      499.134879
     ],
     "en": [
-      "running-config I will use the same"
+      "and can be cracked"
     ],
     "ru": [
-      "running-config я буду использовать то же самое"
+      "и может быть взломан"
     ]
   },
   {
     "time": [
-      427.0,
-      430.0
+      499.134879,
+      503.084779
     ],
     "en": [
-      "command as before and now let's check"
+      "but this at least renders the password safe from someone simply glancing over your shoulder"
     ],
     "ru": [
-      "как и раньше, а теперь давайте проверим"
+      "но это, по крайней мере, обезопасит пароль от того, чтобы кто-то просто взглянул через ваше плечо"
     ]
   },
   {
     "time": [
-      430.0,
-      433.0
+      503.084779,
+      505.605702
     ],
     "en": [
-      "the password however the command doesn't"
+      "step 6 is complete"
     ],
     "ru": [
-      "пароль, однако команда не"
+      "шаг 6 завершен"
     ]
   },
   {
     "time": [
-      433.0,
-      436.0
+      505.605702,
+      512.490304
     ],
     "en": [
-      "work that is because we are currently in"
+      "step seven is to disable password encryption"
     ],
     "ru": [
-      "работа, потому что мы в настоящее время находимся в"
+      "Шаг седьмой - отключить шифрование пароля"
     ]
   },
   {
     "time": [
-      436.0,
-      437.0
+      512.490304,
+      516.513226
     ],
     "en": [
-      "global configuration mode and show"
+      "we enabled password encryption with the service password encryption command"
     ],
     "ru": [
-      "режим глобальной конфигурации и показать"
+      "мы включили шифрование пароля с помощью служебной команды шифрования пароля"
     ]
   },
   {
     "time": [
-      437.0,
-      440.0
+      516.513226,
+      521.711706
     ],
     "en": [
-      "running config must be entered from"
+      "now we will simply type no followed by the same command"
     ],
     "ru": [
-      "рабочая конфигурация должна быть введена из"
+      "теперь мы просто введем no, а затем ту же команду"
     ]
   },
   {
     "time": [
-      440.0,
-      442.0
+      521.711706,
+      524.744416
     ],
     "en": [
-      "privileged exec mode now I could type"
+      "no service password encryption"
     ],
     "ru": [
-      "привилегированный режим exec теперь я мог ввести"
+      "нет шифрования сервисного пароля"
     ]
   },
   {
     "time": [
-      442.0,
-      445.0
+      524.744416,
+      528.072475
     ],
     "en": [
-      "exit to drop back to privileged exec"
+      "that's it step seven is now complete"
     ],
     "ru": [
-      "выйти, чтобы вернуться к привилегированному исполнению"
+      "вот и шаг седьмой теперь завершен"
     ]
   },
   {
     "time": [
-      445.0,
-      447.0
+      528.072475,
+      534.631315
     ],
     "en": [
-      "mode and then enter the command but"
+      "step eight is once again to view the password in the running configuration"
     ],
     "ru": [
-      "режим, а затем введите команду, но"
+      "восьмой шаг - еще раз просмотреть пароль в текущей конфигурации."
     ]
   },
   {
     "time": [
-      447.0,
-      451.0
+      534.631315,
+      537.799186
     ],
     "en": [
-      "there is one more way if I type do in"
+      "this time I'll exit down to privileged exec mode"
     ],
     "ru": [
-      "есть еще один способ, если я напечатаю"
+      "на этот раз я выйду в привилегированный режим exec"
     ]
   },
   {
     "time": [
-      451.0,
-      453.0
+      537.799186,
+      541.169135
     ],
     "en": [
-      "front of the command I can enter it from"
+      "and type show running config to view the running configuration"
     ],
     "ru": [
-      "перед командой, я могу ввести ее из"
+      "и введите show running config, чтобы просмотреть текущую конфигурацию."
     ]
   },
   {
     "time": [
-      453.0,
-      456.0
+      541.169135,
+      545.147617
     ],
     "en": [
-      "global configuration mode do show"
+      "as you can see the password is still encrypted"
     ],
     "ru": [
-      "режим глобальной конфигурации показывает"
+      "как видите, пароль по-прежнему зашифрован"
     ]
   },
   {
     "time": [
-      456.0,
-      459.0
+      545.147617,
+      548.634791
     ],
     "en": [
-      "running config there we go let's look at"
+      "why is that even though we disabled password encryption"
     ],
     "ru": [
-      "запускаем конфигурацию, мы идем, давайте посмотрим"
+      "почему это несмотря на то, что мы отключили шифрование паролей"
     ]
   },
   {
     "time": [
-      459.0,
-      462.0
+      548.634791,
+      554.448517
     ],
     "en": [
-      "the password you can see here an able"
+      "well disabling password encryption will prevent future passwords from being encrypted"
     ],
     "ru": [
-      "пароль вы можете увидеть здесь"
+      "Отключение шифрования паролей предотвратит шифрование будущих паролей"
     ]
   },
   {
     "time": [
-      462.0,
-      464.0
+      554.448517,
+      559.012818
     ],
     "en": [
-      "password followed by a seven and then a"
+      "however it does not unencrypted passwords that are already encrypted"
     ],
     "ru": [
-      "пароль, за которым следует семерка, а затем"
+      "однако это не незашифрованные пароли, которые уже зашифрованы"
     ]
   },
   {
     "time": [
-      464.0,
-      467.0
+      559.012818,
+      561.617975
     ],
     "en": [
-      "string of other numbers the password has"
+      "so the answer to step eight is yes"
     ],
     "ru": [
-      "строка других цифр, которые есть в пароле"
+      "так что ответ на восьмой шаг - да"
     ]
   },
   {
     "time": [
-      467.0,
-      470.0
+      561.617975,
+      563.608675
     ],
     "en": [
-      "successfully been encrypted although we"
+      "the password is encrypted"
     ],
     "ru": [
-      "успешно зашифрован, хотя мы"
+      "пароль зашифрован"
     ]
   },
   {
     "time": [
-      470.0,
-      472.0
+      563.608675,
+      567.364223
     ],
     "en": [
-      "didn't type this 7 when we entered the"
+      "step eight in the lab are both now complete"
     ],
     "ru": [
-      "не набрал эту 7, когда мы ввели"
+      "Шаг восьмой в лаборатории оба теперь завершены"
     ]
   },
   {
     "time": [
-      472.0,
-      474.0
+      567.364223,
+      575.830308
     ],
     "en": [
-      "command it refers to the type of"
+      "thank you for watching I hope this lab and video have been helpful"
     ],
     "ru": [
-      "команда относится к типу"
+      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были полезны."
     ]
   },
   {
     "time": [
-      474.0,
-      477.0
+      575.830308,
+      578.369846
     ],
     "en": [
-      "encryption used there are other types as"
+      "please subscribe for future labs like this"
     ],
     "ru": [
-      "используется шифрование, есть и другие типы, такие как"
+      "пожалуйста, подпишитесь на будущие подобные лаборатории"
     ]
   },
   {
     "time": [
-      477.0,
-      479.0
+      578.369846,
+      580.203796
     ],
     "en": [
-      "well but that's not something to worry"
+      "which will be released weekly"
     ],
     "ru": [
-      "ну но это не повод для беспокойства"
+      "который будет выходить еженедельно"
     ]
   },
   {
     "time": [
-      479.0,
-      482.0
+      580.203796,
+      584.907124
     ],
     "en": [
-      "about now the string of numbers that"
+      "if you have requests for any specific labs let me know in the comment section"
     ],
     "ru": [
-      "а теперь строка чисел, которая"
+      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
     ]
   },
   {
     "time": [
-      482.0,
-      486.0
+      584.907124,
+      590.288676
     ],
     "en": [
-      "follow are the passwords Cisco encrypted"
+      "if you want to support my channel I accept Bitcoin donations via the address in the description"
     ],
     "ru": [
-      "Ниже приведены пароли, зашифрованные Cisco"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах по адресу в описании"
     ]
   },
   {
     "time": [
-      486.0,
-      488.0
+      590.288676,
+      599.054327
     ],
     "en": [
-      "to be unreadable so that anyone looking"
+      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser thank you"
     ],
     "ru": [
-      "быть нечитаемым, чтобы кто-нибудь смотрел"
+      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере, спасибо"
     ]
   },
   {
     "time": [
-      488.0,
-      490.0
+      599.054327,
+      599.054327
     ],
     "en": [
-      "over our shoulder can't read the"
+      ""
     ],
     "ru": [
-      "через плечо не могу прочитать"
+      ""
     ]
   },
   {
     "time": [
-      490.0,
-      492.0
+      599.054327,
+      599.054327
     ],
     "en": [
-      "password keep in mind that the"
+      ""
     ],
     "ru": [
-      "пароль имейте в виду, что"
+      ""
     ]
   },
   {
     "time": [
-      492.0,
-      494.0
+      599.054327,
+      599.054327
     ],
     "en": [
-      "encryption used in the service password"
+      ""
     ],
     "ru": [
-      "шифрование, используемое в сервисном пароле"
-    ]
-  },
-  {
-    "time": [
-      494.0,
-      497.0
-    ],
-    "en": [
-      "encryption command isn't very secure and"
-    ],
-    "ru": [
-      "команда шифрования не очень безопасна и"
-    ]
-  },
-  {
-    "time": [
-      497.0,
-      500.0
-    ],
-    "en": [
-      "can be cracked but this at least renders"
-    ],
-    "ru": [
-      "можно взломать, но это, по крайней мере, отображает"
-    ]
-  },
-  {
-    "time": [
-      500.0,
-      501.0
-    ],
-    "en": [
-      "the password safe from someone simply"
-    ],
-    "ru": [
-      "пароль в безопасности от кого-то просто"
-    ]
-  },
-  {
-    "time": [
-      501.0,
-      504.0
-    ],
-    "en": [
-      "glancing over your shoulder step 6 is"
-    ],
-    "ru": [
-      "оглядываясь через плечо, шаг 6 - это"
-    ]
-  },
-  {
-    "time": [
-      504.0,
-      508.0
-    ],
-    "en": [
-      "complete"
-    ],
-    "ru": [
-      "полный"
-    ]
-  },
-  {
-    "time": [
-      508.0,
-      511.0
-    ],
-    "en": [
-      "step seven is to disable password"
-    ],
-    "ru": [
-      "Шаг седьмой - отключить пароль"
-    ]
-  },
-  {
-    "time": [
-      511.0,
-      513.0
-    ],
-    "en": [
-      "encryption we enabled password"
-    ],
-    "ru": [
-      "шифрование мы включили пароль"
-    ]
-  },
-  {
-    "time": [
-      513.0,
-      515.0
-    ],
-    "en": [
-      "encryption with the service password"
-    ],
-    "ru": [
-      "шифрование служебным паролем"
-    ]
-  },
-  {
-    "time": [
-      515.0,
-      518.0
-    ],
-    "en": [
-      "encryption command now we will simply"
-    ],
-    "ru": [
-      "команду шифрования, теперь мы просто"
-    ]
-  },
-  {
-    "time": [
-      518.0,
-      522.0
-    ],
-    "en": [
-      "type no followed by the same command no"
-    ],
-    "ru": [
-      "введите no, за которым следует та же команда no"
-    ]
-  },
-  {
-    "time": [
-      522.0,
-      525.0
-    ],
-    "en": [
-      "service password encryption that's it"
-    ],
-    "ru": [
-      "шифрование сервисного пароля вот и все"
-    ]
-  },
-  {
-    "time": [
-      525.0,
-      531.0
-    ],
-    "en": [
-      "step seven is now complete step eight is"
-    ],
-    "ru": [
-      "седьмой шаг завершен, восьмой шаг завершен."
-    ]
-  },
-  {
-    "time": [
-      531.0,
-      533.0
-    ],
-    "en": [
-      "once again to view the password in the"
-    ],
-    "ru": [
-      "еще раз, чтобы просмотреть пароль в"
-    ]
-  },
-  {
-    "time": [
-      533.0,
-      535.0
-    ],
-    "en": [
-      "running configuration this time I'll"
-    ],
-    "ru": [
-      "на этот раз запущу конфигурацию, я"
-    ]
-  },
-  {
-    "time": [
-      535.0,
-      537.0
-    ],
-    "en": [
-      "exit down to privileged exec mode and"
-    ],
-    "ru": [
-      "выйти в привилегированный режим exec и"
-    ]
-  },
-  {
-    "time": [
-      537.0,
-      540.0
-    ],
-    "en": [
-      "type show running config to view the"
-    ],
-    "ru": [
-      "введите show running config, чтобы просмотреть"
-    ]
-  },
-  {
-    "time": [
-      540.0,
-      543.0
-    ],
-    "en": [
-      "running configuration as you can see the"
-    ],
-    "ru": [
-      "текущая конфигурация, как вы можете видеть"
-    ]
-  },
-  {
-    "time": [
-      543.0,
-      546.0
-    ],
-    "en": [
-      "password is still encrypted why is that"
-    ],
-    "ru": [
-      "пароль все еще зашифрован, почему это"
-    ]
-  },
-  {
-    "time": [
-      546.0,
-      548.0
-    ],
-    "en": [
-      "even though we disabled password"
-    ],
-    "ru": [
-      "хотя мы отключили пароль"
-    ]
-  },
-  {
-    "time": [
-      548.0,
-      549.0
-    ],
-    "en": [
-      "encryption"
-    ],
-    "ru": [
-      "шифрование"
-    ]
-  },
-  {
-    "time": [
-      549.0,
-      552.0
-    ],
-    "en": [
-      "well disabling password encryption will"
-    ],
-    "ru": [
-      "хорошо отключение шифрования паролей будет"
-    ]
-  },
-  {
-    "time": [
-      552.0,
-      553.0
-    ],
-    "en": [
-      "prevent future passwords from being"
-    ],
-    "ru": [
-      "предотвратить будущие пароли от"
-    ]
-  },
-  {
-    "time": [
-      553.0,
-      555.0
-    ],
-    "en": [
-      "encrypted however it does not"
-    ],
-    "ru": [
-      "зашифровано, но не"
-    ]
-  },
-  {
-    "time": [
-      555.0,
-      557.0
-    ],
-    "en": [
-      "unencrypted passwords that are already"
-    ],
-    "ru": [
-      "незашифрованные пароли, которые уже"
-    ]
-  },
-  {
-    "time": [
-      557.0,
-      561.0
-    ],
-    "en": [
-      "encrypted so the answer to step eight is"
-    ],
-    "ru": [
-      "зашифрован, поэтому ответ на восьмой шаг"
-    ]
-  },
-  {
-    "time": [
-      561.0,
-      564.0
-    ],
-    "en": [
-      "yes the password is encrypted step eight"
-    ],
-    "ru": [
-      "да, пароль зашифрован, шаг восьмой"
-    ]
-  },
-  {
-    "time": [
-      564.0,
-      571.0
-    ],
-    "en": [
-      "in the lab are both now complete"
-    ],
-    "ru": [
-      "в лаборатории оба теперь завершены"
-    ]
-  },
-  {
-    "time": [
-      571.0,
-      574.0
-    ],
-    "en": [
-      "thank you for watching I hope this lab"
-    ],
-    "ru": [
-      "спасибо за просмотр, надеюсь, эта лаборатория"
-    ]
-  },
-  {
-    "time": [
-      574.0,
-      576.0
-    ],
-    "en": [
-      "and video have been helpful please"
-    ],
-    "ru": [
-      "и видео были полезны, пожалуйста"
-    ]
-  },
-  {
-    "time": [
-      576.0,
-      578.0
-    ],
-    "en": [
-      "subscribe for future labs like this"
-    ],
-    "ru": [
-      "подпишитесь на будущие подобные лаборатории"
-    ]
-  },
-  {
-    "time": [
-      578.0,
-      581.0
-    ],
-    "en": [
-      "which will be released weekly if you"
-    ],
-    "ru": [
-      "который будет выходить еженедельно, если вы"
-    ]
-  },
-  {
-    "time": [
-      581.0,
-      583.0
-    ],
-    "en": [
-      "have requests for any specific labs let"
-    ],
-    "ru": [
-      "есть запросы на любые конкретные лаборатории, позволяющие"
-    ]
-  },
-  {
-    "time": [
-      583.0,
-      585.0
-    ],
-    "en": [
-      "me know in the comment section if you"
-    ],
-    "ru": [
-      "я знаю в разделе комментариев, если вы"
-    ]
-  },
-  {
-    "time": [
-      585.0,
-      587.0
-    ],
-    "en": [
-      "want to support my channel I accept"
-    ],
-    "ru": [
-      "хочу поддержать мой канал я принимаю"
-    ]
-  },
-  {
-    "time": [
-      587.0,
-      589.0
-    ],
-    "en": [
-      "Bitcoin donations via the address in the"
-    ],
-    "ru": [
-      "Пожертвования биткойнов через адрес в"
-    ]
-  },
-  {
-    "time": [
-      589.0,
-      592.0
-    ],
-    "en": [
-      "description I am also a brave verified"
-    ],
-    "ru": [
-      "описание я тоже храбрый проверил"
-    ]
-  },
-  {
-    "time": [
-      592.0,
-      595.0
-    ],
-    "en": [
-      "publisher and accept bat or basic"
-    ],
-    "ru": [
-      "издатель и принять летучую мышь или базовый"
-    ]
-  },
-  {
-    "time": [
-      595.0,
-      597.0
-    ],
-    "en": [
-      "attention token donations in the brave"
-    ],
-    "ru": [
-      "пожертвования токенов внимания в храбрых"
-    ]
-  },
-  {
-    "time": [
-      597.0,
-      597.0
-    ],
-    "en": [
-      "browser thank you"
-    ],
-    "ru": [
-      "браузер спасибо"
+      ""
     ]
   }
 ]

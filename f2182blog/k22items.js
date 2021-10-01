@@ -2,367 +2,175 @@ let objs = [
   {
     "time": [
       0.0,
-      3.0
+      8.006249
     ],
     "en": [
-      "welcome to this free CCNA packet tracer"
+      "welcome to this free CCNA packet tracer practice lab you can download the lab file from the link in the description"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный трассировщик пакетов CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer, вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
     "time": [
-      3.0,
-      6.0
+      8.006249,
+      15.38991
     ],
     "en": [
-      "practice lab you can download the lab"
+      "if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description"
     ],
     "ru": [
-      "Практическая лаборатория вы можете скачать лабораторию"
+      "если вам нравятся эти лаборатории, пожалуйста, подумайте о поддержке меня через мой патреон или варианты криптовалюты в описании"
     ]
   },
   {
     "time": [
-      6.0,
-      9.0
+      15.38991,
+      21.108425
     ],
     "en": [
-      "file from the link in the description if"
+      "this will be a short lab focused on using telnet to connect to Cisco devices"
     ],
     "ru": [
-      "файл по ссылке в описании, если"
+      "это будет короткая лабораторная работа, посвященная использованию telnet для подключения к устройствам Cisco."
     ]
   },
   {
     "time": [
-      9.0,
-      10.0
+      21.108425,
+      27.400059
     ],
     "en": [
-      "you like these labs please consider"
+      "in a previous lab we configured the console port and use that to connect to a router via PC"
     ],
     "ru": [
-      "Вам нравятся эти лаборатории, пожалуйста, примите во внимание"
+      "в предыдущей лабораторной работе мы настроили консольный порт и использовали его для подключения к маршрутизатору через ПК."
     ]
   },
   {
     "time": [
-      10.0,
-      13.0
+      27.400059,
+      35.221511
     ],
     "en": [
-      "supporting me via my patreon or the"
+      "in this lab we will use telnet which allows us to configure a Cisco device by connecting via a regular Ethernet port"
     ],
     "ru": [
-      "поддерживая меня через моего патреона или"
+      "в этой лабораторной работе мы будем использовать telnet, который позволяет нам настраивать устройство Cisco, подключаясь через обычный порт Ethernet."
     ]
   },
   {
     "time": [
-      13.0,
-      14.0
+      35.221511,
+      40.435432
     ],
     "en": [
-      "cryptocurrency options in the"
+      "note that although telnet is something you should be familiar with"
     ],
     "ru": [
-      "варианты криптовалюты в"
+      "обратите внимание, что хотя telnet - это то, с чем вы должны быть знакомы"
     ]
   },
   {
     "time": [
-      14.0,
-      17.0
+      40.435432,
+      44.50743
     ],
     "en": [
-      "description this will be a short lab"
+      "it is not something you will likely end up using due to a lack of security"
     ],
     "ru": [
-      "описание это будет короткая лаборатория"
+      "это не то, что вы, вероятно, в конечном итоге будете использовать из-за отсутствия безопасности"
     ]
   },
   {
     "time": [
-      17.0,
-      20.0
+      44.50743,
+      49.260411
     ],
     "en": [
-      "focused on using telnet to connect to"
+      "this is because telnet sends all data in plaintext"
     ],
     "ru": [
-      "сосредоточился на использовании telnet для подключения к"
+      "это потому, что telnet отправляет все данные в виде открытого текста"
     ]
   },
   {
     "time": [
-      20.0,
-      23.0
+      49.260411,
+      56.571148
     ],
     "en": [
-      "Cisco devices in a previous lab we"
+      "if anyone intercepts that data they can read it including usernames and passwords and other sensitive data"
     ],
     "ru": [
-      "Устройства Cisco в предыдущей лабораторной работе мы"
+      "если кто-то перехватит эти данные, он сможет их прочитать, включая имена пользователей, пароли и другие конфиденциальные данные"
     ]
   },
   {
     "time": [
-      23.0,
-      25.0
+      56.571148,
+      60.599827
     ],
     "en": [
-      "configured the console port and use that"
+      "instead of telnet you will want to use SSH"
     ],
     "ru": [
-      "настроил консольный порт и используйте его"
+      "вместо telnet вы захотите использовать SSH"
     ]
   },
   {
     "time": [
-      25.0,
-      29.0
+      60.599827,
+      62.416328
     ],
     "en": [
-      "to connect to a router via PC in this"
+      "which we will cover in another lab"
     ],
     "ru": [
-      "подключиться к роутеру через ПК в этом"
+      "которые мы рассмотрим в другой лаборатории"
     ]
   },
   {
     "time": [
-      29.0,
-      31.0
+      62.416328,
+      65.912487
     ],
     "en": [
-      "lab we will use telnet which allows us"
+      "but with that said telnet is still something you should know"
     ],
     "ru": [
-      "лаборатории мы будем использовать telnet, который позволяет нам"
+      "но с этим telnet все еще то, что вы должны знать"
     ]
   },
   {
     "time": [
-      31.0,
-      33.0
+      65.912487,
+      68.570006
     ],
     "en": [
-      "to configure a Cisco device by"
+      "so let's practice some of the basics in this lab"
     ],
     "ru": [
-      "настроить устройство Cisco с помощью"
+      "так что давайте попрактикуемся в некоторых основах в этой лабораторной работе"
     ]
   },
   {
     "time": [
-      33.0,
-      36.0
+      68.570006,
+      75.355148
     ],
     "en": [
-      "connecting via a regular Ethernet port"
+      "as always try to complete the lab yourself first then continue watching this video if you have trouble"
     ],
     "ru": [
-      "подключение через обычный порт Ethernet"
+      "как всегда, попробуйте сначала пройти лабораторную работу самостоятельно, а затем продолжайте смотреть это видео, если у вас возникнут проблемы"
     ]
   },
   {
     "time": [
-      36.0,
-      39.0
-    ],
-    "en": [
-      "note that although telnet is something"
-    ],
-    "ru": [
-      "обратите внимание, что хотя telnet - это что-то"
-    ]
-  },
-  {
-    "time": [
-      39.0,
-      41.0
-    ],
-    "en": [
-      "you should be familiar with it is not"
-    ],
-    "ru": [
-      "вы должны быть знакомы с этим не"
-    ]
-  },
-  {
-    "time": [
-      41.0,
-      42.0
-    ],
-    "en": [
-      "something you will likely end up using"
-    ],
-    "ru": [
-      "то, что вы, вероятно, в конечном итоге будете использовать"
-    ]
-  },
-  {
-    "time": [
-      42.0,
-      46.0
-    ],
-    "en": [
-      "due to a lack of security this is"
-    ],
-    "ru": [
-      "из-за отсутствия безопасности это"
-    ]
-  },
-  {
-    "time": [
-      46.0,
-      48.0
-    ],
-    "en": [
-      "because telnet sends all data in"
-    ],
-    "ru": [
-      "потому что telnet отправляет все данные в"
-    ]
-  },
-  {
-    "time": [
-      48.0,
-      51.0
-    ],
-    "en": [
-      "plaintext if anyone intercepts that data"
-    ],
-    "ru": [
-      "открытый текст, если кто-то перехватит эти данные"
-    ]
-  },
-  {
-    "time": [
-      51.0,
-      53.0
-    ],
-    "en": [
-      "they can read it including usernames and"
-    ],
-    "ru": [
-      "они могут прочитать его, включая имена пользователей и"
-    ]
-  },
-  {
-    "time": [
-      53.0,
-      56.0
-    ],
-    "en": [
-      "passwords and other sensitive data"
-    ],
-    "ru": [
-      "пароли и другие конфиденциальные данные"
-    ]
-  },
-  {
-    "time": [
-      56.0,
-      59.0
-    ],
-    "en": [
-      "instead of telnet you will want to use"
-    ],
-    "ru": [
-      "вместо telnet вы захотите использовать"
-    ]
-  },
-  {
-    "time": [
-      59.0,
-      62.0
-    ],
-    "en": [
-      "SSH which we will cover in another lab"
-    ],
-    "ru": [
-      "SSH, который мы рассмотрим в другой лаборатории"
-    ]
-  },
-  {
-    "time": [
-      62.0,
-      64.0
-    ],
-    "en": [
-      "but with that said telnet is still"
-    ],
-    "ru": [
-      "но с этим телнетом все еще"
-    ]
-  },
-  {
-    "time": [
-      64.0,
-      65.0
-    ],
-    "en": [
-      "something you should know"
-    ],
-    "ru": [
-      "то, что ты должен знать"
-    ]
-  },
-  {
-    "time": [
-      65.0,
-      67.0
-    ],
-    "en": [
-      "so let's practice some of the basics in"
-    ],
-    "ru": [
-      "так что давайте попрактикуемся в некоторых основах"
-    ]
-  },
-  {
-    "time": [
-      67.0,
-      71.0
-    ],
-    "en": [
-      "this lab as always try to complete the"
-    ],
-    "ru": [
-      "эта лаборатория, как всегда, пытается завершить"
-    ]
-  },
-  {
-    "time": [
-      71.0,
-      73.0
-    ],
-    "en": [
-      "lab yourself first then continue"
-    ],
-    "ru": [
-      "сначала пробуй себя, а потом продолжай"
-    ]
-  },
-  {
-    "time": [
-      73.0,
-      74.0
-    ],
-    "en": [
-      "watching this video if you have trouble"
-    ],
-    "ru": [
-      "посмотрите это видео, если у вас возникнут проблемы"
-    ]
-  },
-  {
-    "time": [
-      74.0,
-      77.0
+      75.355148,
+      77.266705
     ],
     "en": [
       "or watch it after to check your solution"
@@ -373,536 +181,356 @@ let objs = [
   },
   {
     "time": [
-      77.0,
-      79.0
+      77.266705,
+      82.360548
     ],
     "en": [
-      "if you haven't learned the commands"
+      "if you haven't learned the commands required to do these tasks yet in your studies"
     ],
     "ru": [
-      "если вы не выучили команды"
+      "если вы еще не выучили команды, необходимые для выполнения этих задач во время учебы"
     ]
   },
   {
     "time": [
-      79.0,
-      81.0
+      82.360548,
+      84.955112
     ],
     "en": [
-      "required to do these tasks yet in your"
+      "feel free to just watch the video to learn them"
     ],
     "ru": [
-      "требуется для выполнения этих задач еще в вашем"
+      "не стесняйтесь просто смотреть видео, чтобы узнать их"
     ]
   },
   {
     "time": [
-      81.0,
-      83.0
+      84.955112,
+      92.530769
     ],
     "en": [
-      "studies feel free to just watch the"
+      "step one is to configure the IP addresses on switch 1 and R 1"
     ],
     "ru": [
-      "исследования не стесняйтесь просто смотреть"
+      "Шаг первый - настроить IP-адреса на коммутаторе 1 и R 1."
     ]
   },
   {
     "time": [
-      83.0,
-      87.0
+      92.530769,
+      96.696031
     ],
     "en": [
-      "video to learn them"
+      "we will then use these addresses to connect to the devices later in the lab"
     ],
     "ru": [
-      "видео, чтобы узнать их"
+      "затем мы будем использовать эти адреса для подключения к устройствам позже в лаборатории."
     ]
   },
   {
     "time": [
-      87.0,
-      89.0
+      96.696031,
+      99.35214
     ],
     "en": [
-      "step one is to configure the IP"
+      "let's go on switch 1 first"
     ],
     "ru": [
-      "Шаг первый - настроить IP"
+      "давай сначала включим переключатель 1"
     ]
   },
   {
     "time": [
-      89.0,
-      93.0
+      99.35214,
+      108.153922
     ],
     "en": [
-      "addresses on switch 1 and R 1 we will"
+      "enable conf t we will configure the IP address on the VLAN 1 interface"
     ],
     "ru": [
-      "адреса на переключателе 1 и R 1 мы будем"
+      "enable conf t мы настроим IP-адрес на интерфейсе VLAN 1"
     ]
   },
   {
     "time": [
-      93.0,
-      94.0
+      108.153922,
+      113.021492
     ],
     "en": [
-      "then use these addresses to connect to"
+      "because a regular switch interface cannot be configured with an IP address"
     ],
     "ru": [
-      "затем используйте эти адреса для подключения к"
+      "потому что обычный интерфейс коммутатора не может быть настроен с IP-адресом"
     ]
   },
   {
     "time": [
-      94.0,
-      98.0
+      113.021492,
+      118.481674
     ],
     "en": [
-      "the devices later in the lab let's go on"
+      "we have to configure that IP address we use to manage the device on a VLAN interface"
     ],
     "ru": [
-      "устройства позже в лаборатории давайте продолжим"
+      "мы должны настроить тот IP-адрес, который мы используем для управления устройством на интерфейсе VLAN."
     ]
   },
   {
     "time": [
-      98.0,
-      105.0
+      118.481674,
+      120.308253
     ],
     "en": [
-      "switch 1 first enable compte we will"
+      "rather than on a physical interface"
     ],
     "ru": [
-      "переключатель 1 сначала включите compte, мы будем"
+      "а не на физическом интерфейсе"
     ]
   },
   {
     "time": [
-      105.0,
-      107.0
+      120.308253,
+      123.804294
     ],
     "en": [
-      "configure the IP address on the VLAN 1"
+      "so interface VLAN 1"
     ],
     "ru": [
-      "настроить IP-адрес в VLAN 1"
+      "так интерфейс VLAN 1"
     ]
   },
   {
     "time": [
-      107.0,
-      110.0
+      123.804294,
+      131.271763
     ],
     "en": [
-      "interface because a regular switch"
+      "IP address 192.168.1.2 255.255.255.0"
     ],
     "ru": [
-      "интерфейс потому что штатный переключатель"
+      "IP-адрес 192.168.1.2 255.255.255.0"
     ]
   },
   {
     "time": [
-      110.0,
-      112.0
+      131.271763,
+      134.914793
     ],
     "en": [
-      "interface cannot be configured with an"
+      "also I'll use no shutdown to activate it"
     ],
     "ru": [
-      "интерфейс не может быть настроен с"
+      "также я не буду использовать выключение, чтобы активировать его"
     ]
   },
   {
     "time": [
-      112.0,
-      114.0
+      134.914793,
+      137.600192
     ],
     "en": [
-      "IP address we have to configure that IP"
+      "now let's configure r1"
     ],
     "ru": [
-      "IP-адрес, мы должны настроить этот IP-адрес"
+      "теперь давайте настроим r1"
     ]
   },
   {
     "time": [
-      114.0,
-      116.0
+      137.600192,
+      152.16748
     ],
     "en": [
-      "address we use to manage the device on a"
+      "enable conf t interface G 0 0 IP address 192.168.1.1 255.255.255.0"
     ],
     "ru": [
-      "адрес, который мы используем для управления устройством на"
+      "enable conf t interface G 0 0 IP-адрес 192.168.1.1 255.255.255.0"
     ]
   },
   {
     "time": [
-      116.0,
-      119.0
+      152.16748,
+      158.530171
     ],
     "en": [
-      "VLAN interface rather than on a physical"
+      "remember router interfaces are administratively down by default so no shutdown"
     ],
     "ru": [
-      "Интерфейс VLAN, а не физический"
+      "помните, что интерфейсы маршрутизатора отключены по умолчанию, поэтому выключение не выполняется."
     ]
   },
   {
     "time": [
-      119.0,
-      124.0
+      158.530171,
+      160.685924
     ],
     "en": [
-      "interface so interface VLAN 1 IP address"
+      "okay that's all for step 1"
     ],
     "ru": [
-      "интерфейс так интерфейс VLAN 1 IP-адрес"
+      "хорошо, это все для шага 1"
     ]
   },
   {
     "time": [
-      124.0,
-      132.0
+      160.685924,
+      165.49378
     ],
     "en": [
-      ""
+      "step 2 is to configure a single user on each device"
     ],
     "ru": [
-      ""
+      "Шаг 2 - настроить одного пользователя на каждом устройстве"
     ]
   },
   {
     "time": [
-      124.0,
-      132.0
+      165.49378,
+      168.300749
     ],
     "en": [
-      ""
+      "since we're on our one let's do that first"
     ],
     "ru": [
-      ""
+      "так как мы находимся на нашем, давайте сделаем это в первую очередь"
     ]
   },
   {
     "time": [
-      132.0,
-      135.0
+      168.300749,
+      173.869935
     ],
     "en": [
-      "I'll use no shutdown to activate it now"
+      "exit username cisco password CCNA"
     ],
     "ru": [
-      "Я не буду использовать выключение, чтобы активировать его сейчас"
+      "выход имя пользователя cisco пароль CCNA"
     ]
   },
   {
     "time": [
-      135.0,
-      142.0
+      173.869935,
+      179.75098
     ],
     "en": [
-      "let's configure r1 enable COFF T"
+      "note again that passwords are case sensitive and in this case CCNA is in all capitals"
     ],
     "ru": [
-      "настроим r1 включить COFF T"
+      "еще раз обратите внимание, что пароли чувствительны к регистру, и в этом случае CCNA пишется заглавными буквами."
     ]
   },
   {
     "time": [
-      142.0,
-      150.0
+      179.75098,
+      183.000866
     ],
     "en": [
-      "interface G 0 0 IP address 192.168.1.1"
+      "now let's do the same on switch one"
     ],
     "ru": [
-      "интерфейс G 0 0 IP-адрес 192.168.1.1"
+      "Теперь давайте сделаем то же самое на первом переключателе"
     ]
   },
   {
     "time": [
-      150.0,
-      154.0
+      183.000866,
+      189.344313
     ],
     "en": [
-      ""
+      "exit username cisco password CCNA"
     ],
     "ru": [
-      ""
+      "выход имя пользователя cisco пароль CCNA"
     ]
   },
   {
     "time": [
-      150.0,
-      154.0
+      189.344313,
+      198.932286
     ],
     "en": [
-      ""
+      "step three is to configure the vty lines on switch 1 and R 1"
     ],
     "ru": [
-      ""
+      "Шаг третий - настроить линии VTY на коммутаторе 1 и R 1."
     ]
   },
   {
     "time": [
-      154.0,
-      156.0
+      198.932286,
+      203.107727
     ],
     "en": [
-      "are administratively down by default so"
+      "vty stands for virtual teletype"
     ],
     "ru": [
-      "по умолчанию отключены административно, поэтому"
+      "vty означает виртуальный телетайп"
     ]
   },
   {
     "time": [
-      156.0,
-      161.0
+      203.107727,
+      208.991201
     ],
     "en": [
-      "no shutdown okay that's all for step 1"
+      "and when you create a telnet connection to a Cisco device you will be connecting to one of these vty lines"
     ],
     "ru": [
-      "нет выключения, хорошо, это все для шага 1"
+      "и когда вы создаете telnet-соединение с устройством Cisco, вы будете подключаться к одной из этих линий vty"
     ]
   },
   {
     "time": [
-      161.0,
-      164.0
+      208.991201,
+      213.526021
     ],
     "en": [
-      "step 2 is to configure a single user on"
+      "there are typically 16 numbered 0 through 15"
     ],
     "ru": [
-      "шаг 2 - настроить одного пользователя на"
+      "обычно 16 пронумерованы от 0 до 15"
     ]
   },
   {
     "time": [
-      164.0,
-      167.0
+      213.526021,
+      220.90624
     ],
     "en": [
-      "each device since we're on our one let's"
+      "although in the running configuration they will typically be displayed as 0 through 4 then 5 through 15"
     ],
     "ru": [
-      "каждое устройство, так как мы на нашем, давайте"
+      "хотя в текущей конфигурации они обычно отображаются как от 0 до 4, затем от 5 до 15."
     ]
   },
   {
     "time": [
-      167.0,
-      168.0
+      220.90624,
+      223.427913
     ],
     "en": [
-      "do that first"
+      "let's check on switch 1"
     ],
     "ru": [
-      "сделай это в первую очередь"
+      "давай проверим на переключателе 1"
     ]
   },
   {
     "time": [
-      168.0,
-      174.0
+      223.427913,
+      226.382301
     ],
     "en": [
-      "exit username cisco password CCNA note"
+      "do show run"
     ],
     "ru": [
-      "выход имя пользователя пароль cisco CCNA примечание"
+      "показывать бег"
     ]
   },
   {
     "time": [
-      174.0,
-      176.0
-    ],
-    "en": [
-      "again that passwords are case sensitive"
-    ],
-    "ru": [
-      "еще раз, что пароли чувствительны к регистру"
-    ]
-  },
-  {
-    "time": [
-      176.0,
-      180.0
-    ],
-    "en": [
-      "and in this case CCNA is in all capitals"
-    ],
-    "ru": [
-      "и в этом случае CCNA пишется заглавными буквами."
-    ]
-  },
-  {
-    "time": [
-      180.0,
-      185.0
-    ],
-    "en": [
-      "now let's do the same on switch one exit"
-    ],
-    "ru": [
-      "теперь давайте сделаем то же самое при переключении одного выхода"
-    ]
-  },
-  {
-    "time": [
-      185.0,
-      193.0
-    ],
-    "en": [
-      "username cisco password CCNA"
-    ],
-    "ru": [
-      "имя пользователя пароль cisco CCNA"
-    ]
-  },
-  {
-    "time": [
-      193.0,
-      196.0
-    ],
-    "en": [
-      "step three is to configure the vty lines"
-    ],
-    "ru": [
-      "Шаг третий - настроить линии VTY"
-    ]
-  },
-  {
-    "time": [
-      196.0,
-      201.0
-    ],
-    "en": [
-      "on switch 1 and R 1 vqi stands for"
-    ],
-    "ru": [
-      "на переключателе 1 и R 1 vqi обозначает"
-    ]
-  },
-  {
-    "time": [
-      201.0,
-      203.0
-    ],
-    "en": [
-      "virtual teletype and when you create a"
-    ],
-    "ru": [
-      "виртуальный телетайп и при создании"
-    ]
-  },
-  {
-    "time": [
-      203.0,
-      206.0
-    ],
-    "en": [
-      "telnet connection to a Cisco device you"
-    ],
-    "ru": [
-      "telnet-подключение к устройству Cisco, которое вы"
-    ]
-  },
-  {
-    "time": [
-      206.0,
-      208.0
-    ],
-    "en": [
-      "will be connecting to one of these vty"
-    ],
-    "ru": [
-      "будет подключаться к одному из этих vty"
-    ]
-  },
-  {
-    "time": [
-      208.0,
-      212.0
-    ],
-    "en": [
-      "lines there are typically 16 numbered 0"
-    ],
-    "ru": [
-      "строк обычно 16 пронумерованы 0"
-    ]
-  },
-  {
-    "time": [
-      212.0,
-      214.0
-    ],
-    "en": [
-      "through 15 although in the running"
-    ],
-    "ru": [
-      "через 15 хотя в ходу"
-    ]
-  },
-  {
-    "time": [
-      214.0,
-      216.0
-    ],
-    "en": [
-      "configuration they will typically be"
-    ],
-    "ru": [
-      "конфигурация они обычно будут"
-    ]
-  },
-  {
-    "time": [
-      216.0,
-      220.0
-    ],
-    "en": [
-      "displayed as 0 through 4 then 5 through"
-    ],
-    "ru": [
-      "отображается как от 0 до 4, затем от 5 до"
-    ]
-  },
-  {
-    "time": [
-      220.0,
-      226.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      220.0,
-      226.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      226.0,
-      230.0
+      226.382301,
+      230.841299
     ],
     "en": [
       "scroll down to the bottom there we go"
@@ -913,560 +541,344 @@ let objs = [
   },
   {
     "time": [
-      230.0,
-      234.0
+      230.841299,
+      240.39852
     ],
     "en": [
-      "line vty 0 4 meaning line 0 through 4"
+      "line vty 0 4 meaning line 0 through 4 then line vty 5 15 meaning alliance 5 through 15"
     ],
     "ru": [
-      "строка vty 0 4 означает строки с 0 по 4"
+      "строка vty 0 4 означает строки с 0 по 4, затем строка vty 5 15 означает альянс с 5 по 15"
     ]
   },
   {
     "time": [
-      234.0,
-      239.0
+      240.39852,
+      244.030005
     ],
     "en": [
-      "then line vty 5 15 meaning alliance 5"
+      "although it is displayed like this in the configuration"
     ],
     "ru": [
-      "затем строка vty 5 15 означает альянс 5"
+      "хотя в конфигурации он отображается так"
     ]
   },
   {
     "time": [
-      239.0,
-      242.0
+      244.030005,
+      252.053253
     ],
     "en": [
-      "through 15 although it is displayed like"
+      "we can simply use the command line vty 0 15 to connect to all lines from 0 through 15"
     ],
     "ru": [
-      "через 15, хотя он отображается как"
+      "мы можем просто использовать командную строку vty 0 15 для подключения ко всем строкам с 0 по 15"
     ]
   },
   {
     "time": [
-      242.0,
-      245.0
+      252.053253,
+      253.009129
     ],
     "en": [
-      "this in the configuration we can simply"
+      "there we go"
     ],
     "ru": [
-      "это в конфигурации мы можем просто"
+      "вот и мы"
     ]
   },
   {
     "time": [
-      245.0,
-      249.0
+      253.009129,
+      257.815142
     ],
     "en": [
-      "use the command line vty 0 15 to connect"
+      "now we have two things to configure here according to the lab instructions"
     ],
     "ru": [
-      "используйте командную строку vty 0 15 для подключения"
+      "теперь у нас есть две вещи, которые нужно настроить в соответствии с лабораторными инструкциями"
     ]
   },
   {
     "time": [
-      249.0,
-      252.0
+      257.815142,
+      263.91313
     ],
     "en": [
-      "to all lines from 0 through 15 there we"
+      "first require the use of the local user database to connect to the vty lines"
     ],
     "ru": [
-      "ко всем строкам с 0 по 15 мы"
+      "сначала требуется использование локальной базы данных пользователей для подключения к линиям VTY"
     ]
   },
   {
     "time": [
-      252.0,
-      255.0
+      263.91313,
+      268.818122
     ],
     "en": [
-      "go now we have two things to configure"
+      "this is the same command we used when configuring the console line in a previous lab"
     ],
     "ru": [
-      "иди, теперь у нас есть две вещи, которые нужно настроить"
+      "это та же команда, которую мы использовали при настройке строки консоли в предыдущей лабораторной работе."
     ]
   },
   {
     "time": [
-      255.0,
-      257.0
+      268.818122,
+      275.411018
     ],
     "en": [
-      "here according to the lab instructions"
+      "login local since we only have one user in the local database"
     ],
     "ru": [
-      "здесь согласно лабораторным инструкциям"
+      "логин локальный, так как у нас есть только один пользователь в локальной базе данных"
     ]
   },
   {
     "time": [
-      257.0,
-      261.0
+      275.411018,
+      279.158465
     ],
     "en": [
-      "first require the use of the local user"
+      "we will have to use the username cisco and password CCNA"
     ],
     "ru": [
-      "сначала требуется использование локального пользователя"
+      "нам нужно будет использовать имя пользователя cisco и пароль CCNA"
     ]
   },
   {
     "time": [
-      261.0,
-      264.0
+      279.158465,
+      281.495375
     ],
     "en": [
-      "database to connect to the vty lines"
+      "when we try to tell that to this device later"
     ],
     "ru": [
-      "база данных для подключения к линиям VTY"
+      "когда мы попытаемся сказать это этому устройству позже"
     ]
   },
   {
     "time": [
-      264.0,
-      266.0
+      281.495375,
+      287.676082
     ],
     "en": [
-      "this is the same command we used when"
+      "the next requirement is to allow only telnet connections to the vty lines"
     ],
     "ru": [
-      "это та же команда, которую мы использовали, когда"
+      "следующее требование - разрешить только telnet-подключения к линиям vty."
     ]
   },
   {
     "time": [
-      266.0,
-      267.0
+      287.676082,
+      290.189487
     ],
     "en": [
-      "configuring the console line in a"
+      "this is done with this command"
     ],
     "ru": [
-      "настройка строки консоли в"
+      "это делается с помощью этой команды"
     ]
   },
   {
     "time": [
-      267.0,
-      273.0
+      290.189487,
+      301.482797
     ],
     "en": [
-      "previous lab login local since we only"
+      "transport input now I'll use the question mark to see what options there are all none SSH and telnet"
     ],
     "ru": [
-      "предыдущий вход в лабораторию локальный, так как мы только"
+      "транспортный ввод сейчас я воспользуюсь вопросительным знаком, чтобы посмотреть, какие опции отсутствуют SSH и telnet"
     ]
   },
   {
     "time": [
-      273.0,
-      275.0
+      301.482797,
+      306.921203
     ],
     "en": [
-      "have one user in the local database we"
+      "as I mentioned in the beginning of the video typically you'll be using SSH"
     ],
     "ru": [
-      "есть один пользователь в локальной базе данных, мы"
+      "как я упоминал в начале видео, обычно вы будете использовать SSH"
     ]
   },
   {
     "time": [
-      275.0,
-      277.0
+      306.921203,
+      309.487609
     ],
     "en": [
-      "will have to use the username cisco and"
+      "but let's set it to telnet for this lab"
     ],
     "ru": [
-      "придется использовать имя пользователя cisco и"
+      "но давайте настроим его на telnet для этой лаборатории"
     ]
   },
   {
     "time": [
-      277.0,
-      279.0
+      309.487609,
+      315.315704
     ],
     "en": [
-      "password CCNA when we try to tell that"
+      "ok now let's do the same configuration on r1"
     ],
     "ru": [
-      "пароль CCNA, когда мы пытаемся сказать, что"
+      "хорошо, теперь давайте сделаем ту же настройку на r1"
     ]
   },
   {
     "time": [
-      279.0,
-      283.0
+      315.315704,
+      324.852266
     ],
     "en": [
-      "to this device later the next"
+      "line vty 0 15 login local transport input telnet"
     ],
     "ru": [
-      "к этому устройству позже следующий"
+      "строка vty 0 15 логин локальный транспорт ввод telnet"
     ]
   },
   {
     "time": [
-      283.0,
-      285.0
+      324.852266,
+      328.554691
     ],
     "en": [
-      "requirement is to allow only telnet"
+      "okay now let's type do show run"
     ],
     "ru": [
-      "требование - разрешить только Telnet"
+      "хорошо, теперь давай напишем, покажи, беги"
     ]
   },
   {
     "time": [
-      285.0,
-      288.0
+      328.554691,
+      331.250855
     ],
     "en": [
-      "connections to the vty lines this is"
+      "look at the bottom here"
     ],
     "ru": [
-      "подключения к линиям VTY, это"
+      "посмотри внизу здесь"
     ]
   },
   {
     "time": [
-      288.0,
-      292.0
+      331.250855,
+      335.783539
     ],
     "en": [
-      "done with this command transport input"
+      "there it is our configurations have been applied to all vty lines"
     ],
     "ru": [
-      "сделано с этим вводом транспорта команды"
+      "вот и наши конфигурации были применены ко всем линиям VTY"
     ]
   },
   {
     "time": [
-      292.0,
-      294.0
+      335.783539,
+      349.020015
     ],
     "en": [
-      "now I'll use the question mark to see"
+      "step four is to attempt to telnet to each device from pc1 on a simulator like packet tracer you simply click on the icons of each device to configure them"
     ],
     "ru": [
-      "теперь я воспользуюсь вопросительным знаком, чтобы увидеть"
+      "Шаг четвертый - попытаться подключиться по telnet к каждому устройству с pc1 на симуляторе, таком как пакетный трассировщик, вы просто нажимаете на значки каждого устройства, чтобы настроить их"
     ]
   },
   {
     "time": [
-      294.0,
-      300.0
+      349.020015,
+      358.528029
     ],
     "en": [
-      "what options there are all none SSH and"
+      "in real situations however you have to connect to the devices from a computer via the console port as we did in a previous lab or by telnet or SSH"
     ],
     "ru": [
-      "какие варианты есть все нет SSH и"
+      "однако в реальных ситуациях вам необходимо подключаться к устройствам с компьютера через консольный порт, как мы делали в предыдущей лабораторной работе, или через telnet или SSH."
     ]
   },
   {
     "time": [
-      300.0,
-      301.0
+      358.528029,
+      360.0355
     ],
     "en": [
-      "telnet"
+      "as we're going to try now"
     ],
     "ru": [
-      "телнет"
+      "как мы собираемся попробовать сейчас"
     ]
   },
   {
     "time": [
-      301.0,
-      304.0
+      360.0355,
+      363.228386
     ],
     "en": [
-      "as I mentioned in the beginning of the"
+      "I'll go on PC one"
     ],
     "ru": [
-      "как я упоминал в начале"
+      "Я пойду на ПК один"
     ]
   },
   {
     "time": [
-      304.0,
-      307.0
+      363.228386,
+      366.614327
     ],
     "en": [
-      "video typically you'll be using SSH but"
+      "let's try switch one"
     ],
     "ru": [
-      "видео обычно вы будете использовать SSH, но"
+      "давай попробуем переключить один"
     ]
   },
   {
     "time": [
-      307.0,
-      311.0
+      366.614327,
+      378.796651
     ],
     "en": [
-      "let's set it to telnet for this lab ok"
+      "telnet 192.168.1.2 we're asked for the username which is Cisco and our password CCNA in all caps"
     ],
     "ru": [
-      "давайте настроим его на telnet для этой лаборатории, хорошо"
+      "telnet 192.168.1.2 нас просят ввести имя пользователя Cisco и наш пароль CCNA заглавными буквами."
     ]
   },
   {
     "time": [
-      311.0,
-      313.0
+      378.796651,
+      380.734979
     ],
     "en": [
-      "now let's do the same configuration on"
+      "there we go"
     ],
     "ru": [
-      "теперь давайте сделаем ту же настройку на"
+      "вот и мы"
     ]
   },
   {
     "time": [
-      313.0,
-      321.0
+      380.734979,
+      383.18897
     ],
     "en": [
-      "our one line vty 0 15 login local"
+      "now we have access to the command line of switch one"
     ],
     "ru": [
-      "наша одна строка vty 0 15 логин локальный"
+      "теперь у нас есть доступ к командной строке первого переключателя"
     ]
   },
   {
     "time": [
-      321.0,
-      324.0
-    ],
-    "en": [
-      "transport input telnet"
-    ],
-    "ru": [
-      "транспортный ввод telnet"
-    ]
-  },
-  {
-    "time": [
-      324.0,
-      330.0
-    ],
-    "en": [
-      "okay now let's type do show run look at"
-    ],
-    "ru": [
-      "хорошо, теперь давай напишем, покажи, беги, посмотри"
-    ]
-  },
-  {
-    "time": [
-      330.0,
-      332.0
-    ],
-    "en": [
-      "the bottom here there it is our"
-    ],
-    "ru": [
-      "внизу вот там это наш"
-    ]
-  },
-  {
-    "time": [
-      332.0,
-      334.0
-    ],
-    "en": [
-      "configurations have been applied to all"
-    ],
-    "ru": [
-      "конфигурации были применены ко всем"
-    ]
-  },
-  {
-    "time": [
-      334.0,
-      340.0
-    ],
-    "en": [
-      "vty lines step four is to attempt to"
-    ],
-    "ru": [
-      "vty lines Шаг четвертый - попытаться"
-    ]
-  },
-  {
-    "time": [
-      340.0,
-      343.0
-    ],
-    "en": [
-      "telnet to each device from pc1 on a"
-    ],
-    "ru": [
-      "telnet на каждое устройство с ПК1 на"
-    ]
-  },
-  {
-    "time": [
-      343.0,
-      346.0
-    ],
-    "en": [
-      "simulator like packet tracer you simply"
-    ],
-    "ru": [
-      "симулятор, такой как пакетный трассировщик, вы просто"
-    ]
-  },
-  {
-    "time": [
-      346.0,
-      348.0
-    ],
-    "en": [
-      "click on the icons of each device to"
-    ],
-    "ru": [
-      "нажмите на значки каждого устройства, чтобы"
-    ]
-  },
-  {
-    "time": [
-      348.0,
-      350.0
-    ],
-    "en": [
-      "configure them in real situations"
-    ],
-    "ru": [
-      "настраивать их в реальных ситуациях"
-    ]
-  },
-  {
-    "time": [
-      350.0,
-      352.0
-    ],
-    "en": [
-      "however you have to connect to the"
-    ],
-    "ru": [
-      "однако вам нужно подключиться к"
-    ]
-  },
-  {
-    "time": [
-      352.0,
-      354.0
-    ],
-    "en": [
-      "devices from a computer via the console"
-    ],
-    "ru": [
-      "устройства с компьютера через консоль"
-    ]
-  },
-  {
-    "time": [
-      354.0,
-      357.0
-    ],
-    "en": [
-      "port as we did in a previous lab or by"
-    ],
-    "ru": [
-      "порт, как мы делали в предыдущей лабораторной работе или"
-    ]
-  },
-  {
-    "time": [
-      357.0,
-      360.0
-    ],
-    "en": [
-      "telnet or SSH as we're going to try now"
-    ],
-    "ru": [
-      "telnet или SSH, как мы сейчас попробуем"
-    ]
-  },
-  {
-    "time": [
-      360.0,
-      366.0
-    ],
-    "en": [
-      "I'll go on PC one let's try switch one"
-    ],
-    "ru": [
-      "Я пойду на ПК, попробую переключить"
-    ]
-  },
-  {
-    "time": [
-      366.0,
-      372.0
-    ],
-    "en": [
-      "telnet 192.168.1.2 we're asked for the"
-    ],
-    "ru": [
-      "telnet 192.168.1.2 нас просят указать"
-    ]
-  },
-  {
-    "time": [
-      372.0,
-      376.0
-    ],
-    "en": [
-      "username which is Cisco and our password"
-    ],
-    "ru": [
-      "имя пользователя Cisco и наш пароль"
-    ]
-  },
-  {
-    "time": [
-      376.0,
-      381.0
-    ],
-    "en": [
-      "CCNA in all caps there we go now we have"
-    ],
-    "ru": [
-      "CCNA заглавными буквами, мы идем, теперь у нас есть"
-    ]
-  },
-  {
-    "time": [
-      381.0,
-      383.0
-    ],
-    "en": [
-      "access to the command line of switch one"
-    ],
-    "ru": [
-      "доступ к командной строке первого переключателя"
-    ]
-  },
-  {
-    "time": [
-      383.0,
-      387.0
+      383.18897,
+      387.866871
     ],
     "en": [
       "I'll type exit and now let's try our one"
@@ -1477,206 +889,170 @@ let objs = [
   },
   {
     "time": [
-      387.0,
-      396.0
+      387.866871,
+      396.242976
     ],
     "en": [
-      "telnet 192.168.1.1 cisco CCNA there we"
+      "telnet 192.168.1.1 cisco CCNA"
     ],
     "ru": [
-      "telnet 192.168.1.1 cisco CCNA там мы"
+      "telnet 192.168.1.1 cisco CCNA"
     ]
   },
   {
     "time": [
-      396.0,
-      398.0
+      396.242976,
+      399.767366
     ],
     "en": [
-      "go now we have access to the command"
+      "there we go now we have access to the command line of r1"
     ],
     "ru": [
-      "иди, теперь у нас есть доступ к команде"
+      "Итак, теперь у нас есть доступ к командной строке r1"
     ]
   },
   {
     "time": [
-      398.0,
-      405.0
+      399.767366,
+      402.176763
     ],
     "en": [
-      "line of r1 that's all for this lab"
+      "that's all for this lab"
     ],
     "ru": [
-      "строка r1 это все для этой лаборатории"
+      "это все для этой лаборатории"
     ]
   },
   {
     "time": [
-      405.0,
-      407.0
+      402.176763,
+      409.355247
     ],
     "en": [
-      "thank you for watching I hope this lab"
+      "thank you for watching I hope this lab and video have been helpful for you"
     ],
     "ru": [
-      "спасибо за просмотр, надеюсь, эта лаборатория"
+      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были для вас полезны."
     ]
   },
   {
     "time": [
-      407.0,
-      409.0
+      409.355247,
+      412.655189
     ],
     "en": [
-      "and video have been helpful for you"
+      "please subscribe for future labs like this"
     ],
     "ru": [
-      "и видео были для вас полезны"
+      "пожалуйста, подпишитесь на будущие подобные лаборатории"
     ]
   },
   {
     "time": [
-      409.0,
-      411.0
+      412.655189,
+      415.151365
     ],
     "en": [
-      "please subscribe for future labs like"
+      "which will be released weekly"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, такие как"
+      "который будет выходить еженедельно"
     ]
   },
   {
     "time": [
-      411.0,
-      414.0
+      415.151365,
+      419.076363
     ],
     "en": [
-      "this which will be released weekly if"
+      "if you have requests for any specific labs let me know in the comment section"
     ],
     "ru": [
-      "это будет выпускаться еженедельно, если"
+      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
     ]
   },
   {
     "time": [
-      414.0,
-      417.0
+      419.076363,
+      424.444783
     ],
     "en": [
-      "you have requests for any specific labs"
+      "if you want to support my channel please consider contributing to my patreon"
     ],
     "ru": [
-      "у вас есть запросы по каким-либо конкретным лабораториям"
+      "если вы хотите поддержать мой канал, пожалуйста, подумайте о том, чтобы внести свой вклад в мой patreon"
     ]
   },
   {
     "time": [
-      417.0,
-      420.0
+      424.444783,
+      427.789208
     ],
     "en": [
-      "let me know in the comment section if"
+      "patreon comm slash Jeremy's IT lab"
     ],
     "ru": [
-      "дайте мне знать в разделе комментариев, если"
+      "patreon comm слэш ИТ-лаборатория Джереми"
     ]
   },
   {
     "time": [
-      420.0,
-      422.0
+      427.789208,
+      433.315875
     ],
     "en": [
-      "you want to support my channel please"
+      "I accept Bitcoin and aetherium donations via the addresses in the description"
     ],
     "ru": [
-      "вы хотите поддержать мой канал, пожалуйста"
+      "Я принимаю пожертвования биткойнами и эфириумом по адресам в описании"
     ]
   },
   {
     "time": [
-      422.0,
-      424.0
+      433.315875,
+      442.150048
     ],
     "en": [
-      "consider contributing to my patreon"
+      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
     ],
     "ru": [
-      "подумайте о том, чтобы внести свой вклад в мой patreon"
+      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
     ]
   },
   {
     "time": [
-      424.0,
-      428.0
+      442.150048,
+      442.150048
     ],
     "en": [
-      "patreon comm slash Jeremy's IT lab I"
+      ""
     ],
     "ru": [
-      "patreon comm слэш ИТ-лаборатория Джереми I"
+      ""
     ]
   },
   {
     "time": [
-      428.0,
-      431.0
+      442.150048,
+      442.150048
     ],
     "en": [
-      "accept Bitcoin and aetherium donations"
+      ""
     ],
     "ru": [
-      "принимать пожертвования биткойнами и эфиром"
+      ""
     ]
   },
   {
     "time": [
-      431.0,
-      433.0
+      442.150048,
+      442.150048
     ],
     "en": [
-      "via the addresses in the description I"
+      ""
     ],
     "ru": [
-      "по адресам в описании I"
-    ]
-  },
-  {
-    "time": [
-      433.0,
-      437.0
-    ],
-    "en": [
-      "am also a brave verified publisher and"
-    ],
-    "ru": [
-      "я также храбрый проверенный издатель и"
-    ]
-  },
-  {
-    "time": [
-      437.0,
-      440.0
-    ],
-    "en": [
-      "accept bat or basic attention token"
-    ],
-    "ru": [
-      "принять летучую мышь или жетон основного внимания"
-    ]
-  },
-  {
-    "time": [
-      440.0,
-      440.0
-    ],
-    "en": [
-      "donations in the brave browser"
-    ],
-    "ru": [
-      "пожертвования в смелом браузере"
+      ""
     ]
   }
 ]

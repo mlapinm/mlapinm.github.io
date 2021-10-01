@@ -2,877 +2,589 @@ let objs = [
   {
     "time": [
       0.0,
-      3.0
+      4.785616
     ],
     "en": [
-      "welcome to this free CCNA packet tracer"
+      "welcome to this free CCNA packet tracer practice lab"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный трассировщик пакетов CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
     ]
   },
   {
     "time": [
-      3.0,
-      6.0
+      4.785616,
+      8.262735
     ],
     "en": [
-      "practice lab you can download the lab"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "Практическая лаборатория вы можете скачать лабораторию"
+      "скачать лабораторный файл можно по ссылке в описании"
     ]
   },
   {
     "time": [
-      6.0,
-      8.0
+      8.262735,
+      13.799046
     ],
     "en": [
-      "file from the link in the description in"
+      "in this lab we will review the creation of a local user database on the router"
     ],
     "ru": [
-      "файл по ссылке в описании в"
+      "в этой лабораторной работе мы рассмотрим создание локальной базы данных пользователей на маршрутизаторе."
     ]
   },
   {
     "time": [
-      8.0,
-      11.0
+      13.799046,
+      16.305568
     ],
     "en": [
-      "this lab we will review the creation of"
+      "and introduced the banner function"
     ],
     "ru": [
-      "в этой лабораторной работе мы рассмотрим создание"
+      "и представил функцию баннера"
     ]
   },
   {
     "time": [
-      11.0,
-      13.0
+      16.305568,
+      20.578399
     ],
     "en": [
-      "a local user database on the router and"
+      "this will be a fairly short lab but try to complete it on your own first"
     ],
     "ru": [
-      "локальная база данных пользователей на маршрутизаторе и"
+      "это будет довольно короткая лабораторная работа, но сначала попробуйте выполнить ее самостоятельно."
     ]
   },
   {
     "time": [
-      13.0,
-      17.0
+      20.578399,
+      25.807395
     ],
     "en": [
-      "introduced the banner function this will"
+      "and then continue watching this video if you have trouble or watch it after to check your solution"
     ],
     "ru": [
-      "представил функцию баннера, это будет"
+      "а затем продолжайте просмотр этого видео, если у вас возникнут проблемы, или просмотрите его позже, чтобы проверить свое решение."
     ]
   },
   {
     "time": [
-      17.0,
-      18.0
+      25.807395,
+      33.388313
     ],
     "en": [
-      "be a fairly short lab but try to"
+      "step one is to use PC one to connect to r1 via the console port"
     ],
     "ru": [
-      "быть довольно короткой лабораторией, но постарайтесь"
+      "Шаг первый - использовать ПК один для подключения к r1 через консольный порт"
     ]
   },
   {
     "time": [
-      18.0,
-      20.0
+      33.388313,
+      35.850812
     ],
     "en": [
-      "complete it on your own first and then"
+      "they're already connected by a cable"
     ],
     "ru": [
-      "завершите это сначала самостоятельно, а затем"
+      "они уже подключены кабелем"
     ]
   },
   {
     "time": [
-      20.0,
-      22.0
+      35.850812,
+      45.349398
     ],
     "en": [
-      "continue watching this video if you have"
+      "so let's click on PC one desktop terminal and press ok to accept the default configurations"
     ],
     "ru": [
-      "продолжайте смотреть это видео, если у вас есть"
+      "поэтому давайте нажмем на ПК один настольный терминал и нажмите ОК, чтобы принять конфигурации по умолчанию"
     ]
   },
   {
     "time": [
-      22.0,
-      24.0
+      45.349398,
+      49.941079
     ],
     "en": [
-      "trouble or watch it after to check your"
+      "step two is to create two users on r1"
     ],
     "ru": [
-      "проблемы или посмотрите это позже, чтобы проверить свой"
+      "Шаг второй - создать двух пользователей на r1"
     ]
   },
   {
     "time": [
-      24.0,
-      30.0
+      49.941079,
+      53.36842
     ],
     "en": [
-      "solution step one is to use PC one to"
+      "last time we created user accounts with passwords"
     ],
     "ru": [
-      "Первый шаг решения - использовать ПК один для"
+      "в прошлый раз мы создавали учетные записи пользователей с паролями"
     ]
   },
   {
     "time": [
-      30.0,
-      33.0
+      53.36842,
+      55.760241
     ],
     "en": [
-      "connect to r1 via the console port"
+      "this time we will use secrets"
     ],
     "ru": [
-      "подключиться к r1 через консольный порт"
+      "на этот раз мы будем использовать секреты"
     ]
   },
   {
     "time": [
-      33.0,
-      35.0
+      55.760241,
+      59.7377
     ],
     "en": [
-      "they're already connected by a cable so"
+      "same as with the enable password and enable secret"
     ],
     "ru": [
-      "они уже подключены кабелем, поэтому"
+      "так же, как с паролем включения и секретом включения"
     ]
   },
   {
     "time": [
-      35.0,
-      40.0
+      59.7377,
+      63.44439
     ],
     "en": [
-      "let's click on PC one desktop terminal"
+      "passwords are not encrypted but secrets are encrypted by default"
     ],
     "ru": [
-      "давайте нажмем на ПК один настольный терминал"
+      "пароли не зашифрованы, но секреты зашифрованы по умолчанию"
     ]
   },
   {
     "time": [
-      40.0,
-      44.0
+      63.44439,
+      73.883946
     ],
     "en": [
-      "and press ok to accept the default"
+      "enable conf t username CCNA secret Cisco with a capital C"
     ],
     "ru": [
-      "и нажмите ОК, чтобы принять значение по умолчанию"
+      "enable conf t имя пользователя CCNA secret Cisco с большой буквы"
     ]
   },
   {
     "time": [
-      44.0,
-      48.0
+      73.883946,
+      79.015255
     ],
     "en": [
-      "configurations step two is to create two"
+      "remember that user name isn't case sensitive but the password or secret is"
     ],
     "ru": [
-      "второй шаг конфигурации - создание двух"
+      "помните, что имя пользователя не чувствительно к регистру, но пароль или секрет"
     ]
   },
   {
     "time": [
-      48.0,
-      51.0
+      79.015255,
+      85.373474
     ],
     "en": [
-      "users on our one last time we created"
+      "next user username CCNP secret Cisco"
     ],
     "ru": [
-      "пользователей в последний раз, когда мы создали"
+      "следующий пользователь имя пользователя CCNP секрет Cisco"
     ]
   },
   {
     "time": [
-      51.0,
-      54.0
+      85.373474,
+      90.523496
     ],
     "en": [
-      "user accounts with passwords this time"
+      "I'll quickly type do show run to check that their encrypted"
     ],
     "ru": [
-      "учетные записи пользователей с паролями на этот раз"
+      "Я быстро наберу do show run, чтобы убедиться, что они зашифрованы."
     ]
   },
   {
     "time": [
-      54.0,
-      56.0
+      90.523496,
+      95.760803
     ],
     "en": [
-      "we will use secrets same as with the"
+      "as you can see they are encrypted by default"
     ],
     "ru": [
-      "мы будем использовать секреты так же, как и с"
+      "как видите, по умолчанию они зашифрованы"
     ]
   },
   {
     "time": [
-      56.0,
-      59.0
+      95.760803,
+      102.234008
     ],
     "en": [
-      "enable password and an able secret"
+      "step 3 is to set the console port to use the local database to authenticate users"
     ],
     "ru": [
-      "включить пароль и способный секрет"
+      "Шаг 3 - настроить консольный порт для использования локальной базы данных для аутентификации пользователей."
     ]
   },
   {
     "time": [
-      59.0,
-      62.0
+      102.234008,
+      107.375732
     ],
     "en": [
-      "passwords are not encrypted but secrets"
+      "line console 0 login local"
     ],
     "ru": [
-      "пароли не зашифрованы, но секреты"
+      "строка консоли 0 логин локальный"
     ]
   },
   {
     "time": [
-      62.0,
-      67.0
+      107.375732,
+      108.498419
     ],
     "en": [
-      "are encrypted by default an able conf t"
+      "that's it"
     ],
     "ru": [
-      "по умолчанию зашифрованы"
+      "это оно"
     ]
   },
   {
     "time": [
-      67.0,
-      72.0
+      108.498419,
+      117.90453
     ],
     "en": [
-      "username CCNA secret Cisco with a"
+      "step 4 is to set a message of the day banner of welcome to packet racer"
     ],
     "ru": [
-      "имя пользователя CCNA секрет Cisco с"
+      "Шаг 4 - установить приветственное сообщение дня для пакетного гонщика"
     ]
   },
   {
     "time": [
-      72.0,
-      75.0
+      117.90453,
+      121.129215
     ],
     "en": [
-      "capital C remember that user name isn't"
+      "and a login banner of authorized users only"
     ],
     "ru": [
-      "заглавная C помните, что имя пользователя не"
+      "и баннер для входа только авторизованных пользователей"
     ]
   },
   {
     "time": [
-      75.0,
-      77.0
+      121.129215,
+      126.5625
     ],
     "en": [
-      "case sensitive but the password or"
+      "banners are messages that display before or after users log in"
     ],
     "ru": [
-      "чувствителен к регистру, но пароль или"
+      "баннеры - это сообщения, которые отображаются до или после входа пользователя в систему."
     ]
   },
   {
     "time": [
-      77.0,
-      83.0
+      126.5625,
+      130.78868
     ],
     "en": [
-      "secret is next user username CCNP secret"
+      "in this case the message of the day banner will be displayed above the login banner"
     ],
     "ru": [
-      "секрет - это имя пользователя следующего пользователя Секрет CCNP"
+      "в этом случае сообщение баннера дня будет отображаться над баннером входа в систему"
     ]
   },
   {
     "time": [
-      83.0,
-      88.0
+      130.78868,
+      133.959567
     ],
     "en": [
-      "Cisco I'll quickly type do show run to"
+      "and both will be displayed before our user logs in"
     ],
     "ru": [
-      "Cisco, я быстро напечатаю, покажи, беги к"
+      "и оба будут отображаться до того, как наш пользователь войдет в систему"
     ]
   },
   {
     "time": [
-      88.0,
-      93.0
+      133.959567,
+      140.799292
     ],
     "en": [
-      "check that their encrypted as you can"
+      "so exit to make the banner of the day we use this command"
     ],
     "ru": [
-      "убедитесь, что они зашифрованы, как вы можете"
+      "так что выйдите, чтобы сделать знамя дня, мы используем эту команду"
     ]
   },
   {
     "time": [
-      93.0,
-      97.0
+      140.799292,
+      146.400326
     ],
     "en": [
-      "see they are encrypted by default step 3"
+      "banner motd then I'll use the question mark to show the next option"
     ],
     "ru": [
-      "увидеть, что они зашифрованы по умолчанию, шаг 3"
+      "banner motd, тогда я воспользуюсь вопросительным знаком, чтобы показать следующий вариант"
     ]
   },
   {
     "time": [
-      97.0,
-      99.0
+      146.400326,
+      155.173746
     ],
     "en": [
-      "is to set the console port to use the"
+      "as you can see we need to enter a delimited character to indicate the start and end of the message"
     ],
     "ru": [
-      "- настроить консольный порт для использования"
+      "как видите, нам нужно ввести символ с разделителями, чтобы указать начало и конец сообщения"
     ]
   },
   {
     "time": [
-      99.0,
-      102.0
+      155.173746,
+      161.638417
     ],
     "en": [
-      "local database to authenticate users"
+      "if you type the message directly it will think that the first character is the delimiting character"
     ],
     "ru": [
-      "локальная база данных для аутентификации пользователей"
+      "если вы наберете сообщение напрямую, оно подумает, что первый символ - это ограничивающий символ"
     ]
   },
   {
     "time": [
-      102.0,
-      112.0
+      161.638417,
+      164.300974
     ],
     "en": [
-      "line console 0 login local that's it"
+      "and it will be excluded from the message itself"
     ],
     "ru": [
-      "строка консоли 0 логин локальный вот и все"
+      "и он будет исключен из самого сообщения"
     ]
   },
   {
     "time": [
-      112.0,
-      115.0
+      164.300974,
+      167.71324
     ],
     "en": [
-      "step four is to set a message of the day"
+      "you can use whatever you want but I'll use an asterisk"
     ],
     "ru": [
-      "Шаг четвертый - установить сообщение дня"
+      "вы можете использовать все, что хотите, но я буду использовать звездочку"
     ]
   },
   {
     "time": [
-      115.0,
-      118.0
+      167.71324,
+      171.674127
     ],
     "en": [
-      "banner of welcome to packet racer and a"
+      "asterisk welcome to packet tracer asterisk"
     ],
     "ru": [
-      "баннер с приветствием к пакетному гонщику и"
+      "звездочка добро пожаловать в пакет трассировщик звездочка"
     ]
   },
   {
     "time": [
-      118.0,
-      121.0
+      171.674127,
+      176.862234
     ],
     "en": [
-      "login banner of authorized users only"
+      "okay now the same process for the log in banner"
     ],
     "ru": [
-      "баннер входа только авторизованных пользователей"
+      "Хорошо, теперь тот же процесс для баннера входа в систему"
     ]
   },
   {
     "time": [
-      121.0,
-      124.0
+      176.862234,
+      185.731055
     ],
     "en": [
-      "banners are messages that display before"
+      "banner login asterisk authorized users only asterisk"
     ],
     "ru": [
-      "баннеры - это сообщения, которые отображаются перед"
+      "баннер логин звездочка только авторизованные пользователи звездочка"
     ]
   },
   {
     "time": [
-      124.0,
-      127.0
+      185.731055,
+      188.190605
     ],
     "en": [
-      "or after users log in in this case the"
+      "now we've set up the two banners"
     ],
     "ru": [
-      "или после входа в систему в этом случае"
+      "теперь мы установили два баннера"
     ]
   },
   {
     "time": [
-      127.0,
-      129.0
+      188.190605,
+      192.963624
     ],
     "en": [
-      "message of the day banner will be"
+      "finally let's log out and see if our messages work"
     ],
     "ru": [
-      "сообщение дня баннер будет"
+      "наконец, давайте выйдем из системы и посмотрим, работают ли наши сообщения"
     ]
   },
   {
     "time": [
-      129.0,
-      130.0
+      192.963624,
+      199.083479
     ],
     "en": [
-      "displayed above the login banner and"
+      "and logout there we go"
     ],
     "ru": [
-      "отображается над баннером входа и"
+      "и выйдите из системы, мы идем"
     ]
   },
   {
     "time": [
-      130.0,
-      133.0
+      199.083479,
+      203.762561
     ],
     "en": [
-      "both will be displayed before our user"
+      "before we log in you can see our message of the day and then our log in banner"
     ],
     "ru": [
-      "оба будут отображаться перед нашим пользователем"
+      "прежде чем мы войдем в систему, вы можете увидеть наше сообщение дня, а затем наш баннер для входа в систему"
     ]
   },
   {
     "time": [
-      133.0,
-      138.0
+      203.762561,
+      210.085158
     ],
     "en": [
-      "logs in so exit to make the banner of"
+      "thank you for watching I hope this lab and video have been helpful for you"
     ],
     "ru": [
-      "входит в систему, поэтому выйдите, чтобы сделать баннер"
+      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были для вас полезны."
     ]
   },
   {
     "time": [
-      138.0,
-      142.0
+      210.085158,
+      213.339962
     ],
     "en": [
-      "the day we use this command banner motd"
+      "please subscribe for future labs like this"
     ],
     "ru": [
-      "день, когда мы используем эту команду, баннер motd"
+      "пожалуйста, подпишитесь на будущие подобные лаборатории"
     ]
   },
   {
     "time": [
-      142.0,
-      145.0
+      213.339962,
+      215.212534
     ],
     "en": [
-      "then I'll use the question mark to show"
+      "which will be released weekly"
     ],
     "ru": [
-      "тогда я использую вопросительный знак, чтобы показать"
+      "который будет выходить еженедельно"
     ]
   },
   {
     "time": [
-      145.0,
-      150.0
+      215.212534,
+      219.725183
     ],
     "en": [
-      "the next option as you can see we need"
+      "if you have requests for any specific labs let me know in the comment section"
     ],
     "ru": [
-      "следующий вариант, как видите, нам нужен"
+      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
     ]
   },
   {
     "time": [
-      150.0,
-      152.0
+      219.725183,
+      226.868826
     ],
     "en": [
-      "to enter a delimited character to"
+      "if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description"
     ],
     "ru": [
-      "ввести символ с разделителями в"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфириумом по адресам в описании"
     ]
   },
   {
     "time": [
-      152.0,
-      153.0
+      226.868826,
+      235.635523
     ],
     "en": [
-      "indicate the start and end of the"
+      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
     ],
     "ru": [
-      "указать начало и конец"
+      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
     ]
   },
   {
     "time": [
-      153.0,
-      157.0
+      235.635523,
+      235.635523
     ],
     "en": [
-      "message if you type the message directly"
+      ""
     ],
     "ru": [
-      "сообщение, если вы вводите сообщение напрямую"
+      ""
     ]
   },
   {
     "time": [
-      157.0,
-      159.0
+      235.635523,
+      235.635523
     ],
     "en": [
-      "it will think that the first character"
+      ""
     ],
     "ru": [
-      "он будет думать, что первый персонаж"
+      ""
     ]
   },
   {
     "time": [
-      159.0,
-      162.0
+      235.635523,
+      235.635523
     ],
     "en": [
-      "is the delimiting character and it will"
+      ""
     ],
     "ru": [
-      "является ограничивающим символом, и он будет"
-    ]
-  },
-  {
-    "time": [
-      162.0,
-      165.0
-    ],
-    "en": [
-      "be excluded from the message itself you"
-    ],
-    "ru": [
-      "быть исключенным из самого сообщения вы"
-    ]
-  },
-  {
-    "time": [
-      165.0,
-      166.0
-    ],
-    "en": [
-      "can use whatever you want but I'll use"
-    ],
-    "ru": [
-      "можете использовать все, что хотите, но я буду использовать"
-    ]
-  },
-  {
-    "time": [
-      166.0,
-      168.0
-    ],
-    "en": [
-      "an asterisk asterisk"
-    ],
-    "ru": [
-      "звездочка звездочка"
-    ]
-  },
-  {
-    "time": [
-      168.0,
-      173.0
-    ],
-    "en": [
-      "welcome to packet tracer asterisk okay"
-    ],
-    "ru": [
-      "добро пожаловать в пакетный трассировщик звездочка хорошо"
-    ]
-  },
-  {
-    "time": [
-      173.0,
-      175.0
-    ],
-    "en": [
-      "now the same process for the log in"
-    ],
-    "ru": [
-      "теперь тот же процесс для входа в систему"
-    ]
-  },
-  {
-    "time": [
-      175.0,
-      182.0
-    ],
-    "en": [
-      "banner banner login asterisk authorized"
-    ],
-    "ru": [
-      "баннер баннер авторизация звездочка авторизация"
-    ]
-  },
-  {
-    "time": [
-      182.0,
-      187.0
-    ],
-    "en": [
-      "users only asterisk now we've set up the"
-    ],
-    "ru": [
-      "только для пользователей звездочка теперь мы настроили"
-    ]
-  },
-  {
-    "time": [
-      187.0,
-      191.0
-    ],
-    "en": [
-      "two banners finally let's log out and"
-    ],
-    "ru": [
-      "два баннера, наконец, давайте выйдем из системы и"
-    ]
-  },
-  {
-    "time": [
-      191.0,
-      197.0
-    ],
-    "en": [
-      "see if our messages work and logout"
-    ],
-    "ru": [
-      "посмотрите, работают ли наши сообщения и выйдите из системы"
-    ]
-  },
-  {
-    "time": [
-      197.0,
-      198.0
-    ],
-    "en": [
-      "there we go"
-    ],
-    "ru": [
-      "вот и мы"
-    ]
-  },
-  {
-    "time": [
-      198.0,
-      200.0
-    ],
-    "en": [
-      "before we log in you can see our message"
-    ],
-    "ru": [
-      "прежде чем мы войдем в систему, вы можете увидеть наше сообщение"
-    ]
-  },
-  {
-    "time": [
-      200.0,
-      206.0
-    ],
-    "en": [
-      "of the day and then our log in banner"
-    ],
-    "ru": [
-      "дня, а затем наш баннер входа в систему"
-    ]
-  },
-  {
-    "time": [
-      206.0,
-      208.0
-    ],
-    "en": [
-      "thank you for watching I hope this lab"
-    ],
-    "ru": [
-      "спасибо за просмотр, надеюсь, эта лаборатория"
-    ]
-  },
-  {
-    "time": [
-      208.0,
-      209.0
-    ],
-    "en": [
-      "and video have been helpful for you"
-    ],
-    "ru": [
-      "и видео были для вас полезны"
-    ]
-  },
-  {
-    "time": [
-      209.0,
-      212.0
-    ],
-    "en": [
-      "please subscribe for future labs like"
-    ],
-    "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, такие как"
-    ]
-  },
-  {
-    "time": [
-      212.0,
-      215.0
-    ],
-    "en": [
-      "this which will be released weekly if"
-    ],
-    "ru": [
-      "это будет выпускаться еженедельно, если"
-    ]
-  },
-  {
-    "time": [
-      215.0,
-      217.0
-    ],
-    "en": [
-      "you have requests for any specific labs"
-    ],
-    "ru": [
-      "у вас есть запросы по каким-либо конкретным лабораториям"
-    ]
-  },
-  {
-    "time": [
-      217.0,
-      219.0
-    ],
-    "en": [
-      "let me know in the comment section if"
-    ],
-    "ru": [
-      "дайте мне знать в разделе комментариев, если"
-    ]
-  },
-  {
-    "time": [
-      219.0,
-      222.0
-    ],
-    "en": [
-      "you want to support my channel I accept"
-    ],
-    "ru": [
-      "вы хотите поддержать мой канал я принимаю"
-    ]
-  },
-  {
-    "time": [
-      222.0,
-      225.0
-    ],
-    "en": [
-      "Bitcoin and aetherium donations via the"
-    ],
-    "ru": [
-      "Пожертвования биткойнов и эфириума через"
-    ]
-  },
-  {
-    "time": [
-      225.0,
-      228.0
-    ],
-    "en": [
-      "addresses in the description I am also a"
-    ],
-    "ru": [
-      "адреса в описании я тоже"
-    ]
-  },
-  {
-    "time": [
-      228.0,
-      231.0
-    ],
-    "en": [
-      "brave verified publisher and accept bat"
-    ],
-    "ru": [
-      "храбрый проверенный издатель и прими летучую мышь"
-    ]
-  },
-  {
-    "time": [
-      231.0,
-      234.0
-    ],
-    "en": [
-      "or basic attention token donations in"
-    ],
-    "ru": [
-      "или основные пожертвования токенов внимания в"
-    ]
-  },
-  {
-    "time": [
-      234.0,
-      234.0
-    ],
-    "en": [
-      "the brave browser"
-    ],
-    "ru": [
-      "смелый браузер"
+      ""
     ]
   }
 ]
