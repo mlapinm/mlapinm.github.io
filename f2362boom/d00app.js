@@ -17,7 +17,6 @@ $(()=>{
   create()
 
   function create(){
-    // log1.text(items[0].name)
 
     items.forEach((e)=>{
       let section = $('<section></section>')
@@ -41,7 +40,6 @@ $(()=>{
     if(!timerStart){
       timerStart = true
       num = random(min, max)
-      log3.text(num)
       button.text('tic')
       audio1.play()
 
