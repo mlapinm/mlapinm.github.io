@@ -4,3 +4,39 @@
   line-height: 0.9;
 
 }
+
+.button_div{
+  height: 40vh;
+}
+
+.button_start{
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.select{
+  background-color: lightcoral;
+}
+
+
+.slider {
+	font-family: sans-serif;
+	scroll-snap-type: x mandatory;	
+	display: flex;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: scroll;
+}
+
+
+section {
+	/* border-right: 1px solid white; */
+	padding: 0.2rem;
+	min-width: 100vw;
+	/* height: 10vh; */
+	scroll-snap-align: start;
+	text-align: center;
+	position: relative;
+  border: solid 6px lavender;
+  border-radius: 0.4rem;
+}
