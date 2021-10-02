@@ -275,8 +275,12 @@
     {
 	 "header": "",
 	 "title": "",
-	 "card-text": [""],
-	 "link": ""
+	 "card-text": [
+	 "tic tac boom",
+	 "",
+	 "",
+	 ],
+	 "link": "f2362boom"
 	},
     {
 	 "header": "supplies",
