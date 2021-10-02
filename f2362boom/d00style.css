@@ -1,12 +1,12 @@
 * {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: sans-serif;
   line-height: 0.9;
 
 }
 
 .button_div{
-  height: 40vh;
+  height: 78vh;
 }
 
 .button_start{
@@ -19,24 +19,43 @@
   background-color: lightcoral;
 }
 
+.audio1{
+	display: none;
+}
+
+.audio2{
+	display: none;
+}
+
+.div-slider{
+	margin: 0.2rem;
+	position: relative;
+}
 
 .slider {
 	font-family: sans-serif;
 	scroll-snap-type: x mandatory;	
 	display: flex;
 	-webkit-overflow-scrolling: touch;
+	width: 85vw;
+	margin: auto;
 	overflow-x: scroll;
 }
 
 
 section {
-	/* border-right: 1px solid white; */
-	padding: 0.2rem;
-	min-width: 100vw;
-	/* height: 10vh; */
+	display: flex;
+	margin-left: 2rem;
+	min-width: 80vw;
+	height: 15vh;
 	scroll-snap-align: start;
 	text-align: center;
 	position: relative;
   border: solid 6px lavender;
   border-radius: 0.4rem;
+
+}
+
+.inner{
+	margin: auto;
 }
