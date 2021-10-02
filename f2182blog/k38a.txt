@@ -1,138 +1,139 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.450229 you can download the lab
+file from the link in the description 8.002687 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description this lab is the second of
-our labs focusing on Matt network
-address translation this time we will
-configure dynamic NAT unlike static map
+description 15.230562 this lab is the second of
+our labs focusing on NAT network
+address translation 22.000687 this time we will
+configure dynamic NAT 25.843791 unlike static map
 which creates a one-to-one translation
 from an inside address to an outside
 address dynamic NAT dynamically assigns
 addresses as needed from a pool of
 outside addresses that you configure
-beforehand this is much more efficient
-than static NAT in this lab we will use
+beforehand 40.374499 this is much more efficient
+than static NAT 43.929894 in this lab we will use
 dynamic map to translate private IP
 addresses in the 192.168.1.0 / 24
 network to public IP addresses in the
-12.30 / 24 network this lab uses the
-same topology as the previous lab and
+1.2.3.0 / 24 network 58.471664 this lab uses the
+same topology as the previous lab 63.403039 and
 once again
-ripp has been pre-configured so that all
+rip has been pre-configured so that all
 points in the network should be
-reachable once again however I have
+reachable 68.390663 once again however I have
 configured ACLs on the routers blocking
 private addresses from being routed over
 the serial connection between them which
-simulates the Internet let's ping from
-pc-12 server one just to confirm that PC
-one cannot reach server one ping one dot
-one dot one dot 100
+simulates the Internet 78.623454 let's ping from
+pc-1 to server one just to confirm that PC
+one cannot reach server one 84.688702 ping 
+1.1.1.100
 as expected the pink fails
-so let's configure dynamic NAT on our
-one first I'll configure that inside and
-outside interfaces enable Conti
-interface g00 IP NAT inside interface s
-0 3 0 IP NAT outside exit dynamic NAT
+99.057514 so let's configure dynamic NAT on r
+1 103.381723 first I'll configure that inside and
+outside interfaces 108.052827 enable conf t
+interface g00 115.972556 IP NAT inside interface s
+0 3 0 122.254764 IP NAT outside exit 124.897868 dynamic NAT
 involves a few extra steps beyond static
-NAT we have to create an ACL which we
+NAT 129.782305 we have to create an ACL which we
 use to identify the inside addresses
-that we will translate we also have to
-create an app pool which is the range of
+that we will translate 135.702096 we also have to
+create an app pool 138.728846 which is the range of
 outside addresses we will translate our
-inside addresses to first let's create
-the access list keep in mind this use of
+inside addresses to 143.390450 first let's create
+the access list 146.326845 keep in mind this use of
 an ACL is different than how we
-previously used it before we used ACLs
+previously used it 151.911282 before we used ACLs
 to block or allow traffic from entering
-or exiting an interface this time
+or exiting an interface 158.126449 this time
 however we will use an ACL to identify
 which traffic we want to translate
-traffic which is permitted by the ACL
-will be translated traffic which is
+164.323094 traffic which is permitted by the ACL
+will be translated 169.132385 traffic which is
 denied by the ACL won't be blocked it
-simply won't be translated so let's
+simply won't be translated 175.042739 so let's
 create a standard ACL which permits the
-192.168.1.0 / 24 network access list 1
+192.168.1.0 / 24 network 182.705468 access list 1
 permit 192.168.1.0
-oh-oh-oh 255 that's it the implicit deny
+0.0.0.255 191.867884 that's it 194.276488 the implicit deny
 any at the end of the ACL will prevent
 traffic from outside of the 192.168.1.0
-/ 24 network from being translated next
-let's create the NAT pool to do so use
-this command IP NAT pool followed by the
-pool name I'll use pool 1 then we enter
+/ 24 network from being translated 203.976613 next
+let's create the NAT pool 207.783654 to do so use
+this command 210.436487 IP NAT pool followed by the
+pool name 214.858278 I'll use pool 1 216.727528 then we enter
 the first address in the range of
 addresses we want to include in this
-pool which is 1 2 3 10 according to our
+pool 222.754965 which is 1.2.3.10 according to our
 instructions
-next we put the last address in the
-range 1 to 320 X twe type netmask
-followed by the subnet mask which is
+
+227.266381 next we put the last address in the
+range 1.2.3.20 next we type netmask
+followed by the subnet mask 237.022359 which is
 255.255.255.0
-so our command is IP nat pool pool 1 1 2
-3 10 1 2 3 20 met mask 255.255.255.0 ok
-our pool is now configured finally let's
-configure NAT itself the command starts
+so our command is IP nat pool 243.713838 pool 1 1.2.3.10 1.2.3.20 net mask 255.255.255.0 253.508941 ok
+our pool is now configured 256.577670 finally let's
+configure NAT itself 259.970565 the command starts
 the same as with static NAT IP NAT
 inside source
 now with static NAT we use IP NAT inside
-source static however for dynamic NAT we
+source static 270.673814 however for dynamic NAT we
 will use IP net inside source list
 followed by the name or number of our
-ACL which is 1 then pool followed by the
-pool name which is pool 1 so our command
+ACL which is 1 279.889772 then pool followed by the
+pool name which is pool 1 283.536647 so our command
 is IP net inside source list 1 pool pool
-1 our dynamic map configuration is now
+1 291.653291 our dynamic map configuration is now
 complete
-I'll go on each PC and quickly ping
-server 1 then go on r1 to check the
-translations on PC 1 first ping 1.1.1
-dot 100
-okay next I'll go on PC to and ping
-server one ping 1.1 1.1 hundred okay and
-next I'll go on PC three ping 1.1 1.1
-hundred okay now let's go on r1 to check
-these translations exit to check the net
-translations use this command show IP
-nak translations notice at the top the
+295.238145 I'll go on each PC and quickly ping
+server 1 298.824999 then go on r1 to check the
+translations on PC 1 first 304.513852 ping 1.1.1.100
+310.423727 okay next I'll go on PC 2 and ping
+server one ping 1.1 1.1 hundred 322.760872 okay and
+next I'll go on PC 3 ping 1.1.1.100 334.519142 okay now let's go on r1 to check
+these translations 341.743746 exit to check the net
+translations use this command 349.006058 show IP
+nat translations 351.338433 notice at the top the
 terms inside global inside local outside
-local outside global we want to focus on
-inside global and inside local inside
+local outside global 360.896849 we want to focus on
+inside global and inside local 364.971287 inside
 global is the Abbas's we translate it to
-in the 12.30 / 24 subnet and inside
+in the 1.2.3.0 / 24 subnet 372.789932 and inside
 local is the original private IP address
-range in the 192.168.1.0 / 24 subnet
-note that the number after the colon in
+range 377.533661 in the 192.168.1.0 / 24 subnet
+381.920077 note that the number after the colon in
 these IP addresses indicates a port
-number here is 192.168.1.1 pc 1 and
-address it was translated to here is
-192.168.1.2 elv pc 2 and the address it
-was translated to and here is
-192.168.1.3
+number 387.617535 here is 192.168.1.11 pc 1 392.570847 and
+address it was translated to 395.911263 here is
+192.168.1.11 pc 2 401.133200 and the address it
+was translated to 403.171384 and here is
+192.168.1.13
 pc 3 and the address it was translated
-to if you want to clear all of these
+to  410.464945 if you want to clear all of these
 dynamic translations use this command
-clear IP neck translation followed by an
+416.283174 clear IP neck translation followed by an
 asterisk
-okay now let's do that show command one
-more time show IP NAT translations there
+421.876757 okay now let's do that show command one
+more time 425.438215 show IP NAT translations 427.910819 there
 we go our translations are cleared
-we have successfully configured dynamic
-NAT that's all for this lab thank you
+432.364673 we have successfully configured dynamic
+NAT 434.814048 that's all for this lab 436.609027 thank you
 for watching I hope this lab and video
-have been helpful for you please
+have been helpful for you 444.817110 please
 subscribe for future labs like this
-which will be released weekly if you
-have requests for any specific labs let
-me know in the comment section if you
+447.669110 which will be released weekly 449.213714 if you
+have requests for any specific labs 452.526422 let
+me know in the comment section 454.188547 if you
 want to support my channel I accept
 Bitcoin and aetherium donations via the
-addresses in the description I am also a
+addresses in the description 461.028234 I am also a
 brave verified publisher and accept bat
 or basic attention token donations in
 the brave browser
+468.926192 
+468.926192 
+468.926192 

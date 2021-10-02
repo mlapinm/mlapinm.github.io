@@ -30,11 +30,11 @@ the first DHCP pool 103.615575 IP dhcp pool 10 pool
 107.461554 now we've created the pool and entered
 DHCP configuration mode 112.882137 now let's
 specify the range of addresses we will
-be handing out to hosts 118.169199 10000 / 24 in
-this case 121.278032 network 10000 255.255.255.0
+be handing out to hosts 118.169199 10.0.0.0 / 24 in
+this case 121.278032 network 10.0.0.0 255.255.255.0
 129.498115 next the default gateway default router
-10001 137.193510 next the DNS server DNS server
-10001 145.967364 note that I haven't actually
+10.0.0.1 137.193510 next the DNS server DNS server
+10.0.0.1 145.967364 note that I haven't actually
 configured a DNS server in this lab 149.773530 I
 just wanted to show that command 151.690717 finally
 a range of excluded addresses 155.490654 these are
@@ -45,21 +45,21 @@ not configured in DHCP mode 166.633673 its
 configured in global configuration mode
 169.325798 so exit IP dhcp excluded address 176.144464 now we
 enter the first address in the range
-178.912860 10001 then the last address in the
-range 100010 185.369318 that will exclude all
-addresses from 1000 1 to 1000 10 from
+178.912860 10.0.0.1 then the last address in the
+range 10.0.0.10 185.369318 that will exclude all
+addresses from 10.0.0.1 to 10.0.0.10 from
 being distributed by the DHCP server 194.168693 now
 let's configure the next DHCP pool 198.718005 IP
-dhcp pool 20 pool network 20000
-255.255.255.0 209.458838 default router 20001
-DNS server 20001 exit 219.400629 now let's
+dhcp pool 20 pool network 20.0.0.0
+255.255.255.0 209.458838 default router 20.0.0.1
+DNS server 20.0.0.1 exit 219.400629 now let's
 configure an excluded address range
-again 222.507941 IP dhcp excluded address 2000 1
-2000 10 231.985003 ok now one more DHCP pool to
+again 222.507941 IP dhcp excluded address 20.0.0.1
+20.0.0.10 231.985003 ok now one more DHCP pool to
 configure 236.023941 IP dhcp pool 12 pool 240.752670 network
 192.168.12.0 255.255.255.0 exit 249.565898 ok our
 DHCP server is now configured 253.451648 now hosts
-in the 10000 / 24 network should have an
+in the 10.0.0.0 / 24 network should have an
 IP address 259.651981 I'll go on PC one
 261.937043 IP config slash release ipconfig slash
 renew 270.031522 this will make PC 1 refresh its IP
@@ -84,10 +84,10 @@ we get a message stating that r2 was
 assigned a DHCP address 346.923077 exit 349.290639 step 2 is
 now complete 351.082347 step 3 is to configure our
 to SG 0 1 interface as a DHCP relay
-agent 358.843242 so that hosts on the 2000 0 / 24
+agent 358.843242 so that hosts on the 20.0.0.0 / 24
 network can get IP addresses
 364.017637 although r1 is configured to give
-addresses to the 20000 / 24 Network
+addresses to the 20.0.0.0 / 24 Network
 because the hosts aren't connected to
 the same network as r1 373.698198 we need to
 configure a DHCP relay agent 377.336531 the rule is
@@ -108,7 +108,7 @@ server which is R 1 so 192.168.12.1 432.179152 that's
 it 434.253339 now let's go back to pc 3 436.900734 IP config
 slash release IP config slash renew 446.750567 and
 there we go
-452.824379 pc 3 now has an IP address in the 20000
+452.824379 pc 3 now has an IP address in the 20.0.0.0
 slash 24 range as well as a default
 gateway and dns server 461.149212 since our DHCP
 relay agent relayed the DHCP messages

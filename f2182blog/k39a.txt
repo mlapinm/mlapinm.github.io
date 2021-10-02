@@ -1,112 +1,114 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.721270 you can download the lab
+file from the link in the description 8.038478 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description this is the third and last
+description 15.957623 this is the third and last
 of our labs focusing on nat network
-address translation this lab will focus
-on Pat port address translation static
+address translation 22.974185 this lab will focus
+on Pat port address translation 27.762934 static
 NAT is sometimes referred to as
 one-to-one and dynamic NAT is sometimes
-referred to as many to many by that
+referred to as many to many 36.393704 by that
 logic
-Pat is many to one many addresses are
-translated to a single IP address but
+Pat is many to one 39.921808 many addresses are
+translated to a single IP address 43.722870 but
 the router keeps track of the layer for
-port number used so it can identify each
-of the inside hosts for example when we
+port number used 47.393953 so it can identify each
+of the inside hosts 50.378953 for example when we
 configure Pat in this network we can
 then ping from pc-1 pc2 and pc 3 to
-server 1 at the same time all of them
+server 1 at the same time 60.536307 all of them
 will use the same address that of our
-ones as 0 3 0 interface 1.2.3 1 however
+ones as 0 3 0 interface  1.2.3.1 69.264202 however
 each of them will use a different port
-number so our one can forward the return
+number 72.413243 so our one can forward the return
 traffic from server 1 back to the
-correct PC we are using the same
-topology as in the previous net labs if
+correct PC 77.394888 we are using the same
+topology as in the previous net labs 82.022263 if
 we try to ping server one from PC one it
-should fail once again let's try ping
-1.1.1 100
-the pink fails once again this is
+should fail once again 87.328783 let's try ping
+1.1.1.100
+the pink fails 99.868949 once again this is
 because PC one has an IP address in a
-private IP range these addresses are not
+private IP range 105.078115 these addresses are not
 routable on the Internet
-to simulate the Internet I have
+108.260219 to simulate the Internet I have
 configured ACLs on r1 and r2 to prevent
 private IP addresses from being routed
-on the serial link between them so let's
+on the serial link between them 117.412594 so let's
 configure Pat on r1 to translate the IP
 addresses of pc-1 pc2 and pc 3 to the IP
 address of our ones s0 3-0 interface
-I'll go on r1 enable compte again I'll
+130.235135 I'll go on r1 133.915260 enable conf t again I'll
 set the inside and outside NAT
-interfaces interface g00 IP NAT inside
-interface s 0 3 0 IP NAT outside exit
+interfaces 143.055718 interface g00 146.325863 IP NAT inside
+149.067258 interface s 0 3 0 IP NAT outside 153.804342 exit
 now to configure a dynamic NAT we had to
-configure an ACL and an app pool before
+configure an ACL and NAT pool before
 we configure the NAT statement itself
-for Pat we just create an ACL to
+163.396195 for Pat we just create an ACL to
 identify the inside address range to
-translate and then we create a NAT
+translate 169.215215 and then we create a NAT
 statement to translate them to the
-outside interface let's make the ACL
-remember this ACL is used to identify
+outside interface 173.721069 let's make the ACL
+176.148777 remember this ACL is used to identify
 traffic not to allow or block traffic
-traffic permitted by the ACL will be
-translated traffic denied by the ACL
-won't be translated but won't be blocked
-let's make an ACL to permit traffic from
-the 192.168.1.0 / 24 network access list
-1 permit 192.168.1 oh oh oh oh 255
-that's it
-now we just have to make the NAT
-statement the first half is identical to
-dynamic NAT IP NAT inside source list 1
-which identifies ACL 1 next however we
+182.342735 traffic permitted by the ACL will be
+translated 186.515110 traffic denied by the ACL
+won't be translated 190.283860 but won't be blocked
+191.827818 let's make an ACL to permit traffic from
+the 192.168.1.0 / 24 network 198.338255 access list
+1 permit 192.168.0.1 0.0.0.255
+208.322234 that's it
+210.279525 now we just have to make the NAT
+statement 213.063233 the first half is identical to
+dynamic NAT 216.461108 IP NAT inside source list 1
+221.829795 which identifies ACL 1 223.944274 next however we
 type interface followed by the outside
 interface s 0 3 0 in this case
-finally remember to add overload at the
-end this is what allows the router to
+231.750732 finally remember to add overload at the
+end 236.835523 this is what allows the router to
 translate multiple hosts to the same IP
-address and keep track of the layer for
-port number to identify each host so our
+address 241.616690 and keep track of the layer for
+port number to identify each host 246.065023 so our
 command is IP NAT inside source list one
-interface s zero three zero overload our
-PAP configuration is complete now let's
+interface s 030 overload 254.975877 our
+PAP configuration is complete 259.274772 now let's
 test and then check the translations on
-our one out paying server one from each
-of the PCs KC one first ping 1.1 1.1
-hundred next PC to ping 1.1 1.1 hundred
-finally pc 3 ping 1.1 1.1 hundred ok now
+r one 262.248189 out paying server one from each
+of the PCs 266.084584 PC one first 267.646855 ping 1.1.1.100 272.277105 next PC 2 ping 1.1.1.100 283.174729 
+finally pc 3 ping 1.1.1.100 294.031895 ok now
 let's go on r1 and check the
-translations exit show IP NAT
-translations as you can see our inside
+translations 299.522520 exit show IP NAT
+translations 305.999103 as you can see our inside
 local addresses look the same as in the
-previous lab but the inside global
-addresses are all the same as I said
+previous lab 311.557436 but the inside global
+addresses are all the same 316.017186 as I said
 before however r1 keeps track of these
-layer 4 port numbers so it knows which
+layer for port numbers 321.823144 so it knows which
 PC to send the return traffic from
-server 1 2 now do you remember the
+server 1 too 325.968373 now do you remember the
 command to use if you want to clear
-these translations clear IP NAT
-translation asterisk show IP NAT
-translations the translation table is
+these translations 330.556102 clear IP NAT
+translation asterisk 335.765477 show IP NAT
+translations 338.454018 the translation table is
 empty
-ok that's all for this lab
-thank you for watching I hope this lab
+340.944559 ok that's all for this lab
+342.803434 thank you for watching I hope this lab
 and video have been helpful for you
-please subscribe for future labs like
-this which will be released weekly if
+348.595205 please subscribe for future labs like
+this which will be released weekly 352.798809 if
 you have requests for any specific labs
-let me know in the comment section if
+let me know in the comment section 357.513225 if
 you want to support my channel I accept
 Bitcoin and aetherium donations via the
-addresses in the description I am also a
+addresses in the description 364.566891 I am also a
 brave verified publisher and accept bass
 or basic attention token donations in
 the brave browser
+372.683204 
+372.683204 
+372.683204 

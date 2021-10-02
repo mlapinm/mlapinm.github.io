@@ -37,7 +37,7 @@ config slash renew
 default gateway 126.635970 however it has no dns
 server yet 129.465054 let's try to ping server 1 by
 IP address
-133.267595 ping 1000 101 the ping works 144.599470 it sends
+133.267595 ping 10.0.0.101 the ping works 144.599470 it sends
 the ping to its default gateway r1 which
 then fords it to a server 1 149.537615 now let's
 try to ping by name 152.312594 ping server 1 158.507094 ping
@@ -47,7 +47,7 @@ can't translate the name server 1 to the
 appropriate IP address 165.263988 let's fix that
 166.682571 let's go back on r1 and add the DNS 1
 server as a DNS server to the DHCP pool
-174.948508 DNS server 2000 100 181.673737 now I'll go back on
+174.948508 DNS server 20.0.0.100 181.673737 now I'll go back on
 PC 1 and do another release and renew to
 refresh the information and get the DNS
 server 188.756007 IP config slash release IP config
@@ -64,14 +64,14 @@ well
 again the ping works 231.594982 notice that
 although we use the command ping server
 2 immediately under it says pinging
-1000 102 as the DNS server result
+10.0.0.102 as the DNS server result
 the name to the proper IP address 243.540252 next
 is to try the same from switch 1 248.915960 switch
 1 has an IP address on its VLAN 1
 interface 252.640897 so it can send and receive
 pings 254.963855 however let's see if you can do so
 without any further setup 258.606396 enable ping
-1000 101 the ping fails
+10.0.0.101 the ping fails
 271.754125 since the ping by IP address fails
 there's no need to try to ping by name
 276.659979 if PC one camp in server 1 279.814249 Y can't
@@ -85,15 +85,15 @@ DNS server 301.041248 conf t to specify a default
 gateway use this command 306.739706 IP default
 gateway 192.168.1.1 312.818393 ok now to specify a
 DNS server use this command 316.788330 IP name
-server 2000 100 exit 323.537809 ok let's try those
+server 20.0.0.100 exit 323.537809 ok let's try those
 pings again 325.892475 ping 1000 101
 330.184829 ping works this time 336.472724 and now let's try
 to ping by name and see if our dns
 configuration works 341.103349 ping server one
 it works again and actually you can see
 the message here translating server 1
-domain server 2000 100 and then down
-here the IP address of server 1 1000 101
+domain server 20.0.0.100 and then down
+here the IP address of server 1 10.0.0.101
 364.241869 ok in this lab we took a bit of a look
 at DNS the domain name system 369.901452 that's all
 for this lab 371.199618 thank you for watching I
