@@ -1,100 +1,102 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 3.922645 you can download the lab
+file from the link in the description 7.564686 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description in this lab we will once
+description 14.926853 in this lab we will once
 again configure NTP Network Time
-Protocol unlike last lab however we will
+Protocol 21.221978 unlike last lab however we will
 also configure authentication to ensure
 that our routers r2 and r3 only sing to
 a trusted time source r1
-first we will once again configure the
-time zone and time on r1 unable I'll set
+32.913395 first we will once again configure the
+time zone and time on r1 38.404103 unable I'll set
 the time to 9:00 p.m. jst again like the
-previous lab remember the clock set
+previous lab 45.170999 remember the clock set
 command we are going to use sets the
-timing UTC my time zone is nine hours
+timing UTC 51.153332 my time zone is nine hours
 ahead of UTC so I have to set the time
 to nine hours behind what I actually
-want the time to be clock set 12 o'clock
-August 22nd 2019 now let's set the time
+want the time to be 58.944915 clock set 12 o'clock
+August 22nd 2019 69.048831 now let's set the time
 zone
-comte clock time zone is t9 now let's
-configure NTP first I'll configure it as
+71.486269 conf t clock time zone is jst9 77.235914 now let's
+configure NTP 80.224393 first I'll configure it as
 an NTP server with a default stratum
-level which is 8 NTP master now let's
-set up NTP authentication the first
-command is NTP authenticate now we have
-to set up two keys one for r2 and one
-for r3 we could actually use a single
+level which is 8 86.092747 NTP master now let's
+set up NTP authentication 92.528351 the first
+command is NTP authenticate 97.253622 now we have
+to set up two keys 99.739976 one for r2 and one
+for r3 102.546142 we could actually use a single
 key for both routers but the
-instructions say to use two to make a
+instructions say to use two 108.562288 to make a
 key we use this command NTP
 authentication key followed by the key
 number one md5 then the key string Cisco
-1 now let's create key number two as
-well NTP authentication key to md5
-go to we're not done yet however let's
-configure these as trusted keys ntp
-trusted key 1 ntp trusted key - ok we
+1 123.456183 now let's create key number two as
+well 126.493558 NTP authentication key to md5
+cisco2 133.443745 we're not done yet however let's
+configure these as trusted keys 138.160432 ntp
+trusted key 1 ntp trusted key 2 144.831682 ok we
 have completed the configuration on r1
-now let's set up our to enable compte
-clock time zones AST 9 remember ntp
-doesn't sync the time zone so we still
+149.298369 now let's set up r2 153.182660 enable conf t
+clock time zones JST 9 161.924929 remember ntp
+doesn't sync the time zone 165.688783 so we still
 have to configure which time zone we
-want to display the time in now let's
+want to display the time in 169.529137 now let's
 setup NTP authentication and then set r1
-as the server NTP authenticate NTP
-authentication key 1 md5 Cisco 1 NTP
-trusted key 1 now to set R 1 as the
+as the server 175.234220 NTP authenticate NTP
+authentication key 1 md5 Cisco 1 186.138740 NTP
+trusted key 1 190.094720 now to set R 1 as the
 server we have to add something to the
-command we used in the previous lab NTP
-server 192.168 12.1 key 1 we add key
+command we used in the previous lab 196.739970 NTP
+server 192.168.12.1 key 1 204.303282 we add key
 followed by the key number to the end of
-the command as I mentioned in the
+the command 209.435657 as I mentioned in the
 previous lab NTP can take some time to
-synchronize I'm going to configure r3
+synchronize 215.878261 I'm going to configure r3
 first before we check on r2
-then I'll cut the video and wait for
-everything to synchronize enable compte
+220.334448 then I'll cut the video and wait for
+everything to synchronize 224.049302 enable conf t
 clock time zone jst 9 NTP authenticate
-NTP authentication to md5 Cisco to NTP
-trusted key to NTP server 192.168.1 key
-to now that the configuration is
+NTP authentication to md5 Cisco 2 NTP
+trusted key 2 245.827135 NTP server 192.168.13.1 key
+2 252.737196 now that the configuration is
 complete I'll cut the video and wait for
 the time to synchronize
-okay we're back let's check if
-everything is good on our to show clock
-detail time sources NTP looks good show
-NTP associations we are synched to our
-one 192.168.1.1 its reference clock is a
-loopback address on our one one two 7.1
-- 7.1.1 and it's stratum level is eight
-note the asterisk and the tilled on the
-Left the tilde indicates that this
-association has been configured and the
+259.514946 okay we're back 264.897862 let's check if
+everything is good on r2 266.933966 show clock
+detail 270.039153 time sources NTP looks good 272.401132 show
+NTP associations 277.031507 we are synched to r
+one 192.168.12.1 281.702777 its reference clock is a
+loopback address on r one 127.127.1.1 and it's stratum level is eight
+289.364172 note the asterisk and the tilled on the
+Left 293.952817 the tilde indicates that this
+association has been configured 297.914129 and the
 asterisk essentially means that we're
-synced to the pier now let's check on
-our three show clock detail again time
-sources NTP show NTP associations our
-server is r1 at 192.168.1 and again
+synced to the pier 301.819921 now let's check on
+r3 show clock detail 307.202733 again time
+sources NTP show NTP associations 314.631587 our
+server is r1 at 192.168.13.1 319.824628 and again
 notice the asterisk and tilled on the
-Left we have successfully synchronized
-the time with NTP that's all for this
-lab thank you for watching I hope this
+Left 323.745420 we have successfully synchronized
+the time with NTP 327.180253 that's all for this
+lab 329.049919 thank you for watching I hope this
 lab and video have been helpful for you
-please subscribe for future labs like
-this which will be released weekly if
+334.573856 please subscribe for future labs like
+this which will be released weekly 339.602169 if
 you have requests for any specific labs
-let me know in the comment section if
+let me know in the comment section 344.212189 if
 you want to support my channel please
 consider contributing to my patreon
-patreon comm slash Jeremy's IT lab I
+patreon comm slash Jeremy's IT lab 352.705105 I
 accept Bitcoin and aetherium donations
-via the addresses in the description I
+via the addresses in the description 358.190750 I
 am also a brave verified publisher and
 accept bat or basic attention token
 donations in the brave browser
+366.710042 
+366.710042 
+366.710042 

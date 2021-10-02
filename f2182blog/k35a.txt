@@ -1,129 +1,132 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description in
+practice lab 4.778000 you can download the lab
+file from the link in the description 8.290062 in
 this lab we will configure DHCP dynamic
-host configuration protocol DHCP
-dynamically provides IP addresses as
+host configuration protocol 15.527207 DHCP
+dynamically provides IP addresses 20.284665 as
 well as information like default gateway
-and DNS server addresses to hosts so
+and DNS server addresses to hosts 25.409415 so
 that each host doesn't have to be
-manually configured in this lab we will
-configure r1 as a DHCP server which will
+manually configured 29.507894 in this lab we will
+configure r1 as a DHCP server 35.247581 which will
 provide this information to the other
-devices on the network we will also
+devices on the network 39.215997 we will also
 configure r2 as a DHCP client on one
 interface and as a DHCP relay agent on
-another interface let's get started
-first I want to show that our pcs don't
-have IP addresses let's go on PC one IP
+another interface 49.728934 let's get started
+52.145996 first I want to show that our pcs don't
+have IP addresses 57.628141 let's go on PC one 60.696641 IP
 config it has an address in the 169.254
-range this is an automatic private IP
-address or apipa pc one is configured to
-get its address via DHCP but there is no
-DHCP server configured yet so this
+range 69.560620 this is an automatic private IP
+address or apipa 75.179099 pc 1 is configured to
+get its address via DHCP 79.688057 but there is no
+DHCP server configured yet 82.837202 so this
 address was automatically generated
-let's get in a real usable IP address
-the first step is to configure our DHCP
-server r1 an able compte let's create
-the first DHCP pool IP dhcp pool 10 pool
-now we've created the pool and entered
-DHCP configuration mode now let's
+85.288514 let's get in a real usable IP address
+88.929805 the first step is to configure our DHCP
+server r1 94.311513 enable conf t 100.142763 let's create
+the first DHCP pool 103.615575 IP dhcp pool 10 pool
+107.461554 now we've created the pool and entered
+DHCP configuration mode 112.882137 now let's
 specify the range of addresses we will
-be handing out to hosts 10000 / 24 in
-this case network 10000 255.255.255.0
-next the default gateway default router
-1000won next the DNS server DNS server
-1000 one note that I haven't actually
-configured a DNS server in this lab I
-just wanted to show that command finally
-a range of excluded addresses these are
-Abbas's that our DHCP server won't
-distribute to hosts addresses that we
-want to keep reserved this is actually
-not configured in DHCP mode its
+be handing out to hosts 118.169199 10000 / 24 in
+this case 121.278032 network 10000 255.255.255.0
+129.498115 next the default gateway default router
+10001 137.193510 next the DNS server DNS server
+10001 145.967364 note that I haven't actually
+configured a DNS server in this lab 149.773530 I
+just wanted to show that command 151.690717 finally
+a range of excluded addresses 155.490654 these are
+addresses that our DHCP server won't
+distribute to hosts 160.251070 addresses that we
+want to keep reserved 162.657757 this is actually
+not configured in DHCP mode 166.633673 its
 configured in global configuration mode
-so exit IP dhcp excluded address now we
+169.325798 so exit IP dhcp excluded address 176.144464 now we
 enter the first address in the range
-1000 won then the last address in the
-range 1000 10 that will exclude all
+178.912860 10001 then the last address in the
+range 100010 185.369318 that will exclude all
 addresses from 1000 1 to 1000 10 from
-being distributed by the DHCP server now
-let's configure the next DHCP pool IP
+being distributed by the DHCP server 194.168693 now
+let's configure the next DHCP pool 198.718005 IP
 dhcp pool 20 pool network 20000
-255.255.255.0 default router 2000 one
-DNS server 2000 one exit now let's
+255.255.255.0 209.458838 default router 20001
+DNS server 20001 exit 219.400629 now let's
 configure an excluded address range
-again IP dhcp excluded address 2000 1
-2000 10 ok now one more DHCP pool to
-configure IP dhcp pool 12 pool network
-192.168.1.0 255.255.255.0 exit ok our
-DHCP server is now configured now hosts
+again 222.507941 IP dhcp excluded address 2000 1
+2000 10 231.985003 ok now one more DHCP pool to
+configure 236.023941 IP dhcp pool 12 pool 240.752670 network
+192.168.12.0 255.255.255.0 exit 249.565898 ok our
+DHCP server is now configured 253.451648 now hosts
 in the 10000 / 24 network should have an
-IP address I'll go on PC one
-IP config slash release ipconfig slash
-renew this will make PC 1 refresh its IP
-configuration as you can see PC 1 now
-has an IP address and a default gateway
+IP address 259.651981 I'll go on PC one
+261.937043 IP config slash release ipconfig slash
+renew 270.031522 this will make PC 1 refresh its IP
+configuration 274.669876 as you can see PC 1 now
+has an IP address 280.289584 and a default gateway
 and DNS server as we configured on our
-DHCP server r1 now let's go to step 2
-art to SG 0 0 interface has no IP
-address configured typically we would
-manually configure an IP address but I
+DHCP server r1 286.652500 now let's go to step 2
+289.967000 r2 G 0 0 interface has no IP
+address configured 293.833249 typically we would
+manually configure an IP address 298.299186 but I
 want to show you how to use DHCP to get
-an IP address for r2 we configured a
-pool on our one with the 192.168 12/24
-range and r2 will get an address from
-that network let's go on our to enable
-coffee/tea interface g 0 0 to make it
+an IP address for r2 303.047186 we configured a
+pool on r1 with the 192.168 12/24
+range 310.008956 and r2 will get an address from
+that network 313.004310 let's go on r2 enable
+conf t interface g 0 0 324.099287 to make it
 use DHCP to get an IP address use this
-command IP address DHCP that's it
-now let's enable the interface no shut
-there we go
+command 328.836640 IP address DHCP 332.184265 that's it
+now let's enable the interface 335.381515 no shut
+337.583494 there we go
 we get a message stating that r2 was
-assigned a DHCP address exit step 2 is
-now complete step 3 is to configure our
+assigned a DHCP address 346.923077 exit 349.290639 step 2 is
+now complete 351.082347 step 3 is to configure our
 to SG 0 1 interface as a DHCP relay
-agent so that hosts on the 2000 0 / 24
+agent 358.843242 so that hosts on the 2000 0 / 24
 network can get IP addresses
-although r1 is configured to give
-addresses to the 2000 / 24 Network
+364.017637 although r1 is configured to give
+addresses to the 20000 / 24 Network
 because the hosts aren't connected to
-the same network as r1 we need to
-configure a DHCP relay agent the rule is
+the same network as r1 373.698198 we need to
+configure a DHCP relay agent 377.336531 the rule is
 to configure the relay agent on the
 layer 3 interface closest to the hosts
-in this case r2 sg0 one interface first
+383.652072 in this case r2 sg0 1 interface 386.927030 first
 let's check that that pcs don't have
 addresses in the 2000 0/24 range yet
-I'll go on PC 3
-IP config once again the IP addresses in
+393.821071 I'll go on PC 3
+396.517383 IP config once again the IP addresses in
 the 169.254 range an automatic private
-IP address let's go configure the relay
-agent on our two interface G 0 1 to
+IP address 407.746799 let's go configure the relay
+agent on r2 411.982757 interface G 0 1 to
 configure the relay agent we just have
-to use one command IP helper address
+to use one command 422.072527 IP helper address
 followed by the address of the DHCP
-server which is R 1 so 192.168.1 that's
-it now let's go back to pc 3 IP config
-slash release IP config slash renew and
+server which is R 1 so 192.168.12.1 432.179152 that's
+it 434.253339 now let's go back to pc 3 436.900734 IP config
+slash release IP config slash renew 446.750567 and
 there we go
-pc 3 now has an IP address in the 2000
+452.824379 pc 3 now has an IP address in the 20000
 slash 24 range as well as a default
-gateway and dns server since our DHCP
+gateway and dns server 461.149212 since our DHCP
 relay agent relayed the DHCP messages
 between the PC and the DHCP server
-that's all for this lab thank you for
+469.385274 that's all for this lab 471.286566 thank you for
 watching
 I hope this lab and video have been
-helpful for you please subscribe for
+helpful for you 480.741919 please subscribe for
 future labs like this which will be
-released weekly if you have requests for
+released weekly 485.440149 if you have requests for
 any specific labs
-let me know in the comment section if
+let me know in the comment section 490.318711 if
 you want to support my channel I accept
 Bitcoin and a theorem donations via the
-addresses in the description I am also a
+addresses in the description 497.840127 I am also a
 brave verified publisher and accept bat
 or basic attention token donations in
 the brave browser
+506.285418 
+506.285418 
+506.285418 

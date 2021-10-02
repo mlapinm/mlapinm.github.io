@@ -1,108 +1,106 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.619333 you can download the lab
+file from the link in the description 7.064187 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description this lab will be the first
-in a series of three labs on mat network
-address translation this first lab will
-cover static NAT static NAT creates a
+description 14.370978 this lab will be the first
+in a series of three labs on nat 19.651040 network
+address translation 21.521060 this first lab will
+cover static NAT 24.654227 static NAT creates a
 one-to-one relationship between an
 inside address typically an IP address
 in a private address range such as
 192.168.1.0
-and an outside address typically a
+35.688352 and an outside address typically a
 public IP address on the Internet
-I won't explain in detail how NAT works
-hopefully you've already studied it this
+40.248039 I won't explain in detail how NAT works
+hopefully you've already studied it 45.527434 this
 lab will give you some basic practice in
-configuring static NAT let's look at
+configuring static NAT 48.876975 let's look at
 step 1
-ripp has been pre-configured so that any
+52.390495 rip has been pre-configured so that any
 device on this network should be able to
-reach any other device let's try a ping
-from pc-12 server one ping one dot one
-dot one dot one hundred it doesn't work
-why could this be I wrote a hint here
+reach any other device 57.679724 let's try a ping
+from pc-1 server one 61.691661 ping 1.1.1.100 67.807911 it doesn't work
+why could this be 75.442452 I wrote a hint here
 stating that the serial connection
 between r1 and r2 is using ACLs to
 simulate the Internet
-what exactly does that mean well PC ones
-address is 192.168.1.1 this is a private
-IP address these private IP addresses
-cannot be routed over the internet so
+84.317285 what exactly does that mean 86.642639 well PC ones
+address is 192.168.1.12 92.007784 this is a private
+IP address 94.333284 these private IP addresses
+cannot be routed over the internet 98.347637 so
 when PC one attempts to ping server one
-the source IP is 192.168.1.1 and the
-destination is one one one one hundred
-one dot one dot one dot one hundred is a
+the source IP is 192.168.1.12 105.990178 and the
+destination is 1.1.1.100 110.224573 
+1.1.1.100 is a
 public IP address so it can be routed
-over the Internet however when server
+over the Internet 115.270698 however when server
 one sends a reply the addresses are
-swapped the source addresses 1.1.1 100
-and the destination addresses 192.168.1
-11 because 192.168.1.1 is in the
+swapped 120.893427 the source addresses 1.1.1.100
+and the destination addresses 192.168.1.11 129.016635 because 192.168.1.11 is in the
 IP address range it cannot be routed
-over the Internet and is dropped so our
+over the Internet and is dropped 138.210863 so our
 goal is to configure static NAT on r1 to
 translate the private IP addresses of
 pc-1 pc2 and pc3 to public IP addresses
-if we do that PC one will send a ping to
+150.491300 if we do that PC one will send a ping to
 server one and once again the source
-address will be 192.168.1 elleven and
-the destination 1.1.1 100 however when
-the packet reaches our one our one will
+address will be 192.168.1.11 159.345695 and
+the destination 1.1.1.100 162.747007 however when
+the packet reaches r1  166.137611 r1 will
 translate the source address to whatever
-we specify 1 2 3 11 in this case when
+we specify 1.2.3.11 in this case 172.839318 when
 server 1 sends its reply the source
-address will be once again 1 1 1 100 and
-the destination 1 2 3 11 when the reply
-reaches r1 r1 will translate the
-destination address from Wanda 2 3 11
-back to PC ones address of 192.168.1 11
-so let's get to the configuration on r1
-enable coffee tea first we have to
-specify our ones interfaces as inside or
-outside nap interfaces the inside
+address will be once again 1.1.1.100 and
+the destination 1.2.3.11 184.239026 when the reply
+reaches r1 187.601859 r1 will translate the
+destination address from 1.2.3.11
+back to PC ones address of 192.168.1.11
+196.954588 so let's get to the configuration on r1
+200.716775 enable conf t first we have to
+specify r1s interfaces as inside or
+outside nat interfaces 211.820129 the inside
 interface faces our inside private
-network so G 0 0 in this case interface
-G 0 0 IP NAT inside the outside
-interface will be s 0 3 0 our interface
-facing the internet interface as a 0 3 0
-IP NAT outside exit now let's configure
-the translations themselves static NAT
+network so G 0 0 in this case 218.424356 interface
+G 0 0 IP NAT inside 224.468980 the outside
+interface will be s 0 3 0 228.146188 our interface
+facing the internet 231.055271 interface as a 0 3 0
+IP NAT outside exit 237.902812 now let's configure
+the translations themselves 241.478312 static NAT
 is configured with the following command
-IP NAT inside source
+244.823249 IP NAT inside source
 static followed by the inside private
 address then the outside public address
-so for PC 1 are inside addresses
-192.168.1 11 and our outside addresses 1
-2 3 11 okay that's it for a PC
-now let's do the same command for PC -
-just changing the addresses IP nat
-inside source static 192.168.1 12 1 2 3
-12 finally for pc 3 IP nat inside source
-static 192.168.1.1 2.3 13 ok our nat
-configuration is now complete let's go
+254.369790 so for PC 1 are inside addresses
+192.168.1.11 and our outside addresses 1.2.3.11 264.813060 okay that's it for a PC 1
+267.472518 now let's do the same command for PC 2
+just changing the addresses 272.136330 IP nat
+inside source static 192.168.1.12 1.2.3.12 282.166705 finally for pc 3 284.493017 IP nat inside source
+static 192.168.1.13 1.2.3.13 294.918267 ok our nat
+configuration is now complete 298.565683 let's go
 on the PCs and try to ping server 1
-again from pc1 first ping 1.1.1 100 the
+again 302.212683 from pc1 first 305.232183 ping 1.1.1.100 the
 ping works this time
-so our NAT configuration has been
-successful just to make sure I'll ping
-from PC - and PC 3 as well PC 2 first
-ping 1.1.1 100 again the ping works
-finally let's ping from PC 3 ping 1.1.1
-100 PC 3 works as well that's all for
-this lab thank you for watching I hope
+316.230766 so our NAT configuration has been
+successful 319.347682 just to make sure I'll ping
+from PC 2 and PC 3 as well 323.432078 PC 2 first
+ping 1.1.1.100 again the ping works
+334.928432 finally let's ping from PC 3 338.319911 ping 1.1.1.100 PC 3 works as well 347.299181 that's all for
+this lab 348.879660 thank you for watching I hope
 this lab and video have been helpful for
-you please subscribe for future labs
+you 355.491660 please subscribe for future labs
 like this which will be released weekly
-if you have requests for any specific
+359.738805 if you have requests for any specific
 labs let me know in the comment section
-if you want to support my channel I
+364.593596 if you want to support my channel I
 accept a Bitcoin and aetherium donations
-via the addresses in the description I
+via the addresses in the description 371.895408 I
 am also a brave verified publisher and
 accept bat or basic attention token
 donations in the brave browser
+379.191699 
+379.191699 
+379.191699 

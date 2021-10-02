@@ -1,107 +1,108 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description in
+practice lab 4.809270 you can download the lab
+file from the link in the description 8.199957 in
 this lab we will look at lldp link layer
-discovery protocol this protocol is very
+discovery protocol 14.594145 this protocol is very
 similar to a CDP Cisco discovery
 protocol which we covered in a couple
-previous labs CDP however is a cisco
-proprietary protocol meaning it only
-works with cisco devices lldp is an open
+previous labs 22.333145 CDP however is a cisco
+proprietary protocol 26.839332 meaning it only
+works with cisco devices 29.245582 lldp is an open
 standard protocol and can be used on
 both cisco devices and devices from
-other vendors the first step is to
+other vendors 37.339040 the first step is to
 disable CDP and enable lldp on each
-networking device these four devices are
-Cisco devices so CDP is enabled by
-default for this lab let's disable CDP
+networking device 45.006394 these four devices are
+Cisco devices 48.688123  so CDP is enabled by
+default 50.972164 for this lab let's disable CDP
 and enable lldp on switch one first
-enable coffee tea no CDP run lldp run
-exit that's it pretty simple now our one
-an able coffee tea no CDP run lldp run
-exit next are to enable coffee tea no
-CDP run lldp run exit finally switch to
-enable coffee tea no CDP run lldp run
-exit okay so we have disabled CDP and
+58.811705 enable conf t  no CDP run lldp run
+exit 69.564850 that's it pretty simple 71.768079 now r1
+enable conf t no CDP run lldp run
+exit 83.879745 next r2 enable conf t no
+CDP run lldp run exit finally switch 2
+96.682557 enable conf t no CDP run lldp run
+exit 108.559536 okay so we have disabled CDP and
 enabled lldp on each networking device
-let's go back to switch one the next
+115.691640 let's go back to switch one 118.590848 the next
 step is to use a show command to find
-the default timer values for lldp we can
-do that with this command show lldp the
+the default timer values for lldp 125.188660 we can
+do that with this command 127.582098 show lldp the
 status is active which is what we want
-and below are the timers the
+and below are the timers 135.692348 the
 advertisement timer is 30 seconds old
 timer is 120 seconds and interface
 re-initialization delay is 2 seconds
-these are the default timers you might
+146.003202 these are the default timers 148.287181 you might
 want to remember these for the test
 especially the advertisement and hold
-timers next is to use lldp to identify
+timers 153.496263 next is to use lldp to identify
 which interfaces are used to connect the
-networking devices let's use this
-command on switch 1 first show lldp
-neighbors switch 1 has one neighbor r1
-the local interface meaning the
+networking devices 161.877763 let's use this
+command on switch 1 165.066367 first show lldp
+neighbors 169.467742 switch 1 has one neighbor r1
+173.189137 the local interface meaning the
 interface here on switch one is Gigabit
 Ethernet 1 0 1 and the port ID meaning
-the interface on our one is Gigabit
-Ethernet 0 0 let's use the same command
-on r1 show lldp neighbors are ones gig 0
+the interface on r1 is Gigabit
+Ethernet 0 0 187.726762 let's use the same command
+on r1 190.783762 show lldp neighbors r1s gig 0
 0 interface is connected to switch ones
-gig 1 0 1 interface which we saw before
-are ones gig 0 1 interface is connected
-to our twos gig 0 0 interface ok let's
-go on our to now show lldp neighbors as
+gig 1 0 1 interface 201.898324 which we saw before
+r1s gig 0 1 interface is connected
+to r2s gig 0 0 interface 209.614217 ok let's
+go on r2 now 212.837550 show lldp neighbors 217.630758 as
 we saw on r1 r2 s gig 0 0 interface is
-connected to our ones gig 0 1 interface
-also r2 s gig 0 1 interface is connected
-to switch to s gig 0 1 interface let's
-hop on switch to to confirm show lldp
-neighbors there we go
-switch to s gig 0 on interface is
-connected to our two's gig 0 1 interface
-the next task is to use lldp to identify
+connected to r1s gig 0 1 interface
+226.529383 also r2 s gig 0 1 interface is connected
+to switch2s gig 0 1 interface 233.149194 let's
+hop on switch 2 to confirm show lldp
+neighbors 240.777360 there we go
+switch 2 s gig 0 on interface is
+connected to r2's gig 0 1 interface
+247.899025 the next task is to use lldp to identify
 the iOS version of each neighboring
-device let's start here on switch to to
+device 256.089670 let's start here on switch 2 258.994565 to
 view this information about a
-neighboring device use this command show
-lldp neighbors
-you can see the iOS information for r2
-here see 2900 software running version
-15 point 1 4 m4 now let's go on our to
-show lldp neighbors detail first we can
+neighboring device use this command 263.458960 show
+lldp neighbors detail
+265.908564 you can see the iOS information for r2
+here 271.539272 see 2900 software running version
+15.144 278.283833 now let's go on r2
+show lldp neighbors detail 285.988999 first we can
 see switch 2 is running see 3560
-software version 12 point to
-a c1 also the neighboring r1 is running
-see 2900 software version 15 point 1 4
-and 4
-finally let's go on r1 to find the
-version of switch 1 show lldp neighbors
-detail switch 1 is running catalyst
-layer 3 switch software version 16 point
-3 point 2 the final step is to prevent
-switch to sf0 one interface which is
-connected to a pc one from sending or
-receiving lldp updates let's go on
-switch to compte interface f01 to
+software version 12.2371
+296.857894 also the neighboring r1 is running
+see 2900 software version 15.144
+306.148144 finally let's go on r1 to find the
+version of switch 1 312.057539 show lldp neighbors
+detail 317.349268 switch 1 is running catalyst
+layer 3 switch software version 16.3.2 325.887934 the final step is to prevent
+switch to sf01 interface which is
+connected to a pc 1 from sending or
+receiving lldp updates 338.385746 let's go on
+switch 2 340.790975 conf t interface f01 to
 disable lldp reception use this command
-no lldp receive ok now to turn off lldp
-transmission no lldp transmitted whereas
+351.070391 no lldp receive 354.433016 ok now to turn off lldp
+transmission no lldp transmitted 361.737995 whereas
 CDP uses one command CDP enable for both
-reception and transmission ll dps is two
-separate commands lldp receive and lldp
-transmit that's all for this lab thank
+reception and transmission 368.991306 lldps is two
+separate commands 371.683618 lldp receive and lldp
+transmit 375.864826 that's all for this lab 377.738826 thank
 you for watching I hope this lab and
-video have been helpful for you please
+video have been helpful for you 384.062159 please
 subscribe for future labs like this
-which will be released weekly if you
+387.179117 which will be released weekly 388.929908 if you
 have requests for any specific labs let
-me know in the comment section if you
+me know in the comment section 393.974616 if you
 want to support my channel
 I accept Bitcoin and aetherium donations
 via the addresses
-in the description I am also a brave
+in the description 401.106970 I am also a brave
 verified publisher and accept bat or
 basic attention token donations in the
 brave browser
+409.437115 
+409.437115 
+409.437115 
