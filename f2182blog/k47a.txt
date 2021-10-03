@@ -1,115 +1,116 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.610062 you can download the lab
+file from the link in the description 7.604395 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this this lab
+description 14.744624 also please subscribe to the
+channel for more labs like this 19.015749 this lab
 takes the same topology you configured
-in the previous lab and asks you to
-troubleshoot and fix some errors I have
-made one miss configuration / switch
-that is affecting connectivity in this
-network find the errors and fix them to
-restore connectivity in troubleshooting
+in the previous lab 24.722061 and asks you to
+troubleshoot and fix some errors 27.831874 I have
+made one miss configuration plus switch
+31.584936 that is affecting connectivity in this
+network 33.758331 find the errors and fix them to
+restore connectivity 37.498581 in troubleshooting
 it's important to always confirm the
 problem and know the exact extent of
-what's wrong so let's try to ping other
-pcs within the same VLAN let's ping from
-pc1 first I'll ping PC to ping 1000 -
-okay it works that's good to know
-now how about PC 5 ping 10005 doesn't
-work ok now how about in VLAN 20 let's
-ping from PC 8 10 PC 9 at 1000 9 doesn't
-work now VLAN 30 let's ping from PC 6 to
-PC 7 ping 1000 7 ok it doesn't work and
-finally VLAN 40 I'll ping from PC e3 to
-PC for ping 1000 4 it doesn't work
-okay so pc1 & pc2 can ping each other
+what's wrong 44.652247 so let's try to ping other
+pcs within the same VLAN 48.523601 let's ping from
+pc1 first 52.053830 I'll ping PC 2 ping 10.0.0.2
+okay it works 61.463080 that's good to know
+62.595934 now how about PC 5 ping 10.0.0.5 67.986954 doesn't
+work 73.556829 ok now how about in VLAN 20 76.876329 let's
+ping from PC 8 10 PC 9 at 10.0.0.9 doesn't
+work 90.284890 now VLAN 30 let's ping from PC 6 to
+PC 7 ping 10.0.0.7 ok it doesn't work 104.433681 and
+finally VLAN 40 106.432869 I'll ping from PC 3 to
+PC 4 109.257577 ping 10.0.0.4 it doesn't work
+117.650055 okay so pc1 & pc2 can ping each other
 but otherwise there is no connectivity
-let's focus on one problem at a time and
+123.599659 let's focus on one problem at a time and
 solve it and perhaps solving that
 problem will fix the other problems as
-well let's focus on the problem of
-connectivity within VLAN 10 let's go on
-switch 1 and investigate enable let's
+well 132.426158 let's focus on the problem of
+connectivity within VLAN 10 136.176324 let's go on
+switch 1 and investigate 139.780678 enable let's
 see if there are problems with our VLANs
-show VLAN brief looks like we have the
+145.711574 show VLAN brief 147.722699 looks like we have the
 VLANs we want and the correct interfaces
-are assigned to them however if you look
+are assigned to them 153.268615 however if you look
 carefully you can spot something wrong
-here gig 0 1 is shown under the default
-VLAN VLAN 1 it's supposed to be a trunk
-link show interfaces trunk indeed we
-have no trunk configured show run gig 0
-1 is configured in access mode let's fix
+here 158.600990 gig 0 1 is shown under the default
+VLAN VLAN 1 163.863073 it's supposed to be a trunk
+link 166.344573 show interfaces trunk 168.668844 indeed we
+have no trunk configured 171.991719 show run gig 0
+1 is configured in access mode 179.748073 let's fix
 that
-coffee tea interface G 0 1 switch port
-mode trunk do show interfaces trunk ok
-now our trunk is working can you ping
+180.792323 conf t interface G 0 1 switch port
+mode trunk do show interfaces trunk 190.238635 ok
+now our trunk is working 192.449072 can you ping
 from pc1 to pc2
-Bing 1000 5 no we still can't let's move
-on to switch to enable let's check the
-VLANs here show VLAN brief so we don't
+196.806072 ping 10.0.0.5 no we still can't 206.331197 let's move
+on to switch 2 210.020154 enable let's check the
+VLANs here 214.213404 show VLAN brief 216.838945 so we don't
 see our gig 0 1 & gig 0 2 interfaces
-which is good because there trunks but
-there is a problem here this problem
+222.694966 which is good 223.735966 because there trunks 225.456341 but
+there is a problem here 226.640278 this problem
 actually isn't relevant to VLAN 10
 connectivity but it will solve another
-problem F 0 1 and F 0 2 are both
-supposed to be in VLAN 40 but F 0 2 is
+problem 232.439486 F 0 1 and F 0 2 are both
+supposed to be in VLAN 40 237.696403 but F 0 2 is
 in VLAN 50 let's move f02 to the correct
 VLAN and see if that solves the problem
-of VLAN 40 connectivity call 50
-interface f0 to
-switch port access VLAN 40 exit also
-let's delete VLAN 50 no VLAN 50 do show
-VLAN brief there we go let's see if that
+of VLAN 40 connectivity 246.394444 conf t 50
+interface f0 2
+switch port access VLAN 40 253.701360 exit also
+let's delete VLAN 50 259.137506 no VLAN 50 do show
+VLAN brief 264.352839 there we go 267.304964 let's see if that
 solved our VLAN 40 connectivity problem
-I'll ping from PC 3 to pc 4 ping 1000
-dot 4 ok it works now that's not the
-problem we were focusing on but we
-solved it let's go on to switch 3 now an
-able show VLAN brief ok I think the
+271.083151 I'll ping from PC 3 to pc 4 ping 10.0.0.4 281.725984 ok it works now 284.915422 that's not the
+problem we were focusing on 287.579734 but we
+solved it 288.887609 let's go on to switch 3 now 291.219213 enable show VLAN brief 296.623088 ok I think the
 problem here is pretty clear
-VLANs 10 20 and 30 don't exist show run
+300.697838 VLANs 10 20 and 30 don't exist 303.534588 show run
 the interfaces are assigned to the
 correct VLANs but the VLANs must have
-been deleted afterward let's create the
-VLANs again coffee tea VLAN 10 we can't
-create VLANs because we are a VIP client
-so that suggests the real problem is
-with VTP let's check do show VTP status
-there's a problem switch 3 is in VTP
-domain ccnp it's supposed to be CCNA
-let's change that VTP domain CCNA do
-show VTP status ok now we're back in the
-correct domain let's check if our VLANs
-are back do show VLAN brief there they
+been deleted afterward 313.999046 let's create the
+VLANs again 316.035588 conf t VLAN 10 319.207796 we can't
+create VLANs because we are a VTP client
+323.436796 so that suggests the real problem is
+with VTP 326.947858 let's check 328.377274 do show VTP status
+331.747878 there's a problem switch 3 is in VTP
+domain ccnp 338.153336 it's supposed to be CCNA
+341.164065 let's change that VTP domain CCNA 345.703294 do
+show VTP status 349.235960 ok now we're back in the
+correct domain 353.706960 let's check if our VLANs
+are back 355.740190 do show VLAN brief 358.639835 there they
 are
-ok so that probably solved the remaining
-problems let's try to ping within the
-same VLANs again I'll ping from pc1 to
-pc2 1000 5
-okay it works this time now let's try in
-VLAN 20 I'll ping from PC 8 to PC 9 ping
-1000 9 okay no problems there now
-and finally VLAN 30 I'll pin from PC 6
-to PC 7 pin 1000 7 ok now it works we
+362.828565 ok so that probably solved the remaining
+problems 365.841190 let's try to ping within the
+same VLANs again 368.165440 I'll ping from pc1 to
+pc5 10.0.0.5
+okay it works this time 381.005460 now let's try in
+VLAN 20 I'll ping from PC 8 to PC 9 386.498855 ping
+10.0.0.9 okay no problems there 395.557042 now
+and finally VLAN 30 I'll ping from PC 6
+to PC 7 pin 10.0.0.7 ok now it works 410.962084 we
 have fixed the errors and achieved
-connectivity in the network that's all
-for this lab thank you for watching I
+connectivity in the network 414.627250 that's all
+for this lab 416.223104 thank you for watching I
 hope this lab and video have been
-helpful for you please subscribe for
+helpful for you 423.266583 please subscribe for
 future labs like this which will be
-released weekly if you have requests for
+released weekly 427.869375 if you have requests for
 any specific labs let me know in the
-comment section if you want to support
+comment section 432.607166 if you want to support
 my channel
 I accept Bitcoin and etherium donations
-via the addresses in the description I
+via the addresses in the description 439.499478 I
 am also a brave verified publisher and
 accept bat or basic attention token
 donations in the brave browser
+447.562228 
+447.562228 
+447.562228 

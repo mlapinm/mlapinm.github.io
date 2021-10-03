@@ -1,167 +1,170 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.132791 you can download the lab
+file from the link in the description 6.634207 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this in this
+description 13.921957 also please subscribe to the
+channel for more labs like this 18.159873 in this
 lab more colorful than usual we will
 configure VLANs and VTP the VLAN
-trunking protocol VTP is used to
+trunking protocol 27.895518 VTP is used to
 propagate VLAN configurations among
-switches so you can configure the
+switches 33.347309 so you can configure the
 required VLANs on a single switch and
 have it share the configurations with
 other switches instead of having to
 configure the same VLANs on every
-individual switch so the first step is
+individual switch 45.101975 so the first step is
 to configure the switch ports connecting
 switches as trunk ports and disable DTP
-that's simple enough let's go on switch
-one enable compte interface g0 one
+54.136475 that's simple enough let's go on switch
+one 57.398120 enable conf t interface g0 1
 switch port mode trunk switch port no
-negotiate exit now on switch to enable
-Conti interface range g0 1 to 2 switch
+negotiate exit 70.036682 now on switch 2 enable
+conf t interface range g0 1 to 2 switch
 port mode trunk switch port no negotiate
-exit finally on switch 3 enable compte
+exit 86.942326 finally on switch 3 enable conf t
 interface g0 1 switch port mode trunk
-switch port no negotiate exit okay
-that's all for step 1 step 2 is to
+switch port no negotiate exit 101.541180 okay
+that's all for step 1 104.279430 step 2 is to
 configure switch 2 as VTP transparent
-first let's review the different VTB
-modes there are 3 VTB modes server
-client and transparent in this lab
+110.121617 first let's review the different VTB
+modes 114.171867 there are 3 VTB modes server
+client and transparent 119.423971 in this lab
 switch 1 will be a server and switch 3
-will be a client switch 2 will be in
-transparent mode VTP servers are able to
+will be a client 126.014992 switch 2 will be in
+transparent mode 129.292575 VTP servers are able to
 create and delete VLANs
 and then share those configurations with
-other switches VTP clients cannot create
+other switches 136.250387 VTP clients cannot create
 or delete VLANs but will rather sink
 their VLAN configuration with a VTP
-server VTP transparent switches will not
+server 143.920408 VTP transparent switches will not
 sink their VLAN configurations to a
-server they will however pass along VTP
-messages from VTP servers so in this lab
-switch 2 will be in transparent mode and
-it's between switch 1 and switch 3 it
+server 150.108554 they will however pass along VTP
+messages from VTP servers 155.530804 so in this lab
+switch 2 will be in transparent mode 160.025074 and
+it's between switch 1 and switch 3 163.152761 it
 won't sink its VLANs to switch 1 but it
 will pass which ones messages to switch
-3 okay let's do the configuration first
-VTP mode transparent configure switch to
-in VTP transparent mode next the VTP
+3 170.028719 okay let's do the configuration 173.431949 first
+VTP mode transparent 176.930428 configure switch 2
+in VTP transparent mode 179.899323 next the VTP
 domain name as you can see here is CCNA
-VTP domain CCNA also we are told to
-configure VTP version 2 VTP version -
-Cisco recommends to avoid using version
-1 if possible next let's create VLAN 40
-on switch to VLAN 40 named accounting
+VTP domain CCNA 188.764239 also we are told to
+configure VTP version 2 VTP version 2
+194.209780 Cisco recommends to avoid using version
+1 if possible 201.977405 next let's create VLAN 40
+on switch 2 206.106155 VLAN 40 named accounting
 exit
-let's check do show VLAN brief there we
+211.518425 let's check do show VLAN brief 216.122175 there we
 go
-VLAN 40 named accounting the next step
+VLAN 40 named accounting 220.245363 the next step
 is to configure our VTP server switch
-one VTP domain CCNA VTP version 2 VT P
-mode server VT P server is actually the
-default VTV mode by the way ok now let's
-create VLANs 10 20 and 30 VLAN 10 name
+1 227.016988 VTP domain CCNA VTP version 2 VTP
+mode server 237.316967 VTP server is actually the
+default VTV mode by the way 241.442800 ok now let's
+create VLANs 10 20 and 30 246.356841 VLAN 10 name
 HR VLAN 20 name sales VLAN 30 name
 engineering exit
-next let's configure switch 3 as a VTP
-client and it should get all of this
-configuration from switch 1 VT P mode
-client do you show VT P status
-notice how the VT P version 2 and VT v
+262.918590 next let's configure switch 3 as a VTP
+client 268.045090 and it should get all of this
+configuration from switch 1 271.098090 VTP mode
+client 276.754402 do you show VTP status
+280.113444 notice how the VTP version 2 and VTP
 domain name of CCNA are already set
-without us having to configure them if a
-VT P switch with the default domain name
-null receives a message from a VT P
-switch in another domain it will
+without us having to configure them 289.475048 if a
+VTP switch with the default domain name
+null receives a message from a VTP
+switch in another domain 297.855235 it will
 automatically join that other switches
-domain same thing for the VT P version
-if a version once which receives a VT P
-message from a VT b version to switch it
-will change to the VT p version 2 if
-it's supported on the switch the next
+domain 300.522339 same thing for the VTP version
+303.460214 if a version once which receives a VTP
+message from a VTP version 2 switch 308.811256 it
+will change to the VTP version 2 if
+it's supported on the switch 313.234839 the next
 step is to assign all switch ports
 connected to hosts to their proper VLANs
-and disable VT P this is pretty
+and disable VTP 321.521922 this is pretty
 repetitive work but let's get into it
-right here on switch 3 first interface
+326.025255 right here on switch 3 first 329.246567 interface
 f01 switch port mode access switch port
 access VLAN 10 switch port no negotiate
-interface range F 0 2 to 3 switch port
+343.010400 interface range F 0 2 to 3 switch port
 mode access switch port access VLAN 30
 switch port no negotiate interface F 0 4
 switch port mode access switch port
 access VLAN 20 switch port no negotiate
-okay next is switch to interface range F
-0 1 2 to switch port mode access switch
+371.078649 okay next is switch 2 interface range F
+0 1 to 2 switch port mode access switch
 port access VLAN 40 switch port no
-negotiate finally switch 1
-interface range f 0 1 2 2 switch port
+negotiate 391.129648 finally switch 1
+interface range f 0 1 to 2 switch port
 mode access switch port access VLAN 10
-switch port no negotiate last one
+switch port no negotiate 410.243001 last one
 interface F 0 3 switch port mode access
 switch port access VLAN 20 switch port
-no negotiate okay all done
-finally we are to configure the Chuck
+no negotiate 422.932834 okay all done
+426.292084 finally we are to configure the Chuck
 ports to allow only VLANs 1 10 and 20
-let's do it here on switch 1 first
+432.592021 let's do it here on switch 1 first
 interface g0 1 switch port trunk allowed
-VLAN now let's check our options
-this word option allows us to specify a
-list of allowed VLANs for example 1 2 3
-4 do show interfaces trunk see VLANs 1 2
+VLAN 441.948396 now let's check our options
+443.661354 this word option allows us to specify a
+list of allowed VLANs 448.322020 for example 1 2 3
+4 do show interfaces trunk 456.096707 see VLANs 1 2
 4 are allowed if I enter the same thing
 again with different numbers that list
-will be replaced switch port trunk
-allowed VLAN 5 6 7 8 do show interfaces
-trunk c-124 has been replaced by 5 - 8
-the next option add adds to the current
+will be replaced 465.691956 switch port trunk
+allowed VLAN 5 6 7 8 471.898539 do show interfaces
+trunk 474.326351 c-1 to 4 has been replaced by 5 - 8
+478.805454 the next option add adds to the current
 list
-let's try switch port trunk allowed VLAN
-add 9 do show interfaces trunk now it's
-5 to 9 remove does the opposite removing
-from the current list for example switch
-port trunk allowed VLAN remove 9 do show
-interfaces trunk now it's five to eighty
-game all allows all VLANs of course
-let's try switch port trunk allowed VLAN
-all do show interfaces trunk now it's
-one two one thousand five we can also do
-the opposite with none switch port trunk
+let's try 483.804349 switch port trunk allowed VLAN
+add 9 488.645765 do show interfaces trunk 490.764203 now it's
+5 to 9 493.221911 remove does the opposite removing
+from the current list 497.332494 for example switch
+port trunk allowed VLAN remove 9 502.931307 do show
+interfaces trunk 505.450244 now it's five to eight
+again 507.975828 all allows all VLANs of course
+511.481119 let's try switch port trunk allowed VLAN
+all 515.989327 do show interfaces trunk 518.554327 now it's
+1-1005 521.626577 we can also do
+the opposite with none 524.960931 switch port trunk
 allowed VLANs
 not
-do show interfaces trunk now nothing
-appears finally there is the accept
-option we can allow all VLANs except
-certain ones switch port trunk allowed
-VLAN except to do show interfaces trunk
-now it's 1 & 3 to 1005 ok now let's get
-back to the task at hand switch port
-trunk allowed VLAN 1 10 20 do show
-interfaces trunk there we go let's do
+529.030431 do show interfaces trunk 531.286264 now nothing
+appears 532.821181 finally there is the accept
+option 536.120535 we can allow all VLANs except
+certain ones 539.302910 switch port trunk allowed
+VLAN except 2 544.525243 do show interfaces trunk
+546.777972 now it's 1 & 3 to 1005 550.850805 ok now let's get
+back to the task at hand 554.360138 switch port
+trunk allowed VLAN 1 10 20 559.771554 do show
+interfaces trunk 562.130992 there we go 564.584013 let's do
 the same thing on the other switches and
-then we're done so next is switch to
-interface range G 0 1 2 2 switch port
-trunk allowed VLAN 1 10 20 finally
-switch 3 interface G 0 1 switch port
-trunk allowed VLAN 1 10 20 in this lab
+then we're done 567.872179 so next is switch 2
+570.548616 interface range G 0 1 to 2 switch port
+trunk allowed VLAN 1 10 20 581.460553 finally
+switch 3 585.125282 interface G 0 1 switch port
+trunk allowed VLAN 1 10 20 592.241490 in this lab
 we configured VTP and we also looked at
 how to add and remove allowed VLANs on
-trunks that's all for this lab thank you
+trunks 600.545803 that's all for this lab 602.367844 thank you
 for watching I hope this lab and video
-have been helpful for you please
+have been helpful for you 608.041053 please
 subscribe for future labs like this
-which will be released weekly if you
+which will be released weekly 612.865282 if you
 have requests for any specific labs let
-me know in the comment section if you
+me know in the comment section 617.611136 if you
 want to support my channel I accept
 Bitcoin and aetherium donations via the
-addresses in the description I am also a
+addresses in the description 624.543261 I am also a
 brave verified publisher and accept bat
 or basic attention token donations in
 the brave browser
+632.989302 
+632.989302 
+632.989302 

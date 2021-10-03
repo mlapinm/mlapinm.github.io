@@ -1,157 +1,156 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.624875 you can download the lab
+file from the link in the description 14.862166 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
+description 14.792560 also please subscribe to the
 channel for more labs like this
-we're coming to the end of the icnd1
-labs in this lab we will configure a
+18.992518 we're coming to the end of the icnd1
+labs 23.668768 in this lab we will configure a
 variety of things which we learned
-before and then in the next lab will
+before 28.081684 and then in the next lab will
 troubleshoot some problems with the same
-network topology we will configure rip
-syslog NAT DHCP and SSH let's get
-started the first step is to configure
-rip on r1 r2 and r3 let's start on r1
-enable compte router rip
-we're instructed to use rip version 2
+network topology 32.697393 we will configure rip
+syslog NAT DHCP and SSH 40.762788 let's get
+started 42.300475 the first step is to configure
+rip on r1 r2 and r3 48.281371 let's start on r1
+50.108975 enable conf t router rip
+56.508537 we're instructed to use rip version 2
 and disable auto summary so version 2 no
-auto now lets advertise our ones
-connected networks network 192.168.1.0
-network 12.30 exit okay let's go to our
-to enable coffee/tea router rip version
-2 no Auto network 192.168.20.10 exit
-finally let's go on r3 enable coffee/tea
+auto 64.049350 now lets advertise r1s
+connected networks 67.145912 network 192.168.1.0
+network 1.2.3.0 exit 75.978599 okay let's go to r2 78.621599 enable conf t router rip version
+2 no Auto network 192.168.2.0 network 192.168.3.0 exit
+94.788138 finally let's go on r3 97.780533 enable conf t
 router rip version 2 no Auto network
-3000 Network 12.30
-exit ok that's all for the rip
-configuration it may take some time for
+3.0.0.0 Network 1.2.3.0
+exit 114.144740 ok that's all for the rip
+configuration 117.241739 it may take some time for
 all routes to show up in the database
 but you can confirm with do show IP rip
-database step 2 is to configure r1 r2
+database 125.001843 step 2 is to configure r1 r2
 and r3 to send syslog messages to server
 1
-all we need is one command on each
-router to do this since I'm already on
+134.075384 all we need is one command on each
+router to do this 138.021968 since I'm already on
 r3 let's start here
-logging 3000 dot 100 that's it logging
-host 3000 100 would also have the same
-effect next are two logging 3000 100
-okay and finally r1 logging 3000 100
-that's all for step two the next step is
+141.298509 logging 3.0.0.100 that's it logging
+host 3.0.0.100 would also have the same
+effect 152.239968 next r2 logging 3.0.0.100
+161.249801 okay and finally r1 logging 3.0.0.100
+167.679592 that's all for step two 170.337029 the next step is
 to configure Pat port address
-translation on r1 and r2 the network's
-192.168.1.0 slash 24 and 192.168.0 slash
-24 are private networks and they cannot
+translation on r1 and r2 177.844924 the network's
+192.168.1.0 / 24 and 192.168.2.0 /
+24 are private networks 187.429569 and they cannot
 be routed over the Internet
-like in our previous NAT labs i've
+189.884985 like in our previous NAT labs i've
 pre-configured ACLs on r1 r2 and r3 to
 prevent them from being routed
-so let's translate their addresses to
+197.143173 so let's translate their addresses to
 the address on r1 and r2 s gigabit 0 1
-interfaces let's start here on r1 first
+interfaces 205.433256 let's start here on r1 208.030798 first
 I'll configure the inside and outside
-NAT interfaces interface G 0 0 IP NAT
+NAT interfaces 212.999839 interface G 0 0 IP NAT
 inside interface G 0 1 IP NAT outside
-next let's create the ACL to identify
-which traffic to translate I'll make an
-ACL permitting the one and two dot one
-six eight dot one dot o slash 24 network
-exit access list one permit 192.168.1.0
-oh-o-oh dot 255 ok finally let's make
-the NAT statement itself IP net inside
-source list one interface g0 one
-overload that's it now let's do the same
-thing on r2 interface G 0 0 IP net
+223.072651 next let's create the ACL to identify
+which traffic to translate 228.388005 I'll make an
+ACL permitting the 192.168.1.0 / 24 network
+exit 237.311442 access list 1 permit 192.168.1.0
+0.0.0.255 ok finally 248.359129 let's make
+the NAT statement itself 250.679920 IP net inside
+source list 1 interface g0 1
+overload 257.442732 that's it now let's do the same
+thing on r2 263.848148 interface G 0 0 IP net
 inside interface G 0 1 IP net outside
-exit access list 1 permit 192.168 200
-250 5 IP NAT inside source list one
-interface G 0 1 overload that's all for
-our pad configuration however our pcs
-still don't have IP addresses so next is
-connects tis to configure our one as a
-DHCP server with two dhcp pools since
+exit access list 1 permit 192.168.2.0
+0.0.0.255 IP NAT inside source list 1
+interface G 0 1 overload 289.343085 that's all for
+our pad configuration 291.880751 however our pcs
+still don't have IP addresses 297.161792 so next is
+ to configure r1 as a
+DHCP server with two dhcp pools 304.153915 since
 we're in global configuration mode i'll
 configure the excluded address ranges
-first remember excluded ranges aren't
+first 310.141331 remember excluded ranges aren't
 configured in DHCP configuration mode
 but rather in global configuration mode
-IP dhcp excluded address 192.168.1.1
-192.168.1 10 and for the second pool
-IP dhcp excluded address 192.168.1.1 6 8
-to 10 ok now let's create and configure
-the first pool IP dhcp pool one pool
+317.531476 IP dhcp excluded address 192.168.1.1
+192.168.1.10 328.577371 and for the second pool
+IP dhcp excluded address 192.168.2.1 192.168.2.10 339.702911 ok now let's create and configure
+the first pool 344.139931 IP dhcp pool one pool
 network 192.168.1.0 255.255.255.0
 default router
 192.168.1.1 dns server
-3000 dot 100 exit ok and now let's
-create the second pool IP dhcp pool to
-pool network 192.168.20.10 default
-router 192.168.1 dns server
-3000 100 exit let's check if pc one can
+3.0.0.0.100 exit 366.570909 ok and now let's
+create the second pool 369.671075 IP dhcp pool 2
+pool network 192.168.2.0 255.255.255.0 default
+router 192.168.2.1 dns server
+3.0.0.100 exit 390.971177 let's check if pc one can
 get an IP address
-IP config slash release IP config slash
-renew there we go now how about PC for
-IP config slash release IP config slash
-renew it doesn't work now that's because
-r1 isn't connected to the 192.168.0
-slash 24 network so their DHCP discovery
-messages don't reach our one
-so let's configure r2 as a DHCP relay
-agent so it will relay DHCP messages
-between them interface g00 IP helper
-address followed by our ones address one
-two three one exit now let's try again
-on PC for IP config slash renew there we
+395.179406 IP config / release IP config /
+renew there we go 406.779676 now how about PC 4
+IP config / release IP config /
+renew 418.289113 it doesn't work now that's because
+r1 isn't connected to the 192.168.2.0
+/ 24 network 430.838404 so their DHCP discovery
+messages don't reach r1
+434.687424 so let's configure r2 as a DHCP relay
+agent 439.309966 so it will relay DHCP messages
+between them 442.662382 interface g00 IP helper
+address followed by r1s address 1.2.3.1 exit 455.368611 now let's try again
+on PC 4 458.237319 IP config / renew 463.281464 there we
 go
-DHCP is now working next we must
+DHCP is now working 468.277255 next we must
 configure SSH access on the vty lines of
-router one really you should do this on
+router 1 475.583609 really you should do this on
 all of these routers and switches but
-let's keep it to just r1 for this lab so
+let's keep it to just r1 for this lab 481.707504 so
 there are a few requirements to
-configure SSH one is a hostname which is
-already pre-configured r1 but if it
+configure SSH 486.622399 one is a hostname which is
+already pre-configured r1 490.469274 but if it
 wasn't you could configure it with this
-command hostname r1 next is a domain
-name let's go with cisco comm IP domain
-name cisco calm also we need a user
-account on this device username cisco
-password CCNA next you must generate an
-RSA key with 1024 bit modulus crypto key
+command 494.536607 hostname r1 next is a domain
+name 500.406232 let's go with cisco comm IP domain
+name cisco com 506.559585 also we need a user
+account on this device 510.351522 username cisco
+password CCNA 515.467730 next you must generate an
+RSA key with 1024 bit modulus 521.183959 crypto key
 generate RSA then enter the modulus size
 here of 1024
-okay now let's configure the vty lines
-line vty 0 15 first let's enable local
-authentication login local next let's
-enable ssh transport input ssh exit also
-I forgot to configure ssh version 2 so
+529.479813 okay now let's configure the vty lines
+533.710730 line vty 0 15 538.173667 first let's enable local
+authentication 541.105729 login local 543.204417 next let's
+enable ssh transport input ssh exit 550.911542 also
+I forgot to configure ssh version 2 555.721500 so
 let's do that here from global
-configuration mode IP ssh version 2
-that's it now let's try to ssh to r1
-from pc1 ssh - l cisco which is the
-username 192.168.1.1 now enter the
+configuration mode 558.386562 IP ssh version 2
+561.927708 that's it 563.927916 now let's try to ssh to r1
+from pc1 567.928749 ssh - l cisco which is the
+username 192.168.1.1 579.711790 now enter the
 password for our account cisco which is
-CCNA there we go we're in exit so in
+CCNA 584.833206 there we go we're in exit 589.005997 so in
 this lab we did some configurations of
 various technologies we learned
-throughout these labs now I will take
+throughout these labs 595.880331 now I will take
 this completed lab break some of the
-configurations and will troubleshoot it
+configurations 601.246393 and will troubleshoot it
 in the next and final lab of the icnd1
-series that's all for this lab thank you
+series 606.213372 that's all for this lab 607.799851 thank you
 for watching I hope this lab and video
-have been helpful for you please
+have been helpful for you 614.789392 please
 subscribe for future labs like this
-which will be released weekly if you
+which will be released weekly 619.277392 if you
 have requests for any specific labs let
-me know in the comment section if you
+me know in the comment section 624.455059 if you
 want to support my channel I accept a
 Bitcoin and aetherium donations via the
-addresses in the description I am also a
+addresses in the description 631.642121 I am also a
 brave verified publisher and accept bat
 or basic attention token donations in
 the brave browser
+640.168246 
+640.168246 
+640.168246 

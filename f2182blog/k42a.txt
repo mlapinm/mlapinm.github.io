@@ -1,141 +1,140 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.572374 you can download the lab
+file from the link in the description 7.847915 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this in this
+description 14.667769 also please subscribe to the
+channel for more labs like this 19.117269 in this
 lab we will practice some basic ipv6
-configurations including ipv6 address
+configurations 25.307415 including ipv6 address
 configuration slack or stateless address
-auto-configuration and ipv6 static
-revving let's get right into it
-the first step is to enable ipv6 on the
+auto-configuration 31.783769 and ipv6 static
+routing 34.538727 let's get right into it
+36.291518 the first step is to enable ipv6 on the
 routers and configure some ipv6
-addresses I'll go on r1 first enable
-compte ipv6 is not enabled by default to
-enable it use this command ipv6 unicast
-routing now let's configure the
+addresses 42.703038 I'll go on r1 first 44.995288 enable
+conf t ipv6 is not enabled by default 52.514121 to
+enable it use this command 55.449579 ipv6 unicast
+routing 58.471704 now let's configure the
 addresses according to the network
-diagram interface g00 ipv6 address 2001
-DB 8 1 2 3 1 2 3 double colon 1/64 also
-let's enable the interface no chef
-interface G 0 1 IP v6 address 2001 DB 8
-1 1 double colon 1/64 no chef makes it
-okay let's check do show ipv6 interface
-brief there are the addresses we
+diagram 62.443516 interface g00 ipv6 address 2001
+DB 8 1 2 3 1 2 3 : 1/64 76.755557 also
+let's enable the interface 79.441145 no chef
+80.852082 interface G 0 1 IP v6 address 2001 DB 8
+1 1 : 1/64 no chef 92.346769 makes it
+93.766748 okay let's check 95.306873 do show ipv6 interface
+brief 98.617123 there are the addresses we
 configured but what are these other
-addresses there link local addresses and
+addresses 103.534268 there link local addresses and
 they are automatically generated on ipv6
-interfaces these addresses are never
+interfaces 109.979768 these addresses are never
 routed they only work on the local link
-link local addresses are in the fe80
-slash 10 range ok that's it for our one
-next let's go on our to enable compte on
-our 2 we will only configure the g0 one
-in
-face for now as in the next step we will
+114.817309 link local addresses are in the fe80
+slash 10 range 120.369101 ok that's it for r one
+123.182017 next let's go on r2  125.258225 enable conf t on
+r 2 we will only configure the g0 one
+interface for now 134.544015 as in the next step we will
 use slack to configure the address for
-the g00 interface interface G 0 1 IP p6
-address 2001 DB 8 2 2 double colon 1/64
-no shutdown ok let's go on r3 and do the
-same in abel compte interface g 0 1 IP
-v6 address 2001 DB 8 3 3 double colon
-1/64 no shutdown ok now in step 2 we
+the g00 interface 139.436992 interface G 0 1 IP p6
+address 2001 DB 8 2 2 : 1/64
+no shutdown 152.297055 ok let's go on r3 and do the
+same 156.776555 enable conf t interface g 0 1 IP
+v6 address 2001 DB 8 3 3 :
+1/64 no shutdown 174.583158 ok now in step 2 we
 will use slack stateless address
 auto-configuration to automatically
 generate ipv6 addresses for r2 and r3 SG
-0 0 interfaces how does slack work to
+0 0 interfaces 187.729845 how does slack work 190.632115 to
 put it briefly ipv6 uses NDP or neighbor
-discovery protocol and as part of NDP r1
+discovery protocol 196.258281 and as part of NDP r1
 is currently sending RA or router
 advertisement messages on its G 0 0
-interface when we configure slack r2 and
+interface 204.471864 when we configure slack r2 and
 r3 will receive these messages and use
-them to learn the network prefix which
+them to learn the network prefix 213.368906 which
 is 2001 DB 8 1 2 3 1 2 3 / 64 in this
-case they will take that prefix and use
+case 218.940926 they will take that prefix and use
 a modified version of their own MAC
 address to generate the rest of the IP
-address hopefully you've learned this in
+address 225.686156 hopefully you've learned this in
 your studies if you're not familiar with
 it now make sure you are for the test
-anyway the configuration is simple we
+230.928364 anyway the configuration is simple 234.081468 we
 are on our 3 already so let's do it here
-first interface G 0 0 no shutdown
-ipv6 address Auto config exit next I'll
-go on r2 interface G 0 0 no shutdown
-ipv6 address Auto config exit these
+first 237.643509 interface G 0 0 no shutdown
+ipv6 address Auto config exit 247.026738 next I'll
+go on r2 249.510904 interface G 0 0 no shutdown
+ipv6 address Auto config exit 259.020967 these
 routers won't generate their addresses
 immediately so I'll pause the video as
 we wait for the router advertisements
 from R 1 to reach them
-okay I'm on r2 and as you can see from
+266.668779 okay I'm on r2 and as you can see from
 the output of the show ipv6 interface
-brief command r2 has generated an ipv6
-address for its g0z interface and on r3
-you can see the same next let's
-configure some ipv6 static Reds on each
+brief command 276.483237 r2 has generated an ipv6
+address for its g00 interface 281.357278 and on r3
+you can see the same 286.675632 next let's
+configure some ipv6 static routes 293.076986 on each
 router will have to configure two static
-routes one for each of the other routers
-internal networks now to configure an
-next hop address of r2 and r3 we will
+routes 296.835277 one for each of the other routers
+internal networks 300.221777 now to configure an
+next hop address of r2 and r3 307.227236 we will
 have to use their slack addresses which
-are not easy to remember so to do so
+are not easy to remember 310.955652 so to do so
 I'll be copy and pasting their addresses
-first let me copy our twos g00 address
-okay now I'll create the first route on
-r1 to our two's internal network ipv6
-route 2001 DB 8 2 2 double colon slash
-64 now let me paste in our two's address
-there we go now since I already have our
-two SG 0 0 address copied I'm going to
-configure the same route on our three
-ipv6 route 2001 DB 8 2 2 double colon
-slash 64 and paste our two's address in
-there we go
-now I'll copy our fries jeez user
-interface address and make a route to
-its internal network on r1 and r2 there
+315.208318 first let me copy r2s g00 address
+319.237776 okay now I'll create the first route on
+r1 to r2's internal network 329.829609 ipv6
+route 2001 DB 8 2 2 : /
+64 341.740546 now let me paste in r2's address
+344.930316 there we go 346.994900 now since I already have r2 SG 0 0 address copied I'm going to
+configure the same route on r3
+354.553649 ipv6 route 2001 DB 8 2 2 :
+/ 64 365.399190 and paste r2's address in
+368.363689 there we go
+370.849022 now I'll copy r3s G00 
+interface address 374.707854 and make a route to
+its internal network on r1 and r2 378.723041 there
 we go
-now I'll go on our one IP v6 route 2001
-DV 8 3 3 double colon slash 64 and paste
+380.716957 now I'll go on r1 383.196540 IP v6 route 2001
+DB 8 3 3 : / 64 and paste
 in the address
-there we go next on our to high six
-route 2001 DB 8 3 3 double colon slash
+395.948185 there we go next on r2 400.305664 ipv6
+route 2001 DB 8 3 3 : /
 64 and once again paste in the address
-okay
-now let's configure routes to our ones
-internal network on r2 and r3 since i'm
+412.189163 okay
+
+now let's configure routes to r1s
+internal network on r2 and r3 419.895767 since i'm
 on r2 already let's start here
-ipv6 route 2001 DB 8 1 1 double colon
-slash 64 2001 DB 8 1 2 3 1 2 3 double
-colon 1 ok now on our three ipv6 route
-2001 deviate 1 1 double colon slash 64
-2001 DB 8 1 2 3 1 2 3 double colon 1 ok
-all of our routes are now configured for
+422.964892 ipv6 route 2001 DB 8 1 1 :
+/ 64 2001 DB 8 1 2 3 1 2 3 : 1 437.179725 ok now on r3 440.702995 ipv6 route
+2001 DB 8 1 1 : / 64
+2001 DB 8 1 2 3 1 2 3 : 1 458.661744 ok
+all of our routes are now configured 462.344639 for
 this video I won't ping from each router
 but let's just try out some things from
-r3 to test first I'll ping PC ones
-address exit ping 2001 DB 8 1 1 double
-colon 64 ok the ping works and now I'll
-ping PC to ping 2001 DB 8 2 2 double
-colon 64 again the ping works in this
+r3 to test 468.169826 first I'll ping PC ones
+address exit ping 2001 DB 8 1 1 : 64 480.043367 ok the ping works 483.682158 and now I'll
+ping PC 2 ping 2001 DB 8 2 2 : 64 again the ping works 496.386095 in this
 lab we configured manual ipv6 addresses
-slack addressing and ipv6 static ribs
-that's all for this lab thank you for
+slack addressing and ipv6 static routes
+504.447448 that's all for this lab 505.953698 thank you for
 watching I hope this lab and video have
-been helpful for you please subscribe
+been helpful for you 512.599906 please subscribe
 for future labs like this which will be
-released weekly if you have requests for
+released weekly 516.740572 if you have requests for
 any specific labs let me know in the
-comments section if you want to support
+comments section 521.108135 if you want to support
 my channel I accept a Bitcoin and
 aetherium donations via the addresses in
-the description I am also a brave
+the description 528.074135 I am also a brave
 verified
 publisher and accept bat or basic
 attention token donations in the brave
 browser
+536.151864 
+536.151864 
+536.151864 

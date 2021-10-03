@@ -1,221 +1,224 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.609875 you can download the lab
+file from the link in the description 7.665083 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this in this
+description 14.851166 also please subscribe to the
+channel for more labs like this 19.432249 in this
 lab we will take a look at STP spanning
-tree protocol and do some basic
-configurations spanning tree is
+tree protocol 24.909351 and do some basic
+configurations 27.085037 spanning tree is
 necessary to prevent layer 2 loops which
 would otherwise render your network
-useless in this topology for example
+useless 34.082099 in this topology for example
 without spanning tree a layer 2
 broadcast would loop around the 3
 switches endlessly
-and with enough of that in your network
+42.018786 and with enough of that in your network
 your networker is not going to be
-operating well just to clarify that if
+operating well 46.070623 just to clarify that if
 switch 1 sends a broadcast it goes to
-switch 2 and switch 3 then both of them
+switch 2 and switch 3 53.314998 then both of them
 flood the broadcast out every port
-except the one they received it on then
+except the one they received it on 58.719852 then
 the process repeats and it will go from
 switch 1 2 switch 2 to switch 3 to
 switch 1 2 switch 2 to switch 3 and also
 the same thing in the other direction
-that's why spanning tree is essential in
-a case like this anyway let's get
-started the first step just asks us some
-questions about STP the first is which
+69.196435 that's why spanning tree is essential in
+a case like this 72.730685 anyway let's get
+started 75.111060 the first step just asks us some
+questions about STP 80.519789 the first is which
 version is currently running on the
-switches there are multiple versions for
+switches 84.626955 there are multiple versions for
 example common spanning tree the old
 original version also per VLAN spanning
 tree rapid spanning tree rapid per VLAN
 spanning tree so which is running on
-these switches by default these are all
+these switches by default 99.474914 these are all
 the same models so let's just check on
-switch one enable show spanning tree
-summary right here the first line switch
-is in P vs T mode so there's our answer
-p vs t is per VLAN spanning tree that
+switch one 103.116268 enable show spanning tree
+summary 109.081435 right here the first line 111.925060 switch
+is in P vs T mode 114.181226 so there's our answer
+116.568663 p vs t is per VLAN spanning tree 119.491496 that
 means each VLAN has its own spanning
 tree instance running which we can
-configure individually you can see that
-down here there is VLAN 1 the default di
+configure individually 125.721329 you can see that
+down here 129.230454 there is VLAN 1 the default di
 on which all generally ignore
-for this lab and then our three VLANs 10
+for this lab 134.098537 and then our three VLANs 10
 20 and 30
-the next question is what is the bridge
-ID for each switch first what exactly is
-a bridge ID it is a value used to
+137.642766 the next question is what is the bridge
+ID for each switch 143.802016 first what exactly is
+a bridge ID 147.759536 it is a value used to
 determine the root bridge in spanning
-tree it consists of two parts the bridge
+tree 152.048598 it consists of two parts 154.582577 the bridge
 priority which is 3 2 7 6 8 by default
-plus the MAC address which is used as a
+plus the MAC address 161.035785 which is used as a
 tie breaker if the bridge priorities are
-the same the switch with the lowest
-bridge ID becomes the root bridge so
-let's checks which ones bridge ID show
+the same 164.580910 the switch with the lowest
+bridge ID becomes the root bridge 169.069847 so
+let's checks which ones bridge ID 172.327242 show
 spanning tree
-so for VLAN 1 the priority is 3 2 7 6 9
+174.625617 so for VLAN 1 the priority is 3 2 7 6 9
 which is the default priority of 3 2 7 6
-8 plus the VLAN number one then the MAC
+8 plus the VLAN number one 185.877471 then the MAC
 address is here
-beginning with zero zero six zero note
+beginning with zero zero six zero 190.993366 note
 that the information up here is for the
-root bridge and down here is for this
-switch itself the information is
+root bridge 195.604346 and down here is for this
+switch itself 198.759241 the information is
 different so clearly switch 1 is not the
-root bridge switch ones bridge ID will
+root  bridge 203.577846 switch ones bridge ID will
 be essentially the same for each VLAN
 but the priority will differ because the
 VLAN ID is added to the default priority
-C 3 2 7 7 8 3 2 7 8 8 & 3 2 7 9 8 okay
+212.353095 C 3 2 7 7 8 3 2 7 8 8 & 3 2 7 9 8 223.493074 okay
 now let's check the bridge ID on switch
-to enable show spanning tree again the
+2 226.530782 enable show spanning tree 233.173615 again the
 priorities will be the same as on switch
-1 3 2 7 6 9 4 VLAN 1 3 2 7 7 8 4 VLAN 10
-etc and here is the MAC address
-beginning with 0 0 0 1 note that the
+1 236.343865 3 2 7 6 9 4 VLAN 1 3 2 7 7 8 4 VLAN 10
+etc 242.235072 and here is the MAC address
+beginning with 0 0 0 1 247.450738 note that the
 info down here is the same as the info
-in the route ID section and the route ID
+in the route ID section 253.295447 and the route ID
 section itself says this bridge is the
-root so that answers the next question -
+root 257.164613 so that answers the next question -
 as to what is the root bridge for each
-VLAN because we haven't done any
-configurations yet the priorities are
+VLAN 262.502070 because we haven't done any
+configurations yet 265.490527 the priorities are
 all the same
-so the switch with the lowest MAC
+267.336381 so the switch with the lowest MAC
 address will become the root for all
-VLANs switch to in this case let's
+VLANs 271.608360 switch 2 in this case 273.100922 let's
 quickly take a look at switch threes
-bridge ID also enable show spanning tree
-again the priorities are the same and
-the MAC address begins with 0 0 0 4 so
+bridge ID also 277.513942 enable show spanning tree
+283.550067 again the priorities are the same and
+the MAC address begins with 0 0 0 4 290.180629 so
 indeed switch 2 has the lowest Mac
-switch ones Mac began with 0 0 6 0 the
-highest then switch 3 with 0 0 0 4 and
-then switch to at 0 0 0 1 the lowest
-okay the next question is what is the
+292.974441 switch ones Mac began with 0 0 6 0 the
+highest 297.726920 then switch 3 with 0 0 0 4 and
+then switch 2 at 0 0 0 1 the lowest
+303.797045 okay the next question is what is the
 STP cost of each interface
-well the interface is connecting the
+310.358170 well the interface is connecting the
 switches are Gigabit Ethernet interfaces
-they have a default STP cost of 4 on the
+315.874545 they have a default STP cost of 4 319.061920 on the
 other hand the interface is connected to
 the PCs which are still actively sending
 spanning TB PDUs or bridge protocol data
 units even though a switch isn't
-connected to them our Fast Ethernet
-interfaces which have a default cost of
-19 look at the show spanning tree
-command here you can see Gigabit
+connected to them 330.167503 our Fast Ethernet
+interfaces 332.427357 which have a default cost of
+19 334.998711 look at the show spanning tree
+command here 339.152336 you can see Gigabit
 Ethernet interfaces with the cost of 4
 and Fast Ethernet interfaces with a cost
-of 19 the next question is which
-interface is blocked and why well you
+of 19 347.568273 the next question is which
+interface is blocked and why 354.164168 well you
 can see on packet tracer which is
-blocked due to the port lights let's
+blocked due to the port lights 358.438814 let's
 just check with the show command on
-switch 1 let's look at the output of
-show spanning tree again you can see
+switch 1 362.106647 let's look at the output of
+show spanning tree again 367.043793 you can see
 that gig 0 1 interface is blocking as
-BLK indicates here why is that well
-switch to is the root bridge so all of
-its ports are designated ports switch
+BLK indicates here 373.360772 why is that 375.623147 well
+switch 2 is the root bridge so all of
+its ports are designated ports 381.194251 switch
 ones gig 0 2 interface and switch 3s gig
 0 one interface have the lowest cost to
-the root for them so they are route
-ports and it will forward traffic now we
+the root for them 390.176021 so they are route
+ports and it will forward traffic 392.967125 now we
 have to block one part between switch 1
-and switch 3 to prevent loops so switch
+and switch 3 to prevent loops 398.546250 so switch
 1 and switch 3
 compare their bridge IDs and because
 switch ones is the highest it blocks the
-gig zero one port okay
+gig zero one port 406.810646 okay
 finally let's get to some configurations
-step two says to change the spanning
+411.964708 step two says to change the spanning
 tree mota RP VST rapid per VLAN spanning
-tree if your switches support rapid P
+tree 418.559979 if your switches support rapid P
 VST you really should use it because it
 allows the network to converge much
-faster when there are changes all it
-takes is one command on each switch ON
-switch one first comp T spanning tree
-mode rapid P vs T that's it now switch
-to coffee t spanning tree mode rapid P
-vs T and finally switch three golf t
-spanning tree mode rapid P vs T okay
-that's it now it's time to manipulate
-the spanning trees a little bit we're
+faster when there are changes 426.814416 all it
+takes is one command on each switch 430.173916 ON
+switch one first 432.288521 conf T spanning tree
+mode rapid P vs T 438.218416 that's it 439.976561 now switch
+2 441.946248 conf t spanning tree mode rapid P
+vs T 448.363310 and finally switch three 450.600268 conf t
+spanning tree mode rapid P vs T 456.923268 okay
+that's it 458.742851 now it's time to manipulate
+the spanning trees a little bit 463.452663 we're
 going to change the root bridge for each
-VLAN and also configure a secondary
+VLAN 466.277454 and also configure a secondary
 route to specify which switch we want to
-be the route if the route fails let's go
-and configure our primary routes on
-switch one spanning tree VLAN 10 root
-primary okay then switch to spanning
-tree VLAN 20 root primary and then
-switch three spanning tree VLAN 30 root
-primary okay now let's set the secondary
-VLANs switch three here should be the
+be the route if the route fails 472.218329 let's go
+and configure our primary routes 475.877266 on
+switch 1 spanning tree VLAN 10 root
+primary 484.786578 okay then switch 2 487.024912 spanning
+tree VLAN 20 root primary 492.649703 and then
+switch three 496.846453 spanning tree VLAN 30 root
+primary 500.537890 okay now let's set the secondary
+VLANs 504.385911 switch three here should be the
 secondary route for VLAN 20 so spanning
-tree VLAN 20 route secondary then switch
-one spanning tree VLAN 30 route
-secondary and finally switched to
-spanning tree VLAN 10 route secondary ok
+tree VLAN 20 route secondary 513.550994 then switch
+1 516.307931 spanning tree VLAN 30 route
+secondary and finally switched 2
+524.898306 spanning tree VLAN 10 route secondary 529.157243 ok
 now both of these commands adjust the
 span to be priority of the switch down
-let's check what the priorities are here
-on switch to do show spanning-tree look
+534.704951 let's check what the priorities are here
+on switch 2 537.895451 do show spanning-tree look
 at VLAN 10 for which switch 2 is the
-secondary route it brings the priority
+secondary route 547.072513 it brings the priority
 down to two eight six seven two plus ten
-for the VLAN ID now look at VLAN 24 rich
-it is the route 2 4 5 7 6 plus 24 the
-VLAN ID ok finally we are going to
+for the VLAN ID 553.146013 now look at VLAN 24 rich
+it is the route 558.303867 2 4 5 7 6 plus 24 the
+VLAN ID 564.612512 ok finally we are going to
 enable port fast and bpdu guard on the
-appropriate interfaces these should be
+appropriate interfaces 571.994408 these should be
 enabled on interfaces not connected to
-another switch bpdu guide will put an
+another switch 576.697616 bpdu guide will put an
 interface in the air disabled mode if a
-bpdu is received on the port and port
+bpdu is received on the port 583.545262 and port
 fast allows interfaces to start
 forwarding without having to wait for
 the spanning tree to converge
-now you can enable port fest here from
+588.951928 now you can enable port fest here from
 global configuration mode with spending
-to the port fast default which will
+to the port fast default 596.210428 which will
 enable it on all access ports
-you can also configure it at the
-interface level let's do that interface
-range F 0 1 2 3 spanning-tree portfast
-spanning tree bpdu guard enable ok let's
-do it on switch 1 next interface range F
-0 1 2 3 spanning-tree portfast spending
-to the bpdu guard enable finally switch
-3 interface range F 0 1 2 3
+598.846886 you can also configure it at the
+interface level 602.378657 let's do that 603.595428 interface
+range F 0 1 to 3 608.758719 spanning-tree portfast
+spanning tree bpdu guard enable 615.394552 ok let's
+do it on switch 1 next 619.068593 interface range F
+0 1 to 3 spanning-tree portfast spending
+to the bpdu guard enable 630.111009 finally switch
+3 633.546301 interface range F 0 1 to 3
 spanning-tree portfast spanning tree
-bpdu guard enable okay so this slab was
-a little longer than usual but there's a
+bpdu guard enable 645.516780 okay so this slab was
+a little longer than usual 650.357217 but there's a
 lot to say about spanning tree and it's
-a big exam topic make sure you're
+a big exam topic 653.562446 make sure you're
 familiar with everything on the exam
 topics list before you write the exam
-that's all for this lab
-thank you for watching I hope this lab
+658.076424 that's all for this lab
+660.508444 thank you for watching I hope this lab
 and video have been helpful for you
-please subscribe for future labs like
-this which will be released weekly if
+668.034402 please subscribe for future labs like
+this which will be released weekly 672.329110 if
 you have requests for any specific labs
-let me know in the comment section if
+let me know in the comment section 676.999214 if
 you want to support my channel I accept
 the Bitcoin and aetherium donations via
-the addresses in the description I am
+the addresses in the description 683.789255 I am
 also a brave verified publisher and
 accept bat or basic attention token
 donations in the brave browser
+692.107505 
+692.107505 
+692.107505 
