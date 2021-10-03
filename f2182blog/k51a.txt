@@ -1,141 +1,145 @@
 0.0
 welcome to this free CCNA packet racer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.683104 you can download the lab
+file from the link in the description 8.108979 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this in this
+description 14.507520 also please subscribe to the
+channel for more labs like this 18.766582 in this
 lab we will troubleshoot the topology we
-configured in the previous lab several
+configured in the previous lab 24.506727 several
 miss configurations are preventing our
 ether channels from operating as
 intended
-let's troubleshoot the errors and fix
-them first let's take a look at switch 1
-enable show ether channel summary so we
+29.456997 let's troubleshoot the errors and fix
+them 32.176601 first let's take a look at switch 1
+36.325726 enable show ether channel summary 41.739809 so we
 have port channel 1 configured and it's
 layer 2 however it is down as this D
-indicates the eye next to the interfaces
+indicates 49.090412 the eye next to the interfaces
 indicates standalone meaning they aren't
 properly paired with interfaces on
 switch 2 to make the ether channel
-however you should be able to spot the
-problem here the ether channel between
+57.416412 however you should be able to spot the
+problem here 61.364287 the ether channel between
 switch 1 and switch 2 is supposed to be
-using pagp not LACP that could be why
+using pagp not LACP 68.895391 that could be why
 switch 1 and switch 2 aren't
 successfully forming either channel
-let's change that conf t interface range
-f 0 1 through 4 no channel group 1 also
+73.563391 let's change that 75.461786 conf t interface range
+f 0 1 through 4 no channel group 1 83.626681 also
 just to be safe I'll delete the port
-channel interface as well no interface
-po1 okay let's reconfigure that
-interface range F 0 1 through 4 channel
-Group 1 mode desirable do show ether
-channel summary ok our port channel is
-working however F 0 1 is down let's see
-what's up on switch to enable show ether
-channel summary F 0 4 which is connected
+channel interface as well 88.171889 no interface
+po1 90.806118 okay let's reconfigure that
+93.506784 interface range F 0 1 through 4 channel
+Group 1 mode desirable 100.191264 do show ether
+channel summary 103.576201 ok our port channel is
+working 108.199242 however F 0 1 is down 111.151117 let's see
+what's up on switch 2 113.863804 enable show ether
+channel summary 118.875866 F 0 4 which is connected
 to switch ones F 0 1 is down as well
-remember in the previous video I said
+124.959929 remember in the previous video I said
 port speed duplex etc had to match for
 the ether channel to work
-when one interface isn't properly
-joining the port channel one of those
+133.107491 when one interface isn't properly
+joining the port channel 136.274824 one of those
 things could be the problem
-show interface f0 for full duplex 10
+138.773011 show interface f0 4 143.313469 full duplex 10
 megabits per second
-let's check other interfaces show
+146.725594 let's check other interfaces 150.126052 show
 interface f03 full duplex a hundred
-megabits per second show interface f0 to
-again 100 megabits per second show
+megabits per second 155.859198 show interface f0 2
+158.626802 again 100 megabits per second 161.501822 show
 interface F 0 1 100 megabits per second
-let's also quickly check switch once F 0
-1 interface do show interface F 0 1
-again 100 megabits per second there's a
+166.533322 let's also quickly check switch once F 0
+1 interface 170.146009 do show interface F 0 1
+175.752884 again 100 megabits per second 179.416738 there's a
 problem the other interfaces are all
 using a speed of 100 megabits per second
-let's adjust f0 for is speed to the same
-compte interface f0 for speed 100 do
-show ether channel summary there we go
-all interfaces now have the PFLAG beside
-them meaning import channel however
+184.662300 let's adjust f0 4 is speed to the same
+188.635675 conf t interface f0 for speed 100 196.597466 do
+show ether channel summary 199.309695 there we go
+201.432382 all interfaces now have the PFLAG beside
+them meaning import channel 205.793216 however
 notice port channel 1 the ether channel
-with switch 3 is down gig 0 1 and gig 0
-2 don't show up here I'll add them
-quickly interface range G 0 1 2 2
-channel Group 1 mode on do show ether
-channel summary looks like it's up now
-let's check on switch 3 enable show
-ether channel summary look at poor
-channel 1 it has the flags s and u s
+with switch 3 is down 212.952903 gig 0 1 and gig 0
+2 don't show up here 216.765256 I'll add them
+quickly 218.318839 interface range G 0 1 to 2
+channel Group 1 mode on 225.721380 do show ether
+channel summary 229.409859 looks like it's up now
+let's check on switch 3 234.731984 enable show
+ether channel summary 239.123692 look at poor
+channel 1 242.268609 it has the flags s and u 244.963172 s
 means layer 2 that's not correct it's
-supposed to be layer 3 it's showing you
+supposed to be layer 3 250.096255 it's showing you
 4 in use here but on switch to its at
-layer 3 down show IP interface g0 1 show
-IP interface g0 to notice both
+layer 3 down 256.402900 show IP interface g0 1 259.736795 show
+IP interface g0 2 262.947940 notice both
 interfaces state
 internet protocol processing disabled
-that means the interface is our layer to
-not layer three and thus the port
+269.652169 that means the interface is our layer 2
+not layer three 273.766315 and thus the port
 channel is layer two as well
-show run indeed the gig zero one and
+276.513190 show run indeed the gig zero one and
 gigs zero two interfaces do not have
 that no switch port command configured
-let's configure it
-coffee tea interface range G zero one
-two two
-no switch port notice the command is
-rejected switch three is already
+287.472106 let's configure it
+conf t interface range G zero one
+to two
+295.740210 no switch port 297.738897 notice the command is
+rejected 299.995251 switch three is already
 configured for a layer two ether channel
-let's undo that configuration and then
-redo it no channel Group one no
+303.817272 let's undo that configuration and then
+redo it 306.426334 no channel Group one no
 interface po1 interface range G zero one
-two two no switch port channel Group one
-mode on all so let's give it an IP
-address interface po1 IP address 2300 to
-255.255.255.0 do show ether channel
-summary looks good here it's layer three
-now let's check once more on switch to
-do show ether channel summary ok it
-looks good here let's do one last check
-do ping 2300 to okay it looks good we
+to two no switch port channel Group one
+mode on 322.782230 all so let's give it an IP
+address 325.790292 interface po1 IP address 23.0.0.2
+255.255.255.0 334.939375 do show ether channel
+summary 337.815895 looks good here 339.779874 it's layer three
+now let's check once more on switch 2
+343.748624 do show ether channel summary 348.480061 ok it
+looks good here 351.151102 let's do one last check
+do ping 23.0.0.2 357.128748 okay it looks good we
 can ping switch threes end of the ether
-channel now let's go back to switch 3
-notice the port channel with switch for
-is down all of the interfaces have the
-standalone flag let's take a look at the
-configuration do show run channel group
-2 mode passive ok now let's look at
-switch for enable show ether channel
-summary same thing here show run
-okay here's our problem both switches
-are in LACP passive mode passive mode
+channel 364.134373 now let's go back to switch 3
+368.014935 notice the port channel with switch 4
+is down 373.287873 all of the interfaces have the
+standalone flag 376.425602 let's take a look at the
+configuration 379.453227 do show run 382.367352 channel group
+2 mode passive 385.895581 ok now let's look at
+switch 4 388.836060 enable show ether channel
+summary 394.309164 same thing here 395.973102 show run
+okay here's our problem 402.198268 both switches
+are in LACP passive mode 405.605914 passive mode
 and passive mode won't form an ether
-channel at least one side has to be
+channel 409.716581 at least one side has to be
 active
-let's make switch for active and see if
-that solves the problem compte interface
+411.934768 let's make switch for active and see if
+that solves the problem 415.594122 conf t interface
 range F 0 1 through 4 channel Group 1
-mode active do show ether channel
-summary there we go the port channel is
+mode active 425.673247 do show ether channel
+summary 429.085122 there we go the port channel is
 up and all interfaces have the import
-channel flag let's confirm on switch 3
-as well do show ether channel summary
-okay looks good we have fixed all of the
-problems with our ether channels that's
-all for this lab thank you for watching
+channel flag 435.865913 let's confirm on switch 3
+as well 438.823122 do show ether channel summary
+442.965559 okay looks good 445.432246 we have fixed all of the
+problems with our ether channels 448.458329 that's
+all for this lab 450.135787 thank you for watching
 I hope this lab and video have been
-helpful for you please subscribe for
-future labs like this which will be
-released weekly if you have requests for
+helpful for you 457.686995 please subscribe for
+future labs like this 460.509558 which will be
+released weekly 462.226641 if you have requests for
 any specific labs let me know in the
-comments section if you want to support
+comments section 467.186245 if you want to support
 my channel I accept Bitcoin and etherium
 donations via the addresses in the
-description I am also a brave verified
+description 473.829536 I am also a brave verified
 publisher and accept bat or basic
 attention token donations in the brave
 browser
+481.758765 
+481.758765 
+481.758765 
+

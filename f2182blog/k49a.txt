@@ -1,103 +1,106 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 5.072229 you can download the lab
+file from the link in the description 8.160958 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this this lab
+description 14.987666 also please subscribe to the
+channel for more labs like this 19.243499 this lab
 will be a little different than other
 labs there will be no configurations
 although we will use show commands later
-to confirm our answers using the
+to confirm our answers 29.330583 using the
 information on the lab topology here we
-must answer these questions in this
+must answer these questions 35.415603 in this
 topology of 4 switches we must identify
 the root bridge and then which ports are
 route ports designated ports and
 alternate or blocked ports across all
-these switches this should test your
+these switches 47.664228 this should test your
 knowledge of STP and how STP elections
-actually work there could very well be
+actually work 53.004436 there could very well be
 questions similar to this on the test as
-well so make sure you can solve problems
-like this let's get started which switch
-is the root bridge the switch with the
+well so 57.216061 make sure you can solve problems
+like this 59.298561 let's get started 62.786727 which switch
+is the root bridge 64.880206 the switch with the
 lowest bridge ID will become the root
-bridge remember the bridge ID consists
+bridge 69.445831 remember the bridge ID consists
 of the priority and the MAC address of
-the switch so the switch with the lowest
+the switch 74.903768 so the switch with the lowest
 priority will become the root or if
 there is a tie the switch with the
-lowest MAC address well all four
-switches have the same priority of 3 to
+lowest MAC address 81.923143 well all four
+switches have the same priority 85.924538 of 3 to
 769 so let's compare the MAC addresses
-by looking at the first four characters
-of each mac we can rule out - switch -
-and switch 4 neither of them has the
-lowest MAC address switch 1 and switch
+89.374913 by looking at the first four characters
+of each mac 94.416038 we can rule out - switch -
+and switch 4 96.549100 neither of them has the
+lowest MAC address 99.428954 switch 1 and switch
 two have the same first 4 characters but
 if you look at the next 4 you can tell
-that switch 1 has the lowest Mac so let
-me type in the answer which switch is
-the root bridge switch 1 now on the root
-bridge all ports are designated ports so
+that switch 1 has the lowest Mac 107.618329 so let
+me type in the answer 109.551640 which switch is
+the root bridge switch 1 113.717765 now on the root
+bridge all ports are designated ports 118.710765 so
 I'll type those in as well
-designated ports switch 1 F 0 1 F 2 0 2
-okay now let's continue
-each of the other three switches will
+120.549619 designated ports switch 1 F 0 1 F 2 0 2
+127.649869 okay now let's continue
+131.102244 each of the other three switches will
 set their interface with the lowest cost
-to the root as a report on switch to
+to the root as a report 137.539306 on switch 2
 that's obviously f02 and on switch three
-that's F 0 1 let me write those down now
-on switch for which port is it well F 0
+that's F 0 1 144.090076 let me write those down 145.522221 now
+on switch for which port is it 151.905409 well F 0
 1 is a fast ethernet interface so the
 spanning tree cost will be 19 to switch
-to plus 19 to switch 1 so 38 G 0 1 is a
+2 plus 19 to switch 1 so 38 162.440346 G 0 1 is a
 Gigabit Ethernet interface so the cost
 will be 4 to switch 3 plus 19 to switch
-1 so 23 therefore G 0 1 will be the
-route port on switch for now the
+1 so 23 170.983721 therefore G 0 1 will be the
+route port on switch 4 175.933408 now the
 interface across from a root port has to
-be designated so a switch 3 SG 0 on
-interface will be designated also now
+be designated 181.131720 so a switch 3 SG 0 on
+interface will be designated also 185.339095 now
 the question is which port is blocked
-switch to sf0 one interface or switch 4
-Zepp 0 one interface to determine this
+189.886553 switch 2 sf0 one interface or switch 4
+Zepp 0 one interface 195.640178 to determine this
 we first compare the route cost the
-total cost to the root bridge switch 2
+total cost to the root bridge 203.599428 switch 2
 has a lower cost to the root bridge so
 it's f0 one interface will be designated
 and switch 4 is f0 one interface will be
 blocked
-ok let's check our answers with some
-show commands I'll go on switch one
-first enable show spanning tree this
+212.800240 ok let's check our answers with some
+show commands 219.802260 I'll go on switch one
+first 222.147468 enable show spanning tree 227.359176 this
 bridge is the root and F 0 1 and F 0 2
-are indeed designated ports next let's
-go on switch to enable show spanning
-tree F 0 1 is designated and F 0 2 is
-the root port great now let's check on
-switch 3 enable show spanning tree F 0 1
+are indeed designated ports 233.670821 next let's
+go on switch 2 236.394300 enable show spanning
+tree 241.060237 F 0 1 is designated and F 0 2 is
+the root port 246.694258 great now let's check on
+switch 3 249.614008 enable show spanning tree 255.705320 F 0 1
 is the report and G 0 1 is designated
-finally let's check on switch for enable
-show spanning tree F 0 1 is alternate
+261.147445 finally let's check on switch 4 264.503674 enable
+show spanning tree 269.535549 F 0 1 is alternate
 meaning it is blocked and G 0 1 is the
-root port ok our answers are correct
-this has been a fairly short lab but
+root port 276.015799 ok our answers are correct
+278.338402 this has been a fairly short lab but
 hopefully you're able to improve your
 understanding of spanning tree protocol
-that's all for this lab thank you for
+285.098048 that's all for this lab 286.881090 thank you for
 watching I hope this lab and video have
-been helpful for you please subscribe
+been helpful for you 293.776360 please subscribe
 for future labs like this which will be
-released weekly if you have requests for
+released weekly 298.339068 if you have requests for
 any specific labs let me know in the
-comment section if you want to support
+comment section 303.287005 if you want to support
 my channel I accept Bitcoin and
 aetherium donations via the addresses in
-the description I am also a brave
+the description 310.525234 I am also a brave
 verified publisher and accept bat or
 basic attention token donations in the
 brave browser
+318.247671 
+318.247671 
+318.247671 
