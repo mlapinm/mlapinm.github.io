@@ -1,149 +1,151 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab  5.025707 you can download the lab
+file from the link in the description 8.184373  if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this in this
-lab we will configure OSPF version 3
+description 17.227165  also please subscribe to the
+channel for more labs like this 21.730790  in this
+lab we will configure OSPF version 3 26.310957 
 until now the OSPF we have been
-configuring is OSPF version 2 OSPF
-version 3 however is used with ipv6 the
+configuring is OSPF version 2  32.620602 OSPF
+version 3 however is used with ipv6  37.275415 the
 configuration is largely similar with
 one major difference that actually makes
-OSPF v3 simpler to configure let's get
-started the first step is to create
-loopback interfaces on each router these
-will become the router ID for OSPF
+OSPF v3 simpler to configure  46.365332 let's get
+started  47.608644 the first step is to create
+loopback interfaces on each router 52.861644  these
+will become the router ID for OSPF 56.741936 
 although OSPF v3 is used with ipv6 the
 router ID still comes in the form of an
-ipv4 address that is a 32-bit number in
-dotted decimal format
+ipv4 address  65.464227 that is a 32-bit number in
+dotted decimal format 69.031998 
 same with OSPF v to the router ID can be
-manually configured if it's not manually
+manually configured 75.642873  if it's not manually
 configured the highest ipv4 address on
-the loopback interface will be used if
+the loopback interface will be used 83.439748  if
 there is no loopback interface the
 highest ipv4 address on a regular
-interface will be used let's quickly
-make these loop backs on our one first
+interface will be used 90.289561  let's quickly
+make these loop backs on our one first 94.327790 
 enable compte interface l0 IP address
-1.1 1.1 255 255 255 255 exit next are to
-enable compte interface l0 IP address 2
-2 2 2 255 255 255 255 exit next r3
+1.1 1.1 255 255 255 255 exit 111.197957  next are to
+ 113.908394 enable compte interface l0 IP address 2
+2 2 2 255 255 255 255 exit  127.211894 next r3
 enable coffee/tea interface l0 IP
-address 3 3 3 3 255 255 255 255 exit
+address 3 3 3 3 255 255 255 255 exit 144.248894 
 ok next are 4 enable coffee tea
 interface l0 IP address 4.4.4 for 255
-255 255 255 exit ok finally r5 enable
+255 255 255 exit  159.760581 ok finally r5 163.060185  enable
 compte interface l0 IP address v dot v
-dot v dot v 255.255.255.0 all for step 1
-now let's enable OSPF v3 on each router
-let's go back to our one to enter OSPF
+dot v dot v 255.255.255.0  178.606704 all for step 1 181.175329 
+now let's enable OSPF v3 on each router 186.256558 
+let's go back to our one 187.865787  to enter OSPF
 v3 configuration mode just type ipv6 in
-front of the regular OSPF command ipv6
-router OSPF one however in OSPF v3 we
+front of the regular OSPF command 197.697266  ipv6
+router OSPF one  202.083829 however in OSPF v3 we
 don't activate OSPF on each interface
-from OSPF configuration mode we
+from OSPF configuration mode  211.154641 we
 configure it on each interface in
-interface configuration mode so by using
-the ipv6 router or SOS PF one command we
+interface configuration mode  215.496537 so by using
+the ipv6 router or SOS PF one command 222.019995  we
 simply created the OSPF v3 process
-number one
+number one 225.977724 
 now let's activate OSPF v3 on G 0 0 and
-G 0 1 interface G 0 0 we activate it
-with this command ipv6 OSPF followed by
-the process ID 1 then area then the area
-number 1 that's it
-interface G 0 1 IP v6 OSPF one area 1 ok
-now let's go to our for also an area 1
+G 0 1  233.206412 interface G 0 0  235.600391 we activate it
+with this command  238.080891 ipv6 OSPF followed by
+the process ID 1 244.389620  then area then the area
+number 1 248.214745  that's it 250.076911 
+interface G 0 1 IP v6 OSPF one area 1 ok 258.260869 
+now let's go to our for also an area 1 260.906994 
 now on our one we use the command ipv6
-router OSPF one but we didn't actually
+router OSPF one 271.813744  but we didn't actually
 do any commands from that configuration
-mode if we go directly to the interface
+mode  274.699952 if we go directly to the interface
 and enable OSPF v3 on it let's see what
-happens interface g00 ipv6 OSPF one area
-one do show run ok there it is on the
-interface and there you can see that the
+happens  280.783556 interface g00 283.343827  ipv6 OSPF one area
+one  288.516077 do show run 290.805952  ok there it is on the
+interface  295.687972 and there you can see that the
 router created the OSPF v3 process
-number one for us ok next let's
+number one for   us  303.476035 ok next let's
 configure OSPF v3 on the remaining
-routers make sure to put each interface
-in the correct area our two next
-interface g00 ipv6 OSPF one area one
-interface g0 1 IP v6 OSPF one area zero
-ok next is our 3 interface g 0 0 ipv6
-OSPF one area 0 interface g 0 1 IP v6
-OSPF one area - ok finally let's go on
-our 5 interface g 0 0 ipv6 OSPF one area
-- ok we have configured OSPF v3 on each
-router let's wait a few seconds and then
+routers  308.789180 make sure to put each interface
+in the correct area  312.295951 our two next 313.916535 
+interface g00 ipv6 OSPF one area one 323.723701 
+interface g0 1 IP v6 OSPF one area zero 331.243910 
+ok next is our 3  334.874868 interface g 0 0 ipv6
+OSPF one area 0  344.375930 interface g 0 1 347.885243  IP v6
+OSPF one area -  351.457138 ok finally let's go on
+our 5  354.701263 interface g 0 0 ipv6 OSPF one area
+- 363.330346  ok we have configured OSPF v3 on each
+router 368.374263  let's wait a few seconds and then
 check if r5 has received all the routes
-it should be receiving
-okay now before we check that let's use
-a couple of show commands here on r5
+it should be receiving 374.979179 
+okay now before we check that 382.992867  let's use
+a couple of show commands here on r5 386.674971 
 typically I'd use commands like show IP
-protocols show IP ospf for show IP ospf
-neighbor
+protocols  390.558721 show IP ospf for show IP ospf
+neighbor 394.650596 
 however for OSPF v3 we have to change
-the IP in those commands to ipv6 show
-ipv6 protocols as you can see this gives
-us minimal information but it does show
+the IP in those commands to ipv6  401.502804 show
+ipv6 protocols 404.679429  as you can see this gives
+us minimal information  408.891367 but it does show
 which interfaces are when are in which
-areas which is useful show ipv6 OSPF
+areas which is useful 413.108763  show ipv6 OSPF
 this command gives us more details
-including things like timers you can see
+including things like timers 422.347263  you can see
 the router idea of v dot v dot v dot v
 which was inherited from loopback zeros
-ipv4 address show ipv6 OSPF neighbor
+ipv4 address 430.701513  show ipv6 OSPF neighbor 435.769158 
 here you can see our 5s OSPF v3 neighbor
-ship with r3
-ok now let's check those reps do show
-ipv6 repped looks like we have the OSPF
-routes we need and the o i indicates
-OSPF inter area routes since these
+ship with r3 440.770492 
+ok now let's check those reps  443.577554 do show
+ipv6 repped 448.410992  looks like we have the OSPF
+routes we need 453.711575  and the o i indicates
+OSPF inter area routes  458.469137 since these
 networks are all outside of our 5s area
-- ok now we have one more task our one
-is connected to the internet so let's
-make a default route on r1 and then
-advertise it into OSPF first let's
-create the default route so we start
-with ipv6 route and then to make a
+- 462.434950  ok now we have one more task  465.987054 our one
+is connected to the internet  468.750846 so let's
+make a default route on r1 471.635679  and then
+advertise it into OSPF 474.165179  first let's
+create the default route  479.069783 so we start
+with ipv6 route  484.925846 and then to make a
 default route type a double colon
-followed by a slash 0 mask then let's
+followed by a slash 0 mask 490.663075  then let's
 give it a next hop of 2001 DB 8 0 1 0 1
-double colon - ok do show ipv6 route
-okay there's the route now to advertise
-the route into OSPF v3
-first enter OSPF v3 configuration mode
-ipv6 router OSPF one now the command to
+double colon -  503.226346 ok do show ipv6 route 506.615742 
+okay there's the route  508.809908 now to advertise
+the route into OSPF v3 513.079012 
+first enter OSPF v3 configuration mode 516.091762 
+ipv6 router OSPF one  521.051179 now the command to
 advertise a default route into OSPF v3
-is the same as in OSPF v2 for ipv4
+is the same as in OSPF v2 for ipv4 531.235887 
 however I didn't include this command in
-the previous lab so I wanted to show it
-in this lab that command is default
-information originate that's it okay so
+the previous lab 533.676075  so I wanted to show it
+in this lab  535.798408 that command is default
+information originate 541.624929  that's it  543.372345 okay so
 now let's go to one of the other routers
-and see if the default route appears
-I'll go check out our to do show ipv6
-route there it is right at the top in
+and see if the default route appears 549.477158 
+I'll go check out our to  551.748908 do show ipv6
+route  558.494720 there it is right at the top  561.336741 in
 this lab we looked at OSPF v3 which is
-used for ipv6 there isn't much
-difference between it and OSPF v2 just
+used for ipv6  568.095991 there isn't much
+difference between it and OSPF v2  572.643325 just
 remember to configure it at the
-interface level that's all for this lab
+interface level 575.979575  that's all for this lab 578.047991 
 thank you for watching I hope this lab
-and video have been helpful for you
+and video have been helpful for you 584.684449 
 please subscribe for future labs like
-this which will be released weekly if
+this which will be released weekly 589.487303  if
 you have requests for any specific labs
-let me know in the comment section if
+let me know in the comment section 594.489824  if
 you want to support my channel I accept
 Bitcoin and aetherium donations via the
-addresses in the description I am also a
+addresses in the description  600.889511 I am also a
 brave verified publisher and accept bat
 or basic attention token donations in
-the brave browser
-CCNA Routing & Switch
+the brave browser 
+610.139616 
+610.139616 
+610.139616 

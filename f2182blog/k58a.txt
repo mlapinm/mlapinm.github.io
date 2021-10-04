@@ -1,258 +1,261 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab  5.106291 you can download the lab
+file from the link in the description 8.064916  if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this in this
+description  15.340811 also please subscribe to the
+channel for more labs like this  19.648415 in this
 lab we will configure the enhanced
-interior gateway routing protocol e IG
-RP e IG RP is as the name suggests an
+interior gateway routing protocol 25.702227  e IG
+RP 27.280019  e IG RP is as the name suggests an
 enhanced version of Cisco's interior
-gateway routing protocol IG RP although
+gateway routing protocol IG RP 36.743248  although
 EIGRP used to be a cisco proprietary
 routing protocol meaning was available
 only on cisco routers it has been moved
-to an open standard however in a
+to an open standard 46.874269  however in a
 multi-vendor environment you're almost
 certainly going to see OSPF used over a
-EIGRP let's get started the first step
+EIGRP  53.292539 let's get started  54.843747 the first step
 is to configure loopback address on each
-router these addresses will later become
+router 59.748768  these addresses will later become
 the EIG RP router IDs used for each
-router the eigrp router ID functions the
-same way as the OSPF router ID manual
-configuration takes priority if the
+router 65.373226  the eigrp router ID functions the
+same way as the OSPF router ID 70.816955  manual
+configuration takes priority 74.035955  if the
 router ID is not manually configured the
 highest IP address on a loopback
-interface is used if there is no
+interface is used  80.852351 if there is no
 loopback interface the highest IP
-address on a regular interface is used
+address on a regular interface is used 86.991268 
 we've configured loopback to plenty of
-times so let's go through this quickly
-I'll start on r1 enable coffee/tea
+times so let's go through this quickly 91.291914 
+I'll start on r1  92.796976 enable coffee/tea
 interface l0 IP address 1.1.11
-255.255.255.0 v ok next are to enable
+255.255.255.0 v ok  107.903684 next are to 110.796684  enable
 call T interface l0 IP address - 2 - 2
-255.255.255.0 5 ok next r3 enable compte
+255.255.255.0 5 121.983496  ok next r3  124.494600 enable compte
 interface l0
-IP address 3.33 255.255.255.0 5 next is
-r4 enable coffee tea interface l0 IP
-address 4.4.4 255.255.255.0 5 ok finally
-let's go on our five enable coffee tea
+IP address 3.33 255.255.255.0 5  138.016204 next is
+r4  140.481579 enable coffee tea interface l0 IP
+address 4.4.4 255.255.255.0 5 153.502975  ok finally
+let's go on our five  158.010121 enable coffee tea
 interface l0 IP address v dot v dot v
 dot v 255.255.255.0 v okay that's all
-for step one now let's actually
-configure a EIGRP on each router the
+for step one  173.807767 now let's actually
+configure a EIGRP on each router 177.571662  the
 configuration is similar to OSPF
-configuration let's go back to our one
+configuration  181.587579 let's go back to our one 183.598558 
 to enter a EIGRP configuration mode use
-this command router EA GRP followed by
-the autonomous system or a s number in
-this case we'll use 100 well in OSPF the
+this command 189.386599  router EA GRP followed by
+the autonomous system or a s number  194.931683 in
+this case we'll use 100  197.478828 well in OSPF the
 process ID used in the router OSPF
 command was only locally significant and
 could be different on each router in the
-network the EIG our pas number has to be
-the same on each router in the network
+network  207.441099 the EIG our pas number has to be
+the same on each router in the network 212.352058 
 if the a s number is different routers
-will not become e IG RP neighbors keep
+will not become e IG RP neighbors 218.182953  keep
 that in mind and definitely look out for
 a s mismatches in any troubleshooting
-problems on the test ok so from here we
-use the network command just like OSPF
+problems on the test  224.548766 ok so from here we
+use the network command just like OSPF 230.173224 
 however VI GRP doesn't have the concept
-of areas so we just need the IP address
-and network mask
+of areas  234.479078 so we just need the IP address
+and network mask 238.578015 
 now the eigrp network command works the
 same as the OSPF network command in that
 it doesn't actually specify the networks
-you are going to advertise it is used
+you are going to advertise 248.009203  it is used
 only to identify which interfaces to
-activate a eigrp on and then those
+activate a eigrp on  253.795599 and then those
 interfaces will advertise their
-configured networks another feature of
+configured networks 257.558620  another feature of
 the eigrp network command is that it
 defaults to classful network boundaries
-if you don't enter a mask so for example
+if you don't enter a mask  265.787202 so for example
 our ones G 0 0 and F 1 0 interfaces both
-fall within the class a 10.08 range so
-I'll just type Network 1000 and now
+fall within the class a 10.08 range 276.962223  so
+I'll just type Network 1000 281.670702  and now
 EIGRP will be activated on both
-interfaces next I'll just enable it on
-the loopback network 1.1.11
+interfaces  286.009431 next I'll just enable it on
+the loopback  289.563244 network 1.1.11
 and this time let's enter the exact
-wildcard mask
-oh-oh-oh-oh now let's make the loopback
+wildcard mask 296.255765 
+oh-oh-oh-oh 298.238577  now let's make the loopback
 passive since we don't want to waste
 resources sending advertisements on an
 interface that isn't connected to any
-other router this is exactly the same as
-in OSPF passive interface l 0 finally we
-should disable auto summary Auto summary
-can be on or off by default
+other router 307.563619  this is exactly the same as
+in OSPF  310.880160 passive interface l 0 314.105681  finally we
+should disable auto summary Auto summary 318.077619 
+can be on or off by default 321.630327 
 I assume depending on either the OS
-version or router model in packet tracer
+version or router model  325.709306 in packet tracer
 and on these routers however it is
-enabled by default
+enabled by default 330.474701 
 you should always turn it off any
 summarization should be done manually
-and only where intended no Auto summary
-that's it ok let's continue on to r2
+and only where intended  337.161055 no Auto summary
+that's it 340.148680  ok let's continue on to r2 343.420700 
 I'll go through these steps quickly for
-the other routers router EAG RP 100
+the other routers 346.104742  router EAG RP 100 350.233221 
 again make sure that a s number is
-consistent throughout the network
+consistent throughout the network 354.287638 
 network 10000 network to 2 to 200 200
-passive interface l 0 no Auto summary ok
-next let's go on R 3
+passive interface l 0 no Auto summary 367.294659  ok
+next let's go on R 3 369.814075 
 router EAG RP 100 Network 10000 network
 3 3 3 3 0 0 passive interface l 0 no
-auto summary next r4 router EAG RP 100
+auto summary  388.320325 next r4 router EAG RP 100
 Network 10000 network 4.4.4 dot 400 dead
 Oh
-passive interface L 0 no Auto summary
-okay finally let's go to our 5 router
-EAG RP 100 Network 10000 network v dot v
+passive interface L 0 no Auto summary 408.360450 
+okay finally let's go to our 5  413.274180 router 
+EAG RP 100  415.933409 Network 10000 network v dot v
 dot v dot v oh oh oh oh passive
-interface l 0 no auto summary okay
-that's all let's go on our one and see
-what routes it is learned do show IP
-route the d beside these routes
+interface l 0 no auto summary 430.195638  okay
+that's all 431.972784  let's go on our one and see
+what routes it is learned  436.273159 do show IP
+route 442.181950  the d beside these routes
 indicates that they were learned via a
-EIGRP notice the administrative distance
-of 90 as opposed to OSPF s 110 this
+EIGRP 448.239388  notice the administrative distance
+of 90 as opposed to OSPF s 110 454.683846  this
 means if two routes are learned to a
 destination 1 via EIGRP and one via OSPF
-the eigrp route will be preferred also
-notice these huge metric numbers OSPF
+the eigrp route will be preferred  464.323221 also
+notice these huge metric numbers 468.007554  OSPF
 metric numbers were quite small and
-simple to understand
+simple to understand 473.417367 
 however aig our P's metric numbers can
-get quite large this is a small network
+get quite large 476.903429  this is a small network
 in our ones path to R 5 has a metric of
-150 6672 this is the path via our 4
-because it has one gigabit ethernet link
-well the Rev via r2 is all Fast Ethernet
+150 6672  485.562242 this is the path via our 4
+because it has one gigabit ethernet link 490.348221 
+well the Rev via r2 is all Fast Ethernet 493.311034 
 however our next task is to configure
 our one to perform unequal cost load
 balancing when sending traffic to our
-five
+five 503.973804 
 Oh SPF can only do equal cost load
-balancing but II IG RP can do unequal
-cost load balancing however it can't be
+balancing  507.854534 but II IG RP can do unequal
+cost load balancing  511.203638 however it can't be
 configured to do unequal cost load
-balancing over just any path it has to
-meet a certain requirement let's look
-further do show IP e IG RP topology this
+balancing over just any path 518.009242  it has to
+meet a certain requirement  519.993117 let's look
+further  521.814471 do show IP e IG RP topology 526.815617  this
 command shows the successor routes
 meaning the best routes to each
-destination as well as the feasible
-successor routes meaning routes that
-weren't picked as the successor but meet
-that certain requirement and will also
+destination  533.254179 as well as the feasible
+successor routes  536.755575 meaning routes that
+weren't picked as the successor 539.614471  but meet
+that certain requirement  541.508846 and will also
 serve as backups in the case the
-successor route goes down if you don't
+successor route goes down  545.768575 if you don't
 understand the EIG RP concepts of
-successor and feasible successor as well
+successor and feasible successor  552.673929 as well
 as feasible distance and reported or
-advertised distance make sure you learn
+advertised distance  557.266658 make sure you learn
 them in whatever video course or book
-you are using they can be a little
+you are using 561.520971  they can be a little
 difficult to understand at first and I'm
-not going to explain them here
-so in this a I gr p topology table these
+not going to explain them here 566.016846 
+so in this a I gr p topology table  569.644532 these
 numbers on the Left indicate the
-feasible distance to a destination and
+feasible distance to a destination 574.287719  and
 the numbers on the right indicate the
-reported distance remember in order for
-a route to be a feasible successor it's
+reported distance  578.956219 remember in order for
+a route to be a feasible successor  583.245323 it's
 reported distance must be lower than the
-successors feasible distance routes
+successors feasible distance 588.247927  routes
 which don't meet this criteria will not
-show up in this table however do show IP
+show up in this table  593.589219 however do show IP
 eigrp topology all links will display
-them in this network however there
-aren't any such routes
+them 602.553990  in this network however there
+aren't any such routes 606.070323 
 okay so our one has a successor route to
-our five via 10.14 o4 which is our four
-with a metric of 150 6672 it also has a
+our five via 10.14 o4 which is our four 615.525073 
+with a metric of 150 6672 620.320802  it also has a
 feasible successor route via 10.12
 o2 which is r2 with a metric of one
 hundred fifty eight thousand nine
-hundred seventy six to enable r1 to load
+hundred seventy six 631.626260  to enable r1 to load
 balance over these use the
-variance command then we enter a
+variance command  638.002323 then we enter a
 multiplier for example variance to will
 allow r1 to load balance over feasible
 successor routes that have up to double
 the feasible distance of the successor
-rep or triple the distance if we used
-variance three the difference between
+rep  652.054718 or triple the distance if we used
+variance three  656.099052 the difference between
 these two metrics is fairly small so in
-this case we can just use variance to
+this case we can just use variance to 663.124343 
 that's it
-do show IP route now you can see both
-paths are in the routing table both for
+do show IP route 668.129885  now you can see both
+paths are in the routing table 672.741531  both for
 the v dot v dot v dot v loopback address
-and the 10.35 0 network let me just
-emphasize one point e IG RP will never
+and the 10.35 0 network 679.584614  let me just
+emphasize one point  682.478552 e IG RP will never
 load balance over paths which aren't
-feasible successors you can set the
-maximum variance 128 but if the other
+feasible successors  688.080531 you can set the
+maximum variance 128  692.470926 but if the other
 pads aren't feasible successors ew g RP
-won't load balance over them this is an
+won't load balance over them  698.021447 this is an
 important feature to prevent routing
-loops okay our last task is to configure
+loops 701.417593  okay our last task is to configure
 r3 to advertise a 1000 / 8 summary
-network to r5 manual summarization is
+network to r5  711.604343 manual summarization is
 actually not in the exam topics for
-icnd2 however i included it in my oh s
+icnd2  717.855383 however i included it in my oh s
 PF labs and will hear in my ear g RP
-labs simply for the reason that it is
+labs 724.132321  simply for the reason that it is
 often included in other CCNA learning
-materials
+materials 729.338988 
 Cisco's exam topics don't necessarily
-list everything that is on the exam so
+list everything that is on the exam 734.919279  so
 summarization may actually be something
-you should know for the exam and in
+you should know for the exam 738.551633  and in
 either case it's just a single command
-so let's try it out on r3 to configure a
+so let's try it out on r3 744.248904  to configure a
 summary route in AI GRP we configure it
-at the interface level unlike in OSPF
+at the interface level 751.735383  unlike in OSPF
 where we configure that oh s PF
-configuration mode in this case we'll
-configure it on the g00 interface the
-one facing our v interface g 0 0
+configuration mode 756.577758  in this case we'll
+configure it on the g00 interface  761.589842 the
+one facing our v  763.185592 interface g 0 0 766.061717 
 this is the command IP summary address
 eh ERP followed by the a s number 100
 then the network address 10000 followed
-by the mask much like with OSPF
+by the mask 781.923071  much like with OSPF
 summarization ew GRP summarization uses
 a normal network mask not a wildcard
-mask
+mask 791.185508 
 unlike the network command which does
-use a wildcard mask so in this case 255
-0 0 0
-ok that's all there is to it let's check
-it out on our 5 do show IP route there
+use a wildcard mask 794.970821  so in this case 255
+0 0 0 799.335196 
+ok that's all there is to it  802.511883 let's check
+it out on our 5 804.677299  do show IP route 811.643195  there
 it is our 5 has now learned at 1000 / 8
 summary address instead of all of those
-separate networks in this slob we did a
+separate networks 819.833195  in this slob we did a
 basic AIG RP configuration with unequal
 cost load balancing and some manual
-summarization that's all for this lab
+summarization  828.776987 that's all for this lab 830.728237 
 thank you for watching I hope this lab
-and video have been helpful for you
+and video have been helpful for you 837.594695 
 please subscribe for future labs like
-this which will be released weekly if
+this which will be released weekly 842.845195  if
 you have requests for any specific labs
-let me know in the comment section if
+let me know in the comment section 847.427195  if
 you want to support my channel I accept
 Bitcoin and aetherium donations via the
-addresses in the description I am also a
+addresses in the description  854.028008 I am also a
 brave verified publisher and accept bat
 or basic attention token donations in
 the brave browser
+ 862.626653 
+ 862.626653 
+ 862.626653 

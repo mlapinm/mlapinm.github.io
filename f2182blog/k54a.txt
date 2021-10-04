@@ -1,276 +1,274 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab  3.945217 you can download the lab
+file from the link in the description  7.450119 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this in this
+description  14.940711 also please subscribe to the
+channel for more labs like this 20.188776 in this
 lab we will take a look at single area
-OSPF we will configure it on these four
+OSPF 24.347059 we will configure it on these four
 routers to achieve full connectivity
-OSPF also supports a hierarchical multi
-area design but that will be for the
-next lab this time we will do a simple
+29.306814 OSPF also supports a hierarchical multi
+area design 34.292008 but that will be for the
+next lab 36.709070 this time we will do a simple
 OSPF configuration and then do some
 tweaking to affect the path traffic
-takes the first step is to configure a
-loopback address on each router note
+takes 45.016886 the first step is to configure a
+loopback address on each router 49.785727 note
 that this isn't a necessary step for
-OSPF however we will do this first so
+OSPF 53.779688 however we will do this first so
 that the loopback address becomes the
 OSPF router ID each router uses to
-identify itself to neighbors having
-router ids of 1.1.1 1 2 2 2 2 and so on
-will simplify things as for how the
-router ideas can is determined manual
-configuration takes precedence however
+identify itself to neighbors 63.455209 having
+router ids of 1.1.1.1 2.2.2.2 69.560163 and so on
+will simplify things 71.374589 as for how the
+router ideas can is determined 77.419813 manual
+configuration takes precedence 80.109361 however
 if it's not manually configured the
 highest loopback address becomes the red
-or ID
+or ID 86.243243 
 if there is no loopback interface
 address the highest address of another
-interface becomes the router ID we
+interface becomes the router ID 93.235905 we
 should create these loop backs before we
-configure OSPF because if we do it after
+configure OSPF 98.311009 because if we do it after
 the routers won't update the router IDs
-unless we reset the OSPF process that's
-no problem in a lab like this but in a
+unless we reset the OSPF process 105.864194 that's
+no problem in a lab like this 109.188602 but in a
 real network you can't just reset your
-routing protocols at any time anyway
-let's make those loopback interfaces on
-our one an able call 40 interface l0 for
-loop x0 IP address 1.1.11
-five exit we don't have to use the no
+routing protocols at any time 113.132527 anyway
+let's make those loopback interfaces 117.075660 on
+r1 enable conf t interface l0 for
+loop back 0 IP address 1.1.1.1 255.255.255.255
+ exit  135.473974 we don't have to use the no
 shutdown command on a loopback interface
-next are to enable coffee/tea interface
-l0 IP address - - - - 255 255 255 255
-exit next r3 enable coffee/tea interface
-l0 IP address three three three three
-255 255 255 dot 255 exit finally r4
-enable coffee/tea interface l0 IP
-address for 4.4.4 255 255 255 255 exit
+139.113685 next r2 enable conf t interface
+l0 IP address 2.2.2.2 255.255.255.255
+exit  156.573437 next r3 enable conf t interface
+l0 IP address 3.3.3.3
+255.255.255.255 exit  173.662666 finally r4
+enable conf t interface l0 IP
+address 4.4.4.4 255.255.255.255 exit 190.144249 
 okay that's it for our loopback
-addresses next let's configure OSPF on
-each router and advertise the routes
-let's go back to our one router OSPF
-then we have to enter a process ID in
+addresses  192.949957 next let's configure OSPF on
+each router and advertise the routes 198.664936 
+let's go back to r1 200.499873  router OSPF
+then we have to enter a process ID 206.090810  in
 almost all circumstances you will only
-use a single OSPF process on a router
+use a single OSPF process on a router 212.110310 
 however you can create multiple
 processes and each will keep a separate
-database
+database 218.022330 
 also the process ID is locally
-significant it can be different on each
+significant  223.407330 it can be different on each
 router and they can still become
-neighbors just to prove that I'll use a
+neighbors 226.695080  just to prove that I'll use a
 different router ID or sorry a different
-process ID on each router let's go with
-one for our one now let's advertise our
-networks let me explain a little how
-OSPF network command works it looks for
+process ID on each router 233.063684  let's go with
+one for r1 236.396392  now let's advertise our
+networks 240.135829  let me explain a little how
+OSPF network command works 243.923079  it looks for
 interfaces within the range stated in
-the network command and then advertises
-the network prefix on those interfaces
+the network command 248.863849  and then advertises
+the network prefix on those interfaces 252.934224 
 it doesn't necessarily advertise the
 exact network used in the network
-command for example network 12000 then i
+command  258.614766 for example network 12.0.0.0 then i
 put in a wildcard mask which if you
-remember is inverse of a regular mask
-the 12000 network is configured as a
-slash 24 but if I for example configure
-a slash 8 with O 255 255 255 it will
+remember is inverse of a regular mask 269.231516 
+the 12.0.0.0 network is configured as a
+/24  274.600245 but if I for example configure
+a /8 with 0 255 255 255 281.050995  it will
 still advertise the slash 24 network on
-f10 not a slash 8 okay next enter area
-followed by the area number this is
+f10  286.302307 not a slash 8  288.187223 okay next enter area
+followed by the area number  293.259806 this is
 single area OSPF so let's just put 0 on
-all of these next one the G 0 0
-interface network 14000 I'll set it as a
-slash 16 this time just the show
+all of these  298.096931 next one the G 0 0
+interface  302.032930 network   14.0.0.0 I'll set it as a
+/16 this time  308.945096 just the show
 anything works as long as the interface
 prefix falls within that range
-ohh-ohh 255 dot 255 area 0 finally the
-loopback address network 1.1.1 100 200
-area 0 this time i configured the exact
-/ 32 mask on the interface I'll state it
+ 314.055471 0.0.255.255 area 0  319.636407 finally the
+loopback address  323.079219 network 1.1.1.1 0.0.0.0
+area 0  330.279863 this time i configured the exact
+/ 32 mask on the interface  335.341863 I'll state it
 one more time because it's very
-important to understand this G 0 0 and F
+important to understand this 340.110113  G 0 0 and F
 1 0 will advertise the network prefix
-actually configured on the interface not
-the slash 8 + / 16 prefixes I configured
-here
+actually configured on the interface 347.311946  not
+the /8  / 16 prefixes I configured
+here 352.346716 
 okay now let's set up OSPF on the other
-routers and I'll show you a useful
-shortcut I'll go on are two routes is P
-F and again I'll use a different process
+routers  356.755736 and I'll show you a useful
+shortcut  359.115903 I'll go on r2 361.231966  routes OSPF 365.103653  and again I'll use a different process
 ID to show that it can still become
-neighbors with r1 and r3 so I'll use a
-process ID of two now as for that
+neighbors with r1 and r3  370.934257 so I'll use a
+process ID of two  373.998007 now as for that
 shortcut I mentioned it's a way to
 activate OSPF on all interfaces with a
-single command this is useful for labs
+single command  381.477861 this is useful for labs
 but perhaps you might not want to do it
 on a real network where you want a more
 precisely control which interfaces OSPF
-is activated on network 0.0.0.0
-followed by a slash zero mask which is
-usually 0.0.0.0 but because we have to
+is activated on  391.915673 network 0.0.0.0
+followed by a /0 mask which is
+usually 0.0.0.0  402.539068 but because we have to
 use a wildcard mask it is inverse it is
-255 dot 255 255 255 area 0 ok all
-networks fall within the odo odo slash
-zero range so OSPF will be activated on
-all interfaces let's do the same quickly
-on r3 and r4 r3 first router OSPF 3
-network oh-oh-oh-oh 255.255.255.0 5 area
-0 then our 4 router OSPF 4 network
-oh-oh-oh-oh 255 dot 255 dot 255 dot 255
-area 0 ok now let's go back to our 1 and
-see what's up do show IP ospf neighbor
+255 255 255 255 area 0  411.885693 ok all
+networks fall within the 0.0.0.0/0 range so OSPF will be activated on
+all interfaces  421.669213 let's do the same quickly
+on r3 and r4 425.717005  r3 first router OSPF 3
+network 0.0.0.0 255.255.255.255  area
+0  438.987856 then R4  444.566856 router OSPF 4 network
+0.0.0.0 255.255.255.255
+area 0  452.472105 ok now let's go back to r1 and
+see what's up 456.423334  do show IP ospf neighbor 462.522396 
 now we can see that r1 has become
-neighbors with r2 and r4 also notice
+neighbors with r2 and r4 467.783709  also notice
 that the loopback interfaces we
 configured have indeed become the router
-IDs of r2 and r4 also the router
+IDs of r2 and r4  475.032334 also the router
 successfully became neighbors even
 though we use different process IDs on
-each router proving that the process ID
-is only locally significant
+each router  482.687521 proving that the process ID
+is only locally significant 485.872354 
 next let's check the routes we received
-here on our one do show IP route here
+here on r 1 490.770292  do show IP route  493.561958 here
 are the loop backs of r2 r3 and r4 and
 here are the 2300 and 3400 networks to
-which our one isn't directly connected
-note that they have an O beside them
-meaning that they were learned via OSPF
+which our one isn't directly connected 506.858832 
+note that they have an O beside them 510.245186 
+meaning that they were learned via OSPF 513.366498 
 also notice that r1 learned the network
 prefix is configured on each of the
-interfaces not the network prefix we
-actually configured on r2 r3 and r4
-actually we configured oh-oh-oh-oh-oh-oh
-on them and there is no odor odor odor o
-/o Network in the table here so that
-demonstrates the point as well now the
+interfaces  519.663290 not the network prefix we
+actually configured on r2 r3 and r4 524.576956 
+actually we configured  0.0.0.0/0
+on them and there is no  0.0.0.0/0 Network in the table here  534.596788 so that
+demonstrates the point as well  536.927141 now the
 next step is to suppress OSPF messages
 on the loopback addresses or sorry
-loopback interfaces of each router
+loopback interfaces of each router 546.314558 
 because OSPF is activated on the
-loopback interfaces each router is
-sending OSPF advertisements on them
+loopback interfaces 550.548745  each router is
+sending OSPF advertisements on them 554.398849 
 however the loopback interface doesn't
 actually lead to anywhere beyond the
-router itself so there's no point of
-advertising anything on them to suppress
+router itself  559.900870 so there's no point of
+advertising anything on them  562.724661 to suppress
 the advertisements we configure the loop
 backs as passive interfaces with this
-command passive interface l0 that's all
+command  569.685411 passive interface l0 573.153140  that's all 574.977807 
 let's quickly do the same on the other
-routers first are too passive interface
-l0 then our three passive interface l0
-finally our for passive interface l0 the
+routers 577.876370  first r2 581.061557  passive interface
+l0  583.977244 then r3 586.250452  passive interface l0 589.940556 
+finally r4 592.625306  passive interface l0 596.405118  the
 next step is to configure the OSPF
-reference bandwidth of each router so
+reference bandwidth of each router  603.111055 so
 that a 10 Gigabit Ethernet interface
-would have an OSPF cost of 1 what
-exactly does that mean well from our
-ones perspective it has two routes to
-reach r3 it can go via r2
-or via r4 how does it decide which path
-to use let's go back to r1 and look at
-their routing table notice beside these
-OSPF routes there is a 110 which is the
-administrative distance for OSPF I won't
+would have an OSPF cost of 1  608.922138 what
+exactly does that mean 611.605722  well from r1s perspective it has two routes to
+reach r3  617.647034 it can go via r2
+or via r4  621.899200 how does it decide which path
+to use  625.762825 let's go back to r1 and look at
+their routing table  629.663075 notice beside these
+OSPF routes there is a 110  635.701741 which is the
+administrative distance for OSPF  639.245886 I won't
 talk about administrative distance now
-hopefully you've studied it however next
-to it is the metric notice that the
+hopefully you've studied it  644.030845 however next
+to it is the metric  647.330928 notice that the
 metric via r2 and the metric via r4 are
 the same so both are in the routing
-table however why are both the same when
+table  655.585782 however why are both the same  659.749073 when
 the path via r4 includes a faster
-gigabit ethernet interface well to
+gigabit ethernet interface  664.171135 well to
 calculate metric OSPF divides a
 reference bandwidth by the bandwidth on
-the interface the reference bandwidth by
-default is 100 megabits per second and a
+the interface  673.082718 the reference bandwidth by
+default is 100 megabits per second  677.931073 and a
 fast ethernet interface is 100 megabits
-per second so a fast ethernet interface
+per second  682.701823 so a fast ethernet interface
 has a metric of 1 which is 100 divided
-by 100 a Gigabit Ethernet interface has
-a bandwidth of 1,000 megabits per second
-100 divided by 1,000 is 0.1 however the
-lowest possible metric in OSPF is 1 so
+by 100  688.635968 a Gigabit Ethernet interface has
+a bandwidth of 1,000 megabits per second 694.449114 
+100 divided by 1,000 is 0.1 698.760947  however the
+lowest possible metric in OSPF is 1  703.809759 so
 gigabit and fast ethernet interfaces
-have the same metric by default 1 even a
+have the same metric by default 1  709.343905 even a
 10 gigabit or 100 gigabit interface
-would have a metric of 1 to change this
+would have a metric of 1 715.762030  to change this
 default behavior we can change the
-reference bandwidth with this command
+reference bandwidth with this command 721.732739 
 auto cost reference bandwidth then the
 bandwidth in terms of megabits per
-second our instructions say to make it
+second  728.780093 our instructions say to make it
 so that a 100 gigabit interface oh sorry
 a 10 gigabit interface would have a cost
-of 1 so we should set the reference
-equal to 10 gigabits per second so I'll
-enter 10,000 as this message says here
+of 1  738.471259 so we should set the reference
+equal to 10 gigabits per second  742.614342 so I'll
+enter 10,000  746.180988 as this message says here
 make sure the reference is consistent
-across all routers
-let's go on our to auto cost reference
-bandwidth ten thousand
-okay next are three auto cost reference
-bandwidth ten thousand finally are for
+across all routers 752.169779 
+let's go on r2   754.375404   auto cost reference
+bandwidth ten thousand 761.808508 
+okay next r3 764.739862  auto cost reference
+bandwidth ten thousand  769.607882 finally r4 772.149382 
 auto cost reference bandwidth ten
-thousand okay let's check again on our
-one do show IP route now we only have
-one route two three three three three
-via the gig zero zero interface because
+thousand  777.236527 okay let's check again on r1 780.789257  do show IP route  784.751340 now we only have
+one route 3.3.3.3
+via the gig 00 interface  791.585735 because
 OSPF now distinguishes between the cost
 of a gig Ethernet and the cost of a Fast
-Ethernet interface now our last step
+Ethernet interface  798.777026 now our last step
 isn't something you'd likely do in a
-real network but I want to show you that
-you can do it after adjusting the
+real network  803.725713 but I want to show you that 
+you can do it  807.753650 after adjusting the
 reference bandwidth so that r1 will take
 the path of via r4 to our freeze
-loopback exclusively we are now going to
-configure the opposite and make it use
-the path to r2 exclusively we will do
+loopback exclusively 814.585712  we are now going to
+configure the opposite  817.567399 and make it use
+the path to r2 exclusively 820.159836  we will do
 this by configuring the OSPF cost of
-some interfaces now there are multiple
-ways to do this we can do it by lowering
+some interfaces  825.409148 now there are multiple
+ways to do this  828.740189 we can do it by lowering
 the cost of some interfaces or by
 raising the cost of others or a
-combination just to make this quick for
+combination 836.016376  just to make this quick for
 the video I'll raise the cost of the g00
-link between r1 and r4 to ten thousand
-I'll start on our one interface g00 to
-change the cost use this command IP ospf
-cost ten thousand okay now let's do the
-same on our for Zend interface g00 IP
-ospf cost ten thousand now let's go back
-on our one do show IP route okay now the
-route two three three three three has
-changed back to r2 exclusively because
+link between r1 and r4 to 10000 845.707313 
+I'll start on r1 848.281688  interface g00 to
+change the cost use this command  855.308563 IP ospf
+cost 10000   859.193792 okay now let's do the
+same on r4s end  862.272958 interface g00  866.669583 IP
+ospf cost 10000     870.359478 now let's go back
+on r1 873.439207  do show IP route  876.650727 okay now the
+route to 3.3.3.3 has
+changed back to r2 exclusively 883.955248  because
 we manually adjusted the cost of
-Giggsy rose your interface despite the
+Gig 00 your interface 887.858789  despite the
 fact that the path via r4 is actually
-faster we covered a lot of different
-things in this lab OSPF is very
+faster 891.872518  we covered a lot of different
+things in this lab  896.131830 OSPF is very
 important both for the exam and because
-it's widely used in real networks make
-sure you know the commands required I
+it's widely used in real networks 902.372517  make
+sure you know the commands required 905.418600  I
 will also be making a few more OSPF labs
-so be sure to practice further with
-those that's all for this lab thank you
-for watching I hope this lab and video
-have been helpful for you please
-subscribe for future labs like this
-which will be released weekly if you
+ 908.813892 so be sure to practice further with
+those  911.311412 that's all for this lab 913.302704  thank you
+for watching 918.154850  I hope this lab and video
+have been helpful for you  921.107537 please
+subscribe for future labs like this 924.301787 
+which will be released weekly 926.049162  if you
 have requests for any specific labs let
-me know in the comments section if you
+me know in the comments section  931.218725 if you
 want to support my channel I accept
 Bitcoin and aetherium donations via the
-addresses in the description I am also a
+addresses in the description  938.216350 I am also a
 brave verified publisher and accept bat
 or basic attention token donations in
 the brave browser
+ 947.782370 
+ 947.782370 
+ 947.782370 

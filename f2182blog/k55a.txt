@@ -1,153 +1,152 @@
 0.0
 welcome to this free CCNA packet tracer
 practice lab you can download the lab
-file from the link in the description if
+file from the link in the description 7.517770  if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this in this
+description  14.149018 also please subscribe to the
+channel for more labs like this  18.204726 in this
 lab we will expand upon what we did in
-the previous lab I have added an
+the previous lab 23.244809  I have added an
 additional router change the IP
 addresses and we will configure multi
-area OSPF the middle area is area 0 also
+area OSPF  30.555411 the middle area is area 0  33.556181 also
 known as the backbone all other areas
-must be attached to the backbone area
+must be attached to the backbone area 39.517201 
 and traffic from one area to another
-must pass through the backbone 2 of our
-routers our area border routers or ABR's
+must pass through the backbone 43.958388  2 of our
+routers our area border routers or ABR's 49.463138 
 because they have interfaces in multiple
-areas r2 has interfaces in area 0 and
-area 1 and our 3 has interfaces in area
-0 and area 2 let's get started I'll
+areas  52.086179 r2 has interfaces in area 0 and
+area 1 and r3 has interfaces in area
+0 and area 2  60.977116 let's get started 62.860761  I'll
 configure these routers in order from 1
-to 5 make sure you configure the
-interfaces in the proper areas also we
+to 5 67.214303  make sure you configure the
+interfaces in the proper areas 71.048990  also we
 should configure the loopback interfaces
-as passive interfaces and configure the
+as passive interfaces 76.737635  and configure the
 reference bandwidth so that a 100
-gigabit interface would have a cost of 1
-let's go on our one an able coffee tea
+gigabit interface would have a cost of 1 82.837573 
+let's go on r1 85.224615  enable conf t
 router OSPF 1 remember the OSPF process
-ID doesn't have to match between routers
+ID doesn't have to match between routers 96.855843 
 in the last lab I purposefully
 configured a different process ID on
-each router in this lab however I'll do
+each router  102.583093 in this lab however I'll do
 the typical thing and just use a process
-ID of one for each router ok now our
-ones interfaces are all in a single area
-so I'll use our shortcut from last time
-Network oh-oh-oh-oh 255 255 dot 255 255
-area 1 now OSPF is activated on all
-interfaces with an IP address let's make
-the loopback passive passive interface
-l0 finally the reference bandwidth Auto
-cost reference bandwidth now what should
-the value B we should configure it to be
-equivalent to 100 gigabits per second
-that's 100,000 megabits per second so
+ID of one for each router 109.016468  ok now our
+ones interfaces are all in a single area 113.954384 
+so I'll use our shortcut from last time 116.573218 
+Network 0.0.0.0 255 255 255 255
+area 1 124.594529  now OSPF is activated on all
+interfaces with an IP address  129.580529 let's make
+the loopback passive passive  132.697966 interface
+l0 135.577237  finally the reference bandwidth 138.471466  Auto
+cost reference bandwidth  138.238466 now what should
+the value B  143.971361 we should configure it to be
+equivalent to 100 gigabits per second 147.975340 
+that's 100,000 megabits per second  151.160007 so
 configure the reference bandwidth as
-100,000 okay that's all for r1 now I'll
+100,000  155.132465 okay that's all for r1  157.874924 now I'll
 go through the rest of these devices
-fairly quickly again make sure to
+fairly quickly  163.110757 again make sure to
 configure the correct interfaces in the
-correct areas for routers 2 & 3 the loop
+correct areas  167.915736 for routers 2 & 3 the loop
 backs could be in either area but the
-instructions say to put them in area 0
-let's go on our to an able Conti router
-OSPF one network 10.12 oh oh oh oh oh
-255 area one I configure the same slash
-24 mask as on the interface but remember
-that a slash 16 would work as well a
-slash 8 would not work however because
-10000 / 8 includes f2 0 also which has
-to be in a different area okay let's
-continue Network 10.23 oh-oh-oh-oh-oh
-255 area 0 network 2 2 to 200 200 area 0
+instructions say to put them in area 0 175.916194 
+let's go on r2  177.906174 an able Conti router
+OSPF one network 10.12.0.0 0.0.0.255 area 1 191.818653  I configure the same slash
+24 mask as on the interface 196.210589  but remember
+that a slash 16 would work as well 199.035423  a
+/8 would not work however  202.667339 because
+10.0.0.0 / 8 includes f2 0 also 207.864214  which has
+to be in a different area  209.775360 okay let's
+continue  211.767631 Network 10.23.0.0 0.0.0.255 area 0  219.113464 network 2.2.2.2 0.0.0.0 area 0 225.176901 
 passive interface l0 auto cost reference
-bandwidth 100000 okay next is r3 enable
-compte router OSPF one network 10.23
-oh-oh-oh-oh-oh 255 area 0 network 10.35
-oo ooo 255 area to network three three
-three three zero zero zero area zero
+bandwidth 100000 232.886796  okay next is r3  235.590504 enable
+conf t router OSPF one network 10.23.0.0
+0.0.0.255 area 0  249.413670 network 10.35.0.0 0.0.0.255 area 2  256.534919 network 3.3.3.3 0.0.0.0 area 0 262.392063 
 passive interface l0
-auto cost reference bandwidth 100,000
-okay next is our four enable conf T
-Network oh oh oh oh 255.255.255.0 v
-aerial 1 passive interface l 0 auto cost
-reference bandwidth 100,000 okay last
-router our 5 enable coughed T router
-OSPF one our five is only part of area 2
-so let's use this shortcut again network
-oh-oh-oh-oh 255 dot 255 dot 255 dot 255
-area 2 passive interface L 0 auto cost
-reference bandwidth 100000 that's all
-for step 1 now step 2 is to configure
-route summarization on the ABR's
+auto cost reference bandwidth 100,000 270.564021 
+okay next is r4 273.111646  enable conf T
+Network 0.0.0.0 255.255.255.0 v
+area 1  285.023228 passive interface l 0 auto cost
+reference bandwidth 100,000  292.018061 okay last
+router r5 294.722977  enable conf t   router
+OSPF 1 301.291121 our five is only part of area 2
+so let's use this shortcut again  306.203141 network
+0.0.0.0 255.255.255.255
+area 2  313.574536 passive interface L 0 auto cost
+reference bandwidth 100000  320.547223 that's all
+for step 1  322.575265 now step 2 is to configure
+route summarization on the ABR's 328.073056 
 here on our 5 let me show you the route
-table do show IP route we have all of
-these routes 10.12 0 10.14 0 10.20 300
-but our 5 only has one path to them so
+table 332.359972  do show IP route 334.775180  we have all of
+these routes 10.12.0.0 10.14.0.0 10.23.0.0
+but our 5 only has one path to them  346.547344 so
 our three could instead advertise a
-single 10.0 / 8 route to our 5 and it
-would help clean up our 5s routing table
+single 10.0.0.0 / 8 route to r5 354.712552  and it
+would help clean up our 5s routing table 357.164864 
 this isn't a very large network but in
 very large networks this is very
-beneficial let's configure that on our 3
+beneficial  362.868176 let's configure that on r3 366.423072 
 we want to summarize these routes are 3
-is receiving an area 0 so we begin the
-command with area 0 not with area 1 the
+is receiving an area 0  372.896467 so we begin the
+command with area 0  375.506572 not with area 1 376.960884  the
 area to which we will advertise the
-summary ok next to the keyword range
-then the address 10000 followed by the
-mask 255 0 keep in mind that this is not
-a wildcard mask that's easy to mix up
+summary  379.311384 ok next to the keyword range
+then the address 10.0.0.0 followed by the
+mask 255.0.0.0 391.238509  keep in mind that this is not
+a wildcard mask  395.486800 that's easy to mix up
 since the network command uses a
-wildcard mask
+wildcard mask 399.740487 
 so if we go and check on r5 instead of
-having learned routes to 10.23 0/24
-10.12 0/24 and 10.14 0/24 it should have
-a single 10000 / 8th route learned via
-OSPF however the loop backs don't fit in
-the summary so they will be unchanged
-okay let's go check our 5s route table
-do show IP route there we go our 5 has
+having learned routes to 10.23.0.0/24
+10.12.0.0/24 and 10.14.0.0/24 414.315736  it should have
+a single 10.0.0.0 / 8th route 418.525652  learned via
+OSPF 420.079110  however the loop backs don't fit in
+the summary so they will be unchanged 425.224589 
+okay let's go check r5s route table 428.791839 
+do show IP route  433.106297 there we go 436.028276  r5 has
 learned a single route to all of the
-routes that fit within the 10000 / 8
-range of course it still has its
-directly connected network of 10.35 0/24
-here now let's configure the same thing
-on r2 r1 and r4 don't need to learn
-about that 10.23 0/24
-and 10.35 0.0 /horizontalscale the
+routes that fit within the 10.0.0.0/ 8
+range  442.831109 of course it still has its
+directly connected network of 10.35.0.0/24
+here  448.926129 now let's configure the same thing
+on r2 453.654732  r1 and r4 don't need to learn
+about that 10.23.0.0/24
+and 10.35.0.0/24  464.534731 the
 routing tables of r1 and r4 we shouldn't
-see routes to 10.20 300 / 24 and 10.35
-0/24 but rather a summary 10000 / 8
-address keep in mind it can take a few
+see routes  490.361539 to 10.20 300 / 24 and 10.35
+0/24  495.957809 but rather a summary 10000 / 8
+address  500.716475 keep in mind it can take a few
 seconds for the network to converge and
 this changed to show in the routing
-table but let's check on our for do show
-IP route there we go there's that 1000 /
-8 summary in this lab we looked at multi
+table  506.877475 but let's check on r4  509.239516 do show
+IP route  514.462161 there we go 517.671995  there's that 1000 /
+8 summary  520.985599 in this lab we looked at multi
 area
-OSPF we could have more areas area 3
+OSPF 526.244661  we could have more areas area 3
 area for area 5 etc but remember that
 all areas must
-connect to the backbone area area zero
+connect to the backbone area area zero 536.341202 
 we also used summarization to reduce the
-size of our routing table which is
-highly recommended in large networks
-that's all for this lab thank you for
+size of our routing table 540.777994  which is
+highly recommended in large networks 543.060786 
+that's all for this lab  544.800411 thank you for
 watching I hope this lab and video have
-been helpful for you please subscribe
+been helpful for you  552.188536 please subscribe
 for future labs like this which will be
-released weekly if you have requests for
+released weekly 557.142098  if you have requests for
 any specific labs let me know in the
-comment section if you want to support
+comment section 562.057077  if you want to support
 my channel I accept Bitcoin and
 aetherium donations via the addresses in
-the description I am also a brave
+the description  569.125597 I am also a brave
 verified publisher and accept bat or
 basic attention token donations in the
 brave browser
+ 577.996785 
+ 577.996785 
+ 577.996785 

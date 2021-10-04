@@ -1,123 +1,126 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab  5.188707 you can download the lab
+file from the link in the description  7.760187 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this in this
+description  15.568145 also please subscribe to the
+channel for more labs like this 19.679999  in this
 lab we will troubleshoot a multi area
 OSPF network in which neighbor
 relationships aren't properly forming
 and roads that should be advertised are
-not let's get started first let's go on
-our one enable show IP ospf neighbor
+not  30.086853 let's get started  31.556540 first let's go on
+our one  34.688684 enable show IP ospf neighbor 41.237205 
 our one has become OSPF neighbors with
-our two but not our four show IP
+our two  46.539330 but not our four 47.967080  show IP
 protocols
 looks like our ones interfaces are in
-the proper areas as you can see they're
-both in area one
+the proper areas  55.476830 as you can see they're
+both in area one 57.918642 
 however you may notice one problem here
-on our one our one isn't advertising
-it's loopback of 1.1.11 if I go on our -
-it won't appear in the routing table
+on our one our one 61.651121  isn't advertising
+it's loopback of 1.1.1.1 65.855725  if I go on our - 68.626016 
+it won't appear in the routing table 70.390474 
 enable show IP route indeed it's
-receiving the 10.14 0 but not 1.1 1.1
-from our one let's fix that on our one
-coffee tea router OSPF one network 1.1.1
-100 200 area 1 also the loopback should
-be a passive interface passive interface
-l0 ok now let's check again on our to
-show IP route
+receiving the 10.14.0  81.025078 but not 1.1.1.1
+from our one 83.941036  let's fix that on our one 87.629015 
+coffee tea router OSPF one 94.237702 network 1.1.1
+1.00 200 area 1 101.598764  also the loopback should
+be a passive interface 105.349118  passive interface
+l0  108.990784 ok now let's check again on our to 112.172180 
+show IP route 117.300618 
 there it is so we fix our problem on our
-one let's go on our four and see what's
-the issue
-enable show IP ospf neighbors indeed our
-four has no OSPF neighbors show IP
-protocols can you spot the problem our
-4s g00 interface is a passive interface
+one  123.347493 let's go on our four and see what's
+the issue 127.836430 
+enable show IP ospf neighbors  134.134659 indeed our
+four has no OSPF neighbors 137.657722  show IP
+protocols  140.598888 can you spot the problem 143.918055  our
+4s g00 interface is a passive interface 147.778430 
 this means it won't form neighbor
-relationships on that interface it will
+relationships on that interface 151.958847  it will
 still advertise the network on that
-interface although in this case it has
-no neighbors to advertise it to let's
-fix that conf T router OSPF one no
-passive interface G zero zero now r1 and
+interface  155.562784 although in this case it has
+no neighbors to advertise it to 158.911138  let's
+fix that  160.522867 conf T router OSPF one  165.822783 no
+passive interface G zero zero  170.425762 now r1 and
 r4 should be trying to form an OSPF
-neighbor relationship I'll wait a few
-seconds
+neighbor relationship 176.654845  I'll wait a few
+seconds 178.868240 
 okay now let's confirm with a show
-command do show IP ospf neighbor
-there it is r1 and r4 are OSPF neighbors
-next let's check out our to show IP ospf
-neighbors it's formed a relationship
-with r1 but not r3 show IP protocols I
+command  188.140761 do show IP ospf neighbor 192.110365 
+there it is r1 and r4 are OSPF neighbors 196.496511 
+next let's check out our to 201.877490  show IP ospf
+neighbors 206.785032  it's formed a relationship
+with r1 but not r3  211.589782 show IP protocols 213.702053  I
 don't see any problems here 10.12 da da
-o is in area 1 and 10.20 300 and the
-loopback interface are in area 0 show IP
-interface brief here's our issue it's
+o is in area 1 220.290720  and 10.20 300 and the
+loopback interface are in area 0 225.052865  show IP
+interface brief 228.620095  here's our issue 231.435970  it's
 not an OSPF configuration issue the f20
 interface itself is administratively
-down show run there you can see it has
-the shutdown command configured compte
-interface f2 0 no shutdown ok now let's
+down  237.637011 show run  239.809740 there you can see it has
+the shutdown command configured  246.116906 compte
+interface f2 0 no shutdown 251.782698  ok now let's
 see if it's forming a OSPF neighbor ship
-with r3 do show IP ospf neighbor that's
+with r3  258.202552 do show IP ospf neighbor 261.894614  that's
 odd
 r2 still isn't forming an OSPF
-relationship with r3
+relationship with r3 267.109468 
 well we fix the issue here on r2 so
-let's go on r3 enable show IP ospf
-neighbor so r3 has 1 OSPF neighbor r5
-show IP protocols can you spot the issue
-on r3
+let's go on r3 273.162072  enable show IP ospf
+neighbor  279.790092 so r3 has 1 OSPF neighbor 284.236426  r5
+show IP protocols 288.534051  can you spot the issue
+on r3 292.298613 
 it's 10.20 300 network should be in area
-0 not area 2 coughed T router OSPF one
-network 10.23 oh-oh-oh-oh-oh 255 area 0
-ok now let's wait a few seconds
+0  296.474988 not area 2  297.879655 coughed T router OSPF one
+network 10.23.0.0 0.0.0.255 area 0 309.424030 
+ok now let's wait a few seconds 312.228801 
 okay and now let's check and see if it's
-forming a SPF neighbor ship with our to
-do show IP ospf neighbor okay there it
-is r2 and r3 are now OSPF neighbors
-finally let's see what's wrong on r5 an
-able show IP ospf neighbor so r5 has
+forming a SPF neighbor ship with our to 325.369738 
+do show IP ospf neighbor  330.130071 okay there it
+is r2 and r3 are now OSPF neighbors 335.647905 
+finally let's see what's wrong on r5  339.658134 an
+able show IP ospf neighbor 346.475551  so r5 has
 successfully become OSPF neighbors with
-r3 however in the lab instructions it
+r3  352.123426 however in the lab instructions it
 says that the ropes r5 is receiving
-aren't being properly summarized show IP
-route indeed r5 should be receiving a
-10000 / 8 summary but it's receiving
-individual network routes instead so
+aren't being properly summarized  358.895551 show IP
+route  361.614821 indeed r5 should be receiving a
+10.0.0.0 / 8 summary but it's receiving
+individual network routes instead  371.214009 so
 there's probably another issue on r3
-let's go back let's see how or if r3 is
-summarizing do show run area to range
-10000 to 5500 there's the problem it's
+let's go back  375.157571 let's see how or if r3 is
+summarizing  380.474341 do show run area to range
+10.0.0.0 to 5500 392.526404  there's the problem it's
 an easy mistake to make because you want
-to advertise the summary to area 2 you
+to advertise the summary to area 2 398.184821  you
 might want to use the area to range
-command however the correct answer is
-area 0 range I'll copy this command and
-then paste it here and cancel it with no
-now let's put in the correct command
+command  401.278321 however the correct answer is
+area 0 range 405.034175  I'll copy this command 409.541112  and
+then paste it here and cancel it with no 413.817882 
+now let's put in the correct command 416.561777 
 area 0 range
-10000 255 0 0 0 remember the area range
-command uses a regular mask not a
-wildcard mask ok let's go back to our 5
+10.0.0.0 255 0 0 0  425.834277 remember the area range
+command uses a regular mask 429.385715  not a
+wildcard mask  431.245819 ok let's go back to our 5
 and see if it's receiving the summary
-read show IP route okay there it is we
-have successfully fixed the problems
-that's all for this lab
+read  435.636236 show IP route 440.628590  okay there it is we
+have successfully fixed the problems 446.197507 
+that's all for this lab 448.028402 
 thank you for watching I hope this lab
-and video have been helpful for you
+and video have been helpful for you 454.941277 
 please subscribe for future labs like
-this which will be released weekly if
+this which will be released weekly  459.198569 if
 you have requests for any specific labs
-let me know in the comment section if
+let me know in the comment section 463.718569  if
 you want to support my channel I accept
 Bitcoin and etherium donations via the
-addresses in the description I am also a
+addresses in the description  470.168715 I am also a
 brave verified publisher and accept bat
 or basic attention token donations in
 the brave browser
+ 479.269757 
+ 479.269757 
+ 479.269757 
