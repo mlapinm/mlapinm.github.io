@@ -1,0 +1,27 @@
+.audio {
+    width: 100%;
+}
+
+#id_text{
+    width: 100%;
+    height: 20vh;
+}
+
+.play{
+    height: 60vh;
+}
+
+.stop{
+    height: 20vh;
+}
+
+.btn_big_play{
+    height: 100%;
+    width: 100%;
+}
+
+.btn_big_stop{
+    height: 100%;
+    width: 100%;
+}
+
