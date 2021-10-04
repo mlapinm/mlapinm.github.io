@@ -357,9 +357,8 @@ $(() => {
     }
 
     function timeToMinut(time){
-        let t2 = 0 
-		//time = Math.float(time)
-		t2 = Math.floor(time/60) + ':' 
+      let t2 = 0 
+	  	t2 = Math.floor(time/60) + ':' 
         + Math.floor(time%60)
         return t2
 
@@ -367,8 +366,6 @@ $(() => {
 
     function appendText(text){
         let txt = $('#id_text')[0].value
-
-        // $('#id_text').append(' ' + text)
         $('#id_text')[0].value = txt + ' ' + text
     }
 
@@ -379,9 +376,8 @@ $(() => {
             audio.play()
         }else{
             current = audio.currentTime 
-            // $('.log2').text('' + current)
-            // $('.log2').text('' + timeToMinut(current))
-            appendText(timeToMinut(current) + ' ' + current.toFixed(6))
+
+            appendText('' + current.toFixed(6))
             audio.pause()
 
         }
@@ -393,11 +389,8 @@ $(() => {
             audio.play()
         }else{
             current = audio.currentTime 
-            // $('.log2').text('' + current)
-            // $('.log2').text('' + timeToMinut(current))
-            appendText(timeToMinut(current) + ' ' + current)
+            // appendText('' + current.toFixed(6))
             audio.pause()
-
         }
     })
 
@@ -431,16 +424,55 @@ $(() => {
         pause = true
         current = current.toFixed(6)
         // appendText(timeToMinut(current) + ' ' + current)
-        navigator.clipboard.writeText(current + ' ')
+        navigator.clipboard.writeText(' ' + current + ' ')
 
     });
 
+    function insertText(pos, text){
+      let text0 = textArea[0].value
+      textArea[0].value = text0.slice(0, pos) + text + text0.slice(pos)
+      
+    }
+
+    textArea.click(() => {
+      pos = textArea[0].selectionStart
+      pos2 = textArea[0].selectionEnd
+      if( !pause && pos == pos2){
+        insertText(pos, ' ' + current.toFixed(6) + ' ')
+        textArea[0].selectionStart = pos
+        textArea[0].selectionEnd = pos
+      }
+      if( !pause && pos != pos2){
+        pause = true
+      }
+
+      log1.text(''+ pos + ' ' + pos2)
+    })
+
+
     $('.copy').click(() => {
       let text  = textArea[0].value
-      log1.text(text)
-
+      navigator.clipboard.writeText(text)
     })
-        
+
+    $(document).ready(function(){ 
+      document.oncontextmenu = function() {return false;}; //отключить выпадающее меню
+    
+      $(document).mousedown(function(e){ 
+        if( e.button == 2 ) { //2  - правый клик, 3 - средний клик
+          pause = pause ? false : true
+          if( !pause){
+              audio.play()
+          }else{
+              current = audio.currentTime 
+              // appendText('' + current.toFixed(6))
+              audio.pause()
+          }
+            return false; 
+        } 
+        return true; 
+      }); 
+    });
 
 
 })
