@@ -1,13 +1,18 @@
 $(() => {
-  $('.log3').text()
-  // let num = 33.33
-  // $('.log3').text(num.toFixed(6))
+
     
     
     var audio = $('.audio')[0]
+    let textArea = $('#id_text')
+    let log1 = $('.log1')
+
     let timerId = null
     let pause = true
     let current = 0
+
+    // textArea.text('1  2  3  4  5')
+    textArea[0].value = '1  2  3  4  5'
+
 
     startTimer()
     create()
@@ -345,8 +350,8 @@ $(() => {
             }else{
                 pause = false
             }
-            $('.log3').text('' + current)
-            $('.log1').text( ' '
+            $('.log2').text('' + current)
+            $('.display').text( ' '
             + timeToMinut(current)+ '  ' + Math.floor(current) + t1)
         }, 500)
     }
@@ -374,8 +379,8 @@ $(() => {
             audio.play()
         }else{
             current = audio.currentTime 
-            $('.log2').text('' + current)
-            $('.log2').text('' + timeToMinut(current))
+            // $('.log2').text('' + current)
+            // $('.log2').text('' + timeToMinut(current))
             appendText(timeToMinut(current) + ' ' + current.toFixed(6))
             audio.pause()
 
@@ -388,8 +393,8 @@ $(() => {
             audio.play()
         }else{
             current = audio.currentTime 
-            $('.log2').text('' + current)
-            $('.log2').text('' + timeToMinut(current))
+            // $('.log2').text('' + current)
+            // $('.log2').text('' + timeToMinut(current))
             appendText(timeToMinut(current) + ' ' + current)
             audio.pause()
 
@@ -399,13 +404,13 @@ $(() => {
 
 
     $('.btn_back').click(() => {
-        $('.log3').text('btn_back')
+
         audio.currentTime -=1 
         current = audio.currentTime
     })
 
     $('.btn_big_stop').click(() => {
-        $('.log3').text('btn_back')
+
         audio.currentTime -=1 
         current = audio.currentTime
     })
@@ -413,7 +418,7 @@ $(() => {
     
 
     $('.btn_toward').click(() => {
-        $('.log3').text('btn_toward')
+
         audio.currentTime +=1 
         current = audio.currentTime
     })
@@ -429,6 +434,12 @@ $(() => {
         navigator.clipboard.writeText(current + ' ')
 
     });
+
+    $('.copy').click(() => {
+      let text  = textArea[0].value
+      log1.text(text)
+
+    })
         
 
 
