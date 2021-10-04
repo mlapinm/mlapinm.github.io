@@ -1,101 +1,102 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.944354 you can download the lab
+file from the link in the description 8.158166 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this in this
+description 15.398416 also please subscribe to the
+channel for more labs like this 19.315166 in this
 lab we will troubleshoot inter VLAN
-routing in these 2 small networks which
-we just configured in the previous lab I
+routing in these 2 small networks 24.991082 which
+we just configured in the previous lab 27.470603 I
 have made one miss configuration on each
-networking device see if you can find
-and fix the errors first let's test the
-network of PC one switch 1 and PC 2 I'll
+networking device 31.693791 see if you can find
+and fix the errors 34.819666 first let's test the
+network of PC one switch 1 and PC 2 42.128041 I'll
 try a ping from PC 1 in VLAN 10 to PC 2
-in VLAN 20 ping 1002 10
-it fails let's investigate on switch one
-enable show IP interface brief looks
+in VLAN 20 48.546457 ping 10.0.2.10
+it fails 59.363061 let's investigate on switch one
+61.703019 enable show IP interface brief 68.612935 looks
 like the VLAN 10 and VLAN 20 interfaces
 have the correct IP addresses configured
-show VLAN brief here's our problem
-the fastethernet 0/1 interface to which
+74.734310 show VLAN brief 77.801518 here's our problem
+80.925476 the fastethernet 0/1 interface to which
 pc one is connected has been placed in
-v-line 11 not VLAN 10
-let's put f01 into the correct VLAN and
-see if that solves our issue coffee/tea
+VLAN 11 not VLAN 10
+88.333267 let's put f01 into the correct VLAN and
+see if that solves our issue 94.071517 conf t
 interface f01 switch port access VLAN 10
-I'll delete VLAN 11 also since we're not
-using it exit no VLAN 11 do show VLAN
-brief ok
-our VLAN configuration looks good let's
-try that ping from pc1 again ping 1002
-10 this time the ping is successful so
+102.148767 I'll delete VLAN 11 also since we're not
+using it 106.429829 exit no VLAN 11 do show VLAN
+brief 114.403454 ok
+our VLAN configuration looks good 117.197787 let's
+try that ping from pc1 again 119.642662 ping 10.0.2.10 this time the ping is successful 129.678995 so
 we have fixed the issue on this network
-now let's test the issue on the next
-network I'll try to ping from PC 3 in
-VLAN 30 to pc 4 in VLAN 40 ping 1004 10
-the ping is not successful so let's find
+132.745953 now let's test the issue on the next
+network 136.674848 I'll try to ping from PC 3 in
+VLAN 30 to pc 4 in VLAN 40 143.479618 ping 10.0.4.10
+the ping is not successful 155.479513 so let's find
 the issues there should be one issue on
-our two and one issue on switch to
-according to the lab instructions I'll
-investigate on our two first enable
+r2 and one issue on switch 2
+according to the lab instructions 163.502117 I'll
+investigate on our two first 166.339887 enable
 there could be a few problems here like
 incorrect IP addresses or encapsulation
 dot1q configurations on the sub
-interfaces I'll use show running config
-this time so run our interface Gigabit
+interfaces 177.838699 I'll use show running config
+this time 181.134157 show run our interface Gigabit
 Ethernet 0 0 is not shutdown and 2 sub
-interfaces are configured they are
+interfaces are configured 190.755052 they are
 assigned to the proper VLANs 30 and 40
 however look at the IP address on the
-dot 30 sub-interface the VLAN 30 subnet
-is 10030 / 24 so we should fix that
-Koff t interface g0 0.30 IP address 1003
-1 255 255 255 0 do show IP interface
-brief ok now it has the correct IP
+dot 30 sub-interface 198.040156 the VLAN 30 subnet
+is 10.0.3.0 / 24 204.193593 so we should fix that
+conf t interface g0 0.30 IP address 10.0.3.1 255 255 255 0 220.132655 do show IP interface
+brief 224.002592 ok now it has the correct IP
 address so we fixed the issue on r2
-let's go to switch to next enable so the
+229.491717 let's go to switch 2 next 233.948717 enable so the
 correct configuration on switch 2 should
 be f01 connected to pc 3 in VLAN 30 and
-f0 to connected to pc 4 in VLAN 40 and
-g0 one connected to r2 should be a trunk
-let's check show VLAN brief fast
+f0 2 connected to pc 4 in VLAN 40 248.734071 and
+g0 1 connected to r2 should be a trunk
+253.174133 let's check 255.386945 show VLAN brief fast
 ethernet 0 1 & 0 2 are in the correct
-VLANs show interfaces trunk however
+VLANs 263.318049 show interfaces trunk 266.562049 however
 nothing appears with the show interfaces
-trunk command show run
-there's our problem Gigabit Ethernet 0 1
-is configured as an access port actually
+trunk command 270.489069 show run
+272.703735 there's our problem Gigabit Ethernet 0 1
+is configured as an access port 281.473860 actually
 in the previous show VLAN brief command
 you could see it in VLAN 1 that means it
 won't pass data from either VLAN 30 or
 VLAN 40
-let's properly configure it as a trunk
-compte interface g0 1 switch port mode
-trunk do show interfaces trunk ok now we
+292.524901 let's properly configure it as a trunk
+296.068109 conf t interface g0 1 switch port mode
+trunk 303.087254 do show interfaces trunk 307.201609 ok now we
 can see the gig 0 1 interface is a trunk
-and let's check that VLAN configuration
-once more do show VLAN brief it is also
-no longer listed in VLAN 1 so our inter
+312.259338 and let's check that VLAN configuration
+once more 315.133441 do show VLAN brief 318.338254 it is also
+no longer listed in VLAN 1 322.186524 so our inter
 VLAN routing in this network should be
-properly configured let's try that ping
-again once more from PC 3 to PC for ping
-1004 10
+properly configured 327.474607 let's try that ping
+again once more from PC 3 to PC 4 333.505919 ping
+10.0.4.10
 okay this time the ping works
-we have successfully fixed the problems
-that's all for this lab thank you for
+348.587710 we have successfully fixed the problems
+351.078085 that's all for this lab 353.004751 thank you for
 watching I hope this lab and video have
-been helpful for you please subscribe
+been helpful for you 360.723896 please subscribe
 for future labs like this which will be
-released weekly if you have requests for
+released weekly 365.381729 if you have requests for
 any specific labs let me know in the
-comments section if you want to support
+comments section 370.757187 if you want to support
 my channel I accept the Bitcoin and
 aetherium donations via the addresses in
-the description I am also a great
+the description 377.643999 I am also a great
 verified publisher and accept bat or
 basic attention token donations in the
 brave browser
+386.603937 
+386.603937 
+386.603937 
