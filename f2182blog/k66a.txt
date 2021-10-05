@@ -1,95 +1,99 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab  4.106553 you can download the lab
+file from the link in the description 8.113877  if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this and
+description 15.613401  also please subscribe to the
+channel for more labs like this 20.112789  and
 share these videos with anyone else
-studying for the CCNA in this lab we
+studying for the CCNA  23.571746 in this lab we
 will troubleshoot the GRE tunnel
-configuration from the previous lab the
+configuration from the previous lab  29.914829 the
 GRE tunnel should be working with E I gr
-P over it so pc1 & pc2 can reach each
-other there are two misconfigurations on
-each router let's get started I'll go on
-r1 first enable show IP interface brief
-the tunnel interface is up down so it's
-not working notice the error message
-we're getting temporarily disabled due
-to recursive routing this is a common
-problem in tunnel configuration show
-interface tunnel 0 tunnel source of
-serial zero zero zero is okay but look
-at the destination the destination has
+P over 34.242402  it so pc1 & pc2 can reach each
+other  36.850044 there are two misconfigurations on
+each router  40.116098 let's get started 41.801699  I'll go on
+r1 first  46.278275 enable show IP interface brief 53.592742 
+the tunnel interface is up down  57.130588 so it's
+not working 58.802787  notice the error message
+we're getting  62.496325 temporarily disabled due
+to recursive routing 66.734987  this is a common
+problem in tunnel configuration  70.657776 show
+interface tunnel 0 74.673921  tunnel source of
+serial zero zero zero is okay 79.194170  but look
+at the destination 81.713150  the destination has
 to be the address of the physical
-interface which is at the other end of
-the tunnel not the tunnels address
-itself that's what's causing the
-recursive routing error message call T
-interface tunnel zero tunnel destination
-200 oh oh - okay that should end the
-error messages let's check the AIG RP
-configuration here to do show IP
-protocols routing for networks 1001 0/24
-and 100 0 0 / 30 there's a problem
+interface  86.861086 which is at the other end of
+the tunnel 88.497164  not the tunnels address
+itself  90.642107 that's what's causing the
+recursive routing error message 94.580814  call T 98.475576 
+interface tunnel zero 100.660678  tunnel destination
+200 oh oh -  106.685871 okay that should end the
+error messages 110.909930  let's check the AIG RP
+configuration  here to  116.823898 do show IP
+protocols  119.093557 routing for networks 1001 0/24 126.039839 
+and 100 0 0 / 30 129.025666  there's a problem 131.354986 
+
 we want to activate a idrp on the G zero
-zero interface which we are and the
-tunnel interface 100 euro / 30 which is
-the s zero zero zero interface isn't the
-tunnel interface it's the tunnel source
-let's change that router ew g RP 100 no
-network 100 oh oh oh oh oh three network
-192.168.1.0 oh oh oh three end ok we've
-solved two problems here on our one
+zero interface which we are  136.935326 and the
+tunnel interface  139.609316 100 euro / 30  142.825915 which is
+the s zero zero zero interface 146.021992  isn't the
+tunnel interface  148.041357 it's the tunnel source 149.472468 
+let's change that 151.270608  router ew g RP 100  155.140064 no
+network 100 oh oh oh oh oh three  162.043828 network
+192.168.1.0 oh oh oh three  end  171.998499 ok we've
+solved two problems here on our one 174.624031 
 however there are still problems on our
-two so our tunnel won't be working yet
-let's go on our to enable I'll quickly
+two so our tunnel won't be working yet 179.138657 
+let's go on our to 182.499451  enable I'll quickly
 check the EIG RP configuration here on
-our to show IP protocols
-EW GFP is activated for 1002 0/24 which
-is G 0 0 and 192.168.1.0 / 30 which is
-the tunnel interface so the AI g RP
-configuration looks good let's check the
-tunnel show interface Tunnel zero the
-tunnel destination is correct but the
-source isn't the tunnel source is the
-inside interface Gigabit Ethernet 0 0
+our to  191.521696 show IP protocols 194.224666 
+EW GFP is activated for 1002 0/24  201.604009 which
+is G 0 0 and 192.168.1.0 / 30  207.124077 which is
+the tunnel interface 208.695052  so the AI g RP
+configuration looks good  211.668317 let's check the
+tunnel  214.875233 show interface Tunnel zero 218.337025  the
+tunnel destination is correct  222.834258 but the
+source isn't 224.783170  the tunnel source is the
+inside interface Gigabit Ethernet 0 0 230.029224 
 but it should be the interface connected
-to the service provider serial 0 0 0
-Koff t interface tunnel 0 tunnel source
-s 0 0 0 do show IP interface brief the
-tunnel still isn't up let's check one
-other important thing do show IP route
+to the service provider  233.928453 serial 0 0 0 235.745188 
+Koff t 238.070040  interface tunnel 0  240.554122 tunnel source
+s 0 0 0 244.575211  do show IP interface brief 248.089564  the
+tunnel still isn't up 252.460789  let's check one
+other important thing  255.272988 do show IP route 258.771310 
 there is no route allowing us to reach
-the tunnel destination of 100 oh oh -
+the tunnel destination of 100 oh oh - 268.282059 
 remember the tunnel destination address
-must be reachable let's configure a
+must be reachable  271.795256 let's configure a
 static default route pointing to the
-service provider exit IP route oh oh oh
-oh oh oh oh oh 201 do show IP interface
-brief okay looks like it's up now let's
-try to ping the other end do ping
-192.168.1.1 okay it's working now
+service provider 276.748589  exit IP route oh oh oh
+oh oh oh oh oh 201 288.686412  do show IP interface
+brief  292.166367 okay looks like it's up now  295.059609 let's
+try to ping the other end 297.719020  do ping
+192.168.1.1 302.225097  okay it's working now 308.741401 
 now are we getting the EIG our peer out
-to our ones internal network do show IP
-route there it is 1001 Oh finally let's
-try a ping from PC to 2 PC one ting 1001
-dot 100
-okay our ping worked we have solved the
-issues and fixed the GRE tunnel that's
-all for this lab thank you for watching
+to our ones internal network  313.623827 do show IP
+route 316.440766  there it is  319.664893 1001 Oh 322.773714  finally let's
+try a ping from PC to 2 PC one 326.036979  ting 1001
+dot 100 334.343260 
+okay our ping worked 345.845981  we have solved the
+issues and fixed the GRE tunnel  349.169744   that's
+all for this lab 351.091876  thank you for watching
 I hope this lab and video have been
-helpful for you please subscribe for
+helpful for you  359.362375 please subscribe for
 future labs like this which will be
-released weekly if you have requests for
+released weekly 363.826547  if you have requests for
 any specific labs let me know in the
-comment section if you want to support
+comment section 369.069472  if you want to support
 my channel I accept Bitcoin and
 aetherium donations via the addresses in
-the description I am also a brave
+the description  377.059019 I am also a brave
 verified publisher and accept bat or
 basic attention token donations in the
 brave browser
+ 385.510583 
+ 385.510583 
+ 385.510583 

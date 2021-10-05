@@ -1,123 +1,126 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab  5.435691 you can download the lab
+file from the link in the description 8.416915  if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this and
+description 16.768412  also please subscribe to the
+channel for more labs like this  21.195781 and
 share these videos with anyone else
-studying for the CCNA in this lab we
-will configure a GRE tunnel gr e stands
-for a generic routing encapsulation r1
-and r2 are not directly connected
+studying for the CCNA  24.611904 in this lab we
+will configure a GRE tunnel  29.650566 gr e stands
+for a generic routing encapsulation 34.841654  r1
+and r2 are not directly connected 38.962765 
 however we can use GRE to create a
-virtual tunnel between them which will
+virtual tunnel between them 44.001087  which will
 enable them to behave as if they are
-directly connected and their tunnel
+directly connected  48.163854 and their tunnel
 interfaces will have IP addresses from
-the same network 192.168.1.0 / 30 we
+the same network 52.668820  192.168.1.0 / 30  56.484738 we
 will then configure a IG RP on these
-interfaces so they can learn about each
-other's internal networks the
-configuration is quite simple so let's
-get started I'll start on r1 first
-enable conf t we have to make a tunnel
-interface on the router this isn't a
-physical interface on the device but a
-logical interface to which we will
-assign an IP address you can type
-interface tunnel 0 or the fast and easy
-way as interface t0 let's assign an IP
-address to it IP address 192.168.1.1 255
-dot 255 dot 255 dot 255 @ UNASUR s--
-which interface do you think will be the
-source in this case it's the s 0 0 0
-interface because that's the interface
-we will actually be using to reach r2
-via the service provider network so
-tunnel source s 0 0 0
-next to the tunnel destination tunnel
-destination now what IP address do you
-think is correct here
+interfaces  60.658910 so they can learn about each
+other's internal networks  63.520520 the
+configuration is quite simple 66.686393  so let's
+get started 68.000996  I'll start on r1 first 71.318978 
+enable conf t 76.125803  we have to make a tunnel
+interface on the router 79.925123  this isn't a
+physical interface on the device  but a
+logical interface  84.759408 to which we will
+assign an IP address 87.100609  you can type
+interface tunnel 0 91.878432  or the fast and easy
+way as interface t0 95.397616  let's assign an IP
+address to it 99.366890IP address   192.168.1.1 255
+dot 255 dot 255 dot 25599.366890 107.736028  @ UNASUR s--
+ 111.446729 which interface do you think will be the
+source  115.121400 in this case it's the s 0 0 0
+interface  119.873010 because that's the interface
+we will actually be using to reach r2 123.892761 
+via the service provider network 126.370470  so
+tunnel source s 0 0 0 130.879223 
+next to the tunnel destination 134.735618  tunnel
+destination 137.532647  now what IP address do you
+think is correct here 141.000992 
 it's the IP address on r2 s s0 0 0
-interface the one facing the service
-provider so 200 oh oh - that's all there
-is to it now let's go on our to enable
-compte interface tunnel 0 IP address
-192.168.1.1 fifty five to fifty five to
-five to the source and destination will
+interface  146.182669  the one facing the service
+provider 148.683712  so 200 oh oh -  152.968270 that's all there
+is to it  154.685776 now let's go on our to 158.296728  enable
+compte 162.385844  interface tunnel 0  165.873984 IP address
+192.168.1.1 170.370900  fifty five to fifty five to  
+five to 174.382465the source and destination will
 be the opposite of our ones
-configuration the source will be R to s
-s 0 0 0 interface and the destination R
-1 s s 0 0 0 interface tunnel source s 0
-0 0 tunnel destination 100 odo - ok
+configuration  179.252237 the source will be R to s
+s 0 0 0 interface  184.895775 and the destination R
+1   s s 0 0 0 interface  188.789312 tunnel source s 0
+0 0  193.678835 tunnel destination 100 odo - ok 199.295502 
 that's all there is to configuring the
-tunnel
+tunnel 203.076205 
 however I've missed one very important
-thing do show IP route Artoo's tunnel
-destination is 100 oh oh - but it has no
-idea how to get there if I try to ping
-our one side of the tunnel it will fail
-do ping 192.168.1.1 no response let's
+thing  208.050355 do show IP route 211.004346  Artoo's tunnel
+destination is 100 oh oh -  216.222804 but it has no
+idea how to get there  219.401602 if I try to ping
+our one side of the tunnel 222.862123  it will fail 223.743824 
+do ping 192.168.1.1  228.795502 no response  235.803076 let's
 configure a static default route via SPR
-to exit IP route
-oh-oh-oh-oh-oh-oh-oh-oh-oh 201 now we
-have to do the same on our one exit IP
+to 240.393280  exit IP route
+oh-oh-oh-oh-oh-oh-oh-oh-oh 201 250.965547  now we
+have to do the same on our one  254.287611 exit IP
 route
 oh-oh-oh-oh-oh-oh-oh-oh-oh
-101 keep in mind it doesn't have to be a
-default route the important thing is
+101 266.663869  keep in mind it doesn't have to be a
+default route 270.203846  the important thing is
 that the routers can reach the IP
 addresses configured as the tunnel
-destination okay now r1 and r2 can reach
-each other let's try to ping our two
-side of the tunnel from here on r1 do
-ping 192.168.1.2 okay it works this time
-let's check the interface do show IP
-interface brief our tunnel interface is
-up and up do show interface tunnel zero
+destination 276.339629  okay now r1 and r2 can reach
+each other 281.472010  let's try to ping our two
+side of the tunnel from here on r1  285.839243 do
+ping 192.168.1.2 291.248676  okay it works this time 297.997792 
+let's check the interface 300.178563  do show IP
+interface brief  303.677021 our tunnel interface is
+up and up  307.188041 do show interface tunnel zero 311.689447 
 there's the tunnel source and
-destination we configured and you can
+destination we configured  316.249674   and you can
 see the tunnel protocol is gr e being
-transported over IP
+transported over IP 322.465569 
 ok now let's configure AI GRP over the
-tunnel router ERP and I'll use an a s
-number of 100 so I want to advertise the
-inside network so Network 1000 100 200
-255 I used the exact wildcard mask but
-remember it's not always needed for EIG
-RP just network 10000 would have
+tunnel  327.053800 router ERP  330.731510 and I'll use an a s
+number of 100 333.784708  so I want to advertise the
+inside network  337.344776 so Network 1000 100 200
+255 344.164503  I used the exact wildcard mask 346.957723  but
+remember it's not always needed for EIG 
+RP 349.986816  just network 10000 would have
 activated AI GRP on the G 0 0 interface
-as well
+as well 358.386203 
 okay now let's activate di GRP on the
-tunnel network 192.168.1.0 again I'll
-use the exact wildcard mask
-0:03 ok let's do the same on our two
-rotary IG RP 100 Network 1002
-oh-oh-oh-oh 255 network 192.168.1.0 oh
-oh oh 3 immediately we get a message
-saying we have a new AI GRP adjacency Oh
-where the tunnel interface and the
+tunnel 363.100376  network 192.168.1.0 again I'll
+use the exact wildcard mask 370.055070 
+0:03  372.551124 ok let's do the same on our two 374.968902 
+rotary IG RP 100 380.397859  Network 1002
+oh-oh-oh-oh 255  386.406884 network 192.168.1.0 oh
+oh oh 3 392.406430  immediately we get a message
+saying we have a new AI GRP adjacency 397.856702  Oh
+where the tunnel interface 398.977904  and the
 neighbor address is our ones tunnel
-address 192.168.1.1 do show IP route
-look are two learned our ones 1001 0/24
-network let's try a ping from PC to 2 PC
-one ping 1001 100
-okay it works our GRE tunnel is up and
-working and we successfully configured a
+address 402.947518  192.168.1.1  405.450148 do show IP route 409.459332 
+look are two learned our ones 412.864570  1001 0/24
+network  415.953776 let's try a ping from PC to 2 PC
+one 420.774434  ping 1001 100 428.740669 
+okay it works  438.750375 our GRE tunnel is up and
+working 441.717586  and we successfully configured a
 IG RP over the tunnel to share the
-inside networks that's all for this lab
+inside   networks 446.579241 that's all for this lab 448.649467 
 thank you for watching I hope this lab
-and video have been helpful for you
+and video have been helpful for you 456.179308 
 please subscribe for future labs like
-this which will be released weekly if
+this which will be released weekly  460.677131 if
 you have requests for any specific labs
-let me know in the comment section if
+let me know in the comment section 465.977086  if
 you want to support my channel I accept
 Bitcoin and aetherium donations via the
-addresses in the description I am also a
+addresses in the description  472.451530 I am also a
 brave verified publisher and accept bat
 or basic attention token donations in
 the brave browser
+ 481.347698 
+ 481.347698 
+ 481.347698 
