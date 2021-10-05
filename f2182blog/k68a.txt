@@ -1,94 +1,100 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab  4.161972 you can download the lab
+file from the link in the description  8.164103 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this and
+description 14.651768  also please subscribe to the
+channel for more labs like this 19.364648  and
 share these videos with anyone else
-studying for the CCNA in this lab we
-will troubleshoot bgp using the same
+studying for the CCNA 22.749568  in this lab we
+will troubleshoot bgp 27.370861  using the same
 network we configured in the previous
-lab there are three misconfigurations
-all on our one let's get started enable
+lab 30.338684  there are three misconfigurations
+all on our one 34.846507  let's get started 36.542765  enable
 our one is displaying lots of messages
-regarding OSPF and BGP let's focus on
-this BGP one first peer in wrong a s
-let's investigate here show IP BGP
-summary notice the bgp router ID of one
-1.1.1 taken from the loopback interface
-just like in Eid RP and OSPF look down
-at our neighbor here 100 0:01 is spr one
-however the AS IS 6500 which is why r1
+regarding OSPF and BGP 45.014466  let's focus on
+this BGP one first 47.953514  peer in wrong a s 50.205985 
+let's investigate here 52.327504  show IP BGP
+summary  56.001087 notice the bgp router ID of one
+1.1.1  60.986371 taken from the loopback interface 62.803808 
+just like in Eid RP and OSPF  65.529341 look down
+at our neighbor here  68.783967 100 0:01 is spr one 72.914965 
+however the AS IS 6500  76.755464 which is why r1
 is displaying the peer in wrong a s
-message SP r 1 is actually in a s 65,000
-one show IP BGP neighbor up here by the
-top you can see BGP state equals idle
-that's the initial BGP state and if a
-wrong peer a s is configured BGP won't
-proceed further than this state let's
-fix it
-coffee tea router bgp 65,000 neighbor
-101 remote a s 65 thousand won
+message  80.684897 SP r 1 is actually in a s 65,000
+one 85.333445  show IP BGP neighbor  89.042628 up here by the
+top you can see BGP state equals idle 96.257866 
+that's the initial BGP state  98.699612 and if a
+wrong peer a s is configured  102.510905 BGP won't
+proceed further than this state 104.944057  let's
+fix it 106.760157 
+coffee tea  108.400882 router bgp 65,000  113.381902 neighbor
+101 remote a s 65 thousand won 119.407027 
 immediately we get a message saying the
-neighbor is up do show IP BGP neighbour
-now the state is established that's what
-we want
+neighbor is up  123.184986 do show IP BGP neighbour 126.375462 
+now the state is established 130.373716  that's what
+we want 131.719815 
+
 however we keep getting these OSPF
-messages something's up there the
+messages 135.744961  something's up there 137.066775  the
 message clearly tells us what's up
-actually mismatch area ID do show IP
-route we aren't getting any OSPF routes
-because of the area ID mismatch do show
-IP protocols there's the problem
+actually  140.462693 mismatch area ID  142.564461 do show IP
+route 145.782398  we aren't getting any OSPF routes 149.291740 
+because of the area ID mismatch  151.739563 do show
+IP protocols  154.898248 there's the problem 158.872715 
 oh SPF is activated on all interfaces in
-area 1 it should be area 0 I'll remove
-the current network statement and fix it
-router OSPF 1 no network
+area 1 162.460221  it should be area 0  164.458452 I'll remove
+the current network statement and fix it 168.271354 
+router OSPF 1  171.671490 no network 173.412125 
 oh-oh-oh-oh 255 255 dot 255 dot 255 area
-1 Network
+1 179.868633  Network
 oh-oh-oh-oh 255 dot 255 dot 255 dot 255
-area 0 ok that should fix our OSPF
-problem although this was an OSPF
-problem it's relevant to BGP because the
+area 0  187.518406 ok that should fix our OSPF
+problem  191.763531 although this was an OSPF
+problem 194.852919  it's relevant to BGP 196.472374  because the
 OSPF problem was causing routes not to
-appear in our ones route table which
-affects BGP there should still be one
-more issue on our one but I'll head to
+appear in our ones route table 201.303100  which
+affects BGP 203.397204  there should still be one
+more issue on our one 206.841148  but I'll head to
 r2 and test if we can reach the external
-server at 1501 enable pin 1500 1
-nope the ping still fail so let's go
-back to our one
+server at 1501 212.078903  enable pin 1500 1 219.115230 
+nope the ping still fail 231.398790  so let's go
+back to our one 233.200196 
 our one should be advertising at 1000s
-516 summary to the service provider
+516 summary to the service provider 242.193688 
 let's check if it's in the rev table on
-our one do show IP route there it is
-10000 slash 16 let's check the BGP table
-show IP BGP however it doesn't show up
-in the BGP table
-let's check the running config do show
-run there's the problem the 10000
+our one  245.311896 do show IP route 248.062690  there it is 251.056431 
+10000 slash 16 253.844821  let's check the BGP table 256.958789 
+show IP BGP  260.067882 however it doesn't show up
+in the BGP table 264.040127 
+let's check the running config  266.573052 do show
+run 269.045365  there's the problem  272.561669 the 10000
 network is configured with a slash 8
-mask although it doesn't appear here
+mask 277.055864  although it doesn't appear here
 because it defaults to the class a
-boundary but remember BGP requires an
-exact match in the router table let's
-fix that Network statement router bgp
-65,000 no network 10000 Network 10000
-mask 255.255.255.0 dot 1 ok the ping
-works now we've successfully solved the
-problems on the network that's all for
-this lab thank you for watching I hope
+boundary 281.323982  but remember BGP requires an
+exact match in the router table  285.537859 let's
+fix that Network statement  287.972825 router bgp
+65,000 293.026090  no network  10000 Network 10000
+mask 255.255.255.0 dot 1  304.776180 
+ 328.091847 ok the ping
+works now 329.379806  we've successfully solved the
+problems on the network 332.730441  that's all for
+this lab 334.452731  thank you for watching 338.593525  I hope
 this lab and video have been helpful for
-you please subscribe for future labs
-like this which will be released weekly
+you 341.946949  please subscribe for future labs
+like this which will be released weekly 346.949534 
 if you have requests for any specific
-labs let me know in the comment section
+labs let me know in the comment section 351.451234 
 if you want to support my channel I
 accept Bitcoin and aetherium donations
-via the addresses in the description I
+via the addresses in the description  357.939874 I
 am also a brave verified publisher and
 accept bat or basic attention token
 donations in the brave browser
+ 367.198422 
+ 367.198422 
+ 367.198422 
+
