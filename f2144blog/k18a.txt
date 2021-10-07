@@ -1,0 +1,181 @@
+0.0
+welcome to this free CCNA packet tracer practice lab
+4.345563
+you can download the lab file from the link in the description
+7.628451
+in this lab we will take another look at the port security function of Cisco switches
+13.375586
+specifically we will learn about the sticky MAC address function
+18.143208
+the sticky MAC address function of port security saved secure MAC addresses into the switch configuration
+24.561384
+when they are dynamically learned on a switch port with port security enabled
+28.865184
+try to complete this lab yourself first
+32.105499
+then continue watching this video if you have trouble or watch it after to check your solution
+37.100898
+there are a few more steps in this lab than in my previous labs
+41.728882
+but these are all pretty short steps
+43.440883
+step one is to enable port security on the switch ports connected to end hosts
+49.305773
+let's go on switch one first
+52.136987
+enable counf T interface F 0 2
+59.324556
+remember we have to set the interface as an access port first
+63.868451
+so switch port mode access
+67.024898
+switch port port security
+69.564311
+that's all for switch 1 now let's do the same on switch 2
+73.686722
+enable conf t interface F 0 2 switch port mode access
+82.548547
+switch port port security
+84.993764
+now let's go straight into step 2
+88.467634
+which is to ping from pc1 to pc2
+91.469396
+to generate traffic between them
+93.620753
+remember that no traffic is passing between these pcs by default
+98.490261
+so the switches won't learn the MAC addresses of the PCs
+101.751385
+until we send some traffic between them
+103.983482
+I'll ping from PC one
+106.340348
+ping 192.168.1.12 there we go
+114.831355
+step 3 is to view the secure MAC addresses on switch 1
+120.817022
+I'll go back to switch 1
+123.037859
+and now I'll use the command show port security address
+130.401318
+as in the previous lab
+131.868589
+as you can see there is a dynamically learned secure MAC address on the Fast Ethernet 0 2 interface
+138.927039
+which must be PC ones
+141.475942
+step four says to check the configuration of switch ones Fast Ethernet 0 to interface in the running configuration
+150.981838
+show running config
+154.028618
+here it is as you can see there are only the two commands we entered before
+160.911008
+switch port mode access and switch port port security
+164.928422
+remember this as we will contrast it with sticky mag address configuration later
+170.861465
+step 5 is to save the running config and reload the switch
+175.782073
+I'll use write to save then reload
+180.11067
+ok now the switch is reloading
+184.704112
+step 6 is to view the secure MAC addresses on switch 1 again
+195.112728
+do you think PC ones MAC address will still be saved as a secure MAC address
+200.722924
+we saved the running configuration but PC ones MAC address wasn't anywhere in the running configuration
+208.361641
+so let's check the port security address table again
+213.068455
+enable show port security address
+217.6333
+as you can see PC ones MAC address is no longer present
+222.268412
+dynamically learned secure MAC addresses will not be retained when you restart the switch
+227.983235
+even if you save the running configuration because the address isn't actually entered into the runner configuration when it is dynamically learned
+235.363753
+step 7 is to enable the sticky secure MAC address feature on switch ones f02 interface
+244.266878
+conf t interface f0 2
+249.13973
+now this feature is enabled with this command
+252.65166
+switch port port security MAC address sticky
+258.736498
+that's it
+260.519249
+now let's ping between the PCs again to generate traffic
+264.368246
+on PC one ping 192.168.1.11
+271.617883
+that's all for step 7
+274.760441
+step 8 is to view the secure MAC addresses of switch 1
+281.388544
+then the running config
+283.143796
+so on switch 1 show port security address
+288.849657
+there is PC ones MAC address again
+291.802717
+this time it is listed as a secure sticky address
+295.151737
+what's the difference well let's check the running configuration
+300.03205
+show run as you can see in addition to the three commands we manually configured on the interface
+309.1951
+there is a fourth one which we didn't configure
+311.926622
+switch port port security MAC address sticky
+316.075433
+followed by PC ones MAC address
+318.387568
+this is because we enabled the sticky feature
+322.326921
+when this feature is enabled the switch saves dynamically learned secure MAC addresses to the running configuration of the switch
+329.909723
+step nine is to save the running configuration and reload again
+335.938255
+let's do that
+337.229666
+write reload
+340.319308
+step 10 is to view the secure MAC addresses on switch one once again
+351.921145
+this time do you expect to see PC ones MAC address in the table
+357.277171
+PC ones MAC address was saved to the running configuration of switch 1
+361.95219
+and we saved the running configuration before reloading
+365.295647
+so it should be in the table even after restarting
+368.594705
+let's check
+371.021187
+enable show port security address
+376.133495
+as expected PC ones MAC address is still saved as a secure MAC address on the f02 interface
+384.595637
+so to review without the sticky feature enabled dynamically learned secure MAC addresses are not retained when the switch is reloaded
+393.555175
+the sticky MAC address learning feature however automatically saves these addresses to the running configuration
+400.4179
+and thus will be retained upon reload if the runner configuration is saved
+404.812631
+that's all for this lab
+407.109874
+thank you for watching I hope this lab and video have been helpful for you
+413.389137
+please subscribe for future labs like this which will be released weekly
+418.530425
+if you have requests for any specific labs let me know in the comment section
+423.437822
+if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description
+430.413187
+I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
+438.763736
+438.763736
+438.763736

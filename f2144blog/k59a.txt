@@ -1,0 +1,233 @@
+0.0
+welcome to this free CCNA packet tracer practice lab
+4.710562
+you can download the lab file from the link in the description
+8.746812
+if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description
+15.801604
+also please subscribe to the channel for more labs like this
+19.414374
+in this lab we will troubleshoot the AI GRP network we configured in the previous lab
+26.282749
+I have made one miss configuration per router
+29.994770
+so let's find the issues and get AI GRP working in the network
+33.319603
+I'll get started on our one
+35.662332
+enable let's see if our one has any EIGRP neighbors
+42.433019
+show IP e IG RP neighbors
+46.041935
+nothing however this message is a big hint
+50.433310
+showing a EIGRP neighbors for process 10
+54.213227
+this process number is the autonomous system number
+57.959518
+this network is supposed to be using an a s number of 100
+61.940247
+so run
+64.069059
+here we have all the correct ew g RP configurations
+69.614266
+however because r1 is using an incorrect a s number of 10 none of it works
+76.290641
+conf t 
+79.278307
+let's delete the current ew g RP configuration
+82.024890
+no router EA g RP 10
+85.939994
+do show run
+88.178682
+as you can see that removed all of the EIG RP configurations for a s 10
+94.762911
+now let's reconfigure it with the correct a s number
+98.253431
+router EA g RP 100 network 10.0.0.0 network 1.1.1.1 0.0.0.0 passive interface l 0
+114.260597
+no auto summary
+116.348680
+well as you can see one neighbor has come up r4
+120.580951
+let's see what routes were getting from r 4
+124.398055
+do show IP route
+127.111638
+looks like we're getting quite a few routes already
+130.966867
+however if you look carefully although our neighbor ship with r4 is up and we're receiving reds from it
+137.453075
+we're not getting our 4.4.4.4 for loopback address
+141.893658
+let's see what's wrong on r 4
+144.573700
+enable show IP protocols
+150.710471
+look here
+153.519262
+routing for networks 10.0.0.0 and 44.4.4.4/32
+160.277929
+show IP interface brief
+164.255846
+r 4 is loopback interface has an IP address of 4.4.4.4 not 44.4.4.4
+173.177325
+so there's our problem
+174.384033
+conf t router EIGRP 100
+179.600971
+no network 44.4.4.4 0.0.0.0
+186.385325
+network 4.4.4.4 0.0.0.0 ok
+192.124075
+that should fix it
+193.930908
+I'll just quickly check on r1
+196.053408
+do show IP route
+200.444116
+there it is so we fix the issues on r1 and r4
+205.612762
+now r1 formed a neighbor relationship with our 4 but what about our to
+211.932741
+do show IP EIGRP neighbor
+216.072616
+only our four appears
+219.114178
+let's check out our to
+221.708386
+enable show IP protocols
+227.792740
+can you spot the issue
+230.332510
+r2 is fast ethernet 1 0 interface
+234.772760
+which is used to connect to r1 is configured as a passive interface
+239.122115
+this means r2 will advertise that 10.12.0.0/24 network on f10 to r3
+247.119281
+but it won't form a neighbor relationship with r1 on that interface
+251.090531
+compte router aig RP 100
+256.230614
+no passive interface f10
+259.841551
+there we go immediately we get a message
+263.156801
+do show IP EIGRP neighbor
+266.959156
+there are two is a neighbor with both r1 and r3
+271.807156
+let's see what's wrong on r3
+275.631010
+enable show IP protocols
+281.276197
+everything looks good
+284.671072
+advertising the 3.3.3.3 loopback and 10.0.0.0 interfaces
+292.347010
+the loopback is passive
+295.424905
+show IP e IG RP neighbor
+298.598114
+okay so it's neighbors with r2 and r4 but not r5
+304.557614
+show run
+307.091510
+I don't see any problems with r 3 EIGRP configuration
+313.713385
+so let's check on r 5
+315.449885
+enable show IP protocols
+321.064030
+can you identify the problem here
+325.190447
+under the routing for networks section it lists 10.0.0.0 / 32
+331.845822
+however r5 doesn't have any 10.0.0.0 / 32 interfaces
+337.068947
+do show run
+339.473947
+as you can see the / 32 wildcard mask was added
+345.213987
+so EIGRP isn't activated on r 5s g00 interface
+349.348446
+which has an address in the 10.35.0.0/24 network
+353.739154
+conf t router EIGRP 100
+359.359716
+no network 10.0.0.0
+365.776425
+now there are a couple of ways we could activate EIGRP on the interface
+369.883508
+let's do what is configured on the other routers and just type network 10.0.0.0
+375.690362
+and leave it at that
+377.217695
+remember EIGRP's Network command will default to the class full boundaries in this case a / 8 network
+384.744778
+10.35.0.0 falls within the 10.0.0.0 / 8 network
+392.381652
+so EIGRP is now activated on r 5
+395.781256
+do show IP route
+398.970006
+now we're receiving a EIGRP routs
+402.607590
+however our five is supposed to receive a 10.0.0.0 / 8 summary from our 3
+409.642485
+rather than these individual routs
+411.874215
+this problem is likely on r 3
+415.399568
+let's go back
+416.497047
+do show run
+420.331713
+the IP summary address command isn't configured on the gig 0/0 interface which connects to r 5
+428.050588
+but rather the f10 interface
+430.533817
+let's put it back on the correct interface
+433.596880
+let me copy the command first
+435.915047
+then I'll remove it
+440.428817
+interface f10
+442.798234
+now I'll paste it here
+445.393442
+and then I'll cancel it with no
+449.036692
+ok and now let's put it on g00
+452.726713
+interface g00
+456.835942
+now I'll paste it here
+459.121650
+and there we go
+461.275567
+let's check if r5 is receiving the summary
+464.505400
+do show IP route
+467.781754
+there it is 10.0.0.0 / 8
+473.114400
+okay we have solved all the issues in this network
+476.251942
+that's all for this lab
+477.711358
+thank you for watching I hope this lab and video have been helpful for you
+484.132004
+please subscribe for future labs like this which will be released weekly
+488.455212
+if you have requests for any specific labs let me know in the comment section
+493.260295
+if you want to support my channel I accept Bitcoin and aetherium donations via addresses in the description
+499.775961
+I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
+508.051420
+508.051420
+508.051420

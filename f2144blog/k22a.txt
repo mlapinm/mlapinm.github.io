@@ -1,0 +1,173 @@
+0.0
+welcome to this free CCNA packet tracer practice lab you can download the lab file from the link in the description
+8.006249
+if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description
+15.38991
+this will be a short lab focused on using telnet to connect to Cisco devices
+21.108425
+in a previous lab we configured the console port and use that to connect to a router via PC
+27.400059
+in this lab we will use telnet which allows us to configure a Cisco device by connecting via a regular Ethernet port
+35.221511
+note that although telnet is something you should be familiar with
+40.435432
+it is not something you will likely end up using due to a lack of security
+44.50743
+this is because telnet sends all data in plaintext
+49.260411
+if anyone intercepts that data they can read it including usernames and passwords and other sensitive data
+56.571148
+instead of telnet you will want to use SSH
+60.599827
+which we will cover in another lab
+62.416328
+but with that said telnet is still something you should know
+65.912487
+so let's practice some of the basics in this lab
+68.570006
+as always try to complete the lab yourself first then continue watching this video if you have trouble
+75.355148
+or watch it after to check your solution
+77.266705
+if you haven't learned the commands required to do these tasks yet in your studies
+82.360548
+feel free to just watch the video to learn them
+84.955112
+step one is to configure the IP addresses on switch 1 and R 1
+92.530769
+we will then use these addresses to connect to the devices later in the lab
+96.696031
+let's go on switch 1 first
+99.35214
+enable conf t we will configure the IP address on the VLAN 1 interface
+108.153922
+because a regular switch interface cannot be configured with an IP address
+113.021492
+we have to configure that IP address we use to manage the device on a VLAN interface
+118.481674
+rather than on a physical interface
+120.308253
+so interface VLAN 1
+123.804294
+IP address 192.168.1.2 255.255.255.0
+131.271763
+also I'll use no shutdown to activate it
+134.914793
+now let's configure r1
+137.600192
+enable conf t interface G 0 0 IP address 192.168.1.1 255.255.255.0
+152.16748
+remember router interfaces are administratively down by default so no shutdown
+158.530171
+okay that's all for step 1
+160.685924
+step 2 is to configure a single user on each device
+165.49378
+since we're on our one let's do that first
+168.300749
+exit username cisco password CCNA
+173.869935
+note again that passwords are case sensitive and in this case CCNA is in all capitals
+179.75098
+now let's do the same on switch one
+183.000866
+exit username cisco password CCNA
+189.344313
+step three is to configure the vty lines on switch 1 and R 1
+198.932286
+vty stands for virtual teletype
+203.107727
+and when you create a telnet connection to a Cisco device you will be connecting to one of these vty lines
+208.991201
+there are typically 16 numbered 0 through 15
+213.526021
+although in the running configuration they will typically be displayed as 0 through 4 then 5 through 15
+220.90624
+let's check on switch 1
+223.427913
+do show run
+226.382301
+scroll down to the bottom there we go
+230.841299
+line vty 0 4 meaning line 0 through 4 then line vty 5 15 meaning alliance 5 through 15
+240.39852
+although it is displayed like this in the configuration
+244.030005
+we can simply use the command line vty 0 15 to connect to all lines from 0 through 15
+252.053253
+there we go
+253.009129
+now we have two things to configure here according to the lab instructions
+257.815142
+first require the use of the local user database to connect to the vty lines
+263.91313
+this is the same command we used when configuring the console line in a previous lab
+268.818122
+login local since we only have one user in the local database
+275.411018
+we will have to use the username cisco and password CCNA
+279.158465
+when we try to tell that to this device later
+281.495375
+the next requirement is to allow only telnet connections to the vty lines
+287.676082
+this is done with this command
+290.189487
+transport input now I'll use the question mark to see what options there are all none SSH and telnet
+301.482797
+as I mentioned in the beginning of the video typically you'll be using SSH
+306.921203
+but let's set it to telnet for this lab
+309.487609
+ok now let's do the same configuration on r1
+315.315704
+line vty 0 15 login local transport input telnet
+324.852266
+okay now let's type do show run
+328.554691
+look at the bottom here
+331.250855
+there it is our configurations have been applied to all vty lines
+335.783539
+step four is to attempt to telnet to each device from pc1 on a simulator like packet tracer you simply click on the icons of each device to configure them
+349.020015
+in real situations however you have to connect to the devices from a computer via the console port as we did in a previous lab or by telnet or SSH
+358.528029
+as we're going to try now
+360.0355
+I'll go on PC one
+363.228386
+let's try switch one
+366.614327
+telnet 192.168.1.2 we're asked for the username which is Cisco and our password CCNA in all caps
+378.796651
+there we go
+380.734979
+now we have access to the command line of switch one
+383.18897
+I'll type exit and now let's try our one
+387.866871
+telnet 192.168.1.1 cisco CCNA
+396.242976
+there we go now we have access to the command line of r1
+399.767366
+that's all for this lab
+402.176763
+thank you for watching I hope this lab and video have been helpful for you
+409.355247
+please subscribe for future labs like this
+412.655189
+which will be released weekly
+415.151365
+if you have requests for any specific labs let me know in the comment section
+419.076363
+if you want to support my channel please consider contributing to my patreon
+424.444783
+patreon comm slash Jeremy's IT lab
+427.789208
+I accept Bitcoin and aetherium donations via the addresses in the description
+433.315875
+I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
+442.150048
+442.150048
+442.150048

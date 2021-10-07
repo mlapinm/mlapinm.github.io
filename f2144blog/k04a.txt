@@ -1,0 +1,253 @@
+0.0
+welcome to this free CCNA packet tracer practice lab
+5.832196
+you can download the lab file from the link in the description
+9.461726
+in this lab we will be working with two routers r1 and r2 and two switches switch 1 and switch 2
+18.220798
+we will configure and test a serial connection between the two routers
+23.053658
+note that I have already configured the host names of each of the devices beforehand
+28.479349
+try to complete the lab yourself first
+30.995791
+then continue watching this video if you have trouble
+34.099378
+or watch after to check your solution
+37.066538
+step one asks us to use CVP to discover which interfaces are used to connect the routers and switches
+45.431644
+if you have the option always show port labels and logical workspace in the Preferences menu of packet tracer enabled
+53.234291
+the labels will appear next to the devices
+55.786652
+but I have this option turned off
+57.795282
+we will use CDP or Cisco discovery protocol to identify the interfaces
+65.096571
+CDP is a very useful tool
+68.209152
+and I will create a lab dedicated to using CDP in the future
+71.969467
+but for this lab all we need to know is one command
+75.173503
+that is show CDP neighbors
+78.333514
+let's give it a try on switch one first
+81.059055
+I'll type in able to enter privileged exec mode
+85.571686
+this is where we use the command
+88.506662
+show CDP neighbors
+90.417569
+as you can see switch 1 is connected to r1
+95.005788
+and the local interface meaning the interface on this device is fastethernet 0/1
+100.969255
+let's go to r1
+103.046601
+enable show CDP neighbors
+107.714236
+our one is connected to switch 1 on the Fast Ethernet 0 interface
+113.346247
+but something's missing
+115.672844
+where's our - well because I have linked lights enabled on packet tracer
+120.699267
+you might have noticed something is wrong
+123.420657
+let's troubleshoot a little bit
+125.766684
+think of potential causes first at layer 1 or the physical layer of the OSI model
+132.031954
+is the cable plugged in
+134.467056
+yes it is
+135.60099
+as you can see here in packet tracer
+137.451453
+are the interfaces turned on
+139.987576
+let's check
+141.026169
+I'll use the show IP interface brief command to check
+146.669395
+well we were going to use CDP to discover which interface r1 is connected to are two through
+153.622681
+but as we can see there is only one serial interface serial zero
+159.08914
+and it's administrative lead down
+162.101767
+that means if we do a show run command
+164.56889
+which I will do now
+166.199811
+we should see the shutdown command on the serial interface
+169.015846
+I didn't configure this
+171.716357
+this is by default
+172.605723
+let's fix that
+174.007918
+conf no shutdown
+179.757747
+let's check on our to also
+182.39393
+enable show IP interface brief
+186.24296
+again it is shutdown
+188.130114
+conf T interface serial zero no shutdown
+193.791351
+okay
+195.666509
+now let's return to r1
+197.353092
+this can take some time but if I enter show CDP neighbors again
+203.218257
+I should see our two
+205.116741
+there it is
+207.684985
+r1 is connected to our - through the serial zero interface
+211.641346
+let's run the command on our two
+215.513918
+type end to return to privileged exec mode
+219.417508
+show CDP neighbors
+222.974449
+r2 is also connected to r1 through the serial zero interface
+233.130465
+and switch two through the Fast Ethernet zero interface
+236.115336
+finally let's move on to switch two
+240.601434
+enable show CDP neighbors
+246.1742
+as you can see switch 2 is connected to R 2 through the Fast Ethernet 0-1 interface
+252.643814
+step 1 is now complete
+255.471895
+step2 asks us to identify which end of the serial connection is DCE
+265.096818
+and which end is DTE
+267.39343
+in serial connections one side is DCE or data communications equipment
+272.575616
+and one side is DTE or data terminal equipment
+276.184652
+the most important difference between the two is that the DCE device supplies the clock signal that paces the communications
+283.744393
+which will adjust in the next step
+286.779967
+to identify which is which let's go to r1 first
+291.616351
+we'll use the command show controllers serial zero
+295.956611
+if we just type show controllers
+298.823908
+we would be overwhelmed with information about every interface on the router
+303.236244
+so make sure to specify serial zero
+306.247824
+can you find what we're looking for
+309.63548
+there it is
+311.101373
+and this side is the DCE
+313.443728
+you can also see the clock rate mentioned earlier
+316.710507
+well now I know which side is DC e
+320.685413
+that means R 2 should be DTE but let's check anyway
+325.399466
+let's hop onto r2
+328.061367
+show controllers serial zero
+331.053586
+as expected R 2 is DTE
+334.817174
+step two is now complete
+336.833121
+for step three we have to set the clock rate on the DCE end to 64 kilobits per second
+345.587313
+so let's go back to r1
+348.632922
+we have to configure the serial zero interface
+352.524099
+so conf t then interface serial zero
+356.709099
+now we are in interface configuration mode
+359.782783
+the clock rate is set with the clock rate command
+364.041079
+let's use the question mark to see what options we have
+367.792055
+as you can see here these options are listed in bits per second
+372.757799
+our task is to set the speed to 64 kilobits per second
+377.548125
+which is 64,000 bits per second
+380.617687
+so let's do that
+382.182228
+that's all for step three
+384.452651
+we don't have to do anything on the DTE side
+387.003249
+step four tells us to set the IP addresses of the serial interfaces of r1 and r2 to 192.168.0.1 / 24 and 192.168.0.2 /24
+404.778665
+interface configuration mode on r1
+409.050174
+so let's configure r1
+410.87602
+IP address 192.168.1.1 at him this is something you should know if not don't worry about it
+426.513926
+it's 255.255.255.0
+430.565633
+there we go
+432.043959
+now let's do the same on r2
+434.811706
+conf t interface serial zero
+439.66486
+IP address 192.168.0.2
+444.158026
+that's all for step four
+449.659766
+finally Step five asks us to test connectivity between the routers
+456.591307
+since we're already on r2
+458.750807
+let's do it from here
+460.183246
+type end to return to privileged exec mode
+463.268323
+the IP address of our one serial zero interface is 192.168.0.1 so
+470.39099
+ping 192.168.0.1
+474.510172
+as you can see we have connectivity between the routers
+478.626241
+that's all for this lab
+480.434685
+thank you for watching
+484.845029
+I hope this lab and video have been helpful for you
+487.940151
+please subscribe for future labs like this which will be released weekly
+492.652226
+if you have requests for any specific labs let me know in the comment section
+497.972229
+if you want to support my channel I accept Bitcoin donations via the address in the description
+503.863801
+I am also a brave verified publisher
+507.406431
+and accept bat or basic attention token donations in the brave browser
+512.793647
+512.793647
+512.793647

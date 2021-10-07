@@ -1,0 +1,151 @@
+0.0
+welcome to this free CCNA packet tracer practice lab
+5.167103
+you can download the lab file from the link in the description
+8.581871
+in this short lab we will connect to r1 via the console port and configure usernames and passwords
+17.262797
+particularly it's important to know whether usernames and passwords are case sensitive
+21.816759
+so we'll experiment with that in this lab
+24.578764
+try to complete the lab on your own first then continue watching this video if you have trouble
+30.351296
+or watch it after to check your solution
+32.655499
+step one is to use PC one to access r1 via the console port
+41.670304
+PC one is already connected to our ones console port so let's click on PC one
+47.644722
+then click desktop and terminal
+50.723998
+accept the default configurations here and now we're on our one
+54.948878
+next is to create two users on our one
+59.587607
+CCNA in lowercase letters with the password Cisco in lowercase letters and CCNP in lowercase with the password Cisco in uppercase
+70.20123
+so let's go to global config mode
+73.305574
+enable conf t
+76.73268
+you can create users with this command username CCNA password Cisco
+83.459327
+that's it
+84.968655
+now let's create the second user
+87.754053
+username CCNP password Cisco
+91.783489
+with Cisco being an uppercase this time
+94.656661
+now if we log out of the router and then access it again
+99.023858
+we still won't be asked to use a username and password
+102.202123
+we have to tell the console port to require a username and password
+105.847023
+so let's do that
+107.666403
+line console 0
+111.195749
+if you remember when we configured the line password on the console
+115.099835
+we use the command login to make it required to access the console port
+119.456999
+this time however we want to instruct the router to use the local user database instead
+125.718569
+that is done with this command
+128.192131
+login local
+130.333457
+so that's step 2 and step 3
+132.823914
+step 4 is to log out of the router and log in again with each account
+139.543822
+we're going to test whether or not the usernames and passwords are case sensitive
+144.113047
+so I'll type end to return to privileged exec mode and then log out
+149.430148
+let's try the CCNA a user with the password cisco in lower case as we configured
+156.124534
+it works let's log out again
+160.144318
+now I'll try the username in all caps
+163.104745
+with the password in lower case again
+165.47374
+as you can see it lets us log in
+169.219869
+so the username is not case-sensitive
+172.185697
+now let's check the password
+174.951694
+I'll use the CCNA username again
+178.127445
+doesn't matter if you type in a lowercase or uppercase
+181.083492
+but this time I'll type the password in all caps
+184.278747
+although you can't see the characters as I type
+187.165127
+it fails
+188.846703
+I'll try again in case I hit a wrong key
+190.869382
+doesn't work
+194.460195
+so the password is case-sensitive
+197.604527
+let's quickly try again with the CCNP username again to confirm
+202.24125
+I'll type the username alternating upper and lower case just to prove the point and I'll type the correct password which is all uppercase
+210.253867
+it works
+212.890302
+log out again
+214.259465
+this time I'll type the password in lowercase
+216.625441
+doesn't work so to summarize usernames are not case sensitive
+222.287961
+but passwords are case sensitive
+225.178669
+next I'll do one more demonstration even though this isn't part of the lab
+233.075487
+let me login again
+234.81109
+then enable show run
+238.387859
+look at the usernames and passwords here
+240.992207
+we're going to add a new user named CCNA with all capitals
+245.315422
+if we are correct about user names not being case sensitive
+248.912454
+it should replace the current user rather than actually creating a new user
+253.136537
+conf t user named CCNA password router
+259.516593
+do show run as you can see it didn't actually create a new user
+265.766983
+it still displays the user name in the lower case
+268.576796
+even though I typed in an upper case
+270.204111
+but the password is now router instead of Cisco
+273.428537
+thank you for watching I hope this lab and video have been helpful for you
+281.112416
+please subscribe for future labs like this which will be released weekly
+285.802063
+if you have requests for any specific labs let me know in the comment section
+290.979391
+if you want to support my channel I accept Bitcoin donations via the address in the description
+296.860053
+I am also a brave verified publisher
+300.166829
+and accept bat or basic attention token donations in the brave browser
+305.667053
+305.667053
+305.667053

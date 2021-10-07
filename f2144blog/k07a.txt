@@ -1,0 +1,247 @@
+0.0
+welcome to this free CCNA packet tracer practice lab
+4.509258
+you can download the lab file from the link in the description
+8.351053
+in this lab we will be working with one router
+13.042434
+r1 2 switches switch 1 and switch 2 and 4 pcs pc-1 pc2 pc 3 and PC 4
+22.593988
+we will configure these pcs to be in two separate VLANs and then configure routing between them through the method known as router on a stick
+32.753148
+the host names of the router and switches the IP addresses of the pcs and their default gateways have been pre-configured
+41.521482
+try to complete the lab yourself first and then continue watching if you have trouble or watch it after to check your solution
+49.971164
+step one is to ping between the PCs
+57.043515
+pings between PC one and PC through should succeed because they are in the same subnet
+63.001338
+likewise pings between PC 2 and pc 4 should succeed
+67.912724
+because they are also in the same subnet
+70.160032
+other pings should fail
+72.903063
+let's ping from pc1 first
+75.260223
+let's ping PC to ping
+79.72058
+10.0.0.1/30 the ping fails
+86.919684
+next let's ping PC 3
+90.130648
+ping 10.0.0.3 the ping works as expected
+96.826109
+finally let's ping PC 4
+99.983198
+ping 10.0.0.1/31
+106.461147
+the ping fails
+109.07504
+by the way I'm using the up arrow to access previous commands and just edit the last few numbers
+114.150345
+next let's try to ping from PC 2
+117.863708
+first PC 1 ping 10.0.0.2
+124.750111
+the ping fails
+128.147073
+next PC 3
+130.360077
+ping 10.0.0.3
+133.102953
+the ping fails
+137.272419
+finally pc4 ping 10.0.0.1/31
+143.627194
+the ping works
+145.138305
+that's step one
+146.819868
+step two is to assign pc1 & pc2 VLAN 13 & pc2 and pc 4 to VLAN 24
+158.030154
+let's configure switch 1 first
+161.133806
+enable conf t interface f01 switch port mode access switch port access VLAN 13
+176.534073
+that's for a pc 1
+179.17163
+next for pc 2
+182.239367
+interface f0 2
+186.011654
+switch port mode access
+188.769901
+switch port access VLAN 24
+194.066938
+next let's configure switch 2
+197.082672
+enable conf t interface f01 switch port mode access
+207.20813
+switch port access VLAN 13
+210.879959
+that's pc 3 next let's configure the interface connected to pc 4
+217.265785
+interface f02
+221.431042
+switch ports mode access switch port access VLAN 24
+228.64635
+step two is now complete
+231.2011
+step three is to create a trunk link between switch 1 and switch 2
+238.058483
+remember we need to configure a trunk link to allow the connection between switch 1 and switch two to carry traffic from multiple VLANs
+247.461664
+in this case the interfaces are assigned to the native VLAN VLAN 1 however our pcs are assigned to either VLAN 13 or VLAN 24
+257.708238
+therefore no traffic from these pcs will be able to pass between the switches
+262.79738
+even in the same VLAN
+264.510651
+I'll just do one ping to prove this
+267.526349
+from pc1 to pc3 are in the same VLAN
+271.48651
+ping 10.0.0.3
+276.379656
+as you can see the ping which succeeded previously now fails
+282.738281
+let's create a trunk now
+285.579752
+I'll configure switch 1 first
+288.884624
+interface g0 2 switch port mode trunk
+296.529786
+that's it on this switch model we don't have to configure the encapsulation type
+302.62073
+next let's configure switch 2 interface g0 1 switch port mode trunk
+313.624853
+that's step 3
+316.140479
+step four is to configure inter VLAN routing by creating sub interfaces on r1
+326.375406
+currently because we created a trunk between switch 1 and switch 2 pcs in the same VLAN can ping each other again
+335.03793
+I'll ping once more from pc1 to pc3 show this
+340.045953
+ping 10.0.0.3 as you can see there are once again no problems
+348.765183
+however pings to a different VLAN should not work
+353.572102
+let's just ping from pc1 to pc2 check
+357.670394
+ping 10.0.0.1/31
+362.196778
+as you can see the ping fails
+365.632799
+now one way of configuring inter VLAN routing the one we will be using in this lab is called router on a stick
+374.333866
+as you can see there is only one connection between r1 and switch one
+379.682595
+however we will configure two sub interfaces using the single connection
+385.984428
+and each sub interface will have a separate IP address which serves as the default gateway for the pcs in each VLAN
+393.111519
+note that I have already configured the pcs with their default gateways
+398.728099
+so let's configure r1
+402.407727
+enable conf t first I will turn on the Gigabit Ethernet 0 0 interface which is shut down by default
+413.222441
+interface G 0 0 no shutdown
+418.267846
+next let's configure the sub interface for VLAN 13
+423.511916
+first type interface G 0 0 as normal then dot 13
+430.484622
+as you can see we are in sub interface configuration mode
+435.28377
+I'll set the IP address to 10.0.0.1 so IP address 10.0.0.1 with the subnet mask of 255.255.255.0
+449.810928
+is equivalent to 25
+452.832315
+but the command doesn't work
+456.456199
+we have to configure this sub interface as part of a VLAN first
+460.340272
+that is done with this command
+463.117576
+encapsulation dot1q 13
+469.165352
+now we can configure the IP address
+471.799204
+IP address 10.0.0.1 255.255.255.192
+480.267422
+face for VLAN 24
+486.258454
+interface g0 0.24
+494.599839
+we will use an IP address of 10.0.0.1 29
+498.877398
+and a subnet mask of 255.255.255.128
+503.411231
+we have to configure the encapsulation
+507.227555
+encapsulation dot1q 24
+512.509834
+IP address 10.0.0.1 29 255.255.255.128
+522.780599
+the configuration of r1 is now complete
+527.796498
+however there is one more final step
+530.922684
+remember that switch ones interfaces are access ports in the native VLAN
+536.347466
+VLAN 1 by default
+538.259539
+that includes Gigabit Ethernet 0 1 which is connected to r1
+543.457625
+so it can't send traffic from VLAN 13 or VLAN 24 to r1
+548.415816
+let's make it a trunk
+550.522343
+interface g0 1 switch port mode trunk
+556.777736
+ok step 4 is complete
+560.126419
+finally let's test this small Network
+566.536333
+all pcs should be able to ping each other even though they're in separate VLANs
+571.898954
+as in the beginning of the lab helping each other PC from pc1 and from PC 2 to check
+579.751511
+let's go to PC one first
+583.873164
+first I'll ping PC 2 ping ping 10.0.0.1/30 it works
+593.694333
+next I'll ping pc3 ping 10.0.0.3 it works as well
+602.076676
+and finally PC for ping 10.0.0.1/31
+607.099794
+it works ok
+610.946435
+next let's ping from PC2 first up in PC 1
+615.842169
+ping 10.0.0.2 and it works
+620.836759
+next PC 3 ping 10.0.0.3 it works as well
+627.019187
+and finally PC 4 ping 10.0.0.1/31 it works too
+633.81698
+we have successfully configured inter VLAN routing
+637.332415
+thank you for watching
+642.732354
+I hope this lab and video have been helpful for you
+645.348526
+please subscribe for future labs like this which will be released weekly
+650.576839
+if you have requests for any specific labs let me know in the comment section
+655.726031
+if you want to support my channel I accept Bitcoin donations via the address in the description
+661.757487
+I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
+670.890135
+670.890135
+670.890135

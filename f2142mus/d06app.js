@@ -1,10 +1,12 @@
 $(() => {
 
-    
+
     
     var audio = $('.audio')[0]
     let textArea = $('#id_text')
     let log1 = $('.log1')
+    let log4 = $('.log4')
+
 
     let timerId = null
     let pause = true

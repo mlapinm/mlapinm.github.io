@@ -1,0 +1,179 @@
+0.0
+welcome to this free CCNA packet tracer practice lab
+4.646375
+you can download the lab file from the link in the description
+8.063229
+in this lab we will look a bit more at CDP cisco discovery protocol
+14.235583
+this should be a fairly short lab looking at one more CDP command which we didn't cover in the last lab
+20.598249
+we will use CDP to identify more detailed information about neighboring devices beyond that displayed in the show CDP neighbors command
+29.741582
+step one is to use CDP to identify which interfaces are used to connect the routers and switches
+38.560644
+we've done this in previous labs so this should be no problem
+42.684478
+let's go on switch one first
+45.119582
+enable show CDP neighbors
+51.100394
+as you can see switch 1 is connected to r1 via the gigabit ethernet zero one interface
+57.684914
+and it's also connected to our ones gigabit ethernet zero one interface
+61.944247
+next let's go to r1
+64.678059
+enable show CDP neighbors
+70.755205
+r1 is connected to switch 1 via the gigabit ethernet zero one interface as we just saw
+77.650601
+it's also connected to r2 via the gigabit ethernet 0 0 interface
+82.501143
+connected to our two's Gigabit Ethernet 0 0 interface
+86.281143
+next let's go on to r2
+91.343372
+enable show CDP neighbors
+97.008726
+as we just saw it's connected to r1 via the gigabit ethernet 0 0 interface
+103.660372
+and it's connected to switch to via the gigabit ethernet 0 1 interface
+108.54483
+connected to switch 2 is Gigabit Ethernet 0 1 interface
+111.692913
+next let's go on switch to to confirm
+115.349017
+enable shows CDP neighbors
+120.85335
+as you can see it is indeed connected to r2 via the gigabit ethernet 0 1 interface
+126.926309
+that's all for step 1
+128.851184
+step2 actually doesn't require any new commands
+136.282642
+I just want to point out something I didn't identify in the previous lab
+139.994475
+let's look back at switch 1
+142.690684
+in the results of the show CDP neighbors command there is a platform column
+148.530975
+what does that identify
+150.313704
+it's the hardware model of the neighboring device
+153.312266
+in this case r1 is a C 1900 series router
+157.84012
+let's go on r1 to identify switch 1 and R 2
+161.850078
+so R 2 is a C 2900 series router and switch 1 is a 2960 series switch
+170.821766
+finally let's go on r2 to identify the model of its neighbor switch 2
+176.007682
+as you can see it is a 3560 model switch
+181.728766
+and if you remember the icon used to represent it here in packet tracer
+186.01037
+means it is a multi-layer switch
+188.261536
+multi-layer switches will be a topic for later labs
+192.056973
+finally step three requires a new command which we didn't cover in previous labs
+200.92891
+actually there are two options
+203.79493
+we have to identify the iOS version of the neighboring devices
+207.882451
+note that you can do this on the device itself with the show version command
+212.791222
+however for practice let's use CDP to find this information
+216.867118
+let's go on switch one
+219.819263
+now one option is the command show CDP neighbors detail
+225.603326
+clearly this gives more information than the standard show CDP neighbors command
+232.267367
+in this case switch one has only one neighbor
+236.278201
+but if a device has many neighbors this command gives information for every neighbor which can be overwhelming
+242.405326
+if you want to view detailed information about just one device use this command
+248.334909
+show CDP entry followed by the name of the neighboring device in this case r1
+255.409721
+this displays the same information just for the specified device
+260.730721
+now you can find the iOS version of r1 here
+264.63595
+it's 15.144
+268.465637
+now let's go on r1
+270.726053
+show CDP entry switch one switch
+276.067282
+run is running version 12.25 FX
+281.411011
+let's also check our ones other neighbor R 2
+285.396302
+show CDP entry r2
+288.540552
+r2 is running 15.144
+292.942072
+same as r1
+294.324613
+finally let's go on r2 to find the version of switch 2
+298.287175
+show CDP entry switch 2
+302.833612
+switch 2 is running version 12.21
+308.484591
+now as a bonus I'd like to also demonstrate the show version command I briefly mentioned before
+317.53407
+this gives a lot of information about the device
+320.81534
+but for now let's just confirm the iOS versions we learned about via CDP
+325.26659
+on switch 1 first
+327.321277
+show version as you can see there's a lot of info here
+334.167547
+I recommend looking through it to familiarize yourself with what's here
+337.788777
+but let's just check the iOS version as I said
+341.11611
+switch 1 is running 12 point to 25 FX
+345.686777
+which is the same as we saw from CDP on our one
+348.673402
+next let's go to our one
+351.712339
+show version our one is running version 15 point 1 4 & 4
+359.099568
+same as we saw from CDP again
+361.590172
+next are 2
+364.925277
+show version
+367.469527
+r2 is running version 15 point 1 for M for same as our 1
+373.459777
+finally switch 2
+376.648235
+show version
+379.929068
+it's running version 12 point to one
+383.768526
+that's all for this lab
+385.834171
+thank you for watching I hope this lab and video have been helpful for you
+391.803817
+please subscribe for future labs like this which will be released weekly
+396.695316
+if you have requests for any specific labs let me know in the comment section
+401.323108
+if you want to support my channel I accept Bitcoin and etherion donations via the addresses in the description
+408.496795
+I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
+416.886295
+416.886295
+416.886295
