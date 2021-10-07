@@ -11,13 +11,13 @@ in this lab we will take a look at the point-to-point protocol PPP
 25.564124
 PPP is a layer 2 protocol often used over serial LAN or wide area network connections
 34.241645
-on a Cisco router the default layer 2 encapsulation on a serial connection is Cisco hdl-c
+on a Cisco router the default layer 2 encapsulation on a serial connection is Cisco hdlc
 42.681853
 however PPP provides superior security through authentication functionality
 49.804457
 so in this lab we will configure PPP with two different authentication methods
 55.834499
-on the connection between r1 and SPR one
+on the connection between r1 and SPR 1
 59.891353
 meaning service provider router 1
 62.881853
@@ -41,7 +41,7 @@ enable first let's check what the encapsulation on s00 is
 100.588311
 show interfaces s0 0
 103.691519
-there it is encapsulation hdl-c
+there it is encapsulation hdlc
 109.564165
 also notice that the interface is in the up-down State
 113.819061
@@ -53,11 +53,11 @@ and SPR ones s00 interface is already configured with PPP encapsulation
 127.222893
 let's try to ping SPR 1
 130.697956
-ping 100 0.1
+ping 100.0.0.1
 134.340498
 doesn't work
 139.857643
-let's enable PPP on our one
+let's enable PPP on r1
 142.716393
 coffee tea interface s 0 0
 147.385143
@@ -67,15 +67,15 @@ do show IP interface brief
 153.180372
 now the interface is still up down
 156.852413
-because we haven't configured authentication yet on our one
+because we haven't configured authentication yet on r1
 160.295371
-but it's already configured on SPR one
+but it's already configured on SPR 1
 162.742350
 I've already configured a username of Cisco
 167.249892
 and a password of CCNA on SP r1
 169.987142
-so we have to configure our one to send that username and password to SP r1 to authenticate
+so we have to configure r 1 to send that username and password to SP r1 to authenticate
 176.019142
 likewise SP r 1 is currently trying to authenticate with the username of packet
 182.724913
@@ -111,13 +111,13 @@ do show IP interface brief
 243.817204
 great now the interface is up up
 248.293787
-let's see if we can ping SPR one
+let's see if we can ping SPR 1
 250.588641
-do ping 100 0 1
+do ping 100.0.0.1
 254.905411
 okay now it works
 260.892349
-so to summarize PPP with pap
+so to summarize PPP with PAP
 265.023599
 first you must configure a username and password on your router
 269.613557
@@ -131,11 +131,11 @@ then you configure your router to send a username and password to the other rout
 295.116745
 sent to username password command
 297.968474
-of course the road around the other end must have that username and password configured on it
+of course the route at the other end must have that username and password configured on it
 303.202536
 in this lab I pre-configured the username of Cisco and password of CCNA on SPR 1
 309.890140
-next let's configure PPP with chap authentication on our -
+next let's configure PPP with chap authentication on r 2
 316.611473
 once again chap is more secure than PAP because it uses dynamic randomly generated strings for each authentication
 325.426556
@@ -145,21 +145,21 @@ however you still have to configure a username and password on the router
 332.396473
 which is then used to generate the string
 334.587910
-so let's go on our to
+so let's go on r 2
 337.369180
 enable show interfaces s0 0
 344.243305
 just like on r1 before
 347.897284
-the default encapsulation is hdl-c
+the default encapsulation is hdlc
 350.753867
 and the interface is in an up-down state
 354.298492
 because the SPR 2 router has already been configured to use PPP with chap
 359.343825
-let's see if we can ping SPR to
+let's see if we can ping SPR 2
 362.062221
-ping 200 oh you won
+ping 200.0.0.1 
 365.489304
 as expected it doesn't work
 371.607158
@@ -173,13 +173,13 @@ but what username should we use
 383.729137
 the answer is that we must use the other routers host name
 388.817720
-in this case that is SPR two
+in this case that is SPR 2
 392.287304
-so username SPR two password CCNA
+so username SPR 2 password CCNA
 399.282116
 this password has to match between the two routers
 403.280449
-so I've already configured username our two passwords CCNA on the service provider side
+so I've already configured username r 2 passwords CCNA on the service provider side
 409.429824
 for the CCNA routing and switching you don't have to worry about the service provider end
 414.689199
@@ -193,7 +193,7 @@ let's set it down while we do the configurations and then bring it back up when 
 430.076280
 shutdown
 431.457738
-set the encapsulation dat PPP like on our 1
+set the encapsulation dat PPP like on r 1
 435.803613
 encapsulation PPP
 438.527738
@@ -215,7 +215,7 @@ the interface is up up
 462.115988
 now let's try to ping the service provider
 465.257634
-do ping 200 0.1
+do ping 200.0.0.1
 469.896488
 okay it works now
 474.358800
@@ -225,7 +225,7 @@ as you would often do in a real enterprise network
 481.572841
 so let's see if we can ping r1 on the other side
 484.945070
-do ping 100 oh oh -
+do ping 100.0.0.2
 491.073923
 and it works as well
 493.560152

@@ -221,23 +221,23 @@ the command is the same as for ipv4 just use ipv6 at the beginning instead of IP
 459.606049
 ipv6 summary address EIGRP 100
 465.483944
-and remember the default route for ipv6 is colon colon slash 0
+and remember the default route for ipv6 is : : / 0
 472.092444
 now let's go on g 0 1 and do the same
 475.905903
 interface g 0 1 IP v6 summary address
 481.179528
-key ID RP 100 colon colon slash 0
+key ID RP 100 :: / 0
 484.574278
 let's go check on one of the routers
 487.617840
 i'll check on r5 because if r5 has the route r2 r3 and r4 a must as well
 494.086611
-do show ipv6 red
+do show ipv6 route
 499.180069
-there it is right at the top
+there it is route at the top
 501.613652
-ok in this slab we configured AI GRP for ipv6
+ok in this slab we configured EIGRP for ipv6
 506.828214
 the configuration is similar to EIGRP for ipv4
 511.843360
