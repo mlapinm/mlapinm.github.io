@@ -316,6 +316,18 @@
 	 "link": "https://codepen.io/mlapin/full/QWpYEya"
 	},
     {
+	 "header": "blog",
+	 "title": "",
+	 "card-text": ["inkscape"],
+	 "link": "f2422blog/index.html"
+	},
+    {
+	 "header": "",
+	 "title": "",
+	 "card-text": [""],
+	 "link": ""
+	},
+    {
 	 "header": "cnn",
 	 "title": "tests",
 	 "card-text": ["65 asks"],

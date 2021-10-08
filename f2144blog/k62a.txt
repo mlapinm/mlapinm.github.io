@@ -63,7 +63,7 @@ ok the interface is up up
 123.978667
 let's try to ping SP r1
 126.475804
-do ping 100 Oh Oh 1
+do ping 100.0.0.1
 130.485778
 okay looks like it works now
 135.719001
@@ -91,7 +91,7 @@ PPP authentication chap
 185.419356
 r3 is supposed to be using PAP not chap authentication
 190.953705
-coffee tea interface s0 0
+conf t interface s0 0
 194.959028
 shut down no PPP authentication chap
 200.547802
@@ -127,7 +127,7 @@ which is the host of the router sorry the host name of the router at the other e
 253.791556
 and a password of CCNA
 256.189006
-which must be identical to the password configured on SPR to
+which must be identical to the password configured on SPR 2
 260.413803
 show run
 262.617619
@@ -139,7 +139,7 @@ it's configured with its own host name
 272.438071
 but it should be SPR to s host name
 275.139196
-coffee tea
+conf t
 277.193426
 no user name are two passwords CCNA
 282.775870
@@ -171,7 +171,7 @@ but the interface is down
 332.818793
 like r2 r4 ship using chap authentication
 337.666804
-so it should have a username s PR for password CCIE configured
+so it should have a username SPR 4 password CCIE configured
 344.135130
 s PR for being the host name of the other router it's connected to
 348.449553
@@ -185,7 +185,7 @@ ok we're missing something here
 361.608765
 the PPP authentication chap statement is missing
 365.638703
-coffee tea interface s 0 0
+conf t interface s 0 0
 369.644674
 shutdown PPP authentication chap
 374.639634
@@ -195,29 +195,29 @@ do show IP interface brief
 380.945097
 ok it's up up now
 385.448996
-do ping 1 4000 dot 1
+do ping 140.0.0.1
 389.959373
 okay it's working
 393.948510
 I've pre-configured default routes to the service provider on each router
 399.026082
-so if I try to ping r2 r3 or r1 from our 4 it should work now
+so if I try to ping r2 r3 or r1 from r 4 it should work now
 405.168106
 let's try
 406.739898
 first I'll ping r1
 409.882107
-do ping 100 oh oh -
+do ping 100.0.0.2
 414.392586
 ok it works
 417.898140
 how about r3
 420.898929
-do ping 1 3000 - it works as well
+do ping 130.0.0.2 it works as well
 428.818686
 and let's try our to
 430.354138
-do ping 200 go - it works as well
+do ping 200.0.0.2 it works as well
 438.401157
 that's all for this lab
 440.355331

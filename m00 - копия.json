@@ -221,8 +221,12 @@
 	 {
 		"header": "play",
 		"title": "play2",
-		"card-text": ["make titles"],
-		"link": "https://mlapinm.github.io/f2142mus/d04captch.html"
+		"card-text": [
+		"make titles",
+		"<a href='f2142mus/d04captch.html'>d04captch</a>",
+		"<a href='f2144blog/index.html'>f2144blog2</a>"
+		],
+		"link": "f2142mus/d06captch.html"
 	 },
 			{
 	 "header": "",
@@ -275,8 +279,12 @@
     {
 	 "header": "",
 	 "title": "",
-	 "card-text": [""],
-	 "link": ""
+	 "card-text": [
+	 "tic tac boom",
+	 "",
+	 ""
+	 ],
+	 "link": "f2362boom"
 	},
     {
 	 "header": "supplies",
@@ -308,10 +316,16 @@
 	 "link": "https://codepen.io/mlapin/full/QWpYEya"
 	},
     {
-	 "header": "topics",
-	 "title": "topics",
-	 "card-text": [""],
-	 "link": "https://mlapinm.github.io/f2242check/"
+	 "header": "cnn",
+	 "title": "tests",
+	 "card-text": ["65 asks"],
+	 "link": "https://mlapinm.github.io/f2032cnn/"
+	},
+    {
+	 "header": "cnn",
+	 "title": "",
+	 "card-text": ["blog duo tech english"],
+	 "link": "https://mlapinm.github.io/f2182blog/"
 	},
     {
 	 "header": "topics2",
@@ -332,20 +346,24 @@
 	 "text to tab",
 	 "text even",
 	 "text odd",
+	 "<a href='f2322edit/c02index.html'>back</a>",
+	 "<a href='f2322edit/c04index.html'>rid empty strings</a>",
+	 "<a href='f2322edit/c06subt.html'>subtitles, to one string</a>",
+	 "<a href='f2322edit/c08srt.html'>srt from file</a>",
 	 ""
 	 ],
 	 "link": "https://mlapinm.github.io/f2322edit/"
 	},
     {
-	 "header": "",
-	 "title": "",
-	 "card-text": [""],
-	 "link": ""
+	 "header": "google",
+	 "title": "colab",
+	 "card-text": ["colab google sites jupyter"],
+	 "link": "https://sites.google.com/view/mlapinm/"
 	},
     {
-	 "header": "",
-	 "title": "",
-	 "card-text": [""],
-	 "link": ""
+	 "header": "book",
+	 "title": "С.С.С.",
+	 "card-text": ["Leil Lowndes, U.S.S."],
+	 "link": "f2342books/ccc_red.html"
 	}
 ]

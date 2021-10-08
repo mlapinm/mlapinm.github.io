@@ -11,7 +11,7 @@ and share these videos with anyone else studying for the CCNA
 23.571746
 in this lab we will troubleshoot the GRE tunnel configuration from the previous lab
 29.914829
-the GRE tunnel should be working with E I gr P over
+the GRE tunnel should be working with EIGRP over
 34.242402
 it so pc1 & pc2 can reach each other
 36.850044
@@ -35,7 +35,7 @@ this is a common problem in tunnel configuration
 70.657776
 show interface tunnel 0
 74.673921
-tunnel source of serial zero zero zero is okay
+tunnel source of serial 0 0 0 is okay
 79.194170
 but look at the destination
 81.713150
@@ -49,9 +49,9 @@ that's what's causing the recursive routing error message
 94.580814
 call T
 98.475576
-interface tunnel zero
+interface tunnel 0
 100.660678
-tunnel destination 200 oh oh -
+tunnel destination 200.0.0.2
 106.685871
 okay that should end the error messages
 110.909930
@@ -59,19 +59,19 @@ let's check the AIG RP configuration here to
 116.823898
 do show IP protocols
 119.093557
-routing for networks 1001 0/24
+routing for networks 10.0.1.0/24
 126.039839
-and 100 0 0 / 30
+and 100.0.0.0 / 30
 129.025666
 there's a problem
 131.354986
-we want to activate a idrp on the G zero zero interface which we are
+we want to activate a idrp on the G 0 0 interface which we are
 136.935326
 and the tunnel interface
 139.609316
-100 euro / 30
+100.0.0.0 / 30
 142.825915
-which is the s zero zero zero interface
+which is the s 0 0 0 interface
 146.021992
 isn't the tunnel interface
 148.041357
@@ -79,33 +79,33 @@ it's the tunnel source
 149.472468
 let's change that
 151.270608
-router ew g RP 100
+router EIGRP 100
 155.140064
-no network 100 oh oh oh oh oh three
+no network 100.0.0.0 0.0.0.3
 162.043828
-network 192.168.1.0 oh oh oh three end
+network 192.168.1.0 0.0.0.3 end
 171.998499
-ok we've solved two problems here on our one
+ok we've solved two problems here on R 1
 174.624031
-however there are still problems on our two so our tunnel won't be working yet
+however there are still problems on R 2 so our tunnel won't be working yet
 179.138657
-let's go on our to
+let's go on R 2
 182.499451
-enable I'll quickly check the EIG RP configuration here on our to
+enable I'll quickly check the EIGRP configuration here on R 2
 191.521696
 show IP protocols
 194.224666
-EW GFP is activated for 1002 0/24
+EIGRP is activated for 10.0.2.0/24
 201.604009
 which is G 0 0 and 192.168.1.0 / 30
 207.124077
 which is the tunnel interface
 208.695052
-so the AI g RP configuration looks good
+so the EIGRP configuration looks good
 211.668317
 let's check the tunnel
 214.875233
-show interface Tunnel zero
+show interface Tunnel 0
 218.337025
 the tunnel destination is correct
 222.834258
@@ -117,7 +117,7 @@ but it should be the interface connected to the service provider
 233.928453
 serial 0 0 0
 235.745188
-Koff t
+conf t
 238.070040
 interface tunnel 0
 240.554122
@@ -131,13 +131,13 @@ let's check one other important thing
 255.272988
 do show IP route
 258.771310
-there is no route allowing us to reach the tunnel destination of 100 oh oh -
+there is no route allowing us to reach the tunnel destination of 100.0.0.2
 268.282059
 remember the tunnel destination address must be reachable
 271.795256
 let's configure a static default route pointing to the service provider
 276.748589
-exit IP route oh oh oh oh oh oh oh oh 201
+exit IP route 0.0.0.0 0.0.0.0 200.0.0.1
 288.686412
 do show IP interface brief
 292.166367
@@ -149,17 +149,17 @@ do ping 192.168.1.1
 302.225097
 okay it's working now
 308.741401
-now are we getting the EIG our peer out to our ones internal network
+now are we getting the EIGRP route to r 1s internal network
 313.623827
 do show IP route
 316.440766
 there it is
 319.664893
-1001 Oh
+10.0.1.0
 322.773714
-finally let's try a ping from PC to 2 PC one
+finally let's try a ping from PC to 2 PC 1
 326.036979
-ting 1001 dot 100
+ping 10.0.1.100
 334.343260
 okay our ping worked
 345.845981

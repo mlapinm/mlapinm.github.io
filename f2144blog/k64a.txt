@@ -145,11 +145,11 @@ you should be okay
 286.701215
 let's try to ping the service provider
 289.676453
-ping 100 0.1
+ping 100.0.0.1
 293.676906
 okay looks good
 296.751147
-next let's configure our -
+next let's configure r2
 299.660512
 the only difference will be chap authentication instead of path
 304.700920
@@ -161,7 +161,7 @@ SP r2
 314.494911
 and the password must be the same for both routers CCNA in this case
 319.233459
-so user name SPR - password CCNA
+so user name SPR 2 password CCNA
 325.122121
 next let's configure the dialer interface
 329.130239
@@ -207,7 +207,7 @@ and then indicates the virtual access 1 interface
 396.164410
 ok let's try a ping
 398.578787
-ping 200 oh you won
+ping 200.0.0.1
 402.203637
 great it works
 404.761664
@@ -215,7 +215,7 @@ now like in the previous lab I'll make static default routes
 409.157673
 pointing to the service provider and then try to ping from r1 to r2
 413.991846
-call 40 IP route oh-oh-oh-oh-oh-oh 200 200 oh oh one
+conf t IP route 0.0.0.0 0.0.0.0 200.0.0.1
 424.757129
 do show IP route
 427.218671
@@ -223,7 +223,7 @@ there it is
 429.394249
 next on r1
 431.286766
-coughed e IP route oh-oh-oh-oh-oh-oh-oh-oh-oh 101
+conf t IP route 0.0.0.0 0.0.0.0 100.0.0.1
 441.754952
 do show IP route
 444.777175

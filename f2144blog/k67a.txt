@@ -11,11 +11,11 @@ and share these videos with anyone else studying for the CCNA
 23.845532
 in this lab we will configure BGP the border gateway protocol
 30.108412
-unlike rip AIG RP and OSPF which are iGPS or interior gateway protocols
+unlike rip EIGRP and OSPF which are IGPS or interior gateway protocols
 38.532719
-BGP is an eg P an exterior gateway protocol
+BGP is an IGP an exterior gateway protocol
 43.594420
-while I GPS are used for routing within an organization
+while IGPS are used for routing within an organization
 48.562241
 eg PS are used for routing between organizations
 52.273057
@@ -27,7 +27,7 @@ you can go deeper into BGP by continuing to the ccnp or by looking at the servic
 71.899383
 for the CCNA routing and switching you have to be able to configure external bgp
 78.494757
-or ebgp for single home to branch connectivity
+or ibgp for single home to branch connectivity
 82.536684
 single home means a single connection to a single internet service provider
 88.703713
@@ -159,7 +159,7 @@ Network 1.1.11 mask 255.255.255.0 5
 346.988696
 you have to type mask in the command
 349.493708
-and also it's not a wildcard mask like in Eid RP and OSPF
+and also it's not a wildcard mask like in EIGRP and OSPF
 353.843934
 it's a standard Network mask
 355.483413
