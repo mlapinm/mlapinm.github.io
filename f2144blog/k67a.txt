@@ -137,25 +137,25 @@ in BGP you have to enter the exact network and mask
 290.398652
 and a matching route must be in your routing table
 293.422824
-for example our one has a loopback of 1.1.1 1/32
+for example our one has a loopback of 1.1.1.1/32
 299.555953
-if I enter 100 with a / 8 mask in the network command
+if I enter 1.0.0.0 with a / 8 mask in the network command
 305.624774
 it won't work
 306.867109
-I have to enter the exact 1.1.11 / 32 network to advertise it
+I have to enter the exact 1.1.1.1 / 32 network to advertise it
 312.930601
 so let's advertise the loop Beck's
 316.201168
 do show IP route
 319.635046
-as you can see I have rights to 1.1.11 / 32 - 2 - 2 / 32 and 3.33 3/32
+as you can see I have rights to 1.1.1.1 / 2.2.2.2 / 32 and 3.3.3.3/32
 331.251712
 so I can advertise them in BGP
 333.504320
 the BGP Network command goes like this
 337.283390
-Network 1.1.11 mask 255.255.255.0 5
+Network 1.1.1.1 mask 255.255.255.255
 346.988696
 you have to type mask in the command
 349.493708
@@ -165,15 +165,15 @@ it's a standard Network mask
 355.483413
 okay let's do the others
 357.866678
-Network - - - - mask 255.255.255.0 5
+Network 2.2.2.2 mask 255.255.255.255
 365.571984
-Network 3 3 3 3 mask 255.255.255.0 5
+Network 3.3.3.3 mask 255.255.255.255
 373.113299
-ok the next step is to advertise a summary of the Tendo 12/30 10.23 o / 30
+ok the next step is to advertise a summary of the Tendo 10.0.12.0/30
 379.702800
-and 10.30
+and 10.0.23.0/30
 382.336768
-know / 30 networks
+know 10.0.13.0/30 networks
 385.639988
 with a single Network command using a slash 16 mask
 389.446405
@@ -183,22 +183,22 @@ I said before there has to be a match in the route table to advertise something 
 397.194908
 do show IP route
 400.201801
-there is no 1000 2/16 network in the routing table
+there is no 10.0.0.0 /16 network in the routing table
 405.944568
 here I'll do the network command
 408.698467
-network 10000 mask 255.255.255.0
+network 10.0.0.0 mask 255.255.0.0
 416.457809
 431.428850
 it still doesn't work
 432.787921
-because r1 is in advertising that 1000 / 16 Network yet
+because r1 is in advertising that 10.0.0.0 / 16 Network yet
 437.773431
 because it doesn't have the route in its route table
 440.362161
 so let's go back to our 1 and make a route
 443.531526
-exit IP route 10000 255 255 0 0
+exit IP route 10.0.0.0 255.255.0.0
 453.486990
 now what should we enter next
 454.946197
@@ -212,21 +212,21 @@ well we wanted to create the route to advertise it in BGP
 470.590505
 do show IP route
 473.344632
-there's the 10000 / 16 route
+there's the 10.0.0.0 / 16 route
 478.656333
 and here are our more specific routes
 481.021049
-any traffic that comes for the Tendo 12/30 10.30 no / 30 or 10.23 o / 30 networks will be sent out their appropriate interfaces
+any traffic that comes for the 10.0.12.0/30 10.0.13.0 / 30 or 10.0.23.0 / 30 networks will be sent out their appropriate interfaces
 493.806332
 because these have a more specific meaning a longer network mask / 30 vs / 16
 501.859824
-however if something comes for the 1001 o / 24 Network for example
+however if something comes for the 10.0.1.0 / 24 Network for example
 508.024381
 it won't match any of those and will instead be sent to the null 0 interface
 512.850980
 and discarded
 513.895991
-this is good because the 10.10 / 24 network
+this is good because the 10.0.1.0 / 24 network
 518.706443
 isn't present in our internal network
 521.252634
@@ -238,7 +238,7 @@ feel free to ask questions if you're not sure about it
 533.500025
 this use of a null interface is often called a discard route by the way
 539.164855
-anyway now the 10000 / 60 network is present in our Rev table
+anyway now the 10.0.0.0 / 16 network is present in our Rev table
 546.722814
 so that means r1 will be advertising it to the service provider
 550.377122
