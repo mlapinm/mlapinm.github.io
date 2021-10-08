@@ -27,21 +27,21 @@ let's investigate here
 52.327504
 show IP BGP summary
 56.001087
-notice the bgp router ID of one 1.1.1
+notice the bgp router ID of 1.1.1.1
 60.986371
 taken from the loopback interface
 62.803808
-just like in Eid RP and OSPF
+just like in EIGRP and OSPF
 65.529341
 look down at our neighbor here
 68.783967
-100 0:01 is spr one
+100.0.0.1 is spr 1
 72.914965
 however the AS IS 6500
 76.755464
 which is why r1 is displaying the peer in wrong a s message
 80.684897
-SP r 1 is actually in a s 65,000 one
+SP r 1 is actually in a s 65001
 85.333445
 show IP BGP neighbor
 89.042628
@@ -55,11 +55,11 @@ BGP won't proceed further than this state
 104.944057
 let's fix it
 106.760157
-coffee tea
+conf t
 108.400882
-router bgp 65,000
+router bgp 65000
 113.381902
-neighbor 101 remote a s 65 thousand won
+neighbor 101 remote a s 65001
 119.407027
 immediately we get a message saying the neighbor is up
 123.184986
@@ -97,9 +97,9 @@ router OSPF 1
 171.671490
 no network
 173.412125
-oh-oh-oh-oh 255 255 dot 255 dot 255 area 1
+0.0.0.0 255.255.255.255 area 1
 179.868633
-Network oh-oh-oh-oh 255 dot 255 dot 255 dot 255 area 0
+Network 0.0.0.0 255.255.255.255 area 0
 187.518406
 ok that should fix our OSPF problem
 191.763531
@@ -113,23 +113,23 @@ which affects BGP
 203.397204
 there should still be one more issue on our one
 206.841148
-but I'll head to r2 and test if we can reach the external server at 1501
+but I'll head to r2 and test if we can reach the external server at 15.0.0.1
 212.078903
-enable pin 1500 1
+enable ping 15.0.0.1
 219.115230
 nope the ping still fail
 231.398790
 so let's go back to our one
 233.200196
-our one should be advertising at 1000s 516 summary to the service provider
+r1 should be advertising at 10.0.0.0/16 summary to the service provider
 242.193688
-let's check if it's in the rev table on our one
+let's check if it's in the rev table on r1
 245.311896
 do show IP route
 248.062690
 there it is
 251.056431
-10000 slash 16
+10.0.0.0 / 16
 253.844821
 let's check the BGP table
 256.958789
@@ -143,7 +143,7 @@ do show run
 269.045365
 there's the problem
 272.561669
-the 10000 network is configured with a slash 8 mask
+the 10.0.0.0 network is configured with a / 8 mask
 277.055864
 although it doesn't appear here because it defaults to the class a boundary
 281.323982
@@ -151,10 +151,15 @@ but remember BGP requires an exact match in the router table
 285.537859
 let's fix that Network statement
 287.972825
-router bgp 65,000
+router bgp 65000
 293.026090
-no network 10000 Network 10000 mask 255.255.255.0 dot 1
+no network 10.0.0.0 Network 10.0.0.0 mask 255.255.0.0
 304.776180
+do show ip BGP There it is 10.0.0.0/16 
+312.776180
+now it in BGP table so it should be advertising yet to spr 1 
+319.776180
+let's try that ping from r2 again
 328.091847
 ok the ping works now
 329.379806

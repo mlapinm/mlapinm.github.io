@@ -2,235 +2,1099 @@ let objs = [
   {
     "time": [
       0.0,
-      3.0
+      4.103395
     ],
     "en": [
-      "welcome to this free CCNA packet tracer"
+      "welcome to this free CCNA packet tracer practice lab"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный трассировщик пакетов CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
     ]
   },
   {
     "time": [
-      3.0,
-      6.0
+      4.103395,
+      8.103645
     ],
     "en": [
-      "practice lab you can download the lab"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "Практическая лаборатория вы можете скачать лабораторию"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
     "time": [
-      6.0,
-      9.0
+      8.103645,
+      16.11202
     ],
     "en": [
-      "file from the link in the description if"
+      "if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description"
     ],
     "ru": [
-      "файл по ссылке в описании, если"
+      "если вам нравятся эти лаборатории, пожалуйста, подумайте о поддержке меня через мой патреон или варианты криптовалюты в описании"
     ]
   },
   {
     "time": [
-      9.0,
-      11.0
+      16.11202,
+      20.326708
     ],
     "en": [
-      "you like these labs please consider"
+      "also please subscribe to the channel for more labs like this"
     ],
     "ru": [
-      "Вам нравятся эти лаборатории, пожалуйста, примите во внимание"
+      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторных работ"
     ]
   },
   {
     "time": [
-      11.0,
-      13.0
+      20.326708,
+      23.577812
     ],
     "en": [
-      "supporting me via my patreon or the"
+      "and share these videos with anyone else studying for the CCNA"
     ],
     "ru": [
-      "поддерживая меня через моего патреона или"
+      "и поделитесь этими видео со всеми, кто учится на CCNA"
     ]
   },
   {
     "time": [
-      13.0,
-      14.0
+      23.577812,
+      28.265478
     ],
     "en": [
-      "cryptocurrency options in the"
+      "in this lab we will troubleshoot HS RP"
     ],
     "ru": [
-      "варианты криптовалюты в"
+      "в этой лабораторной работе мы будем устранять неполадки HS RP"
     ]
   },
   {
     "time": [
-      14.0,
-      18.0
+      28.265478,
+      32.734312
     ],
     "en": [
-      "description also please subscribe to the"
+      "the correct configuration should be identical to the previous lab"
     ],
     "ru": [
-      "описание также подпишитесь на"
+      "правильная конфигурация должна быть идентична предыдущей лабораторной работе"
     ]
   },
   {
     "time": [
-      18.0,
-      19.0
+      32.734312,
+      36.239437
     ],
     "en": [
-      "channel for more labs like this and"
+      "however a couple of miss configurations have been made"
     ],
     "ru": [
-      "канал для других подобных лабораторий и"
+      "однако была сделана пара конфигураций промахов"
     ]
   },
   {
     "time": [
-      19.0,
-      21.0
+      36.239437,
+      39.197207
     ],
     "en": [
-      "share these videos with anyone else"
+      "I'll open up r1 here"
     ],
     "ru": [
-      "поделитесь этими видео с кем угодно"
+      "Я открою r1 здесь"
     ]
   },
   {
     "time": [
-      21.0,
-      26.0
+      39.197207,
+      44.553373
     ],
     "en": [
-      "studying for the CCNA in this lab we"
+      "and you can see it's displaying the same error message over and over again"
     ],
     "ru": [
-      "изучая CCNA в этой лаборатории, мы"
+      "и вы можете видеть, что он снова и снова отображает одно и то же сообщение об ошибке"
     ]
   },
   {
     "time": [
-      26.0,
-      29.0
+      44.553373,
+      51.901498
     ],
     "en": [
-      "will troubleshoot HS RP the correct"
+      "we are also told in the instructions that are to doesn't retake its role as the active router for VLAN 20"
     ],
     "ru": [
-      "устранит неполадки HS RP правильным"
+      "в инструкциях также говорится, что не следует возвращать свою роль активного маршрутизатора для VLAN 20."
     ]
   },
   {
     "time": [
-      29.0,
-      31.0
+      51.901498,
+      54.094727
     ],
     "en": [
-      "configuration should be identical to the"
+      "after recovering from a failure"
     ],
     "ru": [
-      "конфигурация должна быть идентична"
+      "после восстановления после сбоя"
     ]
   },
   {
     "time": [
-      31.0,
-      34.0
+      54.094727,
+      57.197269
     ],
     "en": [
-      "previous lab however a couple of miss"
+      "let's take a look at this error message"
     ],
     "ru": [
-      "предыдущая лаборатория, однако, несколько промахов"
+      "давайте посмотрим на это сообщение об ошибке"
     ]
   },
   {
     "time": [
-      34.0,
-      37.0
+      57.197269,
+      62.004352
     ],
     "en": [
-      "configurations have been made I'll open"
+      "duplicate address 10 10 10 1"
     ],
     "ru": [
-      "конфигурации сделаны я открою"
+      "дублирующийся адрес 10 10 10 1"
     ]
   },
   {
     "time": [
-      37.0,
-      41.0
+      62.004352,
+      66.005436
     ],
     "en": [
-      "up r1 here and you can see it's"
+      "that's the virtual IP address used for VLAN 10"
     ],
     "ru": [
-      "вверх r1 здесь, и вы можете увидеть, что это"
+      "это виртуальный IP-адрес, используемый для VLAN 10"
     ]
   },
   {
     "time": [
-      41.0,
-      43.0
+      66.005436,
+      68.982768
     ],
     "en": [
-      "displaying the same error message over"
+      "this error message can often occur"
     ],
     "ru": [
-      "отображение того же сообщения об ошибке над"
+      "это сообщение об ошибке может часто появляться"
     ]
   },
   {
     "time": [
-      43.0,
-      46.0
+      68.982768,
+      72.135893
     ],
     "en": [
-      "and over again we are also told in the"
+      "when there are miss configurations between the two routers"
     ],
     "ru": [
-      "и снова нам также говорят в"
+      "когда между двумя маршрутизаторами есть неправильные конфигурации"
     ]
   },
   {
     "time": [
-      46.0,
-      48.0
+      72.135893,
+      75.805038
     ],
     "en": [
-      "instructions that are to doesn't retake"
+      "that caused them not to recognize each other as an active standby pair"
     ],
     "ru": [
-      "инструкции, которые не должны пересдавать"
+      "что заставило их не распознавать друг друга как активную резервную пару"
     ]
   },
   {
     "time": [
-      48.0,
-      51.0
+      75.805038,
+      79.075018
     ],
     "en": [
-      "its role as the active router for VLAN"
+      "so both routers claimed to be the active router"
     ],
     "ru": [
-      "его роль в качестве активного маршрутизатора для VLAN"
+      "поэтому оба маршрутизатора заявили, что они являются активными маршрутизаторами"
     ]
   },
   {
     "time": [
-      51.0,
-      55.0
+      79.075018,
+      81.727518
+    ],
+    "en": [
+      "thus resulting in a duplicate address"
+    ],
+    "ru": [
+      "что приводит к дублированию адреса"
+    ]
+  },
+  {
+    "time": [
+      81.727518,
+      87.667934
+    ],
+    "en": [
+      "in this case pcs in VLAN 10 will still be able to use the virtual IP address"
+    ],
+    "ru": [
+      "в этом случае компьютеры в VLAN 10 по-прежнему смогут использовать виртуальный IP-адрес."
+    ]
+  },
+  {
+    "time": [
+      87.667934,
+      91.721372
+    ],
+    "en": [
+      "however whether they go via r1 or r2"
+    ],
+    "ru": [
+      "однако независимо от того, проходят ли они через r1 или r2"
+    ]
+  },
+  {
+    "time": [
+      91.721372,
+      95.151038
+    ],
+    "en": [
+      "depends on which replies to the ARP requests faster"
+    ],
+    "ru": [
+      "зависит от того, какие ответы на запросы ARP быстрее"
+    ]
+  },
+  {
+    "time": [
+      95.151038,
+      100.526163
+    ],
+    "en": [
+      "just to make it easier to work I'll stop these messages from being displayed"
+    ],
+    "ru": [
+      "просто чтобы облегчить работу, я остановлю отображение этих сообщений"
+    ]
+  },
+  {
+    "time": [
+      100.526163,
+      105.656497
+    ],
+    "en": [
+      "enable terminal no monitor"
+    ],
+    "ru": [
+      "включить терминал без монитора"
+    ]
+  },
+  {
+    "time": [
+      105.656497,
+      110.446559
+    ],
+    "en": [
+      "if I didn't do that the messages would keep appearing every few seconds"
+    ],
+    "ru": [
+      "если бы я этого не сделал, сообщения будут появляться каждые несколько секунд"
+    ]
+  },
+  {
+    "time": [
+      110.446559,
+      112.267497
+    ],
+    "en": [
+      "and make things difficult to see"
+    ],
+    "ru": [
+      "и сделать вещи трудными для просмотра"
+    ]
+  },
+  {
+    "time": [
+      112.267497,
+      115.750142
+    ],
+    "en": [
+      "let's check the HSR P configuration"
+    ],
+    "ru": [
+      "давайте проверим конфигурацию HSR P"
+    ]
+  },
+  {
+    "time": [
+      115.750142,
+      118.84835
+    ],
+    "en": [
+      "show standby"
+    ],
+    "ru": [
+      "показать режим ожидания"
+    ]
+  },
+  {
+    "time": [
+      118.84835,
+      121.499933
+    ],
+    "en": [
+      "and since the error message is for VLAN 10"
+    ],
+    "ru": [
+      "и поскольку сообщение об ошибке предназначено для VLAN 10"
+    ]
+  },
+  {
+    "time": [
+      121.499933,
+      123.931329
+    ],
+    "en": [
+      "I'll just show G 0 1"
+    ],
+    "ru": [
+      "Я просто покажу G 0 1"
+    ]
+  },
+  {
+    "time": [
+      123.931329,
+      125.954475
+    ],
+    "en": [
+      "the interface for VLAN 10"
+    ],
+    "ru": [
+      "интерфейс для VLAN 10"
+    ]
+  },
+  {
+    "time": [
+      125.954475,
+      129.551433
+    ],
+    "en": [
+      "hour 1 is claiming to be the active"
+    ],
+    "ru": [
+      "час 1 претендует на то, чтобы быть активным"
+    ]
+  },
+  {
+    "time": [
+      129.551433,
+      131.790162
+    ],
+    "en": [
+      "which it should be in our configuration"
+    ],
+    "ru": [
+      "который должен быть в нашей конфигурации"
+    ]
+  },
+  {
+    "time": [
+      131.790162,
+      135.101704
+    ],
+    "en": [
+      "you can see the priority is 110"
+    ],
+    "ru": [
+      "Вы можете видеть, что приоритет 110"
+    ]
+  },
+  {
+    "time": [
+      135.101704,
+      137.786621
+    ],
+    "en": [
+      "let's check on our to"
+    ],
+    "ru": [
+      "давай проверим наш"
+    ]
+  },
+  {
+    "time": [
+      137.786621,
+      144.500621
+    ],
+    "en": [
+      "enable terminal no monitor"
+    ],
+    "ru": [
+      "включить терминал без монитора"
+    ]
+  },
+  {
+    "time": [
+      144.500621,
+      148.935267
+    ],
+    "en": [
+      "show standby g 0 2"
+    ],
+    "ru": [
+      "показать режим ожидания g 0 2"
+    ]
+  },
+  {
+    "time": [
+      148.935267,
+      153.255204
+    ],
+    "en": [
+      "so R 2 is also claiming to be the active router"
+    ],
+    "ru": [
+      "поэтому R 2 также претендует на роль активного маршрутизатора"
+    ]
+  },
+  {
+    "time": [
+      153.255204,
+      155.107892
+    ],
+    "en": [
+      "what's causing this"
+    ],
+    "ru": [
+      "что вызывает это"
+    ]
+  },
+  {
+    "time": [
+      155.107892,
+      158.007058
+    ],
+    "en": [
+      "let's look at the two side-by-side"
+    ],
+    "ru": [
+      "давайте посмотрим на два бок о бок"
+    ]
+  },
+  {
+    "time": [
+      158.007058,
+      164.255246
+    ],
+    "en": [
+      "did you notice the problem"
+    ],
+    "ru": [
+      "вы заметили проблему?"
+    ]
+  },
+  {
+    "time": [
+      164.255246,
+      167.932433
+    ],
+    "en": [
+      "R 2 is using version 2 as a chit"
+    ],
+    "ru": [
+      "R 2 использует версию 2 как чит"
+    ]
+  },
+  {
+    "time": [
+      167.932433,
+      169.460912
+    ],
+    "en": [
+      "however R 1 is not"
+    ],
+    "ru": [
+      "однако R 1 не"
+    ]
+  },
+  {
+    "time": [
+      169.460912,
+      171.320475
+    ],
+    "en": [
+      "it's still using version 1"
+    ],
+    "ru": [
+      "он все еще использует версию 1"
+    ]
+  },
+  {
+    "time": [
+      171.320475,
+      174.132496
+    ],
+    "en": [
+      "let's fix that on our one"
+    ],
+    "ru": [
+      "давайте исправим это на нашем"
+    ]
+  },
+  {
+    "time": [
+      174.132496,
+      177.688871
+    ],
+    "en": [
+      "compte"
+    ],
+    "ru": [
+      "compte"
+    ]
+  },
+  {
+    "time": [
+      177.688871,
+      179.5171
+    ],
+    "en": [
+      "interface G 0 1"
+    ],
+    "ru": [
+      "интерфейс G 0 1"
+    ]
+  },
+  {
+    "time": [
+      179.5171,
+      182.346516
+    ],
+    "en": [
+      "standby version 2"
+    ],
+    "ru": [
+      "резервная версия 2"
+    ]
+  },
+  {
+    "time": [
+      182.346516,
+      189.177662
+    ],
+    "en": [
+      "ok I'll wait here for 10 seconds or so to let them work things out and then let's check if r2 is the standby"
+    ],
+    "ru": [
+      "хорошо, я подожду здесь 10 секунд или около того, чтобы они поработали, а затем давайте проверим, является ли r2 резервным"
+    ]
+  },
+  {
+    "time": [
+      189.177662,
+      200.977641
+    ],
+    "en": [
+      "okay hopefully that's enough time"
+    ],
+    "ru": [
+      "хорошо, надеюсь, достаточно времени"
+    ]
+  },
+  {
+    "time": [
+      200.977641,
+      202.689453
+    ],
+    "en": [
+      "let's check out our to"
+    ],
+    "ru": [
+      "давай проверим наш"
+    ]
+  },
+  {
+    "time": [
+      202.689453,
+      207.819703
+    ],
+    "en": [
+      "show standby g02"
+    ],
+    "ru": [
+      "показать режим ожидания g02"
+    ]
+  },
+  {
+    "time": [
+      207.819703,
+      211.998828
+    ],
+    "en": [
+      "there we go state is standby"
+    ],
+    "ru": [
+      "там мы идем состояние ожидания"
+    ]
+  },
+  {
+    "time": [
+      211.998828,
+      215.964391
+    ],
+    "en": [
+      "I'll try a traceroute from pc1 to the external server"
+    ],
+    "ru": [
+      "Я попробую трассировку с pc1 на внешний сервер"
+    ]
+  },
+  {
+    "time": [
+      215.964391,
+      219.439578
+    ],
+    "en": [
+      "just to confirm it takes the path via r1"
+    ],
+    "ru": [
+      "просто чтобы подтвердить, что он идет по пути через r1"
+    ]
+  },
+  {
+    "time": [
+      219.439578,
+      225.320057
+    ],
+    "en": [
+      "trace route 1500 one"
+    ],
+    "ru": [
+      "проследить маршрут 1500 один"
+    ]
+  },
+  {
+    "time": [
+      225.320057,
+      235.669536
+    ],
+    "en": [
+      "perfect it's going via r1 at ten ten ten -"
+    ],
+    "ru": [
+      "идеально, это идет через r1 в десять десять десять -"
+    ]
+  },
+  {
+    "time": [
+      235.669536,
+      238.448828
+    ],
+    "en": [
+      "so we solved the problem here on r1"
+    ],
+    "ru": [
+      "Итак, мы решили проблему здесь, на r1"
+    ]
+  },
+  {
+    "time": [
+      238.448828,
+      243.04337
+    ],
+    "en": [
+      "I'll enable the syslog messages on r1 and r2 again"
+    ],
+    "ru": [
+      "Я снова включу сообщения системного журнала на r1 и r2"
+    ]
+  },
+  {
+    "time": [
+      243.04337,
+      245.596099
+    ],
+    "en": [
+      "since those error messages should have stopped"
+    ],
+    "ru": [
+      "поскольку эти сообщения об ошибках должны были прекратиться"
+    ]
+  },
+  {
+    "time": [
+      245.596099,
+      247.406411
+    ],
+    "en": [
+      "on r1 first"
+    ],
+    "ru": [
+      "на r1 сначала"
+    ]
+  },
+  {
+    "time": [
+      247.406411,
+      252.520328
+    ],
+    "en": [
+      "end terminal monitor"
+    ],
+    "ru": [
+      "конечный терминал монитор"
+    ]
+  },
+  {
+    "time": [
+      252.520328,
+      256.524245
+    ],
+    "en": [
+      "okay now let's do the same on r2"
+    ],
+    "ru": [
+      "хорошо, теперь давайте сделаем то же самое на r2"
+    ]
+  },
+  {
+    "time": [
+      256.524245,
+      261.574911
+    ],
+    "en": [
+      "and terminal monitor"
+    ],
+    "ru": [
+      "и терминальный монитор"
+    ]
+  },
+  {
+    "time": [
+      261.574911,
+      265.961682
+    ],
+    "en": [
+      "okay now let's investigate what's up on VLAN 20"
+    ],
+    "ru": [
+      "Хорошо, теперь давайте разберемся, что происходит в VLAN 20"
+    ]
+  },
+  {
+    "time": [
+      265.961682,
+      270.33087
+    ],
+    "en": [
+      "show standby gig 0 1"
+    ],
+    "ru": [
+      "показать ждущий концерт 0 1"
+    ]
+  },
+  {
+    "time": [
+      270.33087,
+      275.696516
+    ],
+    "en": [
+      "so R 2 is currently the active router for VLAN 20"
+    ],
+    "ru": [
+      "поэтому R 2 в настоящее время является активным маршрутизатором для VLAN 20"
+    ]
+  },
+  {
+    "time": [
+      275.696516,
+      280.646411
+    ],
+    "en": [
+      "but we're told in the lab instructions that it doesn't retake its role as active router"
+    ],
+    "ru": [
+      "но в лабораторных инструкциях нам сказано, что он не восстанавливает свою роль активного маршрутизатора."
+    ]
+  },
+  {
+    "time": [
+      280.646411,
+      282.408973
+    ],
+    "en": [
+      "when it recovers from a failure"
+    ],
+    "ru": [
+      "когда он восстанавливается после сбоя"
+    ]
+  },
+  {
+    "time": [
+      282.408973,
+      286.354098
+    ],
+    "en": [
+      "actually I don't even need to troubleshoot anything here"
+    ],
+    "ru": [
+      "на самом деле мне даже не нужно ничего устранять здесь"
+    ]
+  },
+  {
+    "time": [
+      286.354098,
+      288.971431
+    ],
+    "en": [
+      "if you come across a problem like this"
+    ],
+    "ru": [
+      "если вы столкнетесь с такой проблемой"
+    ]
+  },
+  {
+    "time": [
+      288.971431,
+      291.415931
+    ],
+    "en": [
+      "the issue is preemption"
+    ],
+    "ru": [
+      "проблема в упреждении"
+    ]
+  },
+  {
+    "time": [
+      291.415931,
+      293.773639
+    ],
+    "en": [
+      "actually it says right here"
+    ],
+    "ru": [
+      "на самом деле он говорит прямо здесь"
+    ]
+  },
+  {
+    "time": [
+      293.773639,
+      295.233514
+    ],
+    "en": [
+      "preemption disabled"
+    ],
+    "ru": [
+      "приоритетное отключение"
+    ]
+  },
+  {
+    "time": [
+      295.233514,
+      302.186118
+    ],
+    "en": [
+      "if preemption is disabled the active router won't take back its role as the active router"
+    ],
+    "ru": [
+      "если приоритетное отключение отключено, активный маршрутизатор не вернет себе роль активного маршрутизатора."
+    ]
+  },
+  {
+    "time": [
+      302.186118,
+      304.25116
+    ],
+    "en": [
+      "if it fails and then recovers"
+    ],
+    "ru": [
+      "если это не удается, а затем восстанавливается"
+    ]
+  },
+  {
+    "time": [
+      304.25116,
+      306.041243
+    ],
+    "en": [
+      "it will become the standby router"
+    ],
+    "ru": [
+      "он станет резервным маршрутизатором"
+    ]
+  },
+  {
+    "time": [
+      306.041243,
+      310.962368
+    ],
+    "en": [
+      "the configuration instructions say that preemption should be enabled however"
+    ],
+    "ru": [
+      "в инструкциях по настройке сказано, что приоритетное прерывание должно быть включено, однако"
+    ]
+  },
+  {
+    "time": [
+      310.962368,
+      312.210764
+    ],
+    "en": [
+      "so let's do that"
+    ],
+    "ru": [
+      "так давай сделаем это"
+    ]
+  },
+  {
+    "time": [
+      312.210764,
+      314.112305
+    ],
+    "en": [
+      "coffee tea"
+    ],
+    "ru": [
+      "кофе чай"
+    ]
+  },
+  {
+    "time": [
+      314.112305,
+      316.632264
+    ],
+    "en": [
+      "interface g0 1"
+    ],
+    "ru": [
+      "интерфейс g0 1"
+    ]
+  },
+  {
+    "time": [
+      316.632264,
+      320.38641
+    ],
+    "en": [
+      "standby 20 preempt"
+    ],
+    "ru": [
+      "режим ожидания 20 вытесн."
+    ]
+  },
+  {
+    "time": [
+      320.38641,
+      323.85566
+    ],
+    "en": [
+      "do show standby G 0 1"
+    ],
+    "ru": [
+      "показывать режим ожидания G 0 1"
+    ]
+  },
+  {
+    "time": [
+      323.85566,
+      327.035097
+    ],
+    "en": [
+      "there we go preemption enabled"
+    ],
+    "ru": [
+      "Включено приоритетное прерывание"
+    ]
+  },
+  {
+    "time": [
+      327.035097,
+      329.309201
+    ],
+    "en": [
+      "that's all for this lab"
+    ],
+    "ru": [
+      "это все для этой лаборатории"
+    ]
+  },
+  {
+    "time": [
+      329.309201,
+      336.32368
+    ],
+    "en": [
+      "thank you for watching I hope this lab and video have been helpful for you"
+    ],
+    "ru": [
+      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были для вас полезны."
+    ]
+  },
+  {
+    "time": [
+      336.32368,
+      340.855035
+    ],
+    "en": [
+      "please subscribe for future labs like this which will be released weekly"
+    ],
+    "ru": [
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
+    ]
+  },
+  {
+    "time": [
+      340.855035,
+      345.807826
+    ],
+    "en": [
+      "if you have requests for any specific labs let me know in the comments section"
+    ],
+    "ru": [
+      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
+    ]
+  },
+  {
+    "time": [
+      345.807826,
+      353.114471
+    ],
+    "en": [
+      "if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description"
+    ],
+    "ru": [
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах и эфириуме по адресам в описании"
+    ]
+  },
+  {
+    "time": [
+      353.114471,
+      361.722909
+    ],
+    "en": [
+      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
+    ],
+    "ru": [
+      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
+    ]
+  },
+  {
+    "time": [
+      361.722909,
+      361.722909
     ],
     "en": [
       ""
@@ -241,8 +1105,8 @@ let objs = [
   },
   {
     "time": [
-      51.0,
-      55.0
+      361.722909,
+      361.722909
     ],
     "en": [
       ""
@@ -253,1034 +1117,14 @@ let objs = [
   },
   {
     "time": [
-      55.0,
-      57.0
+      361.722909,
+      361.722909
     ],
     "en": [
-      "take a look at this error message"
+      ""
     ],
     "ru": [
-      "взгляните на это сообщение об ошибке"
-    ]
-  },
-  {
-    "time": [
-      57.0,
-      62.0
-    ],
-    "en": [
-      "duplicate address 10 10 10 1 that's the"
-    ],
-    "ru": [
-      "дублирующийся адрес 10 10 10 1 это"
-    ]
-  },
-  {
-    "time": [
-      62.0,
-      67.0
-    ],
-    "en": [
-      "virtual IP address used for VLAN 10 this"
-    ],
-    "ru": [
-      "виртуальный IP-адрес, используемый для VLAN 10, это"
-    ]
-  },
-  {
-    "time": [
-      67.0,
-      69.0
-    ],
-    "en": [
-      "error message can often occur when there"
-    ],
-    "ru": [
-      "сообщение об ошибке может часто появляться, когда есть"
-    ]
-  },
-  {
-    "time": [
-      69.0,
-      71.0
-    ],
-    "en": [
-      "are miss configurations between the two"
-    ],
-    "ru": [
-      "пропущенные конфигурации между двумя"
-    ]
-  },
-  {
-    "time": [
-      71.0,
-      73.0
-    ],
-    "en": [
-      "routers that caused them not to"
-    ],
-    "ru": [
-      "маршрутизаторы, из-за которых они не"
-    ]
-  },
-  {
-    "time": [
-      73.0,
-      74.0
-    ],
-    "en": [
-      "recognize each other as an active"
-    ],
-    "ru": [
-      "признают друг друга как активные"
-    ]
-  },
-  {
-    "time": [
-      74.0,
-      77.0
-    ],
-    "en": [
-      "standby pair so both routers claimed to"
-    ],
-    "ru": [
-      "резервная пара, поэтому оба маршрутизатора заявили, что"
-    ]
-  },
-  {
-    "time": [
-      77.0,
-      80.0
-    ],
-    "en": [
-      "be the active router thus resulting in a"
-    ],
-    "ru": [
-      "быть активным маршрутизатором, что приводит к"
-    ]
-  },
-  {
-    "time": [
-      80.0,
-      84.0
-    ],
-    "en": [
-      "duplicate address in this case pcs in"
-    ],
-    "ru": [
-      "дублирующийся адрес в этом случае шт. в"
-    ]
-  },
-  {
-    "time": [
-      84.0,
-      86.0
-    ],
-    "en": [
-      "VLAN 10 will still be able to use the"
-    ],
-    "ru": [
-      "VLAN 10 по-прежнему сможет использовать"
-    ]
-  },
-  {
-    "time": [
-      86.0,
-      89.0
-    ],
-    "en": [
-      "virtual IP address however whether they"
-    ],
-    "ru": [
-      "виртуальный IP-адрес, однако,"
-    ]
-  },
-  {
-    "time": [
-      89.0,
-      93.0
-    ],
-    "en": [
-      "go via r1 or r2 depends on which replies"
-    ],
-    "ru": [
-      "пройти через r1 или r2 в зависимости от того, какие ответы"
-    ]
-  },
-  {
-    "time": [
-      93.0,
-      97.0
-    ],
-    "en": [
-      "to the ARP requests faster just to make"
-    ],
-    "ru": [
-      "к запросам ARP быстрее, чтобы"
-    ]
-  },
-  {
-    "time": [
-      97.0,
-      98.0
-    ],
-    "en": [
-      "it easier to work I'll stop these"
-    ],
-    "ru": [
-      "легче работать я остановлю это"
-    ]
-  },
-  {
-    "time": [
-      98.0,
-      102.0
-    ],
-    "en": [
-      "messages from being displayed enable"
-    ],
-    "ru": [
-      "сообщения от отображения включить"
-    ]
-  },
-  {
-    "time": [
-      102.0,
-      107.0
-    ],
-    "en": [
-      "terminal no monitor if I didn't do that"
-    ],
-    "ru": [
-      "терминал без монитора, если я этого не сделал"
-    ]
-  },
-  {
-    "time": [
-      107.0,
-      109.0
-    ],
-    "en": [
-      "the messages would keep appearing every"
-    ],
-    "ru": [
-      "сообщения будут появляться каждые"
-    ]
-  },
-  {
-    "time": [
-      109.0,
-      111.0
-    ],
-    "en": [
-      "few seconds and make things difficult to"
-    ],
-    "ru": [
-      "несколько секунд и усложняют задачу"
-    ]
-  },
-  {
-    "time": [
-      111.0,
-      112.0
-    ],
-    "en": [
-      "see"
-    ],
-    "ru": [
-      "видеть"
-    ]
-  },
-  {
-    "time": [
-      112.0,
-      117.0
-    ],
-    "en": [
-      "let's check the HSR P configuration show"
-    ],
-    "ru": [
-      "давайте проверим шоу конфигурации HSR P"
-    ]
-  },
-  {
-    "time": [
-      117.0,
-      120.0
-    ],
-    "en": [
-      "standby and since the error message is"
-    ],
-    "ru": [
-      "в режиме ожидания и поскольку сообщение об ошибке"
-    ]
-  },
-  {
-    "time": [
-      120.0,
-      124.0
-    ],
-    "en": [
-      "for VLAN 10 I'll just show G 0 1 the"
-    ],
-    "ru": [
-      "для VLAN 10 я просто покажу G 0 1"
-    ]
-  },
-  {
-    "time": [
-      124.0,
-      128.0
-    ],
-    "en": [
-      "interface for VLAN 10 hour 1 is claiming"
-    ],
-    "ru": [
-      "интерфейс для VLAN 10 час 1 требует"
-    ]
-  },
-  {
-    "time": [
-      128.0,
-      130.0
-    ],
-    "en": [
-      "to be the active which it should be in"
-    ],
-    "ru": [
-      "быть активным, в котором он должен быть"
-    ]
-  },
-  {
-    "time": [
-      130.0,
-      132.0
-    ],
-    "en": [
-      "our configuration"
-    ],
-    "ru": [
-      "наша конфигурация"
-    ]
-  },
-  {
-    "time": [
-      132.0,
-      136.0
-    ],
-    "en": [
-      "you can see the priority is 110 let's"
-    ],
-    "ru": [
-      "как видите, приоритет 110 давай"
-    ]
-  },
-  {
-    "time": [
-      136.0,
-      143.0
-    ],
-    "en": [
-      "check on our to enable terminal no"
-    ],
-    "ru": [
-      "проверьте на нашем, чтобы включить терминал нет"
-    ]
-  },
-  {
-    "time": [
-      143.0,
-      151.0
-    ],
-    "en": [
-      "monitor show standby g 0 2 so R 2 is"
-    ],
-    "ru": [
-      "монитор показывает режим ожидания g 0 2, поэтому R 2"
-    ]
-  },
-  {
-    "time": [
-      151.0,
-      152.0
-    ],
-    "en": [
-      "also claiming to be the active router"
-    ],
-    "ru": [
-      "также заявляет, что является активным маршрутизатором"
-    ]
-  },
-  {
-    "time": [
-      152.0,
-      156.0
-    ],
-    "en": [
-      "what's causing this let's look at the"
-    ],
-    "ru": [
-      "что вызывает это, давайте посмотрим на"
-    ]
-  },
-  {
-    "time": [
-      156.0,
-      163.0
-    ],
-    "en": [
-      "two side-by-side did you notice the"
-    ],
-    "ru": [
-      "два рядом, вы заметили"
-    ]
-  },
-  {
-    "time": [
-      163.0,
-      167.0
-    ],
-    "en": [
-      "problem R 2 is using version 2 as a chit"
-    ],
-    "ru": [
-      "проблема R 2 использует версию 2 как чит"
-    ]
-  },
-  {
-    "time": [
-      167.0,
-      170.0
-    ],
-    "en": [
-      "however R 1 is not it's still using"
-    ],
-    "ru": [
-      "однако R 1 не все еще использует"
-    ]
-  },
-  {
-    "time": [
-      170.0,
-      175.0
-    ],
-    "en": [
-      "version 1 let's fix that on our one"
-    ],
-    "ru": [
-      "версия 1 давайте исправим это на нашем"
-    ]
-  },
-  {
-    "time": [
-      175.0,
-      182.0
-    ],
-    "en": [
-      "compte interface G 0 1 standby version 2"
-    ],
-    "ru": [
-      "интерфейс compte G 0 1 резервная версия 2"
-    ]
-  },
-  {
-    "time": [
-      182.0,
-      185.0
-    ],
-    "en": [
-      "ok I'll wait here for 10 seconds or so"
-    ],
-    "ru": [
-      "хорошо, я подожду здесь секунд 10 или около того"
-    ]
-  },
-  {
-    "time": [
-      185.0,
-      187.0
-    ],
-    "en": [
-      "to let them work things out and then"
-    ],
-    "ru": [
-      "позволить им разобраться, а затем"
-    ]
-  },
-  {
-    "time": [
-      187.0,
-      199.0
-    ],
-    "en": [
-      "let's check if r2 is the standby"
-    ],
-    "ru": [
-      "давайте проверим, является ли r2 резервным"
-    ]
-  },
-  {
-    "time": [
-      199.0,
-      201.0
-    ],
-    "en": [
-      "okay hopefully that's enough time let's"
-    ],
-    "ru": [
-      "хорошо, надеюсь, достаточно времени, давай"
-    ]
-  },
-  {
-    "time": [
-      201.0,
-      210.0
-    ],
-    "en": [
-      "check out our to show standby g02 there"
-    ],
-    "ru": [
-      "проверьте наш, чтобы показать там режим ожидания g02"
-    ]
-  },
-  {
-    "time": [
-      210.0,
-      210.0
-    ],
-    "en": [
-      "we go"
-    ],
-    "ru": [
-      "мы идем"
-    ]
-  },
-  {
-    "time": [
-      210.0,
-      213.0
-    ],
-    "en": [
-      "state is standby I'll try a traceroute"
-    ],
-    "ru": [
-      "состояние в режиме ожидания я попробую трассировку"
-    ]
-  },
-  {
-    "time": [
-      213.0,
-      217.0
-    ],
-    "en": [
-      "from pc1 to the external server just to"
-    ],
-    "ru": [
-      "с pc1 на внешний сервер только для того, чтобы"
-    ]
-  },
-  {
-    "time": [
-      217.0,
-      222.0
-    ],
-    "en": [
-      "confirm it takes the path via r1 trace"
-    ],
-    "ru": [
-      "Подтвердите, что он идет по пути через трассировку r1"
-    ]
-  },
-  {
-    "time": [
-      222.0,
-      232.0
-    ],
-    "en": [
-      "route 1500 one perfect it's going via r1"
-    ],
-    "ru": [
-      "Маршрут 1500, идеально, он идет через R1"
-    ]
-  },
-  {
-    "time": [
-      232.0,
-      236.0
-    ],
-    "en": [
-      "at ten ten ten - so we solved the"
-    ],
-    "ru": [
-      "в десять десять десять - так что мы решили"
-    ]
-  },
-  {
-    "time": [
-      236.0,
-      240.0
-    ],
-    "en": [
-      "problem here on r1 I'll enable the"
-    ],
-    "ru": [
-      "проблема здесь на r1, я включу"
-    ]
-  },
-  {
-    "time": [
-      240.0,
-      243.0
-    ],
-    "en": [
-      "syslog messages on r1 and r2 again since"
-    ],
-    "ru": [
-      "сообщения системного журнала на r1 и r2 снова, так как"
-    ]
-  },
-  {
-    "time": [
-      243.0,
-      245.0
-    ],
-    "en": [
-      "those error messages should have stopped"
-    ],
-    "ru": [
-      "эти сообщения об ошибках должны были быть остановлены"
-    ]
-  },
-  {
-    "time": [
-      245.0,
-      254.0
-    ],
-    "en": [
-      "on r1 first end terminal monitor okay"
-    ],
-    "ru": [
-      "на r1 монитор первого конца терминала в порядке"
-    ]
-  },
-  {
-    "time": [
-      254.0,
-      260.0
-    ],
-    "en": [
-      "now let's do the same on r2 and terminal"
-    ],
-    "ru": [
-      "теперь сделаем то же самое на r2 и терминале"
-    ]
-  },
-  {
-    "time": [
-      260.0,
-      262.0
-    ],
-    "en": [
-      "monitor"
-    ],
-    "ru": [
-      "монитор"
-    ]
-  },
-  {
-    "time": [
-      262.0,
-      264.0
-    ],
-    "en": [
-      "okay now let's investigate what's up on"
-    ],
-    "ru": [
-      "хорошо, теперь давайте разберемся, что происходит"
-    ]
-  },
-  {
-    "time": [
-      264.0,
-      273.0
-    ],
-    "en": [
-      "VLAN 20 show standby gig 0 1 so R 2 is"
-    ],
-    "ru": [
-      "VLAN 20 показывает резервный гиг 0 1, поэтому R 2"
-    ]
-  },
-  {
-    "time": [
-      273.0,
-      275.0
-    ],
-    "en": [
-      "currently the active router for VLAN 20"
-    ],
-    "ru": [
-      "в настоящее время активный маршрутизатор для VLAN 20"
-    ]
-  },
-  {
-    "time": [
-      275.0,
-      277.0
-    ],
-    "en": [
-      "but we're told in the lab instructions"
-    ],
-    "ru": [
-      "но нам сказано в лабораторных инструкциях"
-    ]
-  },
-  {
-    "time": [
-      277.0,
-      279.0
-    ],
-    "en": [
-      "that it doesn't retake its role as"
-    ],
-    "ru": [
-      "что он не вернет себе роль"
-    ]
-  },
-  {
-    "time": [
-      279.0,
-      281.0
-    ],
-    "en": [
-      "active router when it recovers from a"
-    ],
-    "ru": [
-      "активный маршрутизатор, когда он восстанавливается после"
-    ]
-  },
-  {
-    "time": [
-      281.0,
-      285.0
-    ],
-    "en": [
-      "failure actually I don't even need to"
-    ],
-    "ru": [
-      "провал на самом деле мне даже не нужно"
-    ]
-  },
-  {
-    "time": [
-      285.0,
-      287.0
-    ],
-    "en": [
-      "troubleshoot anything here if you come"
-    ],
-    "ru": [
-      "устраните здесь что-нибудь, если вы придете"
-    ]
-  },
-  {
-    "time": [
-      287.0,
-      290.0
-    ],
-    "en": [
-      "across a problem like this the issue is"
-    ],
-    "ru": [
-      "через проблему, подобную этой, проблема в том,"
-    ]
-  },
-  {
-    "time": [
-      290.0,
-      293.0
-    ],
-    "en": [
-      "preemption actually it says right here"
-    ],
-    "ru": [
-      "упреждение на самом деле говорится прямо здесь"
-    ]
-  },
-  {
-    "time": [
-      293.0,
-      297.0
-    ],
-    "en": [
-      "preemption disabled if preemption is"
-    ],
-    "ru": [
-      "приоритетное прерывание отключено, если приоритетное прерывание"
-    ]
-  },
-  {
-    "time": [
-      297.0,
-      300.0
-    ],
-    "en": [
-      "disabled the active router won't take"
-    ],
-    "ru": [
-      "отключен активный роутер не принимает"
-    ]
-  },
-  {
-    "time": [
-      300.0,
-      302.0
-    ],
-    "en": [
-      "back its role as the active router if it"
-    ],
-    "ru": [
-      "вернуться к своей роли активного маршрутизатора, если он"
-    ]
-  },
-  {
-    "time": [
-      302.0,
-      304.0
-    ],
-    "en": [
-      "fails and then recovers it will become"
-    ],
-    "ru": [
-      "выходит из строя, а затем восстанавливается, он станет"
-    ]
-  },
-  {
-    "time": [
-      304.0,
-      307.0
-    ],
-    "en": [
-      "the standby router the configuration"
-    ],
-    "ru": [
-      "резервный маршрутизатор конфигурация"
-    ]
-  },
-  {
-    "time": [
-      307.0,
-      309.0
-    ],
-    "en": [
-      "instructions say that preemption should"
-    ],
-    "ru": [
-      "инструкции говорят, что приоритетное обслуживание должно"
-    ]
-  },
-  {
-    "time": [
-      309.0,
-      312.0
-    ],
-    "en": [
-      "be enabled however so let's do that"
-    ],
-    "ru": [
-      "быть включенным, но давайте сделаем это"
-    ]
-  },
-  {
-    "time": [
-      312.0,
-      316.0
-    ],
-    "en": [
-      "coffee tea interface g0 1"
-    ],
-    "ru": [
-      "кофе чай интерфейс g0 1"
-    ]
-  },
-  {
-    "time": [
-      316.0,
-      324.0
-    ],
-    "en": [
-      "standby 20 preempt do show standby G 0 1"
-    ],
-    "ru": [
-      "режим ожидания 20 вытеснение показать режим ожидания G 0 1"
-    ]
-  },
-  {
-    "time": [
-      324.0,
-      327.0
-    ],
-    "en": [
-      "there we go preemption enabled that's"
-    ],
-    "ru": [
-      "мы идем с включенным приоритетом, это"
-    ]
-  },
-  {
-    "time": [
-      327.0,
-      331.0
-    ],
-    "en": [
-      "all for this lab"
-    ],
-    "ru": [
-      "все для этой лаборатории"
-    ]
-  },
-  {
-    "time": [
-      331.0,
-      334.0
-    ],
-    "en": [
-      "thank you for watching I hope this lab"
-    ],
-    "ru": [
-      "спасибо за просмотр, надеюсь, эта лаборатория"
-    ]
-  },
-  {
-    "time": [
-      334.0,
-      336.0
-    ],
-    "en": [
-      "and video have been helpful for you"
-    ],
-    "ru": [
-      "и видео были для вас полезны"
-    ]
-  },
-  {
-    "time": [
-      336.0,
-      338.0
-    ],
-    "en": [
-      "please subscribe for future labs like"
-    ],
-    "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, такие как"
-    ]
-  },
-  {
-    "time": [
-      338.0,
-      341.0
-    ],
-    "en": [
-      "this which will be released weekly if"
-    ],
-    "ru": [
-      "это будет выпускаться еженедельно, если"
-    ]
-  },
-  {
-    "time": [
-      341.0,
-      343.0
-    ],
-    "en": [
-      "you have requests for any specific labs"
-    ],
-    "ru": [
-      "у вас есть запросы по каким-либо конкретным лабораториям"
-    ]
-  },
-  {
-    "time": [
-      343.0,
-      346.0
-    ],
-    "en": [
-      "let me know in the comments section if"
-    ],
-    "ru": [
-      "дайте мне знать в разделе комментариев, если"
-    ]
-  },
-  {
-    "time": [
-      346.0,
-      349.0
-    ],
-    "en": [
-      "you want to support my channel I accept"
-    ],
-    "ru": [
-      "вы хотите поддержать мой канал я принимаю"
-    ]
-  },
-  {
-    "time": [
-      349.0,
-      351.0
-    ],
-    "en": [
-      "Bitcoin and aetherium donations via the"
-    ],
-    "ru": [
-      "Пожертвования биткойнов и эфириума через"
-    ]
-  },
-  {
-    "time": [
-      351.0,
-      354.0
-    ],
-    "en": [
-      "addresses in the description I am also a"
-    ],
-    "ru": [
-      "адреса в описании я тоже"
-    ]
-  },
-  {
-    "time": [
-      354.0,
-      357.0
-    ],
-    "en": [
-      "brave verified publisher and accept bat"
-    ],
-    "ru": [
-      "храбрый проверенный издатель и прими летучую мышь"
-    ]
-  },
-  {
-    "time": [
-      357.0,
-      360.0
-    ],
-    "en": [
-      "or basic attention token donations in"
-    ],
-    "ru": [
-      "или основные пожертвования токенов внимания в"
-    ]
-  },
-  {
-    "time": [
-      360.0,
-      360.0
-    ],
-    "en": [
-      "the brave browser"
-    ],
-    "ru": [
-      "смелый браузер"
+      ""
     ]
   }
 ]

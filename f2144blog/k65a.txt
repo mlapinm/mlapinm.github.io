@@ -47,10 +47,10 @@ or the fast and easy way as interface t0
 95.397616
 let's assign an IP address to it
 99.366890
-IP address 192.168.1.1 255 dot 255 dot 255 dot
-25599.366890
+IP address 192.168.1.1 255.255.255.0
+
 107.736028
-@ UNASUR s--
+aaaaaa
 111.446729
 which interface do you think will be the source
 115.121400
@@ -72,29 +72,29 @@ it's the IP address on r2 s s0 0 0 interface
 146.182669
 the one facing the service provider
 148.683712
-so 200 oh oh -
+so 200.0.0.2
 152.968270
 that's all there is to it
 154.685776
-now let's go on our to
+now let's go on r 2
 158.296728
-enable compte
+enable conf t
 162.385844
 interface tunnel 0
 165.873984
 IP address 192.168.1.1
 170.370900
-fifty five to fifty five to five to
+255.255.255.252
 174.382465
 the source and destination will be the opposite of our ones configuration
 179.252237
-the source will be R to s s 0 0 0 interface
+the source will be R 2 s s 0 0 0 interface
 184.895775
 and the destination R 1 s s 0 0 0 interface
 188.789312
 tunnel source s 0 0 0
 193.678835
-tunnel destination 100 odo - ok
+tunnel destination 100.0.0.2 ok
 199.295502
 that's all there is to configuring the tunnel
 203.076205
@@ -102,7 +102,7 @@ however I've missed one very important thing
 208.050355
 do show IP route
 211.004346
-Artoo's tunnel destination is 100 oh oh -
+r2's tunnel destination is 100.0.0.2
 216.222804
 but it has no idea how to get there
 219.401602
@@ -114,13 +114,13 @@ do ping 192.168.1.1
 228.795502
 no response
 235.803076
-let's configure a static default route via SPR to
+let's configure a static default route via SPR 2
 240.393280
-exit IP route oh-oh-oh-oh-oh-oh-oh-oh-oh 201
+exit IP route 0.0.0.0 0.0.0.0 200.0.0.1
 250.965547
-now we have to do the same on our one
+now we have to do the same on r1
 254.287611
-exit IP route oh-oh-oh-oh-oh-oh-oh-oh-oh 101
+exit IP route 0.0.0.0 0.0.0.0 100.0.0.1
 266.663869
 keep in mind it doesn't have to be a default route
 270.203846
@@ -144,39 +144,39 @@ do show interface tunnel zero
 311.689447
 there's the tunnel source and destination we configured
 316.249674
-and you can see the tunnel protocol is gr e being transported over IP
+and you can see the tunnel protocol is gre being transported over IP
 322.465569
-ok now let's configure AI GRP over the tunnel
+ok now let's configure EIGRP over the tunnel
 327.053800
-router ERP
+router EIGRP
 330.731510
 and I'll use an a s number of 100
 333.784708
 so I want to advertise the inside network
 337.344776
-so Network 1000 100 200 255
+so Network 10.0.1.0 0.0.0.255
 344.164503
 I used the exact wildcard mask
 346.957723
-but remember it's not always needed for EIG RP
+but remember it's not always needed for EIGRP
 349.986816
-just network 10000 would have activated AI GRP on the G 0 0 interface as well
+just network 10.0.0.0 would have activated EIGRP on the G 0 0 interface as well
 358.386203
-okay now let's activate di GRP on the tunnel
+okay now let's activate EIGRP on the tunnel
 363.100376
 network 192.168.1.0 again I'll use the exact wildcard mask
 370.055070
-0:03
+0.0.0.3
 372.551124
-ok let's do the same on our two
+ok let's do the same on r2
 374.968902
-rotary IG RP 100
+router EIGRP 100
 380.397859
-Network 1002 oh-oh-oh-oh 255
+Network 10.0.2.0 0.0.0.255
 386.406884
-network 192.168.1.0 oh oh oh 3
+network 192.168.1.0 0.0.0.3
 392.406430
-immediately we get a message saying we have a new AI GRP adjacency
+immediately we get a message saying we have a new EIGRP adjacency
 397.856702
 Oh where the tunnel interface
 398.977904
@@ -186,19 +186,19 @@ and the neighbor address is our ones tunnel address
 405.450148
 do show IP route
 409.459332
-look are two learned our ones
+look are two learned r 1
 412.864570
-1001 0/24 network
+10.0.1.0/24 network
 415.953776
-let's try a ping from PC to 2 PC one
+let's try a ping from PC 2 to PC 1
 420.774434
-ping 1001 100
+ping 10.0.1.100
 428.740669
 okay it works
 438.750375
 our GRE tunnel is up and working
 441.717586
-and we successfully configured a IG RP over the tunnel to share the inside networks
+and we successfully configured a EIGRP over the tunnel to share the inside networks
 446.579241
 that's all for this lab
 448.649467

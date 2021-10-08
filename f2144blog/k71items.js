@@ -2,295 +2,847 @@ let objs = [
   {
     "time": [
       0.0,
-      3.0
+      4.459728
     ],
     "en": [
-      "welcome to this free CCNA packet tracer"
+      "welcome to this free CCNA packet tracer practice lab"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный трассировщик пакетов CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
     ]
   },
   {
     "time": [
-      3.0,
-      5.0
+      4.459728,
+      7.474728
     ],
     "en": [
-      "practice lab you can download the lab"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "Практическая лаборатория вы можете скачать лабораторию"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
     "time": [
-      5.0,
-      8.0
+      7.474728,
+      14.747707
     ],
     "en": [
-      "file from the link in the description if"
+      "if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description"
     ],
     "ru": [
-      "файл по ссылке в описании, если"
+      "если вам нравятся эти лаборатории, пожалуйста, подумайте о поддержке меня через мой патреон или варианты криптовалюты в описании"
     ]
   },
   {
     "time": [
-      8.0,
-      10.0
+      14.747707,
+      18.730102
     ],
     "en": [
-      "you like these labs please consider"
+      "also please subscribe to the channel for more labs like this"
     ],
     "ru": [
-      "Вам нравятся эти лаборатории, пожалуйста, примите во внимание"
+      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторных работ"
     ]
   },
   {
     "time": [
-      10.0,
-      12.0
+      18.730102,
+      22.70254
     ],
     "en": [
-      "supporting me via my patreon or the"
+      "and share these videos with anyone else studying for the CCNA"
     ],
     "ru": [
-      "поддерживая меня через моего патреона или"
+      "и поделитесь этими видео со всеми, кто учится на CCNA"
     ]
   },
   {
     "time": [
-      12.0,
-      13.0
+      22.70254,
+      26.818957
     ],
     "en": [
-      "cryptocurrency options in the"
+      "in this lab we will configure ACLs"
     ],
     "ru": [
-      "варианты криптовалюты в"
+      "в этой лабораторной работе мы настроим ACL"
     ]
   },
   {
     "time": [
-      13.0,
-      17.0
+      26.818957,
+      27.937227
     ],
     "en": [
-      "description also please subscribe to the"
+      "named ACLs"
     ],
     "ru": [
-      "описание также подпишитесь на"
+      "именованные ACL"
     ]
   },
   {
     "time": [
-      17.0,
-      18.0
+      27.937227,
+      28.809435
     ],
     "en": [
-      "channel for more labs like this and"
+      "and numbered ACLs"
     ],
     "ru": [
-      "канал для других подобных лабораторий и"
+      "и пронумерованные ACL"
     ]
   },
   {
     "time": [
-      18.0,
-      20.0
+      28.809435,
+      30.593206
     ],
     "en": [
-      "share these videos with anyone else"
+      "standard ACLs"
     ],
     "ru": [
-      "поделитесь этими видео с кем угодно"
+      "стандартные ACL"
     ]
   },
   {
     "time": [
-      20.0,
-      24.0
+      30.593206,
+      31.466914
     ],
     "en": [
-      "studying for the CCNA in this lab we"
+      "and extended ACLs"
     ],
     "ru": [
-      "изучая CCNA в этой лаборатории, мы"
+      "и расширенные ACL"
     ]
   },
   {
     "time": [
-      24.0,
-      27.0
+      31.466914,
+      34.061081
     ],
     "en": [
-      "will configure ACLs named ACLs and"
+      "as well as ipv4 ACLs"
     ],
     "ru": [
-      "настроит ACL с именем ACL и"
+      "а также списки ACL для ipv4"
     ]
   },
   {
     "time": [
-      27.0,
-      31.0
+      34.061081,
+      35.988831
     ],
     "en": [
-      "numbered ACLs standard ACLs and extended"
+      "and ipv6 ACLs"
     ],
     "ru": [
-      "нумерованные ACL стандартные и расширенные ACL"
+      "и ipv6 ACL"
     ]
   },
   {
     "time": [
-      31.0,
-      35.0
+      35.988831,
+      37.231706
     ],
     "en": [
-      "ACLs as well as ipv4 ACLs and ipv6 ACLs"
+      "mixing them all together"
     ],
     "ru": [
-      "ACL, а также списки ACL для ipv4 и ipv6."
+      "смешивая их все вместе"
     ]
   },
   {
     "time": [
-      35.0,
-      37.0
+      37.231706,
+      38.74233
     ],
     "en": [
-      "mixing them all together let's get"
+      "let's get started"
     ],
     "ru": [
-      "смешивая их все вместе, давайте"
+      "Давайте начнем"
     ]
   },
   {
     "time": [
-      37.0,
-      39.0
+      38.74233,
+      41.716059
     ],
     "en": [
-      "started"
+      "so we have to configure"
     ],
     "ru": [
-      "начал"
+      "поэтому нам нужно настроить"
     ]
   },
   {
     "time": [
-      39.0,
-      42.0
+      41.716059,
+      46.528788
     ],
     "en": [
-      "so we have to configure and apply a"
+      "and apply a total of four ACLs to filter traffic according to these instructions"
     ],
     "ru": [
-      "поэтому нам нужно настроить и применить"
+      "и применить в общей сложности четыре ACL для фильтрации трафика в соответствии с этими инструкциями."
     ]
   },
   {
     "time": [
-      42.0,
-      45.0
+      46.528788,
+      49.463433
     ],
     "en": [
-      "total of four ACLs to filter traffic"
+      "the details of how you configure"
     ],
     "ru": [
-      "всего четыре ACL для фильтрации трафика"
+      "детали того, как вы настраиваете"
     ]
   },
   {
     "time": [
-      45.0,
-      47.0
+      49.463433,
+      51.121392
     ],
     "en": [
-      "according to these instructions the"
+      "and where you apply the ACLs"
     ],
     "ru": [
-      "согласно этим инструкциям"
+      "и где вы применяете ACL"
     ]
   },
   {
     "time": [
-      47.0,
-      49.0
+      51.121392,
+      53.743371
     ],
     "en": [
-      "details of how you configure and where"
+      "doesn't have to exactly match what I do in this video"
     ],
     "ru": [
-      "подробности о том, как вы настраиваете и где"
+      "не обязательно точно соответствовать тому, что я делаю в этом видео"
     ]
   },
   {
     "time": [
-      49.0,
-      51.0
+      53.743371,
+      55.558204
     ],
     "en": [
-      "you apply the ACLs doesn't have to"
+      "as long as the results are the same"
     ],
     "ru": [
-      "вы применяете ACL, не обязательно"
+      "пока результаты такие же"
     ]
   },
   {
     "time": [
-      51.0,
-      54.0
+      55.558204,
+      57.125058
     ],
     "en": [
-      "exactly match what I do in this video as"
+      "it's okay"
     ],
     "ru": [
-      "точно соответствует тому, что я делаю в этом видео как"
+      "все нормально"
     ]
   },
   {
     "time": [
-      54.0,
-      56.0
+      57.125058,
+      61.799537
     ],
     "en": [
-      "long as the results are the same it's"
+      "the first ACL we must configure should prevent pc4"
     ],
     "ru": [
-      "пока результаты такие же, это"
+      "первый ACL, который мы должны настроить, должен предотвратить pc4"
     ]
   },
   {
     "time": [
-      56.0,
-      59.0
+      61.799537,
+      65.661224
     ],
     "en": [
-      "okay the first ACL we must configure"
+      "from accessing the 10440 / 24 network"
     ],
     "ru": [
-      "хорошо, первый ACL мы должны настроить"
+      "от доступа к сети 10440/24"
     ]
   },
   {
     "time": [
-      59.0,
-      62.0
+      65.661224,
+      70.327182
     ],
     "en": [
-      "should prevent pc4 from accessing the"
+      "the general rule is to apply standard ACLs close to the destination"
     ],
     "ru": [
-      "должен предотвратить доступ pc4 к"
+      "общее правило - применять стандартные ACL близко к месту назначения"
     ]
   },
   {
     "time": [
-      62.0,
-      67.0
+      70.327182,
+      74.58462
+    ],
+    "en": [
+      "so I'll apply it to r2 SG 0 0 interface"
+    ],
+    "ru": [
+      "поэтому я применим его к интерфейсу r2 SG 0 0"
+    ]
+  },
+  {
+    "time": [
+      74.58462,
+      77.641578
+    ],
+    "en": [
+      "let's go on our to"
+    ],
+    "ru": [
+      "давай продолжим"
+    ]
+  },
+  {
+    "time": [
+      77.641578,
+      81.524577
+    ],
+    "en": [
+      "enable golf tee"
+    ],
+    "ru": [
+      "включить футболку для гольфа"
+    ]
+  },
+  {
+    "time": [
+      81.524577,
+      85.819806
+    ],
+    "en": [
+      "let's create a deny statement blocking PC for"
+    ],
+    "ru": [
+      "давайте создадим запрещающий запрос, блокирующий ПК для"
+    ]
+  },
+  {
+    "time": [
+      85.819806,
+      88.093889
+    ],
+    "en": [
+      "access list"
+    ],
+    "ru": [
+      "список доступа"
+    ]
+  },
+  {
+    "time": [
+      88.093889,
+      90.241827
+    ],
+    "en": [
+      "I'll make it number 1"
+    ],
+    "ru": [
+      "Я сделаю это номером 1"
+    ]
+  },
+  {
+    "time": [
+      90.241827,
+      92.341181
+    ],
+    "en": [
+      "deny host"
+    ],
+    "ru": [
+      "отказать хозяину"
+    ]
+  },
+  {
+    "time": [
+      92.341181,
+      96.440327
+    ],
+    "en": [
+      "and PC for is 10 2 to 12"
+    ],
+    "ru": [
+      "и ПК для is 10 от 2 до 12"
+    ]
+  },
+  {
+    "time": [
+      96.440327,
+      98.710327
+    ],
+    "en": [
+      "okay that's all for that statement"
+    ],
+    "ru": [
+      "хорошо, это все для этого утверждения"
+    ]
+  },
+  {
+    "time": [
+      98.710327,
+      104.119201
+    ],
+    "en": [
+      "now we are told to block other traffic to 10 dot 4 dot 4 dot 0 / 24"
+    ],
+    "ru": [
+      "теперь нам говорят заблокировать другой трафик на 10 точек 4 точки 4 точки 0/24"
+    ]
+  },
+  {
+    "time": [
+      104.119201,
+      106.115388
+    ],
+    "en": [
+      "so we should let it through"
+    ],
+    "ru": [
+      "так что мы должны пропустить это"
+    ]
+  },
+  {
+    "time": [
+      106.115388,
+      109.984804
+    ],
+    "en": [
+      "accessed list 1 permit any"
+    ],
+    "ru": [
+      "список доступа 1 разрешить любой"
+    ]
+  },
+  {
+    "time": [
+      109.984804,
+      111.808888
+    ],
+    "en": [
+      "that's it"
+    ],
+    "ru": [
+      "это оно"
+    ]
+  },
+  {
+    "time": [
+      111.808888,
+      113.587283
+    ],
+    "en": [
+      "now let's apply it to the interface"
+    ],
+    "ru": [
+      "теперь применим его к интерфейсу"
+    ]
+  },
+  {
+    "time": [
+      113.587283,
+      116.937138
+    ],
+    "en": [
+      "interface g0 0"
+    ],
+    "ru": [
+      "интерфейс g0 0"
+    ]
+  },
+  {
+    "time": [
+      116.937138,
+      120.59795
+    ],
+    "en": [
+      "IP Access Group 1 out"
+    ],
+    "ru": [
+      "Выход группы IP-доступа 1"
+    ]
+  },
+  {
+    "time": [
+      120.59795,
+      126.606263
+    ],
+    "en": [
+      "I used out because I want to prevent PC force traffic from exiting out this interface"
+    ],
+    "ru": [
+      "Я использовал, потому что хочу предотвратить выход принудительного трафика ПК из этого интерфейса"
+    ]
+  },
+  {
+    "time": [
+      126.606263,
+      130.389367
+    ],
+    "en": [
+      "to the 10 dot 4 dot 4 dot 0 / 24 subnet"
+    ],
+    "ru": [
+      "в подсеть 10 точек 4 точки 4 точки 0/24"
+    ]
+  },
+  {
+    "time": [
+      130.389367,
+      132.164929
+    ],
+    "en": [
+      "let's test it"
+    ],
+    "ru": [
+      "давай проверим это"
+    ]
+  },
+  {
+    "time": [
+      132.164929,
+      135.951741
+    ],
+    "en": [
+      "I'll try a ping from PC for two server one"
+    ],
+    "ru": [
+      "Попробую пинг с ПК на два сервера один"
+    ]
+  },
+  {
+    "time": [
+      135.951741,
+      141.966012
+    ],
+    "en": [
+      "ping 10.4 for 100"
+    ],
+    "ru": [
+      "пинг 10,4 на 100"
+    ]
+  },
+  {
+    "time": [
+      141.966012,
+      149.779262
+    ],
+    "en": [
+      "and we get the destination host unreachable message from 10 12 12 2 which is our to"
+    ],
+    "ru": [
+      "и мы получаем сообщение о недоступности хоста назначения от 10 12 12 2, которое является нашим"
+    ]
+  },
+  {
+    "time": [
+      149.779262,
+      154.123012
+    ],
+    "en": [
+      "perfect just to make sure let's try a ping from PC 3"
+    ],
+    "ru": [
+      "идеально просто, чтобы убедиться, давайте попробуем пинг с ПК 3"
+    ]
+  },
+  {
+    "time": [
+      154.123012,
+      156.067366
+    ],
+    "en": [
+      "which should go through"
+    ],
+    "ru": [
+      "который должен пройти"
+    ]
+  },
+  {
+    "time": [
+      156.067366,
+      161.585554
+    ],
+    "en": [
+      "ping 4.4.1 hundred"
+    ],
+    "ru": [
+      "пинг 4.4.1 сотня"
+    ]
+  },
+  {
+    "time": [
+      161.585554,
+      169.651887
+    ],
+    "en": [
+      "great it works"
+    ],
+    "ru": [
+      "отлично работает"
+    ]
+  },
+  {
+    "time": [
+      169.651887,
+      172.016387
+    ],
+    "en": [
+      "our first ACL is complete"
+    ],
+    "ru": [
+      "наш первый ACL завершен"
+    ]
+  },
+  {
+    "time": [
+      172.016387,
+      175.515366
+    ],
+    "en": [
+      "okay let's do the second one"
+    ],
+    "ru": [
+      "хорошо, давай сделаем вторую"
+    ]
+  },
+  {
+    "time": [
+      175.515366,
+      186.906095
+    ],
+    "en": [
+      "configure an ipv6 ACL to prevent pc5 from accessing the 2001 DB 822 22 / 64 network"
+    ],
+    "ru": [
+      "настроить список контроля доступа ipv6 для предотвращения доступа pc5 к сети 2001 DB 822 22/64"
+    ]
+  },
+  {
+    "time": [
+      186.906095,
+      189.64147
+    ],
+    "en": [
+      "so this will be an ipv6 ACL"
+    ],
+    "ru": [
+      "так что это будет ACL ipv6"
+    ]
+  },
+  {
+    "time": [
+      189.64147,
+      192.819887
+    ],
+    "en": [
+      "and ipv6 only supports named ACLs"
+    ],
+    "ru": [
+      "и ipv6 поддерживает только именованные ACL"
+    ]
+  },
+  {
+    "time": [
+      192.819887,
+      197.251949
+    ],
+    "en": [
+      "although ipv4 supports both numbered and named ACLs"
+    ],
+    "ru": [
+      "хотя ipv4 поддерживает как нумерованные, так и именованные ACL"
+    ]
+  },
+  {
+    "time": [
+      197.251949,
+      201.139866
+    ],
+    "en": [
+      "I'll apply it to our ones g02 interface"
+    ],
+    "ru": [
+      "Применим к нашему интерфейсу g02"
+    ]
+  },
+  {
+    "time": [
+      201.139866,
+      202.965595
+    ],
+    "en": [
+      "let's go on our one"
+    ],
+    "ru": [
+      "пойдем на наш"
+    ]
+  },
+  {
+    "time": [
+      202.965595,
+      207.524699
+    ],
+    "en": [
+      "enable compte"
+    ],
+    "ru": [
+      "включить compte"
+    ]
+  },
+  {
+    "time": [
+      207.524699,
+      211.818637
+    ],
+    "en": [
+      "since it's an ipv6 ACL"
+    ],
+    "ru": [
+      "так как это ipv6 ACL"
+    ]
+  },
+  {
+    "time": [
+      211.818637,
+      215.248116
+    ],
+    "en": [
+      "start the command with ipv6 access list"
+    ],
+    "ru": [
+      "запустить команду со списком доступа ipv6"
+    ]
+  },
+  {
+    "time": [
+      215.248116,
+      216.862782
+    ],
+    "en": [
+      "then the name"
+    ],
+    "ru": [
+      "затем имя"
+    ]
+  },
+  {
+    "time": [
+      216.862782,
+      220.618074
+    ],
+    "en": [
+      "I'll say g0 to underscore in"
+    ],
+    "ru": [
+      "Я скажу g0, чтобы подчеркнуть"
+    ]
+  },
+  {
+    "time": [
+      220.618074,
+      223.08049
+    ],
+    "en": [
+      "to give it a meaningful name"
+    ],
+    "ru": [
+      "дать ему многозначительное имя"
+    ]
+  },
+  {
+    "time": [
+      223.08049,
+      227.317449
+    ],
+    "en": [
+      "now we're in ipv6 ACL configuration mode"
+    ],
+    "ru": [
+      "теперь мы находимся в режиме конфигурации ipv6 ACL"
+    ]
+  },
+  {
+    "time": [
+      227.317449,
+      229.35024
+    ],
+    "en": [
+      "and can configure each statement"
+    ],
+    "ru": [
+      "и может настроить каждый оператор"
+    ]
+  },
+  {
+    "time": [
+      229.35024,
+      232.52024
+    ],
+    "en": [
+      "so we want to deny PC 5"
+    ],
+    "ru": [
+      "поэтому мы хотим запретить ПК 5"
+    ]
+  },
+  {
+    "time": [
+      232.52024,
+      235.122865
+    ],
+    "en": [
+      "and then permit other traffic"
+    ],
+    "ru": [
+      "а затем разрешить другой трафик"
+    ]
+  },
+  {
+    "time": [
+      235.122865,
+      238.294115
+    ],
+    "en": [
+      "deny ipv6 host"
+    ],
+    "ru": [
+      "запретить хост ipv6"
+    ]
+  },
+  {
+    "time": [
+      238.294115,
+      240.619927
+    ],
+    "en": [
+      "followed by PC 5s address"
+    ],
+    "ru": [
+      "за которым следует адрес ПК 5s"
+    ]
+  },
+  {
+    "time": [
+      240.619927,
+      246.698281
     ],
     "en": [
       ""
@@ -301,8 +853,8 @@ let objs = [
   },
   {
     "time": [
-      62.0,
-      67.0
+      240.619927,
+      246.698281
     ],
     "en": [
       ""
@@ -313,32 +865,20 @@ let objs = [
   },
   {
     "time": [
-      67.0,
-      69.0
+      246.698281,
+      249.300885
     ],
     "en": [
-      "to apply standard ACLs close to the"
+      "then the destination subnet"
     ],
     "ru": [
-      "применять стандартные списки ACL, близкие к"
+      "затем подсеть назначения"
     ]
   },
   {
     "time": [
-      69.0,
-      73.0
-    ],
-    "en": [
-      "destination so I'll apply it to r2 SG 0"
-    ],
-    "ru": [
-      "пункт назначения, поэтому я применю его к r2 SG 0"
-    ]
-  },
-  {
-    "time": [
-      73.0,
-      79.0
+      249.300885,
+      255.136198
     ],
     "en": [
       ""
@@ -349,8 +889,8 @@ let objs = [
   },
   {
     "time": [
-      73.0,
-      79.0
+      249.300885,
+      255.136198
     ],
     "en": [
       ""
@@ -361,608 +901,128 @@ let objs = [
   },
   {
     "time": [
-      79.0,
-      84.0
+      255.136198,
+      258.276531
     ],
     "en": [
-      "golf tee let's create a deny statement"
+      "okay that's our deny statement"
     ],
     "ru": [
-      "футболка для гольфа давайте создадим отрицательное заявление"
+      "хорошо, это наше отрицание"
     ]
   },
   {
     "time": [
-      84.0,
-      89.0
+      258.276531,
+      261.538177
     ],
     "en": [
-      "blocking PC for access list I'll make it"
+      "now let's allow all other ipv6 traffic through"
     ],
     "ru": [
-      "блокировка ПК для списка доступа я сделаю это"
+      "теперь давайте пропустим весь остальной трафик ipv6 через"
     ]
   },
   {
     "time": [
-      89.0,
-      95.0
+      261.538177,
+      265.765073
     ],
     "en": [
-      "number 1 deny host and PC for is 10 2 to"
+      "permit ipv6 any-any"
     ],
     "ru": [
-      "номер 1 запретить хост и ПК для 10 2 для"
+      "разрешить ipv6 любой-любой"
     ]
   },
   {
     "time": [
-      95.0,
-      98.0
+      265.765073,
+      268.448656
     ],
     "en": [
-      ""
+      "ok finally let's apply it"
     ],
     "ru": [
-      ""
+      "хорошо, наконец, давайте применим это"
     ]
   },
   {
     "time": [
-      95.0,
-      98.0
+      268.448656,
+      272.878967
     ],
     "en": [
-      ""
+      "interface G 0 to"
     ],
     "ru": [
-      ""
+      "интерфейс G 0 к"
     ]
   },
   {
     "time": [
-      98.0,
-      101.0
+      272.878967,
+      277.945925
     ],
     "en": [
-      "now we are told to block other traffic"
+      "ipv6 traffic filter G 0 2 in"
     ],
     "ru": [
-      "теперь нам говорят заблокировать другой трафик"
+      "фильтр трафика ipv6 G 0 2 в"
     ]
   },
   {
     "time": [
-      101.0,
-      104.0
+      277.945925,
+      282.709216
     ],
     "en": [
-      "to 10 dot 4 dot 4 dot 0 / 24 so we"
+      "now you might want to apply this with ipv6 access group"
     ],
     "ru": [
-      "до 10 точек 4 точки 4 точки 0/24, поэтому мы"
+      "теперь вы можете применить это с группой доступа ipv6"
     ]
   },
   {
     "time": [
-      104.0,
-      108.0
+      282.709216,
+      285.685279
     ],
     "en": [
-      "should let it through accessed list 1"
+      "since ipv4 uses IP access group"
     ],
     "ru": [
-      "должен пропустить его через список доступа 1"
+      "поскольку ipv4 использует группу доступа IP"
     ]
   },
   {
     "time": [
-      108.0,
-      112.0
+      285.685279,
+      289.822508
     ],
     "en": [
-      "permit any that's it now let's apply it"
+      "but for ipv6 use ipv6 traffic filter"
     ],
     "ru": [
-      "разрешите все, что это сейчас, давайте применим это"
+      "но для ipv6 используйте фильтр трафика ipv6"
     ]
   },
   {
     "time": [
-      112.0,
-      117.0
+      289.822508,
+      291.816675
     ],
     "en": [
-      "to the interface interface g0 0 IP"
+      "okay let's test"
     ],
     "ru": [
-      "к интерфейсному интерфейсу g0 0 IP"
+      "хорошо давай проверим"
     ]
   },
   {
     "time": [
-      117.0,
-      122.0
-    ],
-    "en": [
-      "Access Group 1 out I used out because I"
-    ],
-    "ru": [
-      "Группа доступа 1 израсходована, потому что"
-    ]
-  },
-  {
-    "time": [
-      122.0,
-      124.0
-    ],
-    "en": [
-      "want to prevent PC force traffic from"
-    ],
-    "ru": [
-      "хотите предотвратить принудительный трафик ПК от"
-    ]
-  },
-  {
-    "time": [
-      124.0,
-      127.0
-    ],
-    "en": [
-      "exiting out this interface to the 10 dot"
-    ],
-    "ru": [
-      "выход из этого интерфейса до точки 10"
-    ]
-  },
-  {
-    "time": [
-      127.0,
-      132.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      127.0,
-      132.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      132.0,
-      135.0
-    ],
-    "en": [
-      "I'll try a ping from PC for two server"
-    ],
-    "ru": [
-      "Попробую пинг с ПК на два сервера"
-    ]
-  },
-  {
-    "time": [
-      135.0,
-      143.0
-    ],
-    "en": [
-      "one ping 10.4 for 100 and we get the"
-    ],
-    "ru": [
-      "один пинг 10,4 на 100 и получаем"
-    ]
-  },
-  {
-    "time": [
-      143.0,
-      145.0
-    ],
-    "en": [
-      "destination host unreachable message"
-    ],
-    "ru": [
-      "сообщение о недоступности хоста назначения"
-    ]
-  },
-  {
-    "time": [
-      145.0,
-      150.0
-    ],
-    "en": [
-      "from 10 12 12 2 which is our to perfect"
-    ],
-    "ru": [
-      "от 10 12 12 2 который наш к совершенству"
-    ]
-  },
-  {
-    "time": [
-      150.0,
-      153.0
-    ],
-    "en": [
-      "just to make sure let's try a ping from"
-    ],
-    "ru": [
-      "просто чтобы убедиться, давайте попробуем пинг от"
-    ]
-  },
-  {
-    "time": [
-      153.0,
-      160.0
-    ],
-    "en": [
-      "PC 3 which should go through ping 4.4.1"
-    ],
-    "ru": [
-      "ПК 3 который должен пройти пинг 4.4.1"
-    ]
-  },
-  {
-    "time": [
-      160.0,
-      167.0
-    ],
-    "en": [
-      "hundred"
-    ],
-    "ru": [
-      "сотня"
-    ]
-  },
-  {
-    "time": [
-      167.0,
-      172.0
-    ],
-    "en": [
-      "great it works our first ACL is complete"
-    ],
-    "ru": [
-      "отлично работает, наш первый ACL готов"
-    ]
-  },
-  {
-    "time": [
-      172.0,
-      176.0
-    ],
-    "en": [
-      "okay let's do the second one configure"
-    ],
-    "ru": [
-      "хорошо, давайте сделаем вторую настройку"
-    ]
-  },
-  {
-    "time": [
-      176.0,
-      180.0
-    ],
-    "en": [
-      "an ipv6 ACL to prevent pc5 from"
-    ],
-    "ru": [
-      "список контроля доступа ipv6 для предотвращения доступа pc5"
-    ]
-  },
-  {
-    "time": [
-      180.0,
-      185.0
-    ],
-    "en": [
-      "accessing the 2001 DB 822 22 / 64"
-    ],
-    "ru": [
-      "доступ к 2001 DB 822 22/64"
-    ]
-  },
-  {
-    "time": [
-      185.0,
-      189.0
-    ],
-    "en": [
-      "network so this will be an ipv6 ACL and"
-    ],
-    "ru": [
-      "сеть, так что это будет список контроля доступа ipv6 и"
-    ]
-  },
-  {
-    "time": [
-      189.0,
-      193.0
-    ],
-    "en": [
-      "ipv6 only supports named ACLs although"
-    ],
-    "ru": [
-      "ipv6 поддерживает только именованные ACL, хотя"
-    ]
-  },
-  {
-    "time": [
-      193.0,
-      196.0
-    ],
-    "en": [
-      "ipv4 supports both numbered and named"
-    ],
-    "ru": [
-      "ipv4 поддерживает как пронумерованные, так и именованные"
-    ]
-  },
-  {
-    "time": [
-      196.0,
-      200.0
-    ],
-    "en": [
-      "ACLs I'll apply it to our ones g02"
-    ],
-    "ru": [
-      "ACL применю к нашим g02"
-    ]
-  },
-  {
-    "time": [
-      200.0,
-      206.0
-    ],
-    "en": [
-      "interface let's go on our one enable"
-    ],
-    "ru": [
-      "интерфейс давайте перейдем к нашему включению"
-    ]
-  },
-  {
-    "time": [
-      206.0,
-      212.0
-    ],
-    "en": [
-      "compte since it's an ipv6 ACL start the"
-    ],
-    "ru": [
-      "compte, поскольку это список контроля доступа ipv6, запустите"
-    ]
-  },
-  {
-    "time": [
-      212.0,
-      215.0
-    ],
-    "en": [
-      "command with ipv6 access list then the"
-    ],
-    "ru": [
-      "со списком доступа ipv6, затем"
-    ]
-  },
-  {
-    "time": [
-      215.0,
-      221.0
-    ],
-    "en": [
-      "name I'll say g0 to underscore in to"
-    ],
-    "ru": [
-      "имя я скажу g0 чтобы подчеркнуть"
-    ]
-  },
-  {
-    "time": [
-      221.0,
-      224.0
-    ],
-    "en": [
-      "give it a meaningful name now we're in"
-    ],
-    "ru": [
-      "дайте ему многозначительное имя, теперь мы в"
-    ]
-  },
-  {
-    "time": [
-      224.0,
-      227.0
-    ],
-    "en": [
-      "ipv6 ACL configuration mode and can"
-    ],
-    "ru": [
-      "ipv6 режим настройки ACL и может"
-    ]
-  },
-  {
-    "time": [
-      227.0,
-      230.0
-    ],
-    "en": [
-      "configure each statement so we want to"
-    ],
-    "ru": [
-      "настроить каждый оператор так, чтобы мы"
-    ]
-  },
-  {
-    "time": [
-      230.0,
-      235.0
-    ],
-    "en": [
-      "deny PC 5 and then permit other traffic"
-    ],
-    "ru": [
-      "запретить ПК 5, а затем разрешить другой трафик"
-    ]
-  },
-  {
-    "time": [
-      235.0,
-      240.0
-    ],
-    "en": [
-      "deny ipv6 host followed by PC 5s address"
-    ],
-    "ru": [
-      "запретить хост ipv6, за которым следует адрес ПК 5s"
-    ]
-  },
-  {
-    "time": [
-      240.0,
-      247.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      240.0,
-      247.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      247.0,
-      255.0
-    ],
-    "en": [
-      "destination subnet 2001 DB 8 22 22 / 64"
-    ],
-    "ru": [
-      "подсеть назначения 2001 DB 8 22 22/64"
-    ]
-  },
-  {
-    "time": [
-      255.0,
-      258.0
-    ],
-    "en": [
-      "okay that's our deny statement now let's"
-    ],
-    "ru": [
-      "хорошо, это наше отрицание, теперь давайте"
-    ]
-  },
-  {
-    "time": [
-      258.0,
-      261.0
-    ],
-    "en": [
-      "allow all other ipv6 traffic through"
-    ],
-    "ru": [
-      "разрешить весь другой трафик ipv6 через"
-    ]
-  },
-  {
-    "time": [
-      261.0,
-      267.0
-    ],
-    "en": [
-      "permit ipv6 any-any ok finally let's"
-    ],
-    "ru": [
-      "разрешить ipv6 любой-любой хорошо наконец давай"
-    ]
-  },
-  {
-    "time": [
-      267.0,
-      274.0
-    ],
-    "en": [
-      "apply it interface G 0 to ipv6 traffic"
-    ],
-    "ru": [
-      "примените его интерфейс G 0 к трафику ipv6"
-    ]
-  },
-  {
-    "time": [
-      274.0,
-      279.0
-    ],
-    "en": [
-      "filter G 0 2 in now you might want to"
-    ],
-    "ru": [
-      "фильтр G 0 2 теперь вы можете захотеть"
-    ]
-  },
-  {
-    "time": [
-      279.0,
-      283.0
-    ],
-    "en": [
-      "apply this with ipv6 access group since"
-    ],
-    "ru": [
-      "примените это с группой доступа ipv6, так как"
-    ]
-  },
-  {
-    "time": [
-      283.0,
-      286.0
-    ],
-    "en": [
-      "ipv4 uses IP access group but for ipv6"
-    ],
-    "ru": [
-      "ipv4 использует группу доступа IP, но для ipv6"
-    ]
-  },
-  {
-    "time": [
-      286.0,
-      291.0
-    ],
-    "en": [
-      "use ipv6 traffic filter okay let's test"
-    ],
-    "ru": [
-      "используйте фильтр трафика ipv6 хорошо, давайте протестируем"
-    ]
-  },
-  {
-    "time": [
-      291.0,
-      298.0
+      291.816675,
+      295.746341
     ],
     "en": [
       "I'll ping from PC 5 to server 2"
@@ -973,8 +1033,8 @@ let objs = [
   },
   {
     "time": [
-      298.0,
-      309.0
+      295.746341,
+      306.14782
     ],
     "en": [
       "ping 2001 db8 22 22 double : 101"
@@ -985,296 +1045,320 @@ let objs = [
   },
   {
     "time": [
-      309.0,
-      311.0
+      306.14782,
+      310.216008
     ],
     "en": [
-      "reachable message from our one looks"
+      "reachable message"
     ],
     "ru": [
-      "доступное сообщение от одного взгляда"
+      "доступное сообщение"
     ]
   },
   {
     "time": [
-      311.0,
-      314.0
+      310.216008,
+      311.218362
     ],
     "en": [
-      "good now just to be sure let's try on PC"
+      "from our one"
     ],
     "ru": [
-      "хорошо сейчас, просто чтобы убедиться, давайте попробуем на ПК"
+      "из нашего"
     ]
   },
   {
     "time": [
-      314.0,
-      323.0
+      311.218362,
+      312.210008
     ],
     "en": [
-      ""
+      "looks good"
     ],
     "ru": [
-      ""
+      "выглядит неплохо"
     ]
   },
   {
     "time": [
-      314.0,
-      323.0
+      312.210008,
+      315.442924
     ],
     "en": [
-      ""
+      "now just to be sure let's try on PC 6"
     ],
     "ru": [
-      ""
+      "теперь на всякий случай попробуем на ПК 6"
     ]
   },
   {
     "time": [
-      323.0,
-      334.0
+      315.442924,
+      316.556862
     ],
     "en": [
-      "double : 100 great it works as expected"
+      "which should work"
     ],
     "ru": [
-      "double: 100 отлично работает, как ожидалось"
+      "который должен работать"
     ]
   },
   {
     "time": [
-      334.0,
-      338.0
+      316.556862,
+      325.962091
     ],
     "en": [
-      "next is to prevent pc3 from reaching PC"
+      "ping 2001 DB 8 22 22 double : 100"
     ],
     "ru": [
-      "далее нужно предотвратить попадание pc3 на ПК"
+      "пинг 2001 DB 8 22 22 двойной: 100"
     ]
   },
   {
     "time": [
-      338.0,
-      343.0
+      325.962091,
+      333.975404
     ],
     "en": [
-      ""
+      "great it works as expected"
     ],
     "ru": [
-      ""
+      "отлично работает как ожидалось"
     ]
   },
   {
     "time": [
-      338.0,
-      343.0
+      333.975404,
+      339.597612
     ],
     "en": [
-      ""
+      "next is to prevent pc3 from reaching PC 1"
     ],
     "ru": [
-      ""
+      "далее нужно предотвратить попадание pc3 на ПК 1"
     ]
   },
   {
     "time": [
-      343.0,
-      348.0
+      339.597612,
+      343.320112
     ],
     "en": [
-      "let's put it on our ones G 0 1 interface"
+      "it should be an extended named ACL"
     ],
     "ru": [
-      "ставим на наши те G 0 1 интерфейс"
+      "это должен быть расширенный именованный ACL"
     ]
   },
   {
     "time": [
-      348.0,
-      354.0
+      343.320112,
+      346.961758
     ],
     "en": [
-      "exit IP access list extended this time"
+      "and let's put it on our ones G 0 1 interface"
     ],
     "ru": [
-      "список доступа к выходу расширен на этот раз"
+      "и ставим на наши те G 0 1 интерфейс"
     ]
   },
   {
     "time": [
-      354.0,
-      359.0
+      346.961758,
+      353.754966
     ],
     "en": [
-      "I'll name it G 0 1 underscore in let's"
+      "exit IP access list extended"
     ],
     "ru": [
-      "Я назову это G 0 1 подчеркивание, давайте"
+      "выход из списка доступа IP расширен"
     ]
   },
   {
     "time": [
-      359.0,
-      364.0
+      353.754966,
+      358.663966
     ],
     "en": [
-      "make the deny statement deny IP host"
+      "this time I'll name it G 0 1 underscore in"
     ],
     "ru": [
-      "сделать заявление deny deny IP host"
+      "на этот раз я назову его G 0 1 подчеркивание в"
     ]
   },
   {
     "time": [
-      364.0,
-      372.0
+      358.663966,
+      361.395299
     ],
     "en": [
-      ""
+      "let's make the deny statement"
     ],
     "ru": [
-      ""
+      "давайте сделаем отрицающее заявление"
     ]
   },
   {
     "time": [
-      364.0,
-      372.0
+      361.395299,
+      370.867883
     ],
     "en": [
-      ""
+      "deny IP host 10.2 2.11 host 10.11 11"
     ],
     "ru": [
-      ""
+      "запретить IP-хост 10.2 2.11 хост 10.11 11"
     ]
   },
   {
     "time": [
-      372.0,
-      374.0
+      370.867883,
+      373.427445
     ],
     "en": [
-      "other traffic since we weren't told to"
+      "now let's permit other traffic"
     ],
     "ru": [
-      "другой трафик, так как нам не сказали"
+      "теперь разрешим другой трафик"
     ]
   },
   {
     "time": [
-      374.0,
-      379.0
+      373.427445,
+      375.413195
     ],
     "en": [
-      "block anything else permit IP any-any"
+      "since we weren't told to block anything else"
     ],
     "ru": [
-      "блокировать все остальное разрешить IP любой-любой"
+      "поскольку нам не сказали ничего блокировать"
     ]
   },
   {
     "time": [
-      379.0,
-      386.0
+      375.413195,
+      378.883362
     ],
     "en": [
-      "now let's apply it interface G 0 1 this"
+      "permit IP any-any"
     ],
     "ru": [
-      "теперь давайте применим его интерфейс G 0 1 это"
+      "разрешить IP любой-любой"
     ]
   },
   {
     "time": [
-      386.0,
-      391.0
+      378.883362,
+      382.231008
     ],
     "en": [
-      "is an ipv4 ACL so IP access group 1"
+      "now let's apply it"
     ],
     "ru": [
-      "это список контроля доступа ipv4, поэтому группа доступа IP 1"
+      "теперь давайте применим это"
     ]
   },
   {
     "time": [
-      391.0,
-      396.0
+      382.231008,
+      388.416569
     ],
     "en": [
-      "underscore in in okay let's try it out"
+      "interface G 0 1 this is an ipv4 ACL"
     ],
     "ru": [
-      "подчеркни в порядке, давай попробуем"
+      "interface G 0 1 это ipv4 ACL"
     ]
   },
   {
     "time": [
-      396.0,
-      405.0
+      388.416569,
+      394.949256
     ],
     "en": [
-      "I'll ping from pc 3 to pc 1 ping 10.11"
+      "so IP access group 1 underscore in in"
     ],
     "ru": [
-      "Я пингую с пк 3 на пк 1 пинг 10.11"
+      "поэтому группа IP-доступа 1 подчеркивается в"
     ]
   },
   {
     "time": [
-      405.0,
-      409.0
+      394.949256,
+      396.621985
     ],
     "en": [
-      ""
+      "okay let's try it out"
     ],
     "ru": [
-      ""
+      "хорошо, давай попробуем"
     ]
   },
   {
     "time": [
-      405.0,
-      409.0
+      396.621985,
+      399.948901
     ],
     "en": [
-      ""
+      "I'll ping from pc 3 to pc 1"
     ],
     "ru": [
-      ""
+      "Я пингую с ПК 3 на ПК 1"
     ]
   },
   {
     "time": [
-      409.0,
-      413.0
+      399.948901,
+      406.431422
     ],
     "en": [
-      "unreachable message how about from PC"
+      "ping 10.11 11"
     ],
     "ru": [
-      "недоступное сообщение, как насчет с ПК"
+      "пинг 10.11 11"
     ]
   },
   {
     "time": [
-      413.0,
-      425.0
+      406.431422,
+      411.012693
     ],
     "en": [
-      "for King 10.1 111"
+      "and we get the destination host unreachable message"
     ],
     "ru": [
-      "для King 10,1 111"
+      "и мы получаем сообщение о недоступности хоста назначения"
     ]
   },
   {
     "time": [
-      425.0,
-      428.0
+      411.012693,
+      414.153193
+    ],
+    "en": [
+      "how about from PC for"
+    ],
+    "ru": [
+      "как насчет с ПК для"
+    ]
+  },
+  {
+    "time": [
+      414.153193,
+      419.823255
+    ],
+    "en": [
+      "King 10.1 111"
+    ],
+    "ru": [
+      "Король 10,1 111"
+    ]
+  },
+  {
+    "time": [
+      419.823255,
+      427.753047
     ],
     "en": [
       "okay it works as expected"
@@ -1285,44 +1369,32 @@ let objs = [
   },
   {
     "time": [
-      428.0,
-      432.0
+      427.753047,
+      433.719464
     ],
     "en": [
-      "finally we want to allow PC six to"
+      "finally we want to allow PC six to telnet to r2"
     ],
     "ru": [
-      "наконец, мы хотим, чтобы ПК 6"
+      "наконец, мы хотим разрешить шестому ПК подключаться к r2 через telnet."
     ]
   },
   {
     "time": [
-      432.0,
-      435.0
+      433.719464,
+      436.403047
     ],
     "en": [
-      "telnet to r2 but to not allow others to"
+      "but to not allow others to do so"
     ],
     "ru": [
-      "telnet на r2, но не позволять другим"
+      "но не позволять другим делать это"
     ]
   },
   {
     "time": [
-      435.0,
-      436.0
-    ],
-    "en": [
-      "do so"
-    ],
-    "ru": [
-      "Сделай так"
-    ]
-  },
-  {
-    "time": [
-      436.0,
-      439.0
+      436.403047,
+      439.733046
     ],
     "en": [
       "so we could apply this in multiple areas"
@@ -1333,307 +1405,319 @@ let objs = [
   },
   {
     "time": [
-      439.0,
-      441.0
+      439.733046,
+      443.638421
     ],
     "en": [
-      "but how about applying it directly to"
+      "but how about applying it directly to our two's vty lines"
     ],
     "ru": [
-      "но как насчет того, чтобы применить его непосредственно к"
+      "но как насчет того, чтобы применить его непосредственно к нашим двум строкам vty"
     ]
   },
   {
     "time": [
-      441.0,
-      447.0
+      443.638421,
+      445.912629
     ],
     "en": [
-      "our two's vty lines let's go on our to"
+      "let's go on our to"
     ],
     "ru": [
-      "наши две строки vty, давайте перейдем к"
+      "давай продолжим"
     ]
   },
   {
     "time": [
-      447.0,
-      454.0
+      445.912629,
+      451.430316
     ],
     "en": [
-      "exit first I'll make the ACL ipv6 access"
+      "exit first I'll make the ACL"
     ],
     "ru": [
-      "сначала выйдите я сделаю доступ ACL ipv6"
+      "сначала выйдите, я сделаю ACL"
     ]
   },
   {
     "time": [
-      454.0,
-      456.0
+      451.430316,
+      455.717274
     ],
     "en": [
-      "list telnet to give it an appropriate"
+      "ipv6 access list telnet"
     ],
     "ru": [
-      "перечислите telnet, чтобы дать ему соответствующий"
+      "список доступа ipv6 telnet"
     ]
   },
   {
     "time": [
-      456.0,
-      458.0
+      455.717274,
+      457.786816
     ],
     "en": [
-      "name"
+      "to give it an appropriate name"
     ],
     "ru": [
-      "имя"
+      "дать ему подходящее имя"
     ]
   },
   {
     "time": [
-      458.0,
-      463.0
+      457.786816,
+      462.054857
     ],
     "en": [
-      "so let's permit PC 6 to telnet permit"
+      "so let's permit PC 6 to telnet"
     ],
     "ru": [
-      "так давайте разрешим ПК 6 разрешить telnet"
+      "так давайте разрешим ПК 6 telnet"
     ]
   },
   {
     "time": [
-      463.0,
-      470.0
+      462.054857,
+      467.798191
     ],
     "en": [
-      "TCP because telnet uses TCP host 2000 1"
+      "permit TCP because telnet uses TCP"
     ],
     "ru": [
-      "TCP, поскольку telnet использует TCP-хост 2000 1"
+      "разрешить TCP, потому что telnet использует TCP"
     ]
   },
   {
     "time": [
-      470.0,
-      476.0
+      467.798191,
+      475.489253
     ],
     "en": [
-      "DB 8 3 3 double colon 12 I'll set the"
+      "host 2000 1 DB 8 3 3 double colon 12"
     ],
     "ru": [
-      "DB 8 3 3 двойное двоеточие 12 Я установлю"
+      "хост 2000 1 DB 8 3 3 двойное двоеточие 12"
     ]
   },
   {
     "time": [
-      476.0,
-      479.0
+      475.489253,
+      478.546711
     ],
     "en": [
-      "destination to any since I wanted to"
+      "I'll set the destination to any"
     ],
     "ru": [
-      "пункт назначения в любое время, когда я хотел"
+      "Я установлю любой пункт назначения"
     ]
   },
   {
     "time": [
-      479.0,
-      481.0
+      478.546711,
+      482.048836
     ],
     "en": [
-      "apply to whichever of our tooth"
+      "since I wanted to apply to whichever of our tooth interfaces"
     ],
     "ru": [
-      "применить к любому из наших зубов"
+      "так как я хотел применить к любому из наших зубных интерфейсов"
     ]
   },
   {
     "time": [
-      481.0,
-      484.0
+      482.048836,
+      483.208398
     ],
     "en": [
-      "interfaces they telnet to then finally"
+      "they telnet to"
     ],
     "ru": [
-      "интерфейсы, к которым они подключены по telnet, а затем, наконец,"
+      "они telnet к"
     ]
   },
   {
     "time": [
-      484.0,
-      488.0
+      483.208398,
+      486.844523
     ],
     "en": [
-      "EQ telnet to specify the port number of"
+      "then finally EQ telnet"
     ],
     "ru": [
-      "EQ telnet, чтобы указать номер порта"
+      "затем наконец EQ telnet"
     ]
   },
   {
     "time": [
-      488.0,
-      493.0
+      486.844523,
+      491.02169
     ],
     "en": [
-      ""
+      "to specify the port number of 23 which telnet uses"
     ],
     "ru": [
-      ""
+      "чтобы указать номер порта 23, который использует telnet"
     ]
   },
   {
     "time": [
-      488.0,
-      493.0
+      491.02169,
+      494.540502
     ],
     "en": [
-      ""
+      "ok that's all we have to configure"
     ],
     "ru": [
-      ""
+      "хорошо, это все, что нам нужно настроить"
     ]
   },
   {
     "time": [
-      493.0,
-      495.0
+      494.540502,
+      498.185918
     ],
     "en": [
-      "have to configure because there is an"
+      "because there is an implicit deny any at the end of the ACL"
     ],
     "ru": [
-      "необходимо настроить, потому что есть"
+      "потому что есть неявное запрещение любого в конце ACL"
     ]
   },
   {
     "time": [
-      495.0,
-      497.0
+      498.185918,
+      500.706376
     ],
     "en": [
-      "implicit deny any at the end of the ACL"
+      "so we don't need to configure another statement"
     ],
     "ru": [
-      "неявное отклонение любого в конце ACL"
+      "поэтому нам не нужно настраивать другой оператор"
     ]
   },
   {
     "time": [
-      497.0,
-      499.0
+      500.706376,
+      503.550418
     ],
     "en": [
-      "so we don't need to configure another"
+      "let's apply it to the vty lines"
     ],
     "ru": [
-      "поэтому нам не нужно настраивать другой"
+      "давайте применим его к линиям VTY"
     ]
   },
   {
     "time": [
-      499.0,
-      502.0
+      503.550418,
+      507.851543
     ],
     "en": [
-      "statement let's apply it to the vty"
+      "line vty 0 15"
     ],
     "ru": [
-      "заявление, давайте применим его к VTY"
+      "строка vty 0 15"
     ]
   },
   {
     "time": [
-      502.0,
-      510.0
+      507.851543,
+      512.189772
     ],
     "en": [
-      "lines line vty 0 15 to apply an ipv4 ACL"
+      "to apply an ipv4 ACL to an interface"
     ],
     "ru": [
-      "lines line vty 0 15 для применения ipv4 ACL"
+      "применить ipv4 ACL к интерфейсу"
     ]
   },
   {
     "time": [
-      510.0,
-      514.0
+      512.189772,
+      513.479606
     ],
     "en": [
-      "to an interface use access group for"
+      "use access group"
     ],
     "ru": [
-      "к интерфейсу использовать группу доступа для"
+      "использовать группу доступа"
     ]
   },
   {
     "time": [
-      514.0,
-      518.0
+      513.479606,
+      516.707293
     ],
     "en": [
-      "ipv6 traffic filter now to apply either"
+      "for ipv6 traffic filter"
     ],
     "ru": [
-      "Фильтр трафика ipv6 теперь, чтобы применить либо"
+      "для фильтра трафика ipv6"
     ]
   },
   {
     "time": [
-      518.0,
-      523.0
+      516.707293,
+      519.776272
     ],
     "en": [
-      "to vty lines you use XS class so ipv6"
+      "now to apply either to vty lines"
     ],
     "ru": [
-      "для строк vty вы используете класс XS, поэтому ipv6"
+      "теперь применить либо к линиям VTY"
     ]
   },
   {
     "time": [
-      523.0,
-      528.0
+      519.776272,
+      521.554793
     ],
     "en": [
-      "access class telnet in ok let's test it"
+      "you use XS class"
     ],
     "ru": [
-      "доступ к классу Telnet в порядке, давайте проверим его"
+      "вы используете класс XS"
     ]
   },
   {
     "time": [
-      528.0,
-      533.0
+      521.554793,
+      527.173376
     ],
     "en": [
-      "out I'll try to tell NIT - R - s G 0 0 0"
+      "so ipv6 access class telnet in"
     ],
     "ru": [
-      "out попробую сказать NIT - R - s G 0 0 0"
+      "так что ipv6 класс доступа telnet в"
     ]
   },
   {
     "time": [
-      533.0,
-      538.0
+      527.173376,
+      529.448189
     ],
     "en": [
-      "interface from PC 6"
+      "ok let's test it out"
     ],
     "ru": [
-      "интерфейс с ПК 6"
+      "хорошо, давай проверим это"
     ]
   },
   {
     "time": [
-      538.0,
+      529.448189,
+      535.152293
+    ],
+    "en": [
+      "I'll try to tell NIT - R - s G 0 0 0 interface from PC 6"
+    ],
+    "ru": [
+      "Попробую подсказать интерфейс NIT - R - s G 0 0 0 от ПК 6"
+    ]
+  },
+  {
+    "time": [
+      535.152293,
       732.0
     ],
     "en": [
@@ -1646,7 +1730,7 @@ let objs = [
   {
     "time": [
       732.0,
-      546.0
+      545.991064
     ],
     "en": [
       ""
@@ -1657,302 +1741,266 @@ let objs = [
   },
   {
     "time": [
-      546.0,
-      549.0
+      545.991064,
+      550.31121
     ],
     "en": [
-      "good enter the password CCNA in lower"
+      "looks good enter the password CCNA in lower case"
     ],
     "ru": [
-      "хорошо введите пароль CCNA в нижнем"
+      "выглядит хорошо, введите пароль CCNA в нижнем регистре"
     ]
   },
   {
     "time": [
-      549.0,
-      552.0
+      550.31121,
+      552.214981
     ],
     "en": [
-      "case and there we go"
+      "and there we go"
     ],
     "ru": [
-      "случай и поехали"
+      "и вот мы идем"
     ]
   },
   {
     "time": [
-      552.0,
-      556.0
+      552.214981,
+      554.038251
     ],
     "en": [
-      "exit okay let's confirm that PC five"
+      "exit"
     ],
     "ru": [
-      "Выход хорошо, давайте подтвердим, что ПК пять"
+      "выход"
     ]
   },
   {
     "time": [
-      556.0,
-      563.0
+      554.038251,
+      557.819418
     ],
     "en": [
-      "can't tell net to r2 telnet 2001 DB"
+      "okay let's confirm that PC five can't tell net to r2"
     ],
     "ru": [
-      "не могу сказать net to r2 telnet 2001 DB"
+      "Хорошо, давайте подтвердим, что ПК 5 не может сообщить сеть R2"
     ]
   },
   {
     "time": [
-      563.0,
-      569.0
+      557.819418,
+      568.675876
     ],
     "en": [
-      "eight twelve twelve double colon - great"
+      "telnet 2001 DB eight twelve twelve double colon -"
     ],
     "ru": [
-      "восемь двенадцать двенадцать двойное двоеточие - большой"
+      "telnet 2001 DB восемь двенадцать двенадцать двойное двоеточие -"
     ]
   },
   {
     "time": [
-      569.0,
-      570.0
+      568.675876,
+      572.722335
     ],
     "en": [
-      "looks like we successfully configured"
+      "great looks like we successfully configured and applied the ACL"
     ],
     "ru": [
-      "похоже, мы успешно настроили"
+      "отлично выглядит, мы успешно настроили и применили ACL"
     ]
   },
   {
     "time": [
-      570.0,
-      575.0
+      572.722335,
+      577.36771
     ],
     "en": [
-      "and applied the ACL in this lab we"
+      "in this lab we configured multiple types of ACLs"
     ],
     "ru": [
-      "и применили ACL в этой лабораторной работе, мы"
+      "в этой лабораторной работе мы настроили несколько типов ACL"
     ]
   },
   {
     "time": [
-      575.0,
-      578.0
+      577.36771,
+      582.893355
     ],
     "en": [
-      "configured multiple types of ACLs ipv6"
+      "ipv6 ACLs as well as standard and extended ipv4 ACLs"
     ],
     "ru": [
-      "настроил несколько типов ACL ipv6"
+      "списки ACL ipv6, а также стандартные и расширенные списки ACL ipv4"
     ]
   },
   {
     "time": [
-      578.0,
-      581.0
+      582.893355,
+      584.798439
     ],
     "en": [
-      "ACLs as well as standard and extended"
+      "using numbered and named methods"
     ],
     "ru": [
-      "ACL как стандартные, так и расширенные"
+      "с использованием пронумерованных и именованных методов"
     ]
   },
   {
     "time": [
-      581.0,
-      584.0
+      584.798439,
+      588.828751
     ],
     "en": [
-      "ipv4 ACLs using numbered and named"
+      "this was mostly review from what we did in the icnd1 labs"
     ],
     "ru": [
-      "ipv4 ACL с использованием пронумерованных и именованных"
+      "в основном это был обзор того, что мы делали в лабораториях icnd1"
     ]
   },
   {
     "time": [
-      584.0,
-      587.0
+      588.828751,
+      590.78121
     ],
     "en": [
-      "methods this was mostly review from what"
+      "but hopefully it was good practice"
     ],
     "ru": [
-      "методы это был в основном обзор из того, что"
+      "но, надеюсь, это была хорошая практика"
     ]
   },
   {
     "time": [
-      587.0,
-      589.0
+      590.78121,
+      592.565522
     ],
     "en": [
-      "we did in the icnd1 labs but hopefully"
+      "that's all for this lab"
     ],
     "ru": [
-      "мы сделали в лабораториях icnd1, но, надеюсь,"
+      "это все для этой лаборатории"
     ]
   },
   {
     "time": [
-      589.0,
-      591.0
+      592.565522,
+      599.373939
     ],
     "en": [
-      "it was good practice that's all for this"
+      "thank you for watching I hope this lab and video have been helpful for you"
     ],
     "ru": [
-      "это была хорошая практика, вот и все для этого"
+      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были для вас полезны."
     ]
   },
   {
     "time": [
-      591.0,
-      597.0
+      599.373939,
+      602.467835
     ],
     "en": [
-      "lab thank you for watching I hope this"
+      "please subscribe for future labs like this"
     ],
     "ru": [
-      "лаборатория спасибо за просмотр надеюсь это"
+      "пожалуйста, подпишитесь на будущие подобные лаборатории"
     ]
   },
   {
     "time": [
-      597.0,
-      599.0
+      602.467835,
+      604.141001
     ],
     "en": [
-      "lab and video have been helpful for you"
+      "which will be released weekly"
     ],
     "ru": [
-      "лаборатория и видео были вам полезны"
+      "который будет выходить еженедельно"
     ]
   },
   {
     "time": [
-      599.0,
-      601.0
+      604.141001,
+      607.360001
     ],
     "en": [
-      "please subscribe for future labs like"
+      "if you have requests for any specific labs"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, такие как"
+      "если у вас есть запросы по каким-либо конкретным лабораториям"
     ]
   },
   {
     "time": [
-      601.0,
-      604.0
+      607.360001,
+      609.232543
     ],
     "en": [
-      "this which will be released weekly if"
+      "let me know in the comments section"
     ],
     "ru": [
-      "это будет выпускаться еженедельно, если"
+      "дайте мне знать в разделе комментариев"
     ]
   },
   {
     "time": [
-      604.0,
-      607.0
+      609.232543,
+      616.043189
     ],
     "en": [
-      "you have requests for any specific labs"
+      "if you want to support my channel I accept Bitcoin and etherium donations via the addresses in the description"
     ],
     "ru": [
-      "у вас есть запросы по каким-либо конкретным лабораториям"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфиром по адресам в описании"
     ]
   },
   {
     "time": [
-      607.0,
-      610.0
+      616.043189,
+      624.622668
     ],
     "en": [
-      "let me know in the comments section if"
+      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
     ],
     "ru": [
-      "дайте мне знать в разделе комментариев, если"
+      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
     ]
   },
   {
     "time": [
-      610.0,
-      611.0
+      624.622668,
+      624.622668
     ],
     "en": [
-      "you want to support my channel"
+      ""
     ],
     "ru": [
-      "ты хочешь поддержать мой канал"
+      ""
     ]
   },
   {
     "time": [
-      611.0,
-      613.0
+      624.622668,
+      624.622668
     ],
     "en": [
-      "I accept Bitcoin and etherium donations"
+      ""
     ],
     "ru": [
-      "Я принимаю пожертвования биткойнами и эфиром"
+      ""
     ]
   },
   {
     "time": [
-      613.0,
-      616.0
+      624.622668,
+      624.622668
     ],
     "en": [
-      "via the addresses in the description I"
+      ""
     ],
     "ru": [
-      "по адресам в описании I"
-    ]
-  },
-  {
-    "time": [
-      616.0,
-      619.0
-    ],
-    "en": [
-      "am also a brave verified publisher and"
-    ],
-    "ru": [
-      "я также храбрый проверенный издатель и"
-    ]
-  },
-  {
-    "time": [
-      619.0,
-      622.0
-    ],
-    "en": [
-      "accept bat or basic attention token"
-    ],
-    "ru": [
-      "принять летучую мышь или жетон основного внимания"
-    ]
-  },
-  {
-    "time": [
-      622.0,
-      622.0
-    ],
-    "en": [
-      "donations in the brave browser"
-    ],
-    "ru": [
-      "пожертвования в смелом браузере"
+      ""
     ]
   }
 ]

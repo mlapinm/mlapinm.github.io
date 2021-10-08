@@ -2,286 +2,178 @@ let objs = [
   {
     "time": [
       0.0,
-      3.0
+      4.180229
     ],
     "en": [
-      "welcome to this free CCNA packet tracer"
+      "welcome to this free CCNA packet tracer practice lab"
     ],
     "ru": [
-      "добро пожаловать в этот бесплатный трассировщик пакетов CCNA"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
     ]
   },
   {
     "time": [
-      3.0,
-      5.0
+      4.180229,
+      7.693916
     ],
     "en": [
-      "practice lab you can download the lab"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "Практическая лаборатория вы можете скачать лабораторию"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
     "time": [
-      5.0,
-      8.0
+      7.693916,
+      14.746458
     ],
     "en": [
-      "file from the link in the description if"
+      "if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description"
     ],
     "ru": [
-      "файл по ссылке в описании, если"
+      "если вам нравятся эти лаборатории, пожалуйста, подумайте о поддержке меня через мой патреон или варианты криптовалюты в описании"
     ]
   },
   {
     "time": [
-      8.0,
-      10.0
+      14.746458,
+      19.731562
     ],
     "en": [
-      "you like these labs please consider"
+      "also please subscribe to the channel for more labs like this"
     ],
     "ru": [
-      "Вам нравятся эти лаборатории, пожалуйста, примите во внимание"
+      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторных работ"
     ]
   },
   {
     "time": [
-      10.0,
-      12.0
+      19.731562,
+      23.536916
     ],
     "en": [
-      "supporting me via my patreon or the"
+      "and share these videos with anyone else studying for the CCNA"
     ],
     "ru": [
-      "поддерживая меня через моего патреона или"
+      "и поделитесь этими видео со всеми, кто учится на CCNA"
     ]
   },
   {
     "time": [
-      12.0,
-      13.0
+      23.536916,
+      32.515874
     ],
     "en": [
-      "cryptocurrency options in the"
+      "this configuration lab and the next troubleshooting lab would be the last labs in my series of labs for the CCNA"
     ],
     "ru": [
-      "варианты криптовалюты в"
+      "эта лаборатория настройки и следующая лаборатория по устранению неполадок будут последними в моей серии лабораторных работ по CCNA."
     ]
   },
   {
     "time": [
-      13.0,
-      17.0
+      32.515874,
+      36.161603
     ],
     "en": [
-      "description also please subscribe to the"
+      "I was expecting to finish them by the end of the year"
     ],
     "ru": [
-      "описание также подпишитесь на"
+      "Я ожидал закончить их к концу года"
     ]
   },
   {
     "time": [
-      17.0,
-      19.0
+      36.161603,
+      40.799041
     ],
     "en": [
-      "channel for more labs like this and"
+      "but with the approaching changes to a Cisco certifications coming in February next year"
     ],
     "ru": [
-      "канал для других подобных лабораторий и"
+      "но с приближающимися изменениями в сертификации Cisco, которые появятся в феврале следующего года."
     ]
   },
   {
     "time": [
-      19.0,
-      21.0
+      40.799041,
+      45.003456
     ],
     "en": [
-      "share these videos with anyone else"
+      "I wanted to finish these soon so you have plenty of time to practice them"
     ],
     "ru": [
-      "поделитесь этими видео с кем угодно"
+      "Я хотел закончить их поскорее, чтобы у вас было достаточно времени, чтобы попрактиковаться"
     ]
   },
   {
     "time": [
-      21.0,
-      25.0
+      45.003456,
+      47.734665
     ],
     "en": [
-      "studying for the CCNA this configuration"
+      "and get your CCNA before the changes"
     ],
     "ru": [
-      "учусь на CCNA этой конфигурации"
+      "и получите свой CCNA до внесения изменений"
     ]
   },
   {
     "time": [
-      25.0,
-      28.0
+      47.734665,
+      53.126873
     ],
     "en": [
-      "lab and the next troubleshooting lab"
+      "so I've managed to put out a video almost every day for over a month"
     ],
     "ru": [
-      "лаборатория и следующая лаборатория по устранению неполадок"
+      "так что мне удавалось выкладывать видео почти каждый день больше месяца"
     ]
   },
   {
     "time": [
-      28.0,
-      30.0
+      53.126873,
+      54.948456
     ],
     "en": [
-      "would be the last labs in my series of"
+      "and finally we're at the end"
     ],
     "ru": [
-      "будут последними лабораториями в моей серии"
+      "и наконец мы подошли к концу"
     ]
   },
   {
     "time": [
-      30.0,
-      34.0
+      54.948456,
+      57.319747
     ],
     "en": [
-      "labs for the CCNA I was expecting to"
+      "stay tuned for my next project"
     ],
     "ru": [
-      "лаборатории для CCNA, я ожидал"
+      "следите за моим следующим проектом"
     ]
   },
   {
     "time": [
-      34.0,
-      36.0
+      57.319747,
+      59.376435
     ],
     "en": [
-      "finish them by the end of the year but"
+      "which I'm really excited about"
     ],
     "ru": [
-      "закончить их к концу года, но"
+      "что я действительно взволнован"
     ]
   },
   {
     "time": [
-      36.0,
-      38.0
+      59.376435,
+      62.186226
     ],
     "en": [
-      "with the approaching changes to a Cisco"
-    ],
-    "ru": [
-      "с приближающимися изменениями в Cisco"
-    ]
-  },
-  {
-    "time": [
-      38.0,
-      40.0
-    ],
-    "en": [
-      "certifications coming in February next"
-    ],
-    "ru": [
-      "сертификаты появятся в феврале следующего"
-    ]
-  },
-  {
-    "time": [
-      40.0,
-      43.0
-    ],
-    "en": [
-      "year I wanted to finish these soon so"
-    ],
-    "ru": [
-      "год я хотел закончить это поскорее так"
-    ]
-  },
-  {
-    "time": [
-      43.0,
-      44.0
-    ],
-    "en": [
-      "you have plenty of time to practice them"
-    ],
-    "ru": [
-      "у вас есть много времени, чтобы попрактиковаться в них"
-    ]
-  },
-  {
-    "time": [
-      44.0,
-      49.0
-    ],
-    "en": [
-      "and get your CCNA before the changes so"
-    ],
-    "ru": [
-      "и получите свой CCNA до внесения изменений, чтобы"
-    ]
-  },
-  {
-    "time": [
-      49.0,
-      51.0
-    ],
-    "en": [
-      "I've managed to put out a video almost"
-    ],
-    "ru": [
-      "Мне удалось выложить видео почти"
-    ]
-  },
-  {
-    "time": [
-      51.0,
-      53.0
-    ],
-    "en": [
-      "every day for over a month and finally"
-    ],
-    "ru": [
-      "каждый день больше месяца и наконец"
-    ]
-  },
-  {
-    "time": [
-      53.0,
-      56.0
-    ],
-    "en": [
-      "we're at the end stay tuned for my next"
-    ],
-    "ru": [
-      "мы подошли к концу, следите за моим следующим"
-    ]
-  },
-  {
-    "time": [
-      56.0,
-      59.0
-    ],
-    "en": [
-      "project which I'm really excited about"
-    ],
-    "ru": [
-      "проект, который мне очень нравится"
-    ]
-  },
-  {
-    "time": [
-      59.0,
-      61.0
-    ],
-    "en": [
-      "anyway this isn't the last video the"
+      "anyway this isn't the last video"
     ],
     "ru": [
       "в любом случае это не последнее видео"
@@ -289,644 +181,560 @@ let objs = [
   },
   {
     "time": [
-      61.0,
-      65.0
+      62.186226,
+      63.018288
     ],
     "en": [
-      "next one is so let's get started first I"
+      "the next one is"
     ],
     "ru": [
-      "следующий, так что давайте начнем сначала я"
+      "следующий"
     ]
   },
   {
     "time": [
-      65.0,
-      66.0
+      63.018288,
+      64.13433
     ],
     "en": [
-      "want to mention just one thing about the"
+      "so let's get started"
     ],
     "ru": [
-      "хочу упомянуть только одну вещь о"
+      "так что давайте начнем"
     ]
   },
   {
     "time": [
-      66.0,
-      70.0
+      64.13433,
+      67.532976
     ],
     "en": [
-      "lab normally private IP addresses can't"
+      "first I want to mention just one thing about the lab"
     ],
     "ru": [
-      "лаборатория обычно частные IP-адреса не могут"
+      "Сначала я хочу упомянуть только одну вещь о лаборатории"
     ]
   },
   {
     "time": [
-      70.0,
-      73.0
+      67.532976,
+      71.844559
     ],
     "en": [
-      "be routed over the Internet in my NAT"
+      "normally private IP addresses can't be routed over the Internet"
     ],
     "ru": [
-      "маршрутизироваться через Интернет в моем NAT"
+      "обычно частные IP-адреса не могут быть маршрутизированы через Интернет"
     ]
   },
   {
     "time": [
-      73.0,
-      76.0
+      71.844559,
+      76.900622
     ],
     "en": [
-      "labs I configured ACLs to simulate that"
+      "in my NAT labs I configured ACLs to simulate that"
     ],
     "ru": [
-      "лаборатории я настроил ACL для имитации этого"
+      "в моих лабораториях NAT я настроил ACL для имитации этого"
     ]
   },
   {
     "time": [
-      76.0,
-      79.0
+      76.900622,
+      79.179038
     ],
     "en": [
-      "however I haven't done so in this lab so"
+      "however I haven't done so in this lab"
     ],
     "ru": [
-      "однако я не делал этого в этой лаборатории, поэтому"
+      "однако я не делал этого в этой лаборатории"
     ]
   },
   {
     "time": [
-      79.0,
-      81.0
+      79.179038,
+      84.070454
     ],
     "en": [
-      "you won't have to use NAT to send"
+      "so you won't have to use NAT to send traffic over the Internet cloud which is here in the middle"
     ],
     "ru": [
-      "вам не нужно использовать NAT для отправки"
+      "поэтому вам не придется использовать NAT для отправки трафика через Интернет-облако, которое находится здесь посередине"
     ]
   },
   {
     "time": [
-      81.0,
-      82.0
+      84.070454,
+      93.442079
     ],
     "en": [
-      "traffic over the Internet cloud which is"
+      "in this review lab we will configure BGP OSPF EIGRP GRE and PPP"
     ],
     "ru": [
-      "трафик через интернет-облако, которое"
+      "в этой лабораторной работе мы настроим BGP OSPF EIGRP GRE и PPP"
     ]
   },
   {
     "time": [
-      82.0,
-      83.0
+      93.442079,
+      96.745142
     ],
     "en": [
-      "here in the middle"
+      "there are two enterprises"
     ],
     "ru": [
-      "здесь в середине"
+      "есть два предприятия"
     ]
   },
   {
     "time": [
-      83.0,
-      88.0
+      96.745142,
+      99.089517
     ],
     "en": [
-      "in this review lab we will configure BGP"
+      "enterprise a and Enterprise B"
     ],
     "ru": [
-      "в этой лабораторной работе мы настроим BGP"
+      "предприятие А и предприятие Б"
     ]
   },
   {
     "time": [
-      88.0,
-      95.0
+      99.089517,
+      102.192433
     ],
     "en": [
-      "OSPF EIGRP GRE and PPP there are two"
+      "which are connecting to the same Internet service provider"
     ],
     "ru": [
-      "OSPF EIGRP GRE и PPP есть два"
+      "которые подключаются к одному и тому же интернет-провайдеру"
     ]
   },
   {
     "time": [
-      95.0,
-      98.0
+      102.192433,
+      105.504329
     ],
     "en": [
-      "enterprises enterprise a and Enterprise"
+      "Enterprise a uses OSPF"
     ],
     "ru": [
-      "предприятия предприятие а и предприятие"
+      "Предприятие a использует OSPF"
     ]
   },
   {
     "time": [
-      98.0,
-      100.0
+      105.504329,
+      109.220892
     ],
     "en": [
-      "B which are connecting to the same"
+      "and wants to configure a GRE tunnel between two branches"
     ],
     "ru": [
-      "B, которые подключаются к тому же"
+      "и хочет настроить туннель GRE между двумя ветвями"
     ]
   },
   {
     "time": [
-      100.0,
-      104.0
+      109.220892,
+      115.382475
     ],
     "en": [
-      "Internet service provider Enterprise a"
+      "Enterprise a also uses static routing over fibre Ethernet to connect to the internet"
     ],
     "ru": [
-      "Интернет-провайдер Enterprise a"
+      "Enterprise A также использует статическую маршрутизацию по оптоволоконному кабелю Ethernet для подключения к Интернету."
     ]
   },
   {
     "time": [
-      104.0,
-      107.0
+      115.382475,
+      117.227225
     ],
     "en": [
-      "uses OSPF and wants to configure a GRE"
+      "rather than BGP"
     ],
     "ru": [
-      "использует OSPF и хочет настроить GRE"
+      "а не BGP"
     ]
   },
   {
     "time": [
-      107.0,
-      111.0
+      117.227225,
+      122.179725
     ],
     "en": [
-      "tunnel between two branches Enterprise a"
+      "Enterprise B uses AI GRP in its internal network"
     ],
     "ru": [
-      "туннель между двумя филиалами Enterprise A"
+      "Предприятие B использует AI GRP во внутренней сети"
     ]
   },
   {
     "time": [
-      111.0,
-      113.0
+      122.179725,
+      127.28212
     ],
     "en": [
-      "also uses static routing over fibre"
+      "connecting to the ISP with BGP over a PPP serial connection"
     ],
     "ru": [
-      "также использует статическую маршрутизацию по оптоволокну"
+      "подключение к интернет-провайдеру с помощью BGP через последовательное соединение PPP"
     ]
   },
   {
     "time": [
-      113.0,
-      114.0
+      127.28212,
+      130.470058
     ],
     "en": [
-      "Ethernet to connect to the internet"
+      "let's configure Enterprise a first"
     ],
     "ru": [
-      "Ethernet для подключения к Интернету"
+      "давайте сначала настроим Enterprise"
     ]
   },
   {
     "time": [
-      114.0,
-      120.0
+      130.470058,
+      133.168807
     ],
     "en": [
-      "rather than BGP Enterprise B uses AI GRP"
+      "the first step is simple"
     ],
     "ru": [
-      "вместо BGP Enterprise B использует AI GRP"
+      "первый шаг прост"
     ]
   },
   {
     "time": [
-      120.0,
-      123.0
+      133.168807,
+      137.451453
     ],
     "en": [
-      "in its internal network connecting to"
+      "that is to configure static roads to the internet on r1 and r2"
     ],
     "ru": [
-      "в своей внутренней сети, подключенной к"
+      "то есть настроить статические дороги в Интернет на r1 и r2"
     ]
   },
   {
     "time": [
-      123.0,
-      126.0
+      137.451453,
+      141.337911
     ],
     "en": [
-      "the ISP with BGP over a PPP serial"
+      "often BGP isn't necessary"
     ],
     "ru": [
-      "Интернет-провайдер с BGP через серийный номер PPP"
+      "часто BGP не нужен"
     ]
   },
   {
     "time": [
-      126.0,
-      129.0
+      141.337911,
+      144.356974
     ],
     "en": [
-      "connection let's configure Enterprise a"
+      "and static routes are sufficient for Internet connectivity"
     ],
     "ru": [
-      "подключение настроим Enterprise a"
+      "и статических маршрутов достаточно для подключения к Интернету"
     ]
   },
   {
     "time": [
-      129.0,
-      133.0
+      144.356974,
+      149.260766
     ],
     "en": [
-      "first the first step is simple that is"
+      "for enterprise B's connection to a simple static Reb would work"
     ],
     "ru": [
-      "сначала первый шаг прост, то есть"
+      "для подключения предприятия B к простому статическому Reb будет работать"
     ]
   },
   {
     "time": [
-      133.0,
-      133.0
+      149.260766,
+      150.876953
     ],
     "en": [
-      "to configure"
+      "but they want to use BGP"
     ],
     "ru": [
-      "настроить"
+      "но они хотят использовать BGP"
     ]
   },
   {
     "time": [
-      133.0,
-      136.0
+      150.876953,
+      156.56812
     ],
     "en": [
-      "static roads to the internet on r1 and"
+      "anyway let's configure the static route on r1 first for enterprise a"
     ],
     "ru": [
-      "статические дороги в интернет на r1 и"
+      "в любом случае давайте сначала настроим статический маршрут на r1 для предприятия"
     ]
   },
   {
     "time": [
-      136.0,
-      141.0
+      156.56812,
+      160.914599
     ],
     "en": [
-      "r2 often BGP isn't necessary and static"
+      "enable compte"
     ],
     "ru": [
-      "r2 часто BGP не нужен и статичен"
+      "включить compte"
     ]
   },
   {
     "time": [
-      141.0,
-      143.0
+      160.914599,
+      167.418828
     ],
     "en": [
-      "routes are sufficient for Internet"
+      "IP route oh-oh-oh-oh oh-oh-oh-oh"
     ],
     "ru": [
-      "маршрутов достаточно для интернета"
+      "IP-маршрут ой-ой-ой-ой ой-ой-ой-ой"
     ]
   },
   {
     "time": [
-      143.0,
-      146.0
+      167.418828,
+      172.305286
     ],
     "en": [
-      "connectivity for enterprise B's"
+      "then i can specify the outgoing interface or the next hop IP address"
     ],
     "ru": [
-      "возможность подключения для предприятий B"
+      "тогда я могу указать исходящий интерфейс или IP-адрес следующего перехода"
     ]
   },
   {
     "time": [
-      146.0,
-      148.0
+      172.305286,
+      173.690348
     ],
     "en": [
-      "connection to a simple static Reb would"
+      "it doesn't really matter which"
     ],
     "ru": [
-      "подключение к простому статическому Ребу будет"
+      "на самом деле не имеет значения, какой"
     ]
   },
   {
     "time": [
-      148.0,
-      152.0
+      173.690348,
+      177.96814
     ],
     "en": [
-      "work but they want to use BGP anyway"
+      "i'll use the interface g zero zero zero"
     ],
     "ru": [
-      "работают, но они все равно хотят использовать BGP"
+      "я буду использовать интерфейс g ноль ноль ноль"
     ]
   },
   {
     "time": [
-      152.0,
-      154.0
+      177.96814,
+      178.75393
     ],
     "en": [
-      "let's configure the static route on r1"
+      "that's it"
     ],
     "ru": [
-      "настроим статический маршрут на r1"
+      "это оно"
     ]
   },
   {
     "time": [
-      154.0,
-      162.0
+      178.75393,
+      181.720285
     ],
     "en": [
-      "first for enterprise a enable compte IP"
+      "let's do the same on our to"
     ],
     "ru": [
-      "во-первых, для предприятий - включить Compte IP"
+      "давай сделаем то же самое с нашим"
     ]
   },
   {
     "time": [
-      162.0,
-      167.0
+      181.720285,
+      185.980222
     ],
     "en": [
-      "route oh-oh-oh-oh oh-oh-oh-oh"
+      "enable compte"
     ],
     "ru": [
-      "маршрут ой-ой-ой-ой ой-ой-ой-ой"
+      "включить compte"
     ]
   },
   {
     "time": [
-      167.0,
-      169.0
+      185.980222,
+      193.753305
     ],
     "en": [
-      "then i can specify the outgoing"
+      "IP route oh-oh-oh-oh-oh-oh Dakota Oh G zero zero zero"
     ],
     "ru": [
-      "тогда я могу указать исходящие"
+      "IP-маршрут ой-ой-ой-ой-ой-ой Дакота Ой Г ноль ноль"
     ]
   },
   {
     "time": [
-      169.0,
-      172.0
+      193.753305,
+      195.633555
     ],
     "en": [
-      "interface or the next hop IP address it"
+      "that's it"
     ],
     "ru": [
-      "интерфейс или IP-адрес следующего перехода"
+      "это оно"
     ]
   },
   {
     "time": [
-      172.0,
-      174.0
+      195.633555,
+      201.000429
     ],
     "en": [
-      "doesn't really matter which i'll use the"
+      "next let's configure a GRE tunnel from r1 to r2"
     ],
     "ru": [
-      "на самом деле не имеет значения, какой я буду использовать"
+      "Затем давайте настроим туннель GRE от r1 до r2"
     ]
   },
   {
     "time": [
-      174.0,
-      178.0
+      201.000429,
+      204.433908
     ],
     "en": [
-      "interface g zero zero zero that's it"
+      "which is a logical tunnel interface"
     ],
     "ru": [
-      "интерфейс g ноль ноль ноль вот и все"
+      "который является логическим туннельным интерфейсом"
     ]
   },
   {
     "time": [
-      178.0,
-      184.0
+      204.433908,
+      207.549242
     ],
     "en": [
-      "let's do the same on our to enable"
+      "which will allow them to behave as if they are directly connected"
     ],
     "ru": [
-      "давайте сделаем то же самое с нашим, чтобы включить"
+      "что позволит им вести себя так, как если бы они были напрямую подключены"
     ]
   },
   {
     "time": [
-      184.0,
-      190.0
+      207.549242,
+      209.486283
     ],
     "en": [
-      "compte IP route"
+      "and share OSPF routes"
     ],
     "ru": [
-      "вычислить IP-маршрут"
+      "и делиться маршрутами OSPF"
     ]
   },
   {
     "time": [
-      190.0,
-      193.0
+      209.486283,
+      213.339637
     ],
     "en": [
-      "oh-oh-oh-oh-oh-oh Dakota Oh G zero zero"
+      "even though traffic between them actually passes through the service provider network"
     ],
     "ru": [
-      "ой-ой-ой-ой-ой-ой Дакота ой G ноль ноль"
+      "даже если трафик между ними фактически проходит через сеть поставщика услуг"
     ]
   },
   {
     "time": [
-      193.0,
-      198.0
+      213.339637,
+      216.589428
     ],
     "en": [
-      "zero that's it next let's configure a"
+      "I'll start here on r2"
     ],
     "ru": [
-      "ноль, вот и все, теперь давайте настроим"
+      "Я начну здесь на r2"
     ]
   },
   {
     "time": [
-      198.0,
-      202.0
+      216.589428,
+      218.706115
     ],
     "en": [
-      "GRE tunnel from r1 to r2 which is a"
+      "let's make the interface"
     ],
     "ru": [
-      "GRE-туннель от r1 до r2, который является"
+      "давайте сделаем интерфейс"
     ]
   },
   {
     "time": [
-      202.0,
-      204.0
+      218.706115,
+      221.722032
     ],
     "en": [
-      "logical tunnel interface which will"
+      "interface tunnel zero"
     ],
     "ru": [
-      "логический туннельный интерфейс, который будет"
+      "нулевой интерфейсный туннель"
     ]
   },
   {
     "time": [
-      204.0,
-      206.0
+      221.722032,
+      226.208282
     ],
     "en": [
-      "allow them to behave as if they are"
+      "let's configure the source and destination addresses"
     ],
     "ru": [
-      "позволить им вести себя так, как будто они"
+      "настроим адреса отправителя и получателя"
     ]
   },
   {
     "time": [
-      206.0,
-      209.0
+      226.208282,
+      231.741219
     ],
     "en": [
-      "directly connected and share OSPF routes"
+      "these are the actual physical interface addresses on r2 and r1"
     ],
     "ru": [
-      "напрямую подключены и обмениваются маршрутами OSPF"
+      "это фактические адреса физических интерфейсов на r2 и r1"
     ]
   },
   {
     "time": [
-      209.0,
-      210.0
+      231.741219,
+      236.032323
     ],
     "en": [
-      "even though traffic between them"
+      "tunnel source G zero zero zero"
     ],
     "ru": [
-      "хотя трафик между ними"
+      "туннельный источник G ноль ноль ноль"
     ]
   },
   {
     "time": [
-      210.0,
-      212.0
-    ],
-    "en": [
-      "actually passes through the service"
-    ],
-    "ru": [
-      "фактически проходит через сервис"
-    ]
-  },
-  {
-    "time": [
-      212.0,
-      216.0
-    ],
-    "en": [
-      "provider network I'll start here on r2"
-    ],
-    "ru": [
-      "сеть провайдера я начну здесь на r2"
-    ]
-  },
-  {
-    "time": [
-      216.0,
-      219.0
-    ],
-    "en": [
-      "let's make the interface interface"
-    ],
-    "ru": [
-      "сделаем интерфейс интерфейс"
-    ]
-  },
-  {
-    "time": [
-      219.0,
-      223.0
-    ],
-    "en": [
-      "tunnel zero let's configure the source"
-    ],
-    "ru": [
-      "нулевой туннель настроим источник"
-    ]
-  },
-  {
-    "time": [
-      223.0,
-      227.0
-    ],
-    "en": [
-      "and destination addresses these are the"
-    ],
-    "ru": [
-      "и адреса назначения это"
-    ]
-  },
-  {
-    "time": [
-      227.0,
-      229.0
-    ],
-    "en": [
-      "actual physical interface addresses on"
-    ],
-    "ru": [
-      "фактические адреса физических интерфейсов на"
-    ]
-  },
-  {
-    "time": [
-      229.0,
-      236.0
-    ],
-    "en": [
-      "r2 and r1 tunnel source G zero zero zero"
-    ],
-    "ru": [
-      "r2 и r1 туннельный источник G ноль ноль ноль"
-    ]
-  },
-  {
-    "time": [
-      236.0,
-      242.0
+      236.032323,
+      242.710802
     ],
     "en": [
       "tunnel destination 203 o y1 and 3.2"
@@ -937,452 +745,404 @@ let objs = [
   },
   {
     "time": [
-      242.0,
-      245.0
+      242.710802,
+      247.450948
     ],
     "en": [
-      "which is the IP address of our ones G"
+      "which is the IP address of our ones G zero zero zero interface"
     ],
     "ru": [
-      "который является IP-адресом наших G"
+      "который является IP-адресом наших G ноль ноль ноль интерфейс"
     ]
   },
   {
     "time": [
-      245.0,
-      249.0
+      247.450948,
+      254.954968
     ],
     "en": [
-      "zero zero zero interface now let's give"
+      "now let's give it an IP address from the 192.168 12/30 network"
     ],
     "ru": [
-      "ноль ноль ноль интерфейс теперь давайте дадим"
+      "теперь давайте дадим ему IP-адрес из сети 192.168 12/30"
     ]
   },
   {
     "time": [
-      249.0,
-      253.0
+      254.954968,
+      256.642823
     ],
     "en": [
-      "it an IP address from the 192.168 12/30"
+      "as per the instructions"
     ],
     "ru": [
-      "это IP-адрес из 192.168 12/30"
+      "согласно инструкции"
     ]
   },
   {
     "time": [
-      253.0,
-      257.0
+      256.642823,
+      265.452052
     ],
     "en": [
-      "network as per the instructions IP"
+      "IP address 192.168.1.1 five five two five two"
     ],
     "ru": [
-      "сеть по инструкции IP"
+      "IP-адрес 192.168.1.1 пять пять два пять два"
     ]
   },
   {
     "time": [
-      257.0,
-      264.0
+      265.452052,
+      267.571427
     ],
     "en": [
-      "address 192.168.1.1 five five two five"
+      "okay that's all"
     ],
     "ru": [
-      "адрес 192.168.1.1 пять пять два пять"
+      "хорошо это все"
     ]
   },
   {
     "time": [
-      264.0,
-      267.0
+      267.571427,
+      271.693843
     ],
     "en": [
-      "two okay that's all"
+      "exit now let's configure our one"
     ],
     "ru": [
-      "два хорошо, это все"
+      "выход сейчас давайте настроим наш"
     ]
   },
   {
     "time": [
-      267.0,
-      274.0
+      271.693843,
+      277.280739
     ],
     "en": [
-      "exit now let's configure our one side"
+      "side interface tunnel zero"
     ],
     "ru": [
-      "выход сейчас давайте настроим нашу одну сторону"
+      "боковой интерфейсный туннель ноль"
     ]
   },
   {
     "time": [
-      274.0,
-      279.0
+      277.280739,
+      281.344134
     ],
     "en": [
-      "interface tunnel zero tunnel source G"
+      "tunnel source G zero zero zero"
     ],
     "ru": [
-      "интерфейс туннель нулевой туннель источник G"
+      "туннельный источник G ноль ноль ноль"
     ]
   },
   {
     "time": [
-      279.0,
-      284.0
+      281.344134,
+      286.718426
     ],
     "en": [
-      "zero zero zero tunnel destination 203 o"
+      "tunnel destination 203 o y1 13.6"
     ],
     "ru": [
-      "ноль ноль ноль ноль пункт назначения туннеля 203 o"
+      "конечный пункт туннеля 203 o y1 13,6"
     ]
   },
   {
     "time": [
-      284.0,
-      288.0
+      286.718426,
+      291.922739
     ],
     "en": [
-      "y1 13.6 which is the IP address of our"
+      "which is the IP address of our two s G zero zero zero interface"
     ],
     "ru": [
-      "y1 13.6, который является IP-адресом нашего"
+      "который является IP-адресом наших двух интерфейсов s G zero zero zero"
     ]
   },
   {
     "time": [
-      288.0,
-      292.0
+      291.922739,
+      300.907718
     ],
     "en": [
-      "two s G zero zero zero interface IP"
+      "IP address 192.168.1.1 255.255.255.0"
     ],
     "ru": [
-      "два s G ноль ноль ноль интерфейс IP"
+      "IP-адрес 192.168.1.1 255.255.255.0"
     ]
   },
   {
     "time": [
-      292.0,
-      298.0
+      300.907718,
+      301.826842
     ],
     "en": [
-      "address 192.168.1.1"
+      "it's it"
     ],
     "ru": [
-      "адрес 192.168.1.1"
+      "это его"
     ]
   },
   {
     "time": [
-      298.0,
-      303.0
+      301.826842,
+      306.742112
     ],
     "en": [
-      ""
+      "okay let's try to ping from one end of the tunnel to the other"
     ],
     "ru": [
-      ""
+      "хорошо, давайте попробуем пинговать от одного конца туннеля до другого"
     ]
   },
   {
     "time": [
-      298.0,
-      303.0
+      306.742112,
+      312.258424
     ],
     "en": [
-      ""
+      "do ping 192.168 12.2"
     ],
     "ru": [
-      ""
+      "сделать пинг 192.168 12.2"
     ]
   },
   {
     "time": [
-      303.0,
-      305.0
+      312.258424,
+      322.754924
     ],
     "en": [
-      "ping from one end of the tunnel to the"
+      "okay we can ping from one side of the tunnel to the other"
     ],
     "ru": [
-      "пинг от одного конца туннеля к"
+      "хорошо, мы можем пинговать с одной стороны туннеля на другую"
     ]
   },
   {
     "time": [
-      305.0,
-      319.0
+      322.754924,
+      328.745737
     ],
     "en": [
-      "other do ping 192.168 12.2"
+      "finally let's configure OSPF on r1 and r2"
     ],
     "ru": [
-      "другой do ping 192.168 12.2"
+      "наконец, давайте настроим OSPF на r1 и r2"
     ]
   },
   {
     "time": [
-      319.0,
-      321.0
+      328.745737,
+      331.55207
     ],
     "en": [
-      "okay we can ping from one side of the"
+      "I'll start here on our one"
     ],
     "ru": [
-      "хорошо, мы можем пинговать с одной стороны"
+      "Я начну с нашего"
     ]
   },
   {
     "time": [
-      321.0,
-      325.0
+      331.55207,
+      334.043195
     ],
     "en": [
-      "tunnel to the other finally let's"
+      "router OSPF one"
     ],
     "ru": [
-      "туннель к другому, наконец, давайте"
+      "роутер OSPF one"
     ]
   },
   {
     "time": [
-      325.0,
-      330.0
+      334.043195,
+      338.554216
     ],
     "en": [
-      "configure OSPF on r1 and r2 I'll start"
+      "remember the OSPF process ID is locally significant"
     ],
     "ru": [
-      "настроить OSPF на r1 и r2 я начну"
+      "помните, что идентификатор процесса OSPF имеет локальное значение"
     ]
   },
   {
     "time": [
-      330.0,
-      335.0
+      338.554216,
+      341.008257
     ],
     "en": [
-      "here on our one router OSPF one remember"
+      "and doesn't have to match between routers"
     ],
     "ru": [
-      "вот на нашем одном роутере OSPF один помню"
+      "и не обязательно совпадать между маршрутизаторами"
     ]
   },
   {
     "time": [
-      335.0,
-      337.0
+      341.008257,
+      348.741799
     ],
     "en": [
-      "the OSPF process ID is locally"
+      "we should activate OSPF on the g zero zero and tunnel zero interfaces of r1 and r2"
     ],
     "ru": [
-      "идентификатор процесса OSPF локально"
+      "мы должны активировать OSPF на интерфейсах g zero zero и tunnel zero r1 и r2"
     ]
   },
   {
     "time": [
-      337.0,
-      339.0
+      348.741799,
+      353.65457
     ],
     "en": [
-      "significant and doesn't have to match"
+      "so here on our one"
     ],
     "ru": [
-      "значительный и не обязательно совпадать"
+      "так что здесь на нашем"
     ]
   },
   {
     "time": [
-      339.0,
-      343.0
+      353.65457,
+      361.068632
     ],
     "en": [
-      "between routers we should activate OSPF"
+      "network 192.168.1.0 0.255 area zero"
     ],
     "ru": [
-      "между роутерами надо активировать OSPF"
+      "сеть 192.168.1.0 0.255 нулевая зона"
     ]
   },
   {
     "time": [
-      343.0,
-      346.0
+      361.068632,
+      363.043528
     ],
     "en": [
-      "on the g zero zero and tunnel zero"
+      "that's G zero zero"
     ],
     "ru": [
-      "на g ноль ноль и туннель ноль"
+      "это G ноль ноль"
     ]
   },
   {
     "time": [
-      346.0,
-      352.0
+      363.043528,
+      370.731382
     ],
     "en": [
-      "interfaces of r1 and r2 so here on our"
+      "and network 192.168.1.0 oh-oh-oh three area zero"
     ],
     "ru": [
-      "интерфейсы r1 и r2, так что здесь, на нашем"
+      "и сеть 192.168.1.0 ой-ой-ой три области ноль"
     ]
   },
   {
     "time": [
-      352.0,
-      360.0
+      370.731382,
+      372.257716
     ],
     "en": [
-      "one network 192.168.1.0 0.255 area zero"
+      "that's tunnel zero"
     ],
     "ru": [
-      "одна сеть 192.168.1.0 0.255 нулевая зона"
+      "это нулевой туннель"
     ]
   },
   {
     "time": [
-      360.0,
-      364.0
+      372.257716,
+      374.947007
     ],
     "en": [
-      "that's G zero zero and network"
+      "now let's configure r2"
     ],
     "ru": [
-      "это G ноль ноль и сеть"
+      "теперь давайте настроим r2"
     ]
   },
   {
     "time": [
-      364.0,
-      370.0
+      374.947007,
+      377.751924
     ],
     "en": [
-      ""
+      "and see if they exchange OSPF routes"
     ],
     "ru": [
-      ""
+      "и посмотреть, обмениваются ли они маршрутами OSPF"
     ]
   },
   {
     "time": [
-      364.0,
-      370.0
+      377.751924,
+      381.515882
     ],
     "en": [
-      ""
+      "router OSPF one"
     ],
     "ru": [
-      ""
+      "роутер OSPF one"
     ]
   },
   {
     "time": [
-      370.0,
-      373.0
+      381.515882,
+      388.959174
     ],
     "en": [
-      "that's tunnel zero now let's configure"
+      "network 192.168.0 0.255 area zero"
     ],
     "ru": [
-      "это нулевой туннель, теперь давайте настроим"
+      "сеть 192.168.0 0.255 нулевая зона"
     ]
   },
   {
     "time": [
-      373.0,
-      378.0
+      388.959174,
+      396.975528
     ],
     "en": [
-      "r2 and see if they exchange OSPF routes"
+      "network 192.168.1.0 three area zero"
     ],
     "ru": [
-      "r2 и посмотрите, обмениваются ли они маршрутами OSPF"
+      "сеть 192.168.1.0 три нулевой зоны"
     ]
   },
   {
     "time": [
-      378.0,
-      387.0
+      396.975528,
+      401.467549
     ],
     "en": [
-      "router OSPF one network 192.168.0 0.255"
+      "that's all that's necessary for a simple OSPF configuration"
     ],
     "ru": [
-      "роутер OSPF одна сеть 192.168.0 0.255"
+      "это все, что нужно для простой конфигурации OSPF"
     ]
   },
   {
     "time": [
-      387.0,
-      396.0
+      401.467549,
+      406.384319
     ],
     "en": [
-      "area zero network 192.168.1.0 three area"
+      "okay let's wait for 10 seconds or so for them to become neighbors and exchange routes"
     ],
     "ru": [
-      "нулевая зона сеть 192.168.1.0 три зоны"
+      "хорошо, подождем секунд 10 или около того, чтобы они стали соседями и обменялись маршрутами"
     ]
   },
   {
     "time": [
-      396.0,
-      399.0
-    ],
-    "en": [
-      "zero that's all that's necessary for a"
-    ],
-    "ru": [
-      "ноль, это все, что нужно для"
-    ]
-  },
-  {
-    "time": [
-      399.0,
-      402.0
-    ],
-    "en": [
-      "simple OSPF configuration okay let's"
-    ],
-    "ru": [
-      "простая конфигурация OSPF хорошо давай"
-    ]
-  },
-  {
-    "time": [
-      402.0,
-      404.0
-    ],
-    "en": [
-      "wait for 10 seconds or so for them to"
-    ],
-    "ru": [
-      "подождите 10 секунд или около того, чтобы они"
-    ]
-  },
-  {
-    "time": [
-      404.0,
-      406.0
-    ],
-    "en": [
-      "become neighbors and exchange routes"
-    ],
-    "ru": [
-      "стать соседями и обмениваться маршрутами"
-    ]
-  },
-  {
-    "time": [
-      406.0,
-      416.0
+      406.384319,
+      409.027444
     ],
     "en": [
       "then I'll check the route table"
@@ -1393,11 +1153,11 @@ let objs = [
   },
   {
     "time": [
-      416.0,
-      419.0
+      409.027444,
+      418.698631
     ],
     "en": [
-      "okay let's check that routing table do"
+      "okay let's check that routing table"
     ],
     "ru": [
       "хорошо, давайте проверим эту таблицу маршрутизации"
@@ -1405,20 +1165,20 @@ let objs = [
   },
   {
     "time": [
-      419.0,
-      426.0
+      418.698631,
+      422.212756
     ],
     "en": [
-      "show IP route"
+      "do show IP route"
     ],
     "ru": [
-      "показать IP-маршрут"
+      "показывать IP-маршрут"
     ]
   },
   {
     "time": [
-      426.0,
-      430.0
+      422.212756,
+      431.228819
     ],
     "en": [
       "there's the 192.168.1.0 slash 24 network"
@@ -1429,140 +1189,152 @@ let objs = [
   },
   {
     "time": [
-      430.0,
-      434.0
+      431.228819,
+      433.378714
     ],
     "en": [
-      "which are two learned from our one do"
+      "which are two learned from our one"
     ],
     "ru": [
-      "которые два извлечены из нашего сделать"
+      "которые два извлечены из нашего"
     ]
   },
   {
     "time": [
-      434.0,
-      439.0
+      433.378714,
+      436.870505
     ],
     "en": [
-      "show IP ospf neighbor there's our one"
+      "do show IP ospf neighbor"
     ],
     "ru": [
-      "покажи IP соседа ospf вот и наш"
+      "показывать IP-адрес соседа ospf"
     ]
   },
   {
     "time": [
-      439.0,
-      441.0
+      436.870505,
+      439.802859
     ],
     "en": [
-      "and the neighbor state is full as"
+      "there's our one"
     ],
     "ru": [
-      "и соседнее состояние заполнено как"
+      "вот наш"
     ]
   },
   {
     "time": [
-      441.0,
-      445.0
+      439.802859,
+      442.616589
     ],
     "en": [
-      "expected okay that's all for the"
+      "and the neighbor state is full as expected"
     ],
     "ru": [
-      "ожидал хорошо, это все для"
+      "и соседнее состояние заполнено, как ожидалось"
     ]
   },
   {
     "time": [
-      445.0,
-      448.0
+      442.616589,
+      447.864255
     ],
     "en": [
-      "configuration of Enterprise a let's go"
+      "okay that's all for the configuration of Enterprise a"
     ],
     "ru": [
-      "конфигурация Enterprise а поехали"
+      "хорошо, это все, что касается конфигурации Enterprise a"
     ]
   },
   {
     "time": [
-      448.0,
-      451.0
+      447.864255,
+      450.057297
     ],
     "en": [
-      "to enterprise be the first requirement"
+      "let's go to enterprise be"
     ],
     "ru": [
-      "к предприятию быть первым требованием"
+      "пойдем на предприятие быть"
     ]
   },
   {
     "time": [
-      451.0,
-      454.0
+      450.057297,
+      456.117192
     ],
     "en": [
-      "is to configure PPP with chap"
+      "the first requirement is to configure PPP with chap authentication"
     ],
     "ru": [
-      "это настроить PPP с помощью chap"
+      "первое требование - настроить PPP с аутентификацией chap"
     ]
   },
   {
     "time": [
-      454.0,
-      458.0
+      456.117192,
+      457.822338
     ],
     "en": [
-      "authentication to connect to the ISP the"
+      "to connect to the ISP"
     ],
     "ru": [
-      "аутентификация для подключения к интернет-провайдеру"
+      "подключиться к провайдеру"
     ]
   },
   {
     "time": [
-      458.0,
-      461.0
+      457.822338,
+      460.996025
     ],
     "en": [
-      "ISP side is already configured so let's"
+      "the ISP side is already configured"
     ],
     "ru": [
-      "Сторона интернет-провайдера уже настроена, поэтому давайте"
+      "сторона ISP уже настроена"
     ]
   },
   {
     "time": [
-      461.0,
-      468.0
+      460.996025,
+      462.654941
     ],
     "en": [
-      "go on our three enable first let's just"
+      "so let's go on our three"
     ],
     "ru": [
-      "сначала включите наши три, давайте просто"
+      "так что давайте продолжим наши три"
     ]
   },
   {
     "time": [
-      468.0,
-      471.0
+      462.654941,
+      466.640399
     ],
     "en": [
-      "confirm that we can't ping the ISP yet"
+      "enable"
     ],
     "ru": [
-      "Подтвердите, что мы еще не можем проверить связь с интернет-провайдером"
+      "включить"
     ]
   },
   {
     "time": [
-      471.0,
-      480.0
+      466.640399,
+      471.146628
+    ],
+    "en": [
+      "first let's just confirm that we can't ping the ISP yet"
+    ],
+    "ru": [
+      "сначала давайте просто подтвердим, что мы еще не можем проверить связь с интернет-провайдером"
+    ]
+  },
+  {
+    "time": [
+      471.146628,
+      475.703024
     ],
     "en": [
       "ping two oh three oh one one three nine"
@@ -1573,344 +1345,356 @@ let objs = [
   },
   {
     "time": [
-      480.0,
-      485.0
+      475.703024,
+      482.326024
     ],
     "en": [
-      "okay it doesn't work coffee tea we're"
+      "okay it doesn't work"
     ],
     "ru": [
-      "хорошо это не работает кофе чай мы"
+      "хорошо, это не работает"
     ]
   },
   {
     "time": [
-      485.0,
-      487.0
+      482.326024,
+      484.003919
     ],
     "en": [
-      "going to use chap authentication so for"
+      "coffee tea"
     ],
     "ru": [
-      "собираюсь использовать аутентификацию парня, поэтому для"
+      "кофе чай"
     ]
   },
   {
     "time": [
-      487.0,
-      489.0
+      484.003919,
+      487.146169
     ],
     "en": [
-      "that we need to configure a user account"
+      "we're going to use chap authentication"
     ],
     "ru": [
-      "что нам нужно настроить учетную запись пользователя"
+      "мы собираемся использовать аутентификацию парня"
     ]
   },
   {
     "time": [
-      489.0,
-      492.0
+      487.146169,
+      491.023669
     ],
     "en": [
-      "here on r3 which uses the hostname of"
+      "so for that we need to configure a user account here on r3"
     ],
     "ru": [
-      "здесь, на r3, который использует имя хоста"
+      "поэтому для этого нам нужно настроить учетную запись пользователя здесь, на r3"
     ]
   },
   {
     "time": [
-      492.0,
-      496.0
+      491.023669,
+      494.208002
     ],
     "en": [
-      "the remote host in this case ISP and a"
+      "which uses the hostname of the remote host"
     ],
     "ru": [
-      "удаленный хост в этом случае ISP и"
+      "который использует имя удаленного хоста"
     ]
   },
   {
     "time": [
-      496.0,
-      498.0
+      494.208002,
+      496.229544
     ],
     "en": [
-      "password which is the same between the"
+      "in this case ISP"
     ],
     "ru": [
-      "пароль, который совпадает между"
+      "в этом случае интернет-провайдер"
     ]
   },
   {
     "time": [
-      498.0,
-      504.0
+      496.229544,
+      499.770398
     ],
     "en": [
-      "two routers in this case CCNA so user"
+      "and a password which is the same between the two routers"
     ],
     "ru": [
-      "два маршрутизатора в данном случае CCNA, поэтому пользователь"
+      "и пароль, который одинаков для двух маршрутизаторов"
     ]
   },
   {
     "time": [
-      504.0,
-      510.0
+      499.770398,
+      502.415939
     ],
     "en": [
-      "name is P password CCNA now let's"
+      "in this case CCNA"
     ],
     "ru": [
-      "имя P пароль CCNA теперь давайте"
+      "в этом случае CCNA"
     ]
   },
   {
     "time": [
-      510.0,
-      514.0
+      502.415939,
+      508.795127
     ],
     "en": [
-      "configure the interface interface s 0 0"
+      "so user name is P password CCNA"
     ],
     "ru": [
-      "настроить интерфейсный интерфейс s 0 0"
+      "поэтому имя пользователя - P пароль CCNA"
     ]
   },
   {
     "time": [
-      514.0,
-      517.0
+      508.795127,
+      512.301856
     ],
     "en": [
-      ""
+      "now let's configure the interface"
     ],
     "ru": [
-      ""
+      "теперь настроим интерфейс"
     ]
   },
   {
     "time": [
-      514.0,
-      517.0
+      512.301856,
+      516.79671
     ],
     "en": [
-      ""
+      "interface s 0 0 0"
     ],
     "ru": [
-      ""
+      "интерфейс s 0 0 0"
     ]
   },
   {
     "time": [
-      517.0,
-      520.0
+      516.79671,
+      519.395377
     ],
     "en": [
-      "as I configure it then enable it when"
+      "I'm going to shut down the interface as I configure it"
     ],
     "ru": [
-      "когда я его настраиваю, включите его, когда"
+      "Я собираюсь закрыть интерфейс, пока настраиваю его."
     ]
   },
   {
     "time": [
-      520.0,
-      522.0
+      519.395377,
+      520.944106
     ],
     "en": [
-      "I'm done that can help the interface"
+      "then enable it when I'm done"
     ],
     "ru": [
-      "Я сделал это может помочь интерфейс"
+      "затем включите его, когда я закончу"
     ]
   },
   {
     "time": [
-      522.0,
-      528.0
+      520.944106,
+      523.981335
     ],
     "en": [
-      "come up quicker shutdown okay first set"
+      "that can help the interface come up quicker"
     ],
     "ru": [
-      "приходите быстрее выключение хорошо первый набор"
+      "это может помочь быстрее найти интерфейс"
     ]
   },
   {
     "time": [
-      528.0,
-      533.0
+      523.981335,
+      525.837585
     ],
     "en": [
-      "the encapsulation encapsulation PPP then"
+      "shutdown"
     ],
     "ru": [
-      "инкапсуляция инкапсуляция PPP, затем"
+      "неисправность"
     ]
   },
   {
     "time": [
-      533.0,
-      536.0
+      525.837585,
+      529.471647
     ],
     "en": [
-      "set the authentication PPP"
+      "okay first set the encapsulation"
     ],
     "ru": [
-      "установить аутентификацию PPP"
+      "хорошо, сначала установите инкапсуляцию"
     ]
   },
   {
     "time": [
-      536.0,
-      540.0
+      529.471647,
+      532.606043
     ],
     "en": [
-      "authentication chap that's all there is"
+      "encapsulation PPP"
     ],
     "ru": [
-      "парень аутентификации, вот и все, что есть"
+      "инкапсуляция PPP"
     ]
   },
   {
     "time": [
-      540.0,
-      544.0
+      532.606043,
+      535.12871
     ],
     "en": [
-      "to it no shutdown okay let's wait a few"
+      "then set the authentication"
     ],
     "ru": [
-      "к нему нет выключения, ладно, подождем несколько"
+      "затем установите аутентификацию"
     ]
   },
   {
     "time": [
-      544.0,
-      549.0
+      535.12871,
+      538.345814
     ],
     "en": [
-      "seconds"
+      "PPP authentication chap"
     ],
     "ru": [
-      "секунды"
+      "Глава об аутентификации PPP"
     ]
   },
   {
     "time": [
-      549.0,
-      554.0
+      538.345814,
+      541.160189
     ],
     "en": [
-      "okay and let's try a ping do ping 2 O 3"
+      "that's all there is to it"
     ],
     "ru": [
-      "хорошо и давай попробуем пинг сделать пинг 2 O 3"
+      "это все, что нужно для этого"
     ]
   },
   {
     "time": [
-      554.0,
-      562.0
+      541.160189,
+      542.252001
     ],
     "en": [
-      ""
+      "no shutdown"
     ],
     "ru": [
-      ""
+      "нет выключения"
     ]
   },
   {
     "time": [
-      554.0,
-      562.0
+      542.252001,
+      545.299855
     ],
     "en": [
-      ""
+      "okay let's wait a few seconds"
     ],
     "ru": [
-      ""
+      "хорошо, подождем несколько секунд"
     ]
   },
   {
     "time": [
-      562.0,
-      567.0
+      545.299855,
+      551.841939
     ],
     "en": [
-      "okay now the ping works next let's"
+      "okay and let's try a ping"
     ],
     "ru": [
-      "хорошо, теперь пинг работает, давай"
+      "хорошо и давай попробуем пинг"
     ]
   },
   {
     "time": [
-      567.0,
-      571.0
+      551.841939,
+      557.350626
     ],
     "en": [
-      "configure a EIGRP on r3 and r4 I'll"
+      "do ping 2 O 3 0 1 1 3 9"
     ],
     "ru": [
-      "настроить EIGRP на r3 и r4, я"
+      "сделать пинг 2 O 3 0 1 1 3 9"
     ]
   },
   {
     "time": [
-      571.0,
-      576.0
+      557.350626,
+      564.332209
     ],
     "en": [
-      "start here on r3 router AIG RP 100"
+      "okay now the ping works"
     ],
     "ru": [
-      "старт здесь на роутере r3 AIG RP 100"
+      "хорошо, теперь пинг работает"
     ]
   },
   {
     "time": [
-      576.0,
-      580.0
+      564.332209,
+      570.556334
     ],
     "en": [
-      "remember the EIG our pas number has to"
+      "next let's configure a EIGRP on r3 and r4"
     ],
     "ru": [
-      "помните EIG, наш номер pas должен"
+      "Затем давайте настроим EIGRP на r3 и r4"
     ]
   },
   {
     "time": [
-      580.0,
-      581.0
+      570.556334,
+      572.913522
     ],
     "en": [
-      "be the same on routers for them to"
+      "I'll start here on r3"
     ],
     "ru": [
-      "быть таким же на роутерах, чтобы они"
+      "Я начну здесь на r3"
     ]
   },
   {
     "time": [
-      581.0,
-      584.0
+      572.913522,
+      576.459563
     ],
     "en": [
-      "become a EIGRP neighbors"
+      "router AIG RP 100"
     ],
     "ru": [
-      "стать соседями EIGRP"
+      "роутер AIG RP 100"
     ]
   },
   {
     "time": [
-      584.0,
-      587.0
+      576.459563,
+      583.361688
+    ],
+    "en": [
+      "remember the EIG our pas number has to be the same on routers for them to become a EIGRP neighbors"
+    ],
+    "ru": [
+      "помните, что EIG наш номер pas должен быть одинаковым на маршрутизаторах, чтобы они стали соседями EIGRP"
+    ]
+  },
+  {
+    "time": [
+      583.361688,
+      586.782188
     ],
     "en": [
       "now let's advertise these networks"
@@ -1921,368 +1705,284 @@ let objs = [
   },
   {
     "time": [
-      587.0,
-      596.0
+      586.782188,
+      593.713834
     ],
     "en": [
-      "network 203 o d11 38000 3 network"
+      "network 203 o d11 38000 3"
     ],
     "ru": [
-      "сеть 203 o d11 38000 3 сеть"
+      "сеть 203 o d11 38000 3"
     ]
   },
   {
     "time": [
-      596.0,
-      605.0
+      593.713834,
+      602.397855
     ],
     "en": [
-      ""
+      "network 192.168.0 oh-oh-oh 255"
     ],
     "ru": [
-      ""
+      "сеть 192.168.0 ой-ой-ой 255"
     ]
   },
   {
     "time": [
-      596.0,
-      605.0
+      602.397855,
+      608.247459
     ],
     "en": [
-      ""
+      "network 192.168.0 oh-oh-oh 255"
     ],
     "ru": [
-      ""
+      "сеть 192.168.0 ой-ой-ой 255"
     ]
   },
   {
     "time": [
-      605.0,
-      611.0
+      608.247459,
+      613.748167
     ],
     "en": [
-      "oh-oh-oh 255 let's make our threes s 0 0"
+      "let's make our threes s 0 0 0 interface passive"
     ],
     "ru": [
-      "ой-ой-ой 255 давай сделаем наши тройки s 0 0"
+      "сделаем наши тройки s 0 0 0 интерфейс пассивными"
     ]
   },
   {
     "time": [
-      611.0,
-      615.0
+      613.748167,
+      617.793209
     ],
     "en": [
-      ""
+      "since no EIGRP neighbors are connected to that interface"
     ],
     "ru": [
-      ""
+      "поскольку к этому интерфейсу не подключены соседи EIGRP"
     ]
   },
   {
     "time": [
-      611.0,
-      615.0
+      617.793209,
+      621.63625
     ],
     "en": [
-      ""
+      "passive interface s0 0 0"
     ],
     "ru": [
-      ""
+      "пассивный интерфейс s0 0 0"
     ]
   },
   {
     "time": [
-      615.0,
-      616.0
+      621.63625,
+      624.524521
     ],
     "en": [
-      "neighbors are connected to that"
+      "now let's configure our for"
     ],
     "ru": [
-      "соседи связаны с этим"
+      "теперь давайте настроим наш для"
     ]
   },
   {
     "time": [
-      616.0,
-      622.0
+      624.524521,
+      632.749167
     ],
     "en": [
-      "interface passive interface s0 0 0 now"
+      "enable call for t router IG RP 100"
     ],
     "ru": [
-      "интерфейс пассивный интерфейс s0 0 0 сейчас"
+      "включить вызов для маршрутизатора IG RP 100"
     ]
   },
   {
     "time": [
-      622.0,
-      628.0
+      632.749167,
+      639.904188
     ],
     "en": [
-      "let's configure our for enable call for"
+      "network 192.168.0.0 255"
     ],
     "ru": [
-      "давайте настроим наш для включения вызова для"
+      "сеть 192.168.0.0 255"
     ]
   },
   {
     "time": [
-      628.0,
-      638.0
+      639.904188,
+      645.939313
     ],
     "en": [
-      "t router IG RP 100 network 192.168.0.0"
+      "network 192.168.0.0 255"
     ],
     "ru": [
-      "t маршрутизатор IG RP 100 сеть 192.168.0.0"
+      "сеть 192.168.0.0 255"
     ]
   },
   {
     "time": [
-      638.0,
-      648.0
+      645.939313,
+      651.988292
     ],
     "en": [
-      ""
+      "ok let's check if our 4 has learned ew g RP routes from r3"
     ],
     "ru": [
-      ""
+      "хорошо, давайте проверим, узнали ли наши 4 маршруты ew g RP от r3"
     ]
   },
   {
     "time": [
-      638.0,
-      648.0
+      651.988292,
+      654.72298
     ],
     "en": [
-      ""
+      "do show IP route"
     ],
     "ru": [
-      ""
+      "показывать IP-маршрут"
     ]
   },
   {
     "time": [
-      648.0,
-      650.0
+      654.72298,
+      662.410708
     ],
     "en": [
-      "check if our 4 has learned ew g RP"
+      "there we go 192.168 300 our threes internal network"
     ],
     "ru": [
-      "проверьте, изучил ли наш 4 новый RP"
+      "поехали 192.168 300 наша тройка внутренняя сеть"
     ]
   },
   {
     "time": [
-      650.0,
-      657.0
+      662.410708,
+      668.841812
     ],
     "en": [
-      "routes from r3 do show IP route there we"
+      "and 203 o 1 1 3 8 the internet segment from r3 to ISP"
     ],
     "ru": [
-      "маршруты от r3 действительно показывают IP-маршрут, мы"
+      "и 203 o 1 1 3 8 интернет-сегмент от r3 до провайдера"
     ]
   },
   {
     "time": [
-      657.0,
-      661.0
+      668.841812,
+      673.301478
     ],
     "en": [
-      "go 192.168 300 our threes internal"
+      "let's try a ping from pc 4 to pc 3"
     ],
     "ru": [
-      "иди 192.168 300 наши тройки внутренние"
+      "давайте попробуем пинг с пк 4 на пк 3"
     ]
   },
   {
     "time": [
-      661.0,
-      666.0
+      673.301478,
+      678.793978
     ],
     "en": [
-      "network and 203 o 1 1 3 8 the internet"
+      "now that our four knows the route to 192.168.0"
     ],
     "ru": [
-      "сеть и 203 o 1 1 3 8 Интернет"
+      "теперь, когда наша четверка знает путь к 192.168.0"
     ]
   },
   {
     "time": [
-      666.0,
-      671.0
+      678.793978,
+      683.789228
     ],
     "en": [
-      "segment from r3 to ISP let's try a ping"
+      "ping 192.168.1 hundred"
     ],
     "ru": [
-      "сегмент от r3 до ISP попробуем пинг"
+      "пинг 192.168.1 сотки"
     ]
   },
   {
     "time": [
-      671.0,
-      673.0
+      683.789228,
+      690.328041
     ],
     "en": [
-      "from pc 4 to pc 3"
+      "okay the ping works"
     ],
     "ru": [
-      "от ПК 4 до ПК 3"
+      "хорошо, пинг работает"
     ]
   },
   {
     "time": [
-      673.0,
-      676.0
+      690.328041,
+      697.471937
     ],
     "en": [
-      "now that our four knows the route to"
+      "finally let's configure ebgp on r3 to connect to the internet"
     ],
     "ru": [
-      "теперь, когда наша четверка знает путь к"
+      "наконец, давайте настроим ebgp на r3 для подключения к Интернету"
     ]
   },
   {
     "time": [
-      676.0,
-      679.0
+      697.471937,
+      701.234041
     ],
     "en": [
-      ""
+      "rather than the static road method we used on r1 and r2"
     ],
     "ru": [
-      ""
+      "вместо метода статической дороги, который мы использовали на r1 и r2"
     ]
   },
   {
     "time": [
-      676.0,
-      679.0
+      701.234041,
+      708.61452
     ],
     "en": [
-      ""
+      "note that Enterprise B uses BGP a s 65,000"
     ],
     "ru": [
-      ""
+      "обратите внимание, что предприятие B использует BGP на 65 000"
     ]
   },
   {
     "time": [
-      679.0,
-      689.0
+      708.61452,
+      711.696333
     ],
     "en": [
-      "ping 192.168.1 hundred okay the ping"
+      "and the ISP uses 65,000 won"
     ],
     "ru": [
-      "пинг 192.168.1 сотня ладно пинг"
+      "а интернет-провайдер использует 65 000 вон"
     ]
   },
   {
     "time": [
-      689.0,
-      690.0
+      711.696333,
+      713.435228
     ],
     "en": [
-      "works"
+      "okay let's get started"
     ],
     "ru": [
-      "работает"
+      "хорошо, давай начнем"
     ]
   },
   {
     "time": [
-      690.0,
-      695.0
-    ],
-    "en": [
-      "finally let's configure ebgp on r3 to"
-    ],
-    "ru": [
-      "наконец, давайте настроим ebgp на r3, чтобы"
-    ]
-  },
-  {
-    "time": [
-      695.0,
-      698.0
-    ],
-    "en": [
-      "connect to the internet rather than the"
-    ],
-    "ru": [
-      "подключиться к Интернету, а не"
-    ]
-  },
-  {
-    "time": [
-      698.0,
-      701.0
-    ],
-    "en": [
-      "static road method we used on r1 and r2"
-    ],
-    "ru": [
-      "статический метод дороги, который мы использовали на r1 и r2"
-    ]
-  },
-  {
-    "time": [
-      701.0,
-      706.0
-    ],
-    "en": [
-      "note that Enterprise B uses BGP a s"
-    ],
-    "ru": [
-      "обратите внимание, что Enterprise B использует BGP as"
-    ]
-  },
-  {
-    "time": [
-      706.0,
-      712.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      706.0,
-      712.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      712.0,
-      715.0
-    ],
-    "en": [
-      "let's get started"
-    ],
-    "ru": [
-      "Давайте начнем"
-    ]
-  },
-  {
-    "time": [
-      715.0,
-      720.0
+      713.435228,
+      720.086312
     ],
     "en": [
       "router bgp 65,000"
@@ -2293,20 +1993,32 @@ let objs = [
   },
   {
     "time": [
-      720.0,
-      724.0
+      720.086312,
+      723.137437
     ],
     "en": [
-      "now let's specify the neighbor neighbor"
+      "now let's specify the neighbor"
     ],
     "ru": [
-      "теперь давайте укажем соседа соседа"
+      "теперь давайте укажем соседа"
     ]
   },
   {
     "time": [
-      724.0,
-      729.0
+      723.137437,
+      729.770478
+    ],
+    "en": [
+      "neighbor 200-300 one one three nine remote a s"
+    ],
+    "ru": [
+      "сосед 200-300 один, один, три, девять, удаленный, а с"
+    ]
+  },
+  {
+    "time": [
+      729.770478,
+      731.731269
     ],
     "en": [
       ""
@@ -2317,8 +2029,8 @@ let objs = [
   },
   {
     "time": [
-      724.0,
-      729.0
+      729.770478,
+      731.731269
     ],
     "en": [
       ""
@@ -2329,8 +2041,404 @@ let objs = [
   },
   {
     "time": [
-      729.0,
-      734.0
+      731.731269,
+      735.318644
+    ],
+    "en": [
+      "also let's advertise our internal networks"
+    ],
+    "ru": [
+      "также давайте прорекламируем наши внутренние сети"
+    ]
+  },
+  {
+    "time": [
+      735.318644,
+      743.329686
+    ],
+    "en": [
+      "network 192.168.0 mask 255.255.255.0"
+    ],
+    "ru": [
+      "сеть 192.168.0 маска 255.255.255.0"
+    ]
+  },
+  {
+    "time": [
+      743.329686,
+      748.427894
+    ],
+    "en": [
+      "remember that bgp uses a standard network mask"
+    ],
+    "ru": [
+      "помните, что bgp использует стандартную сетевую маску"
+    ]
+  },
+  {
+    "time": [
+      748.427894,
+      749.831852
+    ],
+    "en": [
+      "not a wildcard mask"
+    ],
+    "ru": [
+      "не подстановочная маска"
+    ]
+  },
+  {
+    "time": [
+      749.831852,
+      758.299706
+    ],
+    "en": [
+      "network 192.168.0 mask 255.255.255.0"
+    ],
+    "ru": [
+      "сеть 192.168.0 маска 255.255.255.0"
+    ]
+  },
+  {
+    "time": [
+      758.299706,
+      766.809665
+    ],
+    "en": [
+      "network 192.168.0 mask 255.255.255.0"
+    ],
+    "ru": [
+      "сеть 192.168.0 маска 255.255.255.0"
+    ]
+  },
+  {
+    "time": [
+      766.809665,
+      770.023186
+    ],
+    "en": [
+      "okay that's all for BGP"
+    ],
+    "ru": [
+      "хорошо, это все для BGP"
+    ]
+  },
+  {
+    "time": [
+      770.023186,
+      776.803456
+    ],
+    "en": [
+      "now step four asks why PC one can't ping PC for"
+    ],
+    "ru": [
+      "Теперь на четвертом шаге спрашивается, почему ПК нельзя пинговать"
+    ]
+  },
+  {
+    "time": [
+      776.803456,
+      780.330769
+    ],
+    "en": [
+      "let's confirm and try that ping from pc1"
+    ],
+    "ru": [
+      "давайте подтвердим и попробуем этот пинг от pc1"
+    ]
+  },
+  {
+    "time": [
+      780.330769,
+      787.242769
+    ],
+    "en": [
+      "ping 192.168.1 hundred"
+    ],
+    "ru": [
+      "пинг 192.168.1 сотки"
+    ]
+  },
+  {
+    "time": [
+      787.242769,
+      795.267144
+    ],
+    "en": [
+      "indeed the ping fails"
+    ],
+    "ru": [
+      "действительно пинг не работает"
+    ]
+  },
+  {
+    "time": [
+      795.267144,
+      800.142102
+    ],
+    "en": [
+      "we're given a hint to look on our four so let's go on our four"
+    ],
+    "ru": [
+      "нам подсказали взглянуть на нашу четверку, так что давайте перейдем к нашей четверке"
+    ]
+  },
+  {
+    "time": [
+      800.142102,
+      804.171497
+    ],
+    "en": [
+      "what do you think would be the most obvious issue"
+    ],
+    "ru": [
+      "как вы думаете, что было бы наиболее очевидной проблемой"
+    ]
+  },
+  {
+    "time": [
+      804.171497,
+      808.186185
+    ],
+    "en": [
+      "how about no route to PC one"
+    ],
+    "ru": [
+      "как насчет пути к ПК один"
+    ]
+  },
+  {
+    "time": [
+      808.186185,
+      810.959914
+    ],
+    "en": [
+      "do show IP route"
+    ],
+    "ru": [
+      "показывать IP-маршрут"
+    ]
+  },
+  {
+    "time": [
+      810.959914,
+      819.452247
+    ],
+    "en": [
+      "as you can see our four has no route to the 192.168.1.0 slash 24 network"
+    ],
+    "ru": [
+      "как вы можете видеть, у нашей четверки нет маршрута к сети 192.168.1.0 slash 24"
+    ]
+  },
+  {
+    "time": [
+      819.452247,
+      822.622227
+    ],
+    "en": [
+      "or any other network beyond our three"
+    ],
+    "ru": [
+      "или любой другой сети за пределами наших трех"
+    ]
+  },
+  {
+    "time": [
+      822.622227,
+      830.11381
+    ],
+    "en": [
+      "usually I'd configure ibgp or route redistribution into EIGRP"
+    ],
+    "ru": [
+      "обычно я настраивал ibgp или перераспределение маршрутов в EIGRP"
+    ]
+  },
+  {
+    "time": [
+      830.11381,
+      832.18656
+    ],
+    "en": [
+      "but those are more advanced topics"
+    ],
+    "ru": [
+      "но это более сложные темы"
+    ]
+  },
+  {
+    "time": [
+      832.18656,
+      835.311268
+    ],
+    "en": [
+      "let's use the simplest solution"
+    ],
+    "ru": [
+      "давайте воспользуемся самым простым решением"
+    ]
+  },
+  {
+    "time": [
+      835.311268,
+      837.911435
+    ],
+    "en": [
+      "a static route pointing to our three"
+    ],
+    "ru": [
+      "статический маршрут, указывающий на наши три"
+    ]
+  },
+  {
+    "time": [
+      837.911435,
+      850.03658
+    ],
+    "en": [
+      "exit IP route oh-oh-oh-oh oh-oh-oh-oh 192.168.1"
+    ],
+    "ru": [
+      "выход IP-маршрута ой-ой-ой-ой ой-ой-ой-ой 192.168.1"
+    ]
+  },
+  {
+    "time": [
+      850.03658,
+      852.597185
+    ],
+    "en": [
+      "okay that's it"
+    ],
+    "ru": [
+      "хорошо, вот и все"
+    ]
+  },
+  {
+    "time": [
+      852.597185,
+      855.210289
+    ],
+    "en": [
+      "let's try that ping again from pc1"
+    ],
+    "ru": [
+      "давайте попробуем этот пинг еще раз с pc1"
+    ]
+  },
+  {
+    "time": [
+      855.210289,
+      860.666185
+    ],
+    "en": [
+      "ping 192.168.1 hundred"
+    ],
+    "ru": [
+      "пинг 192.168.1 сотки"
+    ]
+  },
+  {
+    "time": [
+      860.666185,
+      872.834289
+    ],
+    "en": [
+      "okay the pings work now"
+    ],
+    "ru": [
+      "хорошо, пинги теперь работают"
+    ]
+  },
+  {
+    "time": [
+      872.834289,
+      880.896705
+    ],
+    "en": [
+      "in this lab we configured BGP OSPF EIGRP GRE and PPP"
+    ],
+    "ru": [
+      "в этой лабораторной работе мы настроили BGP OSPF EIGRP GRE и PPP"
+    ]
+  },
+  {
+    "time": [
+      880.896705,
+      884.82233
+    ],
+    "en": [
+      "some of the major topics of the icnd2 exam"
+    ],
+    "ru": [
+      "некоторые из основных тем экзамена icnd2"
+    ]
+  },
+  {
+    "time": [
+      884.82233,
+      886.647934
+    ],
+    "en": [
+      "that's all for this lab"
+    ],
+    "ru": [
+      "это все для этой лаборатории"
+    ]
+  },
+  {
+    "time": [
+      886.647934,
+      894.804142
+    ],
+    "en": [
+      "thank you for watching I hope this lab and video have been helpful for you"
+    ],
+    "ru": [
+      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были для вас полезны."
+    ]
+  },
+  {
+    "time": [
+      894.804142,
+      902.520392
+    ],
+    "en": [
+      "there is only one more lab left in my CCNA series but please subscribe to catch my next project"
+    ],
+    "ru": [
+      "В моей серии CCNA осталась только одна лаборатория, но, пожалуйста, подпишитесь, чтобы увидеть мой следующий проект"
+    ]
+  },
+  {
+    "time": [
+      902.520392,
+      908.283371
+    ],
+    "en": [
+      "if you want to support my channel I accept cryptocurrency donations via the addresses in the description"
+    ],
+    "ru": [
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в криптовалюте по адресам в описании"
+    ]
+  },
+  {
+    "time": [
+      908.283371,
+      917.541642
+    ],
+    "en": [
+      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
+    ],
+    "ru": [
+      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
+    ]
+  },
+  {
+    "time": [
+      917.541642,
+      917.541642
     ],
     "en": [
       ""
@@ -2341,8 +2449,8 @@ let objs = [
   },
   {
     "time": [
-      729.0,
-      734.0
+      917.541642,
+      917.541642
     ],
     "en": [
       ""
@@ -2353,530 +2461,14 @@ let objs = [
   },
   {
     "time": [
-      734.0,
-      740.0
-    ],
-    "en": [
-      "internal networks network 192.168.0 mask"
-    ],
-    "ru": [
-      "внутренние сети сеть 192.168.0 маска"
-    ]
-  },
-  {
-    "time": [
-      740.0,
-      744.0
+      917.541642,
+      917.541642
     ],
     "en": [
       ""
     ],
     "ru": [
       ""
-    ]
-  },
-  {
-    "time": [
-      740.0,
-      744.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      744.0,
-      746.0
-    ],
-    "en": [
-      "remember that bgp uses a standard"
-    ],
-    "ru": [
-      "помните, что bgp использует стандартный"
-    ]
-  },
-  {
-    "time": [
-      746.0,
-      753.0
-    ],
-    "en": [
-      "network mask not a wildcard mask network"
-    ],
-    "ru": [
-      "сетевая маска не подстановочная маска сеть"
-    ]
-  },
-  {
-    "time": [
-      753.0,
-      761.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      753.0,
-      761.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      761.0,
-      768.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      761.0,
-      768.0
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      768.0,
-      774.0
-    ],
-    "en": [
-      "all for BGP now step four asks why PC"
-    ],
-    "ru": [
-      "все для BGP, теперь на четвертом шаге спрашивается, почему ПК"
-    ]
-  },
-  {
-    "time": [
-      774.0,
-      778.0
-    ],
-    "en": [
-      "one can't ping PC for let's confirm and"
-    ],
-    "ru": [
-      "нельзя пинговать компьютер, давайте подтвердим и"
-    ]
-  },
-  {
-    "time": [
-      778.0,
-      786.0
-    ],
-    "en": [
-      "try that ping from pc1 ping 192.168.1"
-    ],
-    "ru": [
-      "попробуйте этот пинг с pc1 ping 192.168.1"
-    ]
-  },
-  {
-    "time": [
-      786.0,
-      793.0
-    ],
-    "en": [
-      "hundred"
-    ],
-    "ru": [
-      "сотня"
-    ]
-  },
-  {
-    "time": [
-      793.0,
-      796.0
-    ],
-    "en": [
-      "indeed the ping fails we're given a hint"
-    ],
-    "ru": [
-      "действительно, пинг не работает, нам дали подсказку"
-    ]
-  },
-  {
-    "time": [
-      796.0,
-      799.0
-    ],
-    "en": [
-      "to look on our four so let's go on our"
-    ],
-    "ru": [
-      "посмотреть на нашу четверку, так что давайте продолжим"
-    ]
-  },
-  {
-    "time": [
-      799.0,
-      802.0
-    ],
-    "en": [
-      "four what do you think would be the most"
-    ],
-    "ru": [
-      "четыре, как вы думаете, было бы наиболее"
-    ]
-  },
-  {
-    "time": [
-      802.0,
-      807.0
-    ],
-    "en": [
-      "obvious issue how about no route to PC"
-    ],
-    "ru": [
-      "очевидная проблема, как насчет отсутствия маршрута к ПК"
-    ]
-  },
-  {
-    "time": [
-      807.0,
-      813.0
-    ],
-    "en": [
-      "one do show IP route as you can see our"
-    ],
-    "ru": [
-      "один показывает IP-маршрут, как вы можете видеть в нашем"
-    ]
-  },
-  {
-    "time": [
-      813.0,
-      817.0
-    ],
-    "en": [
-      "four has no route to the 192.168.1.0"
-    ],
-    "ru": [
-      "у четырех нет маршрута к 192.168.1.0"
-    ]
-  },
-  {
-    "time": [
-      817.0,
-      820.0
-    ],
-    "en": [
-      "slash 24 network or any other network"
-    ],
-    "ru": [
-      "slash 24 сеть или любая другая сеть"
-    ]
-  },
-  {
-    "time": [
-      820.0,
-      823.0
-    ],
-    "en": [
-      "beyond our three"
-    ],
-    "ru": [
-      "за пределами наших трех"
-    ]
-  },
-  {
-    "time": [
-      823.0,
-      827.0
-    ],
-    "en": [
-      "usually I'd configure ibgp or route"
-    ],
-    "ru": [
-      "обычно я настраивал ibgp или маршрут"
-    ]
-  },
-  {
-    "time": [
-      827.0,
-      830.0
-    ],
-    "en": [
-      "redistribution into EIGRP but those are"
-    ],
-    "ru": [
-      "перераспределение в EIGRP, но это"
-    ]
-  },
-  {
-    "time": [
-      830.0,
-      833.0
-    ],
-    "en": [
-      "more advanced topics let's use the"
-    ],
-    "ru": [
-      "более сложные темы, давайте воспользуемся"
-    ]
-  },
-  {
-    "time": [
-      833.0,
-      836.0
-    ],
-    "en": [
-      "simplest solution a static route"
-    ],
-    "ru": [
-      "простейшее решение статический маршрут"
-    ]
-  },
-  {
-    "time": [
-      836.0,
-      842.0
-    ],
-    "en": [
-      "pointing to our three exit IP route"
-    ],
-    "ru": [
-      "указывая на наши три выходных IP-маршрута"
-    ]
-  },
-  {
-    "time": [
-      842.0,
-      851.0
-    ],
-    "en": [
-      "oh-oh-oh-oh oh-oh-oh-oh 192.168.1 okay"
-    ],
-    "ru": [
-      "ой-ой-ой-ой ой-ой-ой-ой 192.168.1 хорошо"
-    ]
-  },
-  {
-    "time": [
-      851.0,
-      854.0
-    ],
-    "en": [
-      "that's it let's try that ping again from"
-    ],
-    "ru": [
-      "вот и все, давайте попробуем этот пинг еще раз из"
-    ]
-  },
-  {
-    "time": [
-      854.0,
-      869.0
-    ],
-    "en": [
-      "pc1 ping 192.168.1 hundred"
-    ],
-    "ru": [
-      "pc1 пинг 192.168.1 сотня"
-    ]
-  },
-  {
-    "time": [
-      869.0,
-      873.0
-    ],
-    "en": [
-      "okay the pings work now in this lab we"
-    ],
-    "ru": [
-      "Хорошо, теперь пинги работают в этой лаборатории, мы"
-    ]
-  },
-  {
-    "time": [
-      873.0,
-      878.0
-    ],
-    "en": [
-      "configured BGP OSPF EIGRP"
-    ],
-    "ru": [
-      "настроен BGP OSPF EIGRP"
-    ]
-  },
-  {
-    "time": [
-      878.0,
-      882.0
-    ],
-    "en": [
-      "GRE and PPP some of the major topics of"
-    ],
-    "ru": [
-      "GRE и PPP - некоторые из основных тем"
-    ]
-  },
-  {
-    "time": [
-      882.0,
-      889.0
-    ],
-    "en": [
-      "the icnd2 exam that's all for this lab"
-    ],
-    "ru": [
-      "экзамен icnd2 это все для этой лаборатории"
-    ]
-  },
-  {
-    "time": [
-      889.0,
-      892.0
-    ],
-    "en": [
-      "thank you for watching I hope this lab"
-    ],
-    "ru": [
-      "спасибо за просмотр, надеюсь, эта лаборатория"
-    ]
-  },
-  {
-    "time": [
-      892.0,
-      894.0
-    ],
-    "en": [
-      "and video have been helpful for you"
-    ],
-    "ru": [
-      "и видео были для вас полезны"
-    ]
-  },
-  {
-    "time": [
-      894.0,
-      897.0
-    ],
-    "en": [
-      "there is only one more lab left in my"
-    ],
-    "ru": [
-      "осталась только одна лаборатория в моем"
-    ]
-  },
-  {
-    "time": [
-      897.0,
-      900.0
-    ],
-    "en": [
-      "CCNA series but please subscribe to"
-    ],
-    "ru": [
-      "Серия CCNA, но, пожалуйста, подпишитесь на"
-    ]
-  },
-  {
-    "time": [
-      900.0,
-      903.0
-    ],
-    "en": [
-      "catch my next project if you want to"
-    ],
-    "ru": [
-      "поймай мой следующий проект, если хочешь"
-    ]
-  },
-  {
-    "time": [
-      903.0,
-      904.0
-    ],
-    "en": [
-      "support my channel"
-    ],
-    "ru": [
-      "поддержи мой канал"
-    ]
-  },
-  {
-    "time": [
-      904.0,
-      906.0
-    ],
-    "en": [
-      "I accept cryptocurrency donations via"
-    ],
-    "ru": [
-      "Я принимаю пожертвования в криптовалюте через"
-    ]
-  },
-  {
-    "time": [
-      906.0,
-      910.0
-    ],
-    "en": [
-      "the addresses in the description I am"
-    ],
-    "ru": [
-      "адреса в описании я"
-    ]
-  },
-  {
-    "time": [
-      910.0,
-      912.0
-    ],
-    "en": [
-      "also a brave verified publisher and"
-    ],
-    "ru": [
-      "также храбрый проверенный издатель и"
-    ]
-  },
-  {
-    "time": [
-      912.0,
-      915.0
-    ],
-    "en": [
-      "accept bat or basic attention token"
-    ],
-    "ru": [
-      "принять летучую мышь или жетон основного внимания"
-    ]
-  },
-  {
-    "time": [
-      915.0,
-      915.0
-    ],
-    "en": [
-      "donations in the brave browser"
-    ],
-    "ru": [
-      "пожертвования в смелом браузере"
     ]
   }
 ]

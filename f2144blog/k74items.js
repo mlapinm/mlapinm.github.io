@@ -2,1351 +2,1147 @@ let objs = [
   {
     "time": [
       0.0,
-      3.0
+      4.116979
     ],
     "en": [
-      "welcome to this free gns3 lab for the"
+      "welcome to this free gns3 lab for the CCNA"
     ],
     "ru": [
-      "добро пожаловать в эту бесплатную лабораторию gns3 для"
+      "добро пожаловать в эту бесплатную лабораторию gns3 для CCNA"
     ]
   },
   {
     "time": [
-      3.0,
-      6.0
+      4.116979,
+      11.004312
     ],
     "en": [
-      "CCNA once again because packet tracer"
+      "once again because packet tracer doesn't support all of the features necessary for CCNA studies"
     ],
     "ru": [
-      "CCNA еще раз, потому что трассировщик пакетов"
+      "еще раз, потому что трассировщик пакетов не поддерживает все функции, необходимые для исследований CCNA"
     ]
   },
   {
     "time": [
-      6.0,
-      8.0
+      11.004312,
+      14.042499
     ],
     "en": [
-      "doesn't support all of the features"
+      "I have chosen to do this lab in gns3"
     ],
     "ru": [
-      "не поддерживает все функции"
+      "Я решил провести эту лабораторную работу в gns3"
     ]
   },
   {
     "time": [
-      8.0,
-      11.0
+      14.042499,
+      16.053374
     ],
     "en": [
-      "necessary for CCNA studies I have chosen"
+      "rather than just skip the topic"
     ],
     "ru": [
-      "необходимо для изучения CCNA, я выбрал"
+      "а не просто пропустить тему"
     ]
   },
   {
     "time": [
-      11.0,
-      14.0
+      16.053374,
+      19.863707
     ],
     "en": [
-      "to do this lab in gns3 rather than just"
+      "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "выполнить эту лабораторную работу в gns3, а не просто"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
     "time": [
-      14.0,
-      18.0
+      19.863707,
+      24.847978
     ],
     "en": [
-      "skip the topic you can download the lab"
+      "however you will also need the Cisco IOS image to use for these routers"
     ],
     "ru": [
-      "пропустить тему вы можете скачать лабораторию"
+      "однако вам также понадобится образ Cisco IOS для использования с этими маршрутизаторами."
     ]
   },
   {
     "time": [
-      18.0,
-      19.0
+      24.847978,
+      29.970415
     ],
     "en": [
-      "file from the link in the description"
+      "I will include the name of the iOS image I used in the description"
     ],
     "ru": [
-      "файл по ссылке в описании"
+      "Я включу имя изображения iOS, которое я использовал в описании."
     ]
   },
   {
     "time": [
-      19.0,
-      22.0
+      29.970415,
+      33.030707
     ],
     "en": [
-      "however you will also need the Cisco IOS"
+      "however I cannot legally distribute the file itself"
     ],
     "ru": [
-      "однако вам также понадобится Cisco IOS"
+      "однако я не могу законно распространять сам файл"
     ]
   },
   {
     "time": [
-      22.0,
-      26.0
+      33.030707,
+      40.423207
     ],
     "en": [
-      "image to use for these routers I will"
+      "if you like these labs please consider supporting me if you have my patreon or the cryptocurrency options in the description"
     ],
     "ru": [
-      "изображение для этих маршрутизаторов я буду"
+      "если вам нравятся эти лаборатории, подумайте о поддержке меня, если у вас есть мой патреон или варианты криптовалюты в описании"
     ]
   },
   {
     "time": [
-      26.0,
-      28.0
+      40.423207,
+      45.57629
     ],
     "en": [
-      "include the name of the iOS image I used"
+      "also please subscribe to the channel for more labs like this"
     ],
     "ru": [
-      "включить имя изображения iOS, которое я использовал"
+      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторных работ"
     ]
   },
   {
     "time": [
-      28.0,
-      30.0
+      45.57629,
+      49.469436
     ],
     "en": [
-      "in the description however I cannot"
+      "and share these videos with anyone else studying for the CCNA"
     ],
     "ru": [
-      "в описании однако я не могу"
+      "и поделитесь этими видео со всеми, кто учится на CCNA"
     ]
   },
   {
     "time": [
-      30.0,
-      33.0
+      49.469436,
+      54.541894
     ],
     "en": [
-      "legally distribute the file itself if"
+      "in this short lab we will look at IP SLA"
     ],
     "ru": [
-      "законно распространять сам файл, если"
+      "в этой короткой лабораторной работе мы рассмотрим IP SLA."
     ]
   },
   {
     "time": [
-      33.0,
-      36.0
+      54.541894,
+      58.295165
     ],
     "en": [
-      "you like these labs please consider"
+      "SLA stands for service level agreement"
     ],
     "ru": [
-      "Вам нравятся эти лаборатории, пожалуйста, примите во внимание"
+      "SLA означает соглашение об уровне обслуживания"
     ]
   },
   {
     "time": [
-      36.0,
-      37.0
+      58.295165,
+      60.342831
     ],
     "en": [
-      "supporting me if you have my patreon or"
+      "what is an SLA"
     ],
     "ru": [
-      "поддерживая меня, если у вас есть мой патреон или"
+      "что такое SLA"
     ]
   },
   {
     "time": [
-      37.0,
-      39.0
+      60.342831,
+      64.248497
     ],
     "en": [
-      "the cryptocurrency options in the"
+      "it's an agreement between a service provider and a client"
     ],
     "ru": [
-      "варианты криптовалюты в"
+      "это соглашение между поставщиком услуг и клиентом"
     ]
   },
   {
     "time": [
-      39.0,
-      43.0
+      64.248497,
+      69.041435
     ],
     "en": [
-      "description also please subscribe to the"
+      "for example a guarantee of latency or internet speed"
     ],
     "ru": [
-      "описание также подпишитесь на"
+      "например гарантия задержки или скорости интернета"
     ]
   },
   {
     "time": [
-      43.0,
-      45.0
+      69.041435,
+      74.327289
     ],
     "en": [
-      "channel for more labs like this and"
+      "you can configure various IP SLA operations in Cisco IOS"
     ],
     "ru": [
-      "канал для других подобных лабораторий и"
+      "вы можете настроить различные операции IP SLA в Cisco IOS"
     ]
   },
   {
     "time": [
-      45.0,
-      47.0
+      74.327289,
+      80.663956
     ],
     "en": [
-      "share these videos with anyone else"
+      "however for the CCNA you just have to be familiar with the ICMP echo operation"
     ],
     "ru": [
-      "поделитесь этими видео с кем угодно"
+      "однако для CCNA вам просто нужно быть знакомым с операцией эха ICMP"
     ]
   },
   {
     "time": [
-      47.0,
-      51.0
+      80.663956,
+      81.705476
     ],
     "en": [
-      "studying for the CCNA in this short lab"
+      "aka ping"
     ],
     "ru": [
-      "подготовка к CCNA в этой короткой лабораторной работе"
+      "он же пинг"
     ]
   },
   {
     "time": [
-      51.0,
-      56.0
+      81.705476,
+      86.891017
     ],
     "en": [
-      "we will look at IP SLA SLA stands for"
+      "the ICMP echo operation sends pings at regular intervals"
     ],
     "ru": [
-      "мы рассмотрим IP SLA SLA означает"
+      "операция эха ICMP отправляет эхо-запросы через равные промежутки времени"
     ]
   },
   {
     "time": [
-      56.0,
-      59.0
+      86.891017,
+      90.44658
     ],
     "en": [
-      "service level agreement what is an SLA"
+      "and keeps a count of how many succeed and how many fail"
     ],
     "ru": [
-      "соглашение об уровне обслуживания что такое SLA"
+      "и ведет подсчет того, сколько успешных и сколько неудачных"
     ]
   },
   {
     "time": [
-      59.0,
-      62.0
+      90.44658,
+      91.975413
     ],
     "en": [
-      "it's an agreement between a service"
+      "let's get started"
     ],
     "ru": [
-      "это соглашение между сервисом"
+      "Давайте начнем"
     ]
   },
   {
     "time": [
-      62.0,
-      65.0
+      91.975413,
+      95.286184
     ],
     "en": [
-      "provider and a client for example a"
+      "let's hop on our one"
     ],
     "ru": [
-      "провайдер и клиент, например"
+      "давай запрыгнем на наш"
     ]
   },
   {
     "time": [
-      65.0,
-      69.0
+      95.286184,
+      100.252121
     ],
     "en": [
-      "guarantee of latency or internet speed"
+      "I will configure the ICMP echo operation to send pings to our two"
     ],
     "ru": [
-      "гарантия задержки или скорости интернета"
+      "Я настрою операцию эха ICMP, чтобы отправлять пинги нашим двум"
     ]
   },
   {
     "time": [
-      69.0,
-      72.0
+      100.252121,
+      104.473267
     ],
     "en": [
-      "you can configure various IP SLA"
+      "coughed II use the following command"
     ],
     "ru": [
-      "вы можете настроить различные IP SLA"
+      "кашлянул Я использую следующую команду"
     ]
   },
   {
     "time": [
-      72.0,
-      75.0
+      104.473267,
+      108.828517
     ],
     "en": [
-      "operations in Cisco IOS however for the"
+      "IP SLA followed by the operation number"
     ],
     "ru": [
-      "операции в Cisco IOS, однако для"
+      "IP SLA, за которым следует номер операции"
     ]
   },
   {
     "time": [
-      75.0,
-      78.0
+      108.828517,
+      113.709079
     ],
     "en": [
-      "CCNA you just have to be familiar with"
+      "you can configure multiple IP SLA operations on the same device"
     ],
     "ru": [
-      "CCNA, с которой вам просто нужно быть знакомым"
+      "вы можете настроить несколько операций IP SLA на одном устройстве"
     ]
   },
   {
     "time": [
-      78.0,
-      83.0
+      113.709079,
+      116.848892
     ],
     "en": [
-      "the ICMP echo operation aka ping the"
+      "so a number is necessary to identify them"
     ],
     "ru": [
-      "эхо-операция ICMP, известная как ping the"
+      "поэтому номер необходим, чтобы идентифицировать их"
     ]
   },
   {
     "time": [
-      83.0,
-      85.0
+      116.848892,
+      118.257683
     ],
     "en": [
-      "ICMP echo operation sends pings at"
+      "I'll use one"
     ],
     "ru": [
-      "Операция эха ICMP отправляет эхо-запросы на"
+      "Я воспользуюсь одним"
     ]
   },
   {
     "time": [
-      85.0,
-      87.0
+      118.257683,
+      120.781579
     ],
     "en": [
-      "regular intervals and keeps a count of"
+      "and then there are no more options"
     ],
     "ru": [
-      "через регулярные промежутки времени и ведет подсчет"
+      "а то вариантов больше нет"
     ]
   },
   {
     "time": [
-      87.0,
-      91.0
+      120.781579,
+      124.250787
     ],
     "en": [
-      "how many succeed and how many fail let's"
+      "now I'm in IP SLA configuration mode"
     ],
     "ru": [
-      "сколько успехов и сколько неудач давай"
+      "сейчас я нахожусь в режиме настройки IP SLA"
     ]
   },
   {
     "time": [
-      91.0,
-      96.0
+      124.250787,
+      127.021642
     ],
     "en": [
-      "get started let's hop on our one I will"
+      "let's check the options"
     ],
     "ru": [
-      "приступим, давай сядем на наш, я буду"
+      "давайте проверим варианты"
     ]
   },
   {
     "time": [
-      96.0,
-      98.0
+      127.021642,
+      131.532975
     ],
     "en": [
-      "configure the ICMP echo operation to"
+      "as you can see there are various kinds of operations that we can use"
     ],
     "ru": [
-      "настроить операцию эха ICMP на"
+      "как видите, мы можем использовать различные операции"
     ]
   },
   {
     "time": [
-      98.0,
-      103.0
+      131.532975,
+      134.711579
     ],
     "en": [
-      "send pings to our two coughed II use the"
+      "let's configure an ICM a cooperation"
     ],
     "ru": [
-      "отправить пинги нашим двум кашляющим я использую"
+      "давайте настроим ICM сотрудничество"
     ]
   },
   {
     "time": [
-      103.0,
-      107.0
+      134.711579,
+      140.178141
     ],
     "en": [
-      "following command IP SLA followed by the"
+      "and then enter the destination address of 1200 -"
     ],
     "ru": [
-      "следующая команда IP SLA, за которой следует"
+      "а затем введите адрес назначения 1200 -"
     ]
   },
   {
     "time": [
-      107.0,
-      110.0
+      140.178141,
+      145.785245
     ],
     "en": [
-      "operation number you can configure"
+      "okay now I'm brought into IPS la Echo configuration mode"
     ],
     "ru": [
-      "номер операции, который вы можете настроить"
+      "хорошо, теперь я переведен в режим настройки IPS la Echo"
     ]
   },
   {
     "time": [
-      110.0,
-      113.0
+      145.785245,
+      151.328849
     ],
     "en": [
-      "multiple IP SLA operations on the same"
+      "again there are plenty of options here but let's just specify the frequency"
     ],
     "ru": [
-      "несколько операций IP SLA на одном"
+      "Опять же, здесь есть много вариантов, но давайте просто укажем частоту"
     ]
   },
   {
     "time": [
-      113.0,
-      115.0
+      151.328849,
+      154.298016
     ],
     "en": [
-      "device so a number is necessary to"
+      "which is how often the pings will be sent to our -"
     ],
     "ru": [
-      "устройство, поэтому номер необходим для"
+      "как часто пинги будут отправляться на наш -"
     ]
   },
   {
     "time": [
-      115.0,
-      119.0
+      154.298016,
+      158.072016
     ],
     "en": [
-      "identify them I'll use one and then"
+      "the instructions say to use a frequency of five"
     ],
     "ru": [
-      "определите их, я воспользуюсь одним, а затем"
+      "в инструкции указано использовать частоту пять"
     ]
   },
   {
     "time": [
-      119.0,
-      122.0
+      158.072016,
+      160.485766
     ],
     "en": [
-      "there are no more options now I'm in IP"
+      "so frequency five"
     ],
     "ru": [
-      "больше нет вариантов сейчас я в IP"
+      "так частота пять"
     ]
   },
   {
     "time": [
-      122.0,
-      124.0
+      160.485766,
+      161.725307
     ],
     "en": [
-      "SLA configuration mode"
+      "that's it"
     ],
     "ru": [
-      "Режим настройки SLA"
+      "это оно"
     ]
   },
   {
     "time": [
-      124.0,
-      128.0
+      161.725307,
+      165.517891
     ],
     "en": [
-      "let's check the options as you can see"
+      "now we have to schedule the operation"
     ],
     "ru": [
-      "давайте проверим варианты, как вы видите"
+      "теперь нам нужно запланировать операцию"
     ]
   },
   {
     "time": [
-      128.0,
-      130.0
+      165.517891,
+      168.522932
     ],
     "en": [
-      "there are various kinds of operations"
+      "that is done in global configuration mode"
     ],
     "ru": [
-      "есть разные виды операций"
+      "это делается в режиме глобальной конфигурации"
     ]
   },
   {
     "time": [
-      130.0,
-      133.0
+      168.522932,
+      174.644849
     ],
     "en": [
-      "that we can use let's configure an ICM"
+      "exit once again the command starts with IP SLA"
     ],
     "ru": [
-      "что мы можем использовать давайте настроим ICM"
+      "выйти еще раз команда начинается с IP SLA"
     ]
   },
   {
     "time": [
-      133.0,
-      136.0
+      174.644849,
+      179.565078
     ],
     "en": [
-      "a cooperation and then enter the"
+      "this time followed by schedule and the operation number one"
     ],
     "ru": [
-      "сотрудничество, а затем введите"
+      "на этот раз следует расписание и операция номер один"
     ]
   },
   {
     "time": [
-      136.0,
-      142.0
+      179.565078,
+      183.324016
     ],
     "en": [
-      "destination address of 1200 - okay now"
+      "next let's specify the start time"
     ],
     "ru": [
-      "адрес назначения 1200 - хорошо сейчас"
+      "далее давайте укажем время начала"
     ]
   },
   {
     "time": [
-      142.0,
-      144.0
+      183.324016,
+      192.941766
     ],
     "en": [
-      "I'm brought into IPS la Echo"
+      "we could configure it to start after ten minutes for example or start at a specific time like 12 o'clock for example"
     ],
     "ru": [
-      "Я попал в IPS la Echo"
+      "мы могли бы настроить его так, чтобы он запускался, например, через десять минут, или запускался в определенное время, например, в 12 часов."
     ]
   },
   {
     "time": [
-      144.0,
-      147.0
+      192.941766,
+      196.085724
     ],
     "en": [
-      "configuration mode again there are"
+      "but let's schedule it to start now"
     ],
     "ru": [
-      "режим конфигурации снова есть"
+      "но давайте запланируем это, чтобы начать сейчас"
     ]
   },
   {
     "time": [
-      147.0,
-      149.0
+      196.085724,
+      200.258911
     ],
     "en": [
-      "plenty of options here but let's just"
+      "next let's specify the life"
     ],
     "ru": [
-      "здесь много вариантов, но давайте просто"
+      "далее давайте уточним жизнь"
     ]
   },
   {
     "time": [
-      149.0,
-      151.0
+      200.258911,
+      203.059974
     ],
     "en": [
-      "specify the frequency which is how often"
+      "which is how long we want the operation to continue"
     ],
     "ru": [
-      "укажите частоту, как часто"
+      "как долго мы хотим, чтобы операция продолжалась"
     ]
   },
   {
     "time": [
-      151.0,
-      154.0
+      203.059974,
+      207.887286
     ],
     "en": [
-      "the pings will be sent to our - the"
+      "the instructions say to schedule it to continue until manually stopped"
     ],
     "ru": [
-      "пинги будут отправлены на наш -"
+      "в инструкциях говорится, что нужно запланировать его продолжение, пока не будет остановлено вручную"
     ]
   },
   {
     "time": [
-      154.0,
-      157.0
+      207.887286,
+      210.487411
     ],
     "en": [
-      "instructions say to use a frequency of"
+      "so let's use the forever option"
     ],
     "ru": [
-      "инструкции говорят использовать частоту"
+      "так что давайте использовать вариант навсегда"
     ]
   },
   {
     "time": [
-      157.0,
-      163.0
+      210.487411,
+      214.245765
     ],
     "en": [
-      "five so frequency five that's it now we"
+      "r1 will continue sending pings forever"
     ],
     "ru": [
-      "пять, так частота пять, вот и все, мы"
+      "r1 будет продолжать посылать пинги вечно"
     ]
   },
   {
     "time": [
-      163.0,
-      166.0
+      214.245765,
+      216.47764
     ],
     "en": [
-      "have to schedule the operation that is"
+      "until we remove that configuration"
     ],
     "ru": [
-      "должны запланировать операцию, которая"
+      "пока мы не удалим эту конфигурацию"
     ]
   },
   {
     "time": [
-      166.0,
-      170.0
+      216.47764,
+      221.265411
     ],
     "en": [
-      "done in global configuration mode exit"
+      "okay that's all there is to the configuration"
     ],
     "ru": [
-      "сделано в режиме глобальной конфигурации, выход"
+      "хорошо, это все, что нужно для конфигурации"
     ]
   },
   {
     "time": [
-      170.0,
-      173.0
+      221.265411,
+      224.293765
     ],
     "en": [
-      "once again the command starts with IP"
+      "there are two main parts"
     ],
     "ru": [
-      "еще раз команда начинается с IP"
+      "есть две основные части"
     ]
   },
   {
     "time": [
-      173.0,
-      176.0
+      224.293765,
+      228.224786
     ],
     "en": [
-      "SLA this time followed by schedule and"
+      "configuring the operation and scheduling the operation"
     ],
     "ru": [
-      "SLA на этот раз следует график и"
+      "настройка операции и планирование операции"
     ]
   },
   {
     "time": [
-      176.0,
-      181.0
+      228.224786,
+      231.896453
     ],
     "en": [
-      "the operation number one next let's"
+      "let's confirm our configuration"
     ],
     "ru": [
-      "операция номер один следующая давайте"
+      "давайте подтвердим нашу конфигурацию"
     ]
   },
   {
     "time": [
-      181.0,
-      185.0
+      231.896453,
+      236.404474
     ],
     "en": [
-      "specify the start time we could"
+      "exit show IP SLA configuration"
     ],
     "ru": [
-      "указать время начала, которое мы могли бы"
+      "выход показать конфигурацию IP SLA"
     ]
   },
   {
     "time": [
-      185.0,
-      187.0
+      236.404474,
+      239.657474
     ],
     "en": [
-      "configure it to start after ten minutes"
+      "there is entry number one"
     ],
     "ru": [
-      "настроить его на запуск через десять минут"
+      "есть запись номер один"
     ]
   },
   {
     "time": [
-      187.0,
-      190.0
+      239.657474,
+      243.426245
     ],
     "en": [
-      "for example or start at a specific time"
+      "it's type is ICMP echo"
     ],
     "ru": [
-      "например, или начать в определенное время"
+      "это тип эхо ICMP"
     ]
   },
   {
     "time": [
-      190.0,
-      194.0
+      243.426245,
+      247.426495
     ],
     "en": [
-      "like 12 o'clock for example but let's"
+      "and there's the target of 1200 -"
     ],
     "ru": [
-      "например, 12 часов, но давайте"
+      "и есть цель 1200 -"
     ]
   },
   {
     "time": [
-      194.0,
-      198.0
+      247.426495,
+      253.172932
     ],
     "en": [
-      "schedule it to start now next let's"
+      "also a frequency of five start time already passed"
     ],
     "ru": [
-      "Запланируйте это, чтобы начать сейчас, давайте"
+      "также частота в пять раз уже прошла"
     ]
   },
   {
     "time": [
-      198.0,
-      201.0
+      253.172932,
+      255.273265
     ],
     "en": [
-      "specify the life which is how long we"
+      "since we configure its start time now"
     ],
     "ru": [
-      "укажите жизнь, как долго мы"
+      "так как мы настраиваем время его начала сейчас"
     ]
   },
   {
     "time": [
-      201.0,
-      204.0
+      255.273265,
+      258.210182
     ],
     "en": [
-      "want the operation to continue the"
+      "and also life forever"
     ],
     "ru": [
-      "хочу, чтобы операция продолжалась"
+      "а также жизнь навсегда"
     ]
   },
   {
     "time": [
-      204.0,
-      205.0
+      258.210182,
+      262.139245
     ],
     "en": [
-      "instructions say to schedule it to"
+      "now let's check the IP SLA statistics"
     ],
     "ru": [
-      "инструкции говорят, чтобы запланировать это на"
+      "теперь давайте проверим статистику IP SLA"
     ]
   },
   {
     "time": [
-      205.0,
-      208.0
+      262.139245,
+      264.249078
     ],
     "en": [
-      "continue until manually stopped so let's"
+      "to see how many things were successful"
     ],
     "ru": [
-      "продолжайте, пока не остановите вручную, так что давайте"
+      "чтобы увидеть, сколько вещей было успешным"
     ]
   },
   {
     "time": [
-      208.0,
-      212.0
+      264.249078,
+      268.382474
     ],
     "en": [
-      "use the forever option r1 will continue"
+      "show IP SLA status dicks"
     ],
     "ru": [
-      "используйте опцию навсегда r1 будет продолжать"
+      "показать параметры статуса IP SLA"
     ]
   },
   {
     "time": [
-      212.0,
-      214.0
+      268.382474,
+      271.460932
     ],
     "en": [
-      "sending pings forever until we remove"
+      "there's the number of successes"
     ],
     "ru": [
-      "отправка пингов навсегда, пока мы не удалим"
+      "есть количество успехов"
     ]
   },
   {
     "time": [
-      214.0,
-      219.0
+      271.460932,
+      274.448203
     ],
     "en": [
-      "that configuration okay that's all there"
+      "and if I wait for a few seconds"
     ],
     "ru": [
-      "эта конфигурация хорошо, вот и все"
+      "и если я подожду несколько секунд"
     ]
   },
   {
     "time": [
-      219.0,
-      222.0
+      274.448203,
+      276.719057
     ],
     "en": [
-      "is to the configuration there are two"
+      "and then enter the command again"
     ],
     "ru": [
-      "в конфигурации есть два"
+      "а затем введите команду еще раз"
     ]
   },
   {
     "time": [
-      222.0,
-      226.0
+      276.719057,
+      278.40789
     ],
     "en": [
-      "main parts configuring the operation and"
+      "the number should increase"
     ],
     "ru": [
-      "основные части настройки работы и"
+      "число должно увеличиваться"
     ]
   },
   {
     "time": [
-      226.0,
-      229.0
+      278.40789,
+      283.952244
     ],
     "en": [
-      "scheduling the operation let's confirm"
+      "show IP SLA statistics"
     ],
     "ru": [
-      "планирование операции подтвердим"
+      "показать статистику IP SLA"
     ]
   },
   {
     "time": [
-      229.0,
-      235.0
+      283.952244,
+      287.034389
     ],
     "en": [
-      "our configuration exit show IP SLA"
+      "there you can see that the number has increased"
     ],
     "ru": [
-      "наша конфигурация exit show IP SLA"
+      "там видно, что число увеличилось"
     ]
   },
   {
     "time": [
-      235.0,
-      239.0
+      287.034389,
+      289.769848
     ],
     "en": [
-      "configuration there is entry number one"
+      "because pings are being sent every five seconds"
     ],
     "ru": [
-      "конфигурация есть запись номер один"
+      "потому что пинги отправляются каждые пять секунд"
     ]
   },
   {
     "time": [
-      239.0,
-      244.0
+      289.769848,
+      294.780681
     ],
     "en": [
-      "it's type is ICMP echo and there's the"
+      "also notice the latest RTT appear"
     ],
     "ru": [
-      "его тип - эхо ICMP, и есть"
+      "также обратите внимание, что появляется последний RTT"
     ]
   },
   {
     "time": [
-      244.0,
-      249.0
+      294.780681,
+      297.476139
     ],
     "en": [
-      "target of 1200 - also a frequency of"
+      "that's the latest round-trip time"
     ],
     "ru": [
-      "цель 1200 - также частота"
+      "это последнее время туда и обратно"
     ]
   },
   {
     "time": [
-      249.0,
-      253.0
+      297.476139,
+      301.748452
     ],
     "en": [
-      "five start time already passed since we"
+      "which is how long the ping took to go to r2 and come back"
     ],
     "ru": [
-      "пять стартов уже прошло с тех пор, как мы"
+      "сколько времени потребовалось пингу, чтобы перейти на r2 и вернуться"
     ]
   },
   {
     "time": [
-      253.0,
-      256.0
+      301.748452,
+      306.337389
     ],
     "en": [
-      "configure its start time now and also"
+      "now let's shut down our twos g00 interface"
     ],
     "ru": [
-      "настроить время начала сейчас, а также"
+      "теперь давайте отключим наш интерфейс twos g00"
     ]
   },
   {
     "time": [
-      256.0,
-      261.0
+      306.337389,
+      309.391723
     ],
     "en": [
-      "life forever now let's check the IP SLA"
+      "and then the number of failures should start increasing"
     ],
     "ru": [
-      "жизнь навсегда теперь давайте проверим IP SLA"
+      "и тогда количество отказов должно начать расти"
     ]
   },
   {
     "time": [
-      261.0,
-      263.0
+      309.391723,
+      312.652327
     ],
     "en": [
-      "statistics to see how many things were"
+      "compte"
     ],
     "ru": [
-      "статистика, чтобы увидеть, сколько вещей было"
+      "compte"
     ]
   },
   {
     "time": [
-      263.0,
-      267.0
+      312.652327,
+      316.73541
     ],
     "en": [
-      "successful show IP SLA status"
+      "interface g00 shutdown"
     ],
     "ru": [
-      "успешно показать статус IP SLA"
+      "интерфейс g00 выключение"
     ]
   },
   {
     "time": [
-      267.0,
-      270.0
+      316.73541,
+      319.693347
     ],
     "en": [
-      "dicks there's the number of successes"
+      "now let's go back on our one"
     ],
     "ru": [
-      "Черт побери, сколько успехов"
+      "теперь давайте вернемся к нашему"
     ]
   },
   {
     "time": [
-      270.0,
-      274.0
+      319.693347,
+      324.800305
     ],
     "en": [
-      "and if I wait for a few seconds and then"
+      "i'll wait 10 seconds or so to let a few pings be sent"
     ],
     "ru": [
-      "и если я подожду несколько секунд, а затем"
+      "Я подожду 10 секунд или около того, чтобы отправить несколько пингов"
     ]
   },
   {
     "time": [
-      274.0,
-      277.0
+      324.800305,
+      338.025972
     ],
     "en": [
-      "enter the command again the number"
+      "okay let's check"
     ],
     "ru": [
-      "введите команду еще раз число"
+      "хорошо давай проверим"
     ]
   },
   {
     "time": [
-      277.0,
-      284.0
+      338.025972,
+      341.53618
     ],
     "en": [
-      "should increase show IP SLA statistics"
+      "show IP SLA statistics"
     ],
     "ru": [
-      "должен увеличиться показать статистику IP SLA"
+      "показать статистику IP SLA"
     ]
   },
   {
     "time": [
-      284.0,
-      286.0
+      341.53618,
+      346.124263
     ],
     "en": [
-      "there you can see that the number has"
+      "as you can see the number of failures has started increasing"
     ],
     "ru": [
-      "там вы можете видеть, что номер имеет"
+      "как видите, количество отказов начало расти"
     ]
   },
   {
     "time": [
-      286.0,
-      288.0
+      346.124263,
+      352.013408
     ],
     "en": [
-      "increased because pings are being sent"
+      "and the latest RTT indicates no connection busy or time out"
     ],
     "ru": [
-      "увеличилось, потому что отправляются пинги"
+      "и последний RTT указывает, что соединение не занято или время ожидания истекло."
     ]
   },
   {
     "time": [
-      288.0,
-      290.0
+      352.013408,
+      355.863763
     ],
     "en": [
-      "every five seconds"
+      "let's enable our 2's g00 interface now"
     ],
     "ru": [
-      "каждые пять секунд"
+      "давайте теперь включим интерфейс g00 нашего 2"
     ]
   },
   {
     "time": [
-      290.0,
-      295.0
+      355.863763,
+      359.026742
     ],
     "en": [
-      "also notice the latest RTT appear that's"
+      "no shutdown"
     ],
     "ru": [
-      "также обратите внимание, что появляется последний RTT, который"
+      "нет выключения"
     ]
   },
   {
     "time": [
-      295.0,
-      298.0
+      359.026742,
+      365.575054
     ],
     "en": [
-      "the latest round-trip time which is how"
+      "okay now all wait 10 seconds or so again to let a few more pings be sent from r1 to r2"
     ],
     "ru": [
-      "последнее время туда и обратно, как"
+      "хорошо, теперь все подождите 10 секунд или около того, чтобы дать еще несколько пингов от r1 до r2"
     ]
   },
   {
     "time": [
-      298.0,
-      300.0
+      365.575054,
+      380.129471
     ],
     "en": [
-      "long the ping took to go to r2 and come"
+      "okay now let's check the IP SLA statistics once more on our one"
     ],
     "ru": [
-      "долго пинг пошел на r2 и пришел"
+      "хорошо, теперь давайте еще раз проверим статистику IP SLA на нашем"
     ]
   },
   {
     "time": [
-      300.0,
-      302.0
+      380.129471,
+      383.226242
     ],
     "en": [
-      "back"
+      "the number of successes should have increased"
     ],
     "ru": [
-      "назад"
+      "количество успехов должно было увеличиться"
     ]
   },
   {
     "time": [
-      302.0,
-      305.0
+      383.226242,
+      387.477867
     ],
     "en": [
-      "now let's shut down our twos g00"
+      "and we should see a normal latest RTT value"
     ],
     "ru": [
-      "теперь давайте выключим наши двойки g00"
+      "и мы должны увидеть нормальное последнее значение RTT"
     ]
   },
   {
     "time": [
-      305.0,
-      307.0
+      387.477867,
+      391.105783
     ],
     "en": [
-      "interface and then the number of"
+      "show IP SLA statistics"
     ],
     "ru": [
-      "интерфейс, а затем количество"
+      "показать статистику IP SLA"
     ]
   },
   {
     "time": [
-      307.0,
-      312.0
-    ],
-    "en": [
-      "failures should start increasing compte"
-    ],
-    "ru": [
-      "сбои должны начать увеличивать compte"
-    ]
-  },
-  {
-    "time": [
-      312.0,
-      318.0
-    ],
-    "en": [
-      "interface g00 shutdown now let's go back"
-    ],
-    "ru": [
-      "интерфейс g00 выключение теперь давайте вернемся"
-    ]
-  },
-  {
-    "time": [
-      318.0,
-      322.0
-    ],
-    "en": [
-      "on our one i'll wait 10 seconds or so to"
-    ],
-    "ru": [
-      "на нашем я подожду 10 секунд или около того, чтобы"
-    ]
-  },
-  {
-    "time": [
-      322.0,
-      335.0
-    ],
-    "en": [
-      "let a few pings be sent"
-    ],
-    "ru": [
-      "пусть будет отправлено несколько пингов"
-    ]
-  },
-  {
-    "time": [
-      335.0,
-      340.0
-    ],
-    "en": [
-      "okay let's check show IP SLA statistics"
-    ],
-    "ru": [
-      "хорошо, давайте проверим, покажем статистику IP SLA"
-    ]
-  },
-  {
-    "time": [
-      340.0,
-      344.0
-    ],
-    "en": [
-      "as you can see the number of failures"
-    ],
-    "ru": [
-      "как видите количество отказов"
-    ]
-  },
-  {
-    "time": [
-      344.0,
-      347.0
-    ],
-    "en": [
-      "has started increasing and the latest"
-    ],
-    "ru": [
-      "начал расти, и последние"
-    ]
-  },
-  {
-    "time": [
-      347.0,
-      351.0
-    ],
-    "en": [
-      "RTT indicates no connection busy or time"
-    ],
-    "ru": [
-      "RTT указывает, что соединение не занято или время"
-    ]
-  },
-  {
-    "time": [
-      351.0,
-      355.0
-    ],
-    "en": [
-      "out let's enable our 2's g00 interface"
-    ],
-    "ru": [
-      "out давайте включим наш 2 интерфейс g00"
-    ]
-  },
-  {
-    "time": [
-      355.0,
-      361.0
-    ],
-    "en": [
-      "now no shutdown okay now all wait 10"
-    ],
-    "ru": [
-      "сейчас нет выключения хорошо теперь все подожди 10"
-    ]
-  },
-  {
-    "time": [
-      361.0,
-      363.0
-    ],
-    "en": [
-      "seconds or so again to let a few more"
-    ],
-    "ru": [
-      "секунд или около того еще раз, чтобы дать еще несколько"
-    ]
-  },
-  {
-    "time": [
-      363.0,
-      375.0
-    ],
-    "en": [
-      "pings be sent from r1 to r2"
-    ],
-    "ru": [
-      "пинги отправляются с r1 на r2"
-    ]
-  },
-  {
-    "time": [
-      375.0,
-      377.0
-    ],
-    "en": [
-      "okay now let's check the IP SLA"
-    ],
-    "ru": [
-      "хорошо, теперь давайте проверим IP SLA"
-    ]
-  },
-  {
-    "time": [
-      377.0,
-      380.0
-    ],
-    "en": [
-      "statistics once more on our one the"
-    ],
-    "ru": [
-      "статистика еще раз на нашем"
-    ]
-  },
-  {
-    "time": [
-      380.0,
-      382.0
-    ],
-    "en": [
-      "number of successes should have"
-    ],
-    "ru": [
-      "количество успехов должно иметь"
-    ]
-  },
-  {
-    "time": [
-      382.0,
-      384.0
-    ],
-    "en": [
-      "increased and we should see a normal"
-    ],
-    "ru": [
-      "увеличился, и мы должны увидеть нормальный"
-    ]
-  },
-  {
-    "time": [
-      384.0,
-      392.0
-    ],
-    "en": [
-      "latest RTT value show IP SLA statistics"
-    ],
-    "ru": [
-      "последнее значение RTT показывает статистику IP SLA"
-    ]
-  },
-  {
-    "time": [
-      392.0,
-      394.0
+      391.105783,
+      395.267033
     ],
     "en": [
       "there we go the pings are working again"
@@ -1357,146 +1153,110 @@ let objs = [
   },
   {
     "time": [
-      394.0,
-      400.0
+      395.267033,
+      397.108533
     ],
     "en": [
-      "that's all for this lab thank you for"
+      "that's all for this lab"
     ],
     "ru": [
-      "это все для этой лаборатории, спасибо за"
+      "это все для этой лаборатории"
     ]
   },
   {
     "time": [
-      400.0,
-      402.0
+      397.108533,
+      401.108741
     ],
     "en": [
-      "watching I hope this lab and video have"
+      "thank you for watching"
     ],
     "ru": [
-      "смотрю, надеюсь, эта лаборатория и видео"
+      "Спасибо за просмотр"
     ]
   },
   {
     "time": [
-      402.0,
-      405.0
+      401.108741,
+      404.198428
     ],
     "en": [
-      "been helpful for you there are only a"
+      "I hope this lab and video have been helpful for you"
     ],
     "ru": [
-      "был полезным для вас, есть только"
+      "Надеюсь, эта лабораторная работа и видео были для вас полезны"
     ]
   },
   {
     "time": [
-      405.0,
-      408.0
+      404.198428,
+      411.741636
     ],
     "en": [
-      "few more labs left in my CCNA series but"
+      "there are only a few more labs left in my CCNA series but please subscribe to catch my next project"
     ],
     "ru": [
-      "еще несколько лабораторий осталось в моей серии CCNA, но"
+      "В моей серии CCNA осталось всего несколько лабораторий, но, пожалуйста, подпишитесь, чтобы увидеть мой следующий проект"
     ]
   },
   {
     "time": [
-      408.0,
-      410.0
+      411.741636,
+      418.106698
     ],
     "en": [
-      "please subscribe to catch my next"
+      "if you want to support my channel I accept cryptocurrency donations via the addresses in the description"
     ],
     "ru": [
-      "пожалуйста, подпишитесь, чтобы поймать мой следующий"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в криптовалюте по адресам в описании"
     ]
   },
   {
     "time": [
-      410.0,
-      413.0
+      418.106698,
+      426.794303
     ],
     "en": [
-      "project if you want to support my"
+      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
     ],
     "ru": [
-      "проект, если вы хотите поддержать мой"
+      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
     ]
   },
   {
     "time": [
-      413.0,
-      415.0
+      426.794303,
+      426.794303
     ],
     "en": [
-      "channel I accept cryptocurrency"
+      ""
     ],
     "ru": [
-      "канал я принимаю криптовалюту"
+      ""
     ]
   },
   {
     "time": [
-      415.0,
-      417.0
+      426.794303,
+      426.794303
     ],
     "en": [
-      "donations via the addresses in the"
+      ""
     ],
     "ru": [
-      "пожертвования через адреса в"
+      ""
     ]
   },
   {
     "time": [
-      417.0,
-      420.0
+      426.794303,
+      426.794303
     ],
     "en": [
-      "description I am also a brave verified"
+      ""
     ],
     "ru": [
-      "описание я тоже храбрый проверил"
-    ]
-  },
-  {
-    "time": [
-      420.0,
-      423.0
-    ],
-    "en": [
-      "publisher and accept bat or basic"
-    ],
-    "ru": [
-      "издатель и принять летучую мышь или базовый"
-    ]
-  },
-  {
-    "time": [
-      423.0,
-      425.0
-    ],
-    "en": [
-      "attention token donations in the brave"
-    ],
-    "ru": [
-      "пожертвования токенов внимания в храбрых"
-    ]
-  },
-  {
-    "time": [
-      425.0,
-      425.0
-    ],
-    "en": [
-      "browser"
-    ],
-    "ru": [
-      "браузер"
+      ""
     ]
   }
 ]
