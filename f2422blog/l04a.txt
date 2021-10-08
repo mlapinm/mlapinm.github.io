@@ -1,1 +1,551 @@
 0.0
+hello internet and welcome to this video
+in which i'm going to show
+you the comparison of building rock
+paper scissors and
+javascript versus rock paper scissors
+in react so this is going to be fun i
+haven't done one of these videos before
+but i think for a beginner it's quite
+good to
+see visually how the two games can be
+solved
+one in javascript and one in the
+javascript
+library react but before we get going a
+quick word from our video sponsors
+nordpass nordpass is a wonderful tool as
+it allows us to store
+all our passwords in one place you can
+organize your logins
+credit card details and even private
+notes in a secure password vault
+accessed with only one single master
+password
+what i found to be useful to me as a
+developer with multiple passwords and
+logins
+is that nordpass also does a password
+health check
+checking if any of my passwords are weak
+or over 90 days
+old as well as offers me a data breach
+scanner to find out if any of my
+accounts or
+credit card information have been leaked
+it really is fantastic and if you want
+to use it please do
+use my unique code to get 70 off in the
+summer kickoff sale
+just use the code annie kubo at
+nordpass.com
+forward slash annual kubo to redeem the
+70
+discount i will put a link in the video
+description with more information but do
+hurry because the sale is
+limited as always i will not be focusing
+too much on the styling that part is
+going to be completely
+up to you i'm going to take each game
+take it make it your own
+style it up put in some animations you
+name it
+go for it please do share your games
+with me on youtube twitter or
+instagram i would absolutely love to see
+okay so to get going here
+is what we would build this game like in
+javascript
+i have a tutorial on this where we do
+this step by step
+so have a look at this javascript just
+right here
+if we run this so if i open up the uh
+game in our browser it looks just like
+this so no
+styling super simple super simple code
+nothing too crazy you're getting my
+point
+okay so this is what it looks like and
+now i'm going to show you how to
+recreate this game
+but in react so this video is perfect
+for those who perhaps are new to react
+and just want to see the difference
+between how i would make something in
+javascript
+versus how i would make it in react okay
+so now that you've seen this code let's
+move on
+to the react version of this skip
+okay so let's do it the first thing we
+do is use npx
+create react app to create
+my rock paper
+scissors game
+in i'm just gonna put
+react version okay so it's a bit long
+but let's do it i'm just gonna cut this
+out while this uh
+you know um does this thing to create a
+react up for us so
+okay now that is done i'm just going to
+click command k
+and in here well let's go into
+the actual project itself so
+react version
+i'm just going to use the uh code dot
+shortcut to open up my vs code so
+here is the create react app with all
+the configuration for us
+i'm just going to clean it up because we
+don't actually need all of this like
+i don't need the uh i don't need these
+setup tests so i'm just going to delete
+that
+and i'm just going to delete this too
+and i'm going to delete the logo
+let's keep that let's delete the uh
+index
+css and delete the
+test file and
+delete the css file because we don't
+need no styling
+not for now this is not a styling
+tutorial
+this is a javascript and react tutorial
+so i'm going to delete this
+here's our app and i'm going to delete
+everything in here uh apart from just
+the div
+okay
+and i'm also going to use a function
+expression
+that part is totally up to you you don't
+have to um
+do it you could have just kept it as a
+function if you
+wish what's wrong with me can't type
+properly today so there we go that's my
+uh function expression
+and i'm going to remove this as well as
+a few of these things that don't exist
+anymore
+i'm going to get rid of these semicolons
+because i don't like
+semicolons fantastic
+cool so now that we
+have that let's run our app
+so i'm just going to type npn start
+to get it up and running on localhost
+3000.
+so it should just do that magically for
+us
+great we can also inspect the page to
+see what is happening
+so no errors this is looking good
+now the first thing that i actually want
+to do
+so in here let's make our three buttons
+so i'm going to do this in the return so
+this is the
+jsx and it's going to return
+some buttons for us so i'm just going to
+actually have an h1 tag here too
+that says user choice is and then i'm
+going to leave that blank for now
+and computer choices
+okay so computer says user choice is and
+then
+so there's two ways you could do this
+i'm going to show you both
+i could create a button and then in here
+i could just have
+rock and then on click i could
+make something happen so for example uh
+on click
+this is a function so on click
+i'm going to call this function right
+here
+okay and this function for now
+i'm just gonna have a console log that
+says
+clicked okay i'm just gonna minimize
+this to make this easier for you to see
+as well
+so here we go
+so at the moment if i click this button
+that has the inner html of rock
+my console log should say clicked okay
+that is all i have really done at the
+moment so i'm just gonna i can
+make three of these buttons right so
+rock paper
+scissors
+and then i could write a function so
+const
+handle click so this is a function like
+so
+and then i could have the function
+essentially handle the click
+for us so whatever the value that is
+passed
+through into my handle click is i
+then want to essentially
+set the user choice so set user
+choice to whatever the value is
+so for this i'm going to use set state
+const
+user choice
+set user choice
+and use state so i'm going to start with
+my state
+for user choice being no okay so if i do
+this
+i'm essentially saying that user choice
+is currently no
+right if i had potato
+then user choice would be potato it's
+just that simple
+okay um i do need to import
+use state from react because it is a
+react hurt so import
+use state from
+react like so okay
+so now instead of console logging
+clicked i'm actually going to so
+on click i am going to
+uh handle this click so i'm just going
+to get rid of all of this
+come on d command d delete
+delete so on click i
+want to handle click
+and pass through the string
+rock so now if i click on the button
+okay i'm passing the value rock so
+the string rock will be here and then
+i'm going to set the
+user choice to be rock which will then
+set
+this okay so this function will set to
+that
+this function sets that so let's perhaps
+try it out i'm just going to do it for
+the others too
+i'm not going to use this approach but
+this is a nice way to lead you into what
+i am going to use
+so scissors and then i'm simply going to
+show the user choice up here
+so i'm just gonna go like that okay so
+now this should work because what i've
+written
+is essentially that if i click the
+button then i'm going to
+call this function with this value okay
+so this value is going to get passed on
+to here which is then going to get
+passed into here
+which is then going to set my user
+choice which is then going to show up
+here
+so that's what it is like click click
+click and it goes here and it passes
+that value
+says the value this sets that
+okay so let's check it out
+so now if i click paper well use the
+trees paper
+if i click scissors use your scissors
+and if i click rock well you guessed it
+use your choice as
+rock that is because user choice
+is whatever we make it
+by using the set user choice thanks to
+use
+state use statehook so that is one way i
+could do it however a much neater way to
+do it
+is i am going to
+make an array of choices so let's
+let me do whatever really const choices
+because it's not going to change and
+then i'm going to put rock
+paper scissors
+scissors um okay
+so now i could just grab the choices
+array and use map
+to map each choice
+to essentially this
+so i'm going to copy that i'm just going
+to paste it in here
+um this actually needs to be in curly
+braces so let's put it all in curly
+braces
+so i'm getting my choices i am mapping
+over each
+choice and then i am creating a
+button on which on click i'm going to
+handle the click
+but i'm going to pass through the
+choice okay so i'm not
+hard coding any strings i'm simply
+passing through one of these choices
+and i'm also going to use that choice
+to show it here so
+let's have a look at that so
+once again there we go
+everything is working fine we are
+getting a
+warning message that each child should
+have a key prop
+so let's go ahead and fix that
+now let's have
+index p
+index
+okay perfect that gets rid of our
+warning awesome
+okay so i um i'm gonna keep it there
+you know just in case you want to use it
+or should i delete it
+it's gone okay um
+of course maybe if you'd like to format
+that better you are more than welcome to
+as well so perhaps let's just make it a
+little bit more readable for
+everyone so it's on the same screen
+so there we go
+okay so now we are handling the user's
+choice
+let's generate the computer's choice in
+a function
+so for this i'm just going to write a
+function call it cons
+generate computer
+choice and then
+in here well what do i want to happen
+well i want to get a random
+choice and i
+once again i'm going to use the array
+for this i'm going to get the array
+and i need to pass through a random
+index from zero one two so it needs to
+be either a zero
+a one or two right to get one of these
+randomly
+so i can do that i can
+just simply do math
+random what i can't spell today random
+multiplied by the
+choices length and then wrap it with
+math
+floor just so we get you know full
+integers
+okay so that is an option that i can do
+or i could
+just to make things neater take that out
+and
+save that as a const so const uh
+random i don't know
+we already have random choice don't we
+so random
+i don't know number and then save that
+there and then put that
+through here it really doesn't matter
+the truth is up to you
+i perhaps i'm just going to leave it as
+one line
+um just because i want to okay again
+completely my choice so once we have
+that random choice
+so that's literally going to return the
+string rock paper or scissors
+because we have gotten this array and we
+have passed
+through a random index
+okay and that random index is going to
+be either 0 1
+or 2 okay because that's what math
+random does if you multiply
+math random by a number because this is
+essentially a number that number is the
+number 3
+then it will give us any number between
+zero
+and uh less than three and then we round
+it down
+cool so we're getting a random
+choice next thing we need to do when we
+have that random
+choice is uh set it
+to set computer choice
+set computer choice because we're also
+going to use the use effect
+uh use state for this so user choice
+uh then we also want so we want
+computer choice set computer
+choice and we are also going to start
+off as now
+so we're going to set computer choice to
+be the run
+um choice
+okay great so when do we want to
+generate the computer choice well i
+guess when we
+click um of course please feel free
+to space those two things out if you
+want to use like a timer or something
+so that you know if you click it and it
+generates your choice you then wait
+three seconds until the computer
+generates their choice if you want to
+simulate a computer thinking or
+something
+it's totally up to you again that's
+styling so i'm going to leave that to
+styling
+i'm not interested in this style great
+then the last thing you need to do
+is check the results so i'm going to
+write a function
+here const check result
+and then in here i'm going to do a
+switch
+so my switch is going to look a little
+bit like this
+i'm going to write switch and then i'm
+just going to concatenate the two
+strings
+so user choice plus computer
+choice
+case
+and then i'm gonna have what am i gonna
+have scare
+scissors paper
+case rock
+scissors someone told me off for saying
+scissors so i'm not going to say
+scissors
+uh sorry what am i doing
+check const check result and then a
+switch
+oh yes that's right case
+rock scissors case
+rock paper no paper rock right
+paper rock because these are going to be
+all my you win
+cases so um
+and then let's set the result as
+you win right because if you're scissors
+then you beat
+paper if you're rock then you big
+scissor beat scissors if you're paper
+then you'd be rock
+okay so now once again i'm going to
+use you state so const result
+set results
+equals use state
+let's start off with no
+okay so you win now
+let's uh break out of this break
+next case
+paper scissors
+case
+scissors rock
+these are going to be all the losing
+cases right so case
+uh rock paper
+set results
+you lose
+break and then finally case
+rock rock
+case paper
+paper case
+scissors scissors
+okay yeah i hope that is spelt correctly
+because if it's not then this will not
+work
+set result
+has it's a draw
+a break cool
+so awesome so we now have that function
+now i can again let's do it right here
+so i'm just going to call that function
+when we click
+so fantastic um let's also put the
+computer choice here
+so that it shows and then where should
+we show our
+results um perhaps let's just make
+let's just make an h one tag here again
+so
+h1 and we'll just put result
+cool so i'm just going to format this a
+little bit
+for my document okay so
+let us check it out
+scissors why is it not getting the
+result
+maybe let's move the result to here
+okay
+it seems to only get the result after
+the second time
+so what i could do is put this in a use
+effect
+just because it seems to be taking its
+time to do this
+so i could do that i'm just trying to
+think of it's
+the right thing to do
+yeah okay let's put it in a use effect
+so
+i'm now going to get the
+check result and i'm going to use a use
+effect so another uh react hook
+just to make sure that i'm getting that
+result for sure at first time
+and i'm going to check the result only
+if
+okay only if the
+the computer choice
+or user choice changes
+okay so there we go
+okay so now every time either one of
+these changes
+we're gonna check for
+if it's a draw or if it's a win
+okay so i win a few losers
+it's a draw awesome
+amazing so that is looking good
+now to fix this um it's saying that we
+need to put
+check result here i'm actually just
+going to move the whole function in here
+so i'm going to move it out of the
+function
+and put all of this in the check in the
+use effect
+as that makes sense because these two
+dependencies
+uh should be in here anyway it's
+dependent on those two dependencies
+and we don't really need to have the
+function out there anymore
+so perfect now if i refresh this
+amazing great
+so that is how i would make rock paper
+scissors
+in react versus in
+javascript so please feel free to take
+this code you are more than welcome to
+take it take the javascript as well and
+please have fun comparing
+please have fun taking the game and
+improving it if you wish you know if you
+want to do some refactoring
+or if you want to style it up it's
+completely up to you
+okay i hope you've enjoyed this video
+and
+i'll see you soon

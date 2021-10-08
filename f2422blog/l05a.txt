@@ -1,1 +1,183 @@
 0.0
+memory game is a simple concentration
+game in which the player flips over two
+cards in the hopes that it's a match as
+soon as the player flips over all the
+cars and they're all matched the player
+has one and I tried to find out a little
+bit more about the history of the memory
+game but there are just so many
+variations I even found someone the
+internet claiming that Mark Twain and
+made up the memory game after googling
+this it turns out he did make some sort
+of a memory game it looks more like a
+tax collection game that's the internet
+for you
+we are gonna be concentrating today on
+the set attribute and get attribute
+inbuilt JavaScript functions as well as
+event listeners what else scent of all
+we've got sometimes going on math.random
+and sort so if you're interesting
+learning more about those especially set
+attribute and get attribute please watch
+my video as always
+minimal styling I don't want to sit for
+hours so feel free to go wild on your
+own this one's particularly garish and
+yeah okay so let's set up a folder to
+have our app.js file index.html file
+style.css file in the root along with an
+images folder for all the images we are
+going to use please make sure to have
+the images as 100 pixel by a hundred
+pixel squares to avoid of stretching and
+tampering with them later after saving
+your images simply drag and drop them
+into your folder I have chosen to go for
+six fast foods a blank for when my card
+is on its front and a white PNG file to
+simulate the board space being empty now
+in our HTML boilerplate we need to put a
+h3 tag in the body along with a span of
+ID result our live score will show up in
+here
+next we create a div with the class name
+of grid this is where our game grid will
+be created don't forget to link up your
+star CSS file an app J's file with these
+tags now flip over to your CSS file and
+add some styling to your grid because I
+can't out 100 pixels by 100 pixels we
+would be able to make a three by four
+square grid now flip over to a app.js
+file all our JavaScript code will be
+done in this Dom event listen up from
+now on let's start by making an array of
+cards and giving them names that we will
+use later I'm gonna make two of each as
+we need two of each card in our array to
+play the game you will see here that I
+am simply naming the card and for the
+image I'm writing the relative relative
+path to each image okay now we're gonna
+create our game board first using query
+selector I'm gonna pick out the element
+with the class name of grade for my HTML
+and define it as grid for our JavaScript
+now using a for loop
+I'm gonna loop over my card array and
+for each card I'm going to create an
+image element I'm going to call this
+element card for each card I'm going to
+set a set as an attribute linking it to
+the image with relative path image blank
+PNG I'm also going to give each one a
+date idea and loop over each one to give
+them an ID that goes from 0 to 11 as we
+had 12 cards in total in our card array
+we will then add an event listener to
+listen out to if the cards have been
+clicked on and invoke a flip card
+function of a comment this out for now
+as we have not written this function
+quite yet
+finally all these cards or technically
+lint image elements with different IDs
+we've created you're going to put into
+the dev with a class name of grid using
+append child
+now let's invert the function and flip
+over to our browser and done let's carry
+on so to make our game work we need to
+do two more things
+check for matched and flip your cards
+let's start by writing flip card as we
+saw in our function above let's set a
+variable of card ID in this we are
+simply getting the data ID attributes we
+created in the create mode function
+above we will now make an empty array of
+cards chosen using push we will push the
+cards from the card array based on that
+card ID so if the card ideas for this
+will match the fifth card in our Cod
+array once we have located this card we
+will get its name we are going to do the
+same to push the card ID in a separate
+for now empty array for this one we just
+want the ID now because flip card is
+already in a function we taking already
+have a card picked this set attribute
+will let us add an image to that square
+based on the card ID
+it holds we only want to put two cards
+in our cards chosen array so with this
+if statement we are saying that if the
+cards chosen array is equal to two we
+want to invoke the function for check
+for match this set timeout will give us
+some buffer times so the whole thing
+doesn't happen too quickly I want to
+check for a match after exactly 500
+milliseconds
+okay now let's write the check for match
+function let's pick up all the images
+that we created in our first function
+using query selector all and call them
+carts now we have two values in our
+cards chosen
+as well as our cards chosen ID array at
+this point let's use both the values
+here like this and set them as constant
+by writing card chose an ID and then a
+zero and square brackets I am saying I
+want the first value in my array and I
+want to assign it to the constant option
+one ID do the same for the second value
+using the same logic but for cards
+chosen so their names rather than the
+IDS I'm gonna check that the first item
+in my array deeply equals the second
+item in my cards chosen array if the
+answer is true I want an alert I want an
+alert to pop up and I want to assign
+both of them a white PNG for styling I
+also want to make another empty array
+called cards one and push the two chosen
+cards into the array to be stored if the
+cause don't match I want to flip the
+card back over to be played again so
+visually giving them a blank PNG and
+send a lot
+either way if either of these two things
+happen I still want to clear the cards
+chosen array and the cards chose an ID
+array ready to start flipping again so
+now we are collecting cards 1 and we
+could convert this into a score and
+display this to the user via the browser
+by picking out the span element with the
+ID result from our HTML we can do this
+using text content you can pass through
+exactly how many times we have stored
+something in our cards 1 array so one
+point for every month if the cards 1
+deeply equal the length of our cards
+array divided by 2 we know we have
+collected all the possible cards in our
+cards array let other alert the user of
+this via the browser like this now the
+final thing that will allow us to
+refresh the game with new compositions
+is to randomize Olcott array let's do
+this using sort and math.random
+and there you have it your very own
+memory game again I'm not going to town
+on styling simply because otherwise we
+would be here for way too long but
+please have a go yourself comment below
+if you have any questions and yeah let
+me know if you have any other ideas for
+games I can make Kamali's thanks
