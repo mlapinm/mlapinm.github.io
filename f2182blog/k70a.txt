@@ -1,107 +1,110 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab  4.103395 you can download the lab
+file from the link in the description  8.103645 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this and
+description 16.112020  also please subscribe to the
+channel for more labs like this  20.326708 and
 share these videos with anyone else
-studying for the CCNA in this lab we
-will troubleshoot HS RP the correct
+studying for the CCNA  23.577812 in this lab we
+will troubleshoot HS RP 28.265478  the correct
 configuration should be identical to the
-previous lab however a couple of miss
-configurations have been made I'll open
-up r1 here and you can see it's
+previous lab  32.734312 however a couple of miss
+configurations have been made 36.239437  I'll open
+up r1 here 39.197207  and you can see it's
 displaying the same error message over
-and over again we are also told in the
+and over again  44.553373 we are also told in the
 instructions that are to doesn't retake
 its role as the active router for VLAN
-20 after recovering from a failure let's
-take a look at this error message
-duplicate address 10 10 10 1 that's the
-virtual IP address used for VLAN 10 this
-error message can often occur when there
+20  51.901498 after recovering from a failure 54.094727  let's
+take a look at this error message 57.197269 
+duplicate address 10 10 10 1  62.004352 that's the
+virtual IP address used for VLAN 10 66.005436  this
+error message can often occur 68.982768  when there
 are miss configurations between the two
-routers that caused them not to
+routers  72.135893 that caused them not to
 recognize each other as an active
-standby pair so both routers claimed to
-be the active router thus resulting in a
-duplicate address in this case pcs in
+standby pair  75.805038 so both routers claimed to
+be the active router 79.075018  thus resulting in a
+duplicate address  81.727518 in this case pcs in
 VLAN 10 will still be able to use the
-virtual IP address however whether they
-go via r1 or r2 depends on which replies
-to the ARP requests faster just to make
+virtual IP address 87.667934  however whether they
+go via r1 or r2  91.721372 depends on which replies
+to the ARP requests faster 95.151038  just to make
 it easier to work I'll stop these
-messages from being displayed enable
-terminal no monitor if I didn't do that
+messages from being displayed  100.526163 enable
+terminal no monitor 105.656497  if I didn't do that
 the messages would keep appearing every
-few seconds and make things difficult to
-see
-let's check the HSR P configuration show
-standby and since the error message is
-for VLAN 10 I'll just show G 0 1 the
-interface for VLAN 10 hour 1 is claiming
-to be the active which it should be in
-our configuration
-you can see the priority is 110 let's
-check on our to enable terminal no
-monitor show standby g 0 2 so R 2 is
-also claiming to be the active router
-what's causing this let's look at the
-two side-by-side did you notice the
-problem R 2 is using version 2 as a chit
-however R 1 is not it's still using
-version 1 let's fix that on our one
-compte interface G 0 1 standby version 2
+few seconds  110.446559 and make things difficult to
+see 112.267497 
+let's check the HSR P configuration  115.750142 show
+standby 118.848350  and since the error message is
+for VLAN 10  121.499933 I'll just show G 0 1 123.931329  the
+interface for VLAN 10  125.954475 hour 1 is claiming
+to be the active  129.551433 which it should be in
+our configuration 131.790162 
+you can see the priority is 110  135.101704 let's
+check on our to 137.786621  enable terminal no
+monitor  144.500621 show standby   g 0 2 148.935267  so R 2 is
+also claiming to be the active router 153.255204 
+what's causing this 155.107892  let's look at the
+two side-by-side  158.007058 did you notice the
+problem  164.255246 R 2 is using version 2 as a chit
+ 167.932433 however R 1 is not  169.460912 it's still using
+version 1  171.320475 let's fix that on our one 174.132496 
+compte  177.688871 interface G 0 1 179.517100  standby version 2 182.346516 
 ok I'll wait here for 10 seconds or so
 to let them work things out and then
-let's check if r2 is the standby
-okay hopefully that's enough time let's
-check out our to show standby g02 there
+let's check if r2 is the standby 189.177662 
+okay hopefully that's enough time  200.977641 let's
+check out our to 202.689453  show standby g02  207.819703 there
 we go
-state is standby I'll try a traceroute
-from pc1 to the external server just to
-confirm it takes the path via r1 trace
-route 1500 one perfect it's going via r1
-at ten ten ten - so we solved the
-problem here on r1 I'll enable the
-syslog messages on r1 and r2 again since
-those error messages should have stopped
-on r1 first end terminal monitor okay
-now let's do the same on r2 and terminal
-monitor
+state is standby 211.998828  I'll try a traceroute
+from pc1 to the external server  215.964391 just to
+confirm it takes the path via r1  219.439578 trace
+route 1500 one 225.320057  perfect it's going via r1
+at ten ten ten -  235.669536 so we solved the
+problem here on r1 238.448828  I'll enable the
+syslog messages on r1 and r2 again 243.043370  since
+those error messages should have stopped 245.596099 
+on r1 first 247.406411  end terminal monitor 252.520328  okay
+now let's do the same on r2  256.524245 and terminal
+monitor 261.574911 
 okay now let's investigate what's up on
-VLAN 20 show standby gig 0 1 so R 2 is
-currently the active router for VLAN 20
+VLAN 20  265.961682 show standby gig 0 1 270.330870  so R 2 is
+currently the active router for VLAN 20 275.696516 
 but we're told in the lab instructions
 that it doesn't retake its role as
-active router when it recovers from a
-failure actually I don't even need to
-troubleshoot anything here if you come
-across a problem like this the issue is
-preemption actually it says right here
-preemption disabled if preemption is
+active router  280.646411 when it recovers from a
+failure  282.408973 actually I don't even need to
+troubleshoot anything here 286.354098  if you come
+across a problem like this  288.971431 the issue is
+preemption  291.415931 actually it says right here 293.773639 
+preemption disabled  295.233514 if preemption is
 disabled the active router won't take
-back its role as the active router if it
-fails and then recovers it will become
-the standby router the configuration
+back its role as the active router 302.186118  if it
+fails and then recovers 304.251160  it will become
+the standby router  306.041243 the configuration
 instructions say that preemption should
-be enabled however so let's do that
-coffee tea interface g0 1
-standby 20 preempt do show standby G 0 1
-there we go preemption enabled that's
-all for this lab
+be enabled however 310.962368  so let's do that 312.210764 
+coffee tea 314.112305  interface g0 1 316.632264 
+standby 20 preempt 320.386410  do show standby G 0 1 323.855660 
+there we go preemption enabled 327.035097  that's
+all for this lab 329.309201 
 thank you for watching I hope this lab
-and video have been helpful for you
+and video have been helpful for you 336.323680 
 please subscribe for future labs like
-this which will be released weekly if
+this which will be released weekly 340.855035  if
 you have requests for any specific labs
-let me know in the comments section if
+let me know in the comments section  345.807826 if
 you want to support my channel I accept
 Bitcoin and aetherium donations via the
-addresses in the description I am also a
+addresses in the description  353.114471 I am also a
 brave verified publisher and accept bat
 or basic attention token donations in
 the brave browser
+ 361.722909 
+ 361.722909 
+ 361.722909 

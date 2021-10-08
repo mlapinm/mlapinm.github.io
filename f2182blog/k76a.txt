@@ -1,136 +1,139 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.341666  you can download the lab
+file from the link in the description  8.309812 if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this and
+description 15.841125  also please subscribe to the
+channel for more labs like this  19.051333 and
 share these videos with anyone else
-studying for the CCNA in this lab we
+studying for the CCNA 22.940145  in this lab we
 will troubleshoot a few problems in the
 network we configured in the previous
-lab there are three issues listed in the
-instructions
-let's fix them one by one the first
-issue is that PC 2 cannot ping PC 1
-let's test it I'll ping PC 1 from PC to
-ping 192.168.1.1 hundred ok we get a
-reply from our default gateway saying
-the destination host is unreachable this
+lab  29.295812 there are three issues listed in the
+instructions 33.025645 
+let's fix them one by one  34.887478 the first
+issue is that PC 2 cannot ping PC 1 40.198561 
+let's test it  41.726915 I'll ping PC 1 from PC to 44.970811 
+ping 192.168.1.1 hundred  51.223269 ok we get a
+reply from our default gateway 55.785331  saying
+the destination host is unreachable 58.798561  this
 probably means the default gateway R 2
-doesn't have a route to the network
-let's investigate on our to enable show
-IP route indeed our two only knows local
-and connected routes it's missing the
-default route out to the Internet we
-configured in the previous lab let's fix
-that
-comte IP route
-oh-oh-oh-oh-oh-oh-oh-oh-oh g 0 0 0 ok
+doesn't have a route to the network 64.152519 
+let's investigate on our to  67.218206 enable show
+IP route 73.534872  indeed our two only knows local
+and connected routes  77.832560 it's missing the
+default route out to the Internet 80.371995 we
+configured in the previous lab 82.193662  let's fix
+that 84.002620 
+comte  85.722453 IP route
+oh-oh-oh-oh-oh-oh-oh-oh-oh g 0 0 0  93.698349 ok
 immediately we get a message saying our
-tunnel interface is up because we now
-have a route to the destination and if
+tunnel interface is up 98.502599  because we now
+have a route to the destination 101.089473  and if
 we wait a few seconds the OSPF neighbor
-r1 should come up as well let's try that
-ping from PC to again ping 192.168.1.1
-hundred
-okay the ping works this time we've
-solved the first issue the next problem
-is that PC for cannot pain pc3 let's
-test that out I'll ping pc 3 from PC for
-ping 192.168 3.1 hundred ok the thing
-fails this time our default gateway
+r1 should come up as well 106.711868  let's try that
+ping from PC to again 112.785764  ping 192.168.1.1
+hundred 118.166222 
+okay the ping works this time  126.178264 we've
+solved the first issue  128.005722 the next problem
+is that PC for cannot pain pc3  133.579784 let's
+test that out 135.233617  I'll ping pc 3 from PC for 138.603533 
+ping 192.168 3.1 hundred  143.842241 ok the thing
+fails 151.118365  this time our default gateway
 doesn't send destination host
-unreachable so it's probably a different
-issue
-let's check out our for enable show IP
-route as you can see our 4 has a default
-route so it should be able to reach the
-1 and 2.16 8.30 slash 24 network which
-is connected to our 3 let's check out
-our 3 enable show IP route ok our 3 only
-has connected and local roads no AI GRP
-or even BGP routes this means that the
-ping from pc 4 was able to reach pc 3
-but our 3 couldn't send the reply back
+unreachable 155.501386  so it's probably a different
+issue 157.986386 
+let's check out our for 161.536281  enable show IP
+route 166.755073  as you can see our 4 has a default
+route 170.897969  so it should be able to reach the
+1 and 2.16 8.30 slash 24 network 176.051469  which
+is connected to our 3  178.406615 let's check out
+our 3  180.356823 enable show IP route  185.481864 ok our 3 only
+has connected and local roads  190.040135 no AI GRP
+or even BGP routes  193.211551 this means that the
+ping from pc 4 was able to reach pc 3 197.991009 
+but our 3 couldn't send the reply back 201.257030 
 because it doesn't have a route to
-192.168.0 slash 24 the lack of BGP
+192.168.0 slash 24  206.314926 the lack of BGP
 routes isn't relevant to this current
-issue so let's look at the EA grpe issue
-show IP erp neighbors no neighbors
-that's a problem show IP protocols can
-you identify the issue under routing for
-networks 203 OD 1 1 3 8 / 30 is listed
-which is fine 192.168.0 is listed which
-is fine it's a class full / 24 network
-so the prefix length isn't displayed but
-192.168.0 / 32 is incorrect
+issue 211.073508  so let's look at the EA grpe issue 213.195988 
+show IP erp neighbors 217.406487  no neighbors 219.718320 
+that's a problem  220.403028 show IP protocols 223.484986  can
+you identify the issue  228.128173 under routing for
+networks 203 OD 1 1 3 8 / 30 is listed 235.814151 
+which is fine 237.633255  192.168.0 is listed  241.011589 which
+is fine  242.209234 it's a class full / 24 network 244.276505 
+so the prefix length isn't displayed  245.906005 but
+192.168.0 / 32 is incorrect 251.899275 
 r 3 doesn't have any interface in
-192.168.0 / 32 Network its G 0 1
-interface is 192.168.0.1 let's fix that
-statement coffee tea red ER e IG RP 100
-no network 192.168.0 oh-oh-oh-oh network
-192.168.0.0 oh-oh-oh 255 ok immediately
-the adjacency comes up do show IP route
+192.168.0 / 32 Network  259.092380 its G 0 1
+interface is 192.168.0.1  264.317109 let's fix that
+statement  266.610108 coffee tea  268.980150 red ER e IG RP 100 272.707629 
+no network 192.168.0 oh-oh-oh-oh  280.315733 network
+192.168.0.0 oh-oh-oh 255 288.124462  ok immediately
+the adjacency comes up 291.114690  do show IP route 294.113565 
 okay
-now R 3 has a route to 192.168.0 / 24
-let's try that ping again from pc 4 in
-192.168 3.1 hundred ok the ping works
-this time now the last problem is that
+now R 3 has a route to 192.168.0 / 24 300.590544 
+let's try that ping again from pc 4  304.296044 in
+192.168 3.1 hundred  310.334023 ok the ping works
+this time  315.178585 now the last problem is that
 hosts in enterprise B cannot ping hosts
-in enterprise a that probably has to do
+in enterprise a 322.617064  that probably has to do
 with the fact that our 3 still has no
-BGP routes let's go back on our three to
-investigate and show IP BGP summary ok
+BGP routes  327.940460 let's go back on our three to
+investigate 330.909376  and show IP BGP summary 336.676772  ok
 so two of 302 139 in a s 65 thousand one
-is configured as our neighbor that's
-correct
-show IP bgp neighbors ok here at the top
-it says BGP state equals active that
-sounds like a good thing but really it
+is configured  as our neighbor  347.226355 that's
+correct 348.379813 
+show IP bgp neighbors 352.031792  ok here at the top
+it says BGP state equals active 359.830896  that
+sounds like a good thing 362.020979  but really it
 means that BGP is actively trying to
-form an adjacency the state we really
-want is established the BGP
-configuration looks fine however so
+form an adjacency  366.379729 the state we really
+want is established  369.637624 the BGP
+configuration looks fine   however 373.623456  so
 maybe there is something wrong with the
-interface show interface s 0 0 0
-encapsulation hdl-c
-there's a problem
-it's supposed to be using PPP as we
-configured in the last lab show run
+interface 376.390456  show interface s 0 0 0 380.929664 
+encapsulation hdl-c 385.433435 
+there's a problem 387.451685 
+it's supposed to be using PPP  389.601685 as we
+configured in the last lab  392.175769 show run 394.503414 
 indeed PPP isn't configured on the
-interface if I scroll up a little
-however you can see the appropriate
+interface  400.782498 if I scroll up a little
+however 403.712727  you can see the appropriate
 username and password combination is
-configured so we just have to configure
-the encapsulation and authentication
-mode coffee/tea interface s 0 0 0
-shutdown encapsulation PPP PPP
-authentication chap no shutdown okay
-let's wait 10 seconds or so for the BGP
-adjacency to come up
-okay now let's check the route table do
-show IP route okay now we have all of
-those BGP routes let's try a ping from
-PC for two PC one ping 192.168.1.1
-hundred
-okay the ping works we've solved the
-network issues that's all for this lab
-thank you for watching I hope this lab
-and video have been helpful for you this
-is the final video in my CCNA lab series
-thank you all for your support as of now
-I have over 1200 subscribers which is
-amazing and the channel keeps growing I
-have another project planned and I will
+configured 408.145018  so we just have to configure
+the encapsulation  410.177893 and authentication
+mode  411.874664 coffee/tea  414.332455 interface s 0 0 0 417.352726 
+shutdown  419.333747 encapsulation PPP  421.959767 PPP
+authentication chap 425.750517  no shutdown  427.725121 okay
+let's wait 10 seconds  or so for the BGP
+adjacency to come up 433.709621 
+okay now let's check the route table  445.717871 do
+show IP route  450.693079 okay now we have all of
+those BGP routes  456.520433 let's try a ping from
+PC for two PC one 460.399620  ping 192.168.1.1
+hundred 465.992849 
+okay the ping works 476.402411  we've solved the
+network issues  478.676432 that's all for this lab 480.423161 
+thank you for watching  482.874932 I hope this lab
+and video have been helpful for you 486.122785  this
+is the final video in my CCNA lab series  490.326160  
+thank you all for your support 492.128243  as of now
+I have over 1200 subscribers  497.111743 which is
+amazing  497.984118 and the channel keeps growing  499.620368 I
+have another project planned  502.469826 and I will
 make a video to let you know about it
-soon please subscribe for updates on
-that and for future content if you want
+soon 505.626659  please subscribe for updates on
+that 507.677367  and for future content 508.940325  if you want
 to support my channel
 I accept cryptocurrency donations via
-the addresses in the description I am
+the addresses in the description  515.924262 I am
 also a brave verified publisher and
 accept bat or basic attention token
 donations in the brave browser
+ 524.692116 
+ 524.692116 
+ 524.692116 

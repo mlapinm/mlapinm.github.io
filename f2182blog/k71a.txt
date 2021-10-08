@@ -1,153 +1,158 @@
 0.0
 welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
+practice lab 4.459728  you can download the lab
+file from the link in the description 7.474728  if
 you like these labs please consider
 supporting me via my patreon or the
 cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this and
+description  14.747707 also please subscribe to the
+channel for more labs like this 18.730102  and
 share these videos with anyone else
-studying for the CCNA in this lab we
-will configure ACLs named ACLs and
-numbered ACLs standard ACLs and extended
-ACLs as well as ipv4 ACLs and ipv6 ACLs
-mixing them all together let's get
-started
-so we have to configure and apply a
+studying for the CCNA 22.702540  in this lab we
+will configure ACLs 26.818957  named ACLs 27.937227  and
+numbered ACLs 28.809435  standard ACLs 30.593206  and extended
+ACLs  31.466914 as well as ipv4 ACLs  34.061081 and ipv6 ACLs 35.988831 
+mixing them all together  37.231706 let's get
+started 38.742330 
+so we have to configure 41.716059  and apply a
 total of four ACLs to filter traffic
-according to these instructions the
-details of how you configure and where
-you apply the ACLs doesn't have to
-exactly match what I do in this video as
-long as the results are the same it's
-okay the first ACL we must configure
-should prevent pc4 from accessing the
-10440 / 24 network the general rule is
+according to these instructions 46.528788  the
+details of how you configure 49.463433  and where
+you apply the ACLs 51.121392  doesn't have to
+exactly match what I do in this video  53.743371 as
+long as the results are the same  55.558204 it's
+okay  57.125058 the first ACL we must configure
+should prevent pc4  61.799537 from accessing the
+10440 / 24 network  65.661224 the general rule is
 to apply standard ACLs close to the
-destination so I'll apply it to r2 SG 0
-0 interface let's go on our to enable
-golf tee let's create a deny statement
-blocking PC for access list I'll make it
-number 1 deny host and PC for is 10 2 to
-12 okay that's all for that statement
+destination 70.327182  so I'll apply it to r2 SG 0
+0 interface  74.584620 let's go on our to 77.641578  enable
+golf tee  81.524577 let's create a deny statement
+blocking PC for 85.819806  access list 88.093889  I'll make it
+number 1 90.241827  deny host  92.341181 and PC for is 10 2 to
+12 96.440327  okay that's all for that statement 98.710327 
 now we are told to block other traffic
-to 10 dot 4 dot 4 dot 0 / 24 so we
-should let it through accessed list 1
-permit any that's it now let's apply it
-to the interface interface g0 0 IP
-Access Group 1 out I used out because I
+to 10 dot 4 dot 4 dot 0 / 24  104.119201  so we
+should let it through  106.115388 accessed list 1
+permit any  109.984804 that's it  111.808888 now let's apply it
+to the interface 113.587283  interface g0 0  116.937138 IP
+Access Group 1 out  120.597950 I used out because I
 want to prevent PC force traffic from
-exiting out this interface to the 10 dot
-4 dot 4 dot 0 / 24 subnet let's test it
+exiting out this interface 126.606263  to the 10 dot
+4 dot 4 dot 0 / 24 subnet 130.389367  let's test it 132.164929 
 I'll try a ping from PC for two server
-one ping 10.4 for 100 and we get the
+one 135.951741  ping 10.4 for 100 141.966012  and we get the
 destination host unreachable message
-from 10 12 12 2 which is our to perfect
+from 10 12 12 2 which is our to 149.779262  perfect
 just to make sure let's try a ping from
-PC 3 which should go through ping 4.4.1
-hundred
-great it works our first ACL is complete
-okay let's do the second one configure
+PC 3  154.123012 which should go through 156.067366  ping 4.4.1
+hundred 161.585554 
+great it works  169.651887 our first ACL is complete 172.016387 
+okay let's do the second one 175.515366  configure
 an ipv6 ACL to prevent pc5 from
 accessing the 2001 DB 822 22 / 64
-network so this will be an ipv6 ACL and
-ipv6 only supports named ACLs although
+network  186.906095 so this will be an ipv6 ACL 189.641470  and
+ipv6 only supports named ACLs  192.819887 although
 ipv4 supports both numbered and named
-ACLs I'll apply it to our ones g02
-interface let's go on our one enable
-compte since it's an ipv6 ACL start the
-command with ipv6 access list then the
-name I'll say g0 to underscore in to
-give it a meaningful name now we're in
-ipv6 ACL configuration mode and can
-configure each statement so we want to
-deny PC 5 and then permit other traffic
-deny ipv6 host followed by PC 5s address
-2001 DB 8 3 3 double colon 11 then the
-destination subnet 2001 DB 8 22 22 / 64
-okay that's our deny statement now let's
-allow all other ipv6 traffic through
-permit ipv6 any-any ok finally let's
-apply it interface G 0 to ipv6 traffic
-filter G 0 2 in now you might want to
-apply this with ipv6 access group since
-ipv4 uses IP access group but for ipv6
-use ipv6 traffic filter okay let's test
-I'll ping from PC 5 to server 2
-ping 2001 db8 22 22 double : 101
-reachable message from our one looks
-good now just to be sure let's try on PC
-6 which should work ping 2001 DB 8 22 22
-double : 100 great it works as expected
+ACLs  197.251949 I'll apply it to our ones g02
+interface  201.139866 let's go on our one  202.965595 enable
+compte  207.524699 since it's an ipv6 ACL  211.818637 start the
+command with ipv6 access list  215.248116 then the
+name 216.862782  I'll say g0 to underscore in  220.618074 to
+give it a meaningful name  223.080490 now we're in
+ipv6 ACL configuration mode  227.317449 and can
+configure each statement  229.350240 
+
+so we want to
+deny PC 5  232.520240 and then permit other traffic
+ 235.122865 deny ipv6 host 238.294115  followed by PC 5s address 240.619927 
+2001 DB 8 3 3 double colon 11  246.698281 then the
+destination subnet  249.300885 2001 DB 8 22 22 / 64
+ 255.136198 okay that's our deny statement  258.276531 now let's
+allow all other ipv6 traffic through 261.538177 
+permit ipv6 any-any  265.765073 ok finally let's
+apply it  268.448656 interface G 0 to  272.878967 ipv6 traffic
+filter G 0 2 in  277.945925 now you might want to
+apply this with ipv6 access group  282.709216 since
+ipv4 uses IP access group 285.685279  but for ipv6
+use ipv6 traffic filter  289.822508 okay let's test
+ 291.816675 I'll ping from PC 5 to server 2 295.746341 
+ping 2001 db8 22 22 double : 101 306.147820 
+reachable message  310.216008 from our one 311.218362  looks
+good  312.210008 now just to be sure let's try on PC
+6 315.442924  which should work 316.556862  ping 2001 DB 8 22 22
+double : 100  325.962091 great it works as expected 333.975404 
 next is to prevent pc3 from reaching PC
-1 it should be an extended named ACL and
-let's put it on our ones G 0 1 interface
-exit IP access list extended this time
-I'll name it G 0 1 underscore in let's
-make the deny statement deny IP host
-10.2 2.11 host 10.11 11 now let's permit
-other traffic since we weren't told to
-block anything else permit IP any-any
-now let's apply it interface G 0 1 this
-is an ipv4 ACL so IP access group 1
-underscore in in okay let's try it out
-I'll ping from pc 3 to pc 1 ping 10.11
-11 and we get the destination host
-unreachable message how about from PC
-for King 10.1 111
-okay it works as expected
+1  339.597612 it should be an extended named ACL  343.320112 and
+let's put it on our ones G 0 1 interface 346.961758 
+exit IP access list extended  353.754966 this time
+I'll name it G 0 1 underscore in 358.663966  let's
+make the deny statement 361.395299  deny IP host
+10.2 2.11 host 10.11 11 370.867883  now let's permit
+other traffic  373.427445 since we weren't told to
+block anything else 375.413195  permit IP any-any
+ 378.883362 now let's apply it  382.231008 interface G 0 1 this
+is an ipv4 ACL 388.416569  so IP access group 1
+underscore in in 394.949256  okay let's try it out 396.621985 
+I'll ping from pc 3 to pc 1  399.948901 ping 10.11
+11  406.431422 and we get the destination host
+unreachable message 411.012693  how about from PC
+for  414.153193 King 10.1 111 419.823255 
+okay it works as expected 427.753047 
 finally we want to allow PC six to
-telnet to r2 but to not allow others to
-do so
-so we could apply this in multiple areas
+telnet to r2  433.719464 but to not allow others to
+do so 436.403047 
+so we could apply this in multiple areas 439.733046 
 but how about applying it directly to
-our two's vty lines let's go on our to
-exit first I'll make the ACL ipv6 access
-list telnet to give it an appropriate
-name
-so let's permit PC 6 to telnet permit
-TCP because telnet uses TCP host 2000 1
-DB 8 3 3 double colon 12 I'll set the
-destination to any since I wanted to
+our two's vty lines 443.638421  let's go on our to 445.912629 
+exit first I'll make the ACL  451.430316 ipv6 access
+list telnet  455.717274 to give it an appropriate
+name 457.786816 
+so let's permit PC 6 to telnet  462.054857 permit
+TCP because telnet uses TCP 467.798191  host 2000 1
+DB 8 3 3 double colon 12  475.489253 I'll set the
+destination to any 478.546711  since I wanted to
 apply to whichever of our tooth
-interfaces they telnet to then finally
-EQ telnet to specify the port number of
-23 which telnet uses ok that's all we
-have to configure because there is an
-implicit deny any at the end of the ACL
+interfaces 482.048836  they telnet to  483.208398 then finally
+EQ telnet  486.844523 to specify the port number of
+23 which telnet uses  491.021690 ok that's all we
+have to configure 494.540502  because there is an
+implicit deny any at the end of the ACL 498.185918 
 so we don't need to configure another
-statement let's apply it to the vty
-lines line vty 0 15 to apply an ipv4 ACL
-to an interface use access group for
-ipv6 traffic filter now to apply either
-to vty lines you use XS class so ipv6
-access class telnet in ok let's test it
-out I'll try to tell NIT - R - s G 0 0 0
-interface from PC 6
-telnet 2001 db8 12:12 double : - looks
+statement  500.706376 let's apply it to the vty
+lines  503.550418 line vty 0 15  507.851543 to apply an ipv4 ACL
+to an interface 512.189772  use access group 513.479606  for
+ipv6 traffic filter 516.707293  now to apply either
+to vty lines  519.776272 you use XS class  521.554793 so ipv6
+access class telnet in 527.173376  ok let's test it
+out  529.448189 I'll try to tell NIT - R - s G 0 0 0
+interface from PC 6 535.152293 
+telnet 2001 db8 12:12 double : -  545.991064 looks
 good enter the password CCNA in lower
-case and there we go
-exit okay let's confirm that PC five
-can't tell net to r2 telnet 2001 DB
-eight twelve twelve double colon - great
+case  550.311210 and there we go 552.214981 
+exit  554.038251 okay let's confirm that PC five
+can't tell net to r2 557.819418  telnet 2001 DB
+eight twelve twelve double colon -  568.675876 great
 looks like we successfully configured
-and applied the ACL in this lab we
-configured multiple types of ACLs ipv6
+and applied the ACL  572.722335 in this lab we
+configured multiple types of ACLs  577.367710 ipv6
 ACLs as well as standard and extended
-ipv4 ACLs using numbered and named
-methods this was mostly review from what
-we did in the icnd1 labs but hopefully
-it was good practice that's all for this
-lab thank you for watching I hope this
-lab and video have been helpful for you
+ipv4 ACLs  582.893355 using numbered and named
+methods  584.798439 this was mostly review from what
+we did in the icnd1 labs  588.828751 but hopefully
+it was good practice  590.781210 that's all for this
+lab  592.565522 thank you for watching I hope this
+lab and video have been helpful for you 599.373939 
 please subscribe for future labs like
-this which will be released weekly if
-you have requests for any specific labs
-let me know in the comments section if
+this  602.467835 which will be released weekly  604.141001 if
+you have requests for any specific labs 607.360001 
+let me know in the comments section 609.232543  if
 you want to support my channel
 I accept Bitcoin and etherium donations
-via the addresses in the description I
+via the addresses in the description  616.043189 I
 am also a brave verified publisher and
 accept bat or basic attention token
 donations in the brave browser
+ 624.622668 
+ 624.622668 
+ 624.622668 

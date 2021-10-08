@@ -63,89 +63,89 @@ our 1 will be the active router  184.837138 so let's
 increase the priority  186.528929 
 
 first what's the
-default priority 189.288430  you can check with this
-command 192.277999  do show standby  194.259858 so it's priority
-100 198.002034  which is the default 199.087113  let's increase
-the priority for a standby group 10 202.638361 
-standby 10 priority  205.075209 and let's increase
-it to 110  208.788429 another part of our
-instructions is to use HS RP version 2 214.568157 
+default priority  189.673560 you can check with this
+command  192.226456 do show standby  194.320414 so it's priority
+100 197.983580  which is the default  199.670580 let's increase
+the priority for a standby group 10 202.752163 
+standby 10 priority 205.545996  and let's increase
+it to 110 208.517725  another part of our
+instructions is to use HS RP version 2 214.370079 
 which offers some minor improvements
-over a version 1 217.604211  standby version 2 220.227975  as
+over a version 1  217.537058 standby version 2  220.594787 as
 you may have noticed standby version 2
-doesn't include the group number 225.091150  it
+doesn't include the group number 224.943474  it
 applies to all standby groups on the
-interface 228.203394  ok finally let's enable
-preemption  231.674278 well what is preemption 234.063370  if r1
-fails 236.650967 
+interface  228.175183 ok finally let's enable
+preemption  231.792245 well what is preemption  234.159203 if r1
+fails
 r2 will become the active router for
-VLAN 10  239.478971 if preemption is disabled 242.471126  even
-if r1 recovers  244.608473 it won't become the
-active router again  246.576364 if preemption is
-enabled however 249.903460  hour 1 will become
-active again when it recovers  252.866046 here's the
-command  254.942758 standby 10 preempt 258.202055  ok that's all
-for our ones G 0 1 interface  261.718857 instead of
-finishing the configuration on r1 266.710014  let
-to Artoo's VLAN 10 configuration 269.710218  and
-then test it 270.940218  enable Conti  275.884549 r2 will use
-the GZ ur to interface 278.679763  so interface g0 - 280.575455 
+VLAN 10  239.582057 if preemption is disabled 242.633807  even
+if r1 recovers  244.736077 it won't become the
+active router again  246.472119 if preemption is
+enabled however  249.632306 hour 1 will become
+active again when it recovers 252.936493  here's the
+command  254.896201 standby 10 preempt 257.972118  ok that's all
+for our ones G 0 1 interface  261.820951 instead of
+finishing the configuration on r1 266.861472  let
+to Artoo's VLAN 10 configuration 268.844804  and
+then test it  270.661221 enable Conti 275.437782  r2 will use
+the GZ ur to interface 278.743907  so interface g0 - 280.692511 
 all we have to do for r2 is standby
-version 2 285.680875  and standby 10 IP 10 10 10 1 291.198992 
-that's it  292.901056 we don't need to configure
-preemption here  295.772303 we only need to
-configure it on the active router 298.358312  we
-also don't need to change the priority 300.905205 
-since we already made our ones higher 303.575341 
-okay let's go on pc-12 test 307.938833  first I'll
+version 2 286.227136  and standby 10 IP 10 10 10 1 291.218095 
+that's it  293.061386 we don't need to configure
+preemption here  295.169907 we only need to
+configure it on the active router 298.358053  we
+also don't need to change the priority
+ 301.236073 since we already made our ones higher
+okay let's go on pc-12 test first I'll
 see if I can ping the virtual IP of 10
-10 10 1  313.897245 ping 10 10 10 1  317.342846 ok it works 324.410442  now
+10 10 1 ping 10 10 10 1 ok it works now
 let's try to ping the external server at
-1500 one  330.006315 ping 1500 1  333.020578 ok it works too 340.024025 
-now let's confirm the path being taken 343.346224 
-traceroute 1500 1  347.286927 as you can see
-traceroute shows our ones IP address 354.723662  not
-the virtual IP address  356.483322 so you can use it
-to confirm the path 358.977585  let's go do a reload
-on our one 362.463707  and see if r2 takes over 364.396723  and
-reload 370.533911 
-okay let's go on r2  375.016337 and check if it took
-over for r1  377.232777 do show standby 382.919081  as you can
-see our two is now active  386.444727 let's quickly
-try that traceroute from pc1 again 389.778695 
-traceroute 1500 1 395.110827  now you can see it
-goes via r2 400.125203  at 10 10 10 3  402.120283 now r1 is in
-the process of booting up  406.143366 however when
+1500 one ping 1500 1 ok it works too
+now let's confirm the path being taken
+traceroute 1500 1 as you can see
+traceroute shows our ones IP address not
+the virtual IP address so you can use it
+to confirm the path let's go do a reload
+on our one and see if r2 takes over and
+reload
+okay let's go on r2 and check if it took
+over for r1 do show standby as you can
+see our two is now active let's quickly
+try that traceroute from pc1 again
+traceroute 1500 1 now you can see it
+goes via r2 at 10 10 10 3 now r1 is in
+the process of booting up however when
 it finishes it should take over again as
-the active router  410.408537 since we configure
-preemption  412.345271 I'll just wait for another 10
-seconds or so and then go check 417.234976 
-okay hopefully that's enough time 427.485430  let's
-go on our one in check  429.664160 an able show
-standby  435.678649 there are one is the active
-router once again  440.706858 let's trace route one
-last time from pc1  444.180101 trace route 1500 1 449.447380 
+the active router since we configure
+preemption I'll just wait for another 10
+seconds or so and then go check
+okay hopefully that's enough time let's
+go on our one in check an able show
+standby there are one is the active
+router once again let's trace route one
+last time from pc1 trace route 1500 1
 now it's going via our one again not our
-two 455.460169 
+two
 so the configuration for VLAN 10 is
-complete 464.961733  now let's configure the
-opposite set up for VLAN 20 469.454840  r2 should be
+complete now let's configure the
+opposite set up for VLAN 20 r2 should be
 the active router with our one as backup
-or standby  474.754545 I'll configure the active r2
-first 478.679466  interface g0 one 483.188083 
-standby version to  485.942210 standby 20 I P 10 20
-21 491.857312 
-standby 20 preempt 494.355475  just to make things
+or standby I'll configure the active r2
+first interface g0 one
+standby version to standby 20 I P 10 20
+21
+standby 20 preempt just to make things
 different
 I won't increase the priority on the
-active 499.432686  let's decrease the priority on
-the standby instead  502.715112 so that's all for
-our two  505.220509 let's go to our one 507.505611  coffee tea 510.472912 
-interface g0 to  512.959284 standby version to 516.957470 
-standby 20 I P 10 20 21 521.479828 
-standby 20  524.483978 priority 90 525.474998  okay that's all
- 529.120985 give them some time to talk with each
-other 531.433546  and figure things out but soon r2
+active let's decrease the priority on
+the standby instead so that's all for
+our two let's go to our one coffee tea
+interface g0 to standby version to
+standby 20 I P 10 20 21
+standby 20 priority 90 okay that's all
+give them some time to talk with each
+other and figure things out but soon r2
 should become the active and r1 the
 stand by for VLAN 20 let's try a ping
 from PC three first I'll try to ping the
