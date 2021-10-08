@@ -1,0 +1,362 @@
+0.0
+welcome back to another Inkscape
+tutorial in this video we're going to be
+looking at some more options for tools
+that we have over here in the tool bar
+in fact in the last video we only did
+the selection tool and the draw
+rectangle tool so I have the plus sign
+and I'll zoom in here
+use the scroll wheel to kind of pan up a
+little bit so yeah we can draw a
+rectangle and if you notice when we
+first draw it something I didn't go over
+we have these little white squares that
+we can click on to control the size of
+it before we get to the selection of we
+can also control the size this way but
+when we first drew it it creates these
+options we have these two white squares
+and then a white circle and this white
+circle controls the roundness of the
+corners of the rectangle which is pretty
+cool so we can control that make it look
+more like a in fact if we were to do
+this and then bring it in we can make it
+look almost like a circle almost give it
+rounded corners to get to that option
+and it sends us there by default when we
+first draw the shape but if we double if
+we click and then we click again we know
+we get to the skew and the rotation but
+if we click very quickly double click
+then we get to that third option which
+is these we have these different handles
+on the corners where we can create
+rounded corners and we can also resize
+the shape that way so I show that
+because we're gonna be playing with some
+different shapes today and each shape
+has different options when you get to
+these white circles and squares these
+handles do different things for
+different shapes but these black handles
+with the arrows they all behave the same
+for every shape we draw so I'll show you
+what I mean by that I'm gonna hit the
+Delete key and delete both of these and
+we're gonna come here to the circle tool
+we're gonna draw a circle so or an oval
+so I'll just drag and unclick and we
+have this so we see we have these
+handles up here we can change the height
+of the circle and change the width of
+the circle Oh
+so see what I did there I actually drew
+another blue circle a teeny tiny one
+over top of this because my circle tool
+was still selected and I'm barely missed
+the
+handle so I can see if I come here to
+the selection tool this is what I drew
+I'll drag it down here so I drew this I
+have another circle now right here so to
+get back to those options though I was
+going to show you if we double click
+very quickly we get to these different
+handles where we can control different
+things and this the most important ones
+of the circle is this teeny little one
+over here controls so that we can make
+like a pacman style so here's how it
+works if you're outside I have my left
+mouse click or held in right now if
+we're outside of the circle it'll create
+this sort of like pie chart looking
+thing where we can go all the way down
+and create just a sliver we can come
+here and create a pacman if I move my
+cursor into the inside of the circle
+it'll change and then we'll create sort
+of like a Halfmoon type shape so there's
+two different ways we can create a
+partial circle we can do a partial like
+this or we can do a partial like this
+and it depends on where your mouse
+cursor is so play with that and get
+familiar with how that works there's a
+lot of times with it will you'll want to
+use a half circle and so you'll notice
+there's no half circle tool instead you
+just draw a circle and then control it
+this way and then we come back to our
+selection and we can change it we can
+move it around we can still do like the
+skew we can do the rotation the same way
+it was click a second time to get to
+rotation so this you know there's a time
+you'll want to draw an object just like
+this so that's how you do it and if we
+ever want to make this a full circle if
+we double-click very quickly always the
+options for whatever for whatever tool
+you whatever operation you're on with
+that object the options for it will be
+at the very top here by default and we
+can click this full circle and it'll
+complete the whole circle again or we
+can move yeah that's basically what
+we'll do and then that we can change the
+size the radius the units that it's in
+okay I'm gonna delete this circle so I
+had delete but one thing I want to show
+you too if we select our object maybe
+I'll resize this a little bit we have
+this object selected and you'll notice
+this one actually has look how big our
+stroke is on this one compared to the
+last one in fact if I click this
+Circle tool and draw another circle
+they're different right this one has a
+smaller stroke this has a larger stroke
+that's because what this is this one we
+scaled it up we drew a small circle I'll
+do another circle down here we do a tiny
+circle and then we went to the resize
+now we went to get our selection and we
+resize it using these bars and it's
+scaled proportionally the stroke and the
+also on the size of the circle so now
+this stroke size is gonna be a different
+size and we'll look at the settings to
+control this stroke size in a minute but
+you'll notice that it is a different
+stroke than if we just draw a regular
+circle this one does have a stroke we
+can see if we click make it white we see
+it has a stroke and actually the stroke
+color is of not even quite black it's a
+blue color and again to change the
+stroke if I have a selected to change
+the fill color we just left-click make
+this one like red for example and then
+to change the stroke color we hold down
+the shift key and click whatever we want
+the stroke to be so we can change it to
+a different color I'll just make it
+black though and then also we have a
+little bit of transparency here because
+what Inkscape does it remembers the
+settings that you were using last time
+and so we have a tiny bit of
+transparency because you can see through
+this shape you can see through to the
+shape behind it you can see that circle
+a little bit below if I want to bring
+this shape forward I can hit this raise
+race up a level it's not a layer
+necessarily where there are different
+layers here that we'll play with later
+on in Inkscape but this is just levels
+what level these different shapes appear
+on so if I want this white to appear on
+the very top level I can just click this
+one that races it all the way to the top
+level whatever item is selected will be
+raised to a top level and if I want to
+go down I can just raise it down one
+level at a time or I can raise it all
+the way to the top or all the way to the
+bottom so there are some options that we
+have for those for that tool I'm not
+gonna change the transparency yet so
+yours might be solid but we'll look at
+that in the next video we'll look at how
+to change transparency and and color on
+things like that
+in more detail than just using the color
+below here this next shape we're gonna
+look at is the star and polygons so
+we'll left-click we'll drag we can
+create you'll notice it just does
+without ever the last color we had
+selected was so if we select green it'll
+turn green and if we draw another star
+it'll be green the star has some
+different options too so if we want to
+click on it if we double-click very
+quickly we get a what we notice we get
+these white two handles again so these
+ones we can change the pointyness of the
+star make it like a stubby little fat
+star we can make it very pointy and we
+can also change where oops I missed this
+one the W key we can also change on the
+star where the points come together on
+this inner part so we can actually cross
+it over multiple times and create kind
+of an interesting shape we make it also
+very pointy this way are very stubby
+this way and then also with the star we
+have different options up here so right
+now we see we have five corners but if
+we wanted to make a triangle we can just
+go down to three corners and now we have
+a triangle we can make that kind of more
+like a triangle or we can make it yeah
+basically a three-cornered shape and
+then we can make this have more as well
+we can have it have lots of different
+corners and we can still control the
+pointyness of these so I'm doing I've
+accidentally clicked so I'm hit the
+Delete key I keep trying to hook on
+those handles and the star tool is still
+selected so I'm accidentally creating a
+second little star but what I want is to
+is to click on this handle right here
+and make that very into there or we can
+make it come out to there and have it be
+sort of like an object like this we can
+change and give a different
+yeah just different characteristics and
+so this is one that we can really play
+with a lot and make a lot of different
+cool shapes just by how we how we do it
+so it's not just a shape like I said
+it's not just a circle it's we can make
+lots of different shapes by controlling
+the different options of that shape so
+always look at the top you'll see some
+different options for things you
+do moving on we can do this spiral tool
+sometimes we'll use this so it's just
+creates a nice little spiral and then we
+can again move it so these black handles
+are always the same these black arrows
+always just let us resize let us rotate
+we can rotate the star too if we want at
+least click and then click a second time
+to get to those rotate options and this
+one if we double click very quickly we
+have options for changing this size or
+Canada different options for this spiral
+like how tight the spiral is and yeah
+that's really the this I just want to go
+over the shape tools there's more tools
+down here but we're not gonna go over
+these ones in future videos I guess with
+the exception that's like text we can
+just click on the text tool and type and
+start typing in you know things and then
+we can change I'm alpha chain of text
+yeah well we can change the color of the
+text down here and then there's a lot
+more options for text we'll do a whole
+whole separate video just on text but
+the rest of these we're not gonna really
+play with and in fact I'm gonna give you
+like a word of caution you if you want
+to play with some of these yourself
+you'll notice there's like an eraser
+tool but this is a tool that I literally
+never use ever inning scape and if you
+if you've used Photoshop or or
+maybe even Microsoft Paint you might be
+used to using this tool where you can
+like erase certain parts why that even
+did oh it's because we're erasing in
+blue oh so I did Dan so basically we can
+like cut into the shape and right like
+erase parts of it but it starts to get
+things very very messy and the reason is
+you're doing freehand you're doing
+freehand erasing and the way Inkscape
+works is that it creates these it
+creates an object it based on math so
+this star is a very simple object for
+the computer it just says alright make a
+star based off of these points by in
+this tool so now I'm editing this just
+just a node by node so we have like
+basically one two three four five six
+seven eight nine ten so it's basically
+saying here's the ten points for this
+star and so just draw a straight line
+between each of these ten points and
+you've got your object and that's why it
+doesn't matter how big it is
+so we can scale this incredibly large
+and it won't ever lose its clarity or we
+can scale it super super tiny as well
+and these objects are all just stay nice
+like if we zoom into the point at this
+point right here look at this it doesn't
+ever get grainy ever it just stays nice
+and sharp always whether we scale it up
+massive or shrink it down tiny and
+that's because it's just mathematics
+telling how to draw the shape it's like
+draw three points one here one here one
+here but that's why when we get into
+drawing or when we get into using these
+free hand tools and erasing it messes
+things up a little bit because now
+instead of having just a few simple
+points I'm gonna click this tool which
+is the edit node tools by path we'll use
+this a lot later but see now look how
+many points we have when we go in in the
+erase it creates lots of unnecessary
+points so if you're gonna use that tool
+you'll want to come in and erase these
+at least I think you should coming in
+I'm just clicking on this node and
+hitting the Delete key and I'm probably
+getting too advanced for this video
+anyway because we'll do that a lot later
+but then we can kind of clean up that
+line but it's just not something that I
+ever do anyway you don't want to do
+freehand there's a freehand pencil tool
+where you can draw you know freehand
+lines but it's just it just creates
+messy looking things like how ugly this
+thing is and it's just not worth it so
+there's better ways there's much better
+tools for drawing in Inkscape than doing
+anything freehand so that's the word of
+caution I would give you is don't do
+freehand in Inkscape anything freehand
+just don't do it instead there's better
+ways where you can draw a path and then
+map a line or map text to a path or map
+you know you can use these paths that's
+really the power of Inkscape if you want
+to do some freehand art you should use
+something like Krita or a Photoshop or
+Inkscape
+I mean aura or but if you want to
+use some if you wanted to do the power
+of Inkscape you really want to be
+learning how to use these shapes and
+then draw shapes to accomplish your goal
+and edit the different nodes of that
+shape instead of freehand drawing so
+that was kind of a rant but in this next
+video we're gonna be looking at we'll
+look at how to control more of the
+stroke and the fill options for these
+different tools so join me on that sorry
+I created such an ugly mess in here
+because see look I can and I can't erase
+this middle part now I can't erase this
+ugliness that I created because it's
+part of this circle now isn't that
+terrible
+we can't change it we can't it's all
+just part of this one object that we've
+drawn so it's ugly
+anyway I'll stop talking about that and
+we'll catch the next video looking at
+fill and Stroke

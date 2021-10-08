@@ -1,56 +1,56 @@
 var notes = [
   {
-    "header": "CCNA",
+    "header": "",
     "title": "",
     "card-text": [
-      "k01",
+      "l01",
       "Inkscape Lesson 1 - Interface and Basic Drawing"
     ],
-    "link": "k01pl.html"
+    "link": "l01pl.html"
+  },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "l02",
+      "Inkscape Lesson "
+    ],
+    "link": "l02pl.html"
+  },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "l03",
+      ""
+    ],
+    "link": "l03pl.html"
+  },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "l04",
+      ""
+    ],
+    "link": "l04pl.html"
+  },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "l05",
+      ""
+    ],
+    "link": "l05pl.html"
   },
   {
     "header": "CCNA",
     "title": "",
     "card-text": [
-      "k02",
-      "FREE CCNA Lab 002: Basic Router Security Configuration 2"
+      "l06",
+      ""
     ],
-    "link": "k02pl.html"
-  },
-  {
-    "header": "CCNA",
-    "title": "",
-    "card-text": [
-      "k03",
-      "FREE CCNA Lab 003: Basic Router Security Configuration 3"
-    ],
-    "link": "k03pl.html"
-  },
-  {
-    "header": "CCNA",
-    "title": "",
-    "card-text": [
-      "k04",
-      "FREE CCNA Lab 004: Basic Serial Connection Configuration"
-    ],
-    "link": "k04pl.html"
-  },
-  {
-    "header": "CCNA",
-    "title": "",
-    "card-text": [
-      "k05",
-      "FREE CCNA Lab 005: VLAN Configuration"
-    ],
-    "link": "k05pl.html"
-  },
-  {
-    "header": "CCNA",
-    "title": "",
-    "card-text": [
-      "k06",
-      "FREE CCNA Lab 006: VLAN Configuration: Trunk Encapsulation"
-    ],
-    "link": "k06pl.html"
+    "link": "l06pl.html"
   }
 ]
