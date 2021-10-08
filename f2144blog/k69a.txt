@@ -1,0 +1,274 @@
+0.0
+welcome to this free CCNA packet tracer practice lab
+4.434625
+you can download the lab file from the link in the description
+8.487686
+if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description
+14.981949
+also please subscribe to the channel for more labs like this
+19.482311
+and share these videos with anyone else studying for the CCNA
+22.503468
+in this lab we will configure H SRP
+27.171064
+the hot standby router protocol
+29.784624
+H SRP is an example of an F H R P
+34.916824
+a first hop redundancy protocol
+37.130407
+H SRP is a cisco proprietary protocol by the way
+41.734670
+so it operates only on cisco equipment
+45.197481
+vrrp virtual router redundancy protocol is a vendor neutral standard similar to HSR P
+53.254647
+redundancy is important in a network because failures can occur
+58.791654
+and redundancy can prevent service outages if a failure occurs somewhere in the network
+63.705780
+in this network for example
+66.901562
+we will configure pcs in VLAN 10
+69.900519
+to use R 1 as their default gateway
+72.392787
+but in the event that our one fails pcs will automatically transition to using R 2
+78.599793
+which is functioning as the standby router as their default gateway
+82.703172
+now this means that one router will be inactive until the other fails
+87.867662
+which is a waste of bandwidth
+89.901154
+however we can achieve load balancing by assigning different default gateways for different VLANs
+96.045371
+in this network well as I said before VLAN 10 will use R 1 as the active router
+102.571606
+and R 2 as the standby
+104.657139
+we will configure VLAN 20 to use R 2 as the active router
+108.506595
+and R 1 as the standby
+110.617751
+let's get started
+112.487048
+let's start with our ones configuration
+116.188113
+enable call T H SRP is configured at the interface level
+125.213102
+let's start with G 0 1
+127.089020
+interface G 0 1
+130.016118
+H SRP is configured with the command standby
+134.524077
+followed by a group number
+136.535460
+I'll use 10 since this will be the default gateway for VLAN 10
+141.017524
+then type IP followed by the virtual IP address
+147.041038
+this is an IP address which isn't necessarily assigned to a physical interface on either router
+154.027138
+but the PCs have been configured to use it as their default gateway
+158.034462
+so when the PCs send an ARP request for the virtual IP
+163.308726
+whichever router is the active router will reply with its own MAC address
+168.208952
+so pcs will send traffic to that router
+171.202127
+our our instructions say to use 10.10 10.1 as the default gateway for VLAN 10
+177.683737
+so 10 dot N Da 10.1
+180.707637
+now we want to ensure that our 1 will be the active router
+184.837138
+so let's increase the priority
+186.528929
+first what's the default priority
+189.288430
+you can check with this command
+192.277999
+do show standby
+194.259858
+so it's priority 100
+198.002034
+which is the default
+199.087113
+let's increase the priority for a standby group 10
+202.638361
+standby 10 priority
+205.075209
+and let's increase it to 110
+208.788429
+another part of our instructions is to use HS RP version 2
+214.568157
+which offers some minor improvements over a version 1
+217.604211
+standby version 2
+220.227975
+as you may have noticed standby version 2 doesn't include the group number
+225.091150
+it applies to all standby groups on the interface
+228.203394
+ok finally let's enable preemption
+231.674278
+well what is preemption
+234.063370
+if r1 fails
+236.650967
+r2 will become the active router for VLAN 10
+239.478971
+if preemption is disabled
+242.471126
+even if r1 recovers
+244.608473
+it won't become the active router again
+246.576364
+if preemption is enabled however
+249.903460
+hour 1 will become active again when it recovers
+252.866046
+here's the command
+254.942758
+standby 10 preempt
+258.202055
+ok that's all for our ones G 0 1 interface
+261.718857
+instead of finishing the configuration on r1
+266.710014
+let to Artoo's VLAN 10 configuration
+269.710218
+and then test it
+270.940218
+enable Conti
+275.884549
+r2 will use the GZ ur to interface
+278.679763
+so interface g0 -
+280.575455
+all we have to do for r2 is standby version 2
+285.680875
+and standby 10 IP 10 10 10 1
+291.198992
+that's it
+292.901056
+we don't need to configure preemption here
+295.772303
+we only need to configure it on the active router
+298.358312
+we also don't need to change the priority
+300.905205
+since we already made our ones higher
+303.575341
+okay let's go on pc-12 test
+307.938833
+first I'll see if I can ping the virtual IP of 10 10 10 1
+313.897245
+ping 10 10 10 1
+317.342846
+ok it works
+324.410442
+now let's try to ping the external server at 1500 one
+330.006315
+ping 1500 1
+333.020578
+ok it works too
+340.024025
+now let's confirm the path being taken
+343.346224
+traceroute 1500 1
+347.286927
+as you can see traceroute shows our ones IP address
+354.723662
+not the virtual IP address
+356.483322
+so you can use it to confirm the path
+358.977585
+let's go do a reload on our one
+362.463707
+and see if r2 takes over
+364.396723
+and reload
+370.533911
+okay let's go on r2
+375.016337
+and check if it took over for r1
+377.232777
+do show standby
+382.919081
+as you can see our two is now active
+386.444727
+let's quickly try that traceroute from pc1 again
+389.778695
+traceroute 1500 1
+395.110827
+now you can see it goes via r2
+400.125203
+at 10 10 10 3
+402.120283
+now r1 is in the process of booting up
+406.143366
+however when it finishes it should take over again as the active router
+410.408537
+since we configure preemption
+412.345271
+I'll just wait for another 10 seconds or so and then go check
+417.234976
+okay hopefully that's enough time
+427.485430
+let's go on our one in check
+429.664160
+an able show standby
+435.678649
+there are one is the active router once again
+440.706858
+let's trace route one last time from pc1
+444.180101
+trace route 1500 1
+449.447380
+now it's going via our one again not our two
+455.460169
+so the configuration for VLAN 10 is complete
+464.961733
+now let's configure the opposite set up for VLAN 20
+469.454840
+r2 should be the active router with our one as backup or standby
+474.754545
+I'll configure the active r2 first
+478.679466
+interface g0 one
+483.188083
+standby version to
+485.942210
+standby 20 I P 10 20 21
+491.857312
+standby 20 preempt
+494.355475
+just to make things different I won't increase the priority on the active
+499.432686
+let's decrease the priority on the standby instead
+502.715112
+so that's all for our two
+505.220509
+let's go to our one
+507.505611
+coffee tea
+510.472912
+interface g0 to
+512.959284
+standby version to
+516.957470
+standby 20 I P 10 20 21
+521.479828
+standby 20
+524.483978
+priority 90
+525.474998
+okay that's all
+529.120985
+give them some time to talk with each other
+531.433546
+and figure things out but soon r2 should become the active and r1 the stand by for VLAN 20 let's try a ping from PC three first I'll try to ping the virtual router to make sure ping 10 20 21 okay we can reach it now let's try to ping out to the external server ping 1500 1 okay it's reachable so now let's check the path it's taking traceroute 1501 as you can see it's going via r2 at 10.20 22 let's test the failover again I'll reload our to end reload okay let's give our one a few seconds to take its role as active for VLAN 20 ok let's try let's hop back on PC 3 and traceroute again traceroute 1500 1 great the failover worked and the ping is now going via r1 at 10.20 23 this time let's wait another 10 seconds or so for r2 to come back online and take over once again as the active router okay hopefully that's enough time let's give that traceroute one more try here on PC three traceroute 1500 one alright now it's back to using R 2 as the gateway in this lab we configured HS RP and also showed how you can configure load balancing by configuring different active routers for different VLANs that's all for this lab thank you for watching I hope this lab and video have been helpful for you please subscribe for future labs like this which will be released weekly if you have requests for any specific labs let me know in the comments section if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser

@@ -1,166 +1,301 @@
 0.0
-welcome to this free gns3 practice lab
-for the CCNA 4.806864  that's right in this video
-as well as the next one I will be using
-gns3 10.208229  not packet tracer  11.624965 as much as I love
-packet tracer even today it doesn't
-support everything that is on the CCNA
-exam topics 19.246905  so for this video on
-multi-link PPP and the next video on
-pppoe I had to choose between skipping
-the topics  29.118494 or using gns3 instead 31.137976  I will
-still put the lab file in the
-description  34.561648 which you can use to load up
-the topology  36.979936 these routers are cisco c
-7200 routers 41.344359  however I can't legally
-include the iOS image files  44.898351 so you'll
-have to get those yourself 46.605326  I'll put the
-name of the iOS image I used in the
-description  50.731536 if you want to know how to
-get gns3 working  54.741640 do a quick search on
-google  56.677979 there are plenty of people who
-can teach you how to get gns3 up and
-running 60.232097  now if you just can't get gns3
-working 64.459896  make sure you watch the video
-and learn the commands as these topics
-are on the exam topics list  69.245584 let's get
-started 70.991033  in this lab we will configure
-multi-link PPP or ml PPP 77.249134  much like ether
-channel which we configured a few labs
-ago 82.087767  ml PPP groups multiple physical
-interfaces together to operate as one
-logical interface  89.001604 this provides multiple
-benefits  92.052939 you get the redundancy of
-having multiple links  95.674269 so if one link
-fails the others can keep forwarding
-traffic 99.265060  however you also get the
-increased bandwidth of having multiple
-links forwarding at the same time  105.180745 
-
-so in
-this lab we will configure multi-link
-PPP with PAP authentication between r1
-and SPR 1  113.434450 and chap authentication
-between r2 and SPR -  117.619167 I'll go on r1 first 120.469847 
-compte  122.728577 
-now SP r1 is currently configured for ml
-PPP with pap authentication 130.267828  and is
-trying to authenticate with the username
-packet and password tracer  135.759302 so let's
-configure that user account on our one 138.908486 
-username packet password tracer  143.399008 okay now
-to configure ml PPP 148.277874  let's first create
-the logical interface which is called
-multi link 153.449756  interface
-multi-link one  156.806241 okay there are a few
-commands we need to put here 160.655742  the first
-is PPP multi link  164.237329 that is followed by
-PPP multi-link group one 169.749438  we will put
-that command on the physical interfaces
-two later 174.089687  to tell them to join this
-multi link group  176.604381 keep in mind  179.011388 this multi
-link group number and the multi link
-interface number have to be the same as
-on the neighboring router 185.198214  next let's
-activate PAP authentication 189.468576  PPP
-authentication tap 193.497307  the network diagram
-says to send a username of Cisco  198.477511 and
-password of CCNA  200.758894 PPP PAP sent username
-cisco password CCNA 207.842839  finally we have to
-configure the IP address here 212.782544  not on the
-physical interfaces 215.179641  IP address 100 0 to 220.124629 
-255 255 dot 255 dot 223.970865   in interface  
-multi-link 1  234.633450 the order is different but
-there's everything I configured 239.320865  IP
-address PAP authentication  243.047645 and PPP
-multi-link configuration  247.793087 ok now let's
-configure the two physical interfaces to
-join this multi link group  254.310796 interface s1
-zero 257.353699  there are just three commands I
-need here 260.362701  we have to set the
-encapsulation on the physical interfaces
-to PPP 265.237916  so encapsulation PPP  268.935036 next tell it
-had joined the multi link group we
-created  273.853857 PPP multi-link group one 277.918551  finally
-make sure the physical interfaces aren't
-shutdown  283.615490 no shutdown  285.634673 okay now I'll do
-the same on s1 one 290.375966  interface s1 1 293.295784 
-encapsulation PPP 296.920613  PPP multi-link group 1 300.023856 
-no shutdown 302.078913  end  303.599071 ok let's do some show
-commands to verify  306.931498 first a general PPP
-show command  311.092473 show PPP all  313.691838 notice our two
-physical interfaces as well as the multi
-link interface all with the same peer
-address of 101  323.965942 which is the address of
-SPR 1 326.718550  also the peer name of packet  329.300205 which
-SPR 1 is using to authenticate 332.512223  next show
-PPP multi-link 337.761747  there's the remote user
-name of packet again  342.117734 and our local user
-name of cisco  344.682745 dan here you can see our
-two member links  348.134242 serial 1 0 and 1 1  350.542586 ok
-let's try a ping to see if it works 354.443176 
-ping 100 0 1 357.960069  there we go 359.976078 
-ok let's move on to our to 364.475262  the
-multi-link configuration will be the
-same  367.633856  just with chap authentication
-instead of PAP 371.634037  coffee tea  373.138141 first I'll
-create the user account that SP r2 will
-use to authenticate 379.140658  remember the
-username should be the same as the
-remote routers hostname 383.425760  so username SPR
-2  386.420635 and then the password should be the
-same on both route 391.057528 
-in this case password CCNA  394.754762 interface
-multi-link 1 398.763832  PPP multi-link 401.772041  PPP
-multi-link group 1  405.255374 PPP authentication
-chap 408.772449 
-and finally the IP address 411.755669  IP address
-200 0 to 255 255 dot 255 dot 255  420.270113 in
-there's the IP address followed by chap
-authentication  435.773785 and our multi-link
-configuration 438.686165  looks good 440.250700  next we just
-have to prepare the physical interfaces 444.782264 
-interface s10 448.109249  encapsulation PPP PPP
-multi-link group 1  453.832922 no shutdown 455.343035  interface
-s1 1 458.373489  encapsulation PPP  461.379271 PPP multi-link
-group 1 464.884509  no shutdown  466.391698 and ok let's confirm 469.979838 
-show PPP all  472.901403 again our physical
-interfaces as well as the multi link
-interface 478.659203  all have the same peer address 480.526097 
-200 0 0 1 482.338319  and that peers name is spr to 485.335280 
-show PPP multi-link  489.214963 the remote user name
-of SPR 2 again  493.499861 our local user name of r2 496.182990 
-and down here the two member links 499.023647 
-serial 1 0 and 1 1  502.271493 let's try to ping SPR
-to  506.327955 ping 201  509.526550 ok no problems here 513.566844 
-now let's configure static default
-routes on our routers 518.811062  so that they can
-reach each other 520.521833  via the service
-provider network 522.435688  here on r2 first  524.968613 compte
-IP route
-oh-oh-oh-oh-oh-oh-oh-oh-oh  533.249724 and the next
-hop is 201  537.458204 do show IP route 540.485415 
-there's our default route 200 g o / o 548.449701 
-next let's configure it on our one 551.576776 
-coughed e IP route
-oh-oh-oh-oh-oh-oh-oh-oh-oh  561.147048 the next hop
-is 101  564.103783 do show IP rent  567.295642 there's the
-default route  569.498885 let's try a ping to r2
-from r1  572.719724 do ping 200 go to  576.869361 great looks
-like our multi-link PPP configuration is
-working 582.870359  that's all for this lab  584.518907 thank
-you for watching 587.558204  I hope this lab and
-video have been helpful for you  591.073760 please
-subscribe for future labs like this
-which will be released weekly 595.743420  if you
-have requests for any specific labs let
-me know in the comment section 601.754758  if you
-want to support my channel I accept
-Bitcoin and etherium donations via the
-addresses in the description  607.986640 I am also a
-brave verified publisher and accept bat
-or basic attention token donations in
-the brave browser
- 617.249179 
- 617.249179 
- 617.249179 
+welcome to this free gns3 practice lab for the CCNA
+4.806864
+that's right in this video as well as the next one I will be using gns3
+10.208229
+not packet tracer
+11.624965
+as much as I love packet tracer even today it doesn't support everything that is on the CCNA exam topics
+19.246905
+so for this video on multi-link PPP and the next video on pppoe I had to choose between skipping the topics
+29.118494
+or using gns3 instead
+31.137976
+I will still put the lab file in the description
+34.561648
+which you can use to load up the topology
+36.979936
+these routers are cisco c 7200 routers
+41.344359
+however I can't legally include the iOS image files
+44.898351
+so you'll have to get those yourself
+46.605326
+I'll put the name of the iOS image I used in the description
+50.731536
+if you want to know how to get gns3 working
+54.741640
+do a quick search on google
+56.677979
+there are plenty of people who can teach you how to get gns3 up and running
+60.232097
+now if you just can't get gns3 working
+64.459896
+make sure you watch the video and learn the commands as these topics are on the exam topics list
+69.245584
+let's get started
+70.991033
+in this lab we will configure multi-link PPP or ml PPP
+77.249134
+much like ether channel which we configured a few labs ago
+82.087767
+ml PPP groups multiple physical interfaces together to operate as one logical interface
+89.001604
+this provides multiple benefits
+92.052939
+you get the redundancy of having multiple links
+95.674269
+so if one link fails the others can keep forwarding traffic
+99.265060
+however you also get the increased bandwidth of having multiple links forwarding at the same time
+105.180745
+so in this lab we will configure multi-link PPP with PAP authentication between r1 and SPR 1
+113.434450
+and chap authentication between r2 and SPR -
+117.619167
+I'll go on r1 first
+120.469847
+compte
+122.728577
+now SP r1 is currently configured for ml PPP with pap authentication
+130.267828
+and is trying to authenticate with the username packet and password tracer
+135.759302
+so let's configure that user account on our one
+138.908486
+username packet password tracer
+143.399008
+okay now to configure ml PPP
+148.277874
+let's first create the logical interface which is called multi link
+153.449756
+interface multi-link one
+156.806241
+okay there are a few commands we need to put here
+160.655742
+the first is PPP multi link
+164.237329
+that is followed by PPP multi-link group one
+169.749438
+we will put that command on the physical interfaces two later
+174.089687
+to tell them to join this multi link group
+176.604381
+keep in mind
+179.011388
+this multi link group number and the multi link interface number have to be the same as on the neighboring router
+185.198214
+next let's activate PAP authentication
+189.468576
+PPP authentication tap
+193.497307
+the network diagram says to send a username of Cisco
+198.477511
+and password of CCNA
+200.758894
+PPP PAP sent username cisco password CCNA
+207.842839
+finally we have to configure the IP address here
+212.782544
+not on the physical interfaces
+215.179641
+IP address 100 0 to
+220.124629
+255 255 dot 255 dot
+223.970865
+in interface multi-link 1
+234.633450
+the order is different but there's everything I configured
+239.320865
+IP address PAP authentication
+243.047645
+and PPP multi-link configuration
+247.793087
+ok now let's configure the two physical interfaces to join this multi link group
+254.310796
+interface s1 zero
+257.353699
+there are just three commands I need here
+260.362701
+we have to set the encapsulation on the physical interfaces to PPP
+265.237916
+so encapsulation PPP
+268.935036
+next tell it had joined the multi link group we created
+273.853857
+PPP multi-link group one
+277.918551
+finally make sure the physical interfaces aren't shutdown
+283.615490
+no shutdown
+285.634673
+okay now I'll do the same on s1 one
+290.375966
+interface s1 1
+293.295784
+encapsulation PPP
+296.920613
+PPP multi-link group 1
+300.023856
+no shutdown
+302.078913
+end
+303.599071
+ok let's do some show commands to verify
+306.931498
+first a general PPP show command
+311.092473
+show PPP all
+313.691838
+notice our two physical interfaces as well as the multi link interface all with the same peer address of 101
+323.965942
+which is the address of SPR 1
+326.718550
+also the peer name of packet
+329.300205
+which SPR 1 is using to authenticate
+332.512223
+next show PPP multi-link
+337.761747
+there's the remote user name of packet again
+342.117734
+and our local user name of cisco
+344.682745
+dan here you can see our two member links
+348.134242
+serial 1 0 and 1 1
+350.542586
+ok let's try a ping to see if it works
+354.443176
+ping 100 0 1
+357.960069
+there we go
+359.976078
+ok let's move on to our to
+364.475262
+the multi-link configuration will be the same
+367.633856
+just with chap authentication instead of PAP
+371.634037
+coffee tea
+373.138141
+first I'll create the user account that SP r2 will use to authenticate
+379.140658
+remember the username should be the same as the remote routers hostname
+383.425760
+so username SPR 2
+386.420635
+and then the password should be the same on both route
+391.057528
+in this case password CCNA
+394.754762
+interface multi-link 1
+398.763832
+PPP multi-link
+401.772041
+PPP multi-link group 1
+405.255374
+PPP authentication chap
+408.772449
+and finally the IP address
+411.755669
+IP address 200 0 to 255 255 dot 255 dot 255
+420.270113
+in there's the IP address followed by chap authentication
+435.773785
+and our multi-link configuration
+438.686165
+looks good
+440.250700
+next we just have to prepare the physical interfaces
+444.782264
+interface s10
+448.109249
+encapsulation PPP PPP multi-link group 1
+453.832922
+no shutdown
+455.343035
+interface s1 1
+458.373489
+encapsulation PPP
+461.379271
+PPP multi-link group 1
+464.884509
+no shutdown
+466.391698
+and ok let's confirm
+469.979838
+show PPP all
+472.901403
+again our physical interfaces as well as the multi link interface
+478.659203
+all have the same peer address
+480.526097
+200 0 0 1
+482.338319
+and that peers name is spr to
+485.335280
+show PPP multi-link
+489.214963
+the remote user name of SPR 2 again
+493.499861
+our local user name of r2
+496.182990
+and down here the two member links
+499.023647
+serial 1 0 and 1 1
+502.271493
+let's try to ping SPR to
+506.327955
+ping 201
+509.526550
+ok no problems here
+513.566844
+now let's configure static default routes on our routers
+518.811062
+so that they can reach each other
+520.521833
+via the service provider network
+522.435688
+here on r2 first
+524.968613
+compte IP route oh-oh-oh-oh-oh-oh-oh-oh-oh
+533.249724
+and the next hop is 201
+537.458204
+do show IP route
+540.485415
+there's our default route 200 g o / o
+548.449701
+next let's configure it on our one
+551.576776
+coughed e IP route oh-oh-oh-oh-oh-oh-oh-oh-oh
+561.147048
+the next hop is 101
+564.103783
+do show IP rent
+567.295642
+there's the default route
+569.498885
+let's try a ping to r2 from r1
+572.719724
+do ping 200 go to
+576.869361
+great looks like our multi-link PPP configuration is working
+582.870359
+that's all for this lab
+584.518907
+thank you for watching
+587.558204
+I hope this lab and video have been helpful for you
+591.073760
+please subscribe for future labs like this which will be released weekly
+595.743420
+if you have requests for any specific labs let me know in the comment section
+601.754758
+if you want to support my channel I accept Bitcoin and etherium donations via the addresses in the description
+607.986640
+I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
+617.249179
+617.249179
+617.249179

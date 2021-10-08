@@ -1,0 +1,253 @@
+0.0
+welcome to this free gns3 practice lab for the CCNA
+4.433401
+once again for this video I will be using gns3 not packet tracer
+10.827686
+packet tracer is great but there are many things which it doesn't support
+15.799817
+such as multi-link PPP from the previous lab and pppoe which we will configure in this lab
+23.696869
+you can download the gns3 file from the link in the description
+28.259658
+I will also include the name of the iOS image file I used
+32.585894
+however I cannot legally give you the file itself
+35.906347
+if you need help getting gns3 setup
+39.639226
+please look around on google or youtube
+42.060722
+david bumble for example has many videos on gns3 setup
+46.600835
+in this lab we will configure pppoe
+51.324054
+which stands for point-to-point protocol over Ethernet
+54.695302
+the original PPP which we have been configuring so far was used on serial interfaces
+61.231151
+pppoe however allows us to encapsulate PPP into Ethernet frames
+68.980630
+the service provider routers have been pre-configured
+73.163351
+so let's configure the to client routers
+75.651786
+r1 and r2 to use pppoe for their connections to the service provider
+81.606049
+let's get started
+83.131876
+I'll configure r1 first
+86.302556
+compte
+89.377636
+we are instructed to configure pppoe with two-way PAP authentication
+95.464552
+SP r1 is already configured
+98.962262
+and is using a host name of packet and a password of tracer to authenticate
+104.077114
+so let's configure that user account on r1
+106.874528
+user name packet password tracer
+112.221150
+okay now to configure pppoe we need to configure a dialer interface
+118.680719
+first interface dialer one
+121.728247
+this is a logical interface
+124.866637
+which we will later bind to the physical interface g00
+128.873576
+first we have to lower the MTU
+133.391694
+the maximum transmission unit
+135.861852
+from 1500 to 1492
+139.888179
+this is because pppoe adds another 8 byte header
+145.361580
+so MTU 1492
+150.035140
+then set the encapsulation
+153.638972
+encapsulation PPP
+156.129652
+next the IP address
+159.148745
+the client r1 will negotiate its IP address with SP r1
+164.920310
+with this command IP address negotiated
+169.773643
+next let's enable PAP authentication
+173.139130
+PPP authentication PAP
+177.866500
+then send the username and password as indicated in the topology diagram
+183.647293
+PPP PAP sent username Cisco password CCNA
+190.146295
+now the last step is to assign this to dialer pool 1
+196.168722
+which we will use later to link it to the physical interface
+200.666885
+dialer pool 1 is the command
+204.432055
+let's check
+205.652418
+do show run
+207.459152
+interface dialer 1
+209.388563
+there's the configuration
+212.247837
+MTU 1492 IP address negotiated
+218.452599
+encapsulation PPP
+220.946703
+dialer pool 1
+222.455819
+and our PAP authentication
+225.466771
+ok that's all for the dialer interface
+229.459266
+now let's link it to G 0 0
+231.954368
+interface G 0 0
+234.292576
+there's just one command we need here
+237.180966
+pppoe client
+240.023506
+dial pool number 1
+242.908381
+ok let's enable the interface
+246.414935
+no shutdown
+247.920762
+end let's check the IP address the interface received from the service provider
+256.427996
+show IP interface brief
+259.428948
+it's 102 on the dialer interface
+264.376499
+but what's this virtual access 1 entered
+267.898109
+well it was automatically created
+270.799537
+basically the dialer interface provides layer 3 information
+275.503687
+and the virtual access interface provides layer 2 information
+279.472417
+don't worry too much about the details about how it works
+283.513256
+as long as you can configure it
+285.454729
+you should be okay
+286.701215
+let's try to ping the service provider
+289.676453
+ping 100.0.0.1
+293.676906
+okay looks good
+296.751147
+next let's configure r2
+299.660512
+the only difference will be chap authentication instead of path
+304.700920
+golf tee
+307.155319
+I'll make the user account remember the username must be the host name of the other router
+313.380580
+SP r2
+314.494911
+and the password must be the same for both routers CCNA in this case
+319.233459
+so user name SPR 2 password CCNA
+325.122121
+next let's configure the dialer interface
+329.130239
+interface dialer 1
+331.149264
+MTU 1492 encapsulation PPP
+338.387177
+IP address negotiated
+342.397722
+PPP authentication chap
+345.910737
+okay and finally
+348.494320
+dialer pool 1
+350.047948
+now let's link it to the physical interface
+354.515250
+interface g00
+356.802574
+pppoe client
+359.839104
+dial pool number 1
+361.895045
+no shutdown
+363.866156
+end
+366.035295
+ok so let's see what IP address the dialer interface got from SPR to
+371.623050
+show IP interface brief
+374.660827
+202 this time
+377.894682
+and again notice the virtual access 1 interface was created as well
+382.615567
+here's one more thing
+384.830805
+show interface dialer one
+388.394070
+notice here it says bound to
+393.308492
+and then indicates the virtual access 1 interface
+396.164410
+ok let's try a ping
+398.578787
+ping 200.0.0.1
+402.203637
+great it works
+404.761664
+now like in the previous lab I'll make static default routes
+409.157673
+pointing to the service provider and then try to ping from r1 to r2
+413.991846
+conf t IP route 0.0.0.0 0.0.0.0 200.0.0.1
+424.757129
+do show IP route
+427.218671
+there it is
+429.394249
+next on r1
+431.286766
+conf t IP route 0.0.0.0 0.0.0.0 100.0.0.1
+441.754952
+do show IP route
+444.777175
+there's the default route
+447.274272
+okay let's try that ping to our to
+449.882345
+do ping 202
+454.727333
+it works
+456.239487
+our pppoe configuration was successful
+460.251505
+that's all for this lab
+461.758081
+thank you for watching I hope this lab and video have been helpful for you
+468.977379
+please subscribe for future labs like this which will be released weekly
+473.350939
+if you have requests for any specific labs let me know in the comment section
+478.855519
+if you want to support my channel I accept Bitcoin and etherium donations via the addresses in the description
+486.352979
+I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
+494.387401
+494.387401
+494.387401

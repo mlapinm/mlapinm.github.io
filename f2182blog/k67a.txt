@@ -1,181 +1,278 @@
 0.0
-welcome to this free CCNA packet racer
-practice lab 4.883696  you can download the lab
-file from the link in the description 8.924126  if
-you like these labs please consider
-supporting me via my patreon or the
-cryptocurrency options in the
-description 15.921224  also please subscribe to the
-channel for more labs like this 20.461292  and
-share these videos with anyone else
-studying for the CCNA  23.845532 in this lab we
-will configure BGP the border gateway
-protocol 30.108412 
-unlike rip AIG RP and OSPF which are
-iGPS or interior gateway protocols 38.532719  BGP
-is an eg P an exterior gateway protocol 43.594420 
-
-while I GPS are used for routing within
-an organization  48.562241  eg PS are used  for
-routing between organizations  52.273057 and these
-days BGP is really the only EGP in use 57.323873 
-the extent to which you have to know BGP
-is fairly limited for the CCNA 63.701832  you can
-go deeper into BGP by continuing to the
-ccnp or by looking at the service
-provider track of certifications 71.899383  for the
-CCNA routing and switching you have to
-be able to configure external bgp 78.494757  or
-ebgp for single home to branch
-connectivity  82.536684 single home means a single
-connection to a single internet service
-provider  88.703713 as is the case here in this
-network  91.239269 our organization is using BGP
-autonomous system number 65,000 97.691944  and is
-connected to an Internet service
-provider in a s60 5001  103.599359 we will create a
-bgp peering between r1 and SPR 1 110.216185  so r1
-will learn various desired routes from
-SP r1  114.375617 and r1 will advertise our internal
-networks  117.816071 out to the service provider 119.082488  in
-this case we will test by pinging to an
-external server at 1500 won  126.326456 let's get
-started 127.931853  first I'll go on r2 131.414619 
-enable show IP route 136.320401  as you can see r2
-has already learned various routes from
-OSPF 141.993485  which is used within the
-organization  143.877045 and has learned a default
-route to the internet from r1 147.756478  which use
-the default information originated
-command in OSPF 152.277635  however a ping to the
-external server
-15:01 won't work  158.080446 let's try 159.301874  ping 1500 dot
-1 as expected the ping fails 169.273756  this is
-because we haven't advertised our
-internal networks to the service
-provider  174.379380 so the pings have no return
-path 176.488178  so let's go on r1 and configure BGP 181.285684 
-enable con 47 mode 189.602396  type router bgp 192.191284 
-followed by the a s or autonomous system
-number  195.516636 in this case 65,000 198.236953  a s numbers
-are very important for BGP 202.103053  so make sure
-you type them correctly 203.884187  now unlike OSPF
-and EIGRP which dynamically discover
-neighbors 209.704935  by being activated on
-interfaces  211.801035 and sending multicast
-messages  213.718880 in BGP we must manually specify
-each neighbor  217.996295 and a TCP connection is
-then made to form the peering  222.192848 you can do
-that with this command  225.025002 neighbor 101  228.324163 that
-being the IP address of SP r1 231.597201  the
-service provider router  233.242961 and that next
-remote - a s  237.112462 followed by the a s number
-of the neighbor  240.413505 65,000 won in this case 243.934231 
-again a s numbers are very important for
-BGP 247.072212  so make sure you enter your own a s
-number correctly  250.551578 when entering BGP mode 251.945228 
-and make sure you type the neighbors a s
-number correctly when using the neighbor
-command  255.970693 next let's move on to
-advertising networks 259.990829  to review the
-Network statement used in a EIGRP and
-OSPF 265.242053 
-the network command doesn't actually
-specify which networks to advertise  269.175273 it
-specifies which interfaces to activate
-the protocol on  273.759196 and then those
-interfaces networks are advertised 276.642665  so
-when using the network command  279.396339 you don't
-have to enter the exact network prefix
-and mask  282.917495 however BGP is different 286.029332  in BGP
-you have to enter the exact network and
-mask  290.398652 and a matching route must be in
-your routing table  293.422824 for example our one
-has a loopback of 1.1.1 1/32  299.555953 if I enter
-100 with a / 8 mask in the network
-command 305.624774  it won't work 306.867109  I have to enter
-the exact 1.1.11
-/ 32 network to advertise it 312.930601  so let's
-advertise the loop Beck's 316.201168  do show IP
-route  319.635046 as you can see I have rights to
-1.1.11 / 32 - 2 - 2 / 32 and 3.33 3/32 331.251712 
-so I can advertise them in BGP 333.504320  the BGP
-Network command goes like this 337.283390 
-Network 1.1.11 mask 255.255.255.0 5  346.988696 you
-have to type mask in the command 349.493708  and
-also it's not a wildcard mask like in
-Eid RP and OSPF 353.843934  it's a standard Network
-mask  355.483413 okay let's do the others 357.866678  Network -
-- - - mask 255.255.255.0 5  365.571984 Network 3 3 3
-3 mask 255.255.255.0 5  373.113299 ok the next step
-is to advertise a summary of the Tendo
-12/30 10.23 o / 30  379.702800 and 10.30  382.336768 know / 30
-networks  385.639988 with a single Network command
-using a slash 16 mask 389.446405  now this is a
-problem  391.955883 I said before there has to be a
-match in the route table to advertise
-something in BGP 397.194908 
-do show IP route  400.201801 there is no 1000 2/16
-network in the routing table 405.944568  here I'll
-do the network command   408.698467 network 10000
-mask 255.255.255.0   416.457809   
-
- 431.428850 it still doesn't work 432.787921  because r1 is in
-advertising that 1000 / 16 Network yet 437.773431 
-because it doesn't have the route in its
-route table  440.362161 so let's go back to our 1
-and make a route  443.531526 exit IP route 10000 255
-255 0 0  453.486990 now what should we enter next 454.946197 
-the answer is null 0  459.473271 the null 0
-interface essentially discards anything
-that is sent to it 463.416060  why would we want to
-use that 466.220392  well we wanted to create the
-route to advertise it in BGP  470.590505 do show IP
-route 473.344632  there's the 10000 / 16 route  478.656333 and
-here are our more specific routes 481.021049  any
-traffic that comes for the Tendo 12/30
-10.30 no / 30 or 10.23 o / 30 networks
-will be sent out their appropriate
-interfaces  493.806332 because these have a more
-specific meaning a longer network mask   /
-30 vs / 16  501.859824 however if something comes
-for the 1001 o / 24 Network for example 508.024381 
-it won't match any of those and will
-instead be sent to the null 0 interface 512.850980 
-and discarded 513.895991 this   is good because the
-10.10 / 24 network 518.706443  isn't present in our
-internal network  521.252634 so there's no point in
-sending a packet destined for that
-network any further than our one 525.844085  the use
-of that null 0 interface can be a little
-difficult to understand 530.781137  feel free to ask
-questions if you're not sure about it 533.500025 
-this use of a null interface is often
-called a discard route by the way 539.164855  anyway
-now the 10000 / 60 network is present in
-our Rev table 546.722814  so that means r1 will be
-advertising it to the service provider 550.377122 
-so if we send a ping to the remote
-server from r2 554.634061  the ping reply should be
-able to find its way back now  557.939639 let's try
-on r2 559.684287  ping 1500 won 564.002472 
-there we go the ping works this time  570.563470 so
-in this lab we configured an external
-bgp neighbor  574.965194 advertised our internal
-networks  577.590273 and looked at the idea of a
-discard route 580.153538  that's all for this lab 581.877506 
-thank you for watching 585.924830  I hope this lab
-and video have been helpful for you 588.542926 
-please subscribe for future labs like
-this  591.668005 which will be released weekly 593.326214  if
-you have requests for any specific labs
-let me know in the comment section 598.659003  if
-you want to support my channel I accept
-Bitcoin and aetherium donations via the
-addresses in the description  605.760227 I am also a
-brave verified publisher and accept bat
-or basic attention token donations in
-the brave browser
- 614.896304 
- 614.896304 
- 614.896304 
+welcome to this free CCNA packet racer practice lab
+4.883696
+you can download the lab file from the link in the description
+8.924126
+if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description
+15.921224
+also please subscribe to the channel for more labs like this
+20.461292
+and share these videos with anyone else studying for the CCNA
+23.845532
+in this lab we will configure BGP the border gateway protocol
+30.108412
+unlike rip AIG RP and OSPF which are iGPS or interior gateway protocols
+38.532719
+BGP is an eg P an exterior gateway protocol
+43.594420
+while I GPS are used for routing within an organization
+48.562241
+eg PS are used for routing between organizations
+52.273057
+and these days BGP is really the only EGP in use
+57.323873
+the extent to which you have to know BGP is fairly limited for the CCNA
+63.701832
+you can go deeper into BGP by continuing to the ccnp or by looking at the service provider track of certifications
+71.899383
+for the CCNA routing and switching you have to be able to configure external bgp
+78.494757
+or ebgp for single home to branch connectivity
+82.536684
+single home means a single connection to a single internet service provider
+88.703713
+as is the case here in this network
+91.239269
+our organization is using BGP autonomous system number 65,000
+97.691944
+and is connected to an Internet service provider in a s60 5001
+103.599359
+we will create a bgp peering between r1 and SPR 1
+110.216185
+so r1 will learn various desired routes from SP r1
+114.375617
+and r1 will advertise our internal networks
+117.816071
+out to the service provider
+119.082488
+in this case we will test by pinging to an external server at 1500 won
+126.326456
+let's get started
+127.931853
+first I'll go on r2
+131.414619
+enable show IP route
+136.320401
+as you can see r2 has already learned various routes from OSPF
+141.993485
+which is used within the organization
+143.877045
+and has learned a default route to the internet from r1
+147.756478
+which use the default information originated command in OSPF
+152.277635
+however a ping to the external server 15:01 won't work
+158.080446
+let's try
+159.301874
+ping 1500 dot 1 as expected the ping fails
+169.273756
+this is because we haven't advertised our internal networks to the service provider
+174.379380
+so the pings have no return path
+176.488178
+so let's go on r1 and configure BGP
+181.285684
+enable con 47 mode
+189.602396
+type router bgp
+192.191284
+followed by the a s or autonomous system number
+195.516636
+in this case 65,000
+198.236953
+a s numbers are very important for BGP
+202.103053
+so make sure you type them correctly
+203.884187
+now unlike OSPF and EIGRP which dynamically discover neighbors
+209.704935
+by being activated on interfaces
+211.801035
+and sending multicast messages
+213.718880
+in BGP we must manually specify each neighbor
+217.996295
+and a TCP connection is then made to form the peering
+222.192848
+you can do that with this command
+225.025002
+neighbor 101
+228.324163
+that being the IP address of SP r1
+231.597201
+the service provider router
+233.242961
+and that next remote - a s
+237.112462
+followed by the a s number of the neighbor
+240.413505
+65,000 won in this case
+243.934231
+again a s numbers are very important for BGP
+247.072212
+so make sure you enter your own a s number correctly
+250.551578
+when entering BGP mode
+251.945228
+and make sure you type the neighbors a s number correctly when using the neighbor command
+255.970693
+next let's move on to advertising networks
+259.990829
+to review the Network statement used in a EIGRP and OSPF
+265.242053
+the network command doesn't actually specify which networks to advertise
+269.175273
+it specifies which interfaces to activate the protocol on
+273.759196
+and then those interfaces networks are advertised
+276.642665
+so when using the network command
+279.396339
+you don't have to enter the exact network prefix and mask
+282.917495
+however BGP is different
+286.029332
+in BGP you have to enter the exact network and mask
+290.398652
+and a matching route must be in your routing table
+293.422824
+for example our one has a loopback of 1.1.1 1/32
+299.555953
+if I enter 100 with a / 8 mask in the network command
+305.624774
+it won't work
+306.867109
+I have to enter the exact 1.1.11 / 32 network to advertise it
+312.930601
+so let's advertise the loop Beck's
+316.201168
+do show IP route
+319.635046
+as you can see I have rights to 1.1.11 / 32 - 2 - 2 / 32 and 3.33 3/32
+331.251712
+so I can advertise them in BGP
+333.504320
+the BGP Network command goes like this
+337.283390
+Network 1.1.11 mask 255.255.255.0 5
+346.988696
+you have to type mask in the command
+349.493708
+and also it's not a wildcard mask like in Eid RP and OSPF
+353.843934
+it's a standard Network mask
+355.483413
+okay let's do the others
+357.866678
+Network - - - - mask 255.255.255.0 5
+365.571984
+Network 3 3 3 3 mask 255.255.255.0 5
+373.113299
+ok the next step is to advertise a summary of the Tendo 12/30 10.23 o / 30
+379.702800
+and 10.30
+382.336768
+know / 30 networks
+385.639988
+with a single Network command using a slash 16 mask
+389.446405
+now this is a problem
+391.955883
+I said before there has to be a match in the route table to advertise something in BGP
+397.194908
+do show IP route
+400.201801
+there is no 1000 2/16 network in the routing table
+405.944568
+here I'll do the network command
+408.698467
+network 10000 mask 255.255.255.0
+416.457809
+431.428850
+it still doesn't work
+432.787921
+because r1 is in advertising that 1000 / 16 Network yet
+437.773431
+because it doesn't have the route in its route table
+440.362161
+so let's go back to our 1 and make a route
+443.531526
+exit IP route 10000 255 255 0 0
+453.486990
+now what should we enter next
+454.946197
+the answer is null 0
+459.473271
+the null 0 interface essentially discards anything that is sent to it
+463.416060
+why would we want to use that
+466.220392
+well we wanted to create the route to advertise it in BGP
+470.590505
+do show IP route
+473.344632
+there's the 10000 / 16 route
+478.656333
+and here are our more specific routes
+481.021049
+any traffic that comes for the Tendo 12/30 10.30 no / 30 or 10.23 o / 30 networks will be sent out their appropriate interfaces
+493.806332
+because these have a more specific meaning a longer network mask / 30 vs / 16
+501.859824
+however if something comes for the 1001 o / 24 Network for example
+508.024381
+it won't match any of those and will instead be sent to the null 0 interface
+512.850980
+and discarded
+513.895991
+this is good because the 10.10 / 24 network
+518.706443
+isn't present in our internal network
+521.252634
+so there's no point in sending a packet destined for that network any further than our one
+525.844085
+the use of that null 0 interface can be a little difficult to understand
+530.781137
+feel free to ask questions if you're not sure about it
+533.500025
+this use of a null interface is often called a discard route by the way
+539.164855
+anyway now the 10000 / 60 network is present in our Rev table
+546.722814
+so that means r1 will be advertising it to the service provider
+550.377122
+so if we send a ping to the remote server from r2
+554.634061
+the ping reply should be able to find its way back now
+557.939639
+let's try on r2
+559.684287
+ping 1500 won
+564.002472
+there we go the ping works this time
+570.563470
+so in this lab we configured an external bgp neighbor
+574.965194
+advertised our internal networks
+577.590273
+and looked at the idea of a discard route
+580.153538
+that's all for this lab
+581.877506
+thank you for watching
+585.924830
+I hope this lab and video have been helpful for you
+588.542926
+please subscribe for future labs like this
+591.668005
+which will be released weekly
+593.326214
+if you have requests for any specific labs let me know in the comment section
+598.659003
+if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description
+605.760227
+I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
+614.896304
+614.896304
+614.896304

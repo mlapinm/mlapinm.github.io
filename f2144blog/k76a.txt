@@ -1,0 +1,136 @@
+0.0
+welcome to this free CCNA packet tracer
+practice lab you can download the lab
+file from the link in the description if
+you like these labs please consider
+supporting me via my patreon or the
+cryptocurrency options in the
+description also please subscribe to the
+channel for more labs like this and
+share these videos with anyone else
+studying for the CCNA in this lab we
+will troubleshoot a few problems in the
+network we configured in the previous
+lab there are three issues listed in the
+instructions
+let's fix them one by one the first
+issue is that PC 2 cannot ping PC 1
+let's test it I'll ping PC 1 from PC to
+ping 192.168.1.1 hundred ok we get a
+reply from our default gateway saying
+the destination host is unreachable this
+probably means the default gateway R 2
+doesn't have a route to the network
+let's investigate on our to enable show
+IP route indeed our two only knows local
+and connected routes it's missing the
+default route out to the Internet we
+configured in the previous lab let's fix
+that
+comte IP route
+oh-oh-oh-oh-oh-oh-oh-oh-oh g 0 0 0 ok
+immediately we get a message saying our
+tunnel interface is up because we now
+have a route to the destination and if
+we wait a few seconds the OSPF neighbor
+r1 should come up as well let's try that
+ping from PC to again ping 192.168.1.1
+hundred
+okay the ping works this time we've
+solved the first issue the next problem
+is that PC for cannot pain pc3 let's
+test that out I'll ping pc 3 from PC for
+ping 192.168 3.1 hundred ok the thing
+fails this time our default gateway
+doesn't send destination host
+unreachable so it's probably a different
+issue
+let's check out our for enable show IP
+route as you can see our 4 has a default
+route so it should be able to reach the
+1 and 2.16 8.30 slash 24 network which
+is connected to our 3 let's check out
+our 3 enable show IP route ok our 3 only
+has connected and local roads no AI GRP
+or even BGP routes this means that the
+ping from pc 4 was able to reach pc 3
+but our 3 couldn't send the reply back
+because it doesn't have a route to
+192.168.0 slash 24 the lack of BGP
+routes isn't relevant to this current
+issue so let's look at the EA grpe issue
+show IP erp neighbors no neighbors
+that's a problem show IP protocols can
+you identify the issue under routing for
+networks 203 OD 1 1 3 8 / 30 is listed
+which is fine 192.168.0 is listed which
+is fine it's a class full / 24 network
+so the prefix length isn't displayed but
+192.168.0 / 32 is incorrect
+r 3 doesn't have any interface in
+192.168.0 / 32 Network its G 0 1
+interface is 192.168.0.1 let's fix that
+statement coffee tea red ER e IG RP 100
+no network 192.168.0 oh-oh-oh-oh network
+192.168.0.0 oh-oh-oh 255 ok immediately
+the adjacency comes up do show IP route
+okay
+now R 3 has a route to 192.168.0 / 24
+let's try that ping again from pc 4 in
+192.168 3.1 hundred ok the ping works
+this time now the last problem is that
+hosts in enterprise B cannot ping hosts
+in enterprise a that probably has to do
+with the fact that our 3 still has no
+BGP routes let's go back on our three to
+investigate and show IP BGP summary ok
+so two of 302 139 in a s 65 thousand one
+is configured as our neighbor that's
+correct
+show IP bgp neighbors ok here at the top
+it says BGP state equals active that
+sounds like a good thing but really it
+means that BGP is actively trying to
+form an adjacency the state we really
+want is established the BGP
+configuration looks fine however so
+maybe there is something wrong with the
+interface show interface s 0 0 0
+encapsulation hdl-c
+there's a problem
+it's supposed to be using PPP as we
+configured in the last lab show run
+indeed PPP isn't configured on the
+interface if I scroll up a little
+however you can see the appropriate
+username and password combination is
+configured so we just have to configure
+the encapsulation and authentication
+mode coffee/tea interface s 0 0 0
+shutdown encapsulation PPP PPP
+authentication chap no shutdown okay
+let's wait 10 seconds or so for the BGP
+adjacency to come up
+okay now let's check the route table do
+show IP route okay now we have all of
+those BGP routes let's try a ping from
+PC for two PC one ping 192.168.1.1
+hundred
+okay the ping works we've solved the
+network issues that's all for this lab
+thank you for watching I hope this lab
+and video have been helpful for you this
+is the final video in my CCNA lab series
+thank you all for your support as of now
+I have over 1200 subscribers which is
+amazing and the channel keeps growing I
+have another project planned and I will
+make a video to let you know about it
+soon please subscribe for updates on
+that and for future content if you want
+to support my channel
+I accept cryptocurrency donations via
+the addresses in the description I am
+also a brave verified publisher and
+accept bat or basic attention token
+donations in the brave browser

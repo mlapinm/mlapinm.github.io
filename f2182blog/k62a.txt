@@ -1,124 +1,239 @@
 0.0
-welcome to this free CCNA packet tracer
-practice lab4.795145  you can download the lab 
-file from the link in the description  7.979686  if
-you like these labs please consider
-supporting me via my patreon or the
-cryptocurrency options in the
-description 16.680582  also please subscribe to the
-channel for more labs like this 19.929311  in this
-lab we will troubleshoot PPP the
-point-to-point protocol 26.040790 
-I took the topology from the last lab
-and added two more pairs of routers  31.344623 so
-r1 and r3 are authenticated using pap 36.188415 
-and r2 and r4 are authenticating using
-chap  40.149686 however there is one miss
-configuration on each of them  44.467019 which is
-preventing PPP from working  46.953582 let's go one
-by one and find the issues 50.131644  let's start
-on r1  54.203915 
-
-enable show interfaces s0 0 60.067975  so the
-correct encapsulation PPP is used 64.927537 
-however the interface is up-down 67.233226  now r1
-should have a username packet  71.274421 and a
-password tracer configured  73.340553 which SP r1
-will use to authenticate 76.727967 
-let's check 77.901699  show run  79.671005 there it is so no
-problems there 84.023885  now is r1 sending the
-correct username Cisco and password CCNA
-- SPR one  90.346641 looks like it isn't  93.399929 the PPP
-PAP sent username password command isn't
-configured  99.027862 let's go fix that  100.605170 compte
-interface s0 0 105.847869 
-shutdown  107.843043 PPP PAP sent a username cisco
-password CCNA  114.233800 no shutdown  116.227124 do show IP
-interface brief  120.233149 ok the interface is up
-up 123.978667  let's try to ping SP r1 126.475804  do ping 100
-Oh Oh 1 130.485778 
-okay looks like it works now  135.719001 so we've
-solved the problem on our one 138.038695  now let's
-check out our three which is also
-configured to use PPP with PAP 145.147038  enable
-show interfaces s0 0 150.140179  again
-correct encapsulation but the interface
-is up down  155.251823 our three should have a user
-named CCNA and a password CCENT
-configure which SP our three will use to
-authenticate  163.669368 let's check for that  164.763405 show
-run 166.995635  there it is
-is it sending the username Cisco and
-password CCNP to SP r3 to authenticate 176.491958 
-yes it is so what's the issue 179.801987  it's the
-line right above here 182.210731  PPP authentication
-chap 185.419356  r3 is supposed to be using PAP not
-chap authentication  190.953705 coffee tea interface
-s0 0 194.959028 
-shut down no PPP authentication chap 200.547802  PPP
-authentication PAP 204.072465  no shutdown  206.085860 do show
-IP interface brief 209.587046  ok the interface is
-up up 212.825680  let's try a ping to SPR 3 216.059824  do ping
-1 3000 won 221.261489  great it works 225.246540  next let's go
-to our to 228.866160  enable show interfaces s0 0 234.443112 
-same situation  237.001995 correct encapsulation PPP 239.207477 
-but the interface isn't up 240.973845  r2 is
-configured to use chap authentication  244.621223 so
-it should have a user account configure
-with the username SP r2 249.615636  which is the
-host of the router sorry the host name
-of the router at the other end  253.791556 and a
-password of CCNA  256.189006 which must be identical
-to the password configured on SPR to 260.413803 
-show run 262.617619 
-username r2 password CCNA  268.113641 there's the
-problem 270.277405  it's configured with its own
-host name  272.438071 but it should be SPR to s host
-name  275.139196 coffee tea  277.193426 no user name are two
-passwords CCNA  282.775870 username SPR two password
-CCNA  288.064462 now I'll go reset the interface 291.148813 
-interface s00 293.431292 
-shutdown no shutdown  297.437543 do show IP
-interface brief  301.930991 okay it's up up now 305.599015 
-let's try a ping  307.826867 do ping 200 0.1 312.418021  okay
-looks like r2 is working now 317.762464  finally
-let's go to r4 320.809294  enable show interfaces s0
-0 327.291486 
-encapsulation PPP is correct 330.773833  but the
-interface is down 332.818793  like r2 r4 ship using
-chap authentication 337.666804  so it should have a
-username s PR for password CCIE
-configured  344.135130 s PR for being the host name
-of the other router it's connected to 348.449553 
-show run  350.332423 ok that looks correct 353.837770 
-let's check the interface configuration 356.838923 
-ok we're missing something here 361.608765  the PPP
-authentication chap statement is missing 365.638703 
-coffee tea interface s 0 0  369.644674 shutdown PPP
-authentication chap 374.639634  no shutdown 376.652027  do show
-IP interface brief  380.945097 ok it's up up now 385.448996  do
-ping 1 4000 dot 1 389.959373 
-okay it's working 393.948510 
-I've pre-configured default routes to
-the service provider on each router 399.026082  so
-if I try to ping r2 r3 or r1 from our 4
-it should work now 405.168106  let's try 406.739898  first I'll
-ping r1 409.882107  do ping 100 oh oh -  414.392586 ok it works 417.898140 
-how about r3  420.898929 do ping 1 3000 - it works
-as well  428.818686 and let's try our to  430.354138 do ping 200
-go - it works as well 438.401157  that's all for
-this lab 440.355331  thank you for watching 443.955661  I hope
-this lab and video have been helpful for
-you  447.358802 please subscribe for future labs
-like this 450.185376  which will be released weekly 452.067245 
-if you have requests for any specific
-labs let me know in the comment section 457.076705 
-if you want to support my channel I
-accept Bitcoin and etherium donations
-via the addresses in the description 463.789653  I
-am also a brave verified publisher and
-accept bat or basic attention token
-donations in the brave browser
- 472.419727 
- 472.419727 
- 472.419727 
+welcome to this free CCNA packet tracer practice lab
+4.795145
+you can download the lab file from the link in the description
+7.979686
+if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description
+16.680582
+also please subscribe to the channel for more labs like this
+19.929311
+in this lab we will troubleshoot PPP the point-to-point protocol
+26.040790
+I took the topology from the last lab and added two more pairs of routers
+31.344623
+so r1 and r3 are authenticated using pap
+36.188415
+and r2 and r4 are authenticating using chap
+40.149686
+however there is one miss configuration on each of them
+44.467019
+which is preventing PPP from working
+46.953582
+let's go one by one and find the issues
+50.131644
+let's start on r1
+54.203915
+enable show interfaces s0 0
+60.067975
+so the correct encapsulation PPP is used
+64.927537
+however the interface is up-down
+67.233226
+now r1 should have a username packet
+71.274421
+and a password tracer configured
+73.340553
+which SP r1 will use to authenticate
+76.727967
+let's check
+77.901699
+show run
+79.671005
+there it is so no problems there
+84.023885
+now is r1 sending the correct username Cisco and password CCNA - SPR one
+90.346641
+looks like it isn't
+93.399929
+the PPP PAP sent username password command isn't configured
+99.027862
+let's go fix that
+100.605170
+compte interface s0 0
+105.847869
+shutdown
+107.843043
+PPP PAP sent a username cisco password CCNA
+114.233800
+no shutdown
+116.227124
+do show IP interface brief
+120.233149
+ok the interface is up up
+123.978667
+let's try to ping SP r1
+126.475804
+do ping 100 Oh Oh 1
+130.485778
+okay looks like it works now
+135.719001
+so we've solved the problem on our one
+138.038695
+now let's check out our three which is also configured to use PPP with PAP
+145.147038
+enable show interfaces s0 0
+150.140179
+again correct encapsulation but the interface is up down
+155.251823
+our three should have a user named CCNA and a password CCENT configure which SP our three will use to authenticate
+163.669368
+let's check for that
+164.763405
+show run
+166.995635
+there it is is it sending the username Cisco and password CCNP to SP r3 to authenticate
+176.491958
+yes it is so what's the issue
+179.801987
+it's the line right above here
+182.210731
+PPP authentication chap
+185.419356
+r3 is supposed to be using PAP not chap authentication
+190.953705
+coffee tea interface s0 0
+194.959028
+shut down no PPP authentication chap
+200.547802
+PPP authentication PAP
+204.072465
+no shutdown
+206.085860
+do show IP interface brief
+209.587046
+ok the interface is up up
+212.825680
+let's try a ping to SPR 3
+216.059824
+do ping 1 3000 won
+221.261489
+great it works
+225.246540
+next let's go to our to
+228.866160
+enable show interfaces s0 0
+234.443112
+same situation
+237.001995
+correct encapsulation PPP
+239.207477
+but the interface isn't up
+240.973845
+r2 is configured to use chap authentication
+244.621223
+so it should have a user account configure with the username SP r2
+249.615636
+which is the host of the router sorry the host name of the router at the other end
+253.791556
+and a password of CCNA
+256.189006
+which must be identical to the password configured on SPR to
+260.413803
+show run
+262.617619
+username r2 password CCNA
+268.113641
+there's the problem
+270.277405
+it's configured with its own host name
+272.438071
+but it should be SPR to s host name
+275.139196
+coffee tea
+277.193426
+no user name are two passwords CCNA
+282.775870
+username SPR two password CCNA
+288.064462
+now I'll go reset the interface
+291.148813
+interface s00
+293.431292
+shutdown no shutdown
+297.437543
+do show IP interface brief
+301.930991
+okay it's up up now
+305.599015
+let's try a ping
+307.826867
+do ping 200 0.1
+312.418021
+okay looks like r2 is working now
+317.762464
+finally let's go to r4
+320.809294
+enable show interfaces s0 0
+327.291486
+encapsulation PPP is correct
+330.773833
+but the interface is down
+332.818793
+like r2 r4 ship using chap authentication
+337.666804
+so it should have a username s PR for password CCIE configured
+344.135130
+s PR for being the host name of the other router it's connected to
+348.449553
+show run
+350.332423
+ok that looks correct
+353.837770
+let's check the interface configuration
+356.838923
+ok we're missing something here
+361.608765
+the PPP authentication chap statement is missing
+365.638703
+coffee tea interface s 0 0
+369.644674
+shutdown PPP authentication chap
+374.639634
+no shutdown
+376.652027
+do show IP interface brief
+380.945097
+ok it's up up now
+385.448996
+do ping 1 4000 dot 1
+389.959373
+okay it's working
+393.948510
+I've pre-configured default routes to the service provider on each router
+399.026082
+so if I try to ping r2 r3 or r1 from our 4 it should work now
+405.168106
+let's try
+406.739898
+first I'll ping r1
+409.882107
+do ping 100 oh oh -
+414.392586
+ok it works
+417.898140
+how about r3
+420.898929
+do ping 1 3000 - it works as well
+428.818686
+and let's try our to
+430.354138
+do ping 200 go - it works as well
+438.401157
+that's all for this lab
+440.355331
+thank you for watching
+443.955661
+I hope this lab and video have been helpful for you
+447.358802
+please subscribe for future labs like this
+450.185376
+which will be released weekly
+452.067245
+if you have requests for any specific labs let me know in the comment section
+457.076705
+if you want to support my channel I accept Bitcoin and etherium donations via the addresses in the description
+463.789653
+I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
+472.419727
+472.419727
+472.419727

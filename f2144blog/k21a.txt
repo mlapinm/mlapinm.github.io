@@ -1,0 +1,233 @@
+0.0
+welcome to this free CCNA packet tracer practice lab
+4.303783
+you can download the lab file from the link in the description
+7.763039
+if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description
+15.320696
+this lab uses the same topology as the previous lab number 20
+21.30342
+whereas lab 20 had you configured various technologies
+25.130751
+this lab requires you to troubleshoot several configuration errors to restore connectivity between pcs 1 2 3 & 4
+33.293928
+troubleshooting is a valuable skill
+36.438605
+and also good practice for the exam
+38.591553
+as you will most likely encounter some sort of troubleshooting lab in your exam
+43.003835
+in this video I won't go through the exact troubleshooting method I would use to fix the topology
+49.089114
+there is somewhat of an art to troubleshooting
+52.404091
+and you can go about it in many ways
+54.563013
+instead I will just show you the configuration errors one by one
+58.39374
+however it is important to have some sort of system to troubleshoot
+62.271893
+try to complete the lab yourself first then continue watching this video if you can't find and fix all of the configuration errors
+70.135207
+or watch it after to check your solution
+72.519729
+first let's try to ping from pc1 and see if it can reach the other pcs
+79.778649
+ping no.1 dot 12 can't reach PC 2 ping 10.0.0.13 can't reach PC 3
+95.666926
+and ping 10.0.1.14
+98.885968
+can't reach PC 4
+103.211489
+so PC 1 can't reach any of the other pcs
+106.108577
+there are multiple miss configurations in this lab
+109.198458
+and they all contribute to that
+110.696752
+but let's look at one of them
+112.498723
+I'll go on switch one
+114.90809
+password out of CCNA enable
+120.592255
+if you use the command shell port security
+123.811233
+notice that the security violation count is not zero
+127.708013
+this is because our pings have been triggering port security violations
+132.238716
+show run look here under f02
+137.670854
+sticky MAC address learning is supposed to be configured
+140.807629
+but instead a secure MAC address of i.i.i.i.i.i is configured
+147.347392
+let's fix that
+149.803832
+conf t interface f0 2 no switch port port security MAC address eh-eh-eh-eh eh-eh-eh-eh eh-eh-eh-eh
+163.152371
+ok that remove the configuration
+165.437387
+now lets enable sticky mac learning
+168.149098
+switch port port security MAC address sticky
+174.034893
+ok now let's try to ping from pc1 again
+178.049027
+just a PC 2
+179.279544
+ping 10.0.1.12
+184.615155
+it doesn't work
+189.050085
+but let's go back to switch 1 again
+191.246629
+do show port security
+196.321261
+notice that the security violation counter hasn't increased
+200.08195
+so PC one isn't triggering anymore port security violations
+203.972197
+but there are still problems elsewhere
+205.976522
+next let's check our inter VLAN routing since PC 1 can't ping PC 2
+213.676235
+let's go on r1
+217.146528
+password of CCNA enable show run
+223.224958
+look at the two sub interfaces of G 00
+226.423513
+there is one miss configuration on each
+229.098264
+on the g0 0.13 sub-interface the IP address is incorrect
+234.328624
+it should be 10.0.0.1
+236.59346
+which is the default gateway set on the pcs in VLAN 13
+240.326284
+not 10.0.0.2
+242.209312
+also the v/line of the g0 0.24 sub interface is incorrect
+248.137306
+it should be 24 not 2
+250.374074
+lets fix those errors
+252.817964
+conf t interface G 0 0 13
+257.605494
+IP address 10.0.0.1 255.255.255.0
+265.850299
+note that you don't have to remove the previous IP address first
+269.290594
+this overrides it
+270.566411
+next interface G 0 0 24 encapsulation dot1q 24
+279.71375
+ok that should fix it
+282.573719
+now PC one should be able to ping PC 2
+286.108723
+there are still problems on switch 2 which will prevent it from reaching PC 3 and PC 4
+291.852236
+however because pc1 & pc2 are connected to the same switch
+296.217764
+and we fixed the inter VLAN routing they should be able to reach each other
+299.772586
+I'll go on PC 1 to try
+302.374493
+ping 10.0.1.12
+307.383363
+there we go
+309.916392
+just to confirm let's try pc3 too
+313.209041
+ping 10.0.0.13 doesn't work
+321.924383
+now let's go on switch 2
+326.244596
+password of CCNA enable
+331.178486
+let's check if the trunk between switch 1 and switch 2 is working
+335.393006
+show interfaces trunk
+338.334925
+nothing appears
+340.877128
+that's a problem we could use show run to check but let's try another command
+345.446692
+just to get familiar with the various show commands available
+348.197258
+show interfaces f01
+352.122072
+switch port
+353.524916
+take a look at all the info here and familiarize yourself with it
+357.214212
+for this lab what we want to look at is here
+360.922008
+the administrative and operational mode is static access
+364.830995
+meaning it has be configured as an access port
+368.122358
+not a trunk
+369.08853
+let's fix that
+370.726602
+conf T interface f01 switch port mode trunk
+378.433259
+okay that solves that
+380.737688
+however one more problem remains on switch 2
+383.852604
+do show VLAN brief
+387.314513
+look here f03 is in VLAN 24 as it should be however the f02 interface is in VLAN 23
+397.130159
+which is not correct
+398.726114
+it should be in VLAN 13
+401.166776
+let's fix that
+402.74561
+interface f0 2 switch port access VLAN 13
+409.036045
+okay that's all the misconfigurations
+413.245456
+that should restore full connectivity between the four pcs
+417.187762
+it can take some time for a spanning tree to reconverge so things might not work immediately
+423.813781
+if you haven't studied spanning 4 yet don't worry about it yet
+427.564804
+but after changes the configuration like we just did it can take some time for the switches to communicate the changes to each other
+435.108938
+and for those changes to take effect across the network
+437.725794
+hopefully enough time has passed
+441.406654
+so let's go on pc-1 to tests
+444.321406
+I'll ping PC 2 first although we already tested before and it worked
+449.318302
+ping 10.0.1.12 the ping works again
+456.521528
+next let's ping pc3 which didn't work previously because of the misconfigurations on switch 2
+462.97534
+ping 10.0.0.13 now the ping works
+472.392529
+and finally I'll ping PC 4 ping 10.0.1.14 it works as well
+486.134943
+this lab is now complete
+487.804559
+thank you for watching I hope this lab and video have been helpful for you please subscribe for future labs like this which will be released weekly if you have requests for any specific labs let me know in the comment section if you want to support my channel please consider contributing to my patreon
+511.129076
+patreon.com / Jeremy's IT lab
+514.746918
+I accept Bitcoin and aetherium donations via the addresses in the description
+519.843854
+I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
+528.633272
+528.633272
+528.633272
