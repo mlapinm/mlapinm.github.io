@@ -1,126 +1,207 @@
 0.0
-welcome to this free gns3 lab for the
-CCNA once again because packet tracer
-doesn't support all of the features
-necessary for CCNA studies I have chosen
-to do this lab in gns3 rather than just
-skip the topic you can download the lab
-file from the link in the description
-however you will also need the Cisco IOS
-image to use for these routers I will
-include the name of the iOS image I used
-in the description however I cannot
-legally distribute the file itself if
-you like these labs please consider
-supporting me if you have my patreon or
-the cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this and
-share these videos with anyone else
-studying for the CCNA in this short lab
-we will look at IP SLA SLA stands for
-service level agreement what is an SLA
-it's an agreement between a service
-provider and a client for example a
-guarantee of latency or internet speed
-you can configure various IP SLA
-operations in Cisco IOS however for the
-CCNA you just have to be familiar with
-the ICMP echo operation aka ping the
-ICMP echo operation sends pings at
-regular intervals and keeps a count of
-how many succeed and how many fail let's
-get started let's hop on our one I will
-configure the ICMP echo operation to
-send pings to our two coughed II use the
-following command IP SLA followed by the
-operation number you can configure
-multiple IP SLA operations on the same
-device so a number is necessary to
-identify them I'll use one and then
-there are no more options now I'm in IP
-SLA configuration mode
-let's check the options as you can see
-there are various kinds of operations
-that we can use let's configure an ICM
-a cooperation and then enter the
-destination address of 1200 - okay now
-I'm brought into IPS la Echo
-configuration mode again there are
-plenty of options here but let's just
-specify the frequency which is how often
-the pings will be sent to our - the
-instructions say to use a frequency of
-five so frequency five that's it now we
-have to schedule the operation that is
-done in global configuration mode exit
-once again the command starts with IP
-SLA this time followed by schedule and
-the operation number one next let's
-specify the start time we could
-configure it to start after ten minutes
-for example or start at a specific time
-like 12 o'clock for example but let's
-schedule it to start now next let's
-specify the life which is how long we
-want the operation to continue the
-instructions say to schedule it to
-continue until manually stopped so let's
-use the forever option r1 will continue
-sending pings forever until we remove
-that configuration okay that's all there
-is to the configuration there are two
-main parts configuring the operation and
-scheduling the operation let's confirm
-our configuration exit show IP SLA
-configuration there is entry number one
-it's type is ICMP echo and there's the
-target of 1200 - also a frequency of
-five start time already passed since we
-configure its start time now and also
-life forever now let's check the IP SLA
-statistics to see how many things were
-successful show IP SLA status
-dicks there's the number of successes
-and if I wait for a few seconds and then
-enter the command again the number
-should increase show IP SLA statistics
-there you can see that the number has
-increased because pings are being sent
-every five seconds
-also notice the latest RTT appear that's
-the latest round-trip time which is how
-long the ping took to go to r2 and come
-back
-now let's shut down our twos g00
-interface and then the number of
-failures should start increasing compte
-interface g00 shutdown now let's go back
-on our one i'll wait 10 seconds or so to
-let a few pings be sent
-okay let's check show IP SLA statistics
-as you can see the number of failures
-has started increasing and the latest
-RTT indicates no connection busy or time
-out let's enable our 2's g00 interface
-now no shutdown okay now all wait 10
-seconds or so again to let a few more
-pings be sent from r1 to r2
-okay now let's check the IP SLA
-statistics once more on our one the
-number of successes should have
-increased and we should see a normal
-latest RTT value show IP SLA statistics
+welcome to this free gns3 lab for the CCNA
+4.116979
+once again because packet tracer doesn't support all of the features necessary for CCNA studies
+11.004312
+I have chosen to do this lab in gns3
+14.042499
+rather than just skip the topic
+16.053374
+you can download the lab file from the link in the description
+19.863707
+however you will also need the Cisco IOS image to use for these routers
+24.847978
+I will include the name of the iOS image I used in the description
+29.970415
+however I cannot legally distribute the file itself
+33.030707
+if you like these labs please consider supporting me if you have my patreon or the cryptocurrency options in the description
+40.423207
+also please subscribe to the channel for more labs like this
+45.576290
+and share these videos with anyone else studying for the CCNA
+49.469436
+in this short lab we will look at IP SLA
+54.541894
+SLA stands for service level agreement
+58.295165
+what is an SLA
+60.342831
+it's an agreement between a service provider and a client
+64.248497
+for example a guarantee of latency or internet speed
+69.041435
+you can configure various IP SLA operations in Cisco IOS
+74.327289
+however for the CCNA you just have to be familiar with the ICMP echo operation
+80.663956
+aka ping
+81.705476
+the ICMP echo operation sends pings at regular intervals
+86.891017
+and keeps a count of how many succeed and how many fail
+90.446580
+let's get started
+91.975413
+let's hop on our one
+95.286184
+I will configure the ICMP echo operation to send pings to our two
+100.252121
+coughed II use the following command
+104.473267
+IP SLA followed by the operation number
+108.828517
+you can configure multiple IP SLA operations on the same device
+113.709079
+so a number is necessary to identify them
+116.848892
+I'll use one
+118.257683
+and then there are no more options
+120.781579
+now I'm in IP SLA configuration mode
+124.250787
+let's check the options
+127.021642
+as you can see there are various kinds of operations that we can use
+131.532975
+let's configure an ICM a cooperation
+134.711579
+and then enter the destination address of 12.0.0.2
+140.178141
+okay now I'm brought into IPS la Echo configuration mode
+145.785245
+again there are plenty of options here but let's just specify the frequency
+151.328849
+which is how often the pings will be sent to our -
+154.298016
+the instructions say to use a frequency of five
+158.072016
+so frequency five
+160.485766
+that's it
+161.725307
+now we have to schedule the operation
+165.517891
+that is done in global configuration mode
+168.522932
+exit once again the command starts with IP SLA
+174.644849
+this time followed by schedule and the operation number one
+179.565078
+next let's specify the start time
+183.324016
+we could configure it to start after ten minutes for example or start at a specific time like 12 o'clock for example
+192.941766
+but let's schedule it to start now
+196.085724
+next let's specify the life
+200.258911
+which is how long we want the operation to continue
+203.059974
+the instructions say to schedule it to continue until manually stopped
+207.887286
+so let's use the forever option
+210.487411
+r1 will continue sending pings forever
+214.245765
+until we remove that configuration
+216.477640
+okay that's all there is to the configuration
+221.265411
+there are two main parts
+224.293765
+configuring the operation and scheduling the operation
+228.224786
+let's confirm our configuration
+231.896453
+exit show IP SLA configuration
+236.404474
+there is entry number one
+239.657474
+it's type is ICMP echo
+243.426245
+and there's the target of 12.0.0.2
+247.426495
+also a frequency of five start time already passed
+253.172932
+since we configure its start time now
+255.273265
+and also life forever
+258.210182
+now let's check the IP SLA statistics
+262.139245
+to see how many things were successful
+264.249078
+show IP SLA status dicks
+268.382474
+there's the number of successes
+271.460932
+and if I wait for a few seconds
+274.448203
+and then enter the command again
+276.719057
+the number should increase
+278.407890
+show IP SLA statistics
+283.952244
+there you can see that the number has increased
+287.034389
+because pings are being sent every five seconds
+289.769848
+also notice the latest RTT appear
+294.780681
+that's the latest round-trip time
+297.476139
+which is how long the ping took to go to r2 and come back
+301.748452
+now let's shut down our twos g00 interface
+306.337389
+and then the number of failures should start increasing
+309.391723
+compte
+312.652327
+interface g00 shutdown
+316.735410
+now let's go back on our one
+319.693347
+i'll wait 10 seconds or so to let a few pings be sent
+324.800305
+okay let's check
+338.025972
+show IP SLA statistics
+341.536180
+as you can see the number of failures has started increasing
+346.124263
+and the latest RTT indicates no connection busy or time out
+352.013408
+let's enable our 2's g00 interface now
+355.863763
+no shutdown
+359.026742
+okay now all wait 10 seconds or so again to let a few more pings be sent from r1 to r2
+365.575054
+okay now let's check the IP SLA statistics once more on our one
+380.129471
+the number of successes should have increased
+383.226242
+and we should see a normal latest RTT value
+387.477867
+show IP SLA statistics
+391.105783
 there we go the pings are working again
-that's all for this lab thank you for
-watching I hope this lab and video have
-been helpful for you there are only a
-few more labs left in my CCNA series but
-please subscribe to catch my next
-project if you want to support my
-channel I accept cryptocurrency
-donations via the addresses in the
-description I am also a brave verified
-publisher and accept bat or basic
-attention token donations in the brave
-browser
+395.267033
+that's all for this lab
+397.108533
+thank you for watching
+401.108741
+I hope this lab and video have been helpful for you
+404.198428
+there are only a few more labs left in my CCNA series but please subscribe to catch my next project
+411.741636
+if you want to support my channel I accept cryptocurrency donations via the addresses in the description
+418.106698
+I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
+426.794303
+426.794303
+426.794303

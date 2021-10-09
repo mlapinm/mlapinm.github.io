@@ -1,123 +1,189 @@
 0.0
-welcome to this free CCNA packet tracer
-practice lab you can download the lab
-file from the link in the description if
-you like these labs please consider
-supporting me via my patreon or the
-cryptocurrency options in the
-description also please subscribe to the
-channel for more labs like this and
-share these videos with anyone else
-studying for the CCNA in this lab we
-will configure span which stands for
-switched port analyzer span copies the
-traffic from a particular interface and
-sends it to another interface which
-typically leads to a monitoring server
-to monitor and analyze the traffic
-passing through the monitored interface
-packet tracer doesn't include an actual
-monitoring server but will use a cool
-feature of packet tracer the simulation
-mode to verify that our configurations
-are working let's get started okay the
-first step is to simply ping from PC 2
-to PC 1 this is just to make sure PC 2
-completes the ARP process you may have
-noticed in these labs that the first
-ping often fails that is because of the
-art process not finishing before the
-ping times out so let's do that ping
-ping 1001 10
+welcome to this free CCNA packet tracer practice lab
+4.956478
+you can download the lab file from the link in the description
+8.146395
+if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description
+15.365520
+also please subscribe to the channel for more labs like this
+18.919603
+and share these videos with anyone else studying for the CCNA
+22.930770
+in this lab we will configure span
+26.479353
+which stands for switched port analyzer
+29.005749
+span copies the traffic from a particular interface
+32.922978
+and sends it to another interface
+35.652541
+which typically leads to a monitoring server to monitor and analyze the traffic passing through the monitored interface
+42.038437
+packet tracer doesn't include an actual monitoring server
+47.046999
+but will use a cool feature of packet tracer the simulation mode to verify that our configurations are working
+53.981645
+let's get started
+55.391478
+okay the first step is to simply ping from PC 2 to PC 1
+60.814728
+this is just to make sure PC 2 completes the ARP process
+65.471916
+you may have noticed in these labs that the first ping often fails
+69.535666
+that is because of the art process not finishing before the ping times out
+73.669957
+so let's do that ping
+77.237416
+ping 10.0.1.10
+80.486061
 okay as you can see the first ping fails
-but then after pc2 learns the MAC
-address of its default gateway the
-following pings succeed now let's switch
-to simulation mode which is here in the
-bottom right this useful feature lets us
-trace the path of traffic and analyze it
-at different points in its path okay now
-let's ping again ping 1001 10 here you
-can see the ICMP packet at PC 2 then I
-click Next and it is sent to switch to
-then R 2 R 1 switch 1 and arrives at PC
-1 PC 1 then sends the reply back to
-switch 1 R 1 R 2 switch 2 and then it
-arrives at the destination PC 2 if I
-keep clicking here you can see other
-traffic being sent including spanning
-tree B PDUs from the switches EA GRP
-hello packets between the routers and
-the other pings sent from PC to does PC
-1 ok let's return to real-time mode so
-we confirm that the pings traveled from
-PC to in a straight path to PC 1 no ICMP
-packets were sent to server 1 now let's
-configure switch 1 to monitor the input
-and output traffic on its G 0 1
-interface and send it to a server 1 I'll
-hop on switch 1 now enable conf T span
-is configured right here at global
-configuration mode with the monitor
-command then type session and give it a
-number I'll sell you one next we specify
-the source or destination the order
-doesn't matter let's do this source now
-there are multiple types of span but for
-the CCNA you just have to do local span
-which means from one interface on the
-switch to another so the source will be
-interface g0 one
-then finally I will specify both to
-monitor both incoming and outgoing
-traffic on the interface you could
-instead specify Rx for ingress or
-incoming traffic or TX for egress or
-outgoing traffic okay next let's specify
-the destination interface which will be
-g0 - because it's connected to server 1
-monitor session one destination
-interface g0 - okay that's all there is
-to configuring local span it's really
-quite simple
-now let's switch to simulation mode once
-more and ping from PC - to PC one and
-will confirm that copies of the traffic
-are being sent to server one ping 1001
-1000 goes to switch 2 R 2 R 1 switch 1
-and now as you can see it's sent to both
-PC 1 and server one because switch 1
-copied the ICMP packet that came in
-honest g0 on interface and sent it to
-server 1 as well
-notice the red X on server 1 that's
-because server 1 discarded the packet in
-a real situation where server 1 is an
-actual monitoring server this would not
-happen
+89.438270
+but then after pc2 learns the MAC address of its default gateway
+93.379603
+the following pings succeed
+95.567540
+now let's switch to simulation mode
+98.823873
+which is here in the bottom right
+100.604415
+this useful feature lets us trace the path of traffic and analyze it at different points in its path
+107.373498
+okay now let's ping again
+110.145977
+ping 10.0.1.10
+115.067790
+here you can see the ICMP packet at PC 2
+120.907915
+then I click Next
+122.725185
+and it is sent to switch to
+124.995977
+then R 2 R 1 switch 1
+129.552018
+and arrives at PC 1
+131.409206
+PC 1 then sends the reply back to switch 1 R 1 R 2 switch 2 and then it arrives at the destination PC 2
+141.568393
+if I keep clicking here
+143.780643
+you can see other traffic being sent including spanning tree B PDUs from the switches EA GRP hello packets
+151.446247
+between the routers and the other pings sent from PC to
+154.681205
+does PC 1
+156.001622
+ok let's return to real-time mode
+159.079747
+so we confirm that the pings traveled from PC to in a straight path to PC 1
+165.886017
+no ICMP packets were sent to server 1
+168.703059
+now let's configure switch 1 to monitor the input and output traffic on its G 0 1 interface
+174.973038
+and send it to a server 1
+177.461371
+I'll hop on switch 1 now
+179.370309
+enable conf T
+184.464163
+span is configured right here at global configuration mode
+188.630913
+with the monitor command
+190.950017
+then type session
+193.223559
+and give it a number
+195.044955
+I'll sell you one
+196.244038
+next we specify the source or destination
+200.179808
+the order doesn't matter
+201.420058
+let's do this source
+203.005912
+now there are multiple types of span
+206.224662
+but for the CCNA you just have to do local span
+209.571308
+which means from one interface on the switch to another
+213.090183
+so the source will be interface g0 one
+217.355453
+then finally I will specify both to monitor both incoming and outgoing traffic on the interface
+224.375078
+you could instead specify Rx for ingress or incoming traffic
+229.876244
+or TX for egress or outgoing traffic
+233.121724
+okay next let's specify the destination interface
+237.703515
+which will be g0 2
+239.597536
+because it's connected to server 1
+241.825328
+monitor session one destination interface g0 2
+248.688015
+okay that's all there is to configuring local span
+252.569474
+it's really quite simple
+253.892015
+now let's switch to simulation mode once more
+257.979890
+and ping from PC 2 to PC one
+260.836369
+and will confirm that copies of the traffic are being sent to server one
+264.709369
+ping 10.0.1.10 goes to switch 2 R 2 R 1 switch 1
+278.921953
+and now as you can see it's sent to both PC 1 and server one
+284.375474
+because switch 1 copied the ICMP packet that came in honest g0 on interface
+289.786953
+and sent it to server 1 as well
+292.314932
+notice the red X on server 1
+295.865515
+that's because server 1 discarded the packet
+298.762786
+in a real situation where server 1 is an actual monitoring server this would not happen
+304.724182
 ok next PC 1 sends the reply to switch 1
+309.927057
 and then the reply is forwarded to r1
-and once again it is also sent to server
-one this time switch one copied the ICMP
-packet being sent out of the g0 one
-interface because we configured the both
-statement when we configured span both
-packets received on and transmitted from
-the interface will be copied and sent to
-server 1 in this lab we configured span
-to monitor traffic on a switch interface
-the configuration is quite simple so
-please try it out and learn it for your
-exam that's all for this lab
-thank you for watching I hope this lab
-and video have been helpful for you
-please subscribe for future labs like
-this which will be released weekly if
-you have requests for any specific labs
-let me know in the comment section if
-you want to support my channel I accept
-cryptocurrency donations via the
-addresses in the description I am also a
-brave verified publisher and accept bat
-or basic attention token donations in
-the brave browser
+312.773640
+and once again it is also sent to server one
+315.507848
+this time switch one copied the ICMP packet being sent out of the g0 one interface
+320.941493
+because we configured the both statement
+324.915263
+when we configured span
+326.439701
+both packets received on and transmitted from the interface
+330.746659
+will be copied and sent to server 1
+333.139888
+in this lab we configured span to monitor traffic on a switch interface
+339.050513
+the configuration is quite simple
+341.425575
+so please try it out and learn it for your exam
+344.411221
+that's all for this lab
+346.283616
+thank you for watching
+350.415075
+I hope this lab and video have been helpful for you
+353.392596
+please subscribe for future labs like this which will be released weekly
+357.492637
+if you have requests for any specific labs let me know in the comment section
+362.284387
+if you want to support my channel I accept cryptocurrency donations via the addresses in the description
+368.802887
+I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
+377.452596
+377.452596
+377.452596
