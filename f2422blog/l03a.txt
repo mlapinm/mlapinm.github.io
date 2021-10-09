@@ -1,322 +1,830 @@
 0.0
-hi and welcome to my walkthrough in which I'm gonna show you how to build your very own game of candy crush
-5.561416
-this game is gonna be super simple
-7.514500
-I say super simple
-8.528998
-as we're not going to be focusing too much on styling
-10.971018
-this is a JavaScript walkthrough
-12.761935
-very much gonna be focusing on the logic of the game
-16.093205
-I am doing this so you can take the game start up
-19.423497
-as you want truly make it your own
-21.389163
-this game has a lot of potential
-23.399100
-especially with the drag and drop movements
-25.724829
-we're going to be doing
-26.513767
-so I'm excited to see
-27.599183
-what you guys come up with
-28.884246
-in this walkthrough I'm going to be showing you
-30.918954
-how to create a board randomly generate candies
-34.404371
-all over the board
-35.314933
-switch out colors of candies
-36.762746
-on the board
-37.838746
-drag and drop candies
-39.459413
-check for matches
-41.000579
-check for valid matches
-42.879787
-so check that the row of candies
-45.170766
-doesn't go off into the next row
-46.710204
-move all the candies down
-48.122974
-if you get a match
-49.613787
-and generate new candies
-51.560745
-by the end of this walkthrough
-53.386329
-you should have also got to grips with inbuilt JavaScript functions
-57.227536
-such as every sum for each includes
-61.251578
-set attribute and many more
-63.101723
-I would love to see your finished games
-65.303578
-so please do share them with me on youtube
-67.421411
-or Twitter my Twitter handle is Anja underscore Kubo
-70.584015
-or Instagram
-71.455598
-whatever
-72.241015
-okay
-77.128703
-so as always let's make sure our javascript file
-79.462057
-and style sheet are linked up properly
-81.261619
-using these script tag
-82.348161
-and link tag respectively
-83.687848
-if you have put the two files in the root of your folder
-86.745786
-make sure that reflects and the path you put in your tags
-89.311681
-if you are not sure what any of this
-91.966515
-means please do watch my video that I've linked as a card
-94.642847
-here I am putting my script tag in the header
-97.919804
-as I want to use a Dom event listener on my JavaScript file
-100.577013
-this is a choice that
-101.941783
-I'm making on my preference
-103.121387
-as opposed to putting the script tag in the footer
-106.081074
-now we need to go ahead and put a div tag here
-109.993011
-and give it a class of grid
-111.824657
-this div tag is where all the magic happens
-115.168844
-so let's give it the respect
-116.746449
-and deserves and style it up to look like an actual courage
-119.706511
-for this we flip over to our style sheet or CSS file
-124.196032
-now to pick out our div element
-126.702844
-that we gave a class name to
-128.080886
-we get the name we also put a dot in front of it
-131.953719
-this means class
-133.155490
-I have pre decided that
-136.029948
-when my grid to be made up of 8 by 8 squares
-138.953906
-I thought 70 pixels squares are nice
-141.590302
-so 70 x 8 that's 560 pixels
-145.678531
-let's give our grid a height of 560 pixels
-150.015322
-and a width of 560 pixels
-152.236738
-as I've done this many times
-154.305862
-I know that if we want to put divs inside the squared
-156.969612
-the divs will appear stacked over each other
-158.813362
-we used to make them snake over each other row by row
-162.110173
-so we need to do this by using at display flags
-164.379714
-and then flexwrap
-166.250068
-so that they break when they can't fit in the grid
-169.291505
-we have made and start a new row
-171.452443
-I'm also gonna give the grid a background color
-174.498338
-just so we can see what's happening in our browser
-177.197484
-let's go ahead
-178.999484
-so right click on HTML file to see this in our browser
-181.997525
-okay it cool a blue grid
-184.376191
-if you inspect the page
-187.214253
-you will see that information has been passed to our browser
-190.197919
-now let's our CSS file what we want our future squares to look like
-194.528585
-as we said I'm pre decided I want to be 70 by 70 pixels big
-198.622605
-so height 70 and width 70
-202.149543
-now let's create some squares go my grid
-204.762605
-using JavaScript
-206.619939
-you will see here I have already put in my Dom event listener as part of my boiler plate to set up
-211.767314
-I will now be writing all my JavaScript in this event listener
-215.605501
-for it to be picked up on my script tag
-218.049709
-which I placed in the header of my HTML
-220.411459
-as mentioned some people liked with a script tag on the footer of the HTML
-223.905189
-and skip the Dom event listener the choice is up to you
-226.869439
-this Dom event listener is essentially saying in laymen terms that I want all of my HTML file to be read
-233.722168
-before loading this javascript file
-236.006043
-and is a more foolproof way of making sure that these events happen in order
-240.700834
-now using an inbuilt method called a query selector
-244.687667
-I am telling my JavaScript file to look at my HTML file
-248.086271
-and find the element with the class name of grid
-251.191063
-indicated by this dot
-252.769834
-and save it as constant grid
-255.315063
-we are doing this we can reuse this line of code over and over again
-259.851292
-just by typing grid
-261.224438
-let's also tell our JavaScript file
-263.232917
-we want our width to be 8 from now on
-265.459312
-let's store that as a and as it won't change
-268.283750
-so the first thing we're going to do is show you how to create a board using javascript
-273.521062
-I will do this in a function
-275.718292
-I am choosing to call create board
-278.164521
-now using a for loop I want to imagine our future grinch
-282.804396
-we decided it was going to be 8 by 8 squares
-285.214979
-so let's use width x width to tell our JavaScript
-289.155646
-that this is the syntax for a for loop
-292.576625
-what we are doing here is looping over something 64 times
-300.131582
-incrementing by 1 each time from 0
-303.040728
-now every time it does loop over
-306.589415
-we want to create a div using an inbuilt method called create element
-310.914477
-we are creating a div element
-313.051810
-I'm going to call this square for our HTML file
-320.171185
-next we need to put that square into a div with a class of grid
-327.294497
-we do so using another input method called append child
-331.197768
-we do so by passing through the newly created square into a grid constant like this
-336.964747
-lastly each time we create a div
-339.718934
-and add it into a grid
-341.168830
-I also want to store it in an array for us to work with
-344.520725
-so let's create an empty array first called squares like this
-348.513184
-and now as well as put a square
-351.451621
-and their grid
-352.371850
-I also want to push that square into my array
-355.075142
-that I called squares
-356.254183
-we do that using an inbuilt method called push
-358.958662
-now that we have done all this
-361.040724
-let's see if it works by invoking the function like this
-363.242579
-so save the page
-365.818433
-go over to our browser
-366.767308
-and yep it has works
-368.776766
-if we inspect the page
-370.456620
-we can now see all our divs happily sitting in our garage
-373.205515
-ok let's flip back now
-377.105494
-I'm gonna start off by going an array of all the candy colors I'm gonna work with
-381.098869
-so I'm going to call those candy colors as they do not change
-384.639077
-I'm gonna put them in a constant
-385.968223
-so there we go red yellow orange purple and green
-391.664098
-now let's go back to our create board function
-400.024806
-instead of just creating the square after the square has been created
-403.485138
-I also want to give it a candy color
-405.768367
-I also wanted to be random
-407.746242
-to get a random number from our array
-409.963575
-we need three input methods
-411.912783
-we use math.random and multiply it by the arrays like this
-416.389137
-now we want to make sure the number we get back as a full integer
-419.835283
-for this we're going to use math.floor to round this number down to the nearest full number
-425.852033
-and there we go we now have a random number from zero to five
-431.104095
-we are starting at zero
-433.622408
-as Index start count at zero
-435.831303
-this is important so if you're not comfortable this yet
-438.953428
-please make sure a note to research into this later
-441.940407
-once we have a random number
-445.378448
-we want to pass that through our candy colors array to get a color
-449.571303
-and assignor to the square
-450.935572
-so let's get the square
-453.313967
-and using style background color like this
-456.301238
-we want to assign it to that random color here
+hi and welcome to my walkthrough in
+which I'm gonna show you how to build
+your very own game of candy crush 5.561416  this
+game is gonna be super simple  7.514500 I say
+super simple  8.528998  as we're not going to be
+focusing too much on styling 10.971018  this is a
+JavaScript walkthrough  12.761935 very much gonna
+be focusing on the logic of the game 16.093205  I
+am doing this so you can take the game
+start up 19.423497  as you want truly make it your
+own 21.389163  this game has a lot of potential 23.399100 
+especially with the drag and drop
+movements  25.724829 we're going to be doing  26.513767 so I'm
+excited to see  27.599183 what you guys come up
+with 28.884246  in this walkthrough I'm going to be
+showing you  30.918954 how to create a board
+randomly generate candies  34.404371 all over the
+board 35.314933 
+switch out colors of candies 36.762746  on the
+board  37.838746 drag and drop candies  39.459413 check for
+matches 41.000579  check for valid matches  42.879787 so check
+that the row of candies 45.170766  doesn't go off
+into the next row 46.710204  move all the candies
+down 48.122974  if you get a match 49.613787  and generate new
+candies  51.560745 by the end of this walkthrough 53.386329 
+you should have also got to grips with
+inbuilt JavaScript functions 57.227536  such as
+every sum for each includes 61.251578 
+set attribute and many more  63.101723 I would love
+to see your finished games 65.303578  so please do
+share them with me on youtube 67.421411  or Twitter
+my Twitter handle is Anja underscore
+Kubo 70.584015  or Instagram 71.455598  whatever  72.241015 okay  77.128703 so as
+always let's make sure our javascript
+file 79.462057  and style sheet are linked up
+properly  81.261619 using these script tag  82.348161 and link
+tag respectively  83.687848 if you have put the two
+files in the root of your folder 86.745786  make
+sure that reflects and the path you put
+in your tags 89.311681  if you are not sure what
+any of this 91.966515  means please do watch my
+video that I've linked as a card 94.642847  here I
+am putting my script tag in the header 97.919804 
+as I want to use a Dom event listener on
+my JavaScript file 100.577013  this is a choice that 101.941783 
+I'm making on my preference 103.121387  as opposed
+to putting the script tag in the footer 106.081074 
+now we need to go ahead and put a div
+tag here  109.993011 and give it a class of grid 111.824657 
+this div tag is where all the magic
+happens 115.168844  so let's give it the respect  116.746449 and
+deserves and style it up to look like an
+actual courage  119.706511 for this we flip over to
+our style sheet or CSS file 124.196032  now to pick
+out our div element  126.702844 that we gave a class
+name to  128.080886 we get the name we also put a
+dot in front of it 131.953719 
+this means class 133.155490 
+I have pre decided that  136.029948 when my grid to
+be made up of 8 by 8 squares 138.953906 
+I thought 70 pixels squares are nice  141.590302 so
+70 x 8 that's 560 pixels  145.678531 let's give our
+grid a height of 560 pixels  150.015322 and a
+width of 560 pixels  152.236738 as I've done this
+many times  154.305862 I know that if we want to put
+divs inside the squared  156.969612 the divs will
+appear stacked over each other 158.813362  we used
+to make them snake over each other row
+by row  162.110173 so we need to do this by using at
+display flags  164.379714 and then flexwrap 166.250068 
+so that they break when they can't fit
+in the grid 169.291505  we have made and start a new
+row  171.452443 I'm also gonna give the grid a
+background color 174.498338  just so we can see
+what's happening in our browser 177.197484  let's go
+ahead  178.999484 so right click on HTML file to see
+this in our browser 181.997525  okay it cool a blue
+grid 184.376191  if you inspect the page 187.214253  you will
+see that information has been passed to
+our browser 190.197919  now let's our CSS file what
+we want our future squares to look like 194.528585 
+as we said I'm pre decided I want to be
+70 by 70 pixels big  198.622605 so height 70 and
+width 70  202.149543 now let's create some squares
+go my grid  204.762605 using JavaScript 206.619939  you will see
+here I have already put in my Dom event
+listener as part of my boiler plate to
+set up  211.767314 I will now be writing all my
+JavaScript in this event listener 215.605501  for it
+to be picked up on my script tag 218.049709  which I
+placed in the header of my HTML  220.411459 as
+mentioned some people liked with a
+script tag on the footer of the HTML  223.905189 and
+skip the Dom event listener the choice
+is up to you  226.869439 this Dom event listener is
+essentially saying in laymen terms that
+I want all of my HTML file to be read 233.722168 
+before loading this javascript file 236.006043  and
+is a more foolproof way of making sure
+that these events happen in order 240.700834  now
+using an inbuilt method called a query
+selector  244.687667 I am telling my JavaScript file
+to look at my HTML file  248.086271 and find the
+element with the class name of grid 251.191063 
+indicated by this dot  252.769834 and save it as
+constant grid  255.315063 we are doing this we can
+reuse this line of code over and over
+again  259.851292 just by typing grid 261.224438 
+let's also tell our JavaScript file 263.232917  we
+want our width to be 8 from now on 265.459312  let's
+store that as a
+and as it won't change  268.283750 so the first
+thing we're going to do is show you how
+to create a board using javascript 273.521062  I
+will do this in a function  275.718292 I am choosing
+to call create board  278.164521 now using a for
+loop I want to imagine our future grinch 282.804396 
+we decided it was going to be 8 by 8
+squares 285.214979  so let's use width x width to
+tell our JavaScript  289.155646 that this is the
+syntax for a for loop  292.576625 what we are doing
+here is looping over something 64 times 300.131582 
+incrementing by 1 each time from 0 303.040728  now
+every time it does loop over 306.589415  we want to
+create a div using an inbuilt method
+called create element 310.914477  we are creating a
+div element  313.051810 I'm going to call this
+square for our HTML file  320.171185 next we need to
+put that square into a div with a class
+of grid  327.294497 we do so using another input
+method called append child  331.197768 we do so by
+passing through the newly created square
+into a grid constant  like this 336.964747 
+lastly each time we create a div  339.718934 and add
+it into a grid  341.168830 I also want to store it
+in an array for us to work with 344.520725  so let's
+create an empty array first called
+squares like this 348.513184  and now as well as put
+a square  351.451621 and their grid 352.371850  I also want to
+push that square into my array  355.075142 that I
+called squares  356.254183 we do that using an
+inbuilt method called push  358.958662 now that we
+have done all this  361.040724 let's see if it works
+by invoking the function like this  363.242579 so
+save the page  365.818433 go over to our browser  366.767308 and
+yep it has works  368.776766 if we inspect the page 370.456620 
+we can now see all our divs happily
+sitting in our garage 373.205515 
+ok let's flip back now  377.105494 I'm gonna start
+off by going an array of all the candy
+colors   I'm gonna work with 381.098869  so I'm going
+to call those candy colors as they do
+not change  384.639077 I'm gonna put them in a
+constant  385.968223 so there we go red yellow
+orange purple and green 391.664098 
+now let's go back to our create board
+function 400.024806  instead of just creating the
+square after the square has been created 403.485138 
+I also want to give it a candy color  405.768367 I
+also wanted to be random  407.746242 to get a random
+number from our array 409.963575  we need three
+input methods  411.912783 we use math.random and
+multiply it by the arrays like this 416.389137  now
+we want to make sure the number we get
+back as a full integer 419.835283  for this we're
+going to use math.floor to round this
+number down to the nearest full number 425.852033 
+and there we go we now have a random
+number from zero to five 431.104095  we are starting
+at zero 433.622408  as Index start count at zero 435.831303 
+this is important so if you're not
+comfortable this yet  438.953428 please make sure a
+note to research into this later 441.940407  once we
+have a random number  445.378448 we want to pass
+that through our candy colors array to
+get a color  449.571303 and assignor to the square 450.935572 
+so let's get the square  453.313967 and using style
+background color like this 456.301238 
+
+ we want to
+assign it to that random color  458.621841 here we
+are getting our candy colors array 462.104050  and
+passing through a number to it  464.303008 so say my
+random number came out   as 1  467.371549 I'm gonna go
+into my array 469.237445  and get the item with
+index number one 471.609986  in this case is yellow 473.613465 
+so my square will not be yellow 475.110277  okay
+let's go into our style sheet  478.663090 to get rid
+of the blue background 480.463965  we gave our grid
+to see if this has worked  482.502944 remember what
+we have written is that now each time
+you create a square 486.929714  we are assigning it
+a random color from our array 490.794797  okay let's
+say well the files flip over to our
+browser 494.641880  hit refresh  496.073713 and great we have
+our board  497.875838 let's refresh again  499.741317 just to
+make sure the colors are coming up
+randomly  time  awesome 505.193628  now that we
+have our board  507.488669 let's move on  508.544002 now each
+time I create a square  510.452898 I also want to
+make it draggable 512.314106  this is that we can
+drag candies into different locations
+around our edge 517.335064  using the import method
+set attribute 519.267669  I add draggable like this 521.892731 
+and make it true  523.174460 let's say this and see
+if this worked  526.065877 hit refresh and great
+each square is now pluggable 531.197898  I'm going
+to do one more thing before we move on 534.363377 
+and that is given ID to each square 536.941856  this
+is so that when we move a square or drag
+one  540.753085 you know exactly which one in our
+grid we are moving  543.374794 this is going to be
+super useful for later  545.696127 so again using
+setattribute  548.188544 we write this and pass
+through ideas of string 552.431898  and I as we are
+looping over with an I so now you shall
+we loop over this  558.437335 we're gonna give it a
+number from 0 to 63 560.731230  y 63 this is because
+we have 64 squares in our grid of
+indexes from 0 to 63  567.789376 ok cool we are now
+done with creating the board 571.143980  the next
+thing we need to do is concentrate on
+the draggable feature 574.842126  now to drag the
+candies I actually got taught this a
+while back  579.447814 and it invokes event
+listeners that listen at each stage of
+dragging  582.944085 each stage of the dragon
+consists of five events 586.308147  this is cool
+especially for our styling later as it
+allows us to add styling  590.890272 and timers each
+of the five stages 593.019397  I'm gonna do the bare
+minimum for us to get to the game going 596.754376 
+and leave these go wild on the styling
+later on 599.205584  so here I'm writing out each of
+the five event listener events  603.418292 the first
+one is drag 605.198771  start a scene in the green
+string  608.309667 so for each item  611.042438 or as I'm gonna
+choose to call square 613.417000  + y square x'
+array  615.705854 I'm adding an event listener  616.913333 that
+will listen out for an event the event
+is green here  621.335583 and in bolt then if the
+event is triggered 624.916645 
+I want a function to get invoked 627.946103  the
+five events we have are drag start  631.222707 drag
+and drag over  635.070520 drag enter 636.312374  drag leave and
+drop 639.492978  remember these are in built 642.186561  once we
+have all the event listeners attached to
+each square on our grid 646.863727  we need to write
+functions for what happens with your
+triggers  650.299122 so let's do that now 651.705538  all five
+of them 652.907892  I'm going to put a console log
+in each one  655.478913 just so I can show you
+exactly what is happening 657.974184 
+now it's also pass through the ID of
+these squares being listened to 670.084225  we do so
+using this ID  673.048120 this will pick up the
+element it's being listened to 676.201266  and it's
+ID which we set using the set attribute
+method  680.135641 just so we are clear on what is
+happening and wasn't gonna write the
+event happening in the console log like
+this  689.247641 okay I'm just gonna move drag end 691.686932 
+and put it towards the bottom of our
+file  694.057952 just so I can show you what is
+happening in order 696.756452 
+once we are happy with this  709.715765 let's click
+Save 710.709765 
+ 718.043181 now go to your browser 720.673451  and refresh  721.839556 now
+when we pick an element to drag  724.800889 you will
+see exactly what was happening in our
+console log 727.376681  this is super useful 728.825931 
+okay great 739.118035  now back to our javascript
+file  740.657139 let's focus on the drag start
+function  742.813743 as this is the first event 744.554722  I
+want to say the color 746.931347  we were decided to
+pick up   and drag  749.311576 let's store this as
+quite literally color being dragged 753.109159  now
+in our drag start function  755.665430 this style
+background color  757.574867 I'm gonna save this
+into a variable 759.318701  I'm doing this because I
+want to use it again  762.158305 let's see if that
+has worked using the console.log 766.065888 
+okay great we can now see that we are
+picking up the color of the square we
+are dragging 777.163367 
+if we click another one 779.045200  that works too 780.085200 
+now let's focus on the drag edge 786.371992  so and
+candy crush when you select a candy 789.975471  to
+put into another location  791.303221 you actually
+first swap it out with another candy in
+that location  794.585200 so the Candy's essentially
+swap place 796.869637  we can do this in JavaScript 799.230533 
+we just need to store another candy
+color  801.184867 so let's do that
+in the drag drop function 805.795200  if I drop a
+element in here 810.855825  I want to store the
+original color in that square  814.196512 so let's
+do that  816.145970 let's store this color as color
+being replaced  820.047241 so again using this style
+background color 824.998325  let's store that up
+here too 828.018095 
+so let color being replaced  831.461261 okay great
+we now have the colors stored 835.270303  to replace
+them in the correct squares however we
+need to rely on the squares IDs 839.879928  that we
+set 840.961761  so I'm going to call this square ID
+being dragged in our drag start function 846.629261 
+and assign it this squares ID  849.627281 we need to
+make sure this is a number  852.459552 so using an
+inbuilt method called pass int  855.374886 we are
+doing just that 856.491302 
+so now as well as the colors  862.838406 let's store
+the IDS of the squares being selected 865.810073 
+and drugs and the square we are dropping
+our candy in  868.862656 all right so square ID
+being dragged 872.781656  and to our ID being
+replaced  875.266760 now in the drug drop is where
+we assign the ID  881.727823 we need to make sure
+this is the number by using the mbot
+method passed int 886.011114  so parse the IDS
+through that method  888.611593 and store it again 889.693052 
+okay now passing through the ID of the
+scribing drugs into the squares array 895.780864  I
+want to add this squares color 898.097948  so just
+to be clear this will give the original
+square being dragged  902.145677 this color after we
+have draw
+in a new color in here 906.834593 
+let's say what we have done so far to
+check  910.649739 if this is working 911.933989  so head over to
+our browser hit refresh  914.347010 you will see
+that if I drag a square  917.126906 and let it go 918.372468  it
+goes back  919.385468 now if I drag a square  921.050468 and
+drop it in another square  922.493176 it doesn't get
+dropped 923.818905  this is not what we expected
+right 925.843426  this is because like I said there
+are five stages that we need to account
+for  929.919905 let's skip over the drug over and
+drag enter event for now  934.315468 I do this using
+be prevent default  937.286926 so using an ephah
+event we pass through an event into the
+function 941.820092  and using prevent default we
+prevent it from doing a c4 action 945.799217  if you
+do want something to happen while we are
+dragging the squares ever each other 949.747342  or
+as it enters a new square 951.641196  you are free
+to go back after this walk through  954.033258 and
+add some animations  956.146717 and stylings and
+whatever  957.348154 okay now let's flip back and
+refresh  960.755654 and great now when we drag a
+Square and drop it into a new one 965.462612  we
+change or the original square into a
+color being replaced  969.019612 we are one step in
+the right direction 971.382696 
+however the square we are dropping into
+stays the same color 976.370737  let's fix that so 977.620508 
+and the drag drop function we need to
+make the color of the square change into
+the color being dragged  983.587633 let's do that
+like this  986.765800 okay great  988.921425 now in candy crush
+we can switch out your candies 992.294904  however
+these two candies NewsView directly 994.456111  and
+a square above below to the left or to
+the right of our current candy 999.629986  we need
+to tell our JavaScript this 1001.825799  and define
+what is a valid move  1004.152966 so what is a valid
+move  1005.769424 let's define this and store it 1007.840132 
+let's first get an array of all of our
+moves for any square being dragged 1012.224216  I'm
+going to call it valid moves 1014.244841 
+so Arthur solid move is any square being
+dragged ID minus one 1020.878799  so say it's ID is
+67 we are saying we are allowed to
+switch out with a square with the ID 66 1027.871840 
+now let's do the same with a square
+visually above our chosen square so
+exactly one width back in our array 1035.085965  so
+this I am square with the ID 59  1038.501902 as our
+width is defined as H 1041.103485 
+I'm just going to tie this up a bit
+giving them each their own space  1044.852256 do the
+same for square 68 so our chosen ID plus
+1  1049.409464 and square 75 so I chose an ID square
+plus 8  1054.650235 this time this is the square that
+is visually appearing below our square
+on the garage  1059.373714 okay now we have all our
+Valley News  1063.088631 live Allen move using an
+input JavaScript method called includes 1067.303360 
+I am also going to pass through a value
+here  1074.558089 so what I'm saying is that if the
+number passed through 1079.356589  so the square ID
+being replaced is included in our value
+moves array  1084.833672 this statement is true  1086.201609 and
+we store the billion of true for our
+value news variable  1089.769901 now using an if
+statement if the ID of my squares being
+replaced exists 1095.767797  as we want to make sure 1097.467214 
+that this is only going to happen if my
+square is being dropped in another
+square 1101.494130  and not if it's going off the
+grid  1103.276589 
+
+and so double and if this move is
+valid 1106.869130  we execute the block of code 1108.730109  we
+need both these variables to be true 1111.459484  or
+truthy in order to execute this code 1114.716713  so
+if they are true we clear the value of
+square being replaced  1119.294442 ready for a fresh
+start  1120.702025 if however there is a square that
+the dried square can be dropped in 1125.982608  but
+it's not a valid move indicated by this
+bang here  1129.445045 so in other words it's a
+square that is too far 1132.709378  we execute
+another block of code  1135.173523 we can't go here
+so we want to return the square being
+replaced with original spot  1140.186543 by simply
+giving it back its color  
+you 1142.609688
+we then also need to do the same for the
+original square  1157.692104 so using the same method
+we get the square ID being dragged 1162.071979  pass
+it through our squares array  1163.467728 and using
+star background color assign it the
+color being dragged 1167.027790  if none of these
+statements are true 1170.635478  so the square we are
+dragging has nowhere to go  1172.717457 and is
+outside our grid  1174.120707 we simply add the color
+being drive back to its original space 1177.474457 
+okay great all three scenarios are now
+covered  1185.513561 let's save and refresh our
+browser  1187.755519 great you will see the square
+switching other colors  1192.482519 you will also see
+are squares return back  1197.406311 if we try and
+drop it outside of The Grudge 1200.102561  everything
+seems to be working out for us so far  1203.166165 in
+candy crush if you get a matching row or
+column of three four or five three
+things happen  1209.628081 the candies disappear  1211.325831 all
+the candies in the grid move down into
+free space  1214.629227 and we gain points 1215.961726  in the
+actual game a few more things happen
+like animation wires 1220.045892  but as I mentioned
+this is a JavaScript walkthrough 1222.738621  so
+styling and we leave that up to you at
+the end 1225.305996  let's get going on the first
+part checking for matches 1228.739600 
+
+ I am going to
+concentrate on finding a row of three
+fast  1232.083745 as we will use this logic to find
+matches for the rest 1235.248515  let's call our
+function check row for three  1238.785286 in our
+function and we're going to fast aside
+how many squares we need to loop over
+exactly  1247.898827 this is because if you think
+about our as compiled of three squares 1252.106952 
+if we check for three squares starting
+from index 63 in our grid  1256.352035 this will
+break the game as there's no squares 1258.612347 
+after a square index 33 1260.824430  using maths we
+figure out that the last square  1263.767638 we could
+possibly loop over is 61 1266.392388  so that the
+loop would check 61 62 and 63 for a
+match of three colors 1271.447554  now let's define
+our row  1273.647054 so if we used indexes to draw
+our row  1277.033263 it would look like this 1278.317388 
+and I followed by an I plus 1  1280.973867 and an I
+plus 2  1282.216763 each time we loop over this 1285.113929  we
+are swapping out the I for a number from
+0 to 61 1288.355575  now each time we loop over we
+also when a grab the color the first
+square is 1293.395158  an assign it to the decided
+color 1296.051033  let's also define what a blank
+spaces 1299.641283  as we account for this when we
+are looping 1301.886824  so it's blank
+if the squares background colors empty 1306.084887 
+so DV equals empty 1308.196949  this statement is
+true 1309.541261  now that we have these two things
+to find let's get to writing our logic 1315.000156 
+so you
+if statement let's get the row of food a
+row  1318.197219 using a nimble method called every 1321.381405 
+if every index in our three array deeply
+equals the decided color  1327.171113 so the color of
+our first square  1329.782801 we want to execute some
+code 1331.764530 
+ 1344.096675 so if we find a match 1346.042738  we want to take
+the row of three array 1348.124342  and for every
+index in it we want to give it an empty
+background color  1352.519154 great now we also said
+we want to add a score  1358.625738 let's make this a
+score of three points each time  1361.877675 we find
+a row of three  1363.246613 let's scroll to the top
+of our javascript file  1366.165133 and add this as a
+global variable to our file  1368.694883 we will also
+set the score as zero to start that
+makes sense right  1374.384174 great
+now let's scroll back down and invoke
+this function we wrote to see if it
+works  1380.208695 let's go ahead and save this 1383.061674 
+refresh the browser  1384.822278 and amazing 1386.566757  we can
+see here that one row has been deleted 1389.294653 
+now we want to actually invoke this
+function constantly while we are playing
+the game  1395.403694 at the moment there's only get
+some vote once we start up the browser 1399.312757 
+meaning that if we get any matches from
+now on they will not be cleared 1402.230548  we can
+do this using a set interval  1405.900277 and
+grabbing our window  1407.100069 so with us here I'm
+getting our window 1410.579715 
+adding the M up method of set interval
+turret  1413.313694 and saying that any code in this
+function  1415.310007 so in my case the Czech refer
+three function 1418.373402  I want to invoke every
+100 milliseconds  1420.906340 let's say this and
+check it in our browser  1424.188132 now it's
+important to note that this will keep
+running indefinitely  1429.039048 until you close
+your tab  1430.507548 I am gonna keep it like this 1432.422860 
+but if you want to take your game to the
+next level  1434.988173 and also you know for best
+practice  1437.639214 I will suggest adding a button
+to activate this set interval  1441.452985 and also
+maybe add some pause and stop
+functionality  1444.812631 
+
+I do this son of the game 1446.906589 
+so if you want to see how to do that
+please do check out my Tetris game for
+example  1451.317797 ok now that that works  let's
+carry on 1454.239422  okay now that we have that I'm
+literally gonna copy/paste this to make
+our check column for three function 1460.451213  with
+a few changes of course 1462.549025  so let's start
+by changing the name of the function 1464.705942 
+change the pseudocode for good measure 1467.517796 
+change the name of the array  1470.284296 here here
+and here 1474.464879 
+change when the loop stops  1478.876567 so as these
+are columns the last square we can check
+for a column of  1483.517983 3 is square 47 change
+the array itself to be a column 1489.277046  using
+width and width or multiply by 2 1491.968817  and
+change the name of the function here 1497.887108 
+when we invoke it 1499.412171  we also now add it to
+our set interval 1503.312025 
+okay that should do it let's head over
+to our browser  1510.805546 okay fantastic
+it looks like our game is working 1514.497171  as we
+wanted to 1515.489713  you can see here that the
+columns and rows are deleting  1519.556317 if they
+find a match 1520.633046  now I'm trying to find an
+example here 1523.486108  even though it's hard to
+come by  1525.399942 but what do you think happens
+when a row starts  1528.750858 at the left or right
+hand edge  1530.863233 or half of its body is in the
+right hand column or edge  1534.063046 it will appear
+to be broken up into 1536.481024  but still valid as
+we haven't told our JavaScript that this
+is not a valid move  1540.788003 we need to fix this 1542.615420 
+as this can only happen for rows 1545.189940  let's
+go back into our check row for three
+function  1548.512753 back in our function let's
+define or what is a valid move 1552.161586  again
+let's get an array of all the indexes
+that are not valid  1555.960461 what I am typing here
+is every index I do not want my row of
+three to start  1561.229128 at so I don't want to
+start it in like six  1563.724315 otherwise a row
+would appear on the other side of my
+grid  1566.014670 same for index seven  1567.851753 and so on and
+so on  1568.612710 all of these are not valid for me
+to start my checking for three are  1574.459856 so
+once again let's get the array and use
+the includes input javascript method  1580.356710 and
+then we pass through I so the number we
+are looping  1584.985397 if this number is included
+in the array not valid 1588.132835  we want to skip
+it  1589.872147 we do so like this using continue  1592.900710 and
+that's it  1595.049418 let's check this in our
+browser  1596.782522 let's save and hit refresh 1599.439335  it's
+hard to tell but we have now fixed our
+problem of rows of threes splitting up 1604.825689 
+and still counting as valid rows 1606.193085 
+remember we do not need to do this for
+columns  1609.064147 as we already have stopped our
+columns from going through the bottom 1613.209001  by
+stopping the loop at square 47 1615.360397  the only
+thing we do now are copy exactly what we
+have done for rows and columns of three 1621.518126 
+but do the same but checking for four
+this time 1624.076251  in my code I'm literally gonna
+copy and paste the check row for three 1629.894605 
+and check for column of four function  1631.763188 I
+mean you probably shouldn't really do
+this you should type each one out  1635.964146 as
+copying basically really dangerous 1638.410229 
+especially when you know just
+probably places something really similar 1642.333813 
+but hey I feel comfortable with it   so
+I'm just gonna go for her 1644.625832  okay so this
+is my piece of code  1648.408561 I appreciate it's
+hard to tell 1650.156311 
+once again I'm going to change the three
+here to afford the pseudocode  1655.491936 rename the
+function  1657.645623 change the array name  1660.518894 change
+the loop to stop at 60  1663.570290 and add an item
+to the array to make it on row four 1668.157623  I'm
+also going to update the not valid index
+errors include indexes starting at five
+and so on  1674.832206 as now each row needs to be
+checked one square earlier for each row 1679.085310 
+change the array name here  1686.109101 change the
+score to add for  1688.990206 change the Iranian here
+ 1691.676185 and change the functioning to check for
+a row of four  1696.675601 and finally you change the
+column of three copy version  1701.809247 to column
+of four in the pseudocode 1704.052185 
+check the function name 1707.144955  change that 1708.848164  make
+the array an actual column of four 1711.310809 
+change the name of the array here  1714.548309 change
+the school to add for 1717.319830  change the name
+here  1721.062392 being in the function to say check
+for color for 1724.924788  now we add these two new
+functions into the set interval  1729.854434 I want
+to check for four before checking three 1732.453955 
+as we want to get rid of the big ones  
+first 1735.865246 
+okay let's save that  1741.332121 refresh the page 1742.845079 
+I'm getting an error message  1745.458808 I told you
+copy and pasting was dangerous 1748.106100 
+what's it saying it seems that why a Rea
+name has not been defined 1753.936412  in our check
+column up for  1755.715245 four let's go fix that now 1758.892787 
+oh yes I forgot to change the a rare
+name  1761.919870 we were still using the old one 1763.736495 
+here okay that's not fixed let's go
+ahead and save  1768.926537 and there we have it  1771.701953 I am
+actually going to leave this here 1777.027474  if you
+want to go ahead and add a check for
+five please do 1780.294765  I feel we do not need to
+go over this because it's simply a case
+of copy and pasting   hopefully 1785.288994 you get
+the idea now of what we need to do 1788.021076  and
+what needs to be changed in order to
+check for five 1791.544639 
+let's now instead focus on how to get
+the candies to move down if some have
+been cleared 1796.931054  and also how to get new
+candies  to generate 1799.685075  we need to write a
+function that will move all our candies
+down if a certain condition is met 1803.930825  so
+let's do that before checking any of our
+matches here  1808.624324 in our code let's start by
+writing out  1811.063282 what we want to happen 1812.562032  now
+I'm going to choose to call my function
+and move candies actually  1818.157386 let's call it
+move down  1820.104532 I'm going to use a for loop
+here again to check all our squares up
+to square 55  1826.165094 so essentially the first
+seven rows  1828.698657 I'm going to do this as I
+want to check the squares below each of
+the indexes for an empty square  1834.637573 so in
+this if statement I am getting at the
+index number plus the width  1840.728719 and passing
+it through our squares array 1843.723136  once I am
+in that square I want to check that
+squares background color  1847.621323 if that square
+has an empty background color  1853.846218 I want
+this statement to be true 1855.419031  so what we are
+saying here 1857.313989  if the square directly below
+our square  1859.845030 we are looping has an empty
+background color 1862.547905  we want to execute the
+following code 1864.532072  we want to essentially
+give our squares background color to it 1869.390593 
+so
+we are simply using the style background
+color to do this  1873.945218 I'm passing a color to
+the empty square  1875.904697 now we want to remove
+any color from a square making up here
+empty  1881.674384 the final thing we need to do is
+put it in our set interval 1886.864093  so let's copy
+this scroll down into our set interval 1891.096530 
+and place it there 1892.298572  I'm gonna put it
+before the others just so excuse first 1895.951988 
+okay now let's save and refresh our
+browser  1899.923905 and great  1902.660843 we can see that the
+squares are all clearing  1905.031801 as we get
+matches 1906.170280  now we do one last thing 1908.787466  and
+that's generating new candies to show up
+in our first row  1911.906758 now let us think about
+the logic here  1914.215154 I think it's safe to say 1915.493550 
+that if the first row contains an empty
+square 1916.998195  we want to fill it with a colored
+one  1919.194591 and we keep doing this until the
+first row is not empty anymore 1923.380675  so let's
+do it  1925.489654 let's define the first row fast 1927.290091 
+I'm simply going to write an array
+putting an index at 0 to 7 1930.725674 
+now to check if something is in the
+first row  1935.445112 we do this  1936.846383 get the first row a
+touch includes to it 1940.120049  and pass through I
+now if I is in the first row row the
+statement will come back 1946.982028  as the boolean
+of true  1948.325861 so if is first row comes back is
+true  1951.967069 and the square as a background
+color of Mt and this is true  1955.745319 we need to
+do something 1957.650090  we use a fill it with a
+color  1959.897965 using this line we wrote before we
+get a random color 1967.610235  this should be
+familiar to you it is literally the
+exact same long you read before 1971.283923 
+I know I call it a random color  1975.928048 but its
+secondly a random number from my candy
+colors array  1978.446110 so a number from 0 to 5 1980.591548 
+once we get a random number from our
+candy colors array  1985.135339  we need to pass it
+through our array   to get a string of a
+color name 1988.939297  we then assign it to our
+square and the first row 1992.511193 
+cool let's look at this in action  1998.496943 let's
+refresh an amazing that has now worked 2003.728526 
+now let's get the score to display  2009.482713 as we
+are collecting the school  2011.140922 they're not
+really doing much with it at the moment 2012.881234 
+for this let's decide 2014.744422  we're gonna make a
+div with an ID of score 2017.270755  and call it a
+score dislike  2019.750547 we will need to add this
+to our HTML file  2027.660193 but for now let's just
+add it in our JavaScript 2029.946922  first so let's
+scroll down to every time we add a score 2034.065380 
+using the constant I'm going to use an
+inbuilt method of inner HTML  2039.822858 we then
+assign the school to it 2042.307692  I'm now going to
+add this all for about checking the
+matches functions after every time we
+add to our school's variable  2050.224921 once we
+have done that let's flip over to our
+age shimmer 2057.453982  in our HTML file I'm
+actually going to add a deer with a
+class of scoreboard first 2062.593128  this is so
+that we can start a board where we want
+our school to show up  2067.238503 inside I am
+placing two h3 tags  2070.348024 one with the word
+score and one with the ID of score  2074.135419 this
+is what we sign a Const of score display
+two in our JavaScript  2078.386711 now let's save and
+head over to our browser  2082.535399 okay great we
+now have a fully functioning game of
+candy crush  2087.421732 as mentioned this is a super
+simple version of the game 2091.765690  I have not
+added in checks for matches of five
+please feel free to do that if you want 2096.322149 
+also and the official candy crush game 2099.192357 
+we have a lot more funky stuff going on 2100.940003 
+I hope that by getting to where we are
+so far you are now countable  2105.353898 and other
+tools to go ahead  2106.681690 and add all these
+funky features to your game  2109.787732 hopefully
+you can also create your own  2111.563378 and hey the
+world's your oyster  2113.844044 I am going to show
+you one more thing  2115.756064 and that's how to add
+images each candy color  2119.005877 so if you
+understand this please do carry on  2121.562127 let's
+go ahead and do that now  2124.983418 so let's flip
+back to our code 2127.999606 
+
+in this list of candy colors 2129.634168  here I'm
+gonna want to replace them with images  2132.427438  
+now I'm going to create a folder here to
+drop some images   I have pre-made 2136.716938 
+if you want these images  2139.130833 I'm going to
+share them all with you  2140.170417 I'm gonna put a
+link to my github in the description 2142.862000  or
+you know you can feel free to also make
+your own  2146.128021 I have made each image 70 by 70
+pixels  2149.791729 so that it will fit in each of my
+squares perfectly 2152.555479  once I have made this
+folder I'm simply gonna drag all my made
+images into this folder  2159.434667 so here are my
+images 2161.330667 
+I am simply selecting them  2163.973042 and dragging
+them into my project folder 2166.009750  if I click
+on this images folder now  2168.742458 you will see
+all my image files  2170.582041 now I'm gonna copy
+each relative path of each image like
+this  2174.859083 note I'm using the one URL 2178.119437  I'm
+placing each part in brackets like this 2181.149332 
+you need to get the exact path name for
+this to work 2184.861957 
+now because we are not using the
+background color anymore 2197.952665  we are using
+background image  2199.393290 we need to find all the
+instances of when I say background color
+in my file 2203.921332 
+and replace them as M was a cool finder
+in place function  2208.566707 that helps me replace
+each one without missing any  2211.207727 you can see
+here I have used the word 30 times  2215.104394 I'm
+gonna go ahead and click replace for 2218.436394 
+okay great let's go ahead and see if
+that has worked  2222.289373 and amazing there are
+all my candies  2225.137248 I obviously serve a whole
+bunch of console looks of my code 2228.823727  one
+thing I would suggest is definitely
+clearing this up  2231.317769 before you publish your
+code anywhere 2233.654644  just for good practice  2234.855852 now
+I'm just gonna show you something that I
+baked a little earlier 2238.757456  this is my style
+version on my candy crush like game  2242.305769 we
+mentioned earlier in the walkthrough
+that a button starting 2247.231664  and stopping this
+game would be wise 2248.492705  as we are essentially
+invoking the functions every 100
+milliseconds  2252.171143 so adding a button would be
+best practice  2254.528247 if you want to take this
+game to that extra level  2257.035934 so that's it
+thank you very much for watching  2260.113496 as
+always I would love to see your finished
+games  2262.194454 please do tag me on YouTube
+Twitter Instagram whatever  2267.013474 I'd love to
+see what you've built 2268.636682  how you taking the
+game  2269.844870 made it your own  2270.983890 taking it to the
+next extra level 2273.103390  so yeah enjoy  2275.258411 and
+thanks again
+ 2277.038890 
+ 2277.038890 
+ 2277.038890 

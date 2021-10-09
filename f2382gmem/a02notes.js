@@ -22,9 +22,9 @@ var notes = [
     "title": "",
     "card-text": [
       "g02",
-      ""
+      "Minesweeper"
     ],
-    "link": "g0.html"
+    "link": "https://codepen.io/mlapin/full/oNBrPGd"
   },
   {
     "header": "",
