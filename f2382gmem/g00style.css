@@ -1,8 +1,14 @@
+*{
+  font-family:Arial;
+  font-size:1.2rem;
+}
+
+
 .grid{
   display: flex;
   flex-wrap: wrap;
-  height: 90vh;
-  /* width: 100vw; */
+  width: 100vw;
+  height: 75vw;
   /* width: 400px; */
   background-color: beige;
   justify-content: center;
