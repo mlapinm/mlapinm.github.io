@@ -1,0 +1,47 @@
+var notes = [
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "g00",
+      "gmem"
+    ],
+    "link": "g00gmem.html"
+  },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "g01",
+      "candy crash"
+    ],
+    "link": "https://codepen.io/mlapin/full/JjWPqYO"
+  },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "g02",
+      ""
+    ],
+    "link": "g0.html"
+  },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "g03",
+      ""
+    ],
+    "link": "g0.html"
+  },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "g04",
+      ""
+    ],
+    "link": "g0.html"
+  }
+]
