@@ -31,35 +31,23 @@ ping PC two ping 10.0.0.1 30 doesn't work
 73.384277
 ping pc3 ping 10.0.0.3 doesn't work
 81.364369
-ping PC 4 ping 10.0.0.1 31 doesn't work
-89.32908
-okay so let's fix the problem on our one first
+ping PC 4 ping 10.0.0.1 31 doesn't work 89.32908 okay so let's fix the problem on our one first
 92.809351
 enable show IP interface brief
 99.665301
 look at the IP address of the dot thirteen sub-interface 10.0.0.13 sub interface
 104.182689
-10.0.0.11 now let's check the default gateway of the pcs in VLAN 13
-112.53986
-pc1 & pc3 pc1 is 10.0.0.1 and PC 3 10.0.0.1
-126.62258
-so this is a miss configuration
+10.0.0.11 now let's check the default gateway of the pcs in VLAN 13 112.53986 pc1 & pc3 pc1 is 10.0.0.1 and PC 3 10.0.0.1 126.62258 so this is a miss configuration
 130.465533
-let's fix it
-132.02014
-back to our one conf t interface g0 0.13 IP address 10.0.0.1 255.255.255.192
+let's fix it 132.02014 back to our one conf t interface g0 0.13 IP address 10.0.0.1 255.255.255.192
 147.404786
 next let's check switch 1
 157.555092
-enable show VLAN brief
-162.1008
-can you see the problem here
+enable show VLAN brief 162.1008 can you see the problem here
 165.768194
 fastethernet 0/1 is in VLAN 12
 169.022741
-it's supposed to be in VLAN 13
-171.86684
-let's change that
+it's supposed to be in VLAN 13 171.86684 let's change that
 173.466428
 conf t interface f01 switch port access VLAN 13
 183.106891
@@ -67,15 +55,11 @@ ok switch 1 is now fixed
 186.058684
 finally let's go to switch 2
 189.743329
-enable show interfaces trunk
-195.77054
-nothing appears
+enable show interfaces trunk 195.77054 nothing appears
 198.483492
 the link between switch 1 and switch two should be a trunk
 202.021254
-so that it can carry traffic from multiple VLANs
-205.10974
-so we have to fix this
+so that it can carry traffic from multiple VLANs 205.10974 so we have to fix this
 206.840154
 conf T interface g0 1 switch port mode trunk
 213.551051

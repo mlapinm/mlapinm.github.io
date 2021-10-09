@@ -19,15 +19,9 @@ so let's click on PC one desktop terminal and press ok to accept the default con
 45.349398
 step two is to create two users on r1
 49.941079
-last time we created user accounts with passwords
-53.36842
-this time we will use secrets
+last time we created user accounts with passwords 53.36842 this time we will use secrets
 55.760241
-same as with the enable password and enable secret
-59.7377
-passwords are not encrypted but secrets are encrypted by default
-63.44439
-enable conf t username CCNA secret Cisco with a capital C
+same as with the enable password and enable secret 59.7377 passwords are not encrypted but secrets are encrypted by default 63.44439 enable conf t username CCNA secret Cisco with a capital C
 73.883946
 remember that user name isn't case sensitive but the password or secret is
 79.015255
@@ -43,15 +37,9 @@ line console 0 login local
 107.375732
 that's it
 108.498419
-step 4 is to set a message of the day banner of welcome to packet racer
-117.90453
-and a login banner of authorized users only
+step 4 is to set a message of the day banner of welcome to packet racer 117.90453 and a login banner of authorized users only
 121.129215
-banners are messages that display before or after users log in
-126.5625
-in this case the message of the day banner will be displayed above the login banner
-130.78868
-and both will be displayed before our user logs in
+banners are messages that display before or after users log in 126.5625 in this case the message of the day banner will be displayed above the login banner 130.78868 and both will be displayed before our user logs in
 133.959567
 so exit to make the banner of the day we use this command
 140.799292
@@ -63,9 +51,7 @@ if you type the message directly it will think that the first character is the d
 161.638417
 and it will be excluded from the message itself
 164.300974
-you can use whatever you want but I'll use an asterisk
-167.71324
-asterisk welcome to packet tracer asterisk
+you can use whatever you want but I'll use an asterisk 167.71324 asterisk welcome to packet tracer asterisk
 171.674127
 okay now the same process for the log in banner
 176.862234

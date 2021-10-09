@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -122,61 +122,25 @@ let objs = [
   {
     "time": [
       49.941079,
-      53.36842
-    ],
-    "en": [
-      "last time we created user accounts with passwords"
-    ],
-    "ru": [
-      "в прошлый раз мы создавали учетные записи пользователей с паролями"
-    ]
-  },
-  {
-    "time": [
-      53.36842,
       55.760241
     ],
     "en": [
-      "this time we will use secrets"
+      "last time we created user accounts with passwords 53.36842 this time we will use secrets"
     ],
     "ru": [
-      "на этот раз мы будем использовать секреты"
+      "в прошлый раз мы создали учетные записи пользователей с паролями 53.36842, на этот раз мы будем использовать секреты"
     ]
   },
   {
     "time": [
       55.760241,
-      59.7377
-    ],
-    "en": [
-      "same as with the enable password and enable secret"
-    ],
-    "ru": [
-      "так же, как с паролем включения и секретом включения"
-    ]
-  },
-  {
-    "time": [
-      59.7377,
-      63.44439
-    ],
-    "en": [
-      "passwords are not encrypted but secrets are encrypted by default"
-    ],
-    "ru": [
-      "пароли не зашифрованы, но секреты зашифрованы по умолчанию"
-    ]
-  },
-  {
-    "time": [
-      63.44439,
       73.883946
     ],
     "en": [
-      "enable conf t username CCNA secret Cisco with a capital C"
+      "same as with the enable password and enable secret 59.7377 passwords are not encrypted but secrets are encrypted by default 63.44439 enable conf t username CCNA secret Cisco with a capital C"
     ],
     "ru": [
-      "enable conf t имя пользователя CCNA secret Cisco с большой буквы"
+      "То же, что с паролем включения и секретом включения 59.7377 пароли не зашифрованы, но секреты зашифрованы по умолчанию 63.44439 enable conf t username CCNA secret Cisco с заглавной C"
     ]
   },
   {
@@ -266,61 +230,25 @@ let objs = [
   {
     "time": [
       108.498419,
-      117.90453
-    ],
-    "en": [
-      "step 4 is to set a message of the day banner of welcome to packet racer"
-    ],
-    "ru": [
-      "Шаг 4 - установить приветственное сообщение дня для пакетного гонщика"
-    ]
-  },
-  {
-    "time": [
-      117.90453,
       121.129215
     ],
     "en": [
-      "and a login banner of authorized users only"
+      "step 4 is to set a message of the day banner of welcome to packet racer 117.90453 and a login banner of authorized users only"
     ],
     "ru": [
-      "и баннер для входа только авторизованных пользователей"
+      "Шаг 4 - установить приветственное сообщение дня для пакетного гонщика 117.90453 и баннер входа только для авторизованных пользователей."
     ]
   },
   {
     "time": [
       121.129215,
-      126.5625
-    ],
-    "en": [
-      "banners are messages that display before or after users log in"
-    ],
-    "ru": [
-      "баннеры - это сообщения, которые отображаются до или после входа пользователя в систему."
-    ]
-  },
-  {
-    "time": [
-      126.5625,
-      130.78868
-    ],
-    "en": [
-      "in this case the message of the day banner will be displayed above the login banner"
-    ],
-    "ru": [
-      "в этом случае сообщение баннера дня будет отображаться над баннером входа в систему"
-    ]
-  },
-  {
-    "time": [
-      130.78868,
       133.959567
     ],
     "en": [
-      "and both will be displayed before our user logs in"
+      "banners are messages that display before or after users log in 126.5625 in this case the message of the day banner will be displayed above the login banner 130.78868 and both will be displayed before our user logs in"
     ],
     "ru": [
-      "и оба будут отображаться до того, как наш пользователь войдет в систему"
+      "баннеры - это сообщения, которые отображаются до или после входа пользователя в систему 126.5625, в этом случае сообщение дневного баннера будет отображаться над баннером входа в систему 130.78868, и оба будут отображаться до того, как наш пользователь войдет в систему"
     ]
   },
   {
@@ -386,25 +314,13 @@ let objs = [
   {
     "time": [
       164.300974,
-      167.71324
-    ],
-    "en": [
-      "you can use whatever you want but I'll use an asterisk"
-    ],
-    "ru": [
-      "вы можете использовать все, что хотите, но я буду использовать звездочку"
-    ]
-  },
-  {
-    "time": [
-      167.71324,
       171.674127
     ],
     "en": [
-      "asterisk welcome to packet tracer asterisk"
+      "you can use whatever you want but I'll use an asterisk 167.71324 asterisk welcome to packet tracer asterisk"
     ],
     "ru": [
-      "звездочка добро пожаловать в пакет трассировщик звездочка"
+      "вы можете использовать все, что захотите, но я буду использовать звездочку 167.71324 звездочку добро пожаловать в пакетный трассировщик звездочку"
     ]
   },
   {
@@ -536,7 +452,7 @@ let objs = [
       "if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description"
     ],
     "ru": [
-      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфириумом по адресам в описании"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах и эфириуме по адресам в описании"
     ]
   },
   {

@@ -137,10 +137,10 @@ let objs = [
       51.223269
     ],
     "en": [
-      "ping 192.168.1.1 hundred"
+      "ping 192.168.1.100"
     ],
     "ru": [
-      "пинг 192.168.1.1 сотня"
+      "пинг 192.168.1.100"
     ]
   },
   {
@@ -185,10 +185,10 @@ let objs = [
       67.218206
     ],
     "en": [
-      "let's investigate on our to"
+      "let's investigate on r2"
     ],
     "ru": [
-      "давайте исследуем наш"
+      "давай исследуем на r2"
     ]
   },
   {
@@ -209,10 +209,10 @@ let objs = [
       77.83256
     ],
     "en": [
-      "indeed our two only knows local and connected routes"
+      "indeed r2 only knows local and connected routes"
     ],
     "ru": [
-      "действительно, наши двое знают только локальные и связанные маршруты"
+      "действительно, r2 знает только локальные и подключенные маршруты"
     ]
   },
   {
@@ -257,10 +257,10 @@ let objs = [
       85.722453
     ],
     "en": [
-      "comte"
+      "conf t"
     ],
     "ru": [
-      "граф"
+      "конф т"
     ]
   },
   {
@@ -269,10 +269,10 @@ let objs = [
       93.698349
     ],
     "en": [
-      "IP route oh-oh-oh-oh-oh-oh-oh-oh-oh g 0 0 0"
+      "IP route 0.0.0.0 0.0.0.0 g 0 0 0"
     ],
     "ru": [
-      "IP-маршрут ой-ой-ой-ой-ой-ой-ой-ой-ой г 0 0 0"
+      "IP-маршрут 0.0.0.0 0.0.0.0 г 0 0 0"
     ]
   },
   {
@@ -329,10 +329,10 @@ let objs = [
       118.166222
     ],
     "en": [
-      "ping 192.168.1.1 hundred"
+      "ping 192.168.1.100"
     ],
     "ru": [
-      "пинг 192.168.1.1 сотня"
+      "пинг 192.168.1.100"
     ]
   },
   {
@@ -401,10 +401,10 @@ let objs = [
       143.842241
     ],
     "en": [
-      "ping 192.168 3.1 hundred"
+      "ping 192.168.3.100"
     ],
     "ru": [
-      "пинг 192.168 3.1 сотки"
+      "пинг 192.168.3.100"
     ]
   },
   {
@@ -449,10 +449,10 @@ let objs = [
       161.536281
     ],
     "en": [
-      "let's check out our for"
+      "let's check out r4"
     ],
     "ru": [
-      "давай проверим нашу"
+      "давай проверим r4"
     ]
   },
   {
@@ -473,10 +473,10 @@ let objs = [
       170.897969
     ],
     "en": [
-      "as you can see our 4 has a default route"
+      "as you can see r 4 has a default route"
     ],
     "ru": [
-      "как вы можете видеть, у наших 4 есть маршрут по умолчанию"
+      "как вы можете видеть, r 4 имеет маршрут по умолчанию"
     ]
   },
   {
@@ -485,10 +485,10 @@ let objs = [
       176.051469
     ],
     "en": [
-      "so it should be able to reach the 1 and 2.16 8.30 slash 24 network"
+      "so it should be able to reach the 192.168.3.0 / 24 network"
     ],
     "ru": [
-      "поэтому он должен быть в состоянии достичь сети 1 и 2.16 8.30 slash 24"
+      "поэтому он должен иметь доступ к сети 192.168.3.0 / 24"
     ]
   },
   {
@@ -497,10 +497,10 @@ let objs = [
       178.406615
     ],
     "en": [
-      "which is connected to our 3"
+      "which is connected to r 3"
     ],
     "ru": [
-      "который связан с нашими 3"
+      "который связан с r 3"
     ]
   },
   {
@@ -509,10 +509,10 @@ let objs = [
       180.356823
     ],
     "en": [
-      "let's check out our 3"
+      "let's check out r 3"
     ],
     "ru": [
-      "давайте посмотрим наши 3"
+      "давай посмотрим r 3"
     ]
   },
   {
@@ -533,10 +533,10 @@ let objs = [
       190.040135
     ],
     "en": [
-      "ok our 3 only has connected and local roads"
+      "ok r 3 only has connected and local roads"
     ],
     "ru": [
-      "хорошо, у наших 3 только соединенные и местные дороги"
+      "ok r 3 только подъездные и местные дороги"
     ]
   },
   {
@@ -545,10 +545,10 @@ let objs = [
       193.211551
     ],
     "en": [
-      "no AI GRP or even BGP routes"
+      "no EIGRP or even BGP routes"
     ],
     "ru": [
-      "нет AI GRP или даже маршрутов BGP"
+      "нет маршрутов EIGRP или даже BGP"
     ]
   },
   {
@@ -569,10 +569,10 @@ let objs = [
       201.25703
     ],
     "en": [
-      "but our 3 couldn't send the reply back"
+      "but r 3 couldn't send the reply back"
     ],
     "ru": [
-      "но наши трое не смогли отправить ответ"
+      "но r 3 не смог отправить ответ"
     ]
   },
   {
@@ -581,10 +581,10 @@ let objs = [
       206.314926
     ],
     "en": [
-      "because it doesn't have a route to 192.168.0 slash 24"
+      "because it doesn't have a route to 192.168.4.0 / 24"
     ],
     "ru": [
-      "потому что у него нет маршрута к 192.168.0 косая черта 24"
+      "потому что у него нет маршрута к 192.168.4.0 / 24"
     ]
   },
   {
@@ -605,10 +605,10 @@ let objs = [
       213.195988
     ],
     "en": [
-      "so let's look at the EA grpe issue"
+      "so let's look at the EIGRP issue"
     ],
     "ru": [
-      "Итак, давайте посмотрим на проблему с EA grpe"
+      "Итак, давайте посмотрим на проблему EIGRP"
     ]
   },
   {
@@ -617,10 +617,10 @@ let objs = [
       217.406487
     ],
     "en": [
-      "show IP erp neighbors"
+      "show EIGRP neighbors"
     ],
     "ru": [
-      "показать соседей по IP erp"
+      "показать соседей EIGRP"
     ]
   },
   {
@@ -677,10 +677,10 @@ let objs = [
       235.814151
     ],
     "en": [
-      "under routing for networks 203 OD 1 1 3 8 / 30 is listed"
+      "under routing for networks 2.0.3.0 1.3.0.8 / 30 is listed"
     ],
     "ru": [
-      "под маршрутизацией для сетей 203 OD 1 1 3 8/30 указано"
+      "под маршрутизацией для сетей указан 2.0.3.0 1.3.0.8 / 30"
     ]
   },
   {
@@ -761,10 +761,10 @@ let objs = [
       251.899275
     ],
     "en": [
-      "but 192.168.0 / 32 is incorrect"
+      "but 192.168.34.0 / 32 is incorrect"
     ],
     "ru": [
-      "но 192.168.0 / 32 неверно"
+      "но 192.168.34.0 / 32 неверно"
     ]
   },
   {
@@ -773,10 +773,10 @@ let objs = [
       259.09238
     ],
     "en": [
-      "r 3 doesn't have any interface in 192.168.0 / 32 Network"
+      "r 3 doesn't have any interface in 192.168.34.0 / 32 Network"
     ],
     "ru": [
-      "r 3 не имеет интерфейса в сети 192.168.0 / 32"
+      "r 3 не имеет интерфейса в сети 192.168.34.0 / 32"
     ]
   },
   {
@@ -785,10 +785,10 @@ let objs = [
       264.317109
     ],
     "en": [
-      "its G 0 1 interface is 192.168.0.1"
+      "its G 0 1 interface is 192.168.34.1"
     ],
     "ru": [
-      "его интерфейс G 0 1 - 192.168.0.1"
+      "его интерфейс G 0 1 - 192.168.34.1"
     ]
   },
   {
@@ -809,10 +809,10 @@ let objs = [
       268.98015
     ],
     "en": [
-      "coffee tea"
+      "conf t"
     ],
     "ru": [
-      "кофе чай"
+      "конф т"
     ]
   },
   {
@@ -821,10 +821,10 @@ let objs = [
       272.707629
     ],
     "en": [
-      "red ER e IG RP 100"
+      "router EIGRP 100"
     ],
     "ru": [
-      "красный ER e IG RP 100"
+      "роутер EIGRP 100"
     ]
   },
   {
@@ -833,10 +833,10 @@ let objs = [
       280.315733
     ],
     "en": [
-      "no network 192.168.0 oh-oh-oh-oh"
+      "no network 192.168.34.0 0.0.0.0"
     ],
     "ru": [
-      "нет сети 192.168.0 ой-ой-ой-ой"
+      "нет сети 192.168.34.0 0.0.0.0"
     ]
   },
   {
@@ -845,10 +845,10 @@ let objs = [
       288.124462
     ],
     "en": [
-      "network 192.168.0.0 oh-oh-oh 255"
+      "network 192.168.34.0 0.0.0.255"
     ],
     "ru": [
-      "сеть 192.168.0.0 ой-ой-ой 255"
+      "сеть 192.168.34.0 0.0.0.255"
     ]
   },
   {
@@ -881,10 +881,10 @@ let objs = [
       300.590544
     ],
     "en": [
-      "okay now R 3 has a route to 192.168.0 / 24"
+      "okay now R 3 has a route to 192.168.4.0 / 24"
     ],
     "ru": [
-      "хорошо, теперь у R 3 есть маршрут к 192.168.0 / 24"
+      "хорошо, теперь у R 3 есть маршрут к 192.168.4.0 / 24"
     ]
   },
   {
@@ -905,10 +905,10 @@ let objs = [
       310.334023
     ],
     "en": [
-      "in 192.168 3.1 hundred"
+      "in 192.168.3.100"
     ],
     "ru": [
-      "в 192,168 3,1 сотки"
+      "в 192.168.3.100"
     ]
   },
   {
@@ -941,10 +941,10 @@ let objs = [
       327.94046
     ],
     "en": [
-      "that probably has to do with the fact that our 3 still has no BGP routes"
+      "that probably has to do with the fact that r 3 still has no BGP routes"
     ],
     "ru": [
-      "это, вероятно, связано с тем, что у нашего 3 все еще нет маршрутов BGP"
+      "это, вероятно, связано с тем, что r 3 все еще не имеет маршрутов BGP"
     ]
   },
   {
@@ -953,10 +953,10 @@ let objs = [
       330.909376
     ],
     "en": [
-      "let's go back on our three to investigate"
+      "let's go back on r3 to investigate"
     ],
     "ru": [
-      "давайте вернемся к нашим трём, чтобы исследовать"
+      "давайте вернемся на r3, чтобы исследовать"
     ]
   },
   {
@@ -977,10 +977,10 @@ let objs = [
       347.226355
     ],
     "en": [
-      "ok so two of 302 139 in a s 65 thousand one is configured as our neighbor"
+      "ok so 2 of 3.0 to 1 of 3.9 in a s 65001 is configured as our neighbor"
     ],
     "ru": [
-      "хорошо, так что два из 302 139 в s 65 тысячах один настроен как наш сосед"
+      "Хорошо, поэтому 2 из 3,0 до 1 из 3,9 в s 65001 настроены как наш сосед"
     ]
   },
   {
@@ -1001,10 +1001,10 @@ let objs = [
       352.031792
     ],
     "en": [
-      "show IP bgp neighbors"
+      "show EIGRP neighbors"
     ],
     "ru": [
-      "показать соседей IP bgp"
+      "показать соседей EIGRP"
     ]
   },
   {
@@ -1097,10 +1097,10 @@ let objs = [
       385.433435
     ],
     "en": [
-      "encapsulation hdl-c"
+      "encapsulation hdlc"
     ],
     "ru": [
-      "инкапсуляция hdl-c"
+      "инкапсуляция hdlc"
     ]
   },
   {
@@ -1217,10 +1217,10 @@ let objs = [
       414.332455
     ],
     "en": [
-      "coffee/tea"
+      "conf t"
     ],
     "ru": [
-      "кофе чай"
+      "конф т"
     ]
   },
   {
@@ -1337,10 +1337,10 @@ let objs = [
       460.39962
     ],
     "en": [
-      "let's try a ping from PC for two PC one"
+      "let's try a ping from PC 4 to PC one"
     ],
     "ru": [
-      "попробуем пинг с ПК на два ПК один"
+      "давайте попробуем пинг с ПК 4 на ПК"
     ]
   },
   {

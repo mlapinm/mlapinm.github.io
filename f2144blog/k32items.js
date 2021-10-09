@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -224,7 +224,7 @@ let objs = [
       "now we can see the time source"
     ],
     "ru": [
-      "теперь мы можем видеть источник времени"
+      "теперь мы можем увидеть источник времени"
     ]
   },
   {
@@ -644,7 +644,7 @@ let objs = [
       "the next option is the month and date and we can enter them in either order"
     ],
     "ru": [
-      "следующая опция - месяц и дата, и мы можем вводить их в любом порядке."
+      "следующий вариант - месяц и число, и мы можем вводить их в любом порядке."
     ]
   },
   {
@@ -1136,7 +1136,7 @@ let objs = [
       "okay now let's configure r3 to sink it's time to r2"
     ],
     "ru": [
-      "Хорошо, теперь давайте настроим r3, чтобы он погрузился в r2"
+      "Хорошо, теперь давайте настроим r3, чтобы он утопил, пора на r2"
     ]
   },
   {
@@ -1292,7 +1292,7 @@ let objs = [
       "if you want to support my channel please consider contributing to my patreon patreon comm slots Jeremy's IT lab"
     ],
     "ru": [
-      "Если вы хотите поддержать мой канал, пожалуйста, подумайте о том, чтобы внести свой вклад в мой patreon patreon comm slots ИТ-лаборатория Джереми"
+      "если вы хотите поддержать мой канал, пожалуйста, подумайте о том, чтобы внести свой вклад в мой patreon patreon comm slots Джереми ИТ-лаборатория"
     ]
   },
   {

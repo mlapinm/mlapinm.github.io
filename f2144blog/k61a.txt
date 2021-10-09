@@ -159,7 +159,7 @@ because the SPR 2 router has already been configured to use PPP with chap
 359.343825
 let's see if we can ping SPR 2
 362.062221
-ping 200.0.0.1 
+ping 200.0.0.1
 365.489304
 as expected it doesn't work
 371.607158

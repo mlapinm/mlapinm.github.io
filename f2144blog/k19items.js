@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -98,25 +98,13 @@ let objs = [
   {
     "time": [
       44.957764,
-      52.74062
-    ],
-    "en": [
-      "step one is to ping from pc1 to pc2 2 generate traffic"
-    ],
-    "ru": [
-      "Шаг первый - пинговать с ПК1 на ПК2 2 генерировать трафик"
-    ]
-  },
-  {
-    "time": [
-      52.74062,
       54.819091
     ],
     "en": [
-      "let's go on pc one"
+      "step one is to ping from pc1 to pc2 2 generate traffic 52.74062 let's go on pc one"
     ],
     "ru": [
-      "пойдем на компьютер один"
+      "Шаг первый - пинговать с pc1 на pc2 2 генерировать трафик 52.74062 давайте перейдем к pc one"
     ]
   },
   {
@@ -314,25 +302,13 @@ let objs = [
   {
     "time": [
       127.844823,
-      132.50079
-    ],
-    "en": [
-      "conf t interface f0 2"
-    ],
-    "ru": [
-      "conf t interface f0 2"
-    ]
-  },
-  {
-    "time": [
-      132.50079,
       136.651881
     ],
     "en": [
-      "remember we have to configure it as an access port first"
+      "conf t interface f0 2 132.50079 remember we have to configure it as an access port first"
     ],
     "ru": [
-      "помните, что мы должны сначала настроить его как порт доступа"
+      "conf t interface f0 2 132.50079 помните, что мы должны сначала настроить его как порт доступа"
     ]
   },
   {
@@ -380,7 +356,7 @@ let objs = [
       "switch port port security MAC address followed by the MAC address we want to configure"
     ],
     "ru": [
-      "безопасность порта порта коммутатора MAC-адрес, за которым следует MAC-адрес, который мы хотим настроить"
+      "порт коммутатора безопасность порта MAC-адрес, за которым следует MAC-адрес, который мы хотим настроить"
     ]
   },
   {
@@ -440,7 +416,7 @@ let objs = [
       "the default aging time of a MAC address in the MAC address table is 5 minutes"
     ],
     "ru": [
-      "время устаревания MAC-адреса в таблице MAC-адресов по умолчанию составляет 5 минут."
+      "по умолчанию время устаревания MAC-адреса в таблице MAC-адресов составляет 5 минут."
     ]
   },
   {
@@ -530,25 +506,13 @@ let objs = [
   {
     "time": [
       207.177134,
-      211.6531
-    ],
-    "en": [
-      "enable show MAC address table"
-    ],
-    "ru": [
-      "включить показывать таблицу MAC-адресов"
-    ]
-  },
-  {
-    "time": [
-      211.6531,
       215.851521
     ],
     "en": [
-      "again there are two addresses on the f01 interface"
+      "enable show MAC address table 211.6531 again there are two addresses on the f01 interface"
     ],
     "ru": [
-      "снова есть два адреса на интерфейсе f01"
+      "включить показать таблицу MAC-адресов 211.6531 снова, есть два адреса на интерфейсе f01"
     ]
   },
   {
@@ -572,55 +536,31 @@ let objs = [
       "that of pc 2"
     ],
     "ru": [
-      "что ПК 2"
+      "тот ПК 2"
     ]
   },
   {
     "time": [
       221.952112,
-      224.31131
-    ],
-    "en": [
-      "which is the one we're interested in now"
-    ],
-    "ru": [
-      "который нас сейчас интересует"
-    ]
-  },
-  {
-    "time": [
-      224.31131,
       225.822703
     ],
     "en": [
-      "so I'll copy that"
+      "which is the one we're interested in now 224.31131 so I'll copy that"
     ],
     "ru": [
-      "так что я скопирую это"
+      "который нас сейчас интересует 224.31131, поэтому я скопирую это"
     ]
   },
   {
     "time": [
       225.822703,
-      230.61247
-    ],
-    "en": [
-      "ok now let's configure the interface"
-    ],
-    "ru": [
-      "хорошо, теперь давайте настроим интерфейс"
-    ]
-  },
-  {
-    "time": [
-      230.61247,
       246.147486
     ],
     "en": [
-      "conf t interface f0 2 switch port mode access switch port port security switch port port security MAC address and now I'll paste in PC 2 MAC address"
+      "ok now let's configure the interface 230.61247 conf t interface f0 2 switch port mode access switch port port security switch port port security MAC address and now I'll paste in PC 2 MAC address"
     ],
     "ru": [
-      "conf t interface f0 2 Switch Port Mode Access Switch Port Port security switch port port security MAC address and now I paste in PC 2 MAC address"
+      "хорошо, теперь давайте настроим интерфейс 230.61247 conf t interface f0 2 switch port mode access switch port port security switch port port security MAC address and now I paste in PC 2 MAC address"
     ]
   },
   {
@@ -836,7 +776,7 @@ let objs = [
       "a port security violation should be triggered when the packet with a different MAC address is received on the port security enabled interface"
     ],
     "ru": [
-      "нарушение безопасности порта должно срабатывать, когда пакет с другим MAC-адресом получен на интерфейсе с включенной защитой порта"
+      "нарушение безопасности порта должно быть инициировано, когда пакет с другим MAC-адресом получен на интерфейсе с включенной защитой порта"
     ]
   },
   {
@@ -1052,7 +992,7 @@ let objs = [
       "there we go and now pc 2 to switch 2 there we go"
     ],
     "ru": [
-      "вот и мы, и теперь компьютер 2 для переключения 2, мы идем"
+      "вот и мы, и теперь компьютер 2, чтобы переключить 2, мы идем"
     ]
   },
   {
@@ -1202,25 +1142,13 @@ let objs = [
   {
     "time": [
       485.807246,
-      489.79431
-    ],
-    "en": [
-      "it doesn't automatically recover and become enabled again"
-    ],
-    "ru": [
-      "он не восстанавливается автоматически и не включается снова"
-    ]
-  },
-  {
-    "time": [
-      489.79431,
       495.116752
     ],
     "en": [
-      "it can be configured to automatically recover from a port security error"
+      "it doesn't automatically recover and become enabled again 489.79431 it can be configured to automatically recover from a port security error"
     ],
     "ru": [
-      "его можно настроить для автоматического восстановления после ошибки безопасности порта"
+      "он не восстанавливается автоматически и не включается снова 489.79431 его можно настроить на автоматическое восстановление после ошибки безопасности порта"
     ]
   },
   {
@@ -1334,25 +1262,13 @@ let objs = [
   {
     "time": [
       523.681029,
-      527.97717
-    ],
-    "en": [
-      "shutdown no shutdown"
-    ],
-    "ru": [
-      "выключение нет выключения"
-    ]
-  },
-  {
-    "time": [
-      527.97717,
       534.473503
     ],
     "en": [
-      "this will reset the interface and it will no longer be in an error disabled State"
+      "shutdown no shutdown 527.97717 this will reset the interface and it will no longer be in an error disabled State"
     ],
     "ru": [
-      "это сбросит интерфейс, и он больше не будет в состоянии отключения из-за ошибки"
+      "shutdown no shutdown 527.97717 это приведет к сбросу интерфейса, и он больше не будет находиться в состоянии отключения из-за ошибки"
     ]
   },
   {
@@ -1406,25 +1322,13 @@ let objs = [
   {
     "time": [
       557.377987,
-      561.15042
-    ],
-    "en": [
-      "I'll go on PC one one more time"
-    ],
-    "ru": [
-      "Я пойду на ПК еще раз"
-    ]
-  },
-  {
-    "time": [
-      561.15042,
       566.333083
     ],
     "en": [
-      "ping 192.168.1.12"
+      "I'll go on PC one one more time 561.15042 ping 192.168.1.12"
     ],
     "ru": [
-      "пинг 192.168.1.12"
+      "Зайду еще раз на ПК 561.15042 пинг 192.168.1.12"
     ]
   },
   {

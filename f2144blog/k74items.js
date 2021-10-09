@@ -413,10 +413,10 @@ let objs = [
       140.178141
     ],
     "en": [
-      "and then enter the destination address of 1200 -"
+      "and then enter the destination address of 12.0.0.2"
     ],
     "ru": [
-      "а затем введите адрес назначения 1200 -"
+      "а затем введите адрес назначения 12.0.0.2"
     ]
   },
   {
@@ -737,10 +737,10 @@ let objs = [
       247.426495
     ],
     "en": [
-      "and there's the target of 1200 -"
+      "and there's the target of 12.0.0.2"
     ],
     "ru": [
-      "и есть цель 1200 -"
+      "и есть цель 12.0.0.2"
     ]
   },
   {

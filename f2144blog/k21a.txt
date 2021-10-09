@@ -5,9 +5,7 @@ you can download the lab file from the link in the description
 7.763039
 if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description
 15.320696
-this lab uses the same topology as the previous lab number 20
-21.30342
-whereas lab 20 had you configured various technologies
+this lab uses the same topology as the previous lab number 20 21.30342 whereas lab 20 had you configured various technologies
 25.130751
 this lab requires you to troubleshoot several configuration errors to restore connectivity between pcs 1 2 3 & 4
 33.293928
@@ -23,9 +21,7 @@ there is somewhat of an art to troubleshooting
 52.404091
 and you can go about it in many ways
 54.563013
-instead I will just show you the configuration errors one by one
-58.39374
-however it is important to have some sort of system to troubleshoot
+instead I will just show you the configuration errors one by one 58.39374 however it is important to have some sort of system to troubleshoot
 62.271893
 try to complete the lab yourself first then continue watching this video if you can't find and fix all of the configuration errors
 70.135207
@@ -47,9 +43,7 @@ and they all contribute to that
 110.696752
 but let's look at one of them
 112.498723
-I'll go on switch one
-114.90809
-password out of CCNA enable
+I'll go on switch one 114.90809 password out of CCNA enable
 120.592255
 if you use the command shell port security
 123.811233
@@ -85,9 +79,7 @@ but let's go back to switch 1 again
 191.246629
 do show port security
 196.321261
-notice that the security violation counter hasn't increased
-200.08195
-so PC one isn't triggering anymore port security violations
+notice that the security violation counter hasn't increased 200.08195 so PC one isn't triggering anymore port security violations
 203.972197
 but there are still problems elsewhere
 205.976522
@@ -103,9 +95,7 @@ there is one miss configuration on each
 229.098264
 on the g0 0.13 sub-interface the IP address is incorrect
 234.328624
-it should be 10.0.0.1
-236.59346
-which is the default gateway set on the pcs in VLAN 13
+it should be 10.0.0.1 236.59346 which is the default gateway set on the pcs in VLAN 13
 240.326284
 not 10.0.0.2
 242.209312
@@ -123,9 +113,7 @@ note that you don't have to remove the previous IP address first
 269.290594
 this overrides it
 270.566411
-next interface G 0 0 24 encapsulation dot1q 24
-279.71375
-ok that should fix it
+next interface G 0 0 24 encapsulation dot1q 24 279.71375 ok that should fix it
 282.573719
 now PC one should be able to ping PC 2
 286.108723
@@ -171,9 +159,7 @@ the administrative and operational mode is static access
 364.830995
 meaning it has be configured as an access port
 368.122358
-not a trunk
-369.08853
-let's fix that
+not a trunk 369.08853 let's fix that
 370.726602
 conf T interface f01 switch port mode trunk
 378.433259
@@ -189,9 +175,7 @@ which is not correct
 398.726114
 it should be in VLAN 13
 401.166776
-let's fix that
-402.74561
-interface f0 2 switch port access VLAN 13
+let's fix that 402.74561 interface f0 2 switch port access VLAN 13
 409.036045
 okay that's all the misconfigurations
 413.245456
@@ -213,9 +197,7 @@ I'll ping PC 2 first although we already tested before and it worked
 449.318302
 ping 10.0.1.12 the ping works again
 456.521528
-next let's ping pc3 which didn't work previously because of the misconfigurations on switch 2
-462.97534
-ping 10.0.0.13 now the ping works
+next let's ping pc3 which didn't work previously because of the misconfigurations on switch 2 462.97534 ping 10.0.0.13 now the ping works
 472.392529
 and finally I'll ping PC 4 ping 10.0.1.14 it works as well
 486.134943

@@ -2,25 +2,13 @@ let objs = [
   {
     "time": [
       0.0,
-      4.69823
-    ],
-    "en": [
-      "welcome to this free CCNA packet tracer practice lab"
-    ],
-    "ru": [
-      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
-    ]
-  },
-  {
-    "time": [
-      4.69823,
       8.036378
     ],
     "en": [
-      "you can download the lab file from the link in the description"
+      "welcome to this free CCNA packet tracer practice lab 4.69823 you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer 4.69823, вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -44,7 +32,7 @@ let objs = [
       "in which we configured inter VLAN routing with the router on a stick method"
     ],
     "ru": [
-      "в котором мы настроили маршрутизацию между VLAN с роутером методом флешки"
+      "в котором мы настроили маршрутизацию между VLAN с маршрутизатором на методе флешки"
     ]
   },
   {
@@ -62,25 +50,13 @@ let objs = [
   {
     "time": [
       24.038867,
-      27.62313
-    ],
-    "en": [
-      "the task this time is to troubleshoot a configuration error and fix it"
-    ],
-    "ru": [
-      "на этот раз задача состоит в том, чтобы устранить ошибку конфигурации и исправить ее"
-    ]
-  },
-  {
-    "time": [
-      27.62313,
       35.951555
     ],
     "en": [
-      "troubleshooting is an important skill to have for your CCENT and CCNA exams and also of course in real-world situations"
+      "the task this time is to troubleshoot a configuration error and fix it 27.62313 troubleshooting is an important skill to have for your CCENT and CCNA exams and also of course in real-world situations"
     ],
     "ru": [
-      "устранение неполадок - важный навык для экзаменов CCENT и CCNA, а также, конечно, в реальных ситуациях."
+      "на этот раз задача состоит в том, чтобы устранить ошибку конфигурации и исправить ее. 27.62313 Устранение неполадок - важный навык для экзаменов CCENT и CCNA, а также, конечно, в реальных ситуациях."
     ]
   },
   {
@@ -98,25 +74,13 @@ let objs = [
   {
     "time": [
       38.553251,
-      41.59053
-    ],
-    "en": [
-      "try to complete this lab on your own first"
-    ],
-    "ru": [
-      "попробуйте сначала пройти эту лабораторную работу самостоятельно"
-    ]
-  },
-  {
-    "time": [
-      41.59053,
       44.600378
     ],
     "en": [
-      "then continue watching this video if you have trouble"
+      "try to complete this lab on your own first 41.59053 then continue watching this video if you have trouble"
     ],
     "ru": [
-      "тогда продолжайте смотреть это видео, если у вас возникнут проблемы"
+      "попробуйте сначала выполнить эту лабораторную работу самостоятельно 41.59053, а затем продолжайте смотреть это видео, если у вас возникнут проблемы"
     ]
   },
   {
@@ -158,37 +122,13 @@ let objs = [
   {
     "time": [
       55.038719,
-      58.49551
-    ],
-    "en": [
-      "so this is our scenario"
-    ],
-    "ru": [
-      "так это наш сценарий"
-    ]
-  },
-  {
-    "time": [
-      58.49551,
-      64.03647
-    ],
-    "en": [
-      "we have 4 pcs with pc1 & pc2 being in VLAN 13"
-    ],
-    "ru": [
-      "у нас есть 4 ПК с pc1 и pc2 в VLAN 13"
-    ]
-  },
-  {
-    "time": [
-      64.03647,
       67.407514
     ],
     "en": [
-      "and pc 2 and pc 4 being in VLAN 24"
+      "so this is our scenario 58.49551 we have 4 pcs with pc1 & pc2 being in VLAN 13 64.03647 and pc 2 and pc 4 being in VLAN 24"
     ],
     "ru": [
-      "и ПК 2 и ПК 4 находятся в VLAN 24"
+      "Итак, это наш сценарий 58.49551, у нас есть 4 ПК, причем ПК1 и ПК2 находятся в VLAN 13 64.03647, а ПК 2 и ПК 4 находятся в VLAN 24"
     ]
   },
   {
@@ -200,7 +140,7 @@ let objs = [
       "someone has configured inter VLAN routing to allow these pcs to communicate with each other"
     ],
     "ru": [
-      "кто-то настроил маршрутизацию между VLAN, чтобы эти компьютеры могли связываться друг с другом"
+      "кто-то настроил маршрутизацию между VLAN, чтобы эти компьютеры могли взаимодействовать друг с другом"
     ]
   },
   {
@@ -290,25 +230,13 @@ let objs = [
   {
     "time": [
       107.132281,
-      108.27213
-    ],
-    "en": [
-      "let's test"
-    ],
-    "ru": [
-      "давайте протестируем"
-    ]
-  },
-  {
-    "time": [
-      108.27213,
       110.595281
     ],
     "en": [
-      "I'll use PC 1 first"
+      "let's test 108.27213 I'll use PC 1 first"
     ],
     "ru": [
-      "Я сначала воспользуюсь ПК 1"
+      "давайте протестируем 108.27213 Я сначала воспользуюсь ПК 1"
     ]
   },
   {
@@ -410,25 +338,13 @@ let objs = [
   {
     "time": [
       157.333417,
-      164.75137
-    ],
-    "en": [
-      "finally PC 4 ping 10.0.0.1 31 it works"
-    ],
-    "ru": [
-      "наконец ПК 4 пинг 10.0.0.1 31 работает"
-    ]
-  },
-  {
-    "time": [
-      164.75137,
       166.875221
     ],
     "en": [
-      "so we have confirmed the problem"
+      "finally PC 4 ping 10.0.0.1 31 it works 164.75137 so we have confirmed the problem"
     ],
     "ru": [
-      "Итак, мы подтвердили проблему"
+      "наконец ПК 4 пинг 10.0.0.1 31 работает 164.75137, значит, мы подтвердили проблему"
     ]
   },
   {
@@ -464,7 +380,7 @@ let objs = [
       "providing our inter VLAN routing it's probably a good idea to look around the link between switch 1 and r1"
     ],
     "ru": [
-      "обеспечивая нашу маршрутизацию между VLAN, вероятно, неплохо было бы просмотреть ссылку между коммутатором 1 и r1"
+      "обеспечивая маршрутизацию между VLAN, вероятно, неплохо было бы посмотреть на ссылку между коммутатором 1 и r1"
     ]
   },
   {
@@ -614,25 +530,13 @@ let objs = [
   {
     "time": [
       243.106631,
-      251.15149
-    ],
-    "en": [
-      "looks like the interface is up and the IP addresses are configured as 10.0.0.1 for VLAN 13"
-    ],
-    "ru": [
-      "похоже, что интерфейс включен, а IP-адреса настроены как 10.0.0.1 для VLAN 13"
-    ]
-  },
-  {
-    "time": [
-      251.15149,
       254.869647
     ],
     "en": [
-      "and 10.0.0.1 to 9 for VLAN 24"
+      "looks like the interface is up and the IP addresses are configured as 10.0.0.1 for VLAN 13 251.15149 and 10.0.0.1 to 9 for VLAN 24"
     ],
     "ru": [
-      "и от 10.0.0.1 до 9 для VLAN 24"
+      "похоже, что интерфейс включен, а IP-адреса настроены как 10.0.0.1 для VLAN 13 251.15149 и от 10.0.0.1 до 9 для VLAN 24"
     ]
   },
   {
@@ -710,25 +614,13 @@ let objs = [
   {
     "time": [
       281.175486,
-      289.49705
-    ],
-    "en": [
-      "PC 3 ipconfig /all looks good"
-    ],
-    "ru": [
-      "ПК 3 ipconfig / все выглядит хорошо"
-    ]
-  },
-  {
-    "time": [
-      289.49705,
       298.843391
     ],
     "en": [
-      "finally on PC 4 ipconfig /all no problems here"
+      "PC 3 ipconfig /all looks good 289.49705 finally on PC 4 ipconfig /all no problems here"
     ],
     "ru": [
-      "наконец-то на ПК 4 ipconfig / все тут никаких проблем"
+      "ПК 3 ipconfig / все выглядит хорошо 289.49705 наконец-то на ПК 4 ipconfig / все здесь никаких проблем"
     ]
   },
   {
@@ -740,7 +632,7 @@ let objs = [
       "now let's go back to our one"
     ],
     "ru": [
-      "а теперь вернемся к нашему"
+      "теперь вернемся к нашему"
     ]
   },
   {
@@ -830,25 +722,13 @@ let objs = [
   {
     "time": [
       341.257255,
-      343.22351
-    ],
-    "en": [
-      "there is no VLAN 14 on the network"
-    ],
-    "ru": [
-      "в сети нет VLAN 14"
-    ]
-  },
-  {
-    "time": [
-      343.22351,
       345.645814
     ],
     "en": [
-      "this is supposed to be VLAN 24"
+      "there is no VLAN 14 on the network 343.22351 this is supposed to be VLAN 24"
     ],
     "ru": [
-      "это должен быть VLAN 24"
+      "в сети 343.22351 нет VLAN 14, это предполагается VLAN 24"
     ]
   },
   {
@@ -866,25 +746,13 @@ let objs = [
   {
     "time": [
       347.624844,
-      358.39565
-    ],
-    "en": [
-      "conf t interface g0 0.24 encapsulation dot1q 24"
-    ],
-    "ru": [
-      "conf t interface g0 0.24 инкапсуляция dot1q 24"
-    ]
-  },
-  {
-    "time": [
-      358.39565,
       360.818604
     ],
     "en": [
-      "ok that should solve the problem"
+      "conf t interface g0 0.24 encapsulation dot1q 24 358.39565 ok that should solve the problem"
     ],
     "ru": [
-      "хорошо, это должно решить проблему"
+      "conf t interface g0 0.24 encapsulation dot1q 24 358.39565 ok, что должно решить проблему"
     ]
   },
   {
@@ -1028,7 +896,7 @@ let objs = [
       "just to be sure I'll send some pings from PC 2 as well"
     ],
     "ru": [
-      "просто чтобы быть уверенным, что я также пришлю несколько пингов с ПК 2"
+      "на всякий случай пришлю пинги и с ПК 2"
     ]
   },
   {
@@ -1046,25 +914,13 @@ let objs = [
   {
     "time": [
       425.727168,
-      431.97908
-    ],
-    "en": [
-      "ping 10.0.0.1 31 it works as well"
-    ],
-    "ru": [
-      "ping 10.0.0.1 31 тоже работает"
-    ]
-  },
-  {
-    "time": [
-      431.97908,
       434.289798
     ],
     "en": [
-      "we have successfully fixed the network"
+      "ping 10.0.0.1 31 it works as well 431.97908 we have successfully fixed the network"
     ],
     "ru": [
-      "мы успешно исправили сеть"
+      "ping 10.0.0.1 31 тоже работает 431.97908 мы успешно исправили сеть"
     ]
   },
   {

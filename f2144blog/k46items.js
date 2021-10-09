@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -44,7 +44,7 @@ let objs = [
       "also please subscribe to the channel for more labs like this"
     ],
     "ru": [
-      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторий"
+      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторных работ"
     ]
   },
   {
@@ -140,7 +140,7 @@ let objs = [
       "finally on switch 3 enable conf t interface g0 1 switch port mode trunk switch port no negotiate exit"
     ],
     "ru": [
-      "наконец, на коммутаторе 3 enable conf t interface g0 1 switch port mode trunk switch port nogotiate exit"
+      "наконец, на коммутаторе 3 включить конф. интерфейс g0 1 режим порта коммутатора магистральный порт коммутатора без согласования выход"
     ]
   },
   {
@@ -308,7 +308,7 @@ let objs = [
       "okay let's do the configuration"
     ],
     "ru": [
-      "хорошо, давайте сделаем настройку"
+      "хорошо давай сделаем настройку"
     ]
   },
   {
@@ -404,7 +404,7 @@ let objs = [
       "let's check do show VLAN brief"
     ],
     "ru": [
-      "давайте проверим показать краткое описание VLAN"
+      "давайте проверим показать краткую информацию о VLAN"
     ]
   },
   {
@@ -452,7 +452,7 @@ let objs = [
       "VTP server is actually the default VTV mode by the way"
     ],
     "ru": [
-      "Кстати, сервер VTP на самом деле является режимом VTV по умолчанию."
+      "Кстати, VTP-сервер на самом деле является режимом VTV по умолчанию."
     ]
   },
   {
@@ -560,7 +560,7 @@ let objs = [
       "it will automatically join that other switches domain"
     ],
     "ru": [
-      "он автоматически присоединится к этому домену других коммутаторов"
+      "он автоматически присоединится к домену других коммутаторов"
     ]
   },
   {
@@ -668,7 +668,7 @@ let objs = [
       "okay next is switch 2 interface range F 0 1 to 2 switch port mode access switch port access VLAN 40 switch port no negotiate"
     ],
     "ru": [
-      "хорошо, далее идет диапазон интерфейса коммутатора 2 F 0 1–2 режим порта коммутатора доступ порта коммутатора доступ VLAN 40 порт коммутатора не согласовывается"
+      "хорошо, далее идет диапазон интерфейса коммутатора 2 F 0 1–2 режим порта коммутатора доступ к порту коммутатора VLAN 40 порт коммутатора не согласовывается"
     ]
   },
   {
@@ -836,7 +836,7 @@ let objs = [
       "switch port trunk allowed VLAN add 9"
     ],
     "ru": [
-      "магистраль порта коммутатора разрешена VLAN добавить 9"
+      "порт коммутатора транк разрешен VLAN добавить 9"
     ]
   },
   {
@@ -1088,7 +1088,7 @@ let objs = [
       "switch port trunk allowed VLAN 1 10 20"
     ],
     "ru": [
-      "соединительная линия порта коммутатора разрешена VLAN 1 10 20"
+      "магистраль порта коммутатора разрешена VLAN 1 10 20"
     ]
   },
   {
@@ -1220,7 +1220,7 @@ let objs = [
       "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, подобные этой, которые будут выпускаться еженедельно"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {
@@ -1244,7 +1244,7 @@ let objs = [
       "if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description"
     ],
     "ru": [
-      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфириумом по адресам в описании"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах и эфириуме по адресам в описании"
     ]
   },
   {

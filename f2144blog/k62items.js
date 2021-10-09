@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -44,7 +44,7 @@ let objs = [
       "also please subscribe to the channel for more labs like this"
     ],
     "ru": [
-      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторий"
+      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторных работ"
     ]
   },
   {
@@ -389,10 +389,10 @@ let objs = [
       130.485778
     ],
     "en": [
-      "do ping 100 Oh Oh 1"
+      "do ping 100.0.0.1"
     ],
     "ru": [
-      "сделать пинг 100 ой ой 1"
+      "сделать пинг 100.0.0.1"
     ]
   },
   {
@@ -404,7 +404,7 @@ let objs = [
       "okay looks like it works now"
     ],
     "ru": [
-      "хорошо, похоже, теперь это работает"
+      "хорошо, похоже, сейчас это работает"
     ]
   },
   {
@@ -557,10 +557,10 @@ let objs = [
       194.959028
     ],
     "en": [
-      "coffee tea interface s0 0"
+      "conf t interface s0 0"
     ],
     "ru": [
-      "кофе чай интерфейс s0 0"
+      "conf t interface s0 0"
     ]
   },
   {
@@ -773,10 +773,10 @@ let objs = [
       260.413803
     ],
     "en": [
-      "which must be identical to the password configured on SPR to"
+      "which must be identical to the password configured on SPR 2"
     ],
     "ru": [
-      "который должен совпадать с паролем, настроенным на SPR для"
+      "который должен совпадать с паролем, настроенным на SPR 2"
     ]
   },
   {
@@ -845,10 +845,10 @@ let objs = [
       277.193426
     ],
     "en": [
-      "coffee tea"
+      "conf t"
     ],
     "ru": [
-      "кофе чай"
+      "конф т"
     ]
   },
   {
@@ -1037,10 +1037,10 @@ let objs = [
       344.13513
     ],
     "en": [
-      "so it should have a username s PR for password CCIE configured"
+      "so it should have a username SPR 4 password CCIE configured"
     ],
     "ru": [
-      "поэтому он должен иметь PR имени пользователя для пароля CCIE, настроенного"
+      "поэтому он должен иметь имя пользователя SPR 4, пароль CCIE, настроенный"
     ]
   },
   {
@@ -1121,10 +1121,10 @@ let objs = [
       369.644674
     ],
     "en": [
-      "coffee tea interface s 0 0"
+      "conf t interface s 0 0"
     ],
     "ru": [
-      "кофе чай интерфейс s 0 0"
+      "conf t interface s 0 0"
     ]
   },
   {
@@ -1172,7 +1172,7 @@ let objs = [
       "ok it's up up now"
     ],
     "ru": [
-      "хорошо, сейчас дело"
+      "хорошо, теперь все готово"
     ]
   },
   {
@@ -1181,10 +1181,10 @@ let objs = [
       389.959373
     ],
     "en": [
-      "do ping 1 4000 dot 1"
+      "do ping 140.0.0.1"
     ],
     "ru": [
-      "сделать пинг 1 4000 точек 1"
+      "сделать пинг 140.0.0.1"
     ]
   },
   {
@@ -1217,10 +1217,10 @@ let objs = [
       405.168106
     ],
     "en": [
-      "so if I try to ping r2 r3 or r1 from our 4 it should work now"
+      "so if I try to ping r2 r3 or r1 from r 4 it should work now"
     ],
     "ru": [
-      "поэтому, если я попытаюсь пинговать r2 r3 или r1 из наших 4, он должен работать сейчас"
+      "поэтому, если я попытаюсь пинговать r2 r3 или r1 с r 4, он должен работать сейчас"
     ]
   },
   {
@@ -1253,10 +1253,10 @@ let objs = [
       414.392586
     ],
     "en": [
-      "do ping 100 oh oh -"
+      "do ping 100.0.0.2"
     ],
     "ru": [
-      "сделать пинг 100 ой ой -"
+      "сделать пинг 100.0.0.2"
     ]
   },
   {
@@ -1289,10 +1289,10 @@ let objs = [
       428.818686
     ],
     "en": [
-      "do ping 1 3000 - it works as well"
+      "do ping 130.0.0.2 it works as well"
     ],
     "ru": [
-      "сделать пинг 1 3000 - тоже работает"
+      "сделать пинг 130.0.0.2 он тоже работает"
     ]
   },
   {
@@ -1313,10 +1313,10 @@ let objs = [
       438.401157
     ],
     "en": [
-      "do ping 200 go - it works as well"
+      "do ping 200.0.0.2 it works as well"
     ],
     "ru": [
-      "сделай пинг 200 иди - тоже работает"
+      "сделать ping 200.0.0.2 он тоже работает"
     ]
   },
   {

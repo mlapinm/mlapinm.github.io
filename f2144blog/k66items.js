@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -44,7 +44,7 @@ let objs = [
       "also please subscribe to the channel for more labs like this"
     ],
     "ru": [
-      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторий"
+      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторных работ"
     ]
   },
   {
@@ -77,10 +77,10 @@ let objs = [
       34.242402
     ],
     "en": [
-      "the GRE tunnel should be working with E I gr P over"
+      "the GRE tunnel should be working with EIGRP over"
     ],
     "ru": [
-      "туннель GRE должен работать с E I gr P поверх"
+      "туннель GRE должен работать с EIGRP через"
     ]
   },
   {
@@ -152,7 +152,7 @@ let objs = [
       "the tunnel interface is up down"
     ],
     "ru": [
-      "интерфейс туннеля вверх вниз"
+      "туннельный интерфейс вверх вниз"
     ]
   },
   {
@@ -221,10 +221,10 @@ let objs = [
       79.19417
     ],
     "en": [
-      "tunnel source of serial zero zero zero is okay"
+      "tunnel source of serial 0 0 0 is okay"
     ],
     "ru": [
-      "Туннельный источник серийного нуля нуля нуля в порядке"
+      "Туннельный источник серийного номера 0 0 0 в порядке"
     ]
   },
   {
@@ -236,7 +236,7 @@ let objs = [
       "but look at the destination"
     ],
     "ru": [
-      "но посмотри на пункт назначения"
+      "но посмотрите на пункт назначения"
     ]
   },
   {
@@ -305,10 +305,10 @@ let objs = [
       100.660678
     ],
     "en": [
-      "interface tunnel zero"
+      "interface tunnel 0"
     ],
     "ru": [
-      "нулевой интерфейсный туннель"
+      "интерфейсный туннель 0"
     ]
   },
   {
@@ -317,10 +317,10 @@ let objs = [
       106.685871
     ],
     "en": [
-      "tunnel destination 200 oh oh -"
+      "tunnel destination 200.0.0.2"
     ],
     "ru": [
-      "Пункт назначения туннеля 200 ой ой -"
+      "пункт назначения туннеля 200.0.0.2"
     ]
   },
   {
@@ -365,10 +365,10 @@ let objs = [
       126.039839
     ],
     "en": [
-      "routing for networks 1001 0/24"
+      "routing for networks 10.0.1.0/24"
     ],
     "ru": [
-      "маршрутизация для сетей 1001 0/24"
+      "маршрутизация для сетей 10.0.1.0/24"
     ]
   },
   {
@@ -377,10 +377,10 @@ let objs = [
       129.025666
     ],
     "en": [
-      "and 100 0 0 / 30"
+      "and 100.0.0.0 / 30"
     ],
     "ru": [
-      "и 100 0 0/30"
+      "и 100.0.0.0 / 30"
     ]
   },
   {
@@ -401,10 +401,10 @@ let objs = [
       136.935326
     ],
     "en": [
-      "we want to activate a idrp on the G zero zero interface which we are"
+      "we want to activate a idrp on the G 0 0 interface which we are"
     ],
     "ru": [
-      "мы хотим активировать idrp на интерфейсе G zero zero, который мы"
+      "мы хотим активировать idrp на интерфейсе G 0 0, который мы"
     ]
   },
   {
@@ -449,10 +449,10 @@ let objs = [
       146.021992
     ],
     "en": [
-      "which is the s zero zero zero interface"
+      "which is the s 0 0 0 interface"
     ],
     "ru": [
-      "который является нулевым нулевым нулевым интерфейсом s"
+      "который является интерфейсом s 0 0 0"
     ]
   },
   {
@@ -464,7 +464,7 @@ let objs = [
       "isn't the tunnel interface"
     ],
     "ru": [
-      "не туннельный интерфейс"
+      "это не туннельный интерфейс"
     ]
   },
   {
@@ -497,10 +497,10 @@ let objs = [
       155.140064
     ],
     "en": [
-      "router ew g RP 100"
+      "router EIGRP 100"
     ],
     "ru": [
-      "маршрутизатор ew g RP 100"
+      "роутер EIGRP 100"
     ]
   },
   {
@@ -509,10 +509,10 @@ let objs = [
       162.043828
     ],
     "en": [
-      "no network 100 oh oh oh oh oh three"
+      "no network 100.0.0.0 0.0.0.3"
     ],
     "ru": [
-      "нет сети 100 ой ой ой ой три"
+      "нет сети 100.0.0.0 0.0.0.3"
     ]
   },
   {
@@ -521,10 +521,10 @@ let objs = [
       171.998499
     ],
     "en": [
-      "network 192.168.1.0 oh oh oh three end"
+      "network 192.168.1.0 0.0.0.3 end"
     ],
     "ru": [
-      "сеть 192.168.1.0 ой ой ой три конца"
+      "сеть 192.168.1.0 0.0.0.3 конец"
     ]
   },
   {
@@ -533,10 +533,10 @@ let objs = [
       174.624031
     ],
     "en": [
-      "ok we've solved two problems here on our one"
+      "ok we've solved two problems here on R 1"
     ],
     "ru": [
-      "хорошо, мы решили две проблемы здесь, по нашей"
+      "хорошо, мы решили две проблемы здесь, на R 1"
     ]
   },
   {
@@ -545,10 +545,10 @@ let objs = [
       179.138657
     ],
     "en": [
-      "however there are still problems on our two so our tunnel won't be working yet"
+      "however there are still problems on R 2 so our tunnel won't be working yet"
     ],
     "ru": [
-      "однако на наших двух все еще есть проблемы, поэтому наш туннель еще не работает"
+      "однако на R 2 все еще есть проблемы, поэтому наш туннель пока не работает"
     ]
   },
   {
@@ -557,10 +557,10 @@ let objs = [
       182.499451
     ],
     "en": [
-      "let's go on our to"
+      "let's go on R 2"
     ],
     "ru": [
-      "давай продолжим"
+      "пойдем на R 2"
     ]
   },
   {
@@ -569,10 +569,10 @@ let objs = [
       191.521696
     ],
     "en": [
-      "enable I'll quickly check the EIG RP configuration here on our to"
+      "enable I'll quickly check the EIGRP configuration here on R 2"
     ],
     "ru": [
-      "включить Я быстро проверю конфигурацию EIG RP здесь, на нашем сайте"
+      "enable Я быстро проверю конфигурацию EIGRP здесь, на R 2"
     ]
   },
   {
@@ -593,10 +593,10 @@ let objs = [
       201.604009
     ],
     "en": [
-      "EW GFP is activated for 1002 0/24"
+      "EIGRP is activated for 10.0.2.0/24"
     ],
     "ru": [
-      "EW GFP активирован для 1002 0/24"
+      "EIGRP активирован для 10.0.2.0/24"
     ]
   },
   {
@@ -629,10 +629,10 @@ let objs = [
       211.668317
     ],
     "en": [
-      "so the AI g RP configuration looks good"
+      "so the EIGRP configuration looks good"
     ],
     "ru": [
-      "так что конфигурация AI g RP выглядит хорошо"
+      "так что конфигурация EIGRP выглядит хорошо"
     ]
   },
   {
@@ -653,10 +653,10 @@ let objs = [
       218.337025
     ],
     "en": [
-      "show interface Tunnel zero"
+      "show interface Tunnel 0"
     ],
     "ru": [
-      "показать интерфейс Tunnel zero"
+      "показать интерфейс Tunnel 0"
     ]
   },
   {
@@ -725,10 +725,10 @@ let objs = [
       238.07004
     ],
     "en": [
-      "Koff t"
+      "conf t"
     ],
     "ru": [
-      "Кофф т"
+      "конф т"
     ]
   },
   {
@@ -809,10 +809,10 @@ let objs = [
       268.282059
     ],
     "en": [
-      "there is no route allowing us to reach the tunnel destination of 100 oh oh -"
+      "there is no route allowing us to reach the tunnel destination of 100.0.0.2"
     ],
     "ru": [
-      "нет маршрута, который позволил бы нам добраться до пункта назначения туннеля 100 ой ой -"
+      "нет маршрута, позволяющего нам добраться до пункта назначения туннеля 100.0.0.2"
     ]
   },
   {
@@ -845,10 +845,10 @@ let objs = [
       288.686412
     ],
     "en": [
-      "exit IP route oh oh oh oh oh oh oh oh 201"
+      "exit IP route 0.0.0.0 0.0.0.0 200.0.0.1"
     ],
     "ru": [
-      "выход IP-маршрута ой ой ой ой ой ой ой ой 201"
+      "выход из IP-маршрута 0.0.0.0 0.0.0.0 200.0.0.1"
     ]
   },
   {
@@ -872,7 +872,7 @@ let objs = [
       "okay looks like it's up now"
     ],
     "ru": [
-      "хорошо, похоже, что это сейчас"
+      "ладно, похоже, все кончено"
     ]
   },
   {
@@ -917,10 +917,10 @@ let objs = [
       313.623827
     ],
     "en": [
-      "now are we getting the EIG our peer out to our ones internal network"
+      "now are we getting the EIGRP route to r 1s internal network"
     ],
     "ru": [
-      "теперь мы выводим EIG, наш одноранговый узел, в нашу внутреннюю сеть"
+      "теперь мы получаем маршрут EIGRP к внутренней сети r 1s"
     ]
   },
   {
@@ -977,10 +977,10 @@ let objs = [
       326.036979
     ],
     "en": [
-      "finally let's try a ping from PC to 2 PC one"
+      "finally let's try a ping from PC to 2 PC 1"
     ],
     "ru": [
-      "наконец-то попробуем пинг с ПК на 2 ПК один"
+      "наконец-то попробуем пинг с ПК на 2 ПК 1"
     ]
   },
   {
@@ -989,10 +989,10 @@ let objs = [
       334.34326
     ],
     "en": [
-      "ting 1001 dot 100"
+      "ping 10.0.1.100"
     ],
     "ru": [
-      "ting 1001 точка 100"
+      "пинг 10.0.1.100"
     ]
   },
   {
@@ -1052,7 +1052,7 @@ let objs = [
       "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, подобные этой, которые будут выпускаться еженедельно"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {
@@ -1076,7 +1076,7 @@ let objs = [
       "if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description"
     ],
     "ru": [
-      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфириумом по адресам в описании"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах и эфириуме по адресам в описании"
     ]
   },
   {

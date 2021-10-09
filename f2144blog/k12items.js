@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -62,25 +62,13 @@ let objs = [
   {
     "time": [
       16.829985,
-      21.22814
-    ],
-    "en": [
-      "as always try to complete the lab on your own first"
-    ],
-    "ru": [
-      "как всегда, попробуйте сначала пройти лабораторию самостоятельно"
-    ]
-  },
-  {
-    "time": [
-      21.22814,
       24.114711
     ],
     "en": [
-      "then continue watching this video if you have trouble"
+      "as always try to complete the lab on your own first 21.22814 then continue watching this video if you have trouble"
     ],
     "ru": [
-      "тогда продолжайте смотреть это видео, если у вас возникнут проблемы"
+      "как всегда, попробуйте сначала пройти лабораторную работу самостоятельно 21.22814, а затем продолжайте смотреть это видео, если у вас возникнут проблемы"
     ]
   },
   {
@@ -158,25 +146,13 @@ let objs = [
   {
     "time": [
       48.614783,
-      54.7167
-    ],
-    "en": [
-      "for most of these labs I've been pre configuring the host names but let's quickly review the command"
-    ],
-    "ru": [
-      "для большинства этих лабораторных работ я предварительно настраивал имена хостов, но давайте быстро рассмотрим команду"
-    ]
-  },
-  {
-    "time": [
-      54.7167,
       62.909658
     ],
     "en": [
-      "I'll hop on switch one and enable conf t host name switch 1"
+      "for most of these labs I've been pre configuring the host names but let's quickly review the command 54.7167 I'll hop on switch one and enable conf t host name switch 1"
     ],
     "ru": [
-      "Я перейду на первый переключатель и включу переключатель имени хоста conf t 1."
+      "для большинства этих лабораторных работ я предварительно настраивал имена хостов, но давайте быстро рассмотрим команду 54.7167. Я перейду на первый переключатель и включу конфигурирование имени хоста переключателя 1."
     ]
   },
   {
@@ -296,7 +272,7 @@ let objs = [
       "remember that do is used to allow us to perform commands in global configuration interface configuration or other modes which we would normally have to be in privileged exec mode to use"
     ],
     "ru": [
-      "помните, что do используется, чтобы позволить нам выполнять команды в конфигурации интерфейса глобальной конфигурации или в других режимах, которые мы обычно должны находиться в привилегированном режиме exec, чтобы использовать"
+      "помните, что do используется, чтобы позволить нам выполнять команды в конфигурации интерфейса глобальной конфигурации или в других режимах, которые обычно должны быть в привилегированном режиме exec, чтобы использовать"
     ]
   },
   {
@@ -458,25 +434,13 @@ let objs = [
   {
     "time": [
       188.072563,
-      194.76125
-    ],
-    "en": [
-      "now let's change the name to management with the command named management"
-    ],
-    "ru": [
-      "теперь давайте изменим имя на management с помощью команды с именем management"
-    ]
-  },
-  {
-    "time": [
-      194.76125,
       202.262893
     ],
     "en": [
-      "ok now let's use the same commands for VLAN 24 VLAN 24"
+      "now let's change the name to management with the command named management 194.76125 ok now let's use the same commands for VLAN 24 VLAN 24"
     ],
     "ru": [
-      "хорошо, теперь давайте использовать те же команды для VLAN 24 VLAN 24"
+      "теперь давайте изменим имя на управление с помощью команды с именем management 194.76125 хорошо, теперь давайте использовать те же команды для VLAN 24 VLAN 24"
     ]
   },
   {
@@ -506,25 +470,13 @@ let objs = [
   {
     "time": [
       210.496928,
-      218.29557
-    ],
-    "en": [
-      "we have successfully created VLAN 13 and VLAN 24 with the names management and engineering"
-    ],
-    "ru": [
-      "мы успешно создали VLAN 13 и VLAN 24 с управлением именами и проектированием"
-    ]
-  },
-  {
-    "time": [
-      218.29557,
       223.456275
     ],
     "en": [
-      "when you're doing the lab performed the same configurations on switch 2 and that's step 2"
+      "we have successfully created VLAN 13 and VLAN 24 with the names management and engineering 218.29557 when you're doing the lab performed the same configurations on switch 2 and that's step 2"
     ],
     "ru": [
-      "когда вы выполняете лабораторную работу, выполняете те же конфигурации на переключателе 2, и это шаг 2"
+      "мы успешно создали VLAN 13 и VLAN 24 с управлением именами и проектированием 218.29557, когда вы выполняете лабораторную работу, выполнили те же настройки на коммутаторе 2, и это шаг 2"
     ]
   },
   {
@@ -632,7 +584,7 @@ let objs = [
       "do show VLAN briefed"
     ],
     "ru": [
-      "показать проинформированный о VLAN"
+      "показать проинформированный VLAN"
     ]
   },
   {
@@ -650,25 +602,13 @@ let objs = [
   {
     "time": [
       288.094455,
-      289.57954
-    ],
-    "en": [
-      "that's all for step 3"
-    ],
-    "ru": [
-      "это все для шага 3"
-    ]
-  },
-  {
-    "time": [
-      289.57954,
       297.004933
     ],
     "en": [
-      "step four is to configure a trunk link between switch 1 and switch 2"
+      "that's all for step 3 289.57954 step four is to configure a trunk link between switch 1 and switch 2"
     ],
     "ru": [
-      "Шаг четвертый - настроить магистральный канал между коммутатором 1 и коммутатором 2."
+      "это все для шага 3 289.57954 шаг четвертый - настроить магистральный канал между коммутатором 1 и коммутатором 2"
     ]
   },
   {
@@ -734,25 +674,13 @@ let objs = [
   {
     "time": [
       321.611565,
-      327.13959
-    ],
-    "en": [
-      "the encapsulation is 802.1 q which is the only option on this switch"
-    ],
-    "ru": [
-      "инкапсуляция - 802.1 q, которая является единственной опцией на этом коммутаторе."
-    ]
-  },
-  {
-    "time": [
-      327.13959,
       330.106283
     ],
     "en": [
-      "and the native VLAN is 1 which is the default"
+      "the encapsulation is 802.1 q which is the only option on this switch 327.13959 and the native VLAN is 1 which is the default"
     ],
     "ru": [
-      "а собственная VLAN - 1, что по умолчанию"
+      "инкапсуляция - 802.1 q, которая является единственной опцией на этом коммутаторе 327.13959, а собственная VLAN - 1, которая является значением по умолчанию."
     ]
   },
   {
@@ -764,7 +692,7 @@ let objs = [
       "you can also see that all VLANs are allowed on the trunk which is default as well"
     ],
     "ru": [
-      "вы также можете видеть, что все VLAN разрешены на транке, что также по умолчанию"
+      "вы также можете видеть, что все VLAN разрешены на магистрали, что также по умолчанию"
     ]
   },
   {
@@ -794,25 +722,13 @@ let objs = [
   {
     "time": [
       348.460931,
-      351.83423
-    ],
-    "en": [
-      "and the default VLAN to which all interfaces are assigned"
-    ],
-    "ru": [
-      "и VLAN по умолчанию, которой назначены все интерфейсы"
-    ]
-  },
-  {
-    "time": [
-      351.83423,
       356.961493
     ],
     "en": [
-      "the 2 VLANs we created vlan's 13 and 24 also appear"
+      "and the default VLAN to which all interfaces are assigned 351.83423 the 2 VLANs we created vlan's 13 and 24 also appear"
     ],
     "ru": [
-      "2 VLAN, которые мы создали, vlan 13 и 24 также появляются"
+      "и VLAN по умолчанию, которой назначены все интерфейсы, 351.83423 2 VLAN, которые мы создали, vlan 13 и 24 также появляются"
     ]
   },
   {
@@ -842,25 +758,13 @@ let objs = [
   {
     "time": [
       363.774063,
-      374.43307
-    ],
-    "en": [
-      "as you can see VLANs 1 13 and 24 also appear under VLANs in spanning tree forwarding state and not pruned"
-    ],
-    "ru": [
-      "как вы можете видеть, VLAN 1, 13 и 24 также отображаются в VLAN в состоянии пересылки связующего дерева и не сокращены"
-    ]
-  },
-  {
-    "time": [
-      374.43307,
       377.996017
     ],
     "en": [
-      "spanning tree and pruning our topics for another time"
+      "as you can see VLANs 1 13 and 24 also appear under VLANs in spanning tree forwarding state and not pruned 374.43307 spanning tree and pruning our topics for another time"
     ],
     "ru": [
-      "остовное дерево и обрезка наших тем на другой раз"
+      "как вы можете видеть, VLAN 1, 13 и 24 также отображаются в VLAN в состоянии пересылки связующего дерева и не сокращены. 374.43307 связующее дерево и сокращение наших тем на другой раз."
     ]
   },
   {

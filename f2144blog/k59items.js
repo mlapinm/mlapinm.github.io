@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -44,7 +44,7 @@ let objs = [
       "also please subscribe to the channel for more labs like this"
     ],
     "ru": [
-      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторий"
+      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторных работ"
     ]
   },
   {
@@ -200,7 +200,7 @@ let objs = [
       "however because r1 is using an incorrect a s number of 10 none of it works"
     ],
     "ru": [
-      "однако из-за того, что r1 использует неправильное число 10, ни один из них не работает"
+      "однако, поскольку r1 использует неправильное число 10, ни один из них не работает"
     ]
   },
   {
@@ -209,10 +209,10 @@ let objs = [
       79.278307
     ],
     "en": [
-      "coffee tea"
+      "conf t"
     ],
     "ru": [
-      "кофе чай"
+      "конф т"
     ]
   },
   {
@@ -281,10 +281,10 @@ let objs = [
       114.260597
     ],
     "en": [
-      "router EA g RP 100 network 10000 network 1.1 1.1 oh-oh-oh-oh passive interface l 0"
+      "router EA g RP 100 network 10.0.0.0 network 1.1.1.1 0.0.0.0 passive interface l 0"
     ],
     "ru": [
-      "маршрутизатор EA g RP 100 сеть 10000 сеть 1.1 1.1 oh-oh-oh-oh пассивный интерфейс l 0"
+      "маршрутизатор EA g RP 100 сеть 10.0.0.0 сеть 1.1.1.1 0.0.0.0 пассивный интерфейс l 0"
     ]
   },
   {
@@ -308,7 +308,7 @@ let objs = [
       "well as you can see one neighbor has come up r4"
     ],
     "ru": [
-      "ну, как вы можете видеть, подошел один сосед r4"
+      "ну, как видите, подошел один сосед r4"
     ]
   },
   {
@@ -317,10 +317,10 @@ let objs = [
       124.398055
     ],
     "en": [
-      "let's see what routes were getting from our 4"
+      "let's see what routes were getting from r 4"
     ],
     "ru": [
-      "посмотрим, какие маршруты попадали из наших 4"
+      "посмотрим какие маршруты добирались от р 4"
     ]
   },
   {
@@ -344,7 +344,7 @@ let objs = [
       "looks like we're getting quite a few routes already"
     ],
     "ru": [
-      "похоже, у нас уже есть довольно много маршрутов"
+      "похоже, что у нас уже есть довольно много маршрутов"
     ]
   },
   {
@@ -365,10 +365,10 @@ let objs = [
       141.893658
     ],
     "en": [
-      "we're not getting our fours 4.4.4 for loopback address"
+      "we're not getting our 4.4.4.4 for loopback address"
     ],
     "ru": [
-      "мы не получаем нашу четверку 4.4.4 для адреса обратной связи"
+      "мы не получаем 4.4.4.4 для адреса обратной связи"
     ]
   },
   {
@@ -377,10 +377,10 @@ let objs = [
       144.5737
     ],
     "en": [
-      "let's see what's wrong on our 4"
+      "let's see what's wrong on r 4"
     ],
     "ru": [
-      "давай посмотрим, что не так на нашем 4"
+      "давай посмотрим что не так на r 4"
     ]
   },
   {
@@ -413,10 +413,10 @@ let objs = [
       160.277929
     ],
     "en": [
-      "routing for networks 10000 and 40 4.4.4 4/32"
+      "routing for networks 10.0.0.0 and 44.4.4.4/32"
     ],
     "ru": [
-      "маршрутизация для сетей 10000 и 40 4.4.4 4/32"
+      "маршрутизация для сетей 10.0.0.0 и 44.4.4.4/32"
     ]
   },
   {
@@ -437,10 +437,10 @@ let objs = [
       173.177325
     ],
     "en": [
-      "our 4 is loopback interface has an IP address of 4 4 4 4 not 40 4.4.4 4"
+      "r 4 is loopback interface has an IP address of 4.4.4.4 not 44.4.4.4"
     ],
     "ru": [
-      "наш 4-шлейфовый интерфейс имеет IP-адрес 4 4 4 4, а не 40 4.4.4 4"
+      "r 4 - интерфейс обратной связи имеет IP-адрес 4.4.4.4, а не 44.4.4.4"
     ]
   },
   {
@@ -461,10 +461,10 @@ let objs = [
       179.600971
     ],
     "en": [
-      "coffee tea router EAG RP 100"
+      "conf t router EIGRP 100"
     ],
     "ru": [
-      "кофе-чайный маршрутизатор EAG RP 100"
+      "conf t router EIGRP 100"
     ]
   },
   {
@@ -473,10 +473,10 @@ let objs = [
       186.385325
     ],
     "en": [
-      "no network 44.4 dot 4 dot 400 200"
+      "no network 44.4.4.4 0.0.0.0"
     ],
     "ru": [
-      "нет сети 44,4 точки 4 точки 400200"
+      "нет сети 44.4.4.4 0.0.0.0"
     ]
   },
   {
@@ -485,10 +485,10 @@ let objs = [
       192.124075
     ],
     "en": [
-      "network for dot 4.4.4 oh oh oh oh ok"
+      "network 4.4.4.4 0.0.0.0 ok"
     ],
     "ru": [
-      "сеть для точки 4.4.4 ой ой ой ой хорошо"
+      "сеть 4.4.4.4 0.0.0.0 ок"
     ]
   },
   {
@@ -557,10 +557,10 @@ let objs = [
       216.072616
     ],
     "en": [
-      "do show IP e IG RP neighbor"
+      "do show IP EIGRP neighbor"
     ],
     "ru": [
-      "показывать IP и IG RP соседа"
+      "показать IP соседа EIGRP"
     ]
   },
   {
@@ -641,10 +641,10 @@ let objs = [
       247.119281
     ],
     "en": [
-      "this means r2 will advertise that 1012 0/24 network on f10 to r3"
+      "this means r2 will advertise that 10.12.0.0/24 network on f10 to r3"
     ],
     "ru": [
-      "это означает, что r2 будет рекламировать эту сеть 1012 0/24 на f10 - r3"
+      "это означает, что r2 объявит, что сеть 10.12.0.0/24 на f10 - r3"
     ]
   },
   {
@@ -668,7 +668,7 @@ let objs = [
       "compte router aig RP 100"
     ],
     "ru": [
-      "compte роутер AIG RP 100"
+      "compte router aig RP 100"
     ]
   },
   {
@@ -701,10 +701,10 @@ let objs = [
       266.959156
     ],
     "en": [
-      "do show IPE a GRP neighbor"
+      "do show IP EIGRP neighbor"
     ],
     "ru": [
-      "показывать IPE соседа по GRP"
+      "показать IP соседа EIGRP"
     ]
   },
   {
@@ -761,10 +761,10 @@ let objs = [
       292.34701
     ],
     "en": [
-      "advertising the 3.3 3.3 loopback and 1000 dot o interfaces"
+      "advertising the 3.3.3.3 loopback and 10.0.0.0 interfaces"
     ],
     "ru": [
-      "реклама интерфейсов 3.3 3.3 loopback и 1000 dot o"
+      "объявление интерфейсов 3.3.3.3 loopback и 10.0.0.0"
     ]
   },
   {
@@ -821,10 +821,10 @@ let objs = [
       313.713385
     ],
     "en": [
-      "I don't see any problems with our 3zi GRP configuration"
+      "I don't see any problems with r 3 EIGRP configuration"
     ],
     "ru": [
-      "Не вижу проблем с нашей конфигурацией 3zi GRP"
+      "Не вижу проблем с настройкой r 3 EIGRP"
     ]
   },
   {
@@ -833,10 +833,10 @@ let objs = [
       315.449885
     ],
     "en": [
-      "so let's check on our v"
+      "so let's check on r 5"
     ],
     "ru": [
-      "так что давайте проверим наш v"
+      "так что давайте проверим на r 5"
     ]
   },
   {
@@ -869,10 +869,10 @@ let objs = [
       331.845822
     ],
     "en": [
-      "under the routing for networks section it lists 1000 / 32"
+      "under the routing for networks section it lists 10.0.0.0 / 32"
     ],
     "ru": [
-      "в разделе маршрутизации для сетей указано 1000/32"
+      "в разделе маршрутизации для сетей указано 10.0.0.0 / 32"
     ]
   },
   {
@@ -881,10 +881,10 @@ let objs = [
       337.068947
     ],
     "en": [
-      "however r5 doesn't have any 1000 / 32 interfaces"
+      "however r5 doesn't have any 10.0.0.0 / 32 interfaces"
     ],
     "ru": [
-      "однако в r5 нет интерфейсов 1000/32"
+      "однако в r5 нет интерфейсов 10.0.0.0 / 32"
     ]
   },
   {
@@ -917,10 +917,10 @@ let objs = [
       349.348446
     ],
     "en": [
-      "so yeah GRP isn't activated on our 5s g00 interface"
+      "so EIGRP isn't activated on r 5s g00 interface"
     ],
     "ru": [
-      "так что да, GRP не активирован на нашем интерфейсе 5s g00"
+      "поэтому EIGRP не активирован на интерфейсе r 5s g00"
     ]
   },
   {
@@ -929,10 +929,10 @@ let objs = [
       353.739154
     ],
     "en": [
-      "which has an address in the 10.35 0/24 network"
+      "which has an address in the 10.35.0.0/24 network"
     ],
     "ru": [
-      "который имеет адрес в сети 10.35 0/24"
+      "имеющий адрес в сети 10.35.0.0/24"
     ]
   },
   {
@@ -941,10 +941,10 @@ let objs = [
       359.359716
     ],
     "en": [
-      "coughed e router ya g RP 100"
+      "conf t router EIGRP 100"
     ],
     "ru": [
-      "кашлянул е роутер я г RP 100"
+      "conf t router EIGRP 100"
     ]
   },
   {
@@ -953,10 +953,10 @@ let objs = [
       365.776425
     ],
     "en": [
-      "no network 1000 odo odo"
+      "no network 10.0.0.0"
     ],
     "ru": [
-      "нет сети 1000 одо одо"
+      "нет сети 10.0.0.0"
     ]
   },
   {
@@ -965,10 +965,10 @@ let objs = [
       369.883508
     ],
     "en": [
-      "now there are a couple of ways we could activate di g RP on the interface"
+      "now there are a couple of ways we could activate EIGRP on the interface"
     ],
     "ru": [
-      "теперь есть несколько способов активировать di g RP в интерфейсе"
+      "теперь есть несколько способов активировать EIGRP на интерфейсе"
     ]
   },
   {
@@ -977,10 +977,10 @@ let objs = [
       375.690362
     ],
     "en": [
-      "let's do what is configured on the other routers and just type network 1000"
+      "let's do what is configured on the other routers and just type network 10.0.0.0"
     ],
     "ru": [
-      "давайте сделаем то, что настроено на других маршрутизаторах, и просто наберем сеть 1000"
+      "давайте сделаем то, что настроено на других маршрутизаторах, и просто наберем сеть 10.0.0.0"
     ]
   },
   {
@@ -1001,10 +1001,10 @@ let objs = [
       384.744778
     ],
     "en": [
-      "remember Vig our P's Network command will default to the class full boundaries in this case a / 8 network"
+      "remember EIGRP's Network command will default to the class full boundaries in this case a / 8 network"
     ],
     "ru": [
-      "помните, что Vig наша команда P по умолчанию будет использовать полные границы класса в этом случае сеть / 8"
+      "помните, что команда EIGRP Network по умолчанию будет использовать полные границы класса в этом случае сеть / 8"
     ]
   },
   {
@@ -1037,10 +1037,10 @@ let objs = [
       395.781256
     ],
     "en": [
-      "so yeah GRP is now activated on our 5"
+      "so EIGRP is now activated on r 5"
     ],
     "ru": [
-      "так что да, GRP теперь активирован на нашем 5"
+      "так что EIGRP теперь активирован на r 5"
     ]
   },
   {
@@ -1061,10 +1061,10 @@ let objs = [
       402.60759
     ],
     "en": [
-      "now we're receiving a EIGRP reps"
+      "now we're receiving a EIGRP routs"
     ],
     "ru": [
-      "теперь мы получаем представителей EIGRP"
+      "теперь мы получаем маршруты EIGRP"
     ]
   },
   {
@@ -1073,10 +1073,10 @@ let objs = [
       409.642485
     ],
     "en": [
-      "however our five is supposed to receive a 1000 / 8 summary from our 3"
+      "however our five is supposed to receive a 10.0.0.0 / 8 summary from our 3"
     ],
     "ru": [
-      "однако наша пятерка должна получить сводку 1000/8 от наших трех"
+      "однако наша пятерка должна получить сводку 10.0.0.0 / 8 от наших трех"
     ]
   },
   {
@@ -1085,10 +1085,10 @@ let objs = [
       411.874215
     ],
     "en": [
-      "rather than these individual reps"
+      "rather than these individual routs"
     ],
     "ru": [
-      "а не эти отдельные представители"
+      "а не эти отдельные маршруты"
     ]
   },
   {
@@ -1097,10 +1097,10 @@ let objs = [
       415.399568
     ],
     "en": [
-      "this problem is likely on our three"
+      "this problem is likely on r 3"
     ],
     "ru": [
-      "эта проблема вероятна на наших трех"
+      "эта проблема скорее всего на r 3"
     ]
   },
   {
@@ -1133,10 +1133,10 @@ let objs = [
       428.050588
     ],
     "en": [
-      "the IP summary address command isn't configured on the gig 0/0 interface which connects to our five"
+      "the IP summary address command isn't configured on the gig 0/0 interface which connects to r 5"
     ],
     "ru": [
-      "команда IP-адреса сводки не настроена на интерфейсе gig 0/0, который подключается к нашим пяти"
+      "команда IP-адреса сводки не настроена на интерфейсе gig 0/0, который подключается к r 5"
     ]
   },
   {
@@ -1160,7 +1160,7 @@ let objs = [
       "let's put it back on the correct interface"
     ],
     "ru": [
-      "вернем его на правильный интерфейс"
+      "давайте вернем его на правильный интерфейс"
     ]
   },
   {
@@ -1220,7 +1220,7 @@ let objs = [
       "and then I'll cancel it with no"
     ],
     "ru": [
-      "а затем я отменю его без"
+      "а потом я отменю его без"
     ]
   },
   {
@@ -1301,10 +1301,10 @@ let objs = [
       473.1144
     ],
     "en": [
-      "there it is 10000 / 8"
+      "there it is 10.0.0.0 / 8"
     ],
     "ru": [
-      "там 10000/8"
+      "вот оно 10.0.0.0 / 8"
     ]
   },
   {
@@ -1352,7 +1352,7 @@ let objs = [
       "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, подобные этой, которые будут выпускаться еженедельно"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {

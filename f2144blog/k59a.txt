@@ -33,7 +33,7 @@ here we have all the correct ew g RP configurations
 69.614266
 however because r1 is using an incorrect a s number of 10 none of it works
 76.290641
-conf t 
+conf t
 79.278307
 let's delete the current ew g RP configuration
 82.024890

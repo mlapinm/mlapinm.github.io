@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -32,7 +32,7 @@ let objs = [
       "in this lab we will configure DHCP dynamic host configuration protocol"
     ],
     "ru": [
-      "в этой лабораторной работе мы настроим протокол динамической конфигурации хоста DHCP."
+      "В этой лабораторной работе мы настроим протокол динамической конфигурации хоста DHCP."
     ]
   },
   {
@@ -512,7 +512,7 @@ let objs = [
       "IP dhcp pool 20 pool network 20.0.0.0 255.255.255.0"
     ],
     "ru": [
-      "IP dhcp pool 20 pool network 20.0.0.0 255.255.255.0"
+      "IP dhcp pool 20 пул сеть 20.0.0.0 255.255.255.0"
     ]
   },
   {
@@ -752,7 +752,7 @@ let objs = [
       "let's go on r2 enable conf t interface g 0 0"
     ],
     "ru": [
-      "давайте перейдем к r2 enable conf t interface g 0 0"
+      "перейдем к r2 включить конф т интерфейс g 0 0"
     ]
   },
   {
@@ -896,7 +896,7 @@ let objs = [
       "the rule is to configure the relay agent on the layer 3 interface closest to the hosts"
     ],
     "ru": [
-      "правило состоит в том, чтобы настроить агент ретрансляции на интерфейсе уровня 3, ближайшем к хостам."
+      "Правило состоит в том, чтобы настроить агент ретрансляции на интерфейсе уровня 3, ближайшем к хостам."
     ]
   },
   {
@@ -1088,7 +1088,7 @@ let objs = [
       "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, подобные этой, которые будут выпускаться еженедельно"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {

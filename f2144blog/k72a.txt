@@ -1,5 +1,245 @@
 0.0
-welcome to this free CCNA packet tracer practice lab 4.589145  you can download the lab file from the link in the description 7.469604  if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description  14.589291 also please subscribe to the channel for more labs like this 18.816895  and share these videos with anyone else studying for the CCNA 22.680832  in this lab we will troubleshoot some problems with ACL configurations 28.406374  this is the same topology as the previous lab with the same ACLs 34.033143  except I have made three miss configurations 37.019685  there are four ACLs one is correct  41.005183 and the other three have mistakes  43.008099 let's get started so the first ACL should prevent pc4 from accessing the 10.4.4.0 / 24 network  53.319432 let's see if pc4 can ping server one 57.101597  which is in the 10.4.4.0 network 60.079222  ping 10.4.4.100  65.654388 looks like pc4 is able to reach server 1 74.528138 so there must be a miss configuration 76.616638  I applied the ACL on r2  80.017179 so let's check there 81.278179  enable show access lists  87.620887 okay there's the issue  90.923783 the order of statements in the ACL is wrong  93.985366 because the permit any statement is first all traffic is allowed  99.631074 I have to put the deny host before the permit any 103.813636  so 10.2.2.12 will be denied  107.071219 and then all other traffic will be allowed 109.871281  I'll remove the ACL and then redo it  112.863385 conf t now access list one  117.640551 access list one deny host 10.2.2.12  123.656049 access list one permit any 126.992069  ok let's try that ping again from PC 4  130.707736 ping 10.4.4.100  136.133319 ok now we get the destination host unreachable message 140.089902  that's good  141.355006 can other hosts reach server one  143.763006 I'll try from PC 3 146.039964  ping 10.4.4.100  151.312588 okay it's working now  158.650963 let's move on to the next ACL  162.034150 pc5 shouldn't be able to access the 2001 db8 22 22 / 64 network  170.818254 let's try to ping from PC 5 to server 2 174.895170 ping 2001 DB 8 22 22 : 100 184.752357  ok the ping works  191.307503 so there's another miss configuration here 193.664482  I applied the ACL on r1  196.525607 so let's investigate 197.789377  enable show access lists 203.107439  here's the access list 206.180689  it looks good  207.303314 denying from PC 5 to the correct subnet  210.534064 maybe it isn't applied correctly  213.397126 show ipv6 interface g0 2 218.462834 outgoing access list g0 2 in  223.925688 there's the problem 225.934500  the ACL should be inbound not outbound or outgoing  230.454770 because traffic from PC 5 to the 2001 DB 8 2222 subnet will be entering the g0 2 interface not exiting 240.343770  the return traffic coming back from server 2 has the source and destination IP addresses reversed 248.511519  so the ACL lets them by 251.011206  let's reapply the ACL inbound  254.240248 conf t interface g0 2 258.897956  no ipv6 traffic filter 263.473164  g0 2 in out  266.607872 ipv6 traffic filter g0 2 in in  272.444162 ok let's try that ping again 275.916912  ping 2001 DB 8 22 22 100 283.521536  ok now we get the destination host unreachable message from r1 289.406953  let's test the next ACL  292.724036 pc3 shouldn't be able to communicate with PC 1  296.674514 let's try a ping from pc 3 to pc 1 300.687014  ping 10.1.1.11  305.215160 destination host unreachable looks good 309.533389  now pc 4 should be able to reach pc 1  312.611930 let's test it out  314.455742 ping 10.1.1.11 319.489554  ok the ping is successful 326.717470  so this ACL seems to be functioning properly  329.410054 now our final ACL should allow pc 6 to telnet to r2 336.126845  but not other ipv6 hosts like PC 5  339.373928 let's try to telnet from PC 6  343.634719 telnet 2001 DB 8 12 12 : 2 351.878948  looks good  I'll enter the password of CCNA  356.020864 okay we're in 358.191655  exit  359.321843 so that seems fine but pc 5 shouldn't be able to tell met to our 2  364.796718 let's try to telnet from PC 5 367.366113  telnet 2001 DB 8 12 12 : 2 okay here's the problem 377.901924  PC 5 is also able to telnet to r2  380.847716 let's investigate on r2  384.293966 do show access lists 388.741549  permit TCP host with the IP address of PC 6 395.614361 ne equals telnet  398.060152 that looks good  399.658277 so let's check how the ACL is applied 402.305235  do show run  405.202756 okay there's the issue 409.709693  the ACL is applied to the console line not the vty lines  414.544672 which are used for telnet 415.994755  let's remove and then reapply it  419.135359 let me copy the command first  421.541755 and then let's remove it  425.477734 line console 0  427.635026 I'll paste it here  430.493797 and then cancel it with no 433.535442  okay now let's reapply it  435.875192 line vty 0 15  439.648233 and now I'll paste it here once more 442.118692  ok let's test again  446.803775 I'll telnet from PC 5 449.468816  telnet 2001 DB 8 12 12 2  455.981004 good it doesn't work this time  458.621087 but can PC 6 still telnet  461.537628 let's try 463.171690  telnet 2001 DB 8 12 12 2 468.875544  password CCNA 470.788002  ok all of our ACLs are working now  474.819356 that's all for this lab 476.557960  thank you for watching  480.946314 I hope this lab and video have been helpful for you  483.961210 please subscribe for future labs like this which will be released weekly 488.620460  if you have requests for any specific labs let me know in the comment section  493.700876 if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description  500.346147 I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
- 508.954751 
- 508.954751 
- 508.954751 
+welcome to this free CCNA packet tracer practice lab
+4.589145
+you can download the lab file from the link in the description
+7.469604
+if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description
+14.589291
+also please subscribe to the channel for more labs like this
+18.816895
+and share these videos with anyone else studying for the CCNA
+22.680832
+in this lab we will troubleshoot some problems with ACL configurations
+28.406374
+this is the same topology as the previous lab with the same ACLs
+34.033143
+except I have made three miss configurations
+37.019685
+there are four ACLs one is correct
+41.005183
+and the other three have mistakes
+43.008099
+let's get started so the first ACL should prevent pc4 from accessing the 10.4.4.0 / 24 network
+53.319432
+let's see if pc4 can ping server one
+57.101597
+which is in the 10.4.4.0 network
+60.079222
+ping 10.4.4.100
+65.654388
+looks like pc4 is able to reach server 1
+74.528138
+so there must be a miss configuration
+76.616638
+I applied the ACL on r2
+80.017179
+so let's check there
+81.278179
+enable show access lists
+87.620887
+okay there's the issue
+90.923783
+the order of statements in the ACL is wrong
+93.985366
+because the permit any statement is first all traffic is allowed
+99.631074
+I have to put the deny host before the permit any
+103.813636
+so 10.2.2.12 will be denied
+107.071219
+and then all other traffic will be allowed
+109.871281
+I'll remove the ACL and then redo it
+112.863385
+conf t now access list one
+117.640551
+access list one deny host 10.2.2.12
+123.656049
+access list one permit any
+126.992069
+ok let's try that ping again from PC 4
+130.707736
+ping 10.4.4.100
+136.133319
+ok now we get the destination host unreachable message
+140.089902
+that's good
+141.355006
+can other hosts reach server one
+143.763006
+I'll try from PC 3
+146.039964
+ping 10.4.4.100
+151.312588
+okay it's working now
+158.650963
+let's move on to the next ACL
+162.034150
+pc5 shouldn't be able to access the 2001 db8 22 22 / 64 network
+170.818254
+let's try to ping from PC 5 to server 2
+174.895170
+ping 2001 DB 8 22 22 : 100
+184.752357
+ok the ping works
+191.307503
+so there's another miss configuration here
+193.664482
+I applied the ACL on r1
+196.525607
+so let's investigate
+197.789377
+enable show access lists
+203.107439
+here's the access list
+206.180689
+it looks good
+207.303314
+denying from PC 5 to the correct subnet
+210.534064
+maybe it isn't applied correctly
+213.397126
+show ipv6 interface g0 2
+218.462834
+outgoing access list g0 2 in
+223.925688
+there's the problem
+225.934500
+the ACL should be inbound not outbound or outgoing
+230.454770
+because traffic from PC 5 to the 2001 DB 8 2222 subnet will be entering the g0 2 interface not exiting
+240.343770
+the return traffic coming back from server 2 has the source and destination IP addresses reversed
+248.511519
+so the ACL lets them by
+251.011206
+let's reapply the ACL inbound
+254.240248
+conf t interface g0 2
+258.897956
+no ipv6 traffic filter
+263.473164
+g0 2 in out
+266.607872
+ipv6 traffic filter g0 2 in in
+272.444162
+ok let's try that ping again
+275.916912
+ping 2001 DB 8 22 22 100
+283.521536
+ok now we get the destination host unreachable message from r1
+289.406953
+let's test the next ACL
+292.724036
+pc3 shouldn't be able to communicate with PC 1
+296.674514
+let's try a ping from pc 3 to pc 1
+300.687014
+ping 10.1.1.11
+305.215160
+destination host unreachable looks good
+309.533389
+now pc 4 should be able to reach pc 1
+312.611930
+let's test it out
+314.455742
+ping 10.1.1.11
+319.489554
+ok the ping is successful
+326.717470
+so this ACL seems to be functioning properly
+329.410054
+now our final ACL should allow pc 6 to telnet to r2
+336.126845
+but not other ipv6 hosts like PC 5
+339.373928
+let's try to telnet from PC 6
+343.634719
+telnet 2001 DB 8 12 12 : 2
+351.878948
+looks good I'll enter the password of CCNA
+356.020864
+okay we're in
+358.191655
+exit
+359.321843
+so that seems fine but pc 5 shouldn't be able to tell met to our 2
+364.796718
+let's try to telnet from PC 5
+367.366113
+telnet 2001 DB 8 12 12 : 2 okay here's the problem
+377.901924
+PC 5 is also able to telnet to r2
+380.847716
+let's investigate on r2
+384.293966
+do show access lists
+388.741549
+permit TCP host with the IP address of PC 6
+395.614361
+ne equals telnet
+398.060152
+that looks good
+399.658277
+so let's check how the ACL is applied
+402.305235
+do show run
+405.202756
+okay there's the issue
+409.709693
+the ACL is applied to the console line not the vty lines
+414.544672
+which are used for telnet
+415.994755
+let's remove and then reapply it
+419.135359
+let me copy the command first
+421.541755
+and then let's remove it
+425.477734
+line console 0
+427.635026
+I'll paste it here
+430.493797
+and then cancel it with no
+433.535442
+okay now let's reapply it
+435.875192
+line vty 0 15
+439.648233
+and now I'll paste it here once more
+442.118692
+ok let's test again
+446.803775
+I'll telnet from PC 5
+449.468816
+telnet 2001 DB 8 12 12 2
+455.981004
+good it doesn't work this time
+458.621087
+but can PC 6 still telnet
+461.537628
+let's try
+463.171690
+telnet 2001 DB 8 12 12 2
+468.875544
+password CCNA
+470.788002
+ok all of our ACLs are working now
+474.819356
+that's all for this lab
+476.557960
+thank you for watching
+480.946314
+I hope this lab and video have been helpful for you
+483.961210
+please subscribe for future labs like this which will be released weekly
+488.620460
+if you have requests for any specific labs let me know in the comment section
+493.700876
+if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description
+500.346147
+I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
+508.954751
+508.954751
+508.954751

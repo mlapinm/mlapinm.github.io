@@ -95,7 +95,7 @@ let's do the same on r2
 181.720285
 enable compte
 185.980222
-IP route  0.0.0.0 0.0.0.0  G 000
+IP route 0.0.0.0 0.0.0.0 G 000
 193.753305
 that's it
 195.633555
@@ -379,7 +379,7 @@ let's use the simplest solution
 835.311268
 a static route pointing to r3
 837.911435
-exit IP route  0.0.0.0 0.0.0.0 192.168.34.1
+exit IP route 0.0.0.0 0.0.0.0 192.168.34.1
 850.036580
 okay that's it
 852.597185

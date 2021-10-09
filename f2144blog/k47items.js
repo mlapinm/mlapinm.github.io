@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -44,7 +44,7 @@ let objs = [
       "also please subscribe to the channel for more labs like this"
     ],
     "ru": [
-      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторий"
+      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторных работ"
     ]
   },
   {
@@ -92,7 +92,7 @@ let objs = [
       "that is affecting connectivity in this network"
     ],
     "ru": [
-      "что влияет на возможность подключения в этой сети"
+      "это влияет на возможность подключения в этой сети"
     ]
   },
   {
@@ -440,7 +440,7 @@ let objs = [
       "conf t interface G 0 1 switch port mode trunk do show interfaces trunk"
     ],
     "ru": [
-      "conf t interface G 0 1 switch port mode trunk do show interfaces trunk"
+      "conf t interface G 0 1 коммутатор в режиме порта соединительная линия показать соединительную линию интерфейсов"
     ]
   },
   {
@@ -800,7 +800,7 @@ let objs = [
       "we can't create VLANs because we are a VTP client"
     ],
     "ru": [
-      "мы не можем создавать VLAN, потому что мы являемся VTP-клиентом"
+      "мы не можем создавать сети VLAN, потому что мы являемся клиентом VTP"
     ]
   },
   {
@@ -1052,7 +1052,7 @@ let objs = [
       "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, подобные этой, которые будут выпускаться еженедельно"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {

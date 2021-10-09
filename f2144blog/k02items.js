@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -230,25 +230,13 @@ let objs = [
   {
     "time": [
       104.960144,
-      109.00315
-    ],
-    "en": [
-      "again we can see that the routers hostname is currently router"
-    ],
-    "ru": [
-      "снова мы видим, что имя хоста маршрутизатора в настоящее время - router"
-    ]
-  },
-  {
-    "time": [
-      109.00315,
       114.124844
     ],
     "en": [
-      "to set the hostname we have to be in global configuration mode"
+      "again we can see that the routers hostname is currently router 109.00315 to set the hostname we have to be in global configuration mode"
     ],
     "ru": [
-      "чтобы установить имя хоста, мы должны быть в режиме глобальной конфигурации"
+      "снова мы видим, что имя хоста маршрутизатора в настоящее время - router 109.00315, чтобы установить имя хоста, которое мы должны быть в режиме глобальной конфигурации."
     ]
   },
   {
@@ -266,25 +254,13 @@ let objs = [
   {
     "time": [
       116.841509,
-      121.29031
-    ],
-    "en": [
-      "as indicated by the greater than sign next to the current router name"
-    ],
-    "ru": [
-      "на что указывает знак \"больше\" рядом с текущим именем маршрутизатора"
-    ]
-  },
-  {
-    "time": [
-      121.29031,
       126.732595
     ],
     "en": [
-      "alt ipn or an able to enter privileged exec mode"
+      "as indicated by the greater than sign next to the current router name 121.29031 alt ipn or an able to enter privileged exec mode"
     ],
     "ru": [
-      "alt ipn или возможность войти в привилегированный режим exec"
+      "на что указывает знак \"больше\" рядом с текущим именем маршрутизатора 121.29031 alt ipn или возможность входа в привилегированный режим exec"
     ]
   },
   {
@@ -380,7 +356,7 @@ let objs = [
       "since we are already in global configuration mode"
     ],
     "ru": [
-      "поскольку мы уже находимся в режиме глобальной конфигурации"
+      "так как мы уже находимся в режиме глобальной конфигурации"
     ]
   },
   {
@@ -398,25 +374,13 @@ let objs = [
   {
     "time": [
       173.718627,
-      175.70937
-    ],
-    "en": [
-      "that's step three"
-    ],
-    "ru": [
-      "это шаг третий"
-    ]
-  },
-  {
-    "time": [
-      175.70937,
       183.144987
     ],
     "en": [
-      "step four is new to this lab now"
+      "that's step three 175.70937 step four is new to this lab now"
     ],
     "ru": [
-      "Шаг четвертый - новый для этой лаборатории"
+      "это третий шаг 175.70937 четвертый шаг теперь является новым в этой лаборатории"
     ]
   },
   {
@@ -632,7 +596,7 @@ let objs = [
       "and I am asked for a password"
     ],
     "ru": [
-      "и меня просят ввести пароль"
+      "и меня спрашивают пароль"
     ]
   },
   {
@@ -710,25 +674,13 @@ let objs = [
   {
     "time": [
       282.324785,
-      284.42278
-    ],
-    "en": [
-      "this is important to remember"
-    ],
-    "ru": [
-      "это важно помнить"
-    ]
-  },
-  {
-    "time": [
-      284.42278,
       289.269375
     ],
     "en": [
-      "if you create both an enable password and an enable secret"
+      "this is important to remember 284.42278 if you create both an enable password and an enable secret"
     ],
     "ru": [
-      "если вы создаете как пароль включения, так и секрет включения"
+      "это важно помнить 284.42278, если вы создаете как пароль включения, так и секрет включения"
     ]
   },
   {
@@ -944,7 +896,7 @@ let objs = [
       "so I'll type conf t get their"
     ],
     "ru": [
-      "так что я наберу conf t и получу их"
+      "так что я наберу conf t получить их"
     ]
   },
   {
@@ -1274,25 +1226,13 @@ let objs = [
   {
     "time": [
       469.308725,
-      473.45887
-    ],
-    "en": [
-      "I'll enter the command and press ENTER to confirm"
-    ],
-    "ru": [
-      "Я ввожу команду и нажимаю ENTER для подтверждения"
-    ]
-  },
-  {
-    "time": [
-      473.45887,
       477.903188
     ],
     "en": [
-      "now if we use the show startup config command"
+      "I'll enter the command and press ENTER to confirm 473.45887 now if we use the show startup config command"
     ],
     "ru": [
-      "теперь, если мы воспользуемся командой show startup config"
+      "Я введу команду и нажму ENTER, чтобы подтвердить 473.45887, если мы воспользуемся командой show startup config."
     ]
   },
   {
@@ -1454,25 +1394,13 @@ let objs = [
   {
     "time": [
       527.372019,
-      530.84509
-    ],
-    "en": [
-      "this also proves that we successfully saved our changes to the configuration"
-    ],
-    "ru": [
-      "это также доказывает, что мы успешно сохранили наши изменения в конфигурации"
-    ]
-  },
-  {
-    "time": [
-      530.84509,
       536.374761
     ],
     "en": [
-      "I enter the enable secret of CCNA and now I'm in privileged exec mode"
+      "this also proves that we successfully saved our changes to the configuration 530.84509 I enter the enable secret of CCNA and now I'm in privileged exec mode"
     ],
     "ru": [
-      "Я ввожу секрет включения CCNA и теперь нахожусь в привилегированном режиме exec"
+      "это также доказывает, что мы успешно сохранили наши изменения в конфигурации 530.84509 Я ввожу секрет включения CCNA и теперь нахожусь в привилегированном режиме exec"
     ]
   },
   {
@@ -1550,25 +1478,13 @@ let objs = [
   {
     "time": [
       559.154288,
-      564.24762
-    ],
-    "en": [
-      "if you have requests for any specific labs let me know in the comments section"
-    ],
-    "ru": [
-      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
-    ]
-  },
-  {
-    "time": [
-      564.24762,
       571.071954
     ],
     "en": [
-      "if you want to support my channel I accept Bitcoin donations via the address in the description"
+      "if you have requests for any specific labs let me know in the comments section 564.24762 if you want to support my channel I accept Bitcoin donations via the address in the description"
     ],
     "ru": [
-      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах по адресу в описании"
+      "если у вас есть запросы о каких-либо конкретных лабораториях, дайте мне знать в разделе комментариев 564.24762, если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами через адрес в описании"
     ]
   },
   {
@@ -1580,7 +1496,7 @@ let objs = [
       "I am also a brave verified publisher and accept a bat or basic attention token donations in the brave browser"
     ],
     "ru": [
-      "Я также являюсь храбрым проверенным издателем и принимаю пожертвования битой или базовым токеном внимания в храбром браузере."
+      "Я также являюсь храбрым проверенным издателем и принимаю пожертвования в виде биты или токенов основного внимания в храбром браузере."
     ]
   },
   {

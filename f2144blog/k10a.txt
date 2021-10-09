@@ -23,13 +23,9 @@ accept the default configurations here and now we're on our one
 54.948878
 next is to create two users on our one
 59.587607
-CCNA in lowercase letters with the password Cisco in lowercase letters and CCNP in lowercase with the password Cisco in uppercase
-70.20123
-so let's go to global config mode
+CCNA in lowercase letters with the password Cisco in lowercase letters and CCNP in lowercase with the password Cisco in uppercase 70.20123 so let's go to global config mode
 73.305574
-enable conf t
-76.73268
-you can create users with this command username CCNA password Cisco
+enable conf t 76.73268 you can create users with this command username CCNA password Cisco
 83.459327
 that's it
 84.968655
@@ -73,9 +69,7 @@ it works let's log out again
 160.144318
 now I'll try the username in all caps
 163.104745
-with the password in lower case again
-165.47374
-as you can see it lets us log in
+with the password in lower case again 165.47374 as you can see it lets us log in
 169.219869
 so the username is not case-sensitive
 172.185697
@@ -97,9 +91,7 @@ doesn't work
 194.460195
 so the password is case-sensitive
 197.604527
-let's quickly try again with the CCNP username again to confirm
-202.24125
-I'll type the username alternating upper and lower case just to prove the point and I'll type the correct password which is all uppercase
+let's quickly try again with the CCNP username again to confirm 202.24125 I'll type the username alternating upper and lower case just to prove the point and I'll type the correct password which is all uppercase
 210.253867
 it works
 212.890302
@@ -113,9 +105,7 @@ but passwords are case sensitive
 225.178669
 next I'll do one more demonstration even though this isn't part of the lab
 233.075487
-let me login again
-234.81109
-then enable show run
+let me login again 234.81109 then enable show run
 238.387859
 look at the usernames and passwords here
 240.992207

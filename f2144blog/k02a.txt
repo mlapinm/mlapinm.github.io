@@ -37,15 +37,11 @@ that is to r1 and r2
 99.349985
 let's click on our one and select CLI to access the command-line interface
 104.960144
-again we can see that the routers hostname is currently router
-109.00315
-to set the hostname we have to be in global configuration mode
+again we can see that the routers hostname is currently router 109.00315 to set the hostname we have to be in global configuration mode
 114.124844
 currently we are in exec mode
 116.841509
-as indicated by the greater than sign next to the current router name
-121.29031
-alt ipn or an able to enter privileged exec mode
+as indicated by the greater than sign next to the current router name 121.29031 alt ipn or an able to enter privileged exec mode
 126.732595
 this is indicated by the pound sign or hash tag whatever you want to call it next to the host name
 133.594869
@@ -65,9 +61,7 @@ since we are already in global configuration mode
 168.174473
 I just have to enter an able password Cisco to set the enable password
 173.718627
-that's step three
-175.70937
-step four is new to this lab now
+that's step three 175.70937 step four is new to this lab now
 183.144987
 we must set the enable secret to CCNA
 187.017516
@@ -117,9 +111,7 @@ let's use the enable command again and this time try the enable secret CCNA
 278.984926
 as you can see the enable secret works
 282.324785
-this is important to remember
-284.42278
-if you create both an enable password and an enable secret
+this is important to remember 284.42278 if you create both an enable password and an enable secret
 289.269375
 although both will be stored in the running config
 292.850575
@@ -211,9 +203,7 @@ or copy run start for a shorter version if you prefer
 463.153016
 it's self-explanatory but this command copies the running config to the startup config
 469.308725
-I'll enter the command and press ENTER to confirm
-473.45887
-now if we use the show startup config command
+I'll enter the command and press ENTER to confirm 473.45887 now if we use the show startup config command
 477.903188
 it is identical to the current running config
 480.925312
@@ -241,9 +231,7 @@ I'll use the enable command to enter privileged exec mode
 524.536626
 and as you can see I'm asked for a password
 527.372019
-this also proves that we successfully saved our changes to the configuration
-530.84509
-I enter the enable secret of CCNA and now I'm in privileged exec mode
+this also proves that we successfully saved our changes to the configuration 530.84509 I enter the enable secret of CCNA and now I'm in privileged exec mode
 536.374761
 finally I'll type show startup config just to confirm
 541.075903
@@ -257,9 +245,7 @@ please subscribe for future labs like this
 557.120203
 which will be released weekly
 559.154288
-if you have requests for any specific labs let me know in the comments section
-564.24762
-if you want to support my channel I accept Bitcoin donations via the address in the description
+if you have requests for any specific labs let me know in the comments section 564.24762 if you want to support my channel I accept Bitcoin donations via the address in the description
 571.071954
 I am also a brave verified publisher and accept a bat or basic attention token donations in the brave browser
 578.955912

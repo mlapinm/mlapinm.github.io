@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -56,7 +56,7 @@ let objs = [
       "CDP however is a cisco proprietary protocol"
     ],
     "ru": [
-      "CDP, однако, является проприетарным протоколом cisco."
+      "CDP, однако, является проприетарным протоколом Cisco."
     ]
   },
   {
@@ -200,7 +200,7 @@ let objs = [
       "okay so we have disabled CDP and enabled lldp on each networking device"
     ],
     "ru": [
-      "хорошо, поэтому мы отключили CDP и включили lldp на каждом сетевом устройстве"
+      "хорошо, мы отключили CDP и включили lldp на каждом сетевом устройстве"
     ]
   },
   {
@@ -392,7 +392,7 @@ let objs = [
       "ok let's go on r2 now"
     ],
     "ru": [
-      "хорошо, давай сейчас на R2"
+      "хорошо, давай сейчас пойдем на R2"
     ]
   },
   {
@@ -404,7 +404,7 @@ let objs = [
       "show lldp neighbors"
     ],
     "ru": [
-      "показать lldp соседи"
+      "показать lldp соседей"
     ]
   },
   {
@@ -500,7 +500,7 @@ let objs = [
       "show lldp neighbors detail"
     ],
     "ru": [
-      "показать детали соседей lldp"
+      "показать подробности о соседях lldp"
     ]
   },
   {
@@ -512,7 +512,7 @@ let objs = [
       "you can see the iOS information for r2 here"
     ],
     "ru": [
-      "вы можете увидеть информацию iOS для r2 здесь"
+      "вы можете увидеть информацию об iOS для r2 здесь"
     ]
   },
   {
@@ -542,25 +542,13 @@ let objs = [
   {
     "time": [
       285.988999,
-      12.2371
-    ],
-    "en": [
-      "first we can see switch 2 is running see 3560 software version"
-    ],
-    "ru": [
-      "Сначала мы видим, что коммутатор 2 работает, см. версию программного обеспечения 3560"
-    ]
-  },
-  {
-    "time": [
-      12.2371,
       296.857894
     ],
     "en": [
-      ""
+      "first we can see switch 2 is running see 3560 software version 12.2371"
     ],
     "ru": [
-      ""
+      "Сначала мы видим, что коммутатор 2 работает, см. программное обеспечение 3560 версии 12.2371"
     ]
   },
   {
@@ -596,7 +584,7 @@ let objs = [
       "show lldp neighbors detail"
     ],
     "ru": [
-      "показать детали соседей lldp"
+      "показать подробности о соседях lldp"
     ]
   },
   {
@@ -776,7 +764,7 @@ let objs = [
       "if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description"
     ],
     "ru": [
-      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфириумом по адресам в описании"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах и эфириуме по адресам в описании"
     ]
   },
   {

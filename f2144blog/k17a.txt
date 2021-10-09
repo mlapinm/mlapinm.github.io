@@ -13,9 +13,7 @@ port security allows us to ensure that only the intended devices are allowed to 
 39.973917
 we will do a few labs to practice port security
 44.447202
-in this first lab let's look at and configure some basic functions of port security on two switches switch 1 and switch 2
-53.28906
-which each have one pc connected to them
+in this first lab let's look at and configure some basic functions of port security on two switches switch 1 and switch 2 53.28906 which each have one pc connected to them
 56.580272
 try to complete the lab yourself first then continue watching this video if you have trouble or watch it after to check your solution
 65.655241
@@ -47,9 +45,7 @@ step 2 asks us why the MAC addresses of pc1 & pc2
 124.908151
 don't appear in the MAC address table even though switch 1 and switch to appear in each other's tables
 129.945294
-if you have studied spanning tree protocol already
-134.28383
-you know that switches send each other BPD use bridge protocol data units at regular intervals
+if you have studied spanning tree protocol already 134.28383 you know that switches send each other BPD use bridge protocol data units at regular intervals
 140.832676
 the switches learned each other's MAC addresses via these bpdu packets
 145.726325
@@ -61,21 +57,13 @@ step3 tells us to ping between the PCs and then check the MAC address tables of 
 163.540997
 if we ping between the PCs switch one should have one dynamically learned MAC address on his Fast Ethernet 0 2 port that of PC 1
 173.224295
-and to dynamically learned MAC addresses on his fastethernet 0/1 port
-177.64034
-those of switch 2 and PC 2
+and to dynamically learned MAC addresses on his fastethernet 0/1 port 177.64034 those of switch 2 and PC 2
 180.232471
-likewise switch 2 should have one dynamically learned MAC address on his Fast Ethernet 0 to port that of PC 2 and to dynamically learned MAC addresses on its fastethernet 0/1 port
-192.59796
-those of switch one and pc 1 so I'll go on PC 1
+likewise switch 2 should have one dynamically learned MAC address on his Fast Ethernet 0 to port that of PC 2 and to dynamically learned MAC addresses on its fastethernet 0/1 port 192.59796 those of switch one and pc 1 so I'll go on PC 1
 195.063391
-and ping PC 2
-198.70861
-ping 192.168.1.12
+and ping PC 2 198.70861 ping 192.168.1.12
 206.507604
-there we go
-208.4092
-now let's go on switch 1
+there we go 208.4092 now let's go on switch 1
 210.962676
 show MAC address table
 215.263024
@@ -93,9 +81,7 @@ here switch ones MAC address
 240.169557
 this one is also on Fast Ethernet 0 1
 242.472752
-so it must be PC ones
-244.94482
-and this MAC address went on Fast Ethernet 0 2 must be PC twos
+so it must be PC ones 244.94482 and this MAC address went on Fast Ethernet 0 2 must be PC twos
 250.006647
 step four is to enable port security on the switch interfaces connected to PCs
 257.555683
@@ -123,9 +109,7 @@ it can only be enabled on an access port
 307.715738
 although this switch port is currently functioning as an access port
 312.249528
-it's actually in dynamic mode
-314.07877
-meaning that if it were to be connected to a switch port configured as a trunk
+it's actually in dynamic mode 314.07877 meaning that if it were to be connected to a switch port configured as a trunk
 318.593697
 it would start functioning as a trunk
 320.614636
@@ -171,9 +155,7 @@ and for our purposes it's good to go through the motions to practice
 398.200707
 so use this command
 400.627074
-switch port port security maximum one
-404.61179
-now let's do it on switch 1 2
+switch port port security maximum one 404.61179 now let's do it on switch 1 2
 407.692691
 switch port port security maximum 1
 413.597907
@@ -225,9 +207,7 @@ switch port port security violation
 511.645665
 now I'll use the question mark to show you the options
 514.422873
-here are the three options I mentioned earlier protect restrict shutdown
-519.33388
-let's go with the default of shutdown
+here are the three options I mentioned earlier protect restrict shutdown 519.33388 let's go with the default of shutdown
 522.377044
 now on switch 2
 525.418085
@@ -245,21 +225,15 @@ now I'll go on switch 1
 548.308731
 and show port security address
 553.169438
-as you can see this command shows the MAC address of PC 1
-558.08966
-which switch one has dynamically added as a secure MAC address on Fast Ethernet 0 2
+as you can see this command shows the MAC address of PC 1 558.08966 which switch one has dynamically added as a secure MAC address on Fast Ethernet 0 2
 563.979211
 that's all for this lab
 566.561802
 thank you for watching I hope this lab and video have been helpful for you
 572.326026
-please subscribe for future labs like this which will be released weekly
-577.17055
-if you have requests for any specific labs let me know in the comment section
+please subscribe for future labs like this which will be released weekly 577.17055 if you have requests for any specific labs let me know in the comment section
 581.893449
-if you want to support my channel I accept Bitcoin and etherion donations via the addresses in the description
-588.9288
-I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
+if you want to support my channel I accept Bitcoin and etherion donations via the addresses in the description 588.9288 I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser
 597.311715
 597.311715
 597.311715

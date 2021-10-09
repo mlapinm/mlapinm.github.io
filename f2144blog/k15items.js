@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -62,37 +62,13 @@ let objs = [
   {
     "time": [
       38.656193,
-      47.0438
-    ],
-    "en": [
-      "try to complete the lab yourself first then continue watching this video if you have trouble or watch it after to check your solution"
-    ],
-    "ru": [
-      "попробуйте сначала выполнить лабораторную работу самостоятельно, а затем продолжайте смотреть это видео, если у вас возникнут проблемы, или просмотрите его после, чтобы проверить свое решение."
-    ]
-  },
-  {
-    "time": [
-      47.0438,
-      55.4966
-    ],
-    "en": [
-      "our goal is to do some basic configurations on these two devices with the system configuration dialog"
-    ],
-    "ru": [
-      "наша цель - выполнить некоторые базовые настройки на этих двух устройствах с помощью диалогового окна конфигурации системы."
-    ]
-  },
-  {
-    "time": [
-      55.4966,
       57.682979
     ],
     "en": [
-      "let's go on r1 first"
+      "try to complete the lab yourself first then continue watching this video if you have trouble or watch it after to check your solution 47.0438 our goal is to do some basic configurations on these two devices with the system configuration dialog 55.4966 let's go on r1 first"
     ],
     "ru": [
-      "давай сначала пойдем на r1"
+      "попробуйте сначала выполнить лабораторную работу самостоятельно, а затем продолжите просмотр этого видео, если у вас возникнут проблемы, или просмотрите его позже, чтобы проверить свое решение. 47.0438 наша цель - выполнить некоторые базовые настройки на этих двух устройствах с помощью диалогового окна конфигурации системы 55.4966 давайте сначала перейдем к r1"
     ]
   },
   {
@@ -158,25 +134,13 @@ let objs = [
   {
     "time": [
       90.429979,
-      95.9823
-    ],
-    "en": [
-      "let's go through the extended setup this time although we will only be configuring one interface"
-    ],
-    "ru": [
-      "Давайте на этот раз рассмотрим расширенную настройку, хотя мы будем настраивать только один интерфейс"
-    ]
-  },
-  {
-    "time": [
-      95.9823,
       97.685636
     ],
     "en": [
-      "so let's type no"
+      "let's go through the extended setup this time although we will only be configuring one interface 95.9823 so let's type no"
     ],
     "ru": [
-      "так что давай набираем нет"
+      "Давайте на этот раз рассмотрим расширенную настройку, хотя мы будем настраивать только один интерфейс 95.9823, поэтому давайте набираем нет"
     ]
   },
   {
@@ -314,25 +278,13 @@ let objs = [
   {
     "time": [
       152.192444,
-      156.07317
-    ],
-    "en": [
-      "let's use an enable secret of Cisco with a capital C"
-    ],
-    "ru": [
-      "давайте использовать секрет включения Cisco с большой буквы"
-    ]
-  },
-  {
-    "time": [
-      156.07317,
       159.088584
     ],
     "en": [
-      "which is important because these passwords are case sensitive"
+      "let's use an enable secret of Cisco with a capital C 156.07317 which is important because these passwords are case sensitive"
     ],
     "ru": [
-      "что важно, потому что эти пароли чувствительны к регистру"
+      "давайте использовать секрет включения Cisco с заглавной буквы C 156.07317, что важно, потому что эти пароли чувствительны к регистру"
     ]
   },
   {
@@ -428,7 +380,7 @@ let objs = [
       "then again as I don't want to configure the VLAN one interface at this time"
     ],
     "ru": [
-      "опять же, поскольку я не хочу настраивать интерфейс VLAN one в это время"
+      "опять же, так как я не хочу настраивать интерфейс VLAN one в настоящее время"
     ]
   },
   {
@@ -590,25 +542,13 @@ let objs = [
   {
     "time": [
       258.947676,
-      264.83408
-    ],
-    "en": [
-      "and the password on the vty line which is the virtual terminal mentioned before"
-    ],
-    "ru": [
-      "и пароль в строке vty, которая является виртуальным терминалом, упомянутым ранее"
-    ]
-  },
-  {
-    "time": [
-      264.83408,
       267.795849
     ],
     "en": [
-      "our ones configuration is complete"
+      "and the password on the vty line which is the virtual terminal mentioned before 264.83408 our ones configuration is complete"
     ],
     "ru": [
-      "наша конфигурация завершена"
+      "и пароль на линии vty, которая является виртуальным терминалом, упомянутым перед 264.83408, наша конфигурация завершена"
     ]
   },
   {
@@ -746,25 +686,13 @@ let objs = [
   {
     "time": [
       331.686529,
-      336.90723
-    ],
-    "en": [
-      "now type yes and hit enter to configure the VLAN 1 interface"
-    ],
-    "ru": [
-      "теперь введите yes и нажмите Enter, чтобы настроить интерфейс VLAN 1."
-    ]
-  },
-  {
-    "time": [
-      336.90723,
       341.658118
     ],
     "en": [
-      "we're going to give the VLAN 1 interface an IP address"
+      "now type yes and hit enter to configure the VLAN 1 interface 336.90723 we're going to give the VLAN 1 interface an IP address"
     ],
     "ru": [
-      "мы собираемся дать интерфейсу VLAN 1 IP-адрес"
+      "теперь введите yes и нажмите Enter, чтобы настроить интерфейс VLAN 1. 336.90723 мы собираемся дать интерфейсу VLAN 1 IP-адрес."
     ]
   },
   {
@@ -830,25 +758,13 @@ let objs = [
   {
     "time": [
       366.686264,
-      372.56858
-    ],
-    "en": [
-      "the IP address will be 192.168.1.2"
-    ],
-    "ru": [
-      "IP-адрес будет 192.168.1.2"
-    ]
-  },
-  {
-    "time": [
-      372.56858,
       379.429832
     ],
     "en": [
-      "hit enter to accept the default subnet mask of 255.255.255.0"
+      "the IP address will be 192.168.1.2 372.56858 hit enter to accept the default subnet mask of 255.255.255.0"
     ],
     "ru": [
-      "нажмите Enter, чтобы принять маску подсети по умолчанию 255.255.255.0"
+      "IP-адрес будет 192.168.1.2 372.56858 нажмите Enter, чтобы принять маску подсети по умолчанию 255.255.255.0"
     ]
   },
   {
@@ -890,25 +806,13 @@ let objs = [
   {
     "time": [
       397.432928,
-      401.21944
-    ],
-    "en": [
-      "now hit enter one more time to save the configuration"
-    ],
-    "ru": [
-      "теперь нажмите Enter еще раз, чтобы сохранить конфигурацию"
-    ]
-  },
-  {
-    "time": [
-      401.21944,
       405.290424
     ],
     "en": [
-      "let's type show startup config again to check"
+      "now hit enter one more time to save the configuration 401.21944 let's type show startup config again to check"
     ],
     "ru": [
-      "давайте снова введем show startup config, чтобы проверить"
+      "теперь нажмите Enter еще раз, чтобы сохранить конфигурацию 401.21944, давайте снова введем show startup config, чтобы проверить"
     ]
   },
   {

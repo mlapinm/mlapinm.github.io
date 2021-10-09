@@ -77,9 +77,7 @@ remember this as we will contrast it with sticky mag address configuration later
 170.861465
 step 5 is to save the running config and reload the switch
 175.782073
-I'll use write to save then reload
-180.11067
-ok now the switch is reloading
+I'll use write to save then reload 180.11067 ok now the switch is reloading
 184.704112
 step 6 is to view the secure MAC addresses on switch 1 again
 195.112728
@@ -89,9 +87,7 @@ we saved the running configuration but PC ones MAC address wasn't anywhere in th
 208.361641
 so let's check the port security address table again
 213.068455
-enable show port security address
-217.6333
-as you can see PC ones MAC address is no longer present
+enable show port security address 217.6333 as you can see PC ones MAC address is no longer present
 222.268412
 dynamically learned secure MAC addresses will not be retained when you restart the switch
 227.983235
@@ -99,11 +95,7 @@ even if you save the running configuration because the address isn't actually en
 235.363753
 step 7 is to enable the sticky secure MAC address feature on switch ones f02 interface
 244.266878
-conf t interface f0 2
-249.13973
-now this feature is enabled with this command
-252.65166
-switch port port security MAC address sticky
+conf t interface f0 2 249.13973 now this feature is enabled with this command 252.65166 switch port port security MAC address sticky
 258.736498
 that's it
 260.519249
@@ -123,11 +115,7 @@ there is PC ones MAC address again
 291.802717
 this time it is listed as a secure sticky address
 295.151737
-what's the difference well let's check the running configuration
-300.03205
-show run as you can see in addition to the three commands we manually configured on the interface
-309.1951
-there is a fourth one which we didn't configure
+what's the difference well let's check the running configuration 300.03205 show run as you can see in addition to the three commands we manually configured on the interface 309.1951 there is a fourth one which we didn't configure
 311.926622
 switch port port security MAC address sticky
 316.075433
@@ -147,9 +135,7 @@ step 10 is to view the secure MAC addresses on switch one once again
 351.921145
 this time do you expect to see PC ones MAC address in the table
 357.277171
-PC ones MAC address was saved to the running configuration of switch 1
-361.95219
-and we saved the running configuration before reloading
+PC ones MAC address was saved to the running configuration of switch 1 361.95219 and we saved the running configuration before reloading
 365.295647
 so it should be in the table even after restarting
 368.594705
@@ -161,9 +147,7 @@ as expected PC ones MAC address is still saved as a secure MAC address on the f0
 384.595637
 so to review without the sticky feature enabled dynamically learned secure MAC addresses are not retained when the switch is reloaded
 393.555175
-the sticky MAC address learning feature however automatically saves these addresses to the running configuration
-400.4179
-and thus will be retained upon reload if the runner configuration is saved
+the sticky MAC address learning feature however automatically saves these addresses to the running configuration 400.4179 and thus will be retained upon reload if the runner configuration is saved
 404.812631
 that's all for this lab
 407.109874

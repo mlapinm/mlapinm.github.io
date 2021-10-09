@@ -9,11 +9,7 @@ the system configuration dialog is a basic setup wizard that allows you to perfo
 29.593011
 although you typically will be doing these things with the commands themselves you should familiarize yourself with the system configuration dialog as well
 38.656193
-try to complete the lab yourself first then continue watching this video if you have trouble or watch it after to check your solution
-47.0438
-our goal is to do some basic configurations on these two devices with the system configuration dialog
-55.4966
-let's go on r1 first
+try to complete the lab yourself first then continue watching this video if you have trouble or watch it after to check your solution 47.0438 our goal is to do some basic configurations on these two devices with the system configuration dialog 55.4966 let's go on r1 first
 57.682979
 if this is the first time entering the CLI you will be asked whether you want to enter the system configuration dialog
 65.576508
@@ -25,9 +21,7 @@ then use the command setup and then answer yes to enter the configuration dialog
 79.850683
 next we are asked if you want to enter basic management setup which as stated here only configures enough connectivity for management of the system
 90.429979
-let's go through the extended setup this time although we will only be configuring one interface
-95.9823
-so let's type no
+let's go through the extended setup this time although we will only be configuring one interface 95.9823 so let's type no
 97.685636
 now we are asked if you want to see the current interface summary
 103.045464
@@ -51,9 +45,7 @@ and is automatically encrypted
 148.600481
 according to the instructions for this lab
 152.192444
-let's use an enable secret of Cisco with a capital C
-156.07317
-which is important because these passwords are case sensitive
+let's use an enable secret of Cisco with a capital C 156.07317 which is important because these passwords are case sensitive
 159.088584
 next the enable password
 163.326876
@@ -97,9 +89,7 @@ our encrypted enable secret and our unencrypted enabled password
 253.089857
 the IP address of gig 0
 258.947676
-and the password on the vty line which is the virtual terminal mentioned before
-264.83408
-our ones configuration is complete
+and the password on the vty line which is the virtual terminal mentioned before 264.83408 our ones configuration is complete
 267.795849
 next let's go through the setup dialog for switch 1
 274.942063
@@ -123,9 +113,7 @@ and C sent in all caps for the virtual terminal password
 323.940784
 enter to accept the default of no as we don't want to configure SNMP at this time
 331.686529
-now type yes and hit enter to configure the VLAN 1 interface
-336.90723
-we're going to give the VLAN 1 interface an IP address
+now type yes and hit enter to configure the VLAN 1 interface 336.90723 we're going to give the VLAN 1 interface an IP address
 341.658118
 note that physical switch interfaces or switch ports cannot be given an IP address
 347.528874
@@ -137,9 +125,7 @@ we're going to configure the VLAN 1 interface here
 361.086722
 as we're going to need the IP address to receive the response from our one when we ping it in the next step
 366.686264
-the IP address will be 192.168.1.2
-372.56858
-hit enter to accept the default subnet mask of 255.255.255.0
+the IP address will be 192.168.1.2 372.56858 hit enter to accept the default subnet mask of 255.255.255.0
 379.429832
 now keep hitting Enter to skip configuration of these interfaces
 384.325061
@@ -147,9 +133,7 @@ we won't be configuring them for now
 386.409478
 type know as we won't be configuring this as a cluster command switch which is beyond the scope of this lab
 397.432928
-now hit enter one more time to save the configuration
-401.21944
-let's type show startup config again to check
+now hit enter one more time to save the configuration 401.21944 let's type show startup config again to check
 405.290424
 there's the hostname of switch one
 408.424046

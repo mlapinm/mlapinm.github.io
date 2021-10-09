@@ -8,31 +8,19 @@ let objs = [
       "welcome to this free CCNA packet tracer practice lab you can download the lab file from the link in the description"
     ],
     "ru": [
-      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer, вы можете скачать лабораторный файл по ссылке в описании"
+      "добро пожаловать в эту бесплатную лабораторную практику по трассировщику пакетов CCNA, вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
     "time": [
       8.006249,
-      15.38991
-    ],
-    "en": [
-      "if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description"
-    ],
-    "ru": [
-      "если вам нравятся эти лаборатории, пожалуйста, подумайте о поддержке меня через мой патреон или варианты криптовалюты в описании"
-    ]
-  },
-  {
-    "time": [
-      15.38991,
       21.108425
     ],
     "en": [
-      "this will be a short lab focused on using telnet to connect to Cisco devices"
+      "if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description 15.38991 this will be a short lab focused on using telnet to connect to Cisco devices"
     ],
     "ru": [
-      "это будет короткая лабораторная работа, посвященная использованию telnet для подключения к устройствам Cisco."
+      "Если вам нравятся эти лабораторные работы, подумайте о поддержке меня через мой патреон или варианты криптовалюты в описании 15.38991, это будет короткая лабораторная работа, посвященная использованию telnet для подключения к устройствам Cisco."
     ]
   },
   {
@@ -74,25 +62,13 @@ let objs = [
   {
     "time": [
       40.435432,
-      44.50743
-    ],
-    "en": [
-      "it is not something you will likely end up using due to a lack of security"
-    ],
-    "ru": [
-      "это не то, что вы, вероятно, в конечном итоге будете использовать из-за отсутствия безопасности"
-    ]
-  },
-  {
-    "time": [
-      44.50743,
       49.260411
     ],
     "en": [
-      "this is because telnet sends all data in plaintext"
+      "it is not something you will likely end up using due to a lack of security 44.50743 this is because telnet sends all data in plaintext"
     ],
     "ru": [
-      "это потому, что telnet отправляет все данные в виде открытого текста"
+      "это не то, что вы, вероятно, в конечном итоге будете использовать из-за отсутствия безопасности 44.50743 это потому, что telnet отправляет все данные в виде открытого текста"
     ]
   },
   {
@@ -230,25 +206,13 @@ let objs = [
   {
     "time": [
       96.696031,
-      99.35214
-    ],
-    "en": [
-      "let's go on switch 1 first"
-    ],
-    "ru": [
-      "давай сначала включим переключатель 1"
-    ]
-  },
-  {
-    "time": [
-      99.35214,
       108.153922
     ],
     "en": [
-      "enable conf t we will configure the IP address on the VLAN 1 interface"
+      "let's go on switch 1 first 99.35214 enable conf t we will configure the IP address on the VLAN 1 interface"
     ],
     "ru": [
-      "enable conf t мы настроим IP-адрес на интерфейсе VLAN 1"
+      "давайте сначала включим коммутатор 1 99.35214 enable conf t мы настроим IP-адрес на интерфейсе VLAN 1"
     ]
   },
   {
@@ -338,25 +302,13 @@ let objs = [
   {
     "time": [
       137.600192,
-      152.16748
-    ],
-    "en": [
-      "enable conf t interface G 0 0 IP address 192.168.1.1 255.255.255.0"
-    ],
-    "ru": [
-      "enable conf t interface G 0 0 IP-адрес 192.168.1.1 255.255.255.0"
-    ]
-  },
-  {
-    "time": [
-      152.16748,
       158.530171
     ],
     "en": [
-      "remember router interfaces are administratively down by default so no shutdown"
+      "enable conf t interface G 0 0 IP address 192.168.1.1 255.255.255.0 152.16748 remember router interfaces are administratively down by default so no shutdown"
     ],
     "ru": [
-      "помните, что интерфейсы маршрутизатора отключены по умолчанию, поэтому выключение не выполняется."
+      "enable conf t interface G 0 0 IP-адрес 192.168.1.1 255.255.255.0 152.16748 помните, что интерфейсы маршрутизатора отключены административно по умолчанию, поэтому выключение не требуется"
     ]
   },
   {
@@ -374,25 +326,13 @@ let objs = [
   {
     "time": [
       160.685924,
-      165.49378
-    ],
-    "en": [
-      "step 2 is to configure a single user on each device"
-    ],
-    "ru": [
-      "Шаг 2 - настроить одного пользователя на каждом устройстве"
-    ]
-  },
-  {
-    "time": [
-      165.49378,
       168.300749
     ],
     "en": [
-      "since we're on our one let's do that first"
+      "step 2 is to configure a single user on each device 165.49378 since we're on our one let's do that first"
     ],
     "ru": [
-      "так как мы находимся на нашем, давайте сделаем это в первую очередь"
+      "Шаг 2 - настроить одного пользователя на каждом устройстве 165.49378, так как мы на нашем одном, давайте сделаем это в первую очередь"
     ]
   },
   {
@@ -410,25 +350,13 @@ let objs = [
   {
     "time": [
       173.869935,
-      179.75098
-    ],
-    "en": [
-      "note again that passwords are case sensitive and in this case CCNA is in all capitals"
-    ],
-    "ru": [
-      "еще раз обратите внимание, что пароли чувствительны к регистру, и в этом случае CCNA пишется заглавными буквами."
-    ]
-  },
-  {
-    "time": [
-      179.75098,
       183.000866
     ],
     "en": [
-      "now let's do the same on switch one"
+      "note again that passwords are case sensitive and in this case CCNA is in all capitals 179.75098 now let's do the same on switch one"
     ],
     "ru": [
-      "Теперь давайте сделаем то же самое на первом переключателе"
+      "еще раз обратите внимание, что пароли чувствительны к регистру, и в этом случае CCNA находится во всех заглавных буквах 179.75098, теперь давайте сделаем то же самое на первом переключателе"
     ]
   },
   {
@@ -494,25 +422,13 @@ let objs = [
   {
     "time": [
       213.526021,
-      220.90624
-    ],
-    "en": [
-      "although in the running configuration they will typically be displayed as 0 through 4 then 5 through 15"
-    ],
-    "ru": [
-      "хотя в текущей конфигурации они обычно отображаются как от 0 до 4, затем от 5 до 15."
-    ]
-  },
-  {
-    "time": [
-      220.90624,
       223.427913
     ],
     "en": [
-      "let's check on switch 1"
+      "although in the running configuration they will typically be displayed as 0 through 4 then 5 through 15 220.90624 let's check on switch 1"
     ],
     "ru": [
-      "давай проверим на переключателе 1"
+      "хотя в текущей конфигурации они обычно отображаются как от 0 до 4, затем от 5 до 15 220.90624 давайте проверим на переключателе 1"
     ]
   },
   {
@@ -542,25 +458,13 @@ let objs = [
   {
     "time": [
       230.841299,
-      240.39852
-    ],
-    "en": [
-      "line vty 0 4 meaning line 0 through 4 then line vty 5 15 meaning alliance 5 through 15"
-    ],
-    "ru": [
-      "строка vty 0 4 означает строки с 0 по 4, затем строка vty 5 15 означает альянс с 5 по 15"
-    ]
-  },
-  {
-    "time": [
-      240.39852,
       244.030005
     ],
     "en": [
-      "although it is displayed like this in the configuration"
+      "line vty 0 4 meaning line 0 through 4 then line vty 5 15 meaning alliance 5 through 15 240.39852 although it is displayed like this in the configuration"
     ],
     "ru": [
-      "хотя в конфигурации он отображается так"
+      "строка vty 0 4 означает строки с 0 по 4, затем строка vty 5 15 означает альянс с 5 по 15 240.39852, хотя в конфигурации это отображается так"
     ]
   },
   {
@@ -602,25 +506,13 @@ let objs = [
   {
     "time": [
       257.815142,
-      263.91313
-    ],
-    "en": [
-      "first require the use of the local user database to connect to the vty lines"
-    ],
-    "ru": [
-      "сначала требуется использование локальной базы данных пользователей для подключения к линиям VTY"
-    ]
-  },
-  {
-    "time": [
-      263.91313,
       268.818122
     ],
     "en": [
-      "this is the same command we used when configuring the console line in a previous lab"
+      "first require the use of the local user database to connect to the vty lines 263.91313 this is the same command we used when configuring the console line in a previous lab"
     ],
     "ru": [
-      "это та же команда, которую мы использовали при настройке строки консоли в предыдущей лабораторной работе."
+      "сначала требуется использование локальной базы данных пользователей для подключения к линиям виртуального терминала 263.91313. Это та же команда, которую мы использовали при настройке строки консоли в предыдущей лабораторной работе."
     ]
   },
   {
@@ -788,7 +680,7 @@ let objs = [
       "step four is to attempt to telnet to each device from pc1 on a simulator like packet tracer you simply click on the icons of each device to configure them"
     ],
     "ru": [
-      "Шаг четвертый - попытаться подключиться по telnet к каждому устройству с pc1 на симуляторе, таком как пакетный трассировщик, вы просто нажимаете на значки каждого устройства, чтобы настроить их"
+      "Шаг четвертый - попытаться подключиться по telnet к каждому устройству с pc1 на симуляторе, таком как пакетный трассировщик, вы просто щелкаете значки каждого устройства, чтобы настроить их"
     ]
   },
   {
@@ -806,25 +698,13 @@ let objs = [
   {
     "time": [
       358.528029,
-      360.0355
-    ],
-    "en": [
-      "as we're going to try now"
-    ],
-    "ru": [
-      "как мы собираемся попробовать сейчас"
-    ]
-  },
-  {
-    "time": [
-      360.0355,
       363.228386
     ],
     "en": [
-      "I'll go on PC one"
+      "as we're going to try now 360.0355 I'll go on PC one"
     ],
     "ru": [
-      "Я пойду на ПК один"
+      "так как мы собираемся попробовать 360.0355, я пойду на один ПК"
     ]
   },
   {
@@ -866,25 +746,13 @@ let objs = [
   {
     "time": [
       380.734979,
-      383.18897
-    ],
-    "en": [
-      "now we have access to the command line of switch one"
-    ],
-    "ru": [
-      "теперь у нас есть доступ к командной строке первого переключателя"
-    ]
-  },
-  {
-    "time": [
-      383.18897,
       387.866871
     ],
     "en": [
-      "I'll type exit and now let's try our one"
+      "now we have access to the command line of switch one 383.18897 I'll type exit and now let's try our one"
     ],
     "ru": [
-      "Я наберу выход, а теперь попробуем наш"
+      "теперь у нас есть доступ к командной строке первого переключателя 383.18897 Я наберу exit, а теперь давайте попробуем наш"
     ]
   },
   {

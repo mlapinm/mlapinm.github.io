@@ -1,15 +1,11 @@
 0.0
-welcome to this free CCNA packet tracer practice lab
-4.66535
-you can download the lab file from the link in the description
+welcome to this free CCNA packet tracer practice lab 4.66535 you can download the lab file from the link in the description
 7.766149
 if you like these labs please consider supporting me via my patreon or the cryptocurrency options in the description
 15.390226
 this lab xx of these free labs I've created for YouTube will serve as a review of several of the topics we've covered in the previous 19
 24.832042
-I plan to do these at various points in this series
-29.30156
-although you could just go back and redo previous labs to serve as review
+I plan to do these at various points in this series 29.30156 although you could just go back and redo previous labs to serve as review
 34.699568
 my regular configuration labs tend to focus on just one technology at a time such as VLANs or port security
 41.114527
@@ -19,9 +15,7 @@ in this lab we will configure host names the enable secret VLANs trunks port sec
 58.427102
 try to complete the lab yourself first
 61.309243
-then continue watching this video if you have trouble or watch it after to check your solution
-66.58394
-step one is to configure host names for each of the networking devices
+then continue watching this video if you have trouble or watch it after to check your solution 66.58394 step one is to configure host names for each of the networking devices
 72.395519
 r one switch one and switch 2
 75.877368
@@ -55,9 +49,7 @@ we could also configure an enable password and then encrypt it with the service 
 133.571733
 however the encryption of the enable secret is more secure
 137.574847
-so you'll always want to use that instead
-139.85111
-let's do switch to first since we're here
+so you'll always want to use that instead 139.85111 let's do switch to first since we're here
 143.213483
 enable secret CCNA
 146.374858
@@ -67,17 +59,11 @@ now let's use the same command on switch 1
 155.070335
 enable secret CCNA
 158.386667
-and finally r1 enable secret CCNA
-164.91777
-that's all for step 2
+and finally r1 enable secret CCNA 164.91777 that's all for step 2
 166.783774
 step three is to configure the switch ports to which pcs are connected as access ports in specific VLANs
 176.492922
-pc1 & pc2 VLAN 13 & pc2 and pc 4 in VLAN 24
-183.09766
-let's start on switch one
-185.59947
-PC one is connected to f0 two so interface f0 2
+pc1 & pc2 VLAN 13 & pc2 and pc 4 in VLAN 24 183.09766 let's start on switch one 185.59947 PC one is connected to f0 two so interface f0 2
 192.630888
 switch port mode access
 194.660238
@@ -139,9 +125,7 @@ now let's go to switch 1 to do the same
 337.062025
 interface F 0 1 switch part mode trunk
 342.986842
-let's use a show command to confirm
-346.40453
-do show interface trunk
+let's use a show command to confirm 346.40453 do show interface trunk
 349.945845
 as you can see f 0 1 is indeed trunking
 353.730241
@@ -187,15 +171,9 @@ now we're in interface range configuration mode
 444.336898
 both interfaces are already explicitly configured as access ports
 448.962244
-so we don't have to do that this time
-450.67712
-switch port port security
+so we don't have to do that this time 450.67712 switch port port security
 453.907902
-now port security is enabled
-456.35315
-let's configure sticky MAC address learning
-458.88629
-switch port port security MAC address sticky
+now port security is enabled 456.35315 let's configure sticky MAC address learning 458.88629 switch port port security MAC address sticky
 462.401569
 finally let's change the violation action to restrict
 466.524584
@@ -277,9 +255,7 @@ interface g0 0.24 encapsulation dot1q 24 IP address 10.0.1.1 255.255.255.0
 627.486923
 our inter VLAN routing is now complete
 630.613541
-finally let's ping between pcs to make sure everything works
-639.94416
-we should now have full connectivity between all pcs
+finally let's ping between pcs to make sure everything works 639.94416 we should now have full connectivity between all pcs
 643.825538
 to check I'll ping from PC 1 and then from PC 2
 649.343095
@@ -291,17 +267,13 @@ next PC 3 ping 10.0.0.13 it works
 669.143173
 finally PC 4 ping 10.0.1.14 it works as well
 679.859202
-now let's do the same on PC 2
-682.68006
-first stop in PC 1 ping 10.0.0.11 it works
+now let's do the same on PC 2 682.68006 first stop in PC 1 ping 10.0.0.11 it works
 692.846181
 PC 3-pin 10.0.0.13 it works too
 702.284269
 finally I'll ping PC 4 ping 10.0.1.14 it works as well
 711.355959
-we have full connectivity between all computers
-714.33063
-that's all for this lab
+we have full connectivity between all computers 714.33063 that's all for this lab
 716.267636
 thank you for watching
 720.512622

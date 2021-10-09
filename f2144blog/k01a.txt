@@ -1,21 +1,15 @@
 0.0
-welcome to this free Cisco CCNA packet tracer practice lab
-5.71078
-you can download the lab file from the link in the description
+welcome to this free Cisco CCNA packet tracer practice lab 5.71078 you can download the lab file from the link in the description
 8.984527
 see if you can complete the lab yourself first
 13.143932
-and then continue watching this video if you have any trouble
-15.98083
-or watch it afterwards to check your solution
+and then continue watching this video if you have any trouble 15.98083 or watch it afterwards to check your solution
 18.800988
 in this lab we will be working with two routers r1 and r2
 26.869218
 we will configure basic security on the routers by using the enable password which is used to enter privileged exec mode also known as enable mode
 38.439468
-I will only work with one of the routers in this video for the sake of time
-43.2369
-but I highly recommend that you perform the configurations on both of the routers for practice
+I will only work with one of the routers in this video for the sake of time 43.2369 but I highly recommend that you perform the configurations on both of the routers for practice
 49.425341
 repetition is essential to become familiar with the command-line interface or CLI
 54.978542
@@ -59,11 +53,7 @@ and we are told this is an ambiguous command
 158.807745
 this is because there are other potential commands that begin with E
 163.438917
-which we can see by typing E and then a question mark
-167.41218
-as you can see there are two potential commands enable and exit
-173.20304
-so if you just enter E the router doesn't know which command you mean
+which we can see by typing E and then a question mark 167.41218 as you can see there are two potential commands enable and exit 173.20304 so if you just enter E the router doesn't know which command you mean
 178.511168
 however enable is the only command beginning with en
 183.078884
@@ -101,9 +91,7 @@ the command is simple and it is done in global configuration mode which we are a
 264.527286
 type an able password Cisco
 268.193335
-that's it
-269.79656
-now let's test it out
+that's it 269.79656 now let's test it out
 274.161426
 from here I will use the exit command twice
 275.126163
@@ -123,9 +111,7 @@ let's see what happens if I fail to enter the correct password
 303.558942
 I entered the wrong password once twice and then three times before being rejected for having bad secrets
 312.301938
-now I will try again with the correct password and I'm in
-317.70121
-step 3 is now complete
+now I will try again with the correct password and I'm in 317.70121 step 3 is now complete
 319.576191
 step four is simply to view the password in the running configuration
 328.413973
@@ -133,17 +119,13 @@ the running configuration is the current configuration of the router
 332.295558
 whether or not you have actually saved it
 334.796099
-if you turn off the router without saving the running configuration you will lose any changes
-340.58297
-if you want to keep your changes you will save them to what's called the startup configuration
+if you turn off the router without saving the running configuration you will lose any changes 340.58297 if you want to keep your changes you will save them to what's called the startup configuration
 346.860406
 that will be for another lab
 348.807184
 to view the running configuration use the show running config command from privileged exec mode
 355.919352
-which we are already in
-357.87534
-you can abbreviate it to for example SH run
+which we are already in 357.87534 you can abbreviate it to for example SH run
 362.475673
 enter the command and you can see the password right here with the exact command we used before enable password Cisco
 372.238832
@@ -167,15 +149,11 @@ step six is to once again view the running-config
 425.920834
 I will use the same command as before
 429.500638
-and now let's check the password
-431.38758
-however the command doesn't work
+and now let's check the password 431.38758 however the command doesn't work
 433.878926
 that is because we are currently in global configuration mode and show running config must be entered from privileged exec mode
 441.360164
-now I could type exit to drop back to privileged exec mode and then enter the command
-447.17541
-but there is one more way
+now I could type exit to drop back to privileged exec mode and then enter the command 447.17541 but there is one more way
 449.309423
 if I type do in front of the command
 452.021168
@@ -187,19 +165,11 @@ there we go
 458.342046
 let's look at the password
 459.982219
-you can see here an able password followed by a seven and then a string of other numbers
-465.91831
-the password has successfully been encrypted
+you can see here an able password followed by a seven and then a string of other numbers 465.91831 the password has successfully been encrypted
 468.939648
 although we didn't type this 7 when we entered the command
 472.989782
-it refers to the type of encryption used
-475.6533
-there are other types as well but that's not something to worry about now
-479.90062
-the string of numbers that follow are the passwords Cisco encrypted to be unreadable
-487.49386
-so that anyone looking over our shoulder can't read the password
+it refers to the type of encryption used 475.6533 there are other types as well but that's not something to worry about now 479.90062 the string of numbers that follow are the passwords Cisco encrypted to be unreadable 487.49386 so that anyone looking over our shoulder can't read the password
 490.509759
 keep in mind that the encryption used in the service password encryption command isn't very secure
 497.642039

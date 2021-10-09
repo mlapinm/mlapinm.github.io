@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -146,49 +146,25 @@ let objs = [
   {
     "time": [
       59.587607,
-      70.20123
-    ],
-    "en": [
-      "CCNA in lowercase letters with the password Cisco in lowercase letters and CCNP in lowercase with the password Cisco in uppercase"
-    ],
-    "ru": [
-      "CCNA строчными буквами с паролем Cisco строчными буквами и CCNP строчными буквами с паролем Cisco прописными"
-    ]
-  },
-  {
-    "time": [
-      70.20123,
       73.305574
     ],
     "en": [
-      "so let's go to global config mode"
+      "CCNA in lowercase letters with the password Cisco in lowercase letters and CCNP in lowercase with the password Cisco in uppercase 70.20123 so let's go to global config mode"
     ],
     "ru": [
-      "так что давайте перейдем в режим глобальной конфигурации"
+      "CCNA строчными буквами с паролем Cisco строчными буквами и CCNP строчными буквами с паролем Cisco в верхнем регистре 70.20123, поэтому переходим в режим глобальной конфигурации"
     ]
   },
   {
     "time": [
       73.305574,
-      76.73268
-    ],
-    "en": [
-      "enable conf t"
-    ],
-    "ru": [
-      "включить конф т"
-    ]
-  },
-  {
-    "time": [
-      76.73268,
       83.459327
     ],
     "en": [
-      "you can create users with this command username CCNA password Cisco"
+      "enable conf t 76.73268 you can create users with this command username CCNA password Cisco"
     ],
     "ru": [
-      "вы можете создавать пользователей с помощью этой команды имя пользователя CCNA пароль Cisco"
+      "enable conf t 76.73268 вы можете создавать пользователей с помощью этой команды имя пользователя CCNA пароль Cisco"
     ]
   },
   {
@@ -446,25 +422,13 @@ let objs = [
   {
     "time": [
       163.104745,
-      165.47374
-    ],
-    "en": [
-      "with the password in lower case again"
-    ],
-    "ru": [
-      "снова с паролем в нижнем регистре"
-    ]
-  },
-  {
-    "time": [
-      165.47374,
       169.219869
     ],
     "en": [
-      "as you can see it lets us log in"
+      "with the password in lower case again 165.47374 as you can see it lets us log in"
     ],
     "ru": [
-      "как видите, это позволяет нам войти в систему"
+      "снова введите пароль в нижнем регистре 165.47374, как видите, это позволяет нам войти в систему"
     ]
   },
   {
@@ -590,25 +554,13 @@ let objs = [
   {
     "time": [
       197.604527,
-      202.24125
-    ],
-    "en": [
-      "let's quickly try again with the CCNP username again to confirm"
-    ],
-    "ru": [
-      "давайте быстро попробуем еще раз с именем пользователя CCNP еще раз, чтобы подтвердить"
-    ]
-  },
-  {
-    "time": [
-      202.24125,
       210.253867
     ],
     "en": [
-      "I'll type the username alternating upper and lower case just to prove the point and I'll type the correct password which is all uppercase"
+      "let's quickly try again with the CCNP username again to confirm 202.24125 I'll type the username alternating upper and lower case just to prove the point and I'll type the correct password which is all uppercase"
     ],
     "ru": [
-      "Я введу имя пользователя, чередуя верхний и нижний регистр, просто чтобы доказать свою точку зрения, и я введу правильный пароль, который все в верхнем регистре"
+      "давайте быстро попробуем еще раз с именем пользователя CCNP еще раз, чтобы подтвердить 202.24125 Я введу имя пользователя, чередуя верхний и нижний регистр, просто чтобы доказать, что я наберу правильный пароль, который все в верхнем регистре"
     ]
   },
   {
@@ -686,25 +638,13 @@ let objs = [
   {
     "time": [
       233.075487,
-      234.81109
-    ],
-    "en": [
-      "let me login again"
-    ],
-    "ru": [
-      "позволь мне войти снова"
-    ]
-  },
-  {
-    "time": [
-      234.81109,
       238.387859
     ],
     "en": [
-      "then enable show run"
+      "let me login again 234.81109 then enable show run"
     ],
     "ru": [
-      "затем включите шоу-запуск"
+      "позвольте мне снова войти в систему 234.81109, затем включите show run"
     ]
   },
   {

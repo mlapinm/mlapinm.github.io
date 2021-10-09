@@ -1,7 +1,5 @@
 0.0
-welcome to this free CCNA packet tracer practice lab
-4.69823
-you can download the lab file from the link in the description
+welcome to this free CCNA packet tracer practice lab 4.69823 you can download the lab file from the link in the description
 8.036378
 in this lab we will be working with the same network topology as in the previous lab lab number seven
 15.772173
@@ -9,15 +7,11 @@ in which we configured inter VLAN routing with the router on a stick method
 19.897418
 this time however the configurations are all completed
 24.038867
-the task this time is to troubleshoot a configuration error and fix it
-27.62313
-troubleshooting is an important skill to have for your CCENT and CCNA exams and also of course in real-world situations
+the task this time is to troubleshoot a configuration error and fix it 27.62313 troubleshooting is an important skill to have for your CCENT and CCNA exams and also of course in real-world situations
 35.951555
 because problems will inevitably come up
 38.553251
-try to complete this lab on your own first
-41.59053
-then continue watching this video if you have trouble
+try to complete this lab on your own first 41.59053 then continue watching this video if you have trouble
 44.600378
 or watch it after to check your solution
 47.166952
@@ -25,11 +19,7 @@ remember the exec method you use to troubleshoot doesn't have to match mine
 51.712714
 as long as the end result is that you solve the problem
 55.038719
-so this is our scenario
-58.49551
-we have 4 pcs with pc1 & pc2 being in VLAN 13
-64.03647
-and pc 2 and pc 4 being in VLAN 24
+so this is our scenario 58.49551 we have 4 pcs with pc1 & pc2 being in VLAN 13 64.03647 and pc 2 and pc 4 being in VLAN 24
 67.407514
 someone has configured inter VLAN routing to allow these pcs to communicate with each other
 73.184728
@@ -47,9 +37,7 @@ likewise PC 2 shouldn't be able to ping PC 1 or PC 3
 104.654089
 but should be able to ping pc 4
 107.132281
-let's test
-108.27213
-I'll use PC 1 first
+let's test 108.27213 I'll use PC 1 first
 110.595281
 first ping PC 2
 114.406025
@@ -67,9 +55,7 @@ ping PC 1 first ping 10.0.0.2 doesn't work
 149.994881
 next PC 3 ping 10.0.0.3 doesn't work
 157.333417
-finally PC 4 ping 10.0.0.1 31 it works
-164.75137
-so we have confirmed the problem
+finally PC 4 ping 10.0.0.1 31 it works 164.75137 so we have confirmed the problem
 166.875221
 computers in the same VLAN can communicate but our inter VLAN routing isn't working
 172.305115
@@ -101,9 +87,7 @@ let's head over to r1 and check things out
 239.005101
 enable show IP interface brief
 243.106631
-looks like the interface is up and the IP addresses are configured as 10.0.0.1 for VLAN 13
-251.15149
-and 10.0.0.1 to 9 for VLAN 24
+looks like the interface is up and the IP addresses are configured as 10.0.0.1 for VLAN 13 251.15149 and 10.0.0.1 to 9 for VLAN 24
 254.869647
 these IP addresses should be configured on the PCs as their default gateway
 261.073869
@@ -117,9 +101,7 @@ next on PC 2
 274.872318
 ipconfig /all looks good as well
 281.175486
-PC 3 ipconfig /all looks good
-289.49705
-finally on PC 4 ipconfig /all no problems here
+PC 3 ipconfig /all looks good 289.49705 finally on PC 4 ipconfig /all no problems here
 298.843391
 now let's go back to our one
 301.770768
@@ -137,15 +119,11 @@ next show interface g0 0.24 VLAN ID 14
 337.915217
 looks like we found the problem
 341.257255
-there is no VLAN 14 on the network
-343.22351
-this is supposed to be VLAN 24
+there is no VLAN 14 on the network 343.22351 this is supposed to be VLAN 24
 345.645814
 let's go fix that
 347.624844
-conf t interface g0 0.24 encapsulation dot1q 24
-358.39565
-ok that should solve the problem
+conf t interface g0 0.24 encapsulation dot1q 24 358.39565 ok that should solve the problem
 360.818604
 a configuration error like this could very well be a simple typo
 365.520263
@@ -173,9 +151,7 @@ just to be sure I'll send some pings from PC 2 as well
 414.977687
 ping 10.0.0.2 it works ping 10.0.0.3 it works
 425.727168
-ping 10.0.0.1 31 it works as well
-431.97908
-we have successfully fixed the network
+ping 10.0.0.1 31 it works as well 431.97908 we have successfully fixed the network
 434.289798
 thank you for watching I hope this lab and video have been helpful for you
 441.780786

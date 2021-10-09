@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -80,7 +80,7 @@ let objs = [
       "try to complete the lab yourself first and then continue watching if you have trouble or watch it after to check your solution"
     ],
     "ru": [
-      "попробуйте сначала пройти лабораторную работу самостоятельно, а затем продолжайте наблюдение, если у вас возникнут проблемы, или просмотрите ее после, чтобы проверить свое решение"
+      "попробуйте сначала пройти лабораторную работу самостоятельно, а затем продолжайте наблюдение, если у вас возникнут проблемы, или посмотрите ее позже, чтобы проверить свое решение"
     ]
   },
   {
@@ -158,37 +158,13 @@ let objs = [
   {
     "time": [
       75.260223,
-      79.72058
-    ],
-    "en": [
-      "let's ping PC to ping"
-    ],
-    "ru": [
-      "давайте пингуем компьютер, чтобы пинговать"
-    ]
-  },
-  {
-    "time": [
-      79.72058,
       86.919684
     ],
     "en": [
-      ""
+      "let's ping PC to ping 79.72058 10.0.0.1/30 the ping fails"
     ],
     "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      79.72058,
-      86.919684
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
+      "давайте пингуем компьютер на пинг 79.72058 10.0.0.1/30 пинг не работает"
     ]
   },
   {
@@ -242,25 +218,13 @@ let objs = [
   {
     "time": [
       106.461147,
-      109.07504
-    ],
-    "en": [
-      "the ping fails"
-    ],
-    "ru": [
-      "пинг не работает"
-    ]
-  },
-  {
-    "time": [
-      109.07504,
       114.150345
     ],
     "en": [
-      "by the way I'm using the up arrow to access previous commands and just edit the last few numbers"
+      "the ping fails 109.07504 by the way I'm using the up arrow to access previous commands and just edit the last few numbers"
     ],
     "ru": [
-      "кстати, я использую стрелку вверх для доступа к предыдущим командам и просто редактирую последние несколько чисел"
+      "пинг не работает 109.07504 кстати, я использую стрелку вверх для доступа к предыдущим командам и просто редактирую последние несколько чисел"
     ]
   },
   {
@@ -410,25 +374,13 @@ let objs = [
   {
     "time": [
       176.534073,
-      179.17163
-    ],
-    "en": [
-      "that's for a pc 1"
-    ],
-    "ru": [
-      "это для ПК 1"
-    ]
-  },
-  {
-    "time": [
-      179.17163,
       182.239367
     ],
     "en": [
-      "next for pc 2"
+      "that's for a pc 1 179.17163 next for pc 2"
     ],
     "ru": [
-      "следующий для ПК 2"
+      "это для ПК 1 179.17163 далее для ПК 2"
     ]
   },
   {
@@ -482,25 +434,13 @@ let objs = [
   {
     "time": [
       197.082672,
-      207.20813
-    ],
-    "en": [
-      "enable conf t interface f01 switch port mode access"
-    ],
-    "ru": [
-      "enable conf t interface f01 переключатель режима порта доступа"
-    ]
-  },
-  {
-    "time": [
-      207.20813,
       210.879959
     ],
     "en": [
-      "switch port access VLAN 13"
+      "enable conf t interface f01 switch port mode access 207.20813 switch port access VLAN 13"
     ],
     "ru": [
-      "порт коммутатора доступа VLAN 13"
+      "enable conf t interface f01 режим порта коммутатора доступ 207.20813 доступ к порту коммутатора VLAN 13"
     ]
   },
   {
@@ -530,37 +470,13 @@ let objs = [
   {
     "time": [
       221.431042,
-      228.64635
-    ],
-    "en": [
-      "switch ports mode access switch port access VLAN 24"
-    ],
-    "ru": [
-      "режим портов коммутатора доступ к портам коммутатора VLAN 24"
-    ]
-  },
-  {
-    "time": [
-      228.64635,
-      231.2011
-    ],
-    "en": [
-      "step two is now complete"
-    ],
-    "ru": [
-      "шаг два теперь завершен"
-    ]
-  },
-  {
-    "time": [
-      231.2011,
       238.058483
     ],
     "en": [
-      "step three is to create a trunk link between switch 1 and switch 2"
+      "switch ports mode access switch port access VLAN 24 228.64635 step two is now complete 231.2011 step three is to create a trunk link between switch 1 and switch 2"
     ],
     "ru": [
-      "Шаг третий - создать магистральный канал между коммутатором 1 и коммутатором 2."
+      "режим портов коммутатора доступ к портам коммутатора VLAN 24 228.64635 второй шаг завершен 231.2011 третий шаг заключается в создании магистрального канала между коммутатором 1 и коммутатором 2"
     ]
   },
   {
@@ -572,7 +488,7 @@ let objs = [
       "remember we need to configure a trunk link to allow the connection between switch 1 and switch two to carry traffic from multiple VLANs"
     ],
     "ru": [
-      "помните, что нам нужно настроить магистральный канал, чтобы соединение между коммутатором 1 и коммутатором 2 могло передавать трафик из нескольких VLAN."
+      "помните, что нам нужно настроить магистраль, чтобы соединение между коммутатором 1 и коммутатором 2 могло передавать трафик из нескольких VLAN."
     ]
   },
   {
@@ -590,25 +506,13 @@ let objs = [
   {
     "time": [
       257.708238,
-      262.79738
-    ],
-    "en": [
-      "therefore no traffic from these pcs will be able to pass between the switches"
-    ],
-    "ru": [
-      "следовательно, трафик от этих компьютеров не сможет проходить между коммутаторами."
-    ]
-  },
-  {
-    "time": [
-      262.79738,
       264.510651
     ],
     "en": [
-      "even in the same VLAN"
+      "therefore no traffic from these pcs will be able to pass between the switches 262.79738 even in the same VLAN"
     ],
     "ru": [
-      "даже в той же VLAN"
+      "следовательно, трафик от этих компьютеров не сможет проходить между коммутаторами 262.79738 даже в одной и той же VLAN."
     ]
   },
   {
@@ -626,25 +530,13 @@ let objs = [
   {
     "time": [
       267.526349,
-      271.48651
-    ],
-    "en": [
-      "from pc1 to pc3 are in the same VLAN"
-    ],
-    "ru": [
-      "от pc1 до pc3 находятся в одной VLAN"
-    ]
-  },
-  {
-    "time": [
-      271.48651,
       276.379656
     ],
     "en": [
-      "ping 10.0.0.3"
+      "from pc1 to pc3 are in the same VLAN 271.48651 ping 10.0.0.3"
     ],
     "ru": [
-      "пинг 10.0.0.3"
+      "с pc1 на pc3 находятся в одной VLAN 271.48651 ping 10.0.0.3"
     ]
   },
   {
@@ -698,25 +590,13 @@ let objs = [
   {
     "time": [
       296.529786,
-      302.62073
-    ],
-    "en": [
-      "that's it on this switch model we don't have to configure the encapsulation type"
-    ],
-    "ru": [
-      "вот именно на этой модели коммутатора нам не нужно настраивать тип инкапсуляции"
-    ]
-  },
-  {
-    "time": [
-      302.62073,
       313.624853
     ],
     "en": [
-      "next let's configure switch 2 interface g0 1 switch port mode trunk"
+      "that's it on this switch model we don't have to configure the encapsulation type 302.62073 next let's configure switch 2 interface g0 1 switch port mode trunk"
     ],
     "ru": [
-      "Далее давайте настроим интерфейс коммутатора 2 g0 1 режим порта коммутатора магистраль"
+      "вот и все на этой модели коммутатора нам не нужно настраивать тип инкапсуляции 302.62073 затем давайте настроим интерфейс коммутатора 2 g0 1 режим порта коммутатора магистраль"
     ]
   },
   {
@@ -740,31 +620,19 @@ let objs = [
       "step four is to configure inter VLAN routing by creating sub interfaces on r1"
     ],
     "ru": [
-      "Шаг четвертый - настроить маршрутизацию между VLAN, создав субинтерфейсы на r1."
+      "Шаг четвертый - настроить маршрутизацию между VLAN, создав подчиненные интерфейсы на r1."
     ]
   },
   {
     "time": [
       326.375406,
-      335.03793
-    ],
-    "en": [
-      "currently because we created a trunk between switch 1 and switch 2 pcs in the same VLAN can ping each other again"
-    ],
-    "ru": [
-      "в настоящее время, поскольку мы создали магистраль между коммутатором 1 и коммутатором 2, компьютеры в одной VLAN могут снова пинговать друг друга"
-    ]
-  },
-  {
-    "time": [
-      335.03793,
       340.045953
     ],
     "en": [
-      "I'll ping once more from pc1 to pc3 show this"
+      "currently because we created a trunk between switch 1 and switch 2 pcs in the same VLAN can ping each other again 335.03793 I'll ping once more from pc1 to pc3 show this"
     ],
     "ru": [
-      "Я пингую еще раз с pc1 на pc3 покажу это"
+      "в настоящее время, поскольку мы создали магистраль между коммутатором 1 и коммутатором 2, компьютеры в одной VLAN могут снова пинговать друг друга 335.03793 Я еще раз пингую с pc1 на pc3, покажу это"
     ]
   },
   {
@@ -950,25 +818,13 @@ let objs = [
   {
     "time": [
       430.484622,
-      435.28377
-    ],
-    "en": [
-      "as you can see we are in sub interface configuration mode"
-    ],
-    "ru": [
-      "как вы можете видеть, мы находимся в режиме настройки субинтерфейса"
-    ]
-  },
-  {
-    "time": [
-      435.28377,
       449.810928
     ],
     "en": [
-      "I'll set the IP address to 10.0.0.1 so IP address 10.0.0.1 with the subnet mask of 255.255.255.0"
+      "as you can see we are in sub interface configuration mode 435.28377 I'll set the IP address to 10.0.0.1 so IP address 10.0.0.1 with the subnet mask of 255.255.255.0"
     ],
     "ru": [
-      "Я установлю IP-адрес 10.0.0.1, поэтому IP-адрес 10.0.0.1 с маской подсети 255.255.255.0"
+      "как вы можете видеть, мы находимся в режиме конфигурации субинтерфейса 435.28377, я установил IP-адрес на 10.0.0.1, поэтому IP-адрес 10.0.0.1 с маской подсети 255.255.255.0"
     ]
   },
   {
@@ -1382,25 +1238,13 @@ let objs = [
   {
     "time": [
       627.019187,
-      633.81698
-    ],
-    "en": [
-      "and finally PC 4 ping 10.0.0.1/31 it works too"
-    ],
-    "ru": [
-      "и наконец ПК 4 пинг 10.0.0.1/31 тоже работает"
-    ]
-  },
-  {
-    "time": [
-      633.81698,
       637.332415
     ],
     "en": [
-      "we have successfully configured inter VLAN routing"
+      "and finally PC 4 ping 10.0.0.1/31 it works too 633.81698 we have successfully configured inter VLAN routing"
     ],
     "ru": [
-      "мы успешно настроили маршрутизацию между VLAN"
+      "и наконец ПК 4 ping 10.0.0.1/31 тоже работает 633.81698 мы успешно настроили маршрутизацию между VLAN"
     ]
   },
   {

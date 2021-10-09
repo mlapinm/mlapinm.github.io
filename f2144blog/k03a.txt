@@ -1,31 +1,21 @@
 0.0
-welcome to this free CCNA packet tracer practice lab
-3.15314
-you can download the lab file from the link in the description
+welcome to this free CCNA packet tracer practice lab 3.15314 you can download the lab file from the link in the description
 7.162907
-in this lab we will be working with one router r1 and one PC PC one
-14.12432
-we will use PC one to connect to the console port of r1
+in this lab we will be working with one router r1 and one PC PC one 14.12432 we will use PC one to connect to the console port of r1
 18.869851
 and perform configurations from there
 21.118842
 we will also set up a password to protect connections from the console port of r1
 27.184047
-try to complete the lab on your own first
-30.53352
-and continue watching this video if you have trouble
+try to complete the lab on your own first 30.53352 and continue watching this video if you have trouble
 33.774879
 or watch it afterwards to check your solution
 36.419122
 step one is to connect PC ones rs-232 port to our ones console port
 45.152569
-click on connections in the bottom left corner of the screen
-49.17052
-this is the console cable as indicated at the bottom of the screen
+click on connections in the bottom left corner of the screen 49.17052 this is the console cable as indicated at the bottom of the screen
 54.561567
-connect it to the rs-232 port of PC one
-59.95001
-and then to the console port of r1
+connect it to the rs-232 port of PC one 59.95001 and then to the console port of r1
 62.507949
 that's step one
 64.385472
@@ -37,9 +27,7 @@ we're now connected to r1 via PC one and can perform configurations as usual
 90.848294
 now we have to change the hostname of the router to r1 as we've done before in previous labs
 97.999229
-unable to enter privileged exec mode
-101.20266
-conf t enter global configuration mode
+unable to enter privileged exec mode 101.20266 conf t enter global configuration mode
 104.726566
 hostname r1
 106.476107
@@ -49,15 +37,9 @@ step three is to set the enable secret of r1 to Cisco
 116.328196
 if you remember the enable secret is a password that protects privileged exec mode
 120.926073
-and is encrypted by default
-123.2163
-it's configured from global configuration mode
-126.6641
-which we are already in
+and is encrypted by default 123.2163 it's configured from global configuration mode 126.6641 which we are already in
 128.360855
-enable secret Cisco
-130.72325
-step three is now complete
+enable secret Cisco 130.72325 step three is now complete
 132.805721
 step four is to set the console password of r1 to CCNA
 140.763358
@@ -81,9 +63,7 @@ now let's try out our password
 178.683994
 I'll use the end command to return to privileged exec mode
 182.966503
-and then exit to quit the connection
-185.89367
-but I'm not asked for a password
+and then exit to quit the connection 185.89367 but I'm not asked for a password
 188.895884
 if I type enable I have to use the password Cisco to access privileged exec mode
 195.023131
@@ -113,15 +93,9 @@ so i'll tap the spacebar a few times to scroll down
 245.280339
 there it is line con zero password CCNA
 250.591846
-as you can see it is not encrypted
-252.54017
-that's all for step four
+as you can see it is not encrypted 252.54017 that's all for step four
 254.651493
-Step five is to enable password encryption to protect this console password
-262.69548
-compte to enter global configuration mode
-265.66923
-then the same command as before
+Step five is to enable password encryption to protect this console password 262.69548 compte to enter global configuration mode 265.66923 then the same command as before
 267.735935
 service password encryption
 270.058735

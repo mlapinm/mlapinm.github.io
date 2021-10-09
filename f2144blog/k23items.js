@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -392,7 +392,7 @@ let objs = [
       "no shutdown because the interface is disabled by default"
     ],
     "ru": [
-      "выключения нет, потому что интерфейс отключен по умолчанию"
+      "нет выключения, потому что интерфейс отключен по умолчанию"
     ]
   },
   {
@@ -572,7 +572,7 @@ let objs = [
       "IP domain name cisco.com"
     ],
     "ru": [
-      "IP-доменное имя cisco.com"
+      "IP-имя домена cisco.com"
     ]
   },
   {
@@ -788,7 +788,7 @@ let objs = [
       "that's the same command used last time meaning we will have to use the user account we created previously to log into the vty lines when we connect"
     ],
     "ru": [
-      "это та же команда, что использовалась в прошлый раз, что означает, что нам придется использовать учетную запись пользователя, которую мы создали ранее, для входа в строки vty при подключении"
+      "это та же самая команда, которая использовалась в прошлый раз, что означает, что нам придется использовать учетную запись пользователя, которую мы создали ранее, для входа в строки vty при подключении"
     ]
   },
   {
@@ -812,7 +812,7 @@ let objs = [
       "this will allow only SSH not telnet to be used to connect to the vty lines"
     ],
     "ru": [
-      "это позволит использовать только SSH, а не telnet, для подключения к линиям VTY."
+      "это позволит использовать только SSH, а не telnet для подключения к линиям VTY."
     ]
   },
   {

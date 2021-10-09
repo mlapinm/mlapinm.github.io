@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -44,7 +44,7 @@ let objs = [
       "also please subscribe to the channel for more labs like this"
     ],
     "ru": [
-      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторий"
+      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторных работ"
     ]
   },
   {
@@ -53,10 +53,10 @@ let objs = [
       23.009749
     ],
     "en": [
-      "in this lab we will once again configure a IG RP"
+      "in this lab we will once again configure a EIGRP"
     ],
     "ru": [
-      "в этой лабораторной работе мы еще раз настроим IG RP"
+      "в этой лабораторной работе мы еще раз настроим EIGRP"
     ]
   },
   {
@@ -77,10 +77,10 @@ let objs = [
       33.841082
     ],
     "en": [
-      "configuring a IG RP for ipv6 is very similar to configuring OSPF v3 for ipv6"
+      "configuring a EIGRP for ipv6 is very similar to configuring OSPF v3 for ipv6"
     ],
     "ru": [
-      "настройка IG RP для ipv6 очень похожа на настройку OSPF v3 для ipv6"
+      "настройка EIGRP для ipv6 очень похожа на настройку OSPF v3 для ipv6"
     ]
   },
   {
@@ -89,10 +89,10 @@ let objs = [
       41.958978
     ],
     "en": [
-      "rather than using the network command in Eid RP configuration mode you can figure it directly on the interfaces"
+      "rather than using the network command in EIGRP configuration mode you can figure it directly on the interfaces"
     ],
     "ru": [
-      "вместо того, чтобы использовать сетевую команду в режиме конфигурации Eid RP, вы можете использовать ее непосредственно на интерфейсах."
+      "вместо использования сетевой команды в режиме конфигурации EIGRP вы можете использовать ее непосредственно на интерфейсах."
     ]
   },
   {
@@ -149,10 +149,10 @@ let objs = [
       59.352498
     ],
     "en": [
-      "these will become the EIG RP router IDs"
+      "these will become the EIGRP router IDs"
     ],
     "ru": [
-      "они станут идентификаторами маршрутизатора EIG RP"
+      "они станут идентификаторами маршрутизатора EIGRP"
     ]
   },
   {
@@ -161,10 +161,10 @@ let objs = [
       69.997165
     ],
     "en": [
-      "like OSPF v3 for ipv6 ERG RP for ipv6 uses a 32-bit router ID in the form of an ipv4 address"
+      "like OSPF v3 for ipv6 EIGRP for ipv6 uses a 32-bit router ID in the form of an ipv4 address"
     ],
     "ru": [
-      "как OSPF v3 для ipv6 ERG RP для ipv6 использует 32-битный идентификатор маршрутизатора в форме адреса ipv4"
+      "как OSPF v3 для ipv6 EIGRP для ipv6 использует 32-битный идентификатор маршрутизатора в виде адреса ipv4"
     ]
   },
   {
@@ -233,10 +233,10 @@ let objs = [
       100.995289
     ],
     "en": [
-      "so just for this video I've already configured that loopback interfaces on are two three four and five"
+      "so just for this video I've already configured that loopback interfaces on r 2 3 4 and 5"
     ],
     "ru": [
-      "так что только для этого видео я уже настроил, что интерфейсы обратной связи на два, три, четыре и пять"
+      "так что только для этого видео я уже настроил петлевые интерфейсы на r 2, 3, 4 и 5."
     ]
   },
   {
@@ -257,10 +257,10 @@ let objs = [
       108.310934
     ],
     "en": [
-      "enable compte"
+      "enable conf t"
     ],
     "ru": [
-      "включить compte"
+      "включить конф т"
     ]
   },
   {
@@ -281,10 +281,10 @@ let objs = [
       118.4086
     ],
     "en": [
-      "IP address 1.1 1.1 255.255.255.0 5"
+      "IP address 1.1.1.1 255.255.255.255"
     ],
     "ru": [
-      "IP-адрес 1.1 1.1 255.255.255.0 5"
+      "IP-адрес 1.1.1.1 255.255.255.255"
     ]
   },
   {
@@ -305,10 +305,10 @@ let objs = [
       124.255246
     ],
     "en": [
-      "next is to configure a IG RP on this network"
+      "next is to configure a EIGRP on this network"
     ],
     "ru": [
-      "далее нужно настроить IG RP в этой сети"
+      "далее нужно настроить EIGRP в этой сети"
     ]
   },
   {
@@ -329,10 +329,10 @@ let objs = [
       133.639225
     ],
     "en": [
-      "to configure a IG RP for ipv6 just put ipv6 in front of the usual command"
+      "to configure a EIGRP for ipv6 just put ipv6 in front of the usual command"
     ],
     "ru": [
-      "чтобы настроить IG RP для ipv6, просто поставьте ipv6 перед обычной командой"
+      "чтобы настроить EIGRP для ipv6, просто поместите ipv6 перед обычной командой"
     ]
   },
   {
@@ -341,10 +341,10 @@ let objs = [
       137.529412
     ],
     "en": [
-      "ipv6 router EAG RP"
+      "ipv6 router EIGRP"
     ],
     "ru": [
-      "маршрутизатор ipv6 EAG RP"
+      "ipv6 роутер EIGRP"
     ]
   },
   {
@@ -365,10 +365,10 @@ let objs = [
       146.963203
     ],
     "en": [
-      "now as I mentioned before we don't actually activate ERG RP on the interfaces from here"
+      "now as I mentioned before we don't actually activate EIGRP on the interfaces from here"
     ],
     "ru": [
-      "теперь, как я упоминал ранее, мы фактически не активируем ERG RP на интерфейсах отсюда"
+      "теперь, как я упоминал ранее, мы фактически не активируем EIGRP на интерфейсах отсюда"
     ]
   },
   {
@@ -377,10 +377,10 @@ let objs = [
       153.623162
     ],
     "en": [
-      "however one of the requirements for the lab is to make our ones g02 interface passive"
+      "however one of the requirements for the lab is to make r1s g02 interface passive"
     ],
     "ru": [
-      "однако одно из требований к лаборатории - сделать наш интерфейс g02 пассивным."
+      "однако одно из требований к лаборатории - сделать интерфейс r1s g02 пассивным."
     ]
   },
   {
@@ -416,7 +416,7 @@ let objs = [
       "in this case however we want to advertise the network on the g02 interface into EIGRP"
     ],
     "ru": [
-      "в этом случае, однако, мы хотим анонсировать сеть на интерфейсе g02 в EIGRP."
+      "Однако в этом случае мы хотим анонсировать сеть на интерфейсе g02 в EIGRP."
     ]
   },
   {
@@ -425,10 +425,10 @@ let objs = [
       179.516599
     ],
     "en": [
-      "but want to suppress advertisements on the interface because of possible security risks of sending AI GRP advertisements out towards the internet"
+      "but want to suppress advertisements on the interface because of possible security risks of sending EIGRP advertisements out towards the internet"
     ],
     "ru": [
-      "но хотите подавить рекламу на интерфейсе из-за возможных рисков для безопасности отправки рекламных объявлений AI GRP в Интернет."
+      "но хотите подавить рекламу на интерфейсе из-за возможных рисков безопасности отправки рекламы EIGRP в Интернет"
     ]
   },
   {
@@ -461,10 +461,10 @@ let objs = [
       191.106744
     ],
     "en": [
-      "okay now let's activate a IG r p on the interfaces"
+      "okay now let's activate a EIGRP on the interfaces"
     ],
     "ru": [
-      "хорошо, теперь давайте активируем IG r p на интерфейсах"
+      "хорошо, теперь давайте активируем EIGRP на интерфейсах"
     ]
   },
   {
@@ -473,10 +473,10 @@ let objs = [
       200.188328
     ],
     "en": [
-      "interface g00 ipv6 zi g RP followed by the a.s number 100"
+      "interface g00 ipv6 EIGRP followed by the a.s number 100"
     ],
     "ru": [
-      "interface g00 ipv6 zi g RP, за которым следует номер a.s 100"
+      "interface g00 ipv6 EIGRP, за которым следует номер a.s 100"
     ]
   },
   {
@@ -497,10 +497,10 @@ let objs = [
       207.497223
     ],
     "en": [
-      "interface G 0 1 IP v6 z IG RP 100"
+      "interface G 0 1 IP v6 EIGRP 100"
     ],
     "ru": [
-      "интерфейс G 0 1 IP v6 z IG RP 100"
+      "интерфейс G 0 1 IP v6 EIGRP 100"
     ]
   },
   {
@@ -509,10 +509,10 @@ let objs = [
       212.881598
     ],
     "en": [
-      "interface G 0 to ipv6 AI g RP 100"
+      "interface G 0 2 ipv6 EIGRP 100"
     ],
     "ru": [
-      "интерфейс G 0 - ipv6 AI g RP 100"
+      "интерфейс G 0 2 ipv6 EIGRP 100"
     ]
   },
   {
@@ -521,10 +521,10 @@ let objs = [
       217.440078
     ],
     "en": [
-      "ok we've activated AI g RP on all of our ones interfaces"
+      "ok we've activated EIGRP on all of our ones interfaces"
     ],
     "ru": [
-      "хорошо, мы активировали AI g RP на всех наших интерфейсах"
+      "хорошо, мы активировали EIGRP на всех наших интерфейсах"
     ]
   },
   {
@@ -545,10 +545,10 @@ let objs = [
       225.573181
     ],
     "en": [
-      "here's the EIG RP configuration"
+      "here's the EIGRP configuration"
     ],
     "ru": [
-      "вот конфигурация EIG RP"
+      "вот конфигурация EIGRP"
     ]
   },
   {
@@ -569,10 +569,10 @@ let objs = [
       232.479514
     ],
     "en": [
-      "yes ERG RP for ipv6 has a shutdown feature"
+      "yes EIGRP for ipv6 has a shutdown feature"
     ],
     "ru": [
-      "да ERG RP для ipv6 имеет функцию выключения"
+      "да EIGRP для ipv6 имеет функцию выключения"
     ]
   },
   {
@@ -605,10 +605,10 @@ let objs = [
       244.825347
     ],
     "en": [
-      "so let's go back to a IG RP configuration mode"
+      "so let's go back to a EIGRP configuration mode"
     ],
     "ru": [
-      "так что вернемся в режим конфигурации IG RP"
+      "так что вернемся в режим конфигурации EIGRP"
     ]
   },
   {
@@ -629,10 +629,10 @@ let objs = [
       250.25916
     ],
     "en": [
-      "ipv6 router ew g RP 100"
+      "ipv6 router EIGRP 100"
     ],
     "ru": [
-      "маршрутизатор ipv6 ew g RP 100"
+      "маршрутизатор ipv6 EIGRP 100"
     ]
   },
   {
@@ -665,10 +665,10 @@ let objs = [
       257.948367
     ],
     "en": [
-      "are to next"
+      "r 2 next"
     ],
     "ru": [
-      "следующие"
+      "r 2 следующий"
     ]
   },
   {
@@ -677,10 +677,10 @@ let objs = [
       262.381429
     ],
     "en": [
-      "enable coffee tea"
+      "enable conf t"
     ],
     "ru": [
-      "включить кофе чай"
+      "включить конф т"
     ]
   },
   {
@@ -689,10 +689,10 @@ let objs = [
       267.333096
     ],
     "en": [
-      "now we don't actually have to create the EIG RP process here"
+      "now we don't actually have to create the EIGRP process here"
     ],
     "ru": [
-      "теперь нам фактически не нужно создавать здесь процесс EIG RP"
+      "теперь нам не нужно создавать здесь процесс EIGRP"
     ]
   },
   {
@@ -728,7 +728,7 @@ let objs = [
       "the router will create the eigrp process for us"
     ],
     "ru": [
-      "маршрутизатор создаст для нас процесс eigrp"
+      "роутер создаст для нас процесс eigrp"
     ]
   },
   {
@@ -749,10 +749,10 @@ let objs = [
       284.105366
     ],
     "en": [
-      "ipv6 AIG RP 100"
+      "ipv6 EIGRP 100"
     ],
     "ru": [
-      "ipv6 AIG RP 100"
+      "ipv6 EIGRP 100"
     ]
   },
   {
@@ -773,10 +773,10 @@ let objs = [
       289.851616
     ],
     "en": [
-      "IP v6 AIG RP 100"
+      "IP v6 EIGRP 100"
     ],
     "ru": [
-      "IP v6 AIG RP 100"
+      "IP v6 EIGRP 100"
     ]
   },
   {
@@ -785,10 +785,10 @@ let objs = [
       294.054011
     ],
     "en": [
-      "ok so that activates AI gr p on the interfaces"
+      "ok so that activates EIGRP on the interfaces"
     ],
     "ru": [
-      "Хорошо, так что активирует AI gr p на интерфейсах"
+      "хорошо, чтобы активировать EIGRP на интерфейсах"
     ]
   },
   {
@@ -809,10 +809,10 @@ let objs = [
       301.427136
     ],
     "en": [
-      "however we haven't gotten any messages about an adjacency with our one yet"
+      "however we haven't gotten any messages about an adjacency with r 1 yet"
     ],
     "ru": [
-      "однако мы еще не получали сообщений о смежности с нашим"
+      "однако мы еще не получали сообщений о смежности с r 1"
     ]
   },
   {
@@ -857,10 +857,10 @@ let objs = [
       314.665198
     ],
     "en": [
-      "I don't remember having to enable AIG RP for ipv6 with no shutdown"
+      "I don't remember having to enable EIGRP for ipv6 with no shutdown"
     ],
     "ru": [
-      "Я не помню, чтобы мне приходилось включать AIG RP для ipv6 без выключения"
+      "Я не помню, чтобы мне приходилось включать EIGRP для ipv6 без выключения"
     ]
   },
   {
@@ -881,10 +881,10 @@ let objs = [
       325.622155
     ],
     "en": [
-      "so for the test and real world situations just be aware that EA GRP for ipv6 has a shutdown feature"
+      "so for the test and real world situations just be aware that EIGRP for ipv6 has a shutdown feature"
     ],
     "ru": [
-      "поэтому для тестирования и реальных ситуаций просто имейте в виду, что EA GRP для ipv6 имеет функцию выключения"
+      "поэтому для тестирования и реальных ситуаций просто имейте в виду, что EIGRP для ipv6 имеет функцию выключения"
     ]
   },
   {
@@ -893,10 +893,10 @@ let objs = [
       331.279968
     ],
     "en": [
-      "ipv6 router AIG RP 100 no shutdown"
+      "ipv6 router EIGRP 100 no shutdown"
     ],
     "ru": [
-      "ipv6 роутер AIG RP 100 без выключения"
+      "маршрутизатор ipv6 EIGRP 100 без выключения"
     ]
   },
   {
@@ -905,10 +905,10 @@ let objs = [
       334.050322
     ],
     "en": [
-      "next let's go to our 3"
+      "next let's go to r 3"
     ],
     "ru": [
-      "Далее перейдем к нашим 3"
+      "дальше пойдем к r 3"
     ]
   },
   {
@@ -917,10 +917,10 @@ let objs = [
       338.592572
     ],
     "en": [
-      "enable compte"
+      "enable conf t"
     ],
     "ru": [
-      "включить compte"
+      "включить конф т"
     ]
   },
   {
@@ -929,10 +929,10 @@ let objs = [
       342.217197
     ],
     "en": [
-      "ipv6 router AIG RP 100"
+      "ipv6 router EIGRP 100"
     ],
     "ru": [
-      "ipv6 роутер AIG RP 100"
+      "маршрутизатор ipv6 EIGRP 100"
     ]
   },
   {
@@ -965,10 +965,10 @@ let objs = [
       350.299905
     ],
     "en": [
-      "ipv6 AIG RP 100"
+      "ipv6 EIGRP 100"
     ],
     "ru": [
-      "ipv6 AIG RP 100"
+      "ipv6 EIGRP 100"
     ]
   },
   {
@@ -989,10 +989,10 @@ let objs = [
       356.299697
     ],
     "en": [
-      "IP v6 g IG RP 100"
+      "IP v6 g EIGRP 100"
     ],
     "ru": [
-      "IP v6 g IG RP 100"
+      "IP v6 g EIGRP 100"
     ]
   },
   {
@@ -1013,10 +1013,10 @@ let objs = [
       361.700322
     ],
     "en": [
-      "ipv6 ERG RP 100"
+      "ipv6 EIGRP 100"
     ],
     "ru": [
-      "ipv6 ERG RP 100"
+      "ipv6 EIGRP 100"
     ]
   },
   {
@@ -1025,10 +1025,10 @@ let objs = [
       364.301592
     ],
     "en": [
-      "ok let's go on our 4"
+      "ok let's go on r 4"
     ],
     "ru": [
-      "хорошо, давай продолжим наш 4"
+      "хорошо, пойдем на 4"
     ]
   },
   {
@@ -1037,10 +1037,10 @@ let objs = [
       369.006196
     ],
     "en": [
-      "enable compte"
+      "enable conf t"
     ],
     "ru": [
-      "включить compte"
+      "включить конф т"
     ]
   },
   {
@@ -1049,10 +1049,10 @@ let objs = [
       372.604821
     ],
     "en": [
-      "ipv6 router AIG RP 100"
+      "ipv6 router EIGRP 100"
     ],
     "ru": [
-      "ipv6 роутер AIG RP 100"
+      "маршрутизатор ipv6 EIGRP 100"
     ]
   },
   {
@@ -1085,10 +1085,10 @@ let objs = [
       379.876383
     ],
     "en": [
-      "ipv6 AIG RP 100"
+      "ipv6 EIGRP 100"
     ],
     "ru": [
-      "ipv6 AIG RP 100"
+      "ipv6 EIGRP 100"
     ]
   },
   {
@@ -1109,10 +1109,10 @@ let objs = [
       386.187529
     ],
     "en": [
-      "IP v6 e IG RP 100"
+      "IP v6 EIGRP 100"
     ],
     "ru": [
-      "IP v6 и IG RP 100"
+      "IP v6 EIGRP 100"
     ]
   },
   {
@@ -1133,10 +1133,10 @@ let objs = [
       394.298217
     ],
     "en": [
-      "enable compte"
+      "enable conf t"
     ],
     "ru": [
-      "включить compte"
+      "включить конф т"
     ]
   },
   {
@@ -1145,10 +1145,10 @@ let objs = [
       397.817862
     ],
     "en": [
-      "ipv6 router AIG RP 100"
+      "ipv6 router EIGRP 100"
     ],
     "ru": [
-      "ipv6 роутер AIG RP 100"
+      "маршрутизатор ipv6 EIGRP 100"
     ]
   },
   {
@@ -1169,10 +1169,10 @@ let objs = [
       403.29855
     ],
     "en": [
-      "ipv6 AIG RP 100"
+      "ipv6 EIGRP 100"
     ],
     "ru": [
-      "ipv6 AIG RP 100"
+      "ipv6 EIGRP 100"
     ]
   },
   {
@@ -1181,10 +1181,10 @@ let objs = [
       407.717175
     ],
     "en": [
-      "ok we've configured ew g RP on all of the routers"
+      "ok we've configured EIGRP on all of the routers"
     ],
     "ru": [
-      "хорошо, мы настроили ew g RP на всех маршрутизаторах"
+      "хорошо, мы настроили EIGRP на всех маршрутизаторах"
     ]
   },
   {
@@ -1253,10 +1253,10 @@ let objs = [
       436.068883
     ],
     "en": [
-      "now ew g RP doesn't have the default information originated command that OSPF has"
+      "now EIGRP doesn't have the default information originated command that OSPF has"
     ],
     "ru": [
-      "теперь у ew g RP нет команды создания информации по умолчанию, которая есть у OSPF"
+      "теперь EIGRP не имеет команды создания информации по умолчанию, которую имеет OSPF"
     ]
   },
   {
@@ -1325,10 +1325,10 @@ let objs = [
       465.483944
     ],
     "en": [
-      "ipv6 summary address ew g RP 100"
+      "ipv6 summary address EIGRP 100"
     ],
     "ru": [
-      "итоговый адрес ipv6 ew g RP 100"
+      "итоговый адрес ipv6 EIGRP 100"
     ]
   },
   {
@@ -1337,10 +1337,10 @@ let objs = [
       472.092444
     ],
     "en": [
-      "and remember the default route for ipv6 is colon colon slash 0"
+      "and remember the default route for ipv6 is : : / 0"
     ],
     "ru": [
-      "и помните, что маршрут по умолчанию для ipv6 - двоеточие, косая черта, двоеточие, 0"
+      "и помните, что маршрут по умолчанию для ipv6:: / 0"
     ]
   },
   {
@@ -1352,7 +1352,7 @@ let objs = [
       "now let's go on g 0 1 and do the same"
     ],
     "ru": [
-      "теперь давайте продолжим g 0 1 и сделаем то же самое"
+      "теперь давайте перейдем к g 0 1 и сделаем то же самое"
     ]
   },
   {
@@ -1364,7 +1364,7 @@ let objs = [
       "interface g 0 1 IP v6 summary address"
     ],
     "ru": [
-      "интерфейс g 0 1 сводный адрес IP v6"
+      "интерфейс g 0 1 IP v6 сводный адрес"
     ]
   },
   {
@@ -1373,10 +1373,10 @@ let objs = [
       484.574278
     ],
     "en": [
-      "key ID RP 100 colon colon slash 0"
+      "key ID RP 100 :: / 0"
     ],
     "ru": [
-      "идентификатор ключа RP 100 двоеточие косая черта 0"
+      "ID ключа RP 100 :: / 0"
     ]
   },
   {
@@ -1397,10 +1397,10 @@ let objs = [
       494.086611
     ],
     "en": [
-      "i'll check on our v because if our v has the route r2 r3 and r4 a must as well"
+      "i'll check on r5 because if r5 has the route r2 r3 and r4 a must as well"
     ],
     "ru": [
-      "Я проверю наш v, потому что, если у нашего v есть маршрут r2, r3 и r4, также необходимо"
+      "Я проверю на r5, потому что, если у r5 есть маршрут r2, r3 и r4 также должны"
     ]
   },
   {
@@ -1409,10 +1409,10 @@ let objs = [
       499.180069
     ],
     "en": [
-      "do show ipv6 red"
+      "do show ipv6 route"
     ],
     "ru": [
-      "показывать ipv6 красный"
+      "показывать маршрут ipv6"
     ]
   },
   {
@@ -1421,10 +1421,10 @@ let objs = [
       501.613652
     ],
     "en": [
-      "there it is right at the top"
+      "there it is route at the top"
     ],
     "ru": [
-      "вот оно прямо наверху"
+      "вот и маршрут вверху"
     ]
   },
   {
@@ -1433,10 +1433,10 @@ let objs = [
       506.828214
     ],
     "en": [
-      "ok in this slab we configured AI GRP for ipv6"
+      "ok in this slab we configured EIGRP for ipv6"
     ],
     "ru": [
-      "хорошо, в этой плите мы настроили AI GRP для ipv6"
+      "хорошо, на этой плите мы настроили EIGRP для ipv6"
     ]
   },
   {
@@ -1508,7 +1508,7 @@ let objs = [
       "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, подобные этой, которые будут выпускаться еженедельно"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {
@@ -1532,7 +1532,7 @@ let objs = [
       "if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description"
     ],
     "ru": [
-      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфириумом по адресам в описании"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах и эфириуме по адресам в описании"
     ]
   },
   {

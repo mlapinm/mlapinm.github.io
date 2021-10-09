@@ -2,25 +2,13 @@ let objs = [
   {
     "time": [
       0.0,
-      4.58995
-    ],
-    "en": [
-      "welcome to this free CCNA packet tracer practice lab"
-    ],
-    "ru": [
-      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
-    ]
-  },
-  {
-    "time": [
-      4.58995,
       7.585084
     ],
     "en": [
-      "you can download the lab file from the link in the description"
+      "welcome to this free CCNA packet tracer practice lab 4.58995 you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "добро пожаловать в эту бесплатную лабораторную практику CCNA Packet Tracer 4.58995, вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -50,25 +38,13 @@ let objs = [
   {
     "time": [
       18.473101,
-      28.24391
-    ],
-    "en": [
-      "it is used to share information about other directly connected cisco equipment such as the operating system version and the interfaces by which they are connected"
-    ],
-    "ru": [
-      "он используется для обмена информацией о другом напрямую подключенном оборудовании cisco, например о версии операционной системы и интерфейсах, с помощью которых они подключены."
-    ]
-  },
-  {
-    "time": [
-      28.24391,
       35.034259
     ],
     "en": [
-      "there is also a vendor-neutral protocol called lldp or link layer discovery protocol"
+      "it is used to share information about other directly connected cisco equipment such as the operating system version and the interfaces by which they are connected 28.24391 there is also a vendor-neutral protocol called lldp or link layer discovery protocol"
     ],
     "ru": [
-      "существует также независимый от производителя протокол, называемый lldp или протокол обнаружения канального уровня."
+      "он используется для обмена информацией о другом напрямую подключенном оборудовании cisco, например о версии операционной системы и интерфейсах, с помощью которых они подключены. 28.24391 также существует независимый от поставщика протокол, называемый lldp или протокол обнаружения канального уровня."
     ]
   },
   {
@@ -92,7 +68,7 @@ let objs = [
       "try to complete the lab yourself first then continue watching this video if you have trouble or watch it after to check your solution"
     ],
     "ru": [
-      "попробуйте сначала выполнить лабораторную работу самостоятельно, а затем продолжайте смотреть это видео, если у вас возникнут проблемы, или просмотрите его после, чтобы проверить свое решение."
+      "попробуйте сначала пройти лабораторную работу самостоятельно, а затем продолжайте смотреть это видео, если у вас возникнут проблемы, или просмотрите его после, чтобы проверить свое решение."
     ]
   },
   {
@@ -230,25 +206,13 @@ let objs = [
   {
     "time": [
       105.441897,
-      107.75254
-    ],
-    "en": [
-      "you can see that that means router"
-    ],
-    "ru": [
-      "вы можете видеть, что это означает маршрутизатор"
-    ]
-  },
-  {
-    "time": [
-      107.75254,
       111.449542
     ],
     "en": [
-      "also check the port ID"
+      "you can see that that means router 107.75254 also check the port ID"
     ],
     "ru": [
-      "также проверьте идентификатор порта"
+      "вы можете видеть, что это означает, что маршрутизатор 107.75254 также проверяет идентификатор порта."
     ]
   },
   {
@@ -290,25 +254,13 @@ let objs = [
   {
     "time": [
       126.749828,
-      131.6662
-    ],
-    "en": [
-      "let's hop on r1 now"
-    ],
-    "ru": [
-      "давай сядем на r1 сейчас"
-    ]
-  },
-  {
-    "time": [
-      131.6662,
       143.569504
     ],
     "en": [
-      "enable show CDP neighbors are one has two neighbors switch 1 and r2"
+      "let's hop on r1 now 131.6662 enable show CDP neighbors are one has two neighbors switch 1 and r2"
     ],
     "ru": [
-      "включить показать соседей CDP, если у одного есть два соседа switch 1 и r2"
+      "давайте перейдем на r1 сейчас 131.6662 включить показать соседей CDP, есть ли у одного два соседа switch 1 и r2"
     ]
   },
   {
@@ -344,7 +296,7 @@ let objs = [
       "and it's connected to our two's serial to zero interface as well"
     ],
     "ru": [
-      "и он также подключен к последовательному интерфейсу на ноль наших двоих."
+      "и он также подключен к последовательному интерфейсу наших двоих."
     ]
   },
   {
@@ -362,25 +314,13 @@ let objs = [
   {
     "time": [
       161.775451,
-      168.08063
-    ],
-    "en": [
-      "enable show CDP neighbors"
-    ],
-    "ru": [
-      "включить показывать соседей CDP"
-    ]
-  },
-  {
-    "time": [
-      168.08063,
       175.883445
     ],
     "en": [
-      "as we already saw in r1 the two routers are connected by their serial to zero interfaces"
+      "enable show CDP neighbors 168.08063 as we already saw in r1 the two routers are connected by their serial to zero interfaces"
     ],
     "ru": [
-      "как мы уже видели в r1, два маршрутизатора соединены своими последовательными и нулевыми интерфейсами."
+      "включить показать соседей CDP 168.08063, как мы уже видели в r1, два маршрутизатора соединены своими последовательными интерфейсами с нулевым"
     ]
   },
   {
@@ -524,7 +464,7 @@ let objs = [
       "remember that the routers are connected by their serial to zero interfaces"
     ],
     "ru": [
-      "помните, что маршрутизаторы подключены через свои последовательные к нулевым интерфейсам"
+      "помните, что маршрутизаторы подключены через последовательные к нулевым интерфейсам."
     ]
   },
   {
@@ -554,49 +494,25 @@ let objs = [
   {
     "time": [
       257.775156,
-      267.36257
-    ],
-    "en": [
-      "conf t interface s20 clock rate 64,000"
-    ],
-    "ru": [
-      "conf t interface s20 тактовая частота 64000"
-    ]
-  },
-  {
-    "time": [
-      267.36257,
       269.153449
     ],
     "en": [
-      "that's it"
+      "conf t interface s20 clock rate 64,000 267.36257 that's it"
     ],
     "ru": [
-      "это оно"
+      "conf t interface s20 тактовая частота 64000 267.36257 вот и все"
     ]
   },
   {
     "time": [
       269.153449,
-      277.03029
-    ],
-    "en": [
-      "step 3 asks us what the default CDP send and hold timers are and to confirm it with a show command"
-    ],
-    "ru": [
-      "Шаг 3 спрашивает нас, какие таймеры отправки и удержания CDP по умолчанию, и подтвердить это с помощью команды show"
-    ]
-  },
-  {
-    "time": [
-      277.03029,
       280.293589
     ],
     "en": [
-      "you may have learned these timers in your studies"
+      "step 3 asks us what the default CDP send and hold timers are and to confirm it with a show command 277.03029 you may have learned these timers in your studies"
     ],
     "ru": [
-      "возможно, вы узнали об этих таймерах во время учебы"
+      "Шаг 3 спрашивает нас, какие таймеры отправки и удержания CDP по умолчанию, и чтобы подтвердить это с помощью команды show 277.03029, вы, возможно, узнали эти таймеры в своих исследованиях."
     ]
   },
   {
@@ -614,25 +530,13 @@ let objs = [
   {
     "time": [
       282.535432,
-      287.54017
-    ],
-    "en": [
-      "I'll type end to go back to privileged exec mode here on r1"
-    ],
-    "ru": [
-      "Я наберу end, чтобы вернуться в привилегированный режим exec здесь, на r1"
-    ]
-  },
-  {
-    "time": [
-      287.54017,
       291.558112
     ],
     "en": [
-      "now let's use the command show CDP interface"
+      "I'll type end to go back to privileged exec mode here on r1 287.54017 now let's use the command show CDP interface"
     ],
     "ru": [
-      "теперь воспользуемся командой show CDP interface"
+      "Я наберу end, чтобы вернуться в привилегированный режим exec здесь, на r1 287.54017, теперь давайте воспользуемся командой show CDP interface"
     ]
   },
   {
@@ -710,25 +614,13 @@ let objs = [
   {
     "time": [
       325.490652,
-      330.01255
-    ],
-    "en": [
-      "it will assume that whatever neighbor that was there no longer is"
-    ],
-    "ru": [
-      "он будет предполагать, что того соседа, который был там, больше нет"
-    ]
-  },
-  {
-    "time": [
-      330.01255,
       331.705954
     ],
     "en": [
-      "that's all for step 3"
+      "it will assume that whatever neighbor that was there no longer is 330.01255 that's all for step 3"
     ],
     "ru": [
-      "это все для шага 3"
+      "он будет предполагать, что любого соседа, которого больше нет, 330.01255, и все для шага 3"
     ]
   },
   {
@@ -758,25 +650,13 @@ let objs = [
   {
     "time": [
       343.170126,
-      350.87197
-    ],
-    "en": [
-      "conf t command to enable CDP is CDP run although it's enabled by default"
-    ],
-    "ru": [
-      "conf t, чтобы включить CDP, работает CDP, хотя по умолчанию она включена."
-    ]
-  },
-  {
-    "time": [
-      350.87197,
       353.280684
     ],
     "en": [
-      "we want to disable it"
+      "conf t command to enable CDP is CDP run although it's enabled by default 350.87197 we want to disable it"
     ],
     "ru": [
-      "мы хотим отключить это"
+      "conf t, чтобы включить CDP, запущен CDP, хотя он включен по умолчанию 350.87197, мы хотим отключить его"
     ]
   },
   {
@@ -1010,37 +890,13 @@ let objs = [
   {
     "time": [
       445.173976,
-      447.63276
-    ],
-    "en": [
-      "we have to use interface configuration mode for this"
-    ],
-    "ru": [
-      "мы должны использовать для этого режим настройки интерфейса"
-    ]
-  },
-  {
-    "time": [
-      447.63276,
-      451.93034
-    ],
-    "en": [
-      "since we'll be using the same command on each interface"
-    ],
-    "ru": [
-      "поскольку мы будем использовать одну и ту же команду на каждом интерфейсе"
-    ]
-  },
-  {
-    "time": [
-      451.93034,
       454.426694
     ],
     "en": [
-      "let's configure both at the same time"
+      "we have to use interface configuration mode for this 447.63276 since we'll be using the same command on each interface 451.93034 let's configure both at the same time"
     ],
     "ru": [
-      "давайте настроим оба одновременно"
+      "мы должны использовать режим конфигурации интерфейса для этого 447.63276, так как мы будем использовать одну и ту же команду на каждом интерфейсе 451.93034 давайте настроим оба одновременно"
     ]
   },
   {
@@ -1094,25 +950,13 @@ let objs = [
   {
     "time": [
       476.659967,
-      481.83431
-    ],
-    "en": [
-      "this is very convenient when you are doing the same configurations on multiple interfaces"
-    ],
-    "ru": [
-      "это очень удобно, когда вы выполняете одни и те же конфигурации на нескольких интерфейсах."
-    ]
-  },
-  {
-    "time": [
-      481.83431,
       487.877268
     ],
     "en": [
-      "now CDP and naval is used to enable CDP on an interface"
+      "this is very convenient when you are doing the same configurations on multiple interfaces 481.83431 now CDP and naval is used to enable CDP on an interface"
     ],
     "ru": [
-      "теперь CDP и naval используются для включения CDP на интерфейсе"
+      "это очень удобно, когда вы выполняете одни и те же конфигурации на нескольких интерфейсах. 481.83431 Теперь CDP и naval используются для включения CDP на интерфейсе."
     ]
   },
   {

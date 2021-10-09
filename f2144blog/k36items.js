@@ -104,7 +104,7 @@ let objs = [
       "let's get started the first step is to set up a DHCP pool on r one like we did in the previous lab"
     ],
     "ru": [
-      "давайте начнем, первый шаг - настроить пул DHCP на r one, как мы делали в предыдущей лабораторной работе."
+      "давайте начнем, первый шаг - настроить пул DHCP на r, как мы это делали в предыдущей лабораторной работе."
     ]
   },
   {
@@ -152,7 +152,7 @@ let objs = [
       "IP dhcp pool one pool network 192.168.1.0 255.255.255.0 default router 192.168.1.1"
     ],
     "ru": [
-      "IP dhcp pool one pool network 192.168.1.0 255.255.255.0 маршрутизатор по умолчанию 192.168.1.1"
+      "IP пул DHCP один пул сеть 192.168.1.0 255.255.255.0 маршрутизатор по умолчанию 192.168.1.1"
     ]
   },
   {
@@ -500,7 +500,7 @@ let objs = [
       "since the ping by IP address fails there's no need to try to ping by name"
     ],
     "ru": [
-      "так как пинг по IP-адресу не выполняется, нет необходимости пытаться пинговать по имени"
+      "так как пинг по IP-адресу не удается, нет необходимости пытаться пинговать по имени"
     ]
   },
   {
@@ -668,7 +668,7 @@ let objs = [
       "ping server one it works again and actually you can see the message here translating server 1 domain server 20.0.0.100 and then down here the IP address of server 1 10.0.0.101"
     ],
     "ru": [
-      "ping server one, он снова работает, и на самом деле вы можете увидеть здесь сообщение, переводящее сервер 1 домена, сервер 20.0.0.100, а затем здесь IP-адрес сервера 1 10.0.0.101"
+      "ping server one, он снова работает, и на самом деле вы можете увидеть здесь сообщение, которое переводит сервер 1 домена, сервер 20.0.0.100, а затем здесь IP-адрес сервера 1 10.0.0.101"
     ]
   },
   {
@@ -716,7 +716,7 @@ let objs = [
       "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, подобные этой, которые будут выпускаться еженедельно"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {
@@ -740,7 +740,7 @@ let objs = [
       "if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description"
     ],
     "ru": [
-      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфириумом по адресам в описании"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах и эфириуме по адресам в описании"
     ]
   },
   {

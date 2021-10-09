@@ -259,7 +259,7 @@ via the service provider network
 522.435688
 here on r2 first
 524.968613
-conf t IP route 0.0.0.0 0.0.0.0 
+conf t IP route 0.0.0.0 0.0.0.0
 533.249724
 and the next hop is 201
 537.458204

@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -50,25 +50,13 @@ let objs = [
   {
     "time": [
       23.576648,
-      29.89855
-    ],
-    "en": [
-      "VLANs or virtual lands are used to isolate computers at layer 2"
-    ],
-    "ru": [
-      "VLAN или виртуальные земли используются для изоляции компьютеров на уровне 2."
-    ]
-  },
-  {
-    "time": [
-      29.89855,
       36.698614
     ],
     "en": [
-      "if you look at the network diagram you will notice that these 4 computers are in the same layer 3 network"
+      "VLANs or virtual lands are used to isolate computers at layer 2 29.89855 if you look at the network diagram you will notice that these 4 computers are in the same layer 3 network"
     ],
     "ru": [
-      "если вы посмотрите на схему сети, вы заметите, что эти 4 компьютера находятся в одной сети уровня 3"
+      "VLAN или виртуальные земли используются для изоляции компьютеров на уровне 2 29.89855, если вы посмотрите на схему сети, вы заметите, что эти 4 компьютера находятся в одной сети уровня 3."
     ]
   },
   {
@@ -134,25 +122,13 @@ let objs = [
   {
     "time": [
       61.258982,
-      63.50488
-    ],
-    "en": [
-      "let's do this on pc one"
-    ],
-    "ru": [
-      "давай сделаем это на первом ПК"
-    ]
-  },
-  {
-    "time": [
-      63.50488,
       68.315315
     ],
     "en": [
-      "I'll ping PC to first"
+      "let's do this on pc one 63.50488 I'll ping PC to first"
     ],
     "ru": [
-      "Я пингую компьютер сначала"
+      "давайте сделаем это на ПК 63.50488 Я пингую сначала ПК"
     ]
   },
   {
@@ -194,25 +170,13 @@ let objs = [
   {
     "time": [
       79.868242,
-      81.92165
-    ],
-    "en": [
-      "next PC four"
-    ],
-    "ru": [
-      "следующий ПК четыре"
-    ]
-  },
-  {
-    "time": [
-      81.92165,
       84.805856
     ],
     "en": [
-      "ping 10.0.0.4"
+      "next PC four 81.92165 ping 10.0.0.4"
     ],
     "ru": [
-      "пинг 10.0.0.4"
+      "следующий ПК четыре 81.92165 пинг 10.0.0.4"
     ]
   },
   {
@@ -254,25 +218,13 @@ let objs = [
   {
     "time": [
       98.563526,
-      102.02136
-    ],
-    "en": [
-      "and PC to and PC four to VLAN two"
-    ],
-    "ru": [
-      "и ПК к и ПК четыре к VLAN два"
-    ]
-  },
-  {
-    "time": [
-      102.02136,
       107.466508
     ],
     "en": [
-      "this is done by configuring the switch interfaces they are connected too"
+      "and PC to and PC four to VLAN two 102.02136 this is done by configuring the switch interfaces they are connected too"
     ],
     "ru": [
-      "это делается путем настройки интерфейсов коммутатора, к которым они тоже подключены"
+      "и ПК к и ПК четыре к VLAN два 102.02136 это делается путем настройки интерфейсов коммутатора, к которым они также подключены"
     ]
   },
   {
@@ -314,25 +266,13 @@ let objs = [
   {
     "time": [
       120.950041,
-      127.79925
-    ],
-    "en": [
-      "PC one is connected to Fast Ethernet 0 2 so interface f0 2"
-    ],
-    "ru": [
-      "Первый ПК подключен к Fast Ethernet 0 2, поэтому интерфейс f0 2"
-    ]
-  },
-  {
-    "time": [
-      127.79925,
       133.489507
     ],
     "en": [
-      "now I will enter the command switch port mode access"
+      "PC one is connected to Fast Ethernet 0 2 so interface f0 2 127.79925 now I will enter the command switch port mode access"
     ],
     "ru": [
-      "теперь я введу команду переключения режима порта доступа"
+      "Первый ПК подключен к Fast Ethernet 0 2, поэтому интерфейс f0 2 127.79925 теперь я перейду в режим доступа к порту переключения команд."
     ]
   },
   {
@@ -350,25 +290,13 @@ let objs = [
   {
     "time": [
       139.613778,
-      146.09588
-    ],
-    "en": [
-      "switch ports are in access mode by default but I like to explicitly configure this"
-    ],
-    "ru": [
-      "порты коммутатора по умолчанию находятся в режиме доступа, но мне нравится явно настраивать это"
-    ]
-  },
-  {
-    "time": [
-      146.09588,
       149.843853
     ],
     "en": [
-      "next we will assign it to VLAN 1"
+      "switch ports are in access mode by default but I like to explicitly configure this 146.09588 next we will assign it to VLAN 1"
     ],
     "ru": [
-      "далее мы назначим его VLAN 1"
+      "Порты коммутатора по умолчанию находятся в режиме доступа, но мне нравится явно настраивать этот 146.09588, а затем мы назначим его VLAN 1"
     ]
   },
   {
@@ -398,25 +326,13 @@ let objs = [
   {
     "time": [
       162.657601,
-      165.73751
-    ],
-    "en": [
-      "switch port mode access"
-    ],
-    "ru": [
-      "переключатель режима порта доступа"
-    ]
-  },
-  {
-    "time": [
-      165.73751,
       168.177257
     ],
     "en": [
-      "switch port access VLAN 2"
+      "switch port mode access 165.73751 switch port access VLAN 2"
     ],
     "ru": [
-      "порт коммутатора доступа VLAN 2"
+      "доступ в режиме порта коммутатора 165.73751 доступ к порту коммутатора VLAN 2"
     ]
   },
   {
@@ -494,25 +410,13 @@ let objs = [
   {
     "time": [
       192.903867,
-      198.76762
-    ],
-    "en": [
-      "but why don't we see our switch port access via an one command on Fast Ethernet 0 2"
-    ],
-    "ru": [
-      "но почему мы не видим доступ к порту нашего коммутатора через одну команду в Fast Ethernet 0 2"
-    ]
-  },
-  {
-    "time": [
-      198.76762,
       202.708909
     ],
     "en": [
-      "this is because of what's called the native VLAN"
+      "but why don't we see our switch port access via an one command on Fast Ethernet 0 2 198.76762 this is because of what's called the native VLAN"
     ],
     "ru": [
-      "это из-за того, что называется собственной VLAN"
+      "но почему мы не видим доступ к порту нашего коммутатора через одну команду в Fast Ethernet 0 2 198.76762, это из-за того, что называется собственной VLAN"
     ]
   },
   {
@@ -578,25 +482,13 @@ let objs = [
   {
     "time": [
       230.697352,
-      235.06166
-    ],
-    "en": [
-      "if you try to explicitly configure an interface as VLAN one"
-    ],
-    "ru": [
-      "если вы попытаетесь явно настроить интерфейс как VLAN one"
-    ]
-  },
-  {
-    "time": [
-      235.06166,
       238.956898
     ],
     "en": [
-      "it won't even show up in the configuration as you can see here"
+      "if you try to explicitly configure an interface as VLAN one 235.06166 it won't even show up in the configuration as you can see here"
     ],
     "ru": [
-      "он даже не будет отображаться в конфигурации, как вы можете видеть здесь"
+      "если вы попытаетесь явно настроить интерфейс как VLAN one 235.06166, он даже не будет отображаться в конфигурации, как вы можете видеть здесь"
     ]
   },
   {
@@ -608,7 +500,7 @@ let objs = [
       "note that the native VLAN can be changed and for security purposes it often is"
     ],
     "ru": [
-      "обратите внимание, что собственная VLAN может быть изменена и в целях безопасности часто"
+      "обратите внимание, что собственная VLAN может быть изменена, и в целях безопасности она часто"
     ]
   },
   {
@@ -638,25 +530,13 @@ let objs = [
   {
     "time": [
       251.615847,
-      257.82405
-    ],
-    "en": [
-      "enable conf T interface f02"
-    ],
-    "ru": [
-      "включить conf T interface f02"
-    ]
-  },
-  {
-    "time": [
-      257.82405,
       261.626809
     ],
     "en": [
-      "let's do the exact same thing as with pc1 & pc2"
+      "enable conf T interface f02 257.82405 let's do the exact same thing as with pc1 & pc2"
     ],
     "ru": [
-      "давайте сделаем то же самое, что и с pc1 и pc2"
+      "enable conf T interface f02 257.82405 давайте сделаем то же самое, что и с pc1 и pc2"
     ]
   },
   {
@@ -704,7 +584,7 @@ let objs = [
       "switch port mode access switch port access VLAN two"
     ],
     "ru": [
-      "режим порта коммутатора доступ к порту коммутатора VLAN два"
+      "режим порта коммутатора доступ к порту коммутатора доступ VLAN два"
     ]
   },
   {
@@ -770,25 +650,13 @@ let objs = [
   {
     "time": [
       299.253312,
-      303.43147
-    ],
-    "en": [
-      "so we're going to attempt to ping between computers in the same VLAN"
-    ],
-    "ru": [
-      "поэтому мы собираемся попытаться выполнить эхо-запрос между компьютерами в одной VLAN."
-    ]
-  },
-  {
-    "time": [
-      303.43147,
       306.477165
     ],
     "en": [
-      "let's hop on PC one first"
+      "so we're going to attempt to ping between computers in the same VLAN 303.43147 let's hop on PC one first"
     ],
     "ru": [
-      "давай сначала займемся ПК"
+      "поэтому мы собираемся попытаться выполнить эхо-запрос между компьютерами в одной и той же VLAN. 303.43147, давайте сначала подключимся к ПК."
     ]
   },
   {
@@ -812,7 +680,7 @@ let objs = [
       "next let's hop on PC2"
     ],
     "ru": [
-      "дальше давайте прыгнем на ПК2"
+      "Далее, давайте прыгнем на ПК2"
     ]
   },
   {
@@ -884,7 +752,7 @@ let objs = [
       "PC 2 and PC 4 are in the same VLAN as well"
     ],
     "ru": [
-      "ПК 2 и ПК 4 также находятся в одной VLAN."
+      "ПК 2 и ПК 4 также находятся в одной VLAN"
     ]
   },
   {
@@ -1184,7 +1052,7 @@ let objs = [
       "again the pings failed"
     ],
     "ru": [
-      "снова пинг не удался"
+      "снова пинги не удались"
     ]
   },
   {
@@ -1250,25 +1118,13 @@ let objs = [
   {
     "time": [
       473.227537,
-      478.25822
-    ],
-    "en": [
-      "as you can see we have successfully isolated the computers between VLANs"
-    ],
-    "ru": [
-      "как видите, мы успешно изолировали компьютеры между VLAN"
-    ]
-  },
-  {
-    "time": [
-      478.25822,
       481.223136
     ],
     "en": [
-      "even though they're on the same layer 3 Network"
+      "as you can see we have successfully isolated the computers between VLANs 478.25822 even though they're on the same layer 3 Network"
     ],
     "ru": [
-      "даже если они находятся в одной сети уровня 3"
+      "как видите, мы успешно изолировали компьютеры между VLAN 478.25822, даже если они находятся в одной сети уровня 3."
     ]
   },
   {
@@ -1298,25 +1154,13 @@ let objs = [
   {
     "time": [
       491.074798,
-      495.89011
-    ],
-    "en": [
-      "please subscribe for future labs like this which will be released weekly"
-    ],
-    "ru": [
-      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
-    ]
-  },
-  {
-    "time": [
-      495.89011,
       501.069858
     ],
     "en": [
-      "if you have requests for any specific labs let me know in the comment section"
+      "please subscribe for future labs like this which will be released weekly 495.89011 if you have requests for any specific labs let me know in the comment section"
     ],
     "ru": [
-      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
+      "пожалуйста, подпишитесь на будущие лаборатории, подобные этой, которые будут выпускаться еженедельно 495.89011, если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
     ]
   },
   {

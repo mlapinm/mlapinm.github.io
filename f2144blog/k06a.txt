@@ -1,21 +1,13 @@
 0.0
-welcome to this free CCNA packet tracer practice lab
-4.55934
-you can download the lab file from the link in the description
+welcome to this free CCNA packet tracer practice lab 4.55934 you can download the lab file from the link in the description
 8.883745
-in this lab we will be working with two switches switch 1 and switch two
-15.59975
-and three pcs pc-1 pc2 and pc 3
+in this lab we will be working with two switches switch 1 and switch two 15.59975 and three pcs pc-1 pc2 and pc 3
 20.795037
 you may notice that the icons of these switches are different than in the previous lab
 26.536391
 these are called multi-layer switches because they can operate at both layer 2 and layer 3 of the OSI model
 34.089201
-but we won't actually be using their multi-layer capabilities in this lab
-38.46917
-I selected this switch model for another reason which will differentiate this lab from the previous ones slightly in terms of configuration
-46.90673
-however the basic tasks of the lab are the same
+but we won't actually be using their multi-layer capabilities in this lab 38.46917 I selected this switch model for another reason which will differentiate this lab from the previous ones slightly in terms of configuration 46.90673 however the basic tasks of the lab are the same
 50.847989
 we will use VLANs to separate these pcs at layer 2 even though they are in the same layer 3 subnet
 58.485622
@@ -27,9 +19,7 @@ these pings should all succeed
 77.018595
 let's just ping from pc1
 80.750219
-first I'll ping PC two
-84.40899
-ping 10.0.0.2
+first I'll ping PC two 84.40899 ping 10.0.0.2
 88.067075
 the ping works
 90.140269
@@ -39,9 +29,7 @@ ping 10.0.0.3
 95.850549
 it works as well
 98.711574
-step two is to assign PC to and PC three to VLAN two
-106.87117
-again this is done by configuring the switch interfaces
+step two is to assign PC to and PC three to VLAN two 106.87117 again this is done by configuring the switch interfaces
 110.251923
 let's do switch one first
 113.105264
@@ -61,17 +49,11 @@ interface F 0 2 switch port mode access switch port access VLAN 2
 148.473154
 ok step 2 is complete
 151.017034
-step three is to create a trunk connection between switch 1 and switch 2
-159.81111
-remember that by default switch ports are access ports in the native VLAN
-165.28844
-VLAN 1 in order for these switches to carry traffic from VLAN 2 as well
+step three is to create a trunk connection between switch 1 and switch 2 159.81111 remember that by default switch ports are access ports in the native VLAN 165.28844 VLAN 1 in order for these switches to carry traffic from VLAN 2 as well
 171.072763
 so that PC 2 and PC 3 can communicate with each other
 174.728609
-we need to create a trunk
-176.56515
-let's do switch 1 first
+we need to create a trunk 176.56515 let's do switch 1 first
 178.840799
 interface f0 1
 182.544391
@@ -83,9 +65,7 @@ command rejected an interface whose trunk encapsulation is auto cannot be config
 194.225705
 this didn't happen last lab
 196.736821
-and actually this is why I chose this switch model
-199.70376
-when you make a trunk link packets are encapsulated to label them as part of a particular VLAN
+and actually this is why I chose this switch model 199.70376 when you make a trunk link packets are encapsulated to label them as part of a particular VLAN
 206.496652
 on the switches in the previous lab only one type of encapsulation is available
 211.483395
@@ -105,15 +85,9 @@ and lets configure this interface to use dot1q
 237.650697
 since we need to configure the encapsulation type to create a trunk
 241.416636
-we do that with this command
-244.17984
-switch port trunk encapsulation dot1q
-249.6192
-now we can make the trunk link
+we do that with this command 244.17984 switch port trunk encapsulation dot1q 249.6192 now we can make the trunk link
 252.557067
-switch port mode trunk
-254.98895
-now let's do the same commands on switch2
+switch port mode trunk 254.98895 now let's do the same commands on switch2
 258.766149
 interface f01 switch port trunk encapsulation dot1q
 267.555151
@@ -149,9 +123,7 @@ now let's just try a ping between PC 2 and PC three
 321.746979
 I'll go on PC 2
 324.311338
-ping 10.0.0.3
-329.38028
-the ping works as expected
+ping 10.0.0.3 329.38028 the ping works as expected
 331.747561
 that's all for this lab
 333.679999

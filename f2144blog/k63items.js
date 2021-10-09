@@ -317,10 +317,10 @@ let objs = [
       117.619167
     ],
     "en": [
-      "and chap authentication between r2 and SPR -"
+      "and chap authentication between r2 and SPR 2"
     ],
     "ru": [
-      "и аутентификация главы между r2 и SPR -"
+      "и аутентификация главы между r2 и SPR 2"
     ]
   },
   {
@@ -341,10 +341,10 @@ let objs = [
       122.728577
     ],
     "en": [
-      "compte"
+      "conf t"
     ],
     "ru": [
-      "compte"
+      "конф т"
     ]
   },
   {
@@ -464,7 +464,7 @@ let objs = [
       "that is followed by PPP multi-link group one"
     ],
     "ru": [
-      "за которым следует PPP multi-link group one"
+      "за которым следует группа PPP multi-link one"
     ]
   },
   {
@@ -605,10 +605,10 @@ let objs = [
       220.124629
     ],
     "en": [
-      "IP address 100 0 to"
+      "IP address 100.0.0.2"
     ],
     "ru": [
-      "IP-адрес 100 от 0 до"
+      "IP-адрес 100.0.0.2"
     ]
   },
   {
@@ -680,7 +680,7 @@ let objs = [
       "and PPP multi-link configuration"
     ],
     "ru": [
-      "и многосвязная конфигурация PPP"
+      "и многоканальная конфигурация PPP"
     ]
   },
   {
@@ -701,10 +701,10 @@ let objs = [
       257.353699
     ],
     "en": [
-      "interface s1 zero"
+      "interface s1 0"
     ],
     "ru": [
-      "интерфейс s1 ноль"
+      "интерфейс s1 0"
     ]
   },
   {
@@ -716,7 +716,7 @@ let objs = [
       "there are just three commands I need here"
     ],
     "ru": [
-      "мне нужны всего три команды"
+      "здесь мне нужны всего три команды"
     ]
   },
   {
@@ -752,7 +752,7 @@ let objs = [
       "next tell it had joined the multi link group we created"
     ],
     "ru": [
-      "Затем скажите, что он присоединился к созданной нами группе с несколькими ссылками"
+      "Затем скажите, что он присоединился к созданной нами многосвязной группе"
     ]
   },
   {
@@ -761,10 +761,10 @@ let objs = [
       277.918551
     ],
     "en": [
-      "PPP multi-link group one"
+      "PPP multi-link group 1"
     ],
     "ru": [
-      "PPP multi-link group one"
+      "Многоканальная группа PPP 1"
     ]
   },
   {
@@ -797,10 +797,10 @@ let objs = [
       290.375966
     ],
     "en": [
-      "okay now I'll do the same on s1 one"
+      "okay now I'll do the same on s1 1"
     ],
     "ru": [
-      "хорошо, теперь я сделаю то же самое на s1 one"
+      "хорошо, теперь я сделаю то же самое на s1 1"
     ]
   },
   {
@@ -908,7 +908,7 @@ let objs = [
       "notice our two physical interfaces as well as the multi link interface all with the same peer address of 101"
     ],
     "ru": [
-      "обратите внимание на наши два физических интерфейса, а также на многоканальный интерфейс с одним и тем же адресом равноправного узла 101."
+      "обратите внимание на два наших физических интерфейса, а также на многоканальный интерфейс с одним и тем же адресом равноправного узла 101."
     ]
   },
   {
@@ -968,7 +968,7 @@ let objs = [
       "there's the remote user name of packet again"
     ],
     "ru": [
-      "снова имя удаленного пользователя пакета"
+      "снова есть имя удаленного пользователя пакета"
     ]
   },
   {
@@ -1208,7 +1208,7 @@ let objs = [
       "and finally the IP address"
     ],
     "ru": [
-      "и, наконец, IP-адрес"
+      "и наконец IP-адрес"
     ]
   },
   {
@@ -1217,10 +1217,10 @@ let objs = [
       420.270113
     ],
     "en": [
-      "IP address 200 0 to 255 255 dot 255 dot 255"
+      "IP address 200.0.0.2 255.255.255.252"
     ],
     "ru": [
-      "IP-адрес 200 от 0 до 255 255 точек 255 точек 255"
+      "IP-адрес 200.0.0.2 255.255.255.252"
     ]
   },
   {
@@ -1433,10 +1433,10 @@ let objs = [
       485.33528
     ],
     "en": [
-      "and that peers name is spr to"
+      "and that peers name is spr 2"
     ],
     "ru": [
-      "и имя этого партнера - spr to"
+      "и имя этого сверстника - spr 2"
     ]
   },
   {
@@ -1505,10 +1505,10 @@ let objs = [
       506.327955
     ],
     "en": [
-      "let's try to ping SPR to"
+      "let's try to ping SPR 2"
     ],
     "ru": [
-      "давайте попробуем пинговать SPR на"
+      "попробуем пинговать SPR 2"
     ]
   },
   {
@@ -1589,10 +1589,10 @@ let objs = [
       533.249724
     ],
     "en": [
-      "compte IP route oh-oh-oh-oh-oh-oh-oh-oh-oh"
+      "conf t IP route 0.0.0.0 0.0.0.0"
     ],
     "ru": [
-      "Compte IP route ой-ой-ой-ой-ой-ой-ой-ой-ой"
+      "conf t IP-маршрут 0.0.0.0 0.0.0.0"
     ]
   },
   {
@@ -1625,10 +1625,10 @@ let objs = [
       548.449701
     ],
     "en": [
-      "there's our default route 200 g o / o"
+      "there's our default route to 0.0.0.0 /0"
     ],
     "ru": [
-      "есть наш маршрут по умолчанию 200 г о / о"
+      "есть наш маршрут по умолчанию к 0.0.0.0 / 0"
     ]
   },
   {
@@ -1637,10 +1637,10 @@ let objs = [
       551.576776
     ],
     "en": [
-      "next let's configure it on our one"
+      "next let's configure it on r 1"
     ],
     "ru": [
-      "далее давайте настроим его на нашем"
+      "Далее давайте настроим его на r 1"
     ]
   },
   {
@@ -1649,10 +1649,10 @@ let objs = [
       561.147048
     ],
     "en": [
-      "coughed e IP route oh-oh-oh-oh-oh-oh-oh-oh-oh"
+      "conf t IP route 0.0.0.0 0.0.0.0"
     ],
     "ru": [
-      "кашлянул е IP маршрут ой-ой-ой-ой-ой-ой-ой-ой-ой"
+      "conf t IP-маршрут 0.0.0.0 0.0.0.0"
     ]
   },
   {
@@ -1709,10 +1709,10 @@ let objs = [
       576.869361
     ],
     "en": [
-      "do ping 200 go to"
+      "do ping 200.0.0.2"
     ],
     "ru": [
-      "сделать пинг 200 перейти к"
+      "сделать пинг 200.0.0.2"
     ]
   },
   {
@@ -1772,7 +1772,7 @@ let objs = [
       "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, подобные этой, которые будут выпускаться еженедельно"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {

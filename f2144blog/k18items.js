@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -356,7 +356,7 @@ let objs = [
       "and now I'll use the command show port security address"
     ],
     "ru": [
-      "а теперь я воспользуюсь командой show port security address"
+      "и теперь я буду использовать команду показать адрес безопасности порта"
     ]
   },
   {
@@ -380,7 +380,7 @@ let objs = [
       "as you can see there is a dynamically learned secure MAC address on the Fast Ethernet 0 2 interface"
     ],
     "ru": [
-      "как вы можете видеть, на интерфейсе Fast Ethernet 0 2 есть динамически полученный безопасный MAC-адрес."
+      "как вы можете видеть, на интерфейсе Fast Ethernet 0 2 есть динамически изученный безопасный MAC-адрес."
     ]
   },
   {
@@ -440,7 +440,7 @@ let objs = [
       "switch port mode access and switch port port security"
     ],
     "ru": [
-      "доступ в режим порта коммутатора и безопасность порта порта коммутатора"
+      "доступ в режиме порта коммутатора и безопасность порта порта коммутатора"
     ]
   },
   {
@@ -470,25 +470,13 @@ let objs = [
   {
     "time": [
       175.782073,
-      180.11067
-    ],
-    "en": [
-      "I'll use write to save then reload"
-    ],
-    "ru": [
-      "Я воспользуюсь записью, чтобы сохранить, а затем перезагрузить"
-    ]
-  },
-  {
-    "time": [
-      180.11067,
       184.704112
     ],
     "en": [
-      "ok now the switch is reloading"
+      "I'll use write to save then reload 180.11067 ok now the switch is reloading"
     ],
     "ru": [
-      "хорошо, теперь переключатель перезагружается"
+      "Я использую запись для сохранения, затем перезагружаю 180.11067 хорошо, теперь коммутатор перезагружается"
     ]
   },
   {
@@ -536,31 +524,19 @@ let objs = [
       "so let's check the port security address table again"
     ],
     "ru": [
-      "так что давайте еще раз проверим таблицу адресов безопасности портов"
+      "так что давайте еще раз проверим таблицу адресов безопасности порта"
     ]
   },
   {
     "time": [
       213.068455,
-      217.6333
-    ],
-    "en": [
-      "enable show port security address"
-    ],
-    "ru": [
-      "включить показывать адрес безопасности порта"
-    ]
-  },
-  {
-    "time": [
-      217.6333,
       222.268412
     ],
     "en": [
-      "as you can see PC ones MAC address is no longer present"
+      "enable show port security address 217.6333 as you can see PC ones MAC address is no longer present"
     ],
     "ru": [
-      "как вы можете видеть, MAC-адрес ПК больше не присутствует"
+      "включить показывать адрес безопасности порта 217.6333, так как вы можете видеть, что MAC-адрес ПК больше не присутствует"
     ]
   },
   {
@@ -584,7 +560,7 @@ let objs = [
       "even if you save the running configuration because the address isn't actually entered into the runner configuration when it is dynamically learned"
     ],
     "ru": [
-      "даже если вы сохраните текущую конфигурацию, потому что адрес фактически не вводится в конфигурацию бегуна, когда он динамически запоминается"
+      "даже если вы сохраняете текущую конфигурацию, потому что адрес фактически не вводится в конфигурацию бегуна, когда он динамически запоминается"
     ]
   },
   {
@@ -602,37 +578,13 @@ let objs = [
   {
     "time": [
       244.266878,
-      249.13973
-    ],
-    "en": [
-      "conf t interface f0 2"
-    ],
-    "ru": [
-      "conf t interface f0 2"
-    ]
-  },
-  {
-    "time": [
-      249.13973,
-      252.65166
-    ],
-    "en": [
-      "now this feature is enabled with this command"
-    ],
-    "ru": [
-      "теперь эта функция включена с помощью этой команды"
-    ]
-  },
-  {
-    "time": [
-      252.65166,
       258.736498
     ],
     "en": [
-      "switch port port security MAC address sticky"
+      "conf t interface f0 2 249.13973 now this feature is enabled with this command 252.65166 switch port port security MAC address sticky"
     ],
     "ru": [
-      "порт коммутатора безопасность порта MAC-адрес залипание"
+      "conf t interface f0 2 249.13973 теперь эта функция включается с помощью этой команды 252.65166 порт коммутатора безопасность порта MAC-адрес закреплен"
     ]
   },
   {
@@ -746,37 +698,13 @@ let objs = [
   {
     "time": [
       295.151737,
-      300.03205
-    ],
-    "en": [
-      "what's the difference well let's check the running configuration"
-    ],
-    "ru": [
-      "какая разница ну давайте проверим работающую конфигурацию"
-    ]
-  },
-  {
-    "time": [
-      300.03205,
-      309.1951
-    ],
-    "en": [
-      "show run as you can see in addition to the three commands we manually configured on the interface"
-    ],
-    "ru": [
-      "show run, как вы можете видеть, в дополнение к трем командам, которые мы вручную настроили в интерфейсе"
-    ]
-  },
-  {
-    "time": [
-      309.1951,
       311.926622
     ],
     "en": [
-      "there is a fourth one which we didn't configure"
+      "what's the difference well let's check the running configuration 300.03205 show run as you can see in addition to the three commands we manually configured on the interface 309.1951 there is a fourth one which we didn't configure"
     ],
     "ru": [
-      "есть четвертый, который мы не настраивали"
+      "какая разница, давайте проверим текущую конфигурацию 300.03205 show run, как вы можете видеть, помимо трех команд, которые мы вручную настроили на интерфейсе 309.1951, есть четвертая, которую мы не настраивали"
     ]
   },
   {
@@ -836,7 +764,7 @@ let objs = [
       "step nine is to save the running configuration and reload again"
     ],
     "ru": [
-      "Шаг девятый - сохранить текущую конфигурацию и перезагрузить снова"
+      "девятый шаг - сохранить текущую конфигурацию и перезагрузить снова."
     ]
   },
   {
@@ -890,25 +818,13 @@ let objs = [
   {
     "time": [
       357.277171,
-      361.95219
-    ],
-    "en": [
-      "PC ones MAC address was saved to the running configuration of switch 1"
-    ],
-    "ru": [
-      "MAC-адрес ПК был сохранен в текущей конфигурации коммутатора 1."
-    ]
-  },
-  {
-    "time": [
-      361.95219,
       365.295647
     ],
     "en": [
-      "and we saved the running configuration before reloading"
+      "PC ones MAC address was saved to the running configuration of switch 1 361.95219 and we saved the running configuration before reloading"
     ],
     "ru": [
-      "и мы сохранили текущую конфигурацию перед перезагрузкой"
+      "MAC-адрес ПК был сохранен в рабочей конфигурации коммутатора 1361.95219, и мы сохранили текущую конфигурацию перед перезагрузкой."
     ]
   },
   {
@@ -974,25 +890,13 @@ let objs = [
   {
     "time": [
       393.555175,
-      400.4179
-    ],
-    "en": [
-      "the sticky MAC address learning feature however automatically saves these addresses to the running configuration"
-    ],
-    "ru": [
-      "функция запоминания MAC-адресов автоматически сохраняет эти адреса в текущей конфигурации."
-    ]
-  },
-  {
-    "time": [
-      400.4179,
       404.812631
     ],
     "en": [
-      "and thus will be retained upon reload if the runner configuration is saved"
+      "the sticky MAC address learning feature however automatically saves these addresses to the running configuration 400.4179 and thus will be retained upon reload if the runner configuration is saved"
     ],
     "ru": [
-      "и, таким образом, будет сохранен при перезагрузке, если сохранена конфигурация бегуна"
+      "однако функция запоминания MAC-адресов автоматически сохраняет эти адреса в текущей конфигурации 400.4179 и, таким образом, они будут сохранены при перезагрузке, если сохранена конфигурация бегуна."
     ]
   },
   {
@@ -1052,7 +956,7 @@ let objs = [
       "if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description"
     ],
     "ru": [
-      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфириумом по адресам в описании"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах и эфириуме по адресам в описании"
     ]
   },
   {

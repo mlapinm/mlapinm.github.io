@@ -69,17 +69,13 @@ however you can still issue the shutdown command to administrative lead issei be
 185.366319
 now let's set the IP address
 188.799318
-IP address 1.1 1.1 255 255 255 255
-196.28518
-ok now let's go on r2
+IP address 1.1 1.1 255 255 255 255 196.28518 ok now let's go on r2
 198.790761
 interface l0 IP address 2 2 2 2 255 255 255 255
 210.886671
 we have successfully created a loopback interface on each device
 215.366654
-step three is to ping both the local loopback interface and the loopback interface of the remote device from each router
-225.88773
-the router should be able to ping its own loopback interface with no issues by default
+step three is to ping both the local loopback interface and the loopback interface of the remote device from each router 225.88773 the router should be able to ping its own loopback interface with no issues by default
 231.290868
 however it has no way of knowing about the loopback interface of the remote router by default
 236.363551
@@ -93,9 +89,7 @@ this isn't a topic for this lab but let me show you the IP route table
 260.733203
 let me hop on r1
 263.337018
-and show IP route
-267.95312
-you see here the C indicating connected of the 192.168.1.0 Network
+and show IP route 267.95312 you see here the C indicating connected of the 192.168.1.0 Network
 276.116495
 and the l indicating local of the 192.168.1.1 address configured on the gig 0/0 interface
 283.292259
@@ -107,9 +101,7 @@ also at the top is the loopback here on r1
 296.107289
 now let's try the pings which both should be successful
 300.727298
-first the local loopback
-303.94082
-ping 1.1.1.1 it works
+first the local loopback 303.94082 ping 1.1.1.1 it works
 310.722019
 now our twos ping 2.2.2.2
 315.089141
@@ -121,9 +113,7 @@ end ping 2.2.2.2 it works
 328.234023
 ping 1.1.1.1 it works as well
 335.025811
-step four is to remove the loopback interfaces
-342.98689
-this is just to point out a difference between physical interfaces and loopback interfaces
+step four is to remove the loopback interfaces 342.98689 this is just to point out a difference between physical interfaces and loopback interfaces
 348.310591
 you can't delete a physical interface using the command line
 352.686503
@@ -153,9 +143,7 @@ show IP interface brief there's loopback zero
 409.602943
 conf t no interface l0
 414.459122
-do show IP interface brief
-417.7599
-we have successfully removed the loopback interface of each router
+do show IP interface brief 417.7599 we have successfully removed the loopback interface of each router
 422.086975
 that's all for this lab
 423.704346

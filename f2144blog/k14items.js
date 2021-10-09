@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -80,7 +80,7 @@ let objs = [
       "we've done this in previous labs so this should be no problem"
     ],
     "ru": [
-      "мы делали это в предыдущих лабораторных работах, так что это не должно быть проблемой"
+      "мы делали это в предыдущих лабораторных работах, поэтому проблем быть не должно."
     ]
   },
   {
@@ -164,7 +164,7 @@ let objs = [
       "r1 is connected to switch 1 via the gigabit ethernet zero one interface as we just saw"
     ],
     "ru": [
-      "r1 подключен к коммутатору 1 через интерфейс gigabit ethernet zero one, как мы только что видели."
+      "r1 подключен к коммутатору 1 через интерфейс Gigabit Ethernet zero one, как мы только что видели."
     ]
   },
   {
@@ -188,7 +188,7 @@ let objs = [
       "connected to our two's Gigabit Ethernet 0 0 interface"
     ],
     "ru": [
-      "подключен к нашим двум Gigabit Ethernet 0 0 интерфейсу"
+      "подключен к интерфейсу Gigabit Ethernet 0 0 наших двух"
     ]
   },
   {
@@ -230,25 +230,13 @@ let objs = [
   {
     "time": [
       103.660372,
-      108.54483
-    ],
-    "en": [
-      "and it's connected to switch to via the gigabit ethernet 0 1 interface"
-    ],
-    "ru": [
-      "и он подключен для переключения через интерфейс Gigabit Ethernet 0 1"
-    ]
-  },
-  {
-    "time": [
-      108.54483,
       111.692913
     ],
     "en": [
-      "connected to switch 2 is Gigabit Ethernet 0 1 interface"
+      "and it's connected to switch to via the gigabit ethernet 0 1 interface 108.54483 connected to switch 2 is Gigabit Ethernet 0 1 interface"
     ],
     "ru": [
-      "к коммутатору 2 подключен интерфейс Gigabit Ethernet 0 1"
+      "и он подключен к коммутатору через интерфейс Gigabit Ethernet 0 1 108.54483, подключенный к коммутатору 2, является интерфейсом Gigabit Ethernet 0 1"
     ]
   },
   {
@@ -266,25 +254,13 @@ let objs = [
   {
     "time": [
       115.349017,
-      120.85335
-    ],
-    "en": [
-      "enable shows CDP neighbors"
-    ],
-    "ru": [
-      "enable показывает соседей CDP"
-    ]
-  },
-  {
-    "time": [
-      120.85335,
       126.926309
     ],
     "en": [
-      "as you can see it is indeed connected to r2 via the gigabit ethernet 0 1 interface"
+      "enable shows CDP neighbors 120.85335 as you can see it is indeed connected to r2 via the gigabit ethernet 0 1 interface"
     ],
     "ru": [
-      "как вы можете видеть, он действительно подключен к r2 через интерфейс Gigabit Ethernet 0 1"
+      "enable показывает соседей CDP 120.85335, поскольку вы можете видеть, что он действительно подключен к r2 через интерфейс Gigabit Ethernet 0 1"
     ]
   },
   {
@@ -374,25 +350,13 @@ let objs = [
   {
     "time": [
       153.312266,
-      157.84012
-    ],
-    "en": [
-      "in this case r1 is a C 1900 series router"
-    ],
-    "ru": [
-      "в данном случае r1 - это маршрутизатор серии C 1900"
-    ]
-  },
-  {
-    "time": [
-      157.84012,
       161.850078
     ],
     "en": [
-      "let's go on r1 to identify switch 1 and R 2"
+      "in this case r1 is a C 1900 series router 157.84012 let's go on r1 to identify switch 1 and R 2"
     ],
     "ru": [
-      "давайте перейдем к r1, чтобы идентифицировать переключатель 1 и R 2"
+      "в данном случае r1 - это маршрутизатор серии C 1900 157.84012, давайте перейдем к r1, чтобы идентифицировать коммутатор 1 и R 2."
     ]
   },
   {
@@ -434,25 +398,13 @@ let objs = [
   {
     "time": [
       181.728766,
-      186.01037
-    ],
-    "en": [
-      "and if you remember the icon used to represent it here in packet tracer"
-    ],
-    "ru": [
-      "и если вы помните значок, используемый для его представления здесь, в пакетном трассировщике"
-    ]
-  },
-  {
-    "time": [
-      186.01037,
       188.261536
     ],
     "en": [
-      "means it is a multi-layer switch"
+      "and if you remember the icon used to represent it here in packet tracer 186.01037 means it is a multi-layer switch"
     ],
     "ru": [
-      "означает, что это многослойный переключатель"
+      "и если вы помните значок, использованный для его представления в пакетном трассировщике 186.01037, означает, что это многоуровневый коммутатор."
     ]
   },
   {
@@ -470,37 +422,13 @@ let objs = [
   {
     "time": [
       192.056973,
-      200.92891
-    ],
-    "en": [
-      "finally step three requires a new command which we didn't cover in previous labs"
-    ],
-    "ru": [
-      "наконец, третий шаг требует новой команды, которую мы не рассматривали в предыдущих лабораторных работах."
-    ]
-  },
-  {
-    "time": [
-      200.92891,
-      203.79493
-    ],
-    "en": [
-      "actually there are two options"
-    ],
-    "ru": [
-      "на самом деле есть два варианта"
-    ]
-  },
-  {
-    "time": [
-      203.79493,
       207.882451
     ],
     "en": [
-      "we have to identify the iOS version of the neighboring devices"
+      "finally step three requires a new command which we didn't cover in previous labs 200.92891 actually there are two options 203.79493 we have to identify the iOS version of the neighboring devices"
     ],
     "ru": [
-      "мы должны определить версию iOS соседних устройств"
+      "наконец, третий шаг требует новой команды, которую мы не рассматривали в предыдущих лабораторных работах. 200.92891 на самом деле есть два варианта 203.79493, которые мы должны определить для iOS-версии соседних устройств."
     ]
   },
   {
@@ -626,25 +554,13 @@ let objs = [
   {
     "time": [
       260.730721,
-      264.63595
-    ],
-    "en": [
-      "now you can find the iOS version of r1 here"
-    ],
-    "ru": [
-      "теперь вы можете найти версию r1 для iOS здесь"
-    ]
-  },
-  {
-    "time": [
-      264.63595,
       268.465637
     ],
     "en": [
-      "it's 15.144"
+      "now you can find the iOS version of r1 here 264.63595 it's 15.144"
     ],
     "ru": [
-      "это 15.144"
+      "теперь вы можете найти версию r1 для iOS здесь 264.63595, это 15.144"
     ]
   },
   {
@@ -770,49 +686,13 @@ let objs = [
   {
     "time": [
       308.484591,
-      317.53407
-    ],
-    "en": [
-      "now as a bonus I'd like to also demonstrate the show version command I briefly mentioned before"
-    ],
-    "ru": [
-      "теперь в качестве бонуса я хотел бы также продемонстрировать команду show version, о которой я кратко упоминал ранее."
-    ]
-  },
-  {
-    "time": [
-      317.53407,
-      320.81534
-    ],
-    "en": [
-      "this gives a lot of information about the device"
-    ],
-    "ru": [
-      "это дает много информации об устройстве"
-    ]
-  },
-  {
-    "time": [
-      320.81534,
-      325.26659
-    ],
-    "en": [
-      "but for now let's just confirm the iOS versions we learned about via CDP"
-    ],
-    "ru": [
-      "а пока давайте просто подтвердим версии iOS, о которых мы узнали через CDP."
-    ]
-  },
-  {
-    "time": [
-      325.26659,
       327.321277
     ],
     "en": [
-      "on switch 1 first"
+      "now as a bonus I'd like to also demonstrate the show version command I briefly mentioned before 317.53407 this gives a lot of information about the device 320.81534 but for now let's just confirm the iOS versions we learned about via CDP 325.26659 on switch 1 first"
     ],
     "ru": [
-      "сначала на переключателе 1"
+      "Теперь в качестве бонуса я хотел бы также продемонстрировать команду show version, которую я кратко упомянул перед 317.53407, это дает много информации об устройстве 320.81534, но пока давайте просто сначала подтвердим версии iOS, о которых мы узнали через CDP 325.26659 на переключателе 1"
     ]
   },
   {
@@ -842,25 +722,13 @@ let objs = [
   {
     "time": [
       337.788777,
-      341.11611
-    ],
-    "en": [
-      "but let's just check the iOS version as I said"
-    ],
-    "ru": [
-      "но давайте просто проверим версию iOS, как я сказал"
-    ]
-  },
-  {
-    "time": [
-      341.11611,
       345.686777
     ],
     "en": [
-      "switch 1 is running 12 point to 25 FX"
+      "but let's just check the iOS version as I said 341.11611 switch 1 is running 12 point to 25 FX"
     ],
     "ru": [
-      "переключатель 1 работает от 12 точек до 25 FX"
+      "но давайте просто проверим версию iOS, как я уже сказал, коммутатор 1 341.11611 работает от 12 точек до 25 FX"
     ]
   },
   {

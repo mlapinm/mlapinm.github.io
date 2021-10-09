@@ -2,49 +2,25 @@ let objs = [
   {
     "time": [
       0.0,
-      3.15314
-    ],
-    "en": [
-      "welcome to this free CCNA packet tracer practice lab"
-    ],
-    "ru": [
-      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
-    ]
-  },
-  {
-    "time": [
-      3.15314,
       7.162907
     ],
     "en": [
-      "you can download the lab file from the link in the description"
+      "welcome to this free CCNA packet tracer practice lab 3.15314 you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA 3.15314, вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
     "time": [
       7.162907,
-      14.12432
-    ],
-    "en": [
-      "in this lab we will be working with one router r1 and one PC PC one"
-    ],
-    "ru": [
-      "В этой лабораторной работе мы будем работать с одним маршрутизатором r1 и одним ПК ПК одним"
-    ]
-  },
-  {
-    "time": [
-      14.12432,
       18.869851
     ],
     "en": [
-      "we will use PC one to connect to the console port of r1"
+      "in this lab we will be working with one router r1 and one PC PC one 14.12432 we will use PC one to connect to the console port of r1"
     ],
     "ru": [
-      "мы будем использовать ПК один для подключения к консольному порту r1"
+      "В этой лабораторной работе мы будем работать с одним маршрутизатором r1 и одним ПК ПК 14.12432 мы будем использовать один ПК для подключения к консольному порту r1."
     ]
   },
   {
@@ -74,25 +50,13 @@ let objs = [
   {
     "time": [
       27.184047,
-      30.53352
-    ],
-    "en": [
-      "try to complete the lab on your own first"
-    ],
-    "ru": [
-      "попробуйте сначала пройти лабораторию самостоятельно"
-    ]
-  },
-  {
-    "time": [
-      30.53352,
       33.774879
     ],
     "en": [
-      "and continue watching this video if you have trouble"
+      "try to complete the lab on your own first 30.53352 and continue watching this video if you have trouble"
     ],
     "ru": [
-      "и продолжайте смотреть это видео, если у вас возникнут проблемы"
+      "попробуйте сначала пройти лабораторную работу самостоятельно 30.53352 и продолжайте смотреть это видео, если у вас возникнут проблемы"
     ]
   },
   {
@@ -122,49 +86,25 @@ let objs = [
   {
     "time": [
       45.152569,
-      49.17052
-    ],
-    "en": [
-      "click on connections in the bottom left corner of the screen"
-    ],
-    "ru": [
-      "нажмите на соединения в нижнем левом углу экрана"
-    ]
-  },
-  {
-    "time": [
-      49.17052,
       54.561567
     ],
     "en": [
-      "this is the console cable as indicated at the bottom of the screen"
+      "click on connections in the bottom left corner of the screen 49.17052 this is the console cable as indicated at the bottom of the screen"
     ],
     "ru": [
-      "это консольный кабель, как показано в нижней части экрана"
+      "нажмите на соединения в нижнем левом углу экрана. 49.17052 это консольный кабель, как показано внизу экрана."
     ]
   },
   {
     "time": [
       54.561567,
-      59.95001
-    ],
-    "en": [
-      "connect it to the rs-232 port of PC one"
-    ],
-    "ru": [
-      "подключите его к порту RS-232 ПК один"
-    ]
-  },
-  {
-    "time": [
-      59.95001,
       62.507949
     ],
     "en": [
-      "and then to the console port of r1"
+      "connect it to the rs-232 port of PC one 59.95001 and then to the console port of r1"
     ],
     "ru": [
-      "а затем в консольный порт r1"
+      "подключите его к порту RS-232 ПК один 59.95001, а затем к консольному порту r1"
     ]
   },
   {
@@ -212,7 +152,7 @@ let objs = [
       "we're now connected to r1 via PC one and can perform configurations as usual"
     ],
     "ru": [
-      "Теперь мы подключены к r1 через ПК и можем выполнять настройки как обычно"
+      "теперь мы подключены к r1 через один ПК и можем выполнять настройки как обычно"
     ]
   },
   {
@@ -230,25 +170,13 @@ let objs = [
   {
     "time": [
       97.999229,
-      101.20266
-    ],
-    "en": [
-      "unable to enter privileged exec mode"
-    ],
-    "ru": [
-      "невозможно войти в привилегированный режим exec"
-    ]
-  },
-  {
-    "time": [
-      101.20266,
       104.726566
     ],
     "en": [
-      "conf t enter global configuration mode"
+      "unable to enter privileged exec mode 101.20266 conf t enter global configuration mode"
     ],
     "ru": [
-      "conf t войти в режим глобальной конфигурации"
+      "невозможно войти в привилегированный режим exec 101.20266 conf t войти в режим глобальной конфигурации"
     ]
   },
   {
@@ -302,61 +230,25 @@ let objs = [
   {
     "time": [
       120.926073,
-      123.2163
-    ],
-    "en": [
-      "and is encrypted by default"
-    ],
-    "ru": [
-      "и по умолчанию зашифрован"
-    ]
-  },
-  {
-    "time": [
-      123.2163,
-      126.6641
-    ],
-    "en": [
-      "it's configured from global configuration mode"
-    ],
-    "ru": [
-      "он настроен из режима глобальной конфигурации"
-    ]
-  },
-  {
-    "time": [
-      126.6641,
       128.360855
     ],
     "en": [
-      "which we are already in"
+      "and is encrypted by default 123.2163 it's configured from global configuration mode 126.6641 which we are already in"
     ],
     "ru": [
-      "в котором мы уже находимся"
+      "и по умолчанию зашифрован 123.2163, он настроен из режима глобальной конфигурации 126.6641, в котором мы уже находимся"
     ]
   },
   {
     "time": [
       128.360855,
-      130.72325
-    ],
-    "en": [
-      "enable secret Cisco"
-    ],
-    "ru": [
-      "включить секрет Cisco"
-    ]
-  },
-  {
-    "time": [
-      130.72325,
       132.805721
     ],
     "en": [
-      "step three is now complete"
+      "enable secret Cisco 130.72325 step three is now complete"
     ],
     "ru": [
-      "шаг третий теперь завершен"
+      "включить секрет Cisco 130.72325, шаг третий завершен"
     ]
   },
   {
@@ -494,25 +386,13 @@ let objs = [
   {
     "time": [
       182.966503,
-      185.89367
-    ],
-    "en": [
-      "and then exit to quit the connection"
-    ],
-    "ru": [
-      "а затем выйти, чтобы завершить соединение"
-    ]
-  },
-  {
-    "time": [
-      185.89367,
       188.895884
     ],
     "en": [
-      "but I'm not asked for a password"
+      "and then exit to quit the connection 185.89367 but I'm not asked for a password"
     ],
     "ru": [
-      "но у меня не спрашивают пароль"
+      "а затем выйдите, чтобы выйти из соединения 185.89367, но у меня не спрашивают пароль"
     ]
   },
   {
@@ -686,61 +566,25 @@ let objs = [
   {
     "time": [
       250.591846,
-      252.54017
-    ],
-    "en": [
-      "as you can see it is not encrypted"
-    ],
-    "ru": [
-      "как видите, он не зашифрован"
-    ]
-  },
-  {
-    "time": [
-      252.54017,
       254.651493
     ],
     "en": [
-      "that's all for step four"
+      "as you can see it is not encrypted 252.54017 that's all for step four"
     ],
     "ru": [
-      "это все для четвертого шага"
+      "как видите, он не зашифрован 252.54017, это все для четвертого шага"
     ]
   },
   {
     "time": [
       254.651493,
-      262.69548
-    ],
-    "en": [
-      "Step five is to enable password encryption to protect this console password"
-    ],
-    "ru": [
-      "Шаг пятый - включить шифрование пароля для защиты этого пароля консоли."
-    ]
-  },
-  {
-    "time": [
-      262.69548,
-      265.66923
-    ],
-    "en": [
-      "compte to enter global configuration mode"
-    ],
-    "ru": [
-      "compte для входа в режим глобальной конфигурации"
-    ]
-  },
-  {
-    "time": [
-      265.66923,
       267.735935
     ],
     "en": [
-      "then the same command as before"
+      "Step five is to enable password encryption to protect this console password 262.69548 compte to enter global configuration mode 265.66923 then the same command as before"
     ],
     "ru": [
-      "затем та же команда, что и раньше"
+      "Шаг пятый - включить шифрование пароля для защиты этого пароля 262.69548 консоли, чтобы войти в режим глобальной конфигурации 265.66923, затем выполнить ту же команду, что и раньше."
     ]
   },
   {
@@ -812,7 +656,7 @@ let objs = [
       "let's use the copy running-config startup config command"
     ],
     "ru": [
-      "давайте воспользуемся командой copy running-config startup config"
+      "давайте использовать команду конфигурации запуска copy running-config"
     ]
   },
   {

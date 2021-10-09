@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -44,7 +44,7 @@ let objs = [
       "loopback interfaces are logical interfaces"
     ],
     "ru": [
-      "петлевые интерфейсы - это логические интерфейсы"
+      "интерфейсы обратной связи - это логические интерфейсы"
     ]
   },
   {
@@ -404,7 +404,7 @@ let objs = [
       "however you can still issue the shutdown command to administrative lead issei belit"
     ],
     "ru": [
-      "однако вы все равно можете подать команду выключения руководителю администратора issei belit"
+      "однако вы все равно можете отправить команду выключения руководителю администратора issei belit"
     ]
   },
   {
@@ -422,25 +422,13 @@ let objs = [
   {
     "time": [
       188.799318,
-      196.28518
-    ],
-    "en": [
-      "IP address 1.1 1.1 255 255 255 255"
-    ],
-    "ru": [
-      "IP-адрес 1.1 1.1 255 255 255 255 255"
-    ]
-  },
-  {
-    "time": [
-      196.28518,
       198.790761
     ],
     "en": [
-      "ok now let's go on r2"
+      "IP address 1.1 1.1 255 255 255 255 196.28518 ok now let's go on r2"
     ],
     "ru": [
-      "хорошо, теперь пойдем на R2"
+      "IP-адрес 1.1 1.1 255 255 255 255 196.28518 хорошо, теперь давайте перейдем к r2"
     ]
   },
   {
@@ -470,25 +458,13 @@ let objs = [
   {
     "time": [
       215.366654,
-      225.88773
-    ],
-    "en": [
-      "step three is to ping both the local loopback interface and the loopback interface of the remote device from each router"
-    ],
-    "ru": [
-      "Шаг третий - проверить связь как с локальным интерфейсом обратной связи, так и с интерфейсом обратной связи удаленного устройства с каждого маршрутизатора."
-    ]
-  },
-  {
-    "time": [
-      225.88773,
       231.290868
     ],
     "en": [
-      "the router should be able to ping its own loopback interface with no issues by default"
+      "step three is to ping both the local loopback interface and the loopback interface of the remote device from each router 225.88773 the router should be able to ping its own loopback interface with no issues by default"
     ],
     "ru": [
-      "маршрутизатор должен иметь возможность пинговать свой собственный интерфейс обратной петли без проблем по умолчанию"
+      "Шаг третий - проверить связь как с локальным интерфейсом обратной петли, так и с интерфейсом обратной связи удаленного устройства с каждого маршрутизатора. 225.88773 маршрутизатор должен иметь возможность отправлять запросы на собственный интерфейс обратной петли без проблем по умолчанию."
     ]
   },
   {
@@ -566,25 +542,13 @@ let objs = [
   {
     "time": [
       263.337018,
-      267.95312
-    ],
-    "en": [
-      "and show IP route"
-    ],
-    "ru": [
-      "и показать IP-маршрут"
-    ]
-  },
-  {
-    "time": [
-      267.95312,
       276.116495
     ],
     "en": [
-      "you see here the C indicating connected of the 192.168.1.0 Network"
+      "and show IP route 267.95312 you see here the C indicating connected of the 192.168.1.0 Network"
     ],
     "ru": [
-      "вы видите здесь C, указывающий на подключение к сети 192.168.1.0"
+      "и покажите IP-маршрут 267.95312, вы видите здесь C, указывающий на подключение к сети 192.168.1.0"
     ]
   },
   {
@@ -650,25 +614,13 @@ let objs = [
   {
     "time": [
       300.727298,
-      303.94082
-    ],
-    "en": [
-      "first the local loopback"
-    ],
-    "ru": [
-      "сначала локальный шлейф"
-    ]
-  },
-  {
-    "time": [
-      303.94082,
       310.722019
     ],
     "en": [
-      "ping 1.1.1.1 it works"
+      "first the local loopback 303.94082 ping 1.1.1.1 it works"
     ],
     "ru": [
-      "пинг 1.1.1.1 работает"
+      "сначала локальный шлейф 303.94082 пинг 1.1.1.1 он работает"
     ]
   },
   {
@@ -734,25 +686,13 @@ let objs = [
   {
     "time": [
       335.025811,
-      342.98689
-    ],
-    "en": [
-      "step four is to remove the loopback interfaces"
-    ],
-    "ru": [
-      "Шаг четвертый - удалить интерфейсы обратной петли"
-    ]
-  },
-  {
-    "time": [
-      342.98689,
       348.310591
     ],
     "en": [
-      "this is just to point out a difference between physical interfaces and loopback interfaces"
+      "step four is to remove the loopback interfaces 342.98689 this is just to point out a difference between physical interfaces and loopback interfaces"
     ],
     "ru": [
-      "это просто для того, чтобы указать на разницу между физическими интерфейсами и интерфейсами обратной связи."
+      "Шаг четвертый - удалить интерфейсы обратной петли 342.98689, это просто для того, чтобы указать на разницу между физическими интерфейсами и интерфейсами обратной петли."
     ]
   },
   {
@@ -926,25 +866,13 @@ let objs = [
   {
     "time": [
       414.459122,
-      417.7599
-    ],
-    "en": [
-      "do show IP interface brief"
-    ],
-    "ru": [
-      "показать краткое описание IP-интерфейса"
-    ]
-  },
-  {
-    "time": [
-      417.7599,
       422.086975
     ],
     "en": [
-      "we have successfully removed the loopback interface of each router"
+      "do show IP interface brief 417.7599 we have successfully removed the loopback interface of each router"
     ],
     "ru": [
-      "мы успешно удалили петлевой интерфейс каждого маршрутизатора"
+      "показать краткое описание IP-интерфейса 417.7599, мы успешно удалили интерфейс обратной петли на каждом маршрутизаторе"
     ]
   },
   {

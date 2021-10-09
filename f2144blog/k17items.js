@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -86,25 +86,13 @@ let objs = [
   {
     "time": [
       44.447202,
-      53.28906
-    ],
-    "en": [
-      "in this first lab let's look at and configure some basic functions of port security on two switches switch 1 and switch 2"
-    ],
-    "ru": [
-      "В этой первой лабораторной работе давайте рассмотрим и настроим некоторые основные функции безопасности портов на двух коммутаторах, коммутаторе 1 и коммутаторе 2."
-    ]
-  },
-  {
-    "time": [
-      53.28906,
       56.580272
     ],
     "en": [
-      "which each have one pc connected to them"
+      "in this first lab let's look at and configure some basic functions of port security on two switches switch 1 and switch 2 53.28906 which each have one pc connected to them"
     ],
     "ru": [
-      "к каждому из которых подключен один компьютер"
+      "В этой первой лабораторной работе давайте рассмотрим и настроим некоторые основные функции безопасности портов на двух коммутаторах, коммутаторе 1 и коммутаторе 2 53.28906, к каждому из которых подключен один компьютер."
     ]
   },
   {
@@ -116,7 +104,7 @@ let objs = [
       "try to complete the lab yourself first then continue watching this video if you have trouble or watch it after to check your solution"
     ],
     "ru": [
-      "попробуйте сначала выполнить лабораторную работу самостоятельно, а затем продолжайте смотреть это видео, если у вас возникнут проблемы, или просмотрите его после, чтобы проверить свое решение."
+      "попробуйте сначала пройти лабораторную работу самостоятельно, а затем продолжайте смотреть это видео, если у вас возникнут проблемы, или просмотрите его после, чтобы проверить свое решение."
     ]
   },
   {
@@ -290,25 +278,13 @@ let objs = [
   {
     "time": [
       129.945294,
-      134.28383
-    ],
-    "en": [
-      "if you have studied spanning tree protocol already"
-    ],
-    "ru": [
-      "если вы уже изучили протокол связующего дерева"
-    ]
-  },
-  {
-    "time": [
-      134.28383,
       140.832676
     ],
     "en": [
-      "you know that switches send each other BPD use bridge protocol data units at regular intervals"
+      "if you have studied spanning tree protocol already 134.28383 you know that switches send each other BPD use bridge protocol data units at regular intervals"
     ],
     "ru": [
-      "вы знаете, что коммутаторы отправляют друг другу BPD, используют блоки данных протокола моста через равные промежутки времени"
+      "Если вы уже изучили протокол связующего дерева 134.28383, вы знаете, что коммутаторы отправляют друг другу BPD, используйте блоки данных протокола моста через равные промежутки времени"
     ]
   },
   {
@@ -374,97 +350,49 @@ let objs = [
   {
     "time": [
       173.224295,
-      177.64034
-    ],
-    "en": [
-      "and to dynamically learned MAC addresses on his fastethernet 0/1 port"
-    ],
-    "ru": [
-      "и к динамически изученным MAC-адресам на его порту fastethernet 0/1"
-    ]
-  },
-  {
-    "time": [
-      177.64034,
       180.232471
     ],
     "en": [
-      "those of switch 2 and PC 2"
+      "and to dynamically learned MAC addresses on his fastethernet 0/1 port 177.64034 those of switch 2 and PC 2"
     ],
     "ru": [
-      "переключателя 2 и ПК 2"
+      "и к динамически изученным MAC-адресам на его порту fastethernet 0/1 177.64034 MAC-адреса коммутатора 2 и ПК 2"
     ]
   },
   {
     "time": [
       180.232471,
-      192.59796
-    ],
-    "en": [
-      "likewise switch 2 should have one dynamically learned MAC address on his Fast Ethernet 0 to port that of PC 2 and to dynamically learned MAC addresses on its fastethernet 0/1 port"
-    ],
-    "ru": [
-      "аналогично коммутатор 2 должен иметь один динамически изученный MAC-адрес на его Fast Ethernet 0 для порта ПК 2 и для динамически изученных MAC-адресов на его порту fastethernet 0/1."
-    ]
-  },
-  {
-    "time": [
-      192.59796,
       195.063391
     ],
     "en": [
-      "those of switch one and pc 1 so I'll go on PC 1"
+      "likewise switch 2 should have one dynamically learned MAC address on his Fast Ethernet 0 to port that of PC 2 and to dynamically learned MAC addresses on its fastethernet 0/1 port 192.59796 those of switch one and pc 1 so I'll go on PC 1"
     ],
     "ru": [
-      "те, что у первого переключателя и ПК 1, так что я пойду на ПК 1"
+      "аналогично коммутатор 2 должен иметь один динамически изученный MAC-адрес на его Fast Ethernet 0 для порта ПК 2 и для динамически изученных MAC-адресов на его порту fastethernet 0/1 192.59796 адресов коммутатора 1 и ПК 1, поэтому я перейду к ПК 1"
     ]
   },
   {
     "time": [
       195.063391,
-      198.70861
-    ],
-    "en": [
-      "and ping PC 2"
-    ],
-    "ru": [
-      "и пинг ПК 2"
-    ]
-  },
-  {
-    "time": [
-      198.70861,
       206.507604
     ],
     "en": [
-      "ping 192.168.1.12"
+      "and ping PC 2 198.70861 ping 192.168.1.12"
     ],
     "ru": [
-      "пинг 192.168.1.12"
+      "и ping PC 2 198.70861 ping 192.168.1.12"
     ]
   },
   {
     "time": [
       206.507604,
-      208.4092
-    ],
-    "en": [
-      "there we go"
-    ],
-    "ru": [
-      "вот и мы"
-    ]
-  },
-  {
-    "time": [
-      208.4092,
       210.962676
     ],
     "en": [
-      "now let's go on switch 1"
+      "there we go 208.4092 now let's go on switch 1"
     ],
     "ru": [
-      "теперь давайте перейдем к переключателю 1"
+      "вот и 208.4092, теперь перейдем к переключателю 1"
     ]
   },
   {
@@ -512,7 +440,7 @@ let objs = [
       "and the MAC address on Fast Ethernet 0 2 must be PC ones"
     ],
     "ru": [
-      "а MAC-адрес в Fast Ethernet 0 2 должен быть компьютерным"
+      "и MAC-адрес в Fast Ethernet 0 2 должен быть компьютерным"
     ]
   },
   {
@@ -566,25 +494,13 @@ let objs = [
   {
     "time": [
       242.472752,
-      244.94482
-    ],
-    "en": [
-      "so it must be PC ones"
-    ],
-    "ru": [
-      "так что это должны быть ПК"
-    ]
-  },
-  {
-    "time": [
-      244.94482,
       250.006647
     ],
     "en": [
-      "and this MAC address went on Fast Ethernet 0 2 must be PC twos"
+      "so it must be PC ones 244.94482 and this MAC address went on Fast Ethernet 0 2 must be PC twos"
     ],
     "ru": [
-      "и этот MAC-адрес перешел в Fast Ethernet 0 2 должны быть двойными ПК"
+      "так что это должны быть ПК 244.94482, и этот MAC-адрес перешел в Fast Ethernet 0 2 должны быть ПК двойки"
     ]
   },
   {
@@ -746,25 +662,13 @@ let objs = [
   {
     "time": [
       312.249528,
-      314.07877
-    ],
-    "en": [
-      "it's actually in dynamic mode"
-    ],
-    "ru": [
-      "это на самом деле в динамическом режиме"
-    ]
-  },
-  {
-    "time": [
-      314.07877,
       318.593697
     ],
     "en": [
-      "meaning that if it were to be connected to a switch port configured as a trunk"
+      "it's actually in dynamic mode 314.07877 meaning that if it were to be connected to a switch port configured as a trunk"
     ],
     "ru": [
-      "это означает, что если бы он был подключен к порту коммутатора, настроенному как магистраль"
+      "на самом деле он находится в динамическом режиме 314.07877, что означает, что если бы он был подключен к порту коммутатора, настроенному как магистраль"
     ]
   },
   {
@@ -1034,25 +938,13 @@ let objs = [
   {
     "time": [
       400.627074,
-      404.61179
-    ],
-    "en": [
-      "switch port port security maximum one"
-    ],
-    "ru": [
-      "порт коммутатора безопасность порта максимум один"
-    ]
-  },
-  {
-    "time": [
-      404.61179,
       407.692691
     ],
     "en": [
-      "now let's do it on switch 1 2"
+      "switch port port security maximum one 404.61179 now let's do it on switch 1 2"
     ],
     "ru": [
-      "теперь давайте сделаем это на переключателе 1 2"
+      "порт коммутатора безопасность порта максимум один 404.61179 теперь давайте сделаем это на коммутаторе 1 2"
     ]
   },
   {
@@ -1232,7 +1124,7 @@ let objs = [
       "which puts the switchboard into an error disabled state effectively shutting down the interface as well as increasing the violation counter"
     ],
     "ru": [
-      "который переводит коммутатор в состояние отключения из-за ошибки, эффективно закрывая интерфейс, а также увеличивая счетчик нарушений."
+      "который переводит коммутатор в состояние отключения из-за ошибки, эффективно отключая интерфейс, а также увеличивая счетчик нарушений"
     ]
   },
   {
@@ -1280,7 +1172,7 @@ let objs = [
       "here at the end under security action it says shutdown"
     ],
     "ru": [
-      "здесь, в конце, под действием безопасности говорится, что выключение"
+      "здесь, в конце, под действием безопасности написано выключение"
     ]
   },
   {
@@ -1358,25 +1250,13 @@ let objs = [
   {
     "time": [
       514.422873,
-      519.33388
-    ],
-    "en": [
-      "here are the three options I mentioned earlier protect restrict shutdown"
-    ],
-    "ru": [
-      "вот три варианта, о которых я упоминал ранее, защита ограничить выключение"
-    ]
-  },
-  {
-    "time": [
-      519.33388,
       522.377044
     ],
     "en": [
-      "let's go with the default of shutdown"
+      "here are the three options I mentioned earlier protect restrict shutdown 519.33388 let's go with the default of shutdown"
     ],
     "ru": [
-      "пойдем с выключением по умолчанию"
+      "вот три варианта, о которых я упоминал ранее, защита ограничить выключение 519.33388, давайте оставим выключение по умолчанию"
     ]
   },
   {
@@ -1478,25 +1358,13 @@ let objs = [
   {
     "time": [
       553.169438,
-      558.08966
-    ],
-    "en": [
-      "as you can see this command shows the MAC address of PC 1"
-    ],
-    "ru": [
-      "как вы можете видеть, эта команда показывает MAC-адрес ПК 1"
-    ]
-  },
-  {
-    "time": [
-      558.08966,
       563.979211
     ],
     "en": [
-      "which switch one has dynamically added as a secure MAC address on Fast Ethernet 0 2"
+      "as you can see this command shows the MAC address of PC 1 558.08966 which switch one has dynamically added as a secure MAC address on Fast Ethernet 0 2"
     ],
     "ru": [
-      "какой коммутатор динамически добавлен в качестве безопасного MAC-адреса в Fast Ethernet 0 2"
+      "как вы можете видеть, эта команда показывает MAC-адрес ПК 1 558.08966, который коммутатор динамически добавлен в качестве безопасного MAC-адреса в Fast Ethernet 0 2"
     ]
   },
   {
@@ -1526,49 +1394,25 @@ let objs = [
   {
     "time": [
       572.326026,
-      577.17055
-    ],
-    "en": [
-      "please subscribe for future labs like this which will be released weekly"
-    ],
-    "ru": [
-      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
-    ]
-  },
-  {
-    "time": [
-      577.17055,
       581.893449
     ],
     "en": [
-      "if you have requests for any specific labs let me know in the comment section"
+      "please subscribe for future labs like this which will be released weekly 577.17055 if you have requests for any specific labs let me know in the comment section"
     ],
     "ru": [
-      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
+      "пожалуйста, подпишитесь на будущие лаборатории, подобные этой, которые будут выпускаться еженедельно 577.17055, если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
     ]
   },
   {
     "time": [
       581.893449,
-      588.9288
-    ],
-    "en": [
-      "if you want to support my channel I accept Bitcoin and etherion donations via the addresses in the description"
-    ],
-    "ru": [
-      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфиром по адресам в описании"
-    ]
-  },
-  {
-    "time": [
-      588.9288,
       597.311715
     ],
     "en": [
-      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
+      "if you want to support my channel I accept Bitcoin and etherion donations via the addresses in the description 588.9288 I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
     ],
     "ru": [
-      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
+      "Если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфиром по адресам в описании 588.9288 Я также храбрый проверенный издатель и принимаю пожертвования биткойнов или токенов основного внимания в смелом браузере"
     ]
   },
   {

@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -38,25 +38,13 @@ let objs = [
   {
     "time": [
       15.320696,
-      21.30342
-    ],
-    "en": [
-      "this lab uses the same topology as the previous lab number 20"
-    ],
-    "ru": [
-      "в этой лабораторной работе используется та же топология, что и в предыдущей лабораторной работе № 20."
-    ]
-  },
-  {
-    "time": [
-      21.30342,
       25.130751
     ],
     "en": [
-      "whereas lab 20 had you configured various technologies"
+      "this lab uses the same topology as the previous lab number 20 21.30342 whereas lab 20 had you configured various technologies"
     ],
     "ru": [
-      "в то время как в лабораторной работе 20 вы настраивали различные технологии"
+      "в этой лабораторной работе используется та же топология, что и в предыдущей лабораторной работе № 20 21.30342, тогда как в лабораторной работе 20 вы настраивали различные технологии."
     ]
   },
   {
@@ -146,25 +134,13 @@ let objs = [
   {
     "time": [
       54.563013,
-      58.39374
-    ],
-    "en": [
-      "instead I will just show you the configuration errors one by one"
-    ],
-    "ru": [
-      "вместо этого я просто покажу вам ошибки конфигурации одну за другой"
-    ]
-  },
-  {
-    "time": [
-      58.39374,
       62.271893
     ],
     "en": [
-      "however it is important to have some sort of system to troubleshoot"
+      "instead I will just show you the configuration errors one by one 58.39374 however it is important to have some sort of system to troubleshoot"
     ],
     "ru": [
-      "однако важно иметь какую-то систему для устранения неполадок"
+      "вместо этого я просто покажу вам одну за другой ошибки конфигурации 58.39374, однако важно иметь какую-то систему для устранения неполадок"
     ]
   },
   {
@@ -212,7 +188,7 @@ let objs = [
       "ping no.1 dot 12 can't reach PC 2 ping 10.0.0.13 can't reach PC 3"
     ],
     "ru": [
-      "ping № 1 точка 12 не может подключиться к ПК 2 ping 10.0.0.13 не может подключиться к ПК 3"
+      "пинг № 1 точка 12 не может подключиться к ПК 2 пинг 10.0.0.13 не может подключиться к ПК 3"
     ]
   },
   {
@@ -248,7 +224,7 @@ let objs = [
       "so PC 1 can't reach any of the other pcs"
     ],
     "ru": [
-      "поэтому ПК 1 не может связаться ни с одним из других ПК"
+      "поэтому ПК 1 не может подключиться ни к одному из других ПК"
     ]
   },
   {
@@ -290,25 +266,13 @@ let objs = [
   {
     "time": [
       112.498723,
-      114.90809
-    ],
-    "en": [
-      "I'll go on switch one"
-    ],
-    "ru": [
-      "Я пойду на первый переключатель"
-    ]
-  },
-  {
-    "time": [
-      114.90809,
       120.592255
     ],
     "en": [
-      "password out of CCNA enable"
+      "I'll go on switch one 114.90809 password out of CCNA enable"
     ],
     "ru": [
-      "пароль вне CCNA включить"
+      "Я пойду переключить один пароль 114.90809 из включения CCNA"
     ]
   },
   {
@@ -518,25 +482,13 @@ let objs = [
   {
     "time": [
       196.321261,
-      200.08195
-    ],
-    "en": [
-      "notice that the security violation counter hasn't increased"
-    ],
-    "ru": [
-      "обратите внимание, что счетчик нарушений безопасности не увеличился"
-    ]
-  },
-  {
-    "time": [
-      200.08195,
       203.972197
     ],
     "en": [
-      "so PC one isn't triggering anymore port security violations"
+      "notice that the security violation counter hasn't increased 200.08195 so PC one isn't triggering anymore port security violations"
     ],
     "ru": [
-      "так что ПК один больше не вызывает нарушения безопасности порта"
+      "обратите внимание, что счетчик нарушений безопасности не увеличился на 200.08195, поэтому ПК-1 больше не вызывает нарушения безопасности порта"
     ]
   },
   {
@@ -626,25 +578,13 @@ let objs = [
   {
     "time": [
       234.328624,
-      236.59346
-    ],
-    "en": [
-      "it should be 10.0.0.1"
-    ],
-    "ru": [
-      "это должно быть 10.0.0.1"
-    ]
-  },
-  {
-    "time": [
-      236.59346,
       240.326284
     ],
     "en": [
-      "which is the default gateway set on the pcs in VLAN 13"
+      "it should be 10.0.0.1 236.59346 which is the default gateway set on the pcs in VLAN 13"
     ],
     "ru": [
-      "который является шлюзом по умолчанию, установленным на ПК в VLAN 13"
+      "это должен быть 10.0.0.1 236.59346, который является шлюзом по умолчанию, установленным на ПК в VLAN 13."
     ]
   },
   {
@@ -746,25 +686,13 @@ let objs = [
   {
     "time": [
       270.566411,
-      279.71375
-    ],
-    "en": [
-      "next interface G 0 0 24 encapsulation dot1q 24"
-    ],
-    "ru": [
-      "следующий интерфейс G 0 0 24 инкапсуляция dot1q 24"
-    ]
-  },
-  {
-    "time": [
-      279.71375,
       282.573719
     ],
     "en": [
-      "ok that should fix it"
+      "next interface G 0 0 24 encapsulation dot1q 24 279.71375 ok that should fix it"
     ],
     "ru": [
-      "хорошо, это должно исправить"
+      "следующий интерфейс G 0 0 24 инкапсуляция dot1q 24 279.71375 хорошо, это должно исправить"
     ]
   },
   {
@@ -776,7 +704,7 @@ let objs = [
       "now PC one should be able to ping PC 2"
     ],
     "ru": [
-      "теперь компьютер должен иметь возможность пинговать ПК 2"
+      "теперь компьютер должен иметь возможность пинговать компьютер 2"
     ]
   },
   {
@@ -1034,25 +962,13 @@ let objs = [
   {
     "time": [
       368.122358,
-      369.08853
-    ],
-    "en": [
-      "not a trunk"
-    ],
-    "ru": [
-      "не багажник"
-    ]
-  },
-  {
-    "time": [
-      369.08853,
       370.726602
     ],
     "en": [
-      "let's fix that"
+      "not a trunk 369.08853 let's fix that"
     ],
     "ru": [
-      "давай исправим это"
+      "не ствол 369.08853 давайте исправим это"
     ]
   },
   {
@@ -1142,25 +1058,13 @@ let objs = [
   {
     "time": [
       401.166776,
-      402.74561
-    ],
-    "en": [
-      "let's fix that"
-    ],
-    "ru": [
-      "давай исправим это"
-    ]
-  },
-  {
-    "time": [
-      402.74561,
       409.036045
     ],
     "en": [
-      "interface f0 2 switch port access VLAN 13"
+      "let's fix that 402.74561 interface f0 2 switch port access VLAN 13"
     ],
     "ru": [
-      "интерфейс f0 2 порт коммутатора доступ VLAN 13"
+      "давайте исправим, что 402.74561 interface f0 2 switch port access VLAN 13"
     ]
   },
   {
@@ -1286,25 +1190,13 @@ let objs = [
   {
     "time": [
       456.521528,
-      462.97534
-    ],
-    "en": [
-      "next let's ping pc3 which didn't work previously because of the misconfigurations on switch 2"
-    ],
-    "ru": [
-      "затем давайте пингуем pc3, который ранее не работал из-за неправильной конфигурации на переключателе 2"
-    ]
-  },
-  {
-    "time": [
-      462.97534,
       472.392529
     ],
     "en": [
-      "ping 10.0.0.13 now the ping works"
+      "next let's ping pc3 which didn't work previously because of the misconfigurations on switch 2 462.97534 ping 10.0.0.13 now the ping works"
     ],
     "ru": [
-      "ping 10.0.0.13 теперь пинг работает"
+      "затем давайте пингуем pc3, который раньше не работал из-за неправильной конфигурации на коммутаторе 2 462.97534 ping 10.0.0.13 теперь ping работает"
     ]
   },
   {

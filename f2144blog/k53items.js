@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -44,7 +44,7 @@ let objs = [
       "also please subscribe to the channel for more labs like this"
     ],
     "ru": [
-      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторий"
+      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторных работ"
     ]
   },
   {
@@ -368,7 +368,7 @@ let objs = [
       "enable there could be a few problems here like incorrect IP addresses or encapsulation dot1q configurations on the sub interfaces"
     ],
     "ru": [
-      "включить, здесь может быть несколько проблем, таких как неправильные IP-адреса или конфигурации инкапсуляции dot1q на подчиненных интерфейсах"
+      "включить, здесь может быть несколько проблем, таких как неправильные IP-адреса или инкапсуляция конфигурации dot1q на подчиненных интерфейсах"
     ]
   },
   {
@@ -404,7 +404,7 @@ let objs = [
       "they are assigned to the proper VLANs 30 and 40 however look at the IP address on the dot 30 sub-interface"
     ],
     "ru": [
-      "они назначаются соответствующим виртуальным локальным сетям 30 и 40, однако посмотрите на IP-адрес в субинтерфейсе с точкой 30."
+      "они назначаются соответствующим VLAN 30 и 40, однако посмотрите на IP-адрес в субинтерфейсе с точкой 30."
     ]
   },
   {
@@ -536,7 +536,7 @@ let objs = [
       "however nothing appears with the show interfaces trunk command"
     ],
     "ru": [
-      "однако ничего не появляется с командой show interfaces trunk"
+      "однако ничего не отображается с командой show interfaces trunk"
     ]
   },
   {
@@ -740,7 +740,7 @@ let objs = [
       "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, подобные этой, которые будут выпускаться еженедельно"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {

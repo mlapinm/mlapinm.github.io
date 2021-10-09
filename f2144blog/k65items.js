@@ -302,25 +302,13 @@ let objs = [
   {
     "time": [
       99.36689,
-      25599.36689
-    ],
-    "en": [
-      "IP address 192.168.1.1 255 dot 255 dot 255 dot"
-    ],
-    "ru": [
-      "IP-адрес 192.168.1.1 255 точек 255 точек 255 точек"
-    ]
-  },
-  {
-    "time": [
-      25599.36689,
       107.736028
     ],
     "en": [
-      ""
+      "IP address 192.168.1.1 255.255.255.0"
     ],
     "ru": [
-      ""
+      "IP-адрес 192.168.1.1 255.255.255.0"
     ]
   },
   {
@@ -329,22 +317,10 @@ let objs = [
       111.446729
     ],
     "en": [
-      ""
+      "aaaaaa"
     ],
     "ru": [
-      ""
-    ]
-  },
-  {
-    "time": [
-      107.736028,
-      111.446729
-    ],
-    "en": [
-      ""
-    ],
-    "ru": [
-      ""
+      "аааааа"
     ]
   },
   {
@@ -473,10 +449,10 @@ let objs = [
       152.96827
     ],
     "en": [
-      "so 200 oh oh -"
+      "so 200.0.0.2"
     ],
     "ru": [
-      "так 200 ой ой -"
+      "так 200.0.0.2"
     ]
   },
   {
@@ -497,10 +473,10 @@ let objs = [
       158.296728
     ],
     "en": [
-      "now let's go on our to"
+      "now let's go on r 2"
     ],
     "ru": [
-      "теперь давайте перейдем к"
+      "теперь пойдем на r 2"
     ]
   },
   {
@@ -509,10 +485,10 @@ let objs = [
       162.385844
     ],
     "en": [
-      "enable compte"
+      "enable conf t"
     ],
     "ru": [
-      "включить compte"
+      "включить конф т"
     ]
   },
   {
@@ -545,10 +521,22 @@ let objs = [
       174.382465
     ],
     "en": [
-      "fifty five to fifty five to five to"
+      ""
     ],
     "ru": [
-      "от пятидесяти пяти до пятидесяти пяти до пяти до"
+      ""
+    ]
+  },
+  {
+    "time": [
+      170.3709,
+      174.382465
+    ],
+    "en": [
+      ""
+    ],
+    "ru": [
+      ""
     ]
   },
   {
@@ -569,10 +557,10 @@ let objs = [
       184.895775
     ],
     "en": [
-      "the source will be R to s s 0 0 0 interface"
+      "the source will be R 2 s s 0 0 0 interface"
     ],
     "ru": [
-      "источником будет R to s s 0 0 0 интерфейс"
+      "источником будет R 2 s s 0 0 0 интерфейс"
     ]
   },
   {
@@ -605,10 +593,10 @@ let objs = [
       199.295502
     ],
     "en": [
-      "tunnel destination 100 odo - ok"
+      "tunnel destination 100.0.0.2 ok"
     ],
     "ru": [
-      "пункт назначения туннеля 100 одо - ок"
+      "пункт назначения туннеля 100.0.0.2 нормально"
     ]
   },
   {
@@ -653,10 +641,10 @@ let objs = [
       216.222804
     ],
     "en": [
-      "Artoo's tunnel destination is 100 oh oh -"
+      "r2's tunnel destination is 100.0.0.2"
     ],
     "ru": [
-      "Пункт назначения туннеля Арту - 100 ой ой -"
+      "Назначение туннеля r2 - 100.0.0.2"
     ]
   },
   {
@@ -725,10 +713,10 @@ let objs = [
       240.39328
     ],
     "en": [
-      "let's configure a static default route via SPR to"
+      "let's configure a static default route via SPR 2"
     ],
     "ru": [
-      "давайте настроим статический маршрут по умолчанию через SPR на"
+      "настроим статический маршрут по умолчанию через SPR 2"
     ]
   },
   {
@@ -737,10 +725,10 @@ let objs = [
       250.965547
     ],
     "en": [
-      "exit IP route oh-oh-oh-oh-oh-oh-oh-oh-oh 201"
+      "exit IP route 0.0.0.0 0.0.0.0 200.0.0.1"
     ],
     "ru": [
-      "выход IP-маршрута ой-ой-ой-ой-ой-ой-ой-ой-ой 201"
+      "выход из IP-маршрута 0.0.0.0 0.0.0.0 200.0.0.1"
     ]
   },
   {
@@ -749,10 +737,10 @@ let objs = [
       254.287611
     ],
     "en": [
-      "now we have to do the same on our one"
+      "now we have to do the same on r1"
     ],
     "ru": [
-      "теперь мы должны сделать то же самое с нашим"
+      "теперь мы должны сделать то же самое на r1"
     ]
   },
   {
@@ -761,10 +749,10 @@ let objs = [
       266.663869
     ],
     "en": [
-      "exit IP route oh-oh-oh-oh-oh-oh-oh-oh-oh 101"
+      "exit IP route 0.0.0.0 0.0.0.0 100.0.0.1"
     ],
     "ru": [
-      "выход IP-маршрута о-о-о-о-о-о-о-о-о 101"
+      "выход из IP-маршрута 0.0.0.0 0.0.0.0 100.0.0.1"
     ]
   },
   {
@@ -905,10 +893,10 @@ let objs = [
       322.465569
     ],
     "en": [
-      "and you can see the tunnel protocol is gr e being transported over IP"
+      "and you can see the tunnel protocol is gre being transported over IP"
     ],
     "ru": [
-      "и вы можете видеть, что туннельный протокол транспортируется по IP"
+      "и вы можете видеть, что протокол туннеля gre передается по IP"
     ]
   },
   {
@@ -917,10 +905,10 @@ let objs = [
       327.0538
     ],
     "en": [
-      "ok now let's configure AI GRP over the tunnel"
+      "ok now let's configure EIGRP over the tunnel"
     ],
     "ru": [
-      "хорошо, теперь давайте настроим AI GRP через туннель"
+      "хорошо, теперь давайте настроим EIGRP через туннель"
     ]
   },
   {
@@ -929,10 +917,10 @@ let objs = [
       330.73151
     ],
     "en": [
-      "router ERP"
+      "router EIGRP"
     ],
     "ru": [
-      "маршрутизатор ERP"
+      "маршрутизатор EIGRP"
     ]
   },
   {
@@ -965,10 +953,10 @@ let objs = [
       344.164503
     ],
     "en": [
-      "so Network 1000 100 200 255"
+      "so Network 10.0.1.0 0.0.0.255"
     ],
     "ru": [
-      "так Сеть 1000 100 200 255"
+      "так Сеть 10.0.1.0 0.0.0.255"
     ]
   },
   {
@@ -989,10 +977,10 @@ let objs = [
       349.986816
     ],
     "en": [
-      "but remember it's not always needed for EIG RP"
+      "but remember it's not always needed for EIGRP"
     ],
     "ru": [
-      "но помните, что это не всегда нужно для EIG RP"
+      "но помните, что это не всегда нужно для EIGRP"
     ]
   },
   {
@@ -1001,10 +989,10 @@ let objs = [
       358.386203
     ],
     "en": [
-      "just network 10000 would have activated AI GRP on the G 0 0 interface as well"
+      "just network 10.0.0.0 would have activated EIGRP on the G 0 0 interface as well"
     ],
     "ru": [
-      "просто сеть 10000 также активировала AI GRP на интерфейсе G 0 0"
+      "просто сеть 10.0.0.0 также активировала бы EIGRP на интерфейсе G 0 0."
     ]
   },
   {
@@ -1013,10 +1001,10 @@ let objs = [
       363.100376
     ],
     "en": [
-      "okay now let's activate di GRP on the tunnel"
+      "okay now let's activate EIGRP on the tunnel"
     ],
     "ru": [
-      "Хорошо, теперь давайте активируем ди GRP в туннеле"
+      "хорошо, теперь давайте активируем EIGRP в туннеле"
     ]
   },
   {
@@ -1061,10 +1049,10 @@ let objs = [
       374.968902
     ],
     "en": [
-      "ok let's do the same on our two"
+      "ok let's do the same on r2"
     ],
     "ru": [
-      "хорошо, давай сделаем то же самое с нашими двумя"
+      "хорошо, давайте сделаем то же самое на R2"
     ]
   },
   {
@@ -1073,10 +1061,10 @@ let objs = [
       380.397859
     ],
     "en": [
-      "rotary IG RP 100"
+      "router EIGRP 100"
     ],
     "ru": [
-      "роторный ИГ РП 100"
+      "роутер EIGRP 100"
     ]
   },
   {
@@ -1085,10 +1073,10 @@ let objs = [
       386.406884
     ],
     "en": [
-      "Network 1002 oh-oh-oh-oh 255"
+      "Network 10.0.2.0 0.0.0.255"
     ],
     "ru": [
-      "Сеть 1002 ой-ой-ой-ой 255"
+      "Сеть 10.0.2.0 0.0.0.255"
     ]
   },
   {
@@ -1097,10 +1085,10 @@ let objs = [
       392.40643
     ],
     "en": [
-      "network 192.168.1.0 oh oh oh 3"
+      "network 192.168.1.0 0.0.0.3"
     ],
     "ru": [
-      "сеть 192.168.1.0 ой ой ой 3"
+      "сеть 192.168.1.0 0.0.0.3"
     ]
   },
   {
@@ -1109,10 +1097,10 @@ let objs = [
       397.856702
     ],
     "en": [
-      "immediately we get a message saying we have a new AI GRP adjacency"
+      "immediately we get a message saying we have a new EIGRP adjacency"
     ],
     "ru": [
-      "сразу мы получаем сообщение о том, что у нас есть новая смежность AI GRP"
+      "сразу же мы получаем сообщение о том, что у нас новая смежность EIGRP"
     ]
   },
   {
@@ -1181,10 +1169,10 @@ let objs = [
       412.86457
     ],
     "en": [
-      "look are two learned our ones"
+      "look are two learned r 1"
     ],
     "ru": [
-      "смотри, двое узнали наши"
+      "смотри, двое учились r 1"
     ]
   },
   {
@@ -1217,10 +1205,10 @@ let objs = [
       420.774434
     ],
     "en": [
-      "let's try a ping from PC to 2 PC one"
+      "let's try a ping from PC 2 to PC 1"
     ],
     "ru": [
-      "попробуем пинг с ПК на 2 ПК один"
+      "давайте попробуем пинг с ПК 2 на ПК 1"
     ]
   },
   {
@@ -1229,10 +1217,10 @@ let objs = [
       428.740669
     ],
     "en": [
-      "ping 1001 100"
+      "ping 10.0.1.100"
     ],
     "ru": [
-      "пинг 1001 100"
+      "пинг 10.0.1.100"
     ]
   },
   {
@@ -1265,10 +1253,10 @@ let objs = [
       446.579241
     ],
     "en": [
-      "and we successfully configured a IG RP over the tunnel to share the inside networks"
+      "and we successfully configured a EIGRP over the tunnel to share the inside networks"
     ],
     "ru": [
-      "и мы успешно настроили IG RP через туннель для совместного использования внутренних сетей"
+      "и мы успешно настроили EIGRP через туннель для совместного использования внутренних сетей"
     ]
   },
   {

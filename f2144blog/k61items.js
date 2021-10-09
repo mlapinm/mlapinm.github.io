@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -44,7 +44,7 @@ let objs = [
       "also please subscribe to the channel for more labs like this"
     ],
     "ru": [
-      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторий"
+      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторных работ"
     ]
   },
   {
@@ -77,10 +77,10 @@ let objs = [
       42.681853
     ],
     "en": [
-      "on a Cisco router the default layer 2 encapsulation on a serial connection is Cisco hdl-c"
+      "on a Cisco router the default layer 2 encapsulation on a serial connection is Cisco hdlc"
     ],
     "ru": [
-      "на маршрутизаторе Cisco инкапсуляция уровня 2 по умолчанию для последовательного соединения - Cisco hdl-c"
+      "на маршрутизаторе Cisco инкапсуляция уровня 2 по умолчанию для последовательного соединения - Cisco hdlc"
     ]
   },
   {
@@ -92,7 +92,7 @@ let objs = [
       "however PPP provides superior security through authentication functionality"
     ],
     "ru": [
-      "однако PPP обеспечивает превосходную безопасность за счет функции аутентификации"
+      "однако PPP обеспечивает превосходную безопасность за счет функции аутентификации."
     ]
   },
   {
@@ -113,10 +113,10 @@ let objs = [
       59.891353
     ],
     "en": [
-      "on the connection between r1 and SPR one"
+      "on the connection between r1 and SPR 1"
     ],
     "ru": [
-      "на связи между r1 и SPR one"
+      "на связи между r1 и SPR 1"
     ]
   },
   {
@@ -257,10 +257,10 @@ let objs = [
       109.564165
     ],
     "en": [
-      "there it is encapsulation hdl-c"
+      "there it is encapsulation hdlc"
     ],
     "ru": [
-      "вот и инкапсуляция hdl-c"
+      "вот это инкапсуляция HDLC"
     ]
   },
   {
@@ -272,7 +272,7 @@ let objs = [
       "also notice that the interface is in the up-down State"
     ],
     "ru": [
-      "также обратите внимание, что интерфейс находится в состоянии вверх-вниз"
+      "также обратите внимание, что интерфейс находится в состоянии «вверх-вниз»"
     ]
   },
   {
@@ -329,10 +329,10 @@ let objs = [
       134.340498
     ],
     "en": [
-      "ping 100 0.1"
+      "ping 100.0.0.1"
     ],
     "ru": [
-      "пинг 100 0,1"
+      "пинг 100.0.0.1"
     ]
   },
   {
@@ -353,10 +353,10 @@ let objs = [
       142.716393
     ],
     "en": [
-      "let's enable PPP on our one"
+      "let's enable PPP on r1"
     ],
     "ru": [
-      "давайте включим PPP на нашем"
+      "давайте включим PPP на r1"
     ]
   },
   {
@@ -413,10 +413,10 @@ let objs = [
       160.295371
     ],
     "en": [
-      "because we haven't configured authentication yet on our one"
+      "because we haven't configured authentication yet on r1"
     ],
     "ru": [
-      "потому что мы еще не настроили аутентификацию на нашем"
+      "потому что мы еще не настроили аутентификацию на r1"
     ]
   },
   {
@@ -425,10 +425,10 @@ let objs = [
       162.74235
     ],
     "en": [
-      "but it's already configured on SPR one"
+      "but it's already configured on SPR 1"
     ],
     "ru": [
-      "но он уже настроен на SPR один"
+      "но он уже настроен на SPR 1"
     ]
   },
   {
@@ -461,10 +461,10 @@ let objs = [
       176.019142
     ],
     "en": [
-      "so we have to configure our one to send that username and password to SP r1 to authenticate"
+      "so we have to configure r 1 to send that username and password to SP r1 to authenticate"
     ],
     "ru": [
-      "поэтому мы должны настроить наш, чтобы отправить это имя пользователя и пароль в SP r1 для аутентификации"
+      "поэтому мы должны настроить r 1 для отправки этого имени пользователя и пароля в SP r1 для аутентификации"
     ]
   },
   {
@@ -677,10 +677,10 @@ let objs = [
       250.588641
     ],
     "en": [
-      "let's see if we can ping SPR one"
+      "let's see if we can ping SPR 1"
     ],
     "ru": [
-      "посмотрим, сможем ли мы пинговать SPR один"
+      "посмотрим, сможем ли мы пинговать SPR 1"
     ]
   },
   {
@@ -689,10 +689,10 @@ let objs = [
       254.905411
     ],
     "en": [
-      "do ping 100 0 1"
+      "do ping 100.0.0.1"
     ],
     "ru": [
-      "сделать пинг 100 0 1"
+      "сделать пинг 100.0.0.1"
     ]
   },
   {
@@ -713,10 +713,10 @@ let objs = [
       265.023599
     ],
     "en": [
-      "so to summarize PPP with pap"
+      "so to summarize PPP with PAP"
     ],
     "ru": [
-      "Итак, чтобы резюмировать PPP с pap"
+      "Итак, чтобы резюмировать PPP с PAP"
     ]
   },
   {
@@ -797,10 +797,10 @@ let objs = [
       303.202536
     ],
     "en": [
-      "of course the road around the other end must have that username and password configured on it"
+      "of course the route at the other end must have that username and password configured on it"
     ],
     "ru": [
-      "конечно, дорога вокруг другого конца должна иметь это имя пользователя и пароль, настроенные на нем"
+      "конечно, маршрут на другом конце должен иметь это имя пользователя и пароль, настроенные на нем"
     ]
   },
   {
@@ -821,10 +821,10 @@ let objs = [
       316.611473
     ],
     "en": [
-      "next let's configure PPP with chap authentication on our -"
+      "next let's configure PPP with chap authentication on r 2"
     ],
     "ru": [
-      "Затем давайте настроим PPP с аутентификацией chap на нашем -"
+      "Далее давайте настроим PPP с аутентификацией chap на r 2"
     ]
   },
   {
@@ -881,10 +881,10 @@ let objs = [
       337.36918
     ],
     "en": [
-      "so let's go on our to"
+      "so let's go on r 2"
     ],
     "ru": [
-      "так что давай продолжим"
+      "так что пойдем на r 2"
     ]
   },
   {
@@ -917,10 +917,10 @@ let objs = [
       350.753867
     ],
     "en": [
-      "the default encapsulation is hdl-c"
+      "the default encapsulation is hdlc"
     ],
     "ru": [
-      "инкапсуляция по умолчанию - hdl-c"
+      "инкапсуляция по умолчанию - hdlc"
     ]
   },
   {
@@ -953,10 +953,10 @@ let objs = [
       362.062221
     ],
     "en": [
-      "let's see if we can ping SPR to"
+      "let's see if we can ping SPR 2"
     ],
     "ru": [
-      "посмотрим, сможем ли мы пинговать SPR на"
+      "посмотрим, сможем ли мы пинговать SPR 2"
     ]
   },
   {
@@ -965,10 +965,10 @@ let objs = [
       365.489304
     ],
     "en": [
-      "ping 200 oh you won"
+      "ping 200.0.0.1"
     ],
     "ru": [
-      "пинг 200 о, ты выиграл"
+      "пинг 200.0.0.1"
     ]
   },
   {
@@ -1049,10 +1049,10 @@ let objs = [
       392.287304
     ],
     "en": [
-      "in this case that is SPR two"
+      "in this case that is SPR 2"
     ],
     "ru": [
-      "в данном случае это SPR два"
+      "в данном случае это SPR 2"
     ]
   },
   {
@@ -1061,10 +1061,10 @@ let objs = [
       399.282116
     ],
     "en": [
-      "so username SPR two password CCNA"
+      "so username SPR 2 password CCNA"
     ],
     "ru": [
-      "так имя пользователя SPR два пароля CCNA"
+      "так имя пользователя SPR 2 пароль CCNA"
     ]
   },
   {
@@ -1085,10 +1085,10 @@ let objs = [
       409.429824
     ],
     "en": [
-      "so I've already configured username our two passwords CCNA on the service provider side"
+      "so I've already configured username r 2 passwords CCNA on the service provider side"
     ],
     "ru": [
-      "поэтому я уже настроил имя пользователя для наших двух паролей CCNA на стороне поставщика услуг"
+      "поэтому я уже настроил имя пользователя r 2 пароля CCNA на стороне поставщика услуг"
     ]
   },
   {
@@ -1169,10 +1169,10 @@ let objs = [
       435.803613
     ],
     "en": [
-      "set the encapsulation dat PPP like on our 1"
+      "set the encapsulation dat PPP like on r 1"
     ],
     "ru": [
-      "установите PPP инкапсуляции, как на нашем 1"
+      "установите PPP инкапсуляции, как на r 1"
     ]
   },
   {
@@ -1292,7 +1292,7 @@ let objs = [
       "now let's try to ping the service provider"
     ],
     "ru": [
-      "теперь давайте попробуем пинговать поставщика услуг"
+      "теперь попробуем пинговать поставщика услуг"
     ]
   },
   {
@@ -1301,10 +1301,10 @@ let objs = [
       469.896488
     ],
     "en": [
-      "do ping 200 0.1"
+      "do ping 200.0.0.1"
     ],
     "ru": [
-      "сделать пинг 200 0,1"
+      "сделать пинг 200.0.0.1"
     ]
   },
   {
@@ -1361,10 +1361,10 @@ let objs = [
       491.073923
     ],
     "en": [
-      "do ping 100 oh oh -"
+      "do ping 100.0.0.2"
     ],
     "ru": [
-      "сделать пинг 100 ой ой -"
+      "сделать пинг 100.0.0.2"
     ]
   },
   {
@@ -1484,7 +1484,7 @@ let objs = [
       "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, подобные этой, которые будут выпускаться еженедельно"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {
@@ -1508,7 +1508,7 @@ let objs = [
       "if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description"
     ],
     "ru": [
-      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфириумом по адресам в описании"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах и эфириуме по адресам в описании"
     ]
   },
   {

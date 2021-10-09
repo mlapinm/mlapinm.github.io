@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -212,7 +212,7 @@ let objs = [
       "once again this is because PC one has an IP address in a private IP range"
     ],
     "ru": [
-      "еще раз это связано с тем, что у ПК есть IP-адрес в частном IP-диапазоне"
+      "еще раз это потому, что у ПК есть IP-адрес в частном IP-диапазоне"
     ]
   },
   {
@@ -248,7 +248,7 @@ let objs = [
       "so let's configure Pat on r1 to translate the IP addresses of pc-1 pc2 and pc 3 to the IP address of our ones s0 3-0 interface"
     ],
     "ru": [
-      "Итак, давайте настроим Pat на r1 для преобразования IP-адресов pc-1 pc2 и pc 3 в IP-адрес нашего интерфейса s0 3-0"
+      "Итак, давайте настроим Pat на r1, чтобы преобразовать IP-адреса pc-1 pc2 и pc 3 в IP-адрес нашего интерфейса s0 3-0"
     ]
   },
   {
@@ -644,7 +644,7 @@ let objs = [
       "ok now let's go on r1 and check the translations"
     ],
     "ru": [
-      "хорошо, теперь давайте перейдем к r1 и проверим переводы"
+      "Хорошо, теперь давайте перейдем к r1 и проверим переводы"
     ]
   },
   {
@@ -788,7 +788,7 @@ let objs = [
       "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, подобные этой, которые будут выпускаться еженедельно"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {
@@ -812,7 +812,7 @@ let objs = [
       "if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description"
     ],
     "ru": [
-      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфириумом по адресам в описании"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах и эфириуме по адресам в описании"
     ]
   },
   {

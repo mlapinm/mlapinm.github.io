@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -386,25 +386,13 @@ let objs = [
   {
     "time": [
       134.467056,
-      135.60099
-    ],
-    "en": [
-      "yes it is"
-    ],
-    "ru": [
-      "Да, это так"
-    ]
-  },
-  {
-    "time": [
-      135.60099,
       137.451453
     ],
     "en": [
-      "as you can see here in packet tracer"
+      "yes it is 135.60099 as you can see here in packet tracer"
     ],
     "ru": [
-      "как вы можете видеть здесь, в пакетном трассировщике"
+      "да, это 135.60099, как вы можете видеть здесь, в пакетном трассировщике"
     ]
   },
   {
@@ -458,49 +446,25 @@ let objs = [
   {
     "time": [
       153.622681,
-      159.08914
-    ],
-    "en": [
-      "but as we can see there is only one serial interface serial zero"
-    ],
-    "ru": [
-      "но, как мы видим, есть только один последовательный интерфейс serial zero"
-    ]
-  },
-  {
-    "time": [
-      159.08914,
       162.101767
     ],
     "en": [
-      "and it's administrative lead down"
+      "but as we can see there is only one serial interface serial zero 159.08914 and it's administrative lead down"
     ],
     "ru": [
-      "и это административное ведение вниз"
+      "но, как мы видим, есть только один последовательный интерфейс, серийный ноль 159.08914, и его административное ведение вниз"
     ]
   },
   {
     "time": [
       162.101767,
-      164.56889
-    ],
-    "en": [
-      "that means if we do a show run command"
-    ],
-    "ru": [
-      "это означает, что если мы выполним команду show run"
-    ]
-  },
-  {
-    "time": [
-      164.56889,
       166.199811
     ],
     "en": [
-      "which I will do now"
+      "that means if we do a show run command 164.56889 which I will do now"
     ],
     "ru": [
-      "что я сделаю сейчас"
+      "это означает, что если мы выполним команду show run 164.56889, которую я сделаю сейчас"
     ]
   },
   {
@@ -566,37 +530,13 @@ let objs = [
   {
     "time": [
       179.757747,
-      182.39393
-    ],
-    "en": [
-      "let's check on our to also"
-    ],
-    "ru": [
-      "давайте также проверим"
-    ]
-  },
-  {
-    "time": [
-      182.39393,
-      186.24296
-    ],
-    "en": [
-      "enable show IP interface brief"
-    ],
-    "ru": [
-      "включить краткое отображение IP-интерфейса"
-    ]
-  },
-  {
-    "time": [
-      186.24296,
       188.130114
     ],
     "en": [
-      "again it is shutdown"
+      "let's check on our to also 182.39393 enable show IP interface brief 186.24296 again it is shutdown"
     ],
     "ru": [
-      "опять выключение"
+      "Давайте проверим, что мы также 182.39393, чтобы включить отображение IP-интерфейса, краткое 186.24296 снова, это выключение"
     ]
   },
   {
@@ -758,25 +698,13 @@ let objs = [
   {
     "time": [
       240.601434,
-      246.1742
-    ],
-    "en": [
-      "enable show CDP neighbors"
-    ],
-    "ru": [
-      "включить показывать соседей CDP"
-    ]
-  },
-  {
-    "time": [
-      246.1742,
       252.643814
     ],
     "en": [
-      "as you can see switch 2 is connected to R 2 through the Fast Ethernet 0-1 interface"
+      "enable show CDP neighbors 246.1742 as you can see switch 2 is connected to R 2 through the Fast Ethernet 0-1 interface"
     ],
     "ru": [
-      "как вы можете видеть, коммутатор 2 подключен к R 2 через интерфейс Fast Ethernet 0-1."
+      "включить показывать соседей CDP 246.1742, поскольку вы можете видеть, что коммутатор 2 подключен к R 2 через интерфейс Fast Ethernet 0-1"
     ]
   },
   {
@@ -806,25 +734,13 @@ let objs = [
   {
     "time": [
       265.096818,
-      267.39343
-    ],
-    "en": [
-      "and which end is DTE"
-    ],
-    "ru": [
-      "а конец - DTE"
-    ]
-  },
-  {
-    "time": [
-      267.39343,
       272.575616
     ],
     "en": [
-      "in serial connections one side is DCE or data communications equipment"
+      "and which end is DTE 267.39343 in serial connections one side is DCE or data communications equipment"
     ],
     "ru": [
-      "в последовательных соединениях одна сторона - DCE или оборудование передачи данных"
+      "и на каком конце DTE 267.39343 в последовательных соединениях, одна сторона - DCE или оборудование передачи данных"
     ]
   },
   {
@@ -926,25 +842,13 @@ let objs = [
   {
     "time": [
       306.247824,
-      309.63548
-    ],
-    "en": [
-      "can you find what we're looking for"
-    ],
-    "ru": [
-      "Вы можете найти то, что мы ищем"
-    ]
-  },
-  {
-    "time": [
-      309.63548,
       311.101373
     ],
     "en": [
-      "there it is"
+      "can you find what we're looking for 309.63548 there it is"
     ],
     "ru": [
-      "вот оно"
+      "Вы можете найти то, что мы ищем 309.63548, вот оно"
     ]
   },
   {
@@ -1226,25 +1130,13 @@ let objs = [
   {
     "time": [
       409.050174,
-      410.87602
-    ],
-    "en": [
-      "so let's configure r1"
-    ],
-    "ru": [
-      "так что давайте настроим r1"
-    ]
-  },
-  {
-    "time": [
-      410.87602,
       426.513926
     ],
     "en": [
-      "IP address 192.168.1.1 at him this is something you should know if not don't worry about it"
+      "so let's configure r1 410.87602 IP address 192.168.1.1 at him this is something you should know if not don't worry about it"
     ],
     "ru": [
-      "IP-адрес 192.168.1.1 у него это то, что вы должны знать, если не беспокойтесь об этом"
+      "Итак, давайте настроим на нем IP-адрес 192.168.1.1 r1 410.87602, это то, что вы должны знать, если не беспокойтесь об этом"
     ]
   },
   {
@@ -1286,25 +1178,13 @@ let objs = [
   {
     "time": [
       434.811706,
-      439.66486
-    ],
-    "en": [
-      "conf t interface serial zero"
-    ],
-    "ru": [
-      "conf t интерфейс серийный ноль"
-    ]
-  },
-  {
-    "time": [
-      439.66486,
       444.158026
     ],
     "en": [
-      "IP address 192.168.0.2"
+      "conf t interface serial zero 439.66486 IP address 192.168.0.2"
     ],
     "ru": [
-      "IP-адрес 192.168.0.2"
+      "conf t интерфейс серийный ноль 439.66486 IP-адрес 192.168.0.2"
     ]
   },
   {
@@ -1370,25 +1250,13 @@ let objs = [
   {
     "time": [
       463.268323,
-      470.39099
-    ],
-    "en": [
-      "the IP address of our one serial zero interface is 192.168.0.1 so"
-    ],
-    "ru": [
-      "IP-адрес нашего одного последовательного нулевого интерфейса - 192.168.0.1, поэтому"
-    ]
-  },
-  {
-    "time": [
-      470.39099,
       474.510172
     ],
     "en": [
-      "ping 192.168.0.1"
+      "the IP address of our one serial zero interface is 192.168.0.1 so 470.39099 ping 192.168.0.1"
     ],
     "ru": [
-      "пинг 192.168.0.1"
+      "IP-адрес нашего одного последовательного нулевого интерфейса - 192.168.0.1, поэтому 470.39099 ping 192.168.0.1"
     ]
   },
   {

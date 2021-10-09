@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -44,7 +44,7 @@ let objs = [
       "also please subscribe to the channel for more labs like this"
     ],
     "ru": [
-      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторий"
+      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторных работ"
     ]
   },
   {
@@ -77,10 +77,10 @@ let objs = [
       38.532719
     ],
     "en": [
-      "unlike rip AIG RP and OSPF which are iGPS or interior gateway protocols"
+      "unlike rip EIGRP and OSPF which are IGPS or interior gateway protocols"
     ],
     "ru": [
-      "в отличие от rip AIG RP и OSPF, которые являются протоколами iGPS или внутреннего шлюза"
+      "в отличие от rip EIGRP и OSPF, которые являются протоколами IGPS или внутреннего шлюза"
     ]
   },
   {
@@ -89,10 +89,10 @@ let objs = [
       43.59442
     ],
     "en": [
-      "BGP is an eg P an exterior gateway protocol"
+      "BGP is an IGP an exterior gateway protocol"
     ],
     "ru": [
-      "BGP - это, например, P протокол внешнего шлюза."
+      "BGP - это IGP протокол внешнего шлюза"
     ]
   },
   {
@@ -101,10 +101,10 @@ let objs = [
       48.562241
     ],
     "en": [
-      "while I GPS are used for routing within an organization"
+      "while IGPS are used for routing within an organization"
     ],
     "ru": [
-      "в то время как I GPS используются для маршрутизации внутри организации"
+      "в то время как IGPS используются для маршрутизации внутри организации"
     ]
   },
   {
@@ -152,7 +152,7 @@ let objs = [
       "you can go deeper into BGP by continuing to the ccnp or by looking at the service provider track of certifications"
     ],
     "ru": [
-      "вы можете углубиться в BGP, перейдя к ccnp или просмотрев список сертификатов поставщика услуг"
+      "вы можете глубже изучить BGP, перейдя к ccnp или просмотрев список сертификатов поставщика услуг."
     ]
   },
   {
@@ -173,10 +173,10 @@ let objs = [
       82.536684
     ],
     "en": [
-      "or ebgp for single home to branch connectivity"
+      "or ibgp for single home to branch connectivity"
     ],
     "ru": [
-      "или ebgp для подключения одного дома к филиалу"
+      "или ibgp для подключения одного дома к филиалу"
     ]
   },
   {
@@ -428,7 +428,7 @@ let objs = [
       "this is because we haven't advertised our internal networks to the service provider"
     ],
     "ru": [
-      "это потому, что мы не рекламировали наши внутренние сети поставщику услуг"
+      "это потому, что мы не рекламировали наши внутренние сети поставщику услуг."
     ]
   },
   {
@@ -857,10 +857,10 @@ let objs = [
       299.555953
     ],
     "en": [
-      "for example our one has a loopback of 1.1.1 1/32"
+      "for example our one has a loopback of 1.1.1.1/32"
     ],
     "ru": [
-      "например у нашего есть шлейф 1.1.1 1/32"
+      "например у нашего есть шлейф 1.1.1.1/32"
     ]
   },
   {
@@ -869,10 +869,10 @@ let objs = [
       305.624774
     ],
     "en": [
-      "if I enter 100 with a / 8 mask in the network command"
+      "if I enter 1.0.0.0 with a / 8 mask in the network command"
     ],
     "ru": [
-      "если я введу 100 с маской / 8 в сетевой команде"
+      "если я введу 1.0.0.0 с маской / 8 в сетевой команде"
     ]
   },
   {
@@ -893,10 +893,10 @@ let objs = [
       312.930601
     ],
     "en": [
-      "I have to enter the exact 1.1.11 / 32 network to advertise it"
+      "I have to enter the exact 1.1.1.1 / 32 network to advertise it"
     ],
     "ru": [
-      "Мне нужно ввести точную сеть 1.1.11 / 32, чтобы рекламировать ее"
+      "Мне нужно ввести точную сеть 1.1.1.1 / 32, чтобы рекламировать ее"
     ]
   },
   {
@@ -929,10 +929,10 @@ let objs = [
       331.251712
     ],
     "en": [
-      "as you can see I have rights to 1.1.11 / 32 - 2 - 2 / 32 and 3.33 3/32"
+      "as you can see I have rights to 1.1.1.1 / 2.2.2.2 / 32 and 3.3.3.3/32"
     ],
     "ru": [
-      "как видите, у меня есть права на 1.1.11 / 32-2-2 / 32 и 3.33 3/32"
+      "как видите, у меня есть права на 1.1.1.1 / 2.2.2.2 / 32 и 3.3.3.3/32"
     ]
   },
   {
@@ -965,10 +965,10 @@ let objs = [
       346.988696
     ],
     "en": [
-      "Network 1.1.11 mask 255.255.255.0 5"
+      "Network 1.1.1.1 mask 255.255.255.255"
     ],
     "ru": [
-      "Маска сети 1.1.11 255.255.255.0 5"
+      "Сеть 1.1.1.1 маска 255.255.255.255"
     ]
   },
   {
@@ -989,10 +989,10 @@ let objs = [
       353.843934
     ],
     "en": [
-      "and also it's not a wildcard mask like in Eid RP and OSPF"
+      "and also it's not a wildcard mask like in EIGRP and OSPF"
     ],
     "ru": [
-      "а также это не подстановочная маска, как в Eid RP и OSPF"
+      "а также это не подстановочная маска, как в EIGRP и OSPF"
     ]
   },
   {
@@ -1025,10 +1025,10 @@ let objs = [
       365.571984
     ],
     "en": [
-      "Network - - - - mask 255.255.255.0 5"
+      "Network 2.2.2.2 mask 255.255.255.255"
     ],
     "ru": [
-      "Сеть - - - - маска 255.255.255.0 5"
+      "Сеть 2.2.2.2 маска 255.255.255.255"
     ]
   },
   {
@@ -1037,10 +1037,10 @@ let objs = [
       373.113299
     ],
     "en": [
-      "Network 3 3 3 3 mask 255.255.255.0 5"
+      "Network 3.3.3.3 mask 255.255.255.255"
     ],
     "ru": [
-      "Сеть 3 3 3 3 маска 255.255.255.0 5"
+      "Сеть 3.3.3.3 маска 255.255.255.255"
     ]
   },
   {
@@ -1049,10 +1049,10 @@ let objs = [
       379.7028
     ],
     "en": [
-      "ok the next step is to advertise a summary of the Tendo 12/30 10.23 o / 30"
+      "ok the next step is to advertise a summary of the Tendo 10.0.12.0/30"
     ],
     "ru": [
-      "хорошо, следующий шаг - рекламировать резюме Tendo 12/30 10.23 o / 30"
+      "хорошо, следующий шаг - рекламировать резюме Tendo 10.0.12.0/30"
     ]
   },
   {
@@ -1061,10 +1061,10 @@ let objs = [
       382.336768
     ],
     "en": [
-      "and 10.30"
+      "and 10.0.23.0/30"
     ],
     "ru": [
-      "и 10.30"
+      "и 10.0.23.0/30"
     ]
   },
   {
@@ -1073,10 +1073,10 @@ let objs = [
       385.639988
     ],
     "en": [
-      "know / 30 networks"
+      "know 10.0.13.0/30 networks"
     ],
     "ru": [
-      "знать / 30 сетей"
+      "знать сети 10.0.13.0/30"
     ]
   },
   {
@@ -1133,10 +1133,10 @@ let objs = [
       405.944568
     ],
     "en": [
-      "there is no 1000 2/16 network in the routing table"
+      "there is no 10.0.0.0 /16 network in the routing table"
     ],
     "ru": [
-      "в таблице маршрутизации нет сети 1000 2/16"
+      "в таблице маршрутизации нет сети 10.0.0.0 / 16"
     ]
   },
   {
@@ -1157,10 +1157,10 @@ let objs = [
       416.457809
     ],
     "en": [
-      "network 10000 mask 255.255.255.0"
+      "network 10.0.0.0 mask 255.255.0.0"
     ],
     "ru": [
-      "сеть 10000 маска 255.255.255.0"
+      "сеть 10.0.0.0 маска 255.255.0.0"
     ]
   },
   {
@@ -1193,10 +1193,10 @@ let objs = [
       437.773431
     ],
     "en": [
-      "because r1 is in advertising that 1000 / 16 Network yet"
+      "because r1 is in advertising that 10.0.0.0 / 16 Network yet"
     ],
     "ru": [
-      "потому что r1 рекламирует сеть 1000/16."
+      "потому что r1 в рекламе, что сеть 10.0.0.0 / 16 еще"
     ]
   },
   {
@@ -1229,10 +1229,10 @@ let objs = [
       453.48699
     ],
     "en": [
-      "exit IP route 10000 255 255 0 0"
+      "exit IP route 10.0.0.0 255.255.0.0"
     ],
     "ru": [
-      "выход из IP-маршрута 10000255255 0 0"
+      "выйти из IP-маршрута 10.0.0.0 255.255.0.0"
     ]
   },
   {
@@ -1313,10 +1313,10 @@ let objs = [
       478.656333
     ],
     "en": [
-      "there's the 10000 / 16 route"
+      "there's the 10.0.0.0 / 16 route"
     ],
     "ru": [
-      "есть маршрут 10000/16"
+      "есть маршрут 10.0.0.0 / 16"
     ]
   },
   {
@@ -1337,10 +1337,10 @@ let objs = [
       493.806332
     ],
     "en": [
-      "any traffic that comes for the Tendo 12/30 10.30 no / 30 or 10.23 o / 30 networks will be sent out their appropriate interfaces"
+      "any traffic that comes for the 10.0.12.0/30 10.0.13.0 / 30 or 10.0.23.0 / 30 networks will be sent out their appropriate interfaces"
     ],
     "ru": [
-      "любой трафик, который поступает для сетей Tendo 12/30 10.30 no / 30 или 10.23 o / 30, будет отправлен через соответствующие интерфейсы"
+      "любой трафик, который поступает для сетей 10.0.12.0/30, 10.0.13.0 / 30 или 10.0.23.0 / 30, будет отправлен на соответствующие интерфейсы."
     ]
   },
   {
@@ -1361,10 +1361,10 @@ let objs = [
       508.024381
     ],
     "en": [
-      "however if something comes for the 1001 o / 24 Network for example"
+      "however if something comes for the 10.0.1.0 / 24 Network for example"
     ],
     "ru": [
-      "однако, если что-то приходит, например, для сети 1001 o / 24"
+      "однако, если что-то приходит, например, для сети 10.0.1.0 / 24"
     ]
   },
   {
@@ -1397,10 +1397,10 @@ let objs = [
       518.706443
     ],
     "en": [
-      "this is good because the 10.10 / 24 network"
+      "this is good because the 10.0.1.0 / 24 network"
     ],
     "ru": [
-      "это хорошо, потому что сеть 10.10 / 24"
+      "это хорошо, потому что сеть 10.0.1.0 / 24"
     ]
   },
   {
@@ -1469,10 +1469,10 @@ let objs = [
       546.722814
     ],
     "en": [
-      "anyway now the 10000 / 60 network is present in our Rev table"
+      "anyway now the 10.0.0.0 / 16 network is present in our Rev table"
     ],
     "ru": [
-      "в любом случае теперь сеть 10000/60 присутствует в нашей таблице Rev."
+      "в любом случае теперь сеть 10.0.0.0 / 16 присутствует в нашей таблице Rev."
     ]
   },
   {
@@ -1664,7 +1664,7 @@ let objs = [
       "if you want to support my channel I accept Bitcoin and aetherium donations via the addresses in the description"
     ],
     "ru": [
-      "если вы хотите поддержать мой канал, я принимаю пожертвования биткойнами и эфириумом по адресам в описании"
+      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах и эфириуме по адресам в описании"
     ]
   },
   {

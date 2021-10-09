@@ -37,15 +37,11 @@ enable show CDP neighbors
 97.008726
 as we just saw it's connected to r1 via the gigabit ethernet 0 0 interface
 103.660372
-and it's connected to switch to via the gigabit ethernet 0 1 interface
-108.54483
-connected to switch 2 is Gigabit Ethernet 0 1 interface
+and it's connected to switch to via the gigabit ethernet 0 1 interface 108.54483 connected to switch 2 is Gigabit Ethernet 0 1 interface
 111.692913
 next let's go on switch to to confirm
 115.349017
-enable shows CDP neighbors
-120.85335
-as you can see it is indeed connected to r2 via the gigabit ethernet 0 1 interface
+enable shows CDP neighbors 120.85335 as you can see it is indeed connected to r2 via the gigabit ethernet 0 1 interface
 126.926309
 that's all for step 1
 128.851184
@@ -61,9 +57,7 @@ what does that identify
 150.313704
 it's the hardware model of the neighboring device
 153.312266
-in this case r1 is a C 1900 series router
-157.84012
-let's go on r1 to identify switch 1 and R 2
+in this case r1 is a C 1900 series router 157.84012 let's go on r1 to identify switch 1 and R 2
 161.850078
 so R 2 is a C 2900 series router and switch 1 is a 2960 series switch
 170.821766
@@ -71,17 +65,11 @@ finally let's go on r2 to identify the model of its neighbor switch 2
 176.007682
 as you can see it is a 3560 model switch
 181.728766
-and if you remember the icon used to represent it here in packet tracer
-186.01037
-means it is a multi-layer switch
+and if you remember the icon used to represent it here in packet tracer 186.01037 means it is a multi-layer switch
 188.261536
 multi-layer switches will be a topic for later labs
 192.056973
-finally step three requires a new command which we didn't cover in previous labs
-200.92891
-actually there are two options
-203.79493
-we have to identify the iOS version of the neighboring devices
+finally step three requires a new command which we didn't cover in previous labs 200.92891 actually there are two options 203.79493 we have to identify the iOS version of the neighboring devices
 207.882451
 note that you can do this on the device itself with the show version command
 212.791222
@@ -103,9 +91,7 @@ show CDP entry followed by the name of the neighboring device in this case r1
 255.409721
 this displays the same information just for the specified device
 260.730721
-now you can find the iOS version of r1 here
-264.63595
-it's 15.144
+now you can find the iOS version of r1 here 264.63595 it's 15.144
 268.465637
 now let's go on r1
 270.726053
@@ -127,21 +113,13 @@ show CDP entry switch 2
 302.833612
 switch 2 is running version 12.21
 308.484591
-now as a bonus I'd like to also demonstrate the show version command I briefly mentioned before
-317.53407
-this gives a lot of information about the device
-320.81534
-but for now let's just confirm the iOS versions we learned about via CDP
-325.26659
-on switch 1 first
+now as a bonus I'd like to also demonstrate the show version command I briefly mentioned before 317.53407 this gives a lot of information about the device 320.81534 but for now let's just confirm the iOS versions we learned about via CDP 325.26659 on switch 1 first
 327.321277
 show version as you can see there's a lot of info here
 334.167547
 I recommend looking through it to familiarize yourself with what's here
 337.788777
-but let's just check the iOS version as I said
-341.11611
-switch 1 is running 12 point to 25 FX
+but let's just check the iOS version as I said 341.11611 switch 1 is running 12 point to 25 FX
 345.686777
 which is the same as we saw from CDP on our one
 348.673402

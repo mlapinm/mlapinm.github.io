@@ -43,7 +43,7 @@ let's fix that
 84.002620
 conf t
 85.722453
-IP route  0.0.0.0 0.0.0.0 g 0 0 0
+IP route 0.0.0.0 0.0.0.0 g 0 0 0
 93.698349
 ok immediately we get a message saying our tunnel interface is up
 98.502599
@@ -135,9 +135,9 @@ conf t
 268.980150
 router EIGRP 100
 272.707629
-no network 192.168.34.0  0.0.0.0
+no network 192.168.34.0 0.0.0.0
 280.315733
-network 192.168.34.0  0.0.0.255
+network 192.168.34.0 0.0.0.255
 288.124462
 ok immediately the adjacency comes up
 291.114690

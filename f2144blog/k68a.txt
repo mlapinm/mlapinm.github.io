@@ -155,9 +155,9 @@ router bgp 65000
 293.026090
 no network 10.0.0.0 Network 10.0.0.0 mask 255.255.0.0
 304.776180
-do show ip BGP There it is 10.0.0.0/16 
+do show ip BGP There it is 10.0.0.0/16
 312.776180
-now it in BGP table so it should be advertising yet to spr 1 
+now it in BGP table so it should be advertising yet to spr 1
 319.776180
 let's try that ping from r2 again
 328.091847

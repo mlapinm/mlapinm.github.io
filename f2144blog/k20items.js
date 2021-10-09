@@ -2,25 +2,13 @@ let objs = [
   {
     "time": [
       0.0,
-      4.66535
-    ],
-    "en": [
-      "welcome to this free CCNA packet tracer practice lab"
-    ],
-    "ru": [
-      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
-    ]
-  },
-  {
-    "time": [
-      4.66535,
       7.766149
     ],
     "en": [
-      "you can download the lab file from the link in the description"
+      "welcome to this free CCNA packet tracer practice lab 4.66535 you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer 4.66535, вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -50,25 +38,13 @@ let objs = [
   {
     "time": [
       24.832042,
-      29.30156
-    ],
-    "en": [
-      "I plan to do these at various points in this series"
-    ],
-    "ru": [
-      "Я планирую сделать это на разных этапах этой серии."
-    ]
-  },
-  {
-    "time": [
-      29.30156,
       34.699568
     ],
     "en": [
-      "although you could just go back and redo previous labs to serve as review"
+      "I plan to do these at various points in this series 29.30156 although you could just go back and redo previous labs to serve as review"
     ],
     "ru": [
-      "хотя вы можете просто вернуться и повторить предыдущие лабораторные работы, чтобы использовать их в качестве обзора"
+      "Я планирую сделать это на разных этапах этой серии 29.30156, хотя вы можете просто вернуться и повторить предыдущие лабораторные работы, чтобы они служили обзором."
     ]
   },
   {
@@ -122,25 +98,13 @@ let objs = [
   {
     "time": [
       61.309243,
-      66.58394
-    ],
-    "en": [
-      "then continue watching this video if you have trouble or watch it after to check your solution"
-    ],
-    "ru": [
-      "затем продолжайте смотреть это видео, если у вас возникнут проблемы, или просмотрите его позже, чтобы проверить свое решение."
-    ]
-  },
-  {
-    "time": [
-      66.58394,
       72.395519
     ],
     "en": [
-      "step one is to configure host names for each of the networking devices"
+      "then continue watching this video if you have trouble or watch it after to check your solution 66.58394 step one is to configure host names for each of the networking devices"
     ],
     "ru": [
-      "Шаг первый - настроить имена хостов для каждого из сетевых устройств"
+      "затем продолжайте просмотр этого видео, если у вас возникнут проблемы, или просмотрите его позже, чтобы проверить свое решение. 66.58394 Шаг первый - настроить имена хостов для каждого из сетевых устройств."
     ]
   },
   {
@@ -338,25 +302,13 @@ let objs = [
   {
     "time": [
       137.574847,
-      139.85111
-    ],
-    "en": [
-      "so you'll always want to use that instead"
-    ],
-    "ru": [
-      "так что вы всегда захотите использовать это вместо"
-    ]
-  },
-  {
-    "time": [
-      139.85111,
       143.213483
     ],
     "en": [
-      "let's do switch to first since we're here"
+      "so you'll always want to use that instead 139.85111 let's do switch to first since we're here"
     ],
     "ru": [
-      "давай сначала переключимся на раз уж мы здесь"
+      "так что вы всегда захотите использовать это вместо 139.85111, давайте сначала переключимся на, так как мы здесь"
     ]
   },
   {
@@ -410,25 +362,13 @@ let objs = [
   {
     "time": [
       158.386667,
-      164.91777
-    ],
-    "en": [
-      "and finally r1 enable secret CCNA"
-    ],
-    "ru": [
-      "и, наконец, r1 включить секретный CCNA"
-    ]
-  },
-  {
-    "time": [
-      164.91777,
       166.783774
     ],
     "en": [
-      "that's all for step 2"
+      "and finally r1 enable secret CCNA 164.91777 that's all for step 2"
     ],
     "ru": [
-      "это все для шага 2"
+      "и, наконец, r1 включает секретный CCNA 164.91777, это все для шага 2"
     ]
   },
   {
@@ -446,37 +386,13 @@ let objs = [
   {
     "time": [
       176.492922,
-      183.09766
-    ],
-    "en": [
-      "pc1 & pc2 VLAN 13 & pc2 and pc 4 in VLAN 24"
-    ],
-    "ru": [
-      "pc1 и pc2 VLAN 13 и pc2 и pc 4 в VLAN 24"
-    ]
-  },
-  {
-    "time": [
-      183.09766,
-      185.59947
-    ],
-    "en": [
-      "let's start on switch one"
-    ],
-    "ru": [
-      "давай начнем с первого переключателя"
-    ]
-  },
-  {
-    "time": [
-      185.59947,
       192.630888
     ],
     "en": [
-      "PC one is connected to f0 two so interface f0 2"
+      "pc1 & pc2 VLAN 13 & pc2 and pc 4 in VLAN 24 183.09766 let's start on switch one 185.59947 PC one is connected to f0 two so interface f0 2"
     ],
     "ru": [
-      "ПК один подключен к f0 two, поэтому интерфейс f0 2"
+      "pc1 и pc2 VLAN 13 и pc2 и pc 4 в VLAN 24 183.09766 давайте начнем с первого коммутатора 185.59947 ПК один подключен к f0 two, поэтому интерфейс f0 2"
     ]
   },
   {
@@ -548,7 +464,7 @@ let objs = [
       "that's it for switch 1 next let's hop on switch 2"
     ],
     "ru": [
-      "Вот и все, что нужно для переключателя 1, теперь давайте перейдем на переключатель 2"
+      "вот и все, что касается переключателя 1, теперь давайте перейдем на переключатель 2"
     ]
   },
   {
@@ -842,25 +758,13 @@ let objs = [
   {
     "time": [
       342.986842,
-      346.40453
-    ],
-    "en": [
-      "let's use a show command to confirm"
-    ],
-    "ru": [
-      "давайте использовать команду show для подтверждения"
-    ]
-  },
-  {
-    "time": [
-      346.40453,
       349.945845
     ],
     "en": [
-      "do show interface trunk"
+      "let's use a show command to confirm 346.40453 do show interface trunk"
     ],
     "ru": [
-      "показать ствол интерфейса"
+      "давайте используем команду show для подтверждения 346.40453 do show interface trunk"
     ]
   },
   {
@@ -1088,7 +992,7 @@ let objs = [
       "so let's be more efficient by configuring an interface range instead of doing each one separately"
     ],
     "ru": [
-      "так что давайте будем более эффективными, настроив диапазон интерфейса вместо того, чтобы делать каждый отдельно"
+      "так что давайте будем более эффективными, настроив диапазон интерфейса вместо того, чтобы делать каждый по отдельности"
     ]
   },
   {
@@ -1130,61 +1034,25 @@ let objs = [
   {
     "time": [
       448.962244,
-      450.67712
-    ],
-    "en": [
-      "so we don't have to do that this time"
-    ],
-    "ru": [
-      "так что нам не нужно делать это на этот раз"
-    ]
-  },
-  {
-    "time": [
-      450.67712,
       453.907902
     ],
     "en": [
-      "switch port port security"
+      "so we don't have to do that this time 450.67712 switch port port security"
     ],
     "ru": [
-      "безопасность порта порта коммутатора"
+      "поэтому на этот раз нам не нужно этого делать. Безопасность порта порта коммутатора 450.67712"
     ]
   },
   {
     "time": [
       453.907902,
-      456.35315
-    ],
-    "en": [
-      "now port security is enabled"
-    ],
-    "ru": [
-      "теперь безопасность порта включена"
-    ]
-  },
-  {
-    "time": [
-      456.35315,
-      458.88629
-    ],
-    "en": [
-      "let's configure sticky MAC address learning"
-    ],
-    "ru": [
-      "давайте настроим изучение липких MAC-адресов"
-    ]
-  },
-  {
-    "time": [
-      458.88629,
       462.401569
     ],
     "en": [
-      "switch port port security MAC address sticky"
+      "now port security is enabled 456.35315 let's configure sticky MAC address learning 458.88629 switch port port security MAC address sticky"
     ],
     "ru": [
-      "порт коммутатора безопасность порта MAC-адрес залипание"
+      "теперь безопасность порта включена 456.35315 давайте настроим закрепление МАС-адресов"
     ]
   },
   {
@@ -1316,7 +1184,7 @@ let objs = [
       "step six is to configure inter VLAN routing with the router on a stick method"
     ],
     "ru": [
-      "Шаг шестой - настроить маршрутизацию между VLAN с помощью маршрутизатора по методу флешки."
+      "Шаг шестой - настроить маршрутизацию между VLAN с помощью маршрутизатора на палке."
     ]
   },
   {
@@ -1484,7 +1352,7 @@ let objs = [
       "so first I'll type no shutdown to enable it"
     ],
     "ru": [
-      "так что сначала я напечатаю без выключения, чтобы включить его"
+      "поэтому сначала я напечатаю без выключения, чтобы включить его"
     ]
   },
   {
@@ -1670,25 +1538,13 @@ let objs = [
   {
     "time": [
       630.613541,
-      639.94416
-    ],
-    "en": [
-      "finally let's ping between pcs to make sure everything works"
-    ],
-    "ru": [
-      "наконец, давайте пингуем между ПК, чтобы убедиться, что все работает"
-    ]
-  },
-  {
-    "time": [
-      639.94416,
       643.825538
     ],
     "en": [
-      "we should now have full connectivity between all pcs"
+      "finally let's ping between pcs to make sure everything works 639.94416 we should now have full connectivity between all pcs"
     ],
     "ru": [
-      "теперь у нас должно быть полное соединение между всеми ПК"
+      "наконец, давайте пингуем между компьютерами, чтобы убедиться, что все работает 639.94416 Теперь у нас должно быть полное соединение между всеми компьютерами"
     ]
   },
   {
@@ -1754,25 +1610,13 @@ let objs = [
   {
     "time": [
       679.859202,
-      682.68006
-    ],
-    "en": [
-      "now let's do the same on PC 2"
-    ],
-    "ru": [
-      "теперь сделаем то же самое на ПК 2"
-    ]
-  },
-  {
-    "time": [
-      682.68006,
       692.846181
     ],
     "en": [
-      "first stop in PC 1 ping 10.0.0.11 it works"
+      "now let's do the same on PC 2 682.68006 first stop in PC 1 ping 10.0.0.11 it works"
     ],
     "ru": [
-      "первая остановка в ПК 1 пинг 10.0.0.11 работает"
+      "теперь сделаем то же самое на ПК 2 682.68006 первая остановка на ПК 1 пинг 10.0.0.11 все работает"
     ]
   },
   {
@@ -1796,31 +1640,19 @@ let objs = [
       "finally I'll ping PC 4 ping 10.0.1.14 it works as well"
     ],
     "ru": [
-      "наконец я пингую ПК 4 пинг 10.0.1.14 он тоже работает"
+      "наконец-то я пингую ПК 4 пинг 10.0.1.14 он тоже работает"
     ]
   },
   {
     "time": [
       711.355959,
-      714.33063
-    ],
-    "en": [
-      "we have full connectivity between all computers"
-    ],
-    "ru": [
-      "у нас есть полная связь между всеми компьютерами"
-    ]
-  },
-  {
-    "time": [
-      714.33063,
       716.267636
     ],
     "en": [
-      "that's all for this lab"
+      "we have full connectivity between all computers 714.33063 that's all for this lab"
     ],
     "ru": [
-      "это все для этой лаборатории"
+      "у нас есть полное соединение между всеми компьютерами 714.33063 это все для этой лаборатории"
     ]
   },
   {

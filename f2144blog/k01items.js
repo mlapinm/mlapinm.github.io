@@ -2,25 +2,13 @@ let objs = [
   {
     "time": [
       0.0,
-      5.71078
-    ],
-    "en": [
-      "welcome to this free Cisco CCNA packet tracer practice lab"
-    ],
-    "ru": [
-      "добро пожаловать в эту бесплатную практическую лабораторию Cisco CCNA Packet Tracer"
-    ]
-  },
-  {
-    "time": [
-      5.71078,
       8.984527
     ],
     "en": [
-      "you can download the lab file from the link in the description"
+      "welcome to this free Cisco CCNA packet tracer practice lab 5.71078 you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "добро пожаловать в эту бесплатную практическую лабораторию Cisco CCNA Packet Tracer 5.71078, вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -38,25 +26,13 @@ let objs = [
   {
     "time": [
       13.143932,
-      15.98083
-    ],
-    "en": [
-      "and then continue watching this video if you have any trouble"
-    ],
-    "ru": [
-      "а затем продолжайте смотреть это видео, если у вас возникнут проблемы"
-    ]
-  },
-  {
-    "time": [
-      15.98083,
       18.800988
     ],
     "en": [
-      "or watch it afterwards to check your solution"
+      "and then continue watching this video if you have any trouble 15.98083 or watch it afterwards to check your solution"
     ],
     "ru": [
-      "или посмотрите его потом, чтобы проверить свое решение"
+      "а затем продолжайте смотреть это видео, если у вас возникли проблемы 15.98083, или просмотрите его позже, чтобы проверить свое решение."
     ]
   },
   {
@@ -86,25 +62,13 @@ let objs = [
   {
     "time": [
       38.439468,
-      43.2369
-    ],
-    "en": [
-      "I will only work with one of the routers in this video for the sake of time"
-    ],
-    "ru": [
-      "Я буду работать только с одним из маршрутизаторов в этом видео, чтобы сэкономить время."
-    ]
-  },
-  {
-    "time": [
-      43.2369,
       49.425341
     ],
     "en": [
-      "but I highly recommend that you perform the configurations on both of the routers for practice"
+      "I will only work with one of the routers in this video for the sake of time 43.2369 but I highly recommend that you perform the configurations on both of the routers for practice"
     ],
     "ru": [
-      "но я настоятельно рекомендую вам выполнить настройку на обоих маршрутизаторах для практики."
+      "Я буду работать только с одним из маршрутизаторов в этом видео ради экономии времени 43.2369, но я настоятельно рекомендую вам выполнить настройку на обоих маршрутизаторах для практики."
     ]
   },
   {
@@ -164,7 +128,7 @@ let objs = [
       "and select the cable connected to the gig 0 0 interface on r1 and then r2"
     ],
     "ru": [
-      "и выбираем кабель, подключенный к интерфейсу gig 0 0 на r1, а затем на r2"
+      "и выберите кабель, подключенный к интерфейсу gig 0 0 на r1, а затем на r2"
     ]
   },
   {
@@ -362,37 +326,13 @@ let objs = [
   {
     "time": [
       163.438917,
-      167.41218
-    ],
-    "en": [
-      "which we can see by typing E and then a question mark"
-    ],
-    "ru": [
-      "что мы можем увидеть, набрав E, а затем вопросительный знак"
-    ]
-  },
-  {
-    "time": [
-      167.41218,
-      173.20304
-    ],
-    "en": [
-      "as you can see there are two potential commands enable and exit"
-    ],
-    "ru": [
-      "как вы можете видеть, есть две возможные команды: включить и выйти"
-    ]
-  },
-  {
-    "time": [
-      173.20304,
       178.511168
     ],
     "en": [
-      "so if you just enter E the router doesn't know which command you mean"
+      "which we can see by typing E and then a question mark 167.41218 as you can see there are two potential commands enable and exit 173.20304 so if you just enter E the router doesn't know which command you mean"
     ],
     "ru": [
-      "поэтому, если вы просто введете E, маршрутизатор не знает, какую команду вы имеете в виду"
+      "что мы можем увидеть, набрав E, а затем вопросительный знак 167.41218, поскольку вы можете видеть, что есть две возможные команды: включить и выйти из 173.20304, поэтому, если вы просто введете E, маршрутизатор не знает, какую команду вы имеете в виду"
     ]
   },
   {
@@ -548,7 +488,7 @@ let objs = [
       "the enable password is used to enter privileged exec mode which as I mentioned before is also called enable mode"
     ],
     "ru": [
-      "пароль включения используется для входа в привилегированный режим exec, который, как я уже упоминал ранее, также называется режимом включения"
+      "пароль включения используется для входа в привилегированный режим выполнения, который, как я упоминал ранее, также называется режимом включения"
     ]
   },
   {
@@ -608,31 +548,19 @@ let objs = [
       "type an able password Cisco"
     ],
     "ru": [
-      "введите подходящий пароль Cisco"
+      "введите действующий пароль Cisco"
     ]
   },
   {
     "time": [
       268.193335,
-      269.79656
-    ],
-    "en": [
-      "that's it"
-    ],
-    "ru": [
-      "это оно"
-    ]
-  },
-  {
-    "time": [
-      269.79656,
       274.161426
     ],
     "en": [
-      "now let's test it out"
+      "that's it 269.79656 now let's test it out"
     ],
     "ru": [
-      "теперь давайте проверим это"
+      "вот и все 269.79656 теперь давайте проверим"
     ]
   },
   {
@@ -740,31 +668,19 @@ let objs = [
       "I entered the wrong password once twice and then three times before being rejected for having bad secrets"
     ],
     "ru": [
-      "Я ввел неправильный пароль один раз два раза, а затем три раза, прежде чем меня отклонили из-за наличия плохих секретов."
+      "Я ввел неправильный пароль один раз дважды, а затем три раза, прежде чем меня отклонили из-за того, что у меня были плохие секреты"
     ]
   },
   {
     "time": [
       312.301938,
-      317.70121
-    ],
-    "en": [
-      "now I will try again with the correct password and I'm in"
-    ],
-    "ru": [
-      "сейчас я попробую еще раз с правильным паролем, и я в"
-    ]
-  },
-  {
-    "time": [
-      317.70121,
       319.576191
     ],
     "en": [
-      "step 3 is now complete"
+      "now I will try again with the correct password and I'm in 317.70121 step 3 is now complete"
     ],
     "ru": [
-      "шаг 3 теперь завершен"
+      "Теперь я попробую еще раз с правильным паролем, и я нахожусь в 317.70121, шаг 3 теперь завершен"
     ]
   },
   {
@@ -806,25 +722,13 @@ let objs = [
   {
     "time": [
       334.796099,
-      340.58297
-    ],
-    "en": [
-      "if you turn off the router without saving the running configuration you will lose any changes"
-    ],
-    "ru": [
-      "если вы выключите роутер без сохранения текущей конфигурации, вы потеряете все изменения"
-    ]
-  },
-  {
-    "time": [
-      340.58297,
       346.860406
     ],
     "en": [
-      "if you want to keep your changes you will save them to what's called the startup configuration"
+      "if you turn off the router without saving the running configuration you will lose any changes 340.58297 if you want to keep your changes you will save them to what's called the startup configuration"
     ],
     "ru": [
-      "если вы хотите сохранить свои изменения, вы сохраните их в так называемой стартовой конфигурации"
+      "Если вы выключите маршрутизатор без сохранения текущей конфигурации, вы потеряете все изменения. 340.58297. Если вы хотите сохранить свои изменения, вы сохраните их в так называемой начальной конфигурации."
     ]
   },
   {
@@ -854,25 +758,13 @@ let objs = [
   {
     "time": [
       355.919352,
-      357.87534
-    ],
-    "en": [
-      "which we are already in"
-    ],
-    "ru": [
-      "в котором мы уже находимся"
-    ]
-  },
-  {
-    "time": [
-      357.87534,
       362.475673
     ],
     "en": [
-      "you can abbreviate it to for example SH run"
+      "which we are already in 357.87534 you can abbreviate it to for example SH run"
     ],
     "ru": [
-      "вы можете сократить его, например, до SH run"
+      "который мы уже находим в 357.87534, вы можете сократить его, например, SH run"
     ]
   },
   {
@@ -1010,25 +902,13 @@ let objs = [
   {
     "time": [
       429.500638,
-      431.38758
-    ],
-    "en": [
-      "and now let's check the password"
-    ],
-    "ru": [
-      "а теперь давайте проверим пароль"
-    ]
-  },
-  {
-    "time": [
-      431.38758,
       433.878926
     ],
     "en": [
-      "however the command doesn't work"
+      "and now let's check the password 431.38758 however the command doesn't work"
     ],
     "ru": [
-      "однако команда не работает"
+      "а теперь давайте проверим пароль 431.38758, но команда не работает"
     ]
   },
   {
@@ -1046,25 +926,13 @@ let objs = [
   {
     "time": [
       441.360164,
-      447.17541
-    ],
-    "en": [
-      "now I could type exit to drop back to privileged exec mode and then enter the command"
-    ],
-    "ru": [
-      "теперь я мог ввести exit, чтобы вернуться в привилегированный режим exec, а затем ввести команду"
-    ]
-  },
-  {
-    "time": [
-      447.17541,
       449.309423
     ],
     "en": [
-      "but there is one more way"
+      "now I could type exit to drop back to privileged exec mode and then enter the command 447.17541 but there is one more way"
     ],
     "ru": [
-      "но есть еще один способ"
+      "теперь я могу ввести exit, чтобы вернуться в привилегированный режим exec, а затем ввести команду 447.17541, но есть еще один способ"
     ]
   },
   {
@@ -1130,25 +998,13 @@ let objs = [
   {
     "time": [
       459.982219,
-      465.91831
-    ],
-    "en": [
-      "you can see here an able password followed by a seven and then a string of other numbers"
-    ],
-    "ru": [
-      "вы можете увидеть здесь действующий пароль, за которым следует семерка, а затем строка других цифр"
-    ]
-  },
-  {
-    "time": [
-      465.91831,
       468.939648
     ],
     "en": [
-      "the password has successfully been encrypted"
+      "you can see here an able password followed by a seven and then a string of other numbers 465.91831 the password has successfully been encrypted"
     ],
     "ru": [
-      "пароль был успешно зашифрован"
+      "вы можете увидеть здесь действующий пароль, за которым следует семерка, а затем строка других чисел 465.91831 пароль был успешно зашифрован"
     ]
   },
   {
@@ -1166,49 +1022,13 @@ let objs = [
   {
     "time": [
       472.989782,
-      475.6533
-    ],
-    "en": [
-      "it refers to the type of encryption used"
-    ],
-    "ru": [
-      "это относится к типу используемого шифрования"
-    ]
-  },
-  {
-    "time": [
-      475.6533,
-      479.90062
-    ],
-    "en": [
-      "there are other types as well but that's not something to worry about now"
-    ],
-    "ru": [
-      "есть и другие типы, но сейчас не о чем беспокоиться"
-    ]
-  },
-  {
-    "time": [
-      479.90062,
-      487.49386
-    ],
-    "en": [
-      "the string of numbers that follow are the passwords Cisco encrypted to be unreadable"
-    ],
-    "ru": [
-      "следующая строка цифр - это пароли, зашифрованные Cisco, чтобы их нельзя было прочесть."
-    ]
-  },
-  {
-    "time": [
-      487.49386,
       490.509759
     ],
     "en": [
-      "so that anyone looking over our shoulder can't read the password"
+      "it refers to the type of encryption used 475.6533 there are other types as well but that's not something to worry about now 479.90062 the string of numbers that follow are the passwords Cisco encrypted to be unreadable 487.49386 so that anyone looking over our shoulder can't read the password"
     ],
     "ru": [
-      "чтобы кто-либо, оглядываясь через плечо, не мог прочитать пароль"
+      "это относится к используемому типу шифрования. 475.6533 есть и другие типы, но это не повод для беспокойства сейчас 479.90062 следующая строка цифр - это пароли, зашифрованные Cisco, чтобы быть нечитаемыми 487.49386, так что любой, кто смотрит через наше плечо, не может прочитать пароль"
     ]
   },
   {
@@ -1316,7 +1136,7 @@ let objs = [
       "that's it step seven is now complete"
     ],
     "ru": [
-      "вот и шаг седьмой теперь завершен"
+      "вот и седьмой шаг завершен"
     ]
   },
   {
@@ -1328,7 +1148,7 @@ let objs = [
       "step eight is once again to view the password in the running configuration"
     ],
     "ru": [
-      "восьмой шаг - еще раз просмотреть пароль в текущей конфигурации."
+      "восьмой шаг - еще раз просмотреть пароль в текущей конфигурации"
     ]
   },
   {

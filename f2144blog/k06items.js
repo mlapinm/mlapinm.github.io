@@ -2,49 +2,25 @@ let objs = [
   {
     "time": [
       0.0,
-      4.55934
-    ],
-    "en": [
-      "welcome to this free CCNA packet tracer practice lab"
-    ],
-    "ru": [
-      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
-    ]
-  },
-  {
-    "time": [
-      4.55934,
       8.883745
     ],
     "en": [
-      "you can download the lab file from the link in the description"
+      "welcome to this free CCNA packet tracer practice lab 4.55934 you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer 4.55934, вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
     "time": [
       8.883745,
-      15.59975
-    ],
-    "en": [
-      "in this lab we will be working with two switches switch 1 and switch two"
-    ],
-    "ru": [
-      "в этой лабораторной работе мы будем работать с двумя переключателями, переключателем 1 и переключателем 2."
-    ]
-  },
-  {
-    "time": [
-      15.59975,
       20.795037
     ],
     "en": [
-      "and three pcs pc-1 pc2 and pc 3"
+      "in this lab we will be working with two switches switch 1 and switch two 15.59975 and three pcs pc-1 pc2 and pc 3"
     ],
     "ru": [
-      "и три ПК pc-1 pc2 и pc 3"
+      "В этой лабораторной работе мы будем работать с двумя переключателями, переключателем 1 и переключателем, двумя 15.59975 и тремя ПК-1, ПК2 и ПК 3."
     ]
   },
   {
@@ -74,37 +50,13 @@ let objs = [
   {
     "time": [
       34.089201,
-      38.46917
-    ],
-    "en": [
-      "but we won't actually be using their multi-layer capabilities in this lab"
-    ],
-    "ru": [
-      "но на самом деле мы не будем использовать их многоуровневые возможности в этой лабораторной работе."
-    ]
-  },
-  {
-    "time": [
-      38.46917,
-      46.90673
-    ],
-    "en": [
-      "I selected this switch model for another reason which will differentiate this lab from the previous ones slightly in terms of configuration"
-    ],
-    "ru": [
-      "Я выбрал эту модель коммутатора по другой причине, которая немного отличает эту лабораторию от предыдущих с точки зрения конфигурации."
-    ]
-  },
-  {
-    "time": [
-      46.90673,
       50.847989
     ],
     "en": [
-      "however the basic tasks of the lab are the same"
+      "but we won't actually be using their multi-layer capabilities in this lab 38.46917 I selected this switch model for another reason which will differentiate this lab from the previous ones slightly in terms of configuration 46.90673 however the basic tasks of the lab are the same"
     ],
     "ru": [
-      "однако основные задачи лаборатории те же"
+      "но на самом деле мы не будем использовать их многоуровневые возможности в этой лабораторной работе. 38.46917 Я выбрал эту модель коммутатора по другой причине, которая немного отличает эту лабораторную работу от предыдущих с точки зрения конфигурации 46.90673, однако основные задачи лаборатории те же"
     ]
   },
   {
@@ -170,25 +122,13 @@ let objs = [
   {
     "time": [
       80.750219,
-      84.40899
-    ],
-    "en": [
-      "first I'll ping PC two"
-    ],
-    "ru": [
-      "сначала я пингую комп два"
-    ]
-  },
-  {
-    "time": [
-      84.40899,
       88.067075
     ],
     "en": [
-      "ping 10.0.0.2"
+      "first I'll ping PC two 84.40899 ping 10.0.0.2"
     ],
     "ru": [
-      "пинг 10.0.0.2"
+      "сначала пингую комп два 84.40899 пинг 10.0.0.2"
     ]
   },
   {
@@ -242,25 +182,13 @@ let objs = [
   {
     "time": [
       98.711574,
-      106.87117
-    ],
-    "en": [
-      "step two is to assign PC to and PC three to VLAN two"
-    ],
-    "ru": [
-      "Шаг второй - назначить ПК и третий ПК для VLAN 2."
-    ]
-  },
-  {
-    "time": [
-      106.87117,
       110.251923
     ],
     "en": [
-      "again this is done by configuring the switch interfaces"
+      "step two is to assign PC to and PC three to VLAN two 106.87117 again this is done by configuring the switch interfaces"
     ],
     "ru": [
-      "опять же, это делается путем настройки интерфейсов коммутатора."
+      "второй шаг - снова назначить ПК и третий ПК для VLAN 2 106.87117, это делается путем настройки интерфейсов коммутатора."
     ]
   },
   {
@@ -374,37 +302,13 @@ let objs = [
   {
     "time": [
       151.017034,
-      159.81111
-    ],
-    "en": [
-      "step three is to create a trunk connection between switch 1 and switch 2"
-    ],
-    "ru": [
-      "Шаг третий - создать магистральное соединение между коммутатором 1 и коммутатором 2."
-    ]
-  },
-  {
-    "time": [
-      159.81111,
-      165.28844
-    ],
-    "en": [
-      "remember that by default switch ports are access ports in the native VLAN"
-    ],
-    "ru": [
-      "помните, что по умолчанию порты коммутатора являются портами доступа в собственной VLAN"
-    ]
-  },
-  {
-    "time": [
-      165.28844,
       171.072763
     ],
     "en": [
-      "VLAN 1 in order for these switches to carry traffic from VLAN 2 as well"
+      "step three is to create a trunk connection between switch 1 and switch 2 159.81111 remember that by default switch ports are access ports in the native VLAN 165.28844 VLAN 1 in order for these switches to carry traffic from VLAN 2 as well"
     ],
     "ru": [
-      "VLAN 1, чтобы эти коммутаторы могли передавать трафик из VLAN 2."
+      "Шаг третий - создать магистральное соединение между коммутатором 1 и коммутатором 2 159.81111 помните, что по умолчанию порты коммутатора являются портами доступа в собственной VLAN 165.28844 VLAN 1, чтобы эти коммутаторы также передавали трафик из VLAN 2."
     ]
   },
   {
@@ -422,25 +326,13 @@ let objs = [
   {
     "time": [
       174.728609,
-      176.56515
-    ],
-    "en": [
-      "we need to create a trunk"
-    ],
-    "ru": [
-      "нам нужно создать ствол"
-    ]
-  },
-  {
-    "time": [
-      176.56515,
       178.840799
     ],
     "en": [
-      "let's do switch 1 first"
+      "we need to create a trunk 176.56515 let's do switch 1 first"
     ],
     "ru": [
-      "давай сначала сделаем переключатель 1"
+      "нам нужно создать ствол 176.56515 давайте сначала сделаем переключатель 1"
     ]
   },
   {
@@ -488,7 +380,7 @@ let objs = [
       "command rejected an interface whose trunk encapsulation is auto cannot be configured to trunk mode"
     ],
     "ru": [
-      "команда отклонила интерфейс, инкапсуляция магистрали которого установлена ​​автоматически, не может быть настроен в режим магистрали"
+      "команда отклонила интерфейс, инкапсуляция транка которого установлена ​​автоматически, не может быть настроен на режим транка"
     ]
   },
   {
@@ -506,25 +398,13 @@ let objs = [
   {
     "time": [
       196.736821,
-      199.70376
-    ],
-    "en": [
-      "and actually this is why I chose this switch model"
-    ],
-    "ru": [
-      "и собственно поэтому я выбрал эту модель переключателя"
-    ]
-  },
-  {
-    "time": [
-      199.70376,
       206.496652
     ],
     "en": [
-      "when you make a trunk link packets are encapsulated to label them as part of a particular VLAN"
+      "and actually this is why I chose this switch model 199.70376 when you make a trunk link packets are encapsulated to label them as part of a particular VLAN"
     ],
     "ru": [
-      "при создании магистрального канала пакеты инкапсулируются, чтобы пометить их как часть определенной VLAN"
+      "и на самом деле именно поэтому я выбрал эту модель коммутатора 199.70376, когда вы делаете пакеты магистрального канала инкапсулированными, чтобы пометить их как часть определенной VLAN."
     ]
   },
   {
@@ -620,7 +500,7 @@ let objs = [
       "and lets configure this interface to use dot1q"
     ],
     "ru": [
-      "и давайте настроим этот интерфейс для использования dot1q"
+      "и позволяет настроить этот интерфейс для использования dot1q"
     ]
   },
   {
@@ -638,61 +518,25 @@ let objs = [
   {
     "time": [
       241.416636,
-      244.17984
-    ],
-    "en": [
-      "we do that with this command"
-    ],
-    "ru": [
-      "мы делаем это с помощью этой команды"
-    ]
-  },
-  {
-    "time": [
-      244.17984,
-      249.6192
-    ],
-    "en": [
-      "switch port trunk encapsulation dot1q"
-    ],
-    "ru": [
-      "инкапсуляция соединительной линии порта коммутатора dot1q"
-    ]
-  },
-  {
-    "time": [
-      249.6192,
       252.557067
     ],
     "en": [
-      "now we can make the trunk link"
+      "we do that with this command 244.17984 switch port trunk encapsulation dot1q 249.6192 now we can make the trunk link"
     ],
     "ru": [
-      "теперь мы можем сделать магистраль"
+      "мы делаем это с помощью этой команды 244.17984 инкапсуляция магистрали порта коммутатора dot1q 249.6192 теперь мы можем сделать магистраль"
     ]
   },
   {
     "time": [
       252.557067,
-      254.98895
-    ],
-    "en": [
-      "switch port mode trunk"
-    ],
-    "ru": [
-      "переключатель режима порта магистраль"
-    ]
-  },
-  {
-    "time": [
-      254.98895,
       258.766149
     ],
     "en": [
-      "now let's do the same commands on switch2"
+      "switch port mode trunk 254.98895 now let's do the same commands on switch2"
     ],
     "ru": [
-      "теперь давайте сделаем те же команды на switch2"
+      "switch port mode trunk 254.98895 теперь давайте сделаем те же команды на switch2"
     ]
   },
   {
@@ -902,25 +746,13 @@ let objs = [
   {
     "time": [
       324.311338,
-      329.38028
-    ],
-    "en": [
-      "ping 10.0.0.3"
-    ],
-    "ru": [
-      "пинг 10.0.0.3"
-    ]
-  },
-  {
-    "time": [
-      329.38028,
       331.747561
     ],
     "en": [
-      "the ping works as expected"
+      "ping 10.0.0.3 329.38028 the ping works as expected"
     ],
     "ru": [
-      "пинг работает как ожидалось"
+      "ping 10.0.0.3 329.38028 пинг работает должным образом"
     ]
   },
   {

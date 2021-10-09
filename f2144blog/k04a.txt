@@ -63,9 +63,7 @@ think of potential causes first at layer 1 or the physical layer of the OSI mode
 132.031954
 is the cable plugged in
 134.467056
-yes it is
-135.60099
-as you can see here in packet tracer
+yes it is 135.60099 as you can see here in packet tracer
 137.451453
 are the interfaces turned on
 139.987576
@@ -75,13 +73,9 @@ I'll use the show IP interface brief command to check
 146.669395
 well we were going to use CDP to discover which interface r1 is connected to are two through
 153.622681
-but as we can see there is only one serial interface serial zero
-159.08914
-and it's administrative lead down
+but as we can see there is only one serial interface serial zero 159.08914 and it's administrative lead down
 162.101767
-that means if we do a show run command
-164.56889
-which I will do now
+that means if we do a show run command 164.56889 which I will do now
 166.199811
 we should see the shutdown command on the serial interface
 169.015846
@@ -93,11 +87,7 @@ let's fix that
 174.007918
 conf no shutdown
 179.757747
-let's check on our to also
-182.39393
-enable show IP interface brief
-186.24296
-again it is shutdown
+let's check on our to also 182.39393 enable show IP interface brief 186.24296 again it is shutdown
 188.130114
 conf T interface serial zero no shutdown
 193.791351
@@ -125,17 +115,13 @@ and switch two through the Fast Ethernet zero interface
 236.115336
 finally let's move on to switch two
 240.601434
-enable show CDP neighbors
-246.1742
-as you can see switch 2 is connected to R 2 through the Fast Ethernet 0-1 interface
+enable show CDP neighbors 246.1742 as you can see switch 2 is connected to R 2 through the Fast Ethernet 0-1 interface
 252.643814
 step 1 is now complete
 255.471895
 step2 asks us to identify which end of the serial connection is DCE
 265.096818
-and which end is DTE
-267.39343
-in serial connections one side is DCE or data communications equipment
+and which end is DTE 267.39343 in serial connections one side is DCE or data communications equipment
 272.575616
 and one side is DTE or data terminal equipment
 276.184652
@@ -153,9 +139,7 @@ we would be overwhelmed with information about every interface on the router
 303.236244
 so make sure to specify serial zero
 306.247824
-can you find what we're looking for
-309.63548
-there it is
+can you find what we're looking for 309.63548 there it is
 311.101373
 and this side is the DCE
 313.443728
@@ -203,9 +187,7 @@ step four tells us to set the IP addresses of the serial interfaces of r1 and r2
 404.778665
 interface configuration mode on r1
 409.050174
-so let's configure r1
-410.87602
-IP address 192.168.1.1 at him this is something you should know if not don't worry about it
+so let's configure r1 410.87602 IP address 192.168.1.1 at him this is something you should know if not don't worry about it
 426.513926
 it's 255.255.255.0
 430.565633
@@ -213,9 +195,7 @@ there we go
 432.043959
 now let's do the same on r2
 434.811706
-conf t interface serial zero
-439.66486
-IP address 192.168.0.2
+conf t interface serial zero 439.66486 IP address 192.168.0.2
 444.158026
 that's all for step four
 449.659766
@@ -227,9 +207,7 @@ let's do it from here
 460.183246
 type end to return to privileged exec mode
 463.268323
-the IP address of our one serial zero interface is 192.168.0.1 so
-470.39099
-ping 192.168.0.1
+the IP address of our one serial zero interface is 192.168.0.1 so 470.39099 ping 192.168.0.1
 474.510172
 as you can see we have connectivity between the routers
 478.626241

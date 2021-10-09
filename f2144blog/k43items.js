@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -44,7 +44,7 @@ let objs = [
       "also please subscribe to the channel for more labs like this"
     ],
     "ru": [
-      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторий"
+      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторных работ"
     ]
   },
   {
@@ -740,7 +740,7 @@ let objs = [
       "interface g00 IP helper address followed by r1s address 1.2.3.1 exit"
     ],
     "ru": [
-      "интерфейс g00 IP-адрес помощника, за которым следует адрес r1s 1.2.3.1 exit"
+      "интерфейс g00 IP-адрес помощника, за которым следует адрес r1s 1.2.3.1 выход"
     ]
   },
   {
@@ -860,7 +860,7 @@ let objs = [
       "let's go with cisco comm IP domain name cisco com"
     ],
     "ru": [
-      "пойдем с cisco comm IP-доменное имя cisco com"
+      "давайте перейдем к cisco comm IP-доменное имя cisco com"
     ]
   },
   {
@@ -1136,7 +1136,7 @@ let objs = [
       "please subscribe for future labs like this which will be released weekly"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лаборатории, подобные этой, которые будут выпускаться еженедельно"
+      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
     ]
   },
   {

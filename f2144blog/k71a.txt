@@ -167,7 +167,7 @@ okay let's test
 291.816675
 I'll ping from PC 5 to server 2
 295.746341
-ping 2001 db8 22 22  : 101
+ping 2001 db8 22 22 : 101
 306.147820
 reachable message
 310.216008
@@ -179,7 +179,7 @@ now just to be sure let's try on PC 6
 315.442924
 which should work
 316.556862
-ping 2001 DB 8 22 22  : 100
+ping 2001 DB 8 22 22 : 100
 325.962091
 great it works as expected
 333.975404

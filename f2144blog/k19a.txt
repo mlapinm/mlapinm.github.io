@@ -15,9 +15,7 @@ in the previous lab we configured sticky MAC address learning
 33.602904
 however this time we will manually configure the MAC addresses of pc1 & pc2 as secure MAC addresses on switch 1 and switch 2 respectively
 44.957764
-step one is to ping from pc1 to pc2 2 generate traffic
-52.74062
-let's go on pc one
+step one is to ping from pc1 to pc2 2 generate traffic 52.74062 let's go on pc one
 54.819091
 ping 192.168.1.12
 60.786883
@@ -51,9 +49,7 @@ first let me copy the MAC address of PC one
 122.972171
 there we go now let's configure the f02 interface
 127.844823
-conf t interface f0 2
-132.50079
-remember we have to configure it as an access port first
+conf t interface f0 2 132.50079 remember we have to configure it as an access port first
 136.651881
 so switch port mode access switch port port security
 142.164891
@@ -87,21 +83,15 @@ there we go
 203.253126
 now under switch 2
 207.177134
-enable show MAC address table
-211.6531
-again there are two addresses on the f01 interface
+enable show MAC address table 211.6531 again there are two addresses on the f01 interface
 215.851521
 those of switch 1 and pc 1 and 1 on the f02 interface
 220.282994
 that of pc 2
 221.952112
-which is the one we're interested in now
-224.31131
-so I'll copy that
+which is the one we're interested in now 224.31131 so I'll copy that
 225.822703
-ok now let's configure the interface
-230.61247
-conf t interface f0 2 switch port mode access switch port port security switch port port security MAC address and now I'll paste in PC 2 MAC address
+ok now let's configure the interface 230.61247 conf t interface f0 2 switch port mode access switch port port security switch port port security MAC address and now I'll paste in PC 2 MAC address
 246.147486
 there we go
 248.245714
@@ -199,9 +189,7 @@ why is that even though we connected the cables back the way they are supposed t
 480.662842
 well switch twos f02 interface is still down
 485.807246
-it doesn't automatically recover and become enabled again
-489.79431
-it can be configured to automatically recover from a port security error
+it doesn't automatically recover and become enabled again 489.79431 it can be configured to automatically recover from a port security error
 495.116752
 but that will be a topic for another lab
 497.525238
@@ -221,9 +209,7 @@ how do we manually fix this
 522.052855
 it's simple
 523.681029
-shutdown no shutdown
-527.97717
-this will reset the interface and it will no longer be in an error disabled State
+shutdown no shutdown 527.97717 this will reset the interface and it will no longer be in an error disabled State
 534.473503
 that's how you manually recover an error disabled interface with the command shutdown followed by no shutdown
 541.765898
@@ -233,9 +219,7 @@ just to make sure that everything is working right again
 553.996027
 after we did that little experiment with port security violations
 557.377987
-I'll go on PC one one more time
-561.15042
-ping 192.168.1.12
+I'll go on PC one one more time 561.15042 ping 192.168.1.12
 566.333083
 it works
 569.403244

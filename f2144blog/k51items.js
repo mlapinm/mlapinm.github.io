@@ -20,7 +20,7 @@ let objs = [
       "you can download the lab file from the link in the description"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Вы можете скачать лабораторный файл по ссылке в описании"
     ]
   },
   {
@@ -44,7 +44,7 @@ let objs = [
       "also please subscribe to the channel for more labs like this"
     ],
     "ru": [
-      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторий"
+      "также подпишитесь на канал, чтобы увидеть больше подобных лабораторных работ"
     ]
   },
   {
@@ -128,7 +128,7 @@ let objs = [
       "the eye next to the interfaces indicates standalone meaning they aren't properly paired with interfaces on switch 2 to make the ether channel"
     ],
     "ru": [
-      "глаз рядом с интерфейсами указывает на автономность, что означает, что они не соединены должным образом с интерфейсами на переключателе 2, чтобы создать эфирный канал."
+      "глаз рядом с интерфейсами указывает на автономность, что означает, что они не соединены должным образом с интерфейсами на коммутаторе 2, чтобы создать эфирный канал."
     ]
   },
   {
@@ -188,7 +188,7 @@ let objs = [
       "conf t interface range f 0 1 through 4 no channel group 1"
     ],
     "ru": [
-      "conf t interface range f 0 от 1 до 4 no channel group 1"
+      "conf t interface range f 0 от 1 до 4 без группы каналов 1"
     ]
   },
   {
@@ -236,7 +236,7 @@ let objs = [
       "interface range F 0 1 through 4 channel Group 1 mode desirable"
     ],
     "ru": [
-      "диапазон интерфейса F 0 1 - 4 канал желателен режим группы 1"
+      "диапазон интерфейса F 0 от 1 до 4 желателен канальный режим группы 1"
     ]
   },
   {
@@ -548,7 +548,7 @@ let objs = [
       "however notice port channel 1 the ether channel with switch 3 is down"
     ],
     "ru": [
-      "однако обратите внимание на порт канала 1, эфирный канал с коммутатором 3 не работает"
+      "однако обратите внимание, что порт канала 1 эфирный канал с коммутатором 3 не работает"
     ]
   },
   {
@@ -908,7 +908,7 @@ let objs = [
       "let's do one last check do ping 23.0.0.2"
     ],
     "ru": [
-      "давайте сделаем последнюю проверку, сделаем пинг 23.0.0.2"
+      "давайте сделаем последнюю проверку, сделаем ping 23.0.0.2"
     ]
   },
   {
