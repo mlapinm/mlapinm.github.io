@@ -2,937 +2,1933 @@ let objs = [
   {
     "time": [
       0.0,
-      3.15314
+      5.561416
     ],
     "en": [
-      "welcome to this free CCNA packet tracer practice lab"
+      "hi and welcome to my walkthrough in which I'm gonna show you how to build your very own game of candy crush"
     ],
     "ru": [
-      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
+      "привет и добро пожаловать в мое пошаговое руководство, в котором я покажу вам, как создать свою собственную игру в конфетную давку"
     ]
   },
   {
     "time": [
-      3.15314,
-      7.162907
+      5.561416,
+      7.5145
     ],
     "en": [
-      "you can download the lab file from the link in the description"
+      "this game is gonna be super simple"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "эта игра будет супер простой"
     ]
   },
   {
     "time": [
-      7.162907,
-      14.12432
+      7.5145,
+      8.528998
     ],
     "en": [
-      "in this lab we will be working with one router r1 and one PC PC one"
+      "I say super simple"
     ],
     "ru": [
-      "В этой лабораторной работе мы будем работать с одним маршрутизатором r1 и одним ПК ПК одним"
+      "Я говорю супер просто"
     ]
   },
   {
     "time": [
-      14.12432,
-      18.869851
+      8.528998,
+      10.971018
     ],
     "en": [
-      "we will use PC one to connect to the console port of r1"
+      "as we're not going to be focusing too much on styling"
     ],
     "ru": [
-      "мы будем использовать ПК один для подключения к консольному порту r1"
+      "так как мы не собираемся уделять слишком много внимания стилю"
     ]
   },
   {
     "time": [
-      18.869851,
-      21.118842
+      10.971018,
+      12.761935
     ],
     "en": [
-      "and perform configurations from there"
+      "this is a JavaScript walkthrough"
     ],
     "ru": [
-      "и выполнить настройки оттуда"
+      "это пошаговое руководство по JavaScript"
     ]
   },
   {
     "time": [
-      21.118842,
-      27.184047
+      12.761935,
+      16.093205
     ],
     "en": [
-      "we will also set up a password to protect connections from the console port of r1"
+      "very much gonna be focusing on the logic of the game"
     ],
     "ru": [
-      "мы также установим пароль для защиты соединений от консольного порта r1"
+      "очень хочу сосредоточиться на логике игры"
     ]
   },
   {
     "time": [
-      27.184047,
-      30.53352
+      16.093205,
+      19.423497
     ],
     "en": [
-      "try to complete the lab on your own first"
+      "I am doing this so you can take the game start up"
     ],
     "ru": [
-      "попробуйте сначала пройти лабораторию самостоятельно"
+      "Я делаю это, чтобы вы могли запустить игру"
     ]
   },
   {
     "time": [
-      30.53352,
-      33.774879
+      19.423497,
+      21.389163
     ],
     "en": [
-      "and continue watching this video if you have trouble"
+      "as you want truly make it your own"
     ],
     "ru": [
-      "и продолжайте смотреть это видео, если у вас возникнут проблемы"
+      "как хочешь по-настоящему сделай это своим"
     ]
   },
   {
     "time": [
-      33.774879,
-      36.419122
+      21.389163,
+      23.3991
     ],
     "en": [
-      "or watch it afterwards to check your solution"
+      "this game has a lot of potential"
     ],
     "ru": [
-      "или посмотрите его потом, чтобы проверить свое решение"
+      "у этой игры большой потенциал"
     ]
   },
   {
     "time": [
-      36.419122,
-      45.152569
+      23.3991,
+      25.724829
     ],
     "en": [
-      "step one is to connect PC ones rs-232 port to our ones console port"
+      "especially with the drag and drop movements"
     ],
     "ru": [
-      "Шаг первый - подключить один порт RS-232 ПК к нашему консольному порту"
+      "особенно с движениями перетаскивания"
     ]
   },
   {
     "time": [
-      45.152569,
-      49.17052
+      25.724829,
+      26.513767
     ],
     "en": [
-      "click on connections in the bottom left corner of the screen"
+      "we're going to be doing"
     ],
     "ru": [
-      "нажмите на соединения в нижнем левом углу экрана"
+      "мы собираемся делать"
     ]
   },
   {
     "time": [
-      49.17052,
-      54.561567
+      26.513767,
+      27.599183
     ],
     "en": [
-      "this is the console cable as indicated at the bottom of the screen"
+      "so I'm excited to see"
     ],
     "ru": [
-      "это консольный кабель, как показано в нижней части экрана"
+      "так что я рад видеть"
     ]
   },
   {
     "time": [
-      54.561567,
-      59.95001
+      27.599183,
+      28.884246
     ],
     "en": [
-      "connect it to the rs-232 port of PC one"
+      "what you guys come up with"
     ],
     "ru": [
-      "подключите его к порту RS-232 ПК один"
+      "что вы, ребята, придумываете"
     ]
   },
   {
     "time": [
-      59.95001,
-      62.507949
+      28.884246,
+      30.918954
     ],
     "en": [
-      "and then to the console port of r1"
+      "in this walkthrough I'm going to be showing you"
     ],
     "ru": [
-      "а затем в консольный порт r1"
+      "в этом пошаговом руководстве я покажу вам"
     ]
   },
   {
     "time": [
-      62.507949,
-      64.385472
+      30.918954,
+      34.404371
     ],
     "en": [
-      "that's step one"
+      "how to create a board randomly generate candies"
     ],
     "ru": [
-      "это первый шаг"
+      "как создать доску случайным образом генерировать конфеты"
     ]
   },
   {
     "time": [
-      64.385472,
-      74.499574
+      34.404371,
+      35.314933
     ],
     "en": [
-      "step two is to use the console connection to configure the hostname of r1 from pc1"
+      "all over the board"
     ],
     "ru": [
-      "Шаг второй - использовать консольное соединение для настройки имени хоста r1 с pc1"
+      "по всей доске"
     ]
   },
   {
     "time": [
-      74.499574,
-      84.321932
+      35.314933,
+      36.762746
     ],
     "en": [
-      "to do so click on PC one click on desktop select terminal and then select ok to accept the default configurations"
+      "switch out colors of candies"
     ],
     "ru": [
-      "для этого щелкните ПК одним щелчком мыши на рабочем столе выберите терминал, а затем выберите ОК, чтобы принять конфигурации по умолчанию"
+      "поменять цвет конфет"
     ]
   },
   {
     "time": [
-      84.321932,
-      90.848294
+      36.762746,
+      37.838746
     ],
     "en": [
-      "we're now connected to r1 via PC one and can perform configurations as usual"
+      "on the board"
     ],
     "ru": [
-      "Теперь мы подключены к r1 через ПК и можем выполнять настройки как обычно"
+      "на борту"
     ]
   },
   {
     "time": [
-      90.848294,
-      97.999229
+      37.838746,
+      39.459413
     ],
     "en": [
-      "now we have to change the hostname of the router to r1 as we've done before in previous labs"
+      "drag and drop candies"
     ],
     "ru": [
-      "теперь нам нужно изменить имя хоста маршрутизатора на r1, как мы делали раньше в предыдущих лабораторных работах."
+      "перетащить конфеты"
     ]
   },
   {
     "time": [
-      97.999229,
-      101.20266
+      39.459413,
+      41.000579
     ],
     "en": [
-      "unable to enter privileged exec mode"
+      "check for matches"
     ],
     "ru": [
-      "невозможно войти в привилегированный режим exec"
+      "проверить совпадения"
     ]
   },
   {
     "time": [
-      101.20266,
-      104.726566
+      41.000579,
+      42.879787
     ],
     "en": [
-      "conf t enter global configuration mode"
+      "check for valid matches"
     ],
     "ru": [
-      "conf t войти в режим глобальной конфигурации"
+      "проверить действительные совпадения"
     ]
   },
   {
     "time": [
-      104.726566,
-      106.476107
+      42.879787,
+      45.170766
     ],
     "en": [
-      "hostname r1"
+      "so check that the row of candies"
     ],
     "ru": [
-      "имя хоста r1"
+      "так что проверьте, что ряд конфет"
     ]
   },
   {
     "time": [
-      106.476107,
-      108.726232
+      45.170766,
+      46.710204
     ],
     "en": [
-      "that's it for step two"
+      "doesn't go off into the next row"
     ],
     "ru": [
-      "вот и все для второго шага"
+      "не переходит в следующий ряд"
     ]
   },
   {
     "time": [
-      108.726232,
-      116.328196
+      46.710204,
+      48.122974
     ],
     "en": [
-      "step three is to set the enable secret of r1 to Cisco"
+      "move all the candies down"
     ],
     "ru": [
-      "Шаг третий - установить для Cisco секретный ключ включения r1."
+      "переместите все конфеты вниз"
     ]
   },
   {
     "time": [
-      116.328196,
-      120.926073
+      48.122974,
+      49.613787
     ],
     "en": [
-      "if you remember the enable secret is a password that protects privileged exec mode"
+      "if you get a match"
     ],
     "ru": [
-      "если вы помните, что секрет включения - это пароль, который защищает привилегированный режим exec"
+      "если вы получите совпадение"
     ]
   },
   {
     "time": [
-      120.926073,
-      123.2163
+      49.613787,
+      51.560745
     ],
     "en": [
-      "and is encrypted by default"
+      "and generate new candies"
     ],
     "ru": [
-      "и по умолчанию зашифрован"
+      "и генерировать новые конфеты"
     ]
   },
   {
     "time": [
-      123.2163,
-      126.6641
+      51.560745,
+      53.386329
     ],
     "en": [
-      "it's configured from global configuration mode"
+      "by the end of this walkthrough"
     ],
     "ru": [
-      "он настроен из режима глобальной конфигурации"
+      "к концу этого прохождения"
     ]
   },
   {
     "time": [
-      126.6641,
-      128.360855
+      53.386329,
+      57.227536
     ],
     "en": [
-      "which we are already in"
+      "you should have also got to grips with inbuilt JavaScript functions"
     ],
     "ru": [
-      "в котором мы уже находимся"
+      "вам также следовало разобраться со встроенными функциями JavaScript"
     ]
   },
   {
     "time": [
-      128.360855,
-      130.72325
+      57.227536,
+      61.251578
     ],
     "en": [
-      "enable secret Cisco"
+      "such as every sum for each includes"
     ],
     "ru": [
-      "включить секрет Cisco"
+      "например, каждая сумма для каждого включает"
     ]
   },
   {
     "time": [
-      130.72325,
-      132.805721
+      61.251578,
+      63.101723
     ],
     "en": [
-      "step three is now complete"
+      "set attribute and many more"
     ],
     "ru": [
-      "шаг третий теперь завершен"
+      "установить атрибут и многое другое"
     ]
   },
   {
     "time": [
-      132.805721,
-      140.763358
+      63.101723,
+      65.303578
     ],
     "en": [
-      "step four is to set the console password of r1 to CCNA"
+      "I would love to see your finished games"
     ],
     "ru": [
-      "Шаг четвертый - установить пароль консоли r1 на CCNA"
+      "Я бы хотел увидеть твои готовые игры"
     ]
   },
   {
     "time": [
-      140.763358,
-      145.884646
+      65.303578,
+      67.421411
     ],
     "en": [
-      "we also have to ensure that it is required to connect to r1 via the console port"
+      "so please do share them with me on youtube"
     ],
     "ru": [
-      "мы также должны убедиться, что требуется подключение к r1 через консольный порт"
+      "так что поделитесь ими со мной на YouTube"
     ]
   },
   {
     "time": [
-      145.884646,
-      150.675043
+      67.421411,
+      70.584015
     ],
     "en": [
-      "to do so we have to enter line configuration mode for the console port"
+      "or Twitter my Twitter handle is Anja underscore Kubo"
     ],
     "ru": [
-      "для этого мы должны войти в режим конфигурации линии для консольного порта"
+      "или в Твиттере мой дескриптор в Твиттере - Аня, подчеркивает Кубо"
     ]
   },
   {
     "time": [
-      150.675043,
-      156.148803
+      70.584015,
+      71.455598
     ],
     "en": [
-      "that is done with the command line console 0 from global configuration mode"
+      "or Instagram"
     ],
     "ru": [
-      "это делается с помощью консоли 0 командной строки из режима глобальной конфигурации"
+      "или Instagram"
     ]
   },
   {
     "time": [
-      156.148803,
-      159.949766
+      71.455598,
+      72.241015
     ],
     "en": [
-      "the zero refers to the number of the port"
+      "whatever"
     ],
     "ru": [
-      "ноль относится к номеру порта"
+      "что бы ни"
     ]
   },
   {
     "time": [
-      159.949766,
-      164.986256
+      72.241015,
+      77.128703
     ],
     "en": [
-      "and since there is only one console port there is only line console 0"
+      "okay"
     ],
     "ru": [
-      "и поскольку есть только один консольный порт, есть только строка console 0"
+      "Ладно"
     ]
   },
   {
     "time": [
-      164.986256,
-      168.665267
+      77.128703,
+      79.462057
     ],
     "en": [
-      "there is no line console 1 2 3 4 etc"
+      "so as always let's make sure our javascript file"
     ],
     "ru": [
-      "нет линии консоли 1 2 3 4 и т. д."
+      "так что, как всегда, давайте убедимся, что наш файл javascript"
     ]
   },
   {
     "time": [
-      168.665267,
-      174.000063
+      79.462057,
+      81.261619
     ],
     "en": [
-      "from here we set the password to CCNA with a very simple command"
+      "and style sheet are linked up properly"
     ],
     "ru": [
-      "отсюда мы устанавливаем пароль на CCNA с помощью очень простой команды"
+      "и таблица стилей связаны правильно"
     ]
   },
   {
     "time": [
-      174.000063,
-      176.104199
+      81.261619,
+      82.348161
     ],
     "en": [
-      "password CCNA"
+      "using these script tag"
     ],
     "ru": [
-      "пароль CCNA"
+      "используя эти теги сценария"
     ]
   },
   {
     "time": [
-      176.104199,
-      178.683994
+      82.348161,
+      83.687848
     ],
     "en": [
-      "now let's try out our password"
+      "and link tag respectively"
     ],
     "ru": [
-      "теперь давайте попробуем наш пароль"
+      "и тег ссылки соответственно"
     ]
   },
   {
     "time": [
-      178.683994,
-      182.966503
+      83.687848,
+      86.745786
     ],
     "en": [
-      "I'll use the end command to return to privileged exec mode"
+      "if you have put the two files in the root of your folder"
     ],
     "ru": [
-      "Я воспользуюсь командой end, чтобы вернуться в привилегированный режим exec"
+      "если вы поместили два файла в корень вашей папки"
     ]
   },
   {
     "time": [
-      182.966503,
-      185.89367
+      86.745786,
+      89.311681
     ],
     "en": [
-      "and then exit to quit the connection"
+      "make sure that reflects and the path you put in your tags"
     ],
     "ru": [
-      "а затем выйти, чтобы завершить соединение"
+      "убедитесь, что он отражает и путь, который вы указали в своих тегах"
     ]
   },
   {
     "time": [
-      185.89367,
-      188.895884
+      89.311681,
+      91.966515
     ],
     "en": [
-      "but I'm not asked for a password"
+      "if you are not sure what any of this"
     ],
     "ru": [
-      "но у меня не спрашивают пароль"
+      "если вы не уверены, что из этого"
     ]
   },
   {
     "time": [
-      188.895884,
-      195.023131
+      91.966515,
+      94.642847
     ],
     "en": [
-      "if I type enable I have to use the password Cisco to access privileged exec mode"
+      "means please do watch my video that I've linked as a card"
     ],
     "ru": [
-      "если я наберу \"включить\", мне нужно будет использовать пароль Cisco для доступа к привилегированному режиму выполнения."
+      "означает, пожалуйста, посмотрите мое видео, которое я связал как карточку"
     ]
   },
   {
     "time": [
-      195.023131,
-      201.141207
+      94.642847,
+      97.919804
     ],
     "en": [
-      "but why wasn't I asked to use the password CCNA to connect to the console port again"
+      "here I am putting my script tag in the header"
     ],
     "ru": [
-      "но почему меня не попросили использовать пароль CCNA для повторного подключения к консольному порту"
+      "здесь я помещаю свой тег скрипта в заголовок"
     ]
   },
   {
     "time": [
-      201.141207,
-      205.858417
+      97.919804,
+      100.577013
     ],
     "en": [
-      "this is because we missed one other command in line configuration mode"
+      "as I want to use a Dom event listener on my JavaScript file"
     ],
     "ru": [
-      "это потому, что мы пропустили еще одну команду в режиме конфигурации строки"
+      "поскольку я хочу использовать прослушиватель событий Dom в моем файле JavaScript"
     ]
   },
   {
     "time": [
-      205.858417,
-      208.248564
+      100.577013,
+      101.941783
     ],
     "en": [
-      "let's return there once more"
+      "this is a choice that"
     ],
     "ru": [
-      "давай вернемся туда еще раз"
+      "это выбор, который"
     ]
   },
   {
     "time": [
-      208.248564,
-      211.022927
+      101.941783,
+      103.121387
     ],
     "en": [
-      "conf t line con zero"
+      "I'm making on my preference"
     ],
     "ru": [
-      "conf t line con zero"
+      "Я делаю по своему усмотрению"
     ]
   },
   {
     "time": [
-      211.022927,
-      219.504948
+      103.121387,
+      106.081074
     ],
     "en": [
-      "now we have to use the command login to tell the router that the password must be used to connect to the console"
+      "as opposed to putting the script tag in the footer"
     ],
     "ru": [
-      "теперь мы должны использовать команду login, чтобы сообщить маршрутизатору, что пароль должен использоваться для подключения к консоли"
+      "в отличие от размещения тега скрипта в нижнем колонтитуле"
     ]
   },
   {
     "time": [
-      219.504948,
-      223.498016
+      106.081074,
+      109.993011
     ],
     "en": [
-      "let's try again and exit"
+      "now we need to go ahead and put a div tag here"
     ],
     "ru": [
-      "давай попробуем еще раз и выйдем"
+      "теперь нам нужно пойти дальше и поместить здесь тег div"
     ]
   },
   {
     "time": [
-      223.498016,
-      224.464199
+      109.993011,
+      111.824657
     ],
     "en": [
-      "and there we go"
+      "and give it a class of grid"
     ],
     "ru": [
-      "и вот мы идем"
+      "и присвоить ему класс сетки"
     ]
   },
   {
     "time": [
-      224.464199,
-      227.866802
+      111.824657,
+      115.168844
     ],
     "en": [
-      "now we are asked for the console password of CCNA"
+      "this div tag is where all the magic happens"
     ],
     "ru": [
-      "теперь нас спрашивают пароль консоли CCNA"
+      "в этом теге div происходит вся магия"
     ]
   },
   {
     "time": [
-      227.866802,
-      233.469493
+      115.168844,
+      116.746449
     ],
     "en": [
-      "now finally let's check the running configuration for the password and see if it's encrypted"
+      "so let's give it the respect"
     ],
     "ru": [
-      "теперь, наконец, давайте проверим текущую конфигурацию для пароля и посмотрим, зашифрован ли он"
+      "так что давайте отдадим ему должное"
     ]
   },
   {
     "time": [
-      233.469493,
-      238.662364
+      116.746449,
+      119.706511
     ],
     "en": [
-      "enable password cisco show run"
+      "and deserves and style it up to look like an actual courage"
     ],
     "ru": [
-      "включить пароль cisco show run"
+      "и заслуживает и оформляет его, чтобы он выглядел как настоящее мужество."
     ]
   },
   {
     "time": [
-      238.662364,
-      241.440084
+      119.706511,
+      124.196032
     ],
     "en": [
-      "the line section is at the bottom of the running config"
+      "for this we flip over to our style sheet or CSS file"
     ],
     "ru": [
-      "секция строки находится внизу работающей конфигурации"
+      "для этого мы переходим к нашей таблице стилей или файлу CSS"
     ]
   },
   {
     "time": [
-      241.440084,
-      245.280339
+      124.196032,
+      126.702844
     ],
     "en": [
-      "so i'll tap the spacebar a few times to scroll down"
+      "now to pick out our div element"
     ],
     "ru": [
-      "поэтому я несколько раз коснусь пробела, чтобы прокрутить вниз"
+      "теперь выбрать наш элемент div"
     ]
   },
   {
     "time": [
-      245.280339,
-      250.591846
+      126.702844,
+      128.080886
     ],
     "en": [
-      "there it is line con zero password CCNA"
+      "that we gave a class name to"
     ],
     "ru": [
-      "там строка с нулевым паролем CCNA"
+      "что мы дали имя класса"
     ]
   },
   {
     "time": [
-      250.591846,
-      252.54017
+      128.080886,
+      131.953719
     ],
     "en": [
-      "as you can see it is not encrypted"
+      "we get the name we also put a dot in front of it"
     ],
     "ru": [
-      "как видите, он не зашифрован"
+      "мы получаем имя мы также ставим точку перед ним"
     ]
   },
   {
     "time": [
-      252.54017,
-      254.651493
+      131.953719,
+      133.15549
     ],
     "en": [
-      "that's all for step four"
+      "this means class"
     ],
     "ru": [
-      "это все для четвертого шага"
+      "это означает класс"
     ]
   },
   {
     "time": [
-      254.651493,
-      262.69548
+      133.15549,
+      136.029948
     ],
     "en": [
-      "Step five is to enable password encryption to protect this console password"
+      "I have pre decided that"
     ],
     "ru": [
-      "Шаг пятый - включить шифрование пароля для защиты этого пароля консоли."
+      "Я заранее решил, что"
     ]
   },
   {
     "time": [
-      262.69548,
-      265.66923
+      136.029948,
+      138.953906
     ],
     "en": [
-      "compte to enter global configuration mode"
+      "when my grid to be made up of 8 by 8 squares"
     ],
     "ru": [
-      "compte для входа в режим глобальной конфигурации"
+      "когда моя сетка будет состоять из 8 на 8 квадратов"
     ]
   },
   {
     "time": [
-      265.66923,
-      267.735935
+      138.953906,
+      141.590302
     ],
     "en": [
-      "then the same command as before"
+      "I thought 70 pixels squares are nice"
     ],
     "ru": [
-      "затем та же команда, что и раньше"
+      "Я думал, что квадраты размером 70 пикселей - это хорошо"
     ]
   },
   {
     "time": [
-      267.735935,
-      270.058735
+      141.590302,
+      145.678531
     ],
     "en": [
-      "service password encryption"
+      "so 70 x 8 that's 560 pixels"
     ],
     "ru": [
-      "шифрование сервисного пароля"
+      "70 x 8 это 560 пикселей"
     ]
   },
   {
     "time": [
-      270.058735,
-      273.006438
+      145.678531,
+      150.015322
     ],
     "en": [
-      "let's drop back to privileged exec mode"
+      "let's give our grid a height of 560 pixels"
     ],
     "ru": [
-      "вернемся в привилегированный режим exec"
+      "дадим нашей сетке высоту 560 пикселей"
     ]
   },
   {
     "time": [
-      273.006438,
-      275.203606
+      150.015322,
+      152.236738
     ],
     "en": [
-      "and then use show run to confirm"
+      "and a width of 560 pixels"
     ],
     "ru": [
-      "а затем используйте show run, чтобы подтвердить"
+      "и шириной 560 пикселей"
     ]
   },
   {
     "time": [
-      275.203606,
-      280.508029
+      152.236738,
+      154.305862
     ],
     "en": [
-      "scroll down to the bottom and you can see the password is now encrypted"
+      "as I've done this many times"
     ],
     "ru": [
-      "прокрутите вниз, и вы увидите, что пароль теперь зашифрован"
+      "как я делал это много раз"
     ]
   },
   {
     "time": [
-      280.508029,
-      283.336426
+      154.305862,
+      156.969612
     ],
     "en": [
-      "finally let's save the configuration"
+      "I know that if we want to put divs inside the squared"
     ],
     "ru": [
-      "наконец, давайте сохраним конфигурацию"
+      "Я знаю, что если мы хотим поместить div в квадрат"
     ]
   },
   {
     "time": [
-      283.336426,
-      288.055578
+      156.969612,
+      158.813362
     ],
     "en": [
-      "let's use the copy running-config startup config command"
+      "the divs will appear stacked over each other"
     ],
     "ru": [
-      "давайте воспользуемся командой copy running-config startup config"
+      "дивы появятся наложенными друг на друга"
     ]
   },
   {
     "time": [
-      288.055578,
-      290.352434
+      158.813362,
+      162.110173
     ],
     "en": [
-      "shorten to copy run start"
+      "we used to make them snake over each other row by row"
     ],
     "ru": [
-      "сократить, чтобы скопировать запуск запуска"
+      "мы заставляли их змеиться друг над другом, ряд за рядом"
     ]
   },
   {
     "time": [
-      290.352434,
-      292.819539
+      162.110173,
+      164.379714
     ],
     "en": [
-      "that's all for this lab"
+      "so we need to do this by using at display flags"
     ],
     "ru": [
-      "это все для этой лаборатории"
+      "поэтому нам нужно сделать это, используя флаги при отображении"
     ]
   },
   {
     "time": [
-      292.819539,
-      299.131444
+      164.379714,
+      166.250068
     ],
     "en": [
-      "thank you for watching I hope this lab and video have been helpful for you"
+      "and then flexwrap"
     ],
     "ru": [
-      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были для вас полезны."
+      "а затем flexwrap"
     ]
   },
   {
     "time": [
-      299.131444,
-      303.715134
+      166.250068,
+      169.291505
     ],
     "en": [
-      "please subscribe for future labs like this which will be released weekly"
+      "so that they break when they can't fit in the grid"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
+      "чтобы они ломались, когда не помещаются в сетку"
     ]
   },
   {
     "time": [
-      303.715134,
-      308.742031
+      169.291505,
+      171.452443
     ],
     "en": [
-      "if you have requests for any specific labs let me know in the comment section"
+      "we have made and start a new row"
     ],
     "ru": [
-      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
+      "мы сделали и начинаем новый ряд"
     ]
   },
   {
     "time": [
-      308.742031,
-      315.017553
+      171.452443,
+      174.498338
     ],
     "en": [
-      "if you want to support my channel I accept Bitcoin donations via the address in the description"
+      "I'm also gonna give the grid a background color"
     ],
     "ru": [
-      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах по адресу в описании"
+      "Я также дам сетке цвет фона"
     ]
   },
   {
     "time": [
-      315.017553,
-      323.729292
+      174.498338,
+      177.197484
     ],
     "en": [
-      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
+      "just so we can see what's happening in our browser"
     ],
     "ru": [
-      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
+      "просто чтобы мы могли видеть, что происходит в нашем браузере"
     ]
   },
   {
     "time": [
-      323.729292,
-      323.729292
+      177.197484,
+      178.999484
     ],
     "en": [
-      ""
+      "let's go ahead"
     ],
     "ru": [
-      ""
+      "вперед"
     ]
   },
   {
     "time": [
-      323.729292,
-      323.729292
+      178.999484,
+      181.997525
     ],
     "en": [
-      ""
+      "so right click on HTML file to see this in our browser"
     ],
     "ru": [
-      ""
+      "поэтому щелкните правой кнопкой мыши файл HTML, чтобы увидеть это в нашем браузере."
     ]
   },
   {
     "time": [
-      323.729292,
-      323.729292
+      181.997525,
+      184.376191
     ],
     "en": [
-      ""
+      "okay it cool a blue grid"
     ],
     "ru": [
-      ""
+      "хорошо это круто синяя сетка"
+    ]
+  },
+  {
+    "time": [
+      184.376191,
+      187.214253
+    ],
+    "en": [
+      "if you inspect the page"
+    ],
+    "ru": [
+      "если вы проверите страницу"
+    ]
+  },
+  {
+    "time": [
+      187.214253,
+      190.197919
+    ],
+    "en": [
+      "you will see that information has been passed to our browser"
+    ],
+    "ru": [
+      "вы увидите, что информация была передана в наш браузер"
+    ]
+  },
+  {
+    "time": [
+      190.197919,
+      194.528585
+    ],
+    "en": [
+      "now let's our CSS file what we want our future squares to look like"
+    ],
+    "ru": [
+      "теперь давайте нашему файлу CSS, как мы хотим, чтобы наши будущие квадраты выглядели как"
+    ]
+  },
+  {
+    "time": [
+      194.528585,
+      198.622605
+    ],
+    "en": [
+      "as we said I'm pre decided I want to be 70 by 70 pixels big"
+    ],
+    "ru": [
+      "как мы уже говорили, я заранее решил, что хочу быть размером 70 на 70 пикселей"
+    ]
+  },
+  {
+    "time": [
+      198.622605,
+      202.149543
+    ],
+    "en": [
+      "so height 70 and width 70"
+    ],
+    "ru": [
+      "итак высота 70 и ширина 70"
+    ]
+  },
+  {
+    "time": [
+      202.149543,
+      204.762605
+    ],
+    "en": [
+      "now let's create some squares go my grid"
+    ],
+    "ru": [
+      "теперь давайте создадим несколько квадратов иди по моей сетке"
+    ]
+  },
+  {
+    "time": [
+      204.762605,
+      206.619939
+    ],
+    "en": [
+      "using JavaScript"
+    ],
+    "ru": [
+      "используя JavaScript"
+    ]
+  },
+  {
+    "time": [
+      206.619939,
+      211.767314
+    ],
+    "en": [
+      "you will see here I have already put in my Dom event listener as part of my boiler plate to set up"
+    ],
+    "ru": [
+      "здесь вы увидите, что я уже вставил свой слушатель событий Dom как часть моего шаблона для настройки"
+    ]
+  },
+  {
+    "time": [
+      211.767314,
+      215.605501
+    ],
+    "en": [
+      "I will now be writing all my JavaScript in this event listener"
+    ],
+    "ru": [
+      "Теперь я буду писать весь свой JavaScript в этом прослушивателе событий."
+    ]
+  },
+  {
+    "time": [
+      215.605501,
+      218.049709
+    ],
+    "en": [
+      "for it to be picked up on my script tag"
+    ],
+    "ru": [
+      "чтобы он был поднят в моем теге сценария"
+    ]
+  },
+  {
+    "time": [
+      218.049709,
+      220.411459
+    ],
+    "en": [
+      "which I placed in the header of my HTML"
+    ],
+    "ru": [
+      "который я поместил в заголовок своего HTML"
+    ]
+  },
+  {
+    "time": [
+      220.411459,
+      223.905189
+    ],
+    "en": [
+      "as mentioned some people liked with a script tag on the footer of the HTML"
+    ],
+    "ru": [
+      "как уже упоминалось, некоторым людям понравился тег скрипта в нижнем колонтитуле HTML"
+    ]
+  },
+  {
+    "time": [
+      223.905189,
+      226.869439
+    ],
+    "en": [
+      "and skip the Dom event listener the choice is up to you"
+    ],
+    "ru": [
+      "и пропустите прослушиватель событий Dom, выбор за вами"
+    ]
+  },
+  {
+    "time": [
+      226.869439,
+      233.722168
+    ],
+    "en": [
+      "this Dom event listener is essentially saying in laymen terms that I want all of my HTML file to be read"
+    ],
+    "ru": [
+      "этот прослушиватель событий Dom, по сути, говорит в терминах непрофессионала, что я хочу, чтобы весь мой HTML-файл был прочитан"
+    ]
+  },
+  {
+    "time": [
+      233.722168,
+      236.006043
+    ],
+    "en": [
+      "before loading this javascript file"
+    ],
+    "ru": [
+      "перед загрузкой этого файла javascript"
+    ]
+  },
+  {
+    "time": [
+      236.006043,
+      240.700834
+    ],
+    "en": [
+      "and is a more foolproof way of making sure that these events happen in order"
+    ],
+    "ru": [
+      "и это более надежный способ убедиться, что эти события происходят по порядку"
+    ]
+  },
+  {
+    "time": [
+      240.700834,
+      244.687667
+    ],
+    "en": [
+      "now using an inbuilt method called a query selector"
+    ],
+    "ru": [
+      "теперь используется встроенный метод, называемый селектором запросов"
+    ]
+  },
+  {
+    "time": [
+      244.687667,
+      248.086271
+    ],
+    "en": [
+      "I am telling my JavaScript file to look at my HTML file"
+    ],
+    "ru": [
+      "Я говорю своему файлу JavaScript посмотреть мой файл HTML"
+    ]
+  },
+  {
+    "time": [
+      248.086271,
+      251.191063
+    ],
+    "en": [
+      "and find the element with the class name of grid"
+    ],
+    "ru": [
+      "и найдите элемент с именем класса сетки"
+    ]
+  },
+  {
+    "time": [
+      251.191063,
+      252.769834
+    ],
+    "en": [
+      "indicated by this dot"
+    ],
+    "ru": [
+      "обозначено этой точкой"
+    ]
+  },
+  {
+    "time": [
+      252.769834,
+      255.315063
+    ],
+    "en": [
+      "and save it as constant grid"
+    ],
+    "ru": [
+      "и сохраните его как постоянную сетку"
+    ]
+  },
+  {
+    "time": [
+      255.315063,
+      259.851292
+    ],
+    "en": [
+      "we are doing this we can reuse this line of code over and over again"
+    ],
+    "ru": [
+      "мы делаем это, мы можем повторно использовать эту строку кода снова и снова"
+    ]
+  },
+  {
+    "time": [
+      259.851292,
+      261.224438
+    ],
+    "en": [
+      "just by typing grid"
+    ],
+    "ru": [
+      "просто набрав сетку"
+    ]
+  },
+  {
+    "time": [
+      261.224438,
+      263.232917
+    ],
+    "en": [
+      "let's also tell our JavaScript file"
+    ],
+    "ru": [
+      "давайте также сообщим нашему файлу JavaScript"
+    ]
+  },
+  {
+    "time": [
+      263.232917,
+      265.459312
+    ],
+    "en": [
+      "we want our width to be 8 from now on"
+    ],
+    "ru": [
+      "мы хотим, чтобы наша ширина теперь была 8"
+    ]
+  },
+  {
+    "time": [
+      265.459312,
+      268.28375
+    ],
+    "en": [
+      "let's store that as a and as it won't change"
+    ],
+    "ru": [
+      "давайте сохраним это как и так как это не изменится"
+    ]
+  },
+  {
+    "time": [
+      268.28375,
+      273.521062
+    ],
+    "en": [
+      "so the first thing we're going to do is show you how to create a board using javascript"
+    ],
+    "ru": [
+      "поэтому первое, что мы собираемся сделать, это показать вам, как создать доску с помощью javascript"
+    ]
+  },
+  {
+    "time": [
+      273.521062,
+      275.718292
+    ],
+    "en": [
+      "I will do this in a function"
+    ],
+    "ru": [
+      "Я сделаю это в функции"
+    ]
+  },
+  {
+    "time": [
+      275.718292,
+      278.164521
+    ],
+    "en": [
+      "I am choosing to call create board"
+    ],
+    "ru": [
+      "Я выбираю позвонить по созданию доски"
+    ]
+  },
+  {
+    "time": [
+      278.164521,
+      282.804396
+    ],
+    "en": [
+      "now using a for loop I want to imagine our future grinch"
+    ],
+    "ru": [
+      "Теперь, используя цикл for, я хочу представить наш гринч в будущем"
+    ]
+  },
+  {
+    "time": [
+      282.804396,
+      285.214979
+    ],
+    "en": [
+      "we decided it was going to be 8 by 8 squares"
+    ],
+    "ru": [
+      "мы решили, что это будет 8 на 8 квадратов"
+    ]
+  },
+  {
+    "time": [
+      285.214979,
+      289.155646
+    ],
+    "en": [
+      "so let's use width x width to tell our JavaScript"
+    ],
+    "ru": [
+      "поэтому давайте используем ширину x ширину, чтобы сообщить нашему JavaScript"
+    ]
+  },
+  {
+    "time": [
+      289.155646,
+      292.576625
+    ],
+    "en": [
+      "that this is the syntax for a for loop"
+    ],
+    "ru": [
+      "что это синтаксис цикла for"
+    ]
+  },
+  {
+    "time": [
+      292.576625,
+      300.131582
+    ],
+    "en": [
+      "what we are doing here is looping over something 64 times"
+    ],
+    "ru": [
+      "то, что мы здесь делаем, перебираем что-то 64 раза"
+    ]
+  },
+  {
+    "time": [
+      300.131582,
+      303.040728
+    ],
+    "en": [
+      "incrementing by 1 each time from 0"
+    ],
+    "ru": [
+      "увеличивается на 1 каждый раз с 0"
+    ]
+  },
+  {
+    "time": [
+      303.040728,
+      306.589415
+    ],
+    "en": [
+      "now every time it does loop over"
+    ],
+    "ru": [
+      "теперь каждый раз, когда он зацикливается"
+    ]
+  },
+  {
+    "time": [
+      306.589415,
+      310.914477
+    ],
+    "en": [
+      "we want to create a div using an inbuilt method called create element"
+    ],
+    "ru": [
+      "мы хотим создать div, используя встроенный метод под названием create element"
+    ]
+  },
+  {
+    "time": [
+      310.914477,
+      313.05181
+    ],
+    "en": [
+      "we are creating a div element"
+    ],
+    "ru": [
+      "мы создаем элемент div"
+    ]
+  },
+  {
+    "time": [
+      313.05181,
+      320.171185
+    ],
+    "en": [
+      "I'm going to call this square for our HTML file"
+    ],
+    "ru": [
+      "Я назову этот квадрат для нашего HTML-файла"
+    ]
+  },
+  {
+    "time": [
+      320.171185,
+      327.294497
+    ],
+    "en": [
+      "next we need to put that square into a div with a class of grid"
+    ],
+    "ru": [
+      "Затем нам нужно поместить этот квадрат в div с классом сетки"
+    ]
+  },
+  {
+    "time": [
+      327.294497,
+      331.197768
+    ],
+    "en": [
+      "we do so using another input method called append child"
+    ],
+    "ru": [
+      "мы делаем это, используя другой метод ввода, называемый append child"
+    ]
+  },
+  {
+    "time": [
+      331.197768,
+      336.964747
+    ],
+    "en": [
+      "we do so by passing through the newly created square into a grid constant like this"
+    ],
+    "ru": [
+      "мы делаем это, проходя через вновь созданный квадрат в сеточную константу, подобную этой"
+    ]
+  },
+  {
+    "time": [
+      336.964747,
+      339.718934
+    ],
+    "en": [
+      "lastly each time we create a div"
+    ],
+    "ru": [
+      "наконец, каждый раз, когда мы создаем div"
+    ]
+  },
+  {
+    "time": [
+      339.718934,
+      341.16883
+    ],
+    "en": [
+      "and add it into a grid"
+    ],
+    "ru": [
+      "и добавляем в сетку"
+    ]
+  },
+  {
+    "time": [
+      341.16883,
+      344.520725
+    ],
+    "en": [
+      "I also want to store it in an array for us to work with"
+    ],
+    "ru": [
+      "Я также хочу сохранить его в массиве, чтобы мы могли работать с"
+    ]
+  },
+  {
+    "time": [
+      344.520725,
+      348.513184
+    ],
+    "en": [
+      "so let's create an empty array first called squares like this"
+    ],
+    "ru": [
+      "поэтому давайте создадим пустой массив, сначала назовем его квадратами, подобными этому"
+    ]
+  },
+  {
+    "time": [
+      348.513184,
+      351.451621
+    ],
+    "en": [
+      "and now as well as put a square"
+    ],
+    "ru": [
+      "а теперь так же поставить квадрат"
+    ]
+  },
+  {
+    "time": [
+      351.451621,
+      352.37185
+    ],
+    "en": [
+      "and their grid"
+    ],
+    "ru": [
+      "и их сетка"
+    ]
+  },
+  {
+    "time": [
+      352.37185,
+      355.075142
+    ],
+    "en": [
+      "I also want to push that square into my array"
+    ],
+    "ru": [
+      "Я также хочу вставить этот квадрат в свой массив"
+    ]
+  },
+  {
+    "time": [
+      355.075142,
+      356.254183
+    ],
+    "en": [
+      "that I called squares"
+    ],
+    "ru": [
+      "что я назвал квадратами"
+    ]
+  },
+  {
+    "time": [
+      356.254183,
+      358.958662
+    ],
+    "en": [
+      "we do that using an inbuilt method called push"
+    ],
+    "ru": [
+      "мы делаем это с помощью встроенного метода под названием push"
+    ]
+  },
+  {
+    "time": [
+      358.958662,
+      361.040724
+    ],
+    "en": [
+      "now that we have done all this"
+    ],
+    "ru": [
+      "теперь, когда мы сделали все это"
+    ]
+  },
+  {
+    "time": [
+      361.040724,
+      363.242579
+    ],
+    "en": [
+      "let's see if it works by invoking the function like this"
+    ],
+    "ru": [
+      "посмотрим, работает ли он, вызвав такую ​​функцию"
+    ]
+  },
+  {
+    "time": [
+      363.242579,
+      365.818433
+    ],
+    "en": [
+      "so save the page"
+    ],
+    "ru": [
+      "так что сохраните страницу"
+    ]
+  },
+  {
+    "time": [
+      365.818433,
+      366.767308
+    ],
+    "en": [
+      "go over to our browser"
+    ],
+    "ru": [
+      "перейти в наш браузер"
+    ]
+  },
+  {
+    "time": [
+      366.767308,
+      368.776766
+    ],
+    "en": [
+      "and yep it has works"
+    ],
+    "ru": [
+      "и да, это работает"
+    ]
+  },
+  {
+    "time": [
+      368.776766,
+      370.45662
+    ],
+    "en": [
+      "if we inspect the page"
+    ],
+    "ru": [
+      "если мы проверим страницу"
+    ]
+  },
+  {
+    "time": [
+      370.45662,
+      373.205515
+    ],
+    "en": [
+      "we can now see all our divs happily sitting in our garage"
+    ],
+    "ru": [
+      "теперь мы можем видеть, что все наши дивы счастливо сидят в нашем гараже"
+    ]
+  },
+  {
+    "time": [
+      373.205515,
+      377.105494
+    ],
+    "en": [
+      "ok let's flip back now"
+    ],
+    "ru": [
+      "хорошо, давай вернемся назад"
+    ]
+  },
+  {
+    "time": [
+      377.105494,
+      381.098869
+    ],
+    "en": [
+      "I'm gonna start off by going an array of all the candy colors I'm gonna work with"
+    ],
+    "ru": [
+      "Я собираюсь начать с набора всех цветов конфет, с которыми я собираюсь работать."
+    ]
+  },
+  {
+    "time": [
+      381.098869,
+      384.639077
+    ],
+    "en": [
+      "so I'm going to call those candy colors as they do not change"
+    ],
+    "ru": [
+      "поэтому я назову эти цвета конфет, поскольку они не меняются"
+    ]
+  },
+  {
+    "time": [
+      384.639077,
+      385.968223
+    ],
+    "en": [
+      "I'm gonna put them in a constant"
+    ],
+    "ru": [
+      "Я собираюсь поместить их в постоянный"
+    ]
+  },
+  {
+    "time": [
+      385.968223,
+      391.664098
+    ],
+    "en": [
+      "so there we go red yellow orange purple and green"
+    ],
+    "ru": [
+      "Итак, мы идем красный желтый оранжевый фиолетовый и зеленый"
+    ]
+  },
+  {
+    "time": [
+      391.664098,
+      400.024806
+    ],
+    "en": [
+      "now let's go back to our create board function"
+    ],
+    "ru": [
+      "теперь вернемся к нашей функции создания доски"
+    ]
+  },
+  {
+    "time": [
+      400.024806,
+      403.485138
+    ],
+    "en": [
+      "instead of just creating the square after the square has been created"
+    ],
+    "ru": [
+      "вместо того, чтобы просто создать квадрат после того, как квадрат был создан"
+    ]
+  },
+  {
+    "time": [
+      403.485138,
+      405.768367
+    ],
+    "en": [
+      "I also want to give it a candy color"
+    ],
+    "ru": [
+      "Я тоже хочу придать ему конфетный цвет"
+    ]
+  },
+  {
+    "time": [
+      405.768367,
+      407.746242
+    ],
+    "en": [
+      "I also wanted to be random"
+    ],
+    "ru": [
+      "Я тоже хотел быть случайным"
+    ]
+  },
+  {
+    "time": [
+      407.746242,
+      409.963575
+    ],
+    "en": [
+      "to get a random number from our array"
+    ],
+    "ru": [
+      "чтобы получить случайное число из нашего массива"
+    ]
+  },
+  {
+    "time": [
+      409.963575,
+      411.912783
+    ],
+    "en": [
+      "we need three input methods"
+    ],
+    "ru": [
+      "нам нужно три метода ввода"
+    ]
+  },
+  {
+    "time": [
+      411.912783,
+      416.389137
+    ],
+    "en": [
+      "we use math.random and multiply it by the arrays like this"
+    ],
+    "ru": [
+      "мы используем math.random и умножаем его на такие массивы"
+    ]
+  },
+  {
+    "time": [
+      416.389137,
+      419.835283
+    ],
+    "en": [
+      "now we want to make sure the number we get back as a full integer"
+    ],
+    "ru": [
+      "теперь мы хотим убедиться, что число, которое мы возвращаем, является полным целым числом"
+    ]
+  },
+  {
+    "time": [
+      419.835283,
+      425.852033
+    ],
+    "en": [
+      "for this we're going to use math.floor to round this number down to the nearest full number"
+    ],
+    "ru": [
+      "для этого мы собираемся использовать math.floor, чтобы округлить это число до ближайшего полного числа."
+    ]
+  },
+  {
+    "time": [
+      425.852033,
+      431.104095
+    ],
+    "en": [
+      "and there we go we now have a random number from zero to five"
+    ],
+    "ru": [
+      "и поехали, теперь у нас есть случайное число от нуля до пяти"
+    ]
+  },
+  {
+    "time": [
+      431.104095,
+      433.622408
+    ],
+    "en": [
+      "we are starting at zero"
+    ],
+    "ru": [
+      "мы начинаем с нуля"
+    ]
+  },
+  {
+    "time": [
+      433.622408,
+      435.831303
+    ],
+    "en": [
+      "as Index start count at zero"
+    ],
+    "ru": [
+      "как начало отсчета индекса с нуля"
+    ]
+  },
+  {
+    "time": [
+      435.831303,
+      438.953428
+    ],
+    "en": [
+      "this is important so if you're not comfortable this yet"
+    ],
+    "ru": [
+      "это важно, поэтому, если вам еще не комфортно, это"
+    ]
+  },
+  {
+    "time": [
+      438.953428,
+      441.940407
+    ],
+    "en": [
+      "please make sure a note to research into this later"
+    ],
+    "ru": [
+      "пожалуйста, сделайте примечание, чтобы исследовать это позже"
+    ]
+  },
+  {
+    "time": [
+      441.940407,
+      445.378448
+    ],
+    "en": [
+      "once we have a random number"
+    ],
+    "ru": [
+      "как только у нас есть случайное число"
+    ]
+  },
+  {
+    "time": [
+      445.378448,
+      449.571303
+    ],
+    "en": [
+      "we want to pass that through our candy colors array to get a color"
+    ],
+    "ru": [
+      "мы хотим передать это через наш массив конфетных цветов, чтобы получить цвет"
+    ]
+  },
+  {
+    "time": [
+      449.571303,
+      450.935572
+    ],
+    "en": [
+      "and assignor to the square"
+    ],
+    "ru": [
+      "и цедент на квадрат"
+    ]
+  },
+  {
+    "time": [
+      450.935572,
+      453.313967
+    ],
+    "en": [
+      "so let's get the square"
+    ],
+    "ru": [
+      "так давайте возьмем квадрат"
+    ]
+  },
+  {
+    "time": [
+      453.313967,
+      456.301238
+    ],
+    "en": [
+      "and using style background color like this"
+    ],
+    "ru": [
+      "и используя цвет фона стиля, подобный этому"
+    ]
+  },
+  {
+    "time": [
+      456.301238,
+      456.301238
+    ],
+    "en": [
+      "we want to assign it to that random color here"
+    ],
+    "ru": [
+      "мы хотим назначить его этому случайному цвету здесь"
     ]
   }
 ]

@@ -1,1 +1,322 @@
 0.0
+hi and welcome to my walkthrough in which I'm gonna show you how to build your very own game of candy crush
+5.561416
+this game is gonna be super simple
+7.514500
+I say super simple
+8.528998
+as we're not going to be focusing too much on styling
+10.971018
+this is a JavaScript walkthrough
+12.761935
+very much gonna be focusing on the logic of the game
+16.093205
+I am doing this so you can take the game start up
+19.423497
+as you want truly make it your own
+21.389163
+this game has a lot of potential
+23.399100
+especially with the drag and drop movements
+25.724829
+we're going to be doing
+26.513767
+so I'm excited to see
+27.599183
+what you guys come up with
+28.884246
+in this walkthrough I'm going to be showing you
+30.918954
+how to create a board randomly generate candies
+34.404371
+all over the board
+35.314933
+switch out colors of candies
+36.762746
+on the board
+37.838746
+drag and drop candies
+39.459413
+check for matches
+41.000579
+check for valid matches
+42.879787
+so check that the row of candies
+45.170766
+doesn't go off into the next row
+46.710204
+move all the candies down
+48.122974
+if you get a match
+49.613787
+and generate new candies
+51.560745
+by the end of this walkthrough
+53.386329
+you should have also got to grips with inbuilt JavaScript functions
+57.227536
+such as every sum for each includes
+61.251578
+set attribute and many more
+63.101723
+I would love to see your finished games
+65.303578
+so please do share them with me on youtube
+67.421411
+or Twitter my Twitter handle is Anja underscore Kubo
+70.584015
+or Instagram
+71.455598
+whatever
+72.241015
+okay
+77.128703
+so as always let's make sure our javascript file
+79.462057
+and style sheet are linked up properly
+81.261619
+using these script tag
+82.348161
+and link tag respectively
+83.687848
+if you have put the two files in the root of your folder
+86.745786
+make sure that reflects and the path you put in your tags
+89.311681
+if you are not sure what any of this
+91.966515
+means please do watch my video that I've linked as a card
+94.642847
+here I am putting my script tag in the header
+97.919804
+as I want to use a Dom event listener on my JavaScript file
+100.577013
+this is a choice that
+101.941783
+I'm making on my preference
+103.121387
+as opposed to putting the script tag in the footer
+106.081074
+now we need to go ahead and put a div tag here
+109.993011
+and give it a class of grid
+111.824657
+this div tag is where all the magic happens
+115.168844
+so let's give it the respect
+116.746449
+and deserves and style it up to look like an actual courage
+119.706511
+for this we flip over to our style sheet or CSS file
+124.196032
+now to pick out our div element
+126.702844
+that we gave a class name to
+128.080886
+we get the name we also put a dot in front of it
+131.953719
+this means class
+133.155490
+I have pre decided that
+136.029948
+when my grid to be made up of 8 by 8 squares
+138.953906
+I thought 70 pixels squares are nice
+141.590302
+so 70 x 8 that's 560 pixels
+145.678531
+let's give our grid a height of 560 pixels
+150.015322
+and a width of 560 pixels
+152.236738
+as I've done this many times
+154.305862
+I know that if we want to put divs inside the squared
+156.969612
+the divs will appear stacked over each other
+158.813362
+we used to make them snake over each other row by row
+162.110173
+so we need to do this by using at display flags
+164.379714
+and then flexwrap
+166.250068
+so that they break when they can't fit in the grid
+169.291505
+we have made and start a new row
+171.452443
+I'm also gonna give the grid a background color
+174.498338
+just so we can see what's happening in our browser
+177.197484
+let's go ahead
+178.999484
+so right click on HTML file to see this in our browser
+181.997525
+okay it cool a blue grid
+184.376191
+if you inspect the page
+187.214253
+you will see that information has been passed to our browser
+190.197919
+now let's our CSS file what we want our future squares to look like
+194.528585
+as we said I'm pre decided I want to be 70 by 70 pixels big
+198.622605
+so height 70 and width 70
+202.149543
+now let's create some squares go my grid
+204.762605
+using JavaScript
+206.619939
+you will see here I have already put in my Dom event listener as part of my boiler plate to set up
+211.767314
+I will now be writing all my JavaScript in this event listener
+215.605501
+for it to be picked up on my script tag
+218.049709
+which I placed in the header of my HTML
+220.411459
+as mentioned some people liked with a script tag on the footer of the HTML
+223.905189
+and skip the Dom event listener the choice is up to you
+226.869439
+this Dom event listener is essentially saying in laymen terms that I want all of my HTML file to be read
+233.722168
+before loading this javascript file
+236.006043
+and is a more foolproof way of making sure that these events happen in order
+240.700834
+now using an inbuilt method called a query selector
+244.687667
+I am telling my JavaScript file to look at my HTML file
+248.086271
+and find the element with the class name of grid
+251.191063
+indicated by this dot
+252.769834
+and save it as constant grid
+255.315063
+we are doing this we can reuse this line of code over and over again
+259.851292
+just by typing grid
+261.224438
+let's also tell our JavaScript file
+263.232917
+we want our width to be 8 from now on
+265.459312
+let's store that as a and as it won't change
+268.283750
+so the first thing we're going to do is show you how to create a board using javascript
+273.521062
+I will do this in a function
+275.718292
+I am choosing to call create board
+278.164521
+now using a for loop I want to imagine our future grinch
+282.804396
+we decided it was going to be 8 by 8 squares
+285.214979
+so let's use width x width to tell our JavaScript
+289.155646
+that this is the syntax for a for loop
+292.576625
+what we are doing here is looping over something 64 times
+300.131582
+incrementing by 1 each time from 0
+303.040728
+now every time it does loop over
+306.589415
+we want to create a div using an inbuilt method called create element
+310.914477
+we are creating a div element
+313.051810
+I'm going to call this square for our HTML file
+320.171185
+next we need to put that square into a div with a class of grid
+327.294497
+we do so using another input method called append child
+331.197768
+we do so by passing through the newly created square into a grid constant like this
+336.964747
+lastly each time we create a div
+339.718934
+and add it into a grid
+341.168830
+I also want to store it in an array for us to work with
+344.520725
+so let's create an empty array first called squares like this
+348.513184
+and now as well as put a square
+351.451621
+and their grid
+352.371850
+I also want to push that square into my array
+355.075142
+that I called squares
+356.254183
+we do that using an inbuilt method called push
+358.958662
+now that we have done all this
+361.040724
+let's see if it works by invoking the function like this
+363.242579
+so save the page
+365.818433
+go over to our browser
+366.767308
+and yep it has works
+368.776766
+if we inspect the page
+370.456620
+we can now see all our divs happily sitting in our garage
+373.205515
+ok let's flip back now
+377.105494
+I'm gonna start off by going an array of all the candy colors I'm gonna work with
+381.098869
+so I'm going to call those candy colors as they do not change
+384.639077
+I'm gonna put them in a constant
+385.968223
+so there we go red yellow orange purple and green
+391.664098
+now let's go back to our create board function
+400.024806
+instead of just creating the square after the square has been created
+403.485138
+I also want to give it a candy color
+405.768367
+I also wanted to be random
+407.746242
+to get a random number from our array
+409.963575
+we need three input methods
+411.912783
+we use math.random and multiply it by the arrays like this
+416.389137
+now we want to make sure the number we get back as a full integer
+419.835283
+for this we're going to use math.floor to round this number down to the nearest full number
+425.852033
+and there we go we now have a random number from zero to five
+431.104095
+we are starting at zero
+433.622408
+as Index start count at zero
+435.831303
+this is important so if you're not comfortable this yet
+438.953428
+please make sure a note to research into this later
+441.940407
+once we have a random number
+445.378448
+we want to pass that through our candy colors array to get a color
+449.571303
+and assignor to the square
+450.935572
+so let's get the square
+453.313967
+and using style background color like this
+456.301238
+we want to assign it to that random color here

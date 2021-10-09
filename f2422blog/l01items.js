@@ -2,1519 +2,7 @@ let objs = [
   {
     "time": [
       0.0,
-      5.71078
-    ],
-    "en": [
-      "welcome to this free Cisco CCNA packet tracer practice lab"
-    ],
-    "ru": [
-      "добро пожаловать в эту бесплатную практическую лабораторию Cisco CCNA Packet Tracer"
-    ]
-  },
-  {
-    "time": [
-      5.71078,
-      8.984527
-    ],
-    "en": [
-      "you can download the lab file from the link in the description"
-    ],
-    "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
-    ]
-  },
-  {
-    "time": [
-      8.984527,
-      13.143932
-    ],
-    "en": [
-      "see if you can complete the lab yourself first"
-    ],
-    "ru": [
-      "сначала посмотри, сможешь ли ты пройти лабораторию самостоятельно"
-    ]
-  },
-  {
-    "time": [
-      13.143932,
-      15.98083
-    ],
-    "en": [
-      "and then continue watching this video if you have any trouble"
-    ],
-    "ru": [
-      "а затем продолжайте смотреть это видео, если у вас возникнут проблемы"
-    ]
-  },
-  {
-    "time": [
-      15.98083,
-      18.800988
-    ],
-    "en": [
-      "or watch it afterwards to check your solution"
-    ],
-    "ru": [
-      "или посмотрите его потом, чтобы проверить свое решение"
-    ]
-  },
-  {
-    "time": [
-      18.800988,
-      26.869218
-    ],
-    "en": [
-      "in this lab we will be working with two routers r1 and r2"
-    ],
-    "ru": [
-      "в этой лабораторной работе мы будем работать с двумя маршрутизаторами r1 и r2."
-    ]
-  },
-  {
-    "time": [
-      26.869218,
-      38.439468
-    ],
-    "en": [
-      "we will configure basic security on the routers by using the enable password which is used to enter privileged exec mode also known as enable mode"
-    ],
-    "ru": [
-      "мы настроим базовую безопасность на маршрутизаторах, используя пароль включения, который используется для входа в привилегированный режим выполнения, также известный как режим включения"
-    ]
-  },
-  {
-    "time": [
-      38.439468,
-      43.2369
-    ],
-    "en": [
-      "I will only work with one of the routers in this video for the sake of time"
-    ],
-    "ru": [
-      "Я буду работать только с одним из маршрутизаторов в этом видео, чтобы сэкономить время."
-    ]
-  },
-  {
-    "time": [
-      43.2369,
-      49.425341
-    ],
-    "en": [
-      "but I highly recommend that you perform the configurations on both of the routers for practice"
-    ],
-    "ru": [
-      "но я настоятельно рекомендую вам выполнить настройку на обоих маршрутизаторах для практики."
-    ]
-  },
-  {
-    "time": [
-      49.425341,
-      54.978542
-    ],
-    "en": [
-      "repetition is essential to become familiar with the command-line interface or CLI"
-    ],
-    "ru": [
-      "повторение необходимо для знакомства с интерфейсом командной строки или CLI"
-    ]
-  },
-  {
-    "time": [
-      54.978542,
-      66.483025
-    ],
-    "en": [
-      "step one is to connect the two routers by their Gigabit Ethernet 0 0 interfaces"
-    ],
-    "ru": [
-      "Шаг первый - соединить два маршрутизатора через их интерфейсы Gigabit Ethernet 0 0."
-    ]
-  },
-  {
-    "time": [
-      66.483025,
-      71.349879
-    ],
-    "en": [
-      "I will refer to these as the gig 0 0 interfaces"
-    ],
-    "ru": [
-      "Я буду называть их интерфейсами gig 0 0."
-    ]
-  },
-  {
-    "time": [
-      71.349879,
-      74.748849
-    ],
-    "en": [
-      "click on connections in the bottom left"
-    ],
-    "ru": [
-      "нажмите на соединения в левом нижнем углу"
-    ]
-  },
-  {
-    "time": [
-      74.748849,
-      82.948591
-    ],
-    "en": [
-      "and select the cable connected to the gig 0 0 interface on r1 and then r2"
-    ],
-    "ru": [
-      "и выбираем кабель, подключенный к интерфейсу gig 0 0 на r1, а затем на r2"
-    ]
-  },
-  {
-    "time": [
-      82.948591,
-      86.914912
-    ],
-    "en": [
-      "there we have it step one is complete"
-    ],
-    "ru": [
-      "вот и все, шаг первый завершен"
-    ]
-  },
-  {
-    "time": [
-      86.914912,
-      96.296489
-    ],
-    "en": [
-      "step two is to set the host names according to the network diagram"
-    ],
-    "ru": [
-      "Шаг второй - установить имена хостов в соответствии с сетевой диаграммой"
-    ]
-  },
-  {
-    "time": [
-      96.296489,
-      98.657359
-    ],
-    "en": [
-      "that is to r1 and r2"
-    ],
-    "ru": [
-      "то есть к r1 и r2"
-    ]
-  },
-  {
-    "time": [
-      98.657359,
-      106.811349
-    ],
-    "en": [
-      "click on each router and then select CLI to access the command-line interface from which we will configure each router"
-    ],
-    "ru": [
-      "щелкните каждый маршрутизатор, а затем выберите CLI, чтобы получить доступ к интерфейсу командной строки, из которого мы будем настраивать каждый маршрутизатор"
-    ]
-  },
-  {
-    "time": [
-      106.811349,
-      111.044964
-    ],
-    "en": [
-      "the current host name for each router is displayed here"
-    ],
-    "ru": [
-      "здесь отображается текущее имя хоста для каждого маршрутизатора"
-    ]
-  },
-  {
-    "time": [
-      111.044964,
-      115.359068
-    ],
-    "en": [
-      "as you can see each router is currently named router"
-    ],
-    "ru": [
-      "как вы можете видеть, каждый маршрутизатор в настоящее время называется маршрутизатором"
-    ]
-  },
-  {
-    "time": [
-      115.359068,
-      121.062605
-    ],
-    "en": [
-      "to change the host name of a router we must enter global configuration mode"
-    ],
-    "ru": [
-      "чтобы изменить имя хоста маршрутизатора, мы должны войти в режим глобальной конфигурации"
-    ]
-  },
-  {
-    "time": [
-      121.062605,
-      125.812091
-    ],
-    "en": [
-      "however to get there we must first enter privileged exec mode"
-    ],
-    "ru": [
-      "однако, чтобы попасть туда, мы должны сначала войти в привилегированный режим exec"
-    ]
-  },
-  {
-    "time": [
-      125.812091,
-      129.560357
-    ],
-    "en": [
-      "this is achieved by using the enable command"
-    ],
-    "ru": [
-      "это достигается с помощью команды enable"
-    ]
-  },
-  {
-    "time": [
-      129.560357,
-      136.567287
-    ],
-    "en": [
-      "to demonstrate a shortcut I will use the exit command to return to the previous exec mode"
-    ],
-    "ru": [
-      "чтобы продемонстрировать ярлык, я воспользуюсь командой exit, чтобы вернуться в предыдущий режим выполнения."
-    ]
-  },
-  {
-    "time": [
-      136.567287,
-      142.528383
-    ],
-    "en": [
-      "notice that you can enter privileged exec mode by simply typing en"
-    ],
-    "ru": [
-      "обратите внимание, что вы можете войти в привилегированный режим exec, просто набрав en"
-    ]
-  },
-  {
-    "time": [
-      142.528383,
-      148.283737
-    ],
-    "en": [
-      "you can also type en and then use tab to autocomplete it to enable"
-    ],
-    "ru": [
-      "вы также можете ввести en, а затем использовать вкладку для автозаполнения, чтобы включить"
-    ]
-  },
-  {
-    "time": [
-      148.283737,
-      152.286667
-    ],
-    "en": [
-      "but this isn't necessary en alone is fine"
-    ],
-    "ru": [
-      "но это не обязательно"
-    ]
-  },
-  {
-    "time": [
-      152.286667,
-      155.843063
-    ],
-    "en": [
-      "e however is too short"
-    ],
-    "ru": [
-      "е, однако, слишком короткое"
-    ]
-  },
-  {
-    "time": [
-      155.843063,
-      158.807745
-    ],
-    "en": [
-      "and we are told this is an ambiguous command"
-    ],
-    "ru": [
-      "и нам говорят, что это неоднозначная команда"
-    ]
-  },
-  {
-    "time": [
-      158.807745,
-      163.438917
-    ],
-    "en": [
-      "this is because there are other potential commands that begin with E"
-    ],
-    "ru": [
-      "это потому, что есть другие потенциальные команды, которые начинаются с E"
-    ]
-  },
-  {
-    "time": [
-      163.438917,
-      167.41218
-    ],
-    "en": [
-      "which we can see by typing E and then a question mark"
-    ],
-    "ru": [
-      "что мы можем увидеть, набрав E, а затем вопросительный знак"
-    ]
-  },
-  {
-    "time": [
-      167.41218,
-      173.20304
-    ],
-    "en": [
-      "as you can see there are two potential commands enable and exit"
-    ],
-    "ru": [
-      "как вы можете видеть, есть две возможные команды: включить и выйти"
-    ]
-  },
-  {
-    "time": [
-      173.20304,
-      178.511168
-    ],
-    "en": [
-      "so if you just enter E the router doesn't know which command you mean"
-    ],
-    "ru": [
-      "поэтому, если вы просто введете E, маршрутизатор не знает, какую команду вы имеете в виду"
-    ]
-  },
-  {
-    "time": [
-      178.511168,
-      183.078884
-    ],
-    "en": [
-      "however enable is the only command beginning with en"
-    ],
-    "ru": [
-      "однако enable - единственная команда, начинающаяся с en"
-    ]
-  },
-  {
-    "time": [
-      183.078884,
-      187.293586
-    ],
-    "en": [
-      "so en is all the router needs to know which command you mean"
-    ],
-    "ru": [
-      "так что все, что маршрутизатор должен знать, какую команду вы имеете в виду"
-    ]
-  },
-  {
-    "time": [
-      187.293586,
-      191.265524
-    ],
-    "en": [
-      "now that we are in privileged exec mode"
-    ],
-    "ru": [
-      "теперь, когда мы находимся в привилегированном режиме exec"
-    ]
-  },
-  {
-    "time": [
-      191.265524,
-      196.490612
-    ],
-    "en": [
-      "we can use the configure terminal command to get to global configuration mode"
-    ],
-    "ru": [
-      "мы можем использовать команду configure terminal, чтобы перейти в режим глобальной конфигурации"
-    ]
-  },
-  {
-    "time": [
-      196.490612,
-      206.589185
-    ],
-    "en": [
-      "if you want to use shortcuts again as we did with enable and en the shortest version of the configure terminal command is conf t"
-    ],
-    "ru": [
-      "если вы хотите снова использовать ярлыки, как мы делали с enable и en, самая короткая версия команды configure terminal - conf t"
-    ]
-  },
-  {
-    "time": [
-      206.589185,
-      209.466962
-    ],
-    "en": [
-      "from here we can set the hostname of the router"
-    ],
-    "ru": [
-      "отсюда мы можем установить имя хоста маршрутизатора"
-    ]
-  },
-  {
-    "time": [
-      209.466962,
-      212.633743
-    ],
-    "en": [
-      "this is done with the hostname command"
-    ],
-    "ru": [
-      "это делается с помощью команды hostname"
-    ]
-  },
-  {
-    "time": [
-      212.633743,
-      215.421597
-    ],
-    "en": [
-      "I will enter hostname r1"
-    ],
-    "ru": [
-      "Я введу имя хоста r1"
-    ]
-  },
-  {
-    "time": [
-      215.421597,
-      220.214119
-    ],
-    "en": [
-      "as you can see the hostname has changed from router to r1"
-    ],
-    "ru": [
-      "как вы можете видеть, имя хоста изменилось с маршрутизатора на r1"
-    ]
-  },
-  {
-    "time": [
-      220.214119,
-      223.111688
-    ],
-    "en": [
-      "change the hostname on r2 as well"
-    ],
-    "ru": [
-      "также измените имя хоста на r2"
-    ]
-  },
-  {
-    "time": [
-      223.111688,
-      225.434294
-    ],
-    "en": [
-      "and step two is complete"
-    ],
-    "ru": [
-      "и шаг два завершен"
-    ]
-  },
-  {
-    "time": [
-      225.434294,
-      235.417132
-    ],
-    "en": [
-      "step three is to set the enable password on each router to Cisco"
-    ],
-    "ru": [
-      "Шаг третий - установить пароль включения на каждом маршрутизаторе на Cisco"
-    ]
-  },
-  {
-    "time": [
-      235.417132,
-      243.525971
-    ],
-    "en": [
-      "the enable password is used to enter privileged exec mode which as I mentioned before is also called enable mode"
-    ],
-    "ru": [
-      "пароль включения используется для входа в привилегированный режим exec, который, как я уже упоминал ранее, также называется режимом включения"
-    ]
-  },
-  {
-    "time": [
-      243.525971,
-      246.567062
-    ],
-    "en": [
-      "previously we had no password set"
-    ],
-    "ru": [
-      "раньше у нас не было пароля"
-    ]
-  },
-  {
-    "time": [
-      246.567062,
-      251.091763
-    ],
-    "en": [
-      "so we were able to enter privileged exec mode without any password"
-    ],
-    "ru": [
-      "поэтому мы смогли войти в привилегированный режим exec без пароля"
-    ]
-  },
-  {
-    "time": [
-      251.091763,
-      257.828257
-    ],
-    "en": [
-      "now we are going to protect privileged exec mode so that only administrators can access it"
-    ],
-    "ru": [
-      "теперь мы собираемся защитить привилегированный режим exec, чтобы только администраторы могли получить к нему доступ"
-    ]
-  },
-  {
-    "time": [
-      257.828257,
-      264.527286
-    ],
-    "en": [
-      "the command is simple and it is done in global configuration mode which we are already in"
-    ],
-    "ru": [
-      "команда проста и выполняется в режиме глобальной конфигурации, в котором мы уже находимся"
-    ]
-  },
-  {
-    "time": [
-      264.527286,
-      268.193335
-    ],
-    "en": [
-      "type an able password Cisco"
-    ],
-    "ru": [
-      "введите подходящий пароль Cisco"
-    ]
-  },
-  {
-    "time": [
-      268.193335,
-      269.79656
-    ],
-    "en": [
-      "that's it"
-    ],
-    "ru": [
-      "это оно"
-    ]
-  },
-  {
-    "time": [
-      269.79656,
-      274.161426
-    ],
-    "en": [
-      "now let's test it out"
-    ],
-    "ru": [
-      "теперь давайте проверим это"
-    ]
-  },
-  {
-    "time": [
-      274.161426,
-      275.126163
-    ],
-    "en": [
-      "from here I will use the exit command twice"
-    ],
-    "ru": [
-      "отсюда я дважды использую команду выхода"
-    ]
-  },
-  {
-    "time": [
-      275.126163,
-      281.464435
-    ],
-    "en": [
-      "once to bring you back to privileged exec mode and then once again to bring you back to exact mode"
-    ],
-    "ru": [
-      "один раз, чтобы вернуть вас в привилегированный режим exec, а затем еще раз, чтобы вернуть вас в точный режим"
-    ]
-  },
-  {
-    "time": [
-      281.464435,
-      286.123771
-    ],
-    "en": [
-      "now I will use the enable command again"
-    ],
-    "ru": [
-      "теперь я снова воспользуюсь командой enable"
-    ]
-  },
-  {
-    "time": [
-      286.123771,
-      289.254222
-    ],
-    "en": [
-      "however this time I am asked for a password"
-    ],
-    "ru": [
-      "однако на этот раз меня просят ввести пароль"
-    ]
-  },
-  {
-    "time": [
-      289.254222,
-      292.598876
-    ],
-    "en": [
-      "the characters do not appear as I type"
-    ],
-    "ru": [
-      "символы не появляются, когда я печатаю"
-    ]
-  },
-  {
-    "time": [
-      292.598876,
-      296.832131
-    ],
-    "en": [
-      "however if I type the password Cisco correctly and press Enter"
-    ],
-    "ru": [
-      "однако, если я введу пароль Cisco правильно и нажму Enter"
-    ]
-  },
-  {
-    "time": [
-      296.832131,
-      299.327753
-    ],
-    "en": [
-      "I am brought to privileged exec mode now"
-    ],
-    "ru": [
-      "Я переведен в привилегированный режим exec"
-    ]
-  },
-  {
-    "time": [
-      299.327753,
-      303.558942
-    ],
-    "en": [
-      "let's see what happens if I fail to enter the correct password"
-    ],
-    "ru": [
-      "посмотрим, что будет, если я не введу правильный пароль"
-    ]
-  },
-  {
-    "time": [
-      303.558942,
-      312.301938
-    ],
-    "en": [
-      "I entered the wrong password once twice and then three times before being rejected for having bad secrets"
-    ],
-    "ru": [
-      "Я ввел неправильный пароль один раз два раза, а затем три раза, прежде чем меня отклонили из-за наличия плохих секретов."
-    ]
-  },
-  {
-    "time": [
-      312.301938,
-      317.70121
-    ],
-    "en": [
-      "now I will try again with the correct password and I'm in"
-    ],
-    "ru": [
-      "сейчас я попробую еще раз с правильным паролем, и я в"
-    ]
-  },
-  {
-    "time": [
-      317.70121,
-      319.576191
-    ],
-    "en": [
-      "step 3 is now complete"
-    ],
-    "ru": [
-      "шаг 3 теперь завершен"
-    ]
-  },
-  {
-    "time": [
-      319.576191,
-      328.413973
-    ],
-    "en": [
-      "step four is simply to view the password in the running configuration"
-    ],
-    "ru": [
-      "четвертый шаг - просто просмотреть пароль в текущей конфигурации"
-    ]
-  },
-  {
-    "time": [
-      328.413973,
-      332.295558
-    ],
-    "en": [
-      "the running configuration is the current configuration of the router"
-    ],
-    "ru": [
-      "текущая конфигурация - это текущая конфигурация роутера"
-    ]
-  },
-  {
-    "time": [
-      332.295558,
-      334.796099
-    ],
-    "en": [
-      "whether or not you have actually saved it"
-    ],
-    "ru": [
-      "действительно ли вы его сохранили"
-    ]
-  },
-  {
-    "time": [
-      334.796099,
-      340.58297
-    ],
-    "en": [
-      "if you turn off the router without saving the running configuration you will lose any changes"
-    ],
-    "ru": [
-      "если вы выключите роутер без сохранения текущей конфигурации, вы потеряете все изменения"
-    ]
-  },
-  {
-    "time": [
-      340.58297,
-      346.860406
-    ],
-    "en": [
-      "if you want to keep your changes you will save them to what's called the startup configuration"
-    ],
-    "ru": [
-      "если вы хотите сохранить свои изменения, вы сохраните их в так называемой стартовой конфигурации"
-    ]
-  },
-  {
-    "time": [
-      346.860406,
-      348.807184
-    ],
-    "en": [
-      "that will be for another lab"
-    ],
-    "ru": [
-      "это будет для другой лаборатории"
-    ]
-  },
-  {
-    "time": [
-      348.807184,
-      355.919352
-    ],
-    "en": [
-      "to view the running configuration use the show running config command from privileged exec mode"
-    ],
-    "ru": [
-      "для просмотра текущей конфигурации используйте команду show running config из привилегированного режима exec"
-    ]
-  },
-  {
-    "time": [
-      355.919352,
-      357.87534
-    ],
-    "en": [
-      "which we are already in"
-    ],
-    "ru": [
-      "в котором мы уже находимся"
-    ]
-  },
-  {
-    "time": [
-      357.87534,
-      362.475673
-    ],
-    "en": [
-      "you can abbreviate it to for example SH run"
-    ],
-    "ru": [
-      "вы можете сократить его, например, до SH run"
-    ]
-  },
-  {
-    "time": [
-      362.475673,
-      372.238832
-    ],
-    "en": [
-      "enter the command and you can see the password right here with the exact command we used before enable password Cisco"
-    ],
-    "ru": [
-      "введите команду, и вы увидите пароль прямо здесь с той же командой, которую мы использовали перед включением пароля Cisco"
-    ]
-  },
-  {
-    "time": [
-      372.238832,
-      377.189393
-    ],
-    "en": [
-      "step 4 asks if the password is encrypted"
-    ],
-    "ru": [
-      "шаг 4 спрашивает, зашифрован ли пароль"
-    ]
-  },
-  {
-    "time": [
-      377.189393,
-      383.755187
-    ],
-    "en": [
-      "meaning translated into an unreadable code to protect it from being discovered by people who should not know the password"
-    ],
-    "ru": [
-      "смысл переведен в нечитаемый код, чтобы защитить его от обнаружения людьми, которые не должны знать пароль"
-    ]
-  },
-  {
-    "time": [
-      383.755187,
-      391.657839
-    ],
-    "en": [
-      "as you can see it is not encrypted it is written in clear text right here Cisco so the answer is no"
-    ],
-    "ru": [
-      "как вы можете видеть, он не зашифрован, он написан открытым текстом прямо здесь Cisco, поэтому ответ - нет"
-    ]
-  },
-  {
-    "time": [
-      391.657839,
-      394.587015
-    ],
-    "en": [
-      "step 4 is now complete"
-    ],
-    "ru": [
-      "шаг 4 теперь завершен"
-    ]
-  },
-  {
-    "time": [
-      394.587015,
-      400.922847
-    ],
-    "en": [
-      "step 5 is to enable password encryption on the router"
-    ],
-    "ru": [
-      "Шаг 5 - включить шифрование пароля на роутере"
-    ]
-  },
-  {
-    "time": [
-      400.922847,
-      405.607194
-    ],
-    "en": [
-      "we can protect passwords by encrypting them to render them unreadable"
-    ],
-    "ru": [
-      "мы можем защитить пароли, зашифровав их, чтобы сделать их нечитаемыми"
-    ]
-  },
-  {
-    "time": [
-      405.607194,
-      412.512471
-    ],
-    "en": [
-      "this is done from global configuration mode with the command service password - encryption"
-    ],
-    "ru": [
-      "это делается из режима глобальной конфигурации с паролем службы команд - шифрование"
-    ]
-  },
-  {
-    "time": [
-      412.512471,
-      417.102114
-    ],
-    "en": [
-      "I will enter the command and now step 5 is complete"
-    ],
-    "ru": [
-      "Я введу команду, и теперь шаг 5 завершен"
-    ]
-  },
-  {
-    "time": [
-      417.102114,
-      425.920834
-    ],
-    "en": [
-      "step six is to once again view the running-config"
-    ],
-    "ru": [
-      "Шаг шестой - еще раз просмотреть рабочую конфигурацию"
-    ]
-  },
-  {
-    "time": [
-      425.920834,
-      429.500638
-    ],
-    "en": [
-      "I will use the same command as before"
-    ],
-    "ru": [
-      "Я буду использовать ту же команду, что и раньше"
-    ]
-  },
-  {
-    "time": [
-      429.500638,
-      431.38758
-    ],
-    "en": [
-      "and now let's check the password"
-    ],
-    "ru": [
-      "а теперь давайте проверим пароль"
-    ]
-  },
-  {
-    "time": [
-      431.38758,
-      433.878926
-    ],
-    "en": [
-      "however the command doesn't work"
-    ],
-    "ru": [
-      "однако команда не работает"
-    ]
-  },
-  {
-    "time": [
-      433.878926,
-      441.360164
-    ],
-    "en": [
-      "that is because we are currently in global configuration mode and show running config must be entered from privileged exec mode"
-    ],
-    "ru": [
-      "это потому, что мы в настоящее время находимся в режиме глобальной конфигурации, и показать текущую конфигурацию необходимо ввести из привилегированного режима exec"
-    ]
-  },
-  {
-    "time": [
-      441.360164,
-      447.17541
-    ],
-    "en": [
-      "now I could type exit to drop back to privileged exec mode and then enter the command"
-    ],
-    "ru": [
-      "теперь я мог ввести exit, чтобы вернуться в привилегированный режим exec, а затем ввести команду"
-    ]
-  },
-  {
-    "time": [
-      447.17541,
-      449.309423
-    ],
-    "en": [
-      "but there is one more way"
-    ],
-    "ru": [
-      "но есть еще один способ"
-    ]
-  },
-  {
-    "time": [
-      449.309423,
-      452.021168
-    ],
-    "en": [
-      "if I type do in front of the command"
-    ],
-    "ru": [
-      "если я наберу do перед командой"
-    ]
-  },
-  {
-    "time": [
-      452.021168,
-      454.476454
-    ],
-    "en": [
-      "I can enter it from global configuration mode"
-    ],
-    "ru": [
-      "Я могу войти в него из режима глобальной конфигурации"
-    ]
-  },
-  {
-    "time": [
-      454.476454,
-      457.298876
-    ],
-    "en": [
-      "do show running config"
-    ],
-    "ru": [
-      "показать текущую конфигурацию"
-    ]
-  },
-  {
-    "time": [
-      457.298876,
-      458.342046
-    ],
-    "en": [
-      "there we go"
-    ],
-    "ru": [
-      "вот и мы"
-    ]
-  },
-  {
-    "time": [
-      458.342046,
-      459.982219
-    ],
-    "en": [
-      "let's look at the password"
-    ],
-    "ru": [
-      "давайте посмотрим на пароль"
-    ]
-  },
-  {
-    "time": [
-      459.982219,
-      465.91831
-    ],
-    "en": [
-      "you can see here an able password followed by a seven and then a string of other numbers"
-    ],
-    "ru": [
-      "вы можете увидеть здесь действующий пароль, за которым следует семерка, а затем строка других цифр"
-    ]
-  },
-  {
-    "time": [
-      465.91831,
-      468.939648
-    ],
-    "en": [
-      "the password has successfully been encrypted"
-    ],
-    "ru": [
-      "пароль был успешно зашифрован"
-    ]
-  },
-  {
-    "time": [
-      468.939648,
-      472.989782
-    ],
-    "en": [
-      "although we didn't type this 7 when we entered the command"
-    ],
-    "ru": [
-      "хотя мы не набирали эту 7, когда вводили команду"
-    ]
-  },
-  {
-    "time": [
-      472.989782,
-      475.6533
-    ],
-    "en": [
-      "it refers to the type of encryption used"
-    ],
-    "ru": [
-      "это относится к типу используемого шифрования"
-    ]
-  },
-  {
-    "time": [
-      475.6533,
-      479.90062
-    ],
-    "en": [
-      "there are other types as well but that's not something to worry about now"
-    ],
-    "ru": [
-      "есть и другие типы, но сейчас не о чем беспокоиться"
-    ]
-  },
-  {
-    "time": [
-      479.90062,
-      487.49386
-    ],
-    "en": [
-      "the string of numbers that follow are the passwords Cisco encrypted to be unreadable"
-    ],
-    "ru": [
-      "следующая строка цифр - это пароли, зашифрованные Cisco, чтобы их нельзя было прочесть."
-    ]
-  },
-  {
-    "time": [
-      487.49386,
-      490.509759
-    ],
-    "en": [
-      "so that anyone looking over our shoulder can't read the password"
-    ],
-    "ru": [
-      "чтобы кто-либо, оглядываясь через плечо, не мог прочитать пароль"
-    ]
-  },
-  {
-    "time": [
-      490.509759,
-      497.642039
-    ],
-    "en": [
-      "keep in mind that the encryption used in the service password encryption command isn't very secure"
-    ],
-    "ru": [
-      "имейте в виду, что шифрование, используемое в команде шифрования пароля службы, не очень безопасно"
-    ]
-  },
-  {
-    "time": [
-      497.642039,
-      499.134879
-    ],
-    "en": [
-      "and can be cracked"
-    ],
-    "ru": [
-      "и может быть взломан"
-    ]
-  },
-  {
-    "time": [
-      499.134879,
-      503.084779
-    ],
-    "en": [
-      "but this at least renders the password safe from someone simply glancing over your shoulder"
-    ],
-    "ru": [
-      "но это, по крайней мере, обезопасит пароль от того, чтобы кто-то просто взглянул через ваше плечо"
-    ]
-  },
-  {
-    "time": [
-      503.084779,
-      505.605702
-    ],
-    "en": [
-      "step 6 is complete"
-    ],
-    "ru": [
-      "шаг 6 завершен"
-    ]
-  },
-  {
-    "time": [
-      505.605702,
-      512.490304
-    ],
-    "en": [
-      "step seven is to disable password encryption"
-    ],
-    "ru": [
-      "Шаг седьмой - отключить шифрование пароля"
-    ]
-  },
-  {
-    "time": [
-      512.490304,
-      516.513226
-    ],
-    "en": [
-      "we enabled password encryption with the service password encryption command"
-    ],
-    "ru": [
-      "мы включили шифрование пароля с помощью служебной команды шифрования пароля"
-    ]
-  },
-  {
-    "time": [
-      516.513226,
-      521.711706
-    ],
-    "en": [
-      "now we will simply type no followed by the same command"
-    ],
-    "ru": [
-      "теперь мы просто введем no, а затем ту же команду"
-    ]
-  },
-  {
-    "time": [
-      521.711706,
-      524.744416
-    ],
-    "en": [
-      "no service password encryption"
-    ],
-    "ru": [
-      "нет шифрования сервисного пароля"
-    ]
-  },
-  {
-    "time": [
-      524.744416,
-      528.072475
-    ],
-    "en": [
-      "that's it step seven is now complete"
-    ],
-    "ru": [
-      "вот и шаг седьмой теперь завершен"
-    ]
-  },
-  {
-    "time": [
-      528.072475,
-      534.631315
-    ],
-    "en": [
-      "step eight is once again to view the password in the running configuration"
-    ],
-    "ru": [
-      "восьмой шаг - еще раз просмотреть пароль в текущей конфигурации."
-    ]
-  },
-  {
-    "time": [
-      534.631315,
-      537.799186
-    ],
-    "en": [
-      "this time I'll exit down to privileged exec mode"
-    ],
-    "ru": [
-      "на этот раз я выйду в привилегированный режим exec"
-    ]
-  },
-  {
-    "time": [
-      537.799186,
-      541.169135
-    ],
-    "en": [
-      "and type show running config to view the running configuration"
-    ],
-    "ru": [
-      "и введите show running config, чтобы просмотреть текущую конфигурацию."
-    ]
-  },
-  {
-    "time": [
-      541.169135,
-      545.147617
-    ],
-    "en": [
-      "as you can see the password is still encrypted"
-    ],
-    "ru": [
-      "как видите, пароль по-прежнему зашифрован"
-    ]
-  },
-  {
-    "time": [
-      545.147617,
-      548.634791
-    ],
-    "en": [
-      "why is that even though we disabled password encryption"
-    ],
-    "ru": [
-      "почему это несмотря на то, что мы отключили шифрование паролей"
-    ]
-  },
-  {
-    "time": [
-      548.634791,
-      554.448517
-    ],
-    "en": [
-      "well disabling password encryption will prevent future passwords from being encrypted"
-    ],
-    "ru": [
-      "Отключение шифрования паролей предотвратит шифрование будущих паролей"
-    ]
-  },
-  {
-    "time": [
-      554.448517,
-      559.012818
-    ],
-    "en": [
-      "however it does not unencrypted passwords that are already encrypted"
-    ],
-    "ru": [
-      "однако это не незашифрованные пароли, которые уже зашифрованы"
-    ]
-  },
-  {
-    "time": [
-      559.012818,
-      561.617975
-    ],
-    "en": [
-      "so the answer to step eight is yes"
-    ],
-    "ru": [
-      "так что ответ на восьмой шаг - да"
-    ]
-  },
-  {
-    "time": [
-      561.617975,
-      563.608675
-    ],
-    "en": [
-      "the password is encrypted"
-    ],
-    "ru": [
-      "пароль зашифрован"
-    ]
-  },
-  {
-    "time": [
-      563.608675,
-      567.364223
-    ],
-    "en": [
-      "step eight in the lab are both now complete"
-    ],
-    "ru": [
-      "Шаг восьмой в лаборатории оба теперь завершены"
-    ]
-  },
-  {
-    "time": [
-      567.364223,
-      575.830308
-    ],
-    "en": [
-      "thank you for watching I hope this lab and video have been helpful"
-    ],
-    "ru": [
-      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были полезны."
-    ]
-  },
-  {
-    "time": [
-      575.830308,
-      578.369846
-    ],
-    "en": [
-      "please subscribe for future labs like this"
-    ],
-    "ru": [
-      "пожалуйста, подпишитесь на будущие подобные лаборатории"
-    ]
-  },
-  {
-    "time": [
-      578.369846,
-      580.203796
-    ],
-    "en": [
-      "which will be released weekly"
-    ],
-    "ru": [
-      "который будет выходить еженедельно"
-    ]
-  },
-  {
-    "time": [
-      580.203796,
-      584.907124
-    ],
-    "en": [
-      "if you have requests for any specific labs let me know in the comment section"
-    ],
-    "ru": [
-      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
-    ]
-  },
-  {
-    "time": [
-      584.907124,
-      590.288676
-    ],
-    "en": [
-      "if you want to support my channel I accept Bitcoin donations via the address in the description"
-    ],
-    "ru": [
-      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах по адресу в описании"
-    ]
-  },
-  {
-    "time": [
-      590.288676,
-      599.054327
-    ],
-    "en": [
-      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser thank you"
-    ],
-    "ru": [
-      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере, спасибо"
-    ]
-  },
-  {
-    "time": [
-      599.054327,
-      599.054327
+      3.917524
     ],
     "en": [
       ""
@@ -1525,8 +13,1208 @@ let objs = [
   },
   {
     "time": [
-      599.054327,
-      599.054327
+      3.917524,
+      6.180768
+    ],
+    "en": [
+      "welcome to this Inkscape video tutorial series"
+    ],
+    "ru": [
+      "добро пожаловать в эту серию видеоуроков по Inkscape"
+    ]
+  },
+  {
+    "time": [
+      6.180768,
+      16.820168
+    ],
+    "en": [
+      "in this video i want to go over the basics of Inkscape 9.93152 and can I just show you the interface and explore some of the different tools and things we have prisons that were presented with"
+    ],
+    "ru": [
+      "в этом видео я хочу пройтись по основам Inkscape 9.93152, и могу ли я просто показать вам интерфейс и изучить некоторые из различных инструментов и вещей, которые у нас есть в тюрьмах, которые были представлены"
+    ]
+  },
+  {
+    "time": [
+      16.820168,
+      18.635093
+    ],
+    "en": [
+      "when we first open up Inkscape"
+    ],
+    "ru": [
+      "когда мы впервые открываем Inkscape"
+    ]
+  },
+  {
+    "time": [
+      18.635093,
+      21.547493
+    ],
+    "en": [
+      "if you haven't yet already installed the Inkscape on your computer"
+    ],
+    "ru": [
+      "если вы еще не установили Inkscape на свой компьютер"
+    ]
+  },
+  {
+    "time": [
+      21.547493,
+      27.105849
+    ],
+    "en": [
+      "you can download it free on windows linux and mac so check out my other videos for that 25.3 it's a completely free and open software"
+    ],
+    "ru": [
+      "вы можете скачать его бесплатно на windows linux и mac, так что посмотрите мои другие видео для этого 25.3 это полностью бесплатное и открытое программное обеспечение"
+    ]
+  },
+  {
+    "time": [
+      27.105849,
+      33.961092
+    ],
+    "en": [
+      "it's not a free trial version and it's very very powerful it's very similar to Adobe Illustrator"
+    ],
+    "ru": [
+      "это не бесплатная пробная версия, и она очень мощная, она очень похожа на Adobe Illustrator"
+    ]
+  },
+  {
+    "time": [
+      33.961092,
+      37.423077
+    ],
+    "en": [
+      "and has all the same functionality and tools that you would find with that program"
+    ],
+    "ru": [
+      "и имеет те же функции и инструменты, что и в этой программе."
+    ]
+  },
+  {
+    "time": [
+      37.423077,
+      40.760227
+    ],
+    "en": [
+      "so the first thing I want to do when we open this app"
+    ],
+    "ru": [
+      "поэтому первое, что я хочу сделать, когда мы откроем это приложение"
+    ]
+  },
+  {
+    "time": [
+      40.760227,
+      47.046522
+    ],
+    "en": [
+      "I just want to show how to kind of pan around and change the way we're viewing this page"
+    ],
+    "ru": [
+      "Я просто хочу показать, как панорамировать и изменять способ просмотра этой страницы."
+    ]
+  },
+  {
+    "time": [
+      47.046522,
+      49.801545
+    ],
+    "en": [
+      "so to do that if we use our scroll wheel on our mouse"
+    ],
+    "ru": [
+      "чтобы сделать это, если мы используем колесо прокрутки на нашей мыши"
+    ]
+  },
+  {
+    "time": [
+      49.801545,
+      55.798179
+    ],
+    "en": [
+      "we can see we can scroll up and down and if we hold down the control wheel we can move this around"
+    ],
+    "ru": [
+      "мы видим, что можем прокручивать вверх и вниз, и если мы удерживаем колесо управления, мы можем перемещать его"
+    ]
+  },
+  {
+    "time": [
+      55.798179,
+      58.669271
+    ],
+    "en": [
+      "this is gonna be really important because sometimes you'll be you'll just be seeing whitespace here"
+    ],
+    "ru": [
+      "это будет действительно важно, потому что иногда вы будете просто видеть здесь пробелы"
+    ]
+  },
+  {
+    "time": [
+      58.669271,
+      64.189413
+    ],
+    "en": [
+      "and you won't be sure where your object in your page is"
+    ],
+    "ru": [
+      "и вы не будете уверены, где находится ваш объект на вашей странице"
+    ]
+  },
+  {
+    "time": [
+      64.189413,
+      70.703136
+    ],
+    "en": [
+      "and so we can hold the pan key and just by that we hope we can pan by holding down the control wheel"
+    ],
+    "ru": [
+      "и поэтому мы можем удерживать клавишу панорамирования и просто надеемся, что сможем панорамировать, удерживая колесо управления"
+    ]
+  },
+  {
+    "time": [
+      70.703136,
+      75.210467
+    ],
+    "en": [
+      "and go around and do that we can also hold down the control key on our keyboard"
+    ],
+    "ru": [
+      "и обойтись и сделать то же самое, мы также можем удерживать клавишу управления на нашей клавиатуре"
+    ]
+  },
+  {
+    "time": [
+      75.210467,
+      82.146394
+    ],
+    "en": [
+      "and scroll wheel in and out to zoom in more detail on this page or zoom out 80.45299 so we can find it"
+    ],
+    "ru": [
+      "и колесико прокрутки увеличивайте и уменьшайте, чтобы увеличить более подробную информацию на этой странице, или уменьшите масштаб 80,45299, чтобы мы могли его найти"
+    ]
+  },
+  {
+    "time": [
+      82.146394,
+      87.818297
+    ],
+    "en": [
+      "okay and then we can use these bars here to kind of pan around as well"
+    ],
+    "ru": [
+      "хорошо, а затем мы можем использовать эти полоски здесь, чтобы как бы панорамировать"
+    ]
+  },
+  {
+    "time": [
+      87.818297,
+      97.373723
+    ],
+    "en": [
+      "and we can also while the control key is held we can use the arrow keys on our keyboard is another way we can pan around 94.93329 and that just kind of moves that document around"
+    ],
+    "ru": [
+      "и мы также можем, пока удерживается клавиша управления, мы можем использовать клавиши со стрелками на нашей клавиатуре - это еще один способ панорамирования 94.93329, и это просто перемещает этот документ вокруг"
+    ]
+  },
+  {
+    "time": [
+      97.373723,
+      102.205609
+    ],
+    "en": [
+      "so we have our selection tool selected right now these are our tools on the left hand side"
+    ],
+    "ru": [
+      "Итак, у нас есть выбранный инструмент выделения прямо сейчас, это наши инструменты с левой стороны"
+    ]
+  },
+  {
+    "time": [
+      102.205609,
+      105.527739
+    ],
+    "en": [
+      "and by default we have a little light blue box or on our selection tool"
+    ],
+    "ru": [
+      "и по умолчанию у нас есть маленький голубой прямоугольник или на нашем инструменте выделения"
+    ]
+  },
+  {
+    "time": [
+      105.527739,
+      107.933798
+    ],
+    "en": [
+      "which means anything we click on"
+    ],
+    "ru": [
+      "что означает все, что мы нажимаем"
+    ]
+  },
+  {
+    "time": [
+      107.933798,
+      110.237384
+    ],
+    "en": [
+      "we can select it and change the properties for it"
+    ],
+    "ru": [
+      "мы можем выбрать его и изменить для него свойства"
+    ]
+  },
+  {
+    "time": [
+      110.237384,
+      113.906428
+    ],
+    "en": [
+      "so right now we're not really selecting on anything because it's just our page"
+    ],
+    "ru": [
+      "так что сейчас мы ничего не выбираем, потому что это просто наша страница"
+    ]
+  },
+  {
+    "time": [
+      113.906428,
+      120.294893
+    ],
+    "en": [
+      "but if we want to draw an object we can come down here to the square and we can draw a square"
+    ],
+    "ru": [
+      "но если мы хотим нарисовать объект, мы можем спуститься сюда к квадрату, и мы можем нарисовать квадрат"
+    ]
+  },
+  {
+    "time": [
+      120.294893,
+      124.812967
+    ],
+    "en": [
+      "so I got a little green square because that's the color by default the last color I was using in Inkscape"
+    ],
+    "ru": [
+      "поэтому у меня есть маленький зеленый квадрат, потому что это цвет по умолчанию, последний цвет, который я использовал в Inkscape"
+    ]
+  },
+  {
+    "time": [
+      124.812967,
+      126.361163
+    ],
+    "en": [
+      "so you might have a different color there"
+    ],
+    "ru": [
+      "так что у тебя там может быть другой цвет"
+    ]
+  },
+  {
+    "time": [
+      126.361163,
+      130.850007
+    ],
+    "en": [
+      "but the left-click and drag and then unclick and you'll create a nice square like this"
+    ],
+    "ru": [
+      "но щелкните левой кнопкой мыши и перетащите, а затем снимите щелчок, и вы создадите красивый квадрат, подобный этому"
+    ]
+  },
+  {
+    "time": [
+      130.850007,
+      133.475099
+    ],
+    "en": [
+      "and then we'll go back to our selector tool"
+    ],
+    "ru": [
+      "а затем вернемся к нашему инструменту выбора"
+    ]
+  },
+  {
+    "time": [
+      133.475099,
+      137.948772
+    ],
+    "en": [
+      "and when we click on the selector tool it'll have a nice selection around it"
+    ],
+    "ru": [
+      "и когда мы нажимаем на инструмент выбора, вокруг него будет красивый выбор"
+    ]
+  },
+  {
+    "time": [
+      137.948772,
+      140.127452
+    ],
+    "en": [
+      "and we can see that because that's a dotted black line"
+    ],
+    "ru": [
+      "и мы видим это, потому что это пунктирная черная линия"
+    ]
+  },
+  {
+    "time": [
+      140.127452,
+      145.904719
+    ],
+    "en": [
+      "and it also has some different arrows ways that we can change and adjust this shape"
+    ],
+    "ru": [
+      "и у него также есть несколько разных способов стрелок, с помощью которых мы можем изменять и корректировать эту форму"
+    ]
+  },
+  {
+    "time": [
+      145.904719,
+      151.804238
+    ],
+    "en": [
+      "so if we click on one of them we can resize the shape of this square rectangle"
+    ],
+    "ru": [
+      "поэтому, если мы щелкнем по одному из них, мы сможем изменить размер этого квадратного прямоугольника"
+    ]
+  },
+  {
+    "time": [
+      151.804238,
+      157.315553
+    ],
+    "en": [
+      "we can also change just one axis so we can make it kind of shorter or taller"
+    ],
+    "ru": [
+      "мы также можем изменить только одну ось, чтобы сделать ее короче или выше"
+    ]
+  },
+  {
+    "time": [
+      157.315553,
+      163.014328
+    ],
+    "en": [
+      "and also with every tool when you click on a different tool or when you have an object selected like this"
+    ],
+    "ru": [
+      "а также с каждым инструментом, когда вы нажимаете на другой инструмент или когда у вас выбран такой объект"
+    ]
+  },
+  {
+    "time": [
+      163.014328,
+      165.704757
+    ],
+    "en": [
+      "they'll be options along the top that change"
+    ],
+    "ru": [
+      "они будут вариантами вверху, которые меняются"
+    ]
+  },
+  {
+    "time": [
+      165.704757,
+      172.409371
+    ],
+    "en": [
+      "so here we have a W and an H option with a little with some numbers in a text box we can change"
+    ],
+    "ru": [
+      "Итак, здесь у нас есть варианты W и H с небольшими числами в текстовом поле, которые мы можем изменить"
+    ]
+  },
+  {
+    "time": [
+      172.409371,
+      177.549797
+    ],
+    "en": [
+      "and that's gonna change the width and height if you look at if you notice up here while I change this those numbers are changing"
+    ],
+    "ru": [
+      "и это изменит ширину и высоту, если вы посмотрите, заметите ли вы здесь, пока я меняю это, эти числа меняются"
+    ]
+  },
+  {
+    "time": [
+      177.549797,
+      180.986943
+    ],
+    "en": [
+      "and so if I want to change just the height"
+    ],
+    "ru": [
+      "и поэтому, если я хочу изменить только высоту"
+    ]
+  },
+  {
+    "time": [
+      180.986943,
+      185.120948
+    ],
+    "en": [
+      "I can come up here and manually type in a number like 50 and hit enter"
+    ],
+    "ru": [
+      "Я могу подойти сюда и вручную ввести число вроде 50 и нажать Enter."
+    ]
+  },
+  {
+    "time": [
+      185.120948,
+      191.427978
+    ],
+    "en": [
+      "and I'll change the height to 50 millimeters which is the unit that it's has selected by default"
+    ],
+    "ru": [
+      "и я изменю высоту на 50 миллиметров, что является единицей измерения, выбранной по умолчанию."
+    ]
+  },
+  {
+    "time": [
+      191.427978,
+      193.506721
+    ],
+    "en": [
+      "I can change this to inches if I want"
+    ],
+    "ru": [
+      "Я могу изменить это на дюймы, если захочу"
+    ]
+  },
+  {
+    "time": [
+      193.506721,
+      195.499332
+    ],
+    "en": [
+      "and now instead now it's in inches"
+    ],
+    "ru": [
+      "и теперь вместо этого теперь это в дюймах"
+    ]
+  },
+  {
+    "time": [
+      195.499332,
+      202.605952
+    ],
+    "en": [
+      "so now if I want to change the width to maybe two inches I'm typing two and hit enter on the W side"
+    ],
+    "ru": [
+      "так что теперь, если я хочу изменить ширину, может быть, на два дюйма, я набираю два и нажимаю Enter на стороне W"
+    ]
+  },
+  {
+    "time": [
+      202.605952,
+      206.332569
+    ],
+    "en": [
+      "and the height that I want it to be two inches I hit two on the height and hit enter"
+    ],
+    "ru": [
+      "и высоту, которую я хочу, чтобы она была два дюйма, я нажимаю два на высоте и нажимаю ввод"
+    ]
+  },
+  {
+    "time": [
+      206.332569,
+      212.939207
+    ],
+    "en": [
+      "and now we have a two inch by two inch square box 209.9876 so if we were to print this out"
+    ],
+    "ru": [
+      "и теперь у нас есть квадратная коробка размером два на два дюйма 209.9876, поэтому, если бы мы распечатали это"
+    ]
+  },
+  {
+    "time": [
+      212.939207,
+      216.688838
+    ],
+    "en": [
+      "it would be two inches by two inches on our piece of paper"
+    ],
+    "ru": [
+      "это будет два дюйма на два дюйма на нашем листе бумаги"
+    ]
+  },
+  {
+    "time": [
+      216.688838,
+      221.186247
+    ],
+    "en": [
+      "we can left-click and drag this box around to any point we want"
+    ],
+    "ru": [
+      "мы можем щелкнуть левой кнопкой мыши и перетащить это поле в любую точку, которую мы хотим"
+    ]
+  },
+  {
+    "time": [
+      221.186247,
+      225.584649
+    ],
+    "en": [
+      "we can even drag it outside of the page border if we want to"
+    ],
+    "ru": [
+      "мы даже можем перетащить его за границу страницы, если хотим"
+    ]
+  },
+  {
+    "time": [
+      225.584649,
+      230.092536
+    ],
+    "en": [
+      "but then if we try to print this page it'll just print blank because it is outside of the page border"
+    ],
+    "ru": [
+      "но затем, если мы попытаемся распечатать эту страницу, она просто напечатает пустую, потому что она находится за пределами границы страницы"
+    ]
+  },
+  {
+    "time": [
+      230.092536,
+      237.929665
+    ],
+    "en": [
+      "so we'll make sure we're always working within our our page guidelines or guides 235.61674 what else can we do with this okay"
+    ],
+    "ru": [
+      "поэтому мы всегда будем работать в рамках наших правил страницы или руководств 235.61674, что еще мы можем сделать с этим хорошо"
+    ]
+  },
+  {
+    "time": [
+      237.929665,
+      240.396139
+    ],
+    "en": [
+      "so while it's selected if we click out here in white space"
+    ],
+    "ru": [
+      "поэтому, пока он выбран, если мы щелкнем здесь в белом пространстве"
+    ]
+  },
+  {
+    "time": [
+      240.396139,
+      242.842207
+    ],
+    "en": [
+      "we just see there's nothing selected"
+    ],
+    "ru": [
+      "мы просто видим, что ничего не выбрано"
+    ]
+  },
+  {
+    "time": [
+      242.842207,
+      246.041103
+    ],
+    "en": [
+      "we can't change these numbers anymore because because there's no selection"
+    ],
+    "ru": [
+      "мы больше не можем изменить эти числа, потому что нет выбора"
+    ]
+  },
+  {
+    "time": [
+      246.041103,
+      248.591762
+    ],
+    "en": [
+      "if we go to the bottom there's different colors"
+    ],
+    "ru": [
+      "если мы пойдем на дно, там разные цвета"
+    ]
+  },
+  {
+    "time": [
+      248.591762,
+      250.149547
+    ],
+    "en": [
+      "and we if we click on and nothing happens"
+    ],
+    "ru": [
+      "и мы, если мы нажмем, и ничего не произойдет"
+    ]
+  },
+  {
+    "time": [
+      250.149547,
+      252.047812
+    ],
+    "en": [
+      "because we can't change the color either"
+    ],
+    "ru": [
+      "потому что мы тоже не можем изменить цвет"
+    ]
+  },
+  {
+    "time": [
+      252.047812,
+      256.037851
+    ],
+    "en": [
+      "because nothing selected but if we left click on it and have the box around"
+    ],
+    "ru": [
+      "потому что ничего не выбрано, но если мы щелкнем по нему левой кнопкой мыши и установим рамку вокруг"
+    ]
+  },
+  {
+    "time": [
+      256.037851,
+      258.343736
+    ],
+    "en": [
+      "and come down here to the purple color and left-click again"
+    ],
+    "ru": [
+      "и перейдите сюда к фиолетовому цвету и снова щелкните левой кнопкой мыши"
+    ]
+  },
+  {
+    "time": [
+      258.343736,
+      263.534023
+    ],
+    "en": [
+      "we can change the color of this box to a purple or yellow or green any color we want"
+    ],
+    "ru": [
+      "мы можем изменить цвет этого поля на фиолетовый, желтый или зеленый, любой цвет, который мы хотим"
+    ]
+  },
+  {
+    "time": [
+      263.534023,
+      267.158179
+    ],
+    "en": [
+      "we can also change the size up here now because it's selected"
+    ],
+    "ru": [
+      "мы также можем изменить размер здесь сейчас, потому что он выбран"
+    ]
+  },
+  {
+    "time": [
+      267.158179,
+      270.215897
+    ],
+    "en": [
+      "if we hit the escape key it becomes deselected"
+    ],
+    "ru": [
+      "если мы нажмем клавишу выхода, он будет отключен"
+    ]
+  },
+  {
+    "time": [
+      270.215897,
+      272.498247
+    ],
+    "en": [
+      "if we left-click it become selected again"
+    ],
+    "ru": [
+      "если мы щелкнем левой кнопкой мыши, он снова станет выбранным"
+    ]
+  },
+  {
+    "time": [
+      272.498247,
+      278.713309
+    ],
+    "en": [
+      "if we click off into white space it becomes Deselected 276.8506 if we left click it become selected again"
+    ],
+    "ru": [
+      "если мы щелкнем по пустому пространству, он станет Deselected 276.8506, если мы щелкнем левой кнопкой мыши, он снова станет выбранным"
+    ]
+  },
+  {
+    "time": [
+      278.713309,
+      285.913225
+    ],
+    "en": [
+      "while it's selected if we left click again you'll notice these these arrows sort of change direction"
+    ],
+    "ru": [
+      "пока он выбран, если мы снова щелкнем левой кнопкой мыши, вы заметите, что эти стрелки как бы меняют направление"
+    ]
+  },
+  {
+    "time": [
+      285.913225,
+      292.263479
+    ],
+    "en": [
+      "so between left clicking if we keep left clicking slowly 290.03946 we'll see these arrows change"
+    ],
+    "ru": [
+      "поэтому между щелчком левой кнопкой мыши, если мы будем продолжать медленно щелкать левой кнопкой мыши 290.03946, мы увидим, что эти стрелки меняются"
+    ]
+  },
+  {
+    "time": [
+      292.263479,
+      295.122333
+    ],
+    "en": [
+      "so the first selection we had we could change the size of it"
+    ],
+    "ru": [
+      "так что в первом выделении, которое у нас было, мы могли изменить его размер"
+    ]
+  },
+  {
+    "time": [
+      295.122333,
+      299.320152
+    ],
+    "en": [
+      "but if we left click again we can change the skew"
+    ],
+    "ru": [
+      "но если мы снова щелкнем левой кнопкой мыши, мы можем изменить перекос"
+    ]
+  },
+  {
+    "time": [
+      299.320152,
+      306.120361
+    ],
+    "en": [
+      "we can skew this square either along the x or y axis"
+    ],
+    "ru": [
+      "мы можем наклонить этот квадрат либо по оси x, либо по оси y"
+    ]
+  },
+  {
+    "time": [
+      306.120361,
+      306.120361
+    ],
+    "en": [
+      "and we can also rotate it so if we go to the corner once we can rotate it around"
+    ],
+    "ru": [
+      "и мы также можем повернуть его, чтобы, если мы перейдем к углу, мы сможем повернуть его вокруг"
+    ]
+  },
+  {
+    "time": [
+      306.120361,
+      314.634842
+    ],
+    "en": [
+      "and again to get that rotation option"
+    ],
+    "ru": [
+      "и снова, чтобы получить эту опцию вращения"
+    ]
+  },
+  {
+    "time": [
+      314.634842,
+      318.445791
+    ],
+    "en": [
+      "if I'll bring it back to where it was 316.12492 and if we hit the escape key"
+    ],
+    "ru": [
+      "если я верну его туда, где это было 316.12492, и если мы нажмем клавишу выхода"
+    ]
+  },
+  {
+    "time": [
+      318.445791,
+      323.482118
+    ],
+    "en": [
+      "we click on it once and then click on it again while it's selected just selected a second time"
+    ],
+    "ru": [
+      "мы нажимаем на него один раз, а затем нажимаем на него еще раз, пока он выбран, просто выбран во второй раз"
+    ]
+  },
+  {
+    "time": [
+      323.482118,
+      324.950143
+    ],
+    "en": [
+      "and that's how you'll get those rotate"
+    ],
+    "ru": [
+      "и вот как вы заставите их вращаться"
+    ]
+  },
+  {
+    "time": [
+      324.950143,
+      327.617302
+    ],
+    "en": [
+      "that rotation option for how you can rotate it"
+    ],
+    "ru": [
+      "этот вариант поворота, как вы можете его повернуть"
+    ]
+  },
+  {
+    "time": [
+      327.617302,
+      331.923166
+    ],
+    "en": [
+      "you'll see also there's a little plus sign in the middle of this object"
+    ],
+    "ru": [
+      "вы также увидите небольшой знак плюса посередине этого объекта"
+    ]
+  },
+  {
+    "time": [
+      331.923166,
+      334.562514
+    ],
+    "en": [
+      "if we move it down to the bottom for example"
+    ],
+    "ru": [
+      "если мы переместим его вниз, например"
+    ]
+  },
+  {
+    "time": [
+      334.562514,
+      342.769142
+    ],
+    "en": [
+      "now the rotation axis is going to be wherever that little plus sign is 340.09193 so we can rotate from here for example"
+    ],
+    "ru": [
+      "теперь ось вращения будет там, где этот маленький знак плюс равен 340.09193, поэтому мы можем вращаться отсюда, например"
+    ]
+  },
+  {
+    "time": [
+      342.769142,
+      345.272572
+    ],
+    "en": [
+      "and it doesn't even have to be within the shape"
+    ],
+    "ru": [
+      "и это даже не обязательно должно быть внутри формы"
+    ]
+  },
+  {
+    "time": [
+      345.272572,
+      350.136035
+    ],
+    "en": [
+      "it can be over here and we can still rotate around that point"
+    ],
+    "ru": [
+      "это может быть здесь, и мы все еще можем вращаться вокруг этой точки"
+    ]
+  },
+  {
+    "time": [
+      350.136035,
+      352.729497
+    ],
+    "en": [
+      "so that's really cool"
+    ],
+    "ru": [
+      "так это действительно круто"
+    ]
+  },
+  {
+    "time": [
+      352.729497,
+      356.311215
+    ],
+    "en": [
+      "I'm gonna move it back here by default it's in the center"
+    ],
+    "ru": [
+      "Я верну его сюда, по умолчанию он в центре"
+    ]
+  },
+  {
+    "time": [
+      356.311215,
+      358.131016
+    ],
+    "en": [
+      "and so I'll move it back here to roughly to the center"
+    ],
+    "ru": [
+      "и поэтому я верну его сюда примерно в центр"
+    ]
+  },
+  {
+    "time": [
+      358.131016,
+      361.819619
+    ],
+    "en": [
+      "if I want to draw a second object"
+    ],
+    "ru": [
+      "если я хочу нарисовать второй объект"
+    ]
+  },
+  {
+    "time": [
+      361.819619,
+      366.365766
+    ],
+    "en": [
+      "I just come over here to square again or a rectangle tool and draw a second rectangle"
+    ],
+    "ru": [
+      "Я просто прихожу сюда, чтобы снова квадрат или инструмент прямоугольник и рисовать второй прямоугольник"
+    ]
+  },
+  {
+    "time": [
+      366.365766,
+      368.447779
+    ],
+    "en": [
+      "and you notice there's a couple different things"
+    ],
+    "ru": [
+      "и вы замечаете, что есть пара разных вещей"
+    ]
+  },
+  {
+    "time": [
+      368.447779,
+      371.401975
+    ],
+    "en": [
+      "so if I hit escape so that nothing is selected"
+    ],
+    "ru": [
+      "поэтому, если я нажму escape, чтобы ничего не было выбрано"
+    ]
+  },
+  {
+    "time": [
+      371.401975,
+      375.924367
+    ],
+    "en": [
+      "we have a green it's called a fill the color in the middle is called the fill color"
+    ],
+    "ru": [
+      "у нас есть зеленый цвет, он называется заливкой, цвет в середине называется цветом заливки"
+    ]
+  },
+  {
+    "time": [
+      375.924367,
+      378.382086
+    ],
+    "en": [
+      "and around the outside is a stroke color"
+    ],
+    "ru": [
+      "а снаружи - цвет обводки"
+    ]
+  },
+  {
+    "time": [
+      378.382086,
+      380.185025
+    ],
+    "en": [
+      "and we actually have a black stroke cover"
+    ],
+    "ru": [
+      "и у нас действительно есть черная обводка"
+    ]
+  },
+  {
+    "time": [
+      380.185025,
+      381.553411
+    ],
+    "en": [
+      "if you look closely you'll see that"
+    ],
+    "ru": [
+      "если вы присмотритесь, вы увидите, что"
+    ]
+  },
+  {
+    "time": [
+      381.553411,
+      385.282465
+    ],
+    "en": [
+      "another way we can tell is by coming back up here to the selection tool"
+    ],
+    "ru": [
+      "еще один способ узнать, вернувшись сюда к инструменту выделения"
+    ]
+  },
+  {
+    "time": [
+      385.282465,
+      389.415479
+    ],
+    "en": [
+      "clicking on the object and going down and turning the color to white"
+    ],
+    "ru": [
+      "щелкнув по объекту, спустившись вниз и изменив цвет на белый"
+    ]
+  },
+  {
+    "time": [
+      389.415479,
+      391.959285
+    ],
+    "en": [
+      "and you'll notice that still has that black border"
+    ],
+    "ru": [
+      "и вы заметите, что все еще есть черная рамка"
+    ]
+  },
+  {
+    "time": [
+      391.959285,
+      396.069987
+    ],
+    "en": [
+      "that's because our fill color is black"
+    ],
+    "ru": [
+      "это потому что наш цвет заливки черный"
+    ]
+  },
+  {
+    "time": [
+      396.069987,
+      399.290446
+    ],
+    "en": [
+      "to change the fill color from this screen here"
+    ],
+    "ru": [
+      "чтобы изменить цвет заливки с этого экрана здесь"
+    ]
+  },
+  {
+    "time": [
+      399.290446,
+      401.819462
+    ],
+    "en": [
+      "if you just hit you you hold shift down"
+    ],
+    "ru": [
+      "если вы просто ударили вас, удерживайте Shift"
+    ]
+  },
+  {
+    "time": [
+      401.819462,
+      405.425677
+    ],
+    "en": [
+      "and click on the color it'll change that fill color"
+    ],
+    "ru": [
+      "и нажмите на цвет, который изменит цвет заливки"
+    ]
+  },
+  {
+    "time": [
+      405.425677,
+      411.072772
+    ],
+    "en": [
+      "so if you want to change the fill color just hold the shift key and click on the color"
+    ],
+    "ru": [
+      "поэтому, если вы хотите изменить цвет заливки, просто удерживайте клавишу Shift и щелкните цвет"
+    ]
+  },
+  {
+    "time": [
+      411.072772,
+      417.539384
+    ],
+    "en": [
+      "and if you want to change I'm sorry at the fill if you want to change the stroke color you hold down the shift key"
+    ],
+    "ru": [
+      "и если вы хотите изменить, извините за заливку, если вы хотите изменить цвет обводки, удерживайте клавишу Shift"
+    ]
+  },
+  {
+    "time": [
+      417.539384,
+      420.895697
+    ],
+    "en": [
+      "if you want to change the fill color just click without holding down any key"
+    ],
+    "ru": [
+      "если вы хотите изменить цвет заливки, просто щелкните, не удерживая нажатой клавишу"
+    ]
+  },
+  {
+    "time": [
+      420.895697,
+      420.895697
     ],
     "en": [
       ""
@@ -1537,8 +1225,20 @@ let objs = [
   },
   {
     "time": [
-      599.054327,
-      599.054327
+      420.895697,
+      420.895697
+    ],
+    "en": [
+      ""
+    ],
+    "ru": [
+      ""
+    ]
+  },
+  {
+    "time": [
+      420.895697,
+      420.895697
     ],
     "en": [
       ""

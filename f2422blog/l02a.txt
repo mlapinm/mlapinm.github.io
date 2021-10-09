@@ -1,367 +1,653 @@
 0.0
-welcome back to another Inkscape
-tutorial 5.706235  in this video we're going to be
-looking at some more options for tools 9.840748 
-that we have over here in the tool bar 11.285691 
-in fact in the last video we only did
-the selection tool  13.827346 and the draw
-rectangle tool  16.160996 so I have the plus sign 17.916892 
-and I'll zoom in here 18.973467 
-use the scroll wheel to kind of pan up a
-little bit  21.158297 so yeah we can draw a
-rectangle 23.758546  and if you notice when we
-first draw it 25.633941  something I didn't go over 27.033465 
-we have these little white squares  30.371560 that
-we can click on  31.228997   to control the size of
-it 34.068860  before we get to the selection of  36.815731 we
-can also control the size this way 38.286660  but
-when we first drew it it 40.593010  creates these
-options 42.070334  we have these two white squares 43.871875 
-and then a white circle 44.761444  and this white
-circle controls the roundness of the
-corners 48.012442  of the rectangle  49.527725 which is pretty
-cool  50.378496 so we can control that make it look
-more 52.353189  like a in fact if we were to do
-this 54.292485  and then bring it 56.126362  in we can make it
-look almost like a circle 57.820739  almost give it
-rounded corners 61.203777  to get to that option 62.388925 
-and it sends us there by default 65.313142  when we
-first draw the shape 66.820444  but if we double if
-we click 68.857632  and then we click again we know
-we get to the skew 70.909968  and the rotation 71.772757  but
-if we click very quickly  73.727156 double click 74.807110 
-then we get to that third option 76.353731  which
-is these  77.588085 we have these different handles
-on the corners 79.799195  where we can create
-rounded corners 82.345363  and we can also resize
-the shape 84.654002  that way 85.346225  so I show that
-because 86.745318  we're gonna be playing with some
-different shapes today 89.078288  and each shape
-has different options 91.400420  when you get to
-these white circles and squares 94.615386  these
-handles do different things 96.262120  for
-different shapes 97.063662  but these black handles
-with the arrows 100.704796  they all behave the same 102.977086 
-for every shape we draw 104.594546  so I'll show you
-what 105.665815  I mean by that I'm gonna hit the
-Delete key  106.694295 and delete both of these  108.095655 and
-we're gonna come here to the circle tool 109.922027 
-we're gonna draw a circle  111.710258 so or an oval 114.002186 
-so I'll just drag  114.951981 and unclick  115.635587 and we
-have this  116.269464 so we see we have these
-handles up here  118.568920 we can change the height
-of the circle  122.261165 and change the width of
-the circle  123.683705 Oh
-so see what I did there   125.346922  I actually drew
-another blue circle a teeny tiny one
-over top of this 129.811501  because my circle tool
-was still selected  131.662635 and I'm barely missed
-the
-handle  133.705673 so I can see if I come here to
-the selection tool 136.294449  this is what I drew 137.437578 
-I'll drag it down here 138.323859  so I drew this 140.365787  I
-have another circle now  right here 142.157941  so to
-get back to those options though  146.632475 I was
-going to show you if we double click
-very quickly 148.780117  we get to these different
-handles 150.439368  where we can control different
-things  153.658257 and this the most important ones
-of the circle 155.490978  is this teeny little one
-over here 157.454764  controls so that we can make
-like a pacman style  160.586510 so here's how it
-works if you're outside 162.557599  I have my left
-mouse click or held in right now 166.473472  if
-we're outside of the circle  168.982179 it'll create
-this sort of like pie chart looking
-thing  171.455898 where we can go all the way down 173.622474 
-and create just a sliver 174.705218  we can come
-here and create a pacman  176.483494 if I move my
-cursor into the inside of the circle 179.729549 
-it'll change and then we'll create sort
-of like a Halfmoon type shape 184.745104  so there's
-two different ways 185.716261  we can create a
-partial circle  187.310410 we can do a partial like
-this 189.322270  or we can do a partial like this 191.208732 
-and it depends on where your mouse
-cursor is 193.149027  so play with that and get
-familiar with how that works 195.688415  there's a
-lot of times with it will you'll want to
-use a half circle 199.006397  and so you'll notice
-there's no half circle tool 202.755988  instead you
-just draw a circle 204.614695  and then control it
-this way  205.792405 and then we come back to our
-selection  207.929344 and we can change it we can
-move it around 209.837982  we can still do like the
-skew 212.179387  we can do the rotation 214.066213  the same way
-it was click a second time to get to
-rotation 218.283877  so this you know there's a time
-you'll want to draw an object 221.669637  just like
-this 222.512585  so that's how you do it 224.143650  and if we
-ever want to make this a full circle 226.054535  if
-we double-click very quickly  227.747324 always the
-options for whatever for whatever tool 232.170180 
-you whatever operation you're on with
-that object  234.719227 the options for it will be
-at the very top here   by default 237.478683  and we
-can click this full circle 239.249521  and it'll
-complete the whole circle again  240.769113 or we
-can move yeah 243.313308  that's basically what
-we'll do  244.452174 and then that we can change the
-size the radius  247.892854 the units  249.165121 that it's in 250.568047 
-okay I'm gonna delete this circle 252.605938  so I
-had delete  253.361720 but one thing I want to show
-you too 255.091357  if we select our object 256.705506  maybe
-I'll resize this a little bit 258.813488  we have
-this object selected  260.643556 and you'll notice
-this one actually has 262.222785  look how big our
-stroke is on this one 265.049496  compared to the
-last one 266.162193  in fact if I click this
-Circle tool  267.928474 and draw another circle 268.845912 
-they're different right 270.721535  this one has a
-smaller stroke 272.972012  this has a larger stroke  274.362918  
-that's because what this is  275.160264 this one we
-scaled it up  277.275456 we drew a small circle  279.078970  I'll
-do another circle down here  280.760693  we do a tiny
-circle  281.701124 and then we went to the resize 283.801419 
-now we went to get our selection 286.534343  and we
-resize it using these bars 288.332620  and it's
-scaled proportionally the stroke 291.894502 and the
-also on the size of the circle  295.073209 so now
-this stroke size is gonna be a different
-size  298.462302 and we'll look at the settings to
-control this stroke size in a minute 302.677382  but
-you'll notice that it is a different
-stroke 305.653935  than if we just draw a regular 
-circle 307.675318  this one does have a stroke we
-can see 309.610646  if we click make it white  311.012754 we see
-it has a stroke  311.901825 and actually the stroke
-color is of not even quite black  it's a
-blue color  316.609942 and again to change the
-stroke if I have a selected  319.436880 to change
-the fill color we just left-click 321.667401  make
-this one like red for example  323.433636 and then
-to change the stroke color we hold down
-the shift key  326.773840 and click whatever we want
-the stroke to be  328.812117 so we can change it to
-a different color 331.740121  I'll just make it
-black though 333.049101  and then also we have a
-little bit of transparency here  338.362615 because
-what Inkscape does it remembers the
-settings that you were using last time 342.987808 
-and so we have a tiny bit of
-transparency because you can see through
-this shape  347.022525 you can see through 348.505268  to the
-shape behind it you can see that circle  
-a little bit below  351.524315 if I want to bring
-this shape forward  353.700074 I can hit this raise 355.061843 
-race up a level 358.425471 
-
- it's not a layer
-necessarily   361.045424  where there are different
-layers  362.202430 here that we'll play with later
-on in Inkscape  363.889799 but this is just levels 365.491726 
-what level these different shapes appear
-on 367.964311  so if I want this white to appear on
-the very top level 370.879435  I can just click this
-one 372.316713  that races it all the way to the top
-level 374.822065  whatever item is selected will be
-raised to a top level 377.890499  and if I want to
-go down  379.937506 I can just raise it down one
-level at a time 382.115442  or I can raise it all
-the way to the top or all the way to the
-bottom  385.240612 so there are some options 387.848753  that we
-have for those for that tool 389.545125  I'm not
-gonna change the transparency   yet 392.216348  so
-yours might be solid  393.503174 but we'll look at
-that in the next video we'll look at how
-to change transparency and and color on
-things like that 401.496462 
-in more detail than just using the color
-below here  405.088525 this next shape we're gonna
-look at is the star  408.343310 and polygons  409.375214 so
-we'll left-click  410.251450 we'll drag we can
-create 411.366257  you'll notice it just does
-without ever the last color we had
-selected was  414.657935 so if we select green  416.634851 it'll
-turn green  417.794149 and if we draw another star 419.460407 
-it'll be green  421.459455 the star has some
-different options too 426.362312  so if we want to
-click on  428.101019 it if we double-click very
-quickly 429.643695  we get a what we notice 430.808955  we get
-these white two handles again 432.340770  so these
-ones we can change the pointyness of the
-star  437.028978 make it like a stubby little fat
-star  439.616008 we can make it very pointy 440.684058  and we
-can also change 442.386801  where oops I missed this
-one the W key  446.192788 we can also change on the
-star where the points come together on
-this inner part  450.978162 so we can actually cross
-it over multiple times  453.439477 and create kind
-of an interesting shape 455.253513  we make it also
-very pointy this way are very stubby
-this way  461.282062 and then also with the star we
-have different options up here 465.364443  so right
-now we see we have five corners 466.938434  but if
-we wanted to make a triangle 468.564488  we can just
-go down to three corners 470.145531  and now we have
-a triangle  471.331223 we can make that kind of more
-like a triangle  473.710883 or we can make it yeah
-basically a three-cornered shape  478.254488 and
-then we can make this have more as well
-we can have it have lots of different
-corners  484.691767 and we can still control the
-pointyness of these  487.954443 so I'm doing I've
-accidentally clicked so I'm hit the
-Delete key  491.908864 I keep trying to hook on
-those handles  493.377776 and the star tool is still
-selected 496.067005  so I'm accidentally creating a
-second little star  498.806234 but what I want is to
-is to click on this handle right here 502.890066 
-and make that very into there or we can
-make it come out to there and have it be
-sort of like an object like this 508.696551  we can
-change and give a different
-yeah just different characteristics  513.954577 and
-so this is one that we can really play
-with a lot  516.881811 and make a lot of different
-cool shapes just by how we how we do it
-so it's not just a shape like I said
-it's not just a circle  526.202718 it's we can make
-lots of different shapes by controlling
-the different options of that shape 531.707888  so
-always look at the top you'll see some
-different options for things you
-do 535.070609  moving on we can do this spiral tool
-sometimes we'll use this 539.667298  so it's just
-creates a nice little spiral 541.493738  and then we
-can again move it  544.096300 so these black handles
-are always the same  546.166391 these black arrows
-always just let us resize 548.204599  let us rotate 550.184554 
-we can rotate the star too if we want at
-least click 553.458159  and then click a second time
-to get to those rotate options  555.439044 and this
-one if we double click very quickly  558.372309 we
-have options for changing this size  560.369905 or
-Canada different options for this spiral 564.521334 
-like how tight the spiral is 566.633306  and yeah
-that's really the this I just want to go
-over the shape tools  573.445187 there's more tools
-down here 574.799065  but we're not gonna go over
-these ones in future videos  577.681083 I guess with
-the exception that's like text  579.616502 we can
-just click on the text tool  580.672693 and type and
-start typing in  583.931967 you know things  584.959314 and then
-we can change  588.553895 I'm alpha chain of text
-yeah 590.013758  well we can change the color of the
-text down here 592.128134  and then there's a lot
-more options for text we'll do a whole
-whole separate video just on text  597.246592 but
-the rest of these we're not gonna really
-play with  600.480606 and in fact I'm gonna give you
-like a word of caution  602.736637 you if you want
-to play with some of these yourself 605.123077 
-you'll notice there's like an eraser
-tool  606.913485 but this is a tool that I literally
-never use 610.598225  ever in inkscape  611.950152 and if you
-if you've used Photoshop  614.175571 or or
-maybe even Microsoft Paint  617.392600 you might be
-used to using this tool 619.508337  where you can
-like erase certain parts  621.841943 why that even
-did oh it's because we're erasing in
-blue  630.478156 oh so I did Dan so basically we can
-like cut into the shape  634.495866 and right like
-erase parts of it  636.504437 but it starts to get
-things very very messy and the reason is 639.982850 
-you're doing freehand  641.387000 you're doing
-freehand erasing  643.115707 and the way Inkscape
-works is that it creates these it
-creates an object  648.926138 it based on math 650.748292  so
-this star is a very simple object for
-the computer  655.067634 it just says alright make a
-star based off of these points  659.925299 by in
-this tool  664.325253 so now I'm editing this just
-just a node by node  667.137747 so we have like
-basically one two three four five six
-seven eight nine ten  672.217112 so it's basically
-saying here's the ten points for this
-star  675.114935 and so just draw a straight line
-between each of these ten points  679.193439 and
-you've got your object  680.799176 and that's why it
-doesn't matter how big it is
-so we can scale this incredibly large 686.035184 
-and it won't ever lose its clarity  689.922123 or we
-can scale it super super tiny as well 693.317157 
-and these objects are all just stay nice 696.331488 
-like if we zoom into the point at this
-point right here  698.903234 look at this it doesn't
-ever get grainy  702.170580 ever it just stays nice
-and sharp always  706.516363 whether we scale it up
-massive or shrink it down tiny and
-that's because it's just mathematics 
-telling how to draw the shape  714.942508 it's like
-draw three points  716.091283 one here one here one
-here  717.618879 but that's why when we get into
-drawing or when we get into using these
-free hand tools  722.711464 and erasing it messes
-things up a little bit because now
-instead of having just a few simple
-points  728.100693 I'm gonna click this tool which
-is the edit node tools by path  731.644253 we'll use
-this a lot later  732.881645 but see now look how
-many points we have when we go in in the
-erase  735.970760 it creates lots of unnecessary
-points  738.625409 so if you're gonna use that tool
-you'll want to come in and erase these
-at least I think you should coming in 745.531146 
-I'm just clicking on this node and
-hitting the Delete key  747.627472 and I'm probably
-getting too advanced for this video
-anyway  750.149966 because we'll do that a lot later 751.902892 
-but then we can kind of clean up that
-line  753.875091 but it's just not something that I
-ever do anyway 756.752347  you don't want to do
-freehand  758.269966 there's a freehand pencil tool
-where you can draw  760.247992 you know freehand
-lines  762.100396 but it's just it just creates
-messy looking things like how ugly this
-thing   is  767.376042 and it's just not worth  768.675429 it so
-there's better ways there's much better
-tools for drawing in Inkscape 773.011642  than doing
-anything freehand  774.413955 so that's the word of
-caution I would give you is don't do
-freehand in Inkscape  778.845677 anything freehand
-just don't do it instead  780.996834 there's better
-ways where you can draw a path  783.536426 and then
-map a line or map text to a path  786.522684 or map
-you know you can use these paths  788.984838 that's
-really the power of Inkscape  790.836040 if you want
-to do some freehand art you should use
-something like Krita or a Photoshop or
-Inkscape 796.191324 
-I mean aura or but if you want to
-use some if you wanted to do the power
-of Inkscape you really want to be
-learning how to use these shapes  803.095881 and
-then draw shapes to accomplish your goal
-and edit the different nodes of that
-shape instead of freehand drawing 810.958784  so
-that was kind of a rant but in this next
-video we're gonna be looking at 815.580099  we'll
-look at how to control more of the
-stroke and the fill options  821.101573 for these
-different tools  822.891210 so join me on that 824.323772  sorry
-I created such an ugly mess in here
-because see look I can and I can't erase
-this middle part now  830.503205 I can't erase this
-ugliness that I created  832.888602 because it's
-part of this circle  834.577536 now isn't that
-terrible 836.452253 
-we can't change it we can't it's all
-just part of this one object that we've
-drawn  840.748806 so it's ugly 842.424067 
-anyway I'll stop talking about that  844.607582 and
-we'll catch the next video looking at
-fill and Stroke 
-846.865609 
- 846.865609 
- 846.865609 
+welcome back to another Inkscape tutorial
+5.706235
+in this video we're going to be looking at some more options for tools
+9.840748
+that we have over here in the tool bar
+11.285691
+in fact in the last video we only did the selection tool
+13.827346
+and the draw rectangle tool
+16.160996
+so I have the plus sign
+17.916892
+and I'll zoom in here
+18.973467
+use the scroll wheel to kind of pan up a little bit
+21.158297
+so yeah we can draw a rectangle
+23.758546
+and if you notice when we first draw it
+25.633941
+something I didn't go over
+27.033465
+we have these little white squares
+30.371560
+that we can click on
+31.228997
+to control the size of it
+34.068860
+before we get to the selection of
+36.815731
+we can also control the size this way
+38.286660
+but when we first drew it it
+40.593010
+creates these options
+42.070334
+we have these two white squares
+43.871875
+and then a white circle
+44.761444
+and this white circle controls the roundness of the corners
+48.012442
+of the rectangle
+49.527725
+which is pretty cool
+50.378496
+so we can control that make it look more
+52.353189
+like a in fact if we were to do this
+54.292485
+and then bring it
+56.126362
+in we can make it look almost like a circle
+57.820739
+almost give it rounded corners
+61.203777
+to get to that option
+62.388925
+and it sends us there by default
+65.313142
+when we first draw the shape
+66.820444
+but if we double if we click
+68.857632
+and then we click again we know we get to the skew
+70.909968
+and the rotation
+71.772757
+but if we click very quickly
+73.727156
+double click
+74.807110
+then we get to that third option
+76.353731
+which is these
+77.588085
+we have these different handles on the corners
+79.799195
+where we can create rounded corners
+82.345363
+and we can also resize the shape
+84.654002
+that way
+85.346225
+so I show that because
+86.745318
+we're gonna be playing with some different shapes today
+89.078288
+and each shape has different options
+91.400420
+when you get to these white circles and squares
+94.615386
+these handles do different things
+96.262120
+for different shapes
+97.063662
+but these black handles with the arrows
+100.704796
+they all behave the same
+102.977086
+for every shape we draw
+104.594546
+so I'll show you what
+105.665815
+I mean by that I'm gonna hit the Delete key
+106.694295
+and delete both of these
+108.095655
+and we're gonna come here to the circle tool
+109.922027
+we're gonna draw a circle
+111.710258
+so or an oval
+114.002186
+so I'll just drag
+114.951981
+and unclick
+115.635587
+and we have this
+116.269464
+so we see we have these handles up here
+118.568920
+we can change the height of the circle
+122.261165
+and change the width of the circle
+123.683705
+Oh so see what I did there
+125.346922
+I actually drew another blue circle a teeny tiny one over top of this
+129.811501
+because my circle tool was still selected
+131.662635
+and I'm barely missed the handle
+133.705673
+so I can see if I come here to the selection tool
+136.294449
+this is what I drew
+137.437578
+I'll drag it down here
+138.323859
+so I drew this
+140.365787
+I have another circle now right here
+142.157941
+so to get back to those options though
+146.632475
+I was going to show you if we double click very quickly
+148.780117
+we get to these different handles
+150.439368
+where we can control different things
+153.658257
+and this the most important ones of the circle
+155.490978
+is this teeny little one over here
+157.454764
+controls so that we can make like a pacman style
+160.586510
+so here's how it works if you're outside
+162.557599
+I have my left mouse click or held in right now
+166.473472
+if we're outside of the circle
+168.982179
+it'll create this sort of like pie chart looking thing
+171.455898
+where we can go all the way down
+173.622474
+and create just a sliver
+174.705218
+we can come here and create a pacman
+176.483494
+if I move my cursor into the inside of the circle
+179.729549
+it'll change and then we'll create sort of like a Halfmoon type shape
+184.745104
+so there's two different ways
+185.716261
+we can create a partial circle
+187.310410
+we can do a partial like this
+189.322270
+or we can do a partial like this
+191.208732
+and it depends on where your mouse cursor is
+193.149027
+so play with that and get familiar with how that works
+195.688415
+there's a lot of times with it will you'll want to use a half circle
+199.006397
+and so you'll notice there's no half circle tool
+202.755988
+instead you just draw a circle
+204.614695
+and then control it this way
+205.792405
+and then we come back to our selection
+207.929344
+and we can change it we can move it around
+209.837982
+we can still do like the skew
+212.179387
+we can do the rotation
+214.066213
+the same way it was click a second time to get to rotation
+218.283877
+so this you know there's a time you'll want to draw an object
+221.669637
+just like this
+222.512585
+so that's how you do it
+224.143650
+and if we ever want to make this a full circle
+226.054535
+if we double-click very quickly
+227.747324
+always the options for whatever for whatever tool
+232.170180
+you whatever operation you're on with that object
+234.719227
+the options for it will be at the very top here by default
+237.478683
+and we can click this full circle
+239.249521
+and it'll complete the whole circle again
+240.769113
+or we can move yeah
+243.313308
+that's basically what we'll do
+244.452174
+and then that we can change the size the radius
+247.892854
+the units
+249.165121
+that it's in
+250.568047
+okay I'm gonna delete this circle
+252.605938
+so I had delete
+253.361720
+but one thing I want to show you too
+255.091357
+if we select our object
+256.705506
+maybe I'll resize this a little bit
+258.813488
+we have this object selected
+260.643556
+and you'll notice this one actually has
+262.222785
+look how big our stroke is on this one
+265.049496
+compared to the last one
+266.162193
+in fact if I click this Circle tool
+267.928474
+and draw another circle
+268.845912
+they're different right
+270.721535
+this one has a smaller stroke
+272.972012
+this has a larger stroke
+274.362918
+that's because what this is
+275.160264
+this one we scaled it up
+277.275456
+we drew a small circle
+279.078970
+I'll do another circle down here
+280.760693
+we do a tiny circle
+281.701124
+and then we went to the resize
+283.801419
+now we went to get our selection
+286.534343
+and we resize it using these bars
+288.332620
+and it's scaled proportionally the stroke
+291.894502
+and the also on the size of the circle
+295.073209
+so now this stroke size is gonna be a different size
+298.462302
+and we'll look at the settings to control this stroke size in a minute
+302.677382
+but you'll notice that it is a different stroke
+305.653935
+than if we just draw a regular circle
+307.675318
+this one does have a stroke we can see
+309.610646
+if we click make it white
+311.012754
+we see it has a stroke
+311.901825
+and actually the stroke color is of not even quite black it's a blue color
+316.609942
+and again to change the stroke if I have a selected
+319.436880
+to change the fill color we just left-click
+321.667401
+make this one like red for example
+323.433636
+and then to change the stroke color we hold down the shift key
+326.773840
+and click whatever we want the stroke to be
+328.812117
+so we can change it to a different color
+331.740121
+I'll just make it black though
+333.049101
+and then also we have a little bit of transparency here
+338.362615
+because what Inkscape does it remembers the settings that you were using last time
+342.987808
+and so we have a tiny bit of transparency because you can see through this shape
+347.022525
+you can see through
+348.505268
+to the shape behind it you can see that circle a little bit below
+351.524315
+if I want to bring this shape forward
+353.700074
+I can hit this raise
+355.061843
+race up a level
+358.425471
+it's not a layer necessarily
+361.045424
+where there are different layers
+362.202430
+here that we'll play with later on in Inkscape
+363.889799
+but this is just levels
+365.491726
+what level these different shapes appear on
+367.964311
+so if I want this white to appear on the very top level
+370.879435
+I can just click this one
+372.316713
+that races it all the way to the top level
+374.822065
+whatever item is selected will be raised to a top level
+377.890499
+and if I want to go down
+379.937506
+I can just raise it down one level at a time
+382.115442
+or I can raise it all the way to the top or all the way to the bottom
+385.240612
+so there are some options
+387.848753
+that we have for those for that tool
+389.545125
+I'm not gonna change the transparency yet
+392.216348
+so yours might be solid
+393.503174
+but we'll look at that in the next video we'll look at how to change transparency and and color on things like that
+401.496462
+in more detail than just using the color below here
+405.088525
+this next shape we're gonna look at is the star
+408.343310
+and polygons
+409.375214
+so we'll left-click
+410.251450
+we'll drag we can create
+411.366257
+you'll notice it just does without ever the last color we had selected was
+414.657935
+so if we select green
+416.634851
+it'll turn green
+417.794149
+and if we draw another star
+419.460407
+it'll be green
+421.459455
+the star has some different options too
+426.362312
+so if we want to click on
+428.101019
+it if we double-click very quickly
+429.643695
+we get a what we notice
+430.808955
+we get these white two handles again
+432.340770
+so these ones we can change the pointyness of the star
+437.028978
+make it like a stubby little fat star
+439.616008
+we can make it very pointy
+440.684058
+and we can also change
+442.386801
+where oops I missed this one the W key
+446.192788
+we can also change on the star where the points come together on this inner part
+450.978162
+so we can actually cross it over multiple times
+453.439477
+and create kind of an interesting shape
+455.253513
+we make it also very pointy this way are very stubby this way
+461.282062
+and then also with the star we have different options up here
+465.364443
+so right now we see we have five corners
+466.938434
+but if we wanted to make a triangle
+468.564488
+we can just go down to three corners
+470.145531
+and now we have a triangle
+471.331223
+we can make that kind of more like a triangle
+473.710883
+or we can make it yeah basically a three-cornered shape
+478.254488
+and then we can make this have more as well we can have it have lots of different corners
+484.691767
+and we can still control the pointyness of these
+487.954443
+so I'm doing I've accidentally clicked so I'm hit the Delete key
+491.908864
+I keep trying to hook on those handles
+493.377776
+and the star tool is still selected
+496.067005
+so I'm accidentally creating a second little star
+498.806234
+but what I want is to is to click on this handle right here
+502.890066
+and make that very into there or we can make it come out to there and have it be sort of like an object like this
+508.696551
+we can change and give a different yeah just different characteristics
+513.954577
+and so this is one that we can really play with a lot
+516.881811
+and make a lot of different cool shapes just by how we how we do it so it's not just a shape like I said it's not just a circle
+526.202718
+it's we can make lots of different shapes by controlling the different options of that shape
+531.707888
+so always look at the top you'll see some different options for things you do
+535.070609
+moving on we can do this spiral tool sometimes we'll use this
+539.667298
+so it's just creates a nice little spiral
+541.493738
+and then we can again move it
+544.096300
+so these black handles are always the same
+546.166391
+these black arrows always just let us resize
+548.204599
+let us rotate
+550.184554
+we can rotate the star too if we want at least click
+553.458159
+and then click a second time to get to those rotate options
+555.439044
+and this one if we double click very quickly
+558.372309
+we have options for changing this size
+560.369905
+or Canada different options for this spiral
+564.521334
+like how tight the spiral is
+566.633306
+and yeah that's really the this I just want to go over the shape tools
+573.445187
+there's more tools down here
+574.799065
+but we're not gonna go over these ones in future videos
+577.681083
+I guess with the exception that's like text
+579.616502
+we can just click on the text tool
+580.672693
+and type and start typing in
+583.931967
+you know things
+584.959314
+and then we can change
+588.553895
+I'm alpha chain of text yeah
+590.013758
+well we can change the color of the text down here
+592.128134
+and then there's a lot more options for text we'll do a whole whole separate video just on text
+597.246592
+but the rest of these we're not gonna really play with
+600.480606
+and in fact I'm gonna give you like a word of caution
+602.736637
+you if you want to play with some of these yourself
+605.123077
+you'll notice there's like an eraser tool
+606.913485
+but this is a tool that I literally never use
+610.598225
+ever in inkscape
+611.950152
+and if you if you've used Photoshop
+614.175571
+or or maybe even Microsoft Paint
+617.392600
+you might be used to using this tool
+619.508337
+where you can like erase certain parts
+621.841943
+why that even did oh it's because we're erasing in blue
+630.478156
+oh so I did Dan so basically we can like cut into the shape
+634.495866
+and right like erase parts of it
+636.504437
+but it starts to get things very very messy and the reason is
+639.982850
+you're doing freehand
+641.387000
+you're doing freehand erasing
+643.115707
+and the way Inkscape works is that it creates these it creates an object
+648.926138
+it based on math
+650.748292
+so this star is a very simple object for the computer
+655.067634
+it just says alright make a star based off of these points
+659.925299
+by in this tool
+664.325253
+so now I'm editing this just just a node by node
+667.137747
+so we have like basically one two three four five six seven eight nine ten
+672.217112
+so it's basically saying here's the ten points for this star
+675.114935
+and so just draw a straight line between each of these ten points
+679.193439
+and you've got your object
+680.799176
+and that's why it doesn't matter how big it is so we can scale this incredibly large
+686.035184
+and it won't ever lose its clarity
+689.922123
+or we can scale it super super tiny as well
+693.317157
+and these objects are all just stay nice
+696.331488
+like if we zoom into the point at this point right here
+698.903234
+look at this it doesn't ever get grainy
+702.170580
+ever it just stays nice and sharp always
+706.516363
+whether we scale it up massive or shrink it down tiny and that's because it's just mathematics telling how to draw the shape
+714.942508
+it's like draw three points
+716.091283
+one here one here one here
+717.618879
+but that's why when we get into drawing or when we get into using these free hand tools
+722.711464
+and erasing it messes things up a little bit because now instead of having just a few simple points
+728.100693
+I'm gonna click this tool which is the edit node tools by path
+731.644253
+we'll use this a lot later
+732.881645
+but see now look how many points we have when we go in in the erase
+735.970760
+it creates lots of unnecessary points
+738.625409
+so if you're gonna use that tool you'll want to come in and erase these at least I think you should coming in
+745.531146
+I'm just clicking on this node and hitting the Delete key
+747.627472
+and I'm probably getting too advanced for this video anyway
+750.149966
+because we'll do that a lot later
+751.902892
+but then we can kind of clean up that line
+753.875091
+but it's just not something that I ever do anyway
+756.752347
+you don't want to do freehand
+758.269966
+there's a freehand pencil tool where you can draw
+760.247992
+you know freehand lines
+762.100396
+but it's just it just creates messy looking things like how ugly this thing is
+767.376042
+and it's just not worth
+768.675429
+it so there's better ways there's much better tools for drawing in Inkscape
+773.011642
+than doing anything freehand
+774.413955
+so that's the word of caution I would give you is don't do freehand in Inkscape
+778.845677
+anything freehand just don't do it instead
+780.996834
+there's better ways where you can draw a path
+783.536426
+and then map a line or map text to a path
+786.522684
+or map you know you can use these paths
+788.984838
+that's really the power of Inkscape
+790.836040
+if you want to do some freehand art you should use something like Krita or a Photoshop or Inkscape
+796.191324
+I mean aura or but if you want to use some if you wanted to do the power of Inkscape you really want to be learning how to use these shapes
+803.095881
+and then draw shapes to accomplish your goal and edit the different nodes of that shape instead of freehand drawing
+810.958784
+so that was kind of a rant but in this next video we're gonna be looking at
+815.580099
+we'll look at how to control more of the stroke and the fill options
+821.101573
+for these different tools
+822.891210
+so join me on that
+824.323772
+sorry I created such an ugly mess in here because see look I can and I can't erase this middle part now
+830.503205
+I can't erase this ugliness that I created
+832.888602
+because it's part of this circle
+834.577536
+now isn't that terrible
+836.452253
+we can't change it we can't it's all just part of this one object that we've drawn
+840.748806
+so it's ugly
+842.424067
+anyway I'll stop talking about that
+844.607582
+and we'll catch the next video looking at fill and Stroke
+846.865609
+846.865609
+846.865609

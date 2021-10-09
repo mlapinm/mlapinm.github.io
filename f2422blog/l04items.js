@@ -2,619 +2,271 @@ let objs = [
   {
     "time": [
       0.0,
-      5.832196
+      2.254036
     ],
     "en": [
-      "welcome to this free CCNA packet tracer practice lab"
+      "memory game is a simple concentration game"
     ],
     "ru": [
-      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
+      "игра на память - это простая игра на концентрацию"
     ]
   },
   {
     "time": [
-      5.832196,
-      9.461726
+      2.254036,
+      4.436802
     ],
     "en": [
-      "you can download the lab file from the link in the description"
+      "in which the player flips over two cards"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "в котором игрок переворачивает две карты"
     ]
   },
   {
     "time": [
-      9.461726,
-      18.220798
+      4.436802,
+      5.793832
     ],
     "en": [
-      "in this lab we will be working with two routers r1 and r2 and two switches switch 1 and switch 2"
+      "in the hopes that it's a match"
     ],
     "ru": [
-      "В этой лабораторной работе мы будем работать с двумя маршрутизаторами r1 и r2 и двумя коммутаторами, коммутатором 1 и коммутатором 2."
+      "в надежде, что это совпадение"
     ]
   },
   {
     "time": [
-      18.220798,
-      23.053658
+      5.793832,
+      10.042808
     ],
     "en": [
-      "we will configure and test a serial connection between the two routers"
+      "as soon as the player flips over all the cards and they're all matched"
     ],
     "ru": [
-      "мы настроим и протестируем последовательное соединение между двумя маршрутизаторами"
+      "как только игрок переворачивает все карты и все совпадают"
     ]
   },
   {
     "time": [
-      23.053658,
-      28.479349
+      10.042808,
+      11.118615
     ],
     "en": [
-      "note that I have already configured the host names of each of the devices beforehand"
+      "the player has one"
     ],
     "ru": [
-      "обратите внимание, что я уже заранее настроил имена хостов для каждого из устройств"
+      "у игрока есть один"
     ]
   },
   {
     "time": [
-      28.479349,
-      30.995791
+      11.118615,
+      16.434305
     ],
     "en": [
-      "try to complete the lab yourself first"
+      "and I tried to find out a little bit more about the history of the memory game"
     ],
     "ru": [
-      "сначала попробуйте пройти лабораторию самостоятельно"
+      "и я попытался узнать немного больше об истории игры на запоминание"
     ]
   },
   {
     "time": [
-      30.995791,
-      34.099378
+      16.434305,
+      18.236618
     ],
     "en": [
-      "then continue watching this video if you have trouble"
+      "but there are just so many variations"
     ],
     "ru": [
-      "тогда продолжайте смотреть это видео, если у вас возникнут проблемы"
+      "но есть так много вариаций"
     ]
   },
   {
     "time": [
-      34.099378,
-      37.066538
+      18.236618,
+      20.911107
     ],
     "en": [
-      "or watch after to check your solution"
+      "I even found someone the internet claiming that Mark Twain"
     ],
     "ru": [
-      "или посмотрите после, чтобы проверить свое решение"
+      "Я даже нашел в Интернете кого-то, кто утверждал, что Марк Твен"
     ]
   },
   {
     "time": [
-      37.066538,
-      45.431644
+      20.911107,
+      22.036459
     ],
     "en": [
-      "step one asks us to use CVP to discover which interfaces are used to connect the routers and switches"
+      "and made up the memory game"
     ],
     "ru": [
-      "на первом шаге нас просят использовать CVP, чтобы узнать, какие интерфейсы используются для подключения маршрутизаторов и коммутаторов."
+      "и придумал игру на память"
     ]
   },
   {
     "time": [
-      45.431644,
-      53.234291
+      22.036459,
+      25.907729
     ],
     "en": [
-      "if you have the option always show port labels and logical workspace in the Preferences menu of packet tracer enabled"
+      "after googling this it turns out he did make some sort of a memory game"
     ],
     "ru": [
-      "если у вас есть опция всегда показывать метки портов и логическую рабочую область в меню Preferences при включенном отслеживании пакетов"
+      "после поиска в Google выясняется, что он сделал что-то вроде игры на память"
     ]
   },
   {
     "time": [
-      53.234291,
-      55.786652
+      25.907729,
+      28.457389
     ],
     "en": [
-      "the labels will appear next to the devices"
+      "it looks more like a tax collection game"
     ],
     "ru": [
-      "метки появятся рядом с устройствами"
+      "это больше похоже на игру по сбору налогов"
     ]
   },
   {
     "time": [
-      55.786652,
-      57.795282
+      28.457389,
+      30.560042
     ],
     "en": [
-      "but I have this option turned off"
+      "that's the internet for you"
     ],
     "ru": [
-      "но у меня эта опция отключена"
+      "это интернет для тебя"
     ]
   },
   {
     "time": [
-      57.795282,
-      65.096571
+      30.560042,
+      35.219225
     ],
     "en": [
-      "we will use CDP or Cisco discovery protocol to identify the interfaces"
+      "we are gonna be concentrating today on the set attribute"
     ],
     "ru": [
-      "мы будем использовать протокол обнаружения CDP или Cisco для идентификации интерфейсов"
+      "сегодня мы собираемся сконцентрироваться на заданном атрибуте"
     ]
   },
   {
     "time": [
-      65.096571,
-      68.209152
+      35.219225,
+      38.507207
     ],
     "en": [
-      "CDP is a very useful tool"
+      "and get attribute inbuilt JavaScript functions"
     ],
     "ru": [
-      "CDP - очень полезный инструмент"
+      "и получить атрибут встроенных функций JavaScript"
     ]
   },
   {
     "time": [
-      68.209152,
-      71.969467
+      38.507207,
+      43.579497
     ],
     "en": [
-      "and I will create a lab dedicated to using CDP in the future"
+      "as well as event listeners what else scent of all"
     ],
     "ru": [
-      "и я создам лабораторию, посвященную использованию CDP в будущем"
+      "а также слушатели событий, какой еще запах всего"
     ]
   },
   {
     "time": [
-      71.969467,
-      75.173503
+      43.579497,
+      46.665846
     ],
     "en": [
-      "but for this lab all we need to know is one command"
+      "we've got sometimes going on math.random"
     ],
     "ru": [
-      "но для этой лаборатории все, что нам нужно знать, это одна команда"
+      "мы иногда идем на math.random"
     ]
   },
   {
     "time": [
-      75.173503,
-      78.333514
+      46.665846,
+      49.376527
     ],
     "en": [
-      "that is show CDP neighbors"
+      "and sort so if you're interesting learning more about those"
     ],
     "ru": [
-      "это показать соседей CDP"
+      "и отсортируйте, чтобы, если вам интересно узнать больше об этих"
     ]
   },
   {
     "time": [
-      78.333514,
-      81.059055
+      49.376527,
+      52.174645
     ],
     "en": [
-      "let's give it a try on switch one first"
+      "especially set attribute and get attribute"
     ],
     "ru": [
-      "давай сначала попробуем переключиться"
+      "особенно установить атрибут и получить атрибут"
     ]
   },
   {
     "time": [
-      81.059055,
-      85.571686
+      52.174645,
+      54.114599
     ],
     "en": [
-      "I'll type in able to enter privileged exec mode"
+      "please watch my video"
     ],
     "ru": [
-      "Я введу возможность войти в привилегированный режим exec"
+      "пожалуйста, посмотрите мое видео"
     ]
   },
   {
     "time": [
-      85.571686,
-      88.506662
+      54.114599,
+      56.062354
     ],
     "en": [
-      "this is where we use the command"
+      "as always minimal styling"
     ],
     "ru": [
-      "здесь мы используем команду"
+      "как всегда минималистичный стиль"
     ]
   },
   {
     "time": [
-      88.506662,
-      90.417569
+      56.062354,
+      60.068294
     ],
     "en": [
-      "show CDP neighbors"
+      "I don't want to sit for hours so feel free to go wild on your own"
     ],
     "ru": [
-      "показать соседей CDP"
+      "Я не хочу сидеть часами, так что не стесняйтесь сходить с ума по своему усмотрению"
     ]
   },
   {
     "time": [
-      90.417569,
-      95.005788
+      60.068294,
+      63.889451
     ],
     "en": [
-      "as you can see switch 1 is connected to r1"
+      "this one's particularly garish and yeah"
     ],
     "ru": [
-      "как вы можете видеть, переключатель 1 подключен к r1"
+      "это особенно яркое и да"
     ]
   },
   {
     "time": [
-      95.005788,
-      100.969255
-    ],
-    "en": [
-      "and the local interface meaning the interface on this device is fastethernet 0/1"
-    ],
-    "ru": [
-      "а локальный интерфейс означает, что интерфейс на этом устройстве - fastethernet 0/1"
-    ]
-  },
-  {
-    "time": [
-      100.969255,
-      103.046601
-    ],
-    "en": [
-      "let's go to r1"
-    ],
-    "ru": [
-      "пойдем в r1"
-    ]
-  },
-  {
-    "time": [
-      103.046601,
-      107.714236
-    ],
-    "en": [
-      "enable show CDP neighbors"
-    ],
-    "ru": [
-      "включить показывать соседей CDP"
-    ]
-  },
-  {
-    "time": [
-      107.714236,
-      113.346247
-    ],
-    "en": [
-      "our one is connected to switch 1 on the Fast Ethernet 0 interface"
-    ],
-    "ru": [
-      "наш подключен к коммутатору 1 на интерфейсе Fast Ethernet 0"
-    ]
-  },
-  {
-    "time": [
-      113.346247,
-      115.672844
-    ],
-    "en": [
-      "but something's missing"
-    ],
-    "ru": [
-      "но чего-то не хватает"
-    ]
-  },
-  {
-    "time": [
-      115.672844,
-      120.699267
-    ],
-    "en": [
-      "where's our - well because I have linked lights enabled on packet tracer"
-    ],
-    "ru": [
-      "где наш - ну, потому что я подключил огни на трассировщике пакетов"
-    ]
-  },
-  {
-    "time": [
-      120.699267,
-      123.420657
-    ],
-    "en": [
-      "you might have noticed something is wrong"
-    ],
-    "ru": [
-      "Вы могли заметить, что что-то не так"
-    ]
-  },
-  {
-    "time": [
-      123.420657,
-      125.766684
-    ],
-    "en": [
-      "let's troubleshoot a little bit"
-    ],
-    "ru": [
-      "давайте немного устраним неполадки"
-    ]
-  },
-  {
-    "time": [
-      125.766684,
-      132.031954
-    ],
-    "en": [
-      "think of potential causes first at layer 1 or the physical layer of the OSI model"
-    ],
-    "ru": [
-      "сначала подумайте о потенциальных причинах на уровне 1 или на физическом уровне модели OSI"
-    ]
-  },
-  {
-    "time": [
-      132.031954,
-      134.467056
-    ],
-    "en": [
-      "is the cable plugged in"
-    ],
-    "ru": [
-      "подключен ли кабель"
-    ]
-  },
-  {
-    "time": [
-      134.467056,
-      135.60099
-    ],
-    "en": [
-      "yes it is"
-    ],
-    "ru": [
-      "Да, это так"
-    ]
-  },
-  {
-    "time": [
-      135.60099,
-      137.451453
-    ],
-    "en": [
-      "as you can see here in packet tracer"
-    ],
-    "ru": [
-      "как вы можете видеть здесь, в пакетном трассировщике"
-    ]
-  },
-  {
-    "time": [
-      137.451453,
-      139.987576
-    ],
-    "en": [
-      "are the interfaces turned on"
-    ],
-    "ru": [
-      "включены ли интерфейсы"
-    ]
-  },
-  {
-    "time": [
-      139.987576,
-      141.026169
-    ],
-    "en": [
-      "let's check"
-    ],
-    "ru": [
-      "Давайте проверим"
-    ]
-  },
-  {
-    "time": [
-      141.026169,
-      146.669395
-    ],
-    "en": [
-      "I'll use the show IP interface brief command to check"
-    ],
-    "ru": [
-      "Я воспользуюсь краткой командой show IP interface, чтобы проверить"
-    ]
-  },
-  {
-    "time": [
-      146.669395,
-      153.622681
-    ],
-    "en": [
-      "well we were going to use CDP to discover which interface r1 is connected to are two through"
-    ],
-    "ru": [
-      "ну, мы собирались использовать CDP, чтобы узнать, к какому интерфейсу подключен r1, через два"
-    ]
-  },
-  {
-    "time": [
-      153.622681,
-      159.08914
-    ],
-    "en": [
-      "but as we can see there is only one serial interface serial zero"
-    ],
-    "ru": [
-      "но, как мы видим, есть только один последовательный интерфейс serial zero"
-    ]
-  },
-  {
-    "time": [
-      159.08914,
-      162.101767
-    ],
-    "en": [
-      "and it's administrative lead down"
-    ],
-    "ru": [
-      "и это административное ведение вниз"
-    ]
-  },
-  {
-    "time": [
-      162.101767,
-      164.56889
-    ],
-    "en": [
-      "that means if we do a show run command"
-    ],
-    "ru": [
-      "это означает, что если мы выполним команду show run"
-    ]
-  },
-  {
-    "time": [
-      164.56889,
-      166.199811
-    ],
-    "en": [
-      "which I will do now"
-    ],
-    "ru": [
-      "что я сделаю сейчас"
-    ]
-  },
-  {
-    "time": [
-      166.199811,
-      169.015846
-    ],
-    "en": [
-      "we should see the shutdown command on the serial interface"
-    ],
-    "ru": [
-      "мы должны увидеть команду выключения на последовательном интерфейсе"
-    ]
-  },
-  {
-    "time": [
-      169.015846,
-      171.716357
-    ],
-    "en": [
-      "I didn't configure this"
-    ],
-    "ru": [
-      "Я не настраивал это"
-    ]
-  },
-  {
-    "time": [
-      171.716357,
-      172.605723
-    ],
-    "en": [
-      "this is by default"
-    ],
-    "ru": [
-      "это по умолчанию"
-    ]
-  },
-  {
-    "time": [
-      172.605723,
-      174.007918
-    ],
-    "en": [
-      "let's fix that"
-    ],
-    "ru": [
-      "давай исправим это"
-    ]
-  },
-  {
-    "time": [
-      174.007918,
-      179.757747
-    ],
-    "en": [
-      "conf no shutdown"
-    ],
-    "ru": [
-      "conf без выключения"
-    ]
-  },
-  {
-    "time": [
-      179.757747,
-      182.39393
-    ],
-    "en": [
-      "let's check on our to also"
-    ],
-    "ru": [
-      "давайте также проверим"
-    ]
-  },
-  {
-    "time": [
-      182.39393,
-      186.24296
-    ],
-    "en": [
-      "enable show IP interface brief"
-    ],
-    "ru": [
-      "включить краткое отображение IP-интерфейса"
-    ]
-  },
-  {
-    "time": [
-      186.24296,
-      188.130114
-    ],
-    "en": [
-      "again it is shutdown"
-    ],
-    "ru": [
-      "опять выключение"
-    ]
-  },
-  {
-    "time": [
-      188.130114,
-      193.791351
-    ],
-    "en": [
-      "conf T interface serial zero no shutdown"
-    ],
-    "ru": [
-      "conf T interface serial zero no shutdown"
-    ]
-  },
-  {
-    "time": [
-      193.791351,
-      195.666509
+      63.889451,
+      68.077614
     ],
     "en": [
       "okay"
@@ -625,884 +277,1136 @@ let objs = [
   },
   {
     "time": [
-      195.666509,
-      197.353092
+      68.077614,
+      71.609927
     ],
     "en": [
-      "now let's return to r1"
+      "so let's set up a folder to have our app.js file"
     ],
     "ru": [
-      "теперь вернемся к r1"
+      "Итак, давайте создадим папку для нашего файла app.js"
     ]
   },
   {
     "time": [
-      197.353092,
-      203.218257
+      71.609927,
+      75.151015
     ],
     "en": [
-      "this can take some time but if I enter show CDP neighbors again"
+      "index.html file style.css file"
     ],
     "ru": [
-      "это может занять некоторое время, но если я снова войду, покажу соседей по CDP"
+      "index.html файл style.css файл"
     ]
   },
   {
     "time": [
-      203.218257,
-      205.116741
+      75.151015,
+      76.270902
     ],
     "en": [
-      "I should see our two"
+      "in the root"
     ],
     "ru": [
-      "Я должен увидеть наших двоих"
+      "в корне"
     ]
   },
   {
     "time": [
-      205.116741,
-      207.684985
+      76.270902,
+      78.255845
     ],
     "en": [
-      "there it is"
+      "along with an images folder"
     ],
     "ru": [
-      "вот оно"
+      "вместе с папкой изображений"
     ]
   },
   {
     "time": [
-      207.684985,
-      211.641346
+      78.255845,
+      80.224348
     ],
     "en": [
-      "r1 is connected to our - through the serial zero interface"
+      "for all the images we are going to use"
     ],
     "ru": [
-      "r1 подключен к нашему - через последовательный нулевой интерфейс"
+      "для всех изображений, которые мы собираемся использовать"
     ]
   },
   {
     "time": [
-      211.641346,
-      215.513918
+      80.224348,
+      86.374393
     ],
     "en": [
-      "let's run the command on our two"
+      "please make sure to have the images as 100 pixel by a hundred pixel squares"
     ],
     "ru": [
-      "давайте запустим команду на наших двух"
+      "Пожалуйста, убедитесь, что изображения имеют размер 100 пикселей на сто пикселей квадратов"
     ]
   },
   {
     "time": [
-      215.513918,
-      219.417508
+      86.374393,
+      89.365141
     ],
     "en": [
-      "type end to return to privileged exec mode"
+      "to avoid of stretching and tampering with them later"
     ],
     "ru": [
-      "введите end, чтобы вернуться в привилегированный режим exec"
+      "чтобы не растягивать и не портить их позже"
     ]
   },
   {
     "time": [
-      219.417508,
-      222.974449
+      89.365141,
+      94.438814
     ],
     "en": [
-      "show CDP neighbors"
+      "after saving your images simply drag and drop them into your folder"
     ],
     "ru": [
-      "показать соседей CDP"
+      "после сохранения изображений просто перетащите их в свою папку"
     ]
   },
   {
     "time": [
-      222.974449,
-      233.130465
+      94.438814,
+      97.996342
     ],
     "en": [
-      "r2 is also connected to r1 through the serial zero interface"
+      "I have chosen to go for six fast foods"
     ],
     "ru": [
-      "r2 также подключен к r1 через последовательный интерфейс нуля."
+      "Я выбрал шесть фаст-фудов"
     ]
   },
   {
     "time": [
-      233.130465,
-      236.115336
+      97.996342,
+      106.010695
     ],
     "en": [
-      "and switch two through the Fast Ethernet zero interface"
+      "a blank for when my card is on its front and a white PNG file to simulate the board space being empty"
     ],
     "ru": [
-      "и переключить два через нулевой интерфейс Fast Ethernet"
+      "пустое место, когда моя карточка находится на лицевой стороне, и белый файл PNG для имитации пустого места на доске."
     ]
   },
   {
     "time": [
-      236.115336,
-      240.601434
+      106.010695,
+      110.950151
     ],
     "en": [
-      "finally let's move on to switch two"
+      "now in our HTML boilerplate"
     ],
     "ru": [
-      "наконец, давайте перейдем к переключению двух"
+      "теперь в нашем шаблоне HTML"
     ]
   },
   {
     "time": [
-      240.601434,
-      246.1742
+      110.950151,
+      113.866704
     ],
     "en": [
-      "enable show CDP neighbors"
+      "we need to put a h3 tag in the body"
     ],
     "ru": [
-      "включить показывать соседей CDP"
+      "нам нужно поместить тег h3 в тело"
     ]
   },
   {
     "time": [
-      246.1742,
-      252.643814
+      113.866704,
+      115.949607
     ],
     "en": [
-      "as you can see switch 2 is connected to R 2 through the Fast Ethernet 0-1 interface"
+      "along with a span of ID result"
     ],
     "ru": [
-      "как вы можете видеть, коммутатор 2 подключен к R 2 через интерфейс Fast Ethernet 0-1."
+      "вместе с диапазоном результатов ID"
     ]
   },
   {
     "time": [
-      252.643814,
-      255.471895
+      115.949607,
+      120.497362
     ],
     "en": [
-      "step 1 is now complete"
+      "our live score will show up in here"
     ],
     "ru": [
-      "шаг 1 теперь завершен"
+      "наш текущий счет появится здесь"
     ]
   },
   {
     "time": [
-      255.471895,
-      265.096818
+      120.497362,
+      128.412215
     ],
     "en": [
-      "step2 asks us to identify which end of the serial connection is DCE"
+      "next we create a div with the class name of grid"
     ],
     "ru": [
-      "step2 просит нас определить, какой конец последовательного соединения является DCE"
+      "затем мы создаем div с именем класса сетки"
     ]
   },
   {
     "time": [
-      265.096818,
-      267.39343
+      128.412215,
+      131.049131
     ],
     "en": [
-      "and which end is DTE"
+      "this is where our game grid will be created"
     ],
     "ru": [
-      "а конец - DTE"
+      "здесь будет создана наша игровая сетка"
     ]
   },
   {
     "time": [
-      267.39343,
-      272.575616
+      131.049131,
+      136.188813
     ],
     "en": [
-      "in serial connections one side is DCE or data communications equipment"
+      "don't forget to link up your star CSS file an app.js file with these tags"
     ],
     "ru": [
-      "в последовательных соединениях одна сторона - DCE или оборудование передачи данных"
+      "не забудьте связать свой звездный CSS-файл с файлом app.js с этими тегами"
     ]
   },
   {
     "time": [
-      272.575616,
-      276.184652
+      136.188813,
+      139.600831
     ],
     "en": [
-      "and one side is DTE or data terminal equipment"
+      "now flip over to your CSS file"
     ],
     "ru": [
-      "и одна сторона - DTE или оконечное оборудование данных"
+      "теперь перейдите к вашему файлу CSS"
     ]
   },
   {
     "time": [
-      276.184652,
-      283.744393
+      139.600831,
+      141.167588
     ],
     "en": [
-      "the most important difference between the two is that the DCE device supplies the clock signal that paces the communications"
+      "and add some styling to your grid"
     ],
     "ru": [
-      "наиболее важное различие между ними заключается в том, что устройство DCE подает тактовый сигнал, который ускоряет обмен данными."
+      "и добавьте немного стиля в свою сетку"
     ]
   },
   {
     "time": [
-      283.744393,
-      286.779967
+      141.167588,
+      144.237815
     ],
     "en": [
-      "which will adjust in the next step"
+      "because I can't out 100 pixels by 100 pixels"
     ],
     "ru": [
-      "который будет настроен на следующем шаге"
+      "потому что я не могу выделить 100 пикселей на 100 пикселей"
     ]
   },
   {
     "time": [
-      286.779967,
-      291.616351
+      144.237815,
+      147.290286
     ],
     "en": [
-      "to identify which is which let's go to r1 first"
+      "we would be able to make a three by four square grid"
     ],
     "ru": [
-      "чтобы определить, что есть что, сначала перейдем к r1"
+      "мы могли бы составить сетку размером три на четыре квадрата"
     ]
   },
   {
     "time": [
-      291.616351,
-      295.956611
+      147.290286,
+      150.556295
     ],
     "en": [
-      "we'll use the command show controllers serial zero"
+      "now flip over to a app.js file"
     ],
     "ru": [
-      "мы будем использовать команду show controllers serial zero"
+      "теперь перейдите к файлу app.js"
     ]
   },
   {
     "time": [
-      295.956611,
-      298.823908
+      150.556295,
+      155.675637
     ],
     "en": [
-      "if we just type show controllers"
+      "all our JavaScript code will be done in this Dom event listen up from now on"
     ],
     "ru": [
-      "если мы просто наберем show controllers"
+      "весь наш код JavaScript будет выполняться в этом событии Dom с этого момента"
     ]
   },
   {
     "time": [
-      298.823908,
-      303.236244
+      155.675637,
+      158.300353
     ],
     "en": [
-      "we would be overwhelmed with information about every interface on the router"
+      "let's start by making an array of cards"
     ],
     "ru": [
-      "мы были бы перегружены информацией о каждом интерфейсе на маршрутизаторе"
+      "начнем с создания массива карточек"
     ]
   },
   {
     "time": [
-      303.236244,
-      306.247824
+      158.300353,
+      160.437813
     ],
     "en": [
-      "so make sure to specify serial zero"
+      "and giving them names that we will use later"
     ],
     "ru": [
-      "поэтому не забудьте указать серийный ноль"
+      "и дать им имена, которые мы будем использовать позже"
     ]
   },
   {
     "time": [
-      306.247824,
-      309.63548
+      160.437813,
+      164.29618
     ],
     "en": [
-      "can you find what we're looking for"
+      "I'm gonna make two of each as we need two of each card"
     ],
     "ru": [
-      "Вы можете найти то, что мы ищем"
+      "Я сделаю по две штуки, так как нам нужно по две штуки каждой карты."
     ]
   },
   {
     "time": [
-      309.63548,
-      311.101373
+      164.29618,
+      165.892166
     ],
     "en": [
-      "there it is"
+      "in our array to play the game"
     ],
     "ru": [
-      "вот оно"
+      "в нашем массиве, чтобы играть в игру"
     ]
   },
   {
     "time": [
-      311.101373,
-      313.443728
+      165.892166,
+      174.808039
     ],
     "en": [
-      "and this side is the DCE"
+      "you will see here that I am simply naming the card"
     ],
     "ru": [
-      "а эта сторона - АКД"
+      "здесь вы увидите, что я просто называю карту"
     ]
   },
   {
     "time": [
-      313.443728,
-      316.710507
+      174.808039,
+      179.74144
     ],
     "en": [
-      "you can also see the clock rate mentioned earlier"
+      "and for the image I'm writing the relative relative path to each image"
     ],
     "ru": [
-      "вы также можете увидеть тактовую частоту, упомянутую ранее"
+      "а для изображения я пишу относительный относительный путь к каждому изображению"
     ]
   },
   {
     "time": [
-      316.710507,
-      320.685413
+      179.74144,
+      185.889558
     ],
     "en": [
-      "well now I know which side is DC e"
+      "okay now we're gonna create our game board"
     ],
     "ru": [
-      "ну теперь я знаю, с какой стороны DC e"
+      "хорошо, теперь мы собираемся создать нашу игровую доску"
     ]
   },
   {
     "time": [
-      320.685413,
-      325.399466
+      185.889558,
+      190.19525
     ],
     "en": [
-      "that means R 2 should be DTE but let's check anyway"
+      "first using query selector"
     ],
     "ru": [
-      "это означает, что R 2 должен быть DTE, но давайте все равно проверим"
+      "сначала используя селектор запросов"
     ]
   },
   {
     "time": [
-      325.399466,
-      328.061367
+      190.19525,
+      194.113957
     ],
     "en": [
-      "let's hop onto r2"
+      "I'm gonna pick out the element with the class name of grade for my HTML"
     ],
     "ru": [
-      "давай сядем на r2"
+      "Я выберу элемент с названием класса grade для моего HTML"
     ]
   },
   {
     "time": [
-      328.061367,
-      331.053586
+      194.113957,
+      196.998969
     ],
     "en": [
-      "show controllers serial zero"
+      "and define it as grid for our JavaScript"
     ],
     "ru": [
-      "показать серийный ноль контроллеров"
+      "и определим его как сетку для нашего JavaScript"
     ]
   },
   {
     "time": [
-      331.053586,
-      334.817174
+      196.998969,
+      203.198514
     ],
     "en": [
-      "as expected R 2 is DTE"
+      "now using a for loop"
     ],
     "ru": [
-      "как и ожидалось, R 2 - это DTE"
+      "теперь использую цикл for"
     ]
   },
   {
     "time": [
-      334.817174,
-      336.833121
+      203.198514,
+      206.007607
     ],
     "en": [
-      "step two is now complete"
+      "I'm gonna loop over my card array"
     ],
     "ru": [
-      "шаг два теперь завершен"
+      "Я собираюсь перебрать свой массив карт"
     ]
   },
   {
     "time": [
-      336.833121,
-      345.587313
+      206.007607,
+      209.123412
     ],
     "en": [
-      "for step three we have to set the clock rate on the DCE end to 64 kilobits per second"
+      "and for each card I'm going to create an image element"
     ],
     "ru": [
-      "для третьего шага мы должны установить тактовую частоту на конце DCE на 64 килобита в секунду"
+      "и для каждой карточки я собираюсь создать элемент изображения"
     ]
   },
   {
     "time": [
-      345.587313,
-      348.632922
+      209.123412,
+      211.243706
     ],
     "en": [
-      "so let's go back to r1"
+      "I'm going to call this element card"
     ],
     "ru": [
-      "так что вернемся к r1"
+      "Я назову эту карточку элемента"
     ]
   },
   {
     "time": [
-      348.632922,
-      352.524099
+      211.243706,
+      218.586177
     ],
     "en": [
-      "we have to configure the serial zero interface"
+      "for each card I'm going to set a set as an attribute"
     ],
     "ru": [
-      "нам нужно настроить последовательный нулевой интерфейс"
+      "для каждой карты я собираюсь установить набор в качестве атрибута"
     ]
   },
   {
     "time": [
-      352.524099,
-      356.709099
+      218.586177,
+      226.704771
     ],
     "en": [
-      "so conf t then interface serial zero"
+      "linking it to the image with relative path image blank PNG"
     ],
     "ru": [
-      "так что конф т тогда интерфейс серийный ноль"
+      "привязка его к изображению с относительным путем изображение пустой PNG"
     ]
   },
   {
     "time": [
-      356.709099,
-      359.782783
+      226.704771,
+      232.187401
     ],
     "en": [
-      "now we are in interface configuration mode"
+      "I'm also going to give each one a date idea"
     ],
     "ru": [
-      "сейчас мы находимся в режиме настройки интерфейса"
+      "Я также собираюсь дать каждому идею свидания"
     ]
   },
   {
     "time": [
-      359.782783,
-      364.041079
+      232.187401,
+      237.051686
     ],
     "en": [
-      "the clock rate is set with the clock rate command"
+      "and loop over each one to give them an ID that goes from 0 to 11"
     ],
     "ru": [
-      "тактовая частота устанавливается командой clock rate"
+      "и перебрать каждый из них, чтобы дать им идентификатор от 0 до 11"
     ]
   },
   {
     "time": [
-      364.041079,
-      367.792055
+      237.051686,
+      239.207015
     ],
     "en": [
-      "let's use the question mark to see what options we have"
+      "as we had 12 cards in total in our card array"
     ],
     "ru": [
-      "давайте воспользуемся вопросительным знаком, чтобы посмотреть, какие у нас есть варианты"
+      "так как всего у нас было 12 карт в нашем массиве карт"
     ]
   },
   {
     "time": [
-      367.792055,
-      372.757799
+      239.207015,
+      246.110893
     ],
     "en": [
-      "as you can see here these options are listed in bits per second"
+      "we will then add an event listener to listen out to if the cards have been clicked on"
     ],
     "ru": [
-      "как вы можете видеть здесь, эти параметры указаны в битах в секунду"
+      "Затем мы добавим прослушиватель событий, чтобы слушать, были ли нажаты карты"
     ]
   },
   {
     "time": [
-      372.757799,
-      377.548125
+      246.110893,
+      253.208965
     ],
     "en": [
-      "our task is to set the speed to 64 kilobits per second"
+      "and invoke a flip card function of a comment this out for now as we have not written this function"
     ],
     "ru": [
-      "наша задача установить скорость 64 килобит в секунду"
+      "и вызвать функцию флип-карты для комментария к этому сейчас, поскольку мы не написали эту функцию"
     ]
   },
   {
     "time": [
-      377.548125,
-      380.617687
+      253.208965,
+      254.502117
     ],
     "en": [
-      "which is 64,000 bits per second"
+      "quite yet"
     ],
     "ru": [
-      "что составляет 64000 бит в секунду"
+      "еще совсем"
     ]
   },
   {
     "time": [
-      380.617687,
-      382.182228
+      254.502117,
+      261.11087
     ],
     "en": [
-      "so let's do that"
+      "finally all these cards or technically lint image elements with different IDs we've created"
     ],
     "ru": [
-      "так давай сделаем это"
+      "наконец, все эти карточки или технически линтинговые элементы изображения с разными идентификаторами, которые мы создали"
     ]
   },
   {
     "time": [
-      382.182228,
-      384.452651
+      261.11087,
+      267.169963
     ],
     "en": [
-      "that's all for step three"
+      "you're going to put into the dev with a class name of grid using append child"
     ],
     "ru": [
-      "это все для третьего шага"
+      "вы собираетесь поместить в dev с именем класса сетки, используя append child"
     ]
   },
   {
     "time": [
-      384.452651,
-      387.003249
+      267.169963,
+      274.02155
     ],
     "en": [
-      "we don't have to do anything on the DTE side"
+      "now let's invert the function and flip over to our browser"
     ],
     "ru": [
-      "нам не нужно ничего делать на стороне DTE"
+      "теперь давайте инвертируем функцию и перейдем к нашему браузеру"
     ]
   },
   {
     "time": [
-      387.003249,
-      404.778665
+      274.02155,
+      276.337831
     ],
     "en": [
-      "step four tells us to set the IP addresses of the serial interfaces of r1 and r2 to 192.168.0.1 / 24 and 192.168.0.2 /24"
+      "and done let's carry on"
     ],
     "ru": [
-      "четвертый шаг говорит нам установить IP-адреса последовательных интерфейсов r1 и r2 на 192.168.0.1 / 24 и 192.168.0.2 / 24"
+      "и готово, давайте продолжим"
     ]
   },
   {
     "time": [
-      404.778665,
-      409.050174
+      276.337831,
+      280.440642
     ],
     "en": [
-      "interface configuration mode on r1"
+      "so to make our game work we need to do two more things"
     ],
     "ru": [
-      "режим настройки интерфейса на r1"
+      "Итак, чтобы наша игра работала, нам нужно сделать еще две вещи"
     ]
   },
   {
     "time": [
-      409.050174,
-      410.87602
+      280.440642,
+      281.675721
     ],
     "en": [
-      "so let's configure r1"
+      "check for matched"
     ],
     "ru": [
-      "так что давайте настроим r1"
+      "проверить соответствие"
     ]
   },
   {
     "time": [
-      410.87602,
-      426.513926
+      281.675721,
+      283.198442
     ],
     "en": [
-      "IP address 192.168.1.1 at him this is something you should know if not don't worry about it"
+      "and flip your cards"
     ],
     "ru": [
-      "IP-адрес 192.168.1.1 у него это то, что вы должны знать, если не беспокойтесь об этом"
+      "и переверни свои карты"
     ]
   },
   {
     "time": [
-      426.513926,
-      430.565633
+      283.198442,
+      288.056719
     ],
     "en": [
-      "it's 255.255.255.0"
+      "let's start by writing flip card as we saw in our function above"
     ],
     "ru": [
-      "это 255.255.255.0"
+      "давайте начнем с написания флип-карты, как мы видели в нашей функции выше"
     ]
   },
   {
     "time": [
-      430.565633,
-      432.043959
+      288.056719,
+      292.372342
     ],
     "en": [
-      "there we go"
+      "let's set a variable of card ID"
     ],
     "ru": [
-      "вот и мы"
+      "установим переменную идентификатора карты"
     ]
   },
   {
     "time": [
-      432.043959,
-      434.811706
+      292.372342,
+      299.572931
     ],
     "en": [
-      "now let's do the same on r2"
+      "in this we are simply getting the data ID attributes"
     ],
     "ru": [
-      "теперь сделаем то же самое на r2"
+      "в этом мы просто получаем атрибуты идентификатора данных"
     ]
   },
   {
     "time": [
-      434.811706,
-      439.66486
+      299.572931,
+      301.881933
     ],
     "en": [
-      "conf t interface serial zero"
+      "we created in the create mode function above"
     ],
     "ru": [
-      "conf t интерфейс серийный ноль"
+      "мы создали в режиме создания функцию выше"
     ]
   },
   {
     "time": [
-      439.66486,
-      444.158026
+      301.881933,
+      308.697851
     ],
     "en": [
-      "IP address 192.168.0.2"
+      "we will now make an empty array of cards chosen"
     ],
     "ru": [
-      "IP-адрес 192.168.0.2"
+      "теперь мы сделаем пустой массив выбранных карт"
     ]
   },
   {
     "time": [
-      444.158026,
-      449.659766
+      308.697851,
+      315.127307
     ],
     "en": [
-      "that's all for step four"
+      "using push we will push the cards from the card array based on that card ID"
     ],
     "ru": [
-      "это все для четвертого шага"
+      "используя push, мы будем выталкивать карты из массива карт на основе этого идентификатора карты"
     ]
   },
   {
     "time": [
-      449.659766,
-      456.591307
+      315.127307,
+      319.761457
     ],
     "en": [
-      "finally Step five asks us to test connectivity between the routers"
+      "so if the card ideas for this will match the fifth card in our Cod array"
     ],
     "ru": [
-      "наконец, на пятом шаге нас просят проверить возможность подключения между маршрутизаторами."
+      "поэтому, если идеи карт для этого будут соответствовать пятой карте в нашем массиве Cod"
     ]
   },
   {
     "time": [
-      456.591307,
-      458.750807
+      319.761457,
+      321.964042
     ],
     "en": [
-      "since we're already on r2"
+      "once we have located this card"
     ],
     "ru": [
-      "так как мы уже на r2"
+      "как только мы найдем эту карту"
     ]
   },
   {
     "time": [
-      458.750807,
-      460.183246
+      321.964042,
+      323.513112
     ],
     "en": [
-      "let's do it from here"
+      "we will get its name"
     ],
     "ru": [
-      "давай сделаем это отсюда"
+      "мы получим его имя"
     ]
   },
   {
     "time": [
-      460.183246,
-      463.268323
+      323.513112,
+      328.687058
     ],
     "en": [
-      "type end to return to privileged exec mode"
+      "we are going to do the same to push the card ID in a separate for now empty array"
     ],
     "ru": [
-      "введите end, чтобы вернуться в привилегированный режим exec"
+      "мы собираемся сделать то же самое, чтобы поместить идентификатор карты в отдельный пока пустой массив"
     ]
   },
   {
     "time": [
-      463.268323,
-      470.39099
+      328.687058,
+      331.770436
     ],
     "en": [
-      "the IP address of our one serial zero interface is 192.168.0.1 so"
+      "for this one we just want the ID"
     ],
     "ru": [
-      "IP-адрес нашего одного последовательного нулевого интерфейса - 192.168.0.1, поэтому"
+      "для этого нам просто нужен идентификатор"
     ]
   },
   {
     "time": [
-      470.39099,
-      474.510172
+      331.770436,
+      338.131206
     ],
     "en": [
-      "ping 192.168.0.1"
+      "now because flip card is already in a function"
     ],
     "ru": [
-      "пинг 192.168.0.1"
+      "теперь, потому что флип-карта уже работает"
     ]
   },
   {
     "time": [
-      474.510172,
-      478.626241
+      338.131206,
+      340.316354
     ],
     "en": [
-      "as you can see we have connectivity between the routers"
+      "we taking already have a card picked"
     ],
     "ru": [
-      "как вы можете видеть, у нас есть связь между маршрутизаторами"
+      "мы уже выбрали карту"
     ]
   },
   {
     "time": [
-      478.626241,
-      480.434685
+      340.316354,
+      345.723383
     ],
     "en": [
-      "that's all for this lab"
+      "this set attribute will let us add an image to that square"
     ],
     "ru": [
-      "это все для этой лаборатории"
+      "этот набор атрибутов позволит нам добавить изображение к этому квадрату"
     ]
   },
   {
     "time": [
-      480.434685,
-      484.845029
+      345.723383,
+      348.163134
     ],
     "en": [
-      "thank you for watching"
+      "based on the card ID it holds"
     ],
     "ru": [
-      "Спасибо за просмотр"
+      "на основе идентификатора карты, которую он держит"
     ]
   },
   {
     "time": [
-      484.845029,
-      487.940151
+      348.163134,
+      352.615492
     ],
     "en": [
-      "I hope this lab and video have been helpful for you"
+      "we only want to put two cards in our cards chosen array"
     ],
     "ru": [
-      "Надеюсь, эта лабораторная работа и видео были для вас полезны"
+      "мы хотим положить только две карты в выбранный массив карт"
     ]
   },
   {
     "time": [
-      487.940151,
-      492.652226
+      352.615492,
+      358.037873
     ],
     "en": [
-      "please subscribe for future labs like this which will be released weekly"
+      "so with this if statement we are saying that if the cards chosen array is equal to two"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
+      "поэтому с помощью этого оператора if мы говорим, что если выбранный массив карт равен двум"
     ]
   },
   {
     "time": [
-      492.652226,
-      497.972229
+      358.037873,
+      361.775786
     ],
     "en": [
-      "if you have requests for any specific labs let me know in the comment section"
+      "we want to invoke the function for check for match"
     ],
     "ru": [
-      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
+      "мы хотим вызвать функцию для проверки совпадения"
     ]
   },
   {
     "time": [
-      497.972229,
-      503.863801
+      361.775786,
+      368.327351
     ],
     "en": [
-      "if you want to support my channel I accept Bitcoin donations via the address in the description"
+      "this set timeout will give us some buffer times so the whole thing doesn't happen too quickly"
     ],
     "ru": [
-      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах по адресу в описании"
+      "этот установленный тайм-аут даст нам некоторое время буферизации, поэтому все не произойдет слишком быстро"
     ]
   },
   {
     "time": [
-      503.863801,
-      507.406431
+      368.327351,
+      372.620752
     ],
     "en": [
-      "I am also a brave verified publisher"
+      "I want to check for a match after exactly 500 milliseconds"
     ],
     "ru": [
-      "Я также храбрый проверенный издатель"
+      "Я хочу проверить соответствие ровно через 500 миллисекунд"
     ]
   },
   {
     "time": [
-      507.406431,
-      512.793647
+      372.620752,
+      376.150978
     ],
     "en": [
-      "and accept bat or basic attention token donations in the brave browser"
+      "okay now let's write the check for match function"
     ],
     "ru": [
-      "и принимайте пожертвования летучих мышей или токенов основного внимания в смелом браузере"
+      "хорошо, теперь давайте напишем функцию проверки совпадения"
     ]
   },
   {
     "time": [
-      512.793647,
-      512.793647
+      376.150978,
+      381.873042
+    ],
+    "en": [
+      "let's pick up all the images that we created in our first function using query selector all"
+    ],
+    "ru": [
+      "давайте возьмем все изображения, которые мы создали в нашей первой функции, используя селектор запросов all"
+    ]
+  },
+  {
+    "time": [
+      381.873042,
+      383.143654
+    ],
+    "en": [
+      "and call them carts"
+    ],
+    "ru": [
+      "и назовите их тележками"
+    ]
+  },
+  {
+    "time": [
+      383.143654,
+      387.330297
+    ],
+    "en": [
+      "now we have two values in our cards chosen array"
+    ],
+    "ru": [
+      "теперь у нас есть два значения в выбранном массиве карт"
+    ]
+  },
+  {
+    "time": [
+      387.330297,
+      391.260818
+    ],
+    "en": [
+      "as well as our cards chosen ID array at this point"
+    ],
+    "ru": [
+      "а так же наши карты выбрали массив идентификаторов на данный момент"
+    ]
+  },
+  {
+    "time": [
+      391.260818,
+      395.103448
+    ],
+    "en": [
+      "let's use both the values here like this"
+    ],
+    "ru": [
+      "давайте использовать оба значения вот так"
+    ]
+  },
+  {
+    "time": [
+      395.103448,
+      396.972133
+    ],
+    "en": [
+      "and set them as constant"
+    ],
+    "ru": [
+      "и установите их как постоянные"
+    ]
+  },
+  {
+    "time": [
+      396.972133,
+      400.957077
+    ],
+    "en": [
+      "by writing card chose an ID"
+    ],
+    "ru": [
+      "написав карту выбрал ID"
+    ]
+  },
+  {
+    "time": [
+      400.957077,
+      403.195988
+    ],
+    "en": [
+      "and then a zero and square brackets"
+    ],
+    "ru": [
+      "а затем ноль и квадратные скобки"
+    ]
+  },
+  {
+    "time": [
+      403.195988,
+      406.008482
+    ],
+    "en": [
+      "I am saying I want the first value in my array"
+    ],
+    "ru": [
+      "Я говорю, что хочу первое значение в моем массиве"
+    ]
+  },
+  {
+    "time": [
+      406.008482,
+      410.098618
+    ],
+    "en": [
+      "and I want to assign it to the constant option one ID"
+    ],
+    "ru": [
+      "и я хочу назначить его постоянному идентификатору первого варианта"
+    ]
+  },
+  {
+    "time": [
+      410.098618,
+      412.369819
+    ],
+    "en": [
+      "do the same for the second value"
+    ],
+    "ru": [
+      "сделайте то же самое для второго значения"
+    ]
+  },
+  {
+    "time": [
+      412.369819,
+      418.666486
+    ],
+    "en": [
+      "using the same logic but for cards chosen so their names rather than the IDS"
+    ],
+    "ru": [
+      "используя ту же логику, но для карт, выбранных так, чтобы их имена, а не IDS"
+    ]
+  },
+  {
+    "time": [
+      418.666486,
+      421.710749
+    ],
+    "en": [
+      "I'm gonna check that the first item in my array"
+    ],
+    "ru": [
+      "Я проверю, что первый элемент в моем массиве"
+    ]
+  },
+  {
+    "time": [
+      421.710749,
+      425.83381
+    ],
+    "en": [
+      "deeply equals the second item in my cards chosen array"
+    ],
+    "ru": [
+      "полностью совпадает со вторым элементом в выбранном мной массиве карт"
+    ]
+  },
+  {
+    "time": [
+      425.83381,
+      427.606304
+    ],
+    "en": [
+      "if the answer is true"
+    ],
+    "ru": [
+      "если ответ верный"
+    ]
+  },
+  {
+    "time": [
+      427.606304,
+      430.699048
+    ],
+    "en": [
+      "I want an alert I want an alert to pop up"
+    ],
+    "ru": [
+      "Я хочу предупреждение я хочу всплывающее предупреждение"
+    ]
+  },
+  {
+    "time": [
+      430.699048,
+      435.381655
+    ],
+    "en": [
+      "and I want to assign both of them a white PNG for styling"
+    ],
+    "ru": [
+      "и я хочу назначить им обоим белый PNG для стилизации"
+    ]
+  },
+  {
+    "time": [
+      435.381655,
+      442.509795
+    ],
+    "en": [
+      "I also want to make another empty array called cards"
+    ],
+    "ru": [
+      "Я также хочу сделать еще один пустой массив под названием карты"
+    ]
+  },
+  {
+    "time": [
+      442.509795,
+      446.694557
+    ],
+    "en": [
+      "one and push the two chosen cards into the array to be stored"
+    ],
+    "ru": [
+      "один и вставьте две выбранные карты в массив для сохранения"
+    ]
+  },
+  {
+    "time": [
+      446.694557,
+      456.485895
+    ],
+    "en": [
+      "if the cause don't match I want to flip the card back over to be played again"
+    ],
+    "ru": [
+      "если причина не совпадает, я хочу перевернуть карту, чтобы сыграть снова"
+    ]
+  },
+  {
+    "time": [
+      456.485895,
+      460.383809
+    ],
+    "en": [
+      "so visually giving them a blank PNG and send a lot"
+    ],
+    "ru": [
+      "так что визуально давая им пустой PNG и отправляй много"
+    ]
+  },
+  {
+    "time": [
+      460.383809,
+      469.180815
     ],
     "en": [
       ""
@@ -1513,8 +1417,260 @@ let objs = [
   },
   {
     "time": [
-      512.793647,
-      512.793647
+      469.180815,
+      472.331563
+    ],
+    "en": [
+      "either way if either of these two things happen"
+    ],
+    "ru": [
+      "в любом случае, если произойдет одно из этих двух событий"
+    ]
+  },
+  {
+    "time": [
+      472.331563,
+      475.3973
+    ],
+    "en": [
+      "I still want to clear the cards chosen array"
+    ],
+    "ru": [
+      "Я все еще хочу очистить выбранный массив карт"
+    ]
+  },
+  {
+    "time": [
+      475.3973,
+      478.543513
+    ],
+    "en": [
+      "and the cards chose an ID array"
+    ],
+    "ru": [
+      "и карты выбрали массив идентификаторов"
+    ]
+  },
+  {
+    "time": [
+      478.543513,
+      480.837685
+    ],
+    "en": [
+      "ready to start flipping again"
+    ],
+    "ru": [
+      "готов снова начать переворачивать"
+    ]
+  },
+  {
+    "time": [
+      480.837685,
+      486.701154
+    ],
+    "en": [
+      "so now we are collecting cards 1"
+    ],
+    "ru": [
+      "итак сейчас собираем карточки 1"
+    ]
+  },
+  {
+    "time": [
+      486.701154,
+      488.775576
+    ],
+    "en": [
+      "and we could convert this into a score"
+    ],
+    "ru": [
+      "и мы могли бы преобразовать это в партитуру"
+    ]
+  },
+  {
+    "time": [
+      488.775576,
+      490.81968
+    ],
+    "en": [
+      "and display this to the user via the browser"
+    ],
+    "ru": [
+      "и отобразить это пользователю через браузер"
+    ]
+  },
+  {
+    "time": [
+      490.81968,
+      496.252038
+    ],
+    "en": [
+      "by picking out the span element with the ID result from our HTML"
+    ],
+    "ru": [
+      "выбрав элемент span с результатом ID из нашего HTML"
+    ]
+  },
+  {
+    "time": [
+      496.252038,
+      499.169611
+    ],
+    "en": [
+      "we can do this using text content"
+    ],
+    "ru": [
+      "мы можем сделать это с помощью текстового контента"
+    ]
+  },
+  {
+    "time": [
+      499.169611,
+      508.869385
+    ],
+    "en": [
+      "you can pass through exactly how many times we have stored something in our cards 1 array"
+    ],
+    "ru": [
+      "вы можете передать, сколько именно раз мы что-то хранили в нашем массиве карт 1"
+    ]
+  },
+  {
+    "time": [
+      508.869385,
+      511.67367
+    ],
+    "en": [
+      "so one point for every month"
+    ],
+    "ru": [
+      "так одно очко за каждый месяц"
+    ]
+  },
+  {
+    "time": [
+      511.67367,
+      518.801085
+    ],
+    "en": [
+      "if the cards 1 deeply equal the length of our cards array divided by 2"
+    ],
+    "ru": [
+      "если карты 1 глубоко равны длине нашего массива карт, деленной на 2"
+    ]
+  },
+  {
+    "time": [
+      518.801085,
+      522.71011
+    ],
+    "en": [
+      "we know we have collected all the possible cards in our cards array"
+    ],
+    "ru": [
+      "мы знаем, что собрали все возможные карты в нашем массиве карт"
+    ]
+  },
+  {
+    "time": [
+      522.71011,
+      526.136346
+    ],
+    "en": [
+      "let other alert the user of this via the browser"
+    ],
+    "ru": [
+      "пусть другие предупреждают пользователя об этом через браузер"
+    ]
+  },
+  {
+    "time": [
+      526.136346,
+      527.863556
+    ],
+    "en": [
+      "like this"
+    ],
+    "ru": [
+      "нравится"
+    ]
+  },
+  {
+    "time": [
+      527.863556,
+      539.564237
+    ],
+    "en": [
+      "now the final thing that will allow us to refresh the game with new compositions is to randomize all cards array"
+    ],
+    "ru": [
+      "теперь последнее, что позволит нам освежить игру новыми композициями, - это рандомизировать весь массив карт"
+    ]
+  },
+  {
+    "time": [
+      539.564237,
+      543.602513
+    ],
+    "en": [
+      "let's do this using sort and math.random"
+    ],
+    "ru": [
+      "давайте сделаем это с помощью sort и math.random"
+    ]
+  },
+  {
+    "time": [
+      543.602513,
+      552.811583
+    ],
+    "en": [
+      "and there you have it your very own memory game"
+    ],
+    "ru": [
+      "И вот у вас есть своя собственная игра на память"
+    ]
+  },
+  {
+    "time": [
+      552.811583,
+      559.747319
+    ],
+    "en": [
+      "again I'm not going to town on styling simply because otherwise we would be here for way too long"
+    ],
+    "ru": [
+      "Опять же, я не собираюсь ехать в город по стилизации просто потому, что иначе мы бы были здесь слишком долго"
+    ]
+  },
+  {
+    "time": [
+      559.747319,
+      563.855664
+    ],
+    "en": [
+      "but please have a go yourself comment below if you have any questions"
+    ],
+    "ru": [
+      "но, пожалуйста, оставьте комментарий ниже, если у вас есть какие-либо вопросы"
+    ]
+  },
+  {
+    "time": [
+      563.855664,
+      571.400403
+    ],
+    "en": [
+      "and yeah let me know if you have any other ideas for games I can make Kamali's thanks"
+    ],
+    "ru": [
+      "и да, дайте мне знать, если у вас есть другие идеи для игр, я могу поблагодарить Камали"
+    ]
+  },
+  {
+    "time": [
+      571.400403,
+      571.400403
     ],
     "en": [
       ""
@@ -1525,8 +1681,8 @@ let objs = [
   },
   {
     "time": [
-      512.793647,
-      512.793647
+      571.400403,
+      571.400403
     ],
     "en": [
       ""
