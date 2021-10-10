@@ -1,0 +1,248 @@
+165
+00:19:31,549 --> 00:19:56,750
+there you have it. Blackmore. Hi and welcome
+back to the JavaScript games course. In this
+
+166
+00:19:56,750 --> 00:20:02,500
+tutorial, we're going to be coding Connect
+Four As well as focusing on onClick events
+
+167
+00:20:02,500 --> 00:20:08,029
+for this game, if you haven't watched the
+two previous tutorials before this, I strongly
+
+168
+00:20:08,029 --> 00:20:12,330
+recommend you do, we're going to be using
+things like query selectors and event listeners
+
+169
+00:20:12,330 --> 00:20:17,100
+that we did cover in the previous ones. So
+if you're not comfortable with them, please
+
+170
+00:20:17,100 --> 00:20:22,570
+watch those videos before attempting this
+one. As always, we're gonna do simple styling.
+
+171
+00:20:22,570 --> 00:20:26,990
+This is so that you can get the project make
+your own. So I'm literally gonna be focusing
+
+172
+00:20:26,990 --> 00:20:33,149
+maybe like max five minutes on the stylesheet
+Connect for is a simple grid based game in
+
+173
+00:20:33,149 --> 00:20:39,630
+which you as the user have to drop a chip
+down into one of the columns to take your
+
+174
+00:20:39,630 --> 00:20:45,440
+place. After you take in your place, the second
+player will take their turn, please bear in
+
+175
+00:20:45,440 --> 00:20:50,019
+mind for this game, obviously, we can't really
+have gravity. So we're just going to use the
+
+176
+00:20:50,019 --> 00:20:55,809
+bottom grid as the you know, bottom grid.
+Meaning that if you want to put a chip in
+
+177
+00:20:55,809 --> 00:21:00,250
+a chip in a space that doesn't have a chip
+below it, you're not going to be able to write
+
+178
+00:21:00,250 --> 00:21:07,380
+so the point of the game is to get four in
+a row. This is either in a column or row but
+
+179
+00:21:07,380 --> 00:21:19,640
+also diagonally. The first place to do this
+wins. Okay, so let's get going. Okay, so first,
+
+180
+00:21:19,640 --> 00:21:24,690
+let's set up our project with the correct
+files in our folder. We will have the app
+
+181
+00:21:24,690 --> 00:21:34,299
+j s for our JavaScript index HTML for our
+HTML code, and style CSS for our CSS styling.
+
+182
+00:21:34,299 --> 00:21:41,019
+In your HTML file, add a div with a class
+name of grid with enough divs inside to make
+
+183
+00:21:41,019 --> 00:21:47,860
+a seven by six grid. So 42 divs. We also need
+to add seven more depth to the bottom with
+
+184
+00:21:47,860 --> 00:21:58,110
+the class name token. This will be the bottom
+of our grid. Add a span with the ID current
+
+185
+00:21:58,110 --> 00:22:07,179
+players so we can display the current player
+to the user like this. And also one final
+
+186
+00:22:07,179 --> 00:22:19,039
+result so we can see who wins in the event
+of a win. Always make sure to link your cell
+
+187
+00:22:19,039 --> 00:22:28,130
+sheet and JavaScript file in the HTML file.
+Okay, now flip over to your CSS file and add
+
+188
+00:22:28,130 --> 00:22:33,830
+the following styling to make our list of
+divs and the div with a class name grid lockback
+
+189
+00:22:33,830 --> 00:22:43,710
+and actual grid, we use Flexbox to wrap the
+divs into a grid square. We will also be parsing
+
+190
+00:22:43,710 --> 00:22:54,610
+our player one and player two colors here
+like this. Okay, now flip over to your JavaScript
+
+191
+00:22:54,610 --> 00:22:59,930
+file and add a DOM event listener like this.
+All your JavaScript code will be done in the
+
+192
+00:22:59,930 --> 00:23:26,940
+event listener from now on. Okay, so the first
+thing we are going to do is write a function
+
+193
+00:23:26,940 --> 00:23:31,640
+that will listen out for every time we click
+a square and our grid. We will start off by
+
+194
+00:23:31,640 --> 00:23:46,830
+writing a loop to loop over each square, then
+a function to add an onClick to it. Now let's
+
+195
+00:23:46,830 --> 00:23:54,049
+write some if statements. So what we are writing
+here is that if you click on a div and the
+
+196
+00:23:54,049 --> 00:23:59,980
+div below it or seven squares down, has a
+class name of taken you are allowed to click
+
+197
+00:23:59,980 --> 00:24:17,990
+on this stuff and claim it as you will take
+and go. Right so if you can go and if you
+
+198
+00:24:17,990 --> 00:24:23,900
+are playing one at a class name have taken
+to that square. Also add a class name of player
+
+199
+00:24:23,900 --> 00:24:28,700
+one to that square, so we can visually see
+where you have chosen to place your go in
+
+200
+00:24:28,700 --> 00:24:57,970
+the browser. I'll do the same for player two.
+If you aren't in a square that is one out
+
+201
+00:24:57,970 --> 00:25:07,529
+from one with the class. taken an alert saying
+you can't go here will pop up. Now let's open
+
+202
+00:25:07,529 --> 00:25:16,380
+our browser to see if this works. Okay, great.
+Now let's check the board for win or lose
+
+203
+00:25:16,380 --> 00:25:21,730
+with a chalkboard function. First, we need
+to declare what a winning combination actually
+
+204
+00:25:21,730 --> 00:25:28,429
+is on our board. I actually found these somewhere
+online. So I have cheated, and I'm passing
+
+205
+00:25:28,429 --> 00:25:31,889
+this on to you. So you don't have to figure
+this out ourselves. Otherwise, we'll be here
+
+206
+00:25:31,889 --> 00:25:38,380
+all day. Okay, now again, using a loop, we
+are essentially plugging in values to the
+
+207
+00:25:38,380 --> 00:25:45,889
+squares on our grid. This is so we can check
+if these squares are in a winning array and
+
+208
+00:25:45,889 --> 00:26:32,820
+also contain the class name 
+
+209
+00:26:32,820 --> 00:26:36,320
+at playout. One. If the answer is true, we
+want to display player one wins in the inner
+
+210
+00:26:36,320 --> 00:26:57,940
+HTML the span with ID result on our HTML page.
+Okay, do the same for player two like this.
+
+211
+00:26:57,940 --> 00:27:14,140
+Finally, on each click of the squares in our
+grid, we want to add an event listener and
+
+212
+00:27:14,140 --> 00:27:19,580
+pass through the check board function. This
+means the function will run every time you
+
+213
+00:27:19,580 --> 00:27:30,580
+press on a square in the grid. Okay, there
+you have it. Thanks for listening. If you
+
+214
+00:27:30,580 --> 00:27:46,909
+have any questions, please do let me know.
+Welcome back to the JavaScript games course.

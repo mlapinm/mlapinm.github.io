@@ -1,0 +1,3607 @@
+1
+00:00:00,859 --> 00:00:06,720
+Hey, and welcome to the JavaScript games course
+in which you will learn how to build seven
+
+2
+00:00:06,720 --> 00:00:12,089
+awesome grid based games. Coding to build
+tangible projects is definitely by far the
+
+3
+00:00:12,089 --> 00:00:17,470
+easiest way to learn any language. This is
+why I've chosen seven easy grid based games
+
+4
+00:00:17,470 --> 00:00:22,700
+going from easiest to hardest to help us overcome
+prayers at JavaScript, not to mention, you're
+
+5
+00:00:22,700 --> 00:00:26,861
+going to have a pretty cool portfolio full
+of stuff by the end of this tutorial, these
+
+6
+00:00:26,861 --> 00:00:41,820
+games from easiest to hardest, our memory
+game. Whack a mole. Connect for Nokia 3310
+
+7
+00:00:41,820 --> 00:00:53,920
+Snoke. Space Invaders Frogger and Tetris.
+I think my favorite game is definitely Tetris.
+
+8
+00:00:53,920 --> 00:00:59,080
+What I would suggest is that you do each game
+from the easiest to the hardest, don't just
+
+9
+00:00:59,080 --> 00:01:04,449
+jump in the middle and start with I don't
+know Frogger. This is because I'm going to
+
+10
+00:01:04,449 --> 00:01:08,820
+be covering functions at the beginning, for
+example, query selector that we're going to
+
+11
+00:01:08,820 --> 00:01:14,240
+use in literally every single game, but I'm
+not going to go into detail about it in any
+
+12
+00:01:14,240 --> 00:01:20,360
+tutorial after the one that we cover in. So
+if you start us at the end, you're literally
+
+13
+00:01:20,360 --> 00:01:25,350
+going to not know well the majority of the
+inbuilt functions we're going to be talking
+
+14
+00:01:25,350 --> 00:01:30,170
+about, I'm going to be incorporating as many
+inbuilt JavaScript functions as I possibly
+
+15
+00:01:30,170 --> 00:01:35,421
+can. So by the end of this course, you should
+be pretty confident using all of them. If
+
+16
+00:01:35,421 --> 00:01:40,500
+you want a full list of the functions we're
+going to cover, please do look below, I'm
+
+17
+00:01:40,500 --> 00:01:45,420
+going to include that in the description along
+with the games that we're going to cover.
+
+18
+00:01:45,420 --> 00:01:48,890
+As always, I'm going to go with bare minimum
+styling, this is so that you can take the
+
+19
+00:01:48,890 --> 00:02:01,030
+project and make it your own. So let's get
+going. Okay, so the first game we're gonna
+
+20
+00:02:01,030 --> 00:02:06,770
+make is memory game. memory game is a simple
+grid based game in which you as a player how
+
+21
+00:02:06,770 --> 00:02:12,720
+to flip over two cards. If the two cards match,
+that's one point for you. And also the cards
+
+22
+00:02:12,720 --> 00:02:17,160
+get taken off the board, leaving with you
+with the remainder of the cause that you then
+
+23
+00:02:17,160 --> 00:02:22,430
+also have to flip over. The game has finished
+when you flipped over all the guards. No one
+
+24
+00:02:22,430 --> 00:02:26,760
+really knows the origin of the memory game.
+And trust me I've done my fair share of internet
+
+25
+00:02:26,760 --> 00:02:33,140
+stalking to try and find out. What I can tell
+you is that it's been renamed flipped over
+
+26
+00:02:33,140 --> 00:02:39,181
+made variations of Justin English alone. It's
+called concentration game match match, match
+
+27
+00:02:39,181 --> 00:02:45,270
+up memory pallmann ism, or simply pass, we
+are going to be coding a game of memory game
+
+28
+00:02:45,270 --> 00:02:49,890
+in order to get our heads around working with
+empty arrays, as well as pushing and storing
+
+29
+00:02:49,890 --> 00:02:55,050
+things in them. Other things we're going to
+cover are the inbuilt JavaScript functions
+
+30
+00:02:55,050 --> 00:03:03,440
+set attribute, get attribute, create element
+appendChild math random sought and working
+
+31
+00:03:03,440 --> 00:03:14,670
+with loops, as always simple styling for you
+to take and make your own. So let's set up
+
+32
+00:03:14,670 --> 00:03:22,700
+our folder to have our app js file, index
+HTML files style CSS file, and the route along
+
+33
+00:03:22,700 --> 00:03:28,269
+with an images folder for all the images we
+are going to use. Please make sure to have
+
+34
+00:03:28,269 --> 00:03:36,040
+the images as 100 pixel by 100 pixels squares
+to avoid stretching and tampering with them
+
+35
+00:03:36,040 --> 00:03:41,590
+later. After saving your images, simply drag
+and drop them into your folder. I have chosen
+
+36
+00:03:41,590 --> 00:03:49,610
+to go for six fast foods. A blank for when
+my card is on its front and a white PNG file
+
+37
+00:03:49,610 --> 00:03:57,560
+to simulate the board space being empty. Now
+in our HTML boilerplate, we need to put a
+
+38
+00:03:57,560 --> 00:04:12,130
+h3 tag in the body along with a span of ID
+result. livescore will show up in here. Next
+
+39
+00:04:12,130 --> 00:04:16,470
+we create a div with a class name of grid.
+This is where our game grid will be created.
+
+40
+00:04:16,470 --> 00:04:24,520
+Don't forget to link up your styles CSS file
+an app js file with these tags. Now flip over
+
+41
+00:04:24,520 --> 00:04:29,479
+to your CSS file and add some styling to your
+grid. Because our cards are 100 pixels by
+
+42
+00:04:29,479 --> 00:04:35,400
+100 pixels, we will be able to make a three
+by four square grid. Now flip over to our
+
+43
+00:04:35,400 --> 00:04:40,740
+app js file. All our JavaScript code will
+be done in this Dom event listener from now
+
+44
+00:04:40,740 --> 00:04:46,520
+on. Let's start by making an array of cards
+and giving them names that we will use later.
+
+45
+00:04:46,520 --> 00:04:58,330
+I'm going to make two of each as we need to
+have each card in our array to play the game.
+
+46
+00:04:58,330 --> 00:05:02,840
+You will see here that I am simply in a In
+the chord, and for the image, I'm writing
+
+47
+00:05:02,840 --> 00:05:11,860
+the relative relative path to each image.
+Okay, now we're going to create our gameboard.
+
+48
+00:05:11,860 --> 00:05:18,849
+First using query selector, I'm going to pick
+up the element with the class name of grid
+
+49
+00:05:18,849 --> 00:05:30,749
+from HTML, and define it as grid for our JavaScript.
+Now using a for loop, I'm going to loop over
+
+50
+00:05:30,749 --> 00:05:36,149
+my card array. And for each card, I'm going
+to create an image element, I'm going to call
+
+51
+00:05:36,149 --> 00:05:47,449
+this element card. For each card, I'm going
+to set it set as an attribute. linking it
+
+52
+00:05:47,449 --> 00:05:57,469
+to the image and relative path image, blank.
+png. I'm also going to give each one a data
+
+53
+00:05:57,469 --> 00:06:03,969
+ID and loop over each one to give them an
+ID that goes from zero to 11. As we have 12
+
+54
+00:06:03,969 --> 00:06:10,809
+cars in total in our card array, we will then
+add an event listener to listen out to if
+
+55
+00:06:10,809 --> 00:06:17,300
+the cards have been clicked on and invoke
+a flipcard function. Have a comment this out
+
+56
+00:06:17,300 --> 00:06:24,429
+for now, as we have not written this function
+quite yet. Finally, all these cards are technically
+
+57
+00:06:24,429 --> 00:06:29,429
+image elements with different ideas we've
+created, we're going to put into the div with
+
+58
+00:06:29,429 --> 00:06:39,310
+a class name of grid using append child. Now
+let's invoke the function and flip over to
+
+59
+00:06:39,310 --> 00:06:46,169
+our browser. And done let's carry on. So to
+make our game work, we need to do two more
+
+60
+00:06:46,169 --> 00:06:52,680
+things, check for matched and flip your card.
+Let's start by writing flip card as we saw
+
+61
+00:06:52,680 --> 00:07:03,619
+in our function above, let's set a variable
+of card ID. And this we are simply getting
+
+62
+00:07:03,619 --> 00:07:11,800
+the data ID attribute we created in the Create
+board function above. We will now make an
+
+63
+00:07:11,800 --> 00:07:19,919
+empty array of cards chosen. Using push we
+will push the cards from the card array based
+
+64
+00:07:19,919 --> 00:07:26,629
+on that card ID. So the card ideas for this
+will match the fifth card in our card array.
+
+65
+00:07:26,629 --> 00:07:31,639
+Once we have located this card, we will get
+its name, we are going to do the same to push
+
+66
+00:07:31,639 --> 00:07:42,069
+the card ID in a separate for now empty array.
+For this one, we just want the ID. Now because
+
+67
+00:07:42,069 --> 00:07:49,009
+Flipkart is already in a function, we technically
+already have a card picked. This set attribute
+
+68
+00:07:49,009 --> 00:07:56,020
+will let us add an image to that square. Based
+on the card ID it holds. We only want to put
+
+69
+00:07:56,020 --> 00:08:01,569
+two cards in our card chosen array. So with
+this if statement, we are saying that if the
+
+70
+00:08:01,569 --> 00:08:08,459
+cards chosen array is equal to two, we want
+to invoke the function for check for much.
+
+71
+00:08:08,459 --> 00:08:13,629
+This set timeout will give us some buffer
+time so the whole thing doesn't happen too
+
+72
+00:08:13,629 --> 00:08:19,899
+quickly. I want to check for a match up to
+exactly 500 milliseconds. Okay, now let's
+
+73
+00:08:19,899 --> 00:08:25,099
+write the check for MATCH function. Let's
+pick up all the images that we created in
+
+74
+00:08:25,099 --> 00:08:31,250
+our first function using query selector all
+and call them cards. Now we have two values
+
+75
+00:08:31,250 --> 00:08:38,120
+in our cards chosen a row, as well as our
+card chosen ID array at this point. Let's
+
+76
+00:08:38,120 --> 00:08:47,190
+use both values here like this and set them
+as const. By writing cards, chosen ID, and
+
+77
+00:08:47,190 --> 00:08:52,340
+then zero in square brackets, I am saying
+I want the first value in my array, and I
+
+78
+00:08:52,340 --> 00:08:59,560
+want to assign it to the constant option one
+Id do the same for the second value using
+
+79
+00:08:59,560 --> 00:09:05,620
+the same logic but for cards chosen, so the
+names rather than the IDs. I'm going to check
+
+80
+00:09:05,620 --> 00:09:12,329
+that the first item in my array deeply equals
+the second item in my cards chosen array.
+
+81
+00:09:12,329 --> 00:09:18,260
+If the answer is true, I want an alert I want
+an alert to pop up and I want to assign both
+
+82
+00:09:18,260 --> 00:09:29,089
+of them a white PNG for styling. I also want
+to make another empty array called cards one
+
+83
+00:09:29,089 --> 00:09:39,480
+and push the two chosen cards into the array
+to be stored. If the cars don't match, I want
+
+84
+00:09:39,480 --> 00:09:46,700
+to flip the card back over to play it again.
+So visually giving them a blank PNG and sent
+
+85
+00:09:46,700 --> 00:10:00,440
+unlocked. Either way, if either of these two
+things happen, I still want to via the cards
+
+86
+00:10:00,440 --> 00:10:11,320
+chosen array, and the cards chosen ID array
+arrays and start flipping again. So now, we
+
+87
+00:10:11,320 --> 00:10:15,389
+are collecting cards one, it will be cool
+to convert this into a score and display this
+
+88
+00:10:15,389 --> 00:10:21,250
+to the user via the browser. by picking out
+the span element with the ID result from our
+
+89
+00:10:21,250 --> 00:10:31,990
+HTML, we can do this using text content, we
+can pass through exactly how many times we
+
+90
+00:10:31,990 --> 00:10:39,720
+have stored something in our cards one array.
+So one point for every month. If the cards
+
+91
+00:10:39,720 --> 00:10:46,120
+weren't deeply equal the length of our cards
+array divided by two, we know we have collected
+
+92
+00:10:46,120 --> 00:10:53,889
+all the possible cards in our cards array.
+let other alert the user of this via the browser,
+
+93
+00:10:53,889 --> 00:11:02,860
+like this. Now the final thing that will allow
+us to refresh the game with new compositions
+
+94
+00:11:02,860 --> 00:11:16,939
+is to randomize our card array. Let's do this
+using sort and math random. And there you
+
+95
+00:11:16,939 --> 00:11:22,860
+have it, your very own memory game. Again,
+I'm not going to turn on styling simply because
+
+96
+00:11:22,860 --> 00:11:28,660
+otherwise we will be here for way too long.
+But please have a go yourself. Comment below
+
+97
+00:11:28,660 --> 00:11:34,290
+if you have any questions. And yeah, let me
+know if you have any other ideas for games,
+
+98
+00:11:34,290 --> 00:11:48,230
+I can make an audience. Thanks. So hopefully
+by now you have your own working game, our
+
+99
+00:11:48,230 --> 00:11:54,519
+memory game, as well as a strong grasp of
+query selectors and event listeners. We are
+
+100
+00:11:54,519 --> 00:12:00,050
+going to be using them again today to build
+your very own game of whack a mole. We will
+
+101
+00:12:00,050 --> 00:12:06,420
+also be using class list add remove for each
+and arrow functions as this game is going
+
+102
+00:12:06,420 --> 00:12:11,620
+to be timed with you getting 60 seconds to
+bash them all as many times as possible. We're
+
+103
+00:12:11,620 --> 00:12:16,600
+also going to be introducing set interval
+and clear interval for this game. Whack a
+
+104
+00:12:16,600 --> 00:12:21,300
+mole is a simple grid based game in which
+you as the user have to whack the mole as
+
+105
+00:12:21,300 --> 00:12:26,540
+many times as possible in 60 seconds. Whack
+a mole is a game invented in 1975, where you
+
+106
+00:12:26,540 --> 00:12:30,319
+kazoo or your mother, you clearly saw a gap
+in the market for bashing walls with massive
+
+107
+00:12:30,319 --> 00:12:34,279
+mallets. And judging by the popularity of
+this game today, he was right. As always,
+
+108
+00:12:34,279 --> 00:12:44,759
+we're going to do simple styling for you to
+take and make your own. Okay to start a project,
+
+109
+00:12:44,759 --> 00:12:50,550
+let's first make sure that we have the right
+files in our folder. You can see here I already
+
+110
+00:12:50,550 --> 00:12:58,139
+have made an index HTML file, app js file
+and style sheet called style CSS. As you can
+
+111
+00:12:58,139 --> 00:13:02,720
+see, I've gone ahead and set out our HTML
+for the project. The first thing that we need
+
+112
+00:13:02,720 --> 00:13:08,959
+to do is see that our HTML boilerplate, I
+have added a link to our CSS file right here
+
+113
+00:13:08,959 --> 00:13:16,980
+on line six. I have also made sure to add
+a script tag to talk to our JavaScript file.
+
+114
+00:13:16,980 --> 00:13:24,329
+You can see this on line 31. We also have
+some h two headers with IDs, one for score
+
+115
+00:13:24,329 --> 00:13:31,350
+and one for time left. I have also gone ahead
+and added a div with a class name of of grid
+
+116
+00:13:31,350 --> 00:13:40,610
+with nine divs inside each div has unique
+ID that we will use later as well as a general
+
+117
+00:13:40,610 --> 00:13:46,749
+class name of square. We will be using these
+class names and IDs for our JavaScript file
+
+118
+00:13:46,749 --> 00:13:54,699
+and CSS file to communicate with our HTML
+page. So now let's flip over to our CSS file
+
+119
+00:13:54,699 --> 00:13:59,959
+in order to render our dams into a visual
+grid in the browser. Using dot square I am
+
+120
+00:13:59,959 --> 00:14:05,139
+looking for class names called square and
+our HTML file. This is what dot essentially
+
+121
+00:14:05,139 --> 00:14:12,460
+means class name and giving them each 200
+pixel width and height as well as some additional
+
+122
+00:14:12,460 --> 00:14:18,360
+styling. Feel free to go wild with your own
+colors, border styles and fills. If you say
+
+123
+00:14:18,360 --> 00:14:23,459
+the following open up your browser by right
+clicking the index dot HTML file. This is
+
+124
+00:14:23,459 --> 00:14:31,050
+what you should see nine divs we just styled
+stacked on top of each other. Using classroom
+
+125
+00:14:31,050 --> 00:14:37,259
+grid We will now make sure the squares are
+put into a grid shape. We will do this by
+
+126
+00:14:37,259 --> 00:14:44,350
+using display flex and flex flow to make our
+divs stuck left and right and stuck over each
+
+127
+00:14:44,350 --> 00:14:52,050
+other was being entered and constrained into
+a height and width of the overall grid. Let's
+
+128
+00:14:52,050 --> 00:14:59,809
+go back to our browser and refresh. And this
+is now what we see. For the mole classname
+
+129
+00:14:59,809 --> 00:15:05,379
+and going to show you how to add an image
+to a div. Type the following like so. Then
+
+130
+00:15:05,379 --> 00:15:18,670
+drop the JPEG file into your project. You
+will see on the left as mole dot jpg, then
+
+131
+00:15:18,670 --> 00:15:28,050
+simply typed the path name into your background
+image style. Now let's see if that has worked
+
+132
+00:15:28,050 --> 00:15:39,079
+by hard coding it into our HTML. And it has
+perfect right now on to writing our JavaScript
+
+133
+00:15:39,079 --> 00:15:44,040
+and making our game work. We will start by
+selecting all the devs with class name of
+
+134
+00:15:44,040 --> 00:15:49,369
+square from our HTML file and calling them
+square for our JavaScript file and our future
+
+135
+00:15:49,369 --> 00:15:58,329
+using it. We will do the same for divs with
+the class name of model. And also for time
+
+136
+00:15:58,329 --> 00:16:04,619
+left using query selector to find the ID of
+time left, shown here as an ID by using the
+
+137
+00:16:04,619 --> 00:16:12,449
+hash as opposed to a dot for class names.
+Again, we do the same for school and use a
+
+138
+00:16:12,449 --> 00:16:18,850
+let as this will change as we progress in
+the game. To start the game, let's set result
+
+139
+00:16:18,850 --> 00:16:25,379
+zero and get to writing our first function
+of randomly selecting a square on our grid.
+
+140
+00:16:25,379 --> 00:16:31,019
+We will start as with all grid based games
+by removing any class from DOS, this is done
+
+141
+00:16:31,019 --> 00:16:38,259
+so there are no seemingly left behind divs
+with styling on our board using an arrow function,
+
+142
+00:16:38,259 --> 00:16:45,059
+and for each, we remove the class name and
+more from all of our squares in the grid.
+
+143
+00:16:45,059 --> 00:16:51,040
+Now we define a random position on our grid
+by using math random. And then we multiply
+
+144
+00:16:51,040 --> 00:16:56,379
+by the number of squares we have in the grid.
+We use math floor to round down to the nearest
+
+145
+00:16:56,379 --> 00:17:03,329
+integer so that the random position is always
+under or equivalent to nine. Once the random
+
+146
+00:17:03,329 --> 00:17:10,140
+position is defined, we add the class of mall
+to it so that the mall appears in the grid.
+
+147
+00:17:10,140 --> 00:17:17,500
+Next, we pass on the random positions ID to
+our hit position. We need this to use later
+
+148
+00:17:17,500 --> 00:17:23,440
+in our code. So for example, if the ID of
+the position from our HTML is four, this will
+
+149
+00:17:23,440 --> 00:17:30,710
+now be our hip position. We will now use an
+arrow function for each and an event listener
+
+150
+00:17:30,710 --> 00:17:46,760
+to write if statements. The eventlistener
+mouse up refers to when we hit our mouse on
+
+151
+00:17:46,760 --> 00:17:52,450
+an element. On this occasion, it means if
+we hit with our mouse, and the ID of that
+
+152
+00:17:52,450 --> 00:18:00,580
+div equals our hip position, we win. And we
+add one point to our result, we then use text
+
+153
+00:18:00,580 --> 00:18:07,840
+content to visually display that result in
+the browser. Now, we need to write a function
+
+154
+00:18:07,840 --> 00:18:14,070
+that will move the mole every so often, we
+can set this time interval ourselves. We start
+
+155
+00:18:14,070 --> 00:18:19,610
+by setting the timer ID as null, then using
+set interval to make the function random square
+
+156
+00:18:19,610 --> 00:18:26,781
+run every 1000 milliseconds, you can obviously
+change this to whatever time you want. Let's
+
+157
+00:18:26,781 --> 00:18:34,159
+invoke this function like so and see in an
+action. Great now let's remove that function
+
+158
+00:18:34,159 --> 00:18:38,730
+to an invoke it and get to realizing how much
+time we have left in the game for that extra
+
+159
+00:18:38,730 --> 00:18:46,520
+suspense. That scroll to the top and that
+current time be the inner context of the header
+
+160
+00:18:46,520 --> 00:18:53,900
+two with ID time left. Now let's write our
+countdown function. This function will make
+
+161
+00:18:53,900 --> 00:19:00,260
+our current time go down by one incrementally
+show this new time in the browser. And if
+
+162
+00:19:00,260 --> 00:19:17,669
+the current time which is zero, we have a
+game over. we clear the time interval and
+
+163
+00:19:17,669 --> 00:19:25,799
+setting an alert to let the user know that
+the game is over and that final result. Finally,
+
+164
+00:19:25,799 --> 00:19:31,549
+using set interval we pass through the countdown
+function, make it evoke every one second and
+
+165
+00:19:31,549 --> 00:19:56,750
+there you have it. Blackmore. Hi and welcome
+back to the JavaScript games course. In this
+
+166
+00:19:56,750 --> 00:20:02,500
+tutorial, we're going to be coding Connect
+Four As well as focusing on onClick events
+
+167
+00:20:02,500 --> 00:20:08,029
+for this game, if you haven't watched the
+two previous tutorials before this, I strongly
+
+168
+00:20:08,029 --> 00:20:12,330
+recommend you do, we're going to be using
+things like query selectors and event listeners
+
+169
+00:20:12,330 --> 00:20:17,100
+that we did cover in the previous ones. So
+if you're not comfortable with them, please
+
+170
+00:20:17,100 --> 00:20:22,570
+watch those videos before attempting this
+one. As always, we're gonna do simple styling.
+
+171
+00:20:22,570 --> 00:20:26,990
+This is so that you can get the project make
+your own. So I'm literally gonna be focusing
+
+172
+00:20:26,990 --> 00:20:33,149
+maybe like max five minutes on the stylesheet
+Connect for is a simple grid based game in
+
+173
+00:20:33,149 --> 00:20:39,630
+which you as the user have to drop a chip
+down into one of the columns to take your
+
+174
+00:20:39,630 --> 00:20:45,440
+place. After you take in your place, the second
+player will take their turn, please bear in
+
+175
+00:20:45,440 --> 00:20:50,019
+mind for this game, obviously, we can't really
+have gravity. So we're just going to use the
+
+176
+00:20:50,019 --> 00:20:55,809
+bottom grid as the you know, bottom grid.
+Meaning that if you want to put a chip in
+
+177
+00:20:55,809 --> 00:21:00,250
+a chip in a space that doesn't have a chip
+below it, you're not going to be able to write
+
+178
+00:21:00,250 --> 00:21:07,380
+so the point of the game is to get four in
+a row. This is either in a column or row but
+
+179
+00:21:07,380 --> 00:21:19,640
+also diagonally. The first place to do this
+wins. Okay, so let's get going. Okay, so first,
+
+180
+00:21:19,640 --> 00:21:24,690
+let's set up our project with the correct
+files in our folder. We will have the app
+
+181
+00:21:24,690 --> 00:21:34,299
+j s for our JavaScript index HTML for our
+HTML code, and style CSS for our CSS styling.
+
+182
+00:21:34,299 --> 00:21:41,019
+In your HTML file, add a div with a class
+name of grid with enough divs inside to make
+
+183
+00:21:41,019 --> 00:21:47,860
+a seven by six grid. So 42 divs. We also need
+to add seven more depth to the bottom with
+
+184
+00:21:47,860 --> 00:21:58,110
+the class name token. This will be the bottom
+of our grid. Add a span with the ID current
+
+185
+00:21:58,110 --> 00:22:07,179
+players so we can display the current player
+to the user like this. And also one final
+
+186
+00:22:07,179 --> 00:22:19,039
+result so we can see who wins in the event
+of a win. Always make sure to link your cell
+
+187
+00:22:19,039 --> 00:22:28,130
+sheet and JavaScript file in the HTML file.
+Okay, now flip over to your CSS file and add
+
+188
+00:22:28,130 --> 00:22:33,830
+the following styling to make our list of
+divs and the div with a class name grid lockback
+
+189
+00:22:33,830 --> 00:22:43,710
+and actual grid, we use Flexbox to wrap the
+divs into a grid square. We will also be parsing
+
+190
+00:22:43,710 --> 00:22:54,610
+our player one and player two colors here
+like this. Okay, now flip over to your JavaScript
+
+191
+00:22:54,610 --> 00:22:59,930
+file and add a DOM event listener like this.
+All your JavaScript code will be done in the
+
+192
+00:22:59,930 --> 00:23:26,940
+event listener from now on. Okay, so the first
+thing we are going to do is write a function
+
+193
+00:23:26,940 --> 00:23:31,640
+that will listen out for every time we click
+a square and our grid. We will start off by
+
+194
+00:23:31,640 --> 00:23:46,830
+writing a loop to loop over each square, then
+a function to add an onClick to it. Now let's
+
+195
+00:23:46,830 --> 00:23:54,049
+write some if statements. So what we are writing
+here is that if you click on a div and the
+
+196
+00:23:54,049 --> 00:23:59,980
+div below it or seven squares down, has a
+class name of taken you are allowed to click
+
+197
+00:23:59,980 --> 00:24:17,990
+on this stuff and claim it as you will take
+and go. Right so if you can go and if you
+
+198
+00:24:17,990 --> 00:24:23,900
+are playing one at a class name have taken
+to that square. Also add a class name of player
+
+199
+00:24:23,900 --> 00:24:28,700
+one to that square, so we can visually see
+where you have chosen to place your go in
+
+200
+00:24:28,700 --> 00:24:57,970
+the browser. I'll do the same for player two.
+If you aren't in a square that is one out
+
+201
+00:24:57,970 --> 00:25:07,529
+from one with the class. taken an alert saying
+you can't go here will pop up. Now let's open
+
+202
+00:25:07,529 --> 00:25:16,380
+our browser to see if this works. Okay, great.
+Now let's check the board for win or lose
+
+203
+00:25:16,380 --> 00:25:21,730
+with a chalkboard function. First, we need
+to declare what a winning combination actually
+
+204
+00:25:21,730 --> 00:25:28,429
+is on our board. I actually found these somewhere
+online. So I have cheated, and I'm passing
+
+205
+00:25:28,429 --> 00:25:31,889
+this on to you. So you don't have to figure
+this out ourselves. Otherwise, we'll be here
+
+206
+00:25:31,889 --> 00:25:38,380
+all day. Okay, now again, using a loop, we
+are essentially plugging in values to the
+
+207
+00:25:38,380 --> 00:25:45,889
+squares on our grid. This is so we can check
+if these squares are in a winning array and
+
+208
+00:25:45,889 --> 00:26:32,820
+also contain the class name 
+
+209
+00:26:32,820 --> 00:26:36,320
+at playout. One. If the answer is true, we
+want to display player one wins in the inner
+
+210
+00:26:36,320 --> 00:26:57,940
+HTML the span with ID result on our HTML page.
+Okay, do the same for player two like this.
+
+211
+00:26:57,940 --> 00:27:14,140
+Finally, on each click of the squares in our
+grid, we want to add an event listener and
+
+212
+00:27:14,140 --> 00:27:19,580
+pass through the check board function. This
+means the function will run every time you
+
+213
+00:27:19,580 --> 00:27:30,580
+press on a square in the grid. Okay, there
+you have it. Thanks for listening. If you
+
+214
+00:27:30,580 --> 00:27:46,909
+have any questions, please do let me know.
+Welcome back to the JavaScript games course.
+
+215
+00:27:46,909 --> 00:27:52,710
+Today we're going to be teaching you how to
+make your own Nakia 3310 snake, for those
+
+216
+00:27:52,710 --> 00:27:59,250
+of you have never owned a Nokia 3310 snake
+is a simple grid base game in which the snake
+
+217
+00:27:59,250 --> 00:28:06,490
+or array is going to be tasting a little apple
+on the screen. So you're going to be controlling
+
+218
+00:28:06,490 --> 00:28:10,590
+the snake it's been going like this, it's
+going to be on a timer, obviously, it's going
+
+219
+00:28:10,590 --> 00:28:15,970
+to keep going. So we were just going to control
+it. And once it gets the apple, it's going
+
+220
+00:28:15,970 --> 00:28:19,720
+to give you points but it's also going to
+speed up in time. So that's going to be quite
+
+221
+00:28:19,720 --> 00:28:24,840
+cool to build, we're going to be using a lot
+of set intervals and clear intervals as well
+
+222
+00:28:24,840 --> 00:28:30,870
+for this game. We are now on game four out
+of seven of this course. In this game, you're
+
+223
+00:28:30,870 --> 00:28:37,049
+going to be learning how to use key codes,
+which are really cool. I'll talk about them
+
+224
+00:28:37,049 --> 00:28:43,480
+later, as well as pop and shift, push and
+going over functions that we've previously
+
+225
+00:28:43,480 --> 00:28:48,630
+learned in the four previous games. So key
+codes are pretty awesome. A key code is literally
+
+226
+00:28:48,630 --> 00:28:54,159
+the code associated with the ones on your
+keyboard. So for example, if I want to say
+
+227
+00:28:54,159 --> 00:28:59,040
+start the game by pressing, I don't know the
+G on your keyboard, we can do that. That's
+
+228
+00:28:59,040 --> 00:29:04,600
+pretty cool. I'm going to be going into that
+and a lot more detail in the game along with
+
+229
+00:29:04,600 --> 00:29:13,030
+switch cases. So if you're interested in that,
+please stop my video and let's get going to
+
+230
+00:29:13,030 --> 00:29:23,309
+start a project. Let's first make sure we
+have the right files in our folder. You can
+
+231
+00:29:23,309 --> 00:29:29,389
+see here I've already made an index, HTML
+file, app js file and style sheet called style
+
+232
+00:29:29,389 --> 00:29:37,330
+CSS. The first thing we need to do is set
+our HTML template making sure to add the following
+
+233
+00:29:37,330 --> 00:29:45,360
+script tag to talk to our JavaScript file.
+Next, we need to add a link to our CSS file
+
+234
+00:29:45,360 --> 00:29:52,070
+like so. I'm going to go ahead and add a button
+tag with a class name of start to our HTML
+
+235
+00:29:52,070 --> 00:29:58,309
+file. This class name will allow us to pick
+out this specific element later in our JavaScript
+
+236
+00:29:58,309 --> 00:30:07,550
+file. I am now going to add a div with a class
+name score to it for the same purpose. Once
+
+237
+00:30:07,550 --> 00:30:11,690
+we have written our JavaScript code, the score
+of our game will appear between the two span
+
+238
+00:30:11,690 --> 00:30:22,140
+tags here and overwrite the zero I am writing
+now. Now let's make all good. Now to make
+
+239
+00:30:22,140 --> 00:30:27,139
+the grid we need to decide how many squares
+a snake game should have. This is totally
+
+240
+00:30:27,139 --> 00:30:32,580
+up to you, you can make the game as big small
+or awkward as you want. For the sake of ease,
+
+241
+00:30:32,580 --> 00:30:41,190
+I'm going to make my grid 10 by 10 squares,
+meaning I need a total of 100 squats. Now
+
+242
+00:30:41,190 --> 00:30:45,899
+let's make our grid actually look like a grid
+by flipping over to our stylesheet and adding
+
+243
+00:30:45,899 --> 00:30:51,460
+some stuff. Using dot grid, I am looking for
+a class name called grid. This is what the
+
+244
+00:30:51,460 --> 00:30:57,639
+dot essentially means class name, engaging
+make my grid 200 pixels by 200 pixels and
+
+245
+00:30:57,639 --> 00:31:05,299
+make sure that does fit into this grid by
+using display flex and flex wrap. Now we're
+
+246
+00:31:05,299 --> 00:31:11,240
+going to give each of the divs and our grid
+a height and width of 20 pixels. This is simply
+
+247
+00:31:11,240 --> 00:31:17,350
+so that they fit into our 200 by 200 pixel
+grid, making sure there's only 10 of them
+
+248
+00:31:17,350 --> 00:31:24,970
+each way. Now let's add a snake class and
+make it blue. flip back to the HTML file and
+
+249
+00:31:24,970 --> 00:31:30,230
+hard coded in here just so we can see how
+that will look. And voila, any div with a
+
+250
+00:31:30,230 --> 00:31:51,529
+class there was a snake now we'll be blue.
+Let's do the same for Apple. Now let's get
+
+251
+00:31:51,529 --> 00:31:56,590
+to writing some JavaScript and making our
+game work. Add an event listener like so from
+
+252
+00:31:56,590 --> 00:32:03,250
+now on all our code will be in this event
+listener. Now we need to pick up the elements
+
+253
+00:32:03,250 --> 00:32:09,399
+from our html5 by class name as I mentioned
+before, for this we will use document query
+
+254
+00:32:09,399 --> 00:32:15,740
+selectors. What we are telling the file to
+do is select all the devs in a div with class
+
+255
+00:32:15,740 --> 00:32:22,889
+name of grid and call them squares for the
+file. We will also select the span element
+
+256
+00:32:22,889 --> 00:32:28,909
+and call it the score display and select the
+button with a class name of start. Note that
+
+257
+00:32:28,909 --> 00:32:37,039
+dot here it's for class name and call it start
+button. Now we just need to set the width.
+
+258
+00:32:37,039 --> 00:32:46,639
+So our JavaScript file knows as we have not
+told it yet our current index so the first
+
+259
+00:32:46,639 --> 00:32:53,250
+div in our grid, it is important to know that
+by writing zero, I mean it's the first I guess
+
+260
+00:32:53,250 --> 00:33:00,519
+item what element is just that the computer
+starts counting when there's a race involved.
+
+261
+00:33:00,519 --> 00:33:12,110
+So now let's set up our apple index at zero
+for the time being. Now let's draw our snake
+
+262
+00:33:12,110 --> 00:33:19,700
+as you can imagine, we will need to differentiate
+between what is the head and what is the tail.
+
+263
+00:33:19,700 --> 00:33:26,419
+From now on all devs have a value of two will
+be the head and all devs with a value of zero
+
+264
+00:33:26,419 --> 00:33:37,440
+will be the tail. For body parts we will use
+ones on this array will now be our snake direction
+
+265
+00:33:37,440 --> 00:33:43,200
+we're going to stay as one meaning that the
+snake should always go wander down the array.
+
+266
+00:33:43,200 --> 00:33:56,280
+And then we used to stick the score speed
+interval time and it's okay now let's make
+
+267
+00:33:56,280 --> 00:34:02,470
+a snake move across the board using key codes.
+Each key on your keyboard has a key code assigned
+
+268
+00:34:02,470 --> 00:34:08,480
+to it. We will write a function called control
+and pass to e4 event in order to make a snake
+
+269
+00:34:08,480 --> 00:34:16,970
+move up and down, left and right. Depending
+on what key you press on your keyboard. We
+
+270
+00:34:16,970 --> 00:34:21,970
+will first make sure how to remove all class
+lists of snake between each move. This will
+
+271
+00:34:21,970 --> 00:34:28,960
+take a split second but will prevent our snake
+from appearing to be left behind. Now we will
+
+272
+00:34:28,960 --> 00:34:33,990
+write an if statement stating if we press
+the right arrow button on our keyboard, the
+
+273
+00:34:33,990 --> 00:34:42,200
+snake will go right or in other words downward
+space in our grid array. Now let's do the
+
+274
+00:34:42,200 --> 00:34:47,400
+same for the up arrow making sure our snake
+goes into the 10th position back from its
+
+275
+00:34:47,400 --> 00:34:54,200
+current position in the array. As this is
+what we set our width to the result of this
+
+276
+00:34:54,200 --> 00:35:02,260
+snake would appear to be up one whole row
+Now let's finish off by writing the same for
+
+277
+00:35:02,260 --> 00:35:42,930
+the left arrow button and the down arrow one.
+Finally, let's add an event listener every
+
+278
+00:35:42,930 --> 00:35:52,180
+time a key is pressed to execute the function
+control now we have assigned key codes to
+
+279
+00:35:52,180 --> 00:35:57,100
+our snake movements. Let's write a function
+to start the game and make our snake move
+
+280
+00:35:57,100 --> 00:36:03,010
+at a certain speed around our grid. Using
+an arrow function, we are going to make sure
+
+281
+00:36:03,010 --> 00:36:08,660
+that each index of the current snake row is
+taken into consideration. We do this using
+
+282
+00:36:08,660 --> 00:36:15,180
+for each then we remove all class names of
+snake from the devs. The current snake array
+
+283
+00:36:15,180 --> 00:36:21,240
+is currently in at the start of this function,
+there is no class name of snake in any other
+
+284
+00:36:21,240 --> 00:36:27,710
+days in our current snake. We also have the
+apple class like sir from the dev that is
+
+285
+00:36:27,710 --> 00:36:35,010
+the apple index. What I am doing here is essentially
+resetting everything the interval the score
+
+286
+00:36:35,010 --> 00:36:39,350
+everything. Once this reset we are going to
+randomly generate an apple you will write
+
+287
+00:36:39,350 --> 00:36:46,550
+this function now we write what we want to
+happen when we start the game. So direction
+
+288
+00:36:46,550 --> 00:36:51,530
+is equal one for the snake to go right, we
+set an interval the time we define our snake,
+
+289
+00:36:51,530 --> 00:37:03,140
+give it a start position and our class name
+to the devs the snake correct is currently
+
+290
+00:37:03,140 --> 00:37:08,910
+in. Now we need to pass through the interval
+of time and a function we will write called
+
+291
+00:37:08,910 --> 00:37:17,700
+move outcomes. This function will deal with
+any and all outcomes for our decisions to
+
+292
+00:37:17,700 --> 00:37:26,960
+move the snake, it will deal with collisions
+when's school setting. Let's plant what the
+
+293
+00:37:26,960 --> 00:37:49,230
+snake needs to do by writing out like so.
+To deal with a snake hitting a water or itself
+
+294
+00:37:49,230 --> 00:37:54,940
+we are going to write an if statement in our
+move outcomes function. First of all, it's
+
+295
+00:37:54,940 --> 00:37:59,900
+important to see that we are dealing with
+the snake's head at the moment. And we are
+
+296
+00:37:59,900 --> 00:38:06,390
+using width to figure out where on the grid
+the snake head is. We need to do this to figure
+
+297
+00:38:06,390 --> 00:38:14,020
+out when the snake head is in any of the squares
+at the bottom of our grid or indicated by
+
+298
+00:38:14,020 --> 00:39:21,770
+the two parallel lines or on the right side
+of our grid and so on. last statement is an
+
+299
+00:39:21,770 --> 00:39:34,340
+if statement for if the snake goes into itself.
+Oops we need another or here. Right so if
+
+300
+00:39:34,340 --> 00:39:43,190
+any of the above happened, the following was
+returned. we clear the interval. Now we need
+
+301
+00:39:43,190 --> 00:39:53,930
+to define what exactly is the tail. We do
+so right by writing this constant and using
+
+302
+00:39:53,930 --> 00:39:57,460
+now let's remove the classroom of snake from
+the tail and give a direction to just the
+
+303
+00:39:57,460 --> 00:40:23,000
+head of the snake. Let's deal with what happens
+when the head of the current snake gets into
+
+304
+00:40:23,000 --> 00:40:29,550
+a square that contains a class named Apple
+with an if statement. Once again, we start
+
+305
+00:40:29,550 --> 00:40:34,320
+with removing the apple class name for a clean
+slate, then adding a class to the newly added
+
+306
+00:40:34,320 --> 00:40:49,770
+tail of the snake making it appear to grow
+longer. Again, we will add our random Apple
+
+307
+00:40:49,770 --> 00:40:55,150
+function here when we write it to generate
+a new Apple once this one is gone, and add
+
+308
+00:40:55,150 --> 00:41:02,700
+one to the score. Now let's display that new
+score in the HTML of our score display and
+
+309
+00:41:02,700 --> 00:41:09,390
+clear the interval time. Finally, let's multiply
+the new interval time by the speed as our
+
+310
+00:41:09,390 --> 00:41:15,060
+sphere to 0.9. This will decrease the interval
+of time each time this is updated. Lastly,
+
+311
+00:41:15,060 --> 00:41:23,180
+let's reset the interval and close the if
+statement. Let's not forget to re add the
+
+312
+00:41:23,180 --> 00:41:30,450
+class name of snake at the end of our move
+outcomes function. Right then we've been coding
+
+313
+00:41:30,450 --> 00:41:36,580
+for a while. Let's see if this works. So far,
+we have written a start game function. So
+
+314
+00:41:36,580 --> 00:41:42,060
+now let's link it to the start button on our
+HTML page with an event listener. So on click
+
+315
+00:41:42,060 --> 00:41:51,600
+on the start button, we want to invoke the
+start game function. And it works. some reason
+
+316
+00:41:51,600 --> 00:41:58,670
+the left arrow button is not working. And
+here is why we are missing an equals sign.
+
+317
+00:41:58,670 --> 00:42:04,950
+Oops. Okay, now finally, let's address that
+generate random Apple function we have been
+
+318
+00:42:04,950 --> 00:42:14,010
+talking about. So with that, we use math random
+to generate a random number based on the squares
+
+319
+00:42:14,010 --> 00:42:20,630
+length. This means the apple can pop up anywhere
+on our grid, we use math floor to round down
+
+320
+00:42:20,630 --> 00:42:25,090
+the number to the nearest integer to make
+sure the random square is below or including
+
+321
+00:42:25,090 --> 00:42:30,740
+the 100th Square. We will use while to make
+sure that the Apple does not appear in any
+
+322
+00:42:30,740 --> 00:42:45,560
+day that already has a class name snake. And
+that's it. Let's read the let's reorder the
+
+323
+00:42:45,560 --> 00:42:53,950
+content out random Apple function in our code.
+Let's get rid of the hard coded classes in
+
+324
+00:42:53,950 --> 00:43:18,410
+our HTML. And there we go, we now have a fully
+functioning game up snake. Hey, welcome back.
+
+325
+00:43:18,410 --> 00:43:24,550
+We are currently at game five out of seven
+of the JavaScript games course. In this tutorial,
+
+326
+00:43:24,550 --> 00:43:30,700
+we're going to be learning how to build Space
+Invaders and other JavaScript, HTML and CSS
+
+327
+00:43:30,700 --> 00:43:35,670
+Grid based game. By building Space Invaders,
+we're going to be concentrating on the switch
+
+328
+00:43:35,670 --> 00:43:39,100
+ghosts. This is going to be massive throughout
+the whole game. So if you're interested in
+
+329
+00:43:39,100 --> 00:43:44,620
+learning more about the switch goes, please
+watch this video. Space Invaders is really
+
+330
+00:43:44,620 --> 00:43:49,551
+simple, you're going to be a user or shooter
+that moves along from one side of the grid
+
+331
+00:43:49,551 --> 00:43:56,450
+to the other in a 15 by 15 grid square. Your
+goal is to shoot all the little invaders.
+
+332
+00:43:56,450 --> 00:44:01,080
+So all the little ones coming down. They're
+going down like this before they get to you.
+
+333
+00:44:01,080 --> 00:44:04,710
+So technically, it is a time game. There's
+not too much of a countdown, but obviously
+
+334
+00:44:04,710 --> 00:44:09,160
+the invaders moving down is a countdown in
+itself. This means we're going to be using
+
+335
+00:44:09,160 --> 00:44:15,870
+a lot of set interval and clear interval to
+as always minimal styling for you to take
+
+336
+00:44:15,870 --> 00:44:28,650
+and make your own. So yeah, let's get going.
+So as always, let's make sure to link up your
+
+337
+00:44:28,650 --> 00:44:35,660
+style CSS file with a link tag and app js
+file with a script tag in your HTML file.
+
+338
+00:44:35,660 --> 00:44:42,760
+Let's start off by adding an h3 tag where
+we can display our score. Let's add a span
+
+339
+00:44:42,760 --> 00:44:49,390
+with an ID of result here so we can display
+the score as well as play our game. Next,
+
+340
+00:44:49,390 --> 00:44:57,510
+let's add a div with a class name of grid.
+In it, we will put 11 by 11. Actually, let's
+
+341
+00:44:57,510 --> 00:45:06,110
+make it bigger. Let's make a 15 by 15 squares
+for our game. So a total of 225 days that
+
+342
+00:45:06,110 --> 00:45:19,300
+we will start as squares in our style CSS.
+Let's flip over to that. Now. Let's apply
+
+343
+00:45:19,300 --> 00:45:26,090
+some styling to our grid to make it look like
+an actual grid, as well as the grid divs inside
+
+344
+00:45:26,090 --> 00:45:32,300
+of it. We are using a width and a height of
+300 pixels here, meaning that the height and
+
+345
+00:45:32,300 --> 00:45:38,100
+the width of our squares need to be 20 pixels
+in order to make sure 15 squares fit on a
+
+346
+00:45:38,100 --> 00:45:45,610
+line before being wrapped over themselves.
+To make a second row. We might as well assign
+
+347
+00:45:45,610 --> 00:45:52,180
+a color to future classes, we will use our
+shooter invader boom for when they shoot hits
+
+348
+00:45:52,180 --> 00:46:02,320
+an invader and the laser. Let's open the HTML
+file path in our browser to check that looks
+
+349
+00:46:02,320 --> 00:46:11,920
+fine. Okay, great. Now let's go to our app
+js file. We start off by adding a DOM event
+
+350
+00:46:11,920 --> 00:46:16,781
+listener. All our JavaScript code will go
+inside this event listener from now on. Now
+
+351
+00:46:16,781 --> 00:46:22,150
+let's pick out the classes and IDs we have
+defined using query selectors. As there's
+
+352
+00:46:22,150 --> 00:46:29,930
+more than one element that is considered a
+div in inside the element with the class own
+
+353
+00:46:29,930 --> 00:46:36,520
+grid, we need to make sure to use query selector
+all for the squares. Also note how we use
+
+354
+00:46:36,520 --> 00:46:44,350
+the hash when we pick out our ID names, rather
+than the dot for class name. Now let's let
+
+355
+00:46:44,350 --> 00:46:50,180
+our JavaScript know that we want the width
+of the grid to be 15 that we want the shooter
+
+356
+00:46:50,180 --> 00:46:59,180
+to start at index 202 in our squares array,
+and our invaded start at index zero or collectively
+
+357
+00:46:59,180 --> 00:47:05,230
+invaders. I'll explain that later. We are
+going to leave an empty array for the invaders
+
+358
+00:47:05,230 --> 00:47:11,411
+we have shot down. Let's resolve zero for
+now. And let the direction we want to go in
+
+359
+00:47:11,411 --> 00:47:18,751
+be a one. Again, I will explain that later.
+And finally, let's leave the invader ID as
+
+360
+00:47:18,751 --> 00:47:28,600
+null for now. Now let's define our alien invaders
+as how we would want them to appear in our
+
+361
+00:47:28,600 --> 00:47:37,550
+squares array. So by saying these are the
+indexes we want our alien invader to be in,
+
+362
+00:47:37,550 --> 00:47:42,950
+we can easily see this on our grid by adding
+a color class name to them. So let's do this
+
+363
+00:47:42,950 --> 00:47:55,960
+using for each like this. So in the array
+alien invaders, for each item in the array,
+
+364
+00:47:55,960 --> 00:48:02,950
+we will choose to call invader I will pass
+this through our squares and any current index
+
+365
+00:48:02,950 --> 00:48:11,560
+value there might be so in this case zero.
+And then I want to add a class list I'm invada
+
+366
+00:48:11,560 --> 00:48:21,100
+to that square. We set this up purple as purple
+in our style sheet. So let's see if that works.
+
+367
+00:48:21,100 --> 00:48:27,860
+Let's flip over to a browser puppet it works.
+Now the best part of this is that we can control
+
+368
+00:48:27,860 --> 00:48:34,040
+all the positions of all the invaders in our
+alien array. Thanks to the current invader
+
+369
+00:48:34,040 --> 00:48:41,040
+index, try this yourself by changing the value
+from zero to five in your file. Okay, let's
+
+370
+00:48:41,040 --> 00:48:53,480
+do the same for shooter flip over to our browser
+to check and let's carry on. Now we need to
+
+371
+00:48:53,480 --> 00:48:58,620
+make our shooter move across the grid but
+not go up or down. For this we're gonna look
+
+372
+00:48:58,620 --> 00:49:05,720
+at key codes which are the codes given to
+the keys on your keyboard. Let's write a function
+
+373
+00:49:05,720 --> 00:49:11,290
+called move shooter and pass through E for
+event. Let's start off by clearing the board
+
+374
+00:49:11,290 --> 00:49:16,110
+of the shooter by removing the class name
+on the shooters current location index 202
+
+375
+00:49:16,110 --> 00:49:24,180
+as we sit above now using switch cases we
+will make a case for key code that is seven
+
+376
+00:49:24,180 --> 00:49:30,550
+or the left arrow on your keyboard and that
+you nine to the right. So the case that is
+
+377
+00:49:30,550 --> 00:49:37,830
+seven if the shooters current index is divisible
+by the width so 15 and leaves a remain leader
+
+378
+00:49:37,830 --> 00:49:43,800
+remainder is allowed to move left. So for
+example if you're going to square with index
+
+379
+00:49:43,800 --> 00:49:48,830
+30, you will know you're on the very left
+side of the grid as that is divisible by 15
+
+380
+00:49:48,830 --> 00:49:54,370
+and it's not good give you any remainders.
+As you have no remainder you cannot move left
+
+381
+00:49:54,370 --> 00:49:59,850
+anymore. That's what we've written. Now for
+case 39 if the shooters current index is in
+
+382
+00:49:59,850 --> 00:50:05,070
+a Square index where the number is divisible
+by the width. So 15 and the number is less
+
+383
+00:50:05,070 --> 00:50:14,970
+than 14, then you are allowed to move right.
+Then once it is done at a class of shooter
+
+384
+00:50:14,970 --> 00:50:24,280
+to the new location of the shooter on the
+grid Finally, let's add an event listener
+
+385
+00:50:24,280 --> 00:50:28,710
+for the key down action that triggers the
+move shooter function each time you put one
+
+386
+00:50:28,710 --> 00:50:33,940
+of the keys we discussed down on your keyboard.
+Let's check out the browser to see if this
+
+387
+00:50:33,940 --> 00:50:41,400
+is what. Okay, great. Now let's move on. Let's
+move the alien invaders from one side of the
+
+388
+00:50:41,400 --> 00:50:48,270
+grid to the other moving down a row each time,
+we will now write a function called move invaders
+
+389
+00:50:48,270 --> 00:50:54,270
+that we'll put, we'll put on a time loop.
+First, as above, let's define our left edge
+
+390
+00:50:54,270 --> 00:50:59,920
+and our right edge using similar logic, but
+the elite for the alien invaders array. This
+
+391
+00:50:59,920 --> 00:51:04,440
+is trickier as many as apply the logic to
+the first item in the array for checking if
+
+392
+00:51:04,440 --> 00:51:10,021
+we on the left edge and apply the logic the
+last items the last alien and alien invader
+
+393
+00:51:10,021 --> 00:51:14,980
+array to check if we were at the right edge.
+If we don't do this, aliens will just carry
+
+394
+00:51:14,980 --> 00:51:22,250
+on going through and what we see as the right
+edge and look really weird. So make sure to
+
+395
+00:51:22,250 --> 00:51:28,085
+do that. Okay, so if we are on the left edge
+and our direction is minus one, so I use minus
+
+396
+00:51:28,085 --> 00:51:34,720
+one here because of the alien was to go back
+one index in a row, it will essentially appear
+
+397
+00:51:34,720 --> 00:51:41,170
+to be going left. So if both these things
+are true, or we are at the right edge and
+
+398
+00:51:41,170 --> 00:51:46,570
+the direction is currently plus one, we want
+to get the direction and value of 15. So it
+
+399
+00:51:46,570 --> 00:51:53,310
+will move down to whole row on average. If
+the directions already 15 we carry on with
+
+400
+00:51:53,310 --> 00:51:58,081
+the same logic as above. So if you're the
+left or change direction be positive. Else
+
+401
+00:51:58,081 --> 00:52:06,790
+carry on going left we're keeping the direction
+as minus one. Now let's move over the alien
+
+402
+00:52:06,790 --> 00:52:15,160
+invader array to move and the invaders. loop
+over again to add a new direction to all the
+
+403
+00:52:15,160 --> 00:52:22,080
+items in the alien array. And loop over again
+to other class of invader to the new location
+
+404
+00:52:22,080 --> 00:52:30,800
+of all the aliens in the array or items. Now
+let's write some logic that decides that the
+
+405
+00:52:30,800 --> 00:52:40,160
+game is over. If the square and our current
+shooter is in has a class name that contains
+
+406
+00:52:40,160 --> 00:52:47,750
+invader and shooter, the game is over. This
+is because the alien invader has got to the
+
+407
+00:52:47,750 --> 00:52:57,020
+you know tutor and it's gone to the same square.
+we display the game over in our browser using
+
+408
+00:52:57,020 --> 00:53:03,020
+text content and add a boom class just for
+fun. We also clear the time interval for the
+
+409
+00:53:03,020 --> 00:53:12,610
+game like this. We also want to make sure
+that if any of the aliens Mr. shooter, but
+
+410
+00:53:12,610 --> 00:53:18,180
+reached the end of the grid, the game is over
+to we do so by declaring that if any aliens
+
+411
+00:53:18,180 --> 00:53:37,580
+are in the last 15 squares of the grid, the
+game is over. Now we need to invoke this function
+
+412
+00:53:37,580 --> 00:53:45,940
+every 500 milliseconds like this. Let's see
+how that looks now. Okay, great. Finally we
+
+413
+00:53:45,940 --> 00:53:51,460
+need to write a function that allows us to
+shoot at the alien to try when and gain points.
+
+414
+00:53:51,460 --> 00:53:59,350
+We will do so by passing through an event
+or E through our function shoot. let's declare
+
+415
+00:53:59,350 --> 00:54:04,510
+laser ideas no and add a new current index
+for the laser. The current index of the laser
+
+416
+00:54:04,510 --> 00:54:11,430
+will always be the current location of the
+shooter to start with. If we write this is
+
+417
+00:54:11,430 --> 00:54:18,790
+what's going to go to the shooter pool. These
+two declarations needs to be an only the scope
+
+418
+00:54:18,790 --> 00:54:25,090
+of this function for this to work by the way,
+make sure that now we will write a function
+
+419
+00:54:25,090 --> 00:54:32,450
+in here called the move laser. very similarly
+we will move the laser from its current starting
+
+420
+00:54:32,450 --> 00:54:37,910
+position and square. This time removing the
+whole width for it to appear to be moving
+
+421
+00:54:37,910 --> 00:54:50,790
+up awkward. So minus 50. MRI other laser close
+later. If the current square the laser is
+
+422
+00:54:50,790 --> 00:54:57,590
+incandescent and VEDA we do three things.
+Remove the laser, move the invader and add
+
+423
+00:54:57,590 --> 00:55:04,820
+a boom for fun We only want the moon to appear
+for a very short time, so we can use a timeout
+
+424
+00:55:04,820 --> 00:55:14,520
+for this and make sure to remove the boom
+after 250 milliseconds. We then clear the
+
+425
+00:55:14,520 --> 00:55:22,930
+time interval for this light set. Let's make
+an array of aliens we are taken down like
+
+426
+00:55:22,930 --> 00:55:30,400
+this. By writing this we are pushing a new
+item to our alien invaders take down empty
+
+427
+00:55:30,400 --> 00:55:41,600
+array we declared at the beginning of this
+video using push. We then add one to the result
+
+428
+00:55:41,600 --> 00:55:51,030
+and display this in our browser using text
+content. Lastly, if the laser is in the very
+
+429
+00:55:51,030 --> 00:56:00,550
+first 15 squares, we want to clear this interval
+and remove the laser class from the grid.
+
+430
+00:56:00,550 --> 00:56:19,820
+We want all of this to happen when we press
+the spacebar. using logic we learn above we
+
+431
+00:56:19,820 --> 00:56:26,220
+add an event listener on pass through an event
+or E for the keyCode 32 which is a spacebar
+
+432
+00:56:26,220 --> 00:56:32,850
+on your keyboard. We then pass through the
+middle is a function on 100 millisecond interval
+
+433
+00:56:32,850 --> 00:56:51,790
+like this. Now that we are counting how many
+aliens we have taken down, we need to add
+
+434
+00:56:51,790 --> 00:56:59,380
+some code above. Using bang we are writing
+here that if the alien takes alien take down
+
+435
+00:56:59,380 --> 00:57:08,980
+array does not include the space you can add
+an invader class this means that we will not
+
+436
+00:57:08,980 --> 00:57:16,730
+be reacting invaders once they are shot. And
+finally, we need to write some logic to declare
+
+437
+00:57:16,730 --> 00:57:22,450
+a win. This is simple if the length of our
+alien invaders taken down array is equal to
+
+438
+00:57:22,450 --> 00:57:43,900
+the length of our alien invaders we went this
+is because we have shot all the images Okay,
+
+439
+00:57:43,900 --> 00:57:53,010
+now let's flip over to play. Okay, I can see
+it doesn't like my event. Now. Let's change
+
+440
+00:57:53,010 --> 00:57:57,640
+this to switch case because I know that works.
+Even though there's only one option in this
+
+441
+00:57:57,640 --> 00:58:20,810
+which case I mean it's gonna work so I'm just
+going to use it as something else isn't working
+
+442
+00:58:20,810 --> 00:58:35,830
+as the aliens aren't disappearing reappearing.
+Okay, we forgot to add a classless oops. And
+
+443
+00:58:35,830 --> 00:58:43,120
+there we have it your very own space invader
+game. If you have any other questions about
+
+444
+00:58:43,120 --> 00:59:16,570
+the game, please let me know below. And I'll
+try to get back to you. Thank you. Hi, everyone,
+
+445
+00:59:16,570 --> 00:59:23,270
+we are now at game six out of seven of our
+JavaScript games course. We only have one
+
+446
+00:59:23,270 --> 00:59:28,700
+more grid based game to make after this until
+you have at seven fully functioning JavaScript
+
+447
+00:59:28,700 --> 00:59:33,930
+games for your portfolio. In this tutorial,
+we're going to make Frogger in which we're
+
+448
+00:59:33,930 --> 00:59:39,450
+going to be looking at every single function
+that you have learnt before in the previous
+
+449
+00:59:39,450 --> 00:59:43,990
+five games. So yeah, if you haven't watched
+the previous videos definitely do that now
+
+450
+00:59:43,990 --> 00:59:48,270
+before watching this one. But we are going
+to be taking them that extra level so making
+
+451
+00:59:48,270 --> 00:59:55,920
+them do more complicated things. As always
+minimal styling, I've gone max five minutes
+
+452
+00:59:55,920 --> 01:00:02,330
+doing the styling on this. So Frogger is a
+simple Bass game in which you as the user
+
+453
+01:00:02,330 --> 01:00:09,110
+and frog style at the bottom of the grid and
+have two obstacles to pass to get your home,
+
+454
+01:00:09,110 --> 01:00:16,080
+which is at the top of the grid based game.
+The first obstacle is a road in which little
+
+455
+01:00:16,080 --> 01:00:20,550
+cars are going from one side of the other
+new race car to avoid them like this. Once
+
+456
+01:00:20,550 --> 01:00:26,200
+you avoid that, that is the second hurdle
+of the river. This is basically flipped on
+
+457
+01:00:26,200 --> 01:00:31,210
+its head. So instead of avoiding things in
+it, you have to jump on things in it. So you're
+
+458
+01:00:31,210 --> 01:00:36,220
+gonna have to jump on the logs in the river.
+In order to get to the home. What's cool about
+
+459
+01:00:36,220 --> 01:00:41,160
+this is actually one of the frog is on the
+log is gonna have to move with the log until
+
+460
+01:00:41,160 --> 01:00:45,380
+it can jump off. So that's gonna be really
+fun to build. I'm really excited to walk you
+
+461
+01:00:45,380 --> 01:00:57,160
+through this. So yeah, let's get going. So
+first, let's set up a project with the correct
+
+462
+01:00:57,160 --> 01:01:05,270
+files in our folder. We have the app j s for
+our JavaScript, index, HTML for our HTML code,
+
+463
+01:01:05,270 --> 01:01:13,920
+and style CSS for our CSS styling. Let's start
+with the HTML by adding some HTML boilerplate,
+
+464
+01:01:13,920 --> 01:01:19,200
+we will add a title of Fraga for our project
+that will not visually render in the browser,
+
+465
+01:01:19,200 --> 01:01:26,390
+but show up on the tab. We next need to link
+our stylesheet using a link tag like this
+
+466
+01:01:26,390 --> 01:01:32,890
+to the correct file using an href and link
+our JavaScript file again using source and
+
+467
+01:01:32,890 --> 01:01:41,220
+the correct file name of app j s where we
+saw our JavaScript code. Now we have that
+
+468
+01:01:41,220 --> 01:01:48,220
+let's do some basic visualization of the grid
+and add a start and pause button for the game.
+
+469
+01:01:48,220 --> 01:02:16,120
+And an h3 tag let us know how much time we
+have left or whether we have won or lost.
+
+470
+01:02:16,120 --> 01:02:22,830
+Let's add the Start button and h3 tags to
+give them unique IDs instead of class names.
+
+471
+01:02:22,830 --> 01:02:45,970
+I am also going to hard code the time left
+to display was 20. Okay, now let's flip over
+
+472
+01:02:45,970 --> 01:02:53,830
+to our CSS file. Add the following styling
+to make our list of divs and the HTML look
+
+473
+01:02:53,830 --> 01:03:00,700
+like an actual grid. What we are doing here
+is making the divs wrapper rechab using Flexbox.
+
+474
+01:03:00,700 --> 01:03:06,670
+Each div inside a div with a class name grid,
+we are assigning a height and width of 20
+
+475
+01:03:06,670 --> 01:03:17,411
+pixels because under an 80 divided by nine
+is 20. And we want a nine by nine grid. So
+
+476
+01:03:17,411 --> 01:03:22,480
+now right click your index HTML file to open
+it in the browser. And this is what we will
+
+477
+01:03:22,480 --> 01:03:39,430
+see. Now let's assign colors to our ending
+block, starting block and our frog flip back
+
+478
+01:03:39,430 --> 01:03:52,630
+to your HTML file and hard code these in to
+the fifth div down on the fifth from the bottom.
+
+479
+01:03:52,630 --> 01:04:00,290
+This is what it should now look like in your
+browser. Okay, now let's add some functionality
+
+480
+01:04:00,290 --> 01:04:08,010
+to the frog that we have hard coded, not hard
+coded, but we'll add to our HTML using JavaScript.
+
+481
+01:04:08,010 --> 01:04:15,840
+Flip over to your app js file and add an event
+listener like this. Okay, all our code will
+
+482
+01:04:15,840 --> 01:04:24,370
+be done in this event listener. Now let's
+pick our elements from my HTML file using
+
+483
+01:04:24,370 --> 01:04:31,230
+constants and query selectors like this. Know
+how we use query selector all for the divs
+
+484
+01:04:31,230 --> 01:04:35,950
+inside a div with the class name grid. This
+is because we want all the divs in there and
+
+485
+01:04:35,950 --> 01:05:35,309
+also see how we use dot for class names and
+hashes for picking out ideas. So now if I
+
+486
+01:05:35,309 --> 01:05:39,430
+want to show the frog my grid, I can simply
+add the class name of frog to a square and
+
+487
+01:05:39,430 --> 01:05:50,650
+the grid of index 76 using JavaScript like
+this. Now flip over to my browser, hit refresh,
+
+488
+01:05:50,650 --> 01:06:06,010
+and okay now add a timer ID and leave it as
+that for now. This is here for our countdown
+
+489
+01:06:06,010 --> 01:06:13,590
+that we will build later. The first we are
+going to do is make a frog move when you press
+
+490
+01:06:13,590 --> 01:06:19,380
+on your keyboard. For this, you need to know
+the key codes to your keyboard up down left
+
+491
+01:06:19,380 --> 01:06:24,340
+and right buttons, you can easily Google or
+the key codes to your entire keyboard. For
+
+492
+01:06:24,340 --> 01:06:28,760
+now, I'm just going to tell you the key codes
+for the ones we want. We are going to write
+
+493
+01:06:28,760 --> 01:06:38,930
+the function and pass it through an E or an
+event we're going to remove the frog from
+
+494
+01:06:38,930 --> 01:06:44,510
+whatever current squared is in and then using
+event and keycodes decide which way the frog
+
+495
+01:06:44,510 --> 01:06:54,540
+is going to go using switch cases. So in this
+case, if key 37 is pressed, so are left on
+
+496
+01:06:54,540 --> 01:07:00,050
+your keyboard. And if the current index is
+divisible by the width with a remainder, we're
+
+497
+01:07:00,050 --> 01:07:05,940
+the frog left one space. Do you see the key
+38 so the up arrow moving the frog a whole
+
+498
+01:07:05,940 --> 01:07:12,690
+width back visually displaying as if it was
+going up one square, then for keys 39 or our
+
+499
+01:07:12,690 --> 01:08:24,989
+right and key 40 are down. Then we draw the
+frog on each key press we also want to check
+
+500
+01:08:24,989 --> 01:08:33,190
+if the frog has done anything that would result
+in winning or losing let's put in these functions
+
+501
+01:08:33,190 --> 01:08:38,250
+that we will write in a bit. So if you try
+and move your probe now these functions will
+
+502
+01:08:38,250 --> 01:08:43,259
+not work as they did not observe some will
+break your code so just bear that in mind.
+
+503
+01:08:43,259 --> 01:08:50,190
+Okay, now let's get to rendering the first
+obstacle the frog needs to cross so that will
+
+504
+01:08:50,190 --> 01:08:55,769
+be the road with cause that needs to be avoided.
+Then the second obstacle which is a river
+
+505
+01:08:55,769 --> 01:09:00,900
+with some logs, frogs needs to jump on to
+cross you will see here and my finished game
+
+506
+01:09:00,900 --> 01:09:05,960
+that the cars moving left are actually just
+on a loop being rendered and three squares
+
+507
+01:09:05,960 --> 01:09:13,569
+123 and then repeat. Same for the card game
+right. And even the logs are on this loop
+
+508
+01:09:13,569 --> 01:09:19,889
+just a loop of five squares random instead
+goes through HTML and other following class
+
+509
+01:09:19,889 --> 01:09:25,769
+names your days making sure to start from
+the 19th down or for JavaScript sake index
+
+510
+01:09:25,769 --> 01:10:08,289
+18. And the same for the road. So diff 46,
+but index 45 And now flip over is your CSS
+
+511
+01:10:08,289 --> 01:10:30,659
+file and add some colors so we know what is
+road call river, or loc. Now Save and refresh
+
+512
+01:10:30,659 --> 01:10:40,849
+the browser. And there we go, we can see a
+road here river, some logs and some cars.
+
+513
+01:10:40,849 --> 01:10:46,719
+Now back in our JavaScript file, let's write
+a function that will make all the divs with
+
+514
+01:10:46,719 --> 01:10:54,830
+a class name of car left, go left, and the
+divs of class name car right, go right. First,
+
+515
+01:10:54,830 --> 01:11:02,889
+let's pick out these debts from HTML and add
+that to the top of our project. We might as
+
+516
+01:11:02,889 --> 01:11:26,380
+well add the others to 
+
+517
+01:11:26,380 --> 01:11:31,530
+now let's write a function called auto move
+cars in this function where we use arrow functions
+
+518
+01:11:31,530 --> 01:11:36,760
+that will allow us to give a name to individual
+devs from all our devs called cause left and
+
+519
+01:11:36,760 --> 01:11:44,250
+passing through a function, we will do this
+using for each so for each Doom that has a
+
+520
+01:11:44,250 --> 01:11:52,010
+class name, cause left pass through a function
+called move car left, that will make the day
+
+521
+01:11:52,010 --> 01:11:59,679
+go left and the same for cars right. Okay,
+now let's write that move car left function
+
+522
+01:11:59,679 --> 01:12:04,480
+that technically is just going to rerender
+three days every second, we use a switch for
+
+523
+01:12:04,480 --> 01:12:42,710
+this and pass through the car left we got
+from the function automotive costs. Now for
+
+524
+01:12:42,710 --> 01:13:15,630
+the common good, right on the same logic as
+above. Now let's do the exact same for the
+
+525
+01:13:15,630 --> 01:15:24,560
+logs. One loop three, rendering five devs
+every second Okay, now let's write all this
+
+526
+01:15:24,560 --> 01:15:32,739
+function. So if the time runs out, or is equal
+to zero, or two using these two parallel lines
+
+527
+01:15:32,739 --> 01:15:40,230
+means or, or the square the frog is currently
+and contains a C one class name to call, or
+
+528
+01:15:40,230 --> 01:15:45,869
+l five class name. So blue and engaging river,
+or l four class name, which again is a river
+
+529
+01:15:45,869 --> 01:15:54,470
+it loses. Again, we display the reducing message,
+remove the frog, clear the timer from the
+
+530
+01:15:54,470 --> 01:16:19,210
+countdown and stop the frog movie. Now the
+final functionality we need to give our game
+
+531
+01:16:19,210 --> 01:16:23,630
+is make sure that the frog is on the log.
+So when it's on the log and moves with the
+
+532
+01:16:23,630 --> 01:16:31,030
+log, so in the river, or the frog is in the
+squares index of bigger than or equal to 27,
+
+533
+01:16:31,030 --> 01:16:36,980
+and smaller to 35. Move the frog left, it
+doesn't matter that we actually including
+
+534
+01:16:36,980 --> 01:16:49,590
+the river does in here as well as the frog
+automatically loses if it goes in there. So
+
+535
+01:16:49,590 --> 01:17:13,320
+don't worry about that. That's fine. Okay.
+Do the same. The Right. Okay, now we need
+
+536
+01:17:13,320 --> 01:17:19,280
+to invoke all of our functions to happen every
+second, every second year, we need to move
+
+537
+01:17:19,280 --> 01:17:25,409
+a car or log, make sure to move the frog if
+it's on a log, and evoke lose if it's standing
+
+538
+01:17:25,409 --> 01:17:30,050
+in a square that a car is going into it let's
+call this function move piece. Note we need
+
+539
+01:17:30,050 --> 01:17:37,390
+to pass loose in there. And in our moving
+frog function. If we don't have it here, cause
+
+540
+01:17:37,390 --> 01:17:47,440
+we'll be able to pass through our frog willy
+nilly. You also use our logic to make our
+
+541
+01:17:47,440 --> 01:17:54,969
+current time go down by one every second and
+update the time left div in our HTML to show
+
+542
+01:17:54,969 --> 01:18:03,559
+this to our user. Finally, we need to pass
+through the movies function into a countdown
+
+543
+01:18:03,559 --> 01:18:10,449
+that goes down every second. We do this by
+adding an event listener to a start button.
+
+544
+01:18:10,449 --> 01:18:15,630
+We will also be making the button double up
+was a pause button which is quite cool. So
+
+545
+01:18:15,630 --> 01:18:23,119
+on click, we do an if else statement. By using
+set interval like this, we are making sure
+
+546
+01:18:23,119 --> 01:18:30,881
+the move pieces function is invoked every
+second until the timer ID equals zero. We
+
+547
+01:18:30,881 --> 01:18:35,550
+also want to make sure that the frog can only
+move when the game has started. So we add
+
+548
+01:18:35,550 --> 01:18:43,639
+in our event listener to start the move frog
+move frog function we were above here. As
+
+549
+01:18:43,639 --> 01:18:54,480
+you can see, something's not working. Let's
+have a look. That's because I need to use
+
+550
+01:18:54,480 --> 01:19:10,010
+document query selector all because we're
+selecting all the divs let's change that here
+
+551
+01:19:10,010 --> 01:19:16,320
+and here. Okay, we need to change this. And
+there you have it your very own Frogger game.
+
+552
+01:19:16,320 --> 01:19:21,630
+How'd you like my tutorial? Feel free to comment
+if you'd like some more information, or if
+
+553
+01:19:21,630 --> 01:19:26,679
+I haven't explained something very well. Please
+do subscribe for more videos are really into
+
+554
+01:19:26,679 --> 01:19:30,630
+making grid based games at the moment and
+pure JavaScript. So if you can think of any
+
+555
+01:19:30,630 --> 01:19:43,239
+cool ones, let me know and I'll try have a
+go at it. Thank you. Hi, everyone, and welcome
+
+556
+01:19:43,239 --> 01:19:48,860
+to the last game of the JavaScript games course.
+This is actually my favorite game. So we're
+
+557
+01:19:48,860 --> 01:19:53,190
+going to be building Tetris. It's my favorite.
+It's also the hardest, which is why I obviously
+
+558
+01:19:53,190 --> 01:19:57,440
+left it to last and we're going to be using
+every single thing that we learnt before,
+
+559
+01:19:57,440 --> 01:20:03,010
+as well as learning a few new things. So a
+few new things that we're going to be learning
+
+560
+01:20:03,010 --> 01:20:11,900
+are get elements by class name, math floor,
+some splice concat, as well as adding background
+
+561
+01:20:11,900 --> 01:20:19,409
+images, via JavaScript using that style background.
+For anyone joining us now, I would strongly
+
+562
+01:20:19,409 --> 01:20:24,590
+recommend going all the way back to the beginning.
+And starting from the first game as we're
+
+563
+01:20:24,590 --> 01:20:28,350
+going to be using functions that I'm not going
+to go into detail. And again, I feel like
+
+564
+01:20:28,350 --> 01:20:31,660
+I've already explained them and it wouldn't
+be fair on everyone else who's watched from
+
+565
+01:20:31,660 --> 01:20:37,940
+the beginning. So things like query selectors,
+event listeners are functions. We're not going
+
+566
+01:20:37,940 --> 01:20:44,139
+to be going over that again. So yeah, definitely
+go back. Tetris is a 1984 video game invented
+
+567
+01:20:44,139 --> 01:20:50,389
+by Soviet engineer Alexey pay it off. It is
+a grid based game that has seven shapes, or
+
+568
+01:20:50,389 --> 01:20:55,100
+technically tetromino is that you need to
+navigate all the way down the grid in order
+
+569
+01:20:55,100 --> 01:21:01,469
+to fill up at the bottom. When you fill up
+exactly a row, this will disappear, but also
+
+570
+01:21:01,469 --> 01:21:07,010
+give you points. The cool part about this
+is that the shapes are going to rotate. So
+
+571
+01:21:07,010 --> 01:21:12,949
+we're going to learn how to rotate these shapes
+in JavaScript, as well as move them down from
+
+572
+01:21:12,949 --> 01:21:17,239
+left and right and so on. The other cool thing
+that we're going to do is a display the shape
+
+573
+01:21:17,239 --> 01:21:20,829
+that's about to come down. So I don't know
+if you've seen Tetris. But usually there's
+
+574
+01:21:20,829 --> 01:21:25,150
+a grid. But there's also like a little side
+thing that will display the shape that's literally
+
+575
+01:21:25,150 --> 01:21:31,269
+about to come down. After you finish having
+your go. There is a reason why I saved this
+
+576
+01:21:31,269 --> 01:21:42,820
+game to last is pretty hard. So if you're
+feeling brave, let's get going on this project,
+
+577
+01:21:42,820 --> 01:21:48,550
+we are going to use a HTML file, CSS file
+and a JavaScript file. Make sure to set up
+
+578
+01:21:48,550 --> 01:21:52,400
+your files accordingly. Next, we need to add
+the following script tag into the head of
+
+579
+01:21:52,400 --> 01:21:59,000
+your HTML file. I'll point you to your JavaScript
+file and your app folder file through the
+
+580
+01:21:59,000 --> 01:22:03,760
+source attribute. Next, add an event listener
+to your JavaScript file like so. First of
+
+581
+01:22:03,760 --> 01:22:08,710
+all, to make the game we need to decide on
+our grid size. For this video, I have chosen
+
+582
+01:22:08,710 --> 01:22:16,670
+10 squares width by 20 squares height. So
+from now on, consider each square to be one
+
+583
+01:22:16,670 --> 01:22:25,170
+div on your HTML file. This gives a total
+of 200 dibs on our HTML file. If you flip
+
+584
+01:22:25,170 --> 01:22:31,239
+over to your HTML file, please add a total
+of 200 dose, please put these divs in the
+
+585
+01:22:31,239 --> 01:22:37,320
+div itself and give it a class name of grid.
+For the purpose of teaching. I'm going to
+
+586
+01:22:37,320 --> 01:22:41,640
+give each of these divs a color of yellow
+and my CSS file and a height and width. So
+
+587
+01:22:41,640 --> 01:22:48,719
+you can see them as squares like so. As you
+can see, because divs are programmed to be
+
+588
+01:22:48,719 --> 01:22:54,130
+in block. This is what happens in our browser.
+By setting a width to our grid, we can stack
+
+589
+01:22:54,130 --> 01:22:59,280
+the digit from left to right and rows of 10.
+Obviously, the way that we did it 20 pixels
+
+590
+01:22:59,280 --> 01:23:05,190
+and the width of the grid is 200 pixels. We
+will get tenders in a row. So feel free to
+
+591
+01:23:05,190 --> 01:23:18,210
+mess around about as you want. I've numbered
+them for the sake of the tutorial like this.
+
+592
+01:23:18,210 --> 01:23:24,429
+Let's have a look at our grid now. Next, we
+need to use the query selector to add the
+
+593
+01:23:24,429 --> 01:23:31,789
+following into the top of our js file. js
+file now that is what we mean by grid. We're
+
+594
+01:23:31,789 --> 01:23:38,059
+picking up the div with a class name of grid
+from what HTML page. Now that we have our
+
+595
+01:23:38,059 --> 01:23:45,730
+grid set up, let's focus on the total Nino's
+themselves. In Tetris, there are five to caminos
+
+596
+01:23:45,730 --> 01:23:53,559
+Tetris in general as a pretty cool story.
+So check it out, if you can write their official
+
+597
+01:23:53,559 --> 01:24:03,420
+names are the L tetromino, Zed tetrominoes
+to tetromino, o tetromino, and ita terino.
+
+598
+01:24:03,420 --> 01:24:09,780
+As you can see here, I've put them in four
+by four grid, so conduct for their rotational
+
+599
+01:24:09,780 --> 01:24:14,530
+axes. There's so my drawer and we are now
+able to draw the tetromino as as constants
+
+600
+01:24:14,530 --> 01:24:19,949
+with their four rotations. Using the concept
+of width a set above we have set the width
+
+601
+01:24:19,949 --> 01:24:24,679
+is 10. So let's do the starting position is
+zero, and start drawing attention Muniz, out
+
+602
+01:24:24,679 --> 01:24:31,389
+on the grid into the forward stations. So
+let's set this out of the top of your j s
+
+603
+01:24:31,389 --> 01:24:40,249
+file. Now that we have our five touch windows
+with the four rotations, let's put them in
+
+604
+01:24:40,249 --> 01:24:52,699
+an array and call them the tetromino O's.
+As you know, Tetris determiners are selected
+
+605
+01:24:52,699 --> 01:24:58,070
+at random. We will now need to write something
+that will randomly select a tetromino from
+
+606
+01:24:58,070 --> 01:25:05,760
+our tetrominoes Right, my floor was simply
+round down the integer that is returned in
+
+607
+01:25:05,760 --> 01:25:10,239
+this case making sure that it was one below
+the tetrominoes array length. Once we have
+
+608
+01:25:10,239 --> 01:25:16,429
+defined random, we need to define the current
+rotation of the randomly selected tetromino.
+
+609
+01:25:16,429 --> 01:25:23,730
+Let's define this as current. So now we tackling
+have defined what one of the randomly selected
+
+610
+01:25:23,730 --> 01:25:29,300
+determiners current rotation is. Let's move
+on to the next part, moving current down one
+
+611
+01:25:29,300 --> 01:25:35,550
+div space with every second. This let's pick
+the top center of the board as a starting
+
+612
+01:25:35,550 --> 01:25:55,179
+point for the current are to drop down from,
+let's call this current position. We are now
+
+613
+01:25:55,179 --> 01:26:02,130
+going to visually move the tetromino down
+by drawing it and unrolling it in depth. This
+
+614
+01:26:02,130 --> 01:26:07,780
+we are going to assign a class name to the
+details, we want to visually display a tetromino
+
+615
+01:26:07,780 --> 01:26:15,940
+shape. And so let's put this at the top of
+our file. Again, using query selector all
+
+616
+01:26:15,940 --> 01:26:22,150
+this time, now go to your CSS file. Now the
+following from now on all divs with a class
+
+617
+01:26:22,150 --> 01:26:40,320
+name block will be blue. Now let's write the
+drawer function to give all the squares in
+
+618
+01:26:40,320 --> 01:26:46,840
+your current dictionary know the class name
+block. I've also written some code to give
+
+619
+01:26:46,840 --> 01:26:51,170
+you surgery now randomly select a color from
+an array. You can choose as you want, but
+
+620
+01:26:51,170 --> 01:26:55,219
+we're not going to do it. Now because it's
+not really necessary, we have to work again
+
+621
+01:26:55,219 --> 01:27:16,700
+head over to my GitHub if you want to check
+that out. Right, so now that we wrote the
+
+622
+01:27:16,700 --> 01:27:21,420
+draw function, let's write the unroll function.
+So this will essentially get rid of the class
+
+623
+01:27:21,420 --> 01:27:27,019
+name block from the dues and what we define
+this current. As you can see, we are using
+
+624
+01:27:27,019 --> 01:27:32,599
+for each which meaning that each of the squares
+or dues and our current tetromino will have
+
+625
+01:27:32,599 --> 01:27:43,570
+the class name of block removed from them.
+Like so. But now that we've done that, we
+
+626
+01:27:43,570 --> 01:27:49,019
+need to write two more functions. Actually,
+let's get the move down function out the way
+
+627
+01:27:49,019 --> 01:27:56,019
+fast. So just to speed up moving down. We
+will do this like so it simply adds the width
+
+628
+01:27:56,019 --> 01:28:03,300
+to visually display the shape moving down.
+I added the freeze function here. I'm having
+
+629
+01:28:03,300 --> 01:28:07,829
+it so that you know it's necessary to put
+this in at the move down function to stop
+
+630
+01:28:07,829 --> 01:28:12,460
+the current tetromino when it reaches the
+end of the grid, we will write this function
+
+631
+01:28:12,460 --> 01:28:17,510
+towards the end of the tutorial. If you want
+to invoke the move down function earlier than
+
+632
+01:28:17,510 --> 01:28:23,030
+this, please take out the freeze function.
+Okay, now I'm going to write the move write
+
+633
+01:28:23,030 --> 01:28:27,260
+function. A lot is going on here, I'm going
+to write a reminder that we need the current
+
+634
+01:28:27,260 --> 01:28:31,809
+tetromino to move left if it's the right edge
+of the grid, we do not want the tetromino
+
+635
+01:28:31,809 --> 01:28:38,260
+crossing over into the other side of our grid.
+We also don't want it to go through other
+
+636
+01:28:38,260 --> 01:28:45,380
+frozen pieces. Okay, so function move right
+goes like this. First we unroll the space,
+
+637
+01:28:45,380 --> 01:28:50,900
+then we define what is the right edge and
+what happens to the current tetromino when
+
+638
+01:28:50,900 --> 01:28:57,690
+is it Next we write what happens when the
+shape is not in the right edge I freeze to
+
+639
+01:28:57,690 --> 01:29:04,040
+move right but adding one to the current position.
+Now finally, if any of the squares and our
+
+640
+01:29:04,040 --> 01:29:09,300
+current tetromino go into a div containing
+block two, we also want it to move left so
+
+641
+01:29:09,300 --> 01:29:15,469
+appearing as if the shape hasn't moved at
+all. This block two is what I have defined
+
+642
+01:29:15,469 --> 01:29:24,360
+as a frozen shape. Finally we redraw the tetromino
+now go to your CSS file and add a block to
+
+643
+01:29:24,360 --> 01:29:35,929
+all offers and shapes will now appear as purple.
+Let's do the same moving on which means left
+
+644
+01:29:35,929 --> 01:29:41,619
+using the same logic as above. You will notice
+I use modular here. This is saying that if
+
+645
+01:29:41,619 --> 01:29:49,760
+our shape as a square and dib 10 to 2030 and
+so on, it will it is divisible by our set
+
+646
+01:29:49,760 --> 01:29:55,869
+width and is a range of zero. Remember that
+we count the first item on a range zero to
+
+647
+01:29:55,869 --> 01:30:50,349
+10 is actually to 11 in our physically drawn
+divs in our age. Hello. Alright, so once we've
+
+648
+01:30:50,349 --> 01:31:10,949
+written those, our final function is to rotate
+the tetromino. This is actually us just skipping
+
+649
+01:31:10,949 --> 01:31:16,190
+to the next rotation in the current rotation
+array of each tetromino. So again, it's a
+
+650
+01:31:16,190 --> 01:31:29,139
+visual trick making it look like it's rotated.
+We like this simply like so. Okay, so now
+
+651
+01:31:29,139 --> 01:31:33,590
+we've written the functions for our group
+down, move left and move right. and rotate
+
+652
+01:31:33,590 --> 01:31:41,840
+when you assign keys to them and add an event
+listener. Do this at the top of your js file.
+
+653
+01:31:41,840 --> 01:32:23,559
+The E here means event and user pass it through
+the functions like so. Okay, so now we can
+
+654
+01:32:23,559 --> 01:32:28,659
+move the tetromino around on the board or
+rotate it great. We now need to decide what
+
+655
+01:32:28,659 --> 01:32:33,619
+happens if the tetromino class name block
+hits the bottom of the board or frozen tetromino
+
+656
+01:32:33,619 --> 01:32:39,360
+of class name block too fast. Let's decide
+that the bottom of the board is defined as
+
+657
+01:32:39,360 --> 01:32:45,980
+anything with div class name block through
+right so we're going to add another block
+
+658
+01:32:45,980 --> 01:32:52,909
+class name. Go back to your CSS file unlike
+before, add the following. Now we're going
+
+659
+01:32:52,909 --> 01:32:58,900
+to HTML file and hardcore block three as a
+class named into the last tenant dupes. You
+
+660
+01:32:58,900 --> 01:33:06,960
+should see this show up in your balls It looks
+so great. Okay. Now as everyone knows, in
+
+661
+01:33:06,960 --> 01:33:11,199
+Tetris, you can actually see the upcoming
+section winners in your game. Let's quickly
+
+662
+01:33:11,199 --> 01:33:15,580
+create this feature we're writing a function
+called display shape, and adding some code
+
+663
+01:33:15,580 --> 01:33:20,039
+to our HTML so you can see what's happening.
+I'm going to use a lot of logic we've used
+
+664
+01:33:20,039 --> 01:33:29,019
+before to make the small grid a four by four
+grid to display our display squares, even
+
+665
+01:33:29,019 --> 01:33:44,909
+creating a new small tetromino array. Okay,
+now we can see our display grid above our
+
+666
+01:33:44,909 --> 01:33:55,409
+main grid in the browser. Again, we need our
+JavaScript to know what we mean when I said
+
+667
+01:33:55,409 --> 01:34:04,869
+using the constant display squares, so we
+need to add this query selector here. Now
+
+668
+01:34:04,869 --> 01:34:09,810
+using the same logic, let's write how we are
+going to see the previous shapes or terminos
+
+669
+01:34:09,810 --> 01:34:17,110
+in our display squares. When you set a new
+width for the small grid, also a new index,
+
+670
+01:34:17,110 --> 01:34:24,460
+let's call this display index. Now, just like
+before, we are going to write out our five
+
+671
+01:34:24,460 --> 01:34:30,389
+to caminos. However, this time, we do not
+need all four rotations, we are simply displaying
+
+672
+01:34:30,389 --> 01:34:36,630
+the tetromino. So for this we only need one
+iteration of each tetromino in an array. Let's
+
+673
+01:34:36,630 --> 01:35:31,159
+call this constant small caminos Now let's
+write the function display shape. Again, you
+
+674
+01:35:31,159 --> 01:36:32,510
+might be familiar with how I write this by
+now. We will also be selecting the small tech
+
+675
+01:36:32,510 --> 01:36:39,889
+community at random. Let's put next random
+at zero up here. So what is happening is each
+
+676
+01:36:39,889 --> 01:36:46,460
+time the display shaped function is invoked,
+we are removing any classes from devs fast.
+
+677
+01:36:46,460 --> 01:37:37,560
+Selecting the next one knows what action you
+know, then drawing it out onto our grid. Let's
+
+678
+01:37:37,560 --> 01:37:46,789
+see if it works by invoking function here.
+Oops, I made a mistake. This should be crew
+
+679
+01:37:46,789 --> 01:37:59,019
+so it's all Yes, with a page refresh there
+is a small tetromino on our display display
+
+680
+01:37:59,019 --> 01:38:24,999
+grid. Okay, now let's get rid of that and
+carry on. Now let's go back to the freeze
+
+681
+01:38:24,999 --> 01:38:30,059
+function that I mentioned previously, in the
+move down function, a lot will be happening
+
+682
+01:38:30,059 --> 01:38:37,130
+in the freeze function, we need to freeze
+the tetromino if any or some of its squares
+
+683
+01:38:37,130 --> 01:38:42,019
+and with a square containing block three,
+so the bottom of our grid essentially, or
+
+684
+01:38:42,019 --> 01:38:48,440
+if it is the if the squares enter a div with
+the class name block two, so frozen squares.
+
+685
+01:38:48,440 --> 01:39:01,269
+If any of the two above happen, we need to
+turn all the squares in the community block
+
+686
+01:39:01,269 --> 01:39:27,199
+two squares. After this happens, we need to
+make sure the next random tetromino from the
+
+687
+01:39:27,199 --> 01:39:38,909
+disclosures becomes our next current. Finally,
+we need to draw the current tetromino by invoking
+
+688
+01:39:38,909 --> 01:39:44,269
+the draw function, and then display the next
+tetromino. In the display grid. We're invoking
+
+689
+01:39:44,269 --> 01:39:51,229
+the display shape function. Next, when it's
+for all these things together, and create
+
+690
+01:39:51,229 --> 01:39:55,260
+a way for our user to start the game. Therefore
+invoking the draw function and making sure
+
+691
+01:39:55,260 --> 01:40:00,989
+the game continues to move the tetromino is
+every one second as we do This by creating
+
+692
+01:40:00,989 --> 01:40:08,060
+a start button in HTML and adding an event
+listener like so. For now, set timer ID at
+
+693
+01:40:08,060 --> 01:40:18,010
+now, we will need this to restart the game.
+Again, here, we need to display a random tetromino
+
+694
+01:40:18,010 --> 01:40:22,600
+from our small little mini tetromino. All
+right, like so, and invoke the display shape
+
+695
+01:40:22,600 --> 01:40:58,230
+function we were earlier. So now go into your
+HTML and add a button. And now the following
+
+696
+01:40:58,230 --> 01:41:09,469
+to do is, you will now see in your browser
+that upon pressing start the drawer function
+
+697
+01:41:09,469 --> 01:41:17,960
+and the display function will be invoked,
+as well as the time. Oops, you can see the
+
+698
+01:41:17,960 --> 01:41:21,599
+shapes are falling through the bottom floor.
+This is because there's no freeze function,
+
+699
+01:41:21,599 --> 01:41:24,489
+and I'll move down function. I moved it as
+I mentioned earlier in the tutorial, it would
+
+700
+01:41:24,489 --> 01:41:32,659
+have not let me move left right up down on
+the key codes if that was still in there because
+
+701
+01:41:32,659 --> 01:41:40,559
+we didn't like the function. So if you got
+rid of the freeze function from our move down
+
+702
+01:41:40,559 --> 01:41:45,809
+function, as I mentioned, please do put it
+back in now. If this is not here, then the
+
+703
+01:41:45,809 --> 01:41:53,830
+shift will simply fall through the bottom
+of the grid. Okay, now that should work. Now
+
+704
+01:41:53,830 --> 01:42:00,969
+get your HTML page so we can visually show
+a score and how many lines we have cleared
+
+705
+01:42:00,969 --> 01:42:12,059
+in our browser. I'm going to do this with
+h1 tags. So as you can see, here, we're using
+
+706
+01:42:12,059 --> 01:42:17,980
+class names for a js file so we can then use
+the query selector. To make our js file an
+
+707
+01:42:17,980 --> 01:43:15,760
+HTML file. Let's add the following to the
+top of JavaScript file school. We are now
+
+708
+01:43:15,760 --> 01:43:21,159
+set to write the game over function in our
+JavaScript file. I'm going to write it like
+
+709
+01:43:21,159 --> 01:43:28,950
+so. Hopefully by now you're comfortable with
+how I am using block two and block three in
+
+710
+01:43:28,950 --> 01:43:34,840
+my functions. It's just the same here. Make
+sure to clear the time where I do so that
+
+711
+01:43:34,840 --> 01:44:41,400
+note attorneys carry on falling. Again, please
+add this function into office function. And
+
+712
+01:44:41,400 --> 01:44:47,809
+finally we can write our add school function.
+This function will add 10 to our current score
+
+713
+01:44:47,809 --> 01:46:26,170
+each time is executed Let's start by defining
+a constant row like this. Next we need to
+
+714
+01:46:26,170 --> 01:46:30,690
+use every to make sure that if every square
+and I'll define row contains block at your
+
+715
+01:46:30,690 --> 01:47:08,159
+frozen tetromino, we add a score of 10, unlined
+to one of our and now we want to disclose
+
+716
+01:47:08,159 --> 01:47:24,539
+in our browser. We can do this using an HTML
+like sir. Finally, we need to get rid of the
+
+717
+01:47:24,539 --> 01:47:31,780
+row just like in Tetris. Once we have added
+the score on the line, we will do so using
+
+718
+01:47:31,780 --> 01:47:40,599
+remove. Now to move the river down one, we
+will use splice splice will cut out the current
+
+719
+01:47:40,599 --> 01:48:27,550
+index up plus our defined width of 10. So
+in other words, the whole world now that's
+
+720
+01:48:27,550 --> 01:48:37,039
+done we will need to use append child to add
+a new row to the top of our grid visually
+
+721
+01:48:37,039 --> 01:48:52,560
+appearing as if nothing got removed or added
+in the first place. And there you have it.
+
+722
+01:48:52,560 --> 01:49:09,510
+My game of Tetris, as mentioned, it's my first
+video.
