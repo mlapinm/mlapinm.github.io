@@ -1,2 +1,183 @@
-0.0
-aaaaaa
+ 8.031582 
+So hopefully by now you have your own working game,
+
+our memory game, 
+ 13.261372 
+as well as a strong grasp of query selectors and event listeners.
+ 18.319831 
+We are going to be using them again today to build your very own game of whack a mole.
+ 23.318102 
+We will also be using class list add remove for each and arrow functions as this game is going to be timed with you getting 60 seconds to bash them all as many times as possible.
+ 35.292080 
+We're also going to be introducing set interval and clear interval for this game.
+ 40.302685 
+Whack a mole is a simple grid based game in which you as the user have to whack the mole as many times as possible in 60 seconds.
+ 47.786976 
+Whack a mole is a game invented in 1975,
+
+where you kazoo or your mother,
+ 51.788372 
+you clearly saw a gap in the market for bashing walls with massive mallets.
+ 54.915726 
+And judging by the popularity of this game today,
+
+he was right.
+ 58.424726 
+As always, we're going to do simple styling for you to take and make your own.
+ 61.891913 
+Okay to start a project,
+ 68.979705 
+let's first make sure that we have the right files in our folder.
+ 72.528892 
+You can see here I already have made an index HTML file,
+ 77.067059 
+app js file and style sheet called style CSS.
+ 80.861059 
+As you can see, I've gone ahead and set out our HTML for the project.
+ 85.375538 
+The first thing that we need to do is see that our HTML boilerplate,
+ 90.412392 
+I have added a link to our CSS file right here on line six.
+ 94.386913 
+I have also made sure to add a script tag to talk to our JavaScript file.
+ 100.420871 
+You can see this on line 31.
+ 102.892829 
+We also have some h two headers with IDs,
+ 106.899038 
+one for score and one for time left.
+ 110.917850 
+I have also gone ahead and added a div with a class name of of grid with nine divs inside 
+ 118.245788 
+each div has unique ID that we will use later as well as a general class name of square.
+ 126.317413 
+We will be using these class names and IDs for our JavaScript file and CSS file to communicate with our HTML page.
+ 134.122538 
+So now let's flip over to our CSS file in order to render our dams into a visual grid in the browser.
+ 141.823183 
+Using dot square I am looking for class names called square and our HTML file.
+ 147.363246 
+This is what dot essentially means class name and giving them each 200 pixel width and height as well as some additional styling.
+ 157.190267 
+Feel free to go wild with your own colors,
+ 159.713871 
+border styles and fills.
+ 161.198579 
+If you say the following open up your browser by right clicking the index dot HTML file.
+ 166.828142 
+This is what you should see nine divs we just styled stacked on top of each other.
+ 173.824996 
+Using classroom grid We will now make sure the squares are put into a grid shape.
+ 179.324850 
+We will do this by using display flex and flex flow to make our divs stuck left and right 
+ 187.460017 
+and stuck over each other was being entered and constrained into a height and width of the overall grid.
+ 194.030037 
+Let's go back to our browser and refresh.
+ 198.692474 
+And this is now what we see.
+ 201.700308 
+For the mole classname and going to show you how to add an image to a div.
+ 206.696349 
+Type the following like so.
+ 208.713495 
+Then drop the JPEG file into your project.
+ 212.195849 
+You will see on the left as mole dot jpg,
+ 221.216849 
+then simply typed the path name into your background image style.
+ 228.597495 
+Now let's see if that has worked by hard coding it into our HTML.
+ 234.597037 
+And it has perfect right now on to writing our JavaScript and making our game work.
+ 244.912745 
+We will start by selecting all the devs with class name of square from our HTML file 
+ 249.916579 
+and calling them square for our JavaScript file and our future using it.
+ 254.565308 
+We will do the same for divs with the class name of model.
+ 259.067745 
+And also for time left using query selector to find the ID of time left,
+ 266.060433 
+shown here as an ID by using the hash as opposed to a dot for class names.
+ 271.572599 
+Again, we do the same for school and use a let as this will change as we progress in the game.
+ 279.601037 
+To start the game,
+
+let's set result zero and get to writing our first function of randomly selecting a square on our grid.
+ 288.607745 
+We will start as with all grid based games by removing any class from DOS,
+ 294.114204 
+this is done so there are no seemingly left behind divs with styling on our board using an arrow function,
+   302.625058 
+and for each, we remove the class name and more from all of our squares in the grid.
+ 307.332557 
+Now we define a random position on our grid by using math random.
+ 313.325265 
+And then we multiply by the number of squares we have in the grid.
+ 317.834932 
+We use math floor to round down to the nearest integer so that the random position is always under or equivalent to nine.
+ 324.804161 
+Once the random position is defined,
+ 328.317036 
+we add the class of mall to it so that the mall appears in the grid.
+ 333.355307 
+Next, we pass on the random positions ID to our hit position.
+ 340.390661 
+We need this to use later in our code.
+ 342.874432 
+So for example, if the ID of the position from our HTML is four,
+ 346.891765 
+this will now be our hip position.
+ 348.873390 
+We will now use an arrow function for each and an event listener to write if statements.
+ 356.075098 
+The eventlistener mouse up refers to when we hit our mouse on an element.
+ 371.611848 
+On this occasion,
+
+it means if we hit with our mouse,
+
+and the ID of that div equals our hip position,
+
+we win.
+ 379.232806 
+And we add one point to our result,
+ 382.828639 
+we then use text content to visually display that result in the browser.
+ 388.445222 
+Now, we need to write a function that will move the mole every so often,
+ 394.162012 
+we can set this time interval ourselves.
+ 396.363658 
+We start by setting the timer ID as null,
+ 400.308408 
+then using set interval to make the function random square run every 1000 milliseconds,
+ 405.805637 
+you can obviously change this to whatever time you want.
+ 409.327450 
+Let's invoke this function like so and see in an action.
+  415.327575 
+Great now let's remove that function to an invoke it and get to realizing how much time we have left in the game for that extra suspense.
+ 424.031282 
+That scroll to the top and that current time be the inner context of the header two with ID time left.
+ 432.427761 
+Now let's write our countdown function.
+ 436.931365 
+This function will make our current time go down by one incrementally show this new time in the browser.
+ 443.963552 
+And if the current time which is zero,
+ 446.439365 
+we have a game over.
+ 448.422136 
+ 460.551302 
+we clear the time interval and setting an alert to let the user know that the game is over and that final result.
+ 466.536594 
+Finally, using set interval we pass through the countdown function,
+ 472.048136 
+make it evoke every one second and there you have it.
+ 477.504448 
+Blackmore.
+ 480.039011 
+

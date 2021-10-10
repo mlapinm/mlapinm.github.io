@@ -1,0 +1,336 @@
+98
+00:11:34,290 --> 00:11:48,230
+So hopefully
+by now you have your own working game, our
+00:11:48,230 --> 00:11:54,519
+memory game, as well as a strong grasp of
+query selectors and event listeners. We are
+
+100
+00:11:54,519 --> 00:12:00,050
+going to be using them again today to build
+your very own game of whack a mole. We will
+
+101
+00:12:00,050 --> 00:12:06,420
+also be using class list add remove for each
+and arrow functions as this game is going
+
+102
+00:12:06,420 --> 00:12:11,620
+to be timed with you getting 60 seconds to
+bash them all as many times as possible. We're
+
+103
+00:12:11,620 --> 00:12:16,600
+also going to be introducing set interval
+and clear interval for this game. Whack a
+
+104
+00:12:16,600 --> 00:12:21,300
+mole is a simple grid based game in which
+you as the user have to whack the mole as
+
+105
+00:12:21,300 --> 00:12:26,540
+many times as possible in 60 seconds. Whack
+a mole is a game invented in 1975, where you
+
+106
+00:12:26,540 --> 00:12:30,319
+kazoo or your mother, you clearly saw a gap
+in the market for bashing walls with massive
+
+107
+00:12:30,319 --> 00:12:34,279
+mallets. And judging by the popularity of
+this game today, he was right. As always,
+
+108
+00:12:34,279 --> 00:12:44,759
+we're going to do simple styling for you to
+take and make your own. Okay to start a project,
+
+109
+00:12:44,759 --> 00:12:50,550
+let's first make sure that we have the right
+files in our folder. You can see here I already
+
+110
+00:12:50,550 --> 00:12:58,139
+have made an index HTML file, app js file
+and style sheet called style CSS. As you can
+
+111
+00:12:58,139 --> 00:13:02,720
+see, I've gone ahead and set out our HTML
+for the project. The first thing that we need
+
+112
+00:13:02,720 --> 00:13:08,959
+to do is see that our HTML boilerplate, I
+have added a link to our CSS file right here
+
+113
+00:13:08,959 --> 00:13:16,980
+on line six. I have also made sure to add
+a script tag to talk to our JavaScript file.
+
+114
+00:13:16,980 --> 00:13:24,329
+You can see this on line 31. We also have
+some h two headers with IDs, one for score
+
+115
+00:13:24,329 --> 00:13:31,350
+and one for time left. I have also gone ahead
+and added a div with a class name of of grid
+
+116
+00:13:31,350 --> 00:13:40,610
+with nine divs inside each div has unique
+ID that we will use later as well as a general
+
+117
+00:13:40,610 --> 00:13:46,749
+class name of square. We will be using these
+class names and IDs for our JavaScript file
+
+118
+00:13:46,749 --> 00:13:54,699
+and CSS file to communicate with our HTML
+page. So now let's flip over to our CSS file
+
+119
+00:13:54,699 --> 00:13:59,959
+in order to render our dams into a visual
+grid in the browser. Using dot square I am
+
+120
+00:13:59,959 --> 00:14:05,139
+looking for class names called square and
+our HTML file. This is what dot essentially
+
+121
+00:14:05,139 --> 00:14:12,460
+means class name and giving them each 200
+pixel width and height as well as some additional
+
+122
+00:14:12,460 --> 00:14:18,360
+styling. Feel free to go wild with your own
+colors, border styles and fills. If you say
+
+123
+00:14:18,360 --> 00:14:23,459
+the following open up your browser by right
+clicking the index dot HTML file. This is
+
+124
+00:14:23,459 --> 00:14:31,050
+what you should see nine divs we just styled
+stacked on top of each other. Using classroom
+
+125
+00:14:31,050 --> 00:14:37,259
+grid We will now make sure the squares are
+put into a grid shape. We will do this by
+
+126
+00:14:37,259 --> 00:14:44,350
+using display flex and flex flow to make our
+divs stuck left and right and stuck over each
+
+127
+00:14:44,350 --> 00:14:52,050
+other was being entered and constrained into
+a height and width of the overall grid. Let's
+
+128
+00:14:52,050 --> 00:14:59,809
+go back to our browser and refresh. And this
+is now what we see. For the mole classname
+
+129
+00:14:59,809 --> 00:15:05,379
+and going to show you how to add an image
+to a div. Type the following like so. Then
+
+130
+00:15:05,379 --> 00:15:18,670
+drop the JPEG file into your project. You
+will see on the left as mole dot jpg, then
+
+131
+00:15:18,670 --> 00:15:28,050
+simply typed the path name into your background
+image style. Now let's see if that has worked
+
+132
+00:15:28,050 --> 00:15:39,079
+by hard coding it into our HTML. And it has
+perfect right now on to writing our JavaScript
+
+133
+00:15:39,079 --> 00:15:44,040
+and making our game work. We will start by
+selecting all the devs with class name of
+
+134
+00:15:44,040 --> 00:15:49,369
+square from our HTML file and calling them
+square for our JavaScript file and our future
+
+135
+00:15:49,369 --> 00:15:58,329
+using it. We will do the same for divs with
+the class name of model. And also for time
+
+136
+00:15:58,329 --> 00:16:04,619
+left using query selector to find the ID of
+time left, shown here as an ID by using the
+
+137
+00:16:04,619 --> 00:16:12,449
+hash as opposed to a dot for class names.
+Again, we do the same for school and use a
+
+138
+00:16:12,449 --> 00:16:18,850
+let as this will change as we progress in
+the game. To start the game, let's set result
+
+139
+00:16:18,850 --> 00:16:25,379
+zero and get to writing our first function
+of randomly selecting a square on our grid.
+
+140
+00:16:25,379 --> 00:16:31,019
+We will start as with all grid based games
+by removing any class from DOS, this is done
+
+141
+00:16:31,019 --> 00:16:38,259
+so there are no seemingly left behind divs
+with styling on our board using an arrow function,
+
+142
+00:16:38,259 --> 00:16:45,059
+and for each, we remove the class name and
+more from all of our squares in the grid.
+
+143
+00:16:45,059 --> 00:16:51,040
+Now we define a random position on our grid
+by using math random. And then we multiply
+
+144
+00:16:51,040 --> 00:16:56,379
+by the number of squares we have in the grid.
+We use math floor to round down to the nearest
+
+145
+00:16:56,379 --> 00:17:03,329
+integer so that the random position is always
+under or equivalent to nine. Once the random
+
+146
+00:17:03,329 --> 00:17:10,140
+position is defined, we add the class of mall
+to it so that the mall appears in the grid.
+
+147
+00:17:10,140 --> 00:17:17,500
+Next, we pass on the random positions ID to
+our hit position. We need this to use later
+
+148
+00:17:17,500 --> 00:17:23,440
+in our code. So for example, if the ID of
+the position from our HTML is four, this will
+
+149
+00:17:23,440 --> 00:17:30,710
+now be our hip position. We will now use an
+arrow function for each and an event listener
+
+150
+00:17:30,710 --> 00:17:46,760
+to write if statements. The eventlistener
+mouse up refers to when we hit our mouse on
+
+151
+00:17:46,760 --> 00:17:52,450
+an element. On this occasion, it means if
+we hit with our mouse, and the ID of that
+
+152
+00:17:52,450 --> 00:18:00,580
+div equals our hip position, we win. And we
+add one point to our result, we then use text
+
+153
+00:18:00,580 --> 00:18:07,840
+content to visually display that result in
+the browser. Now, we need to write a function
+
+154
+00:18:07,840 --> 00:18:14,070
+that will move the mole every so often, we
+can set this time interval ourselves. We start
+
+155
+00:18:14,070 --> 00:18:19,610
+by setting the timer ID as null, then using
+set interval to make the function random square
+
+156
+00:18:19,610 --> 00:18:26,781
+run every 1000 milliseconds, you can obviously
+change this to whatever time you want. Let's
+
+157
+00:18:26,781 --> 00:18:34,159
+invoke this function like so and see in an
+action. Great now let's remove that function
+
+158
+00:18:34,159 --> 00:18:38,730
+to an invoke it and get to realizing how much
+time we have left in the game for that extra
+
+159
+00:18:38,730 --> 00:18:46,520
+suspense. That scroll to the top and that
+current time be the inner context of the header
+
+160
+00:18:46,520 --> 00:18:53,900
+two with ID time left. Now let's write our
+countdown function. This function will make
+
+161
+00:18:53,900 --> 00:19:00,260
+our current time go down by one incrementally
+show this new time in the browser. And if
+
+162
+00:19:00,260 --> 00:19:17,669
+the current time which is zero, we have a
+game over. we clear the time interval and
+
+163
+00:19:17,669 --> 00:19:25,799
+setting an alert to let the user know that
+the game is over and that final result. Finally,
+
+164
+00:19:25,799 --> 00:19:31,549
+using set interval we pass through the countdown
+function, make it evoke every one second and
+
+165
+00:19:31,549 --> 00:19:56,750
+there you have it. Blackmore.

@@ -1,2 +1,160 @@
-0.0
-aaaaaa
+ 21.254581 
+Hi and welcome back to the JavaScript games course.
+ 25.270748 
+In this tutorial,
+
+we're going to be coding Connect Four As well as focusing on onClick events for this game,
+ 33.303540 
+if you haven't watched the two previous tutorials before this,
+ 37.780102 
+I strongly recommend you do,
+ 39.302602 
+we're going to be using things like query selectors and event listeners that we did cover in the previous ones.
+  45.309998 
+So if you're not comfortable with them,
+
+please watch those videos before attempting this one.
+ 49.814581 
+As always, we're gonna do simple styling.
+ 51.882183  
+This is so that you can get the project make your own.
+ 55.840433 
+So I'm literally gonna be focusing maybe like max five minutes on the stylesheet.
+ 59.938870 
+Connect for is a simple grid based game in which you as the user have to drop a chip down into one of the columns to take your place.
+ 70.395016 
+After you take in your place,
+ 72.216828 
+the second player will take their turn,
+ 74.746183 
+please bear in mind for this game,
+ 76.566391 
+obviously, we can't really have gravity.
+ 79.010766 
+So we're just going to use the bottom grid as the you know,
+
+bottom grid.
+ 83.009683 
+Meaning that if you want to put a chip in a chip in a space that doesn't have a chip below it,
+  88.389973  
+you're not going to be able to write so the point of the game is to get four in a row.
+ 94.979703 
+This is either in a column or row but also diagonally.
+ 98.484244 
+The first place to do this wins.
+ 99.961453 
+Okay, so let's get going.
+ 102.488828 
+Okay, so first,
+
+let's set up our project with the correct files in our folder.
+ 112.583057 
+We will have the app j s for our JavaScript index HTML for our HTML code,
+ 120.492348 
+and style CSS for our CSS styling.
+ 123.107432 
+In your HTML file,
+ 126.381578 
+add a div with a class name of grid with enough divs inside to make a seven by six grid.
+ 132.035911 
+So 42 divs.
+ 134.269473 
+We also need to add seven more depth to the bottom with the class name token.
+ 139.274828 
+This will be the bottom of our grid.
+ 142.755203 
+Add a span with the ID current players so we can display the current player to the user like this.
+ 154.263890
+And also one final result so we can see who wins in the event of a win.
+ 162.079993 
+Always make sure to link your cell sheet and JavaScript file in the HTML file.
+ 172.084889 
+Okay, now flip over to your CSS file and add the following styling to make our list of divs and the div with a class name grid lockback and actual grid,
+ 185.090243 
+we use Flexbox to wrap the divs into a grid square.
+ 189.597431 
+We will also be parsing our player one and player two colors here like this.
+  198.598785 
+Okay, now flip over to your JavaScript file and add a DOM event listener like this.
+ 207.336743 
+All your JavaScript code will be done in the event listener from now on.
+ 211.337077 
+   232.808055 
+Okay, so the first thing we are going to do is write a function that will listen out for every time we click a square and our grid.
+ 240.523117 
+We will start off by writing a loop to loop over each square,
+ 244.533346 
+then a function to add an onClick to it.
+ 247.503929
+  256.751074 
+Now let's write some if statements.
+ 258.318574 
+So what we are writing here is that if you click on a div and the div below it or seven squares down,
+ 266.327470 
+has a class name of taken you are allowed to click on this stuff and claim it as you will take and go.
+ 272.868554
+  
+  281.808470 
+Right so if you can go and if you are playing one at a class name have taken to that square.
+ 291.687657 
+Also add a class name of player one to that square,
+ 294.708177 
+so we can visually see where you have chosen to place your go in the browser.
+ 299.707427 
+ 310.384844 
+I'll do the same for player two.
+ 313.895719 
+ 324.353531 
+If you aren't in a square that is one out from one with the class.
+  
+taken an alert saying you can't go here will pop up.
+ 333.698780 
+Now let's open our browser to see if this works.
+ 339.021405 
+Okay, great.
+ 343.029551 
+Now let's check the board for win or lose with a chalkboard function.
+ 348.027405 
+First, we need to declare what a winning combination actually is on our board.
+ 353.038634 
+I actually found these somewhere online.
+ 356.519593 
+So I have cheated,
+
+and I'm passing this on to you.
+   359.477530 
+So you don't have to figure this out ourselves.
+
+Otherwise, we'll be here all day.
+ 363.120530 
+Okay, now again,
+ 
+using a loop, we are essentially plugging in values to the squares on our grid.
+ 369.125738 
+This is so we can check if these squares are in a winning array and also contain the class name at playout.
+  
+One.
+ 379.784342
+ 422.769258 
+
+If the answer is true,
+ 424.055591 
+we want to display player one wins in the inner HTML the span with ID result on our HTML page.
+ 430.925570 
+Okay, do the same for player two like this.
+ 436.425924 
+ 458.143589 
+Finally, on each click of the squares in our grid,
+ 462.151860 
+we want to add an event listener and pass through the check board function.
+ 466.121797 
+This means the function will run every time you press on a square in the grid.
+ 473.166714 
+Okay, there you have it.
+ 478.129693 
+Thanks for listening.
+ 479.660839 
+If you have any questions,
+ 481.642922 
+please do let me know.
+ 484.664151 
