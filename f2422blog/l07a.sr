@@ -1,0 +1,554 @@
+214
+00:27:30,580 --> 00:27:46,909
+have any questions, please do let me know.
+Welcome back to the JavaScript games course.
+
+215
+00:27:46,909 --> 00:27:52,710
+Today we're going to be teaching you how to
+make your own Nakia 3310 snake, for those
+
+216
+00:27:52,710 --> 00:27:59,250
+of you have never owned a Nokia 3310 snake
+is a simple grid base game in which the snake
+
+217
+00:27:59,250 --> 00:28:06,490
+or array is going to be tasting a little apple
+on the screen. So you're going to be controlling
+
+218
+00:28:06,490 --> 00:28:10,590
+the snake it's been going like this, it's
+going to be on a timer, obviously, it's going
+
+219
+00:28:10,590 --> 00:28:15,970
+to keep going. So we were just going to control
+it. And once it gets the apple, it's going
+
+220
+00:28:15,970 --> 00:28:19,720
+to give you points but it's also going to
+speed up in time. So that's going to be quite
+
+221
+00:28:19,720 --> 00:28:24,840
+cool to build, we're going to be using a lot
+of set intervals and clear intervals as well
+
+222
+00:28:24,840 --> 00:28:30,870
+for this game. We are now on game four out
+of seven of this course. In this game, you're
+
+223
+00:28:30,870 --> 00:28:37,049
+going to be learning how to use key codes,
+which are really cool. I'll talk about them
+
+224
+00:28:37,049 --> 00:28:43,480
+later, as well as pop and shift, push and
+going over functions that we've previously
+
+225
+00:28:43,480 --> 00:28:48,630
+learned in the four previous games. So key
+codes are pretty awesome. A key code is literally
+
+226
+00:28:48,630 --> 00:28:54,159
+the code associated with the ones on your
+keyboard. So for example, if I want to say
+
+227
+00:28:54,159 --> 00:28:59,040
+start the game by pressing, I don't know the
+G on your keyboard, we can do that. That's
+
+228
+00:28:59,040 --> 00:29:04,600
+pretty cool. I'm going to be going into that
+and a lot more detail in the game along with
+
+229
+00:29:04,600 --> 00:29:13,030
+switch cases. So if you're interested in that,
+please stop my video and let's get going to
+
+230
+00:29:13,030 --> 00:29:23,309
+start a project. Let's first make sure we
+have the right files in our folder. You can
+
+231
+00:29:23,309 --> 00:29:29,389
+see here I've already made an index, HTML
+file, app js file and style sheet called style
+
+232
+00:29:29,389 --> 00:29:37,330
+CSS. The first thing we need to do is set
+our HTML template making sure to add the following
+
+233
+00:29:37,330 --> 00:29:45,360
+script tag to talk to our JavaScript file.
+Next, we need to add a link to our CSS file
+
+234
+00:29:45,360 --> 00:29:52,070
+like so. I'm going to go ahead and add a button
+tag with a class name of start to our HTML
+
+235
+00:29:52,070 --> 00:29:58,309
+file. This class name will allow us to pick
+out this specific element later in our JavaScript
+
+236
+00:29:58,309 --> 00:30:07,550
+file. I am now going to add a div with a class
+name score to it for the same purpose. Once
+
+237
+00:30:07,550 --> 00:30:11,690
+we have written our JavaScript code, the score
+of our game will appear between the two span
+
+238
+00:30:11,690 --> 00:30:22,140
+tags here and overwrite the zero I am writing
+now. Now let's make all good. Now to make
+
+239
+00:30:22,140 --> 00:30:27,139
+the grid we need to decide how many squares
+a snake game should have. This is totally
+
+240
+00:30:27,139 --> 00:30:32,580
+up to you, you can make the game as big small
+or awkward as you want. For the sake of ease,
+
+241
+00:30:32,580 --> 00:30:41,190
+I'm going to make my grid 10 by 10 squares,
+meaning I need a total of 100 squats. Now
+
+242
+00:30:41,190 --> 00:30:45,899
+let's make our grid actually look like a grid
+by flipping over to our stylesheet and adding
+
+243
+00:30:45,899 --> 00:30:51,460
+some stuff. Using dot grid, I am looking for
+a class name called grid. This is what the
+
+244
+00:30:51,460 --> 00:30:57,639
+dot essentially means class name, engaging
+make my grid 200 pixels by 200 pixels and
+
+245
+00:30:57,639 --> 00:31:05,299
+make sure that does fit into this grid by
+using display flex and flex wrap. Now we're
+
+246
+00:31:05,299 --> 00:31:11,240
+going to give each of the divs and our grid
+a height and width of 20 pixels. This is simply
+
+247
+00:31:11,240 --> 00:31:17,350
+so that they fit into our 200 by 200 pixel
+grid, making sure there's only 10 of them
+
+248
+00:31:17,350 --> 00:31:24,970
+each way. Now let's add a snake class and
+make it blue. flip back to the HTML file and
+
+249
+00:31:24,970 --> 00:31:30,230
+hard coded in here just so we can see how
+that will look. And voila, any div with a
+
+250
+00:31:30,230 --> 00:31:51,529
+class there was a snake now we'll be blue.
+Let's do the same for Apple. Now let's get
+
+251
+00:31:51,529 --> 00:31:56,590
+to writing some JavaScript and making our
+game work. Add an event listener like so from
+
+252
+00:31:56,590 --> 00:32:03,250
+now on all our code will be in this event
+listener. Now we need to pick up the elements
+
+253
+00:32:03,250 --> 00:32:09,399
+from our html5 by class name as I mentioned
+before, for this we will use document query
+
+254
+00:32:09,399 --> 00:32:15,740
+selectors. What we are telling the file to
+do is select all the devs in a div with class
+
+255
+00:32:15,740 --> 00:32:22,889
+name of grid and call them squares for the
+file. We will also select the span element
+
+256
+00:32:22,889 --> 00:32:28,909
+and call it the score display and select the
+button with a class name of start. Note that
+
+257
+00:32:28,909 --> 00:32:37,039
+dot here it's for class name and call it start
+button. Now we just need to set the width.
+
+258
+00:32:37,039 --> 00:32:46,639
+So our JavaScript file knows as we have not
+told it yet our current index so the first
+
+259
+00:32:46,639 --> 00:32:53,250
+div in our grid, it is important to know that
+by writing zero, I mean it's the first I guess
+
+260
+00:32:53,250 --> 00:33:00,519
+item what element is just that the computer
+starts counting when there's a race involved.
+
+261
+00:33:00,519 --> 00:33:12,110
+So now let's set up our apple index at zero
+for the time being. Now let's draw our snake
+
+262
+00:33:12,110 --> 00:33:19,700
+as you can imagine, we will need to differentiate
+between what is the head and what is the tail.
+
+263
+00:33:19,700 --> 00:33:26,419
+From now on all devs have a value of two will
+be the head and all devs with a value of zero
+
+264
+00:33:26,419 --> 00:33:37,440
+will be the tail. For body parts we will use
+ones on this array will now be our snake direction
+
+265
+00:33:37,440 --> 00:33:43,200
+we're going to stay as one meaning that the
+snake should always go wander down the array.
+
+266
+00:33:43,200 --> 00:33:56,280
+And then we used to stick the score speed
+interval time and it's okay now let's make
+
+267
+00:33:56,280 --> 00:34:02,470
+a snake move across the board using key codes.
+Each key on your keyboard has a key code assigned
+
+268
+00:34:02,470 --> 00:34:08,480
+to it. We will write a function called control
+and pass to e4 event in order to make a snake
+
+269
+00:34:08,480 --> 00:34:16,970
+move up and down, left and right. Depending
+on what key you press on your keyboard. We
+
+270
+00:34:16,970 --> 00:34:21,970
+will first make sure how to remove all class
+lists of snake between each move. This will
+
+271
+00:34:21,970 --> 00:34:28,960
+take a split second but will prevent our snake
+from appearing to be left behind. Now we will
+
+272
+00:34:28,960 --> 00:34:33,990
+write an if statement stating if we press
+the right arrow button on our keyboard, the
+
+273
+00:34:33,990 --> 00:34:42,200
+snake will go right or in other words downward
+space in our grid array. Now let's do the
+
+274
+00:34:42,200 --> 00:34:47,400
+same for the up arrow making sure our snake
+goes into the 10th position back from its
+
+275
+00:34:47,400 --> 00:34:54,200
+current position in the array. As this is
+what we set our width to the result of this
+
+276
+00:34:54,200 --> 00:35:02,260
+snake would appear to be up one whole row
+Now let's finish off by writing the same for
+
+277
+00:35:02,260 --> 00:35:42,930
+the left arrow button and the down arrow one.
+Finally, let's add an event listener every
+
+278
+00:35:42,930 --> 00:35:52,180
+time a key is pressed to execute the function
+control now we have assigned key codes to
+
+279
+00:35:52,180 --> 00:35:57,100
+our snake movements. Let's write a function
+to start the game and make our snake move
+
+280
+00:35:57,100 --> 00:36:03,010
+at a certain speed around our grid. Using
+an arrow function, we are going to make sure
+
+281
+00:36:03,010 --> 00:36:08,660
+that each index of the current snake row is
+taken into consideration. We do this using
+
+282
+00:36:08,660 --> 00:36:15,180
+for each then we remove all class names of
+snake from the devs. The current snake array
+
+283
+00:36:15,180 --> 00:36:21,240
+is currently in at the start of this function,
+there is no class name of snake in any other
+
+284
+00:36:21,240 --> 00:36:27,710
+days in our current snake. We also have the
+apple class like sir from the dev that is
+
+285
+00:36:27,710 --> 00:36:35,010
+the apple index. What I am doing here is essentially
+resetting everything the interval the score
+
+286
+00:36:35,010 --> 00:36:39,350
+everything. Once this reset we are going to
+randomly generate an apple you will write
+
+287
+00:36:39,350 --> 00:36:46,550
+this function now we write what we want to
+happen when we start the game. So direction
+
+288
+00:36:46,550 --> 00:36:51,530
+is equal one for the snake to go right, we
+set an interval the time we define our snake,
+
+289
+00:36:51,530 --> 00:37:03,140
+give it a start position and our class name
+to the devs the snake correct is currently
+
+290
+00:37:03,140 --> 00:37:08,910
+in. Now we need to pass through the interval
+of time and a function we will write called
+
+291
+00:37:08,910 --> 00:37:17,700
+move outcomes. This function will deal with
+any and all outcomes for our decisions to
+
+292
+00:37:17,700 --> 00:37:26,960
+move the snake, it will deal with collisions
+when's school setting. Let's plant what the
+
+293
+00:37:26,960 --> 00:37:49,230
+snake needs to do by writing out like so.
+To deal with a snake hitting a water or itself
+
+294
+00:37:49,230 --> 00:37:54,940
+we are going to write an if statement in our
+move outcomes function. First of all, it's
+
+295
+00:37:54,940 --> 00:37:59,900
+important to see that we are dealing with
+the snake's head at the moment. And we are
+
+296
+00:37:59,900 --> 00:38:06,390
+using width to figure out where on the grid
+the snake head is. We need to do this to figure
+
+297
+00:38:06,390 --> 00:38:14,020
+out when the snake head is in any of the squares
+at the bottom of our grid or indicated by
+
+298
+00:38:14,020 --> 00:39:21,770
+the two parallel lines or on the right side
+of our grid and so on. last statement is an
+
+299
+00:39:21,770 --> 00:39:34,340
+if statement for if the snake goes into itself.
+Oops we need another or here. Right so if
+
+300
+00:39:34,340 --> 00:39:43,190
+any of the above happened, the following was
+returned. we clear the interval. Now we need
+
+301
+00:39:43,190 --> 00:39:53,930
+to define what exactly is the tail. We do
+so right by writing this constant and using
+
+302
+00:39:53,930 --> 00:39:57,460
+now let's remove the classroom of snake from
+the tail and give a direction to just the
+
+303
+00:39:57,460 --> 00:40:23,000
+head of the snake. Let's deal with what happens
+when the head of the current snake gets into
+
+304
+00:40:23,000 --> 00:40:29,550
+a square that contains a class named Apple
+with an if statement. Once again, we start
+
+305
+00:40:29,550 --> 00:40:34,320
+with removing the apple class name for a clean
+slate, then adding a class to the newly added
+
+306
+00:40:34,320 --> 00:40:49,770
+tail of the snake making it appear to grow
+longer. Again, we will add our random Apple
+
+307
+00:40:49,770 --> 00:40:55,150
+function here when we write it to generate
+a new Apple once this one is gone, and add
+
+308
+00:40:55,150 --> 00:41:02,700
+one to the score. Now let's display that new
+score in the HTML of our score display and
+
+309
+00:41:02,700 --> 00:41:09,390
+clear the interval time. Finally, let's multiply
+the new interval time by the speed as our
+
+310
+00:41:09,390 --> 00:41:15,060
+sphere to 0.9. This will decrease the interval
+of time each time this is updated. Lastly,
+
+311
+00:41:15,060 --> 00:41:23,180
+let's reset the interval and close the if
+statement. Let's not forget to re add the
+
+312
+00:41:23,180 --> 00:41:30,450
+class name of snake at the end of our move
+outcomes function. Right then we've been coding
+
+313
+00:41:30,450 --> 00:41:36,580
+for a while. Let's see if this works. So far,
+we have written a start game function. So
+
+314
+00:41:36,580 --> 00:41:42,060
+now let's link it to the start button on our
+HTML page with an event listener. So on click
+
+315
+00:41:42,060 --> 00:41:51,600
+on the start button, we want to invoke the
+start game function. And it works. some reason
+
+316
+00:41:51,600 --> 00:41:58,670
+the left arrow button is not working. And
+here is why we are missing an equals sign.
+
+317
+00:41:58,670 --> 00:42:04,950
+Oops. Okay, now finally, let's address that
+generate random Apple function we have been
+
+318
+00:42:04,950 --> 00:42:14,010
+talking about. So with that, we use math random
+to generate a random number based on the squares
+
+319
+00:42:14,010 --> 00:42:20,630
+length. This means the apple can pop up anywhere
+on our grid, we use math floor to round down
+
+320
+00:42:20,630 --> 00:42:25,090
+the number to the nearest integer to make
+sure the random square is below or including
+
+321
+00:42:25,090 --> 00:42:30,740
+the 100th Square. We will use while to make
+sure that the Apple does not appear in any
+
+322
+00:42:30,740 --> 00:42:45,560
+day that already has a class name snake. And
+that's it. Let's read the let's reorder the
+
+323
+00:42:45,560 --> 00:42:53,950
+content out random Apple function in our code.
+Let's get rid of the hard coded classes in
+
+324
+00:42:53,950 --> 00:43:18,410
+our HTML. And there we go, we now have a fully
+functioning game up snake. Hey, welcome back.
