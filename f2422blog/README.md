@@ -36,6 +36,38 @@ Make MEMORY GAME in JavaScript, HTML and CSS for your portfolio
 
 ttps://drive.google.com/file/d/15rJTFM_6PIByNDzUhutAcAzq4SInKIIQ/view?usp=sharing
 
+l05
+Connect Four
+
+l06
+whack a mole
+
+l07
+snake
+
+l08
+ Space Invaders 
+ 43:10
+ 59:06
+
+
+l09
+Frogger
+59:06
+1:19:38
+
+
+
+l10
+Tetris
+1:19:38
+
+l11
+
+
+l12
+
+
 
 
 

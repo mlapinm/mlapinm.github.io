@@ -1,0 +1,299 @@
+ 42.625707 
+Welcome back to the JavaScript games course.
+ 46.603478 
+Today we're going to be teaching you how to make your own Nakia 3310 snake,
+ 52.607665 
+for those of you have never owned a Nokia 3310 snake is a simple grid base game in which the snake or array is going to be tasting a little apple on the screen.
+ 65.649457 
+So you're going to be controlling the snake it's been going like this,
+   67.779913 
+it's going to be on a timer,
+
+obviously, it's going to keep going.
+ 71.498350 
+So we were just going to control it.
+ 72.926558 
+And once it gets the apple,
+ 75.428058 
+it's going to give you points but it's also going to speed up in time.
+ 78.637641 
+So that's going to be quite cool to build,
+ 80.731974 
+we're going to be using a lot of set intervals and clear intervals as well for this game.
+ 85.508744 
+We   are now on game four out of seven of this course.
+89.381035
+In this game, you're going to be learning how to use key codes,
+ 94.416306 
+which are really cool.
+  
+I'll talk about them later,
+ 97.416763 
+as well as pop and shift,
+ 99.336138 
+push and going over functions that we've previously learned in the four previous games.
+ 105.547783 
+So key codes are pretty awesome.
+ 107.295492 
+A key code is literally the code associated with the ones on your keyboard.
+ 111.799763 
+So for example, if I want to say start the game by pressing,
+ 115.674096 
+I don't know the G on your keyboard,
+
+we can do that.
+ 119.182908 
+That's pretty cool.
+ 120.149803 
+I'm going to be going into that and a lot more detail in the game along with switch cases.
+ 125.646741 
+So if you're interested in that,
+ 127.625324 
+please stop my video and let's get going to start a project.
+ 139.495032 
+Let's first make sure we have the right files in our folder.
+ 142.630782 
+You can see here I've already made an index,
+ 145.180927 
+HTML file, app js file and style sheet called style CSS.
+ 150.252490 
+The first thing we need to do is set our HTML template making sure to add the following script tag to talk to our JavaScript file.
+ 160.619136 
+Next, we need to add a link to our CSS file like so.
+ 165.362761 
+I'm going to go ahead and add a button tag with a class name of start to our HTML file.
+ 172.751343 
+This class name will allow us to pick out this specific element later in our JavaScript file.
+ 179.630384 
+I am now going to add a div with a class name score to it for the same purpose.
+ 187.611259 
+Once we have written our JavaScript code,
+ 189.635384 
+the score of our game will appear between the two span tags here and overwrite the zero I am writing now.
+ 196.628509 
+Now let's make all good.
+ 201.084675 
+Now to make the grid we need to decide how many squares a snake game should have.
+ 206.588092 
+This is totally up to you,
+ 208.122175 
+you can make the game as big small or awkward as you want.
+ 211.602259 
+For the sake of ease,
+
+I'm going to make my grid 10 by 10 squares,
+ 215.613259 
+meaning I need a total of 100 squats.
+ 219.619738 
+Now let's make our grid actually look like a grid by flipping over to our stylesheet and adding some stuff.
+ 227.109634 
+Using dot grid, I am looking for a class name called grid.
+ 230.491842 
+This is what the dot essentially means class name,
+ 233.501613 
+engaging make my grid 200 pixels by 200 pixels and make sure that does fit into this grid by using display flex and flex wrap.
+ 243.879717 
+Now we're going to give each of the divs and our grid a height and width of 20 pixels.
+ 250.116842 
+This is simply so that they fit into our 200 by 200 pixel grid,
+ 254.217842 
+making sure there's only 10 of them each way.
+ 256.416925 
+Now let's add a snake class and make it blue.
+ 261.905300 
+flip back to the HTML file and hard coded in here just so we can see how that will look.
+ 267.939217 
+And voila, any div with a class there was a snake now we'll be blue.
+ 272.809217 
+Let's do the same for Apple.
+ 274.794196 
+    290.441320 
+Now let's get to writing some JavaScript and making our game work.
+ 293.773174 
+Add an event listener like so from now on all our code will be in this event listener.
+ 299.810341 
+Now we need to pick up the elements from our html5 by class name as I mentioned before,
+ 306.450111 
+for this we will use document query selectors.
+ 309.965611 
+What we are telling the file to do is select all the devs in a div with class name of grid and call them squares for the file.
+ 318.482466 
+We will also select the span element and call it the score display and select the button with a class name of start.
+ 328.734861 
+Note that dot here it's for class name and call it start button.
+ 332.752799 
+Now we just need to set the width.
+ 337.258924 
+So our JavaScript file knows as we have not told it yet our current index so the first div in our grid,
+ 348.369236 
+it is important to know that by writing zero,
+ 350.500027 
+I mean it's the first I guess item what element is just that the computer starts counting when there's a race involved.
+ 359.771714 
+So now let's set up our apple index at zero for the time being.
+ 365.301151 
+Now let's draw our snake as you can imagine,
+ 373.496484 
+we will need to differentiate between what is the head and what is the tail.
+ 379.007380 
+From now on all devs have a value of two will be the head and all devs with a value of zero will be the tail.
+ 389.026547 
+For body parts we will use ones on this array will now be our snake 
+ 396.980463 
+direction we're going to stay as one meaning that the snake should always go wander down the array.
+ 402.725483 
+And then we used to stick the score speed interval time 
+ 409.007858 
+and it's okay now let's make a snake move across the board using key codes.
+ 419.088858 
+Each key on your keyboard has a key code assigned to it.
+ 423.300024 
+We will write a function called control and pass to e4 event in order to make a snake move up and down,
+
+left and right.
+ 430.954419 
+Depending on what key you press on your keyboard.
+ 433.927690 
+We will first make sure how to remove all class lists of snake between each move.
+ 441.772794 
+This will take a split second but will prevent our snake from appearing to be left behind.
+ 446.352335 
+Now we will write an if statement stating if we press the right arrow button on our keyboard,
+ 453.351106 
+the snake will go right or in other words downward space in our grid array.
+  459.229063  
+Now let's do the same for the up arrow making sure our snake goes into the 10th position back from its current position in the array.
+ 469.755188 
+As this is what we set our width to the result of this snake would appear to be up one whole row 
+ 477.096833 
+Now let's finish off by writing the same for the left arrow button and the down arrow one.
+ 487.357145 
+   520.595707 
+Finally, let's add an event listener every time a key is pressed to execute the function control 
+ 527.355561 
+now we have assigned key codes to our snake movements.
+  533.346309  
+Let's write a function to start the game and make our snake move at a certain speed around our grid.
+ 539.305809 
+Using an arrow function,
+ 541.679204 
+we are going to make sure that each index of the current snake row is taken into consideration.
+ 546.940329 
+We do this using for each then we remove all class names of snake from the devs.
+ 554.176849 
+The current snake array is currently in at the start of this function,
+ 558.383224 
+there is no class name of snake in any other days in our current snake.
+ 562.667037 
+We also have the apple class like sir from the dev that is the apple index.
+ 568.776203 
+What I am doing here is essentially resetting everything the interval the score everything.
+ 575.228537 
+Once this reset we are going to randomly generate an apple you will write this function 
+   580.251702 
+now we write what we want to happen when we start the game.
+ 585.756432 
+So direction is equal one for the snake to go right,
+ 588.741869 
+we set an interval the time we define our snake,
+ 592.076139 
+give it a start position and our class name to the devs the snake correct is currently in.
+ 597.580931 
+Now we need to pass through the interval of time and a function we will write called move outcomes.
+ 610.107202 
+This function will deal with any and all outcomes for our decisions to move the snake,
+ 618.619639 
+it will deal with collisions when's school setting.
+ 622.078473 
+Let's plant what the snake needs to do by writing out like so.
+ 629.071702
+  647.415868 
+To deal with a snake hitting a water or itself we are going to write an if statement in our move outcomes function.
+ 653.411618 
+First of all, it's important to see that we are dealing with the snake's head at the moment.
+ 659.437493 
+And we are using width to figure out where on the grid the snake head is.
+ 664.283243 
+We need to do this to figure out when the snake head is in any of the squares at the bottom of our grid 
+ 672.632576 
+or indicated by the two parallel lines or on the right side of our grid and so on.
+ 679.268138
+  738.434867 
+last statement is an if statement for if the snake goes into itself.
+ 746.423388 
+Oops we need another or here.
+ 751.424742 
+Right so if any of the above happened,
+ 755.940346 
+the following was returned.
+ 757.426117 
+we clear the interval.
+ 759.947513 
+Now we need to define what exactly is the tail.
+ 765.438950 
+We do so right by writing this constant and using 
+ 769.392117 
+now let's remove the classroom of snake from the tail and give a direction to just the head of the snake.
+ 779.221825 
+ 798.540366 
+Let's deal with what happens when the head of the current snake gets into a square that contains a class named Apple with an if statement.
+ 806.143616 
+Once again, we start with removing the apple class name for a clean slate,
+ 812.059949 
+then adding a class to the newly added tail of the snake making it appear to grow longer.
+ 817.068282 
+Again, we will add our random Apple function here when we write it to generate a new Apple once this one is gone,
+ 834.471240 
+and add one to the score.
+ 836.988282 
+Now let's display that new score in the HTML of our score display and clear the interval time.
+ 844.478969 
+Finally, let's multiply the new interval time by the speed as our sphere to 0.9.
+ 850.241990 
+This will decrease the interval of time each time this is updated.
+ 854.601656 
+Lastly, let's reset the interval and close the if statement.
+ 858.614385 
+Let's not forget to re add the class name of snake at the end of our move outcomes function.
+ 866.712927 
+Right then we've been coding for a while.
+ 871.180885 
+Let's see if this works.
+ 873.205823 
+So far, we have written a start game function.
+  876.391822 
+So now let's link it to the start button on our HTML page with an event listener.
+ 880.746258 
+So on click on the start button,
+ 882.860550 
+we want to invoke the start game function.
+ 885.510446 
+And it works.
+ 889.027675 
+some reason the left arrow button is not working.
+ 894.036091 
+And here is why we are missing an equals sign.
+ 898.517737 
+Oops.
+ 901.525946 
+Okay, now finally,
+
+let's address that generate random Apple function we have been talking about.
+ 906.057925 
+So with that, we use math random to generate a random number based on the squares length.
+ 914.593987 
+This means the apple can pop up anywhere on our grid,
+ 918.107175 
+we use math floor to round down the number to the nearest integer to make sure the random square is below or including the 100th Square.
+ 925.630029 
+We will use while to make sure that the Apple does not appear in any day that already has a class name snake.
+ 933.112821 
+And that's it.
+ 935.137071 Let's read the let's reorder the content out random Apple function in our code.
+ 948.129800 
+Let's get rid of the hard coded classes in our HTML.
+ 955.150925 
+And there we go, we now have a fully functioning game up snake.
+ 961.390945 
+ 971.162070 
+
