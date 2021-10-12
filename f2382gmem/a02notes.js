@@ -30,10 +30,10 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "g03",
-      ""
+      "g01",
+      "joistick"
     ],
-    "link": "g0.html"
+    "link": "g01joistick.html"
   },
   {
     "header": "",
