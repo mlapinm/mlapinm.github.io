@@ -12,18 +12,6 @@
 	 "link": "https://codepen.io/mlapin/full/LYxwBjp"
 	},
     {
-	 "header": "ConnectFour",
-	 "title": "ConnectFour",
-	 "card-text": [""],
-	 "link": "https://codepen.io/mlapin/full/KKaYYRq"
-	},
-    {
-	 "header": "",
-	 "title": "",
-	 "card-text": [""],
-	 "link": ""
-	},
-    {
 	 "header": "",
 	 "title": "",
 	 "card-text": [""],
@@ -226,7 +214,15 @@
     {
 	 "header": "",
 	 "title": "gmem",
-	 "card-text": [""],
+	 "card-text": [
+	 "gmem",
+	 "candy crash",
+	 "Minesweeper",
+	 "snake",
+	 "ConnectFour",
+	 "",
+	 ""
+	 ],
 	 "link": "f2382gmem"
 	},
     {
@@ -270,8 +266,14 @@
 	},
     {
 	 "header": "blog",
-	 "title": "",
-	 "card-text": ["inkscape"],
+	 "title": "inkscape",
+	 "card-text": [
+	 "inkscape",
+	 "Ania Kubow",
+	 "",
+	 "",
+	 ""
+	 ],
 	 "link": "f2422blog/index.html"
 	},
     {

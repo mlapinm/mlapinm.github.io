@@ -46,12 +46,12 @@ var notes = [
   },
   {
     "header": "",
-    "title": "",
+    "title": "ConnectFour",
     "card-text": [
-      "g0",
+      "CodePen",
       ""
     ],
-    "link": "g0.html"
+    "link": "https://codepen.io/mlapin/full/KKaYYRq"
   },
   {
     "header": "",
