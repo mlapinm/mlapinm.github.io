@@ -52,5 +52,61 @@ var notes = [
       ""
     ],
     "link": "l06pl.html"
+  },
+
+
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "l06",
+      ""
+    ],
+    "link": "l07pl.html"
+  },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "l06",
+      ""
+    ],
+    "link": "l08pl.html"
+  },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "l06",
+      ""
+    ],
+    "link": "l09pl.html"
+  },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "l06",
+      ""
+    ],
+    "link": "l10pl.html"
+  },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "l06",
+      ""
+    ],
+    "link": "l06pl.html"
+  },
+  {
+    "header": "CCNA",
+    "title": "",
+    "card-text": [
+      "l06",
+      ""
+    ],
+    "link": "l06pl.html"
   }
 ]

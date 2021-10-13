@@ -1,0 +1,62 @@
+*{
+	font-family: sans-serif;
+	font-size: 1.2rem;
+}
+
+.grid{
+	height: 80vmin;
+	width: 80vmin;
+	display: flex;
+	flex-wrap: wrap;
+	margin:auto;
+	border: solid;
+
+  }
+  
+  .grid div{
+	height: 10%;
+	width: 10%;
+  
+  }
+  
+  .snake {
+	background-color: blue;
+  }
+  
+  .apple {
+	background-color: red;
+	border-radius: 50%;
+  }
+
+  .box{
+	  display: flex;
+	  word-wrap: wrap;
+
+	  justify-content:space-around;
+	}
+
+  .score{
+	  width: 20vw;
+	  text-align: center;
+	  background-color: aqua;
+	  border-radius: 0.6rem;
+	  margin-right: 2rem;
+  }
+
+  .map {
+	position: relative;
+	text-align: center;
+	
+}
+
+svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+
+  
+  

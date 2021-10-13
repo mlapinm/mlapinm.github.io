@@ -1,46 +1,5 @@
 [
     {
-	 "header": "BATTLESHIPS",
-	 "title": "BATTLESHIPS in JavaScript",
-	 "card-text": [
-	 "Code with Ania Kubow pure JavaScript codepen.io",
-	 "In this walkthrough we will:",
-	 "make 5 draggable ships",
-	 "rotate the ships prior to dragging",
-	 "make the computer take random goes",
-	 "display results based on who has sunk whos ship",
-	 "display the winner"
-	 ],
-	 "link": "https://codepen.io/mlapin/full/oNZxeWa"
-	},
-    {
-	 "header": "snake",
-	 "title": "Code with Ania Kubow pure JavaScript codepen.io",
-	 "card-text": [
-	 "BUILD NOKIA 3310 SNAKE using JavaScript in under 15 minutes",
-	 "",
-	 "",
-	 "",
-	 "",
-	 "",
-	 "",
-	 "",
-	 ""
-	 ],
-	 "link": "https://codepen.io/mlapin/full/KKWVdNK"
-	},
-    {
-	 "header": "candy",
-	 "title": "candy crush",
-	 "card-text": [
-	 "Code with Ania Kubow pure JavaScript codepen.io",
-	 "> 3 in line",
-	 "",
-	 ""
-	 ],
-	 "link": "https://codepen.io/mlapin/full/JjWPqYO"
-	},
-    {
 	 "header": "pixels",
 	 "title": "draw pixels",
 	 "card-text": [""],
@@ -51,24 +10,6 @@
 	 "title": "2048",
 	 "card-text": [""],
 	 "link": "https://codepen.io/mlapin/full/LYxwBjp"
-	},
-    {
-	 "header": "Minesweeper",
-	 "title": "Minesweeper",
-	 "card-text": [""],
-	 "link": "https://codepen.io/mlapin/full/oNBrPGd"
-	},
-    {
-	 "header": "ConnectFour",
-	 "title": "ConnectFour",
-	 "card-text": [""],
-	 "link": "https://codepen.io/mlapin/full/KKaYYRq"
-	},
-    {
-	 "header": "gmem",
-	 "title": "gmem",
-	 "card-text": [""],
-	 "link": "https://mlapinm.github.io/gmem/index.html"
 	},
     {
 	 "header": "",
@@ -273,7 +214,15 @@
     {
 	 "header": "",
 	 "title": "gmem",
-	 "card-text": [""],
+	 "card-text": [
+	 "gmem",
+	 "candy crash",
+	 "Minesweeper",
+	 "snake",
+	 "ConnectFour",
+	 "",
+	 ""
+	 ],
 	 "link": "f2382gmem"
 	},
     {
@@ -317,8 +266,14 @@
 	},
     {
 	 "header": "blog",
-	 "title": "",
-	 "card-text": ["inkscape"],
+	 "title": "inkscape",
+	 "card-text": [
+	 "inkscape",
+	 "Ania Kubow",
+	 "",
+	 "",
+	 ""
+	 ],
 	 "link": "f2422blog/index.html"
 	},
     {

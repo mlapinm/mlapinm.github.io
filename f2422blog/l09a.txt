@@ -1,0 +1,337 @@
+ 9.758638 
+Hi, everyone,
+ 10.737981 
+we are now at game six out of seven of our JavaScript games course.
+ 15.271110 
+We only have one more grid based game to make after this until you have at seven fully functioning JavaScript games for your portfolio.
+ 24.501608 
+In this tutorial,
+ 25.979159 
+we're going to make Frogger in which we're going to be looking at every single function that you have learnt before in the previous five games.
+ 34.500475 
+So yeah, if you haven't watched the previous videos definitely do that now before watching this one.
+  39.295213 
+But we are going to be taking them that extra level so making them do more complicated things.
+ 44.248116 
+As always minimal styling,
+ 46.750587 
+I've gone max five minutes doing the styling on this.
+ 51.261744 
+So Frogger is a simple Bass game in which you as the user and frog style at the bottom of the grid and have two obstacles to pass to get your home,
+ 62.963217 
+which is at the top of the grid based game.
+ 66.456437 
+The first obstacle is a road in which little cars are going from one side of the other new race car to avoid them like this.
+ 73.944940 
+Once you avoid that,
+ 75.470020 
+that is the second hurdle of the river.
+ 77.984101 
+This is basically flipped on its head.
+ 80.977639 
+So instead of avoiding things in it,
+ 82.462423 
+you have to jump on things in it.
+ 84.467593 
+So you're gonna have to jump on the logs in the river.
+ 87.467457 
+In order to get to the home.
+ 89.484623 
+What's cool about this is actually one of the frog is on the log is gonna have to move with the log until it can jump off.
+ 95.990178 
+So that's gonna be really fun to build.
+ 97.489045 
+I'm really excited to walk you through this.
+ 99.999362 
+So yeah, let's get going.
+ 103.494600 
+So first, let's set up a project with the correct files in our folder.
+ 112.005961 
+We have the app j s for our JavaScript,
+ 115.497253 
+index, HTML for our HTML code,
+ 118.496460 
+and style CSS for our CSS styling.
+ 121.997571 
+Let's start with the HTML by adding some HTML boilerplate,
+ 127.012968 
+we will add a title of Fraga for our project that will not visually render in the browser,
+ 133.483126 
+but show up on the tab.
+ 134.991199 
+We next need to link our stylesheet using a link tag like this to the correct file using an href 
+ 142.690791 
+and link our JavaScript file again using source 
+ 145.284713 
+and the correct file name of app j s where we saw our JavaScript code.
+ 151.388341 
+Now we have that let's do some basic visualization of the grid and add a start and pause button for the game.
+ 161.888839 
+And an h3 tag let us know how much time we have left or whether we have won or lost.
+ 167.373329 
+   188.895415 
+Let's add the Start button and h3 tags to give them unique IDs instead of class names.
+ 195.934599 
+I am also going to hard code the time left to display was 20.
+ 200.434916 
+Okay, now let's flip over to our CSS file.
+ 221.437274 
+Add the following styling to make our list of divs and the HTML look like an actual grid.
+ 229.445687 
+What we are doing here is making the divs wrapper rechab using Flexbox.
+ 233.442875 
+Each div inside a div with a class name grid,
+ 237.425188 
+we are assigning a height and width of 20 pixels because under an 80 divided by nine is 20.
+  244.879972 
+And we want a nine by nine grid.
+ 246.891650 
+So now right click your index HTML file to open it in the browser.
+ 254.683237 
+And this is what we will see.
+ 257.178384 
+Now let's assign colors to our ending block,
+ 263.163690 
+starting block and our frog 
+ 265.979654 
+flip back to your HTML file and hard code these in to the fifth div down on the fifth from the bottom.
+ 281.361082 
+This is what it should now look like in your browser.
+ 288.890402 
+Okay, now let's add some functionality to the frog that we have hard coded,
+ 297.370946 
+not hard coded, but we'll add to our HTML using JavaScript.
+ 301.405096 
+Flip over to your app js file and add an event listener like this.
+ 305.383350 
+Okay, all our code will be done in this event listener.
+ 312.881105 
+Now let's pick our elements from my HTML file using constants and query selectors like this.
+ 320.884053 
+Know how we use query selector all for the divs inside a div with the class name grid.
+ 326.919563 
+This is because we want all the divs in there and also see how we use dot for class names and hashes for picking out ideas.
+ 334.419064 
+ 387.676388 
+So now if I want to show the frog my grid,
+ 390.663554 
+I can simply add the class name of frog to a square and the grid of index 76 using JavaScript like this.
+ 397.167907 
+Now flip over to my browser,
+ 402.680062 
+hit refresh, and okay now add a timer ID and leave it as that for now.
+ 415.184824 
+This is here for our countdown that we will build later.
+ 422.171241 
+The first we are going to do is make a frog move when you press on your keyboard.
+ 428.693780 
+For this, you need to know the key codes to your keyboard up down left and right buttons,
+ 434.713871 
+you can easily Google or the key codes to your entire keyboard.
+ 438.193463 
+For now, I'm just going to tell you the key codes for the ones we want.
+ 441.692375 
+We are going to write the function and pass it through an E or an event 
+ 447.649608 
+we're going to remove the frog from whatever current squared is in 
+ 455.197998 
+and then using event and keycodes decide which way the frog is going to go using switch cases.
+ 461.520787 
+So in this case, if key 37 is pressed,
+ 466.513214 
+so are left on your keyboard.
+ 469.532375 
+And if the current index is divisible by the width with a remainder,
+ 473.507590 
+we're the frog left one space.
+ 475.514733 
+Do you see the key 38 so the up arrow moving the frog a whole width back visually displaying as if it was going up one square,
+ 484.027522 
+then for keys 39 or our right and key 40 are down.
+ 489.542533 
+ 550.684415 
+Then we draw the frog on each key press we also want to check if the frog has done anything that would result in winning or losing 
+ 564.501785 
+let's put in these functions that we will write in a bit.
+ 569.257930 
+So if you try and move your probe now these functions will not work as they did not observe some will break your code so just bear that in mind.
+ 576.057295 
+Okay, now let's get to rendering the first obstacle the frog needs to cross 
+ 581.747681 
+so that will be the road with cause that needs to be avoided.
+ 586.848633 
+Then the second obstacle which is a river with some logs,
+ 590.839109 
+frogs needs to jump on to cross you will see here and my finished game that the cars moving left are actually just on a loop being rendered and three squares 123 and then repeat.
+   604.273735 
+Same for the card game right.
+ 605.680787 
+And even the logs are on this loop just a loop of five squares random instead goes through HTML and other following class names your days making sure to start from the 19th down or for JavaScript sake index 18.
+ 620.978202 
+ 641.985685 
+And the same for the road.
+ 647.470946 
+So diff 46, but index 45 
+ 654.586592 
+ 659.684256 
+And now flip over is your CSS file and add some colors so we know what is road call river,
+ 
+or loc.
+ 668.197703
+  682.126251 
+Now Save and refresh the browser.
+ 685.114188 
+And there we go, we can see a road here river,
+ 691.086773 
+some logs and some cars.
+ 694.110787 
+Now back in our JavaScript file,
+ 698.111920 
+let's write a function that will make all the divs with a class name of car left,
+ 702.625344 
+go left, and the divs of class name car right,
+
+go right.
+ 706.617612 
+First, let's pick out these debts from HTML and add that to the top of our project.
+ 713.127975 
+We might as well add the others to 
+ 718.907294 
+ 740.026726 
+now let's write a function called auto move cars 
+ 743.434254 
+in this function where we use arrow functions that will allow us to give a name to individual devs from all our devs called cause left and passing through a function,
+ 752.397134 
+we will do this using for each 
+ 755.055728 
+so for each Doom that has a class name,
+ 758.997836 
+cause left pass through a function called move car left,
+ 763.017382 
+that will make the day go left and the same for cars right.
+ 766.501781 
+Okay, now let's write that move car left function that technically is just going to rerender three days every second,
+ 777.026135 
+we use a switch for this and pass through the car left we got from the function automotive costs.
+ 784.017382 
+ 814.858176 
+Now for the common good,
+
+right on the same logic as above.
+ 819.472643 
+ 844.927904 
+Now let's do the exact same for the logs.
+ 849.934185 
+One loop three, rendering five devs every second 
+ 854.806452 
+   975.544320 
+Okay,
+
+now let's write all this function.
+ 979.058923 
+So if the time runs out,
+ 981.072188 
+or is equal to zero,
+ 982.550102 
+or two using these two parallel lines means or,
+ 987.564456 
+or the square the frog is currently and contains a C one class name to call,
+ 993.552460 
+or l five class name.
+ 996.057925 
+So blue and engaging river,
+ 997.575930 
+or l four class name,
+
+which again is a river it loses.
+ 1001.567154 
+Again, we display the reducing message,
+ 1005.115862 
+remove the frog, clear the timer from the countdown and stop the frog movie.
+ 1011.140828 
+ 1030.692347 
+Now the final functionality we need to give our game is make sure that the frog is on the log.
+ 1035.699694 
+So when it's on the log and moves with the log,
+ 1038.195794 
+so in the river, or the frog is in the squares index of bigger than or equal to 27,
+
+and smaller to 35.
+ 1047.229762 
+Move the frog left,
+ 1048.715476 
+it doesn't matter that we actually including the river does in here as well as the frog automatically loses if it goes in there.
+ 1055.707902 
+So don't worry about that.
+ 
+That's fine.
+ 1059.229036 
+Okay.
+
+Do the same.
+ 1064.880487 
+The Right.
+ 1068.360691 
+ 1085.914795 
+Okay, now we need to invoke all of our functions to happen every second,
+ 1090.423049 
+every second year,
+ 1092.427040 
+we need to move a car or log,
+ 1094.441326 
+make sure to move the frog if it's on a log,
+  1097.121597 
+and evoke lose if it's standing in a square that a car is going into it let's call this function move piece.
+ 1104.613071 
+Note we need to pass loose in there.
+ 1107.133117 
+And in our moving frog function.
+ 1109.630169 
+If we don't have it here,
+ 1111.649398 
+cause we'll be able to pass through our frog willy nilly.
+ 1114.154409 
+You also use our logic to make our current time go down by one every second 
+ 1124.380554 
+and update the time left div in our HTML to show this to our user.
+ 1129.826019 
+Finally, we need to pass through the movies function into a countdown that goes down every second.
+ 1139.441892 
+We do this by adding an event listener to a start button.
+ 1143.948967 
+We will also be making the button double up was a pause button which is quite cool.
+ 1148.474590 
+So on click, we do an if else statement.
+ 1152.468672 
+By using set interval like this,
+ 1155.980713 
+we are making sure the move pieces function is invoked every second until the timer ID equals zero.
+ 1163.479103 
+We also want to make sure that the frog can only move when the game has started.
+ 1168.485067 
+So we add in our event listener to start the move frog move frog function we were above here.
+ 1174.971234 
+As you can see, something's not working.
+ 1181.473117 
+Let's have a look.
+ 1182.962278 
+That's because I need to use document query selector all because we're selecting all the divs let's change that here and here.
+ 1194.726790 
+Okay, we need to change this.
+ 1205.213502 
+And there you have it your very own Frogger game.
+ 1210.228672 
+How'd you like my tutorial?
+ 1212.198491 
+Feel free to comment if you'd like some more information,
+ 1215.224885 
+or if I haven't explained something very well.
+ 1217.231212 
+Please do subscribe for more videos are really into making grid based games at the moment and pure JavaScript.
+ 1223.718491 
+So if you can think of any cool ones,
+ 1225.231529 
+let me know and I'll try have a go at it.
+ 1228.212799 
+Thank you.
+ 1229.726881 

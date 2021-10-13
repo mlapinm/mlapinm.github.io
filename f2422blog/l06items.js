@@ -1,1004 +1,1190 @@
 let objs = [
   {
     "time": [
-      0.0,
-      4.55934
+      8.031582,
+      13.261372
     ],
     "en": [
-      "welcome to this free CCNA packet tracer practice lab"
+      "So hopefully by now you have your own working game,",
+      "our memory game,"
     ],
     "ru": [
-      "добро пожаловать в эту бесплатную практическую лабораторию CCNA Packet Tracer"
+      "Надеюсь, теперь у вас есть собственная рабочая игра,",
+      "наша игра на память,"
     ]
   },
   {
     "time": [
-      4.55934,
-      8.883745
+      8.031582,
+      13.261372
     ],
     "en": [
-      "you can download the lab file from the link in the description"
+      "So hopefully by now you have your own working game,",
+      "our memory game,"
     ],
     "ru": [
-      "скачать лабораторный файл можно по ссылке в описании"
+      "Надеюсь, теперь у вас есть собственная рабочая игра,",
+      "наша игра на память,"
     ]
   },
   {
     "time": [
-      8.883745,
-      15.59975
+      8.031582,
+      13.261372
     ],
     "en": [
-      "in this lab we will be working with two switches switch 1 and switch two"
+      "So hopefully by now you have your own working game,",
+      "our memory game,"
     ],
     "ru": [
-      "в этой лабораторной работе мы будем работать с двумя переключателями, переключателем 1 и переключателем 2."
+      "Надеюсь, теперь у вас есть собственная рабочая игра,",
+      "наша игра на память,"
     ]
   },
   {
     "time": [
-      15.59975,
-      20.795037
+      13.261372,
+      18.319831
     ],
     "en": [
-      "and three pcs pc-1 pc2 and pc 3"
+      "as well as a strong grasp of query selectors and event listeners."
     ],
     "ru": [
-      "и три ПК pc-1 pc2 и pc 3"
+      "а также хорошее владение селекторами запросов и прослушивателями событий."
     ]
   },
   {
     "time": [
-      20.795037,
-      26.536391
+      18.319831,
+      23.318102
     ],
     "en": [
-      "you may notice that the icons of these switches are different than in the previous lab"
+      "We are going to be using them again today to build your very own game of whack a mole."
     ],
     "ru": [
-      "вы можете заметить, что значки этих переключателей отличаются от значков в предыдущей лабораторной работе."
+      "Мы собираемся использовать их сегодня снова, чтобы создать вашу собственную игру в «Ударь крота»."
     ]
   },
   {
     "time": [
-      26.536391,
-      34.089201
+      23.318102,
+      35.29208
     ],
     "en": [
-      "these are called multi-layer switches because they can operate at both layer 2 and layer 3 of the OSI model"
+      "We will also be using class list add remove for each and arrow functions as this game is going to be timed with you getting 60 seconds to bash them all as many times as possible."
     ],
     "ru": [
-      "они называются многоуровневыми коммутаторами, потому что они могут работать как на уровне 2, так и на уровне 3 модели OSI."
+      "Мы также будем использовать список классов, добавить и удалить для каждой и стрелочных функций, так как в этой игре у вас будет 60 секунд, чтобы ударить их всех как можно больше раз."
     ]
   },
   {
     "time": [
-      34.089201,
-      38.46917
+      35.29208,
+      40.302685
     ],
     "en": [
-      "but we won't actually be using their multi-layer capabilities in this lab"
+      "We're also going to be introducing set interval and clear interval for this game."
     ],
     "ru": [
-      "но на самом деле мы не будем использовать их многоуровневые возможности в этой лабораторной работе."
+      "Мы также собираемся ввести заданный интервал и чистый интервал для этой игры."
     ]
   },
   {
     "time": [
-      38.46917,
-      46.90673
+      40.302685,
+      47.786976
     ],
     "en": [
-      "I selected this switch model for another reason which will differentiate this lab from the previous ones slightly in terms of configuration"
+      "Whack a mole is a simple grid based game in which you as the user have to whack the mole as many times as possible in 60 seconds."
     ],
     "ru": [
-      "Я выбрал эту модель коммутатора по другой причине, которая немного отличает эту лабораторию от предыдущих с точки зрения конфигурации."
+      "Ударь крота - это простая игра на основе сетки, в которой вы, как пользователь, должны ударить крота как можно больше раз за 60 секунд."
     ]
   },
   {
     "time": [
-      46.90673,
-      50.847989
+      47.786976,
+      51.788372
     ],
     "en": [
-      "however the basic tasks of the lab are the same"
+      "Whack a mole is a game invented in 1975,",
+      "where you kazoo or your mother,"
     ],
     "ru": [
-      "однако основные задачи лаборатории те же"
+      "Ударь крота - это игра, изобретенная в 1975 году.",
+      "где ты казу или твоя мать,"
     ]
   },
   {
     "time": [
-      50.847989,
-      58.485622
+      47.786976,
+      51.788372
     ],
     "en": [
-      "we will use VLANs to separate these pcs at layer 2 even though they are in the same layer 3 subnet"
+      "Whack a mole is a game invented in 1975,",
+      "where you kazoo or your mother,"
     ],
     "ru": [
-      "мы будем использовать VLAN для разделения этих компьютеров на уровне 2, даже если они находятся в одной подсети уровня 3"
+      "Ударь крота - это игра, изобретенная в 1975 году.",
+      "где ты казу или твоя мать,"
     ]
   },
   {
     "time": [
-      58.485622,
-      67.200407
+      47.786976,
+      51.788372
     ],
     "en": [
-      "try to complete the lab on your own first then continue watching this video if you have trouble or watch it after to check your solution"
+      "Whack a mole is a game invented in 1975,",
+      "where you kazoo or your mother,"
     ],
     "ru": [
-      "попробуйте сначала пройти лабораторную работу самостоятельно, а затем продолжайте смотреть это видео, если у вас возникнут проблемы, или просмотрите его после, чтобы проверить свое решение."
+      "Ударь крота - это игра, изобретенная в 1975 году.",
+      "где ты казу или твоя мать,"
     ]
   },
   {
     "time": [
-      67.200407,
-      74.748145
+      51.788372,
+      54.915726
     ],
     "en": [
-      "step one asks us to pin between the computers to test connectivity"
+      "you clearly saw a gap in the market for bashing walls with massive mallets."
     ],
     "ru": [
-      "на первом шаге нас просят закрепить между компьютерами для проверки возможности подключения"
+      "вы явно заметили брешь на рынке для удара по стенам массивными молотками."
     ]
   },
   {
     "time": [
-      74.748145,
-      77.018595
+      54.915726,
+      58.424726
     ],
     "en": [
-      "these pings should all succeed"
+      "And judging by the popularity of this game today,",
+      "he was right."
     ],
     "ru": [
-      "все эти пинги должны быть успешными"
+      "И судя по популярности этой игры сегодня,",
+      "он был прав."
     ]
   },
   {
     "time": [
-      77.018595,
-      80.750219
+      54.915726,
+      58.424726
     ],
     "en": [
-      "let's just ping from pc1"
+      "And judging by the popularity of this game today,",
+      "he was right."
     ],
     "ru": [
-      "давай просто пингуем с пк1"
+      "И судя по популярности этой игры сегодня,",
+      "он был прав."
     ]
   },
   {
     "time": [
-      80.750219,
-      84.40899
+      54.915726,
+      58.424726
     ],
     "en": [
-      "first I'll ping PC two"
+      "And judging by the popularity of this game today,",
+      "he was right."
     ],
     "ru": [
-      "сначала я пингую комп два"
+      "И судя по популярности этой игры сегодня,",
+      "он был прав."
     ]
   },
   {
     "time": [
-      84.40899,
-      88.067075
+      58.424726,
+      61.891913
     ],
     "en": [
-      "ping 10.0.0.2"
+      "As always, we're going to do simple styling for you to take and make your own."
     ],
     "ru": [
-      "пинг 10.0.0.2"
+      "Как всегда, мы сделаем простой стиль, чтобы вы могли сделать его сами."
     ]
   },
   {
     "time": [
-      88.067075,
-      90.140269
+      61.891913,
+      68.979705
     ],
     "en": [
-      "the ping works"
+      "Okay to start a project,"
     ],
     "ru": [
-      "пинг работает"
+      "Хорошо, чтобы начать проект,"
     ]
   },
   {
     "time": [
-      90.140269,
-      93.193188
+      68.979705,
+      72.528892
     ],
     "en": [
-      "next out ping pc3"
+      "let's first make sure that we have the right files in our folder."
     ],
     "ru": [
-      "следующий пинг pc3"
+      "Давайте сначала убедимся, что в нашей папке есть нужные файлы."
     ]
   },
   {
     "time": [
-      93.193188,
-      95.850549
+      72.528892,
+      77.067059
     ],
     "en": [
-      "ping 10.0.0.3"
+      "You can see here I already have made an index HTML file,"
     ],
     "ru": [
-      "пинг 10.0.0.3"
+      "Как видите, я уже создал индексный HTML-файл,"
     ]
   },
   {
     "time": [
-      95.850549,
-      98.711574
+      77.067059,
+      80.861059
     ],
     "en": [
-      "it works as well"
+      "app js file and style sheet called style CSS."
     ],
     "ru": [
-      "это тоже работает"
+      "app js файл и таблица стилей под названием style CSS."
     ]
   },
   {
     "time": [
-      98.711574,
-      106.87117
+      80.861059,
+      85.375538
     ],
     "en": [
-      "step two is to assign PC to and PC three to VLAN two"
+      "As you can see, I've gone ahead and set out our HTML for the project."
     ],
     "ru": [
-      "Шаг второй - назначить ПК и третий ПК для VLAN 2."
+      "Как видите, я пошел дальше и изложил наш HTML-код для проекта."
     ]
   },
   {
     "time": [
-      106.87117,
-      110.251923
+      85.375538,
+      90.412392
     ],
     "en": [
-      "again this is done by configuring the switch interfaces"
+      "The first thing that we need to do is see that our HTML boilerplate,"
     ],
     "ru": [
-      "опять же, это делается путем настройки интерфейсов коммутатора."
+      "Первое, что нам нужно сделать, это увидеть, что наш шаблон HTML,"
     ]
   },
   {
     "time": [
-      110.251923,
-      113.105264
+      90.412392,
+      94.386913
     ],
     "en": [
-      "let's do switch one first"
+      "I have added a link to our CSS file right here on line six."
     ],
     "ru": [
-      "давай сначала переключим один"
+      "Я добавил ссылку на наш файл CSS прямо здесь, в шестой строке."
     ]
   },
   {
     "time": [
-      113.105264,
-      121.208965
+      94.386913,
+      100.420871
     ],
     "en": [
-      "enable conf t pc 2 is connected to Fast Ethernet 0 3"
+      "I have also made sure to add a script tag to talk to our JavaScript file."
     ],
     "ru": [
-      "enable conf t ПК 2 подключен к Fast Ethernet 0 3"
+      "Я также не забыл добавить тег скрипта для общения с нашим файлом JavaScript."
     ]
   },
   {
     "time": [
-      121.208965,
-      124.902216
+      100.420871,
+      102.892829
     ],
     "en": [
-      "so interface F 0 3"
+      "You can see this on line 31."
     ],
     "ru": [
-      "так интерфейс F 0 3"
+      "Вы можете увидеть это в строке 31."
     ]
   },
   {
     "time": [
-      124.902216,
-      130.497044
+      102.892829,
+      106.899038
     ],
     "en": [
-      "switch port mode access switch port access VLAN 2"
+      "We also have some h two headers with IDs,"
     ],
     "ru": [
-      "режим порта коммутатора доступ к порту коммутатора VLAN 2"
+      "У нас также есть несколько заголовков h two с идентификаторами,"
     ]
   },
   {
     "time": [
-      130.497044,
-      132.950304
+      106.899038,
+      110.91785
     ],
     "en": [
-      "that's it for PC2"
+      "one for score and one for time left."
     ],
     "ru": [
-      "это все для ПК2"
+      "один за счет и один за оставшееся время."
     ]
   },
   {
     "time": [
-      132.950304,
-      135.489322
+      110.91785,
+      118.245788
     ],
     "en": [
-      "now let's do the same on switch 2"
+      "I have also gone ahead and added a div with a class name of of grid with nine divs inside"
     ],
     "ru": [
-      "Теперь сделаем то же самое на переключателе 2"
+      "Я также пошел дальше и добавил div с именем класса сетки с девятью div внутри"
     ]
   },
   {
     "time": [
-      135.489322,
-      140.885298
+      118.245788,
+      126.317413
     ],
     "en": [
-      "enable conf t"
+      "each div has unique ID that we will use later as well as a general class name of square."
     ],
     "ru": [
-      "включить конф т"
+      "каждый div имеет уникальный идентификатор, который мы будем использовать позже, а также общее имя класса square."
     ]
   },
   {
     "time": [
-      140.885298,
-      148.473154
+      126.317413,
+      134.122538
     ],
     "en": [
-      "interface F 0 2 switch port mode access switch port access VLAN 2"
+      "We will be using these class names and IDs for our JavaScript file and CSS file to communicate with our HTML page."
     ],
     "ru": [
-      "интерфейс F 0 2 порт коммутатора режим доступа порт коммутатора доступ VLAN 2"
+      "Мы будем использовать эти имена и идентификаторы классов для нашего файла JavaScript и файла CSS для связи с нашей HTML-страницей."
     ]
   },
   {
     "time": [
-      148.473154,
-      151.017034
+      134.122538,
+      141.823183
     ],
     "en": [
-      "ok step 2 is complete"
+      "So now let's flip over to our CSS file in order to render our dams into a visual grid in the browser."
     ],
     "ru": [
-      "хорошо, шаг 2 завершен"
+      "Итак, теперь давайте перейдем к нашему файлу CSS, чтобы отобразить наши плотины в визуальной сетке в браузере."
     ]
   },
   {
     "time": [
-      151.017034,
-      159.81111
+      141.823183,
+      147.363246
     ],
     "en": [
-      "step three is to create a trunk connection between switch 1 and switch 2"
+      "Using dot square I am looking for class names called square and our HTML file."
     ],
     "ru": [
-      "Шаг третий - создать магистральное соединение между коммутатором 1 и коммутатором 2."
+      "Используя точечный квадрат, я ищу имена классов, называемые квадратными, и наш HTML-файл."
     ]
   },
   {
     "time": [
-      159.81111,
-      165.28844
+      147.363246,
+      157.190267
     ],
     "en": [
-      "remember that by default switch ports are access ports in the native VLAN"
+      "This is what dot essentially means class name and giving them each 200 pixel width and height as well as some additional styling."
     ],
     "ru": [
-      "помните, что по умолчанию порты коммутатора являются портами доступа в собственной VLAN"
+      "Это то, что точка, по сути, означает имя класса и дает им ширину и высоту 200 пикселей, а также некоторый дополнительный стиль."
     ]
   },
   {
     "time": [
-      165.28844,
-      171.072763
+      157.190267,
+      159.713871
     ],
     "en": [
-      "VLAN 1 in order for these switches to carry traffic from VLAN 2 as well"
+      "Feel free to go wild with your own colors,"
     ],
     "ru": [
-      "VLAN 1, чтобы эти коммутаторы могли передавать трафик из VLAN 2."
+      "Не стесняйтесь разыгрывать свои собственные цвета,"
     ]
   },
   {
     "time": [
-      171.072763,
-      174.728609
+      159.713871,
+      161.198579
     ],
     "en": [
-      "so that PC 2 and PC 3 can communicate with each other"
+      "border styles and fills."
     ],
     "ru": [
-      "чтобы ПК 2 и ПК 3 могли общаться друг с другом"
+      "стили границ и заливки."
     ]
   },
   {
     "time": [
-      174.728609,
-      176.56515
+      161.198579,
+      166.828142
     ],
     "en": [
-      "we need to create a trunk"
+      "If you say the following open up your browser by right clicking the index dot HTML file."
     ],
     "ru": [
-      "нам нужно создать ствол"
+      "Если вы скажете следующее, откройте браузер, щелкнув правой кнопкой мыши файл HTML с индексной точкой."
     ]
   },
   {
     "time": [
-      176.56515,
-      178.840799
+      166.828142,
+      173.824996
     ],
     "en": [
-      "let's do switch 1 first"
+      "This is what you should see nine divs we just styled stacked on top of each other."
     ],
     "ru": [
-      "давай сначала сделаем переключатель 1"
+      "Это то, что вы должны увидеть девять div'ов, которые мы только что стилизовали, расположенные друг над другом."
     ]
   },
   {
     "time": [
-      178.840799,
-      182.544391
+      173.824996,
+      179.32485
     ],
     "en": [
-      "interface f0 1"
+      "Using classroom grid We will now make sure the squares are put into a grid shape."
     ],
     "ru": [
-      "интерфейс f0 1"
+      "Использование классной сетки Теперь мы убедимся, что квадраты расположены в форме сетки."
     ]
   },
   {
     "time": [
-      182.544391,
-      185.346055
+      179.32485,
+      187.460017
     ],
     "en": [
-      "switch port mode trunk"
+      "We will do this by using display flex and flex flow to make our divs stuck left and right"
     ],
     "ru": [
-      "переключатель режима порта магистраль"
+      "Мы сделаем это с помощью display flex и flex flow, чтобы наши div застревали влево и вправо."
     ]
   },
   {
     "time": [
-      185.346055,
-      186.890595
+      187.460017,
+      194.030037
     ],
     "en": [
-      "but it doesn't work"
+      "and stuck over each other was being entered and constrained into a height and width of the overall grid."
     ],
     "ru": [
-      "но это не работает"
+      "и прилипшие друг к другу вводились и ограничивались высотой и шириной общей сетки."
     ]
   },
   {
     "time": [
-      186.890595,
-      194.225705
+      194.030037,
+      198.692474
     ],
     "en": [
-      "command rejected an interface whose trunk encapsulation is auto cannot be configured to trunk mode"
+      "Let's go back to our browser and refresh."
     ],
     "ru": [
-      "команда отклонила интерфейс, инкапсуляция магистрали которого установлена ​​автоматически, не может быть настроен в режим магистрали"
+      "Вернемся в наш браузер и обновимся."
     ]
   },
   {
     "time": [
-      194.225705,
-      196.736821
+      198.692474,
+      201.700308
     ],
     "en": [
-      "this didn't happen last lab"
+      "And this is now what we see."
     ],
     "ru": [
-      "этого не произошло в последней лаборатории"
+      "И вот что мы видим сейчас."
     ]
   },
   {
     "time": [
-      196.736821,
-      199.70376
+      201.700308,
+      206.696349
     ],
     "en": [
-      "and actually this is why I chose this switch model"
+      "For the mole classname and going to show you how to add an image to a div."
     ],
     "ru": [
-      "и собственно поэтому я выбрал эту модель переключателя"
+      "Для имени класса крота и покажу вам, как добавить изображение в div."
     ]
   },
   {
     "time": [
-      199.70376,
-      206.496652
+      206.696349,
+      208.713495
     ],
     "en": [
-      "when you make a trunk link packets are encapsulated to label them as part of a particular VLAN"
+      "Type the following like so."
     ],
     "ru": [
-      "при создании магистрального канала пакеты инкапсулируются, чтобы пометить их как часть определенной VLAN"
+      "Введите следующее вот так."
     ]
   },
   {
     "time": [
-      206.496652,
-      211.483395
+      208.713495,
+      212.195849
     ],
     "en": [
-      "on the switches in the previous lab only one type of encapsulation is available"
+      "Then drop the JPEG file into your project."
     ],
     "ru": [
-      "на коммутаторах в предыдущей лабораторной работе доступен только один тип инкапсуляции"
+      "Затем перетащите файл JPEG в свой проект."
     ]
   },
   {
     "time": [
-      211.483395,
-      215.530344
+      212.195849,
+      221.216849
     ],
     "en": [
-      "so there is no need to configure which type of encapsulation to use"
+      "You will see on the left as mole dot jpg,"
     ],
     "ru": [
-      "поэтому нет необходимости настраивать, какой тип инкапсуляции использовать"
+      "Вы увидите слева как родинка в формате jpg,"
     ]
   },
   {
     "time": [
-      215.530344,
-      219.607772
+      221.216849,
+      228.597495
     ],
     "en": [
-      "however some models support two types of encapsulation"
+      "then simply typed the path name into your background image style."
     ],
     "ru": [
-      "однако некоторые модели поддерживают два типа инкапсуляции"
+      "затем просто введите имя пути в свой стиль фонового изображения."
     ]
   },
   {
     "time": [
-      219.607772,
-      223.577219
+      228.597495,
+      234.597037
     ],
     "en": [
-      "one known as ISL which is Cisco proprietary"
+      "Now let's see if that has worked by hard coding it into our HTML."
     ],
     "ru": [
-      "один, известный как ISL, который является собственностью Cisco"
+      "Теперь давайте посмотрим, сработало ли это, жестко закодировав это в нашем HTML."
     ]
   },
   {
     "time": [
-      223.577219,
-      228.288559
+      234.597037,
+      244.912745
     ],
     "en": [
-      "and one known as 802.1 Q or dot1q"
+      "And it has perfect right now on to writing our JavaScript and making our game work."
     ],
     "ru": [
-      "и один, известный как 802.1 Q или dot1q"
+      "И прямо сейчас он идеально подходит для написания нашего JavaScript и обеспечения работы нашей игры."
     ]
   },
   {
     "time": [
-      228.288559,
-      229.669872
+      244.912745,
+      249.916579
     ],
     "en": [
-      "which is an industry standard"
+      "We will start by selecting all the devs with class name of square from our HTML file"
     ],
     "ru": [
-      "что является отраслевым стандартом"
+      "Мы начнем с выбора всех разработчиков с именем класса square из нашего HTML-файла."
     ]
   },
   {
     "time": [
-      229.669872,
-      234.516813
+      249.916579,
+      254.565308
     ],
     "en": [
-      "dot1q is by far the most common encapsulation type"
+      "and calling them square for our JavaScript file and our future using it."
     ],
     "ru": [
-      "dot1q на сегодняшний день является наиболее распространенным типом инкапсуляции"
+      "и называем их квадратными для нашего файла JavaScript и нашего будущего с его использованием."
     ]
   },
   {
     "time": [
-      234.516813,
-      237.650697
+      254.565308,
+      259.067745
     ],
     "en": [
-      "and lets configure this interface to use dot1q"
+      "We will do the same for divs with the class name of model."
     ],
     "ru": [
-      "и давайте настроим этот интерфейс для использования dot1q"
+      "Мы сделаем то же самое для div с именем класса model."
     ]
   },
   {
     "time": [
-      237.650697,
-      241.416636
+      259.067745,
+      266.060433
     ],
     "en": [
-      "since we need to configure the encapsulation type to create a trunk"
+      "And also for time left using query selector to find the ID of time left,"
     ],
     "ru": [
-      "поскольку нам нужно настроить тип инкапсуляции для создания магистрали"
+      "А также для оставшегося времени с помощью селектора запросов, чтобы найти идентификатор оставшегося времени,"
     ]
   },
   {
     "time": [
-      241.416636,
-      244.17984
+      266.060433,
+      271.572599
     ],
     "en": [
-      "we do that with this command"
+      "shown here as an ID by using the hash as opposed to a dot for class names."
     ],
     "ru": [
-      "мы делаем это с помощью этой команды"
+      "показано здесь как идентификатор с использованием хеша, а не точки для имен классов."
     ]
   },
   {
     "time": [
-      244.17984,
-      249.6192
+      271.572599,
+      279.601037
     ],
     "en": [
-      "switch port trunk encapsulation dot1q"
+      "Again, we do the same for school and use a let as this will change as we progress in the game."
     ],
     "ru": [
-      "инкапсуляция соединительной линии порта коммутатора dot1q"
+      "Опять же, мы делаем то же самое для школы и используем let, так как это будет меняться по мере нашего продвижения в игре."
     ]
   },
   {
     "time": [
-      249.6192,
-      252.557067
+      279.601037,
+      288.607745
     ],
     "en": [
-      "now we can make the trunk link"
+      "To start the game,",
+      "let's set result zero and get to writing our first function of randomly selecting a square on our grid."
     ],
     "ru": [
-      "теперь мы можем сделать магистраль"
+      "Чтобы начать игру,",
+      "давайте установим нулевой результат и приступим к написанию нашей первой функции случайного выбора квадрата в нашей сетке."
     ]
   },
   {
     "time": [
-      252.557067,
-      254.98895
+      279.601037,
+      288.607745
     ],
     "en": [
-      "switch port mode trunk"
+      "To start the game,",
+      "let's set result zero and get to writing our first function of randomly selecting a square on our grid."
     ],
     "ru": [
-      "переключатель режима порта магистраль"
+      "Чтобы начать игру,",
+      "давайте установим нулевой результат и приступим к написанию нашей первой функции случайного выбора квадрата в нашей сетке."
     ]
   },
   {
     "time": [
-      254.98895,
-      258.766149
+      279.601037,
+      288.607745
     ],
     "en": [
-      "now let's do the same commands on switch2"
+      "To start the game,",
+      "let's set result zero and get to writing our first function of randomly selecting a square on our grid."
     ],
     "ru": [
-      "теперь давайте сделаем те же команды на switch2"
+      "Чтобы начать игру,",
+      "давайте установим нулевой результат и приступим к написанию нашей первой функции случайного выбора квадрата в нашей сетке."
     ]
   },
   {
     "time": [
-      258.766149,
-      267.555151
+      288.607745,
+      294.114204
     ],
     "en": [
-      "interface f01 switch port trunk encapsulation dot1q"
+      "We will start as with all grid based games by removing any class from DOS,"
     ],
     "ru": [
-      "интерфейс f01 коммутатор порт магистральная инкапсуляция dot1q"
+      "Мы начнем, как и все игры на основе сетки, с удаления любого класса из DOS,"
     ]
   },
   {
     "time": [
-      267.555151,
-      269.761237
+      294.114204,
+      302.625058
     ],
     "en": [
-      "switch port mode trunk"
+      "this is done so there are no seemingly left behind divs with styling on our board using an arrow function,"
     ],
     "ru": [
-      "переключатель режима порта магистраль"
+      "это сделано, чтобы на нашей плате не осталось никаких div со стилем, использующим стрелочную функцию,"
     ]
   },
   {
     "time": [
-      269.761237,
-      272.344719
+      302.625058,
+      307.332557
     ],
     "en": [
-      "that's all for step 3"
+      "and for each, we remove the class name and more from all of our squares in the grid."
     ],
     "ru": [
-      "это все для шага 3"
+      "и для каждого мы удаляем имя класса и многое другое из всех наших квадратов в сетке."
     ]
   },
   {
     "time": [
-      272.344719,
-      279.438259
+      307.332557,
+      313.325265
     ],
     "en": [
-      "step four is to once again ping to test connectivity"
+      "Now we define a random position on our grid by using math random."
     ],
     "ru": [
-      "Шаг четвертый - еще раз пинговать, чтобы проверить подключение"
+      "Теперь мы определяем случайную позицию в нашей сетке, используя математический случай."
     ]
   },
   {
     "time": [
-      279.438259,
-      282.277329
+      313.325265,
+      317.834932
     ],
     "en": [
-      "if everything is configured correctly"
+      "And then we multiply by the number of squares we have in the grid."
     ],
     "ru": [
-      "если все настроено правильно"
+      "А затем умножаем на количество квадратов в сетке."
     ]
   },
   {
     "time": [
-      282.277329,
-      285.790465
+      317.834932,
+      324.804161
     ],
     "en": [
-      "PC - and PC 3 should be able to pin each other"
+      "We use math floor to round down to the nearest integer so that the random position is always under or equivalent to nine."
     ],
     "ru": [
-      "ПК - и ПК 3 должны иметь возможность связывать друг друга"
+      "Мы используем математический пол для округления до ближайшего целого числа, чтобы случайная позиция всегда была меньше или эквивалентна девяти."
     ]
   },
   {
     "time": [
-      285.790465,
-      288.173147
+      324.804161,
+      328.317036
     ],
     "en": [
-      "because they are both in VLAN 2"
+      "Once the random position is defined,"
     ],
     "ru": [
-      "потому что они оба находятся в VLAN 2"
+      "Как только случайная позиция определена,"
     ]
   },
   {
     "time": [
-      288.173147,
-      290.802586
+      328.317036,
+      333.355307
     ],
     "en": [
-      "and we have a trunk connection between the two switches"
+      "we add the class of mall to it so that the mall appears in the grid."
     ],
     "ru": [
-      "и у нас есть магистральное соединение между двумя коммутаторами"
+      "мы добавляем к нему класс торгового центра, чтобы торговый центр отображался в сетке."
     ]
   },
   {
     "time": [
-      290.802586,
-      294.716656
+      333.355307,
+      340.390661
     ],
     "en": [
-      "they should not be able to ping PC one or vice versa"
+      "Next, we pass on the random positions ID to our hit position."
     ],
     "ru": [
-      "они не должны иметь возможность пинговать ПК один или наоборот"
+      "Затем мы передаем идентификатор случайных позиций в нашу позицию попадания."
     ]
   },
   {
     "time": [
-      294.716656,
-      298.613961
+      340.390661,
+      342.874432
     ],
     "en": [
-      "because PC one is still in the native VLAN VLAN one"
+      "We need this to use later in our code."
     ],
     "ru": [
-      "потому что ПК один все еще находится в собственной VLAN VLAN one"
+      "Нам нужно это использовать позже в нашем коде."
     ]
   },
   {
     "time": [
-      298.613961,
-      302.427273
+      342.874432,
+      346.891765
     ],
     "en": [
-      "I'll use PC one first"
+      "So for example, if the ID of the position from our HTML is four,"
     ],
     "ru": [
-      "Я сначала воспользуюсь ПК"
+      "Так, например, если идентификатор позиции из нашего HTML равен четырем,"
     ]
   },
   {
     "time": [
-      302.427273,
-      306.359589
+      346.891765,
+      348.87339
     ],
     "en": [
-      "ping 10.0.0.2"
+      "this will now be our hip position."
     ],
     "ru": [
-      "пинг 10.0.0.2"
+      "теперь это будет наша позиция бедра."
     ]
   },
   {
     "time": [
-      306.359589,
-      309.207317
+      348.87339,
+      356.075098
     ],
     "en": [
-      "doesn't work"
+      "We will now use an arrow function for each and an event listener to write if statements."
     ],
     "ru": [
-      "не работает"
+      "Теперь мы будем использовать стрелочную функцию для каждого и прослушиватель событий для написания операторов if."
     ]
   },
   {
     "time": [
-      309.207317,
-      314.216827
+      356.075098,
+      371.611848
     ],
     "en": [
-      "next ping 10.0.0.3"
+      "The eventlistener mouse up refers to when we hit our mouse on an element."
     ],
     "ru": [
-      "следующий пинг 10.0.0.3"
+      "Поднятие мыши в слушателе событий относится к тому, когда мы нажимаем мышью на элемент."
     ]
   },
   {
     "time": [
-      314.216827,
-      316.795943
+      371.611848,
+      379.232806
     ],
     "en": [
-      "doesn't work as expected"
+      "On this occasion,",
+      "it means if we hit with our mouse,",
+      "and the ID of that div equals our hip position,",
+      "we win."
     ],
     "ru": [
-      "не работает как ожидалось"
+      "На этот раз,",
+      "это означает, что если мы ударим мышкой,",
+      "и идентификатор этого div равен нашему положению бедра,",
+      "мы выигрываем."
     ]
   },
   {
     "time": [
-      316.795943,
-      321.746979
+      371.611848,
+      379.232806
     ],
     "en": [
-      "now let's just try a ping between PC 2 and PC three"
+      "On this occasion,",
+      "it means if we hit with our mouse,",
+      "and the ID of that div equals our hip position,",
+      "we win."
     ],
     "ru": [
-      "теперь давайте просто попробуем пинг между ПК 2 и ПК 3"
+      "На этот раз,",
+      "это означает, что если мы ударим мышкой,",
+      "и идентификатор этого div равен нашему положению бедра,",
+      "мы выигрываем."
     ]
   },
   {
     "time": [
-      321.746979,
-      324.311338
+      371.611848,
+      379.232806
     ],
     "en": [
-      "I'll go on PC 2"
+      "On this occasion,",
+      "it means if we hit with our mouse,",
+      "and the ID of that div equals our hip position,",
+      "we win."
     ],
     "ru": [
-      "Я пойду на ПК 2"
+      "На этот раз,",
+      "это означает, что если мы ударим мышкой,",
+      "и идентификатор этого div равен нашему положению бедра,",
+      "мы выигрываем."
     ]
   },
   {
     "time": [
-      324.311338,
-      329.38028
+      371.611848,
+      379.232806
     ],
     "en": [
-      "ping 10.0.0.3"
+      "On this occasion,",
+      "it means if we hit with our mouse,",
+      "and the ID of that div equals our hip position,",
+      "we win."
     ],
     "ru": [
-      "пинг 10.0.0.3"
+      "На этот раз,",
+      "это означает, что если мы ударим мышкой,",
+      "и идентификатор этого div равен нашему положению бедра,",
+      "мы выигрываем."
     ]
   },
   {
     "time": [
-      329.38028,
-      331.747561
+      371.611848,
+      379.232806
     ],
     "en": [
-      "the ping works as expected"
+      "On this occasion,",
+      "it means if we hit with our mouse,",
+      "and the ID of that div equals our hip position,",
+      "we win."
     ],
     "ru": [
-      "пинг работает как ожидалось"
+      "На этот раз,",
+      "это означает, что если мы ударим мышкой,",
+      "и идентификатор этого div равен нашему положению бедра,",
+      "мы выигрываем."
     ]
   },
   {
     "time": [
-      331.747561,
-      333.679999
+      371.611848,
+      379.232806
     ],
     "en": [
-      "that's all for this lab"
+      "On this occasion,",
+      "it means if we hit with our mouse,",
+      "and the ID of that div equals our hip position,",
+      "we win."
     ],
     "ru": [
-      "это все для этой лаборатории"
+      "На этот раз,",
+      "это означает, что если мы ударим мышкой,",
+      "и идентификатор этого div равен нашему положению бедра,",
+      "мы выигрываем."
     ]
   },
   {
     "time": [
-      333.679999,
-      341.536251
+      371.611848,
+      379.232806
     ],
     "en": [
-      "thank you for watching I hope this lab and video have been helpful for you"
+      "On this occasion,",
+      "it means if we hit with our mouse,",
+      "and the ID of that div equals our hip position,",
+      "we win."
     ],
     "ru": [
-      "Спасибо за просмотр. Надеюсь, эта лабораторная работа и видео были для вас полезны."
+      "На этот раз,",
+      "это означает, что если мы ударим мышкой,",
+      "и идентификатор этого div равен нашему положению бедра,",
+      "мы выигрываем."
     ]
   },
   {
     "time": [
-      341.536251,
-      346.408613
+      379.232806,
+      382.828639
     ],
     "en": [
-      "please subscribe for future labs like this which will be released weekly"
+      "And we add one point to our result,"
     ],
     "ru": [
-      "пожалуйста, подпишитесь на будущие лабораторные работы, которые будут выпускаться еженедельно"
+      "И мы добавляем к нашему результату одно очко,"
     ]
   },
   {
     "time": [
-      346.408613,
-      351.558455
+      382.828639,
+      388.445222
     ],
     "en": [
-      "if you have requests for any specific labs let me know in the comment section"
+      "we then use text content to visually display that result in the browser."
     ],
     "ru": [
-      "если у вас есть запросы по каким-либо конкретным лабораториям, дайте мне знать в разделе комментариев"
+      "Затем мы используем текстовое содержимое для визуального отображения этого результата в браузере."
     ]
   },
   {
     "time": [
-      351.558455,
-      357.464676
+      388.445222,
+      394.162012
     ],
     "en": [
-      "if you want to support my channel I accept Bitcoin donations via the address in the description"
+      "Now, we need to write a function that will move the mole every so often,"
     ],
     "ru": [
-      "если вы хотите поддержать мой канал, я принимаю пожертвования в биткойнах по адресу в описании"
+      "Теперь нам нужно написать функцию, которая будет время от времени перемещать родинку,"
     ]
   },
   {
     "time": [
-      357.464676,
-      366.394568
+      394.162012,
+      396.363658
     ],
     "en": [
-      "I am also a brave verified publisher and accept bat or basic attention token donations in the brave browser"
+      "we can set this time interval ourselves."
     ],
     "ru": [
-      "Я также храбрый проверенный издатель и принимаю пожертвования летучих мышей или базовых токенов внимания в смелом браузере."
+      "мы можем сами установить этот временной интервал."
     ]
   },
   {
     "time": [
-      366.394568,
-      366.394568
+      396.363658,
+      400.308408
+    ],
+    "en": [
+      "We start by setting the timer ID as null,"
+    ],
+    "ru": [
+      "Мы начинаем с установки идентификатора таймера как null,"
+    ]
+  },
+  {
+    "time": [
+      400.308408,
+      405.805637
+    ],
+    "en": [
+      "then using set interval to make the function random square run every 1000 milliseconds,"
+    ],
+    "ru": [
+      "затем, используя заданный интервал, чтобы функция произвольно запускала квадрат каждые 1000 миллисекунд,"
+    ]
+  },
+  {
+    "time": [
+      405.805637,
+      409.32745
+    ],
+    "en": [
+      "you can obviously change this to whatever time you want."
+    ],
+    "ru": [
+      "вы, очевидно, можете изменить это на любое время, которое захотите."
+    ]
+  },
+  {
+    "time": [
+      409.32745,
+      415.327575
+    ],
+    "en": [
+      "Let's invoke this function like so and see in an action."
+    ],
+    "ru": [
+      "Давайте вызовем эту функцию вот так и посмотрим в действии."
+    ]
+  },
+  {
+    "time": [
+      415.327575,
+      424.031282
+    ],
+    "en": [
+      "Great now let's remove that function to an invoke it and get to realizing how much time we have left in the game for that extra suspense."
+    ],
+    "ru": [
+      "Отлично, теперь давайте удалим эту функцию, чтобы вызвать ее, и приступим к пониманию того, сколько времени у нас осталось в игре для этого дополнительного напряжения."
+    ]
+  },
+  {
+    "time": [
+      424.031282,
+      432.427761
+    ],
+    "en": [
+      "That scroll to the top and that current time be the inner context of the header two with ID time left."
+    ],
+    "ru": [
+      "Прокрутите вверх, и это текущее время будет внутренним контекстом второго заголовка с оставшимся идентификатором времени."
+    ]
+  },
+  {
+    "time": [
+      432.427761,
+      436.931365
+    ],
+    "en": [
+      "Now let's write our countdown function."
+    ],
+    "ru": [
+      "Теперь напишем нашу функцию обратного отсчета."
+    ]
+  },
+  {
+    "time": [
+      436.931365,
+      443.963552
+    ],
+    "en": [
+      "This function will make our current time go down by one incrementally show this new time in the browser."
+    ],
+    "ru": [
+      "Эта функция заставит наше текущее время постепенно уменьшаться на единицу, отображая это новое время в браузере."
+    ]
+  },
+  {
+    "time": [
+      443.963552,
+      446.439365
+    ],
+    "en": [
+      "And if the current time which is zero,"
+    ],
+    "ru": [
+      "И если текущее время равно нулю,"
+    ]
+  },
+  {
+    "time": [
+      446.439365,
+      448.422136
+    ],
+    "en": [
+      "we have a game over."
+    ],
+    "ru": [
+      "у нас игра окончена."
+    ]
+  },
+  {
+    "time": [
+      448.422136,
+      460.551302
     ],
     "en": [
       ""
@@ -1009,20 +1195,56 @@ let objs = [
   },
   {
     "time": [
-      366.394568,
-      366.394568
+      460.551302,
+      466.536594
     ],
     "en": [
-      ""
+      "we clear the time interval and setting an alert to let the user know that the game is over and that final result."
     ],
     "ru": [
-      ""
+      "мы очищаем временной интервал и устанавливаем предупреждение, чтобы пользователь знал, что игра окончена и что окончательный результат."
     ]
   },
   {
     "time": [
-      366.394568,
-      366.394568
+      466.536594,
+      472.048136
+    ],
+    "en": [
+      "Finally, using set interval we pass through the countdown function,"
+    ],
+    "ru": [
+      "Наконец, используя заданный интервал, мы переходим через функцию обратного отсчета,"
+    ]
+  },
+  {
+    "time": [
+      472.048136,
+      477.504448
+    ],
+    "en": [
+      "make it evoke every one second and there you have it."
+    ],
+    "ru": [
+      "заставьте его вызывать каждую секунду, и вот оно."
+    ]
+  },
+  {
+    "time": [
+      477.504448,
+      480.039011
+    ],
+    "en": [
+      "Blackmore."
+    ],
+    "ru": [
+      "Блэкмор."
+    ]
+  },
+  {
+    "time": [
+      480.039011,
+      480.039011
     ],
     "en": [
       ""
