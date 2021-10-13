@@ -1,5 +1,5 @@
 *{
-  font-family:Arial;
+  font-family: Arial;
   font-size:1.2rem;
 }
 
@@ -7,8 +7,8 @@
 .grid{
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
-  width: 130vh;
+  height: 70vmin;
+  width: 100vmin;
   /* width: 400px; */
   background-color: beige;
   justify-content: center;

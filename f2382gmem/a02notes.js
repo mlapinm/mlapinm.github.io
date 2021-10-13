@@ -12,7 +12,7 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "g01",
+      "codepen.io",
       "candy crash"
     ],
     "link": "https://codepen.io/mlapin/full/JjWPqYO"
@@ -21,7 +21,7 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "g02",
+      "codepen.io",
       "Minesweeper"
     ],
     "link": "https://codepen.io/mlapin/full/oNBrPGd"
@@ -39,9 +39,45 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "g04",
+      "g02",
+      "snake"
+    ],
+    "link": "g02snake.html"
+  },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "g0",
       ""
     ],
     "link": "g0.html"
-  }
+  },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "g0",
+      ""
+    ],
+    "link": "g0.html"
+  },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "g0",
+      ""
+    ],
+    "link": "g0.html"
+  },
+  {
+    "header": "",
+    "title": "ships one",
+    "card-text": [
+      "codpen.io",
+      ""
+    ],
+    "link": "https://codepen.io/mlapin/full/oNZxeWa"
+  },
 ]

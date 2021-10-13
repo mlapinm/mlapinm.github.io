@@ -1,46 +1,5 @@
 [
     {
-	 "header": "BATTLESHIPS",
-	 "title": "BATTLESHIPS in JavaScript",
-	 "card-text": [
-	 "Code with Ania Kubow pure JavaScript codepen.io",
-	 "In this walkthrough we will:",
-	 "make 5 draggable ships",
-	 "rotate the ships prior to dragging",
-	 "make the computer take random goes",
-	 "display results based on who has sunk whos ship",
-	 "display the winner"
-	 ],
-	 "link": "https://codepen.io/mlapin/full/oNZxeWa"
-	},
-    {
-	 "header": "snake",
-	 "title": "Code with Ania Kubow pure JavaScript codepen.io",
-	 "card-text": [
-	 "BUILD NOKIA 3310 SNAKE using JavaScript in under 15 minutes",
-	 "",
-	 "",
-	 "",
-	 "",
-	 "",
-	 "",
-	 "",
-	 ""
-	 ],
-	 "link": "https://codepen.io/mlapin/full/KKWVdNK"
-	},
-    {
-	 "header": "candy",
-	 "title": "candy crush",
-	 "card-text": [
-	 "Code with Ania Kubow pure JavaScript codepen.io",
-	 "> 3 in line",
-	 "",
-	 ""
-	 ],
-	 "link": "https://codepen.io/mlapin/full/JjWPqYO"
-	},
-    {
 	 "header": "pixels",
 	 "title": "draw pixels",
 	 "card-text": [""],
@@ -53,22 +12,16 @@
 	 "link": "https://codepen.io/mlapin/full/LYxwBjp"
 	},
     {
-	 "header": "Minesweeper",
-	 "title": "Minesweeper",
-	 "card-text": [""],
-	 "link": "https://codepen.io/mlapin/full/oNBrPGd"
-	},
-    {
 	 "header": "ConnectFour",
 	 "title": "ConnectFour",
 	 "card-text": [""],
 	 "link": "https://codepen.io/mlapin/full/KKaYYRq"
 	},
     {
-	 "header": "gmem",
-	 "title": "gmem",
+	 "header": "",
+	 "title": "",
 	 "card-text": [""],
-	 "link": "https://mlapinm.github.io/gmem/index.html"
+	 "link": ""
 	},
     {
 	 "header": "",
