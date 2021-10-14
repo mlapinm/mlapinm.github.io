@@ -113,7 +113,8 @@ $(()=>{
   makeGrid()
 
   $('.out').click(() => {
-    $('.black-out').text(1)
+    let blackSum =  Number($('.black-out').text()) 
+    let whiteSum =  Number($('.white-out').text()) 
 
         let checkedFishkas = fishkas.filter(e => 
           e.hasClass('checked')
@@ -123,6 +124,14 @@ $(()=>{
           prevFishka.removeClass('checked')
           let square = prevFishka.parent()
           square.html('')
+          if(prevFishka.hasClass('fishka-black')){
+            whiteSum += 1
+            $('.white-out').text(whiteSum)  
+          }else{
+            blackSum += 1
+            $('.black-out').text(blackSum)  
+
+          }
         }
 
 
