@@ -1,9 +1,9 @@
 var notes = [
   {
     "header": "",
-    "title": "",
+    "title": "boom",
     "card-text": [
-      "boom",
+      "",
       "",
       ""
     ],
@@ -11,13 +11,13 @@ var notes = [
    },
   {
     "header": "",
-    "title": "",
+    "title": "checkers",
     "card-text": [
       "",
       "",
       ""
     ],
-    "link": "d00boom.html"
+    "link": "d01checkers.html"
    },
   {
     "header": "",

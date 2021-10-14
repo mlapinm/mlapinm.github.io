@@ -1,0 +1,33 @@
+* {
+  font-size: 2rem;
+  font-family: sans-serif;
+  line-height: 0.9;
+
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	
+
+
+
+	width: 100vmin;
+	height: 100vmin;
+	/* border: solid 1px; */
+}
+
+.lane {
+	height: 3vmin;
+}
+
+.square {
+	width: 11.6%;
+	height: 12.1%;
+
+	border: solid 2px;
+}
+
+.black-cell {
+	background-color: cadetblue;
+}
