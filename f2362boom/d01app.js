@@ -71,7 +71,9 @@ $(()=>{
           e.hasClass('checked')
         )
         if(checkedFishkas.length == 0 ){
-          fishka.addClass('checked')
+          if(fishka){
+            fishka.addClass('checked')
+          }
         }else{
           prevFishka = checkedFishkas[0]
         }
@@ -92,9 +94,6 @@ $(()=>{
         }
 
 
-        console.log(prevFishka)
-        console.log(fishka)
-
       })
     }
 
@@ -109,7 +108,6 @@ $(()=>{
       fishkas.push(fishka)
       $('.cell' + beginPos[i]).append(fishka)
     }
-    console.log(fishkas[0].hasClass('checked'))
   }
 
   makeGrid()
@@ -129,8 +127,7 @@ $(()=>{
 
 
 
-      // console.log(333)
-    
+   
   })
 
   log1.text()
