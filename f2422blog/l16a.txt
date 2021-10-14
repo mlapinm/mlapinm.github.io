@@ -1,0 +1,148 @@
+welcome back to another Inkscape
+tutorial in this video we're going to be
+looking at using the freehand drawing
+tool and I've told you in past videos
+stay away from it
+but I just want to show you some of the
+different settings of it and if you are
+gonna use it actually I show you kind of
+some some things that can be nice with
+it so I have my freehand tool selected
+and this is gonna be a good precursor
+into using the bezzie a tool which we'll
+cover in the next video also in the past
+video we talked about paths and objects
+in just the previous video before this
+so if you haven't watched that one yet
+go ahead and watch it it'll help this
+make a little more sense so if we draw
+anything with this sort of pencil tool
+this freehand draw tool and then we go
+to edit the nodes of it by using this
+tool here we see we've got all these
+different nodes and that's because we
+had our there's different settings for
+this when we do freehand drawing so by
+default it's a very it records
+everything we do and it creates it kind
+of jagged so we could smooth this out
+and what we do is we go to path since
+this is a path and not an object we go
+to path and then we just go to simplify
+and what that's actually gonna do is
+remove some of those nodes so now if we
+go see there's not nearly as many nodes
+as there were before we do the same
+thing again you go to path simplify and
+it gets rid of some of those nodes and
+in the process it smoothes this out a
+little bit so it's a little more smooth
+another way we can do this is just when
+we're drying and this is like a big
+difference a lot of people think when
+they first start using Inkscape they're
+like well illustrator you know does
+freehand drawing a lot cleaner but
+that's because it's just a setting it's
+at under smoothness and Inkscape can do
+the same thing so you just turn the
+smoothness up to like 50 up here under
+the settings when you have the freehand
+tool selected and now if we draw some
+squiggly lines it smoothes it out and we
+can make this even more if we do like
+yes 282 this is gonna be like really
+smooth
+so it just kind of smoothes it it takes
+what we drew and it doesn't do exactly
+what we did and it gives it much less
+nodes so now we only have one two three
+four five six nodes which lets us have a
+lot more control so if you're signing
+your stick
+mature and you have this down to the
+default which is five
+your signature is gonna look super super
+ugly I think and if you go to edit it
+you're gonna have a thousand nodes in
+here to edit especially if you draw
+slowly the slower you draw your
+signature this look your the way more
+nodes you're gonna get in there I see
+look at this but if we turn the
+smoothness up to even like turn to 95
+which is just way higher than you
+probably ever want to do and then we
+draw like the letter A it just makes it
+look nice and smooth right or look the
+letter let's do it T
+J yeah so that's just much smoother than
+it would have looked if we had our
+smoothness down to 5% or five because
+with this it's like TJ and it's just a
+lot more you can see the difference of
+it right and you can really see the
+difference when you go in to edit the
+notes this one has basically this is two
+nodes one two incredibly simple whereas
+this one is no not so many but it's
+still quite a bit it's like twenty
+different nodes maybe these things are
+quite you know a lot of different nodes
+to create this arc whereas this one is
+gonna be just two nodes that's it to
+create the arc and that's we're gonna
+learn more about in the next tutorial
+with our Bezier tool
+but these arcs are controlled you have
+these handles here so you can control
+the steepness of this arc you pull this
+handle out or you can control the angle
+of it and control the shape that way
+anyway let's get into our Bezier tool in
+the next video but that's how you can
+use the freehand tool if you want to
+just use this smoothness that's gonna
+help things out a lot or if ever you
+have a really complicated thing like
+this J here and you want to smooth it
+out you can go to path and then go to
+simplify and you can do that a couple
+times paths simplify just keep doing
+that a few times and eventually you'll
+have a really much simpler you'll just
+remove the amount of nodes you have and
+create a simpler object that you can
+edit much easier than having to go in
+and edit every single
+you have too many nodes and I guess I'll
+show you this too you can actually
+select multiple nodes so if we select
+just these bottom ones then we can move
+these bottom ones independent of the
+rest of the nodes you can select
+multiple nodes and delete them if I
+select those three I hit the Delete key
+you'll just delete those nodes so that's
+just sort of you know touching on
+getting started editing nodes and again
+these are this is only with paths if you
+go to draw like a rectangle and you want
+to edit the nodes of it you can't
+because it's an object and not a path so
+to do that like we learned in our last
+video and go to path object to path then
+you can edit individual nodes and you
+can add in nodes by double clicking you
+can add another node in there and create
+a kind of a cool shape right and you can
+actually click and just create an arc if
+you click and drag you can bend a part
+of the shape and kind of start to create
+really cool-looking things so join me in
+the next video where we'll talk about
+and be demonstrating using the Bezier
+tool go ahead and feel free to ask
+questions comment below get involved the
+discussion and I'll see you on the next
+video
