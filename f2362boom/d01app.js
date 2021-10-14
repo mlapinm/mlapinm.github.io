@@ -1,6 +1,5 @@
 
 let fishkas = []
-let prevFishka = null
 
 
 $(()=>{
@@ -51,6 +50,7 @@ $(()=>{
       grid.append(square)
 
       square.click((e) => {
+        let prevFishka = null
         let fishka = null
         let square = null
         let q = $(e.target)
@@ -120,7 +120,7 @@ $(()=>{
           e.hasClass('checked')
         )
         if(checkedFishkas.length == 1){
-          prevFishka = checkedFishkas[0]
+          let prevFishka = checkedFishkas[0]
           prevFishka.removeClass('checked')
           let square = prevFishka.parent()
           square.html('')
