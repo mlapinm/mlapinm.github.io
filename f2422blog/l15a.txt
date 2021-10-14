@@ -1,0 +1,282 @@
+ welcome back to another Inkscape
+tutorial in this video we'll be learning
+how to draw lines the right way in
+vector art and we'll be learning about
+paths and objects and the difference
+between the two so it's a very important
+thing to learn and it's really what sets
+Inkscape and illustrator and other
+vector editors apart from Photoshop
+and bitmap editors so what I mean is if
+we grab this freehand tool which I've
+cautioned you about using in the past we
+can just draw whatever we want and it
+creates kind of it draws that line but
+then if we go back to our selection tool
+we notice that this kind of squiggly
+line that we've drawn behaves similar to
+different shapes that we drew we can
+click it a second time and rotate it
+around we can apply some skew to it if
+we just click it again we can just scale
+and rotate we can scale it on a single
+axis so it's kind of similar to when we
+drew like our rectangles right we can do
+all the same things to our rectangle so
+this is sort of drawing a freehand line
+but I caution you against it and the
+difference between these two things are
+one is a path well there's a lot of
+differences but this is a path and this
+is an object an object has some is
+anything that is I mean I guess this
+isn't the real way to define it but in
+my mind an object is something that has
+predetermined settings in vector art so
+a square is a predetermined shape and so
+it's like a circle as if we draw a
+circle here so this circle has
+predetermined math to make it much
+simpler then than just drawing a bunch
+of than just drawing a line so what I
+mean by that is if we double-click very
+quickly remember we got these different
+points we have a point here that we can
+determine the radius so the distance
+from the center of the circle on the y
+axis and the distance from the center of
+the circle on the x axis so just off of
+those two points using some simple math
+you can create a circle
+and so with very few instructions you
+can tell the computer how to recreate
+this circle and then also even leaving
+out even with this part here I it's it's
+a pretty simple operation to tell the
+computer hey just leave out this certain
+part of the circle so create an art from
+this distance to this distance and just
+don't draw the circle in and is to draw
+a line to the center of the circle here
+so I guess what I'm saying is it's much
+less intensive than if we were to grab
+the freehand tool and draw and draw draw
+and recreate this shape first of all if
+we try and do that it's just not going
+to look so pretty we can still make it
+green and we can try and come up here
+and change our stroke to make it kind of
+fat to match that one the difference is
+this the thing that we've drawn is a
+path anytime we freehand draw something
+or when we draw with the Bezier tool
+like we're going to be using later it
+creates a path not an object so the way
+that Inkscape is interpreting this shape
+that we drew we can tell by
+double-clicking on it very quickly and
+we see all these grey dots appear these
+are all the different nodes that it that
+have been created to tell Inkscape how
+to recreate this shape and if we click
+on this one would double click very
+quickly or if we just click while we
+have our right now it's defaulted into
+our edit pass by node tool and so now we
+can see this is only we have four
+different reference points is what
+Inkscape is being told here it's saying
+draw a circle with this X and this Y and
+then cut out a radius from this point to
+this point so it's much much simpler
+which means it uses less space when
+we're saving our file it's also what
+lets us allows us to rescale without
+losing clarity and without having our
+object become pixelated this one we can
+rescale to and it won't become pixelated
+but it is much more intensive because we
+have all these points and it's also
+harder to edit so if we want to edit
+this if we wanted to change any point of
+it we can zoom in here and see we can
+actually move any of these grey dots
+called nodes we can move it around and
+kind of change the shape of this a
+little bit but there's some
+many of them to be tedious to do one by
+one and that's kind of why I've
+cautioned against using the freehand
+tool anytime you would want to use the
+freehand tool what you really should be
+using is the Bezier tool and we're going
+to cover that more in the next video
+we'll go over using the Bezier tool
+but let's do a little bit quickly here
+to show you the basics of it so I'm
+gonna left click here on our selection
+I'll take this will delete this object
+will delete our square will delete our
+circle and will even delete this
+squiggly line that we drew first so I'm
+gonna click on the Bezier tool and we're
+just going to left-click a single point
+here and a single point here and then
+I'll just hit B well I'm gonna the
+Escape key I forgot so I was doing
+something earlier and maybe if you
+played with it you might be on a
+different setting
+so I'm actually on this spyro setting
+but I want to be on just the regular
+setting so make sure you have regular
+selected and then will you probably do
+by default then just left click come to
+a different point and left click again
+and hit the enter key and we've created
+a straight line this is the recommended
+way to create a line in Inkscape or any
+vector image Pro editing program I've
+come to the selection tool now we have
+this selected so we can rotate this line
+around just like we would any other just
+like we would an object although this is
+not an object it's a path and that a
+path just means it's made up of nodes
+and connecting lines between those nodes
+so this is a very simple path if I
+double click on it we see we have a node
+here and a node here and that's it
+that's this entire path it's creating a
+path for a line to follow we can do a
+little bit more advanced one if I click
+on the Bezier tool again we can click a
+couple different points and then hit
+enter and now we've created a little bit
+more tiny bit more advanced paths so we
+can come here and click Edit the nodes
+of this and we can see all right so
+we've got a node here a node here and
+it's just drawing a straight line
+between each of them now we can do the
+same thing with our square or our
+rectangle tool if we draw a rectangle
+maybe we want to change maybe we want to
+this kind of has 4 points right 1 2 3 4
+but if we double click on it very
+quickly
+the options we have is round the corners
+or change the size we can't move one one
+point of it we don't have these
+different nodes that's because this is
+an object so we can turn an object into
+a path in Inkscape and it's a really
+important thing to learn how to do and
+the way we do it we just go up to object
+or we go up to path I mean and go object
+to path so while our square is selected
+our rectangle go to path then click
+object to path now the compromise is we
+can no longer round the corners of this
+like we would like we could before if we
+double click we don't have that rounded
+corner option and we can't resize like
+we like we could before I mean we can
+still resize like this like we can any
+drawn thing in Inkscape but if I
+double-click very quickly now we have
+these different points to control so
+it's kind of a subtle difference but now
+we can make it like a shape like this so
+we have four points this is how you
+would create this shape in Inkscape if
+we wanted to do that we can do the same
+thing it's gonna get crazy with our
+circle but we can do the same thing with
+our circle so this we can go draw it
+it's an object right now by default but
+if we go path object to path now if we
+click on this edit we can see the
+different nodes of this Oh actually it's
+not too crazy what it's done is its
+created curved lines so it only has a
+few more points than it did before so
+now we can change the center point of
+this which we couldn't do before we can
+change the arc on this by grabbing this
+it's kind of like a handle so we can
+grab this we'll learn more about this in
+the next tutorial about using these
+handles but every node has a different
+handle associated with it or has it has
+these two handles that you can change
+the arc so it's not just a straight line
+then we can create kind of a cool wacky
+looking shape so because it's a because
+it's now a path so I'd like you to play
+with that it's really important to learn
+how to do that how to change an object
+to a path same thing if we draw our star
+we can kind of control it very quickly
+but everything happens it Mears if we
+want to just create we want to just move
+this one point and keep the rest of it
+the same
+like let's come down here a time you
+might use that as like if you want the
+point of the star to be taller than the
+rest of it we can't do that right now we
+can do it we can stretch the whole thing
+or if we double-click we can make all
+the points more pointy but if I want to
+make just this top one really pointy and
+the rest of them kind of stubby we have
+to convert it to a path so we select it
+go to path and go object to path and now
+if we double-click we have every
+different point we can control
+separately so now we control just this
+and make this one really pointy and the
+rest we can keep the same or we could
+change the rest around to in fact we can
+change the shape whoa I would didn't
+mean to do that ctrl Z we can change the
+shape to any do a completely different
+shape altogether but we lose those
+options so we can no we can't go back
+and change the the corners now like we
+did when it was an object we just can't
+do that so that's kind of a quick
+introduction to paths and objects in
+Inkscape it'll come together more in the
+next video where we talked about using
+the Bezier tool because it's a it's kind
+of creates a path and we learned about
+how to create these arcs and learn about
+the differences between that oh I guess
+I will say too it's something important
+if we want to take this letter so this
+is also kind of an object at first if we
+zoom in it's an object it's a text
+object so I have some different
+parameters but if we want to we can
+actually if you want to edit the shape
+of this letter like really get down to
+it if we double click right now the
+option is keep typing right but if we
+want to change it we can also convert
+this go to object to path and then if we
+double click we can edit the shape of
+this letter individually so sometimes
+you'll want to do this especially if
+you're creating like a logo out of a
+certain letter you can actually kind of
+come in and create your own kind of
+thing yeah so that's another option with
+doing objects - path so we'll be doing
+we'll be doing some more cool stuff with
+this in future videos - hope that's made
+sense go ahead and ask questions comment
+below like and subscribe and I'll see
+you in the next video
+you
