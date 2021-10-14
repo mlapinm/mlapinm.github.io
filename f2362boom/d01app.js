@@ -1,5 +1,6 @@
-let min = 20
-let max = 80
+
+let fishkas = []
+let prevFishka = null
 
 
 $(()=>{
@@ -10,32 +11,131 @@ $(()=>{
   let max = 64
   let maxRow = 8
   let row = 0
+  let maxFishkas = 24
+  let beginPos = [0, 2, 4, 6,
+  9, 11, 13, 15,
+  16, 18, 20, 22,
+  41, 43, 45, 47,
+  48, 50, 52, 54,
+  57, 59, 61, 63
+  ]
 
-  for(let i = 0; i < max; i++){
-    let square = $('<div></div>')
-    square.addClass('square')
-
-    if(i%maxRow == 0){
-      row += 1
-    }
-    if(row%2){
-      if(!(i%2==0)){
-        square.addClass('black-cell')
+  let k = 0
+  function makeGrid(){
+    for(let i = 0; i < max; i++){
+      let square = $('<div></div>')
+      square.addClass('square')
+      if(i%maxRow == 0){
+        row += 1
       }
-    }else{
-      if(i%2==0){
-        square.addClass('black-cell')
+
+      // k = (max - i) + (max - row * maxRow)
+      k = (max - row * maxRow) + i%maxRow
+
+      square.addClass('cell' + k)
+  
+      if(row%2){
+        if(!(i%2==0)){
+          square.addClass('black-cell')
+        }else{
+          square.addClass('white-cell')
+        }
+      }else{
+        if(i%2==0){
+          square.addClass('black-cell')
+        }else{
+          square.addClass('white-cell')
+        }
       }
+  
+      grid.append(square)
+
+      square.click((e) => {
+        let fishka = null
+        let square = null
+        let q = $(e.target)
+        if(q.hasClass('fishka')){
+          fishka = q
+
+
+
+          let p = q.parent()
+          if(p.hasClass('square')){
+            square = p
+          }
+        }else if(q.hasClass('square')){
+            square = q  
+        }
+
+        let checkedFishkas = fishkas.filter(e => 
+          e.hasClass('checked')
+        )
+        if(checkedFishkas.length == 0 ){
+          fishka.addClass('checked')
+        }else{
+          prevFishka = checkedFishkas[0]
+        }
+
+        if(prevFishka && fishka){
+
+          prevFishka.removeClass('checked')
+          if(prevFishka[0] != fishka[0]){
+            fishka.addClass('checked')
+          }
+        }else if(prevFishka && square){
+          prevFishka.removeClass('checked')
+          // prevFishka = null
+
+          square.append(prevFishka)
+          prevFishka = null
+
+        }
+
+
+        console.log(prevFishka)
+        console.log(fishka)
+
+      })
     }
 
-
-
-    grid.append(square)
+    for (let i = 0; i < maxFishkas; i++){
+      let fishka = $('<div></div>')
+      fishka.addClass('fishka')
+      if(i< maxFishkas/2){
+        fishka.addClass('fishka-white')
+      }else{
+        fishka.addClass('fishka-black')
+      }
+      fishkas.push(fishka)
+      $('.cell' + beginPos[i]).append(fishka)
+    }
+    console.log(fishkas[0].hasClass('checked'))
   }
 
-  log1.text(1)
-  log2.text(2)
-  log3.text(3)
+  makeGrid()
+
+  $('.out').click(() => {
+    $('.black-out').text(1)
+
+        let checkedFishkas = fishkas.filter(e => 
+          e.hasClass('checked')
+        )
+        if(checkedFishkas.length == 1){
+          prevFishka = checkedFishkas[0]
+          prevFishka.removeClass('checked')
+          let square = prevFishka.parent()
+          square.html('')
+        }
+
+
+
+      // console.log(333)
+    
+  })
+
+  log1.text()
+  log2.text()
+  log3.text()
   
 
 })
