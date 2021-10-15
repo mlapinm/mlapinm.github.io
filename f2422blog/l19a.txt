@@ -1,0 +1,292 @@
+welcome back to another Inkscape
+tutorial in this lesson we're going to
+learn the proper way to erase and a way
+that we can a nice good way that we can
+kind of merge shapes together and create
+new interesting shapes without having to
+freehand draw things so we see here this
+remembered the last settings that we
+were using so if we just select this
+circle and double click on it and click
+this full to complete a full circle and
+then I mission to draw a rectangle and
+will turn one of them red will keep the
+other one blue and they both have a blue
+stroke but that's fine so what we want
+to do suppose we want to make a shape
+like this that had like a square we want
+suppose we want the shape to look like
+that the whole outline of this so maybe
+we'll make it black let's make both
+these black actually alright and then
+forget about the stroke but it'll look
+kind of like this well what we can do is
+we can select both objects and we can go
+up to path and we can go to this Union
+and that will create a union we see it
+gets rid of that blue line the overlap
+line and now this is just one object
+it's not a group if we hit ctrl shift G
+nothing happens we can't break this
+apart it's just kind of an object now we
+can never get back this Square and this
+circle separately this rectangle in
+stand circle oval instead it's just this
+thing like maybe this is a loaf of bread
+and we can color it so it looks like a
+loaf of bread that's a way that you can
+kind of create some different things
+maybe you want to create the Mickey
+Mouse ears so we do this then we hit
+ctrl D to duplicate it and then we draw
+like an even bigger circle to connect
+the to make our Mickey Mouse ears like
+this but we'll turn them all like blue
+so that's pretty cool oh hey that's
+matching our stroke color so it looks
+really good
+so it looks good right now we could just
+group ctrl G and now they're all grouped
+together but it's different than this
+and the reason it's different is if we
+were to put a stroke on there you'd
+still see those lines and sometimes you
+want to have we we might want to do a
+stroke on this in fact let's do let's do
+it you know a nice
+noticeable stroke and we want these
+lines to be gone so we don't what we
+don't do is take the erase tool and try
+and erase those lines like this that's
+just gonna not work even if it's
+selected it's not going to be oh we're
+on there I don't know if I would even
+work ctrl shift G if we ungrouped it we
+could try and do that so we take this
+and now we try and erase it
+it'll this is what it does creates all
+kinds of craziness and if we turn off
+the the fill even it's still not gonna
+work the way we wanted to so control so
+you control Z control Z what we want to
+do is the same thing we did to make this
+loaf of bread we select the whole thing
+we go to path Union and now this becomes
+its own path so it's no longer an object
+we can't get in and edit the radius of
+each individual circle we can't make the
+pac-man anymore like we could before by
+doing like this type thing so we can't
+do that because this is an object oops
+this thing is an object now and this is
+a path but what we can do if we double
+click we can see we can edit the
+different nodes of this path we can kind
+of change the arc but we had looking
+pretty nice the way before is because
+I'm just awesome at drawing Mickey Mouse
+ears so now we've got a Mickey Mouse
+here we've got a loaf of bread what if
+though what if we want to well ok let's
+create a bite mark out of this loaf of
+bread this is a good example so what if
+we want our bite to look kind of like
+this let's select some circles let's
+make it a full circle so it's not the
+pac-man and doesn't matter what color it
+is we'll just make it black let's zoom
+in here and let's have a nice so let's
+get maybe about this size with you one
+day I'll have control D to duplicate
+we'll do s another one and control D
+that looks sort of like a bite mark
+maybe we'll bring this one forward a
+little bit more so we're trying to
+create like that I look like there's
+something been bitten out of here so
+we'll keep it just like that we'll
+select all of these I'm gonna hit
+control D and just duplicate this whole
+thing we might use it again let's select
+all of these and go to path and then we
+go to difference and now what it's done
+hmm control-z let's say let's select
+these three and and create a path out of
+all of them a union I mean so it's Union
+these just like we did the Mickey Mouse
+ears and now let's make that our bite so
+now we swept the bread by holding down
+shift and selecting the bread and these
+three Union circles and now we go to
+difference and now we've got a nice
+little bite mark out of there and see
+that the stroke follows the bite mark
+and it looks kind of like a bit of bites
+been taken out of there if this doesn't
+make sense at first that's completely
+normal because this is not this is like
+an absent an abstract way this is the
+way that you work in Inkscape but it's
+kind of counterintuitive to what you
+might think to being used to with bitmap
+editing where you just grab an eraser
+and draw out an edit pixel by pixel and
+the reason again that we do this in
+Inkscape is because we can scale this
+loaf of bread huge and it'll always keep
+the same characteristics it'll never
+ever get grainy so if we zoom in here
+it's always just nice and sharp and it
+never gets graining it's it looks really
+cool all right so those are the two that
+we looked at path we've got Union we've
+got difference there's also intersection
+intersections like well what if we want
+to keep just the part of the objects
+that intersect with each other so I'm
+gonna highlight these three circles and
+delete them and let's say we want to
+keep just the bottom half of a star as
+it intersects with this loaf of bread
+come on now I've got my you can turn
+that off if it's bothering you you can
+actually turn off this thing here that
+says enable snapping and we'll just
+disable snapping then that won't snap
+any more with that enabled you see that
+was like the corner of the star was
+snapping to the top of the bread so if
+that bothers you like it just did me we
+can change that let's make this
+intersection though and let's highlight
+this whole thing let's go to path
+intersection so now what that's done is
+just done the inside intersection you
+can look and see and so it's cut off the
+top of the star because that's where the
+loaf of bread was intersecting it but
+everything else is gone
+so now it's like a little object
+actually wasn't the best example let's
+go back a better example for that one
+would have been a path and let's do like
+exclusion and so now we have just the
+star excluded or actually even if we
+drag it to the middle and we want it to
+be yeah we go here path exclusion so now
+we have a loaf of bread with a star in
+the middle of it but it's not like it's
+not a white star it's a star cut out of
+it so if we drag it over top of
+something it's like a cut out just like
+this this bite mark is a cut out only
+it's behind if when I raise it we go to
+the top level and then we can see it's
+in front of there let's take but we're
+done now we can't we can't grab this
+star back out unless we do undo and hit
+ctrl Z we're just done with all of these
+we can't these are just paths now we can
+go in and edit the nodes of them but we
+can't ever go back and change the
+properties of this star like we would
+just by drawing a store we can't do this
+for example or we can't do this to this
+star because it's no longer an object
+it's a path cut into this bread let's
+draw one more let's draw another thing
+to do an example
+oops so one thing in fact with a star
+though we'll just use this loaf of bread
+that we already have controlled
+duplicate I'll delete these circles I
+just did let's take this star and see
+it's behind we need to get up top so I
+can push the page up key on my keyboard
+or I could hit this button to raise the
+top but let's create something kind of
+like this and then what I'm gonna do is
+hold down shift and select the bread and
+the star at the same time and we'll go
+to path and we'll do this will do is it
+cut path yeah let's do cut path so that
+was a set that'll make it so that we
+have all these different parts of this
+bread and they're each different paths
+so everywhere that star was it's kind of
+hard to to see you if we hit ctrl Z it
+cut each of these paths into into
+different points so now we have just
+this path here we would probably do with
+a star like that but if ever you want
+that you have a path like this and we
+want to cut out just the top part of it
+we can do that
+cut path and if we do it like this if we
+want just the top part of the bread we
+go to path and we go to cut path and now
+we have just this top part of the bread
+as its own separate path because
+otherwise you know naturally you might
+just think well let's why don't we just
+edit the nodes and then you come in you
+start deleting nodes like to get to that
+top half and it just doesn't behave the
+same way so this top half the bread is
+now it's all connected and how do you
+break apart so and there are multiple
+ways to accomplish this but a good way
+to get to have create shapes that you're
+wanting to shape to create is gonna be
+to use these different things division
+exclusion intersection so play with
+these and I should have mentioned this
+earlier but a good cheat sheet for
+everything that you've learned in these
+tutorials and honestly like the way that
+I've learned in scape is by using the
+built-in tutorials so if you go to help
+you go to tutorials I believe these ones
+are under advanced maybe but it brings
+up a new window and it shows you all
+this stuff that we've been doing so you
+scroll down and it has you know working
+with text and somewhere on was it on
+this one yeah so it has all the
+different it shows an illustration of
+what these different things do Union
+difference intersection exclusion
+division cut path and so you can
+practice this the cool thing about this
+tutorial the tutorial is built into
+Inkscape is that you can actually click
+and edit the every part of it even the
+text it's really cool because the
+tutorial is written on an Inkscape
+canvas and so if we want to demonstrate
+this union we just go to select both of
+them go to path and then we go to Union
+and now we have that same shape as this
+hit ctrl Z and we can demonstrate each
+one of these we can do difference we can
+do this division we go to path division
+and it creates the same looking thing
+here it's like a puzzle piece so that's
+really cool so anyway that's why you can
+learn and reference a lot of what you've
+learned is by going into these different
+tutorials under the help and tutorials
+section inning scape sorry I should have
+mentioned that earlier that's like a
+super
+valuable resource I don't know why I
+didn't just start start that at the
+tutorial one showing you that was there
+but anyway hopefully you find that
+useful and it opens a separate window
+too so we can just close that close
+without saving and then we have our old
+one up here but practice get used to
+those tools because you will use them
+thanks for watching we'll see in the
+next video
