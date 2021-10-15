@@ -1,0 +1,250 @@
+hey guys welcome back to another
+Inkscape tutorial in this video I want
+to show you one of my most favorite
+tools in Inkscape and that's the trace
+bitmap tool so you go to path and then
+you go to trace bitmap when you have an
+image selected so we're gonna be playing
+with that today it's a really really
+cool tool in the last video we traced
+using the Bezier tool we traced an image
+of a guy falling we're gonna do that
+again only we're not going to use the
+Bezier tool so I'm going to drag this
+image in this is an image you can find
+out where we got it in the last video we
+were trying to pixabay.com and search
+person we downloaded this free image so
+you can follow along if you want to do
+that but now we're gonna do this again
+only instead of tracing it
+oops ctrl Z I'll make sure I lock this
+like I like to do so instead of tracing
+it like we did last time we like zoomed
+in and we traced every single point of
+here and created this whole little
+outline we're not gonna do that this
+time we're going to just use this tool
+that's built into Inkscape so we go to
+we select the image and then we go to
+path and then we go to trace bitmap and
+it comes up with these different options
+so brightness cutoff and a certain
+threshold we'll just leave it in here
+right now and we'll click update so if
+we hit update it shows us a little
+preview of what it'll look like if we
+were to go ahead and try and trace all
+the lines of this image based on the
+brightness of the pixels so that looks
+okay let's just see what that looks like
+so if we hit OK it'll take a minute and
+they'll actually do that so it traced it
+created a path here and we can drag and
+see what it looks like so this is what
+it's created based off of this image and
+this is all a vector path so if we zoom
+in we can see that's actually pretty
+cool detail so we see this guy here and
+yeah I like it and so we can actually go
+in now if we edit the different nodes we
+can come in and edit different parts of
+this and change it too so essentially it
+did what we just tried to do with the
+Bezier tool
+didn't do as good a job though if you
+notice because look here in the face you
+so where my head I'll just close this so
+here in the face it's a little bit it
+didn't get the whole face but did get
+some of the eyebrow it got some more
+detail than we actually got got some
+detail in the hair so it's not a
+complete silhouette but instead of just
+traced everything based on the the
+brightness of the pixel it's super cool
+huh but the thing is it's all tied
+together here I'm not sure if there's
+different layers we can tell we can
+check by going ctrl shift G and see if
+we can ungroup anything here and it
+looks like it's all just one level so
+we'd need to cut this out which we can
+do but first I'm just going to delete
+this let's come back up and let's try
+again so we click on our image and then
+we go to path trace bitmap so instead of
+doing the brightness cut off well we can
+just change the threshold so we can
+lower this to maybe and change the 4 to
+a 1 and go update and then it gets just
+the person but it doesn't get all the
+person so then we don't have that if we
+hit OK we see we get this kind of thing
+going so we get more detail in the shirt
+but it's a lot lighter so it's still
+this isn't perfect for what we want to
+do although it is kind of cool if we did
+want to keep this let's just keep it for
+fun let's turn it red and let's bring it
+over here because then what we can do is
+go to our edge detection and do the same
+thing so we hit update and now it's
+going to show us a preview of the edge
+detection oh nothing is selected right
+now we have to make sure we have our
+picture selected that we want to trace
+our bitmap and it has to be a bitmap if
+we select a vector it won't do anything
+has to be a bitmap that we're tracing
+which this is it's a JPEG image I think
+so we hit update and now it'll show ok
+so let's change this threshold that's
+lower lower this down to maybe 3 5 hit
+update that's still not quite where we
+want let's go way down to 0.06 that's
+pretty cool I'm gonna go down even lower
+oh not to 0 update so 0.10 wait okay so
+now we've got another thing traced oh I
+got a little piece of something up here
+it looks like but that's pretty neat huh
+and so now we have this outline here
+which did a pretty good job of doing the
+edge detection it wasn't doing
+it wasn't tracing based off of the
+brightness of the pixels it was tracing
+based off of the edge that it could find
+like a hard edge which I guess probably
+uses some sort of brightness to detect
+it anyway but now we can move this over
+let's send this to the top layer and now
+we have like we can kind of merge and
+create a really cool looking thing maybe
+turn this blue or like yeah like a green
+so we can create a really cool look by
+merging these two together that's pretty
+neat huh see if I can select both of
+them at the same time click and shift
+click click shift click there we go so
+now we have this cool kind of effect
+going on here and we can keep doing this
+we can get different layers that we want
+to out of this so we can click our
+bitmap again and then this is still
+opened up so whatever's clicked here
+we'll just get updated so we can go to
+color quantization it's a word you don't
+use very often cover quantization so we
+click update and what that's going to do
+it's going to create something like this
+but it's gonna do it with eight
+different colors so I'm gonna do it just
+to illustrate all the four colors and
+hit update so using just four colors
+it's going to it's going to basically
+break this image into four different
+colors thresholds so I'll click click
+okay and then we can come down here and
+so that's created a pretty cool thing
+and we've got different colors here so
+if we hit ctrl shift G and ungroup we
+can see there's different there should
+be different noted before right ctrl
+shift G okay maybe it's just did for
+whatever reason it did two colors it's
+just black and white that's kind of cool
+too though so just kind of play around
+with this and you can see so let's let's
+take it up again to six do update update
+do okay I'm trying to get different
+colors here I think we can get it now
+it's doing all black do I have a setting
+that's only doing black somewhere I
+should make sure I'm not because this
+can do this can do colors also but for
+some reason it's just doing black right
+now Oh colors oh I see
+so on this is a single I was on single
+scan which is why it's just doing black
+if I want to do multiple colors I click
+here on colors and
+then I go down to four wall selected and
+hit update with you it looks like
+that'll look cool
+now I hit okay and now what it's doing
+is that just using four colors it's
+creating a version of this which is how
+you know you see this could be like a
+t-shirt print of this because it really
+only has four colors is it awesome and
+we can break out these colors now we can
+go ctrl shift G and now we can see we
+have our background color alright we can
+delete that if we want we can delete
+these ones here if we want to and we can
+see just these different parts so
+they're all kind of hooked to each other
+and there's I'll show you in the next
+video how to get rid of this down here
+because there's not really we could use
+like the erase tool I suppose and trying
+to erase it out but we don't we're not
+going to do that there's no a better way
+to do it yeah awesome tool isn't it
+pretty good pretty cool so let's come up
+here and let's go to we can do
+brightness steps and just kind of see
+what that looks like
+so brightener steps is gonna be similar
+to this to the brightness cutoff we've
+got we can do just graze and do like
+five different grays and update and see
+what it looks like in five different
+shades of grey or we can do three
+different shades of gray here three is a
+bit too little let's do six hit okay and
+now this is going to be the last one we
+actually have some reds but this time
+it's just all just Gray's so it'll look
+similarly to the other one maybe that's
+too many you could see the sky is two
+different shades but yeah play with this
+it's awesome and you can use it on
+vector art too if you bring in like a
+dirty like a small little like a fav
+icon like for my website and it has
+little pixelation it's kind of messy you
+can run this on it and kind of clean it
+up then you can scale it much larger if
+ever you have a tiny little tiny little
+thumbnail of a like a vector graphic
+let's see here so we just do one real
+quick if we find a little logo that's
+like too small
+these are all gonna be pretty good
+quality but sometimes you'll find a
+really small grainy logo that's just
+that you want to scale up massively and
+put it on a billboard
+well what you'll do is just run that
+trace and you don't have the source file
+for it if all you have is a teeny to
+little logo then you can bring it in
+here
+trace a bitmap on it and then scale it
+up much larger and you can clean up you
+know those little portions as well so
+that's the trace bitmap tool one of my
+very favorite tools of all time in
+Inkscape and it is super powerful
+especially if you want to do like
+t-shirt prints we're creating a kind of
+a print quickly based off of a real
+photograph so I hope you liked this
+video comment subscribe like below and
+let me know how you use this tool
+because I'm curious of other
+applications you can use it for
+I'm sure the sky is the limit appreciate
+your watching we'll catch you on the
+next video
