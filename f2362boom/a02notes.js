@@ -21,6 +21,16 @@ var notes = [
    },
   {
     "header": "",
+    "title": "chess",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "d03chess.html"
+   },
+  {
+    "header": "",
     "title": "",
     "card-text": [
       "",
@@ -29,5 +39,24 @@ var notes = [
     ],
     "link": "d00boom.html"
    },
-
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "d00boom.html"
+   },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "test",
+      "",
+      ""
+    ],
+    "link": "d02test.html"
+   }
 ]
