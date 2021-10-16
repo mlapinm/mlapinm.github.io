@@ -120,11 +120,16 @@ $(()=>{
             select(num)
             if(lastCell != -1){
               unselect(lastCell)
+              lastCell = -1
             }
-          }
-          if(num == lastCell && lastCell != -1){
-            // figure[0].classList.remove('checked')
-            unselect(num)
+          }else{
+            if(figure[0].classList.contains('checked')){
+              unselect(num)
+              lastCell = -1
+              return
+            }else{
+              select(num)
+            }
           }
           lastCell = num
         }
@@ -228,9 +233,6 @@ $(()=>{
   makeGrid()
   setFigures()
 
- select(8)
- move(8, 16) 
- 
   
 
   $('.out').click(() => {
