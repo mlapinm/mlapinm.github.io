@@ -36,8 +36,15 @@
 	height: 100%;
 }
 
-.path4 {
-	fill: #bbb;
-	/* stroke:aqua */
+.black {
+	fill: #777;
+}
+
+.white {
+	fill: #ccc;
+}
+
+.checked {
+	stroke: chartreuse;
 }
 

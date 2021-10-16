@@ -48,20 +48,23 @@
 	border: solid 2px;
 }
 
-.fishka-black {
-	background-color: brown;
-}
-
-.fishka-white {
-	background-color:aqua;
-}
-
-.checked {
-	border-color:greenyellow;
-}
 
 .out {
 	text-align: center;
 	border: solid 1px;
 }
+
+.black {
+	fill: #777;
+}
+
+.white {
+	fill: #ccc;
+}
+
+
+.checked {
+	stroke: chartreuse;
+}
+
 
