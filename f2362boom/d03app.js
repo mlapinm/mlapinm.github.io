@@ -86,7 +86,54 @@ $(()=>{
       grid.append(square)
 
       square.click((e) => {
-        let prevFishka = null
+        let figure = null
+        let square = null
+        let q = $(e.target)
+        if(q.hasClass('figure')){
+          figure = q
+          let p = q.parent()
+          if(p.hasClass('square')){
+            square = p
+          }else if(p.parent().hasClass('square')){
+            square = p.parent()
+          }
+        }else if(q.hasClass('square')){
+            square = q  
+        }
+        if(!square){
+          return
+        }
+
+        let classes = [...square[0].classList]
+        let num = 0
+        classes.forEach((e) => {
+
+          let res = e.match(/^cell(\d+)/)
+          if (res){
+            num = res[1]
+          }
+        })
+
+        if(figure){
+          if(num != lastCell){
+            // figure[0].classList.remove('checked')
+            select(num)
+            if(lastCell != -1){
+              unselect(lastCell)
+            }
+          }
+          if(num == lastCell && lastCell != -1){
+            // figure[0].classList.remove('checked')
+            unselect(num)
+          }
+          lastCell = num
+        }
+
+        if(!figure && lastCell != -1){
+          move(lastCell, num)
+        }
+
+
 
 
       })
@@ -141,7 +188,7 @@ $(()=>{
   
   function select(num){
     let selectNum = -1
-    let field = document.querySelector(".square" + num)
+    let field = document.querySelector(".cell" + num)
     let figure = field.querySelector(".figure")
     if(figure){
       figure.classList.add('checked')
@@ -149,9 +196,20 @@ $(()=>{
     }
     return selectNum
   }
+
+  function unselect(num){
+    let selectNum = -1
+    let field = document.querySelector(".cell" + num)
+    let figure = field.querySelector(".figure")
+    if(figure){
+      figure.classList.remove('checked')
+      selectNum = num
+    }
+    return selectNum
+  }
   
   function move(from, to){
-    let fieldFrom = document.querySelector(".square" + from)
+    let fieldFrom = document.querySelector(".cell" + from)
     let figure = fieldFrom.querySelector(".figure")
     if(!figure){
       return
@@ -170,8 +228,9 @@ $(()=>{
   makeGrid()
   setFigures()
 
-//  select(16)
-//  move(16, 18)   
+ select(8)
+ move(8, 16) 
+ 
   
 
   $('.out').click(() => {
