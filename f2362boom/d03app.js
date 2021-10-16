@@ -120,7 +120,6 @@ $(()=>{
             select(num)
             if(lastCell != -1){
               unselect(lastCell)
-              lastCell = -1
             }
           }else{
             if(figure[0].classList.contains('checked')){
@@ -137,8 +136,6 @@ $(()=>{
         if(!figure && lastCell != -1){
           move(lastCell, num)
         }
-
-
 
 
       })
@@ -212,6 +209,19 @@ $(()=>{
     }
     return selectNum
   }
+
+  function remove(numField){
+    let fieldFrom = document.querySelector(".cell" + numField)
+    let figure = fieldFrom.querySelector(".figure")
+    if(!figure){
+      return
+    }
+    let classes = figure.classList
+    if(classes.contains('checked')){
+      fieldFrom.innerHTML = ''
+    }
+
+  }
   
   function move(from, to){
     let fieldFrom = document.querySelector(".cell" + from)
@@ -232,11 +242,10 @@ $(()=>{
   
   makeGrid()
   setFigures()
-
   
 
   $('.out').click(() => {
-    let blackSum = 0
+    remove(lastCell)
   })
 
   log1.text()
