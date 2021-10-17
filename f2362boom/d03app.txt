@@ -1,4 +1,7 @@
 
+
+let lastCell = -1
+
 let figNames = ["peshka", "slon", "horse", 
 "ladya", "ferz", "corol"]
  
@@ -44,176 +47,207 @@ $(()=>{
   let maxRow = 8
   let row = 0
   let maxFishkas = 24
+  let beginPos = [0, 2, 4, 6,
+  9, 11, 13, 15,
+  16, 18, 20, 22,
+  41, 43, 45, 47,
+  48, 50, 52, 54,
+  57, 59, 61, 63
+  ]
 
+  let k = 0
+  function makeGrid(){
+    for(let i = 0; i < max; i++){
+      let square = $('<div></div>')
+      square.addClass('square')
+      if(i%maxRow == 0){
+        row += 1
+      }
+
+      // k = (max - i) + (max - row * maxRow)
+      k = (max - row * maxRow) + i%maxRow
+
+      square.addClass('cell' + k)
   
-
-//https://fooobar.com/questions/37963/jquerys-append-not-working-with-svg-element
-// Более простой способ - просто сгенерировать SVG в строку, создать HTML-элемент оболочки и вставить строку svg в элемент HTML с помощью $( "# wrapperElement" ). html (svgString). Это прекрасно работает в Chrome и Firefox.
-
-
-
-
-
-$('.square4').html(figs[0].svg)
-//https://developer.mozilla.org/ru/docs/Web/API/Element/classList
-$('.square4').click((e) => {
-  e.target.classList.add('checked')
-  console.log(e.target.classList)
+      if(row%2){
+        if(!(i%2==0)){
+          square.addClass('black-cell')
+        }else{
+          square.addClass('white-cell')
+        }
+      }else{
+        if(i%2==0){
+          square.addClass('black-cell')
+        }else{
+          square.addClass('white-cell')
+        }
+      }
   
-})
-/////////////////////////
-//https://www.motiontricks.com/creating-dynamic-svg-elements-with-javascript/
-const svg = document.querySelector("#svg0");
+      grid.append(square)
 
-// variable for the namespace 
-const svgns = "http://www.w3.org/2000/svg";
+      square.click((e) => {
+        let figure = null
+        let square = null
+        let q = $(e.target)
+        if(q.hasClass('figure')){
+          figure = q
+          let p = q.parent()
+          if(p.hasClass('square')){
+            square = p
+          }else if(p.parent().hasClass('square')){
+            square = p.parent()
+          }
+        }else if(q.hasClass('square')){
+            square = q  
+        }
+        if(!square){
+          return
+        }
 
-// make a simple rectangle
-let newRect = document.createElementNS(svgns, "rect");
+        let classes = [...square[0].classList]
+        let num = 0
+        classes.forEach((e) => {
 
-newRect.setAttribute("x", "150");
-newRect.setAttribute("y", "150");
-newRect.setAttribute("width", "100");
-newRect.setAttribute("height", "100");
-newRect.setAttribute("fill", "#5cceee");
+          let res = e.match(/^cell(\d+)/)
+          if (res){
+            num = res[1]
+          }
+        })
 
-// append the new rectangle to the svg
-svg.appendChild(newRect);
+        if(figure){
+          if(num != lastCell){
+            // figure[0].classList.remove('checked')
+            select(num)
+            if(lastCell != -1){
+              unselect(lastCell)
+            }
+          }else{
+            if(figure[0].classList.contains('checked')){
+              unselect(num)
+              lastCell = -1
+              return
+            }else{
+              select(num)
+            }
+          }
+          lastCell = num
+        }
 
-function getFigureNum(names){
-  let index = 0
-  for(let i = 0; i < figNames.length; i++){
-    if(names.indexOf(figNames[i]) >= 0){
-      index = i
-      break
+        if(!figure && lastCell != -1){
+          move(lastCell, num)
+        }
+
+
+      })
     }
   }
-  return index
-}
   
-function setFigure(fieldNum, figureName, color){
-  let field = document.querySelector(".cell" + fieldNum)
-  let num = getFigureNum([figureName])
-  field.innerHTML = figs[num].svg
-  let figure = field.querySelector(".figure")
-  figure.classList.add(figureName)
-  figure.classList.add(color)
-  // console.log(figure)
-  
-}
+  function getFigureNum(names){
+    let index = 0
+    for(let i = 0; i < figNames.length; i++){
+      if(names.indexOf(figNames[i]) >= 0){
+        index = i
+        break
+      }
+    }
+    return index
+  }
 
-function select(num){
-  let selectNum = -1
-  let field = document.querySelector(".cell" + num)
-  let figure = field.querySelector(".figure")
-  if(figure){
-    figure.classList.add('checked')
-    selectNum = num
-  }
-  return selectNum
-}
-
-function move(from, to){
-  let fieldFrom = document.querySelector(".cell" + from)
-  let figure = fieldFrom.querySelector(".figure")
-  if(!figure){
-    return
-  }
-  let classes = [...figure.classList];
-  let color = "white"
-  if (classes.indexOf("black")>=0){
-    color = "black"
-  }
-  let figureNum = getFigureNum(classes)
-  let figureName = figNames[figureNum]
-  setFigure(to, figureName, color)
-  fieldFrom.innerHTML = ''
-}
-  
-function getFigureNum(names){
-  let index = 0
-  for(let i = 0; i < figNames.length; i++){
-    if(names.indexOf(figNames[i]) >= 0){
-      index = i
-      break
+  function setFigures(){
+    setFigure(0, "ladya", "white")
+    setFigure(1, "horse", "white")
+    setFigure(2, "slon", "white")
+    setFigure(3, "ferz", "white")
+    setFigure(4, "corol", "white")
+    setFigure(5, "slon", "white")
+    setFigure(6, "horse", "white")
+    setFigure(7, "ladya", "white")
+    for(let i = 8; i < 16; i++){
+      setFigure(i, "peshka", "white")
+    }
+    setFigure(56, "ladya", "black")
+    setFigure(57, "horse", "black")
+    setFigure(58, "slon", "black")
+    setFigure(59, "ferz", "black")
+    setFigure(60, "corol", "black")
+    setFigure(61, "slon", "black")
+    setFigure(62, "horse", "black")
+    setFigure(63, "ladya", "black")
+    for(let i = 48; i < 56; i++){
+      setFigure(i, "peshka", "black")
     }
   }
-  return index
-}
+    
+  function setFigure(fieldNum, figureName, color){
+    let field = document.querySelector(".cell" + fieldNum)
+    let num = getFigureNum([figureName])
+    field.innerHTML = figs[num].svg
+    let figure = field.querySelector(".figure")
+    figure.classList.add(figureName)
+    figure.classList.add(color)
+    // console.log(figure)
+    
+  }
+  
+  function select(num){
+    let selectNum = -1
+    let field = document.querySelector(".cell" + num)
+    let figure = field.querySelector(".figure")
+    if(figure){
+      figure.classList.add('checked')
+      selectNum = num
+    }
+    return selectNum
+  }
 
-function getNumCell(target){
-  let square = null
-  let num = -1
-  let p = target
-  for(let i = 0; i < 4; i++){
-    if(p.classList.contains('square')){
-      square = p
-      break
+  function unselect(num){
+    let selectNum = -1
+    let field = document.querySelector(".cell" + num)
+    let figure = field.querySelector(".figure")
+    if(figure){
+      figure.classList.remove('checked')
+      selectNum = num
     }
-    p = p.parentNode
+    return selectNum
   }
-  if(!square){
-    return num
-  }
-  let classes = [...square.classList]
-  classes.forEach((e) => {
-    let res = e.match(/^cell(\d+)/)
-    if (res){
-      num = res[1]
+
+  function remove(numField){
+    let fieldFrom = document.querySelector(".cell" + numField)
+    let figure = fieldFrom.querySelector(".figure")
+    if(!figure){
+      return
     }
+    let classes = figure.classList
+    if(classes.contains('checked')){
+      fieldFrom.innerHTML = ''
+    }
+
+  }
+  
+  function move(from, to){
+    let fieldFrom = document.querySelector(".cell" + from)
+    let figure = fieldFrom.querySelector(".figure")
+    if(!figure){
+      return
+    }
+    let classes = [...figure.classList];
+    let color = "white"
+    if (classes.indexOf("black")>=0){
+      color = "black"
+    }
+    let figureNum = getFigureNum(classes)
+    let figureName = figNames[figureNum]
+    setFigure(to, figureName, color)
+    fieldFrom.innerHTML = ''
+  }
+  
+  makeGrid()
+  setFigures()
+  
+
+  $('.out').click(() => {
+    remove(lastCell)
   })
-  return num
-}
-
-function getFigureCell(num){
-  let figureNum = -1
-  let figure = null
-  let square = document.querySelector('.cell' + num)
-  figure = square.querySelector('.figure')
-  if(!figure){
-    return figureNum
-  }
-  let classes = [...figure.classList]
-  figureNum = getFigureNum(classes)
-  return figureNum
-}
-
-function getCheckedCell(num){
-  let checked = false
-
-  let figure = null
-  let square = document.querySelector('.cell' + num)
-  figure = square.querySelector('.figure')
-  if(!figure){
-    return checked
-  }
-  checked = figure.classList.contains('checked')
-
-  return checked
-}
-
-$('.square').click((e) => {
-  let cellNum = -1
-  let figureNum = -1
-  let checked = false
-  cellNum = getNumCell(e.target)
-  figureNum = getFigureCell(cellNum)
-  checked = getCheckedCell(cellNum)
-
-  console.log(cellNum, figureNum, checked)
-})
-
-setFigure(16, "slon", "black")
-move(16, 17)
-getFigureCell(17)   
-
-select(8)
-let checked = getCheckedCell(8)
-// console.log(checked)
-
-
-   
-
 
   log1.text()
   log2.text()

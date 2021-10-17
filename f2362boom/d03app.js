@@ -86,61 +86,40 @@ $(()=>{
       grid.append(square)
 
       square.click((e) => {
-        let figure = null
-        let square = null
-        let q = $(e.target)
-        if(q.hasClass('figure')){
-          figure = q
-          let p = q.parent()
-          if(p.hasClass('square')){
-            square = p
-          }else if(p.parent().hasClass('square')){
-            square = p.parent()
+        let cellNum = -1
+        let figureNum = -1
+        let checked = false
+        cellNum = getNumCell(e.target)
+        figureNum = getFigureCell(cellNum)
+        checked = getCheckedCell(cellNum)
+
+        if(lastCell == -1){
+          if(figureNum != -1){
+            select(cellNum)
+            lastCell = cellNum
           }
-        }else if(q.hasClass('square')){
-            square = q  
-        }
-        if(!square){
-          return
-        }
-
-        let classes = [...square[0].classList]
-        let num = 0
-        classes.forEach((e) => {
-
-          let res = e.match(/^cell(\d+)/)
-          if (res){
-            num = res[1]
-          }
-        })
-
-        if(figure){
-          if(num != lastCell){
-            // figure[0].classList.remove('checked')
-            select(num)
-            if(lastCell != -1){
+        }else{
+          if(figureNum != -1){
+            if(lastCell != cellNum){
               unselect(lastCell)
+              select(cellNum)
+              lastCell = cellNum
+            }else{
+              if(checked){
+                unselect(cellNum)
+                lastCell = -1
+              }
             }
           }else{
-            if(figure[0].classList.contains('checked')){
-              unselect(num)
-              lastCell = -1
-              return
-            }else{
-              select(num)
-            }
+            move(lastCell, cellNum)
+            lastCell = -1
           }
-          lastCell = num
         }
-
-        if(!figure && lastCell != -1){
-          move(lastCell, num)
-        }
-
-
+        // console.log(lastCell, cellNum, figureNum, checked)
       })
     }
   }
+  
   function getFigureNum(names){
     let index = 0
     for(let i = 0; i < figNames.length; i++){
@@ -240,6 +219,58 @@ $(()=>{
     fieldFrom.innerHTML = ''
   }
   
+  function getNumCell(target){
+    let square = null
+    let num = -1
+    let p = target
+    for(let i = 0; i < 4; i++){
+      if(p.classList.contains('square')){
+        square = p
+        break
+      }
+      p = p.parentNode
+    }
+    if(!square){
+      return num
+    }
+    let classes = [...square.classList]
+    classes.forEach((e) => {
+      let res = e.match(/^cell(\d+)/)
+      if (res){
+        num = res[1]
+      }
+    })
+    return num
+  }
+  
+  function getFigureCell(num){
+    let figureNum = -1
+    let figure = null
+    let square = document.querySelector('.cell' + num)
+    figure = square.querySelector('.figure')
+    if(!figure){
+      return figureNum
+    }
+    let classes = [...figure.classList]
+    figureNum = getFigureNum(classes)
+    return figureNum
+  }
+  
+  function getCheckedCell(num){
+    let checked = false
+  
+    let figure = null
+    let square = document.querySelector('.cell' + num)
+    figure = square.querySelector('.figure')
+    if(!figure){
+      return checked
+    }
+    checked = figure.classList.contains('checked')
+  
+    return checked
+  }
+  
+
   makeGrid()
   setFigures()
   
