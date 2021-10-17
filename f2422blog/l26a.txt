@@ -1,0 +1,110 @@
+welcome back to another Inkscape
+tutorial in this video I want to show
+you how to import an illustrator file so
+maybe you've you have a file that's a
+dot ai file extension a file created in
+Adobe Illustrator but you want to work
+on it or change it or edit it in
+Inkscape not a problem because Inkscape
+can import illustrator files so as long
+as it's not too complex
+there's no usually not problem so I
+found this file here that's on
+pixabay.com it's a simple illustration
+of an ice cream cone and this is by user
+alma in progress they've released it
+under Creative Commons 0 so free for
+commercial users no attribution required
+we really appreciate them sharing this
+with us and we can actually download the
+original Illustrator file that they use
+to create this so I already downloaded
+it go head and click download under the
+illustrator file not under an image but
+make sure you get the vector graphic and
+I have that saved on my computer right
+here in my downloads folder and if I try
+and open it I don't have any I don't
+have illustrator installed on my
+computer so I can't open it in
+Illustrator but I can just drag and drop
+it in to Inkscape or I can also go file
+import and we see we have if we go to
+the file type we have all these
+different options for different files
+that are supported by Inkscape to import
+some of them are like we have some
+pretty cool ones actually here so all
+kinds of different file formats but we
+find the one here that is Adobe
+Illustrator so there's two we've got
+Adobe Illustrator SVG and Adobe
+Illustrator 8.0 and below I'm not sure
+what this is so I'm not going to import
+it this way I'm just going to drag and
+drop it in and it'll automatically
+detect what it is and it brings up this
+dialog we'll just keep all the settings
+the same and hit OK and now we have this
+ice cream cone here in Inkscape we can
+resize it and we can click the plus sign
+to zoom in on it if we want to change so
+we can see if it has different layers we
+go to layers and see so there's no layer
+information so it's probably all just on
+one layer we can ungroup here by hitting
+ctrl shift G
+and now we have this the ice cream the
+three scoops are separated from the cone
+and the cone is separated from itself so
+that's kind of cool and these we can
+probably ungroup to control shift G and
+now we see we have control shift G you
+do it again so now we have three
+separate ice cream scoops and we can
+change maybe we just want to be like you
+know what we love this vector graphic
+but we'd rather we had like a light blue
+ice cream and we'd rather this one was
+like more of a purpley color and we want
+the top one to be like a red so were
+like cool there no problem then we can
+regroup or we can be like yeah we wish
+the purple was like off to the side like
+this so it was sort of like created this
+look so we can change it however we want
+because we have this original source
+file which is awesome and maybe the comb
+we want to apply a different texture or
+we want to change the color of it to
+make it like a darker I don't know
+whatever we want to do but we can do it
+because we've got the source file and we
+can read Adobe Illustrator files in
+Inkscape yeah so I hope you found this
+video informative check it out actually
+ctrl G we can even add an additional
+scoop if we wanted to on here so we can
+be like yeah boom and then bring the
+glow up to the top level yeah
+yeah so that's it you get the idea and
+you can find lots of source files if
+you're curious on pixabay these are all
+I just searched I actually searched for
+Adobe Illustrator files but under vector
+graphics you can just search for
+whatever you want and it will it'll find
+all kinds of files that you can download
+and actually bring in to Inkscape and
+edit change colors or have a lot more
+control than you would often just a
+regular picture this would be a cool one
+to play with and again we can just see
+this is a vector graphic so it has a
+transparent background we can change the
+color of the paint to blue fairly easy
+in Inkscape using this method hopefully
+you've enjoyed this video go ahead and
+like and subscribe check out some of my
+other tutorials and I'll catch you in
+the next video
