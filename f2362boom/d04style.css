@@ -11,7 +11,10 @@
 	/* background-color: antiquewhite; */
 
 }
+
 .grid {
+	display: flex;
+	flex-wrap: wrap;
 	text-align: center;
 	height: 50%;
 }
