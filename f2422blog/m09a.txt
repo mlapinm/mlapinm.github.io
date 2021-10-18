@@ -1,0 +1,266 @@
+welcome back to another Inkscape
+tutorial in this video we're going to be
+using the Bezier tool so we learned in
+the previous video about drawing with a
+freehand tool we learned about
+converting our objects into paths so we
+go object to path and then we knew we
+know we can change these individual
+nodes so if you're a little bit hazy on
+that or if you missed those videos you
+might want to watch those first before
+learning about the Bezier tool because
+what the Bezier tool does is it draws
+based on these different nodes and these
+handles that control the arc or the
+curve of a lion so I'm gonna zoom out
+here we'll just delete these things real
+quick and let's get started with our
+Bezier tool
+so the Bezier tool is here we'll click
+on it if you've never used it before
+you'll be in the default mode if you
+have played with a little bit make sure
+you're in the create regular Bezier path
+and then we'll just click so we can
+click a point here and then come over
+click another point and hit enter and
+we've created a line we can give it a
+little thicker stroke by coming down
+here and right-clicking and going to
+will give it like 4 so it's sort of like
+a fat line and we can change the color
+of it by holding down the shift key and
+clicking on any color so we'll make this
+a purple line I guess and if we come
+here click on this tool so we can edit
+the different nodes of this path so what
+the Bezier tool is done is just drawn a
+path for us from point A to point B it's
+just drawing a line based on the rules
+that we've told it and all we told that
+to do was do a straight line but we
+could have it be a curved line and a
+curve there's a couple different ways we
+can come to the node if we left click
+and drag it'll move the node around but
+if we hold down the shift key and then
+drag it'll bring out this little handle
+and then this handle we can use too if
+we move the angle of it if we rotate it
+around it'll kind of change the
+curvature of this arc coming out of this
+node and if we change the distance of it
+the further away it is the stronger that
+art kind of goes so if we're not very
+subtle we have it below if you want to
+be like a check sign like a Nike sign or
+something we have it come
+here and then we do the same thing with
+this when we go to this node hold down
+the shift key and we can drag out this
+thing and we can make sort of like a
+wave where we want to make it a check we
+make it really long here but just keep
+it horizontal or we can rotate it down
+and make like a nice curved arc shape so
+that's kind of how we do that also if we
+don't want it once these handles are out
+we want to hold the shift key anymore we
+can just play with the handle also we
+can just click on the line at any point
+we want click and hold and we can move
+the line around that way at any point so
+if we click up here it'll kind of move
+just this point here if we click in the
+middle here it'll move that point and
+it'll move both of these handles
+accordingly so that's kind of a good way
+that I like to do is just by dragging
+clicking the line but it's again we only
+have two points one point here one point
+here we can add another point by just
+double clicking so if we double click
+right now we've added another point and
+now we have a third point here and it
+also has these different handles these
+things are tied together so we can
+create like a little loop here we can
+have it be straight we can create sort
+like a sine wave if you want to move
+this like right here we can have this
+one be up and then have this will be
+down and then kind of make that not so
+extreme so that's one thing that we can
+do just sort of playing around getting
+used to this I'm gonna go ahead and
+delete this we can also go back to our
+Bezier tool and we can just left-click
+and then for our second left click we
+can left-click and hold and move our
+mouse and we can create an arc that way
+so now we can create these arcs as we go
+now let's press the Enter key so now
+we've created these arcs just as we were
+drying without having to draw straight
+lines and then Bend them individually we
+can still go in and edit each of these
+we can move the nodes around we can play
+with these different handles and change
+the angles of these arcs or we can just
+click on any any one line and change the
+arc for it all right do do also if we
+just had a straight line let's go back
+to our Bezier tool again let's create
+another straight line and hit enter we
+can just go
+to our edit this tool to edit the notes
+and we can click and just create an arc
+that way without having to pull out
+those handles every time I'm gonna
+delete these so we click delete left
+click delete Oh actually we can delete
+them let me control Z as my show you can
+delete individual nodes too so while
+this is selected we double click we can
+get into the node edit or we can click
+on it here and then left click but we
+can delete a node if I want delete this
+last one I just click it hit the Delete
+key and that node goes away we can
+select multiple notes at the same time
+by left clicking and do creating a
+selection box let's click and drag now
+we have these two nodes selected we can
+move them together independent of the
+rest of the path and we can hit the
+Delete key and delete them also so I'm
+going to select all these nodes delete
+all of them what I guess I can't delete
+all of them yeah delete all but one but
+if you want to leave the whole thing we
+can just select it as like as yeah so
+it's all together into the Delete key
+and I'll delete that way let's go back
+to our let's go back to draw so if we
+want to draw a shape we don't have to
+just draw a line we can actually draw a
+shape we can complete so we can create a
+little arc here create some straight
+lines if we want to and then if we go
+back to our starting node it'll
+automatically complete our shape and
+it'll fill it in without to press ENTER
+to close it or anything it'll just
+complete automatically and now we can
+take this and we can edit the notes
+again just like we did before but we can
+come here select it and we can give it a
+fill color so we can fill it with a
+certain color and we can change the
+stroke color too so we can make we can
+give it a no fill color and if we hold
+the shift key we can make the stroke a
+different color so that's a blue kind of
+hard to see we can make it a little
+thicker so we can see it so we have a
+nice blue outline there and if we one
+thing that you might actually
+accidentally do so if we go to our
+Bezier tool and we just click here and
+draw like sort of a line and hit enter
+and close it off if you want to change
+the color of this line naturally a lot
+of times you'll just come down here and
+want to select the color so if we left
+click red it's gonna actually do its
+best to
+to do what it thinks we're trying to
+tell it to do which is give it a fill
+color of red but we're trying to apply a
+fill color to a line and not a shape not
+a closed shape so it basically draws an
+imaginary line from the last point to
+the first point and then fills in
+anything it possibly can so usually you
+won't want to apply a fill color to a
+line you always want to change the
+stroke color so these paths that we draw
+by default it's a it is a stroke so to
+change the color we hold down shift and
+then we can make it red will change the
+thickness of it so we can just see it a
+little more dramatically so that's how
+you would do that
+another option under the Bezier tool if
+we just click them delete these I'll go
+to selection
+left click delete left click delete we
+can go back to our bezzie a and up under
+mode if we go to this one which is spiro
+create spyro path let's click now if we
+just click when I'm to click and drag we
+just click a couple points and it
+automatically creates this kind of cool
+little we don't do a spiral necessarily
+we can come out here so you can create
+some needs kind of floral designs hit
+enter and we've got this design here
+which is pretty cool and we can get we
+can go in and edit the different nodes
+of this so every point where I clicked
+we can edit these and I just creates a
+much more fluid based off of some sort
+of like fractal math or something and it
+creates these nice spirals that we can
+then edit and yeah change so this might
+be nice
+might be you might be able to think of
+something that you can use this for and
+it gets really nice when we start to
+change the shape so we can also go
+another setting under the busy a is this
+shape so I'll go back to the regular
+mode and under shape if we go like
+triangle in for example and if we just
+create a nice simple line here we can
+give it some character hit the enter key
+and then you see that I'll kind of
+create it fades off if we zoom in here
+the last part is just sort of faded out
+it's very thin and it's kind of more
+thick over here we actually changed the
+setting
+this this is actually not super pretty
+but if we go to path we go to path
+effects we can change this to maybe this
+one here will look too big but this
+gives it more of like a dramatic look we
+can also go back and doing this spyro
+spyro if we check the spyro and go to
+ellipse this creates kind of a nice
+flourish so we can just do a couple
+points here hit the enter key and then
+we see it starts nice and thin here and
+we can edit these nodes again however we
+want to but it starts nice and thin and
+then it goes and we can here we can
+change the width of this particular one
+with the ellipse so we can change and
+make it kind of really thick and so you
+can create some really nice flourishes
+that way sometimes people will download
+like clipart and they'll want to do you
+know they'll find a specific flourish
+but this way you can create your very
+own we can change the colors of it and
+you know make it pretty awesome that's a
+couple cool things that you can do using
+the Bezier tool go ahead and play with
+it to get familiar with how it works
+next video maybe we'll use the Bezier
+tool to do some tracing or at least in
+one of the future videos so stay tuned
+for that go ahead and comment below ask
+questions get involved in the discussion
+and we'll see you on the next video

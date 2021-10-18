@@ -1,0 +1,149 @@
+welcome back to another Inkscape
+tutorial in this video we're going to be
+using the spray tool to create multiple
+objects and copies of objects on the
+screen without having to draw each one
+individually so we're gonna be drawing a
+starry night scene yes I'll show how
+we'll do that first of all let's just
+play with this spray tool for a second
+and show you what it does if we just
+click on it first on a blank canvas it
+does nothing because what this actually
+does is copy an object so if we draw a
+circle we have a black circle like this
+and then while it's selected we select
+the spray tool now this is the object
+that we're going to be spraying and by
+default your settings might look a
+little more I've changed some of these
+settings a little bit but by default it
+kind of looks like this when you spray
+so what this did was actually drew a
+whole bunch of of copies of this and I
+have my scale turned on so they're all a
+little bit different sizes but you can
+make them spray the same copy let's grab
+a better example might be let's do like
+let's do something with a border so we
+have red with a blue border and if we
+spray this it look like this so we've
+sprayed oh I have my rotation on to
+which isn't on by default so these are
+all rotated to do so that's what the
+spray does it just sprays a bunch of
+copies but every one of these is its own
+object that we can move and manipulate
+separately alright I mean it controls
+you a whole bunch of times you get rid
+of all of this and let's do us so what
+we can do is if we do a star for example
+we can actually make like a starry night
+scene so we'll draw a really cool
+looking star and then we'll just spray
+it to create a starry night scene but to
+do that we're gonna change some of the
+settings one of the settings we want to
+do is come up here and click on prevent
+overlapping objects if I hit control Z
+now the stars won't overlap with each
+other so that's kind of that's a lot
+better and then also we can change like
+the rotation if your rotation is set to
+zero then they'll just all they won't be
+rotated they'll all be like this and if
+your
+if your scale is set to zero then
+they'll all just be the same size which
+for certain things you might want to do
+that if you're doing like an American
+flag maybe you should want to do that
+too and then you can go in and like
+reposition these in fact we could use a
+line and distribute like we learned in
+the last video to light them up I
+control Z a couple times but we're going
+to be doing a starry night scene so
+we're gonna left click here we'll just
+cover a rectangle on our whole page and
+then we'll turn it black and I'll get
+rid of this stroke by just holding down
+the shift key and going to this little X
+in the corner to say no stroke all right
+then we'll take this star and we'll just
+use this one it's on a lower level so we
+have to push the page up key to get it
+to go up and let's turn it maybe we'll
+turn it
+let's do white we'll just do white star
+and then we'll also turn off the stroke
+for it so hold down the shift key and
+click here on the no what's this called
+none all right and then we will let's
+scale this a little bit so I'm gonna
+hold down the control key and scale it
+uniformly down to about that size
+perfect and now this while this is
+selected I'll click on my spray tool and
+let's take the rotation up - it doesn't
+really anywhere above 50% will be good
+for us and our scale this just shows the
+that how large it will be so if we do
+this a hundred percent we'll have some
+pretty large stars and some pretty tiny
+ones so we'll scale maybe two we want
+them roughly to be about that size so
+I'll Scout to about 51% let's just try
+this and see how it looks awesome this
+is maybe too many stars and what we can
+do then we can select like well we want
+sort of everything so we go select all
+of it then we hold down the shift key
+and deselect the background if we can
+there we go its let's deselect it now
+because you can see this it's not
+doesn't have a white dotted line around
+it if I hold down the shift key and
+select it now the background selected if
+I deselect it it's not
+and then we can apply changes to all
+these stars at once
+in fact let's group them ctrl G now
+they're all grouped and now we can
+change the color if we wanted to have
+all of them together we could maybe go
+in and what I was thinking about maybe
+doing was going in to fill and Stroke on
+this object fill and Stroke and then we
+could I don't know what we can do with
+them we can change we can try and do
+like see what it looks like if we blur
+them a little bit and then maybe we
+could apply I don't change your color
+just a little bit a little bit just like
+the yellow yeah so anyway I then I
+didn't have a real direction for
+something to produce so by the end of
+this video but I wanted to demonstrate
+using the spray tool so that's one thing
+you can use the spray tool for and again
+you can also also you can draw its
+whatever selected so if we went and got
+grabbed our Bezier tool or even yeah if
+we grab our Bezier tool and create a
+little something we can spray this now
+and so we can grab our spray tool with
+this selected if we turn our rotation
+down to zero our scale to zero so it
+won't rotate and scale when we're drying
+it and then we turn our oh and scatter
+down to 0-2 that'll keep it keep it
+always in the same place and then if we
+say let it overlap order I think I'll
+and then we'll just spray that so then
+we're getting like this we're spraying
+this object that we did or every time we
+click it a loss of your spray once yeah
+that's how the spray Tool Works in
+Inkscape appreciate you watching catch
+you on the next video
