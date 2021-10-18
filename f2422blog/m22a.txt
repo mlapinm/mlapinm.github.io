@@ -1,0 +1,135 @@
+ welcome back to another Inkscape
+tutorial in this video I'll show you how
+to install a custom extension to
+Inkscape the extension I'm gonna be
+installing is here on github it's this
+counter Sheetz extension and what it
+lets you do is create card games on my
+tabletop board games it's just a really
+great extension to Inkscape and so this
+is written and developed by paila
+Nelson I think that's how you say it and
+so huge shout out to him for doing this
+that's kind of the beauty of open source
+right is that anyone can write
+extensions so if you have a niche you
+want to use Inkscape to do some kind of
+a crazy thing that it can't do yet you
+can actually write your own extension
+and then have that added functionality
+so I'll show us how I'll show you how to
+get that in here when we're done with
+this video we'll have a new option
+between a range and color called board
+games that we can go to to create cards
+and things very quickly with a nice
+printable sheet of cards so once you
+have that installed you can go ahead and
+watch the next video where I will
+actually demonstrate how to use this
+extension but in this video it's just
+kind of a boring one just how to install
+the extension okay so the first thing we
+need to do is download it so we'll go
+here to this github page and we'll just
+click on this green download button and
+go to download zip and so we'll download
+this and then that's a zipped file so we
+can navigate to it it's in my downloads
+folder and actually have it already
+extracted but if you don't have it
+extracted yet it's called counter sheet
+extension - master and you just go to
+right click on it and then go to I'm
+using 7-zip but you can just go to
+extract here or to go to 7-zip extract
+here I already have it extracted so I've
+already done that but essentially we
+need to extract it so it's not all
+compressed and so that we can get to the
+files individually and then this is what
+the files will look like so I'm gonna
+open this up so the only files we really
+need from here are this counter sheet
+INX
+and this counter sheet dot pi py that's
+a Python file so this is a this is
+written in for Python which is what I
+guess maybe I'll escape extensions are
+written in that so to find out where to
+put it and to find out which files when
+actually we can just go back here to the
+github where we downloaded it from and
+it'll tell us on installation it says
+copy counter sheet PI and counter sheet
+INX to where Inkscape looks for
+extensions on mac and linux it's going
+to be in the dot config slash Inkscape
+slash extension and on windows which is
+what i'm using is going to be in Program
+Files
+Inkscape share extensions so we're gonna
+go to see my local disk C and then go to
+Program Files not the Program Files x86
+actually I guess it depends on what
+installation you're using but one of
+those two will have an Inkscape
+directory so go to Inkscape and then go
+to share and then go to extensions so
+here's all the extensions we have
+already so if we notice of these
+correlate with these extensions here we
+have like a range and color and some
+different things well those are going to
+be the same things that we find
+corresponding in our extension we have
+this color brighter you know color
+darker color a grayscale and so we just
+need to add in we need to pull up this
+these extensions that we just downloaded
+or this extension that we downloaded and
+move it to here so here's the ones we
+downloaded we're going to left click and
+highlight both of these right click and
+go to copy or we could just drag and
+drop actually left click and drag drag
+them over to here and then it'll come up
+and say you need administrator
+permissions to do this just click
+continue it should ask us twice for one
+for each file and now they are here
+essentially its installed we need to
+close out of Inkscape and then open it
+up again
+and then we will have a new option so
+this is open we go to our extensions and
+now we have boardgames here create
+counter sheet which was not here before
+so we just added a custom extension when
+we go to this it had bring up some
+options for it and so I will show you
+how to do this in the next video well
+first of all I'll show you how to get
+all set up though so what we're gonna
+want to do is take the rest of these
+that we can close out of this one now
+where we installed that where our
+extensions are but the thing that we
+downloaded if we go back to our
+downloads and go to this counter sheets
+that we move the two files out but then
+there's also some examples and some
+templates so I'm going to keep those I'm
+going to create a new folder on my
+desktop and I'm gonna call it game
+I'm gonna call it something very simple
+and you should too and then I'm gonna
+drag and drop the templates into there
+I'm gonna drag and drop the examples
+into there and the rest of these things
+we can just leave so now when I go into
+game I have the examples and the
+templates directories which have a bunch
+of some Inkscape folders and some like
+some spreadsheets things that we can
+open up in like libera office couch
