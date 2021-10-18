@@ -6,7 +6,8 @@ $(()=>{
   let log1 = $('.log1')
   let log2 = $('.log2')
   let sumValues = [0, 0, 0, 0, 0, 0]
-  
+  let doubles = [0, 0, 0, 0, 0, 0]
+
   let valPoints = [
     [4],
     [2, 6],
@@ -39,6 +40,9 @@ $(()=>{
 function addSumValues(val1, val2){
   sumValues[val1] += 1
   sumValues[val2] += 1
+  if(val1 == val2){
+    doubles[val1] += 1
+  }
 }
 
 function render(dice, val){
@@ -65,7 +69,7 @@ function gridDivClick(){
   render(2, val2)
 
 
-  log2.text(sumValues)
+  log2.text(sumValues + ' - ' + doubles)
 
 }
 
