@@ -1,0 +1,411 @@
+welcome back to another Inkscape
+tutorial in this video I want to show
+you how to create a custom thumbnail for
+your YouTube videos so this is some
+thumbnails I created for this tutorial
+series using sweet home 3d and I'm gonna
+actually just hit print screen right now
+and go into Inkscape I'm gonna right
+click and go to paste I'm just gonna
+paste this screenshot and I'm gonna do
+that actually one more time I want to
+get a couple different examples we'll
+grab some videos here and go print
+screen because what I want to do is
+actually see what these look like so if
+we zoom in here a little bit I can kind
+of get an idea for what the thumbnail
+will look like so on on the playlist
+look at this the times the the length of
+the video kind of covers up the bottom
+right-hand corner of the video and if we
+come over here to these other ones just
+a regular one it's not as this is a
+larger video so the time stamp doesn't
+take up as much space there's also a
+little clock in the top right-hand
+corner they could cover something so
+when I'm designing this thumbnail I'm
+gonna want to make sure I keep the top
+right hand corner and that bottom
+right-hand corner kind of don't have
+anything very important there that'll
+get covered up see when I designed these
+ones I actually didn't consider that
+very well because I have the logo here
+that kind of gets covered up when it's
+in the playlist view so in designing
+this one I'm gonna change that a little
+bit so what I can do first of all I'm
+just gonna I'll just get my rectangle
+tool and I'll draw a little rectangle
+here and I'll make it maybe like a
+lighter gray and turn the opacity way
+down so I can kind of see through it a
+little bit maybe we'll make it like red
+so we can see what's going on here okay
+perfect
+so this is kind of the the size and then
+I actually I'm gonna want to go I'm
+gonna kind of just try and kind of match
+this so I'll get my text and I'll just
+type in floor plus foundation and I
+happen to know the font that I used for
+this if I go into my text and text and
+font what I used was next bold and we go
+to apply and so now we have a nice neck
+so bold here
+then I believe that's control Z control
+Z so I believe I'm going to lock this
+lock here so that kind of constrains it
+to X and y axis when I resize it so it
+doesn't get out of there we go so it
+looks pretty good so now what I've done
+here is sort of sort of copied this yeah
+I can go ctrl D to duplicate I can come
+down here and rename this part down here
+is called lesson two so I'm copying my
+own work here but I'm just showing you
+an example of what you can do if you
+find the thumbnail you kind of like and
+you want to pattern it after so
+basically I've kind of patterned this
+and now we have this is the logo down
+here so all this really has is it a
+border and then it has a logo or an icon
+of the of whatever I'm talking about
+because I'm doing tutorial videos on how
+to use software then as this banner that
+says TJ free across the the bottom there
+so I can create that banner I think by
+kind of getting a nice blue here I can
+actually if I turn my opacity all the
+way up or is it that and I can grab my
+color picker and actually get the same
+color that was used in this video so now
+I'm using the same color and I can
+rotate it to about the same angle that's
+pretty close there maybe I'll just do
+this this isn't the best way to do it
+but at least it gets it pretty close
+here and doesn't matter that it's
+sticking out past the edges because it
+just doesn't matter yeah so that's great
+and I'll get some text there to say TJ
+free I don't know what font that was in
+TJ three and we turn out white
+oops we turn it white and then we'll
+also rotate it oh let me resize it first
+so this looks like it's definitely a
+different font I wonder if this was a
+this baby's baby snowy mmm
+apply yeah it is baby snow look at that
+one of the most common fonts of all time
+used on YouTube so here we go so now
+we've got this nice TJ free here and
+I'll rotate it so that it fits perfectly
+in there but that's pretty good awesome
+now I'm going to go ahead and just
+delete this whole thing I'm gonna come
+back and we'll change this back to how I
+wanted it to be real quick we'll put the
+stroke on and we'll make it
+sorry about that when we get pixels what
+does I have it at 3 pixels about all
+right so this is what it this is what my
+my thumbnail is looking like now so I
+want to create a that's thumbnail that's
+gonna be the same throughout the whole
+series just like on this one it's the
+same I just changed the text and I say
+lesson for lesson 5 I change the text at
+the top but everything else stays the
+same so I wanna do the same thing for
+this one but I want to be Inkscape and
+so I have I found the Inkscape logo I
+got from Wikipedia and it's actually
+here in the pictures yeah I've got it
+right here so I'm gonna actually just
+drag it in I'm dragging the Inkscape oh
+icon into Inkscape and it's actually it
+looks like it's really big but that's
+because what really happened is this
+thing that we designed is really small
+so I'm gonna select it let's make it
+large in fact let's make it the size
+that it really needs to be so to do that
+I'm gonna go to file I'm gonna go to
+document properties and change my
+document to 1920 by 1080 that's the size
+of the thumbnail and put it in pixels
+that's the size of the thumbnail that is
+a pretty good you can do smaller to
+upload to YouTube but I would recommend
+doing 1920 by 1080 that way if someone's
+watching on like Roku TV or like if
+they're just if they're browsing
+fullscreen it'll it'll show up properly
+okay so now now I changed my document
+properties this is the size of my my
+finished thing so I'll just move this on
+here and kind of roughly put it in the
+same size like that that's pretty good
+and then I'm actually gonna click on my
+square and make sure that it's exactly
+how I want it to be to or my rectangle
+so pixels so I'll make it 1920
+by 1080 exactly and then I'll just put
+it exactly within the constraints of
+this document and that's perfect
+okay pretty good so this is gonna this
+thing let's see I think I want my border
+on hit page up or I'll just raise the
+top so that it covers up the covers over
+top of this this have transparency yes
+let's make it 100% and then we'll change
+the color of it too I haven't decided
+what color I want to do oh yeah I know I
+did that's right I want to do grey so
+let's go back to this and let's make it
+grey all right and so now I want to move
+I want to move this up a little bit I
+want that to be centered in there about
+like that and now I'm gonna hit ctrl G
+and group this and I can move them
+together I'm using the arrow keys on my
+keyboard right now so about right there
+it's pretty good I think for a banner
+yeah about how I did on my last one yeah
+that's pretty good okay so now I need a
+background image well actually I don't
+get background image is this 1920 by
+1080 I told it to be no it's not oh I
+know why I had it locked 1920 by 1080
+now it is now I can ReWalk it perfect so
+there we go perfect all right now I'm
+gonna add in so now I have my my icon
+here so I'm going to take it will resize
+it down a little bit I'm not sure what
+font they use for this so remember I
+want to keep out that area at the bottom
+right hand corner did i erase that I
+think I did but I want to keep that area
+free there and that's the whole reason I
+brought it in I can't believe I did that
+and I hit print screen again and I'm
+gonna come paste it and again paste so
+really let's make this like super
+transparent and then we'll make it we'll
+make this kind of
+I guess what's the best way to do this
+this is not the best way to do this
+actually but we'll just give it a try so
+what I want to do is kind of make this
+the same size as my video down here
+which I'm getting close and then I can
+see how much of that is taken up by
+that's pretty good
+so now when I overlay this here and
+actually what I'm gonna do is just I'm
+gonna take and copy this so I have two
+different versions now I go duplicate
+move the whole thing over here so it's
+out of the way now I can look at this
+one I can see all right so it looks like
+that takes up quite a bit so that's good
+there
+I could actually I could still I could
+still make this lower just the bottom
+here I can still move I can make this
+icon larger I can put it anywhere I
+don't want to get it here if I put it
+here or get covered up so I could put it
+even a little bit further over this way
+if I wanted to because I really want to
+have some sort of a background image I
+think I might just Center it so centered
+it centering it should be fine okay good
+to know so I'll come back over here I
+feel like I'm talking a lot and I hope
+I'm not confusing you so what I'm gonna
+do I'm gonna go grab all this stuff
+I'm gonna go hung out all of it I'm
+actually just gonna grab this and then
+shift and do this and we're gonna Center
+these on each other so I'm going to go
+object line and distribute and we'll
+Center those up so now this is right in
+the center this I don't necessarily want
+in the center I want about it I do want
+to be lined up I want these to be pushed
+like this great
+and then we'll put this kind of up here
+that's pretty good Oh in this lesson to
+was had its own little banner behind it
+that's because there was a background
+image so I could just export this right
+now and we can see what it looks like I
+don't love it yet but listen if we just
+let's go to export and see so export PNG
+we'll export it to the desktop and we'll
+call it test one and that's not on my
+desktop let's put it on the desktop test
+one perfect and then let's make the size
+we'll make this like ninety two dpi and
+we'll make this 1920 by 1080 perfect 96
+dpi very good ok export so now it'll
+only export the selection so it should
+cut off that banner and we'll see what
+that looks like
+not bad so it has a transparent
+background which is not super great and
+it has this TJ free did my last one do
+that I can't tell I think the I think
+this blue banner did go over the last
+one so let's make that happen in this
+one too so we have to do that which take
+the blue banner and send it raise it to
+the top so now it will go over it ok and
+then like I said it had a has a
+transparent background so it's hard to
+tell exactly how it looks so let's put a
+background so I thought about using this
+at one point in time and maybe I still
+will
+yeah so let's just drag this guitar and
+this is a guitar that I drew inning
+scape a while ago when I was first
+learning Inkscape so we could put it as
+the background to do that we did we just
+raise it up like this and then lower it
+to the bottom level so that actually
+looks pretty good
+the only problem is now the Inkscape
+logo is not exactly where I'd want it to
+be hmmm no I don't think I want to do
+that I have another I have another image
+I wanted I want to try and that is this
+Nintendo thing that I drew up so that's
+kind of a cool thing too so we could try
+this one although it has a black
+background
+I don't love that I wish I had I do have
+the original this somewhere well that's
+not gonna work at all is it
+no so I need to find a good background
+image that kind of exemplifies Inkscape
+I don't know exactly what to do there I
+mean I could I suppose I could just grow
+I could just draw something like this
+and give it like a gradient let's come
+down here to my fill and Stroke where's
+that that's right click filling stroke
+let's give it a gradient from the center
+out let's make it like gray maybe hoops
+oh dude gray and with a great gradient
+and I'm just lower it all the way down
+yeah that is not look that does not look
+amazing to me I think this is too oops
+this is too dark maybe and I think I
+want this to be reversed this gradient
+let's try it like that just give it a
+little bit of subtle let's give it some
+subtle color that's not bad
+like white purple could just give it a
+color background then we give this more
+of a K lighter color so I've been
+playing with this for a little bit and I
+actually did a couple things so I added
+a drop shadow to this I put a little a
+little white banner here and I added a
+drop shadow to it sort of like a little
+black backing to it I added the text to
+the Inkscape below I made the icon a
+little bit larger and then obviously I
+changed it to this sort of blue color
+instead of the purple which I think I
+like a lot better so now I think I like
+this I haven't actually quite exported
+it just yet in this version but I'm
+gonna do an export real quick here and
+I'll just take it to desktop again and
+I'll call this our our our save export
+so now I'll take a look at this one and
+see what it looks like yeah that looks
+pretty good to me I think that'll be
+nice I'm not so sure I love that white
+now around there but I think it'll be
+small enough I don't think people really
+notice
+but you know what I am gonna take it out
+I'm gonna take out this I have this sort
+of white actually I'm just gonna what
+I'm gonna do I'm gonna come here and
+grab just the white part do I have the
+white selected yeah and I'm just gonna
+actually add a little bit of blur to it
+that'll make it look better all right
+very cool now so what I need to do is I
+need to create a bunch of these so I'm
+gonna come over here and delete this so
+it's not taking up any space this is my
+original Alderley that I'm going to take
+and delete this purple one too so now
+this is the final one that I want to use
+and so everything I really want to do
+with this I shouldn't bring it over here
+so if I come up here I'm actually gonna
+want to copy this a bunch of times so
+I'm gonna take this floor and Foundation
+and I'll just erase the text and type in
+the letter A and then on lesson I can
+keep it lesson two it doesn't really
+matter then we just go ctrl D and I'll
+just move it down here ctrl D so I need
+like a bunch of these ctrl D because
+what I really need is how many of them
+let's come over here and look I really
+need 20 okay so I have I have a couple
+here and so let's come and just go it'll
+take all these ones is five so that I
+duplicate this row and now there's 10
+and then duplicate it again and now
+there's going to be 20 that's awesome
+before I get any further I'm gonna save
+this file save as I'll save it under my
+documents if I can and I'll call it ink
+escape tutorial thumbnails that way if I
+ever add a few a video in the future
+like the one I'm making now is video 21
+I can add it in there as well
+and I'm just come here to the very very
+first top one and I'm just gonna rename
+this so I'm going to call this one
+lesson 1 and take this text and erase
+the a and type in basic drawing and
+that's it and that is that thumbnail so
+now I can export this and upload it and
+replace
+it in here so I'll just show you just a
+quick video here I've renamed all of
+them so I have all these different
+thumbnails now and I'm just exporting
+them so this is number nine export I
+think I redid that one so replace and
+then I've got ten I just select it call
+it ten and then hit export so it's
+actually very quick I have a workflow
+once I get all these going it just takes
+the selection which is that box so it
+doesn't get anything on the outside of
+that box
+I just rename it to what I want to be
+called and hit export so this one's
+twelve I click on it make sure it says
+twelve and hit export and then it's
+putting all of these on my desktop here
+and I can just go through and see open
+up if I want and look through and see
+what they look like and they're nice and
+then once I'm done exporting them all
+I'll upload them to YouTube so that's it
