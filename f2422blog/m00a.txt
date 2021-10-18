@@ -1,8 +1,7 @@
 
 m1
 
-Inkscape Lesson 1 - Interface and Basic Drawing
-TJ FREE
+Inkscape Lesson 1 - Interface and Basic Drawing
 
 m2
 
@@ -10,519 +9,483 @@ m2
 
 
 
-Inkscape Lesson 2 - Shape Tools and Options
-TJ FREE
+Inkscape Lesson 2 - Shape Tools and Options
 
 m03
 
 15:30
 
-Inkscape Lesson 3 - Fill and Stroke Settings
-TJ FREE
+Inkscape Lesson 3 - Fill and Stroke Settings<source src="ttps://drive.google.com/uc?export=view&id=1ySZFxnJHrzv56KDLrzwuecikAefXXBFC" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1ySZFxnJHrzv56KDLrzwuecikAefXXBFC/view?usp=sharing
 
 m04
 
 10:27
 
-Inkscape Lesson 4 - Groups, Levels, and Object Selection
-TJ FREE
+Inkscape Lesson 4 - Groups, Levels, and Object Selection<source src="ttps://drive.google.com/uc?export=view&id=1Qo7fPzaW3uAZ2mVkdjiuaPkQe8D" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1Qo7fPzaW3uAZ2mVkdjiuaPkQe8D--92n/view?usp=sharing
 
 m05
 
 14:17
 
-Inkscape Lesson 5 - Document Properties and Exporting PNG Images
-TJ FREE
+Inkscape Lesson 5 - Document Properties and Exporting PNG Images<source src="ttps://drive.google.com/uc?export=view&id=1ftf0TvPAY5lmrWvHeCvp_eJAMVO2LOiR" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1ftf0TvPAY5lmrWvHeCvp_eJAMVO2LOiR/view?usp=sharing
 
 m06
 
 9:56
 
-Inkscape Lesson 6 - Text and Fonts
-TJ FREE
+Inkscape Lesson 6 - Text and Fonts<source src="ttps://drive.google.com/uc?export=view&id=1ffSvt-ra2FSZ-LBG5OXh01IHm-FnLqBx" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1ffSvt-ra2FSZ-LBG5OXh01IHm-FnLqBx/view?usp=sharing
 
 m07
 
 11:12
 
-Inkscape Lesson 7 - Drawing Lines and Paths vs Objects
-TJ FREE
+Inkscape Lesson 7 - Drawing Lines and Paths vs Objects<source src="ttps://drive.google.com/uc?export=view&id=1rUd5Z99IaRf9dWXtjnnP7cXjR6aconIl" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1rUd5Z99IaRf9dWXtjnnP7cXjR6aconIl/view?usp=sharing
 
 m08
 
 5:41
 
-Inkscape Lesson 8 - Free Hand Drawing Tool
-TJ FREE
+Inkscape Lesson 8 - Free Hand Drawing Tool<source src="ttps://drive.google.com/uc?export=view&id=17Rsfnhxhq32V7aXolYsDCLQO5pEbMMGv" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/17Rsfnhxhq32V7aXolYsDCLQO5pEbMMGv/view?usp=sharing
 
 m09
 
 10:16
 
-Inkscape Lesson 9 - Bezier Tool and Nodes
-TJ FREE
+Inkscape Lesson 9 - Bezier Tool and Nodes<source src="ttps://drive.google.com/uc?export=view&id=1FjvA-QeXe3dabaeuJmHESOdJwhso7CpK" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1FjvA-QeXe3dabaeuJmHESOdJwhso7CpK/view?usp=sharing
 
 m10
 
 9:25
 
-Inkscape Lesson 10 - Trace Images with Bezier Tool
-TJ FREE
+Inkscape Lesson 10 - Trace Images with Bezier Tool<source src="ttps://drive.google.com/uc?export=view&id=1bL-ygbG8IFqcrN5Hnd6Is1hBp-KlhnOQ" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1bL-ygbG8IFqcrN5Hnd6Is1hBp-KlhnOQ/view?usp=sharing
 
 m11
 
 9:35
 
-Inkscape Lesson 11 - Trace Bitmap Tool (Convert Raster to SVG)
-TJ FREE
+Inkscape Lesson 11 - Trace Bitmap Tool (Convert Raster to SVG)<source src="ttps://drive.google.com/uc?export=view&id=1ceagoyj-Vc-OageV9CnztT6BpBN0EnVQ" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1ceagoyj-Vc-OageV9CnztT6BpBN0EnVQ/view?usp=sharing
 
 m12
 
 11:33
 
-Inkscape Lesson 12 - Difference, Union, Intersection, Combine...
-TJ FREE
+Inkscape Lesson 12 - Difference, Union, Intersection, Combine...<source src="ttps://drive.google.com/uc?export=view&id=1g0FveF-K-8n-iGmOdOkl60sZZWp3ZTTu" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1g0FveF-K-8n-iGmOdOkl60sZZWp3ZTTu/view?usp=sharing
 
 m13
 
 8:10
 
-Inkscape Lesson 13 - Align and Distribute
-TJ FREE
+Inkscape Lesson 13 - Align and Distribute<source src="ttps://drive.google.com/uc?export=view&id=1Mw_VKgdviePyRxOMvDkxZ7eqNq_46fbL" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1Mw_VKgdviePyRxOMvDkxZ7eqNq_46fbL/view?usp=sharing
 
 m14
 
 6:32
 
-Inkscape Lesson 14 - Spray Tool, Copy, Clone.
-TJ FREE
+Inkscape Lesson 14 - Spray Tool, Copy, Clone.<source src="ttps://drive.google.com/uc?export=view&id=1A-tWSuXgs_QMhehtVz2skysHnmOtguNX" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1A-tWSuXgs_QMhehtVz2skysHnmOtguNX/view?usp=sharing
 
 m15
 
 8:29
 
-Inkscape Lesson 15 - Using Layers
-TJ FREE
+Inkscape Lesson 15 - Using Layers<source src="ttps://drive.google.com/uc?export=view&id=1mF5l6lG9avwjE9NCw0-ESasJeGtERNjM" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1mF5l6lG9avwjE9NCw0-ESasJeGtERNjM/view?usp=sharing
 
 m16
 
 9:55
 
-Inkscape Lesson 16 - Using Filters
-TJ FREE
+Inkscape Lesson 16 - Using Filters<source src="ttps://drive.google.com/uc?export=view&id=1PerdEdSSXGsdetUEai5e7q3mQ6WT3nE5" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1PerdEdSSXGsdetUEai5e7q3mQ6WT3nE5/view?usp=sharing
 
 m17
 
 6:58
 
-Inkscape Lesson 17 - Rendering Paths and Objects
-TJ FREE
+Inkscape Lesson 17 - Rendering Paths and Objects<source src="ttps://drive.google.com/uc?export=view&id=1pQD_sV_gVil5GwwX-c29ogCglfyG78J-" type="audio/mpeg">
+ttps://drive.google.com/file/d/1pQD_sV_gVil5GwwX-c29ogCglfyG78J-/view?usp=sharing
 
 m18
 
 5:03
 
-Inkscape Lesson 18 - Import and Edit PDF Files
-TJ FREE
+Inkscape Lesson 18 - Import and Edit PDF Files<source src="ttps://drive.google.com/uc?export=view&id=1tiC4ViTg-kwLhzYHaoDgFSydL3R9xskG" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1tiC4ViTg-kwLhzYHaoDgFSydL3R9xskG/view?usp=sharing
 
 m19
 
 4:19
 
-Inkscape Lesson 19 - Edit Adobe Illustrator .ai files in Inkscape
-TJ FREE
+Inkscape Lesson 19 - Edit Adobe Illustrator .ai files in Inkscape<source src="ttps://drive.google.com/uc?export=view&id=1-W1P7M9_22sNOaVGyQsCBUuIPrmEFMBJ" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1-W1P7M9_22sNOaVGyQsCBUuIPrmEFMBJ/view?usp=sharing
 
 m20
 
 2:23
 
-Inkscape Lesson 20 - Examples of shirts, cards, and books, made in Inkscape
-TJ FREE
+Inkscape Lesson 20 - Examples of shirts, cards, and books, made in Inkscape<source src="ttps://drive.google.com/uc?export=view&id=1FDDo1wNK6ki6Lcv_8BBFLs89W-lEc_Dq" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1FDDo1wNK6ki6Lcv_8BBFLs89W-lEc_Dq/view?usp=sharing
 
 m21
 
 18:06
 
-Inkscape Lesson 21 - Custom Video Thumbnails
-TJ FREE
+Inkscape Lesson 21 - Custom Video Thumbnails<source src="ttps://drive.google.com/uc?export=view&id=1mD26-MnrhOVN-v4qIi1eoWb55t_CxPn6" type="audio/mpeg">
+
+ttps://drive.google.com/file/d/1mD26-MnrhOVN-v4qIi1eoWb55t_CxPn6/view?usp=sharing
 
 m22
 
 4:54
 
-Inkscape Lesson 22 - Installing Custom Extensions
-TJ FREE
+Inkscape Lesson 22 - Installing Custom Extensions<source src="ttps://drive.google.com/uc?export=view&id=1cLLF8nt0exGgJz56KLlkVBFO8FHhvaTI" type="audio/mpeg">
+
 
 m23
 
 16:51
 
-Inkscape Lesson 23 - Create Custom Card Games, Dice, etc...
-TJ FREE
+Inkscape Lesson 23 - Create Custom Card Games, Dice, etc...
 
 m24
 
 4:42
 
-Inkscape - Draw a 2D Cartoon Character for Animation
-TJ FREE
+Inkscape - Draw a 2D Cartoon Character for Animation
 
 m25
 
 7:06
 
-Inkscape - Simple Glassy Buttons
-TJ FREE
+Inkscape - Simple Glassy Buttons
 
 m26
 
 9:41
 
-Inkscape - Using Guides
-TJ FREE
+Inkscape - Using Guides
 
 m27
 
 4:47
 
-Inkscape | Create Barcode & QR Code (Free Generator)
-TJ FREE
+Inkscape | Create Barcode & QR Code (Free Generator)
 
 m28
 
 12:52
 
-Inkscape - Design t-shirts, jackets, and other clothing
-TJ FREE
+Inkscape - Design t-shirts, jackets, and other clothing
 
 m29
 
 8:52
 
-Inkscape - Custom SVG Maps from OpenStreetMap
-TJ FREE
+Inkscape - Custom SVG Maps from OpenStreetMap
 
 m30
 
 10:30
 
-Inkscape - Real World Maps with Vector Overlays
-TJ FREE
+Inkscape - Real World Maps with Vector Overlays
 
 m31
 
 8:31
 
-Inkscape - Free .svg & .ai vector art downloads
-TJ FREE
+Inkscape - Free .svg & .ai vector art downloads
 
 m32
 
 10:38
 
-Inkscape - DPI, File Size, & Exporting Options
-TJ FREE
+Inkscape - DPI, File Size, & Exporting Options
 
 m33
 
 9:38
 
-Inkscape | Draw Vector Graphics Watermelon
-TJ FREE
+Inkscape | Draw Vector Graphics Watermelon
 
 m34
 
 9:01
 
-Inkscape | Draw a City or Town in Vector Art
-TJ FREE
+Inkscape | Draw a City or Town in Vector Art
 
 m35
 
 6:48
 
-Inkscape | Draw Cartoon Character Mega Man Artwork
-TJ FREE
+Inkscape | Draw Cartoon Character Mega Man Artwork
 
 m36
 
 9:41
 
-Inkscape | Draw Shoes in Vector Art / SVG
-TJ FREE
+Inkscape | Draw Shoes in Vector Art / SVG
 
 m37
 
 8:44
 
-Inkscape | How to Draw Trees
-TJ FREE
+Inkscape | How to Draw Trees
 
 m38
 
 3:11
 
-Inkscape | Fix Thumbnail in Document Properties
-TJ FREE
+Inkscape | Fix Thumbnail in Document Properties
 
 m39
 
 7:26
 
-Inkscape | Christmas Room at Night with Tree, Fireplace, and Presents
-TJ FREE
+Inkscape | Christmas Room at Night with Tree, Fireplace, and Presents
 
 m40
 
 7:24
 
-Inkscape | How to Draw a Christmas Tree
-TJ FREE
+Inkscape | How to Draw a Christmas Tree
 
 m41
 
 4:10
 
-Inkscape | Draw a Cartoon House (Speed Art 1 of 2)
-TJ FREE
+Inkscape | Draw a Cartoon House (Speed Art 1 of 2)
 
 m42
 
 5:59
 
-Inkscape | Draw River and Landscape for House Scene (Speed Art 2 of 2)
-TJ FREE
+Inkscape | Draw River and Landscape for House Scene (Speed Art 2 of 2)
 
 m43
 
 7:00
 
-Inkscape | Photo to Vector Low Poly Tutorial
-TJ FREE
+Inkscape | Photo to Vector Low Poly Tutorial
 
 m44
 
 7:47
 
-Inkscape | How to Make an Infographic (Free Software)
-TJ FREE
+Inkscape | How to Make an Infographic (Free Software)
 
 m45
 
 1:29
 
-Inkscape | Low Poly Art Tomato Fruit Drawing / Tracing (Speed Art)
-TJ FREE
+Inkscape | Low Poly Art Tomato Fruit Drawing / Tracing (Speed Art)
 
 m46
 
 6:00
 
-Inkscape | Simple Business Card Design (Speed Art)
-TJ FREE
+Inkscape | Simple Business Card Design (Speed Art)
 
 m47
 
 6:02
 
-Inkscape | Draw a distant mountain background with sun and sky
-TJ FREE
+Inkscape | Draw a distant mountain background with sun and sky
 
 m48
 
 3:18
 
-Inkscape | Change Day to Night
-TJ FREE
+Inkscape | Change Day to Night
 
 m49
 
 7:35
 
-Design Shirts in Inkscape
-TJ FREE
+Design Shirts in Inkscape
 
 m50
 
 6:27
 
-Inkscape 1.0 New Release | A Quick Review
-TJ FREE
+Inkscape 1.0 New Release | A Quick Review
 
 m51
 
 12:00
 
-Inkscape 1.0 Live Path Effects LPEs
-TJ FREE
+Inkscape 1.0 Live Path Effects LPEs
 
 m52
 
 9:25
 
-Inkscape | Draw Houses in Vector / SVG (Speed Art)
-TJ FREE
+Inkscape | Draw Houses in Vector / SVG (Speed Art)
 
 m53
 
 1:55
 
-Inkscape 1.0 | How to Split / Cut Text
-TJ FREE
+Inkscape 1.0 | How to Split / Cut Text
 
 m54
 
 3:46
 
-Inkscape Photo Shape Collage
-TJ FREE
+Inkscape Photo Shape Collage
 
 m55
 
 10:13
 
-Inkscape | Purses, Bags, Backpack (Speed Art)
-TJ FREE
+Inkscape | Purses, Bags, Backpack (Speed Art)
 
 m56
 
 2:24
 
-Inkscape 1.0 | Pattern Along Path
-TJ FREE
+Inkscape 1.0 | Pattern Along Path
 
 m57
 
 5:32
 
-Inkscape 1.0 | Sketch to Vector
-TJ FREE
+Inkscape 1.0 | Sketch to Vector
 
 m58
 
 4:58
 
-Inkscape 1.0 | Picture Silhouette using Trace Bitmap
-TJ FREE
+Inkscape 1.0 | Picture Silhouette using Trace Bitmap
 
 m59
 
 5:03
 
-Inkscape 1.0 | 3D Text
-TJ FREE
+Inkscape 1.0 | 3D Text
 
 m60
 
 4:30
 
-Inkscape 1.0 | Draw Island in the Sea
-TJ FREE
+Inkscape 1.0 | Draw Island in the Sea
 
 m61
 
 8:48
 
-Inkscape 1.0 | Draw a Butterfly
-TJ FREE
+Inkscape 1.0 | Draw a Butterfly
 
 m62
 
 3:35
 
-Inkscape | Japan Scene Speed Art
-TJ FREE
+Inkscape | Japan Scene Speed Art
 
 m63
 
 4:06
 
-Inkscape Heart Love Saves The World Speed Art
-TJ FREE
+Inkscape Heart Love Saves The World Speed Art
 
 m64
 
 1:23
 
-Inkscape | Outline Text with Path Linked Offset
-TJ FREE
+Inkscape | Outline Text with Path Linked Offset
 
 m65
 
 1:00
 
-Inkscape | Curve Text. Text on Path.
-TJ FREE
+Inkscape | Curve Text. Text on Path.
 
 m66
 
 0:54
 
-Inkscape | Convert Text To Path
-TJ FREE
+Inkscape | Convert Text To Path
 
 m67
 
 1:00
 
-Inkscape | How to Crop an Image
-TJ FREE
+Inkscape | How to Crop an Image
 
 m68
 
 4:20
 
-Inkscape | Draw a Car - Speed Art
-TJ FREE
+Inkscape | Draw a Car - Speed Art
 
 m69
 
 1:09
 
-Inkscape | How to Draw Over Image
-TJ FREE
+Inkscape | How to Draw Over Image
 
 m70
 
 2:25
 
-Inkscape | How to Draw Flourishes
-TJ FREE
+Inkscape | How to Draw Flourishes
 
 m71
 
 3:57
 
-Inkscape | Text and Image Overlap
-TJ FREE
+Inkscape | Text and Image Overlap
 
 m72
 
 3:28
 
-Inkscape | Text Split Shadow Effect
-TJ FREE
+Inkscape | Text Split Shadow Effect
 
 m73
 
 2:24
 
-Inkscape | Dripping Text Effect
-TJ FREE
+Inkscape | Dripping Text Effect
 
 m74
 
 2:03
 
-Inkscape 3 Stroke Method Text Outline
-TJ FREE
+Inkscape 3 Stroke Method Text Outline
 
 m75
 
 1:44
 
-Path Effect | Offset (Inkscape)
-TJ FREE
+Path Effect | Offset (Inkscape)
 
 m76
 
