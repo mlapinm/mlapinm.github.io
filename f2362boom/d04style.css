@@ -1,0 +1,45 @@
+* {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  line-height: 0.9;
+
+}
+
+.grid-div {
+	/* width: 100vmin; */
+	height: 80vh;
+	/* background-color: antiquewhite; */
+
+}
+.grid {
+	text-align: center;
+	height: 50%;
+}
+
+.dice {
+	display: flex;
+	flex-wrap: wrap;
+	margin:auto;
+	width: 30vmin;
+	height: 30vmin;
+	background-color: aqua;
+	border-radius: 1rem;
+}
+
+.cell {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 33%;
+	height: 33%;
+	/* background-color: bisque; */
+}
+
+.point {
+	margin: auto;
+	width: 60%;
+	height: 60%;
+	background-color:aquamarine;
+	border-radius: 50%;
+}
+

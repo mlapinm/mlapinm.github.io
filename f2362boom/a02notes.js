@@ -31,13 +31,13 @@ var notes = [
    },
   {
     "header": "",
-    "title": "",
+    "title": "dice",
     "card-text": [
       "",
       "",
       ""
     ],
-    "link": "d00boom.html"
+    "link": "d04dice.html"
    },
   {
     "header": "",
