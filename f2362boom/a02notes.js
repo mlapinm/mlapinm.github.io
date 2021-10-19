@@ -41,13 +41,33 @@ var notes = [
    },
   {
     "header": "",
+    "title": "backgammon",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "d05back.html"
+   },
+  {
+    "header": "",
     "title": "",
     "card-text": [
       "",
       "",
       ""
     ],
-    "link": "d00boom.html"
+    "link": "d02test.html"
+   },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "d02test.html"
    },
   {
     "header": "",
