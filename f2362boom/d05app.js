@@ -68,19 +68,9 @@ function cellClick(val){
     lastFishka.removeClass('checked')
     lastFishka = null
 
-    console.log(333)
   }
-
-
-
-
-
-  console.log(cell, fishka)
-
-
   lastCell = cell
   k += 1
-
 }
 
 $('.out').click((e) => {
