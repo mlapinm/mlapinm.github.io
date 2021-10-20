@@ -16,26 +16,29 @@ $(()=>{
     p2.text(item.name)
     div.append(p1)
     div.append(p2)
+    $('.desk').empty()
     $('.desk').append(div)
   }
 
-  $('input').val(12)
+  $('input').val(47)
 
   $('button').click(() => {
-    item = items[10]
-    showItem(item)
-
     let value = $('input').val()
-    log2.text(value)
+    item = find(Number(value))
+    if(item){
+      showItem(item)
+    }
+    $('input').select()
   })
 
   showItem(item)
 
+  function find(num){
+    let res = items.find((e,i) => {
+      return e.nums.includes(num)
+    }, num)
+    return res
+  }
 
-
-  // log1.text(items[0].name)
   log2.text()
-
-  
-
 })
