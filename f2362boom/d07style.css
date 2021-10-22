@@ -47,3 +47,8 @@ section {
 	border: solid 1px;
 }
 
+.val {
+	text-align: right;
+	background-color:aliceblue;
+}
+
