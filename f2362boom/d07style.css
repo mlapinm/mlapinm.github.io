@@ -30,7 +30,7 @@
 section {
 	/* display: flex; */
 	min-width: 100vw;
-	height: 95vh;
+	height: 100vh;
 	scroll-snap-align: start;
 	/* text-align: center; */
 	position: relative;
