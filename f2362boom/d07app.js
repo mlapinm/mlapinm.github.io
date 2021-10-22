@@ -3,12 +3,12 @@ let max = 80
 
 var items = [
   {
-    "num": 0,
-    "name": "ост"
+    "num": "ns00",
+    "name": "бат"
   },
   {
-    "num": 0,
-    "name": "тел"
+    "num": "ns01",
+    "name": "радио Питер"
   }
 ]  
 
@@ -25,9 +25,34 @@ $(()=>{
 
     items.forEach((e)=>{
       let section = $('<section></section>')
-      let inner = $('<div class="inner"><div>')
-      inner.text(e.name)
-      section.append(inner)
+
+      let desc = $('<div></div>')
+      desc.addClass('desc')
+
+      let ns = eval(e.num)
+
+      ns.forEach((n) => {
+        let name = $('<div></div>')
+        name.addClass('name')
+        let val = $('<div></div>')
+        val.addClass('val')
+
+        name.text(n.names[0])
+        val.text(n.vals[0])
+
+        desc.append(name)
+        desc.append(val)
+        
+      })
+
+      let note = $('<div></div>')
+      note.addClass('note')
+
+      // desc.text('22')
+      note.text(e.name)
+
+      section.append(desc)
+      section.append(note)
 
     $('.slider').append(section)
 
@@ -35,39 +60,6 @@ $(()=>{
 
   }
 
-  const random = (min, max) => {
-    let v = Math.floor(Math.random() * (max - min + 1)) + min;
-    v += v % 2
-    return v
-  }
 
-  button.click(()=>{
-    if(!timerStart){
-      timerStart = true
-      num = random(min, max)
-      button.text('tic')
-      audio1.play()
-
-      count = 0
-      button.removeClass('select')
-      timerId = setInterval(() => {
-        count += 1
-        if(count >= num){
-          button.text('boom')
-          clearTimeout(timerId)
-          timerStart = false
-          button.addClass('select')
-          audio2.play()
-          return
-        }
-        audio1.play()
-        let text = count%2 ? 'tac': 'tic'
-        button.text(text)
-        // log2.text('' + count)
-  
-      }, 1000)
-    }
-
-  })
 
 })

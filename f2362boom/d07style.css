@@ -28,18 +28,22 @@
 
 
 section {
-	display: flex;
-	/* margin-left: 2rem; */
-	min-width: 90vw;
+	/* display: flex; */
+	min-width: 100vw;
 	height: 95vh;
 	scroll-snap-align: start;
-	text-align: center;
+	/* text-align: center; */
 	position: relative;
-  /* border: solid 6px lavender; */
-  /* border-radius: 0.4rem; */
 
 }
 
-.inner{
-	margin: auto;
+.desc {
+	height: 90%;
+	overflow: auto;
 }
+
+.note {
+	text-align: center;
+	border: solid 1px;
+}
+
