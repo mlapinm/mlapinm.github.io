@@ -1,0 +1,45 @@
+* {
+  font-size: 2rem;
+  font-family: sans-serif;
+  line-height: 0.9;
+
+}
+
+
+
+.select{
+  background-color: lightcoral;
+}
+
+.div-slider{
+	margin: 0.2rem;
+	position: relative;
+}
+
+.slider {
+	font-family: sans-serif;
+	scroll-snap-type: x mandatory;	
+	display: flex;
+	-webkit-overflow-scrolling: touch;
+	width: 100vw;
+	margin: auto;
+	overflow-x: scroll;
+}
+
+
+section {
+	display: flex;
+	/* margin-left: 2rem; */
+	min-width: 90vw;
+	height: 95vh;
+	scroll-snap-align: start;
+	text-align: center;
+	position: relative;
+  /* border: solid 6px lavender; */
+  /* border-radius: 0.4rem; */
+
+}
+
+.inner{
+	margin: auto;
+}

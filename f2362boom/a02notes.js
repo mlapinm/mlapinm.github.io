@@ -61,6 +61,16 @@ var notes = [
    },
   {
     "header": "",
+    "title": "notes",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "d07notes.html"
+   },
+  {
+    "header": "",
     "title": "",
     "card-text": [
       "",
