@@ -20,29 +20,54 @@ $(() => {
     create()
 
     function create(){
-        let items = [
-          {
-            "num": 8,
+      let items = [
+        {
+            "num": 33,
             "name": "Space Invaders",
-            "link": "https://drive.google.com/uc?export=view&id=1658ThxrAV0Cxknu2kn9z2-arESzjxRCm"
+            "link": "https://drive.google.com/uc?export=view&id=19ovhbIW1IjrPEii5hU7UIyXcxxXNYX8T"
           },
           {
-            "num": 9,
+            "num": 34,
+            "name": "Frogger",
+            "link": "https://drive.google.com/uc?export=view&id=1gOkSLgcejuyGBvcFnlGHOnauPsB3kwMj"
+          },
+          {
+            "num": 35,
+            "name": "Frogger",
+            "link": "https://drive.google.com/uc?export=view&id=1Lhg99esJmW2JjICDqZBbOnlXkgzRORFl"
+          },
+          {
+            "num": 36,
+            "name": "Frogger",
+            "link": "https://drive.google.com/uc?export=view&id=1fMLdftVGfPM5UfUAVDaHTI5FBCDaFVZ9"
+          },
+          {
+            "num": 37,
+            "name": "Frogger",
+            "link": "https://drive.google.com/uc?export=view&id=13DrQZ-yHHBBLd5a44VFJL8hC3o5JLwgM"
+          },
+          {
+            "num": 38,
+            "name": "Frogger",
+            "link": "https://drive.google.com/uc?export=view&id=1KMGkHgYXrTFJLqro3po45y9Ws62LWVui"
+          },
+          {
+            "num": 39,
+            "name": "Frogger",
+            "link": "https://drive.google.com/uc?export=view&id=15gICND278nhLGwLUm1rpp-I-21sjNgiW"
+          },
+          {
+            "num": 40,
             "name": "Frogger",
             "link": "https://drive.google.com/uc?export=view&id=1xEwwZoT8Kp0xBnDrMbItjwpeSj7K8v65"
           },
           {
-            "num": 10,
-            "name": "Tetris",
-            "link": "https://drive.google.com/uc?export=view&id=1A_JoQfyCvT_a9fgYkW3BXEendzLmvdhh" 
-          },
-          {
-            "num": 11,
-            "name": "FREE CCNA Lab 023_ SSH _ VTY lines.mp4",
-            "link": "https://drive.google.com/uc?export=view&id=1ncrfhydiNEouhSrfZDHBgFnc8ZYU7W18"
-          }                    
-                ]
-        let buttons = $('.container_radio')
+            "num": 41,
+            "name": "Frogger",
+            "link": "https://drive.google.com/uc?export=view&id=1xEwwZoT8Kp0xBnDrMbItjwpeSj7K8v65"
+          }
+    ]
+    let buttons = $('.container_radio')
 
         let n = 3
         let s = `${n}`.padStart(2, '0')
