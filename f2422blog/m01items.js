@@ -26,13 +26,25 @@ let objs = [
   {
     "time": [
       6.180768,
+      9.93152
+    ],
+    "en": [
+      "in this video i want to go over the basics of Inkscape"
+    ],
+    "ru": [
+      "в этом видео я хочу пройтись по основам Inkscape,"
+    ]
+  },
+  {
+    "time": [
+      9.93152,
       16.820168
     ],
     "en": [
-      "in this video i want to go over the basics of Inkscape 9.93152 and can I just show you the interface and explore some of the different tools and things we have prisons that were presented with"
+      "and can I just show you the interface and explore some of the different tools and things we have prisons that were presented with"
     ],
     "ru": [
-      "в этом видео я хочу пройтись по основам Inkscape 9.93152, и могу ли я просто показать вам интерфейс и изучить некоторые из различных инструментов и вещей, которые у нас есть в тюрьмах, которые были представлены"
+      "и могу ли я просто показать вам интерфейс и изучить некоторые из различных инструментов и вещей, которые у нас есть в тюрьмах, которые были представлены"
     ]
   },
   {
@@ -62,13 +74,25 @@ let objs = [
   {
     "time": [
       21.547493,
+      25.3
+    ],
+    "en": [
+      "you can download it free on windows linux and mac so check out my other videos for that"
+    ],
+    "ru": [
+      "вы можете скачать его бесплатно на windows linux и mac, так что посмотрите мои другие видео для этого"
+    ]
+  },
+  {
+    "time": [
+      ,
       27.105849
     ],
     "en": [
-      "you can download it free on windows linux and mac so check out my other videos for that 25.3 it's a completely free and open software"
+      "it's a completely free and open software"
     ],
     "ru": [
-      "вы можете скачать его бесплатно на windows linux и mac, так что посмотрите мои другие видео для этого 25.3 это полностью бесплатное и открытое программное обеспечение"
+      "это полностью бесплатное и открытое программное обеспечение"
     ]
   },
   {
@@ -194,13 +218,25 @@ let objs = [
   {
     "time": [
       75.210467,
+      80,45299
+    ],
+    "en": [
+      "and scroll wheel in and out to zoom in more detail on this page or zoom out"
+    ],
+    "ru": [
+      "и колесико прокрутки увеличивайте и уменьшайте, чтобы увеличить более подробную информацию на этой странице, или уменьшите масштаб,"
+    ]
+  },
+  {
+    "time": [
+      ,
       82.146394
     ],
     "en": [
-      "and scroll wheel in and out to zoom in more detail on this page or zoom out 80.45299 so we can find it"
+      "so we can find it"
     ],
     "ru": [
-      "и колесико прокрутки увеличивайте и уменьшайте, чтобы увеличить более подробную информацию на этой странице, или уменьшите масштаб 80,45299, чтобы мы могли его найти"
+      "чтобы мы могли его найти"
     ]
   },
   {
@@ -218,13 +254,25 @@ let objs = [
   {
     "time": [
       87.818297,
+      94.93329
+    ],
+    "en": [
+      "and we can also while the control key is held we can use the arrow keys on our keyboard is another way we can pan around"
+    ],
+    "ru": [
+      "и мы также можем, пока удерживается клавиша управления, мы можем использовать клавиши со стрелками на нашей клавиатуре - это еще один способ панорамирования,"
+    ]
+  },
+  {
+    "time": [
+      94.93329,
       97.373723
     ],
     "en": [
-      "and we can also while the control key is held we can use the arrow keys on our keyboard is another way we can pan around 94.93329 and that just kind of moves that document around"
+      "and that just kind of moves that document around"
     ],
     "ru": [
-      "и мы также можем, пока удерживается клавиша управления, мы можем использовать клавиши со стрелками на нашей клавиатуре - это еще один способ панорамирования 94.93329, и это просто перемещает этот документ вокруг"
+      "и это просто перемещает этот документ вокруг"
     ]
   },
   {
@@ -542,13 +590,25 @@ let objs = [
   {
     "time": [
       206.332569,
+      209.9876
+    ],
+    "en": [
+      "and now we have a two inch by two inch square box"
+    ],
+    "ru": [
+      "и теперь у нас есть квадратная коробка размером два на два дюйма,"
+    ]
+  },
+  {
+    "time": [
+      209.9876,
       212.939207
     ],
     "en": [
-      "and now we have a two inch by two inch square box 209.9876 so if we were to print this out"
+      "so if we were to print this out"
     ],
     "ru": [
-      "и теперь у нас есть квадратная коробка размером два на два дюйма 209.9876, поэтому, если бы мы распечатали это"
+      " поэтому, если бы мы распечатали это"
     ]
   },
   {
@@ -602,13 +662,25 @@ let objs = [
   {
     "time": [
       230.092536,
+      235.61674
+    ],
+    "en": [
+      "so we'll make sure we're always working within our our page guidelines or guides"
+    ],
+    "ru": [
+      "поэтому мы всегда будем работать в рамках наших правил страницы или руководств,"
+    ]
+  },
+  {
+    "time": [
+      235.61674,
       237.929665
     ],
     "en": [
-      "so we'll make sure we're always working within our our page guidelines or guides 235.61674 what else can we do with this okay"
+      "what else can we do with this okay"
     ],
     "ru": [
-      "поэтому мы всегда будем работать в рамках наших правил страницы или руководств 235.61674, что еще мы можем сделать с этим хорошо"
+      " что еще мы можем сделать с этим хорошо"
     ]
   },
   {
@@ -758,13 +830,25 @@ let objs = [
   {
     "time": [
       272.498247,
+      276.8506
+    ],
+    "en": [
+      "if we click off into white space it becomes Deselected"
+    ],
+    "ru": [
+      "если мы щелкнем по пустому пространству, он станет Deselected,"
+    ]
+  },
+  {
+    "time": [
+      276.8506,
       278.713309
     ],
     "en": [
-      "if we click off into white space it becomes Deselected 276.8506 if we left click it become selected again"
+      "if we left click it become selected again"
     ],
     "ru": [
-      "если мы щелкнем по пустому пространству, он станет Deselected 276.8506, если мы щелкнем левой кнопкой мыши, он снова станет выбранным"
+      " если мы щелкнем левой кнопкой мыши, он снова станет выбранным"
     ]
   },
   {
@@ -782,13 +866,25 @@ let objs = [
   {
     "time": [
       285.913225,
+      290.03946
+    ],
+    "en": [
+      "so between left clicking if we keep left clicking slowly"
+    ],
+    "ru": [
+      "поэтому между щелчком левой кнопкой мыши, если мы будем продолжать медленно щелкать левой кнопкой мыши,"
+    ]
+  },
+  {
+    "time": [
+      290.03946,
       292.263479
     ],
     "en": [
-      "so between left clicking if we keep left clicking slowly 290.03946 we'll see these arrows change"
+      "we'll see these arrows change"
     ],
     "ru": [
-      "поэтому между щелчком левой кнопкой мыши, если мы будем продолжать медленно щелкать левой кнопкой мыши 290.03946, мы увидим, что эти стрелки меняются"
+      "мы увидим, что эти стрелки меняются"
     ]
   },
   {
@@ -854,13 +950,25 @@ let objs = [
   {
     "time": [
       314.634842,
+      316.12492
+    ],
+    "en": [
+      "if I'll bring it back to where it was  "
+    ],
+    "ru": [
+      "если я верну его туда, где это было,"
+    ]
+  },
+  {
+    "time": [
+      316.12492,
       318.445791
     ],
     "en": [
-      "if I'll bring it back to where it was 316.12492 and if we hit the escape key"
+      "and if we hit the escape key"
     ],
     "ru": [
-      "если я верну его туда, где это было 316.12492, и если мы нажмем клавишу выхода"
+      " и если мы нажмем клавишу выхода"
     ]
   },
   {
@@ -926,13 +1034,25 @@ let objs = [
   {
     "time": [
       334.562514,
+      340.09193
+    ],
+    "en": [
+      "now the rotation axis is going to be wherever that little plus sign is  "
+    ],
+    "ru": [
+      "теперь ось вращения будет там, где этот маленький знак плюс равен,"
+    ]
+  },
+  {
+    "time": [
+      340.09193,
       342.769142
     ],
     "en": [
-      "now the rotation axis is going to be wherever that little plus sign is 340.09193 so we can rotate from here for example"
+      "so we can rotate from here for example"
     ],
     "ru": [
-      "теперь ось вращения будет там, где этот маленький знак плюс равен 340.09193, поэтому мы можем вращаться отсюда, например"
+      " поэтому мы можем вращаться отсюда, например"
     ]
   },
   {
