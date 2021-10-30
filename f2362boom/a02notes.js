@@ -73,11 +73,11 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "react",
       "",
       ""
     ],
-    "link": "d02test.html"
+    "link": "d08fccreact.html"
    },
   {
     "header": "",

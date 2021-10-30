@@ -1,0 +1,57 @@
+*{
+  font-size: 1.1rem;
+  font-family: sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.log1 {
+    /* background-color: aliceblue; */
+}
+
+.inputs {
+  display: flex;
+}
+
+.input {
+  width: 100%;
+}
+
+.ok {
+  width: 10%;
+}
+
+.buttons {
+  display: flex;
+}
+
+.button {
+  width: 100%;
+}
+
+.div_edit{
+  height: 70vh;
+}
+
+.edit0 {
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  
+}
+
+.edit-in {
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  
+}
+
