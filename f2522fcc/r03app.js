@@ -35,7 +35,7 @@ $(() => {
           target.after(div)
           let el = div[0]
           el.style.height = (el.scrollHeight > el.clientHeight) ? (el.scrollHeight)+"px" : "60px";
-          console.log(el.scrollHeight)
+          // console.log(el.scrollHeight)
 
           // el.style.height = "420px"
           }else{
