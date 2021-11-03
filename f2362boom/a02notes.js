@@ -83,6 +83,26 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
+      "guess music",
+      "",
+      ""
+    ],
+    "link": "d09gumus.html"
+   },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "test",
+      "",
+      ""
+    ],
+    "link": "d02test.html"
+   },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
       "test",
       "",
       ""

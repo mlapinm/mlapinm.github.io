@@ -1,0 +1,528 @@
+1 Comment Your JavaScript Code
+// comment
+/* comment */
+2 Declare JavaScript Variables
+var myName;
+// undefined
+console.log(typeof(myName))
+// null
+let a = null
+console.log(a)
+// boolean
+a = true
+console.log(typeof(a))
+// string
+a = 'a'
+console.log(typeof(a))
+// number
+a = 1
+console.log(typeof(a))
+a = {}
+console.log(typeof(a))
+//bigint
+
+3 Storing Values with the Assignment Operator
+// Setup
+var a;
+a = 7
+// Only change code below this line
+4 Assigning the Value of One Variable to Another
+// Setup
+var a;
+a = 7;
+var b;
+b = a
+// Only change code below this line
+5 Initializing Variables with the Assignment Operator
+var a = 9
+6 Declare String Variables
+var myFirstName = "John"
+var myLastName = "Smith"
+
+7 Understanding Uninitialized Variables
+// Only change code below this line
+var a = 5;
+var b = 10;
+var c = "I am a";
+// Only change code above this line
+
+a = a + 1;
+b = b + 5;
+c = c + " String!";
+
+8 Understanding Case Sensitivity in Variables
+// Variable declarations
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+
+// Variable assignments
+studlyCapVar = 10;
+properCamelCase = "A String";
+titleCaseOver = 9000;
+9 Explore Differences Between the var and let Keywords
+let catName = "Oliver";
+let catSound = "Meow!";
+10 Declare a Read-Only Variable with the const Keyword
+// Only change code below this line
+const FCC = "freeCodeCamp";
+let fact = "is cool!";
+// Only change code above this line
+
+fact = "is awesome!";
+console.log(FCC, fact);
+11 Add Two Numbers with JavaScript
+const sum = 10 + 10;
+console.log(sum)
+
+12 Subtract One Number from Another with JavaScript
+const difference = 45 - 33;
+console.log(difference)
+13 Multiply Two Numbers with JavaScript
+const product = 8 * 10;
+console.log(product)
+14 Divide One Number by Another with JavaScript
+const quotient = 66 / 33;
+console.log(quotient)
+15 Increment a Number with JavaScript
+let myVar = 87;
+
+// Only change code below this line
+myVar++;
+console.log(myVar)
+
+16 Decrement a Number with JavaScript
+let myVar = 11;
+
+// Only change code below this line
+myVar--;
+17 Create Decimal Numbers with JavaScript
+const myDecimal = 5.7;
+
+// Only change code below this line
+
+18 Multiply Two Decimals with JavaScript
+const product = 2.0 * 2.5;
+19 Divide One Decimal by Another with JavaScript
+const quotient = 4.4 / 2.0; // Change this line
+20 Finding a Remainder in JavaScript
+const remainder = 11%3;
+console.log(remainder)
+
+21 Compound Assignment With Augmented Addition
+let a = 3;
+let b = 17;
+let c = 12;
+
+// Only change code below this line
+a += 12;
+b += 9;
+c += 7;
+22 Compound Assignment With Augmented Subtraction
+let a = 11;
+let b = 9;
+let c = 3;
+
+// Only change code below this line
+a -= 6;
+b -= 15;
+c -= 1;
+23 Compound Assignment With Augmented Multiplication
+let a = 5;
+let b = 12;
+let c = 4.6;
+
+// Only change code below this line
+a *= 5;
+b *= 3;
+c *= 10;
+24 Compound Assignment With Augmented Division
+let a = 48;
+let b = 108;
+let c = 33;
+
+// Only change code below this line
+a /= 12;
+b /= 4;
+c /= 11;
+25 Escaping Literal Quotes in Strings
+const myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
+26 Quoting Strings with Single Quotes
+const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+27 Escape Sequences in Strings
+const myStr = "FirstLine\n\
+\t\\SecondLine\n\
+ThirdLine"; // Change this line
+28 Concatenating Strings with Plus Operator
+const myStr = "This is the start. " + "This is the end."; // Change this line
+29 Concatenating Strings with the Plus Equals Operator
+let myStr = "This is the first sentence. ";
+myStr += "This is the second sentence."
+30 Constructing Strings with Variables
+// Only change code below this line
+const myName = "Smith";
+const myStr = "My name is" + myName + "I am well!";
+31 Appending Variables to Strings
+// Change code below this line
+const someAdjective = "good";
+let myStr = "Learning to code is ";
+myStr += someAdjective
+32 Find the Length of a String
+// Setup
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+// Only change code below this line
+lastNameLength = lastName.length;
+33 Use Bracket Notation to Find the First Character in a String
+// Setup
+let firstLetterOfLastName = "";
+const lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0]; // Change this line
+
+34 Understand String Immutability
+// Setup
+let myStr = "Jello World";
+
+// Only change code below this line
+myStr = "Hello World" // Change this line
+// Only change code above this line
+35 Use Bracket Notation to Find the Nth Character in a String
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const thirdLetterOfLastName = lastName[2]; // Change this line
+console.log(thirdLetterOfLastName)
+36 Use Bracket Notation to Find the Last Character in a String
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const lastLetterOfLastName = lastName[lastName.length-1]; // Change this line
+console.log(lastLetterOfLastName)
+
+37 Use Bracket Notation to Find the Nth-to-Last Character in a String
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
+console.log(secondToLastLetterOfLastName)
+
+38 Word Blanks
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Only change code below this line
+const wordBlanks = myAdjective + ' ' + myNoun + ' ' + myVerb + ' ' + myAdverb; // Change this line
+// Only change code above this line
+console.log(wordBlanks)
+
+39 Store Multiple Values in one Variable using JavaScript Arrays
+// Only change code below this line
+const myArray = ["peanut butter", 2];
+console.log(myArray)
+40 Nest one Array within Another Array
+// Only change code below this line
+const myArray = [["Bulls", 23], ["White Sox", 45]];
+console.log(myArray)
+
+41 Access Array Data with Indexes
+const myArray = [50, 60, 70];
+const myData = myArray[0]
+console.log(myData)
+
+42 Modify Array Data With Indexes
+// Setup
+const myArray = [18, 64, 99];
+myArray[0] = 45
+// Only change code below this line
+
+43 Access Multi-Dimensional Arrays With Indexes
+const myArray = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14],
+];
+
+const myData = myArray[2][1];
+
+44 Manipulate Arrays With push()
+// Setup
+const myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+myArray.push(["dog", 3])
+45 Manipulate Arrays With pop()
+// Setup
+const myArray = [["John", 23], ["cat", 2]];
+const removedFromMyArray = myArray.pop()
+console.log(removedFromMyArray)
+// Only change code below this line
+
+46 Manipulate Arrays With shift()
+// Setup
+const myArray = [["John", 23], ["dog", 3]];
+let removedFromMyArray = myArray.shift()
+console.log(removedFromMyArray)
+// Only change code below this line
+
+47 Manipulate Arrays With unshift()
+// Setup
+const myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+myArray.unshift(["Paul", 35])
+console.log(myArray)
+// Only change code below this line
+
+48 Shopping List
+const myList = [];
+myList.push(["egg", 5])
+myList.push(["bread", 1])
+myList.push(["sosage", 2])
+myList.push(["juice", 1])
+myList.push(["candy", 3])
+
+49 Write Reusable JavaScript with Functions
+function reusableFunction(){
+  console.log("Hi World")
+}
+reusableFunction()
+50 Passing Values to Functions with Arguments
+function functionWithArgs(param1, param2){
+  console.log(param1 + param2)
+}
+
+functionWithArgs(1, 3)
+51 Return a Value from a Function with Return
+function timesFive(num){
+  return num * 5
+}
+console.log(timesFive(6))
+52 Global Scope and Functions
+// Declare the myGlobal variable below this line
+let myGlobal = 10
+
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+  oopsGlobal = 5
+ 
+}
+
+// Only change code above this line
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+53 Local Scope and Functions
+function myLocalScope() {
+  // Only change code below this line
+  let myVar
+
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);
+54 Global vs. Local Scope in Functions
+// Setup
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+  let outerWear = "sweater"
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit();
+55 Understanding Undefined Value returned from a Function
+// Setup
+let sum = 0;
+
+function addThree() {
+  sum = sum + 3;
+}
+
+// Only change code below this line
+function addFive(){
+  sum = sum + 5;
+}
+
+// Only change code above this line
+
+addThree();
+addFive();
+56 Assignment with a Returned Value
+// Setup
+let processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+// Only change code below this line
+processed = processArg(7)
+57 Stand in Line
+function nextInLine(arr, item) {
+  // Only change code below this line
+  arr.push(item)
+  return arr.shift();
+  // Only change code above this line
+}
+
+// Setup
+const testArr = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+58 Understanding Boolean Values
+function welcomeToBooleans() {
+  // Only change code below this line
+
+  return true; // Change this line
+
+  // Only change code above this line
+}
+59 Use Conditional Logic with If Statements
+function trueOrFalse(wasThatTrue) {
+  // Only change code below this line
+  if(wasThatTrue){
+    return "Yes, that was true"
+  }else{
+    return "No, that was false"
+  }
+  // Only change code above this line
+}
+60 Comparison with the Equality Operator
+// Setup
+function testEqual(val) {
+  if (val == 12) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testEqual(10);
+61 Comparison with the Strict Equality Operator
+
+62 Practice comparing different values
+
+63 Comparison with the Inequality Operator
+
+64 Comparison with the Strict Inequality Operator
+
+65 Comparison with the Greater Than Operator
+
+66 Comparison with the Greater Than Or Equal To Operator
+
+67 Comparison with the Less Than Operator
+
+68 Comparison with the Less Than Or Equal To Operator
+
+69 Comparisons with the Logical And Operator
+
+70 Comparisons with the Logical Or Operator
+
+71 Introducing Else Statements
+
+72 Introducing Else If Statements
+
+73 Logical Order in If Else Statements
+
+74 Chaining If Else Statements
+
+75 Golf Code
+
+76 Selecting from Many Options with Switch Statements
+
+77 Adding a Default Option in Switch Statements
+
+78 Multiple Identical Options in Switch Statements
+
+79 Replacing If Else Chains with Switch
+
+80 Returning Boolean Values from Functions
+
+81 Return Early Pattern for Functions
+
+82 Counting Cards
+
+83 Build JavaScript Objects
+
+84 Accessing Object Properties with Dot Notation
+
+85 Accessing Object Properties with Bracket Notation
+
+86 Accessing Object Properties with Variables
+
+87 Updating Object Properties
+
+88 Add New Properties to a JavaScript Object
+
+89 Delete Properties from a JavaScript Object
+
+90 Using Objects for Lookups
+
+91 Testing Objects for Properties
+
+92 Manipulating Complex Objects
+
+93 Accessing Nested Objects
+
+94 Accessing Nested Arrays
+
+95 Record Collection
+
+96 Iterate with JavaScript While Loops
+
+97 Iterate with JavaScript For Loops
+
+98 Iterate Odd Numbers With a For Loop
+
+99 Count Backwards With a For Loop
+
+100 Iterate Through an Array with a For Loop
+
+101 Nesting For Loops
+
+102 Iterate with JavaScript Do...While Loops
+
+103 Replace Loops using Recursion
+
+104 Profile Lookup
+
+105 Generate Random Fractions with JavaScript
+
+106 Generate Random Whole Numbers with JavaScript
+
+107 Generate Random Whole Numbers within a Range
+
+108 Use the parseInt Function
+
+109 Use the parseInt Function with a Radix
+
+110 Use the Conditional (Ternary) Operator
+
+111 Use Multiple Conditional (Ternary) Operators
+
+112 Use Recursion to Create a Countdown
+
+113 Use Recursion to Create a Range of Numbers
