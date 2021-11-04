@@ -1,0 +1,254 @@
+ 1.407033 hey guys in this video I'll teach you
+how to draw this watermelon in vector
+art using Inkscape  8.304363 this is an
+intermediate level tutorial and so
+you'll want to know the basics we're
+gonna go through fairly quickly 13.504132  this
+artwork has been created by UK art
+design I've partnered with them to
+create the artwork and the video and
+I'll be doing the voiceover so we're
+gonna try to test this out and see how
+it works if you like this video 24.387684  we'll
+make more in the future 25.788182  you can download
+the source file at Wikimedia Commons 28.918516 
+I'll include the link in the description
+if you want to check it out  32.236887 let's hop
+over to the screencast though 33.957452  first
+we're gonna select the circle tool 36.201032  and
+we'll draw a circle 38.233049  and then since we
+don't want to be completely circular
+we'll go path object to path because we
+want to change the shape slightly to
+make it more realistic looking  45.849186 so we'll
+make it a little bit 'officer not quite
+so circular  49.365104 we'll change the color to
+green and  51.277090 then we'll go ahead and grab
+this Bezier curve tool  54.285055 and we'll use
+this to just sort of left-click and
+create these nodes 58.112705  we're going to draw
+sort of the lines the black lines that
+you see are the dark green lines that
+you see in watermelon 65.486087  here's like a
+reference of what it'll look like 67.268553 
+so we'll speed up the video here and
+just show drawing all of these 70.752890  it's
+really just a path an outline drawn path 73.408828 
+when they're all drawn we'll hold down
+the shift key and left-click to select
+each of them  77.772543 and go to path Union this
+creates a unified path we can then right
+click and go to duplicate  83.657537 and so
+selecting both the circle  85.668963 and the new
+path go to path intersection 88.036606  and that'll
+clip off the tops and bottoms  90.068869 so that
+our lines are just within the circle 92.120890  we
+go to stroke and turn off the stroke but
+then we turn on the fill  95.757324 and then we'll
+change the color to this darker green so
+that it shows up  99.292970 we're gonna repeat
+these steps again with the Bezier curve
+tool  102.819936 so this time we're creating the
+outline a little bit lighter green color
+around these darker green lines  108.483675 if you
+feel like this is going too fast you can
+change the video playback speed of this
+video on YouTube in the bottom right
+hand corner  115.472022 but I really want to get
+this material I don't really want to
+drag this out too long 119.999863  we're holding
+down shift to select all of these again
+we go to path Union these are the same
+steps we did to create the original ones 127.248540 
+we duplicate it and then selecting both
+the circle  129.207797 and the new path that go to
+path intersection 131.827557  then we turn off the
+stroke 134.013405 
+we turn on the fill and again it's over
+top now so we adjust the color to be
+able to see this and this time we have
+to lower it down one level 141.471565  so that we
+can see through what we did before with
+that darker line  145.367607 we'll copy the color
+and we'll add a gradient here  149.979675 so we
+select the gradient tool from the
+toolbar 153.007710  and we can move that gradient if
+we click the center  155.383373 or adjusting the
+center color and the position of it by
+clicking the arm 159.515565  we're adjusting the
+color that it fades to and also the
+length of the gradient goes out right
+now 164.551323  it's fading to white or transparency 166.952744 
+we can adjust this color to fade to a
+darker green and 170.735925  then we can move the
+gradient around to where it looks good
+kind of gives it that lighting effect
+like it's a little bit more light in the
+middle and then darker around the edges 178.123544 
+from here we duplicate the circle 185.491834  and
+we'll move the circle down just a little
+bit and go to path difference this will
+just create a little sliver 193.596128  and this
+sliver we can adjust the opacity to give
+it sort of a glassy outlined look around
+the edge  200.255510 do the same thing again 202.243666 
+so we duplicate move it to the point we
+want 205.399549  and then have one both are selected
+we we are creating the difference to
+create sort of a Halfmoon shape  211.707283 this
+time we'll add a black color and a
+gradient to create more of a shadow in
+the bottom right hand side  216.899292  
+process one more time 223.143305  to create another
+sort of Halfmoon shape 226.624405  so we'll bring
+the circle up about this high and then
+select in the original circle 230.075372  and the
+intersection of there creates this moon
+shape  233.107343 and we'll adjust that again with a
+black color with a gradient turn the
+opacity down  237.538989 and we'll add a gradient in
+here 242.479160 
+now we'll add a circle  250.491225 and we're going
+to turn it white we're going to go to
+path object to path to make sure that we
+can change the shape of this if we want
+to  256.655797 and then we'll add it up here to the
+very top left of the watermelon 259.295363  and then
+clicking the Edit path by a node is
+where how we can get into these nodes
+and adjust the shape beyond just any
+lips 265.751393  so we can come in here and
+fine-tune it we can use these handles to
+adjust the angle that the lines come out
+of each node 271.983291  it looks it's a very hard
+white right now but we can adjust the
+opacity  276.159105 and we can also apply a gradient
+which is what we're going to do 279.155200  so we
+grab the gradient tool and this time we
+can just draw a linear gradient right on
+here  289.447854 and we can move it around go to
+where we want turn down the opacity  293.023299 and
+now we have a nice glassy looking well
+lit watermelon 298.023993  if we left click and drag
+and select everything  301.154831 we can go to
+object group and group everything
+together then  305.399369 when we move the
+watermelon it all moves together  308.079206 now for
+the next part we're going to draw the
+half sliced watermelon 312.808314  so we'll get a
+size reference  315.795932 we'll draw a circle and
+then this rectangle 317.917134  we'll lay it over
+top so let both go to path difference 321.123570 
+and that cuts this in half I'm not going
+to be doing that the pausing and
+highlighting for the second portion
+because it's all the same tools  327.435480 but
+again you can pause the video or you can
+watch slower 330.668683  we go path difference with
+these two so we create a sort of a slice
+in there we'll change the color to red
+duplicate again by right-clicking and
+going to duplicate  338.771828 you can also use a
+shortcut ctrl D on your keyboard to do
+the duplication  343.499595 and then path difference
+and we do this a couple times here to
+create sort of this layered effect   where
+we have a different color layer of half
+circle going up 353.243539  we'll add a gradient in
+here from a darker red to a lighter red 356.911673 
+and keep bringing this up 359.695588  just to give
+us some more depth some more perspective
+and some different lighting 363.744003  so we have
+like this darker red towards the rind
+and then we have more of the light red
+as it goes to the center 370.091860 
+and for this part we're going to we're
+going to draw those darker lines that we
+did on the whole watermelon 379.367855  so we just
+draw these we create the path  382.373773 and then
+we need to go path intersection with the
+intersection of the green half circle  388.561677 we
+can use the eye drop cover to pick the
+same color that we used last time 392.932199  so we
+get it exactly the same  394.904272 and then we'll
+repeat the same process for that that
+sort of outline this time we're looking
+at a cross-section but it's the same
+colors and the same tools we're using  403.004526 so
+we'll grab this again and then we can
+change the color with the eyedropper
+tool and now we're have this exact same
+colors of greens   that we were using in
+our original one  412.228242 we'll create some
+circles here with some white with
+opacity to kind of create a nice
+lighting effect against this red  422.080359 apply a
+little bit of a gradient to that as well 425.072318 
+this is going to be the seed so we draw
+a circle  428.296226 and then or any lips we'll go
+to path object to path so that we can
+change this to be more of a seed shape 434.072979 
+so we'll adjust that slightly  436.068242 and then
+we can draw a little highlight here so
+we'll draw this sort of a Halfmoon shape
+this is just drawn with a Bezier curve
+tool 441.966675  we add white we add a little bit of
+a gradient 444.851420  and then we can duplicate
+these seeds and place them around the
+watermelon  449.238420 so again we can use ctrl D to
+duplicate  452.726873 we can add all these together
+and create a group  454.967673 and then we can
+rotate them around we can flip and
+rotate 459.979803 
+resize the inner ones to be a little bit
+smaller   than the outer ones 465.888349 
+we think we have that good we can select
+the whole thing go to object group and
+now we have a nice sliced watermelon
+that we can move around as one group
+will place it right up here next to the
+watermelon  478.773231 and from here we just need to
+create a little bit more depth a little
+bit more lighting  482.279246 so we'll use the
+Bezier curve tool to create a black
+object here  485.934988 that will reduce the opacity
+and have it be some shading 489.174966  and then
+we'll place it behind the watermelon to
+give it sort of that layered effect 493.323166  we
+will create a black circle with a radial
+gradient  497.479903 and we'll place two of these
+one each under the watermelon and this
+is a great little trick for just
+creating a nice shadow effect like
+there's a light shining from the top 506.279226 
+then you have that shadow underneath
+really simple to do and really adds a
+lot of depth to the image will create a
+black square  513.595280 and then we'll turn this
+into a radiant as well but we'll have it
+kind of gradient to a darker gray with a
+lighter gray in the middle just to give
+it sort of a nice backdrop to give it
+some contrast against the background 524.839139 
+here we'll select both watermelons  527.963143 and
+we'll flip this down this is going to be
+the reflection 531.703086  so as we flip it we need
+to adjust the bottom one a little bit up
+so that we can have an accurate looking
+reflection 537.435136  we adjust the shadows a
+little bit and the lighting a little bit 540.243830 
+to make it look natural 542.359969  notice not all
+of it will group it we got an object
+clip  545.499671 and we can clip this so that it's
+not not going off the bottom of the
+background there  551.620162 and then we can lower
+down the opacity to make it look more
+natural  556.485516 adjust the shadows a little bit
+under the watermelon  558.871793 and there you have
+it that's the final image I hope you
+guys enjoyed that I feel like I talked
+very very fast let me know your feedback
+what you think about this video if we
+should do more like this  567.699831 as always
+thanks for watching  569.418358 and I look forward
+to catching you in the next video 571.914352  573.808605  573.808605 
