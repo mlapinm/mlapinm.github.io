@@ -1,0 +1,6 @@
+choice 
+select good blue
+select bad red
+
+variant
+check blue
