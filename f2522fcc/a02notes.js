@@ -10,6 +10,24 @@ var notes = [
   },
   {
     "header": "",
+    "title": "JavaScript Algorithms and Data Structures",
+    "card-text": [
+      "",
+	  ""
+    ],
+    "link": "r02code.html"
+  },
+  {
+    "header": "",
+    "title": "Front End Development Libraries",
+    "card-text": [
+      "",
+	  ""
+    ],
+    "link": "r03code.html"
+  },
+  {
+    "header": "",
     "title": "",
     "card-text": [
       "",

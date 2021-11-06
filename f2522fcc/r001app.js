@@ -3,8 +3,26 @@ $(() => {
   let log2 = $('.log2')
   let desk = $('.desk')
 
-  function createDesk(){
-    let objs = objs04
+  function setDesks(thems, desks)
+  {
+
+    $.each(thems, (i, e) => {
+      let div = $('<div></div>')
+      div.addClass('desk' + i)
+      let h = $('<h4></h4>')
+      h.text(e)
+      desk.append(h)
+      desk.append(div)
+
+      desks.push(div)
+      // console.log( e, i)
+    })
+
+
+  }
+
+  function setDesk(objs, desk){
+    // let objs = objs04
     objs.forEach(e1 => {
 
       let p = $('<p></p>')
@@ -26,7 +44,7 @@ $(() => {
         let div = $('<textarea name="" id="" cols="30" class="edit"></textarea>')
         let textName = one[0].name[0]
         let className = textName.replace(' ', '-')
-        console.log($('.'+className).length)
+        // console.log($('.'+className).length)
         if($('.'+className).length == 0){
           div.addClass(className)
           div[0].value = one[0].code.join('\n')
@@ -46,6 +64,18 @@ $(() => {
 
     })
 
+  }
+
+  function createDesk(){
+    let desks = []
+    setDesks(thems, desks)
+
+    $.each(objThems,(i, e) => {
+      if( e[1] != ''){
+        setDesk(e[1], desks[i])
+      }
+
+    })
   }
 
   createDesk()
