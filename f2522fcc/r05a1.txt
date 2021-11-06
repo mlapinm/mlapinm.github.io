@@ -1,0 +1,69 @@
+1 How to Use package.json, the Core of Any Node.js Project or npm Package
+	"author": "mlapin",
+https://mlapin-boilerplate.mikhaillapin.repl.co/
+https://replit.com/@MikhailLapin/mlapin-boilerplate#package.json
+{
+	"name": "fcc-learn-npm-package-json",
+	"author": "mlapin",
+	"dependencies": {
+		"express": "^4.14.0"
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://idontknow/todo.git"
+	}
+}
+2 Add a Description to Your package.json
+	"description": "owesome project",
+3 Add Keywords to Your package.json
+	"keywords": [
+		"freecodecamp",
+		"words"
+	],
+4 Add a License to Your package.json
+  "license": "MIT",
+5 Add a Version to Your package.json
+  "version": "1.2.1",
+
+6 Expand Your Project with External Packages from npm
+	"dependencies": {
+    "moment": "2.14.0",
+		"express": "^4.14.0"
+	},
+
+7 Manage npm Dependencies By Understanding Semantic Versioning
+    "moment": "2.10.2",
+
+8 Use the Tilde-Character to Always Use the Latest Patch Version of a Dependency
+    "moment": "~2.10.2",
+
+9 Use the Caret-Character to Use the Latest Minor Version of a Dependency
+    "moment": "^2.10.2",
+
+10 Remove a Package from Your Dependencies
+{
+	"name": "fcc-learn-npm-package-json",
+	"description": "owesome project",
+	"author": "mlapin",
+	"keywords": [
+		"freecodecamp",
+		"words"
+	],
+  "license": "MIT",
+  "version": "1.2.1",
+	"dependencies": {
+		"express": "^4.14.0"
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://idontknow/todo.git"
+	}
+}

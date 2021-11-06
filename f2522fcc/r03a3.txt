@@ -114,17 +114,119 @@
   });
 </script>
 11 Remove an Element Using jQuery
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    
+    $("#target4").remove()
+
+  });
+</script>
 
 12 Use appendTo to Move Elements with jQuery
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+
+    $("#target2").appendTo("#right-well")
+
+  });
+</script>
 
 13 Clone an Element Using jQuery
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+
+    $("#target5").clone().appendTo("#left-well")
+
+  });
+</script>
 
 14 Target the Parent of an Element Using jQuery
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+
+    $("#target1").parent().css("background-color", "red")
+
+  });
+</script>
 
 15 Target the Children of an Element Using jQuery
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+
+    $("#right-well").children().css("color", "orange")
+
+  });
+</script>
 
 16 Target a Specific Child of an Element Using jQuery
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
+
+    $(".target:nth-child(2)").addClass("animated bounce")
+
+  });
+</script>
 
 17 Target Even Elements Using jQuery
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
+    $("#left-well").children().css("color", "green");
+    $(".target:nth-child(2)").addClass("animated bounce");
+
+    $(".target:even").addClass("animated shake")
+
+  });
+</script>
 
 18 Use jQuery to Modify the Entire Page
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
+    $("#left-well").children().css("color", "green");
+    $(".target:nth-child(2)").addClass("animated bounce");
+    $(".target:even").addClass("animated shake");
+
+    $("body").addClass("animated hinge")
+
+  });
+</script>

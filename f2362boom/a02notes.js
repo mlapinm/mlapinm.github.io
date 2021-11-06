@@ -91,6 +91,16 @@ var notes = [
    },
   {
     "header": "",
+    "title": "Dishes",
+    "card-text": [
+      "test",
+      "",
+      ""
+    ],
+    "link": "d10dishes.html"
+   },
+  {
+    "header": "",
     "title": "",
     "card-text": [
       "test",

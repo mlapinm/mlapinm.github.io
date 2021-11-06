@@ -1,0 +1,12 @@
+
+mongosh "mongodb+srv://cluster0.6dfwg.mongodb.net/myFirstDatabase" --username mmlapinm
+
+xipwacsm
+1ebb046e-1a5e-4bb6-b858-ec478789adda
+c49c2470-4017-4898-a079-6a64aa647fe6
+
+mongodb+srv://mmlapinm:<password>@cluster0.6dfwg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+b02fcc
+MONGO_URI
+"mongodb+srv://mmlapinm:20304050@cluster0.6dfwg.mongodb.net/b02fcc?retryWrites=true&w=majority"
