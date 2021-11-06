@@ -12,8 +12,17 @@ var notes = [
     "header": "",
     "title": "JavaScript Algorithms and Data Structures",
     "card-text": [
-      "",
-	  ""
+    "Basic JavaScript",
+    "ES6",
+    "Regular expressions",
+    "Debugging",
+    "Basic Data Structures",
+    "Basic Algorithm Scripting",
+    "Object Oriented Programming",
+    "Functional Programming",
+    "Intermediate Algorithm Scripting",
+    "JavaScript Algorithms and Data Structures Projects",
+    "Claim Your Certification"
     ],
     "link": "r02code.html"
   },
@@ -21,8 +30,13 @@ var notes = [
     "header": "",
     "title": "Front End Development Libraries",
     "card-text": [
-      "",
-	  ""
+    "Bootstrap",
+    "jQuery",
+    "Sass",
+    "React",
+    "Redux",
+    "React and Redux",
+    "Front End Development Libraries Projects"
     ],
     "link": "r03code.html"
   },
@@ -36,12 +50,14 @@ var notes = [
     "link": "r34react.html"
   },
   {
-    "header": "CCNA",
-    "title": "",
+    "header": "",
+    "title": "Back End Development and APIs",
     "card-text": [
-      "",
-      ""
+    "Managing Packages with NPM",
+    "Basic Node and Express",
+    "MongoDB and Mongoose",
+    "Back End Development and APIs Projects"
     ],
-    "link": "r34react.html"
+    "link": "r05code.html"
   }
 ]
