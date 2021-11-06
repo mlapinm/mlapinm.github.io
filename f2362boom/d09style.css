@@ -6,6 +6,10 @@
 
 }
 
+audio {
+  display: none;
+}
+
 
 .div_score{
   display: flex;
