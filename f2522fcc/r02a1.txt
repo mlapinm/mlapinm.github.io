@@ -804,14 +804,59 @@ const myDog = {
   // Only change code above this line
 };
 84 Accessing Object Properties with Dot Notation
+// Setup
+const testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
 
+// Only change code below this line
+const hatValue = testObj.hat;      // Change this line
+const shirtValue = testObj.shirt;    // Change this line
 85 Accessing Object Properties with Bracket Notation
+// Setup
+const testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
 
+// Only change code below this line
+const entreeValue = testObj["an entree"];   // Change this line
+const drinkValue = testObj["the drink"];    // Change this line
 86 Accessing Object Properties with Variables
+// Setup
+const testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
 
+// Only change code below this line
+const playerNumber = 16;  // Change this line
+const player = testObj[playerNumber];   // Change this line
 87 Updating Object Properties
+// Setup
+const myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+// Only change code below this line
+myDog.name = "Happy " + myDog["name"]
 
 88 Add New Properties to a JavaScript Object
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.bark = "woof"
 
 89 Delete Properties from a JavaScript Object
 
@@ -862,3 +907,13 @@ const myDog = {
 112 Use Recursion to Create a Countdown
 
 113 Use Recursion to Create a Range of Numbers
+
+
+D:\mailCloud2\Cloud Mail.Ru\prjother\089hosts\jnotebook\fcc
+d05bjs.ipynb
+D:\mailCloud2\Cloud Mail.Ru\prjother\089hosts\jnotebook\jsmd
+d05bjs.md
+
+
+
+
