@@ -1263,6 +1263,18 @@ console.log(a)
 // [ 3, 2, 1 ]
 // Only change code above this line
 113 Use Recursion to Create a Range of Numbers
+function rangeOfNumbers(startNum, endNum) {
+  if(startNum > endNum){
+    return [];
+  } else {
+    const a = rangeOfNumbers(startNum+1, endNum)
+    a.unshift(startNum)
+    return a
+  }
+};
+
+let a = rangeOfNumbers(1, 5)
+console.log(a)
 
 
 D:\mailCloud2\Cloud Mail.Ru\prjother\089hosts\jnotebook\fcc
