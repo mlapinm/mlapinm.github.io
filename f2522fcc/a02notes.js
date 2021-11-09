@@ -1,12 +1,14 @@
 var notes = [
   {
     "header": "",
-    "title": "",
+    "title": "Responsive Web Design",
     "card-text": [
+      "Basic HTML and HTML5",
+      "Basic CSS",
       "",
 	  ""
     ],
-    "link": "r03code.html"
+    "link": "r01code.html"
   },
   {
     "header": "",
@@ -44,8 +46,8 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "",
-	  ""
+      "Data Visualization",
+	  "Empty"
     ],
     "link": "r34react.html"
   },

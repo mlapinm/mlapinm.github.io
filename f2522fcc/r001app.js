@@ -65,22 +65,60 @@ $(() => {
     })
 
   }
+  function setLinks(links){
+    for(let i in links){
+      let e = links[i]
+      if(e.n == ''){
+        continue
+      }
+      let p = $('<p></p>')
+      p.text(e.n)
+      desk.append(p)
+      for(let j in e.ls){
+        let l = e.ls[j]
+        if(l[0] == ""){
+          continue
+        }
+        let p = $('<p></p>')
+        let a = $('<a></a>')
+        a.prop('href', l[1])
+        a.text(l[0])
+        p.html(a)
+        desk.append(p)
+        // console.log(l, p[0])
+
+      }
+
+
+
+      console.log(links[i])
+    }
+
+  }
 
   function createDesk(){
     let desks = []
     setDesks(thems, desks)
+    // log2.text(links[0].n)
 
     $.each(objThems,(i, e) => {
       if( e[1] != ''){
         setDesk(e[1], desks[i])
       }
-
     })
+
+    try{
+      links && setLinks(links)
+    }catch(e){
+      console.log( e.toString())
+    }
+
+
   }
 
   createDesk()
 
 
-  log2.text("_________________")
+  // log2.text("_________________")
 
 })
