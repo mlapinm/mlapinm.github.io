@@ -62,19 +62,165 @@
   </script>
 </body>
 5 Add Inline Styling to Elements
+<body>
+  <script>
+    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
 
+    d3.select("body").selectAll("h2")
+      .data(dataset)
+      .enter()
+      .append("h2")
+      .text((d) => (d + " USD"))
+      // Add your code below this line
+
+      .style("font-family", "verdana")
+
+      // Add your code above this line
+  </script>
+</body>
 6 Change Styles Based on Data
+<body>
+  <script>
+    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
 
+    d3.select("body").selectAll("h2")
+      .data(dataset)
+      .enter()
+      .append("h2")
+      .text((d) => (d + " USD"))
+      // Add your code below this line
+
+      .style("color", (e) => e < 20 ? "red"
+        : "green"
+      )
+
+      // Add your code above this line
+  </script>
+</body>
 7 Add Classes with D3
+<style>
+  .bar {
+    width: 25px;
+    height: 100px;
+    display: inline-block;
+    background-color: blue;
+  }
+</style>
+<body>
+  <script>
+    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
 
+    d3.select("body").selectAll("div")
+      .data(dataset)
+      .enter()
+      .append("div")
+      // Add your code below this line
+
+      .attr("class", "bar")
+
+      // Add your code above this line
+  </script>
+</body>
 8 Update the Height of an Element Dynamically
+<style>
+  .bar {
+    width: 25px;
+    height: 100px;
+    display: inline-block;
+    background-color: blue;
+  }
+</style>
+<body>
+  <script>
+    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
 
+    d3.select("body").selectAll("div")
+      .data(dataset)
+      .enter()
+      .append("div")
+      .attr("class", "bar")
+      // Add your code below this line
+
+      .style("height", e => e+"px")
+
+      // Add your code above this line
+  </script>
+</body>
 9 Change the Presentation of a Bar Chart
+<style>
+  .bar {
+    width: 25px;
+    height: 100px;
+    /* Add your code below this line */
 
+    margin: 2px;
+
+    
+    /* Add your code above this line */
+    display: inline-block;
+    background-color: blue;
+  }
+</style>
+<body>
+  <script>
+    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+
+    d3.select("body").selectAll("div")
+      .data(dataset)
+      .enter()
+      .append("div")
+      .attr("class", "bar")
+      .style("height", (d) => (d*10 + "px")) // Change this line
+  </script>
+</body>
 10 Learn About SVG in D3
+<style>
+  svg {
+    background-color: pink;
+  }
+</style>
+<body>
+  <script>
+    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
 
+    const w = 500;
+    const h = 100;
+
+    const svg = d3.select("body")
+                  // Add your code below this line
+
+svg.append("svg")
+// .style("width", w)
+// .style("height", h)
+.attr("width", w)
+.attr("height", h)
+
+                  // Add your code above this line
+  </script>
+</body>
 11 Display Shapes with SVG
+<body>
+  <script>
+    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
 
+    const w = 500;
+    const h = 100;
+
+    const svg = d3.select("body")
+                  .append("svg")
+                  .attr("width", w)
+                  .attr("height", h)
+                  // Add your code below this line
+
+.append("rect")
+.attr("width", 25)
+.attr("height", 100)
+.attr("x", 0)
+.attr("y", 0)
+
+                  // Add your code above this line
+  </script>
+</body>
 12 Create a Bar for Each Data Point in the Set
 
 13 Dynamically Set the Coordinates for Each Bar

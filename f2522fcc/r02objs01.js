@@ -865,246 +865,880 @@ let objs01 = [
  {
   "name": "73 Logical Order in If Else Statements",
   "code": [
-   ""
+   "function orderMyLogic(val) {",
+   "  if (val < 5) {",
+   "    return \"Less than 5\";",
+   "  } else if (val < 10) {",
+   "    return \"Less than 10\";",
+   "  } else {",
+   "    return \"Greater than or equal to 10\";",
+   "  }",
+   "}",
+   "",
+   "orderMyLogic(7);"
   ]
  },
  {
   "name": "74 Chaining If Else Statements",
   "code": [
-   ""
+   "function testSize(num) {",
+   "  // Only change code below this line",
+   "if(num < 5){",
+   "  return \"Tiny\"",
+   "} else if (num < 10) {",
+   "  return \"Small\"",
+   "} else if (num < 15) {",
+   "  return \"Medium\"",
+   "} else if (num < 20) {",
+   "  return \"Large\"",
+   "} else {",
+   "  return \"Huge\"",
+   "}",
+   "",
+   "  return \"Change Me\";",
+   "  // Only change code above this line",
+   "}",
+   "",
+   "testSize(7);"
   ]
  },
  {
   "name": "75 Golf Code",
   "code": [
-   ""
+   "const names = [\"Hole-in-one!\", \"Eagle\", \"Birdie\", \"Par\", \"Bogey\", \"Double Bogey\", \"Go Home!\"];",
+   "",
+   "function golfScore(par, strokes) {",
+   "  // Only change code below this line",
+   "  if(strokes == 1){",
+   "    return names[0]",
+   "  } else if(strokes <= (par - 2)) {",
+   "      return names[1]",
+   "  } else if(strokes == (par - 1)) {",
+   "    return names[2]",
+   "  } else if(strokes == par){",
+   "    return names[3]",
+   "  } else if(strokes == (par + 1)){",
+   "    return names[4]",
+   "  } else if(strokes == (par + 2)){",
+   "    return names[5]",
+   "  } else {",
+   "    return names[6]",
+   "  }",
+   "",
+   "  // Only change code above this line",
+   "}",
+   "",
+   "golfScore(5, 4);"
   ]
  },
  {
   "name": "76 Selecting from Many Options with Switch Statements",
   "code": [
-   ""
+   "function caseInSwitch(val) {",
+   "  let answer = \"\";",
+   "  // Only change code below this line",
+   "  let answers = [",
+   "    \"\",",
+   "    \"alpha\",",
+   "    \"beta\",",
+   "    \"gamma\",",
+   "    \"delta\"    ",
+   "  ]",
+   "",
+   "  switch(val){",
+   "    case 1:",
+   "    answer = answers[1]",
+   "    break",
+   "    case 2:",
+   "    answer = answers[2]",
+   "    break",
+   "    case 3:",
+   "    answer = answers[3]",
+   "    break",
+   "    case 4:",
+   "    answer = answers[4]",
+   "    break",
+   "    default :",
+   "    answer = answers[0]",
+   "    break",
+   "  }",
+   "  // Only change code above this line",
+   "  return answer;",
+   "}",
+   "",
+   "caseInSwitch(1);"
   ]
  },
  {
   "name": "77 Adding a Default Option in Switch Statements",
   "code": [
-   ""
+   "function switchOfStuff(val) {",
+   "  let answer = \"\";",
+   "  // Only change code below this line",
+   "  switch(val){",
+   "    case \"a\":",
+   "    return \"apple\"",
+   "    break",
+   "    case \"b\":",
+   "    return \"bird\"",
+   "    break",
+   "    case \"c\":",
+   "    return \"cat\"",
+   "    break",
+   "    default :",
+   "    return \"stuff\"",
+   "    break",
+   "  }",
+   "  // Only change code above this line",
+   "  return answer;",
+   "}",
+   "",
+   "switchOfStuff(1);"
   ]
  },
  {
   "name": "78 Multiple Identical Options in Switch Statements",
   "code": [
-   ""
+   "function sequentialSizes(val) {",
+   "  let answer = \"\";",
+   "  // Only change code below this line",
+   "  switch(val){",
+   "    case 1:",
+   "    case 2:",
+   "    case 3:",
+   "    answer = \"Low\"",
+   "    break",
+   "    case 4:",
+   "    case 5:",
+   "    case 6:",
+   "    answer = \"Mid\"",
+   "    break",
+   "    case 7:",
+   "    case 8:",
+   "    case 9:",
+   "    answer = \"High\"",
+   "    break",
+   "  }",
+   "  // Only change code above this line",
+   "  return answer;",
+   "}",
+   "",
+   "sequentialSizes(1);"
   ]
  },
  {
   "name": "79 Replacing If Else Chains with Switch",
   "code": [
-   ""
+   "function chainToSwitch(val) {",
+   "  let answer = \"\";",
+   "  // Only change code below this line",
+   "",
+   "  switch(val){",
+   "    case \"bob\":",
+   "    answer = \"Marley\"",
+   "    break",
+   "    case 42:",
+   "    answer = \"The Answer\"",
+   "    break",
+   "    case 1:",
+   "    answer = \"There is no #1\"",
+   "    break",
+   "    case 99:",
+   "    answer = \"Missed me by this much!\"",
+   "    break",
+   "    case 7:",
+   "    answer = \"Ate Nine\"",
+   "  }",
+   "  // Only change code above this line",
+   "  return answer;",
+   "}",
+   "",
+   "chainToSwitch(7);"
   ]
  },
  {
   "name": "80 Returning Boolean Values from Functions",
   "code": [
-   ""
+   "function isLess(a, b) {",
+   "  // Only change code below this line",
+   "  return a < b",
+   "  // Only change code above this line",
+   "}",
+   "",
+   "isLess(10, 15);"
   ]
  },
  {
   "name": "81 Return Early Pattern for Functions",
   "code": [
-   ""
+   "// Setup",
+   "function abTest(a, b) {",
+   "  // Only change code below this line",
+   "",
+   "  if( a < 0 || b < 0){",
+   "    return undefined",
+   "  }",
+   "",
+   "  // Only change code above this line",
+   "",
+   "  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));",
+   "}",
+   "",
+   "abTest(2,2);"
   ]
  },
  {
   "name": "82 Counting Cards",
   "code": [
-   ""
+   "let count = 0;",
+   "",
+   "function cc(card) {",
+   "  // Only change code below this line",
+   "  let answer = \"Hold\"",
+   "  switch(card){",
+   "    case 2:",
+   "    case 3:",
+   "    case 4:",
+   "    case 5:",
+   "    case 6:",
+   "    count += 1",
+   "    break",
+   "    case 10:",
+   "    case 'J':",
+   "    case 'Q':",
+   "    case 'K':",
+   "    case 'A':",
+   "    count -= 1",
+   "  }",
+   "  if(count > 0){",
+   "    answer = \"Bet\"",
+   "  }",
+   "",
+   "  return '' + count + ' ' + answer;",
+   "  // Only change code above this line",
+   "}",
+   "",
+   "cc(2); cc(3); cc(7); cc('K'); cc('A');"
   ]
  },
  {
   "name": "83 Build JavaScript Objects",
   "code": [
-   ""
+   "const myDog = {",
+   "  // Only change code below this line",
+   "",
+   "  name : \"Vinchester\",",
+   "  legs : 2,",
+   "  tails : 1,",
+   "  friends : [\"man\", \"cat\"]",
+   "",
+   "  // Only change code above this line",
+   "};"
   ]
  },
  {
   "name": "84 Accessing Object Properties with Dot Notation",
   "code": [
-   ""
+   "// Setup",
+   "const testObj = {",
+   "  \"hat\": \"ballcap\",",
+   "  \"shirt\": \"jersey\",",
+   "  \"shoes\": \"cleats\"",
+   "};",
+   "",
+   "// Only change code below this line",
+   "const hatValue = testObj.hat;      // Change this line",
+   "const shirtValue = testObj.shirt;    // Change this line"
   ]
  },
  {
   "name": "85 Accessing Object Properties with Bracket Notation",
   "code": [
-   ""
+   "// Setup",
+   "const testObj = {",
+   "  \"an entree\": \"hamburger\",",
+   "  \"my side\": \"veggies\",",
+   "  \"the drink\": \"water\"",
+   "};",
+   "",
+   "// Only change code below this line",
+   "const entreeValue = testObj[\"an entree\"];   // Change this line",
+   "const drinkValue = testObj[\"the drink\"];    // Change this line"
   ]
  },
  {
   "name": "86 Accessing Object Properties with Variables",
   "code": [
-   ""
+   "// Setup",
+   "const testObj = {",
+   "  12: \"Namath\",",
+   "  16: \"Montana\",",
+   "  19: \"Unitas\"",
+   "};",
+   "",
+   "// Only change code below this line",
+   "const playerNumber = 16;  // Change this line",
+   "const player = testObj[playerNumber];   // Change this line"
   ]
  },
  {
   "name": "87 Updating Object Properties",
   "code": [
+   "// Setup",
+   "const myDog = {",
+   "  \"name\": \"Coder\",",
+   "  \"legs\": 4,",
+   "  \"tails\": 1,",
+   "  \"friends\": [\"freeCodeCamp Campers\"]",
+   "};",
+   "",
+   "// Only change code below this line",
+   "myDog.name = \"Happy \" + myDog[\"name\"]",
    ""
   ]
  },
  {
   "name": "88 Add New Properties to a JavaScript Object",
   "code": [
+   "const myDog = {",
+   "  \"name\": \"Happy Coder\",",
+   "  \"legs\": 4,",
+   "  \"tails\": 1,",
+   "  \"friends\": [\"freeCodeCamp Campers\"]",
+   "};",
+   "",
+   "myDog.bark = \"woof\"",
    ""
   ]
  },
  {
   "name": "89 Delete Properties from a JavaScript Object",
   "code": [
+   "// Setup",
+   "const myDog = {",
+   "  \"name\": \"Happy Coder\",",
+   "  \"legs\": 4,",
+   "  \"tails\": 1,",
+   "  \"friends\": [\"freeCodeCamp Campers\"],",
+   "  \"bark\": \"woof\"",
+   "};",
+   "",
+   "// Only change code below this line",
+   "",
+   "delete(myDog.tails)",
+   "",
+   "for(let i in myDog){",
+   "  console.log(i, myDog[i])",
+   "}",
    ""
   ]
  },
  {
   "name": "90 Using Objects for Lookups",
   "code": [
-   ""
+   "// Setup",
+   "function phoneticLookup(val) {",
+   "  let result = \"\";",
+   "",
+   "  // Only change code below this line",
+   "",
+   "  // switch(val) {",
+   "  //   case \"alpha\":",
+   "  //     result = \"Adams\";",
+   "  //     break;",
+   "  //   case \"bravo\":",
+   "  //     result = \"Boston\";",
+   "  //     break;",
+   "  //   case \"charlie\":",
+   "  //     result = \"Chicago\";",
+   "  //     break;",
+   "  //   case \"delta\":",
+   "  //     result = \"Denver\";",
+   "  //     break;",
+   "  //   case \"echo\":",
+   "  //     result = \"Easy\";",
+   "  //     break;",
+   "  //   case \"foxtrot\":",
+   "  //     result = \"Frank\";",
+   "  // }",
+   "",
+   "  let lookup = {",
+   "    alpha: \"Adams\",",
+   "    bravo: \"Boston\",",
+   "    charlie: \"Chicago\",",
+   "    delta: \"Denver\",",
+   "    echo: \"Easy\",",
+   "    foxtrot: \"Frank\"",
+   "  }",
+   "",
+   "  result = lookup[val]",
+   "",
+   "  // Only change code above this line",
+   "  return result;",
+   "}",
+   "",
+   "let a = phoneticLookup(\"charlie\");",
+   "console.log(a)"
   ]
  },
  {
   "name": "91 Testing Objects for Properties",
   "code": [
-   ""
+   "function checkObj(obj, checkProp) {",
+   "  // Only change code below this line",
+   "",
+   "  if(obj.hasOwnProperty(checkProp)){",
+   "    return obj[checkProp]",
+   "  } else {",
+   "    return \"Not Found\"",
+   "  } ",
+   "  ",
+   "  // Only change code above this line",
+   "}"
   ]
  },
  {
   "name": "92 Manipulating Complex Objects",
   "code": [
-   ""
+   "const myMusic = [",
+   "  {",
+   "    \"artist\": \"Billy Joel\",",
+   "    \"title\": \"Piano Man\",",
+   "    \"release_year\": 1973,",
+   "    \"formats\": [",
+   "      \"CD\",",
+   "      \"8T\",",
+   "      \"LP\"",
+   "    ],",
+   "    \"gold\": true",
+   "  }",
+   "];",
+   "",
+   "myMusic.push({",
+   "    \"artist\": \"Bethoven\",",
+   "    \"title\": \"Moon sonata\",",
+   "    \"release_year\": 1830,",
+   "    \"formats\": [",
+   "      \"CD\",",
+   "      \"LP\"",
+   "    ],",
+   "    \"gold\": true",
+   "})"
   ]
  },
  {
   "name": "93 Accessing Nested Objects",
   "code": [
+   "const myStorage = {",
+   "  \"car\": {",
+   "    \"inside\": {",
+   "      \"glove box\": \"maps\",",
+   "      \"passenger seat\": \"crumbs\"",
+   "     },",
+   "    \"outside\": {",
+   "      \"trunk\": \"jack\"",
+   "    }",
+   "  }",
+   "};",
+   "",
+   "const gloveBoxContents = myStorage.car.inside[\"glove box\"];",
    ""
   ]
  },
  {
   "name": "94 Accessing Nested Arrays",
   "code": [
-   ""
+   "const myPlants = [",
+   "  {",
+   "    type: \"flowers\",",
+   "    list: [",
+   "      \"rose\",",
+   "      \"tulip\",",
+   "      \"dandelion\"",
+   "    ]",
+   "  },",
+   "  {",
+   "    type: \"trees\",",
+   "    list: [",
+   "      \"fir\",",
+   "      \"pine\",",
+   "      \"birch\"",
+   "    ]",
+   "  }",
+   "];",
+   "",
+   "const secondTree = myPlants[1].list[1];"
   ]
  },
  {
   "name": "95 Record Collection",
   "code": [
-   ""
+   "// Setup",
+   "const recordCollection = {",
+   "  2548: {",
+   "    albumTitle: 'Slippery When Wet',",
+   "    artist: 'Bon Jovi',",
+   "    tracks: ['Let It Rock', 'You Give Love a Bad Name']",
+   "  },",
+   "  2468: {",
+   "    albumTitle: '1999',",
+   "    artist: 'Prince',",
+   "    tracks: ['1999', 'Little Red Corvette']",
+   "  },",
+   "  1245: {",
+   "    artist: 'Robert Palmer',",
+   "    tracks: []",
+   "  },",
+   "  5439: {",
+   "    albumTitle: 'ABBA Gold'",
+   "  }",
+   "};",
+   "",
+   "// Only change code below this line",
+   "function updateRecords(records, id, prop, value) {",
+   "  if(prop != \"tracks\" && value){",
+   "    records[id][prop] = value",
+   "",
+   "  } else if (prop == \"tracks\" && !records[id].hasOwnProperty(prop)) {",
+   "    records[id][prop] = []",
+   "    records[id][prop].push(value)",
+   "  } else if (prop == \"tracks\" && value != \"\"){",
+   "    records[id][prop].push(value)",
+   "  } else if(value == \"\"){",
+   "    delete(records[id][prop])",
+   "  }",
+   "  return records;",
+   "",
+   "}",
+   "",
+   "updateRecords(recordCollection, 5439, 'artist', 'ABBA');",
+   "",
+   "for(let i in recordCollection[5439]){",
+   "  console.log(i, recordCollection[5439][i])",
+   "}"
   ]
  },
  {
   "name": "96 Iterate with JavaScript While Loops",
   "code": [
+   "// Setup",
+   "const myArray = [];",
+   "// Only change code below this line",
+   "",
+   "let k = 5",
+   "while(k >= 0){",
+   "  myArray.push(k)",
+   "  k--",
+   "}",
+   "console.log(myArray)",
    ""
   ]
  },
  {
   "name": "97 Iterate with JavaScript For Loops",
   "code": [
-   ""
+   "// Setup",
+   "const myArray = [];",
+   "",
+   "// Only change code below this line",
+   "",
+   "for(let i=1; i<=5; i++){",
+   "  myArray.push(i)",
+   "}",
+   "console.log(myArray)"
   ]
  },
  {
   "name": "98 Iterate Odd Numbers With a For Loop",
   "code": [
-   ""
+   "// Setup",
+   "const myArray = [];",
+   "",
+   "// Only change code below this line",
+   "",
+   "for(let i=1; i<=9; i+=2){",
+   "  myArray.push(i)",
+   "}",
+   "",
+   "console.log(myArray)"
   ]
  },
  {
   "name": "99 Count Backwards With a For Loop",
   "code": [
-   ""
+   "// Setup",
+   "const myArray = [];",
+   "",
+   "// Only change code below this line",
+   "",
+   "for(let i=9; i>0; i-=2){",
+   "  myArray.push(i)",
+   "}",
+   "",
+   "console.log(myArray)"
   ]
  },
  {
   "name": "100 Iterate Through an Array with a For Loop",
   "code": [
-   ""
+   "// Setup",
+   "const myArr = [2, 3, 4, 5, 6];",
+   "",
+   "// Only change code below this line",
+   "",
+   "let total = 0",
+   "for(let i=0; i<myArr.length; i++){",
+   "  total += myArr[i]",
+   "}",
+   "",
+   "console.log(total)"
   ]
  },
  {
   "name": "101 Nesting For Loops",
   "code": [
-   ""
+   "function multiplyAll(arr) {",
+   "  let product = 1;",
+   "  // Only change code below this line",
+   "",
+   "  for(let i=0; i<arr.length; i++){",
+   "    for(let j=0; j<arr[i].length; j++){",
+   "      product *= arr[i][j]",
+   "    }",
+   "  }",
+   "",
+   "  // Only change code above this line",
+   "  return product;",
+   "}",
+   "",
+   "multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);"
   ]
  },
  {
   "name": "102 Iterate with JavaScript Do...While Loops",
   "code": [
-   ""
+   "// Setup",
+   "const myArray = [];",
+   "let i = 10;",
+   "",
+   "// Only change code below this line",
+   "do {",
+   "  myArray.push(i);",
+   "  i++;",
+   "}while(i < 11)",
+   "",
+   "console.log(myArray)"
   ]
  },
  {
   "name": "103 Replace Loops using Recursion",
   "code": [
-   ""
+   "function sum(arr, n) {",
+   "  // Only change code below this line",
+   "  if(n < 1){",
+   "    return 0",
+   "  }else{",
+   "    return sum(arr, n-1) + arr[n-1]",
+   "  }",
+   "",
+   "  // Only change code above this line",
+   "}",
+   "",
+   "let a = sum([1,2],2) ",
+   "console.log(a)"
   ]
  },
  {
   "name": "104 Profile Lookup",
   "code": [
+   "// Setup",
+   "const contacts = [",
+   "  {",
+   "    firstName: \"Akira\",",
+   "    lastName: \"Laine\",",
+   "    number: \"0543236543\",",
+   "    likes: [\"Pizza\", \"Coding\", \"Brownie Points\"],",
+   "  },",
+   "  {",
+   "    firstName: \"Harry\",",
+   "    lastName: \"Potter\",",
+   "    number: \"0994372684\",",
+   "    likes: [\"Hogwarts\", \"Magic\", \"Hagrid\"],",
+   "  },",
+   "  {",
+   "    firstName: \"Sherlock\",",
+   "    lastName: \"Holmes\",",
+   "    number: \"0487345643\",",
+   "    likes: [\"Intriguing Cases\", \"Violin\"],",
+   "  },",
+   "  {",
+   "    firstName: \"Kristian\",",
+   "    lastName: \"Vos\",",
+   "    number: \"unknown\",",
+   "    likes: [\"JavaScript\", \"Gaming\", \"Foxes\"],",
+   "  },",
+   "];",
+   "",
+   "function lookUpProfile(name, prop) {",
+   "  // Only change code below this line",
+   "  let value = ''",
+   "  let k = -1",
+   "  for(let i=0; i<contacts.length; i++){",
+   "    if(name == contacts[i].firstName){",
+   "      k = i",
+   "      break",
+   "    }",
+   "  }",
+   "  if(k >= 0){",
+   "    let e = contacts[k]",
+   "    if(e.hasOwnProperty(prop)){",
+   "      value = e[prop]",
+   "    } else {",
+   "      value = \"No such property\"",
+   "    } ",
+   "  } else {",
+   "    value = \"No such contact\"",
+   "  }",
+   "  return value",
+   "",
+   "  // Only change code above this line",
+   "}",
+   "",
+   "let a = lookUpProfile(\"Akira\", \"likes\");",
+   "console.log(a)",
    ""
   ]
  },
  {
   "name": "105 Generate Random Fractions with JavaScript",
   "code": [
-   ""
+   "function randomFraction() {",
+   "",
+   "  // Only change code below this line",
+   "",
+   "  return Math.random();",
+   "",
+   "  // Only change code above this line",
+   "}"
   ]
  },
  {
   "name": "106 Generate Random Whole Numbers with JavaScript",
   "code": [
-   ""
+   "function randomWholeNum() {",
+   "",
+   "  // Only change code below this line",
+   "",
+   "  return Math.floor(Math.random() * 10);",
+   "}"
   ]
  },
  {
   "name": "107 Generate Random Whole Numbers within a Range",
   "code": [
-   ""
+   "function randomRange(myMin, myMax) {",
+   "  // Only change code below this line",
+   "  return Math.floor(Math.random() * (myMax + 1 - myMin) + myMin);",
+   "  // Only change code above this line",
+   "}"
   ]
  },
  {
   "name": "108 Use the parseInt Function",
   "code": [
-   ""
+   "function convertToInteger(str) {",
+   "  return parseInt(str)",
+   "",
+   "}",
+   "",
+   "convertToInteger(\"56\");"
   ]
  },
  {
   "name": "109 Use the parseInt Function with a Radix",
   "code": [
-   ""
+   "function convertToInteger(str) {",
+   "  return parseInt(str, 2)",
+   "",
+   "}",
+   "",
+   "convertToInteger(\"10011\");"
   ]
  },
  {
   "name": "110 Use the Conditional (Ternary) Operator",
   "code": [
-   ""
+   "function checkEqual(a, b) {",
+   "  return a == b ? \"Equal\" : \"Not Equal\"",
+   "",
+   "}",
+   "",
+   "checkEqual(1, 2);"
   ]
  },
  {
   "name": "111 Use Multiple Conditional (Ternary) Operators",
   "code": [
-   ""
+   "function checkSign(num) {",
+   "  return num > 0 ? \"positive\"",
+   "  : num < 0 ? \"negative\"",
+   "  : \"zero\"",
+   "",
+   "}",
+   "",
+   "checkSign(10);"
   ]
  },
  {
   "name": "112 Use Recursion to Create a Countdown",
   "code": [
-   ""
+   "// Only change code below this line",
+   "let l = []",
+   "function countdown(n){",
+   "  if(n < 1){",
+   "    return []",
+   "  } else {",
+   "    const a = countdown(n-1)",
+   "    a.unshift(n)",
+   "    return a",
+   "  }",
+   "  return;",
+   "}",
+   "",
+   "let a = countdown(3)",
+   "console.log(a)",
+   "// [ 3, 2, 1 ]",
+   "// Only change code above this line"
   ]
  },
  {
   "name": "113 Use Recursion to Create a Range of Numbers",
   "code": [
+   "function rangeOfNumbers(startNum, endNum) {",
+   "  if(startNum > endNum){",
+   "    return [];",
+   "  } else {",
+   "    const a = rangeOfNumbers(startNum+1, endNum)",
+   "    a.unshift(startNum)",
+   "    return a",
+   "  }",
+   "};",
+   "",
+   "",
+   "let a = rangeOfNumbers(2, 5)",
+   "console.log(a)",
+   "// [ 2, 3, 4, 5 ]",
+   "",
+   "D:\\mailCloud2\\Cloud Mail.Ru\\prjother\\089hosts\\jnotebook\\fcc",
+   "d05bjs.ipynb",
+   "D:\\mailCloud2\\Cloud Mail.Ru\\prjother\\089hosts\\jnotebook\\jsmd",
+   "d05bjs.md",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
    ""
   ]
  }

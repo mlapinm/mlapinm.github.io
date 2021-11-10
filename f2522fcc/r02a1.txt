@@ -1273,9 +1273,10 @@ function rangeOfNumbers(startNum, endNum) {
   }
 };
 
-let a = rangeOfNumbers(1, 5)
-console.log(a)
 
+let a = rangeOfNumbers(2, 5)
+console.log(a)
+// [ 2, 3, 4, 5 ]
 
 D:\mailCloud2\Cloud Mail.Ru\prjother\089hosts\jnotebook\fcc
 d05bjs.ipynb
