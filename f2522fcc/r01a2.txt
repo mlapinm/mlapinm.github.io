@@ -352,43 +352,347 @@
 </style>
 
 16 Adjust the Padding of an Element
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+
+  .silver-background {
+    background-color: silver;
+  }
+
+  #cat-photo-form {
+    background-color: green;
+  }
+</style>
 
 17 Adjust the Margin of an Element
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
 
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
 18 Add a Negative Margin to an Element
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
 
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    margin: -15px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    margin: -15px;
+  }
+</style>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
 19 Add Different Padding to Each Side of an Element
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
 
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 40px 20px 20px 40px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
 20 Add Different Margins to Each Side of an Element
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    /* margin: 40px 20px 20px 40px; */
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
 
 21 Use Clockwise Notation to Specify the Padding of an Element
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 40px 20px 20px 40px;
+  }
 
 22 Use Clockwise Notation to Specify the Margin of an Element
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    margin: 40px 20px 20px 40px;
+  }
 
 23 Use Attribute Selectors to Style Elements
+  [type='checkbox'] {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
 
 24 Understand Absolute versus Relative Units
+  .red-box {
+    background-color: red;
+    padding: 1.5em;
+    margin: 20px 40px 20px 40px;
 
+  }
 25 Style the HTML Body Element
+<style>
+  body {
+    background: black;
+  }
+
+</style>
 
 26 Inherit Styles from the Body Element
+<style>
+  body {
+    font-family: monospace;
+    background-color: black;
+    color: green;
+  }
 
+</style>
+<h1>Hello World</h1>
 27 Prioritize One Style Over Another
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
 
+  .pink-text {
+    color: pink;
+  }
+</style>
+<h1 class="pink-text">Hello World!</h1>
 28 Override Styles in Subsequent CSS
-
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>
 29 Override Class Declarations by Styling ID Attributes
-
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
 30 Override Class Declarations with Inline Styles
-
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white;">Hello World!</h1>
 31 Override All Other Styles by using Important
-
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink !important;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
 32 Use Hex Code for Specific Colors
-
+<style>
+  body {
+    background-color: #000000;
+  }
+</style>
 33 Use Hex Code to Mix Colors
+<style>
+  .red-text {
+    color: #FF0000;
+  }
+  .green-text {
+    color: #00FF00;
+  }
+  .dodger-blue-text {
+    color: #1E90FF;
+  }
+  .orange-text {
+    color: #FFA500;
+  }
+</style>
 
+<h1 class="red-text">I am red!</h1>
+
+<h1 class="green-text">I am green!</h1>
+
+<h1 class="dodger-blue-text">I am dodger blue!</h1>
+
+<h1 class="orange-text">I am orange!</h1>
 34 Use Abbreviated Hex Code
+<style>
+  .red-text {
+    color: #F00;
+  }
+  .fuchsia-text {
+    color: #F0F;
+  }
+  .cyan-text {
+    color: #0FF;
+  }
+  .green-text {
+    color: #0F0;
+  }
+</style>
 
+<h1 class="red-text">I am red!</h1>
+
+<h1 class="fuchsia-text">I am fuchsia!</h1>
+
+<h1 class="cyan-text">I am cyan!</h1>
+
+<h1 class="green-text">I am green!</h1>
 35 Use RGB values to Color Elements
 
 36 Use RGB to Mix Colors

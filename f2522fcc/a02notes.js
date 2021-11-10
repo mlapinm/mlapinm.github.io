@@ -44,12 +44,13 @@ var notes = [
   },
   {
     "header": "",
-    "title": "",
+    "title": "Data Visualization",
     "card-text": [
-      "Data Visualization",
-	  "Empty"
+    "Data Visualization with D3",
+    "JSON APIs and AJAX",
+    "Data Visualization Projects"
     ],
-    "link": "r34react.html"
+    "link": "r04code.html"
   },
   {
     "header": "",
