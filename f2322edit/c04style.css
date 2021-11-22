@@ -55,3 +55,8 @@ p {
   
 }
 
+.drop {
+  height: 2rem;
+  background-color: aliceblue;
+}
+

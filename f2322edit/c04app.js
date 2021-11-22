@@ -145,4 +145,19 @@ $(() => {
   // onQuote()
   // onRid()
 
+  let drop = $('.drop')
+// not drop dataTransfer
+// dragover drop   
+  drop[0].addEventListener('dragover', (e) => {
+    e.preventDefault()
+    console.log(3333)
+  })
+  drop[0].addEventListener('dragend', (e) => {
+    e.preventDefault()
+    console.log(e)
+  })
+
+
+  drop.text(222)
+
 })
