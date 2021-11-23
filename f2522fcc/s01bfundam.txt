@@ -1,0 +1,238 @@
+WEEK 1
+Program Introduction5m
+What is IT?4m
+What does an IT Support Specialist do?2m
+Course Introduction2m
+From Abacus to Analytical Engine5m
+The Path to Modern Computers11m
+Kevin Career1m
+Computer Language3m
+Character Encoding3m
+Binary2m
+How to Count in Binary3m
+Abstraction2m
+Computer Architecture Overview3m
+Kevin Advice1m
+readings
+Navigating Coursera10m
+Program Surveys10m
+How to Use Discussion Forums10m
+Get to Know Your Classmates10m
+Supplemental Reading on Logic Gates10m
+About Graded Plugins10m
+practice exercises
+Binary30m
+Computer Architecture30m
+How to Count in Binary30m
+
+
+
+WEEK
+1
+4 hours to complete
+Introduction to IT
+Welcome to Technical Support Fundamentals, the first course of the IT Support Professional Certificate! By enrolling in this course, you are taking the first step to kickstarting your career in tech. In the first week of the course, we'll learn about how computers were invented, how they've evolved over time, and how they work today. We will also learn about what an "IT Support Specialist" is and what they do in their job. By the end of this module, you will know how to count like a computer using binary and understand why these calculations are so powerful for society. So let's get started!
+
+14 videos (Total 51 min), 6 readings, 3 quizzes
+14 videos
+Program Introduction5m
+What is IT?4m
+What does an IT Support Specialist do?2m
+Course Introduction2m
+From Abacus to Analytical Engine5m
+The Path to Modern Computers11m
+Kevin Career1m
+Computer Language3m
+Character Encoding3m
+Binary2m
+How to Count in Binary3m
+Abstraction2m
+Computer Architecture Overview3m
+Kevin Advice1m
+6 readings
+Navigating Coursera10m
+Program Surveys10m
+How to Use Discussion Forums10m
+Get to Know Your Classmates10m
+Supplemental Reading on Logic Gates10m
+About Graded Plugins10m
+3 practice exercises
+Binary30m
+Computer Architecture30m
+How to Count in Binary30m
+WEEK
+2
+5 hours to complete
+Hardware
+In the second week of this course, we'll learn about what's inside a computer. We'll learn all about the hardware components or different pieces inside a computer. We'll discover what each component does and how they work together to make a computer function. By the end of this module, you will also know how to build a computer from scratch!
+
+17 videos (Total 80 min), 7 readings, 4 quizzes
+17 videos
+Module Introduction2m
+Introduction to Computer Hardware4m
+Programs and Hardware8m
+Joe Diversity1m
+CPU4m
+RAM3m
+Motherboards3m
+Storage4m
+Power Supplies4m
+Mobile Devices3m
+Batteries and Charging Systems4m
+Peripherals4m
+BIOS4m
+Ben's Advice1m
+Putting it All Together21m
+Mobile Device Repair2m
+One program, many futures1m
+7 readings
+Supplemental Reading for CPUs10m
+Supplemental Reading for CPU architecture10m
+Supplemental Reading for Data Storage10m
+Supplemental Readings for Batteries and Charging Systems10m
+Supplemental Reading for USB Peripherals10m
+Supplemental Reading for Projectors10m
+About Graded Plugins10m
+4 practice exercises
+The Modern Computer30m
+Components30m
+Starting It Up30m
+Assemble a Computer30m
+WEEK
+3
+6 hours to complete
+Operating System
+In the third week of the course we will become familiar with operating systems. We discuss the operating systems that are most widely used today and learn how an operating system interacts with computer hardware. We will learn about the startup process of an operating system and show you how to install the Windows, Linux and Mac OS X operating systems from scratch. At the end of this module you will interact directly with the Windows and Linux operating systems via the Qwiklabs environment.
+
+
+SHOW ALL SYLLABUSSHOW ALL
+21 videos (Total 69 min), 6 readings, 5 quizzes
+21 videos
+Module Introduction2m
+Remote Connection and SSH5m
+Remote Connections on Windows4m
+Components of an Operating System6m
+Files and File Systems3m
+Process Management2m
+Memory Management2m
+I/O Management2m
+Interacting with the OS: User Space3m
+Logs2m
+The Boot Process2m
+Mobile Operating Systems1m
+Cindy Drive & Career Path1m
+Choosing an Operating System3m
+Virtual Machines2m
+Installing Windows5m
+Installing Linux6m
+What is Chrome OS?3m
+Installing Mac OS X3m
+Tri Ngo Obstacles & How to be successful in IT1m
+Introduction to Qwiklabs1m
+6 readings
+Supplemental reading for Remote Connections in Windows10m
+Supplemental Reading for Chrome OS10m
+Supplemental Reading for ReFS File System10m
+Supplemental Reading for Choosing an OS10m
+Supplemental Reading for Ubuntu10m
+Instructions for Accessing Linux and Windows Qwiklabs10m
+3 practice exercises
+What is an Operating System?30m
+Installing an Operating System30m
+Accessing Qwiklabs30m
+WEEK
+4
+3 hours to complete
+Networking
+In the fourth week of this course, we'll learn about computer networking. We'll explore the history of the Internet and what "The Web" actually is. We'll also discuss topics like Internet privacy, security, and what the future of the Internet may look like. You'll also understand why the Internet has limitations even today. By the end of this module, you will know how the Internet works and recognize both the positive and negative impacts the Internet has had on the world.
+
+15 videos (Total 44 min), 1 reading, 2 quizzes
+15 videos
+Module Introduction3m
+Basics of Networking7m
+Networking Hardware3m
+Language of the Internet2m
+The Web3m
+Victor First Job1m
+History of the Internet4m
+Limitations of the Internet3m
+Changing Careers1m
+Impact3m
+Internet of Things1m
+Gian What he does in Android Security1m
+Privacy and Security3m
+Heather Adkins Keeping Hackers Out2m
+Learner Story: Melinda40s
+1 reading
+Supplemental Reading for Internet of Things10m
+2 practice exercises
+Limitations of the Internet30m
+Networking50m
+WEEK
+5
+4 hours to complete
+Software
+In the fifth week of this course, we'll learn about computer software. We'll learn about what software actually is and the different types of software you may encounter as an IT Support Specialist. We'll also explore how to manage software and revisit the concept of "abstraction." By the end of this module, you'll use the Qwiklabs environment to install, update and remove software on both Windows and Linux operating systems.
+
+10 videos (Total 25 min), 1 reading, 4 quizzes
+10 videos
+Module Introduction2m
+What is Software?2m
+Types of Software3m
+Revisiting Abstraction1m
+Recipe for Computing3m
+Phelan Navy1m
+Managing Software3m
+Installing, Updating, and Removing Software on Windows2m
+Installing, Updating, and Removing Software on Linux1m
+Software Automation1m
+1 reading
+Supplemental Reading for Software Versioning10m
+2 practice exercises
+Introduction to Software30m
+Interacting with Software30m
+WEEK
+6
+4 hours to complete
+Troubleshooting
+Congratulations, you've made it to the last week of the course! In the final week, we'll learn about the importance of troubleshooting and customer support. We'll go through some real-world scenarios that you might encounter at a Help Desk or Desktop Support role. We'll learn why empathizing with a user is super important when working in a tech role. Finally, we'll learn why writing documentation is an important aspect of any IT role. By the end of this module, you will utilize soft skills and write documentation to communicate with others.
+
+
+SHOW ALL SYLLABUSSHOW ALL
+22 videos (Total 69 min), 2 readings, 4 quizzes
+22 videos
+Module Introduction2m
+Ask Questions!4m
+Isolating the Problem3m
+Follow the Cookie Crumbs3m
+Start with the Quickest Step First2m
+Troubleshooting Pitfalls to Avoid1m
+Amir Attributes1m
+Intro to Soft Skills8m
+Anatomy of an Interaction7m
+How to Deal with Difficult Situations10m
+Ticketing Systems and Documenting Your Work2m
+Process Documentation1m
+Documenting in Ticketing Systems1m
+Your Opportunity for Success1m
+Standing Out from the Crowd3m
+Getting Ready for the Interview2m
+What to Expect During the Technical Interview2m
+Showing Your Best Self During the Interview1m
+Interview Role Play: Customer Service3m
+Course Wrap Up2m
+Sabrina No Degree1m
+Congratulations!12s
+2 readings
+Crafting Your Resume10m
+Creating Your Elevator Pitch10m
+4 practice exercises
+Troubleshooting Best Practices30m
+Ungraded Plugin: Customer Service30m
+Customer Service30m
+Writing Effective Documentation30m
+
+
+
+
+

@@ -118,18 +118,19 @@ $(() => {
     let text = edit0[0].value
     let lines = text.split('\n')
     let outs = []
+    let k0 = $('.input-prev')[0].value
     let k = Number($('.input-first')[0].value)
     let k2 = Number($('.input-last')[0].value)
     lines.forEach(element => {
       if(element.trim().length != 0){
-        outs.push('' + k + ' ' + element)
+        outs.push(k0 + `${k}`.padStart(2, '0') + ' ' + element)
         k += 1   
       }else{
         outs.push(element)
       }
     });
     for(let i = k; i < k2 + 1; i++){
-      outs.push('' + i + ' ')
+      outs.push(k0 + `${i}`.padStart(2, '0') + ' ')
     }
 
 
@@ -157,6 +158,7 @@ $(() => {
     console.log(e)
   })
 
+  // log1.text(`${3}`.padStart(2, '0'))
 
   drop.text(222)
 

@@ -1,0 +1,168 @@
+WEEK 1 Introduction to IT
+Program Introduction5m
+What is IT?4m
+What does an IT Support Specialist do?2m
+Course Introduction2m
+From Abacus to Analytical Engine5m
+The Path to Modern Computers11m
+Kevin Career1m
+Computer Language3m
+Character Encoding3m
+Binary2m
+How to Count in Binary3m
+Abstraction2m
+Computer Architecture Overview3m
+Kevin Advice1m
+readings
+Navigating Coursera10m
+Program Surveys10m
+How to Use Discussion Forums10m
+Get to Know Your Classmates10m
+Supplemental Reading on Logic Gates10m
+About Graded Plugins10m
+practice exercises
+Binary30m
+Computer Architecture30m
+How to Count in Binary30m
+
+WEEK 2 Hardware
+Module Introduction2m
+Introduction to Computer Hardware4m
+Programs and Hardware8m
+Joe Diversity1m
+CPU4m
+RAM3m
+Motherboards3m
+Storage4m
+Power Supplies4m
+Mobile Devices3m
+Batteries and Charging Systems4m
+Peripherals4m
+BIOS4m
+Ben's Advice1m
+Putting it All Together21m
+Mobile Device Repair2m
+One program, many futures1m
+readings
+Supplemental Reading for CPUs10m
+Supplemental Reading for CPU architecture10m
+Supplemental Reading for Data Storage10m
+Supplemental Readings for Batteries and Charging Systems10m
+Supplemental Reading for USB Peripherals10m
+Supplemental Reading for Projectors10m
+About Graded Plugins10m
+practice exercises
+The Modern Computer30m
+Components30m
+Starting It Up30m
+Assemble a Computer30m
+
+WEEK 3 Operating System
+Module Introduction2m
+Remote Connection and SSH5m
+Remote Connections on Windows4m
+Components of an Operating System6m
+Files and File Systems3m
+Process Management2m
+Memory Management2m
+I/O Management2m
+Interacting with the OS: User Space3m
+Logs2m
+The Boot Process2m
+Mobile Operating Systems1m
+Cindy Drive & Career Path1m
+Choosing an Operating System3m
+Virtual Machines2m
+Installing Windows5m
+Installing Linux6m
+What is Chrome OS?3m
+Installing Mac OS X3m
+Tri Ngo Obstacles & How to be successful in IT1m
+Introduction to Qwiklabs1m
+6 readings
+Supplemental reading for Remote Connections in Windows10m
+Supplemental Reading for Chrome OS10m
+Supplemental Reading for ReFS File System10m
+Supplemental Reading for Choosing an OS10m
+Supplemental Reading for Ubuntu10m
+Instructions for Accessing Linux and Windows Qwiklabs10m
+3 practice exercises
+What is an Operating System?30m
+Installing an Operating System30m
+Accessing Qwiklabs30m
+
+WEEK 4 Networking
+Module Introduction3m
+Basics of Networking7m
+Networking Hardware3m
+Language of the Internet2m
+The Web3m
+Victor First Job1m
+History of the Internet4m
+Limitations of the Internet3m
+Changing Careers1m
+Impact3m
+Internet of Things1m
+Gian What he does in Android Security1m
+Privacy and Security3m
+Heather Adkins Keeping Hackers Out2m
+Learner Story: Melinda40s
+reading
+Supplemental Reading for Internet of Things10m
+practice exercises
+Limitations of the Internet30m
+Networking50m
+
+WEEK 5 Software
+Module Introduction2m
+What is Software?2m
+Types of Software3m
+Revisiting Abstraction1m
+Recipe for Computing3m
+Phelan Navy1m
+Managing Software3m
+Installing, Updating, and Removing Software on Windows2m
+Installing, Updating, and Removing Software on Linux1m
+Software Automation1m
+reading
+Supplemental Reading for Software Versioning10m
+practice exercises
+Introduction to Software30m
+Interacting with Software30m
+
+WEEK 6 Troubleshooting
+Module Introduction2m
+Ask Questions!4m
+Isolating the Problem3m
+Follow the Cookie Crumbs3m
+Start with the Quickest Step First2m
+Troubleshooting Pitfalls to Avoid1m
+Amir Attributes1m
+Intro to Soft Skills8m
+Anatomy of an Interaction7m
+How to Deal with Difficult Situations10m
+Ticketing Systems and Documenting Your Work2m
+Process Documentation1m
+Documenting in Ticketing Systems1m
+Your Opportunity for Success1m
+Standing Out from the Crowd3m
+Getting Ready for the Interview2m
+What to Expect During the Technical Interview2m
+Showing Your Best Self During the Interview1m
+Interview Role Play: Customer Service3m
+Course Wrap Up2m
+Sabrina No Degree1m
+Congratulations!12s
+readings
+Crafting Your Resume10m
+Creating Your Elevator Pitch10m
+practice exercises
+Troubleshooting Best Practices30m
+Ungraded Plugin: Customer Service30m
+Customer Service30m
+Writing Effective Documentation30m
+
+
+
+
+
