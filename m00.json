@@ -322,17 +322,18 @@
 	 "header": "edit",
 	 "title": "edit",
 	 "card-text": [
-	 "text to tab",
+	 "back",
+	 "rid",
+	 "subtitles, to one string",
+	 "srt from file",
 	 "text even",
 	 "text odd",
-	 "<a href='f2322edit/c02index.html'>back</a>",
-	 "<a href='f2322edit/c04index.html'>rid empty strings</a>",
-	 "<a href='f2322edit/c06subt.html'>subtitles, to one string</a>",
-	 "<a href='f2322edit/c08srt.html'>srt from file</a>",
-	 "<a href='f2322edit/c12obj.html'>objs</a>",
+	 "Clipboard",
+	 "objs",
+	 "",
 	 ""
 	 ],
-	 "link": "https://mlapinm.github.io/f2322edit/"
+	 "link": "f2322edit/"
 	},
     {
 	 "header": "google",

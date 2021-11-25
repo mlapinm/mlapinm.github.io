@@ -133,15 +133,75 @@ function removeFirstTwo(list) {
 const arr = removeFirstTwo(source);
 console.log(arr)
 14 Use Destructuring Assignment to Pass an Object as a Function's Parameters
+const stats = {
+  max: 56.78,
+  standard_deviation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+};
 
+// Only change code below this line
+
+const half = ({max, min}) => 
+  (max + min) / 2.0
+console.log(half(stats))
+// Only change code above this line
 15 Create Strings using Template Literals
+const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["no-extra-semi", "no-dup-keys"]
+};
+function makeList(arr) {
+  // Only change code below this line
+  const failureItems = [];
+  for (let i in arr){
+    let lane = `<li class="text-warning">${arr[i]}</li>`
+    failureItems.push(lane)
 
+  }
+
+  // Only change code above this line
+
+  return failureItems;
+}
+
+const failuresList = makeList(result.failure);
+console.log(failuresList)
 16 Write Concise Object Literal Declarations Using Object Property Shorthand
-
+const createPerson = (name, age, gender) => {
+  // Only change code below this line
+  return {
+    name, age, gender
+  };
+  // Only change code above this line
+};
+console.log(createPerson('Smith', 77,'mail'))
 17 Write Concise Declarative Functions with ES6
-
+// Only change code below this line
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    this.gear = newGear;
+  }
+};
+// Only change code above this line
+bicycle.setGear(3);
+console.log(bicycle.gear);
 18 Use class Syntax to Define a Constructor Function
+// Only change code below this line
+class Vegetable {
+  constructor(name){
+    this.name = name
+  }
+}
 
+// Only change code above this line
+
+const carrot = new Vegetable('carrot');
+console.log(carrot.name); // Should display 'carrot'
 19 Use getters and setters to Control Access to an Object
 
 20 Create a Module Script
