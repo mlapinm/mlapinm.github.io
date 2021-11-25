@@ -104,8 +104,6 @@ console.log(highToday, highTomorrow)
 
 // Only change code above this line
 11 Use Destructuring Assignment to Assign Variables from Nested Objects
-
-12 Use Destructuring Assignment to Assign Variables from Arrays
 const LOCAL_FORECAST = {
   yesterday: { low: 61, high: 75 },
   today: { low: 64, high: 77 },
@@ -116,13 +114,24 @@ const LOCAL_FORECAST = {
   
 // const lowToday = LOCAL_FORECAST.today.low;
 // const highToday = LOCAL_FORECAST.today.high;
-
-const {today: {low: lowToday, high: highToday}} = LOCAL_FORECAST
-
+const {today:{low: lowToday, high: highToday}} = LOCAL_FORECAST
 console.log(lowToday, highToday)
 // Only change code above this line
+12 Use Destructuring Assignment to Assign Variables from Arrays
+let a = 8, b = 6;
+// Only change code below this line
+[a, b] = [b, a]
 13 Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements
-
+const source = [1,2,3,4,5,6,7,8,9,10];
+function removeFirstTwo(list) {
+  // Only change code below this line
+  // const arr = list; // Change this line
+  const [a, b, ...arr] = list
+  // Only change code above this line
+  return arr;
+}
+const arr = removeFirstTwo(source);
+console.log(arr)
 14 Use Destructuring Assignment to Pass an Object as a Function's Parameters
 
 15 Create Strings using Template Literals
