@@ -101,13 +101,13 @@ var notes = [
    },
   {
     "header": "",
-    "title": "",
+    "title": "Binary",
     "card-text": [
-      "test",
+      "",
       "",
       ""
     ],
-    "link": "d02test.html"
+    "link": "d11binary.html"
    },
   {
     "header": "",
