@@ -152,8 +152,23 @@ HDMI
 DisplayPort
 
 214 BIOS4m
+подключает оборудование и запускает ОС
+Read-only memory chip
+ROM chip
+UEFI
+Unified Extensible Firmware Interface
+поддерживает новое оборудование
+Power-on self test
+Звуковые коды
+CMOS chip
+Reimaging
+
 215 Ben's Advice1m
+dedication to a lifetime of learning
+they can help you in every facet of your life
+
 216 Putting it All Together21m
+
 217 Mobile Device Repair2m
 218 One program, many futures1m
 
@@ -177,11 +192,62 @@ In the third week of the course we will become familiar with operating systems. 
 303 Remote Connection and SSH5m
 304 Remote Connections on Windows4m
 305 Components of an Operating System6m
+Operating system
+The whole package that manages our computer's resources and lets us interact with it
+User Space
+Applications
+
+Kernel Space
+Process Manager
+Memory Manager
+File Manager
+I/O Manager
+
+Hardware
+
+Linux ubuntu debian Red Hat
+Chrome OS
+
 306 Files and File Systems3m
+File Handiling
+Data Metadata File System
+Windows NTFS
+ReFS
+Mac OS HFS+
+Linux ext4
+
+Block storage
+Metadata
+File Owner
+Permissions
+File Size
+Date Modified
+Date Created
+File Type
+
+File Extension
+
+
 307 Process Management2m
+Process
+A program that's executing, like our internet browser or text editor
+Program
+An Application that we can run, like Chrome.
+Time Slice Process 1
+Time Slice Process 2
+Time Slice Process 3
+Time slice
+A very short interval of time that gets allocated to a process for CPU execution
+Kernel
+Creates processes, efficiently schedules them, and manages how processes are terminated
 308 Memory Management2m
+Swap space
 309 I/O Management2m
+I/O devices
+Devices that perform input and output
+When you're troubleshooting or solving a problem with a slow machine, it's usually some sort of hardware resource dificiency
 310 Interacting with the OS: User Space3m
+
 311 Logs2m
 312 The Boot Process2m
 313 Mobile Operating Systems1m
