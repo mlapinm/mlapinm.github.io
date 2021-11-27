@@ -247,18 +247,53 @@ I/O devices
 Devices that perform input and output
 When you're troubleshooting or solving a problem with a slow machine, it's usually some sort of hardware resource dificiency
 310 Interacting with the OS: User Space3m
-
+Shell
+Graphical user interface
+CLI Command-line interface
+CLI shell
+GLI 
+Shell
+A program that interprets text commands and sends them to tho OS to execute
+Bash
+Bourne Again Shell
+Power Shell
 311 Logs2m
+Logs
+Files that record system events on our computer, just like a system's diary
+
 312 The Boot Process2m
+Booting
+Boot
+BIOS/UEFI
+A low-lewel software that initializes our computer's hardware to makesure everything is good to go
+Power On Self Test
+POST
+Bootloader
+A small program that loads the operating system
+
 313 Mobile Operating Systems1m
 314 Cindy Drive & Career Path1m
 315 Choosing an Operating System3m
+The operating systems in use by an organization have a lot to do with the applications and systems that they need to run
+What hardware will be used?
+As an IT Support Specialist, you'll install an aperating system nany times, so using one single disk won't be time efficient or scalable.
 316 Virtual Machines2m
+VM
+Just a copy of a real machine
+VirtualBox
+
 317 Installing Windows5m
 318 Installing Linux6m
+echo $SHELL
+/bin/bash
+echo Hello
+Hello
+touch file
+
 319 What is Chrome OS?3m
 320 Installing Mac OS X3m
 321 Tri Ngo Obstacles & How to be successful in IT1m
+
 322 Introduction to Qwiklabs1m
 323 6 readings
 324 Supplemental reading for Remote Connections in Windows10m
@@ -275,18 +310,68 @@ When you're troubleshooting or solving a problem with a slow machine, it's usual
 401 WEEK 4 Networking
 In the fourth week of this course, we'll learn about computer networking. We'll explore the history of the Internet and what "The Web" actually is. We'll also discuss topics like Internet privacy, security, and what the future of the Internet may look like. You'll also understand why the Internet has limitations even today. By the end of this module, you will know how the Internet works and recognize both the positive and negative impacts the Internet has had on the world.
 402 Module Introduction3m
+
 403 Basics of Networking7m
+The Internet
+The physical connection of computers and wires around the world
+The Web
+The information on the Internet
+Email Chat File-sharing program
+Internet Service Provider
+ISP
+Computers on a network have an identifier called an IP address
+MAC address
+When you send or receive data through a network you need to have both an IP and a MAC address
+IP address of home
+MAC name of receiver
+Packets
 404 Networking Hardware3m
+Router
+Connects lots of different devices together and helps route network traffic
+Switches
+Hubs
+Stack
+Network stack
+A set of hardware or software that provides the infrastructure for a computer
 405 Language of the Internet2m
+Routed efficiently
+Aren't corrupted
+Secure
+Right machine
+Named appropriately
+IP Internet Protocol
+TCP/IP Transmission Control Protocol
 406 The Web3m
+Web HTML
+Hypertext Markup Language
+URL
+Uniform Resouce Locator
+ICANN
+Internet Corporation for Assigned Name and Numbers
+172.217.6.46
+DNS Domain Name System
 407 Victor First Job1m
 408 History of the Internet4m
+TCP Transmission Control Protocol
+
 409 Limitations of the Internet3m
+IP version 4
+IPv6
+8*4
+16*6
 410 Changing Careers1m
+NAT Networking Address Translation
+Lets organizations use one public IP address and many private IP addresses within the network
 411 Impact3m
+Globalization
+The movement that lets governments, businesses, and organizations communicate and integrate together on an international scale
 412 Internet of Things1m
+IoT
 413 Gian What he does in Android Security1m
 414 Privacy and Security3m
+COPPA
+Children's Online Privacy Protection Act
+
 415 Heather Adkins Keeping Hackers Out2m
 416 Learner Story: Melinda40s
 417 reading
