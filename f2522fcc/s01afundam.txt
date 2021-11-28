@@ -383,15 +383,70 @@ Children's Online Privacy Protection Act
 501 WEEK 5 Software
 In the fifth week of this course, we'll learn about computer software. We'll learn about what software actually is and the different types of software you may encounter as an IT Support Specialist. We'll also explore how to manage software and revisit the concept of "abstraction." By the end of this module, you'll use the Qwiklabs environment to install, update and remove software on both Windows and Linux operating systems.
 502 Module Introduction2m
+Software
+How we, as users directly interact with our computer
+If hardware is the physical stuff that you can pick up and hold, software is the intangible instructions that tell the hardware what to do.
 503 What is Software?2m
+Coding
+Translating one language to another
+Scripting
+Coding in a scripting language
+Scripts
+Mainly used to perform a single or limited tange task
+Programming
+Coding in a programming language
+Programming languages
+Speciallanguages that software developers use to write instructions for computers to execute
 504 Types of Software3m
+Copyright
+Used when creating original work
+Open source
+Linux
+LibreOffice
+Gimp
+Firefox
+Application software
+Any software created to fulfill a specific need, like a text editor, web browser, or graphic editor.
+System software
+Software used to keep our core system running, like operating system tools and utilities
+Firmware
+Software that's permanently stored on a computer component
+
 505 Revisiting Abstraction1m
+Запускаться на любом оборудовании
 506 Recipe for Computing3m
+Grab some input data from this location in memory.
+Using the input data, do some math.
+Then put some output data into this location in memory.
+Assembly language
+Allowed computer scientists to use human readable instructions, assembled into code, that the machines could understand
+Take intger from register 1.
+Take intger from register 2.
+Add integer from regisster 1, and regester 2, and output to register 4.
+Compiled programming languages
+Uses human readable instructions, then sends them through a compiler
+The script is run by an interpreter, which interprets the code into CPU instructions just in time to run them.
+Softrware bug
 507 Phelan Navy1m
 508 Managing Software3m
+An error in software that causes unexpected results
+Software mangagement
 509 Installing, Updating, and Removing Software on Windows2m
+Git
+A version control system that helps keep track of changes made to files and directories
+.exe
+A file extension found in Windows for an executable file
+Add or remove programs
 510 Installing, Updating, and Removing Software on Linux1m
+apt-get install git
+apt install git
+sudo apt install git
+sudo apt remove git
 511 Software Automation1m
+Automation
+Makes processes work automatically
+vim net2.rb
+git log -p -2
 512 reading
 513 Supplemental Reading for Software Versioning10m
 514 practice exercises
@@ -402,10 +457,29 @@ In the fifth week of this course, we'll learn about computer software. We'll lea
 Congratulations, you've made it to the last week of the course! In the final week, we'll learn about the importance of troubleshooting and customer support. We'll go through some real-world scenarios that you might encounter at a Help Desk or Desktop Support role. We'll learn why empathizing with a user is super important when working in a tech role. Finally, we'll learn why writing documentation is an important aspect of any IT role. By the end of this module, you will utilize soft skills and write documentation to communicate with others.
 602 Module Introduction2m
 603 Ask Questions!4m
+Trobleshooting
+The ability to diagnose and resolve a problem
+Ask questions!
+Not-so-awesome scenario
+Awesome scenario
+It Support is about working in the service of others. Always try to create a positive experience fo the user.
 604 Isolating the Problem3m
+Ask questions!
+Isolating the problem.
+Root couse
+The main factor that's causing a range of issues
 605 Follow the Cookie Crumbs3m
+Error messages
+Ищем первую ошибку.
+404 - Not found
+Permission Denied
 606 Start with the Quickest Step First2m
-607 Troubleshooting Pitfalls to Avoid1m
+reinstall program
+restart computer after install program
+restart is faster
+607 Troubleshooti
+ng Pitfalls to Avoid1m
+
 608 Amir Attributes1m
 609 Intro to Soft Skills8m
 610 Anatomy of an Interaction7m
