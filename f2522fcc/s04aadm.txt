@@ -1,0 +1,191 @@
+101 Ќ≈ƒ≈Ћя 1 What is System Administration?
+Welcome to the System Administration course of the IT Support Professional Certificate! In the first week of this course, we will cover the basics of system administration. We'll cover organizational policies, IT infrastructure services, user and hardware provisioning, routine maintenance, troubleshooting, and managing potential issues. By the end of this module, you will understand the roles and responsibilities of a System Administrator. So let's get started!
+102 Course Introduction4мин
+103 What is Systems Administration?2мин
+104 Servers Revisited4мин
+105 The Cloud3мин
+106 Organizational Policies2мин
+107 IT Infrastructure Services1мин
+108 User and Hardware Provisioning4мин
+109 Routine Maintenance1мин
+110 Vendors1мин
+111 Troubleshooting and Managing Issues3мин
+112 In Case of Fire, Break Glass1мин
+113 Dion Michelle Obama Story1мин
+114 With Great Power Comes Great Responsibility3мин
+115 Never Test in Production2мин
+116 Assessing Risk2мин
+117 Fixing Things the Right Way2мин
+118 6 материалов дл¤ самосто¤тельного изучени¤
+119 Navigating Coursera10мин
+120 Program Surveys10мин
+121 How to Use Discussion Forums10мин
+122 Get to Know Your Classmates10мин
+123 Supplemental Reading on KVM switch10мин
+124 Recording Your Actions10мин
+125 3 практических упражнени¤
+126 What is System Administration?30мин
+127 Systems Administration Tasks30мин
+128 What is System Administration?1ч
+
+
+
+
+201 Ќ≈ƒ≈Ћя 2 Network and Infrastructure Services
+In the second week of this course, we'll learn about network and infrastructure services. We will cover what IT infrastructure services are and what their role is in system administration. We'll also learn about server operating systems, virtualization, network services, DNS for web services, and how to troubleshoot network services. By the end of this module, you will know the most common IT infrastructure services you'll encounter when handling system administration tasks.
+202 What are IT Infrastructure Services?56
+203 The Role of IT Infrastructure Services in SysAdmin56
+204 Types of IT Infrastructure Services6мин
+205 How do Qwiklabs Work?1мин
+206 Heather First Tech Job1мин
+207 Server Operating Systems1мин
+208 Virtualization2мин
+209 Remote Access Revisited3мин
+210 FTP, SFTP, and TFTP3мин
+211 NTP2мин
+212 Network Support Services Revisited1мин
+213 DNS1мин
+214 DNS for Web Servers2мин
+215 DNS for Internal Networks3мин
+216 DHCP2мин
+217 Unable to Resolve a Hostname or Domain Name3мин
+218 What do Services Look Like in Action2мин
+219 Managing Services in Linux4мин
+220 Managing Services in Windows3мин
+221 Configuring Services in Linux4мин
+222 Configuring Services in Windows4мин
+223 Configuring DNS with Dnsmasq6мин
+224 Configuring DHCP with Dnsmasq7мин
+225 6 материалов дл¤ самосто¤тельного изучени¤
+226 Supplemental Reading for IT Infrastructure Services10мин
+227 Supplemental Reading for Server Operating Systems10мин
+228 Supplemental Reading for Remote Access and SSH10мин
+229 Supplemental Reading for FTP Clients10мин
+230 Supplemental Reading for BIND/PowerDNS10мин
+231 Supplemental Reading for DNS and DHCP10мин
+232 7 практических упражнений
+233 Intro to IT Infrastructure Services30мин
+234 Physical Infrastructure Services30мин
+235 Network Services30мин
+236 Network Services40мин
+237 Qwiklabs: Service Management in Linux
+238 Qwiklabs: Service Management in Windows
+239 Qwiklabs: Getting familiar with DNS and DHCP
+
+
+
+301 Ќ≈ƒ≈Ћя 3 Software and Platform Services
+In the third week of this course, we'll explore software and platform services. We'll cover what types of software and platform services you may encounter in a tech role and how to manage them. We'll learn how to configure email services, security services, file services, print services, and platform services. We'll explore ways to troubleshoot platform services and common issues to look out for. By the end of this module, you'll understand how to setup and manage the IT infrastructure services to help a business stay productive, keep information secure, and deliver applications to its users.
+302 Module Introduction1мин
+303 Configuring Communication Services2мин
+304 Configuring Email Services3мин
+305 Configuring User Productivity Services2мин
+306 Configuring Security Services3мин
+307 Heather Managing Self Doubt1мин
+308 What are file services?1мин
+309 Network File Storage3мин
+310 Mobile Synchronization3мин
+311 Configuring Print Services3мин
+312 Web Servers Revisited4мин
+313 What is a database server?1мин
+314 Is the website down?4мин
+315 Cloud Concepts3мин
+316 Typical Cloud Infrastructure Setups1мин
+317 When and How to Choose Cloud2мин
+318 10 материалов дл¤ самосто¤тельного изучени¤
+319 Supplemental Reading for Chat Communication Services10мин
+320 Supplemental Reading for Email Services10мин
+321 Supplemental Reading for File Services10мин
+322 Supplemental Reading for Network File Storage10мин
+323 Supplemental Readings for Mobile Synchronization10мин
+324 Supplemental Reading for Print Services25мин
+325 Supplemental Reading for Web Servers (Revisited)10мин
+326 Supplemental Reading for Database Admin Jobs10мин
+327 Supplemental Reading for Troubleshooting with Developer Tools10мин
+328 Managing Cloud Resources10мин
+329 5 практических упражнений
+330 Software Services30мин
+331 File, Print, and Platform Services30мин
+332 Qwiklabs: Managing websites with Apache2
+333 Troubleshooting Platform Services30мин
+334 Software and Platform Services35мин
+
+
+
+
+401 Ќ≈ƒ≈Ћя 4 Directory Services
+In the fourth week of this course, we'll learn about directory services. Specifically, we'll cover how two of the most popular directory services, Active Directory and OpenLDAP, work in action. We'll explore the concept of centralized management and how this can help SysAdmins maintain and support all the different parts of an IT infrastructure. By the end of this module, you will know how to add users, passwords, and use group policies in Active Directory and OpenLDAP.
+402 Module Introduction50
+403 What is a directory server?4мин
+404 Implementing Directory Services2мин
+405 What is centralized management?4мин
+406 What is LDAP?1мин
+407 What is LDAP Authentication?3мин
+408 Heather Overcoming Obstacles1мин
+409 What is Active Directory?6мин
+410 Managing Active Directory3мин
+411 Managing Active Directory Users and Groups11мин
+412 Managing Active Directory User Passwords4мин
+413 Joining an Active Directory Domain4мин
+414 What is Group Policy?4мин
+415 Group Policy Creation and Editing13мин
+416 Group Policy Inheritance and Precedence8мин
+417 Group Policy Troubleshooting13мин
+418 Mobile Device Management (MDM)1мин
+419 What is OpenLDAP?4мин
+420 Managing OpenLDAP3мин
+421 11 материалов дл¤ самосто¤тельного изучени¤
+422 Supplemental Reading for Centralized Management10мин
+423 Supplemental Reading for LDAP10мин
+424 Supplemental Reading for Kerberos10мин
+425 Supplemental Reading for Active Directory10мин
+426 Supplemental Reading for Group Security Principles10мин
+427 Supplemental Reading for EFS Features10мин
+428 Supplemental Reading for DFL & FFL10мин
+429 Supplemental Reading for Group Policy Troubleshooting10мин
+430 Supplemental Readings for Mobile Device Management (MDM)10мин
+431 Supplemental Reading for OpenLDAP10мин
+432 Supplemental Reading for Managing OpenLDAP10мин
+433 5 практических упражнений
+434 Introduction to Directory Services30мин
+435 Qwiklabs: Using Active Directory
+436 Centralized Management and LDAP30мин
+437 Active Directory30мин
+438 Directory Services50мин
+
+
+
+
+501 Ќ≈ƒ≈Ћя 5 Data Recovery & Backups
+In the fifth week of this course, we'll learn about data recovery and backups. In any tech role, it's important to know how to backup and recover data -- it's even more important for system administration. We will also learn about common corporate practices like designing a disaster recovery plan and writing post-mortem documentation. By the end of this module, you'll know the tradeoffs between on-site and off-site backups, understand the value and importance of backup and recovery testing, know different options for data backup (as well as the risks) and understand the purpose and contents of a disaster recovery plan.
+502 What is Data Recovery?3мин
+503 Backing Up Your Data3мин
+504 Backup Solutions3мин
+505 Job transition35
+506 Testing Backups2мин
+507 Types of Backup5мин
+508 User Backups1мин
+509 What's a Disaster Recovery Plan?5мин
+510 Designing a Disaster Recovery Plan6мин
+511 What's a post-mortem?2мин
+512 Writing a Post-Mortem4мин
+513 Interview Role Play: Sys Admin2мин
+514 3 материала дл¤ самосто¤тельного изучени¤
+515 Supplemental Reading for GitLabs Data Recovery10мин
+516 Supplemental Reading for Backup Solutions10мин
+517 Supplemental Reading for RAID Levels10мин
+518 4 практических упражнени¤
+519 Planning for Data Recovery30мин
+520 Disaster Recovery Plans30мин
+521 Post-Mortems30мин
+522 Data Recovery & Backups50мин
+
+
+
+601 Ќ≈ƒ≈Ћя 6 Final Project
+Congratulations, you've made it to the final week in the course! The last week of this course is dedicated to the final project. For the final project, you will apply all the skills you've learned in this course by providing systems administration consultation. You will assess the IT infrastructure of three fictitious (but very real-life based!) companies and provide recommendations and advice about how to support their IT infrastructure. By the end of this project, you will demonstrate the skills and problem-solving techniques of a SysAdmin. Good luck!
+602 Final Project Introduction2мин
+603 Alex passion & success1мин
+604 Congratulations!12
+605 1 практическое упражнение
+606 System Administration Consultation

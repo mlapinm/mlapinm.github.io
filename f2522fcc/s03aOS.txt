@@ -1,0 +1,212 @@
+101 Week1 Navigating the System
+Welcome to the Operating Systems course of the IT Support Professional Certificate! In the first week of this course, we will cover the basics of Windows and Linux operating systems (OS). We will learn about how directories and files work in Windows and Linux OS. You will also learn practical ways to manipulate files and directories in the Windows graphical user interface (GUI), Windows command line interface (CLI), and Linux shell. By the end of this module, you will interact with files and directories and perform basic text manipulation in Windows and Linux OS.
+102 Course Introduction5мин
+103 Lesson Overview & Practice Tips2мин
+104 List Directories in a GUI5мин
+105 Windows: List Directories in CLI4мин
+106 Linux: List Directories6мин
+107 Windows: Changing Directories in the GUI1мин
+108 Windows: Changing Directories in the CLI4мин
+109 Linux: Changing Directories in Bash1мин
+110 Windows: Make Directories in the GUI & CLI2мин
+111 Linux: Make Directories in Bash1мин
+112 Windows: Command History2мин
+113 Linux: Command History47
+114 Windows: Copying Files & Directories4мин
+115 Linux: Copying Files and Directories1мин
+116 Windows: Moving and Renaming Files, Directories2мин
+117 Linux: Moving and Renaming Files, Directories1мин
+118 Windows: Removing Files & Directories3мин
+119 Linux: Removing Files & Directories1мин
+120 Cindy Why OS is Important1мин
+121 Learner Story: Chelsea3мин
+122 Windows: Display File Contents3мин
+123 Linux: Display File Contents2мин
+124 Windows: Modifying Text Files2мин
+125 Linux: Modifying Text Files1мин
+126 Windows Powershell3мин
+127 Windows: Searching within Files6мин
+128 Windows: Searching within Directories1мин
+129 Linux: Searching within Files1мин
+130 Windows: Input, Output, and the Pipeline7мин
+131 Linux: Input, Output and Pipeline3мин
+132 Windows and Linux Advanced Navigation1мин
+133 Ben First Tech Job1мин
+134 10 материалов для самостоятельного изучения
+135 Navigating Coursera10мин
+136 Program Surveys10мин
+137 How to Use Discussion Forums10мин
+138 Get to Know Your Classmates10мин
+139 Supplemental Reading for Windows CLI & Unix Bash10мин
+140 Supplemental Reading for 'Size' vs 'Size of Disk' in Windows10мин
+141 Supplemental Reading for Notepad++10мин
+142 Supplemental Reading for GNU Documentation10мин
+143 Supplemental Reading for Windows PowerShell10мин
+144 Instructions for Accessing Linux and Windows Qwiklabs10мин
+145 3 практических упражнения
+146 Basic Commands30мин
+147 File and Text Manipulation30мин
+148 Accessing Qwiklabs16мин
+
+
+
+201 Week2 Users and Permissions
+In the second week of this course, we'll learn about configuring users and permissions in Windows and Linux OS. As an IT Support Specialist, it's important to know how to grant the appropriate permissions to users and groups for both Windows and Linux OS. By the end of this module, you will know how to add, modify, and remove users for a computer and for specific files and folders by using the Windows GUI, Windows CLI, and Linux shell.
+202 Users, Administrators, and Groups, Oh My!3мин
+203 Windows: View User and Group Information6мин
+204 Windows: View User and Group Information using CLI2мин
+205 Linux: Users, Superuser and Beyond4мин
+206 Windows: Passwords4мин
+207 Linux: Passwords1мин
+208 Windows: Adding and Removing Users5мин
+209 Linux: Adding and Removing Users50
+210 Mobile Users and Accounts3мин
+211 Ben Life as a CIO1мин
+212 Windows: File Permissions5мин
+213 Linux: File Permissions2мин
+214 Windows: Modifying Permissions7мин
+215 Linux: Modifying Permissions4мин
+216 Windows: Special Permissions4мин
+217 Linux: SetUID, SetGID, Sticky Bit5мин
+218 4 материала для самостоятельного изучения
+219 Supplemental Reading for Windows Passwords10мин
+220 Supplemental Readings for Mobile Users and Accounts10мин
+221 Supplemental Reading for Windows ACL10мин
+222 Supplemental Reading for Special Permissions in Windows10мин
+223 1 практическое упражнение
+224 Permissions30мин
+
+
+301 Week3 Package and Software Management
+In the third week of this course, we'll learn about package and software management in Windows and Linux OS. It's important to know how package installs work and how devices and drivers are managed within these operating systems. We will also learn about different packaging and file compression methods. By the end of this module, you will know how to create, update, and remove software by using the Windows GUI, Windows CLI and Linux shell.
+302 Module Introduction43
+303 Windows: Software Packages6мин
+304 Linux: Software Packages3мин
+305 Mobile App Packages3мин
+306 Windows: Archives3мин
+307 Linux: Archives1мин
+308 Windows: Package Dependencies7мин
+309 Linux: Package Dependencies1мин
+310 Windows: Package Manager4мин
+311 Linux: Package Manager Apt5мин
+312 Windows: Underneath the Hood3мин
+313 Linux: Underneath the Hood1мин
+314 Windows: Devices and Drivers3мин
+315 Linux: Devices and Drivers4мин
+316 Window: Operating System Updates4мин
+317 Linux: Operating System Updates2мин
+318 14 материалов для самостоятельного изучения
+319 Supplemental Reading for Windows Software Packages10мин
+320 Supplemental Reading for Mobile App Packages10мин
+321 Supplemental Reading for 7-Zip and PowerShell Zips10мин
+322 Supplemental Reading for the Linux Tar Command10мин
+323 Supplemental reading for Windows Package Dependencies10мин
+324 Supplemental Reading for Linux Package Dependencies10мин
+325 Supplemental Reading for Windows Package Managers10мин
+326 Supplemental Reading for Linux PPAs10мин
+327 Supplemental Reading on GIMP10мин
+328 Supplemental Reading for Windows Installers and Process Monitors10мин
+329 Supplemental Reading Windows Devices and Drivers10мин
+330 Supplemental reading for Linux Devices and Drivers10мин
+331 Supplemental Reading for Windows Update10мин
+332 Supplemental Reading for Linux Update10мин
+333 4 практических упражнения
+334 Software Distribution30мин
+335 Package Managers30мин
+336 What’s happening in the background?30мин
+337 Device Software Management30мин
+
+
+401 Week4 Filesystems
+In the fourth week of this course, we'll learn about how filesystems work for Windows and Linux OS. We'll learn about filesystem types and why they're different for certain OS. We'll learn about disk partitioning and virtual memory and why these are so important for an IT Support Specialist's role. We'll also cover ways mount and unmount filesystems, read disk usage, and repair filesystems. By the end of this module, you will partition and format a disk drive yourself in both Windows and Linux.
+402 Module Introduction49
+403 Review of Filesystems2мин
+404 Disk Anatomy3мин
+405 Windows: Disk Partitioning and Formatting a Filesystem6мин
+406 Windows: Mounting and Unmounting a Filesystem51
+407 Linux: Disk Partitioning and Formatting a Filesystem6мин
+408 Linux: Mounting and Unmounting a Filesystem3мин
+409 Windows: Swap3мин
+410 Linux: Swap2мин
+411 Windows: Files6мин
+412 Linux: Files2мин
+413 Windows: Disk Usage3мин
+414 Linux: Disk Usage1мин
+415 Windows: Filesystem Repair4мин
+416 Linux: Filesystem Repair1мин
+417 Ben Passion1мин
+418 9 материалов для самостоятельного изучения
+419 Supplemental Reading for FAT32 File System10мин
+420 Supplemental Reading for Disk Partitioning and Formatting in Windows10мин
+421 Supplemental reading Mounting and Unmounting a Filesystem in Linux10мин
+422 Supplemental Reading for Windows Paging10мин
+423 Supplemental Reading for Linux Swap10мин
+424 Supplemental Reading on NTFS File System10мин
+425 Supplemental Reading for Windows Disk Usage10мин
+426 Supplemental reading for Linux Disk Usage10мин
+427 Supplemental Reading for Linux Filesystem Repair10мин
+428 1 практическое упражнение
+429 Filesystem Types30мин
+
+
+
+501 Week5 Process Management
+In the fifth week of this course, we'll explore process management. As an IT Support Specialist, it is important to use system tools to read and understand process statuses of machines. We will cover ways to start and terminate a process in Windows and Linux. We will also apply troubleshooting tools to solve problems with processes and resources. By the end of this module, you will use Windows and Linux commands to do practical process maintenance.
+502 Module Introduction1мин
+503 Programs vs Processes Revisited2мин
+504 Windows: Process Creation and Termination3мин
+505 Linux: Process Creation and Termination1мин
+506 Jess Passions1мин
+507 Windows: Reading Process Information3мин
+508 Linux: Reading Process Information4мин
+509 Windows: Signals1мин
+510 Linux: Signals1мин
+511 Windows: Managing Processes5мин
+512 Linux: Managing Processes4мин
+513 Mobile App Management4мин
+514 Windows: Resource Monitoring4мин
+515 Linux: Resource Monitoring3мин
+516 8 материалов для самостоятельного изучения
+517 Supplemental Reading for Process Creation and Termination in Windows10мин
+518 Supplemental Reading for Reading Process Information in Windows10мин
+519 Supplemental Reading for Reading Process Information in Linux10мин
+520 Supplemental Reading for Windows Signal10мин
+521 Supplemental Reading for Managing Processes in Windows10мин
+522 Supplemental Readings for Mobile App Management10мин
+523 Supplemental Reading Resource Monitoring in Windows10мин
+524 Supplemental reading for Resource Monitoring in Linux10мин
+525 3 практических упражнения
+526 Life of a Process30мин
+527 Managing Processes30мин
+528 Process Utilization30мин
+
+
+
+601 Week6 Operating Systems in Practice
+Congratulations, you've made it to the final week in the course! In the last week of this course, we will cover some of the practical aspects of operating systems that you'll use all the time in IT Support. We will cover remote access and how to troubleshoot a computer from afar. We'll explore virtualization tools to manage and remove virtual instances, use logs for system monitoring, and show you a few different techniques for OS deployment. By the end of this module, you will apply all the skills from this course to debug some issues within Windows and Linux OS. Good luck!
+602 Remote Connection and SSH5мин
+603 Remote Connections on Windows4мин
+604 Remote Connection File Transfer1мин
+605 Remote Connection File Transfer on Windows3мин
+606 Virtual Machines4мин
+607 System Monitoring1мин
+608 The Windows Event Viewer4мин
+609 Linux Logs4мин
+610 Working with Logs4мин
+611 Imaging Software56
+612 Operating Systems Deployment Methods4мин
+613 Mobile Device Resetting and Imaging2мин
+614 Interview Role Play: Operating Systems5мин
+615 Course Wrap Up1мин
+616 Heather Early Career Advice1мин
+617 Congratulations!7
+618 6 материалов для самостоятельного изучения
+619 Supplemental reading for Remote Connections in Windows10мин
+620 Supplemental Reading for Remote Connection File Transfer in Windows10мин
+621 Supplemental reading for Virtual Machines10мин
+622 Supplemental Reading for Linux Logs10мин
+623 Supplemental Reading for OS Deployment Methods10мин
+624 Supplemental Readings for Mobile Device Resetting and Imaging10мин
+625 2 практических упражнения
+626 Remote Access30мин
+627 Logging30мин

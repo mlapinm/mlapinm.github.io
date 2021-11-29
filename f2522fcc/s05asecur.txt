@@ -1,0 +1,178 @@
+101 Week 1 Understanding Security Threats
+Welcome to the IT Security course of the IT Support Professional Certificate! In the first week of this course, we will cover the basics of security in an IT environment. We will learn how to define and recognize security risks, vulnerabilities and threats. We'll identify the most common security attacks in an organization and understand how security revolves around the "CIA" principle. By the end of this module, you will know the types of malicious software, network attacks, client-side attacks, and the essential security terms you'll see in the workplace.
+102 Course Introduction5мин
+103 The CIA Triad2мин
+104 Essential Security Terms4мин
+105 Malicious Software5мин
+106 Malware Continued2мин
+107 Network Attacks3мин
+108 Denial-of-Service3мин
+109 Client-Side Attacks2мин
+110 Password Attacks2мин
+111 Deceptive Attacks3мин
+112 7 материалов дл¤ самосто¤тельного изучени¤
+113 Navigating Coursera10мин
+114 Program Surveys10мин
+115 How to Use Discussion Forums10мин
+116 Get to Know Your Classmates10мин
+117 Supplemental Reading for Malicious Software10мин
+118 Supplemental Reading for Network Attacks10мин
+119 Supplemental Reading for DDoS Attacks10мин
+120 4 практических упражнени¤
+121 Malicious Software30мин
+122 Network Attacks30мин
+123 Other Attacks30мин
+124 Understanding Security Threats1ч 5мин
+
+
+201 Ќ≈ƒ≈Ћя 2 Pelcgbybtl (Cryptology)
+In the second week of this course, we'll learn about cryptology. We'll explore different types of encryption practices and how they work. We'll show you the most common algorithms used in cryptography and how they've evolved over time. By the end of this module, you'll understand how symmetric encryption, asymmetric encryption, and hashing work; you'll also know how to choose the most appropriate cryptographic method for a scenario you may see in the workplace.
+202 Cryptography7мин
+203 Symmetric Cryptography5мин
+204 Symmetric Encryption Algorithms9мин
+205 Rob What a Security Engineer Does1мин
+206 Asymmetric Cryptography7мин
+207 Asymmetric Encryption Algorithms5мин
+208 Hashing3мин
+209 Hashing Algorithms5мин
+210 Hashing Algorithms (continued)5мин
+211 Public Key Infrastructure9мин
+212 Cryptography in Action8мин
+213 Securing Network Traffic6мин
+214 Cryptographic Hardware6мин
+215 Rejection36
+216 9 материалов дл¤ самосто¤тельного изучени¤
+217 Supplemental Reading for The Future of Cryptanalysis10мин
+218 Supplemental Reading for Symmetric Encryptions10мин
+219 Supplemental Reading for Asymmetric Encryption Attack10мин
+220 Supplemental Reading for SHA1 Attacks10мин
+221 Supplemental Reading for the X.509 Standard10мин
+222 Supplemental Reading for PGP10мин
+223 Supplemental Reading for Securing Network Traffic10мин
+224 Supplemental Reading for TPM Attacks10мин
+225 Instructions for Accessing Linux and Windows Qwiklabs10мин
+226 5 практических упражнений
+227 Symmetric Encryption30мин
+228 Public Key or Asymmetric Encryption30мин
+229 Hashing30мин
+230 Cryptography Applications30мин
+231 Week Two Practice Quiz30мин
+
+
+
+301 Ќ≈ƒ≈Ћя 3 AAA Security (Not Roadside Assistance)
+In the third week of this course, we'll learn about the "three A's" in cybersecurity. No matter what type of tech role you're in, it's important to understand how authentication, authorization, and accounting work within an organization. By the end of this module, you'll be able to choose the most appropriate method of authentication, authorization, and level of access granted for users in an organization.
+302 Authentication Best Practices6мин
+303 Multifactor Authentication12мин
+304 Certificates3мин
+305 LDAP3мин
+306 RADIUS1мин
+307 Kerberos7мин
+308 TACACS+1мин
+309 Single Sign-On3мин
+310 Rob Path to IT1мин
+311 Authorization and Access Control Methods1мин
+312 Access Control5мин
+313 Access Control List1мин
+314 Tracking Usage and Access3мин
+315 Rob Important Skills in Security1мин
+316 2 материала дл¤ самосто¤тельного изучени¤
+317 Supplemental Reading for Authentication10мин
+318 Supplemental Reading for Authorization10мин
+319 3 практических упражнени¤
+320 Authentication30мин
+321 Authorization and Accounting30мин
+322 AAA Security (Not Roadside Assistance)55мин
+
+
+
+
+401 Ќ≈ƒ≈Ћя 4 Securing Your Networks
+In the fourth week of this course, we'll learn about secure network architecture. It's important to know how to implement security measures on a network environment, so we'll show you some of the best practices to protect an organization's network. We'll learn about some of the risks of wireless networks and how to mitigate them. We'll also cover ways to monitor network traffic and read packet captures. By the end of this module, you'll understand how VPNs, proxies and reverse proxies work; why 802.1X is a super important for network protection; understand why WPA/WPA2 is better than WEP; and know how to use tcpdump to capture and analyze packets on a network. That's a lot of information, but well worth it for an IT Support Specialist to understand!
+402 Network Hardening Best Practices8мин
+403 Network Hardware Hardening9мин
+404 Network Software Hardening5мин
+405 Joe Personal Obstacle44
+406 WEP Encryption and Why You Shouldn't Use It8мин
+407 Let's Get Rid of WEP! WPA/WPA214мин
+408 Wireless Hardening3мин
+409 Heather Social Engineering1мин
+410 Sniffing the Network5мин
+411 Wireshark and tcpdump6мин
+412 Intrusion Detection/Prevention Systems6мин
+413 7 материалов дл¤ самосто¤тельного изучени¤
+414 Supplemental Reading for Network Hardening Best Practices10мин
+415 Supplemental Reading on IEEE 802.1X10мин
+416 Supplementary reading on HAProxy, nginx and Apache HTTP server10мин
+417 Supplementary reading for WEP Encryption and Why You Shouldn't Use It10мин
+418 Supplementary reading on WiFi Protected Setup (WPS) PIN brute force vulnerability10мин
+419 Supplemental Reading for Promiscuous Mode10мин
+420 Supplemental reading for Intrusion Detection/Prevention System10мин
+421 4 практических упражнени¤
+422 Secure Network Architecture30мин
+423 Wireless Security30мин
+424 Network Monitoring30мин
+425 Week Four Practice Quiz30мин
+
+
+
+
+501 Ќ≈ƒ≈Ћя 5 Defense in Depth
+In the fifth week of this course, we're going to go more in-depth into security defense. We'll cover ways to implement methods for system hardening, application hardening, and determine the policies for OS security. By the end of this module, you'll know why it's important to disable unnecessary components of a system, learn about host-based firewalls, setup anti-malware protection, implement disk encryption, and configure software patch management and application policies.
+502 Intro to Defense in Depth1мин
+503 Disabling Unnecessary Components4мин
+504 Host-Based Firewall4мин
+505 Logging and Auditing7мин
+506 Antimalware Protection7мин
+507 Disk Encryption6мин
+508 Heather Self Learning1мин
+509 Software Patch Management6мин
+510 Application Policies4мин
+511 3 материала дл¤ самосто¤тельного изучени¤
+512 Supplemental Reading for Logging and Auditing10мин
+513 Supplemental Readings for Antimalware Protection10мин
+514 Supplemental Reading for Disk Ecryption10мин
+515 3 практических упражнени¤
+516 System Hardening30мин
+517 Application Hardening30мин
+518 Defense in Depth40мин
+
+
+
+
+
+601 Ќ≈ƒ≈Ћя 6 Creating a Company Culture for Security
+Congratulations, you've made it to the final week in the course! In the last week of this course, we'll explore ways to create a company culture for security. It's important for any tech role to determine appropriate measures to meet the three goals of security. By the end of this module, you will develop a security plan for an organization to demonstrate the skills you've learned in this course. You're almost done, keep up the great work!
+602 Security Goals7мин
+603 Measuring and Assessing Risk5мин
+604 Privacy Policy3мин
+605 User Habits6мин
+606 Third-Party Security4мин
+607 Security Training3мин
+608 Alex Grit Story1мин
+609 Incident Reporting and Analysis6мин
+610 Incident Response and Recovery6мин
+611 Mobile Security and Privacy3мин
+612 Amir Interview1мин
+613 Ari Interview1мин
+614 Interview Role Play: Security4мин
+615 Final Assessment32
+616 Framing yourself1мин
+617 Congratulations!51
+618 9 материалов дл¤ самосто¤тельного изучени¤
+619 Supplemental Reading for Risk in the Workplace10мин
+620 Supplemental Reading for User Habits10мин
+621 Supplemental Reading for Vendor Security Assessment Questionnaires10мин
+622 Supplemental Readings for Mobile Security and Privacy10мин
+623 Invitation to Sign Up for Big Interview10мин
+624 Final Project - Sample Submission10мин
+625 How to Add Google IT Support Certificate to Your Resume and LinkedIn Profile10мин
+626 Common Job Search Terms10мин
+627 Information and FAQs about badges10мин
+628 6 практических упражнений
+629 Risk in the Workplace30мин
+630 Users30мин
+631 Incident Handling30мин
+632 Creating a Company Culture for Security55мин
+633 Creating a Company Culture for Security - Design Document30мин
+634 Your Access to Google Job Search Resources5мин

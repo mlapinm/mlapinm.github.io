@@ -1,0 +1,189 @@
+101 Week1 Introduction to Networking
+Welcome to the Networking course of the IT Support Professional Certificate! In the first week of this course, we will cover the basics of computer networking. We will learn about the TCP/IP and OSI networking models and how the network layers work together. We'll also cover the basics of networking devices such as cables, hubs and switches, routers, servers and clients. We'll also explore the physical layer and data link layer of our networking model in more detail. By the end of this module, you will know how all the different layers of the network model fit together to create a network.
+102 Course Introduction5мин
+103 The TCP/IP Five-Layer Network Model5мин
+104 Alex Why Networking1мин
+105 Cables4мин
+106 Hubs and Switches2мин
+107 Routers2мин
+108 Servers and Clients1мин
+109 Sergio Being A Network Engineer1мин
+110 Moving Bits Across the Wire2мин
+111 Twisted Pair Cabling and Duplexing1мин
+112 Network Ports and Patch Panels2мин
+113 Ethernet and MAC Addresses6мин
+114 Unicast, Multicast, and Broadcast1мин
+115 Dissecting an Ethernet Frame5мин
+116 Victor Escobedo: Practical Experience in IT1мин
+117 8 материалов для самостоятельного изучения
+118 Navigating Coursera10мин
+119 Program Surveys10мин
+120 How to Use Discussion Forums10мин
+121 Get to Know Your Classmates10мин
+122 Earn a dual Google/CompTIA A+ credential3мин
+123 Supplementary Reading for The OSI Networking Model10мин
+124 Supplemental Reading for Ethernet Over Twisted Pair Technologies10мин
+125 Graded Plugin10мин
+126 6 практических упражнений
+127 TCP/IP30мин
+128 Networking Devices30мин
+129 The Physical Layer30мин
+130 The Data Link Layer30мин
+131 Layers in Networking Models30мин
+132 Networking Basics1ч 20мин
+
+
+
+201 Week2 The Network Layer
+In the second week of this course, we'll explore the network layer in more depth. We'll learn about the IP addressing scheme and how subnetting works. We'll explore how encapsulation works and how protocols such as ARP allow different layers of the network to communicate. We'll also cover the basics of routing, routing protocols, and how the Internet works. By the end of this module, you'll be able to describe the IP addressing scheme, understand how subnetting works, perform binary math to describe subnets, and understand how the Internet works.
+202 Introduction to The Network Layer1мин
+203 The Network Layer1мин
+204 IP Addresses2мин
+205 IP Datagrams and Encapsulation6мин
+206 IP Address Classes3мин
+207 Address Resolution Protocol2мин
+208 Sergio Path1мин
+209 Subnetting2мин
+210 Subnet Masks7мин
+211 Basic Binary Math6мин
+212 CIDR4мин
+213 Motivation1мин
+214 Basic Routing Concepts8мин
+215 Routing Tables3мин
+216 Interior Gateway Protocols5мин
+217 Exterior Gateway Protocols3мин
+218 Non-Routable Address Space3мин
+219 Alex Good Story1мин
+220 3 материала для самостоятельного изучения
+221 Supplemental Reading for Routing Protocol Examples10мин
+222 Supplemental Reading for RFCs and Standards10мин
+223 Graded Plugin10мин
+224 5 практических упражнений
+225 The Network Layer30мин
+226 Subnetting30мин
+227 Routing30мин
+228 Routing Paths and Subnets30мин
+229 The Network Layer1ч 15мин
+
+
+
+301 Week3 The Transport and Application Layers
+In the third week of this course, we'll explore the transport and application layers. By the end of this module, you'll be able to describe TCP ports and sockets, identify the different components of a TCP header, show the difference between connection-oriented and connectionless protocols, and explain how TCP is used to ensure data integrity.
+302 Introduction to the Transport and Application Layers1мин
+303 The Transport Layer3мин
+304 Dissection of a TCP Segment5мин
+305 TCP Control Flags and the Three-way Handshake5мин
+306 TCP Socket States3мин
+307 Connection-oriented and Connectionless Protocols4мин
+308 Firewalls2мин
+309 The Application Layer3мин
+310 The Application Layer and the OSI Model2мин
+311 All the Layers Working in Unison11мин
+312 Learner Story: Daniel1мин
+313 1 материал для самостоятельного изучения
+314 Supplemental Reading for System Ports versus Ephemeral Ports10мин
+315 4 практических упражнения
+316 The Transport Layer30мин
+317 The Application Layer30мин
+318 The Transport and Application Layer1ч 10мин
+319 The Five-Layer Network Model2ч
+
+
+
+401 Week4 Networking Services
+In the fourth week of this course, we'll explore networking services. We'll learn about why we need DNS and how it works. We'll also show you why DHCP makes network administration a simpler task. By the end of this module, you'll be able to do describe how DNS and DHCP work, how NAT technologies help keep networks secure, and how VPNs and proxies help users connect and stay secured.
+402 Introduction to Network Services1мин
+403 Why do we need DNS?4мин
+404 The Many Steps of Name Resolution8мин
+405 DNS and UDP6мин
+406 Sergio IT Great Field1мин
+407 Resource Record Types8мин
+408 Anatomy of a Domain Name3мин
+409 DNS Zones4мин
+410 Overview of DHCP4мин
+411 DHCP in Action5мин
+412 Basics of NAT4мин
+413 NAT and the Transport Layer4мин
+414 NAT, Non-Routable Address Space and the Limits of IPv43мин
+415 Virtual Private Networks4мин
+416 Proxy Services4мин
+417 2 материала для самостоятельного изучения
+418 Supplemental Reading forIPv4 Address Exhaustion10мин
+419 Graded Plugin10мин
+420 7 практических упражнений
+421 Name Resolution30мин
+422 Name Resolution in Practice30мин
+423 Dynamic Host Configuration Protocol30мин
+424 Network Address Translation30мин
+425 VPNs & Proxies30мин
+426 Networking Services Simulation30мин
+427 Networking Services1ч 20мин
+
+
+
+
+501 Week5 Connecting to the Internet
+In the fifth week of this course, we'll explore the history of the Internet, how it evolved, and how it works today. We'll understand the different ways to connect to the Internet through cables, wireless and cellar connections, and even fiber connections. By the end of this module, you'll be able to define the components of WANs and outline the basics of wireless and cellular networking.
+502 Introduction to Connecting to the Internet1мин
+503 Dial-up, Modems and Point-to-Point Protocols4мин
+504 What is broadband?3мин
+505 T-Carrier Technologies2мин
+506 Digital Subscriber Lines3мин
+507 Cable Broadband4мин
+508 Fiber Connections2мин
+509 Wide Area Network Technologies3мин
+510 Point-to-Point VPNs2мин
+511 Introduction to Wireless Networking Technologies5мин
+512 Wireless Network Configurations2мин
+513 Wireless Channels4мин
+514 Wireless Security2мин
+515 Cellular Networking1мин
+516 Mobile Device Networks4мин
+517 5 материалов для самостоятельного изучения
+518 Supplemental Reading for Broadband Protocols10мин
+519 Supplemental Reading for WAN Protocols10мин
+520 Supplemental Reading for Alphabet Soup10мин
+521 Supplemental Readings for Mobile Device Networks10мин
+522 Graded Plugin10мин
+523 6 практических упражнений
+524 POTS and Dial-up30мин
+525 Broadband Internet30мин
+526 WANs30мин
+527 Wireless Networking30мин
+528 Wireless Channels30мин
+529 Connecting to the Internet1ч 20мин
+
+
+
+601 Week6 Troubleshooting and the Future of Networking
+Congratulations, you've made it to the final week in the course! In the last week of this course, we'll explore the future of computer networking. We'll also cover the practical aspects of troubleshooting a network using popular operating systems. By the end of this module, you'll be able to detect and fix a lot of common network connectivity problems using tools available in Microsoft Windows, MacOS, and Linux operating systems.
+602 Introduction to Troubleshooting and the Future of Networking1мин
+603 Ping: Internet Control Message Protocol5мин
+604 Traceroute2мин
+605 Testing Port Connectivity2мин
+606 Name Resolution Tools2мин
+607 Public DNS Servers3мин
+608 DNS Registration and Expiration2мин
+609 Hosts Files3мин
+610 What is The Cloud?6мин
+611 Everything as a Service3мин
+612 Cloud Storage2мин
+613 IPv6 Addressing and Subnetting7мин
+614 IPv6 Headers2мин
+615 IPv6 and IPv4 Harmony3мин
+616 Interview Role Play: Networking4мин
+617 Course Wrap Up1мин
+618 Alex Career Path1мин
+619 Congratulations!13
+620 3 материала для самостоятельного изучения
+621 Supplemental Reading for Testing Port Connectivity10мин
+622 Supplemental Reading for IPv6 and IPv4 Harmony10мин
+623 Graded Plugin10мин
+624 6 практических упражнений
+625 Verifying Connectivity30мин
+626 Digging into DNS30мин
+627 The Cloud30мин
+628 IPv630мин
+629 IPv6 Compression30мин
+630 Troubleshooting and the Future of Networking1ч 20мин
+
