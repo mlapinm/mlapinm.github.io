@@ -471,22 +471,76 @@ The main factor that's causing a range of issues
 605 Follow the Cookie Crumbs3m
 Error messages
 Ищем первую ошибку.
-404 - Not found
+e 404 - Not found
 Permission Denied
 606 Start with the Quickest Step First2m
 reinstall program
 restart computer after install program
 restart is faster
-607 Troubleshooti
-ng Pitfalls to Avoid1m
-
+607 Troubleshooting Pitfalls to Avoid1m
+Pitfall #1
+Going into autopilot
+Pitfall #2
+Not finding tho root cause
 608 Amir Attributes1m
 609 Intro to Soft Skills8m
+In IT support, you work with users to fix technology and improve how people use it. To accomplish this, you need to develope a trust between you and the user.
+Exhibiting empathy
+Being conscious of your tone
+Acknowledhing the person
+Developing trust
+The action you take by looking at it from their perspective is what ampathy is all about
+Computer Problems?
+Turn your computer off and on again, and it will start working.
+Please try your computer off and back on again. This should update the change we made and fix the problem. If that doesn't work, just let me know.
+Empathy and acknowledgement are a big part of building trust. Without these, you'll find it difficult to connect with the user.
+Be honest with the user, even if you think they won't be happy about it.
 610 Anatomy of an Interaction7m
+How to say "Hello"
+Just be professional, acknowledhe the user, and show them some respect.
+Что не так.
+Грустно слышать давай посмотрим что мы можем сделать.
+Responding to user's question
+Hi Rhori, how are you today?
+What can I help you with?
+Hi Rhori, I hope you're having a good day, despite your computer randomly turning off. Let's see what we can do to fix your issue.
+To really build a rapport, try to remember a personal fact they've mentioned and bring it up later.
+Just make sure you clarify the person's issue before you start to troubleshoot.
+If you're supporting a user remotely and need them to run some commands, don't forget to tell them why you need them to execute the commands.
+The last five minutes of the interaction will set the tone for how the user feels walking away from the interaction. So, make sure to end on a positive note.
 611 How to Deal with Difficult Situations10m
+Once you've identified this "reboot" action, write it down!
+It's important to try and identify why this is happening.
+Be patient!
+6111 IT Technical Support Customer Service - Amir Soft Skills
 612 Ticketing Systems and Documenting Your Work2m
+Document the work you do.
+Tickets
+A common way of documenting an issue
+Bugs
+Issues with the system that weren't caused by an external source
+Bugzilla
+JIRA
+Redmine
+a1) It keeps the user in the loop.
+a2) It helps you audit your steps in case you need to go back and see what you did.
+Write down procedures and policies to create a documentatin trail.
+Systems and processes are constantly changing, and so should your documentation.
 613 Process Documentation1m
+Problem:
+WidgetMaker software version 4.2.1 incompatible with FuzzyMaker software version 1.3.4.
+WidgetMaker pushed out an update to their software in July 2017 and it contains a new feature that breaks compatibility with the latest FuzzyMaker software wersion 1.3.4. Don't install WidgetMaker wersion 4.2.1 or higher. T go back to an older version, take the following steps:
+In Windows10:
+a1. In "Add or Remove Programs", uninstall WidgetMaker version 4.2.1
+a2. Get WidgetMaker version 4.1.00 from their website at www.widgetmaker.com/software/v/4.1.0.
+a3. Install the software, then restart the computer.
 614 Documenting in Ticketing Systems1m
+User entry: Hi, I have an issue with my computer, can someone help me?
+IT Support Specialist entry:
+Customer had error message when installing Magic Software version 8.0. The message said: "Unable to install software, please make sure you're using the latest version of the FuuzzyVaker software." Issue was caused because Magic Software version 8.0 requires the latest version of FuzzyVaker software, so I downloaded and installed the latest version from their website: www.fuzzymaker.com/software/version-latest.
+в чем проблема
+что вызвало
+как устранилась
 615 Your Opportunity for Success1m
 616 Standing Out from the Crowd3m
 617 Getting Ready for the Interview2m
@@ -494,7 +548,11 @@ ng Pitfalls to Avoid1m
 619 Showing Your Best Self During the Interview1m
 620 Interview Role Play: Customer Service3m
 621 Course Wrap Up2m
+To be great at customer service, sometimes you need to take a moment to pause, reflect, and listen.
 622 Sabrina No Degree1m
+Engineering Director, Site Reliability
+You need to be interested in learning.
+
 623 Congratulations!12s
 624 readings
 625 Crafting Your Resume10m
@@ -504,7 +562,16 @@ ng Pitfalls to Avoid1m
 629 Ungraded Plugin: Customer Service30m
 630 Customer Service30m
 631 Writing Effective Documentation30m
-
+701 Networking - Course Introduction
+Protocol
+a defined set of standards that computers must follow in order to communicate properly
+Computer networking
+the name we've given to the full scope of how computers communicate with each other
+Application	HTTP				Messages	
+Transport	TCP/UDP				Segment		Port
+Network		IP					Datagram	IP address
+Data Link	Ethernet/WiFi		Frames		MAC Address
+Physical	10 Base T, 802.11	Bits		
 
 
 
