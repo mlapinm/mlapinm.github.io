@@ -564,14 +564,6 @@ You need to be interested in learning.
 631 Writing Effective Documentation30m
 701 Networking - Course Introduction
 Protocol
-a defined set of standards that computers must follow in order to communicate properly
-Computer networking
-the name we've given to the full scope of how computers communicate with each other
-Application	HTTP				Messages	
-Transport	TCP/UDP				Segment		Port
-Network		IP					Datagram	IP address
-Data Link	Ethernet/WiFi		Frames		MAC Address
-Physical	10 Base T, 802.11	Bits		
 
 
 

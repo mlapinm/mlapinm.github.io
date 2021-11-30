@@ -1,14 +1,58 @@
 101 Week1 Introduction to Networking
 Welcome to the Networking course of the IT Support Professional Certificate! In the first week of this course, we will cover the basics of computer networking. We will learn about the TCP/IP and OSI networking models and how the network layers work together. We'll also cover the basics of networking devices such as cables, hubs and switches, routers, servers and clients. We'll also explore the physical layer and data link layer of our networking model in more detail. By the end of this module, you will know how all the different layers of the network model fit together to create a network.
 102 Course Introduction5мин
+a defined set of standards that computers must follow in order to communicate properly
+Computer networking
+the name we've given to the full scope of how computers communicate with each other
+Application	HTTP				Messages	
+Transport	TCP/UDP				Segment		Port
+Network		IP					Datagram	IP address
+Data Link	Ethernet/WiFi		Frames		MAC Address
+Physical	10 Base T, 802.11	Bits		
 103 The TCP/IP Five-Layer Network Model5мин
+Physical layer
+Represents the physecal devices that interconnect computers
+Data link layer
+Responsible for difining a common way of interpretion these signals so network devices can communicate
+The Ethernet standards also devine a protocol responsible for getting data to nodes on the same network or link.
+Network layer
+Allows different networks to communicate with each other through devices known as routers
+Internetwork
+A collection of networks connected together through routers, the most famous of these being the Internet
+IP is the heart of the Internet and most smaller networks around the world.
+Transport layer
+Sorts out which client and server programs are supposed to get that data
 104 Alex Why Networking1мин
 105 Cables4мин
+Cables
+Connect different devices to each other, allowing data to be transmitted over them
+Coper
+Fiber
+The most common forms of copper twisted-pair cables used in networking are Cat5, Cat5e, and Cat6 cables.
+Crosstalk
+When an electrical pulse on one wire is accidentally detected on another wire
 106 Hubs and Switches2мин
+Hub
+A physical layer device that allows for connections from many computers at once
+Collision domain
+A network segent where only one device can communicate at a time
+If multiple systems try sending data at the same time, the electrical pulses sent across the cable can interfer with each other.
+Network switch
+Hubs and switches
+The primary devices used to connect computers on a single network, usually refferred to as a LAN, or local area netork
 107 Routers2мин
+Router
+A device that knows how to forward data between independent netowrks
+Border Gateway Protocol (BGP)
+Routers share data with each other via this protoco, which lets them learn about tho most optimal paths to forward traffic.
 108 Servers and Clients1мин
+
 109 Sergio Being A Network Engineer1мин
+snapchat, google search
 110 Moving Bits Across the Wire2мин
+Bits
+Modulation
+A way of varying the voltage of this charge moving across the cable
 111 Twisted Pair Cabling and Duplexing1мин
 112 Network Ports and Patch Panels2мин
 113 Ethernet and MAC Addresses6мин
