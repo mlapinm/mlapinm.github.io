@@ -54,10 +54,75 @@ Bits
 Modulation
 A way of varying the voltage of this charge moving across the cable
 111 Twisted Pair Cabling and Duplexing1мин
+Duplex communication
+The concept that information can flow in both directions across the cable
+Simplex communication
+This process is unidirectional
 112 Network Ports and Patch Panels2мин
+RJ45 port
+RJ45 plug
+Network ports are generally directly attached to the devices that make up a computer network
+Link LED
+Activity LED
 113 Ethernet and MAC Addresses6мин
+CSMA/CD
+Used to determine when the communications channels are clear, and when a device is free to transmit data
+MAC address
+A globally unique identifier attached to an individual network interface
+It's a 48-bit number normally represented by six groupings of two hexadecimal numbers.
+Hexadecimal
+A way to represent numbers using 16 digits
+Octet
+In computer networking, any number that can be represented by 8 bit
+Organizationally Unique Identifier (OUI)
+The first three octets of a MAC address
+Vendor Assigned (NIC Cards, Interfaces)
+Ethernet uses MAC Addresses to ensure that the data it sends has both an address for the machine that sent the transmission, as well as the one the transmission was intended for.
 114 Unicast, Multicast, and Broadcast1мин
+https://www.coursera.org/lecture/computer-networking/unicast-multicast-and-broadcast-OpIS6
+A unicast transmission is always meant for just one receiving address.
+If the least significnt bit in the first octet of a destination address is set to zero, it means that ethernet frame is intended for only the destination address.
+If the least sihnificant bit in the first octet of a destination address is set to one, it means yu're dealing with a multicast frame.
+Broadcast all FFFF
+ARP
 115 Dissecting an Ethernet Frame5мин
+Data packet
+An all-encompassing term that represents any single set of binary data being sent across a network link
+Ethernet frames
+A highly structured collection of information presented in a specific order
+Preamble 8 bytes
+Destination Address 6
+Source Address 6
+Tag 4
+Ether-type 2
+Payload 0-1500
+FCS 4
+Preamble 8 bytes
+can itself be split into two sections
+for syncronise inner clocks
+last byte 
+SFD Start frame delimiter
+Signals to a receimeng device that the preamble is over and that the actual frame contents will now follow
+Destination Address 6
+The hardware address of the intended recipient
+
+Source Address 6
+VLAN Tag 4
+Indicates that the frame itself is what's called a VLAN frame
+If a VLAN header is present, the EtherType field follows it.
+Virtual LAN (VLAN)
+A technique that lets you have multiple logical LANs operation on the same physical equipment
+Ether-type 2
+used to describe the protocol of the contents of the frame
+Payload 46-1500
+In networking terms, is the actual data being transported, which is everything that isn't a header
+FCS 4
+Frame Check Sequence
+A 4-byte(0r32-bit) number that represents a checksum value for the entire frame
+This checksum value is calculated by performing what's known as a cyclical redundancy check against the frame.
+Cyclical Redundancy Check(CRC)
+An important concept for data integrity, and is used all over computing, not just network transmissions
+
 116 Victor Escobedo: Practical Experience in IT1мин
 117 8 материалов для самостоятельного изучения
 118 Navigating Coursera10мин
