@@ -219,15 +219,45 @@ subnet ID
 Subnet masks
 32-bit numbers that are normally written out as four octets in decimal
 211 Basic Binary Math6мин
-
+Subnet mask
+A way for a computer to use and operators to determine if an IP address exists on the same network
 212 CIDR4мин
+Classless Inter-Domain Routing
+Demarcate
+Demarcation point
+To describe where one network or system ends and another one begins
 213 Motivation1мин
 214 Basic Routing Concepts8мин
+Router
+A network device that forwards traffic depending on the destination address of that traffic
 215 Routing Tables3мин
 216 Interior Gateway Protocols5мин
+Routing protocols
+Routing protocols fall into two main categories: interior gateway protocols and exterior gateway protocols.
+Interior gateway protocols are further split into two categories: Link state routing protocols and distance-vector protocols.
+Interior gateway protocols
+Used by routers to share information within a single autonomous system.
+Autonomous system
+A collection of networks that all fall under the control of a single network operator
+The two main types of interior gateway protocols are link state routing protocols and distance-vector protocols.
+In computer science, a list is known as a vector
 217 Exterior Gateway Protocols3мин
+Internet Assigned Numbers Authority(IANA)
+A non-profit organization that helps manage things like IP address allocation
+Along with managing IP address allocation, the IANA is also responsible for ASN, or Autonomous System Number allocation.
+Autonomous System Number (ASN)
+Numbers assigned to individual autonomous systems
 218 Non-Routable Address Space3мин
+This means that the IPv4 standard doesn't even have enough IP addresses available for every person on the planet.
+RFC
+Request for Comments
+RFC 1918
+NAT
+10.0.0.0/8
+172.16.0.0/12
+192.168.0.0/16
 219 Alex Good Story1мин
+\r\n   \n
 220 3 материала для самостоятельного изучения
 221 Supplemental Reading for Routing Protocol Examples10мин
 222 Supplemental Reading for RFCs and Standards10мин
