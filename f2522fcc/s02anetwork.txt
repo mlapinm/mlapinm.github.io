@@ -277,6 +277,17 @@ In the third week of this course, we'll explore the transport and application la
 303 The Transport Layer3мин
 304 Dissection of a TCP Segment5мин
 305 TCP Control Flags and the Three-way Handshake5мин
+Source port (16)	Destination port (16)
+Sequence number (32)	
+Acknowledgment number (32)	
+Header Length(4) empty(6) Control flags(6) Window (16)
+Checksum (16)	Urgent (16)
+Options (0 or 16 if any)	Padding
+Data payload ()
+
+URG (urgent)
+A value of one here indicates that the segment is considered urgent and that the urgent pointer field has more data about this
+
 306 TCP Socket States3мин
 307 Connection-oriented and Connectionless Protocols4мин
 308 Firewalls2мин
