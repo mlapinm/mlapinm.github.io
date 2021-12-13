@@ -273,8 +273,53 @@ NAT
 
 301 Week3 The Transport and Application Layers
 In the third week of this course, we'll explore the transport and application layers. By the end of this module, you'll be able to describe TCP ports and sockets, identify the different components of a TCP header, show the difference between connection-oriented and connectionless protocols, and explain how TCP is used to ensure data integrity.
+
 302 Introduction to the Transport and Application Layers1мин
+Transport layer
+Allows traffic to be directed to specific network applications
+
+Application layer
+Allows these applications to communicate in a way they understand
+
+
+
 303 The Transport Layer3мин
+Port
+A 16-bit number thatТs used to direct traffic to specific services running on a networked computer
+
+#	Layer Name	Protocol
+5	Application	HTTP, SMTP, etc..	Messages	n/a
+4	Transport	TCP/UDP				Segment	Port #'s
+3	Network		IP					Datagram	IP address
+2	Data Link	Ethernet, Wi-Fi		Frames	MAC Address
+1	Physical	10 Base T, 802.11	Bits	n/a
+
+Web	File
+
+Service Mail	Server	Printer
+
+(HTTP) (SMTP) (FTP)	Service
+
+Port 80 Port 25 Port 21 Port 9100
+
+i i i i
+Multiplexer
+*
+IP: 10.1.1.100
+
+Web	File
+
+Service Mail	Server	Printer
+
+(HTTP) (SMTP) (FTP)	Service
+
+Port 80 Port 25 Port 21 Port 9100
+
+t t t t
+Demultiplexer
+t
+IP: 10.1.1.100
+
 304 Dissection of a TCP Segment5мин
 305 TCP Control Flags and the Three-way Handshake5мин
 Source port (16)	Destination port (16)
@@ -288,12 +333,59 @@ Data payload ()
 URG (urgent)
 A value of one here indicates that the segment is considered urgent and that the urgent pointer field has more data about this
 
+ACK (acknowledged)
+A value of one in this field means that the acknowledgement number field should be examined
+
+PSH (push)
+The transmitting device wants the receiving device to push currently-buffered data to the application on the receiving end as soon as possible
+
+RST (reset)
+One of the sides in a TCP connection hasnТt been able to properly recover from a series of missing or malformed segments
+
+SYN (synchronize)
+It's used when first establishing a TCP connection and makes sure the receiving end knows to examine the sequence number field
+
+FIN (finish)
+When this flag is set to one, it means the transmitting computer doesn't have any more data to send and the connection can be closed
+
+The three-way handshake
+SYN
+SYN/ACK
+ACK
+
+Handshake
+A way for two devices to ensure that theyТre speaking the same protocol and will be able to understand each other
+
+The four-way handshake
+FIN
+ACK
+FIN
+ACK
+
+
 306 TCP Socket States3мин
 307 Connection-oriented and Connectionless Protocols4мин
 308 Firewalls2мин
-309 The Application Layer3мин
+309 The Application Layer3мин-
 310 The Application Layer and the OSI Model2мин
+OSI Model
+Application
+Presentation
+Session
+Transport
+Network Data link Physical
+
+Session Layer
+Facilitating the communication between actual applications and the transport layer
+
+Session Layer
+Takes application layer data and hands it off to the presentation layer
+
+Presentation Layer
+Responsible for making sure that the unencapsulated application layer data is able to be understood by the application in question
+
 311 All the Layers Working in Unison11мин
+
 312 Learner Story: Daniel1мин
 313 1 материал дл€ самосто€тельного изучени€
 314 Supplemental Reading for System Ports versus Ephemeral Ports10мин
