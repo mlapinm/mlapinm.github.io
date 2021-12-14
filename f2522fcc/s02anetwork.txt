@@ -401,19 +401,152 @@ Responsible for making sure that the unencapsulated application layer data is ab
 In the fourth week of this course, we'll explore networking services. We'll learn about why we need DNS and how it works. We'll also show you why DHCP makes network administration a simpler task. By the end of this module, you'll be able to do describe how DNS and DHCP work, how NAT technologies help keep networks secure, and how VPNs and proxies help users connect and stay secured.
 402 Introduction to Network Services1мин
 403 Why do we need DNS?4мин
+Domain Name System (DNS)
+A global and highly distributed network service that resolves strings of letters into IP addresses for you
+Domain Name
+The term we use for something that resolved by DNS
+
 404 The Many Steps of Name Resolution8мин
+There are five primary types of DNS servers:
+-1: Caching name servers 
+-2: Recursive name servers  
+-3: Root name servers  
+-4: TLD name servers  
+-5: Authoritative name servers
+
+
+
+Caching and recursive name servers
+Purpose is to store known domain name lookups for a certain amount of time
+
+Recursive name servers
+Perform full DNS resolution requests
+
+Time to live (TTL)
+
+A value, in seconds, that can be configured by the owner of a domain name for how long a name server is allowed to cache an entry before it should discard it and perform a full resolution again
+
+Anycast
+A technique thatТs used to route traffic to different destinations depending on factors like location, congestion, or link health
+
 405 DNS and UDP6мин
+
 406 Sergio IT Great Field1мин
+
 407 Resource Record Types8мин
+
 408 Anatomy of a Domain Name3мин
+Fully qualified domain name (FQDN)
+When you combine all of these parts together, you have whatТs known as this
+
+DNS can technically support up to 127 levels of domain in total for a single fully qualified domain name.
+
 409 DNS Zones4мин
+
+DNS zones
+Allow for easier control over multiple levels of a domain
+
+Zone files
+Simple configuration files that declare all resource records for a particular zone
+
+Start of authority (SOA)
+Declares the zone and the name of the name server that is authoritative for it
+
+NS records
+Indicate other name servers that might also be responsible for this zone
+
+Reverse lookup zone files
+These let DNS resolvers ask for an IP and get the FQDN associated with it returned
+
+Pointer resource record (PTR)
+Resolves an IP to a name
+
+
+
 410 Overview of DHCP4мин
+Dynamic Host Configuration Protocol (DHCP)
+An application layer protocol that automates the configuration process of hosts on a network
+
+Dynamic allocation
+A range of IP addresses is set aside for client devices and one of these IPs is issued to these devices when they request
+one
+
+Automatic allocation
+A range of IP addresses is set aside for assignment purposes
+
+Fixed allocation
+Requires a manually specified list of MAC address and their corresponding IPs
+
+Network time protocol (NTP) servers
+Used to keep all computers on a network synchronized in time
+
 411 DHCP in Action5мин
+DHCP discovery
+The process by which a client configured to use DHCP attempts to get network configuration information
+
+DHCPDISCOVER
+Source:
+0.0.0.0:68
+Destination:
+255.255.255.255:67
+
 412 Basics of NAT4мин
+Network Address Translation (NAT)
+A technology that allows a gateway, usually a router or firewall, to rewrite the source IP of an outgoing IP datagram while retaining the original IP in order to rewrite it into the response
+
+IP masquerading
+
+One-to-many NAT
+
 413 NAT and the Transport Layer4мин
+Port preservation
+A technique where the source port chosen by a client is the same port used by the router
+
+Port forwarding
+A technique where specific destination ports can be configured to always be delivered to specific nodes
+
 414 NAT, Non-Routable Address Space and the Limits of IPv43мин
+Regional internet registries
+
+AFRINIC serves the continent of Africa.
+ARIN serves the United States, Canada and parts of the Caribbean.
+
+APNIC is responsible for most of Asia, Australia,
+
+New Zealand and Pacific island nations.
+
+LACNIC covers Central and South America and any parts of the Caribbean not covered by ARIN.
+
+RIPE serves Europe, Russia, the Middle East and portions of central Asia.
+
+The IANA assigned the last unallocated /8 network blocks to the various RIRs on February 3, 2011.
+Then in April 2011, APNIC ran out of addresses.
+RIPE was next, in September of 2012.
+LACNIC ran out of addresses to assign in June 2014, and ARIN did the same in September 2015.
+Only AFRINIC has some IPs left, but those predicted to be depleted by 2018.
+RFC1918
+
 415 Virtual Private Networks4мин
+Virtual Private Networks (VPN)
+A technology that allows for the extension of a private or local network to hosts that might not be on that local network
+
+Two-factor authentication
+A technique where more than just a username and password are required to authenticate
+
 416 Proxy Services4мин
+Proxy service
+A server that acts on behalf of a client order to access another service
+
+Anonymity 
+Security  
+Content filtering 
+Increased performance 
+
+Web proxies
+
+Reverse proxy
+A service that might appear to be a single server to external clients, but actually represents many servers living behind it
+
 417 2 материала дл€ самосто€тельного изучени€
 418 Supplemental Reading forIPv4 Address Exhaustion10мин
 419 Graded Plugin10мин
@@ -424,9 +557,65 @@ In the fourth week of this course, we'll explore networking services. We'll lear
 424 Network Address Translation30мин
 425 VPNs & Proxies30мин
 426 Networking Services Simulation30мин
+need internet - router
+IТm worried people are going to break into our network.
+firewall
+People canТt remember so many IP addresses!
+DNS
+WeТre running out of IP addresses. WeТll need to have a way to use non-routable address space!
+NAT
+We need to reduce internal collision domains!
+SWITCH
+Configuring the network setting for every desktop is becoming a real problem!
+DHCP
+Our traveling sales people need to access internal resources on the road!
+VPN
+
+
 427 Networking Services1ч 20мин
+-1 DNS stands for Domain Name System
+-2 TLD stands for Top Level Domain
+-3 A RTP record is responsible for resolving an IP to a domain name.
+-4 When a range of IP addresses is set aside for client devices, and one of these IPs is issued to these devices when they request one, this is known as dynamic allocation.
+-5 A service that might appear to be a single server to external clients, but actually represents many servers living behind it, is known as a reverse proxy.
+-6 Which type of Domain Name System (DNS) server performs a full name resolution request?
+Recursive name server 
+-7 The Domain Name System (DNS) network service uses which transport layer protocol?
+User Datagram Protocol (UDP)
+-8 The Dynamic Configuration Host Protocol (DHCP) operates at which Open Systems Interconnection (OSI) model layer?
+Application
+-9 Which technique is used with Network Address Translation (NAT) where a source port chosen by a client is the same port used by a router?
+Preservation
+-10 An IT engineer is planning a website upgrade with load balancing features. What technology is used?
+Reverse proxy
+-11 During the name resolution process, which server does a local recursive server contact first?
+Authoritative name server
+-12 A complete Fully Qualified Domain Name (FQDN) is limited to how many characters?
+255
+-13 What term defines keeping the address of one computer secret from another?
+Masquerading
+-14 A Virtual Private Network (VPN) uses a particular layer from the OSI reference model to carry an encrypted payload that actually contains an entire second set of packets. Which layer is used?
 
+Presentation
 
+Network
+
+Application
+
+Transport
+-15 What is the importance of using DNS?
+Name resolution
+-16 When a client computer sends a request to a Domain Name System (DNS) server, what type of packet is sent?
+
+TCP
+
+ACK
+
+SYN/ACK
+
+V SYN
+-17 A technique thatТs used to route traffic to different destinations, depending on factors like location, congestion, or link health, is known as 
+-18 
 
 
 501 Week5 Connecting to the Internet
