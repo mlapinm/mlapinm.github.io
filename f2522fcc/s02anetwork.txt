@@ -430,7 +430,7 @@ Anycast
 A technique thatТs used to route traffic to different destinations depending on factors like location, congestion, or link health
 
 405 DNS and UDP6мин
-
+port 53
 406 Sergio IT Great Field1мин
 
 407 Resource Record Types8мин
@@ -602,7 +602,7 @@ Network
 
 Application
 
-Transport
+v Transport
 -15 What is the importance of using DNS?
 Name resolution
 -16 When a client computer sends a request to a Domain Name System (DNS) server, what type of packet is sent?
@@ -614,27 +614,222 @@ ACK
 SYN/ACK
 
 V SYN
--17 A technique thatТs used to route traffic to different destinations, depending on factors like location, congestion, or link health, is known as 
--18 
+-17 A technique thatТs used to route traffic to different destinations, depending on factors like location, congestion, or link health, is known as anycast
+-18 A DNS record that's used to redirect traffic from one domain name to another is known as a CNAME record.
+-19 Administration and definition of TLDs are handled by a non-profit organization known as ICANN
+-20 When NAT hides the source IP of an originating device, this is known as IP masquerading
+-21 An IT systems engineer creates a new Domain Name System (DNS) zone that contains pointer (PTR) resource records. Which zone type has been created?
+-22 An IT systems engineer creates a new Domain Name System (DNS) zone that contains pointer (PTR) resource records. Which zone type has been created?
+) resource records. Which zone type has been created?
 
+Reverse lookup
 
+-Start of Authority (SOA)
+
+Subdomain
+
+Fully Qualified Domain Name (FQDN)
+
+-23 Network Address Translation (NAT) is typically implemented with which hardware devices? Check all that apply.
+Firewalls
+Routers
+-24 Which technology uses a tunneling protocol?
+Virtual Private Network (VPN)
+-25 A new Domain Name System (DNS) server is being configured. Which record type is used to declare a new zone?
+are a new zone?
+Start of Authority (SOA)
+-25 Which of the following is NOT configured by a Dynamic Host Protocol (DHCP) server?
+Protocol (DHCP) server?
+Internet Protocol (IP) address
+v Media Access Control (MAC) address
+Subnet mask address
+Gateway address
+
+-26 What service acts on behalf of a client in order to access another service?
+Proxy Server
+-27 During the name resolution process, which technique is used to avoid congestion when querying a server?
+Anycast
+-28 What technology helps users get connected and stay secure?
+Virtual Private Network (VPN)
+-29 An internal system behind a firewall needs to be configured for remote access. How should Network Address Translation be configured?
+One-to-many NAT
+-30 The Domain Name System (DNS) provides an easy way to remember addresses. Without DNS, how many octets for an Internet Protocol (IP) address would have to be memorized?
+-31 The "www" portion of a domain is known by which of the given options? Check all that apply.
+Subdomain
+Host name
+Name Resolution in Practice
+-32 Network Address Translation (NAT) is typically implemented with which hardware devices? Check all that apply.
+Firewalls
+Routers
+-33 A company with a large number of hosts creates three subdomains under a main domain. For easier management of the host records, how many zones should be used?
+3
+-34 A company with a large number of hosts creates three subdomains under a main domain. For easier management of the host records, how many zones should be used?
+Preservation
+Rewriting
+Port forwarding
+-One-to-many NAT
 501 Week5 Connecting to the Internet
 In the fifth week of this course, we'll explore the history of the Internet, how it evolved, and how it works today. We'll understand the different ways to connect to the Internet through cables, wireless and cellar connections, and even fiber connections. By the end of this module, you'll be able to define the components of WANs and outline the basics of wireless and cellular networking.
 502 Introduction to Connecting to the Internet1мин
+Originally invented by AT&T in order to transmit multiple phone calls over a single link
+DSL
+Cable broadband
+Fiber connection
+
 503 Dial-up, Modems and Point-to-Point Protocols4мин
+PSTN
+Plain old telephone service
+
+POTS and Dial-up
+Dial-up, Modems, and Point-to-Point Protocols
+
+POTS
+USENET
+Dial-up connection
+
+A dial-up connection uses POTS for data transfer, and gets its name because the connection is established by actually dialing a phone number.
+
+Baud rate
+A measurement of how many bits can be passed across a phone line in a second
+
+Broadband Connections
 504 What is broadband?3мин
+Broadband
+Any connectivity technology that isn't dial-up internet
+
 505 T-Carrier Technologies2мин
+Transmission System 1
+T1
+1.544 mbps 	x 28
+44.736 mbps
+
 506 Digital Subscriber Lines3мин
+Digital subscriber line
+
+DSLAMs
+Digital Subscriber Line Access Multiplexers
+ADSL
+Asymmetric Digital Subscriber Line
+SDSL
+Symmetric Digital Subscriber Line
+HDSL
+High Bit-rate Digital Subscriber Lines
 507 Cable Broadband4мин
+Cable Communications Policy Act
+Shared bandwidth technology
+Central office
+Cable modem
+
+The device that sits at the edge of a consumerТs network and connects it to the cable modem termination system, orCMTS
+
+Cable modem termination system (CMTS)
+Connects lots of different cable connections to an ISPs core network
+
 508 Fiber Connections2мин
+FTTX
+Fiber To The X
+FTTN
+Fiber To The Neighborhood
+FTTB
+Fiber To The Building
+FTTB is a setup where fiber technologies are used for data delivery to an individual building.
+FTTH
+Fiber To The Home
+Fiber To The Premises
+Optical Network Terminator (ONT)
+Converts data from protocols the fiber network can understand, to those that more
+
 509 Wide Area Network Technologies3мин
+Wide Area Networks (WAN)
+Acts like a single network, but spans across multiple physical locations
+
 510 Point-to-Point VPNs2мин
+
 511 Introduction to Wireless Networking Technologies5мин
+Wireless networking
+A way to network without wires
+IEEE 802.11 standards
+
+Frequency band
+A certain section of the radio spectrum thatТs been agreed upon to be used for certain communications
+
+In North America, FM radio transmissions operate between 88 and 108 MHz.
+FM broadcast band
+
+2.4Ghz and 5Ghz
+802.11b 802.11a 802.11g 802.11n 802.1lac
+802.11 = physical and data link layers
+
+Frame Control 2
+Duration ID 2
+Address 1 6 
+Source address field
+Address 2 6
+Intended destination
+Address 3 6
+Receiving address
+Sequence Control
+Address 4 6
+Transmitter address
+Data payload 0-7951
+Data frame
+
+Frame control field
+Is 16 bits long and contains a number of subfields that are used to describe how the frame itself should be processed
+
+Duration field
+It specifies how long the total frame is, so the receiver knows how long it should expect to have to listen to this transmission
+
+Wireless access point
+A device that bridges the wireless and wired portions of a network
+
+Sequence control field
+Is 16 bits long and mainly contains a sequence number used to keep track of the ordering of frames
+
+Data payload
+Has all of the data of the protocols further up the stack
+
+Frame check sequence field
+Contains a checksum used for a cyclical redundancy check, just like how ethernet does it
+
 512 Wireless Network Configurations2мин
+
+Ad-hoc networks
+Wireless LANS (WLANS)
+Mesh networks
+
+In an ad-hoc network, there isn't really any supporting network infrastructure.
+
 513 Wireless Channels4мин
+Channels
+Individual, smaller sections of the overall frequency band used by a wireless network
+
+Collision domain
+Any one network segment where computer can interrupt another
+1-13
+-1 2.400 2.412 2.420
+-2 2.405 2.415 2.430
+
+Avoid collision domains wherever you can
+
 514 Wireless Security2мин
+Wired Equivalent Privacy (WEP)
+An encryption technology that provides very low level of privacy
+
+WiFi Protected Access
+WPA
+128 bits
+WPA2
+256 bits
+
+MAC filtering
+
+You configure your access points to only allow for connections from a specific set of MAC addresses belonging to devices you trust
+
 515 Cellular Networking1мин
+
 516 Mobile Device Networks4мин
+
 517 5 материалов дл€ самосто€тельного изучени€
 518 Supplemental Reading for Broadband Protocols10мин
 519 Supplemental Reading for WAN Protocols10мин
