@@ -1,6 +1,6 @@
 101 Week1 Introduction to Networking
 Welcome to the Networking course of the IT Support Professional Certificate! In the first week of this course, we will cover the basics of computer networking. We will learn about the TCP/IP and OSI networking models and how the network layers work together. We'll also cover the basics of networking devices such as cables, hubs and switches, routers, servers and clients. We'll also explore the physical layer and data link layer of our networking model in more detail. By the end of this module, you will know how all the different layers of the network model fit together to create a network.
-102 Course Introduction5мин
+102 Course Introduction5РјРёРЅ
 a defined set of standards that computers must follow in order to communicate properly
 Computer networking
 the name we've given to the full scope of how computers communicate with each other
@@ -9,7 +9,7 @@ Transport	TCP/UDP				Segment		Port
 Network		IP					Datagram	IP address
 Data Link	Ethernet/WiFi		Frames		MAC Address
 Physical	10 Base T, 802.11	Bits		
-103 The TCP/IP Five-Layer Network Model5мин
+103 The TCP/IP Five-Layer Network Model5РјРёРЅ
 Physical layer
 Represents the physecal devices that interconnect computers
 Data link layer
@@ -22,8 +22,8 @@ A collection of networks connected together through routers, the most famous of 
 IP is the heart of the Internet and most smaller networks around the world.
 Transport layer
 Sorts out which client and server programs are supposed to get that data
-104 Alex Why Networking1мин
-105 Cables4мин
+104 Alex Why Networking1РјРёРЅ
+105 Cables4РјРёРЅ
 Cables
 Connect different devices to each other, allowing data to be transmitted over them
 Coper
@@ -31,7 +31,7 @@ Fiber
 The most common forms of copper twisted-pair cables used in networking are Cat5, Cat5e, and Cat6 cables.
 Crosstalk
 When an electrical pulse on one wire is accidentally detected on another wire
-106 Hubs and Switches2мин
+106 Hubs and Switches2РјРёРЅ
 Hub
 A physical layer device that allows for connections from many computers at once
 Collision domain
@@ -40,31 +40,31 @@ If multiple systems try sending data at the same time, the electrical pulses sen
 Network switch
 Hubs and switches
 The primary devices used to connect computers on a single network, usually refferred to as a LAN, or local area netork
-107 Routers2мин
+107 Routers2РјРёРЅ
 Router
 A device that knows how to forward data between independent netowrks
 Border Gateway Protocol (BGP)
 Routers share data with each other via this protoco, which lets them learn about tho most optimal paths to forward traffic.
-108 Servers and Clients1мин
+108 Servers and Clients1РјРёРЅ
 
-109 Sergio Being A Network Engineer1мин
+109 Sergio Being A Network Engineer1РјРёРЅ
 snapchat, google search
-110 Moving Bits Across the Wire2мин
+110 Moving Bits Across the Wire2РјРёРЅ
 Bits
 Modulation
 A way of varying the voltage of this charge moving across the cable
-111 Twisted Pair Cabling and Duplexing1мин
+111 Twisted Pair Cabling and Duplexing1РјРёРЅ
 Duplex communication
 The concept that information can flow in both directions across the cable
 Simplex communication
 This process is unidirectional
-112 Network Ports and Patch Panels2мин
+112 Network Ports and Patch Panels2РјРёРЅ
 RJ45 port
 RJ45 plug
 Network ports are generally directly attached to the devices that make up a computer network
 Link LED
 Activity LED
-113 Ethernet and MAC Addresses6мин
+113 Ethernet and MAC Addresses6РјРёРЅ
 CSMA/CD
 Used to determine when the communications channels are clear, and when a device is free to transmit data
 MAC address
@@ -78,14 +78,14 @@ Organizationally Unique Identifier (OUI)
 The first three octets of a MAC address
 Vendor Assigned (NIC Cards, Interfaces)
 Ethernet uses MAC Addresses to ensure that the data it sends has both an address for the machine that sent the transmission, as well as the one the transmission was intended for.
-114 Unicast, Multicast, and Broadcast1мин
+114 Unicast, Multicast, and Broadcast1РјРёРЅ
 https://www.coursera.org/lecture/computer-networking/unicast-multicast-and-broadcast-OpIS6
 A unicast transmission is always meant for just one receiving address.
 If the least significnt bit in the first octet of a destination address is set to zero, it means that ethernet frame is intended for only the destination address.
 If the least sihnificant bit in the first octet of a destination address is set to one, it means yu're dealing with a multicast frame.
 Broadcast all FFFF
 ARP
-115 Dissecting an Ethernet Frame5мин
+115 Dissecting an Ethernet Frame5РјРёРЅ
 Data packet
 An all-encompassing term that represents any single set of binary data being sent across a network link
 Ethernet frames
@@ -123,33 +123,33 @@ This checksum value is calculated by performing what's known as a cyclical redun
 Cyclical Redundancy Check(CRC)
 An important concept for data integrity, and is used all over computing, not just network transmissions
 
-116 Victor Escobedo: Practical Experience in IT1мин
-117 8 материалов для самостоятельного изучения
-118 Navigating Coursera10мин
-119 Program Surveys10мин
-120 How to Use Discussion Forums10мин
-121 Get to Know Your Classmates10мин
-122 Earn a dual Google/CompTIA A+ credential3мин
-123 Supplementary Reading for The OSI Networking Model10мин
-124 Supplemental Reading for Ethernet Over Twisted Pair Technologies10мин
-125 Graded Plugin10мин
-126 6 практических упражнений
-127 TCP/IP30мин
-128 Networking Devices30мин
-129 The Physical Layer30мин
-130 The Data Link Layer30мин
-131 Layers in Networking Models30мин
-132 Networking Basics1ч 20мин
+116 Victor Escobedo: Practical Experience in IT1РјРёРЅ
+117 8 РјР°С‚РµСЂРёР°Р»РѕРІ РґР»СЏ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕРіРѕ РёР·СѓС‡РµРЅРёСЏ
+118 Navigating Coursera10РјРёРЅ
+119 Program Surveys10РјРёРЅ
+120 How to Use Discussion Forums10РјРёРЅ
+121 Get to Know Your Classmates10РјРёРЅ
+122 Earn a dual Google/CompTIA A+ credential3РјРёРЅ
+123 Supplementary Reading for The OSI Networking Model10РјРёРЅ
+124 Supplemental Reading for Ethernet Over Twisted Pair Technologies10РјРёРЅ
+125 Graded Plugin10РјРёРЅ
+126 6 РїСЂР°РєС‚РёС‡РµСЃРєРёС… СѓРїСЂР°Р¶РЅРµРЅРёР№
+127 TCP/IP30РјРёРЅ
+128 Networking Devices30РјРёРЅ
+129 The Physical Layer30РјРёРЅ
+130 The Data Link Layer30РјРёРЅ
+131 Layers in Networking Models30РјРёРЅ
+132 Networking Basics1С‡ 20РјРёРЅ
 
 
 
 201 Week2 The Network Layer
 In the second week of this course, we'll explore the network layer in more depth. We'll learn about the IP addressing scheme and how subnetting works. We'll explore how encapsulation works and how protocols such as ARP allow different layers of the network to communicate. We'll also cover the basics of routing, routing protocols, and how the Internet works. By the end of this module, you'll be able to describe the IP addressing scheme, understand how subnetting works, perform binary math to describe subnets, and understand how the Internet works.
-202 Introduction to The Network Layer1мин
-203 The Network Layer1мин
+202 Introduction to The Network Layer1РјРёРЅ
+203 The Network Layer1РјРёРЅ
 ARP
 Address Resolution Protocol
-204 IP Addresses2мин
+204 IP Addresses2РјРёРЅ
 Dotted decimal notation
 9... IBM
 IP addresses belong to networks, not to the devices attached to those networks.
@@ -158,7 +158,7 @@ DHCP
 Dynamic IP address
 Static IP address
 In most cases, static IP addresses are reserved for servers and network devices, while dynamic IP addresses are reserved for clients
-205 IP Datagrams and Encapsulation6мин
+205 IP Datagrams and Encapsulation6РјРёРЅ
 IP datagram
 A highly structured series of fields that are strictly defined
 The most common version of IP is version 4, or IPv4.
@@ -188,7 +188,7 @@ Padding field
 A series of zeros used to ensure the header is the correct total size
 Data payload section
 Encapsulation
-206 IP Address Classes3мин
+206 IP Address Classes3РјРёРЅ
 IP addresses can be split into two sections: 
 the network ID and the host ID.
 Address class system
@@ -201,37 +201,37 @@ D 224-239
 E 240-255
 CIDR
 Classless inter-domain routing
-207 Address Resolution Protocol2мин
+207 Address Resolution Protocol2РјРёРЅ
 ARP
 Address resolution protocol
 A protocol used to discover the hardware address of a node with a certain IP address
 ARP table
 A list of IP addresses and the MAC addresses associated with them
 ARP table entries generally expire after a short amount of time to ensure changes in the network are accounted for.
-208 Sergio Path1мин
-209 Subnetting2мин
+208 Sergio Path1РјРёРЅ
+209 Subnetting2РјРёРЅ
 Subnetting
 The process of taking a large network and splitting it up into many individual and smaller subnetworks, or subnets
 CIDR
 Incorrect subnetting setups are a common problem you might run into as an IT Support Specialist, so it's important to have a strong understanding of how this works.
-210 Subnet Masks7мин
+210 Subnet Masks7РјРёРЅ
 subnet ID
 Subnet masks
 32-bit numbers that are normally written out as four octets in decimal
-211 Basic Binary Math6мин
+211 Basic Binary Math6РјРёРЅ
 Subnet mask
 A way for a computer to use and operators to determine if an IP address exists on the same network
-212 CIDR4мин
+212 CIDR4РјРёРЅ
 Classless Inter-Domain Routing
 Demarcate
 Demarcation point
 To describe where one network or system ends and another one begins
-213 Motivation1мин
-214 Basic Routing Concepts8мин
+213 Motivation1РјРёРЅ
+214 Basic Routing Concepts8РјРёРЅ
 Router
 A network device that forwards traffic depending on the destination address of that traffic
-215 Routing Tables3мин
-216 Interior Gateway Protocols5мин
+215 Routing Tables3РјРёРЅ
+216 Interior Gateway Protocols5РјРёРЅ
 Routing protocols
 Routing protocols fall into two main categories: interior gateway protocols and exterior gateway protocols.
 Interior gateway protocols are further split into two categories: Link state routing protocols and distance-vector protocols.
@@ -241,13 +241,13 @@ Autonomous system
 A collection of networks that all fall under the control of a single network operator
 The two main types of interior gateway protocols are link state routing protocols and distance-vector protocols.
 In computer science, a list is known as a vector
-217 Exterior Gateway Protocols3мин
+217 Exterior Gateway Protocols3РјРёРЅ
 Internet Assigned Numbers Authority(IANA)
 A non-profit organization that helps manage things like IP address allocation
 Along with managing IP address allocation, the IANA is also responsible for ASN, or Autonomous System Number allocation.
 Autonomous System Number (ASN)
 Numbers assigned to individual autonomous systems
-218 Non-Routable Address Space3мин
+218 Non-Routable Address Space3РјРёРЅ
 This means that the IPv4 standard doesn't even have enough IP addresses available for every person on the planet.
 RFC
 Request for Comments
@@ -256,25 +256,25 @@ NAT
 10.0.0.0/8
 172.16.0.0/12
 192.168.0.0/16
-219 Alex Good Story1мин
+219 Alex Good Story1РјРёРЅ
 \r\n   \n
-220 3 материала для самостоятельного изучения
-221 Supplemental Reading for Routing Protocol Examples10мин
-222 Supplemental Reading for RFCs and Standards10мин
-223 Graded Plugin10мин
-224 5 практических упражнений
-225 The Network Layer30мин
-226 Subnetting30мин
-227 Routing30мин
-228 Routing Paths and Subnets30мин
-229 The Network Layer1ч 15мин
+220 3 РјР°С‚РµСЂРёР°Р»Р° РґР»СЏ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕРіРѕ РёР·СѓС‡РµРЅРёСЏ
+221 Supplemental Reading for Routing Protocol Examples10РјРёРЅ
+222 Supplemental Reading for RFCs and Standards10РјРёРЅ
+223 Graded Plugin10РјРёРЅ
+224 5 РїСЂР°РєС‚РёС‡РµСЃРєРёС… СѓРїСЂР°Р¶РЅРµРЅРёР№
+225 The Network Layer30РјРёРЅ
+226 Subnetting30РјРёРЅ
+227 Routing30РјРёРЅ
+228 Routing Paths and Subnets30РјРёРЅ
+229 The Network Layer1С‡ 15РјРёРЅ
 
 
 
 301 Week3 The Transport and Application Layers
 In the third week of this course, we'll explore the transport and application layers. By the end of this module, you'll be able to describe TCP ports and sockets, identify the different components of a TCP header, show the difference between connection-oriented and connectionless protocols, and explain how TCP is used to ensure data integrity.
 
-302 Introduction to the Transport and Application Layers1мин
+302 Introduction to the Transport and Application Layers1РјРёРЅ
 Transport layer
 Allows traffic to be directed to specific network applications
 
@@ -283,9 +283,9 @@ Allows these applications to communicate in a way they understand
 
 
 
-303 The Transport Layer3мин
+303 The Transport Layer3РјРёРЅ
 Port
-A 16-bit number that’s used to direct traffic to specific services running on a networked computer
+A 16-bit number thatвЂ™s used to direct traffic to specific services running on a networked computer
 
 #	Layer Name	Protocol
 5	Application	HTTP, SMTP, etc..	Messages	n/a
@@ -320,8 +320,8 @@ Demultiplexer
 t
 IP: 10.1.1.100
 
-304 Dissection of a TCP Segment5мин
-305 TCP Control Flags and the Three-way Handshake5мин
+304 Dissection of a TCP Segment5РјРёРЅ
+305 TCP Control Flags and the Three-way Handshake5РјРёРЅ
 Source port (16)	Destination port (16)
 Sequence number (32)	
 Acknowledgment number (32)	
@@ -340,7 +340,7 @@ PSH (push)
 The transmitting device wants the receiving device to push currently-buffered data to the application on the receiving end as soon as possible
 
 RST (reset)
-One of the sides in a TCP connection hasn’t been able to properly recover from a series of missing or malformed segments
+One of the sides in a TCP connection hasnвЂ™t been able to properly recover from a series of missing or malformed segments
 
 SYN (synchronize)
 It's used when first establishing a TCP connection and makes sure the receiving end knows to examine the sequence number field
@@ -354,7 +354,7 @@ SYN/ACK
 ACK
 
 Handshake
-A way for two devices to ensure that they’re speaking the same protocol and will be able to understand each other
+A way for two devices to ensure that theyвЂ™re speaking the same protocol and will be able to understand each other
 
 The four-way handshake
 FIN
@@ -363,11 +363,11 @@ FIN
 ACK
 
 
-306 TCP Socket States3мин
-307 Connection-oriented and Connectionless Protocols4мин
-308 Firewalls2мин
-309 The Application Layer3мин-
-310 The Application Layer and the OSI Model2мин
+306 TCP Socket States3РјРёРЅ
+307 Connection-oriented and Connectionless Protocols4РјРёРЅ
+308 Firewalls2РјРёРЅ
+309 The Application Layer3РјРёРЅ-
+310 The Application Layer and the OSI Model2РјРёРЅ
 OSI Model
 Application
 Presentation
@@ -384,29 +384,29 @@ Takes application layer data and hands it off to the presentation layer
 Presentation Layer
 Responsible for making sure that the unencapsulated application layer data is able to be understood by the application in question
 
-311 All the Layers Working in Unison11мин
+311 All the Layers Working in Unison11РјРёРЅ
 
-312 Learner Story: Daniel1мин
-313 1 материал для самостоятельного изучения
-314 Supplemental Reading for System Ports versus Ephemeral Ports10мин
-315 4 практических упражнения
-316 The Transport Layer30мин
-317 The Application Layer30мин
-318 The Transport and Application Layer1ч 10мин
-319 The Five-Layer Network Model2ч
+312 Learner Story: Daniel1РјРёРЅ
+313 1 РјР°С‚РµСЂРёР°Р» РґР»СЏ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕРіРѕ РёР·СѓС‡РµРЅРёСЏ
+314 Supplemental Reading for System Ports versus Ephemeral Ports10РјРёРЅ
+315 4 РїСЂР°РєС‚РёС‡РµСЃРєРёС… СѓРїСЂР°Р¶РЅРµРЅРёСЏ
+316 The Transport Layer30РјРёРЅ
+317 The Application Layer30РјРёРЅ
+318 The Transport and Application Layer1С‡ 10РјРёРЅ
+319 The Five-Layer Network Model2С‡
 
 
 
 401 Week4 Networking Services
 In the fourth week of this course, we'll explore networking services. We'll learn about why we need DNS and how it works. We'll also show you why DHCP makes network administration a simpler task. By the end of this module, you'll be able to do describe how DNS and DHCP work, how NAT technologies help keep networks secure, and how VPNs and proxies help users connect and stay secured.
-402 Introduction to Network Services1мин
-403 Why do we need DNS?4мин
+402 Introduction to Network Services1РјРёРЅ
+403 Why do we need DNS?4РјРёРЅ
 Domain Name System (DNS)
 A global and highly distributed network service that resolves strings of letters into IP addresses for you
 Domain Name
 The term we use for something that resolved by DNS
 
-404 The Many Steps of Name Resolution8мин
+404 The Many Steps of Name Resolution8РјРёРЅ
 There are five primary types of DNS servers:
 -1: Caching name servers 
 -2: Recursive name servers  
@@ -427,21 +427,21 @@ Time to live (TTL)
 A value, in seconds, that can be configured by the owner of a domain name for how long a name server is allowed to cache an entry before it should discard it and perform a full resolution again
 
 Anycast
-A technique that’s used to route traffic to different destinations depending on factors like location, congestion, or link health
+A technique thatвЂ™s used to route traffic to different destinations depending on factors like location, congestion, or link health
 
-405 DNS and UDP6мин
+405 DNS and UDP6РјРёРЅ
 port 53
-406 Sergio IT Great Field1мин
+406 Sergio IT Great Field1РјРёРЅ
 
-407 Resource Record Types8мин
+407 Resource Record Types8РјРёРЅ
 
-408 Anatomy of a Domain Name3мин
+408 Anatomy of a Domain Name3РјРёРЅ
 Fully qualified domain name (FQDN)
-When you combine all of these parts together, you have what’s known as this
+When you combine all of these parts together, you have whatвЂ™s known as this
 
 DNS can technically support up to 127 levels of domain in total for a single fully qualified domain name.
 
-409 DNS Zones4мин
+409 DNS Zones4РјРёРЅ
 
 DNS zones
 Allow for easier control over multiple levels of a domain
@@ -463,7 +463,7 @@ Resolves an IP to a name
 
 
 
-410 Overview of DHCP4мин
+410 Overview of DHCP4РјРёРЅ
 Dynamic Host Configuration Protocol (DHCP)
 An application layer protocol that automates the configuration process of hosts on a network
 
@@ -480,7 +480,7 @@ Requires a manually specified list of MAC address and their corresponding IPs
 Network time protocol (NTP) servers
 Used to keep all computers on a network synchronized in time
 
-411 DHCP in Action5мин
+411 DHCP in Action5РјРёРЅ
 DHCP discovery
 The process by which a client configured to use DHCP attempts to get network configuration information
 
@@ -490,7 +490,7 @@ Source:
 Destination:
 255.255.255.255:67
 
-412 Basics of NAT4мин
+412 Basics of NAT4РјРёРЅ
 Network Address Translation (NAT)
 A technology that allows a gateway, usually a router or firewall, to rewrite the source IP of an outgoing IP datagram while retaining the original IP in order to rewrite it into the response
 
@@ -498,14 +498,14 @@ IP masquerading
 
 One-to-many NAT
 
-413 NAT and the Transport Layer4мин
+413 NAT and the Transport Layer4РјРёРЅ
 Port preservation
 A technique where the source port chosen by a client is the same port used by the router
 
 Port forwarding
 A technique where specific destination ports can be configured to always be delivered to specific nodes
 
-414 NAT, Non-Routable Address Space and the Limits of IPv43мин
+414 NAT, Non-Routable Address Space and the Limits of IPv43РјРёРЅ
 Regional internet registries
 
 AFRINIC serves the continent of Africa.
@@ -526,14 +526,14 @@ LACNIC ran out of addresses to assign in June 2014, and ARIN did the same in Sep
 Only AFRINIC has some IPs left, but those predicted to be depleted by 2018.
 RFC1918
 
-415 Virtual Private Networks4мин
+415 Virtual Private Networks4РјРёРЅ
 Virtual Private Networks (VPN)
 A technology that allows for the extension of a private or local network to hosts that might not be on that local network
 
 Two-factor authentication
 A technique where more than just a username and password are required to authenticate
 
-416 Proxy Services4мин
+416 Proxy Services4РјРёРЅ
 Proxy service
 A server that acts on behalf of a client order to access another service
 
@@ -547,22 +547,22 @@ Web proxies
 Reverse proxy
 A service that might appear to be a single server to external clients, but actually represents many servers living behind it
 
-417 2 материала для самостоятельного изучения
-418 Supplemental Reading forIPv4 Address Exhaustion10мин
-419 Graded Plugin10мин
-420 7 практических упражнений
-421 Name Resolution30мин
-422 Name Resolution in Practice30мин
-423 Dynamic Host Configuration Protocol30мин
-424 Network Address Translation30мин
-425 VPNs & Proxies30мин
-426 Networking Services Simulation30мин
+417 2 РјР°С‚РµСЂРёР°Р»Р° РґР»СЏ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕРіРѕ РёР·СѓС‡РµРЅРёСЏ
+418 Supplemental Reading forIPv4 Address Exhaustion10РјРёРЅ
+419 Graded Plugin10РјРёРЅ
+420 7 РїСЂР°РєС‚РёС‡РµСЃРєРёС… СѓРїСЂР°Р¶РЅРµРЅРёР№
+421 Name Resolution30РјРёРЅ
+422 Name Resolution in Practice30РјРёРЅ
+423 Dynamic Host Configuration Protocol30РјРёРЅ
+424 Network Address Translation30РјРёРЅ
+425 VPNs & Proxies30РјРёРЅ
+426 Networking Services Simulation30РјРёРЅ
 need internet - router
-I’m worried people are going to break into our network.
+IвЂ™m worried people are going to break into our network.
 firewall
-People can’t remember so many IP addresses!
+People canвЂ™t remember so many IP addresses!
 DNS
-We’re running out of IP addresses. We’ll need to have a way to use non-routable address space!
+WeвЂ™re running out of IP addresses. WeвЂ™ll need to have a way to use non-routable address space!
 NAT
 We need to reduce internal collision domains!
 SWITCH
@@ -572,7 +572,7 @@ Our traveling sales people need to access internal resources on the road!
 VPN
 
 
-427 Networking Services1ч 20мин
+427 Networking Services1С‡ 20РјРёРЅ
 -1 DNS stands for Domain Name System
 -2 TLD stands for Top Level Domain
 -3 A RTP record is responsible for resolving an IP to a domain name.
@@ -614,7 +614,7 @@ ACK
 SYN/ACK
 
 V SYN
--17 A technique that’s used to route traffic to different destinations, depending on factors like location, congestion, or link health, is known as anycast
+-17 A technique thatвЂ™s used to route traffic to different destinations, depending on factors like location, congestion, or link health, is known as anycast
 -18 A DNS record that's used to redirect traffic from one domain name to another is known as a CNAME record.
 -19 Administration and definition of TLDs are handled by a non-profit organization known as ICANN
 -20 When NAT hides the source IP of an originating device, this is known as IP masquerading
@@ -670,13 +670,13 @@ Port forwarding
 -One-to-many NAT
 501 Week5 Connecting to the Internet
 In the fifth week of this course, we'll explore the history of the Internet, how it evolved, and how it works today. We'll understand the different ways to connect to the Internet through cables, wireless and cellar connections, and even fiber connections. By the end of this module, you'll be able to define the components of WANs and outline the basics of wireless and cellular networking.
-502 Introduction to Connecting to the Internet1мин
+502 Introduction to Connecting to the Internet1РјРёРЅ
 Originally invented by AT&T in order to transmit multiple phone calls over a single link
 DSL
 Cable broadband
 Fiber connection
 
-503 Dial-up, Modems and Point-to-Point Protocols4мин
+503 Dial-up, Modems and Point-to-Point Protocols4РјРёРЅ
 PSTN
 Plain old telephone service
 
@@ -693,17 +693,17 @@ Baud rate
 A measurement of how many bits can be passed across a phone line in a second
 
 Broadband Connections
-504 What is broadband?3мин
+504 What is broadband?3РјРёРЅ
 Broadband
 Any connectivity technology that isn't dial-up internet
 
-505 T-Carrier Technologies2мин
+505 T-Carrier Technologies2РјРёРЅ
 Transmission System 1
 T1
 1.544 mbps 	x 28
 44.736 mbps
 
-506 Digital Subscriber Lines3мин
+506 Digital Subscriber Lines3РјРёРЅ
 Digital subscriber line
 
 DSLAMs
@@ -714,18 +714,18 @@ SDSL
 Symmetric Digital Subscriber Line
 HDSL
 High Bit-rate Digital Subscriber Lines
-507 Cable Broadband4мин
+507 Cable Broadband4РјРёРЅ
 Cable Communications Policy Act
 Shared bandwidth technology
 Central office
 Cable modem
 
-The device that sits at the edge of a consumer’s network and connects it to the cable modem termination system, orCMTS
+The device that sits at the edge of a consumerвЂ™s network and connects it to the cable modem termination system, orCMTS
 
 Cable modem termination system (CMTS)
 Connects lots of different cable connections to an ISPs core network
 
-508 Fiber Connections2мин
+508 Fiber Connections2РјРёРЅ
 FTTX
 Fiber To The X
 FTTN
@@ -739,19 +739,19 @@ Fiber To The Premises
 Optical Network Terminator (ONT)
 Converts data from protocols the fiber network can understand, to those that more
 
-509 Wide Area Network Technologies3мин
+509 Wide Area Network Technologies3РјРёРЅ
 Wide Area Networks (WAN)
 Acts like a single network, but spans across multiple physical locations
 
-510 Point-to-Point VPNs2мин
+510 Point-to-Point VPNs2РјРёРЅ
 
-511 Introduction to Wireless Networking Technologies5мин
+511 Introduction to Wireless Networking Technologies5РјРёРЅ
 Wireless networking
 A way to network without wires
 IEEE 802.11 standards
 
 Frequency band
-A certain section of the radio spectrum that’s been agreed upon to be used for certain communications
+A certain section of the radio spectrum thatвЂ™s been agreed upon to be used for certain communications
 
 In North America, FM radio transmissions operate between 88 and 108 MHz.
 FM broadcast band
@@ -792,7 +792,7 @@ Has all of the data of the protocols further up the stack
 Frame check sequence field
 Contains a checksum used for a cyclical redundancy check, just like how ethernet does it
 
-512 Wireless Network Configurations2мин
+512 Wireless Network Configurations2РјРёРЅ
 
 Ad-hoc networks
 Wireless LANS (WLANS)
@@ -800,7 +800,7 @@ Mesh networks
 
 In an ad-hoc network, there isn't really any supporting network infrastructure.
 
-513 Wireless Channels4мин
+513 Wireless Channels4РјРёРЅ
 Channels
 Individual, smaller sections of the overall frequency band used by a wireless network
 
@@ -812,7 +812,7 @@ Any one network segment where computer can interrupt another
 
 Avoid collision domains wherever you can
 
-514 Wireless Security2мин
+514 Wireless Security2РјРёРЅ
 Wired Equivalent Privacy (WEP)
 An encryption technology that provides very low level of privacy
 
@@ -826,29 +826,29 @@ MAC filtering
 
 You configure your access points to only allow for connections from a specific set of MAC addresses belonging to devices you trust
 
-515 Cellular Networking1мин
+515 Cellular Networking1РјРёРЅ
 
-516 Mobile Device Networks4мин
+516 Mobile Device Networks4РјРёРЅ
 
-517 5 материалов для самостоятельного изучения
-518 Supplemental Reading for Broadband Protocols10мин
-519 Supplemental Reading for WAN Protocols10мин
-520 Supplemental Reading for Alphabet Soup10мин
-521 Supplemental Readings for Mobile Device Networks10мин
-522 Graded Plugin10мин
-523 6 практических упражнений
-524 POTS and Dial-up30мин
-525 Broadband Internet30мин
-526 WANs30мин
-527 Wireless Networking30мин
-528 Wireless Channels30мин
-529 Connecting to the Internet1ч 20мин
+517 5 РјР°С‚РµСЂРёР°Р»РѕРІ РґР»СЏ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕРіРѕ РёР·СѓС‡РµРЅРёСЏ
+518 Supplemental Reading for Broadband Protocols10РјРёРЅ
+519 Supplemental Reading for WAN Protocols10РјРёРЅ
+520 Supplemental Reading for Alphabet Soup10РјРёРЅ
+521 Supplemental Readings for Mobile Device Networks10РјРёРЅ
+522 Graded Plugin10РјРёРЅ
+523 6 РїСЂР°РєС‚РёС‡РµСЃРєРёС… СѓРїСЂР°Р¶РЅРµРЅРёР№
+524 POTS and Dial-up30РјРёРЅ
+525 Broadband Internet30РјРёРЅ
+526 WANs30РјРёРЅ
+527 Wireless Networking30РјРёРЅ
+528 Wireless Channels30РјРёРЅ
+529 Connecting to the Internet1С‡ 20РјРёРЅ
 
 
 
 601 Week6 Troubleshooting and the Future of Networking
 Congratulations, you've made it to the final week in the course! In the last week of this course, we'll explore the future of computer networking. We'll also cover the practical aspects of troubleshooting a network using popular operating systems. By the end of this module, you'll be able to detect and fix a lot of common network connectivity problems using tools available in Microsoft Windows, MacOS, and Linux operating systems.
-602 Introduction to Troubleshooting and the Future of Networking1мин
+602 Introduction to Troubleshooting and the Future of Networking1РјРёРЅ
 Error-detection
 The ability for a protocol or program to determine that something went wrong
 Error-recovery
@@ -858,44 +858,87 @@ Misconfigurations occur
 Hardware breaks down
 System incompatibilities come to
 
-603 Ping: Internet Control Message Protocol5мин
+603 Ping: Internet Control Message Protocol5РјРёРЅ
 The payload for an ICMP packet exists entirely so that the recipient of the message knows which of their transmissions caused the error being reported.
 
 Ping lets you send a special type of ICMP message called an Echo Request.
 
-If the destination is up and running and able to communicate on the network, it’ll send back an ICMP Echo Reply message type.
+If the destination is up and running and able to communicate on the network, itвЂ™ll send back an ICMP Echo Reply message type.
 
-604 Traceroute2мин
+604 Traceroute2РјРёРЅ
+Traceroute
+A utility that lets you discover the path between two nodes, and gives you information about each hop along the way
+
+mtr- Linux/MacOS
+pathping - Windows
+
+605 Testing Port Connectivity2РјРёРЅ
+netcat - Linux/MacOS
+Test - NetConnection
+Zero
+Input/Output
+Mode
+verbose
+nc -z -v google.com 80
+-port
+
+606 Name Resolution Tools2РјРёРЅ
+cindy@ctndy-nyc:~$ nslookup twitter.com Server:	127.0.1.1
+Address:	127.0.1.1#53
+Non-authoritative answer:
+Name:	twitter.com
+Address: 104.244.42.193 Name:	twitter.com
+Address: 104.244.42.65
+cindy@cindy-nyc:~$
+
+607 Public DNS Servers3РјРёРЅ
+An ISP almost always gives you access to a recursive name server as part of the service it provides.
+
+Public DNS Servers
+Name servers specifically set up anyone can use them, for free.
+M3
+4.2.2.1
+4.2.2.2
+4.2.2.3
+4.2.2.4
+4.2.2.5
+4.2.2.6
+google.com
+8.8.8.8
+8.8.4.4
+
+Most public DNS servers are available globally through anycast.
+
+Always make sure the name server is run by a reputable company, and try to use the name servers provided by your ISP outside of troubleshooting scenarios.
+
+608 DNS Registration and Expiration2РјРёРЅ
+Registrar
+
+An organization responsible for assigning individual domain names to other organizations or individuals
+
+609 Hosts Files3РјРёРЅ
 
 
 
-
-
-
-605 Testing Port Connectivity2мин
-606 Name Resolution Tools2мин
-607 Public DNS Servers3мин
-608 DNS Registration and Expiration2мин
-609 Hosts Files3мин
-610 What is The Cloud?6мин
-611 Everything as a Service3мин
-612 Cloud Storage2мин
-613 IPv6 Addressing and Subnetting7мин
-614 IPv6 Headers2мин
-615 IPv6 and IPv4 Harmony3мин
-616 Interview Role Play: Networking4мин
-617 Course Wrap Up1мин
-618 Alex Career Path1мин
+610 What is The Cloud?6РјРёРЅ
+611 Everything as a Service3РјРёРЅ
+612 Cloud Storage2РјРёРЅ
+613 IPv6 Addressing and Subnetting7РјРёРЅ
+614 IPv6 Headers2РјРёРЅ
+615 IPv6 and IPv4 Harmony3РјРёРЅ
+616 Interview Role Play: Networking4РјРёРЅ
+617 Course Wrap Up1РјРёРЅ
+618 Alex Career Path1РјРёРЅ
 619 Congratulations!13
-620 3 материала для самостоятельного изучения
-621 Supplemental Reading for Testing Port Connectivity10мин
-622 Supplemental Reading for IPv6 and IPv4 Harmony10мин
-623 Graded Plugin10мин
-624 6 практических упражнений
-625 Verifying Connectivity30мин
-626 Digging into DNS30мин
-627 The Cloud30мин
-628 IPv630мин
-629 IPv6 Compression30мин
-630 Troubleshooting and the Future of Networking1ч 20мин
+620 3 РјР°С‚РµСЂРёР°Р»Р° РґР»СЏ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕРіРѕ РёР·СѓС‡РµРЅРёСЏ
+621 Supplemental Reading for Testing Port Connectivity10РјРёРЅ
+622 Supplemental Reading for IPv6 and IPv4 Harmony10РјРёРЅ
+623 Graded Plugin10РјРёРЅ
+624 6 РїСЂР°РєС‚РёС‡РµСЃРєРёС… СѓРїСЂР°Р¶РЅРµРЅРёР№
+625 Verifying Connectivity30РјРёРЅ
+626 Digging into DNS30РјРёРЅ
+627 The Cloud30РјРёРЅ
+628 IPv630РјРёРЅ
+629 IPv6 Compression30РјРёРЅ
+630 Troubleshooting and the Future of Networking1С‡ 20РјРёРЅ
 
