@@ -385,6 +385,51 @@ Presentation Layer
 Responsible for making sure that the unencapsulated application layer data is able to be understood by the application in question
 
 311 All the Layers Working in Unison11мин
+10.1.1.1
+Network A
+10.1.1.0/24
+
+192.168.
+192.168.1.254
+192.168.1.1
+
+Network B
+192.168.1.0/24
+
+172.16.1.1
+Network C
+172.16.1.0/24
+
+10.1.1.100
+172.16.1.100
+Port 80
+
+ARP Request
+FF:FF:FF:FF:FF:FF
+00:11:22:33:44:55
+
+Establishing a TCP connection . Open Port: 50000
+TCP Datagram
+Source port: 50000	Destination port: 80
+
+IP Datagram
+
+Ethernet Datagram
+
+Ethernet IP TCP
+
+Receives frame 
+Recognizes address 
+Calculates checksum 
+Compares checksum 
+Match detected
+
+IP TCP
+
+Source IP Address (10.1.1.100) Destination IP Address (172.16.1.100)
+
+TCP Datagram
+
 
 312 Learner Story: Daniel1мин
 313 1 материал для самостоятельного изучения
@@ -392,9 +437,65 @@ Responsible for making sure that the unencapsulated application layer data is ab
 315 4 практических упражнения
 316 The Transport Layer30мин
 317 The Application Layer30мин
+
+
 318 The Transport and Application Layer1ч 10мин
+Question 1
+Overview: As an IT Support Specialist, it’s important that you fully grasp how networks work. You may need to troubleshoot different aspects of a network, so it’s important that you know how everything fits together. This assignment will help you demonstrate this knowledge by describing how networks function.
+
+What You’ll Do: In your own words, describe what happens at every step of our network model, when a node on one network establishes a TCP connection with a node on another network. You can assume that the two networks are both connected to the same router.
+
+Your submission must include a detailed explanation of the following:
+
+Physical layer
+
+Data link layer
+
+Network layer
+
+Transport layer
+
+MAC address
+
+IP address
+
+TCP port
+
+Checksum check
+
+Routing table
+
+TTL
+--
+
+
+
+
+
 319 The Five-Layer Network Model2ч
 
+There are networks network A 192.168.1.0/24 and network B 176.16.1.0/24. 
+The router 1 has adresses 192.168.1.1 and 176.16.1.1.
+The router 1 has Routing table with two networks A and B.
+The clients computer 1 is 192.168.1.100.
+The host 2 has address 176.16.1.100.
+The client does http request to IP address 176.16.1.100 on port 80.
+The client opens socket TCP and does TCP segment at Transport layer:
+source port 50000
+destination port 80
+control flags SYN
+data payload - request
+CRC
+Then on IP layer IP be making IP Datagram
+destination port 1 
+Transport layer passes to Data link layer this segment.
+Network layer does IP Datagram with TTL: 64, source IP Address 192.168.1.100, Destination IP Address 172.16.1.100,
+protocol TCP, CRC and payload TCP segment.
+Data link layer does not have in ARP table MAC address of 172.16.1.100. It does frame with MAC address router 1 192.168.1.1 and send it on Physical layer CAT6 cables.
+Router 1 sees this frame and Checksum check.
+It get IP datagram and sees IP address destination.
+It find in Routing table MAC address destination and send frame to server.
+Server has open TCP port 80
 
 
 401 Week4 Networking Services
@@ -917,16 +1018,133 @@ Registrar
 An organization responsible for assigning individual domain names to other organizations or individuals
 
 609 Hosts Files3мин
+The original way that numbered network addresses were correlated with words was through hosts files.
 
+Hosts File
+A flat file that contains, on each line, a network address followed by the host it can be referred to as
 
+Loopback Address
+A way of sending network traffic to yourself
+
+Almost every hosts file in existence will, in the very least, contain a line that reads 127.0.0.1 localhost, most likely followed by ::1 localhost, where ::1 is the loopback address for IPv6.
+
+Hosts files are a popular way for computer viruses to disrupt and redirect users’ traffic.
 
 610 What is The Cloud?6мин
+
+Cloud Computing
+A technological approach where computing resources are provisioned in a shareable way, so that lots of users get what they need, when they need it
+
+Hardware
+virtualization
+
+Virtualization
+A single physical machine, called a host, could run many individual virtual instances, called guests
+
+Hypervisor
+A piece of software that runs and manages virtual machines, while also offering these guests a virtual operating platform that’s indistinguishable from actual hardware
+
+Public cloud
+A large cluster of machines run by another company
+
+Private cloud
+Used by a single large corporation and generally physically hosted on its own premises
+
+Hybrid cloud
+A term used to describe situations where companies might run things like their most sensitive proprietary technologies on a private cloud, while entrusting their less-sensitive servers to a public cloud-
+
+Cloud Computing
+A new model in computing where large clusters of machines let us use the total resources available in a better way
+
 611 Everything as a Service3мин
+
+X as a Service
+
+Infrastructure as a Service (laaS)
+You shouldn’t have to worry about building your own network or your own servers
+
+PaaS
+SaaS
+
+Platform as a Service (PaaS)
+A subset of cloud computing where a platform is provided for customers to run their services
+
+Software as a Service (SaaS)
+A way of licensing the use of software to others while keeping that software centrally hosted and managed
+
+Gmail for Business
+Office 365 Outlook
+
 612 Cloud Storage2мин
+
+Secure
+Accessible
+Available
+
 613 IPv6 Addressing and Subnetting7мин
+
+IPv5 was an experimental protocol that introduced the concept of connections.
+
+Undecillion
+
+2001:0db8:0000:0000:0000:ff00:0012:345
+Reserved IP
+
+2001:0db8:0000:0000:0000:ff00:0012:3456
+2001:db8:0:0:0:ff00:12:3456
+
+0000:0000:0000:0000:0000:0000:0000:0001
+::1
+
+FF00:
+Multicast
+A way of addressing groups of hosts all at once
+
+FE80::
+
+Link-local unicast addresses
+Allow for local network segment communications and are configured based upon a hosts MAC address
+
+2001:0db8:0000:0000:p000:ff00:0012:3456
+Network ID          Host ID
+
 614 IPv6 Headers2мин
+
+IPv6 header
+
+Version field
+A 4-bit field that defines what version of IP is in use
+
+Traffic class field
+An 8-bit field that defines the type of traffic contained within the IP datagram, and allows for different classes of traffic to receive different priorities
+
+Flow label field
+A 20-bit field thats used in conjunction with the traffic class field for routers to make decisions about the quality of service level for a specific datagram
+
+Payload length field
+
+A 16-bit field that defines how long the data payload section of the datagram is
+
+Next header field
+A unique concept to IPv6, and needs a little extra explanation
+
+Hop limit field
+An 8-bit field that's identical in purpose to the TTL field in an IPv4 header
+
 615 IPv6 and IPv4 Harmony3мин
+
+IPv4 mapped address space
+192.168.1.1  0000:0000:0000:0000:0000:ffff:c0a8:0101
+
+IPv6 tunnels
+Servers take incoming IPv6 traffic and encapsulate it within traditional IPv4 datagram
+
+IPv6 tunnel broker
+Companies that provide IPv6 tunneling endpoints for you, so you don’t have to introduce additional equipment to your network
+
 616 Interview Role Play: Networking4мин
+Sample interview scenario
+
 617 Course Wrap Up1мин
 618 Alex Career Path1мин
 619 Congratulations!13
@@ -940,5 +1158,49 @@ An organization responsible for assigning individual domain names to other organ
 627 The Cloud30мин
 628 IPv630мин
 629 IPv6 Compression30мин
+
+8bfa:99f0:d4c5:0b8c:0f6f:04df:2804:283d
+8bfa:99f0:d4c5:b8c:f6f:4df:2804:283d
+
+2b06:0000:0000:1f2b:d77f:0000:0000:89ce
+2b06::1f2b:d77f:0:0:89ce
+2b06::1f2b:d77f:0:0:89ce
+
+5d66:5ec9:0046:0000:2576:004f:7159:0639
+5d66:5ec9:46::2576:4f:7159:639
+5d66:5ec9:46::2576:4f:7159:639
+
+ad93:a0e4:a9ce:32fc:cba8:15fe:ed90:d768
+
+7d2b:00a9:a0c4:0000:a772:00fd:a523:0358
+7d2b:00a9:a0c4:0000:a772:00fd:a523:0358
+7d2b:a9:a0c4:0:a772:fd:a523:358
+
+558c:0000:0000:d367:7c8e:1216:0000:66be
+558c:0000:0000:d367:7c8e:1216:0000:66be
+558c::d367:7c8e:1216:0:66be
+
+9930:cafa:0000:0052:04cc:7b7a:0037:27e6
+9930:cafa:0:52:4cc:7b7a:37:27e6
+
+0e56:11c2:0e75:8d23:3528:7e0d:419b:bdce
+e56:11c2:e75:8d23:3528:7e0d:419b:bdce
+
+00c8:b434:06ee:ec2f:03c9:01ce:765d:a66b
+c8:b434:6ee:ec2f:3c9:1ce:765d:a66b
+
+00eb:0000:0000:0000:d8c1:0946:0272:0879
+eb::d8c1:0946:272:879
+
 630 Troubleshooting and the Future of Networking1ч 20мин
 
+A web developer requires an environment to perform application testing. Which cloud service type does the developer choose to use?
+
+Virtualization service
+
+Platform as a Service
+
+Infrastructure as a Service
+
+Software as a Service
+Not quite. Please review the videos in the "The Cloud" module for a refresher.

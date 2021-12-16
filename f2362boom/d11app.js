@@ -85,8 +85,15 @@ $(() => {
 
   createBoard()
 
+  let ip = ''
+  fetch('https://api.ipify.org/?format=json')
+  .then(results => results.json())
+  .then(data => {
+    console.log(data.ip)
+    ip = data.ip
+    log1.text(ip)
+  })
 
-  log1.text()
   log2.text()
 
 })
