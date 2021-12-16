@@ -849,8 +849,29 @@ You configure your access points to only allow for connections from a specific s
 601 Week6 Troubleshooting and the Future of Networking
 Congratulations, you've made it to the final week in the course! In the last week of this course, we'll explore the future of computer networking. We'll also cover the practical aspects of troubleshooting a network using popular operating systems. By the end of this module, you'll be able to detect and fix a lot of common network connectivity problems using tools available in Microsoft Windows, MacOS, and Linux operating systems.
 602 Introduction to Troubleshooting and the Future of Networking1мин
+Error-detection
+The ability for a protocol or program to determine that something went wrong
+Error-recovery
+The ability for a protocol or program to attempt to fix it
+Errors still pop up
+Misconfigurations occur
+Hardware breaks down
+System incompatibilities come to
+
 603 Ping: Internet Control Message Protocol5мин
+The payload for an ICMP packet exists entirely so that the recipient of the message knows which of their transmissions caused the error being reported.
+
+Ping lets you send a special type of ICMP message called an Echo Request.
+
+If the destination is up and running and able to communicate on the network, itТll send back an ICMP Echo Reply message type.
+
 604 Traceroute2мин
+
+
+
+
+
+
 605 Testing Port Connectivity2мин
 606 Name Resolution Tools2мин
 607 Public DNS Servers3мин
