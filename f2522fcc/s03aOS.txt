@@ -2,35 +2,181 @@
 Welcome to the Operating Systems course of the IT Support Professional Certificate! In the first week of this course, we will cover the basics of Windows and Linux operating systems (OS). We will learn about how directories and files work in Windows and Linux OS. You will also learn practical ways to manipulate files and directories in the Windows graphical user interface (GUI), Windows command line interface (CLI), and Linux shell. By the end of this module, you will interact with files and directories and perform basic text manipulation in Windows and Linux OS.
 102 Course Introduction5мин
 103 Lesson Overview & Practice Tips2мин
+Windows
+GUI (Graphical User Interface)
+CLI (Command Line Interpreter)
+The command line interpreter in Linux is called a shell, and the language that we’ll use to interact with this shell is called Bash.
+Basic Operating System Navigation
+Navigating from one directory to another
+Getting file information
+Removing files and directories
+
+File and Text Manipulation
+Searching through your directories
+Find a specific file
+Copying and pasting
+Chaining commands
+
 104 List Directories in a GUI5мин
+In Windows, filesystems are assigned to drive letters, which look like C:, or D:, or X
+
+The root directory of C: would be written C:\, and the root directory of X: would be written X:\.
+
+Subdirectories are separated by backslashes (\), unlike Linux, which uses forward slashes (/).
+
 105 Windows: List Directories in CLI4мин
+Command Prompt: cmd.exe
+PowerShell: powershell.exe
+
+Aliases
+ls
+Parameter
+
+The C: drive root folder is what we call a parent directory and the contents inside are considered child directories.
+
+Get-Help ls
+Get-Help Is -Full
+-Force
+
 106 Linux: List Directories6мин
+root directory /
+home directory ~
+/home/cindy/ Desktop
+Similar to Windows command parameters, a flag is a way to specify additional options for a command.
+ls -l -a /
+ls -la /
+This is the same thing as: ls -l -a /. Both work the exact same way.
+The -a or all flag shows all files including hidden ones.
+
 107 Windows: Changing Directories in the GUI1мин
+An absolute path is one that starts from the main directory. A relative path is the path from your current directory.
+
 108 Windows: Changing Directories in the CLI4мин
+pwd
+cd ~
+cd ..
+Tab completion
+
 109 Linux: Changing Directories in Bash1мин
+pwd
+cd ~/Desktop
+
 110 Windows: Make Directories in the GUI & CLI2мин
+mkdir my_cool_folder
+mkdir 'my cool folder'
+mkdir my` cool` folder
+
 111 Linux: Make Directories in Bash1мин
+mkdir my\ cool\ folder
+mkdir 'my cool folder'
+
 112 Windows: Command History2мин
+history
+Ctrl-R
+#mkdir folder
+clear
+
 113 Linux: Command History47
+
 114 Windows: Copying Files & Directories4мин
+cp mycoolfile.txt C:\Users\cindy\Desktop\
+
+Wildcard
+A character thats used to help select files based on a certain pattern
+cp	Pictures C:\Users\cindy\Desktop\
+cp	C:\Users\cindy\Desktop\ -Recurse -Verbse
+
 115 Linux: Copying Files and Directories1мин
+cp -r 'Cat Pictures' ~/Desktop
+
 116 Windows: Moving and Renaming Files, Directories2мин
+mv .\blue_document.txt yellow_document.txt
+mv .\ye11ow_document.txt ~\Documents
+
 117 Linux: Moving and Renaming Files, Directories1мин
+In PowerShell, the command to remove files and directories is rm or remove.
+
 118 Windows: Removing Files & Directories3мин
+In PowerShell, the command to remove files and directories is rm or remove.
+rm c:\Users\cindy\important_system_file
+
 119 Linux: Removing Files & Directories1мин
 120 Cindy Why OS is Important1мин
 121 Learner Story: Chelsea3мин
 122 Windows: Display File Contents3мин
+cat .\important_document.txt
+more .\large_document.txt
+The enter key advances the file by one line.
+Space advances the file by one page.
+The q key allows you to quit out of more and go back to your shell.
+cat fruits.txt -Head 10
+cat fruits.txt -Tail 10
+
 123 Linux: Display File Contents2мин
+cat important_document.txt
+less large_document.txt
+g - This moves to the beginning of a file.
+G - This moves to the end of a text file.
+/word_search - This allows you to search for a word or phrase.
+q - This allows you to quit out of less and go back to your shell.
+tail fruits.txt
+
 124 Windows: Modifying Text Files2мин
+start notepad++ hello.txt
+
 125 Linux: Modifying Text Files1мин
+
+
 126 Windows Powershell3мин
+Get-Alias ls
+Get-Childltem
+Get-Childltem C:\
+PowerShell	  Alias	cmd.exe
+Get-Childltem ls	dir
+Get-Help is used for PowerShell commands like Get-Help Is, and /? is used for other commands like dir such as dir /?.
+
 127 Windows: Searching within Files6мин
+sls
+Select-String cow farm_ammals.txt
+Select-String cow *.txt
+The -Filter parameter will filter the results for file names that match a pattern.
+
 128 Windows: Searching within Directories1мин
 129 Linux: Searching within Files1мин
+grep cow farm_aninals.txt
+
 130 Windows: Input, Output, and the Pipeline7мин
+echo woof > dog.txt
+stdin
+stdout
+stderr
+
+cat .\dog.txt 
+echo woof
+echo woof >> dog.txt
+
+cat words.txt | Select-String st
+rm secure_file 2 > errors.txt 
+cat errors.txt
+
+rm secure_file 2> $null
+
 131 Linux: Input, Output and Pipeline3мин
+echo woof > dog.txt 
+cat dog.txt
+echo woof >> dog.txt
+
+ls /dir/fake_dir 2> error_output.txt
+less /var/log/syslog 2> /dev/null
+
+ls -la /etc | grep bluetooth
+
 132 Windows and Linux Advanced Navigation1мин
+Regular expressions
+Used to help you do advanced pattern-based selection
+
+
+
 133 Ben First Tech Job1мин
 134 10 материалов для самостоятельного изучения
 135 Navigating Coursera10мин
