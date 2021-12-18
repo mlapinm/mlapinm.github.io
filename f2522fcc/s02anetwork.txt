@@ -619,10 +619,11 @@ V SYN
 -19 Administration and definition of TLDs are handled by a non-profit organization known as ICANN
 -20 When NAT hides the source IP of an originating device, this is known as IP masquerading
 -21 An IT systems engineer creates a new Domain Name System (DNS) zone that contains pointer (PTR) resource records. Which zone type has been created?
+?fqdn
 -22 An IT systems engineer creates a new Domain Name System (DNS) zone that contains pointer (PTR) resource records. Which zone type has been created?
 ) resource records. Which zone type has been created?
 
-Reverse lookup
+?Reverse lookup
 
 -Start of Authority (SOA)
 
