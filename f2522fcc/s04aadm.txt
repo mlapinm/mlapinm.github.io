@@ -48,7 +48,7 @@ Software or a machine that provides services to other software or machines
 
 
 
-201 Ќ≈ƒ≈Ћя 2 Network and Infrastructure Services
+201 week 2 Network and Infrastructure Services
 In the second week of this course, we'll learn about network and infrastructure services. We will cover what IT infrastructure services are and what their role is in system administration. We'll also learn about server operating systems, virtualization, network services, DNS for web services, and how to troubleshoot network services. By the end of this module, you will know the most common IT infrastructure services you'll encounter when handling system administration tasks.
 202 What are IT Infrastructure Services?56
 203 The Role of IT Infrastructure Services in SysAdmin56
