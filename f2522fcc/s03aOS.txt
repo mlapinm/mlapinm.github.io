@@ -739,19 +739,166 @@ Get-Package -name sysinternals
 In the fourth week of this course, we'll learn about how filesystems work for Windows and Linux OS. We'll learn about filesystem types and why they're different for certain OS. We'll learn about disk partitioning and virtual memory and why these are so important for an IT Support Specialist's role. We'll also cover ways mount and unmount filesystems, read disk usage, and repair filesystems. By the end of this module, you will partition and format a disk drive yourself in both Windows and Linux.
 402 Module Introduction49
 403 Review of Filesystems2мин
+Filesystem
+Used to keep track of files and file storage a disk
+
 404 Disk Anatomy3мин
+Partition
+The piece of a disk that you can manage
+
+Partition table
+Tells the OS how the disk is partitioned
+
+Master Boot Record (MBR)
+GUID Partition Table (GPT)
+
+UEFI
+
 405 Windows: Disk Partitioning and Formatting a Filesystem6мин
+Disk Management
+C:\Windows\system32>Diskpart
+DISKPART> list disk
+DISKPART> select disk 1
+clean
+create partition primary
+select partition 1
+active
+format FS=NTFS label=my-thumb-drive quick
+
 406 Windows: Mounting and Unmounting a Filesystem51
+Mounting
+Making something accessible to the computer, like a filesystem or a hard disk
+
 407 Linux: Disk Partitioning and Formatting a Filesystem6мин
+Parted tool
+Interactive
+Command Line
+parted -l
+sudo parted -l
+sudo parted /dev/sdb
+(parted) print
+
+(parted) mklabel gpt (parted) print
+
+Model: Kingston DataTraveler 2.0 (scsi) Disk /dev/sdb: 7803MB
+
+Sector size (logical/physical): 512B/512B Partition Table: gpt Disk Flags:
+Number Start End Size File system Name Flags
+
+(parted) mkpart primary ext4 IMiB 5G1B (parted) print
+
+Model: Kingston DataTraveler 2.0 (scsi)
+
+Disk /dev/sdb: 7803MB
+
+Sector size (logical/physical): 512B/512B Partition Table: gpt Disk Flags:
+
+Number	Start	End	Size	File	system Name	Flags
+
+1	1049kB	5369MB	5368MB	ext4	primary
+
+cindy@cindy-nyc:~$ sudo mkfs -t ext4 /dev/sdb1
+sudo mkfs -t ext4 /dev/sdb1
+sudo parted -l
+
 408 Linux: Mounting and Unmounting a Filesystem3мин
+sudo mount /dev/sdb1 /my_usb/
+cindy@cindy-nyc:~$ sudo mount /dev/sdb1 /my_usb/
+cindy@cindy-nyc:~$ cd /my_usb/ 
+cindy@cindy-nyc:/my_usb$
+
+sudo umount /my_usb/
+
+sudo umount /dev/sdb1
+
+/etc/fstab
+cat /etc/fstab
+sudo blkid
+
 409 Windows: Swap3мин
+Swap space
+pagefile.sys
+Virtual memory
+How our OS provides the physical memory available in our computer (like RAM) to the applications that run on the computer
+
+Memory Manager
+System Properties
+
 410 Linux: Swap2мин
+Swap space
+In Linux, the dedicated area of the hard drive used for virtual memory
+
+(parted) mkpart primary linux-swap 5GiB 100%
+
+sudo parted /dev/sdb
+
+mkswap
+sudo mkswap /dev/sdb2
+
+swapon
+sudo swapon /dev/sdb2
+
 411 Windows: Files6мин
+Master File Table
+MFT
+file record number
+shortcut
+Symbolic links
+mklink
+mklink file_1_symlink file_1.txt
+Hard link
+mklink /H
+mklink /H file_1_handlink file_1.txt
+
 412 Linux: Files2мин
+Softlink
+Hardlink
+
+cindy@cindy-nyc:~/Desktop$ ls -l important_file 
+-rw-rw-r-- 1 cindy cindy 0 Oct 5 16:40 important_file 
+cindy@cindy-nyc:~/Desktop$ ln -s important_file important_file_softlink 
+cindy@cindy-nyc:~/Desktop$ ls important_file inportant_file_softlink
+
+cindy@cindy-nyc:~/Desktop$ In inportant_file important_file_hardlink 
+cindy@cindy-nyc:~/Desktop$ ls
+
+important_file important_file_hardlink important_file_softlink 
+cindy@cindy-nyc:~/Desktop$ Is -l important_file -rw-rw-r-- 2 cindy cindy 0 Oct 5 16:40 important_file 
+cindy@cindy-nyc:~/Desktop$ 
+
 413 Windows: Disk Usage3мин
+Defragmentation
+The idea behind disk defragmentation is to take all the files stored on a given disk, and reorganize them into neighboring locations.
+Trim
+Disk Defragmenter
+
 414 Linux: Disk Usage1мин
+du -h
+df
+
 415 Windows: Filesystem Repair4мин
+Data buffer
+A region of RAM that’s used to temporarily store data while it’s being moved around
+
+Self-healing
+fsutil
+
+C:\Windows\system32>fsutil repair query C: 
+Self healing state on C: is: 0x9
+Values: 0x1 - Enable general repair.
+
+0x9 - Enable repair and warn about potential data loss.
+
+0x10 - Disable repair and bugcheck once on first corruption
+
+Chkdsk
+chkdsk /F D:
+
 416 Linux: Filesystem Repair1мин
+
+fsck
+sudo fsck /dev/sda
+
 417 Ben Passion1мин
 418 9 материалов для самостоятельного изучения
 419 Supplemental Reading for FAT32 File System10мин
@@ -771,15 +918,77 @@ In the fourth week of this course, we'll learn about how filesystems work for Wi
 501 Week5 Process Management
 In the fifth week of this course, we'll explore process management. As an IT Support Specialist, it is important to use system tools to read and understand process statuses of machines. We will cover ways to start and terminate a process in Windows and Linux. We will also apply troubleshooting tools to solve problems with processes and resources. By the end of this module, you will use Windows and Linux commands to do practical process maintenance.
 502 Module Introduction1мин
+
 503 Programs vs Processes Revisited2мин
+Programs
+The applications that we can run, like the Chrome web browser
+Processes
+Programs that are running
+Background processes
+Daemon processes
+
 504 Windows: Process Creation and Termination3мин
+Session Manager Subsystem
+smss.exe
+winlogon.exe
+
+Client/Server Runtime Subsystem
+csrss.exe
+init
+Environment
+taskkill
+Process ID
+PID
+C:\Windows\system32>taskkill /pid 5856
+
+SUCCESS: Sent termination signal to the process with PID 5856.
+
 505 Linux: Process Creation and Termination1мин
+
+When you startup your computer, the kernel creates a process called init, which has a PID of 1.
+
 506 Jess Passions1мин
+
 507 Windows: Reading Process Information3мин
+Task Manager
+taskmgr.exe
+CTRL-SHIFT-ESC
+taskkill
+tasklist
+Get-Process
+
 508 Linux: Reading Process Information4мин
+ps -x
+R: running
+T: stopped
+S: interruptible sleep
+ps -ef
+
+cindy@cindy-nyc:~$ ps -ef | grep Chrome
+
+cindy 10165 10123	0 15:15 pts/1 00:00:00 grep --color=auto
+
+cindy@cindy-nyc:~$
+
+ls -l /proc
+cat /proc/1805/status
+ps -ef
+
 509 Windows: Signals1мин
+Signal
+A way to tell a process that something's just happened
+SIGINT
+
 510 Linux: Signals1мин
+
 511 Windows: Managing Processes5мин
+Process Explorer
+A utility Microsoft created to let IT Support Specialists, system administrators and other users look at running processes
+CTRL-F
+MUI
+Multilingual User Interface
+procexp.exe
+
 512 Linux: Managing Processes4мин
 513 Mobile App Management4мин
 514 Windows: Resource Monitoring4мин
