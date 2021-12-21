@@ -1,0 +1,969 @@
+101 Week1 Navigating the System
+Welcome to the Operating Systems course of the IT Support Professional Certificate! In the first week of this course, we will cover the basics of Windows and Linux operating systems (OS). We will learn about how directories and files work in Windows and Linux OS. You will also learn practical ways to manipulate files and directories in the Windows graphical user interface (GUI), Windows command line interface (CLI), and Linux shell. By the end of this module, you will interact with files and directories and perform basic text manipulation in Windows and Linux OS.
+102 Course Introduction5мин
+103 Lesson Overview & Practice Tips2мин
+Windows
+GUI (Graphical User Interface)
+CLI (Command Line Interpreter)
+The command line interpreter in Linux is called a shell, and the language that we’ll use to interact with this shell is called Bash.
+Basic Operating System Navigation
+Navigating from one directory to another
+Getting file information
+Removing files and directories
+
+File and Text Manipulation
+Searching through your directories
+Find a specific file
+Copying and pasting
+Chaining commands
+
+104 List Directories in a GUI5мин
+In Windows, filesystems are assigned to drive letters, which look like C:, or D:, or X
+
+The root directory of C: would be written C:\, and the root directory of X: would be written X:\.
+
+Subdirectories are separated by backslashes (\), unlike Linux, which uses forward slashes (/).
+
+105 Windows: List Directories in CLI4мин
+Command Prompt: cmd.exe
+PowerShell: powershell.exe
+
+Aliases
+ls
+Parameter
+
+The C: drive root folder is what we call a parent directory and the contents inside are considered child directories.
+
+Get-Help ls
+Get-Help Is -Full
+-Force
+
+106 Linux: List Directories6мин
+root directory /
+home directory ~
+/home/cindy/ Desktop
+Similar to Windows command parameters, a flag is a way to specify additional options for a command.
+ls -l -a /
+ls -la /
+This is the same thing as: ls -l -a /. Both work the exact same way.
+The -a or all flag shows all files including hidden ones.
+
+107 Windows: Changing Directories in the GUI1мин
+An absolute path is one that starts from the main directory. A relative path is the path from your current directory.
+
+108 Windows: Changing Directories in the CLI4мин
+pwd
+cd ~
+cd ..
+Tab completion
+
+109 Linux: Changing Directories in Bash1мин
+pwd
+cd ~/Desktop
+
+110 Windows: Make Directories in the GUI & CLI2мин
+mkdir my_cool_folder
+mkdir 'my cool folder'
+mkdir my` cool` folder
+
+111 Linux: Make Directories in Bash1мин
+mkdir my\ cool\ folder
+mkdir 'my cool folder'
+
+112 Windows: Command History2мин
+history
+Ctrl-R
+#mkdir folder
+clear
+
+113 Linux: Command History47
+
+114 Windows: Copying Files & Directories4мин
+cp mycoolfile.txt C:\Users\cindy\Desktop\
+
+Wildcard
+A character thats used to help select files based on a certain pattern
+cp	Pictures C:\Users\cindy\Desktop\
+cp	C:\Users\cindy\Desktop\ -Recurse -Verbse
+
+115 Linux: Copying Files and Directories1мин
+cp -r 'Cat Pictures' ~/Desktop
+
+116 Windows: Moving and Renaming Files, Directories2мин
+mv .\blue_document.txt yellow_document.txt
+mv .\ye11ow_document.txt ~\Documents
+
+117 Linux: Moving and Renaming Files, Directories1мин
+In PowerShell, the command to remove files and directories is rm or remove.
+
+118 Windows: Removing Files & Directories3мин
+In PowerShell, the command to remove files and directories is rm or remove.
+rm c:\Users\cindy\important_system_file
+
+119 Linux: Removing Files & Directories1мин
+120 Cindy Why OS is Important1мин
+121 Learner Story: Chelsea3мин
+122 Windows: Display File Contents3мин
+cat .\important_document.txt
+more .\large_document.txt
+The enter key advances the file by one line.
+Space advances the file by one page.
+The q key allows you to quit out of more and go back to your shell.
+cat fruits.txt -Head 10
+cat fruits.txt -Tail 10
+
+123 Linux: Display File Contents2мин
+cat important_document.txt
+less large_document.txt
+g - This moves to the beginning of a file.
+G - This moves to the end of a text file.
+/word_search - This allows you to search for a word or phrase.
+q - This allows you to quit out of less and go back to your shell.
+tail fruits.txt
+
+124 Windows: Modifying Text Files2мин
+start notepad++ hello.txt
+
+125 Linux: Modifying Text Files1мин
+
+
+126 Windows Powershell3мин
+Get-Alias ls
+Get-Childltem
+Get-Childltem C:\
+PowerShell	  Alias	cmd.exe
+Get-Childltem ls	dir
+Get-Help is used for PowerShell commands like Get-Help Is, and /? is used for other commands like dir such as dir /?.
+
+127 Windows: Searching within Files6мин
+sls
+Select-String cow farm_ammals.txt
+Select-String cow *.txt
+The -Filter parameter will filter the results for file names that match a pattern.
+
+128 Windows: Searching within Directories1мин
+129 Linux: Searching within Files1мин
+grep cow farm_aninals.txt
+
+130 Windows: Input, Output, and the Pipeline7мин
+echo woof > dog.txt
+stdin
+stdout
+stderr
+
+cat .\dog.txt 
+echo woof
+echo woof >> dog.txt
+
+cat words.txt | Select-String st
+rm secure_file 2 > errors.txt 
+cat errors.txt
+
+rm secure_file 2> $null
+
+131 Linux: Input, Output and Pipeline3мин
+echo woof > dog.txt 
+cat dog.txt
+echo woof >> dog.txt
+
+ls /dir/fake_dir 2> error_output.txt
+less /var/log/syslog 2> /dev/null
+
+ls -la /etc | grep bluetooth
+
+132 Windows and Linux Advanced Navigation1мин
+Regular expressions
+Used to help you do advanced pattern-based selection
+
+
+
+133 Ben First Tech Job1мин
+134 10 материалов для самостоятельного изучения
+135 Navigating Coursera10мин
+136 Program Surveys10мин
+137 How to Use Discussion Forums10мин
+138 Get to Know Your Classmates10мин
+139 Supplemental Reading for Windows CLI & Unix Bash10мин
+140 Supplemental Reading for 'Size' vs 'Size of Disk' in Windows10мин
+141 Supplemental Reading for Notepad++10мин
+142 Supplemental Reading for GNU Documentation10мин
+143 Supplemental Reading for Windows PowerShell10мин
+144 Instructions for Accessing Linux and Windows Qwiklabs10мин
+145 3 практических упражнения
+146 Basic Commands30мин
+147 File and Text Manipulation30мин
+148 Accessing Qwiklabs16мин
+
+
+
+201 Week2 Users and Permissions
+In the second week of this course, we'll learn about configuring users and permissions in Windows and Linux OS. As an IT Support Specialist, it's important to know how to grant the appropriate permissions to users and groups for both Windows and Linux OS. By the end of this module, you will know how to add, modify, and remove users for a computer and for specific files and folders by using the Windows GUI, Windows CLI, and Linux shell.
+202 Users, Administrators, and Groups, Oh My!3мин
+Standard users
+Administrators
+
+Standard user
+One who is given access to a machine but has restricted access to do things like install software or change certain settings
+
+Administrator (admin)
+A user that has complete control machine
+
+Groups
+
+203 Windows: View User and Group Information6мин
+Windows domain
+A network of computers, users, files, etc that are added to a central database
+
+User Access Control (UAC)
+A feature in Windows that prevents unauthorized changes to a system
+
+204 Windows: View User and Group Information using CLI2мин
+Users and Groups
+Windows: Viewing User and Group Information using CLI
+
+Get-LocalUser
+Get-LocalGroup
+
+Get-LocalGroupMember Admini strators
+
+205 Linux: Users, Superuser and Beyond4мин
+sudo command or superuser do
+
+cat /etc/sudoers Permission denied sudo cat /etc/sudoers|
+sudo su
+sudo su exit
+
+cat /etc/group|
+
+cat /etc/passwd|
+
+206 Windows: Passwords4мин
+net
+
+PS C:\Users\cmdy> net user cindy * 
+Type a password for the user:
+
+/logonpasswordchg:yes
+
+net user victor /logonpasswordchg:yes
+
+207 Linux: Passwords1мин
+passwd cindy
+
+cindy@cindy-nyc:~$ sudo passwd -e victor 
+passwd: password expiry information changed. 
+cindy@cindy-nyc:~$
+
+208 Windows: Adding and Removing Users5мин
+net user andrea * /add
+
+net user andrea /logonpasswordchg:yes
+
+net user cesar pa5swOrd /add /logonpasswordchg:yes
+
+net user andrea /del
+
+Remove-Local User cesar
+
+209 Linux: Adding and Removing Users50
+
+sudo useradd juan 
+sudo userdel juan
+
+Biometric data
+Something about you that's unique to you, like a fingerprint, a voice, or a face
+
+210 Mobile Users and Accounts3мин
+
+Mobile device management
+MDM
+
+211 Ben Life as a CIO1мин
+212 Windows: File Permissions5мин
+
+In Windows, files and directory permissions are assigned using Access Control Lists or ACLs. Specifically, we Ye going to be working with Discretionary Access Control Lists or DACLs.
+
+Windows files and folders can also have System Access Control Lists or SACLs assigned to them. SACLs are used to tell Windows that it should use an event log to make a note of every time someone accesses a file or folder.
+
+Read: The Read permission lets you see that a file exists, and allows you to read its contents. It also lets you read the files and directories in a directory.
+
+Read & Execute: The Read & Execute permission lets you read files, and if the file is an executable, you can run the file. Read & Execute includes Read, so if you select Read & Execute, Read will be automatically selected.
+
+List folder contents: List folder contents is an alias for Read & Execute on a directory. Checking one will check the other. It means that you can read and execute files in that directory.
+
+Write: The Write permission lets you make changes to a file. It might be surprising to you, but you can have write access to a file without having read permission to that file!
+
+The Write permission also lets you create subdirectories, and write to files in the directory.
+
+Modify: The Modify permission is an umbrella permission that includes read, execute, and write.
+
+Full control: A user or group with full control can do anything they want to the file! It includes all of the permissions of Modify, and adds the ability to take ownership of a file and change its ACLs.
+
+icacls C:\users\cindy\Desktop\
+
+NT AUTHORITY\SYSTEM:(0I)(CI)(F) 
+BUlLTlN\Administrators:(OI)(CI)(F) 
+CINDY-NYC\cindy:(OI)(CI)(F)
+
+213 Linux: File Permissions2мин
+Read - This allows someone to read the contents of a file or folder.
+
+Write - This allows someone to write information to a file or folder.
+
+Execute - This allows someone to execute a program.
+
+Is -l ~/my_file
+
+214 Windows: Modifying Permissions7мин
+icacls
+icacls "C:\Vacation Pictures" /grant Everyone:(OI)(CI)(R)
+
+PC C:\Windows\system32>icacls "C:\Vacation Pictures"
+
+C:\Vacation Pictures Everyone:(OI)(CI)(R)
+
+CINDY-NYC\devan:(OI)(CI)(M)
+BUILTIN\Administrators:(I)(OI)(CI)(F)
+NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+BUILTIN\Users:(I)(OI)(CI)(RX)
+NT AUTHORITY\Authenticated Users:(I)(M)
+NT AUTHORITY\Authenticated Users:(I)(OI)(CI)(10)(M)
+
+
+PS C:\windows\system32> icacls "C:\Vacation Pictures" /grant
+
+processed file: C:\Vacation Pictures
+
+Successfully processed 1 files; Failed processing 0 files PS
+C:\Windows\system32>
+
+Guest users: This is a special type of user that’s allowed to use the computer without a password. Guest users are disabled by default. You might enable them in very specific situations
+
+
+PS C:\windows\system32> icacls "C:\Vacation Pictures" /grant
+
+processed file: C:\Vacation Pictures
+
+Successfully processed 1 files; Failed processing 0 files PS C:\windows\system32> _
+
+
+PS C:\Windows\system32> icacls "C:\Vacation Pictures" /remove Everyone
+
+processed file: C:\Vacation Pictures
+
+Successfully processed 1 files; Failed processing 0 files PS C:\windows\system32>
+
+
+PS C:\wmdows\system32> icacls "C:\Vacation Pictures"
+
+C:\Vacation Pictures NT AUTHORITY\Authenticated Users:(0I)(CI)(R)
+
+CINDY-NYC\devan:(0I)(CI)(M)
+
+BUILTIN\Admi ni strators:(I)(0I)(CI)(F)
+
+NT AUTHORITY\SYSTEM:(I)(0I)(CI)(F)
+
+BUILTIN\Users:(I)(0I)(CI)(RX)
+
+NT AUTHORITY\Authenticated Users:(I)(M)
+
+NT AUTHORITY\Authenticated Users:(I)(0I)(CI)(10)(M)
+
+Successfully processed 1 files; Failed processing 0 files
+
+PS C:\windows\system32> .
+
+215 Linux: Modifying Permissions4мин
+The owner, which is denoted by a “u”
+
+The group the file belongs to, which is denoted by a “g”
+
+Or other users, which is denoted by an “o”
+
+
+cindy@cindy-nyc:~$ Is -l my_cool_file
+
+--w------- 1 cindy cool_group 0 Oct 9 17:49 my_cool_file
+
+cindy@cindy-nyc:~$ chmod u+x my_cool_file cindy@cindy-nyc:~$ Is -l my_cool-file
+
+Is: cannot access 'my_cool-file': No such file or directory cindy@cindy-nyc:~$ Is -l my_cool_file
+
+--wx------ 1 cindy cool_group 0 Oct 9 17:49 my_cool_file
+
+wcindy-nyc:~$ chmod u-x my_cool_file cindy@cindy-nyc:~$ Is -l my_cool_file
+
+--w------- 1 cindy cool_group 0 Oct 9 17:49 my_cool_file
+
+cindy@cindy-nyc:~$
+
+The numerical equivalent of rwx is:
+
+•	4 for read or r
+
+•	2 for write or w
+
+•	1 for execute or x
+
+chmod 754 my_cool_file
+
+cindy@cindy-nyc:~$ Is -l my_cool_file
+
+-rwxr-xr-- 1 cindy cool_group 0 Oct 9
+
+
+cindy@cindy-nyc:~$ chmod u+rwx ny_cool_file cindy@cindy-nyc:~$ chmod g+rw ny_cool_file cindy@cindy-nyc:~$ chmod o+r ny_cool_file cindy@cindy-nyc:~$ chmod 754 ny_cool_file ctndy@cindy-nyc:~$ sudo chown devan ny_cool_file cindy@cindy-nyc:~$ Is -l ny_cool_file
+
+-rwxr-xr-- 1 devan cool_group 0 Oct 9 17:49 ny_cool_file cindy@cindy-nyc:~$
+
+
+my_cool_file cindy@ctndy-nyc:~$ sudo chown devan my_cool_file cindy@cindy-nyc:~$ Is -l my_cool_file
+
+-rwxr-xr-- 1 devan cool_group 0 Oct 9 17:49 my_cool_file cindy@cindy-nyc:~$ sudo chgrp best_group_ever my_cool_file cindy@cindy-nyc:~$ Is -l my_cool_file
+
+-rwxr-xr-- 1 devan best_group_ever 0 Oct 9 17:49 my_cool_file cindy@cindy-nyc:~$ 
+
+216 Windows: Special Permissions4мин
+Simple permissions are actually sets of special, or specific permissions.
+
+PS C:\Windows\system32> leads C:\Wmdows\Temp c:\windows\Temp BUiLTiN\users:(CI)(s,wd,ad,x)
+
+BUILTlN\Administrators:(F)
+
+BUILTlN\Administrators:(01)(Cl)(10)(F) NT AUTHORITY\SYSTEM:(F)
+
+NT AUTHORITY\SYSTEM:(01)(Cl)(10)(F) CREATOR OWNER:(01)(Cl)(10)(F)
+
+
+Inherit Only
+
+WD: Create Files/Write Data AD: Create Folders/Append Data
+S: Synchronize
+
+
+PS C:\Windows\Temp\example> icacls C:\Windows\Temp\example >> icacls.txt 
+PS C:\Windows\Temp\example> cat .\icacls.txt C:\windows\Ternp\example BUILTIN\Users:(I)(CI)(S,WD,AD,X)
+
+BUILTIN\Administrators:(I)(F)
+
+BUlLTlN\Administrators:(I)(oi)(ci)(IO)(f)
+
+NT AUTHORITY\SYSTEM:(I)(F)
+
+NT AUTHORITY\SYSTEM:(I)(01)(Cl)(10)(F)
+
+217 Linux: SetUID, SetGID, Sticky Bit5мин
+
+
+cindy@cindy-nyc:~$ passwd Changing password for cindy.
+
+(current) UNIX password:
+
+Enter new UNIX password:
+
+Retype new UNIX password:
+
+passwd: password updated successfully
+
+
+cindy@cindy-nyc:~$ ls -l /etc/shadow
+
+-rw-r-----	 1 root shadow 1297 Oct 10 10:42 /etc/shadow
+
+cindy@cindy-nyc:~$
+
+
+cindy@clndy-nyc:~$ ls -l /usr/bin/passwd
+
+-rwsr-xr-x 1 root root 54256 May 16 19:37 /usr/bin/passwd
+
+cindy@cindy-nyc:~$
+
+
+cindy@clndy-nyc:~$ ls -l /usr/bin/passwd
+
+-rwsr-xr-x 1 root root 54256 May 16 19:37 /usr/bin/passwd
+
+cindy@cindy-nyc:~$
+
+
+:indy@cindy-nyc:~$ Is -l /usr/bin/passwd
+
+-rwsr-xr-x 1 root root 54256 May 16 19:37 /usr/bin/passwd
+
+cindy@cindy-nyc:~$ sudo chmod u+s my_cool_file
+
+[sudo] password for cindy:
+
+:indy@cindy-nyc:~$ sudo chmod 4755 my_cool_file :indy@cindy-nyc:~$ Is -l my_cool_file
+
+-rwsr-xr-x 1 devan best_group_ever 0 Oct 9 17:49 my_cool_file :indy@clndy-nyc:~$ Is -l /usr/bin/wall -rwxr-sr-x 1 root tty 27368 Jun 14 17:51 :indy@cindy-nyc:~$ sudo chmod 2755 my_cool_file
+
+:indy@cindy-nyc:~$ Is -l my_cool_file		
+
+-rwxr-sr-x 1 devan best_group_ever 0 Oct 9 17:49 cindy@cindy-nyc:~$ []
+
+
+sudo chmod 1755 my_folder/
+
+cindy@cindy-nyc:~$ Is -Id my_folder/
+
+drwxr-xr-t 2 cindy cindy 4096 Oct 5 16:14 my_folder/
+
+cindy@cindy-nyc:~$
+
+218 4 материала для самостоятельного изучения
+219 Supplemental Reading for Windows Passwords10мин
+220 Supplemental Readings for Mobile Users and Accounts10мин
+221 Supplemental Reading for Windows ACL10мин
+222 Supplemental Reading for Special Permissions in Windows10мин
+
+ICACLS C:\Users\Qwiklab\Documents\important_document
+
+C:\Users\Qwiklab\Documents\important_document QWIKLABS-BB-254\Kara:(R,W)
+                                              NT AUTHORITY\SYSTEM:(I)(F)
+                                              BUILTIN\Administrators:(I)(F)
+                                              BUILTIN\Users:(I)(RX)
+                                              Everyone:(I)(RX)
+
+
+ICACLS C:\Users\Qwiklab\Documents\important_document /remove "Kara"
+
+ICACLS C:\Users\Qwiklab\Documents\important_document /grant "Kara:(r)"
+
+ICACLS C:\Users\Qwiklab\Secret\
+
+C:\Users\Qwiklab\Secret\ QWIKLABS-BB-254\Kara:(R)
+                         NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                         BUILTIN\Administrators:(I)(OI)(CI)(F)
+                         BUILTIN\Users:(I)(RX)
+                         BUILTIN\Users:(I)(OI)(CI)(IO)(GR,GE)
+                         Everyone:(I)(RX)
+                         Everyone:(I)(OI)(CI)(IO)(GR,GE)
+
+ICACLS C:\Users\Qwiklab\Secret\ /grant "Phoebe:(r)"
+
+ICACLS C:\Users\Qwiklab\Secret\ /grant "Kara:(w)"
+
+ICACLS C:\Users\Qwiklab\Music\
+
+ICACLS C:\Users\Qwiklab\Music\ /remove "Everyone"
+ICACLS C:\Users\Qwiklab\Music\ /grant "Everyone:(r)"
+
+ICACLS C:\Users\Qwiklab\Documents\not_so_important_document
+ICACLS C:\Users\Qwiklab\Documents\not_so_important_document /grant "Authenticated Users:(w)"
+
+Example 5
+ICACLS C:\Users\Qwiklab\Documents\public_document
+ICACLS C:\Users\Qwiklab\Documents\public_document /grant "Everyone:(r)"
+
+
+223 1 практическое упражнение
+224 Permissions30мин
+
+
+301 Week3 Package and Software Management
+In the third week of this course, we'll learn about package and software management in Windows and Linux OS. It's important to know how package installs work and how devices and drivers are managed within these operating systems. We will also learn about different packaging and file compression methods. By the end of this module, you will know how to create, update, and remove software by using the Windows GUI, Windows CLI and Linux shell.
+302 Module Introduction43
+303 Windows: Software Packages6мин
+
+Executable file (.exe)
+Contain instructions for a computer to execute when they’re run
+
+Portable Executable
+PE format
+
+Microsoft install package (.msi)
+
+Used to guide a program called the Windows Installer in the installation, maintenance, and removal of programs on the Windows operating system
+
+Windows Store
+APPX
+
+PS C:\users\cindy> C:\users\cindy\Desktop\hello.exe 
+Hello there, IT Specialist!!
+
+Press any key to exit.
+
+304 Linux: Software Packages3мин
+
+RPM (Red Hat)
+
+Debian
+
+Packaged as a .deb file for Debian
+
+sudo dpkg -i atom-amd64.deb
+
+sudo dpkg -r atom
+
+dpkg -l
+
+dpkg -l | grep atom
+
+305 Mobile App Packages3мин
+
+Mobile applications
+Apps
+App stores
+A central, managed marketplace for app developers to publish and sell mobile apps
+
+App store app
+
+App store service
+
+Enrerprise app
+management
+
+Mobile device management
+MDM
+
+Side-loading
+
+Where you install mobile apps directly, without using an app store
+
+Mobile apps are standalone software packages, so they contain all their dependencies.
+
+cache
+Clearing the cache will remove all changes to the settings, and sign out of any accounts that the app was signed into.
+
+306 Windows: Archives3мин
+Archive
+Comprised of one or more files that's compressed into a single file
+
+Package archives
+The core or source software files that are compressed into one file
+
+Installing from source
+
+7-zip
+
+Compress-Archive -Path C:\Users\cindy\Desktop\CoolFiles\ ~\Desktop\CoolArchive.zip
+
+307 Linux: Archives1мин
+
+To extract a file using 7zip, use the command 7z and the flag e for extract and then the file you want to extract.
+
+7z e my_archive.tar
+
+308 Windows: Package Dependencies7мин
+
+Having dependencies
+
+Counting on other pieces of software to make an application work, since one bit of code depends on another, in order to work
+
+Library
+
+A way to package a bunch of useful code that someone else wrote
+
+Dynamic-link Libraries
+DLL
+(DLL Hell)
+
+Side-by-side Assemblies
+SxS
+C:\Windows\WinSxS
+Manifest
+
+Find-Package
+cmdlet
+Sysinternals package
+PackageManagement
+Chocolatey
+Register-PackageSource
+Register-PackageSource Name chocolatey ProviderName Chocolatey -Location http://chocolatey.org/api/v2
+
+Get-PackageSource
+
+Find-Package sysinternals -includeDependencies
+
+Find-Package sysinternals -IncludeDependencies
+
+Install-Package
+
+309 Linux: Package Dependencies1мин
+
+sudo dpkg -i google-chrome-stable_current_arnd64.deb
+
+Package managers
+Come with the works to make package installation and removal easier, including installing package dependencies
+
+
+310 Windows: Package Manager4мин
+
+apt
+Package manager
+Makes sure that the process of software installation, removal, update, and dependency management is as easy and automatic as possible
+
+SCCM  Puppet
+
+Install-Package Name sysinternaIs
+
+Install-Package -Name sysinternals
+
+Get-Package
+Get-Package -name sysinternals
+
+
+311 Linux: Package Manager Apt5мин
+312 Windows: Underneath the Hood3мин
+313 Linux: Underneath the Hood1мин
+314 Windows: Devices and Drivers3мин
+315 Linux: Devices and Drivers4мин
+316 Window: Operating System Updates4мин
+317 Linux: Operating System Updates2мин
+318 14 материалов для самостоятельного изучения
+319 Supplemental Reading for Windows Software Packages10мин
+320 Supplemental Reading for Mobile App Packages10мин
+321 Supplemental Reading for 7-Zip and PowerShell Zips10мин
+322 Supplemental Reading for the Linux Tar Command10мин
+323 Supplemental reading for Windows Package Dependencies10мин
+324 Supplemental Reading for Linux Package Dependencies10мин
+325 Supplemental Reading for Windows Package Managers10мин
+326 Supplemental Reading for Linux PPAs10мин
+327 Supplemental Reading on GIMP10мин
+328 Supplemental Reading for Windows Installers and Process Monitors10мин
+329 Supplemental Reading Windows Devices and Drivers10мин
+330 Supplemental reading for Linux Devices and Drivers10мин
+331 Supplemental Reading for Windows Update10мин
+332 Supplemental Reading for Linux Update10мин
+333 4 практических упражнения
+334 Software Distribution30мин
+335 Package Managers30мин
+336 What’s happening in the background?30мин
+337 Device Software Management30мин
+
+
+401 Week4 Filesystems
+In the fourth week of this course, we'll learn about how filesystems work for Windows and Linux OS. We'll learn about filesystem types and why they're different for certain OS. We'll learn about disk partitioning and virtual memory and why these are so important for an IT Support Specialist's role. We'll also cover ways mount and unmount filesystems, read disk usage, and repair filesystems. By the end of this module, you will partition and format a disk drive yourself in both Windows and Linux.
+402 Module Introduction49
+403 Review of Filesystems2мин
+404 Disk Anatomy3мин
+405 Windows: Disk Partitioning and Formatting a Filesystem6мин
+406 Windows: Mounting and Unmounting a Filesystem51
+407 Linux: Disk Partitioning and Formatting a Filesystem6мин
+408 Linux: Mounting and Unmounting a Filesystem3мин
+409 Windows: Swap3мин
+410 Linux: Swap2мин
+411 Windows: Files6мин
+412 Linux: Files2мин
+413 Windows: Disk Usage3мин
+414 Linux: Disk Usage1мин
+415 Windows: Filesystem Repair4мин
+416 Linux: Filesystem Repair1мин
+417 Ben Passion1мин
+418 9 материалов для самостоятельного изучения
+419 Supplemental Reading for FAT32 File System10мин
+420 Supplemental Reading for Disk Partitioning and Formatting in Windows10мин
+421 Supplemental reading Mounting and Unmounting a Filesystem in Linux10мин
+422 Supplemental Reading for Windows Paging10мин
+423 Supplemental Reading for Linux Swap10мин
+424 Supplemental Reading on NTFS File System10мин
+425 Supplemental Reading for Windows Disk Usage10мин
+426 Supplemental reading for Linux Disk Usage10мин
+427 Supplemental Reading for Linux Filesystem Repair10мин
+428 1 практическое упражнение
+429 Filesystem Types30мин
+
+
+
+501 Week5 Process Management
+In the fifth week of this course, we'll explore process management. As an IT Support Specialist, it is important to use system tools to read and understand process statuses of machines. We will cover ways to start and terminate a process in Windows and Linux. We will also apply troubleshooting tools to solve problems with processes and resources. By the end of this module, you will use Windows and Linux commands to do practical process maintenance.
+502 Module Introduction1мин
+503 Programs vs Processes Revisited2мин
+504 Windows: Process Creation and Termination3мин
+505 Linux: Process Creation and Termination1мин
+506 Jess Passions1мин
+507 Windows: Reading Process Information3мин
+508 Linux: Reading Process Information4мин
+509 Windows: Signals1мин
+510 Linux: Signals1мин
+511 Windows: Managing Processes5мин
+
+512 Linux: Managing Processes4мин
+Kill
+Termination signal
+SIGTERM
+kill 10235
+SIGKILL
+-KILL
+kill 10235 kill -KILL 10392
+SIGTSTP
+terminal stop
+-TSTP
+ps -x|
+kill -TSTP 10754
+Ctrl-Z
+SIGCONT
+kill -CONT 10829
+
+SIGTERM
+SIGKILL
+SIGTSTP
+
+513 Mobile App Management4мин
+
+515 Linux: Resource Monitoring3мин
+Resource Monitoring tool
+Get-Process
+
+Get-Process | Sort CPU -descending | Select first 3 -Property ID,ProcessName,CPU
+Id ProcessName	CPU
+332 explorer 124.71875 
+2988 SearchUI 32.25 
+5468 RuntimeBroker 27.875
+
+514 Windows: Resource Monitoring4мин
+top
+q
+uptime
+
+cindy@cindy-nyc:~$ uptime
+16:43:12 up 5:08,	1 user, load average: 0.04, 0.05, 0.01
+cindy@cindy-nyc:~$
+
+lsof
+
+516 8 материалов для самостоятельного изучения
+517 Supplemental Reading for Process Creation and Termination in Windows10мин
+518 Supplemental Reading for Reading Process Information in Windows10мин
+519 Supplemental Reading for Reading Process Information in Linux10мин
+520 Supplemental Reading for Windows Signal10мин
+521 Supplemental Reading for Managing Processes in Windows10мин
+522 Supplemental Readings for Mobile App Management10мин
+523 Supplemental Reading Resource Monitoring in Windows10мин
+524 Supplemental reading for Resource Monitoring in Linux10мин
+525 3 практических упражнения
+526 Life of a Process30мин
+527 Managing Processes30мин
+528 Process Utilization30мин
+
+
+
+601 Week6 Operating Systems in Practice
+Congratulations, you've made it to the final week in the course! In the last week of this course, we will cover some of the practical aspects of operating systems that you'll use all the time in IT Support. We will cover remote access and how to troubleshoot a computer from afar. We'll explore virtualization tools to manage and remove virtual instances, use logs for system monitoring, and show you a few different techniques for OS deployment. By the end of this module, you will apply all the skills from this course to debug some issues within Windows and Linux OS. Good luck!
+602 Remote Connection and SSH5мин
+Remote connection
+Allows us to manage multiple machines from anywhere in the world
+Secure shell (SSH)
+A protocol implemented by other programs to securely access one computer from another
+OpenSSH program
+PuTTY
+
+cindy@cindy-nyc:~$ ssh cindy@104.131.122.215
+The authenticity of host '104.131.122.215 (104.131.122.215)' can't be established. ECDSA key fingerprint is SHA256:6hENLcR4X5nPF52anwMRrwENeBHha4Sn+0tnhvEeckA.
+Are you sure you want to continue connecting (yes/no)? 
+Private
+Public
+
+Virtual private network (VPN)
+Allows you to connect to a private network, like your work network, over the Internet
+
+603 Remote Connections on Windows4мин
+PuTTY
+A free, open source software that you can use to make remote connections through several network protocols, including SSH
+putty.exe -ssh cindy@104.131.122.215:
+putty.exe
+Plink
+PuTTY Link
+Remote Desktop Protocol
+RDP
+Microsoft Terminal Services Client
+mstsc.exe
+/admin
+
+604 Remote Connection File Transfer1мин
+Secure copy (SCP)
+A command you can use in Linux to copy files between computers on a network
+
+scp /home/cindy/Desktop/myfile.txt cindy@104.131.122.215
+
+605 Remote Connection File Transfer on Windows3мин
+PuTTY Secure Copy Client
+pscp.exe
+pscp.exe C:\Users\cindy\Desktop\my_file.txt cindy@104.131.122.215:
+Shared folders
+net share
+net share ShareMe=C:\Users\cindy\Desktop\ShareMe /grant:everyone,full
+
+606 Virtual Machines4мин
+Virtual instance
+A single virtual machine
+VirtualBox
+
+607 System Monitoring1мин
+tail -f /var/log/syslog
+
+Logging
+The act of creating log events
+
+608 The Windows Event Viewer4мин
+Event Viewer
+eventvwr.msc
+
+609 Linux Logs4мин
+/var/log
+Variable
+/var/log/auth.log
+/var/log/kern.log
+/var/log/dmesg
+/var/log/syslog
+logrotate
+Centralized logging
+Epoch time
+1501538594
+Mon Jul 31:15:03:14
+PDT 2017
+
+Dct 10 07:41:15 cindy-nyc dhclient[1531]: DHCPACK of 100.111.161.45 from 100.109.169.81
+
+610 Working with Logs4мин
+error
+less /var/log/svslog | qrep error
+tail
+tail -f /var/log/syslog
+
+611 Imaging Software56
+612 Operating Systems Deployment Methods4мин
+Clonezilla
+Symantec Ghost
+Disk-to-disk cloning
+dd
+dd if=/dev/sdd of=~/Desktop/my_usb_image.img bs=100M
+
+cindy@cindy-nyc:~$ sudo dd if=/dev/sdd of=~/Disktop/my_usb_image.img bs=100M 
+[sudo] password for cindy:
+76+1 records in 
+76+1 records out
+8011120640 bytes (8.0 GB, 7.5 GiB) copied, 223.46 s, 35.9 MB/s 
+cindy@cindy-nyc:~$
+
+613 Mobile Device Resetting and Imaging2мин
+Factoryreset
+Over the air
+OTA
+Re-flash
+-1.	Download the update to a computer.
+
+-2.	Attach the mobile device to a computer using a USB cable.
+
+-3.	Run some software on the computer that will re-flash the mobile device.
+
+Fonow-up questions
+Do what you love and love what you do.
+
+614 Interview Role Play: Operating Systems5мин
+615 Course Wrap Up1мин
+616 Heather Early Career Advice1мин
+617 Congratulations!7
+618 6 материалов для самостоятельного изучения
+619 Supplemental reading for Remote Connections in Windows10мин
+620 Supplemental Reading for Remote Connection File Transfer in Windows10мин
+621 Supplemental reading for Virtual Machines10мин
+622 Supplemental Reading for Linux Logs10мин
+623 Supplemental Reading for OS Deployment Methods10мин
+624 Supplemental Readings for Mobile Device Resetting and Imaging10мин
+625 2 практических упражнения
+626 Remote Access30мин
+627 Logging30мин
