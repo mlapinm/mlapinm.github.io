@@ -730,7 +730,526 @@ Get-Package -name sysinternals
 332 Supplemental Reading for Linux Update10мин
 333 4 практических упражнения
 334 Software Distribution30мин
+
+Packaging and File Archiving on Windows
+
+Checking permissions 1
+Before you can even begin changing the permission of a file or folder, you need to first check the permissions of the specific file/folder. To display ownership and permissions for a file, you can use ls with the -l flag and the name of the file you're interested in with the command ls -l [FILENAME]
+
+There's a file named "important_document" on your machine in the "/home/qwiklab/documents" directory. You can change to this directory from your current one using this command:
+
+cd ../qwiklab/documents
+
+Copied!
+Check out its current permissions with this command, and take a look at the output below:
+
+-rw------- 1 student student 16 Dec 20 13:35 important_document
+
+Copied!
+-rw------- 1 student student 16 Aug  4 11:38 important_document
+You can see that it's owned by the "root" user, and that the owner has read and write (but not execute) permissions while everyone else has none at all.
+
+Changing file permissions
+Now, change the permissions of "important_document" (from the previous step) so that the owner has execute permissions on top of their current permissions. To do this, you'll use the chmod command, with the argument 700. The two zeros keep everyone, but the owner, from having any permissions at all, and the seven grants all available permissions to the owner (including execute). Keep in mind that because the file is owned by "root" you'll need to use sudo:
+
+sudo chmod 700 important_document
+
+-rwx------ 1 student student 16 Dec 20 13:35 important_document
+
+Copied!
+You can check the permissions from the below command. You'll now see that the execution permission has been added:
+
+ls -l important_document
+Copied!
+-rwx------ 1 student student 16 Aug  4 11:38 important_document
+Click Check my progress to verify the objective.
+Modify permissions on important_document
+
+Changing folder permissions 2
+Now you'll do a similar process, this time on a directory. First, move up one directory:
+
+cd ..
+Copied!
+In this directory there's a folder called "secret_folder". View its current permissions using ls, this time with the -ld flag rather than -l because you're viewing a directory instead of a normal file:
+
+ls -ld secret_folder/
+
+drw-r--r-- 2 root root 4096 Dec 20 13:35 secret_folder/
+
+
+
+Copied!
+drw-r--r-- 2 root root 4096 Aug  4 11:38 secret_folder/
+As you can see, the owner of the file (the root user) has read and write permissions, and everyone else can read only.
+
+The goals for the lab, related to this file, are below:
+
+The owner should have all permissions.
+The group should have only write permission.
+People other than the owner and the group should have no permissions.
+Head's up: When using chmod on a directory, files within that directory are not affected. While this isn't relevant to this specific lab, it's important to remember.
+
+Previously, we used a numerical argument to set the permissions for a file. If you want to avoid figuring out the number that matches the permission levels, you can use an alternate syntax. To satisfy the first condition, you only need to add the execute permission to the owner, since they already have read and write permissions. To add execute to the owner's permission, you can use the command below. (Note that "u" stands for "user" and "x" stands for "execute".)
+
+sudo chmod u+x secret_folder/
+Copied!
+You can check the permissions again to see that the owner can now read, write, and execute:
+
+ls -ld secret_folder/
+
+drwxr--r-- 2 root root 4096 Dec 20 13:35 secret_folder/
+
+
+Copied!
+drwxr--r-- 2 root root 4096 Aug  4 11:38 secret_folder/
+Now you can fix the group's permission. They currently have read permission and don't have write permission, which you can fix with two similar commands. These can be done in either order; "g" stands for "group" (like "u" from before), and "w" and "r" stand for "write" and "read" respectively:
+
+sudo chmod g+w secret_folder/
+
+drwxrw-r-- 2 root root 4096 Dec 20 13:35 secret_folder/
+
+Copied!
+sudo chmod g-r secret_folder/
+
+drwx-w-r-- 2 root root 4096 Dec 20 13:35 secret_folder/
+
+Copied!
+You can check the permissions again to see that the group now has only write permissions, and the owner has the same permissions as before:
+
+ls -ld secret_folder/
+Copied!
+drwx-w-r-- 2 root root 4096 Aug  4 11:38 secret_folder/
+Finally, you can remove read permissions from everyone else using the command below ("o" stands for "other"):
+
+sudo chmod o-r secret_folder/
+
+drwx-w---- 2 root root 4096 Dec 20 13:35 secret_folder/
+
+Copied!
+You can see that all the criteria for this file are now met using ls again:
+
+ls -ld secret_folder/
+Copied!
+drwx-w---- 2 root root 4096 Aug  4 11:38 secret_folder/
+Using chmod this way is easier to remember, but takes lots more commands. All the previous steps could also have been done using the numerical notation, like this:
+
+sudo chmod 720 secret_folder/
+
+drwx-w---- 2 root root 4096 Dec 20 13:35 secret_folder/
+
+
+Copied!
+Click Check my progress to verify the objective.
+Modify permissions on secret_folder
+
+Changing owners
+Now you'll change the owner of a file. In your current directory, there's a folder called "taco". Use ls to examine its permissions and see who the owner of the file is:
+
+ls -ld taco/
+
+
+drwxr-xr-x 2 root root 4096 Dec 20 13:35 taco/
+
+Copied!
+drwxr-xr-x 2 root root 4096 Aug  4 11:38 taco/
+You can see from this that the root user currently owns this file. There's another user account on the machine called "cook". Go ahead and make "cook" the owner of the file, using the chown command like this:
+
+sudo chown cook /home/qwiklab/taco
+Copied!
+Now you can use ls again to see that the owner of the file has been successfully changed:
+
+ls -ld taco/
+
+drwxr-xr-x 2 cook root 4096 Dec 20 13:35 taco/
+
+Copied!
+drwxr-xr-x 2 cook root 4096 Aug  4 11:38 taco/
+Click Check my progress to verify the objective.
+Change owner of Taco
+
+More practices
+There are a few more files present on your machine that you can practice on. First, move into the "documents" folder:
+
+cd documents/
+Copied!
+There's a file in this folder called "not_so_important_document". View its permissions to see its current state:
+
+ls -l not_so_important_document
+
+-rw-r----- 1 student student 20 Dec 20 13:35 not_so_important_document
+
+Copied!
+-rw-r----- 1 student student 20 Aug  4 11:38 not_so_important_document
+The owner can read and write, the group can read, and everybody else has no permissions at all. Now, use chmod to change the permissions so that these criteria are met:
+
+The owner has all permissions.
+The group has read and write permissions.
+Everyone has read permissions.
+To give the owner execution permissions, you can use the same command from earlier:
+
+sudo chmod u+x not_so_important_document
+Copied!
+Remember to use ls to double-check that everything you do behaves how you expect:
+
+ls -l not_so_important_document
+Copied!
+-rwxr----- 1 student student 20 Aug  4 11:38 not_so_important_document
+The group already has read permissions, so all you need to do is add write permissions:
+
+sudo chmod g+w not_so_important_document
+Copied!
+ls -l not_so_important_document
+Copied!
+-rwxrw---- 1 student student 20 Aug  4 11:38 not_so_important_document
+Finally, you need to give everyone else read permissions. You can use the "o+r" argument to add read permissions to people other than the owner or group, but you can also use "a+r". This adds read permission to everyone (owner, group, and other). Because the owner and the group already have read permissions, this will only change the permissions for everyone else, but the end result is the same:
+
+sudo chmod a+r not_so_important_document
+Copied!
+You should be able to view the permissions again and see that all criteria for this file have been met:
+
+ls -l not_so_important_document
+Copied!
+-rwxrw-r-- 1 student student 20 Aug  4 11:38 not_so_important_document
+Again, you can accomplish the same result using a numerical argument to set the permissions, rather than incrementally changing them. Here's the command that meets all three criteria at once:
+
+sudo chmod 764 not_so_important_document
+
+-rwxrw-r-- 1 student student 20 Dec 20 13:35 not_so_important_document
+
+
+Copied!
+Click Check my progress to verify the objective.
+Change permissions of not_so_important_document
+
+Adding multiple permissions at once
+Finally, you'll learn how to use the non-numeric argument to add multiple permissions at once. There's one more file in the current directory, named "public_document". First, view its current permissions:
+
+ls -l public_document
+Copied!
+-rw-r--r-- 1 student student 14 Aug  4 11:38 public_document
+For this file, you want everyone (owner, group, and anyone else) to have all permissions. You can add read, write, and execute permissions to everyone at once using this command:
+
+sudo chmod a+rwx public_document
+Copied!
+This should make the file as open as possible, where every user has every permission:
+
+ls -l public_document
+Copied!
+-rwxrwxrwx 1 student student 14 Aug  4 11:38 public_document
+Using the numeric argument form of chmod, this same result could be accomplished with this command:
+
+sudo chmod 777 public_document
+Copied!
+Click Check my progress to verify the objective.
+Change owner of public_document
+
+-rwxrwxrwx 1 student student 14 Dec 20 13:35 public_document
+
+
 335 Package Managers30мин
+
+Packaging and File Archiving on Linux
+
+Install and uninstall software using Windows GUI
+Installing Atom
+
+First, you'll install the Atom text editor. Using Google Chrome, visit http://www.atom.io to download the latest version of Atom. Once you have downloaded the file, open your "Downloads" folder under C:\Users\qwiklabs\Downloads. You should see the installer, called "AtomSetup-x64". Double click the executable and the process should begin:
+
+Screenshot of Atom installer graphics.
+
+When it's finished, Atom will automatically open:
+
+Screenshot of Atom, opened automatically to the Welcome Guide.
+
+You won't need to use Atom during this lab, so feel free to close the program. Later tater!
+
+Click Check my progress to verify the objective.
+
+Atom
+Extracting using 7-Zip
+-7-Zip is a super useful program for working with archived or zipped files, and it's already been installed on your system. Using File Explorer navigate to "C:\Users\Qwiklab\Downloads". This folder contains a .tar archive called "example.tar". You don't have permissions to extract files in this .tar file's current folder, so click-and-drag the file to the Desktop. After moving the file, you'll be prompted to confirm the move; click "Continue" to finish the move. Then, you can use it to extract the contents of the archive by right-clicking "example.tar" (now on the Desktop), hovering over "7-Zip", and clicking "Extract Here":
+
+Screenshot of Windows desktop. The right-click / context menu has been opened for a file on the desktop called "example.tar". On the right-click / context menu, "7-Zip" has been selected and an additional menu is visible (including the option to Extract Here).
+
+Afterwards, you'll see the contents of the .tar file on the Desktop, alongside the archive:
+
+Screenshot of the contents on the Windows desktop, including the example.tar file and 3 other files: one image, and two text files.
+
+Click Check my progress to verify the objective.
+
+Extract with 7-zip
+Archiving files
+Now you'll perform the other half of the process, bundling multiple files into a .zip archive. Navigate to "C:\Users\Qwiklab\Documents" and find the three files named, "Earth", "Mercury", and "Venus":
+
+Screenshot of File Explorer, showing a list of 3 files named Earth, Mercury, and Venus.
+
+Archiving files with Powershell
+
+Now you'll build multiple files into a .zip archive using Powershell. Open Powershell and navigate to this folder. (Make sure you have administrative privileges enabled!). So, search for Windows Powershell, right-click it, and select "Run as Administrator".
+
+Screenshot of Windows Desktop. Windows Search is open and searching for Windows PowerShell. The screenshot is annotated to highlight the application as it appears in the Windows Search.
+
+Now, Use the following command:
+
+cd C:\Users\Qwiklab\Documents\
+Copied!
+to navigate to the "Documents" folder. Once you're there, you can create a .zip archive (called Planets.zip) using this command:
+
+Compress-Archive -Path Earth, Mercury, Venus Planets.zip
+Copied!
+Click Check my progress to verify the objective.
+
+Archiving Files with PowerShell
+Install and uninstall software using Windows CLI
+Installing VLC
+
+There are alternatives to manually downloading and running installers when you need to install or manage programs on Windows. To install or remove programs, you need administrative privileges. So, open Windows Powershell by searching for it in the Windows start menu, then right-click it and select "Run as Administrator".
+
+In the Windows Powershell terminal, enter the following commands to download and install VLC media player.
+
+$VLC_URL = "https://download.videolan.org/vlc/last/win64/"
+Copied!
+$GET_HTML = Invoke-WebRequest $VLC_URL
+Copied!
+$FILE = $GET_HTML.Links | Select-Object @{Label='href';Expression={@{$true=$_.href}[$_.href.EndsWith('win64.exe')]}} | Select-Object -ExpandProperty href
+Copied!
+$URL = ($VLC_URL+$FILE)
+Copied!
+$DOWNLOAD_DIR = "C:\users\qwiklabs\Downloads\"
+Copied!
+$OUTPUT_FILE = ($DOWNLOAD_DIR+$FILE)
+Copied!
+(new-object System.Net.WebClient).DownloadFile($URL, $OUTPUT_FILE)
+Copied!
+cmd.exe /c $OUTPUT_FILE /S
+Copied!
+Once the installation process is successfully completed, verify that VLC has successfully been installed with the following command:
+
+Get-Package -Name *vlc*
+Copied!
+Name              Version  Source  ProviderName
+----              -------  ------  ------------
+VLC media player  3.0.16           Programs
+Click Check my progress to verify the objective.
+
+VLC
+Uninstalling GIMP
+You can use Windows Powershell to uninstall programs. If you've closed your Powershell window, reopen it again by searching for it in the Start Menu, then right-clicking it and selecting "Run as Administrator".
+
+You can uninstall GIMP, a photo editor, using this command:
+
+cmd.exe /c "C:\Program Files\GIMP 2\uninst\unins000.exe" /VERYSILENT /NORESTART
+Copied!
+Once the process finishes, GIMP will no longer be available on your system. You can verify this with the following command and notice that GIMP is not listed:
+
+Get-Package
+
+
+======
+
+Software Packaging and File Archiving on Linux
+Introduction
+This lab focuses on installing and removing software in Linux, and working with zipped files. You'll be installing a text editor called Atom, and extracting/un-extracting .tar files. You'll also use apt to install/uninstall programs.
+
+Head's up: You'll experience a delay as the labs initially load (particularly for Windows labs). So, please wait a couple of minutes for the labs to load. The grade is calculated when the lab is complete, so be sure to hit "End Lab" when you're done!
+
+You'll have 60 minutes to complete this lab.
+
+Start the lab
+You'll need to start the lab before you can access the materials. To do this, click the green “Start Lab” button at the top of the screen.
+
+Green "Start Lab" button
+
+After you click the “Start Lab” button, you will see a shell, where you will be performing further steps in the lab. You should have a shell that looks like this:
+
+Screenshot of shell terminal CLI. CLI reads "student@864a6934570a: -$"
+
+Installing Atom
+First, use dpkg to install a text editor, called Atom. A .deb file is located at "/home/qwiklab/downloads/atom-amd64.deb", which you can install using this command:
+
+sudo dpkg -i /home/qwiklab/downloads/atom-amd64.deb
+Copied!
+You'll see some errors after this command, but that's okay! The atom package has some dependencies that aren't installed on your machine yet, and dpkg is just warning you that they need to be installed:
+
+Selecting previously unselected package atom.
+(Reading database ... 36819 files and directories currently installed.)
+Preparing to unpack .../downloads/atom-amd64.deb ...
+Unpacking atom (1.21.0) ...
+dpkg: dependency problems prevent configuration of atom:
+ atom depends on git; however:
+  Package git is not installed.
+ atom depends on gconf2; however:
+  Package gconf2 is not installed.
+ atom depends on gconf-service; however:
+  Package gconf-service is not installed.
+ atom depends on libnotify4; however:
+  Package libnotify4 is not installed.
+ atom depends on python; however:
+  Package python is not installed.
+ atom depends on gvfs-bin; however:
+  Package gvfs-bin is not installed.
+dpkg: error processing package atom (--install):
+ dependency problems - leaving unconfigured
+Processing triggers for mime-support (3.62) ...
+Errors were encountered while processing:
+ atom
+You can remedy this by using apt to fix the missing dependencies, using this command:
+
+sudo apt install -f
+Copied!
+You'll be prompted to confirm your decision to continue with the operation by typing "Y" (for "Yes"), midway through the process.
+
+Now Atom is successfully installed, which you can verify using dpkg:
+
+dpkg -s atom
+Copied!
+Package: atom
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 456200
+Maintainer: GitHub <atom@github.com>
+Architecture: amd64
+Version: 1.21.0
+Click Check my progress to verify the objective.
+
+Install Atom
+Extracting an archive
+Next, you will extract a .tar archive. The archive "extract_me.tar" is located in "/home/qwiklab/downloads/". Move to that directory, using this command:
+
+cd /home/qwiklab/downloads
+Copied!
+You can use the Linux tar command to extract it using this command:
+
+sudo tar -xvf extract_me.tar
+Copied!
+The contents of the archive (the file named "great_job") are then extracted:
+
+home/qwiklab/extract_me/
+home/qwiklab/extract_me/great_job
+Click Check my progress to verify the objective.
+
+Extract Archive
+Archiving files
+First, move back to the original directory:
+
+cd ~
+Copied!
+You can also use the tar command to do the reverse operation, creating an archive. There are three files in your /home/qwiklab/documents folder named "Earth", "Mercury", and "Venus". Use tar to archive them into the file "Planets.tar" using this command (one line):
+
+tar -cvf Planets.tar --absolute-names /home/qwiklab/documents/Earth /home/qwiklab/documents/Mercury /home/qwiklab/documents/Venus
+Copied!
+"Planets.tar" will then be added to your current directory, and will contain the three planet files:
+
+/home/qwiklab/documents/Earth
+/home/qwiklab/documents/Mercury
+/home/qwiklab/documents/Venus
+Click Check my progress to verify the objective.
+
+Archive Files
+Installing 7-Zip
+You can also install programs on Linux, using apt too, which handles dependencies for you to simplify the installation process. You can install the program 7-Zip, using apt, with a simple one-line command:
+
+sudo apt install p7zip-full
+Copied!
+When it's finished, 7-Zip will be installed:
+
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  p7zip
+Suggested packages:
+  p7zip-rar
+The following NEW packages will be installed:
+  p7zip p7zip-full
+-0 upgraded, 2 newly installed, 0 to remove and 21 not upgraded.
+Need to get 1540 kB of archives.
+After this operation, 5780 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://deb.debian.org/debian buster/main amd64 p7zip amd64 16.02+dfsg-6 [376 kB]
+Get:2 http://deb.debian.org/debian buster/main amd64 p7zip-full amd64 16.02+dfsg-6 [1164 kB]
+Fetched 1540 kB in 0s (8625 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package p7zip.
+(Reading database ... 48397 files and directories currently installed.)
+Preparing to unpack .../p7zip_16.02+dfsg-6_amd64.deb ...
+Unpacking p7zip (16.02+dfsg-6) ...
+Selecting previously unselected package p7zip-full.
+Preparing to unpack .../p7zip-full_16.02+dfsg-6_amd64.deb ...
+Unpacking p7zip-full (16.02+dfsg-6) ...
+Setting up p7zip (16.02+dfsg-6) ...
+Setting up p7zip-full (16.02+dfsg-6) ...
+You'll be prompted to confirm your decision midway through the installation process. Confirm this by typing "Y" (for "Yes"). Then, 7-Zip will be installed:
+
+You can verify the installation using dpkg, with this command:
+
+dpkg -s p7zip-full
+Copied!
+Package: p7zip-full
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 4659
+Maintainer: Robert Luberda<robert@debian.org>
+Architecture: amd64
+Source: p7zip
+Version: 16.02+dfsg-6
+Click Check my progress to verify the objective.
+
+Install 7-Zip
+Uninstalling GIMP
+Uninstallation can also be handled by apt by using "remove" instead of "install" as the argument. GIMP, an image-editing program, is already installed on your machine. Uninstall it now, using apt with this command:
+
+sudo apt remove gimp
+Copied!
+You'll be prompted to confirm your decision midway through the uninstallation process. Confirm this by typing "Y" (for "Yes"). Then, GIMP will be uninstalled:
+
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  fonts-droid-fallback fonts-noto-mono ghostscript gimp-data gsfonts
+  i965-va-driver intel-media-va-driver libaa1 libamd2 libaom0 libasound2
+  libasound2-data libasyncns0 libavcodec58 libavformat58 libavutil56
+  libbabl-0.1-0 libblas3 libcaca0 libcamd2 libccolamd2 libcholmod3
+  libchromaprint1 libcodec2-0.8.1 libcolamd2 libcrystalhd3
+  libcupsfilters1 libcupsimage2 libde265-0 libexiv2-14 libflac8
+  libgegl-0.4-0 libgegl-common libgexiv2-2 libgfortran5 libgimp2.0
+  libgme0 libgs9 libgs9-common libgsm1 libheif1 libigdgmm5 libijs-0.35
+  libilmbase23 libjbig2dec0 liblapack3 libmetis5 libmng1 libmp3lame0
+  libmpg123-0 libmypaint-1.3-0 libmypaint-common libnuma1 libogg0
+  libopenexr23 libopenjp2-7 libopenmpt0 libopus0 libpaper-utils libpaper1
+  libpoppler-glib8 libpoppler82 libpulse0 libraw19 libsdl1.2debian
+  libshine3 libslang2 libsnappy1v5 libsndfile1 libsoxr0 libspeex1
+  libssh-gcrypt-4 libsuitesparseconfig5 libswresample3 libswscale5
+  libtheora0 libtwolame0 libumfpack5 libva-drm2 libva-x11-2 libva2
+  libvdpau-va-gl1 libvdpau1 libvorbis0a libvorbisenc2 libvorbisfile3
+  libvpx5 libwavpack1 libwebpdemux2 libwebpmux3 libwmf0.2-7 libx264-155
+  libx265-165 libxcb-xfixes0 libxvidcore4 libzvbi-common libzvbi0
+  mesa-va-drivers mesa-vdpau-drivers poppler-data va-driver-all
+  vdpau-driver-all
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  gimp
+-0 upgraded, 0 newly installed, 1 to remove and 21 not upgraded.
+After this operation, 19.5 MB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 48496 files and directories currently installed.)
+Removing gimp (2.10.8-2) ...
+Processing triggers for mime-support (3.62) ...
+Processing triggers for desktop-file-utils (0.23-4) ...
+You can verify this using dpkg (like before) with this command:
+
+dpkg -s gimp
+Copied!
+dpkg-query: package 'gimp' is not installed and no information is available
+Use dpkg --info (= dpkg-deb --info) to examine archive files.
+Click Check my progress to verify the objective.
+
+Uninstall GIMP
+
+
 336 What’s happening in the background?30мин
 337 Device Software Management30мин
 

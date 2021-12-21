@@ -5,6 +5,7 @@ System administration
 The field in IT that’s responsible for maintaining reliable computer systems in a multi-user environment
 
 103 What is Systems Administration?2мин
+
 IT infrastructure encompasses the software, the hardware, network, an services required for an organization to operate in an enterprise IT environment.
 Sysadmins
 Database administrators
@@ -18,10 +19,23 @@ Running a website
 Servers
 Server
 Software or a machine that provides services to other software or machines
+Email server
+SSH server
+Clients
+KVM Switch
 
 105 The Cloud3мин
+Cloud computing
+
+Data Center
+A facility that stores hundreds, if not thousands, of servers
+Cost
+Dependency
 
 106 Organizational Policies2мин
+
+
+
 107 IT Infrastructure Services1мин
 108 User and Hardware Provisioning4мин
 109 Routine Maintenance1мин
