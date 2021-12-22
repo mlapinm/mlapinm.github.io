@@ -33,20 +33,82 @@ Cost
 Dependency
 
 106 Organizational Policies2мин
-
-
+Should users be allowed to install software?
+Should users have complex passwords with certain requirements?
+Symbols
+Random numbers
+Letters
+Should users be allowed to view non-work-related websites, like Facebook?
+If you hand out a company phone to an employee, should you set a device password?
+If you hand out a company phone to an employee, should you set a device password?
 
 107 IT Infrastructure Services1мин
+File storage
+Email
+Web content
+
 108 User and Hardware Provisioning4мин
+Provisioning
+Hardware lifecycle
+Procurement
+Deployment
+Maintenance
+Retirement
+
 109 Routine Maintenance1мин
+Batch update
+
 110 Vendors1мин
+
 111 Troubleshooting and Managing Issues3мин
+
 112 In Case of Fire, Break Glass1мин
+
 113 Dion Michelle Obama Story1мин
+
 114 With Great Power Comes Great Responsibility3мин
+Avoid using administrator rights for tasks that don't require them.
+Respect the privacy of others.
+Think before you type.
+
+Plan ahead
+Serves as documentation
+
+script
+Start-Transcript
+recordMyDesktop
+With great power comes great responsibility.
+Reverting to the previous state is called a rollback.
+
 115 Never Test in Production2мин
+Production
+The parts of the infrastructure where a certain service is executed and served to its users
+
+Test environment
+A virtual machine running the same configuration as the production environment, but isn’t actually serving any users of the service
+
+Secondary or stand-by machine
+This machine will be exactly the same as a production machine, but won't receive any traffic from actual users until you enable it to do so 
+
+For even bigger services, when you have lots of servers providing the service, you may want to have canaries.
+
 116 Assessing Risk2мин
+In general, the more users your service reaches, the more you'll want to ensure that changes aren't disruptive.
+
+The more important your service is to your company’s operations, the more you’ll work to keep the service up.
+
 117 Fixing Things the Right Way2мин
+Reproduction case
+Creating a roadmap to retrace the steps that led the user to an unexpected outcome
+
+What steps did you take to get to this point? 
+What’s the unexpected or bad result?
+What’s the expected result?
+
+Remember: always do this in your test instance, never in production.
+
+After applying your fix, retrace the same steps that took you to the bad experience. If your fix worked, the expected experience should now take place.
+
 118 6 материалов дл¤ самосто¤тельного изучени¤
 119 Navigating Coursera10мин
 120 Program Surveys10мин
@@ -65,12 +127,78 @@ Dependency
 201 week 2 Network and Infrastructure Services
 In the second week of this course, we'll learn about network and infrastructure services. We will cover what IT infrastructure services are and what their role is in system administration. We'll also learn about server operating systems, virtualization, network services, DNS for web services, and how to troubleshoot network services. By the end of this module, you will know the most common IT infrastructure services you'll encounter when handling system administration tasks.
 202 What are IT Infrastructure Services?56
+
 203 The Role of IT Infrastructure Services in SysAdmin56
+
 204 Types of IT Infrastructure Services6мин
+Physical
+Software
+Network
+Directory
+
+IaaS
+Applications
+Data
+O/S
+
+Virtualization
+Servers
+Storage
+
+Amazon EC2
+Linode
+Windows Azure
+Google Compute Engine
+
+NaaS
+Applications
+Data
+O/S
+Virtualization
+Servers
+Storage
+
+Networking
+
+Microsoft Office 365
+Google G Suite
+
+PaaS
+Applications
+Data
+
+O/S
+Virtualization
+Servers
+Storage
+Networking
+
+Heroku, Windows Azure, Google App Engine.
+
+Windows Active Directory
+OpenLDAP
+
+Directory as a Service
+
 205 How do Qwiklabs Work?1мин
+
+SSH
+Remote Desktop
+Once the lab is finished, Qwiklabs destroys this virtual machine.
+
 206 Heather First Tech Job1мин
 207 Server Operating Systems1мин
+Server operating systems
+Regular operating systems that are optimized for server functionality
+
 208 Virtualization2мин
+
+
+
+
+
+
+
 209 Remote Access Revisited3мин
 210 FTP, SFTP, and TFTP3мин
 211 NTP2мин
