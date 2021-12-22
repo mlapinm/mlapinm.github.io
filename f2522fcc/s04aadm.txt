@@ -192,29 +192,163 @@ Server operating systems
 Regular operating systems that are optimized for server functionality
 
 208 Virtualization2мин
+Dedicated hardware
+Virtualized instance
 
-
-
-
-
-
+Performance
+Cost
+Maintenance
+Points of failure
 
 209 Remote Access Revisited3мин
+OpenSSH
+sudo apt-get install openssh-client
+sudo apt-get install openssh-server
+ssh devan@10O.113.96.31
+
 210 FTP, SFTP, and TFTP3мин
+File transfer service
+FTP
+SFTP
+TFTP
+Trivial FTP
+PXE Boot
+Preboot
+Execution
+
 211 NTP2мин
+Network Time Protocol
+
 212 Network Support Services Revisited1мин
+Intranet
+An internal network inside a company; accessible if you’re on a company’s network
+
+Proxy server
+Acts as an intermediary between a company's network and the Internet
+
 213 DNS1мин
+Domain Name System (DNS)
+Maps human-understandable names to IP addresses
+
 214 DNS for Web Servers2мин
+Domain registrars
+GoDaddy.com
+BlueHost.com
+
+DNS settings 
+IP address
+Authoritative DNS servers
+
 215 DNS for Internal Networks3мин
+Linux  hosts etc/hosts
+
+BIND 
+PowerDNS
+
 216 DHCP2мин
+Dynamic Host Configuration Protocol
+
+The two servers then sync up and when DHCP leases out new addresses, DNS updates IP address mappings automatically. 
+
 217 Unable to Resolve a Hostname or Domain Name3мин
+
+ping www.google.com
+mslookup www.google.com
+sudo vim /etc/hosts
+
+Services are usually configured to start when the machine boots, so that if there's a power outage or a similar event that causes the machine to reboot, you won’t need a system administrator to manually start the service.
+
 218 What do Services Look Like in Action2мин
+DNS
+DHCP
+NTP
+
+Background
+Daemons
+Services
+
+This means that the program doesn't need to interact with a user through the graphical interface or the command line interface to provide the necessary service.
+
+Configuration files
+
+Services are usually configured to start when the machine boots, so that if there's a power outage or a similar event that causes the machine to reboot, you won’t need a system administrator to manually start the service.
+
 219 Managing Services in Linux4мин
+Network Time Protocol (NTP)
+
+service ntp status
+sudo date -s "2017-01-01 00:00:00"
+
+date
+UTC 2017
+sudo service ntp stop date
+UTC 2017
+sudo service ntp start date
+UTC 2018
+
+devan@instance-l:~$ sudo date -s "2017-01-01 00:00:00" Sun Jan 1 00:00:00 UTC 2017
+
+devan@instance-l:~$ date Sun Jan 1 00:00:03 UTC 2017 devan@instance-l:~$ sudo service ntp restart
+
+devan@instance-l:~$
+
 220 Managing Services in Windows3мин
+PS C:\Users\devan_sritharan89> Get-Service wuauserv Status	Name	            DisplayName
+Running wuauserv	Windows Update
+PS C:\Users\devan_sritharan89>
+Stop-Service wuauserv
+Get_Service wuauserv | Format-List
+Start-Service wuauserv
+Get_Service wuauserv | Format-List
+
 221 Configuring Services in Linux4мин
+The configuration files for the installed services are located in the /etc directory.
+
+vsftpd
+service vsftpd status
+
+An ftp client program that allows us to connect to an ftp server
+/etc/vsftpd.conf
+
+Reload
+The service re-reads the configuration without having to stop and start
+
 222 Configuring Services in Windows4мин
+Stop
+Restart 
+Modify configuration
+Reload
+
 223 Configuring DNS with Dnsmasq6мин
+dnsmasq
+A program that provides DNS, DHCP, TFTP and PXE services in a simple package
+
+sudo apt install dnsmasq
+dig www.example.com $localhost
+sudo service dnsmasq stop
+sudo dnsmasq -d -q
+
+cat myhosts.txt 192.168.1.2 helium.local
+192.168.1.7	nitrogen.local
+192.168.1.8	oxygen.local
+
+sudo dnsmasq -d -q -H myhosts.txt
+
+dig oxygen.local $localhost
+
 224 Configuring DHCP with Dnsmasq7мин
+eth_srv
+ip address show eth_srv
+
+eth_cli
+
+cat dhcp.conf
+sudo dnsmasq -d -q -C dhcp.conf
+sudo dhclient -i eth_cli -v
+ip address show eth_cli
+
+dig @localhost instance-1.example
+
 225 6 материалов дл¤ самосто¤тельного изучени¤
 226 Supplemental Reading for IT Infrastructure Services10мин
 227 Supplemental Reading for Server Operating Systems10мин
@@ -236,13 +370,69 @@ Regular operating systems that are optimized for server functionality
 301 Ќ≈ƒ≈Ћя 3 Software and Platform Services
 In the third week of this course, we'll explore software and platform services. We'll cover what types of software and platform services you may encounter in a tech role and how to manage them. We'll learn how to configure email services, security services, file services, print services, and platform services. We'll explore ways to troubleshoot platform services and common issues to look out for. By the end of this module, you'll understand how to setup and manage the IT infrastructure services to help a business stay productive, keep information secure, and deliver applications to its users.
 302 Module Introduction1мин
+Software services
+Services that employees use that allow them to do their daily job functions
+
+Platform services
+Provide a platform for developers to code, build and manage software applications
+
 303 Configuring Communication Services2мин
+Communication services
+Security services
+User productivity services
+
+Internet Chat Relay
+IRC
+
+Paid-for options
+Open IM protocols
+
+XMPP
+Extensible Messaging and Presence Protocol
+
 304 Configuring Email Services3мин
+devan@example.com
+Remember that the A record is used for hostnames, but for email servers, we use MX for the mail exchange record.
+POP3
+IMAP
+SMTP
+
 305 Configuring User Productivity Services2мин
+When considering software licenses, its important to review the terms and agreements.
+
 306 Configuring Security Services3мин
+Hyper Text Transfer Protocol Secure (HTTPS)
+The secure version of HTTP, which makes sure the communication your web browser has with the website is secured through encryption
+
+TLS
+Transport Layer Security
+
+SSL
+Secure Socket Layer
+
+SSL v3.0 ~ TLSv1.0
+
+Certificate Authority
+Request Certificate
+
 307 Heather Managing Self Doubt1мин
+
 308 What are file services?1мин
+
 309 Network File Storage3мин
+FAT32
+
+Network File System (NFS)
+A protocol that enables files to be shared over a network
+
+Samba
+(Windows)
+SMB
+(protocol)
+
+Network-attached storage
+NAS
+
 310 Mobile Synchronization3мин
 311 Configuring Print Services3мин
 312 Web Servers Revisited4мин
