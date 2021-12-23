@@ -120,6 +120,147 @@ After applying your fix, retrace the same steps that took you to the bad experie
 126 What is System Administration?30мин
 127 Systems Administration Tasks30мин
 128 What is System Administration?1ч
+q1
+Broken computers are being eco-recycled by the user. Which stage of the hardware lifecycle does this scenario belong to?
+Procurement
+Deployment
+Maintenance
+v Retirement
+q2
+The machine has to be returned to the vendor for proper recycling. Which stage of the hardware lifecycle does this scenario belong to?
+
+Procurement
+
+Deployment
+
+Maintenance
+
+v Retirement
+
+q3
+When a machine is having issues, an IT Support Specialist has to file an RMA, or Return Merchandise Authorization form, with the vendor of the machine. Which stage of the hardware lifecycle does this scenario belong to?
+
+Procurement
+
+Deployment
+
+v Maintenance
+
+Retirement
+
+q4
+A laptop gets replaced if there's a hardware issue. Which stage of the hardware lifecycle does this scenario belong to?
+
+v Procurement
+
+Deployment
+
+Maintenance
+
+Retirement
+
+q5
+Which type of server hardware is the most space-efficient?
+
+v Tower server
+
+Rack server
+
+KVM switch
+
+Blade server
+
+q6
+Which of these terms describe a facility that stores hundreds, if not thousands, of servers?
+
+Data center
+
+KVM switch
+
+SSH server
+
+Web server
+q7
+What is NOT one of the main stages of the hardware lifecycle?
+
+v Recycling
+
+Deployment
+
+Procurement
+
+Maintenance
+q8
+What are some important elements of working with vendors as a sysadmin? Check all that apply.
+
+v Scheduling on-site maintenance
+
+Independently approve vendor relationships without management permission
+
+v Procure hardware
+
+v Establishing relationships with vendors
+
+q9
+Which is NOT an important troubleshooting step?
+
+Reading logs
+
+v Updating services
+
+Asking questions
+
+Isolate the problem with trial and error
+
+q10
+What device is commonly used to connect to and control multiple computers using a single keyboard, mouse, and monitor?
+
+Load Balancer
+
+v KVM switch
+
+DNS server
+
+Managed hub
+q11
+Who works in the background to make sure a company’s IT infrastructure is always working, and is constantly fighting to prevent IT disasters from happening?
+
+The CEO
+
+The regional manager
+
+v The system administrator (or sysadmin)
+
+The janitor
+q12
+Which is not a component of a KVM switch?
+
+Monitor
+
+Keyboard
+
+v Printer
+
+Mouse
+q13
+
+q14
+
+q15
+
+q16
+
+q17
+
+q18
+
+q19
+
+q20
+
+q1
+
+q1
 
 
 
@@ -434,13 +575,69 @@ Network-attached storage
 NAS
 
 310 Mobile Synchronization3мин
+
 311 Configuring Print Services3мин
+CUPS
+Common UNIX Printing System
+
 312 Web Servers Revisited4мин
+Web server
+Stores and serves content to clients through the Internet
+sudo apt-get Install apache2 -y
+127.0.0.1
+localhost
+
 313 What is a database server?1мин
+Databases
+Allow us to store, query, filter, and manage large amounts of data
+MySQL
+PostgresSQL
+
+Database Administrators
+
 314 Is the website down?4мин
+HTTP status codes
+HTTP status codes are codes or numbers that indicate some sort of error or info messages that occurred when trying to access a web resource.
+
+A 404 error indicates that the URL you entered doesn’t point to anything
+HTTP status codes that start with 4xx indicate an issue on the client-side.
+
+The other common HTTP status codes you might see start with 5xx. These errors indicate an issue on the server-side.
+
+HTTP status codes tell us more than just errors. They can also tell us when our request is successful, which is denoted by the codes that begin with 2xx.
+
 315 Cloud Concepts3мин
+Solid State Drive (SSD)
+Software as a Service (SaaS)
+The software is already pre-configured and the user isn’t deeply involved in the cloud configuration
+Infrastructure as a Service (laaS)
+You’re hosting your own services in the cloud. You need to decide how you want the infrastructure to look, depending on what you want to run on it
+
+Regions
+A geographical location containing number of data centers
+Zone
+If one of them fails for some reason, the others are still available and services can migrated without visibly affecting users.
+Public Private Hybrid
+
+Cloud services provided to you by a third party
+Private Cloud
+When your company owns the services and the rest of your infrastructure - whether on-site or in a remote data center
+
+Hybrid Cloud
+A mixture of both public and private clouds
+
 316 Typical Cloud Infrastructure Setups1мин
+Load Balancer
+Ensures that each VM receives a balanced number of queries
+
+Autoscaling
+It allows the service to increase or reduce capacity as needed, while the service owner only pays for the cost of the machines that are in use at any given time
+Monitoring
+
 317 When and How to Choose Cloud2мин
+
+Most cloud providers offer free trials, so it’s a good idea to test that out to see if they meet your needs, and to check how well your company’s infrastructure integrates with the cloud providers.
+
 318 10 материалов дл¤ самосто¤тельного изучени¤
 319 Supplemental Reading for Chat Communication Services10мин
 320 Supplemental Reading for Email Services10мин
@@ -465,24 +662,214 @@ NAS
 401 Ќ≈ƒ≈Ћя 4 Directory Services
 In the fourth week of this course, we'll learn about directory services. Specifically, we'll cover how two of the most popular directory services, Active Directory and OpenLDAP, work in action. We'll explore the concept of centralized management and how this can help SysAdmins maintain and support all the different parts of an IT infrastructure. By the end of this module, you will know how to add users, passwords, and use group policies in Active Directory and OpenLDAP.
 402 Module Introduction50
+
 403 What is a directory server?4мин
+Directory Server
+Contains a lookup service that provides mapping between network resources and their network addresses
+
+Replication
+The stored directory data can be copied and distributed across a number of physically distributed servers, but still appear as one, unified datastore for querying and administrating
+
+Directory services
+Useful for organizing data and making it searchable for an organization
+
+Organizational Units
+OUs
+Setup Configuration Maintenance
+
 404 Implementing Directory Services2мин
+Directory Access Protocol (DAP)
+Directory System Protocol (DSP)
+Directory Information Shadowing Protocol (DISP)
+Directory Operational Bindings Management Protocol (DOP)
+
+Lightweight Directory Access Protocol
+LDAP
+
+Active Directory
+AD
+
+OpenLDAP
+
 405 What is centralized management?4мин
+Centralized management
+A central service that provides instructions to all of the different parts of my IT infrastructure
+
+Directory services provide centralized authentication, authorization, and accounting, also known as AAA.
+Role-based Access Control
+RBAC
+Configuration management
+Chef Puppet SCCM  
+
 406 What is LDAP?1мин
+LDAP
+Lightweight Directory Access Protocol
+Lightweight Directory Access Protocol (LDAP)
+Used to access information in directory services like over a network
+Active Directory
+OpenLDAP
+dn: CN=Devan Sri-Tharan,OU=Sysadmin,DC=example,DC=com
+dn: CN=Devan Sri-Tharan,OU=Sysadmin,DC=example,DC=com
+dn: CN=Devan Sri-Tharan,OU=Sysadmin,DC=example,DC=com
+Distinguished name
+Common name of the object
+Organizational unit such as a group
+Domain component
+
 407 What is LDAP Authentication?3мин
+Bind operation
+Anonymous
+Simple
+SASL
+Simple Authentication & Security Layer
+SASL authentication
+Kerberos
+A network authentication protocol that’s used to authenticate user identity, secure the transfer of user credentials, and more
+
 408 Heather Overcoming Obstacles1мин
 409 What is Active Directory?6мин
+Active Directory (AD)
+The native directory service for Microsoft Windows
+Group Policy Objects
+GPOs
+Active Directory Administrative Center
+ADAC
+Containers
+Organizational unit OU
+Forest
+Domain Controllers
+Service discovery
+Read-write replicas
+Flexible Single-Master Operations
+FSMO
+Computer account
+
 410 Managing Active Directory3мин
+Delegation
+
 411 Managing Active Directory Users and Groups11мин
+Security Account Manager   
+SAM
+Security group
+Distribution group
+Domain Local
+Global
+Universal
+Security principal
+Parent group
+
 412 Managing Active Directory User Passwords4мин
+One-way cryptographic hash
+If there's more than one person who can authenticate using the same username and password, then auditing becomes difficult or even impossible.
+Reset
+Encrypting File System
+EFS
+
 413 Joining an Active Directory Domain4мин
+Joined or bound
+Workgroup computer
+Add-Computer -DomainName 'example.com' -Server del
+-Restart
+Functional levels
+Get-AdForest
+Get-AdDomain
+
 414 What is Group Policy?4мин
+Group Policy Object
+GPO
+
+Group Policy Object
+A set of policies and preferences that can be applied to a group of objects in directory
+
+Linked
+When you link a GPO, all of the computers or users under that domain, site, or OU will have that policy applied.
+
+Security filtering
+WMI Filters
+A Group Policy Object can contain computer configuration, user configuration, or both.
+Policies
+Settings that are reapplied every few minutes, and aren’t meant to be changed even by the local administrators
+Group policy preferences
+Settings that, in many cases, are meant to be a template for settings
+Windows Registry
+A hierarchical database of settings that Windows, and many Windows applications, use for storing configuration data
+
 415 Group Policy Creation and Editing13мин
+Group
+Policy
+Management
+Console
+
+GPMC
+Windows Management Instrumentation
+WMI
+Group Policy Settings Reference
+Change management
+Import
+Advanced Group Jolicy Management
+AGPM
+
+IT Support Professional Certificate
+System Administration and IT Infrastructure Services
+Active Directory
+Group Policy Inheritance and Precedenc
+
 416 Group Policy Inheritance and Precedence8мин
+When a computer is processing the Group Policy Objects that apply to it, all of these policies will be applied in precedence rules.
+Resultant set of policy
+RSOP
+RSOP report
+
 417 Group Policy Troubleshooting13мин
+One of the most common issues you might encounter is when a user isn't able to login to their computer, or isn’t able to authenticate to the Active Directory domain.
+DNS records
+SRV records
+The SRV records that we’re interested in are _ldap._tcp.dc._msdcs.DOMAIN.NAME, where DOMAIN.NAME is the DNS name of our domain.
+
+Resolve-DNSName -Type SRV -Name _ldap._tcp.dc._msdcs.example.com
+
+w32tm /resync
+A common issue that you might have to troubleshoot is when a GPO-defined policy or preference fails to apply to a computer.
+Fast Logon Optimization
+qpupdate /force
+gpupdate/force /sync
+Replication failure
+$env:LOGONSERVER
+echo %LOGONSERVER%
+gpresult /R
+gpresult /H FILENAME.html
+WMI filter
+
 418 Mobile Device Management (MDM)1мин
+Profiles
+Policies
+A factory reset that you can trigger from your central MDM, rather than having to do it in person on the device
+Enterprise mobility management
+EMM
+
 419 What is OpenLDAP?4мин
+Lightweight Directory Access Protocol
+LDAP Data Interchange Format
+LDIF
+sudo apt-get install slapd Idap-utils
+sudo dpkg-reconfigure slapd
+MDB
+
 420 Managing OpenLDAP3мин
+phpLDAPadmin
+LDIF files
+
+dn: uid=cindy,ou=Engineering,dc=example,dc=com objectClass: inetOrgPerson
+
+description: Cindy works in the Engineering department, cn: Cindy uid: cindy
+
+ldapadd
+Takes the input of an LDIF file and adds the context of the files
+ldapmodify
+Modifies an existing object
+ldapdelete
+Will remove the object LDIF file refers to
+
 421 11 материалов дл¤ самосто¤тельного изучени¤
 422 Supplemental Reading for Centralized Management10мин
 423 Supplemental Reading for LDAP10мин
@@ -501,8 +888,95 @@ In the fourth week of this course, we'll learn about directory services. Specifi
 436 Centralized Management and LDAP30мин
 437 Active Directory30мин
 438 Directory Services50мин
-
-
+q1
+What is Active Directory? Check all that apply. 
+An open-source directory service
+-A Windows-only implementation of a directory service
+v Microsoft's implementation of a directory service
+?An LDAP-compatible directory service
+q2
+How is an Organizational Unit different from a normal container? 
+It's not; it's just a different name for a container
+It can hold other objects
+-It can only hold other containers 
+v It can hold additional containers
+q3
+When you create an Active Directory domain, what's the name of the default user account? 
+Superuser
+Root
+Username
+v Administrator
+q4
+Question 4
+True or false: Machines in the Domain Controllers group are also members of the Domain Computers group.
+True
+v False
+q5
+In what way are security groups different from distribution groups?  
+They're the exact same thing.
+Security groups are used for computers, while distribution groups are used for users.
+Security groups are used for users, while distribution groups are used for computers.
+v Security groups can be used to provide access to resources, while distribution groups are only used for email communication.
+q6
+What's the difference between changing a password and resetting a password? 
+v Changing a password requires the previous password.
+Changing a password does not require the previous password.
+Resetting a password locks the account.
+They're the same.
+q7
+Question 7
+True or false: Joining a computer to Active Directory involves joining the computer to a workgroup.
+True
+v False
+q8
+Joining a computer to an AD domain provides which of the following advantages? Check all that apply.
+v Centralized authentication
+More detailed logging
+v Centralized management with GPOs
+Better performance
+q9
+What are Group Policy Objects? 
+Special types of containers
+Special types of computers groups
+Special types of user groups
+v Settings for computers and user accounts in AD
+q10
+What's the difference between a policy and a preference? 
+They're the exact same thing.
+A policy is used to set a preference.
+v A policy is enforced by AD, while a preference can be modified by a local user.
+A policy can be modified by a local user, while a preference is enforced by AD.
+q11
+Question 11
+With a brand new AD domain, what do you need to change before you can target groups of users and machines with GPOs? 
+Nothing; the default configuration is good to go.
+v You need to place users and computers into new OUs.
+You need to create an administrator account.
+You need to rename the default groups.
+q12
+Select the right order of enforcement of GPOs: 
+v Site --> Domain --> OU
+OU --> Domain --> Site 
+Domain --> Site --> OU 
+Site --> OU --> Domain
+q13
+What can we use to determine what policies will be applied for a given machine? 
+gpupdate
+A control panel 
+A test domain 
+v An RSOP report
+q14
+How does a client discover the address of a domain controller? 
+-It's pushed via an AD GPO. 
+It sends a broadcast to the local network. 
+?It makes a DNS query, asking for the SRV record for the domain. 
+-It's provided via DHCP.
+q15
+Which of the following could prevent you from logging into a domain-joined computer? Check all that apply.  
+v You're unable to reach the domain controller. 
+Your computer is connected to Wifi. 
+v The user account is locked. 
+v The are time and date are incorrect.
 
 
 501 Ќ≈ƒ≈Ћя 5 Data Recovery & Backups
