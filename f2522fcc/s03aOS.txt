@@ -1430,9 +1430,617 @@ sudo fsck /dev/sda
 426 Supplemental reading for Linux Disk Usage10мин
 427 Supplemental Reading for Linux Filesystem Repair10мин
 428 1 практическое упражнение
+
+Partitioning and Formatting a Disk Drive in Windows
+
+An overview of disk partitions on Windows
+On Windows systems, a common practice is to use one primary partition that contains the operating system, applications, and user data. The drive letter C: is mostly used to identify this partition. Other partitions are created on the hard disk for specialized functions, like storing data of a specific type. It's also common practice to assign partition letter names in order, creating disk partition D:, E:, F:, and so on.
+
+In this lab, you'll see how this is done by partitioning an extra disk attached to the system into two partitions of 1GB and 9GB each.
+
+Partitioning a disk using control panel
+Windows provides tools for disk management through the GUI. Among many other administrative tasks, the Control Panel in Windows also enables users to manage storage devices attached to the system.
+
+Go ahead and open Control Panel by clicking on the Start button and selecting Control Panel.
+
+Screenshot of the Windows Start Menu.
+
+While in Control Panel, navigate to System and Security, then Administrative Tools.
+
+Screenshot of Windows Control Panel, with the cursor highlighting System and Security settings option.
+
+Screenshot of the System and Security menu of Windows Control panel. Administrative Tools menu is being highlighted by the cursor.
+
+In the Administrative Tools window, double click on Computer Management.
+
+Screenshot of the Administrative Tools folder within the Windows Control Panel. The cursor is highlighting the "Computer Management" tool.
+
+Screenshot of the Computer Management tools folder. Within the Computer Management folder, there are also "system tools" , "storage", and "services and applications".
+
+From here, you can manage different services in your Windows system, including storage, task manager, etc. Since we're interested in managing disks, on the left panel, under Storage, select Disk Management.
+
+Screenshot of Computer Management tools with "Disk Management" tool selected in the left panel. In the center panel, there is a list showing disk drives and their status.
+
+You'll notice that your system has access to two disks, one of which contains unallocated space, and is labeled "Offline". You'll create partitions on this disk.
+
+Note: Throughout this lab, please ignore the 100 MB partitions named "EFI System Partition". Those are used to load the operating system during system boot up.
+
+To enable partitioning, the disk will first need to be mounted on the system. Right click on the left part of the disk and select Online.
+
+Screenshot of Computer Management tools with "Disk Management" tool selected in the left panel. In the center panel, there is a list showing disk drives and their status (Disk Drives listed include (C:), Disk 0 Partition 2, and Disk 1 partition 2). The cursor has highlighted Disk 1 and opened the right-click / context menu and is highlighting the "Online" option from the menu.
+
+The disk will be mounted and automatically assigned the letter D:\. You'll further divide this disk into two partitions.
+
+Screenshot of Computer Management tools with "Disk Management" tool selected in the left panel. In the center panel, there is a list showing disk drives and their status. The list now also includes (D:).
+
+Since the space is already allocated to the disk D:\, you'll need to first shrink it before a new partition can be created. Right click on the disk and select Shrink Volume.
+
+Screenshot of Computer Management tools with "Disk Management" tool selected in the left panel. In the center panel, there is a list showing disk drives and their status. In the bottom center panel, Disk 1 - (D:) has been selected by the cursor. The right-click / context menu is open, with the "Shrink Volume" option highlighted by the cursor.
+
+Control Panel will present you with a dialogue where you'll enter the size to shrink the disk. Enter 20,480MB to partition the disk into two partitions of 30GB and 20GB each. Click Shrink.
+
+Screenshot of the dialog box that opens after selecting "Shrink Volume" in Disk Management settings. Dialog box includes options to add the total size before the shrink, size of available shrink space, the amount of space to shrink, and the total size after shrink (all in MB). There are also button options, "Shrink" or "Cancel".
+
+The disk will be shrunk, and the additional 20GB space will be shown as unallocated.
+
+Screenshot of Disk Management tool showing disks and associated status. Disk 1 has now been split between (D:) with 20 GB and 30 GB of unallocated space.
+
+On this unallocated space, you'll create a new partition of 20GB in size. Right click on it and select New Simple Volume.
+
+Screenshot of Disk Management tool showing disks and associated status. Disk 1 has now been split between (D:) with 20 GB and 30 GB of unallocated space. The right-click / context menu has been opened for the unallocated space, with the option "New Simple Volume..." highlighted by the cursor.
+
+Control Panel will present you with a partition creation dialogue. Click Next.
+
+Screenshot of the New Simple Volume Wizard dialog box.
+
+A size specification dialogue will be presented, where you'll enter the size of the partition you want to create. Create a partition that takes up all the remaining space by accepting the default value in this dialogue. Then, click Next.
+
+Screenshot of the New Simple Volume Wizard dialog box, prompting user to specify volume size that is between the maximum and minimum amount.
+
+In the next section of the wizard, ensure the drive letter is set to E. Click Next.
+
+Screenshot of the New Simple Volume Wizard dialog box, prompting the user to assign drive letter or path.
+
+In the next section of the wizard, you'll select the file format that the partition should be made up of. You'll also need to provide the label of the partition. You can provide any name you'd like, or use the default name. Leave the default partition selected, and click Next.
+
+Screenshot of the New Simple Volume Wizard dialog box, prompting the user to format the partition (choosing whether to format, and if so, what settings the user wants to use).
+
+The last section of the wizard will be presented. Ensure the Drive letter or path is set to "E:", then click Finish.
+
+Screenshot of the New Simple Volume Wizard in the final stage -- the wizard dialog box is confirming all of the new settings. User then has the option to go back to a previous page, Finish, or Cancel.
+
+The disk partitioning will be carried out, and the resulting disk configuration will be updated. The second disk now consists of two partitions: D: and E: of 30GB and 20GB, respectively.
+
+Screenshot of Disk Management tool showing disks and associated status. Disk 1 has now been split between (D:) with 20 GB and (E:) with 30 GB.
+
+Click Check my progress to verify the objective.
+
+Split drive
+Formatting a partition
+Next, you'll format a partition to a different file format.
+
+Caution!
+Formatting a partition is destructive, and will erase all data on the partition. Not good! Remember to always backup your data before modifying partitions on a live system.
+
+To format the partition E: to a different file format, right click on it, and select Format.
+
+Screenshot of Disk Management tool showing disks and associated status. Disk 1 has now been split between (D:) with 20 GB and (E:) with 30 GB. The right-click / context menu is open on the (E:) drive with the "Format" option highlighted by the cursor.
+
+Control Panel will present you with a file system formatting dialogue. In the file format drop down list, select FAT32, then click OK.
+
+Screenshot of the Format E: dialog box. Options/settings include Volume Label, File system, and allocation unit size.
+
+Screenshot of the Format E: dialog box. Options/settings include Volume Label, File system, and allocation unit size. Volume label is set to E:; File system is set to FAT32; allocation unit size is set to Default. The "Perform a quick format" checkbox is selected.
+
+A confirmation alert with a warning will be presented. To proceed with the formatting, click OK.
+
+Screenshot of confirmation alert that reads: "Formatting this volume will erase all data on it. Back up any data you want to keep before formatting. Do you want to continue?".
+
+The partition will be formatted to the selected file system type, and the final disk configuration will be shown.
+
+Screenshot of Disk Management tool showing all existing drives and partitions.
+
+That's it! You've successfully partitioned and formatted a disk in a Windows system.
+
+Click Check my progress to verify the objective.
+
+Reformat partition
+
 429 Filesystem Types30мин
+Partitioning and Formatting a Disk Drive in Linux
+
+lsblk
+df -h
+sudo fdisk -l
+sudo fdisk -l /dev/sdb
+sudo fdisk /dev/sdb
+m
+q
+sudo fdisk /dev/sdb
+d
+d
+d
 
 
+v
+w
+
+lsblk
+sudo mkfs -t ext4 /dev/sdb2
+sudo mount /dev/sdb2 /home/my_drive
+lsblk
+
+ning and Formatting a Disk Drive in Linux
+1 hour
+Free
+Introduction
+Blocks and partitions
+Mount and umount
+Creating Partitions
+Formatting partitions using mkfs
+Conclusion
+End your lab
+Introduction
+In this lab, you'll learn how to partition and format a disk drive in Linux. Knowing how to do this is a critical skill to have as an IT Support Specialist. Partitions are important because a file system can't function without one. When you acquire a new disk drive, at least one partition is required in order to be able to write files to the file system. Different partitions can then have different file formats, depending on their purpose. For example, a disk partition that acts as a swap for your main memory may have a different file format than the default user-facing file systems. Partitions, like those used for system recovery, may also have different file formats. This shows you just how important this skill is to every IT Support Specialist out there.
+
+Head's up: You'll experience a delay as the labs initially load (particularly for Windows labs). So, please wait a couple of minutes for the labs to load. The grade is calculated when the lab is complete, so be sure to hit End Lab when you're done!
+
+You'll have 60 minutes to complete this lab.
+
+What you'll do
+You'll learn how to partition a disk drive into one or more partitions. You'll also learn how to format each of those partitions to a different file format. Your main learning objective for this lab is to practice the partitioning and formatting commands you'll find in this lab in the Linux VM.
+
+Learning tip:
+We encourage you to try and memorize all of these commands as best you can. With enough practice, using Linux commands will become second-nature to you. If you have access to your own Linux machine, try out the commands as you follow along in the next section.
+
+If you don't have Linux available on your local machine, no worries! You can type these commands in a text editor, so you can refer back to them when you're doing the active lab exercises.
+
+Start the lab
+You'll need to start the lab before you can access the materials. To do this, click the green “Start Lab” button at the top of the screen.
+
+Green "Start Lab" button
+
+After you click the “Start Lab” button, you will see a shell, where you will be performing further steps in the lab. You should have a shell that looks like this:
+
+Screenshot of shell terminal CLI. CLI reads "student@864a6934570a: -$"
+
+Blocks and partitions
+Before diving into the details of creating partitions and formatting them, let's kick things off with a review of blocks and partitions.
+
+Blocks
+Blocks are a layer of storage devices that allow individual access to each independently. They allow programs to access storage without worrying about whether the underlying hardware device is a hard drive, solid state drive, flash drive, etc.
+
+In Linux, you can view block devices and file systems attached to your system using the lsblk command. This command gathers information about all devices attached to the system, and prints them out using a tree-like structure. To view the devices attached to your VM, use the lsblk command.
+
+lsblk
+Copied!
+NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda         8:0    0   10G  0 disk 
+|-sda1      8:1    0  4.9G  0 part 
+|-sda2      8:2    0   16M  0 part 
+|-sda3      8:3    0    2G  0 part 
+|-sda4      8:4    0   16M  0 part 
+|-sda5      8:5    0    2G  0 part 
+|-sda6      8:6    0  512B  0 part 
+|-sda7      8:7    0  512B  0 part 
+|-sda8      8:8    0   16M  0 part 
+|-sda9      8:9    0  512B  0 part 
+|-sda10     8:10   0  512B  0 part 
+|-sda11     8:11   0    8M  0 part 
+`-sda12     8:12   0   32M  0 part 
+sdb         8:16   0   10G  0 disk 
+|-sdb1      8:17   0  5.9G  0 part /etc/hosts
+|-sdb2      8:18   0   16M  0 part 
+|-sdb3      8:19   0    2G  0 part 
+| `-vroot 253:0    0    2G  1 dm   
+|-sdb4      8:20   0   16M  0 part 
+|-sdb5      8:21   0    2G  0 part 
+|-sdb6      8:22   0  512B  0 part 
+|-sdb7      8:23   0  512B  0 part 
+|-sdb8      8:24   0   16M  0 part 
+|-sdb9      8:25   0  512B  0 part 
+|-sdb10     8:26   0  512B  0 part 
+|-sdb11     8:27   0    8M  0 part 
+`-sdb12     8:28   0   32M  0 part  
+You'll see that your instance has two block devices attached to it (disks). Each of them is 10GB in size. The column MOUNTPOINT shows where a block device is mounted. It's from this location that files on the disk can be accessed. In this case, the MOUNTPOINT is displaying "/etc/hosts" against sdb, which means the second disk (sdb) is mounted at the root of the Linux file system tree. Thus, the files you're seeing on your system right now are from this disk.
+
+A first disk, sda, is also available, but it's not mounted. In this lab, you'll divide this disk into two partitions. You'll then mount one of these partitions onto the file system, so you can start accessing files from it.
+
+Note: These may be swapped for you, and your VM may be mounted on sda instead of sdb. This will change the commands used in the lab, so when you see \[MOUNT DRIVE\] replace it with your mount drive (sda or sdb) and when you see \[SECOND DRIVE\] replace it with the other one. If your VM is mounted on sda, the screenshots will also be flipped from what you will see.
+Optionally, you can view disks mounted on the system using the df command. This command is normally used to display the amount of space available on the file system. It lists all block devices with the available space on them. Use the -h option to display file sizes in human readable format.
+
+df -h
+Copied!
+Filesystem      Size  Used Avail Use% Mounted on
+overlay         5.7G  809M  4.9G  14% /
+tmpfs            64M     0   64M   0% /dev
+tmpfs           290M     0  290M   0% /sys/fs/cgroup
+shm              64M     0   64M   0% /dev/shm
+/dev/sdb1       5.7G  809M  4.9G  14% /etc/hosts
+Partitions
+Instead of using a storage block as a whole, it's common practice to divide a storage block into different partitions. Partitions can be different sizes, and formatted to different filesystems. This allows you to use a single storage device for different purposes.
+
+You can display partition information using the fdisk command. You can also use the -l option to list partitions in the block. You can pass a device name to the fdisk command to list the partitions contained in that device.
+
+To list all partitions, use fdisk -l
+
+sudo fdisk -l
+Copied!
+GPT PMBR size mismatch (18874524 != 20971519) will be corrected by write.
+The backup GPT table is not on the end of the device. This problem will be corrected by write.
+Disk /dev/sda: 10 GiB, 10737418240 bytes, 20971520 sectors
+Disk model: PersistentDisk  
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: FDF53EEC-3010-3049-B247-42C11C16F682
+Device       Start      End  Sectors  Size Type
+/dev/sda1  8704000 18874476 10170477  4.9G Linux filesystem
+/dev/sda2    20480    53247    32768   16M ChromeOS kernel
+/dev/sda3  4509696  8703999  4194304    2G ChromeOS root fs
+/dev/sda4    53248    86015    32768   16M ChromeOS kernel
+/dev/sda5   315392  4509695  4194304    2G ChromeOS root fs
+/dev/sda6    16448    16448        1  512B ChromeOS kernel
+/dev/sda7    16449    16449        1  512B ChromeOS root fs
+/dev/sda8    86016   118783    32768   16M Linux filesystem
+/dev/sda9    16450    16450        1  512B ChromeOS reserved
+/dev/sda10   16451    16451        1  512B ChromeOS reserved
+/dev/sda11      64    16447    16384    8M BIOS boot
+/dev/sda12  249856   315391    65536   32M EFI System
+Partition 7 does not start on physical sector boundary.
+Partition 9 does not start on physical sector boundary.
+Partition 10 does not start on physical sector boundary.
+Partition table entries are not in disk order.
+Disk /dev/sdb: 10 GiB, 10737418240 bytes, 20971520 sectors
+Disk model: PersistentDisk  
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+To list partitions contained in /dev/sdb, pass /dev/sdb to the fdisk command.
+
+sudo fdisk -l /dev/sdb
+Copied!
+Disk /dev/sdb: 10 GiB, 10737418240 bytes, 20971520 sectors
+Disk model: PersistentDisk  
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: FDF53EEC-3010-3049-B247-42C11C16F682
+Device       Start      End  Sectors  Size Type
+/dev/sdb1  8704000 20971486 12267487  5.9G Linux filesystem
+/dev/sdb2    20480    53247    32768   16M ChromeOS kernel
+/dev/sdb3  4509696  8703999  4194304    2G ChromeOS root fs
+/dev/sdb4    53248    86015    32768   16M ChromeOS kernel
+/dev/sdb5   315392  4509695  4194304    2G ChromeOS root fs
+/dev/sdb6    16448    16448        1  512B ChromeOS kernel
+/dev/sdb7    16449    16449        1  512B ChromeOS root fs
+/dev/sdb8    86016   118783    32768   16M Linux filesystem
+/dev/sdb9    16450    16450        1  512B ChromeOS reserved
+/dev/sdb10   16451    16451        1  512B ChromeOS reserved
+/dev/sdb11      64    16447    16384    8M BIOS boot
+/dev/sdb12  249856   315391    65536   32M EFI System
+Partition 7 does not start on physical sector boundary.
+Partition 9 does not start on physical sector boundary.
+Partition 10 does not start on physical sector boundary.
+Partition table entries are not in disk order.
+fdisk displays information contained in the partition table, where information about partitions is stored.
+
+Disk partitioning with fdisk
+When the fdisk command is used without options, it provides a menu-driven environment for creating and deleting partitions.
+
+Caution!: Modifying partitions is destructive, and can lead to loss of data. Not good! Remember to always backup your data before modifying partitions on a live system.
+Mount and umount
+Mounting and unmounting mean making devices available or unavailable on a Linux file system. This is accomplished by the commands mount and umount. Before modifying a disk, you should first unmount it from the system, using the umount command. When modifications on the disk are done, you should mount it back onto the system. For this exercise, since the device we're partitioning isn't initially mounted, you can proceed with partitioning.
+
+Go ahead and start fdisk in interactive mode by passing the name of the disk you want to partition. In this lab, we'll partition /dev/sda
+
+Note: We will partition the disk that's not currently mounted. You should select dev/sdb if /dev/sda is where the operating system is mounted, and /dev/sda otherwise. You can still partition the disk even when the operating system is running from it, but a reboot will be required in order for the partition changes you make to take place.
+Start fdisk by passing the disk you want to partition as the parameter.
+
+sudo fdisk /dev/[SECOND DRIVE]
+Copied!
+Welcome to fdisk (util-linux 2.33.1).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+GPT PMBR size mismatch (18874524 != 20971519) will be corrected by write.
+The backup GPT table is not on the end of the device. This problem will be corrected by write.
+Command (m for help): 
+fdisk will start in interactive mode. You can use m to use help provided by the command.
+
+Command (m for help): m
+Help:
+  GPT
+   M   enter protective/hybrid MBR
+  Generic
+   d   delete a partition
+   F   list free unpartitioned space
+   l   list known partition types
+   n   add a new partition
+   p   print the partition table
+   t   change a partition type
+   v   verify the partition table
+   i   print information about a partition
+  Misc
+   m   print this menu
+   x   extra functionality (experts only)
+  Script
+   I   load disk layout from sfdisk script file
+   O   dump disk layout to sfdisk script file
+  Save & Exit
+   w   write table to disk and exit
+   q   quit without saving changes
+  Create a new label
+   g   create a new empty GPT partition table
+   G   create a new empty SGI (IRIX) partition table
+   o   create a new empty DOS partition table
+   s   create a new empty Sun partition table
+Command (m for help): 
+You can use p to show details about partitions on the disk.
+
+Command (m for help): p
+Disk /dev/sda: 10 GiB, 10737418240 bytes, 20971520 sectors
+Disk model: PersistentDisk  
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: FDF53EEC-3010-3049-B247-42C11C16F682
+Device       Start      End  Sectors  Size Type
+/dev/sda1  8704000 18874476 10170477  4.9G Linux filesystem
+/dev/sda2    20480    53247    32768   16M ChromeOS kernel
+/dev/sda3  4509696  8703999  4194304    2G ChromeOS root fs
+/dev/sda4    53248    86015    32768   16M ChromeOS kernel
+/dev/sda5   315392  4509695  4194304    2G ChromeOS root fs
+/dev/sda6    16448    16448        1  512B ChromeOS kernel
+/dev/sda7    16449    16449        1  512B ChromeOS root fs
+/dev/sda8    86016   118783    32768   16M Linux filesystem
+/dev/sda9    16450    16450        1  512B ChromeOS reserved
+/dev/sda10   16451    16451        1  512B ChromeOS reserved
+/dev/sda11      64    16447    16384    8M BIOS boot
+/dev/sda12  249856   315391    65536   32M EFI System
+Partition 7 does not start on physical sector boundary.
+Partition 9 does not start on physical sector boundary.
+Partition 10 does not start on physical sector boundary.
+Partition table entries are not in disk order.
+Command (m for help): 
+Enter q to exit interactive mode when you are finished exploring.
+
+Creating Partitions
+You'll now create new partitions using fdisk. You'll partition the second drive into two partitions: one swap partition of size 1GB, and another of size 9GB. The file system type on the second partition will be ext4.
+
+Open fdisk in interactive mode to do the partitioning:
+
+sudo fdisk /dev/[SECOND DRIVE]
+Copied!
+Welcome to fdisk (util-linux 2.33.1).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+GPT PMBR size mismatch (18874524 != 20971519) will be corrected by write.
+The backup GPT table is not on the end of the device. This problem will be corrected by write.
+Command (m for help): 
+To create a new partition, the command control n is used. However, since all the space on the disk is currently allocated, you'll need to first free up space by deleting the default partitions.
+
+Use the d command control to delete the default partitions. When you issue the d command control, fdisk asks you to enter the number of partitions you want to delete. Since you have twelve partitions, fdisk automatically selects the last partition by default, and pressing Enter deletes the last partition. Repeat this process until you delete all the twelve partitions.
+
+Command (m for help): d
+Partition number (1-12, default 12): 
+Partition 12 has been deleted.
+Command (m for help): d
+Partition number (1-11, default 11): 
+Partition 11 has been deleted.
+Command (m for help): d
+Partition number (1-10, default 10): 
+Partition 10 has been deleted.
+Command (m for help): d
+Partition number (1-9, default 9): 
+Partition 9 has been deleted.
+Command (m for help): d
+Partition number (1-8, default 8): 
+Partition 8 has been deleted.
+Command (m for help): d
+Partition number (1-7, default 7): 
+Partition 7 has been deleted.
+Command (m for help): d
+Partition number (1-6, default 6): 
+Partition 6 has been deleted.
+Command (m for help): d
+Partition number (1-5, default 5): 
+Partition 5 has been deleted.
+Command (m for help): d
+Partition number (1-4, default 4): 
+Partition 4 has been deleted.
+Command (m for help): d
+Partition number (1-3, default 3): 
+Partition 3 has been deleted.
+Command (m for help): d
+Partition number (1,2, default 2): 
+Partition 2 has been deleted.
+Command (m for help): d
+Selected partition 1
+Partition 1 has been deleted.
+Command (m for help): 
+You're now able to create your new partitions. Enter the command control for creating a new partition, n.
+
+You'll then need to provide the starting sector (memory location) of the new partition, from where you want to allocate. Here, press Enter to select the default value 2048.
+
+Command (m for help): n
+Partition number (1-128, default 1): 
+First sector (34-20971486, default 2048): 
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-20971486, default 20971486): 
+Provide the last sector of the new partition, up to where you want to allocate. The difference between the first and last sectors makes up the total size of the partition. Disk sector represents units used to measure the size on disks. Each sector stores a fixed amount of data. In lots of hard disks, for example, a sector stores 512 bytes. To create the first 1GB partition, enter 2097200 (divide the original partition by 10).
+
+Command (m for help): n
+Partition number (1-128, default 1): 
+First sector (34-20971486, default 2048): 
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-20971486, default 20971486): 2097200
+Created a new partition 1 of type 'Linux filesystem' and of size 1023 MiB.
+Command (m for help): 
+Two important things happen here: the partition size is set to 1GB, and the partition type is set to Linux filesystem. (You'll see how to change partition types in the next section.) Voila! One partition is now created. You'll now move on to the second one.
+
+Use the command control n again for a new partition.
+
+Command (m for help): n
+Partition number (2-128, default 2): 
+Select partition number 2 to issue partition numbers in sequence.
+
+Command (m for help): n
+Partition number (2-128, default 2): 
+First sector (2097201-20971486, default 2099200): 
+Select the default partition starting sector, which is the next sector from the last partition you allocated.
+
+Command (m for help): n
+Partition number (2-128, default 2): 
+First sector (2097201-20971486, default 2099200): 
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2099200-20971486, default 20971486): 
+Also select the default last sector, which will be the last sector of the remaining disk space.
+
+Command (m for help): n
+Partition number (2-128, default 2): 
+First sector (2097201-20971486, default 2099200): 
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2099200-20971486, default 20971486): 
+Created a new partition 2 of type 'Linux filesystem' and of size 9 GiB.
+Command (m for help):  
+The second partition is now created. Sweet!
+
+Before committing your changes, you'll change the second partition to a different partition type. You'll change the first partition type to a Linux swap type. Enter command control t to change the partition type, and select the first partition.
+
+Command (m for help): t
+Partition number (1,2, default 2): 1
+Partition type (type L to list all types):  
+You can use the command control L to view a list of all partition types.
+
+Command (m for help): t
+Partition number (1,2, default 2): 1
+Partition type (type L to list all types): L
+  1 EFI System                     C12A7328-F81F-11D2-BA4B-00A0C93EC93B
+  2 MBR partition scheme           024DEE41-33E7-11D3-9D69-0008C781F39F
+  3 Intel Fast Flash               D3BFE2DE-3DAF-11DF-BA40-E3A556D89593
+  4 BIOS boot                      21686148-6449-6E6F-744E-656564454649
+  5 Sony boot partition            F4019732-066E-4E12-8273-346C5641494F
+  6 Lenovo boot partition          BFBFAFE7-A34F-448A-9A5B-6213EB736C22
+  7 PowerPC PReP boot              9E1A2D38-C612-4316-AA26-8B49521E5A8B
+  8 ONIE boot                      7412F7D5-A156-4B13-81DC-867174929325
+  9 ONIE config                    D4E6E2CD-4469-46F3-B5CB-1BFF57AFC149
+ 10 Microsoft reserved             E3C9E316-0B5C-4DB8-817D-F92DF00215AE
+ 11 Microsoft basic data           EBD0A0A2-B9E5-4433-87C0-68B6B72699C7
+ 12 Microsoft LDM metadata         5808C8AA-7E8F-42E0-85D2-E1E90434CFB3
+ 13 Microsoft LDM data             AF9B60A0-1431-4F62-BC68-3311714A69AD
+ 14 Windows recovery environment   DE94BBA4-06D1-4D40-A16A-BFD50179D6AC
+ 15 IBM General Parallel Fs        37AFFC90-EF7D-4E96-91C3-2D7AE055B174
+ 16 Microsoft Storage Spaces       E75CAF8F-F680-4CEE-AFA3-B001E56EFC2D
+ 17 HP-UX data                     75894C1E-3AEB-11D3-B7C1-7B03A0000000
+ 18 HP-UX service                  E2A1E728-32E3-11D6-A682-7B03A0000000
+ 19 Linux swap                     0657FD6D-A4AB-43C4-84E5-0933C84B4F4F
+ 20 Linux filesystem               0FC63DAF-8483-4772-8E79-3D69D8477DE4
+ 21 Linux server data              3B8F8425-20E0-4F3B-907F-1A25A76F98E8
+ 22 Linux root (x86)               44479540-F297-41B2-9AF7-D131D5F0458A
+Enter 19 to change the partition type to ‘Linux swap', and press Enter.
+
+Head's up: Some of the characters in the partition type name Linux swap are truncated.
+
+Partition type (type L to list all types): 19
+Changed type of partition 'Linux filesystem' to 'Linux swap'.
+Command (m for help): 
+The partition type will be changed to match the selection.
+
+Up to this point, you've just been editing the partition table in memory. You can use the q command here to quit fdisk without committing changes to the disk. You can also update your partitions by using the d and n commands to remove and add new partitions.
+
+You can also use the v command here to verify your changes before proceeding.
+
+Command (m for help): v
+No errors detected.
+Header version: 1.0
+Using 2 out of 128 partitions.
+A total of 4013 free sectors is available in 2 segments (the largest is 1007 KiB).
+If you're satisfied with the changes you've made so far, you can commit them to the disk by using the w command.
+
+Command (m for help): w
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+Congrats! You've successfully partitioned the second disk using fdisk.
+
+The second disk device is now made up of two partitions of 1GB and 9GB, respectively.
+
+Click Check my progress to verify the objective.
+Partitioning
+
+Formatting partitions using mkfs
+Next, you'll create different file systems in the partitions you just created. You'll do this by using the command mkfs in Linux. Multiple filesystem types exist, and it's important to know all of them, along with the functions they're best suited for. In this lab, you'll format the second partition into ext4, the most widely used Linux filesystem type.
+
+To do this, use lsblk again to find the disk you want to create the file system type in.
+
+lsblk
+Copied!
+NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda         8:0    0   10G  0 disk 
+|-sda1      8:1    0 1023M  0 part 
+`-sda2      8:2    0    9G  0 part 
+sdb         8:16   0   10G  0 disk 
+|-sdb1      8:17   0  5.9G  0 part /etc/hosts
+|-sdb2      8:18   0   16M  0 part 
+|-sdb3      8:19   0    2G  0 part 
+| `-vroot 253:0    0    2G  1 dm   
+|-sdb4      8:20   0   16M  0 part 
+|-sdb5      8:21   0    2G  0 part 
+|-sdb6      8:22   0  512B  0 part 
+|-sdb7      8:23   0  512B  0 part 
+|-sdb8      8:24   0   16M  0 part 
+|-sdb9      8:25   0  512B  0 part 
+|-sdb10     8:26   0  512B  0 part 
+|-sdb11     8:27   0    8M  0 part 
+`-sdb12     8:28   0   32M  0 part 
+Format the second partition in your unmounted drive (sdb2 or sda2) to ext4 using this command:
+
+sudo mkfs -t ext4 /dev/[SECOND DRIVE]2
+Copied!
+mke2fs 1.44.5 (15-Dec-2018)
+Discarding device blocks: done                            
+Creating filesystem with 2359035 4k blocks and 589824 inodes
+Filesystem UUID: 3e68d65f-3029-4232-8f45-b924de3862bd
+Superblock backups stored on blocks: 
+        32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632
+Allocating group tables: done                            
+Writing inode tables: done                            
+Creating journal (16384 blocks): done
+Writing superblocks and filesystem accounting information: done 
+Click Check my progress to verify the objective.
+EXT4
+
+You can now mount /dev/sda2 to a location on the file system to start accessing files on it. Mount it on the directory /home/my_drive.
+
+sudo mount /dev/[SECOND DRIVE]2 /home/my_drive
+Copied!
+You can verify the file systems and block devices attached to your system using lsblk command.
+
+lsblk
+Copied!
+NAME      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda         8:0    0   10G  0 disk 
+|-sda1      8:1    0 1023M  0 part 
+`-sda2      8:2    0    9G  0 part /home/my_drive
+sdb         8:16   0   10G  0 disk 
+|-sdb1      8:17   0  5.9G  0 part /etc/hosts
+|-sdb2      8:18   0   16M  0 part 
+|-sdb3      8:19   0    2G  0 part 
+| `-vroot 253:0    0    2G  1 dm   
+|-sdb4      8:20   0   16M  0 part 
+|-sdb5      8:21   0    2G  0 part 
+|-sdb6      8:22   0  512B  0 part 
+|-sdb7      8:23   0  512B  0 part 
+|-sdb8      8:24   0   16M  0 part 
+|-sdb9      8:25   0  512B  0 part 
+|-sdb10     8:26   0  512B  0 part 
+|-sdb11     8:27   0    8M  0 part 
+`-sdb12     8:28   0   32M  0 part 
+From now on, accessing "/home/my_drive" will be accessing files on the disk.
+
+That's it! You've successfully partitioned and formatted a disk in Linux.
+
+Click Check my progress to verify the objective.
+Mount
 
 501 Week5 Process Management
 In the fifth week of this course, we'll explore process management. As an IT Support Specialist, it is important to use system tools to read and understand process statuses of machines. We will cover ways to start and terminate a process in Windows and Linux. We will also apply troubleshooting tools to solve problems with processes and resources. By the end of this module, you will use Windows and Linux commands to do practical process maintenance.
@@ -1564,7 +2172,155 @@ lsof
 525 3 практических упражнения
 526 Life of a Process30мин
 527 Managing Processes30мин
+Maintain Efficient Process Utilization on Windows
+
+Get-Process -Name "totally_not_malicious"
+taskkill /F /PID 3844
+
+Get-Process -Name "*razzle*"
+taskkill /F /PID 5728
+taskkill /F /PID 2628
+
+Terminating a specific process
+On Windows, you can view running processes in the Task Viewer, or use Windows PowerShell (this is what you'll be using for this lab). For these operations, you'll need to be running a Windows PowerShell terminal in Administrative mode. So, search the Start Menu for Windows PowerShell, right-click it, and select "Run as Administrator".
+
+From Windows PowerShell, you can use Get-Process to search for a process by name. The "totally_not_malicious" process is running on this machine, too. Search for it, using this command:
+
+Get-Process -Name "totally_not_malicious"
+Copied!
+Each row represents a process, and one of the columns shows the process ID:
+
+Handles  NPM(K)  PM(K)   WS(K)  CPU(s)   Id   SI ProcessName
+-------  ------  -----   -----  ------   --   -- -----------
+    209      14   2724   10996  271.06   7164  1 totally_not_malicious
+To end a process, you can use taskkill and specify the Process ID, or PID, of the process:
+
+Note: Make sure you replace/substitute the "[PROCESS ID]" with id of the process you got from the previous command.
+
+taskkill /F /PID [PROCESS ID]
+Copied!
+You should see this message after running taskkill with the PID for your process, which will likely be different than the ID specified here:
+
+SUCCESS: The process with PID 7164 has been terminated.
+To verify that the process is no longer running, you can search for it again:
+
+Get-Process -Name "totally_not_malicious"
+Copied!
+This should throw an error because no process by that name exists anymore, indicating that you've successfully ended it:
+
+Get-Process : Cannot find a process with the name "totally_not_malicious". Verify the process name and call the cmdlet
+again.
+At line:1 char:1
++ Get-Process -Name "totally_not_malicious"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (totally_not_malicious:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Click Check my progress to verify the objective.
+
+Malicious Process
+Terminating multiple processes
+There are processes containing the word "razzle" also running on this VM. Get-Process doesn't handle processes with partially-matching names, like grep does, and running Get-Process -Name "razzle" would result in no matches. However, you can use "wildcards" (asterisks) to look for processes that contain "razzle" in their name:
+
+Get-Process -Name "*razzle*"
+Copied!
+This will show two processes that contain "razzle" in their name:
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+    209      14     2784      11028     572.89   2120   1 my_cat_razzle
+    209      14     2824      11036     572.83   7052   1 razzle_dazzle
+You can use taskkill, like before, once for each of the "razzle" processes:
+
+Note: Make sure you replace/substitute the "[PROCESS ID]" with id of the process you got from the previous command.
+
+taskkill /F /PID [PROCESS ID]
+Copied!
+PS C:\users\qwiklabs> taskkill /F /PID 2120
+SUCCESS: The process with PID 2120 has been terminated.
+PS C:\users\qwiklabs> taskkill /F /PID 7052
+SUCCESS: The process with PID 7052 has been terminated.
+You can use Get-Process again to verify that the processes have been ended:
+
+Get-Process -Name "*razzle*"
+Copied!
+You shouldn't see any processes in the output. When you ran this before to verify that the malicious process had been terminated, it printed an error message because the specifically-named process was not present. When you use a wildcard (*) in the search, you aren't looking for an exact match. So, rather than an error message, the command outputs nothing at all (because there are no matches):
+
+PS C:\users\qwiklabs> Get-Process -Name "*razzle*"
+PS C:\users\qwiklabs>                             
+Click Check my progress to verify the objective.
+
 528 Process Utilization30мин
+Maintain Efficient Process Utilization on Linux
+
+ps -aux | grep "totally_not_malicious"
+sudo kill 313
+ 
+ps -aux | grep "razzle" 
+sudo kill 314
+sudo kill 315
+sudo kill 316
+sudo kill 317
+
+
+
+
+Terminating a specific process
+The ps -aux command allows you to list all currently running processes on a Linux machine. However, the list of processes is often super long, which makes finding a specific process pretty tough. To filter the processes you're interested in, you can pipe the output of ps through grep.
+
+There are two "malicious" processes currently running on your machine, called "totally_not_malicious". You can run ps and grep to find them, using this command:
+
+ps -aux | grep "totally_not_malicious"
+Copied!
+You should see output similar to this. The top two lines are the two processes, while the last line is the grep process you just used to search for them. Check out the four-digit numbers on the left of each of the rows; these are the process IDs.
+
+root         327  0.0  0.5   7572  3516 ?        S    06:33   0:00 sudo nohup bash /home/totally_not_malicious
+root         334  0.0  0.4   3648  2656 ?        S    06:33   0:00 bash /home/totally_not_malicious
+student      399  0.0  0.1   3080   876 pts/0    S+   06:33   0:00 grep totally_not_malicious
+To stop a process, you can use the kill command. You need to use sudo to have permission to stop them. You also need to specify the ID of the process, which will likely be different on your machine than what's shown above (the ID is highlighted in the above output):
+
+sudo kill [PROCESS ID]
+Copied!
+After killing the processes, you can verify that they're no longer running by running the original command again:
+
+ps -aux | grep "totally_not_malicious"
+Copied!
+student      672  0.0  0.1   3080   876 pts/0    S+   06:36   0:00 grep totally_not_malicious
+Click Check my progress to verify the objective.
+
+Stop the malicious processes
+Terminating multiple processes
+There are also multiple processes running on your computer containing the word "razzle". You can find them in the same way that you found the previous process using ps. Because grep doesn't look for full matches, it can be used to find any process that contains a specific substring:
+
+ps -aux | grep "razzle"
+Copied!
+The below shows all six processes that contain the word "razzle". (Again, you can ignore the last process because it's the process running grep.)
+
+root         328  0.0  0.6   7572  3616 ?        S    06:33   0:00 sudo nohup bash /home/razzle_dazzle
+root         329  0.0  0.5   7572  3480 ?        S    06:33   0:00 sudo nohup bash /home/my_cat_razzle
+root         330  0.0  0.5   7572  3520 ?        S    06:33   0:00 sudo nohup bash /home/razzles
+root         331  0.0  0.4   3648  2544 ?        S    06:33   0:00 bash /home/my_cat_razzle
+root         332  0.0  0.4   3648  2624 ?        S    06:33   0:00 bash /home/razzles
+root         333  0.0  0.4   3648  2680 ?        S    06:33   0:00 bash /home/razzle_dazzle
+student      773  0.0  0.1   3080   888 pts/0    S+   06:37   0:00 grep razzle
+To kill each of the processes, you can use the same kill command as before, substituting in each process ID:
+
+sudo kill [PROCESS ID]
+Copied!
+To verify that the processes were successfully stopped, you can use the same command you used to find them in the first place:
+
+ps -aux | grep "razzle"
+Copied!
+You should only see the process for the grep command, indicating that the other processes are no longer running:
+
+student      870  0.0  0.1   3080   880 pts/0    S+   06:38   0:00 grep razzle
+Click Check my progress to verify the objective.
+
+Stop the razzle processes
+Conclusion
+Wohoo! You've successfully used ps to find processes on Linux, and used kill to end them. These are common Linux commands, so we recommend you practice until you feel comfortable using them.
+
+
+
 
 
 
@@ -1693,4 +2449,170 @@ Do what you love and love what you do.
 624 Supplemental Readings for Mobile Device Resetting and Imaging10мин
 625 2 практических упражнения
 626 Remote Access30мин
+Using Logs to Help You Track Down an Issue in Windows
+
+
+
+Viewing logs on Windows
+To view logs on Windows, you should use the Event Viewer application. To open Event Viewer, open the Start menu and search for "event viewer". The application icon should look like the image below. Click it to open the application.
+
+Screenshot of Windows Search, searching for Event Viewer.
+
+Once open, it should look like this:
+
+Screenshot of Windows Event Viewer tool. The left panel shows the folders within event viewer; the central panel shows an overview and summary; the right panel shows Actions.
+
+Feel free to resize the window at any time, to make the text easier to read. Next, click on the "Windows Logs" folder in the far-left column. Then, select "Application" to view the application logs, where the logs for this lab are located:
+
+Screenshot of Application logs with the Windows Logs in Windows Event Viewer.
+
+Scroll through the logs to find the five logs that you need to fix for this lab. They should have a time that's close to when you started the lab, and the "Source" field should be "Qwiklab". To view details of a log entry, click on it in Event Viewer, and a message window will open at the bottom of the Event Viewer window.
+
+We'll walk through one of the logs, then the other four will be up to you. You're on your own...but you've got this!
+
+Low disk space!
+
+Find and click on the log with "Qwiklab" as the source and Event ID 5:
+
+Screenshot of details for 'Event 5, Qwiklab'. General details say "error: Disk space is super low, fix it!".
+
+This log is warning you about a large file that's taking up disk space, but it doesn't specify the file name. On Windows, you can find large files using the File Explorer. Open it and navigate to your C:\ directory, then click the search bar at the top right. A "Search Options" tab should appear. Click on it to view the different ways you can configure your search:
+
+Screenshot of File Explorer open to the C Drive. The "Search" menu in File Explorer is open.
+
+You're only interested in file size at the moment, so click the "Size" dropdown and choose "Gigantic" to start a search for files over 128 MB.
+
+Screenshot of the dropdown options from the 'Size" menu in the Search menu within File Explorer.
+
+The search can take some time, and multiple files may appear in your search, but we're only interested in the largest (which is almost 10 gigabytes):
+
+Screenshot of search results in File Explorer for any files that are "gigantic". File titled "ultra_mega_large" is highlighted in the screenshot, it's almost 10 GB.
+
+Now that you know which file is causing the low-memory error, you can delete it by right-clicking the file in the search results, and selecting "delete". You'll need to provide admin privileges to delete it. When this popup appears, click "continue":
+
+Screenshot of pop up dialog box stating "You'll need to provide administrator permission to delete this file"
+
+Files over a certain size don't fit in the Windows "Recycle Bin", and can only be permanently deleted. After clicking "Continue", you'll see this message, indicating that the file is too large to recycle. Press "Yes" to delete permanently.
+
+Screenshot of popup dialog box stating "This file is too big to recycle. Do you want to permanently delete it?"
+
+The file will delete, fixing the log issue! Note that the log will still remain in Event Viewer, because logs aren't deleted when the issues that caused them are removed.
+
+The remaining log entries
+
+The rest of the logs involve issues that you have already successfully fixed in earlier labs in this course. Refer back to those lessons and labs to refresh yourself on the required steps, if you’re stuck:
+
+Updating software that's out-of-date (Week 3 Labs)
+Finding and deleting files (Week 1 Labs)
+Modifying file permissions (Week 2 Labs)
+Finding and terminating specific processes (Week 5 Labs)
+If you’d like to check your steps along the way, refer to your score in the top right of the lab. Click the score and run each step to check individually as you go. Good luck!
+
+
 627 Logging30мин
+
+
+ls /var/log
+sudo cat /var/log/syslog
+sudo du -a /home | sort -n -r | head -n 5
+sudo rm /home/lab/storage/ultra_mega_large.txt
+
+sudo apt install -f
+
+sudo rm /home/lab/corrupted_file 
+
+ls /home/lab/
+super_secret_file.txt
+ls -l /home/lab/super_secret_file.txt
+sudo chmod 777 /home/lab/super_secret_file.txt 
+-rwxrwxrwx 1 student student 12 Dec 24 07:17 /home/lab/super_secret_file.txt
+
+ps -aux | grep "totally_not_malicious"
+
+student@1d79d00a4706:~$ ps -aux | grep "totally_not_malicious"
+root         320  0.0  0.4   7580  2828 ?        S    07:17   0:00 sudo nohup bash /home/totally_not_malicious
+root         323  0.0  0.4   3656  2396 ?        S    07:17   0:00 bash /home/totally_not_malicious
+student     7003  0.0  0.1   3088   888 pts/0 
+
+sudo kill 320
+
+
+student@4fd6fe955921:~$ ls /var/log
+alternatives.log  btmp      faillog   syslog
+apt               dpkg.log  lastlog   user.log
+auth.log          exim4     messages  wtmp
+student@4fd6fe955921:~$ sudo cat /var/log/syslog
+Dec 24 06:46:35 4fd6fe955921 root: Qwiklab Error: There is a corrupted file found in /home/lab/corrupted_file. Remove this file.
+Dec 24 06:46:35 4fd6fe955921 root: Qwiklab Error: VLC - Package out of date, upgrade to the latest version.
+Dec 24 06:46:35 4fd6fe955921 root: Qwiklab Error: Process: [bash /home/totally_not_malicious] is malicious, terminate the process immediately!
+Dec 24 06:46:35 4fd6fe955921 root: Qwiklab Error: Permission Denied: /home/lab/super_secret_file.txt
+Dec 24 06:46:35 4fd6fe955921 root: Qwiklab Error: Disk space is super low, fix it!
+Dec 24 06:46:36 4fd6fe955921 rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+Dec 24 06:46:36 4fd6fe955921 rsyslogd: activation of module imklog failed [v8.1901.0 try https://www.rsyslog.com/e/2145 ]
+Dec 24 06:46:36 4fd6fe955921 rsyslogd:  [origin software="rsyslogd" swVersion="8.1901.0" x-pid="1227" x-info="https://www.rsyslog.com"] start
+
+The scenario
+Your computer is having some issues, and you can't seem to figure out what's wrong. Argh! Dig through the logs to figure out how to fix these issues.
+
+You'll use logs to identify issues on a Linux VM, which you'll then fix using the knowledge you've gained from the other labs that you've completed.
+
+What you should already know
+This lab focuses on looking at logs that indicate issues that need to be fixed. These issues can be resolved using the skills you've gained in previous labs, so detailed instructions won't be included here. You're on your own...but you've got this!
+
+Here are the concepts you need to be familiar with before taking this lab:
+
+Updating software that's out-of-date
+
+Finding and deleting files
+
+Modifying file permissions
+
+Finding and terminating specific processes
+
+Viewing logs on Linux
+On Linux machines, logs are stored in the /var/log directory. There are lots of log files in this directory, and you can view them with this command:
+
+ls /var/log
+Copied!
+alternatives.log  auth.log  dpkg.log  faillog  messages  user.log
+apt               btmp      exim4     lastlog  syslog    wtmp
+We're interested in syslog for the moment. The logs on Linux can be viewed like any text file; you can use the command below to view the contents of syslog:
+
+sudo cat /var/log/syslog
+Copied!
+The log contents are super long, so you'll have to scroll through the logs to look for the five entries that are relevant to this lab. The logs are entered chronologically, and the logs that you'll need to fix should be timestamped around the time that the lab started. For convenience, all of the log entries you need to fix contain the phrase "Qwiklab Error". Knowing this, you could also filter out the relevant labs using the grep command.
+
+We'll walk through addressing one of the log's issues, then the other four will be up to you!
+
+Low disk space!
+Here's the log entry we will be dealing with first:
+
+Aug 11 12:33:21 75b72110ff5a root: Qwiklab Error: Disk space is super low, fix it!
+This error indicates that your computer is running out of memory due to a super large file. Unfortunately, it doesn't indicate which file is causing the problem, so you'll need to find it. Luckily, Linux has an easy way to find the largest files on your file system. The du command can be used to list all files in a directory (recursively through subdirectories, too), which you can sort by size to find the largest files. By piping the output of du (using the "|" symbol) to the sort command, you can sort the output by file size. The "-n" and "-r" flags tell sort to treat the string output on each line as a number (the file size), and to sort in reverse order so that the largest files are listed first. By piping the output of this into the head command, you can print out only the top few results (you can specify how many to output by adding "-n [NUMBER]" to the end of the command).
+
+The command below uses du, sort, and head to show the top five largest files, starting from your /home directory:
+
+sudo du -a /home | sort -n -r | head -n 5
+Copied!
+-3147112 /home
+-3147076 /home/lab
+-3145736 /home/lab/storage
+-3145732 /home/lab/storage/ultra_mega_large.txt
+-1328    /home/lab/downloads
+You can see that the largest file in your home directory is /home/lab/storage/ultra_mega_large.txt, at about 5GB. This isn't an important file, but it's taking up a lot of space, so you can delete it to fix the disk space error:
+
+sudo rm /home/lab/storage/ultra_mega_large.txt
+Copied!
+Now that the large file is gone, this log's issue has been dealt with. You can see that the log entry is still present in the log file; logs aren't deleted once the errors that caused them are resolved.
+
+The remaining log entries
+The rest of the logs involve issues that you have already successfully fixed in earlier labs in this course. Refer back to those lessons and labs to refresh yourself on the required steps, if you’re stuck:
+
+Updating software that's out-of-date (Week 3 Labs)
+Finding and deleting files (Week 1 Labs)
+Modifying file permissions (Week 2 Labs)
+Finding and terminating specific processes (Week 5 Labs)
+If you’d like to check your steps along the way, refer to your score in the top right of the lab. Click the score and run each step to check individually as you go. Good luck!
+
+Note: Please make sure that you are running the commands using sudo. The purpose of sudo is to execute the command given to it with root privileges.
+

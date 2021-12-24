@@ -242,28 +242,6 @@ Keyboard
 v Printer
 
 Mouse
-q13
-
-q14
-
-q15
-
-q16
-
-q17
-
-q18
-
-q19
-
-q20
-
-q1
-
-q1
-
-
-
 
 201 week 2 Network and Infrastructure Services
 In the second week of this course, we'll learn about network and infrastructure services. We will cover what IT infrastructure services are and what their role is in system administration. We'll also learn about server operating systems, virtualization, network services, DNS for web services, and how to troubleshoot network services. By the end of this module, you will know the most common IT infrastructure services you'll encounter when handling system administration tasks.
@@ -977,22 +955,230 @@ v You're unable to reach the domain controller.
 Your computer is connected to Wifi. 
 v The user account is locked. 
 v The are time and date are incorrect.
+q21
+How are things organized in a directory server?
+
+vv By a hierarchical model of objects and containers
+
+By a series of nested groups
+
+By a flat text file
+
+By a relational database structure
+q22
+When there are conflicting GPOs, what's the order in which they're evaluated and applied?
+
+vv Site, Domain, OU
+
+Site, OU, Domain
+
+OU, Domain, Site
+
+OU, Site, Domain
+q23
+Instead of assigning access for each user account individually, ________ is a more efficient and easier-to-manage approach.
+
+Centralized Authentication
+
+vv Role-Based Access Control (RBAC)
+
+Active Directory
+
+LDAP
+q24
+Directory services store information in a heirarchical structure. Which statements about Organizational Units (OUs) of a directory service hierarchy are true? Check all that apply.
+
+? Specific files within an OU, or container, are called "objects."
+
+Parent OUs inherit characteristics of their sub-members.
+
+v Changes can be made to one sub-OU without affecting other sub-OUs within the same parent.
+
+v Sub-member OUs inherit the characteristics of their parent OU.
+q25
+What are examples of Lightweight Directory Access Protocol (LDAP) directory server software? Check all that apply.
+
+ADUC
+
+v Microsoft's Active Directory
+
+v OpenLDAP
+
+RDP
+q26
+v Which of these are common ways to authenticate LDAP directory queries? Check all that apply.
+
+v SASL Authentication
+
+v Simple
+
+Private
+q27
+Which of these statements are true about managing through Active Directory? Check all that apply.
+
+v Domain Local, Global, and Universal are examples of group scopes.
+
+
+Distribution groups can be used to assign permission to resources.
+
+v ADAC uses PowerShell.
+
+? The default group's Domain Users and Domain Admins are security groups.
+q28
+What is the difference between a group policy and a group policy preference?
+
+Policies are reapplied every 90 minutes, and preferences are a settings template.
+
+Preferences are reapplied every 90 minutes, and policies are more of a settings template.
+
+-v A preference is editable only by admins, but anyone can edit a policy.
+
+v A policy is editable only by admins, but anyone can edit a group policy preference.
+q29
+You'd like to change the minimum password length policy in the Default Domain Policy group policy preference (GPO). What's the best way to go about doing this?
+
+Manually edit config files in SYSVOL
+
+Edit the Windows Registry to change group policy settings
+
+vv Open the Group Policy Management Console by running gpmc.msc from the CLI
+
+Open ADAC and edit policy settings there
+q30
+You're trying to remove an organizational unit (OU) that an LDAP Data Interchange Format (LDIF) file refers to. Which Command Line Interface (CLI) command would you use?
+
+v ldapdelete
+
+ldapadd
+
+ldapsearch
+
+ldapmodify
+q2
+
+q2
+
+q2
+
+q2
+
+q2
+
+
+
+
+
 
 
 501 Ќ≈ƒ≈Ћя 5 Data Recovery & Backups
 In the fifth week of this course, we'll learn about data recovery and backups. In any tech role, it's important to know how to backup and recover data -- it's even more important for system administration. We will also learn about common corporate practices like designing a disaster recovery plan and writing post-mortem documentation. By the end of this module, you'll know the tradeoffs between on-site and off-site backups, understand the value and importance of backup and recovery testing, know different options for data backup (as well as the risks) and understand the purpose and contents of a disaster recovery plan.
 502 What is Data Recovery?3мин
+Data recovery
+The process of trying to restore data after an unexpected event that results in data loss or corruption
+
+When an unexpected event occurs, your main objective is to resume normal operations as soon as possible, while minimizing the disruption to business functions.
+
+The best way to be prepared for a data-loss event is to have a well-thought-out disaster plan and procedure in place.
+
+Disaster plans should involve making regular backups of any and all critical data that’s necessary for your ongoing business processes.
+
+Post-mortem
+
+A post-mortem is a way for you to document any problems you discovered along the way, and most importantly, the ways you fixed them so you can make sure they don't happen again.
+
 503 Backing Up Your Data3мин
+
 504 Backup Solutions3мин
+
 505 Job transition35
+rsync
+A file transfer utility thats designed to efficiently transfer and synchronize files between locations or computers
+
+Time Machine
+
+Backup and Restore
+
 506 Testing Backups2мин
+
+Restoration procedures
+Should be documented and accessible that anyone with the right access can restore operations when needed
+
+Disaster recovery testing
+
 507 Types of Backup5мин
+Ways to Perform Regular Backups
+Full backup
+Ways to Perform Regular Backups
+Differential backup
+It's a good practice to perform infrequent full backups, while also doing more frequent differential backups.
+Ways to Perform Regular Backups
+Regular incremental backups
+File compression
+Redundant Array of Independent Disks (RAID)
+A method of taking multiple physical disks and combining them into one large virtual disk		
+
 508 User Backups1мин
+Dropbox
+Apple iCIoud
+Google Drive
+
 509 What's a Disaster Recovery Plan?5мин
+Disaster recovery plan
+A collection of documented procedures and plans on how to react and handle an emergency or disaster scenario, from the operational perspective
+
+Preventive measures
+Any procedures or systems in place that will proactively minimize the impact of a disaster
+
+Detection measures
+Meant to alert you and your team that disaster has occurred that can impact operations
+
+Environmental Sensors
+Flood Sensors
+Temp and Humidity Sensors
+Evacuation Procedures
+
+Corrective or recovery measures
+Those enacted after a disaster has occurred
+
+Single point of failure
+
 510 Designing a Disaster Recovery Plan6мин
+Designing a Disaster Recovery Plan
+Perform Risk Assessment
+
+Risk assessment
+Allows you to prioritize certain aspects of the organizations that are more at risk if there’s an unforeseen event
+
+Perform Risk Assessment
+Determine Backup and Recovery Systems Determine Detection & Alert Measures
+Determine recovery measures
+
 511 What's a post-mortem?2мин
+We create a post-mortem after an incident, an outage, or some event when something goes wrong, or at the end of a project to analyze how it went.
+
 512 Writing a Post-Mortem4мин
+
+Brief Summary
+What the incident was 
+How long it lasted 
+What the impact was 
+How it was fixed
+
+Detailed Timeline
+Root Cause
+ What can be learned?
+Resolution and Recovery Efforts
+Actions to Avoid Same Scenario
+
+Resolution and Recovery Efforts
+
+Actions to Avoid Same Scenario
+
 513 Interview Role Play: Sys Admin2мин
+Asking follow-up questions
+Defining terms
+
+
 514 3 материала дл¤ самосто¤тельного изучени¤
 515 Supplemental Reading for GitLabs Data Recovery10мин
 516 Supplemental Reading for Backup Solutions10мин
