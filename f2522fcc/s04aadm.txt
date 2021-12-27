@@ -1373,6 +1373,256 @@ Defining terms
 520 Disaster Recovery Plans30мин
 521 Post-Mortems30мин
 522 Data Recovery & Backups50мин
+-q1
+What types of backup schemes are available? Check all that apply.
+
+v Full backup
+
+v Differential backup
+
+v Incremental backup
+
+Partial backup
+q2
+What are some ways you can make your backups more space-efficient? Check all that apply.
+
+Use full backups only
+
+v Use compression
+
+Use encryption
+
+v Use incremental backups
+
+q3
+Which of these are part of the five primary elements that make up a post-mortem report? Check all that apply.
+
+v A summary
+
+Backup procedures
+
+v A timeline
+
+v Resolution and recovery steps
+
+v A root cause description
+
+v Recommended future action items
+q4
+The unthinkable happens and disaster strikes, crippling your network. You implement your disaster plan, but it doesn't go smoothly. You decide to investigate. What is a commom term in the IT community for this investigation?
+
+After-outage analysis
+
+Recovery inspection probe
+
+vv Post-mortem
+
+Post-disaster inquiry
+-q5
+What are advantages of on-site backups? Check all that apply.
+
+Data is safe in case of disaster.
+
+v There is quicker data access.
+Correct
+Well done! One advantage of on-site backup solutions is that the data is physically very close, which makes accessing the data much quicker.
+
+
+v There is less bandwidth usage.
+
+v Data is more secure because of less outbound traffic.
+
+-q6
+Which of these are common backup tools you might consider when designing a backup solution? Check all that apply.
+
+v Backup and Restore
+
+v Rsync
+
+Regedit
+
+v Time Machine
+q7
+Which type of backup only saves copies of files that have been changed or created since the last backup?
+
+Incremental backup
+
+RAID array
+
+v Differential backups
+
+Complete backup
+q8
+Common concerns with backups are disk failure, lack of redundancy, and the necessity of future growth of disk capacity. Which backup method adresses these concerns and has multiple levels of use depending on how you want to prioritize features like performance, capacity, or reliability?
+
+Incremental backup
+
+vv RAID array
+
+Complete backup
+
+Differential backups
+q9
+A disaster recovery plan is a collection of documented procedures and plans on how to react and handle an emergency or disaster scenario from an operational perspective. What are important elements of a disaster recovery plan? Check all that apply.
+
+v? Corrective or recovery measures
+
+v Preventative measures
+
+Disciplinary measures
+
+v Detection measures
+
+-q10
+Which of these are components of a post-mortem report? Check all that apply.
+
+v Brief summary
+
+v Explanation of resolution and recovery efforts
+
+All log data
+
+v Detailed timeline of key events
+
+
+q11
+What options are available for storing backups, physically?
+
+On-site only
+
+Off-site only
+
+v Both on-site and off-site
+
+There's no need to store physical backups anymore
+q12
+What are the measures included in a disaster recovery plan?
+
+v Preventative
+
+v Detection
+
+Testing
+
+v Recovery
+
+q13
+
+q14
+
+q15
+
+q16
+Budget constraints aside, what is the ideal backup solution?
+
+vv Both on-site and off-site backup
+
+On-site backup
+
+No backup
+
+Off-site (cloud) backup
+q17
+
+q18
+
+q19
+You are performing a network risk assessment to develop your disaster recovery plan. Which of these are examples of preventative measures? Check all that apply.
+
+?Operational documentation
+
+v Regular, automated backups
+
+Redundancy solutions
+
+-Alert system for outages
+
+q20
+Which of these are components of a post-mortem report? Check all that apply.
+
+v Brief summary
+Correct
+
+v Explanation of resolution and recovery efforts
+
+All log data
+
+v Detailed timeline of key events
+
+
+
+q21
+
+q22
+How can you verify that your disaster recovery plan will be effective? Check all that apply.
+
+?Through thorough testing
+
+By waiting for a disaster
+
+Through disaster simulations
+
+-You can't
+
+q23
+What's the purpose of a post-mortem report?
+
+vv To learn from mistakes
+
+To test systems
+
+To identify those in the wrong
+
+To assign legal liability
+q24
+What is the single most important part of data recovery?
+
+Stocking replacement drives
+
+vv Effectively backing up data
+
+Creating power redundancies
+
+Port forwarding
+q25
+When planning a backup strategy, ideally one needs to prioritize important data and only back up what is absolutely necessary for operations. Assuming storage limitations, which of these is LEAST important to back up?
+
+v Financial spreadsheets
+
+User downloads
+
+Emails
+
+-Databases
+q26
+
+q27
+Which type of backup only saves the parts of data that have changed within files since the last backup took place?
+
+- Differential backups
+
+RAID array
+
+Complete backup
+
+v Incremental backup
+q28
+
+q29
+You are performing a network risk assessment to develop your disaster recovery plan. Which of these are examples of detection measures? Check all that apply.
+
+v Monitoring system testing
+Correct
+Awesome! You absolutely need to test your monitoring and alert systems. Simulate the conditions your monitoring systems are designed to catch. Make sure the detection thresholds actually fire the alerts like they’re supposed to.
+
+
+Conducting regular, automated backups
+
+?Testing your own (and users') knowledge and readiness for disaster
+
+v Using an alert system for outages
+Correct
+Awesome! If uptime and availability is important for your organization, make sure you have a comprehensive system in place that can quickly detect and alert you to service outages.
 
 
 

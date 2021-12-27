@@ -459,6 +459,257 @@ Entropy pool
 229 Hashing30мин
 230 Cryptography Applications30мин
 231 Week Two Practice Quiz30мин
+q1
+Which of the following are examples of injection attacks? Check all that apply.
+
+v XSS attack
+v SQL injection attack
+Social engineering attack
+SYN flood attack
+q2
+When cleaning up a system after a compromise, you should look closely for any ______ that may have been installed by the attacker.
+
+Poisoned DNS caches
+
+-Rogue APs
+
+?Backdoors
+
+-Injection attacks
+"Malicious Software"
+q3
+A SYN flood occurs when the attacker overwhelms a server with ______.
+
+Injection attacks
+
+SYN packets
+
+-ACK packets
+
+Malware
+
+"Network Attacks"
+
+q4
+The best defense against injection attacks is to ______.
+
+vv Use input validation
+
+Use antimalware software
+
+Use a firewall
+
+Use strong passwords
+
+q5
+Which of these is an example of the integrity principle that can ensure your data is accurate and untampered with?
+
+v Using Encapsulating Security Payload
+
+v Using MACs (Message Authentication Codes)
+
+Keeping a symmetric key secret
+Implementing flood guards
+"CIA Triad"
+q6
+What could potentially decrease the availability of security and also test the preparedness of data loss?
+
+Adware
+
+Ransomware
+
+-Keylogger
+
+Spyware
+
+"CIA Triad"
+q7
+Which of these is true of blackhat and whitehat hackers?
+
+-Blackhats and whitehats shouldn't be trusted.
+
+Blackhats try to find weaknesses, but whitehats don't.
+
+Blackhats work with owners to fix problems. Whitehats are just trying to get into a system.
+
+?Blackhats are malicious. Whitehats exploit weakness to help mitigate threats.
+q8
+A hacker infected your computer to steal your Internet connection and used your machine's resources to mine Bitcoin. What is the name of this kind of attack?
+
+Ransomware
+
+?A bot
+
+Adware
+
+-Spyware
+q9
+A hacker stood outside a building and spun up a wireless network without anyone's knowledge. At that point, the hacker was able to gain unauthorized access to a secure corporate network. Which of these is the name of this type of attack?
+
+SYN flood attack
+
+vv A Rogue AP (Access Point) attack
+
+A DNS Cache Poisoning attack
+
+A Denial-of-Service (DoS) attack
+q10
+Which of these is where a victim connects to a network that the victim thinks is legitimate, but is really an identical network controlled by a hacker to monitor traffic?
+
+DNS Cache Poisoning
+
+vv Evil Twin
+
+A Denial of Service (DoS)
+
+A logic bomb
+q11
+What is it called if a hacker takes down multiple services very quickly with the help of botnets?
+
+vv Distributed denial-of-service (DDoS)
+
+A SQL injection
+
+Cross-site Scripting (XSS)
+
+A password attack
+q12
+Which of these is a way to help prevent brute-force attacks? Check all that apply.
+
+Using a precompiled list of common passwords
+
+Password crackers
+
+v Captchas
+
+v Strong passwords
+Correct
+You nailed it! The best way to prevent a password attack, such as a brute-force attack, is to utilize strong passwords.
+q13
+An attacker, acting as a postal worker, used social engineering tactics to trick an employee into thinking she was legitimately delivering packages. The attacker was then able to gain physical access to a restricted area by following behind the employee into the building. What type of attack did the attacker perform? Check all that apply.
+
+Spoofing
+
+v Social engineering
+
+Phishing
+
+v Tailgating
+q21
+A network-based attack where one attacking machine overwhelms a target with traffic is a(n) _______ attack.
+
+Injection
+
+Malware
+
+Brute force password
+
+v Denial of Service
+q22
+
+q23
+An attack that would allow someone to intercept your data as it's being sent or received is called a(n) _________ attack.
+
+Injection
+
+Denial of Service
+
+vv Man-in-the-middle
+
+SYN flood
+q24
+What makes a DDoS attack different from a DoS attack? Check all that apply.
+
+A DDoS attack has attack traffic coming from one source.
+
+v A DoS attack has attack traffic coming from one source.
+
+v A DDoS attack has attack traffic coming from many different sources.
+
+A DoS attack has attack traffic coming from many different sources.
+q25
+Which of these is an example of the integrity principle that can ensure your data is accurate and untampered with?
+
+v Using Encapsulating Security Payload
+
+Keeping a symmetric key secret
+
+v Using MACs (Message Authentication Codes)
+
+Implementing flood guards
+q26
+If there are cyber threats and vulnerabilities to your system, what does that expose you to? Check all that apply.
+
+The CIA triad
+
+v Attacks
+
+v Exploits
+
+Tailgating
+q27
+Which of these is a characteristic of Trojan malware?
+
+A Trojan is basically backdoor malware.
+
+A Trojan may get installed without the user’s consent.
+
+A Trojan is the same thing as a rootkit.
+
+v A Trojan infection needs to be installed by the user.
+q28
+What is it called when a hacker is able to get into a system through a secret entryway in order to maintain remote access to the computer?
+
+Ransomware
+
+vv A backdoor
+
+Adware
+
+A Trojan
+q29
+
+q30
+What can occur during a ping of death (POD) attack? Check all that apply.
+
+v A buffer overflow
+
+v A Denial-of-Service (DoS)
+
+?Baiting
+
+Remote code execution
+q31
+What type of attack can a hacker perform that involves injecting malicious code into a website to hijack a session cookie?
+
+Ping flood
+
+A password attack
+
+vv Cross-site Scripting (XSS)
+
+SQL injection
+q32
+How can you increase the strength of your passwords? Check all that apply.
+
+Use passwords from a precompiled list.
+
+v Incorporate symbols and numbers.
+
+v Exclude dictionary words.
+
+v Use a mix of capital and lowercase letters.
+
+q33
+An attacker, acting as a postal worker, used social engineering tactics to trick an employee into thinking she was legitimately delivering packages. The attacker was then able to gain physical access to a restricted area by following behind the employee into the building. What type of attack did the attacker perform? Check all that apply.
+
+v Social engineering
+
+v Tailgating
+
+?Phishing
+
+-Spoofing
 
 
 
