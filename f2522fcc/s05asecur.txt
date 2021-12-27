@@ -2,14 +2,160 @@
 Welcome to the IT Security course of the IT Support Professional Certificate! In the first week of this course, we will cover the basics of security in an IT environment. We will learn how to define and recognize security risks, vulnerabilities and threats. We'll identify the most common security attacks in an organization and understand how security revolves around the "CIA" principle. By the end of this module, you will know the types of malicious software, network attacks, client-side attacks, and the essential security terms you'll see in the workplace.
 102 Course Introduction5мин
 103 The CIA Triad2мин
+CIA Confidentiality Integrity Availability
+
+Confidentiality
+Keeping things hidden
+not accessible by unwanted parties
+
+Integrity
+Keeping our data accurate and untampered with
+
+Availability
+The information we have is readily accessible to those people that should have it
+
 104 Essential Security Terms4мин
+Risk
+The possibility of suffering a loss event of an attack on the system
+
+Vulnerability
+A flaw in a system that could be exploited to compromise the system
+
+O-day vulnerability (zero day)
+A vulnerability that is not known to the software developer or vendor, but is known to an attacker
+
+Exploit
+Software that is used to take advantage of a security bug or vulnerability
+An exploit takes advantage of a vulnerability to run arbitrary code or gain access.
+Threat
+The possibility of danger that could exploit a vulnerability
+Hacker
+Someone who attempts to break into exploit a system
+Attack
+An actual attempt at causing harm to system
+
+virus worm	adware spyware trojan rootkit backdoor botnet
+
 105 Malicious Software5мин
+Malware
+A type of malicious software that can be used to obtain your sensitive information, or delete or modify files
+
+Viruses
+replicates itself on these files, does the malicious work it's intended to do
+
+Worms
+can live on their own
+
+Viruses and Worms
+They're self-replicating and self-propagating.
+
+Adware
+Software that displays advertisements and collects data
+
+Trojan
+Malware that disguises itself as one thing but does something else
+
+Spyware
+A type of malware that’s meant to spy you
+
+Keylogger
+A common type of spyware that's used to record every keystroke you make
+
+Ransomware
+A type of attack that holds your data or system hostage until you pay some sort of ransom
+
 106 Malware Continued2мин
+Major types of Malware
+
+Malware
+
+Viruses
+
+Worms
+
+Adware
+
+Spyware
+
+Ransomware
+---
+Bots
+
+Botnets
+Designed to utilize the power of the internet-connected machines to perform some distributed function
+
+Backdoor
+A way to get into a system if the other methods to get in the system aren’t allowed
+
+Root kit
+A collection of software or tools that Admin would use
+
+Logic bomb
+A type of malware that’s intentionally installed
+
 107 Network Attacks3мин
+DNS Cache Poisoning attack
+
+Man-in-the-middle attack
+
+Rogue AP
+An access point that is installed network without the network administrator’s knowledge
+
+Evil twin
+
 108 Denial-of-Service3мин
+Denial-of-service (DoS) attack
+An attack that tries to prevent access to a service for legitimate users by overwhelming the network or server
+
+POD
+Ping of death
+
+Ping flood
+
+SYN flood
+
+Half-open attacks
+
+Distributed
+denial-of-service attack (DDoS)
+A DoS attack using multiple systems
+
 109 Client-Side Attacks2мин
+Injection attacks
+
+Cross-site scripting (XSS) attacks
+A type of injection attack where the attacker can insert malicious code and target the user of the service
+
+SQL injection attack
+
 110 Password Attacks2мин
+Password attacks
+Utilize software like password-crackers that try and guess your password
+
+Brute force attack
+
+Dictionary attack
+
+sandwich
+s@nDwh1ch
+
 111 Deceptive Attacks3мин
+Social engineering
+An attack method that relies heavily interactions with humans instead of computers
+
+Phishing attack
+login password known
+
+Spear phishing
+
+Spoofing
+A source masquerading around something else
+
+Baiting
+
+Tailgating
+Gaining access into a restricted area or building by following a real employee in
+
 112 7 материалов дл¤ самосто¤тельного изучени¤
 113 Navigating Coursera10мин
 114 Program Surveys10мин
