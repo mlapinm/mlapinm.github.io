@@ -2451,8 +2451,6 @@ Do what you love and love what you do.
 626 Remote Access30мин
 Using Logs to Help You Track Down an Issue in Windows
 
-
-
 Viewing logs on Windows
 To view logs on Windows, you should use the Event Viewer application. To open Event Viewer, open the Start menu and search for "event viewer". The application icon should look like the image below. Click it to open the application.
 

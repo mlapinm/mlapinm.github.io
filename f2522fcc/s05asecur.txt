@@ -169,296 +169,6 @@ Gaining access into a restricted area or building by following a real employee i
 122 Network Attacks30мин
 123 Other Attacks30мин
 124 Understanding Security Threats1ч 5мин
-
-
-201 Ќ≈ƒ≈Ћя 2 Pelcgbybtl (Cryptology)
-In the second week of this course, we'll learn about cryptology. We'll explore different types of encryption practices and how they work. We'll show you the most common algorithms used in cryptography and how they've evolved over time. By the end of this module, you'll understand how symmetric encryption, asymmetric encryption, and hashing work; you'll also know how to choose the most appropriate cryptographic method for a scenario you may see in the workplace.
-202 Cryptography7мин
-Cryptography
-Encryption
-The act of taking a message, called plaintext, and applying an operation to it, called a cipher, so that you receive a garbled, unreadable message as the output, called ciphertext
-Decryption
-Substitute
-
-Holly Wyrld
-Key
-Encryption algorithm
-The underlying logic of process thats used to convert the plaintext into ciphertext
-Security through obscurity
-Kerchoff's principle
-
-Cryptosystem
-A collection of algorithms for key generation and encryption and decryption operations that comprise a cryptographic service should remain secure - even if everything about the system is known, except the key
-
-Shannon's maxim
-"The enemy knows the system"
-
-The system should remain secure even if your adversary knows exactly what kind of encryption systems you’re employing, as long as your keys remain secure
-Cryptology
-Cryptanalysis
-
-Frequency analysis
-The practice of studying the frequency with which letters appear in a ciphertext
-
-e t a o
-th er on an
-
-The practice of hiding information from observers, but not encoding it
-
-203 Symmetric Cryptography5мин
-Symmetric-key algorithm
-
-Substitution cipher
-An encryption mechanism that replaces parts of your plaintext with ciphertext
-e = o  o = y
-Holly Wyrld
-Caesar Cipher
-ROT13
-URYYB JBEYQ
-R0T8
-OLSSV
-VSZZC
-DVYSK
-KCFZR
-Takes a stream of input and encrypts the stream one character or one digit at a time, outputting one encrypted character or digit at a time
-
-The cipher takes data in, places it into a bucket or block of data that’s a fixed size, then encodes that entire block as one unit.
-
-Initialization vector
-
-204 Symmetric Encryption Algorithms9мин
-DES
-Data Encryption Standard
-FIPS
-Federal Information Processing Standard
-Key length
-Brute-force attack
-NIST
-National Institute of Standards & Technology
-AES
-Advanced Encryption Standard
-
-Because of the large key size, brute-force attacks on AES are only theoretical right now, because the computing power required (or time required using modern technology) exceeds anything feasible today.
-
-An important thing to keep in mind when considering various encryption algorithms is speed and ease of implementation.
-
-RC4 (Rivest Cipher 4)
-A symmetric stream cipher that gained widespread adoption because of its simplicity and speed
-
-TLS 1.2 with AES GCM
-
-205 Rob What a Security Engineer Does1мин
-
-206 Asymmetric Cryptography7мин
-Asymmetric or public key ciphers
-Asymmetric encryption
-Public key signatures
-
-Confidentiality
-Authenticity
-Non-repudiation
-
-MACs
-Message Authentication Codes
-MAC
-A bit of information that allows authentication of a received message, ensuring that the message came from the alleged sender and not a third party
-HMAC
-Keyed-hash message authentication code
-CMACs
-Cipher-Based Message Authentication Codes
-CBC-MAC
-Cipher block chaining message authentication codes
-
-207 Asymmetric Encryption Algorithms5мин
-RSA
-DSA
-Digital Signature Algorithm
-Diffie-Hellman
-Elliptic curve cryptography
-(ECC)
-A public-key encryption system that uses the algebraic structure of elliptic curves over finite fields to generate secure keys
-Both Diffie-Hellmen and DSA have elliptic curve variants, referred to as ECDH and ECDSA, respectively.
-
-208 Hashing3мин
-Hashing (or a hash function)
-A type of function or operation that takes in an arbitrary data input and maps it to an output of fixed size, called a hash or digest
-
-You feed in any amount of data into a hash function and the resulting output will always be the same size, but the output should be unique to the input, such that two different inputs should never yield the same output.
-
-Hashing can also be used to identify duplicate data sets in databases or archives to speed up searching of tables or to remove duplicate data to save space.
-
-Hashing can also be used to identify duplicate data sets in databases or archives to speed up searching of tables or to remove duplicate data to save space.
-
-Cryptographic hashing is distinctly different from encryption because cryptographic hash functions should be one directional.
-
-The ideal cryptographic hash function should be deterministic, meaning that the same input value should always return the same hash value.
-
-hash collision
-The ideal cryptographic hash function should be deterministic, meaning that the same input value should always return the same hash value.
-"Hello World" I [hash function] | E49AOOFF
-"hello world" I [hash function] | FF1832AE
-$ echo 'Hello World' | md5sum e59ff97941044f85df5297e1c302d260
-$ echo 'hello world' | md5sum 6f5902ac237024bdd0c176cb93063dc4
-
-209 Hashing Algorithms5мин
-MD5
-SHA1
-SHA1 is part of the Secure Hash Algorithm suite of functions, designed by the NSA, published in 1995.
-
-SSL/TLS
-PGP SSH
-IPsec
-
-MIC
-Message Integrity Check
-
-210 Hashing Algorithms (continued)5мин
-Authentication
-
-A successful brute force attack, against even the most secure system imaginable, is a function of attacker time and resources.
-
-Password salt
-Additional randomized data that's added into the hashing function to generate a hash that’s unique to the password and salt combination
-
-211 Public Key Infrastructure9мин
-PKI
-Public key infrastructure
-
-INFO ON PUBLIC KEY 
-REGISTERED OWNER
-DIGITAL SIGNATURE
-CA
-RA
-Registration authority
-
-A central repository is needed to securely store and index keys, and a certificate management system of some sort makes managing access to stored certificates and issuance of certificates easier.
-
-SSL/TLS server certificate
-Self-signed certificate
-SSL/TLS client certificate
-
-As the name implies, these are certificates that are bound to clients and are used to authenticate the client to the server, allowing access control to an SSL/TLS service.
-
-This allows users of these signed applications to verify the signatures and ensure that the application was not tampered with.
-
-Root certificate
-
-A certificate that has no authority as a CA is referred to an end-entity or leaf certificate.
-
-The X.509 standard is what defines the format of digital certificates.
-
-version
-What version of the X.509 standard the certificate adheres to
-
-Serial number
-A unique identifier for the certificate assigned by the CA which allows the CA to manage and identify individual certificates
-
-Certificate Signature Algorithm
-This field indicates what public key algorithm is used for the public key and what hashing algorithm is used to sign the certificate
-
-Issuer Name
-This field contains information about the authority that signed the certificate
-
-Validity
-This contains two subfields - “Not Before and “Not After” - which define the dates when the certificate is valid for
-Subject
-This field contains identifying information about the entity the certificate was issued to
-
-Subject Public Key Info
-These two subfields define the algorithm of the public key, along with the public key itself
-
-Certificate Signature Algorithm
-Same as the Subject Public Key Info field; These two fields must match
-
-Certificate Signature Value
-The digital signature data itself
-
-Web of trust
-
-212 Cryptography in Action8мин
-HTTPS
-The secure version of HTTP, the HyperText Transport Protocol
-SSL 3.0
-TLS 1.2
-
--1)	A secure communication line, which means data being transmitted is protected from potential eavesdroppers
--2)	The ability to authenticate both parties communicating, though typically only the server is authenticated by the client
--3)	The integrity of communications, meaning there are checks to ensure that messages aren’t lost or altered in transit
-
-The session key is the shared symmetric encryption key used in TLS sessions to encrypt data being sent back and forth.
-
-Secure Shell (SSH)
-A secure network protocol that uses encryption to allow access to a network service over unsecured networks
-
-PGP
-Pretty Good Privacy (PGP)
-An encryption application that allows authentication of data, along with privacy from third parties, relying upon asymmetric encryption to achieve this
-
-213 Securing Network Traffic6мин
-VPN
-Virtual private network (VPN)
-A mechanism that allows you to remotely connect a host or network to an internal, private network, passing the data over a public channel, like the internet
-
-IPsec
-
-When transport mode is used, only the payload of the IP packet is encrypted, leaving the IP headers untouched.
-
-In tunnel mode, the entire IP packet, header payload and all, is encrypted and encapsulated inside a new IP packet with new headers.
-
-L2TP
-Layer 2 Tunneling Protocol
-
-Encapsulating Security Payload
-
-The tunnel is provided by L2TP which permits the passing of unmodified packets from one network to another. The secure channel, on other hand, is provided by IPsec, which provides confidentiality, integrity, and authentication of data being passed.
-
-OpenVPN can operate over either TCP or UDP, typically over port 1194.
-
-214 Cryptographic Hardware6мин
-
-Secure gentration of key
-Random number generation 
-Remote attestation
-Data binding and sealing
-
-Remote attestation
-
-Data binding and sealing
-Secure Element
-
-TEE
-Trusted Execution Environment
-FDE
-Full disk encryption
-
-PGP
-Bitlocker 
-Filevault 2 
-dm-crypt
-
-Random numbers
-Pseudo-random
-Entropy pool
-
-
-
-215 Rejection36
-216 9 материалов дл¤ самосто¤тельного изучени¤
-217 Supplemental Reading for The Future of Cryptanalysis10мин
-218 Supplemental Reading for Symmetric Encryptions10мин
-219 Supplemental Reading for Asymmetric Encryption Attack10мин
-220 Supplemental Reading for SHA1 Attacks10мин
-221 Supplemental Reading for the X.509 Standard10мин
-222 Supplemental Reading for PGP10мин
-223 Supplemental Reading for Securing Network Traffic10мин
-224 Supplemental Reading for TPM Attacks10мин
-225 Instructions for Accessing Linux and Windows Qwiklabs10мин
-226 5 практических упражнений
-227 Symmetric Encryption30мин
-228 Public Key or Asymmetric Encryption30мин
-229 Hashing30мин
-230 Cryptography Applications30мин
-231 Week Two Practice Quiz30мин
 q1
 Which of the following are examples of injection attacks? Check all that apply.
 
@@ -712,22 +422,546 @@ v Tailgating
 -Spoofing
 
 
+201 Ќ≈ƒ≈Ћя 2 Pelcgbybtl (Cryptology)
+In the second week of this course, we'll learn about cryptology. We'll explore different types of encryption practices and how they work. We'll show you the most common algorithms used in cryptography and how they've evolved over time. By the end of this module, you'll understand how symmetric encryption, asymmetric encryption, and hashing work; you'll also know how to choose the most appropriate cryptographic method for a scenario you may see in the workplace.
+202 Cryptography7мин
+Cryptography
+Encryption
+The act of taking a message, called plaintext, and applying an operation to it, called a cipher, so that you receive a garbled, unreadable message as the output, called ciphertext
+Decryption
+Substitute
+
+Holly Wyrld
+Key
+Encryption algorithm
+The underlying logic of process thats used to convert the plaintext into ciphertext
+Security through obscurity
+Kerchoff's principle
+
+Cryptosystem
+A collection of algorithms for key generation and encryption and decryption operations that comprise a cryptographic service should remain secure - even if everything about the system is known, except the key
+
+Shannon's maxim
+"The enemy knows the system"
+
+The system should remain secure even if your adversary knows exactly what kind of encryption systems you’re employing, as long as your keys remain secure
+Cryptology
+Cryptanalysis
+
+Frequency analysis
+The practice of studying the frequency with which letters appear in a ciphertext
+
+e t a o
+th er on an
+
+The practice of hiding information from observers, but not encoding it
+
+203 Symmetric Cryptography5мин
+Symmetric-key algorithm
+
+Substitution cipher
+An encryption mechanism that replaces parts of your plaintext with ciphertext
+e = o  o = y
+Holly Wyrld
+Caesar Cipher
+ROT13
+URYYB JBEYQ
+R0T8
+OLSSV
+VSZZC
+DVYSK
+KCFZR
+Takes a stream of input and encrypts the stream one character or one digit at a time, outputting one encrypted character or digit at a time
+
+The cipher takes data in, places it into a bucket or block of data that’s a fixed size, then encodes that entire block as one unit.
+
+Initialization vector
+
+204 Symmetric Encryption Algorithms9мин
+DES
+Data Encryption Standard
+FIPS
+Federal Information Processing Standard
+Key length
+Brute-force attack
+NIST
+National Institute of Standards & Technology
+AES
+Advanced Encryption Standard
+
+Because of the large key size, brute-force attacks on AES are only theoretical right now, because the computing power required (or time required using modern technology) exceeds anything feasible today.
+
+An important thing to keep in mind when considering various encryption algorithms is speed and ease of implementation.
+
+RC4 (Rivest Cipher 4)
+A symmetric stream cipher that gained widespread adoption because of its simplicity and speed
+
+TLS 1.2 with AES GCM
+
+205 Rob What a Security Engineer Does1мин
+
+206 Asymmetric Cryptography7мин
+Asymmetric or public key ciphers
+Asymmetric encryption
+Public key signatures
+
+Confidentiality
+Authenticity
+Non-repudiation
+
+MACs
+Message Authentication Codes
+MAC
+A bit of information that allows authentication of a received message, ensuring that the message came from the alleged sender and not a third party
+HMAC
+Keyed-hash message authentication code
+CMACs
+Cipher-Based Message Authentication Codes
+CBC-MAC
+Cipher block chaining message authentication codes
+
+207 Asymmetric Encryption Algorithms5мин
+RSA
+DSA
+Digital Signature Algorithm
+Diffie-Hellman
+Elliptic curve cryptography
+(ECC)
+A public-key encryption system that uses the algebraic structure of elliptic curves over finite fields to generate secure keys
+Both Diffie-Hellmen and DSA have elliptic curve variants, referred to as ECDH and ECDSA, respectively.
+
+208 Hashing3мин
+Hashing (or a hash function)
+A type of function or operation that takes in an arbitrary data input and maps it to an output of fixed size, called a hash or digest
+
+You feed in any amount of data into a hash function and the resulting output will always be the same size, but the output should be unique to the input, such that two different inputs should never yield the same output.
+
+Hashing can also be used to identify duplicate data sets in databases or archives to speed up searching of tables or to remove duplicate data to save space.
+
+Hashing can also be used to identify duplicate data sets in databases or archives to speed up searching of tables or to remove duplicate data to save space.
+
+Cryptographic hashing is distinctly different from encryption because cryptographic hash functions should be one directional.
+
+The ideal cryptographic hash function should be deterministic, meaning that the same input value should always return the same hash value.
+
+hash collision
+The ideal cryptographic hash function should be deterministic, meaning that the same input value should always return the same hash value.
+"Hello World" I [hash function] | E49AOOFF
+"hello world" I [hash function] | FF1832AE
+$ echo 'Hello World' | md5sum e59ff97941044f85df5297e1c302d260
+$ echo 'hello world' | md5sum 6f5902ac237024bdd0c176cb93063dc4
+
+209 Hashing Algorithms5мин
+MD5
+SHA1
+SHA1 is part of the Secure Hash Algorithm suite of functions, designed by the NSA, published in 1995.
+
+SSL/TLS
+PGP SSH
+IPsec
+
+MIC
+Message Integrity Check
+
+210 Hashing Algorithms (continued)5мин
+Authentication
+
+A successful brute force attack, against even the most secure system imaginable, is a function of attacker time and resources.
+
+Password salt
+Additional randomized data that's added into the hashing function to generate a hash that’s unique to the password and salt combination
+
+211 Public Key Infrastructure9мин
+PKI
+Public key infrastructure
+
+INFO ON PUBLIC KEY 
+REGISTERED OWNER
+DIGITAL SIGNATURE
+CA
+The entity that's responsible for storing, issuing, and signing certificates is referred to as CA, or Certificate Authority.
+RA
+Registration authority
+
+A central repository is needed to securely store and index keys, and a certificate management system of some sort makes managing access to stored certificates and issuance of certificates easier.
+
+SSL/TLS server certificate
+Self-signed certificate
+SSL/TLS client certificate
+
+As the name implies, these are certificates that are bound to clients and are used to authenticate the client to the server, allowing access control to an SSL/TLS service.
+
+This allows users of these signed applications to verify the signatures and ensure that the application was not tampered with.
+
+Root certificate
+
+A certificate that has no authority as a CA is referred to an end-entity or leaf certificate.
+
+The X.509 standard is what defines the format of digital certificates.
+
+version
+What version of the X.509 standard the certificate adheres to
+
+Serial number
+A unique identifier for the certificate assigned by the CA which allows the CA to manage and identify individual certificates
+
+Certificate Signature Algorithm
+This field indicates what public key algorithm is used for the public key and what hashing algorithm is used to sign the certificate
+
+Issuer Name
+This field contains information about the authority that signed the certificate
+
+Validity
+This contains two subfields - “Not Before and “Not After” - which define the dates when the certificate is valid for
+Subject
+This field contains identifying information about the entity the certificate was issued to
+
+Subject Public Key Info
+These two subfields define the algorithm of the public key, along with the public key itself
+
+Certificate Signature Algorithm
+Same as the Subject Public Key Info field; These two fields must match
+
+Certificate Signature Value
+The digital signature data itself
+
+Web of trust
+
+212 Cryptography in Action8мин
+HTTPS
+The secure version of HTTP, the HyperText Transport Protocol
+SSL 3.0
+TLS 1.2
+
+-1)	A secure communication line, which means data being transmitted is protected from potential eavesdroppers
+-2)	The ability to authenticate both parties communicating, though typically only the server is authenticated by the client
+-3)	The integrity of communications, meaning there are checks to ensure that messages aren’t lost or altered in transit
+
+The session key is the shared symmetric encryption key used in TLS sessions to encrypt data being sent back and forth.
+
+Secure Shell (SSH)
+A secure network protocol that uses encryption to allow access to a network service over unsecured networks
+
+PGP
+Pretty Good Privacy (PGP)
+An encryption application that allows authentication of data, along with privacy from third parties, relying upon asymmetric encryption to achieve this
+
+213 Securing Network Traffic6мин
+VPN
+Virtual private network (VPN)
+A mechanism that allows you to remotely connect a host or network to an internal, private network, passing the data over a public channel, like the internet
+
+IPsec
+
+When transport mode is used, only the payload of the IP packet is encrypted, leaving the IP headers untouched.
+
+In tunnel mode, the entire IP packet, header payload and all, is encrypted and encapsulated inside a new IP packet with new headers.
+
+L2TP
+Layer 2 Tunneling Protocol
+
+Encapsulating Security Payload
+
+The tunnel is provided by L2TP which permits the passing of unmodified packets from one network to another. The secure channel, on other hand, is provided by IPsec, which provides confidentiality, integrity, and authentication of data being passed.
+
+OpenVPN can operate over either TCP or UDP, typically over port 1194.
+
+214 Cryptographic Hardware6мин
+Trusted Platform Module
+TPM
+Secure gentration of key
+Random number generation 
+Remote attestation
+Data binding and sealing
+
+Remote attestation
+
+Data binding and sealing
+Secure Element
+
+TEE
+Trusted Execution Environment
+FDE
+Full disk encryption
+
+PGP
+Bitlocker 
+Filevault 2 
+dm-crypt
+
+Random numbers
+Pseudo-random
+Entropy pool
+
+
+
+215 Rejection36
+216 9 материалов дл¤ самосто¤тельного изучени¤
+217 Supplemental Reading for The Future of Cryptanalysis10мин
+218 Supplemental Reading for Symmetric Encryptions10мин
+219 Supplemental Reading for Asymmetric Encryption Attack10мин
+220 Supplemental Reading for SHA1 Attacks10мин
+221 Supplemental Reading for the X.509 Standard10мин
+222 Supplemental Reading for PGP10мин
+223 Supplemental Reading for Securing Network Traffic10мин
+224 Supplemental Reading for TPM Attacks10мин
+225 Instructions for Accessing Linux and Windows Qwiklabs10мин
+226 5 практических упражнений
+227 Symmetric Encryption30мин
+q2.
+Question 1
+What are the components that make up a cryptosystem? Check all that apply.
+v Decryption algorithms
+v Key generation algorithms
+v Encryption algorithms
+Correct
+Great job! A cryptosystem is a collection of algorithms needed to operate an encryption service. This involves generating encryption keys, as well as encryption and decryption operations.
+Transmission algorithms
+q2.
+Question 2
+What is steganography?
+The practice of encoding messages
+The study of languages
+The study of stegosauruses
+v The practice of hiding messages 
+Correct
+Yep! Steganography involves hiding messages, but not encoding them.
+q3.
+Question 3
+What makes an encryption algorithm symmetric? 
+Different keys used for encryption and decryption
+High speed 
+The same keys used for encryption and decryption
+Very large key sizes
+Correct
+Awesome! The symmetry of a symmetric algorithm refers to one key being used for both encryption and decryption.
+q4.
+Question 4
+What's the difference between a stream cipher and a block cipher?
+There is no difference.
+Stream ciphers can't save encrypted data to disk.
+Stream ciphers encrypt data as a continuous stream, while block ciphers operate on chunks of data.
+Block ciphers are only used for block device encryption.
+Correct
+You got it! A stream cipher takes data in as a continuous stream, and outputs the ciphertext as a continuous stream, too. A block cipher encrypts the data in chunks, or blocks.
+q5.
+Question 5
+True or false: The smaller the encryption key is, the more secure the encrypted data is.
+TRUE
+v FALSE
+Correct
+Nice work! The reverse is true. The larger the key, the more secure the encrypted data will be.
+
+228 Public Key or Asymmetric Encryption30мин
+Question 1
+Which of the following do asymmetric cryptosystems provide? Check all that apply.
+v Confidentiality
+Availability
+v Non-repudiation
+v Authenticity
+Correct
+Exactly! Confidentiality is provided by the encryption and decryption functionality, while authenticity and non-repudiation are ensured by the signing and verification processes.
+Question 2
+What advantages do asymmetric algorithms have over symmetric ones? 
+They're easier to implement.
+v They allow secure communication over insecure channels.
+They have very fast performance.
+They're more secure.
+Correct
+Wohoo! By exchanging public keys for encrypting data, asymmetric encryption securely exchanges information over untrusted channels.
+Question 3
+What's a common application for asymmetric algorithms?
+Full disk encryption
+Secure password storage
+v Secure key exchange
+Random number generation
+Correct
+You nailed it! Asymmetric encryption schemes are perfect for securely exchanging small amounts of data over untrusted networks by exchanging public keys that are used for encrypting data.
+
+229 Hashing30мин
+Question 1
+How is hashing different from encryption?
+It's faster.
+It's less secure.
+Hashing is meant for large amounts of data, while encryption is meant for small amounts of data.
+v Hashing operations are one-directional.
+Correct
+Great job! Hash functions, by definition, are one-way, meaning that it's not possible to take a hash and recover the input that generated the hash. Encryption, on the other hand, is two-directional, since data can be both encrypted and decrypted.
+Question 2
+What's a hash collision?
+When a hash digest is reversed to recover the original
+When two different hashing algorithms produce the same hash
+When two different files generate the same hash digest
+When two identical files generate different hash digests
+Correct
+Awesome work! If two different files result in the same hash, this is referred to as a hash collision. Hash collisions aren't awesome, as this would allow an attacker to create a fake file that would pass hash verification.
+
+Question 3
+How is a Message Integrity Check (MIC) different from a Message Authentication Code (MAC)?
+A MIC is more reliable than a MAC.
+A MAC requires a password, while a MIC does not.
+v A MIC only hashes the message, while a MAC incorporates a secret key.
+They're the same thing.
+Correct
+That's exactly right! A MIC can be thought of as just a checksum or hash digest of a message, while a MAC uses a shared secret to generate the checksum. This also makes it authenticated, since the other party must also have the same shared secret, preventing a third party from forging the checksum data.
+Question 4
+How can you defend against brute-force password attacks? Check all that apply.
+v Enforce the use of strong passwords.
+v Incorporate salts into password hashing.
+Store passwords in a rainbow table.
+v Run passwords through the hashing function multiple times.
+Correct
+Correct! A brute-force password attack involves guessing the password. So, having complex and long passwords will make this task much harder and will require more time and resources for the attacker to succeed. Incorporating salts into password hashes will protect against rainbow table attacks, and running passwords through the hashing algorithm lots of times also raises the bar for an attacker, requiring more resources for each password guess.
+
+230 Cryptography Applications30мин
+What information does a digital certificate contain? Check all that apply.
+v Digital signature
+v Identifying information of the certificate owner
+v Public key data
+Correct
+Great job! A digital certificate contains the public key information, along with a digital signature from a CA. It also includes information about the certificate, like the entity that the certificate was issued to.
+Private key data
+Question 2
+Which type of encryption does SSL/TLS use?
+Neither
+Asymmetric encryption
+Symmetric encryption
+v Both
+Correct
+Wohoo! SSL/TLS use asymmetric algorithms to securely exchange information used to derive a symmetric encryption key.
+Question 3
+What are some of the functions that a Trusted Platform Module can perform? Check all that apply.
+v Data binding and sealing
+Secure user authentication
+v Remote attestation
+Correct
+You nailed it! A TPM can be used for remote attestation, ensuring that a host is a known good state and hasn't been modified or tampered (from a hardware and a software perspective). TPMs can also seal and bind data to them, encrypting data against the TPM. This also allows it to be decrypted by the TPM, only if the machine is in a good and trusted state.
+Malware detection 
+231 Week Two Practice Quiz30мин
+
+
 
 301 Ќ≈ƒ≈Ћя 3 AAA Security (Not Roadside Assistance)
 In the third week of this course, we'll learn about the "three A's" in cybersecurity. No matter what type of tech role you're in, it's important to understand how authentication, authorization, and accounting work within an organization. By the end of this module, you'll be able to choose the most appropriate method of authentication, authorization, and level of access granted for users in an organization.
 302 Authentication Best Practices6мин
+Identification
+The idea of describing an entity uniquely
+Authentication
+Authorization
+"authn" (for authentication)
+"authz" (for authorization)
+Risk mitigation
+ILik3P0n1ez99
+Incorporating good password policies into an organization is key to ensuring that employees are securing their accounts with strong passwords.
+
+Length requirements
+Character complexity
+Dictionary words
+
 303 Multifactor Authentication12мин
+Multifactor authentication
+A system where users are authenticated by presenting multiple pieces of information or objects
+
+
+Something you know 
+Something you have 
+Something you are
+
+Password / PIN ATM / Bank card Biometric ID
+
+Physical tokens
+
+OTP
+One-time password
+
+Time-based token
+TOTP
+Network time protocol
+NTP
+Counter-based tokens
+
+Biometric authentication
+The process of using unique physiological characteristics of an individual to identify them
+
+U2F
+Universal 2nd Factor
+
+Security keys
+
 304 Certificates3мин
+In order to issue client certificates, an organization must setup and maintain CA infrastructure to issue and sign certificates.
+
+Certificate revocation list (CRL)
+A signed list published by the CA which defines certificates that have been explicitly revoked
+
+
 305 LDAP3мин
+Authentication LDAP
+
+Lightweight Directory Access Protocol (LDAP)
+An open, industry-standard protocol for accessing and maintaining directory services
+
+Data information tree
+
+Organizational units
+OUs
+
+Distinguished name 
+DN
+Bind
+StartTLS
+Search
+Add/delete/modify
+Unbind
+
 306 RADIUS1мин
+Remote Authentication Dial-In User Service (RADIUS)
+A protocol that provides AAA services for users on a network
+EAP
+Extensible Authentication Protocol
+
 307 Kerberos7мин
+Kerberos
+A network authentication protocol that uses “tickets” to allow entities to prove their identity over potentially insecure channels to provide mutual authentication
+AS
+Authentication server
+Ticket Granting Service
+TGS
+
 308 TACACS+1мин
+TACACS+
+Terminal Access Controller Access-Control System Plus
+TACACS+ is primarily used for device administration, authentication, authorization, and accounting.
+
 309 Single Sign-On3мин
+Single sign-on (SSO)
+An authentication concept that allows users to authenticate once to be granted access to a lot of different services and applications
+OpenID
+
 310 Rob Path to IT1мин
+
 311 Authorization and Access Control Methods1мин
+Authorization
+Pertains to describing what the user account has access to, or doesn't have access to
+OAuth
+
 312 Access Control5мин
+OAuth
+An open standard that allows users to grant third-party websites and applications access to their information without sharing account credentials
+
+OAuth permissions can be used in phishing-style attacks to gain access to accounts, without requiring credentials to be compromised.
+
 313 Access Control List1мин
+Access control list (ACL)
+A way of defining permissions or authorizations for objects
+Access control entries
+
 314 Tracking Usage and Access3мин
+Accounting
+Keeping records of what resources and services your users accessed, or what they did when they were using your systems
+Auditing
+TACACS+ is a device access AAA system that manages who has access to your network devices and what they do on them.
+
 315 Rob Important Skills in Security1мин
 316 2 материала дл¤ самосто¤тельного изучени¤
 317 Supplemental Reading for Authentication10мин
