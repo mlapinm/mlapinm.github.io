@@ -859,6 +859,7 @@ Character complexity
 Dictionary words
 
 303 Multifactor Authentication12мин
+MFA
 Multifactor authentication
 A system where users are authenticated by presenting multiple pieces of information or objects
 
@@ -866,8 +867,16 @@ A system where users are authenticated by presenting multiple pieces of informat
 Something you know 
 Something you have 
 Something you are
-
 Password / PIN ATM / Bank card Biometric ID
+
+Something the user has: Any physical object in the possession of the user, such as a security token (USB stick), a bank card, a key, etc.
+
+Something the user knows: Certain knowledge only known to the user, such as a password, PIN, TAN, etc.
+
+Something the user is: Some physical characteristic of the user (biometrics), such as a fingerprint, eye iris, voice, typing speed, pattern in key press intervals, etc.
+
+Somewhere the user is: Some connection to a specific computing network or using a GPS signal to identify the location.
+
 
 Physical tokens
 
@@ -977,15 +986,155 @@ TACACS+ is a device access AAA system that manages who has access to your networ
 401 Ќ≈ƒ≈Ћя 4 Securing Your Networks
 In the fourth week of this course, we'll learn about secure network architecture. It's important to know how to implement security measures on a network environment, so we'll show you some of the best practices to protect an organization's network. We'll learn about some of the risks of wireless networks and how to mitigate them. We'll also cover ways to monitor network traffic and read packet captures. By the end of this module, you'll understand how VPNs, proxies and reverse proxies work; why 802.1X is a super important for network protection; understand why WPA/WPA2 is better than WEP; and know how to use tcpdump to capture and analyze packets on a network. That's a lot of information, but well worth it for an IT Support Specialist to understand!
 402 Network Hardening Best Practices8мин
+Network hardening
+The process of securing a network by reducing its potential vulnerabilities through configuration changes and taking specific steps
+
+Implicit deny
+A network security concept where anything not explicitly permitted or allowed should be denied
+
+Analyzing logs
+The practice of collecting logs from different network and sometimes client devices on your network, then performing an automated analysis on them
+
+Logs analysis systems are configured using user-defined rules to match interesting or atypical log entries.
+
+Normalizing log data is an important step, since logs from different devices and systems may not be formatted in a common way.
+
+Correlation analysis
+The process of taking log data from different systems and matching events across the systems
+
+Post-fail analysis
+
+Flood guards
+Provide protection against DoS or Denial of Service attacks
+
+Network separation
+
 403 Network Hardware Hardening9мин
+
+Rogue DHCP server attack
+DHCP snoopin
+Dynamic ARP inspection
+IP Source 1 Guard  
+802.1X
+Extensible Authentication Protocol
+EAP over LAN
+EAPOL
+EAP-TLS
+An authentication type supported by EAP that uses TLS to provide mutual authentication of both the client and the authenticating server
+
 404 Network Software Hardening5мин
+Network software hardening
+
+Firewalls
+Proxies
+VPNs
+
+VPNs are commonly used to provide secure remote access, and link two networks securely.
+
+Proxies
+Proxy server
+Reverse proxy
+
+HAProxy
+Nginx
+Apache web server
+
 405 Joe Personal Obstacle44
+
 406 WEP Encryption and Why You Shouldn't Use It8мин
+What do you think the best security option is for securing a WiFi network?
+WEP
+Wired Equivalent Privacy
+No one should be using WEP anymore!
+
+Open System authentication
+Shared Key authentication
+
 407 Let's Get Rid of WEP! WPA/WPA214мин
+WPA
+Wi-Fi Protected Access
+WPA
+Designed as a short-term replacement that would be compatible with older WEP-enabled hardware with a simple firmware update
+TKIP
+Temporal Key Integrity Protocol
+
+Under WPA, the pre-shared key is the Wifi password you share with people when they come over and want to use your wireless network.
+
+password-Based Key Derivation Function 2
+
+CCMP
+Counter Mode CBC
+
+MAC Protocol
+
+Four-way handshake
+PTK
+Pairwise Transient Key
+
+PMK
+AP nonce Client nonce
+AP MAC address
+Client MAC address
+
+GTK
+GTK - Groupwise Transient Key.
+
+WPA2-Enterprise
+WPA2-Personal
+WPA2-PSK
+
+PIN entry authentication
+NFC or USB
+Push-button authentication
+
+Rainbow tables
+
 408 Wireless Hardening3мин
+802.1X with EAP-TLS
+If 802.1X is too complicated for a company, the next best alternative would be WPA2 with AES/CCMP mode.
+
+A long and complex passphrase that wouldn’t be found in a dictionary would increase the amount of time and resources an attacker would need to break the passphrase.
+
+If your company values security over convenience, you should make sure that WPS isn’t enabled on your APs.
+
 409 Heather Social Engineering1мин
+Packet sniffing (packet capture)
+The process of intercepting netowrk packets in their entirety for analysis
+
+Promiscuous Mode
+A type of computer networking operational mode in which all network data packets can be accessed and viewed by all network adapters operating in this mode
+
+Port mirroring
+Allows the switch to take all packets from a specified port, port range, or entire VLAN and mirror the packets to a specified switch port
+
+Monitor mode
+Allows us to scan across channels to see all wireless traffic being sent by APs and clients
+
 410 Sniffing the Network5мин
+
 411 Wireshark and tcpdump6мин
+Tcpdump
+A super popular, lightweight, command-line based utility that you can use to capture and analyze packets
+-x
+wireshark
+http.request.uri matches "q=wireshark
+Traffic analysis
+
+Intrusion Detection and Prevention Systems (IDS/IPS)
+IDS or IPS systems operate by monitoring network traffic and analyzing it.
+
+Network Intrusion Detection System (NIDS)
+The detection system would be deployed somewhere on a network where it can monitor traffic for a network segment or subnet.
+
+Port mirroring functionality
+
+Snort
+Suricata
+Bro NIDS
+
+NIP system
+Network Intrusion Prevention System
+
 412 Intrusion Detection/Prevention Systems6мин
 413 7 материалов дл¤ самосто¤тельного изучени¤
 414 Supplemental Reading for Network Hardening Best Practices10мин
@@ -1007,6 +1156,9 @@ In the fourth week of this course, we'll learn about secure network architecture
 501 Ќ≈ƒ≈Ћя 5 Defense in Depth
 In the fifth week of this course, we're going to go more in-depth into security defense. We'll cover ways to implement methods for system hardening, application hardening, and determine the policies for OS security. By the end of this module, you'll know why it's important to disable unnecessary components of a system, learn about host-based firewalls, setup anti-malware protection, implement disk encryption, and configure software patch management and application policies.
 502 Intro to Defense in Depth1мин
+Defense in depth
+The concept of having multiple, overlapping systems of defense to protect IT systems
+
 503 Disabling Unnecessary Components4мин
 504 Host-Based Firewall4мин
 505 Logging and Auditing7мин
