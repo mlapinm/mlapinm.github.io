@@ -865,9 +865,11 @@ A system where users are authenticated by presenting multiple pieces of informat
 
 
 Something you know 
+Password / PIN
 Something you have 
+ATM / Bank card
 Something you are
-Password / PIN ATM / Bank card Biometric ID
+Biometric ID
 
 Something the user has: Any physical object in the possession of the user, such as a security token (USB stick), a bank card, a key, etc.
 
@@ -1004,17 +1006,25 @@ The process of taking log data from different systems and matching events across
 
 Post-fail analysis
 
-Flood guards
+Flood guards (Fail2ban)
 Provide protection against DoS or Denial of Service attacks
+SYN floods
+UDP floods
+
 
 Network separation
 
 403 Network Hardware Hardening9мин
 
 Rogue DHCP server attack
-DHCP snoopin
-Dynamic ARP inspection
-IP Source 1 Guard  
+DHCP snooping
+
+ARP poisoning attacks
+Dynamic ARP inspection DAI
+
+IP spoofing attacks
+IP Source Guard 
+ 
 802.1X
 Extensible Authentication Protocol
 EAP over LAN
@@ -1123,6 +1133,8 @@ Traffic analysis
 Intrusion Detection and Prevention Systems (IDS/IPS)
 IDS or IPS systems operate by monitoring network traffic and analyzing it.
 
+IPS can block and drop
+
 Network Intrusion Detection System (NIDS)
 The detection system would be deployed somewhere on a network where it can monitor traffic for a network segment or subnet.
 
@@ -1160,13 +1172,110 @@ Defense in depth
 The concept of having multiple, overlapping systems of defense to protect IT systems
 
 503 Disabling Unnecessary Components4мин
+System Hardening
+0-day vulnerabilities
+Attack vectors
+Attack surfaces
+
+Attack vector
+The method or mechanism by which an attacker or malware gains access to a network or system
+
+Attack surface
+The sum of all the different attack vectors in a given system
+
+The less complex something is, the less likely there will be undetected flaws.
+
+Another way to keep things simple is to reduce your software deployments.
+
+Telnet access for a managed switch has no business being enabled in a real-world environment.
+
 504 Host-Based Firewall4мин
+System Hardening
+
+Host-based firewalls
+Protect individual hosts from being compromised when they’re used in untrusted, potentially malicious environments.
+
+A host-based firewall plays a big part in reducing what’s accessible to an outside attacker.
+
+Bastion hosts or networks
+
+If the users of the system have administrator rights, then they have the ability to change firewall rules and configurations.
+
 505 Logging and Auditing7мин
+Logging and Auditing
+
+Security information and event management systems
+SIEMS
+
+Normalization
+
+Once logs are centralized and standardized, you can write automated alerting based on rules.
+
+SIEM
+
+rsyslog
+Splunk Enterprise Security
+IBM Security Qradar
+RSA Security Analytics
+
 506 Antimalware Protection7мин
+Antivirus software will monitor and analyze things, like new files being created or being modified on the system, in order to watch for any behavior that matches a known malware signature.
+
+It protects against the most common attacks out there on the internet.
+
+Antivirus software is just one piece of our anti-malware defenses.
+
+Binary whitelisting software
+
 507 Disk Encryption6мин
+System Hardening
+
+Full-disk encryption (FDE)
+Works by automatically converting data on a hard drive into a form that cannot be understood by anyone who doesn't have the key to "undo" the conversation
+
+Secure Boot Protocol
+Platform key
+
+Bitlocker
+Filevault 2
+dm-crypt
+TrueCrypt
+VeraCrypt
+
+When you implement a full disk encryption solution at scale, it’s super important to think about how to handle cases where passwords are forgotten.
+
+Key Escrow
+Allows the encryption key to be securely stored for later retrieval by an authorized party
+
+Home directory or file-based encryption
+only guarantees confidentiality and integrity of files protected by encryption.
+
 508 Heather Self Learning1мин
 509 Software Patch Management6мин
+Application Hardening
+
+As an IT Support Specialist, its critical that you make sure that you install software updates and security patches in a timely way, in order to defend your company's systems and networks.
+
+The best protection is to have a good system and policy in place for your company.
+
+SCCM
+
+Critical infrastructure devices should be approached carefully when you apply updates. There’s always the risk that a software update will introduce a new bug that might affect the functionality of the device.
+
 510 Application Policies4мин
+Application Hardening
+
+A common recommendation, or even a requirement, is to only support or require the latest version of a piece of software.
+
+It’s generally a good idea to disallow risky classes of software by policy. Things like file sharing software and piracy-related software tend to be closely associated with malware infections.
+
+Understanding what your users need to
+do their jobs will help shape your approach to software policies and guidelines.
+
+Helping your users accomplish tasks by recommending or supporting specific software makes for a more secure environment.
+
+Extensions that require full access to web sites visited can be risky, since the extension developer has the power to modify pages visited.
+
 511 3 материала дл¤ самосто¤тельного изучени¤
 512 Supplemental Reading for Logging and Auditing10мин
 513 Supplemental Readings for Antimalware Protection10мин
@@ -1182,16 +1291,163 @@ The concept of having multiple, overlapping systems of defense to protect IT sys
 
 601 Ќ≈ƒ≈Ћя 6 Creating a Company Culture for Security
 Congratulations, you've made it to the final week in the course! In the last week of this course, we'll explore ways to create a company culture for security. It's important for any tech role to determine appropriate measures to meet the three goals of security. By the end of this module, you will develop a security plan for an organization to demonstrate the skills you've learned in this course. You're almost done, keep up the great work!
+
 602 Security Goals7мин
+Risk in the Workplace
+
+If your company handles credit card payments, then you have to follow the PCI DSS, or Payment Card Industry Data Security Standard.
+
+-1. Build and maintain a secure network and systems.
+-2. Protect cardholder data.
+-3. Maintain a vulnerability management program.
+-4. Implement strong access control measures.
+-5. Regularly monitor and test networks.
+-6. Maintain an information security policy.
+
 603 Measuring and Assessing Risk5мин
+Risk in the Workplace
+
+Security is all about determining risks or exposure; understanding the likelihood of attacks; and designing defenses around these risks to minimize the impact of an attack.
+
+Security risk assessment starts with threat modeling.
+
+High-value data usually includes account information, like usernames and passwords. Typically, any kind of user data is considered high value, especially if payment processing is involved.
+
+Vulnerability Scanner
+A computer program designed to assess computers, computer systems, networks or applications for weaknesses
+
+Nessus
+OpenVAS
+Qualys
+
+Penetration testing
+The practice of attempting to break into system or network to verify the systems in place
+
 604 Privacy Policy3мин
+Risk in the Workplace
+
+Privacy policies oversee the access and use of sensitive data.
+
+Доступ
+Правмерный
+Не правомерный
+Ограничения
+
+Политики
+конфиденциальности
+доступа
+
+It's a good practice to apply the principle of least privilege here, by not allowing access to this type of data by default.
+
+Запрашивать доступ
+Зачем нужны данные
+Какая нужна информация
+На какое время
+
+
+Any access that doesn’t have a corresponding request should be flagged as a high-priority potential breach that needs to be investigated as soon as possible.
+
+Data-handling policies should cover the details of how different data is classified.
+
+Once different data classes are defined, you should create guidelines around how to handle these different types of data.
+
 605 User Habits6мин
+Users
+
+You can build the world's best security systems, but they won't protect you if the users are going to be practicing unsafe security.
+
+You should never upload confidential information onto a third-party service that hasn’t been evaluated by your company.
+
+It's important to make sure employees use new and unique passwords, and don’t reuse them from other services.
+
+A much greater risk in the workplace that users should be educated on is credential theft from phishing emails.
+
+If someone entered their password into a phishing site, or even suspects they did, it s important to change their password as soon as possible.
+
+If someone entered their password into a phishing site, or even suspects they did, it s important to change their password as soon as possible.
+
 606 Third-Party Security4мин
+Users
+
+If they have subpar security, you’re undermining your security defenses by potentially opening a new avenue of attack.
+
+If you can, ask for a third-party security assessment report.
+репутация
+аудит оценить систему защиты
+ознакомиться с продуктом на время
+справки о заците компании
+отчет по аудиту ее систем
+отчет о петтесте
+
+VSAQ - Vendor Security Assessment Questionnaires
+•	Web Appication Security Questionnaire
+•	Socunty & Privacy Program Questionnaire
+•	Infrastructure Security Questionnaire
+•	Physical & Detaosntoc Security Questionnaire
+
 607 Security Training3мин
+Users
+
+возможность задавать вопросы
+спец почтовый адрес
+
+
+Helping others keep security in mind will help decrease the security burdens you'll have as an IT Support Specialist.
+
+блокировать экран
+If not, you absolutely should be!
+
+You also need to justify why these are good behaviors to adopt.
+
+тренинги
+типа видео 
+тест
+
 608 Alex Grit Story1мин
+
 609 Incident Reporting and Analysis6мин
+Incident Handling
+
+The very first step of handling an incident is to detect it in the first place.
+
+The next step is to analyze it and determine
+the effects and scope of damage.
+
+spinel% sudo tcpdump any -i
+
+spinel% sudo tcpdump -i enol ip and host example.com [sudo] password for mrant:
+
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode listening on enol, link-type EN10MB (Ethernet), capture size 262144 bytes
+
+spinel% curl example.com
+
+Once the scope of the incident is determined, the next step is containment.
+
+If an account was compromised, change the password immediately. If the owner is unable to change the password right away, then lock the account.
+
+Severity includes factors like what and how many systems were compromised, and how the breach affects business functions.
+
+Severity includes factors like what and how many systems were compromised, and how the breach affects business functions.
+
+The impact of an incident is also an important issue to consider.
+
+Data exfiltration
+The unauthorized transfer of data from computer
+
+Recoverability
+How complicated and time-consuming the recovery effort will be
+
 610 Incident Response and Recovery6мин
+Incident Handling
+
+Update firewall rules and ACLs if an exposure was discovered in the course the investigation.
+
+Create new definitions and rules for intrusion detection systems that can watch for the signs of the same attack again.
+
 611 Mobile Security and Privacy3мин
+Screen lock
+Permissions
+
 612 Amir Interview1мин
 613 Ari Interview1мин
 614 Interview Role Play: Security4мин
