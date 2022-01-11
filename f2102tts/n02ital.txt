@@ -1,0 +1,109 @@
+the bread
+il pane
+
+the water
+l'aqua
+
+Lei mangia il pane.
+she eats bread
+
+the sugar
+lo zucchero
+
+La donna beve.
+The woman drinks
+
+Io bevo.
+I drink
+
+Tu mangi zucchero.
+You eat sugar
+
+I eat bread.
+Io mangio il pane.
+
+you drink
+Tu bevi.
+
+Tu mangi la mela.
+you eat the apple
+
+Tu mangi.
+You eat
+
+Io mangio il pane.
+I eat bread
+
+I eat
+Io mangio.
+
+Tu bevi l'acqua.
+You drink water
+
+L'uomo beve l'acqua
+The man drinks water
+
+Bevi acqua
+You drink water
+
+Tu bevi
+You drink 
+
+You eat
+Tu mangi
+
+Io sono una ragazza.
+
+I am a woman.
+Io sono una donna.
+
+Un ragazzo
+A boy
+
+The woman.
+La donna.
+
+Io sono un uomo
+I am a man
+
+The man.
+l'uomo
+
+A girl
+Una ragazza
+
+Lei mangia
+She eats
+
+lui mangia
+He eats
+
+Tu sei una donna
+you are a woman
+
+Lei mangia la mela
+she eats the apple
+
+Il ragazzo mangia una mela
+The boy eats an apple
+
+Lui e un ragazzo
+He is a boy
+
+lei e una ragazza
+She is a girl
+
+Il ragazzo mangia la mela
+the boy eats the apple
+
+Tu sei un ragazzo io sono un uomo
+You are a boy I am a man
+
+Tu sei un uomo
+You are a man
+
+
+
+
+
+

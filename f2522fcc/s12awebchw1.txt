@@ -1,0 +1,755 @@
+100 WEEK1 Introduction to HTML5
+In this module we will learn the basics of HTML5. We'll start with instructional videos on how to set up your development environment, go over HTML5 basics like valid document structure, which elements can be included inside other elements and which can not, discuss the meaning and usefulness of HTML5 semantic tags, and go over essential HTML5 tags.
+101 Course Introduction3m
+102 Welcome to Module 1: Introduction to HTML51m
+103 Development Environment Setup, Part 13m
+Tools We Will Need
+Sign up for an account on GitHub.com
+Google Chrome Browser
+Already comes with CDT (Chrome Developer Tools) Sublime Text 3 (or any code editor)
+Git
+Browser Sync
+Will need to install NodeJs for it to work
+
+104 Development Environment Setup, Part 2: MacOS8m
+
+105 Development Environment Setup, Part 2: Windows6m
+C:\Users\yaakov>git --version git version 2.6.4.windows.1
+C:\Users\yaakov>node --version 
+V4.2.4
+C:\Users\yaakov>npm
+ --version 2.14.12
+
+106 Development Environment Setup, Part 3: Github and Browser Sync17m
+
+107 Resources for Asking Questions5m
+108 Lecture 1: What is HTML?7m
+Hyper text Markup Language
+
+Summary
+HTML
+
+•	Annotates content
+
+•	Defines document structure
+
+Right and wrong syntax 3 Core Web Technologies
+
+•	HTML, CSS, Javascript
+
+NEXT:
+
+A Bit Of Relevant History Of The HTML Standard
+
+109 Lecture 2: Relevant History of HTML10m
+Summary
+History of HTML and it affects us as developers
+Resources for validation 
+Resources for feature investigation 
+Browser stats resource
+
+110 Lecture 3: Anatomy of an HTML Tag5m
+Summary
+Anatomy of an HTML tag
+Opening and closing tag
+Attributes
+Using double and single quotes
+How to specify tag without any content
+
+111 Lecture 4: Basic HTML Document Structure6m
+Summary
+The bare minimum HTML document HTML version declaration Our first HTML tags!
+<html> — <meta> — <head> — <title> — <body>
+Sequential (top to bottom) rendering
+
+112 Lecture 5: HTML Content Models6m
+Block-Level Elements
+Render to begin on a new line (by default)
+May contain inline or other block-level elements
+
+Inline Elements
+Render on the same line (by default)
+May only contain other inline elements
+HTML5 replaces these definitions with more complex set of content categories.
+
+HTML5 replaces these definitions with more complex set of content categories.
+However, this distinction remains practical because it aligns well with existing CSS rules.
+
+Summary
+Compared block-level & inline content types
+Officially not part of HTML5, but still used
+Roughly equivalent to flow content & phrasing content
+
+113 Lecture 6: Heading Elements (and some new HTML5 semantic comments)7m
+
+se-man-tic
+Relating to meaning in language or logic
+
+semantic html element
+Element that implies some meaning to the content
+
+Human and/or machine can understand meaning of content surrounded by a semantic element better
+Mayhelp search engine ranking, i.e., SEO
+
+Summary
+Well chosen content of H1 element is crucial to SEO
+Semantic elements allow for a more meaningful expression of the structure of our HTML page
+
+114 Lecture 7: Lists5m
+Summary
+Lists provide a natural and commonly used grouping of content
+Very often, lists are used for structuring navigation portions of the web page
+
+115 Lecture 8: HTML Character Entity References7m
+Summary
+HTML Entities
+Help avoid rendering issues
+Safeguard against more limited character encoding
+Provide characters not available on a keyboard
+
+116 Lecture 9: Creating Links9m
+Summary
+Internal linking to other pages in the site External linking to other web sites Linking to sections of a document
+
+117 Lecture 10: Displaying Images6m
+Summary
+Images can enhance your site
+Remember to specify width and height attributes whenever possible
+
+118 Module 1 Wrap-Up30s
+119 How Grading and Being Late on Assignments Works10m
+120 Recommended Books10m
+121 CHECK OUT MY SITE!10m
+122 ALL of the EXAMPLE SOURCE CODE for this Course3m
+123 Frequently Asked Questions (FAQ)1m
+124 Frequently Asked Questions2m
+125 CONNECT WITH ME!2m
+126 Optional Practice Quiz30m
+127 Optional Practice Quiz30m
+128 Optional Practice Quiz30m
+129 Optional Practice Quiz30m
+130 Optional Practice Quiz30m
+131 Optional Practice Quiz30m
+132 Optional Practice Quiz30m
+133 Optional Practice Quiz30m
+134 Optional Practice Quiz30m
+135 Optional Practice Quiz30m
+136 Optional Practice Quiz30m
+137 Module 1 Quiz30m
+Module 1 Quiz
+Total points 23
+Question 1
+If I miss an assignment deadline or fail an assignment, I fail the course.
+True
+v False
+Question 2
+This is a completely self-paced course. The deadlines don't matter at all!
+True
+v False
+Question 3
+I can go through the course faster and complete it faster!
+v True
+False
+Question 4
+Where can you get access to the example source code used in the course and the Lecture Slide PDFs?
+You CAN NOT have it! It's reserved only for special people. VERY special people! You can ask and beg on the discussion forums, but we still won't give it to you.
+v The link to the GitHub.com repository, which contains the example code used in this course, Lecture Slide PDFs, as well as assignment starter code is given to you in the first module under the title "ALL of the EXAMPLE SOURCE CODE for this Course".
+Question 5
+In order to install Browser Sync, what must be installed first?
+Javascript
+Google Chrome Developer Tools
+Ruby
+v NodeJs
+Java
+Question 6
+The core purpose of HTML is to
+(hint: something a pure text file with content won't be able to accomplish)
+Display web page content to the user
+v Communicate the structure of the content
+Tell the browser how to position and align content in the browser window
+Tell the browser what should happen once the page is loaded
+Question 7
+W3C (World Wide Web Consortium) is the only organization that dictates what and how browsers should implement HTML5
+True
+v False
+Question 8
+ALL HTML5 tags must
+v Have an opening tag
+?Have a closing tag
+v Have at least 1 attribute
+v Be lower case, i.e., 
+<p>
+not
+<P>
+Have an 'id' attribute
+Question 9
+Identify correct HTML5 page declaration(s)
+<html-document>
+v <!DOCTYPE html>
+<! doctype html>
+?v <!doctype html>
+<!doctype html5>
+<!DocTyPe htML   >
+Question 10
+What would happen if you didn't specify the HTML5 declaration?
+Nothing. HTML5 is very liberal about its declaration and it's only a recommendation to use it
+The browser will revert to the previous version of HTML automatically
+v The page will be interpreted in quirks mode
+The page will not display at all
+How should I know? I didn't really watch the videos!
+Question 11
+Browsers ALWAYS interpret HTML sequentially, top to bottom
+v True
+False
+Question 12
+Identify invalid HTML code snippet below (assume code around it, i.e., declaration, etc. is valid)
+<div>Hey there!
+I am just a lonely quiz answer. Will you click me? I am bored!
+</div>
+v 1234
+<section>
+<p>The sale numbers are in...
+</section> You ARE a closer, Johnson!
+</p>
+<article>
+<h2>Wow! 
+</h2>
+<p>You're ignoring all the other answers just to 
+look at me?! I AM special!
+... 
+Wait! Where are you going? 
+What if I AM the answer you've been searching for???!
+</p>
+</article>
+<div><span>Will you just tag along with me?</span></div>
+Question 13
+Meta tags communicate information about the browser to the server
+True
+v False
+Question 14
+Without applying any additional styles, the following code snippet will show up in the browser as how many lines of text? (Assume the browser is stretched wide enough not to cause any single line to wrap)
+<div>Dear all,
+<span>I took this really cool course
+</span></div>
+<span>on Coursera.org. I think it's
+my favorite course I've EVER taken!
+Here is the URL for it:
+</span>
+<a href="...">HTML, CSS and JS for Web Developers</a>
+<div>
+Does anyone know how I can give this course 6
+v 4
+Question 15
+Identify invalid HTML code snippet (assume code above and below this code is valid)
+<div>I love <span>gardening!</span></div>
+v <span>I love <div>gardening</div></span>
+<a>I love <div>gardening<span>!</span></div></a>
+All are valid!
+Question 16
+Semantic HTML tags
+v May help the SEO ranking of the page
+Help computers better understand the structure of the page
+v Help humans better understand the structure of the page
+v Are required to be used in HTML5
+Question 17
+One purpose of HTML Character Entity References is
+v To allow the browser to display certain characters it would otherwise interpret as part of HTML code and not something to display to the user
+HTML Character Entity References were useful before HTML5 was introduced. After HTML5, they are no longer needed
+Identify character sets that the browser can support
+Question 18
+Using only HTML, how would you make sure that 3 words in an HTML document ALWAYS appear together on 1 line, even if the text word-wraps because the browser window is too narrow for that text line? 
+Impossible to accomplish with HTML alone!
+Place &nowrap; entity reference before the 1st word and after the 3rd word
+v Place &nbsp; entity reference after the 1st word and after the 2nd word (with no spaces in between words and entity references)
+Place &nbsp; entity reference before the 1st word and after the 3rd word
+Question 19
+How can you force the browser to open a link in a new window or tab?
+Send some special meta tags as part of the page
+Instruct the user to right-click on the link and choose "Open in a New Tab"
+v Include target='_blank' attribute as part of the <a> tag
+Include target="new" attribute as part of the <a> tag
+Question 20
+The following code rendering in the middle section of the page allows someone to directly link to that middle section of the page, not just the beginning of the page:
+<div id="superInterestingContentHere">Bla Bla</div>
+v True
+False
+Question 21
+Even though the width and height attributes of the 'img' tag are not required, it's always a good idea to use them
+v True
+False
+Question 22
+WHATWG does NOT version HTML. For them, it's NOT HTML5. It's just HTML.
+v True
+False
+Question 23
+Quirks Mode is when the browser
+Can become unstable and crash in the middle of rendering a web page
+v Assumes that the HTML in the web page is NOT following the HTML standard, i.e., not in standards mode. That will cause styles not to work correctly, etc.
+This is a made up term. No such thing
+-----
+Course Introduction3m
+Welcome to Module 1: Introduction to HTML51m
+Development Environment Setup, Part 13m
+Development Environment Setup, Part 2: MacOS8m
+Development Environment Setup, Part 2: Windows6m
+Development Environment Setup, Part 3: Github and Browser Sync17m
+Resources for Asking Questions5m
+Lecture 1: What is HTML?7m
+Lecture 2: Relevant History of HTML10m
+Lecture 3: Anatomy of an HTML Tag5m
+Lecture 4: Basic HTML Document Structure6m
+Lecture 5: HTML Content Models6m
+Lecture 6: Heading Elements (and some new HTML5 semantic comments)7m
+Lecture 7: Lists5m
+Lecture 8: HTML Character Entity References7m
+Lecture 9: Creating Links9m
+Lecture 10: Displaying Images6m
+Module 1 Wrap-Up30s
+How Grading and Being Late on Assignments Works10m
+Recommended Books10m
+CHECK OUT MY SITE!10m
+ALL of the EXAMPLE SOURCE CODE for this Course3m
+Frequently Asked Questions (FAQ)1m
+Frequently Asked Questions2m
+CONNECT WITH ME!2m
+Optional Practice Quiz30m
+Optional Practice Quiz30m
+Optional Practice Quiz30m
+Optional Practice Quiz30m
+Optional Practice Quiz30m
+Optional Practice Quiz30m
+Optional Practice Quiz30m
+Optional Practice Quiz30m
+Optional Practice Quiz30m
+Optional Practice Quiz30m
+Optional Practice Quiz30m
+Module 1 Quiz30m
+====
+w2
+Question 1
+A stylesheet is a collection of CSS rules
+True
+False
+Correct
+Question 2
+Identify valid CSS rules (can be one or more)
+p {
+  height: 23px;
+  font-size: 12px;
+}
+Correct
+Correct!
+p { height: 23px; font-size: 12px; }
+Correct
+Spaces don't matter in CSS. It's just harder to read, but it's valid.
+p = "height: 23px", "font-size: 12px";
+p {
+  height = 23px,
+  font-size = 12px,
+}
+Question 3
+CSS is only allowed to have 1 property/value pair per each CSS rule
+True
+False
+Correct
+Correct!
+
+
+200 WEEK2 Introduction to CSS3
+A lot of people "tinker" with CSS. In this module, we'll take you from the very basics of CSS3 to some fairly advanced concepts like floating and CSS rule conflict resolution. We'll go over the 'box model', background property, etc. We'll finish off the module with learning about Responsive Design using our own CSS code as well as start introducing Twitter Bootstrap with its essential Grid System.
+201 Welcome to Module 2: Introduction to CSS350s
+202 Lecture 11: Power of CSS5m
+Summary
+CSS is an incredibly powerful technology User experience of content matters
+
+203 Lecture 12: Anatomy of a CSS Rule4m
+Summary
+Syntax of a CSS rule
+Selector
+Declaration
+Property/value pair Style sheet
+
+204 Lecture 13: Element, Class, and ID Selectors9m
+
+205 Lecture 14: Combining Selectors9m
+article > p { color: blue
+}
+
+Descendant Selector
+article p { color: blue;
+}
+Every p that is inside (at any level) of article
+
+Not Limited To Element Selectors
+.colored p { color: blue;
+}
+article > .colored { color: blue;
+}
+
+Summary
+Combining selectors
+Element with class selector (selector. class)
+Child (direct) selector (selector > selector)
+Descendent selector (selector selector)
+Didn’t cover
+Adjacent sibling selector (selector + selector)
+General sibling selector (selector - selector)
+
+206 Lecture 15: Pseudo-Class Selectors9m
+Pseudo-Class Selector
+Many pseudo-class selectors exist We cover:
+:link
+:hover 
+:active 
+:nth-child(...)
+
+a:hover, .jiactive { background-color: red; color: purple;
+}
+
+header ! :nth-child(3) { font-size: 24px;
+}
+
+:nth-child(odd) { background-color: gray;
+}
+
+Summary
+Pseudo-class selectors are very powerful 
+Make sure your selector is still readable
+Simple/Readable > Complicated/Tricky
+
+207 Lecture 16: Style Placement5m
+Summary
+Placing styles inline is great for quick testing Real sites almost always use external styles Head styles are usually there to override external
+
+208 Lecture 17, Part 1: Conflict Resolution8m
+Some Concepts
+origin
+marge
+inheritance
+specificity
+
+Origin Precedence (when in conflict)
+simple rule
+Last Declaration Wins
+Remember, HTML is processed sequentially, top to bottom.
+For precedence, think of external CSS as declared at the spot where it’s linked to.
+
+209 Lecture 17, Part 2: Conflict Resolution6m
+Most Specific
+Selector Combination Wins
+Summary
+Cascade: origin, merge; Inheritance, & Specificity
+
+Provide precise control over targeting content while allowing maximum re-use of styles across your website
+
+210 Lecture 18, Part 1: Styling Text6m
+font-family: Arial, Helvetica, sans-serif;
+color: #0000ff; font-style: italic; font-weight: bold; font-size: 24px; text-transform: capitalize;
+
+211 Lecture 18, Part 2: Styling Text5m
+<div style="font-size: 2em;">2em text 
+ <div style="font-size: 2em;">4em text 
+  <div style="font-size: .5em;">2em again!</div>
+ </div>
+</div>
+
+212 Lecture 19, Part 1: The Box Model10m
+background-color: blue; padding: 20px 30px 10px 30px;
+border: 20px solid black; margin: 40px;
+width: 300px;
+box-sizing: border-box;
+
+213 Lecture 19, Part 2: The Box Model7m
+* {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  margin: *0; 
+  padding: 0;
+}
+
+214 Lecture 19, Part 3: The Box Model5m
+overflow: auto;
+
+Summary
+Box model - essential to understand
+ Prefer box-sizing: border-box
+
+The * (universal) selector 
+Cumulative and collapsing margins 
+Content overflow
+
+215 Lecture 20: The background Property6m
+background: url('yaakov.png') no-repeat right center blue;
+
+Summary
+Background property and its sub properties
+-image
+-color
+-position
+etc.
+
+Can get pretty complex and is used for adjusting image size/resolution based on screen size
+
+216 Lecture 21: Positioning Elements by Floating10m
+Summary
+Floating elements can produce very flexible layouts
+
+Floats are taken out of normal document flow
+
+Floats don’t have vertical margin collapse
+
+To resume normal document flow, use the clear property
+
+217 Lecture 22, Part 1: Relative and Absolute Element Positioning7m
+Static Positioning
+Normal document flow. Default for all, except html.
+Positioning offsets are ignored
+
+Relative Positioning
+Element is positioned relative to its position
+
+in normal document flow.
+
+Positioning CSS (offset) properties are:
+top, bottom, left, right
+
+Element is NOT taken out of normal document flow
+Even if moved, its original spot is preserved
+
+p {
+  position: relative; 
+  top 50px; 
+  left 50px;
+}
+
+Absolute Positioning
+All offsets (top, bottom, left, right) are relative to the position of the nearest ancestor which has positioning set on it, other than static.
+
+By default, html is the only element that has non-static positioning set on it (relative).
+
+Element is taken out of normal document flow
+
+218 Lecture 22, Part 2: Relative and Absolute Element Positioning3m
+
+Summary
+Static positioning is default for all elements, except html
+
+Relative positioning offsets the element relative to its normal document flow position
+
+Absolute positioning is relative to closest ancestor which has positioning set to non-static value
+
+Offsetting the relative container element offsets its contents as well
+
+219 Lecture 23, Part 1: Media Queries4m
+
+@media (max-width: 767px) {
+  p {
+  color: blue;
+  }
+}
+
+Media Query Syntax
+Media Query Common Features
+
+@media (max-width: 800px) {...} @media (min-width: 800px)
+@media (orientation: portrait) {...} 
+@media screen {...}
+@media print {...}
+
+@media (min-width: 768px) and (max-width: 991px) {...}
+
+Comma is equivalent to OR:
+@media (max-width: 767px) (min-width: 992px) { ..}
+
+Media Query Common Approach
+
+220 Lecture 23, Part 2: Media Queries9m
+Summary
+Basic syntax of a media query
+@media (media feature)
+@media (media feature) logical operator (media feature) Remember not to overlap breakpoints
+
+Usually, you provide base styling
+Then, change or add to them in each media query
+
+221 Lecture 24, Part 1: Responsive Design7m
+What is a Responsive Web Site?
+Site designed to adapt its layout to the viewing environment by using fluid, proportion-based grids, flexible images, and CSS3 media queries
+
+Site’s layout adapts to the size of the device 
+Content verbosity or its visual delivery may change
+
+222 Lecture 24, Part 2: Responsive Design11m
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+Summary
+Need and idea of responsive design 12-column grid layout
+Use % to achieve fluid width (wrt browser width) Viewport meta tag to turn off default mobile zooming
+
+223 Lecture 25, Part 1: Introduction to Twitter Bootstrap5m
+What is Bootstrap?
+Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
+
+Mobile First == PLAN mobile from the start
+CSS Framework is mobile ready
+
+Disadvantages of Bootstrap (vs. Writing Your Own)?
+
+A lot of features you will probably never use 
+ Use selective download
+
+You can write your own that’s more targeted/smaller
+ But it will take you a LOT longer to write it as well
+
+224 Lecture 25, Part 2: Introduction to Twitter Bootstrap7m
+
+Summary
+Intro to the most popular project on GitHub
+Mobile First - importance of planning for mobile from the start
+
+Barebones Bootstrap web page
+
+225 Lecture 26, Part 1: The Bootstrap Grid System9m
+<div class="container">
+  <div class="row">
+   <div class="col-md-4">col-1</div>
+   • • •
+  </div>
+</div>
+
+226 Lecture 26, Part 2: The Bootstrap Grid System9m
+Summary
+Structure Bootstrap expects for the grid-based layout
+
+Needs to be include container (or container-fluid)
+All columns must be inside .row
+
+SIZE identifier identifies at which breakpoint specified column spans will be ignored and all elements will collapse (i.e., stack)
+
+If no other rules apply, specifying col-xs-... will keep that layout no matter what the size of the screen
+
+227 Module 2 Wrap-Up38s
+228 Recommended Books5m
+229 New Tutorials - here is how...2m
+230 CONNECT WITH ME!2m
+231 Frequently Asked Questions2m
+232 Optional Practice Quiz30m
+233 Optional Practice Quiz30m
+234 Optional Practice Quiz30m
+235 Optional Practice Quiz30m
+236 Optional Practice Quiz30m
+237 Optional Practice Quiz30m
+238 Optional Practice Quiz30m
+239 Optional Practice Quiz30m
+240 Optional Practice Quiz30m
+241 Optional Practice Quiz30m
+242 Optional Practice Quiz30m
+243 Optional Practice Quiz30m
+244 Optional Practice Quiz30m
+245 Optional Practice Quiz30m
+
+300 WEEK3 Coding the Static Restaurant Site
+Ready for some REAL fun? This module is it! We'll go over some basics of interacting with a client when managing a web site project and then go visit a real client at their place of business (a Chinese restaurant), help the owner figure out what she wants in a site, and get acquainted with the restaurant in general. We'll spend the rest of the module building a real web site for this business from scratch and you'll get to sit next to me and watch as the site comes together.
+301 Welcome to Module 3: Coding the Static Restaurant Site53s
+302 Lecture 27, Part 1: Visit with the Client10m
+303 Lecture 27, Part 2: Visit with the Client (Field Trip)9m
+304 Lecture 28: Design Overview9m
+305 Lecture 29: Some Ground Rules and Overview of Setup10m
+306 Lecture 30, Part 1: Coding Basics of Navbar Header9m
+307 Lecture 30, Part 2: Coding Basics of Navbar Header7m
+308 Lecture 31: Coding Button for Future Collapsible Menu6m
+309 Lecture 32, Part 1: Coding Nav Menu Buttons11m
+310 Lecture 32, Part 2: Coding Nav Menu Buttons3m
+311 Lecture 33, Part 1: Fixing Navbar Layout, Text, and Dropdown Menus7m
+312 Lecture 33, Part 2: Fixing Navbar Layout, Text, and Dropdown Menus4m
+313 Lecture 34: Coding the Jumbotron11m
+314 Lecture 35, Part 1: Coding Navigation Tiles11m
+315 Lecture 35, Part 2: Coding Navigation Tiles13m
+316 Lecture 36, Part 1: Coding the Footer10m
+317 Lecture 36, Part 2: Coding the Footer3m
+318 Lecture 37, Part 1: Coding the Menu Categories14m
+319 Lecture 37, Part 2: Coding the Menu Categories6m
+320 Lecture 38, Part 1: Coding the Single Menu Category Page11m
+321 Lecture 38, Part 2: Coding the Single Menu Category Page13m
+322 Lecture 38, Part 3: Coding the Single Menu Category Page7m
+323 Lecture 39: Testing the Mobile Version on a Real Phone4m
+324 Module 3 Wrap-Up28s
+325 Recommended Books5m
+326 New Tutorials - here is how...2m
+327 Frequently Asked Questions2m
+328 Optional Practice Quiz30m
+329 Optional Practice Quiz30m
+330 Optional Practice Quiz30m
+331 Optional Practice Quiz30m
+332 Optional Practice Quiz30m
+
+400 WEEK4 Introduction to Javascript
+What fun would a web site be if there was no functionality to it? In this module, we are going to concentrate on learning the fundamentals of the Javascript language. A lot of even seasoned developers “tinker” with Javascript without really understanding how the language works. That leads to viewing the language as more of a nuisance instead of a powerful tool. That is why we are going to concentrate not only on the “how” but also on the “why”, so you are empowered by the Javascript language features, not confused by them. We’ll cover just about everything - from common language constructs and Javascript types to objects, functions, arrays, closures, and scope isolation.
+401 Welcome to Module 4: Introduction to Javascript1m
+402 Lecture 40, Part 1: Adjusting Development Environment for Javascript Development5m
+403 Lecture 40, Part 2: Where to Place Javascript Code5m
+404 Lecture 41, Part 1: Defining Variables, Function, and Scope8m
+405 Lecture 41, Part 2: Defining Variables, Function, and Scope4m
+406 Lecture 42, Part 1: Javascript Types5m
+407 Lecture 42, Part 2: Javascript Types4m
+408 Lecture 43, Part 1: Common Language Constructs8m
+409 Lecture 43, Part 2: Common Language Constructs4m
+410 Lecture 43, Part 3: Common Language Constructs7m
+411 Lecture 44: Handling Default Values4m
+412 Lecture 45, Part 1: Creating Objects Using 'new Object()' Syntax7m
+413 Lecture 45, Part 2: Creating Objects Using Object Literal Syntax5m
+414 Lecture 46: Functions Explained8m
+415 Lecture 47, Part 1: Passing Variables by Value vs. by Reference6m
+416 Lecture 47, Part 2: Passing Variables by Value vs. by Reference7m
+417 Lecture 48: Function Constructors, prototype, and the 'this' Keyword12m
+418 Lecture 49: Object Literals and the 'this' Keyword6m
+419 Lecture 50, Part 1: Arrays8m
+420 Lecture 50, Part 2: Arrays4m
+421 Lecture 51: Closures6m
+422 Lecture 52, Part 1: Fake Namespaces6m
+423 Lecture 52, Part 2: Immediately Invoked Function Expressions (IIFEs)8m
+424 Module 4 Wrap-Up44s
+425 Recommended Books5m
+426 New Tutorials - here is how...2m
+427 Frequently Asked Questions2m
+428 Optional Practice Quiz30m
+429 Optional Practice Quiz30m
+430 Optional Practice Quiz30m
+431 Optional Practice Quiz30m
+432 Optional Practice Quiz30m
+433 Optional Practice Quiz30m
+434 Optional Practice Quiz30m
+435 Optional Practice Quiz30m
+436 Optional Practice Quiz30m
+
+500 WEEK5 Using Javascript to Build Web Applications
+In this module, we are going to take all those newly learned Javascript language skills and learn how to utilize them within the context of a web page. We’ll start by learning how to properly manipulate the web page components using the Javascript Document Object Model API. We will then move on to learning one of the most popular ways of serving up data to a web site - Ajax. We'll learn about the protocol that the language of the web speaks in (HTTP), how to set up and handle Ajax requests and responses, as well as how to process JSON data. We'll finish the module by connecting our restaurant web site from Module 3 to a real backend service that will allow us to pull the data for the restaurant menu dynamically from the server without having to reload the entire page.
+501 Welcome to Module 5: Using Javascript to Build Web Applications47s
+502 Lecture 53, Part 1: DOM Manipulation6m
+503 Lecture 53, Part 2: DOM Manipulation11m
+504 Lecture 54: Handling Events9m
+505 Lecture 55: The 'event' Argument6m
+506 Lesson 56: HTTP Basics12m
+507 Lesson 57, Part 1: Ajax Basics5m
+508 Lesson 57, Part 2: Ajax Basics13m
+509 Lesson 57, Part 3: Ajax Basics6m
+510 Lecture 58: Processing JSON9m
+511 Lecture 59: Fixing Mobile Nav Menu Automatic Collapse6m
+512 Lecture 60: Dynamically Loading Home View Content9m
+513 Lecture 61, Part 1: Dynamically Loading Menu Categories View6m
+514 Lecture 61, Part 2: Dynamically Loading Menu Categories View10m
+515 Lecture 62: Dynamically Loading Single Category View13m
+516 Lecture 63: Changing 'active' Button Style Through Javascript6m
+517 Course Wrap-Up1m
+518 Recommended Books5m
+519 CONNECT WITH ME!2m
+520 Check out the final deployed site2m
+521 Frequently Asked Questions2m
+522 New Tutorials - here is how...2m
+523 CONNECT WITH ME!2m
+524 Optional Practice Quiz30m
+525 Optional Practice Quiz30m
+526 Optional Practice Quiz30m

@@ -979,6 +979,136 @@ TACACS+ is a device access AAA system that manages who has access to your networ
 318 Supplemental Reading for Authorization10мин
 319 3 практических упражнени¤
 320 Authentication30мин
+How is authentication different from authorization? 
+Question 1
+v Authentication is verifying an identity; authorization is verifying access to a resource.
+They're the same thing.
+Authentication is identifying a resource; authorization is verifying access to an identity.
+Authentication is verifying access to a resource; authorization is verifying an identity.
+Correct
+Right on! Authentication is proving that an entity is who they claim to be, while authorization is determining whether or not that entity is permitted to access resources.
+Question 2
+What are some characteristics of a strong password? Check all that apply, 
+Is used across accounts and systems
+v Includes numbers and special characters
+Contains dictionary words
+v Is at least eight characters long
+Correct
+You got it! A strong password should contain a mix of character types and cases, and should be relatively long -- at least eight characters, but preferably more.
+Question 3
+In a multi-factor authentication scheme, a password can be thought of as: 
+something you have.
+something you use.
+v something you know.
+-something you are. 
+Incorrect
+Not quite. Biometrics as an additional authentication factor is something you are, while passwords are something you know.
+Question 4
+What are some drawbacks to using biometrics for authentication? Check all that apply. 
+v There are potential privacy concerns.
+Biometrics are easy to share.
+v Biometric authentication is difficult or impossible to change if compromised.
+Biometric authentication is much slower than alternatives.
+Correct
+That's exactly right! If a biometric characteristic, like your fingerprints, is compromised, your option for changing your "password" is to use a different finger. This makes "password" changes limited. Other biometrics, like iris scans, can't be changed if compromised. If biometric authentication material isn't handled securely, then identifying information about the individual can leak or be stolen.
+Question 5
+In what way are U2F tokens more secure than OTP generators? 
+-They can't be cloned.
+They're cheaper.
+v They're resistant to phishing attacks.
+They're password-protected.
+Incorrect
+Not quite. Properly designed and implemented U2F tokens and OTP generators are both resistant to device cloning.
+Question 6
+What elements of a certificate are inspected when a certificate is verified? Check all that apply. 
+Certificate key size
+v "Not valid after" date
+v "Not valid before" date
+v Trust of the signatory CA
+Correct
+Yep! To verify a certificate, the period of validity must be checked, along with the signature of the signing certificate authority, to ensure that it's a trusted one.
+Question 7
+What is a CRL? 
+Caramel Raspberry Lemon
+Certified Recursive Listener
+Certificate Recording Language
+v Certificate Revocation List
+Correct
+Good job! CRL stands for "Certificate Revocation List." It's a list published by a CA, which contains certificates issued by the CA that are explicitly revoked, or made invalid.
+Question 8
+What are the names of similar entities that a Directory server organizes entities into? 
+Clusters
+v Organizational Units
+Groups
+Trees
+Correct
+Awesome! Directory servers have organizational units, or OUs, that are used to group similar entities.
+Question 9
+True or false: The Network Access Server handles the actual authentication in a RADIUS scheme.
+True
+v False
+Incorrect
+Not quite. The Network Access Server doesn't handle authentication decisions directly. Instead, it relates authentication messages between the client and the RADIUS server.
+Question 10
+True or false: Clients authenticate directly against the RADIUS server.
+True
+v False
+Correct
+Correct! Clients don't actually interact directly with the RADIUS server; the authentication is relayed via the Network Access Server.
+Question 11
+What does a Kerberos authentication server issue to a client that successfully authenticates? 
+A digital certificate
+v A ticket-granting ticket
+A master password
+An encryption key
+Correct
+Exactly! Once authenticated, a Kerberos client receives a ticket-granting ticket from the authentication server. This TGT can then be presented to the ticket-granting service in order to be granted access to a resource.
+Question 12
+What advantages does single sign-on offer? Check all that apply. 
+v It reduces the total number of credentials,
+v It reduces time spent authenticating.
+
+
+Correct
+You nailed it! SSO allows one set of credentials to be used to access various services across sites. This reduces the total number of credentials that might be otherwise needed. SSO authentication also issues an authentication token after a user authenticates using username and password. This token then automatically authenticates the user until the token expires. So, users don't need to reauthenticate multiple times throughout a work day.
+It enforces multifactor authentication.
+It provides encrypted authentication.
+Question 13
+What does OpenID provide? 
+Certificate signing
+Digital signatures
+Cryptographic hashing
+v Authentication delegation
+Correct
+Yep! OpenID allows authentication to be delegated to a third-party authentication service.
+
+-----
+
+Question 1
+What role does authorization play? 
+v It determines whether or not an entity has access to a resource.
+It verifies an entity's identity. 
+It verifies passwords. 
+It provides strong encryption.
+Correct
+Awesome! Authorization has to do with what resource a user or account is permitted or not permitted to access.
+Question 2
+What does OAuth provide? 
+Confidentiality
+Integrity
+v Access delegation
+Secure communications
+Correct
+Wohoo! OAuth is an open authorization protocol that allows account access to be delegated to third parties, without disclosing account credentials directly.
+Question 3
+How is auditing related to accounting? 
+They're not related.
+They're the same thing.
+Accounting is reviewing records, while auditing is recording access and usage.
+v Accounting is recording access and usage, while auditing is reviewing these records.
+Correct
+That's exactly right! Accounting involves recording resource and network access and usage. Auditing is reviewing these usage records by looking for any anomalies.
+
 321 Authorization and Accounting30мин
 322 AAA Security (Not Roadside Assistance)55мин
 
@@ -1466,6 +1596,207 @@ Permissions
 627 Information and FAQs about badges10мин
 628 6 практических упражнений
 629 Risk in the Workplace30мин
+Risk in the Workplace
+Total points 5
+Question 1
+What are some examples of security goals that you may have for an organization? Check all that apply. 
+v To prevent unauthorized access to customer credentials 
+To implement a strong password policy 
+v To protect customer data from unauthorized access 
+To deploy an Intrusion Prevention System
+Correct
+Great job! These are super important goals. Safeguards or systems should be implemented to help achieve them. It's important to distinguish between a discrete goal and the mechanisms or defense systems that help you to achieve these goals. Defenses on their own aren't goals, but they allow us to work towards these goals.
+Question 2
+Which of these would you consider high-value targets for a potential attacker? Check all that apply. 
+v Authentication databases 
+Logging server
+v Customer credit card information 
+Networked printers 
+Correct
+That's right! Customer credit card data is really valuable to attackers, since it can be a hot commodity in the shadier areas of the internet. The same goes for authentication databases, since this could provide attackers with usernames and passwords that might give them access to accounts on other websites and services.
+Question 3
+What's the purpose of a vulnerability scanner? 
+It blocks malicious traffic from entering your network.
+vv It detects vulnerabilities on your network and systems. 
+It protects your network from malware. 
+It fixes vulnerabilities on systems. 
+Correct
+Correct! A vulnerability scanner will scan and evaluate hosts on your network. It does this by looking for misconfigurations or vulnerabilities, then compiling a report with what it found.
+Question 4
+What are some restrictions that should apply to sensitive and confidential data? Check all that apply. 
+It can be transferred via email.
+It can be stored on removable media. 
+It can be accessed and stored on personal devices. 
+v It can be stored on encrypted media only. 
+Correct
+Nice work! Sensitive data should be treated with care so that an unauthorized third-party doesn't gain access. Ensuring this data is encrypted is an effective way to safeguard against unauthorized access.
+Question 5
+What's a privacy policy designed to guard against? 
+Eavesdropping on communications 
+Attackers stealing customer data 
+vv Misuse or abuse of sensitive data
+Denial-of-service attacks 
+Correct
+Yep! Privacy policies are meant to govern the access and use of sensitive data for authorized parties.
+-----
+Users
+Total points 2
+Question 1
+You're interested in using the services of a vendor company. How would you assess their security capabilities? Check all that apply. 
+v Ask them to provide any penetration testing or security assessment reports
+v Ask them to complete a questionnaire 
+Request full access to their systems to perform an assessment 
+Assume that they're using industry-standard solutions 
+Correct
+Great job! A security assessment questionnaire allows you to quickly and efficiently get a broad understanding of what security measures a vendor company has in place. If available, any reports detailing penetration testing results or security assessments would also be valuable.
+Question 2
+What's the goal of mandatory IT security training for an organization? Check all that apply. 
+To punish employees with poor security practices 
+v To build a culture that prioritizes security 
+To avoid the need for a security team
+v To educate employees on how to stay secure 
+Correct
+Exactly! IT security training for employees should be designed to educate them on how to keep themselves and the organization secure, and to encourage a culture of security.
+---
+Incident Handling
+Total points 2
+Question 1
+What's the first step in handling an incident? 
+v Detect the incident 
+Contain the incident 
+Recover from the incident
+Remove or eradicate of the incident 
+Correct
+Yep! Before you can take any action, you have to be aware that an incident occurred in the first place.
+Question 2
+How do you protect against a similar incident occurring again in the future? 
+Change all account passwords. 
+Cross your fingers and hope for the best!
+Update your antivirus definitions. 
+v Conduct a post-incident analysis.
+Correct
+Correct! By analyzing the incident and figuring out the details of how an attacker compromised a network or system, you can learn what vulnerabilities were exploited and take steps to close them.
+-----
+Creating a Company Culture for Security
+q1
+What characteristics are used to assess the severity of found vulnerabilities? Check all that apply.
+v Chance of exploitation
+Use of encryption or not
+v Type of access gained
+v Remotely exploitable or not
+Correct
+Wohoo! Things to consider when evaluating a vulnerability are how likely it is to be exploited, the type of access an attacker could get, and whether or not the vulnerability is exploitable remotely.
+q2
+Which of the following should be incorporated into a reasonably secure password policy that balances security with usability? Check all that apply.
+A requirement to use dictionary words
+v A password expiration time of 6-12 months
+v A complexity requirement of special characters and numbers
+v A length of at least 8 characters
+Correct
+Excellent job! A good balance of a strong but useable password is at least 8 characters, includes a mixture of punctuation characters, and rotates periodically, but not too frequently.
+q3
+What are the first two steps of incident handling and response? Check all that apply.
+v Incident detection
+v Incident containment
+Incident eradication or removal
+Incident recovery
+Correct
+Nice work! The first step is incident detection, because you need to be aware of an ongoing incident before you can react to it. Once you've detected the incident, you can begin containment to minimize the impact of the incident.
+q4
+Beyond restoring normal operations and data, what else should be done during the recovery phase?
+Assign blame for the incident
+Take systems offline
+Update documentation
+v Correct the underlying root cause
+q5
+A company wants to restrict access to sensitive data. Only those who have a "need to know" will have access to this data. Strong access controls need to be implemented. Which of these examples, that don't include user identification, are used for 2-factor authentication? Check all that apply.
+v U2F token
+Correct
+U2F token is one factor of authentication that does not include user identification.
+Common Access Card
+Smart card
+v Password
+q6
+____ is the practice of attempting to break into a system or network for the purpose of verification of systems in place.
+Vulnerability scanning
+v Penetration testing
+Security assessment
+Network probing
+q7
+When employees need to access sensitive data, they should do all of the following EXCEPT what?
+v A second signature
+Provide justification
+-Specify exact data needed
+Time limit
+"Privacy Policy"
+q8
+When considering third-party service providers to host sensitive data, you should conduct a vendor risk review. What actions does this include? Check all that apply.
+Ask vendor for a cost comparison.
+Talk to vendor employees.
+v Test the vendor's hardware or software.
+v Ask vendor to fill out a security questionnaire.
+Correct
+You got it! The questionnaire will cover various aspects of their security policies, procedures, and defenses in place.
+q9
+Management wants to build a culture where employees keep security in mind. Employees should be able to access information freely and provide feedback or suggestions without worry. Which of these are great ideas for this type of culture? Check all that apply.
+Bring your own device
+Posters promoting good security behavior
+?Desktop monitoring software
+v Designated mailing list
+Correct
+Awesome! A mailing list is where people can ask questions or report things related to security.
+q10
+When you are working on your laptop in a public area, always _____ when you get up to use the restroom.
+Ask permission to leave.
+v Lock your screen.
+Set up a VPN.
+Take your smartphone.
+Correct
+Well done! When you are working on your laptop in a public space, like a coffee shop, lock your screen when you get up to use the restroom.
+q11
+The incident response team found malware on several user workstations. Trying to remove the malware infection is becoming time consuming. There is important data on the workstations. Which of these actions will recover the workstations back to a malware-free state? Check all that apply.
+v Restore file from backup
+Correct
+Right on! After rebuilding the machine, user files can be restored from a backup store.
+-Replace the hard drive
+Replace network cable
+v Rebuild the machine
+Correct
+Right on! Affected systems can be restored to a known good configuration by rebuilding the machine.
+"Incident Response and Recovery"
+q12
+What are some behaviors you should encourage in order to build a security-conscious culture? Check all that apply.
+Shaming people who haven't done a good job of ensuring your company's security
+v Asking security-related questions
+v Locking your screen
+v Checking website URLs when authenticating
+Correct
+Great job! Encouraging people to lock their screens when they walk away from their computer is a very important behavior to reinforce. The same goes for checking the address of the website they're authenticating to, to make sure it's not a fake phishing site. It's also important that people are comfortable asking security questions when they're unsure.
+q13
+Which of these are bad security habits commonly seen amongst employees in the workplace? Check all that apply.
+v Password on a post-it note
+Correct
+Great work! Writing down passwords on a post-it is a bad security habit.
+v Leave laptop logged in and unattended
+Correct
+Great work! Leaving a laptop logged in and unattended is a bad security habit.
+Lock desktop screen
+Log out of website session
+q14
+Google provides free _____, which is a good starting point when assessing third-party vendors.
+Mobile phone services
+Business apps
+Cloud storage
+v Vendor security assessment questionnaires
+Correct
+Woohoo! Google's Vendor Security Assessment Questionnaires are a good starting point to design your own vendor security assessment questionnaire.
+q15
+After a known good backup has been restored and the known vulnerabilities have been closed, systems should be thoroughly _____.
+backed up
+baselined
+v tested
+removed
+
 630 Users30мин
 631 Incident Handling30мин
 632 Creating a Company Culture for Security55мин

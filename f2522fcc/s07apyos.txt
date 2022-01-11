@@ -1,0 +1,1017 @@
+101 WEEK1 Getting Your Python On
+In this module, you’ll learn about the different types of operating systems, and how you can get your python code ready to interact with the operating system. We’ll learn about getting your environment set up and installing additional Python modules that will help you along the way. We’ll rundown interpreted versus compiled language, and how they differ from each other. We’ll dive into the benefits of automation, and point out common pitfalls so you can avoid them. Finally, we’ll learn about Qwiklabs, which will be used for graded assessments.
+102 Course Introduction6m
+103 Intro to Module 1: Getting Your Python On2m
+104 Getting Familiar with the Operating System6m
+Operating system
+The software that manages everything that goes on in the computer
+Windows
+MacOS
+Linux
+Ubuntu
+Debian
+RedHat
+Since its cross platform, we can use the same Python code to get to our goal on any operating system — whether the goal is opening files, processing text, or managing running processes.
+
+105 Getting Your Computer Ready for Python4m
+Getting Your Computer Ready for Python
+python --version
+Python Standard Library
+PyPI
+pip
+
+
+
+
+
+106 Setting up Your Environment on Windows (Optional)4m
+107 Setting up Your Environment on MacOS (Optional)5m
+108 Setting up Your Environment on Linux (Optional)8m
+109 Interpreted vs. Compiled Languages2m
+C
+C++
+Go
+Rust
+
+Python
+Ruby
+JavaScript
+Bash
+PowerShell
+
+Java
+C#
+
+110 How to Run a Python Script6m
+How to Run a Python Script
+
+user@ubuntu:~$ python3
+Python 3.7.3 (default, Apr 3 2019, 05:39:12)[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information. 
+>> "hello " * 10
+'hello hello hello hello hello hello hello hello hello hello '
+>> exit()
+hello_world.py
+python3 hello_world.py
+
+shebang
+#!/usr/bin/env python
+/dev/python
+
+chmod +x hello_world.py
+./hello_world.py
+
+111 Your Own Python Modules5m
+Code reuse
+requests
+
+112 What is an IDE?4m
+IDEs
+Integrated
+Development
+environment
+Syntax highlighting
+
+Vim
+Code completion
+
+Atom
+Notepad
+
+TextEdit
+nano
+
+Windows
+MacOs
+Linux
+
+Atom
+Notepad++
+SublimeText
+Eclipse
+PyCharm
+
+Vim
+Emacs
+Nano
+
+113 Benefits of Automation4m
+Scalability
+When more work is added to a system, the system can do whatever it needs to complete the work
+
+Centralizing
+mistakes
+
+114 Pitfalls of Automation6m
+Is the time and the effort it'll take to write the script worth the potential automation benefits?
+[time_to_automate < (time_to_perform * amount_of_times_done)]
+
+1 hour
+
+5 minutes X day 60 minutes X 12 days
+60/5 = 12
+
+10 hours
+600/5 = 120 days
+120/5 = 24 weeks
+
+Pareto Principle
+20% of the system administration tasks that you perform are responsible for 80% of your work
+
+Bit-rot
+The process of software falling out of step with the environment
+
+Restore Data Day
+Forensic value
+
+115 Practical Automation Example7m
+shutil
+>> import shutil
+>> du = shutil.disk_usage("/")
+>> print(du)
+
+usage(total=125487923200, used=11327320064, free=107742113792)
+
+import psutil 
+psutil.cpu_percent(0.1)
+
+#!/usr/bin/env python3 import shutil import psutil
+
+def check disk usage(disk):
+  du = shutil.disk usage(disk) 
+  free = du.free / du.total * 100 
+  return free > 20
+
+def checkcpu usage():
+  usage = psutil.cpu percent(1) 
+  return usage < 75
+
+user@ubuntu:$ chmod +x health_checks.py
+user@ubuntu:$ ./health_checks.py
+Everything Is OK!
+
+116 What is Qwiklabs?3m
+Virtual machine (VM)
+A computer simulated through software
+
+A virtual machine, or VM, is a computer simulated through software. It simulates all the necessary hardware to the operating system that's running inside the machine.
+
+117 Module 1 Wrap Up: Getting Your Python On1m
+
+118 Welcome to the Course10m
+119 Pointers for Getting Your Environment Setup10m
+120 Setting up Your Environment10m
+121 Is it worth the time?10m
+122 How to Log in to Qwiklabs10m
+123 Practice Quiz: Getting Ready for Python25m
+Practice Quiz: Getting Ready for Python
+Total points 5
+Question 1
+Which of the following is the most modern, up-to-date version of Python?
+Python 3
+Python 2
+Python 4
+Anaconda
+Correct
+Great job! Python 3 is the latest version of Python, with Python 3.8.0 being released on October 14, 2019.
+Question 2
+Which of the following operating systems is compatible with Python 3?
+Redhat Linux
+Microsoft Windows
+Apple MacOS
+All of the above
+Correct
+Nice work! Python is a cross-platform language. You can use it on Windows, macOS, Linux, and even on lesser-known Unix variants like FreeBSD.
+Question 3
+Which of the following operating systems does not run on a Linux kernel?
+Android
+Chrome OS
+Mac OS
+Ubuntu
+Correct
+Right on! Mac OS is a proprietary operating system designed by Apple and uses a proprietary kernel based on BSD.
+Question 4
+If we want to check to see  what version of Python is installed, what would we type into the command line? Select all that apply.
+python -V
+Correct
+Awesome! Typing python -V (note the capital V) at the command line will tell you if Python is currently installed and if so, what version.
+python --version
+Correct
+Awesome! Typing python --version (note the double dashes) at the command line will tell you if Python is currently installed and if so, what version.
+python --help
+python -v
+Question 5
+What is pip an example of?
+A programming language
+An operating system
+A repository of Python modules
+A Python package manager
+Correct
+Nice work! pip is a command line tool commonly used as the main method of managing packages in Python.
+
+124 Practice Quiz: Running Python Locally25m
+Practice Quiz: Running Python Locally
+Total points 5
+Question 1
+When your IDE automatically creates an indent for you, this is known as what?
+Interpreted language
+Syntax highlighting
+Code completion
+Code reuse
+Correct
+Nicely done! Code completion is an IDE feature that takes educated guesses about what you might be trying to type next, and offers suggestions to complete it for you.
+Question 2
+Can you identify the error in the following code?
+#!/usr/bin/env python3
+import numpy as np
+def numpyArray():
+    x = np.array([[1, 2, 3], [4, 5, 6]], np.int32)
+    y = numpy.array([[3, 6, 2], [9, 12, 8]], np.int32)
+    return x*y
+print(numpyArray())
+The y variable is not calling the numpy module properly.
+numpy is not imported correctly because as is used.
+The function is not indented properly.
+The shebang line is not necessary.
+Incorrect
+Not quite. The function here is indented properly: one indentation level below the function start.
+Question 3
+Which type of programming language is read and converted to machine code before runtime, allowing for more efficient code?
+Object-oriented language
+Compiled language
+Interpreted language
+Intermediate code
+Correct
+Awesome! A compiled language is translated into code readable by the target machine during development using a compiler.
+Question 4
+Which of the following is not an IDE or code editor?
+Eclipse
+pip
+Atom
+PyCharm
+Correct
+Right on! The package manager pip is used in Python to install packages from repositories such as PyPI.
+Question 5
+What does the PATH variable do?
+Tells the operating system where to find executables
+Returns the current working directory
+Holds the command line arguments of your Python program in a list
+Tells the operating system where to cache frequently used files
+Correct
+Nice work! The PATH variable tells the operating system where to find executables.
+
+125 Practice Quiz: Automation25m
+Practice Quiz: Automation
+Total points 5
+Question 1
+At a manufacturing plant, an employee spends several minutes each hour noting uptime and downtime for each of the machines they are running. Which of the following ideas would best automate this process?
+Provide a tablet computer to the employee to record uptime and downtime
+Hire an extra employee to track uptime and downtime for each machine
+Add an analog Internet of Things (IoT) module to each machine, in order to detect their power states, and write a script that records uptime and downtime, reporting hourly
+vv Add an analog IoT module to each machine, in order to detect their power states, and attach lights that change color according to the power state of the machine
+Correct
+Way to go! This is a practical application of using Python (and some extra hardware, in this case) to automate a task, freeing up a human's time. The solutions can be complex if the return in saved human time warrants it.
+Question 2
+One important aspect of automation is forensic value. Which of the following statements describes this term correctly?
+v It is important for automated processes to leave extensive logs so when errors occur, they can be properly investigated.
+It's important to have staff trained on how automation processes work so they can be maintained and fixed when they fail.
+It's important to organize logs in a way that makes debugging easier.
+It's important to remember that 20% of our tasks as system administrators is responsible for 80% of our total workload.
+Correct
+Right on! Forensic value, in relation to automation, is the value we get while debugging from properly logging every action our automation scripts take.
+Question 3
+An employee at a technical support company is required to collate reports into a single file and send that file via email three times a day, five days a week for one month, on top of his other duties. It takes him about 15 minutes each time. He has discovered a way to automate the process, but it will take him at least 10 hours to code the automation script. Which of the following equations will help them decide whether it's worth automating the process?
+if [10 hours to automate > (15 minutes * 60 times per month)] then automate
+v if [10 hours to automate < (15 minutes * 60 times per month)] then automate
+if [(10 hours to automate + 15 minutes) > 60 times per month)] then automate
+[(10 hours to automate / 60 times per month) < 15 minutes]
+Correct
+Awesome! With 10 hours to automate, the employee will start saving time before the month is over.
+Question 4
+A company is looking at automating one of their internal processes and wants to determine if automating a process would save labor time this year. The company uses the formula [time_to_automate < (time_to_perform * amount_of_times_done) to decide whether automation is worthwhile. The process normally takes about 10 minutes every week. The automation process itself will take 40 hours total to complete. Using the formula, how many weeks will it be before the company starts saving time on the process?
+-240 weeks
+Correct
+Right on! It's safe to say that the company won't find it worth it's time to automate.
+Question 5
+Which of the following are valid methods to prevent silent automation errors? (Check all that apply)
+v Email notifications about errors
+v Internal issue tracker entries
+Correct
+Nice work! Internal issue tracker entries are created as part of reporting on errors in our automation script in this lesson.
+Constant human oversight
+v Regular consistency checks
+Correct
+Awesome! Automated consistency checks, such as hash checks on backups, can help identify problems ahead of time.
+
+201 WEEK2 Managing Files with Python
+In this module, you’ll learn about reading and writing to files and the commands that will enable you to do this. We’ll learn the importance of managing files and how we can navigate through different directories. We’ll understand how to work with files and how there is a layer of abstraction between Python and the operating system. Finally, we’ll dive into learning about CSV files and how to best utilize them.
+202 Programming with Files3m
+Absolute path
+Relative paths
+
+203 Reading Files5m
+Reading Files
+File descriptor
+A token, generated by the OS, that allows programs to do more operations with the file
+
+204 Iterating through Files4m
+with open("spider.txt") as file: 
+  for line in file:
+    print(line. strip().upper())
+
+205 Writing Files3m
+>>> with open("novel.txt", "w") as file:
+...   file.write("it was a dark and stormy night")
+
+with open("novel.txt") as file: 
+  for line in file:
+    print(line. strip().upper())
+
+>>> with open("novel.txt") as file:
+...   for line in file:
+...     print(line. strip().upper())
+...
+IT WAS A DARK AND STORMY NIGHT
+
+Modes
+r read only
+w write
+a append
+r+ read-write
+
+If you open a file for writing and the file already exists, the old contents will be deleted as soon as the file is opened.
+
+206 Working with Files4m
+Paths can be different across different operating systems. So, whenever we're using an absolute path in our code, we need to make sure we can provide alternatives for the platforms we want to support.
+
+>>> import os
+>>> os.remove("novel.txt")
+>>> os.remove("novel.txt")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'novel.txt'
+>>>
+
+>>> os.rename("first_draft.txt", "finished_masterpiece.txt")
+>>> os.listdir()
+>>> os.path.exists("finished_masterpiece.txt")
+True
+
+207 More File Information4m
+with open("novel.txt", "w") as file:
+  file.write("it was a dark and stormy night")
+
+>>> os.path.getsize("novel.txt")
+30
+
+>>> os.path.getmtime("novel.txt")
+1641631476.4068828
+
+>>> import datetime
+>>> timestamp = os.path.getmtime("novel.txt")
+>>> datetime.datetime.fromtimestamp(timestamp)
+datetime.datetime(2022, 1, 8, 11, 44, 36, 406883)
+
+>>> os.path.abspath("novel.txt")
+'C:\\Users\\User\\novel.txt'
+
+208 Directories5m
+>>> import os
+>>> os.path.abspath("novel.txt")
+'C:\\Users\\User\\novel.txt'
+>>> print(os.getcwd())
+C:\Users\User
+>>> os.mkdir("new_dir")
+>>> os.chdir("new_dir")
+>>> os.getcwd()
+'C:\\Users\\User\\new_dir'
+>>>
+>>> os.mkdir("newer_dir")
+>>> os.rmdir("newer_dir")
+>>>
+
+>>> os.listdir("site")
+['favicon.ico', 'images', 'index.html']
+
+dir = "site"
+for name in os.listdir(dir):
+  fullname = os.path.join(dir, name)
+  if os.path.isdir(fullname):
+    print("{} is a directory".format(fullname))
+  else:
+    print("{} is a file".format(fullname))
+
+site\favicon.ico is a file
+site\images is a directory
+site\index.html is a file
+
+Linux and MacOS forward slash (/)
+Windows backslash (\)
+
+209 What is a CSV file?2m
+Parsing
+Analyzing a file's content to correctly structure the data
+
+CSV Comma Separated Values
+localhost:~# df /
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/root              5120000   2417716   2702284  47% /
+
+210 Reading CSV Files3m
+import csv
+
+f = open("csv_file.txt") csv_f = csv.reader(f) 
+for row in csv_f:
+  name, phone, role = row print("Name: {}, Phone: {}, Role {}".format(name, phone, role))
+
+211 Generating CSV2m
+hosts = [["workstation.local", "192.168.25.46"], ["Webserver.cloud", "10.2.5.6"]]
+with open('hosts.csv', 'w') as hosts_csv: 
+  writer = csv.writer(hosts_csv) writer,writerows(hosts)
+
+212 Reading and Writing CSV Files with Dictionaries4m
+name,version,status,users 
+MailTree,5.34,production,324 
+CalDoor,1.25.1,beta,22 Chatty Chicken,0.34,alpha,4
+
+with open('software.csv') as software: 
+  reader = csv.DictReader(software) 
+  for row in reader:
+    print(("{} has {} users").format(row["name"], row["users"]))|
+
+MailTree has 324 users 
+CalDoor has 22 users 
+Chatty Chicken has 4 users
+
+users = [ {"name": "Sol Mansi", "username": "solm", "department": "IT infrastructure"}, {"name": "Lio Nelson", "username": "lion", "department": "User Experience Research"}, {"name": "Charlie Grey", "username": "greyc", "department": "Development"}] 
+keys = ["name", "username", "department"] 
+with open('by_department.csv', 'w') as by_department:
+  writer = csv.DictWriter(by_department, fieldnames=keys) 
+  writer,writeheader() 
+  writer.writerows(users)
+
+name,username,department
+Sol Mansi,solm,IT infrastructure
+Lio Nelson,lion,User Experience Research
+Charlie Grey,greyc,Development
+
+213 Module 2 Wrap Up: Managing Files with Python1m
+214 Reading and Writing Files Cheat-Sheet10m
+215 Files and Directories Cheat-Sheet10m
+216 CSV Files Cheat Sheet10m
+217 Practice Quiz: Managing Files & Directories25m
+Practice Quiz: Managing Files & Directories
+Total points 5
+Question 1
+The create_python_script function creates a new python script in the current working directory, adds the line of comments to it declared  by the 'comments' variable, and returns the size of the new file. Fill in the gaps to create a script called "program.py".
+import os
+def create_python_script(filename):
+  comments = "# Start of a new Python program"
+  with open(filename, 'w') as file:
+    file.write(comments + '\n')
+  filesize = os.path.getsize(filename)
+  return(filesize)
+print(create_python_script("program.py"))
+Reset
+Incorrect
+Not quite, create_python_script("program.py") returned 32,
+should be 31.
+Question 2
+The new_directory function creates a new directory inside the current working directory, then creates a new empty file inside the new directory, and returns the list of files in that directory. Fill in the gaps to create a file "script.py" in the directory "PythonPrograms". 
+import os
+def new_directory(directory, filename):
+  # Before creating a new directory, check to see if it already exists
+  if os.path.isdir(directory) == False:
+    os.mkdir(directory)
+  # Create the new file inside of the new directory
+  os.chdir(directory)
+  with open (filename, 'w') as file:
+Reset
+Correct
+Well done, you! Working with files and directories can be a
+little tricky, and you're getting the hang of it!
+Question 3
+Which of the following methods from the os module will create a new directory?
+path.isdir()
+listdir()
+v mkdir()
+chdir()
+Correct
+Right on! os.mkdir() will create a new directory with the name provided as a string parameter.
+Question 4
+The file_date function creates a new file in the current working directory, checks the date that the file was modified, and returns just the date portion of the timestamp in the format of yyyy-mm-dd. Fill in the gaps to create a file called "newfile.txt" and check the date that it was modified.
+import os
+import datetime
+def file_date(filename):
+  # Create the file in the current directory
+  with open(filename, 'w') as file:
+    pass
+  timestamp = os.path.getmtime(filename)
+  # Convert the timestamp into a readable format, then into a string
+  file_date = datetime.datetime.fromtimestamp(timestamp)
+Reset
+Correct
+Way to go! You remembered the commands to convert timestamps
+and format strings, to get the results that were requested.
+Question 5
+The parent_directory function returns the name of the directory that's located just above the current working directory. Remember that '..' is a relative path alias that means "go up to the parent directory". Fill in the gaps to complete this function.
+import os
+def parent_directory():
+  # Create a relative path to the parent 
+  # of the current working directory 
+  relative_parent = os.path.join('..', '')
+  # Return the absolute path of the parent directory
+  return os.path.abspath(relative_parent)
+print(parent_directory())
+Reset
+Correct
+Excellent! You made all the right moves to print the path of
+the parent directory!
+
+218 Practice Quiz: Reading & Writing CSV Files25m
+Practice Quiz: Reading & Writing CSV Files
+Total points 5
+Question 1
+We're working with a list of flowers and some information about each one. The create_file function writes this information to a CSV file. The contents_of_file function reads this file into records and returns the information in a nicely formatted block. Fill in the gaps of the contents_of_file function to turn the data in the CSV file into a dictionary using DictReader.
+import os
+import csv
+# Create a file with data in it
+def create_file(filename):
+  with open(filename, "w") as file:
+    file.write("name,color,type\n")
+    file.write("carnation,pink,annual\n")
+    file.write("daffodil,yellow,perennial\n")
+    file.write("iris,blue,perennial\n")
+Reset
+Incorrect
+Something went wrong! Contact Coursera Support about this question!
+Question 2
+ Using the CSV file of flowers again, fill in the gaps of the contents_of_file function to process the data without turning it into a dictionary. How do you skip over the header record with the field names?
+import os
+import csv
+# Create a file with data in it
+def create_file(filename):
+  with open(filename, "w") as file:
+    file.write("name,color,type\n")
+    file.write("carnation,pink,annual\n")
+    file.write("daffodil,yellow,perennial\n")
+    file.write("iris,blue,perennial\n")
+Reset
+Correct
+You nailed it! Everything's coming up roses (pardon the
+pun!)
+Question 3
+In order to use the writerows() function of DictWriter() to write a list of dictionaries to each line of a CSV file, what steps should we take? (Check all that apply)
+v Create an instance of the DictWriter() class
+Correct
+Excellent! We have to create a DictWriter() object instance to work with, and pass to it the fieldnames parameter defined as a list of keys.
+v Write the fieldnames parameter into the first row using writeheader()
+Correct
+Nice work! The non-optional fieldnames parameter list values should be written to the first row.
+v Open the csv file using with open
+Correct
+Good call! The CSV file has to be open before we can write to it.
+Import the OS module
+Question 4
+Which of the following is true about unpacking values into variables when reading rows of a CSV file? (Check all that apply)
+We need the same amount of variables as there are columns of data in the CSV 
+Correct
+Awesome! We need to have the exact same amount of variables on the left side of the equals sign as the length of the sequence on the right side when unpacking rows into individual variables.
+Rows can be read using both csv.reader and csv.DictReader
+Correct
+Right on! Although they read the CSV rows into different datatypes, both csv.reader or csv.DictReader can be used to parse CSV files.
+An instance of the reader class must be created first
+Correct
+Nice job! We have to create an instance of the reader class we are using before we can parse the CSV file.
+The CSV file does not have to be explicitly opened
+Question 5
+If we are analyzing a file's contents to correctly structure its data, what action are we performing on the file?
+Writing
+Appending
+vv Parsing
+Reading
+Correct
+Great work! Parsing a file means analyzing its contents to correctly structure the data. As long as we know what the data is, we can organize it in a way our script can use effectively.
+
+301 WEEK3 Regular Expressions
+In this module, you’ll learn about what a regular expression is and why you would use one. We’ll dive into the basics of regular expressions and give examples of wildcards, repetition qualifiers, escapare characters, and more. Next up, we’ll explore advanced regular expressions and deep dive on repetition qualifiers. You’ll tackle new exercises like capturing groups and extracting PIDs using regexes. Finally, we’ll provide a cheat sheet to serve as your go-to guide for regular expressions.
+302 Intro to Module 3: Regular Expressions1m
+303 What are regular expressions?2m
+304 Why use regular expressions?2m
+re.search()
+
+localhost:~# python3
+Python 3.8.3 (default, May 15 2020, 01:53:50)
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> log = "July 31 07:51:48 mycomputer bad_process[12345]: ERROR"
+>>> log
+'July 31 07:51:48 mycomputer bad_process[12345]: ERROR'
+
+>>> index = log.index("[")
+>>> print(log[index+1:index+6])
+12345
+
+>>> import re
+>>> regex = r"\[(\d+)\]"
+>>> result = re.search(regex, log)
+>>> print(result)
+<re.Match object; span=(39, 46), match='[12345]'>
+>>> print(result[1])
+12345
+
+
+
+
+
+305 Basic Matching with grep5m
+306 Simple Matching in Python4m
+307 Wildcards and Character Classes6m
+308 Repetition Qualifiers5m
+309 Escaping Characters4m
+310 Regular Expressions in Action5m
+311 Capturing Groups5m
+312 More on Repetition Qualifiers4m
+313 Extracting a PID Using regexes in Python4m
+314 Splitting and Replacing5m
+315 Module 3 Wrap Up: Regular Expressions1m
+316 Regular Expressions Cheat-Sheet10m
+317 Advanced Regular Expressions Cheat-Sheet10m
+
+
+318 Practice Quiz: Regular Expressions25m
+Practice Quiz: Regular Expressions
+Total points 5
+Question 1
+When using regular expressions, which of the following expressions uses a reserved character that can represent any single character?
+re.findall(f*n, text)
+re.findall(fu$, text)
+vv re.findall(f.n, text)
+re.findall(^un, text)
+Correct
+Nailed it! The dot (.) represents any single character.
+Question 2
+Which of the following is NOT a function of the Python regex module?
+vv re.grep()
+re.findall()
+re.search()
+re.match()
+Correct
+Keep it up! The grep command utilizes regular expressions on Linux, but is not a part of the standard re Python module.
+Question 3
+The circumflex [^] and the dollar sign [$] are anchor characters. What do these anchor characters do in regex?
+Match the start and end of a word.
+vv Match the start and end of a line
+Exclude everything between two anchor characters
+Represent any number and any letter character, respectively
+Correct
+Nailed it! the circumflex and the dollar sign specifically match the start and end of a line.
+Question 4
+When using regex, some characters represent particular types of characters. Some examples are the dollar sign, the circumflex, and the dot wildcard. What are these characters collectively known as?
+vv Special characters
+Anchor characters
+Literal characters
+Wildcard characters
+Correct
+Awesome! Special characters, sometimes called meta characters, give special meaning to the regular expression search syntax.
+Question 5
+What is grep?
+An operating system
+A command for parsing strings in Python
+v A command-line regex tool
+A type of special character
+Correct
+Right on! The grep command is used to scan files for a string of characters occurring that fits a specified sequence.
+
+319 Practice Quiz: Basic Regular Expressions30m
+
+
+320 Practice Quiz: Advanced Regular Expressions25m
+
+401 WEEK4 Managing Data and Processes
+In this module, we’ll learn about reading and writing to data files based on an interaction with the user. Along the way, we’ll dive into standard streams, environment variables, and command line arguments. Next, we’ll jump into Python subprocesses, including system commands and how they can be used. We’ll review how to obtain output from a system command, and dive into subprocess management, including how to check exit values and manipulate the normal versus error exit values. Finally, we’ll rundown processing log files, and will cover what a log file is, how to filter log files using regular expressions, and how to understand the output captured from log files.
+402 SHOW ALL SYLLABUSSHOW ALL
+403 Intro to Module 4: Managing Data and Processes1m
+404 Reading Data interactively3m
+Reading Data interactively
+
+localhost:~# cat hello.
+hello.c   hello.js  hello.py
+localhost:~# cat hello.py
+#!/usr/bin/env python3
+ 
+name = input("Please enter your name: ")
+print("Hello, " + name)
+ 
+localhost:~# chmod +x hello.py
+localhost:~# ./hello.py
+Please enter your name: mm
+Hello, mm
+
+--
+
+#!/usr/bin/env python3
+ 
+def to_seconds(hours, minutes, seconds):
+  return hours*3600+minutes*60+seconds
+ 
+print("Welcome to this time converter")
+ 
+cont = "y"
+while(cont.lower() == "y"):
+  hours = int(input("Enter the number of hours: "))
+  minutes = int(input("Enter the number of minutes: "))
+  seconds = int(input("Enter the number of seconds: "))
+ 
+  print("That's {} seconds".format(to_seconds(hours, minutes, seconds)))
+  print()
+  cont = input("Do you want to do another conversion? [y to continue] ")
+ 
+print("Good bye!")
+
+localhost:~# ./seconds.py
+Welcome to this time converter
+Enter the number of hours: 1
+Enter the number of minutes: 2
+Enter the number of seconds: 3
+That's 3723 seconds
+ 
+Do you want to do another conversion? [y to continue]
+Good bye!
+localhost:~#
+
+
+405 Standard Streams4m
+I/O streams
+The basic mechanism for performing input and output operations in your programs
+STDIN
+STDOUT
+STDERR
+
+406 Environment Variables4m
+Shell
+A command-line interface used to interact with your operating system
+
+Python programs get executed inside a shell command-line environment.
+
+The variables set in that environment are another source of information that we can use in our scripts.
+
+
+localhost:~# ls -z
+ls: unrecognized option: z
+BusyBox v1.31.1 () multi-call binary.
+
+Environment Variables
+localhost:~# env
+SHLVL=3
+HOME=/root
+OLDPWD=/
+PAGER=less
+PS1=\h:\w\$
+TERM=linux
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PWD=/root
+TZ=UTC-03:00
+
+localhost:~# echo $TZ
+UTC-03:00
+
+localhost:~# chmod +x variables.py
+localhost:~# cat variables.py
+#!/usr/bin/env python3
+ 
+import os
+ 
+print("HOME: " + os.environ.get("HOME", ""))
+print("SHELL: " + os.environ.get("SHELL", ""))
+print("FRUIT: " + os.environ.get("FRUIT", ""))
+localhost:~# ./variables.py
+HOME: /root
+SHELL:
+FRUIT:
+
+localhost:~# export FRUIT=Pinapple
+localhost:~# ./variables.py
+HOME: /root
+SHELL:
+FRUIT: Pinapple
+
+407 Command-Line Arguments and Exit Status6m
+Command-line arguments
+Parameters that are passed to a program when it's started
+Exit status
+The value returned by a program to the shell
+
+localhost:~# chmod +x parameters.py
+localhost:~# ./parameters.py
+['./parameters.py']
+localhost:~# ./parameters.py one two three
+['./parameters.py', 'one', 'two', 'three']
+localhost:~# cat parameters.py
+#!/usr/bin/env python3
+ 
+import sys
+print(sys.argv)
+
+localhost:~# cat file_create.py
+#!/usr/bin/env python3
+ 
+import os
+import sys
+ 
+filename=sys.argv[1]
+if not os.path.exists(filename) :
+  with open(filename, "w") as f:
+    f.write("New file created\n")
+else:
+  print("Error, the file {} already exists!".format(filename) )
+  sys.exit(1)
+
+localhost:~# ./file_create.py example
+localhost:~# echo $?
+0
+localhost:~# cat example
+New file created
+localhost:~# ./file_create.py example
+Error, the file example already exists!
+localhost:~# echo $?
+1
+
+408 Running System Commands in Python5m
+Running System Commands in Python
+
+import subprocess
+subprocess.run(["date"])
+
+Sat Jan  8 15:59:52 UTC 2022
+CompletedProcess(args=['date'], returncode=0)
+
+>>> subprocess.run(["sleep", "10"])
+CompletedProcess(args=['sleep', '10'], returncode=0)
+
+>>> result = subprocess.run(["ls", "this_file_does_not_exist"])
+ls: this_file_does_not_exist: No such file or directory
+>>> print(result)
+CompletedProcess(args=['ls', 'this_file_does_not_exist'], returncode=1)
+>>> print(result.returncode)
+1
+
+
+>>> subprocess.run(["ping", "8.8.8.8"])
+
+Обмен пакетами с 8.8.8.8 по с 32 байтами данных:
+Ответ от 8.8.8.8: число байт=32 время=7мс TTL=109
+
+Obtaining the Output of a System Command
+
+
+>>> result = subprocess.run(["ping", "8.8.8.8"], capture_output=True)
+>>> print(result.stdout.decode('cp866'))
+
+Обмен пакетами с 8.8.8.8 по с 32 байтами данных:
+
+>>> result = subprocess.run(["ping", "8.8.8.8"], capture_output=True)
+>>> print(result.stdout)
+b'PING 8.8.8.8 (8.8.8.8): 56 data bytes\n'
+>>> print(result.stdout.decode().split())
+['PING', '8.8.8.8', '(8.8.8.8):', '56', 'data', 'bytes']
+
+
+
+>>> result = subprocess.run(["ls"], capture_output=True)
+>>> print(result)
+CompletedProcess(args=['ls'], returncode=0, stdout=b'bench.py\nexample\nfile_cre
+ate.py\nhello.c\nhello.js\nhello.py\nparameters.py\nreadme.txt\nseconds.py\nvari
+ables.py\n', stderr=b'')
+>>> print(result.stdout.decode())
+bench.py
+example
+file_create.py
+hello.c
+hello.js
+hello.py
+parameters.py
+readme.txt
+seconds.py
+variables.py
+
+409 Obtaining the Output of a System Command5m
+>>> result = subprocess.run(["rm", "not_exist"], capture_output=True)
+>>> print(result.stdout)
+b''
+>>> print(result.stderr)
+b"rm: can't remove 'not_exist': No such file or directory\n"
+
+410 Advanced Subprocess Management5m
+If we're automating a one-off, well-defined task where developing a solution quickly is the biggest requirement, then using system commands and subprocesses can help a lot.
+
+import os import subprocess
+
+my_env = os.environ.copy()
+my_env["PATH"] = os.pathsep.join(["/opt/myapp/", my_env["PATH"]]) 
+result = subprocess.run(["myapp"], env=my_env)
+
+411 What are log files?1m
+
+412 Filtering Log Files with Regular Expressions4m
+#!/usr/bin/env python3
+import sys
+import re
+
+# logfile = sys.argv[1] 
+epath = "/content/drive/MyDrive/B06courses/"
+logfile = epath + 'e07blog.txt'
+with open(logfile) as f: 
+  for line in f:
+    if not "CRON" in line:
+      continue
+    # Jul 6 14:01:23 computer.name CRON[29440]: USER (good_user)
+    pattern = r'USER \((\w+)\)$'
+    match = re.search(pattern, line)
+    print(match[1])
+
+#!/usr/bin/env python3
+import re
+def show_time_of_pid(line):
+  pattern = r'^(.+) comp.+\[(\d+)\]'
+  result = re.search(pattern, line)
+  return f'{result[1]} pid:{result[2]}'
+
+print(show_time_of_pid("Jul 6 14:01:23 computer.name CRON[29440]: USER (good_user)")) # Jul 6 14:01:23 pid:29440
+
+print(show_time_of_pid("Jul 6 14:02:08 computer.name jam_tag=psim[29187]: (UUID:006)")) # Jul 6 14:02:08 pid:29187
+
+print(show_time_of_pid("Jul 6 14:02:09 computer.name jam_tag=psim[29187]: (UUID:007)")) # Jul 6 14:02:09 pid:29187
+
+413 Making Sense out of the Data4m
+
+
+
+414 Module 4 Wrap Up: Managing Data and Processes1m
+415 More About Input Functions10m
+416 Python Subprocesses Cheat Sheet10m
+417 Practice Quiz: Data Streams25m
+418 Practice Quiz: Python Subprocesses25m
+419 Practice Quiz: Processing Log Files25m
+
+501 WEEK5 Testing in Python
+In this module, you’ll learn how to create tests in Python. We’ll cover what testing is all about and dive into the differences between manual versus automated testing. Next, we’ll explore what unit tests are intended to do and how to write them. Then, we’ll learn about other test concepts like black box versus white box tests and how test-driven development can frame how you design and write your code. Finally, you’ll learn about errors and exceptions, and how to combat them.
+502 Intro to Module 5: Testing in Python1m
+503 What is testing?2m
+504 Manual Testing and Automated Testing3m
+505 Unit Tests3m
+506 Writing Unit Tests in Python5m
+507 Edge Cases3m
+508 Additional Test Cases4m
+509 Black Box vs. White Box3m
+510 Other Test Types4m
+511 Test-Driven Development2m
+512 The Try-Except Construct3m
+513 Raising Errors7m
+514 Testing for Expected Errors2m
+515 Module 5 Wrap Up: Testing in Python1m
+516 Unit Test Cheat-Sheet10m
+517 Help with Jupyter Notebooks10m
+518 More About Tests10m
+519 Handling Errors Cheat-Sheet10m
+520 Practice Quiz: Simple Tests25m
+521 Practice Quiz: Other Test Concepts25m
+
+
+601 WEEK6 Bash Scripting
+In this module, you’ll be exposed to what the Linux OS has to offer and you'll learn about Bash scripting. We’ll go over basic Linux commands and explore the many processes Linux has to offer, including a key concept called redirection. We’ll then deep dive into creating bash scripts using variables and globs. Finally, we’ll learn about advanced bash concepts and develop an understanding of when to use bash versus Python.
+602 Intro to Module 6: Bash Scripting2m
+603 Basic Linux Commands6m
+604 Redirecting Streams4m
+605 Pipes and Pipelines6m
+606 Signalling Processes5m
+607 Creating Bash Scripts3m
+608 Using Variables and Globs4m
+609 Conditional Execution in Bash5m
+610 While Loops in Bash Scripts5m
+611 For Loops in Bash Scripts6m
+612 Advanced Command Interaction3m
+613 Choosing Between Bash and Python3m
+614 Module 6 Wrap Up: Bash Scripting2m
+615 Basic Linux Commands Cheat-Sheet10m
+616 Redirections, Pipes and Signals10m
+617 Bash Scripting Resources10m
+618 Practice Quiz: Interacting with the Command Line25m
+619 Practice Quiz: Bash Scripting25m
+620 Practice Quiz - Advanced Bash Concepts25m
+
+701 WEEK7 Final Project
+In this module, you’ll put everything you’ve learned so far into action! You’ll apply your scripting knowledge to tackle a challenging final project: writing a script that scans for a specific error in the log files.
+You'll create a problem statement to understand the challenge, conduct some research to see what options are available, then begin planning how you intend to solve the problem. Lastly, you'll write the code to implement your solution!
+702 SHOW ALL SYLLABUSSHOW ALL
+703 Intro to Your Final Project1m
+704 Writing a Script from the Ground Up3m
+705 Project Problem Statement3m
+706 Help with Research and Planning2m
+707 Congratulations!2m
+708 Sneak Peek of the Next Course1m
+https://tools.pdf24.org/ru/merge-pdf
+https://www.online-convert.com/ru/ocr/image-to-text
+
+https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192
+https://bellard.org/jslinux
