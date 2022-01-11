@@ -944,8 +944,41 @@ print(show_time_of_pid("Jul 6 14:02:08 computer.name jam_tag=psim[29187]: (UUID:
 print(show_time_of_pid("Jul 6 14:02:09 computer.name jam_tag=psim[29187]: (UUID:007)")) # Jul 6 14:02:09 pid:29187
 
 413 Making Sense out of the Data4m
+Jul 6 14:01:23 computer.name CRON[29440]: USER (good_user)
+Jul 6 14:02:08 computer.name jam_tag=psim[29187]: (UUID:006)
+Jul 6 14:03:23 computer.name CRON[29187]: USER (anna_user)
+Jul 6 14:04:09 computer.name jam_tag=psim[29187]: (UUID:007)
+Jul 6 14:05:23 computer.name CRON[29197]: USER (pettya_user)
 
+usernames = {}
+name = 'good_user'
+usernames[name] = usernames.get(name, 0) + 1
+usernames[name] = usernames.get(name, 0) + 1
+print(usernames)
 
+{'good_user': 2}
+
+#!/usr/bin/env python3 
+import re 
+import sys
+
+# logfile = sys.argv[1] 
+epath = "/content/drive/MyDrive/B06courses/"
+logfile = epath + 'e07blog.txt'
+usernames = {} 
+with open(logfile) as f: 
+  for line in f:
+    if "CRON" not in line: 
+      continue
+    pattern = r"USER \((\w+)\)$" 
+    result = re.search(pattern, line) 
+    if result is None: 
+      continue 
+    name = result[1]
+    usernames[name] = usernames.get(name, 0) + 1 
+print(usernames)
+
+{'good_user': 1, 'anna_user': 1, 'pettya_user': 1}
 
 414 Module 4 Wrap Up: Managing Data and Processes1m
 415 More About Input Functions10m
@@ -957,19 +990,238 @@ print(show_time_of_pid("Jul 6 14:02:09 computer.name jam_tag=psim[29187]: (UUID:
 501 WEEK5 Testing in Python
 In this module, you’ll learn how to create tests in Python. We’ll cover what testing is all about and dive into the differences between manual versus automated testing. Next, we’ll explore what unit tests are intended to do and how to write them. Then, we’ll learn about other test concepts like black box versus white box tests and how test-driven development can frame how you design and write your code. Finally, you’ll learn about errors and exceptions, and how to combat them.
 502 Intro to Module 5: Testing in Python1m
+
 503 What is testing?2m
+Software testing
+The process of evaluating computer code to determine whether or not it does what you expect it to do
+
+Tests can help make good code great.
+
 504 Manual Testing and Automated Testing3m
+Automated testing
+Unit tests
+Integration tests
+Test-driven development
+
+Automatic testing
+Test cases
+
 505 Unit Tests3m
+
 506 Writing Unit Tests in Python5m
+Writing Unit Tests in Python
+_test
+
+#!/usr/bin/env python3
+# rearrange.py
+
+import re
+
+def rearrange_name(name):
+  result = re.search(r"A([\w .]*), ([\w .]*)$", name) 
+  return "{} {}".format(result[2], result[1])	
+
+
+#!/usr/bin/env python3
+# rearrange_test.py
+
+from rearrange import rearrange_name 
+import unittest
+
+class TestRearrange(unittest.TestCase): 
+  def test_basic(self):
+    testcase = "Lovelace, Ada" 
+    expected = "Ada Lovelace"
+    self.assertEqual(rearrange_name(testcase), expected)
+
+unittest.main()
+
+
+
+rearange_test.py
+TestCase
+
+localhost:~# ./rearrange_test.py
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.021s
+ 
+OK
+
 507 Edge Cases3m
+Inputs to our code that produce unexpected results, and are found at the extreme ends of the ranges of input we imagine our programs will typically work with
+
 508 Additional Test Cases4m
+def test double name(self):
+
+
+  def test one name(self): 
+    testcase = "Voltaire" 
+    expected = "Voltaire"
+    self.assertEqual(rearrange_name(testcase), expected)
+
+  def test double name(self):
+    testcase = "Hopper, Grace M." expected = "Grace M. Hopper"
+    self.assertEqual(rearrange_name(testcase), expected)
+
+
+#!/usr/bin/env python3
+# rearrange.py
+
+import re
+
+def rearrange_name(name):
+  result = re.search(r"^([\w .]*), ([\w .]*)$", name) 
+  if result is None: 
+    return name
+  return "{} {}".format(result[2], result[1])	
+
+# rearrange_name('a, b')
+
+
+Black Box vs. White Box
+
 509 Black Box vs. White Box3m
 510 Other Test Types4m
+Integration test
+Test environment
+Regression tests
+Smoke tests
+Load tests
+
+Test suite
+
 511 Test-Driven Development2m
+TDD
+
 512 The Try-Except Construct3m
+TypeError
+IndexError
+ValueError
+
+The code in the except block is only executed if one of the instructions in the try block raises an error of the matching type.
+
+
+import os
+
+def read_file(filename):
+  if not os.path.exists(filename): 
+    return ""
+  if not os.path.isfile(filename): 
+    return ""
+  if not os.access(filename, os.R_OK): 
+    return ""
+  if is_locked(filename): 
+    return ""
+  if is_not_accessible(filename): 
+    return ""
+
+try-except
+
+#!/usr/bin/env python3 
+
+def character_frequency(filename):
+  '''Counts the frequency of each chapter in given file.'''
+  #	First try to open the file 
+  try:
+    f = open(filename) 
+  except OSError: 
+    return None
+
+  #	Now process the file 
+  characters = {}
+  for line in f:
+    for char in line:
+      characters[char] = characters.get(char, 0) + 1 
+  f.close() 
+  return characters
+
 513 Raising Errors7m
+#!/usr/bin/env python3
+ 
+def validate_user(username, minlen): 
+  if minlen < 1:
+    raise ValueError("minlen must be at least 1") 
+  if len(username) < minlen:
+    return False
+  if not username.isalnum(): 
+    return False 
+  return True
+  
+validate_user("", -1)  
+----> 3     raise ValueError("minlen must be at least 1")
+ValueError: minlen must be at least 1
+  
+validate_user("", 1) 
+# False
+validate_user("myuser", 1)
+# True
+
+assert
+AssertionError
+
 514 Testing for Expected Errors2m
+assertRaises
+def validate_user(username, minlen): 
+  if minlen < 1:
+    raise ValueError("minlen must be at least 1") 
+  if len(username) < minlen:
+    return False
+  if not username.isalnum(): 
+    return False 
+  return True
+
+import unittest
+
+from validations import validate_user
+
+class TestValidatellser(unittest.TestCase): 
+  def test_vlid(self):
+    self.assertEqual(validate_user("validuser", 3), True)
+
+  def test_too_short(self):
+    self.assertEqual(validate_user("inv", 5), False)
+
+  def test_invalid_characters(self):
+    self.assertEqual(validate_user("invalid user", 1), False)
+
+# Run the tests 
+unittest.main()
+
+\tmp>validations_test.py
+...
+----------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+
+import unittest
+
+from validations import validate_user
+
+class TestValidatellser(unittest.TestCase): 
+  def test_valid(self):
+    self.assertEqual(validate_user("validuser", 3), True)
+
+  def test_too_short(self):
+    self.assertEqual(validate_user("inv", 5), False)
+
+  def test_invalid_characters(self):
+    self.assertEqual(validate_user("invalid_user", 1), False)
+
+  def test_invalid_mililen(self):
+    self.assertRaises(ValueError, validate_user, "user", -1)
+
+# Run the tests 
+unittest.main()
+
+\tmp>validations_test.py
+Ran 4 tests in 0.001s
+
+OK
+
 515 Module 5 Wrap Up: Testing in Python1m
+
 516 Unit Test Cheat-Sheet10m
 517 Help with Jupyter Notebooks10m
 518 More About Tests10m
@@ -981,8 +1233,101 @@ In this module, you’ll learn how to create tests in Python. We’ll cover what
 601 WEEK6 Bash Scripting
 In this module, you’ll be exposed to what the Linux OS has to offer and you'll learn about Bash scripting. We’ll go over basic Linux commands and explore the many processes Linux has to offer, including a key concept called redirection. We’ll then deep dive into creating bash scripts using variables and globs. Finally, we’ll learn about advanced bash concepts and develop an understanding of when to use bash versus Python.
 602 Intro to Module 6: Bash Scripting2m
+Bash
+os.listdir
+subprocess.run
+
 603 Basic Linux Commands6m
+echo
+cat
+ls
+chmod
+
+mkdir
+cd
+pwd
+cp
+
+pwd
+touch
+mv
+cp
+rm
+rmdir
+
+man
+
+$ ./stdout_example.py
+Don't mind me, just a bit of text here...
+
+freon@freonpc MINGW64 ~/tmp
+$ ./stdout_example.py > new_file.txt
+
+freon@freonpc MINGW64 ~/tmp
+$ cat new_file.txt
+Don't mind me, just a bit of text here...
+
+freon@freonpc MINGW64 ~/tmp
+$ ./stdout_example.py >> new_file.txt
+
+freon@freonpc MINGW64 ~/tmp
+$ cat new_file.txt
+Don't mind me, just a bit of text here...
+Don't mind me, just a bit of text here...
+
+freon@freonpc MINGW64 ~/tmp
+$ cat stdout_example.py
+#!/usr/bin/env python
+
+print("Don't mind me, just a bit of text here...")
+
+freon@freonpc MINGW64 ~/tmp
+
 604 Redirecting Streams4m
+Redirection
+The process of sending a stream to a different destination
+
+Each time we perform a redirection of STDOUT the destination is overwritten!
+
+Append
+>>
+
+$ cat streams_err.py
+#!/usr/bin/env python
+
+data = input("This will cone from STDIN: ")
+print("Now we write it to STDOUT: " + data)
+raise ValueError("Now we generate an error to STDERR")
+
+freon@freonpc MINGW64 ~/tmp
+$ ./streams_err.py < new_file.txt
+This will cone from STDIN: Now we write it to STDOUT: Don't mind me, just a bit
+of text here...
+Traceback (most recent call last):
+  File "./streams_err.py", line 5, in <module>
+    raise ValueError("Now we generate an error to STDERR")
+ValueError: Now we generate an error to STDERR
+
+$ ./streams_err.py < new_file.txt 2> error_file.txt
+This will cone from STDIN: Now we write it to STDOUT: Don't mind me, just a bit
+of text here...
+
+freon@freonpc MINGW64 ~/tmp
+$ cat error_file.txt
+Traceback (most recent call last):
+  File "./streams_err.py", line 5, in <module>
+    raise ValueError("Now we generate an error to STDERR")
+ValueError: Now we generate an error to STDERR
+
+File descriptor
+(2)
+
+$ echo "These are the contents of the file" > myamazingfile.txt
+
+freon@freonpc MINGW64 ~/tmp
+$ cat myamazingfile.txt
+These are the contents of the file
+
 605 Pipes and Pipelines6m
 606 Signalling Processes5m
 607 Creating Bash Scripts3m
