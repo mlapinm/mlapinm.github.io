@@ -1329,13 +1329,295 @@ $ cat myamazingfile.txt
 These are the contents of the file
 
 605 Pipes and Pipelines6m
+Piping
+Pipes
+Connect the output of one program to the input of another in order to pass data between programs
+Is -l | less
+
+stdin
+sys
+
+$ cat capitalize.py 
+#!/usr/bin/env python3
+
+import sys
+
+for line in sys.stdin:
+  print(line.strip().capitalize())
+
+$ cat haiku.txt
+advance your career, 
+automating with Python, 
+it's so fun to learn.
+
+$ cat haiku | ./capitalize.py
+Advance your career, 
+Automating with python, 
+It's so fun to learn.
+
+$ ./capitalize.py < haiku.txt 
+Advance your career,
+Automating with python,
+It's so fun to learn.
+
+$ ls -l | less
+
+The itsy bitsy spider climbed up the waterspout.
+Down came the rain
+And washed the spider out.
+Out came the sun
+And dried up all the rain
+And the itsy bitsy spider climbed up the spout again.
+
+$ cat spider.txt | tr ' ' '\n' | sort | uniq -c | sort -nr | head
+      7 the
+      3 up
+      3 spider
+      3 And
+      2 rain
+      2 itsy
+      2 climbed
+      2 came
+      2 bitsy
+      1 waterspout.
+
+grep
+
 606 Signalling Processes5m
+Signals
+Tokens delivered to running processes to indicate a desired action
+
+ping
+SIGINT
+SIGSTOP
+SIGTERM
+
+Ctrl-Z
+
+fg
+kill
+ps
+ps ax
+
+ping www.example.com
+
+ps ax | grep ping
+
+$ ps ax | grep ping
+
+freon@freonpc MINGW64 ~
+$ ps ax | grep ping
+     1977    1932    1977       8296  cons0     197608 10:38:47 /c/windows/SYSTE
+M32/ping
+
+freon@freonpc MINGW64 ~
+$ kill 1977
+
 607 Creating Bash Scripts3m
+ps
+free
+uptime
+
+#!/usr/bin/bash
+# gather-information.sh
+
+echo "Starting at: $(date)" 
+echo
+
+echo "UPTIME"
+uptime
+echo
+
+echo "FREE"
+free
+echo
+
+echo "WHO"
+who
+echo
+
+echo "Finishing at: $(date)"
+
+./gather-information.sh
+
+#!/usr/bin/bash
+# gather-information.sh
+
+echo "Starting at: $(date)"; echo
+
+echo "UPTIME"; uptime; echo
+
+echo "FREE"; free; echo
+
+echo "WHO"; who; echo
+
+echo "Finishing at: $(date)"
+
+$ ./gather-information.sh
+Starting at: 12 янв 2022 г. 10:50:47
+
+UPTIME
+./gather-information.sh: line 6: uptime: command not found
+
+FREE
+./gather-information.sh: line 8: free: command not found
+
+WHO
+
+Finishing at: 12 янв 2022 г. 10:50:48
+
 608 Using Variables and Globs4m
+Environment variables
+example=hello 
+echo $example
+
+export
+
+#!/usr/bin/bash
+# gather-information.sh
+
+line="----------------------"
+echo "Starting at: $(date)"; echo $line
+
+echo "UPTIME"; uptime; echo $line
+
+echo "FREE"; free; echo $line
+
+echo "WHO"; who; echo $line
+
+echo "Finishing at: $(date)"
+
+$ ./gather-information.sh
+Starting at: 12 янв 2022 г. 10:54:05
+----------------------
+UPTIME
+./gather-information.sh: line 7: uptime: command not found
+----------------------
+FREE
+./gather-information.sh: line 9: free: command not found
+----------------------
+WHO
+----------------------
+Finishing at: 12 янв 2022 г. 10:54:05
+
+globs
+*?
+
+echo *.py
+echo c*
+echo ?????.py
+
 609 Conditional Execution in Bash5m
+Exit status
+$?
+
+In Bash scripting, an exit value of 0 means success.
+
+/etc/hosts
+127.0.0.1
+
+cat /etc/hosts
+
+
+
+: $ cat check_localhost.sh
+
+#!/bin/bash
+
+if grep "127.0.0.1" /etc/hosts; then 
+  echo "Everything ok"
+else
+  echo "ERROR! 127.0.0.1 is not in /etc/hosts" 
+fi
+
+$ ./check_localhost.sh
+127.0.0.1 localhost
+127.0.0.1       localhost
+127.0.0.1 validation.sls.microsoft.com
+127.0.0.1       vasya.ru
+127.0.0.1       petya.ru
+127.0.0.1               mysite.local
+127.0.0.1               www.mysite.local
+127.0.0.1               mysite1.local
+127.0.0.1               www.mysite1.local
+Everything ok
+
+Test
+A command that evaluates the conditions received and exits with zero when they're true and with one when they're false
+
+$ if test -n "$PATH"; then echo "Your path is not empty"; fi
+Your path is not empty
+
+$ if [ -n "$PATH" ]; then echo "Your path is not empty"; fi
+Your path is not empty
+
+There needs to be a space before the closing bracket.
+
 610 While Loops in Bash Scripts5m
+
+$ cat while.sh
+
+#!/bin/bash
+
+n=1
+while [ $n -le 5 ]; do
+  echo "Iteration number $n" 
+  (n+=1)) 
+done
+
+$ ./while.sh
+Iteration number 1
+Iteration number 2
+Iteration number 3
+Iteration number 4
+Iteration number 5
+
+$ cat random-exit.py 
+
+#!/usr/bin/env python
+
+import sys 
+import random
+
+value=random.randint(0, 3) 
+print("Returning: " + str(value)) 
+sys.exit(value)
+
+cat check.sh
+
+#!/bin/bash
+
+n=0
+
+command=$1 
+while ! $command && [ $n -le 5 ]; do
+  sleep $n 
+  ((n=n+1)) 
+  echo "Retry #$n" 
+done;
+
+$ ./check.sh ./random-exit.py
+Returning: 1
+Retry #1
+Returning: 0
+
 611 For Loops in Bash Scripts6m
+for loops
+
+rename_files.sh
+
+#!/bin/bash
+
+for file in *.HTM; do 
+  name=$(basename "$file" .HTM) 
+  mv "$file" "$name.html" 
+done
+
 612 Advanced Command Interaction3m
+
+
+
+
 613 Choosing Between Bash and Python3m
 614 Module 6 Wrap Up: Bash Scripting2m
 615 Basic Linux Commands Cheat-Sheet10m
