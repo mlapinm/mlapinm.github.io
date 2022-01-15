@@ -688,6 +688,140 @@ Right on! The grep command is used to scan files for a string of characters occu
 
 320 Practice Quiz: Advanced Regular Expressions25m
 
+321 lab Working with Regular Expressions
+week 3
+
+Working with Regular Expressions
+
+student-04-6a9dc8a22589@linux-instance:~/data$ cat user_emails.csv
+Full Name, Email Address
+Blossom Gill, blossom@abc.edu
+Hayes Delgado, nonummy@utnisia.com
+Petra Jones, ac@abc.edu
+Oleg Noel, noel@liberomauris.ca
+Ahmed Miller, ahmed.miller@nequenonquam.co.uk
+Macaulay Douglas, mdouglas@abc.edu
+Aurora Grant, enim.non@abc.edu
+Madison Mcintosh, mcintosh@nisiaenean.net
+Montana Powell, montanap@semmagna.org
+Rogan Robinson, rr.robinson@abc.edu
+Simon Rivera, sri@abc.edu
+Benedict Pacheco, bpacheco@abc.edu
+Maisie Hendrix, mai.hendrix@abc.edu
+Xaviera Gould, xlg@utnisia.net
+Oren Rollins, oren@semmagna.com
+Flavia Santiago, flavia@utnisia.net
+Jackson Owens, jackowens@abc.edu
+Britanni Humphrey, britanni@ut.net
+Kirk Nixon, kirknixon@abc.edu
+Bree Campbell, breee@utnisia.net
+
+student-04-6a9dc8a22589@linux-instance:~/scripts$ cat script.py
+#!/usr/bin/env python3
+
+#Import libraries
+
+def contains_domain(address, domain):
+  """Returns True if the email address contains the given domain,
+    in the domain position, false if not."""
+  return False
+
+def replace_domain(address, old_domain, new_domain):
+  """Replaces the old domain with the new domain in
+    the received address."""
+  return address
+
+def main():
+  """Processes the list of emails, replacing any instances of the
+    old domain with the new domain."""
+
+main()
+
+-rw-r--r-- 1 root root 485 Jan 13 14:16 script.py
+
+sudo chmod 777 script.py
+
+-rwxrwxrwx 1 root root 485 Jan 13 14:16 script.py
+
+
+  csv_file_location = '/home/student-04-6a9dc8a22589/data/user_emails.csv'
+  report_file =  '/home/student-04-6a9dc8a22589/data' + '/updated_user_emails.csv'
+
+/home/student-04-6a9dc8a22589/scripts
+/home/student-04-6a9dc8a22589/data/user_emails.csv
+/home/student-04-6a9dc8a22589/data
+
+/home/student-04-f2804a24a62d/scripts
+/home/student-04-f2804a24a62d/data/user_emails.csv
+/home/student-04-f2804a24a62d/data
+
+
+#!/usr/bin/env python3
+import re
+import csv
+def contains_domain(address, domain):
+  """Returns True if the email address contains the given,domain,in the domain position, false if not."""
+  domain = r'[\w\.-]+@'+domain+'$'
+  if re.match(domain,address):
+    return True
+  return False
+def replace_domain(address, old_domain, new_domain):
+  """Replaces the old domain with the new domain in the received address."""
+  old_domain_pattern = r'' + old_domain + '$'
+  address = re.sub(old_domain_pattern, new_domain, address)
+  return address
+def main():
+  """Processes the list of emails, replacing any instances of the old domain with the new domain."""
+  old_domain, new_domain = 'abc.edu', 'xyz.edu'
+  csv_file_location = '/home/student-04-f2804a24a62d/data/user_emails.csv'
+  report_file = '/home/student-04-f2804a24a62d/data' + '/updated_user_emails.csv'
+  user_email_list = []
+  old_domain_email_list = []
+  new_domain_email_list = []
+  with open(csv_file_location, 'r') as f:
+    user_data_list = list(csv.reader(f))
+    user_email_list = [data[1].strip() for data in user_data_list[1:]]
+    for email_address in user_email_list:
+      if contains_domain(email_address, old_domain):
+        old_domain_email_list.append(email_address)
+        replaced_email = replace_domain(email_address,old_domain,new_domain)
+        new_domain_email_list.append(replaced_email)
+    email_key = ' ' + 'Email Address'
+    email_index = user_data_list[0].index(email_key)
+    for user in user_data_list[1:]:
+      for old_domain, new_domain in zip(old_domain_email_list, new_domain_email_list):
+        if user[email_index] == ' ' + old_domain:
+          user[email_index] = ' ' + new_domain
+  f.close()
+  with open(report_file, 'w+') as output_file:
+    writer = csv.writer(output_file)
+    writer.writerows(user_data_list)
+    output_file.close()
+main()
+
+student-04-6a9dc8a22589@linux-instance:~/scripts$ cat ~/data/updated_user_emails.csv
+Full Name, Email Address
+Blossom Gill, blossom@xyz.edu
+Hayes Delgado, nonummy@utnisia.com
+Petra Jones, ac@xyz.edu
+Oleg Noel, noel@liberomauris.ca
+Ahmed Miller, ahmed.miller@nequenonquam.co.uk
+Macaulay Douglas, mdouglas@xyz.edu
+Aurora Grant, enim.non@xyz.edu
+Madison Mcintosh, mcintosh@nisiaenean.net
+Montana Powell, montanap@semmagna.org
+Rogan Robinson, rr.robinson@xyz.edu
+Simon Rivera, sri@xyz.edu
+Benedict Pacheco, bpacheco@xyz.edu
+Maisie Hendrix, mai.hendrix@xyz.edu
+Xaviera Gould, xlg@utnisia.net
+Oren Rollins, oren@semmagna.com
+Flavia Santiago, flavia@utnisia.net
+Jackson Owens, jackowens@xyz.edu
+Britanni Humphrey, britanni@ut.net
+Kirk Nixon, kirknixon@xyz.edu
+Bree Campbell, breee@utnisia.net
+
 401 WEEK4 Managing Data and Processes
 In this module, we’ll learn about reading and writing to data files based on an interaction with the user. Along the way, we’ll dive into standard streams, environment variables, and command line arguments. Next, we’ll jump into Python subprocesses, including system commands and how they can be used. We’ll review how to obtain output from a system command, and dive into subprocess management, including how to check exit values and manipulate the normal versus error exit values. Finally, we’ll rundown processing log files, and will cover what a log file is, how to filter log files using regular expressions, and how to understand the output captured from log files.
 402 SHOW ALL SYLLABUSSHOW ALL
@@ -1614,12 +1748,38 @@ for file in *.HTM; do
 done
 
 612 Advanced Command Interaction3m
+/var/log/syslog
+tail /var/log/syslog
+cut
+tail /var/log/syslog | cut -d'
+cut -d' ' -f5- /var/log/syslog | sort | uniq -c | sort -nr | head
+for loop
 
+$ cat toploglines.sh
 
+#!/bin/bash
 
+for logfile in /var/log/*log; do 
+  echo "Processing: $logfile" 
+  cut -d' ' -f5- $logfile | sort | uniq -c | sort -nr | head -5
+done
 
 613 Choosing Between Bash and Python3m
+user@ubun : $ cat capitalize_words.py #!/usr/bin/env python3
+import sys
+
+for line in sys.stdin:
+  words = line.strip().split()
+  print(" ".join([word.capitalize() for word in words]))
+
+List comprehension
+
+$ cat story.txt | ./capitalize_words.py
+
+Once Upon A Tine There Was An Egg Of A Programming Language Called Python
+
 614 Module 6 Wrap Up: Bash Scripting2m
+
 615 Basic Linux Commands Cheat-Sheet10m
 616 Redirections, Pipes and Signals10m
 617 Bash Scripting Resources10m
@@ -1633,8 +1793,25 @@ You'll create a problem statement to understand the challenge, conduct some rese
 702 SHOW ALL SYLLABUSSHOW ALL
 703 Intro to Your Final Project1m
 704 Writing a Script from the Ground Up3m
+Intro to Your Final Project
+Writing a Script from the Ground Up
+
+Steps for coding projects
+
+-1.	Understand the problem statement
+-2.	Research
+-3.	Planning
+-4.	Writing
+
 705 Project Problem Statement3m
+May 27 11:45:40 ubuntu.local ticky: INFO: Created ticket [#1234] (username) 
+Jun 1 11:06:48 ubuntu.local ticky: ERROR: Connection to DB failed (username)
+
+csv_to_html.py
+
 706 Help with Research and Planning2m
+regex101.com
+
 707 Congratulations!2m
 708 Sneak Peek of the Next Course1m
 https://tools.pdf24.org/ru/merge-pdf
