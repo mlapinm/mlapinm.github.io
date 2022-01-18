@@ -201,19 +201,307 @@ git commit
 200 WEEK2 Using Git Locally In this module, you’ll dive into advanced Git interactions by skipping the staging area for small code changes, and understand how Git uses the HEAD alias to represent checked-out snapshots. Next, you’ll explore how to move and remove files before finally getting a cheat sheet to help you in your Git explorations! The next step of your learning will include how to undo changes before committing and how to amend commits once they’re submitted. Finally, you’ll be able to identify errors in commits that were submitted a while back. In the final section of this module, you’ll explore the concept of branching and merging. You’ll learn what a branch is, how to create one, and how they work in harmony with you and your code. Once you’re comfortable with branching, you’ll dive into merging, how it works with branched data, and how to deal with merge conflicts.
 201 SHOW ALL SYLLABUSSHOW ALL
 202 Intro to Module 2: Using Git Locally1m
+
 203 Skipping the Staging Area4m
+git commit -a
+A shortcut to stage any changes to tracked files and commit them in one step
+
+#!/usr/bin/env python3 
+
+import os
+
+def check reboot():
+  """Returns True if the computer has a pending reboot."""
+  return os.path.exist("/run/reboot-required")
+
+def main():
+  pass
+  
+main()
+
+git diff
+-p
+atom all_checks.py
+git commit -a -m "Call check reboot from main, exit with 1 on error"
+git log
+
+Git uses the HEAD alias to represent the currently checked-out snapshot of your project.
+
 204 Getting More Information About Our Changes6m
+patch
+git log -p
+diff -u
+git show
+--stat
+git diff
+
+#!/usr/bin/env python3 import os 
+
+import sys
+
+def check_reboot():
+  """Returns True if the computer has a pending reboot."""	
+  return os.path.exist("/run/reboot-required")
+
+def main():
+  if checkreboot():
+    print("Pending Reboot.") 
+	sys.exit(1)
+  print("Everything ok.")
+  sys.exit(0)
+	
+main()
+
+git add -p
+
+git diff --staged
+
+git commit -m 'Add a message when everything is ok'
+
 205 Deleting and Renaming Files4m
+git rm
+ls -l
+git rm process.py
+ls -l
+git status
+git mv
+git mv disk_usage.py check_free_space.py
+git mv diskjjsage.py check_free_space.py 
+git status
+git commit -m 'New name for disk_usage.py'
+.gitignore
+
 206 Undoing Changes Before Committing5m
+Undoing Changes Before Committing
+git checkout
+-p
+git reset HEAD output.txt 
+git status
+
+https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A0%D0%B0%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5-%D1%82%D0%B0%D0%B9%D0%BD-reset
+
+
 207 Amending Commits4m
+--amend
+touch auto-update.py 
+touch gather-information.sh 
+ls -l
+git add gather-information.sh
+git commit --amend
+
+What does the git commit --amend do?
+O Add an error log to the commit.
+O Remove files from the staging area. 
+O Change the commit message.
+(•) Overwrite the previous commit.
+
+Avoid amending commits that have already been made public.
+
+
 208 Rollbacks5m
+git revert
+HEAD
+
+def check_reboot():
+  """Returns True if the computer has a pending reboot."""	
+  return os.path.exists("/run/reboot-required")
+
+def main():
+  if check reboot():
+    print("Pending Reboot.") 
+	sys.exit (1)
+    print("Everything ok.") 
+	sys.exit(0)
+	
+main()
+
+atom all_checks.py
+git commit -a -m 'Add call to disk_full function'
+
+git revert HEAD
+
+git log -p -2
+
+Question
+Which of the following is true about the git revert command?
+O It undoes a commit as though it never happened.
+(.)It creates a new commit with inverse changes.
+O The output of git revert is not the same as a regular commit. 
+O It does not include the ID of the commit that was reverted.
+
+Awesome! With sit revert, a new commit is created with inverse changes. This cancels previous changes instead of making it as though the original commit never happened.
+
 209 Identifying a Commit6m
+git log -1
+Hash
+SHA1
+"You can verify the data you get back out is the exact same data you put in."
+Linus Torvalds
+
+git log -2
+git show
+git show 30e70712882267ca2dd749acfa02ea3aacfd0b24|
+git show 30e70
+git revert 30e70
+
+Which of the following is NOT true about the SHA1 hash numbers that Git uses to identify commits?
+O They provide the consistency that is critical for distributed systems such as Git.
+O They are created using the commit message, date, author, and the snapshot taken of the working tree.
+(.) Git requires the entire hash ID to identify a commit.
+O They are composed of 40 characters.
+
+You nailed it! Git can identify a commit using the first few hash numbers as long as there is only one matching possibility.
+
 210 What is a branch?3m
+Branch
+A pointer to a particular commit
+The default branch that git creates for you when a new repository is initialized is called master.
+
 211 Creating New Branches4m
+We can use the git branch command to list, create, delete, and manipulate branches.
+git branch
+git branch new-feature 
+git branch
+git checkout
+
+We use git checkout to check out the latest snapshot for both files and for branches.
+
+We use git checkout to check out the latest snapshot for both files and for branches.
+
+git checkout new-feature 
+git branch
+git checkout -b new branch
+git checkout -b even-better-feature
+
+git add free_memory.py
+git commit -m 'Add an empty free_memory.py'
+git log -2
+
+#!/usr/bin/env python3
+
+def main(): 
+  pass
+
+main ()
+
 212 Working with Branches3m
+$ cd checks
+$ git status
+$ Is -l
+-rwxr-xr-x 1 user user 658 Jan 6 09:15 c usage.py -rw-r--r-- 1 user user 57 Jan 6 09:46 free_memory.py
+
+git branch -d
+$ git	branch
+even-better-feature
+* master 
+new-feature
+
+$ git branch -d new-feature
+Deleted branch new-feature (was 7dldel9).
+$ git branch
+even-better-feature
+* master
+
+$ git branch -d even-better-feature
+error: The branch 'even-better-feature' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D even-better-feature'
+
 213 Merging2m
+Merging
+The term that Git uses for combining branched data and history together
+
+git merge
+
+git branch
+git merge even-better-feature
+
+Git uses two different algorithms to perform a merge: fast-forward and three-way merge.
+
 214 Merge Conflicts6m
+atom free_memory.py
+free_memory.py git commit -a -m 'Print everything ok'
+
+def main():
+  """Checks if there's enough free memory in the computer."""
+  
+main()
+
+def main():
+  print("Everything is ok.")
+  
+main()
+
+$ git commit -a -m 'Print everything ok'
+$ git checkout master
+$ git merge even-better-feature
+
+Auto-merging free_memory.py
+
+CONFLICT (content): Merge conflict in free_memory.py Automatic merge failed; fix conflicts and then commit the result.
+
+def main():
+<<<<<< HEAD
+
+    """Checks if there's enough free memory in the computer"""
+======
+    print("Everything is ok.") »»»> even-better-feature
+>>>>>> even-better-featur	
+	
+main()
+
+def main():
+use me =
+    """Checks if there's enough free memory in the computer."""
+    print("Everything is ok.")
+
+main()
+
+atom free_memory.py 
+git add free_memory.py 
+git status
+
+git log --graph --oneline
+
+It prevents loss of work if two lines overlap.
+
+O It helps us understand which changes to keep. O It warns us of all potential problems.
+
+O It tells us whether the commit is a merge
+Correct
+
+Nice job! If two lines have differences Git is unsure about, it's best we decide than risk losing work forever.
+
+git merge --abort
+
 215 Module 2 Wrap Up: Using Git Locally1m
+Error Message
+
+Error
+Count
+Timeout while retrieving information	15
+Connection to DB failed	13
+Tried to add information to closed ticket	12
+Permission denied while closing ticket	10
+The ticket was modified while updating	9
+
+Ticket doesn't exist
+7
+User Statistics
+
+ac	2	2
+ahmed.miller	2	4
+blossom	2	6
+bpacheco	0	2
+breee	1	5
+britanni	1	1
+enim.non	2	3
+
+flavia
+0
+5
+
+
+
 216 Advanced Git Cheat Sheet10m
 217 Git Revert Cheat Sheet10m
 218 Git Branches and Merging Cheat Sheet10m

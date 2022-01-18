@@ -2085,6 +2085,36 @@ v cut
 echo
 mv
 sleep
+621 Find files using bash script
+#!/bin/bash
+
+grep " jane " ../data/list.txt | cut -d ' ' -f 3 > oldFiles.txt
+
+/data/jane_profile_07272018.doc
+/data/jane_pic_07282018.jpg
+/data/jane_contact_07292018.csv
+
+#!/usr/bin/env python3
+
+import sys
+import subprocess
+
+old_substring = 'jane'
+new_substring = 'jdoe'
+
+fileName = sys.argv[1]
+
+with open(fileName) as file:
+  for line in file.readlines():
+    line = line.strip()
+    line2 = line.replace(old_substring, new_substring)
+    print(line)
+    subprocess.run(["mv", "." + line, "." + line2], cwd="..")
+	
+student-04-a1a9248df6aa@linux-instance:~/scripts$ ls ../data/
+jane_contact_07292018.csv   kwood_pic_04032017.jpg      pchow_pic_05162019.jpg
+jane_profile_07272018.doc   kwood_profile_04022017.doc
+janez_profile_11042019.doc  list.txt
 
 701 WEEK7 Final Project
 In this module, you’ll put everything you’ve learned so far into action! You’ll apply your scripting knowledge to tackle a challenging final project: writing a script that scans for a specific error in the log files.
@@ -2112,6 +2142,8 @@ csv_to_html.py
 regex101.com
 
 707 Congratulations!2m
+D:\mailCloud\prjother\tmp
+
 708 Sneak Peek of the Next Course1m
 https://tools.pdf24.org/ru/merge-pdf
 https://www.online-convert.com/ru/ocr/image-to-text
