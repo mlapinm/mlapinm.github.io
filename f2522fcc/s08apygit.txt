@@ -1,19 +1,190 @@
 
-100 WEEK 1 Introduction to Version Control In this module, you'll be introduced to the concept of version control, which will make managing and rolling back your code look super easy. You’ll learn how to differentiate between files and the tools at your disposal to make this happen. Next, you'll be introduced to Git and how you can leverage that platform to improve your coding abilities. Once you’ve got a grasp on what Git is, you’ll install it and start using it to create and clone code repositories. Last up, you’ll deep dive into Git in order to get more familiar with the different tools and commands it has to offer.
+100 WEEK 1 Introduction to Version Control 
+In this module, you'll be introduced to the concept of version control, which will make managing and rolling back your code look super easy. You’ll learn how to differentiate between files and the tools at your disposal to make this happen. Next, you'll be introduced to Git and how you can leverage that platform to improve your coding abilities. Once you’ve got a grasp on what Git is, you’ll install it and start using it to create and clone code repositories. Last up, you’ll deep dive into Git in order to get more familiar with the different tools and commands it has to offer.
 101 SHOW ALL SYLLABUSSHOW ALL
 102 Course Introduction5m
+Version Control Systems (VCS)
+
 103 Intro to Module 1: Version Control3m
+diff patch
+
 104 Keeping Historical Copies2m
+
 105 Diffing Files4m
+diff
+
+$ cat rearrange1.py
+
+#!/usr/bin/env python3
+
+import re
+
+def rearrange_name(name):
+  result = re.search(r"^([\w .]*), ([\w .]*)$", name)
+  if result == None:
+    return result
+  return "{} {}".format(result[2], result[1])
+
+$ cat rearrange2.py
+
+#!/usr/bin/env python3
+
+import re
+
+def rearrange_name(name):
+  result = re.search(r"^([\w .-]*), ([\w .-]*)$", name)
+  if result == None:
+    return result
+  return "{} {}".format(result[2], result[1])
+
+$ diff rearrange1.py rearrange2.py
+6c6
+<  re.search(r"^([\w .]*), ([\w .]*)$", name)
+---
+>  re.search(r"^([\w .-]*), ([\w .-]*)$", name)
+
+$ diff -u validations1.py validations2.py
+
+wdiff
+meld
+KDiff3
+vimdiff
+
 106 Applying Changes5m
+diff -u oldfile newfile > change.diff
+
+diff file
+patch file
+
+$ cat cpu_usage.py 
+
+#!/usr/bin/env python3 
+import psutil
+
+def check_cpu_usage(percent):  
+  usage = psutil.cpu_percent() return usage < percent
+  if not check_cpu_usage(75):
+    print("ERROR! CPU is overloaded") 
+  else:
+    print("Everything ok")
+
+$ cat cpu_usage.diff
+
+patch
+<
+
+user@ubuntu: $ patch cpu_usage.py < cpu_usage.diff
+patching file cpu_usage.py
+
+$ cat cpu_usage.py 
+
+#!/usr/bin/env python3 
+import psutil
+
+def check_cpu_usage(percent):  
+  usage = psutil.cpu_percent(1) return usage < percent
+  if not check_cpu_usage(75):
+    print("ERROR! CPU is overloaded") 
+  else:
+    print("Everything ok")
+
 107 Practical Application of diff and patch5m
+cp disk_usage.py disk_usage_original.py 
+cp disk_usage.py disk_usage_fixed.py
+
+#!/usr/bin/env python3
+import shutil
+
+def check_disk_usage(disk, min_absolute, min_percent):
+  """Returns True if there is enough free disk space, false otherwise.""" 
+  du = shutil.disk usage(disk)
+
+  # Calculate the percentage of free space 
+  percent_free = 100 * du.free / du.total
+
+  # Calculate how many free gigabytes 
+  gigabytes_free = du.free / 2**30
+  if percentfree < min percent or gigabytes_free < minabsolute: 
+    return False return True
+	
+# Check for at least 2 GB and 10% free 
+if not check_disk_usage('/", 2*2**30, 10):   
+  print("ERROR: Not enough disk space") return 1
+
+print("Everything ok") return 0
+
+sys.exit
+
+patch disk_usage.py < disk_usage.diff
+
 108 What is version control?3m
+Version Control System (VCS)
+Keeps track of the changes we make to our files
+
+We can make edits to multiple files and treat that collection of edits as a single change, which is commonly known as a commit.
+
+Repositories
+
 109 Version Control and Automation4m
+
 110 What is Git?3m
+git-scm.com
+Source Control Management
+
+Subversion
+Mercurial
+
 111 Installing Git3m
+git --version
+
+If you’re running a version number higher than 2.20, then you can just use that one.
+If you get an error message, or an older version number, you'll need to install a current version.
+
+apt
+yum
+Chocolatey
+Homebrew
+
+apt install git
+yum install git
+
+Notepad++
+Atom
+
+MinGW64
+
+Integrated Developer Environments
+IDEs
+
 112 Installing Git on Windows (Optional)7m
 113 First Steps with Git4m
+git init
+git clone
+
+git config --global user.email "me@example.com" 
+git config --global user.name "My name"
+
+mkdir checks 
+cd checks
+$ git init
+
+ls -la
+
+Is -l .git/
+
+Staging area (index)
+
+A file maintained by Git that contains all of the information about what files and changes are going to go into your next commit
+
+git status
+
+git commit
+
 114 Tracking Files5m
+
+
+
+
 115 The Basic Git Workflow6m
 116 Anatomy of a Commit Message4m
 117 Module 1 Wrap Up: Intro to Version Control2m
