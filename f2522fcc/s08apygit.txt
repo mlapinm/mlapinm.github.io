@@ -474,33 +474,6 @@ Nice job! If two lines have differences Git is unsure about, it's best we decide
 git merge --abort
 
 215 Module 2 Wrap Up: Using Git Locally1m
-Error Message
-
-Error
-Count
-Timeout while retrieving information	15
-Connection to DB failed	13
-Tried to add information to closed ticket	12
-Permission denied while closing ticket	10
-The ticket was modified while updating	9
-
-Ticket doesn't exist
-7
-User Statistics
-
-ac	2	2
-ahmed.miller	2	4
-blossom	2	6
-bpacheco	0	2
-breee	1	5
-britanni	1	1
-enim.non	2	3
-
-flavia
-0
-5
-
-
 
 216 Advanced Git Cheat Sheet10m
 217 Git Revert Cheat Sheet10m
