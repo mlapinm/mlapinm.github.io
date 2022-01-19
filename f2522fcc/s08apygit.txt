@@ -506,14 +506,89 @@ git merge --abort
 
 400 WEEK 4 Collaboration In this module, you’ll continue to explore the collaboration tools available in Git. You’ll learn about the tools that are available to help improve the quality of your code and to better track your code. This includes an overview of pull requests and how the typical workflow of a pull request looks like on GitHub. Next, you’ll dive into how you can squash changes in your code. We’ll finish up by providing you with a cheat sheet on fork and pull requests. Next up, we’ll cover what code reviews are and what the code review workflow looks like. Then, you’ll learn about how to use code reviews on GitHub. The final lesson of this module will focus on managing projects. We’ll take a rundown of best practices on managing projects and how to manage collaboration within those projects. We’ll explore different ways of tracking issues and finish up by discussing the concept of continuous integration with your projects.
 401 Intro to Module 4: Collaboration2m
+Open source
+
 402 A Simple Pull Request on GitHub5m
+blue-kale / validations
+You’re editing a file in a project you don't have write access to. We've created a fork of this project for you
+pull request
+
+Forking
+A way of creating a copy of the given repository so that it belongs to our user
+
+Pull request
+A commit or series of commits that you the owner of the repository so that they incorporate it into their tree
+
 403 The Typical Pull Request Workflow on GitHub7m
+git clone https://github.com/redquinoa/rearrange.git
+cd rearrange
+git log
+qit checkout -b add-readme
+Markdown
+atom README.md 
+git add README.md
+git commit -m 'Add a simple README.md file'
+git push -u origin add-readme
+
 404 Updating an Existing Pull Request4m
+Rearrange
+This module is used for rearranging names.
+Turns "LastName, FirstName" into "FirstName LastName"
+# Example
+Calling 'rearrange name("Turing, Alan")' will return '"Alan Turing"
+
+atom README.md
+git commit -a -m 'Add more information to the README' 
+git push
+
 405 Squashing Changes6m
+rebase -i
+git rebase -i master
+pick
+
+pick 736d754 Add a simple README.md file 
+pick 01231b0 Add more information to the README
+
+pick 736d754 Add a simple README.md file 
+squash 01231b0 Add more information to the README
+
+git show
+git status
+
+git log --graph --oneline --all -4
+git push
+git push -f
+
 406 What are code reviews?4m
+Code review
+Going through someone else's code, documentation, or configuration and checking that it all makes sense and follows the expected patterns
+
+Code review
+Going through someone else's code, documentation, or configuration and checking that it all makes sense and follows the expected patterns
+
 407 The Code Review Workflow3m
+Nit
+PEP8
++1
+
 408 How to Use Code Reviews in GitHub5m
+atom README.md
+git commit -a --amend
+git status
+Fixup
+git push -f
+
 409 Managing Collaboration4m
+If you're a project maintained it's important that you reply promptly to pull requests and don't let them stagnate.
+
+It's important that you understand any changes you accept.
+
+When it comes to coordinating who does what and when, a common strategy for active software projects is to use an issue tracker.
+
+
+
+
+
 410 Tracking Issues8m
 411 Continuous Integration5m
 412 Module 4 Wrap Up: Collaboration1m
