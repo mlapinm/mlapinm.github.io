@@ -485,15 +485,177 @@ git merge --abort
 300 WEEK3 Working with Remotes In this module, you’ll be introduced to GitHub and learn how it works with Git. You’ll create new repositories and clone those repositories onto your computer. Next, we’ll explain what a remote repository is, how we can work with them, and how we can host them. You’ll get familiar with commands like modify, stage, and commit, which will be used for local changes, as well as the fetch command, which can pull any changes from remote repositories. Our final lesson will focus on learning about conflicts. This will allow you to explore the concepts of pull-merge-push workflows, pushing remote branches and rebasing your changes.
 301 SHOW ALL SYLLABUSSHOW ALL
 302 Intro to Module 3: Working with Remotes2m
+
 303 What is GitHub?2m
+Distributed
+Each developer has a copy of the whole repository on their local machine
+Remote
+GitHub
+Clone
+
+BitBucket
+GitLab
+
+For real configuration and development work, you should use a secure and private Git server, and limit the people authorized to work on it.
+
+https://github.com
+
 304 Basic Interaction with GitHub6m
+redquinoa
+health-checks
+Scripts that check the health of my computers
+git clone
+git clone https://github.com/redquinoa/health-checks.gitl
+Markdown
+README.md
+# health-checks
+Scripts that check the health of my computers
+This repo will be populated with lots of fancy checks.
+git commit -a -m "Add one more line to README.md"
+git push
+SSH key-pair
+Credential helper
+git config --global credential.helper cache
+git pull
+
 305 What is a remote?4m
+Remote repository
+modify
+stage
+commit
+fetch
+merge
+push
+
+What will happen if the master repository receives a major update since the last local copy was synced?
+
+O Git will push your local copy.
+
+O Nothing will happen.
+
+Git will let you know it's time for an update.
+
+O Git will automatically merge the local copy with the master.
+Correct
+
+Great job! If there are pending changes in the master branch, Git will let you know.
+
 306 Working with Remotes3m
+git clone
+origin
+git remote -v
+git remote show origin
+Remote branches
+git branch -r
+If we want to make a change to a remote branch, what must we do?
+
+O Directly make the change O Use the git branch -r command
+
+Pull the remote branch, merge it with the local branch, then push it back to its origin. O Use the git remote -v command
+Correct
+
+Excellent! We still have to go through the normal workflow to change remote branches.
+
+git status
+
 307 Fetching New Changes3m
+git remote show origin
+git fetch
+git checkout
+git log
+git log origin/master
+git status
+git merge origin/master
+git log
+
+What's the main difference between git fetch and git pull?
+
+git fetch fetches remote updates but doesn't merge; git pull fetches remote updates O git pull fetches remote updates but doesn't merge, while git fetch does.
+
+O git fetch clones the entire repository.
+
+O git pull requires a password while git fetch doesn't.
+Correct
+
+Nice job! git pull instantly merges while git fetch only retrieves remote updates.
+
 308 Updating the Local Repository3m
+git pull
+git log -p -1
+git remote show origin
+git checkout experimental
+
+Assuming no merge conflicts, which type of merge does git pull perform automatically?
+
+O Three-way merge O Explicit merge
+
+Fast-forward merge O Half-merge
+Correct
+
+Awesome! As long as there are no conflicts, Git will move the current branch tip up to the target branch tip and combine histories of both commits.
+
 309 The Pull-Merge-Push Workflow7m
+git push
+git add -p
+git commit -m 'Rename min_absolute to min_gb, use parameter names'
+git push
+git pull
+git log --graph --oneline --all
+Three-way merge
+git log -p origin/master
+git add all_checks.py 
+git commit
+git push
+git log --graph --oneline
+
+What should you do with the <«««, =======, and »»»> conflict markers when resolving a merge
+
+conflict?
+
+Remove all of the conflict markers and only leave the code as it should be after the merge.
+
+O Leave the conflict markers surrounding the code that you want to keep.
+
+Remove the «««< and »»»> markers, and put the ======= marker in front of the lines that you
+
+want to keep.
+
+O Do nothing.
+Correct
+
+Awesome! Conflict markers aren't required when resolving a merge conflict.
+
 310 Pushing Remote Branches8m
+git checkout -b
+git checkout -b refactor
+git commit -a -m 'Create wrapper function for check_disk_full'
+
+How do you switch to a new local branch?
+git checkout -b <branch name> O git branch b O git pull origin branch O git merge branch
+Correct
+
+Great job! The command git checkout -b <branch name> will first create a new branch and then switch to it.
+
+git push -u origin refactor
+
 311 Rebasing Your Changes4m
+What does "git rebase refactor" do?
+Move the current branch on top of the refactor branch O Move the refactor branch on top of the current branch O Move the refactor branch on top of the master branch O Move the master branch on top of the refactor branch
+
+Correct
+
+Nailed it! This makes debugging easier and prevents three-way merges by transferring the completed work from one branch to another.
+
+git log --graph --oneline --all
+git checkout refactor
+git rebase master
+git log --graph --oneline
+git checkout master
+git merge refactor
+git push --delete origin refactor
+git branch -d refactor
+git push
+
 312 Another Rebasing Example8m
 313 Best Practices for Collaboration4m
 314 Module 3 Wrap Up: Working with Remotes1m
