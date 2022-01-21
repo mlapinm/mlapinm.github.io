@@ -657,7 +657,57 @@ git branch -d refactor
 git push
 
 312 Another Rebasing Example8m
+git rebase
+
+def check no network():
+  """Returns True if it fails to resolve Google's URL False otherwise""" 
+  try:
+    socket.gethostbyname("www.google.com") 
+	return False 
+  except:
+    return True
+
+atom all_checks.py
+git commit -a -m'Add a simple network connectivity check'
+
+git fetch
+git rebase
+origin/master
+git rebase origin/master
+git add health_checks.py 
+git rebase --continue
+git log --graph --oneline
+git push
+fetch
+rebase
+push
+
+Generally, git rebase is an alternative to which command?
+O git fetch 
+(.)git merge
+O git push
+O git pull
+Correct
+Awesome! Rebasing instead of merging rewrites history and maintains linearity, making for cleaner code.
+
 313 Best Practices for Collaboration4m
+Always synchronize your branches before starting any work on your own.
+Avoid having very large changes that modify lot of different things.
+When working on a big change, it makes to have a separate feature branch.
+Regularly merge changes made on the master branch back onto the feature branch.
+Have the latest version of the project in the master branch, and the stable version of the project on a separate branch.
+You shouldn't rebase changes that have been pushed to remote repos.
+
+Which of the following statements is true regarding best practices for collaboration?
+O Keep the stable version of the project in the master branch, and the latest version on a separate branch.
+O Try to fit all changes into one large change.
+O You should always rebase changes that have been pushed to a remote repo.
+(.)Always synchronize your branches before starting any work on your own.
+Excellent! This way, when you start changing code, you're starting from the most recent version, minimizing chances of conflicts or the need for rebasing.
+
+Having good commit messages is important.
+
+
 314 Module 3 Wrap Up: Working with Remotes1m
 315 Basic Interaction with GitHub Cheat-Sheet10m
 316 Git Remotes Cheat-Sheet10m
