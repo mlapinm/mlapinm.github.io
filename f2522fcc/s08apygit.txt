@@ -797,12 +797,75 @@ It's important that you understand any changes you accept.
 
 When it comes to coordinating who does what and when, a common strategy for active software projects is to use an issue tracker.
 
-
-
-
+Mailing lists
+IRC channels
+Slack channels
+Telegram groups
 
 410 Tracking Issues8m
+Issue tracker
+Bug tracker
+Bugzilla
+Issues
+Check for critical errors in system logs
+Go through /varyloq/kern.log and /var/loq/syslog and check it there are any critical errors that need attention
+Closes: #4
+
+# health-checks
+
+Scripts that check the health of my computers
+
+This repo will be populated with lots of fancy checks.
+
+Currently the main script is all checks.py
+
+# health-checks
+
+Scripts that check the health of my computers
+This repo will be populated with lots of fancy checks.
+
+Currently the main script is health checks.py^
+
+This script will print "Everything ok" if all checks pass, or the corresponding error messages if some checks fail.
+
+git commit -a
+
+Update README to use the new name of the script
+Also add more information about how this works.
+
+Closes #1
+
+# Please enter the commit message for your changes. Lines starting
+
+git push
+
 411 Continuous Integration5m
+Continuous integration system (Cl)
+Will build and test our code every time there's a change
+
+Once we have our code automatically built and tested, the next automation step is continuous deployment, which is sometimes called continuous delivery (CD).
+
+CI/CD
+Jenkins
+Travis
+
+Pipelines
+Specify the steps that need to run to get the result you want
+
+Artifacts
+The name used to describe any files that are generated as part of the pipeline
+
+SSH keys
+API tokens
+
+Make sure the authorized entities for the test servers are not the same entities authorized to deploy on the production servers.
+
+Always have a plan to recover your access in case your pipeline gets compromised.
+
+www.travis-ci.com
+
+YAML
+
 412 Module 4 Wrap Up: Collaboration1m
 413 Congratulations!1m
 414 Sneak Peek of the Next Course1m

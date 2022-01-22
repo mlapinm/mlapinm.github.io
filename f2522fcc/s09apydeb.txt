@@ -1,0 +1,103 @@
+100 WEEK 1 Troubleshooting Concepts 
+In this module, you'l be introduced to the fundamentals of troubleshooting and you'l learn different strategies and approaches to tackle problems that you might encounter. You'l learn about the concept of debugging and how debugging is one of the core principles of troubleshooting. You'l be introduced to some tools that will help you in the debugging process, like tcpdump, ps, top, itrace, and lots more. Next, you'l explore how to understand the problem.・This might sound like a no brainer, but it's not as easy as you might think! Next, we'l dive into the different approaches when troubleshooting reproducing errors versus intermittent errors. Finally, you'l learn about binary searching a problem.・We'l explore the different types of searches, including binary and linear searches. Then, we'l learn about the concept of bisecting and how it can be used in your troubleshooting approach, and finish up with finding invalid data in a CSV file.
+101 SHOW ALL SYLLABUSSHOW ALL
+102 Course Introduction4m
+103 Intro to Module 1: Troubleshooting Concepts2m
+104 What is debugging?4m
+105 Problem Solving Steps4m
+106 Silently Crashing Application5m
+107 "It Doesn't Work"7m
+108 Creating a Reproduction Case4m
+109 Finding the Root Cause6m
+110 Dealing with Intermittent Issues4m
+111 Intermittently Failing Script9m
+112 What is binary search?3m
+113 Applying Binary Search in Troubleshooting4m
+114 Finding Invalid Data6m
+115 Module 1 Wrap Up: Troubleshooting Concepts2m
+116 Welcome to the Course10m
+117 Linear and Binary Search (Optional)10m
+118 How to Log in to Qwiklabs10m
+119 Practice Quiz: Introduction to Debugging25m
+120 Practice Quiz: Understanding the Problem25m
+121 Practice Quiz: Binary Searching a Problem25m
+
+
+200 WEEK 2 Slowness 
+In this module, you'l learn about what factors can cause a machine or program to act slowly. You'l dive into ways of addressing slowness by identifying the bottleneck that might be causing the slowness. You'l learn about tools to identify which resources are being exhausted, including iotop, iftop, and activity monitor in MacOS. Next, you'l learn how computers use resources, and understand the differences between CPU, RAM, and Cache in order to help you find the possible causes for slowness in our machines or scripts.
+Next up, you'l learn how to write efficient code, then explore profilers to help you identify where your code is spending most of its time. Next, you'l dive into data structures and understand which ones are right for you to use. These include lists, tuples, dictionaries, sets, and expensive loops. Then, you'l dive into complex slowness problems and how utilizing concurrency and adding a caching service can improve the execution of your code. Finally, you'l understand how using threads can make the execution of your code much quicker.
+202 SHOW ALL SYLLABUSSHOW ALL
+203 Intro to Module 2: Slowness2m
+204 Why is my computer slow?4m
+205 How Computers Use Resources5m
+206 Possible Causes of Slowness5m
+207 Slow Web Server10m
+208 Writing Efficient Code4m
+209 Using the Right Data Structures3m
+210 Expensive Loops4m
+211 Keeping Local Results4m
+212 Slow Script with Expensive Loop7m
+213 Parallelizing Operations6m
+214 Slowly Growing in Complexity4m
+215 Dealing with Complex Slow Systems4m
+216 Using Threads to Make Things Go Faster5m
+217 Module 2 Wrap Up: Slowness1m
+218 Monitoring Tools10m
+219 More About Improving Our Code10m
+220 More About Complex Slow Systems10m
+221 Practice Quiz: Understanding Slowness25m
+222 Practice Quiz: Slow Code25m
+223 Practice Quiz: When Slowness Problems Get Complex25m
+
+
+300 WEEK 3 Crashing Programs 
+In this module, you'l get introduced to the age old question, why has my program crashed?・You'l learn how to troubleshoot system crashes and application crashes, what tools you can be used to help identify the cause of the crash, and what log files to look at in order to find what might have gone wrong. Next, you'l dive into investigating why code crashes, and what you can do to prevent that from happening. Then, you'l explore what happens when an unhandled error occurs and throws an exception. You'l learn about the printf debugging technique, which will help you identify these errors and exceptions. Finally, you'l explore the concept of handling crashes and incidents at a much larger scale.
+You'l delve into a scenario where a large eCommerce site will throw an error 20% of the time. Once that issue has been fixed, you'l understand the importance of communication and documentation during these incidents, and how writing a post mortem can prevent issues from happening again.
+302 SHOW ALL SYLLABUSSHOW ALL
+303 Intro to Module 3: Crashing Programs3m
+304 Systems That Crash6m
+305 Understanding Crashing Applications6m
+306 What to do when you can't fix the program?4m
+307 Internal Server Error10m
+308 Accessing Invalid Memory7m
+309 Unhandled Errors and Exceptions6m
+310 Fixing Someone Else's Code4m
+311 Debugging a Segmentation Fault5m
+312 Debugging a Python Crash5m
+313 Crashes in Complex Systems6m
+314 Communication and Documentation During Incidents5m
+315 Writing Effective Postmortems4m
+316 Module 3 Wrap Up: Crashing Programs1m
+317 Resources for Understanding Crashes10m
+318 Resources for Debugging Crashes10m
+319 Practice Quiz: Why Programs Crash25m
+320 Practice Quiz: Code that Crashes25m
+321 Practice Quiz: Handling Bigger Incidents25m
+
+
+400 WEEK 4 Managing Resources 
+In this module, you'l learn how to manage your applications. You'l dive into some common issues that may cause your application to crash. You'l also understand what memory leaks are, and how to troubleshoot and prevent them. Up next, you'l run down managing disk space; you'l see some scenarios of how this happens and how to identify what process or application is taking up all your disk space. Then, you'll learn what network saturation is, how it can be caused, and some useful tools and techniques to solve a network saturation problem.
+Next, we'l shift from managing applications to managing your time. You'l get tips on how to prioritize tasks, estimate how long a particular task will take before finishing, and communicate expectations when dealing with important tasks. The final lesson delves into how to deal with hard and complex problems by breaking it down into small, digestible chunks while keeping your eyes on a clear goal. You'l learn that using proactive approaches, like continuous integration, can help you with future issues that might come up. You'l also explore how to plan for future resource usage by making good use of monitoring.
+402 SHOW ALL SYLLABUSSHOW ALL
+403 Intro to Module 4: Managing Resources2m
+404 Memory Leaks and How to Prevent Them5m
+405 Managing Disk Space5m
+406 Network Saturation5m
+407 Dealing with Memory Leaks8m
+408 Getting to the Important Tasks6m
+409 Prioritizing Tasks6m
+410 Estimating the Time Tasks Will Take4m
+411 Communicating Expectations5m
+412 Dealing with Hard Problems4m
+413 Proactive Practices5m
+414 Planning Future Resource Usage4m
+415 Preventing Future Problems4m
+416 Module 4 Wrap Up: Managing Resources1m
+417 Congratulations!1m
+418 Sneak Peek of Next Course1m
+419 More About Managing Resources10m
+420 More About Making the Best Use of Our Time10m
+421 More About Preventing Future Breakage10m
+422 Practice Quiz: Managing Computer Resources25m
+423 Practice Quiz: Managing Our Time25m
+424 Practice Quiz: Making Our Future Lives Easier25m
