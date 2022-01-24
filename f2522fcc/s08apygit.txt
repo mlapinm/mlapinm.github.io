@@ -45,6 +45,20 @@ $ diff rearrange1.py rearrange2.py
 
 $ diff -u validations1.py validations2.py
 
+$ diff -u spider.txt spider_fixed.txt
+--- spider.txt  2022-01-22 11:12:11.208517700 +0300
++++ spider_fixed.txt    2022-01-22 11:12:48.358885600 +0300
+@@ -1,6 +1,6 @@
+ The itsy bitsy spider climbed up the waterspout.
+ Down came the rain
+-And washed the spider out
++And washed the spider out.
+ Out came the sun
+ And dried up all the rain
+ And the itsy bitsy spider climbed up the spout again.
+
+
+
 wdiff
 meld
 KDiff3
@@ -180,6 +194,17 @@ git status
 
 git commit
 
+$ git config -l
+
+$ git config --list
+user.name=John Doe
+user.email=johndoe@example.com
+color.status=auto
+color.branch=auto
+color.interactive=auto
+color.diff=auto
+
+
 114 Tracking Files5m
 
 
@@ -195,8 +220,159 @@ git commit
 122 Initial Git Cheat Sheet10m
 123 How to Log in to Qwiklabs10m
 124 Practice Quiz: Before Version Control25m
+Practice Quiz: Before Version Control
+Question 1
+Your colleague sent you a patch called fix_names.patch, which fixes a config file called fix_names.conf. What command do you need to run to apply the patch to the config file?
+diff names.conf fix_names.conf
+patch fix_names.conf names.conf
+v patch fix_names.conf < fix_names.patch
+diff names.conf_orig names.conf_fixed > fix_names.conf
+Question 2
+You're helping a friend with a bug in a script called fix_permissions.py, which fixes the permissions of a bunch of files. To work on the file, you make a copy and call it fix_permissions_modified.py. What command do you need to run after solving the bug to send the patch to your friend?
+v diff fix_permissions.py fix_permissions_modified.py > fix_permissions.patch
+patch fix_permissions.py < fix_permissions_modified.py
+patch fix_permissions.py > fix_permissions.patch
+diff fix_permissions.py fix_permissions.diff
+Question 3
+The _____ commandhighlights the words that changed in a file instead of working line by line.
+diff
+diff -u
+v wdiff
+patch
+Question 4
+How can we choose the return value our script returns when it finishes?
+v Using the exit command from the sys module
+Use the patch command
+Use the diff command 
+Use meld
+Question 5
+In addition to the original files, what else do we need before we can use the patch command?
+v Diff file
+exit command of the sys module
+Version control
+Full copy of the new files
+
 125 Practice Quiz: Version Control Systems25m
+Practice Quiz: Version Control Systems
+Question 1
+How can a VCS (Version Control System) come in handy when updating your software, even if you’re a solo programmer? Check all that apply.
+v Git retains local copies of repositories, resulting in fast operations.
+v If something breaks due to a change, you can fix the problem by reverting to a working version before the change.
+Git relies on a centralized server.
+v Git allows you to review the history of your project.
+Question 2
+Who is the original creator and main developer of the VCS (Version Control System) tool Git?
+Bill Gates
+Guido van Rossum
+v Linus Torvalds
+James Gosling
+Question 3
+_____ is a feature of a software management system that records changes to a file or set of files over time so that you can recall specific versions later.
+A repository
+sys.exit()
+v Version control
+IDE
+Question 4
+A _____ is a collection of edits which has been submitted to the version control system for safe keeping.
+IDE
+version control system
+v commit
+repository
+Question 5
+Within a VCS, project files are organized in centralized locations called _____ where they can be called upon later.
+commits
+v repositories
+IDE
+yum
+
 126 Practice Quiz: Using Git25m
+Practice Quiz: Using Git
+Total points 5
+Question 1
+Before changes in new files can be added to the Git directory, what command will tell Git to track our file in the list of changes to be committed?
+git status
+v git add
+git commit 
+git init
+Question 2
+Which command would we use to review the commit history for our project?
+git clone
+git status
+git config -l
+v git log
+Question 3
+What command would we use to make Git track our file?
+git clone
+git status
+v git add
+git log
+Question 4
+Which command would we use to look at our config?
+git clone
+git status
+v git config -l
+git log
+Question 5
+Which command would we use to view pending changes?
+git clone
+v git status
+git config -l
+git log
+127 Qwiklabs Assessment: Introduction to Git
+sudo apt update
+sudo apt install git
+git --version
+git version 2.11.0
+
+mkdir my-git-repo
+cd my-git-repo
+git init
+git config --global user.name "Mikhail"
+
+git config -l
+user.name=Mikhail
+user.email=mmlapinm@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+
+git config --global user.email "mmlapinm@gmail.com"
+
+Git Operations
+
+nano README
+This is my first repository.
+
+git status
+git add README
+git commit
+This is my first commit!
+
+nano README
+A repository is a location where all the files of a particular project are stored.
+
+git status
+
+git diff README
+
+git add README
+git status
+git commit -m "This is my second commit."
+
+git log
+git log
+commit f577f38d6e0ff52cc2489263c60bf9f4f8387899
+Author: Mikhail <mmlapinm@gmail.com>
+Date:   Sat Jan 22 10:13:19 2022 +0000
+
+    This is my second commit.
+
+commit 7c1c24cdda12a9c97fc11cf3ae4feb7f26b9954f
+Author: Mikhail <mmlapinm@gmail.com>
+Date:   Sat Jan 22 09:53:35 2022 +0000
+
+    This is my first commit!
 
 200 WEEK2 Using Git Locally In this module, you’ll dive into advanced Git interactions by skipping the staging area for small code changes, and understand how Git uses the HEAD alias to represent checked-out snapshots. Next, you’ll explore how to move and remove files before finally getting a cheat sheet to help you in your Git explorations! The next step of your learning will include how to undo changes before committing and how to amend commits once they’re submitted. Finally, you’ll be able to identify errors in commits that were submitted a while back. In the final section of this module, you’ll explore the concept of branching and merging. You’ll learn what a branch is, how to create one, and how they work in harmony with you and your code. Once you’re comfortable with branching, you’ll dive into merging, how it works with branched data, and how to deal with merge conflicts.
 201 SHOW ALL SYLLABUSSHOW ALL
@@ -479,8 +655,162 @@ git merge --abort
 217 Git Revert Cheat Sheet10m
 218 Git Branches and Merging Cheat Sheet10m
 219 Practice Quiz: Advanced Git Interaction25m
+Practice Quiz: Advanced Git Interaction
+Total points 5
+Question 1
+Which of the following commands is NOT an example of a method for comparing or reviewing the changes made to a file?
+git log -p
+git diff --staged
+git add -p
+v git mv
+Question 2
+What is the gitignore file?
+A file containing a list of commands that Git will ignore.
+A file the user is intended to ignore.
+A file listing uncommitted changes.
+v A file containing a list of files or filename patterns for Git to skip for the current repo.
+Question 3
+What kind of file will the command git commit -a not commit?
+Tracked files
+v New files
+Old files
+Staged files
+Question 4
+What does HEAD represent in Git?
+The subject line of a commit message
+The top portion of a commit
+v The currently checked-out snapshot of your project
+The first commit of your project
+Question 5
+If we want to show some stats about the changes in a commit, like which files were changed and how many lines were added or removed, what flag should we add to git log?
+v --stat
+--patch
+-2
+--pretty
+
 220 Practice Quiz: Undoing Things25m
+Practice Quiz: Undoing Things
+Total points 5
+Question 1
+Let's say we've made a mistake in our latest commit to a public branch. Which of the following commands is the best option for fixing our mistake?
+v git revert
+git commit --amend
+git reset
+git checkout -- <file>
+Question 2
+If we want to rollback a commit on a public branch that wasn't the most recent one using the revert command, what must we do?
+Use the git reset HEAD~2 command instead of revert
+Use the revert command repeatedly until we've reached the one we want
+v use the commit ID at the end of the git revert command
+Use the git commit --amend command instead
+Question 3
+What does Git use cryptographic hash keys for?
+To secure project backups
+v To guarantee the consistency of our repository
+To encrypt passwords
+To identify commits
+Question 4
+What does the command git commit --amend do?
+Start a new branch
+Create a copy of the previous commit
+Delete the previous commit
+v Overwrite the previous commit
+Question 5
+How can we easily view the log message and diff output the last commit if we don't know the commit ID?
+v git show
+git identify
+git log
+git revert 
+
 221 Practice Quiz: Branching & Merging25m
+Practice Quiz: Branching & Merging
+Total points 5
+Question 1
+When we merge two branches, one of two algorithms is used. If the branches have diverged, which algorithm is used?
+v three-way merge
+fast-forward merge
+merge conflict
+orphan-creating merge
+Question 2
+The following code snippet represents the result of a merge conflict. Edit the code to fix the conflict and keep the version represented by the current branch.
+<<<<<<< HEAD         
+print("Keep me!")
+=======
+print("No, keep me instead!")
+>>>>>>> brancho-cucamonga
+
+print("Keep me!")
+Question 3
+What command would we use to throw away a merge, and start over? 
+git checkout -b <branch>
+v git merge --abort
+git log --graph --oneline 
+git branch -D <name>
+Question 4
+How do we display a summarized view of the commit history for a repo, showing one line per commit? 
+git log --format=short 
+git branch -D <name>
+v git log --graph --oneline 
+git checkout -b <branch>
+Question 5
+The following script contains the result of a merge conflict. Edit the code to fix the conflict, so that both versions are included.
+def main():
+<<<<<<< HEAD
+    print("Start of program>>>>>>>")
+=======
+    print("End of program!")
+>>>>>>> improvement-to-the-code
+main()
+def main():
+    print("Start of program>>>>>>>")
+    print("End of program!")
+main()
+
+222 Qwiklabs Assessment: Merging Branches in Git
+34.121.119.20
+student-04-31400403df49
+cd ~/food-scripts
+cat favorite_foods.log
+./food_count.py
+
+./food_question.py
+
+git status
+git log
+
+Configure Git
+git config user.name "Mikhail"
+git config user.email "mmlapinm@gmail.com"
+
+git branch improve-output
+git checkout improve-output
+nano food_count.py
+
+print("Favourite foods, from most popular to least popular")
+./food_count.py
+
+git add food_count.py
+git commit -m "Adding a line in the output describing the utility of food_count.py script"
+
+./food_question.py
+
+git log
+
+git revert 21cf3768
+
+git revert 21cf3768
+
+./food_question.py
+
+git checkout master
+
+git merge improve-output
+
+./food_question.py
+
+git status
+
+git log
 
 300 WEEK3 Working with Remotes In this module, you’ll be introduced to GitHub and learn how it works with Git. You’ll create new repositories and clone those repositories onto your computer. Next, we’ll explain what a remote repository is, how we can work with them, and how we can host them. You’ll get familiar with commands like modify, stage, and commit, which will be used for local changes, as well as the fetch command, which can pull any changes from remote repositories. Our final lesson will focus on learning about conflicts. This will allow you to explore the concepts of pull-merge-push workflows, pushing remote branches and rebasing your changes.
 301 SHOW ALL SYLLABUSSHOW ALL
