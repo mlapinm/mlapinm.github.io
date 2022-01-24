@@ -858,16 +858,10 @@ merge
 push
 
 What will happen if the master repository receives a major update since the last local copy was synced?
-
 O Git will push your local copy.
-
 O Nothing will happen.
-
-Git will let you know it's time for an update.
-
+(.) Git will let you know it's time for an update.
 O Git will automatically merge the local copy with the master.
-Correct
-
 Great job! If there are pending changes in the master branch, Git will let you know.
 
 306 Working with Remotes3m
@@ -916,12 +910,10 @@ git remote show origin
 git checkout experimental
 
 Assuming no merge conflicts, which type of merge does git pull perform automatically?
-
-O Three-way merge O Explicit merge
-
-Fast-forward merge O Half-merge
-Correct
-
+O Three-way merge 
+O Explicit merge
+(.) Fast-forward merge 
+O Half-merge
 Awesome! As long as there are no conflicts, Git will move the current branch tip up to the target branch tip and combine histories of both commits.
 
 309 The Pull-Merge-Push Workflow7m
@@ -938,18 +930,10 @@ git commit
 git push
 git log --graph --oneline
 
-What should you do with the <«««, =======, and »»»> conflict markers when resolving a merge
-
-conflict?
-
-Remove all of the conflict markers and only leave the code as it should be after the merge.
-
+What should you do with the <<<, =======, and >>> conflict markers when resolving a merge conflict?
+(.) Remove all of the conflict markers and only leave the code as it should be after the merge.
 O Leave the conflict markers surrounding the code that you want to keep.
-
-Remove the «««< and »»»> markers, and put the ======= marker in front of the lines that you
-
-want to keep.
-
+O Remove the <<<< and >>>> markers, and put the ======= marker in front of the lines that you want to keep.
 O Do nothing.
 Correct
 
@@ -1043,8 +1027,104 @@ Having good commit messages is important.
 316 Git Remotes Cheat-Sheet10m
 317 Conflict Resolution Cheat Sheet10m
 318 Practice Quiz: Introduction to GitHub25m
+Practice Quiz: Introduction to GitHub
+Total points 4
+Question 1
+When we want to update our local repository to reflect changes made in the remote repository, which command would we use?
+git clone <URL>
+git push
+v git pull
+git commit -a -m
+Question 2
+git config --global credential.helper cache allows us to configure the credential helper, which is used for ...what?
+Troubleshooting the login process
+Dynamically suggesting commit messages
+Allowing configuration of automatic repository pulling
+v Allowing automated login to GitHub
+Question 3
+Name two ways to avoid having to enter our password when retrieving and when pushing changes to the repo. (Check all that apply)
+Implement a post-receive hook
+v Use a credential helper
+v Create an SSH key-pair
+Use the git commit -a -m command.
+Question 4
+Before we have a local copy of a commit, we should download one using which command? 
+git commit -a -m
+git push
+git pull
+v git clone <URL>
+
 319 Practice Quiz: Using a Remote Repository25m
+Practice Quiz: Using a Remote Repository
+Total points 5
+Question 1
+In order to get the contents of a remote branch without automatically merging, which of these commands should we use?
+git pull
+v git remote update
+git checkout
+git log -p -1
+Question 2
+If we need to find more information about a remote branch, which command will help us?
+git fetch
+git checkout
+git remote update
+v git remote show origin
+Question 3
+What command will download remote branches from remote repositories without merging the content with your current workspace automatically?
+git checkout
+git pull
+v git fetch
+git remote update
+Question 4
+What type of merge creates a new merge commit?
+Fast-forward merge
+v? Implicit merge
+Explicit merge
+Squash on merge
+Question 5
+What method of getting remote contents will automatically merge the remote branch with the current local branch?
+git fetch
+git checkout
+git remote update
+v git pull
+
 320 Practice Quiz: Solving Conflicts25m
+Practice Quiz: Solving Conflicts
+Total points 5
+Question 1
+If you’re making changes to a local branch while another user has also made changes to the remote branch, which command will trigger a merge?
+git push
+v git pull
+git rebase
+git fetch
+Question 2
+Which of the following is a reason to use rebase instead of merging? 
+v When you want to keep a linear commit history
+When you want a set of commits to be clearly grouped together in history
+When you are on a public branch
+When pushing commits to a remote branch
+Question 3
+Where should we keep the latest stable version of the project?
+The master branch
+v A separate branch from the master branch
+The debug branch
+A remote branch 
+Question 4
+Which of the following statements represent best practices for collaboration? (check all that apply)
+v When working on a big change, it makes sense to have a separate feature branch.
+You should always rebase changes that have been pushed to remote repos.
+v Always synchronize your branches before starting any work on your own.
+v Avoid having very large changes that modify a lot of different things.
+Question 5
+What command would we use to change the base of the current branch?
+git checkout <branchname>
+git pull
+v git rebase <branchname>
+git fetch
+
+321 
+
+
 
 400 WEEK 4 Collaboration In this module, you’ll continue to explore the collaboration tools available in Git. You’ll learn about the tools that are available to help improve the quality of your code and to better track your code. This includes an overview of pull requests and how the typical workflow of a pull request looks like on GitHub. Next, you’ll dive into how you can squash changes in your code. We’ll finish up by providing you with a cheat sheet on fork and pull requests. Next up, we’ll cover what code reviews are and what the code review workflow looks like. Then, you’ll learn about how to use code reviews on GitHub. The final lesson of this module will focus on managing projects. We’ll take a rundown of best practices on managing projects and how to manage collaboration within those projects. We’ll explore different ways of tracking issues and finish up by discussing the concept of continuous integration with your projects.
 401 Intro to Module 4: Collaboration2m
