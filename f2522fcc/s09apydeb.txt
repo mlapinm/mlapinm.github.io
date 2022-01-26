@@ -333,7 +333,170 @@ print(next_date("2020-02-29")) # Should return 2024-02-29
 
 
 121 Practice Quiz: Binary Searching a Problem25m
+Practice Quiz: Binary Searching a Problem
+Total points 5
+Question 1
+You have a list of computers that a script connects to in order to gather SNMP traffic and calculate an average for a set of metrics. The script is now failing, and you do not know which remote computer is the problem. How would you troubleshoot this issue using the bisecting methodology?
+v Run the script with the first half of the computers.
+Run the script with last computer on the list.
+Run the script with first computer on the list
+Run the script with two-thirds of the computers.
+Question 2
+The find_item function uses binary search to recursively locate an item in the list, returning True if found, False otherwise. Something is missing from this function. Can you spot what it is and fix it? Add debug lines where appropriate, to help narrow down the problem.
+#!/usr/bin/env python
+def find_item(list, item):
+  list.sort()
+  #Returns True if the item is in the list, False if not.
+  if len(list) == 0:
+    return False
+  #Is the item in the center of the list?
+  middle = len(list)//2
+  if list[middle] == item:
+    return True
+  #Is the item in the first half of the list? 
+  if item < list[middle]:
+    #Call the function with the first half of the list
+    return find_item(list[:middle], item)
+  else:
+    #Call the function with the second half of the list
+    return find_item(list[middle+1:], item)
+  return False
+#Do not edit below this line - This code helps check your work!
+list_of_names = ["Parker", "Drew", "Cameron", "Logan", "Alex", "Chris", "Terry", "Jamie", "Jordan", "Taylor"]
+print(find_item(list_of_names, "Alex")) # True
+print(find_item(list_of_names, "Andrew")) # False
+print(find_item(list_of_names, "Drew")) # True
+print(find_item(list_of_names, "Jared")) # False
+Reset
+Question 3
+The binary_search function returns the position of key in the list if found, or -1 if not found. We want to make sure that it's working correctly, so we need to place debugging lines to let us know each time that the list is cut in half, whether we're on the left or the right. Nothing needs to be printed when the key has been located.   
+For example, binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3) first determines that the key, 3, is in the left half of the list, and prints "Checking the left side", then determines that it's in the right half of the new list and prints "Checking the right side", before returning the value of 2, which is the position of the key in the list.  
+Add commands to the code, to print out "Checking the left side" or "Checking the right side", in the appropriate places.  
+#!/usr/bin/env python
+def binary_search(list, key):
+    #Returns the position of key in the list if found, -1 otherwise.
+    #List must be sorted:
+    list.sort()
+    left = 0
+    right = len(list) - 1
+    while left <= right:
+        middle = (left + right) // 2
+        if list[middle] == key:
+            return middle
+        if list[middle] > key:
+            right = middle - 1
+            print("Checking the left side")            
+        if list[middle] < key:
+            left = middle + 1
+            print("Checking the right side")
+    return -1 
+print(binary_search([10, 2, 9, 6, 7, 1, 5, 3, 4, 8], 1))
+"""Should print 2 debug lines and the return value:
+Checking the left side
+Checking the left side 0
+"""
+print(binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5))
+"""Should print no debug lines, as it's located immediately: 4
+"""
+print(binary_search([10, 9, 8, 7, 6, 5, 4, 3, 2, 1], 7))
+"""Should print 3 debug lines and the return value:
+Checking the right side
+Checking the left side
+Checking the right side 6
+"""
+print(binary_search([1, 3, 5, 7, 9, 10, 2, 4, 6, 8], 10))
+"""Should print 3 debug lines and the return value:
+Checking the right side
+Checking the right side
+Checking the right side 9
+"""
+print(binary_search([5, 1, 8, 2, 4, 10, 7, 6, 3, 9], 11))
+"""Should print 4 debug lines and the "not found" value of -1:
+Checking the right side
+Checking the right side
+Checking the right side
+Checking the right side -1
+"""
+Reset
+Question 4
+When trying to find an error in a log file or output to the screen, what command can we use to review, say, the first 10 lines?
+wc
+tail
+v head
+bisect
+Question 5
+The best_search function compares linear_search and binary_search functions, to locate a key in the list, and returns how many steps each method took, and which one is the best for that situation. The list does not need to be sorted, as the binary_search function sorts it before proceeding (and uses one step to do so). Here, linear_search and binary_search functions both return the number of steps that it took to either locate the key, or determine that it's not in the list. If the number of steps is the same for both methods (including the extra step for sorting in binary_search), then the result is a tie. Fill in the blanks to make this work. 
+#!/usr/bin/env python
+# best_search
+def linear_search(list, key):
+    #Returns the number of steps to determine if key is in the list 
+    #Initialize the counter of steps
+    steps=0
+    for i, item in enumerate(list):
+        steps += 1
+        if item == key:
+            break
+    return steps 
+def binary_search(list, key):
+    #Returns the number of steps to determine if key is in the list 
+    #List must be sorted:
+    list.sort()
+    #The Sort was 1 step, so initialize the counter of steps to 1
+    steps=1
+    left = 0
+    right = len(list) - 1
+    while left <= right:
+        steps += 1
+        middle = (left + right) // 2
+        if list[middle] == key:
+            break
+        if list[middle] > key:
+            right = middle - 1
+        if list[middle] < key:
+            left = middle + 1
+    return steps 
+def best_search(list, key):
+    steps_linear = linear_search(list, key) 
+    steps_binary = binary_search(list, key)
+    results = "Linear: " + str(steps_linear) + " steps, "
+    results += "Binary: " + str(steps_binary) + " steps. "
+    if (steps_linear < steps_binary):
+        results += "Best Search is Linear."
+    elif (steps_linear > steps_binary):
+        results += "Best Search is Binary."
+    else:
+        results += "Result is a Tie."
+    return results
+print(best_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 1))
+#Should be: Linear: 1 steps, Binary: 4 steps. Best Search is Linear.
+print(best_search([10, 2, 9, 1, 7, 5, 3, 4, 6, 8], 1))
+#Should be: Linear: 4 steps, Binary: 4 steps. Result is a Tie.
+print(best_search([10, 9, 8, 7, 6, 5, 4, 3, 2, 1], 7))
+#Should be: Linear: 4 steps, Binary: 5 steps. Best Search is Linear.
+print(best_search([1, 3, 5, 7, 9, 10, 2, 4, 6, 8], 10))
+#Should be: Linear: 6 steps, Binary: 5 steps. Best Search is Binary.
+print(best_search([5, 1, 8, 2, 4, 10, 7, 6, 3, 9], 11))
+#Should be: Linear: 10 steps, Binary: 5 steps. Best Search is Binary.
+Reset
+Coursera Honor Code  Learn more
 
+122 Qwiklabs Assessment: Debugging Python Scripts
+sudo chmod 777 greetings.py
+cat greetings.py
+#!/usr/bin/env python3
+
+import random
+
+def greeting():
+  name = input("Hello!, What's your name?")
+  number = random.randint(1,101)
+  print("hello " + name + ", your random number is " + number)
+
+greeting()
+
+./greetings.py
+
+  print("hello " + name + ", your random number is " + str(number))
 
 200 WEEK 2 Slowness 
 In this module, you'l learn about what factors can cause a machine or program to act slowly. You'l dive into ways of addressing slowness by identifying the bottleneck that might be causing the slowness. You'l learn about tools to identify which resources are being exhausted, including iotop, iftop, and activity monitor in MacOS. Next, you'l learn how computers use resources, and understand the differences between CPU, RAM, and Cache in order to help you find the possible causes for slowness in our machines or scripts.
@@ -428,6 +591,8 @@ A tool that measures the resources that our code is using, giving us a better un
 
 gprof
 cProfile
+
+kcachegrind
 
 Expensive actions
 Those that can take a long time to complete
@@ -545,16 +710,266 @@ O SVS
 You nailed it! The user value is the time spent doing operations in the user space.
 
 213 Parallelizing Operations6m
+Concurrency
+
+Threads
+Let us run parallel tasks inside a process
+
+Threading
+Asyncio
+I/O bound
+CPU bound
+
+A script is ________ if you are running operations in parallel using all available CPU time.
+O I/O bound
+O Threading 
+(•) CPU bound 
+O Asyncio
+Right on! A script is CPU bound if you're running operations in parallel using all available CPU time.
+
 214 Slowly Growing in Complexity4m
+You're creating a simple script that runs a query on a list of product names of a very small business, and initiates automated tasks based on those queries. Which of the following would you use to store product names?
+O SQLite
+O Microsoft SQL Server 
+O Memcached 
+(•) CSV file
+Nice job! A simple CSV file is enough to store a list of product names.
+
 215 Dealing with Complex Slow Systems4m
+A company has a single web server hosting a website that also interacts with an external database server. The web server is processing requests very slowly. Checking the web server, you found the disk I/O has high latency. Where is the cause of the slow website requests most likely originating from?
+v Local disk
+You got it! The local disk I/O latency is causing the application to wait too long for data from disk.
+□	Remote database
+□	Slow Internet
+□	Database index
+
 216 Using Threads to Make Things Go Faster5m
+$ cd thumbnail_generator
+$ time ./thumbnail_generator.py
+Processing: 100%
+real 0ml.962s 
+user 0ml.898s 
+sys 0m0.065s
+
+Executor
+The process that's in charge of distributing the work among the different workers
+
+from concurrent import futures
+
+executor = futures.ThreadPoolExecutor() 
+for root, _, files in os.walk('images'): 
+  for basename in progressbar(files): 
+    if not basename.endswith(’.jpg'): 
+	  continue
+    executor.submit(processfile, root, basename)
+print('Waiting for all threads to finish.') executor.shutdown()
+
+shutdown
+
+executor = futures.ProcessPoolExecutor()
+
+$ time ./thumbnail_generator.py
+Processing: 100%
+Waiting for all threads to finish.
+real 0m0.945s
+user 0m3.277s
+sys	0m0.173s
+
+Which module makes it possible to run operations in a script in parallel that makes better use of CPU processing time?
+O Executor 
+(.) Futures 
+O Varnish 
+O Concurrency
+Woohoo! The futures module makes it possible to run operations in parallel using different executors.
+
 217 Module 2 Wrap Up: Slowness1m
+
 218 Monitoring Tools10m
 219 More About Improving Our Code10m
 220 More About Complex Slow Systems10m
 221 Practice Quiz: Understanding Slowness25m
+Practice Quiz: Understanding Slowness
+Total points 5
+Question 1
+Which of the following will an application spend the longest time retrieving data from?
+CPU L2 cache
+RAM
+Disk
+v The network
+Question 2
+Which tool can you use to verify reports of 'slowness' for web pages served by a web server you manage?
+The top tool
+v The ab tool
+The nice tool
+The pidof tool
+Question 3
+If our computer running Microsoft Windows is running slow, what performance monitoring tools can we use to analyze our system resource usage to identify the bottleneck? (Check all that apply)
+v Performance Monitor
+v Resource Monitor
+Activity Monitor
+top 
+Question 4
+Which of the following programs is likely to run faster and more efficiently, with the least slowdown?
+- A program with a cache stored on a hard drive
+v A program small enough to fit in RAM
+A program that reads files from an optical disc
+A program that retrieves most of its data from the Internet
+Question 5
+What might cause a single application to slow down an entire system? (Check all that apply)
+v A memory leak
+The application relies on a slow network connection
+v Handling files that have grown too large
+Hardware faults
+
 222 Practice Quiz: Slow Code25m
+Practice Quiz: Slow Code
+Total points 5
+Question 1
+Which of the following is NOT considered an expensive operation?
+Parsing a file
+Downloading data over the network
+Going through a list
+v Using a dictionary
+Question 2
+Which of the following may be the most expensive to carry out in most automation tasks in a script?
+v Loops
+Lists
+Vector
+Hash
+Question 3
+Which of the following statements represents the most sound advice when writing scripts?
+Aim for every speed advantage you can get in your code
+Use expensive operations often
+v Start by writing clear code, then speed it up only if necessary
+Use loops as often as possible
+Question 4
+In Python, what is a data structure that stores multiple pieces of data, in order, which can be changed later?
+A hash
+Dictionaries
+v Lists
+Tuples
+Question 5
+What command, keyword, module, or tool can be used to measure the amount of time it takes for an operation or program to execute? (Check all that apply)
+v time
+v kcachegrind
+v cProfile
+break
+
 223 Practice Quiz: When Slowness Problems Get Complex25m
+Practice Quiz: When Slowness Problems Get Complex
+Total points 5
+Question 1
+Which of the following can cache database queries in memory for faster processing of automated tasks?
+Threading
+Varnish
+v Memcached
+SQLite
+Question 2
+What module specifies parts of a code to run in separate asynchronous events?
+Threading
+Futures
+v Asyncio
+Concurrent
+Question 3
+Which of the following allows our program to run multiple instructions in parallel?
+v Threading 
+Swap space
+Memory addressing
+Dual SSD
+Question 4
+What is the name of the field of study in computer science that concerns itself with writing programs and operations that run in parallel efficiently?
+Memory management
+v Concurrency
+Threading
+Performance analysis
+Question 5
+What would we call a program that often leaves our CPU with little to do as it waits on data from a local disk and the Internet?
+Memory-bound
+CPU-bound
+User-bound
+v I/O bound
+
+224 Qwiklabs Assessment: Performance Tuning in Python Scripts
+Qwiklabs Assessment: Performance Tuning in Python Scripts
+CPU bound
+sudo apt install python3-pip
+pip3 install psutil
+
+python3
+import psutil
+psutil.cpu_percent()
+psutil.disk_io_counters()
+sdiskio(read_count=6580, write_count=26953, read_bytes=205771776, write_bytes=766029824, read_time=21632, write_time=98000, read_merged_count=3, write_merged_count=30119, busy_time=14812)
+>>> psutil.net_io_counters()
+snetio(bytes_sent=580037, bytes_recv=115256926, packets_sent=4800, packets_recv=6425, errin=0, errout=0, dropin=0, dropout=0)
+exit()
+
+Basics rsync command
+rsync [Options] [Source-Files-Dir] [Destination]
+
+Options
+
+Uses
+
+-v
+
+Verbose output
+
+-q
+
+Suppress message output
+
+-a
+
+Archive files and directory while synchronizing
+
+-r
+
+Sync files and directories recursively
+
+-b
+
+Take the backup during synchronization
+
+-z
+
+rsync -zvh [Source-Files-Dir] [Destination]
+Copy or sync files locally:
+
+rsync -zvh [Source-Files-Dir] [Destination]
+Copied!
+Copy or sync directory locally:
+
+rsync -zavh [Source-Files-Dir] [Destination]
+Copied!
+Copy files and directories recursively locally:
+
+rsync -zrvh [Source-Files-Dir] [Destination]
+Copied!
+To learn more about rsync basic command, check out this link.
+
+Compress file data during the transfer
+
+import subprocess
+src = "<source-path>" # replace <source-path> with the source directory
+dest = "<destination-path>" # replace <destination-path> with the destination directory
+
+User exercise
+nano ~/scripts/dailysync.py
+
+#!/usr/bin/env python
+import subprocess
+src = "/data/prod/"
+dest = "/data/prod_backup/"
+subprocess.call(["rsync", "-arq", src, dest])
+
+sudo chmod +x ~/scripts/dailysync.py
+./scripts/dailysync.py
+#!/usr/bin/env python
+import subprocess
+src = "./data/prod/"
+dest = "./data/prod_backup/"
+subprocess.call(["rsync", "-arq", src, dest])
 
 
 300 WEEK 3 Crashing Programs 
@@ -562,10 +977,132 @@ In this module, you'l get introduced to the age old question, why has my program
 You'l delve into a scenario where a large eCommerce site will throw an error 20% of the time. Once that issue has been fixed, you'l understand the importance of communication and documentation during these incidents, and how writing a post mortem can prevent issues from happening again.
 302 SHOW ALL SYLLABUSSHOW ALL
 303 Intro to Module 3: Crashing Programs3m
+
 304 Systems That Crash6m
+memtest 86
+S.M.A.R.T
+A user reported an application crashes on their computer. You log in and try to run the program and it crashes again. Which of the following steps would you perform next to reduce the scope of the problem?
+O Check the health of the RAM 
+O Switch the hard drive into another computer 
+O Check the health of the hard drive 
+(.) Review application logs
+Awesome! Reviewing logs is the next best step to determine if logs reveal any reason for the crash.
+
 305 Understanding Crashing Applications6m
+Console app
+Permission denied
+No such file or directory
+Connection refused
+Debug logging
+
+Linux
+strace
+
+MacOS
+dtruss
+
+Windows
+Process Monitor
+
+To find the root cause of a crashing application, we'll want to look at all available logs, figure out what changed, trace the system or library calls the program makes, and create the smallest possible reproduction case.
+
+Where should you look for application logs on a Windows system?
+O The /var/log directory 
+O The .xsession-errors file 
+O The Console app
+(.) The Event Viewer app
+Great job! The Event Viewer app contains logs on a Windows system.
+
 306 What to do when you can't fix the program?4m
+Wrapper
+A function or program that provides a compatibility layer between two functions programs, so they can work well together
+
+Virtual machine
+Container
+
+Watchdog
+A process that checks whether a program is running and, when it's not, starts the program again
+
+An application fails in random intervals after it was installed on a different operating system version. What can you do to work around the issue?
+O Use a wrapper 
+(.) Use a container 
+O Use a watchdog 
+O Use an XML format
+Nice work! A container allows the application to run in its own environment without interfering with the rest of the system.
+
+What were you trying to do?
+What were the steps you followed? 
+What did you expect to happen? 
+What was the actual outcome?
+
 307 Internal Server Error10m
+ssh Webserver
+/var/log
+date
+ls -lt | head
+tail syslog
+netstat
+sudo
+-n
+l
+p
+grep
+
+sudo netstat -nip | grep :80
+
+nginx - dir
+Is -l /etc/nginx/sites-enabled/
+vim /etc/nginx/sites-enabled/site.example.com.conf
+gerver {
+
+listen 80; listen [::]:80;
+
+server_name site.exanple.com;
+
+root /var/www/site.example.com; index index.html;
+
+location / {
+
+include uwsgi_params; uwsgi_pass 127.0.0.1:3031;
+
+}
+
+}
+
+[uwsgi]
+
+chdir = /srv/site.example.con uid = www-data gid = www-data
+
+plugins = python3 wsgi-file = prod.pfl callable = app
+
+plugins = logfile
+
+logger = logs file:/var/log/site.log log-route = logs . *
+
+processes = 4 threads = 2
+
+socket = 127.0.0.1:3031 stats = 127.0.0.1:9191
+
+ls -l site.log
+
+sudo chown www-data.www-data site.log
+
+Where is a common location to view configuration files for a web application running on a Linux server?
+
+/etc/<app folder>
+
+O /var/log/<app folder>
+
+O /srv/<app folder>
+
+O /<app folder>
+Correct
+
+Right on! The /etc directory will contain the application folder that stores configuration files.
+
+
+
+
 308 Accessing Invalid Memory7m
 309 Unhandled Errors and Exceptions6m
 310 Fixing Someone Else's Code4m

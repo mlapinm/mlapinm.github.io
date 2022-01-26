@@ -1122,9 +1122,85 @@ git pull
 v git rebase <branchname>
 git fetch
 
-321 
+321 Qwiklabs Assessment: Introduction to Github
+Checkpoints
+Edit the file and add it to repository
+Create a new file and commit it to the repository
+Add an empty file to the repository through web UI
+
+https://github.com/mlapinm
+z0
+coursera02b
+git clone https://github.com/mlapinm/coursera02b.git
+
+Configure Git
+git config --global user.name "mlapinm"
+git config --global user.email "mlapin@rambler.ru"
+
+clear
+git config -l
+
+$ git config -l
+user.name=mlapinm
+user.email=mlapin@rambler.ru
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/mlapinm/coursera02b.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+
+Edit the file and add it to the repository
+nano README.md
+I am editing the README file. Adding some more details about the project description.
+git status
+git add README.md
+git commit
+I am editing the README file.
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch main
+# Your branch is up-to-date with 'origin/main'.
+#
+# Changes to be committed:
+#       modified:   README.md
+#
+git push origin main
+
+git push
 
 
+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
+
+https://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@github.com/mlapinm/coursera02b.git
+
+git push https://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@github.com/mlapinm/coursera02b.git
+
+
+
+
+Create a new file and commit it to the repository
+nano example.py
+def git_opeation():
+ print("I am adding example.py file to the remote repository.")
+git_opeation()
+git add example.py
+git commit
+Create a new file example.py
+
+Add an empty file to the repository through web UI
+
+b0202a.txt
+
+git push origin main
+
+git pull origin main
+
+git push origin main
+
+Wowza, you’re already halfway through the program! We’d love to hear from you about your experience so far. Be sure to share your story on social media using the hashtags #ITCert #Python #GrowWithGoogle
 
 400 WEEK 4 Collaboration In this module, you’ll continue to explore the collaboration tools available in Git. You’ll learn about the tools that are available to help improve the quality of your code and to better track your code. This includes an overview of pull requests and how the typical workflow of a pull request looks like on GitHub. Next, you’ll dive into how you can squash changes in your code. We’ll finish up by providing you with a cheat sheet on fork and pull requests. Next up, we’ll cover what code reviews are and what the code review workflow looks like. Then, you’ll learn about how to use code reviews on GitHub. The final lesson of this module will focus on managing projects. We’ll take a rundown of best practices on managing projects and how to manage collaboration within those projects. We’ll explore different ways of tracking issues and finish up by discussing the concept of continuous integration with your projects.
 401 Intro to Module 4: Collaboration2m
@@ -1250,7 +1326,7 @@ Closes #1
 git push
 
 411 Continuous Integration5m
-Continuous integration system (Cl)
+Continuous integration system (CI)
 Will build and test our code every time there's a change
 
 Once we have our code automatically built and tested, the next automation step is continuous deployment, which is sometimes called continuous delivery (CD).
@@ -1283,6 +1359,181 @@ YAML
 416 More Information on Code Reviews10m
 417 Additional Tools10m
 418 Practice Quiz: Pull Requests25m
+Practice Quiz: Pull Requests
+Total points 5
+Question 1
+What is the difference between using squash and fixup when rebasing?
+Squash deletes previous commits.
+v Squash combines the commit messages into one. Fixup discards the new commit message.
+Squash only works on Apple operating systems.
+Fixup combines the commit messages into one. Squash discards the commit message.
+Question 2
+What is a pull request?
+The owner of the target repository requesting you to add your changes.
+v A request sent to the owner and collaborators of the target repository to pull your recent changes.
+A request to delete previous changes.
+A request for a specific feature in the next version.
+Question 3
+Under what circumstances is a new fork created?
+v When you want to experiment with changes without affecting the main repository.
+When you clone a remote repository to your local machine.
+During a merge conflict.
+When there are too many branches.
+Question 4
+What combination of command and flags will force Git to push the current snapshot to the repo as it is, possibly resulting in permanent data loss?
+v git push -f
+git log --graph --oneline --all
+git status 
+git rebase -i
+Question 5
+When using interactive rebase, which option is the default, and takes the commits and rebases them against the branch we selected?
+squash
+edit
+reword
+v pick
+
 419 Practice Quiz: Code Reviews25m
+Practice Quiz: Code Reviews
+Total points 5
+Question 1
+When should we respond to comments from collaborators and reviewers?
+When their comments address software-breaking bugs
+No need, just resolve the concerns and be done with it
+v Always
+Only when a code correction is necessary
+Question 2
+What is a nit?
+v A trivial comment or suggestion
+A couple lines of code
+A repository that is no longer maintained
+An orphaned branch
+Question 3
+Select common code issues that might be addressed in a code review. (Check all that apply)
+v Using unclear names
+Following PEP8 guidelines
+v Forgetting to handle a specific condition
+v Forgetting to add tests
+Question 4
+If we've pushed a new version since we've made a recent change, what might our comment be flagged as?
+Accepted
+Resolved
+v Outdated
+Merged
+Question 5
+What are the goals of code review? (Check all that apply)
+v Make sure that the contents are easy to understand
+v Ensure consistent style
+Build perfect code
+v Ensure we don't forget any important cases
+
 420 Practice Quiz: Managing Collaboration25m
+Practice Quiz: Managing Collaboration
+Total points 5
+Question 1
+How do we reference issues in our commits with automatic links?
+v By using one of the keywords followed by a hashtag and the issue number.
+By using an asterisk (*) after the issue number.
+By typing the issue number inside braces ({}).
+By using a special keyword.
+Question 2
+What is an artifact in terms of continuous integration/continuous delivery (CI/CD) pipelines?
+An old and obsolete piece of code or library.
+v Any file generated as part of the CI/CD pipeline.
+An unintended minor glitch in a computer program
+An automated series of tests that run each time there is a new commit or pull request.
+Question 3
+Which of the following statements are good advice for project maintainers? (Check all that apply)
+Coordinate solely via email
+v Reply promptly to pull-requests
+v Understand any changes you accept
+v Use an issue tracker 
+Question 4
+Which statement best represents what a Continuous Integration system will do?
+v Run tests automatically
+Update with incremental rollouts
+Assign issues and track who's doing what
+Specify the steps that need to run to get the result you want
+Question 5
+Which statement best represents what a Continuous Delivery (CD) system will do?
+Run tests automatically
+v Update with incremental rollouts
+Assign issues and track who's doing what
+Specify the steps that need to run to get the result you want
+
+421 Qwiklabs Assessment: Pushing Local Commits to Github
+
+Forking and detect function behavior
+https://github.com/google/it-cert-automation-practice
+fork
+git clone https://github.com/mlapinm/it-cert-automation-practice.git
+git remote -v
+git remote add upstream https://github.com/mlapinm/it-cert-automation-practice.git
+
+$ git remote -v
+origin  https://github.com/mlapinm/it-cert-automation-practice.git (fetch)
+origin  https://github.com/mlapinm/it-cert-automation-practice.git (push)
+upstream        https://github.com/mlapinm/it-cert-automation-practice.git (fetch)
+upstream        https://github.com/mlapinm/it-cert-automation-practice.git (push)
+
+Configure Git
+git config --global user.name "mlapinm"
+git config --global user.email "mlapin@rambler.ru"
+git config -l
+
+Fix the script
+
+git branch improve-username-behavior
+git checkout improve-username-behavior
+cd ~/it-cert-automation-practice/Course3/Lab4
+ls
+nano validations.py
+
+#!/usr/bin/env python3
+
+import re
+
+def validate_user(username, minlen):
+    """Checks if the received username matches the required conditions."""
+    if type(username) != str:
+        raise TypeError("username must be a string")
+    if minlen < 1:
+        raise ValueError("minlen must be at least 1")
+
+    # Usernames can't be shorter than minlen
+    if len(username) < minlen:
+        return False
+    # Usernames can only use letters, numbers, dots and underscores
+    if not re.match('^[a-z0-9._]*$', username):
+        return False
+    # Usernames can't begin with a number
+    if username[0].isnumeric():
+        return False
+    return True
+
+print(validate_user("blue.kale", 3)) # True
+print(validate_user(".blue.kale", 3)) # Currently True, should be False
+print(validate_user("red_quinoa", 4)) # True
+print(validate_user("_red_quinoa", 4)) # Currently True, should be False
+
+python3 validations.py
+
+Commit the changes
+git status
+git add validations.py
+git status
+git commit
+
+Closes: #1
+Updated validations.py python script.
+Fixed the behavior of validate_user function in validations.py.
+
+4$ git commit
+[improve-username-behavior cab4bd8] Closes: #1 Updated validations.py python script. Fixed the behavior of validate_user function in validations.py.
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+Push changes
+git push origin improve-username-behavior
+git status
+
+
  
