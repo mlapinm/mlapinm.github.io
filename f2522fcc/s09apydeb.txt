@@ -1027,7 +1027,7 @@ An application fails in random intervals after it was installed on a different o
 O Use a wrapper 
 (.) Use a container 
 O Use a watchdog 
-O Use an XML format
+O Use an XML formatx
 Nice work! A container allows the application to run in its own environment without interfering with the rest of the system.
 
 What were you trying to do?
@@ -1100,23 +1100,323 @@ Correct
 
 Right on! The /etc directory will contain the application folder that stores configuration files.
 
-
-
-
 308 Accessing Invalid Memory7m
+Invalid memory
+Accessing invalid memory means that the process tried to access a portion of the systems memory that wasn't assigned to it.
+
+Pointers
+The variables that store memory addresses
+Segmentation faults
+Segfaults
+Debugging symbols
+Undefined behavior
+The code is doing something that's not valid the programming language
+
+Valgrind
+A very powerful tool that can tell us if the code is doing any invalid operations, no matter if it crashes or not
+
+Dr. Memory
+
+Which of the following can assist in finding out if invalid operations are occurring in a program running on a Windows system?
+O Valgrind 
+(.) Dr. Memory 
+O PBD files Segfaults
+You got it! Dr. Memory can assist in finding out if invalid operations are occurring in a program running on Windows or Linux.
+
 309 Unhandled Errors and Exceptions6m
+IndexError
+TypeError
+AttributeError
+DivisionByZeroError
+
+Traceback
+Shows the lines of the different functions that were being executed when the problem happened
+
+pdb
+printf debugging
+
+print puts echo logging
+
+What can you use to notify users when an error occurs, the reason why it occurred, and how to resolv it?
+O The pdb module 
+(.) The logging module 
+O Use printf debugging 
+O The echo command
+Excellent! The logging module sets debug messages to show up when the code fails.
+
 310 Fixing Someone Else's Code4m
+def process_file(root, basename):
+  """Generates a thumbnail of the given image"""
+  # Open the image that we need to process filename = f1{root}/{basename}'
+  image = PIL.Image.open(filename)
+  # Generate the thumbnail size = (128, 128) 
+  image.thumbnail(size)
+  # Store the thumbnail in the thumbnails folder 
+  new_name = f1thumbnails/{basename}'
+  image.save(new_name, "JPEG ) 
+  return new name
+
+After getting acquainted with the program's code, where might you start to fix a problem?
+O Run through tests 
+O Read the comments
+(.) Locate the affected function 
+O Create new tests
+Nicely done! Start working on the function that produced the error, and the function(s) that called it.
+
 311 Debugging a Segmentation Fault5m
+Core files
+Store all the information related to the crash that we, or someone else, can debug what's going on
+
+$ ./example
+Segmentation fault
+$ ulimit -c	unlimited
+$ ./example
+Segmentation fault (core dumped)
+$ ls -l core
+-rw	 1 user user 380928 Jan 9 14:27 core
+
+gdb -c core example
+backtrace
+
+(qdb) backtrace
+(gdb) up
+(gdb) list
+(gdb) print i 
+$1 = 1
+
+(gdb) print i $1 = 1
+(gdb) print argv[0]
+$2 = 0x7fffcef4e32c "./example"
+(gdb) print argv[1]
+$3 = 0x0 
+(gdb)
+
+NULL pointer
+Off-by-one error
+
+When debugging code, what command can you use to figure out how your program reached the failed state?
+O gdb
+(.) backtrace 
+O ulimit
+O list
+Nice job! The backtrace command can be used to show a summary of the function calls that were used to the point where the failure occurs.
+
 312 Debugging a Python Crash5m
+$ cd update_products
+$ cat new_products.csv
+product_code,description 
+AV-101,Audio and Video converter 101 mm 
+SP-405,Sound Proofing 4.05 inches 
+TH-2,Tethering connector v2
+
+$ ./update_products.py new_products.
+Traceback (most recent call last):
+File "./update_products.py", line 59, in <nodule> sys.exit(main())
+File "./update_products.py", line 54, in main update_data(database, options)
+File "./update_products.py", line 42, in update_data row['product_code'], row['description']))
+KeyError: 'product code'
+
+Traceback
+pdb3
+
+$ pdb3 update_products.py new_products.csv
+> /home/user/update_products/update_products.py(2)<module>()
+-> import argparse 
+(Pdb)
+
+next
+continue
+
+(Pdb) continue
+(Pdb) print(row)
+OrderedDict([('\ufeffproduct_code', 'AV-101'), ('description', 'Audio and Video converter 101 mm')]) 
+(Pdb) 
+
+ByteOrderMark
+BOM
+Little-endian
+Big-endian
+utf-8-sig
+open (options. filename, 'r', encoding='utf-8-sig')
+(Pdb) print(row)
+OrderedDict([('\ufeffproduct_code'
+
+When debugging in Python, what command can you use to run the program until it crushes with an error?
+O Pdb3
+O next 
+(•) continue 
+O KeyError
+
 313 Crashes in Complex Systems6m
+A website is producing service errors when loading certain pages. Looking at the logs, one of three web servers isn't responding correctly to requests. What can you do to restore services, while troubleshooting further?
+O Deploy a new web server 
+O Roll back application changes 
+(.) Remove the server from the pool 
+O Create standby servers
+Great job! Removing the server from the pool will provide full service to users from the remaining web servers
+
 314 Communication and Documentation During Incidents5m
+Communications lead
+Needs to know what's going on, and provide timely updates on the current state and how long until the problems resolved
+
+Incident commander/ Incident controller
+Needs to look at the big picture and decide what's the best use of the available resources
+
+Which of the following persons is responsible for communicating with customers that are affected by an access issue with a website?
+(.) Communications lead 
+O Manager 
+O Incident controller 
+O Software engineer
+Nice work! The communications lead provides timely updates on the incident and answers questions from users.
+
+The root cause
+How you diagnosed the problem and found that root cause
+What you did to fix the issue
+What needs to be done to prevent the problem from happening again
+
+Postmortem
+
 315 Writing Effective Postmortems4m
+Postmortems
+Documents that describe details of incidents to help us learn from our mistakes
+
+What caused the issue
+What the impact of the issue was
+How it got diagnosed
+The short-term remediation you applied
+The long-term remediation you recommend
+
+Postmortem: External network down
+Date: 2020-01-06
+Executive Summary
+Impact: The network connection was down and nobody could access the internet for 2 hours. 
+Root Cause: A misconfiguration in our main router caused all traffic to be sent to a void. 
+Action Items: The bad configuration was rolled back. Improved testing to avoid this in the future is being developed.
+Root Causes and Trigger
+With change #275643, we intended to deploy traffic shaping to our router. However, there was a typo in the rules that caused the router to error out with syntax error and deny all traffic instead.
+The change was created in advanced and put into the release pipeline. This meant that there was a significant delay between the commit and the outage, causing some confusion as to why it had happened.
+Lessons Learned
+Things that went well:
+Our monitoring detected the problem really quickly
+Once we understood the problem, we were able to roll back to the previously known
+
+When writing an effective postmortem of an incident, what should you NOT include?
+O What caused the issue 
+(.) Who caused the issue 
+O What the impact was 
+O The short-term remediation
+Nailed it! A postmortem of an incident should not include the person(s) who caused the issue.
+
 316 Module 3 Wrap Up: Crashing Programs1m
+
 317 Resources for Understanding Crashes10m
 318 Resources for Debugging Crashes10m
 319 Practice Quiz: Why Programs Crash25m
+Practice Quiz: Why Programs Crash
+Total points 5
+Question 1
+When using Event Viewer on a Windows system, what is the best way to quickly access specific types of logs?
+Export logs
+v Create a custom view
+Click on System Reports
+Run the head command
+Question 2
+An employee runs an application on a shared office computer, and it crashes. This does not happen to other users on the same computer. After reviewing the application logs, you find that the employee didn’t have access to the application. What log error helped you reach this conclusion?
+“No such file or directory”
+“Connection refused”
+v “Permission denied”
+“Application terminated”
+Question 3
+What tool can we use to check the health of our RAM?
+Event Viewer
+S.M.A.R.T. tools
+v memtest86
+Process Monitor
+Question 4
+You've just finished helping a user work around an issue in an application. What important but easy-to-forget step should we remember to do next?
+Fix the code
+v Report the bug to the developers 
+Reinstall the program
+Change the user’s password
+Question 5
+A user is experiencing strange behavior from their computer. It is running slow and lagging, and having momentary freeze-ups that it does not usually have. The problem seems to be system-wide and not restricted to a particular application. What is the first thing to ask the user as to whether they have tried it?
+Adding more RAM
+Reinstalling Windows
+v Identified the bottleneck with a resource monitor
+Upgrade their HDD to an SSD
+Woohoo! The first step is identifying the root cause of the problem. Resource monitors such as Activity Monitor (MacOS), top (Linux and MacOS) or Resource Monitor (Windows) can help us identify whether our bottleneck is CPU-based or memory-based.
+
 320 Practice Quiz: Code that Crashes25m
+Practice Quiz: Code that Crashes
+Total points 5
+Question 1
+Which of the following will let code run until a certain line of code is executed?
+v Breakpoints
+Watchpoints
+Backtrace
+Pointers
+Question 2
+Which of the following is NOT likely to cause a segmentation fault?
+Wild pointers
+Reading past the end of an array
+Stack overflow
+v RAM replacement
+Question 3
+A common error worth keeping in mind happens often when iterating through arrays or other collections, and is often fixed by changing the less than or equal sign in our for loop to be a strictly less than sign. What is this common error known as?
+Segmentation fault
+backtrace
+The No such file or directory error
+v Off-by-one error
+Nice work! The Off-by-one bug, often abbreviated as OB1, frequently happens in computer programming when an iterative process iterates one time too many or too little.
+Question 4
+A very common method of debugging is to add print statements to our code that display information, such as contents of variables, custom error statements, or return values of functions. What is this type of debugging called?
+Backtracking
+Log review
+v Printf debugging
+Assertion debugging
+Question 5
+When a process crashes, the operating system may generate a file containing information about the state of the process in memory to help the developer debug the program later. What are these files called?
+Log files
+v Core files
+Metadata file
+Cache file
+Right on! Core files (or core dump files) record an image and status of a running process, and can be used to determine the cause of a crash.
+
 321 Practice Quiz: Handling Bigger Incidents25m
+Practice Quiz: Handling Bigger Incidents
+Total points 5
+Question 1
+Which of the following would be effective in resolving a large issue if it happens again in the future?
+Incident controller
+v Postmortem
+Rollbacks
+Load balancers
+Question 2
+During peak hours, users have reported issues connecting to a website. The website is hosted by two load balancing servers in the cloud and are connected to an external SQL database. Logs on both servers show an increase in CPU and RAM usage. What may be the most effective way to resolve this issue with a complex set of servers?
+Use threading in the program
+Cache data in memory
+v Automate deployment of additional servers
+Optimize the database
+Question 3
+It has become increasingly common to use cloud services and virtualization. Which kind of fix, in particular, does virtual cloud deployment speed up and simplify?
+v Deployment of new servers 
+Application code fixes
+Log reviewing
+Postmortems
+Question 4
+What should we include in our postmortem? (Check all that apply)
+v Root cause of the issue
+v How we diagnosed the problem
+v How we fixed the problem
+Who caused the problem
+Question 5
+In general, what is the goal of a postmortem? (Check all that apply)
+To identify who is at fault
+v To allow prevention in the future
+v To allow speedy remediation of similar issues in the future
+To analyze all system bugs
+
+322 Qwiklabs Assessment: Fixing Errors in Python Scripts
 
 
 400 WEEK 4 Managing Resources 
