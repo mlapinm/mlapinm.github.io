@@ -1417,7 +1417,63 @@ v To allow speedy remediation of similar issues in the future
 To analyze all system bugs
 
 322 Qwiklabs Assessment: Fixing Errors in Python Scripts
+Qwiklabs Assessment: Fixing Errors in Python Scripts
+ImportError
+cd /
+python3 /usr/bin/infrastructure
+sudo apt install python3-pip -y
+pip3 install matplotlib
 
+NoFileError
+python3 /usr/bin/infrastructure
+
+
+mv data.bak data.csv
+
+
+
+cd /
+python3 /usr/bin/infrastructure
+
+cat ~/data.csv
+sudo chmod 777 ~/data.csv
+
+#!/usr/bin/env python3
+import csv
+import os
+import matplotlib
+import numpy as np
+
+class NoFileError(Exception):
+  pass
+
+class MissingColumnError(Exception):
+  pass
+
+columns = {'firstname','surname','company','job title'}
+
+try:
+  CSV_FILE = os.path.expanduser('~') + '/data.csv'
+
+  if not os.path.isfile(CSV_FILE):
+    print('Scanning for data.csv...')
+    raise NoFileError
+  else:
+    with open(CSV_FILE) as f:
+      csv_data = np.genfromtxt(f,delimiter=',',dtype=str)
+      missing_column = list(columns - set(csv_data[0]))
+
+      if missing_column:
+        raise MissingColumnError
+      f.close()
+	  
+	  
+
+except NoFileError:
+  print("NoFileError: Could not find data.csv in the working directory")
+
+except MissingColumnError:
+  print("MissingColumnError: Could not find column {} in data.csv".format(missing_column[0]))
 
 400 WEEK 4 Managing Resources 
 In this module, you'l learn how to manage your applications. You'l dive into some common issues that may cause your application to crash. You'l also understand what memory leaks are, and how to troubleshoot and prevent them. Up next, you'l run down managing disk space; you'l see some scenarios of how this happens and how to identify what process or application is taking up all your disk space. Then, you'll learn what network saturation is, how it can be caused, and some useful tools and techniques to solve a network saturation problem.
