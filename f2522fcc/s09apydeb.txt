@@ -1424,19 +1424,171 @@ In this module, you'l learn how to manage your applications. You'l dive into som
 Next, we'l shift from managing applications to managing your time. You'l get tips on how to prioritize tasks, estimate how long a particular task will take before finishing, and communicate expectations when dealing with important tasks. The final lesson delves into how to deal with hard and complex problems by breaking it down into small, digestible chunks while keeping your eyes on a clear goal. You'l learn that using proactive approaches, like continuous integration, can help you with future issues that might come up. You'l also explore how to plan for future resource usage by making good use of monitoring.
 402 SHOW ALL SYLLABUSSHOW ALL
 403 Intro to Module 4: Managing Resources2m
+
 404 Memory Leaks and How to Prevent Them5m
+Garbage collector
+In charge of freeing the memory that's no longer in use
+Memory profiler
+Valgrind
+python3 -m memory_profiler contents_stats_simple.py
+Which of the following descriptions most likely points to a possible memory leak?
+(.) Application process uses more memory even after a restart.
+O Garbage collector carries out its task.
+O The function returns after it completes.
+O Valgrind figures out memory usage.
+Woohoo! An app that still needs a lot of memory, even after a restart, most likely points to memory leak.
+
 405 Managing Disk Space5m
+Installed binaries and libraries 
+Data stored by the applications
+Cached information Logs
+Temporary files Backups
+
+No space left on device
+Deleted files
+sudo Isof | qrep deleted
+
+Which of the following is an example of unnecessary files on a server storage device that can affect applications from running if not cleaned up properly?
+O A SQL database 
+O A mailbox database 
+O A set of application files
+(.) A set of large temporary files
+You nailed it! Large temporary files may remain if an application crashes because it's not cleaned up automatically.
+
 406 Network Saturation5m
+Latency
+Bandwidth
+Latency
+The delay between sending a byte of data from one point and receiving it on the other
+Bandwidth
+How much data can be sent or received a second
+iftop
+Traffic shaping
+A way of marking the data packets sent over the network with different priorities to avoid having huge chunks of data use all of the bandwidth
+The custom application running on a server can't receive new connections. Existing connections are sending and receiving data in a reasonable time. Which of the following explains the reason why new sessions can't be established with the server?
+(•) Too many connections 
+O High network latency 
+O Low network bandwidth 
+O No traffic shaping
+Great work! There are limits to how many connections a single server can have, which will prevent new connections.
+
 407 Dealing with Memory Leaks8m
+uxterm
+$ uxterm &
+Scroll buffer
+Feature that lets us scroll up and see the things that we executed and their output
+od -cx /dev/urandom
+memory_profiler
+Decorator
+Used in Python to add extra behavior to functions without having to modify the code
+
 408 Getting to the Important Tasks6m
+Eisenhower Decision Matrix
+Important
+Not important
+Urgent
+Not urgent
+Technical debt
+The pending work that accumulates when we choose a quick-and-easy solution instead of applying a sustainable long-term one
+
+Which of the following describes a technical debt?
+(.) Restarting a web server that has suspended services.
+O Rewriting a program to prevent memory leaks.
+O Setting up traffic shaping to improve communication with remote services. 
+O Adding a hard drive to make room to install the application.
+
 409 Prioritizing Tasks6m
+Make a list of all the tasks that need to get done
+Check the real urgency of the tasks
+Assess the importance of each issue
+How much effort they'll take
+
+Most Important
+Important
+Not so important
+
+The key here is to always work on important tasks.
+
+Using a basic structure to organize and prioritize tasks, what's the next thing you should do after creating a list of all the tasks you need to complete?
+O Sort tasks in groups.
+O Assess the importance of each issue.
+(.) Complete most urgent tasks immediately.
+O Estimate the amount of effort.
+Woohoo! The most urgent tasks should be done immediately after completing the list.
+
 410 Estimating the Time Tasks Will Take4m
+Which of the following factors will be most beneficial in estimating the time it will take for you to com specific project?
+O Be overly optimistic with your time.
+O Multiply the estimate by a random factor.
+O Double your time.
+(.) Compare time used to similar projects or tasks.
+You nailed it! The best way to estimate time on a new project is to compare your estimate to similar tasks or projects completed previously.
+
 411 Communicating Expectations5m
+Try to be clear and up front about when you expect the issue will be resolved.
+Ticket tracking system
+Organize your tasks by priority
+Which of the following is an example of a practical shortcut to resolve incidents in a datacenter related to hard drive pre-failures?
+(•) Spare drives 
+O Automated RAID scripts 
+O Spare servers
+O Automated server scripts.
+Right on! Spare drives are a practical shortcut that can quickly replace hard drives in a pre-fail state.
+
 412 Dealing with Hard Problems4m
+“Everyone knows that debugging is twice as hard as writing a program in the first place. So if you're as clever as you can be when you write it, how will you ever debug it?”
+Develop code in small, digestible chunks
+Keep your goal clear
+When facing a problem with a service, which of the following examples can remediate the issue quickly for the short-term?
+O Create tests for the program before coding.
+O Develop codes in small chunks.
+(.) Ask someone who has solved the issue before for help.
+O Grab a cup of coffee.
+
 413 Proactive Practices5m
+If we're the ones writing the code, one thing we can do is to make sure that our code has good unit tests and integration tests.
+Continuous integration
+Test environment
+Deploy software in phases or canaries
+Debug logging
+
+Centralized logs collection
+A special server that gathers all the logs from all the servers, or even all the computers in the network
+Monitoring system
+Ticketing systems
+If we ask users to provide the needed information up front, we don’t have to waste time and go back and forth.
+Playbooks
+
 414 Planning Future Resource Usage4m
+NAS Network-Attached Storage
+You have a small rack of servers and other components that make up a virtual infrastructure. This rack hosts virtual machines that provide web services, and user file shares to employees in the local office, and immediate regional branches. Which component in the rack can be most easily planned for future growth?
+
+o CPU Capacity 
+o RAM Capacity 
+(.) NAS capacity 
+o Network bandwidth
+Nice job! Network Attached Storage (NAS) products from vendors like NetApp can provide additional shelves to add more storage as the website's content, and users' data increases in size.
+
 415 Preventing Future Problems4m
+Monitoring
+CPU
+Disk
+Memory
+Network usage
+
+If you have to work around an issue in an application developed by someone else, it’ important that you report a bug to the relevant developers.
+
+If you have to work around an issue in the software that you own, make sure that you write a test that catches the problem.
+
+Which of the following is the most effective way to prevent an issue in a program that you own from happening again?
+o Report a bug 
+(.) Write a test
+o Monitor resources 
+o Reproduction case
+Great work! When updating code to fix an issue, create a new test to ensure the change performs the intended actions.
+
 416 Module 4 Wrap Up: Managing Resources1m
+
 417 Congratulations!1m
 418 Sneak Peek of Next Course1m
 419 More About Managing Resources10m
