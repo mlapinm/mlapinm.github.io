@@ -333,7 +333,170 @@ print(next_date("2020-02-29")) # Should return 2024-02-29
 
 
 121 Practice Quiz: Binary Searching a Problem25m
+Practice Quiz: Binary Searching a Problem
+Total points 5
+Question 1
+You have a list of computers that a script connects to in order to gather SNMP traffic and calculate an average for a set of metrics. The script is now failing, and you do not know which remote computer is the problem. How would you troubleshoot this issue using the bisecting methodology?
+v Run the script with the first half of the computers.
+Run the script with last computer on the list.
+Run the script with first computer on the list
+Run the script with two-thirds of the computers.
+Question 2
+The find_item function uses binary search to recursively locate an item in the list, returning True if found, False otherwise. Something is missing from this function. Can you spot what it is and fix it? Add debug lines where appropriate, to help narrow down the problem.
+#!/usr/bin/env python
+def find_item(list, item):
+  list.sort()
+  #Returns True if the item is in the list, False if not.
+  if len(list) == 0:
+    return False
+  #Is the item in the center of the list?
+  middle = len(list)//2
+  if list[middle] == item:
+    return True
+  #Is the item in the first half of the list? 
+  if item < list[middle]:
+    #Call the function with the first half of the list
+    return find_item(list[:middle], item)
+  else:
+    #Call the function with the second half of the list
+    return find_item(list[middle+1:], item)
+  return False
+#Do not edit below this line - This code helps check your work!
+list_of_names = ["Parker", "Drew", "Cameron", "Logan", "Alex", "Chris", "Terry", "Jamie", "Jordan", "Taylor"]
+print(find_item(list_of_names, "Alex")) # True
+print(find_item(list_of_names, "Andrew")) # False
+print(find_item(list_of_names, "Drew")) # True
+print(find_item(list_of_names, "Jared")) # False
+Reset
+Question 3
+The binary_search function returns the position of key in the list if found, or -1 if not found. We want to make sure that it's working correctly, so we need to place debugging lines to let us know each time that the list is cut in half, whether we're on the left or the right. Nothing needs to be printed when the key has been located.   
+For example, binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3) first determines that the key, 3, is in the left half of the list, and prints "Checking the left side", then determines that it's in the right half of the new list and prints "Checking the right side", before returning the value of 2, which is the position of the key in the list.  
+Add commands to the code, to print out "Checking the left side" or "Checking the right side", in the appropriate places.  
+#!/usr/bin/env python
+def binary_search(list, key):
+    #Returns the position of key in the list if found, -1 otherwise.
+    #List must be sorted:
+    list.sort()
+    left = 0
+    right = len(list) - 1
+    while left <= right:
+        middle = (left + right) // 2
+        if list[middle] == key:
+            return middle
+        if list[middle] > key:
+            right = middle - 1
+            print("Checking the left side")            
+        if list[middle] < key:
+            left = middle + 1
+            print("Checking the right side")
+    return -1 
+print(binary_search([10, 2, 9, 6, 7, 1, 5, 3, 4, 8], 1))
+"""Should print 2 debug lines and the return value:
+Checking the left side
+Checking the left side 0
+"""
+print(binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5))
+"""Should print no debug lines, as it's located immediately: 4
+"""
+print(binary_search([10, 9, 8, 7, 6, 5, 4, 3, 2, 1], 7))
+"""Should print 3 debug lines and the return value:
+Checking the right side
+Checking the left side
+Checking the right side 6
+"""
+print(binary_search([1, 3, 5, 7, 9, 10, 2, 4, 6, 8], 10))
+"""Should print 3 debug lines and the return value:
+Checking the right side
+Checking the right side
+Checking the right side 9
+"""
+print(binary_search([5, 1, 8, 2, 4, 10, 7, 6, 3, 9], 11))
+"""Should print 4 debug lines and the "not found" value of -1:
+Checking the right side
+Checking the right side
+Checking the right side
+Checking the right side -1
+"""
+Reset
+Question 4
+When trying to find an error in a log file or output to the screen, what command can we use to review, say, the first 10 lines?
+wc
+tail
+v head
+bisect
+Question 5
+The best_search function compares linear_search and binary_search functions, to locate a key in the list, and returns how many steps each method took, and which one is the best for that situation. The list does not need to be sorted, as the binary_search function sorts it before proceeding (and uses one step to do so). Here, linear_search and binary_search functions both return the number of steps that it took to either locate the key, or determine that it's not in the list. If the number of steps is the same for both methods (including the extra step for sorting in binary_search), then the result is a tie. Fill in the blanks to make this work. 
+#!/usr/bin/env python
+# best_search
+def linear_search(list, key):
+    #Returns the number of steps to determine if key is in the list 
+    #Initialize the counter of steps
+    steps=0
+    for i, item in enumerate(list):
+        steps += 1
+        if item == key:
+            break
+    return steps 
+def binary_search(list, key):
+    #Returns the number of steps to determine if key is in the list 
+    #List must be sorted:
+    list.sort()
+    #The Sort was 1 step, so initialize the counter of steps to 1
+    steps=1
+    left = 0
+    right = len(list) - 1
+    while left <= right:
+        steps += 1
+        middle = (left + right) // 2
+        if list[middle] == key:
+            break
+        if list[middle] > key:
+            right = middle - 1
+        if list[middle] < key:
+            left = middle + 1
+    return steps 
+def best_search(list, key):
+    steps_linear = linear_search(list, key) 
+    steps_binary = binary_search(list, key)
+    results = "Linear: " + str(steps_linear) + " steps, "
+    results += "Binary: " + str(steps_binary) + " steps. "
+    if (steps_linear < steps_binary):
+        results += "Best Search is Linear."
+    elif (steps_linear > steps_binary):
+        results += "Best Search is Binary."
+    else:
+        results += "Result is a Tie."
+    return results
+print(best_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 1))
+#Should be: Linear: 1 steps, Binary: 4 steps. Best Search is Linear.
+print(best_search([10, 2, 9, 1, 7, 5, 3, 4, 6, 8], 1))
+#Should be: Linear: 4 steps, Binary: 4 steps. Result is a Tie.
+print(best_search([10, 9, 8, 7, 6, 5, 4, 3, 2, 1], 7))
+#Should be: Linear: 4 steps, Binary: 5 steps. Best Search is Linear.
+print(best_search([1, 3, 5, 7, 9, 10, 2, 4, 6, 8], 10))
+#Should be: Linear: 6 steps, Binary: 5 steps. Best Search is Binary.
+print(best_search([5, 1, 8, 2, 4, 10, 7, 6, 3, 9], 11))
+#Should be: Linear: 10 steps, Binary: 5 steps. Best Search is Binary.
+Reset
+Coursera Honor Code  Learn more
 
+122 Qwiklabs Assessment: Debugging Python Scripts
+sudo chmod 777 greetings.py
+cat greetings.py
+#!/usr/bin/env python3
+
+import random
+
+def greeting():
+  name = input("Hello!, What's your name?")
+  number = random.randint(1,101)
+  print("hello " + name + ", your random number is " + number)
+
+greeting()
+
+./greetings.py
+
+  print("hello " + name + ", your random number is " + str(number))
 
 200 WEEK 2 Slowness 
 In this module, you'l learn about what factors can cause a machine or program to act slowly. You'l dive into ways of addressing slowness by identifying the bottleneck that might be causing the slowness. You'l learn about tools to identify which resources are being exhausted, including iotop, iftop, and activity monitor in MacOS. Next, you'l learn how computers use resources, and understand the differences between CPU, RAM, and Cache in order to help you find the possible causes for slowness in our machines or scripts.
@@ -416,27 +579,397 @@ CONT
 
 for pid in $(pidof ffmpeg); do while kill -CONT $pid; do sleep 1; done; done
 
-
-
-
-
-
 208 Writing Efficient Code4m
+We should always start by writing clear code that does what it should, and only try to make it faster if we realize that it's not fast enough.
+
+Trying to optimize every second out of a script is probably not worth your time.
+
+If we want our code to finish faster, we need to make our computer do less work.
+
+Profiler
+A tool that measures the resources that our code is using, giving us a better understanding of what's going on
+
+gprof
+cProfile
+
+kcachegrind
+
+Expensive actions
+Those that can take a long time to complete
+
+What is the cProfile module used for?
+O For parsing files.
+O To analyze a C program.
+(.)  To count functions calls 
+O To remove unnecessary functions.
+Right on! The cProfile module is used to count how many times functions are called, and how long they run.
+
 209 Using the Right Data Structures3m
+Lists
+Tuples
+Dictionaries
+Sets
+
+Lists
+Sequences of elements. We can add, remove, or modify the elements in them, and we can iterate through the whole list to operate on each of the elements.
+
+ArrayList in Java 
+Vector in C++ 
+Array in Ruby
+Slice in Go
+
+Dictionaries
+Store key-value pairs. We add data by associating a value to a key, and then we retrieve a value by looking up a specific key.
+
+HashMap in Java 
+Unordered Map in C+ 
+Hash in Ruby 
+Map in Go
+
+If you need to access elements by position, or will always iterate through all the elements, use a list to store them.
+
+If we need to look up the elements using a key, we'll use a dictionary.
+
+Which of the following has values associated with keys in Python? 
+A hash
+(•) A dictionary 
+A HashMap 
+An Unordered Map
+You nailed it! Python uses a dictionary to store values, each with a specific key.
+
 210 Expensive Loops4m
+If you do an expensive operation inside a loop, you multiply the time it takes to do the expensive operation by the amount of times you repeat the loop.
+
+Make sure that the list of elements that you're iterating through is only as long as you really need it to be.
+
+Another thing to remember about loops is to break out of the loop once you've found what you were looking for.
+
+break
+
+Your Python script searches a directory, and runs other tasks in a single loop function for 100s of computers on the network. Which action will make the script the least expensive?
+(.) Read the directory once 
+O Loop the total number of computers 
+O Service only half of the computers 
+O Use more memory
+Awesome! Reading the directory once before the loop will make the script less expensive to run.
+
 211 Keeping Local Results4m
+Your script calculates the average number of active user sessions during business hours in a seven-day period. How often should a local cache be created to give a good enough average without updating too often?
+O Once a week 
+(.) Once a day 
+O Once a month 
+O Once every 8 hours
+Woohoo! A local cache for every day can be accessed quickly, and processed for a seven-day
+
 212 Slow Script with Expensive Loop7m
+You use the time command to determine how long a script runs to complete its various tasks. Which output value will show the time spent doing operations in the user space?
+O Real
+O Wall-clock
+O Sys
+(.) User
+You nailed it! The user value is the time spent doing operations in the user space.
+
+Slow Script with Expensive Loop
+time
+tine ./send_reminders.py "2020-01-13|Example|test1"
+
+Real
+The amount of actual time that it took to execute the command
+Wall-clock time
+
+User
+The time spent doing operations in the user space
+
+Sys
+The time spent doing system-level operations
+
+real 0m0.129s
+user 0m0.068s
+sys  0m0.013s
+
+time ./send reminders.py "2020-01-13|Example|test1"
+
+$ time ./send_reminders.py "2020-01-13|Example]test1,test2,test3,test4,test5,test6,test7,test8,test9"
+
+Successfully sent reminders to: testl,test2,test3,test4,test5,test6,test7,test8,test9
+real 0m0.296s
+user 0m0.222s
+svs	0m0.008s
+
+pprofile3
+pprofile3 -f callgrind -o profile.out ./send_reminders.py
+
+kcachearind
+kcachegrind profile.out
+
+You use the time command to determine how long a script runs to complete its various tasks. Which output value will show the time spent doing operations in the user space?
+O Real
+O Wall-clock
+O SVS
+(•) User
+You nailed it! The user value is the time spent doing operations in the user space.
+
 213 Parallelizing Operations6m
+Concurrency
+
+Threads
+Let us run parallel tasks inside a process
+
+Threading
+Asyncio
+I/O bound
+CPU bound
+
+A script is ________ if you are running operations in parallel using all available CPU time.
+O I/O bound
+O Threading 
+(•) CPU bound 
+O Asyncio
+Right on! A script is CPU bound if you're running operations in parallel using all available CPU time.
+
 214 Slowly Growing in Complexity4m
+You're creating a simple script that runs a query on a list of product names of a very small business, and initiates automated tasks based on those queries. Which of the following would you use to store product names?
+O SQLite
+O Microsoft SQL Server 
+O Memcached 
+(•) CSV file
+Nice job! A simple CSV file is enough to store a list of product names.
+
 215 Dealing with Complex Slow Systems4m
+A company has a single web server hosting a website that also interacts with an external database server. The web server is processing requests very slowly. Checking the web server, you found the disk I/O has high latency. Where is the cause of the slow website requests most likely originating from?
+v Local disk
+You got it! The local disk I/O latency is causing the application to wait too long for data from disk.
+□	Remote database
+□	Slow Internet
+□	Database index
+
 216 Using Threads to Make Things Go Faster5m
+$ cd thumbnail_generator
+$ time ./thumbnail_generator.py
+Processing: 100%
+real 0ml.962s 
+user 0ml.898s 
+sys 0m0.065s
+
+Executor
+The process that's in charge of distributing the work among the different workers
+
+from concurrent import futures
+
+executor = futures.ThreadPoolExecutor() 
+for root, _, files in os.walk('images'): 
+  for basename in progressbar(files): 
+    if not basename.endswith(’.jpg'): 
+	  continue
+    executor.submit(processfile, root, basename)
+print('Waiting for all threads to finish.') executor.shutdown()
+
+shutdown
+
+executor = futures.ProcessPoolExecutor()
+
+$ time ./thumbnail_generator.py
+Processing: 100%
+Waiting for all threads to finish.
+real 0m0.945s
+user 0m3.277s
+sys	0m0.173s
+
+Which module makes it possible to run operations in a script in parallel that makes better use of CPU processing time?
+O Executor 
+(.) Futures 
+O Varnish 
+O Concurrency
+Woohoo! The futures module makes it possible to run operations in parallel using different executors.
+
 217 Module 2 Wrap Up: Slowness1m
+
 218 Monitoring Tools10m
 219 More About Improving Our Code10m
 220 More About Complex Slow Systems10m
 221 Practice Quiz: Understanding Slowness25m
+Practice Quiz: Understanding Slowness
+Total points 5
+Question 1
+Which of the following will an application spend the longest time retrieving data from?
+CPU L2 cache
+RAM
+Disk
+v The network
+Question 2
+Which tool can you use to verify reports of 'slowness' for web pages served by a web server you manage?
+The top tool
+v The ab tool
+The nice tool
+The pidof tool
+Question 3
+If our computer running Microsoft Windows is running slow, what performance monitoring tools can we use to analyze our system resource usage to identify the bottleneck? (Check all that apply)
+v Performance Monitor
+v Resource Monitor
+Activity Monitor
+top 
+Question 4
+Which of the following programs is likely to run faster and more efficiently, with the least slowdown?
+- A program with a cache stored on a hard drive
+v A program small enough to fit in RAM
+A program that reads files from an optical disc
+A program that retrieves most of its data from the Internet
+Question 5
+What might cause a single application to slow down an entire system? (Check all that apply)
+v A memory leak
+The application relies on a slow network connection
+v Handling files that have grown too large
+Hardware faults
+
 222 Practice Quiz: Slow Code25m
+Practice Quiz: Slow Code
+Total points 5
+Question 1
+Which of the following is NOT considered an expensive operation?
+Parsing a file
+Downloading data over the network
+Going through a list
+v Using a dictionary
+Question 2
+Which of the following may be the most expensive to carry out in most automation tasks in a script?
+v Loops
+Lists
+Vector
+Hash
+Question 3
+Which of the following statements represents the most sound advice when writing scripts?
+Aim for every speed advantage you can get in your code
+Use expensive operations often
+v Start by writing clear code, then speed it up only if necessary
+Use loops as often as possible
+Question 4
+In Python, what is a data structure that stores multiple pieces of data, in order, which can be changed later?
+A hash
+Dictionaries
+v Lists
+Tuples
+Question 5
+What command, keyword, module, or tool can be used to measure the amount of time it takes for an operation or program to execute? (Check all that apply)
+v time
+v kcachegrind
+v cProfile
+break
+
 223 Practice Quiz: When Slowness Problems Get Complex25m
+Practice Quiz: When Slowness Problems Get Complex
+Total points 5
+Question 1
+Which of the following can cache database queries in memory for faster processing of automated tasks?
+Threading
+Varnish
+v Memcached
+SQLite
+Question 2
+What module specifies parts of a code to run in separate asynchronous events?
+Threading
+Futures
+v Asyncio
+Concurrent
+Question 3
+Which of the following allows our program to run multiple instructions in parallel?
+v Threading 
+Swap space
+Memory addressing
+Dual SSD
+Question 4
+What is the name of the field of study in computer science that concerns itself with writing programs and operations that run in parallel efficiently?
+Memory management
+v Concurrency
+Threading
+Performance analysis
+Question 5
+What would we call a program that often leaves our CPU with little to do as it waits on data from a local disk and the Internet?
+Memory-bound
+CPU-bound
+User-bound
+v I/O bound
+
+224 Qwiklabs Assessment: Performance Tuning in Python Scripts
+Qwiklabs Assessment: Performance Tuning in Python Scripts
+CPU bound
+sudo apt install python3-pip
+pip3 install psutil
+
+python3
+import psutil
+psutil.cpu_percent()
+psutil.disk_io_counters()
+sdiskio(read_count=6580, write_count=26953, read_bytes=205771776, write_bytes=766029824, read_time=21632, write_time=98000, read_merged_count=3, write_merged_count=30119, busy_time=14812)
+>>> psutil.net_io_counters()
+snetio(bytes_sent=580037, bytes_recv=115256926, packets_sent=4800, packets_recv=6425, errin=0, errout=0, dropin=0, dropout=0)
+exit()
+
+Basics rsync command
+rsync [Options] [Source-Files-Dir] [Destination]
+
+Options
+
+Uses
+
+-v
+
+Verbose output
+
+-q
+
+Suppress message output
+
+-a
+
+Archive files and directory while synchronizing
+
+-r
+
+Sync files and directories recursively
+
+-b
+
+Take the backup during synchronization
+
+-z
+
+rsync -zvh [Source-Files-Dir] [Destination]
+Copy or sync files locally:
+
+rsync -zvh [Source-Files-Dir] [Destination]
+Copied!
+Copy or sync directory locally:
+
+rsync -zavh [Source-Files-Dir] [Destination]
+Copied!
+Copy files and directories recursively locally:
+
+rsync -zrvh [Source-Files-Dir] [Destination]
+Copied!
+To learn more about rsync basic command, check out this link.
+
+Compress file data during the transfer
+
+import subprocess
+src = "<source-path>" # replace <source-path> with the source directory
+dest = "<destination-path>" # replace <destination-path> with the destination directory
+
+User exercise
+nano ~/scripts/dailysync.py
+
+#!/usr/bin/env python
+import subprocess
+src = "/data/prod/"
+dest = "/data/prod_backup/"
+subprocess.call(["rsync", "-arq", src, dest])
+
+sudo chmod +x ~/scripts/dailysync.py
+./scripts/dailysync.py
+#!/usr/bin/env python
+import subprocess
+src = "./data/prod/"
+dest = "./data/prod_backup/"
+subprocess.call(["rsync", "-arq", src, dest])
 
 
 300 WEEK 3 Crashing Programs 
@@ -444,44 +977,674 @@ In this module, you'l get introduced to the age old question, why has my program
 You'l delve into a scenario where a large eCommerce site will throw an error 20% of the time. Once that issue has been fixed, you'l understand the importance of communication and documentation during these incidents, and how writing a post mortem can prevent issues from happening again.
 302 SHOW ALL SYLLABUSSHOW ALL
 303 Intro to Module 3: Crashing Programs3m
+
 304 Systems That Crash6m
+memtest 86
+S.M.A.R.T
+A user reported an application crashes on their computer. You log in and try to run the program and it crashes again. Which of the following steps would you perform next to reduce the scope of the problem?
+O Check the health of the RAM 
+O Switch the hard drive into another computer 
+O Check the health of the hard drive 
+(.) Review application logs
+Awesome! Reviewing logs is the next best step to determine if logs reveal any reason for the crash.
+
 305 Understanding Crashing Applications6m
+Console app
+Permission denied
+No such file or directory
+Connection refused
+Debug logging
+
+Linux
+strace
+
+MacOS
+dtruss
+
+Windows
+Process Monitor
+
+To find the root cause of a crashing application, we'll want to look at all available logs, figure out what changed, trace the system or library calls the program makes, and create the smallest possible reproduction case.
+
+Where should you look for application logs on a Windows system?
+O The /var/log directory 
+O The .xsession-errors file 
+O The Console app
+(.) The Event Viewer app
+Great job! The Event Viewer app contains logs on a Windows system.
+
 306 What to do when you can't fix the program?4m
+Wrapper
+A function or program that provides a compatibility layer between two functions programs, so they can work well together
+
+Virtual machine
+Container
+
+Watchdog
+A process that checks whether a program is running and, when it's not, starts the program again
+
+An application fails in random intervals after it was installed on a different operating system version. What can you do to work around the issue?
+O Use a wrapper 
+(.) Use a container 
+O Use a watchdog 
+O Use an XML formatx
+Nice work! A container allows the application to run in its own environment without interfering with the rest of the system.
+
+What were you trying to do?
+What were the steps you followed? 
+What did you expect to happen? 
+What was the actual outcome?
+
 307 Internal Server Error10m
+ssh Webserver
+/var/log
+date
+ls -lt | head
+tail syslog
+netstat
+sudo
+-n
+l
+p
+grep
+
+sudo netstat -nip | grep :80
+
+nginx - dir
+Is -l /etc/nginx/sites-enabled/
+vim /etc/nginx/sites-enabled/site.example.com.conf
+gerver {
+
+listen 80; listen [::]:80;
+
+server_name site.exanple.com;
+
+root /var/www/site.example.com; index index.html;
+
+location / {
+
+include uwsgi_params; uwsgi_pass 127.0.0.1:3031;
+
+}
+
+}
+
+[uwsgi]
+
+chdir = /srv/site.example.con uid = www-data gid = www-data
+
+plugins = python3 wsgi-file = prod.pfl callable = app
+
+plugins = logfile
+
+logger = logs file:/var/log/site.log log-route = logs . *
+
+processes = 4 threads = 2
+
+socket = 127.0.0.1:3031 stats = 127.0.0.1:9191
+
+ls -l site.log
+
+sudo chown www-data.www-data site.log
+
+Where is a common location to view configuration files for a web application running on a Linux server?
+
+/etc/<app folder>
+
+O /var/log/<app folder>
+
+O /srv/<app folder>
+
+O /<app folder>
+Correct
+
+Right on! The /etc directory will contain the application folder that stores configuration files.
+
 308 Accessing Invalid Memory7m
+Invalid memory
+Accessing invalid memory means that the process tried to access a portion of the systems memory that wasn't assigned to it.
+
+Pointers
+The variables that store memory addresses
+Segmentation faults
+Segfaults
+Debugging symbols
+Undefined behavior
+The code is doing something that's not valid the programming language
+
+Valgrind
+A very powerful tool that can tell us if the code is doing any invalid operations, no matter if it crashes or not
+
+Dr. Memory
+
+Which of the following can assist in finding out if invalid operations are occurring in a program running on a Windows system?
+O Valgrind 
+(.) Dr. Memory 
+O PBD files Segfaults
+You got it! Dr. Memory can assist in finding out if invalid operations are occurring in a program running on Windows or Linux.
+
 309 Unhandled Errors and Exceptions6m
+IndexError
+TypeError
+AttributeError
+DivisionByZeroError
+
+Traceback
+Shows the lines of the different functions that were being executed when the problem happened
+
+pdb
+printf debugging
+
+print puts echo logging
+
+What can you use to notify users when an error occurs, the reason why it occurred, and how to resolv it?
+O The pdb module 
+(.) The logging module 
+O Use printf debugging 
+O The echo command
+Excellent! The logging module sets debug messages to show up when the code fails.
+
 310 Fixing Someone Else's Code4m
+def process_file(root, basename):
+  """Generates a thumbnail of the given image"""
+  # Open the image that we need to process filename = f1{root}/{basename}'
+  image = PIL.Image.open(filename)
+  # Generate the thumbnail size = (128, 128) 
+  image.thumbnail(size)
+  # Store the thumbnail in the thumbnails folder 
+  new_name = f1thumbnails/{basename}'
+  image.save(new_name, "JPEG ) 
+  return new name
+
+After getting acquainted with the program's code, where might you start to fix a problem?
+O Run through tests 
+O Read the comments
+(.) Locate the affected function 
+O Create new tests
+Nicely done! Start working on the function that produced the error, and the function(s) that called it.
+
 311 Debugging a Segmentation Fault5m
+Core files
+Store all the information related to the crash that we, or someone else, can debug what's going on
+
+$ ./example
+Segmentation fault
+$ ulimit -c	unlimited
+$ ./example
+Segmentation fault (core dumped)
+$ ls -l core
+-rw	 1 user user 380928 Jan 9 14:27 core
+
+gdb -c core example
+backtrace
+
+(qdb) backtrace
+(gdb) up
+(gdb) list
+(gdb) print i 
+$1 = 1
+
+(gdb) print i $1 = 1
+(gdb) print argv[0]
+$2 = 0x7fffcef4e32c "./example"
+(gdb) print argv[1]
+$3 = 0x0 
+(gdb)
+
+NULL pointer
+Off-by-one error
+
+When debugging code, what command can you use to figure out how your program reached the failed state?
+O gdb
+(.) backtrace 
+O ulimit
+O list
+Nice job! The backtrace command can be used to show a summary of the function calls that were used to the point where the failure occurs.
+
 312 Debugging a Python Crash5m
+$ cd update_products
+$ cat new_products.csv
+product_code,description 
+AV-101,Audio and Video converter 101 mm 
+SP-405,Sound Proofing 4.05 inches 
+TH-2,Tethering connector v2
+
+$ ./update_products.py new_products.
+Traceback (most recent call last):
+File "./update_products.py", line 59, in <nodule> sys.exit(main())
+File "./update_products.py", line 54, in main update_data(database, options)
+File "./update_products.py", line 42, in update_data row['product_code'], row['description']))
+KeyError: 'product code'
+
+Traceback
+pdb3
+
+$ pdb3 update_products.py new_products.csv
+> /home/user/update_products/update_products.py(2)<module>()
+-> import argparse 
+(Pdb)
+
+next
+continue
+
+(Pdb) continue
+(Pdb) print(row)
+OrderedDict([('\ufeffproduct_code', 'AV-101'), ('description', 'Audio and Video converter 101 mm')]) 
+(Pdb) 
+
+ByteOrderMark
+BOM
+Little-endian
+Big-endian
+utf-8-sig
+open (options. filename, 'r', encoding='utf-8-sig')
+(Pdb) print(row)
+OrderedDict([('\ufeffproduct_code'
+
+When debugging in Python, what command can you use to run the program until it crushes with an error?
+O Pdb3
+O next 
+(•) continue 
+O KeyError
+
 313 Crashes in Complex Systems6m
+A website is producing service errors when loading certain pages. Looking at the logs, one of three web servers isn't responding correctly to requests. What can you do to restore services, while troubleshooting further?
+O Deploy a new web server 
+O Roll back application changes 
+(.) Remove the server from the pool 
+O Create standby servers
+Great job! Removing the server from the pool will provide full service to users from the remaining web servers
+
 314 Communication and Documentation During Incidents5m
+Communications lead
+Needs to know what's going on, and provide timely updates on the current state and how long until the problems resolved
+
+Incident commander/ Incident controller
+Needs to look at the big picture and decide what's the best use of the available resources
+
+Which of the following persons is responsible for communicating with customers that are affected by an access issue with a website?
+(.) Communications lead 
+O Manager 
+O Incident controller 
+O Software engineer
+Nice work! The communications lead provides timely updates on the incident and answers questions from users.
+
+The root cause
+How you diagnosed the problem and found that root cause
+What you did to fix the issue
+What needs to be done to prevent the problem from happening again
+
+Postmortem
+
 315 Writing Effective Postmortems4m
+Postmortems
+Documents that describe details of incidents to help us learn from our mistakes
+
+What caused the issue
+What the impact of the issue was
+How it got diagnosed
+The short-term remediation you applied
+The long-term remediation you recommend
+
+Postmortem: External network down
+Date: 2020-01-06
+Executive Summary
+Impact: The network connection was down and nobody could access the internet for 2 hours. 
+Root Cause: A misconfiguration in our main router caused all traffic to be sent to a void. 
+Action Items: The bad configuration was rolled back. Improved testing to avoid this in the future is being developed.
+Root Causes and Trigger
+With change #275643, we intended to deploy traffic shaping to our router. However, there was a typo in the rules that caused the router to error out with syntax error and deny all traffic instead.
+The change was created in advanced and put into the release pipeline. This meant that there was a significant delay between the commit and the outage, causing some confusion as to why it had happened.
+Lessons Learned
+Things that went well:
+Our monitoring detected the problem really quickly
+Once we understood the problem, we were able to roll back to the previously known
+
+When writing an effective postmortem of an incident, what should you NOT include?
+O What caused the issue 
+(.) Who caused the issue 
+O What the impact was 
+O The short-term remediation
+Nailed it! A postmortem of an incident should not include the person(s) who caused the issue.
+
 316 Module 3 Wrap Up: Crashing Programs1m
+
 317 Resources for Understanding Crashes10m
 318 Resources for Debugging Crashes10m
 319 Practice Quiz: Why Programs Crash25m
-320 Practice Quiz: Code that Crashes25m
-321 Practice Quiz: Handling Bigger Incidents25m
+Practice Quiz: Why Programs Crash
+Total points 5
+Question 1
+When using Event Viewer on a Windows system, what is the best way to quickly access specific types of logs?
+Export logs
+v Create a custom view
+Click on System Reports
+Run the head command
+Question 2
+An employee runs an application on a shared office computer, and it crashes. This does not happen to other users on the same computer. After reviewing the application logs, you find that the employee didn’t have access to the application. What log error helped you reach this conclusion?
+“No such file or directory”
+“Connection refused”
+v “Permission denied”
+“Application terminated”
+Question 3
+What tool can we use to check the health of our RAM?
+Event Viewer
+S.M.A.R.T. tools
+v memtest86
+Process Monitor
+Question 4
+You've just finished helping a user work around an issue in an application. What important but easy-to-forget step should we remember to do next?
+Fix the code
+v Report the bug to the developers 
+Reinstall the program
+Change the user’s password
+Question 5
+A user is experiencing strange behavior from their computer. It is running slow and lagging, and having momentary freeze-ups that it does not usually have. The problem seems to be system-wide and not restricted to a particular application. What is the first thing to ask the user as to whether they have tried it?
+Adding more RAM
+Reinstalling Windows
+v Identified the bottleneck with a resource monitor
+Upgrade their HDD to an SSD
+Woohoo! The first step is identifying the root cause of the problem. Resource monitors such as Activity Monitor (MacOS), top (Linux and MacOS) or Resource Monitor (Windows) can help us identify whether our bottleneck is CPU-based or memory-based.
 
+320 Practice Quiz: Code that Crashes25m
+Practice Quiz: Code that Crashes
+Total points 5
+Question 1
+Which of the following will let code run until a certain line of code is executed?
+v Breakpoints
+Watchpoints
+Backtrace
+Pointers
+Question 2
+Which of the following is NOT likely to cause a segmentation fault?
+Wild pointers
+Reading past the end of an array
+Stack overflow
+v RAM replacement
+Question 3
+A common error worth keeping in mind happens often when iterating through arrays or other collections, and is often fixed by changing the less than or equal sign in our for loop to be a strictly less than sign. What is this common error known as?
+Segmentation fault
+backtrace
+The No such file or directory error
+v Off-by-one error
+Nice work! The Off-by-one bug, often abbreviated as OB1, frequently happens in computer programming when an iterative process iterates one time too many or too little.
+Question 4
+A very common method of debugging is to add print statements to our code that display information, such as contents of variables, custom error statements, or return values of functions. What is this type of debugging called?
+Backtracking
+Log review
+v Printf debugging
+Assertion debugging
+Question 5
+When a process crashes, the operating system may generate a file containing information about the state of the process in memory to help the developer debug the program later. What are these files called?
+Log files
+v Core files
+Metadata file
+Cache file
+Right on! Core files (or core dump files) record an image and status of a running process, and can be used to determine the cause of a crash.
+
+321 Practice Quiz: Handling Bigger Incidents25m
+Practice Quiz: Handling Bigger Incidents
+Total points 5
+Question 1
+Which of the following would be effective in resolving a large issue if it happens again in the future?
+Incident controller
+v Postmortem
+Rollbacks
+Load balancers
+Question 2
+During peak hours, users have reported issues connecting to a website. The website is hosted by two load balancing servers in the cloud and are connected to an external SQL database. Logs on both servers show an increase in CPU and RAM usage. What may be the most effective way to resolve this issue with a complex set of servers?
+Use threading in the program
+Cache data in memory
+v Automate deployment of additional servers
+Optimize the database
+Question 3
+It has become increasingly common to use cloud services and virtualization. Which kind of fix, in particular, does virtual cloud deployment speed up and simplify?
+v Deployment of new servers 
+Application code fixes
+Log reviewing
+Postmortems
+Question 4
+What should we include in our postmortem? (Check all that apply)
+v Root cause of the issue
+v How we diagnosed the problem
+v How we fixed the problem
+Who caused the problem
+Question 5
+In general, what is the goal of a postmortem? (Check all that apply)
+To identify who is at fault
+v To allow prevention in the future
+v To allow speedy remediation of similar issues in the future
+To analyze all system bugs
+
+322 Qwiklabs Assessment: Fixing Errors in Python Scripts
+Qwiklabs Assessment: Fixing Errors in Python Scripts
+ImportError
+cd /
+python3 /usr/bin/infrastructure
+sudo apt install python3-pip -y
+pip3 install matplotlib
+
+NoFileError
+python3 /usr/bin/infrastructure
+
+
+mv data.bak data.csv
+
+
+
+cd /
+python3 /usr/bin/infrastructure
+
+cat ~/data.csv
+sudo chmod 777 ~/data.csv
+
+#!/usr/bin/env python3
+import csv
+import os
+import matplotlib
+import numpy as np
+
+class NoFileError(Exception):
+  pass
+
+class MissingColumnError(Exception):
+  pass
+
+columns = {'firstname','surname','company','job title'}
+
+try:
+  CSV_FILE = os.path.expanduser('~') + '/data.csv'
+
+  if not os.path.isfile(CSV_FILE):
+    print('Scanning for data.csv...')
+    raise NoFileError
+  else:
+    with open(CSV_FILE) as f:
+      csv_data = np.genfromtxt(f,delimiter=',',dtype=str)
+      missing_column = list(columns - set(csv_data[0]))
+
+      if missing_column:
+        raise MissingColumnError
+      f.close()
+	  
+	  
+
+except NoFileError:
+  print("NoFileError: Could not find data.csv in the working directory")
+
+except MissingColumnError:
+  print("MissingColumnError: Could not find column {} in data.csv".format(missing_column[0]))
 
 400 WEEK 4 Managing Resources 
 In this module, you'l learn how to manage your applications. You'l dive into some common issues that may cause your application to crash. You'l also understand what memory leaks are, and how to troubleshoot and prevent them. Up next, you'l run down managing disk space; you'l see some scenarios of how this happens and how to identify what process or application is taking up all your disk space. Then, you'll learn what network saturation is, how it can be caused, and some useful tools and techniques to solve a network saturation problem.
 Next, we'l shift from managing applications to managing your time. You'l get tips on how to prioritize tasks, estimate how long a particular task will take before finishing, and communicate expectations when dealing with important tasks. The final lesson delves into how to deal with hard and complex problems by breaking it down into small, digestible chunks while keeping your eyes on a clear goal. You'l learn that using proactive approaches, like continuous integration, can help you with future issues that might come up. You'l also explore how to plan for future resource usage by making good use of monitoring.
 402 SHOW ALL SYLLABUSSHOW ALL
 403 Intro to Module 4: Managing Resources2m
+
 404 Memory Leaks and How to Prevent Them5m
+Garbage collector
+In charge of freeing the memory that's no longer in use
+Memory profiler
+Valgrind
+python3 -m memory_profiler contents_stats_simple.py
+Which of the following descriptions most likely points to a possible memory leak?
+(.) Application process uses more memory even after a restart.
+O Garbage collector carries out its task.
+O The function returns after it completes.
+O Valgrind figures out memory usage.
+Woohoo! An app that still needs a lot of memory, even after a restart, most likely points to memory leak.
+
 405 Managing Disk Space5m
+Installed binaries and libraries 
+Data stored by the applications
+Cached information Logs
+Temporary files Backups
+
+No space left on device
+Deleted files
+sudo Isof | qrep deleted
+
+Which of the following is an example of unnecessary files on a server storage device that can affect applications from running if not cleaned up properly?
+O A SQL database 
+O A mailbox database 
+O A set of application files
+(.) A set of large temporary files
+You nailed it! Large temporary files may remain if an application crashes because it's not cleaned up automatically.
+
 406 Network Saturation5m
+Latency
+Bandwidth
+Latency
+The delay between sending a byte of data from one point and receiving it on the other
+Bandwidth
+How much data can be sent or received a second
+iftop
+Traffic shaping
+A way of marking the data packets sent over the network with different priorities to avoid having huge chunks of data use all of the bandwidth
+The custom application running on a server can't receive new connections. Existing connections are sending and receiving data in a reasonable time. Which of the following explains the reason why new sessions can't be established with the server?
+(•) Too many connections 
+O High network latency 
+O Low network bandwidth 
+O No traffic shaping
+Great work! There are limits to how many connections a single server can have, which will prevent new connections.
+
 407 Dealing with Memory Leaks8m
+uxterm
+$ uxterm &
+Scroll buffer
+Feature that lets us scroll up and see the things that we executed and their output
+od -cx /dev/urandom
+memory_profiler
+Decorator
+Used in Python to add extra behavior to functions without having to modify the code
+
 408 Getting to the Important Tasks6m
+Eisenhower Decision Matrix
+Important
+Not important
+Urgent
+Not urgent
+Technical debt
+The pending work that accumulates when we choose a quick-and-easy solution instead of applying a sustainable long-term one
+
+Which of the following describes a technical debt?
+(.) Restarting a web server that has suspended services.
+O Rewriting a program to prevent memory leaks.
+O Setting up traffic shaping to improve communication with remote services. 
+O Adding a hard drive to make room to install the application.
+
 409 Prioritizing Tasks6m
+Make a list of all the tasks that need to get done
+Check the real urgency of the tasks
+Assess the importance of each issue
+How much effort they'll take
+
+Most Important
+Important
+Not so important
+
+The key here is to always work on important tasks.
+
+Using a basic structure to organize and prioritize tasks, what's the next thing you should do after creating a list of all the tasks you need to complete?
+O Sort tasks in groups.
+O Assess the importance of each issue.
+(.) Complete most urgent tasks immediately.
+O Estimate the amount of effort.
+Woohoo! The most urgent tasks should be done immediately after completing the list.
+
 410 Estimating the Time Tasks Will Take4m
+Which of the following factors will be most beneficial in estimating the time it will take for you to com specific project?
+O Be overly optimistic with your time.
+O Multiply the estimate by a random factor.
+O Double your time.
+(.) Compare time used to similar projects or tasks.
+You nailed it! The best way to estimate time on a new project is to compare your estimate to similar tasks or projects completed previously.
+
 411 Communicating Expectations5m
+Try to be clear and up front about when you expect the issue will be resolved.
+Ticket tracking system
+Organize your tasks by priority
+Which of the following is an example of a practical shortcut to resolve incidents in a datacenter related to hard drive pre-failures?
+(•) Spare drives 
+O Automated RAID scripts 
+O Spare servers
+O Automated server scripts.
+Right on! Spare drives are a practical shortcut that can quickly replace hard drives in a pre-fail state.
+
 412 Dealing with Hard Problems4m
+“Everyone knows that debugging is twice as hard as writing a program in the first place. So if you're as clever as you can be when you write it, how will you ever debug it?”
+Develop code in small, digestible chunks
+Keep your goal clear
+When facing a problem with a service, which of the following examples can remediate the issue quickly for the short-term?
+O Create tests for the program before coding.
+O Develop codes in small chunks.
+(.) Ask someone who has solved the issue before for help.
+O Grab a cup of coffee.
+
 413 Proactive Practices5m
+If we're the ones writing the code, one thing we can do is to make sure that our code has good unit tests and integration tests.
+Continuous integration
+Test environment
+Deploy software in phases or canaries
+Debug logging
+
+Centralized logs collection
+A special server that gathers all the logs from all the servers, or even all the computers in the network
+Monitoring system
+Ticketing systems
+If we ask users to provide the needed information up front, we don’t have to waste time and go back and forth.
+Playbooks
+
 414 Planning Future Resource Usage4m
+NAS Network-Attached Storage
+You have a small rack of servers and other components that make up a virtual infrastructure. This rack hosts virtual machines that provide web services, and user file shares to employees in the local office, and immediate regional branches. Which component in the rack can be most easily planned for future growth?
+
+o CPU Capacity 
+o RAM Capacity 
+(.) NAS capacity 
+o Network bandwidth
+Nice job! Network Attached Storage (NAS) products from vendors like NetApp can provide additional shelves to add more storage as the website's content, and users' data increases in size.
+
 415 Preventing Future Problems4m
+Monitoring
+CPU
+Disk
+Memory
+Network usage
+
+If you have to work around an issue in an application developed by someone else, it’ important that you report a bug to the relevant developers.
+
+If you have to work around an issue in the software that you own, make sure that you write a test that catches the problem.
+
+Which of the following is the most effective way to prevent an issue in a program that you own from happening again?
+o Report a bug 
+(.) Write a test
+o Monitor resources 
+o Reproduction case
+Great work! When updating code to fix an issue, create a new test to ensure the change performs the intended actions.
+
 416 Module 4 Wrap Up: Managing Resources1m
+
 417 Congratulations!1m
 418 Sneak Peek of Next Course1m
 419 More About Managing Resources10m
