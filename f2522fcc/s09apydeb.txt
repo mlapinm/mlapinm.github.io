@@ -488,5 +488,218 @@ Next, we'l shift from managing applications to managing your time. You'l get tip
 420 More About Making the Best Use of Our Time10m
 421 More About Preventing Future Breakage10m
 422 Practice Quiz: Managing Computer Resources25m
+Practice Quiz: Managing Computer Resources
+Total points 5
+Question 1
+How can you profile an entire Python application?
+Use an @profile label
+v Use the guppy module
+Use Memory Profiler
+Use a decorator
+Correct
+Nice job! Guppy is a Python library with tools to profile an entire Python application.
+Question 2
+Your application is having difficulty sending and receiving large packets of data, which are also delaying other processes when connected to remote computers. Which of the following will be most effective on improving network traffic for the application?
+Running the iftop program
+Increase storage capacity
+Increase memory capacity
+v Use traffic shaping
+Correct
+Right on! Traffic shaping can mark data packets and assign higher priorities when being sent over the network.
+Question 3
+What is the term referring to the amount of time it takes for a request to reach its destination, usually measured in milliseconds (ms)?
+Bandwidth
+v Latency
+Number of connections
+Traffic shaping
+Correct
+Awesome! Latency is a measure of the time it takes for a request to reach its destination.
+Question 4
+If your computer is slowing down, what Linux program might we use to determine if we have a memory leak and what process might be causing it?
+v top
+gparted
+iftop
+cron
+Correct
+Great work! The top command will show us all running processes and their memory usage in Linux.
+Question 5
+Some programs open a temporary file, and immediately _____ the file before the process finishes, then the file continues to grow, which can cause slowdown.
+open
+close
+v delete
+write to
+Correct
+Excellent! Sometimes a file is marked as deleted right after it is opened, so the program doesn't "forget" later. The file is then written to, but we can't see this as the file is already marked as deleted, but will not actually be deleted until the process is finished.
+
 423 Practice Quiz: Managing Our Time25m
+Practice Quiz: Managing Our Time
+Total points 5
+Question 1
+Using the Eisenhower Decision Matrix, which of the following is an example of an event or task that is both Important, and Urgent?
+Office gossip
+Replying to emails
+v Internet connection is down
+Follow-up to a recently resolved issue
+Question 2
+You’re working on a web server issue that’s preventing all users from accessing the site. You then receive a call from user to reset their user account password. Which appropriate action should you take when prioritizing your tasks?
+Reset the user's password
+Create a script to automate password resets
+v Ask the user to open a support ticket.
+Ignore the user, and troubleshoot web server.
+Question 3
+What is it called when we make more work for ourselves later by taking shortcuts now?
+v Technical debt
+Ticket tracking
+Eisenhower Decision Matrix
+Automation
+Question 4
+What is the first step of prioritizing our time properly?
+Work on urgent tasks first
+Assess the importance of each issue
+v Make a list of all tasks
+Estimate the time each task will take
+Question 5
+If an issue isn't solved within the time estimate that you provided, what should you do? (Select all that apply)
+v Explain why
+Drop everything and perform that task immediately
+v Give an updated time estimate
+Put the task at the end of the list
+
 424 Practice Quiz: Making Our Future Lives Easier25m
+Practice Quiz: Making Our Future Lives Easier
+Total points 5
+Question 1
+Which proactive practice can you implement to make troubleshooting issues in a program easier when they happen again, or face other similar issues?
+v Create and update documentation
+Use a test environment.
+Automate rollbacks.
+Set up Unit tests.
+Question 2
+Which of the following is a good example of mixing and matching resources on a single server so that the running services make the best possible use of all resources?
+Run two applications that are CPU intensive between two servers.
+Run a CPU intensive application on one server, and an I/O intensive application on another server.
+v Run a RAM intensive application and a CPU intensive application on a server.
+Run two applications that are RAM and I/O intensive on a server.
+Question 3
+One strategy for debugging involves explaining the problem to yourself out loud. What is this technique known as?
+Monitoring
+v Rubber Ducking
+Testing
+Ticketing
+Question 4
+When deploying software, what is a canary? 
+A test for how components of a program interact with each other
+A test of a program’s components
+v A test deployment to a subset of production hosts
+A small section of code
+Question 5
+It is advisable to collect monitoring information into a central location. Given the importance of the server handling the centralized collecting, when assessing risks from outages, this server could be described as what?
+v A failure domain
+A problem domain
+CPU intensive
+I/O intensive
+
+425 Qwiklabs Assessment: Debugging and Solving Software Problems
+
+Debug issue
+sudo chmod 777 ~/start_date_report.py
+./start_date_report.py
+
+#!/usr/bin/env python3
+
+
+import csv
+import datetime
+import requests
+
+
+FILE_URL = "https://storage.googleapis.com/gwg-content/gic215/employees-with-date.csv"
+
+def get_start_date():
+    """Interactively get the start date to query for."""
+
+    print()
+    print('Getting the first start date to query for.')
+    print()
+    print('The date must be greater than Jan 1st, 2018')
+    year = int(input('Enter a value for the year: '))
+    month = int(input('Enter a value for the month: '))
+    day = int(input('Enter a value for the day: '))
+    print()
+
+    return datetime.datetime(year, month, day)
+
+def get_file_lines(url):
+    """Returns the lines contained in the file at the given URL"""
+
+    # Download the file over the internet
+    response = requests.get(url, stream=True)
+    lines = []
+
+    for line in response.iter_lines():
+        lines.append(line.decode("UTF-8"))
+    return lines
+
+data = []
+def get_same_or_newer(start_date):
+    """Returns the employees that started on the given date, or the closest one.         """
+    global data
+    if len(data) == 0:
+      data = get_file_lines(FILE_URL)
+    reader = csv.reader(data[1:])
+
+    # We want all employees that started at the same date or the closest newer
+    # date. To calculate that, we go through all the data and find the
+    # employees that started on the smallest date that's equal or bigger than
+    # the given start date.
+    min_date = datetime.datetime.today()
+    min_date_employees = []
+    for row in reader:
+        row_date = datetime.datetime.strptime(row[3], '%Y-%m-%d')
+
+        # If this date is smaller than the one we're looking for,
+        # we skip this row
+        if row_date < start_date:
+            continue
+
+        # If this date is smaller than the current minimum,
+        # we pick it as the new minimum, resetting the list of
+        # employees at the minimal date.
+        if row_date < min_date:
+            min_date = row_date
+            min_date_employees = []
+
+        # If this date is the same as the current minimum,
+        # we add the employee in this row to the list of
+        # employees at the minimal date.
+        if row_date == min_date:
+            min_date_employees.append("{} {}".format(row[0], row[1]))
+
+    return min_date, min_date_employees
+
+def list_newer(start_date):
+    while start_date < datetime.datetime.today():
+        start_date, employees = get_same_or_newer(start_date)
+        print("Started on {}: {}".format(start_date.strftime("%b %d, %Y"), emplo         yees))
+
+        # Now move the date to the next one
+        start_date = start_date + datetime.timedelta(days=1)
+
+def main():
+    start_date = get_start_date()
+    list_newer(start_date)
+
+if __name__ == "__main__":
+    main()
+
+Improve performance
+
+real    0m20.051s
+user    0m3.080s
+sys     0m0.076s
+
+real    0m10.436s
+user    0m0.888s
+sys     0m0.028s
+
+
