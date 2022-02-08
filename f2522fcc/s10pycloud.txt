@@ -1,0 +1,1542 @@
+100 WEEK 1 Automating with Configuration Management 
+In this module, you’ll be introduced to the concept of automation at scale and how it can be successfully achieved. You’ll learn what it means to work at scale and how automation is needed to scale effectively. Next, you’ll be introduced to configuration management. You’ll learn the differences between unmanaged and managed configuration management. Then, you’ll dive into infrastructure as code and learn about the benefits it brings, like making your fleet of nodes more reliable and repeatable. This is a major benefit when managing systems at scale.
+In the next lesson, you’ll be introduced to Puppet. You’ll learn how to apply basic configuration management and how Puppet agents and masters interact with each other. Next, you’ll do a rundown of Puppet resources and classes. You’ll learn how resources are basic units for modelling your configurations and how classes are a collection of resources used to achieve a single goal. The final lesson will introduce you to the building blocks of domain-specific language. You’ll learn what Puppet facts are and how it uses a program called facter to analyze, store and gather this information. Your final lesson will cover the driving principles of configuration management. You’ll learn about declarative, procedural, and idempotent principals and how they differ from each other.
+101 Course Introduction5m
+Configuration management
+Puppet
+
+102 Intro to Module 1: Automating with Configuration Management2m
+Intro to Module 1: Automating with Configuration Management
+Scale
+Configuration management
+Infrastructure as code
+Puppet
+
+103 What is scale?2m
+Being able to scale what we do means that we can keep achieving larger impacts with the same amount of effort.
+A scalable system is a flexible one.
+Automation
+An essential tool for keeping up with the infrastructure needs of a growing business
+
+104 What is configuration management?5m
+Unmanaged configuration
+Unmanaged
+Configuration Management System
+Puppet, Chef, Ansible
+CFEnaine.
+Amazon EC2, Microsoft Azure
+Gooqle Cloud
+SCCM
+
+105 What is infrastructure as code?6m
+Infrastructure ksk Code mjim IAC
+Infrastructure as code (laC)
+When all the configuration necessary to deploy and manage a node in the infrastructure is stored in version control
+Consistent
+Consistent
+Versioned
+Reliable
+Repeatable
+
+106 What is Puppet?3m
+Puppet
+Puppet 6
+Puppet agent
+Puppet master
+class sudo {
+package { 'sudo': ensure => present,
+APT, Yum u DNF.
+Apple Provider
+MacPorts
+Chocolatey
+
+107 Puppet Resources3m
+class sudo {
+package { 'sudo': ensure => present,
+Resources
+The basic unit for modeling the configuration that we want to manage
+# Make sure the directory exists, some distros don't have it file { '/etc/sysctl.d':
+ensure => directory,
+B 9tom cnynae Mbi onpeflenaeM cjDaiinoBbiM pecypc.
+# Make sure the directory exists, some distros don't have it file { '/etc/sysctl.d':
+ensure => directory,
+title
+class timezone {
+  file { '/etc/timezone': ensure => file, 
+  content => "UTC\n", replace => true,
+  }
+}
+What is the most basic unit for modeling in Puppet?
+O package 
+O title
+(•) resource
+O file
+Correct
+Nailed it! The most basic unit in Puppet is a resource, such as user, group, file, service or package.
+Providers
+
+108 Puppet Classes2m
+class ntp {
+  package { 'ntp':
+  ensure => latest,
+  }
+  file { '/etc/ntp.conf':
+  source => 
+  'puppet:///modules/ntp/ntp.conf' replace => true,
+  }
+  service { 'ntp':
+  enable => true,
+  ensure => running,
+  }
+}
+Network Time Protocol
+NTP
+
+What is the advantage of grouping related resources into a single class?
+(•) To ensure efficiency and convenience for future changes
+O It is required by Puppet
+O To keep computer clocks synchronized
+O To prevent errors
+Correct
+Keep it up! By grouping related resources together, we can more easily understand the configuration and make changes in the future.
+
+109 What are domain-specific languages?4m
+What are domain-specific languages?
+Domain-Specific Language
+Puppet hdm DSL
+General purpose languages
+Domain-Specific Language (DSL)
+A programming language that's more limited in scope
+Variables
+Conditional statements
+Functions
+Facts
+Variables that represent the characteristics of the system
+if $facts['is_virtual'] { package { 'smartmontools':
+ensure => purged,
+}
+} else {
+package { 'smartmontools': ensure => installed,
+What is a fact in Puppet?
+(•) A variable representing characteristics of a system
+A type of parameter
+A type of resource
+A variable representing packages
+Correct
+Nicely done! A fact is a hash that stores information about the details of a particular system.
+
+110 The Driving Principles of Configuration Management5m
+The Driving Principles of Configuration Management
+Declarative
+Procedural
+An idempotent action can be performed over and over again without changing the system after the first time the action was performed, and with no unintended side effects.
+file { '/etc/issue': mode => '0644', content => "Internal system \l \n",
+exec
+onlyif
+exec { 'move example file':
+command => 'mv /home/user/example.txt /home/user/Desktop' onlyif => 'test -e /home/user/example.txt',
+Test and repair
+Stateless
+What does idempotent mean?
+There is no state being kept between runs of the agent
+We declare the state we want to achieve before running
+An action is performed a new way each time
+(•) An action can be performed repeatedly without changing the system after the first run
+Correct
+Way to go! We can use an attribute like onlyif to make sure a file is changed only if it exists.
+
+111 Module 1 Wrap Up: Automating with Configuration Management2m
+Consistent
+Versionable
+Reliable
+Repeatable
+Domain-specific language
+Declarative
+Idempotent
+
+112 Welcome to the Course10m
+113 Puppet Resources10m
+114 More Information About Configuration Management10m
+115 How to Log in to Qwiklabs10m
+116 Practice Quiz: Automation at Scale25m
+Practice Quiz: Automation at Scale
+Total points 5
+Question 1
+What is IaC (Infrastructure as Code)?
+Writing a program from the outside in
+Programs for industrial use
+Hardware-based programming with FPGAs
+v Using a version control system to deploy and manage node configurations
+Question 2
+What is the principle called when you think of networked machines as interchangeable resources instead of individual machines?
+"Flexible deployment"
+The "Borg" principle
+v Treating computers like "cattle instead of pets"
+The principle of "group operation"
+Question 3
+What benefits can we gain by using automation to manage our configuration? (Check all that apply)
+v Consistency
+Simplicity
+v Reliability
+v Scalability
+Question 4
+Puppet is a commonly used configuration management system. Which of the following applications are also used for configuration management?
+Valgrind
+v Chef
+v Ansible
+v CFEngine
+Question 5
+A network administrator is accustomed to manually configuring the 5 nodes on the network he manages. However, the company he works for is quickly growing, and there are plans to expand the network to 200 nodes. What is the most reasonable course of action for the network administrator?
+Prepare to manually configure 200 nodes
+Hire more network techs
+Ask for a reduction in planned nodes to simplify configuration
+v Prepare scripts or download software for automated configuration
+
+117 Practice Quiz: Introduction to Puppet25m
+Practice Quiz: Introduction to Puppet
+Total points 5
+Question 1
+A Puppet agent inspects /etc/conf.d, determines the OS to be Gentoo Linux, then activates the Portage package manager. What is the provider in this scenario?  
+/etc/conf.d  
+v Portage  
+Gentoo Linux  
+The Puppet agent  
+Question 2
+Which of the following examples show proper Puppet syntax?  
+v class AutoConfig {
+  package { 'Executable':
+    ensure => latest,
+  }
+  file { 'executable.cfg':
+    source => 'puppet:///modules/executable/Autoconfig/executable.cfg'
+    replace => true,
+  }
+  service { 'executable.exe':
+    enable  => true,
+class AutoConfig :
+  package ''Executable':
+    ensure => latest,
+  file  'executable.cfg':
+    source => 'puppet:///modules/executable/Autoconfig/executable.cfg'
+    replace => true,
+  service  'executable.exe':
+    enable  => true,
+class AutoConfig {
+  package { 'Executable':
+    ensure == latest,
+  }
+  file { 'executable.cfg':
+    source == 'puppet:///modules/executable/Autoconfig/executable.cfg'
+    replace == yes,
+  }
+  service { 'executable.exe':
+    enable  == yes,
+class AutoConfig {
+  package { 'Executable':
+    assure=> latest,
+  }
+  file { 'executable.cfg':
+    origin=> 'puppet:///modules/executable/Autoconfig/executable.cfg'
+    substitute=> true,
+  }
+  program{ 'executable.exe':
+    activate => true,
+Question 3
+What is the benefit of grouping resources into classes when using Puppet?
+Providers can be specified
+v Configuration management is simplified
+The title is changeable
+Packages are not required
+Question 4
+What defines which provider will be used for a particular resource?
+v Puppet assigns providers based on the resource type and data collected from the system.
+A menu allows you to choose providers on a case-by-case basis.
+The user is required to define providers in a config file.
+Puppet uses an internet database to decide which provider to use.
+Question 5
+In Puppet’s file resource type, which attribute overwrites content that already exists?
+Purge
+Overwrite
+v Replace
+Save
+
+118 Practice Quiz: The Building Blocks of Configuration Management25m
+Practice Quiz: The Building Blocks of Configuration Management
+Total points 5
+Question 1
+How is a declarative language different from a procedural language?
+v A declarative language defines the goal; a procedural language defines the steps to achieve a goal.
+Declarative languages are object-based; procedural languages aren’t.
+Declarative languages aren’t stateless; procedural languages are stateless.
+A declarative language defines each step required to reach the goal state.
+Question 2
+Puppet facts are stored in hashes. If we wanted to use a conditional statement to perform a specific action based on a fact value, what symbol must precede the facts variable for the Puppet DSL to recognize it?
+@
+#
+v $
+&
+Question 3
+What does it mean that Puppet is stateless?
+v Puppet retains information between uses.
+An action can be performed repeatedly without changing the system after the first run.
+v There is no state being kept between runs of the agent.
+Actions are taken only when they are necessary to achieve a goal.
+Question 4
+What does the "test and repair" paradigm mean in practice?
+There is no state being kept between runs of the agent.
+We should plan to repeatedly fix issues.
+We need to test before and after implementing a fix.
+v We should only take actions when testing determines they need to be done to reach the requested state
+Question 5
+Where, in Puppet syntax, are the attributes of a resource found?
+v Inside the curly braces after the resource type
+In brackets after the if statement
+After ensure => 
+After the dollar sign ($)
+
+119 Qwiklabs Assessment: Debugging Puppet Installation
+echo $PATH
+/java/bin:/snap/bin
+
+export PATH=/bin:/usr/bin
+$ echo $PATH
+/bin:/usr/bin
+cd /etc/puppet/code/environments/production/modules/profile/manifests
+cat init.pp
+class profile {
+        file { '/etc/profile.d/append-path.sh':
+                owner   => 'root',
+                group   => 'root',
+                mode    => '0646',
+                content => "PATH=/java/bin\n",
+        }
+}
+Fixing the problem
+sudo nano init.pp
+
+PATH=\$PATH:/java/bin\n
+to avoid giving others permission to write the file
+0644 not 0646
+
+class profile {
+        file { '/etc/profile.d/append-path.sh':
+                owner   => 'root',
+                group   => 'root',
+                mode    => '0644',
+                content => "PATH=\$PATH:/java/bin\n",
+        }
+}
+sudo puppet agent -v --test
+Info: Using configured environment 'production'
+Info: Retrieving pluginfacts
+Info: Retrieving plugin
+Info: Retrieving locales
+Info: Caching catalog for puppet.us-central1-a.c.qwiklabs-gcp-03-9e8e260bf9a3.internal
+Info: Applying configuration version '1643451813'
+Notice: /Stage[main]/Profile/File[/etc/profile.d/append-path.sh]/content:
+--- /etc/profile.d/append-path.sh       2022-01-29 09:45:16.115790562 +0000
++++ /tmp/puppet-file20220129-7067-7awfpz        2022-01-29 10:23:33.795697445 +0000
+@@ -1 +1 @@
+-PATH=/java/bin
++PATH=$PATH:/java/bin
+
+Info: Computing checksum on file /etc/profile.d/append-path.sh
+Info: /Stage[main]/Profile/File[/etc/profile.d/append-path.sh]: Filebucketed /etc/profile.d/append-path.sh to puppet with sum b1ca50e93b6ea92bd7b3eeb02c69f109
+Notice: /Stage[main]/Profile/File[/etc/profile.d/append-path.sh]/content: content changed '{md5}b1ca50e93b6ea92bd7b3eeb02c69f109' to '{md5}30a2bc8929446ce04807cd3c5921cb14'
+Notice: /Stage[main]/Profile/File[/etc/profile.d/append-path.sh]/mode: mode changed '0646' to '0644'
+Notice: Applied catalog in 0.06 seconds
+echo $PATH
+/bin:/usr/bin
+student-04-75ca255694b4@puppet:/etc/puppet/code/environments/production/modules/profile/manifests$ 
+
+
+200 WEEK 2 Deploying PuppetIn this module, you’ll dive into deploying Puppet on your local machine. Once you’ve completed that task, you’ll start creating and applying Puppet rules, managing resource relationships, and organizing your Puppet modules, which are a collection of manifests and associated data. Next, you’ll learn about Puppet nodes and node definitions and how they’re used to apply rules to your fleet. Then, you’ll dive into the Puppet certificate infrastructure, which explores the logic behind how the server can trust that a client is really who it claims to be. This topic will introduce the concepts of public key infrastructure and secure socket layer, which can ensure the clients can be trusted. Once you’ve understood these concepts, you’ll get to see a Puppet deployment in action!===Your final lesson will center on updating, modifying, and testing manifests that you’ve deployed to your fleet. You’ll explore Puppet parser validate commands that will allow you to check the syntax to ensure it's correct. Next, you’ll explore the difference between production and testing environments, and how you can safely rollout changes to the testing environment to catch any errors. You’ll also learn about development environments and how you can siphon part of your fleet to an early-adopters or canary track to roll out changes, modification, or updates to that subset of machines.
+201 Intro to Module 2: Deploying Puppet1m
+Packages
+Files
+Services
+
+202 Applying Rules Locally5m
+sudo apt install puppet-master
+Manifests
+.pp
+vim tools.pp
+package { htop : ensure => present 
+}
+:wq
+sudo puppet apply -v tools.pp
+$ sudo puppet apply -v tools.pp
+Info: Loading facts
+Notice: Compiled catalog for ubuntu.example.com in environment production in 0.02 seconds
+Info: Applying configuration version '1575648408'
+Notice: /Stage[main]/Main/Package[htop]/ensure: created
+Notice: Appliedcatalog in 2.32 seconds
+Catalog
+The list of rules that are generated for one specific computer once the server has evaluated all variables, conditionals, and functions
+htop
+q.
+sudo puppet apply -v tools.pp
+user@ubuntu:~$ sudo puppet apply -v tools.pp
+Info: Loading facts
+Notice: Compiled catalog for ubuntu.example.com in environment production in 0.02 seconds
+Info: Applying configuration version '1575648598'
+Notice: Applied catalog in 0.08 seconds
+Which of the following file extensions does the manifest file need to end with in Puppet?
+O -cfg 
+® -PP 
+O -db 
+O -mf
+Awesome! Manifest files are where we store the rules to be applied.
+
+203 Managing Resource Relationships4m
+Manifest
+Resource relationships
+ntp.pp:
+vim ntp.pp
+class ntp {
+  package { 'ntp':
+  ensure => latest,
+  }
+  file { '/etc/ntp.conf':
+  source => '/home/user/ntp.conf', 
+  replace => true, require => Package['ntp' , 
+  notify => Service['ntp'],
+  }
+  service { 'ntp':
+  enable => true,
+  ensure => running,
+  require => File['/etc/ntp.conf'], 
+  }
+}
+include ntp
+We write resource types in lowercase when declaring them, but capitalize them when referring to them from another resource's attribute.
+sudo puppet apply -v ntp.
+vim ntp.conf
+driftfile /var/lib/ntp/ntp.drift
+leapfile /usr/share/zoneinfo/leap-seconds.list
+statistics loopstats peerstats clockstats
+filegen loopstats file loopstats type day enable
+filegen peerstats file peerstats type day enable
+filegen clockstats file clockstats type day enable
+server 0.pool.ntp.org
+server 1.pool.ntp.org
+server 2.pool.ntp.org
+server 3.pool.ntp.org
+restrict -4 default kod notrap nomodify nopeer noquery limited
+restrict -6 default kod notrap nomodify nopeer noquery limited
+restrict 127.0.0.1
+restrict ::1
+restrict source notrap nomodify noquery
+server time1.google.com 
+server time2.google.com 
+server time3.google.com 
+server time4.google.com
+:wq
+sudo puppet apply -v ntp.pp
+When we declare a resource type, how do we differentiate between the original resource type and the name of a resource relationship being referenced in another resource?
+O Use "==" in place of "=>"
+O Assign it a variable name.
+O Use $ before the resource type.
+(•) Use lowercase for the original, and capitalize the resource name when referencing a relationship.
+Correct
+Nice job! When declaring resources initially, we type the resource type in lowercase. When we reference a resource relationship from another file, we capitalize the resource name being referenced.
+
+204 Organizing Your Puppet Modules6m
+Module
+A collection of manifests and associated data
+init.pp
+$ tree modules/
+modules/
+|—- ntp
+    |— files
+    |  |— ntp.conf
+    |— manifests
+       |— init.pp
+3 directories, 2 files
+sudo apt install puppet-module-puppetlabs-apache
+cd /usr/share/puppet/modules.available/
+cd /usr/share/puppet/modules.available/puppetlabs-apache/
+user@ubuntu:/usr/share/puppet/modules.available/puppetlabs-apache$ Is -t total 20
+drwxr-xr-x	2	root	root	4096	Dec	6	08:36	files
+drwxr-xr-x	4	root	root	4096	Dec	6	08:36	lib
+drwxr-xr-x	9	root	root	4096	Dec	6	08:36	manifests
+-rw-r--r- -	1	root	root	1820	Sep	28	2018	metadata.json
+drwxr-xr-x	6	root	root	4096	Dec	6	08:36	templates
+ls -l manifests/
+vim webserver.pp
+include ::apache
+include ::apache
+:wq
+sudo puppet apply -v webserver.pp
+user@ubuntu: $ sudo puppet apply -v webserver.pp
+Info: Loading facts
+Info: Loading facts
+Info: Loading facts
+Notice: Compiled catalog for ubuntu.example.com in environment production in 0.43 seconds 
+Info: Applying configuration version '1575650433'
+What do we call a collection of manifests, and folders containing associated data?
+Libraries
+(•) Module
+Template
+Metadata
+Correct
+Great work! A module is an easy way to organize our configuration management tools.
+
+205 Puppet Nodes3m
+Node definitions
+Node
+Any system where we can run a Puppet agent
+node default {
+  class { 'sudo': }
+  class { 'ntp':
+    servers => ['ntp1.example.com', 'ntp2.example.com']
+    }
+}
+node webserver.example.com {
+class { 'sudo': }
+  class { 'ntp':
+    servers => ['ntp1.example.com', 'ntp2.example.com']
+class { 'apache': }
+In Puppet, what can we use to categorize in order to apply different rules to different systems?
+(•) Node definitions
+O Manifest file
+O Array configuration
+O Template
+Correct
+Nice job! Different kinds of nodes are defined, allowing different sets of rule catalogs to apply to different types of machines.
+site.pp
+
+206 Puppet's Certificate Infrastructure5m
+Public Key Infrastructure
+PKI
+Secure Socket Layer
+SSL
+What is the purpose of the Certificate Authority (CA)?
+O To test rules in the manifest
+O To manage templates
+(•) To validate the identity of each machine
+O To handle push/pull requests
+Correct
+Awesome! The CA either queues a certificate request for manual validation, or uses pre-shared data to verify before sending the certificate to the agent.
+
+207 Setting up Puppet Clients and Servers5m
+sudo puppet config --section master set autosign true
+ssh webserver
+sudo apt install puppet
+sudo puppet config set server ubuntu.example.com
+sudo puppet agent -v --test
+vim /etc/puppet/code/environments/production/manifests/site.pp
+node webserver.example.com class {'apache':}
+}
+node default {}|
+sudo puppet agent -v --test
+sudo systemctl enable puppet
+sudo systemctl start puppet
+sudo systemctl status puppet
+What kind of security encryption is used when the Puppet Certificate Authority validates the identity of a node?
+(•) Secure Sockets Layer (SSL)
+O Secure Shell (SSH)
+O Pretty Good Privacy (PGP)
+O Transport Layer Security (TLS)
+Correct
+Great work! The Certificate Authority creates an SSL key for the agent machine and creates a certificate request.
+
+208 Modifying and Testing Manifests3m
+puppet parser validate
+rspec tests
+describe 'gksu', :type => :class do
+  let (:facts) { { 'is_virtuaV => 'false' } }
+  it { should contain_package('gksu').with_ensure('lates')} 
+end
+What does the puppet parser validate command do?
+(•) Checks the syntax of the manifest.
+Q Runs full No Operations simulations.
+Q Tests automatically using facts we set to evaluate the resulting catalog.
+Q Forcibly applies manifests locally.
+Correct
+Great work! The puppet parser validate command checks the syntax of the manifest to make sure it's correct.
+
+209 Safely Rolling out Changes and Validating Them5m
+Production
+The parts of the infrastructure where a service is executed and served to its users
+Test environment
+Development
+Canaries
+What is the purpose of using multiple environments?
+(•) To fully isolate the configurations that agents see.
+Q To automate testing.
+Q To add variety.
+Q To detect potential issues before they reach the other computers.
+Correct
+Right on! By creating separate directories for different purposes, such as testing and production, we can ensure changes don't affect end users.
+
+210 Module 2 Wrap Up: Deploying Puppet2m
+211 More Information About Deploying Puppet Locally10m
+212 More Information about Deploying Puppet to Clients10m
+213 More Information About Updating Deployments10m
+214 Practice Quiz: Deploying Puppet Locally25m
+Practice Quiz: Deploying Puppet Locally
+Total points 5
+Question 1
+Puppet evaluates all functions, conditionals, and variables for each individual system, and generates a list of rules for that specific system. What are these individual lists of rules called?  
+Manifests  
+Dictionaries  
+v Catalogs  
+Modules  
+Question 2
+After we install new modules that were made and shared by others, which folder in the module's directory will contain the new functions and facts?  
+files  
+manifests  
+v lib  
+templates  
+Question 3
+What file extension do manifest files use?
+.cfg
+.exe
+v .pp
+.man
+Question 4
+What is contained in the metadata.json file of a Puppet module?
+Manifest files
+v Additional data about the module
+Configuration information
+Pre-processed data
+Question 5
+What does Puppet syntax dictate we do when referring to another resource attribute?
+Enter the package title before curly braces
+Follow the attribute with a semicolon
+v Capitalize the attribute
+Type the attribute in lowercase
+
+215 Practice Quiz: Deploying Puppet to Clients25m
+Total points 5
+Question 1
+When defining nodes, how do we identify a specific node that we want to set rules for?  
+v By using the machine’s MAC address  
+By specifying the node's Fully Qualified Domain Names (FQDNs)  
+User-defined names  
+Using XML tags  
+Question 2
+When a Puppet agent evaluates the state of each component in the manifest, it uses gathered facts about the system to decide which rules to apply. What tool can these facts be "plugged into" in order to simplify management of the content of our Puppet configuration files?  
+Node definitions  
+Certificates  
+v Templates  
+Modules  
+Question 3
+What is the first thing that happens after a node connects to the Puppet master for the first time?
+The node identifies an open port.
+The Puppet-master requests third-party authentication.
+v The node requests a certificate.
+The user can immediately add modules.
+Question 4
+What does FQDN stand for, and what is it?
+Feedback Query Download Noise, which is extraneous data in feedback queries
+Far Quantum Data Node, which is a server node utilizing quantum entanglement
+Fairly Quantized Directory Network, which is a network consisting of equitable counted folders
+v Fully Qualified Domain Name, which is the full address for a node
+Question 5
+What type of cryptographic security framework does Puppet use to authenticate individual nodes?
+Single Sign On (SSO)
+v Public Key Infrastructure (PKI)
+Fully Qualified Domain Name (FQDN)
+Token authentication
+
+216 Practice Quiz: Updating Deployments25m
+Total points 5
+Question 1
+What is a production environment in Puppet?
+The software used for software development such as IDEs.
+v The parts of the infrastructure where a service is executed, and served to its users.
+A cloud service for commercial production.
+A Virtual Machine reserved for beta software.
+Question 2
+What is the --noop parameter used for?
+Passing a variable called noop to Puppet
+Adding conditional rules to manifests
+Defining what operations not to perform in a manifest
+v Simulating manifest evaluation without taking any actions
+Question 3
+What do rspec tests do?
+Checks that nodes can connect to the puppet master correctly
+Check the specification of the current node
+Check the manifests for specific content
+v Checks that the node is running the correct operating system
+Question 4
+How are canary environments used in testing?
+To store unused code
+v As a test environment to detect problems before they reach the production environment
+As a repository for alternative coding methods for a particular problem
+As a test environment for final software versions
+Question 5
+What are efficient ways to check the syntax of the manifest? (Check all that apply)
+v Run full No Operations simulations
+v Run rspec tests
+Test manually
+v puppet parser validate 
+217 Qwiklabs Assessment: Deployment Using Puppet
+Install packages
+cd /etc/puppet/code/environments/production/modules/packages
+cat manifests/init.pp
+sudo chmod 646 manifests/init.pp
+
+class packages {
+   package { 'python-requests':
+       ensure => installed,
+   }
+   if $facts[os][family] == "Debian" {
+     package { 'golang':
+       ensure => installed,
+     }
+  }
+   if $facts[os][family] == "RedHat" {
+     package { 'nodejs':
+       ensure => installed,
+     }
+  }
+}
+
+gcloud compute instances describe linux-instance --zone=us-central1-a --format='get(networkInterfaces[0].accessConfigs[0].natIP)'
+-34.70.125.20
+-104.197.162.185
+sudo puppet agent -v --test
+apt policy golang
+Fetch machine information
+cd /etc/puppet/code/environments/production/modules/machine_info
+cat manifests/init.pp
+sudo chmod 646 manifests/init.pp
+class machine_info {
+   file { '/tmp/machine_info.txt':
+       content => template('machine_info/info.erb'),
+   }
+   if $facts[kernel] == "windows" {
+       $info_path = "C:\Windows\Temp\Machine_Info.txt"
+   } else {
+       $info_path = "/tmp/machine_info.txt"
+   }
+}
+class machine_info {
+  if $facts[kernel] == "windows" {
+       $info_path = "C:\Windows\Temp\Machine_Info.txt"
+   } else {
+       $info_path = "/tmp/machine_info.txt"
+   }
+ file { 'machine_info':
+       path => $info_path,
+       content => template('machine_info/info.erb'),
+   }
+}
+
+cat templates/info.erb
+sudo chmod 646 templates/info.erb
+
+Machine Information
+-------------------
+Disks: <%= @disks %>
+Memory: <%= @memory %>
+Processors: <%= @processors %>
+Network Interfaces: <%= @interfaces %>
+}
+
+student-04-75ca255694b4@linux-instance:~$ sudo puppet agent -v --test
+cat /tmp/machine_info.txt
+
+Reboot machine
+sudo mkdir -p /etc/puppet/code/environments/production/modules/reboot/manifests
+cd /etc/puppet/code/environments/production/modules/reboot/manifests
+sudo touch init.pp
+sudo nano init.pp
+class reboot {
+  if $facts[kernel] == "windows" {
+    $cmd = "shutdown /r"
+  } elsif $facts[kernel] == "Darwin" {
+    $cmd = "shutdown -r now"
+  } else {
+    $cmd = "reboot"
+  }
+}
+class reboot {
+  if $facts[kernel] == "windows" {
+    $cmd = "shutdown /r"
+  } elsif $facts[kernel] == "Darwin" {
+    $cmd = "shutdown -r now"
+  } else {
+    $cmd = "reboot"
+  }
+  if $facts[uptime_days] > 30 {
+    exec { 'reboot':
+      command => $cmd,
+     }
+   }
+}
+
+sudo nano /etc/puppet/code/environments/production/manifests/site.pp 
+node default {
+   class { 'packages': }
+   class { 'machine_info': }
+   class { 'reboot': }
+}
+instance
+sudo puppet agent -v --test
+
+student-04-75ca255694b4@linux-instance:~$ sudo puppet agent -v --test
+Info: Using configured environment 'production'
+Info: Retrieving pluginfacts
+Info: Retrieving plugin
+Warning: Facter: Unable to fetch metadata from http://metadata/computeMetadata/v1beta1/?recursive=true&alt=json: 404 Not Found
+Info: Caching catalog for linux-instance.us-central1-a.c.qwiklabs-gcp-01-318061622a23.internal
+Info: Applying configuration version '1643524328'
+Notice: Applied catalog in 0.04 seconds
+
+300 WEEK 3 Automation in the Cloud In this module, you’ll learn about cloud services and the different types of cloud services, like SaaS, PaaS, and IaaS. Next, you’ll learn about scaling in the cloud and how to modify the capacity of your service. You’ll learn about horizontal and vertical scaling, which then ties into automatic versus manual scaling. Next, you’ll explore how much control you have over your system, depending on whether you choose SaaS, Paas, or IaaS, and assess which one is right for your business. You’ll rundown the options available to migrate your business to the cloud using strategies like lift and shift. 
+In the next lesson, you’ll learn how to manage instances in the cloud by creating one! You’ll explore the different options available, like regions, machine types, and lots more. Then, you’ll look into customizing and templating virtual machines to enable you to deploy them at scale. Our final lesson will explore the concept of automating cloud deployments. You’ll learn about load balancers, which ensure that each node receives a balanced number of requests, as well as autoscaling, which shuts nodes on and off, as needed. Next, you’ll learn about orchestration and how orchestration and automation differ. Last up, you’ll learn about infrastructure as code (IaC), or machine readable configuration files that automate configuration management.
+301 Intro to Module 3: Automation in the Cloud2m
+On-premise
+
+302 Cloud Services Overview5m
+Software as a Service (SaaS)
+When a Cloud provider delivers an entire application or program to the customer
+Platform as a Service (PaaS)
+When a Cloud provider offers a preconfigured platform to the customer
+Infrastructure as a Service (laaS)
+When a Cloud provider supplies only the bare-bones computing experience
+EC2 Amazon
+Azure Microsoft
+Google Engine
+
+If a bare-bones cloud computing experience is needed as well as a high level of control over the software being run, what Cloud service would one choose?
+Q Software as a Service
+Q SQL cloud services
+Q Platform as a Service
+(•) Infrastructure as a Service (laaS)
+Correct
+Great job! Infrastructure as a Service (laaS) provides users with the bare minimum needed to utilize a server's computational resources, such as a virtual machine. It is the user's responsibility to configure everything else.
+Infrastructure as a Service
+Qwiklabs
+
+303 Scaling in the Cloud6m
+Capacity
+How much the service can deliver
+Queries per second
+QPS
+Scaling
+Upscaling
+Downscaling
+Horizontally
+Horizontally
+Automatically
+Manually
+Automatic scaling
+The service offered by the Cloud provider will use metrics to automatically increase or decrease the capacity of the system
+Quotas
+Manual scaling
+Changes are controlled by humans instead of software
+Which "direction" are we scaling when we add capacity to our network in order to meet demand?
+Q Down
+Q Horizontal
+© Up
+Q Vertical
+Correct
+Nice work! Adding capacity to our network to meet demand—whether vertically or horizontally—is considered to be upscaling.
+
+304 Evaluating the Cloud5m
+Software as a Service
+Platform as a Service
+Infrastructure as a Service
+SOC1
+ISO 27001
+Google, Amazon, Microsoft
+We should always use reasonable judgement to protect the machines that we deploy, whether that’s on physical servers running on-premise or on virtual machines in the Cloud.
+Multi-factor authentication
+Encrypted file systems
+Public-key cryptography
+What are some advantages to using cloud services? (Select all that apply)
+v Offload complicated setups to the provider
+Correct
+Great work! Cloud services provide many advantages, such as outsourcing support and maintenance, simplifying configuration management, and letting the provider take care of security.
+v Outsource troubleshooting and maintenance to the provider
+Correct
+Great work! Cloud services provide many advantages, including simplifying configuration management, outsourcing support and maintenance, and letting the provider take care of security.
+v Letting the provider worry about complicated security measures
+Correct
+Great work! Cloud services provide several advantages, like putting the provider in charge of security.
+O Avoiding bandwidth or connection issues
+
+305 Migrating to the Cloud6m
+Lift and shift
+Shifting
+Managed web applications
+Amazon Elastic Beanstalk
+Microsoft App Service
+Google App Engine
+Containers
+Applications that are packaged together with their configuration and dependencies
+What does the phrase lift and shift refer to?
+(•) Migrating to the Cloud by virtualizing the current configuration
+Q Upscaling some nodes in the network while downscaling others
+Q Scaling horizontally
+Q Using a container
+Correct
+Nailed it! When we migrate from traditional server configurations to the Cloud, we //'ft the current configuration and shift it to a virtual machine.
+Public clouds
+Private clouds
+Hybrid clouds
+Multi-clouds
+Public cloud
+The cloud services provided to you by a third party
+Private cloud
+When your company owns the services and the rest of your infrastructure, whether that’s on-site or in a remote data center
+Hybrid cloud
+A mixture of both public and private clouds
+Multi-cloud
+A mixture of public and/or private clouds across vendors
+
+306 Spinning up VMs in the Cloud5m
+Name
+Region
+Zone
+Machine type
+Boot disk
+Reference images
+Store the contents of a machine in a reusable format
+Disk image
+A snapshot of a virtual machine’s disk at a given point in time
+If we want to reuse an exact copy of a virtual machine, we might save a snapshot to use as a reference image later. What is this snapshot called?
+Q An instance
+Q A boot disk
+O A template
+(•) A disk image
+Correct
+Excellent! A disk image is a snapshot of a virtual machine's disk, and is an exact copy of the virtual machine at the time of the snapshot.
+
+307 Creating a New VM Using the GCP Web UI6m
+Using the web interface, what is an easy way to create a virtual machine identical to the one we've just configured?
+(J) Copy and reuse the command line
+Q Save the settings as a text file
+Q Download the configuration as a manifest file
+Q Take a screenshot of the settings screen
+Correct
+Nicely done! By clicking the link labeled "Command line", we can see the exact command used to create the virtual machine.
+cat /etc/lsb-release
+curl wttr.in
+
+308 Customizing VMs in GCP6m
+Reference image
+git clone https://github.com/blue-kale/hello
+cd hello/
+./hello_cloud.py
+sudo ./hello_cloud.py 80
+Hello Cloud
+Hostname: linux-instance
+IP Address: 10.128.0.2
+cat heIlo_cloud.service
+systemd
+$linux-instance:~/hello$ cat hello_cloud.service 
+[unit]
+After=network.target
+[service]
+Execstart=/usr/local/bin/hello_cloud.py 80
+[Install]
+wantedBy=default.target
+$linux-instance:~/hello$ sudo cp hello_cloud.py /usr/local/bin/
+$linux-instance:~/helloS sudo cp hello_cloud.service /etc/systemd/system/
+$linux-instance:~/hello$ sudo systemctl enable hello_cloud
+sudo reboot
+It's important to know where to copy our systemd service file on Linux in order to configure our scripts as services. Do you remember the location of the systemd directory?
+Q /user/bin
+Q /root
+Q /home
+(•) /etc/systemd/system/
+Correct
+Nice job! etc/systemd/system/ is the default systemd directory in many Linux distros, including Red Hat Linux.
+redquinoaze200iinux-instance:-$ ps ax | grep hello
+1061 ?	Ss 0:00 pythons /usr/local/bin/hello_cloud.py 80
+1735 pts/0	S+	0:00 grep --color=auto hello
+sudo apt install puppet
+. /hello/setup_puppet.sh
+
+309 Templating a Customized VM7m
+gcloud init
+$ gcloud compute instances create --source-instance-template webserver-template wsl ws2 ws3 ws4 ws5
+What does the gcloud init command do?
+Q Displays Google Cloud connection data
+Q Creates a new virtual machine
+(•) Authenticates the connection between our virtual machine and Google Cloud
+Q Initializes configuration tests
+Correct
+Awesome! The gcloud init command sets up the authentication procedure between our virtual machine and Google Cloud.
+
+310 Cloud Scale Deployments4m
+Load balancer
+Ensures that each node receives a balanced number of requests
+Round robin
+Autoscaling
+Allows the service to increase or reduce capacity as needed, while the service owner only pays for the cost of the machines that are in use at any given time
+Varnish
+Nginx
+Cloudflare
+Fastly
+Memcached
+Redis
+
+What does a load balancer do?
+Q Removes inactive nodes
+Q Provides extra bandwidth
+Q Enhances security
+(•) Ensures each node receives a reasonable number of requests
+Correct
+Great job! Load balancers reroute requests in order to balance and reduce network load.
+
+311 What is orchestration?3m
+Automation
+The process of replacing a manual step with one that happens automatically
+Orchestration
+The automated configuration and coordination of complex IT systems and services
+Application
+Programming Interface
+API
+Hybrid cloud
+Only part of the services are in the cloud
+INTERNET
+What is the difference between automation and orchestration?
+Q Orchestration refers to a single task; automation arranges tasks to optimize a workflow
+(•) Automation refers to a single task; orchestration arranges tasks to optimize a workflow
+Q Automation is automatic; orchestration is entirely manual
+Q Automation is entirely automated; orchestration requires manual oversight
+Correct
+Nice work! Automation is when we set up a single step in a process to require no oversight, while orchestration refers to automating the entire process.
+
+312 Cloud Infrastructure as Code4m
+Cloud Formation
+Cloud Deployment Manager
+Azure Resource Manager
+Heat Orchestration Templates
+Terraform
+Domain-specific language
+Do you remember what Infrastructure as Code (laC) is?
+(•) Using machine-readable files to automate configuration
+Q A template for a software program that hasn't been written yet
+Q A programming language
+Q Code that accesses an external API
+Correct
+Nailed it! laC uses special machine-readable config files to automate configuration management.
+Long-lived
+Short-lived
+
+313 Module 3 Wrap Up: Automation in the Cloud2m
+Reference images
+Templating
+Orchestration
+Terraform
+
+314 Managing VMs in GCP10m
+315 More About Cloud & GCP10m
+316 Practice Quiz: Cloud Computing25m
+Total points 5
+Question 1
+When we use cloud services provided to the general consumer, such as Google Suite or Gmail, what cloud deployment model are we using?
+Hybrid cloud
+Private cloud
+v Public cloud
+Multi-cloud
+Question 2
+What is a container?
+A cloud deployment model that is a combination of public and private clouds
+A synonym for virtual machine
+A public file server
+v A virtualized environment containing applications and configurations that can run quickly and reliably on any computing environment
+Question 3
+Select the examples of Managed Web Application Platforms. (Check all that apply)
+v Google App Engine.
+v Amazon Elastic Beanstalk
+v Microsoft App Service.
+Dropbox
+Question 4
+When a company solely owns and manages its own cloud infrastructure, what type of cloud deployment model are they using?
+Public cloud
+Hybrid cloud
+v Private cloud
+Multi-cloud
+Question 5
+Which "direction" are we scaling when we add RAM or CPU resources to individual nodes?
+Down
+Horizontal
+Up
+v Vertical
+
+317 Practice Quiz: Managing Instances in the Cloud25m
+Cloud
+Total points 5
+Question 1
+What is templating?
+v The process of capturing the entire system configuration to enable us to reproduce virtual machines
+The process of copying virtual machines
+The process of creating a new virtual machine instance
+The process of testing configurations against known-working settings
+Question 2
+Why is it important to consider the region and zone for your cloud service?
+To follow local laws and regulations
+To avoid time zone discrepancy
+To avoid language barriers
+v To ensure bandwidth and reliability for users
+Question 3
+What option is used to determine which OS will run on the VM?
+Machine type
+v Boot disk
+Region
+Template
+Question 4
+When setting up a new series of VMs using a reference image, what are some possible options for upgrading services running on our VM at scale?
+Manually updating files via the command line
+v Create a new reference image each update
+Editing parameters and uploading files individually through the web interface
+v Use a configuration management system like Puppet
+Question 5
+When using gcloud to manage VMs, what two parameters tell gcloud that a) we want to manage our VM resources and b) that we want to deal with individual VMs? (Check two)
+v compute
+init
+v instances
+create
+
+318 Practice Quiz: Automating Cloud Deployments25m
+Total points 5
+Question 1
+In order to detect and correct errors before end users are affected, what technique(s) should we set up?
+v Monitoring and alerting
+Orchestration
+Autoscaling
+Infrastructure as Code
+Question 2
+When accessing a website, your web browser retrieves the IP address of a specific node in order to load the site. What is this node called?
+Gate node
+v Entry point
+Access machine
+Front line
+Question 3
+What simple load-balancing technique just assigns to each node one request at a time?
+Random
+v Round Robin
+Least connections
+Source IP
+Question 4
+Which cloud automation technique spins up more VMs into instance groups when demand increases, and shuts down VMs when demand decreases?
+Infrastructure as Code
+v Autoscaling
+Load Balancing
+Orchestration
+Question 5
+Which of the following are examples of orchestration tools used to manage cloud resources as code? (Check all that apply)
+v Terraform
+v CloudFormation
+v Azure Resource Manager
+CloudFlare
+
+319 Qwiklabs Assessment: Create VM template and Automate deployment
+
+student-04-aedcbd18f9d8@qwiklabs.net
+
+https://cloud.google.com/sdk/docs/quickstart
+
+git clone https://www.github.com/google/it-cert-automation-practice.git
+
+cd ~/it-cert-automation-practice/Course5/Lab3
+
+sudo cp hello_cloud.py /usr/local/bin/
+sudo cp hello_cloud.service /etc/systemd/system
+
+sudo systemctl enable hello_cloud.service
+
+Restart the VM
+http://34.138.94.14/
+Hello Cloud
+
+Hostname: vm1 
+IP Address: 10.142.0.2
+Create VMs using a template
+vm-image
+
+gcloud compute instances create --zone us-west1-b --source-instance-template vm1-template vm2 vm3 vm4 vm5 vm6 vm7 vm8
+
+us-east1-b
+gcloud compute instances list
+
+Hello Cloud
+
+Hostname: vm7 
+IP Address: 10.138.0.4
+
+--
+Please run:
+  $ gcloud auth login
+    $ gcloud config set account ACCOUNT
+Cloud SDK>gcloud auth login
+Your browser has been opened to visit:
+  $ gcloud config set project PROJECT_ID
+
+gcloud init
+--
+Welcome to the Google Cloud SDK! Run "gcloud -h" to get the list of available commands.
+
+Cloud SDK>gcloud compute instances create --zone us-west1-b --source-instance-template vm1-template vm2 vm3 vm4 vm5 vm6 vm7 vm8
+  $ gcloud auth login
+
+Cloud SDK>gcloud auth login
+You are now logged in as [student-04-aedcbd18f9d8@qwiklabs.net].
+Your current project is [None].  You can change this setting by running:
+  $ gcloud config set project PROJECT_ID
+
+Cloud SDK>gcloud compute instances create --zone us-west1-b --source-instance-template vm1-template vm2 vm3 vm4 vm5 vm6 vm7 vm8
+ERROR: (gcloud.compute.instances.create) The required property [project] is not currently set.
+  $ gcloud config set project VALUE
+Cloud SDK>gcloud config set project qwiklabs-gcp-03-2098c9e8c049
+Updated property [core/project].
+
+Cloud SDK>gcloud compute instances create --zone us-west1-b --source-instance-template vm1-template vm2 vm3 vm4 vm5 vm6 vm7 vm8
+Created [https://www.googleapis.com/compute/v1/projects/qwiklabs-gcp-03-2098c9e8c049/zones/us-west1-b/instances/vm2].
+NAME: vm2
+ZONE: us-west1-b
+MACHINE_TYPE: n1-standard-1
+PREEMPTIBLE:
+INTERNAL_IP: 10.138.0.6
+EXTERNAL_IP: 35.247.103.96
+STATUS: RUNNING
+
+Cloud SDK>gcloud compute instances list
+NAME: vm2
+ZONE: us-west1-b
+MACHINE_TYPE: n1-standard-1
+PREEMPTIBLE:
+INTERNAL_IP: 10.138.0.6
+EXTERNAL_IP: 35.247.103.96
+STATUS: RUNNING
+
+400 WEEK 4 Managing Cloud Instances at Scale In this module, you’ll learn all about storing data in the cloud. You’ll rundown the different types of storage available, like block storage and object storage, and how they differ. You’ll explore load balancing further and dive into some load balancing techniques, like round-robin DNS and sticky sessions. Next, you’ll dive into change management, including the different ways to test your changes and how to push them. You’ll explore different testing methods, like unit tests and integration tests. You’ll also cover continuous integration, the use of continuous deployment, and how to apply A/B testing. Next up, you’ll look at some errors you might encounter along the way, like quotas or limits, and how best to avoid or prepare for these.
+In the next lesson, you’ll get an understanding of monitoring and altering, and review some systems that offer it. You’ll then dive into the concept of SLA’s and how to set achievable ones. Next, you’ll look at basic monitoring in GCP, and create altering policies, set up conditions, and choose aggregators to manage the data. The last lesson will explore troubleshooting and debugging our systems. You’ll learn how to troubleshoot and debug remotely, understand. techniques for how to identify where the failure is coming from, and how to recover from a failure when it strikes.
+401 Intro to Module 4: Managing Cloud Instances at Scale2m
+402 Storing Data in the Cloud7m
+Block storage
+Object storage
+Blob storage
+Persistent storage
+Used for instances that are long lived and need to keep data across reboots and upgrades
+Ephemeral storage
+Used for instances that are only temporary and only need to keep local data while they’re running
+Containers
+Shared file system solutions
+NFS
+CIFS
+Object storage
+Lets you place and retrieve objects in a storage bucket
+Blobs
+SQL
+NoSOL
+Relational
+Which form of cloud data storage is based on objects instead of traditional file system hierarchies?
+Q Relational databases
+Q Block storage
+(•) Blob storage
+Q NoSQL databases
+Correct
+Right on! Blobs are pieces of data that are stored as independent objects, and require no file system.
+Throughput
+The amount of data that you can read and write in a given amount of time
+Input/Output Operations Per Second (IOPS)
+Measures how many reads or writes you can do in one second, no matter how much data you're accessing
+Latency
+The amount of time it takes to complete a read or write operation
+Time to first byte
+Hot data
+Accessed frequently and stored in hot storage
+Cold data
+Accessed infrequently and stored in cold storage
+
+403 Load Balancing5m
+Round-Robin DNS
+Sticky sessions
+All requests from the same client always go to the same backend server
+Which description fits the Round-robin DNS load balancing method?
+Q Each client is served based on a complex calculation.
+Q Each client is served based on the amount of traffic.
+Q Each client is served randomly.
+(•) Each client is served in turn.
+Correct
+Nice job! The Round-robin approach serves clients one at a time, starting with the first, and making rounds until it reaches the beginning again.
+GeoDNS
+GeoIP
+Content Delivery Networks (CDNs)
+Make up a network of physical hosts that are geographically located as close to the end users as possible
+
+404 Change Management6m
+Unit tests
+Integration tests
+Continuous integration
+Cl
+Continuous integration system
+Will build and test our code every time there's a change
+Continuous integration system
+Will build and test our code every time there's a change
+Jenkins
+Travis CI
+Continuous deployment
+CD
+Build artifacts r
+Test environment
+Production environment
+Environment
+Everything needed to run the service
+Prod
+Automation tools are used to manage the software development phase's build and test functions. Which of the following is the set of development practices focusing on these aspects?
+O Continuous Deployment
+(•) Continuous Integration
+Q Pre-Prod
+Q Test environment
+Correct
+Great work! Continuous Integration means the software is built, uploaded, and tested constantly.
+A/B testing
+Some requests are served using one set of code and configuration (A) and other requests are served using a different set of code and configuration (B)
+
+405 Understanding Limitations4m
+Quotas
+Limits
+Blob storage
+Rate limits
+Prevent one service from overloading the whole system
+Utilization limits
+Cap the total amount of a certain resource that you can provision
+Quota increase
+What is the purpose of a rate limit?
+Q Prevent over-provisioning of a certain resource.
+Q Provide additional capacity.
+(•) To prevent overloading the entire system with one service.
+O To restrict the frequency of login attempts.
+Correct
+Right on! Cloud providers will often enforce rate limits on resource-hungry service calls to prevent one service from overloading the entire system.
+Beta
+Pre-release
+
+406 Getting Started with Monitoring5m
+Monitoring
+Alerting
+Monitoring lets us look into the history and current status of a system.
+Metrics
+Response code
+AWS CloudWatch
+Google
+Stack Driver
+Azure Metrics
+Prometheus
+Data Dog
+Nagios
+Memory used
+Requests received
+Data being transmitted
+You only want to store the metrics that you care about, since storing all these metrics in the system takes space, and storage space costs money.
+You only want to store the metrics that you care about, since storing all these metrics in the system takes space, and storage space costs money.
+Which of the following monitoring models is being used if our monitoring system requires our service to actively send metrics?
+(•) Push model
+Q Pull model
+Q Error monitoring
+Q Resource monitoring
+Correct
+Awesome! When push monitoring is used, the service being monitored actively sends metrics to the monitoring system.
+Whitebox monitoring
+Checks the behavior of the system from the inside
+Blackbox monitoring
+Checks the behavior of the system from the outside
+
+407 Getting Alerts When Things Go Wrong6m
+cron
+Raising an alert signals that something is broken and a human needs to respond.
+Pages
+Actionable
+Noise
+What do we call an alert that requires immediate attention?
+Q Ticket
+(•) Page
+Q Cron job
+Q Bug report
+Correct
+Nice job! Pages are alerts that need immediate human attention, and are often in the form of SMS or email.
+
+408 Service-Level Objectives6m
+Service-Level Objectives (SLOs)
+Pre-established performance goals for a specific service
+Measurable
+Service-Level Agreement (SLA)
+A commitment between a provider and a client
+Error budgets
+43 minutes per month
+Question
+If our service has a Service Level Objective (SLO) of four-nines, what is our error budget measured in downtime percentage?
+Q .001%
+O 1%
+O -1%
+(.) .01%
+Correct
+Nice job! If we have an SLO of 99.99%, that gives us an error budget of .01 %.
+
+409 Basic Monitoring in GCP8m
+while true; do true; done &
+What type of policy requires us to set up a condition which notifies us when it's triggered?
+Q Login Policy
+(•) Alerting Policy
+Q Security Policy
+Q Bug Reporting Policy
+Correct
+Great work! An Alerting Policy specifies the conditions that trigger alerts, and the actions to be taken when these alerts are triggered, like sending an email address notification.
+
+410 What to Do When You Can't Be Physically There3m
+Physically inspect the machine's connections.
+Power cycle the hardware
+Run a test VM in a test environment
+Correct
+Nice job! Testing through software is always our best bet in the cloud.
+Call the service provider
+Correct
+Well done, you! Part of the beauty of running services in the Cloud is that you aren't responsible for everything! Most Cloud providers are happy to provide various levels of support.
+
+411 Identifying Where the Failure Is Coming From3m
+Rollbacks
+When troubleshooting, what is it called when an error or failure occurs, and the service is downgraded to a previous working version?
+Q Reinstall
+(•) Rollback
+Q Restore
+Q Redo
+Correct
+Great work! Rollback is the process of restoring a database or program to a previously defined state, usually to recover from an error.
+Containers
+Packaged applications that are shipped together with their libraries and dependencies
+
+412 Recovering from Failure3m
+If you operate a service that stores any kind of data, it's critical that you implement automatic backups, and that you periodically check that those backups are working correctly by performing restores.
+Secondary
+Primary
+Redundancy
+Which of the following are important aspects of disaster recovery? (Select all that apply)
+v Having multiple points of redundancy
+Correct
+Nice job! Having several forms of redundancy, and failover reduces the impact when failure happens.
+v Having a well-documented disaster recovery plan
+Correct
+Awesome! In order to get things up and running as quickly as possible, we need to have a detailed plan.
+v Having automatic backups
+Correct
+Great work! Having automatic backups makes it easier to restore and recover.
+O Eliminating failure in the first place
+
+413 Module 4 Wrap Up: Managing Cloud Instances at Scale2m
+414 Congratulations!1m
+415 More About Cloud Providers10m
+416 More Information on Monitoring and Alerting10m
+417 Reading: Debugging Problems on the Cloud10m
+418 Practice Quiz: Building Software for the Cloud25m
+Total points 5
+Question 1
+What is latency in terms of Cloud storage?
+The measure of how many reads or writes you can do in one second, no matter how much data you're accessing.
+The amount of data that you can read, and write in a given amount of time.
+v The amount of time it takes to complete a read or write operation.
+The time delay between an input and output.
+Question 2
+Which of the following statements about sticky sessions are true? (Select all that apply.)
+v All requests from the same client always go to the same backend server.
+Sticky sessions maintain an even load.
+v They should only be used when needed.
+v They can cause problems during migration.
+Question 3
+If you run into limitations such as rate limits or utilization limits, you should contact the Cloud provider and ask for a _____.
+Beta version
+v Quota increase
+A/B test
+Blob storage solution
+Question 4
+What is the term referring to everything needed to run a service?
+v Environment
+Provisions
+Utilization limits
+Continuous integration
+Question 5
+What is the term referring to a network of hosts spread in different geographical locations, allowing ISPs to be as close as possible to content?
+Domain Name Service
+Continuous Deployment
+Platform as a Service
+v Content delivery network
+
+419 Practice Quiz: Monitoring & Alerting25m
+Total points 5
+Question 1
+What is a Service Level Agreement?
+An agreement between the user and developer.
+v A strict commitment between a provider and a client.
+An agreement between service providers.
+A guarantee of service quality.
+Question 2
+What is the most important aspect of an alert?
+v It must be actionable.
+It must require a human to be notified.
+It must require immediate action.
+It must precisely describe the cause of the issue.
+Question 3
+Which part of an HTTP message from a web server is useful for tracking the overall status of the response and can be  monitored and logged?
+A triggered alert
+The data pushed back to the client
+Metrics sent from the server
+v The response code in the server's message
+Question 4
+To set up a new alert, we have to configure the _____ that triggers the alert.
+v Condition
+Metric
+Incident
+Service Level Objective (SLO)
+Question 5
+When we collect metrics from inside a system, this is known as ______ monitoring.
+v White-box
+Black-box
+Network
+Log
+
+420 Practice Quiz: Troubleshooting & Debugging25m
+Total points 5
+Question 1
+Which of the following are valid strategies for recovery after encountering service failure? (Select all that apply.)
+v Switching to a secondary instance.
+Setting up monitoring and alerts.
+v Restoring from backup.
+v Performing a rollback to a previous version.
+Question 2
+Which of the following concepts provide redundancy? (Select all that apply.)
+v Having a secondary instance of a VM.
+v Having a secondary Cloud vendor.
+Having automatic backups configured.
+Performing a rollback.
+Question 3
+If you operate a service that stores any kind of data, what are some critical steps to ensure disaster recovery? (Select all that apply)
+v Implement automated backups
+Use redundant systems wherever possible
+v Test backups by restoring
+Never delete old backups
+Question 4
+What is the correct term for packaged applications that are shipped with all needed libraries and dependencies, and allows the application to run in isolation?
+Rollback
+Secondary instance
+v Containers
+Disk Image
+Question 5
+Using a large variety of containerized applications can get complicated and messy. What are some important tips for solving problems when using containers? (Select all that apply)
+v Use extensive logging in all parts
+Reduce the number of containers
+Reuse container configurations
+v Use test instances
+421 Qwiklabs Assessment: Debugging Cloud Deployment
+
+sudo systemctl status apache2
+sudo systemctl restart apache2
+sudo netstat -nlp
+ps -ax | grep python3
+
+cat /usr/local/bin/jimmytest.py
+sudo kill 2207
+sudo systemctl --type=service | grep jimmy
+sudo systemctl stop jimmytest && sudo systemctl disable jimmytest
+sudo netstat -nlp
+sudo systemctl start apache2
+

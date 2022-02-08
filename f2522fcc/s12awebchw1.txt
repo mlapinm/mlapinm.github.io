@@ -369,6 +369,7 @@ Selector
 Declaration
 Property/value pair Style sheet
 
+
 204 Lecture 13: Element, Class, and ID Selectors9m
 
 205 Lecture 14: Combining Selectors9m
@@ -562,7 +563,7 @@ Media Query Common Features
 @media (min-width: 768px) and (max-width: 991px) {...}
 
 Comma is equivalent to OR:
-@media (max-width: 767px) (min-width: 992px) { ..}
+@media (max-width: 767px), (min-width: 992px) { ..}
 
 Media Query Common Approach
 
