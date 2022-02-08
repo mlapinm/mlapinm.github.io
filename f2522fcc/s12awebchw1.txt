@@ -638,19 +638,396 @@ If no other rules apply, specifying col-xs-... will keep that layout no matter w
 230 CONNECT WITH ME!2m
 231 Frequently Asked Questions2m
 232 Optional Practice Quiz30m
+Total points 3
+Question 1
+A stylesheet is a collection of CSS rules
+v True
+False
+Correct
+Question 2
+Identify valid CSS rules (can be one or more)
+v p {
+  height: 23px;
+  font-size: 12px;
+}
+v p { height: 23px; font-size: 12px; }
+p = "height: 23px", "font-size: 12px";
+p {
+  height = 23px,
+  font-size = 12px,
+}
+Question 3
+CSS is only allowed to have 1 property/value pair per each CSS rule
+True
+v False
+
 233 Optional Practice Quiz30m
+Total points 2
+Question 1
+A CSS rule can be applied to only one selector at a time.
+True
+v False
+Correct
+Question 2
+A CSS rule has to be defined separately for each selector
+True
+v False
+
 234 Optional Practice Quiz30m
+Total points 2
+Question 1
+Given the following HTML code:
+<div>
+  <p>I am feeling blue</p>
+</div>
+<section>
+  <p>I just want to be left alone!</p>
+</section>
+Which of the following CSS rules turns the text of the first <p> tag blue, but NOT the second <p> tag? (after all, the second one wants to be left alone.)
+v div > p {
+  color: blue;
+}
+div.p {
+  color: blue;
+}
+v div p {
+  color: blue;
+}
+p {
+  color: blue;
+}
+Question 2
+Given the following HTML code:
+<div>
+  <div>
+    <div class="makeMeBlue">
+      <p>I am feeling blue</p>
+    </div>
+  </div>
+  <section class="makeMeBlue">
+    <p>I just want to be left alone!</p>
+  </section>
+</div>
+Which of the following CSS rules turns the text of the first <p> tag blue, but NOT the second <p> tag? (It still wants to be left alone.)
+.makeMeBlue > p {
+  color: blue;
+}
+v div.makeMeBlue p {
+  color: blue;
+}
+
+v div > div > p {
+  color: blue;
+}
+div p {
+  color: blue;
+}
+
 235 Optional Practice Quiz30m
+Total points 3
+Question 1
+By default, a block-level element tries to take up as much horizontal space as its containing element will allow
+v True
+False
+Question 2
+Given the following HTML code:
+...
+<body>
+  <div>Hello</div>
+  <span>World!</span>
+</body>
+...
+and the following CSS code:
+div, span {
+  background-color: blue;
+}
+Which of the statement(s) below are true?
+v The background color behind the words 'Hello' and 'World' is blue.
+Both backgrounds will span the entire width of the browser window.
+v The div element's background will span the entire width of the browser.
+The span element's background will span the entire width of the browser.
+v The text "World!" will appear on a separate line, below the text "Hello".
+Question 3
+Given the following HTML code:
+<a>
+  <div>Div 1</div>
+  <div>Div 2</div>
+  <div>Div 3</div>
+  <div>Div 4</div>
+  <div>Div 5</div>
+  <div>Div 6</div>
+</a>
+Which CSS rule below will set the font size of 'Div 5' text to 24px when the user hovers the mouse over ANY area inside the 'a' element?
+(Not a very simple question, but good practice!)
+v a:hover:nth-child(5) {
+  font-size: 24px;
+}
+a:hover div:nth-child(5) {  
+  font-size: 24px;
+}
+a:hover > div > div > div > div > div {  
+  font-size: 24px;
+}
+div:hover {  
+  font-size: 24px;
+}
+
 236 Optional Practice Quiz30m
+Total points 2
+Question 1
+A CSS rule can be applied to only one selector at a time.
+True
+v False
+Question 2
+A CSS rule has to be defined separately for each selector
+True
+v False
+
 237 Optional Practice Quiz30m
+Total points 3
+Question 1
+By default, a block-level element tries to take up as much horizontal space as its containing element will allow
+v True
+False
+Question 2
+Given the following HTML code:
+...
+<body>
+  <div>Hello</div>
+  <span>World!</span>
+</body>
+...
+and the following CSS code:
+div, span {
+  background-color: blue;
+}
+Which of the statement(s) below are true?
+v The background color behind the words 'Hello' and 'World' is blue.
+Both backgrounds will span the entire width of the browser window.
+v The div element's background will span the entire width of the browser.
+The span element's background will span the entire width of the browser.
+v The text "World!" will appear on a separate line, below the text "Hello".
+Question 3
+Given the following HTML code:
+<a>
+  <div>Div 1</div>
+  <div>Div 2</div>
+  <div>Div 3</div>
+  <div>Div 4</div>
+  <div>Div 5</div>
+  <div>Div 6</div>
+</a>
+Which CSS rule below will set the font size of 'Div 5' text to 24px when the user hovers the mouse over ANY area inside the 'a' element?
+(Not a very simple question, but good practice!)
+a:hover:nth-child(5) {
+  font-size: 24px;
+}
+a:hover div:nth-child(5) {  
+  font-size: 24px;
+}
+a:hover > div > div > div > div > div {  
+  font-size: 24px;
+}
+div:hover {  
+  font-size: 24px;
+}
+
 238 Optional Practice Quiz30m
+Total points 2
+Question 1
+Given the following HTML code:
+...
+<body>
+<div>
+  <section id="mySection">
+    I am having a color identity crisis!
+  </section>
+</div>
+</body>
+...
+and the following CSS:
+body {
+  color: blue;
+}
+What color will the words "I am having a color identity crisis!" be?
+v Blue
+Whatever the default color the browser assigns to it since we didn't specify the color of the <section> tag
+Question 2
+Given the following HTML code:
+...
+<body>
+<div>
+  <section id="mySection" class="myColor">
+    I am having a color identity crisis again! Help!
+  </section>
+</div>
+</body>
+...
+and the following CSS:
+#mySection {
+  color: green;
+}
+.myColor {
+  color: blue;
+}
+What color will the words "I am having a color identity crisis again! Help!" be?
+Blue
+v Green
+
 239 Optional Practice Quiz30m
+Total points 2
+Question 1
+Pixels are absolute units of measurements (as opposed to relative).
+v True
+False
+Question 2
+Given the following HTML code:
+...
+<head>
+<style>
+body {
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+  <div style="font-size: 3em;">How big am I?</div>
+What is the pixel size of the text "How big am I?", assuming the user did NOT increase zoom in the browser window?
+v 90px
+-10px
+-1/3 of a pixel
+
 240 Optional Practice Quiz30m
+Total points 4
+Question 1
+Assuming no other styles exist, how many pixels wide will the 'div' tag be with the following styles:
+div {
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  width: 100px;
+  border: 10px solid black;
+}
+v 140px
+-160px
+-200px
+-100px
+Question 2
+Assuming no other styles exist, how many pixels wide will the 'div' tag be with with following styles:
+div {
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  width: 100px;
+  border: 10px solid black;
+  box-sizing: border-box;
+}
+-140px
+-160px
+-200px
+v 100px
+Question 3
+Right margin of one element that touches the left margin of another element creates a combined margin that is equal to the sum of both margins.
+v True
+False
+Question 4
+Given the following HTML code:
+...
+<div style="margin-bottom: 10px;">...</div>
+<div style="margin-top: 20px;">...</div>
+What will be the margin between the 2 'div' elements?
+-10px
+v 20px
+-30px
+-0
+
 241 Optional Practice Quiz30m
+Total points 1
+Question 1
+Given the following HTML code:
+...
+<div style="background-color: blue; background: url('mypicture.jpg');"> ... </div>
+What will you see inside the div element?
+Some image on top of a blue background
+Blue background, but no image
+Blue background will be covering the image
+v Just the image
+Since we specified 'background' and not 'background-image', we wiped  the 'background-color' property value, so the blue background will not appear.
+
 242 Optional Practice Quiz30m
+Total points 2
+Question 1
+Floating elements takes them out of the regular document flow
+v True
+False
+Question 2
+The following code:
+section {
+  clear: right;
+}
+says that none of the section elements should allow anything to float to the right of them.
+v True
+False
+
 243 Optional Practice Quiz30m
+Total points 2
+Question 1
+Settings position: relative; on an element takes it out of regular document flow.
+True
+v False
+Question 2
+By default, ALL HTML elements have their position property set to static.
+True
+v False
+
 244 Optional Practice Quiz30m
+Total points 2
+Question 1
+Given the following media query:
+@media (min-width: 768px) and (max-width: 991px) {
+...
+}
+The styles within this media query will apply if the browser window is 991px wide.
+v True
+False
+Question 2
+The usual approach to using media queries is to provide some base styling and then change and/or add to them within each media query.
+v True
+False
+
 245 Optional Practice Quiz30m
+Total points 3
+Question 1
+Most responsive frameworks use a 12-grid layout
+v True
+False
+Question 2
+To have a 12-grid layout means that 1 cell in that grid has width: 8.33% (100 / 12)
+v True
+False
+Question 3
+The following meta tag:
+<meta name="viewport" content="width=device-width, initial-scale=1">
+Tells the browser to consider the width of the device as the real width of the screen and set its zoom level to 1, i.e., 100%, so it's not zoomed in or zoomed out.
+v True
+False
+
+246 Optional Practice Quiz30m
+Total points 4
+Question 1
+Twitter Bootstrap is one of the most popular CSS frameworks today
+v True
+False
+Question 2
+This Bootstrap Grid class: col-md-6 means that the element to which it is applied should stretch to be 50% of the browser screen and collapse/stack below a certain browser screen width (hinted to by the 'md' qualifier).
+v True
+False
+Question 3
+The Bootstrap Grid requires us to only use 'div' elements for each grid cell.
+True
+v False
+Question 4
+Bootstrap Grid has to be defined inside of some parent element which has its class set to either 'container' or 'container-fluid'.
+v True
+False
 
 300 WEEK3 Coding the Static Restaurant Site
 Ready for some REAL fun? This module is it! We'll go over some basics of interacting with a client when managing a web site project and then go visit a real client at their place of business (a Chinese restaurant), help the owner figure out what she wants in a site, and get acquainted with the restaurant in general. We'll spend the rest of the module building a real web site for this business from scratch and you'll get to sit next to me and watch as the site comes together.
@@ -693,9 +1070,81 @@ What fun would a web site be if there was no functionality to it? In this module
 402 Lecture 40, Part 1: Adjusting Development Environment for Javascript Development5m
 403 Lecture 40, Part 2: Where to Place Javascript Code5m
 404 Lecture 41, Part 1: Defining Variables, Function, and Scope8m
+Scope Chain
+Everything is executed in an Execution Context Function invocation creates a new Execution Context
+Each Execution Context has:
+•	Its own Variable Environment
+•	Special ‘this’ object
+•	Reference to its Outer Environment
+Global scope does not have an Outer Environment as it’s the most outer there is
+Referenced (not defined) variable will be searched for in its current scope first. If not found the Outer Reference will be searched.
+If not found, the Outer Reference's Outer Reference will be searched, etc.
+This will keep going until the Global scope.
+If not found in Global scope, the variable is undefined.
+
 405 Lecture 41, Part 2: Defining Variables, Function, and Scope4m
+var message = "in global";
+console.log('global: message = ' + message);
+var a = function () { 
+	var message = "inside a"; 
+    console.log("a: message = " + message); 
+	b();
+}
+
+function b () { 
+	console.log('b: message = ' + message)
+}
+global: message = in global
+a: message = inside a
+b: message = in global
+Summary
+Defining variables - dynamically typed
+Defining functions - creates its own scope (lexical)
+JS code runs within an Execution Context
+Scope chain is used to retrieve variables from Outer Variable Environments
+
 406 Lecture 42, Part 1: Javascript Types5m
+Types
+A type is a particular data structure.
+Each language defines some built-in types
+Built-in types can be used to build other data structures JS has 7 built-in types: 6 primitive and 1 Object type
+Primitive type represents a single, immutable value
+ Single value, i.e., not an object
+ Immutable means once it’s set, it can’t be changed
+•	Value becomes read-only
+•	You can create another value based on an existing one
+Primitive type: Undefined
+Undefined signifies that no value has ever been set
+
+Can only have one value: undefined
+You can set a variable to undefined, but you should NEVER do it
+Its meaning is that it’s never been defined, so defining it to undefined is counter to its core meaning
+
+Primitive type: Null
+Null signifies lack of value
+As opposed to undefined, which is lack of definition
+Can only have one value: null
+It’s ok to explicitly set a variable to null
+
+Primitive type: Number
+Number is the only numeric
+type in Javascript
+- Always represented under the hood as double-precision 64-bit floating point
+- JS does not have an integer type
+• Integers are a subset of doubles instead of a separate data type
+Primitive type: String
+String is sequence of characters used to represent text
+Use either single or double quotes, i.e., ‘text’ or “text”
+Primitive type: Symbol
+Symbol is new to ES6
+Not covered in this class
+ES6 (released 2015) isn’t widely supported or used yet
+
 407 Lecture 42, Part 2: Javascript Types4m
+
+
+
+
 408 Lecture 43, Part 1: Common Language Constructs8m
 409 Lecture 43, Part 2: Common Language Constructs4m
 410 Lecture 43, Part 3: Common Language Constructs7m
@@ -717,14 +1166,164 @@ What fun would a web site be if there was no functionality to it? In this module
 426 New Tutorials - here is how...2m
 427 Frequently Asked Questions2m
 428 Optional Practice Quiz30m
+Total points 3
+Question 1
+Javascript is always executed sequentially
+v True
+False
+Question 2
+Given the following HTML code snippet:
+<script src="js/script.js"/>
+Is this HTML valid?
+v No, it's missing a closing 'script' tag. It must always be there.
+Yes, the closing 'script' tag only needs to be there if javascript code is written in between the opening and closing 'script' tags.
+Question 3
+Identify valid Javascript code snippet(s)
+v var x = "Hello world!";
+v var x = function () {
+  console.log("Hello World");
+  return;
+};
+v var x = function () {
+  console.log("Hello World");
+  return;
+};
+x();
+v var x = function () {
+  console.log("Hello World");
+  return;
+};
+x = "hello, I am a new value!";
+var x = function () 
+[
+  console.log("Hello World");
+  return;
+];
+
 429 Optional Practice Quiz30m
+Total points 2
+Question 1
+An object in Javascript is simply a collection of name/value pairs.
+v True
+False
+Question 2
+In Javascript, a primitive type can store only 1 name/value pair at a time.
+True
+v False
+
 430 Optional Practice Quiz30m
+Total points 2
+Question 1
+Strict equality operator (===) differs from regular equality operator (==) in that it checks if both values on its right and left are of the same type first. If they are not, it doesn't try to coerce them to be the same value and just returns false.
+v True
+False
+Question 2
+Given the following Javascript code:
+var x = 10;
+if ( (null) || (console.log("Hello")) || x > 5 ) {
+  console.log("Hello");
+}
+How many times will the word 'Hello' be printed to the console?
+-1
+-3
+v -2
+-0
+
 431 Optional Practice Quiz30m
+Total points 1
+Question 1
+Defining a variable as an Object Literal accomplishes pretty much the same thing as defining a variable equal to 'new Object()'. However, it's faster and easier to type up an object literal.
+True
+False
+
 432 Optional Practice Quiz30m
+Total points 1
+Question 1
+What is the output for the following Javascript code:
+function makeMultiplier(multiplier) {
+  var myFunFunc = function (x) {
+    return multiplier * x;
+  };
+  return myFunFunc;
+}
+var operation = makeMultiplier(10);
+console.log(operation(10));
+v -100
+-10
+-0
+-5
+
 433 Optional Practice Quiz30m
+Total points 2
+Question 1
+Javascript doesn't allow anything to be passed by reference
+v False
+True
+Question 2
+What is the output of the following Javascript code:
+var x = 5;
+var y = x;
+x = 10;
+console.log(y);
+v -5
+-10
+undefined
+null
+
 434 Optional Practice Quiz30m
+Total points 1
+Question 1
+What is the output of the following Javascript code:
+var counter = 0;
+var myArray = ["Yaakov", 2, {handle: "yaakovchaikin"}];
+for (var i = 0; i < myArray.length; i++) {
+  counter++;
+}
+console.log(counter);
+v -3
+-0
+-4
+-Nothing, there will be an error.
+
 435 Optional Practice Quiz30m
+Total points 1
+Question 1
+What is the output of the following Javascript code?
+function Dog(name) {
+  this.name = name;
+}
+Dog.prototype.bark = function () {
+  console.log(this.name + " likes barking! Bark!");
+}
+var max = new Dog("Max", "Buddy");
+max.bark();
+v Max likes barking! Bark!
+Buddy likes barking! Bark!
+It will produce an error
+likes barking! Bark!
+
 436 Optional Practice Quiz30m
+Total points 2
+Question 1
+Immediately Invoked Function Expressions are usually used to place code into its own execution context not to conflict with the global scope.
+v True
+False
+Question 2
+Given the following code:
+ (function(window) {
+ var obj = {};
+ obj.dreamOn = function () {
+  console.log("I want to see the global scope! Let me out!");
+ };
+ window.doer = obj;
+ });
+doer.dreamOn();
+What (if anything) is missing from this code in order to get it to output the message of the "dreamOn" method?
+Nothing is missing. It will output "I want to see the global scope! Let me out!"
+Line 1 and Line 9 should use 'global' instead of 'window'.
+The function definition in Line 5 is missing an argument. It should accept an argument by the name of 'window'
+v The attempted IIFE is not being invoked and passed in the window object. It's missing '(window)' Line 11 right before the semicolon.
+
 
 500 WEEK5 Using Javascript to Build Web Applications
 In this module, we are going to take all those newly learned Javascript language skills and learn how to utilize them within the context of a web page. We’ll start by learning how to properly manipulate the web page components using the Javascript Document Object Model API. We will then move on to learning one of the most popular ways of serving up data to a web site - Ajax. We'll learn about the protocol that the language of the web speaks in (HTTP), how to set up and handle Ajax requests and responses, as well as how to process JSON data. We'll finish the module by connecting our restaurant web site from Module 3 to a real backend service that will allow us to pull the data for the restaurant menu dynamically from the server without having to reload the entire page.
