@@ -14,6 +14,7 @@ Will need to install NodeJs for it to work
 104 Development Environment Setup, Part 2: MacOS8m
 
 105 Development Environment Setup, Part 2: Windows6m
+https://github.com/jhu-ep-coursera/fullstack-course4/tree/master/examples
 C:\Users\yaakov>git --version git version 2.6.4.windows.1
 C:\Users\yaakov>node --version 
 V4.2.4
@@ -1141,26 +1142,261 @@ Not covered in this class
 ES6 (released 2015) isn’t widely supported or used yet
 
 407 Lecture 42, Part 2: Javascript Types4m
+var x;
+console.log(x);
+if (x == undefined) { 
+	console.log('x is undefined');
+}
 
+x = 5;
 
-
+if (x == undefined) { 
+	console.log('x is undefined');
+else {
+    console.log("x has been defined");
+}
+global: message = in global
+a: message = inside a
+b: message = in global
+Summary
+Javascript defines 7 built-in types • Object and 6 Primitives
+Object type is a collection of name/value pairs
+Primitive type can contain a single, immutable value
+Undefined means variable memory has been allocated but no value has ever been explicitly set yet
 
 408 Lecture 43, Part 1: Common Language Constructs8m
+// ***** Regular math operators: +,	*, /
+console.log((5 + 4) / 3);
+console.log(undefined / 5);
+3
+NaN
+x = "4"
+y = 4
+if (x == y) {
+  console.log("x='4' is equal to y=4");
+}
+x='4' is equal to y=4
+// ***** Strict equality 
+if (x === y) { 
+  console.log("Strict: 'x' is equal y")
+}
+else { 
+  console.log("Strict: x='4' is NOT equal y")
+}
+
 409 Lecture 43, Part 2: Common Language Constructs4m
+// ***** If statement (all false)
+if( false || null || undefined || "" || 0 || NaN|) {    
+  console.log("This line won't ever execute");
+}
+else {
+  console.log ("All false");
+}
+// ***** If statement (all true) 
+if (true && "hello" && 1 && -1 && "false") {  
+  console.log("All true");
+}
+
 410 Lecture 43, Part 3: Common Language Constructs7m
+function a()
+{
+  return
+  {
+    name: "Yaakov"
+  }
+}
+function a()
+{
+  return {
+    name: "Yaakov"
+  }
+}
+undefined
+Object {name: "Yaakov"}
+// For loop 
+var sum = 0;
+for(var i=0; i < 10; i+=1) { 
+  sum = sum + i;
+}
+console.log("sum of 0 through 9 is: " + sum);
+Summary
+String concatenation Math operations Type coercion
+Regular (==) and Strict (===) equality What is true and what is false in Javascript Opening curly brace placement (NOT just style) Always place semicolons at the end of statements
+Some disagree: http://mislav.net/2010/05/semicolons/
+Basic for loop syntax
+
 411 Lecture 44: Handling Default Values4m
+// Default values
+function orderChickenWith(sideDish) { 
+  sideDish sideDish "whatever!"; 
+  console.log("Chicken with " + sideDish);
+}
+orderChickenWith("noodles"); 
+orderChickenWith()
+
 412 Lecture 45, Part 1: Creating Objects Using 'new Object()' Syntax7m
+// Object creation 
+var company = new Object();
+company.name "Facebook"; 
+company.ceo = new Object();
+company.ceo.firstName = "Mark"
+console.log(company);
+
 413 Lecture 45, Part 2: Creating Objects Using Object Literal Syntax5m
+
 414 Lecture 46: Functions Explained8m
+// Function factory function 
+function makeMultiplier(multiplier) { 
+  var myFunc = function (x) { 
+  return multiplier * x;
+};
+  return myFunc;
+}
+var multiplyBy3 = makeMultiplier(3); console.log(multiplyBy3(10));
+30
+
 415 Lecture 47, Part 1: Passing Variables by Value vs. by Reference6m
+Passing (or Copying) By Value
+Given b=a, passing/copying by value means changing copied value in b does not affect the value stored in a 
+and visa versa
+Passing (or Copying) By Reference
+Given b=a, passing/copying by reference means changing copied value in b does affect the value stored in a and visa versa
+In Javascript, primitives are passed by value, objects are passed by reference
+“Under the hood”, everything is actually passed by value
+
 416 Lecture 47, Part 2: Passing Variables by Value vs. by Reference7m
+var a = { x: 7 };
+var b = a;
+console.log(a); 
+console.log(b);
+
+b.x = 5;
+console. log("after") 
+console.log(a); 
+console.log(b);
+{x: 7}
+{x: 7}
+after
+{x: 5}
+{x: 5}
+Summary
+Important! Passing by value vs. passing by reference Simple rule to remember
+•	Primitives are passed/copied by value
+•	Objects are passed/copied by reference
+
 417 Lecture 48: Function Constructors, prototype, and the 'this' Keyword12m
+// Function constructors
+function Circle (radius) {
+  this.radius = radius;
+}
+Circle.prototype.getArea = 
+  function () {
+    return Math.PI * Math.pow(this.radius, 2);
+  };
+var myCircle = new Circle(10);
+console.log(myCircle.getArea());
+
 418 Lecture 49: Object Literals and the 'this' Keyword6m
+// Object literals and "this"
+var literalCircle = {
+  radius: 10,
+
+  getArea: function () {
+    var self = this;
+    console.log(this);
+
+    var increaseRadius = function () {
+      self.radius = 20;
+    };
+    increaseRadius();
+    console.log(this.radius);
+
+    return Math.PI * Math.pow(this.radius, 2);
+  }
+};
+
+console.log(literalCircle.getArea());
+{radius: 10, getArea: ƒ}
+20
+1256.6370614359173
+
 419 Lecture 50, Part 1: Arrays8m
+// Short hand array creation
+var names = ["Yaakov", "John", "Joe"];
+// console.log(names);
+names [100] = "Jim";
+for (var i=0; i < names.length; i++ ) { 
+	console.log("Hello " + names[i]);
+}
+Hello Yaakov
+Hello John
+Hello Joe
+97 Hello undefined
+Hello Jim
+
 420 Lecture 50, Part 2: Arrays4m
+var myObj = {
+  name: "Yaakov",
+  course: "HTML/CSS/JS",
+  platform: "Courera"
+};
+for (var prop in myObj) {
+  console.log(prop + ": " + myObj[prop]);
+}
+name: Yaakov
+course: HTML/CSS/JS
+platform: Courera
+
+var names2 = ["Yaakov", "John", "Joe"];
+for (var name in names2) {
+  console.log("Hello " + names2[name]);
+}
+Hello Yaakov
+Hello John
+Hello Joe
+
 421 Lecture 51: Closures6m
+// Closures
+function makeMultiplier (multiplier) {
+  // var multiplier = 2;
+  function b() {
+    console.log("Multiplier is: " + multiplier);
+  }
+  b();
+  return (
+      function (x) {
+        return multiplier * x;
+      }
+    );
+}
+var doubleAll = makeMultiplier(2);
+console.log(doubleAll(10)); // its own exec env
+Multiplier is: 2
+20
+
 422 Lecture 52, Part 1: Fake Namespaces6m
+// Immediately Invoked Function Expression
+// IIFE
+(function (name) {
+  console.log("Hello " + name);
+})("Coursera!");
+
+
 423 Lecture 52, Part 2: Immediately Invoked Function Expressions (IIFEs)8m
+(function (window) {
+  var yaakovGreeter = {};
+  yaakovGreeter.name = "Yaakov";
+  var greeting = "Hello ";
+  yaakovGreeter.sayHello = function () {
+    console.log(greeting + yaakovGreeter.name);
+  }
+
+  window.yaakovGreeter = yaakovGreeter;
+
+})(window);
+
+yaakovGreeter.sayHello();
+
 424 Module 4 Wrap-Up44s
 425 Recommended Books5m
 426 New Tutorials - here is how...2m
@@ -1329,14 +1565,319 @@ v The attempted IIFE is not being invoked and passed in the window object. It's 
 In this module, we are going to take all those newly learned Javascript language skills and learn how to utilize them within the context of a web page. We’ll start by learning how to properly manipulate the web page components using the Javascript Document Object Model API. We will then move on to learning one of the most popular ways of serving up data to a web site - Ajax. We'll learn about the protocol that the language of the web speaks in (HTTP), how to set up and handle Ajax requests and responses, as well as how to process JSON data. We'll finish the module by connecting our restaurant web site from Module 3 to a real backend service that will allow us to pull the data for the restaurant menu dynamically from the server without having to reload the entire page.
 501 Welcome to Module 5: Using Javascript to Build Web Applications47s
 502 Lecture 53, Part 1: DOM Manipulation6m
+console.log(document.getElementById("title")); 
+console.log(document instanceof HTMLDocument);
+
 503 Lecture 53, Part 2: DOM Manipulation11m
+  <p>
+    Say hello to 
+    <input id="name" type="text">
+    <button onclick="sayHello();">
+      Say it!
+    </button>
+  </p>
+  <div id="content"></div>
+  <script>
+function sayHello () {
+  var name =
+   document.getElementById("name").value;
+   var message = "<h2>Hello " + name + "!</h2>";
+  document
+    .getElementById("content")
+    .innerHTML = message;
+}
+
 504 Lecture 54: Handling Events9m
+  </p>
+  <div id="content"></div>
+  <script>
+// Event handling
+document.addEventListener("DOMContentLoaded",
+  function (event) {
+     function sayHello (event) {
+      this.textContent = "Said it!";
+      var name =
+       document.getElementById("name").value;
+       var message = "<h2>Hello " + name + "!</h2>";
+      document
+        .getElementById("content")
+        .innerHTML = message;
+      if (name === "student") {
+        var title = 
+          document
+            .querySelector("#title")
+            .textContent;
+        title += " & Lovin' it!";
+        document
+            .querySelector("h1")
+            .textContent = title;
+      }
+    }
+
+    // Unobtrusive event binding
+    document.querySelector("button")
+      .addEventListener("click", sayHello);
+  }
+);
+  </script>
+
 505 Lecture 55: The 'event' Argument6m
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="js/script.js"></script>
+  </head>
+<body>
+  <h1 id="title">Lecture 55</h1>
+  
+  <p>
+    Say hello to 
+    <input id="name" type="text">
+    <button>
+      Say it!
+    </button>
+  </p>
+
+  <div id="content"></div>
+</body>
+</html>
+// Event handling
+document.addEventListener("DOMContentLoaded",
+  function (event) {
+    
+    function sayHello (event) {
+      console.log(event);
+
+      this.textContent = "Said it!";
+      var name =
+       document.getElementById("name").value;
+       var message = "<h2>Hello " + name + "!</h2>";
+
+      document
+        .getElementById("content")
+        .innerHTML = message;
+
+      if (name === "student") {
+        var title = 
+          document
+            .querySelector("#title")
+            .textContent;
+        title += " & Lovin' it!";
+        document
+            .querySelector("h1")
+            .textContent = title;
+      }
+    }
+
+    // Unobtrusive event binding
+    document.querySelector("button")
+      .addEventListener("click", sayHello);
+
+    document.querySelector("body")
+      .addEventListener("mousemove",
+        function (event) {
+          if (event.shiftKey === true) {
+            console.log("x: " + event.clientX);
+            console.log("y: " + event.clientY);
+          }
+        }
+      );
+
+  }
+);
+
 506 Lesson 56: HTTP Basics12m
+HyperText Transfer Protocol
+Based on request/response stateless protocol
+•	Client opens connection to server
+•	Client sends HTTP request for a resource
+•	Server sends HTTP response to the client (w/resource)
+•	Client closes connection to server
+Identifying Resources on the Web
+URN: Uniform Resource Name
+Uniquely identifies resource or name of resource Does not tell us how to get the resource
+Identifying Resources on the Web
+URI: Uniform Resource Identifier
+Uniquely identifies resource or location of resource
+Does not necessarily tell us how to get the resource
+example:
+/official web site/index.html
+URL: Uniform Resource Locator
+Form of URI that provides info on how to get resource example:
+http://www.mysite.com/official_web_site/index.html
+HTTP Request Structure(GET)
+GET /index.html?firstName=Yaakov HTTP/1.1
+
+HTTP Methods
+GET
+•	Retrieves the resource
+•	Data is passed to server as part of the URI
+    l.e., query string
+POST
+•	Sends data to server in order to be processed
+•	Data is sent in the message body
+HTTP Request Structure(POST)
+POST /index.html HTTP/1.1 
+Host: coursera.org 
+Accept-Charset: utf-8 
+firstName=Yaakov...
+
+Typical HTTP Response
+HTTP/1.1 200 OK
+Date: Tue, 11 Aug 2004 19:00:01 GMT 
+Content-Type: text/html
+<html>
+<body>
+<hl>Secret to gaining weight REVEALED!</hl> <p>Develop Coursera courses after work at night while eating sweets to keep yourself awake!</p> </body>
+</html>
+
+Some Response Status Codes
+200 OK
+•	Ok, here is the content you requested 404 Not Found
+•	Server can’t find the resource requested 403 Forbidden
+•	Unauthenticated client tried to access a secure resource 500 Internal Server Error
+•	Some unhandled error was raised on the server
+Summary
+Need to understand the basics of HTTP protocol GET method sends data to server as part of the URL POST method sends data as part of message body Response codes: 200, 404, 500, etc.
+
 507 Lesson 57, Part 1: Ajax Basics5m
+Asynchronous Javascript And XML
+While Ajax started with XML, very few apps use it nowadays 
+• Plain text (at times as html) and JSON is used instead
+Traditional Web App Flow
+Ajax Web App Flow
+Faster response
+• Less bandwidth, nicer experience for
+Synchronous Execution
+Execution of one instruction at a time
+Can’t start execution of another instruction until the first instruction finished its execution
+Asynchronous Execution
+Execution of more than one instruction at a time
+Asynchronous instruction returns right away
+The actual execution is done in a separate thread or process
+
+Javascript Engine
+Event Queue
+HTML Rendering
+HTTP Requestor
+webGL
+
+make Ajax request
+js code line 
+js code line
+Handle server response
+
 508 Lesson 57, Part 2: Ajax Basics13m
 509 Lesson 57, Part 3: Ajax Basics6m
+(function (global) {
+
+// Set up a namespace for our utility
+var ajaxUtils = {};
+
+
+// Returns an HTTP request object
+function getRequestObject() {
+  if (global.XMLHttpRequest) {
+    return (new XMLHttpRequest());
+  } 
+  else if (global.ActiveXObject) {
+    // For very old IE browsers (optional)
+    return (new ActiveXObject("Microsoft.XMLHTTP"));
+  } 
+  else {
+    global.alert("Ajax is not supported!");
+    return(null); 
+  }
+}
+
+
+// Makes an Ajax GET request to 'requestUrl'
+ajaxUtils.sendGetRequest = 
+  function(requestUrl, responseHandler) {
+    var request = getRequestObject();
+    request.onreadystatechange = 
+      function() { 
+        handleResponse(request, responseHandler); 
+      };
+    request.open("GET", requestUrl, true);
+    request.send(null); // for POST only
+  };
+// Only calls user provided 'responseHandler'
+// function if response is ready
+// and not an error
+function handleResponse(request,
+                        responseHandler) {
+  if ((request.readyState == 4) &&
+     (request.status == 200)) {
+    responseHandler(request);
+  }
+}
+// Expose utility to the global object
+global.$ajaxUtils = ajaxUtils;
+})(window);
+
+// Event handling
+document.addEventListener("DOMContentLoaded",
+  function (event) {
+    
+    // Unobtrusive event binding
+    document.querySelector("button")
+      .addEventListener("click", function () {
+        
+        // Call server to get the name
+        $ajaxUtils
+          .sendGetRequest("data/name.txt", 
+            function (request) {
+              var name = request.responseText;
+
+              document.querySelector("#content")
+                .innerHTML = "<h2>Hello " + name + "!</h2>";
+            });
+      });
+  }
+);
+
 510 Lecture 58: Processing JSON9m
+JavaScript Object Notation
+Lightweight data-interchange format
+ Simple textual representation of data
+Easy for humans to read and write 
+Easy for machines to parse and generate 
+Completely independent of any language
+JSON syntax rules
+Subset of Javascript object literal syntax...
+•	Property names must be in double quotes
+•	String values must be in double quotes
+•	That’s it!
+Syntax for everything else is exactly like for object literal
+var jsonString =
+'{
+  "firstName : "Yaakov", 
+  "lastName": "Chaikin", 
+  "likesChineseFood": false, 
+  "numberOfDisplays": 2
+}';
+Common Misconception
+JSON is NOT a Javascript Object Literal
+JSON is just a string
+The syntax of JSON is based on object literal though
+Need to covert JSON into a JS object
+
+Converting JSON To String & Back to JSON
+converts from json string to object
+var obj = JSON.parse(jsonString)
+converts from object to json string
+var str = JSON.stringify(obj);
+
+Summary
+JSON is a lightweight data representation
+Great format for passing data from server to client & back
+Syntax is based on Javascript object literal 
+• But JSON is NOT JS object literal
+JSON.parse to convert from JSON string to object
+JSON.stringify to convert from object to JSON string
+
 511 Lecture 59: Fixing Mobile Nav Menu Automatic Collapse6m
 512 Lecture 60: Dynamically Loading Home View Content9m
 513 Lecture 61, Part 1: Dynamically Loading Menu Categories View6m
@@ -1351,5 +1892,83 @@ In this module, we are going to take all those newly learned Javascript language
 522 New Tutorials - here is how...2m
 523 CONNECT WITH ME!2m
 524 Optional Practice Quiz30m
+Optional Practice Quiz
+Total points 2
+Question 1
+Given the following HTML code snippet:
+<input id="name" type="text" value="Hi">
+and the following Javascript snippets:
+Snippet 1:
+console.log(document.getElementById("name").value 
+            + " Coursera!");
+Snippet 2:
+console.log(document.querySelector("#name").value 
+            + " Coursera!");
+What will be the difference in the output between the 2 Javascript code snippets?
+v No difference
+ First one will not display the word 'Hi'
+Second one will throw a Javascript error.
+First one will throw a Javascript error.
+Question 2
+What will the following code snippet accomplish?
+...
+<head>
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+  console.log("Yey!");
+});
+</script>
+</head>
+<body>
+...
+v It will output Yey! when the web page is loaded, but before external resources like images are downloaded to the user's machine.
+It will output Yey! when the user hits the Reload browser button.
+It will never output Yey!
+It will output Yey! concurrently as the browser displays the 'h1' tag.
+
 525 Optional Practice Quiz30m
+Optional Practice Quiz
+Total points 2
+Question 1
+One of the differences between a GET request and POST is that a GET request passes query parameters as part of the URL whereas POST request passes them as part of the body of the request.
+v True
+False
+Question 2
+Given the following Javascript code snippet:
+var name = "";
+// Making an Ajax call here, i.e., sendGetRequest
+$ajaxUtils.sendGetRequest("someURL", function (request) {
+  name = "Coursera";
+});
+document.querySelector("#content").innerHTML = name;
+What will be the contents of the element with the 'id' value of 'content' after the execution of this Javascript code?
+v It will be empty
+Coursera
+Whatever the server returns plus the word Coursera
+---
+Optional Practice Quiz
+Total points 2
+Question 1
+Another name for Object Literal is JSON.
+True
+v False
+Question 2
+Identify invalid JSON string below:
+'{
+  "courseName": "Coursera",
+  "startingNumberOfStudents": 12500
+}'
+'{
+  "courseName": "Coursera",
+  "studentsLoveCourse": true
+}'
+v '{
+  'courseName': "Coursera",
+  'startingNumberOfStudents': 12500
+}'
+'{
+  "courseName": {"name": "Coursera"},
+  "startingNumberOfStudents": 12500
+}'
+
 526 Optional Practice Quiz30m
