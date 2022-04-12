@@ -1,0 +1,11 @@
+
+https://www.djbook.ru/rel3.0/topics/forms/index.html
+
+DjangoForm CharField required
+
+https://www.djbook.ru/rel1.9/topics/forms/modelforms.html
+https://metanit.com/python/django/4.3.php
+
+https://ordinarycoders.com/blog/article/using-django-form-fields-and-widgets
+
+

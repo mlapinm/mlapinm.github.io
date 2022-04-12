@@ -1,0 +1,228 @@
+
+100 WEEK 1 Manipulating Images
+101 Course Introduction10m
+102 Welcome to the Course!10m
+103 Module 1 Introduction10m
+104 Built-In Libraries vs. External Libraries10m
+105 What is an API?10m
+106 How to Make Sense of an API?10m
+107 How to Use PIL for Working With Images10m
+108 Project Problem Statement10m
+b01atiff.ipynb
+
+200 WEEK 2 Interacting with Web Services
+201 Module 2 Introduction10m
+202 Web Applications and Services10m
+203 Data Serialization10m
+204 Data Serialization Formats10m
+205 More About JSON10m
+206 The Python Requests Library10m
+207 Useful Operations for Python Requests10m
+208 HTTP GET and POST Methods10m
+209 What is Django?10m
+210 Project Problem Statement10m
+Qwiklabs Assessment: Process Text Files with Python Dictionaries and Upload to Running Web Service
+
+http://35.224.87.191
+http://35.224.87.191/feedback/
+
+student-04-3fe0aa228d79@corpweb:/data/feedback$ cat 007.txt
+Good deal for a 2015 RAV4
+Anonymous
+2018-04-17
+Called them to look for a second-hand RAV4 and they are very nice and patience to help me find me a few matches then scheduled an appointmet with me. Came in and they had everything ready for me. I was surprised how professional those sales are and they explained and answered all my questions. Ended up buying the car and been using it for more than a month now. Everything looks good!
+student-04-3fe0aa228d79@corpweb:/data/feedback$
+
+ps -ax | grep python3
+
+grep -Ril 'Called them' /
+
+student-04-3fe0aa228d79@corpweb:~$ grep -Ril 'Called them' /data/
+/data/feedback/019.txt
+/data/feedback/007.txt
+
+
+student-04-3fe0aa228d79@corpweb:~$ ps -ax | grep python3
+ 7863 ?        Ss     0:00 /usr/bin/python3 manage.py runserver 0.0.0.0:80
+ 7878 ?        Sl     3:53 /usr/bin/python3 manage.py runserver 0.0.0.0:80
+ 9083 pts/2    S+     0:00 grep python3
+
+student-04-3fe0aa228d79@corpweb:~$ sudo find / -name manage.py
+/projects/corpweb/manage.py
+
+student-04-6e60af7a1555@corpweb:~$ cat run.py
+#! /usr/bin/env python3
+
+import os
+import json
+import requests
+import time
+
+cwd = '/data/feedback/'
+url = 'http://35.224.87.191/feedback/'
+
+def text_to_dict(text):
+  '''return dict'''
+  dict = { 'title':'', 'name': '', 'date': '' , 'feedback': ''}
+  lines = text.split('\n')
+  lines = list(map(lambda e: e.strip(), lines))
+  dict['title'] = lines[0]
+  dict['name'] = lines[1]
+  dict['date'] = lines[2]
+  dict['feedback'] = lines[3]
+
+  print(dict)
+  return dict
+
+def dir_to_dicts(cwd, dicts):
+  '''files from cwd to dicts'''
+
+  files = os.listdir(cwd)
+  for file in files:
+    file = cwd + file
+    with open(file) as descriptor:
+      text = descriptor.read()
+      o = text_to_dict(text)
+      dicts.append(o)
+      # print(text)
+
+def post_request(url, o):
+  '''send post with o to url'''
+
+  try:
+    response = requests.post(url, data=o)
+    # print(url, response.request.body)
+  except Exception:
+    print('request: {} fall'.format(url))
+
+dicts = []
+dir_to_dicts(cwd, dicts)
+for dict in dicts:
+  time.sleep(1)
+  post_request(url, dict)
+
+json_text = json.dumps(dicts, indent=2)
+print(len(dicts), len(json_text.split('\n')))
+# print(json_text)
+
+student-04-6e60af7a1555@corpweb:~$ ./run.py
+{'feedback': "My friend recommended this place and  I decided to give a try. I called them beforehand and made sure they have the models I was looking for. They evenly sent me a bunch of photos and specs of the car I was looking for. One the day I visited, the sales person John helped me with test drive and showed me what I should be aware of when buying a used car. I felt like I learned a lot. They made the process so smooth that I saved a lot of time. It's the best car purchasing experience I had so far!", 'name': 'Katie', 'date': '2019-12-09', 'title': 'Best experience so far'}
+{'feedback': 'Called them to look for a second-hand RAV4 and they are very nice and patience to help me find me a few matches then scheduled an appointmet with me. Came in and they had everything ready for me. I was surprised how professional those sales are and they explained and answered all my questions. Ended up buying the car and been using it for more than a month now. Everything looks good!', 'name': 'Anonymous', 'date': '2018-04-17', 'title': 'Good deal for a 2015 RAV4'}
+{'feedback': "I've being look around for a second handed Lexus RX for my family and this store happened to have a few of those. The experience was similar to most car dealers. The one I ended up buying has good condition and low mileage. I am pretty satisfied with the price they offered.", 'name': 'Tom', 'date': '2019-06-05', 'title': 'You will find what you want here'}
+{'feedback': 'The customer service here is very good. They helped me find a 2017 Camry with good condition in reasonable price. Campared to other dealers, they provided the lowest price. Definttely recommend!', 'name': 'John', 'date': '2017-12-21', 'title': 'Great Customer Service'}
+{'feedback': "I came in around 6pm and they seemed about to close the store. One of the sales seemed not being patient with me and made me feel like I have to either buy a car or come back later. Of course I didn't buy a car there. Hopefully they can treat every customer with more patience.", 'name': 'Anonymous', 'date': '2018-09-21', 'title': 'Waste of my time'}
+5 32
+
+
+300 WEEK 3 Automatic Output Generation
+301 Module 3 Introduction10m
+302 Introduction to Python Email Library10m
+303 Adding Attachments10m
+304 Sending the Email Through an SMTP Server10m
+305 Introduction to Generating PDFs10m
+306 Adding Tables to our PDFs10m
+307 Adding Graphics to our PDFs10m
+308 Project Problem Statement10m
+Qwiklabs Assessment: Automatically Generate a PDF and send it by Email
+
+cat ~/scripts/example.py
+sudo chmod o+wx ~/scripts/example.py
+
+
+student-04-893c24a047f2@linux-instance:~$ ./scripts/example.py
+You have mail in /var/mail/student-04-893c24a047f2
+
+http://34.135.129.146/?_task=mail&_mbox=INBOX
+
+
+
+The script cars.py already contains part of the work, but learners need to complete the task by writing the remaining pieces. The script already calculates the car model with the most revenue (price * total_sales) in the process_data method. Learners need to add the following:
+
+Calculate the car model which had the most sales by completing the process_data method, and then appending a formatted string to the summary list in the below format:
+
+"The {car model} had the most sales: {total sales}"
+
+Calculate the most popular car_year across all car make/models (in other words, find the total count of cars with the car_year equal to 2005, equal to 2006, etc. and then figure out the most popular year) by completing the process_data method, and append a formatted string to the summary list in the below format:
+
+"The most popular year was {year} with {total sales in that year} sales."
+
+The challenge
+Here, you are going to update the script cars.py. You will be using the above JSON data to process information. A part of the script is already done for you, where it calculates the car model with the most revenue (price * total_sales). You should now fulfil the following objectives with the script:
+
+Calculate the car model which had the most sales.
+a. Call format_car method for the car model.
+
+Calculate the most popular car_year across all car make/models.
+Hint: Find the total count of cars with the car_year equal to 2005, equal to 2006, etc. and then figure out the most popular year.
+Grant required permissions to the file cars.py and open it using nano editor.
+
+Скрипт cars.py уже содержит часть работы, но учащимся необходимо выполнить задание, написав оставшиеся части. Скрипт уже вычисляет модель автомобиля с наибольшим доходом (цена * total_sales) в методе process_data. Учащимся необходимо добавить следующее:
+
+Вычислите модель автомобиля с наибольшим объемом продаж, выполнив метод process_data, а затем добавив отформатированную строку в итоговый список в следующем формате:
+
+"Больше всего продаж было у {модели автомобиля}: {общий объем продаж}"
+
+Вычислите самый популярный car_year для всех марок/моделей автомобилей (другими словами, найдите общее количество автомобилей с car_year равным 2005, равным 2006 и т. д., а затем определите самый популярный год), выполнив метод process_data, и добавьте отформатированную строку в итоговый список в следующем формате:
+
+«Самым популярным годом был {год} с {общим объемом продаж в этом году}».
+
+Соревнование
+Здесь вы собираетесь обновить скрипт cars.py. Вы будете использовать вышеуказанные данные JSON для обработки информации. Часть скрипта уже сделана за вас, где он вычисляет модель автомобиля с наибольшим доходом (цена * total_sales). Теперь вы должны выполнить следующие задачи со сценарием:
+
+Вычислите модель автомобиля, которая имела наибольшее количество продаж.
+а. Вызовите метод format_car для модели автомобиля.
+
+Рассчитайте самый популярный car_year для всех марок/моделей автомобилей.
+Подсказка: Найдите общее количество автомобилей с car_year равным 2005, равным 2006 и т. д., а затем определите самый популярный год.
+Предоставьте необходимые разрешения файлу cars.py и откройте его с помощью редактора nano.
+
+
+student-04-8f1ccd7a5c3c@linux-instance:~$ ls ./scripts/
+cars.py  emails.py  example.py  reports.py
+student-04-8f1ccd7a5c3c@linux-instance:~$ cat ./scripts/cars.py
+#!/usr/bin/env python3
+
+Optional challenge
+As optional challenges, you could try some of the following functionalities:
+
+Sort the list of cars in the PDF by total sales.
+
+Create a pie chart for the total sales of each car made.
+
+Create a bar chart showing total sales for the top 10 best selling vehicles using the ReportLab Diagra library. Put the vehicle name on the X-axis and total revenue (remember, price * total sales!) along the Y-axis.
+
+400 WEEK 4 Putting It All Together
+401 Outtakes!1m
+402 Module 4 Introduction10m
+403 Project Problem Statement10m
+404 How to Approach the Problem10m
+Qwiklabs Assessment: Automate updating catalog information
+
+Fetching supplier data
+ls ~/
+sudo chmod +x ~/download_drive_file.sh
+
+./download_drive_file.sh 1LePo57dJcgzoK4uiI_48S01Etck7w_5f supplier-data.tar.gz
+windows bash
+wget 
+https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058
+D:\tmp
+tar xf ~/supplier-data.tar.gz
+D:\mailCloud\cloud\prjother\017python\b2262coursera\supplier-data\images
+D:\mailCloud\cloud\prjother\017python\b2262coursera\b09adeb.py
+
+ls ~/supplier-data
+
+
+cat ~/supplier-data/descriptions/007.txt
+
+Working with supplier images
+nano ~/changeImage.py
+This is the challenge section, where you will be writing a script that satisfies the above objectives.
+
+Note: The raw images from images subdirectory contains alpha transparency layers. So, it is better to first convert RGBA 4-channel format to RGB 3-channel format before processing the images. Use convert("RGB") method for converting RGBA to RGB image.
+After processing the images, save them in the same path ~/supplier-data/images, with a JPEG extension.
+
+sudo chmod +x ~/changeImage.py
+
+

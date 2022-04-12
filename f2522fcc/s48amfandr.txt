@@ -1,0 +1,1045 @@
+
+100 НЕДЕЛЯ 1 Первые шаги в Android-разработке 
+На этой неделе вас ждёт знакомство со средой разработки и структурой проекта, а также работа с эмулятором.
+101 МФТИ1мин
+102 Знакомство со специализацией3мин
+103 Знакомство с курсом2мин
+Установку и настройку Android Studio Создание и работу с эмулятором Основные компоненты Android приложения
+Основные элементы интерфейса — View и ViewGroup реализации
+Работу с Activity и Fragment
+Работу с ресурсами
+Работу с Preferences
+Android: тогда и сейчас
+2008 год Т-Mobile G1
+2017 год Google Pixel 2 XL
+Java
+•	2008 — Java 6
+•	2013—Java?
+•	2017 —Java 8 (некоторый функционал доступен только на API 24)
+Kotlin
+•	до 2017 — поддержка с помощью плагинов
+•	2017 — поддержка в Android Studio 3.0 из коробки
+Библиотеки поддержки
+•	com.android.support:appcompat-v7:27.0.1
+•	com.android.support:design:27.0.1
+•	com.android.support:support-v13:27.0.1
+•	и другие
+Библиотеки добавляются в файл gradle уровня арр
+https://developer.android.com/develop /index.html
+Официальная документация.
+Гайды, обучение, дизайн, классы, best practices, обзор новых инструментов.
+https://developer.android.com/develop
+/index.html
+Официальная документация.
+Гайды, обучение, дизайн, классы, best practices, обзор новых инструментов.
+https://stackoverflow.com/questions /tagged/android
+Stack Overflow.
+99,9% вопросов, которые у вас возникнут, уже были заданы и отвечены тут.
+https://developer.android.com/develop
+/index.html
+Официальная документация.
+Гайды, обучение, дизайн, классы, best practices, обзор новых инструментов.
+https://stackoverflow.com/questions /tagged/android
+Stack Overflow.
+99,9% вопросов, которые у вас возникнут, уже были заданы и отвечены тут.
+https://android-developers.googleblog.com/
+Блок разработчиков Android.
+Новые инструменты, best practices
+и немного историй из жизни.
+
+104 Android - тогда и сейчас3мин
+105 Первое приложение - Hello, World из коробки12мин
+Интерфейс студии и структура проекта
+Appearance & Behavior > Appearance
+UI Options
+Theme: Darcula
+
+106 Интерфейс студии и структура проекта29мин
+107 Создание и запуск Android эмулятора11мин
+108 Создание стороннего эмулятора8мин
+genymotion for personal use
+microsoft android emulator
+
+109 Краткое знакомство с часто встречающимися понятиями23мин
+110 e-Legion5мин
+111 Фонд развития онлайн-образования5мин
+112 Полная программа "Android-разработчик"2мин
+113 Telegram и Форум2мин
+114 Полезные ресурсы – официальные и сторонние10мин
+115 Установка Android Studio10мин
+116 Подготовка Android SDK10мин
+117 AndroidManifest10мин
+118 Директория java10мин
+119 Директории res, assets10мин
+120 Dp – определение размеров элементов10мин
+121 Конспект по неделе 110мин
+122 Тест30мин
+Question 1
+Как вы научились программировать?
+Написал и поддерживаю 10 лет приложение, которое определяет поведение 10 видов устройств. Анна Кубова из Лондона с ее ванильным жаваскриптом. FCC - тоже вещь. 
+Your answer cannot be more than 10000 characters.
+Question 2
+Почему вы хотите разрабатывать под Android?
+По очному образованию я разработчик железа. При использовании Android, количество разрабатываемого железа сокращается на 90%.
+Your answer cannot be more than 10000 characters.
+Question 3
+Есть ли у вас идея своего приложения, игры? Если да, опишите её.
+Опубликовал серию классических игр для живых игроков шашки, шахматы, нарды... Серверную часть не сделал. Руки не дошли. Можно их обсервачить с помощью firebase. Из простого: шахматные часы свои надо написать. Резюмирую это реализация объектов реального мира. 
+Your answer cannot be more than 10000 characters.
+Question 4
+Что вы хотите получить от курса?
+Значок с русскими буквами. Пара с английскими уже есть.
+Your answer cannot be more than 10000 characters.
+Question 5
+Что вы будете делать после окончания курса?
+Рассаду наверное пора сажать будет. Надеюсь курс к апрелю закончить.
+Your answer cannot be more than 10000 characters.
+
+123 Тест30мин
+Question 1
+Android Manifest - это:
+Библия всех Android-разработчиков
+v Файл, в котором содержится вся самая важная информация о нашем приложении, которую вы же и описываете
+Инструкции для Android системы, указывающие, в каком режиме должно работать приложение
+Файл, который описывает структуру вашего Android проекта
+Question 2
+Для чего нужен тег <activity> внутри Android Manifest?
+Создать Activity
+Получить разрешение(permission) для использования activity
+v Указать системе, что в приложении используется какая-то конкретная Activity
+Question 3
+В какой директории/директориях хранятся ресурсы приложения?
+java
+assets
+res
+application
+app-res
+resources
+main
+Question 4
+С помощью чего можно загрузить инструменты для работы с API?
+v Android SDK Manager
+Android Downloader
+Java SDK Manager
+Instrument Downloader
+Question 5
+Для чего нужен паттерн Listener?
+Чтобы создать и использовать единственный экземпляр класса
+v Чтобы понять, когда на определенном объекте произошло определенное действие
+Чтобы дать возможность последовательно обходить элементы составных объектов, не раскрывая их внутреннего представления
+Чтобы позволить создавать семейства связанных объектов, не привязываясь к конкретным классам создаваемых объектов
+Question 6
+Что такое Bundle?
+Мы этого еще не проходили. Мы не знаем.
+Это еще одна разновидность Context
+v Класс-контейнер, в который можно положить несколько объектов для последующей передачи
+Question 7
+Для чего используется директория “java”?
+В ней хранится JDK
+В ней хранится Android SDK
+В ней хранятся ресурсы приложения, для которых не генерируются идентификаторы ресурсов
+В ней хранятся ресурсы приложения, для которых генерируются идентификаторы ресурсов
+v В ней хранятся все исходные коды, с которыми мы будем работать
+Question 8
+Для чего нужна директория “res”?
+В ней хранится JDK
+В ней хранится Android SDK
+v В ней хранятся ресурсы приложения, для которых не генерируются идентификаторы ресурсов
+В ней хранятся ресурсы приложения, для которых генерируются идентификаторы ресурсов
+В ней хранятся все исходные коды, с которыми мы будем работать
+Question 9
+Для чего нужна директория “assets”?
+В ней хранится JDK
+В ней хранится Android SDK
+v В ней хранятся ресурсы приложения, для которых не генерируются идентификаторы ресурсов
+В ней хранятся ресурсы приложения, для которых генерируются идентификаторы ресурсов
+В ней хранятся все исходные коды, с которыми мы будем работать
+Question 10
+Для чего нужен Android Emulator?
+Чтобы играть в игрушки, если нет телефона!
+v Чтобы тестировать Android приложения в различных конфигурациях
+Это замена Android OS, которая устанавливается на ПК
+Это штука, с помощью которой можно программировать роботов
+
+200 НЕДЕЛЯ 2 Компоненты Android и элементы интерфейса 
+На этой неделе вас ждёт знакомство с основными компонентами Android: Activity, основными элементами интерфейса, меню, интентами, а также фрагментами. Помимо этого вы научитесь работе с ресурсами проекта, работе с файлами Preferences и публикации в систему контроля версий GitHub.
+201 Основные компоненты Android. Context5мин
+
+202 Activity. Жизненный цикл7мин
+Компоненты приложения
+•	Application
+•	Activity
+Service
+•	BroadcastReceiver
+•	Contentprovider
+Application
+«application
+android:allowBackup=”true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundlcon="@mipmap/
+ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme">
+Activity
+public class Ma inActivity extends AppCompatActivity {
+©Override
+protected void onCreate(Bundle savedlnstanceState) { super.onCreate(savedlnstanceState);
+setContentView(R.layout.activity_main);
+Service
+public class CustomService extends Intentservice {
+public CustomServiceO {
+super("CustomService");
+}
+@Override
+protected void onHandle!ntent(Intent intent) {
+// TODO: load file
+}
+}
+<service android:name=".CustomService" android:exported="false"/>
+BroadcastReceiver
+public class CustomReceiver extends BroadcastReceiver { @Override
+public void onReceive(Context context, Intent intent) {
+// TODO: start service
+Contentprovider
+Context? What context?
+Доступ к системным возможностям устройства
+AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM-SERVICE);
+FingerprintManager fm= (FingerprintManager) context.getSystemService(Context.
+FINGERPRINT_SERVICE);
+Динамическое изменение интерфейса
+Textview textview = new TextView(context); textView.setTextf'New Textview");
+Создание файлов
+SharedPreferences preferences = context.getSharedPreferences("myAppPrefs",
+Context.MODEPRIVATE);
+preferences.edit()
+.putString("KING_OF_THE_NORTH", "Jon Snow")
+.appIyO;
+String kingOfTheNorth = preferences.getString("KING_OF_THE_NORTH", "open vacancy");
+Источники Context и их различие
+getAppI icatonContext() != getContext();
+ApiManager mApiManager =
+ApiManager.getLocalManager (getApplicationContextO);
+WeakReference<Context> weakContext -
+new WeakReference<Context>(getContext()); context = weakContext.get();
+if (context != null) {
+// do something
+
+203 Интерфейс. View и ViewGroup2мин
+Построение интерфейса в Android
+<View
+android:id="@+id/my_view"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" // другие атрибуты
+View myView = findViewById(R.id.my_view); myView.setVisibility(View.VISIBLE);
+View runtimeView = new View(context); runtimeView.setVisibility(View.INVISIBLE);
+View и ViewGroup
+<ViewGroup> //Иерархическая структура разметки, XML правила
+<View/>
+<View/>
+<ViewGroup>
+<View/>
+<View/>
+</ViewGroup>
+</ViewGroup>
+Adapterview
+Список однородных элементов.
+Данные поставляет одна из реализаций Adapter.
+
+204 Реализации ViewGroup3мин
+LinearLayout, RelativeLayout, FrameLayout, ConstraintLayout
+Располагает свои элементы друг за другом вертикально или горизонтально.
+Направление определяется атрибутом orientation.
+Распределяет свободное пространство по длине или ширине через веса:
+•	Атрибут layout_weight — на дочерних View-элементах
+•	Атрибут weightSum — на LinearLayout-контейнере.
+В качестве значения эти атрибуты принимают любые числа.
+Если значение weightSum не равно сумме layout_weight дочерних элементов, то на разметке останется неиспользованное
+Корневой LinearLayout (фиолетовый):
+android:orientation="verticar
+Вложенный LinearLayout (малиновый):
+androidiorientation-'horizontal"
+android:weightSum="4"
+Кнопки горизонтального
+LinearLayout:
+android:layout_weight="1" / "2" android:layout_width="Odp"
+RelativeLayout
+View элементы располагаются относительно контейнера и друг друга. Больше гибкости без необходимости верстать вложенные контейнеры.
+Большой выбор различных атрибутов для выстраивания интерфейса.
+layout_alignParentLeft(Right, Top, Bottom, Start, End) — выравнивает элемент по указанному краю родителя
+layout_alignLeft(Right, Top, Bottom, Start, End) — выравнивает сторону элемента по соответствующей стороне указанного элемента
+layout_below(above) — устанавливает элемент под/над указанным элементом
+layout_toLeftOf(Right, Start, End) —
+устанавливает элемент с указанной стороны указанного элемента
+layout_centerHorizontal(Vertical) —
+устанавливает элемент по центру контейнера_________
+FrameLayout
+Используется как контейнер для программно добавляемых View.
+Используется, когда нужно установить одну View над другой. Порядок отрисовки View соответствует их порядку в файле разметки.
+ConstraintLayout
+Новый ViewGroup.
+Новый ViewGroup.
+Идейный наследник RelativeLayout, но превосходит его по возможностям.
+Для разметки используются констрейнты — правила.
+Следует использовать только тогда, когда необходимо.
+Начать использовать легко - добиться мастерства гораздо сложнее.
+Используются для формирования разметки в виде таблицы. Не очень удобны.
+TableLayout — каждый элемент находится в отдельной строке.
+Для верстки элементов в строке используется TableRow.
+GridLayout — каждый элемент имеет атрибуты layout_row и layout_column для определения местоположения в таблице.
+
+ImageView, EditText
+ImageView — основной элемент для показа изображений.
+BXML
+android:src="@drawable/my_image"
+В Java
+image.setImageResource(R.drawable.my_/mnge);
+Для ImageView можно задать правило для масштабирования в разметке через атрибут scaleType или программно через метод setScaleType()
+Варианты значений:
+•	fitXY
+•	fitCenter
+•	fitStart
+•	fitEnd
+•	center
+•	centerCrop
+•	centerinside
+• matrix
+centerCrop centerinside
+EditText
+Стандартное поле ввода
+• inputType — выбор вводимых данных (текст, число, номер, почта, пароль и другие)
+inputType — выбор вводимых данных (текст, число, номер, почта, пароль и другие) imeOptions — кастомизация кнопки ввода (done, send, next, search и другие)
+1.	android:imeOptions="actionSend" android:inputType="textEmailAddress"
+2.	android:imeOptions="actionSearch" android:inputType= "number"
+Полезные атрибуты:
+•	hint — подсказка
+•	inputType — выбор вводимых данных (текст, число, номер, почта, пароль и другие)
+•	imeOptions — кастомизация кнопки ввода (done, send, next, search и другие)
+Полезные атрибуты:
+•	hint — подсказка
+•	maxLength — ограничение по количеству символов
+•	inputType — выбор вводимых данных (текст, число, номер, почта, пароль и другие)
+•	imeOptions — кастомизация кнопки ввода (done, send, next, search и другие)
+
+205 ImageView, EditText3мин
+
+206 Система сборки Gradle3мин
+Gradle — система автоматической сборки, построенная на принципах Apache Ant и Apache Maven, но предоставляющая DSL на языке Groovy вместо традиционной XML-образной формы представления конфигурации проекта.
+implementation 'com.android.support:
+appcompat-v7:26.1.0'
+flavorDimensions 'buildType'
+productFlavors {
+free {
+buildConfigField 'String',
+'YOUR_PARAM_NAME', "'YOUR STRING VALUE'"
+BuildTypes
+buildTypes {
+debug {
+buildConfigField 'String', 'API_BASE_URL', "'https://yourapi.com/debug/'"
+}
+beta {
+buildConfigField 'String', 'API_BASE_URL', "’https://yourapi.com/beta/"'
+}
+buildConfigField 'String', 'API.BASEJJRL', "’https://yourapi.com/release/"'
+* BuildConfigField
+defaultConfig {
+applicationld "com.ejegion.coursera"
+minSdkVersion 16
+targetSdkVersion 26
+versionCode 1
+versionName "1.0"
+testinstrumentation Runner
+"android.support.test.runner. AndroidJUnitRunner"
+buildConfigField 'String', 'YOUR_NAME', "'DEFAULT STRING VALUE'" 11 добавили это поле!
+}
+BuildConfig
+public final class BuildConfig {
+public static final boolean DEBUG = false;
+public static final String APPLICATION_ID =
+"com.ejegion.coursera";
+public static final String BUILD_TYPE = "beta";
+public static final String FLAVOR = "free";
+
+207 Toast2мин
+Toast (также тост) — это всплывающее сообщение.
+Легко реализуется.
+Может использоваться как в целях дебага, так и для уведомления пользователя.
+Toast.makeText(
+вызов статического метода для создания
+MainActivity.this, <— первый параметр — контекст
+"Connection lost", <— второй параметр — текст (или R.string.### ресурс)
+Toast.LENGTH_LONG) <—третий
+параметр — продолжительность
+.show();	<— вызов метода
+для показа
+LENGTH_SHORT LENGTH_LONG
+— 2 секунды
+— 3.5 секунды
+Чтобы создать кастомный Toast, нужно:
+a1.	Создать желаемую XML верстку
+a2.	Объявить и инициализировать переменную класса Toast
+a3.	Преобразовать верстку во View
+с помощью Layoutlnflater
+a4.	Задать желаемые значения для элементов View
+a5.	Применить метод toast.setView(View v).
+Дополнительно можно задать длительность и gravity.
+public void showCustomToast() { Layoutlnflater inflater = getLayoutInflater();
+View layout = inflater.inflate
+(R.layout.custom_toast, null);
+TextView text = layout.findViewByld(R.id.tvTitle);
+text.setText("This is a custom toast");
+ImageView image =
+layout.findViewBy!d(R. id. image);
+image.setImageResource(R.mipmap.ic_ launcher_round);
+Toast toast = new Toast(this); // контекст
+toast.setView(layout);
+toast.show();
+toast.setGravity(Gravity.TOP, 0,100);
+О, 100 - отступы
+от притягивающей стороны (ТОР) по X и Y, в пикселях
+
+208 Menu, ContextMenu5мин
+XML - ресурс
+<?xml version="1.0" encoding="utf-8"?> <menu xmlns:android= "http://schemas.android.com/ apk/res/android"
+xmlns:app="http://schemas.
+android.com/apk/res-auto">
+<item android:id="@+id/settings" android:title="Settings" android:icon="@drawable
+/ic_settings" app:showAsAction="never'7>
+<item android:id="@+id/search" android:title="Search" android:icon="@drawable
+/ic_search" app:showAsAction="never"/>
+<item android:id="@+id/logout" android:title="Logout" app:showAsAction="never'7>
+id — идентификатор title — название (видно пользователю)
+icon — иконка (видно пользователю)
+showAsAction — переместить в тулбар
+never — никогда always — всегда (не рекомендуется) ifRoom — если есть место withText — вместе с title, если есть место
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+getMenuInflater().inflate(R.menu.
+main_menu, menu);
+return true;
+Обработка нажатий
+@Override
+public boolean onOptionsItemSelected
+(Menuitem item) {
+switch (item.getltemldO) {
+case R.id.settings:
+Toast.makeText(this, "Settings
+clicked", Toast.LENGTH_SHORT).sho\N();
+return true;
+case R.id.seorch:
+Toast.makeText(this, "Search clicked",
+Toast.L£A/GTH_SHO/?T).show();
+return true;
+default: return
+super.onOptionsItemSelected(item);
+@Override
+public boolean onPrepareOptionsMenu
+(Menu menu) {
+if (lisUserAuthorizedO) {
+menu.removeItem(R.id./ogout);
+return true;
+}
+return super.onPrepare
+OptionsMenu(menu);
+}
+mHelloTv = findViewById(R.id.tv_he//o_wor/d);
+registerForContextMenu(mHelloTv);
+//включение контекстного меню (в onResumeO) unregisterForContextMenu(mHelloTv);
+//отключение контекстного меню (в onPauseO)
+public static final int GROUPJD = Menu.Л/ОЛ/Е;
+public static final int MENUJTEMJD = 42;
+public static final int ORDER = Мепи.Л/ОЛ/Е;
+@Override
+public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuinfo) {
+if (v.getld() == Rjd.tv_hello_world) {
+menu.add(GKOUP_/D, MENUJTEMJD, ORDER,
+"Context menu");
+} else {
+super.onCreateContextMenu(menu, v, menuinfo);
+@Override
+public boolean onContextItemSelected(MenuItem item){ switch (item.getltemldO) {
+case MENU_ITEI\/I_ID:
+Toast.makeText(this, "Context menu clicked",
+ToastlE/VG7H_SHO/?7).show();
+return true;
+default:
+return super.onContextltemSelected(item);
+}
+}
+ActionView
+ActionMode
+
+209 Знакомство с Fragment4мин
+Варианты использования Fragment
+<?xml version-1.О" encoding="utf-8"?>
+<FrameLayout xmlns:android=
+"http://schemas.android.com/apk/res/ android" xmlns:tools=
+"http://schemas.android.com/ tools"
+android:id="@+id/fr_container"
+android:layout_width="match_parent" android:layout_height="match_parent" android:fitsSystemWindows="true"/>
+Варианты использования Fragment
+<fragment
+android:id="@+id/fragment_example" android:name="com.e_legion. coursera.
+ExampleFragment"
+android:layout_width="match_parent" android:layout_height="match_parent"/>
+Fragment
+FragmentManager
+FragmentTransaction
+public class ExampleFragment extends Fragment { private TextView mExampleText;
+public static ExampleFragment newlnstance() { return new ExampleFragmentO;
+}
+@Override
+public View onCreateView(Layout!nflater inflater, ViewGroup container, Bundle avedlnstanceState) {
+View view = inflater.inflate
+(R.layout.fr_example,container, false);
+mExampleText = view.findViewByld (R.id.tv_example);
+mExampleText.setText( Example text");
+return view;
+}
+}
+Методы FragmentTransaction
+FragmentTransaction transaction -getFragmentManager().beginTransaction(); transaction.add(R.id.fr_container, fragment); transaction.replace(R.id.fr_conta/ner, fragment);
+transaction, remove(fragment);
+transaction.hide(fragment);
+transaction.show(fragment);
+transaction.detach(fragment);
+transaction.attach(fragment);
+transaction.commit();
+Пример добавления фрагмента на экран
+getActivityO;
+if(savedInstanceState == null) { //то добавляем фрагмент ExampleFragment fragment =
+ExampleFragment.nevv/nstance();
+FragmentManager fragmentManager = getFragmentManager();
+fragmentManager.beginTransaction()
+.add(R.id.fr_container, fragment)
+.addToBackStack(ExampleFragment.
+dass.getSimpleNameO)
+.commitO;
+Fragment Callbacks
+onPause()
+onStopO
+onDestroyViewQ
+onDestroyO
+onDetach()
+
+210 Формат JSON. Библиотека GSON3мин
+JSON — это текстовый формат данных, легко читаемый человеком и используемый для сериализации объектов и обмена данными.
+JSON — это текстовый формат данных, легко читаемый человеком и используемый для сериализации объектов и обмена данными.
+"пате":"Иванов Иван",
+"age":42,
+"kids":[
+{
+"пате":"Иванов Артем",
+"age":8, "kids":null
+},
+{
+"пате":"Иванова Ирина", "age":4, "kids":null
+}
+]
+Создание POJO на основе json
+http://www.jsonschema2pojo.org Плагины для Android Studio, поиск по слову "pojo" или "json”.
+POJO класс Human
+public class Human {
+@SerializedName("name")
+@Expose
+private String name;
+@SerializedName( age")
+@Expose
+private int age;
+@SerializedName( kids')
+@Expose
+private List<Human> kids = null;
+public String getName() { return name; }
+public void setName(String name) { this.name = name; }
+public int getAge(){ return age; }
+public void setAge(int age) { this.age = age; }
+public List<Human> getKids() { return kids; }
+public void setKids(List<Human> kids) {	this.kids = kids; }
+GSON
+Подключение в файле grad Ie уровня арр dependencies { implementation
+'com.google.code.gson:gson:2.8.2'
+}
+Аннотации GSON
+@SerializedName("name")
+// это поле будет в json
+©Expose	//аннотация для
+контроля сериализации(рор -> json) и десериализации(]5оп -> pojo).
+Мы оставляем поведение по умолчанию, сериализуя и десериализуя все поля. Но есть возможность выбрать поля которые будут только сериализованы или только десериализованы.
+Human father = new Human(); father.setAge(38);
+father.setName("rieTp Петров");
+Human kid = new Human(); kid.setNamef'BacB Петров");
+kid.setAge(4); kid.setKids(null);
+List<Human> kids = new ArrayList<>(); kids.add(kid);
+father.setKids(kids);
+String json = new Gson().tojson(human);
+System.out.println(json);
+{"пате":"Петр Петров", "age":42, "kids":[{"name": "Вася Петров", "age":8}]}
+©Override
+public String toStringO {
+return "Human{" +
+"name-" + name + ’\" +
+", age=" + age + ", kids=" + kids +
+Human fromjson = new Gson().fromjson(json, Human.class);
+System.outprintln(fromJson.toStringO);
+toStringO- Human{name-Петр Петров', age=42, kids=[Human{name='BacA Петров', age=8, kids=null}]}
+son- {"пате":"Петр
+Петров", "age":42,"kids":[{"name":"Baca
+Петров","age":8}]}
+211 Общие атрибуты View-элементов10мин
+212 TextView, Button, CheckBox, Radiobutton10мин
+213 Работа с ресурсами приложения10мин
+214 Квалификаторы10мин
+215 Возможности Android Debug Bridge (ADB)10мин
+216 Debug - режим отладки приложения10мин
+217 Подробнее о Intents (неявные), IntentFilters10мин
+218 Backstack Activity, launchMode, intentFlags, taskAffinity10мин
+219 Работа с фрагментами10мин
+220 SharedPreferences10мин
+221 Заливка проекта на GitHub10мин
+222 Конспект по неделе 210мин
+223 Тест30мин
+Question 1
+Что такое Activity?
+Это компонент, представляющий собой программный интерфейс, который позволяет нескольким приложениям пользоваться одним источником данных
+Это компонент, главное предназначение которого - выполнять долгие операции, которые не требуют взаимодействия с интерфейсом
+Это компонент, который первым запускается при начале работы с приложением и также умирает последним
+Это компонент, который реагирует на сообщения посылаемые системой, другими приложениями или вашим приложением.
+v Это компонент, с помощью которого пользователь взаимодействует с приложением
+Question 2
+Что такое Service?
+Это компонент, представляющий собой программный интерфейс, который позволяет нескольким приложениям пользоваться одним источником данных
+v Это компонент, главное предназначение которого - выполнять долгие операции, которые не требуют взаимодействия с интерфейсом
+Это компонент, который первым запускается при начале работы с приложением и также умирает последним
+Это компонент, который реагирует на сообщения посылаемые системой, другими приложениями или вашим приложением.
+Это компонент, с помощью которого пользователь взаимодействует с приложением
+Question 3
+Что такое ContentProvider?
+v Это компонент, представляющий собой программный интерфейс, который позволяет нескольким приложениям пользоваться одним источником данных
+Это компонент, главное предназначение которого - выполнять долгие операции, которые не требуют взаимодействия с интерфейсом
+Это компонент, который первым запускается при начале работы с приложением и также умирает последним
+Это компонент, который реагирует на сообщения посылаемые системой, другими приложениями или вашим приложением.
+Это компонент, с помощью которого пользователь взаимодействует с приложением
+Question 4
+Выберите правильный жизненный цикл Activity
+onStart(), onCreate(), onResume(), onPause(), onStop(), onDestroy()
+onCreate(), onStart(), onResume(), onStop(), onDestroy()
+onStart(), onCreate(), onResume(), onStop(), onDestroy()
+v onCreate(), onStart(), onResume(), onPause(), onStop(), onDestroy()
+onCreate(), onStart(), onResume(), onStop(), onPause(), onDestroy()
+onStart(), onCreate(), onResume(), onStop(), onPause(), onDestroy()
+Question 5
+Что рекомендуется делать в методе onResume()?
+Инициализируем наши поля и проводим первоначальную настройку активити, проверяя входные параметры
+v Настроить активити, чтобы оно было готовым к взаимодействию с пользователем. Повесить обработчики событий на кнопки, на прокручивающиеся списки и т.п.
+Освободить ресурсы, связанные с взаимодействием.
+Выполнить запись в базу данных и освободить все ресурсы, которые не нужны пока пользователь не пользуется активити.
+
+224 Тест30мин
+Question 1
+Выберите верные утверждения про View и ViewGroup.
+View - Button, LinearLayout, FrameLayout… ViewGroup - Button, ImageView, LinearLayout…
+v View - базовый класс для всех элементов интерфейса. ViewGroup - базовый класс для всех классов контейнеров.
+v View - Button, ImageView… ViewGroup - LinearLayout, FrameLayout…
+View - окно приложения. ViewGroup - группа из нескольких окон приложения.
+Question 2
+Какой атрибут задает максимальное количество символов в EditText?
+v maxLength
+length_max
+length
+max_symbols
+symbols_size
+Question 3
+Какой контейнер нужно использовать, чтобы верно работали RadioButton’ы?
+SelectGroup
+LinearLayout
+FrameLayout
+RadioGroup
+-v ViewGroup
+SelectLayout
+Question 4
+Какие ресурсы(подтипы ресурсов) может отображать ImageView?
+array
+string
+v drawable
+layout
+color
+Question 5
+Требуется расположить три View внутри LinearLayout  друг за другом, сверху вниз. С помощью какого атрибута можно задать направление?
+gravity
+layout_position
+position
+layout_orientation
+v orientation
+layout_gravity
+
+225 Тест30мин
+Question 1
+С помощью какого класса можно получить доступ ко всем идентификаторам(id) ресурсов проекта?
+Ids.java
+Application.java
+v R.java
+BuildConfig.java
+Question 2
+Какие квалификаторы используются, чтобы распределять ресурсы относительно плотности точек на экране устройства?
+v mdpi
+adpi
+v hdpi
+v7
+small
+large
+Question 3
+С помощью какого атрибута можно задать направление дочерних View внутри LinearLayout?
+layout_orientation
+gravity
+layout_gravity
+position
+layout_position
+v orientation
+Question 4
+-Каким методом можно получить строковый ресурс в Activity?
+getString("your_string")
+v getResources().getString(R.string.your_string)
+-v getResources().getText(R.string.your_string)
+getStringRes(R.string.your_string)
+getText(R.string.your_string)
+-v getString(R.string.your_string)
+Question 5
+С какой версии Android работают векторные изображения?
+Android 2.1 - Eclair
+Android 4.4 - KitKat
+v Android 5.0 - Lollipop
+Android 6.0 - Marshmallow
+Android 7.0 - Nougat
+Question 6
+Что такое Application?
+Это компонент, который реагирует на сообщения посылаемые системой, другими приложениями или вашим приложением.  
+Это компонент, главное предназначение которого - выполнять долгие операции, которые не требуют взаимодействия с интерфейсом  
+v Это компонент, который первым запускается при начале работы с приложением и также умирает последним  
+Это компонент с помощью которого пользователь взаимодействует с приложением  
+Это компонент, представляющий собой программный интерфейс, который позволяет нескольким приложениям пользоваться одним источником данных  
+Question 7
+Как должен называться файл в котором хранятся dimen ресурсы?
+dimensions.xml
+dim.xml
+dimen.xml
+v Произвольное название
+Question 8
+Что такое View и ViewGroup?
+v View - базовый класс для всех элементов интерфейса. ViewGroup - базовый класс для всех классов контейнеров.
+View - окно приложения. ViewGroup - группа из нескольких окон приложения.
+View - Button, ImageView… ViewGroup - LinearLayout, FrameLayout…
+v View - Button, LinearLayout, FrameLayout… ViewGroup Button, ImageView, LinearLayout…
+Question 9
+Что такое BroadcastReceiver?
+Это компонент, главное предназначение которого - выполнять долгие операции, которые не требуют взаимодействия с интерфейсом  
+v Это компонент, который реагирует на сообщения посылаемые системой, другими приложениями или вашим приложением.  
+Это компонент, представляющий собой программный интерфейс, который позволяет нескольким приложениям пользоваться одним источником данных  
+Это компонент с помощью которого пользователь взаимодействует с приложением  
+Это компонент, который первым запускается при начале работы с приложением и также умирает последним  
+Question 10
+Какой метод жизненного цикла Activity может не вызваться из-за внезапного освобождения ресурсов системой?
+onPause()  
+onStop()  
+v onDestroy()
+
+226 Тест30мин
+Question 1
+Для чего нужна команда implementation в Gradle?
+Чтобы создать buildType
+v Чтобы загрузить зависимость в проект
+Чтобы создать buildconfigfield
+Чтобы создать product flavor
+Correct
+Question 2
+Что такое Build Variant?
+совокупность product flavor и buildConfigField
+то же самое что и buildType
+v совокупность buildType и product flavor
+то же самое что и product flavor
+совокупность buildType и buildConfigField
+Incorrect
+Question 3
+ Что означает аббревиатура ADB?
+Android Device Bridge
+v Android Debug Bridge
+Android Device Build
+Android Domain Build
+Incorrect
+Question 4
+Какой метод нужно использовать, чтобы приостановить работу кода до тех пор, пока вы не подключите дебаггер?
+Debug.*
+adb shell
+Question 5
+ С помощью какой комбинации клавиш можно запустить приложение в режиме отладки?
+v Shift+F9
+Alt+F4
+Ctrl+Alt+Delete
+Ctrl+Shift+Esc
+Дважды нажав Shift
+Shift+Insert
+Incorrect
+Question 6
+Что такое логи?
+Это когда приложение тормозит
+Это сообщения, которые отправляются на почту, когда в приложений происходит ошибка
+Сообщение, которое отображается на экране
+Это ошибка, которая происходит в приложении
+v Это сообщения, которые выводятся в журнал сообщений во время работы приложения
+Correct
+Question 7
+ Что такое Toast (в контексте Android)?
+v Всплывающее сообщение, которое отображается на экране
+Это сообщения, которые отправляются на почту, когда в приложений происходит ошибка
+Это хрустящий, поджаренный хлебушек
+Это сообщение, которое выводится в журнал сообщений во время работы приложения
+Это ошибка, которая происходит в приложении
+Correct
+Question 8
+Какие методы нужно использовать, чтобы показать Toast?
+Toast.*****(context, "text", Toast.LENGTH_SHORT).****();
+v makeText show
+Incorrect
+Question 9
+Какой метод нужно переопределить, чтобы создать меню?
+v onCreateOptionsMenu()
+onCreateMenu()
+registerForContextMenu()
+onPrepareMenu()
+Incorrect
+Question 10
+ Когда вызывается контекстное меню?
+при нажатии на иконку с тремя точками в тулбаре
+при двойном нажатии на любой элемент на экране
+v при долгом нажатии на элемент на экране, если на нем зарегистрировано контекстное меню
+при долгом нажатии на любой элемент на экране
+
+227 Тест30мин
+Question 1
+Явный интент - это
+Интент не имеет информацию о компоненте который будет выполнять действие, в этом случае мы передаем системе интент с action, которое необходимо выполнить, а система (или пользователь) уже решают кто именно будет выполнять действие.
+v Интент указывающий на компонент, который собирается запустить.
+Оба ответа верны.
+Оба ответа неверны.
+Question 2
+Неявный интент - это
+Оба ответа верны.
+v Интент не имеет информацию о компоненте который будет выполнять действие, в этом случае мы передаем системе интент с action, которое необходимо выполнить, а система (или пользователь) уже решают кто именно будет выполнять действие.
+Оба ответа неверны.
+Интент указывает на компонент, который собирается запустить.
+Question 3
+Какой командой можно получить список подключенных устройств в ADB?
+/$ adb -s emulator-5554 shell
+v /$ adb devices -l
+/$ adb connect ip:port
+/$ adb connected-devices -l
+Question 4
+Какой командой можно присоединиться к удаленному устройству с ip 192.168.1.86:7409?
+/$ adb -s emulator-5554 shell 192.168.1.86:7409
+/$ adb devices -l 192.168.1.86:7409
+/$ adb connected-devices -l 192.168.1.86:7409
+v /$ adb connect 192.168.1.86:7409
+Question 5
+Для чего нужен режим отладки приложения?
+Чтобы приложение работало быстрее
+Чтобы посмотреть код любого приложения из Play Market
+Смотреть работу кода во время его исполнения
+v Чтобы в консоль отправлялись логи о работе приложения
+Для отлавливания ошибок
+Question 6
+Какие типы лог сообщений бывают?
+v Assert
+Warning
+v Info
+v Error
+Device
+Attention
+Variant
+Exception
+v Debug
+v Verbose
+Question 7
+В каком классе находятся сгенерированные BuildConfigField? 
+*.java
+Enter answer here
+BuildConfig.java
+Question 8
+Какой из этих методов можно использовать, чтобы вывести логи?
+Android.sendMessage(“Message”);
+LogCat.e(“Tag”, “Message”);
+v Log.d(“Tag”, “Message”);
+Logs.show(“Message”);
+getLogger().log(“Tag”, “Message”);
+Question 9
+Будет ли отображаться Toast, если мы вызвали его показ во время закрытия приложения?
+v Да
+Нет
+Question 10
+В каком методе происходит обработка нажатия на пункты главного меню?
+onCreateOptionsMenu()
+v onOptionsItemSelected()
+onPrepareOptionsMenu()
+Question 11
+Зачем нужен метод onPrepareOptionsMenu() ?
+чтобы создать контекстное меню
+чтобы обработать нажатия на пункты меню
+v чтобы редактировать пункты меню в рантайме
+Question 12
+Что такое launchMode?
+v это атрибут, с помощью которого указывается поведение активити в бекстеке
+launchMode - переменная, которая передается в интенте в запускаюмую активити
+этот атрибут влияет на запуск приложения с главного экрана устройства
+Question 13
+Какое стандартное поведение активити в бэкстеке?
+v активити добавляется столько раз, сколько раз было запущено, без ограничений
+активити каждый раз создается в новой таске
+активити не добавляется в бэкстек вообще, если это не указать явно
+активити добавляется в бэкстек, только если в нем нет экземпляров этой активити
+228 Фрагменты30мин
+Question 1
+Для чего во фрагменте нужен метод newInstance()?
+Чтобы постоянно получать один и тот же экземпляр фрагмента.
+Чтобы перейти во фрагмент.
+Конструктор фрагмента не рекомендуется переопределять, т.к. из-за этого может крашнуться приложение. Вместо переопределения конструктора мы используем метод newInstance(), который возвращает экземпляр фрагмента.
+Question 2
+Покажется ли ошибка в приложении, если мы не добавим Fragment в манифест?
+Да
+Нет
+Question 3
+ Какой метод нужно вызвать, чтобы перейти на предыдущий фрагмент (если такой есть)?
+fragment.back()
+fragmentManager.popBackStack()
+activity.popBackStack()
+activity.back()
+fragmentManager.back()
+fragment.popBackStack()
+Question 4
+С помощью какого класса можно создать Dialog?
+DialogCreator
+DialogBuilder
+AlertDialog.Builder
+Dialog.Builder
+AlertDialogBuilder
+Question 5
+С помощью какого метода во фрагменте можно получить входные параметры?
+Enter answer here
+Question 6
+В каком методе жизненного цикла фрагмента задается разметка фрагмента?
+Enter answer here
+Question 7
+В каком методе жизненного цикла фрагмента уже можно обращаться к хост активити?
+Enter answer here
+Question 8
+Как связаны жизненный цикл фрагмента и его хост активити?
+Состояние фрагмента меняется независимо от состояния его хост активити
+Фрагмент всегда находится в одном состоянии, в то время как активити зависит от своего жизненного цикла
+Состояния жизненного цикла фрагмента соответствуют состояниям жизненного цикла его хост активити
+Question 9
+С какого метода начинается жизненный цикл фрагмента?
+Enter answer here
+Question 10
+Какой метод завершает транзакцию в FragmentManager?
+add()
+commit()
+replace()
+
+229 Проверочный тест30мин
+Question 1
+mPreferences = getPreferences(Context.MODE_PRIVATE);
+mPreferences.*()
+  .putString("String", "String")
+  .apply();
+Какой метод должен быть вписан вместо * ? (без скобок)
+Enter answer here
+Question 2
+Какой метод проверяет, есть ли в файле Preferences значение с заданным ключом? (Ответ: название метода без скобок)
+Enter answer here
+Question 3
+Каким способом можно удалить все значения из текущего файла Preferences?
+mPreferences.edit().removeAllEntries().apply()
+mPreferences.clearAll().commit();
+mPreferences.deleteAll().commit()
+mPreferences.edit().clear().apply();
+Question 4
+Что такое POJO?
+Plain Obvious Java Object 
+Plain Original Java Object
+Plain Old Java Object
+Plain Oracle Java Object
+Question 5
+Каким способом можно добавить фрагмент к интерфейсу?
+Указать в манифесте приложения в соответствующей активити
+Добавить в контейнер с помощью LayoutInflater
+Добавить с помощью метода активити addFragment()
+Это обман. Фрагменты нельзя добалять в UI
+Добавить в разметку через таг <fragment/>
+Добавить в контейнер с помощью FragmentManager  
+Question 6
+Что такое сериализация?
+Процесс присваивания объекту уникального серийного номера для индексации и ускорения обращения к нему
+Процесс дробления объекта на серию объектов для более экономного размещения в памяти.
+Процесс просмотра нового сезона Игры престолов для последующего обсуждения с друзьями
+Процесс фиксации состояния объекта для последующей передачи, сохранения в долговременную память и восстановления
+Question 7
+Что такое JSON?
+Так называются файлы, сгенерированные Android Studio
+Это расширение формата XML
+Простой формат обмена данными, удобный для чтения и написания как человеком, так и компьютером 
+Это Java код перенесенный на Javascript
+Question 8
+С помощью какого метода происходит сериализация в библиотеке GSON?
+String json =  new Gson().*(myObject);  // название метода вместо *
+Enter answer here
+Question 9
+Какой из следующих методов - правильный, если нужно десериализовать объект?
+Dog chappy = new Gson().createFrom(chappyJson);
+Dog chappy = new Gson().toJson(chappyJson);
+Dog chappy = new Gson().fromJson(chappyJson, Dog.class);
+Dog chappy = new Gson().deserialize(chappyJson, Dog.class);
+Question 10
+Введите аббревиатуру, которой обозначает "система контроля версий"
+Enter answer here
+Question 11
+Какая команда используется для отправки изменений в удаленный репозиторий git?
+Enter answer here
+Question 12
+Зачем вообще нужно использовать систему контроля версий?
+Мы со своей командой можем работать над разными частями приложения, не мешая друг другу. В конце работы нам всего лишь нужно влить наши рабочие ветки в master ветку с разрешением конфликтов, если они есть.
+Я могу спокойно экспериментировать с кодом, не боясь ничего испортить.
+Я могу отследить, когда было сделано то или иное изменение, и возможно, причину этого изменения.
+Я могу спокойно удалять старый код, а не комментировать его. Ведь если он мне снова понадобится, я легко найду его в системе контроля версий.
+
+300 НЕДЕЛЯ 3 Старт курсового проекта 
+На этой неделе курса вас ждёт начало работы над курсовым проектом, в котором будут применяться знания, полученные вами в предыдущих неделях.
+301 КП. Верстка экрана логина7мин
+302 КП. Добавление ссылок на View элементы6мин
+303 КП. Валидация email и password. Ошибки в Toast7мин
+304 КП. Верстка экрана профиля4мин
+305 КП. Создание активити профиля7мин
+306 КП. Создание класса User5мин
+307 КП. Создание хост активити для фрагментов4мин
+308 КП. Миграция логики AuthActivity во фрагмент6мин
+309 КП. Добавление фрагмента регистрации. Создание класса PreferenceHelper16мин
+310 Код для КП. Верстка экрана логина5мин
+311 Код для КП. Добавление ссылок на View элементы5мин
+312 Код для КП. Валидация email и password. Ошибки в Toast5мин
+313 FAQ по заданиям на взаимную оценку10мин
+314 Задание 110мин
+315 Код для КП. Верстка экрана профиля5мин
+316 Код для КП. Создание активити профиля5мин
+317 Код для КП. Создание класса User5мин
+318 Задание 210мин
+319 Код для КП. Создание хост активити для фрагментов5мин
+320 Код для КП. Миграция логики AuthActivity во фрагмент5мин
+321 Код для КП. Добавление фрагмента регистрации. Создание класса PreferenceHelper5мин
+322 Конспект по неделе 310мин
+
+400 НЕДЕЛЯ 4 Завершение курсового проекта 
+На этой неделе курса вас ждёт окончание работы над курсовым проектом и создание своего приложения.
+401 КП. Логика авторизации. Работа с бэкстеком8мин
+402 КП. Экран профиля. Логаут, меню4мин
+403 КП. Обновленная логика авторизации. AutoCompleteTextView, ArrayAdapter6мин
+404 КП. Экран профиля. Извлечение изображения из галереи6мин
+405 КП. Градиентный фон. The end2мин
+406 Код для КП. Логика авторизации. Работа с бэкстеком5мин
+407 Код для КП. Экран профиля. Логаут, меню5мин
+408 Задание 110мин
+409 Код для КП. Обновленная логика авторизации. AutoCompleteTextView, ArrayAdapter5мин
+410 Код для КП. Экран профиля. Извлечение изображения из галереи5мин
+411 Код для КП. Градиентный фон. The end5мин
+412 Полная программа "Android-разработчик"2мин
+413 Конспект по неделе 410мин

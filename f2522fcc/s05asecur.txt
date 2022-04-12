@@ -1802,3 +1802,498 @@ removed
 632 Creating a Company Culture for Security55мин
 633 Creating a Company Culture for Security - Design Document30мин
 634 Your Access to Google Job Search Resources5мин
+641 Tests
+System Hardening
+Total points 10
+Question 1
+What is an attack vector? 
+-The severity of the attack
+-The classification of attack type 
+A mechanism by which an attacker can interact with your network or systems 
+v The direction an attack is going in 
+Question 2
+Disabling unnecessary components serves which purposes? Check all that apply. 
+v Closing attack vectors
+v Reducing the attack surface 
+Making a system harder to use 
+Increasing performance 
+Right on! Every unnecessary component represents a potential attack vector. The attack surface is the sum of all attack vectors. So, disabling unnecessary components closes attack vectors, thereby reducing the attack surface.
+Question 3
+What's an attack surface? 
+The target or victim of an attack 
+The payload of the attack 
+vv The combined sum of all attack vectors in a system or network
+The total scope of an attack 
+Correct
+Yep! The attack surface describes all possible ways that an attacker could interact and exploit potential vulnerabilities in the network and connected systems.
+Question 4
+A good defense in depth strategy would involve deploying which firewalls? 
+No firewalls 
+vv Both host-based and network-based firewalls
+Network-based firewalls only 
+Host-based firewalls only 
+Correct
+You got it! Defense in depth involves multiple layers of overlapping security. So, deploying both host- and network-based firewalls is recommended.
+Question 5
+Using a bastion host allows for which of the following? Select all that apply. 
+v Applying more restrictive firewall rules 
+? Having more detailed monitoring and logging 
+Running a wide variety of software securely
+v Enforcing stricter security measures 
+Correct
+Wohoo! Bastion hosts are special-purpose machines that permit restricted access to more sensitive networks or systems. By having one specific purpose, these systems can have strict authentication enforced, more firewall rules locked down, and closer monitoring and logging.
+Question 6
+What benefits does centralized logging provide? Check all that apply. 
+v It allows for easier logs analysis. 
+v It helps secure logs from tampering or destruction.
+It prevents database theft. 
+It blocks malware infections. 
+Correct
+Yes! Centralized logging is really beneficial, since you can harden the log server to resist attempts from attackers trying to delete logs to cover their tracks. Keeping logs in place also makes analysis on aggregated logs easier by providing one place to search, instead of separate disparate log systems.
+Question 7
+What are some of the shortcomings of antivirus software today? Check all that apply. 
+It only protects against viruses. 
+It's very expensive. 
+It only detects malware, but doesn't protect against it.
+v It can't protect against unknown threats. 
+Correct
+Awesome! Antivirus software operates off a blacklist, blocking known bad entities. This means that brand new, never-before-seen malware won't be blocked.
+Question 8
+How is binary whitelisting a better option than antivirus software? 
+It's cheaper. 
+v It can block unknown or emerging threats. 
+It's not better. It's actually terrible.
+It has less performance impact. 
+Question 9
+What does full-disk encryption protect against? Check all that apply. 
+Malware infections 
+v Tampering with system files 
+v Data theft 
+IP spoofing attacks
+Correct
+Excellent job! With the contents of the disk encrypted, an attacker wouldn't be able to recover data from the drive in the event of physical theft. An attacker also wouldn't be able to tamper with or replace system files with malicious ones.
+Question 10
+What's the purpose of escrowing a disk encryption key? 
+Preventing data theft 
+v Performing data recovery 
+Providing data integrity 
+Protecting against unauthorized access
+Yep! Key escrow allows the disk to be unlocked if the primary passphrase is forgotten or unavailable for whatever reason.
+-------
+Application Hardening
+Total points 2
+Question 1
+Why is it important to keep software up-to-date? 
+It's not important. It's just annoying. 
+To ensure access to the latest features 
+v To address any security vulnerabilities discovered
+To ensure compatibility with other systems 
+Correct
+Nice work! As vulnerabilities are discovered and fixed by the software vendor, applying these updates is super important to protect yourself against attackers.
+Question 2
+What are some types of software that you'd want to have an explicit application policy for? Check all that apply.
+v Video games
+Word processors 
+v Filesharing software 
+Software development kits
+Correct
+Great job! Video games and filesharing software typically don't have a use in business (though it does depend on the nature of the business). So, it might make sense to have explicit policies dictating whether or not this type of software is permitted on systems.
+-------
+Defense in Depth
+q1
+What's the key characteristic of a defense-in-depth strategy to IT security?
+Confidentiality
+v Multiple overlapping layers of defense
+Encryption
+Strong passwords
+q2
+What does full-disk encryption protect against? Check all that apply.
+Eavesdropping
+v Data theft
+Malware
+v Data tampering
+q3
+Securely storing a recovery or backup encryption key is referred to as _______.
+Key encryption
+Key obfuscation
+Key backup
+v Key escrow
+q4
+Which of these host-based firewall rules help to permit network access from a Virtual Private Network (VPN) subnet?
+Active Directory
+Secure Shell (SSH)
+v Access Control Lists (ACLs)
+Group Policy Objects (GPOs)
+q5
+Which of these plays an important role in keeping attack traffic off your systems and helps to protect users? Check all that apply.
+v Antivirus software
+Multiple Attack Vectors
+v Antimalware measures
+Full disk encryption (FDE)
+q6
+What can provide resilience against data theft, and can prevent an attacker from stealing confidential information from a hard drive that was stolen?
+Key escrow
+v Full disk encryption (FDE)
+OS upgrades
+Software patch management
+q7
+What is the purpose of installing updates on your computer? Check all that apply.
+v Updating improves performance and stability.
+v Updating adds new features.
+v Updating addresses security vulnerabilities.
+Updating helps block all unwanted traffic.
+q8
+What is the combined sum of all attack vectors in a corporate network?
+v The attack surface
+The antivirus software
+The Access Control List (ACL)
+The risk
+642 Tests
+q1
+Authentication is concerned with determining _______.
+-Access
+Identity
+Eligibility
+Validity
+q2
+Which of the following are valid multi-factor authentication factors? Check all that apply.
+v Something you know
+Something you did
+v Something you have
+v Something you are
+Correct
+Nice job! The three factors of authentication that can be combined for multi-factor authentication are: (1) something you know, like a password; (2) something you have, like a physical token; and (3) something you are, which would be a biometric factor.
+q3
+Security Keys utilize a secure challenge-and-response authentication system, which is based on ________.
+Shared secrets
+Steganography
+Symmetric encryption
+v Public key cryptography
+q4
+The authentication server is to authentication as the ticket granting service is to _______.
+v Authorization
+Integrity
+Verification
+Identification
+q5
+Which of these are examples of "something you have" for multifactor authentication? Check all that apply.
+v RSA SecureID token
+v OTP
+Correct
+Awesome! OTP or One-Time-Password, is a physical token that is commonly used to generate a short-lived number.
+PING
+Password
+q6
+In a Certificate Authority (CA) infrastructure, why is a client certificate used?
+To authenticate the CA
+To authenticate the server
+v To authenticate the client
+To authenticate the subordinate CA
+q7
+What is used to request access to services in the Kerberos process?
+v Ticket Granting Ticket
+TGS session key
+Client ID
+Client-to-Server ticket
+q8
+Kerberos enforces strict _____ requirements, otherwise authentication will fail.
+NTP
+v Time
+AES
+Strong password
+q9
+Which of these are examples of a Single Sign-On (SSO) service? Check all that apply.
+v OpenID
+Correct
+You got it! OpenID is an example of a decentralized Single Sign-On (SSO) service.
+v Kerberos
+Tokens
+Relying Parties
+q10
+A company is utilizing Google Business applications for the marketing department. These applications should be able to temporarily access a user's email account to send links for review. Why should the company use Open Authorization (OAuth) in this situation?
+Administer multiple network devices
+Utilize a Key Distribution Center server
+v Compatibility with third party apps
+Gain access through a wireless access point
+q11
+Access control entries can be created for what types of file system objects? Check all that apply.
+APIs
+v Programs
+v Folders
+Correct
+Great work! Access control entries can define permissions controlling read, write, or execute functionalities on folders.
+v Files
+Correct
+Great work! Access control entries can define permissions controlling read, write, or execute functionalities on files.
+q21
+Authz is short for ________.
+Authored
+Authoritarian
+v Authorization
+Authentication
+q22
+q23
+q24
+In the three As of security, what is the process of proving who you claim to be?
+Accounting
+v Authentication
+Authorization
+Authored
+q25
+Your bank set up multifactor authentication to access your account online. You know your password. What other factor combined with your password qualifies for multifactor authentication? Check all that apply.
+Passphrase
+v Fingerprint
+Correct
+Well done! A fingerprint is something you are. A multifactor system will incorporate at least two factors.
+v Bank card
+Correct
+Well done! A bank card is something you have. A multifactor system will incorporate at least two factors.
+PIN
+q26
+q27
+A network admin wants to use a Remote Authentication Dial-In User Service (RADIUS) protocol to allow 5 user accounts to connect company laptops to an access point in the office. These are generic users and will not be updated often. Which of these internal sources would be appropriate to store these accounts in?
+SQL database
+v Flat file
+Correct
+Well done! A flat file is an internal source that can store user accounts on a RADIUS server.
+LDAP
+Active Directory
+q28
+What are the benefits of using a Single Sign-On (SSO) authentication service? Check all that apply.
+v One set of credentials for the user
+Correct
+You nailed it! Single Sign-On (SSO) allows a user to have one set of credentials.
+v Reduce likelihood of passwords being written down
+v Reduce overhead of password assistance
+Correct
+You nailed it! Single Sign-On (SSO) reduces the overhead of password assistance.
+v Reduce time spent on re-authenticating to services
+Correct
+You nailed it! Single Sign-On (SSO) reduces the time spent on re-authenticating to services.
+q29
+In the three As of security, which part pertains to describing what the user account does or doesn't have access to?
+Authentication
+v Authorization
+Accessibility
+Accounting
+q30
+An Open Authorization (OAuth) access token would have a _____ that tells what the third party app has access to.
+v scope
+template
+request
+e-mail
+The access token would have a scope, which says that it can only be used to access email, not other services associated with the account. 
+q31
+A network admin deployed a Terminal Access Controller Access Control System Plus (TACACS+) system so other admins can properly manage multiple switches and routers on the local area network (LAN). The system will keep track and log admin access to each device and the changes made. This “logging” satisfies which part of the three As of security?
+Accounting
+v?Authentication
+Administration
+-Authorization
+644 tasks
+Secure Network Architecture
+Total points 7
+Question 1
+Why is normalizing log data important in a centralized logging setup? 
+v Uniformly formatted logs are easier to store and analyze. 
+ It's difficult to analyze abnormal logs. 
+Log normalizing detects potential attacks. 
+The data must be decrypted before sending it to the log server.
+Question 2
+What type of attacks does a flood guard protect against? Check all that apply. 
+v DDoS attacks 
+Malware infections 
+v SYN floods
+Man-in-the-middle attacks 
+?
+Question 3
+What does DHCP Snooping protect against? 
+v Rogue DHCP server attacks 
+Data theft 
+DDoS attacks
+Brute-force attacks 
+Question 4
+What does Dynamic ARP Inspection protect against? 
+-v Rogue DHCP server attacks 
+v ARP poisoning attacks 
+DDoS attacks 
+Malware infections
+Question 5
+What does IP Source Guard protect against? 
+DDoS attacks 
+Brute-force attacks 
+v IP spoofing attacks
+Rogue DHCP server attacks 
+Question 6
+What does EAP-TLS use for mutual authentication of both the server and the client? 
+One-time passwords
+Biometrics
+v Digital certificates 
+Usernames and passwords 
+Question 7
+Why is it recommended to use both network-based and host-based firewalls? Check all that apply. 
+v For protection against compromised hosts on the same network 
+-For protection against DDoS attacks 
+v For protection for mobile devices, like laptops 
+For protection against man-in-the-middle attacks
+--------------
+Wireless Security
+Total points 4
+Question 1
+What are some of the weaknesses of the WEP scheme? Check all that apply. 
+v Its small IV pool size 
+Its use of ASCII characters for passphrases 
+v Its use of the RC4 stream cipher 
+v Its poor key generation methods
+Question 2
+What symmetric encryption algorithm does WPA2 use? 
+v AES
+RSA
+DSA
+DES
+Question 3
+How can you reduce the likelihood of WPS brute-force attacks? Check all that apply. 
+Update firewall rules.
+v Implement lockout periods for incorrect attempts.
+v Disable WPS.
+Use a very long and complex passphrase.
+Question 4
+Select the most secure WiFi security configuration from below: 
+WPA personal
+WPA enterprise
+v WPA2 enterprise
+None
+WPA2 personal
+WEP 128 bit
+---------
+Network Monitoring
+Total points 5
+Question 1
+What does tcpdump do? Select all that apply. 
+v Analyzes packets and provides a textual analysis 
+Encrypts your packets
+v Captures packets 
+Generates packets 
+Question 2
+What does wireshark do differently from tcpdump? Check all that apply. 
+It can capture packets and analyze them. 
+v It understands more application-level protocols. 
+It can write packet captures to a file.
+v It has a graphical interface. 
+Question 3
+What factors should you consider when designing an IDS installation? Check all that apply. 
+v Storage capacity 
+Internet connection speed
+v Traffic bandwidth 
+v OS types in use 
+Question 4
+What is the difference between an Intrusion Detection System and an Intrusion Prevention System? 
+They are the same thing.
+v An IDS can alert on detected attack traffic, but an IPS can actively block attack traffic.
+An IDS can actively block attack traffic, while an IPS can only alert on detected attack traffic.
+An IDS can detect malware activity on a network, but an IPS can't
+Question 5
+What factors would limit your ability to capture packets? Check all that apply.
+v Network interface not being in promiscuous or monitor mode
+Anti-malware software
+Encryption
+v Access to the traffic in question
+You got it! If your NIC isn't in monitor or promiscuous mode, it'll only capture packets sent by and sent to your host. In order to capture traffic, you need to be able to access the packets. So, being connected to a switch wouldn't allow you to capture other clients' traffic.
+----
+What traffic would an implicit deny firewall rule block?
+Everything not allowed
+Outbound traffic
+Nothing unless blocked
+Inbound traffic
+Question 2
+The process of converting log entry fields into a standard format is called _______.
+Log auditing
+Log analysis
+Log encryption
+Log normalization
+Question 3
+A ______ can protect your network from DoS attacks.
+Flood Guard
+Dynamic ARP Inspection
+IP Source Guard
+DHCP Snooping
+Question 4
+Using different VLANs for different network devices is an example of _______.
+Network Separation
+Implicit Denial
+Remote Access
+Network Encryption
+Question 5
+How do you protect against rogue DHCP server attacks?
+DHCP Snooping
+IP Source Guard
+Dynamic ARP Inspection
+Flood Guard
+Question 6
+What does Dynamic ARP Inspection protect against?
+ARP Man-in-the-middle attacks
+IP Spoofing attacks
+DoS attacks
+Rogue DHCP Server attacks
+Question 7
+What kind of attack does IP Source Guard protect against?
+ARP Man-in-the-middle attacks
+Rogue DHCP Server attacks
+DoS attacks
+IP Spoofing attacks
+Question 8
+A reverse proxy is different from a proxy because a reverse proxy provides ______.
+Privacy
+DoS protection
+Remote Access
+Authentication
+Question 9
+What underlying symmetric encryption cipher does WEP use?
+RSA
+AES
+DES
+RC4
+Question 10
+What key lengths does WEP encryption support? Check all that apply. 
+Question 11
+What's the recommended way to protect a WPA2 network? Check all that apply.
+Use a unique SSID
+Hide the SSID
+Use a long, complex passphrase
+Use WEP64
+Question 12
+If you're connected to a switch and your NIC is in promiscuous mode, what traffic would you be able to capture? Check all that apply.
+All traffic on the switch
+No traffic
+Broadcast traffic
+Traffic to and from your machine
+Question 13
+What could you use to sniff traffic on a switch?
+Promiscuous Mode
+DHCP Snooping
+Network hub
+Port Mirroring
+Question 14
+What does tcpdump do?
+Performs packet capture and analysis
+Handles packet injection
+Generates DDoS attack traffic
+Brute forces password databases
+Question 15
+Compared to tcpdump, wireshark has a much wider range of supported _______.
+Packet sizes
+Protocols
+Languages
+Packet types
+Question 16
+A Network Intrusion Detection System watches for potentially malicious traffic and _______ when it detects an attack.
+Triggers alerts
+Shuts down
+Blocks traffic
+Disables network access
+Question 17
+What does a Network Intrusion Prevention System do when it detects an attack?
+It triggers an alert.
+It does nothing.
+It attacks back.
+It blocks the traffic.
+
