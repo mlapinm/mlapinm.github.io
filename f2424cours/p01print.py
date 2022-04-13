@@ -69,7 +69,28 @@ def make_js_name(name):
     text = re.sub(r'([\.\!\?])', r'\1\n', text)
     sentences = re.split(r'[\n]', text)
 
-    
+    name2 = re.sub(r'q(\d+).+$', r'l\1.js', name)
+    print(name2)
+
+    match = re.search(r'(l\d+)', name2)
+    variable = match[1] if match else 'kk'
+
+    text2 = '{}=[\n'.format(variable)
+    for e in sentences:
+        text2 += '"{}",\n'.format(e)
+
+    text2 += ']'
+
+    print(text2)
+
+
+
+
+
+
+
+    print(variable)
+
 
 
 def make_js():
