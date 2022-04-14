@@ -1,4 +1,4 @@
-var l11207 = [
+var l11207e = [
 "Using data to drive successful outcomes.",
 "In an earlier video, you learned about five essential analytical skills.",
 "As a reminder, they're curiosity, understanding context, having a technical mindset, data design, and data strategy.",

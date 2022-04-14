@@ -105,10 +105,12 @@ def make_js_name(name):
     sentences = re.split(r'[\n]', text)
     sentences = [e.strip() for e in sentences if len(e.strip()) > 0]
 
-    name2 = re.sub(r'q(\d+).+$', r'l\1.js', name)
+    name2 = re.sub(r'q(\d+.).+$', r'l\1.js', name)
 
 
-    match = re.search(r'(l\d+)', name2)
+    match = re.search(r'(l\d+.)', name2)
+    print(name2, name)
+
     variable = match[1] if match else 'kk'
 
     text2 = 'var {} = [\n'.format(variable)
@@ -124,6 +126,8 @@ def make_js():
     # print(l)
     for e in l:
         name = e  # 'q11513e.txt'
+        print(111)
+
         text = make_js_name(name)
         name2 = name[:name.index('.')] + '.js'
         name2 = 'l' + name2[1:]
@@ -136,8 +140,8 @@ def make_js():
 
 if __name__ == "__main__":
 
-    # make_lists(l)
-    make_js()
+    make_lists(l)
+    # make_js()
 
 
     print(123)
