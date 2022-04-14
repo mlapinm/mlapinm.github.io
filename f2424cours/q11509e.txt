@@ -1,17 +1,46 @@
 Understanding data and fairness.
-Hi, my name is Rachel, and I'm the Business systems and analytics lead at Verily.
-There are a lot of different types of problems that a data analyst can solve.
-I've been lucky enough over my career to have seen a lot of them and to take in a lot of very different types of data and help turn that into meaningful answers.
-I think one of the most important things to remember about data analytics is that data is data.
-I'm a finance data analyst and so my role at Verily is to take all of our financial information, all of the information of the money we're spending and the money we're making, and turn that into reports and insights so that our business leads can understand what we're doing.
-One of the most important things I've done at Verily recently was help create what's called a profit and loss statement for each of our business units.
-That means that in real time, our teams can see what their budget is and how they're spending against that budget.
-What that does is that helps our teams keep to that budget by either increasing their revenue streams so that they have more money to play with or pulling back their spending so that they can keep themselves within that budget.
-All of that really helps keep us on track as a company in making sure that we're hitting our goals.
-I found that data acts like a living and breathing thing.
-When you have a ton of data points, it can be overwhelming when you first sit down to make sense of it.
-You have tons of columns, tons of records, tons of different types of data, and finding a way to make sense of that is really hard and that's where the expertise of a data analyst comes in.
-It has been some of the most frustrating moments of my career, but also some of the most rewarding work I've ever done when it finally comes together.
-The best advice I have for any data analyst starting out is keep at it.
-If the angle you're taking doesn't work, try to find another one.
-Try to come at it in a different way, try to ask a different question, and eventually the data will yield and you'll get the insights you're looking for.
+So far, we've covered the different roles data analysts play in business environments and the kinds of tasks that come with those roles.
+But data analysts have another important responsibility: making sure that their analyses are fair.
+Now, I know what you're probably thinking, data is based on collected facts, how can it be unfair?
+Well, that's a good question.
+Let's learn what fairness means when we talk about data analysis and why it's important for you as an analyst to keep in mind.
+Fairness means ensuring that your analysis doesn't create or reinforce bias.
+In other words, as a data analyst, you want to help create systems that are fair and inclusive to everyone.
+Sounds simple enough?
+Well, here's the tough part about fairness in data analytics.
+There isn't one standard definition of it, but hopefully the way we've just described it can give you one way to think about fairness for right now, but it's about to get a bit trickier.
+Sometimes conclusions based on data can be true and unfair.
+What can you do then?
+Well, let's find out with an example.
+Let's say we have a company that's kind of notorious for being a boys club.
+There isn't much representation of other genders.
+This company wants to see which employees are doing well, so they start gathering data on employee performance and their own company culture.
+The data shows that men are the only people succeeding at this company.
+Their conclusion?
+That they should hire more men.
+After all, they're doing really well here, right?
+But that's not a fair conclusion for a couple of reasons.
+First, it doesn't even consider all of the available data on company culture, so it paints an incomplete picture.
+Second, it doesn't think about the other surrounding factors that impact the data, or in other words, the conclusion doesn't consider the difficulties that people of different gender identities have trying to navigate a toxic work environment.
+If the company only looks at this conclusion, they won't acknowledge and address how harmful their culture is and they won't understand why certain people are set up to fail within it.
+That's why it's important to keep fairness in mind when analyzing data.
+The conclusion that only men are succeeding at this company is true, but it ignores other systematic factors that are contributing to this problem.
+But don't worry, there's a way to make a fair conclusion here.
+An ethical data analyst can look at the data gathered and conclude that the company culture is preventing some employees from succeeding, and the company needs to address those problems to boost performance.
+See how this conclusion paints a much more complete and fair picture.
+It recognizes the fact that some people aren't doing as well in this company and factors in why that could be instead of discriminating against a huge number of applicants in the future.
+As a data analyst it's your responsibility to make sure your analysis is fair and factors in the complicated social context that could create bias in your conclusions.
+It's important to think about fairness from the moment you start collecting data for a business task to the time you present your conclusions to your stakeholders.
+We'll learn more about bias in the data analysis process later on in another course.
+For now, let's check out an example of a data analysis that does a good job of considering fairness in its conclusion.
+A team of Harvard data scientists were developing a mobile platform to track patients at risk of cardiovascular disease in an area of the United States called the Stroke Belt.
+It's important to call out that there were a variety of reasons people living in this area might be more at risk.
+With that in mind, these data scientists recognized that fairness needed to be a priority for this project, so they built fairness into their models.
+The team took several fairness measures to make sure they were being as fair as possible when examining sensitive and potentially biased data.
+First, they teamed analysts with social scientists who could provide insights on human bias and the social context that created them.
+They also collected self reported data in a separate system to avoid the potential for racial bias, which might skew the results of their study and unfairly represent patients.
+To make sure this sample population was representative, they oversampled non-dominant groups to ensure the model was including them.
+It's clear that the team made fairness a top priority every step of the way.
+This helped them collect data and create conclusions that didn't negatively impact the communities they were studying.
+Hopefully these examples have given you a better idea of what fairness means in data analysis.
+But we're going to keep building on our understanding of fairness throughout this program and you'll get to practice with some activities.

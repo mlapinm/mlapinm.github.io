@@ -1,43 +1,43 @@
 The power of data in business.
-As a data analyst, you'll be tackling business tasks that help companies use data.
-Coming up, we'll talk more about what a business task actually is, and some examples of what they might look like in real data analyst jobs.
-Let's take a second and think back on the real examples of businesses using data analytics and their operation we've seen before.
-You might have noticed a common theme across every example.
-They all have issues to explore, questions to answer, or problems to solve.
-It's easy for these things to get mixed up.
-Here's a way to keep them straight when we talk about them in data analytics.
-An issue is a topic or subject to investigate.
-A question is designed to discover information and a problem is an obstacle or complication that needs to be worked out.
-Coca-Cola had a question about new products.
-Data analysis gave them insights into new flavors customers already like.
-The City Zoo and Aquarium had a problem with staffing.
-Data, helped them figure out the best staffing strategy.
-These questions and problems become the foundation for all kinds of business tasks, that you'll help solve as a data analyst.
-A business task is the question or problem data analysis answers for business.
-This is where you focus a lot of your efforts in the work you'll do for future employers.
-Let's stick with our zoo example and see if we can imagine what a business task for a zoo might look like.
-We know the problem, unpredictable weather was making it hard for the zoo to anticipate staffing needs.
-Maybe the business task could be something like, analyze weather data from the last decade to identify predictable patterns.
-The data analysts could then plan out the best way to gather, analyze, and present the data needed to solve this task and meet the zoos goals.
-Then, using data, the zoo would be able to make informed decisions about their daily staffing.
-We talked a little about data-driven decision making in previous videos.
-But just in case you need a refresher, here it is.
-Data-driven decision-making is when facts that have been discovered through data analysis are used to guide business strategy.
-The simplest way to think about decision-making is that it's a choice between consequences, good, bad, or a combination of both.
-In our zoo example, the zoo had the data they needed to make an informed decision that solved their problem.
-But what if they had made this decision without data?
-Let's say they just relied on observation and memory to track the weather and make staffing schedules.
-Well, we already know that wouldn't have solve their problem long-term.
-Data analytics gave them the information they needed to find the best possible solution to their problem.
-That's the power of data.
-Observation and intuition are powerful tools and decision-making, but they can only take us so far when we make decisions based on just observation and gut feelings, we're only seeing part of the picture.
-Data helps us see the whole thing.
-With data, we have a complete picture of the problem and its causes, which lets us find new and surprising solutions we never would've been able to see before.
-Data analytics helps businesses make better decisions.
-It all starts with a business task and the question it's trying to answer.
-With the skills you'll learn throughout this program, you'll be able to ask the right questions, plan out the best way to gather and analyze data, and then present it visually to arm your team so they can make an informed, data-driven decision.
-That makes you critical to the success of any business you work for.
-Data is a powerful tool.
-With great power comes, well, you know the rest.
-And you're doing a super job taking in all of this information.
-Up next, we'll talk about your responsibility as a data analyst to make sure you're gathering, analyzing, and presenting data in a way that's fair to the people being represented by that data.
+Как аналитик данных,вы будете решать бизнес-задачи, которые помогуткомпании используют данные. 
+Подойдет,мы поговорим подробнее о том, что такое бизнес-задача,и несколько примеров того, как они могут выглядетькак в реальных рабочих местах аналитика данных.
+Давайте на секунду подумаемвернуться к реальным примерампредприятия, использующие аналитику данныхи их действие мы видели раньше.
+Вы могли заметить общую темупо каждому примеру.
+У всех есть проблемы для изучения,вопросы, на которые нужно ответить, или проблемы, которые нужно решить.
+Эти вещи легко перепутать.
+Вот способ держать их прямо, когда мыговорить о них в аналитике данных.
+Проблема – это тема или предмет исследования.
+Вопрос предназначен для поиска информации ипроблема является препятствием илиосложнение, которое необходимо проработать.
+У Coca-Cola был вопрос о новых продуктах.
+Анализ данных дал им пониманиев новые вкусы, которые уже нравятся покупателям.
+В городском зоопарке и океанариуме возникла проблема с кадрами.
+Данные помогли им определить наилучшую кадровую стратегию.
+Эти вопросы и проблемы становятсяоснова для всех видов бизнес-задач,которые вы поможете решить как аналитик данных.
+Бизнес-задача – это вопрос илиответы анализа проблемных данных для бизнеса.
+Это то, на чем вы много внимания уделяетеваши усилия в работе, которую вы будете выполнять для будущих работодателей.
+Давайте вернемся к нашему примеру с зоопарком и посмотрим, сможем ли мыпредставьте, как может выглядеть бизнес-задача для зоопарка.
+Мы знаем проблему,непредсказуемая погода мешалаЗоопарку трудно предвидеть потребность в персонале.
+Возможно, бизнес-задача могла бы выглядеть примерно так:анализировать данные о погоде изпоследнее десятилетие, чтобы выявить предсказуемые закономерности.
+Затем аналитики данных моглиспланировать лучший способ сбора,анализировать и представлять необходимые данныедля решения этой задачи и достижения целей зоопарка.
+Тогда, используя данные, зоопарк сможет сделатьинформированные решения об их повседневном укомплектовании персоналом.
+Мы немного поговорили о data-drivenпринятие решений в предыдущих видео.
+Но на всякий случай, если вам нужно освежить память, вот она.
+Принятие решений на основе данных — это когда факты, которые былиобнаружено с помощью анализа данныхиспользуются для руководства бизнес-стратегией.
+Самый простой способ думать о принятии решенийчто это выбор между последствиями,хорошо, плохо или их сочетание.
+В нашем примере с зоопаркомв зоопарке были данные, необходимые для созданияосознанное решение, которое решило их проблему.
+Но что, если бы они приняли это решение без данных?
+Скажем, они просто полагались на наблюдениеи память для отслеживанияпрогноз погоды и составление штатного расписания.
+Ну это мы уже знаемне решил бы свою проблему в долгосрочной перспективе.
+Аналитика данных дала им необходимую информациюнайти наилучшее решение своей проблемы.
+В этом сила данных.
+Наблюдательность и интуициямощные инструменты и принятие решений,но они могут завести нас только тогда, когда мы делаемрешения, основанные только на наблюдении и интуиции,мы видим только часть картины.
+Данные помогают нам увидеть все это.
+Имея данные, мы имеемполная картина проблемы и ее причин,что позволяет нам найтиновые и неожиданные решениямы никогда бы не смогли увидеть раньше.
+Аналитика данных помогает компаниям принимать более обоснованные решения.
+Все начинается сбизнес-задача и вопрос, на который она пытается ответить.
+Благодаря навыкам, которые вы приобретете в ходе этой программы,вы сможете задавать правильные вопросы,спланировать лучший способ сбора и анализа данных,а затем представить его визуально, чтобы вооружить вашу команду такони могут принять обоснованное решение, основанное на данных.
+Это делает вас критически настроеннымуспех любого бизнеса, в котором вы работаете.
+Данные — мощный инструмент.
+С великой силой приходит, ну,остальное ты знаешь. 
+И ты делаешьсупер работа, принимающая всю эту информацию.
+Далее мы поговорим о вашей ответственностикак аналитик данных, чтобы убедиться, что вы собираете,анализировать и представлять данные таким образом, чтобысправедливо по отношению к людям, представленным этими данными.
