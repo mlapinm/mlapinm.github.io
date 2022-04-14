@@ -1,0 +1,65 @@
+Six phases of data analysis.
+все этапы жизненного цикла данных,пора переходить к этапам анализа данных.
+Они звучат похоже, но это две разные вещи.
+Анализ данных — это не жизненный цикл.
+Это процесс анализа данных.
+Далее мы рассмотрим каждый шагпроцесс анализа данных и какэто будет связано с вашей работой в качестве аналитика данных.
+Даже эта программа предназначена для выполнения этих шагов.
+Понимание этих связей поможетваш собственный анализ и ваша работа в этой программе.
+Вы уже узнали, что эта программа смоделированапосле этапов процесса анализа данных.
+Эта программа разделена на курсы,шесть из которых основаны на этапах анализа данных:спрашивайте, готовьте, обрабатывайте, анализируйте, делитесь и действуйте.
+Начнем с первого шага ванализ данных, фаза запроса.
+На этом этапе мы делаем две вещи.
+Мы определяем проблему, которую необходимо решить, и делаемуверены, что мы полностью понимаем ожидания заинтересованных сторон.
+Заинтересованные стороны имеют долю в проекте.
+Это люди, у которыхвложили время и ресурсы впроект и заинтересованыв результате.
+Давайте сломаем это.
+Во-первых, определение проблемы означает, что вы смотрите натекущее состояние и определитьчем оно отличается от идеального состояния.
+Обычно есть препятствие, от которого нам нужно избавиться или что-то не так, что необходимо исправить.
+Например, спортивная арена может захотетьсократить время, которое болельщики проводят в очереди за билетами.
+Препятствием является выяснить, как получитьклиенты быстрее садятся на свои места.
+Еще одна важная часть фазы запросапонимание ожиданий заинтересованных сторон.
+Первым шагом здесь являетсяопределить, кто является заинтересованными сторонами.
+Это может включать вашего менеджера,исполнительный спонсор или ваши партнеры по продажам.
+Заинтересованных сторон может быть много.
+Но то, что они все имеют вобщим является то, что они помогают принимать решения,влиять на действия и стратегии,и имеют конкретные цели, которых они хотят достичь.
+Они также заботятся о проекте, и поэтомуочень важно понимать их ожидания.
+Например, если ваш менеджер назначает вампроект анализа данных, связанный с бизнес-рисками,было бы разумно подтвердить, хотят ли онивключают все виды рисков, которые могут повлиять на компанию,или просто риски, связанные спогодные явления, такие как ураганы и торнадо.
+Общение с заинтересованными сторонами играет ключевую роль в созданииуверен, что ты продолжаешь заниматьсяи на ходу на протяжении всего проекта.
+Итак, как аналитик данных,разработка сильных коммуникативных стратегийочень важно.
+This part of the ask phase helps you keep focused on the problem itself, not just its symptoms.
+As you learned earlier, the five whys are extremely helpful here.
+In an upcoming course, you'll learn how to ask effective questions and define the problem by working with stakeholders.
+You'll also cover strategies that can help you share what you discover in a way that keeps people interested.
+After that, we'll move on to the prepare step of the data analysis process.
+This is where data analysts collect and store data they'll use for the upcoming analysis process.
+You'll learn more about the different types of data and how to identify which kinds of data are most useful for solving a particular problem.
+You'll also discover why it's so important that your data and results are objective and unbiased.
+Другими словами, любые решения, принятые на основе вашего анализавсегда должен основываться нафакты и быть честным и беспристрастным.
+Далее идет этап процесса.
+Здесь аналитики данных находят и устраняютлюбые ошибки и неточностичто может помешать результатам.
+Обычно это означает очистку данных,преобразовать его в более удобный формат,объединение двух или более наборов данных для созданияболее полная информация и устранение выбросов,которые являются любыми точками данных, которыеможет исказить информацию.
+После этого вы научитесь проверять данные, которые выподготовьтесь, чтобы убедиться, что он полный и правильный.
+На этом этапе нужно правильно продумать детали.
+Так вы еще и опечатки исправите,несоответствия или отсутствующие и неточные данные.
+В довершение всего,вы получите стратегии дляпроверка и обменваша очистка данных с заинтересованными сторонами.
+Тогда пора анализировать.
+Analyzing the data you've collected involves using tools to transform and organize that information so that you can draw useful conclusions, make predictions, and drive informed decision-making.
+There are lots of powerful tools data analysts use in their work and in this course you'll learn about two of them, spreadsheets and structured query language, or SQL, which is often pronounced "sequel.
+" The next course is based on the share phase.
+Here you'll learn how data analysts interpret results and share them with others to help stakeholders make effective data-driven decisions.
+In the share phase, visualization is a data analyst's best friend.
+So this course will highlight why visualization is essential to getting others to understand what your data is telling you.
+With the right visuals, facts and figures become so much easier to see and complex concepts become easier to understand.
+We'll explore different kinds of visuals and some great data visualization tools.
+You'll also practice your own presentation skills by creating compelling slideshows and learning how to be fully prepared to answer questions.
+Then we'll take a break from the data analysis process to show you all of the really cool things you can do with the programming language R.
+You don't need to be familiar with R or programming languages in general.
+Just know that R is a popular tool for data manipulation, calculation, and visualization.
+For our final data analysis phase, we have act.
+This is the exciting moment when the business takes all of the insights you, the data analyst, have provided and puts them to work in order to solve исходная бизнес-задача и будетдействуя в соответствии с тем, чему вы научились на протяжении всей этой программы.
+Это когда вы готовитесь к поиску работыи иметь возможность завершить тематическое исследование проекта.
+Это отличная возможность для вас собраться вместевсе, над чем вы работали на протяжении этого курса.
+Плюс добавление кейсак вашему портфолио помогает вам стоятьот других кандидатов, когда высобеседование на вашу первую работу аналитика данных.
+Теперь вы знаете различные этапыпроцесс анализа данных и то, как его отражает наш курс.
+У вас есть все, что вам нужночтобы понять, как этот курсработает, и мои коллеги по Google иЯ буду здесь, чтобы направлять вас на каждом этапе пути.
