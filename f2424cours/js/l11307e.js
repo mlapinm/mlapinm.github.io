@@ -1,4 +1,4 @@
-var l11307 = [
+var l11307e = [
 "Exploring data analyst tools.",
 "I'm looking forward to introducing you to some of the tools data analyst use each and every day.",
 "There are tons of options out there.",

@@ -1,4 +1,4 @@
-var l11404 = [
+var l11404e = [
 "Columns and rows and cells, oh my.",
 "Spreadsheets are a big part of data analytics.",
 "The sooner you make friends with spreadsheets, the better.",

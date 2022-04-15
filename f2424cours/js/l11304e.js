@@ -1,4 +1,4 @@
-var l11304 = [
+var l11304e = [
 "Stages of the data life cycle.",
 "Here's a question for you.",
 "When you think about a life cycle, what's the first thing that comes to mind?",

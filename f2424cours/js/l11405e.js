@@ -1,4 +1,4 @@
-var l11405 = [
+var l11405e = [
 "SQL in action.",
 "As you might remember, earlier we touched on the query language SQL.",
 "In this video, you'll see SQL in action and learn what you can do with it, with some examples of specific queries.",

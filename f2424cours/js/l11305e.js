@@ -1,4 +1,4 @@
-var l11305 = [
+var l11305e = [
 "Six phases of data analysis.",
 "Now that you understand all the phases of the data life cycle, it's time to move on to the phases of data analysis.",
 "They sound similar, but are two different things.",

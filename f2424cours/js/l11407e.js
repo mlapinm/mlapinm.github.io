@@ -1,4 +1,4 @@
-var l11407 = [
+var l11407e = [
 "Becoming a data viz whiz.",
 "Your data analysis toolbox is getting full.",
 "Learning about both Spreadsheets and SQL will get you far in the world of data analysis.",

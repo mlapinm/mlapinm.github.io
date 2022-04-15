@@ -12,6 +12,13 @@ p{
     /* background-color: aliceblue; */
 }
 
+.div_nav span{
+  /* border: 1px solid; */
+  border-radius: 0.6em;
+  background-color: aqua;
+  padding: 0 4px
+}
+
 .div_edit{
   display: flex;
   height: 35vh;

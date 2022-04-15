@@ -1,4 +1,4 @@
-var l11507 = [
+var l11507e = [
 "The power of data in business.",
 "As a data analyst, you'll be tackling business tasks that help companies use data.",
 "Coming up, we'll talk more about what a business task actually is, and some examples of what they might look like in real data analyst jobs.",
