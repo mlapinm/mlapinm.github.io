@@ -12,8 +12,9 @@ p{
     /* background-color: aliceblue; */
 }
 
+
 .div_nav span{
-  /* border: 1px solid; */
+
   border-radius: 0.6em;
   background-color: aqua;
   padding: 0 4px
@@ -57,7 +58,7 @@ p{
   border-bottom: 1px dotted;
 }
 
-.div_list0 p:nth-child(2n) {
+.div_list0 p:nth-child(2n+1) {
   background-color: #f0f0f0;
 }
 

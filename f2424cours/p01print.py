@@ -137,6 +137,7 @@ def make_js():
 def make_script1():
 
 
+
     list_files0 = os.listdir()
     list_files0 = [e for e in list_files0 if e[:3] == 'l11']
     list_files = [re.sub(r'.js$', '', e) for e in list_files0]
@@ -144,7 +145,7 @@ def make_script1():
     text_include = ""
     for e in list_files0:
 
-        text_include += f'<script src=\"{e}\"></script>\n'
+        text_include += f'<script src=\"js/{e}\"></script>\n'
 
     text = ''
     for i, e in enumerate(list_files):

@@ -50,6 +50,7 @@ $(() => {
 
 
       $(".div_nav").append(span)
+      $(".div_nav").append(' ')
 
 
     }
