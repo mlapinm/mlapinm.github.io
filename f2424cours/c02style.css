@@ -21,6 +21,7 @@ p{
 
 .div_edit{
   display: flex;
+  display: none;
   height: 35vh;
 }
 
@@ -41,6 +42,7 @@ p{
 }
 
 .div_table{
+  display: none;
   margin-top: 0.2em;
   height: 50vh;
   overflow: auto;
@@ -57,6 +59,10 @@ p{
 
 .div_list0 p:nth-child(2n) {
   background-color: #f0f0f0;
+}
+
+.div_list1 {
+  display: none;
 }
 
 

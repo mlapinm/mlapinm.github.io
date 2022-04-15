@@ -17,24 +17,44 @@ $(() => {
   let count1 = lines1.length
 
   function create_nav(){
-    console.log(333, items.length, items)
+
     for(let i in items){
-      console.log(i)
-      if(i%2==0){
+
+      if(i%2){
         continue
       }
 
       let span = $("<span></span>")
+      span.addClass("cl_" + i)
+
       span.text(items[i][1])
-      span.click(()=>{
-          console.log(4444, $(this))
+      span.click((e)=>{
+        let sp = $(e.target)
+        let class_name = sp.attr('class')
+        res = class_name.match(/cl_([^ ]+)/)
+        let num = res ? res[1] : 0
+        num = Number(num)
+
+
+        textList0 = items[num][0]
+        textList1 = items[num + 1][0]
+        setEdit0(items[num][0].join('\n'))
+        setEdit1(items[num + 1][0].join('\n'))
+        setTable(getEdit())
+        setLists(getEdit())
+
+
+        $(".div_head").text(sp.attr('class'))
+         
       })
 
 
       $(".div_nav").append(span)
 
-      console.log(items[i], i, span)
+
     }
+
+
   }
 
   function create(){
