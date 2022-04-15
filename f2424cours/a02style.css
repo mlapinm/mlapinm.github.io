@@ -1,0 +1,18 @@
+
+p{
+  margin: 0px;
+}
+
+.container1{
+  padding-bottom: 50px;
+}
+
+.container2{
+  position: fixed;
+  bottom: 3px;
+  background-color: rgba(245, 245, 245, 0.9);
+}
+
+.selected{
+  background-color: aqua;
+}
