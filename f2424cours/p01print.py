@@ -134,14 +134,46 @@ def make_js():
         with open(name2, 'w', encoding='utf-8') as f:
             f.write(text)
 
+def make_script1():
 
+
+
+    list_files0 = os.listdir()
+    list_files0 = [e for e in list_files0 if e[:3] == 'l11']
+    list_files = [re.sub(r'.js$', '', e) for e in list_files0]
+
+    text_include = ""
+    for e in list_files0:
+
+        text_include += f'<script src=\"js/{e}\"></script>\n'
+
+    text = ''
+    for i, e in enumerate(list_files):
+
+        with open(list_files0[i], 'r', encoding='utf-8') as f:
+            sentence = f.readline()
+            sentence = f.readline()
+            sentence = sentence.strip().strip(',').strip('"')
+            
+        text += f'items[{i}] = [{e}, \'{e}\', \'{sentence}\']\n'
+
+
+
+    # print(len(list_files), list_files[:3])
+    print(text_include)
+    print(text)
+    # print(name)
+
+    pass
 
 
 
 if __name__ == "__main__":
 
-    make_lists(l)
+    # make_lists(l)
     # make_js()
+
+    make_script1()
 
 
     print(123)

@@ -1,4 +1,6 @@
 $(() => {
+
+  
   let log1 = $('.log1')
   let log2 = $('.log2')
   let edit0 = $('.edit0')
@@ -7,12 +9,54 @@ $(() => {
   let list0 = $('.div_list0')
   let list1 = $('.div_list1')
   let lines0 = l11207e
-  // let lines1 = items[2].en
+
   let lines1 = l11207r
   let editText = ''
   
   let count0 = lines0.length
   let count1 = lines1.length
+
+  function create_nav(){
+
+    for(let i in items){
+
+      if(i%2){
+        continue
+      }
+
+      let span = $("<span></span>")
+      span.addClass("cl_" + i)
+
+      span.text(items[i][1])
+      span.click((e)=>{
+        let sp = $(e.target)
+        let class_name = sp.attr('class')
+        res = class_name.match(/cl_([^ ]+)/)
+        let num = res ? res[1] : 0
+        num = Number(num)
+
+
+        textList0 = items[num][0]
+        textList1 = items[num + 1][0]
+        setEdit0(items[num][0].join('\n'))
+        setEdit1(items[num + 1][0].join('\n'))
+        setTable(getEdit())
+        setLists(getEdit())
+
+
+        $(".div_head").text(sp.attr('class'))
+         
+      })
+
+
+      $(".div_nav").append(span)
+      $(".div_nav").append(' ')
+
+
+    }
+
+
+  }
 
   function create(){
     let textList0 = l11207e
@@ -23,6 +67,8 @@ $(() => {
     setEdit1(text1)
     setTable([text0, text1])
     setLists([text0, text1])
+
+    create_nav()
 
 
     edit0.on('input selectionchange propertychange', function() {
@@ -43,7 +89,7 @@ $(() => {
     let l1 = texts[1].split('\n')
     count1 = l1.length
     let count = count0 >= count1 ? count0 : count1
-    console.log(count)
+
     table.empty()
     for(let i=0;i<count;i++){
       let tr = $("<tr></tr>")
@@ -99,7 +145,7 @@ $(() => {
 
 
     for(e in l){
-      console.log(l[e])
+      // console.log(l[e])
     }
     let text00 = l.join('\n')
     let text01 = l12.join('\n')

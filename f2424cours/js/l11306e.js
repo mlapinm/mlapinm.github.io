@@ -1,4 +1,4 @@
-var l11306 = [
+var l11306e = [
 "Molly: Example of the data process.",
 "Regardless of what type of data analysis you're conducting, the process is generally the same.",
 "The example that I'll walk through is that of our employee engagement survey, but you could imagine that this process applies to just about any data analysis that you're going to conduct as an analyst.",

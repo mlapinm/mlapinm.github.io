@@ -1,4 +1,4 @@
-var l11506 = [
+var l11506e = [
 "Tony: Supporting careers in data analytics.",
 "For any analyst, for any person that's honestly at the early stages of their career, understanding data, respecting data and knowing how to work with data is incredibly important because, my vision is that every role in some form or fashion will involve data and its use in learning how to extract insights from it will be at the core of any critical role across any company organization.",
 "Generally in those first two years, you are developing the core skill sets that make you a fantastic generalist, and then in the next 2-5 years, you're learning about something very specific as as it relates to your job.",

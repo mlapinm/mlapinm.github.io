@@ -1,4 +1,4 @@
-var l11404 = [
+var l11404e = [
 "Columns and rows and cells, oh my.",
 "Spreadsheets are a big part of data analytics.",
 "The sooner you make friends with spreadsheets, the better.",
@@ -95,7 +95,7 @@ var l11404 = [
 "All formulas begin with this symbol.",
 "Next, we'll type in the cells we want to add together.",
 "In this case, we'll type in C2 plus C3 plus C4.",
-"Now we can press "Enter".",
+"Now we can press Enter.",
 "There it is.",
 "The formula has given us the total number of siblings represented in this dataset.",
 "We've just analyzed some data.",

@@ -1,4 +1,4 @@
-var l11504 = [
+var l11504e = [
 "The job of a data analyst.",
 "Previously, we learned about what a data analyst does and why that work is so valuable.",
 "Now, let's look at where data analysts actually do their work.",

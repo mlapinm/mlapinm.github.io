@@ -1,4 +1,4 @@
-var l11403 = [
+var l11403e = [
 "The ins and outs of core data tools.",
 "Welcome back.",
 "In the next few videos, you'll continue to explore the data analytics tools we discussed earlier, and you'll get the chance to see them in action a little bit.",

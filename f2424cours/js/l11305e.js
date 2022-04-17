@@ -1,4 +1,4 @@
-var l11305 = [
+var l11305e = [
 "Six phases of data analysis.",
 "Now that you understand all the phases of the data life cycle, it's time to move on to the phases of data analysis.",
 "They sound similar, but are two different things.",
@@ -46,8 +46,8 @@ var l11305 = [
 "To top it off, you'll gain strategies for verifying and sharing your data cleansing with stakeholders.",
 "Then it's time to analyze.",
 "Analyzing the data you've collected involves using tools to transform and organize that information so that you can draw useful conclusions, make predictions, and drive informed decision-making.",
-"There are lots of powerful tools data analysts use in their work and in this course you'll learn about two of them, spreadsheets and structured query language, or SQL, which is often pronounced "sequel.",
-"" The next course is based on the share phase.",
+"There are lots of powerful tools data analysts use in their work and in this course you'll learn about two of them, spreadsheets and structured query language, or SQL, which is often pronounced sequel.",
+"The next course is based on the share phase.",
 "Here you'll learn how data analysts interpret results and share them with others to help stakeholders make effective data-driven decisions.",
 "In the share phase, visualization is a data analyst's best friend.",
 "So this course will highlight why visualization is essential to getting others to understand what your data is telling you.",

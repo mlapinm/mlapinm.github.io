@@ -12,8 +12,17 @@ p{
     /* background-color: aliceblue; */
 }
 
+
+.div_nav span{
+
+  border-radius: 0.6em;
+  background-color: aqua;
+  padding: 0 4px
+}
+
 .div_edit{
   display: flex;
+  display: none;
   height: 35vh;
 }
 
@@ -34,6 +43,7 @@ p{
 }
 
 .div_table{
+  display: none;
   margin-top: 0.2em;
   height: 50vh;
   overflow: auto;
@@ -48,8 +58,12 @@ p{
   border-bottom: 1px dotted;
 }
 
-.div_list0 p:nth-child(2n) {
+.div_list0 p:nth-child(2n+1) {
   background-color: #f0f0f0;
+}
+
+.div_list1 {
+  display: none;
 }
 
 
