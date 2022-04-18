@@ -161,11 +161,11 @@ def make_js_name(name):
 
 def make_js():
     l = os.listdir()
-    l = [e for e in l if re.search(r'^q11\d+', e)]
+    l = [e for e in l if re.search(r'^q12\d+', e)]
     # print(l)
     for e in l:
         name = e  # 'q11513e.txt'
-        print(111)
+        # print(111)
 
         text = make_js_name(name)
         name2 = name[:name.index('.')] + '.js'
@@ -212,7 +212,7 @@ if __name__ == "__main__":
     # files_from_list(l)
 
     # make_lists(l)
-    # make_js()
+    make_js()
 
     # make_script1()
 
