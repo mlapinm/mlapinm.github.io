@@ -59,43 +59,129 @@ def files_from_list(l):
     pass
 
 l = [
-    'q12101 Introduction to problem-solving and effective questioning.',
-    'q12102 Data in action.',
-    'q12103 Nikki: The data process works.',
-    'q12104 Common problem types.',
-    'q12105 Problems in the real world.',
-    'q12106 Anmol: From hypothesis to outcome.',
-    'q12107 SMART questions.',
-    'q12108 Evan: Data opens doors.',
-    'q12201 Data and decisions.',
-    'q12202 How data empowers decisions.',
-    'q12203 Qualitative and quantitative data.',
-    'q12204 The big reveal: Sharing your findings.',
-    'q12205 Data versus metrics.',
-    'q12206 Mathematical thinking.',
-    'q12301 The amazing spreadsheet.',
-    'q12302 Get to work with spreadsheets.',
-    'q12303 Step-by-step in spreadsheets.',
-    'q12304 Formulas for success.',
-    'q12305 Spreadsheet errors and fixes.',
-    'q12306 Functions 101.',
-    'q12307 Before solving a problem, understand it.',
-    'q12308 Scope of work and structured thinking.',
-    'q12308 Scope of work and structured thinking.',
-    'q12309 Staying objective.',
-    'q12401 Communicating with your team.',
-    'q12402 Balancing needs and expectations across your team.',
-    'q12403 Focus on what matters.',
-    'q12404 Clear communication is key.',
-    'q12405 Tips for effective communication.',
-    'q12406 Balancing expectations and realistic project goals.',
-    'q12407 Sarah: How to communicate with stakeholders.',
-    'q12408 The data tradeoff: Speed versus accuracy.',
-    'q12409 Think about your process and outcome.',
-    'q12410 Meeting best practices.',
-    'q12411 Ximena: Joining a new team.',
-    'q12412 From conflict to collaboration.',
-    'q12413 Nathan: From the U.S. Marine Corps to data analytics.',
+  "q22101 Welcome to Machine Learning!.",
+  "q22102 Welcome.",
+  "q22103 What is Machine Learning?",
+  "q22104 Supervised Learning.",
+  "q22105 Unsupervised Learning.",
+  "q22118 Model Representation.",
+  "q22119 Cost Function.",
+  "q22120 Cost Function - Intuition I.",
+  "q22121 Cost Function - Intuition I.",
+  "q22122 Gradient Descent.",
+  "q22123 Gradient Descent Intuition.",
+  "q22124 Gradient Descent For Linear Regression.",
+  "q22136 Matrices and Vectors.",
+  "q22137 Addition and Scalar Multiplication.",
+  "q22138 Matrix Vector Multiplication.",
+  "q22139 Matrix Matrix Multiplication.",
+  "q22140 Matrix Multiplication Properties.",
+  "q22141 Inverse and Transpose.",
+  "q22201 Multiple Features.",
+  "q22202 Gradient Descent for Multiple Variables.",
+  "q22203 Gradient Descent in Practice I - Feature Scaling.",
+  "q22204 Gradient Descent in Practice II - Learning Rate.",
+  "q22205 Features and Polynomial Regression.",
+  "q22206 Normal Equation.",
+  "q22207 Normal Equation Noninvertibility.",
+  "q22208 Working on and Submitting Programming Assignments.",
+  "q22228 Basic Operations.",
+  "q22229 Moving Data Around.",
+  "q22230 Computing on Data.",
+  "q22231 Plotting Data.",
+  "q22232 Control Statements: for, while, if statement.",
+  "q22233 Vectorization.",
+  "q22301 Classification.",
+  "q22302 Hypothesis Representation.",
+  "q22303 Decision Boundary.",
+  "q22304 Cost Function.",
+  "q22305 Simplified Cost Function and Gradient Descent.",
+  "q22306 Advanced Optimization.",
+  "q22307 Multiclass Classification: One-vs-all.",
+  "q22319 The Problem of Overfitting.",
+  "q22320 Cost Function.",
+  "q22321 Regularized Linear Regression.",
+  "q22322 Regularized Logistic Regression.",
+  "q22401 Non-linear Hypotheses.",
+  "q22402 Neurons and the Brain.",
+  "q22403 Model Representation I.",
+  "q22404 Model Representation II.",
+  "q22405 Examples and Intuitions I.",
+  "q22406 Examples and Intuitions II.",
+  "q22407 Multiclass Classification.",
+  "q22501 Cost Function.",
+  "q22502 Backpropagation Algorithm.",
+  "q22503 Backpropagation Intuition.",
+  "q22504 Implementation Note: Unrolling Parameters.",
+  "q22505 Gradient Checking.",
+  "q22506 Random Initialization.",
+  "q22507 Putting It Together.",
+  "q22508 Autonomous Driving.",
+  "q22601 Deciding What to Try Next.",
+  "q22602 Evaluating a Hypothesis.",
+  "q22603 Model Selection and Train/Validation/Test Sets.",
+  "q22604 Diagnosing Bias vs. Variance.",
+  "q22605 Regularization and Bias/Variance.",
+  "q22606 Learning Curves.",
+  "q22607 Deciding What to Do Next Revisited.",
+  "q22618 Prioritizing What to Work On.",
+  "q22619 Error Analysis.",
+  "q22620 Error Metrics for Skewed Classes.",
+  "q22621 Trading Off Precision and Recall.",
+  "q22622 Data For Machine Learning.",
+  "q22701 Optimization Objective.",
+  "q22702 Large Margin Intuition.",
+  "q22703 Mathematics Behind Large Margin Classification.",
+  "q22704 Kernels I.",
+  "q22705 Kernels II.",
+  "q22706 Using An SVM.",
+  "q22801 Unsupervised Learning: Introduction.",
+  "q22802 K-Means Algorithm.",
+  "q22803 Optimization Objective.",
+  "q22804 Random Initialization.",
+  "q22805 Choosing the Number of Clusters.",
+  "q22901 Problem Motivation.",
+  "q22902 Gaussian Distribution.",
+  "q22903 Algorithm.",
+  "q22904 Developing and Evaluating an Anomaly Detection System.",
+  "q22905 Anomaly Detection vs. Supervised Learning.",
+  "q22906 Choosing What Features to Use.",
+  "q22907 Multivariate Gaussian Distribution.",
+  "q22908 Anomaly Detection using the Multivariate Gaussian Distribution.",
+  "q22810 Motivation I: Data Compression.",
+  "q22811 Motivation II: Visualization.",
+  "q22812 Principal Component Analysis Problem Formulation.",
+  "q22813 Principal Component Analysis Algorithm.",
+  "q22814 Reconstruction from Compressed Representation.",
+  "q22815 Choosing the Number of Principal Components.",
+  "q22816 Advice for Applying PCA.",
+  "q22901 Problem Motivation.",
+  "q22902 Gaussian Distribution.",
+  "q22903 Algorithm.",
+  "q22904 Developing and Evaluating an Anomaly Detection System.",
+  "q22905 Anomaly Detection vs. Supervised Learning.",
+  "q22906 Choosing What Features to Use.",
+  "q22907 Multivariate Gaussian Distribution.",
+  "q22908 Anomaly Detection using the Multivariate Gaussian Distribution.",
+  "q22914 Problem Formulation.",
+  "q22915 Content Based Recommendations.",
+  "q22916 Collaborative Filtering.",
+  "q22917 Collaborative Filtering Algorithm.",
+  "q22918 Vectorization: Low Rank Matrix Factorization.",
+  "q22919 Implementational Detail: Mean Normalization.",
+  "q22941 Learning With Large Datasets.",
+  "q22942 Stochastic Gradient Descent.",
+  "q22943 Mini-Batch Gradient Descent.",
+  "q22944 Stochastic Gradient Descent Convergence.",
+  "q22945 Online Learning.",
+  "q22946 Map Reduce and Data Parallelism.",
+  "q22947 Lecture Slides.",
+  "q22948 Large Scale Machine Learning.",
+  "q22961 Problem Description and Pipeline.",
+  "q22962 Sliding Windows.",
+  "q22963 Getting Lots of Data and Artificial Data.",
+  "q22964 Ceiling Analysis: What Part of the Pipeline to Work on Next.",
+  "q22965 Summary and Thank You.",
     ]
 
 def make_list(name):
@@ -174,11 +260,14 @@ def make_js():
             f.write(text)
 
 def make_script1():
+    '''
+    files with l12
+    '''
 
 
 
     list_files0 = os.listdir()
-    list_files0 = [e for e in list_files0 if e[:3] == 'l11']
+    list_files0 = [e for e in list_files0 if e[:3] == 'l12']
     list_files = [re.sub(r'.js$', '', e) for e in list_files0]
 
     text_include = ""
@@ -205,6 +294,35 @@ def make_script1():
 
     pass
 
+def del_quotes(l):
+    '''
+    del " in files with q12 texts
+    '''
+    list_files = os.listdir()
+    list_files = [e for e in list_files if e[:3] == 'q12']
+
+    k = 0
+    text = ''
+    text2 = ''
+    for e in list_files:
+        if k > 0:
+            pass
+            # break
+        with open(e, 'r', encoding='utf-8') as f:
+            text = f.read()
+            text2 = re.sub(r'"', '\'', text)
+        with open(e, 'w', encoding='utf-8') as f:
+            f.write(text2)
+         
+        k += 1
+
+    
+
+    # print(text[:700])
+    # print(text2[:700])
+    # print(list_files0)
+    print('len = ', len(list_files))
+
 
 
 if __name__ == "__main__":
@@ -212,7 +330,8 @@ if __name__ == "__main__":
     # files_from_list(l)
 
     # make_lists(l)
-    make_js()
+    # del_quotes(l)
+    # make_js()
 
     # make_script1()
 

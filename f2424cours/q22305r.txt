@@ -1,0 +1,1 @@
+Simplified Cost Function and Gradient Descent.

@@ -8,9 +8,9 @@ $(() => {
   let table = $('.table')
   let list0 = $('.div_list0')
   let list1 = $('.div_list1')
-  let lines0 = l11207e
+  let lines0 = []
 
-  let lines1 = l11207r
+  let lines1 = []
   let editText = ''
   
   let count0 = lines0.length
@@ -59,9 +59,9 @@ $(() => {
   }
 
   function create(){
-    let textList0 = l11207e
+    let textList0 = items[0][0]
     let text0 = textList0.join('\n')
-    let textList1 = l11207r
+    let textList1 = items[1][0]
     let text1 = textList1.join('\n')
     setEdit0(text0)
     setEdit1(text1)

@@ -7,17 +7,17 @@ var notes = [
       "",
       ""
     ],
-    "link": "c02index.html"
+    "link": "d11index.html"
    },
    {
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "Introduction to problem-solving and effective questioning",
       "",
       ""
     ],
-    "link": ""
+    "link": "d12index.html"
    },
    {
     "header": "",
