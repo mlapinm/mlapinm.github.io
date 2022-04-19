@@ -323,9 +323,80 @@ def del_quotes(l):
     # print(list_files0)
     print('len = ', len(list_files))
 
+def clear_text(text):
+    '''
+    remove string with: Play video
+    '''
+    clears = [
+        'Play video starting',
+        ': добавлено в выделение'
+    ]
+    text2 = text
+    for e in clears:
+        text2 = re.sub(r'\r?\n{}.+\r?\n?'.format(e), ' ', text2)
+
+    # print(text)
+    # print(text2)
+    return(text2)
+
+def test_file(name):
+
+
+    e_name = name + 'e.txt'
+    r_name = name + 'r.txt'
+
+    # print(e_name, r_name)
+    e_text = ''
+    r_text = ''
+
+    with open(e_name, 'r', encoding='utf-8') as f:
+        e_text = f.read()
+    with open(r_name, 'r', encoding='utf-8') as f:
+        r_text = f.read()
+
+    e_text2 = clear_text(e_text)
+    r_text2 = clear_text(r_text)
+
+
+    with open(e_name, 'w', encoding='utf-8') as f:
+        f.write(e_text2)
+    with open(r_name, 'w', encoding='utf-8') as f:
+        f.write(r_text2)
+    
+
+    es = e_text2.split('\n')
+    es = [e.strip() for e in es if len(e.strip()) > 0]
+    rs = r_text2.split('\n')
+    rs = [e.strip() for e in rs if len(e.strip()) > 0]
+    print(len(es), len(rs), e_name)
+
+    pass
+
+def test_files(l):
+
+    k = 0
+
+    for e in l:
+        if k:
+            pass
+            break
+
+        e = e[:e.index(' ')]
+        test_file(e)
+
+        k += 1
+    print(22)
+
+    pass
+
 
 
 if __name__ == "__main__":
+
+    test_files(l)
+
+
+
 
     # files_from_list(l)
 

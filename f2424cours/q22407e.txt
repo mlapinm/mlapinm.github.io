@@ -1,1 +1,25 @@
-Multiclass Classification.
+Multiclass Classification.In this video, I want to tell you about how to use neural networks to do multiclass classification where we may have more than one category that we're trying to distinguish amongst. In the last part of the last video, where we had the handwritten digit recognition problem, that was actually a multiclass classification problem because there were ten possible categories for recognizing the digits from 0 through 9 and so, if you want us to fill you in on the details of how to do that.
+Play video starting at ::30 and follow transcript0:30
+The way we do multiclass classification
+Play video starting at ::32 and follow transcript0:32
+in a neural network is essentially an extension of the one versus all method.
+Play video starting at ::38 and follow transcript0:38
+So, let's say that we have a computer vision example, where instead of just trying to recognize cars as in the original example that I started off with, but let's say that we're trying to recognize, you know, four categories of objects and given an image we want to decide if it is a pedestrian, a car, a motorcycle or a truck. If that's the case, what we would do is we would build a neural network with four output units so that our neural network now outputs a vector of four numbers.
+Play video starting at :1:9 and follow transcript1:09
+So, the output now is actually needing to be a vector of four numbers and what we're going to try to do is get the first output unit to classify: is the image a pedestrian, yes or no. The second unit to classify: is the image a car, yes or no. This unit to classify: is the image a motorcycle, yes or no, and this would classify: is the image a truck, yes or no. And thus, when the image is of a pedestrian, we would ideally want the network to output 1, 0, 0, 0, when it is a car we want it to output 0, 1, 0, 0, when this is a motorcycle, we get it to or rather, we want it to output 0, 0, 1, 0 and so on.
+Play video starting at :1:50 and follow transcript1:50
+So this is just like the "one versus all" method that we talked about when we were describing logistic regression, and here we have essentially four logistic regression classifiers, each of which is trying to recognize one of the four classes that we want to distinguish amongst. So, rearranging the slide of it, here's our neural network with four output units and those are what we want h of x to be when we have the different images, and the way we're going to represent the training set in these settings is as follows. So, when we have a training set with different images
+Play video starting at :2:27 and follow transcript2:27
+of pedestrians, cars, motorcycles and trucks, what we're going to do in this example is that whereas previously we had written out the labels as y being an integer from 1, 2, 3 or 4. Instead of representing y this way, we're going to instead represent y as follows: namely Yi
+Play video starting at :2:54 and follow transcript2:54
+will be either 1, 0, 0, 0 or 0, 1, 0, 0 or 0, 0, 1, 0 or 0, 0, 0, 1 depending on what the corresponding image Xi is. And so one training example will be one pair Xi colon Yi
+Play video starting at :3:4 and follow transcript3:04
+where Xi is an image with, you know one of the four objects and Yi will be one of these vectors.
+Play video starting at :3:10 and follow transcript3:10
+And hopefully, we can find a way to get our Neural Networks to output some value. So, the h of x is approximately y and both h of x and Yi, both of these are going to be in our example, four dimensional vectors when we have four classes.
+Play video starting at :3:31 and follow transcript3:31
+So, that's how you get neural network to do multiclass classification.
+Play video starting at :3:36 and follow transcript3:36
+This wraps up our discussion on how to represent Neural Networks that is on our hypotheses representation.
+Play video starting at :3:42 and follow transcript3:42
+In the next set of videos, let's start to talk about how take a training set and how to automatically learn the parameters of the neural network.
