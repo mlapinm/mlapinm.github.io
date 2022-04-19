@@ -329,7 +329,9 @@ def clear_text(text):
     '''
     clears = [
         'Play video starting',
-        ': добавлено в выделение'
+        ': добавлено в выделение',
+        'Воспроизведите видео, начиная с',
+        'Воспроизвести видео, начинающееся'
     ]
     text2 = text
     for e in clears:
@@ -379,7 +381,7 @@ def test_files(l):
     for e in l:
         if k:
             pass
-            break
+            # break
 
         e = e[:e.index(' ')]
         test_file(e)

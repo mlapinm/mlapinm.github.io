@@ -6,8 +6,10 @@ def clear_text(text):
     remove string with: Play video
     '''
     clears = [
+        #Play video starting
         'Play video starting',
-        ': добавлено в выделение'
+        ': добавлено в выделение',
+        'Воспроизведите видео, начиная с'
     ]
     text2 = text
     for e in clears:
@@ -20,11 +22,9 @@ def clear_text(text):
 
 
 text = '''
-centroid, just take one quarter of that. And now Mu2 is going to be an n-dimensional vector. Because each of these example x1, x5, x6, x10
-Play video starting at :8:52 and follow transcript8:52
-each of them were an n-dimensional vector, and I'm going to add up these things and, you know, divide by four because I have four points assigned to this cluster centroid, I end up with my move centroid step,
-Play video starting at :9:3 and follow transcript9:03
-for my cluster centroid mu-2. This has the effect of moving mu-2 to the average of the four points listed here.
+zero and theta one, and with different choices of the parameters we end up with different straight line
+Play video starting at ::31 and follow transcript0:31
+fits. So the data which are fit like so, and there's a cost 
 '''
 
 text33 = '''
@@ -34,5 +34,11 @@ text33 = '''
 
 if __name__ == "__main__":
 
-    clear_text(text)
+    text = ''
+    with open('q22120e.txt', 'r', encoding='utf-8') as f:
+        text = f.read()
+
+    text2 = clear_text(text)
+    with open('p04.txt', 'w', encoding='utf-8') as f:
+        f.write(text2)
     print(123)
