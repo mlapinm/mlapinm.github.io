@@ -361,9 +361,11 @@ def test_file(name):
 
 
     with open(e_name, 'w', encoding='utf-8') as f:
-        f.write(e_text2)
+        # f.write(e_text2)
+        pass
     with open(r_name, 'w', encoding='utf-8') as f:
-        f.write(r_text2)
+        # f.write(r_text2)
+        pass
     
 
     es = e_text2.split('\n')
@@ -394,10 +396,9 @@ def test_files(l):
 
 
 if __name__ == "__main__":
+    l = l[:2]
 
     test_files(l)
-
-
 
 
     # files_from_list(l)
