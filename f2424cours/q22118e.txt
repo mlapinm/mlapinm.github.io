@@ -10,7 +10,8 @@ Maybe fit a straight line to this data.
 Looks something like that and based on that, maybe you could tell your friend that let's say maybe he can sell the house for around $220,000.
 So this is an example of a supervised learning algorithm.
 And it's supervised learning because we're given the, quotes, "right answer" for each of our examples.
-Namely we're told what was the actual house, what was the actual price of each of the houses in our data set were sold for and moreover, this is an example of a regression problem where the term regression refers to the fact that we are predicting a real-valued output namely the price.
+Namely we're told what was the actual house, what was the actual price of each of the houses in our data set were sold for 
+and moreover, this is an example of a regression problem where the term regression refers to the fact that we are predicting a real-valued output namely the price.
 And just to remind you the other most common type of supervised learning problem is called the classification problem where we predict discrete-valued outputs such as if we are looking at cancer tumors and trying to decide if a tumor is malignant or benign.
 So that's a zero-one valued discrete output.
 More formally, in supervised learning, we have a data set and this data set is called a training set.
@@ -25,7 +26,8 @@ Let me use lowercase x to denote the input variables often also called the featu
 That would be the x is here, it would the input features.
 And I'm gonna use y to denote my output variables or the target variable which I'm going to predict and so that's the second column here.
 [inaudible] notation, I'm going to use (x, y) to denote a single training example.
-So, a single row in this table corresponds to a single training example and to refer to a specific training example, I'm going to use this notation x(i) comma gives me y(i) And, we're going to use this to refer to the ith training example.
+So, a single row in this table corresponds to a single training example 
+and to refer to a specific training example, I'm going to use this notation x(i) comma gives me y(i) And, we're going to use this to refer to the ith training example.
 So this superscript i over here, this is not exponentiation right?
 This (x(i), y(i)), the superscript i in parentheses that's just an index into my training set and refers to the ith row in this table, okay?
 So this is not x to the power of i, y to the power of i.
@@ -35,20 +37,19 @@ That's this x in the first row.
 x(2) will be equal to 1416 right?
 That's the second x and y(1) will be equal to 460.
 The first, the y value for my first training example, that's what that (1) refers to.
-So as mentioned, occasionally I'll ask you a question to let you check your understanding and a few seconds in this video a multiple-choice question will pop up in the video.
+So as mentioned, occasionally I'll ask you a question to let you check your understanding 
+and a few seconds in this video a multiple-choice question will pop up in the video.
 When it does, please use your mouse to select what you think is the right answer.
 What defined by the training set is.
 So here's how this supervised learning algorithm works.
 We saw that with the training set like our training set of housing prices and we feed that to our learning algorithm.
-Is the job of a learning algorithm to then output a function which by convention is usually denoted lowercase h and h stands for hypothesis And what the job of the hypothesis is, is, is a function that takes as input the size of a house like maybe the size of the new house your friend's trying to sell so it takes in the value of x and it tries to output the estimated value of y for the corresponding house.
+Is the job of a learning algorithm to then output a function which by convention is usually denoted lowercase h and h stands for hypothesis 
+And what the job of the hypothesis is, is, is a function that takes as input the size of a house like maybe the size of the new house your friend's trying to sell so it takes in the value of x and it tries to output the estimated value of y for the corresponding house.
 So h is a function that maps from x's to y's.
 People often ask me, you know, why is this function called hypothesis.
 Some of you may know the meaning of the term hypothesis, from the dictionary or from science or whatever.
 It turns out that in machine learning, this is a name that was used in the early days of machine learning and it kinda stuck.
 'Cause maybe not a great name for this sort of function, for mapping from sizes of houses to the predictions, that you know.
-.
-.
-.
 I think the term hypothesis, maybe isn't the best possible name for this, but this is the standard terminology that people use in machine learning.
 So don't worry too much about why people call it that.
 When designing a learning algorithm, the next thing we need to decide is how do we represent this hypothesis h.
