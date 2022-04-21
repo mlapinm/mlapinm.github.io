@@ -230,14 +230,17 @@ def make_file(name):
 
     pass
 
-
+def get_num(name):
+    n = 0
+    match = re.search(r'\d+', name)
+    n = int(match[0]) if match else 0
+    return n
+    pass
 
 
 if __name__ == "__main__":
     l0 = os.listdir()
-    l = [e for e in l0 if e[:3] == 'q22']
-
-
+    l = [e for e in l0 if e[:3] == 'q22' and get_num(e) < 22200]
 
 
     make_files(l)

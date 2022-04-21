@@ -7,8 +7,7 @@ What we're going to do is apply gradient descent to minimize our squared error c
 Now in order to apply gradient descent, in order to, you know, write this piece of code, the key term we need is this derivative term over here.
 So you need to figure out what is this partial derivative term and plugging in the definition of the cause function j.
 This turns out to be this.
-Sum from y equals 1 though m.
-Of this squared error cost function term.
+Sum from y equals 1 though m. Of this squared error cost function term.
 And all I did here was I just, you know plug in the definition of the cost function there.
 And simplifying a little bit more, this turns out to be equal to this.
 Sigma i equals one through m of theta zero plus theta one x i minus Yi squared.
@@ -25,15 +24,14 @@ If you know calculus, feel free to work through the derivations yourself and che
 But if you're less familiar with calculus, don't worry about it and it's fine to just take these equations that were worked out and you won't need to know calculus or anything like that, in order to do the homework so let's implement gradient descent and get back to work.
 So armed with these definitions or armed with what we worked out to be the derivatives which is really just the slope of the cost function j we can now plug them back in to our gradient descent algorithm.
 So here's gradient descent for linear regression which is gonna repeat until convergence, theta 0 and theta 1 get updated as you know this thing minus alpha times the derivative term.
-So this term here.
+So this term here. 
 So here's our linear regression algorithm.
 This first term here.
 That term is of course just the partial derivative with respect to theta zero, that we worked out on a previous slide.
 And this second term here, that term is just a partial derivative in respect to theta 1, that we worked out on the previous line.
 And just as a quick reminder, you must, when implementing gradient descent.
 There's actually this detail that you should be implementing it so the update theta 0 and theta 1 simultaneously.
-So.
-Let's see how gradient descent works.
+So. Let's see how gradient descent works.
 One of the issues we saw with gradient descent is that it can be susceptible to local optima.
 So when I first explained gradient descent I showed you this picture of it going downhill on the surface, and we saw how depending on where you initialize it, you can end up at different local optima.
 You will either wind up here or here.
@@ -46,10 +44,8 @@ Because there are no other local optimum, global optimum.
 So now let's see this algorithm in action.
 As usual, here are plots of the hypothesis function and of my cost function j.
 And so let's say I've initialized my parameters at this value.
-Let's say, usually you initialize your parameters at zero, zero.
-Theta zero and theta equals zero.
-But for the demonstration, in this physical infrontation I've initialized you know, theta zero at 900 and theta one at about -0.
-1 okay.
+Let's say, usually you initialize your parameters at zero, zero. Theta zero and theta equals zero.
+But for the demonstration, in this physical infrontation I've initialized you know, theta zero at 900 and theta one at about -0.1 okay.
 And so this corresponds to h(x)=-900-0.
 1x, [the intercept should be +900] is this line, out here on the cost function.
 Now, if we take one step in gradient descent, we end up going from this point out here, over to the down and left, to that second point over there.

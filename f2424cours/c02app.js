@@ -15,6 +15,7 @@ $(() => {
   
   let count0 = lines0.length
   let count1 = lines1.length
+  let nav_spans = []
 
   function create_nav(){
 
@@ -26,6 +27,7 @@ $(() => {
 
       let span = $("<span></span>")
       span.addClass("cl_" + i)
+      nav_spans.push(span)
 
       span.text(items[i][1])
       span.click((e)=>{
@@ -45,6 +47,12 @@ $(() => {
 
 
         $(".div_head").text(sp.attr('class'))
+
+        for(let e in nav_spans){
+          nav_spans[e].removeClass('clicked')
+        }
+
+        sp.addClass('clicked')
          
       })
 
