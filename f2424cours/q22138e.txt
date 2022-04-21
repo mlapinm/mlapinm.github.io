@@ -2,7 +2,8 @@ Matrix Vector Multiplication.
 In this video, I'd like to start talking about how to multiply together two matrices.
 We'll start with a special case of that, of matrix vector multiplication - multiplying a matrix together with a vector.
 Let's start with an example.
-Here is a matrix, and here is a vector, and let's say we want to multiply together this matrix with this vector, what's the result?
+Here is a matrix, and here is a vector, and let's say we want to multiply together this matrix with this vector, 
+what's the result?
 Let me just work through this example and then we can step back and look at just what the steps were.
 It turns out the result of this multiplication process is going to be, itself, a vector.
 And I'm just going work with this first and later we'll come back and see just what I did here.
@@ -17,14 +18,14 @@ So I realize that I did that pretty quickly, and you're probably not sure that y
 Here's the details of how to multiply a matrix by a vector.
 Let's say I have a matrix A and want to multiply it by a vector x.
 The result is going to be some vector y.
-So the matrix A is a m by n dimensional matrix, so m rows and n columns and we are going to multiply that by a n by 1 matrix, in other words an n dimensional vector.
+So the matrix A is a m by n dimensional matrix, so m rows and n columns 
+and we are going to multiply that by a n by 1 matrix, in other words an n dimensional vector.
 It turns out this "n" here has to match this "n" here.
 In other words, the number of columns in this matrix, so it's the number of n columns.
 The number of columns here has to match the number of rows here.
 It has to match the dimension of this vector.
 And the result of this product is going to be an n-dimensional vector y.
-Rows here.
-"M" is going to be equal to the number of rows in this matrix "A".
+Rows here. "M" is going to be equal to the number of rows in this matrix "A".
 So how do you actually compute this vector "Y"?
 Well it turns out to compute this vector "Y", the process is to get "Y""I", multiply "A's" "I'th" row with the elements of the vector "X" and add them up.
 So here's what I mean.
@@ -63,20 +64,19 @@ It turns out there's neat way of posing this, applying this hypothesis to all of
 It turns out there's a neat way to pose this as a Matrix Vector multiplication.
 So, here's how I'm going to do it.
 I am going to construct a matrix as follows.
-My matrix is going to be 1111 times, and I'm going to write down the sizes of my four houses here and I'm going to construct a vector as well, And my vector is going to this vector of two elements, that's minus 40 and 0.
-25.
+My matrix is going to be 1111 times, and I'm going to write down the sizes of my four houses here 
+and I'm going to construct a vector as well, And my vector is going to this vector of two elements, that's minus 40 and 0.25.
 That's these two co-efficients; data 0 and data 1.
-And what I am going to do is to take matrix and that vector and multiply them together, that times is that multiplication symbol.
+And what I am going to do is to take matrix and that vector and multiply them together, 
+that times is that multiplication symbol.
 So what do I get?
 Well this is a four by two matrix.
 This is a two by one matrix.
 So the outcome is going to be a four by one vector, all right.
 So, let me, so this is going to be a 4 by 1 matrix is the outcome or really a four diminsonal vector, so let me write it as one of my four elements in my four real numbers here.
 Now it turns out and so this first element of this result, the way I am going to get that is, I am going to take this and multiply it by the vector.
-And so this is going to be -40 x 1 + 4.
-25 x 2104.
-By the way, on the earlier slides I was writing 1 x -40 and 2104 x 0.
-25, but the order doesn't matter, right?
+And so this is going to be -40 x 1 + 4.25 x 2104.
+By the way, on the earlier slides I was writing 1 x -40 and 2104 x 0.25, but the order doesn't matter, right?
 -40 x 1 is the same as 1 x -40.
 And this first element, of course, is "H" applied to 2104.
 So it's really the predicted price of my first house.
@@ -84,8 +84,7 @@ Well, how about the second element?
 Hope you can see where I am going to get the second element.
 Right?
 I'm gonna take this and multiply it by my vector.
-And so that's gonna be -40 x 1 + 0.
-25 x 1416.
+And so that's gonna be -40 x 1 + 0.25 x 1416.
 And so this is going be "H" of 1416.
 Right?
 And so on for the third and the fourth elements of this 4 x 1 vector.
