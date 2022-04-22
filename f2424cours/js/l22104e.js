@@ -17,7 +17,7 @@ var l22104e = [
 "There's no fair picking whichever one gives your friend the better house to sell.",
 "But each of these would be a fine example of a learning algorithm.",
 "So, this is an example of a Supervised Learning algorithm.",
-"The term Supervised Learning refers to the fact that we gave the algorithm a data set in which the, called, "right answers" were given.",
+"The term Supervised Learning refers to the fact that we gave the algorithm a data set in which the, called, \"right answers\" were given.",
 "That is we gave it a data set of houses in which for every example in this data set, we told it what is the right price.",
 "So, what was the actual price that that house sold for, and the task of the algorithm was to just produce more of these right answers such as for this new house that your friend may be trying to sell.",
 "To define a bit more terminology, this is also called a regression problem.",

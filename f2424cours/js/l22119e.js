@@ -67,5 +67,5 @@ var l22119e = [
 "So far we've just seen a mathematical definition of this cost function.",
 "In case this function j of theta zero, theta one.",
 "In case this function seems a little bit abstract, and you still don't have a good sense of what it's doing,",
-"in the next video, in the next couple videos, I'm actually going to go a little bit deeper into what the cause function "J" is doing and try to give you better intuition about what is computing and why we want to use it.",
+"in the next video, in the next couple videos, I'm actually going to go a little bit deeper into what the cause function \"J\" is doing and try to give you better intuition about what is computing and why we want to use it.",
 ]

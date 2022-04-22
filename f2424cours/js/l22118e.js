@@ -10,7 +10,7 @@ var l22118e = [
 "Maybe fit a straight line to this data.",
 "Looks something like that and based on that, maybe you could tell your friend that let's say maybe he can sell the house for around $220,000.",
 "So this is an example of a supervised learning algorithm.",
-"And it's supervised learning because we're given the, quotes, "right answer" for each of our examples.",
+"And it's supervised learning because we're given the, quotes, \"right answer\" for each of our examples.",
 "Namely we're told what was the actual house, what was the actual price of each of the houses in our data set were sold for",
 "and moreover, this is an example of a regression problem where the term regression refers to the fact that we are predicting a real-valued output namely the price.",
 "And just to remind you the other most common type of supervised learning problem is called the classification problem where we predict discrete-valued outputs such as if we are looking at cancer tumors and trying to decide if a tumor is malignant or benign.",
