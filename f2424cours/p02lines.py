@@ -138,11 +138,14 @@ def clear_text(text):
         'Play video starting',
         ': добавлено в выделение',
         'Воспроизведите видео, начиная с',
-        'Воспроизвести видео, начинающееся'
+        'Воспроизвести видео, начинающееся',
+        '\.\.\.'
     ]
     text2 = text
     for e in clears:
         text2 = re.sub(r'\r?\n{}.+\r?\n?'.format(e), ' ', text2)
+    for e in clears:
+        text2 = re.sub(r'{}'.format(e), ' ', text2)
 
     # print(text)
     # print(text2)
@@ -150,10 +153,10 @@ def clear_text(text):
 
 def clear_file(name):
     text = ''
-    with open(name, 'r') as f:
+    with open(name, 'r', encoding='utf-8') as f:
         text = f.read()
     text2 = clear_text(text)
-    with open(name, 'w') as f:
+    with open(name, 'w', encoding='utf-8') as f:
         f.write(text2)
 
 def is_utf8(name):

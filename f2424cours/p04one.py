@@ -19,11 +19,10 @@ def make_files(l):
 
 def make_file(fr_name, to_name):
 
-    # shutil.copy(fr_name, to_name)
-    print(fr_name, to_name)
+    shutil.copy(fr_name, to_name)
 
     pp.clear_file(to_name)
-    # pp.make_list(name)
+    pp.make_list(to_name)
 
 
     # get_quantity_strings(name)
