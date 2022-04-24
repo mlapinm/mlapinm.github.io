@@ -5,6 +5,7 @@ import os
 import shutil
 
 import p02lines as pp
+import p06js
 
 def make_files(l):
     print(2, l)
@@ -21,8 +22,15 @@ def make_file(fr_name, to_name):
 
     shutil.copy(fr_name, to_name)
 
-    pp.clear_file(to_name)
-    pp.make_list(to_name)
+    step = 2
+    if step == 1:
+
+
+        pp.clear_file(to_name)
+        pp.make_list(to_name)
+
+    elif step == 2:
+        p06js.make_file(to_name)
 
 
     # get_quantity_strings(name)

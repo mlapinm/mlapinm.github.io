@@ -10,9 +10,8 @@ What I often do is therefore plot the cost function J(theta) as gradient descent
 So the x axis here is a number of iterations of gradient descent and as gradient descent runs you hopefully get a plot that maybe looks like this.
 Notice that the x axis is number of iterations.
 Previously we where looking at plots of J(theta) where the x axis, where the horizontal axis, was the parameter vector theta but this is not what this is.
-Concretely, what this point is, is I'm going to run gradient descent for 100 iterations.
-And whatever value I get for theta after 100 iterations, I'm going to get some value of theta after 100 iterations.
-And I'm going to evaluate the cost function J(theta).
+Concretely, what this point is, is  I'm going to run gradient descent for 100 iterations.
+And whatever value I get for theta after 100 iterations, I'm going to get some value of theta after 100 iterations. And I'm going to evaluate the cost function J(theta).
 For the value of theta I get after 100 iterations, and this vertical height is the value of J(theta).
 For the value of theta I got after 100 iterations of gradient descent.
 And this point here that corresponds to the value of J(theta) for the theta that I get after I've run gradient descent for 200 iterations.
@@ -23,7 +22,8 @@ So by the time you get to 400 iterations, it looks like this curve has flattened
 And so way out here 400 iterations, it looks like gradient descent has more or less converged because your cost function isn't going down much more.
 So looking at this figure can also help you judge whether or not gradient descent has converged.
 By the way, the number of iterations the gradient descent takes to converge for a physical application can vary a lot, so maybe for one application, gradient descent may converge after just thirty iterations.
-For a different application, gradient descent may take 3,000 iterations, for another learning algorithm, it may take 3 million iterations.
+For a different application, gradient descent may take 3,000 iterations, 
+for another learning algorithm, it may take 3 million iterations.
 It turns out to be very difficult to tell in advance how many iterations gradient descent needs to converge.
 And is usually by plotting this sort of plot, plotting the cost function as we increase in number in iterations, is usually by looking at these plots.
 But I try to tell if gradient descent has converged.
@@ -57,21 +57,15 @@ In some cases if the learning rate is too large, slow convergence is also possib
 But the more common problem you see is just that J(theta) may not decrease on every iteration.
 And in order to debug all of these things, often plotting that J(theta) as a function of the number of iterations can help you figure out what's going on.
 Concretely, what I actually do when I run gradient descent is I would try a range of values.
-So just try running gradient descent with a range of values for alpha, like 0.
-001 and 0.
-01.
+So just try running gradient descent with a range of values for alpha, like 0.001 and 0.01.
 So these are factor of ten differences.
 And for these different values of alpha are just plot J(theta) as a function of number of iterations, and then pick the value of alpha that seems to be causing J(theta) to decrease rapidly.
 In fact, what I do actually isn't these steps of ten.
 So this is a scale factor of ten of each step up.
 What I actually do is try this range of values.
-And so on, where this is 0.
-001.
-I'll then increase the learning rate threefold to get 0.
-003.
-And then this step up, this is another roughly threefold increase from 0.
-003 to 0.
-01.
+And so on, where this is 0.001.
+I'll then increase the learning rate threefold to get 0.003.
+And then this step up, this is another roughly threefold increase from 0.003 to 0.01.
 And so these are, roughly, trying out gradient descents with each value I try being about 3x bigger than the previous value.
 So what I'll do is try a range of values until I've found one value that's too small and made sure that I've found one value that's too large.
 And then I'll sort of try to pick the largest possible value, or just something slightly smaller than the largest reasonable value that I found.

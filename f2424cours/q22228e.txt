@@ -1,15 +1,16 @@
 Basic Operations.
 You now know a bunch about machine learning.
-In this video, I like to teach you a programing language, Octave, in which you'll be able to very quickly implement the the learning algorithms we've seen already, and the learning algorithms we'll see later in this course.
-In the past, I've tried to teach machine learning using a large variety of different programming languages including C++ Java, Python, NumPy, and also Octave, and what I found was that students were able to learn the most productively learn the most quickly and prototype your algorithms most quickly using a relatively high level language like octave.
+In this video, I like to teach you a programing language, Octave, 
+in which you'll be able to very quickly implement the the learning algorithms we've seen already, and the learning algorithms we'll see later in this course.
+In the past, I've tried to teach machine learning using a large variety of different programming languages including C++ Java, Python, NumPy, and also Octave, 
+and what I found was that students were able to learn the most productively learn the most quickly and prototype your algorithms most quickly using a relatively high level language like octave.
 In fact, what I often see in Silicon Valley is that if even if you need to build.
 If you want to build a large scale deployment of a learning algorithm, what people will often do is prototype and the language is Octave.
 Which is a great prototyping language.
 So you can sort of get your learning algorithms working quickly.
 And then only if you need to a very large scale deployment of it.
 Only then spend your time re-implementing the algorithm to C++ Java or some of the language like that.
-Because all the lessons we've learned is that a time or develop a time.
-That is your time.
+Because all the lessons we've learned is that a time or develop a time. That is your time.
 The machine learning's time is incredibly valuable.
 And if you can get your learning algorithms to work more quickly in Octave.
 Then overall you have a huge time savings by first developing the algorithms in Octave, and then implementing and maybe C++ Java, only after we have the ideas working.
@@ -60,15 +61,12 @@ And I can XOR one and zero, and that evaluates to one.
 This thing over on the left, this Octave 324.
 x equals 11, this is the default Octave prompt.
 It shows the, what, the version in Octave and so on.
-If you don't want that prompt, there's a somewhat cryptic command PF quote, greater than, greater than and so on, that you can use to change the prompt.
-And I guess this quote a string in the middle.
-Your quote, greater than, greater than, space.
+If you don't want that prompt, there's a somewhat cryptic command PF quote, greater than, greater than and so on, that you can use to change the prompt. And I guess this quote a string in the middle. Your quote, greater than, greater than, space.
 That's what I prefer my Octave prompt to look like.
 So if I hit enter.
 Oops, excuse me.
 Like so.
-PS1 like so.
-Now my Octave prompt has changed to the greater than, greater than sign.
+PS1 like so. Now my Octave prompt has changed to the greater than, greater than sign.
 Which, you know, looks quite a bit better.
 Next let's talk about Octave variables.
 I can take the variable A and assign it to 3.
@@ -77,8 +75,7 @@ And now A is equal to 3.
 You want to assign a variable, but you don't want to print out the result.
 If you put a semicolon, the semicolon suppresses the print output.
 So to do that, enter, it doesn't print anything.
-Whereas A equals 3.
-mix it, print it out, where A equals, 3 semicolon doesn't print anything.
+Whereas A equals 3. mix it, print it out, where A equals, 3 semicolon doesn't print anything.
 I can do string assignment.
 B equals hi Now if I just enter B it prints out the variable B.
 So B is the string hi C equals 3 greater than colon 1.
@@ -88,29 +85,20 @@ Let me set A equals Pi.
 And if I want to print A I can just type A like so, and it will print it out.
 For more complex printing there is also the DISP command which stands for Display.
 Display A just prints out A like so.
-You can also display strings so: DISP, sprintf, two decimals, percent 0.
-2, F, comma, A.
-Like so.
-And this will print out the string.
-Two decimals, colon, 3.
-14.
-This is kind of an old style C syntax.
-For those of you that have programmed C before, this is essentially the syntax you use to print screen.
-So the Sprintf generates a string that is less than the 2 decimals, 3.
-1 plus string.
-This percent 0.
-2 F means substitute A into here, showing the two digits after the decimal points.
+You can also display strings so: DISP, sprintf, two decimals, percent 0.2, F, comma, A. Like so.
+And this will print out the string. Two decimals, colon, 3.14.
+This is kind of an old style C syntax. For those of you that have programmed C before, this is essentially the syntax you use to print screen.
+So the Sprintf generates a string that is less than the 2 decimals, 3.1 plus string.
+This percent 0.2 F means substitute A into here, showing the two digits after the decimal points.
 And DISP takes the string DISP generates it by the Sprintf command.
 Sprintf.
 The Sprintf command.
 And DISP actually displays the string.
-And to show you another example, Sprintf six decimals percent 0.
-6 F comma A.
+And to show you another example, Sprintf six decimals percent 0.6 F comma A.
 And, this should print Pi with six decimal places.
 Finally, I was saying, a like so, looks like this.
 There are useful shortcuts that type type formats long.
-It causes strings by default.
-Be displayed to a lot more decimal places.
+It causes strings by default. Be displayed to a lot more decimal places.
 And format short is a command that restores the default of just printing a small number of digits.
 Okay, that's how you work with variables.
 Now let's look at vectors and matrices.
@@ -134,29 +122,23 @@ And this will give me a 3 by 1.
 There's a 1 by 3 vector.
 So this will be a column vector.
 Here's some more useful notation.
-V equals 1: 0.
-1: 2.
+V equals 1: 0.1: 2.
 What this does is it sets V to the bunch of elements that start from 1.
-And increments and steps of 0.
-1 until you get up to 2.
+And increments and steps of 0.1 until you get up to 2.
 So if I do this, V is going to be this, you know, row vector.
 This is what one by eleven matrix really.
-That's 1, 1.
-1, 1.
-2, 1.
-3 and so on until we get up to two.
+That's 1, 1.1, 1.2, 1.3 and so on until we get up to two.
 Now, and I can also set V equals one colon six, and that sets V to be these numbers.
 1 through 6, okay.
 Now here are some other ways to generate matrices.
-Ones 2.
-3 is a command that generates a matrix that is a two by three matrix that is the matrix of all ones.
+Ones 2.3 is a command that generates a matrix that is a two by three matrix that is the matrix of all ones.
 So if I set that c2 times ones two by three this generates a two by three matrix that is all two's.
 You can think of this as a shorter way of writing this and c2,2,2's and you can call them 2,2,2, which would also give you the same result.
-Let's say W equals one's, one by three, so this is going to be a row vector or a row of three one's and similarly you can also say w equals zeroes, one by three, and this generates a matrix.
+Let's say W equals one's, one by three, so this is going to be a row vector or a row of three one's 
+and similarly you can also say w equals zeroes, one by three, and this generates a matrix.
 A one by three matrix of all zeros.
 Just a couple more ways to generate matrices .
-If I do W equals Rand one by three, this gives me a one by three matrix of all random numbers.
-If I do Rand three by three.
+If I do W equals Rand one by three, this gives me a one by three matrix of all random numbers. If I do Rand three by three.
 This gives me a three by three matrix of all random numbers drawn from the uniform distribution between zero and one.
 So every time I do this, I get a different set of random numbers drawn uniformly between zero and one.
 For those of you that know what a Gaussian random variable is or for those of you that know what a normal random variable is, you can also set W equals Rand N, one by three.

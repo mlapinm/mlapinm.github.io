@@ -1,11 +1,14 @@
 Multiple Features.
 in this video we will start to talk about a new version of linear regression that's more powerful.
-One that works with multiple variables or with multiple features.
-Here's what I mean.
-In the original version of linear regression that we developed, we have a single feature x, the size of the house, and we wanted to use that to predict why the price of the house and this was our form of our hypothesis.
-But now imagine, what if we had not only the size of the house as a feature or as a variable of which to try to predict the price, but that we also knew the number of bedrooms, the number of house and the age of the home and years.
+One that works with multiple variables or with multiple features. Here's what I mean.
+In the original version of linear regression that we developed, we have a single feature x, the size of the house, 
+and we wanted to use that to predict why the price of the house 
+and this was our form of our hypothesis.
+But now imagine, what if we had not only the size of the house as a feature or as a variable of which to try to predict the price, 
+but that we also knew the number of bedrooms, the number of house and the age of the home and years.
 It seems like this would give us a lot more information with which to predict the price.
-To introduce a little bit of notation, we sort of started to talk about this earlier, I'm going to use the variables X subscript 1 X subscript 2 and so on to denote my, in this case, four features and I'm going to continue to use Y to denote the variable, the output variable price that we're trying to predict.
+To introduce a little bit of notation, we sort of started to talk about this earlier, I'm going to use the variables X subscript 1 X subscript 2 and so on 
+to denote my, in this case, four features and I'm going to continue to use Y to denote the variable, the output variable price that we're trying to predict.
 Let's introduce a little bit more notation.
 Now that we have four features I'm going to use lowercase "n" to denote the number of features.
 So in this example we have n4 because we have, you know, one, two, three, four features.
@@ -32,7 +35,9 @@ And if we have N features then rather than summing up over our four features, we
 Concretely for a particular setting of our parameters we may have H of X 80 + 0.
 1 X1 + 0.
 01x2 + 3x3 - 2x4.
-This would be one example of a hypothesis and you remember a hypothesis is trying to predict the price of the house in thousands of dollars, just saying that, you know, the base price of a house is maybe 80,000 plus another open 1, so that's an extra, what, hundred dollars per square feet, yeah, plus the price goes up a little bit for each additional floor that the house has.
+This would be one example of a hypothesis and you remember a hypothesis is trying to predict the price of the house in thousands of dollars, 
+just saying that, you know, the base price of a house is maybe 80,000 plus another open 1, so that's an extra, what, hundred dollars per square feet, 
+yeah, plus the price goes up a little bit for each additional floor that the house has.
 X two is the number of floors, and it goes up further for each additional bedroom the house has, because X three was the number of bedrooms, and the price goes down a little bit with each additional age of the house.
 With each additional year of the age of the house.
 Here's the form of a hypothesis rewritten on the slide.

@@ -21,8 +21,7 @@ So it asks me for my email address.
 I'm going go to the course website.
 This is an internal testing site, so your version of the website may look a little bit different.
 But that's my email address and this is my submission password, and I'm just going to type them in here.
-So I have ang@cs.
-stanford.
+So I have ang@cs.stanford.
 edu and my submission password is 9yC75USsGf.
 I'm going to hit enter; it connects to the server and submits it, and right away it tells you "Congratulations!
 You have successfully completed Homework 1 Part 1".
