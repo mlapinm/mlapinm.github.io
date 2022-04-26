@@ -64,7 +64,7 @@ def make_script1():
 
 
     list_files0 = os.listdir()
-    list_files0 = [e for e in list_files0 if e[:3] == 'l22']
+    list_files0 = [e for e in list_files0 if e[:3] == 'l13']
     list_files = [re.sub(r'.js$', '', e) for e in list_files0]
 
     text_include = ""
@@ -95,9 +95,9 @@ def make_script1():
 
 if __name__ == "__main__":
     l = os.listdir()
-    l = [e for e in l if e[:3] == 'q22' and pp.get_num(e) < 22200]
+    l = [e for e in l if e[:3] == 'q13' and pp.get_num(e) < 22200]
 
-    print(l)
+    # print(l)
     # make_files(l)
 
     make_script1()

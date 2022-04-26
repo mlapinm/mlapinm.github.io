@@ -23,11 +23,11 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "Introduction to data exploration",
       "",
       ""
     ],
-    "link": ""
+    "link": "d13index.html"
    },
    {
     "header": "",
