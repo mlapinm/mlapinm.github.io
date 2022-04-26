@@ -1,3 +1,4 @@
+Bias: From questions to conclusions3m.
 Let's kick things off by traveling back in time, well, in our minds at least.
 My real time machine's in the shop.
 Imagine you're back in middle school and you've entered a project for the science fair.
@@ -19,7 +20,8 @@ The good news is once we know and accept that we have bias, we can start to reco
 It's important to know that bias can also find its way into the world of data.
 Data bias is a type of error that systematically skews results in a certain direction.
 Maybe the questions on a survey had a particular slant to influence answers, or maybe the sample group wasn't truly representative of the population being studied.
-For example, if you're going to take the median age of the US patient population with health insurance, you wouldn't just use a sample of Medicare patients who are 65 and older.
+For example, if you're going to take the median age of the US patient population with health insurance, 
+you wouldn't just use a sample of Medicare patients who are 65 and older.
 Bias can also happen if a sample group lacks inclusivity.
 For example, people with disabilities tend to be under-identified, under-represented, or excluded in mainstream health research.
 The way you collect data can also bias a data set.

@@ -22,7 +22,7 @@ def make_file(fr_name, to_name):
 
     shutil.copy(fr_name, to_name)
 
-    step = 2
+    step = 1
     if step == 1:
 
 

@@ -19,8 +19,7 @@ In those cases, data analysts can turn to external data and apply that informati
 For instance, as health care analysts, we often partner with other healthcare organizations or nonprofits and use their data to create deeper analyses and add some more industry- level perspective.
 In an earlier video, you learned that openness has created a lot of data for analysts to use, largely through open data initiatives.
 As a reminder, openness or open data refers to the free access, usage and sharing of data.
-For example, the United States government makes hundreds of thousands of data sets available to the public on Data.
-gov.
+For example, the United States government makes hundreds of thousands of data sets available to the public on Data.gov.
 These data sets contain information on weather patterns, educational progress, crime rates, transportation, and much more.
 There are lots of reasons for these open data initiatives.
 One is to make government activities more transparent, like letting the public see where money is spent.
