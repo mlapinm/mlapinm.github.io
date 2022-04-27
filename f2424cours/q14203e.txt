@@ -1,0 +1,21 @@
+Angie: Why I love cleaning data1m.
+I am Angie.
+I'm a program manager of engineering at Google.
+I truly believe that cleaning Data is the heart and soul of data.
+It's how you get to know your data: its quirks, its flaws, it's mysteries.
+I love a good mystery.
+I remember one time I found somebody had purchased, I think it was one million dollars worth of chicken sandwiches in one transaction.
+This mystery drove me nuts.
+I had all these questions.
+Could this have really happened?
+Or maybe it was a really big birthday party?
+How did they make a million dollars worth of chicken sandwiches?
+I was cleaning my data and trying to figure out where did it go wrong.
+We ended up finding out that we'd been squaring and multiplying all of our transactions for a very specific case.
+It took us about three days to figure this out.
+I will never forget the moment when it was like, aha!
+We got to the bottom of it.
+The result is our data was cleaned, and we had this great dataset that we could use for analysis.
+But what I loved was just the mystery of it and getting to know all these weird intricacies about my dataset.
+It felt like a superpower almost, like I was a detective, and I had gone in there and I had really solved something.
+I love cleaning data!

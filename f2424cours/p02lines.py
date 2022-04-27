@@ -146,13 +146,14 @@ def make_list(name):
 
 def make_file(name):
 
+    k = 1
+    if k == 0:
+        to_utf8(name)
+        clear_file(name)
+        make_list(name)
 
-    # to_utf8(name)
-    # clear_file(name)
-    # make_list(name)
-
-
-    get_quantity_strings(name)
+    elif k == 1:
+        get_quantity_strings(name)
 
     pass
 
@@ -166,7 +167,7 @@ def get_num(name):
 
 if __name__ == "__main__":
     l0 = os.listdir()
-    l = [e for e in l0 if e[:3] == 'q13' and get_num(e) < 13700]
+    l = [e for e in l0 if e[:3] == 'q14' and get_num(e) < 15000]
 
 
     make_files(l)

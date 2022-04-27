@@ -29,7 +29,16 @@ $(() => {
       span.addClass("cl_" + i)
       nav_spans.push(span)
 
-      span.text(items[i][1])
+      name_ = items[i][1]
+      name_ = name_.substring(3)
+      name_ = name_.substring(0, name_.length-1)
+
+      span.text(name_)
+
+      console.log(span.attr('class'))
+
+
+
       span.click((e)=>{
         let sp = $(e.target)
         let class_name = sp.attr('class')
@@ -47,6 +56,7 @@ $(() => {
 
 
         $(".div_head").text(sp.attr('class'))
+        
 
         for(let e in nav_spans){
           nav_spans[e].removeClass('clicked')

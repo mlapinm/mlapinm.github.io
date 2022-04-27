@@ -59,49 +59,49 @@ def files_from_list(l):
     pass
 
 l = [
-    "q13101 Introduction to data exploration3m",
-    "q13102 Hallie: Fascinating data insights 2m",
-    "q13103 Data collection in our world3m",
-    "q13104 Determining what data to collect3m",
-    "q13105 Discover data formats5m",
-    "q13106 Understanding structured data1m",
-    "q13107 Know the type of data you're working with4m",
-    "q13108 Data table components2m",
-    "q13109 Meet wide and long data3m",
-    "q13201 Ensuring data integrity1m",
-    "q13202 Bias: From questions to conclusions3m",
-    "q13203 Biased and unbiased data2m",
-    "q13204 Understanding bias in data3m",
-    "q13205 Identifying good data sources2m",
-    "q13206 What is bad data?2m",
-    "q13207 Introduction to data ethics4m",
-    "q13208 Optional Refresher: Alex: The importance of data ethics3m",
-    "q13209 Introduction to data privacy1m",
-    "q13210 Andrew: The ethical use of data2m",
-    "q13211 Features of open data4m",
-    "q13212 Andrew: Steps for ethical data use3m",
-    "q13301 All about databases2m",
-    "q13302 Database features3m",
-    "q13303 Exploring metadata 3m",
-    "q13304 Using metadata as an analyst3m",
-    "q13305 Metadata management3m",
-    "q13306 Megan: Fun with metadata2m",
-    "q13307 Working with more data sources3m",
-    "q13308 Importing data from spreadsheets and databases 3m",
-    "q13309 Sorting and filtering5m",
-    "q13310 Setting up BigQuery, including sandbox and billing options3m",
-    "q13311 How to use BigQuery4m",
-    "q13312 BigQuery in action6m",
-    "q13401 Feel confident in your data53s",
-    "q13402 Let's get organized4m",
-    "q13403 All about file naming 2m",
-    "q13404 Security features in spreadsheets3m",
-    "q13501 Managing your presence as a data analyst1m",
-    "q13502 Why an online presence is important3m",
-    "q13503 Tips for enhancing your online presence3m",
-    "q13504 Networking know-how2m",
-    "q13505 Benefits of mentorship3m",
-    "q13506 Rachel: Mentors are key2m",
+    "q14101 Introduction to focus on integrity3m",
+    "q14102 Why data integrity is important2m",
+    "q14103 Balancing objectives with data integrity3m",
+    "q14104 Dealing with insufficient data3m",
+    "q14105 The importance of sample size3m",
+    "q14106 Using statistical power4m",
+    "q14107 Determine the best sample size 4m",
+    "q14108 Evaluate the reliability of your data5m",
+    "q14201 Clean it up!2m",
+    "q14202 Why data cleaning is important5m",
+    "q14203 Angie: Why I love cleaning data1m",
+    "q14204 Recognize and remedy dirty data4m",
+    "q14205 Data-cleaning tools and techniques6m",
+    "q14206 Cleaning data from multiple sources5m",
+    "q14207 Data-cleaning features in spreadsheets8m",
+    "q14208 Optimize the data-cleaning process14m",
+    "q14209 Different data perspectives10m",
+    "q14210 Even more data-cleaning techniques6m",
+    "q14301 Using SQL to clean data45s",
+    "q14302 Sally: For the love of SQL3m",
+    "q14303 Understanding SQL capabilities3m",
+    "q14304 Spreadsheets versus SQL4m",
+    "q14305 Widely used SQL queries6m",
+    "q14306 Evan: Having fun with SQL 2m",
+    "q14307 Cleaning string variables using SQL12m",
+    "q14308 Advanced data cleaning functions, part 16m",
+    "q14309 Advanced data-cleaning functions, part 28m",
+    "q14401 Verifying and reporting results3m",
+    "q14402 Cleaning and your data expectations5m",
+    "q14403 The final step in data cleaning8m",
+    "q14404 Capturing cleaning changes5m",
+    "q14405 Why documentation is important3m",
+    "q14406 Feedback and cleaning2m",
+    "q14501 SHOW ALL SYLLABUSSHOW ALL",
+    "q14502 About the data-analyst hiring process 1m",
+    "q14503 The data analyst job-application process6m",
+    "q14504 Creating a resume 9m",
+    "q14505 Making your resume unique3m",
+    "q14506 Joseph: Black and African American inclusion in the data industry1m",
+    "q14507 Translating past work experience4m",
+    "q14508 Kate: My career path as a data analyst3m",
+    "q14601 SHOW ALL SYLLABUSSHOW ALL",
+    "q14602 Get ready for the course challenge22s",
     ]
 
 def make_list(name):
@@ -319,14 +319,15 @@ def test_files(l):
 
 
 if __name__ == "__main__":
-    l = l[:2]
+    # l = l[:2]
 
     # test_files(l)
 
 
-    # files_from_list(l)
+    files_from_list(l)
 
-    make_lists(l)
+    # make_lists(l)
+
     # del_quotes(l)
     # make_js()
 
