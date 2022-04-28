@@ -31,8 +31,7 @@ And so you can see a strong tag that leads to a boldness.
 Let's just go ahead and look at it here in the inspect.
 We'll go down here and find like a strong tag, that's the bold.
 We've got an emphasize tag.
-And if you look a little farther you'll see there is the anchor tag, the whole anchor tag is this whole tag from the a to the /a lists.
-htm.
+And if you look a little farther you'll see there is the anchor tag, the whole anchor tag is this whole tag from the a to the /a lists.htm.
 That's where we're going to go if we click on this text right here.
 And so you can see now this is a relative link and it turns it into an absolute link and that's because the browser knows where we're at.
 And so it sort of prefixes everything up to that to the relative link.
@@ -44,10 +43,8 @@ Okay.
 So here we have, after all that, here we have the files, right?
 And so this is index.
 htm, and index.
-htm is right there and lists.
-htm.
-And so if I click here, I'll go to lists.
-htm and that'll pull this other file up.
+htm is right there and lists.htm.
+And so if I click here, I'll go to lists.htm and that'll pull this other file up.
 And so these guys are all in the same folder together.
 It just means that I can use relative links to go moving between them.
 The tag that's really becomes more important, especially when we're talking about writing code inside HTML and showing people code is the pre tag.
@@ -94,14 +91,11 @@ So you'll know this pop up in a new tab.
 And so that's where that one goes when it pops up.
 And so you can decide whether or not you want this to go in the same page, back, or in a new page.
 Then I got to close the tab to get back.
-And now I'll go back, because that's just a relative link, to lists.
-htm so I can go back and look at the next thing.
+And now I'll go back, because that's just a relative link, to lists.htm so I can go back and look at the next thing.
 Let's take a look at how images are represented.
 So this is just a paragraph that has an image in it.
-So it's a paragraph, but there's the image, src\"medium.
-jp\" if you look in my folder.
-If you look in my folder, you see the image right there, medium.
-png.
+So it's a paragraph, but there's the image, src\"medium.jp\" if you look in my folder.
+If you look in my folder, you see the image right there, medium.png.
 You don't see the suffix because Mac is trying to hide it from me.
 And so that's just, you see this space here and here.
 The image doesn't have any space.
@@ -115,10 +109,8 @@ I think of images if they're right in the middle of text they're like a giant ch
 And you can even sort of stick an image as the thing inside of a link.
 So here's the anchor tag.
 It's that bit right there, and then the anchor tag body is an image.
-And so if I click on that, it's going to go back to lists.
-htm.
-And you'll notice these all go back to lists.
-htm so I can work on the next thing, right?
+And so if I click on that, it's going to go back to lists.htm.
+And you'll notice these all go back to lists.htm so I can work on the next thing, right?
 Tables.
 Again, you're not supposed to use tables for laying out like blocks of text, which we used to do.
 We used to do things like use tables to draw borders around things, which we'll see in CSS.

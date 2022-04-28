@@ -52,8 +52,7 @@ Now when I update this one, it's going to blow up.
 I meant to break it.
 So what will happen here is I'm breaking it.
 I'm talking up here to the system.
-If I go and I run this in the autograder now, this dj4e.
-com is going to make requests to PythonAnywhere and get answers back.
+If I go and I run this in the autograder now, this dj4e.com is going to make requests to PythonAnywhere and get answers back.
 And sometimes it likes the pages that it gets and sometimes it doesn't.
 The safest thing to do is test it by hand.
 But now if I go back to the autograder.

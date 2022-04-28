@@ -63,10 +63,4 @@ We created the Python website.
 I got in touch with a bunch of people who are still active in the Python community, like Barry Warsaw.
 I think when I started there, Python 1.
 3 was about to be released.
-While I was there, we released several subsequent versions leading up to 1.
-5.
-2, which for some reason 1.
-5.
-0 was nothing but 1.
-5.
-2 remained the gold standard of Python for a very long time afterwards.
+While I was there, we released several subsequent versions leading up to 1.5.2, which for some reason 1.5.0 was nothing but 1.5.2 remained the gold standard of Python for a very long time afterwards.

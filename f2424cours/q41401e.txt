@@ -100,10 +100,7 @@ And so it's implicit, kind of like SQL, in that a body tag means for all body ta
 There's an implicit loop for the whole document and we'll see how to reduce that later so it's not always the whole document.
 But for now, a tag there by itself means every tag in this document.
 And then there's a series of rules.
-And so this is really when to apply, this is sort of what aspect, and there's a whole list of aspects that you can have, and then what you want to do, I want to make the font size 100 percent, I want to use Arial and then sans-serif, etc.
-, etc.
-, etc.
-Holy mackerel.
+And so this is really when to apply, this is sort of what aspect, and there's a whole list of aspects that you can have, and then what you want to do, I want to make the font size 100 percent, I want to use Arial and then sans-serif, etc., etc., etc. Holy mackerel.
 My little pen is undoing itself.
 And so then these end in a semicolon and you can have a bunch of these, right?
 You can have just one, you can have more.
@@ -117,9 +114,7 @@ But like for me, I'm like is it border bottom or bottom border.
 I just can't remember that stuff.
 And so I just have to have a cheat sheet whenever I work.
 And this is one cheat sheet that I happen to like.
-And these are the kind of properties that we're going to be playing with, the background color, how to align it vertically, how to align it horizontally, padding, which is space on the sides, etc.
-, etc.
-, etc.
+And these are the kind of properties that we're going to be playing with, the background color, how to align it vertically, how to align it horizontally, padding, which is space on the sides, etc., etc., etc.
 So there's just tons of CSS properties and there's tons of great documentation on each of these CSS properties with little samples all over the place.
 And I have my own samples as well that I'll do some recordings and show you, walk you through like line by line on my sample code as well.
 But this is the kind of stuff that we're going to play with in CSS.
