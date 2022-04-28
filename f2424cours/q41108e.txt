@@ -1,0 +1,103 @@
+Walkthrough: Browser Developer Mode9m.
+Hello and welcome to another walkthrough for Django for Everybody.
+In this walkthrough, we're going to talk about the browser debugger console.
+And so this is something that in the old days was only in Firefox, but eventually everybody built it in and you used to have to build a plug-in.
+And it shows up at different places.
+And so in Firefox, it's here under Tools.
+It turns out that you can kind of go to any of these things because they're just different tabs here.
+In Chrome, we do View, Developer, JavaScript Console, and then you see a similar kind of thing here, right?
+So I'm going to do it in Firefox here.
+And so you can see things like, you can see the Document Object Model, you can see the JavaScript console.
+This is little error hardly matters, it's because it's such a simple page.
+You can actually debug JavaScript code.
+You can watch the network.
+You can play with CSS, etc.
+Performance, cookies are in here.
+So there's a lot of things that you can do.
+Right now, we're at the very beginning class, so I'm just going to show you some of the most basic things here.
+I'm going to clear this out and then refresh the page.
+And so what you see here is you see each request-response cycle, right?
+And so I came up here as if I typed this.
+Let me clear it again, so you see it.
+I'm going to type this, I'm going to press Enter.
+And that tells the browser to go retrieve this page.
+So it connects to the server, www.dr-chuck.com, and gets the document page1.htm.
+This favicon.
+ico, that's basically getting this little favicon right here.
+That's the little thing that shows up in the tab bar.
+And so websites can have a file and later we will actually make a favicon.
+But what I want to show you from a request-response cycle, is you can see some detail here.
+So let's go up here, and you can see detail.
+You can see that this was the URL.
+We sent a request, a GET request.
+We got back a status code.
+Status is the first thing, 200 is an OK, 404 is Not Found, and we used HTTP version 1.1.
+They always show you the response headers first.
+So these request headers are actually part of the HTTP protocol where we are telling things like what my preferred language is, what kind of documents we can handle, and cookies that we're sending back in.
+We'll learn more about all of this stuff.
+And so this is actually the browser makes the connection to port 80, sends the GET request to the URL it's interested in.
+GET http://www.dr-chuck.com/page1.htm HTTP/1.1.
+And this is pretty much the format, accept colon, blah, blah, blah.
+And then it sends an empty line and then it's done, and then the browser sends back first a set of headers.
+You know what?
+The content type is very important.
+The size is sometimes in here.
+gzip means that it compressed it on the way.
+And so these are the response headers.
+And so if I go to an error page, notapage.htm, I'm going to clear this, and what's happening here is it's putting up a page from my hosting system.
+But the most important one here is this, and that is the 404 error.
+And so it was going, and it sent a GET request to http://dr-chuck.com/notapage.htm, and it got back a 404 Not Found.
+That 404 Not Found is a different status code that said this is a thing that's not there, 500 means the server had an error, and we'll talk about all these codes.
+But the point is that you can debug all this stuff quite nicely.
+So let me go back to page1.htm.
+Let's clear this and refresh it to make sure we got it all right.
+Okay, so we grab the page.
+And now another thing that you probably by now have figured out to be able to do is inspect element.
+So now you're actually looking at this Document Object Model, right?
+So this Document Object Model is not necessarily the code that came back from the server.
+But here in Network if I click here on GET and I look at the response, this is the response down here.
+This is what actually came back from the server.
+And then the browser parses this and turns it into what's called the Document Object Model.
+So this is the source.
+Now, just for fun here, you'll notice that I can change the Document Object Model here, right?
+\"If you are cool, you can switch to the second page\" So you'll notice the Document Object Model changed and what I saw up here changed as well.
+So this is like inspect element.
+I can do something like I can even add here, I can add some CSS, style\"color:red\" and if all goes well, there you go.
+You see I switched the color.
+This is the Document Object Model.
+Now the server was completely uninvolved in that.
+And later, we're going to write a lot of code to mess with the Document Object Model.
+So the server, it doesn't have the red in here, it didn't change this to cool.
+So this is what we originally got from the server and this is what we've got in the browser.
+And so once that page comes from the server, you or JavaScript can mess with that page.
+So it's pretty dang cool.
+Okay, so now I'm going to clear it, and I'm just going to click on this second page, which is an anchor.
+Let's inspect it, well, it's an anchor tag.
+So it's going to do another GET request.
+And so this time it went and grabbed page 2 and there's the second page, and you can go back to the first page.
+And so there's a lot of things that you can see.
+This Persist Logs is an important feature.
+That means that it keeps them across more than one request and Disable Cache means that sometimes the browser wants to keep a copy of something and you, while you're debugging, you want to say,\"Hey, go get the original every time\" 
+And so right now I am getting you starting you on very simple pages, but if you take a more complex page and I can never remember where it is, View, Developer, Network, let's go here.
+If you take a more complex page with a bunch of things in it, and you hit Refresh on this page, you will see that it does a GET request but then as it parses that GET request, it finds things like all kinds of stuff, right?
+So here this took 44 request-response cycles, 1.6 megabytes, and it took almost one second to download all that stuff, right?
+It took a second to download it.
+And so if you go, you scroll all the way up to the top, the original GET request was to this URL which was /lessons/rrc, which is the URL.
+But then if you were to look at the response, and I don't want to see that, I want to see the actual HTTP.
+So if you look at the response, you see all these URLs for more stuff, some CSS, some JavaScript, some who knows what?
+And so then what you see is you see it then retrieving all these other things that it needs to actually construct the page, some CSS, grabbed a font, it grabbed jQuery, it grabbed timeago, and it grabbed a bunch of JavaScript and fonts and this and then the translate.
+So you see this little translate thing?
+It's doing that.
+So you'll see that's how it quickly builds up to about 44 request-response cycles to produce a page.
+Now, so that's just my quick introduction to this.
+You may not see these little drop-downs like this.
+You might have to turn them on in Preferences.
+So you go into Preferences somewhere.
+I turned them on a long time ago, I probably couldn't even find it, but you might see it.
+The other thing that I would suggest is, don't use Safari, because Safari is trying to hide too much stuff, like it doesn't even show you the URL unless you click on it.
+So Safari is kind of a pain in the neck, and so I would suggest that for this class you either use Firefox or you use Chrome in addition to using Safari.
+Safari is fine for daily use, but I just find it as a debugger it's bad, which is really sad for Safari.
+They made Safari unfriendly to software developers, which means we're not going to test our stuff on Safari, which means if it breaks, too bad.
+Well, enough of that little Safari diatribe.
+Again, I hope that you found this walkthrough for Django for Everybody, as usual, helpful.
+Cheers.

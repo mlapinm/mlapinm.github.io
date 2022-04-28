@@ -1,0 +1,27 @@
+Mitchell Baker - The Mozilla Foundation3m.
+So I was laid off or fired, depending on how you want to describe it.
+And as it turned out, it wasn't really possible to take my place.
+And I continued as a volunteer and the Netscape Engineering Organization was very clear whose leadership they were most interested in following.
+And so, we had to work out a way in which the management at Netscape AOL remained.
+And I worked out sort of a way to work together enough so that they could ship the product they wanted to ship.
+But then I continued to lead the project.
+And I think that was a surprise, not so much to me, I think.
+And so I worked as a volunteer in the Mozilla project for a number of years.
+Including the years in which we shipped our first product which we called Mozilla and which we are very proud of technically.
+And for its day, many people were surprised at how good it was but it didn't have a good user experience.
+But eventually I ended up working on another open source project with Mitch Kapor for a while and that was lucky.
+He had started this open project and reached out to talk to Brendan and I about it to learn something.
+And the day that he was scheduled to come down and talk with us was the day that I was laid off and so it was an odd sort of timing- >> Explain it to you?
+>> Yeah, that was pre it was pre but.
+So I worked on that for a while and Mitch was always a supporter of Mozilla even before Firefox when he didn't like the product but he recognized that we were an important part of the ecosystem.
+And that went on until 2003 when AOL decided to stop investing in the client almost completely.
+And fortunately they knew that just killing it wasn't good, they knew enough about Mozilla and the name and the brand to think it would be good to do something with it.
+And, So eventually I ended up working with them and they- some of the people there knew Mitch as well.
+And I was working with Mitch and they knew him and so we all spend a chunk of time trying to figure out what was possible.
+And my partner Brendan was still at Netscape, very eager to make a move.
+And many of the key people we wanted were all so desperate to keep working on Mozilla.
+And so we ended up getting a $2 million seed money from AOL.
+And Mitch was helpful with that and a few other things, trademark, name Mozilla and the four giant servers which were so important to us at the time.
+And which had taken us almost 18 months to get through the purchase cycle at AOL.
+And so, I think we still have those boxes sitting around because they were so important to us at the time.
+And so in 2003, the Mozilla Foundation was formed

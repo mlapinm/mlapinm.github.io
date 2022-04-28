@@ -165,9 +165,10 @@ def get_num(name):
     pass
 
 
+
 if __name__ == "__main__":
     l0 = os.listdir()
-    l = [e for e in l0 if e[:3] == 'q14' and get_num(e) < 15000]
+    l = [e for e in l0 if e[:3] == 'q41' and get_num(e) > 41000]
 
 
     make_files(l)
