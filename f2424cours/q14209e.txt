@@ -78,7 +78,8 @@ Then we'll go to Insert and choose Chart.
 Pick a column chart as the type.
 One of these prices looks extremely low.
 If we look into it, we discover that this item has a decimal point in the wrong place.
-It should be $7.30, not 73 cents.
+It should be $7.
+30, not 73 cents.
 That would have a big impact on our total profits.
 So it's a good thing we caught that during data cleaning.
 Looking at data in new and creative ways helps data analysts identify all kinds of dirty data.

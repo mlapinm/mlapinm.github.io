@@ -1,0 +1,178 @@
+WA4E / HTML - Code Walkthrough13m.
+Hello and welcome to Web Applications for Everybody.
+In this screencast we are going to play with some of the sample code.
+You can either download it and play with it on your own computer where you can look at it in your text editor, or if you just want to browse it, you can browse it here and take a look at the version that I'm using.
+It's really been intended that you look at this in the developer tools.
+And so you can do things like say inspect element.
+And so here we are.
+This will obviously be a little more valuable even in CSS, but you can see the Document Object Model.
+Now the interesting thing here is it shows something I'm always talking about is the difference between the Document Object Model and the source code.
+So this is the Document Object Model, it's kind of stylized.
+If you look at the source code you have to say view page source.
+And so the source code, this is literally exactly what's in the file.
+And if you go look at this file in a text editor, you will see this.
+And if you're looking at it here, it doesn't quite look exactly the same.
+Some things have been done a little bit differently, they've kind of got this extra stuff.
+And this is kind of after the browser has looked at it.
+And when we start talking about JavaScript and changing some of this dynamically, you'll see this part is the Document Object Model.
+But the source never changes.
+The source is what was originally downloaded when the server sent this back to us.
+So, let's take a basic look at this.
+I'll hide this unless I need it.
+I'll go back and forth between the source.
+So we have a basic document html with a head tag and a body.
+And then a header and of course, here's our header.
+We're using default styling, and paragraphs are an important part of things.
+You can squeeze this up as much as you want.
+Whitespace sort of doesn't matter, right?
+So this whitespace kind of doesn't matter here, the fact that this has got extra space.
+It doesn't much matter.
+And so you can see a strong tag that leads to a boldness.
+Let's just go ahead and look at it here in the inspect.
+We'll go down here and find like a strong tag, that's the bold.
+We've got an emphasize tag.
+And if you look a little farther you'll see there is the anchor tag, the whole anchor tag is this whole tag from the a to the /a lists.htm.
+That's where we're going to go if we click on this text right here.
+And so you can see now this is a relative link and it turns it into an absolute link and that's because the browser knows where we're at.
+And so it sort of prefixes everything up to that to the relative link.
+And that's nice because if we look in folders, we will see that these folders are all here.
+Here, let me go find you that folder, it's pretty deep in my Later, this will all make wonderful sense to you.
+I do a lot of stuff with web.
+code, html.
+Okay.
+So here we have, after all that, here we have the files, right?
+And so this is index.
+htm, and index.
+htm is right there and lists.htm.
+And so if I click here, I'll go to lists.htm and that'll pull this other file up.
+And so these guys are all in the same folder together.
+It just means that I can use relative links to go moving between them.
+The tag that's really becomes more important, especially when we're talking about writing code inside HTML and showing people code is the pre tag.
+And so the pre tag, you know, I'll just say inspect to hop right down to where the pre tag is.
+The pre tag respects spaces, so all these spaces happen, the newlines happen, and it also shows in a monospace font.
+And you can change all these things once we get to CSS.
+But pre tag, when we're printing debug out from, not in files like this, but when we're running code sometimes it's good to print debugging out with pre tags.
+So let's go to the next page.
+And so here's a whole series of things we're going to play with.
+This is an unnumbered list, this whole thing is an unnumbered list from top to bottom.
+So when I highlight this you see the whole beginning to end of the list, then each item in the list has a start and an end li tag, right?
+Down, down, down, you know, so here's this we should learn about tables, and there's a href, there's another relative link.
+And so this is sort of my jumping off page to get to all of the all those other things, right?
+Learn about tables, etc, etc.
+And so you can see these.
+We probably use to take a look at the source code of this page.
+And so that's that's the source code that I typed in and you can see the li tags, the p tags.
+I'm putting p's inside of li's to get space.
+Let's see if I can sort of show you that.
+So if you look at this, and you look at the li tag, the li tag is that, and the paragraph is what actually creates the vertical and horizontal space, right?
+So that orange that you're seeing, that's the space that the paragraph tag has preset.
+So that's how I do that, putting paragraphs and hrefs, and so that's what this all looks like.
+So let's take a look at special characters.
+And so this is an interesting thing because it's not really what came out.
+because less than requires ampersand lt, but it's kind of processing that, so let's take a look at the source code to this one because that'll be more instructive.
+So ampersand lt, ampersand gt, ampersand amp, this is an ampersand in HTML and then just the letters amp; Semicolon is not special.
+They are only really three truly special characters, less than, greater than, and ampersand.
+And you can put all kinds of fun stuff.
+Clubs, hearts, and diamonds.
+And so you got the clubs, hearts, and diamonds, some arrows, and stuff like that.
+What's nice is browsers just have these built in, although they're not necessarily the sexiest or coolest things.
+I think what happens when I go back on this link as I go back to the list.
+So that's just special characters, and you'll notice that the default styling it says we've seen this one.
+And this is how the web worked 1,000 year, no, back in the 90s, is you sort of, oh it's kind of nice that it's turning purple.
+And you'll notice that Google does this as well when you're doing Google searches, it actually lets the links change color after you visited them.
+So let's take a look about links.
+We look at links.
+I'll view the source of this guy.
+Absolute link a href, right?
+And then /a, this is the clickable text, right, between the beginning tag and the ending tag.
+The attributes are on the beginning tag.
+Another attribute that you can add, and I do it all the time, is target\"_blan\" and that basically is the way we say open this up in a new tab.
+So you'll know this pop up in a new tab.
+And so that's where that one goes when it pops up.
+And so you can decide whether or not you want this to go in the same page, back, or in a new page.
+Then I got to close the tab to get back.
+And now I'll go back, because that's just a relative link, to lists.htm so I can go back and look at the next thing.
+Let's take a look at how images are represented.
+So this is just a paragraph that has an image in it.
+So it's a paragraph, but there's the image, src\"medium.jp\" if you look in my folder.
+If you look in my folder, you see the image right there, medium.png.
+You don't see the suffix because Mac is trying to hide it from me.
+And so that's just, you see this space here and here.
+The image doesn't have any space.
+We could add some in CSS later, but the paragraph is what's adding the space.
+Then we have just a regular old paragraph.
+You're not supposed to use the center tag, we'll get to the how to center stuff.
+So that's what that is saying right there.
+And you can have an image that's right in the middle.
+So you see where that image is.
+I think of images if they're right in the middle of text they're like a giant character and so that's that's how that works.
+And you can even sort of stick an image as the thing inside of a link.
+So here's the anchor tag.
+It's that bit right there, and then the anchor tag body is an image.
+And so if I click on that, it's going to go back to lists.htm.
+And you'll notice these all go back to lists.htm so I can work on the next thing, right?
+Tables.
+Again, you're not supposed to use tables for laying out like blocks of text, which we used to do.
+We used to do things like use tables to draw borders around things, which we'll see in CSS.
+But now that's totally verboten and you're supposed to look at tables in a way that they're, you know, nice and pretty.
+So let's do a view source here.
+So let's see, there's our table.
+our /table and a table row.
+Now let's take a look at the DOM.
+So apparently I didn't put a tbody.
+We're supposed to put a tbody in there, and I didn't do it.
+But this is the DOM, the DOM put it in.
+That's put in by the parsing and so clearly I made a little mistake in my HTML because I didn't put a tbody tag.
+And so that was added by the browser as it was parsing and reading through this like, oh, he forgot his tbody, so it just like slapped one in for me.
+And I think the mistake is this is my header row and I think that should be like a thead.
+So there I go, bad HTML, that's the story of my life.
+And I've got the rows and you'll notice that the DOM is kind of prettier.
+So sometimes I do this, the DOM is indented nicely.
+So this isn't really the source code.
+This is the data that represents this visual, right?
+It is the thing that you're seeing, but it read this from the file or from the server, parsed it, and produced the Document Object Model.
+I only say that like a million times.
+Okay, so back we go to the list.
+We're making pretty good time.
+So here's some really bad HTML.
+I'm going to view source on it.
+And again, you'll see sort of the difference between the Document Object Model.
+When you're debugging these things, you will have to sometimes view source.
+Sometimes Document Object Model will be the only way to debug it, and sometimes view source.
+So this is the one that's got bad stuff, like H1 is uppercase.
+This paragraph tag is not terminated.
+This UL tag is uppercase.
+This Ii is not terminated.
+I don't have double quotes here.
+So there's a series of mistakes that I've made in this HTML, but it looks pretty good.
+And you'll notice in the Document Object Model, it's fixed all that.
+h1 is lowercase.
+The p tag is finished.
+There are double quotes.
+Meaning the Document Object Model is not just your HTML source code, it's like the sensible parsed pretty version of the HTML source code.
+And so, you know, this ul tag, these li tags are now done.
+The ul is lowercase everything's lowercase.
+So it's like I'll take care of your mess.
+I'll patch up and fix your HTML and then I'll display it for me and make sense of it.
+So Document Object Model is not the same.
+It is sort of like a sweet awesome better version of it.
+But this is what changes that.
+So let me just show you something, how I can change the Document Object Model.
+Let's see, let me see if I can change this text.
+I changed the Document Object Model, that changes.
+But that didn't change the source code here, the source that it was retrieved to produce it, but I can change the Document Object Model.
+And later in the class we will write code that will actually change the Document Object Model.
+So let's change this.
+We'll call this be Going TO LIST yet again.
+So I can change the Document Object Model.
+So you see it changed it.
+So when we change the Document Object Model what we see in the browser changes, but the source doesn't change.
+Did I say that enough times?
+So let's click on this and go back to lists.
+Okay, so some HTML can be broken so badly so that it doesn't render it all.
+Whoops, that didn't work so well, I will I'll do a view source on it.
+And then I will let you figure out why this doesn't work, why this doesn't show.
+You take a look at the source, you figure it out.
+I hope this has been helpful to you.
+See you on the net.
+[MUSIC]

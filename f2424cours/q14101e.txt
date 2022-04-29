@@ -23,7 +23,6 @@ In our data set, each user would have a new row for each subscription type they 
 So if I had counted the number of users in a table without accounting for duplicates like this, I would have counted some users twice instead of once.
 As a result, my analysis would have been wrong, which would have led to problems in my reports and for the stakeholders relying on my analysis.
 Imagine if I told the CEO that we had twice as many customers as we actually did!
-?
 That's why clean data is so important.
 So the first step in processing data is learning about data integrity.
 You will find out what data integrity is and why it is important to maintain it throughout the data analysis process.

@@ -26,13 +26,15 @@ In this case, using as many customers as possible will show the actual differenc
 There are ways to accurately calculate statistical power, but we won't go into them here.
 You might need to calculate it on your own as a data analyst.
 For now, you should know that statistical power is usually shown as a value out of one.
-So if your statistical power is 0.6, that's the same thing as saying 60%.
+So if your statistical power is 0.
+6, that's the same thing as saying 60%.
 In the milk shake ad test, if you found a statistical power of 60%, that means there's a 60% chance of you getting a statistically significant result on the ad's effectiveness.
 \"Statistically significan\" is a term that is used in statistics.
 If you want to learn more about the technical meaning, you can search online.
 But in basic terms, if a test is statistically significant, it means the results of the test are real and not an error caused by random chance.
 So there's a 60% chance that the results of the milkshake ad test are reliable and real and a 40% chance that the result of the test is wrong.
-Usually, you need a statistical power of at least 0.8 or 80% to consider your results statistically significant.
+Usually, you need a statistical power of at least 0.
+8 or 80% to consider your results statistically significant.
 Let's check out one more scenario.
 We'll stick with milkshakes because, well, because I like milkshakes.
 Imagine you work for a restaurant chain that wants to launch a brand-new birthday cake flavored milkshake.

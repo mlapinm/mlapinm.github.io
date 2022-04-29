@@ -1,0 +1,16 @@
+var l41304e = [
+"Tim Berners Lee - Inventor of HTML and HTTP1m.",
+"Last month I was off in Boston for the fourth annual World Wide Web Conference and I had the opportunity to talk to the inventor of the World Wide Web, Tim Berners-Lee, and I asked him a little bit about where are we going with this Web stuff.",
+"We have just a little bit of footage from Tim telling us where that's going to be.",
+"You haven't seen nothing yet.",
+"But you wait until people assume the Web.",
+"When the Web becomes something you can assume, when the infrastructure is all laid down and we have an information space, then it will be time for the next revolution in tune is what happens.",
+"It's hard to imagine a greater revolution than what we've seen.",
+"I mean, I go to the smallest places and everybody's putting up a Web page.",
+"Right.",
+"The Web could only take place.",
+"The Web revolution could only take place because the Internet, which had been a quieter, smaller revolution, but that had been the Internet itself quietly being deployed throughout the world, had happened because the Internet was something people could assume, the Web revolution could take place.",
+"The Web is something you can assume, then maybe a cultural revolution, and I say a cultural revolution, unique cultural revolution [inaudible] , or maybe we'll find ways of doing things better that we haven't imagined.",
+"Pretty neat, Rich.",
+"One of the things that I liked about it was, he just said his idea was the next step is something completely different, a cultural revolution, as compared to just a little more technology.",
+]
