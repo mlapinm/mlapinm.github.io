@@ -75,10 +75,12 @@ And then, because you were often scanning and searching the whole web, because t
 So you could sort of slowly but surely work your way through the whole Internet as it existed back in the old days and keep track of the ones so you didn't have to go back to the ones that you'd seen before.
 And that was a absolute link and here's one with a relative link and that assumes that we are now in the same folder, same directory on the server, where we have a href.
 And so here's the start tag, here's the end tag, and then First Page is the clickable stuff.
-And you'll note that that is a purple link because I have already been there because page1.htm was exactly where I just came from.
+And you'll note that that is a purple link because I have already been there because page1.
+htm was exactly where I just came from.
 And so you click on that and you can go back and forth.
 And those are the pages we played with in the HTTP lecture.
-And so these absolute references are references that start with http or https or whatever, and relative references don't and so that basically means that this page1.htm file has to be in the same folder as whatever file we happen to be viewing right now on the same server.
+And so these absolute references are references that start with http or https or whatever, and relative references don't and so that basically means that this page1.
+htm file has to be in the same folder as whatever file we happen to be viewing right now on the same server.
 So if you want to switch folders or switch servers, you have to use absolute references.
 And if you are just moving between files on the same server, you can use relative references.
 Images are a lot of fun.
@@ -90,7 +92,8 @@ In this case, it's this paragraph is what we're seeing and you can see that this
 You've got to be careful because the images can be really big.
 That's why I made a tiny image.
 And you could even, for example, in this case I have an anchor tag and the clickable part of the anchor tag is an image.
-So if you click right there, that will move you to lists.htm.
+So if you click right there, that will move you to lists.
+htm.
 And so you can make an image be a hypertext reference as well.
 Now we're going to do much more with these things and this is just, at this point, the basics.
 Lists are an important part of HTML.
@@ -101,7 +104,9 @@ And I want a little bit of spacing.
 If you don't put them in paragraphs, you don't quite get the default spacing.
 These blank lines are really coming from the paragraphs, so I'm putting a list of paragraphs, basically.
 It doesn't have to be a list of paragraphs, you could make a little denser list with a list of links or something, but I'm putting paragraphs in.
-And so you can see that I have li to end li, li to end li, I'm putting some links in here, etc., etc.So dot dot dot dot dot.
+And so you can see that I have li to end li, li to end li, I'm putting some links in here, etc.
+, etc.
+So dot dot dot dot dot.
 And it puts all the bullets in, it does the indenting automatically.
 We'll see in a bit how we can control all that formatting and do different things if we want to do those different things.
 But for now, we're just going to play with the default formatting and learn the HTML, which is our way of representing that we want a list on the screen, but we're not so fancy about exactly how it's supposed to look.
