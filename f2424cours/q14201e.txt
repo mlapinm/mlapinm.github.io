@@ -4,8 +4,7 @@ Can you guess what inaccurate or bad data costs businesses every year?
 Thousands of dollars?
 Millions?
 Billions?
-Well, according to IBM, the yearly cost of poor-quality data is $3.
-1 trillion in the US alone.
+Well, according to IBM, the yearly cost of poor-quality data is $3.1 trillion in the US alone.
 That's a lot of zeros.
 Now, can you guess the number one cause of poor-quality data?
 It's not a new system implementation or a computer technical glitch.
