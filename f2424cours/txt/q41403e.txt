@@ -1,0 +1,145 @@
+WA4E/CSS - Cascading Style Sheets (Part 3)13m.
+So welcome back.
+Now, we're going to talk about making our stuff look a little prettier with images and how we can play with images, colors, and fonts.
+So CSS and images are a lot of fun.
+We can fool around with them, we can move them around.
+Actually, this for me, years ago, was the thing that in 1994 that made me fall in love with the World Wide Web.
+So what made me fall in love with the World Wide Web was the ability to take a picture of me, and I love pictures of me, then float it to the right, and then I put a little border around here.
+So that's what I've done with CSS.
+So let's take a look at how I've done that.
+So if you look inline here, the navigation, which I'll show you when I go through the code walkthrough, how the navigation works.
+But at this point, the end of the navigation is right here, and I put this image in.
+So if you were to watch this inline, the image is right there.
+But what I do is, when I say float, and there's other things that we'll see when we start looking at fixed and absolute positions, you can pull it out of the regular stream.
+And so this is like pulled out of here, it's as if it didn't exist.
+And it floats to the right, then it's vertically aligned.
+So the next thing you see is this header 1.
+Oh there's a typo there, I've got to fix that.
+So I'll pretend that that was an h1 there, but that's okay.
+So this header at quirks mode, I should run this all through the validator to make sure I'm okay.
+But okay.
+So the top box of this CSS and images h1 is right here.
+And then this floats over, but then it top aligns.
+Now you can change this alignment if you like, but it top aligns here.
+And then it actually looks at the width, in this case, the width of the picture, but you can also control the width up here in the CSS.
+And then it carves out this space and then I do a margin of 1em.
+So you sort of sometimes wish they would put default formatting on, but then they kind of tend not to put default formatting on, because if they did, then you'd have to turn that off.
+So I wanted some whitespace and so I had to put some whitespace around it.
+And so I said,\"I'd like a margin of 1em\" and so that puts a little bit of space here, and here, and actually here as well.
+So you see that this lines up over there and then that talks about what is a 1em.
+I could've said five pixels, 5px, and that would have been fine.
+But 1em is basically the width of the letter m, roughly.
+It is a width that changes with the size and nature of the font.
+I think of it as the width of an m and I think that might be a soft definition of it, but I don't think it's a precise definition of it.
+But that's what I did.
+So float right hoists it and sends it over here and then shoves this over so that it reserves this space the text is wrapped, basically.
+And then I held out some space just for prettiness, right?
+And so that's like CSS is making it look pretty.
+Now, what happens here is, sometimes you want to basically force, after this float has happened, something back to the left margin.
+And there's this clear equals all that says,\"clear any float\" is what it's really saying.
+And so it means that even though this, if it wasn't for clear equals all, this next paragraph would have been kind of up in here, and then maybe it would have wrapped if it was long enough.
+And when you play with this, you can resize it and see how the wrapping changes.
+But no matter what the size is, after the br clear equals all, this is going to format back to the left nav, right?
+So that clears that hanging wrap.
+But you don't have to, you could not do this and then it would wrap and wrap and and it'll get longer it and would continue on.
+But if you want control over that, you can with the br clear equals all.
+And of course, you can have images right inline and this is just from the HTML bit here, there's nothing fancy CSS here, images kind of are like big characters.
+I sized that one so it sort of fit nicely and you can even make this a clickable link.
+But that's really just this part, here is just HTML, not CSS.
+But I could've if I wanted to change the width and the height of this.
+That'd be kind of fun.
+Make this guy be like the width of an em, and then you'd see it more like a character.
+So there's a bunch of colors, and the colors have to do with there's the simple thing for us simple folks.
+We just put in things like red and green and stuff like that, and especially if you're doing a developer and you're just trying to get basic stuff working.
+I often use colors in my testing, like put the border red, I do that all the time to say where is that that div at anyway?
+So I'll throw a one-pixel border around it, red border.
+Oh, that's where it is.
+Although the Chris Pederick plug-in has a thing where it puts one-pixel borders around everything for you automatically, but whatever.
+These are not necessarily the most graphically beautiful colors, even though I like them because they're super primary in terms of primary colors and strong.
+And you'll see that I kind of use those colors in my slides a lot, because I'm not a graphic artist, of course.
+I just like, oh, the greenest I can be is good.
+So there's 16 official colors and they're here.
+Once you get a little more sophisticated, you can use precise colors from like, I think this is a 32-bit.
+Precise colors are the ones that start with pound sign, and these are hexadecimal numbers.
+These two numbers are effectively zero through 255, but they're in hex.
+So hex is like a, b, c, d, e, f are actually numbers.
+Zero through nine, and this is actually 10, 11, 12, 13, this is 15.
+And so e is bigger than nine, and f is bigger than e.
+But basically these are zero through 256.
+It's a three-tuple of zero through 256 numbers.
+And so the more red you put in, the higher this is.
+The more green you put in, the higher that is.
+And the more blue you put in, the higher that is.
+So RGB, red, green, blue.
+And if you're playing with like a slider inside your UI, you might be changing this, but you're just changing these numbers ultimately.
+And so you can find these things.
+White is all f's, so if you turn it all on, it's white.
+If you turn it all off, it's black.
+The absence of color is black.
+Red, green.
+So you turn that's max, max, and max, and so you can make sort of a pure red, pure green, and pure blue.
+Picking these advanced colors is sort of way beyond my ability as a graphic artist, and people will pick colors, there are sites that help you pick palettes for your pages, etc., etc., etc.
+Sometimes these colors can have a transparency and there's a fourth set of two numbers that have to do with how transparent the color might be.
+So fonts are also important.
+The default font is a Times Roman, because that's what computers had in 1994.
+And I think they're ugly, especially on screens.
+They're not so bad on print, but they're ugly on screens.
+And so I tend to want a sans serif font.
+And maybe they have changed and structured the default to sans serif.
+I just change it to sans serif all the time I want.
+Now if you look at fonts, the font family is kind of a special tag in that you ask it a set of fonts.
+And what you're really doing is you're setting a priority.
+And the problem is depending on whether you're on Windows or Mac, or which version of Windows or which browser or what fonts they've had installed, fonts might not be there.
+And so what you basically do is you basically say, okay, I would like this.
+I think this is a Microsoft font, and if that font's not there then I would like this font, and I think that might be also a Microsoft font.
+If that font's not there, then there's Arial.
+See how much I know about graphic arts?
+I have no idea.
+And I think this might be a Mac font.
+If that font doesn't work, default into the fallback font sans-serif.
+And there is always going to be a serif font Times New Roman-like, sans serif Arial-like, Monospace which is Courier-like, Cursive and Fantasy, which are whatever.
+So all browsers are supposed to have those fallback fonts, and so you tend to see them here at the very end.
+And so when you see me, I usually will say Arial, sans-serif, or something like that, just to get sans-serif.
+Although it's quite common, the more sophisticated the page is, the more likely.
+And the other thing that's increasingly the case is people are downloading fonts and having special beautiful web fonts, and then they download them and then they put that font in here, but then they probably still have fallback fonts.
+So font family is kind of a weird, a unique, and a glorious thing that leads to some really gorgeous web pages, because so much graphic arts work is going into making web pages beautiful, and we're going way beyond the operating system installed fonts and having pages that download their own fonts.
+Things that you can do is set the things to bold, italic, text decoration.
+Remember, links have underlines and we can turn them on or off.
+Font sizes are kind of troublesome in that you can set them to pixels, but then you're in danger if you get to a certain screen size or people start zooming the screen and stuff, and so you can tend to use these relative ones, but they're not as guaranteed as you might like them to be.
+So these are a little bit tricky.
+Absolute font sizes are a little bit dangerous.
+I tend to just go like,\"Here's my font, here's the one that's a little larger, here's a little smaller\" if I need that.
+So most of the time, I'm tending to do things that are like smaller.
+If I'm like putting like a copyright statement and I don't want to distract from the main page, I'll just make it a little small.
+I'll say,\"Okay, make this small or extra small\" and what if it doesn't turn out to be that much smaller?
+It doesn't matter.
+So I'm not an expert in how to use those.
+I tend to use them as simply as I possibly can because they're not as predictable as it would be nice if they were.
+So links were a big part of the early web, and it's called the HyperText Markup Language, Hypertext Transport Layer, hypertext, hypertext, hypertext.
+And so links got really special treatment.
+They used to be blue before you clicked on them, and purple after you clicked on them.
+The blue was to jump out at you and say,\"Please click me\" And the purple was to say,\"I've been there\" Because a lot of what you did in the early web is you wandered from place to place to places like,\"Oh, I've found a new thing.
+Let me explore this\" And so you were always like exploring by clicking links.
+Once we got to the point where people assumed the web, these links didn't need to be blue and garish colors to teach us these things, because people just clicked on everything.
+And so it became more important to make things pretty.
+So we have a lot of control as to how we style links.
+We can say the a tag, we've already colored an a tag with just the a at the top.
+You can basically say, an unvisited link is supposed to have the color black, after the visit, it's supposed to be gray, while you're hovering over top of it, it's supposed to have text decoration and none and be white with a background of navy.
+And then active is not so heavily used.
+It's once you've clicked on the link while the page is loaded.
+So it's a way to kind of maybe disable it or turn it a color so people think,\"Oh, I'd better wait until this next page loads\" And so when I do the recording, you'll see this.
+It's a lot easier to see this dynamically.
+And so there's a whole bunch more samples that I have, and I'll record some walkthroughs of every single one of the samples, and so you can take a look at that at Web Applications for Everybody or in the recordings.
+So this has been a zoom through CSS.
+CSS is quite the art and science, and it's evolutionary, and people specialize in this.
+They're very good at it.
+It's a modern form of graphic arts.
+The basics are there, and I think every programmer who does anything on the web should know the basics of HTML.
+They keep moving things better with things like nav tags and Bootstrap, etc.
+And while there will always be like edgy new things in CSS.
+So you sometimes, you'll see CSS with like these Moz, fields, which are for Mozilla, for the Firefox, but people are always pushing that boundary and before you couldn't put rounded corners on things, but then the browsers added extensions to put rounded corners on things, and then everybody kind of agreed on that.
+So CSS is kind of always going to get better and better and better because for the mobile and desktop, they really want to create as beautiful an experience as possible and use standards wherever possible.
+And so the basics are there.
+You can do so many wonderful things, especially if you pull in something like a Bootstrap that just kind of cleans up the rough edges of HTML, and makes it generally pretty, and takes a lot of responsibility off of you.
+But you can certainly make a lifetime study of CSS if you like.
+So I hope you found this useful, I will see you on the net.

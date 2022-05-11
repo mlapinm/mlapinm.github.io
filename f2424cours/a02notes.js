@@ -34,6 +34,26 @@ var notes = [
     "title": "",
     "card-text": [
       "",
+      "integrity",
+      "d14index"
+    ],
+    "link": "d14index.html"
+   },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": ""
+   },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "",
       "",
       ""
     ],
@@ -49,7 +69,57 @@ var notes = [
     ],
     "link": "d22index.html"
    },
-  {
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": ""
+   },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "Django for evrybody",
+      "d41index.html",
+      ""
+    ],
+    "link": "d41index.html"
+   },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": ""
+   },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": ""
+   },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": ""
+   },
+   {
     "header": "",
     "title": "",
     "card-text": [

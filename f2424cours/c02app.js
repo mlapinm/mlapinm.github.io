@@ -17,7 +17,13 @@ $(() => {
   let count1 = lines1.length
   let nav_spans = []
 
+  function head_line(num){
+    let s = `${num} ${items[num][1]} ${items[num][2]} ${items[num][0].length}`
+    return s
+  }
+
   function create_nav(){
+    $(".div_head").text(head_line(0))
 
     for(let i in items){
 
@@ -34,9 +40,6 @@ $(() => {
       name_ = name_.substring(0, name_.length-1)
 
       span.text(name_)
-
-      console.log(span.attr('class'))
-
 
 
       span.click((e)=>{
@@ -55,7 +58,7 @@ $(() => {
         setLists(getEdit())
 
 
-        $(".div_head").text(sp.attr('class'))
+        $(".div_head").text(head_line(num))
         
 
         for(let e in nav_spans){

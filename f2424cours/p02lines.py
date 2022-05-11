@@ -112,15 +112,22 @@ def make_files(l):
 
     # print(names)
 
+prev_len = 0
+num_line = 0
 def get_quantity_strings(name):
 
+    global prev_len, num_line
     text = ''
     with open(name, 'r', encoding='utf-8') as f:
         text = f.read()
     lines = []
     lines = text.split('\n')
-
-    print(name, len(lines), len(text))
+    it_len = len(lines)
+    a_out = '----' if it_len != prev_len and num_line%2 != 0 else ''
+    print(name, it_len, len(text), a_out)
+    prev_len = it_len
+    num_line += 1
+    
 
 def make_list(name):
     '''
@@ -168,7 +175,7 @@ def get_num(name):
 
 if __name__ == "__main__":
     l0 = os.listdir()
-    l = [e for e in l0 if e[:3] == 'q41' and get_num(e) > 41000]
+    l = [e for e in l0 if e[:3] == 'q14' and get_num(e) < 41000]
 
 
     make_files(l)
