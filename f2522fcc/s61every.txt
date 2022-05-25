@@ -1,0 +1,1486 @@
+101 WEEK 1 Introducing data analytics
+Data helps us make decisions in everyday life and in business. In this first part of the course, you’ll learn how data analysts use data analytics and the tools of their trade to inform those decisions. You’ll also discover more about this course and the overall program expectations.
+103 Welcome to the Google Data Analytics Certificate9m
+104 Introduction to the course4m
+Data analytics
+The science of data
+Data
+A collection of facts
+Finance
+Healthcare
+Communications
+Government
+Consumer produc
+And lots more!
+
+Computer + Your Brain + Your Skills + Your Traits = Job Success
+
+Ask
+Prepare
+Process
+Analyze
+Share
+Act
+
+Program features
+•	Video vignettes
+•	Data journal
+•	Readings
+•	Activities
+•	Discussion prompts
+Question
+Fill in the blank: Data is a collection of____ that can be used to draw conclusions, make predictions, and assist in decision-making.
+Q concepts
+Q thoughts
+(•) facts
+Q ideas
+
+Data is a collection of facts that can be used to draw conclusions, make predictions, and assist in decision-making.
+
+105 Data analytics in everyday life4m
+Improve processes
+Identify opportunities and trends
+Launch new products
+Serve customers
+Make thoughtful decisions
+Data analysis
+The collection, transformation, and organization of data in order to draw conclusions, make predictions, and drive informed decision-making
+
+106 Cassie: Dimensions of data analytics4m
+"A data analyst is an explorer, a detective and an artist all rolled into one."
+“When you're considering data science and you're choosing which area to specialize in, I recommend going with your personality.”
+“Don't worry about right answers, see how quickly you can unwrap this gift and find out if there's anything fun in there.”
+
+107 What is the data ecosystem? 4m
+What is the data ecosystem?
+Data ecosystems
+The various elements that interact with one another in order to produce, manage, store, organize, analyze, and share data
+Cloud
+A place to keep data online, rather than a computer hard drive
+Question
+In data analytics, what is the term for elements that interact with one another in order to produce, manage, store, organize, analyze, and share data? (reminder: be sure to scroll down to see all options!)
+Q Data compositions
+Q Data storage systems
+(.) Data ecosystems
+Q Data maps
+Data scientists
+Data analysts
+Data science
+Creating new ways of modeling and understanding the unknown by using raw data
+Data analysis
+The collection, transformation, and organization of data in order to draw conclusions, make predictions, and drive informed decision-making
+Data analytics
+The science of data
+
+
+108 How data informs better decisions4m
+How data informs better decisions
+Identify the real-world examples of how a company might make data-driven decisions. Select all that apply.
+s Choosing e-commerce solutions based on customer shopping preferences
+Correct
+Real-world examples of making data-driven decisions include suggesting new music to a customer, scheduling a certain number of restaurant employees to work, and choosing e-commerce solutions based on established facts. Data-driven decision-making is using facts to guide business strategy.
+Making spending decisions based on the gut instinct of the company accountant
+s Suggesting new music to a customer based on their listening history
+Correct
+Real-world examples of making data-driven decisions include suggesting new music to a customer, scheduling a certain number of restaurant employees to work, and choosing e-commerce solutions based on established facts. Data-driven decision-making is using facts to guide business strategy.
+s Scheduling a certain number of restaurant employees to work based on the average number of lunch-goers per day
+Correct
+Real-world examples of making data-driven decisions include suggesting new music to a customer, scheduling a certain number of restaurant employees to work, and choosing e-commerce solutions based on established facts. Data-driven decision-making is using facts to guide business strategy.
+Ask questions and define the problem.
+Prepare data by collecting and storing the information.
+Process data by cleaning and checking the information.
+Analyze data to find patterns, relationships, and trends.
+Share data with your audience.
+Act on the data and use the analysis results.
+
+109 What to expect moving forward1m
+What to expect moving forward
+Did you know that learners tend to succeed and get more out of the program if they set their intention to complete it upfront?
+Complete your commitment statement below, and reach your goals. This is just for you and is not graded.
+I commit to my goal to complete the Google Data Analytics Professional Certificate.
+I choose to complete the Google Data Analytics Professional Certificate because...
+When I run into obstacles or lack of motivation at some point during the program, I will...
+Finish the sentence: what will you do or say to motivate your future self?
+I need to take question about eggs and basket.
+I will have R, python, machine leaning.]
+
+110 Program description and course syllabus20m
+111 Learning Log: Think about data in daily life20m
+112 Helpful resources to get started 20m
+113 Deciding if you should take the speed track20m
+114 Optional: Your diagnostic quiz score and what it means10m
+115 Case Study: New data perspectives20m
+116 Learning Log: Consider how data analysts approach tasks20m
+117 Data and gut instinct10m
+118 Origins of the data analysis process20m
+119 Program surveys10m
+120 Discussion forums20m
+121 Get to know your classmates20m
+122 Glossary: Terms and definitions 10m
+123 Optional: Familiar with data analytics? Take our diagnostic quiz20m
+124 Test your knowledge on the data ecosystem8m
+125 Test your knowledge on proper use of the discussion forum6m
+Optional: Familiar with data analytics? Take our diagnostic quiz
+Total points 10
+Question 1
+A clothing retailer collects and stores data about its sales revenue. Which of the following would be part of its data ecosystem? Select all that apply.
+v The cloud that store its database
+The databases of competing retailers 
+v Records of its inventory
+v The database of sales revenue
+Question 2
+What is the process of guiding business strategy using facts?
+Identification of data and decisions
+Strategic improvement
+Analytical planning
+v Data-driven decision-making
+Question 3
+Fill in the blank: Curiosity, understanding context, having a technical mindset, data design, and data strategy are _____. They enable data analysts to solve problems using facts.
+v analytical skills
+thought processes
+personal insights
+business skills
+Question 4
+The owner of a skate shop notices that every time a certain employee has a shift, there are higher sales numbers at the end of the day. After some investigation, the owner realizes that since the employee was hired, the store earns 15% more each month. In this scenario, the manager used which quality of analytical thinking?
+v Correlation
+-Big-picture thinking
+Problem-orientation 
+-Visualization
+Question 5
+Gap analysis is a process that could help accomplish which of the following tasks? Select all that apply.
+Spread awareness about income inequality based on local salaries
+v Reduce a company’s carbon footprint based on its current emissions
+vImprove accessibility for an educational app based on its current functionality
+v Increase the efficiency of a car manufacturer based on its current assembly process
+Question 6
+An advertising firm has used insights from its analytics team to create a strategy for improving sales. Now, they implement a plan to increase annual revenue. The firm is at which step of the data analysis process?
+Analyze
+Share
+Process
+v Act
+Question 7
+A data analyst adds descriptive headers to columns of data in a spreadsheet. How does this improve the spreadsheet? 
+v It adds context
+It eliminates unnecessary details
+It improves the aesthetic appeal
+It clarifies the business strategy 
+Question 8
+This is a selection from a spreadsheet that ranks the 10 most populous cities in North Carolina. To alphabetize the county names in column D, which spreadsheet tool would you use?
+Name range
+v Sort range
+Organize range
+Alphabetize range
+Question 9
+You are querying a database of manufacturing company suppliers. The column name for supplier identification numbers is supplier_id. What is the correct clause to retrieve only data about the supplier with identification number 85317?
+FROM supplier_id 85317
+SELECT supplier_id 85317
+v WHERE supplier_id = 85317
+COLUMN supplier_id = 85317
+Question 10
+Imagine you are sharing your data with a company stakeholder. Why might you display data with a data visualization instead of a table? Select all that apply.
+v It helps them identify trends more quickly
+It thoroughly describes each data point
+v It’s aesthetically pleasing
+v It’s easy to understand
+----
+Test your knowledge on the data ecosystem
+Total points 4
+Question 1
+Which of the following statements best defines data?
+Data is a business process.
+Data is the use of calculations and statistics.
+Data is an assortment of questions.
+v Data is a collection of facts.
+Question 2
+Fill in the blank: In data analytics, the data ecosystem refers to the various elements that interact with one another to produce, manage, store, _____, analyze, and share data.
+ingest
+-locate
+vorganize
+merge
+Question 3
+Which of the following terms refers to the collection, transformation, and organization of data in order to draw conclusions, make predictions, and drive informed decision-making?
+v Data analysis
+Data elements
+Data insight
+Data life cycle
+Question 4
+An airline collects, observes, and analyzes its customers' online behaviors. Then, it uses the insights gained to choose what new products and services to offer. What business process does this describe?
+Collaboration with stakeholders
+Analytical thinking
+v Data-driven decision-making
+Performance measurement
+---
+Test your knowledge on proper use of the discussion forum
+Total points 3
+Question 1
+Which of the following examples is an appropriate use of the discussion forum?
+Posting answers to quiz questions
+Sharing a photo of your new pet
+Asking other learners to give your resume to their employer
+v Asking a question about a lesson from this program
+Question 2
+In order to create clear and engaging discussions in the forum, which type of writing styles should you use? Select all that apply.
+v Including proper punctuation, such as commas and periods
+Typing in all lowercase 
+v Writing in complete sentences
+Writing in text message language, such as BTW for "by the way"
+Question 3
+When posting in the discussion forum, what type of behavior is acceptable?
+Sharing advertisements and product promotions
+Using cursing to emphasize your point
+Conveying your opinion clearly by arguing against someone’s perspective 
+v Being sensitive, kind, and open-minded
+----
+*Weekly challenge 1*
+Total points 8
+Question 1
+Which of the following options describes data analysis?
+Creating new ways of modeling and understanding the unknown by using raw data
+The various elements that interact with one another in order to provide, manage, store, organize, analyze, and share data
+Using facts to guide business strategy
+v The collection, transformation, and organization of data in order to draw conclusions, make predictions, and drive informed decision-making
+Question 2
+Fill in the blank: Data ecosystems are made up of elements that _____ with each other. This makes it possible for them to produce, manage, store, organize, analyze, and share data.
+gain insights
+problem-solve 
+v interact
+unite
+Question 3
+Fill in the blank: The primary goal of a data _____ is to find answers to existing questions by creating insights from data sources.
+engineer
+v analyst
+designer
+scientist
+Question 4
+What tactics can a data analyst use to effectively blend gut instinct with facts? Select all that apply.
+Focus on intuition to choose which data to collect and how to analyze it.
+v Use their knowledge of how their company works to better understand a business need.
+v Apply their unique past experiences to their current work, while keeping in mind the story the data is telling.
+Ask how to define success for a project, but rely most heavily on their own personal perspective.
+Question 5
+A furniture manufacturer wants to find a more environmentally friendly way to make its products. A data analyst helps solve this problem by gathering relevant data, analyzing it, and using it to draw conclusions. The analyst then shares their analysis with subject-matter experts from the manufacturing team, who validate the findings. Finally, a plan is put into action. This scenario describes data science.
+True
+v False
+Question 6
+What do subject-matter experts do to support data-driven decision-making? Select all that apply.
+v Validate the choices made as a result of the data insights
+Offer insights into the business problem
+vCollect, transform, and organize data
+v Review the results of data analysis and identify any inconsistencies
+Question 7
+A data analyst finishes analyzing data for a marketing project. The results are clear, so they present findings and recommendations to the client. What should they have done before that presentation? 
+Surveyed customers about results, conclusions, and recommendations
+v Shared the results with subject-matter experts from the marketing team for their input
+Archived the datasets in order to keep them secure
+Created a model based on the results of the analysis
+Question 8
+You have recently subscribed to an online data analytics magazine. You really enjoyed an article and want to share it in the discussion forum. Which of the following would be appropriate in a post? Select all that apply.
+v Checking your post for typos or grammatical errors
+v Including your own thoughts about the article
+vIncluding an advertisement for how to subscribe to the data analytics magazine
+Giving credit to the original author
+----
+Select the best description of gut instinct.
+Manipulating data to match your intuition
+Choosing facts that complement your personal experiences
+v Using your innate ability to analyze results
+.
+Question 2
+In data analytics, what term describes a collection of elements that interact with one another?
+The cloud environment
+A database
+v A data ecosystem
+A modeling system
+Question 7
+You have just finished analyzing data for a marketing project. Before moving forward, you share your results with members of the marketing team to see if they might have additional insights into the business problem. What practice does this support? 
+Data analytics
+Data management
+v Data-driven decision-making
+Data science
+q
+You read an interesting article about data analytics in a magazine and want to share some ideas from the article in the discussion forum. In your post, you include the author and a link to the original article. This would be an inappropriate use of the forum.
+True
+v False
+126 *Weekly challenge 1*40m
+Question 1
+This practice quiz will help you get a read on the analytical skills you already have.   
+After you respond to each question, be sure to check the feedback you receive. This will help you check your own thinking against the expected thinking for these questions. The analytical skills assessed in this quiz will come in handy and be further developed as you progress in the program. 
+---
+Identify the pattern from left to right in the set of blocks below and try to predict which block should replace the block with the question mark.
+A square with 1 dot, a square with 2 dots, a square with 3 dots, a square with 4, a square with a ?, and a square with 6 dots
+q 1 2 3 4 x 6
+q 5
+Question 2
+Here's a more complex pattern. Identify the pattern from left to right in the images below and try to predict which image should come next.
+A series of different boxes containing shapes and patterns with the last box containing a question mark1st pattern: Octagon with 7 dots
+q2nd pattern: Heptagon with 6 dots
+q3rd pattern: Hexagon with 5 dots
+q4th pattern: Pentagon with 4 dots
+q5th pattern: Square with 3 dots
+q6th pattern: Question mark
+Based on the images above, which option comes next in the pattern? 
+A triangle with 2 dots in it
+A hexagon with one dot in it
+A triangle with 3 dots in it
+An octagon with 4 dots in it
+Question 3
+Now, find a pattern in a different format. Select the next number in the sequence:
+Fill in the blank: 9, 13, 17, 21, 25, 29, _____
+q55
+q10
+v q33
+q25
+Question 4
+The following numbers are in a sequence from left to right. Determine the pattern and decide which number should come next:
+Fill in the blank: 4, 9, 16, 25, 36, 49, _____
+q62
+q30
+q81
+v q64
+Question 5
+The following question is about recognizing and matching patterns in shapes that are the same, but viewed from different angles. 
+Two shapes are similar when one can become the other after a rotation clockwise ? or counterclockwise ?, or a reflection horizontally - and/or vertically ¦.
+Top right, bottom left is to top left, bottom right
+Your task is to choose the figure that completes the statement. Pay attention to the pattern by which the first and second shapes are related, and then figure out which choice matches shape 3. Fill in the blank:
+Top: left & center, middle: right IS TO top: right & center, middle: left AS top: right, middle: center, bottom: left IS TO
+Select the image below that completes the statement.
+A grid of 3x3 squares. Top row middle is blue, middle row middle is blue, bottom row right is blue. Rest ofsquares are white.
+A 3x3 grid of squares. Top row left is blue, middle row middle is blue, bottom row right is blue. Rest are white.
+A 3x3 grid of 9 squares. Entire middle row of squares are blue. Rest are white.
+A 3x3 grid of squares. Top row right is blue, middle row middle is blue, bottom row left is blue. Rest are white.
+Question 6
+The following question is about recognizing and matching patterns in shapes that are the same, but viewed from different angles. Two shapes are similar when one can become the other after a rotation clockwise ? or counterclockwise ?, or a reflection horizontally - and/or vertically ¦.
+Your task is to choose the figure that completes the statement. Fill in the blank:
+Top: center & right, middle: right, bottom: right IS TO top: all, middle: left AS top: left, middle: left & center, bottom: r
+Which image completes it?
+A 3x3 grid of squares. Top row right is blue, middle row left and middle are blue, bottom row left is blue. Rest are white.
+a 3x3 grid of squares. Top row right is blue, middle row middle is blue, bottom row middle and right are blue. Rest are white
+A 3x3 grid of 9 squares; top row right corner is blue, middle row middle is blue, bottom row left and middle squares are blue
+Question 7
+The following series of codes are in a sequence from left to right. There is a repeating pattern that you will notice. Determine the pattern and decide which code should come next. 
+Fill in the blank: A1, B3, C5, D7, E9, F11, G13, _____
+D17
+J15
+v H15
+H16
+Question 8
+The following series of codes are in a sequence from left to right. There is a repeating pattern that you will notice. Determine the pattern and decide which sequence of letters should come next.
+Fill in the blank: A, AA, AAA, B, BA, BAA, BAAA, BB, BBA, BBAA, BBAAA, BBB, ________
+v BBBA
+BBBB
+BBAA
+BBAAA
+Question 9
+Now, identify patterns in a word problem using a data visualization. There are 12 chocolates in a box: eight have caramel filling, six have coconut filling, and two have both caramel and coconut filling. Choose the best image that describes this box of chocolates. 
+v Two circles overlapping. Caramel on left, Coconut on right. Left circle = 6, right circle = 4, overlap = 2. 
+Two circles overlapping. Caramel on left, Coconut on right. Left circle = 4, right circle =4, overlap = 2. 
+Two circles overlapping. Caramel on left, Coconut on right. Left circle = 2, right circle = 4, overlap = 4.
+Two circles overlapping. Caramel on left, Coconut on right. Left circle = 4, right circle = 2, overlap = 4.
+Question 10
+There are 10 children in a class and they have all brought sandwiches for lunch: five children have sandwiches with peanut butter, six children have sandwiches with jelly, and three children have sandwiches with both peanut butter and jelly. 
+Find out how many children have sandwiches with neither peanut butter nor jelly and choose the image that describes the situation best.
+A ven diagram of sandwiches. 3 are jelly, 3 are peanut butter, 3 are peanut butter & jelly, and 2 are neither
+A ven diagram of sandwiches. 4 are jelly, 3 are peanut butter, 3 are peanut butter & jelly
+A ven diagram of sandwiches. 3 are jelly, 2 are peanut butter, 3 are peanut butter & jelly, and 2 are neither
+A ven diagram of sandwiches. 3 are jelly, 3 are peanut butter, 2 are peanut butter & jelly, and 3 are neither
+
+201 WEEK 2 All about analytical thinking
+Data analysts balance many different roles in their work. In this part of the course, you’ll learn about some of these roles and the key skills used by analysts. You’ll also explore analytical thinking and how it relates to data-driven decision-making.
+203 Discovering data skill sets46s
+204 Key data analyst skills6m
+Key data analyst skills
+Analytical skills
+Qualities and characteristics associated with
+solving problems using facts
+Curiosity
+Understanding context Having a technical mindset Data design Data strategy
+Data design
+How you organize information
+Data strategy
+The management of the people, processes and tools used in data analysis
+Analytical skills
+Qualities and characteristics associated with
+solving problems using facts
+
+205 All about thinking analytically 5m
+All about thinking analytically
+1 Notes	Discuss
+Analytical thinking
+Identifying and defining a problem and then solving it by using data in an organized, step-by-step manner
+Visualization
+The graphical representation of information
+the graphical^^H representation of information.
+Visualization
+The graphical representation of information
+Correlation does not equal causation
+Correlation does no Bequal causation.!
+Correlation does not equal causation
+aspects of analytical thinking
+Visualization
+Strategy
+Problem-orientation
+Correlation
+Big-picture and detail-oriented thinking
+
+206 Exploring core analytical skills4m
+Exploring core analytical skills
+aspects of analytical thinking
+•	Visualization
+•	Strategy
+•	Problem-orientation
+•	Correlation
+•	Big-picture and detail-oriented thinking
+and detail-oriented thinking.
+aspects of analytical thinking
+Visualization
+Strategy
+Problem-orientation
+Correlation
+Big-picture and detail-oriented thinking
+Root cause
+The reason why a problem occurs
+Ask, “why?” five times to reveal the root cause
+In the example problem of not having enough blueberries to make a pie, what root cause was revealed through the Five Whys process?
+(3 Birds ate the blueberries growing on bushes Mulberry bushes were damaged by a late frost Î Blueberry bushes didn't have enough fruit (3 Birds ate blueberries instead of mulberries
+This was the answer to the fifth "why" question: why didn't the mulberry bushes produce any fruit?. The Five Whys process is used to reveal a root cause of a problem through the answer to the fifth question. Read how root causes in business settings have also been identified using the Five Whys process 
+Where are the gaps in our process?
+Gap analysis
+A method for examining and evaluating how a process works currently in order to get where you want to be in the future
+What did we not consider before?
+What is the root cause of the problem?
+Root cause
+The reason why a problem occurs
+Ask, “why?” five times to reveal the root cause
+Where are the gaps in our process?
+Gap analysis
+A method for examining and evaluating how a process works currently in order to get where you want to be in the future
+What did we not consider before?
+207 Using data to drive successful outcomes 4m
+Curiosity
+Understanding context Having a technical mindset Data design
+Data strategy
+Data-driven decision-making
+Using facts to guide business strategy
+
+208 Real-world data magic5m
+A quartile divides data points into four equal parts
+Nonprofits are organizations dedicated to advancing a social cause or advocating for a particular effort
+
+209 Learning Log: Explore data from your daily life20m
+Ask
+Prepare
+Process
+Analyze
+Share
+Act
+
+210 Learning Log: Reflect on your skills and expectations20m
+211 Glossary: Terms and definitions10m
+212 Get a read on your analytical skills20m
+213 Test your knowledge on analytical thinking8m
+Test your knowledge on analytical thinking
+Total points 4
+Question 1
+What practice involves identifying, defining, and solving a problem by using data in an organized, step-by-step manner?
+Data design
+Context
+v Analytical thinking
+Visualization
+Question 2
+Which of the following are examples of data visualizations? Select all that apply.
+v Charts
+Reports
+v Maps
+v Graphs
+Question 3
+Gap analysis is used to examine and evaluate how a process currently works with the goal of getting to where you want to be in the future.
+v True
+False
+Question 4
+Which aspect of analytical thinking involves being able to identify a relationship between two or more pieces of data?
+Data design
+Visualization
+v Correlation
+Context
+
+214 Test your knowledge on outcomes6m
+Test your knowledge on outcomes
+Total points 3
+Question 1
+Fill in the blank: Curiosity, understanding context, and having a technical mindset are all examples of _____ used in data-driven decision-making.
+data models
+thought processes
+v analytical skills
+business strategies
+Question 2
+Surveying customers about their preferences and using that information to inform business strategy is an example of data-driven decision-making.
+v True
+False
+Question 3
+In data analysis, which analytical skill involves the management of people, processes, and tools?
+Data control
+Data design
+v Data strategy
+Data analytics
+
+215 *Weekly challenge 2* 40m
+Question 1
+Seeking out new challenges and experiences in order to learn is an example of which analytical skill?
+Having a technical mindset
+Understanding context 
+Data strategy
+v Curiosity
+Question 2
+Understanding context is an analytical skill best described by which of the following? Select all that apply. 
+v Identifying the motivation behind the collection of a dataset
+Working with facts in an orderly manner
+v Gathering additional information about data to understand the broader picture 
+Adding descriptive headers to columns of data in a spreadsheet 
+Question 3
+A data analyst works for an appliance manufacturer. Last year, the company’s profits were down. Lower profits can be a result of fewer people buying appliances, higher costs to make appliances, or a combination of both. The analyst recognizes that those are big issues to solve, so they break down the problems into smaller pieces to analyze them in an orderly way. Which analytical skill are they using?
+v A technical mindset 
+Curiosity
+Understanding context
+vData strategy
+Question 4
+Data design is how you organize information; data strategy is the management of the people, processes, and tools used in data analysis. 
+v True
+False
+Question 5
+Correlation is the aspect of analytical thinking that involves figuring out the specifics that help you execute a plan.
+True
+v False
+Question 6
+Data analysts ask, “Why?” five times in order to get to the root cause of a problem.
+v True
+False
+Question 7
+What method involves examining and evaluating how a process works currently in order to get it where you want it to be in the future?
+Strategy
+The five whys
+Data visualization
+v Gap analysis 
+Question 8
+A company is receiving negative comments on social media about their products. To solve this problem, a data analyst uses each of their five analytical skills: curiosity, understanding context, having a technical mindset, data design, and data strategy. This makes it possible for the analyst to use facts to guide business strategy and figure out how to improve customer satisfaction. What is this an example of?
+Gap analysis 
+v Data-driven decision-making
+Data science 
+Data visualization
+---
+--
+*Weekly challenge 2*
+Total points 8
+Question 1
+A junior data analyst is seeking out new experiences in order to gain knowledge. They watch videos and read articles about data analytics. They ask experts questions. Which analytical skill are they using?
+Understanding context 
+Data strategy
+Having a technical mindset
+v Curiosity
+Question 2
+Identifying the motivation behind data collection and gathering additional information are examples of which analytical skill?
+Data design
+v Understanding context
+A technical mindset
+Data strategy 
+Question 3
+A data analyst works for an appliance manufacturer. Last year, the company’s profits were down. Lower profits can be a result of fewer people buying appliances, higher costs to make appliances, or a combination of both. The analyst recognizes that those are big issues to solve, so they break down the problems into smaller pieces to analyze them in an orderly way. Which analytical skill are they using?
+Data strategy
+Curiosity
+Understanding context
+v A technical mindset 
+Question 4
+Data design is how you organize information; data strategy is the management of the people, processes, and tools used in data analysis. 
+v True
+False
+Question 5
+Fill in the blank: Being able to identify a relationship between two or more pieces of data describes _____.
+visualization 
+v correlation
+problem-orientation
+detail-oriented thinking
+Question 6
+What method involves asking numerous questions in order to get to the root cause of a problem?
+v The five whys
+Strategizing
+Inquiry
+Curiosity
+Question 7
+An airport wants to make its luggage-handling process faster and simpler for travelers. A data analyst examines and evaluates how the process works currently in order to achieve the goal of a more efficient process. What methodology do they use? 
+-v Strategy
+Gap analysis 
+The five whys
+Data visualization
+Question 8
+A company is receiving negative comments on social media about their products. To solve this problem, a data analyst uses each of their five analytical skills: curiosity, understanding context, having a technical mindset, data design, and data strategy. This makes it possible for the analyst to use facts to guide business strategy and figure out how to improve customer satisfaction. What is this an example of?
+v Data-driven decision-making
+Gap analysis 
+Data visualization
+Data science 
+
+301 WEEK 3 The wonderful world of data
+Data has its own life cycle, and the work of data analysts often intersects with that cycle. In this part of the course, you’ll learn how the data life cycle and data analysts' work both relate to your progress through this program. You’ll also be introduced to applications used in the data analysis process.
+303 Learning about data phases and tools2m
+304 Stages of the data life cycle4m
+Plan: What plans and decisions do you need to make? What data do you need to answer your question?
+Capture: Where does your data come from? How will you get it?
+Manage: How will you store your data? What should it be used for? How do you keep this data secure and protected?
+Analyze: How will the company analyze the data? What tools should they use?
+Archive: What should they do with their data when it gets old? How do they know when it's time?
+Destroy: Should they ever dispose of any data? If so, when and how?
+
+305 Six phases of data analysis6m
+Stakeholders
+People who have invested time and resources into a project and are interested in the outcome
+Look at the current state and identify how it’s different from the ideal state
+
+306 Molly: Example of the data process6m
+“You want to ask all of the right questions at the beginning of the engagement so that you better understand what your leaders and stakeholders need from this analysis.”
+“We need to be thinking about the type of data we need in order to answer the questions that we've set out to answer based on what we learned when we asked the right questions.”
+“This is where you get a chance to understand its structure, its quirks, its nuances, and you really get a chance to understand deeply what type of data you're going to be working with and understanding what potential that data has to answer all of your questions.”
+“This is the point where we have to take a step back and let the data speak for itself.”
+“All of this work from asking the right questions to collecting your data, to analyzing and sharing doesn't mean much of anything, if we aren't taking action on what we've just learned.”
+
+307 Exploring data analyst tools6m
+Spreadsheets
+Query languages for databases
+Visualization tools
+Exploring data analyst tools
+Query language
+A computer programming language that allows you to retrieve and manipulate data from a database
+
+308 Variations of the data life cycle20m
+309 The data analysis process and this program10m
+310 Learning Log: Organize your data in a table20m
+311 Key data analyst tools10m
+312 Choosing the right tool for the job10m
+313 Glossary: Terms and definitions10m
+314 Self-Reflection: Collecting data20m
+315 Test your knowledge on the data life cycle10m
+Test your knowledge on the data life cycle
+Total points 5
+Question 1
+Fill in the blank: During the _____ phase of the data life cycle, a business decides what kind of data it needs, how it will be managed, who will be responsible for it, and the optimal outcomes.
+manage
+archive
+v planning
+capture
+Question 2
+In the data life cycle, which phase involves gathering data from various sources and bringing it into the organization?
+Analyze
+v Capture
+Manage
+Archive
+Question 3
+A data analyst finishes using a dataset, so they erase or shred the files in order to protect private information. This is called archiving. 
+True
+v False
+Question 4
+A dairy farmer decides to open an ice cream shop on her farm. After surveying the local community about people’s favorite flavors, she takes the data they provided and stores it in a secure hard drive so it can be maintained safely on her computer. This is part of which phase of the data life cycle?
+v Manage
+Archive
+Analyze
+Plan
+Question 5
+After opening the ice cream shop on her farm, the same dairy farmer then surveys the local community about people’s favorite flavors. She uses the data she collected to determine that the top five flavors are strawberry, vanilla, chocolate, mint chip, and peanut butter. She feels confident in her decision to sell these flavors. This is part of which phase of the data life cycle?
+v Analyze
+Capture
+Plan
+Archive
+
+316 Test your knowledge on the data analysis process10m
+Test your knowledge on the data analysis process
+Total points 5
+Question 1
+The data analysis process phases are ask, prepare, process, analyze, share, and act. What do data analysts do during the ask phase?
+Clean the data
+Create data visualizations
+v Define the problem to be solved
+Collect and store data
+Question 2
+During the process phase of data analysis, a data analyst cleans data to ensure it’s complete and correct.
+v True
+False
+Question 3
+During which phase of data analysis would a data analyst use spreadsheets or query languages to transform data in order to draw conclusions?
+Prepare
+Process
+v Analyze
+Act
+Question 4
+In which data analysis phase would a data analyst use visuals such as charts or graphs to simplify complex data for better understanding?
+Process
+Act
+Prepare
+v Share
+Question 5
+A data analyst shares insights from their analysis during a formal presentation to stakeholders. In a slideshow, they make a data-driven recommendation for how to solve a business problem. What phase of the data analysis process would come next? 
+v Act
+Prepare
+Process
+Ask
+
+317 Self-Reflection: Reviewing past concepts20m
+318 Test your knowledge on the data analysis toolbox10m
+Test your knowledge on the data analysis toolbox
+Total points 5
+Question 1
+Based on what you have learned in this course, spreadsheets are digital worksheets that enable data analysts to do which of the following tasks? Select all that apply. 
+v Sort and filter data
+Choose a topic for data analysis 
+v Store data 
+v Organize data in columns and rows
+Question 2
+Fill in the blank: A set of instructions that performs a specific calculation using spreadsheet data is called _____.
+a report
+an operation
+v a formula
+a program
+Question 3
+A database is a collection of data stored in a computer system.
+v True
+False
+Question 4
+In data analytics, SQL is an acronym meaning _____ query language.
+statistical
+software
+v structured
+syntax
+Question 5
+What is the term for the graphical representation of data?
+v Data visualization
+Data summary
+Data collection
+Data language
+
+319 *Weekly challenge 3*40m
+*Weekly challenge 3*
+Total points 8
+Question 1
+Fill in the blank: A business decides what kind of data it needs, how the data will be managed, and who will be responsible for it during the _____ stage of the data life cycle.
+capture
+manage 
+v plan
+analyze
+Question 2
+A data analyst has finished an analysis project that involved private company data. They erase the digital files in order to keep the information secure. This describes which stage of the data life cycle?
+Archive
+Plan
+v Destroy
+Manage
+Question 3
+In the analyze stage of the data life cycle, what might a data analyst do? Select all that apply.
+Choose the format of spreadsheet headings
+v Use spreadsheets to aggregate data
+Create a report from the data
+v Use a formula to perform calculations
+Question 4
+Describe how the data life cycle differs from data analysis.
+v The data life cycle deals with the stages that data goes through during its useful life; data analysis is the process of analyzing data.
+The data life cycle deals with making informed decisions; data analysis is using tools to transform data.
+The data life cycle deals with identifying the best data to solve a problem; data analysis is about asking effective questions.
+The data life cycle deals with transforming and verifying data; data analysis is using the insights gained from the data.
+Question 5
+What actions might a data analytics team take in the act phase of the data analysis process? Select all that apply.
+v Finalizing a strategy based on the analysis
+Sharing analysis results using data visualizations
+v Putting a plan into action to help solve the business problem
+v Validating insights provided by analysts
+Question 6
+Fill in the blank: A function is a predefined operation, whereas a formula is _____.
+v a set of instructions used to perform a specified calculation
+a particular value
+a predefined statement
+a computer programming language
+Question 7
+Fill in the blank: A query is used to _____ information from a database. Select all that apply.
+v request 
+visualize
+v update
+v retrieve
+Question 8
+A data analyst wants to retrieve information from a database. Select the correct tool from the data analyst’s toolkit.
+Visualization
+Dashboard
+Spreadsheet
+v Query
+--
+*Weekly challenge 3*
+Total points 8
+Question 1
+In which stage of the data life cycle does a business decide what kind of data it needs, how the data will be managed, and who will be responsible for it?
+Analyze
+v Plan
+Capture
+Manage
+Question 2
+The destroy stage of the data life cycle might involve which of the following actions? Select all that apply.
+Uploading data to the cloud
+v Shredding paper files
+v Using data-erasure software
+Storing data for future use
+Question 3
+During the capture stage of the data life cycle, a data analyst may use spreadsheets to aggregate data. 
+True
+v False
+Question 4
+Fill in the blank: The data life cycle has six stages, whereas data analysis has six _____.
+v process steps
+data analytics tools
+data types
+key questions
+Question 5
+A company takes insights provided by its data analytics team, validates them, and finalizes a strategy. They then implement a plan to solve the original business problem. This describes which step of the data analysis process?
+Analyze
+Process
+v Act
+Share
+Question 6
+Fill in the blank: A formula is a set of instructions used to perform a specified calculation; whereas a function is _____.
+a particular value
+a question written by the user
+a computer programming language
+v a predefined operation
+Question 7
+Fill in the blank: To request, retrieve, and update information in a database, data analysts use a ____.
+v query
+formula
+dashboard
+calculation
+Question 8
+Fill in the blank: Structured query language (SQL) enables data analysts to _____ the information in a database. Select all that apply.
+v retrieve
+visualize
+v request
+v update
+
+401 WEEK 4 Set up your toolbox
+As you're learning, spreadsheets, query languages, and data visualization tools are all a big part of a data analyst’s job. In this part of the course, you’ll learn more about the basic concepts involved and explore some examples of how these tools work.
+403 The ins and outs of core data tools2m
+
+404 Columns and rows and cells, oh my!8m
+Attribute
+A characteristic or quality of data used to label a column in a table
+Observation
+All of the attributes for something contained in a row of a data table
+Formula
+A set of instructions that performs a specific action using the data in a spreadsheet
+In a table, an attribute is a characteristic or quality of data used for what purpose?
+Q To reference a cell
+Q To perform a calculation
+(•) To label a column
+Q To gather related data
+
+405 SQL in action3m
+SQL
+•	Store
+•	Organize
+•	Analyze
+Query
+A request for data or information from a database
+Basic structure of a SQL query
+This is the suggested order in which you write your SQL queries. Start big (data table) and go small (specific conditions).
+SELECT
+[choose the column(s) you want]
+FR0M	#1
+[from the appropriate table]
+WHERE
+44-Q
+[a certain condition is met]
+SELECT *
+FROM movie_data.movies
+WHERE Genre__1_ = ’Actionf
+Fill in the blank: A data analyst uses a SQL query to retrieve information from a database. They add a WHERE statement to the data based on certain conditions.
+(•) filter
+O sort
+Q categorize
+O c°py
+406 Angie: Everyday struggles when learning new skills1m
+407 Becoming a data viz whiz5m
+What are some reasons why a data analyst might use data visualizations? Select all that apply.
+To reinforce data analysis
+To edit data in color
+Q To explain complex data quickly
+To create interesting graphs
+Your data analysis tools (so far)
+• Spreadsheets
+•	SQL
+•	Data visualization tools
+What are some reasons why a data analyst might use data visualizations? Select all that apply.
+Q To reinforce data analysis
+Correct
+Data analysts use data visualizations to explain complex data quickly, reinforce data analysis, and create interesting graphs and charts.
+To edit data in color
+To explain complex data quickly
+Correct
+Data analysts use data visualizations to explain complex data quickly, reinforce data analysis, and create interesting graphs and charts.
+To create interesting graphs
+Correct
+Data analysts use data visualizations to explain complex data quickly, reinforce data analysis, and create interesting graphs and charts.
+
+408 Lilah: The power of a visualization2m
+
+“Data visualizations are pictures. They are a wonderful way to take very basic ideas around data and data points and make them come alive.”
+409 More spreadsheet resources20m
+410 SQL Guide: Getting started20m
+411 Endless SQL possibilities20m
+412 Planning a data visualization20m
+413 Glossary: Terms and definitions10m
+414 Hands-On Activity: Generating a chart from a spreadsheet1h
+415 Test your knowledge on spreadsheet basics6m
+Test your knowledge on spreadsheet basics
+Total points 3
+Question 1
+In a spreadsheet, what is text wrapping used for?
+To remove text that is too long to fit in a cell
+To clip text within a cell so it doesn’t overflow into an adjacent cell
+v To allow all of the text to fit inside a cell
+To allow text to overflow into an adjacent cell
+Question 2
+The columns in a spreadsheet are ordered by letter, and the rows are ordered by number.
+v True
+False
+Question 3
+Fill in the blank: In a data table, a row is called an observation. An observation includes all of the _____  for what is contained in the row.
+commonalities
+names
+v attributes
+diagnostics
+
+416 Test your knowledge on SQL10m
+Test your knowledge on SQL
+Total points 5
+Question 1
+Screenshot of sql querySELECT *
+FROM employee
+WHERE jobCode = 'FTE'
+              AND LastName = 'James'
+What does the asterisk (*) after SELECT tell the database to do in this query?
+Select all data that meets the criteria as stated in the query
+Select the LastName column from the employee table
+Select all data that meets the criteria as stated in the query, then multiply it
+v Select all columns from the employee table
+Question 2
+SELECT * FROM employee WHERE jobCode = 'FTE'  AND LastName = 'James'SELECT *
+FROM employee
+WHERE jobCode = 'FTE'
+              AND LastName = 'James'
+In this query, the data analyst wants to retrieve data from which table? 
+LastName
+jobCode
+v employee
+James
+Question 3
+SELECT * FROM employee WHERE jobCode = 'FTE'  AND LastName = 'James'SELECT *
+FROM employee
+WHERE jobCode = 'FTE'
+              AND LastName = 'James'
+In this query, what will be retrieved from the database?
+v All data from the employee table, where the jobCode is FTE and the last name is James.
+All data from the jobCode table, where the jobCode is FTE and the employee has any last name other than James.
+All data from the FTE table, where the employee's LastName is James.
+All data from the employee table, where the jobCode is FTE and the employee has any last name other than James.
+Question 4
+You are working with a database table that contains data about music artists. The table is named artist. You want to review all the columns in the table. 
+You write the SQL query below. Add a FROM clause that will retrieve the data from the artist table.
+SELECT
+*
+Reset
+SELECT
+*
+FROM artist
+Reset
++-----------+---------------------------------+
+| artist_id | name                            |
++-----------+---------------------------------+
+|         1 | AC/DC                           |
+|         2 | Accept                          |
+|         3 | Aerosmith                       |
+|         4 | Alanis Morissette               |
+|         5 | Alice In Chains                 |
+|         6 | Antonio Carlos Jobim            |
+|         7 | Apocalyptica                    |
+|         8 | Audioslave                      |
+|         9 | BackBeat                        |
+|        10 | Billy Cobham                    |
+|        11 | Black Label Society             |
+|        12 | Black Sabbath                   |
+|        13 | Body Count                      |
+|        14 | Bruce Dickinson                 |
+|        15 | Buddy Guy                       |
+|        16 | Caetano Veloso                  |
+|        17 | Chico Buarque                   |
+|        18 | Chico Science & Nacao Zumbi     |
+|        19 | Cidade Negra                    |
+|        20 | Claudio Zoli                    |
+|        21 | Various Artists                 |
+|        22 | Led Zeppelin                    |
+|        23 | Frank Zappa & Captain Beefheart |
+|        24 | Marcos Valle                    |
+|        25 | Milton Nascimento & Bebeto      |
++-----------+---------------------------------+
+(Output limit exceeded, 25 of 275 total rows shown)
+How many columns are in the artist table? 
+-9
+-5
+v -2
+-8
+Question 5
+You are working with a database table that contains data about music albums. You are only interested in data related to the album with ID number 277. The album IDs are listed in the album_id column from the album table.
+You write the SQL query below. Add a WHERE clause that will return only data about the album with ID number 277.
+Question 5
+You are working with a database table that contains data about music albums. You are only interested in data related to the album with ID number 277. The album IDs are listed in the album_id column from the album table.
+You write the SQL query below. Add a WHERE clause that will return only data about the album with ID number 277.
+SELECT
+*
+FROM
+album
+WHERE album_id = 277;
+Reset
++----------+---------------------------+-----------+
+| album_id | title                     | artist_id |
++----------+---------------------------+-----------+
+|      277 | Bach: Goldberg Variations |       211 |
++----------+---------------------------+-----------+
+What is the name of the album with ID number 277?  
+v Bach: Goldberg Variations
+Mozart: Chamber Music
+Vivaldi: The Four Seasons
+Beethoven: Piano Sonatas 
+
+417 Test your knowledge on visualizing data6m
+Test your knowledge on visualizing data
+Total points 3
+Question 1
+Fill in the blank: A data visualization is the _____ representation of information.
+attributed 
+tabulated
+v graphical
+contextual
+Question 2
+When would a pie chart be an effective visualization? 
+v When showing a class broken down by age
+When showing the relationship between age and income
+When showing a change in someone's age over time
+When showing the ages of males versus females
+Question 3
+What are the key benefits of data visualizations? Select all that apply.
+v They can help stakeholders understand complex data more quickly
+v They can illustrate relationships between data points
+v They can clearly demonstrate patterns and trends
+They can ensure that you get fewer questions about your analysis
+
+418 *Weekly challenge 4*40m
+*Weekly challenge 4*
+Total points 8
+Question 1
+The column attributes for rank, name, population, and county are located in which row of the following spreadsheet? 
+v -2
+-1
+-11
+-10
+Question 2
+In the following spreadsheet, the observation of Greensboro describes all of the data in row 4.
+v True
+False
+Question 3
+In the following spreadsheet, what feature was used to alphabetize the city names in column B?
+Organize range
+v Sort range
+Randomize range
+Name range
+Question 4
+To find the average population of the cities in this spreadsheet, what is the correct AVERAGE function syntax? 
+=AVERAGE(C2-C11)
+AVERAGE(C2:C11)
+v =AVERAGE(C2:C11)
+AVERAGE(C2-C11)
+Question 5
+You are working with a database table named genre that contains data about music genres. You want to review all the columns in the table. 
+You write the SQL query below. Add a FROM clause that will retrieve the data from the genre table.
+SELECT
+*
+Reset
+What is the name of the genre with ID number 3? 
+Blues
+Rock
+Jazz
+v Metal
+Question 6
+You are working with a database table that contains invoice data. The customer_id column lists the ID number for each customer. You are interested in invoice data for the customer with ID number 35.
+You write the SQL query below. Add a WHERE clause that will return only data about the customer with ID number 35.
+SELECT
+*
+FROM
+invoice
+WHERE customer_id = 35
+What is the billing country for the customer with ID number 35?
+India
+v Portugal
+Ireland
+Argentina
+Question 7
+Fill in the blank: A data analyst creates a table, but they realize this isn’t the best visualization for their data. To fix the problem, they decide to use the _____ feature to change it to a column chart. 
+filter view 
+rename 
+image
+v chart editor
+Question 8
+A data analyst wants to demonstrate how the population in Charlotte has increased over time. They create the chart below. What is this type of chart called?
+A line graph of the population of Charlotte, NC from 1995-2020
+v Line chart
+Area chart
+Bar chart
+Column chart
+---
+Sale of old cars. I need the year of manufacture, mileage, brand. Learning a machine learning model. When a car goes on sale, it is evaluated according to a machine learning model. I am useful. The car is sold for the optimal amount of time.
+
+501 WEEK 5 Endless career possibilities
+502 Businesses of all kinds value the work done by data analysts. In this part of the course, you’ll find out about these businesses and the specific jobs and tasks that analysts perform for them. You’ll also learn how your data analyst certificate will help you meet many of the requirements for a position with these businesses.
+503 Let's get down to business49s
+The role of a Data Analyst
+Business tasks for Data Analysts
+Fairness in analysis
+Opportunities for you
+And your future success!
+
+504 The job of a data analyst4m
+Technology
+Marketing
+Finance
+Healthcare
+
+505 Joey: Path to becoming a data analyst2m
+‘In analytics, I feel like the key to success is being able to blend the personal side with the technical side."
+
+
+506 Tony: Supporting careers in data analytics2m
+“There's so many different paths that you can take from the starting point that you really can't predict your end.”
+
+507 The power of data in business4m
+Issue
+A topic or subject to investigate
+Question
+Designed to discover information
+Problem
+An obstacle or complication that needs to be worked out
+Business task
+The question or problem data analysis answers for a business
+Analyze weather data from the last decade to identify predictable patterns
+Data-driven decision-making
+Using facts to guide business strategy
+
+508 Rachel: Data detectives2m
+“I think one of the most important things to remember about data analytics is that data is data.”
+
+509 Understanding data and fairness5m
+Fairness
+Ensuring that your analysis doesn't create or reinforce bias
+Fairness
+Ensuring that your analysis doesn't create or reinforce bias
+Fill in the blank: In data analytics, fairness means ensuring that your analysis does not create or reinforce bias. This requires using processes and systems that are fair and.
+(•) inclusive
+Q restrictive
+O partial
+Q favorable
+Correct
+Ensuring that analysis does not create or reinforce bias requires using processes and systems that are fair and inclusive to everyone.
+
+510 Alex: Fair and ethical data decisions3m
+“How do we actually improve the lives of people by using data?”
+“At the end of the day, data are people.”
+
+511 Data analysts in different industries5m
+Industry
+Tools
+Location
+Travel
+Culture
+
+Financial services
+Telecom
+Tech
+
+512 Samah: Interview best practices2m
+“Think about a time where you've used data to solve a problem, whether it's in your professional or personal projects.”
+"Increase your professional network.”
+“It's really important to have your Linkedln updated along with websites, like GitHub where you can showcase a lot of the data analyst projects you've done.”
+“Prepare questions for the interviewer.”
+“Sometimes there is no right answer, and a lot of times interviewers are looking to see your thought process and the way you get to your solution.”
+‘‘Look for the recruiter. Look for the hiring manager online. See if you can reach out to them and set up a coffee chat or send them your resume directly.”
+
+513 Weekly wrap-up25s
+514 Congrats! Course wrap-up 3m
+515 Learning Log: Reflect on the data analysis process20m
+516 Data analyst roles and job descriptions20m
+517 Beyond the Numbers: A Data Analyst Journey10m
+518 Glossary: Terms and definitions10m
+519 Test-taking strategies10m
+520 Coming up next...10m
+521 Self-Reflection: Business use of data20m
+522 Self-Reflection: Business cases20m
+523 Test your knowledge on making fair business decisions8m
+Test your knowledge on making fair business decisions
+Total points 4
+Question 1
+What steps do data analysts take to ensure fairness when collecting data? Select all that apply.
+v Use an inclusive sample population
+v Include data self-reported by individuals
+v Understand the social context
+Clean the data provided
+Question 2
+Avens Engineering needs more engineers, so they purchase ads on a job search website. The website’s data reveals that 86% of engineers are men. Based on that number, an analyst decides that men are more likely to be successful applicants, so they target the ads to male job seekers. What should the analyst have done instead?
+v Make sure their recommendation doesn’t create or reinforce bias
+Decline to accept ads from Avens Engineering because of fairness concerns.
+Let Avens Engineering decide which type of applicants to target ads to.
+Only show ads for the engineering jobs to women.
+Question 3
+On a railway line, peak ridership occurs between 7:00 AM and 5:00 PM. The fairness of a passenger survey could be improved by over-sampling data from which group?
+Female passengers
+v Nighttime riders
+Male passengers 
+Daytime riders
+Question 4
+A real estate company needs to hire a human resources assistant. The owner asks a data analyst to help them decide where to advertise the job opening. The analyst learns that the majority of human resources professionals are women, validates this finding with research, and targets ads to a women's community college. This is fair because the analyst conducted research to make sure the information about gender breakdown of human resources professionals was accurate.
+True
+v False
+
+524 *Weekly challenge 5*40m
+*Weekly challenge 5*
+Total points 8
+Question 1
+A magazine wants to understand why its subscribers have been increasing. A data analyst could help answer that question with a report that predicts the result of a half-price sale on future subscription rates.
+True
+v False
+Question 2
+Fill in the blank: A doctor’s office has discovered that patients are waiting 20 minutes longer for their appointments than in past years. To help solve this problem, a data analyst could investigate how many nurses are on staff at a given time compared to the number of _____.
+v patients with appointments
+doctors on staff at the same time
+negative comments about the wait times on social media
+doctors seeing new patients
+Question 3
+A problem is an obstacle to be solved, an issue is a topic to investigate, and a question is designed to discover information.
+v True
+False
+Question 4
+What is a question or problem that a data analyst answers for a business?
+-Complaint 
+Hypothesis
+-Mission statement
+v Business task
+Question 5
+Data-driven decision-making is using facts to guide business strategy. The benefits include which of the following? Select all that apply.
+v Using data analytics to find the best possible solution to a problem
+Making the most of intuition and gut instinct
+v Getting a complete picture of a problem and its causes 
+v Combining observation with objective data
+Question 6
+Data analysts ensure their analysis is fair for what reason?
+v Fairness helps them avoid biased conclusions.
+Fairness helps them communicate with stakeholders.
+Fairness helps them pick and choose which data to include from a dataset. 
+Fairness helps them stay organized.
+Question 7
+A data analyst is analyzing fruit and vegetable sales at a grocery store. They’re able to find data on everything except red onions. What’s the best course of action? 
+Use the data on white onions instead, as they’re both onion varieties.
+Exclude red onions from the analysis. 
+Exclude all onion varieties from the analysis.
+v Ask a teammate for help finding data on red onions.
+Question 8
+A large hotel chain sees about 500 customers per week. A data analyst working there is gathering data through customer satisfaction surveys. They are anxious to begin analysis, so they start analyzing the data as soon as they receive 50 survey responses. This is an example of what? Select all that apply.
+v Failing to include diverse perspectives in data collection
+v Failing to have a large enough sample size
+-Failing to reward customers for participating in the survey
+Failing to collect data anonymously
+
+525 *Course challenge*50m
+*Course challenge*
+Total points 10
+Question 1
+Scenario 1, question 1-5
+You’ve just started a new job as a data analyst. You’re working for a midsized pharmacy chain with 38 stores in the American Southwest. Your supervisor shares a new data analysis project with you.
+She explains that the pharmacy is considering discontinuing a bubble bath product called Splashtastic. Your supervisor wants you to analyze sales data and determine what percentage of each store’s total daily sales come from that product. Then, you’ll present your findings to leadership.
+You know that it's important to follow each step of the data analysis process: ask, prepare, process, analyze, share, and act. So, you begin by defining the problem and making sure you fully understand stakeholder expectations.
+One of the questions you ask is where to find the dataset you’ll be working with. Your supervisor explains that the company database has all the information you need. 
+Next, you continue to the prepare step. You access the database and write a query to retrieve data about Splashtastic. You notice that there are only 38 rows of data, representing the company’s 38 stores. In addition, your dataset contains five columns: Store Number, Average Daily Customers, Average Daily Splashtastic Sales (Units), Average Daily Splashtastic Sales (Dollars), and Average Total Daily Sales (All Products). 
+You know that spreadsheets work well for processing and analyzing a small dataset, like the one you’re using. To get the data from the database into a spreadsheet, what should you do?
+Email a copy of the dataset to your company email address.
+Copy and paste the data into a spreadsheet.
+Use Tableau to convert the data into a spreadsheet.
+v Download the data as a .CSV file, then import it into a spreadsheet.
+Question 2
+Scenario 1 continued
+You’ve downloaded the data from your company database and imported it into a spreadsheet. To use the dataset for this scenario, click the link below and select “Use Template.” 
+Link to template: Course Challenge - Scenario 1 
+OR 
+If you don’t have a Google account, you can download the template directly from the attachment below.
+Now, it’s time to process the data. As you know, this step involves finding and eliminating errors and inaccuracies that can get in the way of your results. While cleaning the data, you notice that information about Splashtastic is missing in row 16. The best course of action is to delete the row with missing data from your dataset so it doesn’t get in the way of your results.
+True
+v False
+Question 3
+Scenario 1 continued
+Once you’ve found the missing information, you analyze your dataset. 
+During analysis, you create a new column F. At the top of the column, you add the attribute Average Percentage of Total Sales - Splashtastic. Select the correct definition for an attribute.
+A characteristic or quality of data used to label a column
+-A headline or subhead
+v An observation of data within a column
+All of the characteristics of something contained in a table
+Question 4
+Scenario 1 continued
+Next, you determine the average total daily sales over the past 12 months at all stores, The range that contains these sales is E2:E39. To do this, you use a function. Fill in the blank to complete the function correctly: =_____ (E2:E39). 
+SUM
+SALES
+v AVERAGE
+TOTAL
+Question 5
+Scenario 1 continued
+Next, you create a slideshow, which includes a data visualization to highlight the Splashtastic sales insights you've discovered. You’ve reached which phase of the data analysis process?
+Manage
+Act
+-Analyze
+v Share
+Question 6
+Scenario 2, questions 6-10
+You’ve been working for the nonprofit National Dental Society (NDS) as a junior data analyst for about two months. The mission of the NDS is to help its members advance the oral health of their patients. NDS members include dentists, hygienists, and dental office support staff. 
+The NDS is passionate about patient health. Part of this involves automatically scheduling follow-up appointments after crown replacement, emergency dental surgery, and extraction procedures. NDS believes the follow-up is an important step to ensure patient recovery and minimize infection. 
+Unfortunately, many patients don’t show up for these appointments, so the NDS wants to create a campaign to help its members learn how to encourage their patients to take follow-up appointments seriously. If successful, this will help the NDS achieve its mission of advancing the oral health of all patients. 
+Your supervisor has just sent you an email saying that you’re doing very well on the team, and he wants to give you some additional responsibility. He describes the issue of many missed follow-up appointments. You are tasked with analyzing data about this problem and presenting your findings using data visualizations. 
+An NDS member with three dental offices in Colorado offers to share its data on missed appointments. So, your supervisor uses a database query to access the dataset from the dental group. The query instructs the database to retrieve all patient information from the member’s three dental offices, located in zip code 81137.
+The table is dental_data_table, and the column name is zip_code. You write the following query, but get an error. What statement will correct the problem?
+v WHERE zip_code = 81137
+zip_code = 81137
+WHERE_zip code = 81137
+WHERE 81137
+Question 7
+Scenario 2 continued
+The dataset your supervisor retrieved and imported into a spreadsheet includes a list of patients, their demographic information, dental procedure types, and whether they attended their follow-up appointment. To use the dataset for this scenario, click the link below and select “Use Template.”
+Link to template: Course Challenge - Scenario 2
+OR 
+If you don’t have a Google account, you can download the template directly from the attachment below.
+The patient demographic information includes data such as age and gender. As you’re learning, it’s your responsibility as a data analyst to make sure your analysis is fair. Which aspect of patient demographics might get in the way of fairness?
+v The dataset represents people who are single.
+The dataset indicates which dental procedure the patients had performed.
+The dataset includes people who all live in the same zip code.
+-The dataset contains patient identification numbers.
+Question 8
+Scenario 2 continued
+As you’re reviewing the dataset, you notice that there are a disproportionate number of senior citizens. So, you investigate further and find out that this zip code represents a rural community in Colorado with about 800 residents. In addition, there’s a large assisted-living facility in the area. Nearly 300 of the residents in the 81137 zip code live in the facility. 
+You recognize that’s a sizable number, so you want to find out if age has an effect on a patient’s likelihood to attend a follow-up dental appointment. You analyze the data, and your analysis reveals that older people tend to miss follow-ups more than younger people. 
+So, you do some research online and discover that people over the age 60 are 50% more likely to miss dentist appointments. Sometimes this is because they’re on a fixed income. Also, many senior citizens lack transportation to get to and from appointments. 
+With this new knowledge, you write an email to your supervisor expressing your concerns about the dataset. He agrees with your concerns, but he’s also impressed with what you’ve learned and thinks your findings could be very important to the project. He asks you to change the business task. Now, the NDS campaign will be about educating dental offices on the challenges faced by senior citizens and finding ways to help them access quality dental care. 
+Changing the business task involves which of the following?
+v Defining the new question or problem to be solved
+Creating a graphical representation of the data
+Using a database instead of a spreadsheet
+Conducting a gap analysis
+Question 9
+Scenario 2 continued
+You continue with your analysis. In the end, your findings support what you discovered during your online research: As people get older, they’re less likely to attend follow-up dental visits. 
+But you’re not done yet. You know that data should be combined with human insights in order to lead to true data-driven decision-making. So, your next step is to share this information with people who are familiar with the problem. They’ll help verify the results of your data analysis.
+Fill in the blank: The people who are familiar with a problem and help verify the results of data analysis are _____.
+data scientists
+stakeholders
+customers
+v subject-matter experts
+Question 10
+Scenario 2 continued
+The subject-matter experts are impressed by your analysis. The team agrees to move to the next step: data visualization. You know it’s important that stakeholders at NDS can quickly and easily understand that older people are less likely to attend important follow-up dental appointments. This will help them create an effective campaign for members.
+It’s time to create your presentation to stakeholders. It will include a data visualization that demonstrates the trend of people being less likely to attend follow-up appointments as they get older. Which type of chart will be most effective?
+A table
+v A line chart
+A doughnut chart
+A pie chart
+---
+*Course challenge*
+Total points 10
+Question 1
+Scenario 1, question 1-5
+You’ve just started a new job as a data analyst. You’re working for a midsized pharmacy chain with 38 stores in the American Southwest. Your supervisor shares a new data analysis project with you.
+She explains that the pharmacy is considering discontinuing a bubble bath product called Splashtastic. Your supervisor wants you to analyze sales data and determine what percentage of each store’s total daily sales come from that product. Then, you’ll present your findings to leadership.
+You know that it's important to follow each step of the data analysis process: ask, prepare, process, analyze, share, and act. So, you begin by defining the problem and making sure you fully understand stakeholder expectations.
+One of the questions you ask is where to find the dataset you’ll be working with. Your supervisor explains that the company database has all the information you need. 
+Next, you continue to the prepare step. You access the database and write a query to retrieve data about Splashtastic. You notice that there are only 38 rows of data, representing the company’s 38 stores. In addition, your dataset contains five columns: Store Number, Average Daily Customers, Average Daily Splashtastic Sales (Units), Average Daily Splashtastic Sales (Dollars), and Average Total Daily Sales (All Products). 
+Considering the size of your dataset, what’s the best way to proceed with the process and analyze steps?
+v Download the data, then use a spreadsheet to process and analyze it.
+Continue using the company database to process and analyze the data.
+Use SQL to process and analyze the data.
+Upload the data, then process and analyze it using Tableau.
+Question 2
+Scenario 1 continued
+You’ve downloaded the data from your company database and imported it into a spreadsheet. To use the dataset for this scenario, click the link below and select “Use Template.” 
+Link to template: Course Challenge - Scenario 1
+OR 
+If you don’t have a Google account, you can download the template directly from the attachment below.
+Now, it’s time to process the data. As you know, this step involves finding and eliminating errors and inaccuracies that can get in the way of your results. While cleaning the data, you notice there’s missing data in one of the rows. What might you do to fix this problem? Select all that apply.
+Sort the spreadsheet so the row with missing data is at the bottom
+v Ask a colleague on your team how they've handled similar issues in the past
+v Ask you supervisor for guidance
+Delete the row with the missing data point
+Question 3
+Scenario 1 continued
+Once you’ve found the missing information, you analyze your dataset. 
+During analysis, you create a new column F. At the top of the column, you add: Average Percentage of Total Sales - Splashtastic. What is this column label called?
+v An attribute
+A headline 
+A reference
+A title
+Question 4
+Scenario 1 continued
+Next, you determine the average total daily sales over the past 12 months at all stores. The range that contains these sales is E2:E39. Identify the correct way to write your function.
+=AVERAGE(E2+E39)
+v =AVERAGE(E2:E39)
+=AVERAGE(E2-E39)
+=AVERAGE(E2,E39)
+Question 5
+Scenario 1 continued
+Next, you create a slideshow, which includes a data visualization to highlight the Splashtastic sales insights you've discovered. You’ve reached which phase of the data analysis process?
+Analyze
+Act
+Manage
+v Share
+Question 6
+Scenario 2, questions 6-10
+You’ve been working for the nonprofit National Dental Society (NDS) as a junior data analyst for about two months. The mission of the NDS is to help its members advance the oral health of their patients. NDS members include dentists, hygienists, and dental office support staff. 
+The NDS is passionate about patient health. Part of this involves automatically scheduling follow-up appointments after crown replacement, emergency dental surgery, and extraction procedures. NDS believes the follow-up is an important step to ensure patient recovery and minimize infection. 
+Unfortunately, many patients don’t show up for these appointments, so the NDS wants to create a campaign to help its members learn how to encourage their patients to take follow-up appointments seriously. If successful, this will help the NDS achieve its mission of advancing the oral health of all patients. 
+Your supervisor has just sent you an email saying that you’re doing very well on the team, and he wants to give you some additional responsibility. He describes the issue of many missed follow-up appointments. You are tasked with analyzing data about this problem and presenting your findings using data visualizations. 
+An NDS member with three dental offices in Colorado offers to share its data on missed appointments. So, your supervisor uses a database query to access the dataset from the dental group. The query instructs the database to retrieve all patient information from the member’s three dental offices, located in zip code 81137. 
+The table is dental_data_table, and the column name is zip_code. How do you complete the following query? 
+WHERE_zip_code = 81137
+zip_code = 81137
+v WHERE zip_code = 81137
+WHERE = 81137
+Question 7
+Scenario 2 continued
+The dataset your supervisor retrieved and imported into a spreadsheet includes a list of patients, their demographic information, dental procedure types, and whether they attended their follow-up appointment. To use the dataset for this scenario, click the link below and select “Use Template.”
+Link to template: Course Challenge - Scenario 2
+OR 
+If you don’t have a Google account, you can download the template directly from the attachment below.
+The patient demographic information includes data such as age and gender. As you’re learning, it’s your responsibility as a data analyst to make sure your analysis is fair. The fact that the dataset includes people who all live in the same zip code might get in the way of fairness.
+v True
+False
+Question 8
+Scenario 2 continued
+As you’re reviewing the dataset, you notice that there are a disproportionate number of senior citizens. So, you investigate further and find out that this zip code represents a rural community in Colorado with about 800 residents. In addition, there’s a large assisted-living facility in the area. Nearly 300 of the residents in the 81137 zip code live in the facility. 
+You recognize that’s a sizable number, so you want to find out if age has an effect on a patient’s likelihood to attend a follow-up dental appointment. You analyze the data, and your analysis reveals that older people tend to miss follow-ups more than younger people. 
+So, you do some research online and discover that people over the age 60 are 50% more likely to miss dentist appointments. Sometimes this is because they’re on a fixed income. Also, many senior citizens lack transportation to get to and from appointments. 
+With this new knowledge, you write an email to your supervisor expressing your concerns about the dataset. He agrees with your concerns, but he’s also impressed with what you’ve learned and thinks your findings could be very important to the project. He asks you to change the business task. Now, the NDS campaign will be about educating dental offices on the challenges faced by senior citizens and finding ways to help them access quality dental care. 
+Changing the business task involves which of the following?
+Conducting a gap analysis
+Creating a graphical representation of the data
+v Defining the new question or problem to be solved
+Using a database instead of a spreadsheet
+Question 9
+Scenario 2 continued
+You continue with your analysis. In the end, your findings support what you discovered during your online research: As people get older, they’re less likely to attend follow-up dental visits. 
+But you’re not done yet. You know that data should be combined with human insights in order to lead to true data-driven decision-making. So, your next step is to share this information with people who are familiar with the problem. They’ll help verify the results of your data analysis.
+The people who are familiar with a problem and help verify the results of data analysis include customers and competitors.
+True
+v False
+Question 10
+Scenario 2 continued
+The subject-matter experts are impressed by your analysis. The team agrees to move to the next step: data visualization. You know it’s important that stakeholders at NDS can quickly and easily understand that older people are less likely to attend important follow-up dental appointments. This will help them create an effective campaign for members.
+It’s time to create your presentation to stakeholders. It will include a data visualization that depicts the relationship between age and follow-up dental appointment attendance rates. For this, a doughnut chart will be most effective.
+True
+v False
+
+526 Reviews
