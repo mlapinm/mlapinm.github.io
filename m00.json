@@ -296,14 +296,31 @@
 	},
     {
 	 "header": "fcc",
-	 "title": "fcc",
-	 "card-text": ["react"],
+	 "title": "fcc contents",
+	 "card-text": [
+	 "Responsive Web Design",
+	 "JavaScript Algorithms and Data Structures",
+	 "Front End Development Libraries",
+	 "Data Visualization",
+	 "Back End Development and APIs",
+	 "",
+	 "",
+	 ""
+	 ],
 	 "link": "f2522fcc"
 	},
     {
 	 "header": "coursera",
-	 "title": "coursera",
-	 "card-text": ["coursera"],
+	 "title": "coursera transcript",
+	 "card-text": [
+	 "Using data to drive successful outcomes.",
+	 "Introduction to problem-solving and effective questioning",
+	 "Introduction to data exploration",
+	 "integrity",
+	 "",
+	 "",
+	 ""
+	 ],
 	 "link": "f2424cours"
 	},
     {
