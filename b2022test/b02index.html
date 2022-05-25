@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function foo(){
+            let el = document.getElementsByClassName("div2")[0];
+            let pp = getComputedStyle(el)
+            let display = pp.display
+            if(display == 'none'){
+                el.style.display = 'block'
+            }else{
+                el.style.display = 'none'
+            }
+        }
+    </script>
+    <div class="div1" style="display: block; color: blue;" onclick="foo()">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+    <div class="div2" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa delectus fuga ipsum temporibus tempore? Temporibus, nisi quisquam at excepturi amet dolor debitis quas, perferendis dolores illum labore eius mollitia provident.
+    Deserunt consequatur similique libero fugiat at eligendi nam beatae ducimus delectus, rem veniam cum suscipit. Quo, molestias. Sit aut eligendi atque consequatur alias, nam officia illum voluptate repudiandae sequi vel?
+    Perspiciatis deserunt ipsa eveniet id exercitationem quis libero sint delectus maiores distinctio nemo harum necessitatibus veniam facilis voluptatem tenetur pariatur, minima obcaecati aspernatur nisi? Odio quisquam eveniet recusandae mollitia labore?</div>
+</body>
+</html>
