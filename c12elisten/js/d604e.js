@@ -1,0 +1,22 @@
+var d604e = [
+  "<a href=\"https://www.youtube.com/watch?v=jYB03881ewk&list=RDCMUC7HhSlh-QbL9626A_mM4DRg&index=4\">1</a>",
+  "1",
+  "Well I'm pretty busy.",
+  "I get up early and check my email.",
+  "I listen to the radio.",
+  "I don't watch tv on weekdays.",
+  "Then I study.",
+  "2",
+  "It's crazy.",
+  "We get up late so I eat breakfast in the car.",
+  "My husband doesn't have breakfast.",
+  "3",
+  "Well my wife and I read the newspaper.",
+  "I have breakfast and my wife has coffee.",
+  "We're pretty quiet.",
+  "We don't talk a lot.",
+  "4",
+  "I try to study but my brother and sister make a lot of noise.",
+  "They don't care.",
+  "My sister watches tv and my brother plays games on the computer."
+]

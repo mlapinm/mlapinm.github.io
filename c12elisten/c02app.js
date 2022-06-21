@@ -129,6 +129,8 @@ $(() => {
   }
 
   function setLists(texts){
+    list0.html("")
+
     let l0 = texts[0].split('\n')
     count0 = l0.length
     let l1 = texts[1].split('\n')
@@ -137,43 +139,51 @@ $(() => {
     let l = []
     for(let i = 0; i < count; i++){
         if(i < count0){
-            l.push('<p>"'+l0[i]+'",</p>')
+            l.push('<p>'+l0[i]+'</p>')
           }else{
-            l.push('<p>"' + '",</p>')
+            l.push('<p>' + '</p>')
           }
+        if (0)  {
           if(i < count1){
-            l.push('<p>"'+l1[i]+'",</p>')
+            l.push('<p>'+l1[i]+'</p>')
           }else{
-            l.push('<p>"' + '",</p>')
+            l.push('<p>' + '</p>')
           }
+        }
     }
 
-    let l12 = []
-    for(let i = 0; i < count; i++){
-        if(i < count0){
-            l12.push('<p>"'+l0[i]+'",</p>')
-          }else{
-            l12.push('<p>"' + '",</p>')
-          }
-    }
-    for(let i = 0; i < count; i++){
-        if(i < count1){
-            l12.push('<p>"'+l1[i]+'",</p>')
-          }else{
-            l12.push('<p>"' + '",</p>')
-          }
-    }
+    // list0.html(text00)
+    // list1.html(text01)
 
+    $.each(l0,(i, e) => {
+      // console.log(i, e)
+      let p = $('<p></p>')
+      let pr = $('<p></p>')
+      p.html(e)
+      p.addClass('e_' + i)
+      p.addClass('ee')
+      list0.append(p)
+      list0.append(pr)
 
-    for(e in l){
-      // console.log(l[e])
-    }
-    let text00 = l.join('\n')
-    let text01 = l12.join('\n')
+      p.click((e) => {
+        let target = $(e.target)
+        var num = 0
 
+        var cl = target.attr('class')
+        var match = /e_(\d+)/.exec(cl)
+        if(match){
+          num = match[1]
+        }
+        let pr = $(target[0].nextSibling)
+        if(pr.text() == "" ){
+          pr.html(l1[num])
+        } else {
+          pr.html("")
+        }
+      })
 
-    list0.html(text00)
-    list1.html(text01)
+    })
+//    console.log(text00)
 
   }
 
