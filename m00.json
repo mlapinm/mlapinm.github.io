@@ -295,6 +295,18 @@
 	 "link": "https://mlapinm.github.io/f2182blog/"
 	},
     {
+	"header": "campus",
+	"title": "Listen and practice",
+	"card-text": [""],
+	"link": "c12elisten"
+	},
+	{
+	"header": "",
+	"title": "",
+	"card-text": [""],
+	"link": ""
+	},
+		  {
 	 "header": "fcc",
 	 "title": "fcc contents",
 	 "card-text": [
