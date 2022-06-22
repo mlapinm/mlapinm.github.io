@@ -1,0 +1,20 @@
+var d615e = [
+  "<a href=\"https://www.youtube.com/watch?v=wT1YVMdl1mU&list=RDCMUC7HhSlh-QbL9626A_mM4DRg&index=27\">i'm closest to my twin nick</a>",
+  "I'm closest to my twin nick.",
+  "Obviously we have so much in common.",
+  "The same friends.",
+  "The same soccer team.",
+  "The same music.",
+  "We go everywhere together but we have crazy arguments about everything.",
+  "We're like oil and water.",
+  "I'm like my mom calm and easy going.",
+  "Nicks like my dad very bad tempered.",
+  "They fight like cats and dogs but things have changed now that.",
+  "We're older we appreciate each other more.",
+  "The biggest difference is probably.",
+  "Interests.",
+  "I'm into all things history and politics.",
+  "And nyx interested in science and nature but of course we're a lot closer than just brothers and sisters.",
+  "In a way we're like one.",
+  "I would trust him like I would trust no one else."
+]
