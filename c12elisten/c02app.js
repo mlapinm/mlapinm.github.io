@@ -8,6 +8,7 @@ $(() => {
   let table = $('.table')
   let list0 = $('.div_list0')
   let list1 = $('.div_list1')
+  let traslate = $('.div_translate')
   let lines0 = []
 
   let lines1 = []
@@ -17,14 +18,18 @@ $(() => {
   let count1 = lines1.length
   let nav_spans = []
 
+  let translate_map = new Map()
+
   function head_line(num){
     let s = `${num} ${items[num][1]} ${items[num][2]} ${items[num][0].length}`
     return s
   }
 
   function create_nav(){
+
     $(".div_head").text(head_line(0))
 
+    let k = 0
     for(let i in items){
 
       if(i%2){
@@ -36,10 +41,9 @@ $(() => {
       nav_spans.push(span)
 
       name_ = items[i][1]
-      name_ = name_.substring(3)
-      name_ = name_.substring(0, name_.length-1)
-
-      span.text(name_)
+      let n = k + 1
+      let s = n < 10 ? `0${n}`: n
+      span.text(s)
 
 
       span.click((e)=>{
@@ -48,7 +52,7 @@ $(() => {
         res = class_name.match(/cl_([^ ]+)/)
         let num = res ? res[1] : 0
         num = Number(num)
-
+        item_num = num
 
         textList0 = items[num][0]
         textList1 = items[num + 1][0]
@@ -72,6 +76,7 @@ $(() => {
 
       $(".div_nav").append(span)
       $(".div_nav").append(' ')
+      k += 1
 
 
     }
@@ -174,6 +179,26 @@ $(() => {
         if(match){
           num = match[1]
         }
+        num = Number(num)
+
+
+        if(translate_map.has(l0[num])){
+          translate_map.delete(l0[num])
+        } else {
+          translate_map.set(l0[num], l1[num])
+        }
+        traslate.html("")
+        for (let [k, v] of translate_map){
+          let p = $('<p></p>')
+          p.addClass('grey')
+
+          let pr = $('<p></p>')
+          p.text(k + " [en]")
+          pr.text(v + " [ru]")
+          traslate.append(p)
+          traslate.append(pr)
+        }
+
         let pr = $(target[0].nextSibling)
         if(pr.text() == "" ){
           pr.html(l1[num])
