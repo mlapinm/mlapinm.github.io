@@ -13,8 +13,8 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "Listen and practice ",
-      "",
+      "Listen and practice 1",
+      "find",
       ""
     ],
     "link": "d12index.html"
@@ -23,11 +23,11 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "Listen and practice ",
+      "Friends ",
       "",
       ""
     ],
-    "link": "d13index.html"
+    "link": "d14index.html"
    },
    {
     "header": "",
