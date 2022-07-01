@@ -35,7 +35,7 @@ var notes = [
     "card-text": [
       "",
       "Listen and practice ",
-      ""
+      "empty"
     ],
     "link": "d14index.html"
    },
@@ -43,11 +43,11 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "level0",
       "",
       ""
     ],
-    "link": ""
+    "link": "d15index.html"
    },
    {
     "header": "",
