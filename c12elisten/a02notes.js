@@ -53,11 +53,11 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "Level 2",
       "",
       ""
     ],
-    "link": ""
+    "link": "d18index.html"
    },
    {
     "header": "",
