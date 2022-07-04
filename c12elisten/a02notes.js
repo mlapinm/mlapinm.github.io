@@ -17,7 +17,7 @@ var notes = [
       "find",
       ""
     ],
-    "link": "d12index.html"
+    "link": "d42index.html"
    },
    {
     "header": "",

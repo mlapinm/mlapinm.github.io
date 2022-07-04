@@ -1,0 +1,232 @@
+$(() => {
+
+  
+  let log1 = $('.log1')
+  let log2 = $('.log2')
+  let edit0 = $('.edit0')
+  let edit1 = $('.edit1')
+  let table = $('.table')
+  let list0 = $('.div_list0')
+  let list1 = $('.div_list1')
+  let traslate = $('.div_translate')
+  let lines0 = []
+
+  let lines1 = []
+  let editText = ''
+  
+  let count0 = lines0.length
+  let count1 = lines1.length
+  let nav_spans = []
+
+  let translate_map = new Map()
+
+  function head_line(num){
+    let s = `${num} ${items[num][1]} ${items[num][2]} ${items[num][0].length}`
+    return s
+  }
+
+  function create_nav(){
+
+    $(".div_head").text(head_line(0))
+
+    let k = 0
+    for(let i in items){
+
+      if(i%2){
+        continue
+      }
+
+      let span = $("<span></span>")
+      span.addClass("cl_" + i)
+      nav_spans.push(span)
+
+      name_ = items[i][1]
+      let n = k + 1
+      let s = n < 10 ? `0${n}`: n
+      span.text(s)
+
+
+      span.click((e)=>{
+        let sp = $(e.target)
+        let class_name = sp.attr('class')
+        res = class_name.match(/cl_([^ ]+)/)
+        let num = res ? res[1] : 0
+        num = Number(num)
+        item_num = num
+
+        textList0 = items[num][0]
+        textList1 = items[num + 1][0]
+        setEdit0(items[num][0].join('\n'))
+        setEdit1(items[num + 1][0].join('\n'))
+        setTable(getEdit())
+        setLists(getEdit())
+
+
+        $(".div_head").text(head_line(num))
+        
+
+        for(let e in nav_spans){
+          nav_spans[e].removeClass('clicked')
+        }
+
+        sp.addClass('clicked')
+         
+      })
+
+
+      $(".div_nav").append(span)
+      $(".div_nav").append(' ')
+      k += 1
+
+
+    }
+
+
+  }
+
+  function create(){
+    let textList0 = items[0][0]
+    let text0 = textList0.join('\n')
+    let textList1 = items[1][0]
+    let text1 = textList1.join('\n')
+    setEdit0(text0)
+    setEdit1(text1)
+    setTable([text0, text1])
+    setLists([text0, text1])
+
+    create_nav()
+
+
+    edit0.on('input selectionchange propertychange', function() {
+      setTable(getEdit())
+      setLists(getEdit())
+    })
+   
+    edit1.on('input selectionchange propertychange', function() {
+        setTable(getEdit())
+        setLists(getEdit())
+      })
+  
+  }
+
+  function setTable(texts){
+    let l0 = texts[0].split('\n')
+    count0 = l0.length
+    let l1 = texts[1].split('\n')
+    count1 = l1.length
+    let count = count0 >= count1 ? count0 : count1
+
+    table.empty()
+    for(let i=0;i<count;i++){
+      let tr = $("<tr></tr>")
+      let td0 = $("<td></td>")
+      let td1 = $("<td></td>")
+      if(i < count0){
+        td0.text(l0[i])
+      }
+      if(i < count1){
+        td1.text(l1[i])
+      }
+      tr.append(td0)
+      tr.append(td1)
+      table.append(tr)
+      }
+  }
+
+  function setLists(texts){
+    list0.html("")
+
+    let l0 = texts[0].split('\n')
+    count0 = l0.length
+    let l1 = texts[1].split('\n')
+    count1 = l1.length
+    count = count0 > count1 ? count0 : count1
+    let l = []
+    for(let i = 0; i < count; i++){
+        if(i < count0){
+            l.push('<p>'+l0[i]+'</p>')
+          }else{
+            l.push('<p>' + '</p>')
+          }
+        if (0)  {
+          if(i < count1){
+            l.push('<p>'+l1[i]+'</p>')
+          }else{
+            l.push('<p>' + '</p>')
+          }
+        }
+    }
+
+    // list0.html(text00)
+    // list1.html(text01)
+
+    $.each(l0,(i, e) => {
+      // console.log(i, e)
+      let p = $('<p></p>')
+      let pr = $('<p></p>')
+      p.html(e)
+      p.addClass('e_' + i)
+      p.addClass('ee')
+      list0.append(p)
+      list0.append(pr)
+
+      p.click((e) => {
+        let target = $(e.target)
+        var num = 0
+
+        var cl = target.attr('class')
+        var match = /e_(\d+)/.exec(cl)
+        if(match){
+          num = match[1]
+        }
+        num = Number(num)
+
+
+        if(translate_map.has(l0[num])){
+          translate_map.delete(l0[num])
+        } else {
+          translate_map.set(l0[num], l1[num])
+        }
+        traslate.html("")
+        for (let [k, v] of translate_map){
+          let p = $('<p></p>')
+          p.addClass('grey')
+
+          let pr = $('<p></p>')
+          p.text(k + " [en]")
+          pr.text(v + " [ru]")
+          traslate.append(p)
+          traslate.append(pr)
+        }
+
+        let pr = $(target[0].nextSibling)
+        if(pr.text() == "" ){
+          pr.html(l1[num])
+        } else {
+          pr.html("")
+        }
+      })
+
+    })
+//    console.log(text00)
+
+  }
+
+  function setEdit0(text){
+    $(".edit0")[0].value = text
+  }
+
+  function setEdit1(text){
+    $(".edit1")[0].value = text
+  }
+
+  function getEdit(text){
+    return [$(".edit0")[0].value, $(".edit1")[0].value] 
+  }
+
+
+  create()
+
+
+
+})
