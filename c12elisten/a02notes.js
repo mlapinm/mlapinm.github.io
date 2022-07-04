@@ -61,13 +61,13 @@ var notes = [
    },
    {
     "header": "",
-    "title": "ml",
+    "title": "",
     "card-text": [
-      "",
-      "",
+      "d20",
+      "empty",
       ""
     ],
-    "link": "d22index.html"
+    "link": "d20index.html"
    },
    {
     "header": "",
