@@ -63,8 +63,8 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "d20",
-      "empty",
+      "Bridge to English",
+      "",
       ""
     ],
     "link": "d20index.html"
