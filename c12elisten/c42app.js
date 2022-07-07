@@ -8,6 +8,12 @@ $(() => {
   let table = $('.table')
   let list0 = $('.div_list0')
   let list2 = $('.div_list2')
+  let p1 =$('<p></p>')
+  let p2 =$('<p></p>')
+  let p3 =$('<p></p>')
+  list2.append(p1)
+  list2.append(p2)
+  list2.append(p3)
   let input = $('.input')
   let its = []
   let n_view = 0
@@ -59,35 +65,35 @@ $(() => {
 
 
   }
+  
 
   function show_list2(item){
-    list2.html('')
+
     let i = item[0]
     let j = item[1]
     let r = Number(i) + 1
-    let p1 =$('<p></p>')
-    let p2 =$('<p></p>')
-    let p3 =$('<p></p>')
     p2.addClass('grey')
-    let p02 =$('<p></p>')
-    let p03 =$('<p></p>')
-    p02.addClass('grey')
-    list2.append(p1)
-    list2.append(p2)
-    list2.append(p3)
     p1.text(items[i][1] + ' ' + its.length + ' ' + (Number(n_view) + 1))
     p2.text(items[i][0][j])
     p3.text(items[r][0][j])
-    p02.text(items[i][0][j])
-    p03.text(items[r][0][j])
 
-    list2.click(() => {
-      list0.append(p02)
-      list0.append(p03)
-      // console.log(333)
-    })
+
 
   }
+
+  list2.click(() => {
+    let p02 =$('<p></p>')
+    let p03 =$('<p></p>')
+    p02.addClass('grey')
+    p02.text(p2.text())
+    p03.text(p3.text())
+
+
+    list0.append(p02)
+    list0.append(p03)
+
+  })
+
 
 
   function create(){
