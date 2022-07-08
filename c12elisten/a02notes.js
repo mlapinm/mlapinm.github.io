@@ -73,21 +73,11 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
+      "WooEnglish",
       "",
-      "",
-      ""
+      "16"
     ],
-    "link": ""
-   },
-   {
-    "header": "",
-    "title": "",
-    "card-text": [
-      "Django for evrybody",
-      "d41index.html",
-      ""
-    ],
-    "link": "d41index.html"
+    "link": "d22index.html"
    },
    {
     "header": "",
