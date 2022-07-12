@@ -74,20 +74,20 @@ var notes = [
     "title": "",
     "card-text": [
       "WooEnglish",
-      "",
-      "16"
+      "Beginer",
+      "3"
     ],
-    "link": "d22index.html"
+    "link": "d24index.html"
    },
    {
     "header": "",
     "title": "",
     "card-text": [
+      "WooEnglish",
       "",
-      "",
-      ""
+      "30"
     ],
-    "link": ""
+    "link": "d22index.html"
    },
    {
     "header": "",
