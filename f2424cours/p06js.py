@@ -97,11 +97,11 @@ if __name__ == "__main__":
     l = os.listdir()
     l = [e for e in l if e[:3] == 'q14' and pp.get_num(e) < 42200]
 
-    # print(l)
+    print(l)
 
     # make_files(l)
 
-    make_script1()
+    # make_script1()
 
     # print(len(l))
     print(123)
