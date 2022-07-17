@@ -1,0 +1,20 @@
+var d55101e = [
+  "Unit 1: Entering the Job Market.",
+  "Overview of the Unit.",
+  "Welcome to Unit 1 of the English for Career Development MOOC!.",
+  "Learning about the necessary steps in the US job application process will help you become a successful job seeker.",
+  "Career planning begins with a clear understanding of your professional interests and skills for the job market as well as the current jobs in demand.",
+  "We will look at the job search process through selected readings and video lectures.",
+  "We will also learn and use vocabulary that will help you understand the job application process.",
+  "This unit will end with a discussion board that lets you apply the vocabulary learned to the ideas we’ve studied.",
+  "By the end of this unit, you will:.",
+  "Become familiar with the course structure, different learning options, and overall course objectives.",
+  "Identify the steps in the job search process.",
+  "Define and accurately use content-related vocabulary in course activities and games.",
+  "Identify word forms to expand your vocabulary.",
+  "Compare and Contrast the job search process in the US and your home country.",
+  "Read, watch, and listen to a variety of texts and multimedia sources.",
+  "Demonstrate your understanding of these texts and key course ideas through comprehension check quizzes and a discussion board response.",
+  "Tell the difference between simple present and present progressive in course activities and games.",
+  "Use phrases for compare and contrast in the discussion board responses."
+]

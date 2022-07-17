@@ -113,11 +113,11 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "coursera english",
       "",
       ""
     ],
-    "link": ""
+    "link": "d22index.html"
    },
   {
     "header": "",
