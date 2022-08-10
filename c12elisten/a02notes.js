@@ -91,13 +91,13 @@ var notes = [
    },
    {
     "header": "",
-    "title": "",
+    "title": "cartoon",
     "card-text": [
       "",
       "",
       ""
     ],
-    "link": ""
+    "link": "d26index.html"
    },
    {
     "header": "",
