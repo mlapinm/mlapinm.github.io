@@ -91,9 +91,9 @@ var notes = [
    },
    {
     "header": "",
-    "title": "cartoon",
+    "title": "",
     "card-text": [
-      "",
+      "cartoon",
       "",
       ""
     ],
@@ -103,11 +103,11 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "songs",
       "",
       ""
     ],
-    "link": ""
+    "link": "d28index.html"
    },
    {
     "header": "",
