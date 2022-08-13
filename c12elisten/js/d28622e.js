@@ -1,0 +1,23 @@
+var d28622e = [
+  "<a href=\"https://www.youtube.com/watch?v=BZozPuJ9M80\">Moon Ray - Comanchero - 99</a>",
+  "Moon Ray - Comanchero - 99.",
+  "Comanchero, comanchero, comanchero, comanchero-o.",
+  "Oh can you see, he is the one.",
+  "Day after day, he is riding in the sun.",
+  "He's travelling through deserts all alone.",
+  "I will bring the comanchero his tomahawk.",
+  "His lonesome walk, his lonesome walk.",
+  "Who's in mind of comanchero: a man of law.",
+  "A pretty squaw, a pretty squaw.",
+  "Comanchero, comanchero, comanchero, comanchero-o.",
+  "Comanchero, comanchero, comanchero, comanchero-o.",
+  "I will bring the comanchero his tomahawk.",
+  "His lonesome walk, his lonesome walk.",
+  "Who's in mind of comanchero: a man of law.",
+  "A pretty squaw, a pretty squaw.",
+  "Who will join the comanchero where eagles fly.",
+  "Where horses ride, where horses ride.",
+  "Will the road take comanchero to his tee-pee.",
+  "Or to the sea, or to the sea.",
+  "Comanchero, comanchero, comanchero, comanchero-o."
+]
