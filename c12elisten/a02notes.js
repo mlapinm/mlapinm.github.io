@@ -94,10 +94,30 @@ var notes = [
     "title": "",
     "card-text": [
       "cartoon",
-      "",
+      "Fairy Tales Every Day",
       ""
     ],
     "link": "d26index.html"
+   },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "cartoon",
+      "Kids Hut",
+      ""
+    ],
+    "link": "d30index.html"
+   },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "cartoon",
+      "Kids Hut 2",
+      ""
+    ],
+    "link": "d32index.html"
    },
    {
     "header": "",
