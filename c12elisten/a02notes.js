@@ -123,6 +123,16 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
+      "cartoon",
+      "Duck tales",
+      ""
+    ],
+    "link": "d34index.html"
+   },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
       "songs",
       "",
       ""
