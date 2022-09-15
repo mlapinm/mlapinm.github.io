@@ -158,5 +158,25 @@ var notes = [
       ""
     ],
     "link": ""
+   },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": ""
+   },
+  {
+    "header": "",
+    "title": "links",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "d08index.html"
    }
 ]
