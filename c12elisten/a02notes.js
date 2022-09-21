@@ -163,11 +163,11 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "links",
       "",
       ""
     ],
-    "link": ""
+    "link": "/c14links/d20index.html"
    },
   {
     "header": "",
