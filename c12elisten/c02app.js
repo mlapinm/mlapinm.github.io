@@ -20,6 +20,13 @@ $(() => {
 
   let translate_map = new Map()
 
+  let status = 1
+  let dstatus = {
+    1: "en-ru",
+    2: "ru-en"
+  }
+
+
   function head_line(num){
     let s = `${num} ${items[num][1]} ${items[num][2]} ${items[num][0].length}`
     return s
@@ -77,9 +84,28 @@ $(() => {
       $(".div_nav").append(span)
       $(".div_nav").append(' ')
       k += 1
-
-
     }
+
+    let span = $("<span></span>")
+    span.addClass("cl_status")
+    nav_spans.push(span)
+
+    span.text(dstatus[1])
+
+
+    span.click((e)=>{
+      let sp = $(e.target)
+      let class_name = sp.attr('class')
+      let key = 0
+      for(let e of Object.keys(dstatus)){
+
+      }
+
+      console.log(sp.text())
+      sp.text("bb")
+    })
+
+    $(".div_nav").append(span)
 
 
   }
