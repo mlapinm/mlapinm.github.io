@@ -137,7 +137,6 @@ $(() => {
     setTable([text0, text1])
     setLists([text0, text1])
 
-    create_nav()
 
 
     edit0.on('input selectionchange propertychange', function() {
@@ -269,6 +268,7 @@ $(() => {
 
 
   create()
+  create_nav()
 
 
 
