@@ -33,7 +33,6 @@ $(() => {
   }
 
   function create_nav(){
-    $(".div_nav").html("")
 
     $(".div_head").text(head_line(0))
 
@@ -92,34 +91,18 @@ $(() => {
     nav_spans.push(span)
 
     span.text(dstatus[1])
-    let ts = ["en-ru", "ru-en"]
 
 
     span.click((e)=>{
       let sp = $(e.target)
       let class_name = sp.attr('class')
-      let text_sp = sp.text()
       let key = 0
-      if(text_sp == ts[0]){
-        sp.text(ts[1])
-        key = 1
-      }else{
-        sp.text(ts[0])
-        key = 0
-      }
-      let q = items.length
-      let tt = []
-      for(let i=0; i<q/2; i++){
-        let n0 = i * 2
-        let n1 = i * 2 + 1
-        tt = items[n0]
-        items[n0] = items[n1]
-        items[n1] = tt
+      for(let e of Object.keys(dstatus)){
 
       }
 
-      create()
-
+      console.log(sp.text())
+      sp.text("bb")
     })
 
     $(".div_nav").append(span)
