@@ -267,8 +267,8 @@ $(() => {
   }
 
 
-  create()
   create_nav()
+  create()
 
 
 
