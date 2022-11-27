@@ -3,6 +3,16 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
+      "Learn English with Jessica",
+      "",
+      ""
+    ],
+    "link": "d12index.html"
+   },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
       "Listen and practice 1",
       "",
       ""
@@ -153,11 +163,11 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "A Bit Of Fry And Laurie",
       "",
       ""
     ],
-    "link": ""
+    "link": "d41index.html"
    },
   {
     "header": "",

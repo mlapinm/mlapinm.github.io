@@ -1,6 +1,26 @@
 var notes = [
   {
     "header": "",
+    "title": "PsychoGeometrics",
+    "card-text": [
+      "susan dellinger",
+      "",
+      ""
+    ],
+    "link": "https://codepen.io/mlapin/full/OJjeprz"
+   },
+   {
+    "header": "",
+    "title": "boom",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "d00boom.html"
+   },
+   {
+    "header": "",
     "title": "boom",
     "card-text": [
       "",
