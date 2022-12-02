@@ -59,7 +59,7 @@ p{
 }
 
 .div_list0 p:nth-child(2n+1) {
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
 }
 
 .div_list1 {
@@ -70,8 +70,20 @@ p{
   border: 1px solid;
 }
 
-.grey {
-  background-color: gainsboro;
+.ee  {
+  /* background-color: gainsboro; */
+  background-color: #f0f0f0;
 }
+
+.blue {
+  background-color:khaki;
+}
+
+.grey  {
+  /* background-color: gainsboro; */
+  background-color: chartreuse;
+}
+
+
 
 

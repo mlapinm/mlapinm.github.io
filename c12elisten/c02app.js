@@ -13,6 +13,9 @@ $(() => {
 
   let lines1 = []
   let editText = ''
+
+  log1.text(333)
+
   
   let count0 = lines0.length
   let count1 = lines1.length
@@ -31,6 +34,12 @@ $(() => {
     let s = `${num} ${items[num][1]} ${items[num][2]} ${items[num][0].length}`
     return s
   }
+
+  let reveal_class = (who, name_class) => {
+    $("." + name_class).removeClass(name_class)
+    who.addClass(name_class)
+  }
+
 
   function create_nav(){
     $(".div_nav").html("")
@@ -214,6 +223,7 @@ $(() => {
 
       p.click((e) => {
         let target = $(e.target)
+
         var num = 0
 
         var cl = target.attr('class')
@@ -247,6 +257,7 @@ $(() => {
         } else {
           pr.html("")
         }
+        reveal_class(target, "blue")
       })
 
     })
