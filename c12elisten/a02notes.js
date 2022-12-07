@@ -171,6 +171,16 @@ var notes = [
    },
   {
     "header": "",
+    "title": "schooling",
+    "card-text": [
+      "1-12 Speak English With Tiffani",
+      "",
+      ""
+    ],
+    "link": "d62index.html"
+   },
+  {
+    "header": "",
     "title": "",
     "card-text": [
       "links",
