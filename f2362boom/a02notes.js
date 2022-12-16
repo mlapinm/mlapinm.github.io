@@ -19,7 +19,27 @@ var notes = [
     ],
     "link": "https://codepen.io/mlapin/full/OJjeprz"
    },
- {
+   {
+    "header": "",
+    "title": "b18culc",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "https://codepen.io/mlapin/full/qBKzrrY"
+   },
+   {
+    "header": "",
+    "title": "b20tculc",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "https://codepen.io/mlapin/full/gOjYYxp"
+   },
+   {
     "header": "",
     "title": "Morse",
     "card-text": [
@@ -28,16 +48,6 @@ var notes = [
       ""
     ],
     "link": "https://codepen.io/mlapin/full/XWYYYxv"
-   },
-   {
-    "header": "",
-    "title": "boom",
-    "card-text": [
-      "",
-      "",
-      ""
-    ],
-    "link": "d00boom.html"
    },
    {
     "header": "",
