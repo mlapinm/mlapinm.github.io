@@ -9,6 +9,26 @@ var notes = [
     ],
     "link": "https://codepen.io/mlapin/full/PoayxPG"
    },
+   {
+    "header": "",
+    "title": "Sand clock",
+    "card-text": [
+      "b24clock",
+      "",
+      ""
+    ],
+    "link": "https://codepen.io/mlapin/full/gOjaxpP"
+   },
+  {
+    "header": "",
+    "title": "Piano",
+    "card-text": [
+      "b16pikatr",
+      "organ",
+      ""
+    ],
+    "link": "https://codepen.io/mlapin/full/PoayxPG"
+   },
   {
     "header": "",
     "title": "PsychoGeometrics",
