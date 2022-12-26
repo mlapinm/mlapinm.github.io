@@ -1,0 +1,24 @@
+b25rm.txt
+
+https://codepen.io/bryik/pen/gqoGrB
+
+
+
+
+
+
+
+https://habr.com/ru/post/477956/
+JavaScript в 3D: введение в Three.js
+https://www.youtube.com/watch?v=uzkedMF-l4Q&t=0s
+Three.js Tutorial | Part 1: What is Three.js | Beginner
+
+https://codepen.io/SamiLaubo/pen/QxMmgq?editors=0010
+CodePen Home
+THREE.js STL-loader
+
+https://github.com/brickify/stl-models/blob/master/objects/bunny.bin.stl
+brickify/stl-models
+
+
+http://localhost:3000/b25car.html
