@@ -181,6 +181,16 @@ var notes = [
    },
   {
     "header": "",
+    "title": "Coursera",
+    "card-text": [
+      "Prepare Data",
+      "",
+      ""
+    ],
+    "link": "d46index.html"
+   },
+  {
+    "header": "",
     "title": "",
     "card-text": [
       "links",
