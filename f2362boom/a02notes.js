@@ -9,6 +9,15 @@ var notes = [
     ],
     "link": "https://codepen.io/mlapin/full/PoayxPG"
    },
+    "header": "",
+    "title": "Rubic",
+    "card-text": [
+      "Pazzles",
+      "",
+      ""
+    ],
+    "link": "https://codepen.io/mlapin/full/poZweya"
+   },
    {
     "header": "",
     "title": "Sand clock",
