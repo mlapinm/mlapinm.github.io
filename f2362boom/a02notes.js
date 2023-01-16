@@ -11,13 +11,33 @@ var notes = [
    },
   {
     "header": "",
+    "title": "PsychoGeometrics",
+    "card-text": [
+      "susan dellinger",
+      "",
+      ""
+    ],
+    "link": "https://codepen.io/mlapin/full/OJjeprz"
+   },
+  {
+    "header": "",
     "title": "Rubic",
     "card-text": [
-      "Pazzles",
+      "b26pazzle",
       "",
       ""
     ],
     "link": "https://codepen.io/mlapin/full/poZweya"
+   },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "b28mosaic",
+      "",
+      ""
+    ],
+    "link": "https://codepen.io/mlapin/full/rNrzQyM"
    },
    {
     "header": "",
@@ -28,26 +48,6 @@ var notes = [
       ""
     ],
     "link": "https://codepen.io/mlapin/full/gOjaxpP"
-   },
-  {
-    "header": "",
-    "title": "Piano",
-    "card-text": [
-      "b16pikatr",
-      "organ",
-      ""
-    ],
-    "link": "https://codepen.io/mlapin/full/PoayxPG"
-   },
-  {
-    "header": "",
-    "title": "PsychoGeometrics",
-    "card-text": [
-      "susan dellinger",
-      "",
-      ""
-    ],
-    "link": "https://codepen.io/mlapin/full/OJjeprz"
    },
    {
     "header": "",
