@@ -39,6 +39,16 @@ var notes = [
     ],
     "link": "https://codepen.io/mlapin/full/rNrzQyM"
    },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "b32prepare",
+      "",
+      ""
+    ],
+    "link": "https://codepen.io/mlapin/full/ExpbExx"
+   },
    {
     "header": "",
     "title": "Sand clock",
