@@ -133,6 +133,16 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
+      "English Speaking Courses",
+      "",
+      ""
+    ],
+    "link": "d56index.html"
+   },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
       "cartoon",
       "Duck tales",
       ""
