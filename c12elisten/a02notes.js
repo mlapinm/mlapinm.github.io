@@ -184,7 +184,7 @@ var notes = [
     "title": "schooling",
     "card-text": [
       "1-12 Speak English With Tiffani",
-      "",
+      "*English with Max",
       ""
     ],
     "link": "d62index.html"
