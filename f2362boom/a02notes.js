@@ -49,6 +49,26 @@ var notes = [
     ],
     "link": "https://codepen.io/mlapin/full/ExpbExx"
    },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "b34draw",
+      "",
+      ""
+    ],
+    "link": "https://codepen.io/mlapin/full/WNKzmYM"
+   },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "b36run",
+      "line",
+      ""
+    ],
+    "link": "https://codepen.io/mlapin/full/KKBRZPB"
+   },
    {
     "header": "",
     "title": "Sand clock",
