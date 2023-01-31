@@ -93,6 +93,16 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
+      "b2604shoes",
+      "",
+      ""
+    ],
+    "link": "b2604shoes.html"
+   },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
       "",
       "",
       ""
