@@ -371,6 +371,12 @@
 	 "link": "https://sites.google.com/view/mlapinm/"
 	},
     {
+	 "header": "wiki",
+	 "title": "",
+	 "card-text": ["setup pc books movies"],
+	 "link": "c16wiki/index.html"
+	},
+    {
 	 "header": "book",
 	 "title": "С.С.С.",
 	 "card-text": ["Leil Lowndes, U.S.S."],
