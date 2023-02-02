@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial;
+            font-size: 1.2rem;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        p {
+            font-family: Arial;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+<h3 id="selecting-text">Selecting Text</h3>
+<p>We can identify the range of text selected by a user, if any. For example, an editor may have a toolbar button to bold the selected text. While you can tell when the selection has changed (e.g., to update whether or not the bold button is active) via the &lt;<Selection>&gt; virtual event, that doesn't tell you what has been selected.</p>
+<p>The text widget automatically maintains a tag named sel, which refers to the selected text. Whenever the selection changes, the sel tag will be updated. So we can find the range of text selected using the tag_ranges ?tag? method, passing it sel as the tag to report on.</p>
+<p>Similarly, we can change the selection by using tag_add to set a new selection, or tag_remove to remove the selection. The sel tag cannot be deleted, however.</p>
+<p>Though the default widget bindings prevent this from happening, sel is like any other tag in that it can support multiple ranges, i.e., disjoint selections. To prevent this from happening, when changing the selection from your code, make sure to remove any old selection before adding a new one.</p>
+<p>The text widget manages the concept of the insertion cursor (where newly typed text will appear) separate from the selection. It does so using a new concept called a mark.</p>
+<p><a target="_blank" href="ttps://tkdocs.com/tutorial/text.html">TkDocs</a>  </p>
+<h3 id="madteacher">MADTeacher</h3>
+<p>В этом видео разберемся, какие нужны библиотеки и дополнительные приложения для того, чтобы начать разрабатывать приложения с графическим пользовательским интерфейсом</p>
+<p><a target="_blank" href="ttps://www.youtube.com/watch?v=gbcxuVhINnc&amp;list=PLG7hNdgnQsve2wTHmd2q75jHTXFJFADsR">GUI-приложение на Python | PySide6/2 | Пишем первое GUI-приложение</a></p>
+<p><a target="_blank" href="></a></p>
+<p><a target="_blank" href="></a></p>
+<p><a target="_blank" href="></a></p>
+<p><a target="_blank" href="></a></p>
+<p><a target="_blank" href="></a></p></body>
+</html>

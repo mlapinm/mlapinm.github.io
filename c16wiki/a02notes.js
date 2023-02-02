@@ -63,21 +63,21 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "b2634python",
       "",
       ""
     ],
-    "link": ""
+    "link": "b2634python.html"
    },
   {
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "b2632rem",
       "",
       ""
     ],
-    "link": ""
+    "link": "b2632rem.html"
    },
   {
     "header": "",
