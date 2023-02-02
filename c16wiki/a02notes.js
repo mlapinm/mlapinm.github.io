@@ -3,11 +3,11 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "Top of the World",
       "",
       ""
     ],
-    "link": ""
+    "link": "b2622topworld.html"
    },
   {
     "header": "",
@@ -94,7 +94,7 @@ var notes = [
     "title": "",
     "card-text": [
       "b2604shoes",
-      "",
+      "НОМЕНКЛАТУРНЫЕ ПОЛУБОТИНКИ",
       ""
     ],
     "link": "b2604shoes.html"
