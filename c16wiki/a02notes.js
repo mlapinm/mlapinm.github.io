@@ -43,21 +43,21 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "b2642movies",
       "",
       ""
     ],
-    "link": ""
+    "link": "b2642movies.html"
    },
   {
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "b2644books",
       "",
       ""
     ],
-    "link": ""
+    "link": "b2644books.html"
    },
   {
     "header": "",
