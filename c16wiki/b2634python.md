@@ -1,10 +1,5 @@
 
-
-
-
-
-
-
+[TOC]
 
 ### Selecting Text
 We can identify the range of text selected by a user, if any. For example, an editor may have a toolbar button to bold the selected text. While you can tell when the selection has changed (e.g., to update whether or not the bold button is active) via the <<Selection>> virtual event, that doesn't tell you what has been selected.
@@ -22,9 +17,28 @@ The text widget manages the concept of the insertion cursor (where newly typed t
 В этом видео разберемся, какие нужны библиотеки и дополнительные приложения для того, чтобы начать разрабатывать приложения с графическим пользовательским интерфейсом
 
 [GUI-приложение на Python | PySide6/2 | Пишем первое GUI-приложение](https://www.youtube.com/watch?v=gbcxuVhINnc&list=PLG7hNdgnQsve2wTHmd2q75jHTXFJFADsR)
+
+### cmd bat
+`multicomputer` program 
+   
+``` html
+SET FNAME=D:\mailCloud\prjother\b04py\b006enru\b34test.py
+if NOT EXIST %FNAME% (
+    SET FNAME=D:\mailCloud\cloud\prjother\b04py\b006enru\b34test.py
+    ECHO Yes
+)
+ECHO %FNAME%
+%FNAME%
+```
+   
+[1](2)
+
+
+
+
 []()
-[]()
-[]()
-[]()
-[]()
+[]() 
+[Шпаргалка по Markdown](https://github.com/sandino/Markdown-Cheatsheet/blob/master/README.md) [Convert Markdown to HTML with Python](https://www.devdungeon.com/content/convert-markdown-html-python) [Markdown2 requires blank lines around Fenced Code blocks to render them as code blocks](https://issuehint.com/issue/trentm/python-markdown2/426) []() []() []() []() 
+[b0802notes](https://sites.google.com/view/b08notes/b0802notes)
+[]() []() []() 
 
