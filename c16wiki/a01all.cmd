@@ -6,6 +6,6 @@ if NOT EXIST %FNAME% (
     ECHO Yes
 )
 ECHO %FNAME%
-%FNAME% all
+python %FNAME% all
 
 
