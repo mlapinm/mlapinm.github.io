@@ -1,5 +1,32 @@
 
 [TOC]
+### b02mdhtml.py md to html
+```
+        name = "b32file.md"
+
+        als = sys.argv
+        if len(als) > 1:
+            name = als[1]
+        name = name.replace('.md', '') if '.md' in name else name
+
+
+        listdir = []
+        if name == "all":
+
+            listdir = [e for e in os.listdir() if ".md" in e]
+
+        else:
+            name += ".md"
+            listdir += [name]
+
+
+        for e in listdir:
+            md_file(e)
+
+        print(listdir)
+
+```
+
 
 ### Selecting Text
 We can identify the range of text selected by a user, if any. For example, an editor may have a toolbar button to bold the selected text. While you can tell when the selection has changed (e.g., to update whether or not the bold button is active) via the <<Selection>> virtual event, that doesn't tell you what has been selected.

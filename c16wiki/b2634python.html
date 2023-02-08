@@ -21,43 +21,63 @@
 <body>
 <div class="toc">
 <ul>
+<li><a href="#b02mdhtmlpy-md-to-html">b02mdhtml.py md to html</a></li>
 <li><a href="#selecting-text">Selecting Text</a></li>
 <li><a href="#madteacher">MADTeacher</a></li>
 <li><a href="#cmd-bat">cmd bat</a></li>
 </ul>
 </div>
+<h3 id="b02mdhtmlpy-md-to-html">b02mdhtml.py md to html</h3>
+<pre><code>        name = &quot;b32file.md&quot;
+
+        als = sys.argv
+        if len(als) &gt; 1:
+            name = als[1]
+        name = name.replace('.md', '') if '.md' in name else name
+
+
+        listdir = []
+        if name == &quot;all&quot;:
+
+            listdir = [e for e in os.listdir() if &quot;.md&quot; in e]
+
+        else:
+            name += &quot;.md&quot;
+            listdir += [name]
+
+
+        for e in listdir:
+            md_file(e)
+
+        print(listdir)
+
+</code></pre>
+
 <h3 id="selecting-text">Selecting Text</h3>
 <p>We can identify the range of text selected by a user, if any. For example, an editor may have a toolbar button to bold the selected text. While you can tell when the selection has changed (e.g., to update whether or not the bold button is active) via the &lt;<Selection>&gt; virtual event, that doesn't tell you what has been selected.</p>
 <p>The text widget automatically maintains a tag named sel, which refers to the selected text. Whenever the selection changes, the sel tag will be updated. So we can find the range of text selected using the tag_ranges ?tag? method, passing it sel as the tag to report on.</p>
 <p>Similarly, we can change the selection by using tag_add to set a new selection, or tag_remove to remove the selection. The sel tag cannot be deleted, however.</p>
 <p>Though the default widget bindings prevent this from happening, sel is like any other tag in that it can support multiple ranges, i.e., disjoint selections. To prevent this from happening, when changing the selection from your code, make sure to remove any old selection before adding a new one.</p>
-<p>The text widget manages the concept of the insertion cursor (where newly typed text will appear) separate from the selection. It does so using a new concept called a mark.</p>
-<p><a target="_blank" href="https://tkdocs.com/tutorial/text.html">TkDocs</a>  </p>
+<p>The text widget manages the concept of the insertion cursor (where newly typed text will appear) separate from the selection. It does so using a new concept called a mark.
+<a target="_blank" href="https://tkdocs.com/tutorial/text.html">TkDocs</a>  </p>
 <h3 id="madteacher">MADTeacher</h3>
 <p>В этом видео разберемся, какие нужны библиотеки и дополнительные приложения для того, чтобы начать разрабатывать приложения с графическим пользовательским интерфейсом</p>
 <p><a target="_blank" href="https://www.youtube.com/watch?v=gbcxuVhINnc&amp;list=PLG7hNdgnQsve2wTHmd2q75jHTXFJFADsR">GUI-приложение на Python | PySide6/2 | Пишем первое GUI-приложение</a></p>
 <h3 id="cmd-bat">cmd bat</h3>
 <p><code>multicomputer</code> program </p>
-<pre><code class="language-html">
-SET FNAME=D:\mailCloud\prjother\b04py\b006enru\b34test.py
-
+<pre><code class="html">SET FNAME=D:\mailCloud\prjother\b04py\b006enru\b34test.py
 if NOT EXIST %FNAME% (
-
     SET FNAME=D:\mailCloud\cloud\prjother\b04py\b006enru\b34test.py
-
     ECHO Yes
-
 )
-
 ECHO %FNAME%
-
 %FNAME%
-
 </code></pre>
+
 <p><a target="_blank" href="2">1</a></p>
-<p><a target="_blank" href=""></a></p>
-<p><a target="_blank" href=""></a> </p>
-<p><a target="_blank" href="https://github.com/sandino/Markdown-Cheatsheet/blob/master/README.md">Шпаргалка по Markdown</a> <a target="_blank" href="https://www.devdungeon.com/content/convert-markdown-html-python">Convert Markdown to HTML with Python</a> <a target="_blank" href="https://issuehint.com/issue/trentm/python-markdown2/426">Markdown2 requires blank lines around Fenced Code blocks to render them as code blocks</a> <a target="_blank" href=""></a> <a target="_blank" href=""></a> <a target="_blank" href=""></a> <a target="_blank" href=""></a> </p>
-<p><a target="_blank" href="https://sites.google.com/view/b08notes/b0802notes">b0802notes</a></p>
-<p><a target="_blank" href=""></a> <a target="_blank" href=""></a> <a target="_blank" href=""></a> </p></body>
+<p><a target="_blank" href=""></a>
+<a target="_blank" href=""></a> 
+<a target="_blank" href="https://github.com/sandino/Markdown-Cheatsheet/blob/master/README.md">Шпаргалка по Markdown</a> <a target="_blank" href="https://www.devdungeon.com/content/convert-markdown-html-python">Convert Markdown to HTML with Python</a> <a target="_blank" href="https://issuehint.com/issue/trentm/python-markdown2/426">Markdown2 requires blank lines around Fenced Code blocks to render them as code blocks</a> <a target="_blank" href=""></a> <a target="_blank" href=""></a> <a target="_blank" href=""></a> <a target="_blank" href=""></a> 
+<a target="_blank" href="https://sites.google.com/view/b08notes/b0802notes">b0802notes</a>
+<a target="_blank" href=""></a> <a target="_blank" href=""></a> <a target="_blank" href=""></a> </p></body>
 </html>

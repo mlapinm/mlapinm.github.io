@@ -7,5 +7,3 @@ if NOT EXIST %FNAME% (
 )
 ECHO %FNAME%
 python %FNAME% all
-
-

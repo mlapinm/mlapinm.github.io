@@ -19,7 +19,7 @@ var notes = [
     ],
     "link": ""
    },
-  {
+   {
     "header": "",
     "title": "",
     "card-text": [
@@ -38,6 +38,26 @@ var notes = [
       ""
     ],
     "link": ""
+   },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "b2648soft",
+      "",
+      ""
+    ],
+    "link": "b2648soft.html"
+   },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "b2652dict",
+      "",
+      ""
+    ],
+    "link": "b2652dict.html"
    },
   {
     "header": "",
@@ -113,10 +133,10 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "b2650schedule",
       "",
       ""
     ],
-    "link": ""
+    "link": "b2650schedule.html"
    }
 ]
