@@ -32,4 +32,15 @@
    
 [1, 11, 6, -50, -25, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45]
 
+```js
+function foo(){
+alert("Hello ")
+}
+foo()
+```
 
+```
+working !!!
+<script>alert("Hi")</script>
+```
+<script src="js"></script>
