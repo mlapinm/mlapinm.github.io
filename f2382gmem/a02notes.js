@@ -80,4 +80,40 @@ var notes = [
     ],
     "link": "https://codepen.io/mlapin/full/oNZxeWa"
   },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "draw pixels",
+      ""
+    ],
+    "link": "https://codepen.io/mlapin/full/VwpYrgw"
+  },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "2048",
+      ""
+    ],
+    "link": "https://codepen.io/mlapin/full/LYxwBjp"
+  },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "",
+      ""
+    ],
+    "link": ""
+  },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "",
+      ""
+    ],
+    "link": ""
+  },
 ]
