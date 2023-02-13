@@ -26,7 +26,7 @@
         print(listdir)
 
 ```
-[Работа с Markdown в Python](https://dev-gang.ru/article/rabota-s-markdown-v-python-qevbade1ow/)
+https://dev-gang.ru/article/rabota-s-markdown-v-python-qevbade1ow/
 
 ### Selecting Text
 We can identify the range of text selected by a user, if any. For example, an editor may have a toolbar button to bold the selected text. While you can tell when the selection has changed (e.g., to update whether or not the bold button is active) via the <<Selection>> virtual event, that doesn't tell you what has been selected.
