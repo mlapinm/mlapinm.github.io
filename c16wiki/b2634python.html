@@ -22,8 +22,16 @@
 <div class="toc">
 <ul>
 <li><a href="#b02mdhtmlpy-md-to-html">b02mdhtml.py md to html</a></li>
-<li><a href="#selecting-text">Selecting Text</a></li>
+<li><a href="#youtube-dl">youtube-dl</a><ul>
+<li><a href="#list-subs">list subs</a></li>
+<li><a href="#download-subtitles-on-youtube">Download Subtitles on Youtube</a></li>
+<li><a href="#download-playlist">Download playlist</a></li>
+</ul>
+</li>
+<li><a href="#tkinter-selecting-text">Tkinter Selecting Text</a><ul>
 <li><a href="#madteacher">MADTeacher</a></li>
+</ul>
+</li>
 <li><a href="#cmd-bat">cmd bat</a></li>
 </ul>
 </div>
@@ -53,7 +61,33 @@ print(listdir)
 
 </code></pre>
 <p><a target="_blank" href="https://dev-gang.ru/article/rabota-s-markdown-v-python-qevbade1ow/">Работа с Markdown в Python</a>  </p>
-<h3 id="selecting-text">Selecting Text</h3>
+<h2 id="youtube-dl">youtube-dl</h2>
+<h3 id="list-subs">list subs</h3>
+<p>youtube-dl --list-subs URL  </p>
+<pre><code>youtube-dl --list-subs https://www.youtube.com/watch?v=4FkHx4UUBik  
+</code></pre>
+<h3 id="download-subtitles-on-youtube">Download Subtitles on Youtube</h3>
+<p>youtube-dl --write-sub --sub-lang LANG --skip-download URL<br />
+youtube-dl --write-sub --sub-lang LANG --skip-download URL  </p>
+<pre><code>vtt, ttml, srv3, srv2, srv1  
+
+youtube-dl --write-auto-sub --convert-subs=srt --sub-lang en --skip-download https://www.youtube.com/watch?v=A_u6c9sGekY  
+
+youtube-dl --write-auto-sub --convert-subs=srt --sub-lang en --skip-download https://www.youtube.com/watch?v=4FkHx4UUBik  
+
+youtube-dl --write-auto-sub --sub-lang en --skip-download https://www.youtube.com/watch?v=4FkHx4UUBik  
+
+
+youtube-dl --write-auto-sub --sub-lang en --skip-download https://www.youtube.com/watch?v=_PjHweHy8Bs  
+
+youtube-dl --write-auto-sub -o b44bb.txt --sub-lang en --skip-download https://www.youtube.com/watch?v=_PjHweHy8Bs  
+</code></pre>
+<h3 id="download-playlist">Download playlist</h3>
+<pre><code>youtube-dl -j --flat-playlist https://youtu.be/lzofFoAFWWQ?list=PLlHR3f8sb05B9n0jnXgS3yxn2CTQ3XOGS &gt; b44b.txt  
+
+youtube-dl -j --flat-playlist https://youtu.be/_PjHweHy8Bs?list=PLOD7hq4Bu8VWT0F9yf0i9PrQ0-Q3SnBcw &gt; b44b.txt  
+</code></pre>
+<h2 id="tkinter-selecting-text">Tkinter Selecting Text</h2>
 <p>We can identify the range of text selected by a user, if any. For example, an editor may have a toolbar button to bold the selected text. While you can tell when the selection has changed (e.g., to update whether or not the bold button is active) via the &lt;<Selection>&gt; virtual event, that doesn't tell you what has been selected.  </p>
 <p>The text widget automatically maintains a tag named sel, which refers to the selected text. Whenever the selection changes, the sel tag will be updated. So we can find the range of text selected using the tag_ranges ?tag? method, passing it sel as the tag to report on.  </p>
 <p>Similarly, we can change the selection by using tag_add to set a new selection, or tag_remove to remove the selection. The sel tag cannot be deleted, however.  </p>
@@ -63,7 +97,7 @@ print(listdir)
 <h3 id="madteacher">MADTeacher</h3>
 <p>В этом видео разберемся, какие нужны библиотеки и дополнительные приложения для того, чтобы начать разрабатывать приложения с графическим пользовательским интерфейсом  </p>
 <p><a target="_blank" href="https://www.youtube.com/watch?v=gbcxuVhINnc&amp;list=PLG7hNdgnQsve2wTHmd2q75jHTXFJFADsR">GUI-приложение на Python | PySide6/2 | Пишем первое GUI-приложение</a>  </p>
-<h3 id="cmd-bat">cmd bat</h3>
+<h2 id="cmd-bat">cmd bat</h2>
 <p><code>multicomputer</code> program  </p>
 <pre><code class="language-html">SET FNAME=D:\mailCloud\prjother\b04py\b006enru\b34test.py  
 if NOT EXIST %FNAME% (  
