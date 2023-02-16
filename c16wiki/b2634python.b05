@@ -35,7 +35,7 @@
 ### list subs
 youtube-dl --list-subs URL
 ```
-youtube-dl --list-subs https://www.youtube.com/watch?v=4FkHx4UUBik
+youtube-dl --list-subs [Grammar - Samantha - YouTube](https://www.youtube.com/watch?v=4FkHx4UUBik)
 ```
 
 ### Download Subtitles on Youtube
@@ -45,22 +45,22 @@ youtube-dl --write-sub --sub-lang LANG --skip-download URL
 ```
 vtt, ttml, srv3, srv2, srv1
 
-youtube-dl --write-auto-sub --convert-subs=srt --sub-lang en --skip-download https://www.youtube.com/watch?v=A_u6c9sGekY 
+youtube-dl --write-auto-sub --convert-subs=srt --sub-lang en --skip-download [Download only subtitles from videos using youtube-dl - YouTube](https://www.youtube.com/watch?v=A_u6c9sGekY) 
 
-youtube-dl --write-auto-sub --convert-subs=srt --sub-lang en --skip-download https://www.youtube.com/watch?v=4FkHx4UUBik
+youtube-dl --write-auto-sub --convert-subs=srt --sub-lang en --skip-download [Grammar - Samantha - YouTube](https://www.youtube.com/watch?v=4FkHx4UUBik)
 
-youtube-dl --write-auto-sub --sub-lang en --skip-download https://www.youtube.com/watch?v=4FkHx4UUBik
+youtube-dl --write-auto-sub --sub-lang en --skip-download [Grammar - Samantha - YouTube](https://www.youtube.com/watch?v=4FkHx4UUBik)
 
 
-youtube-dl --write-auto-sub --sub-lang en --skip-download https://www.youtube.com/watch?v=_PjHweHy8Bs
+youtube-dl --write-auto-sub --sub-lang en --skip-download [How to Use Google Drive Image in Html and Websites? - YouTube](https://www.youtube.com/watch?v=_PjHweHy8Bs)
 
-youtube-dl --write-auto-sub -o b44bb.txt --sub-lang en --skip-download https://www.youtube.com/watch?v=_PjHweHy8Bs)
+youtube-dl --write-auto-sub -o b44bb.txt --sub-lang en --skip-download [How to Use Google Drive Image in Html and Websites? - YouTube](https://www.youtube.com/watch?v=_PjHweHy8Bs)
 ```
 ### Download playlist
 ```
-youtube-dl -j --flat-playlist https://youtu.be/lzofFoAFWWQ?list=PLlHR3f8sb05B9n0jnXgS3yxn2CTQ3XOGS > b44b.txt
+youtube-dl -j --flat-playlist [Google Apps Script.Первое знакомство и создание своей функции.Скрипты Google Sheets Урок 1. - YouTube](https://youtu.be/lzofFoAFWWQ?list=PLlHR3f8sb05B9n0jnXgS3yxn2CTQ3XOGS > b44b.txt)
 
-youtube-dl -j --flat-playlist https://youtu.be/_PjHweHy8Bs?list=PLOD7hq4Bu8VWT0F9yf0i9PrQ0-Q3SnBcw > b44b.txt
+youtube-dl -j --flat-playlist [How to Use Google Drive Image in Html and Websites? - YouTube](https://youtu.be/_PjHweHy8Bs?list=PLOD7hq4Bu8VWT0F9yf0i9PrQ0-Q3SnBcw > b44b.txt)
 ```
 
 ## Tkinter Selecting Text
@@ -102,7 +102,7 @@ python playsound get_time
 pip install python-vlc
 
         file1 = "tmp/b0202abby.opus"
-        file2 = "http://icecast227.ptspb.ru:8104/ruradio"
+        file2 = "[undefined](http://icecast227.ptspb.ru:8104/ruradio")
         file3 = "tmp/EF4e_PreintSB_1.10.mp3"
 
         self.media = vlc.MediaPlayer(file2)
@@ -111,9 +111,9 @@ pip install python-vlc
 
         self.media.play()
 ```
-[VLC module in Python - An Introduction - GeeksforGeeks](https://www.geeksforgeeks.org/vlc-module-in-python-an-introduction/)
-[How to record stream for exactly 30 seconds using python-vlc? - Stack Overflow](https://stackoverflow.com/questions/58760146/how-to-record-stream-for-exactly-30-seconds-using-python-vlc)
-[Список станций](https://espradio.ru/stream_list/)
+https://www.geeksforgeeks.org/vlc-module-in-python-an-introduction/
+https://stackoverflow.com/questions/58760146/how-to-record-stream-for-exactly-30-seconds-using-python-vlc
+https://espradio.ru/stream_list/
 
 ## cmd bat
 `multicomputer` program 

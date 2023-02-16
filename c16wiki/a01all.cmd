@@ -11,3 +11,4 @@ ECHO %FPATH%b02mdhtml.py
 python %FPATH%b03schedule.py b2650schedule.md i265001time.png
 python %FPATH%b02mdhtml.py all
 b2650schedule.html
+pause

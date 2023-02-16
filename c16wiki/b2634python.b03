@@ -54,7 +54,7 @@ youtube-dl --write-auto-sub --sub-lang en --skip-download https://www.youtube.co
 
 youtube-dl --write-auto-sub --sub-lang en --skip-download https://www.youtube.com/watch?v=_PjHweHy8Bs
 
-youtube-dl --write-auto-sub -o b44bb.txt --sub-lang en --skip-download https://www.youtube.com/watch?v=_PjHweHy8Bs)
+youtube-dl --write-auto-sub -o b44bb.txt --sub-lang en --skip-download https://www.youtube.com/watch?v=_PjHweHy8Bs
 ```
 ### Download playlist
 ```
@@ -87,7 +87,7 @@ pip install playsound==1.2.2
 from playsound import playsound
 
         file1 = "tmp/b0202abby.opus"
-        file2 = "[undefined](http://icecast227.ptspb.ru:8104/ruradio")
+        file2 = "http://icecast227.ptspb.ru:8104/ruradio"
         file3 = "tmp/EF4e_PreintSB_1.10.mp3"
         self.player = vlc.MediaPlayer(file2)
         self.player.play()
@@ -111,9 +111,9 @@ pip install python-vlc
 
         self.media.play()
 ```
-[VLC module in Python - An Introduction - GeeksforGeeks](https://www.geeksforgeeks.org/vlc-module-in-python-an-introduction/)
-[How to record stream for exactly 30 seconds using python-vlc? - Stack Overflow](https://stackoverflow.com/questions/58760146/how-to-record-stream-for-exactly-30-seconds-using-python-vlc)
-[Список станций](https://espradio.ru/stream_list/)
+
+
+
 
 ## cmd bat
 `multicomputer` program 
@@ -135,10 +135,7 @@ ECHO %FNAME%
 
 []()
 []() 
-
-
-
-[Convert Markdown to HTML with Python | DevDungeon](https://www.devdungeon.com/content/convert-markdown-html-python)
+https://www.devdungeon.com/content/convert-markdown-html-python
 [Шпаргалка по Markdown](https://github.com/sandino/Markdown-Cheatsheet/blob/master/README.md) [Convert Markdown to HTML with Python](https://www.devdungeon.com/content/convert-markdown-html-python) [Markdown2 requires blank lines around Fenced Code blocks to render them as code blocks](https://issuehint.com/issue/trentm/python-markdown2/426) []() []() []() []() 
 [b0802notes](https://sites.google.com/view/b08notes/b0802notes)
 []() []() []() 

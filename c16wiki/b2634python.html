@@ -32,6 +32,8 @@
 <li><a href="#madteacher">MADTeacher</a></li>
 </ul>
 </li>
+<li><a href="#playsound">playsound</a></li>
+<li><a href="#vlc">vlc</a></li>
 <li><a href="#cmd-bat">cmd bat</a></li>
 </ul>
 </div>
@@ -80,7 +82,7 @@ youtube-dl --write-auto-sub --sub-lang en --skip-download https://www.youtube.co
 
 youtube-dl --write-auto-sub --sub-lang en --skip-download https://www.youtube.com/watch?v=_PjHweHy8Bs  
 
-youtube-dl --write-auto-sub -o b44bb.txt --sub-lang en --skip-download https://www.youtube.com/watch?v=_PjHweHy8Bs  
+youtube-dl --write-auto-sub -o b44bb.txt --sub-lang en --skip-download https://www.youtube.com/watch?v=_PjHweHy8Bs)  
 </code></pre>
 <h3 id="download-playlist">Download playlist</h3>
 <pre><code>youtube-dl -j --flat-playlist https://youtu.be/lzofFoAFWWQ?list=PLlHR3f8sb05B9n0jnXgS3yxn2CTQ3XOGS &gt; b44b.txt  
@@ -97,6 +99,37 @@ youtube-dl -j --flat-playlist https://youtu.be/_PjHweHy8Bs?list=PLOD7hq4Bu8VWT0F
 <h3 id="madteacher">MADTeacher</h3>
 <p>В этом видео разберемся, какие нужны библиотеки и дополнительные приложения для того, чтобы начать разрабатывать приложения с графическим пользовательским интерфейсом  </p>
 <p><a target="_blank" href="https://www.youtube.com/watch?v=gbcxuVhINnc&amp;list=PLG7hNdgnQsve2wTHmd2q75jHTXFJFADsR">GUI-приложение на Python | PySide6/2 | Пишем первое GUI-приложение</a>  </p>
+<h2 id="playsound">playsound</h2>
+<pre><code>pip install playsound==1.2.2  
+
+from playsound import playsound  
+
+file1 = &quot;tmp/b0202abby.opus&quot;  
+file2 = &quot;[undefined](http://icecast227.ptspb.ru:8104/ruradio&quot;)  
+file3 = &quot;tmp/EF4e_PreintSB_1.10.mp3&quot;  
+self.player = vlc.MediaPlayer(file2)  
+self.player.play()  
+
+value = self.player.get_time()  
+</code></pre>
+<p>is good in opus, mp3, stream  </p>
+<p>python playsound get_time  </p>
+<h2 id="vlc">vlc</h2>
+<pre><code>pip install python-vlc  
+
+file1 = &quot;tmp/b0202abby.opus&quot;  
+file2 = &quot;http://icecast227.ptspb.ru:8104/ruradio&quot;  
+file3 = &quot;tmp/EF4e_PreintSB_1.10.mp3&quot;  
+
+self.media = vlc.MediaPlayer(file2)  
+self.media.audio_set_volume(50)  
+self.bplay = False  
+
+self.media.play()  
+</code></pre>
+<p><a target="_blank" href="https://www.geeksforgeeks.org/vlc-module-in-python-an-introduction/">VLC module in Python - An Introduction - GeeksforGeeks</a><br />
+<a target="_blank" href="https://stackoverflow.com/questions/58760146/how-to-record-stream-for-exactly-30-seconds-using-python-vlc">How to record stream for exactly 30 seconds using python-vlc? - Stack Overflow</a><br />
+<a target="_blank" href="https://espradio.ru/stream_list/">Список станций</a>  </p>
 <h2 id="cmd-bat">cmd bat</h2>
 <p><code>multicomputer</code> program  </p>
 <pre><code class="language-html">SET FNAME=D:\mailCloud\prjother\b04py\b006enru\b34test.py  
@@ -109,7 +142,8 @@ ECHO %FNAME%
 </code></pre>
 <p><a target="_blank" href="2">1</a>  </p>
 <p><a target="_blank" href=""></a><br />
-<a target="_blank" href=""></a><br />
+<a target="_blank" href=""></a>  </p>
+<p><a target="_blank" href="https://www.devdungeon.com/content/convert-markdown-html-python">Convert Markdown to HTML with Python | DevDungeon</a><br />
 <a target="_blank" href="https://github.com/sandino/Markdown-Cheatsheet/blob/master/README.md">Шпаргалка по Markdown</a> <a target="_blank" href="https://www.devdungeon.com/content/convert-markdown-html-python">Convert Markdown to HTML with Python</a> <a target="_blank" href="https://issuehint.com/issue/trentm/python-markdown2/426">Markdown2 requires blank lines around Fenced Code blocks to render them as code blocks</a> <a target="_blank" href=""></a> <a target="_blank" href=""></a> <a target="_blank" href=""></a> <a target="_blank" href=""></a><br />
 <a target="_blank" href="https://sites.google.com/view/b08notes/b0802notes">b0802notes</a><br />
 <a target="_blank" href=""></a> <a target="_blank" href=""></a> <a target="_blank" href=""></a>  </p></body>
