@@ -39,7 +39,7 @@
 ```
 [Работа с Markdown в Python](https://dev-gang.ru/article/rabota-s-markdown-v-python-qevbade1ow/)
 ## youtube-dl
-
+(yt-dlp)
 ### list subs
 youtube-dl --list-subs URL
 ```
@@ -62,7 +62,7 @@ youtube-dl --write-auto-sub --sub-lang en --skip-download https://www.youtube.co
 
 youtube-dl --write-auto-sub --sub-lang en --skip-download https://www.youtube.com/watch?v=_PjHweHy8Bs
 
-youtube-dl --write-auto-sub -o b44bb.txt --sub-lang en --skip-download https://www.youtube.com/watch?v=_PjHweHy8Bs)
+youtube-dl --write-auto-sub -o b44bb.txt --sub-lang en --skip-download https://www.youtube.com/watch?v=_PjHweHy8Bs
 ```
 ### Download playlist
 ```
