@@ -57,10 +57,13 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "g0",
+      "b38line",
+      "test",
+      "textarea next line",
+      "",
       ""
     ],
-    "link": "g0.html"
+    "link": "https://codepen.io/mlapin/full/bGxpMRL"
   },
   {
     "header": "",
