@@ -1,5 +1,6 @@
 echo %0
 call C:\ProgramData\Anaconda3\Scripts\activate.bat
+call C:/anaconda3/Scripts/activate.bat
 SET FPATH=D:\mailCloud\prjother\b04py\b006enru\
 if NOT EXIST %FPATH% (
     SET FPATH=D:\mailCloud\cloud\prjother\b04py\b006enru\
