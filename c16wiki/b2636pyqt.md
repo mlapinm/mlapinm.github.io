@@ -25,6 +25,6 @@ May be
 pip install --upgrade --no-deps SomePackage
 \b04py\b122pyside\b04gui\main.py
 Worked link with code on github
-[GUI-приложение на Python | PySide6/2 | Пишем первое GUI-приложение - YouTube](https://www.youtube.com/watch?v=gbcxuVhINnc)
+[GUI-РїСЂРёР»РѕР¶РµРЅРёРµ РЅР° Python | PySide6/2 | РџРёС€РµРј РїРµСЂРІРѕРµ GUI-РїСЂРёР»РѕР¶РµРЅРёРµ - YouTube](https://www.youtube.com/watch?v=gbcxuVhINnc)
 
 
