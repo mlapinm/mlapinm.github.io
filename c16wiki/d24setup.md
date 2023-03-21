@@ -76,7 +76,7 @@ Auto Save onFocusChange
 - обновление  
   - []()  
   - Kaspersky Security Cloud free
-[How To Enable Hyper-V On Windows 10 Home](https://www.itechtics.com/enable-hyper-v-windows-10-home/)  
+[How To Enable Hyper-V On Windows 10 Home]fname1, fname2(https://www.itechtics.com/enable-hyper-v-windows-10-home/)  
 []()  
 
 ## magicbook
