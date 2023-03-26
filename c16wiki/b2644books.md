@@ -1,4 +1,6 @@
 ## Need reading
+Гордость и предубеждение (b13)
+Чёрный обелиск Ремарк
 Мастер и Маргарита (b1)
 Над пропастью во ржи (b2)
 Идиот (b3)
@@ -11,7 +13,6 @@
 Портрет Дориана Грея (b10)
 Дон Кихот (b11)
 Финансист (b12)
-Гордость и предубеждение (b13)
 Градус по Фаренгейту (b14)
 Милый друг (b15)
 Герой нашего времени (b16)
@@ -19,15 +20,16 @@
 Мартин Иден (b18)
 Ярмарка Тщеславия (b19)
 Люди, которые играют в игры (b20)
+
+## Reading
 [Капитанская дочка - роман Пушкина А.С. - слушать или скачать](https://mishka-knizhka.ru/audio-rasskazy-dlya-detej/audio-rasskazy-pushkina/kapitanskaja-dochka-audio/)
 [А.С. Пушкин - Капитанская дочка (Аудикнига). Читает Иннокентий Смоктуновский. - YouTube](https://www.youtube.com/watch?v=NxxRd-1DiYs&list=RDLVNxxRd-1DiYs&start_radio=1&rv=NxxRd-1DiYs&t=8)
 [Джек Лондон Тысяча Дюжин Cкачать Бесплатно Mp3](https://mp3fitz.com/music/%D0%B4%D0%B6%D0%B5%D0%BA+%D0%BB%D0%BE%D0%BD%D0%B4%D0%BE%D0%BD+%D1%82%D1%8B%D1%81%D1%8F%D1%87%D0%B0+%D0%B4%D1%8E%D0%B6%D0%B8%D0%BD/)
-
-## Reading
+[Джейн Эйр | слушать онлайн (аудиокнига)](https://deti-online.com/audioskazki/povesti-i-romany-mp3/dzheyn-eyr/)
 Джек Лондон. Мартин Иден - утонул
 Чингиза Айтматов. И дольше века длится день
 [Алексеев А.А., Громова Л.А. «Психогеометрия для менеджеров» — Николай Иванович Козлов](http://nkozlov.ru/book/181-alekseev-a-a-gromova-l-a-psihogeometrija-dlja-menedzherov.html)
 [Этногенез и биосфера Земли - слушать онлайн бесплатно, автор Лев Гумилев, аудиокнига полностью в хорошем качестве](https://aubook.org/book/etnogenez-i-biosfera-zemli-lev-gumilev)
-[Джейн Эйр | слушать онлайн (аудиокнига)](https://deti-online.com/audioskazki/povesti-i-romany-mp3/dzheyn-eyr/)
 [Маркетинг по Котлеру](https://co-libry.online/book/marketing-po-kotleru--filip-kotler)
 
+(b) - 20 книг прочитать до 30
