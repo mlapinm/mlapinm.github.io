@@ -4,7 +4,7 @@ var notes = [
     "title": "",
     "card-text": [
       "Learn English with Jessica",
-      "",
+      "cartoons A 54",
       ""
     ],
     "link": "d12index.html"
@@ -14,7 +14,7 @@ var notes = [
     "title": "",
     "card-text": [
       "Listen and practice 1",
-      "",
+      "short stories 62",
       ""
     ],
     "link": "d11index.html"
@@ -23,7 +23,7 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "Listen and practice 1",
+      "",
       "find",
       ""
     ],
@@ -33,19 +33,9 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "Friends ",
-      "",
+      "Practice Makes Fluent - Lifelong Learning",
+      "200 English Question and Answers and more for Everyday Conversation 6",
       ""
-    ],
-    "link": "d14index.html"
-   },
-   {
-    "header": "",
-    "title": "",
-    "card-text": [
-      "",
-      "Listen and practice ",
-      "empty"
     ],
     "link": "d14index.html"
    },
@@ -54,8 +44,8 @@ var notes = [
     "title": "",
     "card-text": [
       "level0",
-      "",
-      ""
+      "Let's Do It!",
+      "isn't available"
     ],
     "link": "d15index.html"
    },
@@ -64,8 +54,8 @@ var notes = [
     "title": "",
     "card-text": [
       "Level 2",
-      "",
-      ""
+      "ONE",
+      "isn't available"
     ],
     "link": "d18index.html"
    },
@@ -74,8 +64,8 @@ var notes = [
     "title": "",
     "card-text": [
       "Bridge to English",
-      "",
-      ""
+      "Forrest Gump - learn English through story",
+      "6"
     ],
     "link": "d20index.html"
    },
@@ -85,7 +75,7 @@ var notes = [
     "card-text": [
       "WooEnglish",
       "Beginer",
-      "3"
+      "15"
     ],
     "link": "d24index.html"
    },
@@ -94,7 +84,7 @@ var notes = [
     "title": "",
     "card-text": [
       "WooEnglish",
-      "",
+      "The True Courage of Erin Brockovich",
       "30"
     ],
     "link": "d22index.html"
@@ -105,7 +95,7 @@ var notes = [
     "card-text": [
       "cartoon",
       "Fairy Tales Every Day",
-      ""
+      "51"
     ],
     "link": "d26index.html"
    },
@@ -115,7 +105,7 @@ var notes = [
     "card-text": [
       "cartoon",
       "Kids Hut",
-      ""
+      "34"
     ],
     "link": "d30index.html"
    },
@@ -125,7 +115,7 @@ var notes = [
     "card-text": [
       "cartoon",
       "Kids Hut 2",
-      ""
+      "46"
     ],
     "link": "d32index.html"
    },
@@ -135,7 +125,7 @@ var notes = [
     "card-text": [
       "English Speaking Courses",
       "",
-      ""
+      "cartoons 76"
     ],
     "link": "d56index.html"
    },
@@ -144,8 +134,11 @@ var notes = [
     "title": "",
     "card-text": [
       "cartoon",
-      "Duck tales",
-      ""
+      "Duck tales 1-5",
+      "extra 6-36",
+      "My Lovely Horse",
+      "Desmond's 38-43",
+	  "TED 44"
     ],
     "link": "d34index.html"
    },
@@ -154,7 +147,7 @@ var notes = [
     "title": "6teen",
     "card-text": [
       "cartoon",
-      "",
+      "24",
       ""
     ],
     "link": "d66index.html"
@@ -164,7 +157,7 @@ var notes = [
     "title": "",
     "card-text": [
       "songs",
-      "",
+      "58",
       ""
     ],
     "link": "d28index.html"
@@ -173,9 +166,9 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "coursera english",
-      "",
-      ""
+      "Pauline Attenborough was seventy-two years old",
+      "isn't available",
+      "30"
     ],
     "link": "d22index.html"
    },
@@ -185,7 +178,7 @@ var notes = [
     "card-text": [
       "A Bit Of Fry And Laurie",
       "",
-      ""
+      "6"
     ],
     "link": "d41index.html"
    },
@@ -193,9 +186,9 @@ var notes = [
     "header": "",
     "title": "schooling",
     "card-text": [
-      "1-12 Speak English With Tiffani",
-      "*English with Max",
-      ""
+      "1-36 Speak English With Tiffani",
+      "37-46 English with Max",
+      "47-50 Oxford Online English"
     ],
     "link": "d62index.html"
    },
@@ -203,9 +196,9 @@ var notes = [
     "header": "",
     "title": "Coursera",
     "card-text": [
-      "Prepare Data",
-      "",
-      ""
+      "1-8 II Prepare Data",
+      "9-13 ",
+      "14-23 "
     ],
     "link": "d46index.html"
    },
@@ -217,7 +210,7 @@ var notes = [
       "",
       ""
     ],
-    "link": "/c14links/d20index.html"
+    "link": "d08index.html"
    },
   {
     "header": "",
