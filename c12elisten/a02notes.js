@@ -151,6 +151,16 @@ var notes = [
    },
    {
     "header": "",
+    "title": "6teen",
+    "card-text": [
+      "cartoon",
+      "",
+      ""
+    ],
+    "link": "d66index.html"
+   },
+   {
+    "header": "",
     "title": "",
     "card-text": [
       "songs",
