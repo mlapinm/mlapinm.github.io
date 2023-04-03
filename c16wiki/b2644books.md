@@ -1,5 +1,5 @@
 ## Need reading
-Гордость и предубеждение (b13)
+Три Товарища Ремарк
 Чёрный обелиск Ремарк
 Мастер и Маргарита (b1)
 Над пропастью во ржи (b2)
@@ -22,6 +22,7 @@
 Люди, которые играют в игры (b20)
 
 ## Reading
+Гордость и предубеждение (b13)
 [Капитанская дочка - роман Пушкина А.С. - слушать или скачать](https://mishka-knizhka.ru/audio-rasskazy-dlya-detej/audio-rasskazy-pushkina/kapitanskaja-dochka-audio/)
 [А.С. Пушкин - Капитанская дочка (Аудикнига). Читает Иннокентий Смоктуновский. - YouTube](https://www.youtube.com/watch?v=NxxRd-1DiYs&list=RDLVNxxRd-1DiYs&start_radio=1&rv=NxxRd-1DiYs&t=8)
 [Джек Лондон Тысяча Дюжин Cкачать Бесплатно Mp3](https://mp3fitz.com/music/%D0%B4%D0%B6%D0%B5%D0%BA+%D0%BB%D0%BE%D0%BD%D0%B4%D0%BE%D0%BD+%D1%82%D1%8B%D1%81%D1%8F%D1%87%D0%B0+%D0%B4%D1%8E%D0%B6%D0%B8%D0%BD/)
