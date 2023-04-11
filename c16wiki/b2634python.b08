@@ -1,5 +1,5 @@
 [TOC]
-## calendar
+## 
 import calendar
 ```
 def get_calendar(year):
@@ -16,12 +16,12 @@ def get_calendar(year):
 
 # get_calendar(2024)
 ```
-[Подключаем ChatGPT к интернету в бесплатном плагине для Chrome - YouTube](https://www.youtube.com/watch?v=npk60kNuS14)
+https://www.youtube.com/watch?v=npk60kNuS14
 
-[Light/Dark Theme Toggle using HTML CSS & JavaScript - YouTube](https://www.youtube.com/watch?v=CUEJkJ9HDbY&list=PLj45wIw9J1ORPHDVmoNPQkgeouhn-6ETL)
-[Build a Weather App using HTML CSS & JavaScript - YouTube](https://www.youtube.com/watch?v=J1Kh9PE0uU4&list=PLj45wIw9J1ORPHDVmoNPQkgeouhn-6ETL&index=31)
+https://www.youtube.com/watch?v=CUEJkJ9HDbY&list=PLj45wIw9J1ORPHDVmoNPQkgeouhn-6ETL
+https://www.youtube.com/watch?v=J1Kh9PE0uU4&list=PLj45wIw9J1ORPHDVmoNPQkgeouhn-6ETL&index=31
 
-[GitHub - kaizhelam/Weather-App](https://github.com/kaizhelam/Weather-App)
+https://github.com/kaizhelam/Weather-App
 
 ## eel
 

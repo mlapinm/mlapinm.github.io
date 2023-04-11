@@ -21,6 +21,7 @@
 <body>
 <div class="toc">
 <ul>
+<li><a href="#calendar">calendar</a></li>
 <li><a href="#eel">eel</a></li>
 <li><a href="#b02mdhtmlpy-md-to-html">b02mdhtml.py md to html</a></li>
 <li><a href="#youtube-dl">youtube-dl</a><ul>
@@ -38,33 +39,96 @@
 <li><a href="#cmd-bat">cmd bat</a></li>
 </ul>
 </div>
+<h2 id="calendar">calendar</h2>
+<p>import calendar  </p>
+<pre><code>def get_calendar(year):  
+    '''  
+    get a calendar c2023.html  
+    with 3 column  
+    '''  
+    global dir1  
+    name = f'c{year}.html'  
+    fname = dir1 + name  
+    calendar1 = calendar.HTMLCalendar()  
+    with open(fname, 'w') as f:  
+        print(calendar1.formatyear(year, width=3), file=f)  
+
+# get_calendar(2024)  
+</code></pre>
+<p><a target="_blank" href="https://www.youtube.com/watch?v=npk60kNuS14">Подключаем ChatGPT к интернету в бесплатном плагине для Chrome - YouTube</a>  </p>
+<p><a target="_blank" href="https://www.youtube.com/watch?v=CUEJkJ9HDbY&amp;list=PLj45wIw9J1ORPHDVmoNPQkgeouhn-6ETL">Light/Dark Theme Toggle using HTML CSS &amp; JavaScript - YouTube</a><br />
+<a target="_blank" href="https://www.youtube.com/watch?v=J1Kh9PE0uU4&amp;list=PLj45wIw9J1ORPHDVmoNPQkgeouhn-6ETL&amp;index=31">Build a Weather App using HTML CSS &amp; JavaScript - YouTube</a>  </p>
+<p><a target="_blank" href="https://github.com/kaizhelam/Weather-App">GitHub - kaizhelam/Weather-App</a>  </p>
 <h2 id="eel">eel</h2>
 <p><a target="_blank" href="https://www.youtube.com/watch?v=q6s2MipgLto&amp;list=PL_DeIaDmPB450G6Ikgm_nvty6rp7X8Sc3&amp;index=8">ВЕБ-ИНТЕРФЕЙС ЗА 15 МИНУТ | Как сделать графический интерфейс для программы на Python / JS - YouTube</a><br />
 <a target="_blank" href="https://habr.com/ru/post/550426/">Python &amp; EEL. Делаем просто на Python’е и красиво на JS / Хабр</a><br />
 <a target="_blank" href="https://pythonpip.ru/osnovy/eel-v-python-biblioteka-dlya-krasivogo-interfeysa">Библиотека Eel в Python для красивого интерфейса</a>  </p>
 <h2 id="b02mdhtmlpy-md-to-html">b02mdhtml.py md to html</h2>
-<pre><code>name = &quot;b32file.md&quot;  
+<pre><code>def md_file(name):  
+    # print(name)  
+    '''  
+    # - nsp  
+    else  
+    every line add two space  
+    nsp nospaces  
+    nblank no target blank  
+    '''  
 
-als = sys.argv  
-if len(als) &gt; 1:  
-name = als[1]  
-name = name.replace('.md', '') if '.md' in name else name  
+    ls = read_file(name, True)  
+
+    # print(ls)  
+
+    match = re.search(r'^# -', ls[0])  
+    line1 = &quot;&quot;  
+    if match:  
+        line1 = ls[0]  
+        ls = ls[1:]  
+    if 'nsp' not in line1:  
+        ls = [e.rstrip()+&quot;  &quot; for e in ls]  
+
+    md_text = '\n'.join(ls)  
+
+    # print(md_text)  
+
+    html1 = markdown.markdown(md_text, extensions=['toc', 'fenced_code'])  
+    html10 = html1  
+    if &quot;nblank&quot; not in line1:  
+        html1 = re.sub('(href=&quot;[^#])', r'target=&quot;_blank&quot; \1', html10)  
+
+    html = html1  
+
+    i_point = name.find('.')  
+    # re.sub()  
+    # name2 = name[:i_point]  
+    name2 = re.sub(r'^([^.]+)\.(\w+)', r'\1.html', name)  
+    ls2 = html.split(&quot;\n&quot;)  
+    res = write_file(name2, ls2)  
+    if res == 0:  
+        print(res, name, len(ls), name2, len(ls2))  
 
 
-listdir = []  
-if name == &quot;all&quot;:  
+        name = &quot;b32file.md&quot;  
 
-listdir = [e for e in os.listdir() if &quot;.md&quot; in e]  
-
-else:  
-name += &quot;.md&quot;  
-listdir += [name]  
+        als = sys.argv  
+        if len(als) &gt; 1:  
+            name = als[1]  
+        name = name.replace('.md', '') if '.md' in name else name  
 
 
-for e in listdir:  
-md_file(e)  
+        listdir = []  
+        if name == &quot;all&quot;:  
 
-print(listdir)  
+            listdir = [e for e in os.listdir() if &quot;.md&quot; in e]  
+
+        else:  
+            name += &quot;.md&quot;  
+            listdir += [name]  
+
+
+        for e in listdir:  
+            md_file(e)  
+
+        print(listdir)  
 
 </code></pre>
 <p><a target="_blank" href="https://dev-gang.ru/article/rabota-s-markdown-v-python-qevbade1ow/">Работа с Markdown в Python</a>  </p>
@@ -110,28 +174,28 @@ youtube-dl -j --flat-playlist https://youtu.be/_PjHweHy8Bs?list=PLOD7hq4Bu8VWT0F
 
 from playsound import playsound  
 
-file1 = &quot;tmp/b0202abby.opus&quot;  
-file2 = &quot;[undefined](http://icecast227.ptspb.ru:8104/ruradio&quot;)  
-file3 = &quot;tmp/EF4e_PreintSB_1.10.mp3&quot;  
-self.player = vlc.MediaPlayer(file2)  
-self.player.play()  
+        file1 = &quot;tmp/b0202abby.opus&quot;  
+        file2 = &quot;[undefined](http://icecast227.ptspb.ru:8104/ruradio&quot;)  
+        file3 = &quot;tmp/EF4e_PreintSB_1.10.mp3&quot;  
+        self.player = vlc.MediaPlayer(file2)  
+        self.player.play()  
 
-value = self.player.get_time()  
+        value = self.player.get_time()  
 </code></pre>
 <p>is good in opus, mp3, stream  </p>
 <p>python playsound get_time  </p>
 <h2 id="vlc">vlc</h2>
 <pre><code>pip install python-vlc  
 
-file1 = &quot;tmp/b0202abby.opus&quot;  
-file2 = &quot;http://icecast227.ptspb.ru:8104/ruradio&quot;  
-file3 = &quot;tmp/EF4e_PreintSB_1.10.mp3&quot;  
+        file1 = &quot;tmp/b0202abby.opus&quot;  
+        file2 = &quot;http://icecast227.ptspb.ru:8104/ruradio&quot;  
+        file3 = &quot;tmp/EF4e_PreintSB_1.10.mp3&quot;  
 
-self.media = vlc.MediaPlayer(file2)  
-self.media.audio_set_volume(50)  
-self.bplay = False  
+        self.media = vlc.MediaPlayer(file2)  
+        self.media.audio_set_volume(50)  
+        self.bplay = False  
 
-self.media.play()  
+        self.media.play()  
 </code></pre>
 <p><a target="_blank" href="https://www.geeksforgeeks.org/vlc-module-in-python-an-introduction/">VLC module in Python - An Introduction - GeeksforGeeks</a><br />
 <a target="_blank" href="https://stackoverflow.com/questions/58760146/how-to-record-stream-for-exactly-30-seconds-using-python-vlc">How to record stream for exactly 30 seconds using python-vlc? - Stack Overflow</a><br />
@@ -140,8 +204,8 @@ self.media.play()
 <p><code>multicomputer</code> program  </p>
 <pre><code class="language-html">SET FNAME=D:\mailCloud\prjother\b04py\b006enru\b34test.py  
 if NOT EXIST %FNAME% (  
-SET FNAME=D:\mailCloud\cloud\prjother\b04py\b006enru\b34test.py  
-ECHO Yes  
+    SET FNAME=D:\mailCloud\cloud\prjother\b04py\b006enru\b34test.py  
+    ECHO Yes  
 )  
 ECHO %FNAME%  
 %FNAME%  
