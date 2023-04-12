@@ -121,6 +121,38 @@ $(() => {
 
   create()
 
+  $('.button1').click(() => {
+    let texts = getEdit()
+    let als = texts[0].split('\n')
+    let bls = texts[1].split('\n')
+
+    als = als.filter((e) => {
+      return e.trim().length != 0
+    })
+    bls = bls.filter((e) => {
+      return e.trim().length != 0
+    })
+
+    setEdit0(als.join('\n'))
+    setEdit1(bls.join('\n'))
+
+    setTable(getEdit())
+    setLists(getEdit())
+
+  })
+
+  $('.button2').click(() => {
+    let text = ''
+    $(".table td").each((i, e) => {
+      // console.log(i, e)
+      text += $(e).text() + '\n'
+
+    })
+    navigator.clipboard.writeText(text)
+
+    // console.log(text)
+  })
+
 
 
 })
