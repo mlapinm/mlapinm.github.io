@@ -1,6 +1,9 @@
 
 
+importmap imports glb three js example
 
+
+https://github.com/mrdoob/three.js/blob/master/examples/webgl_camera.html
 
 https://sketchfab.com/3d-models/parrot-free-02-9f5455031311447f81bc09287431d069
 
