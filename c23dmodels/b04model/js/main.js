@@ -104,3 +104,9 @@ document.onmousemove = (e) => {
 
 //Start the 3D rendering
 animate();
+
+
+$(".button1").click(() => {
+
+  console.log(333)
+})

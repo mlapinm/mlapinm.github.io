@@ -22,6 +22,10 @@ let controls;
 
 //Set which object to render
 let objToRender = 'cute_spider';
+objToRender = '../b01models/cute_spider/scene.gltf';
+objToRender = '../b01models/bowl/scene.gltf';
+objToRender = '../b01models/bird_orange.glb';
+
 //cute_spider__ccw
 //dino
 
@@ -30,7 +34,7 @@ const loader = new GLTFLoader();
 
 //Load the file
 loader.load(
-  `models/${objToRender}/scene.gltf`,
+  objToRender,
   function (gltf) {
     //If the file is loaded, add it to the scene
     object = gltf.scene;
@@ -54,7 +58,6 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById("container3D").appendChild(renderer.domElement);
 
 //Set how far the camera will be from the 3D model
-camera.position.z = objToRender === "cute_spider" ? 25 : 500;
 camera.position.z = 6;
 
 //Add lights to the scene, so we can actually see the 3D model
@@ -63,13 +66,13 @@ topLight.position.set(500, 500, 500) //top-left-ish
 topLight.castShadow = true;
 scene.add(topLight);
 
-const ambientLight = new THREE.AmbientLight(0x333333, objToRender === "cute_spider" ? 5 : 1);
+const ambientLight = new THREE.AmbientLight(0x333333, 5);
 scene.add(ambientLight);
 
 //This adds controls to the camera, so we can rotate / zoom it with the mouse
-if (objToRender === "cute_spider") {
-  controls = new OrbitControls(camera, renderer.domElement);
-}
+
+controls = new OrbitControls(camera, renderer.domElement);
+
 
 //Render the scene
 function animate() {
