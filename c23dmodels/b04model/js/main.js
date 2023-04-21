@@ -5,6 +5,26 @@ import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/js
 // To allow for importing the .gltf file
 import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
 
+let log1 = $(".log1")
+let model_num = 0
+let models = [
+  {
+    name: 'bird_orange',
+    objToRender: '../b01models/bird_orange.glb',
+    z: 6
+  },
+  {
+    name: 'cute_spider',
+    objToRender: '../b01models/cute_spider/scene.gltf',
+    z: 6
+  },
+  {
+    name: 'bowl',
+    objToRender: '../b01models/bowl/scene.gltf',
+    z: 6
+  },
+]
+
 //Create a Three.JS Scene
 const scene = new THREE.Scene();
 //create a new camera with positions and angles
@@ -25,18 +45,27 @@ let objToRender = 'bowl';
 objToRender = "https://drive.google.com/drive/folders/1S3U5GN8h8k2wvFhYgTi5KQNiHl-0H8zu?usp=share_link//scene.gltf"
 objToRender = "https://drive.google.com/file/d/1d74g4_D4mhjj0_fsUBYD4-gx-KX0HmAL/view?usp=share_link"
 objToRender = "https://drive.google.com/uc?export=download&id=1d74g4_D4mhjj0_fsUBYD4-gx-KX0HmAL"
-objToRender = 'bird_orange.glb'
-//cute_spider__ccw
-//dino
+objToRender = '../b01models/bird_orange.glb'
+objToRender = '../b01models/cute_spider/scene.gltf'
+objToRender = '../b01models/bowl/scene.gltf'
 
 //Instantiate a loader for the .gltf file
 const loader = new GLTFLoader();
 
-//Load the file
+let renderer = undefined
+let topLight = undefined
+let ambientLight = undefined
+
+let load_obj = (objToRender) => {
+
+scene.remove(object)
+scene.remove(topLight)
+scene.remove(ambientLight)
+
+
+  //Load the file
 loader.load(
-//  `models/${objToRender}/scene.gltf`,
-  `models/${objToRender}`,
-  // objToRender,
+  objToRender,
   function (gltf) {
     //If the file is loaded, add it to the scene
     object = gltf.scene;
@@ -52,27 +81,42 @@ loader.load(
   }
 );
 
+// delete(renderer)
+  // renderer = undefined
 //Instantiate a new renderer and set its size
-const renderer = new THREE.WebGLRenderer({ alpha: true }); //Alpha: true allows for the transparent background
+renderer = new THREE.WebGLRenderer({ alpha: true }); //Alpha: true allows for the transparent background
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 //Add the renderer to the DOM
+document.getElementById("container3D").innerHTML = ''
 document.getElementById("container3D").appendChild(renderer.domElement);
+
+//Add the renderer to the DOM
+// document.getElementById("container3D").appendChild(renderer.domElement);
 
 //Set how far the camera will be from the 3D model
 camera.position.z = 6;
 
 //Add lights to the scene, so we can actually see the 3D model
-const topLight = new THREE.DirectionalLight(0xffffff, 1); // (color, intensity)
+topLight = new THREE.DirectionalLight(0xffffff, 1); // (color, intensity)
 topLight.position.set(500, 500, 500) //top-left-ish
 topLight.castShadow = true;
 scene.add(topLight);
 
-const ambientLight = new THREE.AmbientLight(0x333333, 5);
+ambientLight = new THREE.AmbientLight(0x333333, 5);
 scene.add(ambientLight);
 
 //This adds controls to the camera, so we can rotate / zoom it with the mouse
 controls = new OrbitControls(camera, renderer.domElement);
+
+
+}
+
+objToRender = models[model_num].objToRender
+
+load_obj(objToRender)
+
+
 
 
 //Render the scene
@@ -105,8 +149,17 @@ document.onmousemove = (e) => {
 //Start the 3D rendering
 animate();
 
-
 $(".button1").click(() => {
+  let q = models.length
 
+
+
+  model_num = model_num + 1 < q ? model_num + 1 : 0
+
+  objToRender = models[model_num]['objToRender']
+  load_obj(objToRender)
+
+  let text = `${2} ${model_num}`
+  log1.text(objToRender)
   console.log(333)
 })
