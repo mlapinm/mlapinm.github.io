@@ -99,10 +99,12 @@ $(() => {
 
       span.click((e)=>{
         let sp = $(e.target)
+        
         let class_name = sp.attr('class')
         res = class_name.match(/cl_([^ ]+)/)
         let num = res ? res[1] : 0
         num = Number(num)
+        set_param_url('page', num)
         item_num = num
 
         textList0 = items[num][0]
