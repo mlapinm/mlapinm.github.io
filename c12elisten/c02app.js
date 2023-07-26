@@ -14,7 +14,41 @@ $(() => {
   let lines1 = []
   let editText = ''
 
-  log1.text(333)
+  let page = 1
+  // console.log(window.location.href)
+
+  let get_param_url = (param) => {
+      let urlParams = new URLSearchParams(window.location.search)
+      return urlParams.get(param)
+  }
+
+  let set_param_url = (param, value) => {
+      let urlParams = new URLSearchParams(window.location.search)
+      let page = urlParams.get(param)
+      if(page == null){
+          urlParams.append(param, value)
+      }else{
+          urlParams.set(param, value)
+      }
+      if(page != value){
+          // window.location.href = "/?" + urlParams.toString()
+          let url = new URL(window.location.href);
+
+          // Add a new parameter to the URL
+          url.searchParams.set(param, value);
+          
+          // Update the URL of the current window
+          window.history.replaceState(null, null, url);
+          // window.history.replaceState(null, null, url);        
+      }
+  }
+
+  page = get_param_url('page')
+  if(page == null){
+      page = 1
+      set_param_url('page', page)
+  }
+
 
   
   let count0 = lines0.length
