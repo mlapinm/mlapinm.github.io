@@ -14,7 +14,7 @@ $(() => {
   let lines1 = []
   let editText = ''
 
-  let page = 1
+  let page = 0
   // console.log(window.location.href)
 
   let get_param_url = (param) => {
@@ -43,11 +43,6 @@ $(() => {
       }
   }
 
-  page = get_param_url('page')
-  if(page == null){
-      page = 1
-      set_param_url('page', page)
-  }
 
 
   
@@ -75,7 +70,7 @@ $(() => {
   }
 
 
-  function create_nav(){
+  function create_nav(ppage=0){
     $(".div_nav").html("")
 
     $(".div_head").text(head_line(0))
@@ -95,6 +90,9 @@ $(() => {
       let n = k + 1
       let s = n < 10 ? `0${n}`: n
       span.text(s)
+      if(i == ppage){
+        span.addClass('clicked')
+      }
 
 
       span.click((e)=>{
@@ -172,16 +170,16 @@ $(() => {
 
   }
 
-  function create(){
-    let textList0 = items[0][0]
+  function create(ppage=0){
+
+    let textList0 = items[ppage][0]
     let text0 = textList0.join('\n')
-    let textList1 = items[1][0]
+    let textList1 = items[ppage + 1][0]
     let text1 = textList1.join('\n')
     setEdit0(text0)
     setEdit1(text1)
     setTable([text0, text1])
     setLists([text0, text1])
-
 
 
     edit0.on('input selectionchange propertychange', function() {
@@ -313,9 +311,16 @@ $(() => {
     return [$(".edit0")[0].value, $(".edit1")[0].value] 
   }
 
+  page = get_param_url('page')
+  page = Number(page)
+  if(page == null){
+      page = 0
+      set_param_url('page', page)
+  }
 
-  create_nav()
-  create()
+  create_nav(page)
+
+  create(page)
 
 
 
