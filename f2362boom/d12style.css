@@ -1,0 +1,36 @@
+* {
+    font-size: 1rem;
+    font-family: sans-serif;
+    line-height: 0.9;
+  
+  }
+  
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vmin;
+    height: 90vmin;
+    justify-content: center;
+    margin: auto;
+    background-color: cadetblue;
+    background-color: white;
+    /* border: solid 1px; */
+}
+  
+.square {
+    display: flex;
+    width: 23.2%;
+    height: 24.8%;
+    background-color: aqua;
+
+    /* border: solid 2px; */
+}
+
+.brand, .brepl {
+    width: 48%;
+}
+
+.bstart {
+    width: 100%;
+}
+
