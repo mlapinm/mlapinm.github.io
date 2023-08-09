@@ -57,6 +57,53 @@ $(() => {
 
     }
 
+    let get_q = () => {
+        let bls = []
+        ls.forEach((e) => {
+                bls.push(e)
+        })
+        // bls = bls.slice(0, -1)
+        let dls = []
+        for(let i = 0; i < maxRow; i++){
+            let bit = bls.slice(i*maxRow, (i+1)*maxRow)
+            if(!(i % 2)){
+                dls = dls.concat(bit)
+            }else{
+                dls = dls.concat(bit.reverse())
+            }
+        }
+        let xls = []
+        dls.forEach((e) => {
+            if(e != 0){
+                xls.push(e)
+            }
+        })
+        dls = xls
+
+        let q = dls.length
+        let even = 0
+        let odd = 0
+        let r = []
+        for(let i = 0; i < q - 1; i++){
+            for(let j = i + 1; j < q; j++)
+            {
+                r.push([i, j])
+                if(dls[i] < dls[j]){
+                    even += 1
+                }else{
+                    odd += 1
+                }
+            }
+        }
+
+        // console.log(odd, even)
+        
+        // console.log(dls)
+        // console.log(bls)
+
+        return odd
+    }
+
 
     let make_grid = () => {
 
@@ -86,6 +133,8 @@ $(() => {
                     ls[a] = ls[b]
                     ls[b] = u
                     set_ls()
+                    let k = get_q()
+                    $('.prop').text(k)
                 }
                 // console.log(n, pair)
             })
@@ -94,6 +143,8 @@ $(() => {
 
     make_grid()
     set_ls()
+    let k = get_q()
+    $('.prop').text(k)
 
     $('.bstart').click(() => {
         if(!start){
@@ -103,32 +154,21 @@ $(() => {
         }
     })
 
+
     $('.brand').click(() => {
         log1.text('brand')
         let q = ls.length
         ls = ls.slice(0, -1)
-        ls.sort(()=> 0.5 - Math.random())
+        ls.sort(() => 0.5 - Math.random())
         ls.push(0)
         set_ls()
-        let bls = []
-        ls.forEach((e) => {
-            bls.push(e)
-        })
-        bls = bls.slice(0, -1)
-        let dls = []
-        for(let i = 0; i < maxRow; i++){
-            let bit = bls.slice(i*maxRow, (i+1)*maxRow)
-            if(!(i % 2)){
-                dls = dls.concat(bit)
-            }else{
-                dls = dls.concat(bit.reverse())
-            }
-        }
-        dls.concat([1, 2])
-        console.log(dls)
-        console.log(bls)
+        let k = get_q()
+        $('.prop').text(k)
 
+    })
 
+    $('.brepl').click(() => {
+        $('.brepl').css('color', 'bisque')
     })
 
 })

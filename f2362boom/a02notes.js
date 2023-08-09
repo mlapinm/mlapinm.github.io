@@ -219,7 +219,7 @@ var notes = [
     ],
     "link": "d11binary.html"
    },
-  {
+   {
     "header": "",
     "title": "",
     "card-text": [
@@ -228,6 +228,16 @@ var notes = [
       ""
     ],
     "link": "d12fifteen.html"
+   },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "d14figdom",
+      "",
+      ""
+    ],
+    "link": "d14figdom.html"
    },
   {
     "header": "",
