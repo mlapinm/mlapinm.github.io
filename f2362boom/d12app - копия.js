@@ -105,26 +105,8 @@ $(() => {
         return odd
     }
     let replace_pair = []
-    let make_replace = (n, sq) => {
-        if(!replace_pair.length){
-            sq.css('color', 'blue')
-            replace_pair.push(n)
-        }else{
-            a = replace_pair[0]
-            replace_pair = []
-            b = n
-            let u = ls[a]
-            ls[a] = ls[b]
-            ls[b] = u
-
-            squares.forEach(e => e.css('color', 'black'))
-            set_ls()
-            let k = get_q()
-            $('.prop').text(k)
-}
-
-        console.log(333)
-
+    let make_replace = (n) => {
+        
     }
 
     let make_grid = () => {
@@ -140,16 +122,16 @@ $(() => {
         }
         squares.forEach((sq) => {
             sq.click((e) => {
+                if(!start){
+                    return
+                }
                 let d = $(e.target)
                 let cls = d.attr('class')
                 let match = /cell(\d\d?)/.exec(cls)
                 let n = match[1]
                 n = Number(n)
                 if(isrepl){
-                    make_replace(n, d)
-                }
-                if(!start){
-                    return
+                    make_replace(n)
                 }
                 let pair = get_pair(n)
                 if(pair){

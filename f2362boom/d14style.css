@@ -26,7 +26,14 @@
     height: 15vmin;
     background-color: aqua;
 
+    /* border-radius: 0.2rem; */
+    border-color: black;
+
     border: solid 1px;
+}
+
+.nonesqures {
+    background-color: white;
 }
 
 .d2 {
@@ -45,16 +52,21 @@
 
 .ihoriz {
     display: flex;
-    width: 50%;
-    height: 40%;
-    border: 1px solid;
+    width: 20vmin;
+    height: 10vmin;
+    border: 2px solid;
 }
 
 .ivert {
-    width: 25%;
-    height: 70%;
-    border: 1px solid;
+    width: 10vmin;
+    height: 20vmin;
+    border: 2px solid;
 }
+
+.select {
+    border-color: cadetblue;
+}
+
 
 .hf {
     display: flex;

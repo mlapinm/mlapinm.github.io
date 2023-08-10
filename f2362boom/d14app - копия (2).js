@@ -33,6 +33,7 @@ $(() => {
         doms.forEach((e) => {
             bdoms = bdoms.concat(e)
         })
+        console.log(n, bdoms)
         if(nonesqures.includes(n)){
             return
         }
@@ -53,21 +54,16 @@ $(() => {
                 })
                 a['cl'] += 1
                 b['cl'] += 1
-            }else if(a['cl'] == 0 && bdoms.includes(n)){
-                squares.forEach( e => {
-                    e.css('border-color', 'black')
-                    e['cl'] = 0
-                })
-                a['cl'] += 1
-                b['cl'] += 1
             }else if(a['cl'] == 1){
                 let mn = get_paire(n)
                 mn.forEach(e => {
                     squares[e].css('border-color', 'cadetblue')
                     squares[e]['cl'] += 1
                 })
+                // console.log(mn)
             }else if(a['cl'] == 2){
                 let mn = get_paire(n)
+                // console.log(mn, is, doms.indexOf(mn), doms, typeof(doms[0][0]))
                 mn.forEach(e => {
                     squares[e].css('border-color', 'black')
                     squares[e].css('border-radius', '0px')
@@ -87,6 +83,7 @@ $(() => {
     }   
 
     let make_grid = () => {
+        // console.log([1,2].findIndex(1))
         for(let i = 0; i < max; i++){
             let square = $('<div></div>')
             square.addClass('square')
