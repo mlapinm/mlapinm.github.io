@@ -54,7 +54,6 @@ $(() => {
         for(let i = qu[0] * 3; i < qu[0] * 3 + 3; i++){
             for(let j = qu[1] * 3; j < qu[1] * 3 + 3; j++){
                 qq.push(fig[i][j])
-
             }
         }
 
@@ -112,6 +111,16 @@ $(() => {
         }
     }
 
+    let check_sq = () => {
+        numbers = []
+        for(let i=0;i<max;i++){
+            let ls = get_numbers(i)
+            numbers.push(ls)
+            let k = ls.length
+            squares[i].css('background-color', bcolors[k])
+        }
+    }
+
     let set_btns = (n, ls) => {
         let btns = $('.btns')
         btns.empty()
@@ -125,6 +134,14 @@ $(() => {
                 let num = Number(e.text())
 
                 squares[n].text(num)
+
+                let r = Math.floor(n / maxRow)
+                let c = n % maxRow
+
+                fig[r][c] = num
+
+                check_sq()
+
 
                 console.log(num, n)
 
@@ -176,12 +193,6 @@ $(() => {
     
     make_grid()
     set_figs()
-    for(let i=0;i<max;i++){
-        let ls = get_numbers(i)
-        numbers.push(ls)
-        let k = ls.length
-        squares[i].css('background-color', bcolors[k])
-
-    }
+    check_sq()
 
 })

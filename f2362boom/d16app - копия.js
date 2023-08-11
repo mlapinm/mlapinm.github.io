@@ -176,6 +176,7 @@ $(() => {
     
     make_grid()
     set_figs()
+	
     for(let i=0;i<max;i++){
         let ls = get_numbers(i)
         numbers.push(ls)
