@@ -239,6 +239,16 @@ var notes = [
     ],
     "link": "d14figdom.html"
    },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "d16sudo",
+      "",
+      ""
+    ],
+    "link": "d16sudo.html"
+   },
   {
     "header": "",
     "title": "",
