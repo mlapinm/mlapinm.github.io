@@ -249,6 +249,26 @@ var notes = [
     ],
     "link": "d16sudo.html"
    },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "d18two",
+      "2 x 2",
+      "tournament"
+    ],
+    "link": "d18two.html"
+   },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "d20modraw",
+      "",
+      ""
+    ],
+    "link": "d20modraw.html"
+   },
   {
     "header": "",
     "title": "",
