@@ -11,7 +11,7 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
-    width: 100vmin;
+    width: 101vmin;
     height: 100vmin;
     justify-content: center;
     margin: auto;
@@ -38,3 +38,24 @@
 .clicked {
     background-color: black;
 }
+
+.blue {
+    background-color: blue;
+}
+
+.dsecond {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;    
+    height: 2rem;
+
+}
+
+.bcopy, .bpast, .bclear, .bdraw {
+    width: 20vmin;
+    height: 10vmin;
+    border: 2px solid;
+    border-radius: 10vmin;
+}
+
