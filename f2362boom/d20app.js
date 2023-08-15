@@ -50,12 +50,12 @@ $(() => {
                 let pts = [
                     e - maxRow,
                     e - maxRow + 1,
-                    e + 1,
-                    e + maxRow + 1,
-                    e + maxRow,
-                    e + maxRow - 1,
-                    e - 1,
-                    e - maxRow - 1
+                    // e + 1,
+                    // e + maxRow + 1,
+                    // e + maxRow,
+                    // e + maxRow - 1,
+                    // e - 1,
+                    // e - maxRow - 1
                 ]
                 pts.forEach(u => {
                     if(isquares[u] == 0){
@@ -66,7 +66,7 @@ $(() => {
                 })
             })
             pfig = pfig.concat(bfig)
-            k = 0
+            // k = 0
         }
         pfig.sort()
         console.log(pfig.slice(0, 10))
