@@ -269,6 +269,16 @@ var notes = [
     ],
     "link": "d20modraw.html"
    },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "d22cwd",
+      "",
+      ""
+    ],
+    "link": "d22cwd.html"
+   },
   {
     "header": "",
     "title": "",

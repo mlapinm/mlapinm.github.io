@@ -49,12 +49,12 @@ $(() => {
             pfig.forEach((e) => {
                 let pts = [
                     e - maxRow,
-                    e - maxRow + 1,
-                    // e + 1,
+                    // e - maxRow + 1,
+                    e + 1,
                     // e + maxRow + 1,
-                    // e + maxRow,
+                    e + maxRow,
                     // e + maxRow - 1,
-                    // e - 1,
+                    e - 1,
                     // e - maxRow - 1
                 ]
                 pts.forEach(u => {
@@ -81,6 +81,7 @@ $(() => {
             if(e == 9){
                 squares[k].addClass('clicked')
             }
+            isquares[k] = Number(e)
             k += 1
         })
 
