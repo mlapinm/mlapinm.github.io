@@ -279,6 +279,16 @@ var notes = [
     ],
     "link": "d22cwd.html"
    },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "d24now",
+      "links",
+      ""
+    ],
+    "link": "d24now.html"
+   },
   {
     "header": "",
     "title": "",
