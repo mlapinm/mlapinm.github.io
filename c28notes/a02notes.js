@@ -3,11 +3,11 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
-      "",
+      "b32b2310",
       "0",
       ""
     ],
-    "link": ""
+    "link": "b32bmk/b32bmk.html"
    },
   {
     "header": "",

@@ -1,0 +1,25 @@
+* {
+    font-size: 1rem;
+    font-family: 'Arial';
+    margin: 0;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.bbox {
+    /* height: 200px; */
+    background-color: linen;
+
+}
+
+.num {
+    background-color:aqua;
+    border-radius: 100%;
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+}
+
+.num:hover {
+    cursor: pointer;
+}
+
