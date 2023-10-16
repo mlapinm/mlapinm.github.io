@@ -1,0 +1,187 @@
+$(() => {
+    let log1 = $('.log1')
+    let bbox = $('.bbox')
+    let ww = 20
+    let hh = 6
+    let wr = 24
+    let io = ""
+
+    let pp = (...arguments) => {
+        //print console.log
+        // pp(1, 2, 3, 'aa')
+        console.log(...arguments)
+    }
+
+    let aio = [
+         "0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0",
+        "0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0",
+       "0 0 0 0 0 0 0 0 0 1 1 0 0 0 1 0 0 0 0 0",
+      "0 0 0 0 0 0 1 1 0 1 0 1 0 0 0 1 0 0 0 0",
+     "0 0 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 0 0 0",
+    "1 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0",
+   "1 0 0 0 1 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0",
+  "0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0",
+ "0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0",
+    ]
+
+    let get_field = (io) => {
+        let a = io[0]
+        pp(a.split(' ').join('').length)
+        io = io.join(' ')
+    
+        let ls = io.split(' ')
+        io = ls.join('')
+        return io
+    }
+    let afield = get_field(aio)
+    let asvg = d3.select('.abox')
+    .append("svg")
+    .attr("width", 400)
+    .attr("height", 200)
+    .attr("class", "svg")
+    .style("border", "solid 1px lightgrey")
+    .style("padding", "10px")
+
+
+    io = [
+         "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0",
+        "0 1 1 0 0 1 1 0 0 1 1 0 0 1 1 0 1 1 1 0",
+       "0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0",
+      "0 1 0 0 0 1 0 1 0 1 0 1 0 0 1 1 0 1 0 0",
+     "0 0 1 1 0 1 0 1 0 0 1 1 0 0 0 1 0 1 0 0",
+    "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+    ]
+    let field = get_field(io)
+    i = 3
+    let rects = []
+
+    let svg = d3.select('.bbox')
+    .append("svg")
+    .attr("width", 400)
+    .attr("height", 200)
+    .attr("class", "svg")
+    .style("border", "solid 1px lightgrey")
+    .style("padding", "10px")
+
+    let bsvg = d3.select('.cbox')
+    .append("svg")
+    .attr("width", 400)
+    .attr("height", 250)
+    .attr("class", "svg")
+    .style("border", "solid 1px lightgrey")
+    .style("padding", "10px")
+
+    let dsvg = d3.select('.dbox')
+    .append("svg")
+    .attr("width", 400)
+    .attr("height", 250)
+    .attr("class", "svg")
+    .style("border", "solid 1px lightgrey")
+    .style("padding", "10px")
+
+    
+    let mrect = (x=0, y=0, awr=wr, fill="#eee", psvg=svg) => {
+
+        var rect = psvg.append("rect")
+        .attr("x", x)
+        .attr("y", y)
+        .attr("width", awr) 
+        .attr("height", awr) 
+        .style("fill", fill)
+        .style("stroke", "#666666")
+        .style("stroke-width", 0.5);
+        return rect
+    }
+
+    let mwhrect = (x=0, y=0, awr=wr, ahr=wr, fill="#eee", psvg=svg) => {
+
+        var rect = psvg.append("rect")
+        .attr("x", x)
+        .attr("y", y)
+        .attr("width", awr) 
+        .attr("height", awr) 
+        .style("fill", fill)
+        .style("stroke", "#666666")
+        .style("stroke-width", 0.5);
+        return rect
+    }
+
+    let draw = (s, rects) => {
+        ls = s.split('')
+        ls.forEach((e, i) => {
+            if(e == 1){
+                rects[i].style("fill", "#aaa")
+            }
+        })
+    }
+
+    let create = (vsvg, hh=6) => {
+
+        let rects = []
+        for(let y = 0; y < hh; y++){
+            for(let x = 0; x < ww; x++){
+                let rect = mrect((hh - y) * 0.5 * wr 
+                + x * wr, y * wr, awr=wr, fill="#eee", psvg=vsvg)
+                rects.push(rect)
+            }
+        }
+        return rects
+    }
+
+    let bcreate = () => {
+        let hh = 3
+        let ww = 8
+        let aw = 48
+        let bw = 8
+        let af = "#eee"
+        let bf = "#ddd"
+        let dfig = (x, y) => {
+            mrect(x, y, aw, af, bsvg)
+            mrect(x + aw, y, bw, bf, bsvg)  
+        }
+
+        for(let y = 0; y < hh; y++){
+            for(let x = 0; x < ww; x++){
+                x1 = bw * (hh - y) + x * aw
+                y1 = y * aw + x * bw
+                dfig(x1, y1)
+            }
+        }
+    }
+
+    let dcreate = () => {
+        let hh = 3
+        let ww = 8
+        let aw = 24
+        let ah = 8
+        let bw = 8
+        let af = "#eee"
+        let bf = "#ddd"
+        let dfig = (x, y) => {
+            mwhrect(x, y, aw, aw, af, dsvg)
+            // mwhrect(x + aw, y, bw, aw, bf, dsvg)  
+        }
+
+        for(let y = 0; y < hh; y++){
+            for(let x = 0; x < ww; x++){
+                x1 = bw * (hh - y) + x * aw
+                y1 = y * aw + x * bw
+                dfig(x1, y1)
+            }
+        }
+    }
+
+
+
+    let arects = []
+    arects = create(asvg, 9)
+    draw(afield, arects)
+
+    rects = create(svg, 6)
+    draw(field, rects)
+
+    bcreate()
+    dcreate()
+
+    log1.text('22')
+})
