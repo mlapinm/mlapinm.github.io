@@ -37,7 +37,7 @@ $(() => {
     let asvg = d3.select('.abox')
     .append("svg")
     .attr("width", 400)
-    .attr("height", 200)
+    .attr("height", 300)
     .attr("class", "svg")
     .style("border", "solid 1px lightgrey")
     .style("padding", "10px")
@@ -74,7 +74,7 @@ $(() => {
     let dsvg = d3.select('.dbox')
     .append("svg")
     .attr("width", 400)
-    .attr("height", 250)
+    .attr("height", 400)
     .attr("class", "svg")
     .style("border", "solid 1px lightgrey")
     .style("padding", "10px")
@@ -99,7 +99,7 @@ $(() => {
         .attr("x", x)
         .attr("y", y)
         .attr("width", awr) 
-        .attr("height", awr) 
+        .attr("height", ahr) 
         .style("fill", fill)
         .style("stroke", "#666666")
         .style("stroke-width", 0.5);
@@ -152,20 +152,26 @@ $(() => {
     let dcreate = () => {
         let hh = 3
         let ww = 8
-        let aw = 24
-        let ah = 8
+        let aw = 8
+        let ah = 24
         let bw = 8
         let af = "#eee"
         let bf = "#ddd"
         let dfig = (x, y) => {
-            mwhrect(x, y, aw, aw, af, dsvg)
+            mwhrect(x, y, aw, ah, af, dsvg)
+            mwhrect(x+aw, y, ah, aw, af, dsvg)
+            
             // mwhrect(x + aw, y, bw, aw, bf, dsvg)  
         }
+        ww = 16
+        hh = 12
+        for(let y = 0; y < ww; y++){
+            for(let x = 0; x < hh; x++){
+                x1 = x * (ah + aw) + y * aw
+                // x1 = 0
+                y1 = (hh - x) * (ah - aw)  + ah + y * aw
+                console.log(x1)
 
-        for(let y = 0; y < hh; y++){
-            for(let x = 0; x < ww; x++){
-                x1 = bw * (hh - y) + x * aw
-                y1 = y * aw + x * bw
                 dfig(x1, y1)
             }
         }
