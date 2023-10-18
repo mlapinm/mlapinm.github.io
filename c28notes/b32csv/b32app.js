@@ -79,6 +79,14 @@ $(() => {
     .style("border", "solid 1px lightgrey")
     .style("padding", "10px")
 
+    let fsvg = d3.select('.fbox')
+    .append("svg")
+    .attr("width", 400)
+    .attr("height", 200)
+    .attr("class", "svg")
+    .style("border", "solid 1px lightgrey")
+    .style("padding", "10px")
+
     
     let mrect = (x=0, y=0, awr=wr, fill="#eee", psvg=svg) => {
 
@@ -170,9 +178,47 @@ $(() => {
                 x1 = x * (ah + aw) + y * aw
                 // x1 = 0
                 y1 = (hh - x) * (ah - aw)  + ah + y * aw
-                console.log(x1)
+                // console.log(x1)
 
                 dfig(x1, y1)
+            }
+        }
+    }
+
+    let fcreate = () => {
+        let hh = 3
+        let ww = 8
+        let ah = 24
+        let aw = 8
+        aw = ah / 3
+        let bw = 8
+        let af = "#eee"
+        let bf = "#ddd"
+
+        let dfig = (x, y, ch=0) => {
+            let bch = ch == 0 ? 1 : 0
+            let nk = ah / aw
+            for(let u = 0; u < nk; u++){
+                let a = ch * ah
+                let b = bch * ah
+                mwhrect(x + aw * u + a, y, aw, ah, af, fsvg)
+                mwhrect(x + b, y + aw * u, ah, aw, af, fsvg)
+
+            }
+            
+        }
+        ww = 10
+        hh = 6
+        for(let y = 0; y < hh; y++){
+            for(let x = 0; x < ww; x++){
+
+                // x1 = x * 2 * ah + ah * (y % 2)
+                x1 = x * 2 * ah
+                // x1 = 0
+                y1 = y * ah
+                // console.log(x1)
+
+                dfig(x1, y1, y%2)
             }
         }
     }
@@ -188,6 +234,7 @@ $(() => {
 
     bcreate()
     dcreate()
+    fcreate()
 
     log1.text('22')
 })
