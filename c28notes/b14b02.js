@@ -1,0 +1,658 @@
+let b14b02 = [
+  {
+    "fn": "equal",
+    "rem": [
+      "common",
+      "equal couple of lists"
+    ],
+    "name": "main.py",
+    "num": 0,
+    "dir": "b01root",
+    "display": true
+  },
+  {
+    "fn": "init_o",
+    "rem": [
+      "program",
+      "read objects from file",
+      "main object is objects[0]",
+      "for main.py and static/app.js"
+    ],
+    "name": "main.py",
+    "num": 1,
+    "dir": "b01root",
+    "display": true
+  },
+  {
+    "fn": "mjson",
+    "rem": [
+      "program",
+      "open json in npp"
+    ],
+    "name": "main.py",
+    "num": 2,
+    "dir": "b01root",
+    "display": true
+  },
+  {
+    "fn": "mopen",
+    "rem": [
+      "program",
+      "open folder and select file"
+    ],
+    "name": "main.py",
+    "num": 3,
+    "dir": "b01root",
+    "display": true
+  },
+  {
+    "fn": "mpath",
+    "rem": [
+      "program",
+      "get path and write to file",
+      "open in npp"
+    ],
+    "name": "main.py",
+    "num": 4,
+    "dir": "b01root",
+    "display": true
+  },
+  {
+    "fn": "mtest",
+    "rem": [
+      "program",
+      "if o['test'] == True",
+      "when we press program button",
+      "we don't execute",
+      "wo only see description of program"
+    ],
+    "name": "main.py",
+    "num": 5,
+    "dir": "b01root",
+    "display": true
+  },
+  {
+    "fn": "init",
+    "rem": [
+      "program",
+      "call function init_o()",
+      "whith pressing by button"
+    ],
+    "name": "main.py",
+    "num": 6,
+    "dir": "b01root",
+    "display": true
+  },
+  {
+    "fn": "mcmd",
+    "rem": [
+      "program",
+      "start anyprog.cmd from b112eel",
+      "or show description of program"
+    ],
+    "name": "main.py",
+    "num": 7,
+    "dir": "b01root",
+    "display": true
+  },
+  {
+    "fn": "send",
+    "rem": [
+      "program",
+      "need for exchange frontend backend"
+    ],
+    "name": "main.py",
+    "num": 8,
+    "dir": "b01root",
+    "display": true
+  },
+  {
+    "fn": "make_cmd",
+    "rem": [
+      "common",
+      "example cmd = 'echo %time%'",
+      "if other=True",
+      "function run in other console"
+    ],
+    "name": "main.py",
+    "num": 9,
+    "dir": "b02open",
+    "display": true
+  },
+  {
+    "fn": "set_data",
+    "rem": [
+      "program",
+      "return json1 to frontend"
+    ],
+    "name": "main.py",
+    "num": 10,
+    "dir": "b02open",
+    "display": true
+  },
+  {
+    "fn": "get_data",
+    "rem": [
+      "program",
+      "write to json file 'selected'"
+    ],
+    "name": "main.py",
+    "num": 11,
+    "dir": "b02open",
+    "display": true
+  },
+  {
+    "fn": "run_cmds",
+    "rem": [
+      "program",
+      "click ok button",
+      "run selected cmds"
+    ],
+    "name": "main.py",
+    "num": 12,
+    "dir": "b02open",
+    "display": true
+  },
+  {
+    "fn": "equal",
+    "rem": [
+      "common",
+      "equal couple of lists"
+    ],
+    "name": "main.py",
+    "num": 13,
+    "dir": "b03blank",
+    "display": true
+  },
+  {
+    "fn": "init_o",
+    "rem": [
+      "program",
+      "read objects from file",
+      "main object is objects[0]",
+      "for main.py and static/app.js"
+    ],
+    "name": "main.py",
+    "num": 14,
+    "dir": "b03blank",
+    "display": true
+  },
+  {
+    "fn": "init",
+    "rem": [
+      "program",
+      "call function init_o()",
+      "whith pressing by button"
+    ],
+    "name": "main.py",
+    "num": 15,
+    "dir": "b03blank",
+    "display": true
+  },
+  {
+    "fn": "mjson",
+    "rem": [
+      "program",
+      "open json in npp"
+    ],
+    "name": "main.py",
+    "num": 16,
+    "dir": "b03blank",
+    "display": true
+  },
+  {
+    "fn": "mopen",
+    "rem": [
+      "program",
+      "open folder and select file"
+    ],
+    "name": "main.py",
+    "num": 17,
+    "dir": "b03blank",
+    "display": true
+  },
+  {
+    "fn": "send",
+    "rem": [
+      "program",
+      "need for exchange frontend backend"
+    ],
+    "name": "main.py",
+    "num": 18,
+    "dir": "b03blank",
+    "display": true
+  },
+  {
+    "fn": "__init__",
+    "rem": [
+      "program",
+      "class Clock"
+    ],
+    "name": "main.py",
+    "num": 19,
+    "dir": "b04clock",
+    "display": true
+  },
+  {
+    "fn": "play",
+    "rem": [
+      "program",
+      "when click On/Off button",
+      "stop/start play stream ruradio"
+    ],
+    "name": "main.py",
+    "num": 20,
+    "dir": "b04clock",
+    "display": true
+  },
+  {
+    "fn": "record",
+    "rem": [
+      "common",
+      "record stream to file duration"
+    ],
+    "name": "main.py",
+    "num": 21,
+    "dir": "b04clock",
+    "display": true
+  },
+  {
+    "fn": "next_name",
+    "rem": [
+      "if first name is c01clip.mp3",
+      "next name is c02clip.mp3"
+    ],
+    "name": "main.py",
+    "num": 22,
+    "dir": "b04clock",
+    "display": true
+  },
+  {
+    "fn": "get_match",
+    "rem": [
+      "internal"
+    ],
+    "name": "main.py",
+    "num": 23,
+    "dir": "b04clock",
+    "display": true
+  },
+  {
+    "fn": "record_file",
+    "rem": [
+      "program",
+      "get next name of file",
+      "and call record"
+    ],
+    "name": "main.py",
+    "num": 24,
+    "dir": "b04clock",
+    "display": true
+  },
+  {
+    "fn": "process1",
+    "rem": [],
+    "name": "main.py",
+    "num": 25,
+    "dir": "b04clock",
+    "display": true
+  },
+  {
+    "fn": "update_clock",
+    "rem": [],
+    "name": "main.py",
+    "num": 26,
+    "dir": "b04clock",
+    "display": true
+  },
+  {
+    "fn": "send_message",
+    "rem": [],
+    "name": "main.py",
+    "num": 27,
+    "dir": "b06tel",
+    "display": true
+  },
+  {
+    "fn": "my_python_function",
+    "rem": [],
+    "name": "main.py",
+    "num": 28,
+    "dir": "b08list",
+    "display": true
+  },
+  {
+    "fn": "open_name_folder",
+    "rem": [],
+    "name": "main.py",
+    "num": 29,
+    "dir": "b08list",
+    "display": true
+  },
+  {
+    "fn": "open_folder",
+    "rem": [],
+    "name": "main.py",
+    "num": 30,
+    "dir": "b08list",
+    "display": true
+  },
+  {
+    "fn": "__init__",
+    "rem": [],
+    "name": "main.py",
+    "num": 31,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "play",
+    "rem": [],
+    "name": "main.py",
+    "num": 32,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "copy",
+    "rem": [
+      "ls1 = [[1, 1], [1, 1]]",
+      "ls2 = copy(ls1)"
+    ],
+    "name": "main.py",
+    "num": 33,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "no_good_fill",
+    "rem": [],
+    "name": "main.py",
+    "num": 34,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "ns_to_file",
+    "rem": [],
+    "name": "main.py",
+    "num": 35,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "clear_empty",
+    "rem": [
+      "[[[1, 1], []], [[]], [[], []], [[], [1, 1]]]",
+      "[[[1, 1]], [[]], [[]], [[1, 1]]]"
+    ],
+    "name": "main.py",
+    "num": 36,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "ps_ns",
+    "rem": [],
+    "name": "main.py",
+    "num": 37,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "ns_ps",
+    "rem": [],
+    "name": "main.py",
+    "num": 38,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "ps_file",
+    "rem": [],
+    "name": "main.py",
+    "num": 39,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "set_color",
+    "rem": [],
+    "name": "main.py",
+    "num": 40,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "get_snippets",
+    "rem": [],
+    "name": "main.py",
+    "num": 41,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "b_in_a",
+    "rem": [],
+    "name": "main.py",
+    "num": 42,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "ns_add_fig",
+    "rem": [],
+    "name": "main.py",
+    "num": 43,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "is_in",
+    "rem": [],
+    "name": "main.py",
+    "num": 44,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "get_fig",
+    "rem": [],
+    "name": "main.py",
+    "num": 45,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "append",
+    "rem": [],
+    "name": "main.py",
+    "num": 46,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "get_num_ls",
+    "rem": [],
+    "name": "main.py",
+    "num": 47,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "find_el",
+    "rem": [],
+    "name": "main.py",
+    "num": 48,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "get_next",
+    "rem": [],
+    "name": "main.py",
+    "num": 49,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "get_multiline",
+    "rem": [],
+    "name": "main.py",
+    "num": 50,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "get_polygon",
+    "rem": [],
+    "name": "main.py",
+    "num": 51,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "copy_fig",
+    "rem": [],
+    "name": "main.py",
+    "num": 52,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "get_q_segm",
+    "rem": [],
+    "name": "main.py",
+    "num": 53,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "get_poly",
+    "rem": [],
+    "name": "main.py",
+    "num": 54,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "get_polygons",
+    "rem": [],
+    "name": "main.py",
+    "num": 55,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "make_svg",
+    "rem": [],
+    "name": "main.py",
+    "num": 56,
+    "dir": "b12png",
+    "display": true
+  },
+  {
+    "fn": "equal",
+    "rem": [],
+    "name": "main.py",
+    "num": 57,
+    "dir": "b14files",
+    "display": true
+  },
+  {
+    "fn": "init_o",
+    "rem": [],
+    "name": "main.py",
+    "num": 58,
+    "dir": "b14files",
+    "display": true
+  },
+  {
+    "fn": "send",
+    "rem": [],
+    "name": "main.py",
+    "num": 59,
+    "dir": "b14files",
+    "display": true
+  },
+  {
+    "fn": "mjson",
+    "rem": [],
+    "name": "main.py",
+    "num": 60,
+    "dir": "b14files",
+    "display": true
+  },
+  {
+    "fn": "init",
+    "rem": [],
+    "name": "main.py",
+    "num": 61,
+    "dir": "b14files",
+    "display": true
+  },
+  {
+    "fn": "myear23",
+    "rem": [],
+    "name": "main.py",
+    "num": 62,
+    "dir": "b14files",
+    "display": true
+  },
+  {
+    "fn": "myear24",
+    "rem": [],
+    "name": "main.py",
+    "num": 63,
+    "dir": "b14files",
+    "display": true
+  },
+  {
+    "fn": "mopen",
+    "rem": [],
+    "name": "main.py",
+    "num": 64,
+    "dir": "b14files",
+    "display": true
+  },
+  {
+    "fn": "mcmd",
+    "rem": [],
+    "name": "main.py",
+    "num": 65,
+    "dir": "b14files",
+    "display": true
+  },
+  {
+    "fn": "mschedule",
+    "rem": [],
+    "name": "main.py",
+    "num": 66,
+    "dir": "b14files",
+    "display": true
+  },
+  {
+    "fn": "ma01all_cmd",
+    "rem": [],
+    "name": "main.py",
+    "num": 67,
+    "dir": "b14files",
+    "display": true
+  },
+  {
+    "fn": "ma01schedule_cmd",
+    "rem": [],
+    "name": "main.py",
+    "num": 68,
+    "dir": "b14files",
+    "display": true
+  },
+  {
+    "fn": "mrun",
+    "rem": [],
+    "name": "main.py",
+    "num": 69,
+    "dir": "b14files",
+    "display": true
+  }
+]

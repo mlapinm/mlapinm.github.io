@@ -1,0 +1,18 @@
+* {
+    font-size: 1rem;
+    font-family: 'Arial';
+    margin: 0;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+table {
+    border: 1px solid;
+    width: 100%;
+
+}
+
+tr:nth-child(2n) {
+    background: #f0f0f0; /* Р В Р’В Р вЂ™Р’В¦Р В Р’В Р В РІР‚В Р В Р’В Р вЂ™Р’ВµР В Р Р‹Р Р†Р вЂљРЎв„ў Р В Р Р‹Р Р†Р вЂљРЎвЂєР В Р’В Р РЋРІР‚СћР В Р’В Р В РІР‚В¦Р В Р’В Р вЂ™Р’В° */
+}
+
