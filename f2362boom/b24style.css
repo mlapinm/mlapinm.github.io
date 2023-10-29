@@ -1,0 +1,30 @@
+* {
+    font-size: 1rem;
+    font-family: 'Arial';
+    margin: 0;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+table {
+    border: 1px solid;
+    width: 100%;
+
+}
+
+tr:nth-child(2n) {
+    background: #f0f0f0; /* Цвет фона */
+}
+
+.bbox {
+    display: flex;
+
+    justify-content: center;
+}
+
+
+
+button {
+    width: 48%;
+}
+
