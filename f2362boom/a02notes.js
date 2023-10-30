@@ -1,6 +1,16 @@
 var notes = [
   {
     "header": "",
+    "title": "",
+    "card-text": [
+      "b24index",
+      "astronomy",
+      ""
+    ],
+    "link": "b24index.html"
+   },
+   {
+    "header": "",
     "title": "Piano",
     "card-text": [
       "b16pikatr",
