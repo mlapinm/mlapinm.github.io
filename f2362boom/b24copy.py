@@ -10,7 +10,8 @@ def copy_b24():
     anames += [e for e in os.listdir(PATH) if 'b24' in e]
 
     bpath = r'D:\avi02prog\mlapinm.github.io\f2362boom'
-
+    bpath = r'D:\programs\b01io\f2362boom'
+    
     for e in anames:
         a = PATH + e
         try:

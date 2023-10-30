@@ -26,5 +26,6 @@ tr:nth-child(2n) {
 
 button {
     width: 48%;
+    height: 3rem;
 }
 
