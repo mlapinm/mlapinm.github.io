@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+.xbox {
+    height: 0px;
+    height: 200px;
+}
+
 table {
     border: 1px solid;
     width: 100%;
@@ -16,13 +21,12 @@ tr:nth-child(2n) {
     background: #f0f0f0; /* Цвет фона */
 }
 
+
 .bbox {
     display: flex;
 
     justify-content: center;
 }
-
-
 
 button {
     width: 48%;
