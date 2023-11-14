@@ -4,7 +4,6 @@ $(() => {
   let edit0 = $('.text')
   let back = $('.back')
   let space = $('.space')
-  let bend_space = $('.bend_space')
   let quote = $('.quote')
   let rid = $('.rid')
   let prevText = ''
@@ -58,27 +57,6 @@ $(() => {
     edit0[0].value = text2
   }
 
-  let add_endspace = (t1) => {
-    /*
-    common
-    return text with space at end
-    of every string
-     */
-    let res = ''
-    let ls = t1.split('\n')
-    ls.forEach((e, i) => {
-        let e2 = e.trim() + ' '
-        ls[i] = e2
-    })
-    res = ls.join('\n')
-    return res
-}
-
-  let onEndspace = () => {
-    let text = edit0[0].value
-    let text2 = add_endspace(text)
-    edit0[0].value = text2
-  }
 
   function onQuote(){
     let text = edit0[0].value
@@ -112,10 +90,6 @@ $(() => {
 
   space.click(() => {
     onSpace()
-  })
-
-  bend_space.click(() => {
-    onEndspace()
   })
 
   quote.click(() => {
