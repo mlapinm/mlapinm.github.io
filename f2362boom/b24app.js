@@ -1,5 +1,81 @@
+let iss_yes_request = false
+iss_yes_request = true 
+let iss_items = []
+let iss_its = []
+
+let iss_get_urls = () => {
+
+    let url1 = 'https://api.wheretheiss.at/v1/satellites/25544/positions?timestamps='
+
+    let now = new Date()
+    let ts = []
+
+    let tmax = 90
+    let dt = 240
+    let t = 0
+    while(t <= tmax * 60){
+        let d = new Date(now.getTime() + t * 1000)
+        let st = d.getTime()
+        st = Math.floor(st/1000)
+        ts.push(st)    
+        t += dt
+    }
+    let a = []    
+    let tts = []
+    let s = ''
+    for(let e of ts){
+        a.push(e)
+        if(a.length == 10){
+            let ss = a.map(String)
+            s = ss.join(',')
+            tts.push(url1 + s)
+            // s = String()
+            a = []
+        }
+    }
+
+    return tts
+}
+
+let iss_req = (u) => {
+        fetch(u)
+        .then((response)=>response.json())
+        .then((data)=>{
+
+            for(e of data){
+                iss_its.push(e)
+            }
+        })
+}
+
+let iss_reqs = () => {
+    urls = iss_get_urls()
+
+    let k = 0
+    iss_items = []
+    let tid = setInterval(() => {
+        let u = urls[k]
+        // console.log(u)
+        if(iss_yes_request){
+            iss_req(u)
+        }
+
+        k += 1
+    }, 1200)
+
+
+    setTimeout(() => {
+        clearInterval(tid)
+    
+    }, 1200 * 3)
+}
+
+iss_reqs()
+
 
 window.onload = () => {
+
+    iss_items = b24b02
     
     let date = new Date()
     date.setHours(12, 44, 0)
@@ -9,7 +85,6 @@ window.onload = () => {
     let mg = undefined
     let rs = []
     let ys = []
-
     
 
     let log1 = document.getElementsByClassName('log1')[0]
@@ -219,6 +294,7 @@ window.onload = () => {
     let draw = () => {
         draw_m(azs[0][1])
         draw_p()
+
         let q = dls.length
         for(let i=i0; i<q; i++){
             a = dls[i]
@@ -229,6 +305,63 @@ window.onload = () => {
 
 
         // console.log(azs)
+    }
+
+    let draw_iss = () => {
+
+        let cy = 100
+        let ll = 8
+        let color = 'lightgray'
+        let q = iss_items.length
+        // q = 2
+        let gs = []
+        for(let i=0; i<q; i++){
+
+            ll = iss_items[i]['latitude'] / 5
+            let vis = iss_items[i]['visibility']
+            if(vis == "daylight"){
+                color = 'lightgray'
+            } else {
+                color = 'black'
+            }
+
+            let sw = 1
+            if(i > 22){
+                sw = 2
+            }
+
+            let g = svg.append("g")
+            let a = g.append('circle')
+            .attr('cx', 200)
+            .attr('cy', cy - ll)
+            .attr('r', 2)
+            .style('fill', color)
+
+            let b = g.append('line')
+            .attr('x1', 200)
+            .attr('y1', cy)
+            .attr('x2', 200)
+            .attr('y2', cy - ll)
+            .attr('stroke', color)
+            .style("stroke-width", sw)
+
+            let angle = 0
+            angle = iss_items[i]['longitude']
+            angle = iss_items[i]['longitude'] - iss_items[i]['solar_lon']
+            angle += 30
+
+            g.attr('transform', `rotate(${angle}, 200, 200)`)
+
+        }
+
+    }
+
+    let next_draw_iss = () => {
+        setTimeout(() => {
+            // log1.innerHTML = JSON.stringify(jdata)
+            iss_items = iss_its
+            draw_iss()
+        }, 5000)
     }
 
     let mnext = (r) => {
@@ -256,6 +389,9 @@ window.onload = () => {
     set_azs(date)
     setTable(azs)
     draw()
+
+    // draw_iss()
+    next_draw_iss()
     
 
 }
