@@ -5,7 +5,7 @@ SET FPATH=O:\prjother\b04py\b006enru\
 
 ECHO %FPATH%b02mdhtml.py
 @REM 
-python %FPATH%b03schedule.py b2650schedule.md i265001time.png 2 11
+python %FPATH%b03schedule.py b2650schedule.md i265001time.png 2 12
 python %FPATH%b02mdhtml.py all
 b2650schedule.html
 pause
