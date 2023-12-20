@@ -1,6 +1,6 @@
 [TOC]
 
-## I’m So Excited
+## Iâ€™m So Excited
 
 Tonight's the night we're gonna make it happen,
 Tonight we'll put all other things aside.
