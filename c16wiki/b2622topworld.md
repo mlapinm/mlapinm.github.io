@@ -116,6 +116,6 @@ And whispered in the sound of silence.
 
 [Ответы на вопросы | Скотт Риттер | Scott Ritter - YouTube](https://www.youtube.com/watch?v=wF00WjWMvz4)
 
-[Duck tales 1-5](http://localhost:3002/c12elisten/d34index.html?page=4)
+[Duck tales 1-5](https://mlapinm.github.io/c12elisten/d34index.html?page=4)
 
 
