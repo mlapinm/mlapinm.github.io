@@ -1,5 +1,25 @@
 [TOC]
 
+## This is the life — Amy Macdonald
+
+Oh the wind whistles down
+The cold dark street tonight
+And the people, they were dancing to the music vibe
+And the boys chase the girls
+With the curls in their hair
+While the shocked too
+Many just sit way over there
+And the songs they get louder
+Each one better than before
+
+And you are singing the song
+Thinking this is the life
+And you wake up in the morning
+And your head feels twice the size
+Where you're gonna go?
+Where you're gonna go?
+Where you're gonna sleep tonight?
+
 ## I’m So Excited
 
 Tonight's the night we're gonna make it happen,
