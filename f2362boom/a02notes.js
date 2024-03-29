@@ -1,6 +1,16 @@
 var notes = [
   {
     "header": "",
+    "title": "chess clock",
+    "card-text": [
+      "d26chess",
+      "",
+      ""
+    ],
+    "link": "d26chess.html"
+   },
+  {
+    "header": "",
     "title": "",
     "card-text": [
       "b24index",

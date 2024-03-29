@@ -1,0 +1,9 @@
+d26copy.py
+d26rm.txt
+d26chess.html
+d26style.css
+d26app.js
+
+chess clock
+D:\programs\b01io\f2362boom
+O:\prjother\b04py\b112eel\b58cross
