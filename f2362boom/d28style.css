@@ -1,0 +1,26 @@
+* {
+    font-size: 1rem;
+    font-family: 'Arial';
+    margin: 0;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.bbox {
+    background-color: aliceblue;
+
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    width: 80%;
+}
+
+.price {
+    background-color:bisque;
+}
+

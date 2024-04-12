@@ -1,0 +1,36 @@
+
+
+d28menu.html
+d28style.css
+d28rm.txt
+d28app.js
+d28notes.js
+d28browser.cmd
+
+
+O:\prjother\b04py\b112eel\b38date\d28menu.html
+O:\prjother\b04py\b112eel\b38date\d28rm.txt
+D:\programs\b01io\f2362boom
+
+
+['d28app.js', 'd28browser.cmd', 'd28menu.html', 'd28notes.js', 'd28rm.txt', 'd28style.css']
+
+
+justify-content: space-between;
+.parent {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+
+
+
+
+
+https://learn.javascript.ru/array-methods?ysclid=luv96mye7w22487778
+
+
+
+

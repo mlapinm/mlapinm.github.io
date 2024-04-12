@@ -11,6 +11,16 @@ var notes = [
    },
   {
     "header": "",
+    "title": "d28menu",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "d28menu.html"
+   },
+  {
+    "header": "",
     "title": "",
     "card-text": [
       "b24index",
