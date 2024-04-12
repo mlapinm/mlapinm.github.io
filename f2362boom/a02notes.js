@@ -21,6 +21,16 @@ var notes = [
    },
   {
     "header": "",
+    "title": "d32words",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "d32words.html"
+   },
+  {
+    "header": "",
     "title": "",
     "card-text": [
       "b24index",

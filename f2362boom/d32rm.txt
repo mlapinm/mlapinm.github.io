@@ -1,0 +1,19 @@
+
+
+
+d32words.html
+d32notes.js
+d32app.js
+d32style.css
+d32browse.cmd
+
+d32rm.txt
+O:\prjother\b04py\b112eel\b38date\d32rm.txt
+
+['d32app.js', 'd32browser.cmd', 'd32notes.js', 'd32notes2.js', 'd32rm.txt', 'd32style.css', 'd32words.html']
+
+
+
+
+
+O:\prjother\b04py\b112eel\b38date\d32rm.txt
