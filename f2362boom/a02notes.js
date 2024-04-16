@@ -19,7 +19,7 @@ var notes = [
     ],
     "link": "d28menu.html"
    },
-  {
+   {
     "header": "",
     "title": "d32words",
     "card-text": [
@@ -28,6 +28,16 @@ var notes = [
       ""
     ],
     "link": "d32words.html"
+   },
+   {
+    "header": "",
+    "title": "d34regions",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": "d34regions.html"
    },
   {
     "header": "",
