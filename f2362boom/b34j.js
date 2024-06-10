@@ -58,5 +58,41 @@ let leaves = [
     "num": 10,
     "name": "рябина",
     "ename": "Rowan"
+  },
+  {
+    "img": "i011.jpg",
+    "num": 11,
+    "name": "ольха",
+    "ename": "alder"
+  },
+  {
+    "img": "i012.jpg",
+    "num": 12,
+    "name": "туя",
+    "ename": "thuja"
+  },
+  {
+    "img": "i013.jpg",
+    "num": 13,
+    "name": "осина",
+    "ename": "aspen"
+  },
+  {
+    "img": "i014.jpg",
+    "num": 14,
+    "name": "ива",
+    "ename": "willow"
+  },
+  {
+    "img": "i015.jpg",
+    "num": 15,
+    "name": "немецкая сирень",
+    "ename": "german lilac"
+  },
+  {
+    "img": "i016.jpg",
+    "num": 16,
+    "name": "дуб",
+    "ename": "oak"
   }
 ]
