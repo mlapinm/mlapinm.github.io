@@ -92,7 +92,7 @@ let leaves = [
   {
     "img": "i016.jpg",
     "num": 16,
-    "name": "дуб",
-    "ename": "oak"
+    "name": "Клён ясенелистный",
+    "ename": "Acer negundo"
   }
 ]
