@@ -23,10 +23,8 @@ then place the "Config" folder into "%APPDATA%\Notepad++\plugins" instead
 forwqrd back  
 alt_< alt_>
 ```
-
-**vscode default word wrap on**
-
+### vscode default word wrap on
 File -> Preferences -> Settings
 "editor.wordWrap": "on"
-[Visual Studio Code February 2017](https://code.visualstudio.com/updates/v1_10#_word-wrap-settings-redesign)
+https://code.visualstudio.com/updates/v1_10#_word-wrap-settings-redesign
 
