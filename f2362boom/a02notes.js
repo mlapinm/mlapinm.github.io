@@ -49,6 +49,16 @@ var notes = [
     ],
     "link": "b24index.html"
    },
+  {
+    "header": "",
+    "title": "north",
+    "card-text": [
+      "b36north",
+      "astronomy",
+      ""
+    ],
+    "link": "b36north.html"
+   },
    {
     "header": "",
     "title": "Piano",
