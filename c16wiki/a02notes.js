@@ -13,6 +13,16 @@ var notes = [
     "header": "",
     "title": "",
     "card-text": [
+      "links 12",
+      "",
+      ""
+    ],
+    "link": "b2686tw12link.html"
+   },
+  {
+    "header": "",
+    "title": "",
+    "card-text": [
       "",
       "",
       ""
