@@ -24,10 +24,10 @@ var notes = [
     "title": "",
     "card-text": [
       "",
-      "",
+      "The schedule",
       ""
     ],
-    "link": ""
+    "link": "b2654sched25.html"
    },
    {
     "header": "",
