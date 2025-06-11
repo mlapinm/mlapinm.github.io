@@ -34,10 +34,10 @@ var notes = [
     "title": "",
     "card-text": [
       "",
-      "",
+      "b2658android",
       ""
     ],
-    "link": ""
+    "link": "b2658android.html"
    },
   {
     "header": "",
