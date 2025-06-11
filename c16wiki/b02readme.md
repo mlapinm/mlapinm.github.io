@@ -22,7 +22,7 @@
 
 ## 10.06.25 c16wiki
 
-b26sche25.md
+b2654sched25.md
 
 b2644books.md
 
