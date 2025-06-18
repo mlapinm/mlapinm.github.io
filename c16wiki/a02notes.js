@@ -19,7 +19,7 @@ var notes = [
     ],
     "link": "b2686tw12link.html"
    },
-  {
+   {
     "header": "",
     "title": "",
     "card-text": [
@@ -39,7 +39,7 @@ var notes = [
     ],
     "link": "b2658android.html"
    },
-  {
+   {
     "header": "",
     "title": "",
     "card-text": [
@@ -178,6 +178,26 @@ var notes = [
       ""
     ],
     "link": "b2668buh.html"
+   },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "",
+      "",
+      ""
+    ],
+    "link": ""
+   },
+   {
+    "header": "",
+    "title": "",
+    "card-text": [
+      "enlink4.html",
+      "06.25",
+      ""
+    ],
+    "link": "b2688enlink4.html"
    },
   {
     "header": "",
